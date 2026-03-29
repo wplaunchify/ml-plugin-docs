@@ -1,0 +1,16 @@
+{
+  "name": "ml-plugin-docs-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes WordPress plugin documentation sites and outputs structured JSON + Markdown",
+  "main": "scraper.js",
+  "scripts": {
+    "scrape:wpfusion": "node scraper.js --slug=wpfusion --url=https://wpfusion.com/documentation/ --selector=.entry-content"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
