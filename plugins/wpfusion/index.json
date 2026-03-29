@@ -1,9 +1,2226 @@
 {
   "plugin_slug": "wpfusion",
-  "plugin_name": "Wpfusion",
+  "plugin_name": "WP Fusion",
   "documentation_url": "https://wpfusion.com/documentation/",
-  "last_scraped": "2026-03-29T21:09:19.900Z",
-  "total_pages": 0,
-  "failed_urls_count": 419,
-  "sections": []
+  "last_scraped": "2026-03-29T22:07:50.432Z",
+  "total_pages": 482,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Abandoned Cart Tracking",
+      "slug": "abandoned-cart-tracking",
+      "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/",
+      "file": "categories/abandoned-cart-tracking.md",
+      "page_count": 15,
+      "pages": [
+        {
+          "title": "Other CRMs",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/other-crms/"
+        },
+        {
+          "title": "Brevo Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/brevo-abandoned-cart/"
+        },
+        {
+          "title": "HighLevel Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/highlevel-abandoned-cart-tracking/"
+        },
+        {
+          "title": "FluentCRM Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/fluentcrm-abandoned-cart-tracking/"
+        },
+        {
+          "title": "HubSpot Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/hubspot-abandoned-cart/"
+        },
+        {
+          "title": "Automatic Discounts",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/abandoned-cart-auto-discounts/"
+        },
+        {
+          "title": "Abandoned Cart Tracking Changelog",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/abandoned-cart-tracking-changelog/"
+        },
+        {
+          "title": "ActiveCampaign Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/activecampaign-abandoned-cart/"
+        },
+        {
+          "title": "Mautic Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/mautic-abandoned-cart/"
+        },
+        {
+          "title": "ConvertKit Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/convertkit-abandoned-cart/"
+        },
+        {
+          "title": "AgileCRM Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/agilecrm-abandoned-cart/"
+        },
+        {
+          "title": "Drip Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/drip-abandoned-cart/"
+        },
+        {
+          "title": "Ontraport Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/ontraport-abandoned-cart/"
+        },
+        {
+          "title": "Infusionsoft / Keap Abandoned Cart Tracking",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/infusionsoft-abandoned-cart/"
+        },
+        {
+          "title": "Abandoned Cart Tracking Overview",
+          "url": "https://wpfusion.com/documentation/abandoned-cart-tracking/abandoned-cart-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Actions",
+      "slug": "actions",
+      "url": "https://wpfusion.com/documentation/actions/",
+      "file": "categories/actions.md",
+      "page_count": 9,
+      "pages": [
+        {
+          "title": "wpf_user_created",
+          "url": "https://wpfusion.com/documentation/actions/wpf_user_created/"
+        },
+        {
+          "title": "wp_fusion_init_crm",
+          "url": "https://wpfusion.com/documentation/actions/wp_fusion_init_crm/"
+        },
+        {
+          "title": "wpf_forms_post_submission",
+          "url": "https://wpfusion.com/documentation/actions/wpf_forms_post_submission/"
+        },
+        {
+          "title": "wp_fusion_init",
+          "url": "https://wpfusion.com/documentation/actions/wp_fusion_init/"
+        },
+        {
+          "title": "wpf_pushed_user_meta",
+          "url": "https://wpfusion.com/documentation/actions/wpf_pushed_user_meta/"
+        },
+        {
+          "title": "wpf_woocommerce_payment_complete",
+          "url": "https://wpfusion.com/documentation/actions/wpf_woocommerce_payment_complete/"
+        },
+        {
+          "title": "wpf_user_imported",
+          "url": "https://wpfusion.com/documentation/actions/wpf_user_imported/"
+        },
+        {
+          "title": "wpf_user_updated",
+          "url": "https://wpfusion.com/documentation/actions/wpf_user_updated/"
+        },
+        {
+          "title": "wpf_tags_modified",
+          "url": "https://wpfusion.com/documentation/actions/wpf_tags_modified/"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Developer Tutorials",
+      "slug": "advanced-developer-tutorials",
+      "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/",
+      "file": "categories/advanced-developer-tutorials.md",
+      "page_count": 16,
+      "pages": [
+        {
+          "title": "White Labelling WP Fusion",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/white-labelling-wp-fusion/"
+        },
+        {
+          "title": "How to use a custom client ID for authentication",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/how-to-use-a-custom-client-id-for-authentication/"
+        },
+        {
+          "title": "How To Submit A Job On Codeable For Custom Development",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/how-to-submit-a-job-on-codeable-for-custom-development/"
+        },
+        {
+          "title": "ActiveCampaign Event Tracking",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/activecampaign-event-tracking-via-code/"
+        },
+        {
+          "title": "Contributing integration modules",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/contributing-integration-modules/"
+        },
+        {
+          "title": "Registering Custom Batch Operations",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/registering-custom-batch-operations/"
+        },
+        {
+          "title": "Scheduled Synchronization Using Cron",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/scheduled-synchronization-using-cron/"
+        },
+        {
+          "title": "Detecting and Syncing Additional Fields",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/detecting-and-syncing-additional-fields/"
+        },
+        {
+          "title": "Deleting Users via Webhooks",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/deleting-users-via-webhooks/"
+        },
+        {
+          "title": "Additional Code Examples",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/additional-code-examples/"
+        },
+        {
+          "title": "Applying and Removing Tags with JavaScript",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/applying-removing-tags-with-javascript/"
+        },
+        {
+          "title": "Creating Custom CRM Modules",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/creating-custom-crm-modules/"
+        },
+        {
+          "title": "Sending data to two different CRMs (Intercom Example)",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/sending-data-different-crms-intercom-example/"
+        },
+        {
+          "title": "Connecting to two different ActiveCampaign accounts",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/connecting-to-two-different-activecampaign-accounts/"
+        },
+        {
+          "title": "The WP Fusion User Class",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/wp-fusion-user-class/"
+        },
+        {
+          "title": "The WP Fusion CRM API",
+          "url": "https://wpfusion.com/documentation/advanced-developer-tutorials/the-wp-fusion-crm-api/"
+        }
+      ]
+    },
+    {
+      "title": "Affiliates",
+      "slug": "affiliates",
+      "url": "https://wpfusion.com/documentation/affiliates/",
+      "file": "categories/affiliates.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "ClickWhale",
+          "url": "https://wpfusion.com/documentation/affiliates/clickwhale/"
+        },
+        {
+          "title": "ThirstyAffiliates",
+          "url": "https://wpfusion.com/documentation/affiliates/thirstyaffiliates/"
+        },
+        {
+          "title": "Pretty Links",
+          "url": "https://wpfusion.com/documentation/affiliates/pretty-links/"
+        },
+        {
+          "title": "SliceWP",
+          "url": "https://wpfusion.com/documentation/affiliates/slicewp/"
+        },
+        {
+          "title": "Solid Affiliate",
+          "url": "https://wpfusion.com/documentation/affiliates/solid-affiliate/"
+        },
+        {
+          "title": "WP Affiliate Manager",
+          "url": "https://wpfusion.com/documentation/affiliates/wp-affiliate-manager/"
+        },
+        {
+          "title": "AffiliateWP",
+          "url": "https://wpfusion.com/documentation/affiliates/affiliatewp/"
+        }
+      ]
+    },
+    {
+      "title": "Automators",
+      "slug": "automators",
+      "url": "https://wpfusion.com/documentation/automators/",
+      "file": "categories/automators.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Bit Integrations",
+          "url": "https://wpfusion.com/documentation/automators/bit-integrations/"
+        },
+        {
+          "title": "AutomatorWP",
+          "url": "https://wpfusion.com/documentation/automators/automatorwp/"
+        },
+        {
+          "title": "Uncanny Automator",
+          "url": "https://wpfusion.com/documentation/automators/uncanny-automator/"
+        },
+        {
+          "title": "OttoKit",
+          "url": "https://wpfusion.com/documentation/automators/suretriggers/"
+        },
+        {
+          "title": "Thrive Automator",
+          "url": "https://wpfusion.com/documentation/automators/thrive-automator/"
+        }
+      ]
+    },
+    {
+      "title": "Content Management",
+      "slug": "content-management",
+      "url": "https://wpfusion.com/documentation/content-management/",
+      "file": "categories/content-management.md",
+      "page_count": 10,
+      "pages": [
+        {
+          "title": "JetEngine",
+          "url": "https://wpfusion.com/documentation/content-management/jetengine/"
+        },
+        {
+          "title": "Download Manager",
+          "url": "https://wpfusion.com/documentation/content-management/download-manager/"
+        },
+        {
+          "title": "WP All Import",
+          "url": "https://wpfusion.com/documentation/content-management/wp-all-import/"
+        },
+        {
+          "title": "Meta Box",
+          "url": "https://wpfusion.com/documentation/content-management/meta-box/"
+        },
+        {
+          "title": "If Menu",
+          "url": "https://wpfusion.com/documentation/content-management/if-menu/"
+        },
+        {
+          "title": "Download Monitor",
+          "url": "https://wpfusion.com/documentation/content-management/download-monitor/"
+        },
+        {
+          "title": "If-So",
+          "url": "https://wpfusion.com/documentation/content-management/if-so/"
+        },
+        {
+          "title": "Toolset Types",
+          "url": "https://wpfusion.com/documentation/content-management/toolset-types/"
+        },
+        {
+          "title": "FacetWP",
+          "url": "https://wpfusion.com/documentation/content-management/facetwp/"
+        },
+        {
+          "title": "Advanced Custom Fields",
+          "url": "https://wpfusion.com/documentation/content-management/advanced-custom-fields/"
+        }
+      ]
+    },
+    {
+      "title": "Crm Specific Docs",
+      "slug": "crm-specific-docs",
+      "url": "https://wpfusion.com/documentation/crm-specific-docs/",
+      "file": "categories/crm-specific-docs.md",
+      "page_count": 19,
+      "pages": [
+        {
+          "title": "Pipedrive Labels",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/pipedrive-labels/"
+        },
+        {
+          "title": "ActiveCampaign Accounts",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/activecampaign-accounts/"
+        },
+        {
+          "title": "Updating Leads with ConvertFox, Intercom, and Zoho",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/updating-leads/"
+        },
+        {
+          "title": "Klaviyo marketing consent",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/klaviyo-marketing-consent/"
+        },
+        {
+          "title": "HighLevel white-labelled accounts",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/highlevel-white-labelled-accounts/"
+        },
+        {
+          "title": "Zoho Tags",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/zoho-tags/"
+        },
+        {
+          "title": "Dynamics 365 – Associating entities",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/dynamics-365-associating-entities/"
+        },
+        {
+          "title": "Mautic Points",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/mautic-points/"
+        },
+        {
+          "title": "MailerLite double opt-ins",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/mailerlite-double-opt-ins/"
+        },
+        {
+          "title": "Salesforce Tags",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/salesforce-tags/"
+        },
+        {
+          "title": "HubSpot – How to use lists",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/how-lists-work-with-hubspot/"
+        },
+        {
+          "title": "HubSpot Custom Objects",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/custom-objects-with-hubspot/"
+        },
+        {
+          "title": "MailerLite email address changes",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/email-address-changes-with-mailerlite/"
+        },
+        {
+          "title": "Inactive / Unsubscribed People in Drip",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/inactive-people-in-drip/"
+        },
+        {
+          "title": "Salesforce Sandbox Accounts",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/salesforce-sandboxes/"
+        },
+        {
+          "title": "ConvertKit Unsubscribes",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/convertkit-unsubscribe-notifications/"
+        },
+        {
+          "title": "Unexpected Tags with ConvertKit",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/convertkit-unexpected-tags/"
+        },
+        {
+          "title": "Custom fields not loading with AgileCRM",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/custom-fields-not-loading-with-agilecrm/"
+        },
+        {
+          "title": "Infusionsoft API Goals",
+          "url": "https://wpfusion.com/documentation/crm-specific-docs/infusionsoft-api-goals/"
+        }
+      ]
+    },
+    {
+      "title": "Downloads",
+      "slug": "downloads",
+      "url": "https://wpfusion.com/documentation/downloads/",
+      "file": "categories/downloads.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Web Host Compatibility",
+          "url": "https://wpfusion.com/documentation/downloads/web-host-compatibility/"
+        },
+        {
+          "title": "Changelog",
+          "url": "https://wpfusion.com/documentation/downloads/downloads-changelog/"
+        },
+        {
+          "title": "Downloads Overview",
+          "url": "https://wpfusion.com/documentation/downloads/downloads-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Ecommerce",
+      "slug": "ecommerce",
+      "url": "https://wpfusion.com/documentation/ecommerce/",
+      "file": "categories/ecommerce.md",
+      "page_count": 33,
+      "pages": [
+        {
+          "title": "FluentCart",
+          "url": "https://wpfusion.com/documentation/ecommerce/fluentcart/"
+        },
+        {
+          "title": "Cancellation Survey for Woo Subscriptions",
+          "url": "https://wpfusion.com/documentation/ecommerce/cancellation-survey-for-woocommerce-subscriptions/"
+        },
+        {
+          "title": "WP Software License",
+          "url": "https://wpfusion.com/documentation/ecommerce/wp-software-license/"
+        },
+        {
+          "title": "Subscriptions for WooCommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce/subscriptions-for-woocommerce/"
+        },
+        {
+          "title": "WooCommerce Product Options",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-product-options/"
+        },
+        {
+          "title": "WooCommerce Gravity Forms Product Add-ons",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-gravity-forms-product-add-ons/"
+        },
+        {
+          "title": "SureCart",
+          "url": "https://wpfusion.com/documentation/ecommerce/surecart/"
+        },
+        {
+          "title": "Studiocart",
+          "url": "https://wpfusion.com/documentation/ecommerce/studiocart/"
+        },
+        {
+          "title": "WooCommerce Payments",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-payments/"
+        },
+        {
+          "title": "Paymattic",
+          "url": "https://wpfusion.com/documentation/ecommerce/paymattic/"
+        },
+        {
+          "title": "WooCommerce Payment Plans",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-payment-plans/"
+        },
+        {
+          "title": "RestroPress",
+          "url": "https://wpfusion.com/documentation/ecommerce/restropress/"
+        },
+        {
+          "title": "Upsell Plugin",
+          "url": "https://wpfusion.com/documentation/ecommerce/upsell-plugin/"
+        },
+        {
+          "title": "FunnelKit",
+          "url": "https://wpfusion.com/documentation/ecommerce/woofunnels/"
+        },
+        {
+          "title": "WooCommerce Shipment Tracking",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-shipment-tracking/"
+        },
+        {
+          "title": "YITH WooCommerce Multi Vendor",
+          "url": "https://wpfusion.com/documentation/ecommerce/yith-woocommerce-multi-vendor/"
+        },
+        {
+          "title": "LaunchFlows",
+          "url": "https://wpfusion.com/documentation/ecommerce/launchflows/"
+        },
+        {
+          "title": "WP Crowdfunding",
+          "url": "https://wpfusion.com/documentation/ecommerce/wp-crowdfunding/"
+        },
+        {
+          "title": "WooCommerce All Products for Subscriptions",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-all-products-for-subscriptions/"
+        },
+        {
+          "title": "Gifting for WooCommerce Subscriptions",
+          "url": "https://wpfusion.com/documentation/ecommerce/gifting-for-woocommerce-subscriptions/"
+        },
+        {
+          "title": "WP Simple Pay",
+          "url": "https://wpfusion.com/documentation/ecommerce/wp-simple-pay/"
+        },
+        {
+          "title": "WP Ultimo",
+          "url": "https://wpfusion.com/documentation/ecommerce/wp-ultimo/"
+        },
+        {
+          "title": "WPPizza",
+          "url": "https://wpfusion.com/documentation/ecommerce/wppizza/"
+        },
+        {
+          "title": "EDD Software Licensing",
+          "url": "https://wpfusion.com/documentation/ecommerce/edd-software-licensing/"
+        },
+        {
+          "title": "CartFlows",
+          "url": "https://wpfusion.com/documentation/ecommerce/cartflows/"
+        },
+        {
+          "title": "GiveWP",
+          "url": "https://wpfusion.com/documentation/ecommerce/give/"
+        },
+        {
+          "title": "Product Add-Ons for WooCommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-addons/"
+        },
+        {
+          "title": "EDD Recurring Payments",
+          "url": "https://wpfusion.com/documentation/ecommerce/edd-recurring-payments/"
+        },
+        {
+          "title": "WooCommerce Smart Coupons",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-smart-coupons/"
+        },
+        {
+          "title": "WooCommerce Deposits",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-deposits/"
+        },
+        {
+          "title": "Easy Digital Downloads",
+          "url": "https://wpfusion.com/documentation/ecommerce/easy-digital-downloads/"
+        },
+        {
+          "title": "WooCommerce Subscriptions",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce-subscriptions/"
+        },
+        {
+          "title": "WooCommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce/woocommerce/"
+        }
+      ]
+    },
+    {
+      "title": "Ecommerce Tracking",
+      "slug": "ecommerce-tracking",
+      "url": "https://wpfusion.com/documentation/ecommerce-tracking/",
+      "file": "categories/ecommerce-tracking.md",
+      "page_count": 15,
+      "pages": [
+        {
+          "title": "Groundhogg Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/groundhogg-ecommerce/"
+        },
+        {
+          "title": "Salesforce Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/salesforce-ecommerce/"
+        },
+        {
+          "title": "MailerLite Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/mailerlite-ecommerce/"
+        },
+        {
+          "title": "HighLevel Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/highlevel-ecommerce/"
+        },
+        {
+          "title": "Brevo Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/brevo-enhanced-ecommerce/"
+        },
+        {
+          "title": "Ontraport Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/ontraport-ecommerce/"
+        },
+        {
+          "title": "Zoho Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/zoho-ecommerce/"
+        },
+        {
+          "title": "HubSpot Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/hubspot-ecommerce/"
+        },
+        {
+          "title": "Enhanced Ecommerce Changelog",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/ecommerce-tracking-changelog/"
+        },
+        {
+          "title": "AgileCRM Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/agilecrm-ecommerce/"
+        },
+        {
+          "title": "Drip Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/drip-ecommerce/"
+        },
+        {
+          "title": "NationBuilder Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/nationbuilder-ecommerce/"
+        },
+        {
+          "title": "ActiveCampaign Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/activecampaign-ecommerce/"
+        },
+        {
+          "title": "Infusionsoft / Keap Enhanced Ecommerce",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/infusionsoft-ecommerce/"
+        },
+        {
+          "title": "Ecommerce Tracking Overview",
+          "url": "https://wpfusion.com/documentation/ecommerce-tracking/ecommerce-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tracking",
+      "slug": "event-tracking",
+      "url": "https://wpfusion.com/documentation/event-tracking/",
+      "file": "categories/event-tracking.md",
+      "page_count": 16,
+      "pages": [
+        {
+          "title": "Encharge Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/encharge-event-tracking/"
+        },
+        {
+          "title": "Omnisend Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/omnisend-event-tracking/"
+        },
+        {
+          "title": "Customer.io Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/customer-io-event-tracking/"
+        },
+        {
+          "title": "FluentCRM Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/fluentcrm-event-tracking/"
+        },
+        {
+          "title": "Klaviyo Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/klaviyo-event-tracking/"
+        },
+        {
+          "title": "Brevo Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/brevo-event-tracking/"
+        },
+        {
+          "title": "Intercom Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/intercom-event-tracking/"
+        },
+        {
+          "title": "Gist Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/gist-event-tracking/"
+        },
+        {
+          "title": "ActiveCampaign Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/activecampaign-event-tracking/"
+        },
+        {
+          "title": "Mailchimp Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/mailchimp-event-tracking/"
+        },
+        {
+          "title": "Bento Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/bento-event-tracking/"
+        },
+        {
+          "title": "Drip Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/drip-event-tracking/"
+        },
+        {
+          "title": "HubSpot Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/hubspot-event-tracking/"
+        },
+        {
+          "title": "Event Tracking Changelog",
+          "url": "https://wpfusion.com/documentation/event-tracking/event-tracking-changelog/"
+        },
+        {
+          "title": "Groundhogg Event Tracking",
+          "url": "https://wpfusion.com/documentation/event-tracking/groundhogg-event-tracking/"
+        },
+        {
+          "title": "Event Tracking Overview",
+          "url": "https://wpfusion.com/documentation/event-tracking/event-tracking-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Events",
+      "slug": "events",
+      "url": "https://wpfusion.com/documentation/events/",
+      "file": "categories/events.md",
+      "page_count": 19,
+      "pages": [
+        {
+          "title": "WP Travel Engine",
+          "url": "https://wpfusion.com/documentation/events/wp-travel-engine/"
+        },
+        {
+          "title": "BookingPress",
+          "url": "https://wpfusion.com/documentation/events/bookingpress/"
+        },
+        {
+          "title": "LatePoint",
+          "url": "https://wpfusion.com/documentation/events/latepoint/"
+        },
+        {
+          "title": "Amelia",
+          "url": "https://wpfusion.com/documentation/events/amelia/"
+        },
+        {
+          "title": "FluentBooking",
+          "url": "https://wpfusion.com/documentation/events/fluentbooking/"
+        },
+        {
+          "title": "YITH WooCommerce Booking",
+          "url": "https://wpfusion.com/documentation/events/yith-woocommerce-booking/"
+        },
+        {
+          "title": "WP Booking System",
+          "url": "https://wpfusion.com/documentation/events/wp-booking-system/"
+        },
+        {
+          "title": "Simply Schedule Appointments",
+          "url": "https://wpfusion.com/documentation/events/simply-schedule-appointments/"
+        },
+        {
+          "title": "EventON",
+          "url": "https://wpfusion.com/documentation/events/eventon/"
+        },
+        {
+          "title": "Tickera",
+          "url": "https://wpfusion.com/documentation/events/tickera/"
+        },
+        {
+          "title": "WooCommerce Bookings",
+          "url": "https://wpfusion.com/documentation/events/woocommerce-bookings/"
+        },
+        {
+          "title": "Modern Events Calendar",
+          "url": "https://wpfusion.com/documentation/events/modern-events-calendar/"
+        },
+        {
+          "title": "WooCommerce Appointments (BookingWP)",
+          "url": "https://wpfusion.com/documentation/events/woocommerce-appointments/"
+        },
+        {
+          "title": "Events Manager",
+          "url": "https://wpfusion.com/documentation/events/events-manager/"
+        },
+        {
+          "title": "WP Event Manager",
+          "url": "https://wpfusion.com/documentation/events/wp-event-manager/"
+        },
+        {
+          "title": "Salon Booking",
+          "url": "https://wpfusion.com/documentation/events/salon-booking/"
+        },
+        {
+          "title": "FooEvents",
+          "url": "https://wpfusion.com/documentation/events/fooevents/"
+        },
+        {
+          "title": "Event Espresso",
+          "url": "https://wpfusion.com/documentation/events/event-espresso/"
+        },
+        {
+          "title": "The Events Calendar / Event Tickets",
+          "url": "https://wpfusion.com/documentation/events/the-events-calendar-event-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Faq",
+      "slug": "faq",
+      "url": "https://wpfusion.com/documentation/faq/",
+      "file": "categories/faq.md",
+      "page_count": 13,
+      "pages": [
+        {
+          "title": "Multisite",
+          "url": "https://wpfusion.com/documentation/faq/multisite/"
+        },
+        {
+          "title": "Staging Sites",
+          "url": "https://wpfusion.com/documentation/faq/staging-sites/"
+        },
+        {
+          "title": "For plugin developers",
+          "url": "https://wpfusion.com/documentation/faq/for-plugin-developers/"
+        },
+        {
+          "title": "Caching",
+          "url": "https://wpfusion.com/documentation/faq/caching/"
+        },
+        {
+          "title": "Is WP Fusion hard to use?",
+          "url": "https://wpfusion.com/documentation/faq/is-wp-fusion-hard-to-use/"
+        },
+        {
+          "title": "Performance",
+          "url": "https://wpfusion.com/documentation/faq/performance/"
+        },
+        {
+          "title": "Misc. FAQ",
+          "url": "https://wpfusion.com/documentation/faq/misc-faq/"
+        },
+        {
+          "title": "CRM Compatibility",
+          "url": "https://wpfusion.com/documentation/faq/crm-compatibility-table/"
+        },
+        {
+          "title": "How does licensing work?",
+          "url": "https://wpfusion.com/documentation/faq/how-does-licensing-work/"
+        },
+        {
+          "title": "Changelog",
+          "url": "https://wpfusion.com/documentation/faq/changelog/"
+        },
+        {
+          "title": "WP Fusion vs….",
+          "url": "https://wpfusion.com/documentation/faq/how-are-we-different/"
+        },
+        {
+          "title": "What can I do with it?",
+          "url": "https://wpfusion.com/documentation/faq/what-can-i-do-with-it/"
+        },
+        {
+          "title": "Who is it for?",
+          "url": "https://wpfusion.com/documentation/faq/who-is-it-for/"
+        }
+      ]
+    },
+    {
+      "title": "Filters",
+      "slug": "filters",
+      "url": "https://wpfusion.com/documentation/filters/",
+      "file": "categories/filters.md",
+      "page_count": 35,
+      "pages": [
+        {
+          "title": "wpf_return_after_login_url",
+          "url": "https://wpfusion.com/documentation/filters/wpf_return_after_login_url/"
+        },
+        {
+          "title": "wpf_query_filter_cache_time",
+          "url": "https://wpfusion.com/documentation/filters/wpf_query_filter_cache_time/"
+        },
+        {
+          "title": "wpf_api_{$method_name}",
+          "url": "https://wpfusion.com/documentation/filters/wpf_api_method_name/"
+        },
+        {
+          "title": "wpf_woocommerce_subscription_sync_fields",
+          "url": "https://wpfusion.com/documentation/filters/wpf_woocommerce_subscription_sync_fields/"
+        },
+        {
+          "title": "wpf_get_user_id",
+          "url": "https://wpfusion.com/documentation/filters/wpf_get_user_id_filter/"
+        },
+        {
+          "title": "wpf_event_tickets_apply_tags",
+          "url": "https://wpfusion.com/documentation/filters/wpf_event_tickets_apply_tags/"
+        },
+        {
+          "title": "wpf_api_update_contact_args",
+          "url": "https://wpfusion.com/documentation/filters/wpf_api_update_contact_args/"
+        },
+        {
+          "title": "wpf_admin_override",
+          "url": "https://wpfusion.com/documentation/filters/wpf_admin_override/"
+        },
+        {
+          "title": "wpf_ecommerce_order_args",
+          "url": "https://wpfusion.com/documentation/filters/wpf_ecommerce_order_args/"
+        },
+        {
+          "title": "wpf_woocommerce_attendee_data",
+          "url": "https://wpfusion.com/documentation/filters/wpf_woocommerce_attendee_data/"
+        },
+        {
+          "title": "wpf_event_tickets_attendee_data",
+          "url": "https://wpfusion.com/documentation/filters/wpf_event_tickets_attendee_data/"
+        },
+        {
+          "title": "wpf_query_filter_get_posts_args",
+          "url": "https://wpfusion.com/documentation/filters/wpf_query_filter_get_posts_args/"
+        },
+        {
+          "title": "wpf_should_filter_query",
+          "url": "https://wpfusion.com/documentation/filters/wpf_should_filter_query/"
+        },
+        {
+          "title": "wpf_forms_pre_submission",
+          "url": "https://wpfusion.com/documentation/filters/wpf_forms_pre_submission/"
+        },
+        {
+          "title": "wpf_event_espresso_customer_data",
+          "url": "https://wpfusion.com/documentation/filters/wpf_event_espresso_customer_data/"
+        },
+        {
+          "title": "wpf_forms_pre_submission_contact_id",
+          "url": "https://wpfusion.com/documentation/filters/wpf_forms_pre_submission_contact_id/"
+        },
+        {
+          "title": "wpf_import_user",
+          "url": "https://wpfusion.com/documentation/filters/wpf_import_user/"
+        },
+        {
+          "title": "wpf_forms_apply_tags",
+          "url": "https://wpfusion.com/documentation/filters/wpf_forms_apply_tags/"
+        },
+        {
+          "title": "wpf_salesforce_query_args",
+          "url": "https://wpfusion.com/documentation/filters/wpf_salesforce_query_args/"
+        },
+        {
+          "title": "wpf_woocommerce_subscription_status_apply_tags",
+          "url": "https://wpfusion.com/documentation/filters/wpf_woocommerce_subscription_status_apply_tags/"
+        },
+        {
+          "title": "wpf_get_user_meta",
+          "url": "https://wpfusion.com/documentation/filters/wpf_get_user_meta/"
+        },
+        {
+          "title": "wpf_woocommerce_apply_tags_checkout",
+          "url": "https://wpfusion.com/documentation/filters/wpf_woocommerce_apply_tags_checkout/"
+        },
+        {
+          "title": "wpf_woocommerce_user_id",
+          "url": "https://wpfusion.com/documentation/filters/wpf_woocommerce_user_id/"
+        },
+        {
+          "title": "wpf_format_field_value",
+          "url": "https://wpfusion.com/documentation/filters/wpf_format_field_value/"
+        },
+        {
+          "title": "wpf_woocommerce_customer_data",
+          "url": "https://wpfusion.com/documentation/filters/wpf_woocommerce_customer_data/"
+        },
+        {
+          "title": "wpf_elementor_can_access",
+          "url": "https://wpfusion.com/documentation/filters/wpf_elementor_can_access/"
+        },
+        {
+          "title": "wpf_post_type_rules",
+          "url": "https://wpfusion.com/documentation/filters/wpf_post_type_rules/"
+        },
+        {
+          "title": "wpf_meta_fields",
+          "url": "https://wpfusion.com/documentation/filters/wpf_meta_fields/"
+        },
+        {
+          "title": "wpf_watched_meta_fields",
+          "url": "https://wpfusion.com/documentation/filters/wpf_watched_meta_fields/"
+        },
+        {
+          "title": "wpf_crm_object_type",
+          "url": "https://wpfusion.com/documentation/filters/wpf_crm_object_type/"
+        },
+        {
+          "title": "wpf_user_register",
+          "url": "https://wpfusion.com/documentation/filters/wpf_user_register/"
+        },
+        {
+          "title": "wpf_user_update",
+          "url": "https://wpfusion.com/documentation/filters/wpf_user_update/"
+        },
+        {
+          "title": "wpf_pulled_user_meta",
+          "url": "https://wpfusion.com/documentation/filters/wpf_pulled_user_meta/"
+        },
+        {
+          "title": "wpf_redirect_url",
+          "url": "https://wpfusion.com/documentation/filters/wpf_redirect_url/"
+        },
+        {
+          "title": "wpf_user_can_access",
+          "url": "https://wpfusion.com/documentation/filters/wpf_user_can_access-filter/"
+        }
+      ]
+    },
+    {
+      "title": "Forums",
+      "slug": "forums",
+      "url": "https://wpfusion.com/documentation/forums/",
+      "file": "categories/forums.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "wpForo",
+          "url": "https://wpfusion.com/documentation/forums/wpforo/"
+        },
+        {
+          "title": "bbPress",
+          "url": "https://wpfusion.com/documentation/forums/bbpress/"
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "slug": "functions",
+      "url": "https://wpfusion.com/documentation/functions/",
+      "file": "categories/functions.md",
+      "page_count": 28,
+      "pages": [
+        {
+          "title": "wpf_get_option()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_option/"
+        },
+        {
+          "title": "wpf_admin_override()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_admin_override-2/"
+        },
+        {
+          "title": "wpf_get_datetime_format()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_datetime_format/"
+        },
+        {
+          "title": "doing_wpf_webhook()",
+          "url": "https://wpfusion.com/documentation/functions/doing_wpf_webhook/"
+        },
+        {
+          "title": "doing_wpf_auto_login()",
+          "url": "https://wpfusion.com/documentation/functions/doing_wpf_auto_login/"
+        },
+        {
+          "title": "wpf_is_staging_mode()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_is_staging_mode/"
+        },
+        {
+          "title": "wpf_get_lookup_field()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_lookup_field/"
+        },
+        {
+          "title": "wpf_is_pseudo_field()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_is_pseudo_field/"
+        },
+        {
+          "title": "wpf_get_field_type()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_field_type/"
+        },
+        {
+          "title": "wpf_is_field_active()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_is_field_active/"
+        },
+        {
+          "title": "wpf_get_crm_field()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_crm_field/"
+        },
+        {
+          "title": "wpf_get_tag_label()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_tag_label/"
+        },
+        {
+          "title": "wpf_get_tag_id()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_tag_id/"
+        },
+        {
+          "title": "wpf_is_user_logged_in()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_is_user_logged_in/"
+        },
+        {
+          "title": "wpf_get_users_with_contact_ids()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_users_with_contact_ids/"
+        },
+        {
+          "title": "wpf_get_user_id()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_user_id/"
+        },
+        {
+          "title": "wpf_get_current_user_email()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_current_user_email/"
+        },
+        {
+          "title": "wpf_get_users_with_tag()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_users_with_tag/"
+        },
+        {
+          "title": "wpf_get_current_user()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_current_user/"
+        },
+        {
+          "title": "add_object()",
+          "url": "https://wpfusion.com/documentation/functions/add_object/"
+        },
+        {
+          "title": "pull_user_meta()",
+          "url": "https://wpfusion.com/documentation/functions/pull_user_meta/"
+        },
+        {
+          "title": "push_user_meta()",
+          "url": "https://wpfusion.com/documentation/functions/push_user_meta/"
+        },
+        {
+          "title": "remove_tags()",
+          "url": "https://wpfusion.com/documentation/functions/remove_tags/"
+        },
+        {
+          "title": "apply_tags()",
+          "url": "https://wpfusion.com/documentation/functions/apply_tags/"
+        },
+        {
+          "title": "wpf_get_tags()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_tags/"
+        },
+        {
+          "title": "wpf_get_contact_id()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_get_contact_id/"
+        },
+        {
+          "title": "wpf_has_tag()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_has_tag/"
+        },
+        {
+          "title": "wpf_user_can_access()",
+          "url": "https://wpfusion.com/documentation/functions/wpf_user_can_access/"
+        }
+      ]
+    },
+    {
+      "title": "Gamification",
+      "slug": "gamification",
+      "url": "https://wpfusion.com/documentation/gamification/",
+      "file": "categories/gamification.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "GamiPress",
+          "url": "https://wpfusion.com/documentation/gamification/gamipress/"
+        },
+        {
+          "title": "myCRED",
+          "url": "https://wpfusion.com/documentation/gamification/mycred/"
+        },
+        {
+          "title": "BadgeOS",
+          "url": "https://wpfusion.com/documentation/gamification/badgeos/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://wpfusion.com/documentation/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 10,
+      "pages": [
+        {
+          "title": "Working with Tags",
+          "url": "https://wpfusion.com/documentation/getting-started/working-with-tags/"
+        },
+        {
+          "title": "Displaying CRM Data in WordPress",
+          "url": "https://wpfusion.com/documentation/getting-started/displaying-crm-data-in-wordpress/"
+        },
+        {
+          "title": "Activity Logs",
+          "url": "https://wpfusion.com/documentation/getting-started/activity-logs/"
+        },
+        {
+          "title": "Showing and Hiding Widgets",
+          "url": "https://wpfusion.com/documentation/getting-started/showing-and-hiding-widgets/"
+        },
+        {
+          "title": "Tracking User Activity",
+          "url": "https://wpfusion.com/documentation/getting-started/tracking-user-activity/"
+        },
+        {
+          "title": "Restricting Access to Content",
+          "url": "https://wpfusion.com/documentation/getting-started/access-control/"
+        },
+        {
+          "title": "Shortcodes",
+          "url": "https://wpfusion.com/documentation/getting-started/shortcodes/"
+        },
+        {
+          "title": "Syncing Contact Fields",
+          "url": "https://wpfusion.com/documentation/getting-started/syncing-contact-fields/"
+        },
+        {
+          "title": "General Settings and Basic Setup",
+          "url": "https://wpfusion.com/documentation/getting-started/general-settings/"
+        },
+        {
+          "title": "Installation Guide",
+          "url": "https://wpfusion.com/documentation/getting-started/installation-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Installation Guides",
+      "slug": "installation-guides",
+      "url": "https://wpfusion.com/documentation/installation-guides/",
+      "file": "categories/installation-guides.md",
+      "page_count": 60,
+      "pages": [
+        {
+          "title": "How to Connect Sender.net to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-sender-net-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Autopilot to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-autopilot-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Quentn to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-quentn-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Flexie to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-flexie-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Mailjet to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-mailjet-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Maropost to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-maropost-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Tubular to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-tubular-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Copper to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-copper-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Customerly to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-customerly-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Emercury to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-emercury-to-wordpress/"
+        },
+        {
+          "title": "How to Connect WP ERP to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-wp-erp-to-wordpress/"
+        },
+        {
+          "title": "How to Connect ConvesioConvert to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-convesio-convert-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Jetpack CRM to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-jetpack-crm-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Encharge to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-encharge-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Omnisend to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-omnisend-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Customer.io to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-customer-io-to-wordpress/"
+        },
+        {
+          "title": "How to Connect EmailOctopus to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-emailoctopus-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Sendlane to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-sendlane-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Ortto to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-ortto-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Pipedrive to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-pipedrive-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Constant Contact to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-constant-contact-to-wordpress/"
+        },
+        {
+          "title": "How to Connect MailPoet to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-mailpoet-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Dynamics 365 Marketing to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-dynamics-365-marketing-to-wordpress/"
+        },
+        {
+          "title": "How to Connect MooSend to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-moosend-to-wordpress/"
+        },
+        {
+          "title": "How to Connect BirdSend to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-birdsend-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Intercom to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-intercom-to-wordpress/"
+        },
+        {
+          "title": "How to Connect KlickTipp to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-klicktipp-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Groundhogg (REST API) to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-groundhogg-rest-api-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Bento to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-bento-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Mailchimp to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-mailchimp-to-wordpress/"
+        },
+        {
+          "title": "How to Connect FunnelKit to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-funnelkit-to-wordpress/"
+        },
+        {
+          "title": "How to Connect PulseTechnologyCRM to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-pulsetechnologycrm-to-wordpress/"
+        },
+        {
+          "title": "How to Connect FluentCRM (REST API) to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-fluentcrm-rest-api-to-wordpress/"
+        },
+        {
+          "title": "How to Connect FluentCRM to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-fluentcrm-to-wordpress/"
+        },
+        {
+          "title": "How To Connect Mautic To WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-mautic-to-wordpress/"
+        },
+        {
+          "title": "How to Connect HighLevel to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-highlevel-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Growmatik to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-growmatik-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Brevo to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-brevo-to-wordpress/"
+        },
+        {
+          "title": "How to Connect NationBuilder to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-nationbuilder-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Klaviyo to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-klaviyo-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Groundhogg to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-groundhogg-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Gist to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-gist-to-wordpress/"
+        },
+        {
+          "title": "How to Connect GetResponse to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-getresponse-to-wordpress/"
+        },
+        {
+          "title": "How to Connect EngageBay to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-engagebay-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Drift to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-drift-to-wordpress/"
+        },
+        {
+          "title": "How to Connect HubSpot to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-hubspot-to-wordpress/"
+        },
+        {
+          "title": "How to Connect AgileCRM to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-agilecrm-to-wordpress/"
+        },
+        {
+          "title": "How To Connect Ontraport to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-ontraport-to-wordpress/"
+        },
+        {
+          "title": "How To Connect Infusionsoft and Keap to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-infusionsoft-to-wordpress/"
+        },
+        {
+          "title": "How To Connect ActiveCampaign to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-activecampaign-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Capsule to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-capsule-to-wordpress/"
+        },
+        {
+          "title": "How to Connect User.com to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-user-com-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Salesforce to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-salesforce-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Salesflare to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-salesflare-to-wordpress/"
+        },
+        {
+          "title": "How to Connect MailerLite to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-mailerlite-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Kartra to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-kartra-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Intercom to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-intercom-to-wordpress-2/"
+        },
+        {
+          "title": "How to Connect Drip to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-drip-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Kit to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-kit-to-wordpress/"
+        },
+        {
+          "title": "How to Connect Zoho to WordPress",
+          "url": "https://wpfusion.com/documentation/installation-guides/how-to-connect-zoho-to-wordpress/"
+        }
+      ]
+    },
+    {
+      "title": "Lead Generation",
+      "slug": "lead-generation",
+      "url": "https://wpfusion.com/documentation/lead-generation/",
+      "file": "categories/lead-generation.md",
+      "page_count": 16,
+      "pages": [
+        {
+          "title": "SureForms",
+          "url": "https://wpfusion.com/documentation/lead-generation/sureforms/"
+        },
+        {
+          "title": "Forminator",
+          "url": "https://wpfusion.com/documentation/lead-generation/forminator/"
+        },
+        {
+          "title": "Thrive Leads",
+          "url": "https://wpfusion.com/documentation/lead-generation/thrive-leads/"
+        },
+        {
+          "title": "WS Form",
+          "url": "https://wpfusion.com/documentation/lead-generation/ws-form/"
+        },
+        {
+          "title": "Piotnet Forms",
+          "url": "https://wpfusion.com/documentation/lead-generation/piotnet-forms/"
+        },
+        {
+          "title": "Gravity PDF",
+          "url": "https://wpfusion.com/documentation/lead-generation/gravity-pdf/"
+        },
+        {
+          "title": "GravityView",
+          "url": "https://wpfusion.com/documentation/lead-generation/gravityview/"
+        },
+        {
+          "title": "Fluent Forms",
+          "url": "https://wpfusion.com/documentation/lead-generation/fluent-forms/"
+        },
+        {
+          "title": "Caldera Forms",
+          "url": "https://wpfusion.com/documentation/lead-generation/caldera-forms/"
+        },
+        {
+          "title": "Convert Pro",
+          "url": "https://wpfusion.com/documentation/lead-generation/convert-pro/"
+        },
+        {
+          "title": "Elementor Forms",
+          "url": "https://wpfusion.com/documentation/lead-generation/elementor-forms/"
+        },
+        {
+          "title": "Ninja Forms",
+          "url": "https://wpfusion.com/documentation/lead-generation/ninja-forms/"
+        },
+        {
+          "title": "WPForms",
+          "url": "https://wpfusion.com/documentation/lead-generation/wpforms/"
+        },
+        {
+          "title": "Formidable Forms",
+          "url": "https://wpfusion.com/documentation/lead-generation/formidable-forms/"
+        },
+        {
+          "title": "Contact Form 7",
+          "url": "https://wpfusion.com/documentation/lead-generation/contact-form-7/"
+        },
+        {
+          "title": "Gravity Forms",
+          "url": "https://wpfusion.com/documentation/lead-generation/gravity-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Learning Management",
+      "slug": "learning-management",
+      "url": "https://wpfusion.com/documentation/learning-management/",
+      "file": "categories/learning-management.md",
+      "page_count": 18,
+      "pages": [
+        {
+          "title": "SureDash",
+          "url": "https://wpfusion.com/documentation/learning-management/suredash/"
+        },
+        {
+          "title": "MasterStudy",
+          "url": "https://wpfusion.com/documentation/learning-management/masterstudy/"
+        },
+        {
+          "title": "Parent and Student Access For LearnDash",
+          "url": "https://wpfusion.com/documentation/learning-management/parent-student-access-for-learndash/"
+        },
+        {
+          "title": "Thrive Apprentice",
+          "url": "https://wpfusion.com/documentation/learning-management/thrive-apprentice/"
+        },
+        {
+          "title": "WISDM Group Registration for LearnDash",
+          "url": "https://wpfusion.com/documentation/learning-management/wisdm-group-registration-learndash/"
+        },
+        {
+          "title": "Memberoni",
+          "url": "https://wpfusion.com/documentation/learning-management/memberoni/"
+        },
+        {
+          "title": "Uncanny LearnDash Groups",
+          "url": "https://wpfusion.com/documentation/learning-management/uncanny-learndash-groups/"
+        },
+        {
+          "title": "Tutor LMS",
+          "url": "https://wpfusion.com/documentation/learning-management/tutor-lms/"
+        },
+        {
+          "title": "CoursePress",
+          "url": "https://wpfusion.com/documentation/learning-management/coursepress/"
+        },
+        {
+          "title": "WPComplete",
+          "url": "https://wpfusion.com/documentation/learning-management/wpcomplete/"
+        },
+        {
+          "title": "AccessAlly",
+          "url": "https://wpfusion.com/documentation/membership/accessally/"
+        },
+        {
+          "title": "WPLMS",
+          "url": "https://wpfusion.com/documentation/learning-management/wplms/"
+        },
+        {
+          "title": "WP Courseware",
+          "url": "https://wpfusion.com/documentation/learning-management/wp-courseware/"
+        },
+        {
+          "title": "LearnPress",
+          "url": "https://wpfusion.com/documentation/learning-management/learnpress/"
+        },
+        {
+          "title": "eLearnCommerce",
+          "url": "https://wpfusion.com/documentation/learning-management/wpep/"
+        },
+        {
+          "title": "LifterLMS",
+          "url": "https://wpfusion.com/documentation/learning-management/lifterlms/"
+        },
+        {
+          "title": "Sensei",
+          "url": "https://wpfusion.com/documentation/learning-management/sensei/"
+        },
+        {
+          "title": "LearnDash",
+          "url": "https://wpfusion.com/documentation/learning-management/learndash/"
+        }
+      ]
+    },
+    {
+      "title": "Logins",
+      "slug": "logins",
+      "url": "https://wpfusion.com/documentation/logins/",
+      "file": "categories/logins.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "BuddyBoss Logins",
+          "url": "https://wpfusion.com/documentation/logins/logins-buddyboss-app/"
+        },
+        {
+          "title": "WooCommerce Post-Purchase Redirects",
+          "url": "https://wpfusion.com/documentation/logins/logins-woocommerce/"
+        },
+        {
+          "title": "Changelog",
+          "url": "https://wpfusion.com/documentation/logins/logins-changelog/"
+        },
+        {
+          "title": "Logins Overview",
+          "url": "https://wpfusion.com/documentation/logins/overview/"
+        }
+      ]
+    },
+    {
+      "title": "Media Tools",
+      "slug": "media-tools",
+      "url": "https://wpfusion.com/documentation/media-tools/",
+      "file": "categories/media-tools.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "Bunny Stream Integration",
+          "url": "https://wpfusion.com/documentation/media-tools/bunny-stream-integration/"
+        },
+        {
+          "title": "FV Player Integration",
+          "url": "https://wpfusion.com/documentation/media-tools/fv-player-integration/"
+        },
+        {
+          "title": "Presto Player Integration",
+          "url": "https://wpfusion.com/documentation/media-tools/presto-player-integration/"
+        },
+        {
+          "title": "Elementor Integration",
+          "url": "https://wpfusion.com/documentation/media-tools/elementor-integration/"
+        },
+        {
+          "title": "Changelog",
+          "url": "https://wpfusion.com/documentation/media-tools/media-tools-changelog/"
+        },
+        {
+          "title": "Usage Guide",
+          "url": "https://wpfusion.com/documentation/media-tools/usage-guide/"
+        },
+        {
+          "title": "Overview",
+          "url": "https://wpfusion.com/documentation/media-tools/media-tools-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Membership",
+      "slug": "membership",
+      "url": "https://wpfusion.com/documentation/membership/",
+      "file": "categories/membership.md",
+      "page_count": 30,
+      "pages": [
+        {
+          "title": "FluentCommunity",
+          "url": "https://wpfusion.com/documentation/membership/fluentcommunity/"
+        },
+        {
+          "title": "MemberDash",
+          "url": "https://wpfusion.com/documentation/membership/memberdash/"
+        },
+        {
+          "title": "Content Control",
+          "url": "https://wpfusion.com/documentation/membership/content-control/"
+        },
+        {
+          "title": "WP User Manager",
+          "url": "https://wpfusion.com/documentation/membership/wp-user-manager/"
+        },
+        {
+          "title": "SureMembers",
+          "url": "https://wpfusion.com/documentation/membership/suremembers/"
+        },
+        {
+          "title": "Blockli Streamer",
+          "url": "https://wpfusion.com/documentation/membership/blockli-streamer/"
+        },
+        {
+          "title": "UsersWP",
+          "url": "https://wpfusion.com/documentation/membership/userswp/"
+        },
+        {
+          "title": "ARMember",
+          "url": "https://wpfusion.com/documentation/membership/armember/"
+        },
+        {
+          "title": "Members",
+          "url": "https://wpfusion.com/documentation/membership/members/"
+        },
+        {
+          "title": "BuddyBoss",
+          "url": "https://wpfusion.com/documentation/membership/buddyboss/"
+        },
+        {
+          "title": "WP-Members",
+          "url": "https://wpfusion.com/documentation/membership/wp-members/"
+        },
+        {
+          "title": "Users Insights",
+          "url": "https://wpfusion.com/documentation/membership/users-insights/"
+        },
+        {
+          "title": "PilotPress",
+          "url": "https://wpfusion.com/documentation/membership/pilotpress/"
+        },
+        {
+          "title": "Teams for WooCommerce Memberships",
+          "url": "https://wpfusion.com/documentation/membership/teams-for-woocommerce-memberships/"
+        },
+        {
+          "title": "Toolset User Forms",
+          "url": "https://wpfusion.com/documentation/membership/toolset-user-forms/"
+        },
+        {
+          "title": "Profile Builder Pro",
+          "url": "https://wpfusion.com/documentation/membership/profile-builder-pro/"
+        },
+        {
+          "title": "ProfilePress",
+          "url": "https://wpfusion.com/documentation/membership/profilepress/"
+        },
+        {
+          "title": "PeepSo",
+          "url": "https://wpfusion.com/documentation/membership/peepso/"
+        },
+        {
+          "title": "WishList Member",
+          "url": "https://wpfusion.com/documentation/membership/wishlist-member/"
+        },
+        {
+          "title": "WooCommerce Memberships",
+          "url": "https://wpfusion.com/documentation/membership/woocommerce-memberships/"
+        },
+        {
+          "title": "Simple Membership",
+          "url": "https://wpfusion.com/documentation/membership/simple-membership/"
+        },
+        {
+          "title": "s2Member",
+          "url": "https://wpfusion.com/documentation/integrations/s2member/"
+        },
+        {
+          "title": "MemberPress",
+          "url": "https://wpfusion.com/documentation/membership/memberpress/"
+        },
+        {
+          "title": "Restrict Content Pro",
+          "url": "https://wpfusion.com/documentation/membership/restrict-content-pro/"
+        },
+        {
+          "title": "BuddyPress",
+          "url": "https://wpfusion.com/documentation/membership/buddypress/"
+        },
+        {
+          "title": "MemberMouse",
+          "url": "https://wpfusion.com/documentation/membership/membermouse/"
+        },
+        {
+          "title": "User Meta",
+          "url": "https://wpfusion.com/documentation/membership/user-meta/"
+        },
+        {
+          "title": "UserPro",
+          "url": "https://wpfusion.com/documentation/membership/userpro/"
+        },
+        {
+          "title": "Ultimate Member",
+          "url": "https://wpfusion.com/documentation/membership/ultimate-member/"
+        },
+        {
+          "title": "Paid Memberships Pro",
+          "url": "https://wpfusion.com/documentation/membership/paid-memberships-pro/"
+        }
+      ]
+    },
+    {
+      "title": "Multilingual",
+      "slug": "multilingual",
+      "url": "https://wpfusion.com/documentation/multilingual/",
+      "file": "categories/multilingual.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "TranslatePress",
+          "url": "https://wpfusion.com/documentation/multilingual/translatepress/"
+        },
+        {
+          "title": "GTranslate",
+          "url": "https://wpfusion.com/documentation/multilingual/gtranslate/"
+        },
+        {
+          "title": "Weglot",
+          "url": "https://wpfusion.com/documentation/multilingual/weglot/"
+        },
+        {
+          "title": "WPML",
+          "url": "https://wpfusion.com/documentation/multilingual/wpml/"
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "slug": "other",
+      "url": "https://wpfusion.com/documentation/other/",
+      "file": "categories/other.md",
+      "page_count": 12,
+      "pages": [
+        {
+          "title": "Document Library Pro",
+          "url": "https://wpfusion.com/documentation/other/document-library-pro/"
+        },
+        {
+          "title": "GeoDirectory",
+          "url": "https://wpfusion.com/documentation/other/geodirectory/"
+        },
+        {
+          "title": "Object Sync for Salesforce",
+          "url": "https://wpfusion.com/documentation/other/object-sync-for-salesforce/"
+        },
+        {
+          "title": "HollerBox",
+          "url": "https://wpfusion.com/documentation/other/hollerbox/"
+        },
+        {
+          "title": "Presto Player",
+          "url": "https://wpfusion.com/documentation/other/presto-player/"
+        },
+        {
+          "title": "WP Remote Users Sync",
+          "url": "https://wpfusion.com/documentation/other/wp-remote-users-sync/"
+        },
+        {
+          "title": "Share Logins Pro",
+          "url": "https://wpfusion.com/documentation/other/share-logins-pro/"
+        },
+        {
+          "title": "WP E Signature",
+          "url": "https://wpfusion.com/documentation/other/e-signature/"
+        },
+        {
+          "title": "Ahoy",
+          "url": "https://wpfusion.com/documentation/other/ahoy/"
+        },
+        {
+          "title": "Advanced Ads",
+          "url": "https://wpfusion.com/documentation/other/advanced-ads/"
+        },
+        {
+          "title": "Popup Maker",
+          "url": "https://wpfusion.com/documentation/other/popup-maker/"
+        },
+        {
+          "title": "WP Job Manager",
+          "url": "https://wpfusion.com/documentation/other/wp-job-manager/"
+        }
+      ]
+    },
+    {
+      "title": "Other Common Issues",
+      "slug": "other-common-issues",
+      "url": "https://wpfusion.com/documentation/other-common-issues/",
+      "file": "categories/other-common-issues.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "WooCommerce Troubleshooting",
+          "url": "https://wpfusion.com/documentation/other-common-issues/woocommerce-troubleshooting-2/"
+        },
+        {
+          "title": "WooCommerce Troubleshooting",
+          "url": "https://wpfusion.com/documentation/other-common-issues/woocommerce-troubleshooting/"
+        },
+        {
+          "title": "Settings Page Not Saving Fully",
+          "url": "https://wpfusion.com/documentation/other-common-issues/settings-page-not-saving-fully/"
+        },
+        {
+          "title": "Batch Export Not Detecting All Users",
+          "url": "https://wpfusion.com/documentation/other-common-issues/batch-export-not-detecting-all-users/"
+        },
+        {
+          "title": "Webhooks not being received by WP Fusion",
+          "url": "https://wpfusion.com/documentation/other-common-issues/webhooks-not-being-received-by-wp-fusion/"
+        }
+      ]
+    },
+    {
+      "title": "Page Builders",
+      "slug": "page-builders",
+      "url": "https://wpfusion.com/documentation/page-builders/",
+      "file": "categories/page-builders.md",
+      "page_count": 9,
+      "pages": [
+        {
+          "title": "Breakdance",
+          "url": "https://wpfusion.com/documentation/page-builders/breakdance/"
+        },
+        {
+          "title": "WPBakery Page Builder",
+          "url": "https://wpfusion.com/documentation/page-builders/wpbakery-page-builder/"
+        },
+        {
+          "title": "Bricks",
+          "url": "https://wpfusion.com/documentation/page-builders/bricks/"
+        },
+        {
+          "title": "Thrive Architect",
+          "url": "https://wpfusion.com/documentation/page-builders/thrive-architect/"
+        },
+        {
+          "title": "Oxygen",
+          "url": "https://wpfusion.com/documentation/page-builders/oxygen/"
+        },
+        {
+          "title": "Gutenberg",
+          "url": "https://wpfusion.com/documentation/page-builders/gutenberg/"
+        },
+        {
+          "title": "Elementor",
+          "url": "https://wpfusion.com/documentation/page-builders/elementor/"
+        },
+        {
+          "title": "Divi",
+          "url": "https://wpfusion.com/documentation/page-builders/divi/"
+        },
+        {
+          "title": "Beaver Builder",
+          "url": "https://wpfusion.com/documentation/page-builders/beaver-builder/"
+        }
+      ]
+    },
+    {
+      "title": "Tutorials",
+      "slug": "tutorials",
+      "url": "https://wpfusion.com/documentation/tutorials/",
+      "file": "categories/tutorials.md",
+      "page_count": 11,
+      "pages": [
+        {
+          "title": "Double Opt-Ins",
+          "url": "https://wpfusion.com/documentation/tutorials/double-opt-ins/"
+        },
+        {
+          "title": "Batch Operations / Exporting Data",
+          "url": "https://wpfusion.com/documentation/tutorials/batch-operations/"
+        },
+        {
+          "title": "ThriveCart",
+          "url": "https://wpfusion.com/documentation/tutorials/thrivecart/"
+        },
+        {
+          "title": "Switching CRMs",
+          "url": "https://wpfusion.com/documentation/tutorials/switching-crms/"
+        },
+        {
+          "title": "Menu Item Visibility",
+          "url": "https://wpfusion.com/documentation/tutorials/menu-item-visibility/"
+        },
+        {
+          "title": "Site Tracking Scripts",
+          "url": "https://wpfusion.com/documentation/tutorials/site-tracking-scripts/"
+        },
+        {
+          "title": "Lead Source Tracking",
+          "url": "https://wpfusion.com/documentation/tutorials/lead-source-tracking/"
+        },
+        {
+          "title": "Link Click Tracking",
+          "url": "https://wpfusion.com/documentation/tutorials/link-click-tracking/"
+        },
+        {
+          "title": "Auto Login",
+          "url": "https://wpfusion.com/documentation/tutorials/auto-login-links/"
+        },
+        {
+          "title": "Import Users",
+          "url": "https://wpfusion.com/documentation/tutorials/import-users/"
+        },
+        {
+          "title": "Sync Users Between Sites",
+          "url": "https://wpfusion.com/documentation/tutorials/sync-user-accounts/"
+        }
+      ]
+    },
+    {
+      "title": "User Roles",
+      "slug": "user-roles",
+      "url": "https://wpfusion.com/documentation/user-roles/",
+      "file": "categories/user-roles.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Changelog",
+          "url": "https://wpfusion.com/documentation/user-roles/user-roles-changelog/"
+        },
+        {
+          "title": "User Roles Overview",
+          "url": "https://wpfusion.com/documentation/user-roles/user-roles-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Webhooks",
+      "slug": "webhooks",
+      "url": "https://wpfusion.com/documentation/webhooks/",
+      "file": "categories/webhooks.md",
+      "page_count": 43,
+      "pages": [
+        {
+          "title": "Omnisend Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/omnisend-webhooks/"
+        },
+        {
+          "title": "Klaviyo Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/klaviyo-webhooks/"
+        },
+        {
+          "title": "KlickTipp Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/klicktipp-webhooks/"
+        },
+        {
+          "title": "Encharge Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/encharge-webhooks/"
+        },
+        {
+          "title": "Customer.io Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/customer-io-webhooks/"
+        },
+        {
+          "title": "EmailOctopus Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/emailoctopus-webhooks/"
+        },
+        {
+          "title": "Ortto Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/ortto-webhooks/"
+        },
+        {
+          "title": "Engage Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/engage-webhooks/"
+        },
+        {
+          "title": "Pipedrive Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/pipedrive-webhooks/"
+        },
+        {
+          "title": "About Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/about-webhooks/"
+        },
+        {
+          "title": "MooSend Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/moosend-webhooks/"
+        },
+        {
+          "title": "HighLevel Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/highlevel-webhooks/"
+        },
+        {
+          "title": "Groundhogg Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/groundhogg-webhooks/"
+        },
+        {
+          "title": "Bento Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/bento-webhooks/"
+        },
+        {
+          "title": "Jetpack CRM Automatic Imports",
+          "url": "https://wpfusion.com/documentation/webhooks/jetpack-crm-automatic-imports/"
+        },
+        {
+          "title": "FunnelKit Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/funnelkit-webhooks/"
+        },
+        {
+          "title": "FluentCRM Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/fluentcrm-webhooks/"
+        },
+        {
+          "title": "PulseTechnologyCRM Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/pulsetechnologycrm-webhooks/"
+        },
+        {
+          "title": "Emercury Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/emercury-webooks/"
+        },
+        {
+          "title": "EngageBay Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/engagebay-webhooks/"
+        },
+        {
+          "title": "Customerly Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/customerly-webhooks/"
+        },
+        {
+          "title": "Platform.ly Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/platformly-webhooks/"
+        },
+        {
+          "title": "NationBuilder Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/nationbuilder-webhooks/"
+        },
+        {
+          "title": "Gist Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/gist-webhooks/"
+        },
+        {
+          "title": "Copper Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/copper-webhooks/"
+        },
+        {
+          "title": "Salesforce Outbound Messages",
+          "url": "https://wpfusion.com/documentation/webhooks/salesforce-outbound-messages/"
+        },
+        {
+          "title": "HubSpot Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/hubspot-webhooks/"
+        },
+        {
+          "title": "Brevo Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/brevo-webhooks/"
+        },
+        {
+          "title": "Mailchimp Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/mailchimp-webhooks/"
+        },
+        {
+          "title": "Maropost Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/maropost/"
+        },
+        {
+          "title": "Flexie Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/flexie/"
+        },
+        {
+          "title": "UserEngage Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/userengage/"
+        },
+        {
+          "title": "Kartra Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/kartra-webhooks/"
+        },
+        {
+          "title": "Zoho Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/zoho-webhooks/"
+        },
+        {
+          "title": "MailerLite Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/mailerlite-webhooks/"
+        },
+        {
+          "title": "Intercom Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/intercom-webhooks/"
+        },
+        {
+          "title": "Mautic Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/mautic-webhooks/"
+        },
+        {
+          "title": "ConvertKit Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/convertkit-webhooks/"
+        },
+        {
+          "title": "Agile CRM Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/agile-crm-webhooks/"
+        },
+        {
+          "title": "Drip Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/drip-webhooks/"
+        },
+        {
+          "title": "Ontraport Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/ontraport-webhooks/"
+        },
+        {
+          "title": "ActiveCampaign Webhooks",
+          "url": "https://wpfusion.com/documentation/webhooks/activecampaign-webhooks/"
+        },
+        {
+          "title": "Infusionsoft / Keap HTTP Posts",
+          "url": "https://wpfusion.com/documentation/webhooks/infusionsoft-http-posts/"
+        }
+      ]
+    },
+    {
+      "title": "Webhooks Zapier",
+      "slug": "webhooks-zapier",
+      "url": "https://wpfusion.com/documentation/webhooks-zapier/",
+      "file": "categories/webhooks-zapier.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Zapier Guide",
+          "url": "https://wpfusion.com/documentation/webhooks-zapier/zapier-guide/"
+        },
+        {
+          "title": "Overview",
+          "url": "https://wpfusion.com/documentation/webhooks-zapier/webhooks-overview-2/"
+        },
+        {
+          "title": "Changelog",
+          "url": "https://wpfusion.com/documentation/webhooks-zapier/webhooks-changelog/"
+        }
+      ]
+    }
+  ]
 }
