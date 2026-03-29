@@ -1,5 +1,14 @@
 {
-  "last_updated": null,
-  "total_plugins": 0,
-  "plugins": []
+  "last_updated": "2026-03-29T20:48:19.177Z",
+  "total_plugins": 1,
+  "plugins": [
+    {
+      "slug": "wpfusion",
+      "name": "Wpfusion",
+      "documentation_url": "https://wpfusion.com/documentation/",
+      "last_scraped": "2026-03-29T20:48:19.177Z",
+      "page_count": 0,
+      "categories": []
+    }
+  ]
 }
