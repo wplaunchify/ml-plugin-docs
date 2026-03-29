@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run WP Fusion scraper
-        run: node scraper.js --slug=wpfusion --url=https://wpfusion.com/documentation/ --selector=.entry-content
+        run: node scraper.js --slug=wpfusion --mode=wp-api --url=https://wpfusion.com --post-type=documentation --taxonomy=documentation-categories --name="WP Fusion"
 
       - name: Check for changes
         id: changes
