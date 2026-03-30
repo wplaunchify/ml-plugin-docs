@@ -1,0 +1,1866 @@
+{
+  "plugin_slug": "learndash",
+  "plugin_name": "LearnDash",
+  "documentation_url": "https://learndash.com/support/documentation/",
+  "last_scraped": "2026-03-30T15:46:51.660Z",
+  "total_pages": 329,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "2checkout Add On",
+      "slug": "2checkout-add-on",
+      "url": "https://learndash.com/support/documentation/2checkout-add-on/",
+      "file": "categories/2checkout-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "2Checkout Integration",
+          "url": "https://learndash.com/support/kb/add-ons/2checkout-add-on/2checkout/"
+        }
+      ]
+    },
+    {
+      "title": "3rd Party Plugins",
+      "slug": "3rd-party-plugins",
+      "url": "https://learndash.com/support/documentation/3rd-party-plugins/",
+      "file": "categories/3rd-party-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "3rd Party Plugins",
+          "url": "https://learndash.com/support/kb/add-ons/3rd-party-plugins/3rd-party/"
+        }
+      ]
+    },
+    {
+      "title": "Account Billing",
+      "slug": "account-billing",
+      "url": "https://learndash.com/support/documentation/account-billing/",
+      "file": "categories/account-billing.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "LearnDash Licensing & Management",
+          "url": "https://learndash.com/support/kb/resources/account-billing/learndash-licensing-and-management/"
+        },
+        {
+          "title": "License",
+          "url": "https://learndash.com/support/kb/resources/account-billing/license/"
+        },
+        {
+          "title": "Account & Billing",
+          "url": "https://learndash.com/support/kb/resources/account-billing/account/"
+        },
+        {
+          "title": "Updates",
+          "url": "https://learndash.com/support/kb/resources/account-billing/updates/"
+        },
+        {
+          "title": "Edit Your Customer Account Email and Password",
+          "url": "https://learndash.com/support/kb/resources/account-billing/profile/"
+        },
+        {
+          "title": "How To Get Help",
+          "url": "https://learndash.com/support/kb/resources/account-billing/help/"
+        },
+        {
+          "title": "Billing",
+          "url": "https://learndash.com/support/kb/resources/account-billing/billing/"
+        }
+      ]
+    },
+    {
+      "title": "Achievements Add On",
+      "slug": "achievements-add-on",
+      "url": "https://learndash.com/support/documentation/achievements-add-on/",
+      "file": "categories/achievements-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Achievements Add-On",
+          "url": "https://learndash.com/support/kb/add-ons/achievements-add-on/achievements-add-on/"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Learndash App",
+      "slug": "advanced-learndash-app",
+      "url": "https://learndash.com/support/documentation/advanced-learndash-app/",
+      "file": "categories/advanced-learndash-app.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "How to Create an APNs Auth Key for Your Learndash iOS App",
+          "url": "https://learndash.com/support/kb/learndash-app/advanced-learndash-app/how-to-create-an-apns-auth-key-for-your-learndash-ios-app/"
+        },
+        {
+          "title": "How to Migrate Require Purchase Functionality in Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/advanced-learndash-app/how-to-migrate-require-purchase-functionality-in-your-learndash-app/"
+        },
+        {
+          "title": "How to Manage Access Controls in Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/advanced-learndash-app/how-to-manage-access-controls-in-your-learndash-app/"
+        },
+        {
+          "title": "How to Enable Maintenance Mode in Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/advanced-learndash-app/how-to-enable-maintenance-mode-in-your-learndash-app/"
+        },
+        {
+          "title": "How to Create Multiple Versions of App Menus in Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/advanced-learndash-app/how-to-create-multiple-versions-of-app-menus-in-your-learndash-app/"
+        },
+        {
+          "title": "How to Configure the Default Restricted Message in Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/advanced-learndash-app/how-to-configure-the-default-restricted-message-in-your-learndash-app/"
+        },
+        {
+          "title": "How to Configure Access Rules in Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/advanced-learndash-app/how-to-configure-access-rules-in-your-learndash-app/"
+        }
+      ]
+    },
+    {
+      "title": "App Builds",
+      "slug": "app-builds",
+      "url": "https://learndash.com/support/documentation/app-builds/",
+      "file": "categories/app-builds.md",
+      "page_count": 8,
+      "pages": [
+        {
+          "title": "How to Configure General App Settings",
+          "url": "https://learndash.com/support/kb/learndash-app/app-builds/how-to-configure-general-app-settings/"
+        },
+        {
+          "title": "How to Generate Android Release Apps",
+          "url": "https://learndash.com/support/kb/learndash-app/app-builds/how-to-generate-android-release-apps/"
+        },
+        {
+          "title": "How to Generate iOS Release Apps",
+          "url": "https://learndash.com/support/kb/learndash-app/app-builds/how-to-generate-ios-release-apps/"
+        },
+        {
+          "title": "How to Generate New App Builds",
+          "url": "https://learndash.com/support/kb/learndash-app/app-builds/how-to-generate-new-app-builds/"
+        },
+        {
+          "title": "How to Install Android Test App Builds",
+          "url": "https://learndash.com/support/kb/learndash-app/app-builds/how-to-install-android-test-app-builds/"
+        },
+        {
+          "title": "How to Install iOS Test Builds",
+          "url": "https://learndash.com/support/kb/learndash-app/app-builds/how-to-install-ios-test-builds/"
+        },
+        {
+          "title": "How to Update Your Android Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/app-builds/how-to-update-your-android-learndash-app/"
+        },
+        {
+          "title": "How to Upload Learndash App iOS Builds",
+          "url": "https://learndash.com/support/kb/learndash-app/app-builds/how-to-upload-learndash-app-ios-builds/"
+        }
+      ]
+    },
+    {
+      "title": "Assignments",
+      "slug": "assignments",
+      "url": "https://learndash.com/support/documentation/assignments/",
+      "file": "categories/assignments.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Enable Assignments",
+          "url": "https://learndash.com/support/kb/core/assignments/enable-assignments/"
+        },
+        {
+          "title": "Manage Assignments",
+          "url": "https://learndash.com/support/kb/core/assignments/manage-assignments/"
+        },
+        {
+          "title": "Global Assignment Settings",
+          "url": "https://learndash.com/support/kb/core/assignments/assignment-settings/"
+        },
+        {
+          "title": "Assignments",
+          "url": "https://learndash.com/support/kb/core/assignments/assignments/"
+        }
+      ]
+    },
+    {
+      "title": "Bbpress Add On",
+      "slug": "bbpress-add-on",
+      "url": "https://learndash.com/support/documentation/bbpress-add-on/",
+      "file": "categories/bbpress-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "bbPress Integration",
+          "url": "https://learndash.com/support/kb/add-ons/bbpress-add-on/bbpress/"
+        }
+      ]
+    },
+    {
+      "title": "Certificate Builder Add On",
+      "slug": "certificate-builder-add-on",
+      "url": "https://learndash.com/support/documentation/certificate-builder-add-on/",
+      "file": "categories/certificate-builder-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Certificate Builder Add-On",
+          "url": "https://learndash.com/support/kb/add-ons/certificate-builder-add-on/certificate-builder-add-on/"
+        }
+      ]
+    },
+    {
+      "title": "Certificates",
+      "slug": "certificates",
+      "url": "https://learndash.com/support/documentation/certificates/",
+      "file": "categories/certificates.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Certificate Shortcodes",
+          "url": "https://learndash.com/support/kb/core/certificates/certificate-shortcodes/"
+        },
+        {
+          "title": "Create a Certificate",
+          "url": "https://learndash.com/support/kb/core/certificates/create-certificate/"
+        },
+        {
+          "title": "Certificates",
+          "url": "https://learndash.com/support/kb/core/certificates/certificates/"
+        }
+      ]
+    },
+    {
+      "title": "Challenge Exams",
+      "slug": "challenge-exams",
+      "url": "https://learndash.com/support/documentation/challenge-exams/",
+      "file": "categories/challenge-exams.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Challenge Exams",
+          "url": "https://learndash.com/support/kb/core/challenge-exams/challenge-exams/"
+        }
+      ]
+    },
+    {
+      "title": "Compatibility Add On",
+      "slug": "compatibility-add-on",
+      "url": "https://learndash.com/support/documentation/compatibility-add-on/",
+      "file": "categories/compatibility-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Compatibility Add-Ons",
+          "url": "https://learndash.com/support/kb/add-ons/compatibility-add-on/compatibility/"
+        }
+      ]
+    },
+    {
+      "title": "Courses",
+      "slug": "courses",
+      "url": "https://learndash.com/support/documentation/courses/",
+      "file": "categories/courses.md",
+      "page_count": 14,
+      "pages": [
+        {
+          "title": "Course Completion Page",
+          "url": "https://learndash.com/support/kb/core/courses/course-completion-page/"
+        },
+        {
+          "title": "Course Dashboard",
+          "url": "https://learndash.com/support/kb/core/courses/course-dashboard/"
+        },
+        {
+          "title": "Pre-Selling",
+          "url": "https://learndash.com/support/kb/core/courses/pre-selling/"
+        },
+        {
+          "title": "Course Outline Builder",
+          "url": "https://learndash.com/support/kb/core/courses/course-outline-builder/"
+        },
+        {
+          "title": "Course Create Wizard",
+          "url": "https://learndash.com/support/kb/core/courses/course-create-wizard/"
+        },
+        {
+          "title": "Course Page",
+          "url": "https://learndash.com/support/kb/core/courses/course-page/"
+        },
+        {
+          "title": "Course Progression",
+          "url": "https://learndash.com/support/kb/core/courses/course-progression/"
+        },
+        {
+          "title": "Course Sections",
+          "url": "https://learndash.com/support/kb/core/courses/course-sections/"
+        },
+        {
+          "title": "Course Display & Content Settings",
+          "url": "https://learndash.com/support/kb/core/courses/course-display-content-settings/"
+        },
+        {
+          "title": "Shared Course Steps",
+          "url": "https://learndash.com/support/kb/core/courses/shared-course-steps/"
+        },
+        {
+          "title": "Course Enrollment Mode Settings",
+          "url": "https://learndash.com/support/kb/core/courses/course-enrollment-mode-setting/"
+        },
+        {
+          "title": "Course Builder",
+          "url": "https://learndash.com/support/kb/core/courses/course-builder/"
+        },
+        {
+          "title": "Course Grid",
+          "url": "https://learndash.com/support/kb/core/courses/course-grid/"
+        },
+        {
+          "title": "Courses",
+          "url": "https://learndash.com/support/kb/core/courses/courses/"
+        }
+      ]
+    },
+    {
+      "title": "Design",
+      "slug": "design",
+      "url": "https://learndash.com/support/documentation/design/",
+      "file": "categories/design.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Widgets",
+          "url": "https://learndash.com/support/kb/core/design/widgets/"
+        }
+      ]
+    },
+    {
+      "title": "Developers",
+      "slug": "developers",
+      "url": "https://learndash.com/support/documentation/developers/",
+      "file": "categories/developers.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Adding Fields to LearnDash Registration Forms with Advanced Custom Fields (ACF)",
+          "url": "https://learndash.com/support/kb/resources/developers/adding-fields-to-learndash-registration-forms-with-advanced-custom-fields-acf/"
+        },
+        {
+          "title": "Protecting Files",
+          "url": "https://learndash.com/support/kb/resources/developers/protecting-files/"
+        },
+        {
+          "title": "Developers",
+          "url": "https://learndash.com/support/kb/resources/developers/developers/"
+        }
+      ]
+    },
+    {
+      "title": "Done For You",
+      "slug": "done-for-you",
+      "url": "https://learndash.com/support/documentation/done-for-you/",
+      "file": "categories/done-for-you.md",
+      "page_count": 13,
+      "pages": [
+        {
+          "title": "Add publishing@learndash.com to Google Cloud",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/add-buildslearndash-com-to-google-cloud/"
+        },
+        {
+          "title": "How to Add LearnDash as a User to Your Google Developer Account",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-add-learndash-as-a-user-to-your-google-developer-account/"
+        },
+        {
+          "title": "How to Add LearnDash as Admin to Your Apple Developer Account",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-add-learndash-as-admin-to-your-apple-developer-account/"
+        },
+        {
+          "title": "How to Complete Agreements, Tax & Banking in Your Apple Developer Account",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-complete-agreements-tax-banking-in-your-apple-developer-account/"
+        },
+        {
+          "title": "How to Create Bundle IDs for Your Learndash iOS Apps",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-create-bundle-ids-for-your-learndash-ios-apps/"
+        },
+        {
+          "title": "How to Create Your Learndash App Listing in Google Play Console",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-create-your-learndash-app-listing-in-google-play-console/"
+        },
+        {
+          "title": "How to Set Up Firebase for Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-set-up-firebase-for-your-learndash-app/"
+        },
+        {
+          "title": "How to Add the Learndash Team as Owner to Your Firebase Project",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-add-the-learndash-team-as-owner-to-your-firebase-project/"
+        },
+        {
+          "title": "How to Create an APNs Auth Key for Your Learndash iOS App",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-create-an-apns-auth-key-for-your-learndash-ios-app-2/"
+        },
+        {
+          "title": "How to Create Your Google Play Developer Service Account Key",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-create-your-google-play-developer-service-account-key/"
+        },
+        {
+          "title": "How to Set Up Firebase",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-set-up-firebase/"
+        },
+        {
+          "title": "How to Create Your Google Play Developer Service Account Key for Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-create-your-google-play-developer-service-account-key-for-your-learndash-app/"
+        },
+        {
+          "title": "How to Generate and Connect Your Apple Developer API Key to Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/done-for-you/how-to-generate-and-connect-your-apple-developer-api-key-to-your-learndash-app/"
+        }
+      ]
+    },
+    {
+      "title": "Easy Digital Downloads Add On",
+      "slug": "easy-digital-downloads-add-on",
+      "url": "https://learndash.com/support/documentation/easy-digital-downloads-add-on/",
+      "file": "categories/easy-digital-downloads-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Easy Digital Downloads Integration",
+          "url": "https://learndash.com/support/kb/add-ons/easy-digital-downloads-add-on/easy-digital-downloads/"
+        }
+      ]
+    },
+    {
+      "title": "Elementor Add On",
+      "slug": "elementor-add-on",
+      "url": "https://learndash.com/support/documentation/elementor-add-on/",
+      "file": "categories/elementor-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "LearnDash Elementor Addon",
+          "url": "https://learndash.com/support/kb/add-ons/elementor-add-on/learndash-elementor-addon/"
+        }
+      ]
+    },
+    {
+      "title": "Event Espresso Add On",
+      "slug": "event-espresso-add-on",
+      "url": "https://learndash.com/support/documentation/event-espresso-add-on/",
+      "file": "categories/event-espresso-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Event Espresso Integration",
+          "url": "https://learndash.com/support/kb/add-ons/event-espresso-add-on/event-espresso/"
+        }
+      ]
+    },
+    {
+      "title": "Faqs",
+      "slug": "faqs",
+      "url": "https://learndash.com/support/documentation/faqs/",
+      "file": "categories/faqs.md",
+      "page_count": 33,
+      "pages": [
+        {
+          "title": "How do I automatically assign users to courses when they sign up/register on my site?",
+          "url": "https://learndash.com/support/kb/core/faqs/how-do-i-automatically-assign-users-to-courses-when-they-sign-up-register-on-my-site/"
+        },
+        {
+          "title": "Why Am I Unable to Submit an “Open Support Ticket”?",
+          "url": "https://learndash.com/support/kb/resources/faqs/why-am-i-unable-to-submit-an-open-support-ticket/"
+        },
+        {
+          "title": "I’m getting the error “the link you followed has expired” when installing LearnDash.",
+          "url": "https://learndash.com/support/kb/resources/faqs/im-getting-the-error-the-link-you-followed-has-expired-when-installing-learndash/"
+        },
+        {
+          "title": "Questions about MemberDash?",
+          "url": "https://learndash.com/support/kb/resources/faqs/questions-about-memberdash/"
+        },
+        {
+          "title": "What steps can I take if a lesson or topic is not marked as complete?",
+          "url": "https://learndash.com/support/kb/resources/faqs/what-steps-can-i-take-if-a-lesson-or-topic-is-not-marked-as-complete-2/"
+        },
+        {
+          "title": "Moving Away from LearnDash Cloud",
+          "url": "https://learndash.com/support/kb/resources/faqs/moving-away-from-learndash-cloud/"
+        },
+        {
+          "title": "What are the different user roles in LearnDash and what permissions do they have?",
+          "url": "https://learndash.com/support/kb/resources/faqs/what-are-the-different-user-roles-in-learndash-and-what-permissions-do-they-have/"
+        },
+        {
+          "title": "What should I do if my course content is not displaying correctly?",
+          "url": "https://learndash.com/support/kb/resources/faqs/what-should-i-do-if-my-course-content-is-not-displaying-correctly/"
+        },
+        {
+          "title": "Is there a way to export an individual course?",
+          "url": "https://learndash.com/support/kb/resources/faqs/is-there-a-way-to-export-an-individual-course/"
+        },
+        {
+          "title": "Is there a shortcode for displaying a single lesson in LearnDash?",
+          "url": "https://learndash.com/support/kb/resources/faqs/is-there-a-shortcode-for-displaying-a-single-lesson-in-learndash/"
+        },
+        {
+          "title": "Can I use the same Stripe Purchase Button on multiple courses?",
+          "url": "https://learndash.com/support/kb/resources/faqs/can-i-use-the-same-stripe-purchase-button-on-multiple-courses/"
+        },
+        {
+          "title": "Do I need a plugin to do drip feeding?",
+          "url": "https://learndash.com/support/kb/resources/faqs/do-i-need-a-plugin-to-do-drip-feeding/"
+        },
+        {
+          "title": "What plugins can be used with LearnDash for math equation editing?",
+          "url": "https://learndash.com/support/kb/resources/faqs/what-plugins-can-be-used-with-learndash-for-math-equation-editing/"
+        },
+        {
+          "title": "How to Manually Install and Update Plugins from WordPress.org",
+          "url": "https://learndash.com/support/kb/resources/faqs/how-to-manually-install-and-update-plugins-from-wordpress-org/"
+        },
+        {
+          "title": "What is the best way for me to bundle courses using LearnDash?",
+          "url": "https://learndash.com/support/kb/resources/faqs/what-is-the-best-way-for-me-to-bundle-courses-using-learndash/"
+        },
+        {
+          "title": "WisdmLabs Acquisition FAQ",
+          "url": "https://learndash.com/support/kb/resources/faqs/wisdmlabs-acquisition-faq/"
+        },
+        {
+          "title": "Your Add-Ons and Plugins are Officially Migrating to LearnDash FAQs",
+          "url": "https://learndash.com/support/kb/resources/faqs/your-add-on-and-plugins-are-officially-migrating-to-learndash-faqs/"
+        },
+        {
+          "title": "Why are the license updates and license checks disabled?",
+          "url": "https://learndash.com/support/kb/resources/faqs/why-are-the-license-updates-and-license-checks-disabled-on-my-site/"
+        },
+        {
+          "title": "Page Builders + LearnDash",
+          "url": "https://learndash.com/support/kb/resources/faqs/page-builders-2/"
+        },
+        {
+          "title": "Why is the registration form not showing?",
+          "url": "https://learndash.com/support/kb/resources/faqs/why-is-the-registration-form-not-showing/"
+        },
+        {
+          "title": "How can I make email notifications send on time?",
+          "url": "https://learndash.com/support/kb/resources/faqs/email-notifications-send-time/"
+        },
+        {
+          "title": "Can I hide the course content table on the course page?",
+          "url": "https://learndash.com/support/kb/resources/faqs/hide-course-content-table/"
+        },
+        {
+          "title": "Can I create a unique sidebar for courses, lessons & quizzes?",
+          "url": "https://learndash.com/support/kb/resources/faqs/create-unique-sidebar/"
+        },
+        {
+          "title": "Can I rename “courses,” “lessons,” “topics,” and “quizzes”?",
+          "url": "https://learndash.com/support/kb/resources/faqs/rename-learndash-labels/"
+        },
+        {
+          "title": "Can I reuse lessons & topics across multiple courses?",
+          "url": "https://learndash.com/support/kb/resources/faqs/reuse-lessons-topics-multiple-courses/"
+        },
+        {
+          "title": "Is LearnDash compatible with other plugins?",
+          "url": "https://learndash.com/support/kb/resources/faqs/learndash-compatible-other-plugins/"
+        },
+        {
+          "title": "How do I find the course ID?",
+          "url": "https://learndash.com/support/kb/resources/faqs/find-course-id/"
+        },
+        {
+          "title": "404 Errors on LearnDash Pages",
+          "url": "https://learndash.com/support/kb/resources/faqs/404-errors-learndash-pages/"
+        },
+        {
+          "title": "Does LearnDash support Learning Tools Interoperability (LTI)?",
+          "url": "https://learndash.com/support/kb/resources/faqs/support-learning-tools-interoperability/"
+        },
+        {
+          "title": "What kind of media can be used in LearnDash courses?",
+          "url": "https://learndash.com/support/kb/resources/faqs/media-used-learndash-courses/"
+        },
+        {
+          "title": "Known Issues & Conflicts",
+          "url": "https://learndash.com/support/kb/resources/faqs/known-issues/"
+        },
+        {
+          "title": "Database Info",
+          "url": "https://learndash.com/support/kb/resources/faqs/database-info/"
+        },
+        {
+          "title": "FAQs",
+          "url": "https://learndash.com/support/kb/resources/faqs/faqs/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started Ld Cloud",
+      "slug": "getting-started-ld-cloud",
+      "url": "https://learndash.com/support/documentation/getting-started-ld-cloud/",
+      "file": "categories/getting-started-ld-cloud.md",
+      "page_count": 9,
+      "pages": [
+        {
+          "title": "LearnDash LMS for the Cloud",
+          "url": "https://learndash.com/support/kb/non-knowledgebase/getting-started-ld-cloud/learndash-lms-for-the-cloud/"
+        },
+        {
+          "title": "LearnDash Cloud Video Management Best Practices",
+          "url": "https://learndash.com/support/kb/cloud/getting-started-ld-cloud/learndash-cloud-video-management-best-practices/"
+        },
+        {
+          "title": "Using the Go Live Widget",
+          "url": "https://learndash.com/support/kb/cloud/getting-started-ld-cloud/using-the-go-live-widget-2/"
+        },
+        {
+          "title": "Logging In to Your LearnDash Cloud Site",
+          "url": "https://learndash.com/support/kb/cloud/getting-started-ld-cloud/logging-in-to-your-learndash-cloud-site/"
+        },
+        {
+          "title": "How to Connect a Domain",
+          "url": "https://learndash.com/support/kb/cloud/getting-started-ld-cloud/using-the-go-live-widget/"
+        },
+        {
+          "title": "Setting Up Your DNS to Use Your Own Domain Name",
+          "url": "https://learndash.com/support/kb/cloud/getting-started-ld-cloud/setting-up-your-dns-to-use-your-own-domain-name/"
+        },
+        {
+          "title": "How to Get Support in LearnDash Cloud",
+          "url": "https://learndash.com/support/kb/cloud/getting-started-ld-cloud/how-to-get-support-in-learndash-cloud/"
+        },
+        {
+          "title": "How to Back Up Your Site",
+          "url": "https://learndash.com/support/kb/cloud/getting-started-ld-cloud/how-to-back-up-your-site/"
+        },
+        {
+          "title": "LearnDash Cloud",
+          "url": "https://learndash.com/support/kb/cloud/getting-started-ld-cloud/learndash-cloud/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Learndash",
+      "slug": "getting-started-with-learndash",
+      "url": "https://learndash.com/support/documentation/getting-started-with-learndash/",
+      "file": "categories/getting-started-with-learndash.md",
+      "page_count": 13,
+      "pages": [
+        {
+          "title": "Setting Up Your First Course with LearnDash",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/setting-up-your-first-course-with-learndash/"
+        },
+        {
+          "title": "Orders",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/orders/"
+        },
+        {
+          "title": "Style Customizer",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/style-customizer/"
+        },
+        {
+          "title": "The Design Wizard",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/the-design-wizard/"
+        },
+        {
+          "title": "How to Use the Design Wizard",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/how-to-use-the-design-wizard/"
+        },
+        {
+          "title": "Coupons",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/coupons/"
+        },
+        {
+          "title": "The Onboarding Wizard",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/the-onboarding-wizard/"
+        },
+        {
+          "title": "LearnDash Overview",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/overview/"
+        },
+        {
+          "title": "Installation",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/installation/"
+        },
+        {
+          "title": "Technical Requirements",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/requirements/"
+        },
+        {
+          "title": "Shortcodes and Blocks",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/shortcodes-blocks/"
+        },
+        {
+          "title": "Getting Started",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/getting-started/"
+        },
+        {
+          "title": "LearnDash Core",
+          "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/core/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Learndash Mcp Server",
+      "slug": "getting-started-with-learndash-mcp-server",
+      "url": "https://learndash.com/support/documentation/getting-started-with-learndash-mcp-server/",
+      "file": "categories/getting-started-with-learndash-mcp-server.md",
+      "page_count": 8,
+      "pages": [
+        {
+          "title": "How to Use Cursor with LearnDash",
+          "url": "https://learndash.com/support/kb/learndash-mcp-server/getting-started-with-learndash-mcp-server/how-to-use-cursor-with-learndash/"
+        },
+        {
+          "title": "LearnDash + Angie",
+          "url": "https://learndash.com/support/kb/learndash-mcp-server/getting-started-with-learndash-mcp-server/learndash-angie/"
+        },
+        {
+          "title": "Prompting AI Agents for LearnDash",
+          "url": "https://learndash.com/support/kb/learndash-mcp-server/getting-started-with-learndash-mcp-server/prompting-ai-agents-for-learndash/"
+        },
+        {
+          "title": "LearnDash AI Prompt Library",
+          "url": "https://learndash.com/support/kb/learndash-mcp-server/getting-started-with-learndash-mcp-server/learndash-ai-prompt-library/"
+        },
+        {
+          "title": "Troubleshooting Common MCP Errors",
+          "url": "https://learndash.com/support/kb/learndash-mcp-server/getting-started-with-learndash-mcp-server/troubleshooting-common-mcp-errors/"
+        },
+        {
+          "title": "Creating WordPress Application Passwords for MCP",
+          "url": "https://learndash.com/support/kb/learndash-mcp-server/getting-started-with-learndash-mcp-server/creating-wordpress-application-passwords-for-mcp/"
+        },
+        {
+          "title": "LearnDash MCP FAQ",
+          "url": "https://learndash.com/support/kb/learndash-mcp-server/getting-started-with-learndash-mcp-server/learndash-com-mcpdocs-faq/"
+        },
+        {
+          "title": "Getting Started with the LearnDash Model Context Protocol (MCP)",
+          "url": "https://learndash.com/support/kb/learndash-mcp-server/getting-started-with-learndash-mcp-server/mcp-overview-learndash-ai-setup/"
+        }
+      ]
+    },
+    {
+      "title": "Going Live",
+      "slug": "going-live",
+      "url": "https://learndash.com/support/documentation/going-live/",
+      "file": "categories/going-live.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "How to Publish Your LearnDash App to the Apple App Store",
+          "url": "https://learndash.com/support/kb/learndash-app/going-live/how-to-publish-your-learndash-app-to-the-apple-app-store/"
+        },
+        {
+          "title": "Apple App Store Publishing Checklist – How to Prepare Your iOS Learndash App for Publishing on the Apple App Store",
+          "url": "https://learndash.com/support/kb/learndash-app/going-live/apple-app-store-publishing-checklist-how-to-prepare-your-ios-learndash-app-for-publishing-on-the-apple-app-store/"
+        },
+        {
+          "title": "How to Configure Google Play Store Closed Testing",
+          "url": "https://learndash.com/support/kb/learndash-app/going-live/how-to-configure-google-play-store-closed-testing/"
+        },
+        {
+          "title": "How to Publish an Unlisted Learndash App to the Apple App Store",
+          "url": "https://learndash.com/support/kb/learndash-app/going-live/how-to-publish-an-unlisted-learndash-app-to-the-apple-app-store/"
+        },
+        {
+          "title": "How to Publish Your Android LearnDash App to the Google Play Store",
+          "url": "https://learndash.com/support/kb/learndash-app/going-live/how-to-publish-your-android-learndash-app-to-the-google-play-store/"
+        },
+        {
+          "title": "How to Update Your Android Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/going-live/how-to-update-your-android-learndash-app-2/"
+        },
+        {
+          "title": "How to Use the Learndash App Publishing Service",
+          "url": "https://learndash.com/support/kb/learndash-app/going-live/how-to-use-the-learndash-app-publishing-service/"
+        }
+      ]
+    },
+    {
+      "title": "Gradebook",
+      "slug": "gradebook",
+      "url": "https://learndash.com/support/documentation/gradebook/",
+      "file": "categories/gradebook.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Gradebook Add-On",
+          "url": "https://learndash.com/support/kb/add-ons/gradebook/gradebook-add-on/"
+        }
+      ]
+    },
+    {
+      "title": "Gravity Forms Add On",
+      "slug": "gravity-forms-add-on",
+      "url": "https://learndash.com/support/documentation/gravity-forms-add-on/",
+      "file": "categories/gravity-forms-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Gravity Forms Integration",
+          "url": "https://learndash.com/support/kb/add-ons/gravity-forms-add-on/gravity-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Groups",
+      "slug": "groups",
+      "url": "https://learndash.com/support/documentation/groups/",
+      "file": "categories/groups.md",
+      "page_count": 11,
+      "pages": [
+        {
+          "title": "Group Cohorts",
+          "url": "https://learndash.com/support/kb/core/groups/group-cohorts/"
+        },
+        {
+          "title": "Group Leader Capabilities",
+          "url": "https://learndash.com/support/kb/core/groups/group-leader-capabilities/"
+        },
+        {
+          "title": "Publishing and Viewing a Group",
+          "url": "https://learndash.com/support/kb/core/groups/publishing-a-viewing-a-group/"
+        },
+        {
+          "title": "Group Users and Group Leaders",
+          "url": "https://learndash.com/support/kb/core/groups/group-users-and-group-leaders/"
+        },
+        {
+          "title": "Group Courses",
+          "url": "https://learndash.com/support/kb/core/groups/group-courses/"
+        },
+        {
+          "title": "Group Access Settings",
+          "url": "https://learndash.com/support/kb/core/groups/group-access-settings/"
+        },
+        {
+          "title": "Group Display and Content Settings",
+          "url": "https://learndash.com/support/kb/core/groups/group-display-content-settings/"
+        },
+        {
+          "title": "Group Page",
+          "url": "https://learndash.com/support/kb/core/groups/group-page/"
+        },
+        {
+          "title": "Global Group Settings",
+          "url": "https://learndash.com/support/kb/core/groups/global-group-settings/"
+        },
+        {
+          "title": "User Groups",
+          "url": "https://learndash.com/support/kb/core/groups/groups/"
+        },
+        {
+          "title": "Group Administration",
+          "url": "https://learndash.com/support/kb/core/groups/group-administration/"
+        }
+      ]
+    },
+    {
+      "title": "Groups Management",
+      "slug": "groups-management",
+      "url": "https://learndash.com/support/documentation/groups-management/",
+      "file": "categories/groups-management.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Groups Management",
+          "url": "https://learndash.com/support/kb/add-ons/groups-management/groups-management/"
+        },
+        {
+          "title": "Group Registration for LearnDash",
+          "url": "https://learndash.com/support/kb/add-ons/groups-management/group-registration-for-learndash/"
+        },
+        {
+          "title": "Global Settings",
+          "url": "https://learndash.com/support/kb/add-ons/groups-management/global-settings-2/"
+        },
+        {
+          "title": "Groups Plus Add-On",
+          "url": "https://learndash.com/support/kb/add-ons/groups-management/groups-plus-add-on/"
+        }
+      ]
+    },
+    {
+      "title": "Groups Plus",
+      "slug": "groups-plus",
+      "url": "https://learndash.com/support/documentation/groups-plus/",
+      "file": "categories/groups-plus.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Groups Plus FAQ",
+          "url": "https://learndash.com/support/kb/add-ons/groups-plus/groups-plus-faq/"
+        },
+        {
+          "title": "Front-end Dashboard",
+          "url": "https://learndash.com/support/kb/add-ons/groups-plus/front-end-dashboard/"
+        },
+        {
+          "title": "WooCommerce LearnDash Teams Products",
+          "url": "https://learndash.com/support/kb/add-ons/groups-plus/create-a-team/"
+        },
+        {
+          "title": "Getting Started with Groups Plus",
+          "url": "https://learndash.com/support/kb/add-ons/groups-plus/getting-started-with-groups-plus/"
+        },
+        {
+          "title": "Create an Organization",
+          "url": "https://learndash.com/support/kb/add-ons/groups-plus/create-an-organization/"
+        },
+        {
+          "title": "Group Leader",
+          "url": "https://learndash.com/support/kb/add-ons/groups-plus/group-leader/"
+        }
+      ]
+    },
+    {
+      "title": "In App Purchases",
+      "slug": "in-app-purchases",
+      "url": "https://learndash.com/support/documentation/in-app-purchases/",
+      "file": "categories/in-app-purchases.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "How to Configure iOS In-App Products",
+          "url": "https://learndash.com/support/kb/learndash-app/in-app-purchases/how-to-configure-ios-in-app-products/"
+        },
+        {
+          "title": "How to Configure Subscription Groups",
+          "url": "https://learndash.com/support/kb/learndash-app/in-app-purchases/how-to-configure-subscription-groups/"
+        },
+        {
+          "title": "How to Require In-App Purchases During Registration",
+          "url": "https://learndash.com/support/kb/learndash-app/in-app-purchases/how-to-require-in-app-purchases-during-registration/"
+        },
+        {
+          "title": "How to Select an iOS Review Version for In-App Purchases",
+          "url": "https://learndash.com/support/kb/learndash-app/in-app-purchases/how-to-select-an-ios-review-version-for-in-app-purchases/"
+        },
+        {
+          "title": "How to Set Up Android In-App Purchases",
+          "url": "https://learndash.com/support/kb/learndash-app/in-app-purchases/how-to-set-up-android-in-app-purchases/"
+        },
+        {
+          "title": "How to Set Up In-App Purchases",
+          "url": "https://learndash.com/support/kb/learndash-app/in-app-purchases/how-to-set-up-in-app-purchases/"
+        },
+        {
+          "title": "How to Test In-App Purchases",
+          "url": "https://learndash.com/support/kb/learndash-app/in-app-purchases/how-to-test-in-app-purchases/"
+        }
+      ]
+    },
+    {
+      "title": "Instructor Role",
+      "slug": "instructor-role",
+      "url": "https://learndash.com/support/documentation/instructor-role/",
+      "file": "categories/instructor-role.md",
+      "page_count": 34,
+      "pages": [
+        {
+          "title": "Setup PayPal Payouts for Instructors",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/setup-paypal-payouts-for-instructors/"
+        },
+        {
+          "title": "Elementor Compatibility",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/elementor-compatibility/"
+        },
+        {
+          "title": "Introducing Frontend Dashboard",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/introducing-frontend-dashboard/"
+        },
+        {
+          "title": "How to disable the WordPress admin page for Instructors",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/how-to-disable-the-backend-dashboard-for-instructors/"
+        },
+        {
+          "title": "How to Customize the Frontend Dashboard",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/how-to-customize-the-frontend-dashboard-gutenberg-editor-and-global-settings/"
+        },
+        {
+          "title": "Frontend Dashboard for Instructors: Gutenberg Blocks List",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/frontend-dashboard-for-instructors-gutenberg-blocks-list/"
+        },
+        {
+          "title": "Frontend Dashboard: Installation Guide",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/frontend-dashboard-installation-guide/"
+        },
+        {
+          "title": "Frontend Quiz Creator",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/the-frontend-quiz-creator/"
+        },
+        {
+          "title": "Frontend Course Creator",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/the-frontend-course-creator/"
+        },
+        {
+          "title": "Instructor Role Menu Settings",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/menu-settings/"
+        },
+        {
+          "title": "Instructor Role Overview Settings",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/overview-settings/"
+        },
+        {
+          "title": "Instructor Role Navigation Settings",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/navigation-settings/"
+        },
+        {
+          "title": "Commission Logs",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/commission-logs/"
+        },
+        {
+          "title": "Instructor Role Color Schemes",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/color-schemes/"
+        },
+        {
+          "title": "Instructor Dashboard Settings",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/instructor-dashboard-settings/"
+        },
+        {
+          "title": "Multiple Instructors Shortcode",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/multiple-instructors-shortcode/"
+        },
+        {
+          "title": "Student Teacher Communication",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/student-teacher-communication/"
+        },
+        {
+          "title": "Instructor Comments Access",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/instructor-comments-access/"
+        },
+        {
+          "title": "Instructor Groups Access",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/instructor-groups-access/"
+        },
+        {
+          "title": "Review Instructor Course Updates",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/review-instructor-course-updates/"
+        },
+        {
+          "title": "Instructor Role Email Settings",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/email-settings/"
+        },
+        {
+          "title": "Instructor Notifications",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/instructor-notifications/"
+        },
+        {
+          "title": "Instructor Role Reports",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/reporting-3/"
+        },
+        {
+          "title": "Create Learning Content And Quizzes",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/create-learning-content-and-quizzes/"
+        },
+        {
+          "title": "Profile Introduction Sections",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/profile-introduction-sections/"
+        },
+        {
+          "title": "Instructor Profile",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/instructor-profile/"
+        },
+        {
+          "title": "Selling Courses Through WooCommerce",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/selling-courses-through-woocommerce/"
+        },
+        {
+          "title": "Instructor Commissions",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/instructor-commissions/"
+        },
+        {
+          "title": "Multiple Instructors",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/multiple-instructors/"
+        },
+        {
+          "title": "Adding Instructors",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/adding-instructors/"
+        },
+        {
+          "title": "Instructor Overview Page",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/instructor-overview-page/"
+        },
+        {
+          "title": "Instructor Dashboard Menu",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/instructor-dashboard-menu/"
+        },
+        {
+          "title": "Instructor Dashboard",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/instructor-dashboard/"
+        },
+        {
+          "title": "Intro to Instructor Role",
+          "url": "https://learndash.com/support/kb/add-ons/instructor-role/intro-to-instructor-role/"
+        }
+      ]
+    },
+    {
+      "title": "Integrity Add On",
+      "slug": "integrity-add-on",
+      "url": "https://learndash.com/support/documentation/integrity-add-on/",
+      "file": "categories/integrity-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrity Add-on",
+          "url": "https://learndash.com/support/kb/add-ons/integrity-add-on/integrity-add-on/"
+        }
+      ]
+    },
+    {
+      "title": "Learndash App Learndash App",
+      "slug": "learndash-app-learndash-app",
+      "url": "https://learndash.com/support/documentation/learndash-app-learndash-app/",
+      "file": "categories/learndash-app-learndash-app.md",
+      "page_count": 11,
+      "pages": [
+        {
+          "title": "Hosting Recommendations for the LearnDash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/hosting-recommendations-for-the-learndash-app/"
+        },
+        {
+          "title": "How to Connect Your Google Developer Account to the Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-connect-your-google-developer-account-to-the-learndash-app/"
+        },
+        {
+          "title": "How to Set Up Your Apple Developer Account for your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-set-up-your-apple-developer-account-for-your-learndash-app/"
+        },
+        {
+          "title": "How to Configure Access Groups in Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-configure-access-groups-in-your-learndash-app/"
+        },
+        {
+          "title": "How to Create Your Google Play Developer Account for your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-create-your-google-play-developer-account-for-your-learndash-app/"
+        },
+        {
+          "title": "How to Connect Your Apple Developer Account to your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-connect-your-apple-developer-account-to-your-learndash-app/"
+        },
+        {
+          "title": "How to Configure your Learndash Android App Links",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-configure-your-learndash-android-app-links/"
+        },
+        {
+          "title": "How to Configure Your iOS Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-configure-your-ios-learndash-app/"
+        },
+        {
+          "title": "How to Configure Your Android Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-configure-your-android-learndash-app/"
+        },
+        {
+          "title": "How to Configure Google Firebase for Your LearnDash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-configure-google-firebase-for-your-learndash-app/"
+        },
+        {
+          "title": "How to Configure Apple Universal Links for your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/learndash-app-learndash-app/how-to-configure-apple-universal-links-for-your-learndash-app/"
+        }
+      ]
+    },
+    {
+      "title": "Lessons",
+      "slug": "lessons",
+      "url": "https://learndash.com/support/documentation/lessons/",
+      "file": "categories/lessons.md",
+      "page_count": 9,
+      "pages": [
+        {
+          "title": "Blended Learning",
+          "url": "https://learndash.com/support/kb/core/lessons/blended-learning/"
+        },
+        {
+          "title": "Lesson Access Settings",
+          "url": "https://learndash.com/support/kb/core/lessons/lesson-access-settings/"
+        },
+        {
+          "title": "Sample (Free) Lessons",
+          "url": "https://learndash.com/support/kb/core/lessons/sample-lessons/"
+        },
+        {
+          "title": "Video Progression",
+          "url": "https://learndash.com/support/kb/core/lessons/video-progression/"
+        },
+        {
+          "title": "Lesson Page Content",
+          "url": "https://learndash.com/support/kb/core/lessons/lesson-page/"
+        },
+        {
+          "title": "Lesson Display and Content Settings",
+          "url": "https://learndash.com/support/kb/core/lessons/lesson-display-content/"
+        },
+        {
+          "title": "Lesson Access Settings",
+          "url": "https://learndash.com/support/kb/core/lessons/lesson-access/"
+        },
+        {
+          "title": "Global Lesson Settings",
+          "url": "https://learndash.com/support/kb/core/lessons/lesson-settings/"
+        },
+        {
+          "title": "Lessons",
+          "url": "https://learndash.com/support/kb/core/lessons/lessons/"
+        }
+      ]
+    },
+    {
+      "title": "Managing Content For Learndash App",
+      "slug": "managing-content-for-learndash-app",
+      "url": "https://learndash.com/support/documentation/managing-content-for-learndash-app/",
+      "file": "categories/managing-content-for-learndash-app.md",
+      "page_count": 17,
+      "pages": [
+        {
+          "title": "How to Add a Blog Page and Posts",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-add-a-blog-page-and-posts/"
+        },
+        {
+          "title": "How to Add H5P Interactive Content to Your Learndash App",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-add-h5p-interactive-content-to-your-learndash-app/"
+        },
+        {
+          "title": "How to Configure App Images & Icons",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-configure-app-images-icons/"
+        },
+        {
+          "title": "How to Configure Deep Linking",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-configure-deep-linking/"
+        },
+        {
+          "title": "How to Configure the Learndash App Colors",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-configure-the-learndash-app-colors/"
+        },
+        {
+          "title": "How to Configure the Directory Block",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-configure-the-directory-block/"
+        },
+        {
+          "title": "How to Configure the Tab Bar Icons",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-configure-the-tab-bar-icons/"
+        },
+        {
+          "title": "How to Configure Tab Bar Visibility",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-configure-tab-bar-visibility/"
+        },
+        {
+          "title": "How to Configure Typography",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-configure-typography/"
+        },
+        {
+          "title": "How to Configure Your Learndash App Homepage",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-configure-your-learndash-app-homepage/"
+        },
+        {
+          "title": "How to Configure Your Tab Bar and More Screen",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-configure-your-tab-bar-and-more-screen/"
+        },
+        {
+          "title": "How to Customize the App Navigation Header",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-customize-the-app-navigation-header/"
+        },
+        {
+          "title": "How to Enable Right-to-Left (RTL) Language Support",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-enable-right-to-left-rtl-language-support/"
+        },
+        {
+          "title": "How to Translate Text",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-translate-text/"
+        },
+        {
+          "title": "How to Use the Blog Posts App Block",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-use-the-blog-posts-app-block/"
+        },
+        {
+          "title": "How to Use Web Fallbacks",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/how-to-use-web-fallbacks/"
+        },
+        {
+          "title": "What are the Supported LearnDash App Blocks",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-content-for-learndash-app/what-are-the-supported-learndash-app-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Managing Learndash App",
+      "slug": "managing-learndash-app",
+      "url": "https://learndash.com/support/documentation/managing-learndash-app/",
+      "file": "categories/managing-learndash-app.md",
+      "page_count": 8,
+      "pages": [
+        {
+          "title": "How to Configure the Delete Account Settings",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-learndash-app/how-to-configure-the-delete-account-settings/"
+        },
+        {
+          "title": "How to Configure API CDN",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-learndash-app/how-to-configure-api-cdn/"
+        },
+        {
+          "title": "How to Set Up a Private LearnDash App",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-learndash-app/how-to-set-up-a-private-learndash-app/"
+        },
+        {
+          "title": "How to Enable the “Rate This App” Feature in the LearnDash App",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-learndash-app/how-to-enable-the-rate-this-app-feature-in-the-learndash-app/"
+        },
+        {
+          "title": "How to Enable and Use the Report a Bug Feature in the LearnDash App",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-learndash-app/how-to-enable-and-use-the-report-a-bug-feature-in-the-learndash-app/"
+        },
+        {
+          "title": "How to Enable “Send Us Feedback” in the LearnDash App",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-learndash-app/how-to-enable-send-us-feedback-in-the-learndash-app/"
+        },
+        {
+          "title": "How to Configure the Smart Banner in the LearnDash App",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-learndash-app/how-to-configure-the-smart-banner-in-the-learndash-app/"
+        },
+        {
+          "title": "How to Configure External Link Handling in the LearnDash App",
+          "url": "https://learndash.com/support/kb/learndash-app/managing-learndash-app/how-to-configure-external-link-handling-in-the-learndash-app/"
+        }
+      ]
+    },
+    {
+      "title": "Memberpress Add On",
+      "slug": "memberpress-add-on",
+      "url": "https://learndash.com/support/documentation/memberpress-add-on/",
+      "file": "categories/memberpress-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "MemberPress Integration",
+          "url": "https://learndash.com/support/kb/add-ons/memberpress-add-on/memberpress/"
+        }
+      ]
+    },
+    {
+      "title": "Notes Add On",
+      "slug": "notes-add-on",
+      "url": "https://learndash.com/support/documentation/notes-add-on/",
+      "file": "categories/notes-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Notes Add-On",
+          "url": "https://learndash.com/support/kb/add-ons/notes-add-on/notes-add-on/"
+        }
+      ]
+    },
+    {
+      "title": "Notifications Add On",
+      "slug": "notifications-add-on",
+      "url": "https://learndash.com/support/documentation/notifications-add-on/",
+      "file": "categories/notifications-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Notifications Add-On",
+          "url": "https://learndash.com/support/kb/add-ons/notifications-add-on/notifications-2/"
+        }
+      ]
+    },
+    {
+      "title": "Paid Memberships Pro Add On",
+      "slug": "paid-memberships-pro-add-on",
+      "url": "https://learndash.com/support/documentation/paid-memberships-pro-add-on/",
+      "file": "categories/paid-memberships-pro-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Paid Memberships Pro Integration",
+          "url": "https://learndash.com/support/kb/add-ons/paid-memberships-pro-add-on/paid-memberships-pro/"
+        }
+      ]
+    },
+    {
+      "title": "Payments",
+      "slug": "payments",
+      "url": "https://learndash.com/support/documentation/payments/",
+      "file": "categories/payments.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "PayPal Checkout",
+          "url": "https://learndash.com/support/kb/core/payments/paypal-checkout/"
+        }
+      ]
+    },
+    {
+      "title": "Propanel",
+      "slug": "propanel",
+      "url": "https://learndash.com/support/documentation/propanel/",
+      "file": "categories/propanel.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "ProPanel",
+          "url": "https://learndash.com/support/kb/add-ons/propanel/propanel/"
+        }
+      ]
+    },
+    {
+      "title": "Questions",
+      "slug": "questions",
+      "url": "https://learndash.com/support/documentation/questions/",
+      "file": "categories/questions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Quiz Questions",
+          "url": "https://learndash.com/support/kb/core/questions/questions/"
+        }
+      ]
+    },
+    {
+      "title": "Quizzes",
+      "slug": "quizzes",
+      "url": "https://learndash.com/support/documentation/quizzes/",
+      "file": "categories/quizzes.md",
+      "page_count": 12,
+      "pages": [
+        {
+          "title": "XML Quiz Import/Export Guide",
+          "url": "https://learndash.com/support/kb/core/quizzes/xml-quiz-import-export-guide/"
+        },
+        {
+          "title": "Quiz Access & Progression",
+          "url": "https://learndash.com/support/kb/core/quizzes/quiz-access-progression/"
+        },
+        {
+          "title": "Quiz AI Builder",
+          "url": "https://learndash.com/support/kb/core/quizzes/quiz-ai-builder/"
+        },
+        {
+          "title": "Manage & Grade Essays",
+          "url": "https://learndash.com/support/kb/core/quizzes/essays/"
+        },
+        {
+          "title": "Quiz Email Notifications",
+          "url": "https://learndash.com/support/kb/core/quizzes/quiz-email-notifications/"
+        },
+        {
+          "title": "Quiz Leaderboard",
+          "url": "https://learndash.com/support/kb/core/quizzes/quiz-leaderboard/"
+        },
+        {
+          "title": "Quiz Custom Fields",
+          "url": "https://learndash.com/support/kb/core/quizzes/quiz-custom-fields/"
+        },
+        {
+          "title": "Quiz Results Display",
+          "url": "https://learndash.com/support/kb/core/quizzes/quiz-results/"
+        },
+        {
+          "title": "Quiz Display & Content Settings",
+          "url": "https://learndash.com/support/kb/core/quizzes/quiz-display/"
+        },
+        {
+          "title": "Global Quiz Settings",
+          "url": "https://learndash.com/support/kb/core/quizzes/global-settings/"
+        },
+        {
+          "title": "Quiz Builder",
+          "url": "https://learndash.com/support/kb/core/quizzes/quiz-builder/"
+        },
+        {
+          "title": "Quizzes",
+          "url": "https://learndash.com/support/kb/core/quizzes/quizzes/"
+        }
+      ]
+    },
+    {
+      "title": "Ratings Reviews Feedback",
+      "slug": "ratings-reviews-feedback",
+      "url": "https://learndash.com/support/documentation/ratings-reviews-feedback/",
+      "file": "categories/ratings-reviews-feedback.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Ratings, Reviews, & Feedback",
+          "url": "https://learndash.com/support/kb/add-ons/ratings-reviews-feedback/intro-to-ratings-reviews-feedback/"
+        }
+      ]
+    },
+    {
+      "title": "Reports",
+      "slug": "reports",
+      "url": "https://learndash.com/support/documentation/reports/",
+      "file": "categories/reports.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "How to disable core reports",
+          "url": "https://learndash.com/support/kb/core/reports/how-to-disable-core-reports/"
+        },
+        {
+          "title": "Reporting",
+          "url": "https://learndash.com/support/kb/core/reports/reporting-2/"
+        },
+        {
+          "title": "SCORM and xAPI",
+          "url": "https://learndash.com/support/kb/core/reports/scorm-xapi/"
+        }
+      ]
+    },
+    {
+      "title": "Restrict Content Pro Add On",
+      "slug": "restrict-content-pro-add-on",
+      "url": "https://learndash.com/support/documentation/restrict-content-pro-add-on/",
+      "file": "categories/restrict-content-pro-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Restrict Content Pro Integration",
+          "url": "https://learndash.com/support/kb/add-ons/restrict-content-pro-add-on/restrict-content-pro/"
+        }
+      ]
+    },
+    {
+      "title": "Samcart Add On",
+      "slug": "samcart-add-on",
+      "url": "https://learndash.com/support/documentation/samcart-add-on/",
+      "file": "categories/samcart-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "SamCart Integration",
+          "url": "https://learndash.com/support/kb/add-ons/samcart-add-on/samcart/"
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "slug": "settings",
+      "url": "https://learndash.com/support/documentation/settings/",
+      "file": "categories/settings.md",
+      "page_count": 15,
+      "pages": [
+        {
+          "title": "Experiments",
+          "url": "https://learndash.com/support/kb/core/settings/experiments/"
+        },
+        {
+          "title": "Razorpay Integration",
+          "url": "https://learndash.com/support/kb/core/settings/razorpay-integration/"
+        },
+        {
+          "title": "Cloning",
+          "url": "https://learndash.com/support/kb/core/settings/cloning/"
+        },
+        {
+          "title": "Emails – LearnDash General Settings for Notifications and Senders",
+          "url": "https://learndash.com/support/kb/core/settings/emails/"
+        },
+        {
+          "title": "Advanced Options",
+          "url": "https://learndash.com/support/kb/core/settings/advanced-options/"
+        },
+        {
+          "title": "Payments",
+          "url": "https://learndash.com/support/kb/core/settings/payments/"
+        },
+        {
+          "title": "Focus Mode",
+          "url": "https://learndash.com/support/kb/core/settings/focus-mode/"
+        },
+        {
+          "title": "Permalinks (URLs)",
+          "url": "https://learndash.com/support/kb/core/settings/permalinks/"
+        },
+        {
+          "title": "PayPal Settings",
+          "url": "https://learndash.com/support/kb/core/settings/paypal-settings/"
+        },
+        {
+          "title": "Custom Labels",
+          "url": "https://learndash.com/support/kb/core/settings/custom-labels/"
+        },
+        {
+          "title": "General Settings",
+          "url": "https://learndash.com/support/kb/core/settings/general-settings/"
+        },
+        {
+          "title": "Global Course Settings",
+          "url": "https://learndash.com/support/kb/core/settings/course-settings/"
+        },
+        {
+          "title": "Stripe Integration",
+          "url": "https://learndash.com/support/kb/core/settings/stripe/"
+        },
+        {
+          "title": "Login and Registration",
+          "url": "https://learndash.com/support/kb/core/settings/login-registration/"
+        },
+        {
+          "title": "Settings",
+          "url": "https://learndash.com/support/kb/core/settings/settings/"
+        }
+      ]
+    },
+    {
+      "title": "Stripe Add On",
+      "slug": "stripe-add-on",
+      "url": "https://learndash.com/support/documentation/stripe-add-on/",
+      "file": "categories/stripe-add-on.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Stripe Add-on Deprecation FAQ",
+          "url": "https://learndash.com/support/kb/add-ons/stripe-add-on/stripe-add-on-deprecation-faq/"
+        },
+        {
+          "title": "Stripe Connect",
+          "url": "https://learndash.com/support/kb/core/stripe-add-on/stripe-connect/"
+        }
+      ]
+    },
+    {
+      "title": "The Events Calendar Add On",
+      "slug": "the-events-calendar-add-on",
+      "url": "https://learndash.com/support/documentation/the-events-calendar-add-on/",
+      "file": "categories/the-events-calendar-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Integration",
+          "url": "https://learndash.com/support/kb/add-ons/the-events-calendar-add-on/the-events-calendar-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Topics",
+      "slug": "topics",
+      "url": "https://learndash.com/support/documentation/topics/",
+      "file": "categories/topics.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Topic Display & Content Settings",
+          "url": "https://learndash.com/support/kb/core/topics/topic-display-content-settings/"
+        },
+        {
+          "title": "Topic Page Content",
+          "url": "https://learndash.com/support/kb/core/topics/topic-page/"
+        },
+        {
+          "title": "Topic Display and Content Settings",
+          "url": "https://learndash.com/support/kb/core/topics/topic-display-content/"
+        },
+        {
+          "title": "Global Topic Settings",
+          "url": "https://learndash.com/support/kb/core/topics/topic-settings/"
+        },
+        {
+          "title": "Topics",
+          "url": "https://learndash.com/support/kb/core/topics/topics/"
+        }
+      ]
+    },
+    {
+      "title": "Trivecart Add On",
+      "slug": "trivecart-add-on",
+      "url": "https://learndash.com/support/documentation/trivecart-add-on/",
+      "file": "categories/trivecart-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "ThriveCart Integration",
+          "url": "https://learndash.com/support/kb/add-ons/trivecart-add-on/thrivecart/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "slug": "troubleshooting",
+      "url": "https://learndash.com/support/documentation/troubleshooting/",
+      "file": "categories/troubleshooting.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Basics",
+          "url": "https://learndash.com/support/kb/resources/troubleshooting/basics/"
+        }
+      ]
+    },
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://learndash.com/support/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 9,
+      "pages": [
+        {
+          "title": "Migrating Recurring PayPal Subscriptions from Standard to Checkout",
+          "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/migrating-recurring-paypal-subscriptions-from-standard-to-checkout/"
+        },
+        {
+          "title": "How to Configure Your Learndash App Tab Bar and More Screen",
+          "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/how-to-configure-your-learndash-app-tab-bar-and-more-screen/"
+        },
+        {
+          "title": "How to Enable and Use the Bookmark Feature in the LearnDash App",
+          "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/how-to-enable-and-use-the-bookmark-feature-in-the-learndash-app/"
+        },
+        {
+          "title": "How to Configure and Use the Share App Link Feature in the LearnDash App",
+          "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/how-to-configure-and-use-the-share-app-link-feature-in-the-learndash-app/"
+        },
+        {
+          "title": "LearnDash Cloud FAQ",
+          "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/__trashed/"
+        },
+        {
+          "title": "LearnDash Course Reviews",
+          "url": "https://learndash.com/support/kb/core/uncategorized/learndash-course-reviews/"
+        },
+        {
+          "title": "Course Grid 2.0 Templating",
+          "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/course-grid-2-0-templating/"
+        },
+        {
+          "title": "User Groups",
+          "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/groups-old/"
+        },
+        {
+          "title": "Add-Ons",
+          "url": "https://learndash.com/support/kb/add-ons/uncategorized/add-ons/"
+        }
+      ]
+    },
+    {
+      "title": "User Guides",
+      "slug": "user-guides",
+      "url": "https://learndash.com/support/documentation/user-guides/",
+      "file": "categories/user-guides.md",
+      "page_count": 12,
+      "pages": [
+        {
+          "title": "Gamification And Badges In LearnDash",
+          "url": "https://learndash.com/support/kb/core/user-guides/gamification-and-badges-in-learndash/"
+        },
+        {
+          "title": "Trusted Login",
+          "url": "https://learndash.com/support/kb/resources/user-guides/trusted-login/"
+        },
+        {
+          "title": "How to Install and Activate LearnDash Add-ons",
+          "url": "https://learndash.com/support/kb/resources/user-guides/how-to-install-and-activate-learndash-add-ons/"
+        },
+        {
+          "title": "LearnDash Migration",
+          "url": "https://learndash.com/support/kb/resources/user-guides/learndash-migration/"
+        },
+        {
+          "title": "Transferring LearnDash Courses",
+          "url": "https://learndash.com/support/kb/resources/user-guides/transferring-learndash-courses/"
+        },
+        {
+          "title": "Translation",
+          "url": "https://learndash.com/support/kb/resources/user-guides/translation/"
+        },
+        {
+          "title": "User Guides",
+          "url": "https://learndash.com/support/kb/resources/user-guides/guides/"
+        },
+        {
+          "title": "How do I remove the ‘Take This Course’ button?",
+          "url": "https://learndash.com/support/kb/resources/user-guides/remove-take-this-course-button/"
+        },
+        {
+          "title": "How do I hide post meta data (date, author, comments, etc.)?",
+          "url": "https://learndash.com/support/kb/resources/user-guides/hide-post-meta-data/"
+        },
+        {
+          "title": "How do I protect my course files & downloads?",
+          "url": "https://learndash.com/support/kb/resources/user-guides/protect-files-downloads/"
+        },
+        {
+          "title": "Recommended Hosting",
+          "url": "https://learndash.com/support/kb/resources/user-guides/hosting/"
+        },
+        {
+          "title": "WordPress Themes",
+          "url": "https://learndash.com/support/kb/resources/user-guides/themes/"
+        }
+      ]
+    },
+    {
+      "title": "Users",
+      "slug": "users",
+      "url": "https://learndash.com/support/documentation/users/",
+      "file": "categories/users.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Extend Access",
+          "url": "https://learndash.com/support/kb/core/users/extend-access/"
+        },
+        {
+          "title": "User Profiles",
+          "url": "https://learndash.com/support/kb/core/users/user-profiles/"
+        },
+        {
+          "title": "User Management",
+          "url": "https://learndash.com/support/kb/core/users/user-management/"
+        },
+        {
+          "title": "User Data",
+          "url": "https://learndash.com/support/kb/core/users/user-data/"
+        },
+        {
+          "title": "Users and Groups",
+          "url": "https://learndash.com/support/kb/core/users/users-groups/"
+        }
+      ]
+    },
+    {
+      "title": "Virtual Instructors",
+      "slug": "virtual-instructors",
+      "url": "https://learndash.com/support/documentation/virtual-instructors/",
+      "file": "categories/virtual-instructors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Intro to Virtual Instructors",
+          "url": "https://learndash.com/support/kb/resources/virtual-instructors/intro-to-virtual-instructors/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Add On",
+      "slug": "woocommerce-add-on",
+      "url": "https://learndash.com/support/documentation/woocommerce-add-on/",
+      "file": "categories/woocommerce-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WooCommerce Integration",
+          "url": "https://learndash.com/support/kb/add-ons/woocommerce-add-on/woocommerce/"
+        }
+      ]
+    },
+    {
+      "title": "Zapier Add On",
+      "slug": "zapier-add-on",
+      "url": "https://learndash.com/support/documentation/zapier-add-on/",
+      "file": "categories/zapier-add-on.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Zapier Integration",
+          "url": "https://learndash.com/support/kb/add-ons/zapier-add-on/zapier/"
+        }
+      ]
+    }
+  ]
+}
