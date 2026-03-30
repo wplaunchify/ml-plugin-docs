@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T14:59:04.349Z",
-  "total_plugins": 9,
+  "last_updated": "2026-03-30T15:00:42.298Z",
+  "total_plugins": 10,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -192,6 +192,23 @@
         "stage-management",
         "task-management",
         "updates"
+      ]
+    },
+    {
+      "slug": "fluentaffiliate",
+      "name": "FluentAffiliate",
+      "documentation_url": "https://docs.fluentaffiliate.com/guide/",
+      "last_scraped": "2026-03-30T15:00:42.298Z",
+      "page_count": 50,
+      "categories": [
+        "admin-portal",
+        "affiliate-portal",
+        "changelog",
+        "getting-started",
+        "integrations",
+        "miscellaneous",
+        "settings-and-customization",
+        "troubleshooting-and-support"
       ]
     }
   ]

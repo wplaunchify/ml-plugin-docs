@@ -1,0 +1,282 @@
+{
+  "plugin_slug": "fluentaffiliate",
+  "plugin_name": "FluentAffiliate",
+  "documentation_url": "https://docs.fluentaffiliate.com/guide/",
+  "last_scraped": "2026-03-30T15:00:42.297Z",
+  "total_pages": 50,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Admin Portal",
+      "slug": "admin-portal",
+      "url": "https://docs.fluentaffiliate.com/guide/admin-portal/",
+      "file": "categories/admin-portal.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Admin Dashboard Overview ​",
+          "url": "https://docs.fluentaffiliate.com/guide/admin-portal/admin-dashboard-overview"
+        },
+        {
+          "title": "Managing Affiliates ​",
+          "url": "https://docs.fluentaffiliate.com/guide/admin-portal/managing-affiliates"
+        },
+        {
+          "title": "Managing Referrals ​",
+          "url": "https://docs.fluentaffiliate.com/guide/admin-portal/managing-referrals"
+        },
+        {
+          "title": "Visits ​",
+          "url": "https://docs.fluentaffiliate.com/guide/admin-portal/managing-visits"
+        },
+        {
+          "title": "Payout Management ​",
+          "url": "https://docs.fluentaffiliate.com/guide/admin-portal/payout-management"
+        }
+      ]
+    },
+    {
+      "title": "Affiliate Portal",
+      "slug": "affiliate-portal",
+      "url": "https://docs.fluentaffiliate.com/guide/affiliate-portal/",
+      "file": "categories/affiliate-portal.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "Affiliate Dashboard Overview ​",
+          "url": "https://docs.fluentaffiliate.com/guide/affiliate-portal/affiliate-dashboard-overview"
+        },
+        {
+          "title": "Checking Visits ​",
+          "url": "https://docs.fluentaffiliate.com/guide/affiliate-portal/checking-visits"
+        },
+        {
+          "title": "Generating Affiliate Links ​",
+          "url": "https://docs.fluentaffiliate.com/guide/affiliate-portal/generating-affiliate-links"
+        },
+        {
+          "title": "How to Register as an Affiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/affiliate-portal/how-to-register-as-an-affiliate"
+        },
+        {
+          "title": "Payouts ​",
+          "url": "https://docs.fluentaffiliate.com/guide/affiliate-portal/payouts"
+        },
+        {
+          "title": "Tracking Referrals ​",
+          "url": "https://docs.fluentaffiliate.com/guide/affiliate-portal/tracking-referrals"
+        },
+        {
+          "title": "Update Your Settings ​",
+          "url": "https://docs.fluentaffiliate.com/guide/affiliate-portal/update-your-settings"
+        }
+      ]
+    },
+    {
+      "title": "Changelog",
+      "slug": "changelog",
+      "url": "https://docs.fluentaffiliate.com/guide/changelog/",
+      "file": "categories/changelog.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Changelogs ​",
+          "url": "https://docs.fluentaffiliate.com/guide/changelog/changelog"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://docs.fluentaffiliate.com/guide/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Fluent Affiliate Glossary ​",
+          "url": "https://docs.fluentaffiliate.com/guide/getting-started/fluent-affiliate-glossary"
+        },
+        {
+          "title": "Installation, Activation & Licensing ​",
+          "url": "https://docs.fluentaffiliate.com/guide/getting-started/installation-activation-licensing"
+        },
+        {
+          "title": "Onboarding Setup ​",
+          "url": "https://docs.fluentaffiliate.com/guide/getting-started/onboarding-setup"
+        },
+        {
+          "title": "What is FluentAffiliate? ​",
+          "url": "https://docs.fluentaffiliate.com/guide/getting-started/what-is-fluentaffiliate"
+        }
+      ]
+    },
+    {
+      "title": "Integrations",
+      "slug": "integrations",
+      "url": "https://docs.fluentaffiliate.com/guide/integrations/",
+      "file": "categories/integrations.md",
+      "page_count": 18,
+      "pages": [
+        {
+          "title": "Easy Digital Downloads Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/easy-digital-downloads-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "EasyCart Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/easycart-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "FluentBooking Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/fluentbooking-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "FluentCart Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/fluentcart-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "FluentCRM Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/fluentcrm-integration-with-fluenaffiliate"
+        },
+        {
+          "title": "Fluent Forms Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/fluentforms-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "Formidable Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/formidable-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "GiveWP Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/givewp-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "Integrations ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/integrations"
+        },
+        {
+          "title": "LifterLMS Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/lifterlms-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "MemberPress Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/memberpress-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "Paid Memberships Pro Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/paid-memberships-pro-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "Paymattic Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/paymattic-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "ProfilePress Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/profilepress-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "SureCart Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/surecart-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "TutorLMS Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/tutorlms-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "Voxel Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/voxel-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "WooCommerce Integration with FluentAffiliate ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/woocommerce-integration-with-fluentaffiliate"
+        }
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "slug": "miscellaneous",
+      "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/",
+      "file": "categories/miscellaneous.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Affiliate Creatives ​",
+          "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/affiliate-creatives"
+        },
+        {
+          "title": "Affiliate Landing Page with Shortcode ​",
+          "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/affiliate-landing-page"
+        },
+        {
+          "title": "Affiliate Profile ​",
+          "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/affiliate-profile"
+        },
+        {
+          "title": "Track Referrals without Integration ​",
+          "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/non-integrated-referrals"
+        }
+      ]
+    },
+    {
+      "title": "Settings And Customization",
+      "slug": "settings-and-customization",
+      "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/",
+      "file": "categories/settings-and-customization.md",
+      "page_count": 10,
+      "pages": [
+        {
+          "title": "Affiliate Manager Migration ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/affiliate-manager-migration"
+        },
+        {
+          "title": "AffiliateWP Migration ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/affiliatewp-migration"
+        },
+        {
+          "title": "Email Settings ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/email-settings"
+        },
+        {
+          "title": "Group Settings ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/group-settings"
+        },
+        {
+          "title": "Multi-Domain Management ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/multi-domain-management"
+        },
+        {
+          "title": "Notification Settings ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/notification-settings"
+        },
+        {
+          "title": "Permission Management ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/permission-management"
+        },
+        {
+          "title": "Referral Settings ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/referral-settings"
+        },
+        {
+          "title": "Registration Settings ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/registration-settings"
+        },
+        {
+          "title": "Solid Affiliate Migration ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/solid-affiliate-migration"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting And Support",
+      "slug": "troubleshooting-and-support",
+      "url": "https://docs.fluentaffiliate.com/guide/troubleshooting-and-support/",
+      "file": "categories/troubleshooting-and-support.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Get Support ​",
+          "url": "https://docs.fluentaffiliate.com/guide/troubleshooting-and-support/how-to-get-support"
+        }
+      ]
+    }
+  ]
+}
