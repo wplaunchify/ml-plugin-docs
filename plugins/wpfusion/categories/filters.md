@@ -10,17 +10,29 @@
 
 ### Overview
 
-This filter is run when redirecting a user back to a piece of restricted content using the Return After Login feature.
+This filter is run when redirecting a user back to a piece of restricted content using the [Return After Login](https://wpfusion.com/documentation/getting-started/general-settings/#return-after-login) feature.
 
-It runs after WP Fusion has already confirmed they now have access to the restricted content (to redirect the user if access is still denied, use the wpf_redirect_url filter).
+It runs after WP Fusion has already confirmed they now have access to the restricted content (to redirect the user if access is still denied, use the [wpf_redirect_url](https://wpfusion.com/documentation/filters/wpf_redirect_url/) filter).
 
 To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $url: The URL that the user will be redirected to (typically the permalink of the restricted content).
-- $post_id: The ID of the post that was originally restricted.
-- $user: The WP_User object of the user who has logged in.
+- ```
+$url
+```
+
+: The URL that the user will be redirected to (typically the permalink of the restricted content).
+- ```
+$post_id
+```
+
+: The ID of the post that was originally restricted.
+- ```
+$user
+```
+
+: The WP_User object of the user who has logged in.
 
 ### Examples
 
@@ -127,24 +139,51 @@ add_filter( 'wpf_return_after_login_url', 'wpf_learndash_course_redirect', 10, 3
 
 ### Overview
 
-WP Fusion’s Filter Queries option allows you to modify the results of database queries to exclude content that a user can’t access (based on WP Fusion’s access rules).
+WP Fusion’s [Filter Queries option](https://wpfusion.com/documentation/getting-started/access-control/#filter-queries) allows you to modify the results of database queries to exclude content that a user can’t access (based on WP Fusion’s access rules).
 
-When used in Advanced mode, Filter Queries will build up a list of posts a user has access to before the main query is run, and add it to the main query via the post__not_in parameter (in order to exclude any restricted posts).
+When used in Advanced mode, Filter Queries will build up a list of posts a user has access to before the main query is run, and add it to the main query via the 
+```
+post__not_in
+```
+
+ parameter (in order to exclude any restricted posts).
 
 That list of post IDs is then cached for the current user and post type, to avoid running the same query multiple times in quick succession (which can be quite slow).
 
-This uses wp_cache_set() with a default expiration time of one minute. This can work in two ways depending on your server setup:
+This uses 
+```
+wp_cache_set()
+```
 
-1. No object caching: If you are not using any object or memory caching (like Redis), the cache will last for the current page load. That means the same query will run at most once per page load.
-2. Object caching: If you use Redis, Memcached, or another object caching solution (we use Redis Object Cache), the list of restricted post IDs will be cached in memory for one minute, even across page views.
+ with a default expiration time of one minute. This can work in two ways depending on your server setup:
 
-The wpf_query_filter_cache_time filter lets you modify the length of time until the cache expires
+1. **No object caching:** If you are not using any object or memory caching (like Redis), the cache will last for the current page load. That means the same query will run at most once per page load.
+2. **Object caching:**If you use Redis, Memcached, or another object caching solution (we use [Redis Object Cache](https://wordpress.org/plugins/redis-cache/)), the list of restricted post IDs will be cached in memory for one minute, even across page views.
+
+The 
+```
+wpf_query_filter_cache_time
+```
+
+ filter lets you modify the length of time until the cache expires
 
 #### Parameters
 
-- $seconds (int): The number of seconds until the cache expires. Default 60.
-- $user_id (int): The user ID for whom the posts are being cached
-- $post_types (array): The post types used in the query. The first post type is used in the cache key.
+- ```
+$seconds
+```
+
+ *(int)*: The number of seconds until the cache expires. Default 60.
+- ```
+$user_id
+```
+
+ (int): The user ID for whom the posts are being cached
+- ```
+$post_types
+```
+
+ (array): The post types used in the query. The first post type is used in the cache key.
 
 ### Examples
 
@@ -272,7 +311,12 @@ add_filter( 'wpf_query_filter_cache_time', 'environment_based_cache_time' );
 
 ### Overview
 
-This filter allows you to override calls to any of WP Fusion’s CRM API methods. It’s inspired by the get_{$meta_type}_metadata filter in WordPress core.
+This filter allows you to override calls to any of WP Fusion’s CRM API methods. It’s inspired by the 
+```
+get_{$meta_type}_metadata
+```
+
+ filter [in WordPress core](https://developer.wordpress.org/reference/hooks/get_meta_type_metadata/).
 
 If a non-null value is returned from this filter, it will bypass sending any API calls to your CRM, and instead use your custom function to handle the API call.
 
@@ -280,22 +324,50 @@ This can be used to override any of WP Fusion’s CRM API methods with your own 
 
 #### Available method names
 
-For more information see the CRM API documentation.
+For more information [see the CRM API documentation](https://wpfusion.com/documentation/advanced-developer-tutorials/the-wp-fusion-crm-api/).
 
-- get_contact_id
-- get_tags
-- apply_tags
-- remove_tags
-- add_contact
-- update_contact
-- load_contact
-- load_contacts
-- track_event (with Event Tracking)
+- ```
+get_contact_id
+```
+- ```
+get_tags
+```
+- ```
+apply_tags
+```
+- ```
+remove_tags
+```
+- ```
+add_contact
+```
+- ```
+update_contact
+```
+- ```
+load_contact
+```
+- ```
+load_contacts
+```
+- ```
+track_event
+```
+
+ (with [Event Tracking](https://wpfusion.com/documentation/event-tracking/event-tracking-overview/))
 
 #### Parameters
 
-- $result (null): Return a non-null value to override the API call in the CRM class.
-- $args (array): The array of arguments being passed to the CRM API class. See the CRM API documentation for reference.
+- ```
+$result
+```
+
+ *(null)*: Return a non-null value to override the API call in the CRM class.
+- ```
+$args
+```
+
+ *(array)*: The array of arguments being passed to the CRM API class. [See the CRM API documentation for reference](https://wpfusion.com/documentation/advanced-developer-tutorials/the-wp-fusion-crm-api/).
 
 ### Examples
 
@@ -467,7 +539,7 @@ This filter is run when a WooCommerce Subscription’s data is synced to your CR
 - At checkout
 - When a subscription status changes
 - During a subscription renewal
-- During a WooCommerce Subscriptions meta batch operation
+- During a [WooCommerce Subscriptions meta batch operation](https://wpfusion.com/documentation/ecommerce/woocommerce-subscriptions/#batch-operations)
 
 It can be used to modify the subscription data that’s synced to your CRM.
 
@@ -475,8 +547,16 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 #### Parameters
 
-- $update_data (array): The data to sync to your CRM.
-- $subscription (WC_Subscription): The subscription object.
+- ```
+$update_data
+```
+
+ *(array)*: The data to sync to your CRM.
+- ```
+$subscription
+```
+
+ *(WC_Subscription)*: The subscription object.
 
 ### Examples
 
@@ -520,11 +600,11 @@ add_filter( 'wpf_woocommerce_subscription_sync_fields', 'my_custom_wpf_subscript
 
 There are some cases where WP Fusion needs to convert a CRM contact ID back to a WordPress user ID, for example:
 
-- When processing incoming webhooks
-- When initializing an auto-login session
-- When recovering an abandoned cart
+- When processing incoming [webhooks](https://wpfusion.com/documentation/webhooks/about-webhooks/)
+- When initializing an [auto-login session](https://wpfusion.com/documentation/tutorials/auto-login-links/)
+- When recovering an [abandoned cart](https://wpfusion.com/documentation/abandoned-cart-tracking/abandoned-cart-overview/)
 
-In this case, WP Fusion uses the wpf_get_user_id() function.
+In this case, WP Fusion uses the [wpf_get_user_id()](https://wpfusion.com/documentation/functions/wpf_get_user_id/) function.
 
 On sites with large usermeta tables (10,000,000+ rows), this can be slow.
 
@@ -532,14 +612,27 @@ This filter runs before the database query and returning a non-false value allow
 
 #### Parameters
 
-- $user_id (bool|int): False by default, return a non-false value to bypass the database query
-- $contact_id (string): The contact ID to look up
+- ```
+$user_id
+```
+
+ *(bool|int)*: False by default, return a non-false value to bypass the database query
+- ```
+$contact_id
+```
+
+ *(string)*: The contact ID to look up
 
 ### Examples
 
 #### Completely disable the lookup of user IDs by contact ID
 
-This code will bypass the database query and always return 0 for a contact’s user ID.
+This code will bypass the database query and always return 
+```
+0
+```
+
+ for a contact’s user ID.
 
 ```
 add_filter( 'wpf_get_user_id', '__return_zero' );
@@ -547,8 +640,23 @@ add_filter( 'wpf_get_user_id', '__return_zero' );
 
 This is the best solution for performance, but it will have some implications on the functionality of the plugin:
 
-1. The update and update_tags webhooks will no longer work (the add webhook will still work)
-2. When syncing abandoned cart data, custom fields for existing users that aren’t part of the checkout form will no longer be synced (this should be ok, it’s rare to sync abandoned cart data that’s not part of WooCommerce)
+1. The 
+```
+update
+```
+
+ and 
+```
+update_tags
+```
+
+ webhooks will no longer work (the 
+```
+add
+```
+
+ webhook will still work)
+2. When syncing abandoned cart data, custom fields for existing users that *aren’t* part of the checkout form will no longer be synced (this should be ok, it’s rare to sync abandoned cart data that’s not part of WooCommerce)
 3. API errors in the logs will no longer be associated with the user ID who triggered the error, they will show as “system”
 4. If you are using Auto Login Links, and a person with a user account on the site visits the auto login link as a guest, this will no longer update the cache of tags on their user account
 
@@ -556,7 +664,12 @@ There may also be other unexpected side effects depending on your connected CRM 
 
 #### Create a cache of user ID to contact ID pairs
 
-If you are using object caching (Redis, Memcached, etc) you can use wp_cache_set() to add records to the object cache. This can speed up performance considerably on sites with large databases, but it may fill up the cache if you have a lot of users.
+If you are using object caching (Redis, Memcached, etc) you can use 
+```
+wp_cache_set()
+```
+
+ to add records to the object cache. This can speed up performance considerably on sites with large databases, but it may fill up the cache if you have a lot of users.
 
 ```
 function cache_user_ids( $user_id, $contact_id ) {
@@ -607,7 +720,7 @@ This example overrides the built in user ID lookup so that all results are cache
 
 ### Overview
 
-This filter is run during an Event Tickets registration, after WP Fusion has created or updated an attendee in your CRM, and before tags are applied.
+This filter is run during an [Event Tickets](https://wpfusion.com/documentation/integrations/the-events-calendar-event-tickets/) registration, after WP Fusion has created or updated an attendee in your CRM, and before tags are applied.
 
 It can be used to modify the tags that are applied to an event attendee.
 
@@ -615,10 +728,26 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 #### Parameters
 
-- $apply_tags: (array) This is an array of tag IDs to be applied in your CRM.
-- $attendee_id: (int) The Event Tickets attendee ID.
-- $event_id: (int) The Event Tickets event ID.
-- $ticket_id: (int) The Event Tickets ticket ID.
+- ```
+$apply_tags
+```
+
+: *(array)* This is an array of tag IDs to be applied in your CRM.
+- ```
+$attendee_id
+```
+
+: *(int)* The Event Tickets attendee ID.
+- ```
+$event_id
+```
+
+: *(int)* The Event Tickets event ID.
+- ```
+$ticket_id
+```
+
+: *(int)* The Event Tickets ticket ID.
 
 ### Examples
 
@@ -654,22 +783,38 @@ add_filter( 'wpf_event_tickets_apply_tags', 'apply_late_registration_tags', 10, 
 
 This filter is run before WP Fusion syncs any custom field data to your CRM for an existing contact.
 
-It can be used to modify the field data only in cases where a contact record already exists (as opposed to wpf_user_update which only runs for registered users, or wpf_woocommerce_customer_data, which run for both new and existing contacts).
+It can be used to modify the field data only in cases where a contact record already exists (as opposed to [wpf_user_update](https://wpfusion.com/documentation/filters/wpf_user_update/) which only runs for registered users, or [wpf_woocommerce_customer_data](https://wpfusion.com/documentation/filters/wpf_woocommerce_customer_data/), which run for both new and existing contacts).
 
-It runs after user meta keys have been mapped to CRM field keys, and all data has been formatted via the wpf_format_field_value filter.
+It runs after user meta keys have been mapped to CRM field keys, and all data has been formatted via the [wpf_format_field_value](https://wpfusion.com/documentation/filters/wpf_format_field_value/) filter.
 
 #### Parameters
 
-- $args (array): The array of arguments being passed to the CRM API class.
+- ```
+$args
+```
 
-0 (string): The CRM contact ID being updated.
-1 (array): An associative array of CRM field keys and their values.
+ *(array)*: The array of arguments being passed to the CRM API class.
+- ```
+0
+```
+
+ *(string)*: The CRM contact ID being updated.
+- ```
+1
+```
+
+ *(array)*: An associative array of CRM field keys and their values.
 
 ### Examples
 
 #### Never update the first name of an existing contact, with ActiveCampaign
 
-Note that in this case first_name is the API field ID for the first name field, with ActiveCampaign. This will be different with each CRM.
+Note that in this case 
+```
+first_name
+```
+
+ is the API field ID for the first name field, with ActiveCampaign. This will be different with each CRM.
 
 For a reference please check your CRM’s API documentation or refer to the “API name” for custom fields in your CRM.
 
@@ -694,23 +839,42 @@ add_filter( 'wpf_api_update_contact_args', 'never_update_first_names' );
 
 ### Overview
 
-By default WP Fusion excludes administrators (users with the manage_options capability) from any access restrictions on content.
+By default WP Fusion excludes administrators (users with the 
+```
+manage_options
+```
 
-This can be disabled by unchecking the box for Exclude Administrators on the General settings tab in the WP Fusion settings.
+ capability) from any access restrictions on content.
 
-If you need to customize this behavior, for example to target different user roles, or to exclude specific user IDs, you can use the wpf_admin_override filter.
+This can be disabled by unchecking the box for **Exclude Administrators** on the General settings tab in the WP Fusion settings.
+
+If you need to customize this behavior, for example to target different user roles, or to exclude specific user IDs, you can use the 
+```
+wpf_admin_override
+```
+
+ filter.
 
 To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $override: Whether or not to activate the admin override.
+- ```
+$override
+```
+
+: Whether or not to activate the admin override.
 
 ### Examples
 
 #### Check a different capability
 
-The example below will treat all users with the edit_others_posts capability as admins for the purposes of WP Fusion.
+The example below will treat all users with the 
+```
+edit_others_posts
+```
+
+ capability as admins for the purposes of WP Fusion.
 
 ```
 function custom_admin_override( $override ) {
@@ -754,23 +918,94 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 #### Parameters
 
-- $order_args: An array of order data:
+- ```
+$order_args
+```
 
-order_label: The label, for example “WooCommerce Order #123”
-order_number: The order umber, for example 123
-order_edit_link: The link to edit the order in the admin
-payment_method: The payment method
-products: An array of products and their prices
-line_items: An array of line items (discounts, shipping, etc) and their amounts
-total: The order total
-currency: The order currency
-currency_symbol: The order currency symbol
-order_date: The order date
-provider: The plugin source, for example woocommerce or easy-digital-downloads
-status: The order status
-user_id: The user ID who placed the order, 0 for guest
-user_email: The customer email address
-- $order_id: The ecommerce order ID
+: An array of order data:
+- ```
+order_label
+```
+
+: The label, for example “WooCommerce Order #123”
+- ```
+order_number
+```
+
+: The order umber, for example 123
+- ```
+order_edit_link
+```
+
+: The link to edit the order in the admin
+- ```
+payment_method
+```
+
+: The payment method
+- ```
+products
+```
+
+: An array of products and their prices
+- ```
+line_items
+```
+
+: An array of line items (discounts, shipping, etc) and their amounts
+- ```
+total
+```
+
+: The order total
+- ```
+currency
+```
+
+: The order currency
+- ```
+currency_symbol
+```
+
+: The order currency symbol
+- ```
+order_date
+```
+
+: The order date
+- ```
+provider
+```
+
+: The plugin source, for example 
+```
+woocommerce
+```
+
+ or 
+```
+easy-digital-downloads
+```
+- ```
+status
+```
+
+: The order status
+- ```
+user_id
+```
+
+: The user ID who placed the order, 0 for guest
+- ```
+user_email
+```
+
+: The customer email address
+- ```
+$order_id
+```
+
+: The ecommerce order ID
 
 ### Examples
 
@@ -798,21 +1033,38 @@ add_filter( 'wpf_ecommerce_order_args', 'override_order_label', 10, 2 );
 
 ### Overview
 
-This filter is run during a WooCommerce checkout, while WP Fusion is preparing to sync FooEvents event attendees to your CRM. It can be used to modify the data that is synced for each attendee.
+This filter is run during a WooCommerce checkout, while WP Fusion is preparing to sync [FooEvents](https://wpfusion.com/documentation/events/fooevents/) event attendees to your CRM. It can be used to modify the data that is synced for each attendee.
 
 To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $update_data: (array) This is an array of key value pairs representing WordPress meta fields and their corresponding values.
-- $attendee: (array) The FooEvents attendee data.
-- $order_id: (int) The WooCommerce order ID
+- ```
+$update_data
+```
+
+: *(array)* This is an array of key value pairs representing WordPress meta fields and their corresponding values.
+- ```
+$attendee
+```
+
+: *(array)* The FooEvents attendee data.
+- ```
+$order_id
+```
+
+: *(int)*The WooCommerce order ID
 
 ### Examples
 
 #### Sync event dates in separate fields
 
-This example syncs the event date in a separate field, identified by the event ID (like event_date_123).
+This example syncs the event date in a separate field, identified by the event ID (like 
+```
+event_date_123
+```
+
+).
 
 It can be used to store event dates in multiple custom CRM fields when a customer registers for multiple events simultaneously.
 
@@ -830,9 +1082,21 @@ function sync_booking_dates( $update_data, $attendee, $order_id ) {
 add_action( 'wpf_woocommerce_attendee_data', 'sync_booking_dates', 10, 3 );
 ```
 
-Please note that to sync the data with your CRM, you will still need to manually create a custom field mapping at the bottom of the Contact Fields list in the WP Fusion settings.
+Please note that to sync the data with your CRM, you will still need to manually create a custom field mapping at the bottom of the [Contact Fields list](https://wpfusion.com/documentation/getting-started/syncing-contact-fields/#additional-fields) in the WP Fusion settings.
 
-So, for example, if your product ID was 123, you would manually add a new field for event_date_123, set the type to date, and then choose the corresponding custom field in your CRM from the dropdown at the right.
+![a WP Fusion settings interface displays an add new field option with three columns: field name event date 123, type date, and label event start date. a checkbox is checked next to add new field, simplifying attendee data management.](https://wpfusion.com/wp-content/uploads/2021/07/custom-crm-field-mapping-1024x113.jpg)
+
+So, for example, if your product ID was 123, you would manually add a new field for 
+```
+event_date_123
+```
+
+, set the type to 
+```
+date
+```
+
+, and then choose the corresponding custom field in your CRM from the dropdown at the right.
 
 ---
 
@@ -842,16 +1106,32 @@ So, for example, if your product ID was 123, you would manually add a new field 
 
 ### Overview
 
-This filter is run during an Event Tickets registration, after WP Fusion has collected the event and attendee data. It can be used to sync additional data from an Event Tickets registration to custom fields in your CRM.
+This filter is run during an [Event Tickets](https://wpfusion.com/documentation/integrations/the-events-calendar-event-tickets/) registration, after WP Fusion has collected the event and attendee data. It can be used to sync additional data from an Event Tickets registration to custom fields in your CRM.
 
 To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $update_data: (array) This is an array of key value pairs representing WordPress meta fields and their corresponding values.
-- $attendee_id: (int) The Event Tickets attendee ID
-- $event_id: (int) The Event Tickets event ID
-- $ticket_id: (int) The Event Tickets ticket ID
+- ```
+$update_data
+```
+
+: *(array)* This is an array of key value pairs representing WordPress meta fields and their corresponding values.
+- ```
+$attendee_id
+```
+
+: *(int)* The Event Tickets attendee ID
+- ```
+$event_id
+```
+
+: *(int)* The Event Tickets event ID
+- ```
+$ticket_id
+```
+
+: *(int)* The Event Tickets ticket ID
 
 ### Examples
 
@@ -882,9 +1162,14 @@ add_filter( 'wpf_event_tickets_attendee_data', 'alt_emails_for_attendees', 10, 4
 
 #### Sync custom event fields
 
-This example registers a custom field for sync in the Contact Fields settings, and then populates that field value based on a postmeta entry attached to the event ID, with field key custom_field_key.
+This example registers a custom field for sync in the [Contact Fields settings](https://wpfusion.com/documentation/getting-started/syncing-contact-fields/), and then populates that field value based on a postmeta entry attached to the event ID, with field key 
+```
+custom_field_key
+```
 
-For more information on syncing data beyond the standard usermeta fields, see Detecting and Syncing Additional Fields.
+.
+
+For more information on syncing data beyond the standard usermeta fields, see [Detecting and Syncing Additional Fields](https://wpfusion.com/documentation/advanced-developer-tutorials/detecting-and-syncing-additional-fields/).
 
 ```
 // Add the field as available for sync on the Contact Field tab in the WPF settings
@@ -924,15 +1209,29 @@ add_filter( 'wpf_event_tickets_attendee_data', 'sync_custom_event_field', 10, 4 
 
 ### Overview
 
-WP Fusion’s Filter Queries option allows you to modify the results of database queries to exclude content that a user can’t access (based on WP Fusion’s access rules).
+WP Fusion’s [Filter Queries option](https://wpfusion.com/documentation/getting-started/access-control/#filter-queries) allows you to modify the results of database queries to exclude content that a user can’t access (based on WP Fusion’s access rules).
 
-When used in Advanced mode, Filter Queries will build up a list of posts a user has access to before the main query is run, and add it to the main query via the post__not_in parameter (in order to exclude any restricted posts).
+When used in Advanced mode, Filter Queries will build up a list of posts a user has access to before the main query is run, and add it to the main query via the 
+```
+post__not_in
+```
 
-The wpf_query_filter_get_posts_args filter lets you modify the arguments going into that query.
+ parameter (in order to exclude any restricted posts).
+
+The 
+```
+wpf_query_filter_get_posts_args
+```
+
+ filter lets you modify the arguments going into that query.
 
 #### Parameters
 
-- $args (array): WP_Query arguments
+- ```
+$args
+```
+
+ *(array)*: WP_Query arguments
 
 ### Examples
 
@@ -942,7 +1241,7 @@ To protect the stability of your site, the pre-query will load at most 200 restr
 
 The example below extends the pre-query to check the first 1000 restricted posts.
 
-Note that this can cause multiple thousands of extra database queries per page load, so it should be used with extreme caution.
+**Note that this can cause multiple thousands of extra database queries per page load, so it should be used with extreme caution.**
 
 ```
 function filter_query_posts_args( $args ) {
@@ -978,9 +1277,19 @@ add_filter( 'wpf_query_filter_get_posts_args', 'filter_query_posts_args' );
 
 By default, the pre-query only looks at posts that have WP Fusion access rules saved to their postmeta.
 
-This provides improved performance, but it means that posts protected by post type rules or taxonomy term rules will not necessarily be excluded from the results, even in Advanced mode.
+This provides improved performance, but it means that posts protected by [post type rules](https://wpfusion.com/documentation/filters/wpf_post_type_rules/) or [taxonomy term rules](https://wpfusion.com/documentation/getting-started/access-control/#restricting-access-to-archives-and-categories) will not necessarily be excluded from the results, even in Advanced mode.
 
-This snippet removes the meta_query and also sets the posts_per_page to 5000. Effectively this means that every post of the post type will be pre-checked for access before the query is run.
+This snippet removes the 
+```
+meta_query
+```
+
+ and also sets the 
+```
+posts_per_page
+```
+
+ to 5000. Effectively this means that every post of the post type will be pre-checked for access before the query is run.
 
 If you have a lot of posts and/or taxonomy terms, this will almost certainly crash your site. Use with caution.
 
@@ -1007,20 +1316,33 @@ This functionality could be made more performant by running it on a schedule (or
 
 ### Overview
 
-WP Fusion’s Filter Queries option allows you to modify the results of database queries to exclude content that a user can’t access (based on WP Fusion’s access rules).
+WP Fusion’s [Filter Queries option](https://wpfusion.com/documentation/getting-started/access-control/#filter-queries) allows you to modify the results of database queries to exclude content that a user can’t access (based on WP Fusion’s access rules).
 
-There are some situations where you may need to bypass query filtering on a specific post type or in a certain context, in that case you can use the wpf_should_filter_query filter.
+There are some situations where you may need to bypass query filtering on a specific post type or in a certain context, in that case you can use the 
+```
+wpf_should_filter_query
+```
+
+ filter.
 
 #### Parameters
 
-- $should_filter (bool): Whether or not to apply query filtering to the query
-- $query (WP_Query): The query
+- ```
+$should_filter
+```
+
+ *(bool)*: Whether or not to apply query filtering to the query
+- ```
+$query
+```
+
+ (*WP_Query*): The query
 
 ### Examples
 
 #### Bypass query filtering on the home page if the post type is an event
 
-This example bypasses query filtering on the The Events Calendar events list if the current page is the home page.
+This example bypasses query filtering on the [The Events Calendar](https://wpfusion.com/documentation/integrations/the-events-calendar-event-tickets/) events list if the current page is the home page.
 
 ```
 function bypass_filter_queries_for_events( $should_filter, $query ) {
@@ -1044,7 +1366,7 @@ add_filter( 'wpf_should_filter_query', 'bypass_filter_queries_for_events', 10, 2
 
 ### Overview
 
-This filter is run when WP Fusion is processing a form submission from one of our supported form plugins.
+This filter is run when WP Fusion is processing a form submission from one of our [supported form plugins](https://wpfusion.com/documentation/#lead-generation).
 
 It is triggered after the initial contact ID lookup in the CRM, but before any data has been synced. It can be used to modify the data that’s sent to the CRM.
 
@@ -1054,23 +1376,70 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 For more precise targeting there are two alternate filters with the same arguments:
 
-- wpf_{integration slug}_pre_submission : Where {integration_slug} is the name of the form integration, for example wpf_gform_apply_tags
+- ```
+wpf_{integration slug}_pre_submission
+```
+
+ : Where 
+```
+{integration_slug}
+```
+
+ is the name of the form integration, for example 
+```
+wpf_gform_apply_tags
+```
 
 #### Parameters
 
-- $update_data (array): This is an array of data that will be synced to the CRM. The array keys are the custom field IDs in your CRM.
-- $user_id (int): The user who submitted the form, 0 if a guest
-- $contact_id (string): The ID of the contact record created / updated by the form submission
-- $form_id (int): The ID of the submitted form
-- $entry_id (int): The ID of the submitted form entry
+- ```
+$update_data
+```
+
+ *(array)*: This is an array of data that will be synced to the CRM. The array keys are the custom field IDs in your CRM.
+- ```
+$user_id
+```
+
+ *(int)*: The user who submitted the form, 
+```
+0
+```
+
+ if a guest
+- ```
+$contact_id
+```
+
+ *(string)*: The ID of the contact record created / updated by the form submission
+- ```
+$form_id
+```
+
+ *(int)*: The ID of the submitted form
+- ```
+$entry_id
+```
+
+ *(int)*: The ID of the submitted form entry
 
 ### Examples
 
 #### Append to a field instead of overwriting it
 
-In this case, we have a form field mapped to the ContactNotes field in Infusionsoft, but instead of replacing the notes, we’d like to update them.
+In this case, we have a form field mapped to the 
+```
+ContactNotes
+```
 
-This example runs when a form is submitted and first loads the contact’s ContactNotes from Infusionsoft. If there are already notes on the contact record, the new notes are appended to the existing notes before being sent back to the CRM.
+ field in Infusionsoft, but instead of replacing the notes, we’d like to update them.
+
+This example runs when a form is submitted and first loads the contact’s 
+```
+ContactNotes
+```
+
+ from Infusionsoft. If there are already notes on the contact record, the new notes are appended to the existing notes before being sent back to the CRM.
 
 ```
 function append_to_notes_field( $update_data, $user_id, $contact_id, $form_id ) {
@@ -1099,7 +1468,17 @@ add_filter( 'wpf_forms_pre_submission', 'append_to_notes_field', 10, 4 );
 
 #### Include additional entry meta from Gravity Forms
 
-This example runs when a form is submitted and lets you sync additional fields to your CRM from the database, either form entry metadata saved via GFAPI::update_entry_field() or user metadata saved via update_user_meta().
+This example runs when a form is submitted and lets you sync additional fields to your CRM from the database, either form entry metadata saved via 
+```
+GFAPI::update_entry_field()
+```
+
+ or user metadata saved via 
+```
+update_user_meta()
+```
+
+.
 
 ```
 function merge_additional_form_data( $update_data, $user_id, $contact_id, $form_id, $entry_id ) {
@@ -1124,14 +1503,22 @@ add_filter( 'wpf_forms_pre_submission', 'merge_additional_form_data', 10, 5 );
 
 ### Overview
 
-This filter is run during an Event Espresso registration, after WP Fusion has extracted the customer data from the registration object. It can be used to sync additional data from an Event Espresso registration to custom fields in your CRM.
+This filter is run during an [Event Espresso](https://wpfusion.com/documentation/events/event-espresso/) registration, after WP Fusion has extracted the customer data from the registration object. It can be used to sync additional data from an Event Espresso registration to custom fields in your CRM.
 
 To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $order_data: This is an array of key value pairs representing WordPress meta fields and their corresponding values.
-- $registration: The Event Espresso registration object
+- ```
+$order_data
+```
+
+: This is an array of key value pairs representing WordPress meta fields and their corresponding values.
+- ```
+$registration
+```
+
+: The Event Espresso registration object
 
 ### Examples
 
@@ -1165,9 +1552,19 @@ add_filter( 'wpf_event_espresso_customer_data', 'alt_emails_for_attendees', 10, 
 
 #### Sync event meta
 
-This example grabs two postmeta keys (custom_field_one and custom_field_two) off the Event Espresso event and merges them into the data synced to the CRM for the attendee. This can be used to sync additional event properties to the attendee’s contact record in the CRM.
+This example grabs two postmeta keys (
+```
+custom_field_one
+```
 
-To enable the custom fields for sync they must first be enabled for sync and mapped to custom fields in your CRM via the Contact Fields settings.
+ and 
+```
+custom_field_two
+```
+
+) off the Event Espresso event and merges them into the data synced to the CRM for the attendee. This can be used to sync additional event properties to the attendee’s contact record in the CRM.
+
+To enable the custom fields for sync they must first be enabled for sync and mapped to custom fields in your CRM via the [Contact Fields settings](https://wpfusion.com/documentation/getting-started/syncing-contact-fields/).
 
 ```
 function sync_event_custom_fields( $update_data, $registration ) {
@@ -1192,7 +1589,7 @@ add_filter( 'wpf_event_espresso_customer_data', 'sync_event_custom_fields', 10, 
 
 ### Overview
 
-This filter is run when WP Fusion is processing a form submission from one of our supported form plugins.
+This filter is run when WP Fusion is processing a form submission from one of our [supported form plugins](https://wpfusion.com/documentation/#lead-generation).
 
 It is triggered after WP Fusion has attempted to locate a contact ID in the CRM for the form submission, but before a contact record is created / updated, and before any tags are applied.
 
@@ -1202,14 +1599,52 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 For more precise targeting there are two alternate filters with the same arguments:
 
-- wpf_{integration slug}_pre_submission_contact_id : Where {integration_slug} is the name of the form integration, for example wpf_gform_pre_submission_contact_id
+- ```
+wpf_{integration slug}_pre_submission_contact_id
+```
+
+ : Where 
+```
+{integration_slug}
+```
+
+ is the name of the form integration, for example 
+```
+wpf_gform_pre_submission_contact_id
+```
 
 #### Parameters
 
-- $contact_id (string|false): The contact ID in the CRM to be updated, or false if no match found
-- $update_data (array): The data about to be synced to the CRM, in key => value pairs
-- $user_id (int): The ID of the registered user who submitted the form, or 0 for guest
-- $form_id (int): The ID of the submitted form
+- ```
+$contact_id
+```
+
+ *(string|false)*: The contact ID in the CRM to be updated, or 
+```
+false
+```
+
+ if no match found
+- ```
+$update_data
+```
+
+ *(array)*: The data about to be synced to the CRM, in key => value pairs
+- ```
+$user_id
+```
+
+ *(int)*: The ID of the registered user who submitted the form, or 
+```
+0
+```
+
+ for guest
+- ```
+$form_id
+```
+
+ *(int)*: The ID of the submitted form
 
 ### Examples
 
@@ -1341,14 +1776,27 @@ add_filter( 'wpf_forms_pre_submission_contact_id', 'wpf_forms_name_lookup', 10, 
 
 ### Overview
 
-This filter runs when a new user is being imported, either via the import tool or a webhook. It allows you to modify a user’s meta data after it’s been loaded from the CRM, but before the new user has been inserted.
+This filter runs when a new user is being imported, either via [the import tool](https://wpfusion.com/documentation/tutorials/import-users/) or a [webhook](https://wpfusion.com/documentation/#Webhooks). It allows you to modify a user’s meta data after it’s been loaded from the CRM, but before the new user has been inserted.
 
 To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $user_meta: Array of user meta data, in the format array('meta_field' => 'value').
-- $contact_id: CRM contact ID of the user being imported
+- ```
+$user_meta
+```
+
+: Array of user meta data, in the format 
+```
+array('meta_field' => 'value')
+```
+
+.
+- ```
+$contact_id
+```
+
+: CRM contact ID of the user being imported
 
 ### Examples
 
@@ -1388,7 +1836,7 @@ add_filter( 'wpf_import_user', 'wpf_use_names_as_logins' );
 
 ### Overview
 
-This filter is run when WP Fusion is processing a form submission from one of our supported form plugins.
+This filter is run when WP Fusion is processing a form submission from one of our [supported form plugins](https://wpfusion.com/documentation/#lead-generation).
 
 It is triggered after the contact record has been created / updated in the CRM, but before any tags have been applied. It can be used to modify the tags that will be applied as part of the form submission.
 
@@ -1398,21 +1846,71 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 For more precise targeting there are two alternate filters with the same arguments:
 
-- wpf_{integration slug}_apply_tags : Where {integration_slug} is the name of the form integration, for example wpf_gform_apply_tags
-- wpf_{integration slug}_apply_tags_{form_id} : Where {form_id} is the ID of the submitted form, for example wpf_ninja_forms_apply_tags_1
+- ```
+wpf_{integration slug}_apply_tags
+```
+
+ : Where 
+```
+{integration_slug}
+```
+
+ is the name of the form integration, for example 
+```
+wpf_gform_apply_tags
+```
+- ```
+wpf_{integration slug}_apply_tags_{form_id}
+```
+
+ : Where 
+```
+{form_id}
+```
+
+ is the ID of the submitted form, for example 
+```
+wpf_ninja_forms_apply_tags_1
+```
 
 #### Parameters
 
-- $apply_tags (array): This is an array of tags that will be applied to the person who submitted the form
-- $user_id (int): The user who submitted the form, 0 if a guest
-- $contact_id (string): The ID of the contact record created / updated by the form submission
-- $form_id (int): The ID of the submitted form
+- ```
+$apply_tags
+```
+
+ *(array)*: This is an array of tags that will be applied to the person who submitted the form
+- ```
+$user_id
+```
+
+ *(int)*: The user who submitted the form, 
+```
+0
+```
+
+ if a guest
+- ```
+$contact_id
+```
+
+ *(string)*: The ID of the contact record created / updated by the form submission
+- ```
+$form_id
+```
+
+ *(int)*: The ID of the submitted form
 
 ### Examples
 
 #### Apply an additional tag based on a cookie
 
-This example checks to see if the person submitting the form came to the site via an AffiliateWP affiliate link, and is being tracked with the affwp_refcookie. If so, the tag Affiliate Tag is applied.
+This example checks to see if the person submitting the form came to the site via an [AffiliateWP](https://wpfusion.com/go/affiliatewp/) affiliate link, and is being tracked with the 
+```
+affwp_ref
+```
+
+cookie. If so, the tag *Affiliate Tag* is applied.
 
 ```
 function merge_affiliate_tags( $apply_tags, $user_id, $contact_id, $form_id ) {
@@ -1430,7 +1928,7 @@ add_filter( 'wpf_forms_apply_tags', 'merge_affiliate_tags', 10, 4 );
 
 #### Use “Round Robin” assignment for leads
 
-This example randomly assigns each lead a tag of either Tag A, Tag B or Tag C. This is similar to the “Round Robin” owner assignment in sales CRMs like Infusionsoft, and can be used to randomly assign leads to a sales rep.
+This example randomly assigns each lead a tag of either *Tag A, Tag B*or *Tag C.*This is similar to the “Round Robin” owner assignment in sales CRMs like Infusionsoft, and can be used to randomly assign leads to a sales rep.
 
 ```
 function apply_round_robin_tags( $apply_tags ) {
@@ -1462,33 +1960,50 @@ add_filter( 'wpf_forms_apply_tags', 'apply_round_robin_tags' );
 
 ### Overview
 
-WP Fusion uses the Salesforce Object Query Language (SOQL) to search for records in your Salesforce account.
+WP Fusion uses the [Salesforce Object Query Language](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm) (SOQL) to search for records in your Salesforce account.
 
 For example when searching for a contact record by email address, loading the tags or topics for a contact, and applying / removing tags or topics from a contact.
 
-Before WP Fusion executes any Salesforce query, the query is passed through the wpf_salesforce_query_args filter, which allows you to modify the query before it’s sent.
+Before WP Fusion executes any Salesforce query, the query is passed through the 
+```
+wpf_salesforce_query_args
+```
+
+ filter, which allows you to modify the query before it’s sent.
 
 #### Parameters
 
-- $query_args (array): The query arguments
-- $method (string): The API method being performed
-- $searchfield (string): The value being searched for
+- ```
+$query_args
+```
+
+ *(array)*: The query arguments
+- ```
+$method
+```
+
+ (string): The API method being performed
+- ```
+$searchfield
+```
+
+ (string): The value being searched for
 
 The default query arguments, by method, are:
 
-Method: get_contact_id
+**Method: get_contact_id**
 
 ```
 array( "q" => "SELECT Id from Contact WHERE Email = '{$email_address}'" )
 ```
 
-Method: get_topics
+**Method: get_topics**
 
 ```
 array( "q" => "SELECT TopicId from TopicAssignment WHERE EntityId = '{$contact_id}'" );
 ```
 
-Method: load_contacts
+**Method: load_contacts**
 
 ```
 array( "q" => "SELECT EntityId from TopicAssignment WHERE TopicId = '{$topic_id}'" );
@@ -1498,7 +2013,17 @@ array( "q" => "SELECT EntityId from TopicAssignment WHERE TopicId = '{$topic_id}
 
 #### Use a custom email field for contact lookups
 
-By default WP Fusion uses the Email field for looking up a contact ID. This example changes that lookup field to a custom field on a custom object type, Email__c:
+By default WP Fusion uses the 
+```
+Email
+```
+
+ field for looking up a contact ID. This example changes that lookup field to a custom field on a custom object type, 
+```
+Email__c
+```
+
+:
 
 ```
 function custom_wpf_query_args( $query_args, $method, $searchfield ) {
@@ -1532,9 +2057,21 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 #### Parameters
 
-- $apply_tags: This is an array of tags that will be applied to the customer
-- $status: The current subscription status (i.e. active, pending-cancel, on-hold)
-- $subscription: The subscription object
+- ```
+$apply_tags
+```
+
+: This is an array of tags that will be applied to the customer
+- ```
+$status
+```
+
+: The current [subscription status](https://docs.woocommerce.com/document/subscriptions/statuses/) (i.e. *active, pending-cancel, on-hold)*
+- ```
+$subscription
+```
+
+: The subscription object
 
 ### Examples
 
@@ -1564,7 +2101,17 @@ add_filter( 'wpf_woocommerce_subscription_status_apply_tags', 'custom_wpf_status
 
 ### Overview
 
-During a user registration or when running a Push User Meta batch operation, WP Fusion gets all of the available metadata for a user out of the wp_usermeta database table, using get_user_meta( $user_id );, and then any enabled fields are synced on to your CRM.
+During a user registration or when running a [Push User Meta batch operation](https://wpfusion.com/documentation/tutorials/batch-operations/#push-user-meta), WP Fusion gets all of the available metadata for a user out of the 
+```
+wp_usermeta
+```
+
+ database table, using 
+```
+get_user_meta( $user_id );
+```
+
+, and then any enabled fields are synced on to your CRM.
 
 This filter allows you to modify the array of metadata that’s gathered for each user.
 
@@ -1572,14 +2119,32 @@ It’s most commonly used to include user data found in different database table
 
 #### Parameters
 
-- $user_meta: Array of user meta data gathered from the database, in the format array( 'meta_field' => 'value' ).
-- $user_id: ID for the user being updated.
+- ```
+$user_meta
+```
+
+: Array of user meta data gathered from the database, in the format 
+```
+array( 'meta_field' => 'value' )
+```
+
+.
+- ```
+$user_id
+```
+
+: ID for the user being updated.
 
 ### Examples
 
 #### Get an XProfile field value out of the BuddyPress XProfile tables
 
-WP Fusion already includes this code in the BuddyPress / BuddyBoss integration, but we’ll use it here as an example for how wpf_get_user_meta works.
+WP Fusion already includes this code in the BuddyPress / BuddyBoss integration, but we’ll use it here as an example for how 
+```
+wpf_get_user_meta
+```
+
+ works.
 
 ```
 function my_wpf_xprofile_data( $user_meta, $user_id ) {
@@ -1611,8 +2176,16 @@ This filter is run during a WooCommerce checkout, before WP Fusion has applied a
 
 #### Parameters
 
-- $apply_tags: This is an array of tags that will be applied to the customer
-- $order: The WooCommerce order object
+- ```
+$apply_tags
+```
+
+: This is an array of tags that will be applied to the customer
+- ```
+$order
+```
+
+: The WooCommerce order object
 
 ### Examples
 
@@ -1634,7 +2207,7 @@ add_filter( 'wpf_woocommerce_apply_tags_checkout', 'high_value_tag', 10, 2 );
 
 #### Force re-apply tags with every renewal order
 
-By default WP Fusion does not re-apply the tags applied at checkout with every WooCommerce Subscriptions renewal order, because in most cases the tags haven’t changed.
+By default WP Fusion does not re-apply the tags applied at checkout with every [WooCommerce Subscriptions](https://wpfusion.com/documentation/ecommerce/woocommerce-subscriptions) renewal order, because in most cases the tags haven’t changed.
 
 This example forces the tags to be re-applied with every renewal payment.
 
@@ -1660,12 +2233,30 @@ That way if a user checks out with a different billing email, their original con
 
 Generally this is desirable, but there may be situations where you don’t want orders to be associated with the current user. For example if your WooCommerce checkouts are being made by agents who are purchasing on behalf of their customers. In that case you would want a new contact record to be created for the customer, rather than updating the contact record of the agent.
 
-The wpf_woocommerce_user_id filter allows you to modify the user ID that WP Fusion uses to determine which user should be associated with the checkout. Returning false from the filter will tell WP Fusion to treat the checkout as a guest checkout.
+The 
+```
+wpf_woocommerce_user_id
+```
+
+ filter allows you to modify the user ID that WP Fusion uses to determine which user should be associated with the checkout. Returning 
+```
+false
+```
+
+ from the filter will tell WP Fusion to treat the checkout as a guest checkout.
 
 #### Parameters
 
-- $user_id (int): The user ID to be used for the checkout
-- $order (object): The WooCommerce order object
+- ```
+$user_id
+```
+
+ *(int)*: The user ID to be used for the checkout
+- ```
+$order
+```
+
+ (object): The WooCommerce order object
 
 ### Examples
 
@@ -1687,21 +2278,58 @@ add_filter( 'wpf_woocommerce_user_id', function( $user_id, $order ) {
 
 Most of WP Fusion’s supported CRMs support different custom field types in addition to text fields, for example dates, picklists, dropdowns, and radios.
 
-The wpf_format_field_value filter is run on each field value before it’s synced to your CRM, to convert WordPress formatted data into the appropriate format in your CRM.
+The 
+```
+wpf_format_field_value
+```
+
+ filter is run on each field value before it’s synced to your CRM, to convert WordPress formatted data into the appropriate format in your CRM.
 
 #### Parameters
 
-- $value: (mixed) The field value that will be synced to the CRM
-- $field_type: (string) The field type as shown on the Contact Fields list in the WP Fusion settings
-- $field: (string) The field’s API name in your CRM
+- ```
+$value
+```
+
+: *(mixed)* The field value that will be synced to the CRM
+- ```
+$field_type
+```
+
+: *(string)* The field type as shown on the Contact Fields list in the WP Fusion settings
+- ```
+$field
+```
+
+: *(string)*The field’s API name in your CRM
 
 ### How it works in WP Fusion
 
-This happens in two places, at two priorities. In the class WPF_CRM_Base there is a format_field_value() function attached to priority 5 that does some standardized formatting for all CRMs:
+This happens in two places, at two priorities. In the class 
+```
+WPF_CRM_Base
+```
+
+ there is a 
+```
+format_field_value()
+```
+
+ function attached to priority 5 that does some standardized formatting for all CRMs:
 
 - Dates are converted into Unix timestamps
 - Array values (like multiselects) are combined into a comma-separated string
-- Checkbox values are converted to 1 if they are checked or null if they are un-checked.
+- Checkbox values are converted to 
+```
+1
+```
+
+ if they are checked or 
+```
+null
+```
+
+ if they are un-checked.
 
 Then in each CRM integration module there is a format_field_value() function attached to priority 10, which does additional formatting based on that CRM’s API. For example:
 
@@ -1735,7 +2363,17 @@ add_filter( 'wpf_format_field_value', 'custom_format_checkbox', 20, 3 );
 
 #### Convert checkbox values to strings
 
-WP Fusion syncs checkbox values to your CRM as boolean true and null, which is the most compatible with updating checkbox and radio type custom fields in your CRM.
+WP Fusion syncs checkbox values to your CRM as boolean 
+```
+true
+```
+
+ and 
+```
+null
+```
+
+, which is the most compatible with updating checkbox and radio type custom fields in your CRM.
 
 However, you may want to see the actual text “Yes” and “No” in your CRM. This example converts those boolean values back to strings.
 
@@ -1800,9 +2438,24 @@ add_filter( 'wpf_format_field_value', 'custom_format_date', 20, 3 );
 
 #### Force an empty value
 
-By default WP Fusion won’t sync an empty text value to your CRM, to avoid overwriting existing data. You can override this by setting the field’s value to null.
+By default WP Fusion won’t sync an empty text value to your CRM, to avoid overwriting existing data. You can override this by setting the field’s value to 
+```
+null
+```
 
-In this example we’ll set WP Fusion to always send a null value any time data isn’t specified for the CRM field with key mycrmfieldkey:
+.
+
+In this example we’ll set WP Fusion to always send a 
+```
+null
+```
+
+ value any time data isn’t specified for the CRM field with key 
+```
+mycrmfieldkey
+```
+
+:
 
 ```
 function custom_format_empty_fields( $value, $field_type, $field ) {
@@ -1854,8 +2507,16 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 #### Parameters
 
-- $customer_data: This is an array of key value pairs representing WordPress meta fields and their corresponding values.
-- $order: The WooCommerce order object
+- ```
+$customer_data
+```
+
+: This is an array of key value pairs representing WordPress meta fields and their corresponding values.
+- ```
+$order
+```
+
+: The WooCommerce order object
 
 ### Examples
 
@@ -2008,7 +2669,17 @@ add_filter( 'wpf_woocommerce_customer_data', 'wp_fusion_sync_lifetime_value_with
 
 #### Ignore an order
 
-You can return an empty value from the wpf_woocommerce_customer_data filter in order to have WP Fusion ignore a WooCommerce order. In this example we’re going to ignore orders unless their status is completed:
+You can return an empty value from the 
+```
+wpf_woocommerce_customer_data
+```
+
+ filter in order to have WP Fusion ignore a WooCommerce order. In this example we’re going to ignore orders unless their status is 
+```
+completed
+```
+
+:
 
 ```
 function wpf_only_allow_completed( $customer_data, $order ) {
@@ -2026,9 +2697,9 @@ add_filter( 'wpf_woocommerce_customer_data', 'wpf_only_allow_completed', 10, 2 )
 
 #### Don’t process orders in real time
 
-In this example, we will not sync any orders in real time as customers check out on your store.
+In this example, we will *not* sync any orders in real time as customers check out on your store.
 
-This can be used in combination with a scheduled batch operation to sync orders later, when there are more resources available on the site.
+This can be used in combination with a [scheduled batch operation](https://wpfusion.com/documentation/advanced-developer-tutorials/scheduled-synchronization-using-cron/#sync-woocommerce-orders-daily) to sync orders later, when there are more resources available on the site.
 
 ```
 function wpf_dont_process_orders_in_real_time( $customer_data ) {
@@ -2064,11 +2735,11 @@ add_filter( 'wpf_woocommerce_customer_data', 'only_sync_existing_contacts', 10, 
 
 #### Only sync customers who opt in to marketing
 
-Because WP Fusion uses tags applied at checkout to unlock content, enroll users into courses, and otherwise deliver access to purchased products— all customers will be synced with your CRM, regardless of whether or not they’ve consented to marketing.
+Because WP Fusion uses tags applied at checkout to [unlock content](https://wpfusion.com/documentation/getting-started/access-control/), [enroll users into courses](https://wpfusion.com/documentation/learning-management/learndash/#course-settings-and-auto-enrollment), and otherwise deliver access to purchased products— all customers will be synced with your CRM, regardless of whether or not they’ve consented to marketing.
 
 It’s then up to you to use the tag and/or custom field value in your campaigns and automations to exclude contacts from marketing if they haven’t opted in.
 
-On some simple stores, you may want to completely disable the sync of customers with your CRM if they haven’t opted in to marketing. This can be achieved with the following filter, added to your functions.php file:
+On some simple stores, you may want to completely disable the sync of customers with your CRM if they haven’t [opted in to marketing](https://wpfusion.com/documentation/ecommerce/woocommerce/#email-optins). This can be achieved with the following filter, added to your functions.php file:
 
 ```
 function do_not_sync_unconfirmed_customers( $customer_data ) {
@@ -2092,18 +2763,38 @@ add_filter( 'wpf_woocommerce_customer_data', 'do_not_sync_unconfirmed_customers'
 
 ### Overview
 
-This filter is similar to the wpf_user_can_access filter, but runs only on Elementor elements, and passes the Elementor widget as an argument to the filter. To use the code examples below, add them to your active theme’s functions.php file.
+This filter is similar to the [wpf_user_can_access](https://wpfusion.com/documentation/filters/wpf_user_can_access/) filter, but runs only on Elementor elements, and passes the Elementor widget as an argument to the filter. To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $can_access: This variable represents whether or not the user can access the content. It will either be true or false.
-- $element: The Elementor widget
+- ```
+$can_access
+```
+
+: This variable represents whether or not the user can access the content. It will either be 
+```
+true
+```
+
+ or 
+```
+false
+```
+
+.
+- ```
+$element
+```
+
+: The Elementor widget
 
 ### Examples
 
 #### Require all tags to view an Element
 
-This example changes the logic from the WP Fusion settings on an Element to require all of the specified tags, instead of any one of them.
+This example changes the logic from the WP Fusion settings on an Element to require *all* of the specified tags, instead of any one of them.
+
+![](https://wpfusion.com/wp-content/uploads/2018/07/elementor.jpg)
 
 ```
 function my_wpf_elementor_access( $can_access, $element ) {
@@ -2132,7 +2823,12 @@ add_filter( 'wpf_elementor_can_access', 'my_wpf_elementor_access', 10, 2 );
 
 #### Create a custom access rule for a specific element
 
-This example hides an element with ID fa65gh unless the user has Tag X and does not have Tag Y.
+This example hides an element with ID 
+```
+fa65gh
+```
+
+ unless the user **has Tag X** and does **not have Tag Y**.
 
 ```
 function my_wpf_elementor_access_by_id( $can_access, $element ) {
@@ -2170,22 +2866,63 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 #### Parameters
 
-- $rules: An array of post types and their access control rules
+- ```
+$rules
+```
+
+: An array of post types and their access control rules
 
 #### Rule properties
 
 The array properties for the access rules are the same as those saved on an individual post. They are:
 
-- lock_content: (bool) The user must be logged in to access the content
-- allow_tags: (array) The user must have at least one of the specified tags to access the content. Tag IDs must be used if the CRM uses tag IDs. If you’re not sure, use wpf_get_tag_id( $name ) to get the ID.
-- allow_tags_all: (array) The user must have all of the tags to access the content
-- allow_tags_not: (array) The user must have none of the tags to access the content
-- redirect: (int) A post ID to redirect the user to if access is denied. Leave blank to display the Restricted Content Message
-- redirect_url: (string) Optionally specify a remote URL to redirect the user to if access is denied. Will take priority over redirect
+- ```
+lock_content:
+```
+
+ *(bool)* The user must be logged in to access the content
+- ```
+allow_tags
+```
+
+: *(array)* The user must have at least one of the specified tags to access the content. Tag IDs must be used if the CRM uses tag IDs. If you’re not sure, use 
+```
+wpf_get_tag_id( $name )
+```
+
+ to get the ID.
+- ```
+allow_tags_all
+```
+
+: *(array)* The user must have *all* of the tags to access the content
+- ```
+allow_tags_not
+```
+
+: *(array)* The user must have *none* of the tags to access the content
+- ```
+redirect
+```
+
+: *(int)* A post ID to redirect the user to if access is denied. Leave blank to display the [Restricted Content Message](https://wpfusion.com/documentation/getting-started/access-control/#restricted-content-message-vs-redirect)
+- ```
+redirect_url
+```
+
+: *(string)* Optionally specify a remote URL to redirect the user to if access is denied. Will take priority over 
+```
+redirect
+```
 
 ### Examples
 
-The example below will protect a custom post type with slug my_type and redirect the user if they don’t have the required tags.
+The example below will protect a custom post type with slug 
+```
+my_type
+```
+
+ and redirect the user if they don’t have the required tags.
 
 ```
 function wpf_post_type_rules( $rules ) {
@@ -2214,17 +2951,36 @@ add_filter( 'wpf_post_type_rules', 'wpf_post_type_rules' );
 
 ### Overview
 
-This filter lets you register custom meta fields to show up in the Contact Fields list. From there you can map them to a field in your CRM, and sync data either manually using push_user_meta() or automatically by registering the field using wpf_watched_meta_fields.
+This filter lets you register custom meta fields to show up in the Contact Fields list. From there you can map them to a field in your CRM, and sync data either manually using 
+```
+push_user_meta()
+```
+
+ or automatically by registering the field using 
+```
+wpf_watched_meta_fields
+```
+
+.
 
 To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $fields: An array of fields to add
+- ```
+$fields
+```
+
+: An array of fields to add
 
 ### Examples
 
-The example below will add a new field for sync with key primary_membership.
+The example below will add a new field for sync with key 
+```
+primary_membership
+```
+
+.
 
 ```
 function add_custom_meta_field( $meta_fields ) {
@@ -2250,19 +3006,43 @@ add_filter( 'wpf_meta_fields', 'add_custom_meta_field' );
 
 ### Overview
 
-This filter lets you register meta fields in the wp_usermeta table that should always be synced whenever they are modified. This is helpful if you’re updating user data in your own code by using the functions add_user_meta() or update_user_meta().
+This filter lets you register meta fields in the 
+```
+wp_usermeta
+```
+
+ table that should always be synced whenever they are modified. This is helpful if you’re updating user data in your own code by using the functions 
+```
+add_user_meta()
+```
+
+ or 
+```
+update_user_meta()
+```
+
+.
 
 To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $fields: An array of fields to watch
+- ```
+$fields
+```
+
+: An array of fields to watch
 
 ### Examples
 
 #### Watch a custom field and sync changes automatically
 
-The example below will watch for changes in the field my_field_name and sync them.
+The example below will watch for changes in the field 
+```
+my_field_name
+```
+
+ and sync them.
 
 ```
 function my_watch_meta_field( $fields ) {
@@ -2302,6 +3082,7 @@ add_filter( 'wpf_crm_object_type', function( $object_type ) {
 ```
 
 **Note:** As of WP Fusion 3.41.6, it’s now possible to set the object type for Salesforce without a code snippet. The object type can be set from the Object Type dropdown on the Setup tab in the settings.
+![](https://wpfusion.com/wp-content/uploads/2018/08/salesforce-object-type-1024x458.jpg)
 
 #### Zoho
 
@@ -2315,7 +3096,12 @@ add_filter( 'wpf_crm_object_type', function( $object_type ) {
 
 #### Ontraport
 
-Ontraport uses numeric IDs for object types. The default type is 0 for contacts. To override that, pass the ID of your custom object into the filter.
+Ontraport uses numeric IDs for object types. The default type is 
+```
+0
+```
+
+ for contacts. To override that, pass the ID of your custom object into the filter.
 
 ```
 add_filter( 'wpf_crm_object_type', function( $object_type ) {
@@ -2325,16 +3111,16 @@ add_filter( 'wpf_crm_object_type', function( $object_type ) {
 
 ### Can WP Fusion interface with multiple object types at the same time?
 
-The short answer is no.
+**The short answer is no.**
 
-That’s because WP Fusion syncs your WordPress users bidirectionally with the selected object type in your CRM.
+That’s because WP Fusion syncs your WordPress users *bidirectionally* with the selected object type in your CRM.
 
 That’s usually Contacts, but could also be Leads or a custom object type.
 
 If you take a hypothetical scenario where WP Fusion is configured to sync with both Contacts and Leads at the same time:
 
 - A new Lead is created in Zoho CRM
-- A webhook syncs the Lead back to a new WordPress user account
+- A [webhook](https://wpfusion.com/documentation/webhooks/zoho-webhooks/) syncs the Lead back to a new WordPress user account
 - The user updates their profile, which creates a Contact in Zoho
 - Now you have two duplicate records, one Lead and one Contact, both linked to the same WordPress user
 
@@ -2350,7 +3136,7 @@ And it will slow down your WordPress site having WP Fusion constantly connecting
 
 #### Conditionally switching object types
 
-An exception to that is switching the object type temporarily, just for certain operations.
+**An exception to that is switching the object type temporarily**, just for certain operations.
 
 For example maybe you have WP Fusion syncing your users bidirectionally with Contacts in your CRM, but you want all Gravity Form submissions to create a new Lead (with a one-way sync).
 
@@ -2376,7 +3162,7 @@ function my_gform_after_submission( $entry, $form ) {
 add_action( 'gform_after_submission_1', 'my_gform_after_submission', 10, 2 );
 ```
 
-This example runs after a Gravity Form has been submitted and then creates a new lead with the submitted form data, using the add_object() method.
+This example runs after a Gravity Form has been submitted and then creates a new lead with the submitted form data, using the [add_object() method](https://wpfusion.com/documentation/functions/add_object/).
 
 For another example with Salesforce, see this Gist:
 
@@ -2386,10 +3172,10 @@ Implementing a custom object switching solution with WP Fusion is usually a comp
 
 In some cases it’s better to use a different plugin for your custom objects, and let WP Fusion focus on the bi-directional sync of your user and customer data.
 
-- For creating or updating additional objects when Contacts are updated, we recommend using Salesforce Flows. See the tutorial here.
-- For syncing custom post types with Salesforce objects, we recommend Object Sync for Salesforce.
-- For syncing WooCommerce orders with Salesforce orders, we recommend WooCommerce Salesforce Integration by CRM Perks.
-- Gravity Forms Salesforce can be installed through the WordPress plugin directory. It is quite powerful, as it can send form submissions from your WordPress site to Salesforce as whatever object you need. It’s important to mention that this works for any form created with the Gravity Forms plugin. It’s also important to mention that this does not sync data back from Salesforce into WordPress.
+- For creating or updating additional objects when Contacts are updated, we recommend using Salesforce Flows. [See the tutorial here](https://wpfusion.com/tutorials/syncing-wp-fusion-with-multiple-objects-in-salesforce-the-events-calendar-example/).
+- For syncing custom post types with Salesforce objects, we recommend [Object Sync for Salesforce](https://wordpress.org/plugins/object-sync-for-salesforce/).
+- For syncing WooCommerce orders with Salesforce orders, we recommend [WooCommerce Salesforce Integration by CRM Perks](https://wordpress.org/plugins/woo-salesforce-plugin-crm-perks/).
+- [Gravity Forms Salesforce](https://wordpress.org/plugins/gf-salesforce-crmperks/) can be installed through the WordPress plugin directory. It is quite powerful, as it can send form submissions from your WordPress site to Salesforce as whatever object you need. It’s important to mention that this works for any form created with the [Gravity Forms](http://www.gravityforms.com/) plugin. It’s also important to mention that this does not sync data back from Salesforce into WordPress.
 
 ---
 
@@ -2403,20 +3189,53 @@ This filter allows you to modify any user meta data captured at registration, be
 
 #### Parameters
 
-- $user_meta: Array of user meta data collected at registration, in the format array('meta_field' => 'value').
-- $user_id: ID for the user being updated.
+- ```
+$user_meta
+```
+
+: Array of user meta data collected at registration, in the format 
+```
+array('meta_field' => 'value')
+```
+
+.
+- ```
+$user_id
+```
+
+: ID for the user being updated.
 
 ### Examples
 
 #### Correct an invalid input field name on a registration form
 
-Some plugins allow you to add custom fields to registration forms via code, but the “name” value on the input isn’t the same as the meta field in the database (or the meta field enabled for sync in the Contact Fields list).
+Some plugins allow you to add custom fields to registration forms via code, but the “name” value on the input isn’t the same as the meta field in the database (or the meta field enabled for sync in the [Contact Fields list](https://wpfusion.com/videos/tutorials/mapping-and-syncing-contact-fields/)).
 
-For example, you may have added the field my_custom_field to the form (i.e. <input type="text" name="my_custom_field">, but in the database (and WP Fusion’s Contact Fields settings) the field is myplugin_my_custom_field.
+For example, you may have added the field 
+```
+my_custom_field
+```
+
+ to the form (i.e. 
+```
+<input type="text" name="my_custom_field">
+```
+
+, but in the database (and WP Fusion’s Contact Fields settings) the field is 
+```
+myplugin_my_custom_field
+```
+
+.
 
 Since WP Fusion is looking for the meta key value as it’s set in the database, it won’t be detected on the registration form.
 
-To correct this, you can use the wpf_user_register filter like so:
+To correct this, you can use the 
+```
+wpf_user_register
+```
+
+ filter like so:
 
 ```
 function my_wpf_filter_registration( $user_meta, $user_id ) {
@@ -2434,9 +3253,19 @@ add_filter( 'wpf_user_register', 'my_wpf_filter_registration', 10, 2 );
 
 #### Preventing a user from being synced to the CRM
 
-If you return null from the wpf_user_register filter, WP Fusion will not create a contact record in your CRM.
+If you return 
+```
+null
+```
 
-In this example we prevent a contact record from being created at registration if the user has the author role:
+ from the 
+```
+wpf_user_register
+```
+
+ filter, WP Fusion will not create a contact record in your CRM.
+
+In this example we prevent a contact record from being created at registration if the user has the *author* role:
 
 ```
 function my_wpf_filter_registration( $user_meta, $user_id ) {
@@ -2466,14 +3295,37 @@ This filter allows you to modify user meta data before it’s sent to your CRM.�
 
 #### Parameters
 
-- $user_meta: Array of user meta data, in the format array('meta_field' => 'value').
-- $user_id: ID for the user being updated.
+- ```
+$user_meta
+```
+
+: Array of user meta data, in the format 
+```
+array('meta_field' => 'value')
+```
+
+.
+- ```
+$user_id
+```
+
+: ID for the user being updated.
 
 ### Examples
 
 #### Save the full URL to a user’s profile photo
 
-If you’re using Ultimate Member to run your site’s membership platform, and want to save a link to the user’s profile photo in your CRM, you’ll find that just syncing the profile_photo field gives you the name of the file, but not the full URL. Using wpf_user_update, we can modify this so the full URL to the user’s profile is sent.
+If you’re using [Ultimate Member](https://wpfusion.com/documentation/integrations/ultimate-member/) to run your site’s membership platform, and want to save a link to the user’s profile photo in your CRM, you’ll find that just syncing the 
+```
+profile_photo
+```
+
+ field gives you the name of the file, but not the full URL. Using 
+```
+wpf_user_update
+```
+
+, we can modify this so the full URL to the user’s profile is sent.
 
 ```
 function set_profile_photo_url( $user_meta, $user_id ) {
@@ -2492,7 +3344,17 @@ add_filter( 'wpf_user_update', 'set_profile_photo_url', 10, 2 );
 
 #### Sync a role title instead of role slug
 
-This example converts the role slug volunteer_both to “Volunteer” when the role field is being synced to the CRM, either during a profile update or new user registration (via the wpf_user_register filter).
+This example converts the role slug 
+```
+volunteer_both
+```
+
+ to “Volunteer” when the 
+```
+role
+```
+
+ field is being synced to the CRM, either during a profile update or new user registration (via the [wpf_user_register filter](https://wpfusion.com/documentation/filters/wpf_user_register/)).
 
 ```
 function volunteer_role( $user_meta, $user_id ) {
@@ -2513,7 +3375,12 @@ add_filter( 'wpf_user_update', 'volunteer_role', 10, 2 );
 
 With Constant Contact, Customer.io, Encharge, FluentCRM, Groundhogg, HubSpot, Infusionsoft / Keap, and Ontraport, WP Fusion is able to create new tags by sending an API call.
 
-This snippet looks for a custom field value in the user’s submitted data, in the field custom_field_key. If an existing tag is found with that value, the tag will be applied. If not, an API call is sent to the CRM to create the tag, and then the tag is applied.
+This snippet looks for a custom field value in the user’s submitted data, in the field 
+```
+custom_field_key
+```
+
+. If an existing tag is found with that value, the tag will be applied. If not, an API call is sent to the CRM to create the tag, and then the tag is applied.
 
 ```
 function create_tags_from_field_values( $user_meta, $user_id ) {
@@ -2558,8 +3425,21 @@ This filter allows you to modify a user’s meta data whenever it has been pulle
 
 #### Parameters
 
-- $user_meta: Array of user meta data, in the format array('meta_field' => 'value').
-- $user_id: ID of the user being updated
+- ```
+$user_meta
+```
+
+: Array of user meta data, in the format 
+```
+array('meta_field' => 'value')
+```
+
+.
+- ```
+$user_id
+```
+
+: ID of the user being updated
 
 ### Examples
 
@@ -2601,9 +3481,14 @@ add_filter( 'wpf_pulled_user_meta', 'limit_loaded_metadata', 10, 2 );
 
 #### Convert a role title to a role slug
 
-This example is the inverse of the example on the wpf_user_update documentation page.
+This example is the inverse of the example on the [wpf_user_update documentation page](https://wpfusion.com/documentation/filters/wpf_user_update/).
 
-When a role “Volunteer” is loaded from the CRM, this converts it to the role slug volunteer_both, so that the role is properly set for the user.
+When a role “Volunteer” is loaded from the CRM, this converts it to the role slug 
+```
+volunteer_both
+```
+
+, so that the role is properly set for the user.
 
 ```
 function set_volunteer_role( $user_meta, $user_id ) {
@@ -2627,18 +3512,26 @@ add_filter( 'wpf_pulled_user_meta', 'set_volunteer_role', 10, 2 );
 
 ### Overview
 
-This filter is run when a user is redirected from a restricted post or page. It can be used to override the redirect configured in the WP Fusion meta box. To use the code examples below, add them to your active theme’s functions.php file.
+This filter is run when a user is redirected from a restricted post or page. It can be used to override the redirect configured in the [WP Fusion meta box](https://wpfusion.com/documentation/getting-started/meta-box/). To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $redirect: Represents the URL the user will be redirected to.
-- $post_id: Post ID for the post being requested.
+- ```
+$redirect
+```
+
+: Represents the URL the user will be redirected to.
+- ```
+$post_id
+```
+
+: Post ID for the post being requested.
 
 ### Examples
 
 #### Send logged out users to a login page, and send logged-in users to upsell pages based on their applied tags
 
-Say you have a page, “Level 2 Membership Content”. This page has “Restrict Access” checked and requires the “Level 2 Member” tag to view the page. Configure the redirect in the meta box settings on the “Level 2 Membership Content” page to point your login page.
+Say you have a page, “Level 2 Membership Content”. This page has “Restrict Access” checked and requires the “Level 2 Member” tag to view the page. Configure the redirect in the [meta box settings](https://wpfusion.com/documentation/getting-started/meta-box/) on the “Level 2 Membership Content” page to point your login page.
 
 This will redirect all users who either don’t have the “Level 2 Member” tag, or any logged out users, to the login page. However if a user is already logged in, we may want to modify the redirect depending on their membership level.
 
@@ -2680,10 +3573,10 @@ This filter is run when determining whether a user can access any piece of conte
 - Posts
 - Pages
 - Custom post types
-- Widgets
-- Content protected by shortcodes
-- Gutenberg Blocks
-- Page builder modules (like Beaver Builder, Elementor, Oxygen, and Divi)
+- [Widgets](https://wpfusion.com/documentation/getting-started/showing-and-hiding-widgets/)
+- Content protected [by shortcodes](https://wpfusion.com/documentation/getting-started/shortcodes/)
+- [Gutenberg Blocks](https://wpfusion.com/documentation/page-builders/gutenberg/)
+- Page builder modules (like [Beaver Builder](https://wpfusion.com/documentation/page-builders/beaver-builder/), [Elementor](https://wpfusion.com/documentation/page-builders/elementor/), [Oxygen](https://wpfusion.com/documentation/page-builders/oxygen/), and [Divi](https://wpfusion.com/documentation/page-builders/divi/))
 
 You can use this filter to create your own dynamic access rules based on criteria that aren’t available through WP Fusion’s meta boxes.
 
@@ -2691,16 +3584,64 @@ To use the code examples below, add them to your active theme’s functions.php 
 
 #### Parameters
 
-- $can_access: This variable represents whether or not the user can access the content, as determined by your existing access rules. It will either be true or false.
-- $user_id: ID of the current logged in user. Will be false if the user isn’t logged in.
-- $post_id: Post ID for the post being requested. Will be false if the item isn’t a post (for example a Gutenberg block)
+- ```
+$can_access
+```
+
+: This variable represents whether or not the user can access the content, as determined by your existing access rules. It will either be 
+```
+true
+```
+
+ or 
+```
+false
+```
+
+.
+- ```
+$user_id
+```
+
+: ID of the current logged in user. Will be 
+```
+false
+```
+
+ if the user isn’t logged in.
+- ```
+$post_id
+```
+
+: Post ID for the post being requested. Will be 
+```
+false
+```
+
+ if the item isn’t a post (for example [a Gutenberg block](https://wpfusion.com/documentation/page-builders/gutenberg/))
 
 ### See also
 
-- wpf_user_can_access_post_type: Runs on a post type, in conjunction with wpf_post_type_rules
-- wpf_user_can_access_archive: Runs on a taxonomy term ID instead of a post ID, determines if a user has access to a term archive
-- wpf_user_can_access_widget: Runs on widgets
-- wpf_user_can_access_block: Runs on Gutenberg blocks
+- ```
+wpf_user_can_access_post_type
+```
+
+: Runs on a post type, in conjunction with [wpf_post_type_rules](https://wpfusion.com/documentation/filters/wpf_post_type_rules/)
+- ```
+wpf_user_can_access_archive
+```
+
+: Runs on a taxonomy term ID instead of a post ID, determines if a user has access to a term archive
+- ```
+wpf_user_can_access_widget
+```
+
+: Runs on widgets
+- ```
+wpf_user_can_access_block
+```
+
+: Runs on Gutenberg blocks
 
 ### Examples
 
@@ -2745,9 +3686,9 @@ add_filter( 'wpf_user_can_access', 'disallow_before_date_published', 10, 3 );
 
 #### Restrict past content by date tag applied
 
-As an alternative, you can track the date that a specific tag was applied (for example Paying Member) using the wpf_tags_applied action, and then deny access to any content published before that tag was applied.
+As an alternative, you can track the date that a specific tag was applied (for example *Paying Member*) using the [wpf_tags_applied](https://wpfusion.com/documentation/actions/wpf_tags_modified/) action, and then deny access to any content published before that tag was applied.
 
-This is similar to the functionality with the Restrict Past Content addon by Restrict Content Pro.
+This is similar to the functionality with the [Restrict Past Content addon by Restrict Content Pro](https://restrictcontentpro.com/downloads/restrict-past-content/).
 
 ```
 function disallow_before_date_published_alt( $can_access, $user_id, $post_id ) {
@@ -2782,9 +3723,14 @@ add_action( 'wpf_tags_applied', 'update_tag_applied_timestamp', 10, 2 );
 
 #### Restrict content by a user’s age
 
-In this example, any post protected by the tag Adult will require the user to be 18 years old or older to view the post.
+In this example, any post protected by the tag *Adult* will require the user to be 18 years old or older to view the post.
 
-For this to work you need to collect the user’s birthday in the date_of_birth usermeta field.
+For this to work you need to collect the user’s birthday in the 
+```
+date_of_birth
+```
+
+ usermeta field.
 
 ```
 function restrict_content_by_age( $can_access, $user_id, $post_id ) {
@@ -2835,9 +3781,9 @@ add_filter( 'wpf_user_can_access', 'restrict_content_by_age', 10, 3 );
 
 #### Requiring an onboarding course completion before accessing the rest of the site
 
-This example uses the presence of an Onboarded tag to lock all content on the site until the user has completed a LearnDash course with ID 123.
+This example uses the presence of an *Onboarded* tag to lock all content on the site until the user has completed a LearnDash course with ID 123.
 
-Configure the LearnDash course to apply the Onboarded tag when it’s marked complete, and the rest of the site content will then be unlocked.
+[Configure the LearnDash course](https://wpfusion.com/documentation/learning-management/learndash/) to apply the *Onboarded* tag when it’s marked complete, and the rest of the site content will then be unlocked.
 
 ```
 function require_onboarding( $can_access, $user_id, $post_id ) {
@@ -2858,7 +3804,17 @@ add_filter( 'wpf_user_can_access', 'require_onboarding', 10, 3 );
 
 #### Unlock content based on a user role or capability
 
-This example unlocks all content when the user has the capability edit_others_posts. It can also accept a role, for example editor.
+This example unlocks all content when the user has the capability 
+```
+edit_others_posts
+```
+
+. It can also accept a role, for example 
+```
+editor
+```
+
+.
 
 ```
 function allow_access_for_capability( $can_access, $user_id, $post_id ) {
@@ -2896,11 +3852,16 @@ add_filter( 'wpf_user_can_access', 'unlock_for_fb_referral', 10, 3 );
 
 #### Bypass query filtering on a specific post
 
-When WP Fusion’s query filtering is enabled, any posts that a user doesn’t have access to will be completely hidden from your site, including all listings, course grids, navigation, archives, etc.
+When WP Fusion’s [query filtering](https://wpfusion.com/documentation/getting-started/access-control/#filter-queries) is enabled, any posts that a user doesn’t have access to will be completely hidden from your site, including all listings, course grids, navigation, archives, etc.
 
 There may be cases when you want to exclude a single post from being hidden. For example you might want to show a restricted course in your course catalog, so that when the user clicks on it they’re redirected to a sales page.
 
-By checking if the pre_get_posts action is currently running, we can tell if WP Fusion is filtering the query results, and exclude specific items from being hidden. In this example the post with ID 123 is excluded if the current user has the tag “Group A”.
+By checking if the 
+```
+pre_get_posts
+```
+
+ action is currently running, we can tell if WP Fusion is filtering the query results, and exclude specific items from being hidden. In this example the post with ID 123 is excluded if the current user has the tag “Group A”.
 
 ```
 function bypass_query_filtering( $can_access, $user_id, $post_id ) {

@@ -14,9 +14,21 @@ This action is triggered whenever WP Fusion has created a new contact record in 
 
 #### Parameters
 
-- $user_id: The user ID
-- $contact_id: The ID of the contact that was created in the CRM
-- $user_meta: The metadata that was synced to the CRM
+- ```
+$user_id
+```
+
+: The user ID
+- ```
+$contact_id
+```
+
+: The ID of the contact that was created in the CRM
+- ```
+$user_meta
+```
+
+: The metadata that was synced to the CRM
 
 ### Examples
 
@@ -46,7 +58,7 @@ This action is triggered after WP Fusion has loaded the CRM integration module f
 
 It passes the active CRM by reference and allows you to modify properties of the active CRM.
 
-Note: This action will not fire if WP Fusion is not connected to a CRM.
+**Note:**This action will not fire if WP Fusion is not connected to a CRM.
 
 ### Examples
 
@@ -64,7 +76,12 @@ add_action( 'wp_fusion_init_crm', 'wpf_whitelabel_crm' );
 
 #### Change the View in CRM links
 
-This example changes the View in CRM links across the WP Fusion UI. The %s will be replaced by the contact ID of the relevant contact.
+This example changes the *View in CRM* links across the WP Fusion UI. The 
+```
+%s
+```
+
+ will be replaced by the contact ID of the relevant contact.
 
 ```
 function wpf_rewrite_view_in_crm_links( &$crm ) {
@@ -75,7 +92,7 @@ add_action( 'wp_fusion_init_crm', 'wpf_rewrite_view_in_crm_links' );
 
 #### Use a custom OAuth app
 
-For swapping out WP Fusion’s built in OAuth client IDs in order to connect to your own OAuth app, see this tutorial.
+For swapping out WP Fusion’s built in OAuth client IDs in order to connect to your own OAuth app, [see this tutorial](https://wpfusion.com/documentation/advanced-developer-tutorials/how-to-use-a-custom-client-id-for-authentication/).
 
 ```
 function set_custom_zoho_app( &$crm ) {
@@ -96,26 +113,60 @@ add_action( 'wp_fusion_init_crm', 'set_custom_zoho_app' );
 
 ### Overview
 
-This action is run when WP Fusion has finished processing a form entry from one of our supported form plugins.
+This action is run when WP Fusion has finished processing a form entry from one of our [supported form plugins](https://wpfusion.com/documentation/#lead-generation).
 
-It can be used to perform additional actions with the contact ID that was created in your CRM, for example triggering an event, or updating a note/opportunity.
+It can be used to perform additional actions with the contact ID that was created in your CRM, for example [triggering an event](https://wpfusion.com/documentation/crm-specific-docs/activecampaign-event-tracking/), or updating a note/opportunity.
 
 To use the code examples below, add them to your active theme’s functions.php file.
 
 #### Parameters
 
-- $update_data (array): This is an array of data that was synced to the CRM
-- $user_id (int): The user who submitted the form, 0 if a guest
-- $contact_id (string): The ID of the contact record created / updated by the form submission
-- $form_id (int): The ID of the submitted form
+- ```
+$update_data
+```
+
+ *(array)*: This is an array of data that was synced to the CRM
+- ```
+$user_id
+```
+
+ *(int)*: The user who submitted the form, 
+```
+0
+```
+
+ if a guest
+- ```
+$contact_id
+```
+
+ *(string)*: The ID of the contact record created / updated by the form submission
+- ```
+$form_id
+```
+
+ *(int)*: The ID of the submitted form
 
 ### Examples
 
 #### Redirect an Elementor forms submission to an auto-login URL on another site
 
-This example runs when an Elementor form is submitted and overrides the form’s redirect to https://siteb.com/?cid=Xwhere X is the ID of the contact record that was just created or updated by WP Fusion.
+This example runs when an Elementor form is submitted and overrides the form’s redirect to 
+```
+https://siteb.com/?cid=X
+```
 
-This redirect will then start an auto-login session for that contact on https://siteb.com
+where 
+```
+X
+```
+
+ is the ID of the contact record that was just created or updated by WP Fusion.
+
+This redirect will then start an [auto-login session](https://wpfusion.com/documentation/tutorials/auto-login-links/) for that contact on 
+```
+https://siteb.com
+```
 
 ```
 function wpf_custom_redirect( $update_data, $user_id, $contact_id, $form_id ) {
@@ -138,7 +189,7 @@ add_action( 'wpf_forms_post_submission', 'wpf_custom_redirect', 10, 4 );
 
 #### Assign points to the contact in Mautic after a form is submitted
 
-This example adds 10 points to a contact in Mautic after they submit any form configured with WP Fusion.
+This example adds 10 [points](https://docs.mautic.org/en/points) to a contact in Mautic after they submit any form configured with WP Fusion.
 
 ```
 function add_points_in_mautic( $update_data, $user_id, $contact_id, $form_id ) {
@@ -163,17 +214,32 @@ add_action( 'wpf_forms_post_submission', 'add_points_in_mautic', 10, 4 );
 
 ### Overview
 
-This action is triggered after WP Fusion has loaded (specifically on the init hook at priority 0).
+This action is triggered after WP Fusion has loaded (specifically on the 
+```
+init
+```
+
+ hook at priority 
+```
+0
+```
+
+).
 
 It can be used to initialize any functionality that depends on WP Fusion.
 
-Note: This action will not fire if WP Fusion is not connected to a CRM.
+**Note:**This action will not fire if WP Fusion is not connected to a CRM.
 
 ### Examples
 
 #### Register an additional order status for sync
 
-This example registers a custom WooCommerce order status tbh-unpaid for sync with your CRM.
+This example [registers a custom WooCommerce order status](https://wpfusion.com/documentation/ecommerce/woocommerce/#register-additional-statuses-for-sync) 
+```
+tbh-unpaid
+```
+
+ for sync with your CRM.
 
 ```
 function wpf_add_custom_order_status() {
@@ -197,9 +263,21 @@ This action is triggered whenever WP Fusion has synced metadata to the CRM for a
 
 #### Parameters
 
-- $user_id: The user ID
-- $contact_id: The ID of the contact that was updated in the CRM
-- $user_meta: The metadata that was synced to the CRM
+- ```
+$user_id
+```
+
+: The user ID
+- ```
+$contact_id
+```
+
+: The ID of the contact that was updated in the CRM
+- ```
+$user_meta
+```
+
+: The metadata that was synced to the CRM
 
 ### Examples
 
@@ -228,14 +306,27 @@ This action is triggered whenever WP Fusion has completed processing a WooCommer
 
 #### Parameters
 
-- $order_id: (int) The order ID
-- $contact_id: (string) The contact ID that was created or updated at checkout
+- ```
+$order_id
+```
+
+: *(int)* The order ID
+- ```
+$contact_id
+```
+
+: (*string)* The contact ID that was created or updated at checkout
 
 ### Examples
 
 #### Send a custom field to your CRM
 
-The example below will update a custom field in the CRM (with key order_total) with the order total after an order has been placed.
+The example below will update a custom field in the CRM (with key 
+```
+order_total
+```
+
+) with the order total after an order has been placed.
 
 ```
 function my_woo_payment_complete( $order_id, $contact_id ) {
@@ -260,12 +351,20 @@ add_action( 'wpf_woocommerce_payment_complete', 'my_woo_payment_complete', 10, 2
 
 ### Overview
 
-This action is triggered whenever a new user is imported from your CRM (usually via a webhook), and after the user account has been created.
+This action is triggered whenever a new user is imported from your CRM (usually via a [webhook](https://wpfusion.com/documentation/tutorials/webhooks/)), and after the user account has been created.
 
 #### Parameters
 
-- $user_id: The user ID of the newly created user
-- $user_meta: The meta data imported with the new user
+- ```
+$user_id
+```
+
+: The user ID of the newly created user
+- ```
+$user_meta
+```
+
+: The meta data imported with the new user
 
 ### Examples
 
@@ -291,7 +390,12 @@ add_action( 'wpf_user_imported', 'my_import_notification', 10, 2 );
 
 #### Apply a tag
 
-The example below will apply a tag with ID 123 to any new user after they’ve been successfully imported.
+The example below will apply a tag with ID 
+```
+123
+```
+
+ to any new user after they’ve been successfully imported.
 
 ```
 function my_import_tag( $user_id, $user_meta ) {
@@ -315,8 +419,16 @@ This action is triggered whenever updated meta data is loaded from a CRM contact
 
 #### Parameters
 
-- $user_id: The user ID
-- $user_meta: An array of meta fields loaded from the CRM
+- ```
+$user_id
+```
+
+: The user ID
+- ```
+$user_meta
+```
+
+: An array of meta fields loaded from the CRM
 
 ### Examples
 
@@ -350,13 +462,29 @@ This action is triggered whenever a user’s tags are modified.
 
 #### Parameters
 
-- $user_id: The user ID
-- $user_tags: An array of all of the user’s current tags
+- ```
+$user_id
+```
+
+: The user ID
+- ```
+$user_tags
+```
+
+: An array of all of the user’s current tags
 
 ### See also
 
-- wpf_tags_applied: Triggered whenever tags are added to a user
-- wpf_tags_removed: Triggered whenever tags are removed from a user
+- ```
+wpf_tags_applied
+```
+
+: Triggered whenever tags are added to a user
+- ```
+wpf_tags_removed
+```
+
+: Triggered whenever tags are removed from a user
 
 ### Examples
 
@@ -364,7 +492,7 @@ This action is triggered whenever a user’s tags are modified.
 
 WP Fusion includes a lot of interfaces for applying tags, but because removing tags is less common most of our integrations don’t include options for removing tags.
 
-This example removes the tag Pending Signup when the tag Profile Complete is applied.
+This example removes the tag *Pending Signup* when the tag *Profile Complete* is applied.
 
 ```
 function remove_pending_signup_tag( $user_id, $tags_applied ) {
@@ -383,7 +511,7 @@ add_action( 'wpf_tags_applied', 'remove_pending_signup_tag', 10, 2 );
 
 #### Debug a tag change
 
-This example writes a backtrace to the WP Fusion logs to figure out where a tag change came from.
+This example writes a backtrace to the [WP Fusion logs](https://wpfusion.com/documentation/getting-started/activity-logs/) to figure out where a tag change came from.
 
 It can be especially helpful when using a CRM on the same site like FluentCRM or Groundhogg, as you can see what page or automation triggered the tag change.
 
@@ -399,7 +527,14 @@ function debug_tags_modified( $user_id, $user_tags ) {
 add_action( 'wpf_tags_modified', 'debug_tags_modified', 10, 2 );
 ```
 
-This example limits the logging to administrators (users with the manage_options capability), but it could also be adjusted to look for specific user IDs, contact IDs, or tag IDs.
+This example limits the logging to administrators (users with the 
+```
+manage_options
+```
+
+ capability), but it could also be adjusted to look for specific user IDs, contact IDs, or tag IDs.
+
+![](https://wpfusion.com/wp-content/uploads/2016/11/tags-modified-debug-backtrace-1024x494.jpeg)
 
 ---
 

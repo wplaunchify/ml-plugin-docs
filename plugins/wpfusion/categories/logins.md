@@ -10,22 +10,29 @@
 
 ### Overview
 
-WP Fusion’s Logins Addon includes additional login tracking features specific to BuddyBoss and the BuddyBoss App.
+WP Fusion’s [Logins Addon](https://wpfusion.com/documentation/logins/overview/) includes additional login tracking features specific to [BuddyBoss](https://wpfusion.com/documentation/membership/buddyboss/) and the [BuddyBoss App](https://wpfusion.com/documentation/membership/buddyboss/).
 
-You can apply tags when users first log in to your BuddyBoss app, apply tags when they create an account via Social Login, as well as track the last date they logged in to the app in your CRM.
+You can apply tags when users first log in to your BuddyBoss app, apply tags when they create an account via [Social Login](https://www.buddyboss.com/resources/docs/components/buddyboss-social-login/), as well as track the last date they logged in to the app in your CRM.
 
-WP Fusion’s [Logins Addon](https://wpfusion.com/documentation/logins/overview/) can apply tags in your CRM when users log in to the BuddyBoss app for the first time.
-The First Login to BuddyBoss App and BuddyBoss Social Login Registration settings are found at the bottom of the Logins tab in the WP Fusion settings.
+![Screenshot of WP Fusion's Logins addon BuddyBoss settings](https://wpfusion.com/wp-content/uploads/2024/07/logins-buddyboss-integration-1024x419.jpg)WP Fusion’s [Logins Addon](https://wpfusion.com/documentation/logins/overview/) can apply tags in your CRM when users log in to the BuddyBoss app for the first time.
+The **First Login to BuddyBoss App** and **BuddyBoss Social Login Registration**settings are found at the bottom of the Logins tab in the WP Fusion settings.
 
-By enabling the Last Login – BuddyBoss App field for sync from the Contact Fields list, you can track the last time users logged into the app in your CRM. This is a great way to get a sense of your most active app users.
+![screenshot](https://wpfusion.com/wp-content/uploads/2021/02/buddyboss-app-login-tracking-1024x370.jpg)
+
+By enabling the **Last Login – BuddyBoss App** field for sync from the [Contact Fields list](https://wpfusion.com/documentation/getting-started/syncing-contact-fields/), you can track the last time users logged into the app in your CRM. This is a great way to get a sense of your most active app users.
 
 ### How it works
 
-App login tracking can work two ways, depending on if you’ve selected to track logins “When a user actually logs in” vs. “Once a day on site visit”. For more information see the Login Count Method.
+App login tracking can work two ways, depending on if you’ve selected to track logins “When a user actually logs in” vs. “Once a day on site visit”. For more information see the [Login Count Method](https://wpfusion.com/documentation/logins/overview/#login-count-method).
 
-If set to Once a day on site visit WP Fusion will track each user’s interactions with the BuddyBoss app. If there has been no activity on the current day, then the timestamp will be saved to the database, and the last login date will be synced. When the user returns the next day (or any other day), WP Fusion compares the current date to the saved value and only syncs the time to your CRM if it’s a different date.
+If set to **Once a day on site visit** WP Fusion will track each user’s interactions with the BuddyBoss app. If there has been no activity on the current day, then the timestamp will be saved to the database, and the last login date will be synced. When the user returns the next day (or any other day), WP Fusion compares the current date to the saved value and only syncs the time to your CRM if it’s a different date.
 
-If set to When a user logs in, WP Fusion will track BuddyBoss app logins by looking at each user’s _bbapp_jwt_jti meta key, which BuddyBoss uses to track user logins and devices using the app.
+If set to **When a user logs in**, WP Fusion will track BuddyBoss app logins by looking at each user’s 
+```
+_bbapp_jwt_jti
+```
+
+ meta key, which BuddyBoss uses to track user logins and devices using the app.
 
 When the user’s login date is updated, indicating a new login, WP Fusion will sync the date and time to your CRM.
 
@@ -43,21 +50,25 @@ When WooCommerce is active, the Logins addon will bypass any login redirects on 
 
 ### Order received page redirects
 
-In addition, there is an option added to the Logins tab in the WP Fusion settings for WooCommerce Redirects. When enabled, this allows you to run login redirect rules on the Order Received page after someone has finished checking out in your store.
+In addition, there is an option added to the Logins tab in the WP Fusion settings for **WooCommerce Redirects.** When enabled, this allows you to run login redirect rules on the Order Received page after someone has finished checking out in your store.
+
+![](https://wpfusion.com/wp-content/uploads/2020/03/logins-woocommerce-1024x242.jpg)
 
 Using this option you can redirect customers to custom pages based on tags applied at checkout.
 
-Note: For best results it’s recommended to turn off Asynchronous Checkout from the Integrations tab in the WP Fusion settings, so that all tags have been applied by the time any redirects are triggered.
+**Note:** For best results it’s recommended to turn off *Asynchronous Checkout* from the Integrations tab in the WP Fusion settings, so that all tags have been applied by the time any redirects are triggered.
 
 #### Example
 
 Here’s one example configuration, using the login redirect rules editor.
 
+![](https://wpfusion.com/wp-content/uploads/2020/03/logins-woocommerce-example-1024x285.jpg)
+
 In this example:
 
-- If someone has purchased from you and is logged in for the first time, and the General Membership tag was applied, they will be redirected to the New Member Welcome page.
-- If someone was tagged with Event Purchaser they will be redirected to the Event Details page.
-- If someone is tagged with Profile Incomplete they will be redirected to the Edit Your Profile page.
+- If someone has purchased from you and is logged in for the first time, and the *General Membership* tag was applied, they will be redirected to the New Member Welcome page.
+- If someone was tagged with *Event Purchaser* they will be redirected to the Event Details page.
+- If someone is tagged with *Profile Incomplete* they will be redirected to the Edit Your Profile page.
 
 #### A warning
 
@@ -73,24 +84,54 @@ If you’re using Google Analytics or the Facebook pixel to track conversions, y
 
 #### #1.4.1 - 1/13/2025
 
-- ✨ New Added option to apply tags when a user registers via BuddyBoss social login
+- ✨ New Added option to apply tags when a user registers via [BuddyBoss social login](https://www.buddyboss.com/resources/docs/components/buddyboss-social-login/)
 - ⚡️ Improved If login tracking is set to "Once a day on site visit", the last login date will now also be synced for the BuddyBoss app once per day on app engagement
-- 🔧 Fixed Fixed PHP warning Attempt to read property "ID" on false if the wp_login hook was fired on an invalid username
+- 🔧 Fixed Fixed PHP warning 
+```
+Attempt to read property "ID" on false
+```
+
+ if the 
+```
+wp_login
+```
+
+ hook was fired on an invalid username
 
 #### #1.4.0 - 7/31/2024
 
-- ✨ New Added support for tracking BuddyBoss App logins
+- ✨ New Added support for [tracking BuddyBoss App logins](https://wpfusion.com/documentation/logins/logins-buddyboss-app/)
 - ✨ New Added support for login redirects with Bricks login forms
-- ⚡️ Improved Some plugins sloppily trigger wp_login twice during a single login. The login count will now only be updated on the first time
-- ⚡️ Improved Added wpf-logins as the source to the logs for actions triggered by user logins
+- ⚡️ Improved Some plugins sloppily trigger 
+```
+wp_login
+```
+
+ twice during a single login. The login count will now only be updated on the first time
+- ⚡️ Improved Added 
+```
+wpf-logins
+```
+
+ as the source to the logs for actions triggered by user logins
 - 🔧 Fixed Fixed Once A Day On Site Visit setting comparing the user's last login in GMT vs the site's current time in local time, resulting in unnecessary user meta updates
-- 🛠️ Dev Added action wpf_logins_begin_login_actions at the start of the login process (or the once a day login tracking)
+- 🛠️ Dev Added action 
+```
+wpf_logins_begin_login_actions
+```
+
+ at the start of the login process (or the once a day login tracking)
 - 🛠️ Dev Last login date will now be stored in UTC instead of local time, to prevent issues with timezone conversion when syncing to the CRM
 
 #### #1.3.3 - 10/10/2022
 
 - 🔧 Fixed Fixed First Login tags not being applied when the user was auto-logged-in as a result of a WooCommerce checkout
-- 🔧 Fixed Fixed fatal error "Argument #2 ($timestamp) must be of type int, string given" with PHP 8.1+ when an unexpected wpf_last_login date was displayed in the users list
+- 🔧 Fixed Fixed fatal error "Argument #2 ($timestamp) must be of type int, string given" with PHP 8.1+ when an unexpected 
+```
+wpf_last_login
+```
+
+ date was displayed in the users list
 
 #### #1.3.2 - 8/31/2022
 
@@ -103,7 +144,12 @@ If you’re using Google Analytics or the Facebook pixel to track conversions, y
 #### #1.3.0 - 8/9/2022
 
 - ✨ New Added option to enter either a URL *or* page for the Login Count Redirect Rules setting
-- ✨ New Added additional usermeta flag wpf_stale_account to prevent stale account tags being applied to all users when the Apply Tags - Stale Account setting was modified
+- ✨ New Added additional usermeta flag 
+```
+wpf_stale_account
+```
+
+ to prevent stale account tags being applied to all users when the Apply Tags - Stale Account setting was modified
 - ⚡️ Improved The daily query for stale user accounts will now only query users whose last login was within 48 hours of the specified number of days
 - 🔧 Fixed Fixed login redirects happening on WooCommerce login forms
 
@@ -235,51 +281,59 @@ These features give you a better sense of how your users are interacting with yo
 
 The Logins Addon adds a new Logins tab to the main WP Fusion settings where you will find several options.
 
+![](https://wpfusion.com/wp-content/uploads/2018/06/logins-addon-settings-1-1024x840.jpg)
+
 #### First Login / Stale Accounts
 
 There are four options here for tracking first logins and ongoing engagement with your site:
 
-- Apply Tags – First Login: These tags will be applied to a user when they log into your site for the first time. This works for all users who log in for the first time after you’ve installed the Logins Addon. WP Fusion won’t apply these tags to existing users.
-- Apply Tags – Stale Accounts: WP Fusion can track how long it’s been since a user last logged in, and apply tags if they’ve been gone for longer than the specified period. If they log in again after the specified time has passed, the selected tags will be removed.
-- Number of Days: This is the number of days before an account will be considered “stale”.
-- Apply Tags – Recovered Accounts: These tags will be applied if someone logs in to an account that was considered “stale”. If the account becomes stale again, these tags will be removed.
+- **Apply Tags – First Login:**These tags will be applied to a user when they log into your site for the first time. This works for all users who log in for the first time *after* you’ve installed the Logins Addon. WP Fusion won’t apply these tags to existing users.
+- **Apply Tags – Stale Accounts:**WP Fusion can track how long it’s been since a user last logged in, and apply tags if they’ve been gone for longer than the specified period. If they log in again after the specified time has passed, the selected tags will be removed.
+- **Number of Days:**This is the number of days before an account will be considered “stale”.
+- **Apply Tags – Recovered Accounts:**These tags will be applied if someone logs in to an account that was considered “stale”. If the account becomes stale again, these tags will be removed.
 
-Note: If you’re using stale account tracking, it’s best to set the Login Count Method to Once a day on site visit.
+**Note:** If you’re using stale account tracking, it’s best to set the **Login Count Method** to **Once a day on site visit**.
 
-By default WordPress will keep a user logged in for two weeks, so even if someone is visiting the site every day, they might only “log in” once every two weeks, which could cause their account to get tagged as stale if you’re only counting logins as When a user actually logs in
+By default WordPress will keep a user logged in for two weeks, so even if someone is visiting the site every day, they might only “log in” once every two weeks, which could cause their account to get tagged as stale if you’re only counting logins as **When a user actually logs in**
 
 #### Login Count Method
 
 The Logins Addon includes two options for how to qualify a login:
 
-- Once a day on site visit: (Default) This will update the user’s last login date and login count once a day when they visit your site.
-- When a user actually logs in: This will update the user’s last login date and login count when they actually submit a login form with a username and password and log in to your site.
+- **Once a day on site visit:**(Default) This will update the user’s last login date and login count once a day when they visit your site.
+- **When a user actually logs in:**This will update the user’s last login date and login count when they actually submit a login form with a username and password and log in to your site.
 
-While When a user actually logs in is a more accurate measure of how often people are logging in to your site, it will update less frequently as WordPress sets a cookie for logged in users for two weeks, meaning they may visit the site multiple times during that period even though they only “logged in” once.
+While **When a user actually logs in**is a more accurate measure of how often people are logging in to your site, it will update less frequently as WordPress sets a cookie for logged in users for two weeks, meaning they may visit the site multiple times during that period even though they only “logged in” once.
 
 #### Login Count Rules
 
+![](https://wpfusion.com/wp-content/uploads/2018/06/logins-count-1024x222.jpg)
+
 Here you can specify rules based on the number of times someone has logged in.
 
-- On / Every: Choose “On the Nth login” to have the rule run just once when the number of logins has been reached. Choose “Every N logins” to run the rule each time the number has been reached.
-- Required tags: You can make the rule only run if the user has the specified tags.
-- Page: This is the page the user will be redirected to on login.
-- Apply tags: You can specify any tags to be applied to the user when the condition has been met.
-- Login Count Method: Here you can specify how logins should be counted: either when a login form has been submitted, or once a day on site visit.
+- **On / Every:**Choose “On the Nth login” to have the rule run just once when the number of logins has been reached. Choose “Every N logins” to run the rule each time the number has been reached.
+- **Required tags:**You can make the rule only run if the user has the specified tags.
+- **Page:**This is the page the user will be redirected to on login.
+- **Apply tags:**You can specify any tags to be applied to the user when the condition has been met.
+- **Login Count Method:**Here you can specify how logins should be counted: either when a login form has been submitted, or once a day on site visit.
 
 #### Login Redirect Rules
 
 Here you can specify redirects on login based on a user’s tags.
 
+![](https://wpfusion.com/wp-content/uploads/2018/06/logins-redirects-1-1024x172.jpg)
+
 Rules are prioritized from the top down. For each rule, select one or more tags as a trigger. In the redirect dropdown you can either type the name of a page on your site, or enter an external URL.
 
 ### Syncing meta fields
 
-The Logins Addon also adds a new section to the field mapping list under the Contact Fields tab in the WP Fusion settings.
+The Logins Addon also adds a new section to the field mapping list under the [Contact Fields tab](https://wpfusion.com/documentation/getting-started/syncing-contact-fields/) in the WP Fusion settings.
 
-Here you can specify custom fields in your CRM to store the Last Login and Login Count fields. These values will be updated in your CRM each time someone logs in.
+![](https://wpfusion.com/wp-content/uploads/2018/06/logins-fields-1024x168.jpg)
 
-Note: The “Login count” and “Last login date” can only be synced to the CRM and cannot be loaded back. This is to avoid accidentally erasing the login count or loading it from another site.
+Here you can specify custom fields in your CRM to store the **Last Login** and **Login Count** fields. These values will be updated in your CRM each time someone logs in.
+
+**Note:** The “Login count” and “Last login date” can only be synced to the CRM and cannot be loaded back. This is to avoid accidentally erasing the login count or loading it from another site.
 
 ---
 

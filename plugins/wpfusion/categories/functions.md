@@ -18,12 +18,20 @@ This function retrieves an option from the WP Fusion settings based on a given s
 wpf_get_option( $key, $default = false )
 ```
 
-- $key (string) (Required): The settings key to retrieve an option.
-- $default (string) (Optional): The default value to return if no type is found.
+- ```
+$key
+```
+
+ *(string) (Required)*: The settings key to retrieve an option.
+- ```
+$default
+```
+
+ *(string) (Optional)*: The default value to return if no type is found.
 
 #### Return
 
-(mixed) The options value.
+*(mixed)* The options value.
 
 #### Get the option from a settings key
 
@@ -49,7 +57,7 @@ This function checks if the current user is an administrator and if administrato
 
 #### Return
 
-(bool) Whether to do an admin override.
+*(bool)* Whether to do an admin override.
 
 #### Checks the current user
 
@@ -69,7 +77,7 @@ This function gets the default date/time format for syncing with the CRM.
 
 #### Return
 
-(string) The date/time format.
+*(string)* The date/time format.
 
 #### Get the default date/time format
 
@@ -89,7 +97,7 @@ This function checks if WP Fusion is handing a webhook.
 
 #### Return
 
-(bool) Whether WP Fusion is currently handing a webhook.
+*(bool)* Whether WP Fusion is currently handing a webhook.
 
 #### Check if WP Fusion is handing a WebHook
 
@@ -109,7 +117,7 @@ This function checks if the current session is an auto-login session.
 
 #### Return
 
-(bool) Whether the session is an auto-login session.
+*(bool)* Whether the session is an auto-login session.
 
 #### Checks if the session is an auto-login session
 
@@ -125,11 +133,16 @@ $auto_login_session = doing_wpf_auto_login();
 
 ### Overview
 
-This function checks if WP Fusion is in staging mode, true meaning yes.
+This function checks if WP Fusion is in staging mode, 
+```
+true
+```
+
+ meaning yes.
 
 #### Return
 
-(bool) Whether WP Fusion is in staging mode.
+*(bool)* Whether WP Fusion is in staging mode.
 
 #### Checks if WP Fusion is in staging mode
 
@@ -149,7 +162,7 @@ This function retrieves the field name of the primary field that is used for con
 
 #### Return
 
-(string) The field name.
+*(string)* The field name.
 
 #### Get the primary CRM field name
 
@@ -173,11 +186,15 @@ This function checks if a WordPress meta key is a pseudo field and should only b
 wpf_is_pseudo_field( $meta_key )
 ```
 
-- $meta_key (string) (Required): The meta key to check.
+- ```
+$meta_key
+```
+
+ *(string) (Required)*: The meta key to check.
 
 #### Return
 
-(bool) Whether or not the meta key is a pseudo field.
+*(bool)* Whether or not the meta key is a pseudo field.
 
 #### Check if a meta key is a pseudo field
 
@@ -201,12 +218,20 @@ This function retrieves the Field Type on the Contact Fields list for a given fi
 wpf_get_field_type( $meta_key, $default = 'text' )
 ```
 
-- $meta_key (string) (Required): The meta key to retrieve the field type of.
-- $default (string) (Optional): The default value to return if no type is found.
+- ```
+$meta_key
+```
+
+ *(string) (Required)*: The meta key to retrieve the field type of.
+- ```
+$default
+```
+
+ *(string) (Optional)*: The default value to return if no type is found.
 
 #### Return
 
-(string) The field type.
+*(string)* The field type.
 
 #### Get a fields Field Type.
 
@@ -236,11 +261,15 @@ This function checks if a WordPress meta key is enabled for sync with the CRM.
 wpf_is_field_active( $meta_key )
 ```
 
-- $meta_key (array) (Required): The meta key to check.
+- ```
+$meta_key
+```
+
+ *(array) (Required)*: The meta key to check.
 
 #### Return
 
-(bool) Whether or not the field is active.
+*(bool)* Whether or not the field is active.
 
 #### Check if a meta key is enabled
 
@@ -264,12 +293,30 @@ This function retrieves the CRM field ID for a single WordPress meta key.
 wpf_get_crm_field( $meta_key, $default = false )
 ```
 
-- $meta_key (string) (Required): The meta key to retrieve the field ID of.
-- $default (bool) (Optional): The default value to return if no key is found.
+- ```
+$meta_key
+```
+
+ *(string) (Required)*: The meta key to retrieve the field ID of.
+- ```
+$default
+```
+
+ *(bool) (Optional)*: The default value to return if no key is found.
 
 #### Return
 
-(mixed) Returns a string of the CRM field or false if nothing is found.
+*(mixed)* Returns a 
+```
+string
+```
+
+ of the CRM field or 
+```
+false
+```
+
+ if nothing is found.
 
 #### Get a CRM field ID
 
@@ -291,7 +338,12 @@ $contact_id = wpf_get_crm_field( $meta_key, $default = false );
 
 ### Overview
 
-This function retrieves the tag name of a given tag ID as a string, returning false if there is no name.
+This function retrieves the tag name of a given tag ID as a string, returning 
+```
+false
+```
+
+ if there is no name.
 
 #### Parameters
 
@@ -299,11 +351,25 @@ This function retrieves the tag name of a given tag ID as a string, returning fa
 wpf_get_tag_label( $tag_id )
 ```
 
-- $tag_id (int) (Required): The tag id to get the label of.
+- ```
+$tag_id
+```
+
+ *(int) (Required)*: The tag id to get the label of.
 
 #### Return
 
-(mixed) Returns a string of the tag label, or false if nothing is found.
+*(mixed)* Returns a 
+```
+string
+```
+
+ of the tag label, or 
+```
+false
+```
+
+ if nothing is found.
 
 #### Get a tag name
 
@@ -319,7 +385,12 @@ $tag_label = wpf_get_tag_label( $tag_id );
 
 ### Overview
 
-This function retrieves the tag ID of a given tag name as an integer, returning false if there is no ID.
+This function retrieves the tag ID of a given tag name as an integer, returning 
+```
+false
+```
+
+ if there is no ID.
 
 #### Parameters
 
@@ -327,11 +398,25 @@ This function retrieves the tag ID of a given tag name as an integer, returning 
 wpf_get_tag_id( $tag_name )
 ```
 
-- $tag_name (string) (Required): The tag name to search.
+- ```
+$tag_name
+```
+
+ *(string) (Required)*: The tag name to search.
 
 #### Return
 
-(mixed) Returns a string of the tag ID, or false if nothing is found.
+*(mixed)* Returns a 
+```
+string
+```
+
+ of the tag ID, or 
+```
+false
+```
+
+ if nothing is found.
 
 #### Get a tag ID
 
@@ -348,11 +433,12 @@ $tag_id = wpf_get_tag_id( $tag_label );
 ### Overview
 
 This function checks if the current user is logged in to an account.
+
 This function also supports auto-logged-in users.
 
 #### Return
 
-(bool) Whether the user is logged in.
+*(bool)* Whether the user is logged in.
 
 #### Check if the current user is logged in
 
@@ -372,7 +458,12 @@ This function retrieves an array of WordPress user IDs with a saved CRM contact 
 
 #### Return
 
-(array) $user_ids The user IDs.
+*(array)* 
+```
+$user_ids
+```
+
+ The user IDs.
 
 #### Get an array of users with contact IDs
 
@@ -387,7 +478,13 @@ $user_ids = wpf_get_users_with_contact_ids();
 **Source:** [https://wpfusion.com/documentation/functions/wpf_get_user_id/](https://wpfusion.com/documentation/functions/wpf_get_user_id/)
 
 This function retrieves a user’s WordPress user ID based on their CRM contact ID.
-This function will return an integer containing the ID, otherwise it will return false if there is none.
+
+This function will return an integer containing the ID, otherwise it will return 
+```
+false
+```
+
+ if there is none.
 
 #### Parameters
 
@@ -395,11 +492,25 @@ This function will return an integer containing the ID, otherwise it will return
 wpf_get_user_id( $contact_id )
 ```
 
-- $contact_id (string) (Required): The contact ID to search by.
+- ```
+$contact_id
+```
+
+ *(string) (Required)*: The contact ID to search by.
 
 #### Return
 
-(mixed) An int of the user ID, or false if nothing is found.
+*(mixed)* An 
+```
+int
+```
+
+ of the user ID, or 
+```
+false
+```
+
+ if nothing is found.
 
 #### Get the current user’s ID
 
@@ -415,11 +526,21 @@ $user_id = wpf_get_user_id( $contact_id );
 
 ### Overview
 
-This function retrieves the current user’s CRM email address and can also work during an auto-login session.
+This function retrieves the current user’s CRM email address and can also work during [an auto-login session](https://wpfusion.com/documentation/tutorials/auto-login-links/).
 
 #### Return
 
-(mixed) A string of the users email address or false if nothing is found.
+*(mixed)* A 
+```
+string
+```
+
+ of the users email address or 
+```
+false
+```
+
+ if nothing is found.
 
 #### Get the current user’s Email Address
 
@@ -443,11 +564,20 @@ This function returns an array of user IDs that have a specified tag. You can us
 wpf_get_users_with_tag( $tag )
 ```
 
-- $tag (string) (Required): The tag to search.
+- ```
+$tag
+```
+
+ *(string) (Required)*: The tag to search.
 
 #### Return
 
-(array) $user_ids the user IDs with the tag.
+*(array)* 
+```
+$user_ids
+```
+
+ the user IDs with the tag.
 
 #### Get all users with the Member tag
 
@@ -469,11 +599,21 @@ $user_ids = wpf_get_users_with_tag( 123 );
 
 ### Overview
 
-This function works similarly to the wp_get_current_user function, but it will also work during an auto-login session.
+This function works similarly to the [wp_get_current_user function](https://developer.wordpress.org/reference/functions/wp_get_current_user/), but it will also work during [an auto-login session](https://wpfusion.com/documentation/tutorials/auto-login-links/).
 
 #### Return
 
-(WP_User) Returns a WP_User object or false if no user is found.
+*(WP_User)* Returns a 
+```
+WP_User
+```
+
+ object or 
+```
+false
+```
+
+ if no user is found.
 
 #### Get the current user
 
@@ -494,12 +634,20 @@ if ( false !== $user ) {
 
 This helper function is available with Ontraport, Zoho, Salesforce, HubSpot, and other CRMs which use custom objects.
 
-It’s a shortcut / alternative to using the wpf_crm_object_type filter, for cases where you just need to add a custom object one time, without changing the object type used for WP Fusion globally.
+It’s a shortcut / alternative to using the [wpf_crm_object_type filter](https://wpfusion.com/documentation/filters/wpf_crm_object_type/), for cases where you just need to add a custom object one time, without changing the object type used for WP Fusion globally.
 
 ### Parameters
 
-- $data: (array) An associative array of data to sync to the CRM, using CRM field IDs for the keys
-- $object_type: (string) The object type you wish to update
+- ```
+$data
+```
+
+: *(array)* An associative array of data to sync to the CRM, using CRM field IDs for the keys
+- ```
+$object_type
+```
+
+: *(string)* The object type you wish to update
 
 ### Examples
 
@@ -576,7 +724,7 @@ add_action( 'save_post_event', 'create_update_event_object', 10, 3 );
 
 #### Create a custom Car object in HubSpot and associate it with a contact
 
-For more information on working with custom objects in HubSpot, see Custom Objects with HubSpot.
+For more information on working with custom objects in HubSpot, see [Custom Objects with HubSpot](https://wpfusion.com/documentation/crm-specific-docs/custom-objects-with-hubspot/).
 
 ```
 define( 'HUBSPOT_API_KEY', 'xx599590-7888-43ed-a896-5abbc2ef9aa2' );
@@ -633,11 +781,19 @@ This function triggers WP Fusion to load data from your CRM back to the WordPres
 
 #### Parameters
 
-- $user_id(Optional): the WordPress user ID to load the metadata for.
+- ```
+$user_id
+```
+
+*(Optional)*: the WordPress user ID to load the metadata for.
 
 #### Returns
 
-- $user_meta: array of key / value pairs of WordPress meta.
+- ```
+$user_meta
+```
+
+: array of key / value pairs of WordPress meta.
 
 ### Examples
 
@@ -680,7 +836,7 @@ $update_data = array(
 wp_fusion()->user->push_user_meta( $user_id, $update_data );
 ```
 
-The field keys should be WordPress meta fields keys. WP Fusion will use the field mapping you’ve set on the Contact Fields tab to associate the data with the corresponding fields in your CRM.
+The field keys should be WordPress meta fields keys. WP Fusion will use the field mapping you’ve set on the [Contact Fields tab](https://wpfusion.com/documentation/getting-started/syncing-contact-fields/) to associate the data with the corresponding fields in your CRM.
 
 #### Parameters
 
@@ -688,12 +844,20 @@ The field keys should be WordPress meta fields keys. WP Fusion will use the fiel
 push_user_meta( $user_id, $user_meta = false )
 ```
 
-- $user_id (int) (Required): The user ID to push meta data to.
-- $user_meta (int) (Optional): The user meta to push.
+- ```
+$user_id
+```
+
+ *(int) (Required)*: The user ID to push meta data to.
+- ```
+$user_meta
+```
+
+ *(int) (Optional)*: The user meta to push.
 
 #### Return
 
-(bool) The success status.
+*(bool)* The success status.
 
 #### Sending all user data
 
@@ -719,12 +883,20 @@ This function allows you to remove an array of tags (using tag IDs) from a user.
 remove_tags( $tags, $user_id = false )
 ```
 
-- $tags (array) (Required): The array of tags to remove.
-- $user_id (int) (Optional): The user ID to remove tags from.
+- ```
+$tags
+```
+
+ *(array) (Required)*: The array of tags to remove.
+- ```
+$user_id
+```
+
+ *(int) (Optional)*: The user ID to remove tags from.
 
 #### Return
 
-(bool) The success status.
+*(bool)* The success status.
 
 #### Remove tags from the current user
 
@@ -740,7 +912,17 @@ $tags = array(123, 456, 789);
 wp_fusion()->user->remove_tags( $tags, $user_id );
 ```
 
-The function will return true if the tags were removed successfully, and false if there was a connection error or the user wasn’t found in the CRM. Any errors will be logged to the WP Fusion Logs.
+The function will return 
+```
+true
+```
+
+ if the tags were removed successfully, and 
+```
+false
+```
+
+ if there was a connection error or the user wasn’t found in the CRM. Any errors will be logged to [the WP Fusion Logs](https://wpfusion.com/documentation/getting-started/activity-logs/).
 
 ### Examples
 
@@ -748,7 +930,7 @@ The function will return true if the tags were removed successfully, and false i
 
 WP Fusion includes a lot of interfaces for applying tags, but because removing tags is less common most of our integrations don’t include options for removing tags.
 
-This example removes the tag Pending Signup when the tag Profile Complete is applied.
+This example removes the tag *Pending Signup* when the tag *Profile Complete* is applied.
 
 ```
 function remove_pending_signup_tag( $user_id, $tags_applied ) {
@@ -777,7 +959,12 @@ This function allows you to apply an array of tags to a user.
 
 The function expects an array of tag IDs. Some CRM’s, like Infusionsoft, Ontraport, and ConvertKit use internal tag IDs to designate their tags. Other CRMs, like ActiveCampaign, Drip, AgileCRM, and Mautic don’t use tag IDs, and a tag label is sufficient.
 
-If you’re unsure, you can always use get_tag_id() to get the appropriate tag ID for this function:
+If you’re unsure, you can always use 
+```
+get_tag_id()
+```
+
+ to get the appropriate tag ID for this function:
 
 ```
 $tag_id = wp_fusion()->user->get_tag_id( 'Tag Name' );
@@ -789,12 +976,20 @@ $tag_id = wp_fusion()->user->get_tag_id( 'Tag Name' );
 apply_tags( $tags, $user_id = false )
 ```
 
-- $tags (array) (Required): The array of tags to apply to a user.
-- $user_id (int) (Optional): The user ID to apply the tags to.
+- ```
+$tags
+```
+
+ *(array) (Required)*: The array of tags to apply to a user.
+- ```
+$user_id
+```
+
+ *(int) (Optional)*: The user ID to apply the tags to.
 
 #### Return
 
-(bool) The success status.
+*(bool)* The success status.
 
 #### Apply tags to the current user (Infusionsoft and others which use tag IDs)
 
@@ -817,7 +1012,17 @@ $tags = array(123, 456, 789);
 wp_fusion()->user->apply_tags( $tags, $user_id );
 ```
 
-The function will return true if the tags were applied successfully, and false if there was a connection error or the user wasn’t found in the CRM.
+The function will return 
+```
+true
+```
+
+ if the tags were applied successfully, and 
+```
+false
+```
+
+ if there was a connection error or the user wasn’t found in the CRM.
 
 ---
 
@@ -835,12 +1040,25 @@ This function retrieves all CRM tags currently associated with the user.
 wpf_get_tags( $user_id = false, $force = false )
 ```
 
-- $user_id (int) (Optional): The user ID to search.
-- $force (bool) (Optional): Whether to force-refresh the tags.
+- ```
+$user_id
+```
+
+ *(int) (Optional)*: The user ID to search.
+- ```
+$force
+```
+
+ *(bool) (Optional)*: Whether to force-refresh the tags.
 
 #### Return
 
-(array) $user_tags The users tags in the CRM.
+*(array)* 
+```
+$user_tags
+```
+
+ The users tags in the CRM.
 
 #### Get the current user’s tags
 
@@ -864,7 +1082,12 @@ $tags = wpf_get_tags( $user_id, true );
 
 #### Force an update of the user’s tags without verifying the contact ID
 
-If you’re sure the contact ID is correct, you can also force refresh the tags without looking up the contact ID first, by passing false as the third parameter.
+If you’re sure the contact ID is correct, you can also force refresh the tags without looking up the contact ID first, by passing 
+```
+false
+```
+
+ as the third parameter.
 
 ```
 $tags = wpf_get_tags( $user_id, $force_refresh = true, $lookup_contact_id = false );
@@ -884,7 +1107,10 @@ echo '</ul>';
 
 ### Get all available tags
 
-If you want to get all available tags in your CRM, with their names and IDs, you can do so using wpf_get_option()
+If you want to get all available tags in your CRM, with their names and IDs, you can do so using 
+```
+wpf_get_option()
+```
 
 ```
 $available_tags = wpf_get_option( 'available_tags' );
@@ -906,12 +1132,30 @@ This function retrieves a user’s CRM contact ID based on their WordPress user 
 wpf_get_contact_id( $user_id = false, $force_update = false )
 ```
 
-- $user_id (int) (Optional): The user ID to the contact of.
-- $force_update (bool) (Optional): If the contact ID should be automatically saved.
+- ```
+$user_id
+```
+
+ *(int) (Optional)*: The user ID to the contact of.
+- ```
+$force_update
+```
+
+ *(bool) (Optional)*: If the contact ID should be automatically saved.
 
 #### Return
 
-(mixed) Returns a string of the contact ID, or false if nothing is found.
+*(mixed)* Returns a 
+```
+string
+```
+
+ of the contact ID, or 
+```
+false
+```
+
+ if nothing is found.
 
 #### Get the current user’s contact ID
 
@@ -951,7 +1195,12 @@ if ( wpf_has_tag( 'Paying Customer' ) ) {
 }
 ```
 
-Or more complex conditions can be created by combining calls to has_tag(), for example:
+Or more complex conditions can be created by combining calls to 
+```
+has_tag()
+```
+
+, for example:
 
 ```
 if ( wpf_has_tag( 'New Customer' ) && ! wpf_has_tag( 'Watched Intro Video' )  ) {
@@ -967,16 +1216,29 @@ if ( wpf_has_tag( 'New Customer' ) && ! wpf_has_tag( 'Watched Intro Video' )  ) 
 has_tag( $tags, $user_id = false )
 ```
 
-- $tags (mixed) (Required): The tag or tags.
-- $user_id (int) (Optional): The user ID to check the tags of.
+- ```
+$tags
+```
+
+ *(mixed) (Required)*: The tag or tags.
+- ```
+$user_id
+```
+
+ *(int) (Optional)*: The user ID to check the tags of.
 
 #### Return
 
-(bool) Whether the user has the tag
+*(bool)* Whether the user has the tag
 
 ### By User ID
 
-To check the tags for a specific user, pass a $user_id as the second parameter:
+To check the tags for a specific user, pass a 
+```
+$user_id
+```
+
+ as the second parameter:
 
 ```
 if ( wpf_has_tag( 'Paying Customer', $user_id ) ) {
@@ -988,7 +1250,12 @@ if ( wpf_has_tag( 'Paying Customer', $user_id ) ) {
 
 ### Array Syntax
 
-The function also accepts an array of tag names or IDs. If the user has any of the provided tags the function will return true.
+The function also accepts an array of tag names or IDs. If the user has any of the provided tags the function will return 
+```
+true
+```
+
+.
 
 ```
 if ( wpf_has_tag( array( 'Pending Affiliate', 'Accepted Affiliate' ) ) {
@@ -1010,7 +1277,7 @@ This function determines whether the a user can access a given post (by ID). It 
 
 #### Basic Usage
 
-The basic usage takes a post ID and tells you whether or not the current user has access to that post, based on the access rules configured in the WP Fusion meta box, and the current user’s logged-in status and CRM tags.
+The basic usage takes a post ID and tells you whether or not the current user has access to that post, based on the access rules configured in [the WP Fusion meta box](https://wpfusion.com/documentation/getting-started/access-control/), and the current user’s logged-in status and CRM tags.
 
 ```
 if ( wpf_user_can_access( $post_id ) ) {
@@ -1030,12 +1297,20 @@ if ( wpf_user_can_access( $post_id ) ) {
 wpf_user_can_access( $post_id = false, $user_id = false )
 ```
 
-- $post_id (int) (Optional): The post ID to check.
-- $user_id (int) (Optional): The user ID to check.
+- ```
+$post_id
+```
+
+ *(int) (Optional)*: The post ID to check.
+- ```
+$user_id
+```
+
+ *(int) (Optional)*: The user ID to check.
 
 #### Return
 
-(bool) Whether the user can access the post.
+*(bool)* Whether the user can access the post.
 
 #### With a user ID
 
@@ -1053,7 +1328,12 @@ if ( wpf_user_can_access( $post_id, $user->ID ) ) {
 
 #### Within a loop
 
-When used within a loop, you can omit the $post_id and WP Fusion will check the access rules against the current post:
+When used within a loop, you can omit the 
+```
+$post_id
+```
+
+ and WP Fusion will check the access rules against the current post:
 
 ```
 if ( wpf_user_can_access() ) {

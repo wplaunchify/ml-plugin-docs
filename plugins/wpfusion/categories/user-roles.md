@@ -24,7 +24,15 @@
 
 #### #1.1.2 - 10/25/2021
 
-- Updated to run on set_user_role and user_register
+- Updated to run on 
+```
+set_user_role
+```
+
+ and 
+```
+user_register
+```
 
 #### #1.1.1 - 10/8/2020
 
@@ -61,16 +69,18 @@ The WP Fusion User Roles addon (available to Plus and Professional license holde
 
 The setup is configured via Settings » WP Fusion Roles in the admin.
 
+![](https://wpfusion.com/wp-content/uploads/2022/08/wpf-user-roles-main-settings-1024x632.jpg)
+
 For each role on your site, you have two options:
 
-1. Apply tags: You can select one or more tags in your CRM that will be applied whenever a user is given this role. These tags will not be automatically removed later.
-2. Link with tag: You can select a single tag to become “linked” with the role. When the tag is applied, the role will be set. When the tag is removed, the role will be removed. Likewise, if the user is given the role, the tag will be applied— and if the user is removed from the role, the tag will be removed.
+1. **Apply tags:** You can select one or more tags in your CRM that will be applied whenever a user is given this role. These tags will not be automatically removed later.
+2. **Link with tag:**You can select a single tag to become “linked” with the role. When the tag is applied, the role will be set. When the tag is removed, the role will be removed. Likewise, if the user is given the role, the tag will be applied— and if the user is removed from the role, the tag will be removed.
 
 #### Multi-role plugins
 
 By default, a role linked to a tag will be “set” for the user— i.e. it will replace any other roles the user has.
 
-If you are using either HM Multiple Roles or Members, these plugins give you a visual interface for managing multiple roles per user.
+If you are using either [HM Multiple Roles](https://wordpress.org/plugins/hm-multiple-roles/) or [Members](https://wordpress.org/plugins/members/), these plugins give you a visual interface for managing multiple roles per user.
 
 If either of these plugins is active and a linked tag is applied, WP Fusion will instead “add” the linked role (i.e. append it to the existing roles). It will not replace the user’s existing roles.
 

@@ -21,29 +21,33 @@ There is a known issue with SiteGround static and dynamic caching:
 - Protected files including documents and images will always be cached immediately upon access from an authorized WordPress user. As a result, they will then be accessible to all of your visitors, which stops our access rules from working properly.
 - Static content such as documents and images cannot be excluded via the Dynamic cache exclude feature (SG Optimizer plugin). This feature allows you to exclude dynamic web pages only.
 
-Since it’s a limitation from SiteGround affecting protection of files with WP Fusion, we recommend disabling Dynamic (and Static) cache, but keeping SiteGround Memcache enabled, and installing a good cache plugin. We recommend Cache Enabler.
+Since it’s a limitation from SiteGround affecting protection of files with WP Fusion, we recommend disabling Dynamic (and Static) cache, but keeping SiteGround Memcache enabled, and installing a good cache plugin. We recommend [Cache Enabler](https://wordpress.org/plugins/cache-enabler/).
 
 ### NGINX Hosts
 
 Since NGINX does not have .htaccess-type capabilities, WP Fusion and WordPress at large cannot modify and update the server configuration automatically for you.
 
-Note: The Downloads Addon is no longer officially supported on NGINX hosts (like WP Engine). The guides below can be used at your own risk.
+**Note:** The Downloads Addon is no longer officially supported on NGINX hosts (like WP Engine). The guides below can be used at your own risk.
 
-For more robust file download protection which works on NGINX hosting, we recommend Prevent Direct Access.
+For more robust file download protection which works on NGINX hosting, we recommend [Prevent Direct Access](https://wpfusion.com/go/prevent-direct-access).
 
 #### WP Engine Setup
 
 1. Log in to your WP Engine User Portal
 
+![](https://wpfusion.com/wp-content/uploads/2019/12/wpengine-sites-domain-prevent-direct-access-1024x387.png)
+
 2. Under your website “Installs”, click on “Redirect rules” then “New redirect rule”
+
+![](https://wpfusion.com/wp-content/uploads/2019/12/WP-Engine-Screenshot2-1024x430-1024x430.png)
 
 3. Enter these details into the popup fields:
 
-- Domain: Choose your website domain
-- Redirect name: Downloads protection
-- Source: wp-content/uploads(/_wpfd/.*\.\w+)$
-- Destination: https://www.yourwebsite.com/index.php?wpfd=$1
-- Redirect type: 301 Permanent
+- **Domain**: Choose your website domain
+- **Redirect name**: Downloads protection
+- **Source**: wp-content/uploads(/_wpfd/.*\.\w+)$
+- **Destination**: https://www.yourwebsite.com/index.php?wpfd=$1
+- **Redirect type**: 301 Permanent
 
 #### Implement Our Nginx Rewrite Rules Manually
 
@@ -126,22 +130,28 @@ server {
 
 ### Overview
 
-The WP Fusion Downloads Addon (available for Plus and Professional license holders) allows you to protect files in your site’s media library using a user’s CRM tags.
+The **WP Fusion Downloads Addon** (available for Plus and Professional license holders) allows you to protect files in your site’s media library using a user’s CRM tags.
 
 This addon can be used to prevent your images, PDFs, and other downloadable files from being shared or accessed by unauthorized users.
 
 For more complex requirements involving selling digital files we still recommend either WooCommerce or Easy Digital Downloads.
 
 **Note:** As of June 2020 this addon is being placed in indefinite Beta status. It works on many sites, but because it requires modifying file permissions on your server we can’t guarantee compatibility with all hosts.
-
-For a more robust file protection plugin, check out our integration with Download Monitor.
+For a more robust file protection plugin, check out our integration with [Download Monitor](https://wpfusion.com/documentation/other/download-monitor/).
 **Note:** The Downloads Addon does not work on WordPress Multisite.
 
 ### Setup
 
 When adding any media item to a page using the Media Library, you’ll see a panel where you can configure content protection for the media file.
 
-If you toggle the switch for Protect this file the media item will be moved to a protected folder inside of your /wp-content/uploads/ directory. By default the file will only be accessible to logged-in users.
+![](https://wpfusion.com/wp-content/uploads/2019/09/downloads-addon-1-1-1024x561.jpg)
+
+If you toggle the switch for **Protect this file** the media item will be moved to a protected folder inside of your 
+```
+/wp-content/uploads/
+```
+
+ directory. By default the file will only be accessible to logged-in users.
 
 You can also optionally specify one or more tags that are required to access the file.
 
@@ -153,7 +163,9 @@ Media files can either be embedded into a page (as an image, PDF, or audio file)
 
 By default a 404 error will be given if someone tries to directly access a restricted file and doesn’t have access.
 
-To override this and redirect the person to another page you can specify a redirect from the Addons tab in the WP Fusion settings.
+![](https://wpfusion.com/wp-content/uploads/2019/09/downloads-addon-redirect-1024x391.jpg)
+
+To override this and redirect the person to another page you can specify a redirect from the **Addons** tab in the WP Fusion settings.
 
 ---
 
