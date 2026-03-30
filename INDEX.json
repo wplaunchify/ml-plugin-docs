@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T05:57:23.303Z",
-  "total_plugins": 2,
+  "last_updated": "2026-03-30T06:01:31.210Z",
+  "total_plugins": 3,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -51,6 +51,31 @@
       "page_count": 43,
       "categories": [
         "uncategorized"
+      ]
+    },
+    {
+      "slug": "fluentcrm",
+      "name": "FluentCRM",
+      "documentation_url": "https://fluentcrm.com/documentation/",
+      "last_scraped": "2026-03-30T06:01:31.210Z",
+      "page_count": 137,
+      "categories": [
+        "advanced-reports",
+        "automation-funnels",
+        "bounce-handlers",
+        "change-log",
+        "devloper",
+        "email-campaign",
+        "event-tracking",
+        "fluentcrm-essentials",
+        "forms",
+        "frequently-asked-questions",
+        "getting-started-with-audience",
+        "global-settings",
+        "grow-your-audience",
+        "integrations",
+        "migrating-from-other-platforms",
+        "miscellaneous"
       ]
     }
   ]

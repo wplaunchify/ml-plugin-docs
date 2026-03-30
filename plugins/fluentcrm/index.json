@@ -1,0 +1,702 @@
+{
+  "plugin_slug": "fluentcrm",
+  "plugin_name": "FluentCRM",
+  "documentation_url": "https://fluentcrm.com/documentation/",
+  "last_scraped": "2026-03-30T06:01:31.202Z",
+  "total_pages": 137,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Advanced Reports",
+      "slug": "advanced-reports",
+      "url": "https://fluentcrm.com/documentation/advanced-reports/",
+      "file": "categories/advanced-reports.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Abandoned Cart Report",
+          "url": "https://fluentcrm.com/docs/abandoned-cart-report/"
+        },
+        {
+          "title": "CRM Advanced Reports",
+          "url": "https://fluentcrm.com/docs/crm-advanced-reports/"
+        },
+        {
+          "title": "EDD – Advanced Reports",
+          "url": "https://fluentcrm.com/docs/edd-advanced-reports/"
+        },
+        {
+          "title": "LifterLMS – Advanced Reports",
+          "url": "https://fluentcrm.com/docs/lifterlms-advanced-reports/"
+        },
+        {
+          "title": "LearnDash – Advanced Reports",
+          "url": "https://fluentcrm.com/docs/learndash-advanced-reports/"
+        },
+        {
+          "title": "WooCommerce – Advanced Reports",
+          "url": "https://fluentcrm.com/docs/woocommerce-advanced-reports/"
+        }
+      ]
+    },
+    {
+      "title": "Automation Funnels",
+      "slug": "automation-funnels",
+      "url": "https://fluentcrm.com/documentation/automation-funnels/",
+      "file": "categories/automation-funnels.md",
+      "page_count": 22,
+      "pages": [
+        {
+          "title": "Labels for Automations",
+          "url": "https://fluentcrm.com/docs/labels-for-automations/"
+        },
+        {
+          "title": "WooCommerce Automation Actions",
+          "url": "https://fluentcrm.com/docs/woocommerce-automation-actions/"
+        },
+        {
+          "title": "WooCommerce Subscription Triggers",
+          "url": "https://fluentcrm.com/docs/woocommerce-subscription-triggers/"
+        },
+        {
+          "title": "Abandon Cart Automation",
+          "url": "https://fluentcrm.com/docs/abandon-cart-automation/"
+        },
+        {
+          "title": "Membership Conditionals",
+          "url": "https://fluentcrm.com/docs/membership-conditionals/"
+        },
+        {
+          "title": "LMS Conditionals",
+          "url": "https://fluentcrm.com/docs/lms-conditionals/"
+        },
+        {
+          "title": "Ecommerce Conditionals",
+          "url": "https://fluentcrm.com/docs/ecommerce-conditionals/"
+        },
+        {
+          "title": "Primary Conditionals",
+          "url": "https://fluentcrm.com/docs/conditional-automation-actions/"
+        },
+        {
+          "title": "Goals or BenchMark Actions",
+          "url": "https://fluentcrm.com/docs/goals-or-benchmark-actions/"
+        },
+        {
+          "title": "Primary Actions",
+          "url": "https://fluentcrm.com/docs/primary-automation-actions/"
+        },
+        {
+          "title": "Primary Automation Triggers",
+          "url": "https://fluentcrm.com/docs/fluentcrm-automation-triggers/"
+        },
+        {
+          "title": "Introduction to FluentCRM Automation",
+          "url": "https://fluentcrm.com/docs/introduction-to-fluentcrm-automation/"
+        },
+        {
+          "title": "Creating Automation and Its Editor",
+          "url": "https://fluentcrm.com/docs/automation-editor/"
+        },
+        {
+          "title": "Export-Import Automations",
+          "url": "https://fluentcrm.com/docs/how-to-import-export-automation-funnels-with-fluentcrm/"
+        },
+        {
+          "title": "LMS Actions",
+          "url": "https://fluentcrm.com/docs/lms-automation-actions/"
+        },
+        {
+          "title": "WordPress Actions",
+          "url": "https://fluentcrm.com/docs/wordpress-automation-actions/"
+        },
+        {
+          "title": "Membership Triggers",
+          "url": "https://fluentcrm.com/docs/fluentcrm-membership-triggers/"
+        },
+        {
+          "title": "Ecommerce Triggers",
+          "url": "https://fluentcrm.com/docs/fluentcrm-ecommerce-triggers/"
+        },
+        {
+          "title": "LMS Triggers",
+          "url": "https://fluentcrm.com/docs/fluentcrm-lms-triggers/"
+        },
+        {
+          "title": "Miscellaneous Actions",
+          "url": "https://fluentcrm.com/docs/miscellaneous-automation-actions/"
+        },
+        {
+          "title": "Automation Reports",
+          "url": "https://fluentcrm.com/docs/automation-reports/"
+        },
+        {
+          "title": "Email Actions",
+          "url": "https://fluentcrm.com/docs/automation-email-actions/"
+        }
+      ]
+    },
+    {
+      "title": "Bounce Handlers",
+      "slug": "bounce-handlers",
+      "url": "https://fluentcrm.com/documentation/bounce-handlers/",
+      "file": "categories/bounce-handlers.md",
+      "page_count": 10,
+      "pages": [
+        {
+          "title": "Bounce Handling with Brevo",
+          "url": "https://fluentcrm.com/docs/bounce-handling-with-brevo/"
+        },
+        {
+          "title": "Bounce Handling with SMTP2GO",
+          "url": "https://fluentcrm.com/docs/bounce-handling-with-smtp2go/"
+        },
+        {
+          "title": "Bounce Handling with Postal Server",
+          "url": "https://fluentcrm.com/docs/bounce-handling-with-postal-server/"
+        },
+        {
+          "title": "Bounce Handling with Elastic Email",
+          "url": "https://fluentcrm.com/docs/bounce-handling-with-elastic-email/"
+        },
+        {
+          "title": "Bounce Handling with Sparkpost",
+          "url": "https://fluentcrm.com/docs/bounce-handling-with-sparkpost/"
+        },
+        {
+          "title": "Bounce Handling with SendGrid",
+          "url": "https://fluentcrm.com/docs/bounce-handling-with-sendgrid/"
+        },
+        {
+          "title": "Bounce Handling with PostMark",
+          "url": "https://fluentcrm.com/docs/bounce-handling-with-postmark/"
+        },
+        {
+          "title": "Bounce Handling with Pepipost",
+          "url": "https://fluentcrm.com/docs/bounce-handling-with-pepipost/"
+        },
+        {
+          "title": "Bounce Handling with Mailgun",
+          "url": "https://fluentcrm.com/docs/bounce-handling-with-mailgun/"
+        },
+        {
+          "title": "Bounce Handling with Amazon SES",
+          "url": "https://fluentcrm.com/docs/bounce-handler-with-amazon-ses/"
+        }
+      ]
+    },
+    {
+      "title": "Change Log",
+      "slug": "change-log",
+      "url": "https://fluentcrm.com/documentation/change-log/",
+      "file": "categories/change-log.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Changelog",
+          "url": "https://fluentcrm.com/docs/change-log/"
+        }
+      ]
+    },
+    {
+      "title": "Devloper",
+      "slug": "devloper",
+      "url": "https://fluentcrm.com/documentation/devloper/",
+      "file": "categories/devloper.md",
+      "page_count": 10,
+      "pages": [
+        {
+          "title": "Custom Automation Condition",
+          "url": "https://fluentcrm.com/docs/custom-automation-condition/"
+        },
+        {
+          "title": "Custom Automation Benchmark/Goal",
+          "url": "https://fluentcrm.com/docs/custom-automation-benchmark-goal/"
+        },
+        {
+          "title": "Custom Automation Action",
+          "url": "https://fluentcrm.com/docs/custom-automation-action/"
+        },
+        {
+          "title": "Custom Automation Trigger",
+          "url": "https://fluentcrm.com/docs/custom-automation-trigger/"
+        },
+        {
+          "title": "Form Field Code Structure",
+          "url": "https://fluentcrm.com/docs/form-field-code-structure/"
+        },
+        {
+          "title": "WP Cli Commands",
+          "url": "https://fluentcrm.com/docs/wp-cli-commands/"
+        },
+        {
+          "title": "Useful Code Snippets",
+          "url": "https://fluentcrm.com/docs/useful-code-snippets/"
+        },
+        {
+          "title": "Action Hooks",
+          "url": "https://fluentcrm.com/docs/action-hooks/"
+        },
+        {
+          "title": "Lists and Tags PHP API",
+          "url": "https://fluentcrm.com/docs/lists-and-tags-php-api/"
+        },
+        {
+          "title": "Contact PHP API",
+          "url": "https://fluentcrm.com/docs/contact-php-api/"
+        }
+      ]
+    },
+    {
+      "title": "Email Campaign",
+      "slug": "email-campaign",
+      "url": "https://fluentcrm.com/documentation/email-campaign/",
+      "file": "categories/email-campaign.md",
+      "page_count": 12,
+      "pages": [
+        {
+          "title": "Labels for Email Campaigns",
+          "url": "https://fluentcrm.com/docs/labels-for-email-campaigns/"
+        },
+        {
+          "title": "FluentCRM Visual Builder",
+          "url": "https://fluentcrm.com/docs/fluentcrm-visual-builder/"
+        },
+        {
+          "title": "Recurring Campaign",
+          "url": "https://fluentcrm.com/docs/recurring-campaign/"
+        },
+        {
+          "title": "Email Sequence",
+          "url": "https://fluentcrm.com/docs/email-sequence/"
+        },
+        {
+          "title": "Campaign Summary & Actions",
+          "url": "https://fluentcrm.com/docs/campaign-summary-actions/"
+        },
+        {
+          "title": "Email Campaigns",
+          "url": "https://fluentcrm.com/docs/setting-up-campaign/"
+        },
+        {
+          "title": "Email Templates",
+          "url": "https://fluentcrm.com/docs/email-templates/"
+        },
+        {
+          "title": "Conditional Sections in Email Editor",
+          "url": "https://fluentcrm.com/docs/conditional-sections-in-fluentcrm-email-editor/"
+        },
+        {
+          "title": "Content Blocks in Email Editor",
+          "url": "https://fluentcrm.com/docs/content-blocks-in-fluentcrm-email-editor/"
+        },
+        {
+          "title": "SmartCode In Editor of Email Templates",
+          "url": "https://fluentcrm.com/docs/smartcodes-in-fluentcrm-email-editor/"
+        },
+        {
+          "title": "Overview of Emails from FluentCRM",
+          "url": "https://fluentcrm.com/docs/overview-of-emails-from-fluentcrm/"
+        },
+        {
+          "title": "Compose Email in FluentCRM",
+          "url": "https://fluentcrm.com/docs/compose-email-in-fluentcrm/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tracking",
+      "slug": "event-tracking",
+      "url": "https://fluentcrm.com/documentation/event-tracking/",
+      "file": "categories/event-tracking.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Event Tracking Record",
+          "url": "https://fluentcrm.com/docs/event-tracking-record/"
+        },
+        {
+          "title": "Event Tracking With Rest API",
+          "url": "https://fluentcrm.com/docs/event-tracking-with-rest-api/"
+        },
+        {
+          "title": "Event Tracking with Action Hooks",
+          "url": "https://fluentcrm.com/docs/event-tracking-with-action-hooks/"
+        },
+        {
+          "title": "Event Tracking Automation",
+          "url": "https://fluentcrm.com/docs/event-tracking-automation/"
+        }
+      ]
+    },
+    {
+      "title": "Fluentcrm Essentials",
+      "slug": "fluentcrm-essentials",
+      "url": "https://fluentcrm.com/documentation/fluentcrm-essentials/",
+      "file": "categories/fluentcrm-essentials.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "Cron Job: Replace with a Server-side Cron Job (cPanel)",
+          "url": "https://fluentcrm.com/docs/replace-wordpress-cron-with-a-real-cron-job/"
+        },
+        {
+          "title": "Troubleshoot: Guidelines on WordPress Error",
+          "url": "https://fluentcrm.com/docs/troubleshoot-guidelines-on-wordpress-error/"
+        },
+        {
+          "title": "Email Delivery of FluentCRM",
+          "url": "https://fluentcrm.com/docs/sending-emails-and-email-deliverability/"
+        },
+        {
+          "title": "Cron Job: FluentCRM Cron With Cloudways",
+          "url": "https://fluentcrm.com/docs/fluentcrm-cron-with-cloudways/"
+        },
+        {
+          "title": "Cron Job: FluentCRM Cron with EasyCron",
+          "url": "https://fluentcrm.com/docs/fluentcrm-cron-with-easycron/"
+        },
+        {
+          "title": "Cron Job: FluentCRM Cron with Cron-job.org",
+          "url": "https://fluentcrm.com/docs/fluentcrm-cron-with-cronjob-org/"
+        },
+        {
+          "title": "Cron Job: Basics & Checklist",
+          "url": "https://fluentcrm.com/docs/fluentcrm-cron-job-basics-and-checklist/"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "slug": "forms",
+      "url": "https://fluentcrm.com/documentation/forms/",
+      "file": "categories/forms.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Capturing Leads Remotely from Fluent Forms",
+          "url": "https://fluentcrm.com/docs/capturing-leads-through-fluent-forms-webhook/"
+        },
+        {
+          "title": "Fluent Forms Advanced Configuration",
+          "url": "https://fluentcrm.com/docs/opt-in-forms-advanced-configuration/"
+        },
+        {
+          "title": "Opt-in Forms (Fluent Forms) Basic Configuration",
+          "url": "https://fluentcrm.com/docs/opt-in-forms-fluent-forms-basic-configuration/"
+        }
+      ]
+    },
+    {
+      "title": "Frequently Asked Questions",
+      "slug": "frequently-asked-questions",
+      "url": "https://fluentcrm.com/documentation/frequently-asked-questions/",
+      "file": "categories/frequently-asked-questions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "General Questions",
+          "url": "https://fluentcrm.com/docs/frequently-asked-questions/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Audience",
+      "slug": "getting-started-with-audience",
+      "url": "https://fluentcrm.com/documentation/getting-started-with-audience/",
+      "file": "categories/getting-started-with-audience.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Transfer License from one Domain to another",
+          "url": "https://fluentcrm.com/docs/transfer-license-from-one-domain-to-another/"
+        },
+        {
+          "title": "Introduction to FluentCRM Dashboard",
+          "url": "https://fluentcrm.com/docs/dashboard-introduction/"
+        },
+        {
+          "title": "Install, Upgrade and Activate FluentCRM License",
+          "url": "https://fluentcrm.com/docs/how-to-install-upgrade-and-activate-license/"
+        },
+        {
+          "title": "Migrating into FluentCRM from Other Platforms",
+          "url": "https://fluentcrm.com/docs/migrating-into-fluentcrm/"
+        }
+      ]
+    },
+    {
+      "title": "Global Settings",
+      "slug": "global-settings",
+      "url": "https://fluentcrm.com/documentation/global-settings/",
+      "file": "categories/global-settings.md",
+      "page_count": 16,
+      "pages": [
+        {
+          "title": "Abandoned Cart Settings",
+          "url": "https://fluentcrm.com/docs/abandoned-cart-settings/"
+        },
+        {
+          "title": "Advanced Features Settings",
+          "url": "https://fluentcrm.com/docs/advanced-features-settings/"
+        },
+        {
+          "title": "FluentCRM Global Settings",
+          "url": "https://fluentcrm.com/docs/fluentcrm-global-settings/"
+        },
+        {
+          "title": "Managers",
+          "url": "https://fluentcrm.com/docs/global-managers-settings/"
+        },
+        {
+          "title": "SMTP/Email & Bounce Handlers",
+          "url": "https://fluentcrm.com/docs/smtp-bounce-handlers-settings/"
+        },
+        {
+          "title": "Compliance",
+          "url": "https://fluentcrm.com/docs/global-compliance-settings/"
+        },
+        {
+          "title": "Tools",
+          "url": "https://fluentcrm.com/docs/fluentcrm-tools-settings/"
+        },
+        {
+          "title": "REST API",
+          "url": "https://fluentcrm.com/docs/global-rest-api-settings/"
+        },
+        {
+          "title": "Incoming Webhooks",
+          "url": "https://fluentcrm.com/docs/global-incoming-webhooks/"
+        },
+        {
+          "title": "Double Opt-in Settings",
+          "url": "https://fluentcrm.com/docs/global-double-opt-in-settings/"
+        },
+        {
+          "title": "Custom Contact Fields",
+          "url": "https://fluentcrm.com/docs/global-custom-contact-fields/"
+        },
+        {
+          "title": "General Settings",
+          "url": "https://fluentcrm.com/docs/global-general-settings/"
+        },
+        {
+          "title": "Integration Settings",
+          "url": "https://fluentcrm.com/docs/global-integration-settings/"
+        },
+        {
+          "title": "Business Settings",
+          "url": "https://fluentcrm.com/docs/global-business-settings/"
+        },
+        {
+          "title": "Email Settings",
+          "url": "https://fluentcrm.com/docs/global-email-settings/"
+        },
+        {
+          "title": "Smart Links",
+          "url": "https://fluentcrm.com/docs/global-smartlinks-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Grow Your Audience",
+      "slug": "grow-your-audience",
+      "url": "https://fluentcrm.com/documentation/grow-your-audience/",
+      "file": "categories/grow-your-audience.md",
+      "page_count": 11,
+      "pages": [
+        {
+          "title": "Contact Statuses",
+          "url": "https://fluentcrm.com/docs/contact-statuses/"
+        },
+        {
+          "title": "Company Module",
+          "url": "https://fluentcrm.com/docs/company-module/"
+        },
+        {
+          "title": "Import from Other Plugins & Integrations",
+          "url": "https://fluentcrm.com/docs/import-contacts-to-fluentcrm-from-other-integrations/"
+        },
+        {
+          "title": "Import Contacts into FluentCRM",
+          "url": "https://fluentcrm.com/docs/import-contacts-into-fluentcrm/"
+        },
+        {
+          "title": "General & Dynamic Segments",
+          "url": "https://fluentcrm.com/docs/segment-your-audience/"
+        },
+        {
+          "title": "Export Contacts from FluentCRM",
+          "url": "https://fluentcrm.com/docs/export-contacts-from-fluentcrm/"
+        },
+        {
+          "title": "Integrated Contact Overview",
+          "url": "https://fluentcrm.com/docs/additional-integrated-contact-overview/"
+        },
+        {
+          "title": "Contact Overview",
+          "url": "https://fluentcrm.com/docs/contact-overview/"
+        },
+        {
+          "title": "Add and Manage All Contacts",
+          "url": "https://fluentcrm.com/docs/manage-contacts/"
+        },
+        {
+          "title": "Contacts Dashboard",
+          "url": "https://fluentcrm.com/docs/contacts-dashboard/"
+        },
+        {
+          "title": "Advanced Filter",
+          "url": "https://fluentcrm.com/docs/advanced-filter/"
+        }
+      ]
+    },
+    {
+      "title": "Integrations",
+      "slug": "integrations",
+      "url": "https://fluentcrm.com/documentation/integrations/",
+      "file": "categories/integrations.md",
+      "page_count": 20,
+      "pages": [
+        {
+          "title": "FluentCommunity integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/fluentcommunity-integration-with-fluentcrm/"
+        },
+        {
+          "title": "FluentCart Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/fluentcart-integration-with-fluentcrm/"
+        },
+        {
+          "title": "FluentAffiliate Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/fluentaffiliate-integration-with-fluentcrm/"
+        },
+        {
+          "title": "Restrict Content Pro Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/restrict-content-pro-integration-with-fluentcrm/"
+        },
+        {
+          "title": "Paid Memberships Pro Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/paid-memberships-pro-integration-with-fluentcrm/"
+        },
+        {
+          "title": "Oxygen Builder Integration With FluentCRM",
+          "url": "https://fluentcrm.com/docs/oxygen-builder-integration-with-fluentcrm/"
+        },
+        {
+          "title": "Fluent Booking Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/fluent-booking-integration-with-fluentcrm/"
+        },
+        {
+          "title": "SureCart Automation With FluentCRM",
+          "url": "https://fluentcrm.com/docs/surecart-automation-with-fluentcrm/"
+        },
+        {
+          "title": "Zapier Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/zapier-integration-with-fluentcrm/"
+        },
+        {
+          "title": "BuddyBoss integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/buddyboss-integration-with-fluentcrm/"
+        },
+        {
+          "title": "LearnPress integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/learpress-integration-with-fluentcrm/"
+        },
+        {
+          "title": "TutorLMS Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/tutorlms-integration-with-fluentcrm/"
+        },
+        {
+          "title": "LifterLMS Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/lifterlms-integration-with-fluentcrm/"
+        },
+        {
+          "title": "Learndash Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/learndash-integration-with-fluentcrm/"
+        },
+        {
+          "title": "Fluent Forms integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/wp-fluent-forms-integration-with-fluentcrm/"
+        },
+        {
+          "title": "MemberPress integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/memberpress-integration-with-fluentcrm/"
+        },
+        {
+          "title": "Easy Digital Downloads Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/easy-digital-downloads-integration-with-fluentcrm/"
+        },
+        {
+          "title": "WooCommerce Automation with FluentCRM",
+          "url": "https://fluentcrm.com/docs/woocommerce-automation-with-fluentcrm/"
+        },
+        {
+          "title": "Elementor Integration with FluentCRM",
+          "url": "https://fluentcrm.com/docs/elementor-integration-with-fluentcrm/"
+        },
+        {
+          "title": "Webhook Integration",
+          "url": "https://fluentcrm.com/docs/webhook-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Migrating From Other Platforms",
+      "slug": "migrating-from-other-platforms",
+      "url": "https://fluentcrm.com/documentation/migrating-from-other-platforms/",
+      "file": "categories/migrating-from-other-platforms.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Migrate FluentCRM to a New Site",
+          "url": "https://fluentcrm.com/docs/migrate-fluentcrm-to-a-new-site/"
+        },
+        {
+          "title": "Migrating into FluentCRM from ActiveCampaign",
+          "url": "https://fluentcrm.com/docs/migrating-into-fluentcrm-from-activecampaign/"
+        },
+        {
+          "title": "Migrating into FluentCRM from Drip",
+          "url": "https://fluentcrm.com/docs/migrating-into-fluentcrm-from-drip/"
+        },
+        {
+          "title": "Migrating into FluentCRM from MailerLite",
+          "url": "https://fluentcrm.com/docs/migrating-into-fluentcrm-from-mailerlite/"
+        },
+        {
+          "title": "Migrating into FluentCRM from Convertkit",
+          "url": "https://fluentcrm.com/docs/migrating-into-fluentcrm-from-convertkit/"
+        },
+        {
+          "title": "Migrating into FluentCRM from MailChimp",
+          "url": "https://fluentcrm.com/docs/migrating-into-fluentcrm-from-mailchimp/"
+        }
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "slug": "miscellaneous",
+      "url": "https://fluentcrm.com/documentation/miscellaneous/",
+      "file": "categories/miscellaneous.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Auto-Fill Fluent Forms Fields with FluentCRM Data",
+          "url": "https://fluentcrm.com/docs/auto-fill-fluent-forms-fields-with-fluentcrm-data/"
+        },
+        {
+          "title": "Cloudflare or Security Plugin Compatibility",
+          "url": "https://fluentcrm.com/docs/cloudflare-or-security-plugin-compatibility/"
+        },
+        {
+          "title": "FluentCRM Contacts Status",
+          "url": "https://fluentcrm.com/docs/fluentcrm-contacts-status/"
+        },
+        {
+          "title": "Merge Codes / Smart Codes usage",
+          "url": "https://fluentcrm.com/docs/merge-codes-smart-codes-usage/"
+        }
+      ]
+    }
+  ]
+}
