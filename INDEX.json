@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T15:00:42.298Z",
-  "total_plugins": 10,
+  "last_updated": "2026-03-30T15:06:28.488Z",
+  "total_plugins": 11,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -209,6 +209,48 @@
         "miscellaneous",
         "settings-and-customization",
         "troubleshooting-and-support"
+      ]
+    },
+    {
+      "slug": "fluentforms",
+      "name": "Fluent Forms",
+      "documentation_url": "https://fluentforms.com/documentation/",
+      "last_scraped": "2026-03-30T15:06:28.488Z",
+      "page_count": 456,
+      "categories": [
+        "account-management",
+        "action-hooks",
+        "advance-fields",
+        "automation",
+        "container-fields",
+        "crm",
+        "data-definations",
+        "developer-docs",
+        "email-marketing",
+        "features-and-functionalities",
+        "filter-hooks",
+        "form-editor",
+        "form-entries",
+        "form-notification",
+        "form-settings-form-building",
+        "form-style-template",
+        "general-fields",
+        "getting-started",
+        "import-export",
+        "manage-entries",
+        "miscellaneous",
+        "notification",
+        "others",
+        "payment",
+        "payment-fields",
+        "payment-integration",
+        "post-fields",
+        "publishing-form-form-building",
+        "reference-api-classes",
+        "reports",
+        "security",
+        "shortcode",
+        "taxonomy-fields"
       ]
     }
   ]

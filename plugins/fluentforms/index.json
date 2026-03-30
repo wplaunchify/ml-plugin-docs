@@ -1,0 +1,2131 @@
+{
+  "plugin_slug": "fluentforms",
+  "plugin_name": "Fluent Forms",
+  "documentation_url": "https://fluentforms.com/documentation/",
+  "last_scraped": "2026-03-30T15:06:28.480Z",
+  "total_pages": 456,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Account Management",
+      "slug": "account-management",
+      "url": "https://fluentforms.com/documentation/account-management/",
+      "file": "categories/account-management.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting up Managers in Fluent Forms (Access Control)",
+          "url": "https://fluentforms.com/docs/setting-up-managers-in-fluent-forms-access-control/"
+        }
+      ]
+    },
+    {
+      "title": "Action Hooks",
+      "slug": "action-hooks",
+      "url": "https://fluentforms.com/documentation/action-hooks/",
+      "file": "categories/action-hooks.md",
+      "page_count": 85,
+      "pages": [
+        {
+          "title": "fluentform/ipn_paypal_action_web_accept",
+          "url": "https://fluentforms.com/docs/fluentform_ipn_paypal_action_web_accept/"
+        },
+        {
+          "title": "fluentform/ipn_paypal_action_{$txn_type}",
+          "url": "https://fluentforms.com/docs/fluentform_paypal_ipn_verification_failed/"
+        },
+        {
+          "title": "fluentform/ipn_endpoint_{$paymentMethod}",
+          "url": "https://fluentforms.com/docs/fluentform_ipn_endpint_/"
+        },
+        {
+          "title": "fluentform/after_payment_status_change",
+          "url": "https://fluentforms.com/docs/fluentform_after_payment_status_change/"
+        },
+        {
+          "title": "fluentform/payment_refund_updated",
+          "url": "https://fluentforms.com/docs/fluentform_payment_refund_updated/"
+        },
+        {
+          "title": "fluentform/payment_refund_updated_{$method}",
+          "url": "https://fluentforms.com/docs/fluentform_payment_refund_updated_method/"
+        },
+        {
+          "title": "fluentform/payment_refunded",
+          "url": "https://fluentforms.com/docs/fluentform_payment_refunded/"
+        },
+        {
+          "title": "fluentform/payment_refunded_{$method}",
+          "url": "https://fluentforms.com/docs/fluentform_payment_refunded_method/"
+        },
+        {
+          "title": "fluentform/before_payment_status_change",
+          "url": "https://fluentforms.com/docs/fluentform_before_payment_status_change/"
+        },
+        {
+          "title": "fluentform/payment_method_render_{$methodName}",
+          "url": "https://fluentforms.com/docs/fluentform_payment_method_render_methodname/"
+        },
+        {
+          "title": "fluentform/rending_payment_method_{$methodName}",
+          "url": "https://fluentforms.com/docs/fluentform_rending_payment_method_/"
+        },
+        {
+          "title": "fluentform/payment_frameless_{$paymentMethod}",
+          "url": "https://fluentforms.com/docs/fluent_payment_frameless_paymentmethod/"
+        },
+        {
+          "title": "fluentform/payment_receipt_after_content",
+          "url": "https://fluentforms.com/docs/fluentform_payment_receipt_after_content/"
+        },
+        {
+          "title": "fluentform/payment_receipt_before_content",
+          "url": "https://fluentforms.com/docs/fluentform_payment_receipt_before_content/"
+        },
+        {
+          "title": "fluentform/after_deleting_entries",
+          "url": "https://fluentforms.com/docs/fluentform_after_entry_deleted/"
+        },
+        {
+          "title": "fluentform/before_deleting_entries",
+          "url": "https://fluentforms.com/docs/fluentform_before_entry_deleted/"
+        },
+        {
+          "title": "fluentform/after_all_entries_render",
+          "url": "https://fluentforms.com/docs/fluentform_after_all_entries_render/"
+        },
+        {
+          "title": "fluentform/before_all_entries_render",
+          "url": "https://fluentforms.com/docs/fluentform_before_all_entries_render/"
+        },
+        {
+          "title": "flunetform/render_payment_entries",
+          "url": "https://fluentforms.com/docs/flunetform_render_payment_entries-2/"
+        },
+        {
+          "title": "fluentform/after_partial_entry_deleted",
+          "url": "https://fluentforms.com/docs/fluentform_after_partial_entry_deleted/"
+        },
+        {
+          "title": "fluentform/before_partial_entry_deleted",
+          "url": "https://fluentforms.com/docs/fluentform_before_partial_entry_deleted/"
+        },
+        {
+          "title": "fluentform/entry_confirmation",
+          "url": "https://fluentforms.com/docs/fluentformpro_entry_confirmation/"
+        },
+        {
+          "title": "fluentform/post_integration_success",
+          "url": "https://fluentforms.com/docs/fluentform_post_integration_success/"
+        },
+        {
+          "title": "fluentform/user_registration_completed",
+          "url": "https://fluentforms.com/docs/fluentform_user_registration_completed/"
+        },
+        {
+          "title": "fluentform/created_user",
+          "url": "https://fluentforms.com/docs/fluentform_created_user/"
+        },
+        {
+          "title": "fluentform/user_registration_before_start",
+          "url": "https://fluentforms.com/docs/fluentform_user_registration_before_start/"
+        },
+        {
+          "title": "fluentform/conversational_frame_footer",
+          "url": "https://fluentforms.com/docs/fluentform_conversational_frame_footer/"
+        },
+        {
+          "title": "fluentform/conversational_frame_head",
+          "url": "https://fluentforms.com/docs/fluentform_conversational_frame_head/"
+        },
+        {
+          "title": "fluentform/after_style_generated",
+          "url": "https://fluentforms.com/docs/fluentform_after_style_generated/"
+        },
+        {
+          "title": "fluentform/form_styler",
+          "url": "https://fluentforms.com/docs/fluentform_form_styler/"
+        },
+        {
+          "title": "fluentform/after_tools_container",
+          "url": "https://fluentforms.com/docs/fluentform_after_before_export_import_container/"
+        },
+        {
+          "title": "fluentform/before_tools_container",
+          "url": "https://fluentforms.com/docs/fluentform_before_export_import_container/"
+        },
+        {
+          "title": "fluentform/after_tools_wrapper",
+          "url": "https://fluentforms.com/docs/fluentform_after_export_import_wrapper/"
+        },
+        {
+          "title": "fluentform/before_tools_wrapper",
+          "url": "https://fluentforms.com/docs/fluentform_before_export_import_wrapper/"
+        },
+        {
+          "title": "fluentform/before_global_settings_option_render",
+          "url": "https://fluentforms.com/docs/fluentform_before_global_settings_option_render/"
+        },
+        {
+          "title": "fluentform/after_global_settings_option_render",
+          "url": "https://fluentforms.com/docs/fluentform_after_global_settings_option_render/"
+        },
+        {
+          "title": "fluentform/global_settings_component_{$currentComponent}",
+          "url": "https://fluentforms.com/docs/fluentform_global_settings_component_currentcomponent/"
+        },
+        {
+          "title": "fluentform/after_global_settings_wrapper",
+          "url": "https://fluentforms.com/docs/fluentform_after_global_settings_wrapper/"
+        },
+        {
+          "title": "fluentform/before_global_settings_wrapper",
+          "url": "https://fluentforms.com/docs/fluentform_before_global_settings_wrapper/"
+        },
+        {
+          "title": "fluentform/form_settings_container_{$current_sub_route}",
+          "url": "https://fluentforms.com/docs/fluentform_form_settings_container_current_sub_route/"
+        },
+        {
+          "title": "fluentform/after_form_settings_app",
+          "url": "https://fluentforms.com/docs/fluentform_after_form_settings_app/"
+        },
+        {
+          "title": "fluentform/before_form_settings_app",
+          "url": "https://fluentforms.com/docs/fluentform_before_form_settings_app/"
+        },
+        {
+          "title": "fluentform/addons_page_render_{$current_menu_item}",
+          "url": "https://fluentforms.com/docs/fluentform_addons_page_render_current_menu_item/"
+        },
+        {
+          "title": "fluentform/email_template_after_footer",
+          "url": "https://fluentforms.com/docs/fluentform_email_template_after_footer/"
+        },
+        {
+          "title": "fluentform/email_summary_details",
+          "url": "https://fluentforms.com/docs/fluentform_email_summary_details/"
+        },
+        {
+          "title": "fluentform/integration_action_result",
+          "url": "https://fluentforms.com/docs/ff_integration_action_result/"
+        },
+        {
+          "title": "fluentform/save_global_integration_settings_{ $settingsKey}",
+          "url": "https://fluentforms.com/docs/fluentform_save_global_integration_settings_-settingskey/"
+        },
+        {
+          "title": "fluentform/global_notify_completed",
+          "url": "https://fluentforms.com/docs/fluentform_global_notify_completed/"
+        },
+        {
+          "title": "fluentform/starting_file_upload",
+          "url": "https://fluentforms.com/docs/fluentform_starting_file_upload/"
+        },
+        {
+          "title": "fluentform/submission_note_stored",
+          "url": "https://fluentforms.com/docs/fluentform_new_response_note_added/"
+        },
+        {
+          "title": "fluentform/pre_load_scripts",
+          "url": "https://fluentforms.com/docs/fluentform_pre_load_scripts/"
+        },
+        {
+          "title": "fluentform/render_payment_entries",
+          "url": "https://fluentforms.com/docs/flunetform_render_payment_entries/"
+        },
+        {
+          "title": "fluentform/scripts_registered",
+          "url": "https://fluentforms.com/docs/fluentform_scripts_registered/"
+        },
+        {
+          "title": "fluentform/load_form_assets",
+          "url": "https://fluentforms.com/docs/fluentform_load_form_assets/"
+        },
+        {
+          "title": "fluentform/init_custom_stylesheet",
+          "url": "https://fluentforms.com/docs/fluentform_init_custom_stylesheet/"
+        },
+        {
+          "title": "fluentform/form_application_view_{$route}",
+          "url": "https://fluentforms.com/docs/ff_fluentform_form_application_view_route/"
+        },
+        {
+          "title": "fluentform/after_form_navigation",
+          "url": "https://fluentforms.com/docs/fluentform_after_form_navigation/"
+        },
+        {
+          "title": "fluentform/global_menu",
+          "url": "https://fluentforms.com/docs/fluentform_global_menu/"
+        },
+        {
+          "title": "fluentform/after_permission_set_assignment",
+          "url": "https://fluentforms.com/docs/after_fluentform_permission_set_assignment/"
+        },
+        {
+          "title": "fluentform/before_permission_set_assignment",
+          "url": "https://fluentforms.com/docs/before_fluentform_permission_set_assignment/"
+        },
+        {
+          "title": "fluentform/do_email_report_scheduled_tasks",
+          "url": "https://fluentforms.com/docs/fluentform_do_email_report_scheduled_tasks/"
+        },
+        {
+          "title": "fluentform/maybe_scheduled_jobs",
+          "url": "https://fluentforms.com/docs/fluentform_maybe_scheduled_jobs/"
+        },
+        {
+          "title": "fluentform/rendering_calculation_form",
+          "url": "https://fluentforms.com/docs/ff_rendering_calculation_form/"
+        },
+        {
+          "title": "fluentform/render_item_step_end",
+          "url": "https://fluentforms.com/docs/fluentform_render_item_step_end/"
+        },
+        {
+          "title": "fluentform/render_item_step_start",
+          "url": "https://fluentforms.com/docs/fluentform_render_item_step_start/"
+        },
+        {
+          "title": "fluentform/after_form_render",
+          "url": "https://fluentforms.com/docs/fluentform_after_form_render/"
+        },
+        {
+          "title": "fluentform/form_element_start",
+          "url": "https://fluentforms.com/docs/fluentform_form_element_start/"
+        },
+        {
+          "title": "fluentform/render_item_{$item}",
+          "url": "https://fluentforms.com/docs/fluentform_render_item_item/"
+        },
+        {
+          "title": "fluentform/before_form_screen_wrapper",
+          "url": "https://fluentforms.com/docs/fluentform_before_form_screen_wrapper/"
+        },
+        {
+          "title": "fluentform/after_form_screen_wrapper",
+          "url": "https://fluentforms.com/docs/fluentform_after_form_screen_wrapper/"
+        },
+        {
+          "title": "fluentform/after_editor_start",
+          "url": "https://fluentforms.com/docs/fluentform_after_editor_start/"
+        },
+        {
+          "title": "fluentform/before_editor_start",
+          "url": "https://fluentforms.com/docs/fluentform_before_editor_start/"
+        },
+        {
+          "title": "fluentform/loading_editor_assets",
+          "url": "https://fluentforms.com/docs/fluentform_loading_editor_assets/"
+        },
+        {
+          "title": "fluentform/editor_init",
+          "url": "https://fluentforms.com/docs/fluent_editor_init/"
+        },
+        {
+          "title": "fluentform/after_save_form_settings",
+          "url": "https://fluentforms.com/docs/fluentform_after_save_form_settings/"
+        },
+        {
+          "title": "fluentform/form_imported",
+          "url": "https://fluentforms.com/docs/fluentform_form_imported/"
+        },
+        {
+          "title": "flentform/form_duplicated",
+          "url": "https://fluentforms.com/docs/flentform_form_duplicated/"
+        },
+        {
+          "title": "fluentform/before_insert_payment_form",
+          "url": "https://fluentforms.com/docs/fluentform_before_insert_payment_form/"
+        },
+        {
+          "title": "fluentform/before_form_actions_processing",
+          "url": "https://fluentforms.com/docs/fluentform_before_form_actions_processing/"
+        },
+        {
+          "title": "fluentform/loaded",
+          "url": "https://fluentforms.com/docs/fluentform_loaded/"
+        },
+        {
+          "title": "fluentform/before_form_render",
+          "url": "https://fluentforms.com/docs/fluentform_before_form_render/"
+        },
+        {
+          "title": "fluentform/inserted_new_form",
+          "url": "https://fluentforms.com/docs/fluentform_inserted_new_form/"
+        },
+        {
+          "title": "fluentform/before_submission_confirmation",
+          "url": "https://fluentforms.com/docs/fluentform_before_submission_confirmation/"
+        },
+        {
+          "title": "fluentform/submission_inserted",
+          "url": "https://fluentforms.com/docs/fluentform_submission_inserted/"
+        },
+        {
+          "title": "fluentform/before_insert_submission",
+          "url": "https://fluentforms.com/docs/fluentform_before_insert_submission/"
+        }
+      ]
+    },
+    {
+      "title": "Advance Fields",
+      "slug": "advance-fields",
+      "url": "https://fluentforms.com/documentation/advance-fields/",
+      "file": "categories/advance-fields.md",
+      "page_count": 23,
+      "pages": [
+        {
+          "title": "Quiz Score in Fluent Forms",
+          "url": "https://fluentforms.com/docs/quiz-score-in-fluent-forms/"
+        },
+        {
+          "title": "FluentBooking Field in Fluent Form",
+          "url": "https://fluentforms.com/docs/fluentbooking-field-in-fluent-form/"
+        },
+        {
+          "title": "Save Progress Button in Fluent Forms",
+          "url": "https://fluentforms.com/docs/save-progress-button-in-fluent-forms/"
+        },
+        {
+          "title": "Rich Text Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/rich-text-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Repeat Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/repeat-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Color Picker Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/color-picker-field-in-fluent-forms/"
+        },
+        {
+          "title": "Chained Select Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/chained-select-field-in-fluent-forms/"
+        },
+        {
+          "title": "Net Promoter Score in Fluent Forms",
+          "url": "https://fluentforms.com/docs/net-promoter-score-in-fluent-forms/"
+        },
+        {
+          "title": "Dynamic Field in Fluent Form",
+          "url": "https://fluentforms.com/docs/dynamic-field-in-fluent-form/"
+        },
+        {
+          "title": "Range Slider Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/range-slider-field-in-fluent-forms/"
+        },
+        {
+          "title": "Custom Submit Button in Fluent Forms",
+          "url": "https://fluentforms.com/docs/custom-submit-button-in-fluent-forms/"
+        },
+        {
+          "title": "Password Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/password-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "GDPR Agreement Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/gdpr-agreement-field-in-fluent-forms/"
+        },
+        {
+          "title": "Checkable Grid Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/checkable-grid-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Ratings Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/ratings-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Creating a Multi-Step Form in Fluent Forms",
+          "url": "https://fluentforms.com/docs/creating-a-multi-step-form-in-fluent-forms/"
+        },
+        {
+          "title": "Action Hook Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/action-hook-field-in-fluent-forms/"
+        },
+        {
+          "title": "Terms & Conditions Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/terms-conditions-field-in-fluent-forms/"
+        },
+        {
+          "title": "Shortcode Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/shortcode-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "hCaptcha in Fluent Forms",
+          "url": "https://fluentforms.com/docs/hcaptcha-in-fluent-forms/"
+        },
+        {
+          "title": "reCAPTCHA Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/recaptcha-field-in-fluent-forms/"
+        },
+        {
+          "title": "Section Break in Fluent Forms",
+          "url": "https://fluentforms.com/docs/section-break-in-fluent-forms/"
+        },
+        {
+          "title": "Hidden Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/hidden-input-field-in-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Automation",
+      "slug": "automation",
+      "url": "https://fluentforms.com/documentation/automation/",
+      "file": "categories/automation.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "How to Integrate Platformly with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-platformly-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Zapier with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-zapier-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Webhook with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-webhook-with-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Container Fields",
+      "slug": "container-fields",
+      "url": "https://fluentforms.com/documentation/container-fields/",
+      "file": "categories/container-fields.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Add Accordion Container Fields in Fluent Forms",
+          "url": "https://fluentforms.com/docs/add-accordion-container-fields-in-fluentforms/"
+        },
+        {
+          "title": "Add Repeat Container Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/add-repeat-container-field-in-fluent-forms/"
+        },
+        {
+          "title": "Add Container Fields in Fluent Forms",
+          "url": "https://fluentforms.com/docs/add-container-fields-in-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Crm",
+      "slug": "crm",
+      "url": "https://fluentforms.com/documentation/crm/",
+      "file": "categories/crm.md",
+      "page_count": 10,
+      "pages": [
+        {
+          "title": "Insightly Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/insightly-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Salesforce Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/salesforce-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Zoho CRM Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/zoho-crm-integration-with-fluent-forms/"
+        },
+        {
+          "title": "OnePageCRM Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/onepagecrm-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Salesflare Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/salesflare-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Pipedrive Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/pipedrive-integration-with-fluent-forms/"
+        },
+        {
+          "title": "HubSpot Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/hubspot-integration-with-fluent-forms/"
+        },
+        {
+          "title": "FluentCRM integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/fluentcrm-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Drip Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/drip-integration-with-fluent-forms/"
+        },
+        {
+          "title": "AmoCRM Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/amocrm-integration-with-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Data Definations",
+      "slug": "data-definations",
+      "url": "https://fluentforms.com/documentation/data-definations/",
+      "file": "categories/data-definations.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "$form Object",
+          "url": "https://fluentforms.com/docs/form-object/"
+        },
+        {
+          "title": "$submission_data Array",
+          "url": "https://fluentforms.com/docs/submission_data-array/"
+        }
+      ]
+    },
+    {
+      "title": "Developer Docs",
+      "slug": "developer-docs",
+      "url": "https://fluentforms.com/documentation/developer-docs/",
+      "file": "categories/developer-docs.md",
+      "page_count": 18,
+      "pages": [
+        {
+          "title": "Fluent Forms Changelog",
+          "url": "https://fluentforms.com/docs/changelog/"
+        },
+        {
+          "title": "How to create your own custom field with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-create-your-own-custom-field-with-fluent-forms/"
+        },
+        {
+          "title": "Creating Pretty Conversational Form URL Slug",
+          "url": "https://fluentforms.com/docs/creating-pretty-conversational-form-url-slug/"
+        },
+        {
+          "title": "Useful Snippets",
+          "url": "https://fluentforms.com/docs/useful-snippets/"
+        },
+        {
+          "title": "PHP Filter Hooks",
+          "url": "https://fluentforms.com/docs/php-filter-hooks/"
+        },
+        {
+          "title": "PHP Action Hooks",
+          "url": "https://fluentforms.com/docs/php-action-hooks/"
+        },
+        {
+          "title": "Form PHP API",
+          "url": "https://fluentforms.com/docs/fluent-form-php-api/"
+        },
+        {
+          "title": "Populate dropdown field options from Google Sheet",
+          "url": "https://fluentforms.com/docs/populate-dropdown-field-options-from-google-sheet/"
+        },
+        {
+          "title": "Create Unique Fields in Fluent Forms",
+          "url": "https://fluentforms.com/docs/create-unique-fields-in-fluent-forms/"
+        },
+        {
+          "title": "How to make a strong password requirement in user registration forms with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-make-a-strong-password-requirement-in-user-registration-forms-with-fluent-forms/"
+        },
+        {
+          "title": "How to make a login form with Fluent Form",
+          "url": "https://fluentforms.com/docs/how-to-make-a-login-form-with-fluent-form/"
+        },
+        {
+          "title": "Email Confirmation Field",
+          "url": "https://fluentforms.com/docs/email-confirmation-field/"
+        },
+        {
+          "title": "Email verification with Emailable",
+          "url": "https://fluentforms.com/docs/email-verification-with-emailable/"
+        },
+        {
+          "title": "Limit Email Domains in Fluent Forms Form Submission",
+          "url": "https://fluentforms.com/docs/limit-email-domains-in-fluent-forms-form-submission/"
+        },
+        {
+          "title": "Integration Feed – Fields API",
+          "url": "https://fluentforms.com/docs/integration-feed-fields-api/"
+        },
+        {
+          "title": "Creating Custom SmartCode for Form Editor",
+          "url": "https://fluentforms.com/docs/creating-custom-smartcode-for-form-editor/"
+        },
+        {
+          "title": "Submission Lifecycle",
+          "url": "https://fluentforms.com/docs/submission-lifecycle/"
+        },
+        {
+          "title": "Database Tables of Fluent Forms",
+          "url": "https://fluentforms.com/docs/database-tables-of-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Email Marketing",
+      "slug": "email-marketing",
+      "url": "https://fluentforms.com/documentation/email-marketing/",
+      "file": "categories/email-marketing.md",
+      "page_count": 20,
+      "pages": [
+        {
+          "title": "Gist Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/gist-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Automizy Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/automizy-integration-with-fluent-forms/"
+        },
+        {
+          "title": "ClickSend SMS Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/clicksend-sms-integration-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Campaign Monitor with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-campaign-monitor-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate SendFox with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-sendfox-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Mailjet with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-mailjet-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Mailster with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-mailster-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate MailerLite with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-mailerlite-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Brevo (Formerly Sendinblue) with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-brevo-with-fluent-forms/"
+        },
+        {
+          "title": "Mailpoet Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/mailpoet-integration-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Kit (Former ConvertKit) with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-kit-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate MooSend with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-moosend-with-fluent-forms/"
+        },
+        {
+          "title": "Mautic Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/mautic-integration-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Mailchimp with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-mailchimp-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate iContact with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-icontact-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Gist with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-gist-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate GetResponse with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-getresponse-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate CleverReach with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-cleverreach-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Constant Contact with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-constant-contact-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate ActiveCampaign with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-activecampaign-with-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Features And Functionalities",
+      "slug": "features-and-functionalities",
+      "url": "https://fluentforms.com/documentation/features-and-functionalities/",
+      "file": "categories/features-and-functionalities.md",
+      "page_count": 31,
+      "pages": [
+        {
+          "title": "Advanced Form Validation in Fluent Forms",
+          "url": "https://fluentforms.com/docs/advanced-form-validation-in-fluent-forms/"
+        },
+        {
+          "title": "Translate Forms with WPML",
+          "url": "https://fluentforms.com/docs/translate-forms-with-wpml/"
+        },
+        {
+          "title": "Edit History Feature in Fluent Forms",
+          "url": "https://fluentforms.com/docs/edit-history-feature-in-fluent-forms/"
+        },
+        {
+          "title": "Numeric Calculation in Fluent Forms",
+          "url": "https://fluentforms.com/docs/numeric-calculation-in-fluent-forms/"
+        },
+        {
+          "title": "How to Create a WordPress User Registration Form With Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-create-a-wordpress-user-registration-form-with-fluent-forms/"
+        },
+        {
+          "title": "How to add Calc Values on the Repeat Field",
+          "url": "https://fluentforms.com/docs/how-to-add-calc-values-on-the-repeat-field/"
+        },
+        {
+          "title": "Using JetEngine Custom Fields with Fluent Forms",
+          "url": "https://fluentforms.com/docs/using-jetengine-custom-fields-with-fluent-forms/"
+        },
+        {
+          "title": "Global Inventory Manager in Fluent Forms",
+          "url": "https://fluentforms.com/docs/global-inventory-manager-in-fluent-forms/"
+        },
+        {
+          "title": "Admin Approval Feature in Fluent Forms",
+          "url": "https://fluentforms.com/docs/admin-approval-feature-in-fluent-forms/"
+        },
+        {
+          "title": "Creating a Personality Quiz Form in Fluent Forms",
+          "url": "https://fluentforms.com/docs/creating-a-personality-quiz-form-in-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms Inventory Module",
+          "url": "https://fluentforms.com/docs/fluent-forms-inventory-module/"
+        },
+        {
+          "title": "How to Create a WordPress User Update Form With Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-create-a-wordpress-user-update-form-with-fluent-forms/"
+        },
+        {
+          "title": "Resizeable Container in Fluent Forms",
+          "url": "https://fluentforms.com/docs/resizeable-container-in-fluent-forms/"
+        },
+        {
+          "title": "How to use Meta Box Custom Fields with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-use-meta-box-custom-fields-with-fluent-forms/"
+        },
+        {
+          "title": "Post Selection Module in Fluent Forms",
+          "url": "https://fluentforms.com/docs/post-selection-module-in-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms PDF Module",
+          "url": "https://fluentforms.com/docs/fluent-forms-pdf-module/"
+        },
+        {
+          "title": "Dynamic Input Values In Form Steps | Fluent Forms",
+          "url": "https://fluentforms.com/docs/dynamic-input-values-in-form-steps-fluent-forms/"
+        },
+        {
+          "title": "Mapping Meta Fields with Meta Keys in Fluent Forms",
+          "url": "https://fluentforms.com/docs/mapping-meta-fields-with-meta-keys-in-fluent-forms/"
+        },
+        {
+          "title": "Use ACF to Add a Custom Field in the Post Form",
+          "url": "https://fluentforms.com/docs/use-acf-to-add-a-custom-field-in-the-post-form/"
+        },
+        {
+          "title": "Set Default Form Value from URL Parameters",
+          "url": "https://fluentforms.com/docs/set-default-form-value-from-url-parameters/"
+        },
+        {
+          "title": "Dynamic Default Value in Fluent Forms",
+          "url": "https://fluentforms.com/docs/dynamic-default-value-in-fluent-forms/"
+        },
+        {
+          "title": "Keyboard Navigation & Shortcuts in Fluent Forms",
+          "url": "https://fluentforms.com/docs/keyboard-navigation-shortcuts-in-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms Quiz Module",
+          "url": "https://fluentforms.com/docs/fluent-forms-quiz-module/"
+        },
+        {
+          "title": "Inline Opt-in Form using Fluent Forms",
+          "url": "https://fluentforms.com/docs/inline-opt-in-form-using-fluent-forms/"
+        },
+        {
+          "title": "Unique Field Validation",
+          "url": "https://fluentforms.com/docs/unique-field-validation/"
+        },
+        {
+          "title": "Surveys and Polls in Fluent Forms",
+          "url": "https://fluentforms.com/docs/surveys-and-polls-in-fluent-forms/"
+        },
+        {
+          "title": "Form Scheduling Feature in Fluent Forms",
+          "url": "https://fluentforms.com/docs/form-scheduling-feature-in-fluent-forms/"
+        },
+        {
+          "title": "Form Restrictions Feature in Fluent Forms",
+          "url": "https://fluentforms.com/docs/form-restrictions-feature-in-fluent-forms/"
+        },
+        {
+          "title": "Conditional Confirmation Message in Fluent Forms",
+          "url": "https://fluentforms.com/docs/conditional-confirmation-message-in-fluent-forms/"
+        },
+        {
+          "title": "Set up Forms with Conditional Logic in Fluent Forms",
+          "url": "https://fluentforms.com/docs/set-up-forms-with-conditional-logic-in-fluent-forms/"
+        },
+        {
+          "title": "Set up Double Opt-in emails in Fluent Forms",
+          "url": "https://fluentforms.com/docs/set-up-double-opt-in-emails-in-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Filter Hooks",
+      "slug": "filter-hooks",
+      "url": "https://fluentforms.com/documentation/filter-hooks/",
+      "file": "categories/filter-hooks.md",
+      "page_count": 131,
+      "pages": [
+        {
+          "title": "fluentform/default_upload_path",
+          "url": "https://fluentforms.com/docs/fluentform_default_upload_path/"
+        },
+        {
+          "title": "fluentform/file_type_options",
+          "url": "https://fluentforms.com/docs/fluentform_file_type_options/"
+        },
+        {
+          "title": "fluentform/disable_inputmode",
+          "url": "https://fluentforms.com/docs/fluentform_disable_inputmode/"
+        },
+        {
+          "title": "fluentform/file_upload_validation_error",
+          "url": "https://fluentforms.com/docs/fluentform_file_upload_validation_error/"
+        },
+        {
+          "title": "fluentform/file_upload_validations",
+          "url": "https://fluentforms.com/docs/fluentform_file_upload_validations/"
+        },
+        {
+          "title": "fluentform/default_upload_path",
+          "url": "https://fluentforms.com/docs/fluentform_uploaded_file_name/"
+        },
+        {
+          "title": "fluentform/file_upload_params",
+          "url": "https://fluentforms.com/docs/fluentform_file_upload_params/"
+        },
+        {
+          "title": "fluentform/file_uploaded",
+          "url": "https://fluentforms.com/docs/fluent_file_uploaded/"
+        },
+        {
+          "title": "fluentform/uploader_args",
+          "url": "https://fluentforms.com/docs/fluentform_uploader_args/"
+        },
+        {
+          "title": "fluentform/stripe_checkout_args",
+          "url": "https://fluentforms.com/docs/fluentform_stripe_checkout_args/"
+        },
+        {
+          "title": "fluentform/payment_method_settings_validation_{$method}",
+          "url": "https://fluentforms.com/docs/payment_method_settings_validation_method/"
+        },
+        {
+          "title": "fluentform/payment_submission_data",
+          "url": "https://fluentforms.com/docs/fluentform_with_payment_submission_data/"
+        },
+        {
+          "title": "fluentform/submission_order_items",
+          "url": "https://fluentforms.com/docs/fluentform_submission_order_items/"
+        },
+        {
+          "title": "fluentform/payment_field_{$elementName}",
+          "url": "https://fluentforms.com/docs/fluenform_payment_field_elementname/"
+        },
+        {
+          "title": "fluentform/payment_settings_{$method}",
+          "url": "https://fluentforms.com/docs/fluentform_payment_settings_method/"
+        },
+        {
+          "title": "fluentorm/user_registration_creatable_roles",
+          "url": "https://fluentforms.com/docs/fluentorm_userregistration_creatable_roles/"
+        },
+        {
+          "title": "fluentform/user_registration_feed_fields",
+          "url": "https://fluentforms.com/docs/fluentform_user_registration_feed_fields/"
+        },
+        {
+          "title": "fluentform/user_registration_field_defaults",
+          "url": "https://fluentforms.com/docs/fluentform_user_registration_field_defaults/"
+        },
+        {
+          "title": "fluentform/icontact_request_args",
+          "url": "https://fluentforms.com/docs/fluentform_icontact_request_args/"
+        },
+        {
+          "title": "fluentform/post_selection_label_by",
+          "url": "https://fluentforms.com/docs/fluentform_post_selection_label_by/"
+        },
+        {
+          "title": "fluentform/post_selection_posts_pre_data",
+          "url": "https://fluentforms.com/docs/fluentform_post_selection_posts_pre_data/"
+        },
+        {
+          "title": "fluentform/post_selection_types",
+          "url": "https://fluentforms.com/docs/fluentform_post_selection_types/"
+        },
+        {
+          "title": "fluentform/post_type_selection_types_args",
+          "url": "https://fluentforms.com/docs/fluentform_post_type_selection_types_args/"
+        },
+        {
+          "title": "fluentform/ip_provider",
+          "url": "https://fluentforms.com/docs/fluentform_ip_provider/"
+        },
+        {
+          "title": "fluentform/itl_options",
+          "url": "https://fluentforms.com/docs/fluentform_itl_options/"
+        },
+        {
+          "title": "fluentform/survey_shortcode_defaults",
+          "url": "https://fluentforms.com/docs/fluentform_survey_shortcode_defaults/"
+        },
+        {
+          "title": "fluentform/popup_shortcode_defaults",
+          "url": "https://fluentforms.com/docs/fluentform_popup_shortcode_defaults/"
+        },
+        {
+          "title": "fluentform/nonce_verify",
+          "url": "https://fluentforms.com/docs/fluentform_nonce_verify-2/"
+        },
+        {
+          "title": "fluentform/email_template_colors",
+          "url": "https://fluentforms.com/docs/fluentform_email_template_colors/"
+        },
+        {
+          "title": "fluentform/email_template_email_heading",
+          "url": "https://fluentforms.com/docs/fluentform_email_template_email_heading/"
+        },
+        {
+          "title": "fluentform/email_template_header_image",
+          "url": "https://fluentforms.com/docs/fluentform_email_template_header_image/"
+        },
+        {
+          "title": "fluentform/email_content_type_header",
+          "url": "https://fluentforms.com/docs/fluentform_email_content_type_header/"
+        },
+        {
+          "title": "fluentform/email_summary_footer_text",
+          "url": "https://fluentforms.com/docs/fluentform_email_summary_footer_text/"
+        },
+        {
+          "title": "fluentform/email_summary_body_text",
+          "url": "https://fluentforms.com/docs/fluentform_email_summary_body_text/"
+        },
+        {
+          "title": "fluentform/email_attachments",
+          "url": "https://fluentforms.com/docs/fluentform_email_attachments/"
+        },
+        {
+          "title": "fluentform/email_template_footer_text",
+          "url": "https://fluentforms.com/docs/fluentform_email_template_footer_text/"
+        },
+        {
+          "title": "fluentform/email_styles",
+          "url": "https://fluentforms.com/docs/fluentform_email_styles/"
+        },
+        {
+          "title": "fluentform/email_footer",
+          "url": "https://fluentforms.com/docs/fluentform_email_footer/"
+        },
+        {
+          "title": "fluentform/email_header",
+          "url": "https://fluentforms.com/docs/fluentform_email_header/"
+        },
+        {
+          "title": "fluentform/email_to",
+          "url": "https://fluentforms.com/docs/fluentform_email_to/"
+        },
+        {
+          "title": "fluentform/email_body",
+          "url": "https://fluentforms.com/docs/fluentform_email_body-2/"
+        },
+        {
+          "title": "fluentform/email_subject",
+          "url": "https://fluentforms.com/docs/fluentform_email_subject/"
+        },
+        {
+          "title": "fluentform/submission_message_parse",
+          "url": "https://fluentforms.com/docs/fluentform_submission_message_parse/"
+        },
+        {
+          "title": "fluentform/send_plain_html_email",
+          "url": "https://fluentforms.com/docs/fluentform_send_plain_html_email/"
+        },
+        {
+          "title": "fluentform/item_rules_{$item}",
+          "url": "https://fluentforms.com/docs/fluentform_item_rules_item/"
+        },
+        {
+          "title": "fluentform/validation_message_{$ruleName}",
+          "url": "https://fluentforms.com/docs/fluentform_validation_message_rulename/"
+        },
+        {
+          "title": "fluentform/rendering_field_html_{$element}",
+          "url": "https://fluentforms.com/docs/fluentform_rendering_field_html_/"
+        },
+        {
+          "title": "fluentform/settings_module_{$module}",
+          "url": "https://fluentforms.com/docs/fluentform_settings_module_module/"
+        },
+        {
+          "title": "fluentform/response_render_{element}",
+          "url": "https://fluentforms.com/docs/fluentform_response_render_element/"
+        },
+        {
+          "title": "fluentform/disable_attachment_delete",
+          "url": "https://fluentforms.com/docs/fluentform_disable_attachment_delete/"
+        },
+        {
+          "title": "fluentform/store_submission_note",
+          "url": "https://fluentforms.com/docs/fluentform_add_response_note/"
+        },
+        {
+          "title": "fluentform/submission_notes",
+          "url": "https://fluentforms.com/docs/fluentform_entry_notes/"
+        },
+        {
+          "title": "fluentform/disabled_analytics",
+          "url": "https://fluentforms.com/docs/fluentform-disabled_analytics/"
+        },
+        {
+          "title": "fluentform/submissions_widgets",
+          "url": "https://fluentforms.com/docs/fluentform_single_entry_widgets/"
+        },
+        {
+          "title": "fluentform/form_fields_update",
+          "url": "https://fluentforms.com/docs/fluentform_form_fields_update/"
+        },
+        {
+          "title": "fluentform/create_default_settings",
+          "url": "https://fluentforms.com/docs/fluentform_create_default_settings/"
+        },
+        {
+          "title": "fluentform/auto_read",
+          "url": "https://fluentforms.com/docs/fluentform_auto_read/"
+        },
+        {
+          "title": "fluentforms/recaptcha_v3_ref_score",
+          "url": "https://fluentforms.com/docs/fluentforms_recaptcha_v3_ref_score/"
+        },
+        {
+          "title": "fluentform/all_entry_labels_with_payment",
+          "url": "https://fluentforms.com/docs/fluentform_all_entry_labels_with_payment/"
+        },
+        {
+          "title": "fluentform/all_entry_labels",
+          "url": "https://fluentforms.com/docs/fluentform_all_entry_labels/"
+        },
+        {
+          "title": "fluentform/global_form_vars",
+          "url": "https://fluentforms.com/docs/fluentform_global_form_vars/"
+        },
+        {
+          "title": "fluentform/step_string",
+          "url": "https://fluentforms.com/docs/fluentform_step_string/"
+        },
+        {
+          "title": "fluentform/all_entries",
+          "url": "https://fluentforms.com/docs/fluentform_all_entries/"
+        },
+        {
+          "title": "fluentform/entry_lists_labels",
+          "url": "https://fluentforms.com/docs/fluentform_entry_lists_labels/"
+        },
+        {
+          "title": "fluentform/shortcode_feed_text",
+          "url": "https://fluentforms.com/docs/fluentform_shortcode_feed_text/"
+        },
+        {
+          "title": "fluentform/export_data",
+          "url": "https://fluentforms.com/docs/fluentform_export_data/"
+        },
+        {
+          "title": "fluentform/get_raw_responses",
+          "url": "https://fluentforms.com/docs/fluentform_get_raw_responses/"
+        },
+        {
+          "title": "fluentform/info_shortcode_defaults",
+          "url": "https://fluentforms.com/docs/fluentform_info_shortcode_defaults/"
+        },
+        {
+          "title": "fluentform/shortcode_defaults",
+          "url": "https://fluentforms.com/docs/fluentform_shortcode_defaults/"
+        },
+        {
+          "title": "fluentform/integration_data_{$integrationKey}",
+          "url": "https://fluentforms.com/docs/fluentform_integration_data_integrationkey/"
+        },
+        {
+          "title": "fluentform/global_notification_feed_{$meta_key}",
+          "url": "https://fluentforms.com/docs/fluentform_global_notification_feed_feed-meta_key/"
+        },
+        {
+          "title": "fluentform/mailchimp_keep_existing_tags",
+          "url": "https://fluentforms.com/docs/fluentform_mailchimp_keep_existing_tags/"
+        },
+        {
+          "title": "fluentform/mailchimp_keep_existing_interests",
+          "url": "https://fluentforms.com/docs/fluentform_mailchimp_keep_existing_interests/"
+        },
+        {
+          "title": "fluentform/notifying_async_{$integrationKey}",
+          "url": "https://fluentforms.com/docs/fluentform_notifying_async_integrationkey/"
+        },
+        {
+          "title": "fluentform/global_notification_active_types",
+          "url": "https://fluentforms.com/docs/fluentform_global_notification_active_types/"
+        },
+        {
+          "title": "fluentform/global_integration_fields_{$settingsKey}",
+          "url": "https://fluentforms.com/docs/fluentform_global_integration_fields_settingskey/"
+        },
+        {
+          "title": "fluentform/global_integration_settings_{$settingsKey}",
+          "url": "https://fluentforms.com/docs/fluentform_global_integration_settings_settingskey/"
+        },
+        {
+          "title": "fluentform/global_addons",
+          "url": "https://fluentforms.com/docs/fluentform_global_addons/"
+        },
+        {
+          "title": "fluentform/addons_extra_menu",
+          "url": "https://fluentforms.com/docs/fluentform_addons_extra_menu/"
+        },
+        {
+          "title": "fluentform/editor_element_customization_settings",
+          "url": "https://fluentforms.com/docs/fluent_editor_element_customization_settings/"
+        },
+        {
+          "title": "fluentform/editor_countries",
+          "url": "https://fluentforms.com/docs/fluent_editor_countries/"
+        },
+        {
+          "title": "fluentform/editor_components",
+          "url": "https://fluentforms.com/docs/fluent_editor_components/"
+        },
+        {
+          "title": "fluentform/editor_element_settings_placement",
+          "url": "https://fluentforms.com/docs/fluent_editor_element_settings_placement/"
+        },
+        {
+          "title": "fluentform/editor_validation_rule_settings",
+          "url": "https://fluentforms.com/docs/fluent_editor_validation_rule_settings/"
+        },
+        {
+          "title": "fluentform/editor_init_element_{$element}",
+          "url": "https://fluentforms.com/docs/fluentform_editor_init_element_element/"
+        },
+        {
+          "title": "fluentform/nonce_error",
+          "url": "https://fluentforms.com/docs/fluentform_nonce_error-2/"
+        },
+        {
+          "title": "fluentform/permission_callback",
+          "url": "https://fluentforms.com/docs/fluentform_permission_callback/"
+        },
+        {
+          "title": "fluentform/verify_user_permission_{ $eachPermission}",
+          "url": "https://fluentforms.com/docs/fluentform_verify_user_permission_-eachpermission/"
+        },
+        {
+          "title": "fluentform/truncate_password_values",
+          "url": "https://fluentforms.com/docs/fluentform_truncate_password_values/"
+        },
+        {
+          "title": "fluentform/api_failed_log",
+          "url": "https://fluentforms.com/docs/fluentform_api_failed_log/"
+        },
+        {
+          "title": "fluentform/api_success_log",
+          "url": "https://fluentforms.com/docs/fluentform_api_success_log/"
+        },
+        {
+          "title": "fluentform/api_all_logs",
+          "url": "https://fluentforms.com/docs/fluentform_api_all_logs/"
+        },
+        {
+          "title": "fluentform/permission_set",
+          "url": "https://fluentforms.com/docs/fluentform_permission_set/"
+        },
+        {
+          "title": "fluentform/available_date_formats",
+          "url": "https://fluentforms.com/docs/fluentform-available_date_formats/"
+        },
+        {
+          "title": "fluentform/single_response_data",
+          "url": "https://fluentforms.com/docs/fluentform_single_response_data/"
+        },
+        {
+          "title": "fluentform/is_admin_page",
+          "url": "https://fluentforms.com/docs/fluentform_is_admin_page/"
+        },
+        {
+          "title": "fluentform/dashboard_notices",
+          "url": "https://fluentforms.com/docs/fluentform_dashboard_notices/"
+        },
+        {
+          "title": "fluentform/honeypot_status",
+          "url": "https://fluentforms.com/docs/fluentform_honeypot_status/"
+        },
+        {
+          "title": "fluentform/will_return_html",
+          "url": "https://fluentforms.com/docs/ff_will_return_html/"
+        },
+        {
+          "title": "fluentform/akismet_fields",
+          "url": "https://fluentforms.com/docs/fluentform_akismet_fields/"
+        },
+        {
+          "title": "fluentform/numeric_styles",
+          "url": "https://fluentforms.com/docs/fluentform_numeric_styles/"
+        },
+        {
+          "title": "fluentform/nonce_error",
+          "url": "https://fluentforms.com/docs/fluentform_nonce_error/"
+        },
+        {
+          "title": "fluentform/nonce_verify",
+          "url": "https://fluentforms.com/docs/fluentform_nonce_verify/"
+        },
+        {
+          "title": "fluentform/entry_statuses_core",
+          "url": "https://fluentforms.com/docs/fluentform_entry_statuses_core/"
+        },
+        {
+          "title": "fluentform/payment_smartcode",
+          "url": "https://fluentforms.com/docs/fluentform_payment_smartcode/"
+        },
+        {
+          "title": "fluentform/smartcode_group_{$group}",
+          "url": "https://fluentforms.com/docs/fluentform_smartcode_group_group/"
+        },
+        {
+          "title": "fluentform/all_editor_shortcodes",
+          "url": "https://fluentforms.com/docs/fluentform_all_editor_shortcodes/"
+        },
+        {
+          "title": "fluentform/shortcode_parser_callback_{smart_code_name}",
+          "url": "https://fluentforms.com/docs/fluentform_shortcode_parser_callback_smart_code_name/"
+        },
+        {
+          "title": "fluentform/editor_shortcodes",
+          "url": "https://fluentforms.com/docs/fluentform_editor_shortcodes/"
+        },
+        {
+          "title": "fluentform/html_attributes",
+          "url": "https://fluentforms.com/docs/fluent_form_html_attributes/"
+        },
+        {
+          "title": "fluentform/form_class",
+          "url": "https://fluentforms.com/docs/fluentform_form_class/"
+        },
+        {
+          "title": "fluentform/is_hide_submit_btn_{ $formId}",
+          "url": "https://fluentforms.com/docs/fluentform_is_hide_submit_btn_-formid/"
+        },
+        {
+          "title": "fluentform/load_default_public",
+          "url": "https://fluentforms.com/docs/fluentform_load_default_public/"
+        },
+        {
+          "title": "fluentform/load_styles",
+          "url": "https://fluentforms.com/docs/fluentform_load_styles/"
+        },
+        {
+          "title": "fluentform/skip_no_conflict",
+          "url": "https://fluentforms.com/docs/fluentform_skip_no_conflict/"
+        },
+        {
+          "title": "fluentform/rendering_field_html_{$elementName}",
+          "url": "https://fluentforms.com/docs/fluentform_rendering_field_html_elementname/"
+        },
+        {
+          "title": "fluentform/before_render_item",
+          "url": "https://fluentforms.com/docs/fluentform_before_render_item/"
+        },
+        {
+          "title": "fluentform/honeypot_name",
+          "url": "https://fluentforms.com/docs/fluentform_honeypot_name/"
+        },
+        {
+          "title": "fluentform/validation_errors",
+          "url": "https://fluentforms.com/docs/fluentform_validation_errors/"
+        },
+        {
+          "title": "fluentform/is_handling_submission",
+          "url": "https://fluentforms.com/docs/fluentform_is_handling_submission/"
+        },
+        {
+          "title": "fluentform/is_form_renderable",
+          "url": "https://fluentforms.com/docs/fluentform_is_form_renderable/"
+        },
+        {
+          "title": "fluentform/rendering_form",
+          "url": "https://fluentforms.com/docs/fluentform_rendering_form/"
+        },
+        {
+          "title": "fluentform/filter_email_attachments",
+          "url": "https://fluentforms.com/docs/fluentform_filter_email_attachments/"
+        },
+        {
+          "title": "fluentform/rendering_field_data_select",
+          "url": "https://fluentforms.com/docs/fluenform_rendering_field_data_select/"
+        },
+        {
+          "title": "fluentform/email_body",
+          "url": "https://fluentforms.com/docs/fluentform_email_body/"
+        },
+        {
+          "title": "fluentform/rendering_field_data_{INPUT_KEY}",
+          "url": "https://fluentforms.com/docs/fluenform_rendering_field_data_input_key/"
+        },
+        {
+          "title": "fluentform/entry_statuses_core",
+          "url": "https://fluentforms.com/docs/fluentform_entry_statuses/"
+        },
+        {
+          "title": "fluentform/validate_input_item_{input_key}",
+          "url": "https://fluentforms.com/docs/fluentform_validate_input_item_input_text/"
+        },
+        {
+          "title": "fluentform/submission_confirmation",
+          "url": "https://fluentforms.com/docs/fluentform_submission_confirmation/"
+        },
+        {
+          "title": "fluentform/filter_insert_data",
+          "url": "https://fluentforms.com/docs/fluentform_filter_insert_data/"
+        },
+        {
+          "title": "fluentform/insert_response_data",
+          "url": "https://fluentforms.com/docs/fluentform_insert_response_data/"
+        }
+      ]
+    },
+    {
+      "title": "Form Editor",
+      "slug": "form-editor",
+      "url": "https://fluentforms.com/documentation/form-editor/",
+      "file": "categories/form-editor.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "How to Create a Form with OpenAI ChatGPT",
+          "url": "https://fluentforms.com/docs/how-to-create-a-form-with-openai-chatgpt/"
+        },
+        {
+          "title": "How to Design a Conversational Form",
+          "url": "https://fluentforms.com/docs/how-to-design-a-conversational-form/"
+        },
+        {
+          "title": "How to create a conversational form",
+          "url": "https://fluentforms.com/docs/how-to-create-a-conversational-form/"
+        },
+        {
+          "title": "How to Create a Form with Fluent Forms AI",
+          "url": "https://fluentforms.com/docs/how-to-create-a-form-with-fluent-forms-ai/"
+        },
+        {
+          "title": "Using and Customizing Pre-built Quick Forms in Fluent Forms",
+          "url": "https://fluentforms.com/docs/using-and-customizing-pre-built-quick-forms-in-fluent-forms/"
+        },
+        {
+          "title": "How to Create a Form with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-create-a-form-with-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Form Entries",
+      "slug": "form-entries",
+      "url": "https://fluentforms.com/documentation/form-entries/",
+      "file": "categories/form-entries.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Frontend Entry View",
+          "url": "https://fluentforms.com/docs/front-end-entry-view/"
+        },
+        {
+          "title": "How to Search and Filter Form Entries",
+          "url": "https://fluentforms.com/docs/how-to-search-and-filter-form-entries/"
+        },
+        {
+          "title": "How to Add a Date and Time Stamp to Form Entries",
+          "url": "https://fluentforms.com/docs/how-to-add-a-date-and-time-stamp-to-form-entries/"
+        },
+        {
+          "title": "Partial Entries for Step Forms",
+          "url": "https://fluentforms.com/docs/partial-entries-for-step-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Form Notification",
+      "slug": "form-notification",
+      "url": "https://fluentforms.com/documentation/form-notification/",
+      "file": "categories/form-notification.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Fluent Forms Not Sending Email Confirmations",
+          "url": "https://fluentforms.com/docs/fluent-forms-not-sending-email-confirmations/"
+        },
+        {
+          "title": "Conditional Email Routing",
+          "url": "https://fluentforms.com/docs/conditional-email-routing/"
+        },
+        {
+          "title": "Conditional Email Notification in Fluent Forms",
+          "url": "https://fluentforms.com/docs/conditional-email-notification-in-fluent-forms/"
+        },
+        {
+          "title": "Weekly Email Summary",
+          "url": "https://fluentforms.com/docs/weekly-email-summary/"
+        },
+        {
+          "title": "Setup Form Submission Confirmation Message in Fluent Forms",
+          "url": "https://fluentforms.com/docs/setup-form-submission-confirmation-message-in-fluent-forms/"
+        },
+        {
+          "title": "How to Setup Admin/User Email Notifications",
+          "url": "https://fluentforms.com/docs/how-to-setup-admin-user-email-notifications/"
+        }
+      ]
+    },
+    {
+      "title": "Form Settings Form Building",
+      "slug": "form-settings-form-building",
+      "url": "https://fluentforms.com/documentation/form-settings-form-building/",
+      "file": "categories/form-settings-form-building.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Restrict Blank Form Submission with Fluent Forms",
+          "url": "https://fluentforms.com/docs/restrict-blank-form-submission-with-fluent-forms/"
+        },
+        {
+          "title": "User Login Requirement in Fluent Forms",
+          "url": "https://fluentforms.com/docs/user-login-requirement-in-fluent-forms/"
+        },
+        {
+          "title": "Error Message Customization with Fluent Forms",
+          "url": "https://fluentforms.com/docs/error-message-customization-with-fluent-forms/"
+        },
+        {
+          "title": "Help Message Customization in Fluent Forms",
+          "url": "https://fluentforms.com/docs/help-message-customization-in-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Form Style Template",
+      "slug": "form-style-template",
+      "url": "https://fluentforms.com/documentation/form-style-template/",
+      "file": "categories/form-style-template.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Default Form Style Template",
+          "url": "https://fluentforms.com/docs/default-form-style-template/"
+        },
+        {
+          "title": "Modal/Popup/Lightbox in Fluent Forms",
+          "url": "https://fluentforms.com/docs/modal-popup-lightbox-in-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms Styling/Custom CSS",
+          "url": "https://fluentforms.com/docs/fluent-forms-styling-custom-css/"
+        },
+        {
+          "title": "Official Form Styler of Fluent Forms",
+          "url": "https://fluentforms.com/docs/official-form-styler-of-fluent-forms/"
+        },
+        {
+          "title": "Form Layout Settings in Fluent Forms",
+          "url": "https://fluentforms.com/docs/form-layout-settings-in-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "General Fields",
+      "slug": "general-fields",
+      "url": "https://fluentforms.com/documentation/general-fields/",
+      "file": "categories/general-fields.md",
+      "page_count": 18,
+      "pages": [
+        {
+          "title": "Phone/Mobile Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/phone-mobile-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Custom HTML Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/custom-html-field-in-fluent-forms/"
+        },
+        {
+          "title": "File Upload Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/file-upload-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Image Upload Input Field in Fluent Form",
+          "url": "https://fluentforms.com/docs/image-upload-input-field-in-fluent-form/"
+        },
+        {
+          "title": "Website URL Input Field Guide",
+          "url": "https://fluentforms.com/docs/website-url-input-field-guide/"
+        },
+        {
+          "title": "Time & Date Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/time-date-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Multiple Choice Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/multiple-choice-field-in-fluent-forms/"
+        },
+        {
+          "title": "CheckBox Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/checkbox-field-in-fluent-forms/"
+        },
+        {
+          "title": "Radio Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/radio-field-in-fluent-forms/"
+        },
+        {
+          "title": "Dropdown Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/dropdown-field-in-fluent-forms/"
+        },
+        {
+          "title": "Numeric Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/numeric-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Country List Field in Fluent Form",
+          "url": "https://fluentforms.com/docs/country-list-field-in-fluent-form/"
+        },
+        {
+          "title": "Address Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/address-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Adding a Mask Input Field Guide",
+          "url": "https://fluentforms.com/docs/adding-a-mask-input-field-guide/"
+        },
+        {
+          "title": "Adding a Text Area Input Field",
+          "url": "https://fluentforms.com/docs/adding-a-text-area-input-field/"
+        },
+        {
+          "title": "Adding a Simple Text Input Field",
+          "url": "https://fluentforms.com/docs/adding-a-simple-text-input-field/"
+        },
+        {
+          "title": "Email Address Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/email-address-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Name Input Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/name-input-field-in-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://fluentforms.com/documentation/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Fluent Forms Glossary",
+          "url": "https://fluentforms.com/docs/fluent-forms-glossary/"
+        },
+        {
+          "title": "Getting Started With Fluent Forms",
+          "url": "https://fluentforms.com/docs/getting-started-with-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms User Interface",
+          "url": "https://fluentforms.com/docs/fluent-forms-user-interface/"
+        },
+        {
+          "title": "Upgrade to Fluent Forms Pro Add-on",
+          "url": "https://fluentforms.com/docs/how-to-upgrade-to-fluent-forms-pro/"
+        },
+        {
+          "title": "How to Install Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-install-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Import Export",
+      "slug": "import-export",
+      "url": "https://fluentforms.com/documentation/import-export/",
+      "file": "categories/import-export.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Importing Entries in Fluent Forms",
+          "url": "https://fluentforms.com/docs/importing-entries-in-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms Migrator (WPForms, Contact Form 7, Gravity Forms, Ninja Forms & Caldera Forms)",
+          "url": "https://fluentforms.com/docs/fluent-forms-migrator-wpforms-contact-form-7-gravity-forms-ninja-forms-caldera-forms/"
+        },
+        {
+          "title": "How to Import and Export Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-import-and-export-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Manage Entries",
+      "slug": "manage-entries",
+      "url": "https://fluentforms.com/documentation/manage-entries/",
+      "file": "categories/manage-entries.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Automatically Delete Form Entries",
+          "url": "https://fluentforms.com/docs/automatically-delete-form-entries-in-compliance-settings/"
+        },
+        {
+          "title": "Visual Representation of Form Entries in Fluent Forms",
+          "url": "https://fluentforms.com/docs/visual-representation-of-form-entries-in-fluent-forms/"
+        },
+        {
+          "title": "Edit User Submitted Entries With Fluent Forms",
+          "url": "https://fluentforms.com/docs/edit-user-submitted-entries-with-fluent-forms/"
+        },
+        {
+          "title": "Managing Entries in Fluent Forms",
+          "url": "https://fluentforms.com/docs/managing-entries-in-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "slug": "miscellaneous",
+      "url": "https://fluentforms.com/documentation/miscellaneous/",
+      "file": "categories/miscellaneous.md",
+      "page_count": 12,
+      "pages": [
+        {
+          "title": "How to Transfer a License to a New Domain",
+          "url": "https://fluentforms.com/docs/how-to-transfer-a-license-to-a-new-domain/"
+        },
+        {
+          "title": "Fluent Forms Event Tracking with Google Analytics (GA4) via Google Tag Manager",
+          "url": "https://fluentforms.com/docs/fluent-forms-event-tracking-with-google-analytics-ga4-via-google-tag-manager/"
+        },
+        {
+          "title": "Fluent Forms Global Search",
+          "url": "https://fluentforms.com/docs/fluent-forms-global-search/"
+        },
+        {
+          "title": "Fluent Form API Logs",
+          "url": "https://fluentforms.com/docs/fluent-form-api-logs/"
+        },
+        {
+          "title": "Fluent Forms Activity Logs",
+          "url": "https://fluentforms.com/docs/fluent-forms-activity-logs/"
+        },
+        {
+          "title": "Show Fluent Forms Entries in Frontend using Ninja Tables",
+          "url": "https://fluentforms.com/docs/show-fluent-forms-entries-in-frontend-using-ninja-tables/"
+        },
+        {
+          "title": "Set Scroll Offset of Form Steps",
+          "url": "https://fluentforms.com/docs/set-scroll-offset-of-form-steps/"
+        },
+        {
+          "title": "Email Validation With ClearOut",
+          "url": "https://fluentforms.com/docs/email-validation-with-clearout/"
+        },
+        {
+          "title": "Connecting Fluent Forms from one domain with Fluent CRM to another domain",
+          "url": "https://fluentforms.com/docs/connecting-fluent-forms-from-one-domain-with-fluent-crm-to-another-domain/"
+        },
+        {
+          "title": "Phone Field GEO-Location Provider",
+          "url": "https://fluentforms.com/docs/phone-field-geo-location-provider/"
+        },
+        {
+          "title": "Translate Datepicker Field of Fluent Forms Plugin",
+          "url": "https://fluentforms.com/docs/translate-datepicker-field-of-fluent-forms-plugin/"
+        },
+        {
+          "title": "How to use CSS Ready Classes",
+          "url": "https://fluentforms.com/docs/how-to-use-css-ready-classes/"
+        }
+      ]
+    },
+    {
+      "title": "Notification",
+      "slug": "notification",
+      "url": "https://fluentforms.com/documentation/notification/",
+      "file": "categories/notification.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "How to Integrate Telegram with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-telegram-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Slack with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-slack-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Discord with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-discord-with-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Others",
+      "slug": "others",
+      "url": "https://fluentforms.com/documentation/others/",
+      "file": "categories/others.md",
+      "page_count": 9,
+      "pages": [
+        {
+          "title": "AffiliateWP Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/affiliatewp-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Twilio Integration with Fluent Forms",
+          "url": "https://fluentforms.com/docs/twilio-integration-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Google Maps with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-google-maps-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Notion with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-notion-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate BuddyBoss with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-buddyboss-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Google Sheets with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-google-sheets-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Trello with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-trello-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Airtable with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-airtable-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate OpenAI ChatGPT with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-openai-chatgpt-with-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Payment",
+      "slug": "payment",
+      "url": "https://fluentforms.com/documentation/payment/",
+      "file": "categories/payment.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Configure Payment Settings with Fluent Forms",
+          "url": "https://fluentforms.com/docs/configure-payment-settings-with-fluent-forms/"
+        },
+        {
+          "title": "How to Create a Payment Form with Fluent Form",
+          "url": "https://fluentforms.com/docs/how-to-create-a-payment-form-with-fluent-form/"
+        }
+      ]
+    },
+    {
+      "title": "Payment Fields",
+      "slug": "payment-fields",
+      "url": "https://fluentforms.com/documentation/payment-fields/",
+      "file": "categories/payment-fields.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "Add Coupon Field in Payment Forms",
+          "url": "https://fluentforms.com/docs/add-coupon-field-in-payment-forms/"
+        },
+        {
+          "title": "Add Payment Summary Field in Payment Forms",
+          "url": "https://fluentforms.com/docs/add-payment-summary-field-in-payment-forms/"
+        },
+        {
+          "title": "Add Payment Method Field in Payment Forms",
+          "url": "https://fluentforms.com/docs/add-payment-method-field-in-payment-forms/"
+        },
+        {
+          "title": "Add Item Quantity Field in Payment Forms",
+          "url": "https://fluentforms.com/docs/add-item-quantity-field-in-payment-forms/"
+        },
+        {
+          "title": "Add Custom Payment Amount Field in Payment Forms",
+          "url": "https://fluentforms.com/docs/add-custom-payment-amount-field-in-payment-forms/"
+        },
+        {
+          "title": "Add Subscription Field in Payment Forms",
+          "url": "https://fluentforms.com/docs/add-subscription-field-in-payment-forms/"
+        },
+        {
+          "title": "Add Payment Item Field in Payment Forms",
+          "url": "https://fluentforms.com/docs/add-payment-item-field-in-payment-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Payment Integration",
+      "slug": "payment-integration",
+      "url": "https://fluentforms.com/documentation/payment-integration/",
+      "file": "categories/payment-integration.md",
+      "page_count": 8,
+      "pages": [
+        {
+          "title": "How to integrate Authorize.Net with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-authorize-net-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Square with Fluent Forms (Inline Payment Integration)",
+          "url": "https://fluentforms.com/docs/how-to-integrate-square-with-fluent-forms-inline-payment-integration/"
+        },
+        {
+          "title": "How to Integrate Paystack with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-paystack-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Mollie with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-mollie-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Razorpay with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-razorpay-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate PayPal with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-paypal-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Stripe with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-stripe-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Paddle with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-paddle-with-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Post Fields",
+      "slug": "post-fields",
+      "url": "https://fluentforms.com/documentation/post-fields/",
+      "file": "categories/post-fields.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Add Post Update Field in Post Forms",
+          "url": "https://fluentforms.com/docs/add-post-update-field-in-post-forms/"
+        },
+        {
+          "title": "Add Featured Image Field in Post Forms",
+          "url": "https://fluentforms.com/docs/add-featured-image-field-in-post-forms/"
+        },
+        {
+          "title": "Add Post Excerpt Field in Post Forms",
+          "url": "https://fluentforms.com/docs/add-post-excerpt-field-in-post-forms/"
+        },
+        {
+          "title": "Add Post Content Field in Post Forms",
+          "url": "https://fluentforms.com/docs/add-post-content-field-in-post-forms/"
+        },
+        {
+          "title": "Add Post Title Field in Post Forms",
+          "url": "https://fluentforms.com/docs/add-post-title-field-in-post-forms/"
+        },
+        {
+          "title": "How to Create a Post Form with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-create-a-post-form-with-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Publishing Form Form Building",
+      "slug": "publishing-form-form-building",
+      "url": "https://fluentforms.com/documentation/publishing-form-form-building/",
+      "file": "categories/publishing-form-form-building.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "How to Use Your Forms as Widget on your Sidebar or Footer",
+          "url": "https://fluentforms.com/docs/how-to-use-your-forms-as-widget-on-your-sidebar-or-footer/"
+        },
+        {
+          "title": "Fluent Forms with Oxygen Builder Widget",
+          "url": "https://fluentforms.com/docs/fluent-forms-with-oxygen-builder-widget/"
+        },
+        {
+          "title": "How to embed your forms using Elementor Widget",
+          "url": "https://fluentforms.com/docs/how-to-embed-your-forms-using-elementor-widget/"
+        },
+        {
+          "title": "How to embed your forms directly in Gutenberg layout",
+          "url": "https://fluentforms.com/docs/how-to-embed-your-forms-directly-in-gutenberg-layout/"
+        },
+        {
+          "title": "Dedicated Landing Page in Fluent Forms",
+          "url": "https://fluentforms.com/docs/dedicated-landing-page-in-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Reference Api Classes",
+      "slug": "reference-api-classes",
+      "url": "https://fluentforms.com/documentation/reference-api-classes/",
+      "file": "categories/reference-api-classes.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "BaseProcessor Class",
+          "url": "https://fluentforms.com/docs/baseprocessor-class/"
+        },
+        {
+          "title": "Base Payment Method Class",
+          "url": "https://fluentforms.com/docs/basepaymentmethod-class/"
+        },
+        {
+          "title": "PDF Template Manager Class",
+          "url": "https://fluentforms.com/docs/pdf-templatemanager-class/"
+        },
+        {
+          "title": "Integration Manager Class",
+          "url": "https://fluentforms.com/docs/integrationmanager-class/"
+        },
+        {
+          "title": "BaseFieldManager Class",
+          "url": "https://fluentforms.com/docs/basefieldmanager-class/"
+        }
+      ]
+    },
+    {
+      "title": "Reports",
+      "slug": "reports",
+      "url": "https://fluentforms.com/documentation/reports/",
+      "file": "categories/reports.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Submission Reports",
+          "url": "https://fluentforms.com/docs/submission-reports/"
+        },
+        {
+          "title": "Payment Reports",
+          "url": "https://fluentforms.com/docs/payment-reports/"
+        },
+        {
+          "title": "Reports Dashboard Overview",
+          "url": "https://fluentforms.com/docs/reports-dashboard-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "slug": "security",
+      "url": "https://fluentforms.com/documentation/security/",
+      "file": "categories/security.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "CleanTalk Spam Protection in Fluent Forms",
+          "url": "https://fluentforms.com/docs/cleantalk-spam-protection-in-fluent-forms/"
+        },
+        {
+          "title": "Spam Protection With Honeypot and Google reCAPTCHA in Fluent Forms",
+          "url": "https://fluentforms.com/docs/spam-protection-with-honeypot-and-google-recaptcha-in-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Cloudflare Turnstile with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-cloudflare-turnstile-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate hCaptcha with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-hcaptcha-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate reCAPTCHA with Fluent Forms",
+          "url": "https://fluentforms.com/docs/how-to-integrate-recaptcha-with-fluent-forms/"
+        },
+        {
+          "title": "Integrate Akismet with Fluent Forms",
+          "url": "https://fluentforms.com/docs/integrate-akismet-with-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Shortcode",
+      "slug": "shortcode",
+      "url": "https://fluentforms.com/documentation/shortcode/",
+      "file": "categories/shortcode.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Using Helper Shortcodes in Fluent Forms",
+          "url": "https://fluentforms.com/docs/using-helper-shortcodes-in-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms Shortcodes Overview",
+          "url": "https://fluentforms.com/docs/fluent-forms-shortcodes-overview/"
+        },
+        {
+          "title": "Pre-Fill Form Fields with FluentCRM Data",
+          "url": "https://fluentforms.com/docs/pre-fill-form-fields-with-fluentcrm-data/"
+        },
+        {
+          "title": "Shortcodes in Confirmation Settings",
+          "url": "https://fluentforms.com/docs/shortcodes-in-confirmation-settings/"
+        },
+        {
+          "title": "Form Editor Smart Codes",
+          "url": "https://fluentforms.com/docs/form-editor-smart-codes/"
+        },
+        {
+          "title": "Conditional Shortcodes in Fluent Forms",
+          "url": "https://fluentforms.com/docs/conditional-shortcodes-in-fluent-forms/"
+        }
+      ]
+    },
+    {
+      "title": "Taxonomy Fields",
+      "slug": "taxonomy-fields",
+      "url": "https://fluentforms.com/documentation/taxonomy-fields/",
+      "file": "categories/taxonomy-fields.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Add Tags Taxonomy Field in Post Forms",
+          "url": "https://fluentforms.com/docs/add-tags-taxonomy-field-in-post-forms/"
+        },
+        {
+          "title": "Add Categories Taxonomy Field in Post Forms",
+          "url": "https://fluentforms.com/docs/add-categories-taxonomy-field-in-post-forms/"
+        }
+      ]
+    }
+  ]
+}
