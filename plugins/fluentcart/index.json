@@ -1,9 +1,571 @@
 {
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
-  "documentation_url": "https://fluentcart.com/docs/documentation/",
-  "last_scraped": "2026-03-30T14:34:41.258Z",
-  "total_pages": 0,
-  "failed_urls_count": 0,
-  "sections": []
+  "documentation_url": "https://docs.fluentcart.com/guide/",
+  "last_scraped": "2026-03-30T14:39:54.503Z",
+  "total_pages": 111,
+  "failed_urls_count": 8,
+  "sections": [
+    {
+      "title": "Changelog",
+      "slug": "changelog",
+      "url": "https://docs.fluentcart.com/guide/changelog/",
+      "file": "categories/changelog.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Changelog ​",
+          "url": "https://docs.fluentcart.com/guide/changelog"
+        }
+      ]
+    },
+    {
+      "title": "Customer Dashboard",
+      "slug": "customer-dashboard",
+      "url": "https://docs.fluentcart.com/guide/customer-dashboard/",
+      "file": "categories/customer-dashboard.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "Customer Dashboard ​",
+          "url": "https://docs.fluentcart.com/guide/customer-dashboard/"
+        },
+        {
+          "title": "Downloads ​",
+          "url": "https://docs.fluentcart.com/guide/customer-dashboard/downloads"
+        },
+        {
+          "title": "Licenses ​",
+          "url": "https://docs.fluentcart.com/guide/customer-dashboard/licenses"
+        },
+        {
+          "title": "Profile Management ​",
+          "url": "https://docs.fluentcart.com/guide/customer-dashboard/profile-management"
+        },
+        {
+          "title": "Purchase Confirmation & Invoice Receipt ​",
+          "url": "https://docs.fluentcart.com/guide/customer-dashboard/purchase-confirmation-invoice-receipt"
+        },
+        {
+          "title": "Purchase History ​",
+          "url": "https://docs.fluentcart.com/guide/customer-dashboard/purchase-history"
+        },
+        {
+          "title": "Subscriptions ​",
+          "url": "https://docs.fluentcart.com/guide/customer-dashboard/subscriptions"
+        }
+      ]
+    },
+    {
+      "title": "Customization And Themes",
+      "slug": "customization-and-themes",
+      "url": "https://docs.fluentcart.com/guide/customization-and-themes/",
+      "file": "categories/customization-and-themes.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "Customize Store with Bricks ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/customize-store-with-bricks"
+        },
+        {
+          "title": "FluentCart Shortcodes ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/fluentcart-shortcode"
+        },
+        {
+          "title": "Layout and Template Customization (Block Editor) ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/layout-template-customization"
+        },
+        {
+          "title": "Theme & Page Builder Compatibility ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/theme-compatibility"
+        },
+        {
+          "title": "Translating FluentCart ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/translating-fluentcart"
+        },
+        {
+          "title": "Using Elementor Widgets ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/using-elementor-widgets"
+        },
+        {
+          "title": "Using Gutenberg Blocks ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/using-gutenberg-blocks"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://docs.fluentcart.com/guide/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Dashboard Overview ​",
+          "url": "https://docs.fluentcart.com/guide/getting-started/dashboard-overview"
+        },
+        {
+          "title": "Glossary ​",
+          "url": "https://docs.fluentcart.com/guide/getting-started/fluentcart-glossary"
+        },
+        {
+          "title": "Initial Setup Wizard ​",
+          "url": "https://docs.fluentcart.com/guide/getting-started/initial-setup-wizard"
+        },
+        {
+          "title": "Installation & Activation ​",
+          "url": "https://docs.fluentcart.com/guide/getting-started/installation-activation"
+        },
+        {
+          "title": "Introduction to FluentCart ​",
+          "url": "https://docs.fluentcart.com/guide/getting-started/introduction-fluentcart"
+        }
+      ]
+    },
+    {
+      "title": "Integrations",
+      "slug": "integrations",
+      "url": "https://docs.fluentcart.com/guide/integrations/",
+      "file": "categories/integrations.md",
+      "page_count": 11,
+      "pages": [
+        {
+          "title": "FluentCart with Amazon S3 ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/amazon-s3-integration"
+        },
+        {
+          "title": "Cloudflare Turnstile Integration ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/cloudflare-turnstile-integration"
+        },
+        {
+          "title": "Integrating with FluentAffiliate ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/fluentaffiliate-integration"
+        },
+        {
+          "title": "FluentBooking Integration ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/fluentbooking-integration"
+        },
+        {
+          "title": "FluentCommunity Integrating ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/fluentcommunity-integration"
+        },
+        {
+          "title": "FluentCRM Integration ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/fluentcrm-integration"
+        },
+        {
+          "title": "Fluent Support Integration ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/fluentsupport-integration"
+        },
+        {
+          "title": "Integrations & Addons ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/integration-overview"
+        },
+        {
+          "title": "LearnDash Integration ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/learndash-integration"
+        },
+        {
+          "title": "LifterLMS Integration ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/lifterlms-integration"
+        },
+        {
+          "title": "Webhook Integration ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/webhook-integration"
+        }
+      ]
+    },
+    {
+      "title": "Marketing Sales Tools",
+      "slug": "marketing-sales-tools",
+      "url": "https://docs.fluentcart.com/guide/marketing-sales-tools/",
+      "file": "categories/marketing-sales-tools.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Marketing & Sales Tools ​",
+          "url": "https://docs.fluentcart.com/guide/marketing-sales-tools/"
+        },
+        {
+          "title": "Creating & Managing Coupons ​",
+          "url": "https://docs.fluentcart.com/guide/marketing-sales-tools/creating-managing-coupons/"
+        },
+        {
+          "title": "Adding Coupons ​",
+          "url": "https://docs.fluentcart.com/guide/marketing-sales-tools/creating-managing-coupons/adding-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "Payments Checkout",
+      "slug": "payments-checkout",
+      "url": "https://docs.fluentcart.com/guide/payments-checkout/",
+      "file": "categories/payments-checkout.md",
+      "page_count": 12,
+      "pages": [
+        {
+          "title": "Configuring Payments Overview ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/"
+        },
+        {
+          "title": "Authorize.net Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/authorizenet-settings"
+        },
+        {
+          "title": "Cash on Delivery (COD) & Offline Payments ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/cash-on-delivery-settings"
+        },
+        {
+          "title": "Configuring Stripe via wp-config.php ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/configure-stripe-via-wpconfig"
+        },
+        {
+          "title": "Flutterwave Integration ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/flutterwave-settings"
+        },
+        {
+          "title": "Mercado Pago Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/mercado-pago-settings"
+        },
+        {
+          "title": "Mollie Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/mollie-settings"
+        },
+        {
+          "title": "Paddle Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/paddle-settings"
+        },
+        {
+          "title": "PayPal Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/paypal-settings"
+        },
+        {
+          "title": "Paystack Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/paystack-settings"
+        },
+        {
+          "title": "Razorpay Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/razorpay-settings"
+        },
+        {
+          "title": "Stripe Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/stripe-settings"
+        }
+      ]
+    },
+    {
+      "title": "Product Types Creation",
+      "slug": "product-types-creation",
+      "url": "https://docs.fluentcart.com/guide/product-types-creation/",
+      "file": "categories/product-types-creation.md",
+      "page_count": 14,
+      "pages": [
+        {
+          "title": "Product Types & Creation ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/"
+        },
+        {
+          "title": "Bulk Product Import ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/bulk-product-import"
+        },
+        {
+          "title": "Configuring Product Pricing & Variations ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/configuring-product-pricing"
+        },
+        {
+          "title": "Creating Digital Products ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/creating-digital-products"
+        },
+        {
+          "title": "Creating Digital Products with Licenses ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/creating-digital-products-with-licenses"
+        },
+        {
+          "title": "Creating & Managing Product Brands ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/creating-managing-product-brand"
+        },
+        {
+          "title": "Creating & Managing Product Categories ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/creating-managing-product-categories/"
+        },
+        {
+          "title": "Creating Physical Products ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/creating-physical-products"
+        },
+        {
+          "title": "Creating Product Bundles ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/creating-product-bundles"
+        },
+        {
+          "title": "Defining Upgrade Paths ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/defining-upgrade-paths"
+        },
+        {
+          "title": "Inventory Management ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/inventory-management"
+        },
+        {
+          "title": "Managing Product Integrations (Product-Specific) ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/managing-product-integrations"
+        },
+        {
+          "title": "Managing Subscriptions ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/managing-subscriptions"
+        },
+        {
+          "title": "Product List Overview ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/product-list-overview"
+        }
+      ]
+    },
+    {
+      "title": "Reporting Analytics",
+      "slug": "reporting-analytics",
+      "url": "https://docs.fluentcart.com/guide/reporting-analytics/",
+      "file": "categories/reporting-analytics.md",
+      "page_count": 9,
+      "pages": [
+        {
+          "title": "Reporting & Analytics ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/"
+        },
+        {
+          "title": "Customer Report Dashboard ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/customer-report"
+        },
+        {
+          "title": "Orders Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/orders-report"
+        },
+        {
+          "title": "Product Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/product-report"
+        },
+        {
+          "title": "Refunds Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/refunds-report"
+        },
+        {
+          "title": "Reports Dashboard Overview ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/reports-dashboard-overview"
+        },
+        {
+          "title": "Revenue Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/revenue-report"
+        },
+        {
+          "title": "Sales Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/sales-report"
+        },
+        {
+          "title": "Subscription Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/subscription-report"
+        }
+      ]
+    },
+    {
+      "title": "Settings Configuration",
+      "slug": "settings-configuration",
+      "url": "https://docs.fluentcart.com/guide/settings-configuration/",
+      "file": "categories/settings-configuration.md",
+      "page_count": 17,
+      "pages": [
+        {
+          "title": "Settings & Configuration ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/"
+        },
+        {
+          "title": "Cart & Checkout Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/cart-checkout-settings"
+        },
+        {
+          "title": "Checkout Fields Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/checkout-fields"
+        },
+        {
+          "title": "Email Configuration ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/email-configuration/"
+        },
+        {
+          "title": "Configuring Email Notifications ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/email-configuration/configuring-email-notification"
+        },
+        {
+          "title": "Mailing Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/email-configuration/mailing-settings"
+        },
+        {
+          "title": "Features & Addons ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/features-addons"
+        },
+        {
+          "title": "Managing Global Integrations ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/global-integrations"
+        },
+        {
+          "title": "Invoice & Packing Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/invoice-packing-settings"
+        },
+        {
+          "title": "Licensing Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/licensing-settings"
+        },
+        {
+          "title": "Pages Setup ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/pages-setup"
+        },
+        {
+          "title": "Payment Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/payment-settings"
+        },
+        {
+          "title": "Product Page Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/product-page"
+        },
+        {
+          "title": "Roles & Permissions ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/roles-permissions/"
+        },
+        {
+          "title": "Adding New Roles ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/roles-permissions/adding-new-roles/"
+        },
+        {
+          "title": "Storage Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/storage-settings"
+        },
+        {
+          "title": "Store Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/store-settings"
+        }
+      ]
+    },
+    {
+      "title": "Shipping",
+      "slug": "shipping",
+      "url": "https://docs.fluentcart.com/guide/shipping/",
+      "file": "categories/shipping.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Shipping Overview ​",
+          "url": "https://docs.fluentcart.com/guide/shipping/"
+        },
+        {
+          "title": "Advanced Shipping Calculations ​",
+          "url": "https://docs.fluentcart.com/guide/shipping/advanced-shipping-calculations"
+        },
+        {
+          "title": "Configuring Shipping Zones ​",
+          "url": "https://docs.fluentcart.com/guide/shipping/configuring-shipping-zones"
+        },
+        {
+          "title": "Setting Up Shipping Methods ​",
+          "url": "https://docs.fluentcart.com/guide/shipping/setting-up-shipping-methods"
+        },
+        {
+          "title": "Understanding and Using Shipping Classes ​",
+          "url": "https://docs.fluentcart.com/guide/shipping/understanding-shipping-classes"
+        }
+      ]
+    },
+    {
+      "title": "Store Management",
+      "slug": "store-management",
+      "url": "https://docs.fluentcart.com/guide/store-management/",
+      "file": "categories/store-management.md",
+      "page_count": 16,
+      "pages": [
+        {
+          "title": "Store Management ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/"
+        },
+        {
+          "title": "Customers Management ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/customers-management/"
+        },
+        {
+          "title": "Customer Details Overview ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/customers-management/customer-details-overview"
+        },
+        {
+          "title": "Using Advanced Customer Filters ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/customers-management/using-advanced-customer-filters"
+        },
+        {
+          "title": "Viewing & Searching Customers ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/customers-management/viewing-searching-customers"
+        },
+        {
+          "title": "Orders Management ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/"
+        },
+        {
+          "title": "Changing Order Statuses ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/changing-order-statuses"
+        },
+        {
+          "title": "Collecting Payments for Modified Orders ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/collecting-payments-modified-orders"
+        },
+        {
+          "title": "Creating New Orders (Manually) ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/creating-new-orders"
+        },
+        {
+          "title": "Editing Existing Orders ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/editing-existing-orders"
+        },
+        {
+          "title": "Instant Modal Checkout ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/instant-modal-checkout"
+        },
+        {
+          "title": "Order Bump ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/order-bump"
+        },
+        {
+          "title": "Order Details Overview ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/order-details-overview"
+        },
+        {
+          "title": "Processing Refunds ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/processing-refunds"
+        },
+        {
+          "title": "Viewing & Filtering Orders ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/viewing-filtering-orders"
+        },
+        {
+          "title": "FluentCart status Overview ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/understanding-statuses"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting Support",
+      "slug": "troubleshooting-support",
+      "url": "https://docs.fluentcart.com/guide/troubleshooting-support/",
+      "file": "categories/troubleshooting-support.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Troubleshooting & Support ​",
+          "url": "https://docs.fluentcart.com/guide/troubleshooting-support/"
+        },
+        {
+          "title": "Common Issues & FAQs ​",
+          "url": "https://docs.fluentcart.com/guide/troubleshooting-support/common-issues-faqs"
+        },
+        {
+          "title": "How to Get Support ​",
+          "url": "https://docs.fluentcart.com/guide/troubleshooting-support/how-to-get-support"
+        },
+        {
+          "title": "Understanding Logs ​",
+          "url": "https://docs.fluentcart.com/guide/troubleshooting-support/understanding-logs"
+        }
+      ]
+    }
+  ]
 }

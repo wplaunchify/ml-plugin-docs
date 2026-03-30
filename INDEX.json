@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T14:34:41.259Z",
+  "last_updated": "2026-03-30T14:39:54.506Z",
   "total_plugins": 5,
   "plugins": [
     {
@@ -104,10 +104,24 @@
     {
       "slug": "fluentcart",
       "name": "FluentCart",
-      "documentation_url": "https://fluentcart.com/docs/documentation/",
-      "last_scraped": "2026-03-30T14:34:41.259Z",
-      "page_count": 0,
-      "categories": []
+      "documentation_url": "https://docs.fluentcart.com/guide/",
+      "last_scraped": "2026-03-30T14:39:54.506Z",
+      "page_count": 111,
+      "categories": [
+        "changelog",
+        "customer-dashboard",
+        "customization-and-themes",
+        "getting-started",
+        "integrations",
+        "marketing-sales-tools",
+        "payments-checkout",
+        "product-types-creation",
+        "reporting-analytics",
+        "settings-configuration",
+        "shipping",
+        "store-management",
+        "troubleshooting-support"
+      ]
     }
   ]
 }
