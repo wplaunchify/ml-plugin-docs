@@ -2,8 +2,58 @@
   "plugin_slug": "launchflows",
   "plugin_name": "LaunchFlows",
   "documentation_url": "https://launchflows.com/documentation/",
-  "last_scraped": "2026-03-30T05:22:38.913Z",
-  "total_pages": 0,
+  "last_scraped": "2026-03-30T05:43:22.338Z",
+  "total_pages": 10,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://launchflows.com/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 10,
+      "pages": [
+        {
+          "title": "Hide Out Of Stock & Back Ordered Products",
+          "url": "https://launchflows.com/documentation/hide-out-of-stock-back-ordered-products/"
+        },
+        {
+          "title": "Hide Product Thumbnail In Order Review",
+          "url": "https://launchflows.com/documentation/hide-product-thumbnail-in-order-review/"
+        },
+        {
+          "title": "Remove Product Slug From URL",
+          "url": "https://launchflows.com/documentation/remove-product-slug-from-url/"
+        },
+        {
+          "title": "What Is LaunchFlows?",
+          "url": "https://launchflows.com/documentation/what-is-launchflows/"
+        },
+        {
+          "title": "Install LaunchFlows",
+          "url": "https://launchflows.com/documentation/how-to-install-launchflows/"
+        },
+        {
+          "title": "Quick Start Guide",
+          "url": "https://launchflows.com/documentation/quick-start/"
+        },
+        {
+          "title": "Shortcodes",
+          "url": "https://launchflows.com/documentation/shortcodes/"
+        },
+        {
+          "title": "Recommended Plugins & Services",
+          "url": "https://launchflows.com/documentation/recommended-plugins-services/"
+        },
+        {
+          "title": "Hide Order Comments",
+          "url": "https://launchflows.com/documentation/how-to-hide-order-comments/"
+        },
+        {
+          "title": "Customize The Single Product Layout",
+          "url": "https://launchflows.com/documentation/customize-the-single-product-layout/"
+        }
+      ]
+    }
+  ]
 }
