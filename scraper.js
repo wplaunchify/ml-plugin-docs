@@ -132,10 +132,15 @@ function htmlToMarkdown($, el) {
       case 'h2': md += `\n## ${$n.text().trim()}\n\n`; break;
       case 'h3': md += `\n### ${$n.text().trim()}\n\n`; break;
       case 'h4': md += `\n#### ${$n.text().trim()}\n\n`; break;
-      case 'p': md += `${$n.text().trim()}\n\n`; break;
+      case 'p': {
+        const pInner = htmlToMarkdown($, $n);
+        if (pInner.trim()) md += `${pInner.trim()}\n\n`;
+        break;
+      }
       case 'ul': {
         $n.children('li').each((_, li) => {
-          md += `- ${$(li).text().trim()}\n`;
+          const liContent = htmlToMarkdown($, $(li)).trim();
+          md += `- ${liContent}\n`;
         });
         md += '\n';
         break;
@@ -143,7 +148,8 @@ function htmlToMarkdown($, el) {
       case 'ol': {
         let i = 1;
         $n.children('li').each((_, li) => {
-          md += `${i++}. ${$(li).text().trim()}\n`;
+          const liContent = htmlToMarkdown($, $(li)).trim();
+          md += `${i++}. ${liContent}\n`;
         });
         md += '\n';
         break;
@@ -156,6 +162,13 @@ function htmlToMarkdown($, el) {
       }
       case 'a': {
         const href = $n.attr('href') || '';
+        const childImg = $n.find('img').first();
+        if (childImg.length) {
+          const imgSrc = childImg.attr('src') || childImg.attr('data-src') || childImg.attr('data-lazy-src') || childImg.attr('data-original') || '';
+          const imgAlt = childImg.attr('alt') || '';
+          const resolvedSrc = imgSrc || (href && /\.(jpg|jpeg|png|gif|webp|svg)(\?|$)/i.test(href) ? href : '');
+          if (resolvedSrc) { md += `![${imgAlt}](${resolvedSrc})`; break; }
+        }
         const text = $n.text().trim();
         if (text && href) md += `[${text}](${href})`;
         else if (text) md += text;
@@ -180,8 +193,8 @@ function htmlToMarkdown($, el) {
         break;
       case 'img': {
         const alt = $n.attr('alt') || '';
-        const src = $n.attr('src') || '';
-        if (src) md += `![${alt}](${src})`;
+        const src = $n.attr('src') || $n.attr('data-src') || $n.attr('data-lazy-src') || $n.attr('data-original') || '';
+        if (src && !/data:image/.test(src) && !/placeholder/.test(src)) md += `![${alt}](${src})`;
         break;
       }
       case 'table': {
