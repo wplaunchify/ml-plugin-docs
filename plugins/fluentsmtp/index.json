@@ -1,0 +1,160 @@
+{
+  "plugin_slug": "fluentsmtp",
+  "plugin_name": "FluentSMTP",
+  "documentation_url": "https://fluentsmtp.com/documentation/",
+  "last_scraped": "2026-03-30T14:58:27.984Z",
+  "total_pages": 24,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Alerts",
+      "slug": "alerts",
+      "url": "https://fluentsmtp.com/documentation/alerts/",
+      "file": "categories/alerts.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Email Sending Error Notification Discord",
+          "url": "https://fluentsmtp.com/docs/email-sending-error-notification-discord/"
+        },
+        {
+          "title": "Email Summary",
+          "url": "https://fluentsmtp.com/docs/alerts-email-summary/"
+        },
+        {
+          "title": "Email Sending Error Notification Telegram",
+          "url": "https://fluentsmtp.com/docs/email-sending-error-notification-telegram/"
+        },
+        {
+          "title": "Email Sending Error Notification Slack",
+          "url": "https://fluentsmtp.com/docs/email-sending-error-notification-slack/"
+        }
+      ]
+    },
+    {
+      "title": "Drivers",
+      "slug": "drivers",
+      "url": "https://fluentsmtp.com/documentation/drivers/",
+      "file": "categories/drivers.md",
+      "page_count": 13,
+      "pages": [
+        {
+          "title": "Configure SMTP2GO in FluentSMTP to Send Emails",
+          "url": "https://fluentsmtp.com/docs/configure-smtp2go-in-fluentsmtp-to-send-emails/"
+        },
+        {
+          "title": "Configure FluentSMTP with Microsoft Outlook/Office Email",
+          "url": "https://fluentsmtp.com/docs/configure-fluentsmtp-with-microsoft-outlook-office/"
+        },
+        {
+          "title": "Outlook or Office365 with FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/setup-outlook-with-fluentsmtp/"
+        },
+        {
+          "title": "Connect Gmail or Google Workspace With FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/connect-gmail-or-google-workspace-emails-with-fluentsmtp/"
+        },
+        {
+          "title": "Any Hosting Email Service with FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/set-up-fluent-smtp-with-any-host-or-mailer/"
+        },
+        {
+          "title": "Amazon or AWS SES with FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/set-up-amazon-ses-in-fluent-smtp/"
+        },
+        {
+          "title": "Configure Elastic Email with FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/configure-elastic-email-in-fluent-smtp/"
+        },
+        {
+          "title": "Configure Postmark in FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/configure-postmark-in-fluent-smtp-to-send-emails/"
+        },
+        {
+          "title": "Configure SparkPost with FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/configure-sparkpost-in-fluent-smtp-to-send-emails/"
+        },
+        {
+          "title": "Setup the SendGrid Driver with FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/set-up-the-sendgrid-driver-in-fluent-smtp/"
+        },
+        {
+          "title": "Set Up the Netcore Mailer in FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/set-up-the-pepipost-mailer-in-fluent-smtp/"
+        },
+        {
+          "title": "Configure Mailgun with FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/configure-mailgun-in-fluent-smtp-to-send-emails/"
+        },
+        {
+          "title": "Setup Brevo Mailer with FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/setting-up-sendinblue-mailer-in-fluent-smtp/"
+        }
+      ]
+    },
+    {
+      "title": "Functionality",
+      "slug": "functionality",
+      "url": "https://fluentsmtp.com/documentation/functionality/",
+      "file": "categories/functionality.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Multiple SMTP Connections & Auto Routing",
+          "url": "https://fluentsmtp.com/docs/using-multiple-smtp-drivers-with-fluent-smtp/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://fluentsmtp.com/documentation/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "FluentSMTP Settings",
+          "url": "https://fluentsmtp.com/docs/fluent-smtp-settings/"
+        },
+        {
+          "title": "Introduction to FluentSMTP Dashboard",
+          "url": "https://fluentsmtp.com/docs/introduction-to-fluent-smtp-dashboard/"
+        },
+        {
+          "title": "Configurable Email Delivery Providers",
+          "url": "https://fluentsmtp.com/docs/configurable-email-delivery-providers/"
+        },
+        {
+          "title": "Install and Activate FluentSMTP",
+          "url": "https://fluentsmtp.com/docs/installing-fluent-smtp/"
+        }
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "slug": "miscellaneous",
+      "url": "https://fluentsmtp.com/documentation/miscellaneous/",
+      "file": "categories/miscellaneous.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "FluentSMTP Email Logs Feature",
+          "url": "https://fluentsmtp.com/docs/fluentsmtp-email-logs-feature/"
+        }
+      ]
+    },
+    {
+      "title": "Obtain Smtp Credentials",
+      "slug": "obtain-smtp-credentials",
+      "url": "https://fluentsmtp.com/documentation/obtain-smtp-credentials/",
+      "file": "categories/obtain-smtp-credentials.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "cPanel SMTP Credentials",
+          "url": "https://fluentsmtp.com/docs/cpanel-smtp-credentials/"
+        }
+      ]
+    }
+  ]
+}

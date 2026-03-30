@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T14:58:08.529Z",
-  "total_plugins": 7,
+  "last_updated": "2026-03-30T14:58:27.985Z",
+  "total_plugins": 8,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -158,6 +158,21 @@
         "ticket-importer",
         "ticket-management-using-third-parties",
         "workflow-automation"
+      ]
+    },
+    {
+      "slug": "fluentsmtp",
+      "name": "FluentSMTP",
+      "documentation_url": "https://fluentsmtp.com/documentation/",
+      "last_scraped": "2026-03-30T14:58:27.985Z",
+      "page_count": 24,
+      "categories": [
+        "alerts",
+        "drivers",
+        "functionality",
+        "getting-started",
+        "miscellaneous",
+        "obtain-smtp-credentials"
       ]
     }
   ]
