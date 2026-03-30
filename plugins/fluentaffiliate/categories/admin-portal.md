@@ -49,7 +49,7 @@ The sidebar on the right gives you a real-time snapshot of recent activity.
 - **Recent Referrals:** This list shows the most recent sales made through your affiliate links. You can quickly see the product, the commission amount, the affiliate responsible, and the referral's status (e.g., Unpaid, Pending, or Paid). For detailed referral tracking and management, visit the [Managing Referrals](/guide/admin-portal/managing-referrals) section.
 - **Top Affiliates:** This is your affiliate leaderboard. It highlights your top-performing affiliates, showing their total number of referrals and their total earnings, making it easy to see who your most valuable partners are. You can click on any affiliate to view their detailed [profile](/guide/miscellaneous/affiliate-profile).
 
-![Admin Dashboard Overview in FluentAffiliate](/images/admin-portal/dashboard/admin-dashboard-overview.webp)
+![Admin Dashboard Overview in FluentAffiliate](https://docs.fluentaffiliate.com/images/admin-portal/dashboard/admin-dashboard-overview.webp)
 
 That's a quick overview of your Admin Dashboard in FluentAffiliate.
 
@@ -98,7 +98,7 @@ This is the heart of the page, where every affiliate is listed with their key pe
 - **Registered at:** The date they joined your affiliate program.
 - **Status:** Their current account status (e.g., Active, Pending, Inactive).
 
-![Affiliate Management Dashboard](/images/admin-portal/managing-affiliates/affiliate-list-overview.webp)
+![Affiliate Management Dashboard](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/affiliate-list-overview.webp)
 
 ### Managing Individual Affiliates ​
 
@@ -119,7 +119,7 @@ To the top-right of the table, you'll find icons to help you organize your view:
 - **Column Selector:** Customize your table view using the **Columns** button. Check or uncheck columns based on what info you want to display.
 - **Sort Options:** Sort affiliates by **ID**, **Total Earnings**, **Unpaid Earnings**, **Referrals**, **Visits**, or **Registration Date**. You can also choose between ascending or descending order, then click **Apply** to update.
 
-![Affiliate Search and Sort Tools](/images/admin-portal/managing-affiliates/search-and-sort-tools.webp)
+![Affiliate Search and Sort Tools](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/search-and-sort-tools.webp)
 
 ### Add a New Affiliate ​
 
@@ -127,7 +127,7 @@ Want to manually add an affiliate to your site? Here's how:
 
 Click the **New Affiliate** button. A form will slide in from the right side of your screen.
 
-![Add New Affiliate Button](/images/admin-portal/managing-affiliates/add-new-affiliate-button.webp)
+![Add New Affiliate Button](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/add-new-affiliate-button.webp)
 
 Fill in the following fields:
 
@@ -139,7 +139,7 @@ Fill in the following fields:
 
 Hit the **Create Affiliate** button to create a new affiliate.
 
-![Add Affiliate Form](/images/admin-portal/managing-affiliates/add-affiliate-form.webp)
+![Add Affiliate Form](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/add-affiliate-form.webp)
 
 That's it! Your new affiliate will now appear in the list.
 
@@ -186,7 +186,7 @@ The main table lists every referral with all the important details, giving you a
 - **Type:** The source of the commission, such as a product sale or a form submission.
 - **Date:** The exact date the referral was created.
 
-![Referral Dashboard Overview](/images/admin-portal/managing-referrals/referrals-list-overview.webp)
+![Referral Dashboard Overview](https://docs.fluentaffiliate.com/images/admin-portal/managing-referrals/referrals-list-overview.webp)
 
 ### Managing Individual Referrals ​
 
@@ -201,7 +201,7 @@ At the end of each referral's row is a three-dot menu that contains key actions:
 - **Column Selection**: Choose which columns you want to display in the referral table.
 - **Sort**: Sort your referrals by Amount, ID, or Reference in ascending or descending order. Don't forget to hit **Apply** after sorting.
 
-![Affiliate Search and Sort Tools](/images/admin-portal/managing-referrals/search-and-sort-tools.webp)
+![Affiliate Search and Sort Tools](https://docs.fluentaffiliate.com/images/admin-portal/managing-referrals/search-and-sort-tools.webp)
 
 ### Add a New Referral ​
 
@@ -209,7 +209,7 @@ Want to manually add an referral to your site?
 
 First, click the **New Referral** button.
 
-![Add New Referral Button](/images/admin-portal/managing-referrals/add-new-referral-button.webp)
+![Add New Referral Button](https://docs.fluentaffiliate.com/images/admin-portal/managing-referrals/add-new-referral-button.webp)
 
 After clicking the button, a form will slide in from the right side of your screen. Here, you'll need to fill in the details for the new referral.
 
@@ -225,7 +225,7 @@ Once you have filled in all the necessary details, click the **Create Manual Ref
 
 The new referral will be instantly created and will appear in your main referrals list, assigned to the affiliate you selected.
 
-![Create Manual Referral](/images/admin-portal/managing-referrals/create-manual-referral.webp)
+![Create Manual Referral](https://docs.fluentaffiliate.com/images/admin-portal/managing-referrals/create-manual-referral.webp)
 
 That's it! Your new referral will now appear in the list.
 
@@ -247,7 +247,7 @@ To access this section, navigate from your WordPress dashboard to **FluentAffili
 
 The main Visits page is composed of powerful filtering tools and a detailed data table to give you a complete picture of your affiliate traffic.
 
-![Visit Dashboard](/images/admin-portal/visits/visits-dashboard.png)
+![Visit Dashboard](https://docs.fluentaffiliate.com/images/admin-portal/visits/visits-dashboard.png)
 
 #### Filtering Your Traffic Data ​
 
@@ -299,7 +299,7 @@ Navigate to the **Payout** tab from the FluentAffiliate menu to view your list o
 
 To create a new payout, simply click the **Pay Affiliate** button.
 
-![Payout Dashboard](/images/admin-portal/payout-management/payout-dashboard-overview.webp)
+![Payout Dashboard](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/payout-dashboard-overview.webp)
 
 You'll now land on the payout creation page. This page only appears if there are unpaid affiliates available for payment.
 
@@ -313,21 +313,21 @@ Here's what to fill out:
 
 Once everything is filled out, click the **Next (Review Payout)** button to proceed.
 
-![Payout Creation Form](/images/admin-portal/payout-management/create-new-payout.webp)
+![Payout Creation Form](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/create-new-payout.webp)
 
 Now, on the Payout dashboard, you'll see your newly created payout listed.
 
-![Payout List](/images/admin-portal/payout-management/payout-list-view.webp)
+![Payout List](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/payout-list-view.webp)
 
 Now, click on the **Payout Name** to view its payment details. Here, you can see the total amount paid to your affiliates, along with which affiliates received commissions, the dates, and other important info.
 
 The right sidebar will show you additional payout details.
 
-![Payout Details](/images/admin-portal/payout-management/payout-details-view.webp)
+![Payout Details](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/payout-details-view.webp)
 
 In the Transactions tab, you can generate a report for your transactions. Simply click the **Export** button to download a CSV file with your payout details.
 
-![Transaction Export](/images/admin-portal/payout-management/export-transaction-button.webp)
+![Transaction Export](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/export-transaction-button.webp)
 
 The **CSV** file will include the following details:
 
@@ -338,7 +338,7 @@ The **CSV** file will include the following details:
 - amount
 - currency
 
-![CSV Export Example](/images/admin-portal/payout-management/csv-export-example.webp)
+![CSV Export Example](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/csv-export-example.webp)
 
 ---
 

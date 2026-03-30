@@ -31,7 +31,7 @@ Your **Easy Digital Downloads** integration is now active, allowing affiliates t
 
 In the **Manage** section, you'll find additional settings to customize how affiliate commissions work with your products.
 
-![Integration Settings](/images/integrations/edd/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/edd/integration-setup-options.webp)
 
 ## Configure EDD Settings ​
 
@@ -39,7 +39,7 @@ In the management panel, you can customize exactly how your affiliate program wi
 
 - **Enable Branded Coupon Codes for affiliates:** When you enable this feature, you can offer branded coupon codes to your affiliates. This allows them to promote products with unique discount codes, giving them another powerful marketing opportunity.
 
-![Branded Coupon Code](/images/integrations/edd/branded-coupon-code.webp)
+![Branded Coupon Code](https://docs.fluentaffiliate.com/images/integrations/edd/branded-coupon-code.webp)
 
 For example, this is perfect if you want to give a special coupon code to a social media influencer who is also one of your affiliates.To assign a coupon to a specific affiliate, follow these steps:
 
@@ -51,7 +51,7 @@ For example, this is perfect if you want to give a special coupon code to a soci
 
 NOTE
 
-Before you can assign a coupon, the user must already be an approved affiliate in your FluentAffiliate program.![Branded Coupon Code](/images/integrations/edd/fluentaffilaie-coupon.webp)
+Before you can assign a coupon, the user must already be an approved affiliate in your FluentAffiliate program.![Branded Coupon Code](https://docs.fluentaffiliate.com/images/integrations/edd/fluentaffilaie-coupon.webp)
 
 - **Disable Referrals on Upgrades:** If you sell products with multiple tiers or upgrades, you can check this box to prevent commissions from being generated on upgrade purchases. This ensures affiliates are only rewarded for the initial sale.
 - **Enable custom rate for specific product or categories:** Check this box to set special commission rates for certain digital products or categories, which will override your global default rate.
@@ -68,7 +68,7 @@ You can select multiple custom rate types for products or categories by clicking
 
 Also, you can delete the affiliate rates by clicking the *delete* icon in the top right corner.
 
-![EDD Settings](/images/integrations/edd/custom-affiliate-rates.gif)
+![EDD Settings](https://docs.fluentaffiliate.com/images/integrations/edd/custom-affiliate-rates.gif)
 
 ## Generate an Affiliate Link ​
 
@@ -108,7 +108,7 @@ Your **EasyCart** integration with **FluentAffiliate** is now active, allowing a
 
 In the **Manage** section, you'll find additional settings to customize how affiliate commissions work with your EasyCart products.
 
-![Integration Settings](/images/integrations/easycart/easycart-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/easycart/easycart-setup-options.webp)
 
 ## Configure the EasyCart Settings in FluentAffiliate ​
 
@@ -120,7 +120,7 @@ A pop-up will appear where you'll find **two** important **settings** to manage 
 
 Once you've selected the settings, click the **Update** button to save your changes.
 
-![Configure EasyCart Settings](/images/integrations/easycart/easycart-settings-configuration.webp)
+![Configure EasyCart Settings](https://docs.fluentaffiliate.com/images/integrations/easycart/easycart-settings-configuration.webp)
 
 ## Generate an Affiliate Link ​
 
@@ -128,11 +128,11 @@ After you've finished configuring the EasyCart product settings, the next step i
 
 Once your link is ready, **copy** the affiliate link and share it wherever you like — on social media, emails, blogs, or directly with your audience.
 
-![Affiliate Link](/images/integrations/easycart/affiliate-link-generation.webp)
+![Affiliate Link](https://docs.fluentaffiliate.com/images/integrations/easycart/affiliate-link-generation.webp)
 
 If someone purchases the product using your affiliate link, you'll earn a **commission** based on the settings you've configured.
 
-![Referral](/images/integrations/easycart/referral-overview.webp)
+![Referral](https://docs.fluentaffiliate.com/images/integrations/easycart/referral-overview.webp)
 
 ### Troubleshooting Common Issues ​
 
@@ -169,7 +169,7 @@ Once both plugins are active, the first step is to enable the integration from y
 5. Click on the **toggle** button to enable the integration.
 6. Your **FluentBooking** integration with **FluentAffiliate** is now active. To customize how commissions work, click the **Manage** button.
 
-![Integration Settings](/images/integrations/fluentbooking/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/fluentbooking/integration-setup-options.webp)
 
 ## Configure FluentBooking Settings ​
 
@@ -193,7 +193,7 @@ Click on the **+Add New Group** button to get started.
 
 After configuring your custom rates, click the **Save Settings** button.
 
-![FluentBooking Settings](/images/integrations/fluentbooking/booking-settings-configuration.webp)
+![FluentBooking Settings](https://docs.fluentaffiliate.com/images/integrations/fluentbooking/booking-settings-configuration.webp)
 
 ## Set up an Affiliate for Specific Events ​
 
@@ -205,7 +205,7 @@ You can set up affiliate commissions for specific events you've created in Fluen
 
 NOTE
 
-Make sure the event you choose has a **payment** option **enabled**. Without it, affiliate commissions won’t work for that booking.![Set up Affiliate](/images/integrations/fluentbooking/set-up-affiliate.webp)
+Make sure the event you choose has a **payment** option **enabled**. Without it, affiliate commissions won’t work for that booking.![Set up Affiliate](https://docs.fluentaffiliate.com/images/integrations/fluentbooking/set-up-affiliate.webp)
 
 ## Generate an Affiliate Link ​
 
@@ -213,13 +213,13 @@ After you've configured the settings, your affiliates can start promoting your b
 
 If someone clicks on your link, they’ll be directed to the event booking page, just like shown in the screenshot.
 
-![Booking Page Setup](/images/integrations/fluentbooking/booking-page-setup.webp)
+![Booking Page Setup](https://docs.fluentaffiliate.com/images/integrations/fluentbooking/booking-page-setup.webp)
 
 ## Track Referrals ​
 
 When a user books the event through your affiliate link, your Referral commission will be tracked and added automatically.
 
-![Referral Overview](/images/integrations/fluentbooking/referral-overview.webp)
+![Referral Overview](https://docs.fluentaffiliate.com/images/integrations/fluentbooking/referral-overview.webp)
 
 ### Troubleshooting Common Issues ​
 
@@ -255,7 +255,7 @@ First, you’ll need to activate the FluentCart module inside FluentAffiliate.
 
 Once the integration is active, a **Manage** link will appear. Click this link to configure your FluentCart-specific affiliate settings.
 
-![Integration Settings](/images/integrations/fluentCart/Integration-Settings-FluentAffiliate.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/fluentCart/Integration-Settings-FluentAffiliate.webp)
 
 ### Configure FluentCart Settings ​
 
@@ -266,7 +266,7 @@ Here are the available options:
 - **Enable Affiliate Integration for FluentCart:** This checkbox acts as the master switch for the integration. Ensure it is checked.
 - **Enable Branded Coupon Codes for Affiliates:** When you enable this feature, you can offer branded coupon codes to your affiliates. This allows them to promote products with unique discount codes, giving them another powerful marketing opportunity.
 
-![Branded Coupon Code](/images/integrations/fluentCart/branded-coupon-code.webp)
+![Branded Coupon Code](https://docs.fluentaffiliate.com/images/integrations/fluentCart/branded-coupon-code.webp)
 
 For example, this is perfect if you want to give a special coupon code to a social media influencer who is also one of your affiliates.To assign a coupon to a specific affiliate, follow these steps:
 
@@ -278,7 +278,7 @@ For example, this is perfect if you want to give a special coupon code to a soci
 
 NOTE
 
-Before you can assign a coupon, the user must already be an approved affiliate in your FluentAffiliate program.![Select Affiliate](/images/integrations/fluentCart/select-affiliate-from-fluentcart.webp)
+Before you can assign a coupon, the user must already be an approved affiliate in your FluentAffiliate program.![Select Affiliate](https://docs.fluentaffiliate.com/images/integrations/fluentCart/select-affiliate-from-fluentcart.webp)
 
 - **Disable Referrals on Upgrades:** Check this box to ensure that no referrals will be added on purchased upgrades. This gives you more control over commission payouts for existing customers who upgrade their plan.
 - **Enable custom rate for specific products or categories:** This is a powerful feature that lets you override your default commission rate. Check this box if you want to set special commission rates for specific products or entire product categories.
@@ -307,7 +307,7 @@ delete
 
  icon.
 
-![Add New Group](/images/integrations/fluentCart/specific-product-or-categories.webp)
+![Add New Group](https://docs.fluentaffiliate.com/images/integrations/fluentCart/specific-product-or-categories.webp)
 
 ### Generate an Affiliate Link ​
 
@@ -350,7 +350,7 @@ Your **FluentCRM** integration with **FluentAffiliate** is now active, allowing 
 
 In the **Manage** section, you'll find additional settings to customize how the integration works.
 
-![Integration Settings](/images/integrations/fluentcrm/fluentcrm-integration-settings.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/fluentcrm/fluentcrm-integration-settings.webp)
 
 ## Configure FluentCRM Settings ​
 
@@ -360,7 +360,7 @@ After enabling the integration, a pop-up will appear where you can configure the
 2. In the box that appears, search for and select the specific contact list where you want your new affiliates to be added.
 3. After selecting the options, simply click the **Save Settings** button to save your settings.
 
-![FluentCRM Settings](/images/integrations/fluentcrm/fluentcrm-settings-configuration.webp)
+![FluentCRM Settings](https://docs.fluentaffiliate.com/images/integrations/fluentcrm/fluentcrm-settings-configuration.webp)
 
 ## Set Up Automation ​
 
@@ -372,13 +372,13 @@ To get all the **Triggers**, go to the **Automations** section from the FluentCR
 
 To learn the detailed process of creating a new automation funnel, read this [Documentation](https://fluentcrm.com/docs/introduction-to-fluentcrm-automation/).
 
-![New Automation](/images/integrations/fluentcrm/automation-setup.webp)
+![New Automation](https://docs.fluentaffiliate.com/images/integrations/fluentcrm/automation-setup.webp)
 
 Now, a pop-up page will appear with all the **Popular pre-built funnel templates** for creating automation, where the full funnel diagram will be ready automatically.
 
 If you want to create your automation funnel from scratch, simply click on the **Create from Scratch** tab (e.g., here, I have created a new automation from scratch).
 
-![Pre-built Templates](/images/integrations/fluentcrm/prebuilt-templates.webp)
+![Pre-built Templates](https://docs.fluentaffiliate.com/images/integrations/fluentcrm/prebuilt-templates.webp)
 
 ## Triggers for FluentAffiliate ​
 
@@ -390,7 +390,7 @@ Now, choose your desired trigger. Here, you can give a **Title** to your Automat
 - **New referral created:** If you select this trigger, the automation will start when a new referral is created in FluentAffiliate.
 - **New Payout Created:** If you select this trigger, this will start when a new payout is created in FluentAffiliate. Create targeted campaigns for your affiliates.
 
-![FluentAffiliate Trigger](/images/integrations/fluentcrm/fluentaffiliate-trigger.webp)
+![FluentAffiliate Trigger](https://docs.fluentaffiliate.com/images/integrations/fluentcrm/fluentaffiliate-trigger.webp)
 
 ## Run Email Campaigns ​
 
@@ -400,7 +400,7 @@ First, go to **All Campaigns** under the Emails section from the FluentCRM navba
 
 To learn the detailed process of creating a new Email Campaign, read this [Documentation](https://fluentcrm.com/docs/setting-up-campaign/#create-a-new-campaign).
 
-![Advanced Filters](/images/integrations/fluentcrm/create-campaigns.webp)
+![Advanced Filters](https://docs.fluentaffiliate.com/images/integrations/fluentcrm/create-campaigns.webp)
 
 ## By Advanced Filter ​
 
@@ -412,7 +412,7 @@ Now, click on the **+Add** button to start the filtering, where you will get man
 
 You can add more filters by clicking the **+Add** button, add filters against the existing filter by clicking the **+ OR** button, and delete any existing filter by clicking the **Trash** Icon.
 
-![Advanced Filters](/images/integrations/fluentcrm/advanced-filter-settings.webp)
+![Advanced Filters](https://docs.fluentaffiliate.com/images/integrations/fluentcrm/advanced-filter-settings.webp)
 
 ### Contact Management ​
 
@@ -420,7 +420,7 @@ If you want to filter out your FluentAffiliate contacts, go to the FluentCRM **C
 
 Next, click the **+Add** icon and select the FluentAffiliate option. Here you will find a filter condition. After that, set the condition filter and click the **Filter** button.
 
-![Contact Filtering](/images/integrations/fluentcrm/contact-filtering-options.webp)
+![Contact Filtering](https://docs.fluentaffiliate.com/images/integrations/fluentcrm/contact-filtering-options.webp)
 
 ### Troubleshooting Common Issues ​
 
@@ -459,7 +459,7 @@ Your **Fluent Forms** integration with **FluentAffiliate** is now active, allowi
 
 In the **Manage** section, you'll find additional settings to customize how the integration works.
 
-![Integration Settings](/images/integrations/fluentforms/fluentforms-integration-setup.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/fluentforms/fluentforms-integration-setup.webp)
 
 ## Configure Fluent Forms Settings ​
 
@@ -479,19 +479,19 @@ Once Enable custom rate is checked, you can define specific commission structure
 
 **Save Settings:** Once you're done, click the **Save Settings** button.
 
-![Fluent Forms Settings](/images/integrations/fluentforms/custom-rate-setup.webp)
+![Fluent Forms Settings](https://docs.fluentaffiliate.com/images/integrations/fluentforms/custom-rate-setup.webp)
 
 ## Tracking Affiliate Commission ​
 
 Now, you need to display the form on a specific page or post. Go to the **Fluent Forms dashboard** and copy the **Shortcode** from your selected payment form. Then, paste this shortcode into the content area of your desired **Page** or **Post**. This will embed the form on your website, making it visible and ready for users to interact with.
 
-![Fluent Forms Payment Form](/images/integrations/fluentforms/payment-form.webp)
+![Fluent Forms Payment Form](https://docs.fluentaffiliate.com/images/integrations/fluentforms/payment-form.webp)
 
 Now, copy the **Page** or **Post** URL and paste it into the input field under the [Generate Affiliate Link](/guide/affiliate-portal/generating-affiliate-links) " section after logging into your **Affiliate Area**. Next, click the **Generate** button. Simply click the **Copy** button to grab it quickly and start sharing.
 
-![Fluent Forms Affiliate Area](/images/integrations/fluentforms/affiliate-area.webp)
+![Fluent Forms Affiliate Area](https://docs.fluentaffiliate.com/images/integrations/fluentforms/affiliate-area.webp)
 
-After the user submission this form using this affiliate link, you will get commissions. Below is a screenshot given- ![Fluent Forms Referral](/images/integrations/fluentforms/referral.webp)
+After the user submission this form using this affiliate link, you will get commissions. Below is a screenshot given- ![Fluent Forms Referral](https://docs.fluentaffiliate.com/images/integrations/fluentforms/referral.webp)
 
 ## Creating a Custom Affiliate Registration Form ​
 
@@ -499,7 +499,7 @@ If you want to pay affiliates a commission when someone submits a specific form 
 
 First, create your form using Fluent Forms if you haven't already. Go to the **Edit** screen for the form you want to connect.
 
-![Configure Forms](/images/integrations/fluentforms/edit-form.webp)
+![Configure Forms](https://docs.fluentaffiliate.com/images/integrations/fluentforms/edit-form.webp)
 
 ### Configure the Integration Feed ​
 
@@ -509,7 +509,7 @@ Next, you need to connect this specific form to **FluentAffiliate's** registrati
 2. From the left menu, select **Configure Integrations**.
 3. Click the **Add New Integration** button and choose **Fluent Affiliate Registration Integration** from the dropdown list.
 
-![Settings & Integrations](/images/integrations/fluentforms/fluentaffiliate-integrations.webp)
+![Settings & Integrations](https://docs.fluentaffiliate.com/images/integrations/fluentforms/fluentaffiliate-integrations.webp)
 
 ### Map Your Form Fields ​
 
@@ -533,7 +533,7 @@ This section connects the fields from your Fluent Form to the new user and affil
 - **Promotion Note:** If your form has a field where you ask how the person plans to promote your products, you can map that text area here.
 - **Website URL:** If you ask for the affiliate's website or blog URL, connect that field here.
 
-![Integrations Feed](/images/integrations/fluentforms/form-integration-feed.webp)
+![Integrations Feed](https://docs.fluentaffiliate.com/images/integrations/fluentforms/form-integration-feed.webp)
 
 1. **Create Affiliate for Existing User (must be logged in):** Choose this option for existing members of your site who want to become affiliates. The user must be logged into their WordPress account to use the form. Upon submission, an affiliate profile will be created and linked to their existing user account.
 
@@ -545,7 +545,7 @@ After selecting the user type, you need to tell **FluentAffiliate** which fields
 - **Promotion Note:** If you have a field in your form where you ask potential affiliates how they plan to promote your products, you can connect it here. This is optional.
 - **Website URL:** If you've asked for the affiliate's website or blog address, you can map that form field here. This is also optional.
 
-![Integrations Feed](/images/integrations/fluentforms/form-integration-feed1.webp)
+![Integrations Feed](https://docs.fluentaffiliate.com/images/integrations/fluentforms/form-integration-feed1.webp)
 
 **Auto Approve Affiliate:** Choose whether to use the global setting, automatically approve the affiliate, or keep their application pending for you to review manually.
 
@@ -567,7 +567,7 @@ To display the form on a specific page or post, simply **copy** the **Shortcode*
 
 This will embed the form on your website, making it visible and ready for users to interact with.
 
-![Embedded Form](/images/integrations/fluentforms/embedded-form-settings.webp)
+![Embedded Form](https://docs.fluentaffiliate.com/images/integrations/fluentforms/embedded-form-settings.webp)
 
 ### Troubleshooting Common Issues ​
 
@@ -602,7 +602,7 @@ Your **Formidable** integration with **FluentAffiliate** is now active, allowing
 
 In the **Manage** section, you'll find additional settings to customize how the integration works.
 
-![Formidable Settings](/images/integrations/formidable/formidable-integration-setup.webp)
+![Formidable Settings](https://docs.fluentaffiliate.com/images/integrations/formidable/formidable-integration-setup.webp)
 
 ## Configure the Specific Form ​
 
@@ -611,7 +611,7 @@ To configure a specific form with FluentAffiliate, you need to create a form in 
 1. Once your form is ready, embed it on the desired page or post and save the form.
 2. Next, **copy** the URL of the page or post where you have embedded the form. This **URL** will be used by your affiliates to generate their unique links.
 
-![Formidable Form](/images/integrations/formidable/configure-the-specific-form.webp)
+![Formidable Form](https://docs.fluentaffiliate.com/images/integrations/formidable/configure-the-specific-form.webp)
 
 ## Generate an Affiliate Link ​
 
@@ -619,7 +619,7 @@ After you've completed configuring the Formidable affiliate settings, the next s
 
 Once your link is ready, **copy** the affiliate link and share it wherever you like — on social media, emails, blogs, or directly with your audience.
 
-![Affiliate Link Generation](/images/integrations/formidable/affiliate-link-generation.webp)
+![Affiliate Link Generation](https://docs.fluentaffiliate.com/images/integrations/formidable/affiliate-link-generation.webp)
 
 ### Troubleshooting Common Issues ​
 
@@ -659,7 +659,7 @@ Once you have both plugins activated, follow these steps to connect GiveWP with 
 
 In the **Manage** section, you’ll find additional settings to customize how affiliate commissions work with your GiveWP donation campaign, memberships, and courses.
 
-![Integration Settings](/images/integrations/givewp/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/givewp/integration-setup-options.webp)
 
 ### Configure GiveWP Settings ​
 
@@ -684,7 +684,7 @@ Click on the **+Add New Group** button to create your first custom rate.
 
 Once all your custom rates are added, click the **Save Settings** button to apply them.
 
-![GiveWP Settings](/images/integrations/givewp/givewp-settings-configuration.webp)
+![GiveWP Settings](https://docs.fluentaffiliate.com/images/integrations/givewp/givewp-settings-configuration.webp)
 
 ### Generate an Affiliate Link ​
 
@@ -692,7 +692,7 @@ After you’ve completed configuring the GiveWP settings, the next step is to lo
 
 If someone purchases the campaign or courses using your affiliate link, you’ll earn a **commission** based on the settings you’ve configured.
 
-![Copy Affiliate Link](/images/integrations/givewp/affiliate-link-generation.webp)
+![Copy Affiliate Link](https://docs.fluentaffiliate.com/images/integrations/givewp/affiliate-link-generation.webp)
 
 And that’s it! This is the easy process to integrate GiveWP with FluentAffiliate and start earning commissions.
 
@@ -796,7 +796,7 @@ First, you need to activate the LifterLMS module within FluentAffiliate to allow
 2. Then, click on **Integration Settings** from the left sidebar.
 3. Find **LifterLMS** in the list and click the **toggle** button to switch it on. A **Manage** link will appear.
 
-![Integration Settings](/images/integrations/lifterlms/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/lifterlms/integration-setup-options.webp)
 
 ### Configure LifterLMS Settings ​
 
@@ -805,7 +805,7 @@ Click the **Manage** link to open the settings panel. Here, you can set custom c
 - **Enable Affiliate Integration for LifterLMS:** You must check this box to activate commission tracking for all your LifterLMS courses.
 - **Enable custom rate for specific courses or Course Categories:** Check this box if you want to offer different commission rates for different courses. This is perfect for running special promotions or offering a higher incentive for your signature courses.
 
-![LifterLMS Settings](/images/integrations/lifterlms/lifterlms-settings-configuration.webp)
+![LifterLMS Settings](https://docs.fluentaffiliate.com/images/integrations/lifterlms/lifterlms-settings-configuration.webp)
 
 ### Custom Affiliate Rate Configuration ​
 
@@ -820,7 +820,7 @@ Next, configure the rate itself:
 3. **Add More Rates:** If you want to set another custom rate for a different course, click the **+Add New Group** button. This adds a new row for you to create another rule. You can also remove a rule by clicking the red **Delete** icon.
 4. **Save Settings:** After configuring your custom rates, click the **Save Settings** button to make them live.
 
-![Custom Affiliate Rate Configuration](/images/integrations/lifterlms/configure-custom-affiliate-rate.webp)
+![Custom Affiliate Rate Configuration](https://docs.fluentaffiliate.com/images/integrations/lifterlms/configure-custom-affiliate-rate.webp)
 
 ### Generate an Affiliate Link ​
 
@@ -862,7 +862,7 @@ Your **MemberPress** integration with **FluentAffiliate** is now active, allowin
 
 Click on the **Manage** button and you'll find additional settings to customize how affiliate commissions work with your course or membership.
 
-![Integration Settings](/images/integrations/memberpress/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/memberpress/integration-setup-options.webp)
 
 ## Configure MemberPress Settings ​
 
@@ -873,7 +873,7 @@ Here are the options you can configure:
 - **Enable Affiliate Integration for MemberPress:** You must check this box to activate commission tracking for all your MemberPress forms.
 - **Enable custom rate for specific membership or categories:** Check this box if you want to offer special commission rates for different membership levels or categories. For example, you could offer a higher commission for your premium membership plan to incentivize affiliates to promote it more.
 
-![MemberPress Settings](/images/integrations/memberpress/memberpress-settings-configuration.webp)
+![MemberPress Settings](https://docs.fluentaffiliate.com/images/integrations/memberpress/memberpress-settings-configuration.webp)
 
 ## Custom Affiliate Rate Configuration ​
 
@@ -888,7 +888,7 @@ Next, configure the rate:
 3. **Add More Rates:** To create another custom rate for a different membership, click the **+Add New Group** button. This will add a new row for you to configure another rule. You can also remove a rule by clicking the red *delete* icon.
 4. **Save Settings:** Once you have finished setting up your custom rates, click the **Save Settings** button to apply the changes.
 
-![Custom Affiliate Rate](/images/integrations/memberpress/custom-affiliate-rate-configure.webp)
+![Custom Affiliate Rate](https://docs.fluentaffiliate.com/images/integrations/memberpress/custom-affiliate-rate-configure.webp)
 
 ## Generate an Affiliate Link ​
 
@@ -929,7 +929,7 @@ Your Paid Memberships Pro integration is now active, allowing affiliates to earn
 
 In the **Manage** section, you'll find additional settings to customize how affiliate commissions work.
 
-![Integration Settings](/images/integrations/paid-memberships-pro/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/paid-memberships-pro/integration-setup-options.webp)
 
 ## Configure Paid Memberships Pro Settings ​
 
@@ -938,7 +938,7 @@ After clicking the **Manage** button, a pop-up will appear where you'll find imp
 - **Enable Affiliate Integration for Paid Memberships Pro:** If this option is enabled (checked), affiliates will be able to earn commissions on sales from your Paid Memberships Pro levels.
 - **Enable custom rate for specific membership or categories:** Use this setting to override the default affiliate commission rate. Checking this box allows you to configure specific, custom rates for your affiliates based on different membership levels.
 
-![Paid Memberships Pro Settings](/images/integrations/paid-memberships-pro/paid-memberships-pro-settings-configuration.webp)
+![Paid Memberships Pro Settings](https://docs.fluentaffiliate.com/images/integrations/paid-memberships-pro/paid-memberships-pro-settings-configuration.webp)
 
 ### Custom Affiliate Rate Configuration ​
 
@@ -985,7 +985,7 @@ Your **Paymattic** integration with **FluentAffiliate** is now active, allowing 
 
 In the **Manage** section, you'll find additional settings to customize how affiliate commissions work with your courses.
 
-![Integration Settings](/images/integrations/paymattic/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/paymattic/integration-setup-options.webp)
 
 ## Configure Paymattic Settings ​
 
@@ -996,7 +996,7 @@ Here’s a breakdown of the settings you'll see:
 - **Enable Affiliate Integration for Paymattic:** This is the main switch for the integration. It must be checked for the integration to work.
 - **Enable custom rate for specific forms:** Check this box if you want to set different commission rates for different Paymattic forms. This is perfect if you want to offer a higher commission on a specific product or service form. This setting will override the default commission rate you have set globally.
 
-![Paymattic Settings](/images/integrations/paymattic/paymattic-settings-configuration.webp)
+![Paymattic Settings](https://docs.fluentaffiliate.com/images/integrations/paymattic/paymattic-settings-configuration.webp)
 
 ### Setting a Custom Rate ​
 
@@ -1053,7 +1053,7 @@ First, you need to enable the integration to let the two plugins communicate.
 3. You will see a list of available integrations. Look for **ProfilePress** in this list.
 4. To enable the integration, click on the toggle button next to ProfilePress.
 
-![Enable ProfilePress in FluentAffiliate](/images/integrations/profilepress/enable-profilepress-integration.webp)
+![Enable ProfilePress in FluentAffiliate](https://docs.fluentaffiliate.com/images/integrations/profilepress/enable-profilepress-integration.webp)
 
 Your ProfilePress integration with FluentAffiliate is now active, allowing affiliates to earn referral commissions on your membership sales.
 
@@ -1063,7 +1063,7 @@ Click on the **Manage** button to find additional settings for customizing how a
 
 Click the **Manage** button to open the settings panel. Here, you can set custom commission rates for your membership plans that will override your global affiliate settings.
 
-![ProfilePress affiliate settings configuration panel](/images/integrations/profilepress/profilepress-settings-panel.webp)
+![ProfilePress affiliate settings configuration panel](https://docs.fluentaffiliate.com/images/integrations/profilepress/profilepress-settings-panel.webp)
 
 Here are the options you can configure:
 
@@ -1080,7 +1080,7 @@ After enabling custom rates, you can define your specific commission rules.
 4. **Add More Rates:** To create another custom rate for a different plan, click the **+ Add New Group** button. This will add a new row for you to configure another rule. You can also remove a rule by clicking the red delete icon.
 5. **Save Settings:** Once you have finished setting up your custom rates, click the **Save Settings** button to apply the changes.
 
-![Setting a custom affiliate rate for a ProfilePress membership plan](/images/integrations/profilepress/profilepress-custom-rate.webp)
+![Setting a custom affiliate rate for a ProfilePress membership plan](https://docs.fluentaffiliate.com/images/integrations/profilepress/profilepress-custom-rate.webp)
 
 ## Generate an Affiliate Link ​
 
@@ -1118,7 +1118,7 @@ Activating the connection between SureCart and FluentAffiliate is as simple as f
 
 That's it! Unlike some other integrations, there are no extra settings to configure. Once the toggle is active, your SureCart store is connected to **FluentAffiliate**, and it's ready to start tracking affiliate referrals.
 
-![Integration Settings](/images/integrations/surecart/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/surecart/integration-setup-options.webp)
 
 ## Generate an Affiliate Link ​
 
@@ -1126,7 +1126,7 @@ Once you've finished setting up your **Surecart** product settings, it's time to
 
 When a customer clicks the link and completes a purchase, a commission will be automatically tracked and awarded to the affiliate based on your global commission settings.
 
-![Referral](/images/integrations/surecart/referral-overview.webp)
+![Referral](https://docs.fluentaffiliate.com/images/integrations/surecart/referral-overview.webp)
 
 And that's it! This is how easily you can connect SureCart with FluentAffiliate and start earning commissions by promoting SureCart products.
 
@@ -1154,7 +1154,7 @@ First, you need to enable the integration module to connect the two plugins.
 3. To activate the module, click the **toggle switch** next to TutorLMS.
 4. Once enabled, click the **Manage** button to configure the integration.
 
-![Enable TutorLMS Integration](/images/integrations/tutorlms/tutorlms-integration-fluentaffiliate-1.webp)
+![Enable TutorLMS Integration](https://docs.fluentaffiliate.com/images/integrations/tutorlms/tutorlms-integration-fluentaffiliate-1.webp)
 
 ## Configure TutorLMS Settings ​
 
@@ -1182,7 +1182,7 @@ Next, configure the rate:
 4. **Add More Rules:** To create another custom rate for a different course or category, click the **+ Add New Group** button. This will add a new row for you to configure.
 5. **Save Settings:** Once you have finished setting up all your custom rates, click the **Save Settings** button to apply your changes. A "Success" message will confirm your settings have been saved.
 
-![Set Custom Affiliate Rates for TutorLMS](/images/integrations/tutorlms/tutorlms-integration-fluentaffiliate-2.webp)
+![Set Custom Affiliate Rates for TutorLMS](https://docs.fluentaffiliate.com/images/integrations/tutorlms/tutorlms-integration-fluentaffiliate-2.webp)
 
 That's it! Your affiliates can now generate their unique affiliate links from their dashboard and start promoting your TutorLMS courses. When a sale is made through their link, they will earn a commission based on the global or custom rates you have configured.
 
@@ -1214,7 +1214,7 @@ First, you’ll need to enable the integration from your FluentAffiliate dashboa
 3. From the left sidebar, select the **Integration Settings** option.
 4. Inside the Integration Settings, you will see a list of available integrations. Find **Voxel** in this list and click the toggle button next to it to enable the integration. Once enabled, the toggle will turn blue, and a **Manage** link will appear.
 
-![Integration Settings](/images/integrations/voxel/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/voxel/integration-setup-options.webp)
 
 ## Configure Voxel Settings ​
 
@@ -1225,7 +1225,7 @@ A settings panel will appear with the following options:
 - **Enable Affiliate Integration for Voxel:** This checkbox acts as the master switch for the integration. Ensure it is checked.
 - **Enable custom rate for specific products:** Check this box if you want to set a specific commission rate for certain Voxel products, overriding the global commission settings.
 
-![Voxel Settings](/images/integrations/voxel/voxel-settings-configuration.webp)
+![Voxel Settings](https://docs.fluentaffiliate.com/images/integrations/voxel/voxel-settings-configuration.webp)
 
 ### Custom Affiliate Rate Configuration ​
 
@@ -1236,7 +1236,7 @@ Once you enable custom rates, you can define specific commission rules for indiv
 3. **Add More Rates:** Click the **+Add New Rate** button to add another custom rate for a different product. You can repeat this process to configure as many product-specific rates as you need.
 4. **Save Settings:** Once you’re done, click the **Save Settings** button to apply your changes.
 
-![Voxel Settings](/images/integrations/voxel/custom-affiliate-rates.webp)
+![Voxel Settings](https://docs.fluentaffiliate.com/images/integrations/voxel/custom-affiliate-rates.webp)
 
 ## Generate an Affiliate Link ​
 
@@ -1279,7 +1279,7 @@ Your WooCommerce integration is now active, allowing affiliates to earn referral
 
 Once the toggle is active, a **Manage** link will appear. Click this link to configure your WooCommerce-specific affiliate settings.
 
-![Integration Settings](/images/integrations/woocommerce/integration-setup-options.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/woocommerce/integration-setup-options.webp)
 
 ## Configure WooCommerce Settings ​
 
@@ -1290,7 +1290,7 @@ Here are the available options:
 - **Enable Affiliate Integration for Woocommerce:** This checkbox acts as the master switch for the integration. Ensure it is checked.
 - **Enable Branded Coupon Codes for affiliates:** When you enable this, you can offer branded coupon codes to your affiliates. This allows them to promote products with unique discount codes, giving them another powerful marketing tool. You can manage these codes in the **Discount Codes** editor in WooCommerce.
 
-![Branded Coupon Code](/images/integrations/woocommerce/enable-branded-coupon-code.webp)
+![Branded Coupon Code](https://docs.fluentaffiliate.com/images/integrations/woocommerce/enable-branded-coupon-code.webp)
 
 For example, this is perfect if you want to give a special coupon code to a social media influencer who is also one of your affiliates.To assign a coupon to a specific affiliate, follow these steps:
 
@@ -1302,13 +1302,13 @@ For example, this is perfect if you want to give a special coupon code to a soci
 
 NOTE
 
-Before you can assign a coupon, the user must already be an approved affiliate in your FluentAffiliate program.![Branded Coupon Code](/images/integrations/woocommerce/woocommerce-fluentaffiliate-coupon.webp)
+Before you can assign a coupon, the user must already be an approved affiliate in your FluentAffiliate program.![Branded Coupon Code](https://docs.fluentaffiliate.com/images/integrations/woocommerce/woocommerce-fluentaffiliate-coupon.webp)
 
 - **Enable custom rate for specific product or categories:** This is a powerful feature that lets you override your default commission rate. Check this box if you want to set special commission rates for specific products or entire product categories.
 
 After that, click on the **+Add New Group** button. You will find options to choose how you want to apply this custom rate. You can set it for specific individual products or for entire product categories.
 
-![Integration Settings](/images/integrations/woocommerce/configure-woocommerce-settings.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/woocommerce/configure-woocommerce-settings.webp)
 
 NOTE
 
@@ -1318,7 +1318,7 @@ This feature gives you the flexibility to offer different commission rates for d
 
 You can select multiple custom rate types for products or categories by clicking the **+ Add New Group** button. Also, you can delete the affiliate rates by clicking the delete icon in the top right corner.
 
-![Integration Settings](/images/integrations/woocommerce/select-product-rate.webp)
+![Integration Settings](https://docs.fluentaffiliate.com/images/integrations/woocommerce/select-product-rate.webp)
 
 ## Generate an Affiliate Link ​
 

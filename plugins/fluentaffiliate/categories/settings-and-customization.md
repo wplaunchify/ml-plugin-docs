@@ -18,7 +18,7 @@ FluentAffiliate includes a built-in migration option for Affiliate Manager. This
 
 To access the Migrator Settings, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Migrator Settings**.
 
-![Migrator Settings Overview](/assets/access-migration-settings-1.CFxwZmy2.webp)
+![Migrator Settings Overview](https://docs.fluentaffiliate.com/assets/access-migration-settings-1.CFxwZmy2.webp)
 
 ## Migrating from Affiliate Manager ​
 
@@ -74,7 +74,7 @@ If you need to start fresh or resolve conflicts before migrating, you can use th
 
 WARNING
 
-Data cleanup is irreversible. Always make sure to back up your database before proceeding with a wipe.![Wipe Data Confirmation](/assets/affiliate-manager.Dqz4NWAu.gif)
+Data cleanup is irreversible. Always make sure to back up your database before proceeding with a wipe.![Wipe Data Confirmation](https://docs.fluentaffiliate.com/assets/affiliate-manager.Dqz4NWAu.gif)
 
 ### Troubleshooting ​
 
@@ -98,7 +98,7 @@ The AffiliateWP Migration Settings in FluentAffiliate allow you to easily import
 
 To access the Migrator Settings, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Migrator Settings**.
 
-![Migrator Settings Overview](/images/settings-and-customization/migrator/migrator-settings-overview.webp)
+![Migrator Settings Overview](https://docs.fluentaffiliate.com/images/settings-and-customization/migrator/migrator-settings-overview.webp)
 
 ## Migrating from AffiliateWP ​
 
@@ -149,7 +149,7 @@ This section also includes a **Wipe Data** tool to clean up your FluentAffiliate
 
 > Warning: Data cleanup is irreversible. Always make sure to back up your data before proceeding.
 
-![Wipe Data Confirmation](/images/settings-and-customization/migrator/wipe-data-confirmation.gif)
+![Wipe Data Confirmation](https://docs.fluentaffiliate.com/images/settings-and-customization/migrator/wipe-data-confirmation.gif)
 
 ### Troubleshooting ​
 
@@ -182,7 +182,7 @@ These settings control the default identity for all outgoing emails to ensure pr
 - **Reply to Name:** Enter the name to be used when recipients reply to your emails.
 - **Reply to Email:** Enter the email address to be used for replies to your emails.
 
-![Default Email Settings](/images/settings-and-customization/email/email-settings-overview.webp)
+![Default Email Settings](https://docs.fluentaffiliate.com/images/settings-and-customization/email/email-settings-overview.webp)
 
 ### Email Branding and Content ​
 
@@ -196,7 +196,7 @@ Customize the look and feel of your emails with a logo and a custom footer.
 
 . You can also disable the "powered by FluentAffiliate" text from the footer.
 
-![Email Customization](/images/settings-and-customization/email/email-footer.webp)
+![Email Customization](https://docs.fluentaffiliate.com/images/settings-and-customization/email/email-footer.webp)
 
 ### Admin Notification Settings ​
 
@@ -205,7 +205,7 @@ Configure where and how often administrators receive email notifications and per
 - **Admin Email Address:** Set the address where FluentAffiliate will send admin notifications. You can use commas to list multiple email addresses.
 - **Performance Summary Email Digest:** Select how often you want to receive the performance summary email. The option shown is "Daily".
 
-![Admin Notifications](/images/settings-and-customization/email/admin-email.webp)
+![Admin Notifications](https://docs.fluentaffiliate.com/images/settings-and-customization/email/admin-email.webp)
 
 After adjusting your settings, click the **Save Settings** button to apply the changes.
 
@@ -229,7 +229,7 @@ When creating a new affiliate or editing an existing one:
 
 To access the Affiliate Group settings, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Affiliate Groups**.
 
-![Group Settings](/images/settings-and-customization/group/group-settings-overview.webp)
+![Group Settings](https://docs.fluentaffiliate.com/images/settings-and-customization/group/group-settings-overview.webp)
 
 ### Creating a New Affiliate Group ​
 
@@ -245,13 +245,13 @@ From the Affiliate Groups page, click the **Add New Group** button. You will nee
 
 Once you have filled in the details, click the **Create** button to save the group.
 
-![Group Creation](/images/settings-and-customization/group/create-new-group.webp)
+![Group Creation](https://docs.fluentaffiliate.com/images/settings-and-customization/group/create-new-group.webp)
 
 ### Managing Existing Groups ​
 
 After creating a group, it will appear in a list in the Affiliate Groups section. To manage an existing group, find it in the list, click the three-dot menu, and choose to either **Edit** the group settings or **Delete** the group.
 
-![Group Management](/images/settings-and-customization/group/group-management.webp)
+![Group Management](https://docs.fluentaffiliate.com/images/settings-and-customization/group/group-management.webp)
 
 ### Assigning a Group to an Affiliate ​
 
@@ -337,11 +337,11 @@ Your first step is to enable the multi-domain functionality within your main Flu
 2. Find the **Enable Multi Domain Affiliate** option and click the toggle switch to activate the service. This tells your main site that it's ready to manage other domains.
 3. Next, click the **+ Connect a new site** button to begin the process of linking a new child site.
 
-![Enable Multi Domain](/images/settings-and-customization/multi-domain/multi-domain-manage-1.webp)
+![Enable Multi Domain](https://docs.fluentaffiliate.com/images/settings-and-customization/multi-domain/multi-domain-manage-1.webp)
 
 1. A pop-up titled "Connect a new site" will appear. It will have a field asking for the child site's 'config JSON'. For now, simply keep this pop-up open on your main site. We need to go get this special code from your child site first.
 
-![Cofig JSON popup](/images/settings-and-customization/multi-domain/multi-domain-manage-2.webp)
+![Cofig JSON popup](https://docs.fluentaffiliate.com/images/settings-and-customization/multi-domain/multi-domain-manage-2.webp)
 
 ### Step 2: Install FluentConnect on Your Child Site ​
 
@@ -349,12 +349,12 @@ Now, open a new browser tab and log in to the WordPress dashboard of the child s
 
 1. On your child site's dashboard, you need to install the **FluentConnect Addon**. This lightweight plugin is designed specifically to create a secure bridge between your child site and your main FluentAffiliate dashboard. You can download this addon by clicking the "[Learn more about this module](https://github.com/WPManageNinja/fluent-affiliate-connector)" link on the main site's Domain Management page. Then, go to **Plugins > Add New**, upload the addon's .zip file, and activate it.
 
-![Installing FluentConnect Addon](/images/settings-and-customization/multi-domain/multi-domain-manage-3.webp)
+![Installing FluentConnect Addon](https://docs.fluentaffiliate.com/images/settings-and-customization/multi-domain/multi-domain-manage-3.webp)
 
 1. Once the addon is activated, a new menu item will appear. Navigate to **Settings → FluentAffiliate Connector** from the left sidebar.
 2. This screen is dedicated to the connection process. You will see a large text box labeled **This site config (Copy this code and paste in your main site)**. This JSON code is a unique fingerprint for your child site. Copy this entire code.
 
-![Config JSON](/images/settings-and-customization/multi-domain/multi-domain-manage-4.webp)
+![Config JSON](https://docs.fluentaffiliate.com/images/settings-and-customization/multi-domain/multi-domain-manage-4.webp)
 
 ### Step 3: Generate the Connection Token on the Main Site ​
 
@@ -363,11 +363,11 @@ With the config JSON copied, return to the browser tab with your main site's das
 1. Paste the JSON code you just copied from your child site into the text field labeled "Please provide the child site's config JSON".
 2. Click the **Issue New Connect Config** button. Your main site will now securely communicate with your child site using the code you provided.
 
-![Issue New Connect](/images/settings-and-customization/multi-domain/multi-domain-manage-5.webp)
+![Issue New Connect](https://docs.fluentaffiliate.com/images/settings-and-customization/multi-domain/multi-domain-manage-5.webp)
 
 1. After a moment, you will see a **Success** message and a new field will appear containing a secure token. This token is a one-time key to authorize the connection. Click the **Copy** button to copy this server token.
 
-![Server Token](/images/settings-and-customization/multi-domain/multi-domain-manage-6.webp)
+![Server Token](https://docs.fluentaffiliate.com/images/settings-and-customization/multi-domain/multi-domain-manage-6.webp)
 
 ### Step 4: Finalize the Connection on the Child Site ​
 
@@ -381,7 +381,7 @@ Settings → FluentAffiliate Connector
 ). Paste the new token you copied from your main site into the field labeled **Connection Token from Main Website**.
 2. Click the **Validate Token and Enable Connection** button. The addon will verify the token with your main site.
 
-![Validate Token and Enable Connection](/images/settings-and-customization/multi-domain/multi-domain-manage-7.webp)
+![Validate Token and Enable Connection](https://docs.fluentaffiliate.com/images/settings-and-customization/multi-domain/multi-domain-manage-7.webp)
 
 1. Once validated, the page will refresh to confirm the link is active, displaying the message: **Your site is connected with [Main Site Name]**. The connection is now complete!
 
@@ -416,7 +416,7 @@ For each notification, you can see its **Title**, the intended **Receiver** (eit
 
 To modify a specific email, click the **pencil icon** on the right.
 
-![Notification](/images/settings-and-customization/email/notification-settings/notification-settings-1.webp)
+![Notification](https://docs.fluentaffiliate.com/images/settings-and-customization/email/notification-settings/notification-settings-1.webp)
 
 ### Customizing an Email Notification ​
 
@@ -425,7 +425,7 @@ Clicking the pencil icon opens the **Update Email Notification** pop-up, where y
 - **Enable this email notification:** At the top of the pop-up, this checkbox allows you to enable or disable the specific email you are editing.
 - **Email Subject:** You can customize the subject line of the email. Dynamic information can be added here by using SmartCodes.
 
-![Customize Email Notification](/images/settings-and-customization/email/notification-settings/notification-settings-2.webp)
+![Customize Email Notification](https://docs.fluentaffiliate.com/images/settings-and-customization/email/notification-settings/notification-settings-2.webp)
 
 #### Email Body Type ​
 
@@ -434,7 +434,7 @@ You have two options for the email's content:
 - **Default Body:** This option uses a standard, pre-written template for the email notification.
 - **Customized Body:** Selecting this option reveals a rich text editor, allowing you to create a completely custom email body from scratch. The editor includes standard formatting tools, an "Add media" button, and "Visual" and "Code" tabs.
 
-![Email Body](/images/settings-and-customization/email/notification-settings/notification-settings-3.webp)
+![Email Body](https://docs.fluentaffiliate.com/images/settings-and-customization/email/notification-settings/notification-settings-3.webp)
 
 #### Using SmartCodes ​
 
@@ -443,7 +443,7 @@ To create dynamic and personalized emails, you can use SmartCodes to insert info
 - Click the **+ SmartCode** or **Add SmartCodes** button to reveal a list of available codes.
 - Simply click a SmartCode from the list to insert it into your email content.
 
-![Notification Shortcode](/images/settings-and-customization/email/notification-settings/notification-settings-4.webp)
+![Notification Shortcode](https://docs.fluentaffiliate.com/images/settings-and-customization/email/notification-settings/notification-settings-4.webp)
 
 After you have finished customizing the notification, click the **Save Settings** button to apply your changes.
 
@@ -463,7 +463,7 @@ Once a manager is assigned permissions, their view of the FluentAffiliate dashbo
 
 To access this feature, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Permission Management**.
 
-![Permission Management](/images/settings-and-customization/permission-management/permission-management-1.webp)
+![Permission Management](https://docs.fluentaffiliate.com/images/settings-and-customization/permission-management/permission-management-1.webp)
 
 When you first visit the page, you will see a prompt to add your first manager.
 
@@ -472,7 +472,7 @@ When you first visit the page, you will see a prompt to add your first manager.
 3. **Assign Permissions:** Below the user selection, you will see a list of available permissions. Check the boxes for the specific capabilities you want to grant to this manager. You can assign a combination of read-only and full-access permissions.
 4. Once you have configured their access, click the **“Add Manager”** button at the bottom of the sidebar to save. A success message will confirm that the manager has been added.
 
-![Permission Management](/images/settings-and-customization/permission-management/permission-management-2.webp)
+![Permission Management](https://docs.fluentaffiliate.com/images/settings-and-customization/permission-management/permission-management-2.webp)
 
 ### Managing Existing Managers ​
 
@@ -483,7 +483,7 @@ To modify a manager’s access, use the icons on the right:
 - **Edit Manager (Pencil Icon):** Click this to re-open the sidebar for that specific manager. You can then add or remove permissions by checking or unchecking the boxes and saving your changes.
 - **Delete Manager (Trash Can Icon):** Click this to remove the user’s manager role. This will revoke all their FluentAffiliate permissions but **will not** delete their WordPress user account.
 
-![Permission Management](/images/settings-and-customization/permission-management/permission-management-3.webp)
+![Permission Management](https://docs.fluentaffiliate.com/images/settings-and-customization/permission-management/permission-management-3.webp)
 
 #### Understanding the Available Permissions ​
 
@@ -525,7 +525,7 @@ ref
 - **Default Referral Format:** Choose the default format for how referral links will be generated. Here you will get two options for default referral format "Affiliate ID" and "WordPress Username".
 - **Rate:** Set the standard commission rate for referrals, which can be a percentage or a fixed amount. The example value is 20 percent.
 
-![Referral Settings](/images/settings-and-customization/referral/referral-settings-overview.webp)
+![Referral Settings](https://docs.fluentaffiliate.com/images/settings-and-customization/referral/referral-settings-overview.webp)
 
 ### Financial Formatting ​
 
@@ -544,7 +544,7 @@ Define the logic for how affiliates are credited for referrals and how long they
 - **Credit:** Determine which affiliate receives credit for a referral. You can credit the **First Affiliate** or the **Last Affiliate**.
 - **Cookie Duration:** Set the duration of the cookie used to track referrals, specified in days. The example shows a duration of 30 days.
 
-![Recurring Settings](/images/settings-and-customization/referral/recurring-commission-settings.webp)
+![Recurring Settings](https://docs.fluentaffiliate.com/images/settings-and-customization/referral/recurring-commission-settings.webp)
 
 ### Page, Cost, & Subscription Settings ​
 
@@ -560,7 +560,7 @@ This section allows you to configure page assignments, cost exclusions, and rule
 - **Exclude Tax:** Enable this to exclude tax amounts from the calculation of referral commissions.
 - **Disable Self Referral:** Enable this to prevent affiliates from earning commissions on their own purchases.
 
-![Cost and Tax Settings](/images/settings-and-customization/referral/recurring-commission-settings.webp)
+![Cost and Tax Settings](https://docs.fluentaffiliate.com/images/settings-and-customization/referral/recurring-commission-settings.webp)
 
 #### Affiliate Commission on Subscription Renewal ​
 
@@ -574,7 +574,7 @@ To use this feature, you need [FluentAffiliate Pro](https://fluentaffiliate.com/
 
 After configuring all your settings, click the **Save Settings** button to apply the changes.
 
-![Subscription Renewal](/images/settings-and-customization/referral/comission-Renewal.webp)
+![Subscription Renewal](https://docs.fluentaffiliate.com/images/settings-and-customization/referral/comission-Renewal.webp)
 
 ---
 
@@ -603,7 +603,7 @@ At the top of the page, you will find the two primary settings that control your
 - **When Enabled (Manual Approval):** If you check this box, you have full control over who joins your program. New applicants will have their status set to "pending." You will then need to navigate to their individual affiliate profile to manually review their application and approve them. This is the recommended setting if you want to screen your affiliates before they can start promoting your site.
 - **When Disabled (Automatic Approval):** If you leave this box unchecked, the approval process is hands-off. Any user who successfully completes the registration form will instantly become an active affiliate and can begin generating referral links immediately.
 
-![Registration Settings](/images/settings-and-customization/registration-settings/registration-settings.webp)
+![Registration Settings](https://docs.fluentaffiliate.com/images/settings-and-customization/registration-settings/registration-settings.webp)
 
 ### Managing Registration Fields ​
 
@@ -644,7 +644,7 @@ FluentAffiliate includes a built-in migration option for Solid Affiliate. This g
 
 To access the Migrator Settings, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Migrator Settings**.
 
-![Migrator Settings Overview](/assets/access-migration-settings-1.CFxwZmy2.webp)
+![Migrator Settings Overview](https://docs.fluentaffiliate.com/assets/access-migration-settings-1.CFxwZmy2.webp)
 
 ## Migrating from Solid Affiliate ​
 
@@ -700,7 +700,7 @@ If you need to start fresh or resolve conflicts before migrating, you can use th
 
 WARNING
 
-Data cleanup is irreversible. Always make sure to back up your database before proceeding with a wipe.![Wipe Data Confirmation](/assets/solid-affiliate-migration.CiSl_IEu.gif)
+Data cleanup is irreversible. Always make sure to back up your database before proceeding with a wipe.![Wipe Data Confirmation](https://docs.fluentaffiliate.com/assets/solid-affiliate-migration.CiSl_IEu.gif)
 
 ### Troubleshooting ​
 

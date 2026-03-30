@@ -24,7 +24,7 @@ You can find this new feature right in your FluentAffiliate settings.
 
 Here, you'll see a dashboard where all your created assets will be listed.
 
-![Access Affiliate Creatives](/images/miscellaneous/affiliate-creatives/accessing-affiliate-creatives.webp)
+![Access Affiliate Creatives](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/accessing-affiliate-creatives.webp)
 
 ## Creating a New Creative ​
 
@@ -43,13 +43,13 @@ When you select **Image**, a couple of new options will appear:
 - **Image**: Click here to upload your banner or promotional graphic from your media library.
 - **Alt Text**: Describe the image. This is important for accessibility and helps search engines understand what the image is about.
 
-![Image Type](/images/miscellaneous/affiliate-creatives/image-type.webp)
+![Image Type](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/image-type.webp)
 
 ### Text Type ​
 
 Under **Type**, select **Text** from the dropdown menu. A new **Text** field will appear. Here, you can enter the text you want the link to display, for example, "Summer Sale".
 
-![Text Type](/images/miscellaneous/affiliate-creatives/text-type.webp)
+![Text Type](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/text-type.webp)
 
 ### QR Code Type ​
 
@@ -60,7 +60,7 @@ Next, you can customize its appearance to match your brand:
 - **QR Code Color**: Click the color plate to open a color picker and change the color of the QR code itself.
 - **Background Color**: Click this plate to change the background color.
 
-![QR Code Type](/images/miscellaneous/affiliate-creatives/qr-code-type.webp)
+![QR Code Type](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/qr-code-type.webp)
 
 ---
 
@@ -76,7 +76,7 @@ Next, you can customize its appearance to match your brand:
 - **Choose a Start Date & Time:** Once you select "Scheduled," a Start Date & Time field will appear. Click on it to open a calendar and choose the exact date and time you want the creative to become visible to your affiliates.
 - **Choose an End Date & Time:** Next, click on the End Date & Time field. This is when the creative will automatically be hidden from your affiliates' dashboards.
 
-![Schedule Your Creatives](/images/miscellaneous/affiliate-creatives/schedule-our-creatives.webp)
+![Schedule Your Creatives](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/schedule-our-creatives.webp)
 
 - **Internal Notes**: Add any private notes for yourself or other admins. These are not visible to affiliates.
 
@@ -88,7 +88,7 @@ After you create a few creatives, they will appear in a list on the main Affilia
 
 **Edit or Delete**: If you want to edit or delete your Affiliate creatives, click on the three dots and options you will find **Edit** or **Delete**.
 
-![Affiliate Creatives](/images/miscellaneous/affiliate-creatives/affiliate-creatives.webp)
+![Affiliate Creatives](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/affiliate-creatives.webp)
 
 ## Viewing and Using Affiliate Creatives ​
 
@@ -108,7 +108,7 @@ On this page, you will see a list of all the creatives available for you to use.
 
 Click on the name or preview of the creative you want to use. What you do next depends on the type of creative.
 
-![Viewing Creatives](/images/miscellaneous/affiliate-creatives/view-creatives.webp)
+![Viewing Creatives](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/view-creatives.webp)
 
 **For Image Creatives (Banners and Ads):**
 
@@ -118,7 +118,7 @@ When you click on an image, you'll be taken to a new page showing a full preview
 - **Download Image:** You can also click the **Download Image** button to save the image to your computer.
 - **For QR Code Creatives:** Using a QR code is even simpler. Just click on the **QR code** creative from the list and download the image. You can then share this QR code anywhere, on flyers, social media posts, or even in person. Anyone who scans it will be directed to the site through your affiliate link.
 
-![HTML Code](/images/miscellaneous/affiliate-creatives/html-code.webp)
+![HTML Code](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/html-code.webp)
 
 This makes it simple to keep track of all the promotional materials you've provided to your affiliates.
 
@@ -231,7 +231,7 @@ FluentAffiliate creates a dedicated profile for each affiliate, allowing you to 
 
 To access an affiliate’s profile, first navigate to the main **Affiliates** page from your FluentAffiliate dashboard. From the list, click on the name of the affiliate whose profile you wish to view.
 
-![Affiliate Profile](/images/miscellaneous/affiliate-profile/affiliate-profile-1.webp)
+![Affiliate Profile](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-profile/affiliate-profile-1.webp)
 
 ## Profile Overview Tab ​
 
@@ -251,13 +251,13 @@ edit icon
 - Total Referrals
 - **Activity Overview:** A graph visualizes the affiliate's referrals and visits over a specific period. You can adjust the time frame using the date range filter.
 
-![Affiliate Profile](/images/miscellaneous/affiliate-profile/affiliate-profile-2.webp)
+![Affiliate Profile](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-profile/affiliate-profile-2.webp)
 
 ## Referrals Tab ​
 
 The **Referrals** tab lists every referral generated by this specific affiliate. You can filter this list by status, including All, Paid, Unpaid, Pending, and Rejected. The table provides details such as the commission amount, description, reference, status, type, and date for each referral.
 
-![Affiliate Profile Referrals](/images/miscellaneous/affiliate-profile/affiliate-profile-3.webp)
+![Affiliate Profile Referrals](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-profile/affiliate-profile-3.webp)
 
 ## Visits Tab ​
 
@@ -278,7 +278,7 @@ Not Converted
 
 . This table shows details for each visit, including the URL, referrer, related referral, UTM parameters, and date.
 
-![Affiliate Profile Visit](/images/miscellaneous/affiliate-profile/affiliate-profile-4.webp)
+![Affiliate Profile Visit](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-profile/affiliate-profile-4.webp)
 
 ## Payouts Tab ​
 
@@ -299,7 +299,7 @@ Processing
 
 . The table shows the Payout Reference, Amount, Date, Status, Method, and the number of Referrals included in that payout.
 
-![Affiliate Profile Payout](/images/miscellaneous/affiliate-profile/affiliate-profile-5.webp)
+![Affiliate Profile Payout](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-profile/affiliate-profile-5.webp)
 
 ---
 

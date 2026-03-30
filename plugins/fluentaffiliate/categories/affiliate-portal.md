@@ -33,7 +33,7 @@ This section at the top of your dashboard displays four key metrics to give you 
 - **Total Referrals:** The total number of successful sales you have generated.
 - **Conversion Rate:** The percentage of clicks on your links that have turned into successful sales.
 
-![Affiliate Dashboard Overview](/images/affiliate-portal/dashboard/affiliate-dashboard-overview.webp)
+![Affiliate Dashboard Overview](https://docs.fluentaffiliate.com/images/affiliate-portal/dashboard/affiliate-dashboard-overview.webp)
 
 ### Your Affiliate Link ​
 
@@ -74,7 +74,7 @@ This table provides a clean, simple log of the unique clicks your affiliate link
 - **URL:** The specific affiliate link that was clicked.
 - **Refer:** This shows where the click came from.
 
-![Visits User Portal](/images/affiliate-portal/visits/visits-tracking-overview.webp)
+![Visits User Portal](https://docs.fluentaffiliate.com/images/affiliate-portal/visits/visits-tracking-overview.webp)
 
 This section gives affiliates a complete overview of their link activity and helps them understand which channels or content are performing best.
 
@@ -100,7 +100,7 @@ This is the main section for creating a referral link to a specific page on the 
 
 Your new, unique referral link will instantly appear below in the **Generated Affiliate Link** area. Click the **Copy** button to copy it to your clipboard.
 
-![Generated Referral Link](/images/affiliate-portal/generating-links/generate-affiliate-link.webp)
+![Generated Referral Link](https://docs.fluentaffiliate.com/images/affiliate-portal/generating-links/generate-affiliate-link.webp)
 
 ## Step 2: Your Affiliate Link & QR Code ​
 
@@ -132,7 +132,7 @@ Click the **Register Now** button to start the sign-up process.
 
 NOTE
 
-Only the site admin can decide where the **Affiliate Page** appears on the site. To learn how to set this up, check out this [article](/guide/settings-and-customization/referral-settings).![Affiliate Registration Page](/images/affiliate-portal/registration/registration-page.webp)
+Only the site admin can decide where the **Affiliate Page** appears on the site. To learn how to set this up, check out this [article](/guide/settings-and-customization/referral-settings).![Affiliate Registration Page](https://docs.fluentaffiliate.com/images/affiliate-portal/registration/registration-page.webp)
 
 ## Step 2: Fill Out the Registration Form ​
 
@@ -162,7 +162,7 @@ To complete the process, the user must:
 1. Check the box to confirm they "**I agree to the terms and conditions.**"
 2. Click the **Register** button to submit their application for review.
 
-![Registration Form](/images/affiliate-portal/registration/registration-form.webp)
+![Registration Form](https://docs.fluentaffiliate.com/images/affiliate-portal/registration/registration-form.webp)
 
 ## Step 3: Welcome to the Affiliate Dashboard ​
 
@@ -177,7 +177,7 @@ This dashboard is their central hub to:
 
 To learn more about the Affiliate Dashboard, check out this [article](/guide/affiliate-portal/affiliate-dashboard-overview).
 
-![Affiliate Dashboard](/images/affiliate-portal/registration/registration-success.webp)
+![Affiliate Dashboard](https://docs.fluentaffiliate.com/images/affiliate-portal/registration/registration-success.webp)
 
 And that's it! In just a few simple steps, a new user can join the affiliate program and get everything they need to start promoting and earning.
 
@@ -200,7 +200,7 @@ This section shows the list of all payouts that have been made to your account. 
 - **Status** – Whether the payout is Paid, Unpaid, or Pending.
 - **Descrption** – This provides details about the payouts.
 
-![Payout Affiliate User Portal](/images/affiliate-portal/payouts/payout-history-view.webp)
+![Payout Affiliate User Portal](https://docs.fluentaffiliate.com/images/affiliate-portal/payouts/payout-history-view.webp)
 
 All of this helps you quickly understand how much you've earned, what's been paid out, and what's still pending.
 
@@ -227,7 +227,7 @@ Here is a breakdown of the information in each column:
 - **Status:** This tells you the current payment status of your commission. It will show as Paid for commissions you have received, and Unpaid for commissions that are approved but have not yet been sent.
 - **Description:** This provides details about the product that was purchased.
 
-![Referrals User Portal](/images/affiliate-portal/referrals/referrals-list-view.webp)
+![Referrals User Portal](https://docs.fluentaffiliate.com/images/affiliate-portal/referrals/referrals-list-view.webp)
 
 So, now you can easily track your successful promotions and see which products are generating the most income for you.
 
@@ -252,7 +252,7 @@ On this page, you will find the following options:
 
 After making any changes, be sure to click the **Save Settings** button to apply your updates.
 
-![User Portal Settings](/images/affiliate-portal/profile-settings/profile-settings-page.webp)
+![User Portal Settings](https://docs.fluentaffiliate.com/images/affiliate-portal/profile-settings/profile-settings-page.webp)
 
 ---
 
