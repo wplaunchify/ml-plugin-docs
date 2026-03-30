@@ -1,0 +1,268 @@
+{
+  "plugin_slug": "fluentboards",
+  "plugin_name": "FluentBoards",
+  "documentation_url": "https://fluentboards.com/documentation/",
+  "last_scraped": "2026-03-30T14:59:04.347Z",
+  "total_pages": 42,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Boards",
+      "slug": "boards",
+      "url": "https://fluentboards.com/documentation/boards/",
+      "file": "categories/boards.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Boards with Folders",
+          "url": "https://fluentboards.com/docs/boards-with-folders/"
+        },
+        {
+          "title": "Pinned Boards",
+          "url": "https://fluentboards.com/docs/pinned-boards/"
+        },
+        {
+          "title": "Boards View",
+          "url": "https://fluentboards.com/docs/boards-view/"
+        },
+        {
+          "title": "Creating a New Board",
+          "url": "https://fluentboards.com/docs/how-to-create-a-new-board/"
+        },
+        {
+          "title": "Overview of Board",
+          "url": "https://fluentboards.com/docs/board-overview/"
+        },
+        {
+          "title": "Board Menu/Settings",
+          "url": "https://fluentboards.com/docs/board-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://fluentboards.com/documentation/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "FluentBoards Profile and Task Overview",
+          "url": "https://fluentboards.com/docs/fluentboards-profile-and-task-overview/"
+        },
+        {
+          "title": "FluentBoards Installation Guide",
+          "url": "https://fluentboards.com/docs/fluentboards-installation-guide/"
+        },
+        {
+          "title": "FluentBoards Licence Activation",
+          "url": "https://fluentboards.com/docs/fluentboards-licence-activation/"
+        },
+        {
+          "title": "Introduction to FluentBoards",
+          "url": "https://fluentboards.com/docs/get-started-with-fluentboards/"
+        },
+        {
+          "title": "Onboarding Your First Board",
+          "url": "https://fluentboards.com/docs/onboarding-board/"
+        },
+        {
+          "title": "FluentBoards Dashboard Overview",
+          "url": "https://fluentboards.com/docs/fluentboards-dashboard-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Import Export",
+      "slug": "import-export",
+      "url": "https://fluentboards.com/documentation/import-export/",
+      "file": "categories/import-export.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Import Boards into FluentBoards",
+          "url": "https://fluentboards.com/docs/import-boards-into-fluentboards/"
+        },
+        {
+          "title": "Import Boards from Asana",
+          "url": "https://fluentboards.com/docs/import-boards-from-asana/"
+        },
+        {
+          "title": "Import Boards from Trello",
+          "url": "https://fluentboards.com/docs/import-from-trello/"
+        }
+      ]
+    },
+    {
+      "title": "Integrations",
+      "slug": "integrations",
+      "url": "https://fluentboards.com/documentation/integrations/",
+      "file": "categories/integrations.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "FluentBoards Integration with Backblaze",
+          "url": "https://fluentboards.com/docs/fluentboards-integration-with-backblaze/"
+        },
+        {
+          "title": "FluentBoards Integration with DigitalOcean",
+          "url": "https://fluentboards.com/docs/fluentboards-integration-with-digital-ocean/"
+        },
+        {
+          "title": "FluentBoards Integration with CloudFlare R2",
+          "url": "https://fluentboards.com/docs/fluentboards-integration-with-cloudflare-r2/"
+        },
+        {
+          "title": "FluentBoards Integration with Amazon S3",
+          "url": "https://fluentboards.com/docs/fluentboards-integration-with-amazon-s3/"
+        },
+        {
+          "title": "FluentBoards Integration with Fluent Forms",
+          "url": "https://fluentboards.com/docs/fluentboards-integration-with-fluent-forms/"
+        },
+        {
+          "title": "FluentBoards Integration With FluentCRM",
+          "url": "https://fluentboards.com/docs/fluentboards-integration-with-fluentcrm/"
+        },
+        {
+          "title": "FluentBoards Integration with FluentSupport",
+          "url": "https://fluentboards.com/docs/fluentboards-integration-with-fluentsupport/"
+        }
+      ]
+    },
+    {
+      "title": "Reports",
+      "slug": "reports",
+      "url": "https://fluentboards.com/documentation/reports/",
+      "file": "categories/reports.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "FluentBoard Reports",
+          "url": "https://fluentboards.com/docs/fluentboard-reports/"
+        }
+      ]
+    },
+    {
+      "title": "Roadmap",
+      "slug": "roadmap",
+      "url": "https://fluentboards.com/documentation/roadmap/",
+      "file": "categories/roadmap.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Roadmap Settings",
+          "url": "https://fluentboards.com/docs/roadmap-settings/"
+        },
+        {
+          "title": "FluentBoards Roadmap Overview",
+          "url": "https://fluentboards.com/docs/fluentboards-roadmap-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "slug": "settings",
+      "url": "https://fluentboards.com/documentation/settings/",
+      "file": "categories/settings.md",
+      "page_count": 8,
+      "pages": [
+        {
+          "title": "Outgoing Webhooks",
+          "url": "https://fluentboards.com/docs/outgoing-webhooks/"
+        },
+        {
+          "title": "Daily Reminder Settings",
+          "url": "https://fluentboards.com/docs/daily-reminder-settings/"
+        },
+        {
+          "title": "Creating Tasks via Incoming Webhooks",
+          "url": "https://fluentboards.com/docs/incoming-webhook/"
+        },
+        {
+          "title": "Setting Up the Frontend Portal",
+          "url": "https://fluentboards.com/docs/frontend-portal-settings/"
+        },
+        {
+          "title": "Customizing Card View Preferences",
+          "url": "https://fluentboards.com/docs/card-view-preference-settings/"
+        },
+        {
+          "title": "Adjusting FluentBoards Position in WordPress",
+          "url": "https://fluentboards.com/docs/fluentboards-menu-position-in-wordpress/"
+        },
+        {
+          "title": "Configuring Notification Settings",
+          "url": "https://fluentboards.com/docs/notification-settings/"
+        },
+        {
+          "title": "Managing Member Roles",
+          "url": "https://fluentboards.com/docs/member-roles/"
+        }
+      ]
+    },
+    {
+      "title": "Stage Management",
+      "slug": "stage-management",
+      "url": "https://fluentboards.com/documentation/stage-management/",
+      "file": "categories/stage-management.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Stage Default Assignee",
+          "url": "https://fluentboards.com/docs/stage-default-assignee/"
+        },
+        {
+          "title": "Creating and Managing Stages",
+          "url": "https://fluentboards.com/docs/how-to-create-a-new-stage/"
+        }
+      ]
+    },
+    {
+      "title": "Task Management",
+      "slug": "task-management",
+      "url": "https://fluentboards.com/documentation/task-management/",
+      "file": "categories/task-management.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Custom Fields for Task",
+          "url": "https://fluentboards.com/docs/custom-fields-for-task/"
+        },
+        {
+          "title": "Recurring Task",
+          "url": "https://fluentboards.com/docs/recurring-task/"
+        },
+        {
+          "title": "Time Tracking for Tasks",
+          "url": "https://fluentboards.com/docs/task-time-tracking/"
+        },
+        {
+          "title": "Task Actions Explained",
+          "url": "https://fluentboards.com/docs/task-action/"
+        },
+        {
+          "title": "Using Task Templates",
+          "url": "https://fluentboards.com/docs/task-template/"
+        },
+        {
+          "title": "Creating and Managing Tasks",
+          "url": "https://fluentboards.com/docs/how-to-create-a-new-task/"
+        }
+      ]
+    },
+    {
+      "title": "Updates",
+      "slug": "updates",
+      "url": "https://fluentboards.com/documentation/updates/",
+      "file": "categories/updates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Changelog",
+          "url": "https://fluentboards.com/docs/changelog/"
+        }
+      ]
+    }
+  ]
+}

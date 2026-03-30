@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T14:58:27.985Z",
-  "total_plugins": 8,
+  "last_updated": "2026-03-30T14:59:04.349Z",
+  "total_plugins": 9,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -173,6 +173,25 @@
         "getting-started",
         "miscellaneous",
         "obtain-smtp-credentials"
+      ]
+    },
+    {
+      "slug": "fluentboards",
+      "name": "FluentBoards",
+      "documentation_url": "https://fluentboards.com/documentation/",
+      "last_scraped": "2026-03-30T14:59:04.349Z",
+      "page_count": 42,
+      "categories": [
+        "boards",
+        "getting-started",
+        "import-export",
+        "integrations",
+        "reports",
+        "roadmap",
+        "settings",
+        "stage-management",
+        "task-management",
+        "updates"
       ]
     }
   ]
