@@ -2,16 +2,16 @@
   "plugin_slug": "launchflows",
   "plugin_name": "LaunchFlows",
   "documentation_url": "https://launchflows.com/documentation/",
-  "last_scraped": "2026-03-30T05:46:55.479Z",
-  "total_pages": 35,
-  "failed_urls_count": 5,
+  "last_scraped": "2026-03-30T05:57:23.302Z",
+  "total_pages": 43,
+  "failed_urls_count": 7,
   "sections": [
     {
       "title": "Uncategorized",
       "slug": "uncategorized",
       "url": "https://launchflows.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 35,
+      "page_count": 43,
       "pages": [
         {
           "title": "Hide Out Of Stock & Back Ordered Products",
@@ -52,6 +52,34 @@
         {
           "title": "Customize The Single Product Layout",
           "url": "https://launchflows.com/documentation/customize-the-single-product-layout/"
+        },
+        {
+          "title": "Disable Product Layout Capability",
+          "url": "https://launchflows.com/documentation/disable-product-layout-capability/"
+        },
+        {
+          "title": "Send Product Directly To Checkout",
+          "url": "https://launchflows.com/documentation/how-to-send-product-directly-to-checkout/"
+        },
+        {
+          "title": "One Page Product & Checkout",
+          "url": "https://launchflows.com/documentation/how-to-product-sales-checkout-page/"
+        },
+        {
+          "title": "Instant Simple Product Bundles",
+          "url": "https://launchflows.com/documentation/instant-simple-product-bundles/"
+        },
+        {
+          "title": "Create Checkout Pages",
+          "url": "https://launchflows.com/documentation/create-checkout-pages/"
+        },
+        {
+          "title": "Bricksey Theme",
+          "url": "https://launchflows.com/documentation/bricksey-theme/"
+        },
+        {
+          "title": "Divi",
+          "url": "https://launchflows.com/documentation/divi/"
         },
         {
           "title": "Elementor Style Or Hide",
@@ -152,6 +180,10 @@
         {
           "title": "Donations & Pay Now",
           "url": "https://launchflows.com/documentation/donations-pay-now/"
+        },
+        {
+          "title": "Remove Products From Cart",
+          "url": "https://launchflows.com/documentation/remove-products-from-cart/"
         }
       ]
     }

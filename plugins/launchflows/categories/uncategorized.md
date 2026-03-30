@@ -890,6 +890,166 @@ In order to use the single product layout capability, you want to go into the pr
 
 ---
 
+## Disable Product Layout Capability
+
+**Source:** [https://launchflows.com/documentation/disable-product-layout-capability/](https://launchflows.com/documentation/disable-product-layout-capability/)
+
+### What Does It Do?
+
+This global setting for LaunchFlows provides a way to ensure that certain Themes (such as Thrive Themes) will act as the layout template for your single products instead of using LaunchFlows.
+
+This option disables the ability of LaunchFlows to modify the single product layout, add checkout pages to the single product pages, or to enable the Gutenberg Block Editor (classic will remain active).
+
+### When To Use?
+
+Use this if you have a current theme or other plugin that implements a custom design on to the WooCommerce Single Product Pages.
+
+### How To Use?
+
+Go to the LaunchFlows tab of your admin dashboard, and click the checkbox for “Theme Compatibility” as shown below.
+
+![Theme Compatibility](https://launchflows.com/wp-content/uploads/2022/03/theme-compatibility.jpg)
+
+### Resources
+
+[Watch This Video Demonstration](https://youtu.be/wrej3NjZP7Y)
+
+---
+
+## Send Product Directly To Checkout
+
+**Source:** [https://launchflows.com/documentation/how-to-send-product-directly-to-checkout/](https://launchflows.com/documentation/how-to-send-product-directly-to-checkout/)
+
+### What?
+
+In this video you’ll learn about the LaunchFlows Direct Checkout link feature.
+
+### Why?
+
+This makes it super simple to send any product directly to the custom checkout of your choice from anywhere on the Internet, just by applying the special URL to any clickable element.
+
+---
+
+## One Page Product & Checkout
+
+**Source:** [https://launchflows.com/documentation/how-to-product-sales-checkout-page/](https://launchflows.com/documentation/how-to-product-sales-checkout-page/)
+
+### Who?
+
+This solution is for anyone who has many products and wants to simplify and streamline the checkout of each one with a global sales page and checkout per product.
+
+The side benefit is that marketing automation is easily customized to track the visits and purchase of these products on their own product pages without complicated code or cookies.
+
+### What?
+
+It’s easy to turn any product into it’s own sales page, with or without a custom checkout.
+
+### How
+
+First name the product and publish it so you’ll have the product page in the dropdown options for the next step someone should see after they add this product to the cart.
+
+Then choose this product page from that dropdown.
+
+Finally, setup the page someone should be directed to after checkout is compled.
+
+Optionally, you can customize the layout of the product page with the Instant Clean Sales Page option and/or use one of the custom single product templates to allow you to add your own design and sales copy or to reconfigure the checkout components.
+
+### Click To Watch Video
+
+---
+
+## Instant Simple Product Bundles
+
+**Source:** [https://launchflows.com/documentation/instant-simple-product-bundles/](https://launchflows.com/documentation/instant-simple-product-bundles/)
+
+### Description
+
+To sell more than one product with a single LaunchFlows Checkout Link, simply add the additional products to the end of the ?add-to-cart=xxxx url of the first product, separated with a comma.
+
+Instead of creating complicated variable or grouped products in WooCommerce, it’s far easier to make every product into a simple (one time or subscription) product.
+
+### Use Case
+
+As such, you can then make use of the LaunchFlows features to present and sell any product, at any time, with Marketing Automation.
+
+### Example
+
+Original product (ID# 1234) LaunchFlows Checkout Link (example):
+
+https://yourdomain.com/your-checkout-page/?add-to-cart=1234
+
+To Add Product #2, simple add a comma then the Product #2 (ID# 5678):
+
+https://yourdomain.com/your-checkout-page/?add-to-cart=1234, 5678
+
+### Video Popup
+
+---
+
+## Create Checkout Pages
+
+**Source:** [https://launchflows.com/documentation/create-checkout-pages/](https://launchflows.com/documentation/create-checkout-pages/)
+
+### Why Multiple Checkout Pages?
+
+LaunchFlows makes it easy to turn any page or post type into a checkout page, including lessons, products or even mdia pages.
+
+This provides you with an incredible amount of flexibility for selling products wherever and whenever you want.
+
+### How Many Can I Create?
+
+LaunchFlows allows you to create an unlimited number of checkout pages. This makes it easy to have a unique design or offers on a particular checkout page for a sale or type of buyer.
+
+### Required Steps
+
+1. Navigate to WordPress Admin Dashboard
+
+2. Click Pages “Add New”. You can also create a checkout on any other post type, including posts, products, lessons, media page, etc.
+
+![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/81874cab-1a9d-4c57-895f-ee2737ccce7c/cropped_screenshot_$1637175364.jpeg)
+
+3. Click the “Add title” field and give this checkout page a name. Suggest you use “Checkout” if this is the global default checkout page.
+
+![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/852492b4-6995-428c-83dd-5f098b592431/cropped_screenshot_$1637175366.jpeg)
+
+4. Scroll down right side of page and find the LaunchFlows Checkout Enable option box. Click the checkbox for “Add A Checkout To This Post”.
+
+![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/286e151a-d1a8-4abd-998c-32f54186117d/cropped_screenshot_$1637175367.jpeg)
+
+5. Click “Publish”
+
+![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/45f3057e-4ba9-490f-b631-8e6689ebb2aa/cropped_screenshot_$1637175368.jpeg)
+
+6. Click “View Page” To Inspect Your New Checkout Page.
+
+![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/0f831b4c-2be5-4c0b-b0b3-b8bb118d99ba/cropped_screenshot_$1637175369.jpeg)
+
+---
+
+## Bricksey Theme
+
+**Source:** [https://launchflows.com/documentation/bricksey-theme/](https://launchflows.com/documentation/bricksey-theme/)
+
+### Watch Video
+
+---
+
+## Divi
+
+**Source:** [https://launchflows.com/documentation/divi/](https://launchflows.com/documentation/divi/)
+
+### Does LaunchFlows Work With Divi?
+
+Yes, it works quite well, and has the advantage of allowing you to “mix and match” between using Divi Theme and custom templates for your overall site, while optionally using Gutenberg Blocks and Patterns from our LaunchFlows pattern library for “one click” simplicity.
+
+### Resources
+
+[Divi Basics Post & Video](https://launchflows.com/woocommerce-sales-funnel-basics-for-divi)
+
+[ElegantThemes](https://www.elegantthemes.com/)
+
+---
+
 ## Elementor Style Or Hide
 
 **Source:** [https://launchflows.com/documentation/how-to-style-or-hide-with-elementor/](https://launchflows.com/documentation/how-to-style-or-hide-with-elementor/)
@@ -1974,6 +2134,48 @@ You may optionally add either of two other attributes to modify the field text o
 ### Watch Video One
 
 ### Watch Video Two
+
+---
+
+## Remove Products From Cart
+
+**Source:** [https://launchflows.com/documentation/remove-products-from-cart/](https://launchflows.com/documentation/remove-products-from-cart/)
+
+### What Does This Do?
+
+This functionality allows you to remove any specific product from the cart at any step in your sales funnel.
+
+This makes it super easy to create a granular level of control over which product(s) a buyer will have available at the final checkout.
+
+### Shortcode Method
+
+Simply add the following shortcode into any page or post that a buyer will visit prior to the final checkout or on the checkout page itself (either will work).
+
+**Remove Product From Cart**
+
+```
+[lf-remove-product id="1234"]
+```
+
+### URL String Method
+
+Simply add the following url string, with the unique ID of the product you wish to remove, to any clickable element or redirection you are setting up.
+
+When the buyer arrives at this url with the string at the end, the matching product will be removed from the cart automatically. *(*swap 1234 for your product id)*
+
+![remove-products-from-cart-url-string](https://launchflows.com/wp-content/uploads/2022/03/remove-products-from-cart-url-string.png)
+
+```
+?remove-product=1234
+```
+
+### Block Or Widget Method
+
+Simply drop the block or widget called “LaunchFlows Remove Product” into any page prior to or including checkout, and add the ID for the product you want automatically removed.
+
+![remove-products-from-cart-elementor](https://launchflows.com/wp-content/uploads/2022/03/remove-products-from-cart-elementor.png)
+
+![remove-products-from-cart-block](https://launchflows.com/wp-content/uploads/2022/03/remove-products-from-cart-block.png)
 
 ---
 
