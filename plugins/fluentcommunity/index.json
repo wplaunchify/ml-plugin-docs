@@ -1,0 +1,440 @@
+{
+  "plugin_slug": "fluentcommunity",
+  "plugin_name": "FluentCommunity",
+  "documentation_url": "https://fluentcommunity.co/documentation/",
+  "last_scraped": "2026-03-30T13:59:31.395Z",
+  "total_pages": 76,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Administration",
+      "slug": "administration",
+      "url": "https://fluentcommunity.co/documentation/administration/",
+      "file": "categories/administration.md",
+      "page_count": 15,
+      "pages": [
+        {
+          "title": "Generating a Sitemap",
+          "url": "https://fluentcommunity.co/docs/generating-a-sitemap/"
+        },
+        {
+          "title": "Content Moderation Settings",
+          "url": "https://fluentcommunity.co/docs/content-moderation-settings/"
+        },
+        {
+          "title": "Access Management Through FluentCRM Tags",
+          "url": "https://fluentcommunity.co/docs/access-management-through-fluentcrm-tags/"
+        },
+        {
+          "title": "Customizing Login/Signup Form",
+          "url": "https://fluentcommunity.co/docs/customizing-login-signup-form/"
+        },
+        {
+          "title": "Manage Topic",
+          "url": "https://fluentcommunity.co/docs/manage-topic/"
+        },
+        {
+          "title": "Privacy Settings",
+          "url": "https://fluentcommunity.co/docs/privacy-settings/"
+        },
+        {
+          "title": "Media Module",
+          "url": "https://fluentcommunity.co/docs/media-module/"
+        },
+        {
+          "title": "User Badge",
+          "url": "https://fluentcommunity.co/docs/user-badge/"
+        },
+        {
+          "title": "Customize your Portal",
+          "url": "https://fluentcommunity.co/docs/customize-your-portal/"
+        },
+        {
+          "title": "General Settings",
+          "url": "https://fluentcommunity.co/docs/general-settings/"
+        },
+        {
+          "title": "Portal Access Settings",
+          "url": "https://fluentcommunity.co/docs/portal-access-settings/"
+        },
+        {
+          "title": "Manager Settings",
+          "url": "https://fluentcommunity.co/docs/manager-settings/"
+        },
+        {
+          "title": "Features & Addons Settings",
+          "url": "https://fluentcommunity.co/docs/feature-settings/"
+        },
+        {
+          "title": "Menu Settings",
+          "url": "https://fluentcommunity.co/docs/menu-settings/"
+        },
+        {
+          "title": "Space Group Settings",
+          "url": "https://fluentcommunity.co/docs/space-group-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Changelog",
+      "slug": "changelog",
+      "url": "https://fluentcommunity.co/documentation/changelog/",
+      "file": "categories/changelog.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Changelog",
+          "url": "https://fluentcommunity.co/docs/changelog/"
+        }
+      ]
+    },
+    {
+      "title": "Course Management",
+      "slug": "course-management",
+      "url": "https://fluentcommunity.co/documentation/course-management/",
+      "file": "categories/course-management.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Quiz Module",
+          "url": "https://fluentcommunity.co/docs/quiz-module/"
+        },
+        {
+          "title": "Documents/Files for Course Lesson",
+          "url": "https://fluentcommunity.co/docs/documents-files-for-course-lesson/"
+        },
+        {
+          "title": "Course Links",
+          "url": "https://fluentcommunity.co/docs/course-links/"
+        },
+        {
+          "title": "Course Enrollment Management",
+          "url": "https://fluentcommunity.co/docs/course-enrollment-management/"
+        },
+        {
+          "title": "Course Privacy",
+          "url": "https://fluentcommunity.co/docs/course-privacy/"
+        },
+        {
+          "title": "Creating and Managing Course",
+          "url": "https://fluentcommunity.co/docs/creating-and-managing-course/"
+        }
+      ]
+    },
+    {
+      "title": "Customization",
+      "slug": "customization",
+      "url": "https://fluentcommunity.co/documentation/customization/",
+      "file": "categories/customization.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Theme Compatibility Feature",
+          "url": "https://fluentcommunity.co/docs/theme-compatibility-feature/"
+        },
+        {
+          "title": "Welcome Banner",
+          "url": "https://fluentcommunity.co/docs/welcome-banner/"
+        },
+        {
+          "title": "Color Customization",
+          "url": "https://fluentcommunity.co/docs/color-customization/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://fluentcommunity.co/documentation/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "FluentCommunity Onboarding Guide",
+          "url": "https://fluentcommunity.co/docs/fluentcommunity-onboarding-guide/"
+        },
+        {
+          "title": "Global Activity Feed",
+          "url": "https://fluentcommunity.co/docs/global-activity-feed/"
+        },
+        {
+          "title": "Introduction to FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/introduction-to-fluent-community/"
+        },
+        {
+          "title": "Install FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/install-fluent-community/"
+        }
+      ]
+    },
+    {
+      "title": "Integration",
+      "slug": "integration",
+      "url": "https://fluentcommunity.co/documentation/integration/",
+      "file": "categories/integration.md",
+      "page_count": 10,
+      "pages": [
+        {
+          "title": "Integrating FluentPlayer with FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/integrating-fluentplayer-with-fluentcommunity/"
+        },
+        {
+          "title": "FluentSocket with FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/fluentsocket-with-fluentcommunity/"
+        },
+        {
+          "title": "FluentCart Integration with FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/fluentcart-integration-with-fluentcommunity/"
+        },
+        {
+          "title": "Configuring BunnyCDN",
+          "url": "https://fluentcommunity.co/docs/configuring-bunnycdn/"
+        },
+        {
+          "title": "Paymattic Integration with FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/paymattic-integration-with-fluentcommunity/"
+        },
+        {
+          "title": "Fluent Forms Integration with FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/fluentforms-integration-with-fluentcommunity/"
+        },
+        {
+          "title": "Configuring Amazon S3",
+          "url": "https://fluentcommunity.co/docs/configuring-amazon-s3/"
+        },
+        {
+          "title": "Configuring CloudFlare R2",
+          "url": "https://fluentcommunity.co/docs/configuring-cloudflare-r2/"
+        },
+        {
+          "title": "FluentCRM Integration with FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/fluent-community-integration-with-fluentcrm/"
+        },
+        {
+          "title": "Giphy Integration with FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/giphy-integration-with-fluent-community/"
+        }
+      ]
+    },
+    {
+      "title": "Leaderboard Management",
+      "slug": "leaderboard-management",
+      "url": "https://fluentcommunity.co/documentation/leaderboard-management/",
+      "file": "categories/leaderboard-management.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Leaderboard Management",
+          "url": "https://fluentcommunity.co/docs/leaderboard-overview-and-management/"
+        }
+      ]
+    },
+    {
+      "title": "Member Management",
+      "slug": "member-management",
+      "url": "https://fluentcommunity.co/documentation/member-management/",
+      "file": "categories/member-management.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Add Users to Spaces/Courses from Profile",
+          "url": "https://fluentcommunity.co/docs/add-users-to-spaces-or-courses-from-profile/"
+        },
+        {
+          "title": "Follower & Block Module",
+          "url": "https://fluentcommunity.co/docs/follower-block-module/"
+        },
+        {
+          "title": "Social Links Customization",
+          "url": "https://fluentcommunity.co/docs/social-links-customization/"
+        },
+        {
+          "title": "Members List/Grid Layout View",
+          "url": "https://fluentcommunity.co/docs/members-list-grid-layout-view/"
+        },
+        {
+          "title": "Member Management",
+          "url": "https://fluentcommunity.co/docs/member-management/"
+        },
+        {
+          "title": "Members Profile",
+          "url": "https://fluentcommunity.co/docs/members-profile/"
+        }
+      ]
+    },
+    {
+      "title": "Migration",
+      "slug": "migration",
+      "url": "https://fluentcommunity.co/documentation/migration/",
+      "file": "categories/migration.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "FluentCommunity BuddyPress Migration",
+          "url": "https://fluentcommunity.co/docs/fluentcommunity-buddypress-migration/"
+        },
+        {
+          "title": "FluentCommunity BuddyBoss Migration",
+          "url": "https://fluentcommunity.co/docs/fluentcommunity-buddyboss-migration/"
+        }
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "slug": "miscellaneous",
+      "url": "https://fluentcommunity.co/documentation/miscellaneous/",
+      "file": "categories/miscellaneous.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Adding Custom CSS & JavaScript",
+          "url": "https://fluentcommunity.co/docs/adding-custom-css-javascript/"
+        },
+        {
+          "title": "Community as Homepage",
+          "url": "https://fluentcommunity.co/docs/community-as-homepage/"
+        },
+        {
+          "title": "Create an XML Sitemap in FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/create-an-xml-sitemap-in-fluentcommunity/"
+        },
+        {
+          "title": "Incoming Webhook in FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/incoming-webhook-in-fluentcommunity/"
+        },
+        {
+          "title": "Report/Analytics",
+          "url": "https://fluentcommunity.co/docs/report-analytics/"
+        }
+      ]
+    },
+    {
+      "title": "Monetization",
+      "slug": "monetization",
+      "url": "https://fluentcommunity.co/documentation/monetization/",
+      "file": "categories/monetization.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Collect Recurring Payments for Private Spaces/Courses",
+          "url": "https://fluentcommunity.co/docs/collect-recurring-payments-for-private-spaces-courses/"
+        },
+        {
+          "title": "Monetizing Your Spaces/Courses with Paymattic",
+          "url": "https://fluentcommunity.co/docs/monetizing-your-spaces-courses-with-paymattic/"
+        },
+        {
+          "title": "Monetizing Your Spaces",
+          "url": "https://fluentcommunity.co/docs/monetizing-your-spaces/"
+        },
+        {
+          "title": "Monetizing Your Courses",
+          "url": "https://fluentcommunity.co/docs/monetizing-your-courses/"
+        }
+      ]
+    },
+    {
+      "title": "Notifications Messaging",
+      "slug": "notifications-messaging",
+      "url": "https://fluentcommunity.co/documentation/notifications-messaging/",
+      "file": "categories/notifications-messaging.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Real-Time Chat",
+          "url": "https://fluentcommunity.co/docs/real-time-chat/"
+        },
+        {
+          "title": "Profile Notification Settings",
+          "url": "https://fluentcommunity.co/docs/profile-notification-settings/"
+        },
+        {
+          "title": "FluentCommunity Chat",
+          "url": "https://fluentcommunity.co/docs/fluent-community-chat/"
+        },
+        {
+          "title": "Global Email Notifications",
+          "url": "https://fluentcommunity.co/docs/email-notifications/"
+        }
+      ]
+    },
+    {
+      "title": "Space Management",
+      "slug": "space-management",
+      "url": "https://fluentcommunity.co/documentation/space-management/",
+      "file": "categories/space-management.md",
+      "page_count": 14,
+      "pages": [
+        {
+          "title": "Add Custom Links",
+          "url": "https://fluentcommunity.co/docs/add-custom-links/"
+        },
+        {
+          "title": "Community Post Sorting in FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/community-post-sorting-in-fluentcommunity/"
+        },
+        {
+          "title": "Creating and Managing Polls",
+          "url": "https://fluentcommunity.co/docs/creating-and-managing-polls/"
+        },
+        {
+          "title": "Membership Invitation for Spaces",
+          "url": "https://fluentcommunity.co/docs/membership-invitation-for-spaces/"
+        },
+        {
+          "title": "Documents/Files for Space",
+          "url": "https://fluentcommunity.co/docs/documents-files-for-space/"
+        },
+        {
+          "title": "Space Links",
+          "url": "https://fluentcommunity.co/docs/space-links/"
+        },
+        {
+          "title": "Manage Members of Space",
+          "url": "https://fluentcommunity.co/docs/manage-members-of-space/"
+        },
+        {
+          "title": "Handling Comments & Reactions",
+          "url": "https://fluentcommunity.co/docs/handling-comments-reactions/"
+        },
+        {
+          "title": "Creating & Managing Posts",
+          "url": "https://fluentcommunity.co/docs/creating-managing-posts/"
+        },
+        {
+          "title": "Managing Privacy of Spaces",
+          "url": "https://fluentcommunity.co/docs/managing-privacy-of-spaces/"
+        },
+        {
+          "title": "Activity Feed View",
+          "url": "https://fluentcommunity.co/docs/activity-feed-view/"
+        },
+        {
+          "title": "Activity Feeds",
+          "url": "https://fluentcommunity.co/docs/activity-feeds/"
+        },
+        {
+          "title": "How to Create a Space",
+          "url": "https://fluentcommunity.co/docs/how-to-create-a-space/"
+        },
+        {
+          "title": "Editing or Deleting a Space",
+          "url": "https://fluentcommunity.co/docs/editing-or-deleting-a-space/"
+        }
+      ]
+    },
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://fluentcommunity.co/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrate Pusher with FluentCommunity",
+          "url": "https://fluentcommunity.co/docs/integrate-pusher-with-fluentcommunity/"
+        }
+      ]
+    }
+  ]
+}

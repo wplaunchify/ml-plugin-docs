@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T06:01:31.210Z",
-  "total_plugins": 3,
+  "last_updated": "2026-03-30T13:59:31.397Z",
+  "total_plugins": 4,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -76,6 +76,29 @@
         "integrations",
         "migrating-from-other-platforms",
         "miscellaneous"
+      ]
+    },
+    {
+      "slug": "fluentcommunity",
+      "name": "FluentCommunity",
+      "documentation_url": "https://fluentcommunity.co/documentation/",
+      "last_scraped": "2026-03-30T13:59:31.397Z",
+      "page_count": 76,
+      "categories": [
+        "administration",
+        "changelog",
+        "course-management",
+        "customization",
+        "getting-started",
+        "integration",
+        "leaderboard-management",
+        "member-management",
+        "migration",
+        "miscellaneous",
+        "monetization",
+        "notifications-messaging",
+        "space-management",
+        "uncategorized"
       ]
     }
   ]
