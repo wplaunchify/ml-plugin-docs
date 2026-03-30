@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T13:59:31.397Z",
-  "total_plugins": 4,
+  "last_updated": "2026-03-30T14:08:03.623Z",
+  "total_plugins": 5,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -100,6 +100,14 @@
         "space-management",
         "uncategorized"
       ]
+    },
+    {
+      "slug": "fluentcart",
+      "name": "FluentCart",
+      "documentation_url": "https://fluentcart.com/docs/documentation/",
+      "last_scraped": "2026-03-30T14:08:03.623Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
