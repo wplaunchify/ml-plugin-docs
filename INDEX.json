@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T02:32:07.685Z",
-  "total_plugins": 1,
+  "last_updated": "2026-03-30T05:22:38.914Z",
+  "total_plugins": 2,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -42,6 +42,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "launchflows",
+      "name": "LaunchFlows",
+      "documentation_url": "https://launchflows.com/documentation/",
+      "last_scraped": "2026-03-30T05:22:38.914Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
