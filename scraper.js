@@ -13,7 +13,7 @@ const RATE_LIMIT_MS = 500;
 const MAX_RETRIES = 3;
 const RETRY_DELAY_MS = 2000;
 const REQUEST_TIMEOUT_MS = 15000;
-const WP_API_PER_PAGE = 100;
+const WP_API_PER_PAGE = 10;
 
 const USER_AGENT = 'ML-Plugin-Docs-Scraper/1.0 (+https://github.com/wplaunchify/ml-plugin-docs)';
 
@@ -441,6 +441,7 @@ async function runWpApi(args) {
   let page = 1;
   let totalPages = 1;
   let perPage = WP_API_PER_PAGE;
+  let reducedOnce = false;
 
   while (page <= totalPages) {
     const pageUrl = `${apiBase}/${postType}?per_page=${perPage}&page=${page}`;
@@ -448,19 +449,16 @@ async function runWpApi(args) {
 
     let result = await fetchJson(pageUrl);
 
-    if (!result && perPage > 10) {
-      const oldPerPage = perPage;
+    if (!result && page === 1 && !reducedOnce && perPage > 10) {
       perPage = Math.max(10, Math.floor(perPage / 2));
-      console.log(`FAILED - retrying with per_page=${perPage}`);
-      page = 1;
-      totalPages = 1;
-      pages.length = 0;
-      failedUrls.length = 0;
+      console.log(`FAILED on first page - retrying with per_page=${perPage}`);
+      reducedOnce = true;
       continue;
     }
     if (!result) {
-      console.log('FAILED');
-      break;
+      console.log(`FAILED - skipping page ${page}`);
+      page++;
+      continue;
     }
 
     if (page === 1) {
