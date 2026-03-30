@@ -440,12 +440,24 @@ async function runWpApi(args) {
   const failedUrls = [];
   let page = 1;
   let totalPages = 1;
+  let perPage = WP_API_PER_PAGE;
 
   while (page <= totalPages) {
-    const pageUrl = `${apiBase}/${postType}?per_page=${WP_API_PER_PAGE}&page=${page}`;
-    process.stdout.write(`  Page ${page}/${totalPages || '?'}... `);
+    const pageUrl = `${apiBase}/${postType}?per_page=${perPage}&page=${page}`;
+    process.stdout.write(`  Page ${page}/${totalPages || '?'} (per_page=${perPage})... `);
 
-    const result = await fetchJson(pageUrl);
+    let result = await fetchJson(pageUrl);
+
+    if (!result && perPage > 10) {
+      const oldPerPage = perPage;
+      perPage = Math.max(10, Math.floor(perPage / 2));
+      console.log(`FAILED - retrying with per_page=${perPage}`);
+      page = 1;
+      totalPages = 1;
+      pages.length = 0;
+      failedUrls.length = 0;
+      continue;
+    }
     if (!result) {
       console.log('FAILED');
       break;
