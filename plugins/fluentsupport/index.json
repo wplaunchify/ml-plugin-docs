@@ -1,0 +1,449 @@
+{
+  "plugin_slug": "fluentsupport",
+  "plugin_name": "Fluent Support",
+  "documentation_url": "https://fluentsupport.com/documentation/",
+  "last_scraped": "2026-03-30T14:58:08.527Z",
+  "total_pages": 85,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Activities And Reports",
+      "slug": "activities-and-reports",
+      "url": "https://fluentsupport.com/documentation/activities-and-reports/",
+      "file": "categories/activities-and-reports.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Dynamic Dashboard",
+          "url": "https://fluentsupport.com/docs/dynamic-dashboard/"
+        },
+        {
+          "title": "Overall Activities",
+          "url": "https://fluentsupport.com/docs/overall-activities/"
+        },
+        {
+          "title": "Reports and Stats",
+          "url": "https://fluentsupport.com/docs/reports-and-stats/"
+        },
+        {
+          "title": "Dashboard Overview",
+          "url": "https://fluentsupport.com/docs/dashboard-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Ai Powered Assistance",
+      "slug": "ai-powered-assistance",
+      "url": "https://fluentsupport.com/documentation/ai-powered-assistance/",
+      "file": "categories/ai-powered-assistance.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "OpenAI Integration With Fluent Support",
+          "url": "https://fluentsupport.com/docs/openai-integration-with-fluent-support/"
+        },
+        {
+          "title": "Features Of OpenAI Integration In Fluent Support",
+          "url": "https://fluentsupport.com/docs/features-of-openai-integration-in-fluent-support/"
+        }
+      ]
+    },
+    {
+      "title": "Business Management",
+      "slug": "business-management",
+      "url": "https://fluentsupport.com/documentation/business-management/",
+      "file": "categories/business-management.md",
+      "page_count": 14,
+      "pages": [
+        {
+          "title": "Customer Support Portal Dashboard",
+          "url": "https://fluentsupport.com/docs/customer-support-portal-dashboard/"
+        },
+        {
+          "title": "Web and Email-Based Settings In Business Inbox",
+          "url": "https://fluentsupport.com/docs/web-and-email-based-settings-in-business-inbox/"
+        },
+        {
+          "title": "Web-Based Settings In Business Inbox",
+          "url": "https://fluentsupport.com/docs/web-based_settings_in_business_inbox/"
+        },
+        {
+          "title": "File Upload Integrations",
+          "url": "https://fluentsupport.com/docs/file-upload-integrations/"
+        },
+        {
+          "title": "Ticket Form Customization",
+          "url": "https://fluentsupport.com/docs/ticket-form-customization/"
+        },
+        {
+          "title": "Adding a Custom Ticket Submission Form",
+          "url": "https://fluentsupport.com/docs/adding-custom-ticket-submission-form/"
+        },
+        {
+          "title": "Permission Management for Agents",
+          "url": "https://fluentsupport.com/docs/permission-management-for-agents/"
+        },
+        {
+          "title": "File Attachment Regulations",
+          "url": "https://fluentsupport.com/docs/attachment-regulation/"
+        },
+        {
+          "title": "View & Manage Ticket Entries",
+          "url": "https://fluentsupport.com/docs/view-manage-ticket-entries/"
+        },
+        {
+          "title": "Adding Support Staff/Agents",
+          "url": "https://fluentsupport.com/docs/adding-support-staffs-agents/"
+        },
+        {
+          "title": "Setup Customer Support Portal With Global Settings",
+          "url": "https://fluentsupport.com/docs/customer-support-portal-setup/"
+        },
+        {
+          "title": "Creating Products to Categorize Tickets",
+          "url": "https://fluentsupport.com/docs/creating-ticket-categories-products/"
+        },
+        {
+          "title": "Adding Multiple Business Inboxes",
+          "url": "https://fluentsupport.com/docs/adding-multiple-business-inboxes/"
+        },
+        {
+          "title": "Create Business Inbox Initially",
+          "url": "https://fluentsupport.com/docs/business-inbox/"
+        }
+      ]
+    },
+    {
+      "title": "Change Log",
+      "slug": "change-log",
+      "url": "https://fluentsupport.com/documentation/change-log/",
+      "file": "categories/change-log.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Change Log",
+          "url": "https://fluentsupport.com/docs/change-log/"
+        }
+      ]
+    },
+    {
+      "title": "Email Management",
+      "slug": "email-management",
+      "url": "https://fluentsupport.com/documentation/email-management/",
+      "file": "categories/email-management.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Change Amazon Lambda Cloud Processing Service for Email Piping",
+          "url": "https://fluentsupport.com/docs/change-amazon-lambda-cloud-processing-service-for-email-piping/"
+        },
+        {
+          "title": "Forward From Microsoft 365 Outlook Web Access (OWA)",
+          "url": "https://fluentsupport.com/docs/forward-from-microsoft-365-outlook-web-access-owa/"
+        },
+        {
+          "title": "Email Piping For Email-Based Support Tickets",
+          "url": "https://fluentsupport.com/docs/email-piping-email-based-support-ticket/"
+        },
+        {
+          "title": "Auto-forward From Google Workspace (G Suite) to FluentSupport",
+          "url": "https://fluentsupport.com/docs/auto-forward-from-google-workspace-to-fluent-support/"
+        },
+        {
+          "title": "Managing Email Notifications",
+          "url": "https://fluentsupport.com/docs/customize-email-notifications/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://fluentsupport.com/documentation/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Deactivate Or Delete the Fluent Support",
+          "url": "https://fluentsupport.com/docs/how-to-deactivate-or-delete-the-fluent-support/"
+        },
+        {
+          "title": "How to Install & Activate Fluent Support PRO",
+          "url": "https://fluentsupport.com/docs/upgrade-to-fluent-support-pro-add-on/"
+        },
+        {
+          "title": "How to Install & Activate Fluent Support",
+          "url": "https://fluentsupport.com/docs/how-to-install-activate-fluent-support/"
+        }
+      ]
+    },
+    {
+      "title": "Integrations",
+      "slug": "integrations",
+      "url": "https://fluentsupport.com/documentation/integrations/",
+      "file": "categories/integrations.md",
+      "page_count": 23,
+      "pages": [
+        {
+          "title": "FluentCart Integration",
+          "url": "https://fluentsupport.com/docs/fluentcart-integration/"
+        },
+        {
+          "title": "FluentCommunity Integration",
+          "url": "https://fluentsupport.com/docs/fluent-community-integration/"
+        },
+        {
+          "title": "SureTriggers Integration",
+          "url": "https://fluentsupport.com/docs/suretriggers-integration/"
+        },
+        {
+          "title": "Integration Statuses",
+          "url": "https://fluentsupport.com/docs/integration_statuses/"
+        },
+        {
+          "title": "FluentBoards Integrations",
+          "url": "https://fluentsupport.com/docs/fluentboards-integrations/"
+        },
+        {
+          "title": "MemberPress Integration",
+          "url": "https://fluentsupport.com/docs/memberpress-integration/"
+        },
+        {
+          "title": "Dropbox Integration",
+          "url": "https://fluentsupport.com/docs/dropbox-integration/"
+        },
+        {
+          "title": "Google Drive Integration",
+          "url": "https://fluentsupport.com/docs/google-drive-integration/"
+        },
+        {
+          "title": "Google reCAPTCHA Integration",
+          "url": "https://fluentsupport.com/docs/google-recaptcha-integration/"
+        },
+        {
+          "title": "LearnPress Integration",
+          "url": "https://fluentsupport.com/docs/learnpress-integration/"
+        },
+        {
+          "title": "BetterDocs Integration",
+          "url": "https://fluentsupport.com/docs/betterdocs-integration/"
+        },
+        {
+          "title": "Incoming Webhook",
+          "url": "https://fluentsupport.com/docs/incoming-webhook/"
+        },
+        {
+          "title": "Fluent Forms Integration",
+          "url": "https://fluentsupport.com/docs/fluent-form-integration/"
+        },
+        {
+          "title": "Paid Membership Pro Integration",
+          "url": "https://fluentsupport.com/docs/paid-membership-pro-integration/"
+        },
+        {
+          "title": "Restrict Content Pro Integration",
+          "url": "https://fluentsupport.com/docs/restrict-content-pro-integration/"
+        },
+        {
+          "title": "WishList Member Integration",
+          "url": "https://fluentsupport.com/docs/wishlist-member-integration/"
+        },
+        {
+          "title": "BuddyBoss Integration",
+          "url": "https://fluentsupport.com/docs/buddyboss-integration/"
+        },
+        {
+          "title": "TutorLMS Integration",
+          "url": "https://fluentsupport.com/docs/tutorlms-integration/"
+        },
+        {
+          "title": "WooCommerce Integration",
+          "url": "https://fluentsupport.com/docs/woocommerce-integration/"
+        },
+        {
+          "title": "LearnDash Integration",
+          "url": "https://fluentsupport.com/docs/learndash-integration/"
+        },
+        {
+          "title": "LifterLMS Integration",
+          "url": "https://fluentsupport.com/docs/lifterlms-integration/"
+        },
+        {
+          "title": "Easy Digital Downloads (EDD) Integration",
+          "url": "https://fluentsupport.com/docs/edd-integration/"
+        },
+        {
+          "title": "FluentCRM Integration",
+          "url": "https://fluentsupport.com/docs/fluentcrm-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Productivity",
+      "slug": "productivity",
+      "url": "https://fluentsupport.com/documentation/productivity/",
+      "file": "categories/productivity.md",
+      "page_count": 22,
+      "pages": [
+        {
+          "title": "Agent Time Tracking",
+          "url": "https://fluentsupport.com/docs/agent-time-tracking/"
+        },
+        {
+          "title": "Advanced Filter Save Search Feature",
+          "url": "https://fluentsupport.com/docs/advanced-filter-save-search-feature/"
+        },
+        {
+          "title": "Navigate With the Keyboard Shortcut",
+          "url": "https://fluentsupport.com/docs/navigate-with-the-keyboard-shortcut/"
+        },
+        {
+          "title": "Add and Customize Customer Portal using Gutenberg Block",
+          "url": "https://fluentsupport.com/docs/customize-your-customer-portal/"
+        },
+        {
+          "title": "Add More Attachments Type",
+          "url": "https://fluentsupport.com/docs/add-more-attachments-type/"
+        },
+        {
+          "title": "Advanced Filter Fluent Support",
+          "url": "https://fluentsupport.com/docs/advanced-filter-fluent-support/"
+        },
+        {
+          "title": "Close Ticket Silently",
+          "url": "https://fluentsupport.com/docs/close-ticket-silently/"
+        },
+        {
+          "title": "Automatic Ticket Closing",
+          "url": "https://fluentsupport.com/docs/automatic-ticket-closing/"
+        },
+        {
+          "title": "Shortcodes",
+          "url": "https://fluentsupport.com/docs/shortcodes/"
+        },
+        {
+          "title": "Split Reply in New Tickets",
+          "url": "https://fluentsupport.com/docs/split-reply-in-new-tickets/"
+        },
+        {
+          "title": "Frontend Agent Portal",
+          "url": "https://fluentsupport.com/docs/forntend-agent-portal/"
+        },
+        {
+          "title": "Bookmark Tickets",
+          "url": "https://fluentsupport.com/docs/bookmarks/"
+        },
+        {
+          "title": "Merge Tickets",
+          "url": "https://fluentsupport.com/docs/merge-tickets/"
+        },
+        {
+          "title": "Outgoing Webhook",
+          "url": "https://fluentsupport.com/docs/outgoing-webhook/"
+        },
+        {
+          "title": "Custom Fields",
+          "url": "https://fluentsupport.com/docs/conditional-custom-fields/"
+        },
+        {
+          "title": "Creating A Ticket On Behalf Of The Customer",
+          "url": "https://fluentsupport.com/docs/creating-ticket-on-behalf-of-customer/"
+        },
+        {
+          "title": "Bulk Action in Tickets",
+          "url": "https://fluentsupport.com/docs/bulk-action-in-tickets/"
+        },
+        {
+          "title": "Internal Notes",
+          "url": "https://fluentsupport.com/docs/internal-notes/"
+        },
+        {
+          "title": "Agent Specific Tickets (My Tickets)",
+          "url": "https://fluentsupport.com/docs/agent-specific-tickets-my-tickets/"
+        },
+        {
+          "title": "Filtering, Sorting & Searching Tickets",
+          "url": "https://fluentsupport.com/docs/filtering-sorting-searching-tickets/"
+        },
+        {
+          "title": "Saved (Templated) Replies",
+          "url": "https://fluentsupport.com/docs/templated-saved-replies/"
+        },
+        {
+          "title": "Ticket Tags (Custom Tags)",
+          "url": "https://fluentsupport.com/docs/ticket-tags-custom-tags/"
+        }
+      ]
+    },
+    {
+      "title": "Ticket Importer",
+      "slug": "ticket-importer",
+      "url": "https://fluentsupport.com/documentation/ticket-importer/",
+      "file": "categories/ticket-importer.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Zendesk Ticket Migrator",
+          "url": "https://fluentsupport.com/docs/zendesk-ticket-migrator/"
+        },
+        {
+          "title": "Freshdesk (Freshworks) Ticket Migrator",
+          "url": "https://fluentsupport.com/docs/freshdesk-ticket-migrator/"
+        },
+        {
+          "title": "HelpScout Ticket Migrator",
+          "url": "https://fluentsupport.com/docs/helpscout-ticket-migrator/"
+        },
+        {
+          "title": "Ticket Importer",
+          "url": "https://fluentsupport.com/docs/ticket-importer/"
+        }
+      ]
+    },
+    {
+      "title": "Ticket Management Using Third Parties",
+      "slug": "ticket-management-using-third-parties",
+      "url": "https://fluentsupport.com/documentation/ticket-management-using-third-parties/",
+      "file": "categories/ticket-management-using-third-parties.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Managing Tickets Using WhatsApp",
+          "url": "https://fluentsupport.com/docs/whatsapp-integration-via-twilio/"
+        },
+        {
+          "title": "Managing Tickets Using Discord",
+          "url": "https://fluentsupport.com/docs/managing-tickets-using-discord/"
+        },
+        {
+          "title": "Managing Tickets using Telegram",
+          "url": "https://fluentsupport.com/docs/managing-tickets-using-telegram/"
+        },
+        {
+          "title": "Managing Tickets Using Slack",
+          "url": "https://fluentsupport.com/docs/managing-tickets-using-slack/"
+        }
+      ]
+    },
+    {
+      "title": "Workflow Automation",
+      "slug": "workflow-automation",
+      "url": "https://fluentsupport.com/documentation/workflow-automation/",
+      "file": "categories/workflow-automation.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Automatic Workflow",
+          "url": "https://fluentsupport.com/docs/automatic-workflow/"
+        },
+        {
+          "title": "Manual Workflow",
+          "url": "https://fluentsupport.com/docs/manual-workflow/"
+        },
+        {
+          "title": "Workflows & Automations",
+          "url": "https://fluentsupport.com/docs/workflows-automations/"
+        }
+      ]
+    }
+  ]
+}

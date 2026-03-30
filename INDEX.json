@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T14:53:30.502Z",
-  "total_plugins": 6,
+  "last_updated": "2026-03-30T14:58:08.529Z",
+  "total_plugins": 7,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -138,6 +138,26 @@
         "integrations",
         "miscellaneous",
         "payments"
+      ]
+    },
+    {
+      "slug": "fluentsupport",
+      "name": "Fluent Support",
+      "documentation_url": "https://fluentsupport.com/documentation/",
+      "last_scraped": "2026-03-30T14:58:08.529Z",
+      "page_count": 85,
+      "categories": [
+        "activities-and-reports",
+        "ai-powered-assistance",
+        "business-management",
+        "change-log",
+        "email-management",
+        "getting-started",
+        "integrations",
+        "productivity",
+        "ticket-importer",
+        "ticket-management-using-third-parties",
+        "workflow-automation"
       ]
     }
   ]
