@@ -111,11 +111,32 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+/**
+ * Turn relative / protocol-relative image (and asset) URLs into absolute URLs
+ * so markdown still works when rendered off-site (e.g. WordPress admin).
+ */
+function resolveResourceUrl(raw, pageUrl) {
+  if (!raw || typeof raw !== 'string') return raw || '';
+  const t = raw.trim();
+  if (!t || /^data:/i.test(t)) return t;
+  if (/^https?:\/\//i.test(t)) return t;
+  if (!pageUrl) return t;
+  try {
+    if (t.startsWith('//')) {
+      const proto = new URL(pageUrl).protocol || 'https:';
+      return proto + t;
+    }
+    return new URL(t, pageUrl).href;
+  } catch (_) {
+    return t;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // HTML to Markdown Conversion
 // ---------------------------------------------------------------------------
 
-function htmlToMarkdown($, el) {
+function htmlToMarkdown($, el, pageUrl = '') {
   let md = '';
 
   el.contents().each((_, node) => {
@@ -133,13 +154,13 @@ function htmlToMarkdown($, el) {
       case 'h3': md += `\n### ${$n.text().trim()}\n\n`; break;
       case 'h4': md += `\n#### ${$n.text().trim()}\n\n`; break;
       case 'p': {
-        const pInner = htmlToMarkdown($, $n);
+        const pInner = htmlToMarkdown($, $n, pageUrl);
         if (pInner.trim()) md += `${pInner.trim()}\n\n`;
         break;
       }
       case 'ul': {
         $n.children('li').each((_, li) => {
-          const liContent = htmlToMarkdown($, $(li)).trim();
+          const liContent = htmlToMarkdown($, $(li), pageUrl).trim();
           md += `- ${liContent}\n`;
         });
         md += '\n';
@@ -148,7 +169,7 @@ function htmlToMarkdown($, el) {
       case 'ol': {
         let i = 1;
         $n.children('li').each((_, li) => {
-          const liContent = htmlToMarkdown($, $(li)).trim();
+          const liContent = htmlToMarkdown($, $(li), pageUrl).trim();
           md += `${i++}. ${liContent}\n`;
         });
         md += '\n';
@@ -167,7 +188,8 @@ function htmlToMarkdown($, el) {
           const imgSrc = childImg.attr('src') || childImg.attr('data-src') || childImg.attr('data-lazy-src') || childImg.attr('data-original') || '';
           const imgAlt = childImg.attr('alt') || '';
           const resolvedSrc = imgSrc || (href && /\.(jpg|jpeg|png|gif|webp|svg)(\?|$)/i.test(href) ? href : '');
-          if (resolvedSrc) { md += `![${imgAlt}](${resolvedSrc})`; break; }
+          const absSrc = resolveResourceUrl(resolvedSrc, pageUrl);
+          if (absSrc) { md += `![${imgAlt}](${absSrc})`; break; }
         }
         const text = $n.text().trim();
         if (text && href) md += `[${text}](${href})`;
@@ -194,7 +216,8 @@ function htmlToMarkdown($, el) {
       case 'img': {
         const alt = $n.attr('alt') || '';
         const src = $n.attr('src') || $n.attr('data-src') || $n.attr('data-lazy-src') || $n.attr('data-original') || '';
-        if (src && !/data:image/.test(src) && !/placeholder/.test(src)) md += `![${alt}](${src})`;
+        const absSrc = resolveResourceUrl(src, pageUrl);
+        if (absSrc && !/data:image/i.test(src) && !/placeholder/i.test(src)) md += `![${alt}](${absSrc})`;
         break;
       }
       case 'table': {
@@ -217,7 +240,7 @@ function htmlToMarkdown($, el) {
         break;
       }
       default: {
-        const inner = htmlToMarkdown($, $n);
+        const inner = htmlToMarkdown($, $n, pageUrl);
         if (inner.trim()) md += inner;
       }
     }
@@ -226,9 +249,9 @@ function htmlToMarkdown($, el) {
   return md.replace(/\n{3,}/g, '\n\n').trim();
 }
 
-function htmlStringToMarkdown(htmlString) {
+function htmlStringToMarkdown(htmlString, pageUrl = '') {
   const $ = cheerio.load(htmlString);
-  return htmlToMarkdown($, $('body'));
+  return htmlToMarkdown($, $('body'), pageUrl);
 }
 
 function extractHeadingsFromHtml(htmlString) {
@@ -485,7 +508,8 @@ async function runWpApi(args) {
         continue;
       }
 
-      const markdown = htmlStringToMarkdown(htmlContent);
+      const pageContextUrl = postUrl || siteUrl.replace(/\/$/, '') + '/';
+      const markdown = htmlStringToMarkdown(htmlContent, pageContextUrl);
       const headings = extractHeadingsFromHtml(htmlContent);
       const codeBlocks = extractCodeBlocksFromHtml(htmlContent);
 
@@ -615,7 +639,7 @@ async function runSitemap(args) {
       continue;
     }
 
-    const extracted = extractContent(html, config);
+    const extracted = extractContent(html, config, url);
     if (!extracted || !extracted.markdown) {
       console.log('EMPTY');
       failedUrls.push(url);
@@ -658,7 +682,7 @@ async function runSitemap(args) {
 // MODE: html-scrape (original behavior)
 // ===========================================================================
 
-function extractContent(html, config) {
+function extractContent(html, config, pageUrl = '') {
   const $ = cheerio.load(html);
   config.stripSelectors.forEach(sel => $(sel).remove());
 
@@ -682,7 +706,7 @@ function extractContent(html, config) {
     if (code && code.length > 10) codeBlocks.push(code);
   });
 
-  const markdown = htmlToMarkdown($, contentEl);
+  const markdown = htmlToMarkdown($, contentEl, pageUrl);
   return { title, headings, codeBlocks, markdown };
 }
 
@@ -757,7 +781,7 @@ async function runHtmlScrape(args) {
       continue;
     }
 
-    const extracted = extractContent(html, config);
+    const extracted = extractContent(html, config, url);
     if (!extracted || !extracted.markdown) {
       console.log('EMPTY');
       failedUrls.push(url);
