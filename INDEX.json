@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T14:39:54.506Z",
-  "total_plugins": 5,
+  "last_updated": "2026-03-30T14:53:30.502Z",
+  "total_plugins": 6,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -121,6 +121,23 @@
         "shipping",
         "store-management",
         "troubleshooting-support"
+      ]
+    },
+    {
+      "slug": "fluentbooking",
+      "name": "FluentBooking",
+      "documentation_url": "https://fluentbooking.com/documentation/",
+      "last_scraped": "2026-03-30T14:53:30.502Z",
+      "page_count": 57,
+      "categories": [
+        "availability",
+        "bookings",
+        "getting-started",
+        "global-settings",
+        "host-events",
+        "integrations",
+        "miscellaneous",
+        "payments"
       ]
     }
   ]

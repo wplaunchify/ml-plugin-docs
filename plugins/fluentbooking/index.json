@@ -1,0 +1,310 @@
+{
+  "plugin_slug": "fluentbooking",
+  "plugin_name": "FluentBooking",
+  "documentation_url": "https://fluentbooking.com/documentation/",
+  "last_scraped": "2026-03-30T14:53:30.500Z",
+  "total_pages": 57,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Availability",
+      "slug": "availability",
+      "url": "https://fluentbooking.com/documentation/availability/",
+      "file": "categories/availability.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Availability Management",
+          "url": "https://fluentbooking.com/docs/availability-management/"
+        },
+        {
+          "title": "Configure Availability",
+          "url": "https://fluentbooking.com/docs/configure-availability/"
+        }
+      ]
+    },
+    {
+      "title": "Bookings",
+      "slug": "bookings",
+      "url": "https://fluentbooking.com/documentation/bookings/",
+      "file": "categories/bookings.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Create Booking Manually",
+          "url": "https://fluentbooking.com/docs/create-booking-manually/"
+        },
+        {
+          "title": "Cancel a Booking",
+          "url": "https://fluentbooking.com/docs/how-to-cancel-a-booking/"
+        },
+        {
+          "title": "Booking Details",
+          "url": "https://fluentbooking.com/docs/booking-details/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://fluentbooking.com/documentation/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Install, Activate, and Update FluentBooking",
+          "url": "https://fluentbooking.com/docs/install-activate-and-update-fluentbooking/"
+        },
+        {
+          "title": "Enabling Team Page in WordPress Front-end",
+          "url": "https://fluentbooking.com/docs/enabling-team-page-in-wordpress-front-end/"
+        },
+        {
+          "title": "Add your Booking Form to the WordPress site’s Front-end",
+          "url": "https://fluentbooking.com/docs/add-your-booking-form-to-the-wordpress-sites-front-end/"
+        },
+        {
+          "title": "Install & Activate FluentBooking Pro",
+          "url": "https://fluentbooking.com/docs/how-to-install-activate-fluent-booking/"
+        },
+        {
+          "title": "Dashboard Overview",
+          "url": "https://fluentbooking.com/docs/dashboard-overview/"
+        }
+      ]
+    },
+    {
+      "title": "Global Settings",
+      "slug": "global-settings",
+      "url": "https://fluentbooking.com/documentation/global-settings/",
+      "file": "categories/global-settings.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Frontend Panel",
+          "url": "https://fluentbooking.com/docs/fluentbooking-frontend-panel/"
+        },
+        {
+          "title": "Host Settings",
+          "url": "https://fluentbooking.com/docs/host-settings/"
+        },
+        {
+          "title": "Global Settings",
+          "url": "https://fluentbooking.com/docs/global-email-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Host Events",
+      "slug": "host-events",
+      "url": "https://fluentbooking.com/documentation/host-events/",
+      "file": "categories/host-events.md",
+      "page_count": 16,
+      "pages": [
+        {
+          "title": "Set Recurring Events",
+          "url": "https://fluentbooking.com/docs/set-recurring-events/"
+        },
+        {
+          "title": "Collective Booking Event",
+          "url": "https://fluentbooking.com/docs/collective-booking-event/"
+        },
+        {
+          "title": "Group One-off Event",
+          "url": "https://fluentbooking.com/docs/group-one-off-event/"
+        },
+        {
+          "title": "Single One-off Event",
+          "url": "https://fluentbooking.com/docs/single-one-off-event/"
+        },
+        {
+          "title": "Set Booking Advanced Settings",
+          "url": "https://fluentbooking.com/docs/how-to-set-booking-advanced-settings/"
+        },
+        {
+          "title": "Set Round Robin Bookings",
+          "url": "https://fluentbooking.com/docs/how-to-set-round-robin-bookings/"
+        },
+        {
+          "title": "Set Booking Limits",
+          "url": "https://fluentbooking.com/docs/how-to-set-booking-limits/"
+        },
+        {
+          "title": "Host/User Access Management",
+          "url": "https://fluentbooking.com/docs/host-user-access-management/"
+        },
+        {
+          "title": "Set Booking Summary Email",
+          "url": "https://fluentbooking.com/docs/how-to-set-booking-summary-email/"
+        },
+        {
+          "title": "How to Enable Landing Page for Your Host",
+          "url": "https://fluentbooking.com/docs/how-to-enable-landing-page-for-your-host/"
+        },
+        {
+          "title": "Set Booking Questions",
+          "url": "https://fluentbooking.com/docs/how-to-set-booking-questions/"
+        },
+        {
+          "title": "Create a Booking Availability",
+          "url": "https://fluentbooking.com/docs/how-to-create-a-booking-schedule/"
+        },
+        {
+          "title": "Create New Events",
+          "url": "https://fluentbooking.com/docs/how-to-create-new-events/"
+        },
+        {
+          "title": "Set Email Notifications for a Booking",
+          "url": "https://fluentbooking.com/docs/how-to-set-email-notifications-for-a-booking/"
+        },
+        {
+          "title": "Modify Event Details",
+          "url": "https://fluentbooking.com/docs/how-to-modify-event-details/"
+        },
+        {
+          "title": "Create a New Host",
+          "url": "https://fluentbooking.com/docs/how-to-create-a-new-host/"
+        }
+      ]
+    },
+    {
+      "title": "Integrations",
+      "slug": "integrations",
+      "url": "https://fluentbooking.com/documentation/integrations/",
+      "file": "categories/integrations.md",
+      "page_count": 12,
+      "pages": [
+        {
+          "title": "FluentCart Integration With FluentBooking",
+          "url": "https://fluentbooking.com/docs/fluentcart-integration-with-fluentbooking/"
+        },
+        {
+          "title": "FluentBoards Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/fluentboards-integration-with-fluentbooking/"
+        },
+        {
+          "title": "Nextcloud Calendar Integration With FluentBooking",
+          "url": "https://fluentbooking.com/docs/next-cloud-calendar-integration-with-fluent-booking/"
+        },
+        {
+          "title": "Apple Calendar Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/apple-calendar-integration-with-fluent-booking/"
+        },
+        {
+          "title": "Outlook Calendar Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/outlook-calendar-integration-with-fluent-booking/"
+        },
+        {
+          "title": "WooCommerce Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/woocommerce-integration-with-fluentbooking/"
+        },
+        {
+          "title": "Twilio/SMS/WhatsApp Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/twilio-integration-with-fluentbooking/"
+        },
+        {
+          "title": "FluentCRM integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/fluentcrm-integration-with-fluentbooking/"
+        },
+        {
+          "title": "Webhook Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/webhook-integration-with-fluentbooking/"
+        },
+        {
+          "title": "Fluent Forms Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/fluent-form-integration-with-fluentbooking/"
+        },
+        {
+          "title": "Zoom Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/zoom-integration-with-fluentbooking/"
+        },
+        {
+          "title": "Google Calendar/Meet integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/google-calendar-meet-integration-with-fluent-booking/"
+        }
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "slug": "miscellaneous",
+      "url": "https://fluentbooking.com/documentation/miscellaneous/",
+      "file": "categories/miscellaneous.md",
+      "page_count": 8,
+      "pages": [
+        {
+          "title": "How to Embed Booking Calendar using HTML",
+          "url": "https://fluentbooking.com/docs/how-to-embed-booking-calendar-using-html/"
+        },
+        {
+          "title": "UTM Tracking for Bookings",
+          "url": "https://fluentbooking.com/docs/utm-tracking-for-bookings/"
+        },
+        {
+          "title": "Gutenberg Blocks",
+          "url": "https://fluentbooking.com/docs/gutenberg-blocks/"
+        },
+        {
+          "title": "FluentBooking Shortcodes",
+          "url": "https://fluentbooking.com/docs/fluentbooking-shortcodes/"
+        },
+        {
+          "title": "Import, Export and Clone Events",
+          "url": "https://fluentbooking.com/docs/import-export-and-clone-events/"
+        },
+        {
+          "title": "Prettify Landing Page URL",
+          "url": "https://fluentbooking.com/docs/how-to-prettify-landing-page-url/"
+        },
+        {
+          "title": "Changelog",
+          "url": "https://fluentbooking.com/docs/changelog/"
+        },
+        {
+          "title": "Pass Default Booking Information to the URL",
+          "url": "https://fluentbooking.com/docs/pass-default-booking-information-to-the-url/"
+        }
+      ]
+    },
+    {
+      "title": "Payments",
+      "slug": "payments",
+      "url": "https://fluentbooking.com/documentation/payments/",
+      "file": "categories/payments.md",
+      "page_count": 8,
+      "pages": [
+        {
+          "title": "Customize the Coupon Field on your Booking Form",
+          "url": "https://fluentbooking.com/docs/customize-the-coupon-field-on-your-booking-form/"
+        },
+        {
+          "title": "How to Generate a Coupon Link",
+          "url": "https://fluentbooking.com/docs/how-to-generate-a-coupon-link/"
+        },
+        {
+          "title": "How to Create and Manage Payment Coupons",
+          "url": "https://fluentbooking.com/docs/how-to-create-and-manage-payment-coupons/"
+        },
+        {
+          "title": "Offline Payment for Booking",
+          "url": "https://fluentbooking.com/docs/offline-payment-for-booking/"
+        },
+        {
+          "title": "Take Multi-Payments",
+          "url": "https://fluentbooking.com/docs/take-multi-payments/"
+        },
+        {
+          "title": "Paypal Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/paypal-integration-with-fluentbooking/"
+        },
+        {
+          "title": "Stripe Integration with FluentBooking",
+          "url": "https://fluentbooking.com/docs/stripe-integration-with-fluent-booking/"
+        },
+        {
+          "title": "Take Payment in Bookings",
+          "url": "https://fluentbooking.com/docs/how-to-take-payment-in-bookings/"
+        }
+      ]
+    }
+  ]
+}
