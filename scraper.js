@@ -596,7 +596,7 @@ async function runSitemap(args) {
           try {
             const p = new URL(u);
             if (p.hostname !== baseHost) return false;
-            if (/\/docs-sitemap\d*\.xml$/i.test(p.pathname)) return true;
+            if (/\/(docs-sitemap|documentation-sitemap)\d*\.xml$/i.test(p.pathname)) return true;
             return u.includes(docPathTrim);
           } catch (_) {
             return false;
