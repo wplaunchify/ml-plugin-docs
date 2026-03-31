@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-31T01:06:05.266Z",
-  "total_plugins": 13,
+  "last_updated": "2026-03-31T01:13:58.705Z",
+  "total_plugins": 14,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -327,6 +327,14 @@
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
       "last_scraped": "2026-03-31T01:06:05.266Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "kadence-blocks",
+      "name": "Kadence Blocks",
+      "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
+      "last_scraped": "2026-03-31T01:13:58.705Z",
       "page_count": 0,
       "categories": []
     }
