@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T17:54:17.856Z",
-  "total_plugins": 12,
+  "last_updated": "2026-03-31T00:52:44.562Z",
+  "total_plugins": 13,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -321,6 +321,14 @@
         "woocommerce-add-on",
         "zapier-add-on"
       ]
+    },
+    {
+      "slug": "kadence-theme",
+      "name": "Kadence Theme",
+      "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
+      "last_scraped": "2026-03-31T00:52:44.562Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
