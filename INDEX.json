@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-31T01:21:56.233Z",
-  "total_plugins": 14,
+  "last_updated": "2026-03-31T02:28:41.166Z",
+  "total_plugins": 15,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -337,6 +337,56 @@
       "last_scraped": "2026-03-31T01:21:56.233Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "woocommerce-subscriptions",
+      "name": "WooCommerce Subscriptions",
+      "documentation_url": "https://woocommerce.com/document/subscriptions/",
+      "last_scraped": "2026-03-31T02:28:41.166Z",
+      "page_count": 85,
+      "categories": [
+        "2020-new-visa-requirements-for-subscriptions-with-a-free-trial",
+        "add-or-modify-a-subscription",
+        "change-subscription-from-automatic-to-manual-payments",
+        "common-issues-and-error-messages-for-woocommerce-subscriptions",
+        "creating-subscription-products",
+        "customers-extend-subscription-expiration-date",
+        "customers-view",
+        "develop",
+        "disabling-subscriptions",
+        "early-renewal",
+        "failed-payment-retry",
+        "faq",
+        "gdpr",
+        "logs-2",
+        "migrating-subscribers-woocommerce-subscriptions",
+        "orders",
+        "payment-gateways",
+        "renewal-process",
+        "renewal-synchronisation",
+        "requirements",
+        "restore-backup-subscriptions",
+        "resubscribe",
+        "scheduled-action-errors",
+        "skip-subscriptions-renewal",
+        "sort-search-and-filter",
+        "statuses",
+        "store-manager-guide",
+        "subscription-access-to-memberships",
+        "subscription-emails",
+        "subscription-product-vs-subscription",
+        "subscriptions-coupons",
+        "subscriptions-handles-staging-sites",
+        "subscriptions-notifications",
+        "switching-guide",
+        "testing-subscription-renewal-payments",
+        "troubleshooting-framework",
+        "troubleshooting-framework-for-paypal-standard-subscriptions",
+        "troubleshooting-translation-issues",
+        "use-case-subscription-donations",
+        "why-are-my-paypal-standard-subscription-renewals-duplicating-or-on-hold",
+        "woocommerce-subscriptions-snippets-and-plugins"
+      ]
     }
   ]
 }

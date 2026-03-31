@@ -1,0 +1,719 @@
+{
+  "plugin_slug": "woocommerce-subscriptions",
+  "plugin_name": "WooCommerce Subscriptions",
+  "documentation_url": "https://woocommerce.com/document/subscriptions/",
+  "last_scraped": "2026-03-31T02:28:41.161Z",
+  "total_pages": 85,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "2020 New Visa Requirements For Subscriptions With A Free Trial",
+      "slug": "2020-new-visa-requirements-for-subscriptions-with-a-free-trial",
+      "url": "https://woocommerce.com/document/subscriptions/2020-new-visa-requirements-for-subscriptions-with-a-free-trial/",
+      "file": "categories/2020-new-visa-requirements-for-subscriptions-with-a-free-trial.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "2020 New Visa Requirements for Subscriptions with a Free Trial",
+          "url": "https://woocommerce.com/document/subscriptions/2020-new-visa-requirements-for-subscriptions-with-a-free-trial/"
+        }
+      ]
+    },
+    {
+      "title": "Add Or Modify A Subscription",
+      "slug": "add-or-modify-a-subscription",
+      "url": "https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/",
+      "file": "categories/add-or-modify-a-subscription.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Manually Add or Import a Subscription",
+          "url": "https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/"
+        },
+        {
+          "title": "Edit an Existing Subscription",
+          "url": "https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/update-an-existing-subscription/"
+        }
+      ]
+    },
+    {
+      "title": "Change Subscription From Automatic To Manual Payments",
+      "slug": "change-subscription-from-automatic-to-manual-payments",
+      "url": "https://woocommerce.com/document/subscriptions/change-subscription-from-automatic-to-manual-payments/",
+      "file": "categories/change-subscription-from-automatic-to-manual-payments.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Change a Subscription from Automatic to Manual Payments",
+          "url": "https://woocommerce.com/document/subscriptions/change-subscription-from-automatic-to-manual-payments/"
+        }
+      ]
+    },
+    {
+      "title": "Common Issues And Error Messages For Woocommerce Subscriptions",
+      "slug": "common-issues-and-error-messages-for-woocommerce-subscriptions",
+      "url": "https://woocommerce.com/document/subscriptions/common-issues-and-error-messages-for-woocommerce-subscriptions/",
+      "file": "categories/common-issues-and-error-messages-for-woocommerce-subscriptions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Common Issues and Error Messages for WooCommerce Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/common-issues-and-error-messages-for-woocommerce-subscriptions/"
+        }
+      ]
+    },
+    {
+      "title": "Creating Subscription Products",
+      "slug": "creating-subscription-products",
+      "url": "https://woocommerce.com/document/subscriptions/creating-subscription-products/",
+      "file": "categories/creating-subscription-products.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Creating a Subscription Product",
+          "url": "https://woocommerce.com/document/subscriptions/creating-subscription-products/"
+        },
+        {
+          "title": "How Subscriptions Manages Stock",
+          "url": "https://woocommerce.com/document/subscriptions/creating-subscription-products/stock-management/"
+        }
+      ]
+    },
+    {
+      "title": "Customers Extend Subscription Expiration Date",
+      "slug": "customers-extend-subscription-expiration-date",
+      "url": "https://woocommerce.com/document/subscriptions/customers-extend-subscription-expiration-date/",
+      "file": "categories/customers-extend-subscription-expiration-date.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Managing Expired Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/customers-extend-subscription-expiration-date/"
+        }
+      ]
+    },
+    {
+      "title": "Customers View",
+      "slug": "customers-view",
+      "url": "https://woocommerce.com/document/subscriptions/customers-view/",
+      "file": "categories/customers-view.md",
+      "page_count": 9,
+      "pages": [
+        {
+          "title": "Subscriber’s View",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/"
+        },
+        {
+          "title": "Activating/Deactivating Auto Renew",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/activating-deactivating-auto-renew/"
+        },
+        {
+          "title": "Gifting a Subscription",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/gifting-a-subscription/"
+        },
+        {
+          "title": "Pay for Renewal",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/pay-for-renewal/"
+        },
+        {
+          "title": "Manage Payment Methods — Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/subscriber-payment-methods/"
+        },
+        {
+          "title": "Subscribers’ Resubscribe Guide",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/subscribers-resubscribe-guide/"
+        },
+        {
+          "title": "Subscribers’ Guide to Switching Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/subscribers-view-switch/"
+        },
+        {
+          "title": "Suspend, Cancel, or Remove an Item",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/suspend-cancel-or-remove-an-item/"
+        },
+        {
+          "title": "Change Address on Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/update-address/"
+        }
+      ]
+    },
+    {
+      "title": "Develop",
+      "slug": "develop",
+      "url": "https://woocommerce.com/document/subscriptions/develop/",
+      "file": "categories/develop.md",
+      "page_count": 22,
+      "pages": [
+        {
+          "title": "Introduction to Subscriptions Developer Documentation",
+          "url": "https://woocommerce.com/document/subscriptions/develop/"
+        },
+        {
+          "title": "Subscriptions Action Reference",
+          "url": "https://woocommerce.com/document/subscriptions/develop/action-reference/"
+        },
+        {
+          "title": "Subscription Caches",
+          "url": "https://woocommerce.com/document/subscriptions/develop/cache/"
+        },
+        {
+          "title": "Developer Guide to Change Subscriptions to Manual Payments",
+          "url": "https://woocommerce.com/document/subscriptions/develop/change-subscription-to-manual-payments/"
+        },
+        {
+          "title": "Complete Guide to Scheduled Events with Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/develop/complete-guide-to-scheduled-events-with-subscriptions/"
+        },
+        {
+          "title": "Customizing the My Subscriptions Page",
+          "url": "https://woocommerce.com/document/subscriptions/develop/customizing-the-my-subscriptions-page/"
+        },
+        {
+          "title": "Subscriptions Data Structures & Storage",
+          "url": "https://woocommerce.com/document/subscriptions/develop/data-structure/"
+        },
+        {
+          "title": "How can I deactivate core subscription features, like changing payment methods?",
+          "url": "https://woocommerce.com/document/subscriptions/develop/disable-core-subscription-features/"
+        },
+        {
+          "title": "Developer Guide to Failed Recurring Payment Retry System",
+          "url": "https://woocommerce.com/document/subscriptions/develop/failed-payment-retry/"
+        },
+        {
+          "title": "Subscriptions Filter Reference",
+          "url": "https://woocommerce.com/document/subscriptions/develop/filter-reference/"
+        },
+        {
+          "title": "Subscription Function & Property Reference",
+          "url": "https://woocommerce.com/document/subscriptions/develop/functions/"
+        },
+        {
+          "title": "Subscriptions Management Function Reference",
+          "url": "https://woocommerce.com/document/subscriptions/develop/functions/management-functions/"
+        },
+        {
+          "title": "Subscription Order & Cart Function Reference",
+          "url": "https://woocommerce.com/document/subscriptions/develop/functions/order-cart-functions/"
+        },
+        {
+          "title": "Subscription Product Function Reference",
+          "url": "https://woocommerce.com/document/subscriptions/develop/functions/product-functions/"
+        },
+        {
+          "title": "Store Manager Guide to Multiple Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/develop/multiple-subscriptions-2/"
+        },
+        {
+          "title": "Developer Guide to Multiple Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/develop/multiple-subscriptions/"
+        },
+        {
+          "title": "Subscriptions Payment Gateway Integration Guide",
+          "url": "https://woocommerce.com/document/subscriptions/develop/payment-gateway-integration/"
+        },
+        {
+          "title": "Admin Change Payment Method Integration Guide",
+          "url": "https://woocommerce.com/document/subscriptions/develop/payment-gateway-integration/change-payment-method-admin/"
+        },
+        {
+          "title": "How can I stop Subscriptions from changing a user’s role?",
+          "url": "https://woocommerce.com/document/subscriptions/develop/prevent-role-changes-by-subscriptions/"
+        },
+        {
+          "title": "Developer Guide to Cart and Recurring Cart Fees",
+          "url": "https://woocommerce.com/document/subscriptions/develop/recurring-cart-fees/"
+        },
+        {
+          "title": "How can I remove an action button from the View Subscriptions page?",
+          "url": "https://woocommerce.com/document/subscriptions/develop/remove-an-action-button/"
+        },
+        {
+          "title": "Subscriptions v2.0: Database Upgrade Process for v1.5 to v2.0",
+          "url": "https://woocommerce.com/document/subscriptions/develop/version-2/database-upgrade-process/"
+        }
+      ]
+    },
+    {
+      "title": "Disabling Subscriptions",
+      "slug": "disabling-subscriptions",
+      "url": "https://woocommerce.com/document/subscriptions/disabling-subscriptions/",
+      "file": "categories/disabling-subscriptions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Deactivating WooCommerce Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/disabling-subscriptions/"
+        }
+      ]
+    },
+    {
+      "title": "Early Renewal",
+      "slug": "early-renewal",
+      "url": "https://woocommerce.com/document/subscriptions/early-renewal/",
+      "file": "categories/early-renewal.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscriptions Early Renewal Guide",
+          "url": "https://woocommerce.com/document/subscriptions/early-renewal/"
+        }
+      ]
+    },
+    {
+      "title": "Failed Payment Retry",
+      "slug": "failed-payment-retry",
+      "url": "https://woocommerce.com/document/subscriptions/failed-payment-retry/",
+      "file": "categories/failed-payment-retry.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Failed Recurring Payment Retry System",
+          "url": "https://woocommerce.com/document/subscriptions/failed-payment-retry/"
+        },
+        {
+          "title": "Test the WooCommerce Subscriptions Payment Retry System",
+          "url": "https://woocommerce.com/document/subscriptions/failed-payment-retry/test-retry-system/"
+        }
+      ]
+    },
+    {
+      "title": "Faq",
+      "slug": "faq",
+      "url": "https://woocommerce.com/document/subscriptions/faq/",
+      "file": "categories/faq.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscriptions FAQ",
+          "url": "https://woocommerce.com/document/subscriptions/faq/"
+        }
+      ]
+    },
+    {
+      "title": "Gdpr",
+      "slug": "gdpr",
+      "url": "https://woocommerce.com/document/subscriptions/gdpr/",
+      "file": "categories/gdpr.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscriptions and the GDPR",
+          "url": "https://woocommerce.com/document/subscriptions/gdpr/"
+        }
+      ]
+    },
+    {
+      "title": "Logs 2",
+      "slug": "logs-2",
+      "url": "https://woocommerce.com/document/subscriptions/logs-2/",
+      "file": "categories/logs-2.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscriptions Logs",
+          "url": "https://woocommerce.com/document/subscriptions/logs-2/"
+        }
+      ]
+    },
+    {
+      "title": "Migrating Subscribers Woocommerce Subscriptions",
+      "slug": "migrating-subscribers-woocommerce-subscriptions",
+      "url": "https://woocommerce.com/document/subscriptions/migrating-subscribers-woocommerce-subscriptions/",
+      "file": "categories/migrating-subscribers-woocommerce-subscriptions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Migrating Subscribers to WooCommerce Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/migrating-subscribers-woocommerce-subscriptions/"
+        }
+      ]
+    },
+    {
+      "title": "Orders",
+      "slug": "orders",
+      "url": "https://woocommerce.com/document/subscriptions/orders/",
+      "file": "categories/orders.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscription Orders",
+          "url": "https://woocommerce.com/document/subscriptions/orders/"
+        }
+      ]
+    },
+    {
+      "title": "Payment Gateways",
+      "slug": "payment-gateways",
+      "url": "https://woocommerce.com/document/subscriptions/payment-gateways/",
+      "file": "categories/payment-gateways.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Subscriptions Payment Methods & Gateways",
+          "url": "https://woocommerce.com/document/subscriptions/payment-gateways/"
+        },
+        {
+          "title": "Enabling Payment Gateways for Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/payment-gateways/enabling-payment-gateways-for-subscriptions/"
+        },
+        {
+          "title": "WooCommerce Subscriptions – PayPal Standard Configuration",
+          "url": "https://woocommerce.com/document/subscriptions/payment-gateways/paypal-standard-subscriptions-guide/"
+        },
+        {
+          "title": "PayPal Reference Transactions for Subscriptions FAQ",
+          "url": "https://woocommerce.com/document/subscriptions/payment-gateways/paypal-standard-subscriptions-guide/paypal-standard-reference-transactions/"
+        }
+      ]
+    },
+    {
+      "title": "Renewal Process",
+      "slug": "renewal-process",
+      "url": "https://woocommerce.com/document/subscriptions/renewal-process/",
+      "file": "categories/renewal-process.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Subscription Renewal Process",
+          "url": "https://woocommerce.com/document/subscriptions/renewal-process/"
+        },
+        {
+          "title": "Turning Automatic Renewals On/Off",
+          "url": "https://woocommerce.com/document/subscriptions/renewal-process/auto-renewal-toggle/"
+        },
+        {
+          "title": "Minimum Periods for WooCommerce Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/renewal-process/minimum-periods-for-woocommerce-subscriptions/"
+        }
+      ]
+    },
+    {
+      "title": "Renewal Synchronisation",
+      "slug": "renewal-synchronisation",
+      "url": "https://woocommerce.com/document/subscriptions/renewal-synchronisation/",
+      "file": "categories/renewal-synchronisation.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Guide to Synchronized Renewals",
+          "url": "https://woocommerce.com/document/subscriptions/renewal-synchronisation/"
+        },
+        {
+          "title": "Creating a Synchronized Subscription Product",
+          "url": "https://woocommerce.com/document/subscriptions/renewal-synchronisation/creating-a-synchronized-subscription-product/"
+        }
+      ]
+    },
+    {
+      "title": "Requirements",
+      "slug": "requirements",
+      "url": "https://woocommerce.com/document/subscriptions/requirements/",
+      "file": "categories/requirements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to test if WP-Cron is working",
+          "url": "https://woocommerce.com/document/subscriptions/requirements/"
+        }
+      ]
+    },
+    {
+      "title": "Restore Backup Subscriptions",
+      "slug": "restore-backup-subscriptions",
+      "url": "https://woocommerce.com/document/subscriptions/restore-backup-subscriptions/",
+      "file": "categories/restore-backup-subscriptions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Restoring backups with WooCommerce Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/restore-backup-subscriptions/"
+        }
+      ]
+    },
+    {
+      "title": "Resubscribe",
+      "slug": "resubscribe",
+      "url": "https://woocommerce.com/document/subscriptions/resubscribe/",
+      "file": "categories/resubscribe.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscriptions Resubscribe Guide",
+          "url": "https://woocommerce.com/document/subscriptions/resubscribe/"
+        }
+      ]
+    },
+    {
+      "title": "Scheduled Action Errors",
+      "slug": "scheduled-action-errors",
+      "url": "https://woocommerce.com/document/subscriptions/scheduled-action-errors/",
+      "file": "categories/scheduled-action-errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscriptions Scheduled Action Errors",
+          "url": "https://woocommerce.com/document/subscriptions/scheduled-action-errors/"
+        }
+      ]
+    },
+    {
+      "title": "Skip Subscriptions Renewal",
+      "slug": "skip-subscriptions-renewal",
+      "url": "https://woocommerce.com/document/subscriptions/skip-subscriptions-renewal/",
+      "file": "categories/skip-subscriptions-renewal.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Use case: skip a Subscriptions renewal based on signup date",
+          "url": "https://woocommerce.com/document/subscriptions/skip-subscriptions-renewal/"
+        }
+      ]
+    },
+    {
+      "title": "Sort Search And Filter",
+      "slug": "sort-search-and-filter",
+      "url": "https://woocommerce.com/document/subscriptions/sort-search-and-filter/",
+      "file": "categories/sort-search-and-filter.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sort, Search, and Filter Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/sort-search-and-filter/"
+        }
+      ]
+    },
+    {
+      "title": "Statuses",
+      "slug": "statuses",
+      "url": "https://woocommerce.com/document/subscriptions/statuses/",
+      "file": "categories/statuses.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscriptions Status Guide",
+          "url": "https://woocommerce.com/document/subscriptions/statuses/"
+        }
+      ]
+    },
+    {
+      "title": "Store Manager Guide",
+      "slug": "store-manager-guide",
+      "url": "https://woocommerce.com/document/subscriptions/store-manager-guide/",
+      "file": "categories/store-manager-guide.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Subscriptions General Settings",
+          "url": "https://woocommerce.com/document/subscriptions/store-manager-guide/"
+        },
+        {
+          "title": "Subscription Reports",
+          "url": "https://woocommerce.com/document/subscriptions/store-manager-guide/reports/"
+        }
+      ]
+    },
+    {
+      "title": "Subscription Access To Memberships",
+      "slug": "subscription-access-to-memberships",
+      "url": "https://woocommerce.com/document/subscriptions/subscription-access-to-memberships/",
+      "file": "categories/subscription-access-to-memberships.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Use Case: Sell Subscriptions for Membership Access",
+          "url": "https://woocommerce.com/document/subscriptions/subscription-access-to-memberships/"
+        }
+      ]
+    },
+    {
+      "title": "Subscription Emails",
+      "slug": "subscription-emails",
+      "url": "https://woocommerce.com/document/subscriptions/subscription-emails/",
+      "file": "categories/subscription-emails.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscription emails",
+          "url": "https://woocommerce.com/document/subscriptions/subscription-emails/"
+        }
+      ]
+    },
+    {
+      "title": "Subscription Product Vs Subscription",
+      "slug": "subscription-product-vs-subscription",
+      "url": "https://woocommerce.com/document/subscriptions/subscription-product-vs-subscription/",
+      "file": "categories/subscription-product-vs-subscription.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscription Products vs Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/subscription-product-vs-subscription/"
+        }
+      ]
+    },
+    {
+      "title": "Subscriptions Coupons",
+      "slug": "subscriptions-coupons",
+      "url": "https://woocommerce.com/document/subscriptions/subscriptions-coupons/",
+      "file": "categories/subscriptions-coupons.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Subscriptions Coupons",
+          "url": "https://woocommerce.com/document/subscriptions/subscriptions-coupons/"
+        },
+        {
+          "title": "Limited Subscription Payment Coupons",
+          "url": "https://woocommerce.com/document/subscriptions/subscriptions-coupons/limited-payment-coupon-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Subscriptions Handles Staging Sites",
+      "slug": "subscriptions-handles-staging-sites",
+      "url": "https://woocommerce.com/document/subscriptions/subscriptions-handles-staging-sites/",
+      "file": "categories/subscriptions-handles-staging-sites.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How Subscriptions Handles Staging Sites and Migrations",
+          "url": "https://woocommerce.com/document/subscriptions/subscriptions-handles-staging-sites/"
+        }
+      ]
+    },
+    {
+      "title": "Subscriptions Notifications",
+      "slug": "subscriptions-notifications",
+      "url": "https://woocommerce.com/document/subscriptions/subscriptions-notifications/",
+      "file": "categories/subscriptions-notifications.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscription Notifications",
+          "url": "https://woocommerce.com/document/subscriptions/subscriptions-notifications/"
+        }
+      ]
+    },
+    {
+      "title": "Switching Guide",
+      "slug": "switching-guide",
+      "url": "https://woocommerce.com/document/subscriptions/switching-guide/",
+      "file": "categories/switching-guide.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Store Manager’s Guide to Subscription Switching",
+          "url": "https://woocommerce.com/document/subscriptions/switching-guide/"
+        },
+        {
+          "title": "Subscription Switching with Coupons",
+          "url": "https://woocommerce.com/document/subscriptions/switching-guide/subscription-switching-with-coupons/"
+        },
+        {
+          "title": "Subscription Switching Process and Costs",
+          "url": "https://woocommerce.com/document/subscriptions/switching-guide/switching-process-and-costs/"
+        },
+        {
+          "title": "Subscriptions Switching Use Case: Changing Quantities",
+          "url": "https://woocommerce.com/document/subscriptions/switching-guide/switching-use-case-change-quantities/"
+        },
+        {
+          "title": "Tracking Switches",
+          "url": "https://woocommerce.com/document/subscriptions/switching-guide/tracking-switches/"
+        }
+      ]
+    },
+    {
+      "title": "Testing Subscription Renewal Payments",
+      "slug": "testing-subscription-renewal-payments",
+      "url": "https://woocommerce.com/document/subscriptions/testing-subscription-renewal-payments/",
+      "file": "categories/testing-subscription-renewal-payments.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Testing Subscription Renewal Payments",
+          "url": "https://woocommerce.com/document/subscriptions/testing-subscription-renewal-payments/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting Framework",
+      "slug": "troubleshooting-framework",
+      "url": "https://woocommerce.com/document/subscriptions/troubleshooting-framework/",
+      "file": "categories/troubleshooting-framework.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Framework for WooCommerce Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/troubleshooting-framework/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting Framework For Paypal Standard Subscriptions",
+      "slug": "troubleshooting-framework-for-paypal-standard-subscriptions",
+      "url": "https://woocommerce.com/document/subscriptions/troubleshooting-framework-for-paypal-standard-subscriptions/",
+      "file": "categories/troubleshooting-framework-for-paypal-standard-subscriptions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Framework for PayPal Standard Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions/troubleshooting-framework-for-paypal-standard-subscriptions/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting Translation Issues",
+      "slug": "troubleshooting-translation-issues",
+      "url": "https://woocommerce.com/document/subscriptions/troubleshooting-translation-issues/",
+      "file": "categories/troubleshooting-translation-issues.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Translating WooCommerce Subscriptions – Troubleshooting Translation Issues",
+          "url": "https://woocommerce.com/document/subscriptions/troubleshooting-translation-issues/"
+        }
+      ]
+    },
+    {
+      "title": "Use Case Subscription Donations",
+      "slug": "use-case-subscription-donations",
+      "url": "https://woocommerce.com/document/subscriptions/use-case-subscription-donations/",
+      "file": "categories/use-case-subscription-donations.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Use Case: Accept Recurring Donation Payments",
+          "url": "https://woocommerce.com/document/subscriptions/use-case-subscription-donations/"
+        }
+      ]
+    },
+    {
+      "title": "Why Are My Paypal Standard Subscription Renewals Duplicating Or On Hold",
+      "slug": "why-are-my-paypal-standard-subscription-renewals-duplicating-or-on-hold",
+      "url": "https://woocommerce.com/document/subscriptions/why-are-my-paypal-standard-subscription-renewals-duplicating-or-on-hold/",
+      "file": "categories/why-are-my-paypal-standard-subscription-renewals-duplicating-or-on-hold.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Duplicate PayPal Standard Subscription Renewals",
+          "url": "https://woocommerce.com/document/subscriptions/why-are-my-paypal-standard-subscription-renewals-duplicating-or-on-hold/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Subscriptions Snippets And Plugins",
+      "slug": "woocommerce-subscriptions-snippets-and-plugins",
+      "url": "https://woocommerce.com/document/subscriptions/woocommerce-subscriptions-snippets-and-plugins/",
+      "file": "categories/woocommerce-subscriptions-snippets-and-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WooCommerce Subscriptions Snippets And Plugins",
+          "url": "https://woocommerce.com/document/subscriptions/woocommerce-subscriptions-snippets-and-plugins/"
+        }
+      ]
+    }
+  ]
+}
