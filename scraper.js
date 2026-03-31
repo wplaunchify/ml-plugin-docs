@@ -552,6 +552,7 @@ async function runSitemap(args) {
   const { slug, url: baseUrl } = args;
   const contentSelector = args.selector || '.entry-content';
   const pluginName = args['name'] || slug.split(/[-_]/).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const sitemapIndexOverride = typeof args['sitemap-index'] === 'string' ? args['sitemap-index'] : '';
 
   const siteUrl = new URL(baseUrl).origin;
   const docPath = new URL(baseUrl).pathname;
@@ -560,15 +561,18 @@ async function runSitemap(args) {
   console.log(`  ML Plugin Docs Scraper (Sitemap)`);
   console.log(`  Plugin: ${pluginName} (${slug})`);
   console.log(`  Target: ${baseUrl}`);
+  if (sitemapIndexOverride) console.log(`  Sitemap index override: ${sitemapIndexOverride}`);
   console.log(`========================================\n`);
 
   // Step 1: Find and parse sitemap
   console.log('[1/4] Searching for sitemap...');
-  const sitemapUrls = [
-    siteUrl + '/wp-sitemap.xml',
-    siteUrl + '/sitemap_index.xml',
-    siteUrl + '/sitemap.xml'
-  ];
+  const sitemapUrls = sitemapIndexOverride
+    ? [sitemapIndexOverride]
+    : [
+        siteUrl + '/wp-sitemap.xml',
+        siteUrl + '/sitemap_index.xml',
+        siteUrl + '/sitemap.xml'
+      ];
 
   let docLinks = [];
 
@@ -584,7 +588,24 @@ async function runSitemap(args) {
     if (smHtml.includes('<sitemapindex')) {
       console.log('sitemap index found');
       const subUrls = [...smHtml.matchAll(/<loc>([^<]+)<\/loc>/gi)].map(m => m[1]);
-      const matchingSubs = subUrls.filter(u => u.includes(docPath.replace(/\/$/, '')));
+      const docPathTrim = docPath.replace(/\/$/, '');
+      let matchingSubs = subUrls.filter(u => u.includes(docPathTrim));
+      if (matchingSubs.length === 0 && sitemapIndexOverride) {
+        const baseHost = new URL(baseUrl).hostname;
+        matchingSubs = subUrls.filter(u => {
+          try {
+            const p = new URL(u);
+            if (p.hostname !== baseHost) return false;
+            if (/\/docs-sitemap\d*\.xml$/i.test(p.pathname)) return true;
+            return u.includes(docPathTrim);
+          } catch (_) {
+            return false;
+          }
+        });
+        if (matchingSubs.length > 0) {
+          console.log(`    Using ${matchingSubs.length} nested doc sitemap(s) (--sitemap-index fallback)`);
+        }
+      }
       for (const subUrl of matchingSubs) {
         process.stdout.write(`    Fetching ${subUrl}... `);
         const subHtml = await fetchPage(subUrl);
@@ -834,7 +855,7 @@ async function main() {
     console.error('  wp-api       Fetch via WordPress REST API');
     console.error('               --url=<site-url> --post-type=<cpt> [--taxonomy=<tax>]');
     console.error('  sitemap      Discover pages from XML sitemap, then scrape');
-    console.error('               --url=<docs-base-url> [--selector=<css>]');
+    console.error('               --url=<docs-base-url> [--selector=<css>] [--sitemap-index=<xml-url>]');
     console.error('  html-scrape  Discover links from index page, then scrape');
     console.error('               --url=<docs-index-url> [--selector=<css>] [--link-selector=<css>]');
     process.exit(1);
