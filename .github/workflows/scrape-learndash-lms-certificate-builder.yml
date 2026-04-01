@@ -1,0 +1,45 @@
+name: Scrape Learndash Lms Certificate Builder Documentation
+
+on:
+  schedule:
+    - cron: '0 8 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Learndash Lms Certificate Builder scraper
+        run: node scraper.js --slug=learndash-lms-certificate-builder --mode=wp-api --url=https://www.learndash.com/support/ --post-type=kb_icon --name="LearnDash LMS - Certificate Builder"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet plugins/ INDEX.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push results
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "ML Docs Bot"
+          git config user.email "bot@wplaunchify.com"
+          git add plugins/ INDEX.json
+          PAGES=$(node -e "const d=require('./plugins/learndash-lms-certificate-builder/documentation.json'); console.log(d.total_pages)")
+          git commit -m "Update Learndash Lms Certificate Builder docs (${PAGES} pages) - $(date -u +%Y-%m-%d)"
+          git push
