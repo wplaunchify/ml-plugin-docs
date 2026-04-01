@@ -1,0 +1,45 @@
+name: Scrape Fluent Snippet Version Control Documentation
+
+on:
+  schedule:
+    - cron: '0 6 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Fluent Snippet Version Control scraper
+        run: node scraper.js --slug=fluent-snippet-version-control --mode=html-scrape --url=https://fluent-snippet.com/docs/ --name="Fluent Snippet Version Control"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet plugins/ INDEX.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push results
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "ML Docs Bot"
+          git config user.email "bot@wplaunchify.com"
+          git add plugins/ INDEX.json
+          PAGES=$(node -e "const d=require('./plugins/fluent-snippet-version-control/documentation.json'); console.log(d.total_pages)")
+          git commit -m "Update Fluent Snippet Version Control docs (${PAGES} pages) - $(date -u +%Y-%m-%d)"
+          git push
