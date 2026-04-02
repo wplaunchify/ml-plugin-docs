@@ -1,0 +1,24 @@
+{
+  "plugin_slug": "menu-image",
+  "plugin_name": "Menu Image",
+  "last_scraped": "2026-04-02T07:52:57.116Z",
+  "total_pages": 1,
+  "failed_urls": [],
+  "pages": [
+    {
+      "title": "Menu Image, Icons made easy",
+      "url": "https://wordpress.org/plugins/menu-image/advanced/",
+      "category": "Advanced",
+      "content": "## Statistics\n\n\t\n#### Active versions\n\n\t\n\n\t\n#### Downloads Per Day\n\n\t\n\n\t\n#### Downloads history\n\n\t\n\n\t\n---\n\n## Advanced Options\n\nThis section is intended for advanced users and developers only. They are presented here for testing and educational purposes.\n\n#### Previous Versions\n\nPrevious versions of plugins may not be secure or stable. They are not recommended for use on production websites.Please select a specific version to download.\n\nDevelopment Version3.123.113.103.0.93.0.83.0.73.0.63.0.53.0.43.0.33.0.23.0.13.02.9.72.9.62.9.52.9.42.9.32.9.22.9.12.7.02.42.32.22.12.0 [Download](https://downloads.wordpress.org/plugin/menu-image.zip)",
+      "headings": [
+        "Statistics",
+        "Active versions",
+        "Downloads Per Day",
+        "Downloads history",
+        "Advanced Options",
+        "Previous Versions"
+      ],
+      "code_blocks": []
+    }
+  ]
+}

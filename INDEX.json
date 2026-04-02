@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-02T00:02:47.402Z",
-  "total_plugins": 15,
+  "last_updated": "2026-04-02T07:52:57.117Z",
+  "total_plugins": 16,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -386,6 +386,16 @@
         "use-case-subscription-donations",
         "why-are-my-paypal-standard-subscription-renewals-duplicating-or-on-hold",
         "woocommerce-subscriptions-snippets-and-plugins"
+      ]
+    },
+    {
+      "slug": "menu-image",
+      "name": "Menu Image",
+      "documentation_url": "https://wordpress.org/plugins/menu-image/",
+      "last_scraped": "2026-04-02T07:52:57.117Z",
+      "page_count": 1,
+      "categories": [
+        "advanced"
       ]
     }
   ]

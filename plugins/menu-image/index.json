@@ -1,0 +1,23 @@
+{
+  "plugin_slug": "menu-image",
+  "plugin_name": "Menu Image",
+  "documentation_url": "https://wordpress.org/plugins/menu-image/",
+  "last_scraped": "2026-04-02T07:52:57.116Z",
+  "total_pages": 1,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Advanced",
+      "slug": "advanced",
+      "url": "https://wordpress.org/plugins/menu-image/advanced/",
+      "file": "categories/advanced.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Menu Image, Icons made easy",
+          "url": "https://wordpress.org/plugins/menu-image/advanced/"
+        }
+      ]
+    }
+  ]
+}
