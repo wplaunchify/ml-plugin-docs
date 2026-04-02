@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-02T07:54:00.333Z",
-  "total_plugins": 17,
+  "last_updated": "2026-04-02T07:54:34.340Z",
+  "total_plugins": 18,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -405,6 +405,16 @@
       "last_scraped": "2026-04-02T07:54:00.333Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "simple-post-redirect",
+      "name": "Simple Post Redirect",
+      "documentation_url": "https://wordpress.org/plugins/simple-post-redirect/",
+      "last_scraped": "2026-04-02T07:54:34.340Z",
+      "page_count": 1,
+      "categories": [
+        "advanced"
+      ]
     }
   ]
 }
