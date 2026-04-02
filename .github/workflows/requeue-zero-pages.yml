@@ -1,0 +1,44 @@
+# Periodically re-dispatch scrape workflows for plugins that still have 0 pages (or no INDEX entry).
+# Runs entirely on GitHub Actions — no load on your WordPress host (Poofka).
+name: Requeue zero-page doc scrapes
+
+on:
+  schedule:
+    # Daily 07:30 UTC — change if you prefer a quieter window
+    - cron: '30 7 * * *'
+  workflow_dispatch:
+    inputs:
+      max_plugins:
+        description: 'Max scrape workflows to trigger this run'
+        required: false
+        default: '5'
+      dry_run:
+        description: 'Log only (true / false)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  requeue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Dispatch scrape workflows for zero-page plugins
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          MAX_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.max_plugins || '5' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run || 'false' }}
+          STAGGER_SECONDS: '45'
+        run: node scripts/requeue-zero-pages.js

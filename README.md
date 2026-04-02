@@ -52,6 +52,16 @@ https://raw.githubusercontent.com/wplaunchify/ml-plugin-docs/main/plugins/{slug}
 |--------|------|--------|
 | WP Fusion | `wpfusion` | Phase 1 POC |
 
+## Automatic retries for zero-page plugins (GitHub only)
+
+The workflow **Requeue zero-page doc scrapes** (`.github/workflows/requeue-zero-pages.yml`) runs on a **daily schedule** (and can be run manually). It:
+
+1. Reads `INDEX.json` and every `.github/workflows/scrape-*.yml` file.
+2. Treats a plugin as **needing a retry** if its slug is **missing** from the index or has **`page_count` 0**.
+3. Dispatches **`workflow_dispatch`** for up to **5** of those workflows per run (shuffled, with a short delay between calls) so the repo does not start 100+ scrapes at once.
+
+All of this runs on **GitHub Actions runners** — not on your WordPress site. Adjust `MAX_PER_RUN`, cron, or `STAGGER_SECONDS` in the workflow / script as needed. Manual run: Actions → **Requeue zero-page doc scrapes** → **Run workflow** (optional `dry_run: true` to log only).
+
 ## Adding New Plugins
 
 1. Create a workflow file: `.github/workflows/scrape-{slug}.yml`
