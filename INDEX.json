@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-02T07:52:57.117Z",
-  "total_plugins": 16,
+  "last_updated": "2026-04-02T07:54:00.333Z",
+  "total_plugins": 17,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -397,6 +397,14 @@
       "categories": [
         "advanced"
       ]
+    },
+    {
+      "slug": "clickwhale",
+      "name": "ClickWhale",
+      "documentation_url": "https://clickwhale.pro/docs/documentation/",
+      "last_scraped": "2026-04-02T07:54:00.333Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
