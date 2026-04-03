@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-02T07:55:48.524Z",
-  "total_plugins": 19,
+  "last_updated": "2026-04-03T07:51:53.154Z",
+  "total_plugins": 20,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -456,6 +456,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "fluentcommunity-pro",
+      "name": "FluentCommunity Pro",
+      "documentation_url": "https://fluentcommunity.co/docs/documentation/",
+      "last_scraped": "2026-04-03T07:51:53.154Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
