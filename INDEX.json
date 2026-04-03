@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-03T07:54:09.665Z",
-  "total_plugins": 23,
+  "last_updated": "2026-04-03T08:13:58.830Z",
+  "total_plugins": 24,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -490,6 +490,16 @@
       "last_scraped": "2026-04-03T07:54:09.665Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "woocommerce",
+      "name": "WooCommerce",
+      "documentation_url": "https://woocommerce.com/documentation/",
+      "last_scraped": "2026-04-03T08:13:58.830Z",
+      "page_count": 3700,
+      "categories": [
+        "uncategorized"
+      ]
     }
   ]
 }
