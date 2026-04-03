@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-03T07:52:25.266Z",
-  "total_plugins": 21,
+  "last_updated": "2026-04-03T07:53:20.610Z",
+  "total_plugins": 22,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -472,6 +472,16 @@
       "last_scraped": "2026-04-03T07:52:25.266Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "searchwp",
+      "name": "SearchWP",
+      "documentation_url": "https://searchwp.com/documentation/",
+      "last_scraped": "2026-04-03T07:53:20.610Z",
+      "page_count": 57,
+      "categories": [
+        "uncategorized"
+      ]
     }
   ]
 }

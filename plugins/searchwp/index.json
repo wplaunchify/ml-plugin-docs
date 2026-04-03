@@ -1,0 +1,247 @@
+{
+  "plugin_slug": "searchwp",
+  "plugin_name": "SearchWP",
+  "documentation_url": "https://searchwp.com/documentation/",
+  "last_scraped": "2026-04-03T07:53:20.609Z",
+  "total_pages": 57,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://searchwp.com/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 57,
+      "pages": [
+        {
+          "title": "Order Product Results by Total Sales",
+          "url": "https://searchwp.com/documentation/knowledge-base/order-product-results-by-total-sales/"
+        },
+        {
+          "title": "How to Include Draft and Private Posts in Admin Searches with SearchWP",
+          "url": "https://searchwp.com/documentation/knowledge-base/how-to-include-draft-and-private-posts-in-admin-searches-with-searchwp/"
+        },
+        {
+          "title": "How to display Post Type label in Search Results",
+          "url": "https://searchwp.com/documentation/knowledge-base/how-to-display-post-type-label-in-search-results/"
+        },
+        {
+          "title": "How to change the default fallback image for Search Results",
+          "url": "https://searchwp.com/documentation/knowledge-base/how-to-change-the-default-fallback-image-for-search-results/"
+        },
+        {
+          "title": "WordPress Gutenberg Blocks in Search Results",
+          "url": "https://searchwp.com/documentation/knowledge-base/wordpress-gutenberg-blocks-in-search-results/"
+        },
+        {
+          "title": "Intercept Advanced Custom Fields (ACF) Relationship Field Searches",
+          "url": "https://searchwp.com/documentation/knowledge-base/intercept-advanced-custom-fields-acf-relationship-field-searches/"
+        },
+        {
+          "title": "Can SearchWP work on a huge site?",
+          "url": "https://searchwp.com/documentation/knowledge-base/can-searchwp-work-on-a-huge-site/"
+        },
+        {
+          "title": "Increasing PHP Memory Usage",
+          "url": "https://searchwp.com/documentation/knowledge-base/increasing-php-memory-usage/"
+        },
+        {
+          "title": "Role of WP-Cron in Background Process",
+          "url": "https://searchwp.com/documentation/knowledge-base/wp-cron-background-process/"
+        },
+        {
+          "title": "Define Secondary Order By Sorting for Results with Matching Relevance",
+          "url": "https://searchwp.com/documentation/knowledge-base/define-secondary-order-by-sorting-for-results-with-matching-relevance/"
+        },
+        {
+          "title": "Limiting Results to a Specific Taxonomy Term (Category, Tag, etc)",
+          "url": "https://searchwp.com/documentation/knowledge-base/limit-results-taxonomy-term/"
+        },
+        {
+          "title": "Using Divi Visual Page Builder and SearchWP",
+          "url": "https://searchwp.com/documentation/knowledge-base/divi/"
+        },
+        {
+          "title": "Core SearchWP Sources (Posts, Pages, Media, Comments, CPTs)",
+          "url": "https://searchwp.com/documentation/knowledge-base/core-searchwp-sources/"
+        },
+        {
+          "title": "Adjust the Speed of the Indexer",
+          "url": "https://searchwp.com/documentation/knowledge-base/adjust-indexer-speed/"
+        },
+        {
+          "title": "Using Oxygen Visual Site Builder and SearchWP",
+          "url": "https://searchwp.com/documentation/knowledge-base/oxygen-visual-site-builder/"
+        },
+        {
+          "title": "Limit results to Post Type (e.g. Posts, Pages)",
+          "url": "https://searchwp.com/documentation/knowledge-base/limit-results-post-type/"
+        },
+        {
+          "title": "Have one post type show up above any others",
+          "url": "https://searchwp.com/documentation/knowledge-base/post-type-first-top/"
+        },
+        {
+          "title": "Process ACF Fields to Index Expected Data",
+          "url": "https://searchwp.com/documentation/knowledge-base/process-acf-fields-to-index-expected-data/"
+        },
+        {
+          "title": "Add a Category Select Dropdown Box to Search Form",
+          "url": "https://searchwp.com/documentation/knowledge-base/category-select-dropdown/"
+        },
+        {
+          "title": "Compatibility with JetSmartFilters for Elementor",
+          "url": "https://searchwp.com/documentation/knowledge-base/compatibility-with-jetsmartfilters-for-elementor/"
+        },
+        {
+          "title": "Using Elementor for Supplemental Engines",
+          "url": "https://searchwp.com/documentation/knowledge-base/using-elementor-for-supplemental-engines/"
+        },
+        {
+          "title": "Using Elementor and SearchWP",
+          "url": "https://searchwp.com/documentation/knowledge-base/elementor-searchwp/"
+        },
+        {
+          "title": "Display Custom Sources (e.g. Users) in Live Search Results",
+          "url": "https://searchwp.com/documentation/knowledge-base/custom-source-results-live-search/"
+        },
+        {
+          "title": "Integrating Modal Search Form and Term Archive Priority",
+          "url": "https://searchwp.com/documentation/knowledge-base/integrating-modal-search-form-and-term-archive-priority/"
+        },
+        {
+          "title": "Force exact matches for multiple words",
+          "url": "https://searchwp.com/documentation/knowledge-base/force-exact-matches-for-multiple-words/"
+        },
+        {
+          "title": "Customize Stopwords Per Engine",
+          "url": "https://searchwp.com/documentation/knowledge-base/customize-stopwords-per-engine/"
+        },
+        {
+          "title": "Add WooCommerce Product Variations to Products",
+          "url": "https://searchwp.com/documentation/knowledge-base/add-woocommerce-product-variations-to-products/"
+        },
+        {
+          "title": "Search WooCommerce Downloadable (PDF) Product Document Content",
+          "url": "https://searchwp.com/documentation/knowledge-base/search-woocommerce-downloadable-pdf-product-document-content/"
+        },
+        {
+          "title": "Group Live Search Results by Category",
+          "url": "https://searchwp.com/documentation/knowledge-base/group-live-search-results-by-category/"
+        },
+        {
+          "title": "How to Integrate with Content Imports/Migrations",
+          "url": "https://searchwp.com/documentation/knowledge-base/content-imports-migrations/"
+        },
+        {
+          "title": "Quoted (Phrase, Sentence) Search Support",
+          "url": "https://searchwp.com/documentation/knowledge-base/quoted-phrase-sentence-search-support/"
+        },
+        {
+          "title": "Automatic “Did you mean” (search query corrections)",
+          "url": "https://searchwp.com/documentation/knowledge-base/did-you-mean/"
+        },
+        {
+          "title": "Using Apache Tika for Document Processing",
+          "url": "https://searchwp.com/documentation/knowledge-base/using-apache-tika-for-document-processing/"
+        },
+        {
+          "title": "Sort Posts, Pages, Custom Post Types by Date",
+          "url": "https://searchwp.com/documentation/knowledge-base/sort-posts-pages-custom-post-types-by-date/"
+        },
+        {
+          "title": "Append Document Content to Parent Post Content",
+          "url": "https://searchwp.com/documentation/knowledge-base/append-document-content-to-parent-post-content/"
+        },
+        {
+          "title": "Comparing Index and Source Mods",
+          "url": "https://searchwp.com/documentation/knowledge-base/comparing-index-source-mods/"
+        },
+        {
+          "title": "Search WooCommerce SKUs (and Variation SKUs)",
+          "url": "https://searchwp.com/documentation/knowledge-base/search-woocommerce-skus-and-variation-skus/"
+        },
+        {
+          "title": "Search WooCommerce Orders",
+          "url": "https://searchwp.com/documentation/knowledge-base/search-woocommerce-orders/"
+        },
+        {
+          "title": "Adding extra data to indexed entries",
+          "url": "https://searchwp.com/documentation/knowledge-base/adding-extra-data-to-indexed-entries/"
+        },
+        {
+          "title": "Group search results by source (post type) and set their order",
+          "url": "https://searchwp.com/documentation/knowledge-base/group-results-by-source-post-type/"
+        },
+        {
+          "title": "Customizing (and verifying) document content",
+          "url": "https://searchwp.com/documentation/knowledge-base/customizing-and-verifying-document-content/"
+        },
+        {
+          "title": "Append PDF Content to Search Result Excerpt",
+          "url": "https://searchwp.com/documentation/knowledge-base/append-pdf-content-to-search-result-excerpt/"
+        },
+        {
+          "title": "Using a Custom Field to Prioritize Search Results",
+          "url": "https://searchwp.com/documentation/knowledge-base/custom-field-prioritize-results/"
+        },
+        {
+          "title": "Limiting Search Results to the Active bbPress Forum",
+          "url": "https://searchwp.com/documentation/knowledge-base/limiting-search-results-bbpress/"
+        },
+        {
+          "title": "Prevent Indexing Segments of Content",
+          "url": "https://searchwp.com/documentation/knowledge-base/prevent-indexing-segments-of-content/"
+        },
+        {
+          "title": "Partial Matches, Fuzzy Matches, Spelling Corrections",
+          "url": "https://searchwp.com/documentation/knowledge-base/partial-matches-fuzzy-matches-spelling-corrections/"
+        },
+        {
+          "title": "Keyword Stemming",
+          "url": "https://searchwp.com/documentation/knowledge-base/keyword-stemming/"
+        },
+        {
+          "title": "HTTP Basic Authentication",
+          "url": "https://searchwp.com/documentation/knowledge-base/http-basic-authentication/"
+        },
+        {
+          "title": "Alternate Indexer",
+          "url": "https://searchwp.com/documentation/knowledge-base/alternate-indexer/"
+        },
+        {
+          "title": "Link to file (e.g. PDF) instead of Attachment page",
+          "url": "https://searchwp.com/documentation/knowledge-base/link-file-pdf/"
+        },
+        {
+          "title": "Add Relevance Weight to More Recently Published Entries by Date",
+          "url": "https://searchwp.com/documentation/knowledge-base/add-relevance-weight-date/"
+        },
+        {
+          "title": "Add an Engine Select Dropdown Box to Search Form",
+          "url": "https://searchwp.com/documentation/knowledge-base/engine-select-dropdown/"
+        },
+        {
+          "title": "Add Weight to Entries (posts) within a Specific Category (taxonomy term)",
+          "url": "https://searchwp.com/documentation/knowledge-base/add-weight-category-tag-term/"
+        },
+        {
+          "title": "Add Relevance Weight to ACF True/False Checkbox Fields",
+          "url": "https://searchwp.com/documentation/knowledge-base/add-relevance-acf-checkbox/"
+        },
+        {
+          "title": "How to Create a Clone of your Site for Support",
+          "url": "https://searchwp.com/documentation/knowledge-base/clone-site/"
+        },
+        {
+          "title": "License Activation Problems",
+          "url": "https://searchwp.com/documentation/knowledge-base/license-activation-problems/"
+        },
+        {
+          "title": "Creating Your SearchWP Customizations Plugin",
+          "url": "https://searchwp.com/documentation/knowledge-base/creating-searchwp-customizations-plugin/"
+        }
+      ]
+    }
+  ]
+}
