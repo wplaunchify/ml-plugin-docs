@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-03T07:53:20.610Z",
-  "total_plugins": 22,
+  "last_updated": "2026-04-03T07:54:09.665Z",
+  "total_plugins": 23,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -482,6 +482,14 @@
       "categories": [
         "uncategorized"
       ]
+    },
+    {
+      "slug": "affiliatewp-external-referral-links",
+      "name": "AffiliateWP - External Referral Links",
+      "documentation_url": "https://affiliatewp.com/docs/documentation/",
+      "last_scraped": "2026-04-03T07:54:09.665Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
