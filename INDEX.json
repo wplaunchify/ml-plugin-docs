@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-04T07:49:24.172Z",
-  "total_plugins": 26,
+  "last_updated": "2026-04-04T07:50:10.854Z",
+  "total_plugins": 27,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -516,6 +516,14 @@
       "name": "AffiliateWP - Affiliate Portal",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
       "last_scraped": "2026-04-04T07:49:24.172Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "affiliatewp-lifetime-commissions",
+      "name": "AffiliateWP - Lifetime Commissions",
+      "documentation_url": "https://affiliatewp.com/docs/documentation/",
+      "last_scraped": "2026-04-04T07:50:10.854Z",
       "page_count": 0,
       "categories": []
     }
