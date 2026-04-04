@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-04T07:50:10.854Z",
-  "total_plugins": 27,
+  "last_updated": "2026-04-04T07:51:02.301Z",
+  "total_plugins": 28,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -524,6 +524,14 @@
       "name": "AffiliateWP - Lifetime Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
       "last_scraped": "2026-04-04T07:50:10.854Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "affiliatewp-direct-link-tracking",
+      "name": "AffiliateWP - Direct Link Tracking",
+      "documentation_url": "https://affiliatewp.com/docs/documentation/",
+      "last_scraped": "2026-04-04T07:51:02.301Z",
       "page_count": 0,
       "categories": []
     }
