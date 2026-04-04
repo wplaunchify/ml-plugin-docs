@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-04T07:47:49.868Z",
-  "total_plugins": 25,
+  "last_updated": "2026-04-04T07:49:24.172Z",
+  "total_plugins": 26,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -510,6 +510,14 @@
       "categories": [
         "advanced"
       ]
+    },
+    {
+      "slug": "affiliatewp-affiliate-portal",
+      "name": "AffiliateWP - Affiliate Portal",
+      "documentation_url": "https://affiliatewp.com/docs/documentation/",
+      "last_scraped": "2026-04-04T07:49:24.172Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
