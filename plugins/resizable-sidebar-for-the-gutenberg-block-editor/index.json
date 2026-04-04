@@ -1,0 +1,23 @@
+{
+  "plugin_slug": "resizable-sidebar-for-the-gutenberg-block-editor",
+  "plugin_name": "Resizable Sidebar for the Gutenberg Block Editor",
+  "documentation_url": "https://wordpress.org/plugins/resizable-editor-sidebar/",
+  "last_scraped": "2026-04-04T07:47:49.867Z",
+  "total_pages": 1,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Advanced",
+      "slug": "advanced",
+      "url": "https://wordpress.org/plugins/resizable-editor-sidebar/advanced/",
+      "file": "categories/advanced.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Resizable Sidebar for the Gutenberg Block Editor",
+          "url": "https://wordpress.org/plugins/resizable-editor-sidebar/advanced/"
+        }
+      ]
+    }
+  ]
+}
