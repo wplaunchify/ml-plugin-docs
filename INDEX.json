@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T12:17:02.016Z",
-  "total_plugins": 65,
+  "last_updated": "2026-04-05T12:18:25.576Z",
+  "total_plugins": 66,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -990,6 +990,14 @@
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
       "last_scraped": "2026-04-05T12:17:02.016Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "fluent-messaging",
+      "name": "Fluent Messaging",
+      "documentation_url": "https://fluentcrm.com/docs/documentation/",
+      "last_scraped": "2026-04-05T12:18:25.576Z",
       "page_count": 0,
       "categories": []
     }
