@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T20:12:07.636Z",
-  "total_plugins": 96,
+  "last_updated": "2026-04-05T20:13:28.201Z",
+  "total_plugins": 97,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1345,6 +1345,14 @@
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
       "last_scraped": "2026-04-05T20:12:07.636Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "kadence-insights-a-b-testing",
+      "name": "Kadence Insights - A/B Testing",
+      "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
+      "last_scraped": "2026-04-05T20:13:28.201Z",
       "page_count": 0,
       "categories": []
     }
