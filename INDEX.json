@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T18:14:50.129Z",
-  "total_plugins": 89,
+  "last_updated": "2026-04-05T18:18:57.587Z",
+  "total_plugins": 90,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1289,6 +1289,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "ame-toolbar-editor",
+      "name": "AME Toolbar Editor",
+      "documentation_url": "https://adminmenueditor.com",
+      "last_scraped": "2026-04-05T18:18:57.587Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
