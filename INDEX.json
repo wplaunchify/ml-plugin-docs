@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T05:32:24.924Z",
-  "total_plugins": 41,
+  "last_updated": "2026-04-05T05:33:35.040Z",
+  "total_plugins": 42,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -701,6 +701,14 @@
       "name": "Fluent Boards - Project Management Tool",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
       "last_scraped": "2026-04-05T05:32:24.924Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "learndash-lms-woocommerce-integration",
+      "name": "LearnDash LMS - WooCommerce Integration",
+      "documentation_url": "https://www.learndash.com/support/documentation/",
+      "last_scraped": "2026-04-05T05:33:35.040Z",
       "page_count": 0,
       "categories": []
     }
