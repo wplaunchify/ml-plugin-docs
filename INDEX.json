@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T01:34:18.267Z",
-  "total_plugins": 30,
+  "last_updated": "2026-04-05T01:35:19.317Z",
+  "total_plugins": 31,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -552,6 +552,14 @@
       "categories": [
         "advanced"
       ]
+    },
+    {
+      "slug": "wp-social-ninja",
+      "name": "WP Social Ninja",
+      "documentation_url": "https://wpsocialninja.com/docs/documentation/",
+      "last_scraped": "2026-04-05T01:35:19.317Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
