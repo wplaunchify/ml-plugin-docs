@@ -1,0 +1,75 @@
+{
+  "plugin_slug": "wp-sheet-editor-wpfusion",
+  "plugin_name": "WP Sheet Editor - WPFusion",
+  "documentation_url": "https://wpsheeteditor.com",
+  "last_scraped": "2026-04-05T10:12:24.818Z",
+  "total_pages": 5,
+  "failed_urls_count": 37,
+  "sections": [
+    {
+      "title": "Export Tutor Lms Courses Google Sheets",
+      "slug": "export-tutor-lms-courses-google-sheets",
+      "url": "https://wpsheeteditor.comexport-tutor-lms-courses-google-sheets/",
+      "file": "categories/export-tutor-lms-courses-google-sheets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Export Tutor LMS Courses to Google Sheets",
+          "url": "https://wpsheeteditor.com/export-tutor-lms-courses-google-sheets/"
+        }
+      ]
+    },
+    {
+      "title": "Import Tutor Lms Courses Google Sheets",
+      "slug": "import-tutor-lms-courses-google-sheets",
+      "url": "https://wpsheeteditor.comimport-tutor-lms-courses-google-sheets/",
+      "file": "categories/import-tutor-lms-courses-google-sheets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Import Tutor LMS Courses from Google Sheets",
+          "url": "https://wpsheeteditor.com/import-tutor-lms-courses-google-sheets/"
+        }
+      ]
+    },
+    {
+      "title": "Import Woocommerce Product Galleries Google Sheets",
+      "slug": "import-woocommerce-product-galleries-google-sheets",
+      "url": "https://wpsheeteditor.comimport-woocommerce-product-galleries-google-sheets/",
+      "file": "categories/import-woocommerce-product-galleries-google-sheets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Import WooCommerce Product Galleries from Google Sheets",
+          "url": "https://wpsheeteditor.com/import-woocommerce-product-galleries-google-sheets/"
+        }
+      ]
+    },
+    {
+      "title": "Manage Tutor Lms Content Google Sheets",
+      "slug": "manage-tutor-lms-content-google-sheets",
+      "url": "https://wpsheeteditor.commanage-tutor-lms-content-google-sheets/",
+      "file": "categories/manage-tutor-lms-content-google-sheets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Manage Tutor LMS Content in Google Sheets (Real-Time Sync)",
+          "url": "https://wpsheeteditor.com/manage-tutor-lms-content-google-sheets/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Manage Coupons Google Sheets",
+      "slug": "woocommerce-manage-coupons-google-sheets",
+      "url": "https://wpsheeteditor.comwoocommerce-manage-coupons-google-sheets/",
+      "file": "categories/woocommerce-manage-coupons-google-sheets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WooCommerce: How to Manage Coupons in Google Sheets",
+          "url": "https://wpsheeteditor.com/woocommerce-manage-coupons-google-sheets/"
+        }
+      ]
+    }
+  ]
+}

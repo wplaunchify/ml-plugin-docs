@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T10:10:26.195Z",
-  "total_plugins": 57,
+  "last_updated": "2026-04-05T10:12:24.819Z",
+  "total_plugins": 58,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -894,6 +894,20 @@
       "last_scraped": "2026-04-05T10:07:08.657Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "wp-sheet-editor-wpfusion",
+      "name": "WP Sheet Editor - WPFusion",
+      "documentation_url": "https://wpsheeteditor.com",
+      "last_scraped": "2026-04-05T10:12:24.819Z",
+      "page_count": 5,
+      "categories": [
+        "export-tutor-lms-courses-google-sheets",
+        "import-tutor-lms-courses-google-sheets",
+        "import-woocommerce-product-galleries-google-sheets",
+        "manage-tutor-lms-content-google-sheets",
+        "woocommerce-manage-coupons-google-sheets"
+      ]
     }
   ]
 }
