@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T05:38:58.305Z",
-  "total_plugins": 42,
+  "last_updated": "2026-04-05T06:21:10.431Z",
+  "total_plugins": 43,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -711,6 +711,16 @@
       "last_scraped": "2026-04-05T05:33:35.040Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "simple-seo",
+      "name": "Simple SEO",
+      "documentation_url": "https://wordpress.org/plugins/simple-seo/",
+      "last_scraped": "2026-04-05T06:21:10.431Z",
+      "page_count": 1,
+      "categories": [
+        "advanced"
+      ]
     }
   ]
 }
