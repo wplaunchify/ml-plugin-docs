@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T06:24:33.537Z",
-  "total_plugins": 44,
+  "last_updated": "2026-04-05T06:28:13.456Z",
+  "total_plugins": 45,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -762,6 +762,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "wp-migrate-lite",
+      "name": "WP Migrate Lite",
+      "documentation_url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/",
+      "last_scraped": "2026-04-05T06:28:13.456Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
