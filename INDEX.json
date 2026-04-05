@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T07:51:07.806Z",
-  "total_plugins": 50,
+  "last_updated": "2026-04-05T07:51:52.192Z",
+  "total_plugins": 51,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -834,6 +834,16 @@
       "last_scraped": "2026-04-05T07:51:07.806Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "block-specific-spam-woo-orders",
+      "name": "Block Specific Spam Woo Orders",
+      "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
+      "last_scraped": "2026-04-05T07:51:52.192Z",
+      "page_count": 1,
+      "categories": [
+        "advanced"
+      ]
     }
   ]
 }

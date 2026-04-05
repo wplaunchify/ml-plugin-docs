@@ -1,0 +1,23 @@
+{
+  "plugin_slug": "block-specific-spam-woo-orders",
+  "plugin_name": "Block Specific Spam Woo Orders",
+  "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
+  "last_scraped": "2026-04-05T07:51:52.191Z",
+  "total_pages": 1,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Advanced",
+      "slug": "advanced",
+      "url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/advanced/",
+      "file": "categories/advanced.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Block Specific Spam Woo Orders",
+          "url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/advanced/"
+        }
+      ]
+    }
+  ]
+}
