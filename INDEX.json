@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T04:52:09.868Z",
-  "total_plugins": 37,
+  "last_updated": "2026-04-05T04:52:36.949Z",
+  "total_plugins": 38,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -669,6 +669,14 @@
         "reviews",
         "terms-and-conditions"
       ]
+    },
+    {
+      "slug": "fluent-community-manager",
+      "name": "Fluent Community Manager",
+      "documentation_url": "https://fluentcommunity.co/docs/documentation/",
+      "last_scraped": "2026-04-05T04:52:36.949Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
