@@ -1,0 +1,24 @@
+{
+  "plugin_slug": "duplicate-page",
+  "plugin_name": "Duplicate Page",
+  "last_scraped": "2026-04-05T15:08:58.300Z",
+  "total_pages": 1,
+  "failed_urls": [],
+  "pages": [
+    {
+      "title": "Duplicate Page",
+      "url": "https://wordpress.org/plugins/duplicate-page/advanced/",
+      "category": "Advanced",
+      "content": "## Statistics\n\n\t\n#### Active versions\n\n\t\n\n\t\n#### Downloads Per Day\n\n\t\n\n\t\n#### Downloads history\n\n\t\n\n\t\n---\n\n## Advanced Options\n\nThis section is intended for advanced users and developers only. They are presented here for testing and educational purposes.\n\n#### Previous Versions\n\nPrevious versions of plugins may not be secure or stable. They are not recommended for use on production websites.Please select a specific version to download.\n\n4.54.4.92.51.1 [Download](https://downloads.wordpress.org/plugin/duplicate-page.4.5.zip)",
+      "headings": [
+        "Statistics",
+        "Active versions",
+        "Downloads Per Day",
+        "Downloads history",
+        "Advanced Options",
+        "Previous Versions"
+      ],
+      "code_blocks": []
+    }
+  ]
+}

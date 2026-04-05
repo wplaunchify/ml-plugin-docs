@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T15:08:00.471Z",
-  "total_plugins": 71,
+  "last_updated": "2026-04-05T15:08:58.302Z",
+  "total_plugins": 72,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -1046,6 +1046,16 @@
       "last_scraped": "2026-04-05T14:17:47.216Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "duplicate-page",
+      "name": "Duplicate Page",
+      "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
+      "last_scraped": "2026-04-05T15:08:58.302Z",
+      "page_count": 1,
+      "categories": [
+        "advanced"
+      ]
     }
   ]
 }

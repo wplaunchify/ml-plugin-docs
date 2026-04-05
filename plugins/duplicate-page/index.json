@@ -1,0 +1,23 @@
+{
+  "plugin_slug": "duplicate-page",
+  "plugin_name": "Duplicate Page",
+  "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
+  "last_scraped": "2026-04-05T15:08:58.301Z",
+  "total_pages": 1,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Advanced",
+      "slug": "advanced",
+      "url": "https://wordpress.org/plugins/duplicate-page/advanced/",
+      "file": "categories/advanced.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Duplicate Page",
+          "url": "https://wordpress.org/plugins/duplicate-page/advanced/"
+        }
+      ]
+    }
+  ]
+}
