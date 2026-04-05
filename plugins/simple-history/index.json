@@ -1,0 +1,140 @@
+{
+  "plugin_slug": "simple-history",
+  "plugin_name": "Simple History",
+  "documentation_url": "https://simple-history.com/support/",
+  "last_scraped": "2026-04-05T21:09:22.491Z",
+  "total_pages": 10,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Detective Mode",
+      "slug": "detective-mode",
+      "url": "https://simple-history.com/support/detective-mode/",
+      "file": "categories/detective-mode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Detective mode",
+          "url": "https://simple-history.com/support/detective-mode/"
+        }
+      ]
+    },
+    {
+      "title": "Does It Work With Sqlite Yes It Does",
+      "slug": "does-it-work-with-sqlite-yes-it-does",
+      "url": "https://simple-history.com/support/does-it-work-with-sqlite-yes-it-does/",
+      "file": "categories/does-it-work-with-sqlite-yes-it-does.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Does it work with SQLite? (Yes it does!)",
+          "url": "https://simple-history.com/support/does-it-work-with-sqlite-yes-it-does/"
+        }
+      ]
+    },
+    {
+      "title": "Gdpr And Privacy",
+      "slug": "gdpr-and-privacy",
+      "url": "https://simple-history.com/support/gdpr-and-privacy/",
+      "file": "categories/gdpr-and-privacy.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "GDPR and Privacy: How Your Data is Stored in Simple History",
+          "url": "https://simple-history.com/support/gdpr-and-privacy/"
+        }
+      ]
+    },
+    {
+      "title": "Got A Charge From Lemsqzy Simple History",
+      "slug": "got-a-charge-from-lemsqzy-simple-history",
+      "url": "https://simple-history.com/support/got-a-charge-from-lemsqzy-simple-history/",
+      "file": "categories/got-a-charge-from-lemsqzy-simple-history.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Got a charge from “LEMSQZY* SIMPLE-HISTORY”?",
+          "url": "https://simple-history.com/support/got-a-charge-from-lemsqzy-simple-history/"
+        }
+      ]
+    },
+    {
+      "title": "How Do I Manage My Add On Subscriptions",
+      "slug": "how-do-i-manage-my-add-on-subscriptions",
+      "url": "https://simple-history.com/support/how-do-i-manage-my-add-on-subscriptions/",
+      "file": "categories/how-do-i-manage-my-add-on-subscriptions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How do I manage my add-on subscriptions",
+          "url": "https://simple-history.com/support/how-do-i-manage-my-add-on-subscriptions/"
+        }
+      ]
+    },
+    {
+      "title": "Load Events Error",
+      "slug": "load-events-error",
+      "url": "https://simple-history.com/support/load-events-error/",
+      "file": "categories/load-events-error.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting errors when loading events",
+          "url": "https://simple-history.com/support/load-events-error/"
+        }
+      ]
+    },
+    {
+      "title": "Third Party Plugins With Support For Simple History",
+      "slug": "third-party-plugins-with-support-for-simple-history",
+      "url": "https://simple-history.com/support/third-party-plugins-with-support-for-simple-history/",
+      "file": "categories/third-party-plugins-with-support-for-simple-history.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Third party plugins with support for Simple History",
+          "url": "https://simple-history.com/support/third-party-plugins-with-support-for-simple-history/"
+        }
+      ]
+    },
+    {
+      "title": "Weekly Email Report",
+      "slug": "weekly-email-report",
+      "url": "https://simple-history.com/support/weekly-email-report/",
+      "file": "categories/weekly-email-report.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Weekly email reports",
+          "url": "https://simple-history.com/support/weekly-email-report/"
+        }
+      ]
+    },
+    {
+      "title": "What Is An Initiator",
+      "slug": "what-is-an-initiator",
+      "url": "https://simple-history.com/support/what-is-an-initiator/",
+      "file": "categories/what-is-an-initiator.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What is an initiator",
+          "url": "https://simple-history.com/support/what-is-an-initiator/"
+        }
+      ]
+    },
+    {
+      "title": "Wrong Event Time",
+      "slug": "wrong-event-time",
+      "url": "https://simple-history.com/support/wrong-event-time/",
+      "file": "categories/wrong-event-time.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "⏰ Why is the time of my events wrong?",
+          "url": "https://simple-history.com/support/wrong-event-time/"
+        }
+      ]
+    }
+  ]
+}
