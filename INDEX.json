@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T12:14:10.470Z",
-  "total_plugins": 63,
+  "last_updated": "2026-04-05T12:16:26.002Z",
+  "total_plugins": 64,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -974,6 +974,16 @@
       "last_scraped": "2026-04-05T12:14:10.470Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "wp-all-export-acf-export-add-on-pro",
+      "name": "WP All Export - ACF Export Add-On Pro",
+      "documentation_url": "https://www.wpallimport.com/documentation/",
+      "last_scraped": "2026-04-05T12:16:26.002Z",
+      "page_count": 198,
+      "categories": [
+        "uncategorized"
+      ]
     }
   ]
 }
