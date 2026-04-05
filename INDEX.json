@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T22:06:31.549Z",
-  "total_plugins": 101,
+  "last_updated": "2026-04-05T22:07:13.111Z",
+  "total_plugins": 102,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -485,6 +485,38 @@
       "name": "FooEvents Bookings",
       "documentation_url": "https://www.fooevents.com",
       "last_scraped": "2026-04-05T04:52:09.865Z",
+      "page_count": 57,
+      "categories": [
+        "about-us",
+        "apps",
+        "blog",
+        "bundles",
+        "cart",
+        "cs",
+        "de",
+        "disclaimer",
+        "el",
+        "es",
+        "features",
+        "fooevents-ultimate-event-checklist",
+        "fr",
+        "it",
+        "my-account",
+        "nl",
+        "pl",
+        "pricing",
+        "privacy-statement-us",
+        "products",
+        "pt",
+        "reviews",
+        "terms-and-conditions"
+      ]
+    },
+    {
+      "slug": "fooevents-custom-attendee-fields",
+      "name": "FooEvents Custom Attendee Fields",
+      "documentation_url": "https://www.fooevents.com",
+      "last_scraped": "2026-04-05T22:07:11.867Z",
       "page_count": 57,
       "categories": [
         "about-us",
