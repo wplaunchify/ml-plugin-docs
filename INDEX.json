@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T07:52:42.425Z",
-  "total_plugins": 51,
+  "last_updated": "2026-04-05T08:09:48.658Z",
+  "total_plugins": 52,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -844,6 +844,14 @@
       "categories": [
         "advanced"
       ]
+    },
+    {
+      "slug": "learndash-lms-certificate-builder",
+      "name": "LearnDash LMS - Certificate Builder",
+      "documentation_url": "https://www.learndash.com/support/documentation/",
+      "last_scraped": "2026-04-05T08:09:48.658Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
