@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T07:50:23.447Z",
-  "total_plugins": 49,
+  "last_updated": "2026-04-05T07:51:07.806Z",
+  "total_plugins": 50,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -824,6 +824,14 @@
       "name": "Customize My Account Page For Woocommerce",
       "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/documentation/",
       "last_scraped": "2026-04-05T07:50:23.447Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "admin-menu-editor-pro",
+      "name": "Admin Menu Editor Pro",
+      "documentation_url": "https://adminmenueditor.com",
+      "last_scraped": "2026-04-05T07:51:07.806Z",
       "page_count": 0,
       "categories": []
     }
