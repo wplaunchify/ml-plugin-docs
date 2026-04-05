@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T11:07:39.044Z",
-  "total_plugins": 60,
+  "last_updated": "2026-04-05T12:06:26.940Z",
+  "total_plugins": 61,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -924,6 +924,16 @@
       "last_scraped": "2026-04-05T11:07:39.044Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "page-links-to",
+      "name": "Page Links To",
+      "documentation_url": "https://wordpress.org/plugins/page-links-to/",
+      "last_scraped": "2026-04-05T12:06:26.940Z",
+      "page_count": 1,
+      "categories": [
+        "advanced"
+      ]
     }
   ]
 }

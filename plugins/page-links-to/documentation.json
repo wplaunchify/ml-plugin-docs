@@ -1,0 +1,24 @@
+{
+  "plugin_slug": "page-links-to",
+  "plugin_name": "Page Links To",
+  "last_scraped": "2026-04-05T12:06:26.939Z",
+  "total_pages": 1,
+  "failed_urls": [],
+  "pages": [
+    {
+      "title": "Page Links To",
+      "url": "https://wordpress.org/plugins/page-links-to/advanced/",
+      "category": "Advanced",
+      "content": "## Statistics\n\n\t\n#### Active versions\n\n\t\n\n\t\n#### Downloads Per Day\n\n\t\n\n\t\n#### Downloads history\n\n\t\n\n\t\n---\n\n## Advanced Options\n\nThis section is intended for advanced users and developers only. They are presented here for testing and educational purposes.\n\n#### Previous Versions\n\nPrevious versions of plugins may not be secure or stable. They are not recommended for use on production websites.Please select a specific version to download.\n\nDevelopment Version3.4.03.3.73.3.63.3.53.3.43.3.33.3.23.3.13.3.03.2.23.2.13.2.03.1.23.1.13.1.03.0.13.0.02.11.22.11.12.11.02.10.42.10.32.10.22.10.12.10.02.9.102.9.92.9.82.9.62.9.52.9.42.9.32.9.22.9.12.92.82.7.12.72.62.52.4.12.42.32.22.12.01.91.81.71.61.51.41.0 [Download](https://downloads.wordpress.org/plugin/page-links-to.zip)",
+      "headings": [
+        "Statistics",
+        "Active versions",
+        "Downloads Per Day",
+        "Downloads history",
+        "Advanced Options",
+        "Previous Versions"
+      ],
+      "code_blocks": []
+    }
+  ]
+}
