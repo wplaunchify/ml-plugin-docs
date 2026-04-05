@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T15:14:26.005Z",
-  "total_plugins": 74,
+  "last_updated": "2026-04-05T16:05:03.495Z",
+  "total_plugins": 75,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -1099,6 +1099,14 @@
       "categories": [
         "advanced"
       ]
+    },
+    {
+      "slug": "the-events-calendar",
+      "name": "The Events Calendar",
+      "documentation_url": "https://theeventscalendar.com/knowledgebase/documentation/",
+      "last_scraped": "2026-04-05T16:05:03.495Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
