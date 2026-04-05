@@ -149,7 +149,7 @@ To begin, you must navigate to the shipping configuration area within FluentCart
 - Click the **"Add Shipping Zone"** button.
 - You will be taken to the "Add Shipping Zone" detail page.
 
-![Screenshot of Configuring Shipping Zones](/images/shipping/Configuring-Shipping-Zones/FluentCart-Shipping-Category-1.webp)
+![Screenshot of Configuring Shipping Zones](https://docs.fluentcart.com/images/shipping/Configuring-Shipping-Zones/FluentCart-Shipping-Category-1.webp)
 
 1. **Name Your Zone and Pick Your Regions**:
 
@@ -158,7 +158,7 @@ Now you're on the setup page for your new zone. You only need to fill in two thi
 - **Zone Name:** Give your zone a name that's easy for you to remember. For example, "United States," "Europe," or "Local Customers."
 - **Country:** This is where you choose the places that belong to this zone. Start typing a country or state into the box, and then select it from the list that appears. Keep it empty to apply to all the countries.
 
-![Screenshot of Configuring Shipping Zones](/images/shipping/Configuring-Shipping-Zones/FluentCart-Shipping-Category-2.webp)
+![Screenshot of Configuring Shipping Zones](https://docs.fluentcart.com/images/shipping/Configuring-Shipping-Zones/FluentCart-Shipping-Category-2.webp)
 
 Once you're happy with the name and the regions you've selected, just click the **"Save Shipping Zone"** buttson.
 
@@ -190,7 +190,7 @@ Before you can add a method, you must have already created a shipping zone.
 4. Inside the zone's settings, scroll down to the **Shipping Methods** section and click the **Add Shipping Method** button. You can also manage your existing shipping methods from this screen. To update a method's settings, click the Edit button located on the same row as its title.
 5. This will open a pop-up window where you can configure the details of your new shipping method.
 
-![Screenshot of Shipping Method](/images/shipping/setting-up-shipping-method/shipping-method-1.webp)
+![Screenshot of Shipping Method](https://docs.fluentcart.com/images/shipping/setting-up-shipping-method/shipping-method-1.webp)
 
 ### Configuring the Shipping Method ​
 
@@ -225,7 +225,7 @@ The Configure Rate and Class Aggregation settings work together to give you prec
 
 You can add a short description for the shipping method. Depending on your theme, this might be displayed to the customer at checkout to provide more context (e.g., "Delivered in 3-5 business days").
 
-![Screenshot of Shipping Method](/images/shipping/setting-up-shipping-method/shipping-method-2.webp)
+![Screenshot of Shipping Method](https://docs.fluentcart.com/images/shipping/setting-up-shipping-method/shipping-method-2.webp)
 
 Once you have configured all the details, click the **Save** button. Your new shipping method is now active and will be offered to customers in the selected shipping zone.
 
@@ -255,7 +255,7 @@ This guide explains how to use Shipping Classes to group products with similar s
 
 - Click the **"Add Shipping Class"** button.
 
-![Screenshot of Shipping Classes](/images/shipping/understanding-shipping-classes/shipping-classes-1.webp)
+![Screenshot of Shipping Classes](https://docs.fluentcart.com/images/shipping/understanding-shipping-classes/shipping-classes-1.webp)
 3. **Define Class Details**:
 
 - **Class Name**: Give your shipping class a descriptive name (e.g., "Bulky Items").
@@ -267,7 +267,7 @@ This guide explains how to use Shipping Classes to group products with similar s
 
 - Click the **"Save"** or **"Add Class"** button.
 
-![Screenshot of Shipping Classes](/images/shipping/understanding-shipping-classes/shipping-classes-2.webp)
+![Screenshot of Shipping Classes](https://docs.fluentcart.com/images/shipping/understanding-shipping-classes/shipping-classes-2.webp)
 
 ## Assigning Shipping Classes to Products ​
 

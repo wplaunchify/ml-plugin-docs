@@ -18,7 +18,7 @@ Ensure you have set the Customer Dashboard page from **FluentCart Pro** > **Sett
 
 When a customer logs in, they'll see a quick summary of their activity. From there, they can dive into several key sections to manage their account:
 
-![Screenshot of Customer Dashboard Overview](/images/customer-dashboard/customer-dashboard-overview/customer-dashboard.webp)
+![Screenshot of Customer Dashboard Overview](https://docs.fluentcart.com/images/customer-dashboard/customer-dashboard-overview/customer-dashboard.webp)
 
 - **View Purchase History (Orders & Payment Details)**: Provides a complete and detailed record of all past orders, including transaction details, payment statuses, and options to download invoices.
 - **Managing Subscriptions**: If you sell subscription products, this is where customers can view and control their recurring plans. They can check the status, see upcoming renewal dates, and manage other details.
@@ -48,7 +48,7 @@ When you go to the Downloads page, you will see a simple list of all the files a
 
 To save a file to your computer, just click the **Download** button next to it. The download will start automatically. If you have many purchased files, you can navigate through them using the page numbers at the bottom of the list.
 
-![Screenshot of Licenses](/images/customer-dashboard/downloads/downloads-1.webp)
+![Screenshot of Licenses](https://docs.fluentcart.com/images/customer-dashboard/downloads/downloads-1.webp)
 
 ---
 
@@ -77,7 +77,7 @@ SNW-.......... f1bc1
 
 You can navigate through pages if you have many licenses (e.g., "Page 1 of 1", "10/page Total 1").
 
-![Screenshot of Licenses](/images/customer-dashboard/licenses/licenses-1.webp)
+![Screenshot of Licenses](https://docs.fluentcart.com/images/customer-dashboard/licenses/licenses-1.webp)
 
 ## Managing an Individual License ​
 
@@ -90,7 +90,7 @@ This screen gives the customer all the essential information about their license
 - **Expiration Date:** This shows when the license is set to expire. For lifetime licenses, this will typically say "Never Expires."
 - **View Order:** This link will take the customer directly to the original order in their **Purchase History** where they bought this license.
 
-![Screenshot of Licenses](/images/customer-dashboard/licenses/licenses-2.webp)
+![Screenshot of Licenses](https://docs.fluentcart.com/images/customer-dashboard/licenses/licenses-2.webp)
 
 ---
 
@@ -126,7 +126,7 @@ This section allows you to provide or update the address where your orders will 
 - **Add New Address:** Click the **+ ADD NEW ADDRESS** button to add a new shipping address.
 - **Default Address:** You can view your saved shipping addresses.
 
-![Screenshot of Purchase History](/images/customer-dashboard/customer-profile/customer-profile.webp)
+![Screenshot of Purchase History](https://docs.fluentcart.com/images/customer-dashboard/customer-profile/customer-profile.webp)
 
 ## Edit an Existing Address ​
 
@@ -138,7 +138,7 @@ When you're finished with your changes, click the **Update Address** button or *
 
 After making any changes on this page, make sure you scroll to the bottom and click the main **Save Profile** button. This saves all your updates to your name and addresses
 
-![Screenshot of Purchase History](/images/customer-dashboard/customer-profile/edit-address.webp)
+![Screenshot of Purchase History](https://docs.fluentcart.com/images/customer-dashboard/customer-profile/edit-address.webp)
 
 ---
 
@@ -181,7 +181,7 @@ FluentCart automatically generates an invoice receipt for every order. This invo
 
 This detailed invoice ensures that customers have all the necessary purchase information in one place.
 
-![Purchase Confirmation](/assets/purchase-confirmation.DkO1RPUS.webp)
+![Purchase Confirmation](https://docs.fluentcart.com/assets/purchase-confirmation.DkO1RPUS.webp)
 
 ### Downloading the Invoice Receipt ​
 
@@ -233,7 +233,7 @@ When you go to the Purchase History page, you'll see a list of all your orders. 
 
 Have a lot of past orders? No problem. Use the **Search bar** (look for the magnifying glass icon) at the top-right of your order list to quickly find the purchase you're looking for.
 
-![Screenshot of Purchase History](/images/customer-dashboard/purchase-history/purchase-history-1.webp)
+![Screenshot of Purchase History](https://docs.fluentcart.com/images/customer-dashboard/purchase-history/purchase-history-1.webp)
 
 ## Viewing Individual Order Details ​
 
@@ -247,7 +247,7 @@ Here’s what you might see on the details page:
 - **Transaction and Billing Info**: At the bottom of the page, you can find the specific **Related Transactions** for your payment and the **Billing Address** that was used for the order.
 - **License Details**: If your order included a product with a software license, you would also see a section here with your license key and activation details.
 
-![Screenshot of Purchase History](/images/customer-dashboard/purchase-history/purchase-history-2.webp)
+![Screenshot of Purchase History](https://docs.fluentcart.com/images/customer-dashboard/purchase-history/purchase-history-2.webp)
 
 ---
 
@@ -270,7 +270,7 @@ For each subscription, you can quickly see:
 - **Plan:** The recurring cost and billing frequency (e.g., "$79.00 per year, until cancel.").
 - **Payment Method:** The saved payment method used for automatic renewals (e.g., the last four digits of a credit card).
 
-![Screenshot of Subscription](/images/customer-dashboard/subscriptions/subscriptions-1.webp)
+![Screenshot of Subscription](https://docs.fluentcart.com/images/customer-dashboard/subscriptions/subscriptions-1.webp)
 
 ### Managing an Individual Subscription ​
 
@@ -303,7 +303,7 @@ The installment plan must be **Active** for this early payment option to be avai
 
 At the bottom of the page, you'll find a complete financial audit trail for your subscription. This table lists every transaction from your very first purchase to the most recent renewal. You can track the Date, Amount, and Status of each payment, and even download a **Receipt** for your records whenever you need one.
 
-![Screenshot of Subscription](/images/customer-dashboard/subscriptions/subscriptions-2.webp)
+![Screenshot of Subscription](https://docs.fluentcart.com/images/customer-dashboard/subscriptions/subscriptions-2.webp)
 
 ---
 

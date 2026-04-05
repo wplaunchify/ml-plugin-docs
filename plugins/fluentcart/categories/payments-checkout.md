@@ -49,7 +49,7 @@ First, you need to locate the integration settings within your WordPress site.
 2. Select the **Payment Settings** tab from the sidebar.
 3. Scroll down to find **Authorize.net** and click the **Manage** button.
 
-![Authorize.net Settings](/assets/authorize-payment-method-1.DbXOJbro.webp)
+![Authorize.net Settings](https://docs.fluentcart.com/assets/authorize-payment-method-1.DbXOJbro.webp)
 
 ## Step 2: Obtain API Credentials from Authorize.net ​
 
@@ -60,7 +60,7 @@ To connect your store, you need to retrieve four specific keys from your Authori
 3. Click on **Account and API Settings** (located under the Account section).
 4. Select **API Credentials and Keys**.
 
-![Authorize.net Settings](/assets/authorize-payment-method-2.C-P8QiED.webp)
+![Authorize.net Settings](https://docs.fluentcart.com/assets/authorize-payment-method-2.C-P8QiED.webp)
 
 **Collect your Keys:**
 
@@ -69,7 +69,7 @@ To connect your store, you need to retrieve four specific keys from your Authori
 - **Signature Key:** Select "Generate New Signature Key," click **Submit**, and copy it.
 - **Public Client Key:** Click the "Generate New Public Client Key" button and copy the resulting string.
 
-![Authorize.net Settings](/assets/authorize-payment-method-3.CAa46RUQ.webp)
+![Authorize.net Settings](https://docs.fluentcart.com/assets/authorize-payment-method-3.CAa46RUQ.webp)
 
 ## Step 3: Configure Credentials in FluentCart ​
 
@@ -85,7 +85,7 @@ Now, return to your WordPress site to input the credentials you just gathered.
 - **Button Colors:** Use the color pickers to match the button background and hover colors to your website's branding.
 5. **Enable Debug Logging:** Log Authorize.Net API interactions for troubleshooting.
 
-![Authorize.net Settings](/assets/authorize-payment-method-4.E3jacvB7.webp)
+![Authorize.net Settings](https://docs.fluentcart.com/assets/authorize-payment-method-4.E3jacvB7.webp)
 
 ## Step 4: Configure Webhooks ​
 
@@ -100,7 +100,7 @@ https://your-site.com/?fluentcart_api...
 2. **Add Webhook in Authorize.net:**- In your Authorize.net dashboard, go to **Account > Webhook Notifications > Webhooks**.
 - Click the **+ Create a webhook notification** button.
 
-![Authorize.net Settings](/assets/authorize-payment-method-5.D1Y6ZYvH.webp)
+![Authorize.net Settings](https://docs.fluentcart.com/assets/authorize-payment-method-5.D1Y6ZYvH.webp)
 
 1. **Fill in Webhook Details:**- **Name:** Give a name to your Webhook like "FluentCart Webhook."
 - **Endpoint URL:** Paste the URL you copied from FluentCart.
@@ -131,7 +131,7 @@ net.authorize.customer.subscription.expiring
 ```
 3. Click **Save** to finalize.
 
-![Authorize.net Settings](/assets/authorize-payment-method-6.yHrtn3Tj.webp)
+![Authorize.net Settings](https://docs.fluentcart.com/assets/authorize-payment-method-6.yHrtn3Tj.webp)
 
 ## Step 5: Activation and Final Save ​
 
@@ -151,7 +151,7 @@ Cash on Delivery allows customers to pay with cash directly upon receiving their
 1. On the **Payment Settings** screen, locate **"Cash on Delivery"** and click the **"Manage"** button next to it.
 2. This will open the **Offline Payment Settings** screen.
 
-![Screenshot of Cash on Delivery Settings Page](/images/payments-checkout/cash-on-delivery-settings.webp)
+![Screenshot of Cash on Delivery Settings Page](https://docs.fluentcart.com/images/payments-checkout/cash-on-delivery-settings.webp)
 3. **Enable Cash on Delivery:** Check the box next to "Customers can pay for their orders by cash upon delivery." to activate this method.
 4. **Payment Activation:** In the top right corner of this page, ensure the **Payment Activation** option is "**Enabled**".
 5. Click the **"Save Settings"** button to apply your changes.
@@ -255,15 +255,15 @@ The Events recommended by FluentCart are briefly explained below:
 
 Once you select all the suggested **Webhook Events**, click the **Continue** button.
 
-![Screenshot of Stripe Settings Page](/images/payments-checkout/stripe-payment/select-events.webp)
+![Screenshot of Stripe Settings Page](https://docs.fluentcart.com/images/payments-checkout/stripe-payment/select-events.webp)
 
 Then, select the **Webhook endpoint** and again click the **Continue** button.
 
-![Screenshot of Stripe Settings Page](/images/payments-checkout/stripe-payment/webhook-endpoint.webp)
+![Screenshot of Stripe Settings Page](https://docs.fluentcart.com/images/payments-checkout/stripe-payment/webhook-endpoint.webp)
 
 Next, type a destination name, **paste** the **webhook URL** you copied earlier into the **Endpoint URL** field, and then click the “**Create Destination**” button.
 
-![Screenshot of Stripe Settings Page](/images/payments-checkout/stripe-payment/create-destination.webp)
+![Screenshot of Stripe Settings Page](https://docs.fluentcart.com/images/payments-checkout/stripe-payment/create-destination.webp)
 
 #### Step 4: Activate and Save ​
 
@@ -294,15 +294,15 @@ Before you can connect your account, you need to enable the Flutterwave module i
 4. Scroll down the list of available payment methods until you find **Flutterwave**.
 5. Click the **Manage** button next to it.
 
-![Flutterwave](/assets/flutterwave-1.DBnncOXF.webp)
+![Flutterwave](https://docs.fluentcart.com/assets/flutterwave-1.DBnncOXF.webp)
 
 1. You will see a prompt saying the add-on is not installed. Click the blue **Install & Activate** button. This will instantly install the free integration.
 
-![Flutterwave](/assets/flutterwave-2.BdCT1fuJ.webp)
+![Flutterwave](https://docs.fluentcart.com/assets/flutterwave-2.BdCT1fuJ.webp)
 
 1. Once activated, the Flutterwave settings panel will open automatically.
 
-![Flutterwave](/assets/flutterwave-3.Dtef59m_.webp)
+![Flutterwave](https://docs.fluentcart.com/assets/flutterwave-3.Dtef59m_.webp)
 
 ## Step 2: Locate Your API Keys in Flutterwave ​
 
@@ -314,13 +314,13 @@ To link your store securely, you need special codes called "API Keys." You can g
 2. In the left-hand menu, scroll down to the **Settings** section.
 3. Under the Developers menu, click on **API keys**.
 
-![Flutterwave](/assets/flutterwave-4.D_Eo_dK_.webp)
+![Flutterwave](https://docs.fluentcart.com/assets/flutterwave-4.D_Eo_dK_.webp)
 
 1. Look for the section labeled **V3 API keys** (Make sure you are viewing the "Test API Keys" if you are setting up a test environment, or "Live API Keys" for your actual store).
 2. You will see a **Public key**, **Secret key**, and **Encryption Key**.
 3. Use the Copy buttons next to each key. Leave this browser tab open, as you will need it again.
 
-![Flutterwave](/assets/flutterwave-5.D-ACQdO_.webp)
+![Flutterwave](https://docs.fluentcart.com/assets/flutterwave-5.D-ACQdO_.webp)
 
 ## Step 3: Connect the Keys to FluentCart ​
 
@@ -337,7 +337,7 @@ my_store_secure_hash_2026
 
 ). Write this exact phrase down or copy it, because you must give this exact same phrase to Flutterwave in the next step.
 
-![Flutterwave](/assets/flutterwave-6.Bkr6PUQ4.webp)
+![Flutterwave](https://docs.fluentcart.com/assets/flutterwave-6.Bkr6PUQ4.webp)
 
 ## Step 4: Configure Webhooks (Crucial Step) ​
 
@@ -350,13 +350,13 @@ http://...
 
 ). Click the small copy icon next to it.
 
-![Flutterwave](/assets/flutterwave-webhook.00rGiOU_.webp)
+![Flutterwave](https://docs.fluentcart.com/assets/flutterwave-webhook.00rGiOU_.webp)
 
 1. Go back to your open Flutterwave Dashboard tab.
 2. In the left-hand menu under Developers, click on **Webhooks**.
 3. Paste your copied link into the **URL** field.
 
-![Flutterwave](/assets/flutterwave-7.D4vXb1gp.webp)
+![Flutterwave](https://docs.fluentcart.com/assets/flutterwave-7.D4vXb1gp.webp)
 
 1. In the **Secret hash** field, type or paste the exact same password/phrase you created in Step 3.
 2. Under **Webhook preferences**, it is highly recommended to check all of these boxes: - Receive webhook response in JSON format
@@ -367,7 +367,7 @@ http://...
 3. *(Optional)* If you want FluentCart to know if a payment failed or was refunded, click **View** on "Webhook preferences with custom url" and paste the exact same Webhook URL into the **Enable webhook for failed transactions** and **Enable webhook for refunds** fields.
 4. Click the orange **Save** button in Flutterwave.
 
-![Flutterwave](/assets/flutterwave-8.BQVRfCGA.webp)
+![Flutterwave](https://docs.fluentcart.com/assets/flutterwave-8.BQVRfCGA.webp)
 
 ## Step 5: Save and Test Your Store ​
 
@@ -399,7 +399,7 @@ First, you need to enable Mercado Pago as a payment method in your store.
 3. Find **Mercado Pago** in the list of available gateways and click the **Manage** button.
 4. If the addon is not yet installed, click the **Install & Activate** button to begin the setup.
 
-![Mercado Pago Install & Activate](/assets/install-activate-mercado-pago-1.CThBLXQs.webp)
+![Mercado Pago Install & Activate](https://docs.fluentcart.com/assets/install-activate-mercado-pago-1.CThBLXQs.webp)
 
 ## Step 2: Configure Mercado Pago Settings ​
 
@@ -416,7 +416,7 @@ NOTE
 
 **Testing Your Setup:** When using **Test credentials**, you may notice many "false errors" appearing, or the API might suddenly become unavailable. These issues can prevent you from completing the proper checkout flow for your tests. Because of this, we highly recommend testing your store using your **real Production credentials** before officially going live to ensure everything is working perfectly.> Currency Match: Ensure that your FluentCart store currency is set to the same currency used in your Mercado Pago account.
 
-![Payment Activation](/assets/payment-activation-3.B_ArMq6Q.webp)
+![Payment Activation](https://docs.fluentcart.com/assets/payment-activation-3.B_ArMq6Q.webp)
 
 ## Step 3: Create an Application in Mercado Pago ​
 
@@ -424,20 +424,20 @@ To get your keys, you must first create an application in the Mercado Pago Devel
 
 1. Log in to your **Mercado Pago Developers dashboard** and go to **Your integrations**. Click the **Create application** button.
 
-![Create Application](/assets/create-application-4.1atVT70U.webp)
+![Create Application](https://docs.fluentcart.com/assets/create-application-4.1atVT70U.webp)
 
 1. Enter your **Application name** and click **Continue**.
 
-![Application Name](/assets/application-name-5.CqXh1vhs.webp)
+![Application Name](https://docs.fluentcart.com/assets/application-name-5.CqXh1vhs.webp)
 
 1. Select **Online payments** and choose the option to create your store. Click on the **Continue** button.
 
-![Online Payment](/assets/online-payment-6.BtIFM1Wv.webp)
+![Online Payment](https://docs.fluentcart.com/assets/online-payment-6.BtIFM1Wv.webp)
 
 1. Confirm your details and click **Confirm** to generate your application.
 2. Navigate to **Production credentials** in the side menu to copy your **Public Key** and **Access Token** for later use.
 
-![Copy Public Key & Access Token](/assets/copy-public-key-7.DRnlCFjE.webp)
+![Copy Public Key & Access Token](https://docs.fluentcart.com/assets/copy-public-key-7.DRnlCFjE.webp)
 
 ## Step 4: Set up Webhooks ​
 
@@ -446,20 +446,20 @@ Webhooks are essential for FluentCart to receive real-time updates about transac
 1. **Copy the Webhook URL:** On your FluentCart Mercado Pago settings page, copy the unique **Webhook URL** provided.
 2. **Configure in Mercado Pago:** In your Mercado Pago application, navigate to **Notifications > Webhooks** and click **Configure notifications**.
 
-![Configure Notification](/assets/configure-notification-8.DYJFcESH.webp)
+![Configure Notification](https://docs.fluentcart.com/assets/configure-notification-8.DYJFcESH.webp)
 
 1. **Paste the URL:** Paste the link into the **URL for testing** (for Test mode) or **Production method** (for Live mode) field.
 2. **Select Events:** Under "Recommended events," check the boxes for: - Payments
 - Plans and subscriptions
 3. **Get Your Secret:** Click **Save settings**. A **Secret signature (Webhook Secret)** will be generated.
 
-![Configure Webhook Notification](/assets/configure-webhook-notification-9.DTh2QNAa.webp)
+![Configure Webhook Notification](https://docs.fluentcart.com/assets/configure-webhook-notification-9.DTh2QNAa.webp)
 
 1. **Add to FluentCart:** Copy this secret and paste it into the **Test/Live Webhook Secret** field back in your FluentCart settings.
 
 Once all fields are filled, click the **Save Settings** button at the bottom of the page to finalize your integration.
 
-![Add To FluentCart](/assets/save-settings-10.Cwow7KcT.webp)
+![Add To FluentCart](https://docs.fluentcart.com/assets/save-settings-10.Cwow7KcT.webp)
 
 ---
 
@@ -486,11 +486,11 @@ First, you need to get your **API Key** from your Mollie dashboard. This key is 
 
 > Info: Test Mode vs. Live Mode It is highly recommended to start with your Test API key. This allows you to make test purchases on your store without using real money. Once you are sure the connection is working correctly, you can switch to your Live API key to begin accepting real payments.
 
-![Mollie API Configuration](/assets/mollie-2.DVATqgLL.webp)
+![Mollie API Configuration](https://docs.fluentcart.com/assets/mollie-2.DVATqgLL.webp)
 
 For now, click the **Copy** button next to your **Test API key**.
 
-![Mollie API Configuration](/assets/mollie-3.Bz54gmxa.webp)
+![Mollie API Configuration](https://docs.fluentcart.com/assets/mollie-3.Bz54gmxa.webp)
 
 ### Step 2: Configure Mollie in FluentCart ​
 
@@ -509,7 +509,7 @@ Now that you have your test key, let's go back to your WordPress dashboard to pa
 - **You can configure methods here:** From here you can directly visit to select Payment page of Mollie.
 - **Save Settings:** Click the **Save Settings** button at the bottom of the page.
 
-![Mollie API Configuration](/assets/mollie-7.Di0d3nUr.webp)
+![Mollie API Configuration](https://docs.fluentcart.com/assets/mollie-7.Di0d3nUr.webp)
 
 ### Step 3: Go Live with Real Payments ​
 
@@ -550,7 +550,7 @@ This guide will walk you through the entire process of connecting your Paddle ac
 
 This will take you to the main Paddle settings page, where you will configure the entire integration.
 
-![Screenshot of Activate Paddle in FluentCart](/images/payments-checkout/paddle-payment/activate-paddle.webp)
+![Screenshot of Activate Paddle in FluentCart](https://docs.fluentcart.com/images/payments-checkout/paddle-payment/activate-paddle.webp)
 
 ### Step 2: Configure Paddle Settings ​
 
@@ -565,19 +565,19 @@ First, enable the payment gateway by toggling the **Payment Activation** switch 
 
 To find your API Keys and Client Token, log in to your [Paddle account](https://login.paddle.com/login) and navigate to the **Developer Tools → Authentication** section.
 
-![Screenshot of Payment Activation](/images/payments-checkout/paddle-payment/payment-activation.webp)
+![Screenshot of Payment Activation](https://docs.fluentcart.com/images/payments-checkout/paddle-payment/payment-activation.webp)
 
 #### Generating API Key ​
 
 Once you log in to the Paddle Dashboard, open the **Developer Tools** dropdown list from the left sidebar, and click **Authentication**. Now, go to the **API keys** section and click the **+ New API key** button.
 
-![Screenshot of API key](/images/payments-checkout/paddle-payment/api-key.webp)
+![Screenshot of API key](https://docs.fluentcart.com/images/payments-checkout/paddle-payment/api-key.webp)
 
 Now, provide the **Name** and **Description** for your API key, click the **Save** button, and your desired API key will be generated.
 
 Here, you can see the newly generated API Key. Now, press the **Copy key** button, and your desired **API Key** will be copied.
 
-![Screenshot of Copy API key](/images/payments-checkout/paddle-payment/copy-api-key.webp)
+![Screenshot of Copy API key](https://docs.fluentcart.com/images/payments-checkout/paddle-payment/copy-api-key.webp)
 
 #### Generating Client Token / Public Token ​
 
@@ -585,11 +585,11 @@ Now, go to the **Client-side tokens** section and click the **+ New client-side 
 
 Now, provide the **Name** and **Description** for your client token, click the **Save** button, and your desired client token will be generated.
 
-![Screenshot of Client Token/ Public Token](/images/payments-checkout/paddle-payment/client-token.webp)
+![Screenshot of Client Token/ Public Token](https://docs.fluentcart.com/images/payments-checkout/paddle-payment/client-token.webp)
 
 Here, you can see the newly generated Client Token. Now, click the **Three-dot icon** and press the **Copy Token** button.
 
-![Screenshot of Copy Client Token/ Public Token](/images/payments-checkout/paddle-payment/copy-client-token.webp)
+![Screenshot of Copy Client Token/ Public Token](https://docs.fluentcart.com/images/payments-checkout/paddle-payment/copy-client-token.webp)
 
 ### Step 3: Set up Webhooks in Paddle ​
 
@@ -598,7 +598,7 @@ Webhooks are essential for FluentCart to receive real-time updates about transac
 1. **Copy the Webhook URL:** First, copy the **Webhook URL** provided on your FluentCart Paddle settings page.
 2. **Create a New Webhook in Paddle:** Log in to your Paddle dashboard. Navigate to **Developer Tools → Notifications**. Next, click on the **+ New destination** button.
 
-![Screenshot of Notification](/images/payments-checkout/paddle-payment/new-destination.webp)
+![Screenshot of Notification](https://docs.fluentcart.com/images/payments-checkout/paddle-payment/new-destination.webp)
 
 A modal will appear. **Paste** the URL you copied from FluentCart into the **Webhook URL** field.
 
@@ -638,7 +638,7 @@ subscription.canceled
 
 After selecting the events, save the webhook by clicking the **Save destination** button. Paddle will provide you with a **Webhook Secret**. Simply copy this webhook secret for future use.
 
-![Screenshot of Events](/images/payments-checkout/paddle-payment/events.webp)
+![Screenshot of Events](https://docs.fluentcart.com/images/payments-checkout/paddle-payment/events.webp)
 
 #### Add Webhook Secret to FluentCart: ​
 
@@ -658,7 +658,7 @@ You can also customize the appearance and text of the Paddle checkout button:
 - **Button Styling:** Adjust the **Button Color**, **Button Hover Color**, **Button Text Color**, and **Button Font Size** to match your store's design.
 - **Disable Webhook Verification:** This security feature ensures that webhook notifications are genuinely coming from Paddle. It should only be disabled for specific debugging or testing scenarios. For a live store, always keep this setting enabled to protect your store from fraudulent requests.
 
-![Screenshot of Customization](/images/payments-checkout/paddle-payment/customization-options.webp)
+![Screenshot of Customization](https://docs.fluentcart.com/images/payments-checkout/paddle-payment/customization-options.webp)
 
 Once you have configured all the settings, click the **Save Settings** button. Your Paddle integration is now complete!
 
@@ -677,7 +677,7 @@ PayPal provides a fast and secure way for customers to send and receive money or
 
 INFO
 
-Please note that you must have a PayPal Business or Merchant account to accept payments through this integration. The following step will prompt you to log in to this account.![Screenshot of PayPal Settings Page](/images/payments-checkout/paypal-settings.webp)
+Please note that you must have a PayPal Business or Merchant account to accept payments through this integration. The following step will prompt you to log in to this account.![Screenshot of PayPal Settings Page](https://docs.fluentcart.com/images/payments-checkout/paypal-settings.webp)
 
 1. **Test Mode Warning:** If your store is in Test mode, a banner will remind you: "Your Store is in Test mode, Change Store's 'Order Mode' to 'Live' and update related settings to enable Live payment !!" This is crucial to switch to live mode for real transactions.
 2. **Connect Your PayPal Account:** Here, you don't need any API keys. Just click on the **Connect with PayPal** button. You'll then be directed to "PayPal" to log in to your account. Once logged in, you will see that your PayPal account is successfully connected with your FluentCart store.
@@ -705,7 +705,7 @@ First, you need to install and enable Paystack as a payment method in your store
 3. You will see a list of available payment gateways. Find **Paystack** and click the **Install & Activate** button next to it.
 4. After a moment, the page will refresh, and the button will change to **Manage**. Click the **Manage** button to open the Paystack Settings page.
 
-![Installing and activating Paystack in FluentCart Payment Settings](/assets/enable-paystack-payment.o1rxuQqq.webp)
+![Installing and activating Paystack in FluentCart Payment Settings](https://docs.fluentcart.com/assets/enable-paystack-payment.o1rxuQqq.webp)
 
 ## Step 2: Configure Paystack Settings in FluentCart ​
 
@@ -729,7 +729,7 @@ Webhooks are essential for Paystack to send real-time updates to FluentCart, suc
 
 - **Copy the Webhook URL:** In your FluentCart Paystack settings, copy the entire **Webhook URL** provided.
 
-![Set Up Webhooks](/assets/payment-activation-2.BuuVYrCE.webp)
+![Set Up Webhooks](https://docs.fluentcart.com/assets/payment-activation-2.BuuVYrCE.webp)
 
 ## Step 4: Get the Credential from Paystack ​
 
@@ -738,12 +738,12 @@ Now, open a new tab and log in to your **Paystack dashboard**. Go to **Settings 
 1. **Paste the Webhook URL:** Find the **Test Webhook URL** field. Paste the URL you just copied from FluentCart into this field.
 2. **Copy Your API Keys:** On this same page, you will find your **Test Public Key** and **Test Secret Key**. Click the "**copy**" icon next to each key.
 
-![Finding API Keys and Webhook fields in the Paystack dashboard](/assets/paystack-settings-3.CAUCEqZc.webp)
+![Finding API Keys and Webhook fields in the Paystack dashboard](https://docs.fluentcart.com/assets/paystack-settings-3.CAUCEqZc.webp)
 
 1. **Paste Keys into FluentCart:** Now, go back to your FluentCart settings page. **Paste** the **Test Public Key** and **Test Secret Key** into their matching fields.
 2. **Save Changes:** Click **Save changes** in your Paystack dashboard, and then click the **Save Settings** button in your FluentCart dashboard.
 
-![Finding API Keys and Webhook fields in the Paystack dashboard](/assets/save-settings-4.qdNlg1Rp.webp)
+![Finding API Keys and Webhook fields in the Paystack dashboard](https://docs.fluentcart.com/assets/save-settings-4.qdNlg1Rp.webp)
 
 Your Paystack integration is now complete and in **Test Mode**. We recommend running a test transaction with a Paystack test card to ensure the connection is working.
 
@@ -772,7 +772,7 @@ Before you can use Razorpay, you need to add the feature to your FluentCart stor
 3. You will see a list of available payment gateways. Find **Razorpay** and click the **Manage** button next to it.
 4. If it isn't ready yet, you will see a screen with an **Install & Activate** button. Click on it.
 
-![ Activate Razorpay](/assets/access-razorpay-1.DQqON1ve.webp)
+![ Activate Razorpay](https://docs.fluentcart.com/assets/access-razorpay-1.DQqON1ve.webp)
 
 ## Step 2: Configure Razorpay Settings ​
 
@@ -787,7 +787,7 @@ First, enable the payment gateway by toggling the **Payment Activation** switch 
 
 TIP
 
-Now, copy the **Webhook URL** from this page for future use in Step 4.![ Configure Razorpay Settings](/assets/payment-activation-2.nol9sfPU.webp)
+Now, copy the **Webhook URL** from this page for future use in Step 4.![ Configure Razorpay Settings](https://docs.fluentcart.com/assets/payment-activation-2.nol9sfPU.webp)
 
 ## Step 3: Get Your Keys from Razorpay ​
 
@@ -797,15 +797,15 @@ To integrate your store with Razorpay, you require two special codes: a **Key ID
 2. In the left sidebar, go to **Accounts & Settings**.
 3. Click on the **API Keys** tab.
 
-![ Get API Keys From Razorpay](/assets/razorpay-account-settings-3.2RKDQz1G.webp)
+![ Get API Keys From Razorpay](https://docs.fluentcart.com/assets/razorpay-account-settings-3.2RKDQz1G.webp)
 
 1. Click the **Regenerate Test Key** (or "Generate Key") button.
 
-![ Get API Keys From Razorpay](/assets/Regenarate-Test-Key-4.xvIOL8Gy.webp)
+![ Get API Keys From Razorpay](https://docs.fluentcart.com/assets/Regenarate-Test-Key-4.xvIOL8Gy.webp)
 
 1. Copy the **Key ID** and **Key Secret** that appear. Keep these safe!
 
-![ Copy Key ID and Secret](/assets/Copy-the-public-key-secret-key-5.CEcLC1Je.webp)
+![ Copy Key ID and Secret](https://docs.fluentcart.com/assets/Copy-the-public-key-secret-key-5.CEcLC1Je.webp)
 
 ## Step 4: Set Up Webhooks ​
 
@@ -814,7 +814,7 @@ Webhooks are like "digital status updates." They tell FluentCart exactly when a 
 1. In your Razorpay Dashboard, go to **Settings > Webhooks**.
 2. Click on the **Add New Webhook** button.
 
-![ Add New Webhook](/assets/add-new-webhook-6.DDE3fX61.webp)
+![ Add New Webhook](https://docs.fluentcart.com/assets/add-new-webhook-6.DDE3fX61.webp)
 
 1. In the popup that appears, paste the **Webhook URL** you copied before from FluentCart.
 2. In the **Active Events** section, select these specific events to ensure your store stays updated:
@@ -879,7 +879,7 @@ subscription.completed
 
 IMPORTANT
 
-Make sure to save the Webhook Secret in the credentials section in your FluentCart settings for secure webhook verification.![ Create Webhook](/assets/create-webhook-7.4JQ8fSrb.webp)
+Make sure to save the Webhook Secret in the credentials section in your FluentCart settings for secure webhook verification.![ Create Webhook](https://docs.fluentcart.com/assets/create-webhook-7.4JQ8fSrb.webp)
 
 ## Step 5: Finalize Configuration in FluentCart ​
 
@@ -892,7 +892,7 @@ Now, take those keys and put them into your store settings.
 
 > [Tip] We recommend starting with "Test" mode to make sure everything works before you take real money!
 
-![ Finalize Configuration](/assets/razorpay-settings-8.BPCNcSuP.webp)
+![ Finalize Configuration](https://docs.fluentcart.com/assets/razorpay-settings-8.BPCNcSuP.webp)
 
 ---
 
@@ -942,7 +942,7 @@ FluentCart gives you two different ways for customers to pay:
 - **Embedded checkout (Recommended):** This keeps the customer on your website. It’s a customizable block that lets you control the design.
 - **Stripe Hosted checkout:** This sends the customer to a secure page managed by **Stripe**. This is great for high-volume stores or if you want Stripe to handle all the complex security rules for you.
 
-![Screenshot of Stripe Settings Page](/images/payments-checkout/stripe-payment/stripe-settings.webp)
+![Screenshot of Stripe Settings Page](https://docs.fluentcart.com/images/payments-checkout/stripe-payment/stripe-settings.webp)
 
 #### Step 4: Configure Webhooks ​
 
@@ -965,15 +965,15 @@ The Events recommended by FluentCart are briefly explained below:
 
 Once you select all the suggested **Webhook Events**, click the **Continue** button.
 
-![Screenshot of Stripe Settings Page](/images/payments-checkout/stripe-payment/select-events.webp)
+![Screenshot of Stripe Settings Page](https://docs.fluentcart.com/images/payments-checkout/stripe-payment/select-events.webp)
 
 Then, select the **Webhook endpoint** and again click the **Continue** button.
 
-![Screenshot of Stripe Settings Page](/images/payments-checkout/stripe-payment/webhook-endpoint.webp)
+![Screenshot of Stripe Settings Page](https://docs.fluentcart.com/images/payments-checkout/stripe-payment/webhook-endpoint.webp)
 
 Next, type a destination name, **paste** the **webhook URL** you copied earlier into the **Endpoint URL** field, and then click the “**Create Destination**” button.
 
-![Screenshot of Stripe Settings Page](/images/payments-checkout/stripe-payment/create-destination.webp)
+![Screenshot of Stripe Settings Page](https://docs.fluentcart.com/images/payments-checkout/stripe-payment/create-destination.webp)
 
 #### Step 5: Activate and Save ​
 

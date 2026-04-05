@@ -58,7 +58,7 @@ The main visualization on this dashboard is the **New Customers**. This is a pow
 - **Visual Comparison:** The chart overlays two distinct areas—the **Current Range** (representing the period currently selected in the date filter) and the **Compare Range** (representing the historical period you are measuring against).
 - **Trend Analysis:** By showing the current period's customer acquisition alongside the past, you can quickly identify seasonal impacts, measure the success of specific marketing campaigns, and see if your acquisition rate is accelerating or slowing down.
 
-![Customer Reports](/assets/customer-report-1.BCwo-VmM.webp)
+![Customer Reports](https://docs.fluentcart.com/assets/customer-report-1.BCwo-VmM.webp)
 
 ### Comparison Breakdown ​
 
@@ -69,7 +69,7 @@ Below the chart, a detailed **Comparison** table breaks down the growth trend mo
 - **Compare Range:** The total number of new customers acquired during the equivalent comparison month.
 - **Change [%]:** The exact percentage of change (growth or decline) between the two months, allowing you to pinpoint exactly when and how much your customer acquisition shifted.
 
-![Customer Reports](/assets/customer-report-2.BDtCL2vE.webp)
+![Customer Reports](https://docs.fluentcart.com/assets/customer-report-2.BDtCL2vE.webp)
 
 By using the Customer Report, you can move beyond simple sales numbers to understand the most valuable asset of your store: your customer base.
 
@@ -100,7 +100,7 @@ The top of the dashboard gives you key controls to choose what data appears in t
 - **Advanced Filters:** Click the **filter** icon to break down the report by options like **Order Type** or specific **Products**. This helps you focus on detailed order data for a closer view.
 - **Reset Filters:** Click the **Reset Filter** button to quickly remove all selections and return the report to its original view.
 
-![Screenshot of Orders Report Page](/images/reporting-analytics/orders/order-report-filter.webp)
+![Screenshot of Orders Report Page](https://docs.fluentcart.com/images/reporting-analytics/orders/order-report-filter.webp)
 
 ### Key Order Metrics ​
 
@@ -123,7 +123,7 @@ Just below the KPIs, you’ll see the Order **Report Chart**. This bar chart giv
 
 You can adjust the chart view to show data by month or year. By default, it’s set to the standard format. To change it, use the dropdown menu located at the top-right corner of the chart section.
 
-![Screenshot of Orders Report Page](/images/reporting-analytics/orders/orders-report-chart.webp)
+![Screenshot of Orders Report Page](https://docs.fluentcart.com/images/reporting-analytics/orders/orders-report-chart.webp)
 
 #### Customer Insights ​
 
@@ -142,7 +142,7 @@ This section provides geographical and temporal breakdowns of your order data.
 - **Shopping Country:** This table breaks down your orders and sales data by the customer's country, helping you identify your key international markets.
 - **Orders Grouped By Day and Hour:** This heatmap visualizes your store's busiest times, showing which days of the week and which hours of the day generate the most orders.
 
-![Screenshot of Orders Report Page](/images/reporting-analytics/orders/customer-insights.webp)
+![Screenshot of Orders Report Page](https://docs.fluentcart.com/images/reporting-analytics/orders/customer-insights.webp)
 
 #### Additional Order Analytics ​
 
@@ -156,7 +156,7 @@ At the bottom of the report, you’ll find detailed charts that help you underst
 - **Average Order Items:** A line chart that tracks the trend of the average number of items per order over the selected time period.
 - **Time between Order Created & Completed:** This chart shows how long it takes to complete an order, helping you see how quickly your team fulfills orders.
 
-![Screenshot of Orders Report Page](/images/reporting-analytics/orders/orders-report-by.webp)
+![Screenshot of Orders Report Page](https://docs.fluentcart.com/images/reporting-analytics/orders/orders-report-by.webp)
 
 ---
 
@@ -192,7 +192,7 @@ At the top of the **Product Report**, you will find summary cards highlighting y
 
 Each metric also includes a percentage that indicates the increase or decrease compared to the period you are comparing against.
 
-![Screenshot of Product Report Page](/images/reporting-analytics/product/product-report.webp)
+![Screenshot of Product Report Page](https://docs.fluentcart.com/images/reporting-analytics/product/product-report.webp)
 
 #### Product Report Chart ​
 
@@ -209,7 +209,7 @@ Below the main chart, a detailed comparison table allows you to analyze the perf
 - **Sales:** This unique column uses a bar chart to visually compare the sales numbers for each of the two months you selected, making it easy to see which products are trending up or down.
 - **Change:** This column shows the exact percentage of change between the two months, color-coded for a quick view of performance.
 
-![Screenshot of Product Performanance Comparison](/images/reporting-analytics/product/product-performanance.webp)
+![Screenshot of Product Performanance Comparison](https://docs.fluentcart.com/images/reporting-analytics/product/product-performanance.webp)
 
 With the Product Report, you can see clear patterns in product demand, giving you the insights you need to make smarter decisions about your inventory and marketing.
 
@@ -236,7 +236,7 @@ The top of the dashboard gives you key controls to choose what data appears in y
 - **Advanced Filters:** Click the **filter** icon to segment the report by criteria such as **Order Type** or specific **Products**, allowing you to isolate refunds associated with certain items.
 - **Reset Filters:** Click the **Reset Filter** button to quickly remove all selections and return the report to its original view.
 
-![Screenshot of Refunds Report Page](/images/reporting-analytics/refunds/refunds-report.webp)
+![Screenshot of Refunds Report Page](https://docs.fluentcart.com/images/reporting-analytics/refunds/refunds-report.webp)
 
 ### Key Refund Metrics ​
 
@@ -262,7 +262,7 @@ Below the main chart, you’ll find more detailed breakdowns that show the data 
 - **Weeks between an order created date and refund date:** This bar chart shows how long it takes for customers to request refunds. It helps you see if problems happen right away or later.
 - **Refunds Grouped By:** This table breaks down refunds by things like **Billing Country**. It shows the number of **Refunds**, the total **Refunded Amount**, and the **Average Refund**, helping you find patterns in specific regions or customer groups.
 
-![Refund Report Charts](/assets/refunds-report-1.Dbi79_i0.webp)
+![Refund Report Charts](https://docs.fluentcart.com/assets/refunds-report-1.Dbi79_i0.webp)
 
 The Refunds Report goes deeper than sales data, showing you the reasons behind customer returns so you can improve your products and services.
 
@@ -309,7 +309,7 @@ At the very top, you get a direct summary of your store's financial volume and g
 - **Gross Volume:** The total sales amount before anything is taken out, charted over specific periods (e.g., quarterly or monthly).
 - **Year-over-Year Growth (YoY):** This figure shows the percentage change in your gross volume compared to the same time last year, giving you crucial context on expansion.
 
-![Screenshot of Reporting Overview Page](/images/reporting-analytics/dashboard-overview/reporting-overview.webp)
+![Screenshot of Reporting Overview Page](https://docs.fluentcart.com/images/reporting-analytics/dashboard-overview/reporting-overview.webp)
 
 ### Key Performance Trends ​
 
@@ -326,7 +326,7 @@ These sections move beyond raw sales to show real profitability and market perfo
 - **Net Revenue Quarterly:** The net income broken down by three-month periods for easier fiscal review.
 - **Top Country Gross/Net Volume:** Visual charts that categorize your sales and revenue based on the customer’s billing country. This helps you identify your most valuable geographical markets.
 
-![Screenshot of Report Dashboard Overview Page](/images/reporting-analytics/dashboard-overview/overview-metrics.webp)
+![Screenshot of Report Dashboard Overview Page](https://docs.fluentcart.com/images/reporting-analytics/dashboard-overview/overview-metrics.webp)
 
 ### Product and Customer Value ​
 
@@ -360,7 +360,7 @@ The top of the dashboard gives you key controls to choose what data appears in t
 - **Advanced Filters:** Click the **filter** icon to break down the report by options like Order Type or specific Products. This helps you focus on detailed revenue data for a closer view.
 - **Reset Filters:** Click the **Reset Filter** button to quickly remove all selections and return the report to its original view.
 
-![Screenshot of Revenue Report Page](/images/reporting-analytics/revenue/advanced-filter.webp)
+![Screenshot of Revenue Report Page](https://docs.fluentcart.com/images/reporting-analytics/revenue/advanced-filter.webp)
 
 ### Key Revenue Metrics ​
 
@@ -382,7 +382,7 @@ Below the key metrics, you’ll find detailed breakdowns of your store’s incom
 
 The Revenue Report shows how your store is earning over time. You can easily see what’s working, understand your store’s earnings, and plan to make it grow.
 
-![Screenshot of Revenue Report Page](/images/reporting-analytics/revenue/revenue-analysis.webp)
+![Screenshot of Revenue Report Page](https://docs.fluentcart.com/images/reporting-analytics/revenue/revenue-analysis.webp)
 
 #### Net Revenue Grouped By ​
 
@@ -396,7 +396,7 @@ This section allows you to break down revenue by different criteria, making it e
 - **Data Table:** The table will dynamically update to show a detailed breakdown of your revenue based on the selected grouping, including metrics like Order Count, Gross Sales, and Net Revenue for each item in the group (e.g., for each country or payment method).
 - **Export:** Click the **Export** button to download the currently displayed grouped data as a CSV file.
 
-![Screenshot of Revenue Report Page](/images/reporting-analytics/revenue/net-revenue.webp)
+![Screenshot of Revenue Report Page](https://docs.fluentcart.com/images/reporting-analytics/revenue/net-revenue.webp)
 
 ---
 
@@ -425,7 +425,7 @@ The top of the dashboard gives you key controls to choose what data appears in t
 - **Advanced Filters:** Click the **filter** icon to break down the report by options like **Order Type** or specific **Products**. This helps you focus on detailed sales data for a closer view.
 - **Reset Filters:** Click this button to instantly clear all applied date and comparison selections and revert the report to its default view.
 
-![Screenshot of Sales Report Page](/images/reporting-analytics/sales/sales-reports.webp)
+![Screenshot of Sales Report Page](https://docs.fluentcart.com/images/reporting-analytics/sales/sales-reports.webp)
 
 ### Key Sales Metrics ​
 
@@ -478,7 +478,7 @@ The top of the dashboard gives you key controls to choose what data appears in t
 - **Compare To:** This dropdown allows you to choose a past time period to compare with your current data.
 - **Reset Filters:** Click this button to instantly clear all applied date and comparison selections and revert the report to its default view.
 
-![Screenshot of Report Subscriprtion Page](/images/reporting-analytics/subscription/subscription-report.webp)
+![Screenshot of Report Subscriprtion Page](https://docs.fluentcart.com/images/reporting-analytics/subscription/subscription-report.webp)
 
 ### Subscription Chart ​
 
@@ -489,7 +489,7 @@ The main feature of this report is the **Subscription Chart**. It shows your gro
 
 You can also use the interactive controls in the top-right corner of the chart to change the view, zoom, or download the chart as an image.
 
-![Screenshot of Report Subscriprtion Page](/images/reporting-analytics/subscription/subscription-chart.webp)
+![Screenshot of Report Subscriprtion Page](https://docs.fluentcart.com/images/reporting-analytics/subscription/subscription-chart.webp)
 
 ### Subscription Comparison ​
 
@@ -509,7 +509,7 @@ Below the main comparison, you’ll find detailed charts that show customer loya
 
 With the Subscription Report, you can easily see patterns in your subscription signups, giving you the insights you need to measure your growth.
 
-![Screenshot of Report Subscriprtion Page](/images/reporting-analytics/subscription/subscription-comparion-table.webp)
+![Screenshot of Report Subscriprtion Page](https://docs.fluentcart.com/images/reporting-analytics/subscription/subscription-comparion-table.webp)
 
 ---
 

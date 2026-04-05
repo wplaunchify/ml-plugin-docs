@@ -46,7 +46,7 @@ This section controls the visibility of the cart, how user accounts are created,
 2. Click on the **Store Settings** tab.
 3. From the sub-menu, select **Cart & Checkout**.
 
-![Screenshot of Additional Info Settings Tab](/images/settings-configuration/cart-checkout/cart-checkout.webp)
+![Screenshot of Additional Info Settings Tab](https://docs.fluentcart.com/images/settings-configuration/cart-checkout/cart-checkout.webp)
 
 #### Cart Icon in Body ​
 
@@ -113,7 +113,7 @@ This section allows you to define the address fields required for billing purpos
 - **Post Code**: Displays the postal/zip code field. It is enabled and required by default.
 - **Phone**: An optional field to collect the customer’s phone number.
 
-![Screenshot of Additional Info Settings Tab](/images/settings-configuration/checkout-field/checkout-fields.webp)
+![Screenshot of Additional Info Settings Tab](https://docs.fluentcart.com/images/settings-configuration/checkout-field/checkout-fields.webp)
 
 ### 3. Shipping Address ​
 
@@ -128,7 +128,7 @@ This section lets you configure the fields for the shipping address, which is cr
 - **Post Code**: Displays the postal/zip code field for shipping.
 - **Phone**: An optional field to collect the recipient’s phone number for delivery purposes.
 
-![Screenshot of Additional Info Settings Tab](/images/settings-configuration/checkout-field/shipping-address.webp)
+![Screenshot of Additional Info Settings Tab](https://docs.fluentcart.com/images/settings-configuration/checkout-field/shipping-address.webp)
 
 ### 4. Agree Terms ​
 
@@ -224,7 +224,7 @@ On this screen, you will see a list of all available email notifications. For ea
 
 To quickly activate or deactivate any notification, simply click the **toggle switch** in the "Enabled" column. The email will only be sent if the toggle is on.
 
-![Email Notification](/images/settings-configuration/email-notifications/email-notification-1.webp)
+![Email Notification](https://docs.fluentcart.com/images/settings-configuration/email-notifications/email-notification-1.webp)
 
 ### Customizing an Email Notification ​
 
@@ -251,7 +251,7 @@ If you select **Customized Body**, a full rich text editor will appear.
 - **Shortcodes:** Just like with the subject line, you can use the **shortcode icon {;}** above the editor to insert dynamic placeholders for order, customer, and general store details. This allows you to create highly personalized and informative emails.
 - **Visual/Code View:** You can switch between the **Visual** editor and the **Code** editor (for HTML) to achieve more advanced customizations.
 
-![Email Notification Customization](/images/settings-configuration/email-notifications/email-notification-body.webp)
+![Email Notification Customization](https://docs.fluentcart.com/images/settings-configuration/email-notifications/email-notification-body.webp)
 
 Once you are finished editing, click the **Update** button to save your changes. Your customized email will now be sent whenever its corresponding event is triggered.
 
@@ -286,7 +286,7 @@ These settings will be used to send all emails from FluentCart, such as order co
 
  shortcode, which automatically pulls the primary administrator email from your WordPress settings.
 
-![Mailing Settings](/images/settings-configuration/email-notifications/mailing-settings.webp)
+![Mailing Settings](https://docs.fluentcart.com/images/settings-configuration/email-notifications/mailing-settings.webp)
 
 #### Saving Your Changes ​
 
@@ -310,7 +310,7 @@ To manage your store's modules:
 2. Navigate to **FluentCart > Settings** in the side menu.
 3. Select the **Features & Addon** tab from the left-hand sidebar.
 
-![Features & Addons](/images/settings-configuration/feature-addon/features-addons-1.webp)
+![Features & Addons](https://docs.fluentcart.com/images/settings-configuration/feature-addon/features-addons-1.webp)
 
 ## Managing Available Modules ​
 
@@ -367,7 +367,7 @@ The **Global Integrations** section is your central dashboard for managing power
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
 2. Click on the **Global Integrations** tab.
 
-![Screenshot of Checkout Actions Tab](/images/settings-configuration/checkout/checkout-actions-tab.webp)
+![Screenshot of Checkout Actions Tab](https://docs.fluentcart.com/images/settings-configuration/checkout/checkout-actions-tab.webp)
 
 ### The Global Integrations Dashboard ​
 
@@ -385,7 +385,7 @@ This screen provides a comprehensive overview of all the integration feeds you h
 - **Edit (Pencil Icon):** Click this to open the configuration screen and make changes to the feed's settings, such as adding new triggers or modifying data mappings.
 - **Delete (Trash Can Icon):** Click this to permanently delete the integration feed. This action cannot be undone.
 
-![Screenshot of Checkout Actions Tab](/images/settings-configuration/checkout/global-integration.webp)
+![Screenshot of Checkout Actions Tab](https://docs.fluentcart.com/images/settings-configuration/checkout/global-integration.webp)
 
 #### Adding a New Integration ​
 
@@ -416,7 +416,7 @@ To begin customizing your documents, you first need to access the correct settin
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
 2. Click on the **Invoice & Packing** tab from the left-hand menu.
 
-![Screenshot of Invoice & Packaging Page](/images/settings-configuration/Invoice/invoice-packaging.webp)
+![Screenshot of Invoice & Packaging Page](https://docs.fluentcart.com/images/settings-configuration/Invoice/invoice-packaging.webp)
 
 ### Step 2: Understand the Available Templates ​
 
@@ -440,7 +440,7 @@ The customization process is identical for each of the five templates. Select th
 2. Click the **Add ShortCodes** dropdown menu.
 3. Select the desired placeholder from the list to insert it into the template.
 
-![Screenshot of Invoice & Packaging Page](/images/settings-configuration/Invoice/template-customization.webp)
+![Screenshot of Invoice & Packaging Page](https://docs.fluentcart.com/images/settings-configuration/Invoice/template-customization.webp)
 
 ### Step 4: Save Your Templates ​
 
@@ -470,7 +470,7 @@ The **Licensing Settings** feature in FluentCart allows you to manage your plugi
 3. Enter your license key in the provided field.
 4. Click the **"Verify License"** button to activate your license.
 
-![Screenshot of Licensing Settings Tab](/images/settings-configuration/license/licensing-settings-tab.webp)
+![Screenshot of Licensing Settings Tab](https://docs.fluentcart.com/images/settings-configuration/license/licensing-settings-tab.webp)
 
 Need a License Key?
 
@@ -546,7 +546,7 @@ For each core FluentCart functionality, you need to select an existing WordPress
 [fluent_cart_checkout]
 ```
 
-![Screenshot of Pages Setup Tab](/images/settings-configuration/pages-setup/pages-setup.webp)
+![Screenshot of Pages Setup Tab](https://docs.fluentcart.com/images/settings-configuration/pages-setup/pages-setup.webp)
 
 ## Saving Your Settings ​
 
@@ -571,7 +571,7 @@ The **Payment Settings** screen in FluentCart lets you set up how your store han
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings** in the left sidebar.
 2. Click on the **"Payment Settings"** tab.
 
-![Screenshot of Payment Settings Tab](/images/settings-configuration/payment/payment-settings-tab.webp)
+![Screenshot of Payment Settings Tab](https://docs.fluentcart.com/images/settings-configuration/payment/payment-settings-tab.webp)
 
 ## Configuration Options ​
 
@@ -665,7 +665,7 @@ These settings control how additional information is presented on your individua
 - **Show Relevant in Single Page:** When enabled, this will display a section for related products or upsells directly on the single product page. This is a highly effective strategy for encouraging customers to discover other items they might like, potentially leading to larger purchases.
 - **Show Relevant in Product Modal:** If your theme uses a product quick-view or modal pop-up, this option will display those same relevant products within that modal view. This provides a seamless cross selling opportunity without requiring the customer to navigate to a new page.
 
-![Screenshot of Single Product & Order Setup Tab](/images/settings-configuration/product-page-settings/single-product-order-setup.webp)
+![Screenshot of Single Product & Order Setup Tab](https://docs.fluentcart.com/images/settings-configuration/product-page-settings/single-product-order-setup.webp)
 
 ### 2. Image Zooming ​
 
@@ -749,7 +749,7 @@ The table provides an overview of existing role assignments:
 - **Roles:** A brief description of the permissions granted by that role.
 - **Action Icons:** On the far right of each row, you'll see icons that let you quickly "edit" or "delete" roles & permission details.
 
-![Screenshot of Roles and Permissions Tab](/images/settings-configuration/roles-permissions/roles-permissions-tab.webp)
+![Screenshot of Roles and Permissions Tab](https://docs.fluentcart.com/images/settings-configuration/roles-permissions/roles-permissions-tab.webp)
 
 ### 2. Adding New Roles ​
 
@@ -774,7 +774,7 @@ FluentCart's **Roles and Permissions** system allows you to assign specific acce
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings > Roles And Permissions**.
 2. On the **Roles And Permissions** screen, click the **"+ Add Role"** button at the top right corner.
 
-![Screenshot of Add Role Button](/images/settings-configuration/roles-permissions/add-role-button.webp)
+![Screenshot of Add Role Button](https://docs.fluentcart.com/images/settings-configuration/roles-permissions/add-role-button.webp)
 3. An **"Add Role"** modal window will appear.
 4. **Select User:**
 
@@ -786,7 +786,7 @@ FluentCart's **Roles and Permissions** system allows you to assign specific acce
 - **Worker:** "View Access for products, customers, coupons, integretions." It also has "**Manage Access** for Order Statuses". This role is suitable for staff primarily involved in fulfillment and basic order updates.
 - **Accountant:** "View Access for products, customers, orders, subscriptions, licenses, coupons, reports and integrations". This role is designed for users who need to view financial and sales data without making operational changes.
 
-![Screenshot of Add Role Modal - Select User](/images/settings-configuration/roles-permissions/add-role-select-user.webp)
+![Screenshot of Add Role Modal - Select User](https://docs.fluentcart.com/images/settings-configuration/roles-permissions/add-role-select-user.webp)
 6. After selecting both the user and the role, click the **"Attach Role"** button within the modal to confirm the assignment.
 7. To cancel the process, click the **"Cancel"** button.
 
@@ -817,11 +817,11 @@ Local storage means your files are saved directly on your website's server. This
 
 To check the settings for local storage, click the **Manage** button next to Local.
 
-![Screenshot of Storage Settings Tab](/images/settings-configuration/storage/storage-settings-tab.webp)
+![Screenshot of Storage Settings Tab](https://docs.fluentcart.com/images/settings-configuration/storage/storage-settings-tab.webp)
 
 On this page, you’ll see a checkbox to **Enable the local driver**. Make sure this is checked if you want to use your server for file storage. Click **Save** if you make any changes.
 
-![Screenshot of Storage Settings Tab](/images/settings-configuration/storage/enable-local-driver.webp)
+![Screenshot of Storage Settings Tab](https://docs.fluentcart.com/images/settings-configuration/storage/enable-local-driver.webp)
 
 ### 2. S3 (Amazon S3) ​
 
@@ -888,7 +888,7 @@ Provide your physical business address details. This information can be used for
 - **City/Town:** Enter the city or town where your business is located.
 - **Zip Code:** Provide the postal or zip code for your business address.
 
-![Screenshot of Store Settings - Store Setup Tab](/images/settings-configuration/store-setting/store-settings-setup.webp)
+![Screenshot of Store Settings - Store Setup Tab](https://docs.fluentcart.com/images/settings-configuration/store-setting/store-settings-setup.webp)
 
 ### 4. Currency ​
 
@@ -898,7 +898,7 @@ Configure the currency settings for your store's transactions.
 - **Number Format:** This setting lets you choose how numbers, especially prices, are shown in your store. It controls whether you use commas or dots to separate thousands and decimals.
 - **Currency Position:** Select where the currency symbol should appear relative to the amount.
 
-![Screenshot of Store Settings - Store Setup Tab](/images/settings-configuration/store-setting/store-currency-setup.webp)
+![Screenshot of Store Settings - Store Setup Tab](https://docs.fluentcart.com/images/settings-configuration/store-setting/store-currency-setup.webp)
 
 ### 5. Payment View ​
 

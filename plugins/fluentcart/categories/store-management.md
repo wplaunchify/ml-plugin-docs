@@ -55,7 +55,7 @@ Customers also have access to their own personalized dashboard where they can ma
 
 From your WordPress dashboard, navigate to **FluentCart Pro > Customers**. On the **Customers** list, click on the **Customer Name** next to the customer you wish to inspect.
 
-![Screenshot of Customer Details Page](/images/store-management/customer-details/customer-details.webp)
+![Screenshot of Customer Details Page](https://docs.fluentcart.com/images/store-management/customer-details/customer-details.webp)
 
 ## Understanding the Customer Details Screen ​
 
@@ -82,7 +82,7 @@ This section provides contact details and address management options for the cus
 - **Manage billing address:** Provides access to manage or add billing addresses for this customer.
 - **Labels:** A section for assigning custom labels to the customer.
 
-![Screenshot of Customer Details Page](/images/store-management/customer-details/customer-information-details.webp)
+![Screenshot of Customer Details Page](https://docs.fluentcart.com/images/store-management/customer-details/customer-information-details.webp)
 
 ### 3. Orders Section ​
 
@@ -137,7 +137,7 @@ The Advanced Filter enables you to combine various properties to create precise 
 - Click **"+ Add"** to add another rule for filtering. This typically functions as an "AND" condition, meaning all criteria must be met.
 - Click the **"+ OR"** button to add an alternative filter condition. This allows you to find customers who meet *either* the previous set of criteria *or* the new one.
 
-![Screenshot of Advanced Filter Button](/images/store-management/using-advanced-filter/customer-advanced-filter-button.webp)
+![Screenshot of Advanced Filter Button](https://docs.fluentcart.com/images/store-management/using-advanced-filter/customer-advanced-filter-button.webp)
 
 ## Applying and Resetting Filters ​
 
@@ -171,7 +171,7 @@ The Customers list table presents key information for each customer at a glance:
 - **Last Purchase Date:** Shows the date and time of their most recent purchase.
 - **Customer Since:** Displays the date and time when the customer's record was first created in your system.
 
-![Screenshot of Customers List Page](/images/store-management/viewing-searching-customers/customers-list.webp)
+![Screenshot of Customers List Page](https://docs.fluentcart.com/images/store-management/viewing-searching-customers/customers-list.webp)
 
 ## Finding Specific Customers ​
 
@@ -179,7 +179,7 @@ Need to find a specific person? The search bar at the top of the page makes it f
 
 Simply type what you're looking for into the search bar. You can search by a customer's **ID**, **First Name**, **Last Name**, or **Email Address**. Hit **Enter**, and the list will instantly filter to show you the results.
 
-![Screenshot of Customer Search Bar](/images/store-management/viewing-searching-customers/customer-search.webp)
+![Screenshot of Customer Search Bar](https://docs.fluentcart.com/images/store-management/viewing-searching-customers/customer-search.webp)
 
 ## Browsing Through Pages ​
 
@@ -227,7 +227,7 @@ Orders in FluentCart naturally progress through various statuses, indicating the
 - **Canceled:** The order has been canceled by the administrator or customer.
 - **Refunded:** The order has been refunded.
 
-![Screenshot of Order Status](/images/store-management/changing-order-statuses/order-status.webp)
+![Screenshot of Order Status](https://docs.fluentcart.com/images/store-management/changing-order-statuses/order-status.webp)
 
 ## How to Change Order Status ​
 
@@ -243,7 +243,7 @@ You can change an order's status and perform other related actions from the **Or
 - **Back to processing:** This action allows you to revert an order's status to "Processing." This is useful if an order was prematurely marked as "Completed" or "On Hold" and still requires further attention or [editing](/guide/store-management/orders-management/editing-existing-orders).
 - **Receipt:** This option typically allows you to view or re-send the customer's purchase receipt for the order.
 
-![Screenshot of More Actions Dropdown](/images/store-management/changing-order-statuses/order-more-actions-dropdown.webp)
+![Screenshot of More Actions Dropdown](https://docs.fluentcart.com/images/store-management/changing-order-statuses/order-more-actions-dropdown.webp)
 
 ### Using the Activity Log ​
 
@@ -267,7 +267,7 @@ After you have [edited an order](/guide/store-management/orders-management/editi
 
 To collect the outstanding balance, navigate to the **"Transaction Details"** section on the [Order Details screen](/guide/store-management/orders-management/order-details-overview). You will see a **"Collect Payments"** dropdown menu.
 
-![Screenshot of Collect Payments Dropdown](/images/store-management/collecting-payments/collect-payments-dropdown.webp)
+![Screenshot of Collect Payments Dropdown](https://docs.fluentcart.com/images/store-management/collecting-payments/collect-payments-dropdown.webp)
 
 Clicking this dropdown reveals the following options:
 
@@ -281,7 +281,7 @@ This is the most common way to collect an additional payment. It creates a speci
 
 When your customer clicks the link, they will be taken to a simple and secure page where they can pay the outstanding amount using your store's available payment methods.
 
-![Screenshot of Custom Payment Link Modal](/images/store-management/collecting-payments/custom-payment-link-modal.webp)
+![Screenshot of Custom Payment Link Modal](https://docs.fluentcart.com/images/store-management/collecting-payments/custom-payment-link-modal.webp)
 
 ### 2. Mark Order as Paid ​
 
@@ -305,7 +305,7 @@ FluentCart allows you to manually create new orders directly from your WordPress
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Orders** in the left sidebar.
 2. On the **Orders** screen, locate and click the **"Create Order"** button in the top right corner.
 
-![Screenshot of Create Order Button](/images/store-management/creating-new-orders/create-order-button.webp)
+![Screenshot of Create Order Button](https://docs.fluentcart.com/images/store-management/creating-new-orders/create-order-button.webp)
 3. This will open a new order creation interface. You will need to:
 
 - **Customer Information:** Choose an existing customer from your store or you may create new.
@@ -322,7 +322,7 @@ FluentCart allows you to manually create new orders directly from your WordPress
 - Marking the order as "Paid" if payment was received offline (e.g., cash, bank transfer).
 - Generating a custom payment link to send to the customer for online payment.
 - Processing payment directly if you have integrated payment gateways.
-5. **Finalize Order:** Once all details are correct and the payment method is selected, click the **Save** button finalize the order. ![Screenshot of Create Order Button](/images/store-management/creating-new-orders/create-order-button2.webp)
+5. **Finalize Order:** Once all details are correct and the payment method is selected, click the **Save** button finalize the order. ![Screenshot of Create Order Button](https://docs.fluentcart.com/images/store-management/creating-new-orders/create-order-button2.webp)
 
 Manual Order Use Cases
 
@@ -350,10 +350,10 @@ If an order was marked as "Completed" but needs editing, you can use the "Back t
 1. Navigate to the **Order Details** screen for the specific order you wish to edit.
 2. In the top right corner of the Order Details screen, click the **"Edit"** button.
 
-![Screenshot of Order Details with Edit Button](/images/store-management/editing-existing-orders/order-details-edit-button.webp)
+![Screenshot of Order Details with Edit Button](https://docs.fluentcart.com/images/store-management/editing-existing-orders/order-details-edit-button.webp)
 3. The screen will transform into an editable interface, and the "Edit" button will change to **"Disable Editing"**.
 
-![Screenshot of Order in Editing Mode](/images/store-management/editing-existing-orders/order-editing-mode.webp)
+![Screenshot of Order in Editing Mode](https://docs.fluentcart.com/images/store-management/editing-existing-orders/order-editing-mode.webp)
 
 ## Making Changes to an Order ​
 
@@ -366,11 +366,11 @@ You can add new products to the existing order:
 1. In the "Order Items" section, locate the **"Search products"** field and the **"Browse"** button.
 2. Use the search field to find the product(s) you wish to add, or click "Browse" to view your product catalog.
 
-![Screenshot of Add Product Search Field in Edit Mode](/images/store-management/editing-existing-orders/add-product-search-edit-mode.webp)
+![Screenshot of Add Product Search Field in Edit Mode](https://docs.fluentcart.com/images/store-management/editing-existing-orders/add-product-search-edit-mode.webp)
 3. A modal window will appear, listing your products. Select the desired products and their variations (if applicable) by checking the box next to them.
 4. Click **"Add Items"** to add them to the order.
 
-![Screenshot of Add Items Modal](/images/store-management/editing-existing-orders/add-items-modal.webp)
+![Screenshot of Add Items Modal](https://docs.fluentcart.com/images/store-management/editing-existing-orders/add-items-modal.webp)
 
 ### 2. Modifying Existing Order Items ​
 
@@ -421,7 +421,7 @@ When Instant Checkout is active, clicking a **Buy Now** button won't take the cu
 2. **The customer enters their details** and picks a payment method.
 3. **The purchase is completed** without ever leaving the product page.
 
-![Instant Modal Checkout](/assets/fluentcart-instant-checkout.ttD_O-N0.gif)
+![Instant Modal Checkout](https://docs.fluentcart.com/assets/fluentcart-instant-checkout.ttD_O-N0.gif)
 
 ---
 
@@ -467,7 +467,7 @@ true
 
 Once saved, your shop is ready for instant purchases!
 
-![Instant Modal Checkout](/assets/fluentcart-instant-checkout-1.C59_GlGd.webp)
+![Instant Modal Checkout](https://docs.fluentcart.com/assets/fluentcart-instant-checkout-1.C59_GlGd.webp)
 
 ## Implementation Method 2: The Gutenberg Block (The No-Code Way) ​
 
@@ -483,7 +483,7 @@ If you prefer building your pages visually using the WordPress Block Editor (Gut
 
 This specific button will now trigger the instant checkout popup for the product you've selected.
 
-![Instant Modal Checkout](/assets/instant-chekout-modal.DVKplvO0.webp)
+![Instant Modal Checkout](https://docs.fluentcart.com/assets/instant-chekout-modal.DVKplvO0.webp)
 
 > ⚠️ Important Reminder For Instant Checkout to work, you must first have your payment gateways (like Stripe or PayPal) set up and active. You can check this by going to FluentCart Settings > Payment Settings. If your gateways aren't active, the pop-up won't be able to process payments!
 
@@ -507,7 +507,7 @@ Before you can create any order bumps, you must first activate the feature in yo
 4. Locate the **Order Bump** toggle and switch it to **Active**.
 5. Click the **Save Settings** button to confirm the change.
 
-![Order Bump](/assets/order-bump-1.EX8b6fwQ.webp)
+![Order Bump](https://docs.fluentcart.com/assets/order-bump-1.EX8b6fwQ.webp)
 
 ### 2. Creating a New Order Bump Offer ​
 
@@ -518,7 +518,7 @@ Once the feature is active, you can create and manage your offers.
 3. Click on **Order Bump**. This will take you to the Order Bumps management screen.
 4. Click the **Add New** button on the top right to create a new offer. A pop-up window will appear where you need to define the initial details of your offer.
 
-![Order Bump](/assets/order-bump-2.YNyKdd4X.webp)
+![Order Bump](https://docs.fluentcart.com/assets/order-bump-2.YNyKdd4X.webp)
 
 1. To start creating your new offer, you must first define its core identity:
 
@@ -527,7 +527,7 @@ Once the feature is active, you can create and manage your offers.
 
 Click the **Create** button.
 
-![Order Bump pop-up](/assets/order-bump-6.CknGYD9k.webp)
+![Order Bump pop-up](https://docs.fluentcart.com/assets/order-bump-6.CknGYD9k.webp)
 
 After clicking "Create," you will be taken to the main configuration screen to set up the rest of your order bump's rules and design.
 
@@ -564,7 +564,7 @@ This is the crucial step where you define exactly when and for whom this offer a
 
 - **Set Priority:** If you have multiple Order Bumps active with overlapping display conditions, the priority number (e.g., 1, 2, 3) determines which offer will be displayed first. **Lower numbers mean higher priority.**
 
-![Order Bump](/assets/order-bump-3.B-kmOyzK.webp)
+![Order Bump](https://docs.fluentcart.com/assets/order-bump-3.B-kmOyzK.webp)
 
 After configuring all the details, click **Save** (standard practice) to activate your bump offer.
 
@@ -580,11 +580,11 @@ On the main **Order Bumps** screen, you can manage all your existing offers:
 
 ) icon provides options to **Delete** an existing bump offer.
 
-![Order Bump](/assets/order-bump-4.CkcuMr5F.webp)
+![Order Bump](https://docs.fluentcart.com/assets/order-bump-4.CkcuMr5F.webp)
 
 - **Checkout View:** Once active, the offers appear on your store's checkout page, clearly labeled (e.g., **Recommended**) with the title, description, and discount, ready for the customer to accept with a single click.
 
-![Order Bump](/assets/order-bump-5.BP5vpgSc.webp)
+![Order Bump](https://docs.fluentcart.com/assets/order-bump-5.BP5vpgSc.webp)
 
 ---
 
@@ -602,7 +602,7 @@ The Order Details screen in FluentCart provides a comprehensive breakdown of eac
 2. You will see a list of all the orders your store has received.
 3. To open the details for a specific order, simply click on its order number in the first column (labeled # Date).
 
-![Screenshot of Order Details Page](/images/store-management/order-details-overview/order-3-details.webp)
+![Screenshot of Order Details Page](https://docs.fluentcart.com/images/store-management/order-details-overview/order-3-details.webp)
 
 ## Understanding the Order Details Screen ​
 
@@ -660,7 +660,7 @@ Displays key details about the customer who placed the order.
 - **Labels:** Any custom labels assigned to the customer.
 - This panel also offers quick links to [edit customer information](/guide/store-management/customers-management/customer-details-overview#editing-customer-information), [manage shipping address](/guide/store-management/customers-management/customer-details-overview#managing-customer-addresses), and [manage billing address](/guide/store-management/customers-management/customer-details-overview#managing-customer-addresses).
 
-![Screenshot of Order Details Page](/images/store-management/order-details-overview/order-details.webp)
+![Screenshot of Order Details Page](https://docs.fluentcart.com/images/store-management/order-details-overview/order-details.webp)
 
 ### 6. Notes ​
 
@@ -699,7 +699,7 @@ FluentCart provides a straightforward way to process refunds for your orders, wh
 1. Navigate to the **Order Details** screen for the specific order you wish to refund.
 2. In the top right corner of the Order Details screen, click the **"Refund"** button.
 
-![Screenshot of Refund Button on Order Details](/images/store-management/processing-refunds/refund-button-on-order.webp)
+![Screenshot of Refund Button on Order Details](https://docs.fluentcart.com/images/store-management/processing-refunds/refund-button-on-order.webp)
 3. A **"Refund Payment"** modal window will appear.
 4. Configure the refund details:
 
@@ -712,7 +712,7 @@ FluentCart provides a straightforward way to process refunds for your orders, wh
 - **License:** If the order includes a digital product with a license, you will see a checkbox for **"Revoke License (if any)"**. - Checking this box will revoke the issued license in addition to processing the refund, ensuring proper access control for licensed digital goods.
 5. After configuring all options, click the **"Refund"** button at the bottom of the modal (e.g., "Refund $51.3") to confirm and process the refund.
 
-![Screenshot of Refund Payment Modal](/images/store-management/processing-refunds/refund-payment-modal.webp)
+![Screenshot of Refund Payment Modal](https://docs.fluentcart.com/images/store-management/processing-refunds/refund-payment-modal.webp)
 
 ## Post-Refund Status ​
 
@@ -746,7 +746,7 @@ Your orders are neatly organized in a table. Each row is a single order, and eac
 - **Order Type:** Differentiates between various types of transactions.
 - **Action Icons:** On the far right of each row, you'll see icons that let you quickly print things like order details.
 
-![Screenshot of Orders List Page](/images/store-management/viewing-and-filtering-orders/orders-list.webp)
+![Screenshot of Orders List Page](https://docs.fluentcart.com/images/store-management/viewing-and-filtering-orders/orders-list.webp)
 
 ## Customizing Your View ​
 
@@ -765,7 +765,7 @@ Just click the **More Actions** button and select **Show Order Stats**. A summar
 
 If you want to hide this summary to get more space, just click **More Actions** and choose **Hide Order Stats** option.
 
-![Screenshot of Orders List Page](/images/store-management/viewing-and-filtering-orders/order-stats-overview.webp)
+![Screenshot of Orders List Page](https://docs.fluentcart.com/images/store-management/viewing-and-filtering-orders/order-stats-overview.webp)
 
 ### Showing and Hiding Bulk Actions ​
 
@@ -811,7 +811,7 @@ Click the toggle button next to the search bar to turn on the **Advanced Filter*
 
 You can add multiple rules by clicking the **+OR** button to create very powerful and specific searches. When you're done, click **Apply**. To go back to the full list, just click **Reset**.
 
-![Screenshot of Advanced Filter Button](/images/store-management/viewing-and-filtering-orders/advanced-filter-button.webp)
+![Screenshot of Advanced Filter Button](https://docs.fluentcart.com/images/store-management/viewing-and-filtering-orders/advanced-filter-button.webp)
 
 ### 3. Using the Search Bar ​
 

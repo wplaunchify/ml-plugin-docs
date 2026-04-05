@@ -23,13 +23,13 @@ First, let's go to the right place in FluentCart.
 3. Choose **Storage Settings**.
 4. You will see a list of cloud storage options. Find **Amazon S3** and click the **Manage** button.
 
-![Amazon S3 Settings in FluentCart](/images/integrations/S3/access-s3.webp)
+![Amazon S3 Settings in FluentCart](https://docs.fluentcart.com/images/integrations/S3/access-s3.webp)
 
 You’ll now see the fields we need to fill in to connect FluentCart to Amazon S3.
 
 To retrieve this information, please visit your Amazon AWS account. Don’t worry, we’ll guide you through each step to make the process simple and stress-free.
 
-![Amazon S3 configuration fields in FluentCart](/images/integrations/S3/s3-credential-fields.webp)
+![Amazon S3 configuration fields in FluentCart](https://docs.fluentcart.com/images/integrations/S3/s3-credential-fields.webp)
 
 ## Step 2: Get Your Credentials from Amazon S3 ​
 
@@ -42,15 +42,15 @@ First, we need to create a "bucket," which is just what Amazon calls a storage c
 1. Log in to your **Amazon AWS account**.
 2. From the main dashboard, find and click on **S3** under the "Storage" section. If you can't find it, you can search for "S3" in the search bar at the top.
 
-![Navigating to the S3 service in AWS](/images/integrations/S3/aws-navigate-to-s3.webp)
+![Navigating to the S3 service in AWS](https://docs.fluentcart.com/images/integrations/S3/aws-navigate-to-s3.webp)
 
 1. Before we make the bucket, let's choose a **Region**. This is the physical location of the data center where your files will be stored. You should pick a region that is most closest to you. You can change this at the top right of the AWS console.
 
-![Choosing a region in the AWS console](/images/integrations/S3/aws-select-region.webp)
+![Choosing a region in the AWS console](https://docs.fluentcart.com/images/integrations/S3/aws-select-region.webp)
 
 1. Now, click the **Create Bucket** button. This will start the setup process for your new storage bucket.
 
-![The 'Create Bucket' button in AWS S3](/images/integrations/S3/aws-create-bucket-button.webp)
+![The 'Create Bucket' button in AWS S3](https://docs.fluentcart.com/images/integrations/S3/aws-create-bucket-button.webp)
 
 1. On the bucket creation page, follow these instructions carefully: - **Bucket Name:** Give your bucket a unique name.
 - **Object Ownership:** Select **ACLs enabled**, and then choose **Object writer**. This is like telling Amazon it's okay for FluentCart to put files into this bucket.
@@ -64,7 +64,7 @@ us-east-1
 
 ), as you'll need it in a moment.
 
-![The 'Create Bucket' Creation page in AWS S3](/images/integrations/S3/bucket-creation.webp)
+![The 'Create Bucket' Creation page in AWS S3](https://docs.fluentcart.com/images/integrations/S3/bucket-creation.webp)
 
 ### Create an "IAM User" (A Special Key) ​
 
@@ -72,32 +72,32 @@ Instead of giving FluentCart the master key to your entire Amazon account, we’
 
 1. In the AWS search bar at the top, type **IAM** and select it from the results.
 
-![Searching for IAM in the AWS console](/images/integrations/S3/aws-search-iam.webp)
+![Searching for IAM in the AWS console](https://docs.fluentcart.com/images/integrations/S3/aws-search-iam.webp)
 
 1. On the IAM dashboard, click **Users** from the left sidebar, and then click the **Create User** button.
 
-![The 'Create User' button in the IAM dashboard](/images/integrations/S3/iam-create-user-button.webp)
+![The 'Create User' button in the IAM dashboard](https://docs.fluentcart.com/images/integrations/S3/iam-create-user-button.webp)
 
 1. **User name:** Give your user a name.
 2. Leave the box for "**Provide user access to the AWS Management Console**" unchecked. FluentCart doesn't need it. After that, click the **Next** button.
 
-![Setting the user name in IAM](/images/integrations/S3/iam-set-user-name.webp)
+![Setting the user name in IAM](https://docs.fluentcart.com/images/integrations/S3/iam-set-user-name.webp)
 
 1. In the permissions step, choose **Attach policies directly**.
 2. In the search bar, type **AmazonS3FullAccess**, check the box next to it, and click the **Next** button.
 
-![Attaching the AmazonS3FullAccess policy](/images/integrations/S3/iam-attach-policy.webp)
+![Attaching the AmazonS3FullAccess policy](https://docs.fluentcart.com/images/integrations/S3/iam-attach-policy.webp)
 
 1. You can skip the Review and Create step and click on the **Create User** button to create the new user.
 2. Your user is now created! Click on the new **User Name** in the list to see its details.
 3. Now, go to the **Security credentials** tab. Scroll down to the **Access keys** section and click **Create access key**.
 
-![The 'Create access key' button in security credentials](/images/integrations/S3/iam-create-access-key.webp)
+![The 'Create access key' button in security credentials](https://docs.fluentcart.com/images/integrations/S3/iam-create-access-key.webp)
 
 1. The next step asked how you'll use the access key. Choose **Other** and click **Next**. You can skip the next step by clicking **Create access key**.
 2. Now you'll see your **Access key** and **Secret access key**. This is very important! Copy both of these keys somewhere safe. You can also click the **Download CSV file** button to save them to your computer.
 
-![Viewing the final Access Key and Secret Access Key](/images/integrations/S3/iam-view-keys.webp)
+![Viewing the final Access Key and Secret Access Key](https://docs.fluentcart.com/images/integrations/S3/iam-view-keys.webp)
 
 > Heads up! Amazon will only show you the Secret Access Key once. If you lose it, you'll have to create a new one.
 
@@ -118,7 +118,7 @@ us-east-1
 6. Click the **Test S3 Config** button. You should see a success message.
 7. Finally, click **Save Settings** button.
 
-![FluentCart Storage Settings](/images/integrations/S3/save-settings.webp)
+![FluentCart Storage Settings](https://docs.fluentcart.com/images/integrations/S3/save-settings.webp)
 
 That's it! Your FluentCart store is now connected to Amazon S3. All your new media files will be automatically stored in your S3 bucket, making your site faster and more efficient.
 
@@ -151,11 +151,11 @@ Before heading to Cloudflare, you need to prepare the integration within your Wo
 3. Click on the **Features & Addon** section in the left-hand sidebar.
 4. Find the **Cloudflare Turnstile** card and toggle the switch to **Active**.
 
-![Cloudflare Turnstile Integration](/assets/trunstile-integration-fluentcart-1.DFO8ZHF6.webp)
+![Cloudflare Turnstile Integration](https://docs.fluentcart.com/assets/trunstile-integration-fluentcart-1.DFO8ZHF6.webp)
 
 Once enabled, two configuration fields will appear: **Turnstile Site Key** and **Turnstile Secret Key**. You will need to keep this tab open as you’ll be pasting your keys here in Step 3.
 
-![Cloudflare Turnstile Integration](/assets/trunstile-integration-fluentcart-2.DVCmBilj.webp)
+![Cloudflare Turnstile Integration](https://docs.fluentcart.com/assets/trunstile-integration-fluentcart-2.DVCmBilj.webp)
 
 ## Step 2: Generating Your Keys in Cloudflare ​
 
@@ -164,7 +164,7 @@ To connect your store, you need to register your domain with Cloudflare. You can
 1. **Access the Turnstile Dashboard:** Log in to Cloudflare, and in the sidebar, navigate to **Protect & Connect > Turnstile**.
 2. **Add Your Website:** Click the **Add Widget** button.
 
-![Cloudflare Turnstile Integration](/assets/trunstile-integration-fluentcart-3.Bg8vHn3L.webp)
+![Cloudflare Turnstile Integration](https://docs.fluentcart.com/assets/trunstile-integration-fluentcart-3.Bg8vHn3L.webp)
 
 1. **Configure the Widget:**- **Widget Name:** Enter a name to identify this site (e.g., "Main Store Checkout").
 - **Hostname Management:** Click the **Add Hostnames** button. A popup will appear—enter your store’s primary domain name (e.g., 
@@ -174,18 +174,18 @@ mystore.com
 
 ) and click **Add**.
 
-![Cloudflare Turnstile Integration](/assets/trunstile-integration-fluentcart-4.6VTRxw8d.webp)
+![Cloudflare Turnstile Integration](https://docs.fluentcart.com/assets/trunstile-integration-fluentcart-4.6VTRxw8d.webp)
 
 1. **Select Widget Mode:**- **Managed (Recommended):** Cloudflare will only show an interactive checkbox if the visitor looks suspicious. Otherwise, it stays invisible.
 - **Non-interactive:** Shows a loading bar to the user while verifying.
 - **Invisible:** Stays completely hidden from the user at all times.
 2. **Finalize:** Click **Create** at the bottom of the page.
 
-![Cloudflare Turnstile Integration](/assets/trunstile-integration-fluentcart-5.Ce9GKR-G.webp)
+![Cloudflare Turnstile Integration](https://docs.fluentcart.com/assets/trunstile-integration-fluentcart-5.Ce9GKR-G.webp)
 
 Cloudflare will now display your **Site Key** and **Secret Key**. These are unique to your domain and should be kept secure.
 
-![Cloudflare Turnstile Integration](/assets/trunstile-integration-fluentcart-6.AX8Wnlb6.webp)
+![Cloudflare Turnstile Integration](https://docs.fluentcart.com/assets/trunstile-integration-fluentcart-6.AX8Wnlb6.webp)
 
 ## Step 3: Connecting the Keys to FluentCart ​
 
@@ -198,7 +198,7 @@ Now, let's link the two platforms to finalize the security layer.
 
 You should see a "Settings Saved" confirmation. Your checkout page is now officially protected by Cloudflare Turnstile.
 
-![Cloudflare Turnstile Integration](/assets/trunstile-integration-fluentcart-7.BBtrB5vj.webp)
+![Cloudflare Turnstile Integration](https://docs.fluentcart.com/assets/trunstile-integration-fluentcart-7.BBtrB5vj.webp)
 
 ## How to Verify the Integration ​
 
@@ -229,7 +229,7 @@ First, you need to activate the connection between the two plugins.
 2. Click on the **Integration Settings** tab.
 3. You will see a list of available integrations. Find **Fluent Cart** and make sure the toggle next to it is enabled.
 
-![Enable FluentCart integration with FluentAffiliate](/images/integrations/fluentaffiliate/enable-the-fluentcart-settings.webp)
+![Enable FluentCart integration with FluentAffiliate](https://docs.fluentcart.com/images/integrations/fluentaffiliate/enable-the-fluentcart-settings.webp)
 
 ### Configure Integration Settings ​
 
@@ -240,7 +240,7 @@ In the management panel, you can fine-tune how commissions work for your FluentC
 - **Enable Affiliate Integration for FluentCart:** This checkbox acts as the master switch for the integration. Ensure it is checked.
 - **Enable Branded Coupon Codes for Affiliates:** When you enable this feature, you can offer branded coupon codes to your affiliates. This allows them to promote products with unique discount codes, giving them another powerful marketing opportunity.
 
-![Enable Branded Coupons](/images/integrations/fluentaffiliate/enable-branded-coupons.webp)
+![Enable Branded Coupons](https://docs.fluentcart.com/images/integrations/fluentaffiliate/enable-branded-coupons.webp)
 
 - **Disable Referrals on Upgrades:** Check this box to ensure that no referrals will be added on purchased upgrades. This gives you more control over commission payouts for existing customers who upgrade their plan.
 - **Enable custom rate for specific products or categories:** This is a powerful feature that lets you override your default commission rate. Check this box if you want to set special commission rates for specific products or entire product categories.
@@ -263,7 +263,7 @@ Enter Rate
 
 You can add more custom rates for different products or categories by clicking the **+Add New Group** button again. You can also remove any rate rule by clicking the red delete icon.
 
-![Enable Custom rates for Specific Products or Categories](/images/integrations/fluentaffiliate/enable-custom-rates.webp)
+![Enable Custom rates for Specific Products or Categories](https://docs.fluentcart.com/images/integrations/fluentaffiliate/enable-custom-rates.webp)
 
 ## How to Set Up a Coupon Referral ​
 
@@ -279,7 +279,7 @@ You give this coupon code directly to one of your affiliates. This way, whenever
 
 NOTE
 
-Before you can assign a coupon, the user must already be an approved affiliate in your FluentAffiliate program.![How to Set Up a Coupon Referral](/images/integrations/fluentaffiliate/setup-coupons.webp)
+Before you can assign a coupon, the user must already be an approved affiliate in your FluentAffiliate program.![How to Set Up a Coupon Referral](https://docs.fluentcart.com/images/integrations/fluentaffiliate/setup-coupons.webp)
 
 ## How Affiliate Referrals Are Tracked ​
 
@@ -324,7 +324,7 @@ The connection between the two plugins is designed to be seamless. Once FluentCa
 2. Click on **Advanced Features & Addons** in the left side bar.
 3. The system should automatically detect the **FluentCart** plugin; ensure it is enabled to allow the two tools to communicate.
 
-![Activating the FluentCart module within FluentBooking settings](/assets/activate-the-fluentcart-module.D07BkX71.webp)
+![Activating the FluentCart module within FluentBooking settings](https://docs.fluentcart.com/assets/activate-the-fluentcart-module.D07BkX71.webp)
 
 ## Step 2: Link a Product to Your Calendar ​
 
@@ -333,7 +333,7 @@ After the module is active, you can decide which specific booking events should 
 1. Go to the **Booking Calendars** section in FluentBooking.
 2. Click **Edit** on an existing event, or create a **+ New event**.
 
-![Calendar Edit](/assets/calendar-edit-2.CCYBBo9J.webp)
+![Calendar Edit](https://docs.fluentcart.com/assets/calendar-edit-2.CCYBBo9J.webp)
 
 1. Select **Payment Settings** from the left sidebar.
 2. Check the box labeled **Enable this payment as Paid and collect payment on booking**.
@@ -344,7 +344,7 @@ TIP
 
 **Pro Tip:** If you haven't created the product yet, click the **+ New** button to create it instantly from this screen.NOTE
 
-If you are using the free version of FluentBooking, you can link only one product per event.![Payment Settings](/assets/payment-settings-3.Bn0VSKok.webp)
+If you are using the free version of FluentBooking, you can link only one product per event.![Payment Settings](https://docs.fluentcart.com/assets/payment-settings-3.Bn0VSKok.webp)
 
 ## Step 3: Handle Multiple Durations (Optional) ​
 
@@ -360,7 +360,7 @@ When your clients book an appointment, the integration handles the entire transa
 - **Secure Checkout:** After picking a time slot, the user is redirected to the FluentCart checkout page to pay.
 - **Instant Confirmation:** Once the payment is finished, the booking is processed, and the transaction is recorded via your chosen FluentCart payment gateway.
 
-![Customer Experience](/assets/checkout-4.CkFBxAKm.webp)
+![Customer Experience](https://docs.fluentcart.com/assets/checkout-4.CkFBxAKm.webp)
 
 ## Managing Your Data ​
 
@@ -368,11 +368,11 @@ One of the biggest benefits of this integration is that it keeps your records ce
 
 - **In FluentBooking:** View all appointment details and schedules in the **Bookings** section.
 
-![Booking Details](/assets/booking-details-5.BtFPiM23.webp)
+![Booking Details](https://docs.fluentcart.com/assets/booking-details-5.BtFPiM23.webp)
 
 - **In FluentCart:** Every successful booking is recorded as an official **Order**. This ensures your revenue, customer purchase history, and tax data remain in one place.
 
-![Order Items](/assets/order-items-6.cEL-bsmU.webp)
+![Order Items](https://docs.fluentcart.com/assets/order-items-6.cEL-bsmU.webp)
 
 If you have any questions or need further assistance, feel free to reach out to our [support team](https://fluentcart.com/account/).
 
@@ -415,7 +415,7 @@ First, you'll need to go to the correct screen in your WordPress dashboard.
 1. On the **Integrations & Addons** dashboard, click the **Add Integration** button at the top right.
 2. Select **FluentCommunity** from the dropdown menu. This will take you to the configuration screen for your new automation feed.
 
-![Global Integration FluentCommunity](/assets/integrateing-fluentcommunity-1.CW-FWDFx.webp)
+![Global Integration FluentCommunity](https://docs.fluentcart.com/assets/integrateing-fluentcommunity-1.CW-FWDFx.webp)
 
 ### Part 2: Product-Specific Integration ​
 
@@ -431,7 +431,7 @@ A product-specific integration is ideal for highly targeted automations, like gr
 1. Inside the product editor, you will see a series of tabs at the top. Click on the **Integrations** tab.
 2. On the Product Integrations screen, click the **Add Integration** button and select **FluentCommunity Feed**. This will open the feed configuration screen.
 
-![Product Specific Integration FluentCommunity](/assets/integrateing-fluentcommunity-2.B6eGXsT4.webp)
+![Product Specific Integration FluentCommunity](https://docs.fluentcart.com/assets/integrateing-fluentcommunity-2.B6eGXsT4.webp)
 
 ### Part 3: Configuring the Integration Feed ​
 
@@ -460,7 +460,7 @@ Whether you are creating a global or a product-specific feed, the configuration 
 - **Run on Selected Variations Only (Product-Specific Only):** This powerful option appears only on product-specific integrations. It allows you to run the automation only when a customer purchases a specific variation of the product (e.g., a "Lifetime Access" tier). Leave this empty to have the feed run for all variations of this product.
 - **Enable this Integration:** Ensure the toggle at the top right is switched on to make the automation active. If it is disabled, the feed will be saved but will not run.
 
-![Configure Integration Feed Fluentcommunity](/assets/integrateing-fluentcommunity-3.DU5qeKQR.webp)
+![Configure Integration Feed Fluentcommunity](https://docs.fluentcart.com/assets/integrateing-fluentcommunity-3.DU5qeKQR.webp)
 
 Once everything is configured, click the **Create FluentCommunity Feed** button. Your automation is now live!
 
@@ -526,7 +526,7 @@ A global feed is perfect for tasks that should apply to all your customers, like
 - Click the **Add Integration** button in the top-right corner.
 - Select **FluentCRM** from the dropdown menu. This will open a new screen where you can set up the automation rules.
 
-![Screenshot of Fluentcrm Integration Page](/images/integrations/fluentcrm/add-integration.webp)
+![Screenshot of Fluentcrm Integration Page](https://docs.fluentcart.com/images/integrations/fluentcrm/add-integration.webp)
 
 #### Configure Your Feed ​
 
@@ -543,13 +543,13 @@ Here, you'll decide exactly what happens in FluentCRM when the feed is triggered
 - **Run on Selected Variations Only:** This setting allows this integration rule to run only when a customer buys a **specific product variation**. Select one or more variations from the dropdown to apply this rule exclusively to them. If you leave this field empty, the rule will apply to all variations of this product.
 - **Enable This Integration:** Ensure the toggle at the top right is switched on to make the automation active. If it is disabled, the integration will be saved but will not run.
 
-![Screenshot of Fluentcrm Integration Feed Page](/images/integrations/fluentcrm/fluentcrm-integration-feed.webp)
+![Screenshot of Fluentcrm Integration Feed Page](https://docs.fluentcart.com/images/integrations/fluentcrm/fluentcrm-integration-feed.webp)
 
 Once configured, click the **Create FluentCRM Feed** button. This global automation is now live and will run for every order in your store.
 
 Once everything is set up, you can manage the integration by clicking the **Edit** icon to make changes or the **Delete** icon to remove it.
 
-![Screenshot of Fluentcrm Integration Feed Page](/images/integrations/fluentcrm/fluentcrm-integration-edit-or-delete.webp)
+![Screenshot of Fluentcrm Integration Feed Page](https://docs.fluentcart.com/images/integrations/fluentcrm/fluentcrm-integration-edit-or-delete.webp)
 
 ### Combining Global and Product Integrations ​
 
@@ -572,7 +572,7 @@ Here are the available triggers and what they do:
 
 INFO
 
-These triggers are the starting point for powerful marketing funnels. For detailed, step-by-step guides on how to use these triggers to build onboarding sequences, cart abandonment funnels, and other advanced marketing automations, please see this [documentation](https://fluentcrm.com/docs/fluentcart-integration-with-fluentcrm/).![Screenshot of Fluentcrm Automation Trigger](/images/integrations/fluentcrm/automation-trigger.webp)
+These triggers are the starting point for powerful marketing funnels. For detailed, step-by-step guides on how to use these triggers to build onboarding sequences, cart abandonment funnels, and other advanced marketing automations, please see this [documentation](https://fluentcrm.com/docs/fluentcart-integration-with-fluentcrm/).![Screenshot of Fluentcrm Automation Trigger](https://docs.fluentcart.com/images/integrations/fluentcrm/automation-trigger.webp)
 
 ### Use Case Example: Segmenting Customers by Location ​
 
@@ -649,7 +649,7 @@ First, ensure both FluentCart and Fluent Support are installed and active on you
 3. Locate the **Fluent Support** module.
 4. You should see a green **Enabled** status badge. This means FluentCart recognizes Fluent Support, and the basic connection is active. No further action is needed here.
 
-![Screenshot of Fluent Support Integration](/images/integrations/fluentsupport-integration/enabling-the-integration.webp)
+![Screenshot of Fluent Support Integration](https://docs.fluentcart.com/images/integrations/fluentsupport-integration/enabling-the-integration.webp)
 
 ### Step 2: Creating Custom Fields in Fluent Support ​
 
@@ -669,7 +669,7 @@ To get the most out of the integration, you can create special "Custom Fields" i
 
 You can repeat this process to create separate fields for both Products and Orders if needed.
 
-![Screenshot of Creating Custom Fields](/images/integrations/fluentsupport-integration/creating-custom-field.gif)
+![Screenshot of Creating Custom Fields](https://docs.fluentcart.com/images/integrations/fluentsupport-integration/creating-custom-field.gif)
 
 ### Step 3: Using Workflows ​
 
@@ -679,7 +679,7 @@ Now that you have created FluentCart custom fields, you can use them to automate
 2. Click on the **+ Add New Workflow** button.
 3. Give your workflow a name (e.g., "Assign Product X Tickets") and choose **Automatic** as the **Workflow Type**. Click **Continue**.
 
-![Screenshot of Fluent Support Workflows](/images/integrations/fluentsupport-integration/add-new-workflow.webp)
+![Screenshot of Fluent Support Workflows](https://docs.fluentcart.com/images/integrations/fluentsupport-integration/add-new-workflow.webp)
 
 1. **Set Trigger & Conditions:**- Set the **Workflow Trigger** from the dropdown field, like **On Ticket Creation**.
 - Under **Conditions**, click **+ Add Condition**.
@@ -687,7 +687,7 @@ Now that you have created FluentCart custom fields, you can use them to automate
 2. **Set Workflow Actions (Tasks):** Choose what should happen automatically when a ticket matches your conditions from the **Action** dropdown field. For example, select **Assign Agent** and choose the team or agent who specializes in that product.
 3. Set the workflow **Status** to **Published** and click **Update Workflow**.
 
-![Screenshot of Update Workflows](/images/integrations/fluentsupport-integration/update-workflow.webp)
+![Screenshot of Update Workflows](https://docs.fluentcart.com/images/integrations/fluentsupport-integration/update-workflow.webp)
 
 Now, whenever a customer submits a ticket and selects that specific product, the workflow will run automatically!
 
@@ -707,7 +707,7 @@ The Result: A new **Support** tab will now appear in the FluentCart customer das
 
 ). Customers can click this tab to view their existing support tickets and submit new ones without leaving your store's account area.
 
-![Screenshot of Global Settings](/images/integrations/fluentsupport-integration/add-support-link-in-cart.webp)
+![Screenshot of Global Settings](https://docs.fluentcart.com/images/integrations/fluentsupport-integration/add-support-link-in-cart.webp)
 
 ### Step 5: Linking Tickets to Products/Orders (Customer Experience) ​
 
@@ -719,7 +719,7 @@ With the custom fields added to your ticket form (Step 2), customers can easily 
 4. The customer selects the relevant product or order from the dropdown list.
 5. They fill out the rest of the ticket details and click **Create Ticket**.
 
-![Screenshot of Submit a Support Ticket](/images/integrations/fluentsupport-integration/submit-a-support-ticket.webp)
+![Screenshot of Submit a Support Ticket](https://docs.fluentcart.com/images/integrations/fluentsupport-integration/submit-a-support-ticket.webp)
 
 This ensures that when the ticket arrives in your helpdesk, it's already linked to the specific purchase the customer needs help with, providing instant context for your agents.
 
@@ -735,7 +735,7 @@ This feature requires no extra setup and works automatically thanks to the integ
 - License keys (if applicable).
 4. **Benefit:** Your agents get immediate access to the customer's purchase history without needing to ask or switch screens. This allows them to understand the context quickly and provide faster, more accurate support.
 
-![Screenshot of Purchases History](/images/integrations/fluentsupport-integration/purchases-widget.webp)
+![Screenshot of Purchases History](https://docs.fluentcart.com/images/integrations/fluentsupport-integration/purchases-widget.webp)
 
 By following these steps and understanding these features, you can fully leverage the FluentCart-Fluent Support integration to create a highly efficient support system and a seamless experience for your customers.
 
@@ -762,7 +762,7 @@ This section, located at the top of the page, is where you create powerful, stor
 
 INFO
 
-These integration rules apply globally to all your orders. For more targeted rules, you can also set up integrations on a [per-product basis](/guide/product-types-creation/managing-product-integrations).![Integration Overview](/assets/integration-overview.Cs2w-HNL.png)
+These integration rules apply globally to all your orders. For more targeted rules, you can also set up integrations on a [per-product basis](/guide/product-types-creation/managing-product-integrations).![Integration Overview](https://docs.fluentcart.com/assets/integration-overview.Cs2w-HNL.png)
 
 ### Integration Modules ​
 
@@ -777,7 +777,7 @@ The activation process is largely automatic.
 
 To help you find what you need, you can also use the filter tabs (**ALL, CRM, LMS, CORE, MARKETING**) or the search bar to find a specific module.
 
-![Available Integration Modules](/assets/integration-overview-1.E3Nrmpox.png)
+![Available Integration Modules](https://docs.fluentcart.com/assets/integration-overview-1.E3Nrmpox.png)
 
 ### Available Integration Modules ​
 
@@ -845,7 +845,7 @@ Use this method if you want a rule to apply based on events happening anywhere i
 4. A dropdown menu will appear. Choose **LearnDash** from the list.
 5. You will now be taken to the feed configuration screen where you can define the specifics of your global rule (explained in the below section).
 
-![Global Integration](/assets/global-integration-1.BYcbtlNt.png)
+![Global Integration](https://docs.fluentcart.com/assets/global-integration-1.BYcbtlNt.png)
 
 #### Method 2: Creating a Product-Specific Feed (Recommended for Selling Courses) ​
 
@@ -858,7 +858,7 @@ Use this method to link a specific FluentCart product directly to the LearnDash 
 5. A dropdown menu will appear. Choose **LearnDash** from the list.
 6. You will now be taken to the feed configuration screen, specifically for this product, where you can define the enrollment rule (explained in the next section).
 
-![Product Integration](/assets/product-integration-2.BEJXKaES.png)
+![Product Integration](https://docs.fluentcart.com/assets/product-integration-2.BEJXKaES.png)
 
 ### Configuring the Feed Settings ​
 
@@ -881,7 +881,7 @@ Order Paid (Payment / Subscription)
 
 Click **Create LearnDash Feed** (or similar button) to save your rule.
 
-![Global Integration Feed](/assets/integration-feed-3.CbjKwNql.png)
+![Global Integration Feed](https://docs.fluentcart.com/assets/integration-feed-3.CbjKwNql.png)
 
 ### Use Case Example: Selling a Course Bundle ​
 
@@ -939,7 +939,7 @@ Choose this option to create a "catch-all" rule that runs for *any* order or sub
 4. A dropdown menu will open. Select **LifterLMS**.
 5. This will take you to a new screen to set up your global rule (which we cover in the next section).
 
-![Screenshot of LifterLMS Integration](/images/integrations/lifterlms-integration/enabling-liftelms.webp)
+![Screenshot of LifterLMS Integration](https://docs.fluentcart.com/images/integrations/lifterlms-integration/enabling-liftelms.webp)
 
 #### Method 2: Creating a Product-Specific Feed (Recommended) ​
 
@@ -952,7 +952,7 @@ This is the most common and recommended method. Choose this option to create a s
 5. **Select LifterLMS:** A dropdown will appear. Find and click on **LifterLMS**.
 6. This will take you to the feed configuration screen just for this product, where you can set up your specific enrollment rule (covered in the next section).
 
-![Screenshot of LifterLMS Integration Feed](/images/integrations/lifterlms-integration/lifterlms-integration-feed.webp)
+![Screenshot of LifterLMS Integration Feed](https://docs.fluentcart.com/images/integrations/lifterlms-integration/lifterlms-integration-feed.webp)
 
 ---
 
@@ -1031,7 +1031,7 @@ Order Delivered
 
 Click the **Create LifterLMS Feed** button to save your rule.
 
-![Screenshot of Create LifterLMS Feed](/images/integrations/lifterlms-integration/specific-product-integration.webp)
+![Screenshot of Create LifterLMS Feed](https://docs.fluentcart.com/images/integrations/lifterlms-integration/specific-product-integration.webp)
 
 ### Use Case Example: Selling a Course Bundle ​
 
@@ -1102,7 +1102,7 @@ First, you'll need to go to the correct screen in your WordPress dashboard.
 
 On this page, you will see all of your global integration feeds. To get started, click the **Add Integration** button in the top right corner and choose **Webhook** from the dropdown list.
 
-![Add Integration](/images/integrations/webhook/add-integration.webp)
+![Add Integration](https://docs.fluentcart.com/images/integrations/webhook/add-integration.webp)
 
 ### Step 3: Configure the Webhook ​
 
@@ -1137,7 +1137,7 @@ Some of the available triggers include:
 
 This screen contains all the settings required to define what data is sent, where it's sent, and what triggers it.
 
-![Configuring Webhook](/images/integrations/webhook/configuring-webhook.webp)
+![Configuring Webhook](https://docs.fluentcart.com/images/integrations/webhook/configuring-webhook.webp)
 
 #### Step 4: Save and Activate the Webhook ​
 
@@ -1157,7 +1157,7 @@ For each webhook, you can:
 - **Edit:** Click on the webhook's title or an edit icon to change its settings.
 - **Delete:** Use the trash can icon to permanently remove a webhook.
 
-![Configuring Webhook](/images/integrations/webhook/managing-your-webhook.webp)
+![Configuring Webhook](https://docs.fluentcart.com/images/integrations/webhook/managing-your-webhook.webp)
 
 ---
 

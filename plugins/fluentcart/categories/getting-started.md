@@ -81,7 +81,7 @@ This log shows a list of the newest important things that happened in your store
 
 - **Example Activities:** Order Created, Payment Paid, Order Status Updated, Order Refunded, Shipping Status Updated, License Upgrade.
 
-![Screenshot of Dashboard Overview - Getting Started](/images/getting-started/admin-dashboard/dashboard-overview.webp)
+![Screenshot of Dashboard Overview - Getting Started](https://docs.fluentcart.com/images/getting-started/admin-dashboard/dashboard-overview.webp)
 
 ### 6. Recent Orders ​
 
@@ -96,7 +96,7 @@ This widget highlights your current best-sellers, helping you to instantly see w
 
 - Click the **View All** link to navigate to the **Products** section for more details of your products.
 
-![Screenshot of Getting Started](/images/getting-started/admin-dashboard/order-heat-map.webp)
+![Screenshot of Getting Started](https://docs.fluentcart.com/images/getting-started/admin-dashboard/order-heat-map.webp)
 
 ### 8. Order Heat Map ​
 
@@ -248,7 +248,7 @@ The first step of the wizard prompts you to enter basic information about your s
 
 Click **"Continue"** to proceed to the next step.
 
-![Screenshot of Initial Setup Wizard - Store Details](/images/getting-started/initial-setup-wizard/initial-setup-wizard-step1.webp)
+![Screenshot of Initial Setup Wizard - Store Details](https://docs.fluentcart.com/images/getting-started/initial-setup-wizard/initial-setup-wizard-step1.webp)
 
 Where to find later?
 
@@ -263,7 +263,7 @@ You have several options for setting up these pages:
 - **Create Pages (via + icon):** Click the **+ icon** next to a page type. This will automatically create a new WordPress page for that specific function.
 - **Generate All Pages:** Click the **"Generate All Pages"** button at the bottom. This will automatically create all necessary pages (Checkout, Cart, Receipt, Shop, Customer Profile) with their respective FluentCart shortcodes embedded and assign them for you.
 
-![Screenshot of Initial Setup Wizard - Page Setup](/images/getting-started/initial-setup-wizard/initial-setup-wizard-step2.webp)
+![Screenshot of Initial Setup Wizard - Page Setup](https://docs.fluentcart.com/images/getting-started/initial-setup-wizard/initial-setup-wizard-step2.webp)
 
 Important Shortcodes
 
@@ -302,7 +302,7 @@ You have two main options:
 
 Click the **"Save"** button to finalize the wizard setup.
 
-![Screenshot of Initial Setup Wizard - Product Setup](/images/getting-started/initial-setup-wizard/initial-setup-wizard-step3.webp)
+![Screenshot of Initial Setup Wizard - Product Setup](https://docs.fluentcart.com/images/getting-started/initial-setup-wizard/initial-setup-wizard-step3.webp)
 
 ## Completing the Wizard & Next Steps for Your Business ​
 
@@ -355,7 +355,7 @@ If you have purchased FluentCart Pro Addons for advanced features, you will need
 
  file from [FluentCart](https://fluentcart.com/).
 
-![Download Plugin](/assets/download-plugin.eDWNpVT8.png)
+![Download Plugin](https://docs.fluentcart.com/assets/download-plugin.eDWNpVT8.png)
 
 1. Navigate to your WordPress dashboard.
 2. Go to **Plugins > Add New**.
@@ -379,9 +379,9 @@ After installing the Pro Addons, you will need to activate your license key. Thi
 4. Click on the **"License Settings"** tab.
 5. In the "License Key" field, enter the unique license key you received upon purchasing FluentCart Pro Addons from the [site](https://fluentcart.com/account/).
 
-![License Key](/assets/get-license.BOm2Rs3-.png)
+![License Key](https://docs.fluentcart.com/assets/get-license.BOm2Rs3-.png)
 
-1. Click the **"Verify License"** button. ![Screenshot of Licensing Settings Tab](/images/getting-started/install-activation/licensing-1.webp)- If successful, you will see a confirmation message, and your license status will be marked as active.
+1. Click the **"Verify License"** button. ![Screenshot of Licensing Settings Tab](https://docs.fluentcart.com/images/getting-started/install-activation/licensing-1.webp)- If successful, you will see a confirmation message, and your license status will be marked as active.
 - If you encounter an error, please double-check your license key for any typos or ensure your site can connect to the licensing server.
 
 Need a License Key?
