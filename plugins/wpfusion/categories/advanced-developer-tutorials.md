@@ -65,7 +65,6 @@ This applies to:
 
 - - BirdSend
 - Drift
-- HubSpot
 - Klaviyo
 - NationBuilder
 - Salesforce
@@ -118,42 +117,6 @@ Note that in this example you must have registered https://mysite.com/zoho.php a
 ```
 
  parameter in the URL.
-
-#### HubSpot example
-
-To set your own custom HubSpot client ID, secret, and app ID:
-
-```
-function set_custom_hubspot_app( &$crm ) {
-
-	$crm->client_id     = '959bd865-5a24-4a43-a8bf-XXXXXXXXXXXX';
-	$crm->client_secret = '959bd865-5a24-4a43-a8bf-XXXXXXXXXXXX';
-	$crm->app_id        = 123456;
-
-}
-
-add_action( 'wp_fusion_init_crm', 'set_custom_hubspot_app' );
-```
-
-To override the initial OAuth authorization URL on the “Authorize with HubSpot” button:
-
-```
-function set_custom_hubspot_auth_url() {
-
-	$args = array(
-		'client_id'     => wp_fusion()->crm->client_id,
-		'redirect_uri'  => admin_url( 'options-general.php?page=wpf-settings&crm=hubspot' ),
-		'scope'         => 'contacts automation oauth e-commerce crm.lists.read crm.objects.contacts.read crm.objects.contacts.write crm.schemas.contacts.read crm.lists.write crm.objects.companies.read crm.objects.deals.read crm.objects.deals.write crm.schemas.companies.read crm.schemas.deals.read crm.objects.owners.read',
-	);
-
-	$url = add_query_arg( $args, 'https://app.hubspot.com/oauth/authorize' );
-
-	return $url;
-
-}
-
-add_action( 'wpf_hubspot_auth_url', 'set_custom_hubspot_auth_url' );
-```
 
 #### Klaviyo example
 
