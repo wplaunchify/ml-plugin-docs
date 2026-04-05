@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T07:49:23.785Z",
-  "total_plugins": 48,
+  "last_updated": "2026-04-05T07:50:23.447Z",
+  "total_plugins": 49,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -818,6 +818,14 @@
         "reviews",
         "terms-and-conditions"
       ]
+    },
+    {
+      "slug": "customize-my-account-page-for-woocommerce",
+      "name": "Customize My Account Page For Woocommerce",
+      "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/documentation/",
+      "last_scraped": "2026-04-05T07:50:23.447Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
