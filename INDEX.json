@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-05T18:14:35.898Z",
+  "last_updated": "2026-04-05T18:14:50.129Z",
   "total_plugins": 89,
   "plugins": [
     {
@@ -106,7 +106,7 @@
       "slug": "block-specific-spam-woo-orders",
       "name": "Block Specific Spam Woo Orders",
       "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
-      "last_scraped": "2026-04-05T18:11:15.800Z",
+      "last_scraped": "2026-04-05T18:11:15.799Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -753,7 +753,7 @@
       "slug": "menu-image",
       "name": "Menu Image",
       "documentation_url": "https://wordpress.org/plugins/menu-image/",
-      "last_scraped": "2026-04-05T18:14:35.898Z",
+      "last_scraped": "2026-04-05T18:14:35.897Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -925,6 +925,14 @@
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/documentation/",
       "last_scraped": "2026-04-05T10:14:35.650Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "woocommerce-stripe-gateway",
+      "name": "WooCommerce Stripe Gateway",
+      "documentation_url": "https://woocommerce.com/document/documentation/",
+      "last_scraped": "2026-04-05T18:12:03.514Z",
       "page_count": 0,
       "categories": []
     },
@@ -1237,7 +1245,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-04-05T07:49:23.784Z",
+      "last_scraped": "2026-04-05T18:14:48.915Z",
       "page_count": 0,
       "categories": []
     },
@@ -1281,14 +1289,6 @@
         "webhooks",
         "webhooks-zapier"
       ]
-    },
-    {
-      "slug": "woocommerce-stripe-gateway",
-      "name": "WooCommerce Stripe Gateway",
-      "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-04-05T18:12:03.515Z",
-      "page_count": 0,
-      "categories": []
     }
   ]
 }
