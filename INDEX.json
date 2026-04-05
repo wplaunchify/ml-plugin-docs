@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T21:09:22.493Z",
-  "total_plugins": 99,
+  "last_updated": "2026-04-05T22:04:56.269Z",
+  "total_plugins": 100,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1384,6 +1384,14 @@
         "what-is-an-initiator",
         "wrong-event-time"
       ]
+    },
+    {
+      "slug": "wp-all-import-user-import-add-on-pro",
+      "name": "WP All Import - User Import Add-On Pro",
+      "documentation_url": "https://www.wpallimport.com/documentation/",
+      "last_scraped": "2026-04-05T22:04:56.269Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
