@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T08:13:33.698Z",
-  "total_plugins": 53,
+  "last_updated": "2026-04-05T08:14:40.777Z",
+  "total_plugins": 54,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -858,6 +858,14 @@
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
       "last_scraped": "2026-04-05T08:12:01.006Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "independent-analytics-pro",
+      "name": "Independent Analytics Pro",
+      "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
+      "last_scraped": "2026-04-05T08:14:40.777Z",
       "page_count": 0,
       "categories": []
     }
