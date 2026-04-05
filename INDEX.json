@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T16:14:14.421Z",
-  "total_plugins": 80,
+  "last_updated": "2026-04-05T16:15:14.869Z",
+  "total_plugins": 81,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1182,6 +1182,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "starter-templates-by-kadence-wp",
+      "name": "Starter Templates by Kadence WP",
+      "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
+      "last_scraped": "2026-04-05T16:15:14.869Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
