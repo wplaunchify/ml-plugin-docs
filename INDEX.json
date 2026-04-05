@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T04:52:36.949Z",
-  "total_plugins": 38,
+  "last_updated": "2026-04-05T04:54:22.186Z",
+  "total_plugins": 39,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -675,6 +675,14 @@
       "name": "Fluent Community Manager",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
       "last_scraped": "2026-04-05T04:52:36.949Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "learndash-lms",
+      "name": "LearnDash LMS",
+      "documentation_url": "https://www.learndash.com/support/documentation/",
+      "last_scraped": "2026-04-05T04:54:22.186Z",
       "page_count": 0,
       "categories": []
     }
