@@ -1,0 +1,322 @@
+{
+  "plugin_slug": "redirection",
+  "plugin_name": "Redirection",
+  "documentation_url": "https://redirection.me/support/",
+  "last_scraped": "2026-04-05T15:09:38.157Z",
+  "total_pages": 24,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Beta Release",
+      "slug": "beta-release",
+      "url": "https://redirection.me/support/beta-release/",
+      "file": "categories/beta-release.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Beta releases and old versions",
+          "url": "https://redirection.me/support/beta-release/"
+        }
+      ]
+    },
+    {
+      "title": "Create Redirects",
+      "slug": "create-redirects",
+      "url": "https://redirection.me/support/create-redirects/",
+      "file": "categories/create-redirects.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Create & Manage Redirects",
+          "url": "https://redirection.me/support/create-redirects/"
+        }
+      ]
+    },
+    {
+      "title": "Disable Redirection",
+      "slug": "disable-redirection",
+      "url": "https://redirection.me/support/disable-redirection/",
+      "file": "categories/disable-redirection.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Disable Redirection",
+          "url": "https://redirection.me/support/disable-redirection/"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic Urls",
+      "slug": "dynamic-urls",
+      "url": "https://redirection.me/support/dynamic-urls/",
+      "file": "categories/dynamic-urls.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Dynamic URLs",
+          "url": "https://redirection.me/support/dynamic-urls//"
+        }
+      ]
+    },
+    {
+      "title": "Faq",
+      "slug": "faq",
+      "url": "https://redirection.me/support/faq/",
+      "file": "categories/faq.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Frequently Asked Questions",
+          "url": "https://redirection.me/support/faq/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://redirection.me/support/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started",
+          "url": "https://redirection.me/support/getting-started/"
+        }
+      ]
+    },
+    {
+      "title": "Groups",
+      "slug": "groups",
+      "url": "https://redirection.me/support/groups/",
+      "file": "categories/groups.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Groups",
+          "url": "https://redirection.me/support/groups/"
+        }
+      ]
+    },
+    {
+      "title": "Import Export Redirects",
+      "slug": "import-export-redirects",
+      "url": "https://redirection.me/support/import-export-redirects/",
+      "file": "categories/import-export-redirects.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Import and Export",
+          "url": "https://redirection.me/support/import-export-redirects/"
+        }
+      ]
+    },
+    {
+      "title": "Installation",
+      "slug": "installation",
+      "url": "https://redirection.me/support/installation/",
+      "file": "categories/installation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Installation",
+          "url": "https://redirection.me/support/installation/"
+        }
+      ]
+    },
+    {
+      "title": "Logs",
+      "slug": "logs",
+      "url": "https://redirection.me/support/logs/",
+      "file": "categories/logs.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Logs",
+          "url": "https://redirection.me/support/logs/"
+        }
+      ]
+    },
+    {
+      "title": "Matching A Url",
+      "slug": "matching-a-url",
+      "url": "https://redirection.me/support/matching-a-url/",
+      "file": "categories/matching-a-url.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Matching a URL",
+          "url": "https://redirection.me/support/matching-a-url/"
+        }
+      ]
+    },
+    {
+      "title": "Matching Redirects",
+      "slug": "matching-redirects",
+      "url": "https://redirection.me/support/matching-redirects/",
+      "file": "categories/matching-redirects.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Matching Redirects",
+          "url": "https://redirection.me/support/matching-redirects/"
+        }
+      ]
+    },
+    {
+      "title": "Options",
+      "slug": "options",
+      "url": "https://redirection.me/support/options/",
+      "file": "categories/options.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Options",
+          "url": "https://redirection.me/support/options/"
+        }
+      ]
+    },
+    {
+      "title": "Privacy Gdpr",
+      "slug": "privacy-gdpr",
+      "url": "https://redirection.me/support/privacy-gdpr/",
+      "file": "categories/privacy-gdpr.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Privacy & GDPR",
+          "url": "https://redirection.me/support/privacy-gdpr/"
+        }
+      ]
+    },
+    {
+      "title": "Problems",
+      "slug": "problems",
+      "url": "https://redirection.me/support/problems/",
+      "file": "categories/problems.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Common Problems",
+          "url": "https://redirection.me/support/problems/"
+        }
+      ]
+    },
+    {
+      "title": "Redirect Actions",
+      "slug": "redirect-actions",
+      "url": "https://redirection.me/support/redirect-actions/",
+      "file": "categories/redirect-actions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Redirect Actions",
+          "url": "https://redirection.me/support/redirect-actions/"
+        }
+      ]
+    },
+    {
+      "title": "Redirect Regular Expressions",
+      "slug": "redirect-regular-expressions",
+      "url": "https://redirection.me/support/redirect-regular-expressions/",
+      "file": "categories/redirect-regular-expressions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Redirect Regular Expressions",
+          "url": "https://redirection.me/support/redirect-regular-expressions/"
+        }
+      ]
+    },
+    {
+      "title": "Redirecting Another Site",
+      "slug": "redirecting-another-site",
+      "url": "https://redirection.me/support/redirecting-another-site/",
+      "file": "categories/redirecting-another-site.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Redirecting Another Site",
+          "url": "https://redirection.me/support/redirecting-another-site/"
+        }
+      ]
+    },
+    {
+      "title": "Reporting Bugs",
+      "slug": "reporting-bugs",
+      "url": "https://redirection.me/support/reporting-bugs/",
+      "file": "categories/reporting-bugs.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Reporting Bugs",
+          "url": "https://redirection.me/support/reporting-bugs/"
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "slug": "security",
+      "url": "https://redirection.me/support/security/",
+      "file": "categories/security.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Security",
+          "url": "https://redirection.me/support/security/"
+        }
+      ]
+    },
+    {
+      "title": "Site Options",
+      "slug": "site-options",
+      "url": "https://redirection.me/support/site-options/",
+      "file": "categories/site-options.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Site Options",
+          "url": "https://redirection.me/support/site-options/"
+        }
+      ]
+    },
+    {
+      "title": "Tracking 404 Errors",
+      "slug": "tracking-404-errors",
+      "url": "https://redirection.me/support/tracking-404-errors/",
+      "file": "categories/tracking-404-errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Tracking 404 errors",
+          "url": "https://redirection.me/support/tracking-404-errors"
+        }
+      ]
+    },
+    {
+      "title": "What Is A Redirect",
+      "slug": "what-is-a-redirect",
+      "url": "https://redirection.me/support/what-is-a-redirect/",
+      "file": "categories/what-is-a-redirect.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What is a redirect?",
+          "url": "https://redirection.me/support/what-is-a-redirect/"
+        }
+      ]
+    },
+    {
+      "title": "What Support Is Provided",
+      "slug": "what-support-is-provided",
+      "url": "https://redirection.me/support/what-support-is-provided/",
+      "file": "categories/what-support-is-provided.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What support is provided?",
+          "url": "https://redirection.me/support/what-support-is-provided/"
+        }
+      ]
+    }
+  ]
+}

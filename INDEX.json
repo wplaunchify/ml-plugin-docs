@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T15:08:58.302Z",
-  "total_plugins": 72,
+  "last_updated": "2026-04-05T15:09:38.160Z",
+  "total_plugins": 73,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -1055,6 +1055,39 @@
       "page_count": 1,
       "categories": [
         "advanced"
+      ]
+    },
+    {
+      "slug": "redirection",
+      "name": "Redirection",
+      "documentation_url": "https://redirection.me/support/",
+      "last_scraped": "2026-04-05T15:09:38.160Z",
+      "page_count": 24,
+      "categories": [
+        "beta-release",
+        "create-redirects",
+        "disable-redirection",
+        "dynamic-urls",
+        "faq",
+        "getting-started",
+        "groups",
+        "import-export-redirects",
+        "installation",
+        "logs",
+        "matching-a-url",
+        "matching-redirects",
+        "options",
+        "privacy-gdpr",
+        "problems",
+        "redirect-actions",
+        "redirect-regular-expressions",
+        "redirecting-another-site",
+        "reporting-bugs",
+        "security",
+        "site-options",
+        "tracking-404-errors",
+        "what-is-a-redirect",
+        "what-support-is-provided"
       ]
     }
   ]
