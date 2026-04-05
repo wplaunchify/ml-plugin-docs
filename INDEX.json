@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T16:15:14.869Z",
-  "total_plugins": 81,
+  "last_updated": "2026-04-05T17:07:47.128Z",
+  "total_plugins": 82,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1190,6 +1190,16 @@
       "last_scraped": "2026-04-05T16:15:14.869Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "manage-notification-e-mails",
+      "name": "Manage Notification E-mails",
+      "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
+      "last_scraped": "2026-04-05T17:07:47.128Z",
+      "page_count": 1,
+      "categories": [
+        "advanced"
+      ]
     }
   ]
 }
