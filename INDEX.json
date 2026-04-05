@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T01:32:38.888Z",
-  "total_plugins": 29,
+  "last_updated": "2026-04-05T01:34:18.267Z",
+  "total_plugins": 30,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -542,6 +542,16 @@
       "last_scraped": "2026-04-05T01:32:38.888Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "preview-e-mails-for-woocommerce",
+      "name": "Preview E-mails for WooCommerce",
+      "documentation_url": "https://wordpress.org/plugins/woo-preview-emails/",
+      "last_scraped": "2026-04-05T01:34:18.267Z",
+      "page_count": 1,
+      "categories": [
+        "advanced"
+      ]
     }
   ]
 }
