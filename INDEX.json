@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T20:03:24.905Z",
-  "total_plugins": 93,
+  "last_updated": "2026-04-05T20:03:56.500Z",
+  "total_plugins": 94,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1319,6 +1319,14 @@
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
       "last_scraped": "2026-04-05T20:03:24.905Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "kadence-shop-kit",
+      "name": "Kadence Shop Kit",
+      "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
+      "last_scraped": "2026-04-05T20:03:56.500Z",
       "page_count": 0,
       "categories": []
     }
