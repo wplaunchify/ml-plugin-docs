@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T04:47:12.069Z",
-  "total_plugins": 36,
+  "last_updated": "2026-04-05T04:52:09.868Z",
+  "total_plugins": 37,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -636,6 +636,38 @@
       "page_count": 198,
       "categories": [
         "uncategorized"
+      ]
+    },
+    {
+      "slug": "fooevents-bookings",
+      "name": "FooEvents Bookings",
+      "documentation_url": "https://www.fooevents.com",
+      "last_scraped": "2026-04-05T04:52:09.868Z",
+      "page_count": 57,
+      "categories": [
+        "about-us",
+        "apps",
+        "blog",
+        "bundles",
+        "cart",
+        "cs",
+        "de",
+        "disclaimer",
+        "el",
+        "es",
+        "features",
+        "fooevents-ultimate-event-checklist",
+        "fr",
+        "it",
+        "my-account",
+        "nl",
+        "pl",
+        "pricing",
+        "privacy-statement-us",
+        "products",
+        "pt",
+        "reviews",
+        "terms-and-conditions"
       ]
     }
   ]
