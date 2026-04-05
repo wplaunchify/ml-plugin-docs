@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T20:13:28.201Z",
-  "total_plugins": 97,
+  "last_updated": "2026-04-05T21:08:47.870Z",
+  "total_plugins": 98,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1355,6 +1355,16 @@
       "last_scraped": "2026-04-05T20:13:28.201Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "wp-all-export-user-export-add-on-pro",
+      "name": "WP All Export - User Export Add-On Pro",
+      "documentation_url": "https://www.wpallimport.com/documentation/",
+      "last_scraped": "2026-04-05T21:08:47.870Z",
+      "page_count": 198,
+      "categories": [
+        "uncategorized"
+      ]
     }
   ]
 }
