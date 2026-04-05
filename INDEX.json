@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T09:17:42.973Z",
-  "total_plugins": 55,
+  "last_updated": "2026-04-05T09:19:50.638Z",
+  "total_plugins": 56,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -878,6 +878,14 @@
       "categories": [
         "advanced"
       ]
+    },
+    {
+      "slug": "product-filters-for-woocommerce",
+      "name": "Product Filters for WooCommerce",
+      "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
+      "last_scraped": "2026-04-05T09:19:50.638Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
