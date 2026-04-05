@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T18:11:15.800Z",
-  "total_plugins": 88,
+  "last_updated": "2026-04-05T18:12:03.515Z",
+  "total_plugins": 89,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1281,6 +1281,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "woocommerce-stripe-gateway",
+      "name": "WooCommerce Stripe Gateway",
+      "documentation_url": "https://woocommerce.com/document/documentation/",
+      "last_scraped": "2026-04-05T18:12:03.515Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
