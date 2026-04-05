@@ -20,6 +20,27 @@
 
 ## Changelog
 
+#### 6.2.0 (Date: April 01, 2026)
+
+- Upgraded internal framework for better performance and PHP 8.4 support
+- Improved Stripe payment confirmation security
+- Improved data export security
+- Improved database query performance for reports
+- Added filter hook for conversational form extra inputs
+- Fixed textarea line breaks not displaying correctly in entries
+- Improved overall plugin security and stability
+- Dev: [Upgrade Guide for developers](https://developers.fluentforms.com/upgrade-guide/6.2.0/)
+
+#### Pro 6.2.0 (Date: March 31, 2026)
+
+- Fixed Square payment by migrating from deprecated CreateCheckout to Payment Links API
+- Fixed Square order ID validation to prevent tampering on payment callback
+- Updated Square payments to the latest Payment Links API
+- Fixed Authorize.Net not sending full billing address with payments
+- Fixed draft not clearing after submission via Save & Resume link
+- Improved payment security across all gateways
+- Added support for core update of fluentform core version
+
 #### 6.1.21 (Date: March 17, 2026)
 
 - Added subscription end date to auto-calculate bill_times for subscrition payments

@@ -294,8 +294,6 @@ When clicking on **Focus**, you can add style to the input fields and text regio
 
 **Placeholder Styling:** Choose the color of the input field placeholders. Set the typography as indicated in the screenshot, which includes **Font Size, Font Weights, Text Decoration, Line Height, and Letter Spacing**, among other things.
 
-![](https://fluentforms.com/wp-content/uploads/2025/04/Placeholder.webp)
-
 **Radio & Checkbox Style:**When you enable **Smart UI**, you’ll see three styling options for the radio and checkbox fields. When the radio or checkbox is checked, define the border, item, and background colours.
 
 You can also style your form with **Custom Border** by checking the **Use Custom Border Style**.
