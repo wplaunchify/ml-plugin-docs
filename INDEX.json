@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T12:16:26.002Z",
-  "total_plugins": 64,
+  "last_updated": "2026-04-05T12:17:02.016Z",
+  "total_plugins": 65,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -984,6 +984,14 @@
       "categories": [
         "uncategorized"
       ]
+    },
+    {
+      "slug": "fluent-forms-signature-addon",
+      "name": "Fluent Forms Signature Addon",
+      "documentation_url": "https://fluentforms.com/docs/documentation/",
+      "last_scraped": "2026-04-05T12:17:02.016Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
