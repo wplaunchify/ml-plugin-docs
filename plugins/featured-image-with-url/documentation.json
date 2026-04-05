@@ -1,0 +1,24 @@
+{
+  "plugin_slug": "featured-image-with-url",
+  "plugin_name": "Featured Image with URL",
+  "last_scraped": "2026-04-05T13:23:07.695Z",
+  "total_pages": 1,
+  "failed_urls": [],
+  "pages": [
+    {
+      "title": "Featured Image with URL",
+      "url": "https://wordpress.org/plugins/featured-image-with-url/advanced/",
+      "category": "Advanced",
+      "content": "## Statistics\n\n\t\n#### Active versions\n\n\t\n\n\t\n#### Downloads Per Day\n\n\t\n\n\t\n#### Downloads history\n\n\t\n\n\t\n---\n\n## Advanced Options\n\nThis section is intended for advanced users and developers only. They are presented here for testing and educational purposes.\n\n#### Previous Versions\n\nPrevious versions of plugins may not be secure or stable. They are not recommended for use on production websites.Please select a specific version to download.\n\nDevelopment Version1.0.31.0.21.0.11.0.0 [Download](https://downloads.wordpress.org/plugin/featured-image-with-url.zip)",
+      "headings": [
+        "Statistics",
+        "Active versions",
+        "Downloads Per Day",
+        "Downloads history",
+        "Advanced Options",
+        "Previous Versions"
+      ],
+      "code_blocks": []
+    }
+  ]
+}

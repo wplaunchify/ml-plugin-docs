@@ -1,0 +1,23 @@
+{
+  "plugin_slug": "featured-image-with-url",
+  "plugin_name": "Featured Image with URL",
+  "documentation_url": "https://wordpress.org/plugins/featured-image-with-url/",
+  "last_scraped": "2026-04-05T13:23:07.696Z",
+  "total_pages": 1,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Advanced",
+      "slug": "advanced",
+      "url": "https://wordpress.org/plugins/featured-image-with-url/advanced/",
+      "file": "categories/advanced.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Featured Image with URL",
+          "url": "https://wordpress.org/plugins/featured-image-with-url/advanced/"
+        }
+      ]
+    }
+  ]
+}
