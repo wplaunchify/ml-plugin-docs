@@ -1,0 +1,811 @@
+{
+  "plugin_slug": "wp-all-export-pro",
+  "plugin_name": "WP All Export Pro",
+  "documentation_url": "https://www.wpallimport.com/documentation/",
+  "last_scraped": "2026-04-05T04:04:47.602Z",
+  "total_pages": 198,
+  "failed_urls_count": 38,
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://www.wpallimport.com/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 198,
+      "pages": [
+        {
+          "title": "InstaWP: All-in-One WordPress Cloud Platform",
+          "url": "https://www.wpallimport.com/documentation/instawp/"
+        },
+        {
+          "title": "How to Preview An Import Before Running It",
+          "url": "https://www.wpallimport.com/documentation/how-to-preview-an-import/"
+        },
+        {
+          "title": "How to Import Google Sheets to WordPress",
+          "url": "https://www.wpallimport.com/documentation/google-sheets-wordpress/"
+        },
+        {
+          "title": "How to Import Listings to WP Rentals",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-listings-to-wp-rentals/"
+        },
+        {
+          "title": "How to Import Meta Box Map Fields",
+          "url": "https://www.wpallimport.com/documentation/import-meta-box-map-fields/"
+        },
+        {
+          "title": "How to Import JetEngine Map Fields",
+          "url": "https://www.wpallimport.com/documentation/import-jetengine-map-fields/"
+        },
+        {
+          "title": "The Structure of an Import Add-On (Legacy Structure)",
+          "url": "https://www.wpallimport.com/documentation/structure-legacy/"
+        },
+        {
+          "title": "How to Use Link Cloaking Add-On",
+          "url": "https://www.wpallimport.com/documentation/how-to-use-link-cloaking-add-on/"
+        },
+        {
+          "title": "WPML Export and Import: Importing Multilingual Content",
+          "url": "https://www.wpallimport.com/documentation/wpml-export-and-import-importing-multilingual-content/"
+        },
+        {
+          "title": "How to Import Meta Box Cloneable & Repeater Fields",
+          "url": "https://www.wpallimport.com/documentation/import-meta-box-cloneable-repeater-fields/"
+        },
+        {
+          "title": "How to Export Meta Box Cloneable & Repeater Fields",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-meta-box-cloneable-fields/"
+        },
+        {
+          "title": "How to Import Meta Box Upload Fields",
+          "url": "https://www.wpallimport.com/documentation/import-meta-box-upload-fields/"
+        },
+        {
+          "title": "How to Export Meta Box Upload Fields",
+          "url": "https://www.wpallimport.com/documentation/export-meta-box-upload-fields/"
+        },
+        {
+          "title": "How to Import Meta Box WordPress Fields",
+          "url": "https://www.wpallimport.com/documentation/import-meta-box-wordpress-fields/"
+        },
+        {
+          "title": "How to Export Meta Box WordPress Fields",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-meta-box-wordpress-fields/"
+        },
+        {
+          "title": "How to Export Meta Box HTML5 Fields",
+          "url": "https://www.wpallimport.com/documentation/export-meta-box-html5-fields/"
+        },
+        {
+          "title": "How to Import Meta Box HTML5 Fields",
+          "url": "https://www.wpallimport.com/documentation/import-meta-box-html5-fields/"
+        },
+        {
+          "title": "How to Export Meta Box Advanced Fields",
+          "url": "https://www.wpallimport.com/documentation/export-meta-box-advanced-fields/"
+        },
+        {
+          "title": "How to Import Meta Box Advanced Fields",
+          "url": "https://www.wpallimport.com/documentation/import-meta-box-advanced-fields/"
+        },
+        {
+          "title": "How to Import Meta Box Basic Fields",
+          "url": "https://www.wpallimport.com/documentation/import-meta-box-basic-fields/"
+        },
+        {
+          "title": "How to Export Meta Box Custom Fields",
+          "url": "https://www.wpallimport.com/documentation/export-meta-box-custom-fields/"
+        },
+        {
+          "title": "How to Import Meta Box Custom Fields",
+          "url": "https://www.wpallimport.com/documentation/import-meta-box-custom-fields/"
+        },
+        {
+          "title": "How to Export Meta Box Basic Fields",
+          "url": "https://www.wpallimport.com/documentation/export-meta-box-basic-fields/"
+        },
+        {
+          "title": "How to Export JetEngine Text Fields",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-jetengine-text-fields/"
+        },
+        {
+          "title": "How to Export JetEngine Repeater Fields",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-jetengine-repeater-fields/"
+        },
+        {
+          "title": "How to Export JetEngine Choice Fields",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-jetengine-choice-fields/"
+        },
+        {
+          "title": "How to Export JetEngine Content Fields",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-jetengine-content-fields/"
+        },
+        {
+          "title": "How to Export JetEngine Fields",
+          "url": "https://www.wpallimport.com/documentation/export-jetengine-fields/"
+        },
+        {
+          "title": "How to Import JetEngine Repeater Fields",
+          "url": "https://www.wpallimport.com/documentation/import-jetengine-repeater-fields/"
+        },
+        {
+          "title": "How to Import JetEngine Content Fields",
+          "url": "https://www.wpallimport.com/documentation/import-jetengine-content-fields/"
+        },
+        {
+          "title": "How to Import JetEngine Choice Fields",
+          "url": "https://www.wpallimport.com/documentation/import-jetengine-choice-fields/"
+        },
+        {
+          "title": "How to Import JetEngine Picker Fields",
+          "url": "https://www.wpallimport.com/documentation/import-jetengine-picker-fields/"
+        },
+        {
+          "title": "How to Import JetEngine Text Fields",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-jetengine-text-fields/"
+        },
+        {
+          "title": "How to Import JetEngine Fields",
+          "url": "https://www.wpallimport.com/documentation/import-jetengine-fields/"
+        },
+        {
+          "title": "How Do I Import Custom Fields to WooCommerce Products?",
+          "url": "https://www.wpallimport.com/documentation/import-custom-fields-woocommerce-products/"
+        },
+        {
+          "title": "How Do I Export New WooCommerce Orders Every Week?",
+          "url": "https://www.wpallimport.com/documentation/export-new-woocommerce-orders-every-week/"
+        },
+        {
+          "title": "How Do I Retain Old User IDs During WordPress User Imports?",
+          "url": "https://www.wpallimport.com/documentation/wordpress-user-imports-old-ids/"
+        },
+        {
+          "title": "How Do I Import Multiple Images for a WooCommerce Variable Product?",
+          "url": "https://www.wpallimport.com/documentation/import-woocommerce-variable-product-images/"
+        },
+        {
+          "title": "How Do I Export WooCommerce Orders One by One?",
+          "url": "https://www.wpallimport.com/documentation/export-woocommerce-orders-one-by-one/"
+        },
+        {
+          "title": "Advanced: Support Your Custom ACF Field Types",
+          "url": "https://www.wpallimport.com/documentation/support-custom-acf-field-types/"
+        },
+        {
+          "title": "Filtering Import Data with XPath",
+          "url": "https://www.wpallimport.com/documentation/filtering-with-xpath/"
+        },
+        {
+          "title": "Define Unique Identifier Correctly",
+          "url": "https://www.wpallimport.com/documentation/define-unique-identifier-correctly/"
+        },
+        {
+          "title": "Filter Exported WordPress Data",
+          "url": "https://www.wpallimport.com/documentation/filter-exported-wordpress-data/"
+        },
+        {
+          "title": "Is Your Import File Valid for WP All Import?",
+          "url": "https://www.wpallimport.com/documentation/is-your-import-file-valid-for-wp-all-import/"
+        },
+        {
+          "title": "Import From External Source or Use Existing File",
+          "url": "https://www.wpallimport.com/documentation/download-a-file-or-use-existing-file/"
+        },
+        {
+          "title": "Skip Records If Their Data Has Not Changed",
+          "url": "https://www.wpallimport.com/documentation/skip-records-if-their-data-has-not-changed/"
+        },
+        {
+          "title": "\"History file not found\" Error Explained",
+          "url": "https://www.wpallimport.com/documentation/history-file-not-found-error/"
+        },
+        {
+          "title": "Google Geocoding Help Sheet",
+          "url": "https://www.wpallimport.com/documentation/google-geocoding-help-sheet/"
+        },
+        {
+          "title": "How to Import WordPress Data with WP All Import",
+          "url": "https://www.wpallimport.com/documentation/wp-all-import-in-depth-overview/"
+        },
+        {
+          "title": "Password Protected Files",
+          "url": "https://www.wpallimport.com/documentation/password-protected-files/"
+        },
+        {
+          "title": "WooCommerce Update Product Prices",
+          "url": "https://www.wpallimport.com/documentation/woocommerce-update-product-price/"
+        },
+        {
+          "title": "Syncing Stock Levels",
+          "url": "https://www.wpallimport.com/documentation/syncing-stock/"
+        },
+        {
+          "title": "Repeatable Groups",
+          "url": "https://www.wpallimport.com/documentation/repeatable-groups/"
+        },
+        {
+          "title": "Taxonomy Meta & Images",
+          "url": "https://www.wpallimport.com/documentation/import-taxonomy-meta/"
+        },
+        {
+          "title": "How to Import to ACF Repeater Fields",
+          "url": "https://www.wpallimport.com/documentation/import-acf-repeater/"
+        },
+        {
+          "title": "Speed Optimizations for WP All Import",
+          "url": "https://www.wpallimport.com/documentation/speed-optimizations/"
+        },
+        {
+          "title": "How to Delete Records",
+          "url": "https://www.wpallimport.com/documentation/how-to-delete-records/"
+        },
+        {
+          "title": "How to Map Custom Fields",
+          "url": "https://www.wpallimport.com/documentation/mapping-fields/"
+        },
+        {
+          "title": "Slow Imports",
+          "url": "https://www.wpallimport.com/documentation/slow-imports/"
+        },
+        {
+          "title": "Custom Fields Overview",
+          "url": "https://www.wpallimport.com/documentation/theme-plugin-fields/"
+        },
+        {
+          "title": "Recurring Imports Overview",
+          "url": "https://www.wpallimport.com/documentation/update-import/"
+        },
+        {
+          "title": "Scheduling Imports Using Cron Jobs",
+          "url": "https://www.wpallimport.com/documentation/cron/"
+        },
+        {
+          "title": "How Do I Bulk Edit WooCommerce Simple Products into Variable Products?",
+          "url": "https://www.wpallimport.com/documentation/how-do-i-bulk-edit-woocommerce-simple-products-into-variable-products/"
+        },
+        {
+          "title": "Image Options",
+          "url": "https://www.wpallimport.com/documentation/image-options/"
+        },
+        {
+          "title": "Image Metadata",
+          "url": "https://www.wpallimport.com/documentation/image-metadata/"
+        },
+        {
+          "title": "Importing Images From the Media Library",
+          "url": "https://www.wpallimport.com/documentation/import-images-from-media-library/"
+        },
+        {
+          "title": "Variable Number Of Images Per Post",
+          "url": "https://www.wpallimport.com/documentation/variable-number-of-images-per-post/"
+        },
+        {
+          "title": "How to Import Images into WordPress",
+          "url": "https://www.wpallimport.com/documentation/images-overview/"
+        },
+        {
+          "title": "Importing Images From Your Server",
+          "url": "https://www.wpallimport.com/documentation/importing-images-from-your-server/"
+        },
+        {
+          "title": "Giving Untrusted Users Access to WP All Import",
+          "url": "https://www.wpallimport.com/documentation/giving-untrusted-users-access-to-wp-all-import/"
+        },
+        {
+          "title": "How to Bulk Edit WordPress Posts",
+          "url": "https://www.wpallimport.com/documentation/how-to-bulk-edit-wordpress-posts/"
+        },
+        {
+          "title": "How Do I Bulk Edit Image Metadata?",
+          "url": "https://www.wpallimport.com/documentation/how-do-i-bulk-edit-image-metadata/"
+        },
+        {
+          "title": "How Do I Bulk Upload Variable Products in WooCommerce?",
+          "url": "https://www.wpallimport.com/documentation/how-do-i-bulk-upload-variable-products-in-woocommerce/"
+        },
+        {
+          "title": "How Do I Bulk Edit Product Variations in WooCommerce?",
+          "url": "https://www.wpallimport.com/documentation/how-do-i-bulk-edit-product-variations-in-woocommerce/"
+        },
+        {
+          "title": "WordPress Export Settings Explained",
+          "url": "https://www.wpallimport.com/documentation/wordpress-export-settings/"
+        },
+        {
+          "title": "How Do I Get a List of Product Attributes from WooCommerce?",
+          "url": "https://www.wpallimport.com/documentation/how-do-i-get-a-list-of-product-attributes-from-woocommerce/"
+        },
+        {
+          "title": "How to Export WordPress Comments",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-wordpress-comments/"
+        },
+        {
+          "title": "How Do I Import Product Attributes in WooCommerce?",
+          "url": "https://www.wpallimport.com/documentation/how-do-i-import-product-attributes-in-woocommerce/"
+        },
+        {
+          "title": "How to Export WooCommerce Data to CSV, Excel, XML, or Google Sheets",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-woocommerce-to-csv-or-xml/"
+        },
+        {
+          "title": "How to Import WordPress Comments",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-wordpress-comments/"
+        },
+        {
+          "title": "How Do I Export Product Tags from WooCommerce?",
+          "url": "https://www.wpallimport.com/documentation/how-do-i-export-product-tags-from-woocommerce/"
+        },
+        {
+          "title": "How Do I Automatically Import Products into WooCommerce?",
+          "url": "https://www.wpallimport.com/documentation/how-do-i-automatically-import-products-into-woocommerce/"
+        },
+        {
+          "title": "How to Import WooCommerce Data from CSV, Excel, XML, and Google Sheets",
+          "url": "https://www.wpallimport.com/documentation/import-woocommerce-data-from-csv-excel-xml/"
+        },
+        {
+          "title": "How to Import WooCommerce Coupons",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-woocommerce-coupons/"
+        },
+        {
+          "title": "How Do I Export Product Categories in WooCommerce?",
+          "url": "https://www.wpallimport.com/documentation/how-do-i-export-product-categories-in-woocommerce/"
+        },
+        {
+          "title": "How to Export WooCommerce Coupons",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-woocommerce-coupons/"
+        },
+        {
+          "title": "Import WooCommerce Products with Images",
+          "url": "https://www.wpallimport.com/documentation/import-woocommerce-products-with-images/"
+        },
+        {
+          "title": "How to Send Exported WordPress Data to Zapier",
+          "url": "https://www.wpallimport.com/documentation/how-to-send-exported-wordpress-data-to-zapier/"
+        },
+        {
+          "title": "Integrate Zapier with WooCommerce for Real-Time Exports",
+          "url": "https://www.wpallimport.com/documentation/integrate-zapier-with-woocommerce-for-real-time-exports/"
+        },
+        {
+          "title": "Export WooCommerce Products with Images",
+          "url": "https://www.wpallimport.com/documentation/export-woocommerce-products-with-images/"
+        },
+        {
+          "title": "How to Export WooCommerce Reviews",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-woocommerce-reviews/"
+        },
+        {
+          "title": "How to Import Reviews to WooCommerce",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-reviews-to-woocommerce/"
+        },
+        {
+          "title": "How to Export JetEngine Picker Fields",
+          "url": "https://www.wpallimport.com/documentation/export-jetengine-picker-fields/"
+        },
+        {
+          "title": "How to Export WordPress Pages",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-wordpress-pages/"
+        },
+        {
+          "title": "Terminated Imports & Exports",
+          "url": "https://www.wpallimport.com/documentation/terminated-imports-exports/"
+        },
+        {
+          "title": "How to Import WordPress Posts with Images",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-wordpress-posts-with-images/"
+        },
+        {
+          "title": "How to Import Gutenberg Blocks",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-gutenberg-blocks/"
+        },
+        {
+          "title": "How to Export WooCommerce to the Google Merchant Center",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-woocommerce-to-google-merchant-center/"
+        },
+        {
+          "title": "How to Import WordPress Posts",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-wordpress-posts/"
+        },
+        {
+          "title": "How to Import WooCommerce Orders",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-woocommerce-orders/"
+        },
+        {
+          "title": "Import Types Available in WP All Import",
+          "url": "https://www.wpallimport.com/documentation/import-types/"
+        },
+        {
+          "title": "Remove or Modify Data Missing From the Import File",
+          "url": "https://www.wpallimport.com/documentation/remove-data-missing-from-the-import-file/"
+        },
+        {
+          "title": "How to Import Gravity Forms Entries",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-gravity-forms-entries/"
+        },
+        {
+          "title": "Real-Time Exports API Integration Example",
+          "url": "https://www.wpallimport.com/documentation/real-time-exports-api-integration-example/"
+        },
+        {
+          "title": "How to Install and Update WP All Import Plugins",
+          "url": "https://www.wpallimport.com/documentation/how-to-install-and-update-wp-all-import-plugins/"
+        },
+        {
+          "title": "How to Bulk Edit WooCommerce and WordPress Data",
+          "url": "https://www.wpallimport.com/documentation/bulk-edit-woocommerce-wordpress-data/"
+        },
+        {
+          "title": "How to Export WooCommerce Variable Products",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-woocommerce-variable-products-csv-xml/"
+        },
+        {
+          "title": "How to Export WordPress Data to CSV/XML",
+          "url": "https://www.wpallimport.com/documentation/export-overview/"
+        },
+        {
+          "title": "How to Migrate WordPress Data",
+          "url": "https://www.wpallimport.com/documentation/migrate-overview/"
+        },
+        {
+          "title": "How to Migrate WooCommerce and WordPress Data",
+          "url": "https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-and-wordpress-data/"
+        },
+        {
+          "title": "WordPress Export Posts with Images",
+          "url": "https://www.wpallimport.com/documentation/wordpress-export-posts-with-images/"
+        },
+        {
+          "title": "How to Export WordPress Posts",
+          "url": "https://www.wpallimport.com/documentation/export-wordpress-posts/"
+        },
+        {
+          "title": "How to Run Real-Time Exports",
+          "url": "https://www.wpallimport.com/documentation/how-to-run-real-time-exports/"
+        },
+        {
+          "title": "How to Import Variable Products into WooCommerce",
+          "url": "https://www.wpallimport.com/documentation/import-variable-products-woocommerce/"
+        },
+        {
+          "title": "How to Import WooCommerce Products from CSV and XML",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-woocommerce-products-csv-xml/"
+        },
+        {
+          "title": "How to Export WooCommerce Products to CSV, Excel, and XML",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-woocommerce-products-to-csv-or-xml/"
+        },
+        {
+          "title": "How to Export WooCommerce Orders to CSV, Excel, XML, or Google Sheets",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-woocommerce-orders-to-csv-or-xml/"
+        },
+        {
+          "title": "How to Migrate WooCommerce Orders",
+          "url": "https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-orders/"
+        },
+        {
+          "title": "How to Import Any CSV, XML, Excel or Google Sheets File into WordPress",
+          "url": "https://www.wpallimport.com/documentation/importing-an-xml-or-csv-file/"
+        },
+        {
+          "title": "How to Export WordPress to CSV, Excel, XML and Google Sheets",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-wordpress-csv-excel-xml/"
+        },
+        {
+          "title": "How to Import Advanced Custom Fields (ACF) From CSV, Excel, and XML",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-advanced-custom-fields-acf-from-csv/"
+        },
+        {
+          "title": "How to Bulk Edit WooCommerce Products",
+          "url": "https://www.wpallimport.com/documentation/how-to-bulk-edit-woocommerce-products/"
+        },
+        {
+          "title": "How to Import WooCommerce Customers",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-woocommerce-customers/"
+        },
+        {
+          "title": "How to Export WooCommerce Customers to CSV, Excel, XML, or Google Sheets",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-woocommerce-customers-to-csv-or-xml/"
+        },
+        {
+          "title": "How to Migrate WooCommerce Customers to a Different Site",
+          "url": "https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-customers/"
+        },
+        {
+          "title": "How to Export WordPress Users to CSV, Excel, Google Sheets, or XML",
+          "url": "https://www.wpallimport.com/documentation/export-wordpress-users-to-csv-or-xml/"
+        },
+        {
+          "title": "How to Import WordPress Categories and Tags",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-wordpress-categories-and-tags/"
+        },
+        {
+          "title": "How to Export Advanced Custom Fields (ACF)",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-advanced-custom-fields/"
+        },
+        {
+          "title": "How to Export Gravity Forms Entries to CSV, Excel, Google Sheets, or XML",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-gravity-form-entries-to-csv-or-xml/"
+        },
+        {
+          "title": "How to Migrate Gravity Forms Entries from One WordPress Site to Another",
+          "url": "https://www.wpallimport.com/documentation/how-to-migrate-gravity-forms-entries/"
+        },
+        {
+          "title": "How to Migrate WooCommerce Products to a Different Website",
+          "url": "https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-products/"
+        },
+        {
+          "title": "How to Migrate WordPress Users from One Website to Another",
+          "url": "https://www.wpallimport.com/documentation/how-to-migrate-wordpress-users/"
+        },
+        {
+          "title": "How to Import WordPress Users from CSV, Excel, or XML",
+          "url": "https://www.wpallimport.com/documentation/how-to-import-wordpress-users-from-csv-excel-or-xml/"
+        },
+        {
+          "title": "How to Schedule WordPress Exports",
+          "url": "https://www.wpallimport.com/documentation/how-to-schedule-wordpress-exports/"
+        },
+        {
+          "title": "Send WordPress Export File to Dropbox using Zapier",
+          "url": "https://www.wpallimport.com/documentation/send-wordpress-export-file-to-dropbox-using-zapier/"
+        },
+        {
+          "title": "Send WordPress Export File to Google Drive using Zapier",
+          "url": "https://www.wpallimport.com/documentation/send-wordpress-export-file-to-google-drive-using-zapier/"
+        },
+        {
+          "title": "Add Exported WordPress Data to Google Sheets using Zapier",
+          "url": "https://www.wpallimport.com/documentation/add-exported-wordpress-data-to-google-sheets-using-zapier/"
+        },
+        {
+          "title": "Send Exported WordPress Data via Email using Zapier",
+          "url": "https://www.wpallimport.com/documentation/send-exported-wordpress-data-via-email-using-zapier/"
+        },
+        {
+          "title": "Run WordPress Import on a Schedule",
+          "url": "https://www.wpallimport.com/documentation/schedule-wordpress-imports/"
+        },
+        {
+          "title": "How to Export WordPress Taxonomies",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-wordpress-taxonomies/"
+        },
+        {
+          "title": "Export WordPress to CSV, Excel, XML, or Google Sheets",
+          "url": "https://www.wpallimport.com/documentation/export-wordpress-to-csv-excel-or-xml/"
+        },
+        {
+          "title": "Run WordPress Export on a Schedule",
+          "url": "https://www.wpallimport.com/documentation/run-wordpress-export-on-a-schedule/"
+        },
+        {
+          "title": "Schedule WordPress Exports Using Cron Jobs",
+          "url": "https://www.wpallimport.com/documentation/scheduling-exports-using-cron-jobs/"
+        },
+        {
+          "title": "Export ACF Flexible Content Fields to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-acf-flexible-content-fields-to-csv-or-xml/"
+        },
+        {
+          "title": "Export ACF Repeater and Group Fields to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-acf-repeater-and-group-fields-to-csv-or-xml/"
+        },
+        {
+          "title": "Export ACF Relational Fields to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-acf-relational-fields-to-csv-or-xml/"
+        },
+        {
+          "title": "Export ACF Google Map Fields to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-acf-google-map-fields-to-csv-or-xml/"
+        },
+        {
+          "title": "Export ACF Taxonomy Field to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-acf-taxonomy-field-to-csv-or-xml/"
+        },
+        {
+          "title": "Export ACF Choice Fields to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-acf-choice-fields-to-csv-or-xml/"
+        },
+        {
+          "title": "Combine and Process Multiple Data Elements into a Custom Export Field",
+          "url": "https://www.wpallimport.com/documentation/custom-export-fields/"
+        },
+        {
+          "title": "Export ACF Content Fields to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-acf-content-fields-to-csv-or-xml/"
+        },
+        {
+          "title": "Export ACF Picker Fields to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-acf-picker-fields-to-csv-or-xml/"
+        },
+        {
+          "title": "Export ACF Text Fields to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-acf-text-fields-to-csv-or-xml/"
+        },
+        {
+          "title": "Export Posts With Their Taxonomies",
+          "url": "https://www.wpallimport.com/documentation/export-posts-with-their-taxonomies/"
+        },
+        {
+          "title": "How to Export WordPress Categories and Tags",
+          "url": "https://www.wpallimport.com/documentation/how-to-export-wordpress-categories-tags/"
+        },
+        {
+          "title": "Custom XML Feeds for WordPress",
+          "url": "https://www.wpallimport.com/documentation/export-wordpress-data-to-custom-xml-feed/"
+        },
+        {
+          "title": "Export WordPress to XML",
+          "url": "https://www.wpallimport.com/documentation/export-wordpress-data-to-xml/"
+        },
+        {
+          "title": "Export WordPress Data to a Custom Spreadsheet",
+          "url": "https://www.wpallimport.com/documentation/export-wordpress-data-to-excel-or-csv/"
+        },
+        {
+          "title": "Export Custom Fields to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-custom-fields-to-csv-or-xml/"
+        },
+        {
+          "title": "Export WordPress Images to CSV or XML",
+          "url": "https://www.wpallimport.com/documentation/export-wordpress-images-to-csv-or-xml/"
+        },
+        {
+          "title": "Export Standard WordPress Post Data",
+          "url": "https://www.wpallimport.com/documentation/export-standard-wordpress-post-data/"
+        },
+        {
+          "title": "Import Toolset Types Overview",
+          "url": "https://www.wpallimport.com/documentation/toolset-types-overview/"
+        },
+        {
+          "title": "How to Let Clients Run WordPress Exports",
+          "url": "https://www.wpallimport.com/documentation/how-to-let-clients-run-wordpress-exports/"
+        },
+        {
+          "title": "WP-CLI",
+          "url": "https://www.wpallimport.com/documentation/wp-cli/"
+        },
+        {
+          "title": "How to Pass Exported WordPress Data Through PHP Functions",
+          "url": "https://www.wpallimport.com/documentation/custom-wordpress-export-php/"
+        },
+        {
+          "title": "How to Customize Your WordPress Export with WP_Query",
+          "url": "https://www.wpallimport.com/documentation/wp-query-export-to-csv/"
+        },
+        {
+          "title": "Bulk Edit Overview",
+          "url": "https://www.wpallimport.com/documentation/bulk-edit-overview/"
+        },
+        {
+          "title": "Using Hooks, Filters, and Actions with WP All Import and WP All Export",
+          "url": "https://www.wpallimport.com/documentation/filters-actions/"
+        },
+        {
+          "title": "Using XPath to Retrieve, Modify, And Filter File Elements",
+          "url": "https://www.wpallimport.com/documentation/custom-xpath/"
+        },
+        {
+          "title": "Using PHP to Extend WP All Import's Functionality",
+          "url": "https://www.wpallimport.com/documentation/custom-code-overview/"
+        },
+        {
+          "title": "Developer Options For Extending WP All Import",
+          "url": "https://www.wpallimport.com/documentation/developers-overview/"
+        },
+        {
+          "title": "Example Code To Simplify Your Imports and Exports",
+          "url": "https://www.wpallimport.com/documentation/code-snippets/"
+        },
+        {
+          "title": "A Complete Add-On To Use As A Starting Point",
+          "url": "https://www.wpallimport.com/documentation/complete-add-on/"
+        },
+        {
+          "title": "Best Practices",
+          "url": "https://www.wpallimport.com/documentation/best-practices/"
+        },
+        {
+          "title": "Add-On API Nested Fields",
+          "url": "https://www.wpallimport.com/documentation/nested-fields/"
+        },
+        {
+          "title": "Add-On API Image Fields",
+          "url": "https://www.wpallimport.com/documentation/image-fields/"
+        },
+        {
+          "title": "Add-On API Radio Fields",
+          "url": "https://www.wpallimport.com/documentation/radio-fields/"
+        },
+        {
+          "title": "Add-On API Text Fields",
+          "url": "https://www.wpallimport.com/documentation/text-fields/"
+        },
+        {
+          "title": "The Structure of an Import Add-On",
+          "url": "https://www.wpallimport.com/documentation/structure/"
+        },
+        {
+          "title": "Adding Support For Your Theme or Plugin",
+          "url": "https://www.wpallimport.com/documentation/addon-dev-overview/"
+        },
+        {
+          "title": "Yoast WordPress SEO",
+          "url": "https://www.wpallimport.com/documentation/yoast-wordpress-seo/"
+        },
+        {
+          "title": "Problems with Import Files",
+          "url": "https://www.wpallimport.com/documentation/problems-with-import-files/"
+        },
+        {
+          "title": "Plugin & Theme Conflicts",
+          "url": "https://www.wpallimport.com/documentation/plugin-theme-conflicts/"
+        },
+        {
+          "title": "Encoding & Character Sets",
+          "url": "https://www.wpallimport.com/documentation/encoding/"
+        },
+        {
+          "title": "Troubleshooting Guide",
+          "url": "https://www.wpallimport.com/documentation/common-issues/"
+        },
+        {
+          "title": "Example XML & CSV Files",
+          "url": "https://www.wpallimport.com/documentation/example-files/"
+        },
+        {
+          "title": "Server Configuration",
+          "url": "https://www.wpallimport.com/documentation/server-configuration/"
+        },
+        {
+          "title": "Recommended Hosts",
+          "url": "https://www.wpallimport.com/documentation/recommended-hosts/"
+        },
+        {
+          "title": "Import Processing",
+          "url": "https://www.wpallimport.com/documentation/import-processing/"
+        },
+        {
+          "title": "Mapping Values From Your File with IF Statements",
+          "url": "https://www.wpallimport.com/documentation/if-statements/"
+        },
+        {
+          "title": "Processing and Grouping Multiple Elements with FOREACH Loops",
+          "url": "https://www.wpallimport.com/documentation/foreach-loops/"
+        },
+        {
+          "title": "Calling PHP Functions In Your Import Configuration",
+          "url": "https://www.wpallimport.com/documentation/inline-php/"
+        },
+        {
+          "title": "Here are the Hooks Provided By WP All Import and WP All Export",
+          "url": "https://www.wpallimport.com/documentation/action-reference/"
+        },
+        {
+          "title": "Nested, Hierarchical Taxonomies",
+          "url": "https://www.wpallimport.com/documentation/nested/"
+        },
+        {
+          "title": "How to Import Taxonomies, Categories, Tags",
+          "url": "https://www.wpallimport.com/documentation/taxonomies-overview/"
+        },
+        {
+          "title": "Serialized Fields",
+          "url": "https://www.wpallimport.com/documentation/serialized-fields/"
+        },
+        {
+          "title": "Importing Images From URLs",
+          "url": "https://www.wpallimport.com/documentation/import-images-from-urls/"
+        },
+        {
+          "title": "How to Update Existing WordPress Data",
+          "url": "https://www.wpallimport.com/documentation/manual-record-matching/"
+        }
+      ]
+    }
+  ]
+}
