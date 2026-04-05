@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T17:14:07.525Z",
-  "total_plugins": 86,
+  "last_updated": "2026-04-05T17:14:15.052Z",
+  "total_plugins": 87,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -631,6 +631,14 @@
       ]
     },
     {
+      "slug": "launchkit-pro",
+      "name": "LaunchKit Pro",
+      "documentation_url": "https://wplaunchify.com/documentation/",
+      "last_scraped": "2026-04-05T17:14:13.699Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
       "slug": "learndash",
       "name": "LearnDash",
       "documentation_url": "https://learndash.com/support/documentation/",
@@ -742,6 +750,14 @@
       "categories": [
         "advanced"
       ]
+    },
+    {
+      "slug": "ninja-tables-easy-data-table-builder",
+      "name": "Ninja Tables – Easy Data Table Builder",
+      "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
+      "last_scraped": "2026-04-05T17:14:07.524Z",
+      "page_count": 0,
+      "categories": []
     },
     {
       "slug": "open-graph",
@@ -1257,14 +1273,6 @@
         "webhooks",
         "webhooks-zapier"
       ]
-    },
-    {
-      "slug": "ninja-tables-easy-data-table-builder",
-      "name": "Ninja Tables – Easy Data Table Builder",
-      "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-04-05T17:14:07.525Z",
-      "page_count": 0,
-      "categories": []
     }
   ]
 }
