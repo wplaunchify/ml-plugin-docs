@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T04:56:21.019Z",
-  "total_plugins": 40,
+  "last_updated": "2026-04-05T05:32:24.924Z",
+  "total_plugins": 41,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -695,6 +695,14 @@
       "categories": [
         "advanced"
       ]
+    },
+    {
+      "slug": "fluent-boards-project-management-tool",
+      "name": "Fluent Boards - Project Management Tool",
+      "documentation_url": "https://fluentboards.com/docs/documentation/",
+      "last_scraped": "2026-04-05T05:32:24.924Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
