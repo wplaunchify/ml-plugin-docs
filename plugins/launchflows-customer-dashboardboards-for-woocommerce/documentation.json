@@ -1,0 +1,754 @@
+{
+  "plugin_slug": "launchflows-customer-dashboardboards-for-woocommerce",
+  "plugin_name": "LaunchFlows Customer Dashboardboards For WooCommerce",
+  "last_scraped": "2026-04-05T14:10:12.389Z",
+  "total_pages": 43,
+  "failed_urls": [
+    "https://www.wpbeaverbuilder.com/",
+    "https://bricksbuilder.io/",
+    "https://elementor.com/",
+    "https://wordpress.org/gutenberg/",
+    "https://www.kadenceblocks.com/",
+    "https://thrivethemes.com/architect/",
+    "https://zionbuilder.io/"
+  ],
+  "pages": [
+    {
+      "title": "Hide Out Of Stock & Back Ordered Products",
+      "url": "https://launchflows.com/documentation/hide-out-of-stock-back-ordered-products/",
+      "category": "Uncategorized",
+      "content": "### Why This Is Done\n\nWhen offering a product directly via a single product page, WooCommerce will notify a user that a product is not in stock by hiding the add-to-cart button and triggering a warning notice.\n\nThis prevents a buyer from attempting to place things into the cart that are not available to purchase at this time.\n\n### What This Does\n\nLaunchFlows provides a similar logic and level of notification for all the other places in a Sales Funnel where someone can now attempt to purchase. This includes [Order Bumps](https://launchflows.com/documentation/bumps-variations/), [Always In Checkout](https://launchflows.com/documentation/five-methods-for-selling/#always-in-checkout), and [Order Upsells](https://launchflows.com/documentation/upsells-downsells/).\n\n### How It Works\n\nIf a product is offered for sale via any of the above LaunchFlows components, but the product is currently Out Of Stock or Back Ordered in WooCommerce, then two things will happen:\n\n1) The product will be removed from the cart if it currently is present, and will be hidden from view so that the buyer cannot try to add it again to the checkout.\n\n2) The admin will be presented with an onscreen notification that the product is in a sales funnel but is not available for buyers to purchase.\n\nThis provides a way to ensure that buyers are able to proceed with next steps (in most cases), but even if not, that the administrator can immediately check the available checkout processes to ensure that everything is working properly.\n\n### Details\n\n1) **Order Bumps –**The order bump component is hidden for any product not in stock\n\n2) **Always In Cart –**The always in cart component is hidden from view and the product will no longer be added automatically to the checkout\n\n3) **Upsells –** The “YES” option to add product will be hidden and replaced by a notification to the buyer that the product is no longer available. A translatable “Click To Proceed” button will be presented instead.\n\n### Example Buyer View\n\n![upsell-out-of-stock](https://launchflows.com/wp-content/uploads/2022/06/upsell-out-of-stock.jpeg)\n\n### Example Admin View\n\n![upsell-out-of-stock-admin](https://launchflows.com/wp-content/uploads/2022/06/upsell-out-of-stock-admin.jpeg)",
+      "headings": [
+        "Why This Is Done",
+        "What This Does",
+        "How It Works",
+        "Details",
+        "Example Buyer View",
+        "Example Admin View"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Hide Product Thumbnail In Order Review",
+      "url": "https://launchflows.com/documentation/hide-product-thumbnail-in-order-review/",
+      "category": "Uncategorized",
+      "content": "If you prefer not to view a product thumbnail when using the lf-review component inside any checkout, you can disable the output of the thumbnail using the global option in the LaunchFlows admin dashboard tab “Hide Product Thumbnail In LF Order Review Component”\n\n![](https://launchflows.com/wp-content/uploads/2023/01/launchflows-hide-product-thumbnail.png)\n\n![](https://launchflows.com/wp-content/uploads/2023/01/show-image-order-review.png)Before\n\n![](https://launchflows.com/wp-content/uploads/2023/01/hide-image-order-review.png)After",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "Remove Product Slug From URL",
+      "url": "https://launchflows.com/documentation/remove-product-slug-from-url/",
+      "category": "Uncategorized",
+      "content": "### What?\n\nSometimes it is useful to remove the “/product” slug from the url structure of your WooCommerce products.\n\n### Why?\n\nThis has the benefit of offering a cleaner permalink structure, where a product could be yourdomain.com/product-name instead of yourdomain.com/product/product-name.\n\nWooCommerce does not allow this normally without custom coding.\n\n### How?\n\nSimply go into the LaunchFlows global settings menu and check the box to “Remove Product Slug From Permalink Of All Products”, then click “Save Changes” button on bottom of settings page.\n\n![remove-product-slug-from-url](https://launchflows.com/wp-content/uploads/2022/06/remove-product-slug-from-url.png)\n\nBe sure to go to WordPress Settings/Permalinks and click the “Save Changes” button there one time after enabling this option.\n\n**Note-You can ignore the default permalink structure being shown in the WooCommerce section of that dashboard panel.*",
+      "headings": [
+        "What?",
+        "Why?",
+        "How?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "What Is LaunchFlows?",
+      "url": "https://launchflows.com/documentation/what-is-launchflows/",
+      "category": "Uncategorized",
+      "content": "### Thanks for choosing LaunchFlows!\n\nThe following guide covers basic and advanced features of the LaunchFlows plugin.\n\nIf you have questions or come across any problems, please contact our team. We will be happy to assist you.\n\n### What is LaunchFlows?\n\nLaunchFlows is a WordPress plugin that makes it easy to create powerful Sales Funnel features with WooCommerce.\n\nNo longer are you limited to a “shop” grid with individual sales pages, cart, and single checkout.\n\nInstead, you can provide a custom user journey through your products or services in a manner that increases conversions and buyer satisfaction.\n\nBest of all, no coding or design skills are required.\n\nYou only need to create a product, a checkout and a thank you page to get started!\n\n### How It Works\n\nLaunchFlows provides a fast and lightweight set of accessories to WooCommerce that amplify and improve the behavior of product, checkout and thank you pages, while enabling you full control (if you wish) to fully customize the layouts of all components you wish to display for your sales funnel ideas.\n\n![How LaunchFlows Layouts Work](https://launchflows.com/wp-content/uploads/2020/12/how-launchflows-layouts-work.png)\n\n### The Five Primary Features of LaunchFlows\n\nLaunchFlows amplifies the capability of WooCommerce so you can easily do things that are not otherwise possible.\n\n1) **Instant Registration** – Makes it fast and easy to obtain the Name and Email from every new visitor.\n\n2) **Bumps & Variations** – Offer any combination of products before or at the point of checkout.\n\n3) **Upsells & Downsells** – Offer any combination of products after checkout, to increase revenue per customer.\n\n4) **Donations & Pay Now** – Makes it easy for donors or clients to pay you an exact amount with just one click.\n\n5) **Thank You & Next Step** – Provides your buyers with a customized experience after their checkout is over.",
+      "headings": [
+        "Thanks for choosing LaunchFlows!",
+        "What is LaunchFlows?",
+        "How It Works",
+        "The Five Primary Features of LaunchFlows"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Install LaunchFlows",
+      "url": "https://launchflows.com/documentation/how-to-install-launchflows/",
+      "category": "Uncategorized",
+      "content": "LaunchFlows is a standard WordPress plugin that pursues the best practices and can be installed like any other plugin on your website. This means that the installation is relatively straightforward, and you are already familiar with it, making it easy for you to get started right away.\n\nCurrently, all updates are available via the [My Account](https://launchflows.com/my-account/) page of the LaunchFlows website.\n\nThe latest version of LaunchFlows is always available [through your account](https://launchflows.com/my-account/), and when the license is active, the dashboard will show you a notification indicating it requires an update.\n\n.wp-block-kadence-column.kb-section-dir-horizontal > .kt-inside-inner-col > #kt-info-box_1478fc-1e .kt-blocks-info-box-link-wrap{max-width:unset;}#kt-info-box_1478fc-1e .kt-blocks-info-box-link-wrap{padding-top:var(--global-kb-spacing-xs, 1rem);padding-right:var(--global-kb-spacing-xs, 1rem);padding-bottom:var(--global-kb-spacing-xs, 1rem);padding-left:var(--global-kb-spacing-xs, 1rem);}#kt-info-box_1478fc-1e .kadence-info-box-icon-container .kt-info-svg-icon, #kt-info-box_1478fc-1e .kt-info-svg-icon-flip, #kt-info-box_1478fc-1e .kt-blocks-info-box-number{font-size:50px;}#kt-info-box_1478fc-1e .kt-blocks-info-box-media{color:#444444;background:transparent;border-color:#444444;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#kt-info-box_1478fc-1e .kt-blocks-info-box-link-wrap:hover .kt-blocks-info-box-media{color:#444444;background:transparent;border-color:#444444;}#kt-info-box_1478fc-1e .kt-blocks-info-box-learnmore{background:transparent;border-width:0px 0px 0px 0px;padding-top:4px;padding-right:8px;padding-bottom:4px;padding-left:8px;margin-top:10px;margin-right:0px;margin-bottom:10px;margin-left:0px;}\n[Note: To streamline future updates, you may wish to install the free Easy Theme & Plugin Upgrades plugin from the WordPress repository. This will allow it to upload the latest copy of LaunchFlows without deactivating or deleting the prior version.](https://wordpress.org/plugins/easy-theme-and-plugin-upgrades/)\n\n![](https://launchflows.com/wp-content/uploads/2020/03/quick-start-download-plugin-1.png)\n\nYou can install LaunchFlows on your dashboard by proceeding to Plugins > Add New. However, since LaunchFlows is a premium plugin, it will not be available on the Plugins directory.\n\n![](https://launchflows.com/wp-content/uploads/2022/03/doc1_install-launchflows-1-1024x519.png)\n\nOnce you open Plugins > Add New, click on the button that reads Upload Plugin.\n\nProceed to click on the button that reads Choose file, and from your local environment, click on the zip file you have downloaded from your account, and select it to upload.\n\n![](https://launchflows.com/wp-content/uploads/2022/03/doc2_install-launchflows-1-1024x216.png)\n\nThen you can proceed to click on the button that reads Install Now, and the installation will begin. Typically, it will take a mere few seconds for the process to complete, and you will be able to see the page reloading, asking you to either Activate Plugin or go to Plugin Installer.\n\nHere, please click on the button that reads Activate Plugin so that you can start using LaunchFlows right away.\n\n![](https://launchflows.com/wp-content/uploads/2022/03/doc3_install-launchflows-1024x441.png)\n\nYou may access to LaunchFlows by clicking on the menu item on the left sidebar on your dashboard, on its name.\n\nWe strongly recommend that you click on the submenu where it reads License first to activate the plugin.\n\n![](https://launchflows.com/wp-content/uploads/2022/03/doc4_install-launchflows-1024x303.png)\n\nAbove, you will notice that it displays a notification to either opt or not to allow us to collect non-sensitive diagnostic data and usage information. You may want to read more about the information we collect by clicking on the (what we collect) link.\n\nAgain, opting or not is entirely optional.\n\nAfter activating your license, you may proceed to click on the menu item that reads LaunchFlows. In its turn, it will open the LaunchFlows features, which you can enable according to your specific needs.\n\nTo get a better notion of LaunchFlows features, you may want to explore our [Quick Start Guide](https://launchflows.com/documentation/quick-start/).",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "Quick Start Guide",
+      "url": "https://launchflows.com/documentation/quick-start/",
+      "category": "Uncategorized",
+      "content": "### Installation\n\nIf you have not done so already, please install the following plugins:\n\n- WooCommerce\n- LaunchFlows\n\nLaunchFlows offers a few global options you can setup from the main tab in the Admin Menu Bar of WordPress.\n\nWe suggest that you setup your LaunchFlows options as shown below:\n![LaunchFlows Setup](https://launchflows.com/wp-content/uploads/2020/04/launchflows-setup.jpg)\n\n### Setup WooCommerce Account\n\nMost businesses will want to prevent people from using the Guest Checkout capability of WooCommerce so that tracking and automation are available for every buyer.\n\nThis will ensure that every buyer is automatically registered and logged-in to your site upon completing their first free or paid transaction.\n\nTo accomplish this, go to the Admin dashboard under the WooCommerce/Settings/Accounts & Privacy tab and check the options as shown in the image below.\n\n![](https://launchflows.com/wp-content/uploads/2020/04/no-guest-checkout.jpg)\n\n### Disable AJAX Add To Cart\n\nLikewise, you will want to uncheck the WooCommerce option for “Enable AJAX add to cart buttons on archives”. This otherwise can result in unpredictable behavior with LaunchFlows and other WooCommerce plugins.\n\n![disable-ajax-add-to-cart](https://launchflows.com/wp-content/uploads/2020/04/disable-ajax-add-to-cart.png)\n\n.wp-block-kadence-advancedheading.kt-adv-heading8492_7ba224-3a, .wp-block-kadence-advancedheading.kt-adv-heading8492_7ba224-3a[data-kb-block=\"kb-adv-heading8492_7ba224-3a\"]{font-style:normal;}.wp-block-kadence-advancedheading.kt-adv-heading8492_7ba224-3a mark.kt-highlight, .wp-block-kadence-advancedheading.kt-adv-heading8492_7ba224-3a[data-kb-block=\"kb-adv-heading8492_7ba224-3a\"] mark.kt-highlight{font-style:normal;color:#f76a0c;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.wp-block-kadence-advancedheading.kt-adv-heading8492_7ba224-3a img.kb-inline-image, .wp-block-kadence-advancedheading.kt-adv-heading8492_7ba224-3a[data-kb-block=\"kb-adv-heading8492_7ba224-3a\"] img.kb-inline-image{width:150px;vertical-align:baseline;}\n\n### Set Product Layout Capability\n\nLaunchFlows provides an option to disable the product layout capability in the event you are already using another theme or plugin for this purpose. This will prevent you from having conflicting results on the WooCommerce single product pages. [Learn More Here](https://launchflows.com/documentation/disable-product-layout-capability/)\n\nIf you want to disable the LaunchFlows single product layout capability, simply go to the LaunchFlows tab of your admin dashboard, and click the checkbox for “Theme Compatibility” as shown below.\n\n![Theme Compatibility](https://launchflows.com/wp-content/uploads/2022/03/theme-compatibility.jpg)\n\n.wp-block-kadence-advancedheading.kt-adv-heading8492_74760d-6c, .wp-block-kadence-advancedheading.kt-adv-heading8492_74760d-6c[data-kb-block=\"kb-adv-heading8492_74760d-6c\"]{font-style:normal;}.wp-block-kadence-advancedheading.kt-adv-heading8492_74760d-6c mark.kt-highlight, .wp-block-kadence-advancedheading.kt-adv-heading8492_74760d-6c[data-kb-block=\"kb-adv-heading8492_74760d-6c\"] mark.kt-highlight{font-style:normal;color:#f76a0c;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.wp-block-kadence-advancedheading.kt-adv-heading8492_74760d-6c img.kb-inline-image, .wp-block-kadence-advancedheading.kt-adv-heading8492_74760d-6c[data-kb-block=\"kb-adv-heading8492_74760d-6c\"] img.kb-inline-image{width:150px;vertical-align:baseline;}\n\n### Three Steps To Sales Funnels\n\nLaunchFlows makes it easy to create unlimited Sales Funnels with this just three steps:\n\n![](https://launchflows.com/wp-content/uploads/2020/11/three-steps.png)\n\n### Step 1 – Create A Product\n\nClick on the “Products / Add New” link in your admin dashboard and choose “Simple Product”.\n\n![](https://launchflows.com/wp-content/uploads/2020/04/launchflows-get-started-new-product.jpg)\n\n1) Give the product a name\n\n2) Add Price Information\n\n3) Click “LaunchFlows” Tab\n\n4) Click the “Select Next Step Page” field.\n\n5) Type the name of the page or post you want a buyer to be directed to after adding this product to the cart.\n\n6) Click the “Select Post Checkout Page” field.\n\n7) Type the name of the page or post you want buyer to be directed to after they have completed purchase (checkout) of this product.\n\n8) Click “Publish”\n\n![](https://colony-recorder.s3.amazonaws.com/files/2022-03-14/36256fb8-61ed-4c46-8bdf-0ca07e53fdbf/stack_animation.webp)\n\n### Step 2 – Create A Checkout\n\nYou can create one global checkout template for all of your products or unique templates for each.\n\nCreate a new Page, Post, Product Or Lesson to hold your new checkout.\n\nClick the “Add A Checkout To This Post” from the LaunchFlows Checkout Enable Metabox as shown below.\n\n![launchflows add checkout metabox](https://launchflows.com/wp-content/uploads/2020/04/add-checkout-meta.jpg)\nThis will produce a standard WooCommerce checkout layout.\n\nIf you prefer you can [customize your checkout layout](https://launchflows.com/documentation/how-to-style-or-hide-components-with-block-editor/).\n\n.wp-block-kadence-advancedheading.kt-adv-heading8492_39e3be-13, .wp-block-kadence-advancedheading.kt-adv-heading8492_39e3be-13[data-kb-block=\"kb-adv-heading8492_39e3be-13\"]{font-style:normal;}.wp-block-kadence-advancedheading.kt-adv-heading8492_39e3be-13 mark.kt-highlight, .wp-block-kadence-advancedheading.kt-adv-heading8492_39e3be-13[data-kb-block=\"kb-adv-heading8492_39e3be-13\"] mark.kt-highlight{font-style:normal;color:#f76a0c;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.wp-block-kadence-advancedheading.kt-adv-heading8492_39e3be-13 img.kb-inline-image, .wp-block-kadence-advancedheading.kt-adv-heading8492_39e3be-13[data-kb-block=\"kb-adv-heading8492_39e3be-13\"] img.kb-inline-image{width:150px;vertical-align:baseline;}\n\n### Step 2a (optional) – Create An Order Pay Page\n\nTo ensure that you can have a clean payment option for manually created customer orders (or if customer has an issue paying and wants to come back from their my-account) be sure to create a standard page with WordPress, **with the url slug of “order-pay”.**\n\nThen add the standard WooCommerce checkout shortcode to that page to make sure it will display the simple but required details of an order payment checkout (this is NOT a custom checkout). \n\nUse this shortcode on the “order-pay” page you create:\n\n```\n[woocommerce_checkout]\n```\n\n### Step 3 – Create A Thank You\n\nCreate a new page with your choice of design.\n\nYou may drop the LaunchFlows “Thank You” widget into this layout to show last-order information and more.\n\nIn WooCommerce/Settings, choose at least one of your Thank You Pages as the default.\n\n(Note: You may create a custom Thank You page for each product or just use one for all products).\n\n![](https://launchflows.com/wp-content/uploads/2020/04/quick-start-global-thank-you-1.png)\n\nIf you use a custom Thank You page for a product, be sure to choose this from the product setup using the “Select Post Checkout Page” dropdown.\n![Thank You Page](https://launchflows.com/wp-content/uploads/2020/04/thank-you-page-1024x391.jpg)\n\n### Step 4 – Test Your Checkout\n\nNow test your new checkout by adding your product to the checkout with the **LF-Direct Checkout Link**.\n\nIn the sidebar of your product setup you will find a meta-box with the LF-Direct Checkout Link.\n\nAdd this link to any button or clickable element and your product will be sent to your checkout, ready to buy. Easy!![](https://launchflows.com/wp-content/uploads/2020/04/quick-start-direct-checkout-link.png)",
+      "headings": [
+        "Installation",
+        "Setup WooCommerce Account",
+        "Disable AJAX Add To Cart",
+        "Set Product Layout Capability",
+        "Three Steps To Sales Funnels",
+        "Step 1 – Create A Product",
+        "Step 2 – Create A Checkout",
+        "Step 2a (optional) – Create An Order Pay Page",
+        "Step 3 – Create A Thank You",
+        "Step 4 – Test Your Checkout"
+      ],
+      "code_blocks": [
+        "[woocommerce_checkout]",
+        "[woocommerce_checkout]"
+      ]
+    },
+    {
+      "title": "Shortcodes",
+      "url": "https://launchflows.com/documentation/shortcodes/",
+      "category": "Uncategorized",
+      "content": "### When To Use Shortcodes\n\nThe best way to use LaunchFlows is with the built-in Gutenberg Block Editor. This is true even if you are using another page builder or theme for your main design.\n\nIn some cases, however, you may want/need to use Shortcodes for your sales funnel components. Or you may want to embed other components inside of an Elementor tab or toggle widget.\n\n### Checkout Shortcodes\n\n*Use On Any LaunchFlows Checkout Page*\n\n**Account Fields**\n\n```\n[lf-account]\n```\n\n**Additional Fields**\n\n```\n[lf-additional]\n```\n\n**Always In Checkout** (**only product is required*)\n\n```\n[lf-always-in product=\"1234\" icon=\"yes\" title=\"yes\" price=\"yes\" shortdesc=\"yes\"]\n```\n\n**Billing Fields**\n\n```\n[lf-billing]\n```\n\n**Apply Tags With WPFusion** (**separate tags with comma. Debug attr. shows message on front for admin.*)\n\n```\n[lf-apply-tags tags=\"123,567\" debug=\"yes\"]\n```\n\n**Autoclick Checkout**\n\n```\n[lf-autoclick]\n```\n\n**Bump or Variable Product Display**\n(**only product is required.*) Click [here](https://lokesh-coder.github.io/pretty-checkbox/#basic-checkbox) to view optional styles.\n\n```\n[lf-bump product=\"1234\" image=\"yes\" title=\"yes\" price=\"yes\" style=\"p-round\" shortdesc=\"yes\"]\n```\n\n**Donation & Pay Now**\n\n```\n[lf-donate product=\"1234\" field=\"Donate Big!\" button=\"Do It Now!!\"]\n```\n\n**Checkout Button (Hide) Display*Note-Add a new button with ID of #lf-checkout-button to replace this function**\n\n```\n[lf-checkout-button]\n```\n\n**First Product (in cart) Display**\n\n```\n[lf-first-product-display]\n```\n\n**Empty Cart Button Display**\n\n```\n[lf-emptycart]\n```\n\n**Empty Cart Via URL (add to end of LF-Direct Checkout link)**\n\n```\n&clearcart\n```\n\n**Hide Order Comments**\n\n```\n[lf-hide-order-comments]\n```\n\n**Login Display For WooCommerce**\n\n```\n[lf-login]\n```\n\n**Notices Display For WooCommerce***(***Be sure to position this in your layout where you would like page to scroll after any changes to the order review or in the event of errors*)\n\n```\n[lf-notices]\n```\n\n**Payment Fields**\n\n```\n[lf-payment]\n```\n\n**Redirect**\n\n```\n[lf-redirect url=https://xyz.com sec=0]\n```\n\n**Registration Form**\n\n```\n[lf-registration]\n```\n\n**Remove Product From Cart**\n\n```\n[lf-remove-product id=\"1234\"]\n```\n\n**Remove Tags With WPFusion** (**separate tags with comma*)\n\n```\n[lf-remove-tags tags=\"123,567\" debug=\"false\"]\n```\n\n**Review Order Fields** (***all attributes are set to “yes” by default, so you can just add any you wish to change to “no”)\n\n```\n[lf-review remove=\"yes\" image=\"yes\" height=\"40px\" width=\"40px\" name=\"yes\" quantity=\"yes\"]\n```\n\n[Save Stripe Credit Card Automatically](https://launchflows.com/documentation/how-to-save-credit-cards-automatically/)\n\n```\n[lf-save-stripe-cc]\n```\n\n[Save Square Credit Card Automatically](https://launchflows.com/documentation/how-to-save-credit-cards-automatically/)\n\n```\n[lf-save-square-cc]\n```\n\n**Scroll To Checkout**\n\n```\n[lf-scroll-to-checkout style=\"button\"]\n```\n\n**Scripts For LaunchFlows**\n*(*Use this on any page where you need LF style or scripts but it is disabled or not otherwise available)*\n\n```\n[lf-scripts]\n```\n\n**Shipping Fields**\n\n```\n[lf-shipping]\n```\n\n**Thank You Fields**\n(**only lf-thank-you is required to output all fields.*)\n\n```\n[lf-thank-you details=\"no\" imagesize=\"100\" image=\"no\" name=\"no\" quantity=\"no\" price=\"no\" desc=\"no\" shortdesc=\"no\" total=\"no\" dividers=\"no\"]\n```\n\n**Coupon Fields**\n(**only lf-wccoupon is required to output closed coupon.*)\n\n```\n[lf-wccoupon closed=\"no\"]\n```\n\n**Upsell Product**(**only product is required*)\n\n```\n[lf-upsell product=\"1234\" next=\"5678\" accept=\"Yes, I Want It!\" accept_tags=\"123,456\" decline=\"No Thanks...\" image=\"yes\" title=\"yes\" price=\"yes\"]\n```\n\n### Product Shortcodes\n\n*Use Only On Single Product Sale Or Checkout Pages*\n**Product Direct To Checkout Link**\n\n```\n[lf-product-link]\n```\n\n**Product Breadcrumb**\n\n```\n[lf-product-breadcrumb]\n```\n\n**Product Add To Cart Button & Quantity**\n\n```\n[lf-product-add-to-cart]\n```\n\n**Product Description**\n\n```\n[lf-product-description]\n```\n\n**Product First Payment Date**\n\n```\n[lf-product-firstpayment]\n```\n\n**Product Images**\n\n```\n[lf-product-images]\n```\n\n**Product Meta (Category, Tags, etc.)**\n\n```\n[lf-product-meta]\n```\n\n**Product Price (Regular or Sale)**\n\n```\n[lf-product-price]\n```\n\n**Product Related Products**\n\n```\n[lf-product-related]\n```\n\n**Product Tabs (Reviews, Ratings, etc.)**\n\n```\n[lf-product-tabs]\n```\n\n**Product Name**\n\n```\n[lf-product-name]\n```\n\n**Product Breadcrumbs (Kadence Theme Only)**\n\n```\n[lf-product-breadcrumbs]\n```\n\n**Product Extras (Kadence Theme Only)**\n\n```\n[lf-product-extras]\n```\n\n**Product Payments Block (Kadence Theme Only)**\n\n```\n[lf-product-payments]\n```\n\n### Special Checkout Shortcodes\n\n*Use Only For Pages With Dynamic Content Blocks*\n**LaunchFlows Checkout Form End**\n\n```\n[lf-checkout-form-start]\n```\n\n**LaunchFlows Checkout Form End**\n\n```\n[lf-checkout-form-end]\n```\n\n### Product Toggles\n\nThe **LaunchFlows Product Toggles** plugin enhances your WooCommerce store by allowing customers to add or remove products directly from any page using dynamic buttons, links, or checkboxes. This seamless experience keeps customers on the same page, improving user interaction and satisfaction.\n\n#### Features\n\n- **Dynamic Add/Remove Controls**: The interface adapts based on the product’s cart status, displaying “Add to Cart” or “Remove from Cart” accordingly.\n- **Multiple Display Styles**: Choose from button, link, or checkbox styles to match your site’s design.\n- **Hide Labels**: Optionally hide labels for links, buttons, or checkboxes.\n- **Compatibility**: Supports both simple and variable products.\n- **Customizable Labels**: Define custom text for add and remove states.\n- **Developer-Friendly**: Easily extend functionality with unique CSS classes and custom styles.\n\n---\n\n#### Benefits\n\n- **Enhanced User Experience**: Customers can manage their cart without navigating away from the current page.\n- **Flexible Placement**: Insert toggle controls anywhere on your site using the shortcode.\n- **Consistent Design**: Customize the appearance to align with your site’s branding.\n\n---\n\n#### Usage\n\nTo implement the cart toggle functionality, use the  shortcode with the following attributes:\n\n- **id** (required): The product ID or variation ID to toggle.\n- **style** (optional): Display style—\n```\n\"button\"\n```\n\n (default), \n```\n\"link\"\n```\n\n, or \n```\n\"checkbox\"\n```\n\n.\n- **add_label** (optional): Text for the “Add to Cart” state.\n- **remove_label** (optional): Text for the “Remove from Cart” state.\n- **hide_label** (optional): \n```\n\"yes\"\n```\n\n to hide labels or \n```\n\"no\"\n```\n\n (default) to display labels.\n- **product_label** (optional): Adds a descriptive label after product name or variation\n- **clearcart** (optional): \n```\n\"yes\"\n```\n\n to empty cart before new product is added\n\n---\n\n#### Examples\n\n#### 1. Default Button Style\n\nDisplays a button that toggles the product in the cart.\n\n```\n[lf_cart_toggle id=\"123\"]\n```\n\n#### 2. Custom Labels\n\nDisplays a button with custom labels for adding and removing the product.\n\n```\n[lf_cart_toggle id=\"123\" add_label=\"Add Me\" remove_label=\"Remove Me\"]\n```\n\n#### 3. Link Style\n\nOutputs a text link that toggles the product in the cart.\n\n```\n[lf_cart_toggle id=\"123\" style=\"link\"]\n```\n\n#### 4. Link Without Label\n\nOutputs a plain link without any label.\n\n```\n[lf_cart_toggle id=\"123\" style=\"link\" hide_label=\"yes\"]\n```\n\n#### 5. Checkbox Style\n\nDisplays a checkbox that dynamically toggles the product in the cart.\n\n```\n[lf_cart_toggle id=\"123\" style=\"checkbox\" add_label=\"Check to Add\" remove_label=\"Uncheck to Remove\"]\n```\n\n#### 6. Checkbox Without Label\n\nOutputs a plain checkbox without any label.\n\n```\n[lf_cart_toggle id=\"123\" style=\"checkbox\" hide_label=\"yes\"]\n```\n\n#### 7. Checkbox With A Custom Label In Cart, Checkout, Order Detail\n\nOutputs your custom label after product added to cart\n\n```\n[lf_cart_toggle id=\"123\" style=\"checkbox\" hide_label=\"yes\" product_label=\"Good Choice!\"]\n```\n\n---\n\n#### Styling\n\nEach control includes specific CSS classes for customization:\n\n- ```\n.lf-toggle-button-add\n```\n\n: Applied when the product is not in the cart.\n- ```\n.lf-toggle-button-remove\n```\n\n: Applied when the product is in the cart.\n- ```\n.lf-product-[product_id]\n```\n\n: Unique identifier for each product instance.\n\n---\n\n#### Customization Example\n\nTo change the background color of the add and remove buttons, you can use the following CSS:\n\n```\n.lf-toggle-button-add {\n    background-color: #008cba;\n    color: #fff;\n}\n\n.lf-toggle-button-remove {\n    background-color: #e74c3c;\n    color: #fff;\n}\n```\n\n---\n\n#### Developer Notes\n\n- **Extensibility**: Utilize the unique CSS classes and WooCommerce hooks to add custom functionality when controls are activated.\n- **Shortcode Functionality**: The \n```\nid\n```\n\n attribute is mandatory to specify the product or variation ID. The plugin ensures clean URLs by removing query strings like \n```\nadd-to-cart\n```\n\n and \n```\nlf_remove_product\n```\n\n.\n\n---",
+      "headings": [
+        "When To Use Shortcodes",
+        "Checkout Shortcodes",
+        "Product Shortcodes",
+        "Special Checkout Shortcodes",
+        "Product Toggles",
+        "Features",
+        "Benefits",
+        "Usage",
+        "Examples",
+        "1. Default Button Style",
+        "2. Custom Labels",
+        "3. Link Style",
+        "4. Link Without Label",
+        "5. Checkbox Style",
+        "6. Checkbox Without Label",
+        "7. Checkbox With A Custom Label In Cart, Checkout, Order Detail",
+        "Styling",
+        "Customization Example",
+        "Developer Notes"
+      ],
+      "code_blocks": [
+        "[lf-account]",
+        "[lf-account]",
+        "[lf-additional]",
+        "[lf-additional]",
+        "[lf-always-in product=\"1234\" icon=\"yes\" title=\"yes\" price=\"yes\" shortdesc=\"yes\"]",
+        "[lf-always-in product=\"1234\" icon=\"yes\" title=\"yes\" price=\"yes\" shortdesc=\"yes\"]",
+        "[lf-billing]",
+        "[lf-billing]",
+        "[lf-apply-tags tags=\"123,567\" debug=\"yes\"]",
+        "[lf-apply-tags tags=\"123,567\" debug=\"yes\"]",
+        "[lf-autoclick]",
+        "[lf-autoclick]",
+        "[lf-bump product=\"1234\" image=\"yes\" title=\"yes\" price=\"yes\" style=\"p-round\" shortdesc=\"yes\"]",
+        "[lf-bump product=\"1234\" image=\"yes\" title=\"yes\" price=\"yes\" style=\"p-round\" shortdesc=\"yes\"]",
+        "[lf-donate product=\"1234\" field=\"Donate Big!\" button=\"Do It Now!!\"]",
+        "[lf-donate product=\"1234\" field=\"Donate Big!\" button=\"Do It Now!!\"]",
+        "[lf-checkout-button]",
+        "[lf-checkout-button]",
+        "[lf-first-product-display]",
+        "[lf-first-product-display]",
+        "[lf-emptycart]",
+        "[lf-emptycart]",
+        "[lf-hide-order-comments]",
+        "[lf-hide-order-comments]",
+        "[lf-notices]",
+        "[lf-notices]",
+        "[lf-payment]",
+        "[lf-payment]",
+        "[lf-redirect url=https://xyz.com sec=0]",
+        "[lf-redirect url=https://xyz.com sec=0]",
+        "[lf-registration]",
+        "[lf-registration]",
+        "[lf-remove-product id=\"1234\"]",
+        "[lf-remove-product id=\"1234\"]",
+        "[lf-remove-tags tags=\"123,567\" debug=\"false\"]",
+        "[lf-remove-tags tags=\"123,567\" debug=\"false\"]",
+        "[lf-review remove=\"yes\" image=\"yes\" height=\"40px\" width=\"40px\" name=\"yes\" quantity=\"yes\"]",
+        "[lf-review remove=\"yes\" image=\"yes\" height=\"40px\" width=\"40px\" name=\"yes\" quantity=\"yes\"]",
+        "[lf-save-stripe-cc]",
+        "[lf-save-stripe-cc]",
+        "[lf-save-square-cc]",
+        "[lf-save-square-cc]",
+        "[lf-scroll-to-checkout style=\"button\"]",
+        "[lf-scroll-to-checkout style=\"button\"]",
+        "[lf-scripts]",
+        "[lf-scripts]",
+        "[lf-shipping]",
+        "[lf-shipping]",
+        "[lf-thank-you details=\"no\" imagesize=\"100\" image=\"no\" name=\"no\" quantity=\"no\" price=\"no\" desc=\"no\" shortdesc=\"no\" total=\"no\" dividers=\"no\"]",
+        "[lf-thank-you details=\"no\" imagesize=\"100\" image=\"no\" name=\"no\" quantity=\"no\" price=\"no\" desc=\"no\" shortdesc=\"no\" total=\"no\" dividers=\"no\"]",
+        "[lf-wccoupon closed=\"no\"]",
+        "[lf-wccoupon closed=\"no\"]",
+        "[lf-upsell product=\"1234\" next=\"5678\" accept=\"Yes, I Want It!\" accept_tags=\"123,456\" decline=\"No Thanks...\" image=\"yes\" title=\"yes\" price=\"yes\"]",
+        "[lf-upsell product=\"1234\" next=\"5678\" accept=\"Yes, I Want It!\" accept_tags=\"123,456\" decline=\"No Thanks...\" image=\"yes\" title=\"yes\" price=\"yes\"]",
+        "[lf-product-link]",
+        "[lf-product-link]",
+        "[lf-product-breadcrumb]",
+        "[lf-product-breadcrumb]",
+        "[lf-product-add-to-cart]",
+        "[lf-product-add-to-cart]",
+        "[lf-product-description]",
+        "[lf-product-description]",
+        "[lf-product-firstpayment]",
+        "[lf-product-firstpayment]",
+        "[lf-product-images]",
+        "[lf-product-images]",
+        "[lf-product-meta]",
+        "[lf-product-meta]",
+        "[lf-product-price]",
+        "[lf-product-price]",
+        "[lf-product-related]",
+        "[lf-product-related]",
+        "[lf-product-tabs]",
+        "[lf-product-tabs]",
+        "[lf-product-name]",
+        "[lf-product-name]",
+        "[lf-product-breadcrumbs]",
+        "[lf-product-breadcrumbs]",
+        "[lf-product-extras]",
+        "[lf-product-extras]",
+        "[lf-product-payments]",
+        "[lf-product-payments]",
+        "[lf-checkout-form-start]",
+        "[lf-checkout-form-start]",
+        "[lf-checkout-form-end]",
+        "[lf-checkout-form-end]",
+        "remove_label",
+        "product_label",
+        "[lf_cart_toggle id=\"123\"]",
+        "[lf_cart_toggle id=\"123\"]",
+        "[lf_cart_toggle id=\"123\" add_label=\"Add Me\" remove_label=\"Remove Me\"]",
+        "[lf_cart_toggle id=\"123\" add_label=\"Add Me\" remove_label=\"Remove Me\"]",
+        "[lf_cart_toggle id=\"123\" style=\"link\"]",
+        "[lf_cart_toggle id=\"123\" style=\"link\"]",
+        "[lf_cart_toggle id=\"123\" style=\"link\" hide_label=\"yes\"]",
+        "[lf_cart_toggle id=\"123\" style=\"link\" hide_label=\"yes\"]",
+        "[lf_cart_toggle id=\"123\" style=\"checkbox\" add_label=\"Check to Add\" remove_label=\"Uncheck to Remove\"]",
+        "[lf_cart_toggle id=\"123\" style=\"checkbox\" add_label=\"Check to Add\" remove_label=\"Uncheck to Remove\"]",
+        "[lf_cart_toggle id=\"123\" style=\"checkbox\" hide_label=\"yes\"]",
+        "[lf_cart_toggle id=\"123\" style=\"checkbox\" hide_label=\"yes\"]",
+        "[lf_cart_toggle id=\"123\" style=\"checkbox\" hide_label=\"yes\" product_label=\"Good Choice!\"]",
+        "[lf_cart_toggle id=\"123\" style=\"checkbox\" hide_label=\"yes\" product_label=\"Good Choice!\"]",
+        ".lf-toggle-button-add",
+        ".lf-toggle-button-remove",
+        ".lf-product-[product_id]",
+        ".lf-toggle-button-add {\n    background-color: #008cba;\n    color: #fff;\n}\n\n.lf-toggle-button-remove {\n    background-color: #e74c3c;\n    color: #fff;\n}",
+        ".lf-toggle-button-add {\n    background-color: #008cba;\n    color: #fff;\n}\n\n.lf-toggle-button-remove {\n    background-color: #e74c3c;\n    color: #fff;\n}",
+        "add-to-cart",
+        "lf_remove_product"
+      ]
+    },
+    {
+      "title": "Recommended Plugins & Services",
+      "url": "https://launchflows.com/documentation/recommended-plugins-services/",
+      "category": "Uncategorized",
+      "content": "### What Are These?\n\nThe philosophy of LaunchFlows is to keep things super lightweight and simple, while avoiding any duplication of features already available elsewhere…especially in free plugins or services.\n\nThis page is a resource library for anyone using LaunchFlows to learn what we recommend to help achieve the goal of powerful Sales Funnels on WooCommerce.\n\nThis list is not comprehensive, only a starting point.\n\n### Plugins\n\n*(*paid vs free)*\n\n[Temporary Admin Without A Password (for us to provide help)](https://wordpress.org/plugins/temporary-login-without-password/)\n\n[Min and Max Quantity For WooCommerce](https://wordpress.org/plugins/minmax-quantity-for-woocommerce/)\n\n[WooCommerce Checkout Fields Manager (recommended)](https://wordpress.org/plugins/woocommerce-checkout-manager/)\n\n[WooCommerce Checkout Field Manager](https://wordpress.org/plugins/n-media-woocommerce-checkout-fields/)\n\n[WooCommerce Checkout Field Editor](https://wordpress.org/plugins/n-media-woocommerce-checkout-fields/)\n\n[*YITH Customize WooCommerce My Account](https://yithemes.com/themes/plugins/yith-woocommerce-customize-myaccount-page/)\n\n[*WPFusion](https://wpfusion.com/)\n\n[Simple Post Redirect](https://wordpress.org/plugins/simple-post-redirect/)\n\n### How To Provide Login To Us For Support\n\nIf requested by us, please use this plugin to provide one time admin login via [email](mailto:help@launchflows.com):\n\n[Temporary Admin Login Without Password](https://wordpress.org/plugins/temporary-login-without-password/)",
+      "headings": [
+        "What Are These?",
+        "Plugins",
+        "How To Provide Login To Us For Support"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Hide Order Comments",
+      "url": "https://launchflows.com/documentation/how-to-hide-order-comments/",
+      "category": "Uncategorized",
+      "content": "### Why?\n\nIn any standard checkout, the WooCommerce Additional Fields will be shown and inside of that are the Order Comment fields.\n\n![hide-order-comments](https://launchflows.com/wp-content/uploads/2022/02/hide-order-comments.png)\n\n### How?\n\nIf you wish to continue to use and relocate the Additional Fields component, but do not want to show the Order Comment fields inside (because you are adding some other custom fields instead, with the [Checkout Field Editor plugin](https://launchflows.com/documentation/recommended-plugins-services/)), then use this shortcode anywhere in your layout.\n\nThis works with any page builder including Gutenberg and Elementor.\n\n### Shortcode\n\n```\n[lf-hide-order-comments]\n```\n\n**Login Display For WooCommerce**",
+      "headings": [
+        "Why?",
+        "How?",
+        "Shortcode"
+      ],
+      "code_blocks": [
+        "[lf-hide-order-comments]",
+        "[lf-hide-order-comments]"
+      ]
+    },
+    {
+      "title": "Customize The Single Product Layout",
+      "url": "https://launchflows.com/documentation/customize-the-single-product-layout/",
+      "category": "Uncategorized",
+      "content": "### Why?\n\nIf you would like to create custom sales page or alternative layouts for your single products, this is is easy to do with LaunchFlows, using Shortcodes, Gutenberg Blocks or Elementor Widgets.\n\n### When?\n\nFirst you should decide whether you are already using a theme, plugin or page builder that accomplishes this function for you. If you are, then we advise you should disable the product layout capability with our global option as shown below.\n\n![launchflows-disable-product-layout](https://launchflows.com/wp-content/uploads/2022/04/launchflows-disable-product-layout.png)\n\nAfter you’ve enabled this global option, the single product data tab will shown a notification within the LaunchFlows submenu, as seen below:\n\n![disabled-product-layout-notice](https://launchflows.com/wp-content/uploads/2022/04/disabled-product-layout-notice.png)\n\n### How?\n\n* First be sure you have NOT disabled the single product layout capability with the global option above\n\nIn order to use the single product layout capability, you want to go into the product data tab, in the LaunchFlows submenu, and choose one of the following from the Select Product Template dropdown:\n\n1. Original Template – Displays the default product layout and cannot be changed with LaunchFlows\n2. LF Default Template – Starts you with a default product layout page so you can move/hide components\n3. LF Blank Template – Starts you with a blank page so you can add components\n4. LF Template One (An Experimental Full Page Layout)\n5. LF Template Two (A Second Experimental Full Page Layout)\n\n![select-product-dropdown](https://launchflows.com/wp-content/uploads/2022/04/select-product-dropdown.png)\n\n### Watch This Video",
+      "headings": [
+        "Why?",
+        "When?",
+        "How?",
+        "Watch This Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Disable Product Layout Capability",
+      "url": "https://launchflows.com/documentation/disable-product-layout-capability/",
+      "category": "Uncategorized",
+      "content": "### What Does It Do?\n\nThis global setting for LaunchFlows provides a way to ensure that certain Themes (such as Thrive Themes) will act as the layout template for your single products instead of using LaunchFlows.\n\nThis option disables the ability of LaunchFlows to modify the single product layout, add checkout pages to the single product pages, or to enable the Gutenberg Block Editor (classic will remain active).\n\n### When To Use?\n\nUse this if you have a current theme or other plugin that implements a custom design on to the WooCommerce Single Product Pages.\n\n### How To Use?\n\nGo to the LaunchFlows tab of your admin dashboard, and click the checkbox for “Theme Compatibility” as shown below.\n\n![Theme Compatibility](https://launchflows.com/wp-content/uploads/2022/03/theme-compatibility.jpg)\n\n### Resources\n\n[Watch This Video Demonstration](https://youtu.be/wrej3NjZP7Y)",
+      "headings": [
+        "What Does It Do?",
+        "When To Use?",
+        "How To Use?",
+        "Resources"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Send Product Directly To Checkout",
+      "url": "https://launchflows.com/documentation/how-to-send-product-directly-to-checkout/",
+      "category": "Uncategorized",
+      "content": "### What?\n\nIn this video you’ll learn about the LaunchFlows Direct Checkout link feature.\n\n### Why?\n\nThis makes it super simple to send any product directly to the custom checkout of your choice from anywhere on the Internet, just by applying the special URL to any clickable element.",
+      "headings": [
+        "What?",
+        "Why?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "One Page Product & Checkout",
+      "url": "https://launchflows.com/documentation/how-to-product-sales-checkout-page/",
+      "category": "Uncategorized",
+      "content": "### Who?\n\nThis solution is for anyone who has many products and wants to simplify and streamline the checkout of each one with a global sales page and checkout per product.\n\nThe side benefit is that marketing automation is easily customized to track the visits and purchase of these products on their own product pages without complicated code or cookies.\n\n### What?\n\nIt’s easy to turn any product into it’s own sales page, with or without a custom checkout.\n\n### How\n\nFirst name the product and publish it so you’ll have the product page in the dropdown options for the next step someone should see after they add this product to the cart.\n\nThen choose this product page from that dropdown.\n\nFinally, setup the page someone should be directed to after checkout is compled.\n\nOptionally, you can customize the layout of the product page with the Instant Clean Sales Page option and/or use one of the custom single product templates to allow you to add your own design and sales copy or to reconfigure the checkout components.\n\n### Click To Watch Video",
+      "headings": [
+        "Who?",
+        "What?",
+        "How",
+        "Click To Watch Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Instant Simple Product Bundles",
+      "url": "https://launchflows.com/documentation/instant-simple-product-bundles/",
+      "category": "Uncategorized",
+      "content": "### Description\n\nTo sell more than one product with a single LaunchFlows Checkout Link, simply add the additional products to the end of the ?add-to-cart=xxxx url of the first product, separated with a comma.\n\nInstead of creating complicated variable or grouped products in WooCommerce, it’s far easier to make every product into a simple (one time or subscription) product.\n\n### Use Case\n\nAs such, you can then make use of the LaunchFlows features to present and sell any product, at any time, with Marketing Automation.\n\n### Example\n\nOriginal product (ID# 1234) LaunchFlows Checkout Link (example):\n\nhttps://yourdomain.com/your-checkout-page/?add-to-cart=1234\n\nTo Add Product #2, simple add a comma then the Product #2 (ID# 5678):\n\nhttps://yourdomain.com/your-checkout-page/?add-to-cart=1234, 5678\n\n### Video Popup",
+      "headings": [
+        "Description",
+        "Use Case",
+        "Example",
+        "Video Popup"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Create Checkout Pages",
+      "url": "https://launchflows.com/documentation/create-checkout-pages/",
+      "category": "Uncategorized",
+      "content": "### Why Multiple Checkout Pages?\n\nLaunchFlows makes it easy to turn any page or post type into a checkout page, including lessons, products or even mdia pages.\n\nThis provides you with an incredible amount of flexibility for selling products wherever and whenever you want.\n\n### How Many Can I Create?\n\nLaunchFlows allows you to create an unlimited number of checkout pages. This makes it easy to have a unique design or offers on a particular checkout page for a sale or type of buyer.\n\n### Required Steps\n\n1. Navigate to WordPress Admin Dashboard\n\n2. Click Pages “Add New”. You can also create a checkout on any other post type, including posts, products, lessons, media page, etc.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/81874cab-1a9d-4c57-895f-ee2737ccce7c/cropped_screenshot_$1637175364.jpeg)\n\n3. Click the “Add title” field and give this checkout page a name. Suggest you use “Checkout” if this is the global default checkout page.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/852492b4-6995-428c-83dd-5f098b592431/cropped_screenshot_$1637175366.jpeg)\n\n4. Scroll down right side of page and find the LaunchFlows Checkout Enable option box. Click the checkbox for “Add A Checkout To This Post”.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/286e151a-d1a8-4abd-998c-32f54186117d/cropped_screenshot_$1637175367.jpeg)\n\n5. Click “Publish”\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/45f3057e-4ba9-490f-b631-8e6689ebb2aa/cropped_screenshot_$1637175368.jpeg)\n\n6. Click “View Page” To Inspect Your New Checkout Page.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/b6218ee1-b1fb-4015-a155-80f21c946a61/actions/0f831b4c-2be5-4c0b-b0b3-b8bb118d99ba/cropped_screenshot_$1637175369.jpeg)",
+      "headings": [
+        "Why Multiple Checkout Pages?",
+        "How Many Can I Create?",
+        "Required Steps"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Bricksey Theme",
+      "url": "https://launchflows.com/documentation/bricksey-theme/",
+      "category": "Uncategorized",
+      "content": "### Watch Video",
+      "headings": [
+        "Watch Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Divi",
+      "url": "https://launchflows.com/documentation/divi/",
+      "category": "Uncategorized",
+      "content": "### Does LaunchFlows Work With Divi?\n\nYes, it works quite well, and has the advantage of allowing you to “mix and match” between using Divi Theme and custom templates for your overall site, while optionally using Gutenberg Blocks and Patterns from our LaunchFlows pattern library for “one click” simplicity.\n\n### Resources\n\n[Divi Basics Post & Video](https://launchflows.com/woocommerce-sales-funnel-basics-for-divi)\n\n[ElegantThemes](https://www.elegantthemes.com/)",
+      "headings": [
+        "Does LaunchFlows Work With Divi?",
+        "Resources"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Elementor Style Or Hide",
+      "url": "https://launchflows.com/documentation/how-to-style-or-hide-with-elementor/",
+      "category": "Uncategorized",
+      "content": "If you prefer to customize your checkout layout, click the “Edit Elementor” button to design or use a new template.\n\nLaunchFlows adds a library of new widgets to Elementor.\n\n![](https://launchflows.com/wp-content/uploads/2020/04/launchflows-widgets.png)\n\nEach widget represents either a **COMPONENT** or custom **FUNCTIONS** that you can freely reposition or restyle.\n\nAt a minimum, you should drag the components to your new layout, repositioning and styling each as you wish.",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "GeneratePress",
+      "url": "https://launchflows.com/documentation/generatepress/",
+      "category": "Uncategorized",
+      "content": "### Tips\n\nLaunchFlows works great with this theme, but when you are customizing a product page, you may need to add this snippet of CSS to your child theme or Customizer/Custom CSS Box to prevent the theme from hiding the product display area.\n\n```\n.theme-generatepress .product {\n    display: block;\n}\n\ntheme-generatepress .inside-article {\n    overflow: hidden;\n}\n```",
+      "headings": [
+        "Tips"
+      ],
+      "code_blocks": [
+        ".theme-generatepress .product {\n    display: block;\n}\n\ntheme-generatepress .inside-article {\n    overflow: hidden;\n}",
+        ".theme-generatepress .product {\n    display: block;\n}\n\ntheme-generatepress .inside-article {\n    overflow: hidden;\n}"
+      ]
+    },
+    {
+      "title": "Oxygen Builder",
+      "url": "https://launchflows.com/documentation/oxygen-builder/",
+      "category": "Uncategorized",
+      "content": "### How To Setup\n\nLaunchFlows has a native integration with Oxygen Builder that allows you to output the custom checkout layout of your choice from WP Gutenberg to a Code Block in Oxygen.\n\nWe recommend this instead of using individual LaunchFlows checkout components directly in Oxygen because it preseves the individual checkout component styling.\n\n### Step One\n\nCreate and save a new checkout page in WordPress with the url of your choice.\n\n### Step Two\n\nOpen Oxygen builder and add a Code Block to your structure.\n\n### Step Three\n\nAdd this snippet to an Oxygen Code Block\n\n#### Step Four (optional but recommended)\n\nCreate or import a custom layout of the LaunchFlows checkout components of your choice using Gutenberg blocks. This layout as a whole will be output to the Code Block inside of your Oxygen layout. If you don’t create a custom layout, you will see the default WooCommerce checkout layout.\n\n![LaunchFlows Oxygen Layout With Gutenberg](https://launchflows.com/wp-content/uploads/2021/07/launchflows-oxygen-layout-gutenberg-scaled.jpg) ![Oxygen Code Block Snippet](https://launchflows.com/wp-content/uploads/2021/07/launchflows-oxygen-code-block-snippet-scaled.jpg)\n\n### Click To Watch Video",
+      "headings": [
+        "How To Setup",
+        "Step One",
+        "Step Two",
+        "Step Three",
+        "Step Four (optional but recommended)",
+        "Click To Watch Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPBakery Page Builder",
+      "url": "https://launchflows.com/documentation/wpbakery-pagebuilder/",
+      "category": "Uncategorized",
+      "content": "### How To Use\n\n[WPBakery Page Builder](https://wpbakery.com/) works easily with LaunchFlows shortcodes or by integrating a Gutenberg editor block into a layout.\n\nYou may optionally use the [ShortCode Mapper](https://kb.wpbakery.com/docs/learning-more/shortcode-mapper/) to map all [LaunchFlows shortcodes](https://launchflows.com/documentation/shortcodes) to individual WPBakery elements, but as you’ll see in the video, you’re just recreating what already exists.\n\nHowever, as you can see in the video below, *you may get getter results if you merely use native Gutenberg Blocks for all your Sales Funnel layouts*, even if you still use WPBakery elsewhere.",
+      "headings": [
+        "How To Use"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Five Methods For Selling",
+      "url": "https://launchflows.com/documentation/five-methods-for-selling/",
+      "category": "Uncategorized",
+      "content": "### What Are The Methods?\n\nLaunchFlows provides many unique methods to offer products for sale, whether in a step-by-step sales funnel or single page checkout. Mix and match to create new and creative results for your business.\n\nThe **Five Methods** provided by LaunchFlows are:\n\n1. Direct Checkout Link\n2. Simple Product Bump\n3. Variable Product Bump\n4. Always In Checkout\n5. Instant Sales Page\n\n### Direct Checkout Link\n\nWhen using LaunchFlows, each product created in WooCommerce has an option available in Classic & Gutenberg to send the product directly to the checkout page you’ve setup.\n\n![](https://launchflows.com/wp-content/uploads/2021/01/five-ways-to-sell-copy-button.png)\n\nAfter configuring the product via the LaunchFlows tab, simply click the “Copy” button to grab the Direct Checkout Link and then use it **anywhere you want to offer the product for sale**, such as:\n\n- Multi Step Checkout Pages\n- Sales Page Buttons & Links\n- Facebook Ads or Groups\n- Instagram\n- Blog Posts\n- Emails\n\n### Simple Product Bump\n\n![](https://launchflows.com/wp-content/uploads/2021/01/five-ways-to-sell-simple-bump.png)\n\nWhen using LaunchFlows for a single or multi-step checkout experience, the **Single Product Bump** offers a way to add/remove a simple product with one click.\n\nYou can use this in combination with our **Return To Checkout** function to allow for placement of the component anywhere in your layout, while allowing page to scroll back to the same spot upon reloading.\n\nUse as many components as you need to offer one or more products where any or all of them may be added or removed from the checkout.\n\n### Solo Checkout Option\n\n![solo-checkout-option](https://launchflows.com/wp-content/uploads/2021/01/solo-checkout-option.png)\n\nThis option will allow this product to be added to the cart and will remove ALL OTHER products from the cart that may exist. Use this for an upsell where you want to ensure that nothing else remains but the new upsell product. You could also use the [Empty Cart Shortcode or URL Syntax](https://launchflows.com/documentation/emptycart/#url-string) for a similar result.\n\n### Variable Product Bump\n\nThe **Variable Product Bump** is used for situations where you want to only allow ONE variation to be purchased at a time from an array of product options.\n\nIt may be used either on the actual checkout page or on a separate sales funnel step prior to checkout.\n\n### Always In Checkout\n\nThis component makes it easy to create a unique one-page checkout that ALWAYS has one or more products in the cart, ready to buy.\n\nTo make best use of this component, setup the following options as well:\n\n- Create a new checkout page, with a unique url (page slug), so that the URL of the page can be used to directly sell any particular product(s)![](https://launchflows.com/wp-content/uploads/2021/01/custom-checkout-url.jpg)\n- Add other optional product bumps/upsell offers to this unique checkout page![](https://launchflows.com/wp-content/uploads/2021/01/five-ways-to-sell-always-plus-bump.png)\n- Disable the “remove product” option from the LaunchFlows Review component so buyers understand that product cannot be removed\n\n![](https://launchflows.com/wp-content/uploads/2021/01/five-ways-to-sell-hide-remove-links.png)\n\n### Instant Sales Page\n\n![Instant Salespage](https://launchflows.com/wp-content/uploads/2021/01/instant-salespage.png)\n\nLaunchFlows provides an easy and powerful way for you to use the single product display page as its own Sales Page inside of any funnel.\n\nBy checking the option on any product for “Instant Sales Page”, you accomplish the following:\n\n- All unnecessary elements are removed from the Single Product Page, providing a blank canvas on which to customize a Sales Page\n- There is no need to create additional pages, because it repurposes the existing single product page and URL that already exist\n- For Variable Products, this makes it very easy to use 3rd Party WC plugins to customize the style & selection of options, prior to the checkout page\n- Makes it easy to create a multi-step Sales Funnel step that can be daisy-chained into other content, such as a course lesson\n\n![](https://launchflows.com/wp-content/uploads/2021/01/five-ways-to-sell-instant-sales-page-front-end.png)\n\n### View Instant Sales Page Video\n\n### Video Five Ways To Sell Video",
+      "headings": [
+        "What Are The Methods?",
+        "Direct Checkout Link",
+        "Simple Product Bump",
+        "Solo Checkout Option",
+        "Variable Product Bump",
+        "Always In Checkout",
+        "Instant Sales Page",
+        "View Instant Sales Page Video",
+        "Video Five Ways To Sell Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Toggle Coupon Redemption Field",
+      "url": "https://launchflows.com/documentation/toggle-coupon-redemption-field/",
+      "category": "Uncategorized",
+      "content": "### What?\n\nIn some sales situations you should show the coupon redemption box in plain view, so that buyers know they need to enter a required code.\n\n![](https://launchflows.com/wp-content/uploads/2022/06/toggled-coupon-field.png)\n\nThis is true, for example, with AppSumo type deal sites, such as our example [here](https://patterns.launchflows.com/deal-site-redemption/).\n\n### How?\n\nIt’s as easy as using our LaunchFlows WooCommerce Coupon Component [lf-wccoupon] and adding the parameter of closed=”no”\n\n**Coupon Fields**\n\n(**only [lf-wccoupon] is required to output closed coupon.*)\n\n```\n[lf-wccoupon closed=\"no\"]\n```\n\n### Video\n\nWe cover the step by step in this video",
+      "headings": [
+        "What?",
+        "How?",
+        "Video"
+      ],
+      "code_blocks": [
+        "[lf-wccoupon closed=\"no\"]",
+        "[lf-wccoupon closed=\"no\"]"
+      ]
+    },
+    {
+      "title": "Show A Loyalty Notice",
+      "url": "https://launchflows.com/documentation/loyalty-notice/",
+      "category": "Uncategorized",
+      "content": "### Description\n\nDisplays a loyalty notice to any buyer who has made five (5) purchases.\n\n### ShortCode\n\n[lf-loyalty]\n\n### Use Case\n\nPlace the [lf-loyalty] shortcode on a thank you page, my-account area page, or anywhere that you’d like to display gratitude to any buyer who has completed five (5) purchases.\n\nThe style and message may be customized using .css and .pot methods standard to WordPress.\n\n### Example\n\nLayout Example:\n\n![](https://launchflows.com/wp-content/uploads/2020/02/lf-loyalty-layout-example.jpg)\n\nResult Example:\n\n![](https://launchflows.com/wp-content/uploads/2020/02/lf-loyalty-result-example.jpg)",
+      "headings": [
+        "Description",
+        "ShortCode",
+        "Use Case",
+        "Example"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Sticky Checkout Components",
+      "url": "https://launchflows.com/documentation/add-a-sticky-checkout-component/",
+      "category": "Uncategorized",
+      "content": "A “sticky” checkout component is an effective way to show a menu of available products to purchase or the order review, because it will always remain visible on the page, even if the rest of the content scrolls down.\n\n### Create Two Columns\n\nWhile you can do it with one column, this would lead to some content being blocked by the sticky component. Use two columns or more to avoid this issue.\n\n### Add an Inner Section\n\n![](https://launchflows.com/wp-content/uploads/2020/12/sticky-inner-section.png)\n\nDrag an Elementor Inner Section Widget to either column.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/sticky-inner-widget.png)\n\nDelete the second column of the Inner Section.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/sticky-inner-delete-column.png)\n\nThen add a LaunchFlows Component such as Review, Order Bump, or Always In.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/sticky-order-review.png)\n\nStyle the Inner Section with a border or drop shadow to help it stand out more.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/sticky-component-border.png)\n\n### Make it Sticky\n\nSelect the Inner Section Widget then click on the Advanced Tab of Elementor sidebar and scroll down to Motion Effects, and chooose Sticky and position of Top.\n\nYou may want to add an offset of 10px or more to give some space between the Inner Section and your header.\n\nIt is usually a good idea to only show this effect on Desktop and Tablet since a mobile device will show both columns as one and you don’t want to block content below the sticky Inner Section.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/sticky-component-motion-effect.png)\n\nUpdate the Elementor Layout and you’re done!\n\n### Video",
+      "headings": [
+        "Create Two Columns",
+        "Add an Inner Section",
+        "Make it Sticky",
+        "Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Auto Click (One Click) Checkout",
+      "url": "https://launchflows.com/documentation/how-to-auto-click-one-click-checkout/",
+      "category": "Uncategorized",
+      "content": "### What Is It?\n\nJust like Amazon and other popular shopping sites, you can offer one-click checkout for any buyer unders certain circumstances.\n\nThis feature will present the buyer with an attractive overlay that indicates checkout is proceeding without the need for them to further add payment information or click the “Place Order” button.\n\n### How Does It Work?\n\nSimply by adding the shortcode or widget to the TOP of any LaunchFlows checkout page or post, a buyer directed to that page as part of a sales funnel will be prevented from seeing the checkout components below while the component auto-clicks the normal WooCommerce checkout button in the background and initiates a checkout.\n\n![LaunchFlows Autoclick Checkout](https://launchflows.com/wp-content/uploads/2021/08/launchflows-one-click-checkout-display.jpg)\n\n### When To Use?\n\nThis option requires that the buyer has already been registered,is currently logged-in to the site, and has a valid payment method on file that is setup as the first choice in WooCommerce payment methods.\n\nSimilarly, the product being purchased with this method should be something that is otherwise unique and not offered to buyers who would not meet these three conditions.\n\nIn the event that someone is directed to an Auto Click Checkout and the conditions are not met, then after a couple seconds the normal WooCommerce notice will appear to inform buyer that something is missing or needs attention.\n\nWhile this would still allow the checkout to proceed, it is not an ideal result vs. ensuring that you’ve setup the use of this feature in situations that are most likely to result in success.\n\n### Setup\n\nSimply create a regular LaunchFlows checkout page with the default layout, and then add a new section to the top of that layout with your page builder or Gutenberg.\n\nIt is best if you can make this top section with a vertical height of 100vh (full height) so that it fills the screen of the buyer with a blank space.\n\nThen add the shortcode below or use the Elementor widget or Gutenberg block for “lf-autoclick”, as shown in the image below (with Elementor for example)\n\n### Shortcode\n\n```\n[lf-autoclick]\n```\n\n### Elementor Widget\n\n![LaunchFlows Auto Click Checkout Display](https://launchflows.com/wp-content/uploads/2021/08/launchflows-one-click-checkout-setup-scaled.jpg)",
+      "headings": [
+        "What Is It?",
+        "How Does It Work?",
+        "When To Use?",
+        "Setup",
+        "Shortcode",
+        "Elementor Widget"
+      ],
+      "code_blocks": [
+        "[lf-autoclick]",
+        "[lf-autoclick]"
+      ]
+    },
+    {
+      "title": "Automatically Save Stripe Card Info",
+      "url": "https://launchflows.com/documentation/auto-save-stripe-credit-card-info/",
+      "category": "Uncategorized",
+      "content": "### What It Does\n\nEasily save the credit card payment method used in any Stripe checkout while simultaneously hiding the option and notice to save.\n\n### Where To Use\n\nUse this on the first paid product you offer to a buyer so that you can instantly and automatically save their preferred credit card. Works any time someone chooses to use a new payment method in Stripe.\n\n### Elementor Setup\n\nSETUP ON CHECKOUT LAYOUT:\n\nFirst, drag and drop the LaunchFlows Payment Widget into your layout. The controls for auto saving Stripe Credit Card are part of that widget.\n\nIf you are not creating a custom layout, then use the Shortcode below, which will not require you to do any further customizing of the default WooCommerce layout you are using.\n\n![Auto Save Stripe Card Info](https://launchflows.com/wp-content/uploads/2020/06/auto-save-stripe-card-info-1.png)\n\nFRONT END RESULT:\n\n![](https://launchflows.com/wp-content/uploads/2020/06/auto-save-cc-front-end.jpg)\n\n### Shortcode\n\nIf you don’t have Elementor, use the shortcode below and it will enable the auto-save by default on any page where it is used.\n\n**[lf-save-stripe-cc]**\n\n### Popop Video",
+      "headings": [
+        "What It Does",
+        "Where To Use",
+        "Elementor Setup",
+        "Shortcode",
+        "Popop Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Gutenberg & Kadence",
+      "url": "https://launchflows.com/documentation/how-to-create-with-gutenberg-kadence/",
+      "category": "Uncategorized",
+      "content": "### What Is Being Created\n\nAn example of a single page acting as the sales page and checkout, but built using Gutenberg blocks, along with the free Kadence theme, Kadence Blocks and Kadence Starter Templates.\n\nIn this case, instead of using the free Elementor plugin, you can watch how easy it is to use a few shortcode blocks, with the LaunchFlows checkout components you want to display, added to a ready-to-use Kadence Starter template page. Fast, Easy and Amazingly Powerful!\n\nPlease see video below:\n\n### Watch Video",
+      "headings": [
+        "What Is Being Created",
+        "Watch Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Variable Product Links",
+      "url": "https://launchflows.com/documentation/how-to-create-checkout-links-for-variable-products/",
+      "category": "Uncategorized",
+      "content": "### Description\n\nWith variable products, the syntax to send any particular variation directly to your custom checkout requires you to change the id from the main product to the variation id instead.\n\n### Use Case\n\nYou need to change the id of the main variation product to instead **use the id of the variation** you want to send to the checkout\n\nYou can also create an Instant Simple Product Bundle by using multiple variation id’s separated by a comma. [See More Info Here](https://launchflows.com/documentation/instant-simple-product-bundles/).\n\n### Example\n\n*/your-custom-checkout-page/?add-to-cart=xxxx   where “xxxx” equals the***id of the variation**\n\nYou may optionally specify an initial quantity as well by adding this to the end of the string.\n\n*/your-custom-checkout-page/?add-to-cart=xxxxx&quantity=2*",
+      "headings": [
+        "Description",
+        "Use Case",
+        "Example"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Empty The Checkout Cart​",
+      "url": "https://launchflows.com/documentation/emptycart/",
+      "category": "Uncategorized",
+      "content": "There are four ways to empty a product or a whole cart within a LaunchFlows checkout.\n\n### Remove Product Link\n\nThis remove product link is added by the LaunchFlows Order Review component, whether by way of the Widget or Shortcode.\n\n![](https://launchflows.com/wp-content/uploads/2020/02/emptycart-product-remove.png)\n\nIf you are using the Widget, you have the option to hide the Product Remove Links.\n\n![](https://launchflows.com/wp-content/uploads/2020/02/emptycart-product-remove-options.png)\n\n### URL String\n\nTo empty all products in the cart, add this string to the end of any **LaunchFlows Checkout Page url**.\n\n```\n?emptycart=yes   (or use & if following another parameter) ?add-to-cart=1234&emptycart=yes\n```\n\n#### Example\n\n```\nhttps://yourdomain.com/custom-checkout/?emptycart=yes\n```\n\n### Widget\n\nYou may use the LaunchFlows Emptycart Widget within Elementor. Simply drag into your layout and style with the widget controls\n\n![](https://launchflows.com/wp-content/uploads/2020/02/emptycart-widget.png)\n\n![](https://launchflows.com/wp-content/uploads/2020/02/emptycart-widget-setup.png)\n\n### Shortcode\n\nYou may use the LaunchFlows Emptycart Shortcode within the WordPress Editor (Classic or Gutenberg).\n\n**Empty Cart Button Display**\n\n```\n[lf-emptycart]\n```\n\n![](https://launchflows.com/wp-content/uploads/2020/02/emptycart.png)\n\n### Video",
+      "headings": [
+        "Remove Product Link",
+        "URL String",
+        "Example",
+        "Widget",
+        "Shortcode",
+        "Video"
+      ],
+      "code_blocks": [
+        "?emptycart=yes   (or use & if following another parameter) ?add-to-cart=1234&emptycart=yes",
+        "?emptycart=yes   (or use & if following another parameter) ?add-to-cart=1234&emptycart=yes",
+        "https://yourdomain.com/custom-checkout/?emptycart=yes",
+        "https://yourdomain.com/custom-checkout/?emptycart=yes",
+        "[lf-emptycart]",
+        "[lf-emptycart]"
+      ]
+    },
+    {
+      "title": "Force Redirect To Thank You Page",
+      "url": "https://launchflows.com/documentation/how-to-force-thank-you-page/",
+      "category": "Uncategorized",
+      "content": "### What It Does\n\nProvides a way to force the Thank You Page option for any particular product to override the Global Thank You Page option of LaunchFlows whenever more than one product has been purchased.\n\n### How To Use\n\nSimply check the “Force Thank You” checkbox in the product that has the Thank You Page choice you would like to use whenever that product has been purchased.\n\n*Note – Only use this option on ONE product (variable or simple) in any checkout sales flow. If you use it on more than one, the outcome of which page will depend on what product is first in the checkout and results will be unpredictable.\n\n![Force Thank You Page](https://launchflows.com/wp-content/uploads/2021/04/force-thank-you-page.png)",
+      "headings": [
+        "What It Does",
+        "How To Use"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Hide Any Component",
+      "url": "https://launchflows.com/documentation/how-to-hide-any-component/",
+      "category": "Uncategorized",
+      "content": "### What Is This?\n\nSometimes you may wish to hide one or more of the standard checkout or product components from being visible on the front end.\n\nA popular example of this is to hide the “Order Notes” (Additional) checkout fields.\n\nSince LaunchFlows displays all standard components unless you relocate or hide them, use this method to hide any component.\n\n### Hide Blocks\n\nIn Gutenberg blocks, you can add “**lf-hide**” (without quotes) to the Advanced/Additional Class(es) box for any widget.\n\n![LF Hide CSS](https://launchflows.com/wp-content/uploads/2021/09/lf-hide-css.jpg)\n\nIf you are using the free [Editor Plus](https://wordpress.org/plugins/editorplus/) plugin for Gutenberg:\n\na) First, click the three dots to the right of your LaunchFlows block and select “Group”, to turn block into a Group Block\n\n![Hide Turn Into A Group Block](https://launchflows.com/wp-content/uploads/2021/09/hide-turn-into-group.jpg)\n\nb) Second, select the block to hide then click the “Extras” tab on right side, and from the dropdown choose Display “None”\n\n![Hide With Editor Plus](https://launchflows.com/wp-content/uploads/2021/09/hide-with-editor-plus.jpg)\n\nc) The component will change colors to light grey to reflect that it is hidden.\n\n![Hide Extras Color](https://launchflows.com/wp-content/uploads/2021/09/hide-extras-color.jpg)\n\n### Hide Shortcodes\n\nTo hide any shortcode, simply wrap them with the following syntax:\n\n```\n<span style=\"display:none\">[shortcode goes here]</span>\n```\n\n### Hide Billing or Order Review Titles\n\nTo hide the title of the Billing or Order Review Components in Gutenberg blocks, you can add “**lf-hide-title**” (without quotes) to the Advanced/Additional Class(es) box for any widget.\n\n![lf-hide-title](https://launchflows.com/wp-content/uploads/2021/09/lf-hide-title.jpg)\n\n### Hide Shortcodes Titles (for Billing or Order Review Components Only)\n\nTo hide any shortcode, simply wrap them with the following syntax:\n\n```\n<span class=\"lf-hide-title\">[shortcode goes here]</span>\n```\n\n### Hide Elementor Widgets\n\nSimply slide the option toggle to “hide” any Elementor Component Widget. The component will change colors to red in the editor to reflect it is hidden.\n\n![Hide Elementor Widgets](https://launchflows.com/wp-content/uploads/2021/09/hide-with-elementor-scaled.jpg)\n\n### Resources\n\n[Watch This Video](https://launchflows.com/how-to-hide-any-woocommerce-checkout-component/)",
+      "headings": [
+        "What Is This?",
+        "Hide Blocks",
+        "Hide Shortcodes",
+        "Hide Billing or Order Review Titles",
+        "Hide Shortcodes Titles (for Billing or Order Review Components Only)",
+        "Hide Elementor Widgets",
+        "Resources"
+      ],
+      "code_blocks": [
+        "<span style=\"display:none\">[shortcode goes here]</span>",
+        "<span style=\"display:none\">[shortcode goes here]</span>",
+        "<span class=\"lf-hide-title\">[shortcode goes here]</span>",
+        "<span class=\"lf-hide-title\">[shortcode goes here]</span>"
+      ]
+    },
+    {
+      "title": "Redirect To Checkout After Login",
+      "url": "https://launchflows.com/documentation/how-to-redirect-back-to-checkout-after-login/",
+      "category": "Uncategorized",
+      "content": "### What Is Problem?\n\nIf you have a custom checkout page and a buyer needs to login, WooCommerce will redirect them to the global checkout page instead of your custom checkout page where they were intending to buy.\n\n### Solution\n\nInstall the free [Previous Page Redirect For WooCommerce](https://wordpress.org/plugins/previous-page-redirect-for-woocommerce/) plugin.\n\nThis will remember the last (checkout) page the buyer was on and redirect them back there instead of the global checkout page.\n\n### Alternate Code Solution\n\nIf you prefer, you can add this function to your child theme functions.php (or snippets plugin) to achieve similar result (don’t use with plugin!)",
+      "headings": [
+        "What Is Problem?",
+        "Solution",
+        "Alternate Code Solution"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Relocate The Place Order Button",
+      "url": "https://launchflows.com/documentation/how-to-relocate-place-order-button/",
+      "category": "Uncategorized",
+      "content": "### Why Do This?\n\nThere are times when you would like to relocate (and replace) the default WooCommerce “Place Order” button to relocate it to a different place in your custom checkout layout.\n\n### With Elementor\n\nGo into the LaunchFlows Payment widget and enable the “Hide Default Place Order Button” switch.\n\n![LaunchFlows Hide Default Place Order Button](https://launchflows.com/wp-content/uploads/2020/05/launchflows-hide-default-place-order-button-elementor.jpg)\n\nNext, add a new LaunchFlows Place Order Button widget wherever you desire in your layout. Style the new button to your tastes.\n\n![LaunchFlows Add New Place Order Button](https://launchflows.com/wp-content/uploads/2020/05/launchflows-add-new-place-order-button-elementor.jpg)\n\n### With Shortcodes\n\nHide the default WooCommerce place order button by adding the following shortcode to the bottom of your layout, so it does not create any unwanted spaces between displayed elements:\n\n```\n[lf-checkout-button]\n```\n\n![LaunchFlows Add New Place Order Button Shortcode](https://launchflows.com/wp-content/uploads/2020/05/launchflows-hide-default-place-order-button-shortcode.jpg)\n\nNext, add a new button or clickable element to your layout and assign the ID (HTML anchor) of **#lf-checkout-button**\n\n![LaunchFlows Add New Place Order Button Shortcode](https://launchflows.com/wp-content/uploads/2020/05/launchflows-add-new-place-order-button-shortcode.jpg)\n\nThis will cause the new button or clickable element to trigger the default checkout process.",
+      "headings": [
+        "Why Do This?",
+        "With Elementor",
+        "With Shortcodes"
+      ],
+      "code_blocks": [
+        "[lf-checkout-button]",
+        "[lf-checkout-button]"
+      ]
+    },
+    {
+      "title": "Return To Checkout After Add To Cart",
+      "url": "https://launchflows.com/documentation/how-to-return-to-checkout/",
+      "category": "Uncategorized",
+      "content": "### What Is Return To Checkout?\n\nAfter a buyer adds or removes a product from a custom checkout, this component will return them to the same scroll position(desktop)or top of the checkout section(mobile).\n\n### What It Does\n\nThis enables the buyer to immediately continue with the checkout after making modifications.\n\n### Setup With Elementor\n\n1. 1. Highlight the section containing your checkout components\n2. In the “Advanced” tab, add the CSS ID of “**checkout**“\n\n![](https://launchflows.com/wp-content/uploads/2021/01/return-to-checkout-1.png)\n\n1. 1. Drag the Return Checkout widget to the bottom of your layout\n\n![](https://launchflows.com/wp-content/uploads/2021/01/return-to-checkout-widget.png)\n\n1. Click “Update” to save your work\n\n### Setup With Classic or Gutenberg\n\n1. 1. Add a division or block with the CSS ID of “checkout” to the top of the checkout page layout.\n\n```\n<div id=\"checkout\"></div>\n```\n\nOr with Gutenberg, add an HTML block and add the same code.\n\n![](https://launchflows.com/wp-content/uploads/2021/01/return-to-checkout-gutenberg.png)\n\n1. 1. Add the following shortcode to the Classic or Gutenberg Editor\n\n```\n[lf-return-checkout]\n```\n\n1. Click “Update” to save your work\n\n### What To Expect\n\nOn Desktop, Return To Checkout will return the browser scroll position to where it was before reloading, on Mobile, it will return to the position of the #checkout ID.\n\n### Click To Watch Video\n\n### Setup With Gutenberg\n\n1. Using the LaunchFlows option to add a checkout page, create a long form sales / checkout page using any post type, including if you wish, a product.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/8364e376-a2ed-4d89-89e9-3e87d906980d/cropped_screenshot_$1637203326.jpeg)\n\n2. Add at least two call to action buttons or text links. The first will be to add the product to the cart for this checkout page. The second will be for scrolling to the #checkout section of the layout.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/2acea6da-dc06-4a39-857a-787377560945/cropped_screenshot_$1637203327.jpeg)\n\n3. For the Buy It Now buttons, copy the LaunchFlows LF-Direct To Checkout link for the product you wish to sell, and paste it to the url for the first button. Be sure the product is configured to have this versy same page as the location for being redirected after the product is added to cart (Next Step option).\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/c628be5d-5f89-4508-b5c5-b62c309311c1/cropped_screenshot_$1637203328.jpeg)\n\n4. Create a second button that will be used for scrolling down to the location of the checkout.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/a119d89d-ad35-4bae-a18b-5b3c05e108f9/cropped_screenshot_$1637203331.jpeg)\n\n5. Use the bookmark link of #checkout for this button.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/9a6a5da4-ed40-4385-b3d4-ca9b86f008f3/cropped_screenshot_$1637203332.jpeg)\n\n6. Add the LaunchFlows block, shortcode or Elementor Widget for “lf-return-checkout”. This is what adds the javascript code to this layout for enabling the return to checkout feature.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/43e8eeaa-bd50-4015-a8e9-fd4cd6f0d540/cropped_screenshot_$1637203335.jpeg)\n\n7. Open up the gutenberg List View so you can convert this block into a group.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/de5a9099-2475-4477-ae99-f17aa4228e76/cropped_screenshot_$1637203337.jpeg)\n\n8. Right click on the lf-return-checkout block and choose “group” so that it becomes a Gutenber group block.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/5eb73dc6-24f7-4a6e-99b2-a08e0168a373/cropped_screenshot_$1637203338.jpeg)\n\n9. After selecting the new Group block, click the “Advanced” option on right side so that you can apply the HTML anchor tag of #checkout.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/3a39598a-24d7-4394-9f76-dc9d33f54a72/cropped_screenshot_$1637203339.jpeg)\n\n10. Click the “HTML anchor” field and type in the word “checkout” without the hashtag (Gutenber will add it by default).\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/7376b276-c438-4634-b38c-3a1179d33e29/cropped_screenshot_$1637203340.jpeg)\n\n11. To hide the WooCommerce coupon component from this layout, first click “LaunchFlows LaunchFlows Woocommerce Coupon”\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/fb3d137b-2000-4717-952a-89de189c6a29/cropped_screenshot_$1637203341.jpeg)\n\n12. Then click the “Additional CSS class(es)” field and type in “lf-hide”. This will cause the component to be hidden from the public side.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/9265e8fb-1159-4e7b-8595-5b3237fbd3f7/cropped_screenshot_$1637203342.jpeg)\n\n13. Repeat this for the Additional Fields component.\n\n![](https://colony-recorder.s3.amazonaws.com/files/2021-11-18/006f78b1-dc08-4623-be84-330596f47716/user_cropped_screenshot.jpeg)\n\n14. Test click the “Buy It Now!” button. The product should be added to the cart.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/59675c38-5d54-43de-9a69-12d4d2d863c7/cropped_screenshot_$1637203346.jpeg)\n\n15. Then click the scroll to checkout button, and you should be taken to the checkout anchor location.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/80a07e0f-b1ee-4cb4-bba6-1f1957b3237e/cropped_screenshot_$1637203347.jpeg)\n\n16. Where you can complete the order with the “Place Order” button.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/8c35be15-d897-40e7-bda8-a143860e207a/cropped_screenshot_$1637203348.jpeg)\n\n17. Test to see what happens when you delete the product from the order review.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/5f3312d1-efe2-4d0b-8cec-d06b9372ca9e/cropped_screenshot_$1637203350.jpeg)\n\n18. The checkout page/post should reload and return to the checkout position.\n\n![](https://colony-recorder.s3.amazonaws.com/scribe_documents/073ae23f-fe8c-4000-ab00-e07a60040003/actions/652d4335-fcf5-4808-815f-662c01a368fa/cropped_screenshot_$1637203352.jpeg)",
+      "headings": [
+        "What Is Return To Checkout?",
+        "What It Does",
+        "Setup With Elementor",
+        "Setup With Classic or Gutenberg",
+        "What To Expect",
+        "Click To Watch Video",
+        "Setup With Gutenberg"
+      ],
+      "code_blocks": [
+        "<div id=\"checkout\"></div>",
+        "<div id=\"checkout\"></div>",
+        "[lf-return-checkout]",
+        "[lf-return-checkout]"
+      ]
+    },
+    {
+      "title": "Save Credit Cards Automatically",
+      "url": "https://launchflows.com/documentation/how-to-save-credit-cards-automatically/",
+      "category": "Uncategorized",
+      "content": "### Why Do This?\n\nFor optimal checkout experiences, you don’t want to ask buyer to add their card every time. It is easier and faster to use the AutoClick Checkout option of LaunchFlows.\n\nTo ensure that buyer has saved their credit card safely with Stripe or Square, be sure to enable this option in either the Elementor Payment widget or by adding the shortcode below (you don’t want to do both).\n\n### Elementor\n\nWhen using the LaunchFlows Payment widget, slide the Autosave CC option for the gateway(s) you are using to “yes” as shown below. Do not use the shortcode if you use this method.\n\n![LaunchFlows Hide CC Elementor](https://launchflows.com/wp-content/uploads/2021/07/launchflows-hide-cc-elementor.jpg)\n\n### Shortcode\n\nDepending on which gateways you have enabled, add one or both of the following shortcodes to the bottom of your checkout layout or page so they do not cause any unwanted gaps in the layout spacing.\n\n**Save Stripe Credit Card Automatically**\n\n```\n[lf-save-stripe-cc]\n```\n\n**Save Square Credit Card Automatically**\n\n```\n[lf-save-square-cc]\n```\n\nYou will find that the checkbox for either option is enabled but that the option is hidden from the buyer, so as to remove any confusion or ability to override the same.\n\n**Before:**\n\n![LaunchFlows Hide CC before](https://launchflows.com/wp-content/uploads/2021/07/launchflows-hide-stripe-cc-before.jpg)\n\n**After:**\n\n![LaunchFlows Hide CC after](https://launchflows.com/wp-content/uploads/2021/07/launchflows-hide-stripe-cc-after.jpg)",
+      "headings": [
+        "Why Do This?",
+        "Elementor",
+        "Shortcode"
+      ],
+      "code_blocks": [
+        "[lf-save-stripe-cc]",
+        "[lf-save-stripe-cc]",
+        "[lf-save-square-cc]",
+        "[lf-save-square-cc]"
+      ]
+    },
+    {
+      "title": "Style Or Hide Components With Gutenberg",
+      "url": "https://launchflows.com/documentation/how-to-style-or-hide-components-with-block-editor/",
+      "category": "Uncategorized",
+      "content": "### Why Do This?\n\nLaunchFlows adds all of the default WooCommerce checkout components to any page, post or lesson where you’ve selected the LaunchFlows Canvas or Full Width Page Layout.\n\nIn order to customize the look and feel of each component, as well as relocate it or even hide it from the layout entirely, we first must add a shortcode to tell LaunchFlows we wish to modify that particular component.\n\n### What Will We Need?\n\nWe highly recommend the free [Editor Plus](https://wordpress.org/plugins/editorplus/) plugin from the WordPress Respository or any similar plugin that adds additional style and visibility controls to a Gutenberg Block.\n\nYou will also want to refer to our [LaunchFlows Shortcode Documentation](https://launchflows.com/documentation/shortcodes/) for each component you would like to style, relocate or hide.\n\n### How Does It Work?\n\nYou will have more style and visibility control if you use a paragraph block instead of a shortcode block.\n\nSimply click on the Gutenberg Block Selector (the “+” symbol) and add a new paragraph.\n\nIt is more effective if you first add some placeholder content and style choices to this paragraph before adding your shortcode, so type a few characters of placeholder, add some style with the Editor Plus options under “Block” and then click “Update”.\n\nOnce you’ve established the new paragraph block, add the shortcode for whichever component you wish to style, relocate or hide, such as [lf-billing], then click “Update”\n\nYou will now find that the LaunchFlows checkout component that was previously in the standard layout has been moved to the top of your layout, in whichever column position, and possesses the style or visibility you’ve assigned with Editor Plus.\n\n### To Style A Block\n\nSelect any of the Editor Plus style controls, such as in this example we’ve added a blue border around the LaunchFlows Billing Component. You can use any number of layered styles on one block.\n\n![LaunchFlows Style Border Editor Plus](https://launchflows.com/wp-content/uploads/2021/07/launchflows-style-border-editor-plus.jpg)\n\n### To Hide A Block\n\nSometimes you wish to relocate a checkout component out of the standard layout, such as the Additional Fields, or the coupon, etc.\n\nIn order to do this, simply use the Editor Plus Block controls for “Extras” and then from the Display dropdown choose “None” as the option.\n\nThis will allow you to see the block on the admin side but will remove it from the LaunchFlows checkout design on the front end of your site.\n\n![LaunchFlows Block Visibility With Editor Plus](https://launchflows.com/wp-content/uploads/2021/07/launchflows-style-visibility-none-editor-plus.jpg)\n\n### Watch This Video",
+      "headings": [
+        "Why Do This?",
+        "What Will We Need?",
+        "How Does It Work?",
+        "To Style A Block",
+        "To Hide A Block",
+        "Watch This Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Pre-fill WooCommerce Checkout Fields",
+      "url": "https://launchflows.com/documentation/how-to-pre-fill-woocommerce-checkout-fields/",
+      "category": "Uncategorized",
+      "content": "Uses any URL variables you send to a WooCommerce checkout page where the visitor is not otherwise registered and logged-in. This function fills in the three fields with the data passed in the URL string.\n\nemail= (**Note-this is REQUIRED no matter what*)\n\nfname=\n\nlname=\n\nUse with a LeadMagnet product or when sending a new lead or prospect from another website or social media.\n\nIf prospect has already provided their first and last name and email, this eliminates the need for them to add this information again in the WooCommerce checkout.\n\n*Note: after they complete the first transaction on your site (free or paid), their user information is always pre-filled by WooCommerce.\n\nTherefore use this for situations where the visitor is new, rather than returning customer.\n\nhttps://yourdomain.com/custom-checkout/?**email=**bob@smith.com&**fname=**bob&**lname=**smith",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "Instant Registration",
+      "url": "https://launchflows.com/documentation/instant-registration/",
+      "category": "Uncategorized",
+      "content": "### What Is Instant Registration?\n\nLaunchFlows offers two ways to deliver a fully formatted checkout experience that displays only the minimum fields required to onboard a new user. *First Name, Last Name, Email.*![](https://launchflows.com/wp-content/uploads/2020/12/instant-registration-new-form.png)**\n\n### When To Use\n\nWhenever you need to register **and** log someone immediately as a free user, such as when offering a sample course or free consultation. If you have connected a CRM to your WooCommerce site, this is also a way to provide custom tracking of the user (contact) journey through your sales funnel, even if they have not completed a paid purchase.\n\n### What It Does\n\nThree important goals:\n\n1. **Creates** a new User\n2. **Logs-in** this new User\n3. *Optionally:* **Tracks** this new User with Marketing Automation\n\nInstant Registration is accomplished by either:\n\n1. **A Registration Shortcode**or\n2. **A Free Registration Product**\n\n### Setup A Registration Shortcode\n\nIn the event you do not plan to send a visitor down a Sales Funnel immediately and offer other products for sale, **the fastest and easiest way to register and log in a new user to the WooCommerce “My Account” page** is by using the following shortcode or Gutenberg component, within any page or post.\n\n```\n[lf-registration]\n```\n\n**Note: Anyone logged-in will be redirected to “My Account” page, so view your setup from an incognito window to check the look and feel of registration form.*\n\n### Add Names To Registration Form\n\nLaunchFlows provides a global option to add the user First & Last Name fields to the registration form. The names will appear on both the My Account registration form as well as the LaunchFlows Registration shortcode form.\n\nTo add names, simply check the LaunchFlows global option for “Add First & Last Name To Registration Form: When registering new user with WooCommerce.” as shown below:\n\n![add-names-to-registration](https://launchflows.com/wp-content/uploads/2020/12/add-names-to-registration.png)\n\n### Setup A Free Registration Product\n\n1. Create a Simple Product that is “Virtual” and “Downloadable”\n2. Set the price to **$0** *(*Important!)*\n3. Select any checkout page from the dropdown\n4. Check “Instant Registration” and “Solo Checkout”\n\n![](https://launchflows.com/wp-content/uploads/2020/12/instant-registration-create-free-product.png)\n\n![Instant Registration Checkbox](https://launchflows.com/wp-content/uploads/2020/12/instant-registration-checkbox.png)\n\n### Where To Use\n\nAdd to any checkout with the LF-Direct Checkout Link or with the “Always In Checkout” component / shortcode.\n\n1. **LF-Direct Checkout Link** – Copy the url from your Instant Registration product and use it within any button or clickable link.![](https://launchflows.com/wp-content/uploads/2020/12/instant-registration-direct-checkout-link.png)\n2. **Always In Checkout Component / Shortcode** – Add the Instant Registration product ID to the component or shortcode and add to any 0checkout.![](https://launchflows.com/wp-content/uploads/2020/12/instant-registration-shortcode.png)![](https://launchflows.com/wp-content/uploads/2020/12/instant-registration-widget.png)\n\n### Hide Free Orders & Emails\n\nIn most cases you will not want new users to view Instant Registration “orders” in their My-Account area, nor would you want them to receive emails confirming such “orders.”\n\nLikewise, as the administrator, you do not want to litter your order archive with free registrations.\n\nWe recommend that you hide both of these, and provide an optional dropdown to view free orders, by checking the highlighted boxes when you visit the main LaunchFlows tab of the admin dashboard:\n\n![](https://launchflows.com/wp-content/uploads/2020/12/launchflows-dash-hide-free-orders-1.png)\n\nAs the admin, this is what you will then see in the main orders archive (drop down filter):\n\n![](https://launchflows.com/wp-content/uploads/2020/12/hide-free-orders.png)",
+      "headings": [
+        "What Is Instant Registration?",
+        "When To Use",
+        "What It Does",
+        "Setup A Registration Shortcode",
+        "Add Names To Registration Form",
+        "Setup A Free Registration Product",
+        "Where To Use",
+        "Hide Free Orders & Emails"
+      ],
+      "code_blocks": [
+        "[lf-registration]",
+        "[lf-registration]"
+      ]
+    },
+    {
+      "title": "Bumps & Variations",
+      "url": "https://launchflows.com/documentation/bumps-variations/",
+      "category": "Uncategorized",
+      "content": "### What are Bumps & Variations?\n\nThese provide a way to sell any product or group of products on the checkout page by clicking a checkbox or radio button.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/order-bump-example.png)\n\n### When to use them?\n\nThe Order Bump component can be used on any LaunchFlows checkout page or step, as a way to add products to the checkout.\n\nUse this component instead of the normal WooCommerce single product page for choosing specific products or variations.\n\nWhen using with variations, it makes it easy to break out each variation option into a single radio button by using the variation ID.\n\n### What they accomplish\n\nThree important goals:\n\n1. Allow a buyer to select products directly from any checkout page\n2. Offer a primary product alongside additional offers, all on the same page\n3. Eliminate the need for multi-step sales funnels, using a one page checkout\n\n### Bump Setup\n\n1. Create a checkout page by selecting either of the LaunchFlows Templates from the Page Attributes dropdown\n2. Add the Order Bump Component / Shortcode to this checkout page via Gutenberg, Classic Editor or Elementor\n\n![](https://launchflows.com/wp-content/uploads/2020/12/order-bump-widget.png)\n\n![](https://launchflows.com/wp-content/uploads/2020/12/order-bump-shortcode.png)\n3. Add the product ID to the Component / Shortcode, and optionally any additional parameters\n4. Setup the style and optionally hide any parts of the Component you do not wish to display\n\n### Variation Setup\n\nIf you prefer to offer an array of products, where only **ONE** variation option from product can be added at a time, create a Variable Product instead.\n\n1. Select “Variable Product” instead of “Simple Product” from the WooCommerce product setup.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/order-bump-variable-product.png)\n2. In the setup page for the Variable Product, be sure to check the option box for “One Variation” so that a buyer can only add one variation or another, instead of multiple\n\n![](https://launchflows.com/wp-content/uploads/2020/12/one-variation.png)\n3. Then add any of the individual variation IDs to separate Order Bump components / shortcodes.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/order-bump-setup.png)\n4. Finally, choose the “circle” Checkbox Style option or use the *style=”p-circle”* shortcode parameter to change the square checkbox to a radio button.\n\n### Watch Video",
+      "headings": [
+        "What are Bumps & Variations?",
+        "When to use them?",
+        "What they accomplish",
+        "Bump Setup",
+        "Variation Setup",
+        "Watch Video"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Upsells & Downsells",
+      "url": "https://launchflows.com/documentation/upsells-downsells/",
+      "category": "Uncategorized",
+      "content": "### What are Upsells & Downsells?\n\nThese provide a way to sell an additional product *AFTER* the original checkout has been completed.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/upsell-example-1.png)\n\n### When to use\n\nThe Upsell component can be used on any page or post as a way to add a product offer. It does not require a LaunchFlows checkout.\n\nYou may also choose to daisy-chain multiple Upsell or Downsell steps together in a row.\n\nFor example, if someone declines an Upsell offer, it would be advantageous to offer them a Downsell offer (a less-expensive alternative) immediately thereafter.\n\n### Why to use\n\n1. Offer products for sale AFTER an initial checkout\n2. Offer different products in sequence, based on various conditions\n3. Increase the total sale amount to any particular buyer during one visit\n\n### How to setup\n\n1. Create a new product to act as your upsell or downsell. It can be any type of product (eg: simple or subscription, etc)\n2. Select a new or existing page or post to hold your Upsell or Downsell offer. You do **not** need to select a LaunchFlows template.\n3. If you use Elementor for this page, simply add the LaunchFlows Upsell widget to your page/post layout, otherwise use the LaunchFlows shortcode.\n4. Add the new upsell/downsell product ID you just created as the “Accept” option or parameter, and the page/post ID for the destination where you’d like someone to be directed if they decline. You may optionally change the text and style and display of the other upsell components such as image, price, title, etc.![](https://launchflows.com/wp-content/uploads/2020/12/upsell-setup-page-1.png)\n\n### Shortcode\n\nIf you are not using Elementor, this shortcode will output the Upsell / Downsell component.\n\n```\n[[lf-upsell product=\"1234\" next=\"5678\" accept=\"Yes, I Want It!\" accept_tags=\"123,456\" decline=\"No Thanks...\" image=\"yes\" title=\"yes\" price=\"yes\"]]\n```\n\n.wp-block-kadence-advancedheading.kt-adv-heading_423b02-e5, .wp-block-kadence-advancedheading.kt-adv-heading_423b02-e5[data-kb-block=\"kb-adv-heading_423b02-e5\"]{font-style:normal;}.wp-block-kadence-advancedheading.kt-adv-heading_423b02-e5 mark.kt-highlight, .wp-block-kadence-advancedheading.kt-adv-heading_423b02-e5[data-kb-block=\"kb-adv-heading_423b02-e5\"] mark.kt-highlight{font-style:normal;color:#f76a0c;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}.wp-block-kadence-advancedheading.kt-adv-heading_423b02-e5 img.kb-inline-image, .wp-block-kadence-advancedheading.kt-adv-heading_423b02-e5[data-kb-block=\"kb-adv-heading_423b02-e5\"] img.kb-inline-image{width:150px;vertical-align:baseline;}\n\n### How To Redirect To Custom URL\n\nSometimes you may wish to redirect to a custom URL that is not a page, post or lesson. To do this most easily, use the free [Simple Post Redirect](https://wordpress.org/plugins/simple-post-redirect/) plugin to turn a standard page into a placeholder that you can select from the LaunchFlows product dropdown, but that sends the buyer to another destination.",
+      "headings": [
+        "What are Upsells & Downsells?",
+        "When to use",
+        "Why to use",
+        "How to setup",
+        "Shortcode",
+        "How To Redirect To Custom URL"
+      ],
+      "code_blocks": [
+        "[[lf-upsell product=\"1234\" next=\"5678\" accept=\"Yes, I Want It!\" accept_tags=\"123,456\" decline=\"No Thanks...\" image=\"yes\" title=\"yes\" price=\"yes\"]]",
+        "[[lf-upsell product=\"1234\" next=\"5678\" accept=\"Yes, I Want It!\" accept_tags=\"123,456\" decline=\"No Thanks...\" image=\"yes\" title=\"yes\" price=\"yes\"]]"
+      ]
+    },
+    {
+      "title": "Donations & Pay Now",
+      "url": "https://launchflows.com/documentation/donations-pay-now/",
+      "category": "Uncategorized",
+      "content": "### What are Donations & Pay Now?\n\nThese make it easy for donors and clients to pay or donate exactly what they want with just one click, using any gateways that work with WooCommerce.\n\n![](https://launchflows.com/wp-content/uploads/2020/12/donation-1.png)\n\n### When to use\n\nUse on any page or post where you want donors or clients to submit a unique donation or payment. A LaunchFlows checkout template is not required.\n\nYou may also daisy-chain multiple components together with this to create powerful sales funnels with conditional outcomes based on what was just purchased.\n\n*For example:*\n\nDonation / Pay Now **⇛** Checkout **⇛** Upsell Offer (Course) **⇛** Thank You + Next Step Link **⇛** Course Start Page\n\n### Why to use\n\n1. To allow buyer to set the amount of the donation or payment dynamically\n2. To replace complex donation plugins or invoicing software\n\n### Setup: Donation or Payment\n\n1. Create a Simple Product (one time payment) or Subscription Product (recurring payments).\n2. Select Checkout Page where this product will be purchased from the Product data/LaunchFlows tab\n3. Check the “Solo Checkout” if you would like to ensure this product is the only item purchased (**Optional*)\n4. Using Elementor, add the **LaunchFlows Donation Widget**to any page or post.\n5. Add the Product ID, Button and Field Text\n6. Select the Content and Style options options in the Widget\n\n![](https://launchflows.com/wp-content/uploads/2020/12/donation-product-setup.png)\n\n### Simple Block Pattern Method\n\n![](https://launchflows.com/wp-content/uploads/2020/12/donation-widget-elementor.png)\n\n![](https://launchflows.com/wp-content/uploads/2020/12/donation-widget-setup.png)\n\n### URL Link Method\n\nIf you create a custom button or clickable text link, simply use the LF-Direct Checkout link for any product and then add the syntax of “**&donation=xxx**” to the end of the string, where “xxx” is the dollar amount.\n\nFor example, where “12345” is the product ID for the donation product, and “checkout” is the url of the checkout, the finished url you would apply to a button or clickable text link for a **25** donation (of your default currency) would be:\n\n```\nhttps://yoursite.com/checkout/?add-to-cart=12345&donation=25\n```\n\n### Shortcode Method\n\nThe shortcode to add this component is:\n\n```\n[lf-donate product=\"12345\"]\n```\n\nwhere “12345” is the product ID for the Donation Product.\n\nYou may optionally add either of two other attributes to modify the field text or the button text\n\n```\n[lf-donate product=\"12345\" field=\"Donate Big!\" button=\"Do It Now!!\"]\n```\n\n### Watch Video One\n\n### Watch Video Two",
+      "headings": [
+        "What are Donations & Pay Now?",
+        "When to use",
+        "Why to use",
+        "Setup: Donation or Payment",
+        "Simple Block Pattern Method",
+        "URL Link Method",
+        "Shortcode Method",
+        "Watch Video One",
+        "Watch Video Two"
+      ],
+      "code_blocks": [
+        "https://yoursite.com/checkout/?add-to-cart=12345&donation=25",
+        "https://yoursite.com/checkout/?add-to-cart=12345&donation=25",
+        "[lf-donate product=\"12345\"]",
+        "[lf-donate product=\"12345\"]",
+        "[lf-donate product=\"12345\" field=\"Donate Big!\" button=\"Do It Now!!\"]",
+        "[lf-donate product=\"12345\" field=\"Donate Big!\" button=\"Do It Now!!\"]"
+      ]
+    },
+    {
+      "title": "Remove Products From Cart",
+      "url": "https://launchflows.com/documentation/remove-products-from-cart/",
+      "category": "Uncategorized",
+      "content": "### What Does This Do?\n\nThis functionality allows you to remove any specific product from the cart at any step in your sales funnel.\n\nThis makes it super easy to create a granular level of control over which product(s) a buyer will have available at the final checkout.\n\n### Shortcode Method\n\nSimply add the following shortcode into any page or post that a buyer will visit prior to the final checkout or on the checkout page itself (either will work).\n\n**Remove Product From Cart**\n\n```\n[lf-remove-product id=\"1234\"]\n```\n\n### URL String Method\n\nSimply add the following url string, with the unique ID of the product you wish to remove, to any clickable element or redirection you are setting up.\n\nWhen the buyer arrives at this url with the string at the end, the matching product will be removed from the cart automatically. *(*swap 1234 for your product id)*\n\n![remove-products-from-cart-url-string](https://launchflows.com/wp-content/uploads/2022/03/remove-products-from-cart-url-string.png)\n\n```\n?remove-product=1234\n```\n\n### Block Or Widget Method\n\nSimply drop the block or widget called “LaunchFlows Remove Product” into any page prior to or including checkout, and add the ID for the product you want automatically removed.\n\n![remove-products-from-cart-elementor](https://launchflows.com/wp-content/uploads/2022/03/remove-products-from-cart-elementor.png)\n\n![remove-products-from-cart-block](https://launchflows.com/wp-content/uploads/2022/03/remove-products-from-cart-block.png)",
+      "headings": [
+        "What Does This Do?",
+        "Shortcode Method",
+        "URL String Method",
+        "Block Or Widget Method"
+      ],
+      "code_blocks": [
+        "[lf-remove-product id=\"1234\"]",
+        "[lf-remove-product id=\"1234\"]",
+        "?remove-product=1234",
+        "?remove-product=1234"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T13:24:11.810Z",
-  "total_plugins": 69,
+  "last_updated": "2026-04-05T14:10:12.391Z",
+  "total_plugins": 70,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -1028,6 +1028,16 @@
       "last_scraped": "2026-04-05T13:24:11.810Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "launchflows-customer-dashboardboards-for-woocommerce",
+      "name": "LaunchFlows Customer Dashboardboards For WooCommerce",
+      "documentation_url": "https://launchflows.com/documentation/",
+      "last_scraped": "2026-04-05T14:10:12.391Z",
+      "page_count": 43,
+      "categories": [
+        "uncategorized"
+      ]
     }
   ]
 }

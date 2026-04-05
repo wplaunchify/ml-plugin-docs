@@ -1,0 +1,191 @@
+{
+  "plugin_slug": "launchflows-customer-dashboardboards-for-woocommerce",
+  "plugin_name": "LaunchFlows Customer Dashboardboards For WooCommerce",
+  "documentation_url": "https://launchflows.com/documentation/",
+  "last_scraped": "2026-04-05T14:10:12.390Z",
+  "total_pages": 43,
+  "failed_urls_count": 7,
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://launchflows.com/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 43,
+      "pages": [
+        {
+          "title": "Hide Out Of Stock & Back Ordered Products",
+          "url": "https://launchflows.com/documentation/hide-out-of-stock-back-ordered-products/"
+        },
+        {
+          "title": "Hide Product Thumbnail In Order Review",
+          "url": "https://launchflows.com/documentation/hide-product-thumbnail-in-order-review/"
+        },
+        {
+          "title": "Remove Product Slug From URL",
+          "url": "https://launchflows.com/documentation/remove-product-slug-from-url/"
+        },
+        {
+          "title": "What Is LaunchFlows?",
+          "url": "https://launchflows.com/documentation/what-is-launchflows/"
+        },
+        {
+          "title": "Install LaunchFlows",
+          "url": "https://launchflows.com/documentation/how-to-install-launchflows/"
+        },
+        {
+          "title": "Quick Start Guide",
+          "url": "https://launchflows.com/documentation/quick-start/"
+        },
+        {
+          "title": "Shortcodes",
+          "url": "https://launchflows.com/documentation/shortcodes/"
+        },
+        {
+          "title": "Recommended Plugins & Services",
+          "url": "https://launchflows.com/documentation/recommended-plugins-services/"
+        },
+        {
+          "title": "Hide Order Comments",
+          "url": "https://launchflows.com/documentation/how-to-hide-order-comments/"
+        },
+        {
+          "title": "Customize The Single Product Layout",
+          "url": "https://launchflows.com/documentation/customize-the-single-product-layout/"
+        },
+        {
+          "title": "Disable Product Layout Capability",
+          "url": "https://launchflows.com/documentation/disable-product-layout-capability/"
+        },
+        {
+          "title": "Send Product Directly To Checkout",
+          "url": "https://launchflows.com/documentation/how-to-send-product-directly-to-checkout/"
+        },
+        {
+          "title": "One Page Product & Checkout",
+          "url": "https://launchflows.com/documentation/how-to-product-sales-checkout-page/"
+        },
+        {
+          "title": "Instant Simple Product Bundles",
+          "url": "https://launchflows.com/documentation/instant-simple-product-bundles/"
+        },
+        {
+          "title": "Create Checkout Pages",
+          "url": "https://launchflows.com/documentation/create-checkout-pages/"
+        },
+        {
+          "title": "Bricksey Theme",
+          "url": "https://launchflows.com/documentation/bricksey-theme/"
+        },
+        {
+          "title": "Divi",
+          "url": "https://launchflows.com/documentation/divi/"
+        },
+        {
+          "title": "Elementor Style Or Hide",
+          "url": "https://launchflows.com/documentation/how-to-style-or-hide-with-elementor/"
+        },
+        {
+          "title": "GeneratePress",
+          "url": "https://launchflows.com/documentation/generatepress/"
+        },
+        {
+          "title": "Oxygen Builder",
+          "url": "https://launchflows.com/documentation/oxygen-builder/"
+        },
+        {
+          "title": "WPBakery Page Builder",
+          "url": "https://launchflows.com/documentation/wpbakery-pagebuilder/"
+        },
+        {
+          "title": "Five Methods For Selling",
+          "url": "https://launchflows.com/documentation/five-methods-for-selling/"
+        },
+        {
+          "title": "Toggle Coupon Redemption Field",
+          "url": "https://launchflows.com/documentation/toggle-coupon-redemption-field/"
+        },
+        {
+          "title": "Show A Loyalty Notice",
+          "url": "https://launchflows.com/documentation/loyalty-notice/"
+        },
+        {
+          "title": "Sticky Checkout Components",
+          "url": "https://launchflows.com/documentation/add-a-sticky-checkout-component/"
+        },
+        {
+          "title": "Auto Click (One Click) Checkout",
+          "url": "https://launchflows.com/documentation/how-to-auto-click-one-click-checkout/"
+        },
+        {
+          "title": "Automatically Save Stripe Card Info",
+          "url": "https://launchflows.com/documentation/auto-save-stripe-credit-card-info/"
+        },
+        {
+          "title": "Gutenberg & Kadence",
+          "url": "https://launchflows.com/documentation/how-to-create-with-gutenberg-kadence/"
+        },
+        {
+          "title": "Variable Product Links",
+          "url": "https://launchflows.com/documentation/how-to-create-checkout-links-for-variable-products/"
+        },
+        {
+          "title": "Empty The Checkout Cart​",
+          "url": "https://launchflows.com/documentation/emptycart/"
+        },
+        {
+          "title": "Force Redirect To Thank You Page",
+          "url": "https://launchflows.com/documentation/how-to-force-thank-you-page/"
+        },
+        {
+          "title": "Hide Any Component",
+          "url": "https://launchflows.com/documentation/how-to-hide-any-component/"
+        },
+        {
+          "title": "Redirect To Checkout After Login",
+          "url": "https://launchflows.com/documentation/how-to-redirect-back-to-checkout-after-login/"
+        },
+        {
+          "title": "Relocate The Place Order Button",
+          "url": "https://launchflows.com/documentation/how-to-relocate-place-order-button/"
+        },
+        {
+          "title": "Return To Checkout After Add To Cart",
+          "url": "https://launchflows.com/documentation/how-to-return-to-checkout/"
+        },
+        {
+          "title": "Save Credit Cards Automatically",
+          "url": "https://launchflows.com/documentation/how-to-save-credit-cards-automatically/"
+        },
+        {
+          "title": "Style Or Hide Components With Gutenberg",
+          "url": "https://launchflows.com/documentation/how-to-style-or-hide-components-with-block-editor/"
+        },
+        {
+          "title": "Pre-fill WooCommerce Checkout Fields",
+          "url": "https://launchflows.com/documentation/how-to-pre-fill-woocommerce-checkout-fields/"
+        },
+        {
+          "title": "Instant Registration",
+          "url": "https://launchflows.com/documentation/instant-registration/"
+        },
+        {
+          "title": "Bumps & Variations",
+          "url": "https://launchflows.com/documentation/bumps-variations/"
+        },
+        {
+          "title": "Upsells & Downsells",
+          "url": "https://launchflows.com/documentation/upsells-downsells/"
+        },
+        {
+          "title": "Donations & Pay Now",
+          "url": "https://launchflows.com/documentation/donations-pay-now/"
+        },
+        {
+          "title": "Remove Products From Cart",
+          "url": "https://launchflows.com/documentation/remove-products-from-cart/"
+        }
+      ]
+    }
+  ]
+}
