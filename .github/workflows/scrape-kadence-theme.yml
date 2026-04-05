@@ -41,11 +41,7 @@ jobs:
 
       - name: Commit and push results
         if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config user.name "ML Docs Bot"
-          git config user.email "bot@wplaunchify.com"
-          git add plugins/ INDEX.json
-          PAGES=$(node -e "const d=require('./plugins/kadence-theme/documentation.json'); console.log(d.total_pages)")
-          git commit -m "Update Kadence Theme docs (${PAGES} pages) - $(date -u +%Y-%m-%d)"
-          git pull --rebase origin main
-          git push || (sleep 8 && git pull --rebase origin main && git push)
+        env:
+          SCRAPE_SLUG: kadence-theme
+          SCRAPE_NAME: "Kadence Theme"
+        run: bash scripts/gh-push-scrape.sh

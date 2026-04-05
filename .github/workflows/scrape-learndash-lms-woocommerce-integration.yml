@@ -36,10 +36,7 @@ jobs:
 
       - name: Commit and push results
         if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config user.name "ML Docs Bot"
-          git config user.email "bot@wplaunchify.com"
-          git add plugins/ INDEX.json
-          PAGES=$(node -e "const d=require('./plugins/learndash-lms-woocommerce-integration/documentation.json'); console.log(d.total_pages)")
-          git commit -m "Update Learndash Lms Woocommerce Integration docs (${PAGES} pages) - $(date -u +%Y-%m-%d)"
-          git push
+        env:
+          SCRAPE_SLUG: learndash-lms-woocommerce-integration
+          SCRAPE_NAME: "Learndash Lms Woocommerce Integration"
+        run: bash scripts/gh-push-scrape.sh

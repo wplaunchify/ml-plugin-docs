@@ -36,10 +36,7 @@ jobs:
 
       - name: Commit and push results
         if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config user.name "ML Docs Bot"
-          git config user.email "bot@wplaunchify.com"
-          git add plugins/ INDEX.json
-          PAGES=$(node -e "const d=require('./plugins/simple-seo/documentation.json'); console.log(d.total_pages)")
-          git commit -m "Update Simple Seo docs (${PAGES} pages) - $(date -u +%Y-%m-%d)"
-          git push
+        env:
+          SCRAPE_SLUG: simple-seo
+          SCRAPE_NAME: "Simple Seo"
+        run: bash scripts/gh-push-scrape.sh

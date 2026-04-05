@@ -36,10 +36,7 @@ jobs:
 
       - name: Commit and push results
         if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config user.name "ML Docs Bot"
-          git config user.email "bot@wplaunchify.com"
-          git add plugins/ INDEX.json
-          PAGES=$(node -e "const d=require('./plugins/ninja-tables-easy-data-table-builder/documentation.json'); console.log(d.total_pages)")
-          git commit -m "Update Ninja Tables Easy Data Table Builder docs (${PAGES} pages) - $(date -u +%Y-%m-%d)"
-          git push
+        env:
+          SCRAPE_SLUG: ninja-tables-easy-data-table-builder
+          SCRAPE_NAME: "Ninja Tables Easy Data Table Builder"
+        run: bash scripts/gh-push-scrape.sh
