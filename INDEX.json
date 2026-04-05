@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T10:14:35.650Z",
-  "total_plugins": 59,
+  "last_updated": "2026-04-05T11:07:39.044Z",
+  "total_plugins": 60,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -914,6 +914,14 @@
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/documentation/",
       "last_scraped": "2026-04-05T10:14:35.650Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "affiliatewp-affiliate-landing-pages",
+      "name": "AffiliateWP - Affiliate Landing Pages",
+      "documentation_url": "https://affiliatewp.com/docs/documentation/",
+      "last_scraped": "2026-04-05T11:07:39.044Z",
       "page_count": 0,
       "categories": []
     }
