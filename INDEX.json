@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T17:14:15.052Z",
-  "total_plugins": 87,
+  "last_updated": "2026-04-05T18:05:50.553Z",
+  "total_plugins": 88,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1273,6 +1273,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "kadence-blocks-page-builder-toolkit-for-gutenberg-editor",
+      "name": "Kadence Blocks — Page Builder Toolkit for Gutenberg Editor",
+      "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
+      "last_scraped": "2026-04-05T18:05:50.553Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
