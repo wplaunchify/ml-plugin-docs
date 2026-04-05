@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T17:12:56.052Z",
-  "total_plugins": 85,
+  "last_updated": "2026-04-05T17:14:07.525Z",
+  "total_plugins": 86,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1257,6 +1257,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "ninja-tables-easy-data-table-builder",
+      "name": "Ninja Tables – Easy Data Table Builder",
+      "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
+      "last_scraped": "2026-04-05T17:14:07.525Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
