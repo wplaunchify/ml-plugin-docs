@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T19:19:30.589Z",
-  "total_plugins": 92,
+  "last_updated": "2026-04-05T20:03:24.905Z",
+  "total_plugins": 93,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1311,6 +1311,14 @@
       "name": "Store Credit for WooCommerce",
       "documentation_url": "https://woocommerce.com/document/woocommerce-store-credit/documentation/",
       "last_scraped": "2026-04-05T19:19:30.589Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "kadence-conversions-popups-slide-ins",
+      "name": "Kadence Conversions - Popups, slide-ins",
+      "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
+      "last_scraped": "2026-04-05T20:03:24.905Z",
       "page_count": 0,
       "categories": []
     }
