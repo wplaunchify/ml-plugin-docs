@@ -1,0 +1,14 @@
+{
+  "plugin_slug": "kadence-custom-fonts",
+  "plugin_name": "Kadence Custom Fonts",
+  "last_scraped": "2026-04-05T14:17:47.215Z",
+  "total_pages": 0,
+  "failed_urls": [
+    "https://www.kadencewp.com/help-center/?kb_icon=kadence-insights",
+    "https://www.kadencewp.com/help-center/?kb_icon=kadence-ai",
+    "https://www.kadencewp.com/help-center/?kb_icon=kadence-menu",
+    "https://www.kadencewp.com/help-center/?kb_icon=kadence-brand-2",
+    "https://www.kadencewp.com/help-center/?kb_icon=kadence-brand"
+  ],
+  "pages": []
+}

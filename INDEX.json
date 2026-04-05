@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T14:17:12.776Z",
-  "total_plugins": 70,
+  "last_updated": "2026-04-05T14:17:47.216Z",
+  "total_plugins": 71,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -1038,6 +1038,14 @@
       "categories": [
         "uncategorized"
       ]
+    },
+    {
+      "slug": "kadence-custom-fonts",
+      "name": "Kadence Custom Fonts",
+      "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
+      "last_scraped": "2026-04-05T14:17:47.216Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
