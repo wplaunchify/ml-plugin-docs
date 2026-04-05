@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-05T04:54:22.186Z",
-  "total_plugins": 39,
+  "last_updated": "2026-04-05T04:56:21.019Z",
+  "total_plugins": 40,
   "plugins": [
     {
       "slug": "wpfusion",
@@ -685,6 +685,16 @@
       "last_scraped": "2026-04-05T04:54:22.186Z",
       "page_count": 0,
       "categories": []
+    },
+    {
+      "slug": "add-anchor-links",
+      "name": "Add Anchor Links",
+      "documentation_url": "https://wordpress.org/plugins/add-anchor-links/",
+      "last_scraped": "2026-04-05T04:56:21.019Z",
+      "page_count": 1,
+      "categories": [
+        "advanced"
+      ]
     }
   ]
 }
