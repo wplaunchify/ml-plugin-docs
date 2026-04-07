@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-07T08:01:21.526Z",
+  "last_updated": "2026-04-07T08:01:24.971Z",
   "total_plugins": 107,
   "plugins": [
     {
@@ -72,7 +72,15 @@
       "slug": "affiliatewp-lifetime-commissions",
       "name": "AffiliateWP - Lifetime Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-07T07:59:08.190Z",
+      "last_scraped": "2026-04-07T07:59:08.189Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "affiliatewp-multi-tier-commissions",
+      "name": "AffiliateWP - Multi-Tier Commissions",
+      "documentation_url": "https://affiliatewp.com/docs/documentation/",
+      "last_scraped": "2026-04-06T08:08:42.216Z",
       "page_count": 0,
       "categories": []
     },
@@ -80,7 +88,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-06T08:06:22.180Z",
+      "last_scraped": "2026-04-06T08:06:22.179Z",
       "page_count": 0,
       "categories": []
     },
@@ -133,6 +141,14 @@
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
       "last_scraped": "2026-04-02T07:54:00.333Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "custom-post-type-ui",
+      "name": "Custom Post Type UI",
+      "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
+      "last_scraped": "2026-04-05T23:08:31.209Z",
       "page_count": 0,
       "categories": []
     },
@@ -643,6 +659,14 @@
       "categories": []
     },
     {
+      "slug": "kadence-blocks-pro-extension",
+      "name": "Kadence Blocks - PRO Extension",
+      "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
+      "last_scraped": "2026-04-06T08:09:23.161Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
@@ -815,7 +839,7 @@
       "slug": "learndash-lms-woocommerce-integration",
       "name": "LearnDash LMS - WooCommerce Integration",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-04-05T05:33:35.039Z",
+      "last_scraped": "2026-04-07T08:01:23.344Z",
       "page_count": 0,
       "categories": []
     },
@@ -981,7 +1005,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-06T08:07:03.706Z",
+      "last_scraped": "2026-04-06T08:07:03.705Z",
       "page_count": 0,
       "categories": []
     },
@@ -1040,6 +1064,14 @@
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://woocommerce.com/document/documentation/",
       "last_scraped": "2026-04-05T22:05:08.220Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "woocommerce-smart-coupons",
+      "name": "WooCommerce Smart Coupons",
+      "documentation_url": "https://woocommerce.com/document/documentation/",
+      "last_scraped": "2026-04-06T08:08:01.351Z",
       "page_count": 0,
       "categories": []
     },
@@ -1136,6 +1168,16 @@
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
       "last_scraped": "2026-04-05T20:08:42.249Z",
+      "page_count": 198,
+      "categories": [
+        "uncategorized"
+      ]
+    },
+    {
+      "slug": "wp-all-import-acf-add-on-pro",
+      "name": "WP All Import - ACF Add-On Pro",
+      "documentation_url": "https://www.wpallimport.com/documentation/",
+      "last_scraped": "2026-04-07T08:01:21.522Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -1431,48 +1473,6 @@
         "user-roles",
         "webhooks",
         "webhooks-zapier"
-      ]
-    },
-    {
-      "slug": "custom-post-type-ui",
-      "name": "Custom Post Type UI",
-      "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-04-05T23:08:31.210Z",
-      "page_count": 0,
-      "categories": []
-    },
-    {
-      "slug": "woocommerce-smart-coupons",
-      "name": "WooCommerce Smart Coupons",
-      "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-04-06T08:08:01.352Z",
-      "page_count": 0,
-      "categories": []
-    },
-    {
-      "slug": "affiliatewp-multi-tier-commissions",
-      "name": "AffiliateWP - Multi-Tier Commissions",
-      "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-06T08:08:42.216Z",
-      "page_count": 0,
-      "categories": []
-    },
-    {
-      "slug": "kadence-blocks-pro-extension",
-      "name": "Kadence Blocks - PRO Extension",
-      "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-06T08:09:23.162Z",
-      "page_count": 0,
-      "categories": []
-    },
-    {
-      "slug": "wp-all-import-acf-add-on-pro",
-      "name": "WP All Import - ACF Add-On Pro",
-      "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-04-07T08:01:21.526Z",
-      "page_count": 198,
-      "categories": [
-        "uncategorized"
       ]
     }
   ]
