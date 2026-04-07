@@ -1,0 +1,48 @@
+name: Build chunk files for retrieval
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 6 * * 1' # Weekly Monday 06:20 UTC (after typical Sunday scrapes)
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build chunks.jsonl for all plugins
+        run: node scripts/build-chunks.js
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet plugins/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push chunks
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "ML Docs Bot"
+          git config user.email "bot@wplaunchify.com"
+          git add plugins/*/chunks.jsonl plugins/*/chunks-meta.json
+          git commit -m "chore: rebuild chunks.jsonl for retrieval [skip ci]"
+          for i in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main
+            git rebase origin/main && git push origin HEAD:main && break
+            sleep $((i * 4))
+          done
