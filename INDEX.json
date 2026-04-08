@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-08T08:02:42.568Z",
-  "total_plugins": 107,
+  "last_updated": "2026-04-08T08:03:52.746Z",
+  "total_plugins": 108,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1474,6 +1474,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "admin-columns-pro",
+      "name": "Admin Columns Pro",
+      "documentation_url": "https://www.admincolumns.com",
+      "last_scraped": "2026-04-08T08:03:52.746Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
