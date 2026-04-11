@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-11T07:49:56.664Z",
-  "total_plugins": 108,
+  "last_updated": "2026-04-11T07:50:13.504Z",
+  "total_plugins": 109,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -96,7 +96,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-10T08:07:07.322Z",
+      "last_scraped": "2026-04-10T08:07:07.321Z",
       "page_count": 0,
       "categories": []
     },
@@ -122,7 +122,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-04-11T07:49:56.664Z",
+      "last_scraped": "2026-04-11T07:49:56.663Z",
       "page_count": 0,
       "categories": []
     },
@@ -228,7 +228,7 @@
       "slug": "fluent-boards-project-management-tool",
       "name": "Fluent Boards - Project Management Tool",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-04-09T08:03:03.413Z",
+      "last_scraped": "2026-04-09T08:03:03.412Z",
       "page_count": 0,
       "categories": []
     },
@@ -633,6 +633,38 @@
       ]
     },
     {
+      "slug": "fooevents-multi-day",
+      "name": "FooEvents Multi-Day",
+      "documentation_url": "https://www.fooevents.com",
+      "last_scraped": "2026-04-11T07:50:12.756Z",
+      "page_count": 57,
+      "categories": [
+        "about-us",
+        "apps",
+        "blog",
+        "bundles",
+        "cart",
+        "cs",
+        "de",
+        "disclaimer",
+        "el",
+        "es",
+        "features",
+        "fooevents-ultimate-event-checklist",
+        "fr",
+        "it",
+        "my-account",
+        "nl",
+        "pl",
+        "pricing",
+        "privacy-statement-us",
+        "products",
+        "pt",
+        "reviews",
+        "terms-and-conditions"
+      ]
+    },
+    {
       "slug": "hide-from-search",
       "name": "Hide from Search",
       "documentation_url": "https://wordpress.org/plugins/mpress-hide-from-search/",
@@ -646,7 +678,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-04-10T08:04:46.965Z",
+      "last_scraped": "2026-04-10T08:04:46.964Z",
       "page_count": 0,
       "categories": []
     },
@@ -662,7 +694,7 @@
       "slug": "kadence-blocks-page-builder-toolkit-for-gutenberg-editor",
       "name": "Kadence Blocks — Page Builder Toolkit for Gutenberg Editor",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-11T07:48:03.017Z",
+      "last_scraped": "2026-04-11T07:48:03.016Z",
       "page_count": 0,
       "categories": []
     },
@@ -718,7 +750,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-04-09T08:08:28.817Z",
+      "last_scraped": "2026-04-09T08:08:28.816Z",
       "page_count": 0,
       "categories": []
     },
@@ -839,7 +871,7 @@
       "slug": "learndash-lms-certificate-builder",
       "name": "LearnDash LMS - Certificate Builder",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-04-10T08:07:46.857Z",
+      "last_scraped": "2026-04-10T08:07:46.856Z",
       "page_count": 0,
       "categories": []
     },
@@ -1029,7 +1061,7 @@
       "slug": "taxopress",
       "name": "TaxoPress",
       "documentation_url": "https://taxopress.com/docs/documentation/",
-      "last_scraped": "2026-04-10T08:05:43.334Z",
+      "last_scraped": "2026-04-10T08:05:43.333Z",
       "page_count": 0,
       "categories": []
     },
@@ -1045,7 +1077,7 @@
       "slug": "uncanny-groups-for-learndash",
       "name": "Uncanny Groups for LearnDash",
       "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-      "last_scraped": "2026-04-10T08:06:15.684Z",
+      "last_scraped": "2026-04-10T08:06:15.683Z",
       "page_count": 0,
       "categories": []
     },
@@ -1063,7 +1095,7 @@
       "slug": "woocommerce-anti-fraud",
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-04-09T08:03:44.774Z",
+      "last_scraped": "2026-04-09T08:03:44.773Z",
       "page_count": 0,
       "categories": []
     },
@@ -1071,7 +1103,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-04-09T08:05:18.372Z",
+      "last_scraped": "2026-04-09T08:05:18.371Z",
       "page_count": 0,
       "categories": []
     },
