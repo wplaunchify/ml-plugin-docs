@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T22:06:29.814Z",
+  "last_updated": "2026-04-12T22:07:39.126Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1305,9 +1305,11 @@
       "slug": "wp-all-import-user-import-add-on-pro",
       "name": "WP All Import - User Import Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-04-05T22:04:56.268Z",
-      "page_count": 0,
-      "categories": []
+      "last_scraped": "2026-04-12T22:07:39.126Z",
+      "page_count": 198,
+      "categories": [
+        "uncategorized"
+      ]
     },
     {
       "slug": "wp-fusion",
