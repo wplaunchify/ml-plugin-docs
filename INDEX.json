@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T05:03:40.247Z",
+  "last_updated": "2026-04-12T05:38:19.107Z",
   "total_plugins": 111,
   "plugins": [
     {
@@ -228,7 +228,7 @@
       "slug": "fluent-boards-project-management-tool",
       "name": "Fluent Boards - Project Management Tool",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-04-09T08:03:03.412Z",
+      "last_scraped": "2026-04-12T05:38:19.107Z",
       "page_count": 0,
       "categories": []
     },
