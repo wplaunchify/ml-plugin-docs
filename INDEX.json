@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-12T14:13:18.919Z",
-  "total_plugins": 117,
+  "last_updated": "2026-04-12T14:13:56.859Z",
+  "total_plugins": 118,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -25,6 +25,14 @@
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
       "last_scraped": "2026-04-05T17:09:50.856Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "advanced-custom-fields-pro",
+      "name": "Advanced Custom Fields PRO",
+      "documentation_url": "https://www.advancedcustomfields.com/resources/",
+      "last_scraped": "2026-04-12T14:13:55.490Z",
       "page_count": 0,
       "categories": []
     },
@@ -824,7 +832,7 @@
       "slug": "launchflows-customer-dashboardboards-for-woocommerce",
       "name": "LaunchFlows Customer Dashboardboards For WooCommerce",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-04-12T14:13:18.919Z",
+      "last_scraped": "2026-04-12T14:13:18.918Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
