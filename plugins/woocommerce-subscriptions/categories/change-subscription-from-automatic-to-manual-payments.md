@@ -18,7 +18,7 @@ To change a subscription from Manual to Automatic payments, check out the [guide
 
 ## Change a Subscription to Manual Payments
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 You can change a customer’s subscription from automatic to manual payments by following these steps:
 

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T12:20:19.146Z",
+  "last_updated": "2026-04-12T12:20:22.612Z",
   "total_plugins": 116,
   "plugins": [
     {
@@ -1034,7 +1034,7 @@
       "slug": "resizable-sidebar-for-the-gutenberg-block-editor",
       "name": "Resizable Sidebar for the Gutenberg Block Editor",
       "documentation_url": "https://wordpress.org/plugins/resizable-editor-sidebar/",
-      "last_scraped": "2026-04-12T12:20:19.146Z",
+      "last_scraped": "2026-04-12T12:20:19.145Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1175,7 +1175,7 @@
       "slug": "woocommerce-subscriptions",
       "name": "WooCommerce Subscriptions",
       "documentation_url": "https://woocommerce.com/document/subscriptions/",
-      "last_scraped": "2026-04-02T00:02:47.395Z",
+      "last_scraped": "2026-04-12T12:20:21.020Z",
       "page_count": 85,
       "categories": [
         "2020-new-visa-requirements-for-subscriptions-with-a-free-trial",
