@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-04-12T06:34:28.632Z",
+  "last_updated": "2026-04-12T06:34:44.732Z",
   "total_plugins": 112,
   "plugins": [
     {
       "slug": "add-anchor-links",
       "name": "Add Anchor Links",
       "documentation_url": "https://wordpress.org/plugins/add-anchor-links/",
-      "last_scraped": "2026-04-12T05:03:40.247Z",
+      "last_scraped": "2026-04-12T05:03:40.246Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -265,6 +265,14 @@
       "categories": []
     },
     {
+      "slug": "fluent-pdf-generator",
+      "name": "Fluent PDF Generator",
+      "documentation_url": "https://fluentforms.com/docs/documentation/",
+      "last_scraped": "2026-04-12T05:39:03.015Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
       "slug": "fluentaffiliate",
       "name": "FluentAffiliate",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
@@ -351,7 +359,7 @@
       "slug": "fluentcommunity",
       "name": "FluentCommunity",
       "documentation_url": "https://fluentcommunity.co/documentation/",
-      "last_scraped": "2026-04-12T05:40:44.924Z",
+      "last_scraped": "2026-04-12T05:40:44.921Z",
       "page_count": 76,
       "categories": [
         "administration",
@@ -473,7 +481,7 @@
       "slug": "fluentsmtp",
       "name": "FluentSMTP",
       "documentation_url": "https://fluentsmtp.com/documentation/",
-      "last_scraped": "2026-04-12T05:44:01.612Z",
+      "last_scraped": "2026-04-12T05:44:01.610Z",
       "page_count": 24,
       "categories": [
         "alerts",
@@ -879,7 +887,7 @@
       "slug": "learndash-lms-woocommerce-integration",
       "name": "LearnDash LMS - WooCommerce Integration",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-04-12T05:39:35.419Z",
+      "last_scraped": "2026-04-12T05:39:35.418Z",
       "page_count": 0,
       "categories": []
     },
@@ -1035,7 +1043,7 @@
       "slug": "simple-seo",
       "name": "Simple SEO",
       "documentation_url": "https://wordpress.org/plugins/simple-seo/",
-      "last_scraped": "2026-04-12T06:27:03.994Z",
+      "last_scraped": "2026-04-12T06:27:03.993Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1111,7 +1119,7 @@
       "slug": "woocommerce-smart-coupons",
       "name": "WooCommerce Smart Coupons",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-04-06T08:08:01.351Z",
+      "last_scraped": "2026-04-12T06:34:43.622Z",
       "page_count": 0,
       "categories": []
     },
@@ -1448,7 +1456,7 @@
       "slug": "wp-fusion-media-tools-addon",
       "name": "WP Fusion - Media Tools Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-04-12T06:30:39.212Z",
+      "last_scraped": "2026-04-12T06:30:39.203Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
@@ -1489,7 +1497,7 @@
       "slug": "wp-migrate-lite",
       "name": "WP Migrate Lite",
       "documentation_url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/",
-      "last_scraped": "2026-04-12T06:34:28.632Z",
+      "last_scraped": "2026-04-12T06:34:28.631Z",
       "page_count": 0,
       "categories": []
     },
@@ -1563,14 +1571,6 @@
         "webhooks",
         "webhooks-zapier"
       ]
-    },
-    {
-      "slug": "fluent-pdf-generator",
-      "name": "Fluent PDF Generator",
-      "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-04-12T05:39:03.015Z",
-      "page_count": 0,
-      "categories": []
     }
   ]
 }
