@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-12T08:25:38.415Z",
-  "total_plugins": 112,
+  "last_updated": "2026-04-12T09:17:15.255Z",
+  "total_plugins": 113,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1571,6 +1571,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "ninja-tables-pro",
+      "name": "Ninja Tables Pro",
+      "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
+      "last_scraped": "2026-04-12T09:17:15.255Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
