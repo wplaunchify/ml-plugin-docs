@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T18:08:20.784Z",
+  "last_updated": "2026-04-12T18:08:48.949Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -512,7 +512,7 @@
       "slug": "fluentsupport",
       "name": "Fluent Support",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-04-05T18:06:13.481Z",
+      "last_scraped": "2026-04-12T18:08:47.540Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -750,7 +750,7 @@
       "slug": "kadence-blocks-page-builder-toolkit-for-gutenberg-editor",
       "name": "Kadence Blocks — Page Builder Toolkit for Gutenberg Editor",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-12T18:08:20.784Z",
+      "last_scraped": "2026-04-12T18:08:20.783Z",
       "page_count": 0,
       "categories": []
     },
