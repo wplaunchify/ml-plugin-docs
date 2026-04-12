@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T01:37:16.647Z",
+  "last_updated": "2026-04-12T01:41:17.842Z",
   "total_plugins": 109,
   "plugins": [
     {
@@ -1235,7 +1235,7 @@
       "slug": "wp-fusion-abandoned-cart-addon",
       "name": "WP Fusion - Abandoned Cart Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-04-05T01:41:04.943Z",
+      "last_scraped": "2026-04-12T01:41:17.842Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
