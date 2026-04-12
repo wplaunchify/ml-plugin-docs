@@ -152,69 +152,73 @@ Follow these simple step by step process to connect Cloudflare R2 with your Flue
 
 ## Get your CloudFlare Account ID
 
-First, log in to your [CloudFlare Account](https://dash.cloudflare.com/login). Then go to the **R2 Object Storage** section from the left side bar. Locate the **Overview** of your Cloudflare account you will find the **API**button click on it and select **Use R2 with APIs**.
+First, log in to your [CloudFlare Account](https://dash.cloudflare.com/login). Navigate to **Storage & Databases** > **R2 Object Storage** > **Overview**. On the right side of the page, you will find the **Account Details** section. Your **Account ID** is displayed here. Click the **copy icon** next to the ID to save it for later use.
 
-![account id](https://fluentboards.com/wp-content/uploads/2024/09/Account-ID-scaled.webp)
-
-Now a pop-up will arrive where you will see your **Account** **ID**, copy your account ID from here for later use.
-
-![copy account id](https://fluentboards.com/wp-content/uploads/2024/09/copy-account-id-scaled.webp)
+![copy account id](https://fluentboards.com/wp-content/uploads/2024/09/copy-account-id-1-scaled.webp)
 
 Alternatively, you can find your **Account ID** in the **URL** of your Cloudflare account, as shown in the screenshot below. You can also copy your Account ID from here.
 
-![account id url 03](https://fluentboards.com/wp-content/uploads/2024/09/Account-ID-URL-03-scaled.webp)
+![alternative account 0id 2](https://fluentboards.com/wp-content/uploads/2024/09/alternative-account-0id-2-scaled.webp)
 
 ## Create a Cloudflare R2 Bucket
 
-Navigate to**R2 Object Storage** from the left sidebar, find **Overview** under R2 Object Storage, and click on it. Now click on the **Create Bucket** button to create a bucket.
+Navigate to **R2 Object Storage** from the left sidebar, find Overview under **R2 Object Storage**, and click on it. Now, click on the **Create Bucket** button to create a bucket.
 
-![create bucket 04](https://fluentboards.com/wp-content/uploads/2024/09/Create-Bucket-04-scaled.webp)
+![create bucket 3](https://fluentboards.com/wp-content/uploads/2024/09/create-bucket-3-scaled.webp)
 
-Enter a **Bucket name** that is easy to identify and unique across your projects. Leave the **Location** of the bucket as **Default** unless you have specific storage.
+Enter a **Bucket name** that is easy to identify and unique across your projects. Leave the **Location** of the bucket as **the default** unless you have specific storage.
 
 After that, click the **Create Bucket** button.
 
-![create a bucket 05](https://fluentboards.com/wp-content/uploads/2024/09/Create-a-Bucket-05-scaled.webp)
+![create bucket 4](https://fluentboards.com/wp-content/uploads/2024/09/create-bucket-4-scaled.webp)
 
 ## Get the Cloudflare Bucket Public URL
 
-Now here you will be able to see the Bucket Details after clicking the Setting option. Scroll down for the **R2.dev Subdomain** section. Here you need to **Allow Access** to this R2.dev subdomain.
+You can now see the Bucket Details. Scroll down to the **Public Development URL** section. Here, you need to enable access to this public URL.
 
-Click the **Allow Access** button, and a pop-up will appear. Type “allow” in the field to grant access to the Public R2.dev Bucket URL.
+Click the **Enable** link to open a pop-up. Type “allow” in the field to grant access to the **Public Development URL.**
 
-![r2 dev subdomain 06](https://fluentboards.com/wp-content/uploads/2024/09/R2-dev-subdomain-06-scaled.webp)
+![public development url 5](https://fluentboards.com/wp-content/uploads/2024/09/public-development-url-5-scaled.webp)
 
-Now from here, you will get the **Public R2.dev Bucket URL**.
+A pop-up will appear to **Enable Public Development URL**. Type in ‘allow’ to confirm. Then, press the **Allow** button.
 
-![public r2 subdomain url 07](https://fluentboards.com/wp-content/uploads/2024/09/public-r2-subdomain-url-07-scaled.webp)
+![allow 6](https://fluentboards.com/wp-content/uploads/2024/09/allow-6.webp)
+
+Here, you will get the **Cloudflare Bucket Public URL**.
+
+![copy public url 7](https://fluentboards.com/wp-content/uploads/2024/09/copy-public-url-7-scaled.webp)
 
 ## Generate your Access Key & Secret Key
 
-To create a Cloudflare Access Key go to your Cloudflare account dashboard again and click on the **Manage R2 API Token** from the **API** section.
+To create a Cloudflare Access Key, go back to the **R2 Object Storage > Overview** page. In the **Account Details** box on the right, click the **{} Manage** button next to **API Tokens**.
 
-![manage api token 08](https://fluentboards.com/wp-content/uploads/2024/09/manage-api-token-08-scaled.webp)
+![manage 8](https://fluentboards.com/wp-content/uploads/2024/09/manage-8-scaled.webp)
 
-Now you will be redirected to the R2 page here click on the **Create Account API Token** button.
+On the next page, click the **Create API token** button.
 
-![unnamed (2)](https://fluentboards.com/wp-content/uploads/2024/09/unnamed-2.webp)
+![create account api 9](https://fluentboards.com/wp-content/uploads/2024/09/create-account-api-9.webp)
 
-The API creation page will appear, where you’ll need to configure the settings for your API. Start by giving your **Token** **name**. In the **Permissions** section, select **Object Read & Write**permission.
+Now, configure your token with the following settings:
 
-Next, choose the **Specify Bucket(s)** where you want to store your files from the dropdown menu. Adjust any other settings as needed, and then click the **Create Account API Token** button.
+1. **Token Name:** Give your token a descriptive name.
+2. **Permissions:** Select **Object Read & Write**.
+3. **Bucket:** Choose the specific bucket you created from the dropdown menu.
 
-![create account api token 10](https://fluentboards.com/wp-content/uploads/2024/09/create-account-api-token-10-scaled.webp)
+Next, click the **Create Account API token** button at the bottom.
 
-Here, you will find the **Access Key ID**and **Secret Access Key**.****Make sure to copy them immediately, as you won’t be able to revisit this page later.
+![create token 10](https://fluentboards.com/wp-content/uploads/2024/09/create-token-10-scaled.webp)
 
-![access key & secret key 11](https://fluentboards.com/wp-content/uploads/2024/09/access-key-secret-key-11-scaled.webp)
+Here, you will find the **Access Key ID**and **Secret Access Key**. Make sure to **copy** them immediately, as you won’t be able to revisit this page later.
+
+![access key and secrete key 11](https://fluentboards.com/wp-content/uploads/2024/09/access-key-and-secrete-key-11-scaled.webp)
 
 ## Configure the FluentBoards with Cloudflare R2
 
-Now access FluentBoards and go to **Settings > Feature & Modules**. Here you will see the **Media Storage** section then click on the **Settings** button.
+Now access FluentBoards and go to **Settings > Features & Modules**. Here you will see the **Media Storage** section then click on the **Settings** button.
 
 ![configure cloudflare r2 12](https://fluentboards.com/wp-content/uploads/2024/09/configure-cloudflare-R2-12-scaled.webp)
 
-A popup will appear. Now, select **Cloudflare R2**and enter the credentials you collected from your Cloudflare account in the earlier steps of this guide.
+A pop-up will appear. Now, select **Cloudflare R2**and enter the credentials you collected from your Cloudflare account in the earlier steps of this guide.
 
 **Cloudflare Account ID:** Input your CloudFlare Account ID.
 
