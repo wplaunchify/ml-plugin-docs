@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-12T12:08:21.705Z",
-  "total_plugins": 114,
+  "last_updated": "2026-04-12T12:08:35.772Z",
+  "total_plugins": 115,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -973,7 +973,7 @@
       "slug": "page-links-to",
       "name": "Page Links To",
       "documentation_url": "https://wordpress.org/plugins/page-links-to/",
-      "last_scraped": "2026-04-12T12:08:21.705Z",
+      "last_scraped": "2026-04-12T12:08:21.704Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1220,6 +1220,14 @@
         "why-are-my-paypal-standard-subscription-renewals-duplicating-or-on-hold",
         "woocommerce-subscriptions-snippets-and-plugins"
       ]
+    },
+    {
+      "slug": "woocommerce-subscriptions-custom-price-string",
+      "name": "WooCommerce Subscriptions - Custom Price String",
+      "documentation_url": "https://woocommerce.com/document/documentation/",
+      "last_scraped": "2026-04-12T12:08:34.457Z",
+      "page_count": 0,
+      "categories": []
     },
     {
       "slug": "wp-all-export-acf-export-add-on-pro",
