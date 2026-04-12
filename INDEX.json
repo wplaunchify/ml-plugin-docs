@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T09:19:49.734Z",
+  "last_updated": "2026-04-12T09:20:17.808Z",
   "total_plugins": 113,
   "plugins": [
     {
@@ -676,7 +676,7 @@
       "slug": "hide-from-search",
       "name": "Hide from Search",
       "documentation_url": "https://wordpress.org/plugins/mpress-hide-from-search/",
-      "last_scraped": "2026-04-12T09:19:49.734Z",
+      "last_scraped": "2026-04-12T09:19:49.733Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -920,6 +920,14 @@
       "categories": []
     },
     {
+      "slug": "ninja-tables-pro",
+      "name": "Ninja Tables Pro",
+      "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
+      "last_scraped": "2026-04-12T09:17:15.255Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
       "slug": "open-graph",
       "name": "Open Graph",
       "documentation_url": "https://wordpress.org/plugins/opengraph/",
@@ -1033,7 +1041,7 @@
       "slug": "simple-post-redirect",
       "name": "Simple Post Redirect",
       "documentation_url": "https://wordpress.org/plugins/simple-post-redirect/",
-      "last_scraped": "2026-04-12T09:17:35.222Z",
+      "last_scraped": "2026-04-12T09:17:35.221Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1223,7 +1231,7 @@
       "slug": "wp-all-import-acf-add-on-pro",
       "name": "WP All Import - ACF Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-04-07T08:01:21.522Z",
+      "last_scraped": "2026-04-12T09:20:16.531Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -1571,14 +1579,6 @@
         "webhooks",
         "webhooks-zapier"
       ]
-    },
-    {
-      "slug": "ninja-tables-pro",
-      "name": "Ninja Tables Pro",
-      "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-04-12T09:17:15.255Z",
-      "page_count": 0,
-      "categories": []
     }
   ]
 }
