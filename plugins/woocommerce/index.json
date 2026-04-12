@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-04-03T08:13:58.778Z",
-  "total_pages": 3700,
+  "last_scraped": "2026-04-12T09:40:38.656Z",
+  "total_pages": 3731,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,176 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3700,
+      "page_count": 3731,
       "pages": [
+        {
+          "title": "ProdQueue – Production Queue for Made-to-Order Stores",
+          "url": "https://woocommerce.com/document/prodqueue/"
+        },
+        {
+          "title": "Design for Mobile Single Product Page (Pro)",
+          "url": "https://woocommerce.com/document/design-for-mobile-single-product-page-pro/"
+        },
+        {
+          "title": "FMA Pre Order and Backorder",
+          "url": "https://woocommerce.com/document/pre-order-and-backorder/"
+        },
+        {
+          "title": "Pagination customization",
+          "url": "https://woocommerce.com/document/pagination-customization/"
+        },
+        {
+          "title": "Inner Table Customization",
+          "url": "https://woocommerce.com/document/inner-table-customization/"
+        },
+        {
+          "title": "How Variation add to cart table works",
+          "url": "https://woocommerce.com/document/how-variation-add-to-cart-table-works/"
+        },
+        {
+          "title": "Elements visibility customization",
+          "url": "https://woocommerce.com/document/elements-visibility-customization/"
+        },
+        {
+          "title": "Variation Table template 2 customization",
+          "url": "https://woocommerce.com/document/variation-table-template-2-customization/"
+        },
+        {
+          "title": "Inside Variation Table Customization",
+          "url": "https://woocommerce.com/document/inside-variation-table-customization/"
+        },
+        {
+          "title": "Customize options before variation table",
+          "url": "https://woocommerce.com/document/customize-options-before-variation-table/"
+        },
+        {
+          "title": "How to Enable Variation Table and works",
+          "url": "https://woocommerce.com/document/how-to-enable-variation-table/"
+        },
+        {
+          "title": "What are WooCommerce.com subscriptions?",
+          "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/what-are-woocommerce-com-subscriptions/"
+        },
+        {
+          "title": "Troubleshoot common issues",
+          "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/troubleshoot-common-issues/"
+        },
+        {
+          "title": "Transfer a subscription",
+          "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/transfer-a-subscription/"
+        },
+        {
+          "title": "Share a subscription",
+          "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/share-a-subscription/"
+        },
+        {
+          "title": "Managing subscriptions as a developer or agency",
+          "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/managing-subscriptions-as-a-developer-or-agency/"
+        },
+        {
+          "title": "Installing extensions",
+          "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/installing-extensions/"
+        },
+        {
+          "title": "Connect your site to WooCommerce.com",
+          "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/connect-your-site-to-woocommerce-com/"
+        },
+        {
+          "title": "Auto-renewal, cancellation, refunds",
+          "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/auto-renewal-cancellation-refunds/"
+        },
+        {
+          "title": "Activate and manage your subscriptions",
+          "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/activate-and-manage-your-subscriptions/"
+        },
+        {
+          "title": "Attribute Button Customization",
+          "url": "https://woocommerce.com/document/attribute-button-customization/"
+        },
+        {
+          "title": "Tooltip for Variation Swatches",
+          "url": "https://woocommerce.com/document/tooltip-for-variation-swatches/"
+        },
+        {
+          "title": "Quantity Breaks & Bundle Discount",
+          "url": "https://woocommerce.com/document/quantity-breaks/"
+        },
+        {
+          "title": "Display Position on Archive Page",
+          "url": "https://woocommerce.com/document/display-position-on-archive-page/"
+        },
+        {
+          "title": "Show as Filter Widget",
+          "url": "https://woocommerce.com/document/show-as-filter-widget/"
+        },
+        {
+          "title": "Attribute Display Limit Enable",
+          "url": "https://woocommerce.com/document/attribute-display-limit-enable/"
+        },
+        {
+          "title": "Quantity button customization",
+          "url": "https://woocommerce.com/document/quantity-button-customization/"
+        },
+        {
+          "title": "Add to cart button Customization",
+          "url": "https://woocommerce.com/document/add-to-cart-button-customization/"
+        },
+        {
+          "title": "Display sale price with variation monster plugin settings",
+          "url": "https://woocommerce.com/document/display-sale-price-with-variation-monster-plugin-settings/"
+        },
+        {
+          "title": "Add to Cart Edit",
+          "url": "https://woocommerce.com/document/add-to-cart-edit/"
+        },
+        {
+          "title": "Carosel Popup Position",
+          "url": "https://woocommerce.com/document/carosel-popup-position/"
+        },
+        {
+          "title": "Single Product Page Redirection",
+          "url": "https://woocommerce.com/document/single-product-page-redirection/"
+        },
+        {
+          "title": "How to configure quick view",
+          "url": "https://woocommerce.com/document/how-to-configure-quick-view/"
+        },
+        {
+          "title": "How Variation Quick Cart Carousel Works",
+          "url": "https://woocommerce.com/document/how-variation-quick-cart-carousel-works/"
+        },
+        {
+          "title": "Customizing the Cart Page",
+          "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-the-cart-page/"
+        },
+        {
+          "title": "Customizing the Checkout Page",
+          "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-the-checkout-page/"
+        },
+        {
+          "title": "Block Patterns in WooCommerce",
+          "url": "https://woocommerce.com/document/block-patterns-in-woocommerce/"
+        },
+        {
+          "title": "Customizing Coming Soon Page",
+          "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-coming-soon-page/"
+        },
+        {
+          "title": "Customizing Product Search Results",
+          "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-product-search-results/"
+        },
+        {
+          "title": "Customizing Products by Category, Tag, Attribute, or Brand",
+          "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-products-by-category-tag-attribute-or-brand/"
+        },
+        {
+          "title": "Customizing Single Product Pages",
+          "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-single-product-pages/"
+        },
+        {
+          "title": "Using Template Parts in WooCommerce",
+          "url": "https://woocommerce.com/document/using-template-parts-in-woocommerce/"
+        },
         {
           "title": "How to create a BOGO coupon using presets",
           "url": "https://woocommerce.com/document/smart-coupons/how-to-create-a-bogo-coupon-using-presets/"
@@ -66,7 +234,7 @@
           "url": "https://woocommerce.com/document/smart-product-designer/how-to-set-up-a-print-on-demand-store-and-start-selling-fast/"
         },
         {
-          "title": "Advanced PDF Invoices Builder",
+          "title": "PDF Invoice for WooCommerce + Drag and Drop Template Builder",
           "url": "https://woocommerce.com/document/advanced-pdf-invoices-builder/"
         },
         {
@@ -362,7 +530,7 @@
           "url": "https://woocommerce.com/document/dwh-b2bify/"
         },
         {
-          "title": "DWH WISHIFY",
+          "title": "DWH Wishify",
           "url": "https://woocommerce.com/document/dwh-wishify/"
         },
         {
@@ -3286,12 +3454,12 @@
           "url": "https://woocommerce.com/document/dakota-next/"
         },
         {
-          "title": "QODE Variation Swatches for WooCommerce Pro",
-          "url": "https://woocommerce.com/document/qode-variation-swatches-for-woocommerce-pro/"
+          "title": "Testing tips for Refer A Friend",
+          "url": "https://woocommerce.com/document/automatewoo/refer-a-friend/testing-tips/"
         },
         {
-          "title": "Bundle Products for WooCommerce – Documentation",
-          "url": "https://woocommerce.com/document/bundle-products-for-woocommerce-documentation/"
+          "title": "Regenerate AutomateWoo database tables",
+          "url": "https://woocommerce.com/document/automatewoo/regenerate-automatewoo-database-tables/"
         },
         {
           "title": "How to Hide Sites from the Store Picker",
@@ -3487,7 +3655,7 @@
         },
         {
           "title": "Customizing the Order Confirmation Page",
-          "url": "https://woocommerce.com/document/woocommerce-store-editing/customizing-order-confirmation-page/"
+          "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-order-confirmation-page/"
         },
         {
           "title": "Advance Conditional Payment Methods",
@@ -4702,11 +4870,11 @@
           "url": "https://woocommerce.com/document/woocommerce-store-editing/blocks/"
         },
         {
-          "title": "Getting to Know the Site Editor",
+          "title": "Using the WordPress Site Editor in WooCommerce",
           "url": "https://woocommerce.com/document/woocommerce-store-editing/the-editor/"
         },
         {
-          "title": "Templates",
+          "title": "Customizing your Store with Templates in WooCommerce",
           "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/"
         },
         {
@@ -4730,7 +4898,7 @@
           "url": "https://woocommerce.com/document/woocommerce-store-editing/patterns-template-parts/"
         },
         {
-          "title": "Customizing your product catalog",
+          "title": "Customizing the Product Catalog Template",
           "url": "https://woocommerce.com/document/woocommerce-store-editing/customizing-shop-page-catalog/"
         },
         {
@@ -4882,12 +5050,12 @@
           "url": "https://woocommerce.com/document/configuring-woocommerce-settings/advanced/"
         },
         {
-          "title": "Advanced Order Notes for WooCommerce",
-          "url": "https://woocommerce.com/document/advanced-order-notes-for-woocommerce/"
+          "title": "Order Statuses",
+          "url": "https://woocommerce.com/document/managing-orders/order-statuses/"
         },
         {
-          "title": "Consent Mode Banner PRO",
-          "url": "https://woocommerce.com/document/gtm-consent-mode-banner-woo/"
+          "title": "Orders Overview and Bulk Order Management",
+          "url": "https://woocommerce.com/document/managing-orders/overview-and-bulk-management/"
         },
         {
           "title": "Single Order Page and Manually Adding an Order",
@@ -5070,7 +5238,7 @@
           "url": "https://woocommerce.com/document/addify-multi-inventory-management/"
         },
         {
-          "title": "Managing WooCommerce.com subscriptions",
+          "title": "Managing WooCommerce.com Subscriptions",
           "url": "https://woocommerce.com/document/managing-woocommerce-com-subscriptions/"
         },
         {
@@ -5292,10 +5460,6 @@
         {
           "title": "Administrator experience with the WooCommerce Square Extension",
           "url": "https://woocommerce.com/document/woocommerce-square/administrator-experience-with-the-square-woocommerce-extension/"
-        },
-        {
-          "title": "WooPayments: Pricing changes for accounts in the EEA and the UK",
-          "url": "https://woocommerce.com/document/woopayments/fees/pricing-eea-uk-2024/"
         },
         {
           "title": "How to pay store credit as affiliate commission",
@@ -9406,8 +9570,8 @@
           "url": "https://woocommerce.com/document/parametres-des-reservations-de-woocommerce-bookings/"
         },
         {
-          "title": "WooCommerce Accommodation pour WooCommerce Bookings",
-          "url": "https://woocommerce.com/document/woocommerce-accommodation-pour-woocommerce-bookings/"
+          "title": "Importar productos de Etsy",
+          "url": "https://woocommerce.com/document/importar-productos-de-etsy/"
         },
         {
           "title": "Reembolsos de WooCommerce",
@@ -10526,8 +10690,8 @@
           "url": "https://woocommerce.com/document/traduction-et-localisation-de-woocommerce/"
         },
         {
-          "title": "Comprendre le rapport d’état du système de WooCommerce",
-          "url": "https://woocommerce.com/document/comprendre-le-rapport-detat-du-systeme-de-woocommerce/"
+          "title": "Stripe (Português)",
+          "url": "https://woocommerce.com/document/stripe-portugues/"
         },
         {
           "title": "PayPal Standard (Português)",
@@ -10646,8 +10810,8 @@
           "url": "https://woocommerce.com/document/recomendaciones-de-servidor/"
         },
         {
-          "title": "Como gerenciar as assinaturas do WooCommerce.com",
-          "url": "https://woocommerce.com/document/como-gerenciar-as-assinaturas-do-woocommerce-com/"
+          "title": "Product Prices by User Role for WooCommerce",
+          "url": "https://woocommerce.com/document/product-prices-by-user-role-for-woocommerce/"
         },
         {
           "title": "Freshdesk Integration for WooCommerce",
@@ -10726,8 +10890,8 @@
           "url": "https://woocommerce.com/document/product-merchandizing/"
         },
         {
-          "title": "Subscriptions FAQ",
-          "url": "https://woocommerce.com/document/subscriptions/faq/"
+          "title": "Krokedil Product Documents",
+          "url": "https://woocommerce.com/document/krokedil-product-documents/"
         },
         {
           "title": "Google Merchant Center Top Quality Store & Customer Reviews Integration",
@@ -11966,8 +12130,8 @@
           "url": "https://woocommerce.com/document/automatewoo/twilio/"
         },
         {
-          "title": "Setting up the Twilio integration",
-          "url": "https://woocommerce.com/document/automatewoo/twilio/setup-2/"
+          "title": "Setup",
+          "url": "https://woocommerce.com/document/groups-woocommerce/setup/"
         },
         {
           "title": "Subscription Orders",
@@ -12046,8 +12210,8 @@
           "url": "https://woocommerce.com/document/corporate-subscription-purchasing/"
         },
         {
-          "title": "Gifting for WooCommerce Subscriptions",
-          "url": "https://woocommerce.com/document/subscriptions-gifting/"
+          "title": "Examples",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/api/examples/"
         },
         {
           "title": "[woocommerce_product_filter_products]",
@@ -13764,46 +13928,6 @@
         {
           "title": "Roles and Capabilities",
           "url": "https://woocommerce.com/document/roles-capabilities/"
-        },
-        {
-          "title": "Installed Database Tables",
-          "url": "https://woocommerce.com/document/installed-database-tables/"
-        },
-        {
-          "title": "Permalinks",
-          "url": "https://woocommerce.com/document/permalinks/"
-        },
-        {
-          "title": "Add a new country to countries list",
-          "url": "https://woocommerce.com/document/add-a-new-country-to-countries-list/"
-        },
-        {
-          "title": "Introduction to Product CSV Import Suite",
-          "url": "https://woocommerce.com/document/product-csv-import-suite/"
-        },
-        {
-          "title": "Importing Products",
-          "url": "https://woocommerce.com/document/product-csv-import-suite/product-csv-import-suite-importing-products/"
-        },
-        {
-          "title": "WooCommerce Authorize.Net Reporting",
-          "url": "https://woocommerce.com/document/woocommerce-authorize-net-reporting/"
-        },
-        {
-          "title": "Hooks and Filters in WooCommerce PDF Invoice",
-          "url": "https://woocommerce.com/document/pdf-invoice-developer-tools/"
-        },
-        {
-          "title": "PDF Invoices",
-          "url": "https://woocommerce.com/document/woocommerce-pdf-invoice-setup-and-customization/"
-        },
-        {
-          "title": "Adjust the quantity input values",
-          "url": "https://woocommerce.com/document/adjust-the-quantity-input-values/"
-        },
-        {
-          "title": "Creating Slideshows with Slides",
-          "url": "https://woocommerce.com/document/creating-slideshows-with-slides/"
         },
         {
           "title": "See You Later",
