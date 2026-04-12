@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-12T10:16:50.397Z",
-  "total_plugins": 113,
+  "last_updated": "2026-04-12T10:17:55.158Z",
+  "total_plugins": 114,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -96,7 +96,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-12T10:11:30.020Z",
+      "last_scraped": "2026-04-12T10:11:30.019Z",
       "page_count": 0,
       "categories": []
     },
@@ -673,6 +673,38 @@
       ]
     },
     {
+      "slug": "fooevents-seating",
+      "name": "FooEvents Seating",
+      "documentation_url": "https://www.fooevents.com",
+      "last_scraped": "2026-04-12T10:17:53.592Z",
+      "page_count": 57,
+      "categories": [
+        "about-us",
+        "apps",
+        "blog",
+        "bundles",
+        "cart",
+        "cs",
+        "de",
+        "disclaimer",
+        "el",
+        "es",
+        "features",
+        "fooevents-ultimate-event-checklist",
+        "fr",
+        "it",
+        "my-account",
+        "nl",
+        "pl",
+        "pricing",
+        "privacy-statement-us",
+        "products",
+        "pt",
+        "reviews",
+        "terms-and-conditions"
+      ]
+    },
+    {
       "slug": "hide-from-search",
       "name": "Hide from Search",
       "documentation_url": "https://wordpress.org/plugins/mpress-hide-from-search/",
@@ -758,7 +790,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-04-12T10:14:42.697Z",
+      "last_scraped": "2026-04-12T10:14:42.696Z",
       "page_count": 0,
       "categories": []
     },
@@ -1513,7 +1545,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-04-12T10:16:50.397Z",
+      "last_scraped": "2026-04-12T10:16:50.396Z",
       "page_count": 5,
       "categories": [
         "export-tutor-lms-courses-google-sheets",
