@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T13:25:27.453Z",
+  "last_updated": "2026-04-12T13:25:41.900Z",
   "total_plugins": 116,
   "plugins": [
     {
@@ -112,7 +112,7 @@
       "slug": "attributes-for-blocks",
       "name": "Attributes for Blocks",
       "documentation_url": "https://wordpress.org/plugins/attributes-for-blocks/",
-      "last_scraped": "2026-04-05T13:23:47.119Z",
+      "last_scraped": "2026-04-12T13:25:41.411Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -210,7 +210,7 @@
       "slug": "featured-image-with-url",
       "name": "Featured Image with URL",
       "documentation_url": "https://wordpress.org/plugins/featured-image-with-url/",
-      "last_scraped": "2026-04-12T13:25:27.453Z",
+      "last_scraped": "2026-04-12T13:25:27.452Z",
       "page_count": 1,
       "categories": [
         "advanced"
