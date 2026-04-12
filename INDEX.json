@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-12T05:38:19.107Z",
-  "total_plugins": 111,
+  "last_updated": "2026-04-12T05:39:03.015Z",
+  "total_plugins": 112,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -1563,6 +1563,14 @@
         "webhooks",
         "webhooks-zapier"
       ]
+    },
+    {
+      "slug": "fluent-pdf-generator",
+      "name": "Fluent PDF Generator",
+      "documentation_url": "https://fluentforms.com/docs/documentation/",
+      "last_scraped": "2026-04-12T05:39:03.015Z",
+      "page_count": 0,
+      "categories": []
     }
   ]
 }
