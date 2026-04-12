@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T08:25:02.527Z",
+  "last_updated": "2026-04-12T08:25:38.415Z",
   "total_plugins": 112,
   "plugins": [
     {
@@ -16,7 +16,7 @@
       "slug": "admin-columns-pro",
       "name": "Admin Columns Pro",
       "documentation_url": "https://www.admincolumns.com",
-      "last_scraped": "2026-04-08T08:03:52.745Z",
+      "last_scraped": "2026-04-12T08:25:37.029Z",
       "page_count": 0,
       "categories": []
     },
@@ -220,7 +220,7 @@
       "slug": "fluent-boards-pro",
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-04-12T08:17:23.709Z",
+      "last_scraped": "2026-04-12T08:17:23.708Z",
       "page_count": 0,
       "categories": []
     },
@@ -276,7 +276,7 @@
       "slug": "fluentaffiliate",
       "name": "FluentAffiliate",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-04-12T07:33:15.054Z",
+      "last_scraped": "2026-04-12T07:33:15.052Z",
       "page_count": 50,
       "categories": [
         "admin-portal",
@@ -337,7 +337,7 @@
       "slug": "fluentcart",
       "name": "FluentCart",
       "documentation_url": "https://docs.fluentcart.com/guide/",
-      "last_scraped": "2026-04-12T06:42:42.724Z",
+      "last_scraped": "2026-04-12T06:42:42.720Z",
       "page_count": 113,
       "categories": [
         "changelog",
@@ -382,7 +382,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-04-12T06:39:51.853Z",
+      "last_scraped": "2026-04-12T06:39:51.852Z",
       "page_count": 0,
       "categories": []
     },
@@ -390,7 +390,7 @@
       "slug": "fluentcommunity-pro",
       "name": "FluentCommunity Pro",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-04-12T08:22:57.349Z",
+      "last_scraped": "2026-04-12T08:22:57.348Z",
       "page_count": 0,
       "categories": []
     },
@@ -686,7 +686,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-04-12T08:19:50.892Z",
+      "last_scraped": "2026-04-12T08:19:50.891Z",
       "page_count": 0,
       "categories": []
     },
@@ -802,7 +802,7 @@
       "slug": "learndash",
       "name": "LearnDash",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-04-12T08:25:02.527Z",
+      "last_scraped": "2026-04-12T08:25:02.517Z",
       "page_count": 323,
       "categories": [
         "2checkout-add-on",
@@ -1053,7 +1053,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-12T07:55:54.893Z",
+      "last_scraped": "2026-04-12T07:55:54.892Z",
       "page_count": 0,
       "categories": []
     },
@@ -1111,7 +1111,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-04-12T07:56:55.071Z",
+      "last_scraped": "2026-04-12T07:56:55.070Z",
       "page_count": 0,
       "categories": []
     },
@@ -1415,7 +1415,7 @@
       "slug": "wp-fusion-logins-addon",
       "name": "WP Fusion - Logins Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-04-12T08:18:41.274Z",
+      "last_scraped": "2026-04-12T08:18:41.265Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
@@ -1497,7 +1497,7 @@
       "slug": "wp-migrate-lite",
       "name": "WP Migrate Lite",
       "documentation_url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/",
-      "last_scraped": "2026-04-12T07:55:03.668Z",
+      "last_scraped": "2026-04-12T07:55:03.667Z",
       "page_count": 0,
       "categories": []
     },
