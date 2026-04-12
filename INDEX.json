@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-12T13:25:41.900Z",
-  "total_plugins": 116,
+  "last_updated": "2026-04-12T13:25:48.305Z",
+  "total_plugins": 117,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -245,6 +245,14 @@
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
       "last_scraped": "2026-04-12T12:15:16.422Z",
+      "page_count": 0,
+      "categories": []
+    },
+    {
+      "slug": "fluent-forms-pro-add-on-pack",
+      "name": "Fluent Forms Pro Add On Pack",
+      "documentation_url": "https://fluentforms.com/docs/documentation/",
+      "last_scraped": "2026-04-12T13:25:46.725Z",
       "page_count": 0,
       "categories": []
     },
