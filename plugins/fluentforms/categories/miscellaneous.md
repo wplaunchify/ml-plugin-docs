@@ -1166,7 +1166,7 @@ Now, From the **Advanced Options**tab, you’ll see an input called **Container 
 
 Here are the Ready Classes built into the Fluent Forms default stylesheet, which you can use immediately without writing your own CSS.
 
-#### Ff_list_2col
+#### ff_list_2col
 
 This turns a Radio/checkbox list into an equally-spaced 2-column format. It only applies to Radio/checkbox lists and works with any form label position settings.
 
