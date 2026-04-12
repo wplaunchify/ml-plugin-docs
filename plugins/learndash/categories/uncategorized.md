@@ -321,14 +321,6 @@ This guide walks you through configuring app sharing, customizing preview conten
 
 ---
 
-## LearnDash Cloud FAQ
-
-**Source:** [https://learndash.com/support/kb/non-knowledgebase/uncategorized/__trashed/](https://learndash.com/support/kb/non-knowledgebase/uncategorized/__trashed/)
-
-****
-
----
-
 ## LearnDash Course Reviews
 
 **Source:** [https://learndash.com/support/kb/core/uncategorized/learndash-course-reviews/](https://learndash.com/support/kb/core/uncategorized/learndash-course-reviews/)

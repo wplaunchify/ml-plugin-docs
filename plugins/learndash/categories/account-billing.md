@@ -266,18 +266,6 @@ If you do not see this plugin, go to your [Accounts page](https://account.learnd
 
 ---
 
-## Account & Billing
-
-**Source:** [https://learndash.com/support/kb/resources/account-billing/account/](https://learndash.com/support/kb/resources/account-billing/account/)
-
-Please reference the following articles related to account and billing concerns:
-
-- [Edit account email](https://learndash.com/support/docs/account/profile/)
-- [Billing questions](https://learndash.com/support/docs/account/billing/)
-- [Licensing questions](https://learndash.com/support/docs/account/license/)
-
----
-
 ## Updates
 
 **Source:** [https://learndash.com/support/kb/resources/account-billing/updates/](https://learndash.com/support/kb/resources/account-billing/updates/)

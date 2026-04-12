@@ -1,8 +1,8 @@
 {
   "plugin_slug": "learndash",
   "plugin_name": "LearnDash",
-  "last_scraped": "2026-04-05T08:19:47.233Z",
-  "total_pages": 329,
+  "last_scraped": "2026-04-12T08:25:02.501Z",
+  "total_pages": 323,
   "failed_urls": [],
   "pages": [
     {
@@ -1555,14 +1555,6 @@
       "code_blocks": []
     },
     {
-      "title": "LearnDash Cloud FAQ",
-      "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/__trashed/",
-      "category": "Uncategorized",
-      "content": "****",
-      "headings": [],
-      "code_blocks": []
-    },
-    {
       "title": "PayPal Checkout",
       "url": "https://learndash.com/support/kb/core/payments/paypal-checkout/",
       "category": "Payments",
@@ -1587,14 +1579,6 @@
         "LearnDash LMS > Settings > Payments",
         "[ld_profile]"
       ]
-    },
-    {
-      "title": "Why Am I Unable to Submit an “Open Support Ticket”?",
-      "url": "https://learndash.com/support/kb/resources/faqs/why-am-i-unable-to-submit-an-open-support-ticket/",
-      "category": "Faqs",
-      "content": "If you’re encountering an issue submitting a support ticket, it’s likely due to permission errors or browser-related issues. Here are some steps you can take to troubleshoot:\n\n1. **Check Your Login:**\nEnsure you are logged into your LearnDash account. If you’re not logged in, you might not have access to the support ticket form. You can log in via the LearnDash Account Dashboard.\n2. **Browser Issues:**\nSometimes, browser extensions or settings can interfere with form submissions. Try clearing your browser cache or disabling extensions, or using a different browser to resolve this issue.\n3. **Email Direct Support:**\nIf you’re still unable to submit a ticket, you can email LearnDash Support directly at [support@learndash.com](mailto:support@learndash.com). Be sure to provide detailed information about the issue you’re facing, and our team will assist you as soon as possible.\n\nIf the issue persists, feel free to reach out to the support team via email, and we’ll ensure you get the help you need!",
-      "headings": [],
-      "code_blocks": []
     },
     {
       "title": "XML Quiz Import/Export Guide",
@@ -4771,14 +4755,6 @@
       ]
     },
     {
-      "title": "Account & Billing",
-      "url": "https://learndash.com/support/kb/resources/account-billing/account/",
-      "category": "Account Billing",
-      "content": "Please reference the following articles related to account and billing concerns:\n\n- [Edit account email](https://learndash.com/support/docs/account/profile/)\n- [Billing questions](https://learndash.com/support/docs/account/billing/)\n- [Licensing questions](https://learndash.com/support/docs/account/license/)",
-      "headings": [],
-      "code_blocks": []
-    },
-    {
       "title": "Troubleshooting Basics",
       "url": "https://learndash.com/support/kb/resources/troubleshooting/basics/",
       "category": "Troubleshooting",
@@ -5951,41 +5927,6 @@
       "url": "https://learndash.com/support/kb/core/getting-started-with-learndash/requirements/",
       "category": "Getting Started With Learndash",
       "content": "Before installing LearnDash, verify that your hosting environment is running the minimum recommended requirements:\n\n- WordPress version 6.6 or greater\n- LearnDash version 4.7 or greater\n- PHP version 7.4 or greater\n**WordPress recommends using PHP version 8.3 for optimal performance and security*\n- MySQL version 5.6 or greater, or MariaDB version 10.1 or greater\n- HTTPS support\n- PHP memory limit of 128 MB or greater *(LearnDash-only requirement)*\n\n**NOTE**: Beginning May 2025, LearnDash LMS will support the current WordPress version and the two versions before it. When the policy takes effect, these versions will be 6.8, 6.7, and 6.6. Please ensure you are using WordPress version 6.6 or greater before the policy change for a smooth transition.\n\nLearnDash does not support multisite configurations.\n\nMost of these values can be checked with your hosting provider. You can reach out to your developer or contact your host directly to confirm if they meet the minimum requirements. If your current hosting provider doesn’t support these requirements, consider a provider on this list of [recommended hosting options](https://www.learndash.com/blog/best-hosting-for-learndash/) for better compatibility.",
-      "headings": [],
-      "code_blocks": []
-    },
-    {
-      "title": "Database Info",
-      "url": "https://learndash.com/support/kb/resources/faqs/database-info/",
-      "category": "Faqs",
-      "content": "## Custom Tables\n\nAll LearnDash data is stored within the same database used to run WordPress. LearnDash does not store or connect to any external data sources to retrieve or store data about users, courses, quizzes, etc.\n\n## LearnDash Database Tables\n\nLearnDash uses two main database tables to store user course and quiz progress details:\n\n**1. wp_learndash_user_activity**:\n\n- This table records the activity type (course, lesson, topic, or quiz) as well as the started and completed timestamps.\n- Keyed byuser_idandpost_id.\n- Functions similarly to thewp_poststable\n\n**EXAMPLE:**\n\n```\nCREATE TABLE 'wp_learndash_user_activity' (\n'activity_id' bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n'user_id' bigint(20) unsigned NOT NULL DEFAULT '0',\n'post_id' bigint(20) unsigned NOT NULL DEFAULT '0',\n'activity_type' varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n'activity_status' tinyint(1) unsigned DEFAULT '0',\n'activity_started' int(11) unsigned DEFAULT NULL,\n'activity_completed' int(11) unsigned DEFAULT NULL,\n'activity_updated' int(11) unsigned DEFAULT NULL,\nPRIMARY KEY ('activity_id'),\nKEY 'user_id' ('user_id'),\nKEY 'post_id' ('post_id'),\nKEY 'activity_status' ('activity_status'),\nKEY 'activity_type' ('activity_type'),\nKEY 'activity_started' ('activity_started'),\nKEY 'activity_completed' ('activity_completed'),\nKEY 'activity_updated' ('activity_updated')\n);\n```\n\n**2. wp_learndash_user_activity_meta**:\n\n- This table contains meta information related to the activity records inwp_learndash_user_activity.\n- Functions similarly to thewp_postmetatable.\n- Uses anactivity_idfield to link to the main activity row.\n- Stores key/value pairs such as steps_total,score,points, etc.\n\n**EXAMPLE:**\n\n```\nCREATE TABLE `wp_learndash_user_activity_meta` (\n`activity_meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n`activity_id` bigint(20) unsigned NOT NULL DEFAULT '0',\n`activity_meta_key` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n`activity_meta_value` mediumtext COLLATE utf8mb4_unicode_ci,\nPRIMARY KEY (`activity_meta_id`),\nKEY `activity_id` (`activity_id`),\nKEY `activity_meta_key` (`activity_meta_key`(191))\n);\n```\n\nData Population Process\n\nWhen a user completes a lesson, the process of updating their progress involves two steps:\n\nUser Meta Update: The user’s meta array item is updated.\n\nActivity Tables Update: The wp_learndash_user_activity and wp_learndash_user_activity_meta tables are updated with the new progress details.\n\nNote: In future versions of LearnDash, there will be a move towards removing dependence on the user meta array completely.\n\n### Other Tables Used by LearnDash\n\n```\nwp_postmeta\nwp_posts\nwp_usermeta\nwp_users\n```\n\n### Data Management of Deleted Users\n\n**When a user is deleted via WordPress, the following actions occur:**\n\n- All the users meta data is deleted.\n- Custom post types such as Assignments and Essays created by that user are removed.\n- Quiz-related statistics stored in wp_wp_pro_quiz_statistic and wp_wp_pro_quiz_statistic_ref are also removed.\n\n### Additional Quiz Tables\n\n```\nwp_wp_pro_quiz_category\nwp_wp_pro_quiz_form\nwp_wp_pro_quiz_lock\nwp_wp_pro_quiz_master\nwp_wp_pro_quiz_prerequisite\nwp_wp_pro_quiz_question\nwp_wp_pro_quiz_template\nwp_wp_pro_quiz_toplist\n```",
-      "headings": [
-        "Custom Tables",
-        "LearnDash Database Tables",
-        "Other Tables Used by LearnDash",
-        "Data Management of Deleted Users",
-        "Additional Quiz Tables"
-      ],
-      "code_blocks": [
-        "CREATE TABLE 'wp_learndash_user_activity' (\n'activity_id' bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n'user_id' bigint(20) unsigned NOT NULL DEFAULT '0',\n'post_id' bigint(20) unsigned NOT NULL DEFAULT '0',\n'activity_type' varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n'activity_status' tinyint(1) unsigned DEFAULT '0',\n'activity_started' int(11) unsigned DEFAULT NULL,\n'activity_completed' int(11) unsigned DEFAULT NULL,\n'activity_updated' int(11) unsigned DEFAULT NULL,\nPRIMARY KEY ('activity_id'),\nKEY 'user_id' ('user_id'),\nKEY 'post_id' ('post_id'),\nKEY 'activity_status' ('activity_status'),\nKEY 'activity_type' ('activity_type'),\nKEY 'activity_started' ('activity_started'),\nKEY 'activity_completed' ('activity_completed'),\nKEY 'activity_updated' ('activity_updated')\n);",
-        "CREATE TABLE `wp_learndash_user_activity_meta` (\n`activity_meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n`activity_id` bigint(20) unsigned NOT NULL DEFAULT '0',\n`activity_meta_key` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,\n`activity_meta_value` mediumtext COLLATE utf8mb4_unicode_ci,\nPRIMARY KEY (`activity_meta_id`),\nKEY `activity_id` (`activity_id`),\nKEY `activity_meta_key` (`activity_meta_key`(191))\n);",
-        "wp_postmeta\nwp_posts\nwp_usermeta\nwp_users",
-        "wp_wp_pro_quiz_category\nwp_wp_pro_quiz_form\nwp_wp_pro_quiz_lock\nwp_wp_pro_quiz_master\nwp_wp_pro_quiz_prerequisite\nwp_wp_pro_quiz_question\nwp_wp_pro_quiz_template\nwp_wp_pro_quiz_toplist"
-      ]
-    },
-    {
-      "title": "Recommended Hosting",
-      "url": "https://learndash.com/support/kb/resources/user-guides/hosting/",
-      "category": "User Guides",
-      "content": "If you have not yet selected a host for your LearnDash site, or you are not happy with the performance of your current host, then read the article below:\n\n> The Best Hosting For Your LearnDash Course Site",
-      "headings": [],
-      "code_blocks": []
-    },
-    {
-      "title": "WordPress Themes",
-      "url": "https://learndash.com/support/kb/resources/user-guides/themes/",
-      "category": "User Guides",
-      "content": "**NOTE**\n\nThese are only suggestions as LearnDash works with most themes that are coded using WordPress standards.\n\nIf you already have a WordPress theme installed, LearnDash will try to adopt your theme’s styling. If you have not yet selected a theme, then you can consider using one of the following…\n\n**FREE**\n\n- [Kadence](https://kadencewp.com)\n- [Astra](https://support.learndash.com/astra-theme)\n- [GeneratePress](http://bit.ly/1RPT586)\n\n**PREMIUM**\n\n- [BuddyBoss for LearnDash](https://www.buddyboss.com/learndash-lms-theme/ref/692/)\n- [Academy Pro](https://my.studiopress.com/themes/academy/)\n- [University Course and Event Theme](http://themeforest.net/item/university-education-event-and-course-theme/8412116?ref=jhf12)\n- [Invent – Education Course Theme](https://themeforest.net/item/invent-education-course-college-wordpress-theme/9263796)\n- [Lincoln – Education Material Theme](http://bit.ly/1ZbKQW4)\n- [wOffice – Intranet/Extranet Theme](http://bit.ly/1Lmj8wO)\n- [Education Center – Training Courses Theme](http://bit.ly/1PVfy2g)\n\nYou can further customize LearnDash to match your current theme using custom CSS, or check out one of the following plugins:\n\n- [Visual Customizer](http://www.learndash.com/customizer) by Snap Orbital\n- [Design Upgrade Pro](https://escapecreative.com/products/design-upgrade-learndash/) by Escape Creative\n- [Elementor Pro](https://elementor.com/pricing/) by Elementor",
       "headings": [],
       "code_blocks": []
     },

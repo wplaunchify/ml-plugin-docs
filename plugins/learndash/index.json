@@ -2,8 +2,8 @@
   "plugin_slug": "learndash",
   "plugin_name": "LearnDash",
   "documentation_url": "https://learndash.com/support/documentation/",
-  "last_scraped": "2026-04-05T08:19:47.246Z",
-  "total_pages": 329,
+  "last_scraped": "2026-04-12T08:25:02.517Z",
+  "total_pages": 323,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -37,7 +37,7 @@
       "slug": "account-billing",
       "url": "https://learndash.com/support/documentation/account-billing/",
       "file": "categories/account-billing.md",
-      "page_count": 7,
+      "page_count": 6,
       "pages": [
         {
           "title": "LearnDash Licensing & Management",
@@ -46,10 +46,6 @@
         {
           "title": "License",
           "url": "https://learndash.com/support/kb/resources/account-billing/license/"
-        },
-        {
-          "title": "Account & Billing",
-          "url": "https://learndash.com/support/kb/resources/account-billing/account/"
         },
         {
           "title": "Updates",
@@ -462,15 +458,11 @@
       "slug": "faqs",
       "url": "https://learndash.com/support/documentation/faqs/",
       "file": "categories/faqs.md",
-      "page_count": 33,
+      "page_count": 31,
       "pages": [
         {
           "title": "How do I automatically assign users to courses when they sign up/register on my site?",
           "url": "https://learndash.com/support/kb/core/faqs/how-do-i-automatically-assign-users-to-courses-when-they-sign-up-register-on-my-site/"
-        },
-        {
-          "title": "Why Am I Unable to Submit an “Open Support Ticket”?",
-          "url": "https://learndash.com/support/kb/resources/faqs/why-am-i-unable-to-submit-an-open-support-ticket/"
         },
         {
           "title": "I’m getting the error “the link you followed has expired” when installing LearnDash.",
@@ -587,10 +579,6 @@
         {
           "title": "Known Issues & Conflicts",
           "url": "https://learndash.com/support/kb/resources/faqs/known-issues/"
-        },
-        {
-          "title": "Database Info",
-          "url": "https://learndash.com/support/kb/resources/faqs/database-info/"
         },
         {
           "title": "FAQs",
@@ -1697,7 +1685,7 @@
       "slug": "uncategorized",
       "url": "https://learndash.com/support/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 9,
+      "page_count": 8,
       "pages": [
         {
           "title": "Migrating Recurring PayPal Subscriptions from Standard to Checkout",
@@ -1714,10 +1702,6 @@
         {
           "title": "How to Configure and Use the Share App Link Feature in the LearnDash App",
           "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/how-to-configure-and-use-the-share-app-link-feature-in-the-learndash-app/"
-        },
-        {
-          "title": "LearnDash Cloud FAQ",
-          "url": "https://learndash.com/support/kb/non-knowledgebase/uncategorized/__trashed/"
         },
         {
           "title": "LearnDash Course Reviews",
@@ -1742,7 +1726,7 @@
       "slug": "user-guides",
       "url": "https://learndash.com/support/documentation/user-guides/",
       "file": "categories/user-guides.md",
-      "page_count": 12,
+      "page_count": 10,
       "pages": [
         {
           "title": "Gamification And Badges In LearnDash",
@@ -1783,14 +1767,6 @@
         {
           "title": "How do I protect my course files & downloads?",
           "url": "https://learndash.com/support/kb/resources/user-guides/protect-files-downloads/"
-        },
-        {
-          "title": "Recommended Hosting",
-          "url": "https://learndash.com/support/kb/resources/user-guides/hosting/"
-        },
-        {
-          "title": "WordPress Themes",
-          "url": "https://learndash.com/support/kb/resources/user-guides/themes/"
         }
       ]
     },
