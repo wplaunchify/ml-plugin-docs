@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13T08:18:44.261Z",
+  "last_updated": "2026-04-13T08:19:46.382Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -252,7 +252,7 @@
       "slug": "fluent-forms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-04-12T12:15:16.422Z",
+      "last_scraped": "2026-04-13T08:19:46.382Z",
       "page_count": 0,
       "categories": []
     },
