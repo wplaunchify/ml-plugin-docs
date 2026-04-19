@@ -158,12 +158,9 @@ Or, simply go to the **Dashboard** of **FluentCommunity’s** free version and c
 
 Once you have purchased the plugin, you will get access to the [WP Manage Ninja Dashboard](https://wpmanageninja.com/). Now, log into the [account](https://wpmanageninja.com/account/dashboard/) with your credentials.
 
-Now, from the left sidebar, click **Download** to get the **FluentCommunity Pro** 
-```
-.zip
-```
+Now, from the left sidebar, click **Download** and search for the FluentCommunity Pro then click on the **Download** button along with it.
 
- file.
+![](https://fluentcommunity.co/wp-content/uploads/2024/09/fluentbooking-download-scaled.webp)
 
 Next, click **Licenses** in the left sidebar to view your FluentCommunity license key. Copy the license key from this page. You can also see all sites activated with this license key by clicking the **View List** button.
 
