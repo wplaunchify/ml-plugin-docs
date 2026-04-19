@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T15:19:00.151Z",
+  "last_updated": "2026-04-19T16:07:49.918Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1133,7 +1133,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://theeventscalendar.com/knowledgebase/documentation/",
-      "last_scraped": "2026-04-12T16:07:09.671Z",
+      "last_scraped": "2026-04-19T16:07:49.918Z",
       "page_count": 0,
       "categories": []
     },
