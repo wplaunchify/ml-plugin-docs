@@ -20,7 +20,29 @@
 
 ## Changelog
 
-#### 6.2.0 (Date: April 01, 2026)
+#### 6.2.1 Pro (Date: April 16, 2026)
+
+- Fixed imported entries after framework v2 request namespace changes
+- Fixed imported form styles not being restored correctly
+- Hardens entry, preview, webhook, Zapier, import, and resend actions with form-scoped authorization checks
+- Hardens payment bulk actions and legacy payment AJAX fallbacks against unauthorized form access
+
+#### 6.2.1 Free (Date: April 16, 2026)
+
+- Hardens form-scoped permissions
+- Added opt-in legacy HMAC fallback for pre-6.2.0 encrypted tokens to ease upgrade compatibility
+- Added filter hooks for honeypot, Akismet, and CAPTCHA spam/failed messages
+- Added database indexes to the form_analytics table for faster reporting queries
+- Added mbstring fallback for server without the extension
+- Fixed public PDF download support for legacy links
+- Fixed draft submissions table support in entry export
+- Fixed entries search ACL issue
+- Fixed All Entries page localStorage persistence
+- Fixed character-limit validation showing the configured message instead of a raw field name
+- Fixed numeric validation so numeric-looking text is no longer treated as a number
+- Fixed WPML addon activation failing with an Invalid plugin error
+
+#### 6.2.0 Free (Date: April 01, 2026)
 
 - Upgraded internal framework for better performance and PHP 8.4 support
 - Improved Stripe payment confirmation security
@@ -31,7 +53,7 @@
 - Improved overall plugin security and stability
 - Dev: [Upgrade Guide for developers](https://developers.fluentforms.com/upgrade-guide/6.2.0/)
 
-#### Pro 6.2.0 (Date: March 31, 2026)
+#### 6.2.0 Pro (Date: March 31, 2026)
 
 - Fixed Square payment by migrating from deprecated CreateCheckout to Payment Links API
 - Fixed Square order ID validation to prevent tampering on payment callback

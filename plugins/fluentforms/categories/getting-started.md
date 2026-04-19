@@ -267,7 +267,9 @@ Or, you can open the **Fluent Forms free**plugin from your WordPress dashboard a
 
 Once your purchase is complete, you can access the WPManageninja Dashboard. Log in to the[account](https://wpmanageninja.com/account/dashboard/) with your credentials.
 
-Then, go to the **Dashboard**, and you will find **Fluent Forms** under **Downloads**or**Purchase Story**. Now, click the Download button from the left sidebar, and you will see the Fluent Forms **.zip** file available for download to your device.
+Then go to the **Dashboard**, and you will find **Fluent Forms** **Pro** zip under **Downloads**. Now, click the **Download** button  and you will see the Fluent Forms **.zip** file has downloaded to your device.
+
+![](https://fluentforms.com/wp-content/uploads/2023/05/fluentforms-pro-download-scaled.webp)
 
 To access your Fluent Forms license, navigate to **Licenses** in the left sidebar. You’ll find your Fluent Forms license key there. You’ll need this key later when activating the plugin. If you miss it now, you can always come back and retrieve it from your WPManageNinja Dashboard.
 
