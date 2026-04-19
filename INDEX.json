@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T13:26:11.169Z",
+  "last_updated": "2026-04-19T13:26:26.911Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -120,7 +120,7 @@
       "slug": "attributes-for-blocks",
       "name": "Attributes for Blocks",
       "documentation_url": "https://wordpress.org/plugins/attributes-for-blocks/",
-      "last_scraped": "2026-04-19T13:26:11.169Z",
+      "last_scraped": "2026-04-19T13:26:11.168Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -218,7 +218,7 @@
       "slug": "featured-image-with-url",
       "name": "Featured Image with URL",
       "documentation_url": "https://wordpress.org/plugins/featured-image-with-url/",
-      "last_scraped": "2026-04-19T13:25:53.325Z",
+      "last_scraped": "2026-04-19T13:25:53.324Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1141,7 +1141,7 @@
       "slug": "uncanny-groups-for-learndash",
       "name": "Uncanny Groups for LearnDash",
       "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-      "last_scraped": "2026-04-12T13:26:39.978Z",
+      "last_scraped": "2026-04-19T13:26:24.964Z",
       "page_count": 0,
       "categories": []
     },
