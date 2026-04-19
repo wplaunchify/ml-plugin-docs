@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T06:28:55.011Z",
+  "last_updated": "2026-04-19T06:32:27.250Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1563,7 +1563,7 @@
       "slug": "wp-fusion-media-tools-addon",
       "name": "WP Fusion - Media Tools Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-04-12T06:30:39.203Z",
+      "last_scraped": "2026-04-19T06:32:27.250Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
