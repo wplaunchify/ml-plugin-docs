@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T22:07:14.746Z",
+  "last_updated": "2026-04-19T22:07:48.275Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -112,7 +112,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-04-19T18:22:27.785Z",
+      "last_scraped": "2026-04-19T18:22:27.784Z",
       "page_count": 0,
       "categories": []
     },
@@ -782,7 +782,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-19T20:16:57.389Z",
+      "last_scraped": "2026-04-19T20:16:57.388Z",
       "page_count": 0,
       "categories": []
     },
@@ -790,7 +790,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-19T20:07:17.018Z",
+      "last_scraped": "2026-04-19T20:07:17.017Z",
       "page_count": 0,
       "categories": []
     },
@@ -953,7 +953,7 @@
       "slug": "menu-image",
       "name": "Menu Image",
       "documentation_url": "https://wordpress.org/plugins/menu-image/",
-      "last_scraped": "2026-04-19T18:17:54.025Z",
+      "last_scraped": "2026-04-19T18:17:54.024Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1070,7 +1070,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-04-19T21:12:11.576Z",
+      "last_scraped": "2026-04-19T21:12:11.573Z",
       "page_count": 10,
       "categories": [
         "detective-mode",
@@ -1117,7 +1117,7 @@
       "slug": "store-credit-for-woocommerce",
       "name": "Store Credit for WooCommerce",
       "documentation_url": "https://woocommerce.com/document/woocommerce-store-credit/documentation/",
-      "last_scraped": "2026-04-19T19:21:46.171Z",
+      "last_scraped": "2026-04-19T19:21:46.170Z",
       "page_count": 0,
       "categories": []
     },
@@ -1167,7 +1167,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-04-19T22:07:14.746Z",
+      "last_scraped": "2026-04-19T22:07:14.745Z",
       "page_count": 0,
       "categories": []
     },
@@ -1269,7 +1269,7 @@
       "slug": "wp-all-export-user-export-add-on-pro",
       "name": "WP All Export - User Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-04-19T21:11:11.049Z",
+      "last_scraped": "2026-04-19T21:11:11.044Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -1279,7 +1279,7 @@
       "slug": "wp-all-import-acf-add-on-free",
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-04-19T20:11:45.671Z",
+      "last_scraped": "2026-04-19T20:11:45.667Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -1309,7 +1309,7 @@
       "slug": "wp-all-import-user-import-add-on-pro",
       "name": "WP All Import - User Import Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-04-12T22:07:39.122Z",
+      "last_scraped": "2026-04-19T22:07:46.389Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -1636,7 +1636,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-04-19T18:18:19.935Z",
+      "last_scraped": "2026-04-19T18:18:19.934Z",
       "page_count": 0,
       "categories": []
     },
