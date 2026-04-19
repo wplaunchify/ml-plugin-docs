@@ -1,7 +1,7 @@
 {
   "plugin_slug": "kadence-theme",
   "plugin_name": "Kadence Theme",
-  "last_scraped": "2026-04-12T10:14:42.695Z",
+  "last_scraped": "2026-04-19T10:16:03.031Z",
   "total_pages": 0,
   "failed_urls": [
     "https://www.kadencewp.com/help-center/docs/kadence-theme/add-thumbnails-to-next-previous-post-navigation/",
@@ -112,6 +112,7 @@
     "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-infinite-scroll/",
     "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-maintenance-mode/",
     "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-site-assist/",
+    "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-theme-pro-addon/",
     "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-theme-pro-addon/",
     "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-woocommerce-customizer-settings/",
     "https://www.kadencewp.com/help-center/docs/kadence-theme/navigation-colors-transparent-header-sticky-header/",
