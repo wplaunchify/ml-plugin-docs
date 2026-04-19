@@ -145,46 +145,56 @@ That’s how you can embed your booking form on your webpage.
 
 **Source:** [https://fluentbooking.com/docs/how-to-install-activate-fluent-booking/](https://fluentbooking.com/docs/how-to-install-activate-fluent-booking/)
 
-[FluentBooking](https://fluentbooking.com/) offers the perfect solution for effortless and hassle-free booking for appointments, meetings, webinars, events, sales calls, and more. This article will guide you through Installing and Activating the **Pro version** of the **FluentBooking**plugin on your **WordPress** website.
+FluentBooking offers the perfect solution for effortless and hassle-free booking for appointments, meetings, webinars, events, sales calls, and more. This guide will walk you through downloading, installing, and activating the *Pro version* of the FluentBooking plugin on your WordPress website.
 
-## How to Install and Activate FluentBooking Pro
+### Step 1: Download the Pro Plugin
 
-To learn how to install and activate the FluentBooking Pro plugin, follow the steps with the screenshots below –
+First, you need to download the installation file from your account.
 
-### Downloading the Zip File
+1. Log into your WPManageNinja [My Account](https://wpmanageninja.com/account/)dashboard using your credentials.
+2. In the left-hand sidebar, click on the **Downloads** tab.
+3. Locate the fluent-booking-pro zip file in your list of available downloads.
+4. Click the **Download** button on the right side of the row. The FluentBooking Pro plugin will be downloaded to your device in *.zip* format.
 
-First, you need to purchase the FluentBooking Pro plugin by [clicking here](https://fluentbooking.com/).
+![](https://fluentbooking.com/wp-content/uploads/2023/10/account-download-scaled.webp)
 
-Once you have purchased the plugin, you will get access to the [WP Manage Ninja Dashboard](http://wpmanageninja.com). Now, log into the **account**with your credentials.
+### Step 2: Copy Your License Key
 
-Then, go to the **Dashboard** and you will find **FluentBooking** under **My** **Products** if you have already purchased the product.
+You will need your license key to unlock the Pro features after installation.
 
-Now, click the Download button, and the **FluentBooking Pro** plugin will be downloaded to your device in **.zip** format.
+1. Still in your WPManageNinja dashboard, click on the **Licenses** tab from the left sidebar.
+2. Locate your *FluentBooking Pro* and click on it to see the license details.
+3. Click the **Copy** button next to your License Key to copy it.
 
-Also, copy the **License Key**as you need it later to activate the plugin, or you can retrieve it anytime from your **WPManageNinja Dashboard**.
+✨ **Note:** Keep this key copied to your clipboard, as you will need to paste it into your WordPress dashboard shortly. You can always return to this page to retrieve it anytime.
 
-![](https://fluentbooking.com/wp-content/uploads/2024/12/Booking-Licence-1-scaled.webp)
+![](https://fluentbooking.com/wp-content/uploads/2023/10/account-licenses-scaled.webp)
 
-## Installing the FluentBooking
+### Step 3: Install the Plugin on WordPress
 
-Now go to the**Add New Plugin** page from your **WordPress Dashboard**, and click on **Upload** Plugin.
+Now it is time to upload the file you just downloaded to your website.
 
-Click on the **Choose file** to upload the **fluent-booking-pro.zip file** that you’ve downloaded before, and press the **Install Now** button. The **FluentBooking** plugin will be successfully installed on your WordPress site!
+1. Go to the **Add New Plugin** page from your WordPress Dashboard.
+2. Click on the **Upload Plugin** button at the top of the page.
+3. Click on **Choose file** to upload the fluent-booking-pro.zip file that you downloaded earlier.
+4. Press the **Install Now** button. The FluentBooking plugin will be successfully installed on your WordPress site!
 
 ![](https://fluentbooking.com/wp-content/uploads/2023/10/Install-FB.png)
 
-## Activating the License key
+---
 
-To activate the license, follow the steps in the screenshot below —
+### Step 4: Activate Your License Key
 
-First, go to **Settings** from your **FluentBooking Dashboard**, open the **Licens**e section from the left sidebar, and enter the**License Key** you’ve copied before from your **WPManageNinja dashboard**.
+The final step is to verify your purchase to unlock all the premium features.
 
-And finally, click the **Verify License** button. Your **FluentBooking Pro version** plugin will also be successfully **Activated** on your WordPress site!
+1. Go to **Settings** from your FluentBooking Dashboard.
+2. Open the **License** section from the left sidebar.
+3. Paste the **License Key** you copied from your WPManageNinja dashboard into the provided field.
+4. Click the **Verify License** button.
 
 ![](https://fluentbooking.com/wp-content/uploads/2024/12/Booking-Licence-2-scaled.webp)
 
-Congratulations now you can explore all the amazing features of FluentBooking!
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+Your FluentBooking Pro version plugin will now be successfully activated on your WordPress site! Congratulations, now you can explore all the amazing features of FluentBooking.
 
 ---
 

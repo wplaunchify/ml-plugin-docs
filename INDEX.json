@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T17:15:03.541Z",
+  "last_updated": "2026-04-19T17:15:15.489Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -336,7 +336,7 @@
       "slug": "fluentbooking",
       "name": "FluentBooking",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-04-12T17:14:23.322Z",
+      "last_scraped": "2026-04-19T17:15:13.772Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -447,7 +447,7 @@
       "slug": "fluentcrm-pro",
       "name": "FluentCRM Pro",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-04-19T17:15:03.541Z",
+      "last_scraped": "2026-04-19T17:15:03.540Z",
       "page_count": 0,
       "categories": []
     },
