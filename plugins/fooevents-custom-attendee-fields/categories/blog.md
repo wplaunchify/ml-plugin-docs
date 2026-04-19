@@ -11,6 +11,13 @@
 # News & Updates
 				## Get the scoop on the latest FooEvents features and learn tips and tricks that will enhance your product experience.
 				[Subscribe to the blog digest!](#newsletter-signup)
+				![Fooevents Addtowallet Integration Thumbnail](https://www.fooevents.com/wp-content/uploads/2026/04/FooEvents_AddToWallet_integration_thumbnail.jpg)
+				### Solving “Check-in” Friction: Lessons from Acute Inflections
+
+				April 13, 2026
+				Every event organizer knows that the “moment of truth” happens right at the entrance. This is where technical glitches or misplaced tickets can create immediate bottlenecks. For Elasea and Sadiki from Acute Inflections, New York’s premier jazzy R&B duo, the solution was moving tickets out of the inbox and directly
+		
+		[Read More →](https://www.fooevents.com/fooevents-addtowallet-integration-acute-inflections/)
 				![Fooevents For Woocommerce Version 2](https://www.fooevents.com/wp-content/uploads/2026/03/fooevents-2-768x500.png)
 				### Introducing the New Attendee Details Page and Easier Ticket Theme Updates
 
@@ -109,13 +116,6 @@
 				The FooEvents Check-ins app, which was released way back in 2016, has been the backbone of event check-ins for thousands of FooEvents customers—checking in over 15 million tickets to date. It has evolved considerably since the initial launch and we’re thrilled to unveil a completely rebuilt FooEvents Check-ins App (version
 		
 		[Read More →](https://www.fooevents.com/new-fooevents-check-ins-app-v3/)
-				![Base Collection - Free Fooevents Ticket Themes](https://www.fooevents.com/wp-content/uploads/2024/10/base-collection.png)
-				### Introducing the Base Collection: 8 Free Ticket Themes
-
-				October 23, 2024
-				We’re excited to announce the release of the Base Collection—a new range of versatile free ticket themes for FooEvents. When using the FooEvents for WooCommerce plugin to sell ticket, attendees receive an HTML ticket email after purchasing a ticket. Ticket themes are templates that allow you to customize the look and
-		
-		[Read More →](https://www.fooevents.com/base-collection-free-ticket-themes/)
 				### Subscribe to the blog digest
 				### Receive a summary of the latest posts in your inbox.
 				Your details could not be submitted. Please try again.
