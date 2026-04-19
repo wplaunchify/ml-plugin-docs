@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T09:19:45.698Z",
+  "last_updated": "2026-04-19T09:20:25.426Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -724,7 +724,7 @@
       "slug": "hide-from-search",
       "name": "Hide from Search",
       "documentation_url": "https://wordpress.org/plugins/mpress-hide-from-search/",
-      "last_scraped": "2026-04-19T09:19:45.698Z",
+      "last_scraped": "2026-04-19T09:19:45.697Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1287,7 +1287,7 @@
       "slug": "wp-all-import-acf-add-on-pro",
       "name": "WP All Import - ACF Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-04-12T09:20:16.531Z",
+      "last_scraped": "2026-04-19T09:20:23.659Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
