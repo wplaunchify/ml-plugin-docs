@@ -19,9 +19,83 @@ This section covers various types of reports to give you a holistic view of your
 - **Revenue Report:** In-depth financial insights into your store's gross sales, net revenue, refunds, taxes, shipping, and discounts.
 - **Refunds Report:** Specific analytics focused on refund activity, helping you understand refund trends and their impact.
 - **Subscription Report:** Key insights into your recurring revenue, including active subscribers, total revenue, and retention rates.
+- **Retention Report:** Subscription retention and churn analytics, filters, charts, lifetime value, and monthly summary data.
+- **Cohorts Report:** Cohort-based subscription analytics with retention views, period comparisons, and exportable grouped data.
+- **Future Renewals Report:** Forecasted subscription renewal revenue and counts to help with near-term cash flow planning.
 - **Product Report:** Detailed analytics on individual product performance, including units sold and top-selling items.
 
 By regularly reviewing these reports, you can gain a deeper understanding of your store's health and strategize for future growth.
+
+---
+
+## Subscription Cohorts Report ​
+
+**Source:** [https://docs.fluentcart.com/guide/reporting-analytics/cohorts](https://docs.fluentcart.com/guide/reporting-analytics/cohorts)
+
+# Subscription Cohorts Report ​
+
+The **Cohorts** report provides a detailed look at customer behavior over time by grouping subscribers based on when they started their journey. This report is essential for identifying patterns in customer retention and revenue stability, allowing you to see exactly how long specific "groups" of customers stay with your business.
+
+## Accessing the Cohorts Report ​
+
+Go to your WordPress dashboard, navigate to **FluentCart Pro → Reports**, and select the **Cohorts** sub-tab under the **Subscriptions** category.
+
+---
+
+## Report Filters and Controls ​
+
+The Cohorts dashboard offers powerful filtering options to help you drill down into specific datasets.
+
+- **Date Filter:** Select a specific timeframe to view the cohorts that started during that period.
+- **Reset Filters:** Instantly clear your custom selections to return to the default overview.
+- **Advanced Filters (Funnel Icon):** Filter your cohort data by **Order Type**, **Subscription Type**, or specific **Products** to see how different offerings perform over time.
+
+![Accessing the Cohorts Report](https://docs.fluentcart.com/assets/accessing-the-cohorts-report-1.CCmuASMl.webp)
+
+## Cohort Visualization & Table ​
+
+The **Subscription Cohorts** table breaks down your data into a "heat map" format, making it easy to spot trends at a glance.
+
+### 1. Time Granularity ​
+
+You can toggle the view between **Year** and **Month**.
+
+- **Yearly View:** Best for long-term business health analysis.
+- **Monthly View:** Best for tracking the immediate impact of seasonal promotions or product updates.
+
+### 2. Metric Selection ​
+
+Choose whether to analyze retention based on customer count or financial value:
+
+- **Subscriptions:** Tracks the number of active subscribers remaining from the original group.
+- **MRR (Monthly Recurring Revenue):** Tracks how much revenue the specific group continues to generate over time.
+
+### 3. Data Representation Styles ​
+
+The dropdown menu allows you to change how the percentages in the table are calculated:
+
+- **% of Total:** Shows how many customers/revenue remains compared to the original start date.
+- **% of Previous:** Shows the retention rate compared to the immediately preceding month.
+- **Total Value:** Displays the actual currency or subscriber numbers instead of percentages.
+
+## Understanding the Cohort Table ​
+
+Each row represents a **Cohort** (a group of subscribers who started in the same month/year).
+
+- **Subscribed/Start:** This column shows the date the group joined and the initial value (Total subscribers or MRR) they brought in.
+- **Month 1, Month 2, etc.:** These columns track that specific group as they move through their lifecycle.
+- **Weighted Avg. Retained:** The bottom row provides an aggregate average of how all cohorts perform at each stage, giving you a baseline for your business's overall retention health.
+
+## Managing Cohort Data ​
+
+FluentCart allows you to manage and export this data for external reporting or deeper analysis.
+
+- **Generate Snapshots:** Click this button to refresh and capture the latest data for your cohorts.
+- **Export:** Use the Export button to download your cohort data as a CSV file for use in spreadsheet software like Excel or Google Sheets.
+
+![Cohort Table](https://docs.fluentcart.com/assets/cohorts-2.HzN6MFOM.webp)
+
+With the **Subscription Cohorts** report, you can identify exactly when customers are most likely to leave and which products attract the most loyal subscribers. By understanding these patterns, you can make data-driven decisions to improve your long-term recurring revenue
 
 ---
 
@@ -72,6 +146,54 @@ Below the chart, a detailed **Comparison** table breaks down the growth trend mo
 ![Customer Reports](https://docs.fluentcart.com/assets/customer-report-2.BDtCL2vE.webp)
 
 By using the Customer Report, you can move beyond simple sales numbers to understand the most valuable asset of your store: your customer base.
+
+---
+
+## Subscription Future Renewals Report ​
+
+**Source:** [https://docs.fluentcart.com/guide/reporting-analytics/future-renewals](https://docs.fluentcart.com/guide/reporting-analytics/future-renewals)
+
+# Subscription Future Renewals Report ​
+
+The **Future Renewals** report provides a predictive look into your store's upcoming income. By analyzing your currently active subscriptions and their next billing dates, FluentCart estimates the expected revenue you will receive over the next few months. This report is a vital tool for cash flow forecasting and business planning.
+
+## Accessing Future Renewals ​
+
+Go to your WordPress dashboard, navigate to **FluentCart Pro → Reports**, and select the **Future Renewals** sub-tab under the **Subscriptions** category.
+
+## Understanding Future Revenue Estimates ​
+
+This report is calculated by looking at all active subscriptions and extrapolating their scheduled renewals over a specific time period (typically a 90-day window).
+
+- **Renewal Revenue:** The total estimated dollar amount expected from successful subscription renewals in the upcoming period.
+- **Renewals:** The total count of individual subscription transactions scheduled to occur.
+
+## Upcoming Renewal Revenue Chart ​
+
+The main feature of this report is an interactive chart that visualizes your projected income and transaction volume over the coming months.
+
+- **Revenue (Blue Line):** Tracks the total monetary value of renewals. Use this to identify "peak months" where high-value subscriptions are set to renew.
+- **Count (Light Grey Bars):** Represents the number of individual renewals happening each month.
+- **Combined View:** By seeing both the line and the bars together, you can determine if your revenue is coming from a high volume of small transactions or a few high-value renewals.
+
+![Future Renewals](https://docs.fluentcart.com/assets/future-renewals-1.DTdJ5kg1.webp)
+
+## Feature Breakdown & Controls ​
+
+The Future Renewals interface is designed to be clean and easy to interpret at a glance.
+
+- **Timeline Axis:** The horizontal axis shows the upcoming months (e.g., April 2026 through July 2026), giving you a clear window into your immediate financial future.
+- **Data Toggle:** Use the interactive legend to toggle between viewing just the **Revenue** line or just the renewal **Count** bars.
+- **Zoom & Focus:** Use the icons in the top-right corner of the chart to zoom into specific dates or expand the view for a more detailed analysis.
+
+## Tips for Forecasting ​
+
+> Note: These figures are estimates based on active subscriptions. Actual revenue may vary slightly depending on factors like payment failures, mid-month cancellations, or manual plan changes.
+
+- **Plan for Growth:** Use the "May 2026" or "June 2026" peaks to plan your marketing budget or inventory purchases, knowing when your cash reserves will be strongest.
+- **Identify Gaps:** If you notice a significant drop in future renewals in a specific month, consider launching a promotional campaign to attract new subscribers or encourage annual upgrades.
+
+With the **Future Renewals** report feature, you no longer have to guess what next month's income will look like. By providing a clear projection of upcoming subscription billing, FluentCart helps you manage your business with confidence and financial clarity.
 
 ---
 
@@ -336,6 +458,67 @@ The final charts focus on catalog performance and the health of your customer ba
 - **Customer LifeTime Value (CLTV):** Metrics showing the expected total revenue from a customer over their entire relationship with your store, which is key for marketing decisions.
 
 By reviewing the Overview first, you get a clean summary of the most critical numbers, allowing you to choose which detailed tab (Sales, Refunds, etc.) you need to investigate further.
+
+---
+
+## Subscription Retention & Churn Report ​
+
+**Source:** [https://docs.fluentcart.com/guide/reporting-analytics/retention](https://docs.fluentcart.com/guide/reporting-analytics/retention)
+
+# Subscription Retention & Churn Report ​
+
+The **Retention** report in FluentCart provides a deep dive into your subscription health, helping you track how many customers you keep versus how many you lose (churn) over time. This dashboard is essential for measuring long-term stability and customer loyalty.
+
+## Accessing the Retention Report ​
+
+Go to your WordPress dashboard, navigate to **FluentCart Pro → Reports**, and select the **Retention** sub-tab under the **Subscriptions** category.
+
+## Report Filters and Controls ​
+
+Use the controls at the top of the page to customize the data displayed in your charts and tables.
+
+- **Date Filter:** Define a specific date range to analyze retention trends over weeks, months, or years.
+- **Reset Filters:** Instantly clear your custom date selections to return to the default report view.
+
+![Retention Report](https://docs.fluentcart.com/assets/retention-report-1.ayDlcORM.webp)
+
+## Subscription & MRR Retention ​
+
+This section highlights your ability to keep active subscribers and the revenue they generate.
+
+- **Subscription Retention:** The percentage of individual subscribers who remained active compared to the previous period.
+- **MRR (Monthly Recurring Revenue) Retention:** The percentage of recurring revenue maintained. This helps you see if you are keeping your most valuable customers.
+- **Average In Period:** A helpful benchmark showing your historical average for these metrics to help you identify if current performance is above or below your norm.
+
+## Retention Rate Chart ​
+
+The **Retention Rate** chart provides a visual month-over-month comparison of your subscriber stability.
+
+- **Subscription Retention vs. MRR Retention:** The chart plots both metrics side-by-side, allowing you to see if customer loss is impacting your revenue proportionally.
+- **Interactive Controls:** Use the icons in the top-right corner to zoom into specific dates, toggle between chart types, or download the graph for your internal business reviews.
+
+![Retention Chart](https://docs.fluentcart.com/assets/retention-rate-2.BN-gtrsB.webp)
+
+## Lifetime Analysis ​
+
+This section uses your current data to predict the long-term value of your average customer.
+
+- **Expected Subscription Lifetime:** An estimate of how many months a customer will stay subscribed based on your current retention rate.
+- **Expected Lifetime Value (LTV):** The total revenue you can expect to earn from a single subscriber before they churn. This is a critical metric for determining how much you can afford to spend on marketing.
+
+## Subscription & MRR Churn ​
+
+Churn is the measure of lost customers. Monitoring this helps you identify "leaks" in your subscription model.
+
+- **Subscription Churn:** The percentage of customers who cancelled their subscriptions during the selected period.
+- **MRR Churn:** The total amount of recurring revenue lost due to cancellations or downgrades.
+- **Churn Rate Trend:** This line graph visualizes whether your churn is increasing or decreasing over time, helping you spot negative trends before they impact your bottom line.
+
+![Lifetime Analysis](https://docs.fluentcart.com/assets/lifetime-analysis-3.CzVnApII.webp)
+
+> Note: High churn in a specific month often correlates with the end of a promotional period or a technical issue. Use these dates to investigate and improve your customer experience.
+
+With the **Retention Report**, you can move beyond simple signup numbers and focus on building a sustainable, recurring business by keeping the customers you've already won.
 
 ---
 

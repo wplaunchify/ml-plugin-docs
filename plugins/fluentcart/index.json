@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-04-12T06:42:42.720Z",
-  "total_pages": 113,
+  "last_scraped": "2026-04-19T06:45:16.790Z",
+  "total_pages": 116,
   "failed_urls_count": 8,
   "sections": [
     {
@@ -327,15 +327,23 @@
       "slug": "reporting-analytics",
       "url": "https://docs.fluentcart.com/guide/reporting-analytics/",
       "file": "categories/reporting-analytics.md",
-      "page_count": 9,
+      "page_count": 12,
       "pages": [
         {
           "title": "Reporting & Analytics ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/"
         },
         {
+          "title": "Subscription Cohorts Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/cohorts"
+        },
+        {
           "title": "Customer Report Dashboard ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/customer-report"
+        },
+        {
+          "title": "Subscription Future Renewals Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/future-renewals"
         },
         {
           "title": "Orders Report ​",
@@ -352,6 +360,10 @@
         {
           "title": "Reports Dashboard Overview ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/reports-dashboard-overview"
+        },
+        {
+          "title": "Subscription Retention & Churn Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/retention"
         },
         {
           "title": "Revenue Report ​",
