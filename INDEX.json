@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T16:11:15.749Z",
+  "last_updated": "2026-04-19T16:11:25.823Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -56,7 +56,7 @@
       "slug": "affiliatewp-affiliate-portal",
       "name": "AffiliateWP - Affiliate Portal",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-19T15:12:31.152Z",
+      "last_scraped": "2026-04-19T15:12:31.151Z",
       "page_count": 0,
       "categories": []
     },
@@ -64,7 +64,7 @@
       "slug": "affiliatewp-custom-affiliate-slugs",
       "name": "AffiliateWP - Custom Affiliate Slugs",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-12T16:10:34.807Z",
+      "last_scraped": "2026-04-19T16:11:23.829Z",
       "page_count": 0,
       "categories": []
     },
@@ -190,7 +190,7 @@
       "slug": "disable-comments",
       "name": "Disable Comments",
       "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-      "last_scraped": "2026-04-19T15:19:00.151Z",
+      "last_scraped": "2026-04-19T15:19:00.150Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -200,7 +200,7 @@
       "slug": "duplicate-page",
       "name": "Duplicate Page",
       "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
-      "last_scraped": "2026-04-19T15:13:10.045Z",
+      "last_scraped": "2026-04-19T15:13:10.044Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -317,7 +317,7 @@
       "slug": "fluentboards",
       "name": "FluentBoards",
       "documentation_url": "https://fluentboards.com/documentation/",
-      "last_scraped": "2026-04-19T14:20:31.853Z",
+      "last_scraped": "2026-04-19T14:20:31.850Z",
       "page_count": 42,
       "categories": [
         "boards",
@@ -774,7 +774,7 @@
       "slug": "kadence-custom-fonts",
       "name": "Kadence Custom Fonts",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-19T14:20:51.531Z",
+      "last_scraped": "2026-04-19T14:20:51.530Z",
       "page_count": 0,
       "categories": []
     },
@@ -814,7 +814,7 @@
       "slug": "kadence-theme-kit-pro-premium-addon-for-the-kadence-theme",
       "name": "Kadence Theme Kit Pro - Premium addon for the Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-19T16:11:15.749Z",
+      "last_scraped": "2026-04-19T16:11:15.748Z",
       "page_count": 0,
       "categories": []
     },
@@ -1017,7 +1017,7 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-04-19T15:14:31.912Z",
+      "last_scraped": "2026-04-19T15:14:31.909Z",
       "page_count": 24,
       "categories": [
         "beta-release",
@@ -1133,7 +1133,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://theeventscalendar.com/knowledgebase/documentation/",
-      "last_scraped": "2026-04-19T16:07:49.918Z",
+      "last_scraped": "2026-04-19T16:07:49.917Z",
       "page_count": 0,
       "categories": []
     },
