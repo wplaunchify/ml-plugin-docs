@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T09:17:07.122Z",
+  "last_updated": "2026-04-19T09:17:15.855Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -16,7 +16,7 @@
       "slug": "admin-columns-pro",
       "name": "Admin Columns Pro",
       "documentation_url": "https://www.admincolumns.com",
-      "last_scraped": "2026-04-19T08:29:53.150Z",
+      "last_scraped": "2026-04-19T08:29:53.149Z",
       "page_count": 0,
       "categories": []
     },
@@ -40,7 +40,7 @@
       "slug": "affiliatewp",
       "name": "AffiliateWP",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-19T06:41:20.861Z",
+      "last_scraped": "2026-04-19T06:41:20.860Z",
       "page_count": 0,
       "categories": []
     },
@@ -80,7 +80,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-19T07:57:42.938Z",
+      "last_scraped": "2026-04-19T07:57:42.937Z",
       "page_count": 0,
       "categories": []
     },
@@ -228,7 +228,7 @@
       "slug": "fluent-boards-pro",
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-04-19T08:20:15.823Z",
+      "last_scraped": "2026-04-19T08:20:15.822Z",
       "page_count": 0,
       "categories": []
     },
@@ -292,7 +292,7 @@
       "slug": "fluentaffiliate",
       "name": "FluentAffiliate",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-04-19T07:33:47.724Z",
+      "last_scraped": "2026-04-19T07:33:47.722Z",
       "page_count": 52,
       "categories": [
         "admin-portal",
@@ -353,7 +353,7 @@
       "slug": "fluentcart",
       "name": "FluentCart",
       "documentation_url": "https://docs.fluentcart.com/guide/",
-      "last_scraped": "2026-04-19T06:45:16.794Z",
+      "last_scraped": "2026-04-19T06:45:16.790Z",
       "page_count": 116,
       "categories": [
         "changelog",
@@ -398,7 +398,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-04-19T06:42:22.410Z",
+      "last_scraped": "2026-04-19T06:42:22.409Z",
       "page_count": 0,
       "categories": []
     },
@@ -406,7 +406,7 @@
       "slug": "fluentcommunity-pro",
       "name": "FluentCommunity Pro",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-04-19T08:26:40.039Z",
+      "last_scraped": "2026-04-19T08:26:40.038Z",
       "page_count": 0,
       "categories": []
     },
@@ -628,7 +628,7 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-04-19T07:29:54.043Z",
+      "last_scraped": "2026-04-19T07:29:54.039Z",
       "page_count": 57,
       "categories": [
         "about-us",
@@ -734,7 +734,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-04-19T08:23:23.774Z",
+      "last_scraped": "2026-04-19T08:23:23.773Z",
       "page_count": 0,
       "categories": []
     },
@@ -798,7 +798,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-19T07:59:09.359Z",
+      "last_scraped": "2026-04-19T07:59:09.358Z",
       "page_count": 0,
       "categories": []
     },
@@ -850,7 +850,7 @@
       "slug": "learndash",
       "name": "LearnDash",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-04-19T08:28:39.135Z",
+      "last_scraped": "2026-04-19T08:28:39.123Z",
       "page_count": 323,
       "categories": [
         "2checkout-add-on",
@@ -927,7 +927,7 @@
       "slug": "learndash-lms-certificate-builder",
       "name": "LearnDash LMS - Certificate Builder",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-04-19T08:18:37.399Z",
+      "last_scraped": "2026-04-19T08:18:37.398Z",
       "page_count": 0,
       "categories": []
     },
@@ -963,7 +963,7 @@
       "slug": "ninja-tables-easy-data-table-builder",
       "name": "Ninja Tables – Easy Data Table Builder",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-04-19T07:57:00.680Z",
+      "last_scraped": "2026-04-19T07:57:00.679Z",
       "page_count": 0,
       "categories": []
     },
@@ -971,7 +971,7 @@
       "slug": "ninja-tables-pro",
       "name": "Ninja Tables Pro",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-04-19T09:17:07.122Z",
+      "last_scraped": "2026-04-19T09:17:07.121Z",
       "page_count": 0,
       "categories": []
     },
@@ -1089,7 +1089,7 @@
       "slug": "simple-post-redirect",
       "name": "Simple Post Redirect",
       "documentation_url": "https://wordpress.org/plugins/simple-post-redirect/",
-      "last_scraped": "2026-04-12T09:17:35.221Z",
+      "last_scraped": "2026-04-19T09:17:14.024Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1522,7 +1522,7 @@
       "slug": "wp-fusion-logins-addon",
       "name": "WP Fusion - Logins Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-04-19T08:22:07.217Z",
+      "last_scraped": "2026-04-19T08:22:07.206Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
@@ -1634,7 +1634,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-04-19T07:58:22.105Z",
+      "last_scraped": "2026-04-19T07:58:22.104Z",
       "page_count": 0,
       "categories": []
     },
