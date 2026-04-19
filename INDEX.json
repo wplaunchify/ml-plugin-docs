@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T15:14:31.912Z",
+  "last_updated": "2026-04-19T15:19:00.151Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -190,7 +190,7 @@
       "slug": "disable-comments",
       "name": "Disable Comments",
       "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-      "last_scraped": "2026-04-12T15:17:56.503Z",
+      "last_scraped": "2026-04-19T15:19:00.151Z",
       "page_count": 1,
       "categories": [
         "advanced"
