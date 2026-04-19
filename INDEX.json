@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T01:36:32.597Z",
+  "last_updated": "2026-04-19T01:38:04.485Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -148,7 +148,7 @@
       "slug": "block-visibility",
       "name": "Block Visibility",
       "documentation_url": "https://www.blockvisibilitywp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-04-12T01:37:16.647Z",
+      "last_scraped": "2026-04-19T01:38:04.485Z",
       "page_count": 0,
       "categories": []
     },
