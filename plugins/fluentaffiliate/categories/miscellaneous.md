@@ -4,126 +4,6 @@
 
 ---
 
-## Affiliate Creatives ​
-
-**Source:** [https://docs.fluentaffiliate.com/guide/miscellaneous/affiliate-creatives](https://docs.fluentaffiliate.com/guide/miscellaneous/affiliate-creatives)
-
-# Affiliate Creatives ​
-
-The **Affiliate Creatives** feature is like a toolbox where you can store all the promotional items you want to give to your affiliates. Instead of sending things like banners, ads, or links to each person one by one, you just add them to this single spot.
-
-When your affiliates log in, they can find these ready-made items. They just need to copy a text link, an image, or a QR code to share with their audience. We automatically include their special tracking link, so you'll always know they get credit for any sales they send your way.
-
-## Accessing Affiliate Creatives ​
-
-You can find this new feature right in your FluentAffiliate settings.
-
-1. Go to your WordPress dashboard.
-2. Navigate to **FluentAffiliate → Settings**.
-3. Click on **Affiliate Creatives** from the left-hand menu.
-
-Here, you'll see a dashboard where all your created assets will be listed.
-
-![Access Affiliate Creatives](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/accessing-affiliate-creatives.webp)
-
-## Creating a New Creative ​
-
-To get started, simply click the **+ Add New Creative** button. A form will slide in from the right where you can set up your new promotional material.
-
-Here’s a breakdown of the fields:
-
-- **Name**: Give your creative a clear, recognizable name (e.g., "Summer Sale - Text Link" or "Ebook Launch QR Code").
-- **Description**: Add a short description to let your affiliates know what this creative is for.
-- **Type**: Choose the kind of creative you want to make. You can select from the dropdown options like Image, Text, or QR Code.
-
-### Image Type ​
-
-When you select **Image**, a couple of new options will appear:
-
-- **Image**: Click here to upload your banner or promotional graphic from your media library.
-- **Alt Text**: Describe the image. This is important for accessibility and helps search engines understand what the image is about.
-
-![Image Type](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/image-type.webp)
-
-### Text Type ​
-
-Under **Type**, select **Text** from the dropdown menu. A new **Text** field will appear. Here, you can enter the text you want the link to display, for example, "Summer Sale".
-
-![Text Type](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/text-type.webp)
-
-### QR Code Type ​
-
-From the **Type** dropdown menu, select **QR Code**. As soon as you do, a QR code will be instantly generated for you.
-
-Next, you can customize its appearance to match your brand:
-
-- **QR Code Color**: Click the color plate to open a color picker and change the color of the QR code itself.
-- **Background Color**: Click this plate to change the background color.
-
-![QR Code Type](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/qr-code-type.webp)
-
----
-
-- **URL**: Enter the destination link. This is the webpage where customers will land after clicking or scanning the creative.
-- **Privacy**: This is a key setting that controls who can see and use this creative. You have two options:
-
-- **Public**: The creative will be available to all of your affiliates.
-- **Private**: The creative will only be visible to specific affiliates or to affiliates within a selected group. When you choose ‘**Private**,’ new fields will appear where you can **select the group** or **individual affiliates** you want to share it with.
-- **Status**: Set the creative to **Active** to make it available, or **Inactive** to hide it.
-- **Schedule Your Creatives**: Do you have a special promotion that runs for a limited time, such as a holiday sale or a product launch? You can schedule your creatives to become active and inactive on specific dates automatically. This helps ensure your affiliates are only promoting offers that are currently available. To set a schedule for a creative, follow these simple steps:
-
-- **Set the Status:** First, find the Status dropdown menu and select the Scheduled option.
-- **Choose a Start Date & Time:** Once you select "Scheduled," a Start Date & Time field will appear. Click on it to open a calendar and choose the exact date and time you want the creative to become visible to your affiliates.
-- **Choose an End Date & Time:** Next, click on the End Date & Time field. This is when the creative will automatically be hidden from your affiliates' dashboards.
-
-![Schedule Your Creatives](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/schedule-our-creatives.webp)
-
-- **Internal Notes**: Add any private notes for yourself or other admins. These are not visible to affiliates.
-
-Once you’ve filled everything out, click the **Create** button to save it.
-
-## Managing Your Creatives ​
-
-After you create a few creatives, they will appear in a list on the main Affiliate Creatives page. From this table, you can see all your assets at a glance, including their name, type, and status.
-
-**Edit or Delete**: If you want to edit or delete your Affiliate creatives, click on the three dots and options you will find **Edit** or **Delete**.
-
-![Affiliate Creatives](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/affiliate-creatives.webp)
-
-## Viewing and Using Affiliate Creatives ​
-
-As an affiliate, you have access to ready-to-use promotional materials called **Creatives**. These are things like banners, images, QR codes, and text links that the site owner has prepared for you. Using them is the easiest way to start promoting.
-
-Here’s how you can find and use them:
-
-**Step 1: Go to the Creatives Section**
-
-First, log in to your affiliate account in the **Affiliate Area**. From your main dashboard, look at the navigation menu and click on the **Creatives** tab.
-
-**Step 2: Choose a Creative**
-
-On this page, you will see a list of all the creatives available for you to use. You can see a small **Preview**, the creative's **Name**, its Type (like Image or QR Code), and when it was Last Updated.
-
-**Step 3: Get the Code or Image**
-
-Click on the name or preview of the creative you want to use. What you do next depends on the type of creative.
-
-![Viewing Creatives](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/view-creatives.webp)
-
-**For Image Creatives (Banners and Ads):**
-
-When you click on an image, you'll be taken to a new page showing a full preview.
-
-- **HTML Code:** Below the preview, you will find a box labeled **HTML Code**. This code includes both the image and your unique affiliate tracking link. Click the **Copy** button and paste this code directly into your website or blog. When a visitor clicks this image on your site, you get affiliate for the sale!
-- **Download Image:** You can also click the **Download Image** button to save the image to your computer.
-- **For QR Code Creatives:** Using a QR code is even simpler. Just click on the **QR code** creative from the list and download the image. You can then share this QR code anywhere, on flyers, social media posts, or even in person. Anyone who scans it will be directed to the site through your affiliate link.
-
-![HTML Code](https://docs.fluentaffiliate.com/images/miscellaneous/affiliate-creatives/html-code.webp)
-
-This makes it simple to keep track of all the promotional materials you've provided to your affiliates.
-
----
-
 ## Affiliate Landing Page with Shortcode ​
 
 **Source:** [https://docs.fluentaffiliate.com/guide/miscellaneous/affiliate-landing-page](https://docs.fluentaffiliate.com/guide/miscellaneous/affiliate-landing-page)
@@ -359,6 +239,230 @@ provider_sub_id="456"
 status="unpaid/pending" 
 type="sale"]
 ```Whether you use the automated shortcode for unsupported platforms or add a referral manually for special cases, FluentAffiliate provides the flexibility to ensure every affiliate is rewarded accurately for their efforts.
+
+---
+
+## Promo Materials ​
+
+**Source:** [https://docs.fluentaffiliate.com/guide/miscellaneous/promo-materials](https://docs.fluentaffiliate.com/guide/miscellaneous/promo-materials)
+
+# Promo Materials ​
+
+The **Promo Materials** feature is like a toolbox where you can store all the promotional items you want to give to your affiliates. Instead of sending things like banners, ads, or links to each person one by one, you just add them to this single spot.
+
+When your affiliates log in, they can find these ready-made items. They just need to copy a text link, an image, or a QR code to share with their audience. We automatically include their special tracking link, so you'll always know they get credit for any sales they send your way.
+
+## Accessing Promo Materials ​
+
+You can find this new feature right in your FluentAffiliate settings.
+
+1. Go to your WordPress dashboard.
+2. Navigate to **FluentAffiliate → Settings**.
+3. Click on **Promo Materials** from the left-hand menu.
+
+Here, you'll see a dashboard where all your created assets will be listed.
+
+![Access Accessing Promo Materials](https://docs.fluentaffiliate.com/images/miscellaneous/promo-materials/accessing-promo-materials-1.webp)
+
+## Creating a New Promo Material ​
+
+To get started, simply click the **+ New Promo Material** button. A form will slide in from the right where you can set up your new promotional material.
+
+Here’s a breakdown of the fields:
+
+- **Name**: Give your creative a clear, recognizable name (e.g., "Summer Sale - Text Link" or "Ebook Launch QR Code").
+- **Description**: Add a short description to let your affiliates know what this creative is for.
+- **Type**: Choose the kind of creative you want to make. You can select from the dropdown options like Image, Text, or QR Code.
+
+### Image Type ​
+
+When you select **Image**, a couple of new options will appear:
+
+- **Image**: Click here to upload your banner or promotional graphic from your media library.
+- **Alt Text**: Describe the image. This is important for accessibility and helps search engines understand what the image is about.
+
+![Image Type](https://docs.fluentaffiliate.com/images/miscellaneous/promo-materials/image-type-2.webp)
+
+### Text Type ​
+
+Under **Type**, select **Text** from the dropdown menu. A new **Text** field will appear. Here, you can enter the text you want the link to display, for example, "Summer Sale".
+
+![Text Type](https://docs.fluentaffiliate.com/images/miscellaneous/promo-materials/text-type-3.webp)
+
+### QR Code Type ​
+
+From the **Type** dropdown menu, select **QR Code**. As soon as you do, a QR code will be instantly generated for you.
+
+Next, you can customize its appearance to match your brand:
+
+- **QR Code Color**: Click the color plate to open a color picker and change the color of the QR code itself.
+- **Background Color**: Click this plate to change the background color.
+
+![QR Code Type](https://docs.fluentaffiliate.com/images/miscellaneous/promo-materials/qr-code-type-4.webp)
+
+---
+
+- **URL**: Enter the destination link. This is the webpage where customers will land after clicking or scanning the creative.
+- **Privacy**: This is a key setting that controls who can see and use this creative. You have two options:
+
+- **Public**: The promo will be available to all of your affiliates.
+- **Private**: The promo will only be visible to specific affiliates or to affiliates within a selected group. When you choose ‘**Private**,’ new fields will appear where you can **select the group** or **individual affiliates** you want to share it with.
+- **Status**: Set the creative to **Active** to make it available, or **Inactive** to hide it.
+- **Schedule Your Promo Materials**: Do you have a special promotion that runs for a limited time, such as a holiday sale or a product launch? You can schedule your promos to become active and inactive on specific dates automatically. This helps ensure your affiliates are only promoting offers that are currently available. To set a schedule for a promo, follow these simple steps:
+
+- **Set the Status:** First, find the **Status** dropdown menu and select the **Scheduled** option.
+- **Choose a Start Date & Time:** Once you select "Scheduled," a Start Date & Time field will appear. Click on it to open a calendar and choose the exact date and time you want the creative to become visible to your affiliates.
+- **Choose an End Date & Time:** Next, click on the End Date & Time field. This is when the promo will automatically be hidden from your affiliates' dashboards.
+
+![Schedule Your Promo Materials](https://docs.fluentaffiliate.com/images/miscellaneous/promo-materials/schedule-our-promo-materials-5.webp)
+
+- **Internal Notes**: Add any private notes for yourself or other admins. These are not visible to affiliates.
+
+Once you’ve filled everything out, click the **Create** button to save it.
+
+## Managing Your Promo Materials ​
+
+After you create items, they will appear in a list on the main **Promo Materials** page. From this table, you can see all your assets at a glance, including their **ID**, **Name**, **URL**, **Privacy**, **Type**, **Status**, and a **Preview**.
+
+- **Edit or Delete**: To make changes or remove an item, click on the three dots at the end of the row and select **Edit** or **Delete**.
+
+![Promo Materials](https://docs.fluentaffiliate.com/images/miscellaneous/promo-materials/promo-affiliate-6.webp)
+
+## Viewing and Using Promo Materials (Affiliate View) ​
+
+As an affiliate, you have access to ready-to-use materials prepared by the site owner.
+
+- **Go to the Promo Materials Section:** Log in to your affiliate account in the **Affiliate Area** and click on the **Promo Materials** tab.
+- **Choose an Item:** On this page, you will see a list of available materials with a Preview, Name, Type, and when it was Last Updated.
+- **Get the Code or Image:** Click on the name or preview of the material you want to use.
+
+![Viewing Creatives](https://docs.fluentaffiliate.com/images/miscellaneous/promo-materials/view-creatives-7.webp)
+
+**For Image Materials::**
+
+When you click on an image, you'll be taken to a new page showing a full preview.
+
+- **HTML Code:** Below the preview, you will find a box labeled **HTML Code**. This code includes both the image and your unique affiliate tracking link. Click the **Copy** button and paste this code directly into your website or blog. When a visitor clicks this image on your site, you get affiliate for the sale!
+- **Download Image:** You can also click the **Download Image** button to save the image to your computer.
+- **For QR Code Materials:**
+
+Using a QR code is even simpler. Just click on the **QR code** creative from the list and download the image. You can then share this QR code anywhere, on flyers, social media posts, or even in person. Anyone who scans it will be directed to the site through your affiliate link.
+
+![HTML Code](https://docs.fluentaffiliate.com/images/miscellaneous/promo-materials/html-code-8.webp)
+
+This makes it simple to keep track of all the promotional materials you've provided to your affiliates.
+
+---
+
+## Social Media Share for Affiliates ​
+
+**Source:** [https://docs.fluentaffiliate.com/guide/miscellaneous/social-share](https://docs.fluentaffiliate.com/guide/miscellaneous/social-share)
+
+# Social Media Share for Affiliates ​
+
+Promotion just got a whole lot easier for your affiliates.
+
+With the Social Media Share feature, affiliates can quickly share their referral links directly to popular social platforms without leaving their dashboard. Instead of manually copying and pasting links, they can now promote your products with just a few clicks.
+
+By reducing friction in the promotion process, this feature helps affiliates share more often, driving increased referral traffic and better engagement for your brand.
+
+This guide will show you how to enable and configure the social sharing options for your affiliates.
+
+## How to Enable Social Media Share ​
+
+As the site administrator, you have full control over whether this feature is active and which specific social platforms your affiliates are allowed to use.
+
+### Step 1: Navigate to Features & Addons ​
+
+From your WordPress dashboard, go to **FluentAffiliate → Settings**. On the left-hand menu, click on **Features & Addons**. Under the "Advanced Features" section, locate **Social Media Share** and click the **Settings** button next to it.
+
+![Social Share](https://docs.fluentaffiliate.com/images/miscellaneous/social-share/social-share-1.webp)
+
+### Step 2: Enable the Feature ​
+
+On the next screen, check the box labeled **Enable Social Media Share for Affiliates**.
+
+![Social Share](https://docs.fluentaffiliate.com/images/miscellaneous/social-share/social-share-2.webp)
+
+### Step 3: Configure Your Platforms ​
+
+Once the feature is enabled, a list of **Social Media Platforms** will appear.
+
+- **Turn Platforms On/Off:** Use the toggle switches on the right side to decide which platforms (like Facebook, X/Twitter, LinkedIn, WhatsApp, etc.) should be available to your affiliates.
+- **Reorder the List:** You can change the display order of the icons by clicking and dragging the arrows on the left side of any platform name.
+- **Save:** When you are happy with your selection, don't forget to click the **Save Settings** button at the bottom of the screen.
+
+![Social Share](https://docs.fluentaffiliate.com/images/miscellaneous/social-share/social-share-3.webp)
+
+## Add Custom Social Platforms (Developer-Friendly Option) ​
+
+If you want to show additional social networks in the Affiliate Portal (or rename/remove existing ones), you can do that using the 
+```
+fluent_affiliate/social_media_links
+```
+
+ filter.
+
+This is useful when you want to:
+
+- Add a new platform (for example, YouTube)
+- Rename existing labels (for example, Twitter to X)
+- Hide any platform you do not want to show
+
+### Recommended: Use FluentSnippets ​
+
+To add custom PHP code safely, we recommend using **FluentSnippets** instead of editing your theme files directly.
+
+**Steps:**
+
+1. Install and activate FluentSnippets on your WordPress site.
+2. Create a new PHP snippet.
+3. Paste the code below.
+4. Save and activate the snippet.
+
+php
+```
+add_filter('fluent_affiliate/social_media_links', function ($links) {
+    // Ensure we are working with an array.
+    if (!is_array($links)) {
+        $links = [];
+    }
+
+    // Add a new custom network.
+    $links['youtube'] = [
+        'label'       => __('YouTube', 'fluent-affiliate'),
+        'placeholder' => 'https://youtube.com/@yourchannel',
+        'icon'        => 'fab fa-youtube'
+    ];
+
+    // Rename an existing label (if present).
+    if (!empty($links['twitter'])) {
+        $links['twitter']['label'] = __('X (Twitter)', 'fluent-affiliate');
+    }
+
+    // Remove a network if you do not want to expose it.
+    unset($links['tiktok']);
+
+    return $links;
+});
+```
+### What This Snippet Does ​
+
+- Adds a new **YouTube** option for affiliates. You can also add any if you want.
+- Renames **Twitter** to **X (Twitter)**.
+- Removes **TikTok** from the available share list.
+
+After activating the snippet, ask affiliates to refresh their Affiliate Portal page to see the updated options.
+
+## How Affiliates Use the Share Feature ​
+
+Once you have enabled and saved your settings, the social sharing options will instantly become available in the Affiliate Portal.
+
+When an affiliate logs into their account and navigates to their **Dashboard** (or the **Links** tab), they will see their unique referral link. Right beneath the link field, a row of social media icons will now be visible.
+
+![Social Share](https://docs.fluentaffiliate.com/images/miscellaneous/social-share/social-share-4.webp)
+
+To share their link, the affiliate simply clicks on their preferred platform's icon. This will automatically open a new window to that specific social network, pre-filling a post with their unique referral link ready to be shared with their audience.
 
 ---
 

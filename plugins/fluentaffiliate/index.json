@@ -2,8 +2,8 @@
   "plugin_slug": "fluentaffiliate",
   "plugin_name": "FluentAffiliate",
   "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-  "last_scraped": "2026-04-12T07:33:15.052Z",
-  "total_pages": 50,
+  "last_scraped": "2026-04-19T07:33:47.722Z",
+  "total_pages": 52,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -196,12 +196,8 @@
       "slug": "miscellaneous",
       "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/",
       "file": "categories/miscellaneous.md",
-      "page_count": 4,
+      "page_count": 5,
       "pages": [
-        {
-          "title": "Affiliate Creatives ​",
-          "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/affiliate-creatives"
-        },
         {
           "title": "Affiliate Landing Page with Shortcode ​",
           "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/affiliate-landing-page"
@@ -213,6 +209,14 @@
         {
           "title": "Track Referrals without Integration ​",
           "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/non-integrated-referrals"
+        },
+        {
+          "title": "Promo Materials ​",
+          "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/promo-materials"
+        },
+        {
+          "title": "Social Media Share for Affiliates ​",
+          "url": "https://docs.fluentaffiliate.com/guide/miscellaneous/social-share"
         }
       ]
     },
@@ -221,7 +225,7 @@
       "slug": "settings-and-customization",
       "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/",
       "file": "categories/settings-and-customization.md",
-      "page_count": 10,
+      "page_count": 11,
       "pages": [
         {
           "title": "Affiliate Manager Migration ​",
@@ -258,6 +262,10 @@
         {
           "title": "Registration Settings ​",
           "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/registration-settings"
+        },
+        {
+          "title": "SliceWP Migration ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/slicewp-migration"
         },
         {
           "title": "Solid Affiliate Migration ​",

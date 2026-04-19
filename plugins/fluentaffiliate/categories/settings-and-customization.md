@@ -568,9 +568,11 @@ This feature allows you to reward affiliates for recurring subscription payments
 
 NOTE
 
-To use this feature, you need [FluentAffiliate Pro](https://fluentaffiliate.com/discount-deal/). It is available for [FluentCart](https://fluentcart.com/pricing/) users.- **Enable Option:** Check the box to award affiliate commissions for subscription renewals.
+To use this feature, you need [FluentAffiliate Pro](https://fluentaffiliate.com/discount-deal/).- **Enable Option:** Check the box to award affiliate commissions for subscription renewals.
 - **Renewal Rate:** Set the specific commission rate (Flat or Percentage) for these recurring referrals.
 - **Maximum Renewal Referrals:** Set the maximum number of times an affiliate can earn from a single subscription. Enter 0 for unlimited renewal commissions.
+
+Once activated, you’ll find this feature available in WooCommerce and FluentCart integration settings.
 
 After configuring all your settings, click the **Save Settings** button to apply the changes.
 
@@ -627,6 +629,65 @@ In this pop-up, you can modify the following options:
 As noted in the pop-up, some system-defined fields may have limitations, such as only allowing label edits.
 
 After making your customizations, remember to click the **Save Settings** button at the bottom of the page to apply all changes.
+
+---
+
+## SliceWP Migration ​
+
+**Source:** [https://docs.fluentaffiliate.com/guide/settings-and-customization/slicewp-migration](https://docs.fluentaffiliate.com/guide/settings-and-customization/slicewp-migration)
+
+# SliceWP Migration ​
+
+The Migrator Settings in FluentAffiliate allow you to seamlessly import your entire affiliate program from other affiliate plugins without disruption. Currently, FluentAffiliate supports migration from **SliceWP**, helping you bring over your existing data so you can upgrade to a modern affiliate management experience without losing your historical data. This guide will walk you through the available options.
+
+## Accessing Migrator Settings ​
+
+To access the Migrator Settings, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Migrator Settings**.
+
+![Migrator Settings Overview](https://docs.fluentaffiliate.com/images/settings-and-customization/slicewp/migrator-settings-1.webp)
+
+## Migrating from SliceWP ​
+
+### Migration Using WP CLI (Recommended) ​
+
+We recommend using WordPress CLI to migrate from SliceWP for better performance.
+
+To start the migration, just run the following WP CLI command on your site:
+
+```
+wp fluent_affiliate migrate_from_slicewp
+```
+
+> NOTE This CLI migration will remove all existing data from FluentAffiliate before starting the migration. This command will migrate all of your SliceWP data, including affiliates, referrals, commissions, visits, affiliate groups, and creatives, to FluentAffiliate.
+
+### Migration Using Web UI ​
+
+FluentAffiliate provides a streamlined Web UI to move your data from SliceWP with just a few clicks.
+
+**Step 1: Select Migration Source** On the Migrator Settings page, you will see a dropdown menu under "Please select an option". Click the dropdown and select **SliceWP**.
+
+**Step 2: Initialize Migration** Click the **Migrate** button to begin. A pop-up will appear displaying an overview of the data available for migration, including:
+
+- Total Affiliates
+- Total Referrals
+- Total Payouts
+- Total Visits
+- Total Customers
+
+You also have the option to check **Reset Current Migration** if you need to restart a previous attempt. Click **Confirm** to proceed.
+
+![SliceWP migration data overview](https://docs.fluentaffiliate.com/images/settings-and-customization/slicewp/migrator-settings-2.webp)
+
+**Step 3: Confirm and Monitor** A final confirmation box will appear, warning you that this action cannot be undone. Click **Yes, Migrate**.
+
+- **Monitor Progress:** A progress window will show the status of each data type (Affiliates, Referrals, Payout, Visits, and Customers) as they are moved to FluentAffiliate.
+- **Completion:** Once finished, a "Migration Completed" message will display a summary of the total metrics migrated. Click **Close** to return to the dashboard.
+
+## Data Cleanup ​
+
+This section also includes a **Wipe Data** tool to clean up your FluentAffiliate data. To use it, select the data you wish to remove, confirm your choice, and wait for the process to finish.
+
+**Warning:** Data cleanup is irreversible. Always make sure to back up your data before proceeding.
 
 ---
 
