@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T16:16:17.326Z",
+  "last_updated": "2026-04-19T16:18:19.350Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1109,7 +1109,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-15T08:09:48.668Z",
+      "last_scraped": "2026-04-19T16:18:19.350Z",
       "page_count": 0,
       "categories": []
     },
