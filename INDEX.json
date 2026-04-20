@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20T08:20:08.737Z",
+  "last_updated": "2026-04-20T08:22:13.190Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -164,7 +164,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-04-19T23:10:52.207Z",
+      "last_scraped": "2026-04-19T23:10:52.206Z",
       "page_count": 0,
       "categories": []
     },
@@ -284,7 +284,7 @@
       "slug": "fluent-pdf-generator",
       "name": "Fluent PDF Generator",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-04-20T08:19:36.955Z",
+      "last_scraped": "2026-04-20T08:19:36.954Z",
       "page_count": 0,
       "categories": []
     },
@@ -782,7 +782,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-20T08:20:08.737Z",
+      "last_scraped": "2026-04-20T08:20:08.736Z",
       "page_count": 0,
       "categories": []
     },
@@ -806,7 +806,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-04-19T10:16:03.031Z",
+      "last_scraped": "2026-04-20T08:22:11.444Z",
       "page_count": 0,
       "categories": []
     },
@@ -1183,7 +1183,7 @@
       "slug": "woocommerce-stripe-gateway",
       "name": "WooCommerce Stripe Gateway",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-04-20T08:17:13.959Z",
+      "last_scraped": "2026-04-20T08:17:13.958Z",
       "page_count": 0,
       "categories": []
     },
