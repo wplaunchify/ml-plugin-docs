@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21T08:11:48.947Z",
+  "last_updated": "2026-04-21T08:11:57.874Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -80,7 +80,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-21T08:09:40.086Z",
+      "last_scraped": "2026-04-21T08:09:40.085Z",
       "page_count": 0,
       "categories": []
     },
@@ -1109,7 +1109,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-19T16:18:19.349Z",
+      "last_scraped": "2026-04-21T08:11:55.659Z",
       "page_count": 0,
       "categories": []
     },
