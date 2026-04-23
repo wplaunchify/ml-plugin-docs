@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-23T08:13:50.802Z",
+  "last_updated": "2026-04-23T08:15:20.902Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -32,7 +32,7 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/resources/",
-      "last_scraped": "2026-04-19T14:14:00.759Z",
+      "last_scraped": "2026-04-23T08:15:19.072Z",
       "page_count": 0,
       "categories": []
     },
@@ -156,7 +156,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-04-23T08:11:54.610Z",
+      "last_scraped": "2026-04-23T08:11:54.609Z",
       "page_count": 0,
       "categories": []
     },
@@ -742,7 +742,7 @@
       "slug": "kadence-blocks",
       "name": "Kadence Blocks",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-04-22T08:14:14.773Z",
+      "last_scraped": "2026-04-22T08:14:14.772Z",
       "page_count": 0,
       "categories": []
     },
@@ -919,7 +919,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-04-22T08:10:57.621Z",
+      "last_scraped": "2026-04-22T08:10:57.620Z",
       "page_count": 0,
       "categories": []
     },
@@ -935,7 +935,7 @@
       "slug": "learndash-lms-woocommerce-integration",
       "name": "LearnDash LMS - WooCommerce Integration",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-04-23T08:13:50.802Z",
+      "last_scraped": "2026-04-23T08:13:50.801Z",
       "page_count": 0,
       "categories": []
     },
