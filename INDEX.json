@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T08:14:14.773Z",
+  "last_updated": "2026-04-23T08:10:57.943Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-04-19T16:11:29.619Z",
+      "last_scraped": "2026-04-23T08:10:57.943Z",
       "page_count": 0,
       "categories": []
     },
