@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-25T07:58:09.193Z",
+  "last_updated": "2026-04-25T08:00:28.941Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-04-25T07:57:23.221Z",
+      "last_scraped": "2026-04-25T07:57:23.220Z",
       "page_count": 0,
       "categories": []
     },
@@ -268,7 +268,7 @@
       "slug": "fluent-forms-signature-addon",
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-04-25T07:58:09.193Z",
+      "last_scraped": "2026-04-25T07:58:09.192Z",
       "page_count": 0,
       "categories": []
     },
@@ -734,7 +734,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-04-24T08:19:52.543Z",
+      "last_scraped": "2026-04-24T08:19:52.542Z",
       "page_count": 0,
       "categories": []
     },
@@ -742,7 +742,7 @@
       "slug": "kadence-blocks",
       "name": "Kadence Blocks",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-04-22T08:14:14.772Z",
+      "last_scraped": "2026-04-25T08:00:27.477Z",
       "page_count": 0,
       "categories": []
     },
@@ -790,7 +790,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-24T08:16:34.560Z",
+      "last_scraped": "2026-04-24T08:16:34.559Z",
       "page_count": 0,
       "categories": []
     },
@@ -963,7 +963,7 @@
       "slug": "ninja-tables-easy-data-table-builder",
       "name": "Ninja Tables – Easy Data Table Builder",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-04-24T08:18:19.779Z",
+      "last_scraped": "2026-04-24T08:18:19.778Z",
       "page_count": 0,
       "categories": []
     },
@@ -1628,7 +1628,7 @@
       "slug": "wp-social-ninja",
       "name": "WP Social Ninja",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-04-24T08:17:21.341Z",
+      "last_scraped": "2026-04-24T08:17:21.340Z",
       "page_count": 0,
       "categories": []
     },
