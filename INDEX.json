@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T05:50:14.818Z",
+  "last_updated": "2026-04-26T05:51:06.910Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -375,7 +375,7 @@
       "slug": "fluentcommunity",
       "name": "FluentCommunity",
       "documentation_url": "https://fluentcommunity.co/documentation/",
-      "last_scraped": "2026-04-19T05:43:32.813Z",
+      "last_scraped": "2026-04-26T05:51:06.910Z",
       "page_count": 76,
       "categories": [
         "administration",
