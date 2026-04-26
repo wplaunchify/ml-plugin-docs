@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T12:19:38.441Z",
+  "last_updated": "2026-04-26T12:20:28.760Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -156,7 +156,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-04-26T12:19:38.441Z",
+      "last_scraped": "2026-04-26T12:19:38.440Z",
       "page_count": 0,
       "categories": []
     },
@@ -1187,7 +1187,7 @@
       "slug": "wp-all-export-acf-export-add-on-pro",
       "name": "WP All Export - ACF Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-04-19T12:16:40.132Z",
+      "last_scraped": "2026-04-26T12:20:27.375Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
