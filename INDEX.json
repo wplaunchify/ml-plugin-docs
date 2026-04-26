@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T11:14:41.365Z",
+  "last_updated": "2026-04-26T11:14:52.632Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -48,7 +48,7 @@
       "slug": "affiliatewp-affiliate-landing-pages",
       "name": "AffiliateWP - Affiliate Landing Pages",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-26T11:13:50.235Z",
+      "last_scraped": "2026-04-26T11:13:50.234Z",
       "page_count": 0,
       "categories": []
     },
@@ -96,7 +96,7 @@
       "slug": "affiliatewp-multi-tier-commissions",
       "name": "AffiliateWP - Multi-Tier Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-19T11:12:13.045Z",
+      "last_scraped": "2026-04-26T11:14:51.982Z",
       "page_count": 0,
       "categories": []
     },
@@ -733,7 +733,7 @@
       "slug": "kadence-blocks-pro-extension",
       "name": "Kadence Blocks - PRO Extension",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-26T11:14:41.365Z",
+      "last_scraped": "2026-04-26T11:14:41.364Z",
       "page_count": 0,
       "categories": []
     },
