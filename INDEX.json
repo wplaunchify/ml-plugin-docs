@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T05:06:55.417Z",
+  "last_updated": "2026-04-26T05:06:58.054Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -72,7 +72,7 @@
       "slug": "affiliatewp-direct-link-tracking",
       "name": "AffiliateWP - Direct Link Tracking",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-04-26T04:59:22.028Z",
+      "last_scraped": "2026-04-26T04:59:22.027Z",
       "page_count": 0,
       "categories": []
     },
@@ -414,7 +414,7 @@
       "slug": "fluentcrm",
       "name": "FluentCRM",
       "documentation_url": "https://fluentcrm.com/documentation/",
-      "last_scraped": "2026-04-19T05:04:48.142Z",
+      "last_scraped": "2026-04-26T05:06:56.072Z",
       "page_count": 137,
       "categories": [
         "advanced-reports",
@@ -907,7 +907,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-04-26T05:06:55.417Z",
+      "last_scraped": "2026-04-26T05:06:55.416Z",
       "page_count": 0,
       "categories": []
     },

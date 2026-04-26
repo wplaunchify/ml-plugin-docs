@@ -87,7 +87,45 @@ You can install FluentCRM free version like any other WordPress plugin. Follow t
 
 To get FluentCRM Pro, purchase the plugin from [here](https://fluentcrm.com/pricing/), and you’ll be redirected to your WPManageNinja account. After a successful purchase, you can download the **Pro**version and get the **License Key**from your WPManageNinja [Account](https://wpmanageninja.com/account/dashboard/).
 
-![fluentcrm licensekey](https://fluentcrm.com/wp-content/uploads/2023/08/FluentCRM-LicenseKey.png)
+### 1. Downloading the Pro Plugin File
+
+Once you have purchased FluentCRM Pro, the installation file is automatically added to your account dashboard.
+
+1. Log in to your **WPManageNinja Account Dashboard**.
+2. From the left-hand navigation menu, click on the **Downloads** tab.
+3. Locate the **FluentCRM Pro** (or 
+```
+fluentcampaign-pro
+```
+
+) zip file in your list of available downloads.
+4. Click the **Download** button on the right side to save the 
+```
+.zip
+```
+
+ file to your computer.
+
+> Note: Do not unzip this file. You will need to upload the entire .zip file directly to your WordPress dashboard to install the Pro version.
+
+![My Account Downloads page showing a file ready for download.](https://fluentcrm.com/wp-content/uploads/2021/01/fluentcrm-download-1-scaled.webp)
+
+### 2. Copying Your License Key
+
+To activate your premium features and receive automatic updates, you must enter your valid license key after installing the plugin.
+
+1. Still within your **WPManageNinja Account Dashboard**, navigate to the **Licenses** tab from the left-hand menu.
+2. Under the **License Details** section, locate your active **FluentCRM Pro** subscription.
+3. Find the **License Key** field and click the **Copy** button to copy the key to your clipboard.
+
+Once you have downloaded the 
+```
+.zip
+```
+
+ file and copied your license key, you are ready to head over to your WordPress dashboard to upload, install, and activate FluentCRM Pro!
+
+![My Account licenses page showing FluentCRM Pro key and details.](https://fluentcrm.com/wp-content/uploads/2021/01/fluentcrm-download-2-scaled.webp)
 
 Go to your WordPress dashboard and navigate to **Plugins > Add New Plugin** from the left sidebar. Click on the **Upload Plugin** button, select the file, and upload it. Then, click **Install Now** and activate the plugin. It’s a simple process!
 
