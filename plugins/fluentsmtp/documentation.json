@@ -1,10 +1,21 @@
 {
   "plugin_slug": "fluentsmtp",
   "plugin_name": "FluentSMTP",
-  "last_scraped": "2026-04-19T05:46:40.885Z",
-  "total_pages": 24,
+  "last_scraped": "2026-04-26T05:53:44.404Z",
+  "total_pages": 25,
   "failed_urls": [],
   "pages": [
+    {
+      "title": "Setup toSend with FluentSMTP",
+      "url": "https://fluentsmtp.com/docs/set-up-tosend-in-fluent-smtp/",
+      "category": "Drivers",
+      "content": "With [FluentSMTP](https://fluentsmtp.com/), you can integrate [toSend](https://tosend.com/) into WordPress to improve email deliverability and keep your transactional and marketing emails out of the spam folder. toSend is a modern email delivery service built on top of reliable infrastructure, and it takes only a few minutes to set up.\n\nThis article will guide you through connecting toSend to your WordPress site using the FluentSMTP plugin.\n\n## Configuring ToSend\n\nTo learn how to configure **toSend** with **FluentSMTP**, follow the steps with screenshots below.\n\nFirst, go to **FluentSMTP** under **Settings** in your **WordPress Dashboard** from the left sidebar, and select **toSend** from the given **Connection Providers**. Click the **toSend** tab to connect to this provider.\n\n![image](https://fluentsmtp.com/wp-content/uploads/2026/04/image-scaled.png)\n\nAfter you choose the provider, it will take you to the **Add Connection** page where you will get all the options to connect your **toSend** account.\n\n> Additionally, if you want to change the connection provider, simply click the Change button right next to the toSend tab at the top of the page.\n\n**Here, you need to provide:**\n\n- **From Email**: The “From Email” should use a domain that you have verified in your ToSend dashboard. Emails sent from an unverified domain will be rejected.\n- **From Name**: The name that appears as the sender in your recipient’s inbox. You can use your personal name, brand name, or a combination of both.\n- **Force From Email**: Check this box to force the “From Email” address across all emails sent from your site, even if a plugin tries to override it. This is usually recommended to keep a consistent sender address.\n- **Force Sender Name**: Check this box to force the “From Name” across all outgoing emails, even when another plugin attempts to override it.\n- **API Key**: The API Key has to be obtained from your toSend dashboard. To get it, click the [Get an API Key](https://dash.tosend.com/app/api-keys) link under the API Key box.\n\n![ToSend email connection provider configuration page with API settings.](https://fluentsmtp.com/wp-content/uploads/2026/04/image-3-1024x713.png)Configure your email sending with ToSend by easily setting up sender details and API keys on this intuitive interface.\n\nOnce you provide all the necessary information, click the **Save Connection Settings** button. Your **ToSend** account will now be connected to your **FluentSMTP** plugin.\n\n### Get an API Key from toSend\n\nLearn how to get an API Key from **ToSend** by following the steps with the screenshots below.\n\nFirst, log into your [toSend Dashboard](https://dash.tosend.com/app/api-keys) and open the **API Keys** tab from the left sidebar.\n\n![FluentCRM API Keys page showing an empty list and create button.](https://fluentsmtp.com/wp-content/uploads/2026/04/image-1.png)\n\nTo generate a new API Key, click the **Create API Key** button.\n\nEnter a **descriptive name** for your key (for example, “My WordPress Site” or “Production Server”) so you can identify it later. Optionally, you can restrict the key to a specific verified domain by selecting it from the dropdown. If you leave it unrestricted, the key can send emails from any verified domain in your account.\n\nClick the **Create** button to generate your API key.\n\n![Create API Key modal with name and domain input fields.](https://fluentsmtp.com/wp-content/uploads/2026/04/image-2-1024x674.png)\n\nHere is your **ToSend API Key**. Every ToSend API key starts with \n```\ntsend_\n```\n\n followed by a unique identifier. Copy it by clicking the **Copy** icon.\n\n> Important: Make sure you copy the key and store it somewhere safe and accessible. The full API key is only shown once. If you lose the key, you will need to delete it and create a new one.\n\nThat’s all about configuring FluentSMTP with toSend to send emails from your WordPress website.",
+      "headings": [
+        "Configuring ToSend",
+        "Get an API Key from toSend"
+      ],
+      "code_blocks": []
+    },
     {
       "title": "Configure SMTP2GO in FluentSMTP to Send Emails",
       "url": "https://fluentsmtp.com/docs/configure-smtp2go-in-fluentsmtp-to-send-emails/",
