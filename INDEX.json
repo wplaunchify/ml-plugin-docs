@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T17:17:35.431Z",
+  "last_updated": "2026-04-26T17:17:43.922Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -24,7 +24,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-04-26T17:15:29.024Z",
+      "last_scraped": "2026-04-26T17:15:29.023Z",
       "page_count": 0,
       "categories": []
     },
@@ -336,7 +336,7 @@
       "slug": "fluentbooking",
       "name": "FluentBooking",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-04-19T17:15:13.772Z",
+      "last_scraped": "2026-04-26T17:17:42.822Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -450,7 +450,7 @@
       "slug": "fluentcrm-pro",
       "name": "FluentCRM Pro",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-04-26T17:17:35.431Z",
+      "last_scraped": "2026-04-26T17:17:35.430Z",
       "page_count": 0,
       "categories": []
     },
@@ -458,7 +458,7 @@
       "slug": "fluentforms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/documentation/",
-      "last_scraped": "2026-04-26T17:14:21.234Z",
+      "last_scraped": "2026-04-26T17:14:21.225Z",
       "page_count": 456,
       "categories": [
         "account-management",
@@ -881,7 +881,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-04-26T17:12:51.257Z",
+      "last_scraped": "2026-04-26T17:12:51.256Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1047,7 +1047,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-26T16:21:04.757Z",
+      "last_scraped": "2026-04-26T16:21:04.755Z",
       "page_count": 0,
       "categories": []
     },
@@ -1380,7 +1380,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-04-26T16:19:32.291Z",
+      "last_scraped": "2026-04-26T16:19:32.280Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
