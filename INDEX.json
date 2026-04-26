@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T16:14:01.830Z",
+  "last_updated": "2026-04-26T16:14:08.492Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-04-25T07:57:23.220Z",
+      "last_scraped": "2026-04-26T16:14:06.541Z",
       "page_count": 0,
       "categories": []
     },
@@ -190,7 +190,7 @@
       "slug": "disable-comments",
       "name": "Disable Comments",
       "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-      "last_scraped": "2026-04-26T15:20:12.466Z",
+      "last_scraped": "2026-04-26T15:20:12.465Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -772,7 +772,7 @@
       "slug": "kadence-theme-kit-pro-premium-addon-for-the-kadence-theme",
       "name": "Kadence Theme Kit Pro - Premium addon for the Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-26T16:14:01.830Z",
+      "last_scraped": "2026-04-26T16:14:01.829Z",
       "page_count": 0,
       "categories": []
     },
@@ -955,7 +955,7 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-04-26T15:15:52.038Z",
+      "last_scraped": "2026-04-26T15:15:52.035Z",
       "page_count": 24,
       "categories": [
         "beta-release",
@@ -1071,7 +1071,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://theeventscalendar.com/knowledgebase/documentation/",
-      "last_scraped": "2026-04-26T16:10:30.045Z",
+      "last_scraped": "2026-04-26T16:10:30.044Z",
       "page_count": 0,
       "categories": []
     },
