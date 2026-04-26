@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T10:14:05.008Z",
+  "last_updated": "2026-04-26T10:18:16.131Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -781,7 +781,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-04-20T08:22:11.444Z",
+      "last_scraped": "2026-04-26T10:18:16.131Z",
       "page_count": 0,
       "categories": []
     },
