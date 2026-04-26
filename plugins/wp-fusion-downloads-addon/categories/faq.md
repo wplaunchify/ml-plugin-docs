@@ -971,7 +971,28 @@ The version numbers are broken into three, and sometimes four parts. For example
 			top: 5px;
 			word-spacing: 2px;
 			color: #fff;
-		}#### #3.47.9 - 3/24/2026
+		}#### #3.47.10 - 4/21/2026
+
+- ✨ New Added app disconnect functionality for HubSpot
+- ✨ New Added wpf_woo_memberships_sync_on_delete filter so snippets can block the "cancelled" status sync for specific WooCommerce Memberships plan IDs when a user membership is deleted
+- ⚡️ Improved HubSpot webhook handling now defaults to async, dramatically improving workflow extension success rates by responding to HubSpot in milliseconds instead of waiting for follow-up API calls. Use ?async=false in the webhook URL or the wpf_hubspot_webhook_async filter to opt back into synchronous processing.
+- ⚡️ Improved HubSpot integration now retries rate-limited (429) and temporarily-unavailable (503) requests once, honoring the Retry-After header, instead of returning an immediate error
+- ⚡️ Improved Consolidated CRM disconnect flow into a new shared WPF_CRM_Disconnect class; HubSpot, Klaviyo, and Pipedrive now share a standardized confirmation and result page when disconnecting from the CRM
+- ⚡️ Improved Amelia Booking integration now syncs to the CRM when appointments are created manually by admins
+- ⚡️ Improved ActiveCampaign integration now validates its cached ecom customer ID against the order email, preventing orders from being linked to the wrong customer when a buyer's email changes between orders
+- ⚡️ Improved Async loopback requests now use wp_remote_post() instead of wp_safe_remote_post() for compatibility with local development environments (.local TLDs, local IPs, non-standard ports)
+- 🔧 Fixed Fixed WooCommerce Memberships syncing a phantom "cancelled" status to the CRM when a redundant user-membership record was deleted while the user still held another active membership
+- 🔧 Fixed Fixed WooCommerce Memberships tag-link protection causing unintended re-enrollment during tag sync
+- 🔧 Fixed Fixed WooCommerce Memberships Teams shared membership tags being removed during team-member removal, and subscription tags being stripped when the user had a pending-cancel subscription
+- 🔧 Fixed Fixed WooCommerce Memberships Teams subscription tag removal not being gated on product type, which could run against non-WooCommerce Subscriptions products
+- 🔧 Fixed Fixed ActiveCampaign load_ecom_customer() returning a "not found" response for real API errors, which could cause duplicate customers to be created
+- 🔧 Fixed Fixed LearnDash course steps not being saveable from the frontend Instructor Dashboard / Course Builder when WP Fusion was active — users with edit_courses can now assign lessons to courses again
+- 🔧 Fixed Fixed Amelia Booking PHP warning when a service's WP Fusion settings were stored as null instead of an array
+- 🔧 Fixed Fixed NationBuilder v2 API custom_values payload handling when tag labels were numeric vs string values
+- 🔧 Fixed Fixed Forminator integration PHP warning when tag label data was not in the expected array format
+- 🔧 Fixed Fixed tag and list string-replacement logic in the settings exporter/importer to match on whole words only, preventing unintended replacement of similarly-named tags or list IDs
+
+#### #3.47.9 - 3/24/2026
 
 - ✨ New Added [Document Library Pro](https://wpfusion.com/documentation/other/document-library-pro/) integration for syncing lead capture form submissions to the CRM with per-document tagging
 - ⚡️ Improved HubSpot tag migration tool now includes WooCommerce Memberships Teams and BadgeOS tag fields
