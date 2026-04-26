@@ -6,7 +6,7 @@
 
 ## 3rd Party Plugins
 
-**Source:** [https://learndash.com/support/kb/add-ons/3rd-party-plugins/3rd-party/](https://learndash.com/support/kb/add-ons/3rd-party-plugins/3rd-party/)
+**Source:** [https://learndash.com/support/kb/add-ons/3rd-party-plugins/third-party-plugins/](https://learndash.com/support/kb/add-ons/3rd-party-plugins/third-party-plugins/)
 
 The LearnDash plugins listed below are created and managed by 3rd party companies (not LearnDash). As such, they are subject to their own terms of use, pricing and support process.
 

@@ -6,7 +6,7 @@
 
 ## Gravity Forms Integration
 
-**Source:** [https://learndash.com/support/kb/add-ons/gravity-forms-add-on/gravity-forms/](https://learndash.com/support/kb/add-ons/gravity-forms-add-on/gravity-forms/)
+**Source:** [https://learndash.com/support/kb/add-ons/gravity-forms-add-on/gravity-forms-integration/](https://learndash.com/support/kb/add-ons/gravity-forms-add-on/gravity-forms-integration/)
 
 The LearnDash Gravity Forms integration allows you to register new users on your site and instantly provide them access to one (or more) of your courses. It can be used to create a signup form, both for free courses, as well as those that require payment (using one of Gravity Forms payment add-ons).
 

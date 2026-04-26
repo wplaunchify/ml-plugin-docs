@@ -6,7 +6,7 @@
 
 ## Quiz Questions
 
-**Source:** [https://learndash.com/support/kb/core/questions/questions/](https://learndash.com/support/kb/core/questions/questions/)
+**Source:** [https://learndash.com/support/kb/core/questions/quiz-questions/](https://learndash.com/support/kb/core/questions/quiz-questions/)
 
 [LearnDash quizzes](https://learndash.com/support/docs/core/quizzes/) puts the power of testing your students’ knowledge right at your fingertips. Explore setting up questions & answers, awarding points, hints, categories, options available for each question type, and more.
 

@@ -6,7 +6,7 @@
 
 ## SamCart Integration
 
-**Source:** [https://learndash.com/support/kb/add-ons/samcart-add-on/samcart/](https://learndash.com/support/kb/add-ons/samcart-add-on/samcart/)
+**Source:** [https://learndash.com/support/kb/add-ons/samcart-add-on/samcart-integration/](https://learndash.com/support/kb/add-ons/samcart-add-on/samcart-integration/)
 
 The LearnDash SamCart integration is one of several options for selling your courses. [SamCart](https://www.learndash.com/samcart-homepage) is a premium ecommerce solution that provides several payment options (one-time, subscriptions, trials), advanced analytics, cart abandonment recovery, A/B split testing and more.
 

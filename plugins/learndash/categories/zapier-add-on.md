@@ -6,7 +6,7 @@
 
 ## Zapier Integration
 
-**Source:** [https://learndash.com/support/kb/add-ons/zapier-add-on/zapier/](https://learndash.com/support/kb/add-ons/zapier-add-on/zapier/)
+**Source:** [https://learndash.com/support/kb/add-ons/zapier-add-on/zapier-integration/](https://learndash.com/support/kb/add-ons/zapier-add-on/zapier-integration/)
 
 The LearnDash Zapier integration empowers you to automate the learning experience. Using Zapier, you can connect LearnDash with over 1,500 applications, and automatically pass data from LearnDash to another application of your choice.
 

@@ -6,7 +6,7 @@
 
 ## Troubleshooting Basics
 
-**Source:** [https://learndash.com/support/kb/resources/troubleshooting/basics/](https://learndash.com/support/kb/resources/troubleshooting/basics/)
+**Source:** [https://learndash.com/support/kb/resources/troubleshooting/troubleshooting-basics/](https://learndash.com/support/kb/resources/troubleshooting/troubleshooting-basics/)
 
 LearnDash is designed to be user-friendly and flexible for a wide range of learning environments. However, there may be times when course creators or administrators run into questions about how specific features work or how to troubleshoot unexpected behavior.
 

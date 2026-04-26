@@ -6,7 +6,7 @@
 
 ## MemberPress Integration
 
-**Source:** [https://learndash.com/support/kb/add-ons/memberpress-add-on/memberpress/](https://learndash.com/support/kb/add-ons/memberpress-add-on/memberpress/)
+**Source:** [https://learndash.com/support/kb/add-ons/memberpress-add-on/memberpress-integration/](https://learndash.com/support/kb/add-ons/memberpress-add-on/memberpress-integration/)
 
 The LearnDash MemberPress integration enables you to connect your courses to MemberPress memberships. MemberPress can also handle the ecommerce and checkout experience for you, allowing you to bundle multiple courses into a single membership, and automatically granting and removing a member’s access to a course based on their membership status.
 

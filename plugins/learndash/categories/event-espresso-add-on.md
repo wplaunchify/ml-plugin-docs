@@ -6,7 +6,7 @@
 
 ## Event Espresso Integration
 
-**Source:** [https://learndash.com/support/kb/add-ons/event-espresso-add-on/event-espresso/](https://learndash.com/support/kb/add-ons/event-espresso-add-on/event-espresso/)
+**Source:** [https://learndash.com/support/kb/add-ons/event-espresso-add-on/event-espresso-integration/](https://learndash.com/support/kb/add-ons/event-espresso-add-on/event-espresso-integration/)
 
 [Event Espresso](https://eventespresso.com/) is a versatile, powerful event registration and ticketing solution for WordPress. You can use it alongside LearnDash to automatically provide access to an online course after someone signs up for an Event Espresso event. Both free and paid events are supported with the Pro version of the Event Espresso plugin.
 

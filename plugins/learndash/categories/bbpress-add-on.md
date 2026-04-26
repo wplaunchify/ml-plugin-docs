@@ -6,7 +6,7 @@
 
 ## bbPress Integration
 
-**Source:** [https://learndash.com/support/kb/add-ons/bbpress-add-on/bbpress/](https://learndash.com/support/kb/add-ons/bbpress-add-on/bbpress/)
+**Source:** [https://learndash.com/support/kb/add-ons/bbpress-add-on/bbpress-integration/](https://learndash.com/support/kb/add-ons/bbpress-add-on/bbpress-integration/)
 
 The LearnDash bbPress integration creates the ability for you to link [bbPress forums](https://wordpress.org/plugins/bbpress/) to LearnDash courses. When you associate a forum with a course, any student who has access to that course will be able to post in the corresponding forum. There are a few options which we’ll discuss below.
 

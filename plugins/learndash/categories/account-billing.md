@@ -326,24 +326,6 @@ If you would like to upload a new version of LearnDash via FTP, please follow [W
 
 ---
 
-## Edit Your Customer Account Email and Password
-
-**Source:** [https://learndash.com/support/kb/resources/account-billing/profile/](https://learndash.com/support/kb/resources/account-billing/profile/)
-
-Follow these steps to change the email address associated with your account or update your password:
-
-1. Log into [your account](https://account.learndash.com/)
-2. Enter your new email address and/or update your new password under **User Information**
-3. Click **Update**
-
-The above email address is for your LearnDash account and your LearnDash license email. This update will not impact your Billing email.
-
-**NOTE**: The email address for your account is the same one that should be entered under LearnDash LMS > Settings > LMS LicenseI on your WordPress Admin site. If they do not match, your license will not validate.
-
-As always, if you have any trouble with this, [please reach](https://learndash.com/help/)[out to us](https://account.learndash.com/support/) and we’ll be happy to help as soon as we can.
-
----
-
 ## How To Get Help
 
 **Source:** [https://learndash.com/support/kb/resources/account-billing/help/](https://learndash.com/support/kb/resources/account-billing/help/)

@@ -6,7 +6,7 @@
 
 ## WooCommerce Integration
 
-**Source:** [https://learndash.com/support/kb/add-ons/woocommerce-add-on/woocommerce/](https://learndash.com/support/kb/add-ons/woocommerce-add-on/woocommerce/)
+**Source:** [https://learndash.com/support/kb/add-ons/woocommerce-add-on/woocommerce-integration/](https://learndash.com/support/kb/add-ons/woocommerce-add-on/woocommerce-integration/)
 
 Unlock the power of LearnDash and WooCommerce to elevate your e-learning platform with features designed to streamline your processes. You can use the WooCommerce integration to connect courses and groups effortlessly to WooCommerce products, empower retroactive enrollment management for courses and groups, and seamlessly regulate enrollment status based on WooCommerce subscription expiration (WooCommerce Subscriptions add-on required).
 

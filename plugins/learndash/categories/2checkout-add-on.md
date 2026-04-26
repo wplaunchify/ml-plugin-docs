@@ -6,7 +6,7 @@
 
 ## 2Checkout Integration
 
-**Source:** [https://learndash.com/support/kb/add-ons/2checkout-add-on/2checkout/](https://learndash.com/support/kb/add-ons/2checkout-add-on/2checkout/)
+**Source:** [https://learndash.com/support/kb/add-ons/2checkout-add-on/2checkout-integration/](https://learndash.com/support/kb/add-ons/2checkout-add-on/2checkout-integration/)
 
 The LearnDash 2Checkout integration is one of several options for selling your courses. If you already have a 2Checkout account, or you like what their payment gateway has to offer, you can use this integration to sell courses on your LearnDash site.
 
