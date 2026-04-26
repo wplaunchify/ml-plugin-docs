@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T08:35:24.762Z",
+  "last_updated": "2026-04-26T08:35:50.967Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -16,7 +16,7 @@
       "slug": "admin-columns-pro",
       "name": "Admin Columns Pro",
       "documentation_url": "https://www.admincolumns.com",
-      "last_scraped": "2026-04-21T08:11:48.947Z",
+      "last_scraped": "2026-04-26T08:35:48.797Z",
       "page_count": 0,
       "categories": []
     },
@@ -172,7 +172,7 @@
       "slug": "customize-my-account-page-for-woocommerce",
       "name": "Customize My Account Page For Woocommerce",
       "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/documentation/",
-      "last_scraped": "2026-04-26T08:04:50.085Z",
+      "last_scraped": "2026-04-26T08:04:50.084Z",
       "page_count": 0,
       "categories": []
     },
@@ -228,7 +228,7 @@
       "slug": "fluent-boards-pro",
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-04-26T08:26:46.756Z",
+      "last_scraped": "2026-04-26T08:26:46.755Z",
       "page_count": 0,
       "categories": []
     },
@@ -409,7 +409,7 @@
       "slug": "fluentcommunity-pro",
       "name": "FluentCommunity Pro",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-04-26T08:32:51.974Z",
+      "last_scraped": "2026-04-26T08:32:51.973Z",
       "page_count": 0,
       "categories": []
     },
@@ -709,7 +709,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-04-26T08:29:39.938Z",
+      "last_scraped": "2026-04-26T08:29:39.937Z",
       "page_count": 0,
       "categories": []
     },
@@ -773,7 +773,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-26T08:05:27.084Z",
+      "last_scraped": "2026-04-26T08:05:27.083Z",
       "page_count": 0,
       "categories": []
     },
@@ -825,7 +825,7 @@
       "slug": "learndash",
       "name": "LearnDash",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-04-26T08:35:24.762Z",
+      "last_scraped": "2026-04-26T08:35:24.753Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
@@ -882,7 +882,7 @@
       "slug": "learndash-lms-certificate-builder",
       "name": "LearnDash LMS - Certificate Builder",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-04-26T08:24:52.045Z",
+      "last_scraped": "2026-04-26T08:24:52.044Z",
       "page_count": 0,
       "categories": []
     },
@@ -964,7 +964,7 @@
       "slug": "product-filters-for-woocommerce",
       "name": "Product Filters for WooCommerce",
       "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
-      "last_scraped": "2026-04-26T08:03:17.433Z",
+      "last_scraped": "2026-04-26T08:03:17.432Z",
       "page_count": 0,
       "categories": []
     },
@@ -1479,7 +1479,7 @@
       "slug": "wp-fusion-logins-addon",
       "name": "WP Fusion - Logins Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-04-26T08:28:23.984Z",
+      "last_scraped": "2026-04-26T08:28:23.974Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
