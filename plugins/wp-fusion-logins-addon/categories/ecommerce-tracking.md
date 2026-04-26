@@ -1422,6 +1422,19 @@ For more information on engagements, see [the HubSpot API documentation](https:/
 
 **Source:** [https://wpfusion.com/documentation/ecommerce-tracking/ecommerce-tracking-changelog/](https://wpfusion.com/documentation/ecommerce-tracking/ecommerce-tracking-changelog/)
 
+#### #1.27.2 - 4/21/2026
+
+- ✨ New Added - WooCommerce product variations are now included in the "WooCommerce Products (Ecommerce addon)" batch export alongside simple products (especially useful for CRMs like Keap where per-product API creation is slow)
+- ⚡️ Improved When a WooCommerce order status change fails because the linked opportunity has been deleted in the CRM (HighLevel), WP Fusion will now clear the stored opportunity ID and re-create it, instead of only logging the error
+- 🔧 Fixed Fixed SureCart subscription renewals overwriting the original CRM deal (including its close/start date and custom fields) instead of creating a new deal for the renewal payment
+- 🔧 Fixed Fixed NationBuilder donations not syncing after reconnecting the site with the new v2 OAuth flow (the donations endpoint still requires v1, and needed its own request headers and auth format)
+- Removed the 
+```
+Requires Plugins: wp-fusion
+```
+
+ header from the plugin file
+
 #### #1.27.1 - 12/9/2025
 
 - 🔧 Fixed Fixed ArgumentCountError with Paid Memberships Pro order status changes
