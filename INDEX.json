@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T17:19:23.356Z",
+  "last_updated": "2026-04-26T17:19:49.522Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -800,7 +800,7 @@
       "slug": "launchkit-pro",
       "name": "LaunchKit Pro",
       "documentation_url": "https://wplaunchify.com/documentation/",
-      "last_scraped": "2026-04-19T17:17:18.329Z",
+      "last_scraped": "2026-04-26T17:19:47.140Z",
       "page_count": 0,
       "categories": []
     },
@@ -901,7 +901,7 @@
       "slug": "ninja-tables-easy-data-table-builder",
       "name": "Ninja Tables – Easy Data Table Builder",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-04-26T17:19:23.356Z",
+      "last_scraped": "2026-04-26T17:19:23.355Z",
       "page_count": 0,
       "categories": []
     },
