@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T20:08:43.872Z",
+  "last_updated": "2026-04-26T20:09:13.714Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -748,7 +748,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-04-24T08:16:34.559Z",
+      "last_scraped": "2026-04-26T20:09:13.714Z",
       "page_count": 0,
       "categories": []
     },
