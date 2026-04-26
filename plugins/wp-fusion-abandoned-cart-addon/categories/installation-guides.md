@@ -1697,11 +1697,17 @@ From the ‘Select Your CRM’ list choose ‘HubSpot ’.
 
 ![](https://wpfusion.com/wp-content/uploads/2020/08/HubSpot-configuration-1024x627.png)
 
-Click ‘Authorize with HubSpot’ to initialize the connection and generate access and refresh tokens for your website.
+Click ‘Authorize with HubSpot’, and you will be taken to HubSpot, where you can select which account you would like to connect to WP Fusion.
 
 ![](https://wpfusion.com/wp-content/uploads/2020/08/HubSpot-choose-an-account-1.png)
 
-Choose an account.
+After choosing an account, review the permissions and data that will be shared between your website and HubSpot. Click *Connect app* to continue,
+
+![a permission screen for connecting wp fusion to hubspot, displaying requested access to crm and account info, with clear checkmarks and buttons to connect the app or view terms and privacy policy—seamlessly linking wordpress with your marketing tools.](https://wpfusion.com/wp-content/uploads/2020/08/CleanShot-2026-04-21-at-21.19.04@2x-1024x1012.jpg)
+
+You will be redirected back to your WordPress site. WP Fusion will verify the connection with HubSpot and load your available lists and contact properties.
+
+![screenshot of the wp fusion settings page in wordpress, showing hubspot api configuration, connection status as connected, with options to connect, sync, re authorize, manage, disconnect, activate a license, and import settings.](https://wpfusion.com/wp-content/uploads/2020/08/CleanShot-2026-04-21-at-21.21.13@2x-1024x833.jpg)
 
 Once the connection is completed, click **Save Changes** below to save the changes.
 
@@ -1786,6 +1792,37 @@ For more information, see the documentation on [HubSpot Enhanced Ecommerce](htt
 
 ![](https://wpfusion.com/wp-content/uploads/2021/11/event-tracking-hubspot-1024x751.jpeg)Events from WordPress appear on the contact’s activity timeline in real time. In this example, [Gravity Form submission](https://wpfusion.com/documentation/lead-generation/gravity-forms/#event-tracking) is shown.
 WP Fusion’s [Event Tracking Addon](https://wpfusion.com/documentation/event-tracking/event-tracking-overview/) can send events in real time from supported plugins to HubSpot. For more information, [see the documentation](https://wpfusion.com/documentation/event-tracking/hubspot-event-tracking/).
+
+### Disconnecting HubSpot and WP Fusion
+
+To disconnect WP Fusion from your HubSpot account, navigate to **Settings » WP Fusion » Setup** in your WordPress admin and click **Disconnect** next to the HubSpot connection.
+
+![screenshot of the wp fusion settings page in wordpress showing hubspot configuration. an orange arrow points to a red “disconnect” button next to the “manage connections” and “re authorize with hubspot” buttons.](https://wpfusion.com/wp-content/uploads/2020/08/CleanShot-2026-04-21-at-21.31.30@2x-1024x637.jpg)
+
+This will revoke the OAuth access and refresh tokens stored on your WordPress site. WP Fusion will also automatically call HubSpot’s [Uninstall app API](https://developers.hubspot.com/docs/api-reference/crm-app-uninstalls-v3/uninstall/delete-appinstalls-v3-external-install) to remove WP Fusion from your HubSpot account’s Connected Apps.
+
+Your account’s Super Admins will receive an email notification with a link to reinstall the app if needed.
+
+You can reconnect at any time by selecting HubSpot from the **Select Your CRM** dropdown and clicking **Authorize with HubSpot** to complete the OAuth flow again.
+
+#### Uninstalling WP Fusion from your HubSpot account
+
+In most cases, disconnecting from within WP Fusion (above) will automatically remove the app from your HubSpot account. However, you can also uninstall the app directly from HubSpot at any time.
+
+To do so, navigate to **Settings » Integrations » Connected apps** in your HubSpot account, locate **WP Fusion** in the list of connected apps, click the **Actions** dropdown, and select **Uninstall**.
+
+For full instructions, see HubSpot’s documentation on [uninstalling a connected app](https://knowledge.hubspot.com/integrations/connect-apps-to-hubspot#uninstall-an-app).
+
+#### What happens when you disconnect or uninstall
+
+Disconnecting or uninstalling stops all ongoing data sync between WordPress and HubSpot. Specifically:
+
+- New WordPress users and customers will no longer be synced to HubSpot as contacts.
+- Updates to existing contact fields, lists, and event tracking will no longer be sent to HubSpot.
+- HubSpot site tracking scripts (if previously enabled via WP Fusion) will no longer load on your WordPress site.
+- Any HubSpot workflows using the **Update WordPress** action to send data back to your WordPress site will stop functioning.
+
+**Your existing data is not affected.** Contact records in HubSpot remain intact, as do WordPress user accounts and the contact ID associations stored in WordPress. If you reconnect later, syncing resumes from that point forward — historical changes that occurred while disconnected are not back-filled automatically. To export historical data after reconnecting, see the [Exporting Data guide](https://wpfusion.com/documentation/tutorials/batch-operations/).
 
 ---
 
