@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-04-19T09:38:27.254Z",
-  "total_pages": 3744,
+  "last_scraped": "2026-04-26T09:42:32.553Z",
+  "total_pages": 3751,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,36 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3744,
+      "page_count": 3751,
       "pages": [
+        {
+          "title": "Smart Gift Cards",
+          "url": "https://woocommerce.com/document/smart-gift-cards/"
+        },
+        {
+          "title": "Additional Variation Images Gallery",
+          "url": "https://woocommerce.com/document/additional-variation-images-gallery/"
+        },
+        {
+          "title": "QR Code Tickets and Check-in – REST API",
+          "url": "https://woocommerce.com/document/ticket-checkin/qr-code-tickets-and-check-in-for-woocommerce-rest-api-documentation/"
+        },
+        {
+          "title": "Troubleshooting Analytics in the Woo Mobile App",
+          "url": "https://woocommerce.com/document/troubleshooting-analytics-in-the-woo-mobile-app/"
+        },
+        {
+          "title": "Order Subscriptions",
+          "url": "https://woocommerce.com/document/order-subscriptions/"
+        },
+        {
+          "title": "Authorize.net",
+          "url": "https://woocommerce.com/document/authorize-net-payments-for-woocommerce/"
+        },
+        {
+          "title": "StoreGuard – IP Rate Limiter",
+          "url": "https://woocommerce.com/document/storeguard-ip-rate-limiter/"
+        },
         {
           "title": "Bulk Product Price Update",
           "url": "https://woocommerce.com/document/bulk-product-price-update/"
@@ -1086,7 +1114,7 @@
           "url": "https://woocommerce.com/document/terms-conditions-tracker/"
         },
         {
-          "title": "StockTrack",
+          "title": "StockTrack Product Locations",
           "url": "https://woocommerce.com/document/stocktrack/"
         },
         {
@@ -3454,16 +3482,16 @@
           "url": "https://woocommerce.com/document/migrate-import-bigcommerce/"
         },
         {
-          "title": "Phone Number Validation for WooCommerce",
-          "url": "https://woocommerce.com/document/phone-number-validation/"
+          "title": "Measurement Price & Cost Calculator",
+          "url": "https://woocommerce.com/document/measurement-price-cost-calculator/"
         },
         {
-          "title": "Cart to Quote & Social Share",
-          "url": "https://woocommerce.com/document/cart-to-quote-and-social-share/"
+          "title": "Review Translator – Google Cloud Configuration",
+          "url": "https://woocommerce.com/document/review-translator-google-cloud-configuration/"
         },
         {
-          "title": "Order Discounts & Conditional Fee",
-          "url": "https://woocommerce.com/document/order-discounts-and-fee-for-woocommerce/"
+          "title": "Phone Validator and Formatter",
+          "url": "https://woocommerce.com/document/phone-validator-and-formatter/"
         },
         {
           "title": "Archiva",
@@ -5062,32 +5090,32 @@
           "url": "https://woocommerce.com/document/configuring-woocommerce-settings/emails/"
         },
         {
-          "title": "Advanced Settings",
-          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/advanced/"
+          "title": "B2B Invoice Payment Method",
+          "url": "https://woocommerce.com/document/b2b-invoice-payment-method/"
         },
         {
-          "title": "Advanced Order Notes for WooCommerce",
-          "url": "https://woocommerce.com/document/advanced-order-notes-for-woocommerce/"
+          "title": "Order Statuses",
+          "url": "https://woocommerce.com/document/managing-orders/order-statuses/"
         },
         {
-          "title": "Consent Mode Banner PRO",
-          "url": "https://woocommerce.com/document/gtm-consent-mode-banner-woo/"
+          "title": "Orders Overview and Bulk Order Management",
+          "url": "https://woocommerce.com/document/managing-orders/overview-and-bulk-management/"
         },
         {
-          "title": "AnySell",
-          "url": "https://woocommerce.com/document/anysell/"
+          "title": "Single Order Page and Manually Adding an Order",
+          "url": "https://woocommerce.com/document/managing-orders/view-edit-or-add-an-order/"
         },
         {
-          "title": "Sportiq",
-          "url": "https://woocommerce.com/document/sportiq/"
+          "title": "Paying for Orders",
+          "url": "https://woocommerce.com/document/managing-orders/paying-for-orders/"
         },
         {
-          "title": "Related Products, Add-to-Cart, and Notification Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes/"
+          "title": "Removing personal data from orders",
+          "url": "https://woocommerce.com/document/managing-orders/removing-personal-data-from-orders/"
         },
         {
-          "title": "Troubleshooting shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/troubleshooting-shortcodes/"
+          "title": "Testing orders",
+          "url": "https://woocommerce.com/document/managing-orders/testing-orders/"
         },
         {
           "title": "Troubleshooting Orders",
@@ -9582,32 +9610,32 @@
           "url": "https://woocommerce.com/document/integration-de-google-agenda-avec-woocommerce-bookings/"
         },
         {
-          "title": "Paramètres des réservations de WooCommerce Bookings",
-          "url": "https://woocommerce.com/document/parametres-des-reservations-de-woocommerce-bookings/"
+          "title": "Widgets de escritorio",
+          "url": "https://woocommerce.com/document/widgets-de-escritorio/"
         },
         {
-          "title": "WooCommerce Accommodation pour WooCommerce Bookings",
-          "url": "https://woocommerce.com/document/woocommerce-accommodation-pour-woocommerce-bookings/"
+          "title": "Importar productos de Etsy",
+          "url": "https://woocommerce.com/document/importar-productos-de-etsy/"
         },
         {
-          "title": "Back In Stock Notifications",
-          "url": "https://woocommerce.com/document/back-in-stock-notifications/"
+          "title": "Reembolsos de WooCommerce",
+          "url": "https://woocommerce.com/document/reembolsos-de-woocommerce/"
         },
         {
-          "title": "Hide Prices & Private Store for WooCommerce",
-          "url": "https://woocommerce.com/document/hide-prices-private-store-for-woocommerce/"
+          "title": "Preguntas frecuentes sobre los correos electrónicos",
+          "url": "https://woocommerce.com/document/preguntas-frecuentes-sobre-los-correos-electronicos/"
         },
         {
-          "title": "Product Designer for WooCommerce",
-          "url": "https://woocommerce.com/document/product-designer-for-woocommerce/"
+          "title": "Comprender los cálculos de cajas para el embalaje",
+          "url": "https://woocommerce.com/document/comprender-los-calculos-de-cajas-para-el-embalaje/"
         },
         {
-          "title": "Registration & Login with Mobile Phone Number",
-          "url": "https://woocommerce.com/document/registration-login-with-mobile-phone-number/"
+          "title": "Agency",
+          "url": "https://woocommerce.com/document/agency/"
         },
         {
-          "title": "PayPal Standard",
-          "url": "https://woocommerce.com/document/paypal-standard/"
+          "title": "Calcular costos de envío y modo de depuración",
+          "url": "https://woocommerce.com/document/calcular-costos-de-envio-y-modo-de-depuracion/"
         },
         {
           "title": "Recogida local",
@@ -10702,32 +10730,32 @@
           "url": "https://woocommerce.com/document/ajout-et-gestion-de-produits/"
         },
         {
-          "title": "Traduction et localisation de WooCommerce",
-          "url": "https://woocommerce.com/document/traduction-et-localisation-de-woocommerce/"
+          "title": "Cart Upsell for WooCommerce",
+          "url": "https://woocommerce.com/document/cart-upsell-for-woocommerce/"
         },
         {
-          "title": "Comprendre le rapport d’état du système de WooCommerce",
-          "url": "https://woocommerce.com/document/comprendre-le-rapport-detat-du-systeme-de-woocommerce/"
+          "title": "Stripe (Português)",
+          "url": "https://woocommerce.com/document/stripe-portugues/"
         },
         {
-          "title": "Comment mettre à jour WooCommerce",
-          "url": "https://woocommerce.com/document/comment-mettre-a-jour-woocommerce/"
+          "title": "PayPal Standard (Português)",
+          "url": "https://woocommerce.com/document/paypal-standard-portugues/"
         },
         {
-          "title": "Configuration des paramètres de WooCommerce",
-          "url": "https://woocommerce.com/document/configuration-des-parametres-de-woocommerce/"
+          "title": "PayPal estándar",
+          "url": "https://woocommerce.com/document/paypal-estandar/"
         },
         {
-          "title": "Protocoles SSL et HTTPS",
-          "url": "https://woocommerce.com/document/protocoles-ssl-et-https/"
+          "title": "Frete Grátis",
+          "url": "https://woocommerce.com/document/frete-gratis/"
         },
         {
-          "title": "Recommandations de serveurs",
-          "url": "https://woocommerce.com/document/recommandations-de-serveurs/"
+          "title": "Envío gratuito",
+          "url": "https://woocommerce.com/document/envio-gratuito/"
         },
         {
-          "title": "Gestion des codes promo",
-          "url": "https://woocommerce.com/document/gestion-des-codes-promo/"
+          "title": "PayPal Checkout (Português)",
+          "url": "https://woocommerce.com/document/paypal-checkout-portugues/"
         },
         {
           "title": "PayPal Checkout (Español)",
@@ -10822,46 +10850,6 @@
           "url": "https://woocommerce.com/document/recomendacoes-de-servidor/"
         },
         {
-          "title": "Recomendaciones de servidor",
-          "url": "https://woocommerce.com/document/recomendaciones-de-servidor/"
-        },
-        {
-          "title": "Como gerenciar as assinaturas do WooCommerce.com",
-          "url": "https://woocommerce.com/document/como-gerenciar-as-assinaturas-do-woocommerce-com/"
-        },
-        {
-          "title": "Como configurar as Taxas no WooCommerce",
-          "url": "https://woocommerce.com/document/como-configurar-as-taxas-no-woocommerce/"
-        },
-        {
-          "title": "Gerenciamento de Cupons",
-          "url": "https://woocommerce.com/document/gerenciamento-de-cupons/"
-        },
-        {
-          "title": "Páginas do WooCommerce",
-          "url": "https://woocommerce.com/document/paginas-do-woocommerce/"
-        },
-        {
-          "title": "Gestionar suscripciones de WooCommerce.com",
-          "url": "https://woocommerce.com/document/gestionar-suscripciones-de-woocommerce-com/"
-        },
-        {
-          "title": "Configurar impuestos en WooCommerce",
-          "url": "https://woocommerce.com/document/configurar-impuestos-en-woocommerce/"
-        },
-        {
-          "title": "Extend – Wholesale Product Page Customizer",
-          "url": "https://woocommerce.com/document/wholesale-product-page-customizer-for-woocommerce/"
-        },
-        {
-          "title": "Size Chart for WooCommerce",
-          "url": "https://woocommerce.com/document/size-chart-for-woocommerce/"
-        },
-        {
-          "title": "Advanced Catalog Mode for WooCommerce",
-          "url": "https://woocommerce.com/document/advanced-catalog-mode/"
-        },
-        {
           "title": "Extension translations",
           "url": "https://woocommerce.com/document/extension-translations/"
         },
@@ -10930,16 +10918,16 @@
           "url": "https://woocommerce.com/document/shipstation-for-woocommerce/"
         },
         {
-          "title": "Lower Price for WooCommerce",
-          "url": "https://woocommerce.com/document/lower-price/"
+          "title": "Subscriber’s View",
+          "url": "https://woocommerce.com/document/subscriptions/customers-view/"
         },
         {
-          "title": "Bulk Edit Products, Prices and Attributes",
-          "url": "https://woocommerce.com/document/bulk-edit-products-prices-and-attributes/"
+          "title": "Name Your Price – What’s New in 3.0",
+          "url": "https://woocommerce.com/document/name-your-price/whats-new-in-3-0/"
         },
         {
-          "title": "Aliexpress Dropshipping For WooCommerce",
-          "url": "https://woocommerce.com/document/aliexpress-dropshipping-for-woocommerce/"
+          "title": "Google Analytics link tracking",
+          "url": "https://woocommerce.com/document/automatewoo/google-analytics-link-tracking/"
         },
         {
           "title": "Bulk Order Form For WooCommerce",
@@ -12170,16 +12158,16 @@
           "url": "https://woocommerce.com/document/groups-woocommerce/api/"
         },
         {
-          "title": "FAQ",
-          "url": "https://woocommerce.com/document/groups-woocommerce/faq/"
+          "title": "[woocommerce_product_filter_reset]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_reset/"
         },
         {
-          "title": "Shortcodes",
-          "url": "https://woocommerce.com/document/groups-woocommerce/shortcodes/"
+          "title": "Product Filter – Reset",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/widgets/product-filter-reset/"
         },
         {
-          "title": "Memberships",
-          "url": "https://woocommerce.com/document/groups-woocommerce/memberships/"
+          "title": "Sending SMS from a workflow",
+          "url": "https://woocommerce.com/document/automatewoo/twilio/sending-sms-from-a-workflow/"
         },
         {
           "title": "Settings",
@@ -12262,32 +12250,32 @@
           "url": "https://woocommerce.com/document/gifting-subscription-box/"
         },
         {
-          "title": "Subscriptions Use Case: Corporate Purchasing",
-          "url": "https://woocommerce.com/document/corporate-subscription-purchasing/"
+          "title": "Debugging",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/api/debugging/"
         },
         {
-          "title": "Gifting for WooCommerce Subscriptions",
-          "url": "https://woocommerce.com/document/subscriptions-gifting/"
+          "title": "Examples",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/api/examples/"
         },
         {
-          "title": "Google Product Feed – Product Review Feeds",
-          "url": "https://woocommerce.com/document/google-product-feed-product-review-feeds/"
+          "title": "[woocommerce_product_filter_products]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_products/"
         },
         {
-          "title": "Mailchimp for WooCommerce Memberships",
-          "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
+          "title": "[woocommerce_product_filter_tag]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_tag/"
         },
         {
-          "title": "Add to Cart Redirect",
-          "url": "https://woocommerce.com/document/add-to-cart-redirect/"
+          "title": "[woocommerce_product_filter_category]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_category/"
         },
         {
-          "title": "WooCommerce site and data security FAQ",
-          "url": "https://woocommerce.com/document/woocommerce-security-faq/"
+          "title": "[woocommerce_product_filter_attribute]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_attribute/"
         },
         {
-          "title": "Mix and Match Version 1.3.0 – What’s New",
-          "url": "https://woocommerce.com/document/woocommerce-mix-and-match-products/version-1-3/"
+          "title": "[woocommerce_product_filter_price]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_price/"
         },
         {
           "title": "[woocommerce_product_filter]",
@@ -14008,6 +13996,46 @@
         {
           "title": "WooCommerce Authorize.Net Reporting",
           "url": "https://woocommerce.com/document/woocommerce-authorize-net-reporting/"
+        },
+        {
+          "title": "Hooks and Filters in WooCommerce PDF Invoice",
+          "url": "https://woocommerce.com/document/pdf-invoice-developer-tools/"
+        },
+        {
+          "title": "PDF Invoices",
+          "url": "https://woocommerce.com/document/woocommerce-pdf-invoice-setup-and-customization/"
+        },
+        {
+          "title": "Adjust the quantity input values",
+          "url": "https://woocommerce.com/document/adjust-the-quantity-input-values/"
+        },
+        {
+          "title": "Creating Slideshows with Slides",
+          "url": "https://woocommerce.com/document/creating-slideshows-with-slides/"
+        },
+        {
+          "title": "See You Later",
+          "url": "https://woocommerce.com/document/see-you-later/"
+        },
+        {
+          "title": "Create a new administrator account in WordPress",
+          "url": "https://woocommerce.com/document/create-new-admin-account-wordpress/"
+        },
+        {
+          "title": "Send coupons used in an order by email",
+          "url": "https://woocommerce.com/document/send-coupons-used-in-an-order-by-email/"
+        },
+        {
+          "title": "Subscription Renewal Process",
+          "url": "https://woocommerce.com/document/subscriptions/renewal-process/"
+        },
+        {
+          "title": "CyberSource Extension Comparison",
+          "url": "https://woocommerce.com/document/cybersource-extension-comparison/"
+        },
+        {
+          "title": "WooCommerce US Export compliance",
+          "url": "https://woocommerce.com/document/woocommerce-us-export-compliance/"
         },
         {
           "title": "InterFax Integration",
