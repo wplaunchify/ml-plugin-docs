@@ -23,10 +23,200 @@ This section covers the following essential aspects:
 - **Defining Upgrade Paths:** Set up seamless upgrade options for your tiered products, particularly for licensed and subscription items.
 - **Product List Overview:** Understand how to view, filter, and manage your entire product catalog efficiently.
 - **Inventory Management:** Understand how to track and adjust stock levels for your physical and licensed digital products.
+- **Advanced Inventory:** A dedicated Pro workspace for central stock management, bulk updates, adjustment history, and export.
 - **Creating & Managing Product Categories:** Learn how to organize your products into logical categories for better customer navigation and store management.
 - **Creating & Managing Product Brands:** Learn how to create and assign brands to your products, helping customers to shop by brand and improving your store's organization.
 
 By mastering this section, you'll be able to effectively structure your product offerings and manage your store's inventory.
+
+---
+
+## Advanced Inventory ​
+
+**Source:** [https://docs.fluentcart.com/guide/product-types-creation/advanced-inventory](https://docs.fluentcart.com/guide/product-types-creation/advanced-inventory)
+
+# Advanced Inventory ​
+
+**Advanced Inventory** is a dedicated stock-management workspace for FluentCart Pro stores that need more than per-product stock fields. It gives you a central **Inventory** admin screen with cross-catalog views, bulk updates, an auditable adjustment history, and export — on top of everything the basic [Inventory Management](/guide/product-types-creation/inventory-management) screen already does.
+
+If you're running a physical-goods store, a warehouse, or a mixed channel where stock moves often and needs accountability, this is the module to build on.
+
+---
+
+## What Advanced Inventory Adds ​
+
+On top of basic stock tracking, Advanced Inventory gives you:
+
+- **A central Inventory screen** — every product (and every variation) in one place, with scope filters for *All*, *Low Stock*, and *Out of Stock*.
+- **Inline stock edits** — adjust a variant's total stock directly from the list without opening the product.
+- **Bulk updates** — update many variants at once in **Add** mode (increment existing stock) or **Set** mode (replace with a new total).
+- **Adjustment history** — every change is logged with who made it, when, the old and new values, and a reason.
+- **Reasons enum + custom reasons** — categorise stock movements as Restock, Damaged, Shrinkage, Correction, or Other (with a free-text note).
+- **Export** — download inventory by scope and state for reporting or handover to a third-party system.
+- **Stock stats** — a summary strip showing totals across the catalog, aggregated in SQL so it stays fast on large stores.
+
+---
+
+## Step 1: Enable the Module ​
+
+Advanced Inventory layers on top of the core Stock Management feature, so both toggles must be on.
+
+1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
+2. Click the **Features & Addon** tab from the left-hand menu.
+3. Make sure **Stock Management** is enabled.
+4. Enable **Advanced Inventory** directly below it.
+5. Click **Save Settings**.
+
+Once both features are active, a new **Inventory** submenu appears in the FluentCart admin menu, directly after **Products**.
+
+INFO
+
+If Advanced Inventory is disabled, the Inventory submenu disappears and no new adjustments are recorded to the history. Your existing per-product stock levels are untouched — the basic [Inventory Management](/guide/product-types-creation/inventory-management) screen still works.
+---
+
+## Step 2: The Inventory Screen ​
+
+Navigate to **FluentCart > Inventory** to open the Advanced Inventory workspace.
+
+![Screenshot of the Advanced Inventory list showing All / Low Stock / Out of Stock tabs, Advanced Filter toggle, Total Stock, Available, On hold, and Delivered columns across multiple products](https://docs.fluentcart.com/images/product-types-creation/advanced-inventory/inventory-list.webp)
+
+### Scope tabs ​
+
+Across the top of the list you'll see three quick-filter tabs:
+
+- **All** — every tracked product and variant in your store.
+- **Low Stock** — items whose Available count has dropped to or below your configured low-stock threshold.
+- **Out of Stock** — items with an Available count of 
+```
+0
+```
+
+.
+
+### Advanced Filter ​
+
+Toggle **Advanced Filter** on to refine the list by product, SKU, category, or custom criteria. Useful for large catalogs where you need to focus on a single supplier, brand, or segment.
+
+### Column Reference ​
+
+Each row represents a single product or a single variation of a variable product:
+
+- **Products** — The product or variant name (expand the chevron on variable products to see each version listed individually).
+- **SKU** — The variant's Stock Keeping Unit. Shows 
+```
+No SKU
+```
+
+ or 
+```
+--
+```
+
+ when none is assigned.
+- **Total Stock** — The complete stock count. Editable inline — type a new value and click the adjuster icon next to the field.
+- **Available** — Units currently sellable (Total Stock minus On hold and Delivered).
+- **On hold** — Units reserved in pending or processing orders. Not available for sale.
+- **Delivered** — Units already fulfilled and shipped.
+- **History icon** (right edge) — Opens the adjustment history for that variant.
+
+### Bulk selection ​
+
+Use the checkboxes at the start of each row (or the master checkbox in the header) to select multiple variants and open the bulk actions toolbar.
+
+### Expand All ​
+
+Click **Expand All** at the top right to reveal every variation under every variable product at once — useful before exporting or bulk editing a large catalog.
+
+---
+
+## Step 3: Updating Stock ​
+
+### Single Update (inline) ​
+
+1. Find the variant in the list.
+2. Click directly inside the **Total Stock** input for that row.
+3. Enter the new total, then click the small adjuster icon next to the field.
+4. A confirmation modal asks for a **Reason** — pick one from the dropdown, and if you choose **Other**, fill in the required **Custom Reason** field.
+5. Click **Apply**. The row updates, the new Available count recalculates, and a new entry is written to the adjustment history.
+
+### Bulk Update ​
+
+1. Select two or more rows using their checkboxes.
+2. Click **Bulk Update** in the actions bar.
+3. Choose the **Mode**: - **Add** — The value you enter is *added to* each selected variant's existing stock. Use a positive number to increase, a negative number to decrease (e.g., 
+```
++50
+```
+
+ to restock, 
+```
+-3
+```
+
+ to write off damaged units across all selected items).
+- **Set** — The value you enter *replaces* each selected variant's current stock. Use this for end-of-month resets or physical-count reconciliations.
+4. Pick a **Reason** from the enum, or select **Other** and enter a **Custom Reason**.
+5. Click **Apply**. Every selected variant is updated atomically; each change writes its own entry in the adjustment history.
+
+TIP
+
+Prefer **Add** mode for routine receiving and write-offs — it avoids overwriting stock that might have moved since you loaded the list. Reserve **Set** mode for situations where a physical count has produced a definitive number.
+### Adjustment Reasons ​
+
+Every stock change — single or bulk — must carry a reason. FluentCart records one of the following:
+
+| Reason | Typical use |
+| --- | --- |
+| Restock | New inventory arriving from supplier or production |
+| Damaged | Units broken, expired, or unsellable |
+| Shrinkage | Missing stock (theft, misplacement, errors) |
+| Correction | Reconciliation against a physical count |
+| Other | Anything else — requires a Custom Reason free-text note |
+
+Reasons are enforced at the API layer: attempts to save a stock change without a valid reason (or without a custom reason when "Other" is selected) are rejected.
+
+---
+
+## Step 4: Adjustment History ​
+
+Click the **history icon** at the end of any row to open the adjustment log for that variant. The log lists every stock change chronologically, showing:
+
+- **Timestamp** — when the change was made.
+- **User** — the WP user who made it.
+- **Old Stock → New Stock** — the transition, so deltas are obvious at a glance.
+- **Reason** — the reason picked from the enum.
+- **Custom Reason** — any free-text note captured when **Other** was selected.
+
+The history is append-only — adjustments cannot be edited or deleted, so the audit trail stays trustworthy. This is the record you reach for when reconciling a discrepancy, responding to a supplier dispute, or investigating a shrinkage pattern.
+
+---
+
+## Step 5: Export ​
+
+For reporting, hand-off, or import into an external inventory system, use the **Export** action at the top of the inventory screen.
+
+- **Scope** — Export the current tab (All, Low Stock, Out of Stock) or a filtered subset.
+- **Inventory State** — Narrow further by state (e.g., only Available, only On hold).
+- **Format** — CSV is the default, suitable for spreadsheets and most downstream tools.
+
+Exports run against the same optimised SQL query used by the stats strip, so they stay fast even on catalogs with thousands of variants.
+
+---
+
+## Permissions ​
+
+Access to Advanced Inventory follows the standard **Products** capability. Any role that can view and manage products — typically Store Manager and Administrator — can open the Inventory screen and adjust stock. Roles without the products capability do not see the Inventory menu entry at all.
+
+To customise this, see [Roles & Permissions](/guide/settings-configuration/roles-permissions/).
+
+---
+
+## Best Practices ​
+
+- **Always pick a specific reason** — "Other" works, but a typed-out custom reason helps Future You figure out what happened three months later.
+- **Prefer Add mode for routine movement** — it's safer when the list view might be slightly stale.
+- **Export before large bulk updates** — a CSV snapshot is the cheapest rollback if you need to undo a mistake.
+- **Review the history periodically** — patterns in Shrinkage or Damaged reasons often reveal process issues (bad packaging, theft, a warehouse bay with water damage).
 
 ---
 
@@ -130,80 +320,365 @@ Congratulations! FluentCart has now officially added all of those products and v
 
 # Configuring Product Pricing & Variations ​
 
-This guide provides a comprehensive walkthrough of the **Pricing** section in FluentCart. Here, you can define how your products are priced, offering everything from simple one-time payments to complex subscriptions with multiple variations.
+Pricing is one of the most powerful tools in your store — and FluentCart gives you the flexibility to set it up exactly the way your business needs. Whether you're selling a single digital download for a flat fee, a physical hoodie in five colors, or a software subscription with a free trial and installment plan, the **Pricing** section has you covered.
 
-To begin, navigate to the product you wish to configure and locate the **Pricing** section. You will need to select a pricing method from the dropdown menu at the top right: **Simple** or **Simple Variations**.
+This guide walks you through every field, toggle, and option you'll encounter — from simple one-time pricing to complex subscription variations with per-variation inventory and packaging details. You'll also learn how to configure shipping packages right from the product level, so your carrier rates are always accurate at checkout.
+
+Let's walk through it together, step by step.
+
+## Choosing Your Pricing Method ​
+
+To get started, open any product in edit mode and scroll down to the **Pricing** section. In the top right corner of that panel, you'll find a dropdown that lets you choose your pricing method:
+
+- **Simple** — For products sold as a single item with no variations (one price fits all)
+- **Simple Variations** — For products that come in multiple versions, like different colors, sizes, or license tiers, each with its own unique price
+
+![Screenshot of the Pricing section showing the Simple/Simple Variations dropdown](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-1.webp)
 
 ## Option 1: Simple Pricing ​
 
-Choose this method for products that are sold as a single item without any variations like size, color, or license tier. Within Simple Pricing, you can offer two distinct payment terms.
+Choose **Simple** when your product has one version and one price. A single ebook, a standard service, a fixed-rate subscription plan — this is the right mode for all of them.
 
-#### A. One-Time Payment ​
+Once you're in Simple mode, you'll notice a **Subscription** toggle at the top right of the **Pricing** panel. This is how you switch between the two payment modes:
 
-Select **One Time** from the "Select Payment Term" dropdown for products that customers will purchase with a single payment.
+- **Toggle OFF** → One-time purchase
+- **Toggle ON** → Recurring subscription
 
-- **Price:** The required selling price for the product.
-- **Compare at price:** (Optional) A higher original price that will be displayed with a strikethrough to indicate a sale.
-- **Calculate profit/cost:** (Optional) Enable this toggle to enter the **Cost per item**. FluentCart will use this to automatically calculate and display the **Profit** and **Margin**.
+### A. One-Time Payment ​
 
-![Screenshot of Product Types List Page](https://docs.fluentcart.com/images/product-types-creation/product-pricing/one-time-payment.webp)
+When the **Subscription** toggle is off, you're setting up a standard single-payment product. Here's what every field does:
 
-#### B. Subscription Payment ​
+#### Pricing Fields ​
 
-Select **Subscription** for products that require recurring payments.
+**Price** *(Required)* The selling price your customers will pay. This is the number that shows up on your store page, in the cart, and at checkout. Always set this before publishing.
 
-- **Installment Price:** The amount charged for each recurring payment.
-- **Compare at price:** (Optional) A higher price to show a discount on each installment.
-- **Interval:** The billing frequency (e.g., Yearly, Monthly, Daily).
-- **Enable installment payment:** Check this box to set a fixed number of payments.
+**Additional display prices** *(Collapsible section)* Click the chevron to expand this section and access the optional display price settings:
 
-- **Installment Count:** The total number of payments the customer will make.
-- **Total Price:** This field automatically calculates the total cost.
-- **Setup fee:** (Optional) Enable this to add a one-time initial fee that is charged at the beginning of the subscription.
-- **Calculate profit/cost:** (Optional) Toggle this on to track the cost and profit margin for the subscription.
+- **Compare at price** *(Optional)* — Enter a higher "original" price here and FluentCart will display it with a strikethrough next to your actual selling price. For example, setting **Price** to 
+```
+$12.90
+```
 
-![Screenshot of Product Types List Page](https://docs.fluentcart.com/images/product-types-creation/product-pricing/subscription-payment.webp)
+ and **Compare at price** to 
+```
+$15.00
+```
+
+ gives customers a clear visual that they're saving money — a small detail that can meaningfully boost conversions.
+- **Calculate profit/cost** *(Toggle — Optional)* — Toggle this on to track your internal profitability. Three fields will appear:
+
+- **Cost per item** — What it actually costs you to produce or source this product
+- **Profit** — Automatically calculated (Price minus Cost)
+- **Margin** — Your profit as a percentage, also auto-calculated
+
+> 💡 Pro Tip: The profit and cost fields are completely internal — your customers never see them. They're a smart way to make sure you're pricing for actual profit, not just revenue.
+
+---
+
+#### SKU ​
+
+The **SKU** section is collapsible — click it to expand and reveal the tracking field.
+
+**SKU (Stock Keeping Unit)** Enter a short, unique code for tracking this product in your inventory (e.g., 
+```
+HOO-ZIP-RED
+```
+
+). You can type your own or click **Generate SKU** to have FluentCart create one for you automatically. The field accepts up to 30 characters.
+
+> 📝 Note: Assigning SKUs makes inventory tracking, reporting, and order fulfillment significantly easier — especially if you manage stock across multiple platforms or warehouses.
+
+---
+
+#### Shipping ​
+
+The **Shipping** section at the bottom of the pricing panel is where you define how this product gets packaged and weighed for delivery. Getting this right means accurate carrier rates at checkout.
+
+**Physical Product** *(Toggle)* Turn this on if this is a tangible item that needs to be physically shipped to the customer. If it's a digital product, leave this off — FluentCart will skip shipping calculations entirely for that order.
+
+**Package** Select a pre-configured package from the dropdown. This is the box, envelope, or mailer your product ships in, and it helps FluentCart (and your connected shipping carriers) calculate accurate delivery rates based on real dimensions and weight. If no packages have been created yet, you can add one directly from here — see [Adding a New Package](#adding-a-new-package) below.
+
+**Product weight** Enter the weight of this product and choose the unit (**kg** or **lb**) from the dropdown next to the field. Accurate weights are essential for carrier-calculated shipping rates to work correctly.
+
+**Direct Checkout** *(Link)* This generates a unique URL that takes customers straight to the checkout page with this product pre-loaded — bypassing the product page and cart entirely. It's perfect for email campaigns, social media promotions, or any landing page where you want to reduce the number of steps to purchase.
+
+---
+
+#### Adding a New Package ​
+
+If you haven't set up any packages yet, click the **Package** dropdown and choose the option to add a new one. The **Add package** modal will appear.
+
+![Screenshot of the Shipping section showing Physical Product toggle, Package dropdown, and Product weight field](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-3.webp)
+
+Here's what to fill in:
+
+**Package type** Choose the shape that best matches how you ship this product:
+
+- **Box** — A standard rigid rectangular box
+- **Envelope** — A flat mailer, padded envelope, or document sleeve
+- **Soft package** — A poly mailer, bubble wrap, or any flexible pouch
+
+**Dimensions** Enter the **Length**, **Width**, and **Height** of the package, then select the measurement unit — **in** (inches) or **cm** (centimetres) — from the dropdown next to the fields.
+
+**Weight (empty)** The weight of the empty packaging itself. Enter the value and choose the unit (**kg** or **lb**). This gets added to your product's weight to give carriers an accurate total shipment weight.
+
+**Package name** Give your package a name you'll recognise later (e.g., 
+```
+Medium Box
+```
+
+, 
+```
+Small Mailer
+```
+
+). This is what appears in the **Package** dropdown across all your product pages.
+
+**Use as default package** *(Checkbox)* Check this box to make this package the automatic default when assigning packages to new products. It also becomes the fallback package used in checkout rate calculations.
+
+Once everything looks correct, click **Add package** to save it. Your new package will immediately appear in the **Package** dropdown.
+
+---
+
+### B. Subscription Payment ​
+
+Toggle the **Subscription** switch to the on position and the pricing fields transform to everything you need for a recurring billing setup.
+
+![Screenshot of Simple pricing — one-time payment showing Price, Compare at price, Calculate profit/cost, SKU, and Shipping sections](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-2.webp)
+
+**Installment Price** *(Required)* The amount charged to the customer on each billing cycle. The 
+```
+x1
+```
+
+ indicator next to the field reflects how many times this price is charged per interval — this updates automatically when you configure installments.
+
+**Additional display prices** *(Collapsible section)* Expand this section to access the subscription-specific display and billing options:
+
+- **Compare at price** *(Optional)* — A higher price displayed with a strikethrough, showing customers the value of the subscription rate.
+- **Interval** *(Required)* — How frequently the customer is billed. Choose from:
+
+- **Daily**
+- **Weekly**
+- **Monthly**
+- **Quarterly**
+- **Half Yearly (Six Month)**
+- **Yearly**
+- **Trial Days** *(Optional)* — Enter the number of free days before the first billing cycle begins. Set to 
+```
+0
+```
+
+ if you don't want a trial period. For example, 
+```
+14
+```
+
+ gives customers a two-week free trial — a powerful conversion tool for subscription products.
+
+**Enable installment payment** *(Checkbox — Optional)* Check this box if you want to offer the subscription for a fixed number of payments instead of recurring indefinitely. Once checked, two fields appear:
+
+- **Installment Count** — The total number of payments the customer will make (e.g., 
+```
+3
+```
+
+ for a three-month payment plan)
+- **Total Price** — Auto-calculated by multiplying **Installment Price** by **Installment Count**
+
+> 💡 Pro Tip: Installment plans are ideal for online courses, coaching programs, or any product where you want customers to pay over time with a clear end date — no cancellation anxiety for them, guaranteed revenue for you.
+
+**Setup fee** *(Toggle — Optional)* Enable this to charge a one-time fee at the very start of the subscription, in addition to the recurring price. When toggled on, two sub-fields appear:
+
+- **Setup fee label** — The name customers see for this charge at checkout (e.g., 
+```
+Activation Fee
+```
+
+, 
+```
+Enrollment Fee
+```
+
+, 
+```
+One-Time Setup
+```
+
+)
+- **Setup fee amount** — The dollar amount charged once at signup
+
+**Calculate profit/cost** *(Toggle — Optional)* Toggle on to track **Cost per item**, **Profit**, and **Margin** for internal reporting on this subscription product.
+
+> 📝 Note: The SKU and Shipping sections work exactly the same way in subscription mode as they do for one-time payments. Enter your product's SKU, select a package, and add the product weight — those details don't change based on billing type.
+
+---
 
 ## Option 2: Simple Variations ​
 
-Choose this method for products that come in multiple versions, such as different sizes for a t-shirt or different license tiers for software. This method allows you to create a table of variations, each with its own unique pricing.
+When your product comes in multiple versions — different colors, sizes, storage capacities, or license tiers — **Simple Variations** is the right choice. Instead of one price, you get a table of variations, and each one can have its own price, image, inventory level, SKU, and shipping details.
 
-#### Managing Variations in the Table ​
+Select **Simple Variations** from the pricing dropdown to activate this mode.
 
-- **Add a Variation:** Click the **+ Add more** button to add a new, blank variation row.
-- **Configure a Variation:** Click the **pencil icon** in the "Action" column to open a sidebar where you can configure the pricing for that specific variation.
-- **More Actions:** Click the **three-dot icon** to access additional options like **Duplicate**, get a **Direct Checkout** link, **Delete** the variation, or **Skip inventory** option.
+---
 
-![Screenshot of Product Types pricing Page](https://docs.fluentcart.com/images/product-types-creation/product-pricing/simple-variation.webp)
+### The Variations Table ​
 
-#### Configuring an Individual Variation ​
+Once you're in Simple Variations mode, you'll see a clean table listing all your current variations. Each row represents one version of your product.
 
-After clicking the pencil icon, a sidebar appears where you can configure the pricing for that specific version. Just like with Simple Pricing, each variation can be set as either a **One-Time** or **Subscription** payment.
+![Screenshot of the Simple Variations table showing drag handles, Image, Title, Price, Compare at price, and Action columns, with the + Add more button at the bottom](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-4.webp)
 
-**A. One-Time Payment for a Variation**
+Here's what each column means:
 
-- **Title & Type:** Verify the variation's **Title** and **Type**.
-- **Select Payment Term:** Choose **One Time**.
-- **Price:** Set the unique selling price for this specific variation.
-- **Compare at price:** (Optional) Enter a sale price for this variation.
-- **Calculate profit/cost:** (Optional) Track the cost and profit for this variation.
-- **Image:** Upload a unique image for this variation.
+- **⠿ (Drag handle)** — Click and drag any row to reorder your variations. The order here directly controls how options appear on your product page — put your most popular first.
+- **Image** — A thumbnail of this variation's unique photo. Click the image cell to upload or swap it.
+- **Title** — The variation name (e.g., 
+```
+Red
+```
 
-**B. Subscription Payment for a Variation**
+, 
+```
+Large
+```
 
-- **Title & Type:** Verify the variation's details.
-- **Select Payment Term:** Choose **Subscription**.
-- **Installment Price:** Set the recurring price for this subscription variation.
-- **Compare at price:** (Optional) Set a sale price for the recurring payment.
-- **Interval:** Select the billing frequency.
-- **Enable installment payment:** (Optional) Check to set a fixed number of payments.
-- **Setup fee:** (Optional) Add a one-time initial fee for this subscription variation.
-- **Calculate profit/cost:** (Optional) Track the cost and profit.
-- **Image:** Upload a unique image for this variation.
+, 
+```
+Pro License
+```
 
-![Screenshot of Product Types pricing Page](https://docs.fluentcart.com/images/product-types-creation/product-pricing/configure-indivisual-payment.webp)
+). You can edit this directly in the table.
+- **Price** — The selling price for this variation. Editable directly in the table row.
+- **Compare at price** — The original "was" price for this variation. Also editable inline.
+- **Action** — Two icons: a **pencil icon** to open the full variation editor, and a **three-dot icon** for quick actions.
 
-After configuring a variation, click the **Update Price** button to save its settings.
+**To add a new variation**, click the **+ Add more** button at the bottom of the table. A new blank row will appear — fill in the title and price inline, then click the pencil icon to configure the rest.
+
+**The three-dot icon** gives you these quick options:
+
+- **Duplicate** — Instantly copy this variation to use as a starting point for a new one
+- **Direct Checkout** — Generate a unique buy-now link for this specific variation
+- **Delete** — Permanently remove this variation from the product
+- **Skip inventory** — Exclude this variation from stock tracking if needed
+
+> 📝 Note: You can make quick edits to Title, Price, and Compare at price directly in the table rows. For everything else — images, inventory, subscriptions, SKU, and shipping — click the pencil icon to open the full editor.
+
+---
+
+### Editing a Variation ​
+
+Click the **pencil icon** in the Action column of any variation to open the full variation editor. This opens a full-screen panel with two sections:
+
+- **Left panel** — Displays all your variations in a scrollable list, showing the product name, its published status, and the total variant count. Click any variation in this list to jump to editing it without closing the panel — great for quickly moving between variations.
+- **Right panel** — The complete configuration area for the currently selected variation (highlighted with a green dot in the left list).
+
+At the bottom of the panel, you'll find three action buttons: **Discard** (undo any unsaved changes to this variation), **Cancel** (close the panel without saving), and **Update** (save all your changes).
+
+---
+
+#### A. One-Time Payment for a Variation (Subscription Toggle OFF) ​
+
+When the **Subscription** toggle in the variation editor is off, you're configuring a standard one-time purchase for this specific version.
+
+![Screenshot of the variation editor panel showing the White variation selected, with left variant list, Pricing fields, Inventory section, SKU section, and Shipping section](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-5.webp)
+
+**Variation image** Click the image thumbnail at the top left of the right panel to upload a photo specific to this variation. Showing customers exactly what color, size, or version they're selecting builds confidence and reduces returns.
+
+**Variation Title** The name of this specific version (e.g., 
+```
+White
+```
+
+, 
+```
+XL
+```
+
+, 
+```
+50 Sites License
+```
+
+). This is what customers see when browsing or selecting options on your product page.
+
+**Price** *(Required)* The selling price for this specific variation.
+
+**Additional display prices**
+
+- **Compare at price** *(Optional)* — A higher original price displayed with a strikethrough for this variation.
+- **Calculate profit/cost** *(Toggle — Optional)* — Toggle on to enter the **Cost per item** and see the auto-calculated **Profit** and **Margin** for this variation.
+
+**Inventory** The **Inventory** toggle lets you manage stock levels right here inside the variation editor — no need to navigate to a separate screen. When turned on, four fields appear:
+
+- **Total Stock** — The total number of units you have for this variation. Click the edit icon next to the number to make an adjustment.
+- **Available** — Units currently available for customers to purchase (read-only, auto-calculated)
+- **On Hold** — Units reserved in pending or processing orders (read-only)
+- **Delivered** — Units that have been fulfilled and shipped (read-only)
+
+> 💡 Pro Tip: Managing inventory at the variation level means you'll never accidentally oversell the Red hoodie just because you still have plenty of Teal ones. Each color stays tracked independently.
+
+**SKU** Expand the collapsible **SKU** section to assign a unique tracking code to this specific variation (e.g., 
+```
+HOO-WHT-M
+```
+
+). Click **Generate SKU** to have FluentCart create one automatically. Accepts up to 30 characters.
+
+**Shipping** Configure the physical shipping details for this specific variation:
+
+- **Physical Product** — Toggle on if this variation requires physical shipment
+- **Package** — Select the package type for this variation (different variations can use different package sizes)
+- **Product weight** — Enter the weight for this specific variation, with your preferred unit (**kg** or **lb**). Since different sizes or configurations often weigh differently, per-variation weight ensures your carrier rates stay accurate
+
+When you've finished configuring this variation, click **Update** to save all your changes.
+
+---
+
+#### B. Subscription Payment for a Variation (Subscription Toggle ON) ​
+
+Toggle the **Subscription** switch to the on position inside the variation editor to set this variation up as a recurring subscription — perfect for software license tiers, membership levels, or any product where different versions bill at different rates.
+
+![Screenshot of the variation editor showing the Subscription toggle ON for the Oxley variation, with Compare at price, Interval, Trial Days, Enable installment payment, Setup fee, and Calculate profit/cost fields visible](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-6.webp)
+
+All the same subscription fields are available here as in Simple pricing:
+
+**Price** *(Required)* The recurring charge for each billing cycle of this variation.
+
+**Compare at price** *(Optional)* A higher price shown with a strikethrough to communicate the subscription's value.
+
+**Interval** *(Required)* The billing frequency for this specific variation — choose from **Daily**, **Weekly**, **Monthly**, **Quarterly**, **Half Yearly**, or **Yearly**. Different variations can have different intervals, so you could offer a "Monthly" and a "Yearly" tier side by side.
+
+**Trial Days** *(Optional)* The number of free days before the first charge is made. Set to 
+```
+0
+```
+
+ for no trial. Offering even a 7-day trial on higher-priced tiers can meaningfully improve sign-up rates.
+
+**Enable installment payment** *(Checkbox — Optional)* Limit this variation's subscription to a fixed number of payments. When checked:
+
+- **Installment Count** — Total number of billing cycles before the subscription ends automatically
+- **Total Price** — Auto-calculated total (Installment Price × Count)
+
+**Setup fee** *(Toggle — Optional)* Charge a one-time fee at signup for this variation. When toggled on:
+
+- **Setup fee label** — The customer-facing name for this charge (e.g., 
+```
+Activation Fee
+```
+
+)
+- **Setup fee amount** — The one-time charge in dollars
+
+**Calculate profit/cost** *(Toggle — Optional)* Track your internal **Cost per item**, **Profit**, and **Margin** for this subscription variation.
+
+**Inventory**, **SKU**, and **Shipping** work exactly the same as described in the one-time variation section — configure stock levels, assign a unique SKU, and set the package and weight specific to this variation.
+
+When everything is set up the way you want, click **Update** to save your subscription variation.
+
+---
+
+You've now got the complete picture of how pricing and variations work in FluentCart. Whether you're running a simple one-product store or a rich catalog of subscription tiers with per-variation inventory and packaging, every setting is exactly where you need it.
 
 ---
 
@@ -265,92 +740,246 @@ Categorize and type your digital product for better structured organization.
 
 ### 4. Pricing & Variations ​
 
-This section is where you will set the price for your digital product. FluentCart provides two main methods: **Simple** (for products with no variations) and **Simple Variations** (for products with different versions).
+Pricing is where your digital product becomes a real offer — and FluentCart gives you the flexibility to sell it exactly the way your business works. A single ebook for a flat fee, a software tool with a free trial period, or a tiered product with a monthly plan and a discounted yearly plan side by side — this section handles all of it.
 
-First, use the dropdown menu at the top right of the pricing section to select the pricing method that fits your product.
+Open the **Pricing** panel and look at the dropdown in the top right corner. That's your first decision:
+
+- **Simple** — One product, one price. The right choice for a single item with no variations.
+- **Simple Variations** — Multiple versions of the same product (e.g., Standard, Pro, Agency), each with its own price and billing structure.
+
+Pick the method that matches your product, and the fields below will adapt.
+
+---
 
 #### Option A: Simple Pricing ​
 
-Choose this option when your product is a single item that does not have different versions. Within Simple Pricing, you can choose between two payment terms.
+Choose **Simple** when your digital product is a single item — one version, one price. A single ebook, a one-off template pack, a fixed-fee service download — this is the mode for all of them.
+
+Inside the **Pricing** panel you'll notice a **Subscription** toggle in the top right. This is how you switch between the two payment modes:
+
+- **Toggle OFF** → One-time purchase
+- **Toggle ON** → Recurring subscription
 
 **1. One-Time Payment**
 
-Select **One Time** from the "Select Payment Term" dropdown for products that customers purchase with a single payment.
+When the **Subscription** toggle is off, you're setting up a standard single-payment digital product.
 
-- **Price:** Set the required selling price for the product.
-- **Compare at price:** (Optional) Enter a higher original price to show a discount.
-- **Calculate profit/cost:** (Optional) Toggle this on to enter the item's cost for internal profit tracking.
+**Price** *(Required)* The selling price your customers will pay. This is the number that shows on your store page, in the cart, and at checkout.
+
+**Additional display prices** *(Collapsible section)* Click the chevron to expand this section:
+
+- **Compare at price** *(Optional)* — Enter a higher "original" price here and FluentCart will display it with a strikethrough next to your actual price. Setting **Price** to 
+```
+$12.90
+```
+
+ and **Compare at price** to 
+```
+$20.00
+```
+
+ gives customers a clear visual that they're saving — a reliable conversion boost for digital products.
+- **Calculate profit/cost** *(Toggle — Optional)* — Toggle this on to track internal margins. Three fields appear:
+
+- **Cost per item** — What it costs you to create or license this product
+- **Profit** — Auto-calculated (Price minus Cost)
+- **Margin** — Your profit as a percentage, also auto-calculated
+
+> 💡 Pro Tip: These profit fields are completely invisible to customers. They're a smart way to know whether your pricing is sustainable before you hit publish.
+
+**SKU** *(Collapsible section)* Expand the **SKU** section and enter a unique tracking code (e.g., 
+```
+EBOOK-MKT-01
+```
+
+). Click **Generate SKU** to have FluentCart create one automatically. Accepts up to 30 characters.
 
 **2. Subscription Payment**
 
-Select **Subscription** for products that require recurring payments.
+Toggle the **Subscription** switch on and the pricing fields transform into everything you need for recurring billing — ideal for software tools, membership content, course access, or any digital product your customers return to over time.
 
-- **Installment Price:** The amount for each recurring payment.
-- **Compare at price:** (Optional) A higher price to show a discount on each installment.
-- **Interval:** The billing frequency, such as monthly or yearly.
-- **Enable installment payment:** Check this box to set a fixed number of payments.
-- **Installment Count:** The total number of payments the customer will make.
-- **Total Price:** This automatically calculates the total cost based on the installment price and count.
-- **Setup fee:** (Optional) Toggle this on to add a one-time initial fee.
-- **Calculate profit/cost:** (Optional) Toggle this to track your cost and profit margin on the subscription.
+**Installment Price** *(Required)* The amount charged on each billing cycle. The 
+```
+x1
+```
 
-## ​
+ indicator next to the field reflects how many times this price is charged per interval — it updates automatically when you configure installments.
+
+**Additional display prices** *(Collapsible section)*
+
+- **Compare at price** *(Optional)* — A higher price displayed with a strikethrough, helping customers see the value of your subscription rate.
+- **Interval** *(Required)* — How frequently the customer is billed. Choose from:
+
+- **Daily**
+- **Weekly**
+- **Monthly**
+- **Quarterly**
+- **Half Yearly (Six Month)**
+- **Yearly**
+- **Trial Days** *(Optional)* — The number of free days before the first charge. Set to 
+```
+0
+```
+
+ for no trial. Even a 7-day trial on a higher-priced plan can meaningfully improve sign-up rates — it lowers the barrier to committing.
+
+**Enable installment payment** *(Checkbox — Optional)* Check this box to limit the subscription to a fixed number of payments instead of running indefinitely. Two fields appear:
+
+- **Installment Count** — The total number of payments (e.g., 
+```
+12
+```
+
+ for a year-long payment plan)
+- **Total Price** — Auto-calculated (Installment Price × Count)
+
+> 💡 Pro Tip: Installment plans work brilliantly for online courses or coaching programs — customers pay over time with a clear end date, eliminating cancellation anxiety while guaranteeing your revenue.
+
+**Setup fee** *(Toggle — Optional)* Enable this to charge a one-time fee at the very start of the subscription, in addition to the recurring price. Two sub-fields appear:
+
+- **Setup fee label** — The name customers see for this charge at checkout (e.g., 
+```
+Activation Fee
+```
+
+, 
+```
+Enrollment Fee
+```
+
+)
+- **Setup fee amount** — The one-time amount charged at signup
+
+**Calculate profit/cost** *(Toggle — Optional)* Toggle on to track **Cost per item**, **Profit**, and **Margin** for this subscription for internal reporting.
+
+> 📝 Note: The SKU section works exactly the same in subscription mode as it does for one-time payments. Digital products don't need a shipping package or physical weight — so those fields don't appear here.
+
+![Gif of Digital Product Edit Screen (Simple Pricing)](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-2.webp)
+
+---
 
 #### Option B: Simple Variations ​
 
-Choose this option when your product has multiple versions, like "Standard" and "Pro". This allows you to create a table of variations, each with its own pricing structure.
+When your digital product comes in multiple versions — a Standard and a Pro, different license tiers, or a monthly plan alongside a discounted yearly plan — **Simple Variations** is the right choice. Each variation gets its own price, image, and billing structure, completely independent from the others.
 
-**Managing the Variations Table**
+Select **Simple Variations** from the pricing dropdown to activate this mode.
 
-- **To Add a New Variation:** Click the 
+**The Variations Table**
+
+You'll see a clean table where each row is one version of your product:
+
+- **⠿ (Drag handle)** — Click and drag to reorder. The order here controls how options appear on your product page — put your most compelling tier first.
+- **Image** — A thumbnail for this variation. Click to upload or swap.
+- **Title** — The variation name (e.g., 
 ```
-+ Add more
+Standard
 ```
 
- button at the bottom to add a new row to the table.
-- **To Change Order:** Use the **six-dot icon** on the left to drag and reorder rows.
-- **Quick Edits:** You can edit the **Title**, **Price**, and **Compare** at price directly inside the table rows.
-- **To Configure a Variation:** To set the price and other details for a specific variation, click the pencil icon in the "Action" column. This will open a detailed configuration sidebar.
+, 
+```
+Pro
+```
 
-**The Advanced Action Menu (Three-Dot Icon):** Click the **three-dot** icon to access these new time-saving tools:
+, 
+```
+Agency
+```
 
-- **Duplicate:** Quickly copy an existing variation to make a new one.
-- **Copy Variation ID:** Get the unique **ID** for developers or shortcodes.
-- **Direct Checkout:** Create a link that sends customers straight to the payment page for this version.
+). Editable directly in the table.
+- **Price** — The selling price for this variation. Editable inline.
+- **Compare at price** — The "was" price for this variation, shown with a strikethrough. Also editable inline.
+- **Action** — A **pencil icon** to open the full variation editor, and a **three-dot icon** for quick options.
 
-**Configuring a Single Variation (Pencil Icon)**
+Click **+ Add more** at the bottom to add a new variation. A blank row appears — fill in the title and price, then use the pencil icon for everything else.
 
-After clicking the pencil icon, a sidebar appears where you can set up the pricing for that specific version. You must choose a payment term: **One Time** or **Subscription**.
+The **three-dot icon** gives you:
+
+- **Duplicate** — Copy this variation as a starting point for a new one
+- **Copy Variation ID** — Get the unique ID for developers or shortcode use
+- **Direct Checkout** — Generate a buy-now link for this specific version
+- **Delete** — Remove this variation permanently
+- **Skip inventory** — Exclude this variation from stock tracking
+
+> 📝 Note: Quick edits to Title, Price, and Compare at price can be made directly in the table rows. For images, subscription configuration, and everything else — click the pencil icon.
+
+**Editing a Variation (Pencil Icon)**
+
+Click the **pencil icon** to open the full variation editor — a full-screen panel with two sides:
+
+- **Left panel** — A scrollable list of all your variations. Click any item to jump to editing it without closing the panel.
+- **Right panel** — The complete configuration for the currently selected variation, highlighted with a green dot in the left list.
+
+At the bottom: **Discard** (undo unsaved changes), **Cancel** (close without saving), and **Update** (save all changes).
 
 **A. One-Time Payment for a Variation**
 
-This option is for a variation that is sold for a single payment.
+When the **Subscription** toggle in the editor is off, you're setting up a standard single-payment tier.
 
-- **Title:** The name of the specific variation (e.g., "File Manager Pro").
-- **Select Payment Term:** Choose **One Time** from the dropdown menu.
-- **Price:** Set the selling price for this variation.
-- **Compare at price:** An optional higher price to show a discount.
-- **Calculate profit/cost:** Toggle this on to enter the **Cost per item** and track the **Profit** and **Margin**.
-- **Image:** Upload a specific image for this variation.
+**Variation image** Click the thumbnail to upload a photo specific to this version — helpful for visually distinguishing tiers on your product page.
+
+**Variation Title** The name of this specific version (e.g., 
+```
+Standard
+```
+
+, 
+```
+Pro License
+```
+
+, 
+```
+Lifetime Access
+```
+
+).
+
+**Price** *(Required)* The selling price for this specific variation.
+
+**Additional display prices**
+
+- **Compare at price** *(Optional)* — A higher "was" price shown with a strikethrough for this variation.
+- **Calculate profit/cost** *(Toggle — Optional)* — Track **Cost per item**, **Profit**, and **Margin** for this variation internally.
 
 **B. Subscription Payment for a Variation**
 
-This option is for a variation that is sold on a recurring payment basis.
+Toggle the **Subscription** switch on inside the variation editor to configure this tier as a recurring plan — perfect for software license tiers or membership levels where different versions bill at different rates.
 
-- **Select Payment Term:** Choose **Subscription** from the dropdown menu.
-- **Price:** The price for each recurring payment.
-- **Compare at price:** An optional higher price to show a discount on the recurring payment.
-- **Interval:** The billing frequency (e.g., Yearly).
-- **Enable installment payment:** Check this to set a fixed number of payments.
-- **Setup fee:** Toggle this on to add a one-time initial fee for the subscription.
-- **Calculate profit/cost:** Toggle this to track profit and margin.
-- **Image:** Upload a unique image for this subscription variation.
+**Price** *(Required)* The recurring charge for each billing cycle of this variation.
 
-![Gif of Digital Product Edit Screen (Simple VAriation)](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/simple-variation2.gif)
+**Compare at price** *(Optional)* A higher price shown with a strikethrough to communicate value.
+
+**Interval** *(Required)* The billing frequency for this specific variation — choose from **Daily**, **Weekly**, **Monthly**, **Quarterly**, **Half Yearly**, or **Yearly**. Different variations can have different intervals, so you can offer a "Monthly" and a "Yearly" tier side by side on the same product page.
+
+**Trial Days** *(Optional)* Free days before the first charge. Set to 
+```
+0
+```
+
+ for no trial. Offering even a short trial on a higher-priced tier can meaningfully improve sign-up rates.
+
+**Enable installment payment** *(Checkbox — Optional)* Limit this variation to a fixed number of billing cycles:
+
+- **Installment Count** — Total payments before the subscription ends automatically
+- **Total Price** — Auto-calculated total (Installment Price × Count)
+
+**Setup fee** *(Toggle — Optional)* Charge a one-time fee at signup for this variation:
+
+- **Setup fee label** — The customer-facing name (e.g., 
+```
+Activation Fee
+```
+
+)
+- **Setup fee amount** — The one-time amount
+
+**Calculate profit/cost** *(Toggle — Optional)* Track your internal **Cost per item**, **Profit**, and **Margin** for this subscription variation.
+
+![Gif of Digital Product Edit Screen (Simple Variation)](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/simple-variation2.gif)
 
 INFO
 
-To learn more about variation pricing setups, see the [Configure Product Pricing](/guide/product-types-creation/configuring-product-pricing) guide.
+For the complete, field-by-field reference on every pricing option — including the full breakdown of all interval choices, installment plans, setup fees, trial periods, and the Add Package walkthrough — see the [Configuring Product Pricing & Variations](/guide/product-types-creation/configuring-product-pricing) guide.
 ### 5. Downloadable Asset(s) ​
 
 This crucial section is where you manage the actual digital files customers will receive.
@@ -458,18 +1087,96 @@ Categorize and type your product for better organization.
 
 ### 5. Pricing & Variations ​
 
-This section is crucial for defining the different license tiers and their pricing.
+Licensed products live and breathe through their tiers — and this is the section where you bring that structure to life. Each license tier you offer (Single Site, 5 Sites, 50 Sites, Lifetime, Yearly) is defined as its own **variation**, complete with its own price, payment model, and optional setup fee. Think of the Variations table as your tier menu: it's what customers see and choose from when they land on your product page.
 
-- **Type Selection:** When [configuring product variations](/guide/product-types-creation/creating-digital-products.html#4-pricing-variatio), ensure **"Digital"** and/or **"Subscription"** (if it's a recurring license) is selected as the product type within the pricing modal for your variants.
-- **Pricing Table:** You'll define each license tier as a variation (e.g., "Single Site Yearly License", "50 Sites Lifetime License"). - **Image:** You can upload a specific image for each license variant.
-- **Title:** The name of the license tier.
-- **Price:** The selling price for this specific license variant.
-- **Compare at price:** (Optional) A higher, struck-through price.
-- **Payment Term:**- **"One Time"** for lifetime licenses.
-- **"Yearly"**, **"Monthly"**, **"Weekly"**, or **"Daily"** for subscription-based licenses.
-- **Setup Fee:** (Optional) An initial fee for subscriptions.
-- **Calculate Profit/Cost:** Enter the **"Cost per item"** for each license variant to track profitability.
+Select **Simple Variations** from the pricing dropdown in the top right of the **Pricing** panel. This is the right mode for virtually all licensed products, since each tier needs independent pricing and billing.
 
+**The Variations Table**
+
+Once in Simple Variations mode, you'll see a clean table where each row is one license tier. The columns give you a quick overview at a glance:
+
+- **⠿ (Drag handle)** — Drag to reorder tiers. The order here is the order customers see — put your most popular or recommended plan first.
+- **Image** — A thumbnail specific to this tier. Click to upload or swap.
+- **Title** — The name of this license tier (e.g., 
+```
+Single Site Yearly
+```
+
+, 
+```
+5 Sites Lifetime
+```
+
+). Editable directly in the table.
+- **Price** — The selling price for this tier. Editable inline.
+- **Compare at price** — The "was" price shown with a strikethrough for this tier. Also editable inline.
+- **Action** — A **pencil icon** to open the full tier editor, and a **three-dot icon** for quick actions (Duplicate, Direct Checkout, Delete).
+
+Click **+ Add more** at the bottom to add a new tier. Fill in the title and price inline, then click the pencil icon to configure the billing details.
+
+> 📝 Note: You can make quick edits to Title, Price, and Compare at price directly in the table. For payment term, subscription settings, setup fee, and SKU — you'll need to open the full editor with the pencil icon.
+
+**Editing a License Tier (Pencil Icon)**
+
+Click the **pencil icon** on any tier row to open the full variation editor. This is where you define exactly how each license tier is paid for.
+
+**Variation image** Upload a visual specific to this tier — helpful if your tiers have distinct branding, like a "Pro" badge or different logo treatment.
+
+**Variation Title** The customer-facing name of this tier (e.g., 
+```
+Single Site Annual License
+```
+
+, 
+```
+Agency – 50 Sites
+```
+
+, 
+```
+Lifetime Access
+```
+
+).
+
+**Price** *(Required)* The selling price for this specific tier.
+
+**Compare at price** *(Optional)* A higher original price shown with a strikethrough — great for communicating annual savings when customers compare your monthly and yearly plans.
+
+**Payment Term — the heart of license pricing** This is where you tell FluentCart *how* this tier is paid for. Your options are:
+
+- **One Time** — For lifetime licenses. The customer pays once and owns access permanently. No recurring billing, no renewal reminders.
+- **Subscription** *(toggle ON)* — For renewable licenses. When you switch to subscription mode, the full recurring billing setup becomes available:
+
+- **Interval** *(Required)* — How frequently the license renews: **Daily**, **Weekly**, **Monthly**, **Quarterly**, **Half Yearly**, or **Yearly**. A "Yearly" license renews once per year; a "Monthly" license renews each month.
+- **Trial Days** *(Optional)* — Free days before the first charge begins. Set to 
+```
+0
+```
+
+ for no trial. Even a 7-day trial can meaningfully lift conversion rates for higher-priced tiers.
+- **Enable installment payment** *(Optional)* — Limit the subscription to a fixed number of payments instead of renewing indefinitely: - **Installment Count** — Total billing cycles before the license ends automatically
+- **Total Price** — Auto-calculated (Price × Count)
+- **Setup fee** *(Toggle — Optional)* — A one-time charge at the very start of the subscription, in addition to the recurring price: - **Setup fee label** — What customers see at checkout (e.g., 
+```
+Activation Fee
+```
+
+, 
+```
+Onboarding Fee
+```
+
+)
+- **Setup fee amount** — The one-time amount
+
+**Calculate profit/cost** *(Toggle — Optional)* Toggle on to enter the **Cost per item** for this tier and track your **Profit** and **Margin** internally. Useful when you factor in support, hosting, or delivery costs per license.
+
+> 💡 Pro Tip: For products with both a "Monthly" and a "Yearly" tier, set up two separate variations — each with its own Interval. Customers can then compare both options side by side on your product page. Set the yearly tier as your default variant and watch the upgrade rate improve.
+
+INFO
+
+For the complete, field-by-field reference on every pricing option — including all subscription interval choices, installment configuration, trial days, and setup fees — see the [Configuring Product Pricing & Variations](/guide/product-types-creation/configuring-product-pricing) guide.
 ### 6. Downloadable Asset(s) ​
 
 This section is where you manage the digital files associated with your licensed product.
@@ -729,51 +1436,177 @@ By using these taxonomies, you ensure customers can easily find and filter your 
 
 ### 4. Pricing & Variations ​
 
-This section is where you will set the price for your product. FluentCart offers two methods, depending on whether the product has different versions (like size or color) or is a single item.
+This is where your physical product gets its price tag — and FluentCart gives you the control to set it up exactly how your inventory works. Selling one style at a fixed rate? Or a hoodie that comes in six colorways, each with its own weight and box size? Either way, this section has you covered.
 
-First, use the dropdown menu at the top right of the pricing section to select either **Simple** or **Simple Variations**.
+Open the **Pricing** panel and look at the dropdown in the top right corner — that's where everything starts:
 
-#### Simple (For Products with No Variations) ​
+- **Simple** — One version, one price. The right choice for any product with no variations.
+- **Simple Variations** — Multiple versions of the same product, each with its own price, image, SKU, and shipping details.
 
-Choose this option when your product is a single item with only one price and configuration. For example, a book or a standard coffee mug.
+Pick the method that matches your product structure, and the fields below will adapt accordingly.
 
-You will see the following fields:
+![Screenshot of the Pricing section showing the Simple/Simple Variations dropdown](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-1.webp)
 
-- **Select Payment Term:** Choose how the customer will be charged. For standard, single purchases, select One Time.
-- **Price:** (Required) The main selling price for the product.
-- **Compare at price:** (Optional) An original or higher price that will be shown with a strikethrough on your storefront to indicate a sale or discount.
-- **Calculate profit/cost:** Toggle this on to enter the base cost of the item. FluentCart will use this to automatically calculate your profit and margin for internal reporting.
-- **SKU:** Enter a Stock Keeping Unit. This is a unique internal code used to identify and track this specific item in your inventory. You can also click the "Generate SKU" link to automatically create a unique identifier.
-- **Fulfillment Type:** (Required) Select how this product is delivered to the customer. For physical items that require shipping, choose Physical.
+---
 
-![Screenshot of Simple Price](https://docs.fluentcart.com/images/product-types-creation/Creating-Physical-Products/simple-pricing-1.webp)
+#### Simple Pricing ​
+
+Choose **Simple** when your physical product is a single item — one style, one size, one price. A standard poster, a single-run tote bag, or a fixed-rate boxed kit — this is the right mode.
+
+In the top right of the **Pricing** panel you'll also see a **Subscription** toggle. Leave it off for a standard one-time purchase, or switch it on if you're selling a recurring physical product like a monthly subscription box.
+
+**One-Time Payment**
+
+**Price** *(Required)* The amount customers will pay. This appears on your product page, in the cart, and at checkout. Always set this before you publish.
+
+**Additional display prices** *(Collapsible section)* Click the chevron to expand and reveal these optional fields:
+
+- **Compare at price** *(Optional)* — Enter a higher "original" price here and FluentCart will display it with a strikethrough next to your actual selling price. Setting **Price** to 
+```
+$39.00
+```
+
+ and **Compare at price** to 
+```
+$55.00
+```
+
+, for example, gives customers a clear visual that they're saving — a small detail that can meaningfully lift conversions.
+- **Calculate profit/cost** *(Toggle — Optional)* — Turn this on to track your internal margins. Three fields appear:
+
+- **Cost per item** — What this product actually costs you to source or produce
+- **Profit** — Auto-calculated (Price minus Cost)
+- **Margin** — Your profit as a percentage, also auto-calculated
+
+> 💡 Pro Tip: Cost and profit fields are entirely internal — your customers will never see them. Use them to make sure you're pricing for real profit, not just revenue.
+
+**SKU** *(Collapsible section)* Click to expand and enter a unique tracking code for this product (e.g., 
+```
+SHOE-WHT-42
+```
+
+). You can type your own or click **Generate SKU** to have FluentCart create one automatically. Accepts up to 30 characters.
+
+> 📝 Note: Assigning SKUs makes inventory tracking, order fulfillment, and reporting significantly easier — especially when you're managing stock across multiple platforms or warehouses.
+
+**Shipping**
+
+Because this is a physical item, this section is critical. Getting it right means accurate carrier rates at checkout.
+
+- **Physical Product** *(Toggle)* — Make sure this is on. It tells FluentCart to apply shipping calculations to this product at checkout. If you're selling a hybrid product that also includes a digital download, you can still leave this on — just upload the digital asset separately.
+- **Package** — Select the pre-configured package this product ships in (the box, mailer, or envelope your carrier will use to calculate delivery rates). If no packages exist yet, click the dropdown and choose the option to add a new one — see [Adding a New Package](/guide/product-types-creation/configuring-product-pricing#adding-a-new-package) in the full pricing guide for a complete step-by-step walkthrough.
+
+---
+
+#### Simple Variations ​
+
+When your physical product comes in multiple versions — different colors, sizes, materials, or configurations — **Simple Variations** is the right choice. Each variation gets its own price, image, SKU, and shipping details, tracked completely independently so you never mix up stock between versions.
+
+Select **Simple Variations** from the pricing dropdown to activate this mode.
+
+**The Variations Table**
+
+You'll see a clean table where each row represents one version of your product:
+
+- **⠿ (Drag handle)** — Click and drag to reorder. The order here is the order customers see on your product page — put your most popular option first.
+- **Image** — A thumbnail for this variation. Click to upload or swap it.
+- **Title** — The variation name (e.g., 
+```
+Red
+```
+
+, 
+```
+XL
+```
+
+, 
+```
+Classic Fit
+```
+
+). Editable directly in the table.
+- **Price** — The selling price for this variation. Editable inline.
+- **Compare at price** — The "was" price, shown with a strikethrough. Also editable inline.
+- **Action** — A **pencil icon** to open the full variation editor, and a **three-dot icon** for quick options.
+
+Click **+ Add more** at the bottom to create a new variation. A blank row appears — fill in the title and price inline, then use the pencil icon to configure the rest.
+
+The **three-dot icon** gives you these quick actions:
+
+- **Duplicate** — Copy this variation to use as a starting point for a new one
+- **Direct Checkout** — Generate a buy-now link for this specific version
+- **Delete** — Remove this variation permanently
+- **Skip inventory** — Exclude this variation from stock tracking if needed
+
+> 📝 Note: You can make quick edits to Title, Price, and Compare at price directly in the table rows. For everything else — images, inventory, per-variation shipping — click the pencil icon to open the full editor.
+
+**Editing a Variation**
+
+Click the **pencil icon** on any row to open the full variation editor — a panel with two sides:
+
+- **Left panel** — A scrollable list of all your variations, each showing the product name, status, and total variant count. Click any item to jump to editing it without closing the panel.
+- **Right panel** — The complete configuration area for the currently selected variation, highlighted with a green dot in the left list.
+
+At the bottom: **Discard** (undo unsaved changes to this variation), **Cancel** (close without saving), and **Update** (save all changes).
+
+Here's what you configure on the right:
+
+**Variation image** Click the thumbnail to upload a photo specific to this version. Showing customers exactly what color, size, or material they're selecting builds confidence and reduces returns.
+
+**Variation Title** The name of this specific version (e.g., 
+```
+White
+```
+
+, 
+```
+XL
+```
+
+, 
+```
+Slim Fit
+```
+
+).
+
+**Price** *(Required)* The selling price for this specific variation.
+
+**Additional display prices**
+
+- **Compare at price** *(Optional)* — A higher "was" price shown with a strikethrough for this variation.
+- **Calculate profit/cost** *(Toggle — Optional)* — Track **Cost per item**, **Profit**, and **Margin** for this variation internally.
+
+**Inventory** Toggle **Inventory** on to manage stock directly inside the variation editor — no need to navigate to a separate screen. Four fields appear:
+
+- **Total Stock** — Total units for this variation. Click the edit icon to adjust.
+- **Available** — Units available for customers to purchase (read-only, auto-calculated)
+- **On Hold** — Units reserved in pending or processing orders (read-only)
+- **Delivered** — Units fulfilled and shipped (read-only)
+
+> 💡 Pro Tip: Per-variation inventory means you'll never oversell the Red hoodie just because you still have plenty of Teal ones. Every version stays tracked independently.
+
+**SKU** Expand the collapsible **SKU** section to assign a unique tracking code to this variation (e.g., 
+```
+HOO-RED-M
+```
+
+). Click **Generate SKU** for an auto-generated code. Accepts up to 30 characters.
+
+**Shipping** Because different sizes and colorways often have different weights and dimensions, each variation gets its own shipping configuration:
+
+- **Physical Product** *(Toggle)* — On by default for physical products.
+- **Package** — Select the box or mailer for this specific variation. Different sizes can ship in different packages, so a small item and a large item don't have to share the same box.
+- **Product weight** — Enter the weight for this variation with your preferred unit (**kg** or **lb**). Per-variation weights keep your carrier rates accurate when sizes genuinely differ.
+
+When you're done, click **Update** to save all your changes.
+
+![Screenshot of the variation editor showing the left panel list and right panel configuration](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-5.webp)
 
 INFO
 
-To learn more about variation pricing setups, see the [Configure Product Pricing](/guide/product-types-creation/configuring-product-pricing) guide.
-#### Simple Variations (For Products with Different Versions) ​
-
-Choose this option when your product comes in different versions, such as t-shirts in various sizes and colors. This allows you to set a different price, image, SKU, and fulfillment type for each specific variation.
-
-This will display a table where each row represents a single variation. You can click **+ Add more** to create a new variation. The main table columns give you a quick overview of the Image, Title, Price, and Compare at price.
-
-#### Managing a Variation (Edit Panel) ​
-
-Clicking the **Edit Icon (Pencil)** in the Action column opens a detailed settings sidebar panel for that specific variation. Here you will configure:
-
-- **Title:** (Required) Name the variation clearly (e.g., "Zipper Hoodie - Red").
-- **SKU:** A unique Stock Keeping Unit identifier to track this specific variation in your inventory. You can also click the "Generate SKU" link to automatically create a unique identifier.
-- **Fulfillment Type:** (Required) Select how this specific variation is delivered to the customer (e.g., Physical).
-- **Select Payment Term:** Choose the billing cycle for this variation (e.g., One Time).
-- **Price:** (Required) Set the specific selling price for this individual variation.
-- **Compare at price:** (Optional) Set an original or higher price to indicate a sale for this specific variation.
-- **Calculate profit/cost:** Toggle this on to enter the base cost of this item to track your profit margins.
-- **Image:** Upload a specific image for this variation so customers can see exactly what they are selecting.
-
-![Screenshot of Simple Variation](https://docs.fluentcart.com/images/product-types-creation/Creating-Physical-Products/variation-pricing-2.webp)
-
-To add another version of your product, click the **+ Add more** button to create a new row in the table.
-
+For the complete field-by-field reference — including the full subscription setup for physical subscription boxes, installment plans, trial days, setup fees, and a step-by-step walkthrough of the Add Package modal — see the [Configuring Product Pricing & Variations](/guide/product-types-creation/configuring-product-pricing) guide.
 ### 5. Inventory Management ​
 
 To track the stock for your product, first, make sure the [Stock Management](/guide/product-types-creation/inventory-management) feature is enabled from the settings section.
@@ -913,35 +1746,136 @@ This section helps you organize and tag your bundle for better storefront filter
 
 ### 5. Pricing & Variations ​
 
-Set the price for your bundle using one of two methods:
+A bundle is only as compelling as the deal it represents — and this section is where you make that deal concrete. Whether you're selling a single all-in-one package at one fixed price, or offering multiple tiers of bundles (a Starter Pack, a Professional Pack, and an Ultimate Pack, for instance), FluentCart gives you the same powerful pricing tools here as you'd have on any individual product.
 
-### Simple (No Variations) ​
+Open the **Pricing** panel and look at the dropdown in the top right corner:
 
-Choose this if the bundle is a single package with one price. You can set the **Price**, an optional **Compare at price** to show savings, and toggle **Manage profit/cost** for internal tracking.
+- **Simple** — One bundle, one price. The right choice when your bundle is a single, fixed package with no variations.
+- **Simple Variations** — Multiple versions of the bundle, each with its own price, image, and stock level.
+
+---
+
+#### Simple Pricing (One Bundle, One Price) ​
+
+Choose **Simple** when your bundle is a single, non-varying package — everything in the box for one price.
+
+**Price** *(Required)* The amount customers pay for the complete bundle. This is what shows on your store page, in the cart, and at checkout.
+
+**Additional display prices** *(Collapsible section)* Click the chevron to expand:
+
+- **Compare at price** *(Optional)* — Enter the combined individual retail price of all bundled items here. FluentCart will display it with a strikethrough next to your bundle price, immediately showing customers how much they're saving by buying the bundle. This single field can be one of your most powerful conversion tools on a bundle page.
+- **Calculate profit/cost** *(Toggle — Optional)* — Toggle on to track the total cost of goods in this bundle against your selling price. Three fields appear:
+
+- **Cost per item** — The combined cost of all items in the bundle
+- **Profit** — Auto-calculated (Price minus Cost)
+- **Margin** — Your profit as a percentage, also auto-calculated
+
+> 💡 Pro Tip: Use Compare at price to tell the story of the bundle's value instantly. If your bundle includes three products worth $45, $30, and $25 individually, set the Compare at price to $100 and your bundle price to $69 — customers immediately understand the deal without reading a word.
+
+**SKU** *(Collapsible section)* Assign a unique tracking code to this bundle (e.g., 
+```
+BUNDLE-STARTER-01
+```
+
+). Click **Generate SKU** to auto-generate one. Accepts up to 30 characters.
+
+**Direct Checkout** *(Link)* Generates a unique URL that takes customers straight to checkout with this bundle pre-loaded. Great for promotional landing pages, email campaigns, or limited-time offers where you want to reduce every step between interest and purchase.
+
+![Screenshot of Simple Price for Bundle](https://docs.fluentcart.com/assets/simple-price.DliAvTLH.gif)
+
+---
+
+#### Simple Variations (Multiple Bundle Tiers) ​
+
+When you offer different levels of bundling — for example, a Starter Pack (2 items), a Professional Pack (5 items), and an Ultimate Pack (everything) — **Simple Variations** lets you price and manage each tier independently.
+
+Select **Simple Variations** from the pricing dropdown to activate this mode.
+
+**The Variations Table**
+
+Each row in the table represents one bundle tier:
+
+- **⠿ (Drag handle)** — Drag to reorder. Put your best-value or most popular bundle tier at the top.
+- **Image** — A thumbnail that represents this specific bundle tier. Click to upload or swap — use a photo that shows exactly what's in the box.
+- **Title** — The name of this tier (e.g., 
+```
+Starter Pack
+```
+
+, 
+```
+Professional Pack
+```
+
+, 
+```
+Ultimate Bundle
+```
+
+). Editable directly in the table.
+- **Price** — The selling price for this bundle tier. Editable inline.
+- **Compare at price** — The combined individual retail price, shown with a strikethrough. Editable inline.
+- **Action** — A **pencil icon** to open the full tier editor, and a **three-dot icon** for quick options.
+
+Click **+ Add more** at the bottom to add a new bundle tier. Fill in the title and price inline, then use the pencil icon for the rest.
+
+The **three-dot icon** gives you:
+
+- **Duplicate** — Copy this bundle tier as a starting point for a new one
+- **Direct Checkout** — Generate a buy-now link that bypasses the product page entirely, sending customers straight to checkout for this specific tier
+- **Delete** — Remove this bundle tier permanently
+- **Skip inventory** — Exclude this tier from stock tracking if you don't need to limit how many bundles you sell
+
+> 📝 Note: Quick edits to Title, Price, and Compare at price can be made directly in the table rows. To set up images, inventory tracking, and SKUs per tier — click the pencil icon to open the full editor.
+
+**Editing a Bundle Tier (Pencil Icon)**
+
+Click the **pencil icon** on any tier to open the variation editor — a full-screen panel with a variation list on the left and the configuration area on the right.
+
+Here you can set:
+
+**Variation image** Upload an image specific to this bundle tier — showing the actual items included helps customers decide which tier is right for them.
+
+**Variation Title** The name of this specific tier (e.g., 
+```
+Starter Pack
+```
+
+, 
+```
+Agency Bundle
+```
+
+).
+
+**Price** *(Required)* The selling price for this specific bundle tier.
+
+**Additional display prices**
+
+- **Compare at price** *(Optional)* — The combined retail value of everything in this tier, shown with a strikethrough.
+- **Calculate profit/cost** *(Toggle — Optional)* — Track **Cost per item**, **Profit**, and **Margin** for this specific bundle tier.
+
+**Inventory** Toggle **Inventory** on if you want to limit how many of this bundle tier can be sold:
+
+- **Total Stock** — Total units available for this tier. Click the edit icon to adjust.
+- **Available** — Units currently available (read-only, auto-calculated)
+- **On Hold** — Units reserved in pending orders (read-only)
+- **Delivered** — Units fulfilled (read-only)
+
+**SKU** Expand the collapsible **SKU** section to assign a unique tracking code to this bundle tier (e.g., 
+```
+BUNDLE-PRO-01
+```
+
+). Click **Generate SKU** to auto-generate one.
+
+When you're done, click **Update** to save all your changes for this tier.
+
+![Screenshot of Simple Variation for Bundle](https://docs.fluentcart.com/assets/simple-variation.BvWpgyew.gif)
 
 INFO
 
-To learn more about variation pricing setups, see the [Configure Product Pricing](/guide/product-types-creation/configuring-product-pricing) guide.![Screenshot of Simple Price](https://docs.fluentcart.com/assets/simple-price.DliAvTLH.gif)
-
-#### Simple Variations (For Products with Different Versions) ​
-
-Choose this option when your product comes in different versions, such as t-shirts in various sizes and colors. This will allow you to set a different price, image, and stock level for each variation.
-
-This will display a table where each row is a single variation.
-
-- **Image:** Upload a specific image for each variation (e.g., a photo of the red shirt).
-- **Title:** Name the variation clearly.
-- **Price:** Set the specific price for this individual variation.
-- **Compare at price:** (Optional) Set a sale price for this specific variation.
-- **Action:** This column contains icons to manage each variation row. - **Edit Icon (Pencil):** Click this to edit the pricing variation's details.
-- **More Options (Three Dots):** Click this to open a menu with more options: - **Skip inventory:** Check this box if you do not want to track stock for this specific variation.
-- **Duplicate:** Click this to create an exact copy of this variation row.
-- **Direct Checkout:** Get a direct link to purchase this specific variation, bypassing the main product page.
-
-![Screenshot of Simple Variation](https://docs.fluentcart.com/assets/simple-variation.BvWpgyew.gif)
-
-To add another version of your product, click the **+ Add more** button to create a new row in the table.
-
+For the complete field-by-field reference on every pricing option — including subscription setup, installment plans, trial days, setup fees, and the Add Package walkthrough — see the [Configuring Product Pricing & Variations](/guide/product-types-creation/configuring-product-pricing) guide.
 ### 6. Inventory Management ​
 
 To track stock, ensure **Stock Management** is enabled in your settings.
@@ -1040,6 +1974,9 @@ Proper **inventory management** is essential for any e-commerce store, whether y
 
 This guide will show you how to enable and manage inventory for your products.
 
+Need a central stock workspace, bulk updates, or an audit trail?
+
+For a dedicated **Inventory** admin screen with cross-catalog views, bulk stock updates, adjustment history, and exports, enable the **Advanced Inventory** module. See [Advanced Inventory](/guide/product-types-creation/advanced-inventory) for the full guide.
 ### Step 1: Enable the Stock Management Feature ​
 
 Before you can manage inventory for individual products, you must first activate the main Stock Management feature for your entire store.

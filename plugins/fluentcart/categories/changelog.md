@@ -12,6 +12,54 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCart.
 
+## FluentCart v1.3.21 ​
+
+*Released on April 22, 2026*
+
+✨ Newly Added🐞 Bug fixesmarkdown
+```
+• Adds Cloudflare R2 storage
+• Adds Public access management in S3
+```markdown
+```
+• Fixes PDF template block styling issue
+• Fixes Warning for orderId null in checkout issue
+• Fixes PayPal checkout security to ensure pricing integrity
+• Fixes SKU duplicate issue in product variation creation
+• Fixes Provider badge not displaying correctly on files
+• Fixes S3 file deletion behavior
+```
+## FluentCart v1.3.20 ​
+
+*Released on April 21, 2026*
+
+✨ Newly Added🐞 Bug fixesmarkdown
+```
+• Adds EDD migrator
+```markdown
+```
+• Fixes Products SKU index naming consistency issue
+• Fixes Allow multiple variations without SKU issue
+• Fixes Bundle product title with variation title visibility in checkout
+• Fixes Block editor CSS loading inside the editor iframe issue
+• Fixes Related Products block inspector layout and image overflow issues
+• Fixes Invoice and Packing sub-menus issue
+```
+## FluentCart v1.3.19 ​
+
+*Released on April 20, 2026*
+
+✨ Newly Added🐞 Bug fixesmarkdown
+```
+• Adds New UI for variation editing
+• Adds Packaging support and weight attributes for products
+• Adds Search support in product list via simple filters
+• Adds fluent_cart/product_url_with_front filter for post types register
+```markdown
+```
+• Fixes Pricing format in price input fields
+• Fixes Saved view conflicts with filters
+```
 ## FluentCart v1.3.18 ​
 
 *Released on April 15, 2026*

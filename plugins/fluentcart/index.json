@@ -2,10 +2,23 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-04-19T06:45:16.790Z",
-  "total_pages": 116,
+  "last_scraped": "2026-04-26T06:49:07.807Z",
+  "total_pages": 129,
   "failed_urls_count": 8,
   "sections": [
+    {
+      "title": "Browsing History",
+      "slug": "browsing-history",
+      "url": "https://docs.fluentcart.com/guide/browsing-history/",
+      "file": "categories/browsing-history.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Browsing History ​",
+          "url": "https://docs.fluentcart.com/guide/browsing-history/"
+        }
+      ]
+    },
     {
       "title": "Changelog",
       "slug": "changelog",
@@ -201,6 +214,43 @@
       ]
     },
     {
+      "title": "Migration",
+      "slug": "migration",
+      "url": "https://docs.fluentcart.com/guide/migration/",
+      "file": "categories/migration.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "Migrating from Easy Digital Downloads ​",
+          "url": "https://docs.fluentcart.com/guide/migration/edd/"
+        },
+        {
+          "title": "Backward Compatibility ​",
+          "url": "https://docs.fluentcart.com/guide/migration/edd/backward-compatibility"
+        },
+        {
+          "title": "Developer Mode ​",
+          "url": "https://docs.fluentcart.com/guide/migration/edd/developer-mode"
+        },
+        {
+          "title": "WP-CLI Reference ​",
+          "url": "https://docs.fluentcart.com/guide/migration/edd/edd-cli"
+        },
+        {
+          "title": "Migrating to FluentCart from Easy Digital Downloads ​",
+          "url": "https://docs.fluentcart.com/guide/migration/edd/edd-migration"
+        },
+        {
+          "title": "Troubleshooting ​",
+          "url": "https://docs.fluentcart.com/guide/migration/edd/troubleshooting"
+        },
+        {
+          "title": "What Gets Migrated ​",
+          "url": "https://docs.fluentcart.com/guide/migration/edd/what-is-migrated"
+        }
+      ]
+    },
+    {
       "title": "Payments Checkout",
       "slug": "payments-checkout",
       "url": "https://docs.fluentcart.com/guide/payments-checkout/",
@@ -262,11 +312,15 @@
       "slug": "product-types-creation",
       "url": "https://docs.fluentcart.com/guide/product-types-creation/",
       "file": "categories/product-types-creation.md",
-      "page_count": 14,
+      "page_count": 15,
       "pages": [
         {
           "title": "Product Types & Creation ​",
           "url": "https://docs.fluentcart.com/guide/product-types-creation/"
+        },
+        {
+          "title": "Advanced Inventory ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/advanced-inventory"
         },
         {
           "title": "Bulk Product Import ​",
@@ -465,7 +519,7 @@
       "slug": "shipping",
       "url": "https://docs.fluentcart.com/guide/shipping/",
       "file": "categories/shipping.md",
-      "page_count": 5,
+      "page_count": 6,
       "pages": [
         {
           "title": "Shipping Overview ​",
@@ -480,12 +534,37 @@
           "url": "https://docs.fluentcart.com/guide/shipping/configuring-shipping-zones"
         },
         {
+          "title": "Managing Packages ​",
+          "url": "https://docs.fluentcart.com/guide/shipping/packages"
+        },
+        {
           "title": "Setting Up Shipping Methods ​",
           "url": "https://docs.fluentcart.com/guide/shipping/setting-up-shipping-methods"
         },
         {
           "title": "Understanding and Using Shipping Classes ​",
           "url": "https://docs.fluentcart.com/guide/shipping/understanding-shipping-classes"
+        }
+      ]
+    },
+    {
+      "title": "Storage",
+      "slug": "storage",
+      "url": "https://docs.fluentcart.com/guide/storage/",
+      "file": "categories/storage.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Storage in FluentCart ​",
+          "url": "https://docs.fluentcart.com/guide/storage/"
+        },
+        {
+          "title": "Amazon S3 ​",
+          "url": "https://docs.fluentcart.com/guide/storage/aws-s3"
+        },
+        {
+          "title": "Cloudflare R2 ​",
+          "url": "https://docs.fluentcart.com/guide/storage/cloudflare-r2"
         }
       ]
     },

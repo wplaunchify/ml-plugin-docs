@@ -18,6 +18,7 @@ With FluentCart Shipping, you can:
 - **Create Flexible Shipping Methods**: Offer various delivery options like Flat Rate, Free Shipping, or Local Pickup, with diverse pricing structures (per order, per item, per weight, or per value).
 - **Utilize Shipping Classes**: Group products with similar shipping characteristics (e.g., "Heavy Items," "Fragile Goods") to apply specific cost adjustments.
 - **Control Advanced Calculations**: Configure how shipping costs are aggregated when customers purchase multiple products from different shipping classes.
+- **Manage Packages**: Define the boxes, envelopes, and soft packages you ship with so FluentCart can accurately calculate rates at checkout and pre-select the right packaging when fulfilling orders.
 
 ---
 
@@ -182,6 +183,78 @@ Your new shipping zone will now appear in your list of zones, and you can procee
 
 ---
 
+## Managing Packages ​
+
+**Source:** [https://docs.fluentcart.com/guide/shipping/packages](https://docs.fluentcart.com/guide/shipping/packages)
+
+# Managing Packages ​
+
+Packages in FluentCart let you define the physical boxes, envelopes, or soft packages you use to ship your products. By setting up your packaging ahead of time, FluentCart can accurately calculate shipping rates at checkout and pre-select the right package when you're fulfilling orders.
+
+This guide walks you through adding, managing, and configuring your store's packages.
+
+TIP
+
+You can also add a new package directly from the product editor. When configuring a physical product's shipping details — under the **Pricing** panel in the **Shipping** section — you'll find a **Package** dropdown. If no packages have been created yet, simply open that dropdown and select the option to add a new one without leaving the product page.
+
+The package you create will be saved to your store and available here in the Packages settings as well. See [Creating Physical Products](/guide/product-types-creation/creating-physical-products) for more details.
+## Accessing Packages ​
+
+To get started, navigate to **FluentCart Pro** > **Settings** > **Shipping** > **Packages** from your WordPress dashboard.
+
+You will see a list of all the packages you have already created. From here, you can add new packages or manage existing ones.
+
+![Screenshot of Packages list](https://docs.fluentcart.com/images/shipping/packages/packages-1.webp)
+
+## Adding a New Package ​
+
+To add a new package, click the **Add Package** button in the top-right corner of the Packages screen. This will open the **Add package** modal where you can configure all the details for your new package.
+
+![Screenshot of Add Package modal](https://docs.fluentcart.com/images/shipping/packages/packages-2.webp)
+
+### Package Type ​
+
+Choose the physical type of packaging you use:
+
+- **Box** — A rigid, box-shaped container. Ideal for most standard shipments.
+- **Envelope** — A flat mailer or padded envelope. Best suited for thin or lightweight items.
+- **Soft package** — A flexible bag or poly mailer. Useful for clothing, soft goods, or compressible items.
+
+### Dimensions & Weight ​
+
+Enter the physical measurements of your empty package:
+
+- **Length** — The longest dimension of the package.
+- **Width** — The width of the package.
+- **Height** — The height (or depth) of the package.
+- **Weight (empty)** — The weight of the packaging itself when empty.
+
+You can set the unit for dimensions (e.g., **in**, **cm**) and the unit for weight (e.g., **kg**, **lb**) using the dropdowns next to each field. Make sure these match the units configured in your store settings.
+
+### Package Name ​
+
+Give your package a clear, descriptive name (e.g., "Small Box," "Large Envelope," "Medium Poly Mailer"). This name is used internally to help you identify packages when assigning them to products or reviewing orders.
+
+### Use as Default Package ​
+
+Check **Use as default package** to make this package the store-wide default. The default package is used to calculate shipping rates at checkout and is pre-selected when assigning packages to products.
+
+INFO
+
+Only one package can be the store default at a time. Setting a new package as the default will automatically remove the default designation from the previously selected package.Once you have filled in all the details, click **Add package** to save it. Your new package will now appear in the Packages list.
+
+## Managing Existing Packages ​
+
+Each package in your list has a three-dot menu (**⋮**) on the right side. Click it to reveal the available actions:
+
+![Screenshot of Package management options](https://docs.fluentcart.com/images/shipping/packages/packages-3.webp)
+
+- **Edit** — Opens the package settings so you can update its name, type, dimensions, or weight.
+- **Set as default** — Marks this package as the store default, which will be used for shipping rate calculations at checkout.
+- **Delete** — Permanently removes the package from your store. Deleting a package cannot be undone.
+
+---
+
 ## Setting Up Shipping Methods ​
 
 **Source:** [https://docs.fluentcart.com/guide/shipping/setting-up-shipping-methods](https://docs.fluentcart.com/guide/shipping/setting-up-shipping-methods)
@@ -216,7 +289,7 @@ This is where you define how your shipping option will work.
 - **Flat Rate:** This is a fixed-cost shipping option. Use this to set a single rate for delivery.
 - **Free Shipping:** As the name suggests, this option is free for the customer. It's an excellent incentive to encourage sales.
 - **Local Pickup:** This allows customers to pick up their order directly from your physical store or a designated location, bypassing shipping costs entirely.
-- **Amount:** If you selected "Flat Rate," enter the cost for this shipping method here (e.g., enter **10** for $10.00).
+- **Amount:** If you selected "Flat Rate," enter the cost for this shipping method here (e.g., enter **10** for $10.00). The Amount field hides automatically when **Configure Rate** is set to **Per Weight**, because the cost then comes from your weight tiers instead of a flat value.
 - **Configure Rate**
 
 This setting determines how the "Flat Rate" cost is calculated if a customer has multiple items in their cart.
@@ -224,6 +297,69 @@ This setting determines how the "Flat Rate" cost is calculated if a customer has
 - **Per Order:** Applies a single, fixed charge for the entire order, no matter how many items are purchased. This is the most common setup.
 - **Per Item:** The shipping cost is multiplied by the number of items in the cart. For example, if the cost is $2 and a customer buys 3 items, the total shipping cost will be $6.
 - **Percentage:** The shipping cost is calculated as a percentage of the total order price. For example, a 10% rate on a $50 order would result in a $5 shipping fee.
+- **Per Weight:** Charges shipping based on the total weight of the cart, using a set of tiered rates you define (see **Weight Tiers** below). Ideal for carriers that price by weight brackets — light envelopes at one rate, medium parcels at another, heavy freight higher still.
+
+#### Weight Tiers (Per-Weight Rates) ​
+
+When **Configure Rate** is set to **Per Weight**, a **Weight Tiers** editor appears in place of the fixed Amount field. Each tier defines a weight range and the shipping cost that applies when the cart's total weight falls inside that range.
+
+Each row has three fields:
+
+- **Min (weight)** — The lower bound of the tier, inclusive. Editable on every tier, including the first one (it does not have to start at 
+```
+0
+```
+
+).
+- **Max (weight)** — The upper bound of the tier. Must be greater than the tier's Min.
+- **Cost** — The shipping amount charged when the cart's total weight lands inside this tier.
+
+Click **Add Tier** to append a new row. A new tier defaults to 
+```
+previous max + 0.01
+```
+
+ for Min so you can chain ranges quickly, but every field stays editable.
+
+**Flexible, non-contiguous ranges**
+
+Tiers do not have to be continuous. You can leave gaps between ranges — for example, 
+```
+0–10 kg
+```
+
+, then 
+```
+15–20 kg
+```
+
+ — when your carrier simply does not offer rates in the gap, or when weights in that gap should fall back to a different shipping method.
+
+**Validation**
+
+The editor validates tiers inline before you can save:
+
+- A tier whose **Max** is less than or equal to its **Min** shows an error and the **Add Tier** button is disabled until fixed.
+- A tier whose range **overlaps** an earlier tier (e.g., 
+```
+0–10
+```
+
+ followed by 
+```
+8–15
+```
+
+) shows an error — overlapping ranges would create ambiguity when a cart weight fits both tiers.
+
+Correct the highlighted tier and the error clears immediately, re-enabling the **Add Tier** button and the **Save** action.
+
+#### How It Looks at Checkout ​
+
+Once saved, the shipping method appears under **Shipping Options** on the checkout page with the method title and its calculated cost. The Order summary on the right reflects the same amount under **Shipping**, so what the customer picks is exactly what they pay.
+
+![Screenshot of the checkout page showing the shipping method under Shipping Options with its price, and the Order summary reflecting the Shipping line](https://docs.fluentcart.com/images/shipping/setting-up-shipping-method/shipping-method-checkout.webp)
+
 - **Class Aggregation**
 
 This advanced setting is for when a customer's cart contains products from different shipping classes (e.g., a small item and a bulky, oversized item). It tells FluentCart how to combine the shipping costs.

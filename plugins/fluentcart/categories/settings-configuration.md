@@ -253,6 +253,28 @@ If you select **Customized Body**, a full rich text editor will appear.
 
 ![Email Notification Customization](https://docs.fluentcart.com/images/settings-configuration/email-notifications/email-notification-body.webp)
 
+#### Package Merge Tags ​
+
+For stores selling physical products, FluentCart exposes the package details of each ordered item as email merge tags. Use these to build custom order confirmations, packing notifications, or warehouse-facing receipts that show shoppers exactly what is shipping — without writing any code.
+
+Place the cursor where the tag should appear, click the **shortcode icon {;}**, and select the tag from the **Package** group. The tag resolves per line item at send time.
+
+| Merge Tag | Renders |
+| --- | --- |
+| \{\{item.package_name\}\} | The package name assigned to the product (e.g., Gift box, Medium Mailer) |
+| \{\{item.package_type\}\} | The package shape - Box, Envelope, or Soft package |
+| \{\{item.dimensions\}\} | The package dimensions in L x W x H unit format (e.g., 1 x 1 x 1 in) |
+| \{\{item.product_weight\}\} | The product's own weight with its unit (e.g., 5 kg) |
+| \{\{item.shipping_weight\}\} | The total shipping weight - product weight plus empty-package weight (e.g., 6 kg) |**Default email body already includes package info**
+
+If the notification uses the **Default Body**, package name, dimensions, product weight, and shipping weight are rendered automatically below each item line — no template changes needed. The values match what the customer saw on the product page and at checkout.
+
+![Screenshot of an order confirmation email showing Package, Dimensions, Weight, and Shipping Weight under the order line](https://docs.fluentcart.com/images/settings-configuration/email-notifications/package-info-email.webp)
+
+**Values are captured at checkout**
+
+When the order is placed, FluentCart snapshots the package data onto the order item itself. The email renderer reads from that snapshot — never re-querying the live product — so even if you rename a package, change dimensions, or adjust weights months later, every historical email (resends, reprints, subscription renewals) still displays the values that were correct when the customer placed the order.
+
 Once you are finished editing, click the **Update** button to save your changes. Your customized email will now be sent whenever its corresponding event is triggered.
 
 ---
@@ -464,6 +486,15 @@ Allows you to maintain a clear overview of your physical or limited digital inve
 A powerful tool for increasing your Average Order Value (AOV).
 
 - **Function:** Allows you to offer relevant add-on products directly on the [checkout](/guide/settings-configuration/cart-checkout-settings) page, encouraging customers to add one more item to their purchase just before they pay. See [Order Bump](/guide/store-management/orders-management/order-bump) for creating and managing order bumps.
+
+### 5. Advanced Inventory ​
+
+A dedicated inventory workspace for stores that need more than per-product stock fields.
+
+- **Function:** Adds a central **Inventory** admin menu (injected next to Products) with cross-catalog stock views, bulk stock updates, an auditable adjustment history, and export. Every stock change is recorded with the user, timestamp, old and new values, and an adjustment reason.
+- **Requirements:** **Stock Management** (above) must be enabled first. Advanced Inventory activates only when both toggles are on.
+- **When Inactive:** The Inventory admin menu is hidden and no adjustment history is recorded. Per-product stock still works through the basic [Inventory Management](/guide/product-types-creation/inventory-management) screen.
+- **When Active:** See [Advanced Inventory](/guide/product-types-creation/advanced-inventory) for the full workflow.
 
 ## Saving Your Changes ​
 
@@ -922,51 +953,13 @@ The newly assigned role will now be reflected in the Roles and Permissions list.
 
 # Storage Settings ​
 
-The **Storage Settings** feature in FluentCart allows you to configure where your digital product files and other assets are stored. This flexibility enables you to choose between local file storage on your server or integrate with cloud-based solutions like Amazon S3 for more efficient and secure file management.
+This page has moved
 
-## Accessing Storage Settings ​
+Storage configuration now lives under its own dedicated **Storage** menu in FluentCart, with a sub-menu for each cloud provider.
 
-1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings** in the left sidebar.
-2. Click on the **"Storage Settings"** tab.
-
-## Storage Drivers ​
-
-The main area of this screen displays a list of available **Storage Drivers**. You can manage each driver to configure its specific settings.
-
-### 1. Local Storage ​
-
-Local storage means your files are saved directly on your website's server. This is the simplest option and is usually active by default.
-
-To check the settings for local storage, click the **Manage** button next to Local.
-
-![Screenshot of Storage Settings Tab](https://docs.fluentcart.com/images/settings-configuration/storage/storage-settings-tab.webp)
-
-On this page, you’ll see a checkbox to **Enable the local driver**. Make sure this is checked if you want to use your server for file storage. Click **Save** if you make any changes.
-
-![Screenshot of Storage Settings Tab](https://docs.fluentcart.com/images/settings-configuration/storage/enable-local-driver.webp)
-
-### 2. S3 (Amazon S3) ​
-
-Amazon S3 is a cloud storage service. Using S3 is highly recommended if you sell large digital files because it offloads storage from your server, which can improve your site's speed and security.
-
-To set it up, click the **Manage** button next to S3.
-
-On the S3 Settings page, you will need to do the following:
-
-- **Enable S3 driver:** First, you need to activate the S3 connection. Click the toggle switch next to this label to tell FluentCart you want to start using Amazon S3 for file storage.
-- **Access Key:** Enter the Access Key ID from your [Amazon Web Services (AWS) account](https://aws.amazon.com/account/).
-- **Secret Key**: Enter the Secret Access Key from your AWS account. This acts like a password, so be sure to keep it secure.
-
-TIP
-
-Read our comprehensive documentation to learn how you can integrate your FluentCart store with Amazon S3 for secure and scalable media file storage.
-
-[Read the full Integrating with Amazon S3 documentation](/guide/integrations/amazon-s3-integration)Digital Product Assets
-
-When [creating or editing digital products](/product-types-creation/creating-digital-products), you will have the option to upload or link your downloadable assets. The storage driver you configure here will determine where those files are actually saved.
-## Saving Your Settings ​
-
-After making any changes to your Storage Settings, remember to click the **"Save"** button at the bottom right of the screen to apply your configurations.
+- [Storage Overview](/guide/storage/)
+- [Amazon S3 setup guide](/guide/storage/s3)
+- [Cloudflare R2 setup guide](/guide/storage/r2)Please head to the new pages above for the current documentation. The old location is kept here only so existing bookmarks and links keep working.
 
 ---
 
