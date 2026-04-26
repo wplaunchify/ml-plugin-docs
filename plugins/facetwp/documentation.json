@@ -1,7 +1,7 @@
 {
   "plugin_slug": "facetwp",
   "plugin_name": "FacetWP",
-  "last_scraped": "2026-04-21T08:12:44.328Z",
+  "last_scraped": "2026-04-26T04:10:34.197Z",
   "total_pages": 0,
   "failed_urls": [
     "https://facetwp.com/help-center/add-on-features-and-extras/",
@@ -63,6 +63,7 @@
     "https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/",
     "https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_orderby/",
     "https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_filtered_post_ids/",
+    "https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_filtered_query_args/",
     "https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_is_main_query/",
     "https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_pager_args/",
     "https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_pre_filtered_post_ids/",
@@ -145,6 +146,7 @@
     "https://facetwp.com/help-center/faq/does-facetwp-work-with-my-theme/",
     "https://facetwp.com/help-center/faq/does-facetwp-work-with-object-caching/",
     "https://facetwp.com/help-center/faq/does-facetwp-work-with-searchwp-live-ajax-search/",
+    "https://facetwp.com/help-center/faq/how-can-i-add-a-prefix-suffix-or-html-to-facet-choice-labels/",
     "https://facetwp.com/help-center/faq/how-can-i-change-my-account-email-address/",
     "https://facetwp.com/help-center/faq/how-can-i-change-my-payment-billing-info/",
     "https://facetwp.com/help-center/faq/how-can-i-create-an-image-facet/",
@@ -153,6 +155,7 @@
     "https://facetwp.com/help-center/faq/how-can-i-get-a-customized-invoice/",
     "https://facetwp.com/help-center/faq/how-can-i-order-a-query-by-terms-or-categories/",
     "https://facetwp.com/help-center/faq/how-can-i-show-only-certain-levels-in-a-hierarchical-facet/",
+    "https://facetwp.com/help-center/faq/how-can-i-style-a-dropdown-facet-or-select-element-consistently-across-browsers/",
     "https://facetwp.com/help-center/faq/how-can-i-upgrade-my-license-plan/",
     "https://facetwp.com/help-center/faq/how-do-i-display-the-active-facet-selections/",
     "https://facetwp.com/help-center/faq/how-fast-is-facetwp/",
