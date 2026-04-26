@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T17:18:25.491Z",
+  "last_updated": "2026-04-26T17:19:23.356Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -901,7 +901,7 @@
       "slug": "ninja-tables-easy-data-table-builder",
       "name": "Ninja Tables – Easy Data Table Builder",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-04-24T08:18:19.778Z",
+      "last_scraped": "2026-04-26T17:19:23.356Z",
       "page_count": 0,
       "categories": []
     },
