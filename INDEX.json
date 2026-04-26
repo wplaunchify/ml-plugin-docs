@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T10:21:27.907Z",
+  "last_updated": "2026-04-26T10:21:35.210Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -172,7 +172,7 @@
       "slug": "customize-my-account-page-for-woocommerce",
       "name": "Customize My Account Page For Woocommerce",
       "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/documentation/",
-      "last_scraped": "2026-04-26T08:04:50.084Z",
+      "last_scraped": "2026-04-26T10:21:33.035Z",
       "page_count": 0,
       "categories": []
     },
@@ -1114,7 +1114,7 @@
       "slug": "woocommerce-anti-fraud",
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-04-26T10:21:27.907Z",
+      "last_scraped": "2026-04-26T10:21:27.906Z",
       "page_count": 0,
       "categories": []
     },
