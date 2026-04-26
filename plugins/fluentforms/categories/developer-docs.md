@@ -20,6 +20,27 @@
 
 ## Changelog
 
+#### 6.2.2 (Date: April 23, 2026)
+
+- Added subscription field support in payment calculations
+- Fixed raw cookie values for smartcodes
+- Hardens email attachment path resolution to keep notification attachments inside allowed paths
+- Hardens predefined form payload handling and confirmation validation
+- Improved compatibility for legacy predefined field option validation
+- Improved form-scoped access for submission collection and print endpoints
+- Tightens allowed-forms scope handling for form managers
+- Ensured form settings are normalized before use
+- Fixed the integration of the ActiveCampaign issue
+- Preserves post-feed draft values on the resume
+- Respects user locale in the form editor
+- Improved ACL permission checks and helper coverage for delegated and full-access flows
+- Hardens form HTML sanitization by blocking event handlers and escaping permission message shortcode output
+- Improved global integration settings access restriction and protects payment filters AJAX metadata endpoint
+- Sanitizes form step settings while preserving safe HTML in step button text
+- Improved entry export to honor submission info selection
+- Improved multisite site setup until initialization
+- Improved long entry content previews
+
 #### 6.2.1 Pro (Date: April 16, 2026)
 
 - Fixed imported entries after framework v2 request namespace changes
