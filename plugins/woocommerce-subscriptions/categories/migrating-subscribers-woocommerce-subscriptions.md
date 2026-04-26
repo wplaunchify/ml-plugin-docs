@@ -18,7 +18,7 @@ Much of this information likewise applies when migrating subscribers from one Wo
 
 ## Add or import manually
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Woo Subscriptions provides a full featured [Add Subscription interface for manually importing a subscription](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/).
 
@@ -42,7 +42,7 @@ If you need historical renewal orders added to the subscription in WooCommerce, 
 
 ## Bulk subscription CSV importer
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 A Subscriptions CSV Importer is also available for bulk importing large numbers of subscribers. This extension is currently available free in public beta.
 
@@ -56,7 +56,7 @@ For help and support with a migration, please [contact an official Woo agency pa
 
 ## Custom import scripts
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Your specific migration may require a custom import script to be written and used. For example, to only import orders after a certain date or with a non-standard payment gateway would require a custom migration.
 
@@ -66,11 +66,11 @@ To get help with a custom import, please contact a [WooExpert](https://woocommer
 
 ## FAQs
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 ### Is it possible to make sure the active subscriptions will still work?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If the payment gateways used on your subscriptions supports [payment method changes by the administrator](https://woocommerce.com/document/subscriptions/payment-gateways/#advanced-features) then you can import subscribers using either the **Add Subscription** interface or the CSV importer.
 
@@ -78,7 +78,7 @@ Depending on the payment gateway being used, the information required varies. W
 
 ### Can subscriptions still be imported with an unsupported payment gateway or missing payment metadata?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Yes, but not as easily. There are two possible solutions to for importing these subscriptions:
 
@@ -104,7 +104,7 @@ Note: make sure the [automatic failed payment retry system](https://woocommerce.
 
 ### Can subscriptions with PayPal Standard be imported?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 No. Unfortunately, PayPal Standard has a [large number of limitations](https://woocommerce.com/document/subscriptions/limitations-of-paypal-standard/) which prevent it being possible to migrate a subscription with PayPal Standard into Woo Subscriptions.
 
@@ -116,13 +116,13 @@ PayPal Billing Agreements can be imported with Woo Subscriptions and used for [R
 
 ### How do I migrate from one payment gateway’s account to another?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Please reach out to the gateway’s support directly for assistance with migrating subscriptions from one merchant account to another.
 
 ### Can I migrate subscriptions from a third-party Stripe plugin to WooPayments or the Stripe for WooCommerce extension?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Yes, but the process depends on how your current plugin stores Stripe customer and payment method information.
 
@@ -217,13 +217,13 @@ If your current plugin stores the data differently, you have a few options:
 
 ### I used an order import/export plugin to import subscriptions, but they’re not working correctly.
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 It’s likely the subscription data was not handled correctly during the import process. If you used a third party order import/export plugin to import your subscriptions, we would recommend reaching out to the developers of the plugin you used.
 
 ## Questions and support
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 **Something missing from this documentation? Still have questions and need assistance?**
 
