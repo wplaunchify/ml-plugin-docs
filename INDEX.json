@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T04:20:52.208Z",
+  "last_updated": "2026-05-03T04:24:00.128Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -630,20 +630,31 @@
       "slug": "fooevents-multi-day",
       "name": "FooEvents Multi-Day",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-04-26T04:18:07.801Z",
-      "page_count": 17,
+      "last_scraped": "2026-05-03T04:24:00.128Z",
+      "page_count": 56,
       "categories": [
+        "about-us",
+        "apps",
+        "blog",
+        "bundles",
+        "cart",
         "de",
+        "disclaimer",
         "el",
         "es",
         "features",
+        "fooevents-ultimate-event-checklist",
         "fr",
         "it",
+        "my-account",
         "nl",
         "pl",
+        "pricing",
+        "privacy-statement-us",
         "products",
         "pt",
-        "reviews"
+        "reviews",
+        "terms-and-conditions"
       ]
     },
     {

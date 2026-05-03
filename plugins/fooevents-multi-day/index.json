@@ -2,10 +2,87 @@
   "plugin_slug": "fooevents-multi-day",
   "plugin_name": "FooEvents Multi-Day",
   "documentation_url": "https://www.fooevents.com",
-  "last_scraped": "2026-04-26T04:18:07.801Z",
-  "total_pages": 17,
-  "failed_urls_count": 41,
+  "last_scraped": "2026-05-03T04:24:00.124Z",
+  "total_pages": 56,
+  "failed_urls_count": 2,
   "sections": [
+    {
+      "title": "About Us",
+      "slug": "about-us",
+      "url": "https://www.fooevents.comabout-us/",
+      "file": "categories/about-us.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "We love making things!",
+          "url": "https://www.fooevents.com/about-us/"
+        }
+      ]
+    },
+    {
+      "title": "Apps",
+      "slug": "apps",
+      "url": "https://www.fooevents.comapps/",
+      "file": "categories/apps.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sell tickets to your events, venues and bookable services like a pro!",
+          "url": "https://www.fooevents.com/apps"
+        }
+      ]
+    },
+    {
+      "title": "Blog",
+      "slug": "blog",
+      "url": "https://www.fooevents.comblog/",
+      "file": "categories/blog.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "News & Updates",
+          "url": "https://www.fooevents.com/blog/"
+        }
+      ]
+    },
+    {
+      "title": "Bundles",
+      "slug": "bundles",
+      "url": "https://www.fooevents.combundles/",
+      "file": "categories/bundles.md",
+      "page_count": 4,
+      "pages": [
+        {
+          "title": "Basic Bundle",
+          "url": "https://www.fooevents.com/bundles/basic-bundle/"
+        },
+        {
+          "title": "Bookings Bundle",
+          "url": "https://www.fooevents.com/bundles/bookings-bundle/"
+        },
+        {
+          "title": "Point of Sale Bundle",
+          "url": "https://www.fooevents.com/bundles/point-of-sale-bundle/"
+        },
+        {
+          "title": "Premium Bundle",
+          "url": "https://www.fooevents.com/bundles/premium-bundle/"
+        }
+      ]
+    },
+    {
+      "title": "Cart",
+      "slug": "cart",
+      "url": "https://www.fooevents.comcart/",
+      "file": "categories/cart.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Cart - FooEvents",
+          "url": "https://www.fooevents.com/cart/"
+        }
+      ]
+    },
     {
       "title": "De",
       "slug": "de",
@@ -16,6 +93,19 @@
         {
           "title": "Verkaufen Sie Tickets für Ihre Veranstaltungen, Veranstaltungsorte und buchbaren Dienstleistungen wie ein Profi!",
           "url": "https://www.fooevents.com/de/"
+        }
+      ]
+    },
+    {
+      "title": "Disclaimer",
+      "slug": "disclaimer",
+      "url": "https://www.fooevents.comdisclaimer/",
+      "file": "categories/disclaimer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Disclaimer",
+          "url": "https://www.fooevents.com/disclaimer/"
         }
       ]
     },
@@ -50,23 +140,80 @@
       "slug": "features",
       "url": "https://www.fooevents.comfeatures/",
       "file": "categories/features.md",
-      "page_count": 4,
+      "page_count": 15,
       "pages": [
+        {
+          "title": "The Swiss Army Knife for your event or bookable service",
+          "url": "https://www.fooevents.com/features/"
+        },
+        {
+          "title": "Capture, manage and export your attendee information",
+          "url": "https://www.fooevents.com/features/attendees/"
+        },
         {
           "title": "Engage with your customers and attendees every step of the way",
           "url": "https://www.fooevents.com/features/communications/"
+        },
+        {
+          "title": "If your conference was popcorn, FooEvents would be the butter!",
+          "url": "https://www.fooevents.com/features/conferences/"
+        },
+        {
+          "title": "Sell physical and virtual courses, classes, training seminars and workshops",
+          "url": "https://www.fooevents.com/features/courses-classes-training/"
+        },
+        {
+          "title": "Turn your events, venues and bookable services into products that sell",
+          "url": "https://www.fooevents.com/features/events/"
+        },
+        {
+          "title": "Download the FooEvents Features Fact Sheet",
+          "url": "https://www.fooevents.com/features/fact-sheet/"
+        },
+        {
+          "title": "Offer online and in-person bookings for your venue, activity or service business",
+          "url": "https://www.fooevents.com/features/general-admission/"
         },
         {
           "title": "Make informed decisions based on event and ticket reports",
           "url": "https://www.fooevents.com/features/insights/"
         },
         {
+          "title": "We play nicely with others!",
+          "url": "https://www.fooevents.com/features/integrations/"
+        },
+        {
           "title": "Sell tickets to your concert or show directly from your WordPress website",
           "url": "https://www.fooevents.com/features/shows/"
         },
         {
+          "title": "Sell race entries, spectator passes and manage sports venue bookings with FooEvents",
+          "url": "https://www.fooevents.com/features/sports-events/"
+        },
+        {
           "title": "Send and manage tickets directly from your WordPress website",
           "url": "https://www.fooevents.com/features/tickets/"
+        },
+        {
+          "title": "Sell access to virtual events with FooEvents and Zoom",
+          "url": "https://www.fooevents.com/features/virtual-events/"
+        },
+        {
+          "title": "You can't go wrong with the world’s most popular eCommerce platform",
+          "url": "https://www.fooevents.com/features/woocommerce/"
+        }
+      ]
+    },
+    {
+      "title": "Fooevents Ultimate Event Checklist",
+      "slug": "fooevents-ultimate-event-checklist",
+      "url": "https://www.fooevents.comfooevents-ultimate-event-checklist/",
+      "file": "categories/fooevents-ultimate-event-checklist.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sell tickets to your events, venues and bookable services like a pro!",
+          "url": "https://www.fooevents.com/fooevents-ultimate-event-checklist/"
         }
       ]
     },
@@ -97,6 +244,51 @@
       ]
     },
     {
+      "title": "My Account",
+      "slug": "my-account",
+      "url": "https://www.fooevents.commy-account/",
+      "file": "categories/my-account.md",
+      "page_count": 9,
+      "pages": [
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/"
+        },
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/add-payment-method/"
+        },
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/communication-preferences/"
+        },
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/downloads/"
+        },
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/edit-account/"
+        },
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/edit-address/"
+        },
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/license/"
+        },
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/orders/"
+        },
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/subscriptions//"
+        }
+      ]
+    },
+    {
       "title": "Nl",
       "slug": "nl",
       "url": "https://www.fooevents.comnl/",
@@ -123,11 +315,37 @@
       ]
     },
     {
+      "title": "Pricing",
+      "slug": "pricing",
+      "url": "https://www.fooevents.compricing/",
+      "file": "categories/pricing.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "FooEvents Pricing",
+          "url": "https://www.fooevents.com/pricing/"
+        }
+      ]
+    },
+    {
+      "title": "Privacy Statement Us",
+      "slug": "privacy-statement-us",
+      "url": "https://www.fooevents.comprivacy-statement-us/",
+      "file": "categories/privacy-statement-us.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Privacy Statement (US)",
+          "url": "https://www.fooevents.com/privacy-statement-us"
+        }
+      ]
+    },
+    {
       "title": "Products",
       "slug": "products",
       "url": "https://www.fooevents.comproducts/",
       "file": "categories/products.md",
-      "page_count": 4,
+      "page_count": 10,
       "pages": [
         {
           "title": "FooEvents Bookings",
@@ -138,12 +356,36 @@
           "url": "https://www.fooevents.com/products/fooevents-calendar/"
         },
         {
+          "title": "FooEvents Custom Attendee Fields",
+          "url": "https://www.fooevents.com/products/fooevents-custom-attendee-fields/"
+        },
+        {
           "title": "FooEvents Express Check-in",
           "url": "https://www.fooevents.com/products/fooevents-express-check-in/"
         },
         {
+          "title": "FooEvents for WooCommerce",
+          "url": "https://www.fooevents.com/products/fooevents-for-woocommerce/"
+        },
+        {
           "title": "FooEvents Multi-day",
           "url": "https://www.fooevents.com/products/fooevents-multi-day/"
+        },
+        {
+          "title": "FooEvents PDF Tickets",
+          "url": "https://www.fooevents.com/products/fooevents-pdf-tickets/"
+        },
+        {
+          "title": "FooEvents Point of Sale (POS)",
+          "url": "https://www.fooevents.com/products/fooevents-pos/"
+        },
+        {
+          "title": "FooEvents Seating",
+          "url": "https://www.fooevents.com/products/fooevents-seating/"
+        },
+        {
+          "title": "Download Free FooEvents Ticket Themes",
+          "url": "https://www.fooevents.com/products/ticket-themes/"
         }
       ]
     },
@@ -170,6 +412,19 @@
         {
           "title": "What do our customers say?",
           "url": "https://www.fooevents.com/reviews/"
+        }
+      ]
+    },
+    {
+      "title": "Terms And Conditions",
+      "slug": "terms-and-conditions",
+      "url": "https://www.fooevents.comterms-and-conditions/",
+      "file": "categories/terms-and-conditions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Terms and Conditions",
+          "url": "https://www.fooevents.com/terms-and-conditions/"
         }
       ]
     }
