@@ -2,9 +2,9 @@
   "plugin_slug": "fooevents-seating",
   "plugin_name": "FooEvents Seating",
   "documentation_url": "https://www.fooevents.com",
-  "last_scraped": "2026-04-19T10:18:06.794Z",
-  "total_pages": 57,
-  "failed_urls_count": 1,
+  "last_scraped": "2026-05-03T10:24:03.714Z",
+  "total_pages": 56,
+  "failed_urls_count": 2,
   "sections": [
     {
       "title": "About Us",
@@ -80,19 +80,6 @@
         {
           "title": "Cart - FooEvents",
           "url": "https://www.fooevents.com/cart/"
-        }
-      ]
-    },
-    {
-      "title": "Cs",
-      "slug": "cs",
-      "url": "https://www.fooevents.comcs/",
-      "file": "categories/cs.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Prodávejte vstupenky na své akce, místa konání a rezervovatelné služby jako profesionál!",
-          "url": "https://www.fooevents.com/cs/"
         }
       ]
     },

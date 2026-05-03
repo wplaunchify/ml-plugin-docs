@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T10:23:53.652Z",
+  "last_updated": "2026-05-03T10:24:05.224Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -104,7 +104,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-05-03T10:18:17.309Z",
+      "last_scraped": "2026-05-03T10:18:17.308Z",
       "page_count": 0,
       "categories": []
     },
@@ -675,15 +675,14 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-04-19T10:18:06.794Z",
-      "page_count": 57,
+      "last_scraped": "2026-05-03T10:24:03.714Z",
+      "page_count": 56,
       "categories": [
         "about-us",
         "apps",
         "blog",
         "bundles",
         "cart",
-        "cs",
         "de",
         "disclaimer",
         "el",
@@ -789,7 +788,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-05-03T10:22:58.905Z",
+      "last_scraped": "2026-05-03T10:22:58.904Z",
       "page_count": 0,
       "categories": []
     },
@@ -1577,7 +1576,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-05-03T10:23:53.652Z",
+      "last_scraped": "2026-05-03T10:23:53.650Z",
       "page_count": 5,
       "categories": [
         "export-tutor-lms-courses-google-sheets",
