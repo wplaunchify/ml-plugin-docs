@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T17:19:56.469Z",
+  "last_updated": "2026-05-03T17:20:18.184Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -24,7 +24,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-05-03T17:18:16.188Z",
+      "last_scraped": "2026-05-03T17:18:16.187Z",
       "page_count": 0,
       "categories": []
     },
@@ -336,7 +336,7 @@
       "slug": "fluentbooking",
       "name": "FluentBooking",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-04-26T17:17:42.822Z",
+      "last_scraped": "2026-05-03T17:20:16.552Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -458,7 +458,7 @@
       "slug": "fluentforms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/documentation/",
-      "last_scraped": "2026-05-03T17:17:15.055Z",
+      "last_scraped": "2026-05-03T17:17:15.048Z",
       "page_count": 456,
       "categories": [
         "account-management",
@@ -921,7 +921,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-05-03T17:14:55.873Z",
+      "last_scraped": "2026-05-03T17:14:55.872Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -957,7 +957,7 @@
       "slug": "open-graph",
       "name": "Open Graph",
       "documentation_url": "https://wordpress.org/plugins/opengraph/",
-      "last_scraped": "2026-05-03T16:17:08.413Z",
+      "last_scraped": "2026-05-03T16:17:08.412Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1420,7 +1420,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-05-03T16:20:58.897Z",
+      "last_scraped": "2026-05-03T16:20:58.889Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
