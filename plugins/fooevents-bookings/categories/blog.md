@@ -11,6 +11,13 @@
 # News & Updates
 				## Get the scoop on the latest FooEvents features and learn tips and tricks that will enhance your product experience.
 				[Subscribe to the blog digest!](#newsletter-signup)
+				![Thank You Page Tickets](https://www.fooevents.com/wp-content/uploads/2026/04/fooevents-thank-you-page-768x500.png)
+				### New: Display Ticket Details on the WooCommerce Thank You Page
+
+				April 24, 2026
+				A few weeks ago, we rolled out the new Attendee Details Page and checkout flow. It was a pivotal update that improved the ticket purchase experience and ensured full compatibility with both the WooCommerce Checkout Block and classic checkout experiences. With those core pieces now in place, we’ve turned our
+		
+		[Read More →](https://www.fooevents.com/thank-you-page-tickets/)
 				![Fooevents Addtowallet Integration Thumbnail](https://www.fooevents.com/wp-content/uploads/2026/04/FooEvents_AddToWallet_integration_thumbnail.jpg)
 				### Solving “Check-in” Friction: Lessons from Acute Inflections
 
@@ -109,13 +116,6 @@
 				We’ve just released version 1.20.2 of the FooEvents for WooCommerce plugin, which introduces partial compatibility with the new WooCommerce Checkout and Cart blocks. To take full advantage of this update, please ensure all your installed FooEvents extensions are also updated to their latest versions. This update makes it possible to
 		
 		[Read More →](https://www.fooevents.com/partial-support-for-the-woocommerce-checkout-block/)
-				![Fooevents Check-Ins Apps](https://www.fooevents.com/wp-content/uploads/2025/01/new-fooevents-check-ins-app.png)
-				### Introducing the New FooEvents Check-ins App V3
-
-				January 28, 2025
-				The FooEvents Check-ins app, which was released way back in 2016, has been the backbone of event check-ins for thousands of FooEvents customers—checking in over 15 million tickets to date. It has evolved considerably since the initial launch and we’re thrilled to unveil a completely rebuilt FooEvents Check-ins App (version
-		
-		[Read More →](https://www.fooevents.com/new-fooevents-check-ins-app-v3/)
 				### Subscribe to the blog digest
 				### Receive a summary of the latest posts in your inbox.
 				Your details could not be submitted. Please try again.

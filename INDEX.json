@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T05:04:30.452Z",
+  "last_updated": "2026-05-03T05:10:02.474Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -535,15 +535,14 @@
       "slug": "fooevents-bookings",
       "name": "FooEvents Bookings",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-04-19T05:02:46.857Z",
-      "page_count": 57,
+      "last_scraped": "2026-05-03T05:10:02.474Z",
+      "page_count": 56,
       "categories": [
         "about-us",
         "apps",
         "blog",
         "bundles",
         "cart",
-        "cs",
         "de",
         "disclaimer",
         "el",
