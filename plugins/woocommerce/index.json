@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-04-26T09:42:32.553Z",
-  "total_pages": 3751,
+  "last_scraped": "2026-05-03T09:53:39.432Z",
+  "total_pages": 3749,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,36 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3751,
+      "page_count": 3749,
       "pages": [
+        {
+          "title": "Order Edit Logger",
+          "url": "https://woocommerce.com/document/order-edit-logger/"
+        },
+        {
+          "title": "WooCommerce Subscriptions Health Check",
+          "url": "https://woocommerce.com/document/woocommerce-subscriptions-health-check/"
+        },
+        {
+          "title": "Raffle and Giveaway",
+          "url": "https://woocommerce.com/document/raffle-and-giveaway/"
+        },
+        {
+          "title": "Sitora",
+          "url": "https://woocommerce.com/document/sitora/"
+        },
+        {
+          "title": "Barcode and QR Code",
+          "url": "https://woocommerce.com/document/barcode-and-qrcode/"
+        },
+        {
+          "title": "How to handle affiliate commissions in multi-currency WooCommerce stores",
+          "url": "https://woocommerce.com/document/affiliate-for-woocommerce/how-to-handle-affiliate-commissions-in-multi-currency-woocommerce-stores/"
+        },
+        {
+          "title": "Hypermarket",
+          "url": "https://woocommerce.com/document/hypermarket/"
+        },
         {
           "title": "Smart Gift Cards",
           "url": "https://woocommerce.com/document/smart-gift-cards/"
@@ -24,6 +52,10 @@
         {
           "title": "QR Code Tickets and Check-in – REST API",
           "url": "https://woocommerce.com/document/ticket-checkin/qr-code-tickets-and-check-in-for-woocommerce-rest-api-documentation/"
+        },
+        {
+          "title": "Smart Dynamic Pricing",
+          "url": "https://woocommerce.com/document/smart-dynamic-pricing/"
         },
         {
           "title": "Troubleshooting Analytics in the Woo Mobile App",
@@ -1258,7 +1290,7 @@
           "url": "https://woocommerce.com/document/telegram-notification/"
         },
         {
-          "title": "Stock Sync Sheets",
+          "title": "Stock Sync Sheets Documentation",
           "url": "https://woocommerce.com/document/stock-sync-sheets/"
         },
         {
@@ -3494,12 +3526,12 @@
           "url": "https://woocommerce.com/document/phone-validator-and-formatter/"
         },
         {
-          "title": "Archiva",
-          "url": "https://woocommerce.com/document/smart-archive-wc/"
+          "title": "Discount On Cart",
+          "url": "https://woocommerce.com/document/discount-on-cart/"
         },
         {
-          "title": "Custom snippets for AutomateWoo",
-          "url": "https://woocommerce.com/document/automatewoo/custom-snippets/"
+          "title": "Order Shipment Tracking",
+          "url": "https://woocommerce.com/document/order-shipment-tracking/"
         },
         {
           "title": "Useful snippets",
@@ -5090,12 +5122,12 @@
           "url": "https://woocommerce.com/document/configuring-woocommerce-settings/emails/"
         },
         {
-          "title": "B2B Invoice Payment Method",
-          "url": "https://woocommerce.com/document/b2b-invoice-payment-method/"
+          "title": "Advanced Settings",
+          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/advanced/"
         },
         {
-          "title": "Order Statuses",
-          "url": "https://woocommerce.com/document/managing-orders/order-statuses/"
+          "title": "Advanced Order Notes for WooCommerce",
+          "url": "https://woocommerce.com/document/advanced-order-notes-for-woocommerce/"
         },
         {
           "title": "Orders Overview and Bulk Order Management",
@@ -5394,7 +5426,7 @@
           "url": "https://woocommerce.com/document/price-on-request-and-quote/"
         },
         {
-          "title": "Customizing WooCommerce Square Extension",
+          "title": "Customizing WooCommerce Square",
           "url": "https://woocommerce.com/document/woocommerce-square/customizing-woocommerce-square-extension/"
         },
         {
@@ -9610,12 +9642,12 @@
           "url": "https://woocommerce.com/document/integration-de-google-agenda-avec-woocommerce-bookings/"
         },
         {
-          "title": "Widgets de escritorio",
-          "url": "https://woocommerce.com/document/widgets-de-escritorio/"
+          "title": "Paramètres des réservations de WooCommerce Bookings",
+          "url": "https://woocommerce.com/document/parametres-des-reservations-de-woocommerce-bookings/"
         },
         {
-          "title": "Importar productos de Etsy",
-          "url": "https://woocommerce.com/document/importar-productos-de-etsy/"
+          "title": "WooCommerce Accommodation pour WooCommerce Bookings",
+          "url": "https://woocommerce.com/document/woocommerce-accommodation-pour-woocommerce-bookings/"
         },
         {
           "title": "Reembolsos de WooCommerce",
@@ -10730,12 +10762,12 @@
           "url": "https://woocommerce.com/document/ajout-et-gestion-de-produits/"
         },
         {
-          "title": "Cart Upsell for WooCommerce",
-          "url": "https://woocommerce.com/document/cart-upsell-for-woocommerce/"
+          "title": "Traduction et localisation de WooCommerce",
+          "url": "https://woocommerce.com/document/traduction-et-localisation-de-woocommerce/"
         },
         {
-          "title": "Stripe (Português)",
-          "url": "https://woocommerce.com/document/stripe-portugues/"
+          "title": "Comprendre le rapport d’état du système de WooCommerce",
+          "url": "https://woocommerce.com/document/comprendre-le-rapport-detat-du-systeme-de-woocommerce/"
         },
         {
           "title": "PayPal Standard (Português)",
@@ -10850,12 +10882,12 @@
           "url": "https://woocommerce.com/document/recomendacoes-de-servidor/"
         },
         {
-          "title": "Extension translations",
-          "url": "https://woocommerce.com/document/extension-translations/"
+          "title": "Recomendaciones de servidor",
+          "url": "https://woocommerce.com/document/recomendaciones-de-servidor/"
         },
         {
-          "title": "Product Prices by User Role for WooCommerce",
-          "url": "https://woocommerce.com/document/product-prices-by-user-role-for-woocommerce/"
+          "title": "Como gerenciar as assinaturas do WooCommerce.com",
+          "url": "https://woocommerce.com/document/como-gerenciar-as-assinaturas-do-woocommerce-com/"
         },
         {
           "title": "Freshdesk Integration for WooCommerce",
@@ -10930,12 +10962,12 @@
           "url": "https://woocommerce.com/document/automatewoo/google-analytics-link-tracking/"
         },
         {
-          "title": "Bulk Order Form For WooCommerce",
-          "url": "https://woocommerce.com/document/bulk-order-form-for-woocommerce/"
+          "title": "Product Merchandizing",
+          "url": "https://woocommerce.com/document/product-merchandizing/"
         },
         {
-          "title": "Krokedil Product Documents",
-          "url": "https://woocommerce.com/document/krokedil-product-documents/"
+          "title": "Subscriptions FAQ",
+          "url": "https://woocommerce.com/document/subscriptions/faq/"
         },
         {
           "title": "Google Merchant Center Top Quality Store & Customer Reviews Integration",
@@ -12170,12 +12202,12 @@
           "url": "https://woocommerce.com/document/automatewoo/twilio/sending-sms-from-a-workflow/"
         },
         {
-          "title": "Settings",
-          "url": "https://woocommerce.com/document/groups-woocommerce/settings/"
+          "title": "Twilio SMS",
+          "url": "https://woocommerce.com/document/automatewoo/twilio/"
         },
         {
-          "title": "Setup",
-          "url": "https://woocommerce.com/document/groups-woocommerce/setup/"
+          "title": "Setting up the Twilio integration",
+          "url": "https://woocommerce.com/document/automatewoo/twilio/setup-2/"
         },
         {
           "title": "Subscription Orders",
@@ -12250,12 +12282,12 @@
           "url": "https://woocommerce.com/document/gifting-subscription-box/"
         },
         {
-          "title": "Debugging",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/api/debugging/"
+          "title": "Subscriptions Use Case: Corporate Purchasing",
+          "url": "https://woocommerce.com/document/corporate-subscription-purchasing/"
         },
         {
-          "title": "Examples",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/api/examples/"
+          "title": "Gifting for WooCommerce Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions-gifting/"
         },
         {
           "title": "[woocommerce_product_filter_products]",
@@ -13003,7 +13035,7 @@
         },
         {
           "title": "Set up SPF with GoDaddy Hosting",
-          "url": "https://woocommerce.com/document/setting-up-spf-and-dkim__trashed/setup-spf-with-godaddy-hosting/"
+          "url": "https://woocommerce.com/document/setup-spf-with-godaddy-hosting/"
         },
         {
           "title": "Mix and Match: Mini-Extensions",
@@ -13976,46 +14008,6 @@
         {
           "title": "Installed Database Tables",
           "url": "https://woocommerce.com/document/installed-database-tables/"
-        },
-        {
-          "title": "Permalinks",
-          "url": "https://woocommerce.com/document/permalinks/"
-        },
-        {
-          "title": "Add a new country to countries list",
-          "url": "https://woocommerce.com/document/add-a-new-country-to-countries-list/"
-        },
-        {
-          "title": "Introduction to Product CSV Import Suite",
-          "url": "https://woocommerce.com/document/product-csv-import-suite/"
-        },
-        {
-          "title": "Importing Products",
-          "url": "https://woocommerce.com/document/product-csv-import-suite/product-csv-import-suite-importing-products/"
-        },
-        {
-          "title": "WooCommerce Authorize.Net Reporting",
-          "url": "https://woocommerce.com/document/woocommerce-authorize-net-reporting/"
-        },
-        {
-          "title": "Hooks and Filters in WooCommerce PDF Invoice",
-          "url": "https://woocommerce.com/document/pdf-invoice-developer-tools/"
-        },
-        {
-          "title": "PDF Invoices",
-          "url": "https://woocommerce.com/document/woocommerce-pdf-invoice-setup-and-customization/"
-        },
-        {
-          "title": "Adjust the quantity input values",
-          "url": "https://woocommerce.com/document/adjust-the-quantity-input-values/"
-        },
-        {
-          "title": "Creating Slideshows with Slides",
-          "url": "https://woocommerce.com/document/creating-slideshows-with-slides/"
-        },
-        {
-          "title": "See You Later",
-          "url": "https://woocommerce.com/document/see-you-later/"
         },
         {
           "title": "Create a new administrator account in WordPress",
