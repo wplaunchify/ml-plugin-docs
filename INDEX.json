@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T13:30:36.884Z",
+  "last_updated": "2026-05-03T14:18:11.984Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -830,7 +830,7 @@
       "slug": "launchflows-customer-dashboardboards-for-woocommerce",
       "name": "LaunchFlows Customer Dashboardboards For WooCommerce",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-04-26T14:15:11.627Z",
+      "last_scraped": "2026-05-03T14:18:11.984Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
