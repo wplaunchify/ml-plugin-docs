@@ -1,9 +1,12 @@
 {
   "plugin_slug": "learndash",
   "plugin_name": "LearnDash",
-  "last_scraped": "2026-04-26T08:35:24.737Z",
+  "last_scraped": "2026-05-03T08:42:19.161Z",
   "total_pages": 320,
-  "failed_urls": [],
+  "failed_urls": [
+    "https://learndash.com/support/kb/core/styling/styling-overview/",
+    "https://learndash.com/support/kb/core/plugins/plugins-overview/"
+  ],
   "pages": [
     {
       "title": "How to Use Cursor with LearnDash",

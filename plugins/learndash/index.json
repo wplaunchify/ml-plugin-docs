@@ -2,9 +2,9 @@
   "plugin_slug": "learndash",
   "plugin_name": "LearnDash",
   "documentation_url": "https://learndash.com/support/documentation/",
-  "last_scraped": "2026-04-26T08:35:24.753Z",
+  "last_scraped": "2026-05-03T08:42:19.174Z",
   "total_pages": 320,
-  "failed_urls_count": 0,
+  "failed_urls_count": 2,
   "sections": [
     {
       "title": "2checkout Add On",
