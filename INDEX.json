@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T18:22:58.171Z",
+  "last_updated": "2026-05-03T18:24:05.282Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1614,7 +1614,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-04-26T18:20:13.345Z",
+      "last_scraped": "2026-05-03T18:24:05.282Z",
       "page_count": 0,
       "categories": []
     },
