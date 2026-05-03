@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-04-26T06:49:07.807Z",
-  "total_pages": 129,
+  "last_scraped": "2026-05-03T07:01:44.062Z",
+  "total_pages": 131,
   "failed_urls_count": 8,
   "sections": [
     {
@@ -74,11 +74,15 @@
       "slug": "customization-and-themes",
       "url": "https://docs.fluentcart.com/guide/customization-and-themes/",
       "file": "categories/customization-and-themes.md",
-      "page_count": 8,
+      "page_count": 9,
       "pages": [
         {
           "title": "Advanced Customization with CSS Variables ​",
           "url": "https://docs.fluentcart.com/guide/customization-and-themes/advanced-customization-using-css"
+        },
+        {
+          "title": "Code Snippets ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/code-snippets"
         },
         {
           "title": "Customize Store with Bricks ​",
@@ -438,7 +442,7 @@
       "slug": "settings-configuration",
       "url": "https://docs.fluentcart.com/guide/settings-configuration/",
       "file": "categories/settings-configuration.md",
-      "page_count": 18,
+      "page_count": 19,
       "pages": [
         {
           "title": "Settings & Configuration ​",
@@ -467,6 +471,10 @@
         {
           "title": "PDF Invoice Templates ​",
           "url": "https://docs.fluentcart.com/guide/settings-configuration/email-configuration/pdf-invoice"
+        },
+        {
+          "title": "Reminders ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/email-configuration/reminders"
         },
         {
           "title": "Features & Addons ​",

@@ -90,7 +90,9 @@ This screen gives the customer all the essential information about their license
 - **Expiration Date:** This shows when the license is set to expire. For lifetime licenses, this will typically say "Never Expires."
 - **View Order:** This link will take the customer directly to the original order in their **Purchase History** where they bought this license.
 
-![Screenshot of Licenses](https://docs.fluentcart.com/images/customer-dashboard/licenses/licenses-2.webp)
+NOTE
+
+If the license is connected to a LearnDash course through a [LearnDash integration feed](/guide/integrations/learndash-integration) with **Set Course Expiration from Subscription / License Expiry** enabled, the customer's course access will end on the same date shown here. Renewing the license automatically extends both the license and the connected LearnDash course access.![Screenshot of Licenses](https://docs.fluentcart.com/images/customer-dashboard/licenses/licenses-2.webp)
 
 ---
 
@@ -178,8 +180,9 @@ FluentCart automatically generates an invoice receipt for every order. This invo
 - Payment method used
 - Total paid amount
 - Renewal information (if it’s a subscription-based order)
+- Customer VAT number (rendered automatically inside the billing address block when the customer provides one at checkout)
 
-This detailed invoice ensures that customers have all the necessary purchase information in one place.
+This detailed invoice ensures that customers have all the necessary purchase information in one place. For B2B customers selling into the EU, UK, and other VAT jurisdictions, the VAT number on the receipt makes the document compliance-ready for the buyer's own bookkeeping — no manual workaround needed.
 
 ![Purchase Confirmation](https://docs.fluentcart.com/assets/purchase-confirmation.DkO1RPUS.webp)
 
@@ -302,6 +305,12 @@ The installment plan must be **Active** for this early payment option to be avai
 #### Related Transactions ​
 
 At the bottom of the page, you'll find a complete financial audit trail for your subscription. This table lists every transaction from your very first purchase to the most recent renewal. You can track the Date, Amount, and Status of each payment, and even download a **Receipt** for your records whenever you need one.
+
+### What Happens When a Subscription Is Cancelled ​
+
+When a subscription is cancelled, the customer automatically receives a cancellation email that includes the **access end date** — the exact date their access will end. This removes the guesswork around whether cancellation is immediate or continues through the paid period and gives the customer a clear timeline.
+
+For stores running courses, memberships, or licensed products, this means buyers always know how much time is left on their plan after cancellation, without needing to contact support.
 
 ![Screenshot of Subscription](https://docs.fluentcart.com/images/customer-dashboard/subscriptions/subscriptions-2.webp)
 

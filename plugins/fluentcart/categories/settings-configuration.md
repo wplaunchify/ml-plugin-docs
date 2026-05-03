@@ -219,7 +219,11 @@ On this screen, you will see a list of all available email notifications. For ea
 - **Send mail to customer after a refund:** Notifies the customer that a refund has been issued for their order.
 - **Send mail to customer when shipping status changed to shipped:** Informs the customer that their physical order has been shipped.
 - **Send mail to customer when shipping status changed to delivered:** Confirms to the customer that their order has been marked as delivered.
+- **Send mail to customer after a subscription is cancelled:** Notifies the customer that their subscription has been cancelled and includes the **access end date** so they know exactly when their access ends. This is especially important for stores running courses, memberships, or licensed products where billing and access are tied together.
 
+NOTE
+
+The cancellation email is sent automatically whenever a subscription moves to a cancelled state. The access end date is pulled from the subscription's paid-through period, so customers can see at a glance whether their access ends immediately or continues through the end of the current billing cycle.
 #### Enabling or Disabling Notifications ​
 
 To quickly activate or deactivate any notification, simply click the **toggle switch** in the "Enabled" column. The email will only be sent if the toggle is on.
@@ -285,34 +289,32 @@ Once you are finished editing, click the **Update** button to save your changes.
 
 # Mailing Settings ​
 
-The **Mailing Settings** section is the central area for managing the global sender identity and footer for all automated emails sent from your FluentCart store. Properly configuring these settings ensures brand consistency and improves email deliverability.
+The **Mailing Settings** section is the central place for managing the global sender identity and email footer for all automated emails sent from your FluentCart store. Configuring these settings correctly ensures your emails look professional, reach your customers' inboxes, and stay compliant.
 
-#### Accessing Mailing Settings ​
+### Accessing Mailing Settings ​
 
-1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
-2. Click on the **Email Configuration** tab, which will open the **Mailing Settings** page by default.
+1. From your WordPress dashboard, navigate to **FluentCart Pro** > **Settings**.
+2. Click on the **Email Configuration** tab. The **Mailing Settings** page opens by default.
 
-#### Configuration Options ​
+### Configuration Options ​
 
-These settings will be used to send all emails from FluentCart, such as order confirmations and notifications.
+![Mailing Settings](https://docs.fluentcart.com/images/settings-configuration/email-notifications/mailing-settings-1.webp)
 
-- **From Name:** Enter the name you want your customers to see as the sender of your store's emails.
-- **From Email:** Provide the email address that emails will be sent from. It is recommended to use a valid email address associated with your domain and SMTP settings to ensure deliverability.
-- **Reply to name (Optional):** If you want customer replies to be addressed to a different name, you can enter it here.
-- **Reply to email (optional):** Enter the email address where you wish to receive customer replies to your store's notification emails.
-- **Email Footer:** Use the rich text editor to create a footer that will be added to all emails sent from your store. For compliance, it is highly recommended to include your business name and address in the footer.
-- **Admin Email Address:** Specify the email address where FluentCart will send administrative notifications. By default, this uses the 
-```
-{wp_admin_email}
-```
+These settings apply globally to all emails sent from FluentCart, including order confirmations and notifications.
 
- shortcode, which automatically pulls the primary administrator email from your WordPress settings.
+- **From Name:** The name your customers will see as the sender of all store emails. Use your store or brand name here.
+- **From Email:** The email address that emails will be sent from. Make sure to use a valid email address that matches your domain or SMTP configuration — this directly affects whether your emails land in the inbox or spam folder.
+- **Reply to Name (Optional):** If you want replies to be addressed to a different name than the sender, enter it here.
+- **Reply to Email (Optional):** The email address where customer replies to your notification emails will be delivered. If left empty, replies will go to the **From Email** address.
+- **Email Footer:** Use the rich text editor to compose a footer that will appear at the bottom of every email sent from your store. You can switch between **Visual** and **Code** views for advanced formatting, and use the **shortcode icon {;}** to insert dynamic values. It is highly recommended to include your business name and physical address in the footer for legal compliance.
+- **Enable powered by FluentCart in the email footer:** Check this box to automatically append a "Powered by FluentCart" line to your email footer.
+- **Admin Email Address:** The email address where FluentCart will send all administrative notifications. By default, this is pre-filled with ```
+{{wp.admin_email}}
+```, which automatically pulls the primary administrator email from your WordPress settings. You can replace this with any specific address if needed.
 
-![Mailing Settings](https://docs.fluentcart.com/images/settings-configuration/email-notifications/mailing-settings.webp)
+### Saving Your Changes ​
 
-#### Saving Your Changes ​
-
-After you have configured these settings, click the **Save Settings** button to apply your changes.
+Once you have configured these settings, click the **Save** button in the top-right corner to apply your changes.
 
 ---
 
@@ -332,12 +334,15 @@ Here is your comprehensive guide to setting up and designing your first custom P
 
 ## Step 1: Install and Activate the Fluent PDF Addon ​
 
-Before you can start designing, you need to turn the feature on.
+Before you can start designing, you need to turn the feature on. Fluent PDF is a licensed addon, so it ships with the FluentCart Pro one-click installer — there is no ZIP to download or upload.
 
-1. Navigate to **FluentCart > Settings** in your WordPress dashboard.
-2. In the left-hand menu, click on the **Features & addon** tab.
-3. Scroll down to the bottom of the page to find the Plugin Addons section.
-4. Locate the **Fluent PDF** card and click the dark **Install & Activate** button.
+1. Make sure your FluentCart Pro license is verified on the site. See [Licensing Settings](/guide/settings-configuration/licensing-settings) if you haven't done this yet.
+2. Navigate to **FluentCart > Settings** in your WordPress dashboard.
+3. In the left-hand menu, click on the **Features & addon** tab.
+4. Scroll down to the bottom of the page to find the **Plugin Addons** section.
+5. Locate the **Fluent PDF** card and click the dark **Install & Activate** button.
+
+FluentCart will fetch the addon from the licensed update server, install it, and activate it in a single step. The card switches to **Active** as soon as it's ready.
 
 ![PDF Invoice](https://docs.fluentcart.com/images/store-management/pdf-invoice/pdf-1.webp)
 
@@ -425,7 +430,15 @@ Here are a few examples of how they work in action:
 
 You can freely move these tags around, change their font size, or make them bold just like normal text!
 
-![PDF Invoice](https://docs.fluentcart.com/images/store-management/pdf-invoice/pdf-6.webp)
+#### Customer VAT Number on Receipts ​
+
+If a customer provides a VAT number at checkout, FluentCart now automatically includes it inside the **billing address block** of every generated PDF (Order Receipt, Renewal Receipt, Refund Notice, and Invoice). You don't need to add a separate smart tag or modify the template — when the address renders, the VAT number is appended right under the customer's address line.
+
+This makes FluentCart receipts drop-in ready for B2B customers in the EU, UK, and other VAT jurisdictions who need a properly formatted receipt for their own bookkeeping. If the customer has not provided a VAT number, the line is omitted automatically — so receipts for B2C buyers continue to look exactly the same.
+
+NOTE
+
+VAT numbers are captured during checkout via the EU VAT field. To learn how to enable and configure VAT collection for your store, see [Configuring European Union (EU) VAT](/guide/tax-&-duties/european-union-vat).![PDF Invoice](https://docs.fluentcart.com/images/store-management/pdf-invoice/pdf-6.webp)
 
 ## Step 5: Test and Save Your Masterpiece ​
 
@@ -435,6 +448,61 @@ Before you let this template go live to your real customers, you should always c
 2. Click the white **Test Download** button.
 3. FluentCart will instantly generate a sample PDF and download it to your computer. Open it up and see how your logo, text, and smart tags look!
 4. If everything looks perfect and professional, click the dark **Save Template** button next to it. You are done! Your custom-designed PDF is now active. The next time a customer buys something, FluentCart will automatically generate a PDF using your new design and attach it directly to their order email.
+
+---
+
+## Reminders ​
+
+**Source:** [https://docs.fluentcart.com/guide/settings-configuration/email-configuration/reminders](https://docs.fluentcart.com/guide/settings-configuration/email-configuration/reminders)
+
+# Reminders ​
+
+The **Reminders** section in FluentCart lets you control the automated reminder emails that are sent to customers before key subscription events such as an upcoming renewal or the end of a trial period. This helps reduce unexpected charges and keeps your customers informed ahead of time.
+
+### Accessing Reminders ​
+
+1. From your WordPress dashboard, navigate to **FluentCart Pro** > **Settings**.
+2. Click on the **Email Configuration** tab.
+3. From the sub-menu, select **Reminders**.
+
+### Enabling Reminder Emails ​
+
+The first thing you will see on this page is the **Reminder Emails** toggle. By default, it is turned off.
+
+![Reminders - Disabled State](https://docs.fluentcart.com/images/settings-configuration/email-notifications/reminders/reminders-1.webp)
+
+Click the toggle to enable it. Once turned on, the full reminder configuration options will appear on the page.
+
+IMPORTANT
+
+Enabling this toggle alone is not enough. For reminder emails to actually be delivered, the individual reminder notifications must also be enabled in **Email Notification Settings** under the **Scheduler / Reminder Actions** section.
+### Configuring Subscription Reminders ​
+
+Once Reminder Emails are enabled, you will see the **Subscription Reminders** section with two configurable reminder types.
+
+![Reminders - Enabled with Configuration](https://docs.fluentcart.com/images/settings-configuration/email-notifications/reminders/reminders-2.webp)
+
+#### Trial Ending ​
+
+This reminder notifies customers before their trial period ends and billing begins.
+
+- **Enable:** Check this box to activate the trial-ending reminder.
+- **Days before trial ends:** Set how many days in advance the reminder is sent. The accepted range is **Min: 1, Max: 14**. The default is **3 days**.
+
+#### Renewal Reminders ​
+
+This reminder notifies customers before an upcoming subscription renewal charge.
+
+- **Yearly (Recommended):** Check to send a renewal reminder for yearly subscriptions. You can set the number of days before the billing date. The accepted range is **Min: 7, Max: 90**. The default is **30 days**.
+- **Half Yearly:** Check to send a renewal reminder for half-yearly subscriptions.
+- **Quarterly:** Check to send a renewal reminder for quarterly subscriptions.
+- **Monthly:** Check to send a renewal reminder for monthly subscriptions.
+
+You can enable reminders for one or more billing frequencies at the same time, each with its own lead time.
+
+### Saving Your Changes ​
+
+After configuring your reminder preferences, click the **Save** button in the top-right corner to apply your changes.
 
 ---
 
@@ -504,6 +572,30 @@ After toggling any feature on or off:
 2. Click the **Save Settings** button located at the bottom right of the screen.
 
 > Note: Some features, like Cloudflare Turnstile, may require additional configuration (such as API keys) immediately after activation to function correctly.
+
+## Installing Licensed Addons (One-Click Installer) ​
+
+Below the core feature toggles, the **Features & Addon** page also lists every licensed addon that ships with your FluentCart Pro license — for example, Fluent PDF and other premium extensions. You no longer need to download a ZIP file from your account, upload it through the WordPress plugin uploader, and then activate it. The whole flow has been collapsed into a single click.
+
+### Prerequisites ​
+
+Before the one-click installer becomes available, make sure:
+
+1. You have a valid FluentCart Pro license verified on the site. See [Licensing Settings](/guide/settings-configuration/licensing-settings) for how to verify your license.
+2. Your server can make outbound HTTPS requests to the FluentCart update servers (this is the case on virtually every standard WordPress host).
+
+### How to Install an Addon in One Click ​
+
+1. Navigate to **FluentCart Pro > Settings > Features & Addon**.
+2. Scroll to the **Plugin Addons** section at the bottom of the page.
+3. Find the addon card for the addon you want to install (e.g., Fluent PDF).
+4. Click the **Install & Activate** button on the card.
+
+FluentCart will fetch the addon directly from the licensed update server, install it, and activate it automatically. The card's status badge will switch to **Active** as soon as the process finishes — you can use the addon immediately, no page reload or upload needed.
+
+> Note: If the Install & Activate button is greyed out or replaced with a license prompt, your FluentCart Pro license either hasn't been verified or has lapsed. Verify your license from Settings > Licensing and the installer will become available again.
+
+This makes the addon ecosystem feel like a first-class part of FluentCart — installing a premium addon now takes the same amount of effort as flipping a feature toggle.
 
 ---
 
@@ -601,6 +693,12 @@ After you have finished customizing your templates, you must save your changes.
 
 Scroll to the bottom of the page and click the **Save Settings** button. Your new layouts will now be used when generating these documents for future orders.
 
+### VAT Numbers on Generated PDFs ​
+
+When a customer provides a VAT number at checkout, FluentCart automatically renders it inside the **billing address block** of generated PDF receipts (Order Receipt, Renewal Receipt, Refund Notice, and Invoice). You don't need to edit the template or add a custom shortcode — the VAT line appears under the customer's address only when a VAT number is present, so B2C receipts are unaffected.
+
+This makes the documents compliance-ready for B2B customers in the EU, UK, and other VAT jurisdictions. See [PDF Invoice Templates](/guide/settings-configuration/email-configuration/pdf-invoice) for the full PDF customization workflow.
+
 ---
 
 ## Licensing Settings ​
@@ -636,6 +734,20 @@ The Licensing Settings section displays important information about your license
 - **Expiration Date:** Displays when your current license will expire.
 - **Support Status:** Indicates whether you have access to premium support.
 - **Updates Status:** Shows whether you can receive automatic updates.
+
+## Installing Licensed Addons in One Click ​
+
+Once your FluentCart Pro license is verified on this page, every premium addon included with your license becomes installable directly from inside FluentCart — no manual download, ZIP upload, or activation step required.
+
+To install an addon:
+
+1. Go to **FluentCart Pro > Settings > Features & Addon**.
+2. Scroll to the **Plugin Addons** section.
+3. Click the **Install & Activate** button on the addon card you want to install.
+
+FluentCart pulls the addon directly from the licensed update server and activates it for you in a single step. For the full walkthrough, see [Features & Addons → Installing Licensed Addons](/guide/settings-configuration/features-addons#installing-licensed-addons-one-click-installer).
+
+> Note: If your license expires, the one-click installer is disabled until the license is reverified. The addons you've already installed continue to run, but new installs and updates are paused until you renew.
 
 ## Troubleshooting ​
 
