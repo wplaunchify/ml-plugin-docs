@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T07:01:44.067Z",
+  "last_updated": "2026-05-03T07:36:36.818Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -613,16 +613,31 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-04-26T07:35:45.950Z",
-      "page_count": 7,
+      "last_scraped": "2026-05-03T07:36:36.818Z",
+      "page_count": 56,
       "categories": [
         "about-us",
         "apps",
         "blog",
         "bundles",
+        "cart",
+        "de",
+        "disclaimer",
+        "el",
+        "es",
+        "features",
+        "fooevents-ultimate-event-checklist",
         "fr",
+        "it",
+        "my-account",
         "nl",
-        "pricing"
+        "pl",
+        "pricing",
+        "privacy-statement-us",
+        "products",
+        "pt",
+        "reviews",
+        "terms-and-conditions"
       ]
     },
     {
