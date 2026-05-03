@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T20:14:23.846Z",
+  "last_updated": "2026-05-03T20:18:51.200Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -796,7 +796,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-01T08:17:03.268Z",
+      "last_scraped": "2026-05-03T20:18:51.200Z",
       "page_count": 0,
       "categories": []
     },
