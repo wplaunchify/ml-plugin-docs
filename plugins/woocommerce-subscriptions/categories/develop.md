@@ -2688,7 +2688,7 @@ We recommend reading the [Store Owner Guide to the Failed Payment Retry System](
 
 ## Retry System Components
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The retry system is made up of a number of different components, each of which implements a distinct aspect of the retry system. These components are:
 
@@ -2793,7 +2793,7 @@ WCS_Table_Maker
 
 ## Retry Process Flow
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The Store Owner Guide provides a non-technical overview of the [Retry Process](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-2). This section provides a technical guide, including details of hooks involved in the process.
 
@@ -2993,7 +2993,7 @@ WC_Subscription->payment_failed()
 
 ## Customizing the Retry Process
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The retry process is based on a set of retry rules, as explained in the [Store Owner Guide to the Failed Payment Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-3).
 
@@ -3003,7 +3003,7 @@ These rules can be customized by changing both the default rule applied to all f
 
 ### Rule Data Structure
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Retry rule data can take two forms:
 
@@ -3121,7 +3121,7 @@ If implementing a custom rule class, either extend WCS_Retry_Rule or be sure to 
 
 ### Custom Storewide Rules
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The retry system uses a default set of rules for managing all failed payments in the store. These rules are defined in 
 ```
@@ -3225,7 +3225,7 @@ add_filter( 'wcs_default_retry_rules', 'eg_my_custom_retry_rules' );
 
 ### Custom Individual Rule
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 You may wish to apply different retry rules for different products, billing schedules, payment amounts or other conditions. To do this, you can customize a specific retry rule based on the order ID and its position in the retry queue.
 
@@ -3365,19 +3365,19 @@ add_filter( 'wcs_get_retry_rule', 'eg_my_custom_retry_rule', 10, 3 );
 
 ## Testing the Retry System
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 After creating custom retry rules, or to check whether your gateway is compatible with the retry system, you can test the retry system with the following process.
 
 ### Step 1: Enable the Retry System
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Before testing, ensure that you have [enabled the Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-1) in your store.
 
 ### Step 2: Trigger a Failed Recurring Payment
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Depending on your gateway, the way to trigger a recurring payment failure will differ. For [Stripe](https://woocommerce.com/products/stripe/) and other payment gateways that support [admin payment method changes](https://woocommerce.com/document/subscriptions/payment-gateways/#advanced-features) you can:
 
@@ -3394,7 +3394,7 @@ This creates a renewal order, records the failed payment on that renewal and app
 
 ### Step 3: Monitor Retries
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 At this stage, you can view the details of the *Pending* retry via the interfaces detailed in the [Store Manager guide to Monitoring Retries](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-4).
 
@@ -3405,7 +3405,7 @@ If your retry rule worked, you should now be able to see:
 
 ### Step 4: Trigger the Retry (Optional)
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 If you do not want to wait until the retry is triggered automatically, you can trigger the retry immediately.
 
@@ -3438,7 +3438,7 @@ Subscriptions uses [Action Scheduler](https://actionscheduler.org/) for managing
 
 ## Retry Migration to Custom Table
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 When the retry system was introduced in 2.1, retries were a custom post type and were stored in the WordPress posts and postmeta tables. To improve the performance of the retry system, in version 2.4 we introduced a custom table to store the retry data. With the introduction of this custom table, we needed to migrate the existing data.
 
@@ -3474,7 +3474,7 @@ WCS_Retry_Manager
 
 ### How do I track the progress of the retry data migration?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The status of the retry data migration is displayed in the System Status.
 
@@ -3485,7 +3485,7 @@ The status of the retry data migration is displayed in the System Status.
 
 ### How can I tell how many retries still need to be migrated?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 To see how many retries you still have stored in the posts table:
 
@@ -6070,7 +6070,7 @@ This guide provides an overview of the decisions made to implement multiple subs
 Before continuing with this guide, it will be helpful to understand the [difference between a subscription product and a subscription](https://woocommerce.com/document/subscriptions/subscription-product-vs-subscription/) and the [subscription renewal process](https://woocommerce.com/document/subscriptions/renewal-process/).
 ## Goals for Multiple Subscriptions
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 The reasons store managers requested it be possible for customers to purchase different subscription products were:
 - to prevent making customers repeat the entire checkout process for each subscription product they wished to purchase;
 - to reduce payment gateway fees by processing the sign-up and renewal of multiple products in the one transaction (most payment gateways charge a flat per transaction fee); and
@@ -6078,7 +6078,7 @@ The reasons store managers requested it be possible for customers to purchase di
 
 ## Challenges of Multiple Subscriptions
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 Designing a system for purchasing products with thousands of possible combinations of billing schedule creates a number of challenges.
 
 The key challenges in designing a system to handle multiple subscriptions were:
@@ -6088,7 +6088,7 @@ The key challenges in designing a system to handle multiple subscriptions were:
 
 ## Solution: Grouping Subscriptions
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 After examining a number of alternatives, the method chosen to make it possible to purchase different subscription products was to group each subscription product with an equivalent billing schedule into the one subscription.
 
 For example, if a customer purchases 2 x monthly subscriptions and 3 x yearly subscriptions in the one transaction, only 2 x subscriptions would be created – one with two line items for the monthly subscription products and one with three line items for the annual subscription products.
@@ -6096,7 +6096,7 @@ For example, if a customer purchases 2 x monthly subscriptions and 3 x yearly su
 This allows recurring shipping costs to be accurately calculated and displayed during sign-up, while also consolidating renewal orders and reducing payment gateway fees for subscription products purchased in the same transaction.
 ### Details of Grouping
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 WooCommerce Subscriptions will create the minimum number of subscriptions possible. To do this, it will group subscriptions based on each product’s:
 - billing interval and period, to make sure the billing schedule for all products is honoured.
 - subscription length, to make sure the end date can be set correct for each subscription product.
@@ -6115,7 +6115,7 @@ On the other hand, none of the following subscription products would be grouped 
 
 ### Cart Grouping
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 The lifecycle for a subscription product is: **Product > Cart > Checkout > Order > Subscription**.
 
 To support the purchase of multiple subscription products in the one transaction, the cart therefore needs to be able to contain multiple subscription products.
@@ -6123,7 +6123,7 @@ To support the purchase of multiple subscription products in the one transaction
 As the products will be grouped into subscriptions after checkout, the products are also grouped in the cart based on billing schedule. This also allows for the recurring totals to be displayed based on the grouped billing schedules, reducing the number of rows that need to be displayed to the customer to accurately present the recurring tax, shipping and total.
 ### Grouped Recurring Total Display
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 Subscriptions v1.5 displayed the recurring totals alongside the order totals on the cart and order review pages. However, by supporting multiple subscriptions in the one transaction, different billing schedules need to be displayed to the customer to fully communicate the commitment of the subscription.
 
 ![Subscription v1.5 Recurring Total Display](https://woocommerce.com/wp-content/uploads/2015/09/old-subscription-recurring-total-display.png?strip=all&w=704)Subscription v1.5 Recurring Total Display
@@ -6138,7 +6138,7 @@ A new **Recurring Totals** section was added below the existing order totals sec
 ![Subscriptions v2.0 Recurring Total Display](https://woocommerce.com/wp-content/uploads/2015/09/new-subscription-recurring-total-display.png?strip=all&w=704)Subscriptions v2.0 Recurring Total Display
 ### Order Grouping
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 As mentioned above, after purchasing multiple subscription products in the same transaction, the products with the same billing schedule will be grouped together as line items on the one subscription object (as opposed to each subscription having only one product/line item associated with it).
 
 For example, the three screenshots below show:
@@ -6147,7 +6147,7 @@ For example, the three screenshots below show:
 
 ### Issues with Grouping
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 No design is perfect, and as such, this implementation did introduce some new issues. These issues and the solutions are:
 - a customer could no longer cancel subscriptions to an individual item. This was resolved by adding a [remove item button on the View Subscription page](https://woocommerce.com/document/subscriptions/version-2/#remove-single-item) to allow the customer to remove individual items.
 - switching was previously done per subscription, which would not work with a subscription that has multiple line items. As a result, this process has been updated to be [per item](https://woocommerce.com/document/subscriptions/version-2/#section-6), instead of per subscription.
@@ -6155,13 +6155,13 @@ No design is perfect, and as such, this implementation did introduce some new is
 
 ## Alternative Implementation
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 Before deciding on Grouping Subscription products, alternative implements were explored, including an implementation which created a separate subscription for each subscription product purchased in the transaction.
 
 For example, if a customer was to purchase 2 x monthly subscriptions and 3 x yearly subscriptions in the one transaction, 5 x subscriptions would be created with each including a single line item for that product.
 ### Issues with this Design
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 This system would be most similar to the existing design, but it did not take full advantage of the flexibility of the changes being introduced in v2.0. It applied the constraints of the previous designs to the new architecture.
 
 Furthermore, to achieve the goal of consolidating renewal orders and reducing payment gateway fees, this system would need a batch processing system to group each subscription’s renewals into the one order.
@@ -6169,7 +6169,7 @@ Furthermore, to achieve the goal of consolidating renewal orders and reducing pa
 Batch processing created a major issue: shipping could not accurately be calculated and agreed to on checkout at the time of sign-up. Because some shipping methods charge per order, and subscriptions were batched into renewal orders, any time a customer purchased new subscriptions or cancelled existing subscriptions, the shipping amount would be different at renewal to the time of sign-up. This issue was found unavoidable and would ultimately introduce an unfixable bug. As a result, create a single subscription and batch processing all renewals was not chosen as the final implementation.
 ## Alternative Recurring Totals Display
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 A few options were explored for how to display recurring totals for multiple subscriptions, including:
 1. do not display the totals;
 2. continue to display recurring totals inside of the order totals section;

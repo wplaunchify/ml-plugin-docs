@@ -126,9 +126,9 @@ If a customer wants todeactivate (or activate)  auto–renewals on their Subscri
 
 Under **My Account > Subscriptions** (click on the specific subscriptions), subscribers click the toggle to either activate or deactivate auto-renewals. The images below show how it looks in both states:
 
-![](https://woocommerce.com/wp-content/uploads/2020/08/user-myaccount-autorenew.png?w=950)Automattic renewals are activated
+![](https://woocommerce.com/wp-content/uploads/2020/08/user-myaccount-autorenew.png?w=950)Automatic renewals are activated
 
-![](https://woocommerce.com/wp-content/uploads/2020/08/user-myaccount-autorenew-off.png?w=950)Automattic renewals are deactivated
+![](https://woocommerce.com/wp-content/uploads/2020/08/user-myaccount-autorenew-off.png?w=950)Automatic renewals are deactivated
 
 					
 		

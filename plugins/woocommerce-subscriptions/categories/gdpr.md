@@ -13,7 +13,7 @@
 			Woo Subscriptions supports the tools that enable store managers to comply with the[General Data Protection Regulation](https://eugdpr.org/)(GDPR). This support is built on the functionality included in[WooCommerce](https://woocommerce.wordpress.com/2018/05/04/woocommerce-3-4-gdpr-features/)and[WordPress](https://wordpress.org/news/2018/05/wordpress-4-9-6-privacy-and-maintenance-release/). Below is information on how these two handle customer data.
 ## Data Subscriptions Uses
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 Subscriptions accesses and records data similar to[WooCommerce](https://woocommerce.wordpress.com/2018/05/04/woocommerce-3-4-gdpr-features/). The data used by the two includes:
 - Subscription ID Number
 - Date Created
@@ -29,7 +29,7 @@ Subscriptions accesses and records data similar to[WooCommerce](https://woocomme
 
 ### Data retention
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 #### Inactive user data retention
 
@@ -49,11 +49,11 @@ To find this setting:
 ![Retain Ended Subscriptions Setting](https://woocommerce.com/wp-content/uploads/2019/03/gdpr_2_data_retention.png?strip=all&w=704)Retain Ended Subscriptions Setting
 ## Export or Erase Customer Data
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 The ability to[export](https://codex.wordpress.org/Tools_Export_Personal_Data_Screen)or[erase](https://codex.wordpress.org/Tools_Erase_Personal_Data_Screen)customer data is built into tools in[WordPress](https://wordpress.org/news/2018/05/wordpress-4-9-6-privacy-and-maintenance-release/). We supports these tools by including subscription data as a part of the data that is exported or erased.
 ### Data export
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 When data is exported, the user is given a file that contains their data. Both extensions add each subscription the user has, and data that is connected to each subscription, to this file. Similarly, when data is erased, each extension erases this data.
 
 Example of the Woo Subscriptions portion of a data export:
@@ -61,7 +61,7 @@ Example of the Woo Subscriptions portion of a data export:
 ![Example Subscription Related Portion of Data Export](https://woocommerce.com/wp-content/uploads/2019/03/gdpr_3_data_export.png?strip=all&w=704)Example Subscription Related Portion of Data Export
 ### Data erasure
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 #### Data erasure setting
 
@@ -87,7 +87,7 @@ To erase personal data on subscriptions:
 ![Bulk Remove Personal Data from Subscriptions](https://woocommerce.com/wp-content/uploads/2019/03/gdpr_5_bulk_edit.png?strip=all&w=704)Bulk Remove Personal Data from Subscriptions
 ## Privacy Policy Guide
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 In order to ensure store managers have what they need to comply with the GDPR, WordPress includes a[privacy policy guide](https://wordpress.org/news/2018/05/wordpress-4-9-6-privacy-and-maintenance-release/). Subscriptions adds a section to this guide to help store managers understand what information Subscriptions uses and be better able to write their own privacy policies.
 
 To see Subscriptions’ section in the privacy policy guide:
