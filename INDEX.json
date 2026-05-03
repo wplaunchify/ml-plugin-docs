@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T18:13:35.612Z",
+  "last_updated": "2026-05-03T18:14:30.056Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -515,7 +515,7 @@
       "slug": "fluentsupport",
       "name": "Fluent Support",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-04-26T18:10:52.500Z",
+      "last_scraped": "2026-05-03T18:14:30.056Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
