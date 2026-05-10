@@ -271,7 +271,7 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 **Source:** [https://fluentsupport.com/docs/managing-tickets-using-slack/](https://fluentsupport.com/docs/managing-tickets-using-slack/)
 
-**FluentSupport** allows you to manage your tickets using Slack. You can see your New Tickets notification in your Slack account and reply to your ticket from Slack. This article will guide you through how to connect your **Fluent Support**with**Slack** to manage your tickets in Slack.
+**Fluent Support** allows you to manage your tickets using Slack. You can see your New Tickets notification in your Slack account and reply to your ticket from Slack. This article will guide you through how to connect your **Fluent Support**with**Slack** to manage your tickets in Slack.
 
 ## Fluent Support Slack Settings
 
