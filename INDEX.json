@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T18:29:15.186Z",
+  "last_updated": "2026-05-10T19:25:25.005Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -309,7 +309,7 @@
       "slug": "fluentaffiliate-pro",
       "name": "FluentAffiliate Pro",
       "documentation_url": "https://fluentaffiliate.com/docs/documentation/",
-      "last_scraped": "2026-05-03T19:25:02.640Z",
+      "last_scraped": "2026-05-10T19:25:25.005Z",
       "page_count": 0,
       "categories": []
     },
