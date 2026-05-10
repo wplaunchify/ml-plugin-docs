@@ -508,6 +508,8 @@ One-Time Setup
 )
 - **Setup fee amount** — The dollar amount charged once at signup
 
+> 📝 Note: The setup fee is automatically included as a separate line item on the customer's purchase confirmation page, invoice receipt (PDF), and order confirmation email — so customers always see exactly what they were charged at signup, separate from their recurring subscription amount.
+
 **Calculate profit/cost** *(Toggle — Optional)* Toggle on to track **Cost per item**, **Profit**, and **Margin** for internal reporting on this subscription product.
 
 > 📝 Note: The SKU and Shipping sections work exactly the same way in subscription mode as they do for one-time payments. Enter your product's SKU, select a package, and add the product weight — those details don't change based on billing type.
@@ -669,6 +671,8 @@ Activation Fee
 
 )
 - **Setup fee amount** — The one-time charge in dollars
+
+> 📝 Note: Just like with Simple pricing, the variation's setup fee is rendered as its own line item on the purchase confirmation page, invoice receipt (PDF), and order confirmation email — keeping the one-time charge transparent and clearly separated from the recurring billing amount.
 
 **Calculate profit/cost** *(Toggle — Optional)* Track your internal **Cost per item**, **Profit**, and **Margin** for this subscription variation.
 

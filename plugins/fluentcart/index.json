@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-05-03T07:01:44.062Z",
-  "total_pages": 131,
+  "last_scraped": "2026-05-10T07:05:55.213Z",
+  "total_pages": 132,
   "failed_urls_count": 8,
   "sections": [
     {
@@ -259,7 +259,7 @@
       "slug": "payments-checkout",
       "url": "https://docs.fluentcart.com/guide/payments-checkout/",
       "file": "categories/payments-checkout.md",
-      "page_count": 12,
+      "page_count": 13,
       "pages": [
         {
           "title": "Configuring Payments Overview ​",
@@ -304,6 +304,10 @@
         {
           "title": "Razorpay Settings ​",
           "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/razorpay-settings"
+        },
+        {
+          "title": "Square Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/square-settings"
         },
         {
           "title": "Stripe Settings ​",

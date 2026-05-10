@@ -533,6 +533,34 @@ $data['item']['line_meta']
 
  when you need to show per-item details such as gift messages, engraving text, license information, booking dates, or other custom options stored with the line item.
 
+## Customer Profile ​
+
+### Add a Custom Menu Item to the Customer Profile ​
+
+Use the 
+```
+addCustomerDashboardEndpoint()
+```
+
+ method to add a custom menu item to the FluentCart customer profile dashboard.
+
+Loading gist...If you use 
+```
+render_callback
+```
+
+, FluentCart will display the callback output for the menu item. If you want to show a specific WordPress page instead, skip the 
+```
+render_callback
+```
+
+ method and provide the 
+```
+page_id
+```
+
+.
+
 ---
 
 ## Customize Store with Bricks ​

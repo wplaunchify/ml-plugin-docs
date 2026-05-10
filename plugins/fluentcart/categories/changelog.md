@@ -12,6 +12,28 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCart.
 
+## FluentCart v1.3.26 ​
+
+*Released on May 5, 2026*
+
+✨ Newly Added🐞 Bug fixes🚀 Improvementsmarkdown
+```
+• Adds Square Payment gateway
+• Adds Private products support in discounts, coupons, and order bumps
+• Adds Subscription setup fee to receipts and emails
+```markdown
+```
+• Fixes Order/invoice dates showing previous day in profiles
+• Fixes Coupon expiration timezone mismatch
+• Fixes Duplicate success toast on product update
+• Fixes Email preview created_at DateTime issue
+• Fixes Safari chevron icon visibility issue
+• Fixes Menu button and dropdown styling issues
+• Fixes LearnDash course expiry resolution for users
+```markdown
+```
+• Improves button feedback with visual indicators only
+```
 ## FluentCart v1.3.23 ​
 
 *Released on April 28, 2026*
