@@ -2,7 +2,7 @@
   "plugin_slug": "fooevents-bookings",
   "plugin_name": "FooEvents Bookings",
   "documentation_url": "https://www.fooevents.com",
-  "last_scraped": "2026-05-03T05:10:02.471Z",
+  "last_scraped": "2026-05-10T05:15:00.473Z",
   "total_pages": 56,
   "failed_urls_count": 2,
   "sections": [
