@@ -156,98 +156,64 @@ If you have any further questions about this guide, please don’t hesitate to [
 
 **Source:** [https://fluentcommunity.co/docs/membership-invitation-for-spaces/](https://fluentcommunity.co/docs/membership-invitation-for-spaces/)
 
-FluentCommunity allows you to **Invite Members** to join any specific **Space** using the **Invitation** feature. This article covers the detailed process of **Inviting Members** for **Spaces**.
+Growing your community is an exciting milestone! FluentCommunity provides a dedicated **Invitations** feature that allows you to easily generate special links to invite new members to join a specific *Space*.
 
-## Invite Members to a Space
+This guide will walk you through exactly how to create, manage, and share membership invitations.
 
-First, go to the **Spaces**section from the **FluentCommunity Navbar** and open a**Desired Space**by clicking the **View Space** button where you want to invite members to join.
+- You must be logged into your WordPress dashboard.
+- You must have **Administrator** or **Moderator** privileges for the specific Space you want to invite members to.
 
-> You can also create a new space by clicking the New Space button in the top right corner. To learn the detailed process of creating a New Space, read this Documentation.
+### Step 1: Navigating to the Invitations Menu
 
-For example, I selected the Announcement space to invite the members to join it.
+To start bringing people in, you first need to access the invitation dashboard for your chosen Space.
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/12/1.-open-desired-Space.webp)
+Go to your community portal and select **Spaces** from the main top navigation menu.
 
-Now, go to the **Members** section and click the **Invitation** button.
+Find the *Space* you want to grow and click the **View Space** button.
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/12/2.-Members-section-and-Invitation-button.webp)
+![](https://fluentcommunity.co/wp-content/uploads/2024/12/member-invitation-1-scaled.webp)
 
-Here, you will get Three major tabs. These are:
+Once inside the Space, click on the **Members** tab located in the top-right menu.
 
-1. Invitations
-2. New Invite
-3. New Invitation Link
+Click the **Invitations** button (located right next to the *Add Member* button).
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/12/3.-All-Invitations-tab.webp)
+![](https://fluentcommunity.co/wp-content/uploads/2024/12/member-invitation-2-scaled.webp)
 
-**All three tabs mentioned above are explained below:**
+### Step 2: Monitoring Active Invitations
 
-#### 1. Invitations
+When you open the Invitations area, you will default to the **Invitations** tab. This is your command center for tracking the status of all the invites you have sent out.
 
-Under this tab, you will see detailed information about the Invitations you send to add members.
+Here is what you will find in this dashboard:
 
-- **Invitee:**Here**,**you can see the list of all invitees you invited through email and the invitation links you created to add members to this space.
+- **Invitee:** Displays the list of all the invitation links you have created or the specific users you have invited.
+- **Invited By:** Shows the user profile of the host or admin who generated the invitation.
+- **Status:** Quickly check if a specific invitation link is *Pending*, *Accepted*, *Active*, or *Expired*.
+- **Actions:** Need to clean up? You can delete any specific invitation from the list here.
+- **Filter (Top Right):** Use the dropdown menu to filter your list based on the invitation status, helping you quickly find expired or pending links.
 
-- **Invited By**: Here, you can see the user profile of the inviter/host.
+![](https://fluentcommunity.co/wp-content/uploads/2024/12/member-invitation-3-scaled.webp)
 
-- **Status**: You can check the status of your invitation to see if it has been **Pending**, **Accepted**, **Active**, or **Expired**.
+### Step 3: Creating a New Invitation Link
 
-- **Actions**: From here, you can delete any specific invitation from the Invitee list. Also, can resend the email for pending invitations.
+Ready to bring in new faces? Generating a shareable link is the easiest way to invite groups of people to your Space.
 
-- **Filter**: With this option, you can filter the invitations based on their status (**Pending**, **Accepted**, **Active**, and **Expired**) by clicking the **Arrow Icon**.
+1. From the Invitations dashboard, click the **New Invitation Link** tab.
+2. **Invitation Link Title:** Give your link a clear name (e.g., “Spring 2026 VIP Invite”) so you can easily track it later in your dashboard.
+3. **Limit the number of uses:** Want to create an exclusive group? Enter a number here to cap how many people can use this specific link. Leave it empty for unlimited uses.
+4. **Expire Date:** Click the calendar field to set a specific date for the link to stop working. Leave it empty if you want the link to remain active permanently.
+5. Click the **Create Invitation Link** button.
 
-- **Pagination**: You can set how many invitations you want to see per page using the dropdown list by clicking the Arrow Icon in the below-left corner.
+![](https://fluentcommunity.co/wp-content/uploads/2024/12/member-invitation-4-scaled.webp)
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/12/4.-Invitations-tab.webp)
+Once created, simply copy the link and share it via email, social media, or direct message with the people you want to add!
 
-#### 2. New Invite
+![](https://fluentcommunity.co/wp-content/uploads/2024/12/member-invitation-5-scaled.webp)
 
-Under this tab, you will have the option to invite new members to the space through email.
+✨ **Note:** When users click your invitation link, the system is smart! If they are already logged into your community, they will be instantly added to the Space. If they are brand new, they will automatically be prompted with a friendly *Login/Registration* form to create their account before joining.
 
-- **Search for an existing user or invite by Email**: Here, you can add members from the existing community members or new user using their Email.
-
-- **Membership Role**: Here, you can specify the user’s role as either **Member**, **Moderator**, or **Admin**. For example, I selected the **Member** role for this user.
-
-Once you are done, click the **Add as a member**, and the member will be added to the space.
-
-![](https://fluentcommunity.co/wp-content/uploads/2024/12/5.-New-Invitee-tab.webp)
-
-To send email invitations to those who are not community users, enter the desired email in the search bar and click the **Send Email Invitation** button.
-
-![](https://fluentcommunity.co/wp-content/uploads/2024/12/6.-Send-Invitation-Email-button.webp)
-
-Here, provide the email address of the invitee you wish to invite. Plus, can set the invitee name so that you can find it easily later.
-
-Once you set everything, click the **Send Invitation**button and the invitation will be sent to the provided email address.
-
-![](https://fluentcommunity.co/wp-content/uploads/2024/12/7.-Send-Invitation-button.webp)
-
-#### 3. New Invitation Link
-
-Under this tab, you will have the option to invite members to join the space through the invitation link.
-
-- **Invitation Link Title**: Here, set a title for your Invitation Link as per your requirements.
-
-- **Limit the number of uses**: Here, you can set the limit on the number of users who can join the space through this link. For example, I set a limit of 10, i.e., the link will expire after 10 users have joined the space.
-
-- **Expire Date (Leave empty for no expiration)**: Here, you can also set a specific date for the expiration of this link. Keep it empty if you don’t want your link to be expired ever.
-
-Once you are done, click the**Create Invitation Link** button, and the **Invitation Link** will be created.
-
-![](https://fluentcommunity.co/wp-content/uploads/2024/12/8.-New-Invitation-Link-tab.webp)
-
-Now, copy the link and send it to the users you want to add to the space.
-They can join through this link by accepting the invitation.
-
-![](https://fluentcommunity.co/wp-content/uploads/2024/12/9.-Copy-the-Invitation-Link.webp)
-
-In this case, if they are already logged-in community users, they will be directly redirected to the space after clicking the link.
-
-If not, they will see the **Login**/**Registration Form** for **Login** or **Signup**to join the space as shown in the screenshot below.
+🔍 **Example:** If you are running a special promotion, you can create a link titled “Promo 50,” limit the uses to exactly 50 people, and set it to expire on Friday. It’s a great way to build urgency and excitement!
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/12/10.-Login-or-Signup-form-.webp)
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).
 
 ---
 
@@ -390,48 +356,110 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 **Source:** [https://fluentcommunity.co/docs/manage-members-of-space/](https://fluentcommunity.co/docs/manage-members-of-space/)
 
-FluentCommunity makes it easy to manage members within each space, giving you control over member roles, permissions, and visibility. Here’s how you can manage members in a space:
+Here is the updated documentation, completely rewritten in the friendly, clear, and structured DocuFluent style, incorporating all the new features shown in your screenshots!
 
-## Accessing Member Management for a Space
+## Managing Space Members
 
-Go to the specific **Space** you want to manage. Within the Space, find **Members** in the top menu and click on it. Now click on the **Invite** button to add members to Space.
+FluentCommunity makes it incredibly easy to build and manage your audience inside each *Space*. Whether you are adding new people, assigning special roles to your team, or removing inactive users, you have full control over who sees and interacts with your content.
 
-- In the Members section, you’ll see a list of all members currently part of the Space. Here you will also see a search field to search your existing members.
-- Each member’s role (e.g., Admin, Moderator, Member) and activity status will be displayed with their profile.
+This guide will walk you through everything you need to know about managing the members of your Space!
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/Member-1-scaled.webp)
+- You must be logged into your WordPress dashboard.
+- You must have **Administrator** or **Moderator** privileges for the specific Space you want to manage.
 
-#### Adding New Members
+### Step 1: Navigating to Your Member List
 
-To add new members, click on the **Invite** button.
+To start managing your community, you first need to access the dedicated member area for your specific Space.
 
-A pop-up will appear, allowing you to search for your existing WordPress site members and invite them to join the Space also you will get the **Role** option here for the members.
+1. Go to your community portal and click on **Spaces** from the main top navigation menu.
+2. Find the specific Space you want to manage and click the **View Space** button on its card.
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/Member-34.webp)
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/add-member-1-scaled.webp)
 
-If you want to add any member who isn’t your WordPress site user then click on the **View Invitation**button. Here you will get the Invitation option to add the Members in your space.
+1. Once inside the Space, click on the **Members** tab located in the top-right menu area (next to *Posts* and *Documents*).
 
-Here give the **Email** and **Name** of the member whom you want to invite then click on the **Send Invitation** button.
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/add-member-2-scaled.webp)
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/Invite-member-.webp)
+Here, you will see a list of everyone currently in the Space. You can use the search bar to quickly find existing members, and you can easily see each person’s role (like Admin or Moderator) displayed directly under their name.
 
-#### Assigning Roles
+### Step 2: Adding New Members to Your Space
 
-Each member can be assigned specific roles within the Space, such as **Admin**, **Moderator**, or **Member**.
+Growing your community is easier than ever! FluentCommunity gives you four powerful ways to bring people into your Space.
 
-To change a member’s role, locate the member in the list, click the **Three-dot** button, and a pop will appear with the roles, select the desired role from the dropdown.
+Click the **Add Member** button to open the invitation menu. From here, you can choose one of the following four tabs based on your needs:
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/Change-Membership-1.png)
+#### Method A: WP Users (Add Existing Site Users)
 
-#### Removing Members
+This is the perfect method if the person you want to add already has an account on your WordPress website.
 
-If you need to remove a member from the Space, find the member in the list, click the **Three-dot**button next to their name then select the **Remove Member** option, and confirm the removal.
+1. Click the **WP Users** tab.
+2. Search for the user’s name or email in the **Users** field.
+3. Select the **Membership Role** you want to give them (e.g., Member, Moderator, or Admin).
+4. Click **Add as member**.
 
-The removed member will no longer have access to this specific Space but will still be a part of the community if their account is active.
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/add-member-3-scaled.webp)
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/Member-remove--scaled.webp)
+#### Method B: From Space/Course (Bulk Import)
 
-If you have any further questions about this guide, please don’t hesitate to [contact us](https://wpmanageninja.com/support-tickets/).
+Do you already have a thriving Course or another Space? You can easily copy all of those members over at once!
+
+1. Click the **From Space/Course** tab.
+2. Click the dropdown menu and select the source Space or Course.
+3. Click **Import Members**.
+
+**Note:** All users imported using this method will automatically be added with the standard “Member” role.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/add-member-4-scaled.webp)
+
+#### Method C: CSV Import (Upload a List)
+
+If you have an external list of people you want to add (like from a spreadsheet), you can upload them all in one click using a CSV file.
+
+1. Click the **CSV Import** tab.
+2. Drag and drop your 
+```
+.csv
+```
+
+ file into the upload area, or click to browse your computer.
+3. Ensure your file has the correct columns: **Name**, **Email**, and **Username**. You can download the *Sample CSV* provided on the screen to format your list perfectly!
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/add-member-6-scaled.webp)
+
+#### Method D: CRM Tag (Integrate with FluentCRM)
+
+If you use FluentCRM, you can automatically pull in contacts based on the tags they have in your CRM!
+
+1. Click the **CRM Tag** tab.
+2. Select the specific **FluentCRM Tag** from the dropdown menu (e.g., “Subscriber” or “VIP”).
+3. **Important:** If these contacts do not have user accounts on your website yet, check the box that says **Create WordPress accounts for contacts without an existing account**.
+4. Click **Add Members**.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/add-member-7-scaled.webp)
+
+### Step 3: Understanding and Assigning Roles
+
+To keep your Space running smoothly, you can assign special roles to your trusted members. Here is a quick breakdown of what each role means:
+
+- **Admin:** Has total control over the Space. They can change Space settings, delete the Space, and manage all members and posts.
+- **Moderator:** The peacekeepers! Moderators can delete inappropriate comments, remove posts, and help manage the day-to-day flow of conversation.
+- **Member:** The standard role. Members can read, react, comment, and create standard posts (depending on your Space’s privacy settings).
+
+**How to change a role:**
+
+1. Locate the member in your Space’s member list.
+2. Click the **Three-dot** button next to their profile.
+3. Select the desired role (Admin, Moderator, or Member) from the dropdown menu. The change saves automatically!
+
+### Step 4: Removing Members
+
+If you ever need to remove someone from your Space, the process is quick and discreet.
+
+1. Find the member in your list.
+2. Click the **Three-dot** button next to their name.
+3. Select **Remove Member** from the dropdown menu and confirm your choice.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/add-member-8-scaled.webp)
 
 ---
 

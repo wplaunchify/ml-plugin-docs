@@ -8,6 +8,32 @@
 
 **Source:** [https://fluentcommunity.co/docs/changelog/](https://fluentcommunity.co/docs/changelog/)
 
+= 2.4.01 (Date: May 01, 2026) =- Fixed: Issue with Custom CSS Sanitization
+- Fixed: Checkbox Checkmark Not Centered Inside the Box
+- Fixed: Icon Selector Hidden for System Menu Items in Menu Group Settings
+
+= 2.4.0 (Date: Apr 30, 2026) =- Introduced: Bulk Add Members and Students from Multiple Sources
+- Added: Default-Collapse Sidebar Groups Option in Settings
+- Added: URL Autolink Support in Post Editor
+- Added: Create New Space via Slide-Out Drawer
+- Added: Fluent Player Share Links in Community Media
+- Added: Confirmation Modal Before Removing Post Preview Image
+- Added: Filter Hooks for Duplicate Post and Comment Check
+- Improved: Active Sidebar Group Auto-Expands on Navigation
+- Improved: UI and UX with more Smoother Page Transitions
+- Security: Hardened Webhook Key Generation and Rate Limiting
+- Security: Improved CSS and Input Sanitization Checks
+- Fixed: Approve Post Fails with Invalid Status Value Error
+- Fixed: Optional Custom Profile Field Values Not Resetting on Save
+- Fixed: Multiselect Custom Profile Field Values Wiped on Update
+- Fixed: Space Admin Options Disappear on Return Navigation
+- Fixed: Notification Links Not Navigating to Specific Comment
+- Fixed: Mobile Footer Not Visible on Block-Based Themes
+- Fixed: About Tab Inaccessible on Mobile for Non-Members
+- Fixed: Profile Feed Not Showing New Post Immediately
+- Fixed: Signup Buffering with FluentAuth
+- Fixed: RTL Profile Alignment and Course Lesson Padding
+
 = 2.3.0 (Date: Mar 18, 2026) =- Introduced: Custom Profile Fields
 - Added: CSV Export for Course Members and Quiz Result
 - Added: Search and Filter for Followers/Following
