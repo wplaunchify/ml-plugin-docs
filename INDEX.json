@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T06:56:29.952Z",
+  "last_updated": "2026-05-10T06:56:40.606Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -378,7 +378,7 @@
       "slug": "fluentcommunity",
       "name": "FluentCommunity",
       "documentation_url": "https://fluentcommunity.co/documentation/",
-      "last_scraped": "2026-05-10T06:02:31.746Z",
+      "last_scraped": "2026-05-10T06:02:31.744Z",
       "page_count": 76,
       "categories": [
         "administration",
@@ -500,7 +500,7 @@
       "slug": "fluentsmtp",
       "name": "FluentSMTP",
       "documentation_url": "https://fluentsmtp.com/documentation/",
-      "last_scraped": "2026-05-10T06:05:48.210Z",
+      "last_scraped": "2026-05-10T06:05:48.208Z",
       "page_count": 25,
       "categories": [
         "alerts",
@@ -1076,7 +1076,7 @@
       "slug": "simple-seo",
       "name": "Simple SEO",
       "documentation_url": "https://wordpress.org/plugins/simple-seo/",
-      "last_scraped": "2026-05-10T06:48:48.573Z",
+      "last_scraped": "2026-05-10T06:48:48.572Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1152,7 +1152,7 @@
       "slug": "woocommerce-smart-coupons",
       "name": "WooCommerce Smart Coupons",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-03T06:53:24.231Z",
+      "last_scraped": "2026-05-10T06:56:39.103Z",
       "page_count": 0,
       "categories": []
     },
@@ -1542,7 +1542,7 @@
       "slug": "wp-fusion-media-tools-addon",
       "name": "WP Fusion - Media Tools Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-05-10T06:52:33.069Z",
+      "last_scraped": "2026-05-10T06:52:33.026Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
@@ -1583,7 +1583,7 @@
       "slug": "wp-migrate-lite",
       "name": "WP Migrate Lite",
       "documentation_url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/",
-      "last_scraped": "2026-05-10T06:56:29.952Z",
+      "last_scraped": "2026-05-10T06:56:29.951Z",
       "page_count": 0,
       "categories": []
     },
