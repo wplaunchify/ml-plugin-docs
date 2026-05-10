@@ -1,7 +1,7 @@
 {
   "plugin_slug": "fooevents-multi-day",
   "plugin_name": "FooEvents Multi-Day",
-  "last_scraped": "2026-05-03T04:24:00.121Z",
+  "last_scraped": "2026-05-10T04:27:23.350Z",
   "total_pages": 56,
   "failed_urls": [
     "https://www.fooevents.com/cs/",
