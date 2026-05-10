@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T17:21:01.269Z",
+  "last_updated": "2026-05-10T17:22:51.822Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -450,7 +450,7 @@
       "slug": "fluentcrm-pro",
       "name": "FluentCRM Pro",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-05-06T08:19:21.421Z",
+      "last_scraped": "2026-05-10T17:22:51.822Z",
       "page_count": 0,
       "categories": []
     },
