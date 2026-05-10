@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-05-03T09:53:39.432Z",
-  "total_pages": 3749,
+  "last_scraped": "2026-05-10T09:53:53.680Z",
+  "total_pages": 3759,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,48 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3749,
+      "page_count": 3759,
       "pages": [
+        {
+          "title": "YouTube Shopping — Google for WooCommerce",
+          "url": "https://woocommerce.com/document/youtube-shopping-google-for-woocommerce/"
+        },
+        {
+          "title": "Product Badges and Labels",
+          "url": "https://woocommerce.com/document/product-badges-and-labels/"
+        },
+        {
+          "title": "Affiliates Marketing",
+          "url": "https://woocommerce.com/document/affiliate-marketing/"
+        },
+        {
+          "title": "Einvoicing Pro",
+          "url": "https://woocommerce.com/document/einvoicing-pro/"
+        },
+        {
+          "title": "Chat Buttons",
+          "url": "https://woocommerce.com/document/chat-buttons/"
+        },
+        {
+          "title": "PH Hide Shipping Methods & Rate Adjustment",
+          "url": "https://woocommerce.com/document/ph-hide-shipping-methods-and-rate-adjustment/"
+        },
+        {
+          "title": "Blacklist and Block Customers and Orders",
+          "url": "https://woocommerce.com/document/blacklist-and-block-customers-and-order/"
+        },
+        {
+          "title": "Adaptive Pricing",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/optimized-checkout-suite/adaptive-pricing/"
+        },
+        {
+          "title": "Real-Time Fraud Detection and Blocking",
+          "url": "https://woocommerce.com/document/real-time-fraud-blocking/"
+        },
+        {
+          "title": "Meow",
+          "url": "https://woocommerce.com/document/meow/"
+        },
         {
           "title": "Order Edit Logger",
           "url": "https://woocommerce.com/document/order-edit-logger/"
