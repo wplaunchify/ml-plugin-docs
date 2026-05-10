@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T10:29:03.236Z",
+  "last_updated": "2026-05-10T10:30:02.715Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -104,7 +104,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-05-10T10:24:22.609Z",
+      "last_scraped": "2026-05-10T10:24:22.608Z",
       "page_count": 0,
       "categories": []
     },
@@ -690,7 +690,7 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-05-03T10:24:03.714Z",
+      "last_scraped": "2026-05-10T10:30:01.377Z",
       "page_count": 56,
       "categories": [
         "about-us",
@@ -1591,7 +1591,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-05-10T10:29:03.236Z",
+      "last_scraped": "2026-05-10T10:29:03.234Z",
       "page_count": 5,
       "categories": [
         "export-tutor-lms-courses-google-sheets",
