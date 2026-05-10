@@ -971,7 +971,25 @@ The version numbers are broken into three, and sometimes four parts. For example
 			top: 5px;
 			word-spacing: 2px;
 			color: #fff;
-		}#### #3.47.10 - 4/21/2026
+		}#### #3.47.12 - 5/8/2026
+
+- ✨ New Added new "push" webhook action that lets a CRM trigger WP Fusion to push the user's WP meta to the CRM — the reverse of the existing update webhook. Supports an optional 
+```
+fields
+```
+
+ parameter (comma-separated list of WP or CRM field keys) to limit the sync, an async mode for queued processing, and lockout against concurrent update / update_tags / add webhooks for the same contact
+- ⚡️ Improved PMPro integration now runs at priority 20 and syncs the full user meta at checkout, so PMPro User Fields and Mailing Address add-on fields are pushed to the CRM for existing users at checkout (new users were already covered by the registration sync)
+- ⚡️ Improved HubSpot v1→v3 list ID safety net now uses the standard idmapping flow (sync_tags_v3 + /crm/v3/lists/idmapping) directly, anchors the migration cutoff to 2026-05-01 00:00 UTC so April 30 applies consistently across server timezones, and guards the mapping fetch against malformed JSON and non-200 responses
+- ⚡️ Improved Autonami / FunnelKit load_contacts hardening: handle WP_Error from get_contacts(), normalize the contacts array, and guard before foreach
+- 🔧 Fixed Fixed Autonami / FunnelKit Automations sync pagination — offset stayed at 0 between pages, causing sync_tags, sync_lists, and load_contacts to re-fetch page 1 endlessly on sites with 100+ tags
+- 🔧 Fixed Fixed FluentCRM (REST) bulk import returning no contacts when tags are stored by numeric ID. load_contacts() now uses GET /tags/{id} for numeric tag IDs and keeps the /tags?search= endpoint for slug-based tag keys
+
+#### #3.47.11 - 5/1/2026
+
+- 🔧 Fixed Fixed fatal error on admin pages for HubSpot sites that had not yet completed the v1→v3 list ID migration after the 4/30/2026 cutoff, caused by a missing get_v3_list_ids() method on the HubSpot CRM class
+
+#### #3.47.10 - 4/21/2026
 
 - ✨ New Added app disconnect functionality for HubSpot
 - ✨ New Added wpf_woo_memberships_sync_on_delete filter so snippets can block the "cancelled" status sync for specific WooCommerce Memberships plan IDs when a user membership is deleted
