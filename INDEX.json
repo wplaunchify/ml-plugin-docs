@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T08:39:39.533Z",
+  "last_updated": "2026-05-11T08:40:15.528Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -32,7 +32,7 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/resources/",
-      "last_scraped": "2026-05-10T14:25:04.034Z",
+      "last_scraped": "2026-05-11T08:40:13.268Z",
       "page_count": 0,
       "categories": []
     },
@@ -164,7 +164,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-05-10T23:17:05.755Z",
+      "last_scraped": "2026-05-10T23:17:05.754Z",
       "page_count": 0,
       "categories": []
     },
@@ -787,7 +787,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-11T08:39:39.533Z",
+      "last_scraped": "2026-05-11T08:39:39.532Z",
       "page_count": 0,
       "categories": []
     },
@@ -1160,7 +1160,7 @@
       "slug": "woocommerce-stripe-gateway",
       "name": "WooCommerce Stripe Gateway",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-11T08:39:06.691Z",
+      "last_scraped": "2026-05-11T08:39:06.690Z",
       "page_count": 0,
       "categories": []
     },
