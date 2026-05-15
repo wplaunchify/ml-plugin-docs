@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15T08:28:05.731Z",
+  "last_updated": "2026-05-15T08:28:41.223Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-05-14T08:23:34.661Z",
+      "last_scraped": "2026-05-14T08:23:34.660Z",
       "page_count": 0,
       "categories": []
     },
@@ -156,7 +156,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-05-15T08:28:05.731Z",
+      "last_scraped": "2026-05-15T08:28:05.730Z",
       "page_count": 0,
       "categories": []
     },
@@ -309,7 +309,7 @@
       "slug": "fluentaffiliate-pro",
       "name": "FluentAffiliate Pro",
       "documentation_url": "https://fluentaffiliate.com/docs/documentation/",
-      "last_scraped": "2026-05-14T08:22:26.984Z",
+      "last_scraped": "2026-05-14T08:22:26.983Z",
       "page_count": 0,
       "categories": []
     },
@@ -763,7 +763,7 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-13T08:27:12.029Z",
+      "last_scraped": "2026-05-13T08:27:12.028Z",
       "page_count": 0,
       "categories": []
     },
@@ -1152,7 +1152,7 @@
       "slug": "woocommerce-smart-coupons",
       "name": "WooCommerce Smart Coupons",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-10T06:56:39.103Z",
+      "last_scraped": "2026-05-15T08:28:39.156Z",
       "page_count": 0,
       "categories": []
     },
