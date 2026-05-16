@@ -1,11 +1,12 @@
 {
   "plugin_slug": "ame-toolbar-editor",
   "plugin_name": "AME Toolbar Editor",
-  "last_scraped": "2026-05-10T18:29:15.185Z",
+  "last_scraped": "2026-05-16T08:17:35.742Z",
   "total_pages": 0,
   "failed_urls": [
     "http://adminmenueditor.com/toolbar-editor/",
     "https://adminmenueditor.com/blog/",
+    "https://adminmenueditor.com/blog/upcoming-price-changes-2026/",
     "https://adminmenueditor.com/branding-add-on/",
     "https://adminmenueditor.com/checkout/",
     "https://adminmenueditor.com/contact/",
