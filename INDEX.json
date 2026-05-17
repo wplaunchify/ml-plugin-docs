@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T08:21:12.117Z",
+  "last_updated": "2026-05-17T08:31:10.368Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -292,7 +292,7 @@
       "slug": "fluentaffiliate",
       "name": "FluentAffiliate",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-05-17T07:51:00.086Z",
+      "last_scraped": "2026-05-17T07:51:00.084Z",
       "page_count": 52,
       "categories": [
         "admin-portal",
@@ -353,7 +353,7 @@
       "slug": "fluentcart",
       "name": "FluentCart",
       "documentation_url": "https://docs.fluentcart.com/guide/",
-      "last_scraped": "2026-05-17T07:09:13.228Z",
+      "last_scraped": "2026-05-17T07:09:13.224Z",
       "page_count": 135,
       "categories": [
         "browsing-history",
@@ -401,7 +401,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-05-17T07:06:25.674Z",
+      "last_scraped": "2026-05-17T07:06:25.673Z",
       "page_count": 0,
       "categories": []
     },
@@ -627,7 +627,7 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-05-17T07:49:41.836Z",
+      "last_scraped": "2026-05-17T07:49:41.832Z",
       "page_count": 55,
       "categories": [
         "about-us",
@@ -736,7 +736,7 @@
       "slug": "kadence-blocks",
       "name": "Kadence Blocks",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-05-12T08:30:45.415Z",
+      "last_scraped": "2026-05-17T08:31:08.349Z",
       "page_count": 0,
       "categories": []
     },
@@ -752,7 +752,7 @@
       "slug": "kadence-blocks-pro-extension",
       "name": "Kadence Blocks - PRO Extension",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-17T08:21:12.117Z",
+      "last_scraped": "2026-05-17T08:21:12.116Z",
       "page_count": 0,
       "categories": []
     },
@@ -909,7 +909,7 @@
       "slug": "learndash-lms-woocommerce-integration",
       "name": "LearnDash LMS - WooCommerce Integration",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-05-17T08:20:26.446Z",
+      "last_scraped": "2026-05-17T08:20:26.445Z",
       "page_count": 0,
       "categories": []
     },
@@ -1115,7 +1115,7 @@
       "slug": "uncanny-groups-for-learndash",
       "name": "Uncanny Groups for LearnDash",
       "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-      "last_scraped": "2026-05-17T08:19:43.541Z",
+      "last_scraped": "2026-05-17T08:19:43.540Z",
       "page_count": 0,
       "categories": []
     },
