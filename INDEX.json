@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T18:23:15.762Z",
+  "last_updated": "2026-05-17T18:24:42.286Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1155,7 +1155,7 @@
       "slug": "woocommerce-stripe-gateway",
       "name": "WooCommerce Stripe Gateway",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-11T08:39:06.690Z",
+      "last_scraped": "2026-05-17T18:24:42.286Z",
       "page_count": 0,
       "categories": []
     },
