@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T17:24:47.541Z",
+  "last_updated": "2026-05-17T17:24:57.766Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -336,7 +336,7 @@
       "slug": "fluentbooking",
       "name": "FluentBooking",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-05-17T17:24:47.541Z",
+      "last_scraped": "2026-05-17T17:24:47.533Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -450,7 +450,7 @@
       "slug": "fluentcrm-pro",
       "name": "FluentCRM Pro",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-05-10T17:22:51.821Z",
+      "last_scraped": "2026-05-17T17:24:55.981Z",
       "page_count": 0,
       "categories": []
     },
@@ -458,7 +458,7 @@
       "slug": "fluentforms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/documentation/",
-      "last_scraped": "2026-05-17T17:21:58.239Z",
+      "last_scraped": "2026-05-17T17:21:58.229Z",
       "page_count": 456,
       "categories": [
         "account-management",
@@ -915,7 +915,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-05-17T17:19:53.856Z",
+      "last_scraped": "2026-05-17T17:19:53.855Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1081,7 +1081,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-17T16:27:49.800Z",
+      "last_scraped": "2026-05-17T16:27:49.799Z",
       "page_count": 0,
       "categories": []
     },
@@ -1414,7 +1414,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-05-17T16:26:29.824Z",
+      "last_scraped": "2026-05-17T16:26:29.813Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
