@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T06:06:27.604Z",
+  "last_updated": "2026-05-17T06:09:44.625Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -500,7 +500,7 @@
       "slug": "fluentsmtp",
       "name": "FluentSMTP",
       "documentation_url": "https://fluentsmtp.com/documentation/",
-      "last_scraped": "2026-05-10T06:05:48.208Z",
+      "last_scraped": "2026-05-17T06:09:44.625Z",
       "page_count": 25,
       "categories": [
         "alerts",
