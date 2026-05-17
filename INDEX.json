@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T00:46:25.694Z",
+  "last_updated": "2026-05-17T00:50:08.346Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -80,7 +80,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-05-10T00:48:40.371Z",
+      "last_scraped": "2026-05-17T00:50:08.346Z",
       "page_count": 0,
       "categories": []
     },
