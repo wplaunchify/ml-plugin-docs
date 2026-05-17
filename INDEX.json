@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T11:24:45.382Z",
+  "last_updated": "2026-05-17T11:35:24.687Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -735,7 +735,7 @@
       "slug": "kadence-blocks",
       "name": "Kadence Blocks",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-05-17T08:31:08.349Z",
+      "last_scraped": "2026-05-17T11:35:22.383Z",
       "page_count": 0,
       "categories": []
     },
