@@ -104,48 +104,50 @@ This article will guide you through the whole process of adding the **Repeat Con
 
 To learn how to add the Repeat Container field to the Fluent Forms, follow the steps with the screenshots below –
 
-First, go to****the**Forms**section from the **Fluent Forms Navbar,**choose****a****desired**Form,**and click the **Pencil/Edit** icon to open the **Editor** page of that form.
+First, go to the **Forms**section from the **Fluent Forms Navbar,**choose the desired **Form,**and click the **Pencil/Edit** icon to open the **Editor** page of that form.
 
-> If you do not have any existing forms, read the Create a Form from Scratch or Create a Form using Templates documentation to create a new one. For example, I choose an existing form to show the whole process.
+> If you do not have any existing forms, read the Create a Form from Scratch or Create a Form using Templates documentation to create a new one.
 
 > 
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/1.-Open-Desired-Field-scaled.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/edit-form-1-scaled.webp)
 
 Once you are on the **Editor** page, click the **Plus** **Icon** in your form editor and open the **Container** input fields module. The **Container** option is also in the right sidebar under the **Input** **Fields** tab.
 
 Now, choose the desired **Repeat Container**by clicking on it or **Drag & Drop** it into your editor.
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/2.-Add-repeat-container-field-scaled.webp)
+*Note: Only specific field types can be used within the Repeater Container. For example, the standard Name field is not supported; use a Simple Text field instead for name inputs.*
+
+![](https://fluentforms.com/wp-content/uploads/2025/06/repeater-container-field-2-scaled.webp)
 
 ## Customize Repeat Container Field
 
-You can see that a **Repeat Container** field is added to the form. You can edit/customize this field by**hovering over it** and clicking the **Pencil Icon**.
+You can see that a **Repeat Container** field is added to the form. You can edit/customize this field by**hovering****over it** and clicking the **Pencil Icon**.
 
 It will take you to the **Input Customization** tab on the right side and offer you the following options for customizing the coupon field.
 
 1. Repeat Container
 2. Advanced Options
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/3.-Input-Customization-tab-of-Repeat-Container-scaled.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/input-customization-3-scaled.webp)
 
 ### 1. Repeat Container
 
 All the **Settings** under the **Repeat Container**tab mentioned in the screenshot are briefly explained below –
 
-**A. Element Label**: This is the field title the users will see when filling out the **Repeat Container**field in a form. You can enter any text here to help users understand the purpose of the field.
+**A. Element Label**: This is the field title that the users will see when filling out the **Repeat Container**field in a form. You can enter any text here to help users understand the purpose of the field.
 
-**B. Label Placement**: Using this option, you can determine the position of the label title where the user will see this. The available options are **Top**, **Right**, **Bottom**, **Left**, **Hide** **Label**, and **Default** All of those are self-explanatory except the Default. If you select the **Default** option, it will represent your global label placement settings.
+**B. Label Placement**: Using this option, you can determine the position of the label title where the user will see it. The available options are **Top**, **Right**, **Bottom**, **Left**, **Hide** **Label**, and **Default.** All of those are self-explanatory except the Default. If you select the **Default** option, it will represent your global label placement settings.
 
 **C. Admin Field Label**: The admin field label is a field title displayed only to admin users. That means, if you want to show a different field label for your admin users when they view the form submissions, you can configure that using this option**.**
 
-**D. Container Columns:**Here, you can select the number of columns you want to add to your Repeat Container Field. Remember, each column has the same functionality except the number of added columns. For example, I added 3 columns.
+**D. Container Columns:**Here, you can select the number of columns you want to add to your Repeat Container Field. Remember, each column has the same functionality except for the number of added columns. For example, I added 3 columns.
 
 **E. Column Width %:**Using this option, you can set the width of the columns. The minimum column width is 10%.
 
 **F. Auto Width:**Enable the automatic width calculation for columns by clicking the **Yes** button. Otherwise, click the **No** button to adjust the width according to your preference.
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/4.-Repeat-Container-Customization-scaled.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/repeat-container-4-scaled.webp)
 
 ### 2. Advanced Options
 
@@ -159,36 +161,31 @@ All the **Settings** under the **Advanced Options**tab mentioned in the screensh
 
 **D. Max Repeat inputs**: Using this option, you can specify the maximum number of times users can duplicate the fields within the Repeater Container.
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/5.-Advanced-Options-3-scaled.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/advanced-5-scaled.webp)
 
 Now, click the **Plus Icon** to add three different fields horizontally inside three columns. Plus, you can adjust the position of the fields by dragging them.
 
-**For example**, I added the [Name](https://fluentforms.com/docs/name-input-field-in-fluent-forms/), [Email](https://fluentforms.com/docs/name-input-field-in-fluent-forms/), and [URL](https://fluentforms.com/docs/website-url-input-field-guide/) fields respectively inside the three columns.
+You can also customize the fields you added inside the columns by**hovering** over them and clicking the Pencil Icon. It will take you to the Input Customization tab for the selected field and provide options for customization.
 
-You can also customize the fields you added inside the columns by**hovering over them** and clicking the **Pencil Icon**. It will take you to the **Input Customization** tab of the selected field and offer you the options for customizing.
-
-![](https://fluentforms.com/wp-content/uploads/2025/02/6.-Add-desired-fields-under-repeat-container-field-scaled.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/container-field-6-scaled.webp)
 
 ## Embed the Form into Frontend
 
-Once you complete the customization, click the **Save** **Form** button to save all changes you made. Also, to see the form preview, click the **Preview & Design**button****in the middle.
+Once you complete the customization, click the **Save** **Form** button to save all the changes you made. Also, to see the form preview, click the **Preview & Design button in** the middle.
 
 To integrate and display the form on a specific Page/Post, **copy** the **Shortcode** from the top right side and **paste** it into your desired **Page/Post**.
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/7.-Save-Form--scaled.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/save-form-7-scaled.webp)
 
 ## Preview of Repeat Container field
 
-Here, is the preview of the added **Repeat Container** field under the Payment Form.
+Here is the preview of the added **Repeat Container** field under the Payment Form.
 
-Now, a form user can **Duplicate/Repeat** all the added columns (**Email**, **Numeric**, and **URL** fields) at once by clicking the**Plus Icon** on the right side and submitting a different set of information for each column.
+![](https://fluentforms.com/wp-content/uploads/2025/06/preview-8.webp)
 
-Also, if a form user wants to remove any repeated column if needed, can do it anytime by clicking the **Minus Icon**on the right side.
+This way, you can easily add the **Repeat Container** fields in Fluent Forms!
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/8.-Form-Preview-1-1.webp)
-
-This way you can easily add the **Repeat Container** fields in Fluent Forms!
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
 
 ---
 
