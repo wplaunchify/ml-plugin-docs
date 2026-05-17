@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T09:39:57.920Z",
+  "last_updated": "2026-05-17T09:56:56.983Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -983,7 +983,7 @@
       "slug": "product-filters-for-woocommerce",
       "name": "Product Filters for WooCommerce",
       "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
-      "last_scraped": "2026-05-17T09:39:57.920Z",
+      "last_scraped": "2026-05-17T09:39:57.919Z",
       "page_count": 0,
       "categories": []
     },
@@ -1123,8 +1123,8 @@
       "slug": "woocommerce",
       "name": "WooCommerce",
       "documentation_url": "https://woocommerce.com/documentation/",
-      "last_scraped": "2026-05-10T09:53:53.680Z",
-      "page_count": 3759,
+      "last_scraped": "2026-05-17T09:56:52.148Z",
+      "page_count": 3762,
       "categories": [
         "uncategorized"
       ]
