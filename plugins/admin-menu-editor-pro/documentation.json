@@ -1,11 +1,12 @@
 {
   "plugin_slug": "admin-menu-editor-pro",
   "plugin_name": "Admin Menu Editor Pro",
-  "last_scraped": "2026-05-10T17:20:59.687Z",
+  "last_scraped": "2026-05-17T17:23:01.335Z",
   "total_pages": 0,
   "failed_urls": [
     "http://adminmenueditor.com/toolbar-editor/",
     "https://adminmenueditor.com/blog/",
+    "https://adminmenueditor.com/blog/upcoming-price-changes-2026/",
     "https://adminmenueditor.com/branding-add-on/",
     "https://adminmenueditor.com/checkout/",
     "https://adminmenueditor.com/contact/",
