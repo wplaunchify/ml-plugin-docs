@@ -8,6 +8,30 @@
 
 **Source:** [https://fluentcrm.com/docs/change-log/](https://fluentcrm.com/docs/change-log/)
 
+.kt-accordion-id11920_03e35f-49 .kt-accordion-inner-wrap{column-gap:var(--global-kb-gap-md, 2rem);row-gap:19px;}.kt-accordion-id11920_03e35f-49 .kt-accordion-panel-inner{padding-top:var(--global-kb-spacing-sm, 1.5rem);padding-right:var(--global-kb-spacing-sm, 1.5rem);padding-bottom:var(--global-kb-spacing-sm, 1.5rem);padding-left:var(--global-kb-spacing-sm, 1.5rem);}.kt-accordion-id11920_03e35f-49 > .kt-accordion-inner-wrap > .wp-block-kadence-pane > .kt-accordion-header-wrap > .kt-blocks-accordion-header{background:var(--global-palette9, #ffffff);color:#101010;padding-top:var(--global-kb-spacing-xxs, 0.5rem);padding-right:var(--global-kb-spacing-xs, 1rem);padding-bottom:var(--global-kb-spacing-xxs, 0.5rem);padding-left:var(--global-kb-spacing-xs, 1rem);}.kt-accordion-id11920_03e35f-49:not( .kt-accodion-icon-style-basiccircle ):not( .kt-accodion-icon-style-xclosecircle ):not( .kt-accodion-icon-style-arrowcircle )  > .kt-accordion-inner-wrap > .wp-block-kadence-pane > .kt-accordion-header-wrap .kt-blocks-accordion-icon-trigger:after, .kt-accordion-id11920_03e35f-49:not( .kt-accodion-icon-style-basiccircle ):not( .kt-accodion-icon-style-xclosecircle ):not( .kt-accodion-icon-style-arrowcircle )  > .kt-accordion-inner-wrap > .wp-block-kadence-pane > .kt-accordion-header-wrap .kt-blocks-accordion-icon-trigger:before{background:#101010;}.kt-accordion-id11920_03e35f-49:not( .kt-accodion-icon-style-basic ):not( .kt-accodion-icon-style-xclose ):not( .kt-accodion-icon-style-arrow ) .kt-blocks-accordion-icon-trigger{background:#101010;}.kt-accordion-id11920_03e35f-49:not( .kt-accodion-icon-style-basic ):not( .kt-accodion-icon-style-xclose ):not( .kt-accodion-icon-style-arrow ) .kt-blocks-accordion-icon-trigger:after, .kt-accordion-id11920_03e35f-49:not( .kt-accodion-icon-style-basic ):not( .kt-accodion-icon-style-xclose ):not( .kt-accodion-icon-style-arrow ) .kt-blocks-accordion-icon-trigger:before{background:var(--global-palette9, #ffffff);}@media all and (max-width: 767px){.kt-accordion-id11920_03e35f-49 .kt-accordion-inner-wrap{display:block;}.kt-accordion-id11920_03e35f-49 .kt-accordion-inner-wrap .kt-accordion-pane:not(:first-child){margin-top:19px;}}
+= 3.0.0 (Date: May 14, 2026) =- New: FluentCRM v3 rebuilt with Vue 3 and Element Plus for a faster, cleaner experience.
+- New: Gutenberg-native email builder with device preview
+- New: Reusable Email Patterns added to the email builder
+- New: SMS marketing – Campaigns, Automations, and Direct Message with Incoming support
+- New: Frontend Portal introduced.
+- New: Redesigned bulk selection experience with more actions
+- New: New dashboard and rewritten reports with charts, widgets, campaign insights, and UTM visibility.
+- New: Dark Mode support with persistent admin theme preference.
+- New: Write with AI – Generate email content and summaries with AI assistance.
+- New: AI Summaries added in Contacts
+- New: MCP for AI Agents introduced
+- New: Global search across CRM records.
+- New: Dedicated email preference page, improved docs page, and reorganized settings.
+- New: RTL support, drag-and-drop custom fields, and a better importer flow.
+- New: Added FluentCart abandoned cart recovery.
+- New: Added toSend email service integration with bounce handling
+- Improvement: Email sending optimized for better speed, reliability, and deliverability.
+- Improvement: Bounce handling is now more robust
+- Improvement: Abandoned cart for WooCommerce is more reliable
+- Improvement: Better link tracking, automation reliability, and overall framework scalability.
+- Other: Security hardening, compatibility fixes, UI polish, and many bug fixes.
+
+.kt-accordion-id11920_518667-7c .kt-accordion-inner-wrap{column-gap:var(--global-kb-gap-md, 2rem);row-gap:19px;}.kt-accordion-id11920_518667-7c .kt-accordion-panel-inner{padding-top:var(--global-kb-spacing-sm, 1.5rem);padding-right:var(--global-kb-spacing-sm, 1.5rem);padding-bottom:var(--global-kb-spacing-sm, 1.5rem);padding-left:var(--global-kb-spacing-sm, 1.5rem);}.kt-accordion-id11920_518667-7c > .kt-accordion-inner-wrap > .wp-block-kadence-pane > .kt-accordion-header-wrap > .kt-blocks-accordion-header{background:var(--global-palette9, #ffffff);color:#101010;padding-top:var(--global-kb-spacing-xxs, 0.5rem);padding-right:var(--global-kb-spacing-xs, 1rem);padding-bottom:var(--global-kb-spacing-xxs, 0.5rem);padding-left:var(--global-kb-spacing-xs, 1rem);}.kt-accordion-id11920_518667-7c:not( .kt-accodion-icon-style-basiccircle ):not( .kt-accodion-icon-style-xclosecircle ):not( .kt-accodion-icon-style-arrowcircle )  > .kt-accordion-inner-wrap > .wp-block-kadence-pane > .kt-accordion-header-wrap .kt-blocks-accordion-icon-trigger:after, .kt-accordion-id11920_518667-7c:not( .kt-accodion-icon-style-basiccircle ):not( .kt-accodion-icon-style-xclosecircle ):not( .kt-accodion-icon-style-arrowcircle )  > .kt-accordion-inner-wrap > .wp-block-kadence-pane > .kt-accordion-header-wrap .kt-blocks-accordion-icon-trigger:before{background:#101010;}.kt-accordion-id11920_518667-7c:not( .kt-accodion-icon-style-basic ):not( .kt-accodion-icon-style-xclose ):not( .kt-accodion-icon-style-arrow ) .kt-blocks-accordion-icon-trigger{background:#101010;}.kt-accordion-id11920_518667-7c:not( .kt-accodion-icon-style-basic ):not( .kt-accodion-icon-style-xclose ):not( .kt-accodion-icon-style-arrow ) .kt-blocks-accordion-icon-trigger:after, .kt-accordion-id11920_518667-7c:not( .kt-accodion-icon-style-basic ):not( .kt-accodion-icon-style-xclose ):not( .kt-accodion-icon-style-arrow ) .kt-blocks-accordion-icon-trigger:before{background:var(--global-palette9, #ffffff);}@media all and (max-width: 767px){.kt-accordion-id11920_518667-7c .kt-accordion-inner-wrap{display:block;}.kt-accordion-id11920_518667-7c .kt-accordion-inner-wrap .kt-accordion-pane:not(:first-child){margin-top:19px;}}
 = 2.9.87 (Date: November 24, 2025) =- Hotfix: Automation Custom Email Sending Issue Fixed
 
 = 2.9.86 (Date: November 21, 2025) =- Hotfix: Automation Issue Fixed

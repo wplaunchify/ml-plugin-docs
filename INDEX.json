@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T05:21:28.240Z",
+  "last_updated": "2026-05-17T05:21:45.525Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -244,7 +244,7 @@
       "slug": "fluent-community-manager",
       "name": "Fluent Community Manager",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-05-17T05:19:53.243Z",
+      "last_scraped": "2026-05-17T05:19:53.242Z",
       "page_count": 0,
       "categories": []
     },
@@ -417,7 +417,7 @@
       "slug": "fluentcrm",
       "name": "FluentCRM",
       "documentation_url": "https://fluentcrm.com/documentation/",
-      "last_scraped": "2026-05-10T05:17:41.094Z",
+      "last_scraped": "2026-05-17T05:21:43.521Z",
       "page_count": 137,
       "categories": [
         "advanced-reports",
@@ -535,7 +535,7 @@
       "slug": "fooevents-bookings",
       "name": "FooEvents Bookings",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-05-17T05:19:07.495Z",
+      "last_scraped": "2026-05-17T05:19:07.491Z",
       "page_count": 55,
       "categories": [
         "about-us",
@@ -894,7 +894,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-05-17T05:21:28.240Z",
+      "last_scraped": "2026-05-17T05:21:28.239Z",
       "page_count": 0,
       "categories": []
     },
