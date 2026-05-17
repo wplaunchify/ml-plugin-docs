@@ -4149,7 +4149,7 @@ You can download a file from an external source using this option. When selected
 
 This will let you input a URL to download the file from. This URL should point directly to the file that you want to import from.
 
-![Download A File From URL Example](https://www.wpallimport.com/wp-content/uploads/2023/08/Download-A-File-From-URL-Example-1024x657.jpg)
+![Example Download A File From URL](https://www.wpallimport.com/wp-content/uploads/2026/05/Example-Download-A-File-From-URL-1024x721.png)
 
 You'll know it's working when you're prompted to download/save the file as soon as the URL is opened in a browser.
 
@@ -4159,7 +4159,7 @@ If your file is protected by HTTP protection, you can follow this guide: [Passwo
 
 This will let you download the file from an FTP or SFTP source. Once you input all of the credentials required to access the FTP/SFTP server, click on **Select File** to define the file path to use.
 
-![Download a file From FTP:SFTP WP All Import](https://www.wpallimport.com/wp-content/uploads/2023/08/Download-a-file-From-FTPSFTP-WP-All-Import-968x1024.png)
+![Download a file From SFTP FTP WP All Import](https://www.wpallimport.com/wp-content/uploads/2026/05/Download-a-file-From-SFTP-FTP-WP-All-Import-979x1024.png)
 
 After the **FTP file path** has been defined, you can change it to apply any of the available formats, such as [{newest.ext}](https://www.wpallimport.com/documentation/action-reference/#newest-ext), [{any.ext}](https://www.wpallimport.com/documentation/action-reference/#any-ext), [{oldest.ext}](https://www.wpallimport.com/documentation/action-reference/#oldest-ext) and [{custom.ext}](https://www.wpallimport.com/documentation/action-reference/#custom-ext), if needed.
 
@@ -4207,7 +4207,7 @@ Importing data from a Google Sheet is simple. Here's what to do:
 
 1. Use that URL in **Download a file › From URL**:
 
-![Download a File From URL Using Google Sheet](https://www.wpallimport.com/wp-content/uploads/2023/09/Download-a-File-From-URL-Using-Google-Sheet-1024x767.png)
+![Download a File From URL by Using Google Sheet](https://www.wpallimport.com/wp-content/uploads/2026/05/Download-a-File-From-URL-by-Using-Google-Sheet-1024x792.png)
 
 ## Related Docs
 
@@ -6825,7 +6825,7 @@ However, if you plan to overwrite existing information, then importing variable 
 
 1. Go to **All Import > New Import** and choose how you want to import your data. You have the option to upload a file, use an existing file already on your server, or download a file from a URL or FTP/SFTP site.
 2. Select your import file.
-3. Choose **New Items**, then your import type. In this case, your import type is **WooCommerce Products**.
+3. Choose your import type. In this case, your import type is **WooCommerce Products**.
 4. Map the incoming data elements to your WooCommerce product fields using our **Drag & Drop** interface. This is the heart of the import process. When importing variable products, you must pay special attention to the product **Attributes** and product **Variations** tabs. See below for a more detailed description of these tabs.
 5. Configure the **Import Settings** to specify how the import should handle new, modified, or missing products should it be run again using a different version of the import file.
 6. Run the import and check the results to make sure the variable products have been imported correctly.
@@ -6865,29 +6865,28 @@ Note, however, that there are many other ways of defining this data. For a compl
 
 ## Visual Steps to Bulk Upload Variable Products
 
-![WooCommerce Bulk Upload Variable Products New Import](https://www.wpallimport.com/wp-content/uploads/2023/06/WooCommerce-Bulk-Upload-Variable-Products-New-Import-1024x604.jpg)
+![Bulk Upload WooCommerce Variable Products New Import](https://www.wpallimport.com/wp-content/uploads/2026/05/Bulk-Upload-WooCommerce-Variable-Products-New-Import-1024x610.png)
 
 ![WooCommerce Bulk Upload Variable Products Attributes Tab](https://www.wpallimport.com/wp-content/uploads/2023/06/WooCommerce-Bulk-Upload-Variable-Products-Data-Mapping-1-1024x564.jpg)
 
 ![WooCommerce Bulk Upload Variable Products Variations Tab](https://www.wpallimport.com/wp-content/uploads/2023/06/WooCommerce-Bulk-Upload-Variable-Products-Variations-Tab-1024x702.jpg)
 
-![WooCommerce Bulk Upload Variable Products Import Settings](https://www.wpallimport.com/wp-content/uploads/2023/06/WooCommerce-Bulk-Upload-Variable-Products-Import-Settings-1024x668.jpg)
+![WP All Import plugin for WooCommerce product import and management.](https://www.wpallimport.com/wp-content/uploads/2026/05/Bulk-Upload-WooCommerce-Variable-Products-Import-Settings-1024x740.png)
 
 ## Bulk Upload Variable Products — Frequently Asked Questions
 
 ### How to Add New Variations to Existing Variable Products?
 
 1. Navigate to **All Import › New Import**.
-2. Select **New Items** as the import type.
-3. Upload the import file with the new variations.
-4. When configuring the import, select the **I'm importing new variations to existing products** option in the **Variations** tab.
-5. Run the import and check that all new variations are present as expected.
+2. Upload the import file with the new variations.
+3. When configuring the import, select the **I'm importing new variations to existing products** option in the **Variations** tab.
+4. Run the import and check that all new variations are present as expected.
 
-The **I'm importing new variations to existing products** option is available only in a **New Items** import. To match new variations with an existing variable parent product, use the product's title or any custom field. You can also use the **Create new product if no existing product is found** option to handle those situations.
+The **I'm importing new variations to existing products** option is available only in a **New Items** import, which is selected by default in the **Import Settings**. To match new variations with an existing variable parent product, use the product's title or any custom field. You can also use the **Create new product if no existing product is found** option to handle those situations.
 
 ### What is the Correct Way to Handle Variable Products?
 
-Variable products are stored in a specific manner. To avoid issues or damaging your products, you should have a master import that you can re-run and allows handling all products from a single master file. You should also use the **New Items** import type, as it's the only import type that can add/remove variations for variable products.
+Variable products are stored in a specific manner. To avoid issues or damaging your products, you should have a master import that you can re-run and allows handling all products from a single master file. You should also use the **New Items** import type, as it's the only import type that can add/remove variations for variable products. This is already chosen by default in the **Import Settings**.
 
 ### What Add-Ons Do I Need to Import WooCommerce Variable Products?
 
@@ -7777,9 +7776,9 @@ To import WordPress comments, go to **All Import › New Import**, provide your 
 
 Navigate to **All Import › New Import** on your site, provide your import file (upload, download, or select it), then choose **Comments** from the dropdown list:
 
-![Import WordPress Comments New Import](https://www.wpallimport.com/wp-content/uploads/2023/05/Import-WordPress-Comments-New-Import-1024x734.jpg)
+![Import WordPress Comments Create New Import](https://www.wpallimport.com/wp-content/uploads/2026/05/Import-WordPress-Comments-Create-New-Import-1024x667.png)
 
-Click **Continue to Step 2**.
+Click **Create Filters**.
 
 ## Step 2: Review the Import File
 
@@ -7789,7 +7788,7 @@ The **Review Import File** screen appears next. Here, check that your import fil
 
 Near the bottom, you can use the **Manage Filtering Options** section to apply filters to the import data, which you to narrow down which comments to import.
 
-Click **Continue to Step 3**.
+Click **Continue to Setup Import**.
 
 ## Step 3: Map the Incoming Data Elements to the Correct Fields
 
@@ -7823,13 +7822,13 @@ This section lets you add custom fields or meta to your comments:
 
 Below, you may see other sections depending on your installed add-ons, as well as the **Function Editor** at the end.
 
-Click **Continue to Step 4**.
+Click **Continue to Import Settings**.
 
 ## Step 4: Configure the Import Settings and Run the Import
 
 You now see the **Import Settings** screen, where you can define key import settings. To start, click **Auto-detect** to generate a unique identifier for the imported comments. This allows our software to identify duplicates and properly apply updates.
 
-![Import WordPress Comments Import Settings](https://www.wpallimport.com/wp-content/uploads/2023/05/Import-WordPress-Comments-Import-Settings-1024x777.jpg)
+![Import WordPress Comments Define Import Settings](https://www.wpallimport.com/wp-content/uploads/2026/05/Import-WordPress-Comments-Define-Import-Settings-1024x873.png)
 
 Below this, you'll see the **Scheduling Options** and **Configure Advanced Settings** sections. These can be left with their default selections for this example.
 
