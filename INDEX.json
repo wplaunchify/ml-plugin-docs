@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T12:29:14.622Z",
+  "last_updated": "2026-05-17T12:29:18.105Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -268,7 +268,7 @@
       "slug": "fluent-forms-signature-addon",
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-05-17T12:26:49.623Z",
+      "last_scraped": "2026-05-17T12:26:49.622Z",
       "page_count": 0,
       "categories": []
     },
@@ -1022,7 +1022,7 @@
       "slug": "resizable-sidebar-for-the-gutenberg-block-editor",
       "name": "Resizable Sidebar for the Gutenberg Block Editor",
       "documentation_url": "https://wordpress.org/plugins/resizable-editor-sidebar/",
-      "last_scraped": "2026-05-17T12:29:14.622Z",
+      "last_scraped": "2026-05-17T12:29:14.621Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1163,7 +1163,7 @@
       "slug": "woocommerce-subscriptions",
       "name": "WooCommerce Subscriptions",
       "documentation_url": "https://woocommerce.com/document/subscriptions/",
-      "last_scraped": "2026-05-10T12:28:32.964Z",
+      "last_scraped": "2026-05-17T12:29:10.704Z",
       "page_count": 85,
       "categories": [
         "2020-new-visa-requirements-for-subscriptions-with-a-free-trial",
