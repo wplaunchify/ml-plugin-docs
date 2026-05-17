@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T01:43:00.868Z",
+  "last_updated": "2026-05-17T03:01:47.148Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -180,7 +180,7 @@
       "slug": "debug-log-manager-tool",
       "name": "Debug Log Manager Tool",
       "documentation_url": "https://wordpress.org/plugins/debug-log-manager/",
-      "last_scraped": "2026-05-10T03:01:39.845Z",
+      "last_scraped": "2026-05-17T03:01:47.148Z",
       "page_count": 1,
       "categories": [
         "advanced"
