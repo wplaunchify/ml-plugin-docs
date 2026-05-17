@@ -11,6 +11,13 @@
 # News & Updates
 				## Get the scoop on the latest FooEvents features and learn tips and tricks that will enhance your product experience.
 				[Subscribe to the blog digest!](#newsletter-signup)
+				![Alternative To The Events Calendar](https://www.fooevents.com/wp-content/uploads/2026/05/alternatives_to_tec_header-768x400.png)
+				### Why FooEvents is the #1 Alternative to The Events Calendar in 2026
+
+				May 14, 2026
+				The WordPress event management landscape has undergone a seismic shift recently. For years, The Events Calendar was the default choice for many. But lately, the community has been buzzing with a different kind of energy—and it’s not the good kind. If you’ve been feeling the “corporate chill” from your current
+		
+		[Read More →](https://www.fooevents.com/why-fooevents-is-the-1-alternative-to-the-events-calendar/)
 				![Thank You Page Tickets](https://www.fooevents.com/wp-content/uploads/2026/04/fooevents-thank-you-page-768x500.png)
 				### New: Display Ticket Details on the WooCommerce Thank You Page
 
@@ -109,13 +116,6 @@
 				We recently released version 1.10.1 of the FooEvents POS plugin. This update introduces the ability to search and view individual ticket details directly in the Orders section of FooSales POS apps. Here’s how this will help you better manage your events: Quick issue resolution — Staff can search by ticket
 		
 		[Read More →](https://www.fooevents.com/search-and-view-ticket-details-in-fooevents-pos/)
-				![Release Notes](https://www.fooevents.com/wp-content/uploads/2025/04/release-notes-20250401.png)
-				### FooEvents Adds Partial Support for the WooCommerce Checkout Block
-
-				April 1, 2025
-				We’ve just released version 1.20.2 of the FooEvents for WooCommerce plugin, which introduces partial compatibility with the new WooCommerce Checkout and Cart blocks. To take full advantage of this update, please ensure all your installed FooEvents extensions are also updated to their latest versions. This update makes it possible to
-		
-		[Read More →](https://www.fooevents.com/partial-support-for-the-woocommerce-checkout-block/)
 				### Subscribe to the blog digest
 				### Receive a summary of the latest posts in your inbox.
 				Your details could not be submitted. Please try again.
