@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T16:21:24.139Z",
+  "last_updated": "2026-05-17T16:21:33.615Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-05-14T08:23:34.660Z",
+      "last_scraped": "2026-05-17T16:21:32.036Z",
       "page_count": 0,
       "categories": []
     },
@@ -190,7 +190,7 @@
       "slug": "disable-comments",
       "name": "Disable Comments",
       "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-      "last_scraped": "2026-05-17T15:27:59.132Z",
+      "last_scraped": "2026-05-17T15:27:59.131Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -200,7 +200,7 @@
       "slug": "duplicate-page",
       "name": "Duplicate Page",
       "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
-      "last_scraped": "2026-05-17T15:22:16.896Z",
+      "last_scraped": "2026-05-17T15:22:16.895Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -806,7 +806,7 @@
       "slug": "kadence-theme-kit-pro-premium-addon-for-the-kadence-theme",
       "name": "Kadence Theme Kit Pro - Premium addon for the Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-17T16:21:24.139Z",
+      "last_scraped": "2026-05-17T16:21:24.138Z",
       "page_count": 0,
       "categories": []
     },
@@ -989,7 +989,7 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-05-17T15:23:24.544Z",
+      "last_scraped": "2026-05-17T15:23:24.539Z",
       "page_count": 24,
       "categories": [
         "beta-release",
@@ -1105,7 +1105,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://theeventscalendar.com/knowledgebase/documentation/",
-      "last_scraped": "2026-05-17T16:17:20.070Z",
+      "last_scraped": "2026-05-17T16:17:20.069Z",
       "page_count": 0,
       "categories": []
     },
