@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-05-17T06:05:06.910Z",
+  "last_updated": "2026-05-17T06:05:20.995Z",
   "total_plugins": 118,
   "plugins": [
     {
       "slug": "add-anchor-links",
       "name": "Add Anchor Links",
       "documentation_url": "https://wordpress.org/plugins/add-anchor-links/",
-      "last_scraped": "2026-05-17T05:24:18.561Z",
+      "last_scraped": "2026-05-17T05:24:18.560Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -284,7 +284,7 @@
       "slug": "fluent-pdf-generator",
       "name": "Fluent PDF Generator",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-05-15T08:30:10.675Z",
+      "last_scraped": "2026-05-17T06:05:18.897Z",
       "page_count": 0,
       "categories": []
     },
