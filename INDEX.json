@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T12:16:02.334Z",
+  "last_updated": "2026-05-17T12:16:09.651Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -962,7 +962,7 @@
       "slug": "page-links-to",
       "name": "Page Links To",
       "documentation_url": "https://wordpress.org/plugins/page-links-to/",
-      "last_scraped": "2026-05-17T12:16:02.334Z",
+      "last_scraped": "2026-05-17T12:16:02.333Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1214,7 +1214,7 @@
       "slug": "woocommerce-subscriptions-custom-price-string",
       "name": "WooCommerce Subscriptions - Custom Price String",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-10T12:15:38.884Z",
+      "last_scraped": "2026-05-17T12:16:07.910Z",
       "page_count": 0,
       "categories": []
     },
