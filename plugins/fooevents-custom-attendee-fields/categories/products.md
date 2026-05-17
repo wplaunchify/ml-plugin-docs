@@ -633,10 +633,12 @@ User-friendly documentation
 				![Prima Screenshot1](https://www.fooevents.com/wp-content/uploads/2025/05/prima_screenshot1.jpg)### Prima Ticket Theme
 				![Modo Ticket Theme](https://www.fooevents.com/wp-content/uploads/2025/05/modo_ticket_theme.png)### Modo Ticket Theme
 				![Present Ticket Theme Screenshot](https://www.fooevents.com/wp-content/uploads/2024/10/present_screenshot_sml.jpg)### Present Ticket Theme
+				![Solo Screenshot Sml](https://www.fooevents.com/wp-content/uploads/2026/05/solo_screenshot_sml.jpg)### Solo Ticket Theme
 				![Admission Ticket Theme Screenshot](https://www.fooevents.com/wp-content/uploads/2024/10/admission_screenshot_sml.png)### Admission Ticket theme
 				![Tabula Ticket Theme Screenshot](https://www.fooevents.com/wp-content/uploads/2025/05/tabula_screenshot.jpg)### Tabula Ticket Theme
 				![Canvas Screenshot Sml](https://www.fooevents.com/wp-content/uploads/2024/10/canvas_screenshot_sml.jpg)### Canvas Ticket Theme
 				![Arena Ticket Theme Screenshot](https://www.fooevents.com/wp-content/uploads/2024/10/arena_screenshot_sml.jpg)### Arena Ticket Theme
+				![Paged Ticket Theme Preview](https://www.fooevents.com/wp-content/uploads/2026/05/paged_screenshot_sml-1.jpg)### Paged Ticket Theme
 
 ---
 
