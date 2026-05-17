@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T20:13:43.204Z",
+  "last_updated": "2026-05-17T20:13:58.765Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -112,7 +112,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-05-17T18:31:29.951Z",
+      "last_scraped": "2026-05-17T18:31:29.950Z",
       "page_count": 0,
       "categories": []
     },
@@ -138,7 +138,7 @@
       "slug": "block-specific-spam-woo-orders",
       "name": "Block Specific Spam Woo Orders",
       "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
-      "last_scraped": "2026-05-17T18:23:15.762Z",
+      "last_scraped": "2026-05-17T18:23:15.761Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -309,7 +309,7 @@
       "slug": "fluentaffiliate-pro",
       "name": "FluentAffiliate Pro",
       "documentation_url": "https://fluentaffiliate.com/docs/documentation/",
-      "last_scraped": "2026-05-17T19:27:05.569Z",
+      "last_scraped": "2026-05-17T19:27:05.568Z",
       "page_count": 0,
       "categories": []
     },
@@ -515,7 +515,7 @@
       "slug": "fluentsupport",
       "name": "Fluent Support",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-05-17T18:18:13.564Z",
+      "last_scraped": "2026-05-17T18:18:13.561Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -742,7 +742,7 @@
       "slug": "kadence-blocks-page-builder-toolkit-for-gutenberg-editor",
       "name": "Kadence Blocks — Page Builder Toolkit for Gutenberg Editor",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-17T18:17:09.132Z",
+      "last_scraped": "2026-05-17T18:17:09.131Z",
       "page_count": 0,
       "categories": []
     },
@@ -758,7 +758,7 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-17T20:13:43.204Z",
+      "last_scraped": "2026-05-17T20:13:43.203Z",
       "page_count": 0,
       "categories": []
     },
@@ -782,7 +782,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-11T08:39:39.532Z",
+      "last_scraped": "2026-05-17T20:13:56.907Z",
       "page_count": 0,
       "categories": []
     },
@@ -834,7 +834,7 @@
       "slug": "launchkit-pro",
       "name": "LaunchKit Pro",
       "documentation_url": "https://wplaunchify.com/documentation/",
-      "last_scraped": "2026-05-17T17:27:20.520Z",
+      "last_scraped": "2026-05-17T17:27:20.519Z",
       "page_count": 0,
       "categories": []
     },
@@ -925,7 +925,7 @@
       "slug": "menu-image",
       "name": "Menu Image",
       "documentation_url": "https://wordpress.org/plugins/menu-image/",
-      "last_scraped": "2026-05-17T18:26:46.975Z",
+      "last_scraped": "2026-05-17T18:26:46.974Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1089,7 +1089,7 @@
       "slug": "store-credit-for-woocommerce",
       "name": "Store Credit for WooCommerce",
       "documentation_url": "https://woocommerce.com/document/woocommerce-store-credit/documentation/",
-      "last_scraped": "2026-05-17T19:31:50.515Z",
+      "last_scraped": "2026-05-17T19:31:50.514Z",
       "page_count": 0,
       "categories": []
     },
@@ -1155,7 +1155,7 @@
       "slug": "woocommerce-stripe-gateway",
       "name": "WooCommerce Stripe Gateway",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-17T18:24:42.286Z",
+      "last_scraped": "2026-05-17T18:24:42.285Z",
       "page_count": 0,
       "categories": []
     },
@@ -1608,7 +1608,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-05-17T18:27:49.836Z",
+      "last_scraped": "2026-05-17T18:27:49.835Z",
       "page_count": 0,
       "categories": []
     },
