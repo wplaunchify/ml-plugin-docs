@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T12:16:09.651Z",
+  "last_updated": "2026-05-17T12:19:10.613Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -596,11 +596,10 @@
       "slug": "fooevents-express-check-in",
       "name": "FooEvents Express Check-in",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-05-10T12:17:44.583Z",
-      "page_count": 56,
+      "last_scraped": "2026-05-17T12:19:10.613Z",
+      "page_count": 55,
       "categories": [
         "about-us",
-        "apps",
         "blog",
         "bundles",
         "cart",

@@ -2,8 +2,8 @@
   "plugin_slug": "fooevents-express-check-in",
   "plugin_name": "FooEvents Express Check-in",
   "documentation_url": "https://www.fooevents.com",
-  "last_scraped": "2026-05-10T12:17:44.583Z",
-  "total_pages": 56,
+  "last_scraped": "2026-05-17T12:19:10.610Z",
+  "total_pages": 55,
   "failed_urls_count": 2,
   "sections": [
     {
@@ -16,19 +16,6 @@
         {
           "title": "We love making things!",
           "url": "https://www.fooevents.com/about-us/"
-        }
-      ]
-    },
-    {
-      "title": "Apps",
-      "slug": "apps",
-      "url": "https://www.fooevents.comapps/",
-      "file": "categories/apps.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Sell tickets to your events, venues and bookable services like a pro!",
-          "url": "https://www.fooevents.com/apps"
         }
       ]
     },
