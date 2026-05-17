@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T10:35:11.969Z",
+  "last_updated": "2026-05-17T11:24:13.573Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -48,7 +48,7 @@
       "slug": "affiliatewp-affiliate-landing-pages",
       "name": "AffiliateWP - Affiliate Landing Pages",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-05-16T08:19:07.549Z",
+      "last_scraped": "2026-05-17T11:24:13.573Z",
       "page_count": 0,
       "categories": []
     },
