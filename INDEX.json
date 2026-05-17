@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T16:21:45.492Z",
+  "last_updated": "2026-05-17T16:21:54.942Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -951,7 +951,7 @@
       "slug": "open-graph",
       "name": "Open Graph",
       "documentation_url": "https://wordpress.org/plugins/opengraph/",
-      "last_scraped": "2026-05-10T16:19:53.331Z",
+      "last_scraped": "2026-05-17T16:21:52.952Z",
       "page_count": 1,
       "categories": [
         "advanced"
