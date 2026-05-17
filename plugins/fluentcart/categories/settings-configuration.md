@@ -430,6 +430,43 @@ Here are a few examples of how they work in action:
 
 You can freely move these tags around, change their font size, or make them bold just like normal text!
 
+#### Tax & EU VAT Smart Tags ​
+
+If your store collects tax — especially EU VAT or any other reverse-charge regime — these dedicated tags drop the right values into the right place on every PDF receipt:
+
+- ```
+{{order.tax_breakdown}}
+```
+
+ — Renders a tidy table of every tax line on the order (e.g. "VAT 19%", "Shipping Tax"). For reverse-charge orders, the amount column shows **Charge reversed** and an automatic footnote, *"* Tax to be paid on reverse charge basis"*, is appended below the table.
+- ```
+{{order.store_vat_display}}
+```
+
+ — Your store's VAT number, ready to drop into the header or footer of the receipt.
+- ```
+{{order.buyer_vat_display}}
+```
+
+ — The buyer's VAT number, captured at checkout. Use this in B2B receipts that need both parties' tax IDs.
+- ```
+{{order.buyer_company_name}}
+```
+
+ — The buyer's company name from the checkout form.
+- ```
+{{order.buyer_legal_registration_id}}
+```
+
+ — The buyer's legal registration ID (e.g. company registration number).
+- ```
+{{order.buyer_reverse_charge_declaration}}
+```
+
+ — A pre-formatted reverse-charge declaration sentence that appears only on B2B EU orders where reverse charge applies. Drop this anywhere in the template; it stays empty for orders that don't qualify.
+
+These tags work alongside the automatic VAT-in-billing-address behavior covered below — they don't conflict, so a complete B2B-ready PDF can include the buyer's VAT in the address, the store's VAT in the header, and a tax breakdown table in the totals section.
+
 #### Customer VAT Number on Receipts ​
 
 If a customer provides a VAT number at checkout, FluentCart now automatically includes it inside the **billing address block** of every generated PDF (Order Receipt, Renewal Receipt, Refund Notice, and Invoice). You don't need to add a separate smart tag or modify the template — when the address renders, the VAT number is appended right under the customer's address line.
@@ -701,13 +738,15 @@ This makes the documents compliance-ready for B2B customers in the EU, UK, and o
 
 ---
 
-## Licensing Settings ​
+## Your FluentCart Pro License ​
 
 **Source:** [https://docs.fluentcart.com/guide/settings-configuration/licensing-settings](https://docs.fluentcart.com/guide/settings-configuration/licensing-settings)
 
-# Licensing Settings ​
+# Your FluentCart Pro License ​
 
-The **Licensing Settings** feature in FluentCart allows you to manage your plugin license and access premium features. This is where you'll enter and verify your license key to unlock all the functionality of FluentCart Pro.
+This page covers **your own** FluentCart Pro license — entering the key you bought from fluentcart.com so your store unlocks Pro features.
+
+If you sell licensed digital products through FluentCart and want to see which **customer sites** have activated those licenses, see [Customer License Sites](/guide/settings-configuration/managing-licensing-sites) instead.
 
 ## Accessing Licensing Settings ​
 
@@ -735,6 +774,12 @@ The Licensing Settings section displays important information about your license
 - **Support Status:** Indicates whether you have access to premium support.
 - **Updates Status:** Shows whether you can receive automatic updates.
 
+## Viewing Activated Sites ​
+
+Once your license is in use, you can see every domain that has activated one of your products from a single screen. Open **FluentCart Pro > Licenses > Sites** to view the full list — including each site's activated licenses, status, and last-update version.
+
+To learn how to filter the list, drill into a single site's detail view, and run common workflows like renewal outreach and license audits, see [Customer License Sites](/guide/settings-configuration/managing-licensing-sites).
+
 ## Installing Licensed Addons in One Click ​
 
 Once your FluentCart Pro license is verified on this page, every premium addon included with your license becomes installable directly from inside FluentCart — no manual download, ZIP upload, or activation step required.
@@ -761,6 +806,120 @@ If you encounter any issues with your license:
 ## Saving Your Settings ​
 
 After making any changes to your license, remember to click the **"Save Settings"** button at the bottom right of the screen to apply your configurations.
+
+---
+
+## Customer License Sites (Pro) ​
+
+**Source:** [https://docs.fluentcart.com/guide/settings-configuration/managing-licensing-sites](https://docs.fluentcart.com/guide/settings-configuration/managing-licensing-sites)
+
+# Customer License Sites (Pro) ​
+
+This page is for **vendors**: store owners who sell licensed digital products through FluentCart's License module and need to see every **customer site** that has activated one of those licenses.
+
+If you're trying to activate **your own** FluentCart Pro license (the one you bought to unlock Pro features), see [Your FluentCart Pro License](/guide/settings-configuration/licensing-settings) instead.
+
+The Sites view gives you a complete picture of every site running one of your licenses — without scrolling through individual licenses to find which domains are using them. You can see the full activation footprint at a glance, drill into any single site, and filter the list to surface exactly the activations you care about.
+
+## Accessing Licensing Sites ​
+
+1. From your WordPress dashboard, navigate to **FluentCart Pro**.
+2. Click on **Licenses** in the top menu bar.
+3. Open the **Sites** tab from the secondary navigation.
+
+You can also reach this view from any single license — click the **Sites** breadcrumb to jump back to the full list.
+
+## Sites List View ​
+
+The Sites screen is a sortable, filterable table of every domain currently using one of your licenses. Use it as a directory of "who is running my software where."
+
+For each activated site, the table shows:
+
+- **Site URL:** The domain where the license is active. Click the URL to open the **Site Detail View** for that site.
+- **Customer:** The customer who owns the license for this activation. Click the customer name to open their full customer profile.
+- **Activated Licenses:** The number of distinct licenses currently active on this site (a single site can run multiple of your products).
+- **Status:** A quick health badge — Active, Expired, or Disabled — for the site's activations.
+- **Last Update:** The most recent date and version on which the site checked in for an update. A blank value means the site has not yet phoned home.
+
+The list supports search, status filters, and the standard FluentCart **Advanced Filter** so you can scope it down by license, customer, expiration window, or activation count. See [Advanced Filtering](#advanced-filtering) below.
+
+## Site Detail View ​
+
+Click any site URL to open the **Site Detail View** — a single screen showing everything tied to that one domain. The detail view is split into two columns:
+
+### Activated Licenses ​
+
+The main content area shows every license currently active on this site, broken out into a table:
+
+- **Product:** The product the license unlocks. Click to jump to the product's edit page.
+- **Status:** Active, Expired, or Disabled, shown as a colored badge.
+- **License Key:** The first twelve characters of the key, with a copy icon to grab the full key. Click the truncated key to open the full **License Detail** view.
+- **Activations:** How many of the license's allowed activation slots this site occupies. Format is 
+```
+<used> / <limit>
+```
+
+ — 
+```
+Unlimited
+```
+
+ shows when no cap is set.
+- **Expiration:** The date the license expires, or **Lifetime** for licenses sold without a renewal cycle.
+- **Last Update:** The version the site last received plus the date it received it. Blank if the site has never updated.
+
+If the site has no active licenses (e.g., all activations have been revoked), the table shows a friendly empty state instead.
+
+### Customer Information ​
+
+The right-hand sidebar surfaces the customer who owns the activations on this site:
+
+- **Name and email** with a direct link to the customer profile.
+- **Customer lifetime value** so you can quickly see how much business this account has driven.
+- **Total amounts** are now formatted using your store's currency settings — including thousand separators and the configured currency position — so the figures match what you see everywhere else in FluentCart Pro.
+
+INFO
+
+Customer profile and amount formatting in the Site Detail View were both polished in v1.3.27 — if you remember either of these looking off in earlier versions, the latest release fixes both.
+## Site Pages ​
+
+From the Site Detail View, you can navigate to per-site pages without losing context — the breadcrumb at the top always shows **Licenses → Sites → <site URL>**, and clicking back into **Sites** restores the previous filter and search state.
+
+This makes investigating a specific customer's setup fast: open the customer's site, review their activated licenses, jump into a specific license, then click the breadcrumb to return to the same filtered Sites list you started from.
+
+## Advanced Filtering ​
+
+Above the Sites table you'll find the standard FluentCart filtering tools.
+
+### Quick Filters ​
+
+- **All:** Every activated site.
+- **Active:** Sites whose licenses are all currently valid.
+- **Expired:** Sites with at least one expired license still on file.
+- **Disabled:** Sites where activations have been manually disabled.
+
+### Advanced Filter ​
+
+Click the **Advanced Filter** toggle to open the filter builder and combine multiple conditions for highly targeted lists. You can add rules based on:
+
+- **Site URL** — match exact domains or substrings.
+- **Customer properties** — name, email, or customer ID.
+- **License properties** — product, status, license key, expiration, activation limit.
+- **Activation count** — find sites running a specific number of your products.
+
+Combine multiple rules with AND/OR groups to build queries like *"all sites whose license expires in the next 30 days, run by customers in the EU"* — useful for renewal outreach and compliance audits.
+
+## Common Workflows ​
+
+- **Renewal outreach:** Filter for **Expired** status plus an expiration date in the past 60 days, then export the customer list and reach out about renewals.
+- **Troubleshooting:** A customer reports an issue — search the Sites list by their domain, open the **Site Detail View**, and confirm which products and versions they're running before opening a support thread.
+- **License audit:** Filter by activation count 
+```
+>
+```
+
+ your typical limit to surface sites where customers might be over-activated, then decide whether to reach out or offer an upgrade plan.
+- **Per-product adoption:** Filter by **Product** to see exactly which sites are running a specific product — useful before deprecating a feature or scheduling a major version bump.
 
 ---
 
@@ -840,66 +999,34 @@ The **Payment Settings** screen in FluentCart lets you set up how your store han
 
 ## Configuration Options ​
 
-### 1. Payment Gateways ​
+The **Payment Settings** page lists all integrated payment providers. Each gateway card displays the provider's logo, a brief description, and its current status **(Active or Disabled)**.
 
-- **Enable/Disable Gateways:** Toggle switches to activate or deactivate specific payment gateways.
-- **Gateway Settings:** Configure API keys, test modes, and other gateway-specific settings.
-- **Available Gateways:**- [Stripe](/guide/payments-checkout/connecting-payment-gateways/stripe-settings)
-- [PayPal](/guide/payments-checkout/connecting-payment-gateways/paypal-settings)
-- [Paddle](/guide/payments-checkout/connecting-payment-gateways/paddle-settings)
-- [Mollie](/guide/payments-checkout/connecting-payment-gateways/mollie-settings)
-- [Paystack](/guide/payments-checkout/connecting-payment-gateways/paystack-settings)
-- [Razorpay](/guide/payments-checkout/connecting-payment-gateways/razorpay-settings)
-- [Mercado Pago](/guide/payments-checkout/connecting-payment-gateways/mercado-pago-settings)
-- [Cash on Delivery](/guide/payments-checkout/connecting-payment-gateways/cash-on-delivery-settings)
-
-### 2. Checkout Settings ​
-
-- **Checkout Page:** Select which page will serve as your checkout page.
-- **Checkout Fields:** Customize which fields appear during checkout.
-- **Order Notes:** Enable/disable customer order notes.
-- **Terms & Conditions:** Link to your terms and conditions page.
-
-### 3. Transaction Settings ​
-
-- **Currency:** Set your store's primary currency.
-- **Currency Position:** Choose where the currency symbol appears (before or after the amount).
-- **Decimal Separator:** Set the character used for decimal points.
-- **Thousand Separator:** Set the character used for thousand separators.
-- **Number of Decimals:** Set how many decimal places to display.
-
-## Saving Your Settings ​
-
-After making any changes to your Payment Settings, remember to click the **"Save Settings"** button at the bottom right of the screen to apply your configurations.
+- **Enable/Disable Gateways:** You can quickly identify which methods are live by the status badge next to the provider name.
+- **Manage Settings:** Click the **Manage** button on any gateway to enter its specific configuration page, where you can enter API keys, toggle Test Mode, and set up Webhooks.
+- **Reorder Gateways:** Use the "three-line" drag icon on the left of each gateway to change the order in which they appear to customers on your checkout page.
 
 ## Available Payment Gateways ​
 
-On this screen, you will see a list of all available payment gateways. Each gateway is displayed with its activation status and a brief description. You can click the **"Manage"** button next to each to configure its specific settings.
+FluentCart supports a wide range of global and regional payment processors to ensure your customers can pay with ease.
 
-- **Stripe:**- **Description:** Stripe's payments platform lets you accept credit cards, debit cards, and popular payment methods around the world all with a single integration.
-- **Status:** Typically shown as "Active" if enabled.
-- **Management:** Click "Manage" to access detailed [Stripe Settings](/payments-checkout/connecting-payment-gateways/stripe-settings) for configuration.
-- **PayPal:**- **Description:** PayPal is the faster, safer way to send and receive money or make an online payment.
-- **Status:** Typically shown as "Active" if enabled.
-- **Management:** Click "Manage" to access detailed [PayPal Settings](/guide/payments-checkout/connecting-payment-gateways/paypal-settings) for configuration.
-- **Paddle:**- **Description:** Paddle is an all-in-one payment solution that lets you accept credit cards, debit cards, and other popular payment methods worldwide through a single, simple integration.
-- **Status:** Typically shown as "Active" if enabled.
-- **Management:** Click "Manage" to access detailed [Paddle Settings](/guide/payments-checkout/connecting-payment-gateways/paddle-settings) for configuration.
-- **Mollie**- **Description:** Mollie is a popular payment gateway, primarily used in Europe, that allows you to securely accept credit cards, debit cards, and local payment methods like iDEAL and Bancontact.
-- **Status:** Typically shown as "Active" if enabled.
-- **Management:** Click "Manage" to access detailed [Mollie Settings](/guide/payments-checkout/connecting-payment-gateways/mollie-settings) for configuration.
-- **Paystack**- **Description:** Paystack is a modern payment gateway that helps businesses, particularly in Africa, accept payments from anyone, anywhere in the world via credit cards, bank transfers, and mobile money.
-- **Status:** Typically shown as "Active" if enabled.
-- **Management:** Click "Manage" to access detailed [Paystack Settings](/guide/payments-checkout/connecting-payment-gateways/paystack-settings) for configuration.
-- **Razorpay**- **Description:** Razorpay is a leading payment gateway in India that lets you accept credit cards, debit cards, UPI, netbanking, and popular wallets through a single integration.
-- **Status:** Typically shown as "Active" if enabled.
-- **Management:** Click "Manage" to access detailed [Razorpay Settings](/guide/payments-checkout/connecting-payment-gateways/razorpay-settings) for configuration.
-- **Mercado Pago**- **Description:** Mercado Pago is a widely used payment solution in Latin America that allows you to accept credit cards, debit cards, and local payment methods across multiple countries.
-- **Status:** Typically shown as "Active" if enabled.
-- **Management:** Click "Manage" to access detailed [Mercado Pago Settings](/guide/payments-checkout/connecting-payment-gateways/mercado-pago-settings) for configuration.
-- **Cash on Delivery (COD):**- **Description:** Allows customers to pay with cash upon delivery of their order.
-- **Status:** Typically shown as "Active" if enabled.
-- **Management:** Click "Manage" to access [Cash on Delivery Settings](/guide/payments-checkout/connecting-payment-gateways/cash-on-delivery-settings) for configuration.
+#### Global & Modern Solutions ​
+
+- **Stripe:** A comprehensive platform to accept credit cards, debit cards, and popular local payment methods worldwide with a single integration.
+- **PayPal:** One of the most trusted ways for customers to pay via their PayPal balance, linked bank accounts, or credit cards.
+- **Paddle:** An all-in-one payment and tax solution (Merchant of Record) that handles global payments and compliance effortlessly.
+- **Square:** Securely accept payments via Credit and Debit Cards, Apple Pay, Google Pay, and Cash App Pay.
+
+#### Regional & Specialized Gateways ​
+
+- **Razorpay:** The leading payment gateway for businesses in India, supporting UPI, Netbanking, Cards, and Wallets.
+- **Flutterwave:** A powerful solution for businesses to accept payments across Africa via Bank Transfer, Cards, and Mobile Money.
+- **Authorize.net:** A highly reliable and established payment processor designed specifically for secure credit card and e-check transactions.
+- **Mercado Pago:** Mercado Pago is a widely used payment solution in Latin America that allows you to accept credit cards, debit cards, and local payment methods across multiple countries.
+- **Paystack :** Paystack is a modern payment gateway that helps businesses, particularly in Africa, accept payments from anyone, anywhere in the world via credit cards, bank transfers, and mobile money.
+
+#### Manual Methods ​
+
+- **Cash on Delivery (COD):** Allows your customers to complete their purchase online and pay with physical cash upon the arrival of their order.
 
 Get Started or Create Account
 

@@ -12,6 +12,76 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCart.
 
+## FluentCart v1.3.28 ​
+
+*Released on May 14, 2026*
+
+✨ Newly Added⚡ Improvements🐞 Bug fixesmarkdown
+```
+• Adds Elementor widgets: Search Bar, Store Logo, Dashboard Button, and Package Description
+• Adds Draggable and reorderable summary sections in the Elementor Product Info widget
+• Adds Elementor Popup support for Single Product variations, gallery, and quantity
+• Adds Sort By toggle for the Bricks Products Collection element
+```markdown
+```
+• Improves Elementor widget grouping under the "FluentCart Product" category
+• Improves 1-column checkout layout rendering in Elementor templates
+• Improves LearnDash course management support
+• Improves Mollie payment list currency handling
+• Improves Coupon failure messages at checkout
+• Improves Bricks element grouping under the "FluentCart" category
+• Improves Admin menu spacing on mobile
+• Improves Decimal trimming logic for tax rate formatting
+```markdown
+```
+• Fixes Elementor Single Product widgets syncing with active variations
+• Fixes Buy button state updates for active variations
+• Fixes Stock badge clearing for variations without stock data
+• Fixes Stock label rendering as raw markup
+• Fixes Empty Elementor product widgets leaving empty wrappers
+• Fixes Product-template widget visibility outside Single Product documents
+• Fixes Elementor Product Info rendering and Select2 change events
+• Fixes Pricing Table shortcode and block rendering with `group_by` tabs
+• Fixes Single Product shortcode rendering for variations, thumbnails, and quantity
+• Fixes Product description rendering with third-party shortcodes and blocks
+• Fixes FSE rendering for Customer Dashboard, Product Card, Product Search, and Pricing Table blocks
+• Fixes Admin receipt access on records showing not-found pages
+• Fixes Search Bar widget "Same Tab" behavior
+• Fixes Enter key submitting the product title form
+• Fixes Bricks Product Title rendering consistency
+• Fixes French overseas territory VAT mapping issue
+```
+## FluentCart v1.3.27 ​
+
+*Released on May 8, 2026*
+
+✨ Newly Added🐞 Bug fixes🚀 Improvementsmarkdown
+```
+• Adds List/Grid view switcher and advanced product filtering for Bricks
+• Adds Copy Variation ID action for simple product pricing panel
+• Adds Licensing Sites, Site pages, and advanced site filtering
+• Adds SubscriptionReactivated event
+```markdown
+```
+• Fixes Order bump free-shipping checkbox issue
+• Fixes Missing shortcode variables in PDF receipt emails
+• Fixes Long file names overflowing receipt page download buttons
+• Fixes Cart allowing mixed or multiple subscriptions
+• Fixes Offline subscriptions with 100% recurring coupons issue when Subscription Activated
+• Fixes Subscription reactivation after refunds
+• Fixes PayPal IPN subscription handling
+• Fixes Redundant admin table search requests
+• Fixes Amount formatting and customer profile display in Site Detail view (Pro)
+• Fixes PHP warnings from deleted/invalid store pages
+• Fixes Admin menu active state style bleeding
+• Fixes Bricks Builder dynamic tag name mismatch
+• Fixes Authorize.net subscription issue
+```markdown
+```
+• Improves Animation experience for table filters
+• Improves Bricks Builder pagination rendering and performance
+• Improves Product Pricing edit UX
+```
 ## FluentCart v1.3.26 ​
 
 *Released on May 5, 2026*
