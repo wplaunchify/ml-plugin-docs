@@ -1,7 +1,7 @@
 {
   "plugin_slug": "advanced-custom-fields-pro",
   "plugin_name": "Advanced Custom Fields PRO",
-  "last_scraped": "2026-05-11T08:40:13.267Z",
+  "last_scraped": "2026-05-17T14:29:53.621Z",
   "total_pages": 0,
   "failed_urls": [
     "https://www.advancedcustomfields.com/resources/abilities-api/",
@@ -83,6 +83,7 @@
     "https://www.advancedcustomfields.com/resources/acf-schema-schema_properties/",
     "https://www.advancedcustomfields.com/resources/acf-schema-schema_types/",
     "https://www.advancedcustomfields.com/resources/acf-security-principles/",
+    "https://www.advancedcustomfields.com/resources/acf-settings-enable_datastore/",
     "https://www.advancedcustomfields.com/resources/acf-settings-enable_options_pages_ui/",
     "https://www.advancedcustomfields.com/resources/acf-settings-enable_post_types/",
     "https://www.advancedcustomfields.com/resources/acf-settings/",
@@ -118,6 +119,7 @@
     "https://www.advancedcustomfields.com/resources/adding-fields-taxonomy-term/",
     "https://www.advancedcustomfields.com/resources/automatic-structured-data-with-schema-org/",
     "https://www.advancedcustomfields.com/resources/bidirectional-relationships/",
+    "https://www.advancedcustomfields.com/resources/block-bindings/",
     "https://www.advancedcustomfields.com/resources/blocks-expanded_editor_overlay_class/",
     "https://www.advancedcustomfields.com/resources/blocks/",
     "https://www.advancedcustomfields.com/resources/building-layouts-with-the-flexible-content-field-in-a-theme/",
@@ -248,6 +250,7 @@
     "https://www.advancedcustomfields.com/resources/url/",
     "https://www.advancedcustomfields.com/resources/user/",
     "https://www.advancedcustomfields.com/resources/using-acf_form-to-create-a-new-post/",
+    "https://www.advancedcustomfields.com/resources/using-the-acf-datastore/",
     "https://www.advancedcustomfields.com/resources/validation-nonce-errors/",
     "https://www.advancedcustomfields.com/resources/working-with-nested-repeaters/",
     "https://www.advancedcustomfields.com/resources/wp-acf-json-export/",

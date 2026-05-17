@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T14:29:10.652Z",
+  "last_updated": "2026-05-17T14:29:55.714Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -32,7 +32,7 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/resources/",
-      "last_scraped": "2026-05-11T08:40:13.268Z",
+      "last_scraped": "2026-05-17T14:29:53.621Z",
       "page_count": 0,
       "categories": []
     },
@@ -824,7 +824,7 @@
       "slug": "launchflows-customer-dashboardboards-for-woocommerce",
       "name": "LaunchFlows Customer Dashboardboards For WooCommerce",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-05-17T14:29:10.652Z",
+      "last_scraped": "2026-05-17T14:29:10.651Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
@@ -1113,7 +1113,7 @@
       "slug": "uncanny-groups-for-learndash",
       "name": "Uncanny Groups for LearnDash",
       "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-      "last_scraped": "2026-05-17T13:31:17.494Z",
+      "last_scraped": "2026-05-17T13:31:17.493Z",
       "page_count": 0,
       "categories": []
     },
