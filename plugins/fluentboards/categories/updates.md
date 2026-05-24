@@ -8,6 +8,22 @@
 
 **Source:** [https://fluentboards.com/docs/changelog/](https://fluentboards.com/docs/changelog/)
 
+## 1.95 (Date: May 21, 2026)
+
+- **New:** Gantt Chart View
+- **New:** MCP Support for AI Agents
+- **New:** Pin Tasks
+- **New:** Anyone with Permission Can Create Boards
+- **New:** Highlight Recently Opened Tasks in Kanban
+- **New:** Task dependency added
+- **Improvement:** Improved Handling for Large JSON Imports
+- **Improvement:** Optimized CSV Export for Large Numbers of Tasks in Boards
+- **Improvement:** Clone Attachments and Cover Images When Moving Boards
+- **Improvement:**UI improvements in the****My Task Section
+- **Fixed:** Task Reminder Timezone Issue
+- **Fixed:** Repeat Task Date Issue
+- Other improvements and bug fixes
+
 ## 1.91 (Date: December 24, 2025)
 
 - **Improvement:** The Global add button has been moved for a better user experience.
