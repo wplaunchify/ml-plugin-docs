@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T12:32:11.177Z",
+  "last_updated": "2026-05-24T12:32:34.906Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -276,7 +276,7 @@
       "slug": "fluent-messaging",
       "name": "Fluent Messaging",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-05-24T12:32:11.177Z",
+      "last_scraped": "2026-05-24T12:32:11.176Z",
       "page_count": 0,
       "categories": []
     },
@@ -1021,7 +1021,7 @@
       "slug": "resizable-sidebar-for-the-gutenberg-block-editor",
       "name": "Resizable Sidebar for the Gutenberg Block Editor",
       "documentation_url": "https://wordpress.org/plugins/resizable-editor-sidebar/",
-      "last_scraped": "2026-05-17T12:29:14.621Z",
+      "last_scraped": "2026-05-24T12:32:32.962Z",
       "page_count": 1,
       "categories": [
         "advanced"
