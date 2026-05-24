@@ -989,9 +989,9 @@ After a new user is created, their automatically generated password will now be 
 
 WP Fusion [syncs data to your CRM](https://wpfusion.com/videos/tutorials/mapping-and-syncing-contact-fields/) automatically as profiles are updated in WordPress.
 
-However, you may want to trigger an automatic sync of data *back* from your CRM to WordPress. For example if a user’s custom fields or tags have changed, or if you want to import a new WordPress user from a CRM contact record.
+However, you may want to trigger an automatic sync of data *back* from your CRM to WordPress. For example if a user's custom fields or tags have changed, or if you want to import a new WordPress user from a CRM contact record.
 
-**A “webhook” is a small piece of data sent from your CRM to WP Fusion**, letting it know that a contact has been edited and the changes need to be loaded back to WordPress.
+**A "webhook" is a small piece of data sent from your CRM to WP Fusion**, letting it know that a contact has been edited and the changes need to be loaded back to WordPress.
 
 Webhooks work with most of our supported platforms, for a full list please see the [CRM compatibility table](https://wpfusion.com/documentation/faq/crm-compatibility-table/).
 
@@ -1013,9 +1013,14 @@ update_tags
 update
 ```
 
-, or 
+, 
 ```
 add
+```
+
+, or 
+```
+push
 ```
 
  (for more details see below).
@@ -1023,7 +1028,7 @@ add
 access_key
 ```
 
- *(required):*This is the access key from the bottom of the General tab in the WP Fusion settings. This authenticates the webhook.
+ *(required):* This is the access key from the bottom of the General tab in the WP Fusion settings. This authenticates the webhook.
 - ```
 contact_id
 ```
@@ -1033,7 +1038,7 @@ contact_id
 role
 ```
 
- *(optional):*When using the 
+ *(optional):* When using the 
 ```
 add
 ```
@@ -1053,7 +1058,7 @@ role
 send_notification
 ```
 
- *(optional):*When using the 
+ *(optional):* When using the 
 ```
 add
 ```
@@ -1070,41 +1075,120 @@ You can test a webhook for a specific content by visiting the URL in your browse
 https://mysite.com/?wpf_action=add&access_key=KEY&contact_id=123
 ```
 
-![](https://wpfusion.com/wp-content/uploads/2022/04/webhooks-add-success-1024x791.jpg)When testing webhooks in the browser, a debug page is shown with the data loaded from your CRM.
+When testing webhooks in the browser, a debug page is shown with the data loaded from your CRM.
+
+### Webhook actions
+
+#### update_tags
+
+Loads updated tags/lists for the matched user from the CRM and applies them in WordPress. No contact field data is synced.
+
+#### update
+
+Loads updated tags and contact field data for the matched user from the CRM and saves it to WordPress user meta.
+
+#### add
+
+Creates a new WordPress user from the matched CRM contact record. If a user with the same email address already exists, they will be updated instead.
+
+#### push (added in v3.47.12)
+
+**The reverse of update** — instead of pulling data *from* your CRM into WordPress, 
+```
+push
+```
+
+ triggers WP Fusion to push the WordPress user's meta *to* your CRM. This is useful when you need your CRM to request a fresh sync of WordPress data on demand — for example, in a Klaviyo flow that checks whether a field is populated and triggers the push if it isn't.
+
+**URL format:**
+
+```
+https://mysite.com/?wpf_action=push&access_key=KEY&contact_id=123
+```
+
+**Optional parameters:**
+
+- ```
+fields
+```
+
+ *(optional)*: A comma-separated list of WordPress meta keys or CRM field keys to limit which fields are pushed. If omitted, all mapped fields are synced. Example: 
+```
+&fields=first_name,billing_address_1
+```
+- ```
+async
+```
+
+ *(optional)*: Set to 
+```
+true
+```
+
+ to queue the push for background processing instead of running it immediately. Useful for high-volume automations where you don't need an immediate response.
+
+**Concurrent request handling:**
+
+If a 
+```
+push
+```
+
+ webhook arrives while an 
+```
+update
+```
+
+, 
+```
+update_tags
+```
+
+, or 
+```
+add
+```
+
+ webhook is already being processed for the same contact, the 
+```
+push
+```
+
+ will be blocked to prevent a data race condition. This is recorded in the [activity logs](https://wpfusion.com/documentation/getting-started/activity-logs/) with a notice.
 
 ### Webhook strategy
 
-While it’s tempting to want to keep everything in sync all the time, it’s also important to keep in mind that processing webhooks requires a fair bit of server resources.
+While it's tempting to want to keep everything in sync all the time, it's also important to keep in mind that processing webhooks requires a fair bit of server resources.
 
 When a webhook is received, WP Fusion needs to connect back to your CRM, load any updated data, save it, and trigger any automated enrollments. This process takes a few seconds to run.
 
-For example, if you’ve configured your webhooks to sync every contact record edit back to WordPress, and you bulk edit a bunch of contacts in your CRM, you can end up temporarily crashing your website while it struggles to deal with all the webhooks.
+For example, if you've configured your webhooks to sync every contact record edit back to WordPress, and you bulk edit a bunch of contacts in your CRM, you can end up temporarily crashing your website while it struggles to deal with all the webhooks.
 
-That’s why we recommend setting up your webhooks so that they run just when data needs to be loaded back into WordPress. For example when a tag is applied that unlocks a new piece of content (as opposed to whenever *any* tag is applied).
+That's why we recommend setting up your webhooks so that they run just when data needs to be loaded back into WordPress. For example when a tag is applied that unlocks a new piece of content (as opposed to whenever *any* tag is applied).
 
 #### Duplicate webhooks
 
 WP Fusion will try to detect when two duplicate webhooks are being received at the same time for the same contact, in order to prevent potential data loss. This will be recorded [to the logs](https://wpfusion.com/documentation/getting-started/activity-logs/) with a yellow notice.
 
-If you see messages in the logs regarding duplicate webhooks, please review your webhook setup to make sure that the same webhook can’t be triggered twice for the same contact.
+If you see messages in the logs regarding duplicate webhooks, please review your webhook setup to make sure that the same webhook can't be triggered twice for the same contact.
 
 #### Loopback webhooks
 
-It’s important to try to avoid triggering a webhook as a result of something changed by WP Fusion, as this can result in potential data loss.
+It's important to try to avoid triggering a webhook as a result of something changed by WP Fusion, as this can result in potential data loss.
 
 As an example:
 
-1. A customer checks out via WooCommerce and WP Fusion creates a new contact record in your CRM with the customer’s name and email. The contact doesn’t yet have any tags.
-2. You’ve configured a webhook back to WP Fusion for *any* time any contact is edited, and so this new contact meets the condition and the webhook is sent.
+1. A customer checks out via WooCommerce and WP Fusion creates a new contact record in your CRM with the customer's name and email. The contact doesn't yet have any tags.
+2. You've configured a webhook back to WP Fusion for *any* time any contact is edited, and so this new contact meets the condition and the webhook is sent.
 3. At the same time, WP Fusion begins to apply the tags that would enroll the new customer into the course they just purchased.
-4. The webhook arrives, indicating that a new contact has been updated and has *no tags.*
+4. The webhook arrives, indicating that a new contact has been updated and has *no tags.*
 5. This erases the tags that were applied in Step 3, and the customer loses access to their course.
 
-In this scenario there’s no reason to send a webhook back to WP Fusion telling it a new contact was created— because WP Fusion is what created that contact. As possible solutions you could make your webhook trigger more specific by requiring a tag, or by checking the contact’s creation date.
+In this scenario there's no reason to send a webhook back to WP Fusion telling it a new contact was created— because WP Fusion is what created that contact. As possible solutions you could make your webhook trigger more specific by requiring a tag, or by checking the contact's creation date.
 
-If you can’t prevent loopback webhooks (for example Gist always sends a webhook whenever WP Fusion applies a tag over the API), you can try this snippet:
+If you can't prevent loopback webhooks (for example Gist always sends a webhook whenever WP Fusion applies a tag over the API), you can try this snippet:
 
-This will “lock” a user for one minute every time a tag is applied. While the user is locked, any incoming webhooks will be blocked for that user.
+This will "lock" a user for one minute every time a tag is applied. While the user is locked, any incoming webhooks will be blocked for that user.
 
 This is still not ideal for performance, since your site is getting hit with redundant webhooks, but it should prevent unexpected data loss.
 
