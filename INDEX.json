@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T16:21:58.088Z",
+  "last_updated": "2026-05-24T16:22:08.800Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-05-17T16:21:32.036Z",
+      "last_scraped": "2026-05-24T16:22:07.020Z",
       "page_count": 0,
       "categories": []
     },
@@ -190,7 +190,7 @@
       "slug": "disable-comments",
       "name": "Disable Comments",
       "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-      "last_scraped": "2026-05-24T15:29:56.749Z",
+      "last_scraped": "2026-05-24T15:29:56.748Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -988,7 +988,7 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-05-24T15:25:14.822Z",
+      "last_scraped": "2026-05-24T15:25:14.818Z",
       "page_count": 24,
       "categories": [
         "beta-release",
@@ -1104,7 +1104,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://theeventscalendar.com/knowledgebase/documentation/",
-      "last_scraped": "2026-05-24T16:17:47.683Z",
+      "last_scraped": "2026-05-24T16:17:47.682Z",
       "page_count": 0,
       "categories": []
     },
