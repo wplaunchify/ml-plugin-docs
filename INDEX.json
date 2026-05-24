@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T17:24:24.910Z",
+  "last_updated": "2026-05-24T17:24:28.739Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -24,7 +24,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-05-24T17:22:42.950Z",
+      "last_scraped": "2026-05-24T17:22:42.949Z",
       "page_count": 0,
       "categories": []
     },
@@ -336,7 +336,7 @@
       "slug": "fluentbooking",
       "name": "FluentBooking",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-05-17T17:24:47.533Z",
+      "last_scraped": "2026-05-24T17:24:27.753Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -450,7 +450,7 @@
       "slug": "fluentcrm-pro",
       "name": "FluentCRM Pro",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-05-24T17:24:24.910Z",
+      "last_scraped": "2026-05-24T17:24:24.909Z",
       "page_count": 0,
       "categories": []
     },
