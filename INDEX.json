@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T09:42:09.532Z",
+  "last_updated": "2026-05-24T09:58:28.561Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1120,8 +1120,8 @@
       "slug": "woocommerce",
       "name": "WooCommerce",
       "documentation_url": "https://woocommerce.com/documentation/",
-      "last_scraped": "2026-05-17T09:56:52.148Z",
-      "page_count": 3762,
+      "last_scraped": "2026-05-24T09:58:23.843Z",
+      "page_count": 3786,
       "categories": [
         "uncategorized"
       ]
