@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T01:39:11.783Z",
+  "last_updated": "2026-05-24T01:41:17.615Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -970,7 +970,7 @@
       "slug": "preview-e-mails-for-woocommerce",
       "name": "Preview E-mails for WooCommerce",
       "documentation_url": "https://wordpress.org/plugins/woo-preview-emails/",
-      "last_scraped": "2026-05-17T01:36:54.308Z",
+      "last_scraped": "2026-05-24T01:41:17.615Z",
       "page_count": 1,
       "categories": [
         "advanced"
