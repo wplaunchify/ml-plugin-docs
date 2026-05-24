@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T15:23:37.069Z",
+  "last_updated": "2026-05-24T15:23:54.987Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -56,7 +56,7 @@
       "slug": "affiliatewp-affiliate-portal",
       "name": "AffiliateWP - Affiliate Portal",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-05-24T15:23:37.069Z",
+      "last_scraped": "2026-05-24T15:23:37.068Z",
       "page_count": 0,
       "categories": []
     },
@@ -200,7 +200,7 @@
       "slug": "duplicate-page",
       "name": "Duplicate Page",
       "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
-      "last_scraped": "2026-05-17T15:22:16.895Z",
+      "last_scraped": "2026-05-24T15:23:53.044Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -317,7 +317,7 @@
       "slug": "fluentboards",
       "name": "FluentBoards",
       "documentation_url": "https://fluentboards.com/documentation/",
-      "last_scraped": "2026-05-24T14:38:09.788Z",
+      "last_scraped": "2026-05-24T14:38:09.786Z",
       "page_count": 42,
       "categories": [
         "boards",
@@ -765,7 +765,7 @@
       "slug": "kadence-custom-fonts",
       "name": "Kadence Custom Fonts",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-24T14:38:32.844Z",
+      "last_scraped": "2026-05-24T14:38:32.843Z",
       "page_count": 0,
       "categories": []
     },
