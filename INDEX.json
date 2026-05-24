@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T10:30:04.400Z",
+  "last_updated": "2026-05-24T10:35:36.839Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1583,7 +1583,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-05-17T10:32:59.633Z",
+      "last_scraped": "2026-05-24T10:35:36.839Z",
       "page_count": 5,
       "categories": [
         "export-tutor-lms-courses-google-sheets",
