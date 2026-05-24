@@ -169,13 +169,26 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 **Source:** [https://fluentforms.com/docs/help-message-customization-in-fluent-forms/](https://fluentforms.com/docs/help-message-customization-in-fluent-forms/)
 
-Help message in [Fluent Forms](https://wordpress.org/plugins/fluentform/) to make your forms more understandable to the audience by providing additional context or instructions from fields. These can appear as tooltips, below input fields or in other positions to guide users effectively.
+Help message in [Fluent Forms](https://wordpress.org/plugins/fluentform/) to make your forms more understandable to the audience by providing additional context or instructions from fields. These can appear as tooltips, below input fields, or in other positions to guide users effectively.
 
 This guide will show you how to customize your help message easily with Fluent Forms.
 
-### Add Help Message to a Form Field
+### Global Help Message Placement Settings
 
-To learn how you can add a help message and customize it to any specific Form in Fluent Forms, follow the steps with the screenshots below –
+**You** can define the global layout rules for how help messages display across **your** site. To configure these default behaviors:
+
+First, click on **Global Settings** in the top **Fluent Forms Navbar**. Select the **General** dropdown menu from the left sidebar and click on **Layout**.
+
+Under the **Global Layout Settings** section, locate the **Help Message Placement** dropdown menu. Choose **your** preferred option to set where the help message will render:
+
+- **Next to Label**: Displays the context text or tooltip immediately adjacent to the element label.
+- **Below Input Element**: Positions the instruction text directly underneath the blank input field.
+
+Click **Save** in the top right corner to apply these layout updates globally.
+
+![](https://fluentforms.com/wp-content/uploads/2025/06/global-settings-1-scaled.webp)
+
+### Add Help Message to a Form Field
 
 First, go to **Forms** from the Fluent Forms Navbar and select the **Desired Form** for which you want to customize the help message.
 
@@ -209,8 +222,6 @@ Once you are all done, the form preview of the help message is shown in the scre
 ![](https://fluentforms.com/wp-content/uploads/2025/01/Preview-help-message-03.webp)
 
 Help Messages in Fluent Forms make your forms more user-friendly by offering helpful guidance exactly when and where users need it!
-
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
 
 ---
 

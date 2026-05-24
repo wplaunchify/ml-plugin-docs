@@ -581,13 +581,51 @@ Once you enable the **PayPal**, all the required settings will appear to configu
 
 Before starting the configuration, select any **Payment Mode** between **Sandbox** (for test payments) and **Live (**for real payments) as both options follow the same configuration process, e.g., I choose the **Sandbox Mode**.
 
-Then, enter the email you signed up with on the [PayPal Account](https://www.paypal.com/signin) into the**PayPal Email** field.
+Then, enter the email you signed up with on the [PayPal Account](https://www.paypal.com/signin) into the **PayPal Email** field.
 
-Additionally, turn on the **Disable PayPal IPN Verification** toggle if **Payment Data Transfer**is not accessible for you and payments are not being marked as complete. This option allows the site to use a slightly less secure method of verifying purchases.
+### 1. Standard (Legacy Mode)
 
-Finally, press the **Save PayPal Settings** button and your PayPal account will be integrated with **Fluent Forms** for your WordPress Site.
+This legacy method relies on your primary PayPal email address and IPN responses to track single and recurring transactions.
 
-![](https://fluentforms.com/wp-content/uploads/2025/01/2.-Configure-Paypal-Account-Email-scaled.webp)
+- **PayPal Email:** Enter the email address linked directly to your verified PayPal Business Account.
+
+![](https://fluentforms.com/wp-content/uploads/2025/06/paypal-standard-3-scaled.webp)
+
+### 2. Checkout API (Recommended Mode)
+
+Fluent Forms connects to PayPal through PayPal’s modern **Orders API v2** (one-time payments) and **Subscriptions API** (recurring payments). It gives you reliable webhook-based confirmations, native subscription support, and verified signatures on every event.
+
+- **Payment Mode:** Set **Mode** to **Sandbox Mode** (for test environments) or **Live Mode** (for processing real payments). Fluent Forms automatically routes API calls to the proper developer endpoints depending on this mode.
+
+- **Generate REST API Credentials in PayPal:**
+1. Log in to the[PayPal Developer Dashboard](https://developer.paypal.com/dashboard/applications/).
+2. Switch to the **Sandbox** or **Live** tab to match your selected mode.
+3. Click **Create App**, name the app (for example, *Fluent Forms*), and select **Merchant** as the app type.
+4. Copy the generated **Client ID** and **Secret Key**.
+- **Enter Keys into Fluent Forms:** Paste the credentials into the matching fields inside Fluent Forms (**Test Client ID** / **Test Secret Key** or **Live Client ID** / **Live Secret Key**). **You** can fill both pairs at once; the system uses the **Mode** toggle to determine which pair is active.
+- **Webhook ID:** Input **your** verified Webhook ID.
+
+**Webhook Settings:** To receive real-time payment, refund, and subscription events from PayPal, you must configure a webhook. In the PayPal Developer Dashboard, add a webhook with the **Webhook URL** provided in the settings box.
+
+You must subscribe to at least to these events:
+
+```
+PAYMENT.SALE.COMPLETED
+
+BILLING.SUBSCRIPTION.ACTIVATED 
+
+BILLING.SUBSCRIPTION.CANCELLED 
+
+BILLING.SUBSCRIPTION.EXPIRED
+
+BILLING.SUBSCRIPTION.PAYMENT.FAILED 
+
+BILLING.SUBSCRIPTION.SUSPENDED
+```
+
+Copy your **Webhook ID** back into Fluent Forms. Webhook events are only processed when a Webhook ID is configured as a deliberate safety guard against unsigned events.
+
+![](https://fluentforms.com/wp-content/uploads/2025/06/paypal-checkout-api-4-scaled.webp)
 
 ## Setup PayPal IPN Settings
 
@@ -595,13 +633,13 @@ After configuring PayPal, you can set up **IPN** (**Instant Payment Notification
 
 **IPN (Instant Payment Notification)**is a post-message notification sent by **PayPal** after a successful transaction for standard merchant accounts, containing all the payment transaction details. Setting up [PayPal](https://www.paypal.com/) IPN with Fluent Forms allows you to receive Instant Payment Notifications from PayPal.
 
-To learn how to set up **PayPal IPN** with**Fluent Forms**, follow the steps with the screenshots below –
+To learn how to set up **PayPal IPN** with Fluent**Forms**, follow the steps with the screenshots below –
 
 First, go to **Global Settings**from the **Fluent Forms Navbar**, open the **Payment**tab from the left sidebar, and click the **Payment Methods**option.
 
 Now, go to **PayPal Standard**, and scroll down to the **PayPal IPN Settings (Recommended for Subscription Payment)**option.
 
-Then, copy the**IPN URL**for****smooth transactions based on **PayPal** **Data** related to **Subscription/Recurring**payments.
+Then, copy the**IPN** URL for smooth transactions based on **PayPal** **Data** related to **Subscription/Recurring**payments.
 
 > If you do not set up the IPN (Instant Payment Notification) then it will still work for single payments but recurring payments will not be marked as paid for PayPal subscription payments.
 

@@ -4,6 +4,104 @@
 
 ---
 
+## Ranking Field in Fluent Forms
+
+**Source:** [https://fluentforms.com/docs/ranking-field-in-fluent-forms/](https://fluentforms.com/docs/ranking-field-in-fluent-forms/)
+
+The Ranking field in Fluent Forms allows users to provide feedback by arranging options in their preferred order. By default, the field includes options that users can easily reorder using drag-and-drop handles or up/down arrows. You can customize the layout, add photos to the options, and define as many ranking choices as needed.
+
+This guide will walk you through adding and customizing the Ranking Field in Fluent Forms for your WordPress site.
+
+> Note: The Ranking field is an advanced feature of the Fluent Forms plugin. To use it, you require the Fluent Forms Pro Add-on.
+
+## Adding the Ranking Field
+
+1. Go to the **Forms** section from the **Fluent Forms Navbar**, choose a desired Form, and click the **Edit** link to open the Editor page of that form.
+
+> Note: If you do not have any existing forms, read Create a Form from Scratch or Create a Form using Templates documentation to create a new one.
+
+![](https://fluentforms.com/wp-content/uploads/2026/05/edit-1-scaled.webp)
+
+1. Once you are on the Editor page, click the **Plus Icon** in your form editor and open the **Advanced Fields** module.
+2. Now, select the **Ranking Field** by clicking on it or dragging and dropping it into your editor.
+
+![](https://fluentforms.com/wp-content/uploads/2026/05/input-field-2-scaled.webp)
+
+## Customizing the Ranking Field
+
+A Ranking field has been added. You can edit this field by hovering over it and clicking the Pencil Icon to open the **Input Customization** tab on the right side.
+
+### Ranking Field Options
+
+Located in the Input Customization Tab, these options allow you to configure essential aspects of the Ranking field:
+
+**A. Element Label:** This is the field title that the users will see when filling out the Ranking field in a form. You can enter any text here to help users understand the purpose of the field.
+
+**B. Admin Field Label:** The admin field label is a field title displayed only to admin users. You can configure this option to show a different field label for your admin users when they view the form submissions.
+
+**C. Options:** In this Options section, you can customize the rankable choices:
+
+- Rename the individual option levels.
+- Add new options by clicking the **Plus (+)** icon.
+- Remove options using the **Minus (-)** icon.
+- Check the **Show Values** option to handle backend values or the **Photo** option to display images alongside the text. You can directly upload the photo option when you check this. Also, you can show value and photo at the same time.
+- Edit in bulk or use predefined data sets by clicking the **Bulk Edit / Predefined Data Sets** button.
+
+**D. Shuffle the available options:** Check this box to randomize the initial order of the choices when the user loads the form.
+
+**E. Label Placement:** This option allows you to determine the position of the label title. The available options are Top, Right, Bottom, Left, Hide Label, and Default.
+
+**F. Required:** Decide whether users must complete this ranking field before submission.
+
+**G. Ranking Layout:** Choose how the options are visually presented to the user:
+
+- **List Ranking:** Displays the rankable options in a standard vertical list.
+- **Grid Ranking:** Displays the options in a horizontal grid formation. When selected, a **Grid Columns** dropdown appears, allowing you to specify the number of columns (e.g.,
+
+**H. Show Position Number:** Enable this checkbox to display a numbered badge next to each option (e.g., 1, 2, 3), helping users visualize the numerical rank they are assigning.
+
+**I. Accent Color:** Click the color swatch box to choose a custom color for the position number badges, allowing you to match the field to your brand’s design.
+
+**J. Show Reset Icon:**Enable this option to provide a button for users to easily clear their ranking selections and start over.
+
+![](https://fluentforms.com/wp-content/uploads/2026/05/ranking-field-3-scaled.webp)
+
+### Advanced Options
+
+Advanced settings allow further customization to meet specific use cases. All the Settings under the Advanced Options tab are briefly explained below:
+
+**A. Name Attribute:** The input field’s name attribute is the HTML equivalent of the same name. You don’t need to modify this.
+
+**B. Help Message:** This option allows you to guide your user thoroughly. Add your text here, which will be shown as a help message to the user.
+
+**C. Container Class:** Use this option to add your custom CSS classes to the field’s wrapper.
+
+**D. Element Class:** Add custom CSS classes to the input field itself.
+
+**E. Conditional Logic:** This option allows you to create specific rules to dynamically hide/show the input field to function conditionally based on your submission values according to your set of [conditional logics](https://fluentforms.com/docs/set-up-forms-with-conditional-logic-in-fluent-forms/).
+
+![](https://fluentforms.com/wp-content/uploads/2026/05/advanced-option-4-scaled.webp)
+
+## Embed the Form into the Front
+
+Once you have customized the ranking field, click the **Save Form** button in the top right to apply the changes.
+
+To display the form on a specific page or post, copy the Shortcode from the Forms list and paste it into your desired page or post. To preview the form, click **Preview & Design** at the top of the editor page.
+
+![](https://fluentforms.com/wp-content/uploads/2026/05/save-form-5-scaled.webp)
+
+### Preview of Added Ranking Field
+
+Here is a preview of the form with the Ranking Field active:
+
+Users can interact with the numbered options by using the up and down arrows or by grabbing the drag handles on the right side of the box to reorder them.
+
+![](https://fluentforms.com/wp-content/uploads/2026/05/preview-6.webp)
+
+Congratulations! You have successfully added a Ranking field to your Fluent Forms form.
+
+---
+
 ## Quiz Score in Fluent Forms
 
 **Source:** [https://fluentforms.com/docs/quiz-score-in-fluent-forms/](https://fluentforms.com/docs/quiz-score-in-fluent-forms/)
@@ -1488,6 +1586,37 @@ Also, you can edit bulk by clicking the **Bulk Edit**options.
 
 ![](https://fluentforms.com/wp-content/uploads/2025/02/Basic-options-04-13-scaled.webp)
 
+#### Icon Source
+
+The Ratings field allows **you** to change the icon styles and colors for each field directly from the editor panel. None of these settings is required; existing forms continue to render the default setup if left unchanged.
+
+Locate the **Icon Source** dropdown option under the field customizer. **You** can choose between:
+
+**1. Preset Icons (Default):** Selecting **Preset Icons** reveals a **Preset Icon** selection dropdown with built-in shapes:
+
+- **Star** (Default)
+- **Heart**
+- **Thumb**
+- **Smile**
+- **Bolt**
+
+![](https://fluentforms.com/wp-content/uploads/2025/06/icon-source-1-scaled.webp)
+
+**2. Custom SVG:** Selecting **Custom SVG** reveals a textarea labeled **Custom SVG Icon**. **Paste** the full <svg>…</svg> markup of **your** custom icon here. Use currentColor for your fill and stroke attributes within the markup so **your** icon accurately inherits the color pickers below.
+
+**Tip:** Keep the SVG simple single-path icons with no gradients, which render most reliably across different browsers. Anything outside the <svg> tag is stripped on save.
+
+#### Colors
+
+Two independent color pickers are available per Ratings field to design **your** icons:
+
+- **Inactive Color:** Controls the color of unselected icons.
+- **Active Color:** Controls the color of a selected star/icon.
+
+Click either colored square swatch to open the color picker panel and define **your** preferred custom hex values. The hover feedback color is derived automatically from the inactive color selection to keep the visual behavior balanced.
+
+![](https://fluentforms.com/wp-content/uploads/2025/06/custom-svg-2-scaled.webp)
+
 #### Advanced Options
 
 Advanced settings allow further customization to meet specific use cases. All the **Settings** under the **Advanced Options**tab mentioned in the screenshot are briefly explained below –
@@ -1496,7 +1625,7 @@ Advanced settings allow further customization to meet specific use cases. All th
 
 **B. Name Attribute:** The input field’s name attribute is the HTML equivalent of the same name. You don’t need to modify this.
 
-**C. Conditional Logic:** This option allows you to create specific rules to dynamically hide/show the input field to function conditionally based on your submission values according to your set of conditional logics. To learn more, read this[Documentation](https://fluentforms.com/docs/set-up-forms-with-conditional-logic-in-fluent-forms/).
+**C. Conditional Logic:** This option allows you to create specific rules to dynamically hide/show the input field to function conditionally based on your submission values according to your set of conditional logics. To learn more, read this [Documentation](https://fluentforms.com/docs/set-up-forms-with-conditional-logic-in-fluent-forms/).
 
 ![](https://fluentforms.com/wp-content/uploads/2025/02/Advanced-options-05-11-scaled.webp)
 
@@ -1514,7 +1643,7 @@ To preview the form, click **Preview & Design** in the middle of the page.
 
 Here is a preview of the form with the **Ratings Input** field:
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/preview-07-8.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/rating-preview.webp)
 
 Congratulations! You have successfully added rating input to your Fluent Forms form.
 
@@ -1554,39 +1683,42 @@ The**Form Steps** are divided into **Three** steps. These are:
 
 ## 1. Paging Start
 
-Paging is the first part of the **Form Step** input field. This section contains the first page of the multiple-page form.
+The **Paging Start** block controls the global indicator behavior and styles for the multi-step sequence. Hover over the **PAGING START** bar in your editor and click the **Pencil Icon** to open the **Input Customization** settings.
 
-Now, add the desired fields you want to show in the first part of the form and it will automatically load into the **Paging Start**section.
+### Progress Indicator
 
-![](https://fluentforms.com/wp-content/uploads/2024/12/3.-Adding-Input-Fields-under-Paging-Start-scaled.webp)
+The **Progress Indicator** setting controls how step progress is shown at the top of a multi-step form. **You** can choose between four distinct layout styles:
 
-Also, you can customize this part by clicking the **Pencil/Edit Icon**when hovering over the field.
+- **Progress Bar**: Displays a standard progress bar that gives users a numeric percentage indication of their progress (e.g., “1 of 2 steps completed”).
+- **Steps**: Displays a numbered list of structural step titles with the current active step highlighted.
+- **Tabs**: Renders step titles as interactive, clickable tab buttons. This configuration allows visitors to quickly jump back to any previously completed step in a single click.
+- **None**: Completely hides all progress indicators from the form interface.
 
-![](https://fluentforms.com/wp-content/uploads/2024/12/4.-Edit-Paging-Start-step-1-scaled.webp)
+> Tip: Whichever indicator you pick, the values you enter in the Step Titles section become the labels. If left blank, Fluent Forms falls back to Step 1, Step 2, etc.
 
-**All the customization options mentioned above under the Input Customization tab are briefly explained below:**
+### Tabs Indicator Settings
 
-**A) Element Class:**Add custom CSS classes to the input field itself.
+When **you** select **Tabs** as your progress indicator, two additional sub-settings will appear immediately below:
 
-**B) Progress Indicator:** You will find three options for the indicator bar style here. Users will see the progress of the form steps according to their choice.
+**Tab Position**: Determines the structural layout orientation of your step tabs:
 
-- **Progress Bar:** Choosing the Progress Bar will show users a progress bar in the form. So that they can have a numeric idea of their progress (in the form of “1 of 4 steps completed”).
-- **Steps:** Selecting**Steps** will show users the names of the steps in the form so they can visualize their progress.
-- **None:**Choosing**None** will show users no progress indicators.
+- **Top** (Default): Tabs align horizontally above the form. If they overflow the screen width, they scroll horizontally rather than wrapping.
+- **Left**: Tabs render vertically in a sidebar column to the left of the form body, making it ideal for a large number of steps or long step titles.
 
-**C) Animation Type**: You can control the animation for transition from pages based on the Slide Left/Right, Fade In/Out, Slide Down/Up, and None (No animation will be used) options.
+**Show Progress Bar Under Tabs**: Toggle this checkbox to position a compact visual progress bar directly beneath the horizontal tab strip. This is disabled by default.
 
-**D) Step Titles:**Fields to enter custom titles for each step of the form. In **Step 1**, you will enter a title for the first step, and in **Step 2** you will enter a title for the second step.
+### Animation & Page Controls
 
-**E) Disable auto focus when changing each page**: By default, enable auto focus or auto-scroll. You can easily disable autofocus by enabling this checkbox.
-
-**F) Enable auto page change for single radio field**: This option is disabled by default. When enabled, the form will automatically proceed to the next step after the user completes the last field in the current step.
+- **Animation Type**: Choose the transition style when moving between steps (**Slide Left/Right**, **Fade In/Out**, **Slide Down/Up**, or **None**).
+- **Step Titles**: Enter personalized text labels for **Step 1**, **Step 2**, etc., to replace the default step text.
+- **Disable auto focus when changing each page**: Check this to stop the page from automatically scrolling to the top of the form when a user changes steps.
+- **Enable auto page change for single radio field**: When enabled, the form will automatically transition to the next step immediately after a user selects an option in the last radio field of the current step.
+- **Enable Per-step data save (Save and Continue)**: Saves the form input data locally step-by-step as the user proceeds, letting them safely resume if they leave mid-session.
+- **Resume Step from last form session**: If your website has a sticky header menu, you might encounter problems, such as the form being hidden beneath it while [auto-scroll](https://fluentforms.com/docs/set-scroll-offset-of-form-steps/) is enabled.
 
 > Watch this Video Tutorial to learn the process of multi-step forms automatically to the next-step form in Fluent Form.
 
-**G) Enable Per step data save (Save and Continue)**: This option is disabled by default. If you enable it, however, it will save the data entered in each step as the user progresses through the form, allowing users to resume the form from where they left off.
-
-- **Resume Step from last form session**: If your website has a sticky header menu, you might encounter problems, such as the form being hidden beneath it while [auto-scroll](https://fluentforms.com/docs/set-scroll-offset-of-form-steps/) is enabled.
+![](https://fluentforms.com/wp-content/uploads/2025/06/paging-start-4-scaled.webp)
 
 ## 2. Page Break
 
@@ -1623,10 +1755,10 @@ To integrate and display the form on a specific page or post, copy the **Shortco
 
 Here is the preview of the added **Form Step**field under the Form.
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/Preview-06-4.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/preview-step-form.webp)
 
-This way, you can create as many**Multi-step Forms** as you want with **Fluent** **Forms**.
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our[@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank You.
+This way, you can create as many**Multi-step****Forms** as you want with **Fluent** **Forms**.
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our[support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank You.
 
 ---
 

@@ -336,7 +336,7 @@ An image upload field has been added. You can edit this field by**hovering over 
 - Image Upload Options
 - Advanced Options
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/Input-Customization-03-5-scaled.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/customize-the-image-upload-3-scaled.webp)
 
 ### Image Upload Options
 
@@ -352,13 +352,15 @@ Example: *“Choose File”* or *“Upload Image”*.
 
 **C. Upload Button Interface:**You can choose the upload button Dropzone or a regular Button that shows off your user when they fill out the form.
 
-**D. Label Placement:** This option allows you to determine the position of the label title where the user will see it. The available options are **Top**, **Left**, **Right**, and **Default**. All of those are self-explanatory except the **Default**. If you select the **Default** option, it will represent your global label placement settings.
+**D. Upload Button Interface:** Choose between a standard **Button** interface or an interactive **Dropzone** wrapper.
 
-**E. Admin Field Label:** The admin field label is a field title displayed only to admin users. You can configure this option to show a different field label for your admin users when they view the form submissions.
+**E. Label Placement:** This option allows you to determine the position of the label title where the user will see it. The available options are **Top**, **Left**, **Right**, and **Default**. All of those are self-explanatory except the **Default**. If you select the **Default** option, it will represent your global label placement settings.
 
-**F. Required:** Decide whether users must select at least one option before submission.
+**F. Admin Field Label:** The admin field label is a field title displayed only to admin users. You can configure this option to show a different field label for your admin users when they view the form submissions.
 
-**G. Max File Size:** Set a size limit for uploaded images.
+**G. Required:** Decide whether users must select at least one option before submission.
+
+**H. Max File Size:** Set a size limit for uploaded images.
 
 - Choose between **KB**or**MB**.
 - Define the maximum size allowed.
@@ -367,22 +369,55 @@ Example: *“Choose File”* or *“Upload Image”*.
 
 If you want to add a **Custom Error Message**, you can disable the **Global Error Message** by clicking the **Radio**button on the right.
 
-**H. Max File Count:** Set the number of images a user can upload.
+**I. Max File Count:** Set the number of images a user can upload.
 
 **Global Error Message:**Define the error message if users exceed the allowed number of uploads.
 
 If you want to add a **Custom Error Message**, you can disable the **Global Error Message** by clicking the **Radio**button on the right.
 
-**I. Allowed Images:**Select which image format can be uploaded from the following checkbox.(**JPG**, **PNG**, or **GIF**) of image files that will be allowed to be uploaded.
+**J. Allowed Images:**Select which image format can be uploaded from the following checkbox.(**JPG**, **PNG**, or **GIF**) of image files that will be allowed to be uploaded.
 
 Define the error message to be shown if validation fails for **Allowed Image** formats.
 
-**J. File Location Type: As Per Global Settings** & **Custom**, you will see two options here.
+**k. File Location Type: As Per Global Settings** & **Custom**, you will see two options here.
 
 - **As Per Global Settings:** This option is selected by default, and the Global Settings determine the file location.
 - **Custom:** If you select Custom, two options are available: Fluentforms Default & Media Library. In Custom options, uploaded files can be stored in the Media Library, Fluent Forms Default, or both. You can select the **Media Library**to upload the files in the WordPress **Media Library**.
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/Basic-Options-04-5-scaled.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/image-upload-option-1-scaled.webp)
+
+### Image Crop
+
+Image Crop allows users to upload and crop images before submitting the form. Only the cropped image is uploaded and validated on the server side. Enable the **Enable Crop** option.
+
+Once enabled, additional crop settings will appear below the toggle. This option is disabled by default, so your existing forms will remain unchanged.
+
+#### Select a Crop Type
+
+The **Crop Type** setting controls how the image can be cropped. Fluent Forms provides two crop options:
+
+#### Crop Ratio (Aspect Ratio)
+
+You can choose a predefined crop ratio from the **Crop Ratio** dropdown menu:
+
+- **Free (Default):** Allows users to crop the image freely without fixed proportions
+- **1:1:** Square crop, ideal for profile or avatar images
+- **4:3:** Standard landscape ratio
+- **16:9:** Widescreen landscape format
+- **3:4 / 9:16:** Portrait-oriented crop ratios
+
+#### Width and Height
+
+Select the **Width and Height** option if you want to define exact image dimensions.
+
+After selecting this option, enter your preferred:
+
+- **Width (px)**
+- **Height (px)**
+
+This ensures users can crop images to a fixed pixel size before uploading.
+
+![](https://fluentforms.com/wp-content/uploads/2025/06/image-upload-option-2-scaled.webp)
 
 ### Advanced Options
 
@@ -1080,6 +1115,8 @@ You will find various settings options for customizing the field. Located in the
 
 You can also save time by importing predefined datasets instead of manually adding each option. (valid for dropdowns like countries or states.)
 
+![](https://fluentforms.com/wp-content/uploads/2025/06/input-customization-1-scaled.webp)
+
 **H. Shuffle the available options:** You can enable the shuffling of your dropdown list or select field options so that every user sees a randomized option.
 
 **I. Enable Searchable Smart Options:** When you have a long dropdown list, you should give users the search option to select a field. Just enable the Searchable Smart options to allow users to search in dropdown fields.
@@ -1088,7 +1125,22 @@ When this option is selected, a search option appears, allowing the user to sear
 
 **J. Required:** Choose the appropriate option from here to determine whether the field should be empty when the user submits your form.
 
-![](https://fluentforms.com/wp-content/uploads/2025/02/Basic-options-04-2-scaled.webp)
+### Option Grouping
+
+Long dropdown lists become much easier for users to scan when related choices are grouped together. **Option Grouping** organizes **your** entries under distinct, bold heading labels that render as native HTML <optgroup> blocks on the frontend.
+
+Under the **Options** section, turn on the **Enable Option Grouping** toggle switch. Turning this toggle on replaces **your** flat options list with a multi-tiered layout structure.
+
+#### Configure Groups and Options
+
+- **Create New Option Group:** Click the **Create New Option Group** button to add an option category block.
+- **Group Label:** Enter the non-selectable heading text that users will see above each batch of choices (e.g., “Group 1”, “Group 2”).
+- **Manage Choices Inside Groups:** Within each grouped block, click the **Plus (+)** icon to add an entry, edit the display labels, customize values, or click the **Minus (-)** icon to delete a choice row.
+- **Reorder & Remove:** Use the drag handles to reorder entire groups or individual options. Click the trash can icon next to a group label to delete the category and all its nested choices.
+
+> Note: Toggling Enable Option Grouping back to Off will completely flatten your structure. Every grouped choice will merge into a single flat list and the group header labels will be permanently dropped.
+
+![](https://fluentforms.com/wp-content/uploads/2025/06/input-customization-2-scaled.webp)
 
 ### Advanced Options
 

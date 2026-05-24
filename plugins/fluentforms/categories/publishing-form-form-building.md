@@ -325,15 +325,20 @@ Now click the **Save Settings**button to save the form design.
 
 ### Share Your Landing Page
 
-Once you’ve designed your landing page, the **Share** section provides various ways to make it accessible. For this, select the **Share** options.
+Once you have designed your landing page, switch to the **Share** tab to access various distribution methods.
 
-**Share Via Direct URL:** A unique **URL** is generated for your landing page. You can directly share this link via email, social media, or any other platform.
+- **Pretty URL:** Toggle this option on to create a cleaner, custom web address. Enter **your** desired text into the **URL Slug** field (e.g., blank-form-5) and click the **Save Pretty URL** button.
+- **Share Via Direct URL:** Get the direct link to share your form on social sites. This section provides a copyable URL and quick-click icons to share directly to Facebook, Twitter, LinkedIn, or via email.
+- **QR Code:** Share this landing page in print or in-person by providing a scannable QR code. You can click **Download SVG** to save the vector image to your computer, or click **Copy SVG** to place the code directly into your design tools.
+- **Shortcode:** Use the provided shortcode (e.g., Support Form (#5)        Subscribe
+        First NameLast NameEmailCategory- Select Category -Technical IssueService IssueGeneral QueryOthersSelect Technical IssueLogin/Account AccessSoftware BugsIntegration ProblemsData Import/ExportSecurity ConcernsOthersSelect Service IssueBilling/PaymentSubscription ManagementFeature RequestsAPI SupportTraining requirementOthersGeneral Support QueriesProduct Related QuestionsAccount ManagementPartnership InquiriesFeedback/SuggestionsCompliance/LegalOthersSubjectDescriptionSubmit Form            window.fluent_form_ff_form_instance_5_1 = {"id":"5","ajaxUrl":"https:\/\/fluentforms.com\/wp-admin\/admin-ajax.php","settings":{"layout":{"labelPlacement":"top","helpMessagePlacement":"with_label","errorMessagePlacement":"inline"},"restrictions":{"denyEmptySubmission":{"enabled":false}}},"form_instance":"ff_form_instance_5_1","form_id_selector":"fluentform_5","rules":{"names[first_name]":{"required":{"value":true,"message":"First Name field is required","global":false,"global_message":"This field is required"}},"names[middle_name]":{"required":{"value":false,"message":"This field is required","global":false,"global_message":"This field is required"}},"names[last_name]":{"required":{"value":false,"message":"This field is required","global":false,"global_message":"This field is required"}},"email":{"required":{"value":true,"message":"Email field is required","global":false,"global_message":"This field is required"},"email":{"value":true,"message":"This field must contain a valid email","global":false,"global_message":"This field must contain a valid email"}},"department":{"required":{"value":true,"message":"Department field is required","global":false,"global_message":"This field is required"}},"input_radio":{"required":{"value":false,"message":"This field is required","global_message":"This field is required","global":true}},"input_radio_1":{"required":{"value":false,"message":"This field is required","global_message":"This field is required","global":true}},"input_radio_2":{"required":{"value":false,"message":"This field is required","global_message":"This field is required","global":true}},"input_text":{"required":{"value":true,"message":"This field is required","global_message":"This field is required","global":true}},"description":{"required":{"value":false,"message":"This field is required","global":false,"global_message":"This field is required"}}},"debounce_time":300,"conditionals":{"input_radio":{"type":"any","status":true,"conditions":[{"field":"department","value":"Technical Issue","operator":"="}]},"input_radio_1":{"type":"any","status":true,"conditions":[{"field":"department","value":"Service Issue","operator":"="}]},"input_radio_2":{"type":"any","status":true,"conditions":[{"field":"department","value":"General Query","operator":"="}]}},"file_upload_settings":[]};
+            ) to embed the form into any of your standard WordPress Pages or Posts.
+- **Email Share:** Easily distribute your form via email. This section provides a pre-written message containing **your** form link. Click **Open Email** to generate a draft in your default email client, or click **Copy Message** to manually paste the text elsewhere.
+- **Embed via HTML Code:** If you want to use this form in another domain, site, or outside of WordPress, copy the provided <iframe> code. Note that you can customize the height property, and you should verify if your WordPress hosting server supports iframes.
 
-**Shortcode:** A dedicated **Shortcode** is provided. Simply copy the shortcode provided and paste it into any post, page, or widget area. Once added, it will show the form using the default design and layout.
+Once finished, click the blue **Save** button in the top right corner to lock in **your** settings.
 
-**Embed via HTML Code:** Use the provided HTML to embed the landing page on external websites or other platforms that support HTML.
-
-![](https://fluentforms.com/wp-content/uploads/2025/04/share-07-scaled.webp)
+![](https://fluentforms.com/wp-content/uploads/2025/06/share-landing-page-5-scaled.webp)
 
 ### Preview the Dedicated Landing page
 

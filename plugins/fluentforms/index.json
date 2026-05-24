@@ -2,8 +2,8 @@
   "plugin_slug": "fluentforms",
   "plugin_name": "Fluent Forms",
   "documentation_url": "https://fluentforms.com/documentation/",
-  "last_scraped": "2026-05-17T17:21:58.229Z",
-  "total_pages": 456,
+  "last_scraped": "2026-05-24T17:21:06.478Z",
+  "total_pages": 457,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -373,8 +373,12 @@
       "slug": "advance-fields",
       "url": "https://fluentforms.com/documentation/advance-fields/",
       "file": "categories/advance-fields.md",
-      "page_count": 23,
+      "page_count": 24,
       "pages": [
+        {
+          "title": "Ranking Field in Fluent Forms",
+          "url": "https://fluentforms.com/docs/ranking-field-in-fluent-forms/"
+        },
         {
           "title": "Quiz Score in Fluent Forms",
           "url": "https://fluentforms.com/docs/quiz-score-in-fluent-forms/"

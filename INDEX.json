@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T17:19:42.188Z",
+  "last_updated": "2026-05-24T17:21:08.582Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -458,8 +458,8 @@
       "slug": "fluentforms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/documentation/",
-      "last_scraped": "2026-05-17T17:21:58.229Z",
-      "page_count": 456,
+      "last_scraped": "2026-05-24T17:21:06.478Z",
+      "page_count": 457,
       "categories": [
         "account-management",
         "action-hooks",
@@ -914,7 +914,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-05-24T17:19:42.188Z",
+      "last_scraped": "2026-05-24T17:19:42.187Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1080,7 +1080,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-24T16:28:48.950Z",
+      "last_scraped": "2026-05-24T16:28:48.949Z",
       "page_count": 0,
       "categories": []
     },
@@ -1411,7 +1411,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-05-24T16:27:32.340Z",
+      "last_scraped": "2026-05-24T16:27:32.329Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",

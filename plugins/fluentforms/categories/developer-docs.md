@@ -20,6 +20,78 @@
 
 ## Changelog
 
+#### 6.2.3 Pro (Date: May 22, 2026)
+
+- Added Tabs style for multi-step forms with Top and Left layouts, clickable step navigation, and a compact progress bar option
+- Added a new Ranking field for ranking options by drag and drop in list or grid layout with quiz and report support
+- Added PayPal Orders API v2 and Subscriptions API support
+- Added image cropping for file upload fields with ratio and exact-dimension options
+- Added pretty URL support for Landing Page and Conversational Form share pages
+- Added keyboard shortcut support for saving form settings
+- Improved Conversational Form share options with email and embed copy buttons
+- Improved Landing Page share settings
+- Improved the Advanced Entries Filter UX with cleaner labels, grouped operators, and tidier value inputs
+- Improved the Advanced Entries Filter to support not-in and not-equal operators
+- Upgraded HubSpot integration to CRM v3 and Lists v3 APIs
+- Fixed custom radio and checkbox styles not rendering correctly on Safari and iOS
+- Fixed payment status filter on translated admin sites
+- Fixed ACF grouped fields not showing in post feed mapping
+- Fixed Google Sheets integration failing when a worksheet name contains special characters
+- Fixed repeater field including non-input fields in its response table
+- Fixed HubSpot checkbox values being sent with an extra semicolon
+- Fixed long HubSpot custom field labels being cut off in the settings dropdown
+- Fixed taxonomy field showing IDs instead of names in entries and notifications
+- Fixed AmoCRM OAuth redirect for amocrm.ru users
+- Fixed subscription description showing recurring text when billing is set to once with a signup fee
+- Fixed Landing Page media-left layout cutting off form fields
+- Fixed Save Progress email not respecting SMTP plugin reply-to settings
+- Fixed Authorize.Net treating held-for-review payments as failures
+- Fixed Authorize.Net payment failing due to phone number validation
+- Fixed HubSpot field mapping incorrectly converting text values to dates
+- Fixed Dynamic field startsWith and endsWith filter options being swapped
+- Fixed Advanced entries filter returning no results for numeric, date, and text searches
+- Fixed italic text not rendering in custom HTML fields in conversational forms
+- Fixed multi-word Google Fonts not loading in conversational forms
+- Fixed save-and-resume drafts being visible across logged-in users on shared accounts
+- Fixed Pipedrive Persons feed duplicating the Marketing Status field
+- Fixed Pipedrive failing the API call when Marketing Status is set to No Consent
+- Fixed Pipedrive integration error when campaigns are active
+- Fixed Pipedrive Lead field mappings sending wrong data types for date and numeric custom fields
+- Fixed Brevo integration not sending boolean field values correctly
+- Fixed Brevo integration not mapping multiple-choice and category attribute types from Checkbox and Multi-select form fields
+- Fixed the Offline payment method label not translatable in notifications
+
+#### 6.2.3 Free (Date: May 21, 2026)
+
+- Added option group support for Dropdown and Multi-select fields
+- Added pinned column support in the entries table
+- Added new icon presets, SVG icon support, and active/inactive color options for the Ratings field
+- Added search to the form switcher in entries
+- Improved keyboard navigation in the entries table
+- Improved accessibility for fixed columns and action buttons in entries
+- Updates DOMPurify to tighten the security
+- Fixed conditional logic settings not showing for custom fields in the editor
+- Fixed conditional logic not-equal check when the target field has no value
+- Fixed Name field layout when a sub-field has no label
+- Fixed text and list formatting differences between the editor and preview
+- Fixed AI form builder losing field hints for non-English prompts
+- Fixed missing submission date in Excel exports
+- Fixed garbled export filenames for forms with non-Latin titles
+- Fixed form import breaking confirmation and notification settings
+- Fixed the Find feature missing forms inside page builder popups
+- Fixed entries not sorting by actual submission date
+- Fixed form import corrupting custom CSS and JavaScript code
+- Fixed visual artifacts in the collapsed form settings sidebar
+- Fixed Global Settings sidebar collapse toggle not working on desktop
+- Fixed the Excel export option incorrectly labeled as xlsv
+- Fixed entry Next and Previous navigation breaking on sites that use a custom database table prefix
+- Fixed fatal error when a Textarea field receives an array value during submission processing
+- Fixed multi-word Google Fonts not loading in conversational forms
+- Fixed textdomain_just_in_time notice on WordPress 6.7 and later, including WP Staging staging environments
+- Fixed several strings that could not be translated on non-English admin sites
+- Fixed the Entries page label showing garbled text on German-language sites
+- Fixed confirmation redirect URL losing query-string values with encoded characters
+
 #### 6.2.2 (Date: April 23, 2026)
 
 - Added subscription field support in payment calculations
