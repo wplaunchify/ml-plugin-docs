@@ -413,18 +413,20 @@ Do you already have a thriving Course or another Space? You can easily copy all 
 
 #### Method C: CSV Import (Upload a List)
 
-If you have an external list of people you want to add (like from a spreadsheet), you can upload them all in one click using a CSV file.
+If you have an external directory of users you want to enroll (such as a spreadsheet exported from another platform), you can add them all simultaneously via a CSV upload.
 
-1. Click the **CSV Import** tab.
-2. Drag and drop your 
-```
-.csv
-```
+1. Click the **CSV Import** tab at the top of the **Add Member**sliding panel.
+2. **Upload** your file. Once processed, the panel displays the file name along with the total count of recognized contacts.
+3. Review the data preview columns underneath to ensure they map correctly:
+- **Name**
+- **Email**
+- **Username**
+4. Configure your user account creation settings using the onboarding options:
+- **Create WordPress accounts for new email addresses:** Check this box if these users do not yet have a profile on your WordPress site. FluentCommunity will securely generate an account for them.
+- **Send default WordPress welcome email for new users:** Check this box to trigger the standard WordPress welcome email automatically, allowing new members to receive their system login credentials immediately.
+5. Click the **Import Members** button at the bottom to complete the import queue.
 
- file into the upload area, or click to browse your computer.
-3. Ensure your file has the correct columns: **Name**, **Email**, and **Username**. You can download the *Sample CSV* provided on the screen to format your list perfectly!
-
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/add-member-6-scaled.webp)
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/csve-import-scaled.webp)
 
 #### Method D: CRM Tag (Integrate with FluentCRM)
 

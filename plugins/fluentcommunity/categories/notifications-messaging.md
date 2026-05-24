@@ -85,15 +85,21 @@ With these settings, you can control what updates you get from your community, h
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/new-posts-notification-03.webp)
 
-#### Unread Notification
+#### Recent Notifications
 
 You can see all your notifications by clicking the **Notification** icon in the top-right corner of your screen. Notifications help you stay updated with activities in your community. There are three main options:
 
-1. **All:** Shows every type of notification.
-2. **Mentions:** This shows only notifications where you were mentioned.
-3. **Following:** Shows notifications for posts and users you are following.
+1. **Recent:** Displays a chronological feed of your most recent notifications, giving you a quick snapshot of overall community interactions.
+2. **Unread:** Filter out viewed items instantly. The **Unread** tab isolates only the notifications you haven’t opened yet, marked by a blue indicator dot. Read states, profile badges, and navigation counters sync dynamically in real-time as you clear them.
+3. **Mentions:** Focuses strictly on specific threads where another member has tagged your name or profile directly in a post or comment.
+4. **Following:** Shows notifications for posts and users you are following.
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/unread-notification-04-scaled.webp)
+#### Quick Actions within the Panel
+
+- **Mark all as read:** Located at the top right of the popover box, this instantly clears all unread indicators across your tabs.
+- **View All:** Located at the bottom left of the menu overlay, click this button to open the full-screen notifications manager page for an expansive view of your history.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/recent-notification-4-scaled.webp)
 
 This system keeps you informed without too many updates, so you can stay connected with your community at a comfortable level.
 

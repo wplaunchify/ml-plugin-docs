@@ -611,7 +611,7 @@ Click the **Save Feed** button to save your configuration.
 
 Publish the form to start adding members to your community spaces or courses directly.
 
-> To monetize your Spaces and Courses with Fluent Forms, you can create a payment form to collect payments for membership access. To set this up, make sure to install Fluent Forms Pro, as it’s required for creating payment forms. 
+> You can use Fluent Forms to enroll users into your FluentCommunity Spaces and Courses upon form submission. While the core integration is free, advanced features like Conditional Logic and the ability to Import Entries require upgrading to Fluent Forms Pro.
 > 
 > 
 > 

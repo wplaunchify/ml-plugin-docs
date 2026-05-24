@@ -507,6 +507,12 @@ You’ll find a few handy customization options for the course:
 - **Hide Course Instructor’s View from Course Overview Page:**Enable this option to hide the instructor section from the course overview page. When turned on, students won’t see the instructor’s name, photo, or profile information on the course page.
 - **Course Layout:**You can choose between two course layouts: **Classic** or **Modern**. By default, the **Classic**layout is selected. If you want your course to look more visual and engaging, choose the **Modern** layout option. The Modern layout features an image or embedded video thumbnail at the top of your course for a more interactive look.
 
+### Lesson order enforcement
+
+Check this box to enable step-by-step progress enforcement. When turned on, **Lesson 2 stays locked until Lesson 1 is marked as complete**, Lesson 3 remains locked until Lesson 2 is complete, and so on. This ensures a predictable, guided training path for certification prep or structured academy programs.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/09/lesson-enforcement-1.webp)
+
 #### Others
 
 **Topic Navigation**: Select your preferred topics to help course members easily filter and find content in the course directory. You can add up to **20 topics** for each course. This makes it easier for learners to browse and explore relevant courses by topic.
@@ -515,7 +521,7 @@ You’ll find a few handy customization options for the course:
 
 Once you’ve added these details, click **Create** to finish setting up your course.
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/09/Create-a-course-scaled.webp)
+![](https://fluentcommunity.co/wp-content/uploads/2024/09/course-2-1-scaled.webp)
 
 #### Lesson Creation
 

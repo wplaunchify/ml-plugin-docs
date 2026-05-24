@@ -574,9 +574,13 @@ This feature adds a link to the default Feed in the sidebar, giving users quick 
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customize-Portal-3.webp)
 
+## Hide Mobile Header and Footer on Scroll
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/hide-and-scroll.webp)
+
 ## Show Powered By Text
 
-Display a Powered by FluentCommunity link to acknowledge the platform and boost its visibility. You can also click here to add your affiliate ID, a pop-up will appear where you have to give your Affiliate ID then click on the **Save** button.
+Display a Powered by FluentCommunity link to acknowledge the platform and boost its visibility. You can also click here to add your affiliate ID. A pop-up will appear where you have to give your Affiliate ID, then click on the **Save** button.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customize-Portal-4.webp)
 
