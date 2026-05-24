@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T08:21:10.352Z",
+  "last_updated": "2026-05-24T08:21:26.725Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -40,7 +40,7 @@
       "slug": "affiliatewp",
       "name": "AffiliateWP",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-05-24T07:13:52.157Z",
+      "last_scraped": "2026-05-24T07:13:52.156Z",
       "page_count": 0,
       "categories": []
     },
@@ -80,7 +80,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-05-24T00:52:31.679Z",
+      "last_scraped": "2026-05-24T08:21:24.339Z",
       "page_count": 0,
       "categories": []
     },
@@ -292,7 +292,7 @@
       "slug": "fluentaffiliate",
       "name": "FluentAffiliate",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-05-24T07:57:31.276Z",
+      "last_scraped": "2026-05-24T07:57:31.273Z",
       "page_count": 52,
       "categories": [
         "admin-portal",
@@ -309,7 +309,7 @@
       "slug": "fluentaffiliate-pro",
       "name": "FluentAffiliate Pro",
       "documentation_url": "https://fluentaffiliate.com/docs/documentation/",
-      "last_scraped": "2026-05-24T08:18:57.311Z",
+      "last_scraped": "2026-05-24T08:18:57.310Z",
       "page_count": 0,
       "categories": []
     },
@@ -353,7 +353,7 @@
       "slug": "fluentcart",
       "name": "FluentCart",
       "documentation_url": "https://docs.fluentcart.com/guide/",
-      "last_scraped": "2026-05-24T07:17:59.980Z",
+      "last_scraped": "2026-05-24T07:17:59.976Z",
       "page_count": 135,
       "categories": [
         "browsing-history",
@@ -401,7 +401,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-05-24T07:15:14.302Z",
+      "last_scraped": "2026-05-24T07:15:14.301Z",
       "page_count": 0,
       "categories": []
     },
@@ -625,7 +625,7 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-05-24T07:55:47.341Z",
+      "last_scraped": "2026-05-24T07:55:47.338Z",
       "page_count": 55,
       "categories": [
         "about-us",
