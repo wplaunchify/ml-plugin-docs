@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T23:20:59.468Z",
+  "last_updated": "2026-05-25T08:50:10.169Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1146,7 +1146,7 @@
       "slug": "woocommerce-smart-coupons",
       "name": "WooCommerce Smart Coupons",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-24T07:08:25.616Z",
+      "last_scraped": "2026-05-25T08:50:10.169Z",
       "page_count": 0,
       "categories": []
     },
