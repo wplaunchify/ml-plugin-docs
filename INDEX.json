@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T08:48:50.987Z",
+  "last_updated": "2026-05-27T08:49:50.793Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -32,7 +32,7 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/resources/",
-      "last_scraped": "2026-05-25T08:54:22.240Z",
+      "last_scraped": "2026-05-27T08:49:48.825Z",
       "page_count": 0,
       "categories": []
     },
@@ -112,7 +112,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-05-26T08:44:37.896Z",
+      "last_scraped": "2026-05-26T08:44:37.895Z",
       "page_count": 0,
       "categories": []
     },
@@ -156,7 +156,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-05-27T08:48:50.987Z",
+      "last_scraped": "2026-05-27T08:48:50.986Z",
       "page_count": 0,
       "categories": []
     },
@@ -1138,7 +1138,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-27T08:46:20.017Z",
+      "last_scraped": "2026-05-27T08:46:20.016Z",
       "page_count": 0,
       "categories": []
     },
