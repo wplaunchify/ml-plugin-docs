@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T08:49:03.119Z",
+  "last_updated": "2026-05-29T08:55:10.700Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -24,7 +24,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-05-29T08:49:03.119Z",
+      "last_scraped": "2026-05-29T08:49:03.118Z",
       "page_count": 0,
       "categories": []
     },
@@ -268,7 +268,7 @@
       "slug": "fluent-forms-signature-addon",
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-05-28T08:47:18.041Z",
+      "last_scraped": "2026-05-28T08:47:18.040Z",
       "page_count": 0,
       "categories": []
     },
@@ -773,7 +773,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-28T08:47:46.589Z",
+      "last_scraped": "2026-05-28T08:47:46.588Z",
       "page_count": 0,
       "categories": []
     },
@@ -781,7 +781,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-29T08:46:30.258Z",
+      "last_scraped": "2026-05-29T08:46:30.257Z",
       "page_count": 0,
       "categories": []
     },
@@ -797,7 +797,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-05-24T10:37:22.143Z",
+      "last_scraped": "2026-05-29T08:55:08.629Z",
       "page_count": 0,
       "categories": []
     },
@@ -1112,7 +1112,7 @@
       "slug": "uncanny-groups-for-learndash",
       "name": "Uncanny Groups for LearnDash",
       "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-      "last_scraped": "2026-05-28T08:49:28.181Z",
+      "last_scraped": "2026-05-28T08:49:28.180Z",
       "page_count": 0,
       "categories": []
     },
@@ -1130,7 +1130,7 @@
       "slug": "woocommerce-anti-fraud",
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-28T08:50:22.526Z",
+      "last_scraped": "2026-05-28T08:50:22.525Z",
       "page_count": 0,
       "categories": []
     },
