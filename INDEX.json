@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T08:22:14.354Z",
+  "last_updated": "2026-05-30T08:25:36.145Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -80,7 +80,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-05-30T08:19:49.649Z",
+      "last_scraped": "2026-05-30T08:19:49.648Z",
       "page_count": 0,
       "categories": []
     },
@@ -442,7 +442,7 @@
       "slug": "fluentcrm-marketing-automation-for-wordpress",
       "name": "FluentCRM - Marketing Automation For WordPress",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-05-30T08:20:34.546Z",
+      "last_scraped": "2026-05-30T08:20:34.545Z",
       "page_count": 0,
       "categories": []
     },
@@ -757,7 +757,7 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-30T08:21:15.648Z",
+      "last_scraped": "2026-05-30T08:21:15.647Z",
       "page_count": 0,
       "categories": []
     },
@@ -797,7 +797,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-05-29T08:55:08.629Z",
+      "last_scraped": "2026-05-30T08:25:34.207Z",
       "page_count": 0,
       "categories": []
     },
@@ -1154,7 +1154,7 @@
       "slug": "woocommerce-stripe-gateway",
       "name": "WooCommerce Stripe Gateway",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-30T08:22:14.354Z",
+      "last_scraped": "2026-05-30T08:22:14.353Z",
       "page_count": 0,
       "categories": []
     },
