@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T05:35:50.765Z",
+  "last_updated": "2026-05-31T05:36:06.275Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -417,7 +417,7 @@
       "slug": "fluentcrm",
       "name": "FluentCRM",
       "documentation_url": "https://fluentcrm.com/documentation/",
-      "last_scraped": "2026-05-24T05:24:43.143Z",
+      "last_scraped": "2026-05-31T05:36:04.184Z",
       "page_count": 137,
       "categories": [
         "advanced-reports",
@@ -890,7 +890,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-05-31T05:35:50.765Z",
+      "last_scraped": "2026-05-31T05:35:50.764Z",
       "page_count": 0,
       "categories": []
     },
