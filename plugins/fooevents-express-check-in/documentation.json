@@ -1,7 +1,7 @@
 {
   "plugin_slug": "fooevents-express-check-in",
   "plugin_name": "FooEvents Express Check-in",
-  "last_scraped": "2026-05-24T12:22:17.393Z",
+  "last_scraped": "2026-05-31T12:28:06.628Z",
   "total_pages": 55,
   "failed_urls": [
     "https://www.fooevents.com/cs/",
