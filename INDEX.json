@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T21:21:44.049Z",
+  "last_updated": "2026-05-31T22:19:35.949Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1138,7 +1138,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-05-27T08:46:20.016Z",
+      "last_scraped": "2026-05-31T22:19:35.949Z",
       "page_count": 0,
       "categories": []
     },
