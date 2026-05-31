@@ -1,7 +1,7 @@
 {
   "plugin_slug": "fooevents-bookings",
   "plugin_name": "FooEvents Bookings",
-  "last_scraped": "2026-05-24T05:22:57.068Z",
+  "last_scraped": "2026-05-31T05:34:02.693Z",
   "total_pages": 55,
   "failed_urls": [
     "https://www.fooevents.com/cs/",
