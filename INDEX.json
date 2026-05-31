@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T17:28:04.738Z",
+  "last_updated": "2026-05-31T17:29:20.001Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -833,7 +833,7 @@
       "slug": "launchkit-pro",
       "name": "LaunchKit Pro",
       "documentation_url": "https://wplaunchify.com/documentation/",
-      "last_scraped": "2026-05-24T17:26:52.797Z",
+      "last_scraped": "2026-05-31T17:29:20.001Z",
       "page_count": 0,
       "categories": []
     },
