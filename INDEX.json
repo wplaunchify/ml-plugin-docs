@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T14:39:34.968Z",
+  "last_updated": "2026-05-31T14:40:09.219Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -765,7 +765,7 @@
       "slug": "kadence-custom-fonts",
       "name": "Kadence Custom Fonts",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-31T08:31:11.056Z",
+      "last_scraped": "2026-05-31T14:40:09.219Z",
       "page_count": 0,
       "categories": []
     },
