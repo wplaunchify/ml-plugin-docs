@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T09:00:23.374Z",
+  "last_updated": "2026-05-31T09:02:55.465Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -228,7 +228,7 @@
       "slug": "fluent-boards-pro",
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-05-28T08:48:41.960Z",
+      "last_scraped": "2026-05-31T09:02:55.465Z",
       "page_count": 0,
       "categories": []
     },
