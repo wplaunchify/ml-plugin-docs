@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T17:26:52.964Z",
+  "last_updated": "2026-05-31T17:27:03.455Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -24,7 +24,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-05-31T17:25:04.605Z",
+      "last_scraped": "2026-05-31T17:25:04.604Z",
       "page_count": 0,
       "categories": []
     },
@@ -336,7 +336,7 @@
       "slug": "fluentbooking",
       "name": "FluentBooking",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-05-24T17:24:27.753Z",
+      "last_scraped": "2026-05-31T17:27:02.174Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -450,7 +450,7 @@
       "slug": "fluentcrm-pro",
       "name": "FluentCRM Pro",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-05-31T17:26:52.964Z",
+      "last_scraped": "2026-05-31T17:26:52.963Z",
       "page_count": 0,
       "categories": []
     },
@@ -458,7 +458,7 @@
       "slug": "fluentforms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/documentation/",
-      "last_scraped": "2026-05-31T17:24:19.685Z",
+      "last_scraped": "2026-05-31T17:24:19.677Z",
       "page_count": 457,
       "categories": [
         "account-management",
@@ -914,7 +914,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-05-31T17:22:01.638Z",
+      "last_scraped": "2026-05-31T17:22:01.637Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -950,7 +950,7 @@
       "slug": "open-graph",
       "name": "Open Graph",
       "documentation_url": "https://wordpress.org/plugins/opengraph/",
-      "last_scraped": "2026-05-31T16:27:39.832Z",
+      "last_scraped": "2026-05-31T16:27:39.831Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1080,7 +1080,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-31T16:34:01.015Z",
+      "last_scraped": "2026-05-31T16:34:01.014Z",
       "page_count": 0,
       "categories": []
     },
@@ -1413,7 +1413,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-05-31T16:32:27.942Z",
+      "last_scraped": "2026-05-31T16:32:27.932Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
