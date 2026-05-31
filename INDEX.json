@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T16:26:49.900Z",
+  "last_updated": "2026-05-31T16:27:02.277Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-05-24T16:22:07.020Z",
+      "last_scraped": "2026-05-31T16:27:00.182Z",
       "page_count": 0,
       "categories": []
     },
@@ -190,7 +190,7 @@
       "slug": "disable-comments",
       "name": "Disable Comments",
       "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-      "last_scraped": "2026-05-31T15:33:30.159Z",
+      "last_scraped": "2026-05-31T15:33:30.158Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -200,7 +200,7 @@
       "slug": "duplicate-page",
       "name": "Duplicate Page",
       "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
-      "last_scraped": "2026-05-31T15:27:37.674Z",
+      "last_scraped": "2026-05-31T15:27:37.673Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -317,7 +317,7 @@
       "slug": "fluentboards",
       "name": "FluentBoards",
       "documentation_url": "https://fluentboards.com/documentation/",
-      "last_scraped": "2026-05-31T14:39:34.968Z",
+      "last_scraped": "2026-05-31T14:39:34.965Z",
       "page_count": 42,
       "categories": [
         "boards",
@@ -805,7 +805,7 @@
       "slug": "kadence-theme-kit-pro-premium-addon-for-the-kadence-theme",
       "name": "Kadence Theme Kit Pro - Premium addon for the Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-05-31T16:26:49.900Z",
+      "last_scraped": "2026-05-31T16:26:49.899Z",
       "page_count": 0,
       "categories": []
     },
@@ -988,7 +988,7 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-05-31T15:28:45.933Z",
+      "last_scraped": "2026-05-31T15:28:45.930Z",
       "page_count": 24,
       "categories": [
         "beta-release",
@@ -1104,7 +1104,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://theeventscalendar.com/knowledgebase/documentation/",
-      "last_scraped": "2026-05-31T16:22:52.478Z",
+      "last_scraped": "2026-05-31T16:22:52.477Z",
       "page_count": 0,
       "categories": []
     },
