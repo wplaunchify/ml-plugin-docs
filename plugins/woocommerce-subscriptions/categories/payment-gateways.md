@@ -438,7 +438,7 @@ This FAQ answers common questions about getting your PayPal account approved for
 
 ## How do I get Reference Transactions Enabled with PayPal?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 To request that PayPal turn on Reference Transactions, call your local PayPal Support Help Center. **Log into your PayPal account** then find [your dialing instructions here](https://www.paypal.com/smarthelp/contact-us).
 
@@ -446,7 +446,7 @@ Tell PayPal that you are specifically calling so a PayPal Specialist can enable 
 
 ## Will My Account Qualify for Reference Transactions?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 PayPal does have a set of requirements that need to be met before they enable support for Reference Transactions on your account.
 
@@ -469,7 +469,7 @@ In terms of revenue forecasts, we have had reports that UK-based PayPal accounts
 
 ## What if I don’t qualify for Reference Transactions?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 [PayPal Payments](https://woocommerce.com/products/woocommerce-paypal-payments/) can save a payment method in the PayPal Vault without Reference Transactions enabled. This allows customers to manually confirm renewal payments with a one-click payment once they are logged into their WordPress user account.
 
@@ -477,7 +477,7 @@ PayPal also offers a [PayPal Subscriptions](https://woocommerce.com/document/woo
 
 ## Difference between PayPal Standard Subscriptions and Billing Agreements/Reference Transactions?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 PayPal Standard used an old method of implementing [PayPal Subscriptions](https://woocommerce.com/document/limitations-of-paypal-standard/). The subscription is created at PayPal and mirrored to WooCommerce. The billing interval, amount, etc. is decided on PayPal’s platform and cannot be changed through the Woo Subscriptions plugin.
 
@@ -487,7 +487,7 @@ Reference Transactions allow automatic renewal payments and the subscription to 
 
 ## Will existing PayPal Standard Subscriptions use Reference Transactions?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 No. Existing PayPal Standard Subscriptions will continue to renew until they are canceled. Reference Transactions are only used for new subscriptions after the feature was enabled for the PayPal account. This means [advanced subscription management features](https://woocommerce.com/document/subscriptions/payment-gateways/#advanced-features), such as recurring amount changes, are only possible on newly purchased subscriptions, not existing PayPal Subscriptions.
 
@@ -495,7 +495,7 @@ The only way to have existing PayPal Subscriptions changed to use PayPal Referen
 
 ## Why are Billing Agreements not cancelled at PayPal when a subscription is cancelled in WooCommerce?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 When an old PayPal Standard Subscription is cancelled or suspended in your WooCommerce store, the status of the corresponding subscription at PayPal is also changed.
 
@@ -514,7 +514,7 @@ For these reasons, **it is recommended that you do not cancel Billing Agreements
 
 ## Is Guest Checkout Possible with PayPal Reference Transactions?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 No, PayPal provides no way for customers to check out without a PayPal account when using PayPal Reference Transactions.
 
@@ -522,7 +522,7 @@ If you wish to allow your customers to check out without a PayPal account, the [
 
 ## Can Billing Agreements be used across different PayPal plugins?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 No, Billing Agreements are currently not universally usable in between different PayPal plugins.
 
