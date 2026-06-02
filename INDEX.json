@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-02T08:58:07.861Z",
+  "last_updated": "2026-06-02T08:58:33.812Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -80,7 +80,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-02T08:57:04.458Z",
+      "last_scraped": "2026-06-02T08:57:04.457Z",
       "page_count": 0,
       "categories": []
     },
@@ -156,7 +156,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-06-02T08:58:07.861Z",
+      "last_scraped": "2026-06-02T08:58:07.860Z",
       "page_count": 0,
       "categories": []
     },
@@ -164,7 +164,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-05-31T23:22:37.089Z",
+      "last_scraped": "2026-05-31T23:22:37.088Z",
       "page_count": 0,
       "categories": []
     },
@@ -409,7 +409,7 @@
       "slug": "fluentcommunity-pro",
       "name": "FluentCommunity Pro",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-06-01T09:21:00.743Z",
+      "last_scraped": "2026-06-01T09:21:00.742Z",
       "page_count": 0,
       "categories": []
     },
@@ -725,7 +725,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-06-01T09:20:11.561Z",
+      "last_scraped": "2026-06-01T09:20:11.560Z",
       "page_count": 0,
       "categories": []
     },
@@ -890,7 +890,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-05-31T05:35:50.764Z",
+      "last_scraped": "2026-06-02T08:58:31.685Z",
       "page_count": 0,
       "categories": []
     },
@@ -1146,7 +1146,7 @@
       "slug": "woocommerce-smart-coupons",
       "name": "WooCommerce Smart Coupons",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-06-01T09:21:47.452Z",
+      "last_scraped": "2026-06-01T09:21:47.451Z",
       "page_count": 0,
       "categories": []
     },
