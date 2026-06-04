@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-04T08:50:36.680Z",
+  "last_updated": "2026-06-04T08:51:03.588Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -48,7 +48,7 @@
       "slug": "affiliatewp-affiliate-landing-pages",
       "name": "AffiliateWP - Affiliate Landing Pages",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-05-31T11:30:45.693Z",
+      "last_scraped": "2026-06-04T08:51:02.938Z",
       "page_count": 0,
       "categories": []
     },
@@ -72,7 +72,7 @@
       "slug": "affiliatewp-direct-link-tracking",
       "name": "AffiliateWP - Direct Link Tracking",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-04T08:48:43.564Z",
+      "last_scraped": "2026-06-04T08:48:43.563Z",
       "page_count": 0,
       "categories": []
     },
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-06-03T09:11:53.495Z",
+      "last_scraped": "2026-06-03T09:11:53.494Z",
       "page_count": 0,
       "categories": []
     },
@@ -156,7 +156,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-06-04T08:50:36.680Z",
+      "last_scraped": "2026-06-04T08:50:36.679Z",
       "page_count": 0,
       "categories": []
     },
@@ -757,7 +757,7 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-04T08:47:49.263Z",
+      "last_scraped": "2026-06-04T08:47:49.262Z",
       "page_count": 0,
       "categories": []
     },
@@ -789,7 +789,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-02T09:00:07.612Z",
+      "last_scraped": "2026-06-02T09:00:07.611Z",
       "page_count": 0,
       "categories": []
     },
@@ -833,7 +833,7 @@
       "slug": "launchkit-pro",
       "name": "LaunchKit Pro",
       "documentation_url": "https://wplaunchify.com/documentation/",
-      "last_scraped": "2026-06-03T09:10:03.498Z",
+      "last_scraped": "2026-06-03T09:10:03.497Z",
       "page_count": 0,
       "categories": []
     },
@@ -1080,7 +1080,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-03T09:09:14.149Z",
+      "last_scraped": "2026-06-03T09:09:14.148Z",
       "page_count": 0,
       "categories": []
     },
@@ -1607,7 +1607,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-06-03T09:08:26.118Z",
+      "last_scraped": "2026-06-03T09:08:26.117Z",
       "page_count": 0,
       "categories": []
     },
