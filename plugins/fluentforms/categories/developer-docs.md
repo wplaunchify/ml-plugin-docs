@@ -20,6 +20,18 @@
 
 ## Changelog
 
+#### Fluent Forms Pro 6.2.4 (Date: May 25, 2026)
+
+- Adds image cropping support to the Featured Image field on Post forms
+- Fixes conversational form pretty URLs rendering
+
+#### Fluent Forms Free 6.2.4 (Date: May 25, 2026)
+
+- Fixes conversational form pretty URLs rendering
+- Fixes Pretty URL toggle not persisting when disabled
+- Fixes multi-step form submit visibility and step-skip logic
+- Adds a notice when the Fluent Forms REST endpoints are unreachable so the empty form and entry lists after an upgrade are easier to diagnose
+
 #### 6.2.3 Pro (Date: May 22, 2026)
 
 - Added Tabs style for multi-step forms with Top and Left layouts, clickable step navigation, and a compact progress bar option
