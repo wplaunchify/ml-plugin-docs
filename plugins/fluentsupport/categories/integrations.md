@@ -640,7 +640,7 @@ This article will guide you through integrating [BetterDocs](https://betterdocs.
 
 ## BetterDocs Integration With FluentSupport
 
-To integrate **BetterDocs** into **FluentSupport**, follow the steps with screenshots below —
+To integrate **BetterDocs** into **Fluent Support**, follow the steps with screenshots below —
 
 To ensure the **BetterDocs** integration works, it must be **installed**and**active** on your website.
 
