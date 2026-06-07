@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-07T13:32:25.891Z",
+  "last_updated": "2026-06-07T13:32:29.823Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -120,7 +120,7 @@
       "slug": "attributes-for-blocks",
       "name": "Attributes for Blocks",
       "documentation_url": "https://wordpress.org/plugins/attributes-for-blocks/",
-      "last_scraped": "2026-06-07T13:32:25.891Z",
+      "last_scraped": "2026-06-07T13:32:25.890Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -218,7 +218,7 @@
       "slug": "featured-image-with-url",
       "name": "Featured Image with URL",
       "documentation_url": "https://wordpress.org/plugins/featured-image-with-url/",
-      "last_scraped": "2026-06-07T13:31:23.138Z",
+      "last_scraped": "2026-06-07T13:31:23.136Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -260,7 +260,7 @@
       "slug": "fluent-forms-pro-add-on-pack",
       "name": "Fluent Forms Pro Add On Pack",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-05-31T13:33:16.178Z",
+      "last_scraped": "2026-06-07T13:32:28.354Z",
       "page_count": 0,
       "categories": []
     },
