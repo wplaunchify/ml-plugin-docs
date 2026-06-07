@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-07T22:23:08.632Z",
+  "last_updated": "2026-06-07T22:23:21.585Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -88,7 +88,7 @@
       "slug": "affiliatewp-lifetime-commissions",
       "name": "AffiliateWP - Lifetime Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-07T22:23:08.632Z",
+      "last_scraped": "2026-06-07T22:23:08.631Z",
       "page_count": 0,
       "categories": []
     },
@@ -565,7 +565,7 @@
       "slug": "fooevents-custom-attendee-fields",
       "name": "FooEvents Custom Attendee Fields",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-05-31T22:21:25.016Z",
+      "last_scraped": "2026-06-07T22:23:20.465Z",
       "page_count": 55,
       "categories": [
         "about-us",
