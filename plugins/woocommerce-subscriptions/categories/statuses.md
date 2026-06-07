@@ -16,7 +16,7 @@ This guide details each status, explains when it is applied, and what it represe
 
 ## Pending Subscription Status
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 When a subscription is first created, it will have the *Pending* status.
 
@@ -26,7 +26,7 @@ In theory, the status also applies when a customer creates a subscription, but i
 
 ## Active Subscription Status
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 After the initial subscription payment processes (if it requires payment), the subscription transitions to *Active*.
 
@@ -34,7 +34,7 @@ This status indicates the subscription will [renew](https://woocommerce.com/docu
 
 ## On-Hold Subscription Status
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 A subscription displays as *On-Hold* when an associated order is awaiting payment, or when the store owner or customer manually suspends it.
 
@@ -44,7 +44,7 @@ When a subscription is*On-Hold*, WooCommerce assigns the user associated with it
 
 ## Pending-Cancellation Subscription Status
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 When a customer manually cancels a subscription, its status typically does not immediately transition to *Cancelled*. If the subscription has a pre-paid term that has not yet been fulfilled, it’s assigned *Pending-Cancellation*.
 
@@ -54,13 +54,13 @@ When the pre-paid term ends, the subscription’s status transitions to *Cancell
 
 ## Cancelled Subscription Status
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 Subscriptions that reach the end of their pre-paid term (if applicable) transition to *Cancelled*. Once *cancelled* the user associated with the subscriptions moves to the default inactive user role and other extensions, like WooCommerce Memberships, may no longer grant special access. Neither customers nor store managers can reactivate cancelled subscriptions. Instead, customers need to manually create a new subscription or repurchase the subscription product.
 
 ## Expired Subscription Status
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 WooCommerce assigns the *Expired* status when a subscription reaches its [end date](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/#set-a-billing-schedule). This end date may come from the product’s [defined subscription length](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/#set-a-billing-schedule) or from [manual settings](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/#modifying-an-existing-subscription) on the subscription itself. When a subscription expires, the system assigns the default inactive role to the associated user. Additionally, other extensions like [WooCommerce Memberships](https://woocommerce.com/products/woocommerce-memberships/) may revoke their special access.
 

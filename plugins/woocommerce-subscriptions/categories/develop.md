@@ -4233,6 +4233,51 @@ This filter can be used to change those requirements.
 
 ---
 
+## Subscription Switching Filters
+
+[↑ Back to top](#doc-title)
+
+Filter: 
+```
+'wcs_switch_proration_extra_to_pay'
+```
+
+Starting in version 8.8.0, this filter receives an additional 
+```
+$switch_item
+```
+
+ argument containing the switch cart item, making it easier to inspect switch details (such as the source subscription and target variation) when modifying the prorated amount.
+
+```
+apply_filters( 'wcs_switch_proration_extra_to_pay', $extra_to_pay, $subscription, $cart_item, $switch_item )
+```
+
+**Parameters:**
+
+```
+$extra_to_pay
+```
+
+ *(float)* — The prorated amount the customer owes for the switch. 
+```
+$subscription
+```
+
+ *(WC_Subscription)* — The subscription being switched. 
+```
+$cart_item
+```
+
+ *(array)* — The cart item data for the new product. 
+```
+$switch_item
+```
+
+ *(array)* — The switch cart item containing switch metadata (new in 8.8.0).
+
+---
+
 ## Subscriptions Administration Filters
 
 [↑ Back to top](#doc-title)

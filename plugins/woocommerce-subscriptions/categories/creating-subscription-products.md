@@ -253,6 +253,20 @@ When a subscription is limited to *any status* by the **Limit subscriptions** se
 
 The customer cannot purchase that subscription product again unless the existing subscription is **trashed** or **permanently deleted** by a store manager. This feature ensures that each customer account only receives one free trial period to a product.
 
+**Cart enforcement**
+
+When a product has Limit Subscriptions enabled, the limit is also enforced at cart and checkout:
+
+- If a customer already has a resubscribe, renewal, or switch item in their cart for the product, they cannot add the same product as a separate purchase.
+- If the product is already in the cart as a regular purchase, the customer cannot add a resubscribe or renewal for the same product.
+- Duplicate items for the same limited subscription product are not allowed in the cart, even if they are different variations.
+
+These checks run when the product is added to the cart. An additional validation runs on the cart and checkout pages to catch items that may have entered the cart through other means (such as session restoration or third-party extensions). If a conflict is detected, the customer sees an error notice and must remove the duplicate before placing the order.
+
+This cart-level enforcement applies regardless of whether **Mixed checkout** is enabled in your store’s subscription settings. When **Mixed checkout** is enabled and a conflict is detected during session loading, the duplicate item is silently removed from the cart, and a notice is displayed.
+
+**Switching**
+
 If you [allow switching](https://woocommerce.com/document/subscriptions/switching-guide/#allow-switching) between subscriptions, a customer can [Upgrade or Downgrade](https://woocommerce.com/document/subscriptions/switching-guide/switching-process-and-costs/#switching-process) a limited subscription. Customers are able to change their subscription while still limiting each customer account to one free trial period.
 
 **Note:**

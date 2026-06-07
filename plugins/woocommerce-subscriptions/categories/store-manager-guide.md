@@ -22,7 +22,7 @@
 - [Switch Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#switch-settings)
 - [Subscriptions Shortcode](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscription-shortcode)
 
-![](https://woocommerce.com/wp-content/uploads/2025/12/woodocs-2292.subscription-settings-screen.png?strip=all&w=704)Woo Subscriptions Settings Screen
+![](https://woocommerce.com/wp-content/uploads/2026/06/woodocs3002.subscriptions.settings.screen.png?strip=all&w=704)Woo Subscriptions Settings Screen
 
 ## Button Text Settings
 
@@ -331,6 +331,24 @@ To align subscription renewal dates to a specific day of the week, month or year
 [↑ Back to top](#doc-title)
 
 Customers are able to switch between variable subscription options or grouped subscription products if this setting is enabled. This process has a its own set of nuances that are best explained in a separate guide – [Store Manager’s Guide to Subscription Switching](https://woocommerce.com/document/subscriptions/switching-guide/#section-2).
+
+## Subscriptions Health Check
+
+[↑ Back to top](#doc-title)
+
+When **Allow nightly health check scans on your subscriptions** is enabled, WooCommerce Subscriptions automatically runs a health check scan each night to identify subscriptions that may require attention. To view scan results or run a scan manually, navigate to **WooCommerce > Status > Subscriptions**. [Learn more about the Health Check feature](https://woocommerce.com/document/woocommerce-subscriptions-health-check/).
+
+## Processing Reliability
+
+[↑ Back to top](#doc-title)
+
+WooCommerce Subscriptions relies on scheduled actions to automate important subscription tasks, including renewals, expirations, and status updates. The settings below help ensure these processes run consistently and reduce the risk of missed or delayed subscription events.
+
+**Dedicated processing**—When enabled, subscription renewals and other events (retries, trial ends, expirations) run in a dedicated batch, reducing delays caused by other scheduled actions on your site. This is especially useful on busy stores where many plugins share the same job queue.
+
+**Web cron support**—This allows an external web cron service to run pending subscription events. When enabled, a unique URL is generated that you can add to your web cron service. Treat this URL like a password—keep it private.
+
+If no URL has been generated yet, click **Save changes** to create one. To replace an existing URL, click **Generate a new URL**. Any external service using the old URL will need to be updated.
 
 ## Subscriptions shortcode
 
