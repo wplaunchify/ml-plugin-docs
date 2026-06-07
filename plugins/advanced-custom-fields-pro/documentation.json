@@ -1,7 +1,7 @@
 {
   "plugin_slug": "advanced-custom-fields-pro",
   "plugin_name": "Advanced Custom Fields PRO",
-  "last_scraped": "2026-05-31T14:31:41.327Z",
+  "last_scraped": "2026-06-07T14:35:35.115Z",
   "total_pages": 0,
   "failed_urls": [
     "https://www.advancedcustomfields.com/resources/abilities-api/",
@@ -52,6 +52,7 @@
     "https://www.advancedcustomfields.com/resources/acf-json-save_file_name/",
     "https://www.advancedcustomfields.com/resources/acf-load_field/",
     "https://www.advancedcustomfields.com/resources/acf-load_value/",
+    "https://www.advancedcustomfields.com/resources/acf-machine-readable-content/",
     "https://www.advancedcustomfields.com/resources/acf-options_page-save/",
     "https://www.advancedcustomfields.com/resources/acf-options_page-settings/",
     "https://www.advancedcustomfields.com/resources/acf-pre_save_post/",
