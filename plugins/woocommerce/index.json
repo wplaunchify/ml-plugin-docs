@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-05-31T10:13:38.891Z",
-  "total_pages": 3772,
+  "last_scraped": "2026-06-07T10:22:24.666Z",
+  "total_pages": 3782,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,44 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3772,
+      "page_count": 3782,
       "pages": [
+        {
+          "title": "Refinery CRM",
+          "url": "https://woocommerce.com/document/refinery-crm/"
+        },
+        {
+          "title": "Nextcloud Provisioning",
+          "url": "https://woocommerce.com/document/nextcloud-provisioning/"
+        },
+        {
+          "title": "Data Privacy Manager",
+          "url": "https://woocommerce.com/document/data-privacy-manager/"
+        },
+        {
+          "title": "Getting started",
+          "url": "https://woocommerce.com/document/easy-subscriptions/getting-started/"
+        },
+        {
+          "title": "Easy Subscriptions FAQ",
+          "url": "https://woocommerce.com/document/easy-subscriptions/faq/"
+        },
+        {
+          "title": "FitnessPro",
+          "url": "https://woocommerce.com/document/fitness-pro/"
+        },
+        {
+          "title": "TopLayer/LEO – Variation Generator",
+          "url": "https://woocommerce.com/document/toplayer-leo-variation-generator/"
+        },
+        {
+          "title": "Remote Tap-to-Pay (Card Reader Mode)",
+          "url": "https://woocommerce.com/document/remote-tap-to-pay-card-reader-mode/"
+        },
+        {
+          "title": "ZapBridge – Zapier Integration",
+          "url": "https://woocommerce.com/document/zapbridge/"
+        },
         {
           "title": "Slim SEO Pro",
           "url": "https://woocommerce.com/document/slim-seo-pro/"
@@ -52,6 +88,10 @@
         {
           "title": "EXT Product Table and List View",
           "url": "https://woocommerce.com/document/product-table-and-list-view/"
+        },
+        {
+          "title": "Recurring Sale",
+          "url": "https://woocommerce.com/document/recurring-sale/"
         },
         {
           "title": "TIV Sales Assistant – Compatibility and Integration",
@@ -1142,7 +1182,7 @@
           "url": "https://woocommerce.com/document/ph-deposits-and-partial-payments/"
         },
         {
-          "title": "Easy subscriptions",
+          "title": "Easy Subscriptions",
           "url": "https://woocommerce.com/document/easy-subscriptions/"
         },
         {
@@ -2342,7 +2382,7 @@
           "url": "https://woocommerce.com/document/notion-connector/"
         },
         {
-          "title": "WebToffee Sequential Order Numbers for WooCommerce",
+          "title": "How To Setup WebToffee Sequential Order Numbers for WooCommerce?",
           "url": "https://woocommerce.com/document/setup-sequential-order-numbers/"
         },
         {
