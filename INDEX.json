@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-07T12:37:02.605Z",
+  "last_updated": "2026-06-07T12:37:28.981Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -252,7 +252,7 @@
       "slug": "fluent-forms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-06-07T12:37:02.605Z",
+      "last_scraped": "2026-06-07T12:37:02.604Z",
       "page_count": 0,
       "categories": []
     },
@@ -595,7 +595,7 @@
       "slug": "fooevents-express-check-in",
       "name": "FooEvents Express Check-in",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-06-07T12:32:16.416Z",
+      "last_scraped": "2026-06-07T12:32:16.413Z",
       "page_count": 55,
       "categories": [
         "about-us",
@@ -1286,7 +1286,7 @@
       "slug": "wp-fusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-05-31T12:33:27.173Z",
+      "last_scraped": "2026-06-07T12:37:26.802Z",
       "page_count": 482,
       "categories": [
         "abandoned-cart-tracking",
