@@ -11,6 +11,13 @@
 # News & Updates
 				## Get the scoop on the latest FooEvents features and learn tips and tricks that will enhance your product experience.
 				[Subscribe to the blog digest!](#newsletter-signup)
+				![Fooevents Variation Table Cover Image](https://www.fooevents.com/wp-content/uploads/2026/05/fooevents-variation-table-768x500.png)
+				### New: Faster Event Setup, Better Ticket Selection, and Improved Multi-day Check-ins
+
+				June 1, 2026
+				In March and April, we released several major new FooEvents features, and the feedback has been fantastic. Building on that momentum, our May release includes three popular feature requests that many FooEvents customers have been asking for. Let’s take a closer look. New Table Variation Layout Option We’ve added a
+		
+		[Read More →](https://www.fooevents.com/new-faster-event-setup-better-ticket-selection-and-improved-multi-day-check-ins/)
 				![Alternative To The Events Calendar](https://www.fooevents.com/wp-content/uploads/2026/05/alternatives_to_tec_header-768x400.png)
 				### Why FooEvents is the #1 Alternative to The Events Calendar in 2026
 
@@ -109,13 +116,6 @@
 				Managing events can be challenging, especially when attendees forget to print out their tickets or struggle to find them in their inbox at the door. To help solve this, FooEvents now integrates with AddToWallet, making it possible for attendees to store their tickets directly in Apple Wallet or Google Wallet
 		
 		[Read More →](https://www.fooevents.com/make-your-tickets-mobile-friendly-with-addtowallet-integration/)
-				![Search And View Ticket Details In Fooevents Pos](https://www.fooevents.com/wp-content/uploads/2025/06/fooevents-pos-ticket-details-768x500.png)
-				### Search and View Ticket Details in FooEvents POS
-
-				June 23, 2025
-				We recently released version 1.10.1 of the FooEvents POS plugin. This update introduces the ability to search and view individual ticket details directly in the Orders section of FooSales POS apps. Here’s how this will help you better manage your events: Quick issue resolution — Staff can search by ticket
-		
-		[Read More →](https://www.fooevents.com/search-and-view-ticket-details-in-fooevents-pos/)
 				### Subscribe to the blog digest
 				### Receive a summary of the latest posts in your inbox.
 				Your details could not be submitted. Please try again.
