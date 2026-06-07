@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-07T14:42:25.418Z",
+  "last_updated": "2026-06-07T14:42:30.653Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -317,7 +317,7 @@
       "slug": "fluentboards",
       "name": "FluentBoards",
       "documentation_url": "https://fluentboards.com/documentation/",
-      "last_scraped": "2026-06-07T14:42:25.418Z",
+      "last_scraped": "2026-06-07T14:42:25.416Z",
       "page_count": 42,
       "categories": [
         "boards",
@@ -765,7 +765,7 @@
       "slug": "kadence-custom-fonts",
       "name": "Kadence Custom Fonts",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-02T08:59:21.181Z",
+      "last_scraped": "2026-06-07T14:42:28.598Z",
       "page_count": 0,
       "categories": []
     },
