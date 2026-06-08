@@ -84,6 +84,19 @@ To enhance privacy compliance, Simple History offers IP address anonymization:
 - Partial anonymization (e.g., 192.168.xxx.xxx)
 - Full anonymization (no IP addresses stored, *coming soon*)
 
+## Responding to data subject requests
+
+WordPress has built-in tools for the two requests people make most often — a copy of their data (Tools → Export Personal Data) and deletion of it (Tools → Erase Personal Data). As of [version 5.29.0](https://simple-history.com/2026/simple-history-5-29-0-released/), Simple History works with both.
+
+When you process an export request, the activity a person performed on your site is now included automatically — so the record of what they did is part of the export instead of missing from it.
+
+Two related options sit behind the experimental features setting (Settings → Simple History → Experimental) while we refine them:
+
+- Exports can also include activity *about* a person carried out by others (an admin editing their profile, or failed logins targeting their account), with other people’s names and emails redacted.
+- Running an erasure can anonymize that person’s details in matching log entries — IP address, user agent, login, email, and role — while keeping each entry as an audit record, so you don’t lose log integrity.
+
+There’s a Privacy & Data tab under Settings → Simple History that summarizes how this works. As always, this helps you *respond* to these requests — it doesn’t by itself make your site compliant.
+
 ## GDPR Compliance Considerations
 
 ### Data Controller Responsibilities
@@ -117,7 +130,7 @@ A: No, Simple History does not set or use cookies for tracking purposes.
 A: Simple History provides tools that help you maintain GDPR compliance, but compliance ultimately depends on how you configure and use the plugin. The plugin itself processes data only on your server and provides options for data minimization and retention management.
 
 **Q: How can I delete all data for a specific user?**
-A: You can search for all entries related to a specific user in the Simple History log interface and delete them manually. Alternatively, when you delete a user through WordPress, their username will remain in the logs but will no longer be linked to an active user account.
+A: If you run WordPress’s Erase Personal Data tool (Tools → Erase Personal Data) for that person, Simple History can anonymize their details — IP address, user agent, login, email, and role — in matching log entries, while keeping the entries themselves as audit records. This is currently an experimental feature, so enable it first under Settings → Simple History → Experimental. You can also search the log for entries related to a user and delete them manually.
 
 **Q: Do I need user consent to use Simple History?**
 A: Since Simple History is used for legitimate administrative purposes and security monitoring, you may be able to process this data under the “legitimate interest” basis rather than consent. However, legal requirements vary, so consult with a legal professional regarding your specific situation.
