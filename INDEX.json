@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-10T08:48:34.656Z",
+  "last_updated": "2026-06-10T08:48:55.231Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -16,7 +16,7 @@
       "slug": "admin-columns-pro",
       "name": "Admin Columns Pro",
       "documentation_url": "https://www.admincolumns.com",
-      "last_scraped": "2026-06-10T08:48:34.656Z",
+      "last_scraped": "2026-06-10T08:48:34.655Z",
       "page_count": 0,
       "categories": []
     },
@@ -48,7 +48,7 @@
       "slug": "affiliatewp-affiliate-landing-pages",
       "name": "AffiliateWP - Affiliate Landing Pages",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-08T09:08:30.129Z",
+      "last_scraped": "2026-06-08T09:08:30.128Z",
       "page_count": 0,
       "categories": []
     },
@@ -112,7 +112,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-06-09T08:44:09.778Z",
+      "last_scraped": "2026-06-09T08:44:09.777Z",
       "page_count": 0,
       "categories": []
     },
@@ -164,7 +164,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-06-07T23:22:49.091Z",
+      "last_scraped": "2026-06-07T23:22:49.090Z",
       "page_count": 0,
       "categories": []
     },
@@ -228,7 +228,7 @@
       "slug": "fluent-boards-pro",
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-06-07T09:03:12.344Z",
+      "last_scraped": "2026-06-10T08:48:53.271Z",
       "page_count": 0,
       "categories": []
     },
@@ -773,7 +773,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-09T08:40:55.286Z",
+      "last_scraped": "2026-06-09T08:40:55.285Z",
       "page_count": 0,
       "categories": []
     },
@@ -890,7 +890,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-06-09T08:42:28.387Z",
+      "last_scraped": "2026-06-09T08:42:28.386Z",
       "page_count": 0,
       "categories": []
     },
@@ -1041,7 +1041,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-06-08T09:09:15.846Z",
+      "last_scraped": "2026-06-08T09:09:15.844Z",
       "page_count": 10,
       "categories": [
         "detective-mode",
@@ -1088,7 +1088,7 @@
       "slug": "store-credit-for-woocommerce",
       "name": "Store Credit for WooCommerce",
       "documentation_url": "https://woocommerce.com/document/woocommerce-store-credit/documentation/",
-      "last_scraped": "2026-06-08T09:10:11.129Z",
+      "last_scraped": "2026-06-08T09:10:11.128Z",
       "page_count": 0,
       "categories": []
     },
@@ -1571,7 +1571,7 @@
       "slug": "wp-migrate-lite",
       "name": "WP Migrate Lite",
       "documentation_url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/",
-      "last_scraped": "2026-06-08T09:10:49.249Z",
+      "last_scraped": "2026-06-08T09:10:49.248Z",
       "page_count": 0,
       "categories": []
     },
