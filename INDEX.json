@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T08:35:55.172Z",
+  "last_updated": "2026-06-13T08:36:51.358Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -260,7 +260,7 @@
       "slug": "fluent-forms-pro-add-on-pack",
       "name": "Fluent Forms Pro Add On Pack",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-06-07T13:32:28.354Z",
+      "last_scraped": "2026-06-13T08:36:51.358Z",
       "page_count": 0,
       "categories": []
     },
