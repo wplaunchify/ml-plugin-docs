@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T00:59:50.837Z",
+  "last_updated": "2026-06-14T01:47:03.455Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1096,7 +1096,7 @@
       "slug": "taxopress",
       "name": "TaxoPress",
       "documentation_url": "https://taxopress.com/docs/documentation/",
-      "last_scraped": "2026-06-07T01:43:30.700Z",
+      "last_scraped": "2026-06-14T01:47:03.455Z",
       "page_count": 0,
       "categories": []
     },
