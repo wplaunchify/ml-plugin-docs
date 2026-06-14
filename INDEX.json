@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T22:23:47.604Z",
+  "last_updated": "2026-06-14T22:23:57.106Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -773,7 +773,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-14T20:36:34.070Z",
+      "last_scraped": "2026-06-14T20:36:34.069Z",
       "page_count": 0,
       "categories": []
     },
@@ -1041,7 +1041,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-06-14T21:29:09.255Z",
+      "last_scraped": "2026-06-14T21:29:09.254Z",
       "page_count": 0,
       "categories": []
     },
@@ -1227,7 +1227,7 @@
       "slug": "wp-all-export-user-export-add-on-pro",
       "name": "WP All Export - User Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-14T21:27:58.950Z",
+      "last_scraped": "2026-06-14T21:27:58.945Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -1237,7 +1237,7 @@
       "slug": "wp-all-import-acf-add-on-free",
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-14T20:29:58.042Z",
+      "last_scraped": "2026-06-14T20:29:58.041Z",
       "page_count": 0,
       "categories": []
     },
@@ -1265,11 +1265,9 @@
       "slug": "wp-all-import-user-import-add-on-pro",
       "name": "WP All Import - User Import Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-07T22:21:36.109Z",
-      "page_count": 198,
-      "categories": [
-        "uncategorized"
-      ]
+      "last_scraped": "2026-06-14T22:23:54.801Z",
+      "page_count": 0,
+      "categories": []
     },
     {
       "slug": "wp-fusion",
