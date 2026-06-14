@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T11:00:58.996Z",
+  "last_updated": "2026-06-14T11:01:37.765Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -685,7 +685,7 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-06-07T10:48:55.063Z",
+      "last_scraped": "2026-06-14T11:01:36.956Z",
       "page_count": 55,
       "categories": [
         "about-us",
@@ -797,7 +797,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-06-14T10:59:03.974Z",
+      "last_scraped": "2026-06-14T10:59:03.973Z",
       "page_count": 0,
       "categories": []
     },
@@ -1583,7 +1583,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-06-14T11:00:58.996Z",
+      "last_scraped": "2026-06-14T11:00:58.994Z",
       "page_count": 5,
       "categories": [
         "bulk-increase-woocommerce-prices-percentage",

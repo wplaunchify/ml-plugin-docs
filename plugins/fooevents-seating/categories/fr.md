@@ -10,7 +10,7 @@
 
 ### La plateforme d'événements, de billetterie et de réservation de #1 pour WooCommerce
 				# Vendez des billets pour vos événements, lieux et services réservables comme un pro !
-				## Rejoindre 10 000 clients satisfaits de FooEvents et ajoutez des fonctionnalités d'événement, de billetterie et de réservation à votre site Web WordPress. Vendez un nombre illimité de billets WooCommerce directement à partir de votre site et gérez les inscriptions à des événements physiques, virtuels ou hybrides - aucune compétence technique n'est nécessaire.
+				## Rejoindre 16 000 clients satisfaits de FooEvents et ajoutez des fonctionnalités d'événement, de billetterie et de réservation à votre site Web WordPress. Vendez un nombre illimité de billets WooCommerce directement à partir de votre site et gérez les inscriptions à des événements physiques, virtuels ou hybrides - aucune compétence technique n'est nécessaire.
 				[Obtenez FooEvents maintenant !](https://www.fooevents.com/fr/la-tarification/)
 				Pas de commission ni de frais de billetterie.
 				![Comment vendre des billets Woocommerce](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
@@ -62,7 +62,7 @@ FooEvents est un excellent plugin. **Je l'utilise pour vendre mes cours de brico
 				![Fooevents Check-Ins Apps](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### Check-ins Apps
 				#### Gérer l'accès avec nos applications mobiles d'enregistrement GRATUITES
-				Il n'est pas nécessaire de transporter un presse-papiers maladroit ou de tuer des arbres lorsque vous pouvez gérer élégamment les check-ins grâce à nos applications iOS et Android, gratuites et faciles à utiliser. L'application FooEvents Check-ins vous donne les outils nécessaires pour gérer l'accès à votre événement comme un pro et elle fonctionne même lorsque l'Internet tombe en panne !
+				Gérez l'accès à vos événements rapidement et de manière professionnelle grâce à l'application gratuite FooEvents Check-ins. Utilisée pour l'enregistrement **23,444,051** les participants, l'application permet de valider facilement les billets, de suivre la fréquentation et de fluidifier l'entrée.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Explorer les applications](https://www.fooevents.com/fr/caracteristiques/applications/)

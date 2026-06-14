@@ -161,7 +161,7 @@ All these plugins can be purchased separately or as part of a discounted [FooEve
 							Can I use FooEvents for client web sites?
 					Yes, we have created different licensing options which includes multiple and unlimited domains that web agencies and freelancers can purchase in order to implement FooEvents across multiple client sites.
 				## Why do our customers love FooEvents?
-				With over 10,000+ sites using FooEvents, it is the perfect solution for YOU. Here’s why smart business owners, designers, and developers love FooEvents!
+				With over 16,000+ sites using FooEvents, it is the perfect solution for YOU. Here’s why smart business owners, designers, and developers love FooEvents!
 				### 
 
 “Customer service response is outstanding – very fast and efficient response to ticket enquiries which made the initial interaction easy. As a small NPO the generous NPO discount on products is a huge help – thank you!”*– Helen*
