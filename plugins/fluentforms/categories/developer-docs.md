@@ -20,6 +20,20 @@
 
 ## Changelog
 
+#### Fluent Forms Free 6.2.5 (Date: June 09, 2026)
+
+- Improved the authorization scope for entry deletion so bulk and single deletes stay within the authorized request
+- Added missing integrations to the addons list and global search
+- Fixed conditional logic issue for empty fields restoring the old v6.2.2 behavior
+- Fixed quiz question scores being lost on save when the settings start empty
+- Fixed a fatal error when opening the editor for a deleted form
+- Fixed duplicate field keys and broken drag-and-drop reorder in the editor advanced options
+- Fixed coupon not clearing when conditional logic hides the coupon field
+- Fixed overly long entry export URLs
+- Fixed full-URL smartcodes being double-encoded by the shortcode parser
+- Fixed submission and payment smartcodes not resolving on email/notification resend
+- Fixed scheduler temporary-file cleanup to honor the temp_file_delete_time filter
+
 #### Fluent Forms Pro 6.2.4 (Date: May 25, 2026)
 
 - Adds image cropping support to the Featured Image field on Post forms
