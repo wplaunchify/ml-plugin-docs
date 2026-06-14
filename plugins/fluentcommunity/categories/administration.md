@@ -102,7 +102,7 @@ Now, a **Moderation Settings**popup page will appear with various settings optio
 
 > Remember, before starting the process, make sure this Enable Content Moderation checkbox is enabled. But if you don’t want any content being reported by users, just disable the settings.
 
-**A. Profanity Filte**r: This filtering tool detects and blocks offensive language in text or communication to maintain respectful and safe conversations. Here, provide the words (separated by commas) you want to use for content filtering.  If any Post/Comment contains the provided word/s, it will automatically be moved to the review state (i.e., **Flagged** status) and wait for the approval.
+**A. Profanity Filte**r: This filtering tool detects and blocks offensive language in text or communication to maintain respectful and safe conversations. Here, provide the words (separated by commas) you want to use for content filtering.  If any Post/Comment contains the provided word/s, it will automatically be moved to the review state (i.e., **Flagged** status) and wait for approval.
 
 **B. Flag a post or comment after it’s reported X times**: Using this option, you can set the number of reports after which content will be unpublished automatically. Set it to **“0”** if you want this feature disabled.
 
@@ -110,11 +110,13 @@ Now, a **Moderation Settings**popup page will appear with various settings optio
 
 **D. Require approval for first post**: This setting requires admin/moderator approval only for the first post made by a new/old user. Once their first post is approved, their future posts will be published directly without requiring review.
 
-**E. Mark all new posts as Pending in the given spaces:** Here you can define the space/s which new posts will be flagged. This means, any new posts of the selected space/s will be flagged for review and hidden until approved by admin/moderator.
+E. **Require approval for first comment:** Check this box to hold a member’s very first comment for administrative review. Once approved, their future comments will publish instantly.
+
+**F. Mark all new posts as Pending in the given spaces: Here you can define the space/s which new posts will be flagged.**This means any new posts of the selected space/s will be flagged for review and hidden until approved by admin/moderator.
 
 After completing the setup, click the **Update** button to save all your changes and make it functional.
 
-![](https://fluentcommunity.co/wp-content/uploads/2025/03/5.-Moderation-Settings-pop-up.webp)
+![](https://fluentcommunity.co/wp-content/uploads/2025/03/moderation-settings-scaled.webp)
 
 ## How to Review/Ignore/Unpublish a Reported Content
 

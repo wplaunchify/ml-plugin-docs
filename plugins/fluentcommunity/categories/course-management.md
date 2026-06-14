@@ -4,6 +4,95 @@
 
 ---
 
+## Course Welcome Banners
+
+**Source:** [https://fluentcommunity.co/docs/course-welcome-banners/](https://fluentcommunity.co/docs/course-welcome-banners/)
+
+Course Welcome Banners let you show two different messages in the same course. You can show one message to students who have already joined, and a completely different message to visitors who have not signed up yet.
+
+### Access the Banner Panel
+
+To start setting up your messages:
+
+1. Open the course you want to edit.
+2. Look at the top menu and click the **Welcome Banner** tab.
+
+## Access Control & Default Lock Screens
+
+How visitors see your “Welcome Banner” depends on your course privacy settings (which you can find in the General Settings tab).
+
+- **Private Courses:** If your course privacy is set to **Private** and you use the Default lock screen, you must check the box that says **Show Welcome Banner in the default lock screen**. If you do not check this box, the welcome banner will not show up.
+
+- **Public and Secret Courses:** If your course privacy is set to **Public** or **Secret**, it will show you the welcome banner on the navbar automatically. You do not need to check any extra boxes.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/06/access-control-5-scaled.webp)
+
+## Set Up the “Enrolled” View
+
+This view shows up as soon as a student opens the course. It is a great place to put a welcome screen, give directions, or share rules.
+
+1. Click the **Enrolled** tab at the top of the screen.
+2. Turn on the switch that says **Enable for enrolled members**.
+3. Choose what kind of media you want to show at the top of the banner:
+- **How to Add an Image:**
+- Click the circle next to **Image**.
+- Click the **Upload Image** button to pick a picture from your computer. (The best size is 1680×600 pixels).
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/06/enrolled-image-2-1-scaled.webp)
+
+- **How to Add a Video:**
+- Click the circle next to **Video**.
+- You can choose **Oembed** to paste a regular video link (like from YouTube or Vimeo) into the box.
+- Or, you can choose **HTML Code** to paste the raw embed code.
+- Click the **Embed** button to load your video.
+
+1. Type a clear **Title** and **Description** to welcome your students and tell them what to do next.
+2. Under **Call to Action**, click the **+ Add button** to create clickable buttons. For each button, you can type the text (Button Label), paste the link (Button Link), pick the style (Button Type), and choose if it should open in a new tab.
+3. Check the box that says **Allow members to close the welcome banner** if you want to let students hide the message.
+4. Click the dark **Update Info** button at the bottom to save this section.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/06/enrolled-video-2-scaled.webp)
+
+## Set Up the “Not Enrolled” View
+
+This view acts as a landing page. It helps you show the value of your course to people who have not joined yet.
+
+1. Click the **Not Enrolled** tab at the top of the screen.
+2. Turn on the switch that says **Enable for not enrolled visitors**.
+3. Choose the media you want to use to grab their attention.
+- **How to Add an Image:**
+- Click the circle next to **Image**.
+- Click the **Upload Image** button to add an eye-catching picture.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/06/not-enrolled-image-3-2-scaled.webp)
+
+- **How to Add a Video:**
+- Click the circle next to **Video**.
+- Choose **Oembed** to paste a link, or **HTML Code** to paste a script.
+- Click the **Embed** button to add your sales or intro video.
+
+1. Type a **Title** and **Description** that explains exactly what the course is about and why they should join.
+2. Click the **+ Add button** under **Call to Action** to make buttons like “Enroll Now” or “Free Preview.” Fill out the button label, link, style, and tab settings.
+3. Click the dark **Update Info** button at the bottom to save this section.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/06/not-enrolled-video-4-1-scaled.webp)
+
+### Saving Your Work
+
+After you update both tabs, always click the dark **Save Changes & Close** button in the top right corner of the screen to save everything to your course.
+
+## Previewing Your Welcome Banner
+
+After you finish setting up your Welcome Banner, it is always a good idea to check how your new image or video looks on the live course page.
+
+Below is****the**“Not Enrolled” (Visitor) view** of the welcome banner.
+
+> Always test your course page to make sure your images fit well, your text is easy to read, and your videos play smoothly before you invite real members!
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/06/not-enrolled-course-preview-71-scaled.webp)
+
+---
+
 ## Quiz Module
 
 **Source:** [https://fluentcommunity.co/docs/quiz-module/](https://fluentcommunity.co/docs/quiz-module/)
@@ -12,97 +101,71 @@ The Quiz Module in FluentCommunity allows you to test your students’ knowledge
 
 This guide will show you how to set up and add quizzes to your course.
 
-## Add Quiz
+## Add a New Quiz
 
-To use quizzes, you’ll first need to create a new course or edit an existing one. (If you’re not sure how to make a course, check out our other [guide](https://fluentcommunity.co/docs/creating-and-managing-course/) for help.)
+To use quizzes, you first need to create a new course or edit an existing one. If you’re not sure how to make a course, check out our other [guide](https://fluentcommunity.co/docs/creating-and-managing-course/) for help.
 
-Once your course is ready, click the **Add New** button. From the dropdown menu, select **Quiz**.
+1. Open your course editor.
+2. Click the **Add New** button.
+3. Select **Quiz** from the dropdown menu.
 
-![](https://fluentcommunity.co/wp-content/uploads/2025/06/access-the-quiz-module-01-scaled.webp)
+![](https://fluentcommunity.co/wp-content/uploads/2025/06/add-new-course-1-scaled.webp)
 
-A small pop-up will appear. Enter your **Quiz Title** (the name of your quiz). Then, click **Add** or **Add & Edit**.
+1. Type your quiz name in the **Quiz Title** pop-up box.
+2. Click **Add & Edit** to open the quiz builder.
 
-Now you’re ready to build your quiz!
+![](https://fluentcommunity.co/wp-content/uploads/2025/06/quiz-title-2.webp)
 
-![](https://fluentcommunity.co/wp-content/uploads/2025/06/Quiz-Title-02.webp)
+## Configure Quiz Settings
 
-### Configuring Your Quiz Settings
+The right side of the quiz editor holds your settings panel. This is your control center for how the quiz behaves for your learners.
 
-After creating your quiz, you can configure its behavior and appearance using the settings panel on the left side of the editor. This panel is your control center for how the quiz functions for your learners.
+- **Enable Video Embed:** Show a video at the top of your quiz page.
+- **Enable Comments:** Allow students to leave comments or ask questions below the quiz.
+- **Set a passing grade:** Turn this on to require a specific score to pass. Enter the required percentage (for example, type 80 for 80%).
+- **Hide answers on result page:** Keep the correct answers hidden after a student finishes the quiz. This is useful if you let students retake the test.
+- **Featured media:** Paste a video URL (YouTube, Vimeo) into the **Embed** tab, or paste code into the **Custom HTML Code** tab to place a video at the top of the quiz.
+- **Lesson Duration:** Enter the expected time in minutes and seconds it will take a student to complete the quiz.
+- **Featured Image:** Click **Upload Image** to add a thumbnail graphic for your main course page.
+- **Documents & Files:** Drag and drop extra materials, like PDF study guides, for students to download before they start.
 
-Let’s go through each option one by one.
+![](https://fluentcommunity.co/wp-content/uploads/2025/06/configure-quiz-settings-3-scaled.webp)
 
-#### Features Settings
+## Build Your Questions
 
-This first section contains the main functional toggles for your quiz.
+The quiz editor is fast, clean, and fully keyboard-accessible. You can add and build entire quizzes without ever touching your mouse!
 
-- **Enable Video Embed:** Check this box if you want to display a video at the top of your quiz. This is perfect for video-based questions or for showing a lesson that the quiz is based on.
-- **Enable Comments:** Turn this on to allow your students to leave comments on the quiz page. This can be a great way to encourage discussion or let learners ask for clarification.
-- **Set a passing grade:** Activate this option to set a pass/fail requirement. When you check the box, a new field will appear allowing you to enter the required score in percent (e.g., 
-```
-80
-```
+1. Click the **+ Add Question** button at the bottom of the screen.
 
- for 80%). Students must achieve this score to officially pass the quiz.
-- **Hide answers on result page:** If you enable this, students will not see the correct answers after they complete the quiz. This is useful to prevent answer sharing if you plan to let students retake the quiz.
+![](https://fluentcommunity.co/wp-content/uploads/2025/06/add-question-4-scaled.webp)
 
-#### Featured media
+1. Toggle **Image** on if you want to upload a picture at the top of the question.
+2. Choose your question Type: **Single Choice** (one right answer) or **Multiple Choice** (more than one right answer).
+3. Type your question in the **Question** box.
+4. Add your choices under **Responses**. Click the small circle next to the correct answer.
+5. Click **+ Add new option** to include more choices.
+6. Type a hint in the **Help Text** box if you want to give students a clue.
+7. Click **Add Question** to save it to the list.
 
-Here, you can embed a video to be displayed with your quiz.
+![](https://fluentcommunity.co/wp-content/uploads/2025/06/add-question-5-scaled.webp)
 
-- **Embed Tab:** Simply paste a video URL from a service like YouTube, Vimeo, or Wistia into the text field and click **Embed**. The video will appear at the top of the quiz page.
-- **Custom HTML Code Tab:** For advanced use cases or unsupported video platforms, you can paste your full video embed code here.
+## Manage and Reorder Questions
 
-#### Lesson Duration
+It is very easy to organize your quiz layout directly from the editor.
 
-Set the expected time it will take for a student to complete this quiz. You can enter the duration in **minutes** and **seconds**. This information is displayed to the student on the course page.
+- **Reorder Answers:** Easily grab and move answer choices up or down to change their order.
+- **Edit or Delete:** Click the **three-dot menu** next to any question to edit its text, temporarily disable it, or delete it permanently.
+- **Duplicate a Question:** Click the **three-dot menu** and select **Duplicate**. This instantly copies the question and its exact answers. The new copy will glow so you spot it instantly, allowing you to tweak just a few words for your next question.
 
-#### Featured Image
+![](https://fluentcommunity.co/wp-content/uploads/2025/06/manage-question-6-scaled.webp)
 
-Click the **Upload Image** button to add a thumbnail for your quiz. This image will be used to represent your quiz on the main course page, helping to create a more professional and visually engaging learning experience for your students.
+## Save and Preview Quiz Module
 
-#### Documents & Files
-
-If you have any supplementary materials for your quiz, such as a PDF worksheet, a study guide, or relevant notes, you can add them here. Simply drag and drop the files into the box or click to upload them. These files will be available for your students to download from the quiz page.
-
-![](https://fluentcommunity.co/wp-content/uploads/2025/06/quiz-module-scaled.webp)
-
-After configuring your quiz settings click on the **Add Question** button to add questions. A pop-up window will appear where you can set up your quiz question.
-
-1. **Type:** Choose the question type—**Single Choice** (only one correct answer) or **Multiple Choice** (more than one correct answer).
-2. **Image:**Toggle this on if you want to add an image to your question.
-3. **Questions:** Type your quiz question here.
-4. **Responses:**Add the answer options. You can choose the correct answer by selecting the small circle next to it. Click **+ Add new option** to include more choices.
-5. **Help Text:**This is optional. You can add a short explanation or hint to help the student answer the question.
-6. **Status:**If you want this question to be active, make sure the **Enable this question** box is checked.
-
-Once you’re done, click the **Add Question** button at the bottom right.
-
-Repeat this process to add as many questions as you need for your quiz.
-
-![](https://fluentcommunity.co/wp-content/uploads/2025/06/Add-question-04-scaled.webp)
-
-## Manage your Quiz Questions
-
-Once you’ve added your quiz questions, you can easily manage them.
-
-Click on the **three-dot menu** next to each question. From here, you can:
-
-- **Enable or disable** the question
-- **Edit** the question
-- **Delete** the question
-
-After making your changes, click the**Save**button in the top-right corner to keep everything updated.
-
-![](https://fluentcommunity.co/wp-content/uploads/2025/06/quiz-question-save-05-scaled.webp)
-
-## Quiz Module Preview
-
-When students take the quiz, they’ll see their results right away after answering.
+When students take the quiz, they will see their results right away after submitting their answers. Always remember to click the dark **Save** button in the top-right corner to keep everything updated.
 
 > Before students can see or take the quiz, make sure you publish your quiz questions!
 
-![](https://fluentcommunity.co/wp-content/uploads/2025/06/Quiz-Test-06-scaled.webp)
+![](https://fluentcommunity.co/wp-content/uploads/2025/06/save-and-preview-10-scaled.webp)
 
 If you have any questions, please don’t hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/).
 
@@ -546,8 +609,6 @@ A pop-up box will appear displaying the current slug. Enter your desired URL-fri
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/09/2.webp)
 
-1. 
-
 **Embedding Media and Writing Content**
 
 You can customize your course lessons using WordPress’s **Gutenberg Editor**. Design your content freely with Gutenberg blocks to create engaging lessons. On the right sidebar, you’ll also find helpful **Shortcodes** to make your lessons even more dynamic and tailored to your students.
@@ -584,9 +645,7 @@ You can **Edit Title**or **Delete sections** by clicking the three-dot button in
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/09/Course-8-scaled.webp)
 
-**Edit Lessons**
-
-To modify a****lesson, click the three dot icon next to the lesson under each section. From there, you can perform the following actions:
+**Edit Lessons**: To modify a lesson, click the three-dot icon next to the lesson under each section. From there, you can perform the following actions:
 
 **Edit Lesson Content**: Open the lesson editor to update the content using Gutenberg blocks.
 
@@ -594,11 +653,13 @@ To modify a****lesson, click the three dot icon next to the lesson under each se
 
 **Preview Lesson**: See how your lesson will appear to users before publishing.
 
-**Move Lesson**: Reorder the lesson by moving it to another section within the course. Simply choose the section you want to move from the dropdown field and your lesson will be moved on that section.
+Move Lesson: Reorder the lesson by moving it to another section within the course. Simply choose the section you want to move from the dropdown field, and your lesson will be moved to that section.
 
 **Delete Lesson**: Permanently remove the lesson from your course.
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/09/Course-Lessons-Edit-options--scaled.webp)
+**Duplicate lesson:**You can duplicate a lesson by clicking the duplicate button.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/09/course-lesson-5-scaled.webp)
 
 ### Preview the Modern Course Layout
 
@@ -606,7 +667,7 @@ Once a student enrolls in the course, they’ll see the modern course overview l
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/09/Modern-Course-layout-scaled.webp)
 
-So, with the FluentCommunity’s Course Management function, you can design, implement, and monitor learning opportunities that are specific to the needs of your community.
+So, with FluentCommunity’s Course Management function, you can design, implement, and monitor learning opportunities that are specific to the needs of your community.
 
 If you have any further questions about this guide, please don’t hesitate to [contact us](https://wpmanageninja.com/support-tickets/).
 

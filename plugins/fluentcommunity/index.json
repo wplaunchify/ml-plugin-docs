@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcommunity",
   "plugin_name": "FluentCommunity",
   "documentation_url": "https://fluentcommunity.co/documentation/",
-  "last_scraped": "2026-06-07T06:30:26.698Z",
-  "total_pages": 76,
+  "last_scraped": "2026-06-14T06:32:27.462Z",
+  "total_pages": 77,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -93,8 +93,12 @@
       "slug": "course-management",
       "url": "https://fluentcommunity.co/documentation/course-management/",
       "file": "categories/course-management.md",
-      "page_count": 6,
+      "page_count": 7,
       "pages": [
+        {
+          "title": "Course Welcome Banners",
+          "url": "https://fluentcommunity.co/docs/course-welcome-banners/"
+        },
         {
           "title": "Quiz Module",
           "url": "https://fluentcommunity.co/docs/quiz-module/"
