@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T16:32:07.888Z",
+  "last_updated": "2026-06-14T16:32:22.310Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -56,7 +56,7 @@
       "slug": "affiliatewp-affiliate-portal",
       "name": "AffiliateWP - Affiliate Portal",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-14T15:32:42.633Z",
+      "last_scraped": "2026-06-14T15:32:42.632Z",
       "page_count": 0,
       "categories": []
     },
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-06-14T08:48:37.792Z",
+      "last_scraped": "2026-06-14T16:32:19.856Z",
       "page_count": 0,
       "categories": []
     },
@@ -190,7 +190,7 @@
       "slug": "disable-comments",
       "name": "Disable Comments",
       "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-      "last_scraped": "2026-06-14T15:38:44.625Z",
+      "last_scraped": "2026-06-14T15:38:44.624Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -200,7 +200,7 @@
       "slug": "duplicate-page",
       "name": "Duplicate Page",
       "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
-      "last_scraped": "2026-06-14T15:33:11.638Z",
+      "last_scraped": "2026-06-14T15:33:11.637Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -988,7 +988,7 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-06-14T15:34:14.536Z",
+      "last_scraped": "2026-06-14T15:34:14.533Z",
       "page_count": 24,
       "categories": [
         "beta-release",
@@ -1104,7 +1104,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://theeventscalendar.com/knowledgebase/documentation/",
-      "last_scraped": "2026-06-14T16:28:04.444Z",
+      "last_scraped": "2026-06-14T16:28:04.443Z",
       "page_count": 0,
       "categories": []
     },
