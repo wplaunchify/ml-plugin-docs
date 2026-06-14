@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T09:09:07.649Z",
+  "last_updated": "2026-06-14T09:13:04.398Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -409,7 +409,7 @@
       "slug": "fluentcommunity-pro",
       "name": "FluentCommunity Pro",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-06-07T09:09:53.494Z",
+      "last_scraped": "2026-06-14T09:13:04.398Z",
       "page_count": 0,
       "categories": []
     },
