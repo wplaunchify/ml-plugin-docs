@@ -8256,7 +8256,7 @@ WCS_Upgrade_2_0
 
 ## Excluding of Post Meta Data
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Subscriptions uses an opt-out approach to migrating meta data to the new subscriptions during the upgrade. This is to achieve compatibility by default rather than requiring all developers to opt-in to have their code be compatible.
 
