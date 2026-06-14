@@ -158,7 +158,7 @@ Always understand the two options available for most fields:
 
 The **Email Configuration** section is the central hub for managing all aspects of the emails your FluentCart store sends to customers and administrators. Properly configuring these settings is essential for maintaining brand consistency, ensuring reliable email delivery, and keeping everyone informed about store activity.
 
-This area is divided into two main sections, each handling a different aspect of your store's email communications.
+This area is divided into the following sections, each handling a different aspect of your store's email communications.
 
 ---
 
@@ -184,6 +184,18 @@ In this section, you will learn how to:
 - Enable or disable individual email notifications (e.g., "Order Created," "Payment Paid").
 - Edit the subject line for any notification.
 - Customize the email body with your own text and branding using a rich text editor and shortcodes.
+
+---
+
+#### Store Digest ​
+
+This section sends you a scheduled summary of your store's performance, so you can track sales without opening the dashboard. The figures match your Reports dashboard.
+
+In this section, you will learn how to:
+
+- Choose who receives the digest and whether quiet periods are emailed.
+- Enable a daily, weekly, or monthly digest, each on its own schedule.
+- Send a test digest and understand what each email contains.
 
 ---
 
@@ -543,6 +555,88 @@ After configuring your reminder preferences, click the **Save** button in the to
 
 ---
 
+## Store Digest ​
+
+**Source:** [https://docs.fluentcart.com/guide/settings-configuration/email-configuration/store-digest](https://docs.fluentcart.com/guide/settings-configuration/email-configuration/store-digest)
+
+# Store Digest ​
+
+The **Store Digest** is a system email that summarises your store's activity and delivers it straight to your inbox on a schedule you choose. It gives you a quick performance snapshot without opening the dashboard, and the numbers in every digest match what you see in the [Reports dashboard](/guide/reporting-analytics/reports-dashboard-overview).
+
+You can send a **Daily**, **Weekly**, or **Monthly** digest (or any combination), each on its own schedule and to the recipients you set.
+
+### Accessing Store Digest ​
+
+1. From your WordPress dashboard, navigate to **FluentCart Pro** > **Settings**.
+2. Click on the **Email Configuration** tab.
+3. From the sub-menu, select **Store Digest**.
+
+![Screenshot of the Store Digest Emails settings screen with the Recipients & General, Daily, Weekly, and Monthly digest sections](https://docs.fluentcart.com/images/settings-configuration/email-notifications/store-digest/store-digest-1.webp)
+
+### Recipients & General ​
+
+This top section controls who receives the digests and how quiet periods are handled.
+
+- **Recipient email addresses:** The address (or addresses) every digest is sent to. Separate multiple addresses with commas. The default value 
+```
+{{wp.admin_email}}
+```
+
+ automatically resolves to your site's admin email, so digests work without any extra setup.
+- **Empty periods (Send even when there was no activity):** Decides what happens when a period had no paid orders. When **off** (the default), the digest for that period is skipped, so you are not emailed about quiet stretches. When **on**, the digest is still sent and shows a short quiet-period note instead of metrics.
+
+### Digest Schedules ​
+
+Each digest covers a different time window and has its own **Enable** toggle, **Send time**, and **Send test email** button. By default, the **Weekly** digest is enabled, while **Daily** and **Monthly** are turned off.
+
+#### Daily digest ​
+
+Covers **yesterday's** performance and is sent every morning.
+
+- **Enable:** Turn the daily digest on or off.
+- **Send time:** The hour the digest is sent. The default is **08:00**.
+
+#### Weekly digest ​
+
+Covers the **previous 7 days** and is sent on the day you choose.
+
+- **Enable:** Turn the weekly digest on or off (on by default).
+- **Send time:** The hour the digest is sent. The default is **08:00**.
+- **Day of week:** The day the weekly digest goes out. The default is **Monday**.
+
+#### Monthly digest ​
+
+Covers the **previous calendar month** and is always sent on the **1st**.
+
+- **Enable:** Turn the monthly digest on or off.
+- **Send time:** The hour the digest is sent on the 1st of each month. The default is **08:00**.
+
+INFO
+
+All send times use your **store timezone**, not the server time. Test emails are sent to your saved recipient addresses.
+### What's Inside a Digest Email ​
+
+Every digest opens with your store name, the digest type, and the date range it covers. The body reports the same figures as your Reports dashboard for that period:
+
+- **Headline metrics:** Gross Sales, Net Revenue, Orders, Items Sold, and Refunds, each with the change compared to the previous period.
+- **Order breakdown:** One-time orders, new subscriptions, and renewals, with their counts and revenue.
+- **Top products:** Your best-selling products for the period by units sold.
+- **View full reports:** A button that opens the full [Reports dashboard](/guide/reporting-analytics/reports-dashboard-overview) inside your store.
+
+If a period had no paid orders and you have **Empty periods** turned on, the digest shows a quiet-period message ("A quiet period, no orders to report.") in place of the metrics.
+
+![Screenshot of an example weekly Store Digest email showing the date range, a quiet-period notice, and the View full reports button](https://docs.fluentcart.com/images/settings-configuration/email-notifications/store-digest/store-digest-2.webp)
+
+### Sending a Test Email ​
+
+Each digest has its own **Send test email** button. Use it to preview exactly what a recipient will receive before relying on the schedule. Test emails go to your saved recipient addresses and are always sent, even for a period with no activity, so you can confirm delivery at any time.
+
+### Saving Your Changes ​
+
+After adjusting recipients, schedules, or send times, click the **Save** button in the top-right corner to apply your changes.
+
+---
+
 ## Features & Addons ​
 
 **Source:** [https://docs.fluentcart.com/guide/settings-configuration/features-addons](https://docs.fluentcart.com/guide/settings-configuration/features-addons)
@@ -600,6 +694,13 @@ A dedicated inventory workspace for stores that need more than per-product stock
 - **Requirements:** **Stock Management** (above) must be enabled first. Advanced Inventory activates only when both toggles are on.
 - **When Inactive:** The Inventory admin menu is hidden and no adjustment history is recorded. Per-product stock still works through the basic [Inventory Management](/guide/product-types-creation/inventory-management) screen.
 - **When Active:** See [Advanced Inventory](/guide/product-types-creation/advanced-inventory) for the full workflow.
+
+### 6. MCP (AI Assistant Access) ​
+
+This module exposes a secure endpoint that lets AI assistants like Claude, Cursor, and Codex connect to your store.
+
+- **Function:** Turns on the FluentCart MCP server so AI clients can read store data and run operator tasks, scoped to the connecting account's permissions.
+- **Configuration:** Ships off. See [Connecting AI Assistants (MCP)](/guide/settings-configuration/mcp) for requirements, enabling, and client setup.
 
 ## Saving Your Changes ​
 
@@ -923,6 +1024,248 @@ Combine multiple rules with AND/OR groups to build queries like *"all sites whos
 
 ---
 
+## Connecting AI Assistants (MCP) ​
+
+**Source:** [https://docs.fluentcart.com/guide/settings-configuration/mcp](https://docs.fluentcart.com/guide/settings-configuration/mcp)
+
+# Connecting AI Assistants (MCP) ​
+
+FluentCart includes a built-in **MCP (Model Context Protocol)** server that lets AI assistants such as **Claude**, **Cursor**, and **Codex** connect securely to your store. Once connected, an assistant can read your store data and run everyday operator tasks (look up orders, check inventory, pull sales reports, and more) on your behalf, using the same permissions as the WordPress account it signs in with.
+
+The feature ships **turned off**. You enable it, connect a client with a WordPress application password, and the assistant can then reach a curated set of FluentCart tools. The numbers it returns match what you see in your [Reports dashboard](/guide/reporting-analytics/reports-dashboard-overview), because both read from the same data.
+
+## What You Need ​
+
+Before you start, make sure you have the following in place:
+
+- **WordPress 6.9 or newer.** MCP is built on the WordPress core **Abilities API**, which arrived in 6.9.
+- **An MCP adapter.** FluentCart doesn't bundle one, so it uses whichever adapter is installed: - **FluentHub** *(recommended)*. The MCP card can install it for you, or you can download it manually.
+- The standalone **MCP Adapter** plugin works too.
+- **A WordPress application password** for the account the assistant will sign in as.
+- **An MCP-capable client** on your computer, such as Cursor, Claude Desktop, Claude Code, or Codex.
+
+## Step 1: Open the MCP Card ​
+
+The MCP setup lives alongside FluentCart's other optional features.
+
+1. From your WordPress dashboard, go to **FluentCart Pro > Settings**.
+2. Open the **Features & Addon** tab.
+3. Find the **MCP for AI Agents** card and click **Configure**.
+
+When MCP hasn't been set up yet, the card shows a **Setup Required** badge.
+
+![Screenshot of the FluentCart Features & Addon page with the MCP for AI Agents card showing the Setup Required badge and the Configure button](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-1.webp)
+
+## Step 2: Install the MCP Adapter ​
+
+If no adapter is active yet, the **MCP Connection** panel asks you to install one before the endpoint can respond.
+
+- Click **Download FluentHub** to install the recommended adapter, then activate it and reload the page.
+- If you already have FluentHub or the standalone MCP Adapter active, FluentCart skips this step and you can move straight to enabling MCP.
+
+![Screenshot of the MCP Connection panel showing the FluentHub is required notice with the Download FluentHub button](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-2.webp)
+
+TIP
+
+FluentCart Pro can install FluentHub for you in one click. The tip inside the panel will point this out when it's available.
+## Step 3: Turn On MCP ​
+
+With an adapter active, switch the **MCP for AI Agents** toggle **on**. The card badge changes to **Active**, the connection endpoint goes live immediately, and the **Configure** button now opens the full connection panel.
+
+![Screenshot of the MCP for AI Agents card with the Active badge and the toggle switched on](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-3.webp)
+
+## Step 4: Open the MCP Connection Panel ​
+
+Click **Configure** to open the **MCP Connection** panel. This is your hub for connecting any client. From here you can see:
+
+- **AI tools available** to connected agents (the current count is shown at the top).
+- **Endpoint URL:** your store's MCP address, for example 
+```
+https://your-store.com/wp-json/fluent-cart/mcp
+```
+
+. Use the **Copy** button to grab it.
+- **Connect a client:** fields for your WordPress username and application password, plus a tab for each supported client (**Claude Code**, **Claude Desktop**, **Cursor**, **Codex**, and **Other**).
+- **A ready-to-copy snippet** that updates as you fill in your details.
+
+![Screenshot of the MCP Connection panel showing the endpoint URL, username and application password fields, client tabs, and the generated snippet](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-4.webp)
+
+INFO
+
+Your application password stays in your browser. It's only written into the snippet you copy, never saved on the server.
+## Step 5: Create a WordPress Application Password ​
+
+The assistant authenticates as a real WordPress user, so it needs an application password (not your normal login password).
+
+1. In the connection panel, click the **Create an application password** link. This opens your WordPress user profile.
+2. Under **Application Passwords**, type a recognizable name in **New Application Password Name** (for example, 
+```
+Cursor MCP
+```
+
+).
+3. Click **Add Application Password**.
+
+![Screenshot of the WordPress Application Passwords section with the New Application Password Name field and the Add Application Password button](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-5.webp)
+
+WordPress generates the password once and shows it in a confirmation box. Click **Copy** and store it somewhere safe; you won't be able to view it again after you leave the page.
+
+![Screenshot of the WordPress confirmation showing the newly generated application password with a Copy button](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-6.webp)
+
+## Step 6: Generate Your Connection Snippet ​
+
+Back in the **MCP Connection** panel:
+
+1. Enter your WordPress **username** in the username field.
+2. Paste the **application password** you just copied.
+3. Select the tab for the client you're using (**Claude Code**, **Claude Desktop**, **Cursor**, **Codex**, or **Other**).
+4. Click **Copy snippet**. FluentCart fills in your endpoint and a ready-to-use 
+```
+Authorization: Basic
+```
+
+ header for you.
+
+![Screenshot of the MCP Connection panel with the application password filled in and the Copy snippet button highlighted](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-7.webp)
+
+INFO
+
+The authorization value is the word 
+```
+Basic
+```
+
+ followed by the base64 encoding of 
+```
+your-username:your-application-password
+```
+
+. The panel builds this for you automatically, so you rarely need to encode anything by hand.
+## Step 7: Add the Connection to Your Client ​
+
+Every client connects to the same endpoint over HTTP using Basic authentication. Pick the snippet that matches your tool.
+
+### Cursor ​
+
+Add the copied snippet to your 
+```
+mcp.json
+```
+
+ file. It looks like this:
+
+json
+```
+{
+  "mcpServers": {
+    "fluent-cart": {
+      "url": "https://your-store.com/wp-json/fluent-cart/mcp",
+      "type": "http",
+      "headers": {
+        "Authorization": "Basic <your-generated-token>"
+      }
+    }
+  }
+}
+```![Screenshot of an mcp.json file in Cursor containing the fluent-cart MCP server block with the URL and Authorization header](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-9.webp)
+
+Once saved, Cursor lists **fluent-cart** under **Settings > Tools & MCPs**, with its tools enabled and ready to use.
+
+![Screenshot of the Cursor Tools and MCPs settings showing the fluent-cart server installed with its tools enabled](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-8.webp)
+
+### Claude Code ​
+
+Run the generated command in the terminal where Claude Code is installed. It uses the 
+```
+claude mcp add
+```
+
+ command with the 
+```
+http
+```
+
+ transport, your endpoint, and the 
+```
+Authorization
+```
+
+ header:
+
+bash
+```
+claude mcp add \
+  --transport http \
+  fluent-cart https://your-store.com/wp-json/fluent-cart/mcp \
+  --header "Authorization: Basic <your-generated-token>"
+```
+### Claude Desktop ​
+
+Paste the generated 
+```
+mcpServers
+```
+
+ block into your Claude Desktop config (**Settings > Developer > Edit Config**), then restart Claude Desktop.
+
+### Codex ​
+
+Add a custom MCP server using **Streamable HTTP** transport, your endpoint URL, and the 
+```
+Authorization
+```
+
+ header from the snippet.
+
+### Any Other Client ​
+
+Any MCP client that speaks Streamable HTTP can connect with the same endpoint URL and a Basic auth header.
+
+## Step 8: Confirm the Connection Works ​
+
+Once your client is connected, ask the assistant a simple question about your store to confirm everything is wired up correctly. For example, prompt it for the most recently added product. The assistant will call the FluentCart tools and return live data, such as the product's status, type, price range, and per-variation stock.
+
+![Screenshot of an AI assistant using FluentCart MCP tools to return details for the most recently added product, including its variations and stock](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-10.webp)
+
+## What AI Assistants Can Access ​
+
+When MCP is on, FluentCart hands the assistant a focused toolkit. **Most tools are read-only and never change anything.** The few that do make changes are clearly separated and always run with the connected account's permissions, so an assistant can only do what that account is allowed to do.
+
+### What an assistant can look up ​
+
+These are read-only. Ask in plain language and the assistant pulls the answer from your live store data.
+
+- **Your store at a glance:** store details, currency, and headline stats such as recent orders, revenue, customers, and active subscriptions.
+- **Orders:** search and filter orders, open a single order's full money breakdown, and review its activity history (status changes, payments, refunds, notes, and emails sent).
+- **Customers:** find customers by name, email, location, or lifetime value, and open a full profile with order and subscription history.
+- **Products & inventory:** search products, see full product detail with per-variation stock, and get a "what needs restocking?" view.
+- **Subscriptions:** search subscriptions and open one to see its billing schedule and renewal history.
+- **Coupons:** list coupons with their usage counts and validity windows.
+- **Reports & analytics:** sales summaries with period-over-period comparison, revenue trends over time, best-selling products, refund metrics, and flexible breakdowns by order, product, customer, or marketing source (UTM attribution).
+
+### Actions an assistant can take ​
+
+These change your data, so they always respect what the connected account is permitted to do.
+
+- **Orders:** change the order or shipping status, add an internal staff note, or refund an order.
+- **Customers:** create a new customer or update an existing one.
+- **Subscriptions:** cancel a subscription.
+- **Coupons:** create, update, or deactivate a coupon.
+- **Labels:** add or remove labels on an order, customer, or subscription.
+
+Built-in safety for refunds and cancellations
+
+Refunding an order and canceling a subscription are **two-step actions**. The assistant must first run a preview, then confirm before anything actually happens, which makes accidental refunds or cancellations effectively impossible. Live (real-money) refunds also require your explicit approval, while test-mode refunds run freely.FluentCart Pro can add further tools on top of this set.
+
+## Security & Permissions ​
+
+- **Off by default.** Nothing is exposed until you enable the toggle.
+- **Authenticated and scoped.** Every request goes through WordPress authentication, a FluentCart role check, and a per-tool permission check. An assistant can only do what the connected account is allowed to do, so a read-only account cannot make changes.
+- **Use least privilege.** Connect with a dedicated account that has only the access the assistant needs.
+- **Revoke any time.** Delete the application password to cut off a single client, or turn the **MCP for AI Agents** toggle off to disable the endpoint entirely.
+
+---
+
 ## Pages Setup ​
 
 **Source:** [https://docs.fluentcart.com/guide/settings-configuration/pages-setup](https://docs.fluentcart.com/guide/settings-configuration/pages-setup)
@@ -1208,62 +1551,127 @@ Storage configuration now lives under its own dedicated **Storage** menu in Flue
 
 # Store Settings ​
 
-The **Store Settings** screen is where you configure the fundamental information about your FluentCart store. This includes your store's name, logo, physical address, and essential currency settings, all of which are crucial for the basic operation and branding of your online business.
+The **Store Setup** tab is where you configure the fundamental information about your FluentCart store: your store's name, logo, physical address, business details, currency, payment view, and units of measurement. These values feed into receipts, emails, checkout, shipping calculations, and tax handling, so it's the first screen to configure on a fresh install.
 
-## Accessing General Settings ​
+## Accessing the Store Setup Tab ​
 
-Go to your WordPress dashboard, then go to **FluentCart Pro** > **Settings** in the side menu, and click on the **Pages Setup** tab.
+1. From your WordPress dashboard, go to **FluentCart > Settings**.
+2. In the left-hand menu, click **Store Settings**. The group expands.
+3. Click **Store Setup** to open the tab.
+
+![Screenshot of the full Store Setup tab](https://docs.fluentcart.com/images/settings-configuration/store-setting/store-settings-setup.webp)
 
 ## Configuring Your Store Details ​
 
-### 1. General Information ​
+### 1. Store Name and Logo ​
 
-- **Store Name:** Enter the official name of your online store. This name will often appear in various parts of your store, emails, and reports.
-- **Store Logo:** You can upload your brand's logo here. This logo may be used in receipts, invoices, or other areas of your store. - Click the **"Remove"** button if you wish to remove an existing logo.
+- **Store Name:** The public name of your online store. This name appears in your storefront header, transactional emails, receipts, and reports.
+- **Store Logo:** Click **Add Media** to upload your brand's logo. Recommended width is 512 pixels minimum. The logo is used in receipts, invoices, and other store documents.
 
 ### 2. Store Mode ​
 
-Select your store's current operating mode. This is a critical setting that controls whether your store can process real payments.
+Select your store's operating mode. This is a critical setting that controls whether your store processes real payments.
 
-- **Live:** This is the standard mode for an active store. In **Live** mode, all transactions are real, and your payment gateways will process actual payments from customers.
-- **Test:** This mode is designed for development and setup purposes. When **Test** mode is active, you can place test orders using dummy payment details without any real money being charged.
+- **Live:** The standard mode for an active store. In **Live** mode, all transactions are real and your payment gateways process actual payments.
+- **Test:** Designed for setup, development, and rehearsal. In **Test** mode you can place dummy orders without any money changing hands.
 
 INFO
 
-This setting is directly linked to your payment gateways. When you set the store to **Live Mode**, your payment methods will also switch to their live settings. When you select **Test Mode**, your payment gateways will automatically use their test or "sandbox" credentials.
+This setting is directly linked to your payment gateways. When you set the store to **Live**, your payment methods also switch to their live credentials. When you switch to **Test**, your payment gateways automatically use their sandbox credentials.
 ### 3. Store Address ​
 
-Provide your physical business address details. This information can be used for PayPal, shipping calculations, tax purposes, and displayed in various store documents.
+Provide your physical business address. FluentCart uses this for PayPal verification, default shipping calculations, tax base lookups, and as the address displayed on receipts and other store documents.
 
-- **Country:** Select your store's country from the dropdown menu. This is used as the default country for shipping and tax calculations.
-- **District:** Enter the district, state, province, or region where your business is located.
-- **Street Address:** Provide the primary street name and number for your business location.
-- **Apt, suite, unit:** Enter any secondary address information, such as an apartment number, suite, or unit number.
-- **City/Town:** Enter the city or town where your business is located.
-- **Zip Code:** Provide the postal or zip code for your business address.
+- **Country:** Select your store's country from the dropdown. This is the default country for shipping and tax calculations.
+- **State / Region:** Pick the state, province, or region from the dropdown. The options shown depend on the country you selected.
+- **Street Address:** The primary street name and number for your business location.
+- **Apt, suite, unit:** Any secondary address information such as an apartment number, suite, or unit.
+- **City:** The city or town where your business is located.
+- **Postcode:** The postal or ZIP code for your business address.
 
-![Screenshot of Store Settings - Store Setup Tab](https://docs.fluentcart.com/images/settings-configuration/store-setting/store-settings-setup.webp)
+### 4. Business Details ​
 
-### 4. Currency ​
+Below the address fields you'll find the **Business Details** block — your legal business identity, used on receipts, invoices, and anywhere FluentCart needs to display official store information for compliance.
+
+- **Company Name:** Your registered business name as it should appear on receipts and invoices.
+- **Legal Registration ID:** Your company registration number (Companies House number in the UK, state filing number in the US, etc.). Shown on PDF receipts where local rules require business identification.
+- **Seller VAT ID:** Your store's EU VAT registration number. Appears in PDF receipts and is rendered into the 
+```
+{{order.store_vat_display}}
+```
+
+ smart tag for email templates. Use this field if you collect EU VAT — see [Configuring European Union (EU) VAT](/guide/tax-&-duties/european-union-vat) for how the VAT ID ties into reverse-charge handling.
+
+![Screenshot of Store Settings - Business Details block](https://docs.fluentcart.com/images/settings-configuration/store-setting/store-business-tax.webp)
+
+### 5. Currency ​
 
 Configure the currency settings for your store's transactions.
 
-- **Checkout Currency:** Select the primary currency in which your products will be priced and payments will be processed.
-- **Number Format:** This setting lets you choose how numbers, especially prices, are shown in your store. It controls whether you use commas or dots to separate thousands and decimals.
-- **Currency Position:** Select where the currency symbol should appear relative to the amount.
+- **Checkout Currency:** The primary currency your products are priced in and payments are processed in. Pick from the dropdown.
+- **Number Format:** Controls how numbers (especially prices) are displayed. Choose between **Comma & Dot (eg 10,000.00)** or **Dot & Comma (eg 10.000,00)** to match your locale.
+- **Currency Formatting:** Controls where the currency symbol or code appears relative to the amount. The dropdown includes options like **Symbol before (eg: $100)**, symbol after, and currency code formatting.
 
-![Screenshot of Store Settings - Store Setup Tab](https://docs.fluentcart.com/images/settings-configuration/store-setting/store-currency-setup.webp)
+### 6. Payment View ​
 
-### 5. Payment View ​
+The **Payment View** setting controls how payment methods appear to customers on the checkout page. Pick between two visual styles:
 
-The Payment View setting allows you choose how payment methods look to your customers on the checkout page. You can pick from a dropdown options:
+- **Logo:** Displays each payment method as its brand logo (for example, the PayPal logo rather than the word "PayPal"). Best for visually rich checkouts.
+- **Radio:** Displays each payment method as a labelled radio button. Cleaner and more compact, useful when you want the checkout to stay text-driven.
 
-- **Logo:** This option displays the actual brand picture (logo) for each payment method (e.g., the PayPal logo instead of just the word "PayPal").
-- **Radio** This shows payment methods as simple choices you can click, like a small circle next to their name (e.g., "PayPal" as text).
+### 7. Units of Measurement ​
 
+These two units are used across the product editor, package definitions, and shipping calculations.
+
+- **Weight Unit:** The unit used for product weight measurements. Choose from the dropdown (e.g. 
+```
+kg
+```
+
+, 
+```
+lb
+```
+
+, 
+```
+g
+```
+
+, 
+```
+oz
+```
+
+). Setting this consistently ensures carrier rates and shipping labels stay accurate.
+- **Dimension Unit:** The unit used for product dimension measurements (length, width, height). Choose from the dropdown (e.g. 
+```
+cm
+```
+
+, 
+```
+mm
+```
+
+, 
+```
+m
+```
+
+, 
+```
+in
+```
+
+).
+
+INFO
+
+Changing these units does not retroactively convert values you've already entered on existing products or packages. Pick the right units early in your setup so you don't have to re-enter measurements later.
 ## Saving Your Settings ​
 
-After making any changes to your General Settings, remember to click the **"Save Settings"** button at the bottom right of the screen to apply your configurations.
+Click the **Save** button at the top right of the screen to apply your changes. You can also press **Cmd+S** (macOS) or **Ctrl+S** (Windows/Linux) to save without leaving the keyboard.
 
 ---
 

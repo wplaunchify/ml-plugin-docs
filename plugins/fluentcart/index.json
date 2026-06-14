@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-06-07T07:36:10.187Z",
-  "total_pages": 135,
+  "last_scraped": "2026-06-14T07:48:42.065Z",
+  "total_pages": 138,
   "failed_urls_count": 8,
   "sections": [
     {
@@ -328,7 +328,7 @@
       "slug": "product-types-creation",
       "url": "https://docs.fluentcart.com/guide/product-types-creation/",
       "file": "categories/product-types-creation.md",
-      "page_count": 15,
+      "page_count": 16,
       "pages": [
         {
           "title": "Product Types & Creation ​",
@@ -385,6 +385,10 @@
         {
           "title": "Managing Subscriptions ​",
           "url": "https://docs.fluentcart.com/guide/product-types-creation/managing-subscriptions"
+        },
+        {
+          "title": "Per-Variation Tax Settings ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/per-variation-tax"
         },
         {
           "title": "Product List Overview ​",
@@ -454,7 +458,7 @@
       "slug": "settings-configuration",
       "url": "https://docs.fluentcart.com/guide/settings-configuration/",
       "file": "categories/settings-configuration.md",
-      "page_count": 20,
+      "page_count": 22,
       "pages": [
         {
           "title": "Settings & Configuration ​",
@@ -489,6 +493,10 @@
           "url": "https://docs.fluentcart.com/guide/settings-configuration/email-configuration/reminders"
         },
         {
+          "title": "Store Digest ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/email-configuration/store-digest"
+        },
+        {
           "title": "Features & Addons ​",
           "url": "https://docs.fluentcart.com/guide/settings-configuration/features-addons"
         },
@@ -507,6 +515,10 @@
         {
           "title": "Customer License Sites (Pro) ​",
           "url": "https://docs.fluentcart.com/guide/settings-configuration/managing-licensing-sites"
+        },
+        {
+          "title": "Connecting AI Assistants (MCP) ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/mcp"
         },
         {
           "title": "Pages Setup ​",
