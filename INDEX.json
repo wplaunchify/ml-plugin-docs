@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T06:30:32.554Z",
+  "last_updated": "2026-06-14T06:31:13.942Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -284,7 +284,7 @@
       "slug": "fluent-pdf-generator",
       "name": "Fluent PDF Generator",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-06-07T06:29:11.805Z",
+      "last_scraped": "2026-06-14T06:31:13.942Z",
       "page_count": 0,
       "categories": []
     },
