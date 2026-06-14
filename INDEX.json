@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T21:27:58.950Z",
+  "last_updated": "2026-06-14T21:29:09.255Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1041,20 +1041,9 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-06-08T09:09:15.844Z",
-      "page_count": 10,
-      "categories": [
-        "detective-mode",
-        "does-it-work-with-sqlite-yes-it-does",
-        "gdpr-and-privacy",
-        "got-a-charge-from-lemsqzy-simple-history",
-        "how-do-i-manage-my-add-on-subscriptions",
-        "load-events-error",
-        "third-party-plugins-with-support-for-simple-history",
-        "weekly-email-report",
-        "what-is-an-initiator",
-        "wrong-event-time"
-      ]
+      "last_scraped": "2026-06-14T21:29:09.255Z",
+      "page_count": 0,
+      "categories": []
     },
     {
       "slug": "simple-post-redirect",
