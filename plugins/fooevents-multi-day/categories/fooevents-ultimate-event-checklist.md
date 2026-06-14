@@ -10,7 +10,7 @@
 
 ### The #1 Event, Ticketing & Bookings Platform for WooCommerce
 				# Sell tickets to your events, venues and bookable services like a pro!
-				## Join over 10,000 happy FooEvents customers and add event, ticketing, and booking functionality to your WordPress website. Sell unlimited WooCommerce tickets directly from your site and manage registrations for physical, virtual, or hybrid events—no tech skills needed.
+				## Join over 16,000 happy FooEvents customers and add event, ticketing, and booking functionality to your WordPress website. Sell unlimited WooCommerce tickets directly from your site and manage registrations for physical, virtual, or hybrid events—no tech skills needed.
 				[Get FooEvents Now!](https://www.fooevents.com/pricing/)
 				No commission OR ticket fees.
 				![How To Sell Woocommerce Tickets](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
@@ -62,7 +62,7 @@ FooEvents is an excellent plugin. **I use it to sell my hobby classes on my webs
 				![Fooevents Check-Ins Apps](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### Check-ins Apps
 				#### Manage access with our FREE mobile Check-in apps
-				There’s no need to carry around a clumsy clipboard or kill trees when you can elegantly manage check-ins with our free, easy to use iOS and Android apps. The FooEvents Check-ins app gives you the tools to manage access to your event like a pro and it even works when the internet goes down!
+				Manage event access quickly and professionally with the free FooEvents Check-ins app. Used to check in **23,443,659** attendees, the app makes it easy to validate tickets, track attendance, and keep your entrance moving.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Explore Apps](https://www.fooevents.com/features/apps/)

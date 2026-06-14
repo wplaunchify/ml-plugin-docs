@@ -196,7 +196,7 @@ Mailchimp has become a household name and for good reason. It’s extremely powe
 				### Virtual Conferences
 				[Try the demo](https://demo.fooevents.com/product/virtual-conference/) | [Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/virtual-conference/)
 				## We get you, because we’ve been in your shoes!
-				Back in 2015 we needed a solution to sell tickets for a conference. Existing solutions were expensive, over complicated and badly coded. We ditched the idea of an off-the-shelf solution and decided to build our own ticket plugin. Fast forward to present-day and FooEvents has helped over 10,000 customers sell millions of tickets.
+				Back in 2015 we needed a solution to sell tickets for a conference. Existing solutions were expensive, over complicated and badly coded. We ditched the idea of an off-the-shelf solution and decided to build our own ticket plugin. Fast forward to present-day and FooEvents has helped over 16,000 customers sell millions of tickets.
 				Event Organizers & Small Businesses
 
 					Sell tickets, manage check-ins and grow your events. You don’t need any tech skills and can be up and running within minutes. No commission OR ticket fees.

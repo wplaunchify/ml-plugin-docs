@@ -24,14 +24,16 @@ If you have any questions, or want to know exactly what data we keep of you, ple
 
 We may collect or receive personal information for a number of purposes connected with our business operations which may include the following: (click to expand)
 
-### 1.1 To sell or share data with a third partyThe following categories of data are collected
+### 1.1 To sell or share data with a third party
+### The following categories of data are collected
 
 - Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
 - Geolocation data
 
-Retention period
+### Retention period
 
-We retain this data upon termination of the service for the following number of months: 24### 1.2 Contact - Through phone, mail, email and/or webformsThe following categories of data are collected
+We retain this data upon termination of the service for the following number of months: 24### 1.2 Contact - Through phone, mail, email and/or webforms
+### The following categories of data are collected
 
 - A first and last name
 - Account name or alias
@@ -42,65 +44,10 @@ We retain this data upon termination of the service for the following number of 
 - Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
 - Geolocation data
 
-Retention period
+### Retention period
 
-We retain this data upon termination of the service for the following number of months: 24### 1.3 Registering an accountThe following categories of data are collected
-
-- A first and last name
-- Account name or alias
-- A home or other physical address, including street name and name of a city or town
-- An email address
-- A telephone number
-- IP Address
-- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
-- Geolocation data
-
-Retention period
-
-We retain this data upon termination of the service for the following number of months: 24### 1.4 PaymentsThe following categories of data are collected
-
-- Account name or alias
-- A first and last name
-- A home or other physical address, including street name and name of a city or town
-- An email address
-- A telephone number
-- IP Address
-- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
-- Geolocation data
-
-Retention period
-
-We retain this data upon termination of the service for the following number of months: 24### 1.5 NewslettersThe following categories of data are collected
-
-- A first and last name
-- Account name or alias
-- A home or other physical address, including street name and name of a city or town
-- An email address
-- A telephone number
-- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
-- Geolocation data
-
-Retention period
-
-We retain this data until the service is terminated.### 1.6 To support services or products that a customer wants to buy or has purchasedThe following categories of data are collected
-
-- A first and last name
-- Account name or alias
-- An email address
-- IP Address
-- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
-
-Retention period
-
-We determine the retention period according to fixed objective criteria: Retained indefinitely unless the person requests removal of their account and personal data.### 1.7 Compiling and analyzing statistics for website improvement.The following categories of data are collected
-
-- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
-- Geolocation data
-- IP Address
-
-Retention period
-
-We determine the retention period according to fixed objective criteria: Retained indefinitely unless the person requests removal of their account and personal data.### 1.8 To be able to offer personalized products and servicesThe following categories of data are collected
+We retain this data upon termination of the service for the following number of months: 24### 1.3 Registering an account
+### The following categories of data are collected
 
 - A first and last name
 - Account name or alias
@@ -111,7 +58,68 @@ We determine the retention period according to fixed objective criteria: Retaine
 - Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
 - Geolocation data
 
-Retention period
+### Retention period
+
+We retain this data upon termination of the service for the following number of months: 24### 1.4 Payments
+### The following categories of data are collected
+
+- Account name or alias
+- A first and last name
+- A home or other physical address, including street name and name of a city or town
+- An email address
+- A telephone number
+- IP Address
+- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
+- Geolocation data
+
+### Retention period
+
+We retain this data upon termination of the service for the following number of months: 24### 1.5 Newsletters
+### The following categories of data are collected
+
+- A first and last name
+- Account name or alias
+- A home or other physical address, including street name and name of a city or town
+- An email address
+- A telephone number
+- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
+- Geolocation data
+
+### Retention period
+
+We retain this data until the service is terminated.### 1.6 To support services or products that a customer wants to buy or has purchased
+### The following categories of data are collected
+
+- A first and last name
+- Account name or alias
+- An email address
+- IP Address
+- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
+
+### Retention period
+
+We determine the retention period according to fixed objective criteria: Retained indefinitely unless the person requests removal of their account and personal data.### 1.7 Compiling and analyzing statistics for website improvement.
+### The following categories of data are collected
+
+- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
+- Geolocation data
+- IP Address
+
+### Retention period
+
+We determine the retention period according to fixed objective criteria: Retained indefinitely unless the person requests removal of their account and personal data.### 1.8 To be able to offer personalized products and services
+### The following categories of data are collected
+
+- A first and last name
+- Account name or alias
+- A home or other physical address, including street name and name of a city or town
+- An email address
+- A telephone number
+- IP Address
+- Internet activity information, including, but not limited to, browsing history, search history, and information regarding a consumer's interaction with an Internet Web site, application, or advertisement
+- Geolocation data
+
+### Retention period
 
 Upon termination of the service we retain this data for the following period: Retained indefinitely unless the person requests removal of their account and personal data..
 ## 2. Sharing with other parties
@@ -167,7 +175,7 @@ We reserve the right to make amendments to this privacy statement. It is recomme
 
 If you have any questions or want to know which personal data we have about you, please contact us. Please make sure to always clearly state who you are, so that we can be certain that we do not modify or delete any data of the wrong person. We shall provide the requested information only upon receipt of a verifiable consumer request. You can contact us by using the information below. You have the following rights:
 
-9.1 You have the following rights with respect to your personal data
+### 9.1 You have the following rights with respect to your personal data
 
 1. You may submit a request for access to the data we process about you.
 2. You may object to the processing.
@@ -175,7 +183,7 @@ If you have any questions or want to know which personal data we have about you,
 4. You may request correction or deletion of the data if it is incorrect or not or no longer relevant, or to ask to restrict the processing of the data.
 5. You may appeal our decision whenever we refuse to take action on a request and submit a complaint with the competent authority if your appeal is denied.
 
-9.2 Supplements
+### 9.2 Supplements
 
 This section, which supplements the rest of this Privacy Statement, applies to citizens and legal permanent residents of California (CPRA), Colorado (CPA), Nevada (NRS 603A), Utah (UCPA), Virginia (CDPA), Connecticut (CTDPA), Montana (MCDPA), Oregon (OCPA), Texas (TDPSA), Delaware (PDPA), Iowa (CDPA), Nebraska (DPA), New Hampshire (DPA) and New Jersey (DPL)
 
