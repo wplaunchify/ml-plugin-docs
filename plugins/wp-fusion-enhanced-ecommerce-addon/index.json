@@ -2,8 +2,8 @@
   "plugin_slug": "wp-fusion-enhanced-ecommerce-addon",
   "plugin_name": "WP Fusion - Enhanced Ecommerce Addon",
   "documentation_url": "https://wpfusion.com/documentation/",
-  "last_scraped": "2026-06-07T16:36:22.391Z",
-  "total_pages": 482,
+  "last_scraped": "2026-06-14T16:38:19.107Z",
+  "total_pages": 483,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -1527,8 +1527,12 @@
       "slug": "learning-management",
       "url": "https://wpfusion.com/documentation/learning-management/",
       "file": "categories/learning-management.md",
-      "page_count": 18,
+      "page_count": 19,
       "pages": [
+        {
+          "title": "Academy LMS",
+          "url": "https://wpfusion.com/documentation/learning-management/academy-lms/"
+        },
         {
           "title": "SureDash",
           "url": "https://wpfusion.com/documentation/learning-management/suredash/"

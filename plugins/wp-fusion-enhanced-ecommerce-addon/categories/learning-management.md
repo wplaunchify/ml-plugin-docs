@@ -4,6 +4,41 @@
 
 ---
 
+## Academy LMS
+
+**Source:** [https://wpfusion.com/documentation/learning-management/academy-lms/](https://wpfusion.com/documentation/learning-management/academy-lms/)
+
+### Overview
+
+Using WP Fusion and [Academy LMS](https://academylms.net/) you can automatically apply tags in your CRM when a student enrolls in or completes a course, apply tags when individual lessons are marked complete, and use a linked tag to automatically enroll or un-enroll users from a course.
+
+### Course Settings
+
+WP Fusion adds a settings panel to every Academy LMS course inside the course builder. The panel appears in the course editor under the **Custom Fields** postbox and is labelled **WP Fusion**.
+
+![](https://wpfusion.com/wp-content/uploads/2026/06/Academy_LMS_-_Course_Settings-1024x815.png)
+
+The panel contains the following fields:
+
+- **Apply Tags – Enrolled** — Tags applied when a user is enrolled in the course.
+- **Apply Tags – Completed** — Tags applied when a user completes the course.
+- **Link with Tag** — Links a single CRM tag to this course. When the tag is applied to a contact in your CRM, the user is automatically enrolled in the course. When the tag is removed, the user is automatically un-enrolled. The linked tag is also applied when a user enrolls directly in Academy.
+- **Lessons** — For each lesson in the course curriculum, you can select tags to be applied when that lesson is marked complete.
+
+### Auto-Enrollment
+
+Using the **Link with Tag** setting you can link a tag in your CRM with an Academy LMS course. When the tag is applied to a user — whether manually in your CRM, via an automation, or by a webhook — the user is automatically enrolled in the course. If the tag is removed, the user is automatically un-enrolled.
+
+Likewise, when a user is enrolled directly in Academy (manually or via purchase), the linked tag is applied to their CRM contact.
+
+### Lesson Completion Tagging
+
+The **Lessons** section of the course settings panel lists every lesson in the course curriculum. You can assign one or more tags to each lesson; those tags are applied when the student marks that lesson complete.
+
+Lesson tags are configured per course. If the same lesson appears in more than one course, each course can apply different tags on that lesson’s completion.
+
+---
+
 ## SureDash
 
 **Source:** [https://wpfusion.com/documentation/learning-management/suredash/](https://wpfusion.com/documentation/learning-management/suredash/)
