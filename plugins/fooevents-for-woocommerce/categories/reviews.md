@@ -9,7 +9,7 @@
 **Source:** [https://www.fooevents.com/reviews/](https://www.fooevents.com/reviews/)
 
 # What do our customers say?
-				## Over 10,000 happy customers use FooEvents to sell tickets and manage their events!
+				## Over 16,000 happy customers use FooEvents to sell tickets and manage their events!
 				### Submit a review​
 
 				

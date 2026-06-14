@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T07:48:42.070Z",
+  "last_updated": "2026-06-14T08:23:49.150Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -625,7 +625,7 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-05-24T07:55:47.338Z",
+      "last_scraped": "2026-06-14T08:23:49.150Z",
       "page_count": 55,
       "categories": [
         "about-us",
