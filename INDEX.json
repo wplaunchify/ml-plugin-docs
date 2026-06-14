@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T12:43:22.612Z",
+  "last_updated": "2026-06-14T12:43:30.038Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -595,7 +595,7 @@
       "slug": "fooevents-express-check-in",
       "name": "FooEvents Express Check-in",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-06-14T12:38:28.947Z",
+      "last_scraped": "2026-06-14T12:38:28.943Z",
       "page_count": 55,
       "categories": [
         "about-us",
@@ -1288,8 +1288,8 @@
       "slug": "wp-fusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-07T12:37:26.802Z",
-      "page_count": 482,
+      "last_scraped": "2026-06-14T12:43:28.406Z",
+      "page_count": 483,
       "categories": [
         "abandoned-cart-tracking",
         "actions",
