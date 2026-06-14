@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T10:59:03.974Z",
+  "last_updated": "2026-06-14T11:00:58.996Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1583,12 +1583,12 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-06-07T10:47:59.711Z",
+      "last_scraped": "2026-06-14T11:00:58.996Z",
       "page_count": 5,
       "categories": [
+        "bulk-increase-woocommerce-prices-percentage",
         "export-tutor-lms-courses-google-sheets",
         "import-tutor-lms-courses-google-sheets",
-        "import-woocommerce-product-galleries-google-sheets",
         "manage-tutor-lms-content-google-sheets",
         "woocommerce-manage-coupons-google-sheets"
       ]

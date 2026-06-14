@@ -2,10 +2,23 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-06-07T10:47:59.711Z",
+  "last_scraped": "2026-06-14T11:00:58.994Z",
   "total_pages": 5,
   "failed_urls_count": 37,
   "sections": [
+    {
+      "title": "Bulk Increase Woocommerce Prices Percentage",
+      "slug": "bulk-increase-woocommerce-prices-percentage",
+      "url": "https://wpsheeteditor.combulk-increase-woocommerce-prices-percentage/",
+      "file": "categories/bulk-increase-woocommerce-prices-percentage.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Bulk Increase WooCommerce Prices by a Percentage",
+          "url": "https://wpsheeteditor.com/bulk-increase-woocommerce-prices-percentage/"
+        }
+      ]
+    },
     {
       "title": "Export Tutor Lms Courses Google Sheets",
       "slug": "export-tutor-lms-courses-google-sheets",
@@ -29,19 +42,6 @@
         {
           "title": "How to Import Tutor LMS Courses from Google Sheets",
           "url": "https://wpsheeteditor.com/import-tutor-lms-courses-google-sheets/"
-        }
-      ]
-    },
-    {
-      "title": "Import Woocommerce Product Galleries Google Sheets",
-      "slug": "import-woocommerce-product-galleries-google-sheets",
-      "url": "https://wpsheeteditor.comimport-woocommerce-product-galleries-google-sheets/",
-      "file": "categories/import-woocommerce-product-galleries-google-sheets.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Import WooCommerce Product Galleries from Google Sheets",
-          "url": "https://wpsheeteditor.com/import-woocommerce-product-galleries-google-sheets/"
         }
       ]
     },
