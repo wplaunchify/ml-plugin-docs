@@ -1,10 +1,23 @@
 {
   "plugin_slug": "wp-fusion-event-tracking-addon",
   "plugin_name": "WP Fusion - Event Tracking Addon",
-  "last_scraped": "2026-06-07T04:31:50.570Z",
-  "total_pages": 482,
+  "last_scraped": "2026-06-14T04:32:12.181Z",
+  "total_pages": 483,
   "failed_urls": [],
   "pages": [
+    {
+      "title": "Academy LMS",
+      "url": "https://wpfusion.com/documentation/learning-management/academy-lms/",
+      "category": "Learning Management",
+      "content": "### Overview\n\nUsing WP Fusion and [Academy LMS](https://academylms.net/) you can automatically apply tags in your CRM when a student enrolls in or completes a course, apply tags when individual lessons are marked complete, and use a linked tag to automatically enroll or un-enroll users from a course.\n\n### Course Settings\n\nWP Fusion adds a settings panel to every Academy LMS course inside the course builder. The panel appears in the course editor under the **Custom Fields** postbox and is labelled **WP Fusion**.\n\n![](https://wpfusion.com/wp-content/uploads/2026/06/Academy_LMS_-_Course_Settings-1024x815.png)\n\nThe panel contains the following fields:\n\n- **Apply Tags – Enrolled** — Tags applied when a user is enrolled in the course.\n- **Apply Tags – Completed** — Tags applied when a user completes the course.\n- **Link with Tag** — Links a single CRM tag to this course. When the tag is applied to a contact in your CRM, the user is automatically enrolled in the course. When the tag is removed, the user is automatically un-enrolled. The linked tag is also applied when a user enrolls directly in Academy.\n- **Lessons** — For each lesson in the course curriculum, you can select tags to be applied when that lesson is marked complete.\n\n### Auto-Enrollment\n\nUsing the **Link with Tag** setting you can link a tag in your CRM with an Academy LMS course. When the tag is applied to a user — whether manually in your CRM, via an automation, or by a webhook — the user is automatically enrolled in the course. If the tag is removed, the user is automatically un-enrolled.\n\nLikewise, when a user is enrolled directly in Academy (manually or via purchase), the linked tag is applied to their CRM contact.\n\n### Lesson Completion Tagging\n\nThe **Lessons** section of the course settings panel lists every lesson in the course curriculum. You can assign one or more tags to each lesson; those tags are applied when the student marks that lesson complete.\n\nLesson tags are configured per course. If the same lesson appears in more than one course, each course can apply different tags on that lesson’s completion.",
+      "headings": [
+        "Overview",
+        "Course Settings",
+        "Auto-Enrollment",
+        "Lesson Completion Tagging"
+      ],
+      "code_blocks": []
+    },
     {
       "title": "Document Library Pro",
       "url": "https://wpfusion.com/documentation/other/document-library-pro/",

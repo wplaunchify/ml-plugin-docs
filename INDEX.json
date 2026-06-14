@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T04:32:08.549Z",
+  "last_updated": "2026-06-14T04:32:13.841Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -48,7 +48,7 @@
       "slug": "affiliatewp-affiliate-landing-pages",
       "name": "AffiliateWP - Affiliate Landing Pages",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-13T08:35:55.172Z",
+      "last_scraped": "2026-06-13T08:35:55.171Z",
       "page_count": 0,
       "categories": []
     },
@@ -80,7 +80,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-14T00:59:50.837Z",
+      "last_scraped": "2026-06-14T00:59:50.836Z",
       "page_count": 0,
       "categories": []
     },
@@ -148,7 +148,7 @@
       "slug": "block-visibility",
       "name": "Block Visibility",
       "documentation_url": "https://www.blockvisibilitywp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-06-14T01:51:59.116Z",
+      "last_scraped": "2026-06-14T01:51:59.115Z",
       "page_count": 0,
       "categories": []
     },
@@ -180,7 +180,7 @@
       "slug": "debug-log-manager-tool",
       "name": "Debug Log Manager Tool",
       "documentation_url": "https://wordpress.org/plugins/debug-log-manager/",
-      "last_scraped": "2026-06-14T03:03:35.293Z",
+      "last_scraped": "2026-06-14T03:03:35.292Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -210,7 +210,7 @@
       "slug": "facetwp",
       "name": "FacetWP",
       "documentation_url": "https://facetwp.com/help-center/",
-      "last_scraped": "2026-06-14T04:32:08.549Z",
+      "last_scraped": "2026-06-14T04:32:08.548Z",
       "page_count": 0,
       "categories": []
     },
@@ -260,7 +260,7 @@
       "slug": "fluent-forms-pro-add-on-pack",
       "name": "Fluent Forms Pro Add On Pack",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-06-13T08:36:51.358Z",
+      "last_scraped": "2026-06-13T08:36:51.357Z",
       "page_count": 0,
       "categories": []
     },
@@ -401,7 +401,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-06-13T08:37:31.048Z",
+      "last_scraped": "2026-06-13T08:37:31.047Z",
       "page_count": 0,
       "categories": []
     },
@@ -757,7 +757,7 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-12T08:53:42.214Z",
+      "last_scraped": "2026-06-12T08:53:42.213Z",
       "page_count": 0,
       "categories": []
     },
@@ -765,7 +765,7 @@
       "slug": "kadence-custom-fonts",
       "name": "Kadence Custom Fonts",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-13T08:38:03.299Z",
+      "last_scraped": "2026-06-13T08:38:03.298Z",
       "page_count": 0,
       "categories": []
     },
@@ -813,7 +813,7 @@
       "slug": "launchflows",
       "name": "LaunchFlows",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-06-14T03:14:38.368Z",
+      "last_scraped": "2026-06-14T03:14:38.367Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
@@ -970,7 +970,7 @@
       "slug": "preview-e-mails-for-woocommerce",
       "name": "Preview E-mails for WooCommerce",
       "documentation_url": "https://wordpress.org/plugins/woo-preview-emails/",
-      "last_scraped": "2026-06-14T01:48:44.456Z",
+      "last_scraped": "2026-06-14T01:48:44.454Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -980,7 +980,7 @@
       "slug": "product-filters-for-woocommerce",
       "name": "Product Filters for WooCommerce",
       "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
-      "last_scraped": "2026-06-12T08:51:31.715Z",
+      "last_scraped": "2026-06-12T08:51:31.714Z",
       "page_count": 0,
       "categories": []
     },
@@ -1031,7 +1031,7 @@
       "slug": "searchwp",
       "name": "SearchWP",
       "documentation_url": "https://searchwp.com/documentation/",
-      "last_scraped": "2026-06-14T00:28:25.273Z",
+      "last_scraped": "2026-06-14T00:28:25.271Z",
       "page_count": 57,
       "categories": [
         "uncategorized"
@@ -1325,7 +1325,7 @@
       "slug": "wp-fusion-abandoned-cart-addon",
       "name": "WP Fusion - Abandoned Cart Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-14T01:54:23.340Z",
+      "last_scraped": "2026-06-14T01:54:23.328Z",
       "page_count": 483,
       "categories": [
         "abandoned-cart-tracking",
@@ -1448,8 +1448,8 @@
       "slug": "wp-fusion-event-tracking-addon",
       "name": "WP Fusion - Event Tracking Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-07T04:31:50.591Z",
-      "page_count": 482,
+      "last_scraped": "2026-06-14T04:32:12.199Z",
+      "page_count": 483,
       "categories": [
         "abandoned-cart-tracking",
         "actions",
@@ -1593,7 +1593,7 @@
       "slug": "wp-social-ninja",
       "name": "WP Social Ninja",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-06-14T01:50:18.439Z",
+      "last_scraped": "2026-06-14T01:50:18.438Z",
       "page_count": 0,
       "categories": []
     },
@@ -1609,7 +1609,7 @@
       "slug": "wpfusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-14T00:55:15.610Z",
+      "last_scraped": "2026-06-14T00:55:15.595Z",
       "page_count": 483,
       "categories": [
         "abandoned-cart-tracking",
