@@ -10,7 +10,7 @@
 
 ### #1 Plataforma de eventos, venta de entradas y reservas para WooCommerce
 				# Venda entradas para sus eventos, locales y servicios reservables como un profesional.
-				## Unirse a 10.000 clientes satisfechos de FooEvents y añada funcionalidad de eventos, venta de entradas y reservas a su sitio web WordPress. Venda entradas ilimitadas para WooCommerce directamente desde su sitio web y gestione inscripciones para eventos físicos, virtuales o híbridos, sin necesidad de conocimientos técnicos.
+				## Unirse a 16 000 clientes satisfechos de FooEvents y añada funcionalidad de eventos, venta de entradas y reservas a su sitio web WordPress. Venda entradas ilimitadas para WooCommerce directamente desde su sitio web y gestione inscripciones para eventos físicos, virtuales o híbridos, sin necesidad de conocimientos técnicos.
 				[¡Consigue FooEvents ahora!](https://www.fooevents.com/es/precios/)
 				Sin comisiones NI gastos de entrada.
 				![Cómo vender entradas Woocommerce](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
@@ -62,7 +62,7 @@ FooEvents es un plugin excelente. **Lo uso para vender mis clases de hobby en mi
 				![Fooevents Check-Ins Apps](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### Check-ins Apps
 				#### Gestione el acceso con nuestras aplicaciones GRATUITAS de facturación móvil
-				No hay necesidad de llevar un portapapeles torpe o matar árboles cuando se puede gestionar con elegancia los registros con nuestras aplicaciones gratuitas y fáciles de usar iOS y Android. La aplicación FooEvents Check-ins te proporciona las herramientas para gestionar el acceso a tu evento como un profesional, ¡e incluso funciona cuando se cae Internet!
+				Gestiona el acceso a los eventos de forma rápida y profesional con la aplicación gratuita FooEvents Check-ins. Se utiliza para registrarse **23,444,132** asistentes, la aplicación facilita la validación de entradas, el seguimiento de la asistencia y el movimiento de tu entrada.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Explorar aplicaciones](https://www.fooevents.com/es/caracteristicas/aplicaciones/)

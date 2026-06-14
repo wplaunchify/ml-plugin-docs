@@ -10,7 +10,7 @@
 
 ### La piattaforma di eventi, biglietteria e prenotazioni #1 per WooCommerce
 				# Vendete biglietti per i vostri eventi, luoghi e servizi prenotabili come un professionista!
-				## Unisciti a noi 10.000 clienti FooEvents soddisfatti e aggiungete al vostro sito web WordPress funzionalità per eventi, biglietteria e prenotazioni. Vendete un numero illimitato di biglietti WooCommerce direttamente dal vostro sito e gestite le iscrizioni per eventi fisici, virtuali o ibridi, senza bisogno di competenze tecniche.
+				## Unisciti a noi 16.000 clienti soddisfatti di FooEvents e aggiungete al vostro sito web WordPress funzionalità per eventi, biglietteria e prenotazioni. Vendete un numero illimitato di biglietti WooCommerce direttamente dal vostro sito e gestite le iscrizioni per eventi fisici, virtuali o ibridi, senza bisogno di competenze tecniche.
 				[Ottenete ora FooEvents!](https://www.fooevents.com/it/determinazione-dei-prezzi/)
 				Nessuna commissione o costo del biglietto.
 				![Come vendere biglietti su Woocommerce](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
@@ -62,7 +62,7 @@ FooEvents è un plugin eccellente. **Lo utilizzo per vendere i miei corsi di hob
 				![App Fooevents Check-Ins](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### App di check-in
 				#### Gestite l'accesso con le nostre app gratuite per il check-in mobile
-				Non c'è bisogno di portarsi dietro una goffa cartellina o di uccidere alberi quando è possibile gestire in modo elegante i check-in con le nostre app iOS e Android, gratuite e facili da usare. L'app FooEvents Check-ins vi fornisce gli strumenti per gestire l'accesso al vostro evento come un professionista e funziona anche quando internet non funziona!
+				Gestisci gli accessi agli eventi in modo rapido e professionale con l'app gratuita FooEvents Check-ins. Utilizzabile per effettuare il check-in **23,444,132** partecipanti, l'app semplifica la convalida dei biglietti, il monitoraggio delle presenze e mantiene il tuo ingresso fluido.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Esplora le applicazioni](https://www.fooevents.com/it/caratteristiche-2/applicazioni/)
