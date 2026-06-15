@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T09:40:33.192Z",
+  "last_updated": "2026-06-15T09:40:52.379Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -725,7 +725,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-06-14T09:09:07.648Z",
+      "last_scraped": "2026-06-15T09:40:49.975Z",
       "page_count": 0,
       "categories": []
     },
@@ -1237,7 +1237,7 @@
       "slug": "wp-all-import-acf-add-on-free",
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-15T09:40:33.192Z",
+      "last_scraped": "2026-06-15T09:40:33.187Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
