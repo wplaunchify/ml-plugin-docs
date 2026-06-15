@@ -4153,7 +4153,7 @@ This will let you input a URL to download the file from. This URL should point d
 
 You'll know it's working when you're prompted to download/save the file as soon as the URL is opened in a browser.
 
-If your file is protected by HTTP protection, you can follow this guide: [Password Protected Files](https://www.wpallimport.com/documentation/password-protected-files/).
+If your file is protected by HTTP protection, you can follow this guide: [Password Protected Files](https://www.wpallimport.com/documentation/password-protected-files/). If you run into timeouts when downloading a file, see [File Download Time Limit](#file-download-time-limit) below.
 
 ### From FTP/SFTP
 
@@ -4209,6 +4209,10 @@ Importing data from a Google Sheet is simple. Here's what to do:
 
 ![Download a File From URL by Using Google Sheet](https://www.wpallimport.com/wp-content/uploads/2026/05/Download-a-File-From-URL-by-Using-Google-Sheet-1024x792.png)
 
+## File Download Time Limit
+
+If you're running into timeouts when downloading files from URL, you can change the **File Download Time Limit** option in **All Import** > **Settings** to allow files that take longer to download before timing out. The download is still beholden to server level timeouts, so it should be set lower than your server's PHP max execution time limit. Default is 5 seconds.
+
 ## Related Docs
 
 Quickstart guide explaining how to import into WordPress using WP All Import.
@@ -4235,7 +4239,7 @@ The stored hash becomes invalidated whenever the import template or settings cha
 
 This option is enabled out of the box. For example, when importing WordPress posts:
 
-![Skip Record If Data Has Not Changed In Import File](https://www.wpallimport.com/wp-content/uploads/2023/08/Skip-Record-If-Data-Has-Not-Changed-In-Import-File-1024x517.jpg)
+![Skip Record If Data In This Import File Has Not Changed](https://www.wpallimport.com/wp-content/uploads/2026/06/Skip-Record-If-Data-In-This-Import-File-Has-Not-Changed-1024x645.png)
 
 ## Quick Considerations When Using This Option
 
@@ -36983,7 +36987,7 @@ Provides instructions on how to run PHP code during the import.
 
 **Source:** [https://www.wpallimport.com/documentation/manual-record-matching/](https://www.wpallimport.com/documentation/manual-record-matching/)
 
-To update existing WordPress data, create an import via **All Import › New Import**. Provide your import file, choose the required post type, then select **Existing Items** to match with existing records.
+To update existing WordPress data, create an import via **All Import › New Import**. Provide your import file, choose the required post type, map the field to update and then select **Existing Items** in the settings to match with existing records.
 
 ## Table of Contents
 
@@ -37026,37 +37030,35 @@ I’ve entered the MLS number of each property in my theme. This means we can us
 
 ## Step 2: Set Up Existing Items Import
 
-To create the import, navigate to **All Import › New Import**, upload your CSV file in Step 1, choose **Existing Items**, and select **Property Listings**.
+To create the import, navigate to **All Import › New Import**, upload your CSV file in Step 1 and select **Property Listings**.
 
-![Step 1 Existing Items](https://www.wpallimport.com/wp-content/uploads/2020/02/step-1-merge-1024x536.png)
+![Manual Record Matching Step 1 Create New Import](https://www.wpallimport.com/wp-content/uploads/2026/06/Manual-Record-Matching-Step-1-Create-New-Import-1024x592.png)
 
-Click **Continue to Step 2**.
+Click **Set Up Import**.
 
 ## Step 3: Fill In Data to Update in the Import Template
 
-In Step 2 (of the import process), click **Continue to Step 3**.
-
-In Step 3, set the price custom field to the price from your file.
+In here, you set the price custom field to the price from your file.
 
 ![Setting the price](https://www.wpallimport.com/wp-content/uploads/2020/02/setting-the-price.jpg)
 
 The only field we want to import data to is the price, so leave all the other fields blank. WP All Import will warn you that your post title and content are blank, but that’s fine — you can continue anyway.
 
-Click **Continue to Step 4** at the bottom.
+Click **Continue to Import Settings** at the bottom.
 
 ## Step 4: Specify Important Import Settings
 
 Now it’s time for the most important part — telling WP All Import how to match the records in our CSV file with the existing property listings already on our site. We’re going to match by the MLS number since we have the MLS number both on our site and in our import file.
 
+First, you need to choose the **Existing items** option. We're updating Property Listings, so the option says: **Attempt to match to existing Property Listings before creating new ones**
+
+![Attempt to Match Existing Manual Record Matching](https://www.wpallimport.com/wp-content/uploads/2026/06/Attempt-to-Match-Existing-Manual-Record-Matching-1024x700.png)
+
 ### Define How to Match with Existing Data
 
-Choose to match based on **Custom field** and click the **Name** box to see a dropdown list of custom fields available to match by. Then choose **mls_value** — the custom field name the theme uses internally for the MLS field. You can also manually type in the custom field name.
+Proceed to choose to match based on **Custom field** and click the **Name** box to see a dropdown list of custom fields available to match by. Then choose **mls_value** — the custom field name the theme uses internally for the MLS field. You can also manually type in the custom field name. Next, drag & drop the MLS column in your CSV file to the **Value** textbox:
 
-![Record Matching](https://www.wpallimport.com/wp-content/uploads/2020/02/matching-by-mls-number.png)
-
-Next, drag & drop the MLS column in your CSV file to the **Value** textbox:
-
-![MLS Value](https://www.wpallimport.com/wp-content/uploads/2020/02/mls-and-value.jpg)
+![Match by MLS Number Custom Field](https://www.wpallimport.com/wp-content/uploads/2026/06/Match-by-MLS-Number-Custom-Field-1024x299.png)
 
 For each record in your file, our plugin will look for a property on your site with a mls_value custom field that equals the same as {mlsno[1]} from your file, and then import the price to it.
 
@@ -37066,7 +37068,7 @@ If you have multiple records or properties with this same value, only the first 
 
 To ensure our plugin only imports the price and doesn’t overwrite the title, content, and other fields that we left empty, specify which data points to update and which to ignore. For this example, we are updating only the price_value custom field:
 
-![Choose which data to update](https://www.wpallimport.com/wp-content/uploads/2020/02/choose-which-data-to-update1.png)
+![Select What Field to Update Manual Record Matching](https://www.wpallimport.com/wp-content/uploads/2026/06/Select-What-Field-to-Update-Manual-Record-Matching-988x1024.png)
 
 If the custom field to update doesn't appear in the dropdown list, you can type it in and hit Return/Enter to add it.
 
@@ -37074,7 +37076,7 @@ This step is very important. If you choose to update all data without having dat
 
 Once everything is set up, click **Continue** and then **Confirm & Run Import**.
 
-After running the import, here’s the result: our three posts were updated with the new prices.
+After running the import, here’s the result: our three records were updated with the new prices.
 
 ![Import Summary](https://www.wpallimport.com/wp-content/uploads/2020/02/reduced-prices-1024x199.png)
 
