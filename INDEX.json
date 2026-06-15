@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T09:38:42.339Z",
+  "last_updated": "2026-06-15T09:39:12.266Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -164,7 +164,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-06-14T23:27:05.608Z",
+      "last_scraped": "2026-06-14T23:27:05.607Z",
       "page_count": 0,
       "categories": []
     },
@@ -260,7 +260,7 @@
       "slug": "fluent-forms-pro-add-on-pack",
       "name": "Fluent Forms Pro Add On Pack",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-06-15T09:38:42.339Z",
+      "last_scraped": "2026-06-15T09:38:42.338Z",
       "page_count": 0,
       "categories": []
     },
@@ -898,7 +898,7 @@
       "slug": "learndash-lms-certificate-builder",
       "name": "LearnDash LMS - Certificate Builder",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-06-14T09:03:54.400Z",
+      "last_scraped": "2026-06-15T09:39:11.315Z",
       "page_count": 0,
       "categories": []
     },
