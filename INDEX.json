@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T09:22:07.519Z",
+  "last_updated": "2026-06-16T09:25:21.111Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -210,7 +210,7 @@
       "slug": "facetwp",
       "name": "FacetWP",
       "documentation_url": "https://facetwp.com/help-center/",
-      "last_scraped": "2026-06-14T04:32:08.548Z",
+      "last_scraped": "2026-06-16T09:25:21.111Z",
       "page_count": 0,
       "categories": []
     },
