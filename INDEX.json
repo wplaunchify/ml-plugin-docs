@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T09:20:08.513Z",
+  "last_updated": "2026-06-16T09:20:54.823Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -64,7 +64,7 @@
       "slug": "affiliatewp-custom-affiliate-slugs",
       "name": "AffiliateWP - Custom Affiliate Slugs",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-15T09:41:30.837Z",
+      "last_scraped": "2026-06-15T09:41:30.836Z",
       "page_count": 0,
       "categories": []
     },
@@ -172,7 +172,7 @@
       "slug": "customize-my-account-page-for-woocommerce",
       "name": "Customize My Account Page For Woocommerce",
       "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/documentation/",
-      "last_scraped": "2026-06-14T11:03:08.478Z",
+      "last_scraped": "2026-06-16T09:20:52.620Z",
       "page_count": 0,
       "categories": []
     },
@@ -1143,7 +1143,7 @@
       "slug": "woocommerce-stripe-gateway",
       "name": "WooCommerce Stripe Gateway",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-06-16T09:20:08.513Z",
+      "last_scraped": "2026-06-16T09:20:08.512Z",
       "page_count": 0,
       "categories": []
     },
