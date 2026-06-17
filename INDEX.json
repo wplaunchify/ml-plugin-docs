@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T09:12:07.143Z",
+  "last_updated": "2026-06-17T09:12:49.906Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -890,7 +890,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-06-14T05:39:29.816Z",
+      "last_scraped": "2026-06-17T09:12:49.906Z",
       "page_count": 0,
       "categories": []
     },
