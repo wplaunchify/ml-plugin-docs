@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20T08:32:39.416Z",
+  "last_updated": "2026-06-20T08:35:49.406Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1119,7 +1119,7 @@
       "slug": "woocommerce-anti-fraud",
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-06-14T11:03:06.016Z",
+      "last_scraped": "2026-06-20T08:35:49.406Z",
       "page_count": 0,
       "categories": []
     },
