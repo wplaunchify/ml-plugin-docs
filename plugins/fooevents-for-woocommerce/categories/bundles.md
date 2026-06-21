@@ -12,10 +12,7 @@
 				# Basic Bundle
 				## The FooEvents Basic Bundle is an entry-level bundle that includes the key plugins for selling tickets to your event. This is the perfect bundle if you have simple requirements and need to get up and running quickly.
 				[Try the demo](https://demo.fooevents.com/) | [Testimonials](https://www.fooevents.com/testimonials/)
-				[Single Domain $139](https://www.fooevents.com/?add-to-cart=4076)
-				[Multiple Domains (3) $199](https://www.fooevents.com/?add-to-cart=19134)
-				[Unlimited Domains $259](https://www.fooevents.com/?add-to-cart=19141)
-				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
+				[Buy Bundle $139](https://www.fooevents.com/?add-to-cart=4076)
 				## Included in this Bundle
 				Visit the **Features** section for a more detailed overview.
 				FooEvents for WooCommerce
@@ -41,6 +38,7 @@
 				### No Quibble Money-Back Guarantee
 
 We firmly stand behind our products and will gladly issue a 100% refund if requested within 14 days of original purchase date.
+				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**Billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 
 ---
 
@@ -52,10 +50,7 @@ We firmly stand behind our products and will gladly issue a 100% refund if reque
 				# Bookings Bundle
 				## The FooEvents Bookings Bundle includes all the FooEvents plugins required to add turnkey booking functionality to your website.
 				[Try the demo](https://demo.fooevents.com/product-category/bookings/) | [Testimonials](https://www.fooevents.com/testimonials/)
-				[Single Domain $169](https://www.fooevents.com/?add-to-cart=133461)
-				[Multiple Domains (3) $259](https://www.fooevents.com/?add-to-cart=133464)
-				[Unlimited Domains $349](https://www.fooevents.com/?add-to-cart=133465)
-				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
+				[Buy Bundle $169](https://www.fooevents.com/?add-to-cart=133461)
 				## Included in this Bundle
 				Visit the **Features** section for a more detailed overview.
 				FooEvents for WooCommerce
@@ -86,6 +81,7 @@ We firmly stand behind our products and will gladly issue a 100% refund if reque
 				### No Quibble Money-Back Guarantee
 
 We firmly stand behind our products and will gladly issue a 100% refund if requested within 14 days of original purchase date.
+				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**Billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 
 ---
 
@@ -97,10 +93,7 @@ We firmly stand behind our products and will gladly issue a 100% refund if reque
 				# Point of Sale Bundle
 				## The FooEvents Point of Sale Bundle includes all FooEvents plugins that are integrated with the FooEvents POS plugin.
 				[Try the demo](http://pos.fooevents.com/) or [View documentation](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-pos/)
-				[Single Domain $349](https://www.fooevents.com/?add-to-cart=162893)
-				[Multiple Domains (3) $469](https://www.fooevents.com/?add-to-cart=162895)
-				[Unlimited Domains $579](https://www.fooevents.com/?add-to-cart=162894)
-				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state. All purchase options are billed annually but you can cancel your subscription at any time. If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
+				[Buy Bundle $349](https://www.fooevents.com/?add-to-cart=162893)
 				## Included in this Bundle
 				Visit the **Features** section for a more detailed overview.
 				FooEvents for WooCommerce
@@ -139,6 +132,7 @@ We firmly stand behind our products and will gladly issue a 100% refund if reque
 				### No Quibble Money-Back Guarantee
 
 We firmly stand behind our products and will gladly issue a 100% refund if requested within 14 days of original purchase date.
+				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state. Billed annually but you can cancel your subscription at any time. If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 
 ---
 
@@ -150,10 +144,7 @@ We firmly stand behind our products and will gladly issue a 100% refund if reque
 				# Premium Bundle
 				## The FooEvents Premium Bundle is our top selling product for good reason. It includes the most popular FooEvents plugins and it represents the best value.
 				[Try the demo](https://demo.fooevents.com/) | [Testimonials](https://www.fooevents.com/testimonials/)
-				[Single Domain $199](https://www.fooevents.com/?add-to-cart=4070)
-				[Multiple Domains (3) $299](https://www.fooevents.com/?add-to-cart=19133)
-				[Unlimited Domains $399](https://www.fooevents.com/?add-to-cart=19138)
-				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
+				[Buy Bundle $199](https://www.fooevents.com/?add-to-cart=4070)
 				## Included in this Bundle
 				Visit the **Features** section for a more detailed overview.
 				FooEvents for WooCommerce
@@ -192,6 +183,7 @@ We firmly stand behind our products and will gladly issue a 100% refund if reque
 				### No Quibble Money-Back Guarantee
 
 We firmly stand behind our products and will gladly issue a 100% refund if requested within 14 days of original purchase date.
+				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**Billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 
 ---
 

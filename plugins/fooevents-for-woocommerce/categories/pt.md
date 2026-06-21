@@ -10,7 +10,7 @@
 
 ### A plataforma de eventos, bilhetes e reservas do #1 para o WooCommerce
 				# Venda bilhetes para os seus eventos, locais e serviços reserváveis como um profissional!
-				## Juntar-se a 16,000 happy FooEvents customers e adicione funcionalidades de eventos, emissão de bilhetes e reservas ao seu sítio Web WordPress. Venda ingressos ilimitados para o WooCommerce diretamente do seu site e gerencie inscrições para eventos físicos, virtuais ou híbridos - sem necessidade de conhecimentos técnicos.
+				## Juntar-se a 16 000 clientes satisfeitos da FooEvents e adicione funcionalidades de eventos, emissão de bilhetes e reservas ao seu sítio Web WordPress. Venda ingressos ilimitados para o WooCommerce diretamente do seu site e gerencie inscrições para eventos físicos, virtuais ou híbridos - sem necessidade de conhecimentos técnicos.
 				[Obter FooEvents Agora!](https://www.fooevents.com/pt/fixacao-de-precos/)
 				Sem comissões OU taxas de bilhetes.
 				![Como vender bilhetes Woocommerce](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
@@ -62,7 +62,7 @@ FooEvents é um excelente plugin. **Utilizo-o para vender as minhas aulas de pas
 				![Apps de Check-Ins de Fooevents](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### Aplicações de check-ins
 				#### Gerir o acesso com as nossas aplicações móveis de check-in GRATUITAS
-				Gerencie o acesso a eventos de forma rápida e profissional com a aplicação gratuita FooEvents Check-ins. Utilizada para fazer o check-in **23,443,919** participantes, a aplicação facilita a validação de bilhetes, o acompanhamento da presença e a manutenção do fluxo de entrada.
+				Gerencie o acesso a eventos de forma rápida e profissional com a aplicação gratuita FooEvents Check-ins. Utilizada para fazer o check-in **23,452,348** participantes, a aplicação facilita a validação de bilhetes, o acompanhamento da presença e a manutenção do fluxo de entrada.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Explorar aplicações](https://www.fooevents.com/pt/caracteristicas/aplicacoes/)

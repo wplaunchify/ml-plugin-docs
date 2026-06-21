@@ -65,9 +65,7 @@
 				[Physiotherapy Session](https://demo.fooevents.com/product/physiotherapy-session/)
 				## License Overview
 				Save up to 70%when purchasing this extension as part of the[FooEvents Bookings Bundle](https://www.fooevents.com/bundles/bookings-bundle) OR [FooEvents Point of Sale Bundle](https://www.fooevents.com/bundles/point-of-sale-bundle/). You can also purchase theFooEvents Bookingsextensionseparately.
-				[Single Domain $69](https://www.fooevents.com/?add-to-cart=133238)
-				[Multiple Domains (3) $99](https://www.fooevents.com/?add-to-cart=133325)
-				[Unlimited Domains $119](https://www.fooevents.com/?add-to-cart=133324)
+				[Buy Plugin $69](https://www.fooevents.com/?add-to-cart=133238)
 				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 				## Included in your Purchase
 				Downloadable plugin files
@@ -112,10 +110,8 @@ Change the look of your calendar using our built-in calendar themes
 
 Automatically pull and push your events to Eventbrite!
 				## License Overview
-				Save up to 85%when purchasing this extension as part of a[FooEvents Bundle](https://www.fooevents.com/pricing/).You can also purchase support for the FooEvents Calendar extension separately.
-				[Single Domain $49](https://www.fooevents.com/?add-to-cart=4028)
-				[Multiple Domains (3) $69](https://www.fooevents.com/?add-to-cart=19128)
-				[Unlimited Domains $79](https://www.fooevents.com/?add-to-cart=19140)
+				Save up to 85%when purchasing this extension as part of a[FooEvents Bundle](https://www.fooevents.com/pricing/). You can also purchase support for the FooEvents Calendar extension separately.
+				[Buy Plugin $49](https://www.fooevents.com/?add-to-cart=4028)
 				*The FooEvents Calendar support license entitles you to 12 months of support for the FooEvents Calendar plugin from the date of purchase.**It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**Support licenses are non-refundable and support will not be provided for any other plugins with this license.*
 				## Technical Details
 				- [Minimum Server Requirements](https://help.fooevents.com/docs/topics/installation/minimum-requirements/)
@@ -175,9 +171,7 @@ Automatically pull and push your events to Eventbrite!
 				[eSports Live Streaming](https://demo.fooevents.com/product/esports-live-streaming/)
 				## License Overview
 				Save up to 85% when purchasing this extension as part of the [FooEvents Premium Bundle](https://www.fooevents.com/bundles/premium-bundle/) or [FooEvents Bookings Bundle](https://www.fooevents.com/bundles/bookings-bundle/). You can also purchase the FooEvents Custom Attendee Fields extension separately.
-				[Single Domain $49](https://www.fooevents.com/?add-to-cart=2942)
-				[Multiple Domains (3) $69](https://www.fooevents.com/?add-to-cart=19129)
-				[Unlimited Domains $79](https://www.fooevents.com/?add-to-cart=19139)
+				[Buy Plugin $49](https://www.fooevents.com/?add-to-cart=2942)
 				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 				## Included in your Purchase
 				Downloadable plugin files
@@ -224,9 +218,7 @@ Works on desktop and tablet devices.
 									Designed to work on desktops, tablets and mobile phones. This makes FooEvents Express Check-ins the ideal backup option for larger events.
 				## License Overview
 				Save up to 85%when purchasing this extension as part of the[FooEvents Premium Bundle](https://www.fooevents.com/bundles/premium-bundle/)or[FooEvents Basic Bundle](https://www.fooevents.com/bundles/basic-bundle/). You can also purchase theFooEvents Express Check-inextension separately.
-				[Single Domain $49](https://www.fooevents.com/?add-to-cart=861)
-				[Multiple Domains (3) $69](https://www.fooevents.com/?add-to-cart=19127)
-				[Unlimited Domains $79](https://www.fooevents.com/?add-to-cart=19136)
+				[Buy Plugin $49](https://www.fooevents.com/?add-to-cart=861)
 				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 				## Included in your Purchase
 				Downloadable plugin files
@@ -315,9 +307,7 @@ User-friendly documentation
 									We believe in the ‘pay it forward’ approach to business and life. As such, we offer registered Nonprofit Organizations (NPO) a 50% discount off the first year of your FooEvents license followed by standard annual renewal fees.
 				## License Overview
 				**Save up to 85%**when purchasing this core plugin as part of a [FooEvents Bundle](https://www.fooevents.com/pricing/).You can also purchase the FooEvents for WooCommerce pluginseparately.
-				[Single Domain $69](https://www.fooevents.com/?add-to-cart=254)
-				[Multiple Domains (3) $99](https://www.fooevents.com/?add-to-cart=19126)
-				[Unlimited Domains $119](https://www.fooevents.com/?add-to-cart=19135)
+				[Buy Plugin $69](https://www.fooevents.com/?add-to-cart=254)
 				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 				## Included in your Purchase
 				Downloadable plugin files
@@ -345,9 +335,7 @@ User-friendly documentation
 				This video gives a brief overview which shows how you can use the FooEvents Multi-day plugin to sell tickets to events that run longer than a day.
 				## License Overview
 				Save up to 85%when purchasing this extension as part of the[FooEvents Premium Bundle](https://www.fooevents.com/bundles/premium-bundle/)OR [FooEvents Point of Sale Bundle](https://www.fooevents.com/bundles/point-of-sale-bundle/).You can also purchase the FooEvents Multi-day extension separately.
-				[Single Domain $49](https://www.fooevents.com/?add-to-cart=10075)
-				[Multiple Domains (3) $69](https://www.fooevents.com/?add-to-cart=19130)
-				[Unlimited Domains $79](https://www.fooevents.com/?add-to-cart=19142)
+				[Buy Plugin $49](https://www.fooevents.com/?add-to-cart=10075)
 				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 				## Included in your Purchase
 				Downloadable plugin files
@@ -398,10 +386,8 @@ User-friendly documentation
 				
 									The PDF ticket is generated from an HTML template. With a little HTML knowledge you can customize the layout and design of the PDF ticket or you can download a FREE PDF Tickets Ready Theme!
 				## License Overview
-				Save up to 85%when purchasing this extension as part of a[FooEvents Bundle](https://www.fooevents.com/pricing/).You can also purchase the FooEvents PDF Tickets extension separately.
-				[Single Domain $49](https://www.fooevents.com/?add-to-cart=1100)
-				[Multiple Domains (3) $69](https://www.fooevents.com/?add-to-cart=19131)
-				[Unlimited Domains $79](https://www.fooevents.com/?add-to-cart=19137)
+				Save up to 85%when purchasing this extension as part of a[FooEvents Bundle](https://www.fooevents.com/pricing/). You can also purchase the FooEvents PDF Tickets extension separately.
+				[Buy Plugin $49](https://www.fooevents.com/?add-to-cart=1100)
 				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 				## Included in your Purchase
 				Downloadable plugin files
@@ -560,9 +546,7 @@ WooCommerce handles all the eCommerce functionality and payment processing in ex
 FooEvents POS complies with the EU’s General Data Protection Regulation (GDPR) for added peace of mind.
 				## License Overview
 				Save over 45%when purchasing this extension as part of the [FooEvents Point of Sale Bundle](https://www.fooevents.com/bundles/point-of-sale-bundle/). You can also purchase theFooEvents POSextensionseparately.
-				[Single Domain $199](https://www.fooevents.com/?add-to-cart=161749)
-				[Multiple Domains (3) $299](https://www.fooevents.com/?add-to-cart=161751)
-				[Unlimited Domains $399](https://www.fooevents.com/?add-to-cart=161750)
+				[Buy Plugin $199](https://www.fooevents.com/?add-to-cart=161749)
 				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 				## Included in your Purchase
 				Downloadable plugin files
@@ -600,9 +584,7 @@ more detailed information.
 				![Fooevents Seating 02](https://www.fooevents.com/wp-content/uploads/2021/02/fooevents-seating-02.png)
 				## License Overview
 				Save up to 85%when purchasing this extension as part of the[FooEvents Premium Bundle](https://www.fooevents.com/bundles/premium-bundle/)OR [FooEvents Point of Sale Bundle](https://www.fooevents.com/bundles/point-of-sale-bundle/).You can also purchase the FooEvents Seating extension separately.
-				[Single Domain $49](https://www.fooevents.com/?add-to-cart=30273)
-				[Multiple Domains (3) $69](https://www.fooevents.com/?add-to-cart=30367)
-				[Unlimited Domains $79](https://www.fooevents.com/?add-to-cart=30368)
+				[Buy Plugin $49](https://www.fooevents.com/?add-to-cart=30273)
 				*A license entitles you to 12 months of updates and support from the date of purchase. It can be used by you or a client and cannot be resold or redistributed in its original or modified state.**All purchase options are billed annually but you can cancel your subscription at any time.**If you’re unhappy with your purchase, we offer a 14 Day Money-Back Guarantee.*
 				## Included in your Purchase
 				Downloadable plugin files
