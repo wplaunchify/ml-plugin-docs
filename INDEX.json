@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T12:50:14.753Z",
+  "last_updated": "2026-06-21T13:33:04.321Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -218,7 +218,7 @@
       "slug": "featured-image-with-url",
       "name": "Featured Image with URL",
       "documentation_url": "https://wordpress.org/plugins/featured-image-with-url/",
-      "last_scraped": "2026-06-14T13:32:15.478Z",
+      "last_scraped": "2026-06-21T13:33:04.320Z",
       "page_count": 1,
       "categories": [
         "advanced"
