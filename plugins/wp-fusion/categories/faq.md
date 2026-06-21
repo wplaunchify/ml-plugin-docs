@@ -971,7 +971,27 @@ The version numbers are broken into three, and sometimes four parts. For example
 			top: 5px;
 			word-spacing: 2px;
 			color: #fff;
-		}#### #3.47.12 - 5/8/2026
+		}#### #3.47.13 - 6/17/2026
+
+- ✨ New Added a [Sublium Subscriptions integration](https://wpfusion.com/documentation/ecommerce/sublium-subscriptions/) with per-product subscription tagging, CRM field syncing, and support for the full subscription lifecycle — including free trials, renewal deduplication, and a sandbox-mode safeguard
+- ✨ New Added a native [Academy LMS integration](https://wpfusion.com/documentation/learning-management/academy-lms/) that applies tags when a user is enrolled in or completes a course or lesson, with a linked tag for automatic enrollment and un-enrollment from the CRM
+- ⚡️ Improved When a SliceWP affiliate is deleted, WP Fusion now syncs the linked contact and clears the affiliate's defunct fields in the CRM, syncing the affiliate status as "deleted" while leaving lifetime earnings and referral counts intact
+- ⚡️ Improved Dynamics 365 now detects an expired Azure client secret (AADSTS7000222) and returns an actionable message — update WP Fusion and clear PHP OPcache, then re-authorize — instead of a raw Azure error string
+- ⚡️ Improved MailerLite now honors the "Resubscribe" setting when updating existing contacts, re-subscribing previously unsubscribed contacts on update
+- ⚡️ Improved The tag migration tool used when switching CRMs now also remaps tags stored in WP Fusion's role-based access settings and Members plugin role meta
+- 🔧 Fixed Fixed HubSpot returning an "invalid or unknown list" error when WP Fusion created a new list, caused by the v3 API nesting the new list ID under a list object in the response
+- 🔧 Fixed Fixed errors that could occur when refreshing the HubSpot list ID migration
+- 🔧 Fixed Fixed text and multi-line text fields not being cleared in the CRM when their value was emptied — null values are now preserved through to the CRM as a clear instead of being silently dropped
+- 🔧 Fixed Fixed Mailchimp rejecting contact updates that contained an empty merge fields object
+- 🔧 Fixed Fixed WordPress admin page styling on the WP Fusion settings pages under WordPress 7.0
+- 🔧 Fixed Fixed a PHP warning from the access control "apply tags on view" feature when the global post was unavailable during script enqueue
+- 🔧 Fixed Fixed Paid Memberships Pro Member Info and Mailing Address fields not syncing to the CRM when saved from the admin member-edit screen
+- 🔧 Fixed Fixed a blank WP Fusion settings tab on LearnDash courses and quizzes, and the tab's fields being clipped in the block editor
+- 🔧 Fixed Fixed auto-login links and Customer.io syncing failing for email addresses containing a "+" character
+- 🔧 Fixed Fixed Event Espresso fields not syncing to the CRM when a registration was approved after payment
+- 🔧 Fixed Fixed Brevo double opt-in failing when the template ID was passed as a string instead of an integer
+
+#### #3.47.12 - 5/8/2026
 
 - ✨ New Added new "push" webhook action that lets a CRM trigger WP Fusion to push the user's WP meta to the CRM — the reverse of the existing update webhook. Supports an optional 
 ```
