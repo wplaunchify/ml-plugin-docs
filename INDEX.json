@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T11:05:59.677Z",
+  "last_updated": "2026-06-21T11:06:03.862Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -104,7 +104,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-21T11:00:42.447Z",
+      "last_scraped": "2026-06-21T11:00:42.446Z",
       "page_count": 0,
       "categories": []
     },
@@ -684,8 +684,8 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-06-14T11:01:36.956Z",
-      "page_count": 55,
+      "last_scraped": "2026-06-21T11:06:01.974Z",
+      "page_count": 56,
       "categories": [
         "about-us",
         "blog",
@@ -1571,7 +1571,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-06-21T11:05:59.677Z",
+      "last_scraped": "2026-06-21T11:05:59.675Z",
       "page_count": 5,
       "categories": [
         "bulk-increase-woocommerce-prices-percentage",

@@ -2,8 +2,8 @@
   "plugin_slug": "fooevents-seating",
   "plugin_name": "FooEvents Seating",
   "documentation_url": "https://www.fooevents.com",
-  "last_scraped": "2026-06-14T11:01:36.956Z",
-  "total_pages": 55,
+  "last_scraped": "2026-06-21T11:06:01.974Z",
+  "total_pages": 56,
   "failed_urls_count": 2,
   "sections": [
     {
@@ -235,7 +235,7 @@
       "slug": "my-account",
       "url": "https://www.fooevents.commy-account/",
       "file": "categories/my-account.md",
-      "page_count": 9,
+      "page_count": 10,
       "pages": [
         {
           "title": "My Account - FooEvents",
@@ -268,6 +268,10 @@
         {
           "title": "My Account - FooEvents",
           "url": "https://www.fooevents.com/my-account/orders/"
+        },
+        {
+          "title": "My Account - FooEvents",
+          "url": "https://www.fooevents.com/my-account/sites/"
         },
         {
           "title": "My Account - FooEvents",
