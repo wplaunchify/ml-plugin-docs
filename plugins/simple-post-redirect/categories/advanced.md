@@ -36,7 +36,7 @@ This section is intended for advanced users and developers only. They are presen
 
 Previous versions of plugins may not be secure or stable. They are not recommended for use on production websites.Please select a specific version to download.
 
-Development Version1.7.31.7.21.7.11.7 [Download](https://downloads.wordpress.org/plugin/simple-post-redirect.zip)
+Development Version1.7.41.7.31.7.21.7.11.7 [Download](https://downloads.wordpress.org/plugin/simple-post-redirect.zip)
 
 ---
 
