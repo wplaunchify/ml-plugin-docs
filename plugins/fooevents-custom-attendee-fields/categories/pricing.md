@@ -11,11 +11,7 @@
 ### 14-day Money Back Guarantee
 				# FooEvents Pricing
 				## Get access to the plugins you need based on your own unique requirements.
-No commission or ticket fees and no technical skills needed!  Choose an option below to get started:
-				Select number of domains:
-Single Domain License (1 Site)
-Multiple Domain License (3 Sites)
-Unlimited Domain License
+No commission or ticket fees and no technical skills needed!
 				### Point of Sale Bundle
 			
 			$									349
@@ -159,7 +155,7 @@ All these plugins can be purchased separately or as part of a discounted [FooEve
 							Do you offer technical support if I need help?
 					Yes, our support agents are distributed across different timezones and are always ready to help! Submit a [support ticket](https://help.fooevents.com/contact/) if you are experiencing a technical problem and we’ll be happy to assist.
 							Can I use FooEvents for client web sites?
-					Yes, we have created different licensing options which includes multiple and unlimited domains that web agencies and freelancers can purchase in order to implement FooEvents across multiple client sites.
+					Yes. You can purchase a separate license for each domain where you want to use FooEvents. Each license can be linked to a specific website, making it easy to manage FooEvents across multiple client sites.
 				## Why do our customers love FooEvents?
 				With over 16,000+ sites using FooEvents, it is the perfect solution for YOU. Here’s why smart business owners, designers, and developers love FooEvents!
 				### 

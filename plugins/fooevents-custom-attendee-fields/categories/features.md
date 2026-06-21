@@ -427,7 +427,28 @@ more detailed information.
 ### Print-Friendly PDF
 				# Download the FooEvents Features Fact Sheet
 				Do you need to convince your client or team that FooEvents is the best fit for your project? Or perhaps you just want to review what FooEvents can offer over a cup of coffee. The FooEvents Fact Sheet includes all our most popular features and is a handy guide to help you determine if FooEvents is the right platform for your needs.**Please complete the form below and you will immediately receive an email that includes a download link for the FooEvents Features Fact Sheet. If you haven’t received it within a few minutes, please check your spam or junk folder.**
-				[sibwp_form id=2]
+				![loader](https://www.fooevents.com/wp-includes/images/spinner.gif)
+				
+				
+                
+                
+                
+				English
+  German
+  Dutch
+  Spanish
+  Italian
+  Portuguese
+  French
+  Polish
+  Czech
+  Greek
+
+I want to receive news and promotions from FooEvents
+
+I agree to receive an email containing the download link and accept the [FooEvents Privacy Statement](https://www.fooevents.com/privacy-statement-us?cmplz_region_redirect=true)*
+
+We use Brevo as our marketing platform. By submitting this form you agree that the personal data you provided will be transferred to Brevo for processing in accordance with [Brevo’s Privacy Policy](https://www.brevo.com/en/legal/privacypolicy/).
 
 ---
 

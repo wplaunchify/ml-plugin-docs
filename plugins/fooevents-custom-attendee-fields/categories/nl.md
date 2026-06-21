@@ -10,7 +10,7 @@
 
 ### De #1 evenement, ticketing en boekingen platform voor WooCommerce
 				# Verkoop tickets voor je evenementen, locaties en boekbare diensten als een pro!
-				## Word lid over 16,000 happy FooEvents customers en voeg evenement, ticketing, en het boeken van functionaliteit toe aan uw WordPress website. Verkoop onbeperkt WooCommerce tickets direct vanaf uw site en het beheren van registraties voor fysieke, virtuele of hybride evenementen - geen technische vaardigheden nodig.
+				## Word lid over 16.000 tevreden FooEvents-klanten en voeg evenement, ticketing, en het boeken van functionaliteit toe aan uw WordPress website. Verkoop onbeperkt WooCommerce tickets direct vanaf uw site en het beheren van registraties voor fysieke, virtuele of hybride evenementen - geen technische vaardigheden nodig.
 				[Bestel nu FooEvents!](https://www.fooevents.com/nl/prijzen/)
 				Geen commissie OF ticketkosten.
 				![Hoe Woocommerce Tickets Verkopen](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
@@ -62,7 +62,7 @@ FooEvents is een uitstekende plugin. **Ik gebruik het om mijn hobbylessen op mij
 				![Fooevents Check-Ins Apps](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### Check-ins apps
 				#### Toegang beheren met onze GRATIS mobiele Check-in apps
-				Manage event access quickly and professionally with the free FooEvents Check-ins app. Used to check in **23,444,624** attendees, the app makes it easy to validate tickets, track attendance, and keep your entrance moving.
+				Beheer de toegang tot evenementen snel en professioneel met de gratis FooEvents Check-ins-app. Wordt gebruikt om in te checken **23,453,045** deelnemers, de app maakt het gemakkelijk om tickets te valideren, de aanwezigheid bij te houden en uw ingang soepel te laten verlopen.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Apps verkennen](https://www.fooevents.com/nl/functies/apps/)
