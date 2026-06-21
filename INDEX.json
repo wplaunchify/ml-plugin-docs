@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T20:28:00.322Z",
+  "last_updated": "2026-06-21T20:28:16.694Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -112,7 +112,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-06-21T18:42:25.666Z",
+      "last_scraped": "2026-06-21T18:42:25.665Z",
       "page_count": 0,
       "categories": []
     },
@@ -309,7 +309,7 @@
       "slug": "fluentaffiliate-pro",
       "name": "FluentAffiliate Pro",
       "documentation_url": "https://fluentaffiliate.com/docs/documentation/",
-      "last_scraped": "2026-06-21T19:31:35.021Z",
+      "last_scraped": "2026-06-21T19:31:35.020Z",
       "page_count": 0,
       "categories": []
     },
@@ -780,7 +780,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-14T20:25:24.514Z",
+      "last_scraped": "2026-06-21T20:28:14.965Z",
       "page_count": 0,
       "categories": []
     },
