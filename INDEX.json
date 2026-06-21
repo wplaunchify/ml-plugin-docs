@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T09:25:37.325Z",
+  "last_updated": "2026-06-21T09:26:19.963Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -16,7 +16,7 @@
       "slug": "admin-columns-pro",
       "name": "Admin Columns Pro",
       "documentation_url": "https://www.admincolumns.com",
-      "last_scraped": "2026-06-14T09:16:06.237Z",
+      "last_scraped": "2026-06-21T09:26:18.718Z",
       "page_count": 0,
       "categories": []
     },
@@ -24,7 +24,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-06-21T08:51:56.294Z",
+      "last_scraped": "2026-06-21T08:51:56.293Z",
       "page_count": 0,
       "categories": []
     },
@@ -130,7 +130,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-      "last_scraped": "2026-06-21T08:53:31.967Z",
+      "last_scraped": "2026-06-21T08:53:31.966Z",
       "page_count": 0,
       "categories": []
     },
@@ -228,7 +228,7 @@
       "slug": "fluent-boards-pro",
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-06-21T09:15:37.997Z",
+      "last_scraped": "2026-06-21T09:15:37.996Z",
       "page_count": 0,
       "categories": []
     },
@@ -409,7 +409,7 @@
       "slug": "fluentcommunity-pro",
       "name": "FluentCommunity Pro",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-06-21T09:23:04.507Z",
+      "last_scraped": "2026-06-21T09:23:04.506Z",
       "page_count": 0,
       "categories": []
     },
@@ -724,7 +724,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-06-21T09:18:41.274Z",
+      "last_scraped": "2026-06-21T09:18:41.273Z",
       "page_count": 0,
       "categories": []
     },
@@ -840,7 +840,7 @@
       "slug": "learndash",
       "name": "LearnDash",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-06-21T09:25:37.325Z",
+      "last_scraped": "2026-06-21T09:25:37.292Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
@@ -897,7 +897,7 @@
       "slug": "learndash-lms-certificate-builder",
       "name": "LearnDash LMS - Certificate Builder",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-06-21T09:12:58.675Z",
+      "last_scraped": "2026-06-21T09:12:58.674Z",
       "page_count": 0,
       "categories": []
     },
@@ -1481,7 +1481,7 @@
       "slug": "wp-fusion-logins-addon",
       "name": "WP Fusion - Logins Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-21T09:17:13.370Z",
+      "last_scraped": "2026-06-21T09:17:13.358Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
