@@ -10,7 +10,7 @@
 
 ### Η πλατφόρμα #1 Event, Ticketing & Bookings για WooCommerce
 				# Πουλήστε εισιτήρια για τις εκδηλώσεις σας, τους χώρους και τις υπηρεσίες με δυνατότητα κράτησης σαν επαγγελματίας!
-				## Ενταχθείτε πάνω από 16,000 happy FooEvents customers και να προσθέσετε λειτουργίες για εκδηλώσεις, εισιτήρια και κρατήσεις στον ιστότοπό σας WordPress. Πουλήστε απεριόριστα εισιτήρια WooCommerce απευθείας από τον ιστότοπό σας και διαχειριστείτε εγγραφές για φυσικές, εικονικές ή υβριδικές εκδηλώσεις - δεν απαιτούνται τεχνικές δεξιότητες.
+				## Ενταχθείτε πάνω από 16.000 ικανοποιημένοι πελάτες της FooEvents και να προσθέσετε λειτουργίες για εκδηλώσεις, εισιτήρια και κρατήσεις στον ιστότοπό σας WordPress. Πουλήστε απεριόριστα εισιτήρια WooCommerce απευθείας από τον ιστότοπό σας και διαχειριστείτε εγγραφές για φυσικές, εικονικές ή υβριδικές εκδηλώσεις - δεν απαιτούνται τεχνικές δεξιότητες.
 				[Αποκτήστε το FooEvents τώρα!](https://www.fooevents.com/el/%cf%84%ce%b9%ce%bc%ce%bf%ce%bb%cf%8c%ce%b3%ce%b7%cf%83%ce%b7/)
 				Δεν υπάρχει προμήθεια ή τέλη εισιτηρίων.
 				![Πώς να πουλήσετε εισιτήρια Woocommerce](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
@@ -62,7 +62,7 @@
 				![Fooevents Check-Ins Εφαρμογές](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### Εφαρμογές Check-ins
 				#### Διαχειριστείτε την πρόσβαση με τις ΔΩΡΕΑΝ εφαρμογές check-in για κινητά
-				Manage event access quickly and professionally with the free FooEvents Check-ins app. Used to check in **23,443,779** attendees, the app makes it easy to validate tickets, track attendance, and keep your entrance moving.
+				Διαχειριστείτε την πρόσβαση σε εκδηλώσεις γρήγορα και επαγγελματικά με τη δωρεάν εφαρμογή FooEvents Check-ins. Χρησιμοποιείται για την εγγραφή **23,452,202** επισκέπτες, η εφαρμογή διευκολύνει την επικύρωση εισιτηρίων, την παρακολούθηση της παρουσίας και τη διατήρηση της ροής στην είσοδο.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Εξερευνήστε εφαρμογές](https://www.fooevents.com/el/%cf%87%ce%b1%cf%81%ce%b1%ce%ba%cf%84%ce%b7%cf%81%ce%b9%cf%83%cf%84%ce%b9%ce%ba%ce%ac/%ce%b5%cf%86%ce%b1%cf%81%ce%bc%ce%bf%ce%b3%ce%ad%cf%82/)
