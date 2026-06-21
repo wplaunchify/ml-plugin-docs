@@ -4,6 +4,626 @@
 
 ---
 
+## Sublium Subscriptions
+
+**Source:** [https://wpfusion.com/documentation/ecommerce/sublium-subscriptions/](https://wpfusion.com/documentation/ecommerce/sublium-subscriptions/)
+
+### Overview
+
+WP Fusion integrates with [Sublium Subscriptions for WooCommerce](https://sublium.com) to automatically tag customers in your CRM based on their subscription status, and to sync subscription details to custom fields on their contact record.
+
+Sublium Subscriptions is a WooCommerce-native subscriptions plugin that supports standard, subscribe-and-save, and installment billing plans. WP Fusion’s integration mirrors the behavior of the WooCommerce Subscriptions integration, adapted to Sublium’s hook surface.
+
+For more information about the general WooCommerce options available with WP Fusion, see the [WooCommerce documentation](https://wpfusion.com/documentation/ecommerce/woocommerce/).
+
+### Requirements
+
+- WooCommerce (active)
+- Sublium Subscriptions for WooCommerce (active)
+
+### Product Setup
+
+While editing any WooCommerce product, navigate to the **Product data** panel and click the **WP Fusion** tab. WP Fusion adds a **Sublium Subscriptions** section inside this tab where you can configure tags to apply and remove based on subscription lifecycle events.
+
+![](https://wpfusion.com/wp-content/uploads/2026/06/Sublium_Subscriptions_-_Product_Settings-1-scaled.png)
+
+The section contains the following settings:
+
+- **Remove tags:** When checked, the tags specified in the product’s main *Apply tags when purchased* setting will be removed when the subscription enters an inactive status (cancelled, on-hold, overdue, unpaid, completed, or disputed).
+- **Remove on dispute:** Also strip the original apply tags when the subscription enters the Disputed status. This is off by default because disputes are often reversible.
+- **Paused:** Tags applied when the subscription is paused by the customer or admin. The customer is expected to resume later. Access tags are retained while paused.
+- **On hold:** Tags applied when the subscription is placed on hold.
+- **Overdue:** Tags applied when a renewal payment has failed and Sublium is still retrying (dunning in progress).
+- **Unpaid:** Tags applied when retries are exhausted and the subscription is no longer paid.
+- **Disputed:** Tags applied when a chargeback or dispute is filed against a renewal payment.
+- **Pending cancellation:** Tags applied when the customer has requested cancellation. Access continues until the billing period ends, so the main access tags are not removed at this point.
+- **Cancelled:** Tags applied when the subscription is fully cancelled and no longer renews.
+- **Completed:** Tags applied when a fixed-length subscription completes its scheduled term.
+- **Trial converted:** Tags applied when a free trial successfully converts to a paid subscription.
+- **Trial conversion failed:** Tags applied when the conversion charge at the end of a trial fails.
+- **Renewal succeeded:** Tags applied after every successful renewal payment.
+- **Payment failed:** Tags applied when a renewal payment fails after retries are exhausted.
+- **Payment recovered:** Tags applied when Sublium Pro recovers a previously failed payment via the one-click card update or dunning retry flow. When recovery occurs, the *Payment failed* tags are also automatically removed.
+
+### Subscription Status Behavior
+
+WP Fusion applies and removes tags according to the following rules when a Sublium subscription status changes:
+
+- When a subscription moves from **pending** to **active**, WP Fusion syncs subscription fields to the CRM but does not apply the product’s main *Apply tags when purchased* tags — those are applied by WP Fusion’s core WooCommerce integration when the parent order is placed.
+- When a subscription becomes **active** (or is re-activated after a previous non-active state), the main access tags are re-applied and all status-specific tags (on-hold, cancelled, etc.) are removed.
+- **Paused** and **Pending cancellation** are soft states: the customer retains their access tags. Only the specific status tags for those states are applied.
+- **Cancelled, Completed, On hold, Overdue, Unpaid,** and **Disputed** are removal states: when *Remove tags* is checked, the main access tags are removed. Disputed removal additionally requires *Remove on dispute* to be checked.
+- If a status change would remove access tags but the user has another active Sublium subscription to the same product, the change is ignored entirely and a notice is logged. Tags held by any other active subscription are also never removed, even when *Remove tags* is checked.
+- Renewal and payoff orders created by Sublium do not re-apply the parent purchase tags from the core WooCommerce integration. The 
+```
+order_type
+```
+
+ field (values: 
+```
+parent
+```
+
+, 
+```
+renewal
+```
+
+, 
+```
+payoff
+```
+
+, 
+```
+order_now
+```
+
+) is synced with each Sublium-linked order so CRM automations can branch on order type.
+
+### Free Trials
+
+Sublium’s trial period counts as an active subscription status. While a subscription is in the trialing state, WP Fusion applies the product’s main access tags — the same tags applied on initial activation. There is no separate “trialing” tag setting.
+
+When the trial period ends and Sublium attempts the first conversion charge:
+
+- If the charge **succeeds**, the *Trial converted* tags are applied.
+- If the charge **fails**, the *Trial conversion failed* tags are applied.
+
+Both outcomes are triggered by the 
+```
+sublium_wcs_subscription_trial_ended
+```
+
+ hook.
+
+### Syncing Meta Fields
+
+WP Fusion can sync Sublium subscription data to custom fields on the customer’s contact record in your CRM. These fields are available in the **Sublium Subscriptions** group under [WP Fusion › Settings › Contact Fields](https://wpfusion.com/documentation/getting-started/syncing-contact-fields/).
+
+![](https://wpfusion.com/wp-content/uploads/2026/06/Sublium_Subscriptions_-_Contact_Fields-1-scaled.png)
+
+The available fields (field group: **Sublium Subscriptions**) are:
+
+- **Subscription ID** (
+```
+sub_id
+```
+
+, int): The unique ID of the subscription.
+- **Status** (
+```
+sub_status
+```
+
+, text): The current subscription status slug (e.g. 
+```
+active
+```
+
+, 
+```
+cancelled
+```
+
+, 
+```
+paused
+```
+
+).
+- **Plan ID** (
+```
+sub_plan_id
+```
+
+, text): The Sublium plan ID associated with the subscription.
+- **Plan Type** (
+```
+sub_plan_type
+```
+
+, text): One of 
+```
+standard
+```
+
+, 
+```
+subscribe_save
+```
+
+, or 
+```
+installment
+```
+
+.
+- **Product Name(s)** (
+```
+sub_product_name
+```
+
+, text): The name(s) of the products on the subscription. Can be sent as a comma-separated string or mapped to a multiselect field.
+- **Product SKU(s)** (
+```
+sub_product_sku
+```
+
+, text): The SKU(s) of the products on the subscription.
+- **Start Date** (
+```
+sub_start_date
+```
+
+, date): The date the subscription was created.
+- **End Date** (
+```
+sub_end_date
+```
+
+, date): The scheduled end date, if applicable.
+- **Trial End Date** (
+```
+sub_trial_end_date
+```
+
+, date): The date the trial period is scheduled to end.
+- **Next Payment Date** (
+```
+sub_renewal_date
+```
+
+, date): The date of the next scheduled renewal. Updated after each successful payment.
+- **Last Payment Date** (
+```
+sub_last_payment_date
+```
+
+, date): The date of the most recent successful payment.
+- **Next Payment Value** (
+```
+sub_next_payment_value
+```
+
+, text): The amount the customer will be charged at the next renewal.
+- **Renewal Count** (
+```
+sub_renewal_count
+```
+
+, int): The number of successful renewals on this subscription.
+- **Payment Mode (live/sandbox)** (
+```
+sub_payment_mode
+```
+
+, text): Indicates whether the subscription was created in live or sandbox mode.
+- **Gateway** (
+```
+sub_gateway
+```
+
+, text): The payment gateway used for this subscription.
+
+Fields are synced on every status change, every successful renewal, and on payment failure. Terminal-state date fields (end date, trial end date, next payment date) are cleared in the CRM when they become irrelevant.
+
+For stores where customers may hold multiple concurrent subscriptions, WP Fusion also supports per-product fan-out variants. When a field mapping is saved with a key in the format 
+```
+{field_key}_{product_id}
+```
+
+ (e.g. 
+```
+sub_status_123
+```
+
+), WP Fusion populates that field specifically for product 123, allowing separate CRM fields for each subscription product.
+
+### Sandbox Mode
+
+When Sublium’s Sandbox Mode is active on your site, or when a subscription was originally created in sandbox mode, WP Fusion will skip all CRM updates for that subscription and log a notice in the [WP Fusion activity log](https://wpfusion.com/documentation/getting-started/activity-logs/). This prevents test data from polluting your production CRM.
+
+### Batch Operations
+
+WP Fusion includes two batch operations for Sublium Subscriptions. These can be found under **WP Fusion › Settings › Advanced › Batch Operations**.
+
+![](https://wpfusion.com/wp-content/uploads/2026/06/Sublium_Subscriptions_-_Batch_Operations-1-scaled.png)
+
+There are two options:
+
+- **Sublium subscription statuses:** Evaluates all existing Sublium subscriptions and applies or removes tags based on each subscription’s current status and the tags configured on the related product. Does not sync any custom fields.
+- **Sublium subscription meta:** Syncs the subscription field payload (status, dates, next payment value, plan type, etc.) for all subscriptions. Does not modify any tags.
+
+### Developer Resources
+
+#### wpf_sublium_subscription_status_apply_tags
+
+Filters the tags to apply when a Sublium subscription status changes.
+
+```
+add_filter( 'wpf_sublium_subscription_status_apply_tags', 'my_sublium_status_apply_tags', 10, 3 );
+
+/**
+ * Filter the tags applied on a Sublium subscription status change.
+ *
+ * @param array  $apply_tags   The tags to apply.
+ * @param string $status       The nice-name status slug (e.g. 'active', 'cancelled').
+ * @param object $subscription The Sublium subscription object.
+ * @return array
+ */
+function my_sublium_status_apply_tags( $apply_tags, $status, $subscription ) {
+	if ( 'cancelled' === $status ) {
+		$apply_tags[] = 456; // Add an extra tag on cancellation.
+	}
+	return $apply_tags;
+}
+```
+
+**Parameters:**
+
+- ```
+$apply_tags
+```
+
+ *(array)*: Tag IDs to apply.
+- ```
+$status
+```
+
+ *(string)*: The nice-name status slug.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+
+#### wpf_sublium_subscription_status_remove_tags
+
+Filters the tags to remove when a Sublium subscription status changes.
+
+```
+add_filter( 'wpf_sublium_subscription_status_remove_tags', 'my_sublium_status_remove_tags', 10, 3 );
+
+/**
+ * Filter the tags removed on a Sublium subscription status change.
+ *
+ * @param array  $remove_tags  The tags to remove.
+ * @param string $status       The nice-name status slug.
+ * @param object $subscription The Sublium subscription object.
+ * @return array
+ */
+function my_sublium_status_remove_tags( $remove_tags, $status, $subscription ) {
+	// Prevent removing a specific tag regardless of status change.
+	$remove_tags = array_diff( $remove_tags, array( 123 ) );
+	return $remove_tags;
+}
+```
+
+**Parameters:**
+
+- ```
+$remove_tags
+```
+
+ *(array)*: Tag IDs to remove.
+- ```
+$status
+```
+
+ *(string)*: The nice-name status slug.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+
+#### wpf_sublium_subscription_trial_apply_tags
+
+Filters the tags to apply when a Sublium trial ends (either successfully converted or failed).
+
+```
+add_filter( 'wpf_sublium_subscription_trial_apply_tags', 'my_sublium_trial_tags', 10, 3 );
+
+/**
+ * Filter tags applied when a Sublium trial ends.
+ *
+ * @param array  $apply_tags   Tags to apply.
+ * @param bool   $converted    True if the conversion charge succeeded; false if it failed.
+ * @param object $subscription The Sublium subscription object.
+ * @return array
+ */
+function my_sublium_trial_tags( $apply_tags, $converted, $subscription ) {
+	if ( $converted ) {
+		$apply_tags[] = 789; // Extra tag for successful conversions.
+	}
+	return $apply_tags;
+}
+```
+
+**Parameters:**
+
+- ```
+$apply_tags
+```
+
+ *(array)*: Tag IDs to apply.
+- ```
+$converted
+```
+
+ *(bool)*: 
+```
+true
+```
+
+ if the trial converted successfully.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+
+#### wpf_sublium_subscription_renewal_apply_tags
+
+Filters the tags to apply after a successful Sublium renewal payment.
+
+```
+add_filter( 'wpf_sublium_subscription_renewal_apply_tags', 'my_sublium_renewal_tags', 10, 3 );
+
+/**
+ * Filter tags applied after a successful Sublium renewal.
+ *
+ * @param array     $apply_tags   Tag IDs to apply.
+ * @param object    $subscription The Sublium subscription object.
+ * @param \WC_Order $order        The renewal order.
+ * @return array
+ */
+function my_sublium_renewal_tags( $apply_tags, $subscription, $order ) {
+	return $apply_tags;
+}
+```
+
+**Parameters:**
+
+- ```
+$apply_tags
+```
+
+ *(array)*: Tag IDs to apply.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+- ```
+$order
+```
+
+ *(\WC_Order)*: The renewal order.
+
+#### wpf_sublium_subscription_payment_failed_apply_tags
+
+Filters the tags to apply when a Sublium renewal payment fails after retries are exhausted.
+
+```
+add_filter( 'wpf_sublium_subscription_payment_failed_apply_tags', 'my_sublium_payment_failed_tags', 10, 3 );
+
+/**
+ * Filter tags applied on a failed Sublium renewal payment.
+ *
+ * @param array     $apply_tags   Tag IDs to apply.
+ * @param object    $subscription The Sublium subscription object.
+ * @param \WC_Order $order        The failed renewal order.
+ * @return array
+ */
+function my_sublium_payment_failed_tags( $apply_tags, $subscription, $order ) {
+	return $apply_tags;
+}
+```
+
+**Parameters:**
+
+- ```
+$apply_tags
+```
+
+ *(array)*: Tag IDs to apply.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+- ```
+$order
+```
+
+ *(\WC_Order)*: The failed renewal order.
+
+#### wpf_sublium_subscription_recovered_apply_tags
+
+Filters the tags to apply when a Sublium subscription’s previously failed payment is recovered.
+
+```
+add_filter( 'wpf_sublium_subscription_recovered_apply_tags', 'my_sublium_recovered_apply_tags', 10, 2 );
+
+/**
+ * Filter tags applied when a Sublium subscription is recovered.
+ *
+ * @param array  $apply_tags   Tags to apply.
+ * @param object $subscription The Sublium subscription object.
+ * @return array
+ */
+function my_sublium_recovered_apply_tags( $apply_tags, $subscription ) {
+	return $apply_tags;
+}
+```
+
+**Parameters:**
+
+- ```
+$apply_tags
+```
+
+ *(array)*: Tag IDs to apply.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+
+#### wpf_sublium_subscription_recovered_remove_tags
+
+Filters the tags to remove when a Sublium subscription’s previously failed payment is recovered. By default this removes the *Payment failed* tags configured on the product.
+
+```
+add_filter( 'wpf_sublium_subscription_recovered_remove_tags', 'my_sublium_recovered_remove_tags', 10, 2 );
+
+/**
+ * Filter tags removed when a Sublium subscription is recovered.
+ *
+ * @param array  $remove_tags  Tags to remove.
+ * @param object $subscription The Sublium subscription object.
+ * @return array
+ */
+function my_sublium_recovered_remove_tags( $remove_tags, $subscription ) {
+	return $remove_tags;
+}
+```
+
+**Parameters:**
+
+- ```
+$remove_tags
+```
+
+ *(array)*: Tag IDs to remove.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+
+#### wpf_sublium_subscription_sync_fields
+
+Filters the subscription field payload before it is pushed to the CRM. Use this to add, remove, or modify which fields are synced.
+
+```
+add_filter( 'wpf_sublium_subscription_sync_fields', 'my_sublium_sync_fields', 10, 2 );
+
+/**
+ * Filter the subscription data synced to the CRM.
+ *
+ * @param array  $update_data  The data array to push to the CRM.
+ * @param object $subscription The Sublium subscription object.
+ * @return array
+ */
+function my_sublium_sync_fields( $update_data, $subscription ) {
+	// Remove the start date from every sync after the initial activation.
+	if ( isset( $update_data['sub_renewal_count'] ) && $update_data['sub_renewal_count'] > 0 ) {
+		unset( $update_data['sub_start_date'] );
+	}
+	return $update_data;
+}
+```
+
+**Parameters:**
+
+- ```
+$update_data
+```
+
+ *(array)*: The field data to push to the CRM.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+
+#### wpf_sublium_product_subscription_active (action)
+
+Fires when a Sublium subscription becomes (or is re-confirmed) active for a given product. Fires once per product ID on the subscription.
+
+```
+add_action( 'wpf_sublium_product_subscription_active', 'my_sublium_product_active', 10, 2 );
+
+/**
+ * Fires when a Sublium subscription becomes active for a product.
+ *
+ * @param int    $product_id   The product on the subscription.
+ * @param object $subscription The Sublium subscription object.
+ */
+function my_sublium_product_active( $product_id, $subscription ) {
+	// Custom logic when a subscription for this product is activated.
+}
+```
+
+**Parameters:**
+
+- ```
+$product_id
+```
+
+ *(int)*: The WooCommerce product ID.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+
+#### wpf_sublium_product_subscription_inactive (action)
+
+Fires when a Sublium subscription becomes inactive for a given product. Fires for cancelled, completed, on-hold, overdue, unpaid, and disputed statuses. Does not fire for pending cancellation, as the customer still has access.
+
+```
+add_action( 'wpf_sublium_product_subscription_inactive', 'my_sublium_product_inactive', 10, 2 );
+
+/**
+ * Fires when a Sublium subscription becomes inactive for a product.
+ *
+ * @param int    $product_id   The product on the subscription.
+ * @param object $subscription The Sublium subscription object.
+ */
+function my_sublium_product_inactive( $product_id, $subscription ) {
+	// Custom logic when a subscription for this product is deactivated.
+}
+```
+
+**Parameters:**
+
+- ```
+$product_id
+```
+
+ *(int)*: The WooCommerce product ID.
+- ```
+$subscription
+```
+
+ *(object)*: The Sublium subscription object.
+
+---
+
 ## FluentCart
 
 **Source:** [https://wpfusion.com/documentation/ecommerce/fluentcart/](https://wpfusion.com/documentation/ecommerce/fluentcart/)

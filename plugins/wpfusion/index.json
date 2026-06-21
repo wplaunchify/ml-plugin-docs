@@ -2,8 +2,8 @@
   "plugin_slug": "wpfusion",
   "plugin_name": "WP Fusion",
   "documentation_url": "https://wpfusion.com/documentation/",
-  "last_scraped": "2026-06-14T00:55:15.595Z",
-  "total_pages": 483,
+  "last_scraped": "2026-06-21T00:56:48.386Z",
+  "total_pages": 484,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -419,8 +419,12 @@
       "slug": "ecommerce",
       "url": "https://wpfusion.com/documentation/ecommerce/",
       "file": "categories/ecommerce.md",
-      "page_count": 33,
+      "page_count": 34,
       "pages": [
+        {
+          "title": "Sublium Subscriptions",
+          "url": "https://wpfusion.com/documentation/ecommerce/sublium-subscriptions/"
+        },
         {
           "title": "FluentCart",
           "url": "https://wpfusion.com/documentation/ecommerce/fluentcart/"
