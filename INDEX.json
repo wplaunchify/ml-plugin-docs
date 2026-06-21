@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T12:44:25.313Z",
+  "last_updated": "2026-06-21T12:45:31.409Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -156,7 +156,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-06-14T12:44:19.920Z",
+      "last_scraped": "2026-06-21T12:45:31.409Z",
       "page_count": 0,
       "categories": []
     },
