@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T04:32:36.539Z",
+  "last_updated": "2026-06-21T04:32:43.000Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -80,7 +80,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-21T01:01:16.699Z",
+      "last_scraped": "2026-06-21T01:01:16.698Z",
       "page_count": 0,
       "categories": []
     },
@@ -180,7 +180,7 @@
       "slug": "debug-log-manager-tool",
       "name": "Debug Log Manager Tool",
       "documentation_url": "https://wordpress.org/plugins/debug-log-manager/",
-      "last_scraped": "2026-06-21T03:03:53.917Z",
+      "last_scraped": "2026-06-21T03:03:53.915Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -210,7 +210,7 @@
       "slug": "facetwp",
       "name": "FacetWP",
       "documentation_url": "https://facetwp.com/help-center/",
-      "last_scraped": "2026-06-16T09:25:21.110Z",
+      "last_scraped": "2026-06-21T04:32:41.307Z",
       "page_count": 0,
       "categories": []
     },
@@ -813,7 +813,7 @@
       "slug": "launchflows",
       "name": "LaunchFlows",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-06-21T03:14:41.247Z",
+      "last_scraped": "2026-06-21T03:14:41.245Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
@@ -970,7 +970,7 @@
       "slug": "preview-e-mails-for-woocommerce",
       "name": "Preview E-mails for WooCommerce",
       "documentation_url": "https://wordpress.org/plugins/woo-preview-emails/",
-      "last_scraped": "2026-06-21T01:50:47.471Z",
+      "last_scraped": "2026-06-21T01:50:47.470Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1031,7 +1031,7 @@
       "slug": "searchwp",
       "name": "SearchWP",
       "documentation_url": "https://searchwp.com/documentation/",
-      "last_scraped": "2026-06-21T00:28:50.082Z",
+      "last_scraped": "2026-06-21T00:28:50.080Z",
       "page_count": 57,
       "categories": [
         "uncategorized"
@@ -1318,7 +1318,7 @@
       "slug": "wp-fusion-abandoned-cart-addon",
       "name": "WP Fusion - Abandoned Cart Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-21T01:56:33.659Z",
+      "last_scraped": "2026-06-21T01:56:33.648Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
@@ -1441,7 +1441,7 @@
       "slug": "wp-fusion-event-tracking-addon",
       "name": "WP Fusion - Event Tracking Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-21T04:32:36.539Z",
+      "last_scraped": "2026-06-21T04:32:36.521Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
@@ -1586,7 +1586,7 @@
       "slug": "wp-social-ninja",
       "name": "WP Social Ninja",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-06-21T01:52:52.399Z",
+      "last_scraped": "2026-06-21T01:52:52.398Z",
       "page_count": 0,
       "categories": []
     },
@@ -1602,7 +1602,7 @@
       "slug": "wpfusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-21T00:56:48.402Z",
+      "last_scraped": "2026-06-21T00:56:48.386Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
