@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T17:31:29.732Z",
+  "last_updated": "2026-06-21T17:32:02.490Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -24,7 +24,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-06-21T08:51:56.293Z",
+      "last_scraped": "2026-06-21T17:32:00.759Z",
       "page_count": 0,
       "categories": []
     },
@@ -458,7 +458,7 @@
       "slug": "fluentforms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/documentation/",
-      "last_scraped": "2026-06-21T17:31:29.732Z",
+      "last_scraped": "2026-06-21T17:31:29.724Z",
       "page_count": 457,
       "categories": [
         "account-management",
@@ -913,7 +913,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-06-21T17:29:19.593Z",
+      "last_scraped": "2026-06-21T17:29:19.592Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1068,7 +1068,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-21T16:41:38.642Z",
+      "last_scraped": "2026-06-21T16:41:38.641Z",
       "page_count": 0,
       "categories": []
     },
@@ -1399,7 +1399,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-21T16:40:15.934Z",
+      "last_scraped": "2026-06-21T16:40:15.921Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
