@@ -512,13 +512,11 @@ If you have any further questions, concerns, or suggestions, please do not hesit
 
 **Source:** [https://fluentforms.com/docs/how-to-integrate-google-sheets-with-fluent-forms/](https://fluentforms.com/docs/how-to-integrate-google-sheets-with-fluent-forms/)
 
-**Fluent Forms**allows you to integrate with **Google Sheets** to manage and organize form responses efficiently. This article will guide you through integrating**Google Sheets**in **Fluent Forms**on your **WordPress Site**.
+**Fluent Forms**allows you to integrate with **Google Sheets** to manage and organize form responses efficiently. This article will guide you through integrating Google**Sheets**in **Fluent Forms**on your **WordPress Site**.
 
-> Remember, Google Sheets is the Premium Feature of the Fluent Forms Plugin. So, you need the Fluent Forms Pro plugin to integrate this.
+> Google Sheets is the Premium Feature of the Fluent Forms Plugin. So, you need the Fluent Forms Pro plugin to integrate this.
 
 ## Enabling Google Sheets Integration
-
-To learn how to enable Google Sheets integration, follow the steps with the screenshots below –
 
 First, go to **Integrations** from the **Fluent Forms Navbar**, search for **Google Sheets**through the search bar, and get the **Google Sheets**integration module.
 
@@ -534,25 +532,27 @@ Once you enable Google Sheets, you will be asked for the **Access Code** from yo
 
 ### Getting the Access Code from Google
 
-To learn how to get the Access Code from Google, follow the steps with screenshots below –
+To get the Access Code from Google, [click here](https://accounts.google.com/o/oauth2/auth?access_type=offline&approval_prompt=force&client_id=157785030834-7bkpc1olhgp9kd683c78dclei5elhoku.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Ffluentforms.com%2Fgapi%2F&response_type=code&scope=https%3A%2F%2Fspreadsheets.google.com%2Ffeeds%2F) and select the desired **Google Account** where your desired **Google Sheet**exists.
 
-To get the Access Code from Google, [click here](https://accounts.google.com/o/oauth2/auth?access_type=offline&approval_prompt=force&client_id=157785030834-7bkpc1olhgp9kd683c78dclei5elhoku.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Ffluentforms.com%2Fgapi%2F&response_type=code&scope=https%3A%2F%2Fspreadsheets.google.com%2Ffeeds%2F), and select the desired **Google Account** where your desired **Google Sheet**exists.
+![](https://fluentforms.com/wp-content/uploads/2025/06/access-google-account-1-scaled.webp)
 
-![](https://fluentforms.com/wp-content/uploads/2025/01/3.-Desired-gmail.webp)
+Then, click on the **Continue** button for next.
 
-Once you continue with the desired Google Account, it will take you to the **Fluent Forms Server** and generate an **Access Code**. Simply, copy the access code by clicking on the **Copy** button.
+![](https://fluentforms.com/wp-content/uploads/2025/06/continue-button-2-scaled.webp)
 
-![](https://fluentforms.com/wp-content/uploads/2025/01/4.-Copy-access-code.webp)
+Once you continue with the desired Google Account, it will take you to the **Fluent Forms Server** and generate an **Access Code**. Simply copy the access code by clicking on the **Copy** button.
+
+![](https://fluentforms.com/wp-content/uploads/2025/06/copy-code-1.webp)
 
 ## Connecting Google Sheets with Fluent Forms
 
-Return to the **Google Sheets**settings****page under the**Configure Integrations**tab of the **Global Settings**section from the **Fluent Forms** **Navbar**.
+Return to the **Google Sheets**settings page under the Configure**Integrations**tab of the **Global Settings**section from the **Fluent Forms** **Navbar**.
 
 Finally, paste the **access code**you copied from **Google**into the **Access Code** field, press the **Verify Code**button, and your **Google Sheet Integration** module will be enabled.
 
 ![](https://fluentforms.com/wp-content/uploads/2025/01/5.-Paste-code-scaled.webp)
 
-Now, you can see that the Google Sheet has been successfully connected to your **Fluent Forms**. You can disconnect it anytime by clicking the**Disconnect Google Sheet**button.
+Now, you can see that the Google Sheet has been successfully connected to your **Fluent Forms**. You can disconnect it anytime by clicking the Disconnect**Google Sheet**button.
 
 ![](https://fluentforms.com/wp-content/uploads/2025/01/6.-Disconnect-Goggle-Sheet-scaled.webp)
 
@@ -560,7 +560,7 @@ Now, you can see that the Google Sheet has been successfully connected to your *
 
 To learn how to integrate Google Sheets into any specific Form in Fluent Forms, follow the steps with the screenshots below –
 
-First, go to **Forms** from the **Fluent Forms Navbar**, **select**the**Desired Form**where you want to****integrate your**Google Sheets,**and****click the**Settings** button.
+First, go to **Forms** from the **Fluent Forms Navbar**, **select**the desired**Form**where you want tointegrate your**Google Sheets,**andclick the**Settings** button.
 
 > If you do not have any existing forms, read the Create a Form from Scratch or Create a Form using Templates documentation to create a new one.
 
