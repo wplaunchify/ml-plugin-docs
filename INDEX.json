@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T22:24:22.477Z",
+  "last_updated": "2026-06-21T22:24:55.641Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -788,7 +788,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-21T20:38:20.999Z",
+      "last_scraped": "2026-06-21T20:38:20.998Z",
       "page_count": 0,
       "categories": []
     },
@@ -1040,7 +1040,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-06-21T21:30:12.691Z",
+      "last_scraped": "2026-06-21T21:30:12.689Z",
       "page_count": 10,
       "categories": [
         "detective-mode",
@@ -1137,7 +1137,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-06-21T22:24:22.477Z",
+      "last_scraped": "2026-06-21T22:24:22.476Z",
       "page_count": 0,
       "categories": []
     },
@@ -1237,7 +1237,7 @@
       "slug": "wp-all-export-user-export-add-on-pro",
       "name": "WP All Export - User Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-21T21:27:47.767Z",
+      "last_scraped": "2026-06-21T21:27:47.766Z",
       "page_count": 0,
       "categories": []
     },
@@ -1245,7 +1245,7 @@
       "slug": "wp-all-import-acf-add-on-free",
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-21T20:33:36.858Z",
+      "last_scraped": "2026-06-21T20:33:36.853Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -1275,7 +1275,7 @@
       "slug": "wp-all-import-user-import-add-on-pro",
       "name": "WP All Import - User Import Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-18T09:06:27.246Z",
+      "last_scraped": "2026-06-21T22:24:53.522Z",
       "page_count": 198,
       "categories": [
         "uncategorized"

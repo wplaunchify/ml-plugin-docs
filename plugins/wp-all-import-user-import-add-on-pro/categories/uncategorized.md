@@ -3166,7 +3166,7 @@ These edit boxes will accept any of the following:
 
 ## Visual Steps to Import Custom Fields to WooCommerce Products
 
-![New WooCommerce Product Import](https://www.wpallimport.com/wp-content/uploads/2023/05/Import-Product-Attributes-in-Woocommerce-New-Import-1024x815.jpg)
+![Import Product Attributes in WooCommerce New Import Process](https://www.wpallimport.com/wp-content/uploads/2026/06/Import-Product-Attributes-in-WooCommerce-New-Import-Process-1024x669.png)
 
 ![Import Custom Fields to WooCommerce Products - Detect Custom Fields](https://www.wpallimport.com/wp-content/uploads/2024/01/image-1024x511.png)
 
@@ -3344,7 +3344,7 @@ function my_set_user_id( $post_id, $xml_node, $is_update ) {
 add_action( 'pmxi_saved_post', 'my_set_user_id', 10, 3 );
 ```
 
-![Import-WordPress-Users-New-Import-1](https://www.wpallimport.com/wp-content/uploads/2022/03/Import-WordPress-Users-New-Import-1-1024x755.jpg)
+![Import WordPress Users Create New Import](https://www.wpallimport.com/wp-content/uploads/2026/06/Import-WordPress-Users-Create-New-Import-1024x665.png)
 
 ![Import WordPress Users Confirm and Run](https://www.wpallimport.com/wp-content/uploads/2022/03/Import-WordPress-Users-Confirm-and-Run-1024x725.jpg)
 
@@ -3416,7 +3416,7 @@ Possible plugins include:
 
 ## Visual Steps to Import Multiple Images for a WooCommerce Variable Product
 
-![Import Products with Images New Import](https://www.wpallimport.com/wp-content/uploads/2023/04/Import-Products-with-Images-New-Import-1024x622.jpg)
+![Import Products with Images New Import](https://www.wpallimport.com/wp-content/uploads/2026/06/Import-Products-with-Images-New-Import-1024x665.png)
 
 ![Import Products with Images See Images Section](https://www.wpallimport.com/wp-content/uploads/2023/04/Import-Products-with-Images-See-Images-Section-1024x681.jpg)
 
@@ -3811,13 +3811,13 @@ The **Unique Identifier** is defined in Step 4 when setting up an import process
 
 To define it manually, drag an element or combo of elements to the box. The **Unique Identifier** should be unique for each record in the import file and should stay the same even if the import file is updated. Things like product IDs, titles, and SKUs are good unique identifiers because they probably won't change. Don't use a description or price, since that might change.
 
-![Unique Identifier Import Settings](https://www.wpallimport.com/wp-content/uploads/2023/09/Unique-Identifier-Import-Settings-1024x844.jpg)
+![Import Settings Unique Identifier](https://www.wpallimport.com/wp-content/uploads/2026/06/Import-Settings-Unique-Identifier-1024x604.png)
 
 If you run the import again with an updated file, the **Unique Identifier** allows WP All Import to correctly link the records in your updated file with the Posts created in the previous run. If multiple records in this import file have the same **Unique Identifier**, only the first will be created. The others will be detected as duplicates. Duplicates will be updated if that option is enabled.
 
-This is a **New Items** import. As such, if you run this import again, WP All Import will only try to update records that were created by this import. It will never update posts that were not created by this import, and it won't modify or delete previously imported Posts unless the **Update existing** or **Remove or modify** options are enabled in the import settings.
+This is a **Create new** import. As such, if you run this import again, WP All Import will only try to update records that were created by this import. It will never update posts that were not created by this import, and it won't modify or delete previously imported Posts unless the **Update existing** or **Remove or modify** options are enabled in the import settings.
 
-To match records in the import file to records that already exist on your site, select **Existing Items** in Step 1 instead. You can learn more about that here: [How to Update Existing WordPress Data](https://www.wpallimport.com/documentation/manual-record-matching/).
+To match records in the import file to records that already exist on your site, select **Match existing** in the **Import Settings**. You can learn more about that here: [How to Update Existing WordPress Data](https://www.wpallimport.com/documentation/manual-record-matching/).
 
 ![](https://www.wpallimport.com/wp-content/plugins/custom-acf-blocks/blocks/docs-interstitial/img/octopus-logo.svg)    
 ### Import Any CSV, XML, or Excel to WordPress
@@ -4603,7 +4603,7 @@ http://louis:znxah&jfja_@some-site.com/soflyy/feed.xml
 
 This is how it would look in WP All Import:
 
-![Password Protected File Example](https://www.wpallimport.com/wp-content/uploads/2023/08/Password-Protected-File-Example-1024x853.jpg)
+![](https://www.wpallimport.com/wp-content/uploads/2023/08/Example-Password-Protected-File-1024x786.png)
 
 To find out if your password-protected file is using HTTP authentication, just enter the URL to it with the username and password specified in the above format into your browser.
 
@@ -6486,7 +6486,7 @@ Once the code is in place, you can call it in the **Download a file › From URL
 
 See:
 
-![Client Mode for WP All Import Download a File](https://www.wpallimport.com/wp-content/uploads/2023/06/Client-Mode-for-WP-All-Import-Download-a-File-1024x849.jpg)
+![Client Mode in WP All Import Download a File](https://www.wpallimport.com/wp-content/uploads/2026/06/Client-Mode-in-WP-All-Import-Download-a-File-1024x871.png)
 
 #### 5. When a User Submits a Form Entry, Hit the Import Trigger URL.
 
@@ -6890,11 +6890,11 @@ Note, however, that there are many other ways of defining this data. For a compl
 3. When configuring the import, select the **I'm importing new variations to existing products** option in the **Variations** tab.
 4. Run the import and check that all new variations are present as expected.
 
-The **I'm importing new variations to existing products** option is available only in a **New Items** import, which is selected by default in the **Import Settings**. To match new variations with an existing variable parent product, use the product's title or any custom field. You can also use the **Create new product if no existing product is found** option to handle those situations.
+The **I'm importing new variations to existing products** option is available only in a **Create new** import, which is selected by default in the **Import Settings**. To match new variations with an existing variable parent product, use the product's title or any custom field. You can also use the **Create new product if no existing product is found** option to handle those situations.
 
 ### What is the Correct Way to Handle Variable Products?
 
-Variable products are stored in a specific manner. To avoid issues or damaging your products, you should have a master import that you can re-run and allows handling all products from a single master file. You should also use the **New Items** import type, as it's the only import type that can add/remove variations for variable products. This is already chosen by default in the **Import Settings**.
+Variable products are stored in a specific manner. To avoid issues or damaging your products, you should have a master import that you can re-run and allows handling all products from a single master file. You should also use the **Create new** import type, as it's the only import type that can add/remove variations for variable products. This is already chosen by default in the **Import Settings**.
 
 ### What Add-Ons Do I Need to Import WooCommerce Variable Products?
 
@@ -7432,7 +7432,7 @@ no
 
 ## Visual Steps to Import Product Attributes in WooCommerce
 
-![Import Product Attributes in Woocommerce New Import](https://www.wpallimport.com/wp-content/uploads/2023/05/Import-Product-Attributes-in-Woocommerce-New-Import-1024x815.jpg)
+![Import Product Attributes in WooCommerce New Import Process](https://www.wpallimport.com/wp-content/uploads/2026/06/Import-Product-Attributes-in-WooCommerce-New-Import-Process-1024x669.png)
 
 ![Import Product Attributes in Woocommerce Attribute Mapping](https://www.wpallimport.com/wp-content/uploads/2023/05/Import-Product-Attributes-in-Woocommerce-Attribute-Mapping-1024x563.jpg)
 
@@ -8064,7 +8064,7 @@ You can also schedule your imports manually by creating cron jobs on your server
 
 ## Visual Steps to Automatically Import Products into WooCommerce
 
-![Automatically Import Products WooCommerce New Import](https://www.wpallimport.com/wp-content/uploads/2023/05/Automatically-Import-Products-WooCommerce-New-Import-1024x698.jpg)
+![](https://www.wpallimport.com/wp-content/uploads/2026/06/Automatically-Import-Products-WooCommerce-New-Import-1024x783.png)
 
 ![Automatically Import Products WooCommerce Manage Imports](https://www.wpallimport.com/wp-content/uploads/2023/05/Automatically-Import-Products-WooCommerce-Manage-Imports-1024x741.jpg)
 
@@ -8080,7 +8080,7 @@ To schedule an automatic import on a daily basis, just select all days in the pr
 
 Fortunately, there are a set of options in the **Import Settings** screen that allow you to instruct WP All Import on exactly how to handle this situation. These include whether to create new records for new products, update existing products, or remove existing products if they are no longer in your import file.
 
-![Automatically Import Products WooCommerce Import Settings](https://www.wpallimport.com/wp-content/uploads/2023/05/Automatically-Import-Products-WooCommerce-Import-Settings-1024x644.jpg)
+![](https://www.wpallimport.com/wp-content/uploads/2026/06/Automatically-Import-WooCommerce-Products-Import-Settings-1024x583.png)
 
 ### What Add-Ons Do I Need to Import WooCommerce Products?
 
@@ -11992,29 +11992,29 @@ Describes how to import  WooCommerce reviews.
 
 **Source:** [https://www.wpallimport.com/documentation/import-types/](https://www.wpallimport.com/documentation/import-types/)
 
-**WP All Import** handles two distinctive import types: **New Items** and **Existing Items**. This is defined in Step 1 of the import process after uploading/downloading/choosing the import file. This article provides clear guidance on what each type is intended for. The import type can't be changed after it's chosen.
+**WP All Import** handles two distinctive import types: **Create new** and **Match existing**. This is defined in the **Import Settings** after mapping the import fields. This article provides clear guidance on what each type is intended for.
 
 ## A Description of Import Types
 
 We use WooCommerce products as an example, but the same definitions apply when importing other post types or custom post types via WP All Import.
 
-### New Items Import
+### 'Create new' Import
 
-![New Items Import Type](https://www.wpallimport.com/wp-content/uploads/2022/10/New-Items-Import-Type-1024x351.jpg)
+![Create new items Import Type](https://www.wpallimport.com/wp-content/uploads/2026/06/Create-new-items-Import-Type-1024x487.png)
 
 This is primarily used to create and manage products. It keeps internal track of the products that it imports, which means that it can later update/create/delete products as they're changed/added/removed in your import file (see: [Recurring Imports](http://www.wpallimport.com/documentation/recurring/update-import)). It's also the only import type that can add/remove variations to variable products.
 
-One limitation of **New Items** imports is that it cannot detect/update products that it didn't previously create. If you need to use a **New Items** import with a file that contains existing products, you can use WP All Import's API and custom code to prevent duplicates from being imported: [Do Not Create Products With Duplicate SKU](https://www.wpallimport.com/documentation/code-snippets/#do-not-create-products-with-duplicate-sku).
+One limitation of **Create new** imports is that it cannot detect/update products that it didn't previously create. If you need to use a **Create new** import with a file that contains existing products, you can use WP All Import's API and custom code to prevent duplicates from being imported: [Do Not Create Products With Duplicate SKU](https://www.wpallimport.com/documentation/code-snippets/#do-not-create-products-with-duplicate-sku).
 
-### Existing Items Import
+### 'Match existing' Import
 
-![Existing Items Import Type](https://www.wpallimport.com/wp-content/uploads/2022/10/Existing-Items-Import-Type-1024x348.jpg)
+![Match existing items Import Type](https://www.wpallimport.com/wp-content/uploads/2026/06/Match-existing-items-Import-Type-1024x524.png)
 
 This is primarily used to update specific data (e.g., stock/price) for products that already exist (created manually or by other imports). This import type can't maintain the relationship between parent products and their variations, so it can't be used to add variations to existing products.
 
 If you are updating product variations with this import type, you must match them by Post ID or a unique Custom Field value (as Title/Content won't work). Also, you should make extra sure that these data points are not being updated in the import settings:
 
-![Update Variable Products Options to Keep](https://www.wpallimport.com/wp-content/uploads/2022/10/Update-Variable-Products-Options-to-Keep-904x1024.jpg)
+![Options to Keep When Updating Variable Products](https://www.wpallimport.com/wp-content/uploads/2026/06/Options-to-Keep-When-Updating-Variable-Products-586x1024.png)
 
 ![](https://www.wpallimport.com/wp-content/plugins/custom-acf-blocks/blocks/docs-interstitial/img/octopus-logo.svg)    
 ### Import Any CSV, XML, or Excel to WordPress
@@ -12030,7 +12030,7 @@ If you are updating product variations with this import type, you must match the
 
 ## Examples of What Each Import Type Can or Can't Do
 
-### A New Items import can:
+### A 'Create new' Items import can:
 
 - Create products.
 - Update products that it created itself.
@@ -12038,24 +12038,32 @@ If you are updating product variations with this import type, you must match the
 - Delete *all* products from your site that aren't present in the import file (even when created manually or by a different import).
 - Set out of stock status for missing products (that it created itself previously).
 - Add new variations to existing products that were previously created by the import.
-- Add new variations to products created manually or by other imports (using the option: **I'm importing new variations to existing products** in the *WooCommerce Add-On › Variations* tab: [https://d.pr/i/DoJKHL](https://d.pr/i/DoJKHL)).
+- Add new variations to products created manually or by other imports (using the option: **I'm importing new variations to existing products** in the *WooCommerce Add-On › Variations* tab. See image below under **Advanced Topics**).
 
-### A New Items import can't:
+### A 'Create new' import can't:
 
 - Update products that it did not create (whether they were manually created or created by another import).
-- Reference the Unique Identifier for another import.
+- Reference the Unique Identifier for another **Create new** import.
 
-### An Existing Items import can:
+### An 'Match existing' import can:
 
 - Create new products (note: we do not recommend creating variable products with this import type as it's unreliable and can produce odd results. See the import type description above).
 - Update products that it did not create itself (since it does not reference an identifier of its own, but rather, matches records by Title, Content, Custom Field, or Post ID).
 - Delete products (that it created or updated itself previously) when they don't exist in the import file that is in use for the import.
 - Delete *all* products from your site that aren't present in the import file (using the **Remove or modify all WooCommerce products on this site that are not present in this import file** option).
 
-### An Existing Items import can't:
+### An 'Match existing' import can't:
 
-- Reference the Unique Identifier for another import (it is meant to match records by one of the four options mentioned above).
+- Reference the Unique Identifier for another **Create new** import (it is meant to match records by one of the four options mentioned above).
 - Add new variations to existing WooCommerce Variable Products.
+
+## Advanced Topics
+
+### I'm importing new variations to existing products
+
+This option allows adding new variations to products created manually or by other imports by using the option: **I'm importing new variations to existing products** in the *WooCommerce Add-On › Variations* tab.
+
+![Import New Variations Into Existing Products](https://www.wpallimport.com/wp-content/uploads/2026/06/Import-New-Variations-Into-Existing-Products-1024x656.png)
 
 ## Related Docs
 
