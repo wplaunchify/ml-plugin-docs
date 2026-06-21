@@ -150,6 +150,24 @@
 
 ## My Account - FooEvents
 
+**Source:** [https://www.fooevents.com/my-account/sites/](https://www.fooevents.com/my-account/sites/)
+
+## Login
+
+		Username or email address *Required
+
+			Password *Required
+
+			
+			Remember me
+								Log in
+
+			[Lost your password?](https://www.fooevents.com/my-account/lost-password/)
+
+---
+
+## My Account - FooEvents
+
 **Source:** [https://www.fooevents.com/my-account/subscriptions//](https://www.fooevents.com/my-account/subscriptions//)
 
 ## Login
