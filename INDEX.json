@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T17:36:59.414Z",
+  "last_updated": "2026-06-21T17:37:17.674Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -442,7 +442,7 @@
       "slug": "fluentcrm-marketing-automation-for-wordpress",
       "name": "FluentCRM - Marketing Automation For WordPress",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-06-21T17:35:44.548Z",
+      "last_scraped": "2026-06-21T17:35:44.547Z",
       "page_count": 0,
       "categories": []
     },
@@ -832,7 +832,7 @@
       "slug": "launchkit-pro",
       "name": "LaunchKit Pro",
       "documentation_url": "https://wplaunchify.com/documentation/",
-      "last_scraped": "2026-06-16T09:21:30.548Z",
+      "last_scraped": "2026-06-21T17:37:15.684Z",
       "page_count": 0,
       "categories": []
     },
@@ -933,7 +933,7 @@
       "slug": "ninja-tables-easy-data-table-builder",
       "name": "Ninja Tables – Easy Data Table Builder",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-06-21T17:36:59.414Z",
+      "last_scraped": "2026-06-21T17:36:59.413Z",
       "page_count": 0,
       "categories": []
     },
