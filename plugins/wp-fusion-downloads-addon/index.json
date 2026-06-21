@@ -2,8 +2,8 @@
   "plugin_slug": "wp-fusion-downloads-addon",
   "plugin_name": "WP Fusion - Downloads Addon",
   "documentation_url": "https://wpfusion.com/documentation/",
-  "last_scraped": "2026-06-14T17:32:44.326Z",
-  "total_pages": 483,
+  "last_scraped": "2026-06-21T17:35:00.677Z",
+  "total_pages": 484,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -419,8 +419,12 @@
       "slug": "ecommerce",
       "url": "https://wpfusion.com/documentation/ecommerce/",
       "file": "categories/ecommerce.md",
-      "page_count": 33,
+      "page_count": 34,
       "pages": [
+        {
+          "title": "Sublium Subscriptions",
+          "url": "https://wpfusion.com/documentation/ecommerce/sublium-subscriptions/"
+        },
         {
           "title": "FluentCart",
           "url": "https://wpfusion.com/documentation/ecommerce/fluentcart/"
