@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T10:17:25.183Z",
+  "last_updated": "2026-06-21T10:18:38.545Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -979,7 +979,7 @@
       "slug": "product-filters-for-woocommerce",
       "name": "Product Filters for WooCommerce",
       "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
-      "last_scraped": "2026-06-17T09:12:07.142Z",
+      "last_scraped": "2026-06-21T10:18:38.545Z",
       "page_count": 0,
       "categories": []
     },
