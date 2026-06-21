@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T05:31:39.780Z",
+  "last_updated": "2026-06-21T05:39:11.701Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -244,7 +244,7 @@
       "slug": "fluent-community-manager",
       "name": "Fluent Community Manager",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-06-14T05:36:53.570Z",
+      "last_scraped": "2026-06-21T05:39:11.701Z",
       "page_count": 0,
       "categories": []
     },
