@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T08:38:13.596Z",
+  "last_updated": "2026-06-24T08:38:41.463Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -32,7 +32,7 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/resources/",
-      "last_scraped": "2026-06-21T14:45:27.561Z",
+      "last_scraped": "2026-06-24T08:38:39.573Z",
       "page_count": 0,
       "categories": []
     },
@@ -88,7 +88,7 @@
       "slug": "affiliatewp-lifetime-commissions",
       "name": "AffiliateWP - Lifetime Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-23T08:42:02.282Z",
+      "last_scraped": "2026-06-23T08:42:02.281Z",
       "page_count": 0,
       "categories": []
     },
@@ -164,7 +164,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-06-21T23:28:16.676Z",
+      "last_scraped": "2026-06-21T23:28:16.675Z",
       "page_count": 0,
       "categories": []
     },
@@ -244,7 +244,7 @@
       "slug": "fluent-community-manager",
       "name": "Fluent Community Manager",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-06-24T08:38:13.596Z",
+      "last_scraped": "2026-06-24T08:38:13.595Z",
       "page_count": 0,
       "categories": []
     },
@@ -748,7 +748,7 @@
       "slug": "kadence-blocks-pro-extension",
       "name": "Kadence Blocks - PRO Extension",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-23T08:41:10.733Z",
+      "last_scraped": "2026-06-23T08:41:10.732Z",
       "page_count": 0,
       "categories": []
     },
@@ -772,7 +772,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-22T09:33:22.922Z",
+      "last_scraped": "2026-06-22T09:33:22.921Z",
       "page_count": 0,
       "categories": []
     },
@@ -780,7 +780,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-23T08:38:51.978Z",
+      "last_scraped": "2026-06-23T08:38:51.977Z",
       "page_count": 0,
       "categories": []
     },
@@ -804,7 +804,7 @@
       "slug": "kadence-theme-kit-pro-premium-addon-for-the-kadence-theme",
       "name": "Kadence Theme Kit Pro - Premium addon for the Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-23T08:40:25.537Z",
+      "last_scraped": "2026-06-23T08:40:25.536Z",
       "page_count": 0,
       "categories": []
     },
@@ -979,7 +979,7 @@
       "slug": "product-filters-for-woocommerce",
       "name": "Product Filters for WooCommerce",
       "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
-      "last_scraped": "2026-06-22T09:34:16.061Z",
+      "last_scraped": "2026-06-22T09:34:16.060Z",
       "page_count": 0,
       "categories": []
     },
@@ -1079,7 +1079,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-22T09:32:36.045Z",
+      "last_scraped": "2026-06-22T09:32:36.044Z",
       "page_count": 0,
       "categories": []
     },
@@ -1219,7 +1219,7 @@
       "slug": "wp-all-export-acf-export-add-on-pro",
       "name": "WP All Export - ACF Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-22T09:31:50.939Z",
+      "last_scraped": "2026-06-22T09:31:50.938Z",
       "page_count": 0,
       "categories": []
     },
