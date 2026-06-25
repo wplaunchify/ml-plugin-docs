@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T08:36:17.165Z",
+  "last_updated": "2026-06-25T08:36:59.204Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -32,7 +32,7 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/resources/",
-      "last_scraped": "2026-06-24T08:38:39.573Z",
+      "last_scraped": "2026-06-25T08:36:56.927Z",
       "page_count": 0,
       "categories": []
     },
@@ -979,7 +979,7 @@
       "slug": "product-filters-for-woocommerce",
       "name": "Product Filters for WooCommerce",
       "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
-      "last_scraped": "2026-06-25T08:34:09.987Z",
+      "last_scraped": "2026-06-25T08:34:09.986Z",
       "page_count": 0,
       "categories": []
     },
