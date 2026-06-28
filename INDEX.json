@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T10:21:07.720Z",
+  "last_updated": "2026-06-28T10:41:44.773Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -104,7 +104,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-21T11:00:42.446Z",
+      "last_scraped": "2026-06-28T10:41:44.773Z",
       "page_count": 0,
       "categories": []
     },
