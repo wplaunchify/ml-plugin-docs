@@ -192,5 +192,48 @@ First, find the coupon you want to manage in your coupons list. On the far right
 
 ![Screenshot of Edit or Delete existing Coupons](https://docs.fluentcart.com/images/marketing-sales-tools/edit-delete-coupons.webp)
 
+## Applying Coupons via URL ​
+
+You can pre-apply a coupon by adding the 
+```
+coupons
+```
+
+ parameter to a product URL. When a customer clicks the link, the coupon is automatically applied to their cart and they land on the checkout page ready to pay — no need to manually enter a code.
+
+This is useful for promotional links, email campaigns, or affiliate partnerships.
+
+### Single Coupon ​
+
+Add the 
+```
+coupons
+```
+
+ parameter with the coupon code as the value:
+
+```
+https://yourdomain.com/?fluent-cart=instant_checkout&item_id=209&quantity=1&coupons=SUMMER20
+```
+### Multiple Coupons ​
+
+To apply more than one coupon, pass the codes as comma-separated values:
+
+```
+https://yourdomain.com/?fluent-cart=instant_checkout&item_id=209&quantity=1&coupons=CODE1,CODE2
+```
+### URL Parameters ​
+
+| Parameter | Description |
+| --- | --- |
+| fluent-cart | Must be set to instant_checkout |
+| item_id | The product variation ID |
+| quantity | Number of items (default: 1) |
+| coupons | One or more coupon codes, separated by commas |
+
+NOTE
+
+This feature is not supported in the **Modal (popup) Checkout**.
+
 ---
 

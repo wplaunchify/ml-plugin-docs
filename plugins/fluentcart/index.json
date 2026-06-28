@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-06-21T07:51:34.410Z",
-  "total_pages": 139,
+  "last_scraped": "2026-06-28T07:33:31.882Z",
+  "total_pages": 140,
   "failed_urls_count": 8,
   "sections": [
     {
@@ -328,7 +328,7 @@
       "slug": "product-types-creation",
       "url": "https://docs.fluentcart.com/guide/product-types-creation/",
       "file": "categories/product-types-creation.md",
-      "page_count": 16,
+      "page_count": 17,
       "pages": [
         {
           "title": "Product Types & Creation ​",
@@ -337,6 +337,10 @@
         {
           "title": "Advanced Inventory ​",
           "url": "https://docs.fluentcart.com/guide/product-types-creation/advanced-inventory"
+        },
+        {
+          "title": "Advanced Variations ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/advanced-variations"
         },
         {
           "title": "Bulk Product Import ​",
