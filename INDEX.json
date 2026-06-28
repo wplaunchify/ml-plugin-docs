@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-06-28T06:27:59.861Z",
+  "last_updated": "2026-06-28T06:28:33.330Z",
   "total_plugins": 118,
   "plugins": [
     {
       "slug": "add-anchor-links",
       "name": "Add Anchor Links",
       "documentation_url": "https://wordpress.org/plugins/add-anchor-links/",
-      "last_scraped": "2026-06-28T05:37:58.798Z",
+      "last_scraped": "2026-06-28T05:37:58.796Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -236,7 +236,7 @@
       "slug": "fluent-boards-project-management-tool",
       "name": "Fluent Boards - Project Management Tool",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-06-28T06:27:59.861Z",
+      "last_scraped": "2026-06-28T06:27:59.860Z",
       "page_count": 0,
       "categories": []
     },
@@ -284,7 +284,7 @@
       "slug": "fluent-pdf-generator",
       "name": "Fluent PDF Generator",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-06-21T06:34:30.009Z",
+      "last_scraped": "2026-06-28T06:28:31.396Z",
       "page_count": 0,
       "categories": []
     },
