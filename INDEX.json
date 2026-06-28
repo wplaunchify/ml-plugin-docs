@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T17:26:39.650Z",
+  "last_updated": "2026-06-28T17:27:06.298Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -24,7 +24,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-06-27T08:22:29.793Z",
+      "last_scraped": "2026-06-28T17:27:04.491Z",
       "page_count": 0,
       "categories": []
     },
@@ -458,7 +458,7 @@
       "slug": "fluentforms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/documentation/",
-      "last_scraped": "2026-06-28T17:26:39.650Z",
+      "last_scraped": "2026-06-28T17:26:39.642Z",
       "page_count": 457,
       "categories": [
         "account-management",
@@ -914,7 +914,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-06-28T17:24:15.140Z",
+      "last_scraped": "2026-06-28T17:24:15.138Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -950,7 +950,7 @@
       "slug": "open-graph",
       "name": "Open Graph",
       "documentation_url": "https://wordpress.org/plugins/opengraph/",
-      "last_scraped": "2026-06-28T16:27:40.245Z",
+      "last_scraped": "2026-06-28T16:27:40.244Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1080,7 +1080,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-28T16:33:45.267Z",
+      "last_scraped": "2026-06-28T16:33:45.266Z",
       "page_count": 0,
       "categories": []
     },
@@ -1409,7 +1409,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-28T16:32:32.629Z",
+      "last_scraped": "2026-06-28T16:32:32.620Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
