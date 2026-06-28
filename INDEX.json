@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T06:28:33.330Z",
+  "last_updated": "2026-06-28T06:28:44.558Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -906,7 +906,7 @@
       "slug": "learndash-lms-woocommerce-integration",
       "name": "LearnDash LMS - WooCommerce Integration",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-06-21T06:35:09.020Z",
+      "last_scraped": "2026-06-28T06:28:43.859Z",
       "page_count": 0,
       "categories": []
     },
