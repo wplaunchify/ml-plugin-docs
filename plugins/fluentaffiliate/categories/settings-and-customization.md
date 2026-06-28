@@ -217,39 +217,58 @@ After adjusting your settings, click the **Save Settings** button to apply the c
 
 # Group Settings ​
 
-FluentAffiliate lets you create affiliate groups with different commission rates. You can easily assign a group to any affiliate to apply the group's rate settings. This feature helps you manage different tiers of affiliates with varying commission.
+Managing a growing affiliate program means realizing that not all affiliates are the same. Some partners bring in more sales, while others might be part of a special promotional team. Instead of manually changing commission rates for every single person, you can use Affiliate Groups to keep things organized.
 
-When creating a new affiliate or editing an existing one:
+Affiliate Groups let you bundle your partners into tiers - like a VIP tier or an onboarding tier—and give each group its own special commission rules.
 
-1. Look for the **Affiliate Type** field in their profile
-2. Select the desired group from the dropdown
-3. The selected group's commission rate will automatically apply to that affiliate commission structures.
+## Accessing Affiliate Groups ​
 
-## Accessing Affiliate Group Settings ​
+Setting up groups is simple and only takes a few steps from your site's backend:
 
-To access the Affiliate Group settings, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Affiliate Groups**.
+1. Log in to your **WordPress Dashboard**.
+2. Go to **FluentAffiliate → Settings** from the left-hand menu.
+3. Click on **Affiliate Groups** from the left sidebar panel.
 
 ![Group Settings](https://docs.fluentaffiliate.com/images/settings-and-customization/group/group-settings-overview.webp)
 
-### Creating a New Affiliate Group ​
+## Creating a New Affiliate Group ​
 
-From the Affiliate Groups page, click the **Add New Group** button. You will need to configure the following details:
+If you want to build a new tier for your partners, follow these quick steps:
 
-- **Name:** Enter a name for your affiliate group.
-- **Rate Type:** Choose whether the commission will be a: - Flat amount
-- Percentage
-- **Rate:** Set the commission value (percentage or flat rate per referral).
-- **Status:** Select the group's status: - Active
-- Inactive
-- **Note:** Add optional notes for the group.
+1. Click the **Add New Group** button on your Affiliate Groups dashboard.
+2. A form panel will slide in from the right side of your screen. Fill out the following options:
 
-Once you have filled in the details, click the **Create** button to save the group.
+- **Name:** Enter a clear name for your group so you can recognize it later (e.g., "VIP High Rollers" or "First Group").
+- **Rate Type:** Choose how the affiliates in this group will be rewarded. You can pick a **Flat** amount or a **Percentage**.
+- **Rate:** Type the numerical commission value based on the rate type you picked (e.g., enter 10 for a flat $10 payout or 10% rate).
+- **Status:** Set the starting status of this group. You can choose from **Active, Pending, Cancelled, or Rejected**.
 
 ![Group Creation](https://docs.fluentaffiliate.com/images/settings-and-customization/group/create-new-group.webp)
 
-### Managing Existing Groups ​
+### Custom Lifetime Commissions for Groups ​
 
-After creating a group, it will appear in a list in the Affiliate Groups section. To manage an existing group, find it in the list, click the three-dot menu, and choose to either **Edit** the group settings or **Delete** the group.
+If you want members of this specific group to get rewarded for future direct purchases made by customers they originally brought in, scroll down to the custom section:
+
+Check the box for "**Enable custom lifetime commission for this group**".
+
+- **Lifetime Rate:** Set the specific reward value (Percentage or Fixed amount) for any repeat purchases made by their referred customers without a link.
+- **Expiration:** Enter the number of days this lifetime relationship should stick around before resetting. If you leave this field empty or type 
+```
+0
+```
+
+, the connection never expires!
+
+Once you are done adjusting all the fields, click the **Create** button to save your new group.
+
+![Create Lifetime Comminssion](https://docs.fluentaffiliate.com/images/settings-and-customization/group/custom-lifetime-commission-3.webp)
+
+### Managing and Assigning Groups ​
+
+After hitting save, your newly created tier will appear in a neat list on your main Affiliate Groups section.
+
+- **Editing or Deleting Tiers:** If you want to change a group's rate or remove it completely? Just click the **three-dot** action menu next to the group name to select **Edit** or **Delete**.
+- **Putting Affiliates Into Groups:** When you are creating a new affiliate profile or editing an existing user, just find the **Affiliate Type** dropdown field and choose your group from the menu. The group's custom payout rules will automatically replace your global site rates for that specific partner!
 
 ![Group Management](https://docs.fluentaffiliate.com/images/settings-and-customization/group/group-management.webp)
 
@@ -568,15 +587,27 @@ This feature allows you to reward affiliates for recurring subscription payments
 
 NOTE
 
-To use this feature, you need [FluentAffiliate Pro](https://fluentaffiliate.com/discount-deal/).- **Enable Option:** Check the box to award affiliate commissions for subscription renewals.
+To use this feature, you need [FluentAffiliate Pro](https://fluentaffiliate.com/pricing/).- **Enable Option:** Check the box to award affiliate commissions for subscription renewals.
 - **Renewal Rate:** Set the specific commission rate (Flat or Percentage) for these recurring referrals.
 - **Maximum Renewal Referrals:** Set the maximum number of times an affiliate can earn from a single subscription. Enter 0 for unlimited renewal commissions.
 
 Once activated, you’ll find this feature available in WooCommerce and FluentCart integration settings.
 
-After configuring all your settings, click the **Save Settings** button to apply the changes.
-
 ![Subscription Renewal](https://docs.fluentaffiliate.com/images/settings-and-customization/referral/comission-Renewal.webp)
+
+### Lifetime Commissions ​
+
+The **Lifetime Commissions** feature allows affiliates to continue earning commissions from customers they originally referred. Once a customer is linked to an affiliate, that affiliate will receive commissions on future purchases made by the customer, even if they return and purchase directly without using a referral link.
+
+NOTE
+
+You must have [FluentAffiliate Pro](https://fluentaffiliate.com/pricing/) installed and activated to use this feature.- **Enable Lifetime Commissions:** **Turn** on this option to enable lifetime commissions across your affiliate program. The customer's first purchase will follow your standard commission rules, while future direct purchases will use the lifetime commission settings.
+- **Lifetime Rate:** Set a dedicated lifetime commission rate (either a fixed amount or a percentage) applied to future direct purchases.
+- **Expiration:** Specify how long the affiliate-customer relationship remains active after the initial referral. Enter the number of days the tracking should remain valid. Leave the field empty or set it to **0** to keep the relationship active indefinitely.
+
+After configuring all your choices, click the **Save Settings** button at the bottom of the screen to apply your changes.
+
+![Lifetime Commission](https://docs.fluentaffiliate.com/images/settings-and-customization/referral/lifetime-commission-7.webp)
 
 ---
 
@@ -770,6 +801,68 @@ Here are solutions to common issues you might encounter during the migration pro
 - **Migration Not Starting:** Ensure you have sufficient administrative permissions and that the Solid Affiliate plugin is still installed on your site.
 - **Process Stuck:** If the progress bar stops, try refreshing the page and starting the process again.
 - **Data Not Appearing:** Verify that the migration summary showed successful numbers and check your Affiliates or Referrals tabs to see the imported records.
+
+---
+
+## Ultimate Affiliate Migration ​
+
+**Source:** [https://docs.fluentaffiliate.com/guide/settings-and-customization/ultimate-affiliate-migration](https://docs.fluentaffiliate.com/guide/settings-and-customization/ultimate-affiliate-migration)
+
+# Ultimate Affiliate Migration ​
+
+The Migrator Settings in FluentAffiliate allow you to seamlessly import your entire affiliate program from other affiliate plugins without disruption. Currently, FluentAffiliate supports migration from **Ultimate Affiliate Pro**, helping you bring over your existing data so you can upgrade to a modern affiliate management experience without losing your historical records.
+
+This guide will walk you through everything you need to transfer your affiliates, referrals, visits, payouts, customers, creatives, and affiliate groups from Ultimate Affiliate Pro directly into FluentAffiliate — quickly, safely, and without any data loss.
+
+## Accessing the Migrator Settings ​
+
+To get started, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Migrator Settings**.
+
+![Migrator Settings Overview](https://docs.fluentaffiliate.com/images/settings-and-customization/ultimate-affiliate/migrator-settings-1.webp)
+
+WARNING
+
+If you already have data inside FluentAffiliate, please wipe the current data to avoid any conflicts before you begin your new migration.
+## Method 1: Migration Using WP-CLI (Recommended) ​
+
+If you have a large database, we highly recommend using the WordPress CLI for smoother and faster performance.
+
+To start the migration, simply run the following command on your site:
+
+bash
+```
+wp fluent_affiliate migrate_from_ultimate_affiliate
+```NOTE
+
+Running this **CLI** migration will automatically remove all existing data from FluentAffiliate before the import begins. This command will seamlessly migrate all of your Ultimate Affiliate data including affiliates, referrals, payouts, and visits straight into FluentAffiliate.
+## Method 2: Migration Using the Web UI ​
+
+If you prefer a guided, visual approach, you can run the migration directly from your dashboard screen.
+
+1. On the Migrator Settings screen, locate the **Please select an option** dropdown.
+2. Choose **Ultimate Affiliate** from the list.
+3. Click the dark **Migrate** button.
+4. A popup window titled **Ultimate Affiliate Migration** will appear. This window gives you a clear snapshot of exactly what will be moved over, including your **Total Affiliate Groups**, **Total Affiliates**, **Total Referrals**, **Total Payouts**, **Total Visits**, **Total Customers**, and **Total Creatives**.
+5. If you need to restart a previous migration attempt, you can check the **Reset Current Migration** box.
+6. Finally, click the **Confirm** button to start the process.
+
+![Ultimate Affiliate Migration Popup](https://docs.fluentaffiliate.com/images/settings-and-customization/ultimate-affiliate/migrator-settings-2.webp)
+
+## Data Cleanup ​
+
+This section also includes a **Wipe Data** tool to clean up your FluentAffiliate data. To use it, select the data you wish to remove, confirm your choice, and wait for the process to finish.
+
+WARNING
+
+Data cleanup is irreversible. Always make sure to back up your data before proceeding.![Ultimate Affiliate Migration Popup](https://docs.fluentaffiliate.com/images/settings-and-customization/ultimate-affiliate/wipe-data-cleanup-3.webp)
+
+## Troubleshooting Common Issues ​
+
+If you run into any hiccups during the process, here are a few quick solutions:
+
+- **Migration Not Starting:** Ensure you have sufficient permissions and that all prerequisites are met.
+- **Process Stuck:** Try refreshing the page and starting the process again.
+- **Data Not Appearing:** Verify that the migration completed successfully and double-check your source data.
 
 ---
 

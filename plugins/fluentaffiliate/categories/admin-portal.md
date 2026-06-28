@@ -73,7 +73,7 @@ Here's what you'll find in the **Affiliates** section:
 
 ### Adding a New Affiliate ​
 
-At the top right corner, you'll find the **+ New Affiliate** button. Click this to manually add a new affiliate to your program without requiring them to sign up themselves. (We'll show you how to do that later in this guide.) If you want affiliates to register themselves, see [How to Register as an Affiliate](./../affiliate-portal/how-to-register-as-an-affiliate).
+At the top right corner, you'll find the **+ New Affiliate** button. Click this to manually add a new affiliate to your program without requiring them to sign up themselves.
 
 ### Filtering Your Affiliates ​
 
@@ -121,27 +121,59 @@ To the top-right of the table, you'll find icons to help you organize your view:
 
 ![Affiliate Search and Sort Tools](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/search-and-sort-tools.webp)
 
-### Add a New Affiliate ​
+## Add a New Affiliate ​
 
 Want to manually add an affiliate to your site? Here's how:
 
-Click the **New Affiliate** button. A form will slide in from the right side of your screen.
+Click the **+ New Affiliate** button. A form will slide in from the right side of your screen.
 
 ![Add New Affiliate Button](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/add-new-affiliate-button.webp)
 
 Fill in the following fields:
 
-- **Select User:** Select the user you want to turn into an affiliate.
-- **Rate Type:** Choose how they'll earn (fixed or percentage).
-- **Status:** Set the affiliate status (approved, pending, or rejected).
-- **Payment Email:** Enter their PayPal or preferred payment email.
-- **Note:** (Optional) Add any notes for internal use.
+- **Select User:** Click the field to search and select the existing WordPress user you want to turn into an affiliate.
+- **Rate Type:** Choose how they'll earn (Default, Percentage, Flat Rate, or Group).
+- **Status:** Set the initial affiliate status to Active, Pending, or Inactive.
+- **Payment Email:** Enter their PayPal or preferred payment email address.
+- **Additional Note:** (Optional) Add any notes for internal admin use.
 
-Hit the **Create Affiliate** button to create a new affiliate.
+Hit the **Create Affiliate** button at the bottom to save.
 
 ![Add Affiliate Form](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/add-affiliate-form.webp)
 
-That's it! Your new affiliate will now appear in the list.
+That's it! Your new affiliate will now appear in your main list.
+
+## Tracking Assigned Customers (Customers Tab) ​
+
+Once you enable the **Lifetime Commissions** feature in your global referral settings, a dedicated **Customers** tab becomes available inside every affiliate's profile panel. This sub-tab acts as your clear window to view exactly which buyers are permanently linked to that specific partner.
+
+### Navigating to the Customers Tab ​
+
+1. Head over to the **Affiliates** dashboard tab.
+2. Click on the specific **Name** of the affiliate whose account you want to inspect.
+3. Look at the sub-navigation menu inside their profile and click on **Customers**.
+
+### Sorting and Searching Linked Customers ​
+
+The Customers table keeps things structured by outlining the buyer's **Name**, **Email**, total **Referrals** generated, the date they **Joined**, and their **Lifetime Expiry** date.
+
+- **Status Filtering:** You can easily segment this list by clicking the filter buttons just above the data table to display **All**, **Active**, or **Expired** relationships.
+- **Quick Search:** Need to find a single person out of a large customer base? Use the search icon to type in a customer's details and find them instantly.
+
+![Customers Tab](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/customer-tab.webp)
+
+### Linking, Transferring, or Unlinking Customers ​
+
+As an admin, you retain full operational control over these long-term customer assignments:
+
+- **Link a New Customer:** To manually connect an existing buyer to this affiliate, click the **Link Customer** button. A modal window will appear allowing you to select a buyer profile from your database and attach them to the affiliate for automated lifetime commission tracking.
+- **Transfer or Unlink a Connection:** If a customer relationship changes or needs adjusting, you can click the **Unlink** button located at the end of that customer's data row.
+
+![Link Customer](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/link-customer.webp)
+
+NOTE
+
+If you transfer or unlink a customer, any commissions previously earned on past purchases will securely stay with the original affiliate. Only future transactions follow the updated affiliate assignment.
 
 ---
 

@@ -2,8 +2,8 @@
   "plugin_slug": "fluentaffiliate",
   "plugin_name": "FluentAffiliate",
   "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-  "last_scraped": "2026-06-21T08:32:47.218Z",
-  "total_pages": 52,
+  "last_scraped": "2026-06-28T08:09:57.327Z",
+  "total_pages": 53,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -225,7 +225,7 @@
       "slug": "settings-and-customization",
       "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/",
       "file": "categories/settings-and-customization.md",
-      "page_count": 11,
+      "page_count": 12,
       "pages": [
         {
           "title": "Affiliate Manager Migration ​",
@@ -270,6 +270,10 @@
         {
           "title": "Solid Affiliate Migration ​",
           "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/solid-affiliate-migration"
+        },
+        {
+          "title": "Ultimate Affiliate Migration ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/ultimate-affiliate-migration"
         }
       ]
     },
