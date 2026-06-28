@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T10:47:00.722Z",
+  "last_updated": "2026-06-28T10:47:45.225Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -104,7 +104,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-06-28T10:41:44.773Z",
+      "last_scraped": "2026-06-28T10:41:44.772Z",
       "page_count": 0,
       "categories": []
     },
@@ -685,7 +685,7 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-06-21T11:06:01.974Z",
+      "last_scraped": "2026-06-28T10:47:43.163Z",
       "page_count": 56,
       "categories": [
         "about-us",
@@ -797,7 +797,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-06-28T10:43:46.562Z",
+      "last_scraped": "2026-06-28T10:43:46.561Z",
       "page_count": 0,
       "categories": []
     },
@@ -1579,7 +1579,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-06-28T10:47:00.722Z",
+      "last_scraped": "2026-06-28T10:47:00.720Z",
       "page_count": 5,
       "categories": [
         "bulk-increase-woocommerce-prices-percentage",

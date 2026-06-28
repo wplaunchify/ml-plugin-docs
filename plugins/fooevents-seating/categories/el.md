@@ -62,7 +62,7 @@
 				![Fooevents Check-Ins Εφαρμογές](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### Εφαρμογές Check-ins
 				#### Διαχειριστείτε την πρόσβαση με τις ΔΩΡΕΑΝ εφαρμογές check-in για κινητά
-				Διαχειριστείτε την πρόσβαση σε εκδηλώσεις γρήγορα και επαγγελματικά με τη δωρεάν εφαρμογή FooEvents Check-ins. Χρησιμοποιείται για την εγγραφή **23,452,346** επισκέπτες, η εφαρμογή διευκολύνει την επικύρωση εισιτηρίων, την παρακολούθηση της παρουσίας και τη διατήρηση της ροής στην είσοδο.
+				Διαχειριστείτε την πρόσβαση σε εκδηλώσεις γρήγορα και επαγγελματικά με τη δωρεάν εφαρμογή FooEvents Check-ins. Χρησιμοποιείται για την εγγραφή **23,460,847** επισκέπτες, η εφαρμογή διευκολύνει την επικύρωση εισιτηρίων, την παρακολούθηση της παρουσίας και τη διατήρηση της ροής στην είσοδο.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Εξερευνήστε εφαρμογές](https://www.fooevents.com/el/%cf%87%ce%b1%cf%81%ce%b1%ce%ba%cf%84%ce%b7%cf%81%ce%b9%cf%83%cf%84%ce%b9%ce%ba%ce%ac/%ce%b5%cf%86%ce%b1%cf%81%ce%bc%ce%bf%ce%b3%ce%ad%cf%82/)
