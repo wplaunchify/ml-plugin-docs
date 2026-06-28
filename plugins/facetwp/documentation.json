@@ -1,7 +1,7 @@
 {
   "plugin_slug": "facetwp",
   "plugin_name": "FacetWP",
-  "last_scraped": "2026-06-24T08:39:42.341Z",
+  "last_scraped": "2026-06-28T04:31:26.727Z",
   "total_pages": 0,
   "failed_urls": [
     "https://facetwp.com/help-center/add-on-features-and-extras/",
@@ -172,6 +172,7 @@
     "https://facetwp.com/help-center/faq/how-to-scroll-the-page-on-facet-interaction/",
     "https://facetwp.com/help-center/faq/how-to-track-pageviews-with-google-analytics/",
     "https://facetwp.com/help-center/faq/i-forgot-my-account-email-address/",
+    "https://facetwp.com/help-center/faq/i-lost-access-to-the-account-email-address/",
     "https://facetwp.com/help-center/faq/im-not-a-developer-can-i-still-use-facetwp/",
     "https://facetwp.com/help-center/faq/is-there-a-button-tab-or-toggle-switch-facet-type/",
     "https://facetwp.com/help-center/faq/is-there-a-single-select-checkboxes-facet-type/",
