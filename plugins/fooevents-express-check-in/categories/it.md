@@ -62,7 +62,7 @@ FooEvents è un plugin eccellente. **Lo utilizzo per vendere i miei corsi di hob
 				![App Fooevents Check-Ins](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### App di check-in
 				#### Gestite l'accesso con le nostre app gratuite per il check-in mobile
-				Gestisci gli accessi agli eventi in modo rapido e professionale con l'app gratuita FooEvents Check-ins. Utilizzabile per effettuare il check-in **23,452,553** partecipanti, l'app semplifica la convalida dei biglietti, il monitoraggio delle presenze e mantiene il tuo ingresso fluido.
+				Gestisci gli accessi agli eventi in modo rapido e professionale con l'app gratuita FooEvents Check-ins. Utilizzabile per effettuare il check-in **23,460,964** partecipanti, l'app semplifica la convalida dei biglietti, il monitoraggio delle presenze e mantiene il tuo ingresso fluido.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Esplora le applicazioni](https://www.fooevents.com/it/caratteristiche-2/applicazioni/)
