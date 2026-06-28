@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T15:27:29.949Z",
+  "last_updated": "2026-06-28T15:28:12.923Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -988,7 +988,7 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-06-21T15:34:41.861Z",
+      "last_scraped": "2026-06-28T15:28:12.923Z",
       "page_count": 24,
       "categories": [
         "beta-release",
