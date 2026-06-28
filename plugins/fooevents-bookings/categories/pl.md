@@ -62,7 +62,7 @@ FooEvents to doskonała wtyczka. **Używam go do sprzedaży moich zajęć hobbys
 				![Aplikacje Fooevents Check-Ins](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
 				### Aplikacje do zameldowania
 				#### Zarządzaj dostępem za pomocą naszych BEZPŁATNYCH aplikacji mobilnych Check-in
-				Szybko i profesjonalnie zarządzaj dostępem na wydarzenia dzięki bezpłatnej aplikacji FooEvents Check-ins. Służy do rejestracji **23,452,203** uczestników, aplikacja ułatwia walidację biletów, śledzenie obecności i zapewnienie płynnego ruchu podczas wejścia.
+				Szybko i profesjonalnie zarządzaj dostępem na wydarzenia dzięki bezpłatnej aplikacji FooEvents Check-ins. Służy do rejestracji **23,460,548** uczestników, aplikacja ułatwia walidację biletów, śledzenie obecności i zapewnienie płynnego ruchu podczas wejścia.
 				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
 				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 				[Poznaj aplikacje](https://www.fooevents.com/pl/cechy/aplikacje/)
