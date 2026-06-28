@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T14:32:20.804Z",
+  "last_updated": "2026-06-28T14:32:56.184Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -32,7 +32,7 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/resources/",
-      "last_scraped": "2026-06-25T08:36:56.927Z",
+      "last_scraped": "2026-06-28T14:32:54.148Z",
       "page_count": 0,
       "categories": []
     },
@@ -823,7 +823,7 @@
       "slug": "launchflows-customer-dashboardboards-for-woocommerce",
       "name": "LaunchFlows Customer Dashboardboards For WooCommerce",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-06-28T14:32:20.804Z",
+      "last_scraped": "2026-06-28T14:32:20.803Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
