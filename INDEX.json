@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T13:30:42.600Z",
+  "last_updated": "2026-06-28T13:31:13.587Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -120,7 +120,7 @@
       "slug": "attributes-for-blocks",
       "name": "Attributes for Blocks",
       "documentation_url": "https://wordpress.org/plugins/attributes-for-blocks/",
-      "last_scraped": "2026-06-21T13:33:07.336Z",
+      "last_scraped": "2026-06-28T13:31:13.587Z",
       "page_count": 1,
       "categories": [
         "advanced"
