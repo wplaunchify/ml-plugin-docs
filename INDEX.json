@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T03:12:56.592Z",
+  "last_updated": "2026-06-28T04:31:22.485Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1451,7 +1451,7 @@
       "slug": "wp-fusion-event-tracking-addon",
       "name": "WP Fusion - Event Tracking Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-21T04:32:36.521Z",
+      "last_scraped": "2026-06-28T04:31:22.485Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
