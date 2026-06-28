@@ -2,7 +2,7 @@
   "plugin_slug": "woocommerce-subscriptions",
   "plugin_name": "WooCommerce Subscriptions",
   "documentation_url": "https://woocommerce.com/document/subscriptions/",
-  "last_scraped": "2026-06-21T12:50:12.763Z",
+  "last_scraped": "2026-06-28T12:37:48.034Z",
   "total_pages": 85,
   "failed_urls_count": 0,
   "sections": [
@@ -33,6 +33,23 @@
         {
           "title": "Edit an Existing Subscription",
           "url": "https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/update-an-existing-subscription/"
+        }
+      ]
+    },
+    {
+      "title": "Billing Date Alignment",
+      "slug": "billing-date-alignment",
+      "url": "https://woocommerce.com/document/subscriptions/billing-date-alignment/",
+      "file": "categories/billing-date-alignment.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Guide to Billing Date Alignment",
+          "url": "https://woocommerce.com/document/subscriptions/billing-date-alignment/"
+        },
+        {
+          "title": "Creating an Aligned Subscription Product",
+          "url": "https://woocommerce.com/document/subscriptions/billing-date-alignment/creating-an-aligned-subscription-product/"
         }
       ]
     },
@@ -385,23 +402,6 @@
         {
           "title": "Minimum Periods for WooCommerce Subscriptions",
           "url": "https://woocommerce.com/document/subscriptions/renewal-process/minimum-periods-for-woocommerce-subscriptions/"
-        }
-      ]
-    },
-    {
-      "title": "Renewal Synchronisation",
-      "slug": "renewal-synchronisation",
-      "url": "https://woocommerce.com/document/subscriptions/renewal-synchronisation/",
-      "file": "categories/renewal-synchronisation.md",
-      "page_count": 2,
-      "pages": [
-        {
-          "title": "Guide to Synchronized Renewals",
-          "url": "https://woocommerce.com/document/subscriptions/renewal-synchronisation/"
-        },
-        {
-          "title": "Creating a Synchronized Subscription Product",
-          "url": "https://woocommerce.com/document/subscriptions/renewal-synchronisation/creating-a-synchronized-subscription-product/"
         }
       ]
     },

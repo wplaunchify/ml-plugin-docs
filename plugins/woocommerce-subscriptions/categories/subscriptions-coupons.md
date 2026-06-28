@@ -16,7 +16,7 @@ The default**cart** and **product** coupons can apply to both subscriptions and 
 
 The rest of this Subscriptions coupon guide explains how to create **recurring product discount**s and a **sign-up fee** **discounts** used with WooCommerce Subscriptions.
 
-A subscription product with a *free trial* period and *no sign-up fee*, or [synchronized renewals](https://woocommerce.com/document/subscriptions/renewal-synchronisation/) and*no sign-up fee*, has no initial payment, so **cart** and **product** coupons do not apply a discount.
+A subscription product with a *free trial* period and *no sign-up fee*, or [an aligned billing date](https://woocommerce.com/document/subscriptions/billing-date-alignment) and*no sign-up fee*, has no initial payment, so **cart** and **product** coupons do not apply a discount.
 
 ## Recurring Product Discount Coupon
 
@@ -29,7 +29,7 @@ For example, creating a $10 recurring product coupon discounts each recurring pa
 **Recurring product discount**coupons****will also apply to the first payment of a subscription if they meet the following criteria:
 
 - The subscription product does not have a free trial set.
-- The subscription does not have a [synchronized](https://woocommerce.com/document/subscriptions/renewal-synchronisation/) first payment on a date in the future.
+- The subscription does not have [an aligned](https://woocommerce.com/document/subscriptions/billing-date-alignment) first payment on a date in the future.
 
 Here’s an example how the discount would apply to the subscription product:
 
@@ -249,7 +249,7 @@ The main exception to this is when a limited payment coupon has a limit of one (
 
 [↑ Back to top](#doc-title)
 
-There are cases when the initial sign-up price for a subscription is different from the recurring price, such as with [synchronized subscriptions](https://woocommerce.com/document/subscriptions/renewal-synchronisation/) or sign-up fees and free trials. By using a limited coupon active for one payment, a discount will apply to the first renewal of a subscription instead of the initial sign-up. Let’s take a look at how this works for Synchronized Subscriptions and subscriptions with free trials and a sign-up fee:
+There are cases when the initial sign-up price for a subscription is different from the recurring price, such as with[aligned subscriptions](https://woocommerce.com/document/subscriptions/billing-date-alignment)or sign-up fees and free trials. By using a limited coupon active for one payment, a discount will apply to the first renewal of a subscription instead of the initial sign-up. Let’s take a look at how this works for Synchronized Subscriptions and subscriptions with free trials and a sign-up fee:
 
 #### Synchronized Subscriptions
 

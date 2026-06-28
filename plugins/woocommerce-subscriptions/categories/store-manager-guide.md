@@ -10,19 +10,54 @@
 
 # Subscriptions General Settings
 
-			Once installed, WooCommerce Subscription extension settings can be found and set at **WooCommerce > Settings > Subscriptions**. This guide explains each section of settings and what it controls:
+			Once installed and activated, WooCommerce Subscription extension settings can be found and set at **WooCommerce > Settings > Subscriptions**. This document explains each section of settings and what it controls.
 
-- [Button Text Settings](#button-text-settings)
-- [Role Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#role-settings)
-- [Miscellaneous Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#misc-settings)
-- [Renewals Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#renewals-settings)
-- [Gifting Settings](#gifting-settings)
-- [Downloads Settings](#downloads-settings)
-- [Synchronized Renewals Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#synchronization-settings)
-- [Switch Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#switch-settings)
-- [Subscriptions Shortcode](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscription-shortcode)
+## Storewide Subscription Plans
 
-![](https://woocommerce.com/wp-content/uploads/2026/06/woodocs3002.subscriptions.settings.screen.png?strip=all&w=704)Woo Subscriptions Settings Screen
+[↑ Back to top](#doc-title)
+
+Storewide subscription plans let you define global plans that make all supported products in your catalog available as subscriptions. Plans are configured under WooCommerce > Settings > Subscriptions in the Storewide Subscription Plans section.
+
+To add a new plan, click **+ Add subscription plan**. A dialog will open with the following fields:
+
+- **Frequency:**Set the billing interval using a number input and a period dropdown (Day, Week, Month, Year). For example, “three months” means the customer is billed every three months. The combination cannot exceed ten years.
+- **Align Renewal:** Optionally select a day to align renewal dates for all subscribers on this plan. When set to “Do not align,” renewals are based on each subscriber’s purchase date. See the [Billing Date Alignment documentation](https://woocommerce.com/document/subscriptions/billing-date-alignment) for details.
+- **Discount:** Optionally apply a discount to offer subscribers a lower price. Percentage or fixed amount discounts are supported.
+- **Expire subscription after a set number of payments**: When enabled, a “Total number of payments” field appears, letting you specify how many payments (including the initial purchase) occur before the subscription expires.
+- **Signup Fee:** Add a one-time fee that customers pay when they first subscribe.
+- **Free Trial:** Offer a free trial by setting its duration using the number and period fields (Days, Weeks, Months, Years).
+
+Click **Save** to add the plan.
+
+![](https://woocommerce.com/wp-content/uploads/2026/04/add-storewide-subscription-plan.png?strip=all&w=704)Storewide Subscription Plan Settings
+
+### Purchase Option Text
+
+[↑ Back to top](#doc-title)
+
+Add custom text displayed above the purchase options on product pages. Supports HTML and shortcodes.
+
+## Subscription Product Creation
+
+[↑ Back to top](#doc-title)
+
+Allow merchants to enable or disable simple subscription and variable subscription product types.
+
+If enabled, the product type drop-down includes Simple Subscription and Variable Subscription options when creating a new product.
+
+If disabled, the product type drop-down does not include these options when creating a new product. Existing products are not affected.
+
+If a merchant changes a simple or variable subscription product to a different product type and saves, the subscription options will no longer appear in the dropdown for that product.
+
+## Add to Subscription
+
+[↑ Back to top](#doc-title)
+
+The Add to Subscription feature lets customers add products to their existing subscriptions instead of creating a new one at checkout.
+
+When enabled, customers browsing your store will see an option to add a product to one of their existing subscriptions. This works with products that have subscription plans assigned, either through storewide plans or custom plans at the product level.
+
+Subscriptions with signup fees cannot be added to an existing subscription using this feature.
 
 ## Button Text Settings
 
@@ -37,12 +72,12 @@
 
 [↑ Back to top](#doc-title)
 
-Unlike non-subscription orders, a user **must**create an account on your store when signing up for a subscription. This is regardless of what is set in the [general WooCommerce Settings](https://woocommerce.com/document/configuring-woocommerce-settings/accounts-and-privacy/#guest-checkout-and-accounts). This is because a subscription is an [agreement between the store and the customer for future transactions](https://woocommerce.com/document/subscriptions/subscription-product-vs-subscription/#subscriptions), therefore the customer’s information needs to be stored in an account on your store.
+Unlike non-subscription orders, a user **must**create an account on your store when signing up for a subscription. This is regardless of what is set in the [general WooCommerce settings](https://woocommerce.com/document/configuring-woocommerce-settings/accounts-and-privacy/#guest-checkout-and-accounts). This is because a subscription is an [agreement between the store and the customer for future](https://woocommerce.com/document/subscriptions/subscription-product-vs-subscription/#subscriptions)transactions; therefore, the customer’s information needs to be stored in an account on your store.
 
 ![WooCommerce Subscriptions Roles Settings](https://woocommerce.com/wp-content/uploads/2024/07/subscription-settings-roles.webp?strip=all&w=704)Role Settings
 
 - **Subscriber Default Role** – choose the role assigned to customers when they create a subscription. By default, this is WordPress’ built-in *Subscriber* role.
-- **Inactive Subscriber Role** – choose the role assigned to subscribers when their subscription expires, is canceled, or is suspended (by you, the payment gateway or the customer). By default, this is WooCommerce’s built-in *Customer* role.
+- **Inactive Subscriber Role** – select the role assigned to subscribers when their subscription expires, is canceled, or is suspended (by you, the payment gateway or the customer). By default, this is WooCommerce’s built-in *Customer* role.
 
 If you sell memberships and want to add a “member” role, [WooCommerce Memberships](https://woocommerce.com/products/woocommerce-memberships/) may be a good option for you.  Memberships also allows setting different per-product permissions for users.
 
@@ -50,9 +85,9 @@ If you sell memberships and want to add a “member” role, [WooCommerce Member
 
 [↑ Back to top](#doc-title)
 
-Miscellaneous settings is a group of options that adjusts various specialized behavior of Subscriptions. Let’s take a look at each:
+Miscellaneous settings is a group of options that adjusts various specialized behaviors of Subscriptions. Let’s take a look at each:
 
-![Miscellaneous Subscription Settings](https://woocommerce.com/wp-content/uploads/2024/07/subscription-settings-miscellaneous.webp?strip=all&w=704)Miscellaneous Subscription Settings
+![WooCommerce Subscriptions miscellaneous settings](https://woocommerce.com/wp-content/uploads/2026/06/subscriptions-settings-miscellaneous@2x.png?strip=all&w=704)
 
 ### $0 Initial Checkout
 
@@ -69,13 +104,13 @@ By default, after a customer has purchased a downloadable subscription product, 
 **Woo Subscriptions provides two options to handle this situation:**
 
 - **Default Setting:**This requires no change in settings. Adding files to a downloadable subscription product gives existing customers access to those files immediately.
-- **Drip Downloadable Content:** With this setting activated (**checked tick**box), existing customers only receive access to new downloadable content after the next renewal is processed (know as *dripping*).
+- **Drip Downloadable Content:** With this setting activated (**checked tick**box), existing customers only receive access to new downloadable content after the next renewal is processed (known as *dripping*).
 
 ### Customer Suspensions
 
 [↑ Back to top](#doc-title)
 
-This setting either allows or limits the amount of [customer suspensions](https://woocommerce.com/document/subscriptions/customers-view/suspend-cancel-or-remove-an-item/) on a given subscription. You have three options, setting a maximum number of suspensions allowed, setting to unlimited, or deactivating the option entirely:
+This setting either allows or limits the number of [customer suspensions](https://woocommerce.com/document/subscriptions/customers-view/suspend-cancel-or-remove-an-item/) on a given subscription. You have three options: setting a maximum number of suspensions allowed, setting it to unlimited, or deactivating the option entirely:
 
 - **Maximum Number of Suspensions:** Set a maximum number of times a customer can suspend their account for each billing period. For example, with a subscription billed yearly, a value of 3 would mean that once a subscriber suspends their account 3 times that year, they cannot suspend their account again until the next billing year.
 - **Unlimited:**Instead of a number, set the amount to the word “unlimited” to allow any number of customer suspension during the billing period.
@@ -87,87 +122,27 @@ Store managers can **always** suspend an active subscription. If you’re a stor
 
 [↑ Back to top](#doc-title)
 
-Activate **Mixed Checkout** to allow a subscription product to be purchased with other products in the same transaction. It includes simple, variable and other non-subscription products as well as[multiple different subscription products](https://woocommerce.com/document/subscriptions/multiple-subscriptions/).
+Activate **Mixed Checkout** to allow a subscription product to be purchased with other products in the same transaction. It includes simple, variable, and other non-subscription products as well as[multiple different subscription products](https://woocommerce.com/document/subscriptions/multiple-subscriptions/).
 
-Activating this feature makes it easier for customers to buy more from your store, and to include subscription products in bundles created with extensions such as[Product Bundles](https://woocommerce.com/products/product-bundles/). Because of this, it is on by default and is only disabled if manually unchecked.
+Activating this feature makes it easier for customers to buy more from your store and to include subscription products in bundles created with extensions such as[Product Bundles](https://woocommerce.com/products/product-bundles/). Because of this, it is on by default and is only disabled if manually unchecked.
 
 With the default setting enabled, here’s how a mixture of products would appear on the cart and checkout pages:
 
 **Cart page:**
 
-![](https://woocommerce.com/wp-content/uploads/2024/07/MixedCheckoutCart.png?strip=all&w=704)
+![Cart page showing a mixed checkout with a subscription product and standard products.](https://woocommerce.com/wp-content/uploads/2026/06/mixed-checkout-cart-sample-block@2x.png?strip=all&w=704)
 
-Subscriptions and no-subscriptions in cart with mixed checkout enabled.
+Subscriptions and no subscriptions in the cart with mixed checkout enabled.
 
 **Checkout page:**
 
-![](https://woocommerce.com/wp-content/uploads/2024/07/mixedcheckout.png?strip=all&w=704)
-
-**Displaying a Notice to Customers when Mixed Checkout is Deactivated**:
-
-When [Mixed Checkout is disabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#mixed-checkout), if a customer adds a subscription product to the cart and the cart already contains a non-subscription product or products, the subscription products will be removed.
-
-As the customer is redirected immediately to the cart, no notice will be displayed.
-
-The following code will add a message on checkout to indicate to the customer that a product or products have been removed. To use the code, you can install and activate it as a [plugin](http://codex.wordpress.org/Managing_Plugins) on your site.
-
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters]({{ revealButtonHref }})
-
-  |  | <?php |
-| --- | --- |
-|  | /** |
-|  | * Plugin Name: WooCommerce Subscriptions Product Removed Message |
-|  | * Description: Display a notice on checkout when a product was removed from the cart after a subscription was added. |
-|  | * Author: Gerhard Potgieter & Brent Shepherd |
-|  | * Author URI: |
-|  | * Version: 1.1 |
-|  | * License: GPL v2 |
-|  | */ |
-|  |  |
-|  | /** |
-|  | * Set a flag to indicate that the error message needs to be displayed. We can add the message to the $woocommerce global |
-|  | * yet because it will be removed by Subscriptions later on the 'add_to_cart_redirect' hook. |
-|  | */ |
-|  | function eg_set_product_removed_message( $valid, $product_id, $quantity ) { |
-|  | global $woocommerce, $eg_set_product_removed_message; |
-|  |  |
-|  | if ( $woocommerce->cart->get_cart_contents_count() > 0 && WC_Subscriptions_Product::is_subscription( $product_id ) ) { |
-|  | $eg_set_product_removed_message = $woocommerce->cart->get_cart_contents_count(); |
-|  | } |
-|  |  |
-|  | return $valid; |
-|  | } |
-|  | add_filter( 'woocommerce_add_to_cart_validation', 'eg_set_product_removed_message', 9, 3 ); |
-|  |  |
-|  | /** |
-|  | * If the product removed flag is set, now we can add the message. |
-|  | */ |
-|  | function eg_show_product_removed_message( $url ) { |
-|  | global $woocommerce, $eg_set_product_removed_message; |
-|  |  |
-|  | if ( isset( $eg_set_product_removed_message ) && is_numeric( $eg_set_product_removed_message ) ) { |
-|  | wc_add_notice( sprintf( _n( '%s product has been removed from your cart. Products and subscriptions can not be purchased at the same time.', '%s products have been removed from your cart. Products and subscriptions can not be purchased at the same time.', $eg_set_product_removed_message, 'wcsprm' ), $eg_set_product_removed_message ), 'error' ); |
-|  | } |
-|  |  |
-|  | return $url; |
-|  | } |
-|  | add_filter( 'add_to_cart_redirect', 'eg_show_product_removed_message', 11, 1 ); |
-      [view raw](https://gist.github.com/thenbrent/7254185/raw/19ce767cf9f1e5724df69e5c07fe3819ec1c8de3/wcs-product-removed-error-message.php)
-        [wcs-product-removed-error-message.php](https://gist.github.com/thenbrent/7254185#file-wcs-product-removed-error-message-php)
-        hosted with ❤ by [GitHub](https://github.com)
-
-The notice will be displayed on checkout as shown here (*using the Storefront theme*):
-
-![Product Removed Notice](https://woocommerce.com/wp-content/uploads/2012/06/faq_product_removed.png?strip=all&w=704)Product Removed Notice
+![Checkout page showing a mixed checkout with a subscription product and standard products.](https://woocommerce.com/wp-content/uploads/2026/06/mixed-checkout-checkout-sample-block@2x.png?strip=all&w=704)
 
 ### Retry Failed Payments
 
 [↑ Back to top](#doc-title)
 
-Disabled by default, toggling the setting to on activates [Failed Recurring Payment Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/). The setting applies from that point onwards and does not affect payments that have already failed.
+Disabled by default, toggling the setting to on activates the [Failed Recurring Payment Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/). The setting applies from that point onwards and does not affect payments that have already failed.
 
 ## Renewals Settings
 
@@ -175,11 +150,11 @@ Disabled by default, toggling the setting to on activates [Failed Recurring Paym
 
 The Renewals section of Subscription settings is home to options that govern key aspects of the renewal process.
 
-The[subscription renewal process](https://woocommerce.com/document/subscriptions/renewal-process/) is a fundamental component of Woo Subscriptions. To understand the intricacies of how renewal settings affect subscriptions and subscription payments, see [Subscription Renewal Process](https://woocommerce.com/document/subscriptions/renewal-process/).
+The [subscription renewal process](https://woocommerce.com/document/subscriptions/renewal-process/) is a fundamental component of Woo Subscriptions. To understand the intricacies of how renewal settings impact subscriptions and subscription payments, see [Subscription Renewal Process](https://woocommerce.com/document/subscriptions/renewal-process/).
 
 Let’s take a look at the different settings:
 
-![Subscription Renewal Settings](https://woocommerce.com/wp-content/uploads/2024/07/subscription-settings-renewals.webp?strip=all&w=704)Subscription Renewal Settings
+![WooCommerce Subscriptions renewals settings](https://woocommerce.com/wp-content/uploads/2026/06/subscriptions-settings-renewals@2x.png?strip=all&w=704)
 
 ### Manual Renewal Payments
 
@@ -221,25 +196,25 @@ After turning off automatic payments, manual renewal will only apply to new subs
 
 [↑ Back to top](#doc-title)
 
-By default, Subscriptions via a[payment gateway that allows automatic renewals](https://woocommerce.com/document/subscriptions/payment-gateways/) is set to automatically renew, unless automatic payments are deactivated. The “Auto Renew” toggle allows subscribers to easily turn off the auto-renewals and switch to manual renewals from their My Account page.
+By default, Subscriptions via a[payment gateway that allows automatic renewals](https://woocommerce.com/document/subscriptions/payment-gateways/) are set to automatically renew, unless automatic payments are deactivated. The “Auto Renew” toggle allows subscribers to easily turn off the auto-renewals and switch to manual renewals from their My Account page.
 
 To enable the toggle switch:
 
 1. Go to **WooCommerce > Settings > Subscriptions**.
-2. Enable the **Display the auto renewal toggle** setting.
+2. Enable the **Display the auto-renewal toggle** setting.
 3. **Save changes**.
 
 ### Early Renewal
 
 [↑ Back to top](#doc-title)
 
-**Accept early renewal payments setting** – Enables a customer to manually renew a subscription ahead of schedule. The normal renewal interval remains unaffected. For example, if a monthly subscription renews on the 15th of every month, and a customer renews it on the 7th instead, next month it will renew on the 15th again.  If a subscription as no expiry set, a customer would be able to renew (and extend) a subscription indefinately.
+**Accept early renewal payments setting** – Enables a customer to manually renew a subscription ahead of schedule. The normal renewal interval remains unaffected. For example, if a monthly subscription renews on the 15th of every month, and a customer renews it on the 7th instead, next month it will renew on the 15th again. If a subscription has no expiry set, a customer would be able to renew (and extend) a subscription indefinately.
 
-**Accept Early Renewal Payments via a Modal** – When check in addition to the above, a modal overlay opens the **My Account > View Subscriptions** page and allows a customer to renew the subscription without the need to go through the full checkout process.
+**Accept Early Renewal Payments via a Modal**– When check in addition to the above, a modal overlay opens the My Account > View Subscriptions page. This allows a customer to renew the subscription without the need to go through the full checkout process.
 
 ![A view of the renewals modal that bypasses the default checkout page](https://woocommerce.com/wp-content/uploads/2024/07/subscription-settings-renewals-overlay.webp?strip=all&w=704)A view of the renewals modal that bypasses the default checkout page
 
-Once payment is completed, the modal closes and message is displayed at the top of the screen. The customer stays in the My Account area.
+Once payment is completed, the modal closes, and a message is displayed at the top of the screen. The customer stays in the My Account area.
 
 ![The appearance of a subscription that was successfully renewed via the modal overlay](https://woocommerce.com/wp-content/uploads/2024/07/subscription-settings-renewals-overlay-success.webp?strip=all&w=704)The appearance of a subscription that was successfully renewed via the modal overlay
 
@@ -247,7 +222,7 @@ Once payment is completed, the modal closes and message is displayed at the top 
 
 [↑ Back to top](#doc-title)
 
-The gifting feature makes it possible for one person to purchase a subscription product for someone else. It then shares the subscription between the purchaser and recipient for the rest of its life-cycle. Customers can choose to purchase subscriptions for others by entering the recipient’s email address on the single product page, cart, or checkout pages.
+The gifting feature makes it possible for one person to purchase a subscription product for someone else. It then shares the subscription between the purchaser and recipient for the rest of its life cycle. Customers can choose to purchase subscriptions for others by entering the recipient’s email address on the single product page, cart, or checkout pages.
 
 After a subscription has been purchased, Gifting will manage onboarding the recipient to set up an account with the store.
 
@@ -255,18 +230,18 @@ After a subscription has been purchased, Gifting will manage onboarding the reci
 
 [↑ Back to top](#doc-title)
 
-![Subscription Gifting Settings](https://woocommerce.com/wp-content/uploads/2020/07/woocommerce-subscriptions-gifting-settings.png?strip=all&w=704)
+![WooCommerce Subscriptions gifting settings](https://woocommerce.com/wp-content/uploads/2026/06/subscriptions-settings-gifting@2x.png?strip=all&w=704)
 
-You can enable Subscription Gifting globally from your store’s WP Admin dashboard, by navigating to *WooCommerce > Settings > Subscriptions* and:
+You can enable Subscription Gifting globally from your store’s WP Admin dashboard by navigating to *WooCommerce > Settings > Subscriptions* and:
 
 1. Scroll down to **Gifting Subscriptions**.
 2. Enable gifting by checking the *Allow shoppers to gift a subscription* checkbox.
-3. You can choose for it to be **Enabled for all products** or **Disabled for all products** by default. The option can be [overridden for each product](https://woocommerce.com/document/subscriptions/creating-subscription-products/#gifting).
-4. Enter text into the **Gifting Checkbox Text** field. This label text is displayed next to the checkbox on the Single Product, Cart, and Checkout pages. By default, the label text is “This is a gift”, but you may change this to a phrase that suits your store.
+3. You can decide for it to be **Enabled for all products** or **Disabled for all products** by default. The option can be [overridden for each product](https://woocommerce.com/document/subscriptions/creating-subscription-products/#gifting).
+4. Enter text into the **Gifting Checkbox Text** field. This label text is displayed next to the checkbox on the Single Product, Cart, and Checkout pages. By default, the label text is “This is a gift,” but you may change this to a phrase that suits your store.
 5. Optional: Tick the **Downloadable Products** checkbox to allow both the purchaser and recipient access to downloadable subscription products. Learn more about this setting in the [Gifting Downloadable Products](#downloadable-products) section.
 6. Click **Save changes**.
 
-### Gifting Downloadable products
+### Gifting Downloadable Products
 
 [↑ Back to top](#doc-title)
 
@@ -286,9 +261,9 @@ Similar to the normal process for downloading files, recipients can download the
 
 [↑ Back to top](#doc-title)
 
-WooCommerce Subscription Downloads enables you to offer downloadable products to your subscribers, while maintaining individual listings for each of your downloadable products, having them sold individually via your store, as well as via the subscription.
+WooCommerce Subscription Downloads enables you to offer downloadable products to your subscribers while maintaining individual listings for each of your downloadable products, having them sold individually via your store, as well as via the subscription.
 
-It adds one new field to your downloadable products, in the **Product Data** meta box. Once your subscription product is in place, you can search for it in the new Subscriptions field that appears when adding your **Downloadable** product.
+It adds one new field to your downloadable products in the **Product Data** meta box. Once your subscription product is in place, you can search for it in the new Subscriptions field that appears when adding your **Downloadable** product.
 
 You can also connect a downloadable product to multiple subscriptions in your store.
 
@@ -320,23 +295,27 @@ When **disabled**, linked downloadable products are **not** added as line items.
 - Downloads remain visible in the Downloads section of the subscription view page
 - Customers can still access their downloads from My Account > Downloads
 
-## Synchronization Settings
+## Billing Date Alignment Settings
 
 [↑ Back to top](#doc-title)
 
-To align subscription renewal dates to a specific day of the week, month or year, enable **Synchronize Renewals**. Much like the settings to switch subscriptions, Subscription Synchronization has specific criteria and options that require its own guide – [Renewal Synchronization](https://woocommerce.com/document/subscriptions/renewal-synchronisation/).
+The billing date alignment settings control how subscription renewals are aligned to specific dates. For a complete guide, see the [Guide to Billing Date Alignment](https://woocommerce.com/document/subscriptions/billing-date-alignment).
+
+![WooCommerce Subscriptions billing date alignment settings](https://woocommerce.com/wp-content/uploads/2026/06/subscriptions-settings-synchronization@2x.png?strip=all&w=704)
 
 ## Switch Settings
 
 [↑ Back to top](#doc-title)
 
-Customers are able to switch between variable subscription options or grouped subscription products if this setting is enabled. This process has a its own set of nuances that are best explained in a separate guide – [Store Manager’s Guide to Subscription Switching](https://woocommerce.com/document/subscriptions/switching-guide/#section-2).
+Customers can switch between variable subscription options or grouped subscription products if this setting is enabled. This process has its set of nuances that are best explained in a separate guide: [Store Manager’s Guide to Subscription Switching](https://woocommerce.com/document/subscriptions/switching-guide/#section-2).
+
+![WooCommerce Subscriptions switch settings](https://woocommerce.com/wp-content/uploads/2026/06/subscriptions-settings-switching@2x.png?strip=all&w=704)
 
 ## Subscriptions Health Check
 
 [↑ Back to top](#doc-title)
 
-When **Allow nightly health check scans on your subscriptions** is enabled, WooCommerce Subscriptions automatically runs a health check scan each night to identify subscriptions that may require attention. To view scan results or run a scan manually, navigate to **WooCommerce > Status > Subscriptions**. [Learn more about the Health Check feature](https://woocommerce.com/document/woocommerce-subscriptions-health-check/).
+When **Allow nightly health check scans on your subscriptions** is enabled, WooCommerce Subscriptions automatically runs a health check scan each night to identify subscriptions that may require attention. To view scan results or run a scan manually, navigate to **WooCommerce > Status > Subscriptions**. [Learn more about the Health Check feature](https://woocommerce.com/document/woocommerce-subscriptions-health-check/).
 
 ## Processing Reliability
 
@@ -348,13 +327,13 @@ WooCommerce Subscriptions relies on scheduled actions to automate important subs
 
 **Web cron support**—This allows an external web cron service to run pending subscription events. When enabled, a unique URL is generated that you can add to your web cron service. Treat this URL like a password—keep it private.
 
-If no URL has been generated yet, click **Save changes** to create one. To replace an existing URL, click **Generate a new URL**. Any external service using the old URL will need to be updated.
+If no URL has been generated yet, click **Save changes** to create one. To replace an existing URL, click **Generate a new URL**. Any external service using the old URL will need to be updated.
 
 ## Subscriptions shortcode
 
 [↑ Back to top](#doc-title)
 
-To display a list of subscriptions on pages other than the customer **My Account** page, add the 
+To display a list of subscriptions on pages apart from the customer **My Account** page, add the 
 ```
 [subscriptions]
 ```
@@ -376,12 +355,12 @@ user_id
 0
 ```
 
-, the currently logged in user).
+, the currently logged-in user).
 - ```
 status
 ```
 
-: show only subscriptions with this status. Can be 
+: show only subscriptions with this status. It can be, 
 ```
 active
 ```
@@ -412,19 +391,12 @@ all
 
 [↑ Back to top](#doc-title)
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters]({{ revealButtonHref }})
-
-  |  | [[subscriptions]] |
-| --- | --- |
-|  | [[subscriptions user_id="33"]] |
-|  | [[subscriptions status="all"]] |
-|  | [[subscriptions user_id="42" status="all"]] |
-      [view raw](https://gist.github.com/raicem/c82dc395e22cd882ec871bf31ea0b5eb/raw/1abd9a56f60f00657328eac89df68d1e162e51e8/subscriptions-shortcode-examples.php)
-        [subscriptions-shortcode-examples.php](https://gist.github.com/raicem/c82dc395e22cd882ec871bf31ea0b5eb#file-subscriptions-shortcode-examples-php)
-        hosted with ❤ by [GitHub](https://github.com)
+```
+[[subscriptions]]
+[[subscriptions user_id="33"]]
+[[subscriptions status="all"]]
+[[subscriptions user_id="42" status="all"]]
+```
 
 More at: [How to Use Shortcodes](https://woocommerce.com/document/woocommerce-shortcodes/#how-to-use-shortcodes).
 

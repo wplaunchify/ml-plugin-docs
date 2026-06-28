@@ -10,7 +10,7 @@
 
 # Use case: skip a Subscriptions renewal based on signup date
 
-			In the case of [synchronized renewals](https://woocommerce.com/document/subscriptions/renewal-synchronisation/), you might want to skip the immediate next renewal date if you charge the full recurring amount during the purchase for customers who buy the subscription after the first 10 days of the month. This use case explains how you can do that both using the standard settings in Woo Subscriptions and, optionally, with Automate Woo.
+			For a [subscription with an aligned billing date](https://woocommerce.com/document/subscriptions/billing-date-alignment), you might want to skip the immediate next renewal date if you charge the full recurring amount during the purchase for customers who buy the subscription after the first 10 days of the month. This use case explains how you can do that both using the standard settings in Woo Subscriptions and, optionally, with Automate Woo.
 
 Here’s the synchronized renewal scenario we’ll use throughout this use case:
 

@@ -16,14 +16,14 @@
 
 [↑ Back to top](#doc-title)
 
-A key feature of a subscription is a recurring payment — a payment due at a regular interval over time (ex. monthly). These payments are the foundation block of a larger *renewal* process in WooCommerce Subscriptions.
+A key feature of a subscription is a recurring payment—a payment due at a regular interval over time (ex. monthly). These payments are the foundational block of a larger *renewal* process in WooCommerce Subscriptions.
 
-Subscriptions performs a number of tasks as part of renewal, including generating an order to record payment, emailing both you and the customer via email of the renewal and sometimes, processing the payment. The renewal method determines the order of these tasks and what triggers them and how Subscriptions performs them.
+Subscriptions perform several tasks as part of renewal, including generating an order to record payment, emailing both you and the customer via email of the renewal, and sometimes, processing the payment. The renewal method determines the order of these tasks and what triggers them and how Subscriptions performs them.
 
 **Subscriptions offers two methods for handling renewals:**
 
 - **Automatic renewal** – recurring payments process without customer intervention.
-- **Manual renewal** – recurring payments require that the customer logs into the store and makes the payment for each payment interval.
+- **Manual renewal** – recurring payments require that your customers log into the store and make the payment for each payment interval.
 
 ## Manual vs. Automatic Renewals
 
@@ -33,13 +33,13 @@ When you activate both manual and automatic renewals in your store, it’s helpf
 
 |  | Manual Renewals | Automatic Renewals |
 | --- | --- | --- |
-| Customer Involvement | Customer must log into your store and pay to renew the subscription. | No action required by the customer to renew the subscription. |
-| Coupons | Customer can use product and cart coupons to reduce price of renewal because customer completes renewal via normal checkout process. | Only recurring coupons applied at the start of subscription will discount renewal payments since renewal payments are processed automatically. |
-| Taxes | Tax charged for each renewal payment is calculated at time the payment is processed because customer completes renewal via normal checkout process. Taxes on a pending renewal order reflect the tax line items on the subscription prior to checkout. | Taxes calculated at time of sign-up are applied for all renewal payments. If you need to change recurring taxes, you need to manually change recurring tax line items for the subscription. |
-| Payment Method | All payment gateway extensions can be used to process manual renewal payments. Customer can choose a different payment method for each renewal payment. | Some payment gateways support automatic renewals( see Subscription Payment Gateway Guide for more details). The same payment method is used for all renewal payments (unless payment fails). |
-| Shipping Method | Customer can choose a different shipping method for each renewal payment. | Same shipping method is used for all renewal payments (unless payment fails). |
-| Changing Address | Customer can enter a different billing and/or shipping address for each renewal. | Same billing and shipping address (from parent order) is used for each renewal. Customers can update an address for future renewal orders. |
-| Email Notifications | If enabled, the Customer Renewal Invoice is emailed to the customer to prompt them to log in and pay to renew subscription. After payment is complete, the customer receives the Processing/Completed Renewal Order email, and the store manager receives the  New Renewal Order notification. | If enabled, the Processing or Completed Renewal Order email is sent to the customer as a record of automatic payment. Store Manager receives New Renewal Order notification immediately. |
+| Customer Involvement | Customer must log into your store and pay to renew the subscription. | No action is required by the customer to renew the subscription. |
+| Coupons | Customers can use product and cart coupons to reduce the price of renewal because the customer completes the renewal via the normal checkout process. | Only recurring coupons applied at the start of the subscription will discount renewal payments since renewal payments are processed automatically. |
+| Taxes | Tax charged for each renewal payment is calculated at the time the payment is processed because the customer completes the renewal via the normal checkout process. Taxes on a pending renewal order reflect the tax line items on the subscription before checkout. | Taxes calculated at the time of sign-up are applied for all renewal payments. If you need to change recurring taxes, you need to manually change recurring tax line items for the subscription. |
+| Payment Method | All payment gateway extensions can be used to process manual renewal payments. The customer can choose a different payment method for each renewal payment. | Some payment gateways support automatic renewals (see Subscription Payment Gateway Guide for more details). The same payment method is used for all renewal payments (unless payment fails). |
+| Shipping Method | Customer can pick a different shipping method for each renewal payment. | The same shipping method is used for all renewal payments (unless payment fails). |
+| Changing Address | The customer can enter a different billing and/or shipping address for each renewal. | The same billing and shipping address (from the parent order) is used for each renewal. Customers can update an address for future renewal orders. |
+| Email Notifications | If enabled, the Customer Renewal Invoice is emailed to the customer to prompt them to log in and pay to renew the subscription. After payment is complete, the customer receives the Processing/Completed Renewal Order email, and the store manager receives the  New Renewal Order notification. | If enabled, the Processing or Completed Renewal Order email is sent to the customer as a record of automatic payment. Store Manager receives New Renewal Order notification immediately. |
 
 ## Automatic Recurring Payments
 
@@ -47,7 +47,7 @@ When you activate both manual and automatic renewals in your store, it’s helpf
 
 With automatic payments, Subscriptions charges recurring payments without needing customer or store manager involvement. WooCommerce Subscriptions handles the payment through the payment gateway used for the initial purchase, making it the most convenient option for you and your customers.
 
-For a payment gateway extension to provide automatic payments, the extension developer must [integrate their extension with Subscriptions](https://woocommerce.com/document/payment-gateway-integration-guide/). You can find a current list of payment gateways that support automatic payments at: [Subscription Payment Gateways](https://woocommerce.com/document/payment-gateways/). The [Payment Gateways section](https://woocommerce.com/document/subscriptions/store-manager-guide/#payment-gateway-settings)of Subscriptions’ Settings on your site also lists payment gateways that support automatic recurring payments.
+For a payment gateway extension to provide automatic payments, the extension developer must [integrate their extension with Subscriptions](https://woocommerce.com/document/payment-gateway-integration-guide/). You can find a current list of payment gateways that support automatic payments at [Subscription Payment Gateways](https://woocommerce.com/document/payment-gateways/). The [Payment Gateways section](https://woocommerce.com/document/subscriptions/store-manager-guide/#payment-gateway-settings)of Subscriptions’ Settings on your site also lists payment gateways that support automatic recurring payments.
 
 Automatic payments are **on** by default. To turn *off* automatic payments, tick the [Turn Off Automatic Payments](https://woocommerce.com/document/store-manager-guide/#turn-off-automatic-payments) checkbox at Subscriptions settings.
 
@@ -57,15 +57,15 @@ Automatic payments are **on** by default. To turn *off* automatic payments, tick
 
 With manual payments, a subscription has a status of  [on-hold](https://woocommerce.com/document/subscriptions/statuses/#on-hold-subscription-status) until the customer logs into your store and pays to renew it.
 
-For example, if a subscription costs $100/year, 1 year after the customer first signed up, Subscriptions puts the subscription on-hold and generates a new order for the $100 renewal (and emails it to the customer if your store has enabled the *Customer Renewal Invoice* email). Once the customer logs into your store and pays $100, Subscriptions reactivates the subscription for another year.
+For example, if a subscription costs $100/year, 1 year after the customer first signed up, Subscriptions puts the subscription on hold and generates a new order for the $100 renewal (and emails it to the customer if your store has enabled the *Customer Renewal Invoice* email). Once the customer logs into your store and pays $100, Subscriptions reactivates the subscription for another year.
 
 The manual renewal payment process uses the standard WooCommerce checkout flow. A customer pays for renewal in much the same way a customer would purchase a product or new subscription. A walkthrough of the manual renewal payment process is available in [Subscriber’s View](https://woocommerce.com/document/subscriptions/customers-view/pay-for-renewal/#manual-payment-for-a-subscription-renewal).
 
-When a subscription accepts manual renewal payments, the customer can choose a *different* payment method for *each* renewal payment. Any payment method active on your store is available for use as an option. We don’t recommend manual renewal payments for subscriptions that renew frequently (more than once per year) because they require customers to take action to continue their subscriptions; this could result in less customers renewing since it requires an additional step.
+When a subscription accepts manual renewal payments, the customer can choose a *different* payment method for *each* renewal payment. Any payment method active on your store is available for use as an option. We don’t recommend manual renewal payments for subscriptions that renew frequently (more than once per year) because they require customers to take action to continue their subscriptions; this could result in fewer customers renewing since it requires an additional step.
 
 Manual renewal payments are off by default. To accept manual payments, you must enable *Accept Manual Renewals*.
 
-You can also choose whether to send the customer an email to remind them to log into the store and make the renewal payment by enabling or disabling the **Customer Renewal Invoice** email.
+You can also decide whether to send the customer an email to remind them to log into the store and make the renewal payment by enabling or disabling the **Customer Renewal Invoice** email.
 
 More info on the impact of manual payments on payment gateways at [Subscription Payment Gateways](https://woocommerce.com/document/payment-gateways/).
 
@@ -85,7 +85,7 @@ To provide subscribers with a more generous payment period, Subscriptions sets t
 
 [↑ Back to top](#doc-title)
 
-The recurring payment process is complex. The flow chart below maps out the most important actions performed to handle a subscription renewal. Follow each flow and see which steps WooCommerce Subscriptions performs for both the automatic and manual renewal methods.
+The recurring payment process is complex. The flowchart below maps out the most important actions performed to handle a subscription renewal. Follow each flow and see which steps WooCommerce Subscriptions performs for both the automatic and manual renewal methods.
 
 ![](https://woocommerce.com/wp-content/uploads/2013/07/Renewal-Process-Flowchart-Scheduled-Renewal.png?strip=all&w=704)*Subscription Renewal Process Flow Chart*
 
@@ -93,56 +93,49 @@ The recurring payment process is complex. The flow chart below maps out the most
 
 [↑ Back to top](#doc-title)
 
-The **early renewal** process is a sort of hybrid of manual and automatic renewal processes. While Subscriptions offers early renewal on both automatic and manual renewal subscriptions, once the process begins, the customer either needs to go [through the checkout process or pay via a early renewal modal](https://woocommerce.com/document/subscriptions/store-manager-guide/#early-renewal).  Doing this, however, does not change an automatic renewal to manual or vice versa. You can read more about the specifics in the [Early Renewal Guide](https://woocommerce.com/document/subscriptions/early-renewal/).
+The **early renewal** process is a sort of hybrid of manual and automatic renewal processes. While Subscriptions offers early renewal on both automatic and manual renewal subscriptions, once the process begins, the customer either needs to go [through the checkout process or pay via an early renewal modal](https://woocommerce.com/document/subscriptions/store-manager-guide/#early-renewal). Doing this, however, does not change an automatic renewal to manual or vice versa. You can read more about the specifics in the [Early Renewal Guide](https://woocommerce.com/document/subscriptions/early-renewal/).
 
-### How Subscriptions calculates the “new renewal” payment date
+### How Subscriptions calculates the next payment date
 
 [↑ Back to top](#doc-title)
 
 In general, Subscriptions calculates the next renewal date based on the last payment date, not the scheduled date. For example, if a customer pays a late renewal on March 3rd, Subscriptions sets the next renewal for April 3rd. This is to ensure the subscriber receives access to the subscription for the full period of each renewal.
 
-However, for [synchronized subscription](https://woocommerce.com/document/subscriptions/renewal-synchronisation/) products, Subscriptions **maintains** the scheduled date regardless of late payments. If a subscription synchronized to the 1st of each month has a late payment on March 3rd, Subscriptions still sets the next renewal for April 1st. **This approach preserves synchronized renewal dates.**
+However, for [subscription products with aligned billing dates](https://woocommerce.com/document/subscriptions/billing-date-alignment), Subscriptions **maintains** the scheduled date regardless of late payments. If a subscription synchronized to the 1st of each month has a late payment on March 3rd, Subscriptions still sets the next renewal for April 1st. **This approach preserves aligned billing dates across all subscribers.**
 
-To **always** calculate the next payment date from the last scheduled payment date (regardless of if the subscription is synchronized or not), either install the free [WooCommerce Subscriptions – Preserve Billing Schedule](https://github.com/Prospress/woocommerce-subscriptions-preserve-billing-schedule) plugin or add the [following snippet](https://woocommerce.com/document/customizing-woocommerce-best-practices/#section-4):
+To **always** calculate the next payment date from the last scheduled payment date (regardless of whether the subscription uses billing date alignment or not), either install the free [WooCommerce Subscriptions – Preserve Billing Schedule](https://github.com/Prospress/woocommerce-subscriptions-preserve-billing-schedule) plugin or add the [following snippet](https://woocommerce.com/document/customizing-woocommerce-best-practices/#section-4):
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
+```
+<?php
 
-  [Show hidden characters]({{ revealButtonHref }})
-
-  |  | <?php |
-| --- | --- |
-|  |  |
-|  | /* |
-|  | * By default, WooCommerce Subscriptions will calculate the next payment date for a subscription from the time of the last payment. |
-|  | * This snippet changes it to calculate the next payment date from the scheduled payment date, not the time the payment was actually processed. |
-|  | */ |
-|  |  |
-|  | add_filter( 'wcs_calculate_next_payment_from_last_payment', '__return_false' ); |
-      [view raw](https://gist.github.com/woogists/be588ba8766179e722ae3a9f1c38bc0d/raw/4ca88838a2d1db1005458915abe0ef53cb6e63e0/woocommerce-subscriptions-preserve-billing-schedule.php)
-        [woocommerce-subscriptions-preserve-billing-schedule.php](https://gist.github.com/woogists/be588ba8766179e722ae3a9f1c38bc0d#file-woocommerce-subscriptions-preserve-billing-schedule-php)
-        hosted with ❤ by [GitHub](https://github.com)
+/* 
+ * By default, WooCommerce Subscriptions will calculate the next payment date for a subscription from the time of the last payment. 
+ * This snippet changes it to calculate the next payment date from the scheduled payment date, not the time the payment was actually processed.
+ */
+ 
+add_filter( 'wcs_calculate_next_payment_from_last_payment', '__return_false' );
+```
 
 ### Testing the renewal process
 
 [↑ Back to top](#doc-title)
 
-To test the renewal process, follow steps outlined in [processing a renewal for an active subscription](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/update-an-existing-subscription/#process-a-renewal). This triggers all normal automatic or manual renewal process steps.
+To test the renewal process, follow the steps outlined in [processing a renewal for an active subscription](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/update-an-existing-subscription/#process-a-renewal). This triggers all normal automatic or manual renewal process steps.
 
 To use this process, you need to purchase a test subscription with a gateway that requires either:
 
-- manual renewal payments (e.g. Cheque, Bank transfer); or
+- manual renewal payments (e.g., check, bank transfer); or
 - a payment gateway that supports [modifications to the renewal date](https://woocommerce.com/document/subscriptions/payment-gateways/#advanced-features).
 
 ### Custom fields/meta data copied to renewal orders
 
 [↑ Back to top](#doc-title)
 
-WooCommerce Subscriptions copies all [custom fields](http://codex.wordpress.org/Custom_Fields) (i.e. metadata) set on an order during checkout to the subscription(s) created for that order during checkout. When the subscription renews, Subscriptions will then copy that data to the renewal order.
+WooCommerce Subscriptions copies all [custom fields](http://codex.wordpress.org/Custom_Fields) (i.e., metadata) set on an order during checkout to the subscription(s) created for that order during checkout. When the subscription renews, Subscriptions will then copy that data to the renewal order.
 
 If you add any additional [custom fields to the subscription manually](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/), Subscriptions copies that data to all future renewal orders.
 
-**For Developers:** Subscriptions offers a way to exclude specific meta-data from copying to renewal orders. Developers can use the 
+**For Developers:** Subscriptions offers a way to exclude specific metadata from copying to renewal orders. Developers can use the 
 ```
 'wcs_renewal_order_meta_query'
 ```
@@ -164,7 +157,7 @@ Once you deactivate the payment plugin/extension (under **Plugins** in WordPress
 
 - The user will need to manually renew their subscription using a different payment method.  Additionally, the payment method will no longer be available as an option to the customer.
 
-- The **Payment Method** in the subscription info (**WooCommerce > Subscriptions** > **Edit Subscription** )  will read as  **Manual Renewal**.
+- The **Payment Method** in the subscription info (**WooCommerce > Subscriptions** > **Edit Subscription**) will read as **Manual Renewal**.
 
 ![](https://woocommerce.com/wp-content/uploads/2022/08/before-stripe-disabled.png?w=620)Before Stripe gateway disabled
 
@@ -175,19 +168,21 @@ Once you deactivate the payment plugin/extension (under **Plugins** in WordPress
 woocommerce_scheduled_subscription_payment
 ```
 
- event  in Action Scheduler)  a renewal order is created with **Pending payment** status.
+ event in Action Scheduler), a renewal order is created with **Pending payment** status.
 
 - The order note on the renewal order will read: **Manual renewal order awaiting customer payment**:
 
 ![](https://woocommerce.com/wp-content/uploads/2022/08/manual-renewal-after-disabled.png?strip=all&w=704)A renewal order switching to manual payment method
 
-**Note:** This only occurs when you deactivate the payment gateway plugin entirely. If you turn off a payment method from **WooCommerce > Settings > Payments**, Subscriptions continues to process automatic recurring payments for active subscriptions that use the payment gateway as normal, but new subscribers or those that manually renew will not see that payment option at checkout.
+**Note:**
+
+This only occurs when you deactivate the payment gateway plugin entirely. If you turn off a payment method from WooCommerce > Settings > Payments, Subscriptions continues to process automatic recurring payments for active subscriptions that use the payment gateway as normal. However, new subscribers or those that manually renew will not see that payment option at checkout.
 
 ### Reactivating a payment gateway associated with a subscription
 
 [↑ Back to top](#doc-title)
 
-If you *reactivate* your payment gateway plugin, then your subscriptions should automatically revert back to automatic recurring payments. This has been tested with WooPayments, Stripe and PayPal Payments, however, we cannot guarantee the same behavior when reactivating for third party payment gateways.
+If you *reactivate* your payment gateway plugin, then your subscriptions should automatically revert to automatic recurring payments. This has been tested with WooPayments, Stripe, and PayPal Payments; however, we cannot guarantee the same behavior when reactivating for third-party payment gateways.
 
 ## Failed Payment Handling
 
@@ -195,9 +190,9 @@ If you *reactivate* your payment gateway plugin, then your subscriptions should 
 
 As seen in the [Renewal Process flow chart](https://woocommerce.com/document/subscriptions/renewal-process/#the-renewal-process), the default behavior when a recurring payment fails is:
 
-1. To leave the subscription *on-hold* i.e., do not reactivate it.
+1. To leave the subscription *on hold,* i.e., do not reactivate it.
 2. Subscriptions sends an email to the customer to notify them of payment failure (if *Customer Renewal Invoice* is activated).
-3. Customer logs in and click [the “Pay” button next to the failed order in My Account or My Account > View Subscription page](https://woocommerce.com/document/subscriptions/customers-view/pay-for-renewal/) to pay for failed renewal and reactivate the subscription.
+3. Customer logs in and selects [the “Pay” button next to the failed order in My Account](https://woocommerce.com/document/subscriptions/customers-view/pay-for-renewal/) or the [My Account > View Subscription page](https://woocommerce.com/document/subscriptions/customers-view/pay-for-renewal/) to pay for the failed renewal and reactivate the subscription.
 
 When paying for a failed renewal order, Subscriptions displays only gateways that [support payment method changes](https://woocommerce.com/document/subscriptions/payment-gateways/#advanced-features) by the customer. This enables WooCommerce Subscriptions to resume the subscription and process future automatic recurring payments with the new payment method chosen.
 
@@ -207,7 +202,7 @@ When paying for a failed renewal order, Subscriptions displays only gateways tha
 
 WooCommerce Subscriptions provides an automatic retry system for failed (automatic) recurring payments. You can [activate this](https://woocommerce.com/document/subscriptions/store-manager-guide/#retry-failed-payments) to retry payments multiple times and email customers to complete the payment. For more details, see [Failed Recurring Payment Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/). This differs from the [default approach](https://woocommerce.com/document/subscriptions/renewal-process/#failed-payment-handling) when a customer would receive an email and need to take action to renew their subscription.
 
-The flow chart outlines how this process works:
+Theflowchartt outlines how this process works:
 
 ![](https://woocommerce.com/wp-content/uploads/2013/07/Renewal-Process-Flowchart-Automatic-Retries.png?strip=all&w=704)*Automatic Renewal Retry Process*
 
@@ -217,7 +212,7 @@ The flow chart outlines how this process works:
 
 Another type of renewal not included in the guide above is resubscribing. After a customer’s subscription has *expired* or Subscriptions has *cancelled* it, the customer can create a *new* subscription that extends the old subscription’s terms [by using the resubscribe button](https://woocommerce.com/document/subscriptions/customers-view/subscribers-resubscribe-guide/) on the **My Account** page.
 
-Resubscribing to a subscription that ended will create a new subscription for the same product or products; but it does not have the same behavior as purchasing a new subscription, or renewing a subscription. The [Resubscribe Guide](https://woocommerce.com/document/subscriptions/resubscribe/) explains these behaviors in more detail.
+Resubscribing to a subscription that ended will create a new subscription for the same product or products, but it does not have the same behavior as purchasing a new subscription or renewing a subscription. The [Resubscribe Guide](https://woocommerce.com/document/subscriptions/resubscribe/) explains these behaviors in more detail.
 
 ## Questions and support
 

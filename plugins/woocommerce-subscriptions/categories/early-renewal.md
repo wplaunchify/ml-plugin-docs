@@ -10,7 +10,7 @@
 
 # Subscriptions Early Renewal Guide
 
-			[WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/)allows customers to renew subscriptions early. This means that a customer doesn’t have to wait until the next renewal payment date in order to pay for the next renewal. They can opt to renew early and have the next payment date appropriately adjusted.
+			[WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/)allows customers to renew subscriptions early. This means that a customer doesn’t have to wait until the next renewal payment date to pay for the next renewal. They can opt to renew early and have the next payment date appropriately adjusted.
 
 ## Enable Early Renewal
 
@@ -18,7 +18,7 @@
 
 Early renewals are an optional feature. It can be enabled or disabled by the store manager.
 
-In order to change the early renewal setting:
+To change the early renewal setting:
 
 1. Go to**WooCommerce > Settings > Subscriptions**
 2. Select the checkbox under “Renewals” labeled “Early Renewal”
@@ -26,7 +26,7 @@ In order to change the early renewal setting:
 
 ![](https://woocommerce.com/wp-content/uploads/2024/07/early-renewal-woocommerce-subscriptions.png?w=980)Early Renewal Setting – Enabled
 
-**Early Renewal via a Modal** – After enabling early renewal payments, a second checkbox will appear that allows you to enable early renewal payments via a modal. Enabling this setting gives users who have automatic renewal payments enabled, and a current payment method assigned to their subscription, the option to renew in one click from their account area.
+**Early Renewal via a Modal** – After enabling early renewal payments, a second checkbox will appear that allows you to enable early renewal payments via a modal. Enabling this setting gives users who have automatic renewal payments enabled and a current payment method assigned to their subscription the option to renew in one click from their account area.
 
 Instead of being taken to the checkout to complete their renewal payment, a modal window will appear asking them to confirm their early renewal payment. After confirming the payment, their renewal order will be processed, and a success or failure notification will show in the account area on the same page.
 
@@ -36,13 +36,13 @@ Instead of being taken to the checkout to complete their renewal payment, a moda
 
 [↑ Back to top](#doc-title)
 
-The flow chart below maps out the most important actions performed to handle an early renewal. Follow each flow and see which steps Woo Subscriptions performs for both the automatic and manual early renewal methods as well as when using the checkout or early renewal modal flow.
+The flowchart below maps out the most important actions performed to handle an early renewal. Follow each flow and see which steps Woo Subscriptions performs for both the automatic and manual early renewal methods as well as when using the checkout or early renewal modal flow.
 
 ![Early Renewal Process Flowchart](https://woocommerce.com/wp-content/uploads/2018/12/Renewal-Process-Flowchart-Early-Renewal.png?w=950)Early Renewal Process Flowchart
 
 The customer can undertake the early renewal process on the [view subscription](https://woocommerce.com/document/subscriptions/customers-view/#section-2) page.
 
-In order to process an early renewal as a [subscriber](https://woocommerce.com/document/subscriptions/customers-view/#section-23):
+To process an early renewal as a [subscriber](https://woocommerce.com/document/subscriptions/customers-view/#section-23):
 
 1. Go to**My account > Subscriptions**
 2. View chosen subscription
@@ -55,15 +55,15 @@ In order to process an early renewal as a [subscriber](https://woocommerce.com/d
 
 [↑ Back to top](#doc-title)
 
-The Renew Now button will only appear for those subscriptions which are eligible for early renewal.
+The Renew Now button will only appear for those subscriptions that are eligible for early renewal.
 
 In order for the Renew Now button to appear, the following conditions must be met:
 
 - Early renewal feature must be enabled
 - Subscription must have an Active status
 - Payment method must support[date changes](https://woocommerce.com/document/subscriptions/payment-gateways/#advanced-features)
-- Subscription must have a recurring price, i.e. it does not have a $0 total
-- Subscription does not contain any subscriptions products synchronized for renewals
+- Subscription must have a recurring price, i.e., it does not have a $0 total
+- Subscription does not contain any subscription products with aligned billing dates
 - Subscription must not currently be in a trial period
 - The next payment date is approaching the point at which the subscription billing is set to expire
 
@@ -100,18 +100,18 @@ To view the early renewal subscription notes:
 
 [↑ Back to top](#doc-title)
 
-### Why doesn’t the “Renew Now” button show up for synchronized subscriptions?
+### Why doesn’t the “Renew Now” button show up for subscriptions with aligned billing dates?
 
 [↑ Back to top](#doc-title)
 
-The **Renew Now** button doesn’t show up for [synchronized subscriptions](https://woocommerce.com/document/subscriptions/renewal-synchronisation/) because synced products are usually created for reasons not suited to early renewal.
+The **Renew Now** button doesn’t show up for[subscriptions with aligned billing dates](https://woocommerce.com/document/subscriptions/billing-date-alignment)because products with aligned billing dates are usually created for reasons not suited to early renewal.
 
 There is a filter that can be used to remove this restriction called 
 ```
 'wcs_allow_synced_product_early_renewal'
 ```
 
-. Below is an example of using this filter to allow all synced products to renew early.
+. Below is an example of using this filter to allow all aligned products to renew early.
 
 ```
 add_filter( 'wcs_allow_synced_product_early_renewal', '__return_true', 10 );
@@ -121,7 +121,7 @@ add_filter( 'wcs_allow_synced_product_early_renewal', '__return_true', 10 );
 
 [↑ Back to top](#doc-title)
 
-Yes, it is possible for customers to renew early, and then renew early again to extend the payment date for another billing cycle.
+Yes, it is possible for customers to renew early and then renew early again to extend the payment date for another billing cycle.
 
 ## Questions and support
 

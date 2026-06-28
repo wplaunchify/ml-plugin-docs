@@ -10,15 +10,7 @@
 
 # Creating a Subscription Product
 
-			WooCommerce Subscriptions allows you to add simple subscription products or variable subscription products to your store, much like WooCommerce does for normal products. Much about subscription product creation will be familiar if you’ve made other products in WooCommerce. However, subscription products have some [additional options](#subscription-product-options) to control the subscriber experience.
-
-![](https://fast.wistia.com/embed/medias/b6514xmal0/swatch)
-
-**Use these links to view video guides for creating each type of Subscription Product**:
-[Simple Subscription Product](#wistia_b6514xmal0)
-[Variable Subscription Product](#wistia_yiww9wlyjy)
-
----
+			WooCommerce Subscriptions lets you create [simple](#simple-subscriptions) or [variable](#variable-subscriptions) subscription products or [add subscription plans to supported non-subscription product types](#purchase-options-for-non-subscription-product-types): Simple Products, Variable Products, Product Bundles, and Composite Products. If you’ve created other product types, much of the setup will feel familiar—but subscription products include additional settings to control the subscriber experience.
 
 ## Simple Subscriptions
 
@@ -28,11 +20,11 @@ To create a Simple subscription product:
 
 1. Go to: **Products > Add New.**
 2. In the Product data panel, select **Simple subscription** as the product type.
-3. Set the terms for the subscription, including **price**, **payment schedule**, **length**, **sign-up fee** and **trial period** (length, sign-up fee and trial period are all optional).
+3. Set the terms for the subscription, including **price**, **payment schedule**, **length**, **sign-up fee,** and **trial period** (length, sign-up fee, and trial period are all optional).
 4. Add product details you require, as instructed by [Managing Products](https://woocommerce.com/document/managing-products/).
 5. **Publish**.
 
-![Adding a subscription product.](https://woocommerce.com/wp-content/uploads/2024/06/Annotation-on-2024-06-27-at-22-17-06.png?w=980)Adding a subscription product.
+![](https://woocommerce.com/wp-content/uploads/2026/04/adding-a-subscription-product.png?w=980)Adding a subscription product.
 
 ## Variable Subscriptions
 
@@ -42,41 +34,43 @@ Variable subscriptions are similar to [Variable Products](https://woocommerce.co
 
 Variable subscriptions are an effective way to build products with different options or tiers that subscribers can switch between. See our [Subscription Switching guide](https://woocommerce.com/document/subscriptions/switching-guide/) for details.
 
-![](https://woocommerce.com/wp-content/uploads/2024/07/Variable-subscription-fields-woocommerce.png?strip=all&w=704)The additional fields added to variable subscription products
+![](https://woocommerce.com/wp-content/uploads/2026/04/additional-fields-added-to-variable-subscription-products.png?strip=all&w=704)The additional fields added to variable subscription products
 
 For more details on managing variable products, check our [Variable Products documentation](https://woocommerce.com/document/variable-product/).
 
-If you’d like to see how variable products work in a real-world scenario, check out our [Monthly Coffee Subscription](https://woocommerce.com/document/subscriptions-use-case-coffee/) use case for more details.
+If you’d like to see how variable products work in a real-world scenario, see our [Monthly Coffee Subscription](https://woocommerce.com/document/subscriptions-use-case-coffee/) use case for more details.
 
-**Are your subscription variations showing unexpected product data when added to cart?** Ensure that you have all attributes of all variations defined. Check the [advanced topics](https://woocommerce.com/document/variable-product/#variations-with-undefined-attributes) section of our variable products documentation for more details on how WooCommerce handles variations with undefined attributes.
+**Are your subscription variations showing unexpected product data when added to the cart?** Ensure that you have all attributes of all variations defined. Check the [advanced topics](https://woocommerce.com/document/variable-product/#variations-with-undefined-attributes) section of our variable products documentation for more details on how WooCommerce handles variations with undefined attributes.
 
-## Subscription Product Options
+## Product options for the Simple and Variable Subscription product types
 
 [↑ Back to top](#doc-title)
 
-Subscription Products have some additional options that Simple and Variable products don’t have. These are:
+When creating a Simple or Variable Subscription product, you can configure the following options:
 
 - **Subscription Price** – The recurring amount that charges at each renewal.
 - **Payment Schedule** – Select how often to take the subscription payment in the field located next to the subscription price.
-- **Subscription Length** – Optionally set your subscriptions to end after a certain length of time.
+- [Subscription Expiration](#subscription-expiration) – Optionally set your subscriptions to end after a certain length of time.
 - **Sign-up fee** – Optionally charge a one-time fee at checkout when customers subscribe.
 - **Free Trial Period** –  Optionally add a free trial period before beginning billing for the subscription.
 - [Gifting](#gifting) – Optionally allow customers to purchase a subscription product for someone else.
+- **Billing Date Alignment** – Align renewal dates for all subscribers to a specific day. See our [Guide to Billing Date Alignment](https://woocommerce.com/document/subscriptions/billing-date-alignment) for details.
 - **One time Shipping** – Enable this setting under **Product Data > Shipping** if you only need to charge shipping for the first order of a subscription.
-- **Limit Subscription** – Adjust this setting under **Product data > Advanced** to limit customers to only one active subscription, or one subscription of any status.
-- **Renewal Synchronization** – To make all subscriptions to a particular product renew at once. See our [subscription renewal synchronization guide](https://woocommerce.com/document/subscriptions/renewal-synchronisation/) for details.
+- **Limit Subscription** – Adjust this setting under **Product data > Advanced** to limit customers to only one active subscription or one subscription of any status.
 
-Inventory management for subscription products is generally no different than [setting stock](https://woocommerce.com/document/managing-products/product-editor-settings/#inventory-section) for a simple product or variable product. Each product in a subscription reduces stock at each renewal. See **How Subscriptions Manages Stock** for more details and options to alter this behavior if you need.
+Inventory management for subscription products is generally no different from [setting stock](https://woocommerce.com/document/managing-products/product-editor-settings/#inventory-section) for a simple product or variable product. Each product in a subscription reduces stock at each renewal. See **How Subscriptions Manages Stock** for more details and options to alter this behavior if you need.
 
 ### Subscription price
 
 [↑ Back to top](#doc-title)
 
-When creating a subscription product, you will need to enter the price that your customers will pay for each billing period. Customers will pay this amount when they first sign up, in addition to any [sign-up fee](#sign-up-fees) unless there is a [free trial period](#free-trial-period). Then, they pay this amount on a recurring basis at beginning of each billing period.
+When creating a subscription product, you will need to enter the price that your customers will pay for each billing period. Customers will pay this amount when they first sign up, in addition to any [sign-up fee,](#sign-up-fees) unless there is a [free trial period](#free-trial-period). Then, they pay this amount on a recurring basis at the beginning of each billing period.
 
-![](https://woocommerce.com/wp-content/uploads/2024/07/woocommerce-subscription-price.png?strip=all&w=704)*Subscription price field on Edit Product Screen*
+![](https://woocommerce.com/wp-content/uploads/2026/04/subscription-price-field-on-edit-product-screen.png?strip=all&w=704)*Subscription price field on Edit Product Screen*
 
-**Note:** If left empty, the product will not be purchasable. If you intend to create a free subscription, please enter 0 in this field.
+**Note:**
+
+If left empty, the product will not be purchasable. If you intend to create a free subscription, please enter 0 in this field.
 
 ### Setting a payment schedule
 
@@ -84,45 +78,43 @@ When creating a subscription product, you will need to enter the price that your
 
 Subscriptions gives you a lot of flexibility in scheduling renewals for your subscription products.
 
-Out of the box, you can charge renewal payments using a billing period of **daily**, **weekly**, **monthly** or **annually**, and at **any interval between 1 and 6** (inclusive).
+Out of the box, you can charge renewal payments using a billing period of **daily**, **weekly**, **monthly,** or **annually**, and at **any frequency between 1 and 6** (inclusive).
 
 Want to charge a fortnightly payment? Set the price to **every 2nd week**.
 
 Want to bill quarterly? Set the price to**every 3rd month**.
 
-#### What is the exact interval for a monthly subscription, i.e. is it 30 days?
+#### What is the exact interval for a monthly subscription, i.e., is it 30 days?
 
 With a daily subscription, payments trigger every 24 hours. A day is always 24 hours, so this is no issue. But what about months, since the number of days differs?
 
-The amount of time between a monthly billing interval is one month. This means 30 days for some months (April, June etc.), 31 days for others, and then 28 or 29 days for February. If a monthly subscription is created on the 15th of February, the next payment will be charged on the 15th March. If the billing interval for a subscription is every 2 months and it is created on the 15th of February, the next payment will be charged on the 15th April.
+The amount of time between a monthly billing interval is one month. This means 30 days for some months (April, June, etc.), 31 days for others, and then 28 or 29 days for February. If a monthly subscription is created on the 15th of February, the next payment will be charged on the 15th of March. If the billing interval for a subscription is every 2 months and it is created on the 15th of February, the next payment will be charged on the 15th of April.
 
 #### What about subscriptions purchased on the last day of the month?
 
-If a subscription is purchased on the last day of the month, **recurring payments will continue to be charged on the last day of the month**. For example, if a $10 / month subscription is purchased on the 31st December, its next 4 payments will be charged on:
+If a subscription is purchased on the last day of the month, **recurring payments will continue to be charged on the last day of the month**. For example, if a $10/month subscription is purchased on the 31st of December, its next 4 payments will be charged on:
 
 - 31st January
 - 28th February (or 29th February for a leap year)
 - 31st March
 - 30th April
 
-#### What about recurring payments on the 28th, 29th or 30th day of the month?
+#### What about recurring payments on the 28th, 29th, or 30th day of the month?
 
-This system will also be used if the day a payment is normally charged is not the last day of the month, but it is on the 28th, 29th or 30th day of the month, and the next payment is due in February, which has no 30th day (and no 29th day in non-leap years).
+This system will also be used if the day a payment is normally charged is not the last day of the month, but it is on the 28th, 29th, or 30th day of the month, and the next payment is due in February, which has no 30th day (and no 29th day in non-leap years).
 
 For example, if a customer purchases a $10/month subscription on the 29th of December 2012, Subscriptions will charge the next 4 payments on:
 
 - 29th January 2013- not the last day of the month
-- 28th February 2013 – notice it has switched to the last day of the month as there is no 29th day in February when it is not a leap year
+- 28th February 2013 – notice it has switched to the last day of the month, as there is no 29th day in February when it is not a leap year
 - 31st March 2013 (last day of the month)
 - 30th April 2013 (last day of the month)
 
 This logic ensures that a payment is made every month, and therefore, that one year includes 12 payments.
 
-**Note:**
+**Note:** Subscriptions uses the payment schedule to generate recurring orders (part of the [renewal process](https://woocommerce.com/document/subscriptions/renewal-process/)).  If you are shipping physical goods, use the same payment schedule as your intended shipping schedule (e.g., $5/month for a product shipped monthly, not $60/year for a product shipping monthly). By using the same shipping and billing schedule, you can use recurring orders for each payment to manage shipping. That said, there is a way to have a [different payment schedule and shipping schedule](https://woocommerce.com/document/subscriptions/faq/#section-69).
 
-Subscriptions uses the payment schedule to generate recurring orders (part of the [renewal process](https://woocommerce.com/document/subscriptions/renewal-process/)).  If you are shipping physical goods, use the same payment schedule as your intended shipping schedule (e.g., $5/month for a product shipped monthly, not $60/year for a product shipping monthly). By using the same shipping and billing schedule, you can use recurring orders for each payment to manage shipping. That said, there is a way to have a [different payment schedule and shipping schedule](https://woocommerce.com/document/subscriptions/faq/#section-69).
-
-### Subscription length
+### Subscription expiration
 
 [↑ Back to top](#doc-title)
 
@@ -140,7 +132,7 @@ Do not stop until cancelled
 
  set in the *Stop renewing after* field can renew indefinitely as long as renewal payments are successful.
 
-For example, consider a six week fitness course, billed weekly, with a fee of $25/week. The length of the subscription would be 6 weeks and the billing period would be one week. In the subscription product details, this would be:
+For example, consider a six-week fitness course, billed weekly, with a fee of $25/week. The length of the subscription would be 6 weeks, and the billing period would be one week. In the subscription product details, this would be:
 
 Subscription price: 
 ```
@@ -152,7 +144,7 @@ Stop renewing after:
 6 Weeks
 ```
 
-![](https://woocommerce.com/wp-content/uploads/2024/07/subscription-length-woocommerce.png?strip=all&w=704)Setting the subscription length
+![](https://woocommerce.com/wp-content/uploads/2026/04/setting-the-subscription-expiration.png?strip=all&w=704)Setting the subscription expiration
 
 **Note:**
 
@@ -162,11 +154,11 @@ Subscription length and billing period are not the same thing. The subscription 
 
 [↑ Back to top](#doc-title)
 
-Setting a sign-up fee on a subscription charges customers a one-time amount to sign-up for a subscription.
+Setting a sign-up fee on a subscription charges customers a one-time amount to sign up for a subscription.
 
 This sign-up fee is in addition to any recurring amount that you have set for the subscription product. For example, if you create a subscription product for $75 per month with a $200 sign-up fee, the subscription’s initial total during checkout will be $275. Then $75 a month after that.
 
-Sign-up fees always process at the beginning of the subscription, even when the subscription includes a free trial. If the the subscription product has a free trial + a sign up fee, a customer pays the sign-up fee on the initial payment/purchase but not the first recurring total. For example, if you create a subscription product for $75 per month, with a $200 sign-up fee and a 30-day free trial, the customer’s payment at checkout will be $200 (the sign-up fee only).
+Sign-up fees always process at the beginning of the subscription, even when the subscription includes a free trial. If the subscription product has a free trial + a sign-up fee, a customer pays the sign-up fee on the initial payment/purchase but not the first recurring total. For example, if you create a subscription product for $75 per month, with a $200 sign-up fee and a 30-day free trial, the customer’s payment at checkout will be $200 (the sign-up fee only).
 
 If you need to charge the sign-up fee *after*a trial period ends, take a look at this use for [Charging a Sign-Up Fee after a Free Trial Period](https://woocommerce.com/document/subscriptions-use-case-charging-one-time-fee-signup-fee-after-the-free-trial-period/). Note that it does require additional extensions.
 
@@ -178,9 +170,9 @@ You can add a free trial period to the beginning of a subscription.
 
 A free trial increases the length of a subscription. For example, if you create a subscription of $5 per month for 6 months with a 1-month free trial period, the subscription will expire after 7 months.
 
-When a subscription has a sign-up fee and no free trial period, the initial payment is the sign-up fee + the recurring payment price. For example, a $5 per month subscription with $10 sign-up fee will charge $15 for the first month. However, if the subscription product includes a free trial, the customer only pays the sign-up fee at checkout ($10).  If there is no sign-up fee, the customer pays nothing at checkout.
+When a subscription has a sign-up fee and no free trial period, the initial payment is the sign-up fee + the recurring payment price. For example, a $5 per month subscription with a $10 sign-up fee will charge $15 for the first month. However, if the subscription product includes a free trial, the customer only pays the sign-up fee at checkout ($10). If there is no sign-up fee, the customer pays nothing at checkout.
 
-If you enable [$0 initial checkout without a payment method](https://woocommerce.com/document/subscriptions/store-manager-guide/#misc-settings)and the product lacks a sign-up fee, subscriptions move to “[On Hold](https://woocommerce.com/document/subscriptions/statuses/#on-hold-subscription-status)” status at the end of the trial period while they await the customer’s first renewal payment.
+If you enable [$0 initial checkout without a payment method](https://woocommerce.com/document/subscriptions/store-manager-guide/#misc-settings)and the product lacks a sign-up fee, subscriptions move to “On Hold” status at the end of the trial period while they await the customer’s first renewal payment.
 
 ### Gifting
 
@@ -188,7 +180,13 @@ If you enable [$0 initial checkout without a payment method](https://woocommerce
 
 If [Gifting is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#gifting-settings) in the subscription settings, the option to enable and disable gifting for the product will be visible in the General product settings. If no option is selected, the global settings will apply to the product.
 
-![Gifting Option on Subscription Product Setting](https://woocommerce.com/wp-content/uploads/2025/12/gifting-subscription-1.png?strip=all&w=704)
+![](https://woocommerce.com/wp-content/uploads/2026/04/gifting.png?strip=all&w=704)
+
+### Billing date alignment
+
+[↑ Back to top](#doc-title)
+
+Optionally select a day to align renewal dates for all subscribers on this plan. When set to “Do not align,” renewals are based on each subscriber’s purchase date. See the [Billing Date Alignment documentation](https://woocommerce.com/document/subscriptions/billing-date-alignment) for details.
 
 ### Downloadable File Sharing
 
@@ -222,11 +220,11 @@ When you add a subscription to a downloadable product, anyone with an active sub
 
 Shipping costs for subscription products are normally charged on the initial order *and* all [renewal orders](https://woocommerce.com/document/subscriptions/renewal-process/). However, some products need to ship only once at the start of the subscription, such as mobile phones with a data plan.
 
-Subscriptions products have a **One Time Shipping** option. Use this to only charge shipping once on initial order.
+Subscriptions products have a **One Time Shipping** option. Use this to only charge shipping once on the initial order.
 
 To enable one-time shipping for a product:
 
-1. Go to: **WooCommerce >** **Products > Edit Product** for the select subscription product.
+1. Go to: **WooCommerce >** **Products > Edit Product** for the selected subscription product.
 2. Select **Shipping** in the left menu.
 3. Tick the **One time shipping** checkbox.
 4. **Update** to save.
@@ -235,7 +233,7 @@ To enable one-time shipping for a product:
 
 **Note:**
 
-For shipping to be charged on initial order, the subscription must not have a free trial or be synchronized to a date in the future. The **One-Time Shipping** option will be disabled if your product has a free trial or is synchronized. For One Time Shipping to be possible with these types of subscription products, Subscriptions needs to support a [3-tier price](https://woocommerce.com/document/subscriptions/subscriptions-coupons/limited-payment-coupon-guide/#three-tier-pricing), this is currently not a built-in pricing option.
+For shipping to be charged on the initial order, the subscription must not have a free trial or be aligned to a billing date in the future. The **One-Time Shipping** option will be disabled if your product has a free trial or is aligned. For One Time Shipping to be possible with these types of subscription products, Subscriptions needs to support a [3-tier](https://woocommerce.com/document/subscriptions/subscriptions-coupons/limited-payment-coupon-guide/#three-tier-pricing)price; this is currently not a built-in pricing option.
 
 ### Limit subscriptions
 
@@ -245,7 +243,7 @@ Use the **Limit Subscription** feature to limit a customer to one subscription:
 
 1. Go to: **WooCommerce > Products > Edit Product** for the subscription product you select.
 2. Select **Advanced** in the left menu.
-3. Go to **Limit Subscription**, and select **No limit**, **Limit to one active subscription**, or **Limit to one of any status**.
+3. Go to **Limit Subscription** and select **No limit**, **Limit to one active subscription**, or **Limit to one of any status**.
 
 ![Limit Subscriptions Setting](https://woocommerce.com/wp-content/uploads/2020/07/limit-subscription-setting.png?strip=all&w=704)Limit Subscriptions Setting
 
@@ -263,15 +261,155 @@ When a product has Limit Subscriptions enabled, the limit is also enforced at ca
 
 These checks run when the product is added to the cart. An additional validation runs on the cart and checkout pages to catch items that may have entered the cart through other means (such as session restoration or third-party extensions). If a conflict is detected, the customer sees an error notice and must remove the duplicate before placing the order.
 
-This cart-level enforcement applies regardless of whether **Mixed checkout** is enabled in your store’s subscription settings. When **Mixed checkout** is enabled and a conflict is detected during session loading, the duplicate item is silently removed from the cart, and a notice is displayed.
+This cart-level enforcement applies regardless of whether **Mixed checkout** is enabled in your store’s subscription settings. When **Mixed checkout** is enabled and a conflict is detected during session loading, the duplicate item is silently removed from the cart, and a notice is displayed.
 
 **Switching**
 
-If you [allow switching](https://woocommerce.com/document/subscriptions/switching-guide/#allow-switching) between subscriptions, a customer can [Upgrade or Downgrade](https://woocommerce.com/document/subscriptions/switching-guide/switching-process-and-costs/#switching-process) a limited subscription. Customers are able to change their subscription while still limiting each customer account to one free trial period.
+If you [allow switching](https://woocommerce.com/document/subscriptions/switching-guide/#allow-switching) between subscriptions, a customer can [Upgrade or Downgrade](https://woocommerce.com/document/subscriptions/switching-guide/switching-process-and-costs/#switching-process) a limited subscription. Customers can change their subscription while still limiting each customer account to one free trial period.
 
 **Note:**
 
 To limit the initial purchase of a product to one, also check the box for “Sold Individually.” Enable this to only allow one of this item to be bought in a single order in the Inventory section of the edit product page.
+
+## Purchase options for non-subscription product types
+
+[↑ Back to top](#doc-title)
+
+You can add subscription plans to supported non-subscription product types from the Subscriptions tab in the Product Data section.
+
+Supported product types: simple products, variable products, product bundles, and composite products.
+
+The Purchase options setting determines how subscription pricing is presented on the product.
+
+There are three options:
+
+**Use storewide subscription plans**—applies the storewide subscription plans defined in WooCommerce > Settings > Subscriptions. (Link placeholder) When selected, you can:
+
+- **Use all storewide subscription plans**: The product will use all storewide plans. New storewide plans will be included automatically.
+- **Select storewide subscription plans**: Choose specific storewide plans to use for this product. A table of available plans is displayed with checkboxes to select which plans apply.
+
+**Create custom subscription plans**—define subscription plans specific to this product, including custom frequency, free trial, signup fee, expiration (number of charges), discount, and billing date alignment.
+
+**Sell one time only**—if selected, the product will only be available as a one-time purchase.
+
+### Subscription plan settings
+
+[↑ Back to top](#doc-title)
+
+The subscription plans include the following settings you can adjust:
+
+### Frequency
+
+[↑ Back to top](#doc-title)
+
+Set the billing interval using a number input and a period dropdown (day, week, month, year). For example, “three months” means the customer is billed every three months. The combination cannot exceed ten years.
+
+### Align renewal
+
+[↑ Back to top](#doc-title)
+
+Optionally select a day to align renewal dates for all subscribers on this plan. When set to “Do not align,” renewals are based on each subscriber’s purchase date. See the [Billing Date Alignment documentation](https://woocommerce.com/document/subscriptions/billing-date-alignment) for details.
+
+### Price
+
+[↑ Back to top](#doc-title)
+
+Each subscription plan includes a price setting that determines how the subscription price is calculated. The Price dropdown has two options:
+
+- Discount product price
+- Set a custom price
+
+This setting is available on both storewide and custom subscription plans.
+
+**Discount product price**
+
+When Price is set to “Discount product price,” the subscription price is based on the product’s regular price, minus an optional discount. This is the default option.
+
+A Discount field appears with two controls:
+
+- **Amount:**Enter the discount value.
+- **Type:**Select the discount type from the dropdown**:**
+**Percentage**—discounts the product price by a percentage. For example, entering 10 will discount the price by 10%.
+**Fixed amount**—discounts the product price by a fixed monetary amount. For example, entering five will discount the price by $5 (or the equivalent in your store’s currency).
+
+If no discount is entered, the subscription price will be the same as the product’s regular price.
+
+**Tip**: Subscription discounts are a great way to incentivize longer billing intervals. For example, you could offer a 10% discount on a yearly plan compared to the monthly price.
+
+**Set a custom price**
+
+When Price is set to “Set a custom price,” the subscription price is set independently of the product’s regular price. Two fields appear:
+
+- **Regular price:**The recurring subscription price for this plan.
+- **Sale price:**An optional sale price for this plan. When set, the sale price is used as the recurring subscription price instead of the regular price.
+
+This option is useful when the subscription price should differ significantly from the product’s one-time purchase price or when you want full control over the recurring amount for each plan.
+
+**Note:**
+
+When using “Set a custom price,” the subscription price is completely independent of the product’s regular price. Changes to the product’s price will not affect the subscription plan price.
+
+### Subscription expiration
+
+[↑ Back to top](#doc-title)
+
+By default, subscriptions renew indefinitely until the subscriber or store manager cancels them. The expiration setting allows you to configure a subscription plan to automatically expire after a set number of payments.
+
+This setting is available on subscription plans at both the storewide level (WooCommerce > Settings > Subscriptions) and the product level (custom subscription plans on individual products). The behavior is the same in both contexts.
+
+**Expire after a set number of payments**—checkbox (default: unchecked). When checked, the subscription will automatically expire after the specified number of payments. When unchecked, the subscription renews indefinitely until cancelled.
+
+**Total payments**—number input; only visible when “Expire after a set number of payments” is checked. The number of payments, including the initial purchase, before the subscription automatically expires.
+
+For example, if a subscription plan has a monthly billing interval and total payments are set to 12, the subscriber will be charged once at signup and 11 more times at each monthly renewal, for a total of 12 payments. After the 12th payment, the subscription expires.
+
+**Note**:
+
+The total payments count includes the initial purchase. A value of six means the subscriber pays six times total, not six renewals after signup.
+
+The number of payments is based on billing periods, not calendar time. If a plan bills every two months with a total payment value of six, the subscription will last 12 months (six payments × two months each).
+
+**How expiration works**
+
+While the subscription is active, payments are processed according to the billing interval defined in the plan. The subscriber can see the expiration date on their View Subscription page in the My Account area.
+
+When the final payment has been processed, the subscription status automatically changes to Expired. No further renewal payments are charged, and the subscriber loses access to subscription benefits. The subscription cannot be reactivated—the subscriber would need to purchase a new subscription.
+
+Subscribers can still cancel an expiring subscription before it reaches its scheduled expiration. If cancelled, the subscription follows the normal cancellation process and does not continue to the expiration point.
+
+### Signup fee
+
+[↑ Back to top](#doc-title)
+
+Add a one-time fee that customers pay when they first subscribe.
+
+### Free trial
+
+[↑ Back to top](#doc-title)
+
+Offer a free trial by setting its duration using the number and period fields (days, weeks, months, years).
+
+![](https://woocommerce.com/wp-content/uploads/2026/04/add-custom-subscription-plan.png?strip=all&w=704)Custom Subscription Plan Settings
+
+### One-time purchases
+
+[↑ Back to top](#doc-title)
+
+When using storewide subscription plans or custom subscription plans, a one-time purchases section appears at the bottom of the Subscriptions tab. This section contains a single checkbox:
+
+Customers can buy this product without subscribing
+
+When checked, customers will be offered the option to purchase the product as a one-time purchase in addition to the available subscription plans. When unchecked, the product can only be purchased on a subscription plan.
+
+**Note:**
+
+If you only add a single subscription plan and disable one-time purchases, customers will not be offered any options above the add-to-cart button.
+
+### Bulk edit purchase options
+
+[↑ Back to top](#doc-title)
+
+From the Products list (WooCommerce > Products), you can select multiple products and use the Bulk Edit action to update their purchase options in bulk.
 
 ## Questions and support
 

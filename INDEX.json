@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T12:37:34.987Z",
+  "last_updated": "2026-06-28T12:37:50.043Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -156,7 +156,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-06-28T12:33:22.714Z",
+      "last_scraped": "2026-06-28T12:33:22.713Z",
       "page_count": 0,
       "categories": []
     },
@@ -268,7 +268,7 @@
       "slug": "fluent-forms-signature-addon",
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-06-28T12:35:25.298Z",
+      "last_scraped": "2026-06-28T12:35:25.297Z",
       "page_count": 0,
       "categories": []
     },
@@ -276,7 +276,7 @@
       "slug": "fluent-messaging",
       "name": "Fluent Messaging",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-06-28T12:36:53.019Z",
+      "last_scraped": "2026-06-28T12:36:53.018Z",
       "page_count": 0,
       "categories": []
     },
@@ -1021,7 +1021,7 @@
       "slug": "resizable-sidebar-for-the-gutenberg-block-editor",
       "name": "Resizable Sidebar for the Gutenberg Block Editor",
       "documentation_url": "https://wordpress.org/plugins/resizable-editor-sidebar/",
-      "last_scraped": "2026-06-28T12:37:34.987Z",
+      "last_scraped": "2026-06-28T12:37:34.986Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1162,11 +1162,12 @@
       "slug": "woocommerce-subscriptions",
       "name": "WooCommerce Subscriptions",
       "documentation_url": "https://woocommerce.com/document/subscriptions/",
-      "last_scraped": "2026-06-21T12:50:12.763Z",
+      "last_scraped": "2026-06-28T12:37:48.034Z",
       "page_count": 85,
       "categories": [
         "2020-new-visa-requirements-for-subscriptions-with-a-free-trial",
         "add-or-modify-a-subscription",
+        "billing-date-alignment",
         "change-subscription-from-automatic-to-manual-payments",
         "common-issues-and-error-messages-for-woocommerce-subscriptions",
         "creating-subscription-products",
@@ -1183,7 +1184,6 @@
         "orders",
         "payment-gateways",
         "renewal-process",
-        "renewal-synchronisation",
         "requirements",
         "restore-backup-subscriptions",
         "resubscribe",
@@ -1220,7 +1220,7 @@
       "slug": "wp-all-export-acf-export-add-on-pro",
       "name": "WP All Export - ACF Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-28T12:34:29.144Z",
+      "last_scraped": "2026-06-28T12:34:29.139Z",
       "page_count": 198,
       "categories": [
         "uncategorized"

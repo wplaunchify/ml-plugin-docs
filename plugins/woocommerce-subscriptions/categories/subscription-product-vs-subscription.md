@@ -132,7 +132,7 @@ A subscription product’s billing schedule includes:
 - **Billing interval and period:** This defines how often renewal payments occur for the product, such as every 2 weeks or monthly.
 - **Billing length:** This specifies the total number of payments before the subscription ends. For example, a subscription with a billing interval of every 2 weeks and a length of 26 payments will last for one year.
 - **Trial period and interval:**This outlines any free trial period at the start of the subscription, this adds time to the length of billing. For instance, a subscription with a weekly billing interval, a length of 52 weeks, and a 2-month free trial will last for one year and two months.
-- **Synchronization date (if applicable)**: This is a specific day when payments process,  such as the first of the month. This only applies when r[enewal synchronization](https://woocommerce.com/document/subscriptions/renewal-synchronisation/) is configured.
+- **Synchronization date (if applicable)**: This is a specific day when payments are processed, such as the first of the month. This only applies when [billing date alignment](https://woocommerce.com/document/subscriptions/billing-date-alignment) is configured.
 
 **Subscriptions:**
 
@@ -170,7 +170,7 @@ While the products on the subscription change, no other subscription details, li
 
 Each month’s magazine also does not need to be a *subscription product*, it can be a simple product available for one-off purchases in your store.
 
-Similarly, with [All Products for WooCommerce Subscriptions](https://woocommerce.com/products/all-products-for-woocommerce-subscriptions/), it’s possible to add a non-subscription product to an existing subscription. For example, a customer could add a different kind of coffee bean to their existing monthly subscription to another type of coffee bean.
+It’s also possible to add a non-subscription product to an existing subscription. For example, a customer could add a different kind of coffee bean to their existing monthly subscription to another type of coffee bean.
 
 Again, while the products on the subscription change, no other subscription details, like its billing schedule, will be changed when the new product is added.
 
