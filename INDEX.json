@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T09:10:41.589Z",
+  "last_updated": "2026-06-29T09:11:27.047Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -164,7 +164,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-06-28T23:22:13.189Z",
+      "last_scraped": "2026-06-28T23:22:13.188Z",
       "page_count": 0,
       "categories": []
     },
@@ -276,7 +276,7 @@
       "slug": "fluent-messaging",
       "name": "Fluent Messaging",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-06-29T09:09:30.650Z",
+      "last_scraped": "2026-06-29T09:09:30.649Z",
       "page_count": 0,
       "categories": []
     },
@@ -1230,7 +1230,7 @@
       "slug": "wp-all-export-pro",
       "name": "WP All Export Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-29T09:10:41.589Z",
+      "last_scraped": "2026-06-29T09:10:41.585Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -1250,9 +1250,11 @@
       "slug": "wp-all-import-acf-add-on-free",
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-28T20:27:22.907Z",
-      "page_count": 0,
-      "categories": []
+      "last_scraped": "2026-06-29T09:11:24.281Z",
+      "page_count": 198,
+      "categories": [
+        "uncategorized"
+      ]
     },
     {
       "slug": "wp-all-import-acf-add-on-pro",
