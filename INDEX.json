@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T09:09:30.650Z",
+  "last_updated": "2026-06-29T09:10:41.589Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1230,9 +1230,11 @@
       "slug": "wp-all-export-pro",
       "name": "WP All Export Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-28T04:36:08.540Z",
-      "page_count": 0,
-      "categories": []
+      "last_scraped": "2026-06-29T09:10:41.589Z",
+      "page_count": 198,
+      "categories": [
+        "uncategorized"
+      ]
     },
     {
       "slug": "wp-all-export-user-export-add-on-pro",
