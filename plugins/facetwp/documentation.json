@@ -1,7 +1,7 @@
 {
   "plugin_slug": "facetwp",
   "plugin_name": "FacetWP",
-  "last_scraped": "2026-06-28T04:31:26.727Z",
+  "last_scraped": "2026-07-04T08:21:56.110Z",
   "total_pages": 0,
   "failed_urls": [
     "https://facetwp.com/help-center/add-on-features-and-extras/",
@@ -102,6 +102,7 @@
     "https://facetwp.com/help-center/facets/facet-types/map/advanced-map-customizations/",
     "https://facetwp.com/help-center/facets/facet-types/map/advanced-map-customizations/customize-advanced-markers/",
     "https://facetwp.com/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-clustering/",
+    "https://facetwp.com/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/",
     "https://facetwp.com/help-center/facets/facet-types/map/advanced-map-customizations/customize-overlapping-marker-spiderfier/",
     "https://facetwp.com/help-center/facets/facet-types/number-range/",
     "https://facetwp.com/help-center/facets/facet-types/pager/",

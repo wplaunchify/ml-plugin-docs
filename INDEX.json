@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-04T08:21:10.545Z",
+  "last_updated": "2026-07-04T08:21:57.663Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -24,7 +24,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-07-03T08:34:38.948Z",
+      "last_scraped": "2026-07-03T08:34:38.947Z",
       "page_count": 0,
       "categories": []
     },
@@ -40,7 +40,7 @@
       "slug": "affiliatewp",
       "name": "AffiliateWP",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-01T08:51:24.370Z",
+      "last_scraped": "2026-07-01T08:51:24.369Z",
       "page_count": 0,
       "categories": []
     },
@@ -112,7 +112,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com",
-      "last_scraped": "2026-07-04T08:21:10.545Z",
+      "last_scraped": "2026-07-04T08:21:10.544Z",
       "page_count": 0,
       "categories": []
     },
@@ -172,7 +172,7 @@
       "slug": "customize-my-account-page-for-woocommerce",
       "name": "Customize My Account Page For Woocommerce",
       "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/documentation/",
-      "last_scraped": "2026-07-03T08:33:11.014Z",
+      "last_scraped": "2026-07-03T08:33:11.013Z",
       "page_count": 0,
       "categories": []
     },
@@ -210,7 +210,7 @@
       "slug": "facetwp",
       "name": "FacetWP",
       "documentation_url": "https://facetwp.com/help-center/",
-      "last_scraped": "2026-06-28T04:31:26.727Z",
+      "last_scraped": "2026-07-04T08:21:56.111Z",
       "page_count": 0,
       "categories": []
     },
@@ -236,7 +236,7 @@
       "slug": "fluent-boards-project-management-tool",
       "name": "Fluent Boards - Project Management Tool",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-07-02T08:33:30.251Z",
+      "last_scraped": "2026-07-02T08:33:30.250Z",
       "page_count": 0,
       "categories": []
     },
@@ -244,7 +244,7 @@
       "slug": "fluent-community-manager",
       "name": "Fluent Community Manager",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-07-02T08:32:41.834Z",
+      "last_scraped": "2026-07-02T08:32:41.833Z",
       "page_count": 0,
       "categories": []
     },
@@ -252,7 +252,7 @@
       "slug": "fluent-forms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-07-02T08:32:05.569Z",
+      "last_scraped": "2026-07-02T08:32:05.568Z",
       "page_count": 0,
       "categories": []
     },
@@ -268,7 +268,7 @@
       "slug": "fluent-forms-signature-addon",
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-07-01T08:50:49.327Z",
+      "last_scraped": "2026-07-01T08:50:49.326Z",
       "page_count": 0,
       "categories": []
     },
@@ -442,7 +442,7 @@
       "slug": "fluentcrm-marketing-automation-for-wordpress",
       "name": "FluentCRM - Marketing Automation For WordPress",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-07-03T08:33:52.671Z",
+      "last_scraped": "2026-07-03T08:33:52.670Z",
       "page_count": 0,
       "categories": []
     },
@@ -890,7 +890,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-07-04T08:20:19.499Z",
+      "last_scraped": "2026-07-04T08:20:19.498Z",
       "page_count": 0,
       "categories": []
     },
@@ -934,7 +934,7 @@
       "slug": "ninja-tables-easy-data-table-builder",
       "name": "Ninja Tables – Easy Data Table Builder",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-07-01T08:49:12.863Z",
+      "last_scraped": "2026-07-01T08:49:12.862Z",
       "page_count": 0,
       "categories": []
     },
@@ -1080,7 +1080,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-07-01T08:48:14.431Z",
+      "last_scraped": "2026-07-01T08:48:14.430Z",
       "page_count": 0,
       "categories": []
     },
@@ -1096,7 +1096,7 @@
       "slug": "taxopress",
       "name": "TaxoPress",
       "documentation_url": "https://taxopress.com/docs/documentation/",
-      "last_scraped": "2026-06-30T08:41:45.848Z",
+      "last_scraped": "2026-06-30T08:41:45.846Z",
       "page_count": 0,
       "categories": []
     },
@@ -1130,7 +1130,7 @@
       "slug": "woocommerce-anti-fraud",
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-07-03T08:35:29.362Z",
+      "last_scraped": "2026-07-03T08:35:29.361Z",
       "page_count": 0,
       "categories": []
     },
@@ -1605,7 +1605,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://wpsocialninja.com/docs/documentation/",
-      "last_scraped": "2026-07-01T08:49:50.830Z",
+      "last_scraped": "2026-07-01T08:49:50.829Z",
       "page_count": 0,
       "categories": []
     },
