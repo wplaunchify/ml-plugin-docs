@@ -2,8 +2,330 @@
   "plugin_slug": "custom-post-type-ui",
   "plugin_name": "Custom Post Type UI",
   "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-  "last_scraped": "2026-06-28T23:22:13.188Z",
-  "total_pages": 0,
+  "last_scraped": "2026-07-05T17:02:10.206Z",
+  "total_pages": 78,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 78,
+      "pages": [
+        {
+          "title": "Example Instantsearch Widgets with WooCommerce Attributes.",
+          "url": "https://docs.pluginize.com/article/example-instantsearch-widgets-with-woocommerce-attributes/"
+        },
+        {
+          "title": "Single Algolia index for Multisite installs",
+          "url": "https://docs.pluginize.com/article/single-algolia-index-for-multisite-installs/"
+        },
+        {
+          "title": "WP Search with Algolia Pro Changelog",
+          "url": "https://docs.pluginize.com/article/wp-search-with-algolia-pro-changelog/"
+        },
+        {
+          "title": "WP Search with Algolia Pro Behind The Scenes",
+          "url": "https://docs.pluginize.com/article/wp-search-with-algolia-pro-behind-the-scenes/"
+        },
+        {
+          "title": "EDD Product Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/edd-product-layout/"
+        },
+        {
+          "title": "Woo Product Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/woo-product-layout/"
+        },
+        {
+          "title": "Grid with Overlay Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/grid-with-overlay-layout/"
+        },
+        {
+          "title": "Grid Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/grid-layout/"
+        },
+        {
+          "title": "Featured Plus Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/featured-plus-layout/"
+        },
+        {
+          "title": "Post Cards Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/post-cards-layout/"
+        },
+        {
+          "title": "Post Slider Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/post-slider-layout/"
+        },
+        {
+          "title": "Taxonomy List Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/taxonomy-list-layout/"
+        },
+        {
+          "title": "How to exclude post type from search but retain taxonomy archive listing",
+          "url": "https://docs.pluginize.com/article/exclude-post-type-from-search-but-retain-taxonomy-archive-listing/"
+        },
+        {
+          "title": "Customizing permalinks",
+          "url": "https://docs.pluginize.com/article/customizing-permalinks/"
+        },
+        {
+          "title": "Recommended Plugins",
+          "url": "https://docs.pluginize.com/article/recommended-plugins/"
+        },
+        {
+          "title": "Load CPTUI Settings Data From File",
+          "url": "https://docs.pluginize.com/article/load-cptui-settings-data-from-file/"
+        },
+        {
+          "title": "Shortcode ID attribute",
+          "url": "https://docs.pluginize.com/article/shortcode-id-attribute/"
+        },
+        {
+          "title": "Single Post Type Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/single-post-type-layout/"
+        },
+        {
+          "title": "List Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/list-layout/"
+        },
+        {
+          "title": "Default Layout",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/default-layout/"
+        },
+        {
+          "title": "Custom Post Type UI Extended Block",
+          "url": "https://docs.pluginize.com/article/cptui-extended-block/"
+        },
+        {
+          "title": "Custom Post Types and Divi",
+          "url": "https://docs.pluginize.com/article/custom-post-types-and-divi/"
+        },
+        {
+          "title": "Custom Post Type UI and WP-CLI",
+          "url": "https://docs.pluginize.com/article/custom-post-type-ui-and-wp-cli/"
+        },
+        {
+          "title": "Custom Post Type UI Hooks",
+          "url": "https://docs.pluginize.com/article/custom-post-type-ui-hooks/"
+        },
+        {
+          "title": "Understanding and customizing HTML classes added to shortcode output",
+          "url": "https://docs.pluginize.com/article/customizing-cptui-class-output/"
+        },
+        {
+          "title": "Including hidden BuddyPress groups in dropdown",
+          "url": "https://docs.pluginize.com/article/including-hidden-buddypress-groups-in-dropdown/"
+        },
+        {
+          "title": "Getting Started",
+          "url": "https://docs.pluginize.com/article/getting-started/"
+        },
+        {
+          "title": "Listing posts by post title in WP Admin",
+          "url": "https://docs.pluginize.com/article/listing-posts-by-post-title-in-wp-admin/"
+        },
+        {
+          "title": "Removing page title from My Profile BuddyPages",
+          "url": "https://docs.pluginize.com/article/removing-page-title-from-my-profile-buddypages/"
+        },
+        {
+          "title": "Extra feature settings for post types",
+          "url": "https://docs.pluginize.com/article/extra-feature-settings-for-post-types/"
+        },
+        {
+          "title": "Change thumbnail size for default shortcode display",
+          "url": "https://docs.pluginize.com/article/change-thumbnail-size-for-default-shortcode-display/"
+        },
+        {
+          "title": "How to add your custom post type to RSS feeds",
+          "url": "https://docs.pluginize.com/article/how-to-add-your-custom-post-type-to-rss-feeds/"
+        },
+        {
+          "title": "Setting InstaGo URLs",
+          "url": "https://docs.pluginize.com/article/setting-instago-urls/"
+        },
+        {
+          "title": "Settings Page",
+          "url": "https://docs.pluginize.com/article/settings-page/"
+        },
+        {
+          "title": "InstaGo Introduction",
+          "url": "https://docs.pluginize.com/article/instago-introduction/"
+        },
+        {
+          "title": "How to cancel your subscription",
+          "url": "https://docs.pluginize.com/article/how-to-cancel-your-subscription/"
+        },
+        {
+          "title": "How to upgrade your license",
+          "url": "https://docs.pluginize.com/article/how-to-upgrade-your-license/"
+        },
+        {
+          "title": "Duplicating post types and taxonomies registered with Custom Post Type UI",
+          "url": "https://docs.pluginize.com/article/duplicating-post-types-and-taxonomies-registered-with-custom-post-type-ui/"
+        },
+        {
+          "title": "Customizing shortcode templates with CPTUI-Extended",
+          "url": "https://docs.pluginize.com/article/customizing-shortcode-templates-with-cptui-extended/"
+        },
+        {
+          "title": "How to make CPTUI-Extended show posts with any of selected terms instead of all selected terms.",
+          "url": "https://docs.pluginize.com/article/make-cptui-extended-show-posts-with-any-terms-over-all-terms/"
+        },
+        {
+          "title": "Which shortcode templates use which CPTUI-Extended template file",
+          "url": "https://docs.pluginize.com/article/shortcode-template-file-map/"
+        },
+        {
+          "title": "How to get dashes in post type/taxonomy slugs for URL SEO purposes",
+          "url": "https://docs.pluginize.com/article/dashes-in-post-type-taxonomy-slugs-for-url-seo/"
+        },
+        {
+          "title": "Creating an all term taxonomy archive",
+          "url": "https://docs.pluginize.com/article/creating-an-all-term-taxonomy-archive/"
+        },
+        {
+          "title": "Changing posts per page for a post type",
+          "url": "https://docs.pluginize.com/article/changing-posts-per-page-for-a-post-type/"
+        },
+        {
+          "title": "CPTUI: I’m trying to…",
+          "url": "https://docs.pluginize.com/article/im-trying-to/"
+        },
+        {
+          "title": "Adding content after “Default” shortcode items.",
+          "url": "https://docs.pluginize.com/article/adding-content-after-default-shortcode-items/"
+        },
+        {
+          "title": "Save CPTUI settings data to file",
+          "url": "https://docs.pluginize.com/article/save-cptui-settings-data-to-file/"
+        },
+        {
+          "title": "Using the Debug Info tab for Custom Post Type UI",
+          "url": "https://docs.pluginize.com/article/using-the-debug-info-tab-for-custom-post-type-ui/"
+        },
+        {
+          "title": "Displaying post type descriptions",
+          "url": "https://docs.pluginize.com/article/displaying-post-type-descriptions/"
+        },
+        {
+          "title": "Cleanly-done pagination with custom WP_Query objects",
+          "url": "https://docs.pluginize.com/article/cleanly-done-pagination-with-custom-wpquery-objects/"
+        },
+        {
+          "title": "Adding WordPress REST API support",
+          "url": "https://docs.pluginize.com/article/adding-wordpress-rest-api-support/"
+        },
+        {
+          "title": "Adding post type posts to WP Nav Menus",
+          "url": "https://docs.pluginize.com/article/adding-post-type-posts-to-wp-nav-menus/"
+        },
+        {
+          "title": "CPTUI-Extended Compatibility Fixes",
+          "url": "https://docs.pluginize.com/article/compatibility-fixes/"
+        },
+        {
+          "title": "Modifying the BuddyPages editor",
+          "url": "https://docs.pluginize.com/article/modifying-the-buddypages-editor/"
+        },
+        {
+          "title": "BuddyPages Settings",
+          "url": "https://docs.pluginize.com/article/buddypages-settings/"
+        },
+        {
+          "title": "Deleting BuddyPages",
+          "url": "https://docs.pluginize.com/article/deleting-buddypages/"
+        },
+        {
+          "title": "Editing BuddyPages",
+          "url": "https://docs.pluginize.com/article/editing-buddypages/"
+        },
+        {
+          "title": "Adding BuddyPages",
+          "url": "https://docs.pluginize.com/article/adding-buddypages/"
+        },
+        {
+          "title": "BuddyPages Frequently Asked Questions",
+          "url": "https://docs.pluginize.com/article/buddypages-faq/"
+        },
+        {
+          "title": "BuddyPages Changelog",
+          "url": "https://docs.pluginize.com/article/buddypages-changelog/"
+        },
+        {
+          "title": "BuddyPages Introduction",
+          "url": "https://docs.pluginize.com/article/buddypages-introduction/"
+        },
+        {
+          "title": "Extending the shortcode builder",
+          "url": "https://docs.pluginize.com/article/extending-shortcode-builder/"
+        },
+        {
+          "title": "Managing and viewing network-level post types and taxonomies",
+          "url": "https://docs.pluginize.com/article/managing-viewing-network-level-post-types-and-taxonomies/"
+        },
+        {
+          "title": "Locating a post’s post ID",
+          "url": "https://docs.pluginize.com/article/locating-post-id/"
+        },
+        {
+          "title": "How to add post type to main blog query",
+          "url": "https://docs.pluginize.com/article/post-types-in-main-blog-query/"
+        },
+        {
+          "title": "CPTUI-Extended Changelog",
+          "url": "https://docs.pluginize.com/article/cptui-extended-changelog/"
+        },
+        {
+          "title": "CPTUI-Extended Frequently Asked Questions",
+          "url": "https://docs.pluginize.com/article/frequently-asked-questions/"
+        },
+        {
+          "title": "CPTUI-Extended Introduction",
+          "url": "https://docs.pluginize.com/article/custom-post-type-ui-extended-intro/"
+        },
+        {
+          "title": "Contributing back to Custom Post Type UI.",
+          "url": "https://docs.pluginize.com/article/contributing-back-to-custom-post-type-ui/"
+        },
+        {
+          "title": "Migrating Custom Post Type UI settings between installs.",
+          "url": "https://docs.pluginize.com/article/migrating-custom-post-type-ui-settings/"
+        },
+        {
+          "title": "Adding post type support for specific features from other plugins.",
+          "url": "https://docs.pluginize.com/article/third-party-support-upon-registration/"
+        },
+        {
+          "title": "Changing post type or taxonomy slugs",
+          "url": "https://docs.pluginize.com/article/changing-post-type-or-taxonomy-slugs/"
+        },
+        {
+          "title": "How to add support for presently missing registration parameters",
+          "url": "https://docs.pluginize.com/article/how-to-add-support-for-presently-missing-registration-parameters/"
+        },
+        {
+          "title": "Ensuring your post type posts show in search results.",
+          "url": "https://docs.pluginize.com/article/post-type-posts-in-search-results/"
+        },
+        {
+          "title": "Adding featured image support to your post types",
+          "url": "https://docs.pluginize.com/article/adding-featured-image-support-to-your-post-types/"
+        },
+        {
+          "title": "How to reset your Custom Post Type UI settings",
+          "url": "https://docs.pluginize.com/article/resetting-cptui-settings/"
+        },
+        {
+          "title": "How to add your new post type to WordPress category and tag archives",
+          "url": "https://docs.pluginize.com/article/post-types-in-category-tag-archives/"
+        },
+        {
+          "title": "Custom Post Type UI Introduction",
+          "url": "https://docs.pluginize.com/article/custom-post-type-ui-intro/"
+        }
+      ]
+    }
+  ]
 }

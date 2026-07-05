@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluentaffiliate Pro scraper
-        run: node scraper.js --slug=fluentaffiliate-pro --mode=wp-api --url=https://fluentaffiliate.com/docs/ --post-type=kb_icon --name="FluentAffiliate Pro"
+        run: node scraper.js --slug=fluentaffiliate-pro --mode=sitemap --url=https://docs.fluentaffiliate.com/guide/ --selector=.vp-doc --name="FluentAffiliate Pro"
 
       - name: Check for changes
         id: changes

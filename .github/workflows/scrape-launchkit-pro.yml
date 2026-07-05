@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Launchkit Pro scraper
-        run: node scraper.js --slug=launchkit-pro --mode=wp-api --url=https://wplaunchify.com/ --post-type=kb_icon --name="LaunchKit Pro"
+        run: node scraper.js --slug=launchkit-pro --mode=html-scrape --url=https://wordpress.org/plugins/launchkit/ --selector=.entry-content --name="LaunchKit Pro"
 
       - name: Check for changes
         id: changes

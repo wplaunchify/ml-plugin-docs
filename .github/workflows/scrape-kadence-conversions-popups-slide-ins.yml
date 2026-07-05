@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Conversions Popups Slide Ins scraper
-        run: node scraper.js --slug=kadence-conversions-popups-slide-ins --mode=wp-api --url=https://www.kadencewp.com/help-center/ --post-type=kb_icon --name="Kadence Conversions - Popups, slide-ins"
+        run: node scraper.js --slug=kadence-conversions-popups-slide-ins --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-conversions/ --selector=.entry-content --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Conversions - Popups, slide-ins"
 
       - name: Check for changes
         id: changes

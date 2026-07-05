@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Woocommerce Stripe Gateway scraper
-        run: node scraper.js --slug=woocommerce-stripe-gateway --mode=wp-api --url=https://woocommerce.com/document/ --post-type=documentation --taxonomy=documentation_category --name="WooCommerce Stripe Gateway"
+        run: node scraper.js --slug=woocommerce-stripe-gateway --mode=html-scrape --url=https://woocommerce.com/document/stripe/ --selector=.wccom-single-doc-content --name="WooCommerce Stripe Gateway"
 
       - name: Check for changes
         id: changes

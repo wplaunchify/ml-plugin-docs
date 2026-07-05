@@ -1,9 +1,1565 @@
 {
   "plugin_slug": "starter-templates-by-kadence-wp",
   "plugin_name": "Starter Templates by Kadence WP",
-  "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-  "last_scraped": "2026-07-05T16:28:06.174Z",
-  "total_pages": 0,
-  "failed_urls_count": 5,
-  "sections": []
+  "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
+  "last_scraped": "2026-07-05T17:23:04.339Z",
+  "total_pages": 121,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Add A Login And Account Menu",
+      "slug": "add-a-login-and-account-menu",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-a-login-and-account-menu/",
+      "file": "categories/add-a-login-and-account-menu.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add a login and account Menu",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-a-login-and-account-menu/"
+        }
+      ]
+    },
+    {
+      "title": "Add Breadcrumbs To Hooked Elements",
+      "slug": "add-breadcrumbs-to-hooked-elements",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-breadcrumbs-to-hooked-elements/",
+      "file": "categories/add-breadcrumbs-to-hooked-elements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Kadence Breadcrumbs To Hooked Elements",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-breadcrumbs-to-hooked-elements/"
+        }
+      ]
+    },
+    {
+      "title": "Add Contact Information",
+      "slug": "add-contact-information",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-contact-information/",
+      "file": "categories/add-contact-information.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add contact information",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-contact-information/"
+        }
+      ]
+    },
+    {
+      "title": "Add Custom Filter Or Function With Code Snippets",
+      "slug": "add-custom-filter-or-function-with-code-snippets",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-custom-filter-or-function-with-code-snippets/",
+      "file": "categories/add-custom-filter-or-function-with-code-snippets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How To Add Custom Snippets with Code Snippets",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-custom-filter-or-function-with-code-snippets/"
+        }
+      ]
+    },
+    {
+      "title": "Add Custom Fonts To Kadence",
+      "slug": "add-custom-fonts-to-kadence",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-custom-fonts-to-kadence/",
+      "file": "categories/add-custom-fonts-to-kadence.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Custom Fonts",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-custom-fonts-to-kadence/"
+        }
+      ]
+    },
+    {
+      "title": "Add Elements After Specified Paragraphs",
+      "slug": "add-elements-after-specified-paragraphs",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-elements-after-specified-paragraphs/",
+      "file": "categories/add-elements-after-specified-paragraphs.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Elements after Specified Paragraphs",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-elements-after-specified-paragraphs/"
+        }
+      ]
+    },
+    {
+      "title": "Add Google Tag Manager With A Child Theme",
+      "slug": "add-google-tag-manager-with-a-child-theme",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-google-tag-manager-with-a-child-theme/",
+      "file": "categories/add-google-tag-manager-with-a-child-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Google Tag Manager with a child theme or code snippet plugin",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-google-tag-manager-with-a-child-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Add Icons To Wordpress Menu Items",
+      "slug": "add-icons-to-wordpress-menu-items",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-icons-to-wordpress-menu-items/",
+      "file": "categories/add-icons-to-wordpress-menu-items.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add Icons to Your Classic WordPress Menu Items",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-icons-to-wordpress-menu-items/"
+        }
+      ]
+    },
+    {
+      "title": "Add Scripts In Header Footer",
+      "slug": "add-scripts-in-header-footer",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-scripts-in-header-footer/",
+      "file": "categories/add-scripts-in-header-footer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add scripts in header/footer",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-scripts-in-header-footer/"
+        }
+      ]
+    },
+    {
+      "title": "Add Thumbnails To Next Previous Post Navigation",
+      "slug": "add-thumbnails-to-next-previous-post-navigation",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-thumbnails-to-next-previous-post-navigation/",
+      "file": "categories/add-thumbnails-to-next-previous-post-navigation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Add Thumbnails to Next/Previous Post Navigation",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-thumbnails-to-next-previous-post-navigation/"
+        }
+      ]
+    },
+    {
+      "title": "Add Toggle Open Menu For Desktop",
+      "slug": "add-toggle-open-menu-for-desktop",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-toggle-open-menu-for-desktop/",
+      "file": "categories/add-toggle-open-menu-for-desktop.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add a toggle open menu for desktop",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-toggle-open-menu-for-desktop/"
+        }
+      ]
+    },
+    {
+      "title": "Adding Custom Fonts To Kadence",
+      "slug": "adding-custom-fonts-to-kadence",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-custom-fonts-to-kadence/",
+      "file": "categories/adding-custom-fonts-to-kadence.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Custom Fonts",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-custom-fonts-to-kadence/"
+        }
+      ]
+    },
+    {
+      "title": "Adding Elements After Specified Paragraphs",
+      "slug": "adding-elements-after-specified-paragraphs",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-elements-after-specified-paragraphs/",
+      "file": "categories/adding-elements-after-specified-paragraphs.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Elements after Specified Paragraphs",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-elements-after-specified-paragraphs/"
+        }
+      ]
+    },
+    {
+      "title": "Adding Google Analytics",
+      "slug": "adding-google-analytics",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-google-analytics/",
+      "file": "categories/adding-google-analytics.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Integrate Google Analytics with Kadence Forms",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-google-analytics/"
+        }
+      ]
+    },
+    {
+      "title": "Adding Google Tag Manager With A Child Theme No Extra Plugin",
+      "slug": "adding-google-tag-manager-with-a-child-theme-no-extra-plugin",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-google-tag-manager-with-a-child-theme-no-extra-plugin/",
+      "file": "categories/adding-google-tag-manager-with-a-child-theme-no-extra-plugin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Google Tag Manager with a child theme or code snippet plugin",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-google-tag-manager-with-a-child-theme-no-extra-plugin/"
+        }
+      ]
+    },
+    {
+      "title": "Adding Kadence Breadcrumbs To Hooked Elements",
+      "slug": "adding-kadence-breadcrumbs-to-hooked-elements",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-kadence-breadcrumbs-to-hooked-elements/",
+      "file": "categories/adding-kadence-breadcrumbs-to-hooked-elements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Kadence Breadcrumbs To Hooked Elements",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-kadence-breadcrumbs-to-hooked-elements/"
+        }
+      ]
+    },
+    {
+      "title": "Adjust Kadence Themes Scroll Offset Using A Filter",
+      "slug": "adjust-kadence-themes-scroll-offset-using-a-filter",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adjust-kadence-themes-scroll-offset-using-a-filter/",
+      "file": "categories/adjust-kadence-themes-scroll-offset-using-a-filter.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adjusting the Kadence Theme’s scroll offset using a filter",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adjust-kadence-themes-scroll-offset-using-a-filter/"
+        }
+      ]
+    },
+    {
+      "title": "Adjusting The Kadence Themes Scroll Offset Using A Filter",
+      "slug": "adjusting-the-kadence-themes-scroll-offset-using-a-filter",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adjusting-the-kadence-themes-scroll-offset-using-a-filter/",
+      "file": "categories/adjusting-the-kadence-themes-scroll-offset-using-a-filter.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adjusting the Kadence Theme’s scroll offset using a filter",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adjusting-the-kadence-themes-scroll-offset-using-a-filter/"
+        }
+      ]
+    },
+    {
+      "title": "Archive Custom Settings",
+      "slug": "archive-custom-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/archive-custom-settings/",
+      "file": "categories/archive-custom-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Archive Custom Page Title Backgrounds (Kadence Theme Kit Pro)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/archive-custom-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Broken Styles After Version 1 1 15",
+      "slug": "broken-styles-after-version-1-1-15",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/broken-styles-after-version-1-1-15/",
+      "file": "categories/broken-styles-after-version-1-1-15.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Theme",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/broken-styles-after-version-1-1-15/"
+        }
+      ]
+    },
+    {
+      "title": "Change Any Text On Your Site",
+      "slug": "change-any-text-on-your-site",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/change-any-text-on-your-site/",
+      "file": "categories/change-any-text-on-your-site.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Change Any Text on Your Site",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/change-any-text-on-your-site/"
+        }
+      ]
+    },
+    {
+      "title": "Change Theme Icon To Something Custom",
+      "slug": "change-theme-icon-to-something-custom",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/change-theme-icon-to-something-custom/",
+      "file": "categories/change-theme-icon-to-something-custom.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to change a theme icon to something custom",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/change-theme-icon-to-something-custom/"
+        }
+      ]
+    },
+    {
+      "title": "Change Various Heading Html Tags",
+      "slug": "change-various-heading-html-tags",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/change-various-heading-html-tags/",
+      "file": "categories/change-various-heading-html-tags.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Changing Various Heading HTML Tags",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/change-various-heading-html-tags/"
+        }
+      ]
+    },
+    {
+      "title": "Changing Various Heading Html Tags",
+      "slug": "changing-various-heading-html-tags",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/changing-various-heading-html-tags/",
+      "file": "categories/changing-various-heading-html-tags.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Changing Various Heading HTML Tags",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/changing-various-heading-html-tags/"
+        }
+      ]
+    },
+    {
+      "title": "Color Palette Switch Dark Mode",
+      "slug": "color-palette-switch-dark-mode",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/color-palette-switch-dark-mode/",
+      "file": "categories/color-palette-switch-dark-mode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to use the Color Palette Switch (Dark Mode)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/color-palette-switch-dark-mode/"
+        }
+      ]
+    },
+    {
+      "title": "Common Code Snippets For Kadence Users",
+      "slug": "common-code-snippets-for-kadence-users",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/common-code-snippets-for-kadence-users/",
+      "file": "categories/common-code-snippets-for-kadence-users.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Common Code Snippets for Kadence Users",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/common-code-snippets-for-kadence-users/"
+        }
+      ]
+    },
+    {
+      "title": "Conditional Headers",
+      "slug": "conditional-headers",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/conditional-headers/",
+      "file": "categories/conditional-headers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to use Conditional Headers",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/conditional-headers/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Search Page Hooked Elements Advanced Query Loop",
+      "slug": "custom-search-page-hooked-elements-advanced-query-loop",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/custom-search-page-hooked-elements-advanced-query-loop/",
+      "file": "categories/custom-search-page-hooked-elements-advanced-query-loop.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Create a Custom Search Page with Hooked Elements and the Advanced Query Loop",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/custom-search-page-hooked-elements-advanced-query-loop/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Kadence Comment Form",
+      "slug": "customize-kadence-comment-form",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/customize-kadence-comment-form/",
+      "file": "categories/customize-kadence-comment-form.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Customize the Kadence Comment Form",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/customize-kadence-comment-form/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Pagination Using Kadence_pagination_args",
+      "slug": "customize-pagination-using-kadence_pagination_args",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/customize-pagination-using-kadence_pagination_args/",
+      "file": "categories/customize-pagination-using-kadence_pagination_args.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customize Pagination in Kadence Theme Using kadence_pagination_args",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/customize-pagination-using-kadence_pagination_args/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Related Posts With Kadence_related_posts_args",
+      "slug": "customize-related-posts-with-kadence_related_posts_args",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/customize-related-posts-with-kadence_related_posts_args/",
+      "file": "categories/customize-related-posts-with-kadence_related_posts_args.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Kadence Related Posts with kadence_related_posts_args Filter",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/customize-related-posts-with-kadence_related_posts_args/"
+        }
+      ]
+    },
+    {
+      "title": "Customizing The Topbar",
+      "slug": "customizing-the-topbar",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/customizing-the-topbar/",
+      "file": "categories/customizing-the-topbar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Topbar",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/customizing-the-topbar/"
+        }
+      ]
+    },
+    {
+      "title": "Disable Default Kadence Theme Schema Markup",
+      "slug": "disable-default-kadence-theme-schema-markup",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/disable-default-kadence-theme-schema-markup/",
+      "file": "categories/disable-default-kadence-theme-schema-markup.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Disable Default Kadence Theme Schema Markup",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/disable-default-kadence-theme-schema-markup/"
+        },
+        {
+          "title": "Disable Default Kadence Theme Schema Markup",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/disable-default-kadence-theme-schema-markup/"
+        }
+      ]
+    },
+    {
+      "title": "Display Custom Post Types With Kadence Template Elements",
+      "slug": "display-custom-post-types-with-kadence-template-elements",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/display-custom-post-types-with-kadence-template-elements/",
+      "file": "categories/display-custom-post-types-with-kadence-template-elements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Display Custom Post Types with Kadence Template Elements",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/display-custom-post-types-with-kadence-template-elements/"
+        }
+      ]
+    },
+    {
+      "title": "Edit Dropdown Menu Styling",
+      "slug": "edit-dropdown-menu-styling",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/edit-dropdown-menu-styling/",
+      "file": "categories/edit-dropdown-menu-styling.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Edit Dropdown Menu Styling",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/edit-dropdown-menu-styling/"
+        }
+      ]
+    },
+    {
+      "title": "Editing A Row In The Header",
+      "slug": "editing-a-row-in-the-header",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/editing-a-row-in-the-header/",
+      "file": "categories/editing-a-row-in-the-header.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Editing a Row in the Header",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/editing-a-row-in-the-header/"
+        }
+      ]
+    },
+    {
+      "title": "Enable Transparent Header On 404 Page",
+      "slug": "enable-transparent-header-on-404-page",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/enable-transparent-header-on-404-page/",
+      "file": "categories/enable-transparent-header-on-404-page.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Enable Transparent Header on 404 Page",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/enable-transparent-header-on-404-page/"
+        }
+      ]
+    },
+    {
+      "title": "Fix Page Not Updating",
+      "slug": "fix-page-not-updating",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/fix-page-not-updating/",
+      "file": "categories/fix-page-not-updating.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting the “Updating page failed. You’re probably offline.” Error",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/fix-page-not-updating/"
+        }
+      ]
+    },
+    {
+      "title": "Fix Starter Template Import Problems When Using Hostinger With Kadence",
+      "slug": "fix-starter-template-import-problems-when-using-hostinger-with-kadence",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/fix-starter-template-import-problems-when-using-hostinger-with-kadence/",
+      "file": "categories/fix-starter-template-import-problems-when-using-hostinger-with-kadence.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Fix Starter Template Import Problems When Using Hostinger with Kadence",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/fix-starter-template-import-problems-when-using-hostinger-with-kadence/"
+        }
+      ]
+    },
+    {
+      "title": "How Do I Add Custom Css",
+      "slug": "how-do-i-add-custom-css",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-do-i-add-custom-css/",
+      "file": "categories/how-do-i-add-custom-css.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to use Custom CSS and Scripts using Kadence",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-do-i-add-custom-css/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add A Featured Image To A Wordpress Post",
+      "slug": "how-to-add-a-featured-image-to-a-wordpress-post",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-featured-image-to-a-wordpress-post/",
+      "file": "categories/how-to-add-a-featured-image-to-a-wordpress-post.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add a Featured Image to a WordPress Post",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-featured-image-to-a-wordpress-post/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add A Login And Account Menu",
+      "slug": "how-to-add-a-login-and-account-menu",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-login-and-account-menu/",
+      "file": "categories/how-to-add-a-login-and-account-menu.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add a login and account Menu",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-login-and-account-menu/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add A Mini Cart To The Header",
+      "slug": "how-to-add-a-mini-cart-to-the-header",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-mini-cart-to-the-header/",
+      "file": "categories/how-to-add-a-mini-cart-to-the-header.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add a Mini Cart to the Site Header",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-mini-cart-to-the-header/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add A Sidebar",
+      "slug": "how-to-add-a-sidebar",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-sidebar/",
+      "file": "categories/how-to-add-a-sidebar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add a Sidebar",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-sidebar/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add A Toggle Open Menu For Desktop",
+      "slug": "how-to-add-a-toggle-open-menu-for-desktop",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-toggle-open-menu-for-desktop/",
+      "file": "categories/how-to-add-a-toggle-open-menu-for-desktop.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add a toggle open menu for desktop",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-a-toggle-open-menu-for-desktop/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add An Author Box To Your Posts",
+      "slug": "how-to-add-an-author-box-to-your-posts",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-an-author-box-to-your-posts/",
+      "file": "categories/how-to-add-an-author-box-to-your-posts.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add an Author Box to Your Posts",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-an-author-box-to-your-posts/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add Contact Information",
+      "slug": "how-to-add-contact-information",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-contact-information/",
+      "file": "categories/how-to-add-contact-information.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add contact information",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-contact-information/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add Image Switch On Hover For Product Archives",
+      "slug": "how-to-add-image-switch-on-hover-for-product-archives",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-image-switch-on-hover-for-product-archives/",
+      "file": "categories/how-to-add-image-switch-on-hover-for-product-archives.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add Image Switch on Hover for Product Archives",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-image-switch-on-hover-for-product-archives/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add Scripts In Header Footer",
+      "slug": "how-to-add-scripts-in-header-footer",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-scripts-in-header-footer/",
+      "file": "categories/how-to-add-scripts-in-header-footer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add scripts in header/footer",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-scripts-in-header-footer/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add Scroll To Top",
+      "slug": "how-to-add-scroll-to-top",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-scroll-to-top/",
+      "file": "categories/how-to-add-scroll-to-top.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add Scroll To Top",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-add-scroll-to-top/"
+        }
+      ]
+    },
+    {
+      "title": "How To Bulk Update Links And Text Search Replace",
+      "slug": "how-to-bulk-update-links-and-text-search-replace",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-bulk-update-links-and-text-search-replace/",
+      "file": "categories/how-to-bulk-update-links-and-text-search-replace.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Bulk Update Links and Text (Search & Replace)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-bulk-update-links-and-text-search-replace/"
+        }
+      ]
+    },
+    {
+      "title": "How To Change A Theme Icon To Something Custom",
+      "slug": "how-to-change-a-theme-icon-to-something-custom",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-change-a-theme-icon-to-something-custom/",
+      "file": "categories/how-to-change-a-theme-icon-to-something-custom.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to change a theme icon to something custom",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-change-a-theme-icon-to-something-custom/"
+        }
+      ]
+    },
+    {
+      "title": "How To Create A Staging Website",
+      "slug": "how-to-create-a-staging-website",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-create-a-staging-website/",
+      "file": "categories/how-to-create-a-staging-website.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to create a staging website",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-create-a-staging-website/"
+        }
+      ]
+    },
+    {
+      "title": "How To Enable Categories And Tags For Pages",
+      "slug": "how-to-enable-categories-and-tags-for-pages",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-categories-and-tags-for-pages/",
+      "file": "categories/how-to-enable-categories-and-tags-for-pages.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Enable Categories and Tags for Pages",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-categories-and-tags-for-pages/"
+        }
+      ]
+    },
+    {
+      "title": "How To Enable Scroll To Id",
+      "slug": "how-to-enable-scroll-to-id",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-scroll-to-id/",
+      "file": "categories/how-to-enable-scroll-to-id.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Enable Scroll to ID",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-scroll-to-id/"
+        }
+      ]
+    },
+    {
+      "title": "How To Enable The Kadence Lightbox Feature For Image Links",
+      "slug": "how-to-enable-the-kadence-lightbox-feature-for-image-links",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-the-kadence-lightbox-feature-for-image-links/",
+      "file": "categories/how-to-enable-the-kadence-lightbox-feature-for-image-links.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Enable the Kadence Lightbox Feature for Image Links",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-the-kadence-lightbox-feature-for-image-links/"
+        }
+      ]
+    },
+    {
+      "title": "How To Enable The Wordpress Error Logs",
+      "slug": "how-to-enable-the-wordpress-error-logs",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-the-wordpress-error-logs/",
+      "file": "categories/how-to-enable-the-wordpress-error-logs.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Enable the WordPress Error Logs",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-the-wordpress-error-logs/"
+        }
+      ]
+    },
+    {
+      "title": "How To Enable Transparent Header On 404 Page",
+      "slug": "how-to-enable-transparent-header-on-404-page",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-transparent-header-on-404-page/",
+      "file": "categories/how-to-enable-transparent-header-on-404-page.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Enable Transparent Header on 404 Page",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-enable-transparent-header-on-404-page/"
+        }
+      ]
+    },
+    {
+      "title": "How To Find The Page Or Post Id",
+      "slug": "how-to-find-the-page-or-post-id",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-find-the-page-or-post-id/",
+      "file": "categories/how-to-find-the-page-or-post-id.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Find the Page or Post ID",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-find-the-page-or-post-id/"
+        }
+      ]
+    },
+    {
+      "title": "How To Hook Elements Inside Of Post Or Page Content",
+      "slug": "how-to-hook-elements-inside-of-post-or-page-content",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-hook-elements-inside-of-post-or-page-content/",
+      "file": "categories/how-to-hook-elements-inside-of-post-or-page-content.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to hook elements inside of post or page content",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-hook-elements-inside-of-post-or-page-content/"
+        }
+      ]
+    },
+    {
+      "title": "How To Import Export And Reset Kadence Theme Customizer Settings Using Starter Templates Plugin",
+      "slug": "how-to-import-export-and-reset-kadence-theme-customizer-settings-using-starter-templates-plugin",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-import-export-and-reset-kadence-theme-customizer-settings-using-starter-templates-plugin/",
+      "file": "categories/how-to-import-export-and-reset-kadence-theme-customizer-settings-using-starter-templates-plugin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Import, Export, and Reset Kadence Theme Customizer Settings Using Starter Templates Plugin",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-import-export-and-reset-kadence-theme-customizer-settings-using-starter-templates-plugin/"
+        }
+      ]
+    },
+    {
+      "title": "How To Open The Side Cart When A Product Is Added To Cart",
+      "slug": "how-to-open-the-side-cart-when-a-product-is-added-to-cart",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-open-the-side-cart-when-a-product-is-added-to-cart/",
+      "file": "categories/how-to-open-the-side-cart-when-a-product-is-added-to-cart.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to open the side cart when a product is added to cart",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-open-the-side-cart-when-a-product-is-added-to-cart/"
+        }
+      ]
+    },
+    {
+      "title": "How To Prevent Spam Comments",
+      "slug": "how-to-prevent-spam-comments",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-prevent-spam-comments/",
+      "file": "categories/how-to-prevent-spam-comments.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Remove All Spam Comments",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-prevent-spam-comments/"
+        }
+      ]
+    },
+    {
+      "title": "How To Regenerate Permalinks In Wordpress",
+      "slug": "how-to-regenerate-permalinks-in-wordpress",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-regenerate-permalinks-in-wordpress/",
+      "file": "categories/how-to-regenerate-permalinks-in-wordpress.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Regenerate Permalinks in WordPress",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-regenerate-permalinks-in-wordpress/"
+        }
+      ]
+    },
+    {
+      "title": "How To Remove All Spam Comments",
+      "slug": "how-to-remove-all-spam-comments",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-remove-all-spam-comments/",
+      "file": "categories/how-to-remove-all-spam-comments.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Remove All Spam Comments",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-remove-all-spam-comments/"
+        }
+      ]
+    },
+    {
+      "title": "How To Run The Wordpress Built In Database Repair Tool",
+      "slug": "how-to-run-the-wordpress-built-in-database-repair-tool",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-run-the-wordpress-built-in-database-repair-tool/",
+      "file": "categories/how-to-run-the-wordpress-built-in-database-repair-tool.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to run the WordPress built-in database repair tool",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-run-the-wordpress-built-in-database-repair-tool/"
+        }
+      ]
+    },
+    {
+      "title": "How To Translate Using Locotranslate",
+      "slug": "how-to-translate-using-locotranslate",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-translate-using-locotranslate/",
+      "file": "categories/how-to-translate-using-locotranslate.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to translate using LocoTranslate",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-translate-using-locotranslate/"
+        }
+      ]
+    },
+    {
+      "title": "How To View Console Log Errors",
+      "slug": "how-to-view-console-log-errors",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-view-console-log-errors/",
+      "file": "categories/how-to-view-console-log-errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to View Console Log Errors",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/how-to-view-console-log-errors/"
+        }
+      ]
+    },
+    {
+      "title": "Importing Exporting Kadence Elements",
+      "slug": "importing-exporting-kadence-elements",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/importing-exporting-kadence-elements/",
+      "file": "categories/importing-exporting-kadence-elements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Importing/Exporting Kadence Elements",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/importing-exporting-kadence-elements/"
+        }
+      ]
+    },
+    {
+      "title": "Infinite Scroll",
+      "slug": "infinite-scroll",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/infinite-scroll/",
+      "file": "categories/infinite-scroll.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Infinite Scroll",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/infinite-scroll/"
+        }
+      ]
+    },
+    {
+      "title": "Installing Kadence Elements",
+      "slug": "installing-kadence-elements",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/installing-kadence-elements/",
+      "file": "categories/installing-kadence-elements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Installing and Creating Kadence Elements",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/installing-kadence-elements/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Classic Header Items",
+      "slug": "kadence-classic-header-items",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-classic-header-items/",
+      "file": "categories/kadence-classic-header-items.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Classic Header Items",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-classic-header-items/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Content Section Hooked Elements",
+      "slug": "kadence-content-section-hooked-elements",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-content-section-hooked-elements/",
+      "file": "categories/kadence-content-section-hooked-elements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Content Section Hooked Elements",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-content-section-hooked-elements/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Html Editor Hooked Elements",
+      "slug": "kadence-html-editor-hooked-elements",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-html-editor-hooked-elements/",
+      "file": "categories/kadence-html-editor-hooked-elements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence HTML Editor Hooked Elements",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-html-editor-hooked-elements/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Site Assist",
+      "slug": "kadence-site-assist",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-site-assist/",
+      "file": "categories/kadence-site-assist.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Kadence Site Assist",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-site-assist/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Starter Templates",
+      "slug": "kadence-starter-templates",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-starter-templates/",
+      "file": "categories/kadence-starter-templates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Starter Templates",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-starter-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Theme Pro Addon",
+      "slug": "kadence-theme-pro-addon",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-theme-pro-addon/",
+      "file": "categories/kadence-theme-pro-addon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Blocks Pro Plugin",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-theme-pro-addon/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Woocommerce Customizer Settings",
+      "slug": "kadence-woocommerce-customizer-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-woocommerce-customizer-settings/",
+      "file": "categories/kadence-woocommerce-customizer-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence WooCommerce Customizer Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-woocommerce-customizer-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Maintenance Mode",
+      "slug": "maintenance-mode",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/maintenance-mode/",
+      "file": "categories/maintenance-mode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Maintenance Mode",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/maintenance-mode/"
+        }
+      ]
+    },
+    {
+      "title": "Make A Custom 404 Page",
+      "slug": "make-a-custom-404-page",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/make-a-custom-404-page/",
+      "file": "categories/make-a-custom-404-page.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to make a custom 404 page",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/make-a-custom-404-page/"
+        }
+      ]
+    },
+    {
+      "title": "Mega Multicolumn Menu",
+      "slug": "mega-multicolumn-menu",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/mega-multicolumn-menu/",
+      "file": "categories/mega-multicolumn-menu.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to create a Mega (Multicolumn Menu)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/mega-multicolumn-menu/"
+        }
+      ]
+    },
+    {
+      "title": "Navigation Colors Transparent Header Sticky Header",
+      "slug": "navigation-colors-transparent-header-sticky-header",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/navigation-colors-transparent-header-sticky-header/",
+      "file": "categories/navigation-colors-transparent-header-sticky-header.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Classic Header Navigation Colors (Default Header, Transparent Header, Sticky Header)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/navigation-colors-transparent-header-sticky-header/"
+        }
+      ]
+    },
+    {
+      "title": "Open Side Cart When Product Is Added To Cart",
+      "slug": "open-side-cart-when-product-is-added-to-cart",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/open-side-cart-when-product-is-added-to-cart/",
+      "file": "categories/open-side-cart-when-product-is-added-to-cart.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to open the side cart when a product is added to cart",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/open-side-cart-when-product-is-added-to-cart/"
+        }
+      ]
+    },
+    {
+      "title": "Post Page Archive Layout Settings",
+      "slug": "post-page-archive-layout-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/post-page-archive-layout-settings/",
+      "file": "categories/post-page-archive-layout-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting up Posts, Pages, and Archive Layouts in Kadence",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/post-page-archive-layout-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Pre Designed Starter Templates",
+      "slug": "pre-designed-starter-templates",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/pre-designed-starter-templates/",
+      "file": "categories/pre-designed-starter-templates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with a Pre-Designed Starter Template",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/pre-designed-starter-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Preventing The Theme Transparent Header From Overlapping Page Content",
+      "slug": "preventing-the-theme-transparent-header-from-overlapping-page-content",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/preventing-the-theme-transparent-header-from-overlapping-page-content/",
+      "file": "categories/preventing-the-theme-transparent-header-from-overlapping-page-content.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Preventing the Theme Transparent Header from Overlapping Page Content",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/preventing-the-theme-transparent-header-from-overlapping-page-content/"
+        }
+      ]
+    },
+    {
+      "title": "Remove All Spam Comments",
+      "slug": "remove-all-spam-comments",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/remove-all-spam-comments/",
+      "file": "categories/remove-all-spam-comments.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Remove All Spam Comments",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/remove-all-spam-comments/"
+        }
+      ]
+    },
+    {
+      "title": "Remove Title Tags On Kadence Svg Icons",
+      "slug": "remove-title-tags-on-kadence-svg-icons",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/remove-title-tags-on-kadence-svg-icons/",
+      "file": "categories/remove-title-tags-on-kadence-svg-icons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Remove title tags on Kadence SVG Icons",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/remove-title-tags-on-kadence-svg-icons/"
+        }
+      ]
+    },
+    {
+      "title": "Replace Author Html Multiple Author Support",
+      "slug": "replace-author-html-multiple-author-support",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/replace-author-html-multiple-author-support/",
+      "file": "categories/replace-author-html-multiple-author-support.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Author Link Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/replace-author-html-multiple-author-support/"
+        }
+      ]
+    },
+    {
+      "title": "Scroll To Top",
+      "slug": "scroll-to-top",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/scroll-to-top/",
+      "file": "categories/scroll-to-top.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add Scroll To Top",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/scroll-to-top/"
+        }
+      ]
+    },
+    {
+      "title": "Search Results Customizer Settings",
+      "slug": "search-results-customizer-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/search-results-customizer-settings/",
+      "file": "categories/search-results-customizer-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Search Results Customizer Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/search-results-customizer-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Set Site Favicon",
+      "slug": "set-site-favicon",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/set-site-favicon/",
+      "file": "categories/set-site-favicon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Set Site Favicon",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/set-site-favicon/"
+        }
+      ]
+    },
+    {
+      "title": "Simulating A Mobile Environment For Testing",
+      "slug": "simulating-a-mobile-environment-for-testing",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/simulating-a-mobile-environment-for-testing/",
+      "file": "categories/simulating-a-mobile-environment-for-testing.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Simulating a Mobile Environment For Testing",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/simulating-a-mobile-environment-for-testing/"
+        }
+      ]
+    },
+    {
+      "title": "Single Post Layout Customizer Settings",
+      "slug": "single-post-layout-customizer-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/single-post-layout-customizer-settings/",
+      "file": "categories/single-post-layout-customizer-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Single Post Layout Customizer Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/single-post-layout-customizer-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Starter Templates Ai Powered Vs Pre Designed",
+      "slug": "starter-templates-ai-powered-vs-pre-designed",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/starter-templates-ai-powered-vs-pre-designed/",
+      "file": "categories/starter-templates-ai-powered-vs-pre-designed.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Starter Templates: AI Powered Vs Pre-Designed",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/starter-templates-ai-powered-vs-pre-designed/"
+        },
+        {
+          "title": "Starter Templates: AI Powered Vs Pre-Designed",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/starter-templates-ai-powered-vs-pre-designed/"
+        }
+      ]
+    },
+    {
+      "title": "Sticky Sidebars",
+      "slug": "sticky-sidebars",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/sticky-sidebars/",
+      "file": "categories/sticky-sidebars.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sticky Sidebars",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/sticky-sidebars/"
+        }
+      ]
+    },
+    {
+      "title": "Style Buttons",
+      "slug": "style-buttons",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/style-buttons/",
+      "file": "categories/style-buttons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Style Buttons in the Kadence Theme",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/style-buttons/"
+        }
+      ]
+    },
+    {
+      "title": "Switching Between Different Kadence Elements Types",
+      "slug": "switching-between-different-kadence-elements-types",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/switching-between-different-kadence-elements-types/",
+      "file": "categories/switching-between-different-kadence-elements-types.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Switching between different Kadence Elements Types",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/switching-between-different-kadence-elements-types/"
+        }
+      ]
+    },
+    {
+      "title": "Temporarily Deactivating Plugins",
+      "slug": "temporarily-deactivating-plugins",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/temporarily-deactivating-plugins/",
+      "file": "categories/temporarily-deactivating-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Temporarily Deactivating Plugins",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/temporarily-deactivating-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "The Four Types Of Kadence Elements",
+      "slug": "the-four-types-of-kadence-elements",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/the-four-types-of-kadence-elements/",
+      "file": "categories/the-four-types-of-kadence-elements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Four Types of Kadence Elements",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/the-four-types-of-kadence-elements/"
+        }
+      ]
+    },
+    {
+      "title": "Theme Color Palette",
+      "slug": "theme-color-palette",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/theme-color-palette/",
+      "file": "categories/theme-color-palette.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to use the Kadence Theme Color Palette",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/theme-color-palette/"
+        }
+      ]
+    },
+    {
+      "title": "Theme Kit Pro Plugin",
+      "slug": "theme-kit-pro-plugin",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/theme-kit-pro-plugin/",
+      "file": "categories/theme-kit-pro-plugin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Theme Kit Pro Plugin",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/theme-kit-pro-plugin/"
+        }
+      ]
+    },
+    {
+      "title": "Theme Style Guide",
+      "slug": "theme-style-guide",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/theme-style-guide/",
+      "file": "categories/theme-style-guide.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to use the Kadence Theme Style Guide",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/theme-style-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Translate Using Locotranslate",
+      "slug": "translate-using-locotranslate",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/translate-using-locotranslate/",
+      "file": "categories/translate-using-locotranslate.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to translate using LocoTranslate",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/translate-using-locotranslate/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Kadence Pro Update Failed Service Unavailable",
+      "slug": "troubleshoot-kadence-pro-update-failed-service-unavailable",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/troubleshoot-kadence-pro-update-failed-service-unavailable/",
+      "file": "categories/troubleshoot-kadence-pro-update-failed-service-unavailable.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting the “Update Failed: Service Unavailable” error when updating Kadence Pro plugins",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/troubleshoot-kadence-pro-update-failed-service-unavailable/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting The Update Failed Service Unavailable Error When Updating Pro Kadence Wp Plugins",
+      "slug": "troubleshooting-the-update-failed-service-unavailable-error-when-updating-pro-kadence-wp-plugins",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/troubleshooting-the-update-failed-service-unavailable-error-when-updating-pro-kadence-wp-plugins/",
+      "file": "categories/troubleshooting-the-update-failed-service-unavailable-error-when-updating-pro-kadence-wp-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting the “Update Failed: Service Unavailable” error when updating Kadence Pro plugins",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/troubleshooting-the-update-failed-service-unavailable-error-when-updating-pro-kadence-wp-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "Typography Settings",
+      "slug": "typography-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/typography-settings/",
+      "file": "categories/typography-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Typography Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/typography-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Understand Php Deprecated Notices",
+      "slug": "understand-php-deprecated-notices",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/understand-php-deprecated-notices/",
+      "file": "categories/understand-php-deprecated-notices.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding PHP Deprecated Notices on Your Site",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/understand-php-deprecated-notices/"
+        }
+      ]
+    },
+    {
+      "title": "Understanding Php Deprecated Notices On Your Site",
+      "slug": "understanding-php-deprecated-notices-on-your-site",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/understanding-php-deprecated-notices-on-your-site/",
+      "file": "categories/understanding-php-deprecated-notices-on-your-site.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding PHP Deprecated Notices on Your Site",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/understanding-php-deprecated-notices-on-your-site/"
+        }
+      ]
+    },
+    {
+      "title": "Use A Post Grid Carousel Block As Related Posts",
+      "slug": "use-a-post-grid-carousel-block-as-related-posts",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/use-a-post-grid-carousel-block-as-related-posts/",
+      "file": "categories/use-a-post-grid-carousel-block-as-related-posts.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Use a Post Grid/Carousel Block as Related Posts",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/use-a-post-grid-carousel-block-as-related-posts/"
+        }
+      ]
+    },
+    {
+      "title": "Use Category And Taxonomy Images With Kadence Dynamic Content",
+      "slug": "use-category-and-taxonomy-images-with-kadence-dynamic-content",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/use-category-and-taxonomy-images-with-kadence-dynamic-content/",
+      "file": "categories/use-category-and-taxonomy-images-with-kadence-dynamic-content.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Use Category & Taxonomy Images with Kadence Dynamic Content",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/use-category-and-taxonomy-images-with-kadence-dynamic-content/"
+        }
+      ]
+    },
+    {
+      "title": "Use Element Hooks",
+      "slug": "use-element-hooks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/use-element-hooks/",
+      "file": "categories/use-element-hooks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to use Element Hooks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/use-element-hooks/"
+        }
+      ]
+    },
+    {
+      "title": "Use Hook Elements Inside Post Or Page Content",
+      "slug": "use-hook-elements-inside-post-or-page-content",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/use-hook-elements-inside-post-or-page-content/",
+      "file": "categories/use-hook-elements-inside-post-or-page-content.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to hook elements inside of post or page content",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/use-hook-elements-inside-post-or-page-content/"
+        }
+      ]
+    },
+    {
+      "title": "Using The Wordpress Dashboard",
+      "slug": "using-the-wordpress-dashboard",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/using-the-wordpress-dashboard/",
+      "file": "categories/using-the-wordpress-dashboard.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the WordPress Dashboard",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/using-the-wordpress-dashboard/"
+        }
+      ]
+    },
+    {
+      "title": "What Are Kadence Hooked Elements",
+      "slug": "what-are-kadence-hooked-elements",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/what-are-kadence-hooked-elements/",
+      "file": "categories/what-are-kadence-hooked-elements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What are Kadence Hooked Elements?",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/what-are-kadence-hooked-elements/"
+        }
+      ]
+    },
+    {
+      "title": "What Is Child Theme Do I Need One",
+      "slug": "what-is-child-theme-do-i-need-one",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/what-is-child-theme-do-i-need-one/",
+      "file": "categories/what-is-child-theme-do-i-need-one.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What is a Child Theme, Should I Install One, if so How?",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/what-is-child-theme-do-i-need-one/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Addons",
+      "slug": "woocommerce-addons",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/woocommerce-addons/",
+      "file": "categories/woocommerce-addons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WooCommerce Addons",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/woocommerce-addons/"
+        }
+      ]
+    },
+    {
+      "title": "Wordpress Error Incompatible Archive",
+      "slug": "wordpress-error-incompatible-archive",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/wordpress-error-incompatible-archive/",
+      "file": "categories/wordpress-error-incompatible-archive.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WordPress Error “Incompatible Archive”",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/wordpress-error-incompatible-archive/"
+        }
+      ]
+    },
+    {
+      "title": "Working With The Sticky Header",
+      "slug": "working-with-the-sticky-header",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/working-with-the-sticky-header/",
+      "file": "categories/working-with-the-sticky-header.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Working with the Sticky Header",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/working-with-the-sticky-header/"
+        }
+      ]
+    }
+  ]
 }

@@ -1,9 +1,179 @@
 {
   "plugin_slug": "woocommerce-checkout-manager",
   "plugin_name": "WooCommerce Checkout Manager",
-  "documentation_url": "https://woocommerce.com/document/documentation/",
-  "last_scraped": "2026-06-28T22:19:49.876Z",
-  "total_pages": 0,
-  "failed_urls_count": 0,
-  "sections": []
+  "documentation_url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/",
+  "last_scraped": "2026-07-05T16:48:13.828Z",
+  "total_pages": 13,
+  "failed_urls_count": 1,
+  "sections": [
+    {
+      "title": "Activation",
+      "slug": "activation",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/activation/",
+      "file": "categories/activation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Activation",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/activation/"
+        }
+      ]
+    },
+    {
+      "title": "Changelog",
+      "slug": "changelog",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/changelog/",
+      "file": "categories/changelog.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Changelog",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/changelog/"
+        }
+      ]
+    },
+    {
+      "title": "Checkout",
+      "slug": "checkout",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/checkout/",
+      "file": "categories/checkout.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Checkout",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/checkout/"
+        }
+      ]
+    },
+    {
+      "title": "Conditional",
+      "slug": "conditional",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/conditional/",
+      "file": "categories/conditional.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Conditional",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/conditional/"
+        }
+      ]
+    },
+    {
+      "title": "Developers",
+      "slug": "developers",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/developers/",
+      "file": "categories/developers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Developers",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/developers/"
+        }
+      ]
+    },
+    {
+      "title": "Emails",
+      "slug": "emails",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/emails/",
+      "file": "categories/emails.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Emails",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/emails/"
+        }
+      ]
+    },
+    {
+      "title": "Export",
+      "slug": "export",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/export/",
+      "file": "categories/export.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Export",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/export/"
+        }
+      ]
+    },
+    {
+      "title": "Faq",
+      "slug": "faq",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/faq/",
+      "file": "categories/faq.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "FAQ",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/faq/"
+        }
+      ]
+    },
+    {
+      "title": "Fields",
+      "slug": "fields",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/fields/",
+      "file": "categories/fields.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Fields",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/fields/"
+        }
+      ]
+    },
+    {
+      "title": "Installation",
+      "slug": "installation",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/installation/",
+      "file": "categories/installation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Installation",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/installation/"
+        }
+      ]
+    },
+    {
+      "title": "Invoices",
+      "slug": "invoices",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/invoices/",
+      "file": "categories/invoices.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Invoices",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/invoices/"
+        }
+      ]
+    },
+    {
+      "title": "Order",
+      "slug": "order",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/order/",
+      "file": "categories/order.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Order",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/order/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "slug": "troubleshooting",
+      "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/troubleshooting/",
+      "file": "categories/troubleshooting.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting",
+          "url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/troubleshooting/"
+        }
+      ]
+    }
+  ]
 }

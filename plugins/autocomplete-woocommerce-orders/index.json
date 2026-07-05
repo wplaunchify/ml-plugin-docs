@@ -1,9 +1,88 @@
 {
   "plugin_slug": "autocomplete-woocommerce-orders",
   "plugin_name": "Autocomplete WooCommerce Orders",
-  "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/documentation/",
-  "last_scraped": "2026-07-05T16:23:19.026Z",
-  "total_pages": 0,
-  "failed_urls_count": 0,
-  "sections": []
+  "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/",
+  "last_scraped": "2026-07-05T17:06:54.439Z",
+  "total_pages": 6,
+  "failed_urls_count": 1,
+  "sections": [
+    {
+      "title": "Activation",
+      "slug": "activation",
+      "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/activation/",
+      "file": "categories/activation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Activation",
+          "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/activation/"
+        }
+      ]
+    },
+    {
+      "title": "Installation",
+      "slug": "installation",
+      "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/installation/",
+      "file": "categories/installation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Installation",
+          "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/installation/"
+        }
+      ]
+    },
+    {
+      "title": "Payments",
+      "slug": "payments",
+      "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/payments/",
+      "file": "categories/payments.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Payments",
+          "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/payments/"
+        }
+      ]
+    },
+    {
+      "title": "Paypal",
+      "slug": "paypal",
+      "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/paypal/",
+      "file": "categories/paypal.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Activate PayPal Token",
+          "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/paypal/"
+        }
+      ]
+    },
+    {
+      "title": "Paypal Pdt",
+      "slug": "paypal-pdt",
+      "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/paypal-pdt/",
+      "file": "categories/paypal-pdt.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Why Autocomplete Orders?",
+          "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/paypal-pdt/"
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "slug": "settings",
+      "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/settings/",
+      "file": "categories/settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Settings",
+          "url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/settings/"
+        }
+      ]
+    }
+  ]
 }

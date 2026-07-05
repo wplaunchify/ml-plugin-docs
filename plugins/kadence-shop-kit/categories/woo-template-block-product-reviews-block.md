@@ -1,0 +1,28 @@
+# Woo Template Block Product Reviews Block
+
+*Category from Kadence Shop Kit documentation*
+
+---
+
+## Woo Template Block – Product: Reviews Block
+
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-reviews-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-reviews-block/)
+
+The Product Reviews Block allows users to leave reviews on your product.
+
+![Leaving a review](https://www.liquidweb.com/wp-content/uploads/2022/12/leavingareview.gif)The Product: Reviews block allows you to display the reviews of a product on your Woo Template. You can add the Product: Reviews block just like any other block.
+
+![Product reviews block selection.](https://www.liquidweb.com/wp-content/uploads/2022/12/product_reviews_blockselection-487x1024.png)
+## Product Reviews:
+
+You can enable Product Reviews by going to WooCommerce > Settings > Products and enabling Product Reviews.
+
+![Enable Product Reviews](https://www.liquidweb.com/wp-content/uploads/2022/12/enable_product_reviews-1024x588.png)
+### Product: Reviews Block Settings
+
+You can add the Product: Reviews block to your Woo Template like any other block. Then you can customize your Product: Reviews Block Settings.
+
+![Product Reviews Block Settings](https://www.liquidweb.com/wp-content/uploads/2022/12/product_reviews_block_Settings-1024x420.png)**General Settings-** Here you can customize the Product Reviews Layout. You can choose your layout from the inherit, single-column, or two-column options. You can use the responsive controls to select a different layout for different devices.![](https://www.liquidweb.com/wp-content/uploads/2022/12/product_reviews_general_settings.png)**Spacing Settings –**You can adjust the padding and margin of your Product: Reviews block for desktop, tablet, and mobile devices.![Spacing Settings](https://www.liquidweb.com/wp-content/uploads/2022/11/spacing_settings.jpg)**Advanced Settings –**You can add custom CSS classes to your Product: Reviews block.![Advanced Settings](https://www.liquidweb.com/wp-content/uploads/2022/11/product_gallery_advanced.jpg)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+
+---
+

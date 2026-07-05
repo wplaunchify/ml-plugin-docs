@@ -1,9 +1,101 @@
 {
   "plugin_slug": "kadence-insights-a-b-testing",
   "plugin_name": "Kadence Insights - A/B Testing",
-  "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-  "last_scraped": "2026-06-28T20:34:09.762Z",
-  "total_pages": 0,
-  "failed_urls_count": 5,
-  "sections": []
+  "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-insights/",
+  "last_scraped": "2026-07-05T16:55:27.422Z",
+  "total_pages": 7,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "A B Testing 101",
+      "slug": "a-b-testing-101",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/a-b-testing-101/",
+      "file": "categories/a-b-testing-101.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "A/B Testing 101",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/a-b-testing-101/"
+        }
+      ]
+    },
+    {
+      "title": "Create Your First Ab Test",
+      "slug": "create-your-first-ab-test",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/create-your-first-ab-test/",
+      "file": "categories/create-your-first-ab-test.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Your First A/B Test",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/create-your-first-ab-test/"
+        }
+      ]
+    },
+    {
+      "title": "Creating Your First A B Test",
+      "slug": "creating-your-first-a-b-test",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/creating-your-first-a-b-test/",
+      "file": "categories/creating-your-first-a-b-test.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Your First A/B Test",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/creating-your-first-a-b-test/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Insights Faq",
+      "slug": "kadence-insights-faq",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/kadence-insights-faq/",
+      "file": "categories/kadence-insights-faq.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Insights FAQ",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/kadence-insights-faq/"
+        }
+      ]
+    },
+    {
+      "title": "Setting Up Kadence Insights",
+      "slug": "setting-up-kadence-insights",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/setting-up-kadence-insights/",
+      "file": "categories/setting-up-kadence-insights.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting Up Kadence Insights",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/setting-up-kadence-insights/"
+        }
+      ]
+    },
+    {
+      "title": "Setup Kadence Insights",
+      "slug": "setup-kadence-insights",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/setup-kadence-insights/",
+      "file": "categories/setup-kadence-insights.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting Up Kadence Insights",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/setup-kadence-insights/"
+        }
+      ]
+    },
+    {
+      "title": "What Is Ab Testing",
+      "slug": "what-is-ab-testing",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/what-is-ab-testing/",
+      "file": "categories/what-is-ab-testing.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "A/B Testing 101",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-insights/what-is-ab-testing/"
+        }
+      ]
+    }
+  ]
 }

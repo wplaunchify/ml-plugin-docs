@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Facetwp scraper
-        run: node scraper.js --slug=facetwp --mode=html-scrape --url=https://facetwp.com/help-center/ --name="FacetWP"
+        run: node scraper.js --slug=facetwp --mode=html-scrape --url=https://facetwp.com/help-center/ --selector=.main-content --name="FacetWP"
 
       - name: Check for changes
         id: changes

@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Woocommerce Anti Fraud scraper
-        run: node scraper.js --slug=woocommerce-anti-fraud --mode=wp-api --url=https://woocommerce.com/document/ --post-type=documentation --taxonomy=documentation_category --name="WooCommerce Anti Fraud"
+        run: node scraper.js --slug=woocommerce-anti-fraud --mode=html-scrape --url=https://woocommerce.com/document/woocommerce-anti-fraud/ --selector=.wccom-single-doc-content --name="WooCommerce Anti Fraud"
 
       - name: Check for changes
         id: changes

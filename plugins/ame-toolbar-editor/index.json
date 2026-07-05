@@ -1,9 +1,179 @@
 {
   "plugin_slug": "ame-toolbar-editor",
   "plugin_name": "AME Toolbar Editor",
-  "documentation_url": "https://adminmenueditor.com",
-  "last_scraped": "2026-07-04T08:21:10.544Z",
-  "total_pages": 0,
-  "failed_urls_count": 18,
-  "sections": []
+  "documentation_url": "https://adminmenueditor.com/documentation/",
+  "last_scraped": "2026-07-05T17:24:17.171Z",
+  "total_pages": 13,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Changelog",
+      "slug": "changelog",
+      "url": "https://adminmenueditor.com/documentation/changelog/",
+      "file": "categories/changelog.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Changelog",
+          "url": "https://adminmenueditor.com/documentation/changelog/"
+        }
+      ]
+    },
+    {
+      "title": "Cli",
+      "slug": "cli",
+      "url": "https://adminmenueditor.com/documentation/cli/",
+      "file": "categories/cli.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Command-Line Interface",
+          "url": "https://adminmenueditor.com/documentation/cli/"
+        }
+      ]
+    },
+    {
+      "title": "Data Processing Notes",
+      "slug": "data-processing-notes",
+      "url": "https://adminmenueditor.com/documentation/data-processing-notes/",
+      "file": "categories/data-processing-notes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "About Data Processing",
+          "url": "https://adminmenueditor.com/documentation/data-processing-notes/"
+        }
+      ]
+    },
+    {
+      "title": "Faq",
+      "slug": "faq",
+      "url": "https://adminmenueditor.com/documentation/faq/",
+      "file": "categories/faq.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "FAQ",
+          "url": "https://adminmenueditor.com/documentation/faq/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add A New Menu Item",
+      "slug": "how-to-add-a-new-menu-item",
+      "url": "https://adminmenueditor.com/documentation/how-to-add-a-new-menu-item/",
+      "file": "categories/how-to-add-a-new-menu-item.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add a New Menu Item",
+          "url": "https://adminmenueditor.com/documentation/how-to-add-a-new-menu-item/"
+        }
+      ]
+    },
+    {
+      "title": "How To Give Access To Menu",
+      "slug": "how-to-give-access-to-menu",
+      "url": "https://adminmenueditor.com/documentation/how-to-give-access-to-menu/",
+      "file": "categories/how-to-give-access-to-menu.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Allow Access to an Admin Menu",
+          "url": "https://adminmenueditor.com/documentation/how-to-give-access-to-menu/"
+        }
+      ]
+    },
+    {
+      "title": "How To Hide A Menu Item",
+      "slug": "how-to-hide-a-menu-item",
+      "url": "https://adminmenueditor.com/documentation/how-to-hide-a-menu-item/",
+      "file": "categories/how-to-hide-a-menu-item.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Hide a Menu Item",
+          "url": "https://adminmenueditor.com/documentation/how-to-hide-a-menu-item/"
+        }
+      ]
+    },
+    {
+      "title": "How To Hide Menu Without Preventing Access",
+      "slug": "how-to-hide-menu-without-preventing-access",
+      "url": "https://adminmenueditor.com/documentation/how-to-hide-menu-without-preventing-access/",
+      "file": "categories/how-to-hide-menu-without-preventing-access.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Hide a Menu Without Preventing Access",
+          "url": "https://adminmenueditor.com/documentation/how-to-hide-menu-without-preventing-access/"
+        }
+      ]
+    },
+    {
+      "title": "How To Move And Sort Menus",
+      "slug": "how-to-move-and-sort-menus",
+      "url": "https://adminmenueditor.com/documentation/how-to-move-and-sort-menus/",
+      "file": "categories/how-to-move-and-sort-menus.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Move and Sort Menus",
+          "url": "https://adminmenueditor.com/documentation/how-to-move-and-sort-menus/"
+        }
+      ]
+    },
+    {
+      "title": "Installation",
+      "slug": "installation",
+      "url": "https://adminmenueditor.com/documentation/installation/",
+      "file": "categories/installation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Installation",
+          "url": "https://adminmenueditor.com/documentation/installation/"
+        }
+      ]
+    },
+    {
+      "title": "Legal Stuff",
+      "slug": "legal-stuff",
+      "url": "https://adminmenueditor.com/documentation/legal-stuff/",
+      "file": "categories/legal-stuff.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Legal Information",
+          "url": "https://adminmenueditor.com/documentation/legal-stuff/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://adminmenueditor.com/documentation/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Support",
+          "url": "https://adminmenueditor.com/documentation/"
+        }
+      ]
+    },
+    {
+      "title": "Permissions",
+      "slug": "permissions",
+      "url": "https://adminmenueditor.com/documentation/permissions/",
+      "file": "categories/permissions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Permissions",
+          "url": "https://adminmenueditor.com/documentation/permissions/"
+        }
+      ]
+    }
+  ]
 }

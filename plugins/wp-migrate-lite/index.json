@@ -2,8 +2,238 @@
   "plugin_slug": "wp-migrate-lite",
   "plugin_name": "WP Migrate Lite",
   "documentation_url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/",
-  "last_scraped": "2026-07-05T07:07:15.181Z",
-  "total_pages": 0,
+  "last_scraped": "2026-07-05T17:04:41.641Z",
+  "total_pages": 55,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 55,
+      "pages": [
+        {
+          "title": "How do software updates work?",
+          "url": "https://deliciousbrains.com/faq/ome-software-updates/"
+        },
+        {
+          "title": "What are the minimum requirements?",
+          "url": "https://deliciousbrains.com/faq/requirements-3/"
+        },
+        {
+          "title": "What happens when my license expires?",
+          "url": "https://deliciousbrains.com/faq/expired-license-3/"
+        },
+        {
+          "title": "Why a count of offloaded media?",
+          "url": "https://deliciousbrains.com/faq/media-library-size/"
+        },
+        {
+          "title": "What happens when I hit the offloaded media limit?",
+          "url": "https://deliciousbrains.com/faq/media-library-limit/"
+        },
+        {
+          "title": "Do resized images count toward my limit?",
+          "url": "https://deliciousbrains.com/faq/resized-images/"
+        },
+        {
+          "title": "What are the minimum requirements?",
+          "url": "https://deliciousbrains.com/faq/requirements-2/"
+        },
+        {
+          "title": "What happens when my license expires?",
+          "url": "https://deliciousbrains.com/faq/expired-license-2/"
+        },
+        {
+          "title": "How do software updates work?",
+          "url": "https://deliciousbrains.com/faq/software-updates/"
+        },
+        {
+          "title": "What is priority email support?",
+          "url": "https://deliciousbrains.com/faq/email-support/"
+        },
+        {
+          "title": "What happens if I’ve already offloaded media using the Lite version?",
+          "url": "https://deliciousbrains.com/faq/what-happens-if-ive-already-offloaded-media-using-the-lite-version/"
+        },
+        {
+          "title": "How do renewals work?",
+          "url": "https://deliciousbrains.com/faq/renewal-cost/"
+        },
+        {
+          "title": "Do development and staging sites count toward my limit?",
+          "url": "https://deliciousbrains.com/faq/development-staging-sites/"
+        },
+        {
+          "title": "How do I free up some of my offloaded Media Library limit?",
+          "url": "https://deliciousbrains.com/faq/free-up-limit/"
+        },
+        {
+          "title": "What’s an “Integration”?",
+          "url": "https://deliciousbrains.com/faq/compatibility-addon/"
+        },
+        {
+          "title": "How many sites can I use my license on?",
+          "url": "https://deliciousbrains.com/faq/how-many-sites/"
+        },
+        {
+          "title": "How is my license usage calculated exactly?",
+          "url": "https://deliciousbrains.com/faq/usage-calculation/"
+        },
+        {
+          "title": "Will the plugin work on multisite with a Bronze or Silver license?",
+          "url": "https://deliciousbrains.com/faq/multisite-work/"
+        },
+        {
+          "title": "Does it handle serialized data?",
+          "url": "https://deliciousbrains.com/faq/serialized-data/"
+        },
+        {
+          "title": "How do software updates and support work?",
+          "url": "https://deliciousbrains.com/faq/one-year/"
+        },
+        {
+          "title": "Can I upgrade my license later?",
+          "url": "https://deliciousbrains.com/faq/upgrades/"
+        },
+        {
+          "title": "Do you offer refunds?",
+          "url": "https://deliciousbrains.com/faq/refunds/"
+        },
+        {
+          "title": "What are the requirements to run WP Migrate?",
+          "url": "https://deliciousbrains.com/faq/requirements/"
+        },
+        {
+          "title": "What counts as an “active site”?",
+          "url": "https://deliciousbrains.com/faq/site-limit/"
+        },
+        {
+          "title": "What happens if I hit my “active sites” limit?",
+          "url": "https://deliciousbrains.com/faq/hit-limit/"
+        },
+        {
+          "title": "Can I deactivate sites?",
+          "url": "https://deliciousbrains.com/faq/free-up-sites/"
+        },
+        {
+          "title": "Can I use the Personal license on multisite?",
+          "url": "https://deliciousbrains.com/faq/personal-multisite/"
+        },
+        {
+          "title": "Can I share a license among several people?",
+          "url": "https://deliciousbrains.com/faq/sharing/"
+        },
+        {
+          "title": "Do you have bulk pricing discounts?",
+          "url": "https://deliciousbrains.com/faq/bulk/"
+        },
+        {
+          "title": "Does it migrate themes, plugins, and core files?",
+          "url": "https://deliciousbrains.com/faq/core-files/"
+        },
+        {
+          "title": "What types of multisite migrations are supported?",
+          "url": "https://deliciousbrains.com/faq/multisite-support/"
+        },
+        {
+          "title": "Do you offer a discount for teachers?",
+          "url": "https://deliciousbrains.com/faq/teacher-discount/"
+        },
+        {
+          "title": "Will it work on a WordPress.com site?",
+          "url": "https://deliciousbrains.com/faq/wordpress-com/"
+        },
+        {
+          "title": "Do you offer a discount to educational institutions for departments, classrooms, labs, or the entire school?",
+          "url": "https://deliciousbrains.com/faq/institution-discount/"
+        },
+        {
+          "title": "Do you offer a discount for non-profits?",
+          "url": "https://deliciousbrains.com/faq/non-profit-discount/"
+        },
+        {
+          "title": "Will I still be able to migrate sites after my license expires?",
+          "url": "https://deliciousbrains.com/faq/expired-license/"
+        },
+        {
+          "title": "What methods of payment do you accept?",
+          "url": "https://deliciousbrains.com/faq/payment-method/"
+        },
+        {
+          "title": "What methods of payment do you accept?",
+          "url": "https://deliciousbrains.com/faq/payment-method-2/"
+        },
+        {
+          "title": "Will you automatically charge my credit card account after 1 year?",
+          "url": "https://deliciousbrains.com/faq/auto-charge/"
+        },
+        {
+          "title": "Do you have a support forum?",
+          "url": "https://deliciousbrains.com/faq/support-medium/"
+        },
+        {
+          "title": "Does it migrate media files?",
+          "url": "https://deliciousbrains.com/faq/media-files/"
+        },
+        {
+          "title": "Can it merge the changes of two databases?",
+          "url": "https://deliciousbrains.com/faq/merge/"
+        },
+        {
+          "title": "Why wouldn’t I just use WordPress’ built-in XML export/import?",
+          "url": "https://deliciousbrains.com/faq/xml-import/"
+        },
+        {
+          "title": "Will it work to migrate Drupal, Joomla, or Expression Engine sites?",
+          "url": "https://deliciousbrains.com/faq/other-cms/"
+        },
+        {
+          "title": "Will you migrate my site for me?",
+          "url": "https://deliciousbrains.com/faq/migrate-service/"
+        },
+        {
+          "title": "Do you offer a discount for students?",
+          "url": "https://deliciousbrains.com/faq/student-discount/"
+        },
+        {
+          "title": "Is the plugin compliant with GDPR?",
+          "url": "https://deliciousbrains.com/faq/is-the-plugin-compliant-with-gdpr-2/"
+        },
+        {
+          "title": "Is the plugin compliant with GDPR?",
+          "url": "https://deliciousbrains.com/faq/gdpr/"
+        },
+        {
+          "title": "Is the plugin compliant with GDPR?",
+          "url": "https://deliciousbrains.com/faq/is-the-plugin-compliant-with-gdpr/"
+        },
+        {
+          "title": "How do I free up some of my site limit?",
+          "url": "https://deliciousbrains.com/faq/free-up-limit-2/"
+        },
+        {
+          "title": "What methods of payment do you accept?",
+          "url": "https://deliciousbrains.com/faq/payment-method-3/"
+        },
+        {
+          "title": "I’m a reseller, how do I place an order?",
+          "url": "https://deliciousbrains.com/faq/reseller/"
+        },
+        {
+          "title": "Do multisite subsites count toward my site limit?",
+          "url": "https://deliciousbrains.com/faq/multisite-site-count/"
+        },
+        {
+          "title": "What are seats?",
+          "url": "https://deliciousbrains.com/faq/seats/"
+        },
+        {
+          "title": "Why seats?",
+          "url": "https://deliciousbrains.com/faq/why-seats/"
+        }
+      ]
+    }
+  ]
 }

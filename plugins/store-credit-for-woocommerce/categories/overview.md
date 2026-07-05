@@ -1,0 +1,597 @@
+# Overview
+
+*Category from Store Credit for WooCommerce documentation*
+
+---
+
+## Store Credit
+
+**Source:** [https://woocommerce.com/document/woocommerce-store-credit/](https://woocommerce.com/document/woocommerce-store-credit/)
+
+# Store Credit
+
+			![WooCommerce Store Credit](https://woocommerce.com/wp-content/uploads/2022/08/store-credit-banner.png?strip=all&w=704)
+
+The [Store Credit](https://woocommerce.com/products/store-credit/) extension by [Kestrel](https://kestrelwp.com) creates coupons that allow your customers to make multiple purchases with them until the credit is exhausted or the coupon expires.
+
+Store credit coupons work like Gift cards. They are associated with a customer, and their usage can be restricted to specific products or product categories. It can also be used in combination with other coupons or individually.
+
+Customers can even make purchases worth more than the remaining credit and just pay the difference at checkout.
+
+## Requirements
+
+[↑ Back to top](#doc-title)
+
+- WooCommerce 3.7+
+- PHP 5.6+
+
+## Installation
+
+[↑ Back to top](#doc-title)
+
+1. **Download** the .zip file from your [WooCommerce account](https://woocommerce.com/my-account/downloads/).
+2. Go to “**WordPress Admin > Plugins > Add New”** and “**Upload Plugin”** with the file you downloaded with “**Choose File”**.
+3. **Install Now**and**Activate** the extension.
+
+More information at: [Installing and Managing Plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins).
+
+## Migration
+
+[↑ Back to top](#doc-title)
+
+If you already have installed a previous version of Store Credit, the extension will request you to execute a migration process to update the database to the latest version.
+
+![Store Credit updater notice](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-updater-notice.png?strip=all&w=704)Store Credit updater notice
+
+**Note:** We strongly recommend you back up your site and especially your database before executing the migration process.
+
+The migration to Store Credit 3.0 will update your current settings and add some extra metadata to older orders and coupons to make them compatible with the new version, but it won’t modify the order balances.
+
+**Note:** If you modify an older order with the status “**Pending payment**” or “**On-hold**” that contains “**Store Credit**” coupons, the order discounts will be updated to the new version of Store Credit. This process shouldn’t affect the order total. However, it could modify the order taxes if the coupons were applied with tax included. This is due to in previous versions of Store Credit, coupons with tax included only applied a discount to the order total. Since Store Credit 3.0, the discount is reflected in all the order balances, including taxes, shipping costs, etc.
+
+Once the migration has finished, you are ready to use the Store Credit extension.
+
+## Setup and Configuration
+
+[↑ Back to top](#doc-title)
+
+Before starting, be sure you have enabled the WooCommerce setting “**Enable coupons**“.
+
+![Enable coupons in WooCommerce](https://woocommerce.com/wp-content/uploads/2013/02/wc-store-credit-enable-coupons.png?strip=all&w=704)Enable coupons in WooCommerce
+
+Once the plugin is installed and activated, you can proceed to configure it. You will find the settings in “**WooCommerce > Settings > Store Credit**”.
+
+Most of the settings are self-explained by their descriptions, but let’s take a look at some of them in more detail:
+
+### Include tax
+
+[↑ Back to top](#doc-title)
+
+By default, the credit amount of a store credit coupon is entered with tax excluded and it works like a “[fixed cart discount](https://woocommerce.com/document/coupon-management/#section-2)” coupon. That means it applies a discount to the whole cart (subtotal) and this discount also decreases the cart taxes.
+
+For example, if the credit is worth $10 and the taxes of the cart items are 20%, the order total will be decreased by $12 ($10 direct discount + $2 of taxes).
+
+You can opt to introduce the coupon amount (credit) with tax included by enabling the setting “**Include tax**“. That means the coupon credit will be applied to the order total, which includes tax, instead of the order subtotal.
+
+For example: if the credit is worth $10 and the taxes of the cart items are 20%, the order total will be decreased by $10 ($8,33 direct discount + $1,67 of taxes).
+
+In order to enable this setting, there are some requirements:
+
+- **Enable taxes:** Enable taxes in your store. You can find this option in “**General > Enable taxes**“.
+- **Prices entered with tax:** The setting “**Tax >** **Prices entered with tax**” must be enabled.
+- **Round tax at subtotal:** The setting “**Tax >****Rounding**” must be enabled.
+
+These two requirements are necessary to avoid possible discrepancies of $0,01 in the order total due to a low precision in the amounts and the tax rounding.
+
+Besides, it’s also recommended to update WooCommerce to the latest version.
+
+**Important:** Store Credit coupons keep the configuration at the time they were created. So, globally changing the “**Include tax**” setting won’t affect already created coupons buts it will to new ones. If you want to modify the configuration of an existing coupon, go to its [edit screen](https://woocommerce.com/document/woocommerce-store-credit/#create-a-coupon).
+
+### Apply to shipping
+
+[↑ Back to top](#doc-title)
+
+As its name indicates, enabling this setting allows the possibility of applying the remaining credit to the shipping costs.
+
+For example: If we have a cart with a subtotal of $50 + shipping of $10 and we apply a store credit coupon worth $55, the order total will be $5. Just the shipping costs after applying a discount of $5, and the remaining credit after applying a discount of $50 to the cart subtotal.
+
+### Coupon code format
+
+[↑ Back to top](#doc-title)
+
+This setting allows you to customize the coupon code format.
+
+By default, the code is a combination of 16 letters and numbers. This ensures the generated code is random enough.
+
+Optionally, you can add a prefix or a suffix to the generated code.
+
+![customize the coupon code format](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-coupon-code-format.png?strip=all&w=704)Customize the coupon code format
+
+The portion “**{coupon_code}**” will be replaced by the generated code. If this placeholder is not present, the generated code will be appended to the field value.
+
+**Note:** Adding a prefix or a suffix to the format doesn’t affect the length of the generated code.
+
+## Create a coupon
+
+[↑ Back to top](#doc-title)
+
+To create a Store Credit coupon manually:
+
+1. Go to: **WooCommerce > Coupons > Add Coupon**.
+2. Select **Store Credit** in the dropdown next to **Discount Type**.
+3. Set the “**Allowed emails**” restriction in the “**Usage Restriction**” section.
+4. **Publish**the coupon.
+
+![Create a Store Credit coupon manually](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-coupon-metabox.png?strip=all&w=704)Create a Store Credit coupon manually.
+
+When you select “**Store Credit**” as the discount type, new options will be displayed at the end of the form.
+
+![Additional options for a Store Credit coupon](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-coupon-options.png?w=661)Additional options for a Store Credit coupon
+
+These options will use the global settings “**Include tax**” and “**Apply to shipping**” as the default values. Once you save the coupon, this configuration will be handled individually. That means the changes made in the global settings won’t affect this coupon, which will preserve its own values for these options.
+
+**Note:** If you enable the option “**Allow free shipping**“, the option “**Apply to shipping**” won’t be available.
+
+**Note:** Some of these options might not be present if the requirements to enable them are not satisfied. Check their requirements in global settings.
+
+The remainder of the options is managed similarly to the other coupon types. More info at [Coupon Management](https://woocommerce.com/document/coupon-management/).
+
+Keep in mind that a Store Credit coupon shouldn’t be shared by multiple customers. Each of them needs to have a unique Store Credit coupon code. So, it’s very important you set the “**Allowed emails**” restriction with the customer’s email who will use the coupon.
+
+## Send Store Credit
+
+[↑ Back to top](#doc-title)
+
+The easiest way to create a Store Credit coupon and send it to a specific customer is by doing the following:
+
+1. Go to **WooCommerce > Send Store Credit**.
+2. Enter the**name**or**email address** of the customer you wish to send credit to and the **amount** you wish to give.
+3. Optionally, enter a note for the customer, an expiration date, and define the usage restrictions.
+4. Click on the **Send credit**button.
+
+![Form to send credit to a customer](https://woocommerce.com/wp-content/uploads/2023/08/wc-store-credit-send-credit.png?strip=all&w=704)Send credit to the customer
+
+The coupon is automatically generated using the global settings and restricted to the email address assigned. Besides, the customer will receive the coupon via email.
+
+You can also enter the email of a non-registered customer. Once you enter an email in the “Customer” field, the select field will look for a customer associated with this email. If no customer is found, the email you entered will be available as a selectable option.
+
+If you entered a note for the customer, this note will be included in the email, and it will also be saved in the coupon description. This way, you will be able to find the coupon easily.
+
+Besides, you can define an expiration time for the credit, and restrict the usage of the coupon to specific products, and product categories.
+
+![Define an expiration time for the Store Credit coupon](https://woocommerce.com/wp-content/uploads/2023/08/wc-store-credit-send-credit-expiration-time.png?strip=all&w=704)Define an expiration time for the Store Credit coupon
+
+## Sell Store Credit
+
+[↑ Back to top](#doc-title)
+
+You can also sell Store Credit coupons like any other product in your store. To create a Store Credit product, follow these steps:
+
+- Go to “**Products > Add New**“.
+- In the “**Product data**” meta box, select the product type “**Store Credit**“.
+- Configure the price, credit amount, etc. in the “**General**” tab.
+- Next, select the tab “**Store Credit**” and configure the coupon options.
+- Add the rest of the product data and publish it.
+
+### Pricing and credit amount
+
+[↑ Back to top](#doc-title)
+
+First, we have to enter the pricing options for the product.
+
+![Pricing options for a store credit product.](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-product-pricing-options.png?w=650)Pricing options
+
+The “**Regular price**” option is mandatory if we want the product to be available for sale. Optionally, you can add a “**Sale price**“. These options define the price the customer will pay for the product.
+
+By default, the credit amount the customer will receive is the same as the “**Regular price**“, even if the product is on sale. If you want to set a different credit amount, fill in the option “**Coupon amount**“.
+
+E.g.: You can sell a Store Credit product at $10 whose coupon is $12 worth.
+
+If the credit amount differs from the regular price, it’s recommended to include a short description of the product to notify this behavior to the customers. However, this info is automatically provided once the product is added to the cart.
+
+Finally, If you don’t want to apply taxes to this product, set the option “**Tax status**” to “**none**“.
+
+### Preset amounts
+
+[↑ Back to top](#doc-title)
+
+This option allows defining a list of predefined credit amounts separated with “|”. For example: **10 | 20 | 30**.
+
+![A list of predefined credit amounts](https://woocommerce.com/wp-content/uploads/2024/01/wc-store-credit-product-preset-amounts.png?w=650)Preset credit amounts
+
+The customer can select any of these amounts quickly and add the product to the cart. In case none of the preset amounts satisfies the customer, he can choose the “**Other**” option to enter a custom amount.
+
+**Note:** The “**Other**” option will only be available if the “**Custom amount**” option is enabled.
+
+### Custom credit amount
+
+[↑ Back to top](#doc-title)
+
+In addition to the predefined credit amount, you can also enable the option of allowing customers to choose a custom credit amount.
+
+When enabling this option, more fields will appear in the form, like the minimum and maximum credit amount a customer can purchase, and the amount step (The interval of valid credit amounts).
+
+E.g: For a step of $5, the customer must enter an amount of $5, $10, $15, etc.
+
+![Options for entering a custom credit amount in a Store Credit product](https://woocommerce.com/wp-content/uploads/2022/03/wc-store-credit-product-custom-amount-options.png?w=650)Options for entering a custom credit amount
+
+When a customer enters a custom credit amount, the product price is set to this amount once added to the cart.
+
+### Coupon options
+
+[↑ Back to top](#doc-title)
+
+In the “**Store Credit**” tab, you can configure many aspects of the coupon, like who will receive it, the expiration time, if it’s applicable to the shipping costs, etc.
+
+You can also restrict the usage of the coupons generated from this Store Credit product.
+
+![Store Credit product usage restrictions](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-product-restrictions.png?strip=all&w=704)Store Credit product usage restrictions
+
+When someone purchases a Store Credit product, the generated coupon has its usage restricted to the person who made the purchase by his billing email. Optionally, the coupon can be sent to another person as a gift card.
+
+### Gift cards
+
+[↑ Back to top](#doc-title)
+
+To sell Store Credit coupons as gift cards, enable the option “**Store Credit >** **Send to someone**” in the product data meta box. Once active, the Store Credit product page will display a form with the receiver data.
+
+![Store Credit product](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-product.png?strip=all&w=704)Send credit to someone
+
+The customer will be able to choose the email of the person who will receive the coupon and optionally, add a note to the receiver.
+
+### Purchase
+
+[↑ Back to top](#doc-title)
+
+After adding a Store Credit product to the cart, it’s time to complete the purchase. The checkout process it’s the same as purchasing any other product, but with one exception, **no Store Credit coupons can be used when there is a Store Credit product in the cart**.
+
+Another important aspect is that **the coupon is generated once the order payment is done**. When this happens, the order status normally is set to **Processing**. But Store Credit products don’t need to be processed due to their virtual nature. So, if the cart doesn’t contain other kinds of products, the Order will be marked as completed after receiving the payment.
+
+Finally, if the item quantity is higher than one, the same number of coupons will be generated. The coupon credit won’t be combined.
+
+**Note:** You can purchase multiple Store Credit products at once. Each product can have a different receiver and note.
+
+**Disclaimer:** Remember that WooCommerce validates the coupon email restrictions once you click on the button “**Place order**“, not when you apply the coupon.
+
+## Emails
+
+[↑ Back to top](#doc-title)
+
+The email the customer receives looks similar to:
+
+![Send Store Credit email](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-email.png?w=950)Send Store Credit email
+
+### Customize the email
+
+[↑ Back to top](#doc-title)
+
+You can customize the email texts, including the subject and heading. Just follow these steps.
+
+- Go to “**WooCommerce > Settings > Emails**“.
+- Select “**Send Store Credit**“.
+- Edit the email settings and submit the form.
+
+![Send Store Credit email settings](https://woocommerce.com/wp-content/uploads/2019/09/wc-send-store-credit-email-settings.png?strip=all&w=704)Send Store Credit email settings
+
+### Override the email template
+
+[↑ Back to top](#doc-title)
+
+If the customization options offered in the email settings form are not enough, you can opt to override the email template in your active theme and apply all the changes you need.
+
+To accomplish this, please, take a look at [this article](https://woocommerce.com/document/template-structure/).
+
+## My Account
+
+[↑ Back to top](#doc-title)
+
+If the customer is logged in, he can check his available coupons by visiting the “**My Account**” page. If there are available coupons, a new section will be added to the dashboard.
+
+![Store Credit section in the 'My Account' dashboard](https://woocommerce.com/wp-content/uploads/2023/02/wc-store-credit-my-account-dahsboard-section.png?w=650)Store Credit section in the ‘My Account’ dashboard
+
+Clicking on the link, the customer will see a list with the available coupons and the codes to redeem them.
+
+![List the available Store Credit coupons](https://woocommerce.com/wp-content/uploads/2023/02/wc-store-credit-my-account.png?w=650)List the available Store Credit coupons
+
+**Note:** Exhausted and expired coupons won’t appear on this list.
+
+The templates used to display these views can also be customized in the same way you can customize the email templates.
+
+## Applying a coupon
+
+[↑ Back to top](#doc-title)
+
+As we mentioned before, each Store Credit coupon stores its own configuration, which means the way a coupon is applied may vary depending on its configuration (The credit includes tax, it can be applied to the shipping costs, etc).
+
+You can combine multiple Store Credit coupons in the same cart/order if their [usage restrictions](https://woocommerce.com/document/coupon-management/) are satisfied. Moreover, you can apply a Store Credit coupon in combination with native WooCommerce coupons.
+
+### Cart & Checkout
+
+[↑ Back to top](#doc-title)
+
+You can apply a Store Credit coupon on the Cart and Checkout pages like any other coupon. Just paste the code into the coupon form and click on the button “**Apply coupon**“.
+
+![Store Credit coupon applied to the cart](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-cart-discount.png?strip=all&w=704)Store Credit coupon applied to the cart
+
+A more straightforward way of applying the Store Credit on these pages is by using the list of available coupons.
+
+![A list with the available Store Credit coupons the customer can use during checkout.](https://woocommerce.com/wp-content/uploads/2022/07/wc-store-credit-cart-coupons.png?w=650)A list of the available Store Credit coupons
+
+If the customer is logged in and has available Store Credit coupons, a notice will appear. By clicking on the notice link, the available coupons will be displayed. The customer only needs to click on any of the coupon cards to automatically apply this coupon to the cart.
+
+The order in which the coupons are applied in the cart depends on their discount type. For example, a “Percentage discount” coupon is applied before a “Fixed cart discount” coupon.
+
+It doesn’t matter the order you enter the coupons in the cart, WooCommerce will sort them and reapply them in the correct order.
+
+In our case, the Store Credit coupons are applied last. Besides, if multiple Store Credit coupons are applied, the coupons which have the option “Apply to shipping” enabled are applied after coupons that don’t have this option enabled. This way, we can maximize the credit used.
+
+### Order
+
+[↑ Back to top](#doc-title)
+
+If we are editing an order, we can also apply coupons to it. Just click on the button “**Apply coupon**” and enter the coupon code. On the same page, you can remove a coupon by clicking on the “cross” located on the right side of the coupon code.
+
+**Note:** Only orders with the statuses “Pending payment” and “On hold” support these operations.
+
+Unlike the cart, orders apply coupon discounts in the same order they were entered.
+
+![Order with a Store Credit coupon](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-order-metabox.png?strip=all&w=704)Order with a Store Credit coupon
+
+Please, pay attention to the order’s prices. They are always displayed with tax excluded on this page.
+
+### Shipping discount
+
+[↑ Back to top](#doc-title)
+
+As we mentioned before, Store Credit coupons can apply a discount to the shipping costs if there is remaining credit after applying a discount to the cart items. The way this discount appears reflected in the order balance is with a negative shipping item.
+
+![Shipping discount applied by a Store Credit coupon](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-shipping-discount.png?strip=all&w=704)Shipping discount applied by a Store Credit coupon
+
+This way, applying a discount to the shipping costs doesn’t break the order balance and the different reports.
+
+## Order details
+
+[↑ Back to top](#doc-title)
+
+After making a purchase, the store credit used appears in the order details.
+
+![Store Credit used in an order](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-order-details.png?strip=all&w=704)Store Credit used in an order
+
+The position of the row “**Store Credit used**” may vary depending on if the order prices were entered with taxes and/or if the amounts are being displayed with tax included.
+
+Additionally, if an order is paid exclusively with Store Credit, then its payment method is set to “**Store Credit**“.
+
+## Coupons management
+
+[↑ Back to top](#doc-title)
+
+Here is a list of the most common tasks that, as a merchant, you can perform over the Store Credit coupons:
+
+### List all coupons
+
+[↑ Back to top](#doc-title)
+
+To list all Store Credit coupons created in your store, go to “**Marketing > Coupons**” and filter the coupon type by “**Store Credit**“.
+
+![List with all the Store Credit coupons](https://woocommerce.com/wp-content/uploads/2022/10/wc-store-credit-all-coupons.png?strip=all&w=704)List all Store Credit coupons
+
+### Searching for a coupon
+
+[↑ Back to top](#doc-title)
+
+To make things even easier, we have added a new filter to the coupon list. Use it to filter the coupons which belong to a specific customer or email.
+
+![Filter coupons by customer or email](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-filter-coupons-by-email.png?strip=all&w=704)Filter coupons by customer or email
+
+**Note:** A coupon belongs to a customer if its email is included in the parameter “**Allowed emails**” of the coupon.
+
+Combining this filter with the “Coupon Type” filter, you can search the Store Credit coupons of a specific customer really fast.
+
+![Store Credit coupons of a customer](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-coupon-list.png?strip=all&w=704)Search the “Store Credit” coupons of a customer
+
+For a more specific search, use the “**Search coupons**” form in the top-right corner.
+
+### Tracking the coupon usage
+
+[↑ Back to top](#doc-title)
+
+The extension tracks the usage of the Store Credit coupons. If you want to know the Orders where a specific coupon has been used, just go to the edit-coupon screen and take a look at the meta box “**Store credit usage**“.
+
+![Orders where the coupon was used](https://woocommerce.com/wp-content/uploads/2023/02/wc-store-credit-usage-metabox.png?strip=all&w=704)Orders where the coupon was used
+
+**Note:** Orders with statuses **Cancelled** or **Refunded** won’t appear in the list because the store credit was restored for these orders.
+
+### Restoring the credit of a coupon
+
+[↑ Back to top](#doc-title)
+
+The credit of the Store Credit coupons is handled by the extension, and you don’t need to worry about restoring the credit of a coupon manually.
+
+The credit is automatically restored when:
+
+- The order is canceled or refunded.
+- The coupon is removed from the order in the edit order screen.
+- The order items or taxes are updated, and the credit exceeds the order total.
+
+An example of a partial restoration of a store credit coupon is when you decrease the quantity of an Order item. Besides, if the coupon discount is no longer necessary, it’s automatically removed from the order, and its credit is restored.
+
+**Note:** If you decide to recover an order which contains restored store credit coupons, for example, changing its status from “canceled” to “pending payment”, the store credit coupons will be removed from the order. This is because their credit was restored previously, and these coupons are no longer valid. You can apply the coupons again with the “**Apply coupon**” option.
+
+The credit of an order is not automatically restored when its status changes to ‘**failed**‘ because the order is still recoverable by retrying the payment or using a different gateway. To restore the credit of these orders, remove the Store Credit coupons manually in the edit-order screen or change its status to ‘**canceled**‘.
+
+### Removing exhausted coupons
+
+[↑ Back to top](#doc-title)
+
+We consider a Store Credit coupon to be exhausted once its credit is zero. These coupons will be kept in the coupon list until they are no longer necessary.
+
+Once all orders in which a Store Credit coupon was used have been completed, the coupon will be automatically trashed and can be safely removed. Knowing this, we strongly recommend not to send Store Credit coupons to the trash manually unless you are sure this coupon is no longer necessary.
+
+If you want to preserve exhausted coupons in the coupon list, you can disable the setting “**Delete after use**“.
+
+## Subscriptions
+
+[↑ Back to top](#doc-title)
+
+Store Credit also works with subscription products. That means customers can use their Store Credit coupons as a discount off the order total to **purchase a subscription**, and continue to use them on order **manual** **renewals**.
+
+### Purchase with coupons
+
+[↑ Back to top](#doc-title)
+
+The process for purchasing a subscription is the same as purchasing an Order. The credit amount is applied to the initial order total and will require a payment gateway compatible with subscriptions for renewals.
+
+![](https://woocommerce.com/wp-content/uploads/2022/01/wc-sc-add-subscription-full-paid.png?strip=all&w=704)Subscription purchased with coupon paying the entire order
+
+![](https://woocommerce.com/wp-content/uploads/2022/01/wc-sc-add-subscription-partial-paid.png?strip=all&w=704)Subscription purchased with coupon paying part of the order
+
+### Renewals
+
+[↑ Back to top](#doc-title)
+
+Customers can use their Store Credit coupons to pay for manual renewals. The process is the same as when placing an order, if the coupon covers the entire order, no payment platform will be needed.
+
+**Important:** Store Credit cannot carry out automatic renewals due to it does not work as a payment gateway. For this purpose, we recommend our [Account Funds](https://woocommerce.com/products/account-funds/) extension, which is also compatible with [WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) and can process automatic renewals.
+
+![](https://woocommerce.com/wp-content/uploads/2022/01/wc-sc-renew-subscription-full-pay.png?strip=all&w=704)Subscription paid with a Store Credit coupon
+
+![](https://woocommerce.com/wp-content/uploads/2022/01/wc-sc-renew-subscription-partial-pay.png?strip=all&w=704)Subscription partially paid with a Store Credit coupon
+
+## Privacy
+
+[↑ Back to top](#doc-title)
+
+Following the WooCommerce guidelines for treating the customers’ data, we have updated our processes to export and erase the Store Credit coupons’ data.
+
+### Export personal data
+
+[↑ Back to top](#doc-title)
+
+When a customer requests all the personal data collected in the store. The generated file will also include his active Store Credit coupons.
+
+![Personal data within a Store Credit coupon](https://woocommerce.com/wp-content/uploads/2019/09/wc-store-credit-coupon-data-export.png?strip=all&w=704)Personal data within a Store Credit coupon
+
+### Erase personal data
+
+[↑ Back to top](#doc-title)
+
+On the other hand, if a customer requests to delete all his personal data from the store, all Store Credit coupons associated with the customer’s email will be removed if the option ‘**Remove personal data from orders**‘ is enabled. Otherwise, the coupon deletion will be skipped.
+
+![Remove personal data from orders and Store Credit coupons](https://woocommerce.com/wp-content/uploads/2019/09/wc-remove-personal-data-from-orders.png?strip=all&w=704)Remove personal data from orders and Store Credit coupons
+
+**Note:** If a Store Credit coupon has multiple allowed emails, the customer email will be removed from the list, and the coupon will keep available for the other customers.
+
+## FAQ
+
+[↑ Back to top](#doc-title)
+
+### Can I apply multiple store credit coupons to an order?
+
+[↑ Back to top](#doc-title)
+
+Yes, you can apply multiple “Store Credit” coupons in the cart or to an Order and combine them with other native coupons.
+
+In the cart, the “Store Credit” coupons will be applied after the WooCommerce native coupons. On the other hand, if we are in the order edit screen, the discounts will be applied in the same order the coupons were entered.
+
+### How to do bulk/import store credit coupons?
+
+[↑ Back to top](#doc-title)
+
+If you want to import a huge amount of store credit coupons at once, you can use the extension [Customer/Order/Coupon CSV Import Suite](https://woocommerce.com/products/customerorder-csv-import-suite/) and this [sample file](https://woocommerce.com/wp-content/uploads/2019/09/Sample-WooCommerce-Store-Credit-Coupons-CSV-Import.csv) as a reference.
+
+### Can I apply a discount to the cart fees?
+
+[↑ Back to top](#doc-title)
+
+No. Customers can only use their Store Credit to apply a discount to the cart products and (optionally) the shipping costs.
+
+### Can a store credit coupon be canceled or revoked?
+
+[↑ Back to top](#doc-title)
+
+Yes, Store Credit coupons can be managed in the WooCommerce coupons section (**Marketing** > **Coupons**). You can filter by email and type. From there, you can edit them or send them to the trash to delete them.
+
+Note that if the coupon has been used, you can see it in the orders. But if the order status is in processing or completed, you will not be able to modify it. If you remove the coupon from the order, the user will get the coupon back.
+
+### Can I use Store Credit in the subscription renewals?
+
+[↑ Back to top](#doc-title)
+
+Store credit doesn’t work as a payment gateway, so it cannot be used as a payment method in automatic subscription renewals, but in manual renewals. For this purpose, we recommend our [Account Funds](https://woocommerce.com/products/account-funds/) extension.
+
+## Troubleshooting
+
+[↑ Back to top](#doc-title)
+
+### Emails are not emailed/received when sending Store Credit coupons
+
+[↑ Back to top](#doc-title)
+
+If after creating a coupon, you are not receiving an email. Follow these steps:
+
+- Emails are received if using the Send Store Credit feature in **WooCommerce** > **Send Store Credit** if you create them manually from **Marketing** > **Coupons** without Email.
+- Check that the Send Store Credit email is enabled in **WooCommerce** > **Email**> **Send Store Credit**.
+- Be sure that the Store Credit coupon has been created.
+- Check your logs in **WooCommerce** > **Status** > **Logs**.
+
+### Coupons with tax included are applying a wrong discount
+
+[↑ Back to top](#doc-title)
+
+If after applying a coupon with tax included, the order total has a discrepancy to the expected value. Follow these steps:
+
+- Be sure the option “**Tax > Rounding**” is enabled.
+- Be sure the option “**Tax > Prices entered with tax**” is enabled.
+- Update WooCommerce and this extension to the latest version.
+
+### Coupons are not restricted by email
+
+[↑ Back to top](#doc-title)
+
+WooCommerce checks the coupon restrictions, including the allowed emails, when the customer clicks on the button “Place Order”, not when he applies the coupon. So if the customer is not the owner of the introduced coupon code, the coupon will be removed automatically from the order, and an error message will appear.
+
+### Wrong order balance after removing an item
+
+[↑ Back to top](#doc-title)
+
+When you remove an item (product, shipping, etc) from an order in the edit order screen, the order balance (total, taxes, etc.) might not match the new order state. In this case, it’s recommended to click on the “Recalculate” button to force a new calculation of the order totals and taxes.
+
+### The store Credit section doesn’t appear on the My Account page
+
+[↑ Back to top](#doc-title)
+
+This section only appears to customers that have active Store Credit coupons. When clicking on the link, you receive a “**Page not found**” error, go to “**Settings > Permalinks**” and click on the “**Save Changes**” button.
+
+## Questions and Feedback
+
+[↑ Back to top](#doc-title)
+
+Have a question before you buy it? [Please fill out this pre-sales form.](https://woocommerce.com/contact-us/#sales-form)
+
+Already purchased and need some assistance? [Get in touch with the developer](https://woocommerce.com/my-account/create-a-ticket/) via the Help Desk.
+
+					
+		
+## Related Products
+
+	
+	
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+
+### WooCommerce Subscriptions
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+
+### WooCommerce Memberships
+
+	
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+
+Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+
+---
+

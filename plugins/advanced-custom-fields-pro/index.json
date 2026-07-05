@@ -1,9 +1,1103 @@
 {
   "plugin_slug": "advanced-custom-fields-pro",
   "plugin_name": "Advanced Custom Fields PRO",
-  "documentation_url": "https://www.advancedcustomfields.com/resources/",
-  "last_scraped": "2026-07-05T14:31:50.039Z",
-  "total_pages": 0,
-  "failed_urls_count": 258,
-  "sections": []
+  "documentation_url": "https://www.advancedcustomfields.com/documentation/",
+  "last_scraped": "2026-07-05T17:24:32.425Z",
+  "total_pages": 271,
+  "failed_urls_count": 2,
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://www.advancedcustomfields.com/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 271,
+      "pages": [
+        {
+          "title": "How to Make WordPress® Content Machine Readable with ACF, MCP, and Schema.org",
+          "url": "https://www.advancedcustomfields.com/resources/acf-machine-readable-content/"
+        },
+        {
+          "title": "acf/settings/enable_datastore",
+          "url": "https://www.advancedcustomfields.com/resources/acf-settings-enable_datastore/"
+        },
+        {
+          "title": "Block Bindings",
+          "url": "https://www.advancedcustomfields.com/resources/block-bindings/"
+        },
+        {
+          "title": "Using the ACF Datastore",
+          "url": "https://www.advancedcustomfields.com/resources/using-the-acf-datastore/"
+        },
+        {
+          "title": "blocks/expanded_editor_overlay_class",
+          "url": "https://www.advancedcustomfields.com/resources/blocks-expanded_editor_overlay_class/"
+        },
+        {
+          "title": "acf/schema/output_format_choices",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-output_format_choices/"
+        },
+        {
+          "title": "acf/schema/schema_priority_types",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-schema_priority_types/"
+        },
+        {
+          "title": "acf/schema/schema_types",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-schema_types/"
+        },
+        {
+          "title": "acf/schema/format_value/name={field_name}",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-format_value-namefield_name/"
+        },
+        {
+          "title": "acf/schema/format_value/type={field_type}",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-format_value-typefield_type/"
+        },
+        {
+          "title": "acf/schema/format_value",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-format_value/"
+        },
+        {
+          "title": "acf/schema/format_value/pre/name={field_name}",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-format_value-pre-namefield_name/"
+        },
+        {
+          "title": "acf/schema/format_value/pre/type={field_type}",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-format_value-pre-typefield_type/"
+        },
+        {
+          "title": "acf/schema/format_value/pre",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-format_value-pre/"
+        },
+        {
+          "title": "acf/schema/post_field_objects/post_type={post_type}",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-post_field_objects-post_typepost_type/"
+        },
+        {
+          "title": "acf/schema/post_field_objects",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-post_field_objects/"
+        },
+        {
+          "title": "acf/schema/render_script",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-render_script/"
+        },
+        {
+          "title": "acf/schema/enabled_post_types",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-enabled_post_types/"
+        },
+        {
+          "title": "acf/schema/disable_output",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-disable_output/"
+        },
+        {
+          "title": "acf/schema/debug",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-debug/"
+        },
+        {
+          "title": "acf/blocks/default_expanded_editor_button_text",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-default_expanded_editor_button_text/"
+        },
+        {
+          "title": "acf/schema/schema_properties",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-schema_properties/"
+        },
+        {
+          "title": "Schema.org Qualified Properties",
+          "url": "https://www.advancedcustomfields.com/resources/schema-org-qualified-properties/"
+        },
+        {
+          "title": "acf/schema/auto_add_author",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-auto_add_author/"
+        },
+        {
+          "title": "acf/schema/auto_add_image",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-auto_add_image/"
+        },
+        {
+          "title": "acf/schema/block_field_objects/block_name={block_name}",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-block_field_objects-block_nameblock_name/"
+        },
+        {
+          "title": "acf/schema/block_field_objects",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-block_field_objects/"
+        },
+        {
+          "title": "acf/schema/block_jsonld_enabled",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-block_jsonld_enabled/"
+        },
+        {
+          "title": "acf/schema/data",
+          "url": "https://www.advancedcustomfields.com/resources/acf-schema-data/"
+        },
+        {
+          "title": "Ability: acf/create-field-group",
+          "url": "https://www.advancedcustomfields.com/resources/ability-acf-create-field-group/"
+        },
+        {
+          "title": "Ability: acf/custom-post-types",
+          "url": "https://www.advancedcustomfields.com/resources/ability-acf-custom-post-types/"
+        },
+        {
+          "title": "Ability: acf/custom-taxonomies",
+          "url": "https://www.advancedcustomfields.com/resources/ability-acf-custom-taxonomies/"
+        },
+        {
+          "title": "Ability: acf/field-groups",
+          "url": "https://www.advancedcustomfields.com/resources/ability-acf-field-groups/"
+        },
+        {
+          "title": "Structured Data for ACF Blocks",
+          "url": "https://www.advancedcustomfields.com/resources/structured-data-for-acf-blocks/"
+        },
+        {
+          "title": "Schema.org Property Mapping",
+          "url": "https://www.advancedcustomfields.com/resources/schema-org-property-mapping/"
+        },
+        {
+          "title": "Schema.org Output Formats",
+          "url": "https://www.advancedcustomfields.com/resources/schema-org-output-formats/"
+        },
+        {
+          "title": "Ability: acf/create-custom-taxonomy",
+          "url": "https://www.advancedcustomfields.com/resources/ability-acf-create-custom-taxonomy/"
+        },
+        {
+          "title": "Ability: acf/create-custom-post-type",
+          "url": "https://www.advancedcustomfields.com/resources/ability-acf-create-custom-post-type/"
+        },
+        {
+          "title": "wp acf json import",
+          "url": "https://www.advancedcustomfields.com/resources/wp-acf-json-import/"
+        },
+        {
+          "title": "wp acf json export",
+          "url": "https://www.advancedcustomfields.com/resources/wp-acf-json-export/"
+        },
+        {
+          "title": "wp acf json status",
+          "url": "https://www.advancedcustomfields.com/resources/wp-acf-json-status/"
+        },
+        {
+          "title": "wp acf json sync",
+          "url": "https://www.advancedcustomfields.com/resources/wp-acf-json-sync/"
+        },
+        {
+          "title": "wp acf json",
+          "url": "https://www.advancedcustomfields.com/resources/wp-acf-json/"
+        },
+        {
+          "title": "WP-CLI Commands",
+          "url": "https://www.advancedcustomfields.com/resources/wp-cli-commands/"
+        },
+        {
+          "title": "Automatic Structured Data with Schema.org",
+          "url": "https://www.advancedcustomfields.com/resources/automatic-structured-data-with-schema-org/"
+        },
+        {
+          "title": "Abilities API Integration",
+          "url": "https://www.advancedcustomfields.com/resources/abilities-api/"
+        },
+        {
+          "title": "ACF PRO 6.8 Beta 2 – Schema.org JSON-LD Testing Guide",
+          "url": "https://www.advancedcustomfields.com/resources/acf-pro-6-8-beta-2-schema-org-json-ld-testing-guide/"
+        },
+        {
+          "title": "acf/blocks/fields_needing_wide_popover",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-fields_needing_wide_popover/"
+        },
+        {
+          "title": "acf/blocks/fields_to_open_in_expanded_editor",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-fields_to_open_in_expanded_editor/"
+        },
+        {
+          "title": "acf/blocks/top_toolbar_fields",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-top_toolbar_fields/"
+        },
+        {
+          "title": "acf_inline_toolbar_editing_attrs()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_inline_toolbar_editing_attrs/"
+        },
+        {
+          "title": "acf_inline_text_editing_attrs()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_inline_text_editing_attrs/"
+        },
+        {
+          "title": "Customizing the Inline Editing Experience",
+          "url": "https://www.advancedcustomfields.com/resources/customizing-the-inline-editing-experience/"
+        },
+        {
+          "title": "Enabling Inline Editing",
+          "url": "https://www.advancedcustomfields.com/resources/enabling-inline-editing/"
+        },
+        {
+          "title": "Inline Editing for ACF Blocks",
+          "url": "https://www.advancedcustomfields.com/resources/inline-editing-for-acf-blocks/"
+        },
+        {
+          "title": "acf/blocks/default_block_version",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-default_block_version/"
+        },
+        {
+          "title": "Testing Pre-Release Versions of ACF PRO",
+          "url": "https://www.advancedcustomfields.com/resources/testing-pre-release-versions/"
+        },
+        {
+          "title": "ACF Blocks V3",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-v3/"
+        },
+        {
+          "title": "Select2 v3 Deprecation",
+          "url": "https://www.advancedcustomfields.com/resources/select2-v3-deprecation/"
+        },
+        {
+          "title": "Troubleshooting Validation Security Nonce Errors",
+          "url": "https://www.advancedcustomfields.com/resources/validation-nonce-errors/"
+        },
+        {
+          "title": "Creating a Custom Taxonomy with ACF",
+          "url": "https://www.advancedcustomfields.com/resources/creating-a-custom-taxonomy-with-acf/"
+        },
+        {
+          "title": "Creating a Custom Post Type with ACF",
+          "url": "https://www.advancedcustomfields.com/resources/creating-a-custom-post-type-with-acf/"
+        },
+        {
+          "title": "Installing ACF With Composer",
+          "url": "https://www.advancedcustomfields.com/resources/installing-acf-with-composer/"
+        },
+        {
+          "title": "ACF Security Principles",
+          "url": "https://www.advancedcustomfields.com/resources/acf-security-principles/"
+        },
+        {
+          "title": "Improving ACF Performance",
+          "url": "https://www.advancedcustomfields.com/resources/improving-acf-performance/"
+        },
+        {
+          "title": "acf_get_field_groups()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_get_field_groups/"
+        },
+        {
+          "title": "Installing ACF and ACF PRO",
+          "url": "https://www.advancedcustomfields.com/resources/installing-acf-and-acf-pro/"
+        },
+        {
+          "title": "Getting Started with ACF Custom Fields & Field Groups",
+          "url": "https://www.advancedcustomfields.com/resources/getting-started-with-acf-custom-fields-field-groups/"
+        },
+        {
+          "title": "ACF Unlocks the True Power of WordPress",
+          "url": "https://www.advancedcustomfields.com/resources/acf-unlocks-the-true-power-of-wordpress/"
+        },
+        {
+          "title": "Compiling Multiple ACF Blocks With Scripts",
+          "url": "https://www.advancedcustomfields.com/resources/compiling-multiple-acf-blocks-with-scripts/"
+        },
+        {
+          "title": "Disable Field Validation in ACF Blocks",
+          "url": "https://www.advancedcustomfields.com/resources/disable-field-validation-in-acf-blocks/"
+        },
+        {
+          "title": "Icon Picker",
+          "url": "https://www.advancedcustomfields.com/resources/icon-picker/"
+        },
+        {
+          "title": "Save ACF Block Field Values to Post Meta",
+          "url": "https://www.advancedcustomfields.com/resources/save-acf-block-values-to-post-meta/"
+        },
+        {
+          "title": "ACF Blocks Configuration via block.json",
+          "url": "https://www.advancedcustomfields.com/resources/acf-block-configuration-via-block-json/"
+        },
+        {
+          "title": "acf/shortcode/prevent_access",
+          "url": "https://www.advancedcustomfields.com/resources/acf-shortcode-prevent_access/"
+        },
+        {
+          "title": "Using Context With ACF Blocks",
+          "url": "https://www.advancedcustomfields.com/resources/using-context-with-acf-blocks/"
+        },
+        {
+          "title": "Extending ACF Blocks With Block Supports",
+          "url": "https://www.advancedcustomfields.com/resources/extending-acf-blocks-with-block-supports/"
+        },
+        {
+          "title": "The Requirements to Run ACF",
+          "url": "https://www.advancedcustomfields.com/resources/requirements/"
+        },
+        {
+          "title": "acf_get_fields()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_get_fields/"
+        },
+        {
+          "title": "Installing ACF PRO With Composer",
+          "url": "https://www.advancedcustomfields.com/resources/installing-acf-pro-with-composer/"
+        },
+        {
+          "title": "ACF Blocks: How to Use Block Locking",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-how-to-use-block-locking/"
+        },
+        {
+          "title": "How to Include ACF PRO in a Plugin or Theme",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-include-acf-in-a-plugin-or-theme/"
+        },
+        {
+          "title": "Including ACF Within a Plugin or Theme",
+          "url": "https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/"
+        },
+        {
+          "title": "How to Update",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-update/"
+        },
+        {
+          "title": "License Activations",
+          "url": "https://www.advancedcustomfields.com/resources/license-activations/"
+        },
+        {
+          "title": "ACF Blocks: Using InnerBlocks and Parent/Child Relationships",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-using-innerblocks-and-parent-child-relationships/"
+        },
+        {
+          "title": "How to Create an Options Page",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-create-an-options-page/"
+        },
+        {
+          "title": "Conditional Logic",
+          "url": "https://www.advancedcustomfields.com/resources/conditional-logic/"
+        },
+        {
+          "title": "ACF Blocks: Using get_block_wrapper_attributes()",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-using-get_block_wrapper_attributes/"
+        },
+        {
+          "title": "How to Query Posts by Custom Fields",
+          "url": "https://www.advancedcustomfields.com/resources/query-posts-custom-fields/"
+        },
+        {
+          "title": "ACF Blocks FAQ",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-faq/"
+        },
+        {
+          "title": "Create Your First ACF Block",
+          "url": "https://www.advancedcustomfields.com/resources/create-your-first-acf-block/"
+        },
+        {
+          "title": "Key Concepts",
+          "url": "https://www.advancedcustomfields.com/resources/acf-blocks-key-concepts/"
+        },
+        {
+          "title": "ACF Blocks",
+          "url": "https://www.advancedcustomfields.com/resources/blocks/"
+        },
+        {
+          "title": "acf/json/save_file_name",
+          "url": "https://www.advancedcustomfields.com/resources/acf-json-save_file_name/"
+        },
+        {
+          "title": "acf/json/eof_newline",
+          "url": "https://www.advancedcustomfields.com/resources/acf-json-eof_newline/"
+        },
+        {
+          "title": "acf/settings/enable_options_pages_ui",
+          "url": "https://www.advancedcustomfields.com/resources/acf-settings-enable_options_pages_ui/"
+        },
+        {
+          "title": "acf/fields/user/query",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-user-query/"
+        },
+        {
+          "title": "acf/options_page/save",
+          "url": "https://www.advancedcustomfields.com/resources/acf-options_page-save/"
+        },
+        {
+          "title": "acf/field_group/auto_add_first_field",
+          "url": "https://www.advancedcustomfields.com/resources/acf-field_group-auto_add_first_field/"
+        },
+        {
+          "title": "How to Use the Clone Field",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-use-the-clone-field/"
+        },
+        {
+          "title": "acf/fields/user/result",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-user-result/"
+        },
+        {
+          "title": "How to Use the Gallery Field",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-use-the-gallery-field/"
+        },
+        {
+          "title": "Move Fields Between Field Groups",
+          "url": "https://www.advancedcustomfields.com/resources/move-fields-between-field-groups/"
+        },
+        {
+          "title": "acf/settings/enable_post_types",
+          "url": "https://www.advancedcustomfields.com/resources/acf-settings-enable_post_types/"
+        },
+        {
+          "title": "acf/field_group/enable_field_browser",
+          "url": "https://www.advancedcustomfields.com/resources/acf-field_group-enable_field_browser/"
+        },
+        {
+          "title": "Post Types and Taxonomies",
+          "url": "https://www.advancedcustomfields.com/resources/post-types-and-taxonomies/"
+        },
+        {
+          "title": "Registering a Custom Post Type",
+          "url": "https://www.advancedcustomfields.com/resources/registering-a-custom-post-type/"
+        },
+        {
+          "title": "Registering a Custom Taxonomy",
+          "url": "https://www.advancedcustomfields.com/resources/registering-a-custom-taxonomy/"
+        },
+        {
+          "title": "Number",
+          "url": "https://www.advancedcustomfields.com/resources/number/"
+        },
+        {
+          "title": "URL",
+          "url": "https://www.advancedcustomfields.com/resources/url/"
+        },
+        {
+          "title": "Password",
+          "url": "https://www.advancedcustomfields.com/resources/password/"
+        },
+        {
+          "title": "Email",
+          "url": "https://www.advancedcustomfields.com/resources/email/"
+        },
+        {
+          "title": "How to Use the Repeater Field",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-use-the-repeater-field/"
+        },
+        {
+          "title": "Building Layouts With the Flexible Content Field in a Theme",
+          "url": "https://www.advancedcustomfields.com/resources/building-layouts-with-the-flexible-content-field-in-a-theme/"
+        },
+        {
+          "title": "acf/field_group/disable_field_settings_tabs",
+          "url": "https://www.advancedcustomfields.com/resources/acf-field_group-disable_field_settings_tabs/"
+        },
+        {
+          "title": "How to help translate ACF into other languages",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-help-translate-acf-into-other-languages/"
+        },
+        {
+          "title": "How To Upgrade a Legacy Block to block.json With ACF 6",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-upgrade-a-legacy-block-to-block-json-with-acf-6/"
+        },
+        {
+          "title": "What’s New With ACF Blocks in ACF 6",
+          "url": "https://www.advancedcustomfields.com/resources/whats-new-with-acf-blocks-in-acf-6/"
+        },
+        {
+          "title": "WP REST API Integration",
+          "url": "https://www.advancedcustomfields.com/resources/wp-rest-api-integration/"
+        },
+        {
+          "title": "Integrating Custom Field Types With the WordPress REST API",
+          "url": "https://www.advancedcustomfields.com/resources/integrating-custom-field-types/"
+        },
+        {
+          "title": "HTML Escaping",
+          "url": "https://www.advancedcustomfields.com/resources/html-escaping/"
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "url": "https://www.advancedcustomfields.com/resources/frequently-asked-questions/"
+        },
+        {
+          "title": "Custom location rules",
+          "url": "https://www.advancedcustomfields.com/resources/custom-location-rules/"
+        },
+        {
+          "title": "Block API v2",
+          "url": "https://www.advancedcustomfields.com/resources/block-api-v2/"
+        },
+        {
+          "title": "Updates to ACF Field Functions in 5.11",
+          "url": "https://www.advancedcustomfields.com/resources/acf-field-functions/"
+        },
+        {
+          "title": "acf_register_block_type()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_register_block_type/"
+        },
+        {
+          "title": "acf/update_field",
+          "url": "https://www.advancedcustomfields.com/resources/acf-update_field/"
+        },
+        {
+          "title": "acf/register_block_type_args",
+          "url": "https://www.advancedcustomfields.com/resources/acf-register_block_type_args/"
+        },
+        {
+          "title": "acf/ajax/shortcode_capability",
+          "url": "https://www.advancedcustomfields.com/resources/acf-ajax-shortcode_capability/"
+        },
+        {
+          "title": "acf/admin/license_key_constant_message",
+          "url": "https://www.advancedcustomfields.com/resources/acf-admin-license_key_constant_message/"
+        },
+        {
+          "title": "User",
+          "url": "https://www.advancedcustomfields.com/resources/user/"
+        },
+        {
+          "title": "acf/field_group/admin_footer",
+          "url": "https://www.advancedcustomfields.com/resources/acf-field_group-admin_footer/"
+        },
+        {
+          "title": "JavaScript API",
+          "url": "https://www.advancedcustomfields.com/resources/javascript-api/"
+        },
+        {
+          "title": "acf/fields/taxonomy/result",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-taxonomy-result/"
+        },
+        {
+          "title": "How to Activate ACF PRO",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-activate/"
+        },
+        {
+          "title": "Accordion",
+          "url": "https://www.advancedcustomfields.com/resources/accordion/"
+        },
+        {
+          "title": "Button Group",
+          "url": "https://www.advancedcustomfields.com/resources/button-group/"
+        },
+        {
+          "title": "Range",
+          "url": "https://www.advancedcustomfields.com/resources/range/"
+        },
+        {
+          "title": "acf/validate_attachment",
+          "url": "https://www.advancedcustomfields.com/resources/acf-validate_attachment/"
+        },
+        {
+          "title": "delete_sub_field()",
+          "url": "https://www.advancedcustomfields.com/resources/delete_sub_field/"
+        },
+        {
+          "title": "Known Issues",
+          "url": "https://www.advancedcustomfields.com/resources/known-issues/"
+        },
+        {
+          "title": "Adding fields to Posts",
+          "url": "https://www.advancedcustomfields.com/resources/adding-fields-posts/"
+        },
+        {
+          "title": "Group",
+          "url": "https://www.advancedcustomfields.com/resources/group/"
+        },
+        {
+          "title": "Link",
+          "url": "https://www.advancedcustomfields.com/resources/link/"
+        },
+        {
+          "title": "Adding fields to Menu Items",
+          "url": "https://www.advancedcustomfields.com/resources/adding-fields-menu-items/"
+        },
+        {
+          "title": "Adding fields to Menus",
+          "url": "https://www.advancedcustomfields.com/resources/adding-fields-menus/"
+        },
+        {
+          "title": "Getting Started with ACF",
+          "url": "https://www.advancedcustomfields.com/resources/getting-started-with-acf/"
+        },
+        {
+          "title": "acf_register_form()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_register_form/"
+        },
+        {
+          "title": "acf_form_head()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_form_head/"
+        },
+        {
+          "title": "Adding Custom Settings to Fields",
+          "url": "https://www.advancedcustomfields.com/resources/adding-custom-settings-fields/"
+        },
+        {
+          "title": "delete_sub_row()",
+          "url": "https://www.advancedcustomfields.com/resources/delete_sub_row/"
+        },
+        {
+          "title": "add_sub_row()",
+          "url": "https://www.advancedcustomfields.com/resources/add_sub_row/"
+        },
+        {
+          "title": "update_sub_row()",
+          "url": "https://www.advancedcustomfields.com/resources/update_sub_row/"
+        },
+        {
+          "title": "delete_field()",
+          "url": "https://www.advancedcustomfields.com/resources/delete_field/"
+        },
+        {
+          "title": "Radio Button",
+          "url": "https://www.advancedcustomfields.com/resources/radio-button/"
+        },
+        {
+          "title": "Clone",
+          "url": "https://www.advancedcustomfields.com/resources/clone/"
+        },
+        {
+          "title": "acf/fields/google_map/api",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-google_map-api/"
+        },
+        {
+          "title": "Time Picker",
+          "url": "https://www.advancedcustomfields.com/resources/time-picker/"
+        },
+        {
+          "title": "Date Time Picker",
+          "url": "https://www.advancedcustomfields.com/resources/date-time-picker/"
+        },
+        {
+          "title": "get_row()",
+          "url": "https://www.advancedcustomfields.com/resources/get_row/"
+        },
+        {
+          "title": "acf/fields/flexible_content/layout_title",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-flexible_content-layout_title/"
+        },
+        {
+          "title": "get_row_index()",
+          "url": "https://www.advancedcustomfields.com/resources/get_row_index/"
+        },
+        {
+          "title": "Bidirectional Relationships",
+          "url": "https://www.advancedcustomfields.com/resources/bidirectional-relationships/"
+        },
+        {
+          "title": "delete_row()",
+          "url": "https://www.advancedcustomfields.com/resources/delete_row/"
+        },
+        {
+          "title": "update_row()",
+          "url": "https://www.advancedcustomfields.com/resources/update_row/"
+        },
+        {
+          "title": "add_row()",
+          "url": "https://www.advancedcustomfields.com/resources/add_row/"
+        },
+        {
+          "title": "acf/fields/taxonomy/wp_list_categories",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-taxonomy-wp_list_categories/"
+        },
+        {
+          "title": "acf/prepare_field",
+          "url": "https://www.advancedcustomfields.com/resources/acf-prepare_field/"
+        },
+        {
+          "title": "acf/init",
+          "url": "https://www.advancedcustomfields.com/resources/acf-init/"
+        },
+        {
+          "title": "acf/input/admin_footer",
+          "url": "https://www.advancedcustomfields.com/resources/acf-input-admin_footer/"
+        },
+        {
+          "title": "acf/validate_save_post",
+          "url": "https://www.advancedcustomfields.com/resources/acf-validate_save_post/"
+        },
+        {
+          "title": "Register fields via PHP",
+          "url": "https://www.advancedcustomfields.com/resources/register-fields-via-php/"
+        },
+        {
+          "title": "acf/fields/taxonomy/query",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-taxonomy-query/"
+        },
+        {
+          "title": "acf/upload_prefilter",
+          "url": "https://www.advancedcustomfields.com/resources/acf-upload_prefilter/"
+        },
+        {
+          "title": "Moving WP elements (such as the content editor) within ACF fields",
+          "url": "https://www.advancedcustomfields.com/resources/moving-wp-elements-content-editor-within-acf-fields/"
+        },
+        {
+          "title": "Tab",
+          "url": "https://www.advancedcustomfields.com/resources/tab/"
+        },
+        {
+          "title": "acf/compatibility",
+          "url": "https://www.advancedcustomfields.com/resources/acf-compatibility/"
+        },
+        {
+          "title": "Synchronized JSON",
+          "url": "https://www.advancedcustomfields.com/resources/synchronized-json/"
+        },
+        {
+          "title": "Field Settings",
+          "url": "https://www.advancedcustomfields.com/resources/field-settings/"
+        },
+        {
+          "title": "Multilingual Custom Fields",
+          "url": "https://www.advancedcustomfields.com/resources/multilingual-custom-fields/"
+        },
+        {
+          "title": "acf/settings",
+          "url": "https://www.advancedcustomfields.com/resources/acf-settings/"
+        },
+        {
+          "title": "acf/format_value",
+          "url": "https://www.advancedcustomfields.com/resources/acf-format_value/"
+        },
+        {
+          "title": "Local JSON",
+          "url": "https://www.advancedcustomfields.com/resources/local-json/"
+        },
+        {
+          "title": "acf_add_options_page()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_add_options_page/"
+        },
+        {
+          "title": "Options Page",
+          "url": "https://www.advancedcustomfields.com/resources/options-page/"
+        },
+        {
+          "title": "Get values from a widget",
+          "url": "https://www.advancedcustomfields.com/resources/get-values-widget/"
+        },
+        {
+          "title": "How to get values from a comment",
+          "url": "https://www.advancedcustomfields.com/resources/get-values-comment/"
+        },
+        {
+          "title": "acf/validate_value",
+          "url": "https://www.advancedcustomfields.com/resources/acf-validate_value/"
+        },
+        {
+          "title": "acf/input/form_data",
+          "url": "https://www.advancedcustomfields.com/resources/acf-input-form_data/"
+        },
+        {
+          "title": "acf/render_field",
+          "url": "https://www.advancedcustomfields.com/resources/acf-render_field/"
+        },
+        {
+          "title": "oEmbed",
+          "url": "https://www.advancedcustomfields.com/resources/oembed/"
+        },
+        {
+          "title": "update_sub_field()",
+          "url": "https://www.advancedcustomfields.com/resources/update_sub_field/"
+        },
+        {
+          "title": "acf_form()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_form/"
+        },
+        {
+          "title": "Debug, diagnose and solve",
+          "url": "https://www.advancedcustomfields.com/resources/debug/"
+        },
+        {
+          "title": "Taxonomy",
+          "url": "https://www.advancedcustomfields.com/resources/taxonomy/"
+        },
+        {
+          "title": "Creating a WP archive with custom field filter",
+          "url": "https://www.advancedcustomfields.com/resources/creating-wp-archive-custom-field-filter/"
+        },
+        {
+          "title": "Google Map",
+          "url": "https://www.advancedcustomfields.com/resources/google-map/"
+        },
+        {
+          "title": "have_rows()",
+          "url": "https://www.advancedcustomfields.com/resources/have_rows/"
+        },
+        {
+          "title": "Hiding empty fields",
+          "url": "https://www.advancedcustomfields.com/resources/hiding-empty-fields/"
+        },
+        {
+          "title": "Order posts by custom fields",
+          "url": "https://www.advancedcustomfields.com/resources/order-posts-by-custom-fields/"
+        },
+        {
+          "title": "acf_set_options_page_menu()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_set_options_page_menu/"
+        },
+        {
+          "title": "acf_set_options_page_capability()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_set_options_page_capability/"
+        },
+        {
+          "title": "acf_set_options_page_title()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_set_options_page_title/"
+        },
+        {
+          "title": "acf_add_options_sub_page()",
+          "url": "https://www.advancedcustomfields.com/resources/acf_add_options_sub_page/"
+        },
+        {
+          "title": "acf/pre_save_post",
+          "url": "https://www.advancedcustomfields.com/resources/acf-pre_save_post/"
+        },
+        {
+          "title": "acf/fields/relationship/result",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-relationship-result/"
+        },
+        {
+          "title": "acf/fields/relationship/query",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-relationship-query/"
+        },
+        {
+          "title": "acf/fields/post_object/result",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-post_object-result/"
+        },
+        {
+          "title": "acf/fields/post_object/query",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-post_object-query/"
+        },
+        {
+          "title": "Using acf_form to create a new post",
+          "url": "https://www.advancedcustomfields.com/resources/using-acf_form-to-create-a-new-post/"
+        },
+        {
+          "title": "Get values from another post",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-get-values-from-another-post/"
+        },
+        {
+          "title": "get_field_objects()",
+          "url": "https://www.advancedcustomfields.com/resources/get_field_objects/"
+        },
+        {
+          "title": "acf/options_page/settings",
+          "url": "https://www.advancedcustomfields.com/resources/acf-options_page-settings/"
+        },
+        {
+          "title": "acf/update_value",
+          "url": "https://www.advancedcustomfields.com/resources/acf-update_value/"
+        },
+        {
+          "title": "acf/load_value",
+          "url": "https://www.advancedcustomfields.com/resources/acf-load_value/"
+        },
+        {
+          "title": "acf/load_field",
+          "url": "https://www.advancedcustomfields.com/resources/acf-load_field/"
+        },
+        {
+          "title": "acf/field_group/admin_enqueue_scripts",
+          "url": "https://www.advancedcustomfields.com/resources/acf-field_group-admin_enqueue_scripts/"
+        },
+        {
+          "title": "acf/field_group/admin_head",
+          "url": "https://www.advancedcustomfields.com/resources/acf-field_group-admin_head/"
+        },
+        {
+          "title": "acf/input/admin_enqueue_scripts",
+          "url": "https://www.advancedcustomfields.com/resources/acf-input-admin_enqueue_scripts/"
+        },
+        {
+          "title": "acf/input/admin_head",
+          "url": "https://www.advancedcustomfields.com/resources/acf-input-admin_head/"
+        },
+        {
+          "title": "acf/save_post",
+          "url": "https://www.advancedcustomfields.com/resources/acf-save_post/"
+        },
+        {
+          "title": "Dynamically Populate a Select Field’s Choices",
+          "url": "https://www.advancedcustomfields.com/resources/dynamically-populate-a-select-fields-choices/"
+        },
+        {
+          "title": "Get Values From a User",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-get-values-from-a-user/"
+        },
+        {
+          "title": "Adding fields to Media Attachments",
+          "url": "https://www.advancedcustomfields.com/resources/adding-fields-media-attachments/"
+        },
+        {
+          "title": "Adding Fields to a Taxonomy Term",
+          "url": "https://www.advancedcustomfields.com/resources/adding-fields-taxonomy-term/"
+        },
+        {
+          "title": "Get values from an options page",
+          "url": "https://www.advancedcustomfields.com/resources/get-values-from-an-options-page/"
+        },
+        {
+          "title": "get_sub_field_object()",
+          "url": "https://www.advancedcustomfields.com/resources/get_sub_field_object/"
+        },
+        {
+          "title": "Sort a Repeater Field",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-sorting-a-repeater-field/"
+        },
+        {
+          "title": "Register multiple options pages",
+          "url": "https://www.advancedcustomfields.com/resources/register-multiple-options-pages/"
+        },
+        {
+          "title": "Querying relationship fields",
+          "url": "https://www.advancedcustomfields.com/resources/querying-relationship-fields/"
+        },
+        {
+          "title": "Working with Nested Repeaters",
+          "url": "https://www.advancedcustomfields.com/resources/working-with-nested-repeaters/"
+        },
+        {
+          "title": "Disable Custom Fields Editing on a Live Site",
+          "url": "https://www.advancedcustomfields.com/resources/how-to-hide-acf-menu-from-clients/"
+        },
+        {
+          "title": "Custom location rules",
+          "url": "https://www.advancedcustomfields.com/resources/custom-location-rules-v5-8/"
+        },
+        {
+          "title": "Creating a new field type",
+          "url": "https://www.advancedcustomfields.com/resources/creating-a-new-field-type/"
+        },
+        {
+          "title": "Create a front end form",
+          "url": "https://www.advancedcustomfields.com/resources/create-a-front-end-form/"
+        },
+        {
+          "title": "the_repeater_field()",
+          "url": "https://www.advancedcustomfields.com/resources/the_repeater_field/"
+        },
+        {
+          "title": "the_flexible_field()",
+          "url": "https://www.advancedcustomfields.com/resources/the_flexible_field/"
+        },
+        {
+          "title": "Customize the WYSIWYG toolbars",
+          "url": "https://www.advancedcustomfields.com/resources/customize-the-wysiwyg-toolbars/"
+        },
+        {
+          "title": "the_field()",
+          "url": "https://www.advancedcustomfields.com/resources/the_field/"
+        },
+        {
+          "title": "update_field()",
+          "url": "https://www.advancedcustomfields.com/resources/update_field/"
+        },
+        {
+          "title": "the_sub_field()",
+          "url": "https://www.advancedcustomfields.com/resources/the_sub_field/"
+        },
+        {
+          "title": "Shortcode",
+          "url": "https://www.advancedcustomfields.com/resources/shortcode/"
+        },
+        {
+          "title": "has_sub_field()",
+          "url": "https://www.advancedcustomfields.com/resources/has_sub_field/"
+        },
+        {
+          "title": "get_sub_field()",
+          "url": "https://www.advancedcustomfields.com/resources/get_sub_field/"
+        },
+        {
+          "title": "get_row_layout()",
+          "url": "https://www.advancedcustomfields.com/resources/get_row_layout/"
+        },
+        {
+          "title": "get_field_object()",
+          "url": "https://www.advancedcustomfields.com/resources/get_field_object/"
+        },
+        {
+          "title": "get_fields()",
+          "url": "https://www.advancedcustomfields.com/resources/get_fields/"
+        },
+        {
+          "title": "get_field()",
+          "url": "https://www.advancedcustomfields.com/resources/get_field/"
+        },
+        {
+          "title": "Text Area",
+          "url": "https://www.advancedcustomfields.com/resources/textarea/"
+        },
+        {
+          "title": "Text",
+          "url": "https://www.advancedcustomfields.com/resources/text/"
+        },
+        {
+          "title": "Wysiwyg Editor",
+          "url": "https://www.advancedcustomfields.com/resources/wysiwyg-editor/"
+        },
+        {
+          "title": "True / False",
+          "url": "https://www.advancedcustomfields.com/resources/true-false/"
+        },
+        {
+          "title": "Select",
+          "url": "https://www.advancedcustomfields.com/resources/select/"
+        },
+        {
+          "title": "Repeater",
+          "url": "https://www.advancedcustomfields.com/resources/repeater/"
+        },
+        {
+          "title": "Relationship",
+          "url": "https://www.advancedcustomfields.com/resources/relationship/"
+        },
+        {
+          "title": "Post Object",
+          "url": "https://www.advancedcustomfields.com/resources/post-object/"
+        },
+        {
+          "title": "Page Link",
+          "url": "https://www.advancedcustomfields.com/resources/page-link/"
+        },
+        {
+          "title": "Image",
+          "url": "https://www.advancedcustomfields.com/resources/image/"
+        },
+        {
+          "title": "Gallery",
+          "url": "https://www.advancedcustomfields.com/resources/gallery/"
+        },
+        {
+          "title": "Flexible Content",
+          "url": "https://www.advancedcustomfields.com/resources/flexible-content/"
+        },
+        {
+          "title": "File",
+          "url": "https://www.advancedcustomfields.com/resources/file/"
+        },
+        {
+          "title": "Date Picker",
+          "url": "https://www.advancedcustomfields.com/resources/date-picker/"
+        },
+        {
+          "title": "Color Picker",
+          "url": "https://www.advancedcustomfields.com/resources/color-picker/"
+        },
+        {
+          "title": "Checkbox",
+          "url": "https://www.advancedcustomfields.com/resources/checkbox/"
+        },
+        {
+          "title": "Code Examples",
+          "url": "https://www.advancedcustomfields.com/resources/code-examples/"
+        },
+        {
+          "title": "Creating a Field Group",
+          "url": "https://www.advancedcustomfields.com/resources/creating-a-field-group/"
+        },
+        {
+          "title": "Upgrade Guide – Version 4",
+          "url": "https://www.advancedcustomfields.com/resources/upgrade-guide-version-4/"
+        },
+        {
+          "title": "Installing the Free ACF Plugin",
+          "url": "https://www.advancedcustomfields.com/resources/installation/"
+        },
+        {
+          "title": "Displaying Values in Your Theme",
+          "url": "https://www.advancedcustomfields.com/resources/displaying-custom-field-values-in-your-theme/"
+        },
+        {
+          "title": "Adding custom javascript to fields",
+          "url": "https://www.advancedcustomfields.com/resources/adding-custom-javascript-fields/"
+        }
+      ]
+    }
+  ]
 }

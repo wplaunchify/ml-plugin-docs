@@ -1,8 +1,35 @@
 {
   "plugin_slug": "launchkit-pro",
   "plugin_name": "LaunchKit Pro",
-  "last_scraped": "2026-07-05T17:29:48.757Z",
-  "total_pages": 0,
+  "last_scraped": "2026-07-05T17:27:12.259Z",
+  "total_pages": 2,
   "failed_urls": [],
-  "pages": []
+  "pages": [
+    {
+      "title": "launchkit",
+      "url": "https://wordpress.org/plugins/launchkit/",
+      "category": "Overview",
+      "content": "## Description\n\n\tThis plugin has been closed as of January 30, 2025 and is not available for download. Reason: Guideline Violation.\n\n## Reviews\n\n\tThere are no reviews for this plugin.\n\n## Contributors & Developers\n\n\t“LaunchKit” is open source software. The following people have contributed to this plugin.\n\nContributors\n\t\t- ![](https://secure.gravatar.com/avatar/14f15966d13ab789cc619825820d27b5d259247d5ba00ce2b922d5dda0da9833?s=32&d=mm&r=g)\t\t\t\t[Spencer Forman](https://profiles.wordpress.org/1wdtv/)[Translate “LaunchKit” into your language.](https://translate.wordpress.org/projects/wp-plugins/launchkit)\n\n### Interested in development?\n\n[Browse the code](https://plugins.trac.wordpress.org/browser/launchkit/), check out the [SVN repository](https://plugins.svn.wordpress.org/launchkit/), or subscribe to the [development log](https://plugins.trac.wordpress.org/log/launchkit/) by [RSS](https://plugins.trac.wordpress.org/log/launchkit/?limit=100&mode=stop_on_copy&format=rss).",
+      "headings": [
+        "Description",
+        "Reviews",
+        "Contributors & Developers",
+        "Interested in development?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "launchkit",
+      "url": "https://wordpress.org/plugins/launchkit/advanced/",
+      "category": "Advanced",
+      "content": "This plugin has been closed as of January 30, 2025 and is not available for download. Reason: Guideline Violation.\t\n\t\n## Statistics\n\n\t\n#### Active versions\n\n\t\n\n\t\n#### Downloads Per Day\n\n\t\n\n\t\n#### Downloads history",
+      "headings": [
+        "Statistics",
+        "Active versions",
+        "Downloads Per Day",
+        "Downloads history"
+      ],
+      "code_blocks": []
+    }
+  ]
 }

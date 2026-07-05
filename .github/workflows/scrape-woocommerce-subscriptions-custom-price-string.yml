@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Woocommerce Subscriptions Custom Price String scraper
-        run: node scraper.js --slug=woocommerce-subscriptions-custom-price-string --mode=wp-api --url=https://woocommerce.com/document/ --post-type=documentation --taxonomy=documentation_category --name="WooCommerce Subscriptions - Custom Price String"
+        run: node scraper.js --slug=woocommerce-subscriptions-custom-price-string --mode=html-scrape --url=https://github.com/woocommerce/woocommerce-subscriptions-custom-price-string --selector=.markdown-body --link-selector="a.__none__" --name="WooCommerce Subscriptions - Custom Price String"
 
       - name: Check for changes
         id: changes

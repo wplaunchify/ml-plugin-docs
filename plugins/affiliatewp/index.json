@@ -2,8 +2,898 @@
   "plugin_slug": "affiliatewp",
   "plugin_name": "AffiliateWP",
   "documentation_url": "https://affiliatewp.com/docs/documentation/",
-  "last_scraped": "2026-07-05T08:28:37.943Z",
-  "total_pages": 0,
+  "last_scraped": "2026-07-05T16:51:39.760Z",
+  "total_pages": 220,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://affiliatewp.com/docs/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 220,
+      "pages": [
+        {
+          "title": "Paying Affiliates Internationally with Stripe",
+          "url": "https://affiliatewp.com/docs/international-affiliate-payouts/"
+        },
+        {
+          "title": "1099 tax forms for US affiliates",
+          "url": "https://affiliatewp.com/docs/1099-tax-forms-for-affiliates/"
+        },
+        {
+          "title": "Setting Up Affiliate Payout Methods",
+          "url": "https://affiliatewp.com/docs/per-affiliate-payout-methods/"
+        },
+        {
+          "title": "Getting Started with Fraud Prevention",
+          "url": "https://affiliatewp.com/docs/getting-started-with-fraud-prevention/"
+        },
+        {
+          "title": "Complete Guide to Fraud Prevention in AffiliateWP",
+          "url": "https://affiliatewp.com/docs/anti-fraud/"
+        },
+        {
+          "title": "Adding Terms Checkbox in Registration Form",
+          "url": "https://affiliatewp.com/docs/adding-terms-checkbox-in-registration-form/"
+        },
+        {
+          "title": "Adding Custom Code Snippets",
+          "url": "https://affiliatewp.com/docs/adding-custom-code-snippets/"
+        },
+        {
+          "title": "Charitable",
+          "url": "https://affiliatewp.com/docs/charitable/"
+        },
+        {
+          "title": "Paying Affiliates with Stripe",
+          "url": "https://affiliatewp.com/docs/stripe-payouts/"
+        },
+        {
+          "title": "Setting Up hCaptcha in AffiliateWP",
+          "url": "https://affiliatewp.com/docs/how-to-set-up-and-use-hcaptcha-in-affiliatewp/"
+        },
+        {
+          "title": "Setting Up Cloudflare Turnstile in AffiliateWP",
+          "url": "https://affiliatewp.com/docs/how-to-set-up-and-use-turnstile-in-affiliatewp/"
+        },
+        {
+          "title": "Preventing Spam in AffiliateWP",
+          "url": "https://affiliatewp.com/docs/how-to-prevent-spam-in-affiliatewp/"
+        },
+        {
+          "title": "Enabling CAPTCHA in AffiliateWP",
+          "url": "https://affiliatewp.com/docs/how-to-set-up-and-use-captcha-in-affiliatewp/"
+        },
+        {
+          "title": "Allow Own Referrals addon",
+          "url": "https://affiliatewp.com/docs/allow-own-referrals-addon/"
+        },
+        {
+          "title": "Zapier addon",
+          "url": "https://affiliatewp.com/docs/zapier-for-affiliatewp-installation-and-usage/"
+        },
+        {
+          "title": "Adding custom code snippets",
+          "url": "https://affiliatewp.com/docs/how-to-add-custom-code-snippets/"
+        },
+        {
+          "title": "A Complete Guide to Exporting and Importing Data in AffiliateWP",
+          "url": "https://affiliatewp.com/docs/exporting-and-importing-data/"
+        },
+        {
+          "title": "Multi-Currency addon",
+          "url": "https://affiliatewp.com/docs/multi-currency/"
+        },
+        {
+          "title": "A Complete Guide to AffiliateWP Settings",
+          "url": "https://affiliatewp.com/docs/a-complete-guide-to-affiliatewp-settings/"
+        },
+        {
+          "title": "Reviewing Affiliate Applications",
+          "url": "https://affiliatewp.com/docs/reviewing-affiliate-applications/"
+        },
+        {
+          "title": "AffiliateWP AI Features",
+          "url": "https://affiliatewp.com/docs/ai-features/"
+        },
+        {
+          "title": "Affiliate Link Sharing",
+          "url": "https://affiliatewp.com/docs/affiliate-link-sharing/"
+        },
+        {
+          "title": "Affiliate Account Page",
+          "url": "https://affiliatewp.com/docs/affiliate-account-page/"
+        },
+        {
+          "title": "Affiliate Login Page",
+          "url": "https://affiliatewp.com/docs/affiliate-login-page/"
+        },
+        {
+          "title": "Affiliate Registration Page",
+          "url": "https://affiliatewp.com/docs/affiliate-registration-page/"
+        },
+        {
+          "title": "Add a Password Field to Affiliate Registration Form",
+          "url": "https://affiliatewp.com/docs/how-to-add-a-password-field-in-affiliate-registration-form/"
+        },
+        {
+          "title": "Translating AffiliateWP Into a Different Language",
+          "url": "https://affiliatewp.com/docs/how-to-trasnlate-affiliatewp-into-different-language/"
+        },
+        {
+          "title": "Using Uncanny Automator with AffiliateWP",
+          "url": "https://affiliatewp.com/docs/how-to-use-uncanny-automator-with-affiliatewp/"
+        },
+        {
+          "title": "Transferring Your License to Another Domain",
+          "url": "https://affiliatewp.com/docs/how-to-transfer-your-affiliatewp-license-to-another-domain/"
+        },
+        {
+          "title": "Updating your AffliateWP account login details",
+          "url": "https://affiliatewp.com/docs/how-to-update-the-email-and-password-for-your-affiliatewp-account/"
+        },
+        {
+          "title": "Generating an Invoice for AffiliateWP",
+          "url": "https://affiliatewp.com/docs/create-invoice-affiliatewp/"
+        },
+        {
+          "title": "Multi-Tier Commissions addon",
+          "url": "https://affiliatewp.com/docs/multi-tier-commissions-guide/"
+        },
+        {
+          "title": "Thrive Apprentice",
+          "url": "https://affiliatewp.com/docs/thrive-apprentice/"
+        },
+        {
+          "title": "Affiliate Link Discounts",
+          "url": "https://affiliatewp.com/docs/affiliate-link-discounts/"
+        },
+        {
+          "title": "What happens if I cancel my subscription?",
+          "url": "https://affiliatewp.com/docs/what-happens-if-i-cancel-my-subscription/"
+        },
+        {
+          "title": "What happens when my subscription ends?",
+          "url": "https://affiliatewp.com/docs/what-happens-when-my-subscription-ends/"
+        },
+        {
+          "title": "AffiliateWP Backend Deactivated",
+          "url": "https://affiliatewp.com/docs/affiliatewp-backend-deactivated/"
+        },
+        {
+          "title": "Locating Your License",
+          "url": "https://affiliatewp.com/docs/how-to-find-your-affiliatewp-license/"
+        },
+        {
+          "title": "Advanced Settings",
+          "url": "https://affiliatewp.com/docs/advanced-settings/"
+        },
+        {
+          "title": "Advanced Coupons",
+          "url": "https://affiliatewp.com/docs/advanced-coupons/"
+        },
+        {
+          "title": "Commissions Settings",
+          "url": "https://affiliatewp.com/docs/commissions-settings/"
+        },
+        {
+          "title": "Affiliates Settings",
+          "url": "https://affiliatewp.com/docs/affiliates-settings/"
+        },
+        {
+          "title": "Elementor",
+          "url": "https://affiliatewp.com/docs/elementor/"
+        },
+        {
+          "title": "Affiliate Signup Widget",
+          "url": "https://affiliatewp.com/docs/affiliate-signup-widget/"
+        },
+        {
+          "title": "Usage Tracking",
+          "url": "https://affiliatewp.com/docs/usage-tracking/"
+        },
+        {
+          "title": "A Complete Guide to Affiliate Creatives",
+          "url": "https://affiliatewp.com/docs/a-complete-guide-to-affiliate-creatives/"
+        },
+        {
+          "title": "Affiliate Groups",
+          "url": "https://affiliatewp.com/docs/affiliate-groups/"
+        },
+        {
+          "title": "Canceling Your Account",
+          "url": "https://affiliatewp.com/docs/how-to-cancel-your-affiliatewp-account/"
+        },
+        {
+          "title": "Upgrading Your License",
+          "url": "https://affiliatewp.com/docs/upgrade-affiliatewp-license/"
+        },
+        {
+          "title": "Updating Your Billing Details",
+          "url": "https://affiliatewp.com/docs/how-to-update-billing-details-for-your-affiliatewp-account/"
+        },
+        {
+          "title": "Renewing Your License",
+          "url": "https://affiliatewp.com/docs/how-to-renew-your-affiliatewp-license/"
+        },
+        {
+          "title": "How to Customize the Affiliate Registration Form",
+          "url": "https://affiliatewp.com/docs/how-to-customize-the-affiliate-registration-form/"
+        },
+        {
+          "title": "Setting Up Google reCAPTCHA",
+          "url": "https://affiliatewp.com/docs/how-to-set-up-and-use-recaptcha-in-affiliatewp/"
+        },
+        {
+          "title": "Tutor LMS",
+          "url": "https://affiliatewp.com/docs/tutor-lms/"
+        },
+        {
+          "title": "Fraud Prevention addon",
+          "url": "https://affiliatewp.com/docs/fraud-prevention-installation-and-usage/"
+        },
+        {
+          "title": "LearnDash",
+          "url": "https://affiliatewp.com/docs/learndash/"
+        },
+        {
+          "title": "Affiliate Email Summaries",
+          "url": "https://affiliatewp.com/docs/affiliate-email-summaries/"
+        },
+        {
+          "title": "Troubleshooting Issues With AffiliateWP",
+          "url": "https://affiliatewp.com/docs/getting-support-affiliatewp/"
+        },
+        {
+          "title": "Creating Affiliate Terms of Use Page",
+          "url": "https://affiliatewp.com/docs/terms-of-use-generator-usage/"
+        },
+        {
+          "title": "Minimum Requirements Roadmap",
+          "url": "https://affiliatewp.com/docs/minimum-requirements-roadmap/"
+        },
+        {
+          "title": "[affiliate_conversion_script] shortcode",
+          "url": "https://affiliatewp.com/docs/affiliate_conversion_script/"
+        },
+        {
+          "title": "[affiliate_coupons] shortcode",
+          "url": "https://affiliatewp.com/docs/affiliate_coupons/"
+        },
+        {
+          "title": "[affiliate_creatives] shortcode",
+          "url": "https://affiliatewp.com/docs/affiliate_creatives/"
+        },
+        {
+          "title": "[non_affiliate_content] shortcode",
+          "url": "https://affiliatewp.com/docs/non_affiliate_content/"
+        },
+        {
+          "title": "[affiliate_creative] shortcode",
+          "url": "https://affiliatewp.com/docs/affiliate_creative/"
+        },
+        {
+          "title": "[opt_in]",
+          "url": "https://affiliatewp.com/docs/opt_in/"
+        },
+        {
+          "title": "[affiliate_content] shortcode",
+          "url": "https://affiliatewp.com/docs/affiliate_content/"
+        },
+        {
+          "title": "[affiliate_referral_url]",
+          "url": "https://affiliatewp.com/docs/affiliate_referral_url/"
+        },
+        {
+          "title": "[affiliate_registration]",
+          "url": "https://affiliatewp.com/docs/affiliate_registration/"
+        },
+        {
+          "title": "[affiliate_login]",
+          "url": "https://affiliatewp.com/docs/affiliate_login/"
+        },
+        {
+          "title": "[affiliate_area] shortcode",
+          "url": "https://affiliatewp.com/docs/affiliate_area/"
+        },
+        {
+          "title": "Basic Authentication CGI",
+          "url": "https://affiliatewp.com/docs/basic-authentication-cgi/"
+        },
+        {
+          "title": "REST API v1 Setup and Usage",
+          "url": "https://affiliatewp.com/docs/rest-api-v1-setup-and-usage/"
+        },
+        {
+          "title": "Vanity Coupon Codes addon",
+          "url": "https://affiliatewp.com/docs/vanity-coupon-codes-installation-and-usage/"
+        },
+        {
+          "title": "How to verify your AffiliateWP License",
+          "url": "https://affiliatewp.com/docs/how-to-verify-your-affiliatewp-license/"
+        },
+        {
+          "title": "How to Install and Activate AffiliateWP Addons",
+          "url": "https://affiliatewp.com/docs/how-to-install-and-activate-affiliatewp-add-ons/"
+        },
+        {
+          "title": "How to Install the AffiliateWP Plugin",
+          "url": "https://affiliatewp.com/docs/how-to-install-the-affiliatewp-plugin/"
+        },
+        {
+          "title": "WooCommerce Redirect Affiliates Addon",
+          "url": "https://affiliatewp.com/docs/woocommerce-redirect-affiliates-installation-and-usage/"
+        },
+        {
+          "title": "Paying Affiliates with Store Credit",
+          "url": "https://affiliatewp.com/docs/store-credit-installation-and-usage/"
+        },
+        {
+          "title": "Sign Up Bonus addon",
+          "url": "https://affiliatewp.com/docs/sign-up-bonus-installation-and-usage/"
+        },
+        {
+          "title": "Order Details for Affiliates addon",
+          "url": "https://affiliatewp.com/docs/order-details-for-affiliates-installation-and-usage/"
+        },
+        {
+          "title": "Leaderboard addon",
+          "url": "https://affiliatewp.com/docs/leaderboard-installation-and-usage/"
+        },
+        {
+          "title": "Force Pending Referrals addon",
+          "url": "https://affiliatewp.com/docs/force-pending-referrals-installation-and-usage/"
+        },
+        {
+          "title": "External Referral Links addon",
+          "url": "https://affiliatewp.com/docs/external-referral-links-installation-and-usage/"
+        },
+        {
+          "title": "Checkout Referrals addon",
+          "url": "https://affiliatewp.com/docs/checkout-referrals-installation-and-usage/"
+        },
+        {
+          "title": "Allowed Products addon",
+          "url": "https://affiliatewp.com/docs/allowed-products-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate Product Rates addon",
+          "url": "https://affiliatewp.com/docs/affiliate-product-rates-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate Info addon",
+          "url": "https://affiliatewp.com/docs/affiliate-info-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate Area Tabs addon",
+          "url": "https://affiliatewp.com/docs/affiliate-area-tabs-installation-and-usage/"
+        },
+        {
+          "title": "Starting Affiliate ID Installation and Usage",
+          "url": "https://affiliatewp.com/docs/starting-affiliate-id-installation-and-usage/"
+        },
+        {
+          "title": "Blocks Installation and Usage",
+          "url": "https://affiliatewp.com/docs/blocks-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate QR Codes addon",
+          "url": "https://affiliatewp.com/docs/affiliate-qr-codes-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate Area Shortcodes addon",
+          "url": "https://affiliatewp.com/docs/affiliate-area-shortcodes-installation-and-usage/"
+        },
+        {
+          "title": "Tiered Affiliate Rates addon",
+          "url": "https://affiliatewp.com/docs/tiered-affiliate-rates-installation-and-usage/"
+        },
+        {
+          "title": "Signup Referrals addon",
+          "url": "https://affiliatewp.com/docs/signup-referrals-installation-and-usage/"
+        },
+        {
+          "title": "REST API Extended addon",
+          "url": "https://affiliatewp.com/docs/rest-api-extended-installation-and-usage/"
+        },
+        {
+          "title": "Recurring Referrals Addon",
+          "url": "https://affiliatewp.com/docs/recurring-referrals-installation-and-usage/"
+        },
+        {
+          "title": "Pushover Notifications addon",
+          "url": "https://affiliatewp.com/docs/pushover-notifications-installation-and-usage/"
+        },
+        {
+          "title": "Paying Affiliates with PayPal",
+          "url": "https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/"
+        },
+        {
+          "title": "Lifetime Commissions addon",
+          "url": "https://affiliatewp.com/docs/lifetime-commissions-installation-and-usage/"
+        },
+        {
+          "title": "Direct Link Tracking addon",
+          "url": "https://affiliatewp.com/docs/direct-link-tracking-installation-and-usage/"
+        },
+        {
+          "title": "Custom Affiliate Slugs addon",
+          "url": "https://affiliatewp.com/docs/custom-affiliate-slugs-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate Forms For Ninja Forms addon",
+          "url": "https://affiliatewp.com/docs/affiliate-forms-for-ninja-forms-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate Forms For Gravity Forms addon",
+          "url": "https://affiliatewp.com/docs/affiliate-forms-for-gravity-forms-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate Portal addon",
+          "url": "https://affiliatewp.com/docs/affiliate-portal-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate Landing Pages addon",
+          "url": "https://affiliatewp.com/docs/affiliate-landing-pages-installation-and-usage/"
+        },
+        {
+          "title": "Affiliate Dashboard Sharing Installation and Usage",
+          "url": "https://affiliatewp.com/docs/affiliate-dashboard-sharing-installation-and-usage/"
+        },
+        {
+          "title": "Will AffiliateWP work on a subdomain?",
+          "url": "https://affiliatewp.com/docs/will-affiliatewp-work-on-a-subdomain/"
+        },
+        {
+          "title": "Discontinued Integrations",
+          "url": "https://affiliatewp.com/docs/discontinued-integrations/"
+        },
+        {
+          "title": "Referral summary dashboard widget",
+          "url": "https://affiliatewp.com/docs/referral-summary-dashboard-widget/"
+        },
+        {
+          "title": "Blacklisting referral URLs",
+          "url": "https://affiliatewp.com/docs/blacklisting-referral-urls/"
+        },
+        {
+          "title": "User role capabilities",
+          "url": "https://affiliatewp.com/docs/user-role-capabilities/"
+        },
+        {
+          "title": "How to use affiliate referral URL campaign tracking",
+          "url": "https://affiliatewp.com/docs/how-to-use-affiliate-referral-url-campaign-tracking/"
+        },
+        {
+          "title": "Best practices for affiliate creatives and banners, and brand assets",
+          "url": "https://affiliatewp.com/docs/best-practices-for-affiliate-creatives-banners-and-brand-assets/"
+        },
+        {
+          "title": "Migrating from WP Affiliate",
+          "url": "https://affiliatewp.com/docs/migrating-from-wp-affiliate/"
+        },
+        {
+          "title": "Migrating from Affiliates Pro",
+          "url": "https://affiliatewp.com/docs/migrating-from-affiliates-pro/"
+        },
+        {
+          "title": "Exporting Visits",
+          "url": "https://affiliatewp.com/docs/exporting-visits/"
+        },
+        {
+          "title": "Exporting Payouts",
+          "url": "https://affiliatewp.com/docs/exporting-payouts/"
+        },
+        {
+          "title": "Importing Referrals from a CSV",
+          "url": "https://affiliatewp.com/docs/importing-referrals-from-csv/"
+        },
+        {
+          "title": "Exporting Affiliates",
+          "url": "https://affiliatewp.com/docs/exporting-affiliates/"
+        },
+        {
+          "title": "Importing Affiliates from a CSV",
+          "url": "https://affiliatewp.com/docs/importing-affiliates-from-csv/"
+        },
+        {
+          "title": "Exporting Referrals",
+          "url": "https://affiliatewp.com/docs/exporting-referrals/"
+        },
+        {
+          "title": "I have a presale question",
+          "url": "https://affiliatewp.com/docs/i-have-a-presale-question/"
+        },
+        {
+          "title": "Do you offer phone support?",
+          "url": "https://affiliatewp.com/docs/do-you-offer-phone-support/"
+        },
+        {
+          "title": "I need help with an issue",
+          "url": "https://affiliatewp.com/docs/i-need-help/"
+        },
+        {
+          "title": "Automatically reject referrals if an order is refunded",
+          "url": "https://affiliatewp.com/docs/automatically-reject-referrals-if-an-order-is-refunded/"
+        },
+        {
+          "title": "Referral Types",
+          "url": "https://affiliatewp.com/docs/referral-types/"
+        },
+        {
+          "title": "Referral rate hierarchy",
+          "url": "https://affiliatewp.com/docs/referral-rate-hierarchy/"
+        },
+        {
+          "title": "How do I pay affiliates if I have a Personal or Plus license?",
+          "url": "https://affiliatewp.com/docs/how-do-i-pay-affiliates-if-i-have-a-personal-plus-license/"
+        },
+        {
+          "title": "How do I pay affiliates without using PayPal?",
+          "url": "https://affiliatewp.com/docs/how-do-i-pay-affiliates-without-using-paypal/"
+        },
+        {
+          "title": "Payouts",
+          "url": "https://affiliatewp.com/docs/payouts/"
+        },
+        {
+          "title": "Will AffiliateWP work on WordPress.com?",
+          "url": "https://affiliatewp.com/docs/will-affiliatewp-work-on-wordpress-com/"
+        },
+        {
+          "title": "How can I edit text in AffiliateWP?",
+          "url": "https://affiliatewp.com/docs/edit-plugin-text/"
+        },
+        {
+          "title": "Can I use AffiliateWP on client sites?",
+          "url": "https://affiliatewp.com/docs/can-i-use-affiliatewp-on-client-sites/"
+        },
+        {
+          "title": "Do you have a changelog?",
+          "url": "https://affiliatewp.com/docs/do-you-have-a-changelog/"
+        },
+        {
+          "title": "Do you provide custom development?",
+          "url": "https://affiliatewp.com/docs/do-you-provide-custom-development/"
+        },
+        {
+          "title": "Why are visits not showing or matching up with page views or clicks?",
+          "url": "https://affiliatewp.com/docs/why-are-visits-not-showing-or-matching-up-with-page-views-or-clicks/"
+        },
+        {
+          "title": "Do you support standard PayPal and PayPal buttons?",
+          "url": "https://affiliatewp.com/docs/do-you-support-standard-paypal-and-paypal-buttons/"
+        },
+        {
+          "title": "Will AffiliateWP work with my CRM system?",
+          "url": "https://affiliatewp.com/docs/will-affiliatewp-work-with-my-crm-system/"
+        },
+        {
+          "title": "Can I charge affiliates for joining my affiliate program?",
+          "url": "https://affiliatewp.com/docs/can-i-charge-affiliates-for-joining-my-affiliate-program/"
+        },
+        {
+          "title": "Will AffiliateWP work on non-WordPress sites?",
+          "url": "https://affiliatewp.com/docs/will-affiliatewp-work-on-non-wordpress-sites/"
+        },
+        {
+          "title": "Can affiliates view their earnings?",
+          "url": "https://affiliatewp.com/docs/can-affiliates-view-their-earnings/"
+        },
+        {
+          "title": "Is my host supported?",
+          "url": "https://affiliatewp.com/docs/is-my-host-supported/"
+        },
+        {
+          "title": "Supported Currencies in AffiliateWP",
+          "url": "https://affiliatewp.com/docs/supported-currencies/"
+        },
+        {
+          "title": "How can an affiliate change their password?",
+          "url": "https://affiliatewp.com/docs/how-can-an-affiliate-change-their-password/"
+        },
+        {
+          "title": "Taxes and 1099 forms for affiliates",
+          "url": "https://affiliatewp.com/docs/taxes-and-1099-forms-for-affiliates/"
+        },
+        {
+          "title": "Can I use AffiliateWP with my existing eCommerce or membership plugin?",
+          "url": "https://affiliatewp.com/docs/can-i-use-affiliatewp-with-my-existing-ecommerce-or-membership-plugin/"
+        },
+        {
+          "title": "Do you have a demo or a trial?",
+          "url": "https://affiliatewp.com/docs/do-you-have-a-demo-or-a-trial/"
+        },
+        {
+          "title": "Does AffiliateWP support a multi-currency site?",
+          "url": "https://affiliatewp.com/docs/does-affiliatewp-support-a-multi-currency-site/"
+        },
+        {
+          "title": "Can I install AffiliateWP on a separate website?",
+          "url": "https://affiliatewp.com/docs/can-i-install-affiliatewp-on-a-separate-website/"
+        },
+        {
+          "title": "How can an existing customer become an affiliate?  It tells them their email is already in use.",
+          "url": "https://affiliatewp.com/docs/how-can-an-existing-customer-become-an-affiliate-it-tells-them-their-email-is-already-in-use/"
+        },
+        {
+          "title": "How to back up or migrate affiliate data",
+          "url": "https://affiliatewp.com/docs/how-to-back-up-or-migrate-affiliate-data/"
+        },
+        {
+          "title": "Can AffiliateWP be customized?",
+          "url": "https://affiliatewp.com/docs/can-affiliatewp-be-customized/"
+        },
+        {
+          "title": "Supported languages",
+          "url": "https://affiliatewp.com/docs/supported-languages/"
+        },
+        {
+          "title": "Display a Terms & Conditions checkbox on the affiliate registration form",
+          "url": "https://affiliatewp.com/docs/display-a-terms-conditions-checkbox-on-the-affiliate-registration-form/"
+        },
+        {
+          "title": "How to Translate AffiliateWP into Your Own Language",
+          "url": "https://affiliatewp.com/docs/how-can-i-translate-affiliatewp/"
+        },
+        {
+          "title": "Can I set custom commission rates?",
+          "url": "https://affiliatewp.com/docs/can-i-set-custom-commission-rates/"
+        },
+        {
+          "title": "How do I email my affiliates?",
+          "url": "https://affiliatewp.com/docs/how-do-i-email-my-affiliates/"
+        },
+        {
+          "title": "Is the affiliate tracked across all pages of the site?",
+          "url": "https://affiliatewp.com/docs/is-the-affiliate-tracked-across-all-pages-of-the-site/"
+        },
+        {
+          "title": "Does AffiliateWP work with caching?",
+          "url": "https://affiliatewp.com/docs/does-affiliatewp-work-with-caching/"
+        },
+        {
+          "title": "Why can’t I edit some fields on the affiliate registration form?",
+          "url": "https://affiliatewp.com/docs/why-cant-i-edit-some-fields-on-the-affiliate-registration-form/"
+        },
+        {
+          "title": "Using AffiliateWP on a WordPress Multisite Installation",
+          "url": "https://affiliatewp.com/docs/will-affiliatewp-work-on-a-multisite-installation/"
+        },
+        {
+          "title": "Referral Statuses",
+          "url": "https://affiliatewp.com/docs/referral-statuses/"
+        },
+        {
+          "title": "Modifying template files",
+          "url": "https://affiliatewp.com/docs/modifying-template-files/"
+        },
+        {
+          "title": "Sharing affiliate referral links",
+          "url": "https://affiliatewp.com/docs/sharing-affiliate-referral-urls-links/"
+        },
+        {
+          "title": "Common questions on affiliate tracking",
+          "url": "https://affiliatewp.com/docs/common-questions-on-affiliate-tracking/"
+        },
+        {
+          "title": "How do I generate an affiliate referral link/URL?",
+          "url": "https://affiliatewp.com/docs/how-do-i-generate-an-affiliate-referral-link-url/"
+        },
+        {
+          "title": "Add a log out link to the Affiliate Area",
+          "url": "https://affiliatewp.com/docs/add-a-logout-link-to-the-affiliate-area/"
+        },
+        {
+          "title": "Can I change the appearance of the Affiliate Area?",
+          "url": "https://affiliatewp.com/docs/can-i-change-the-appearance-of-the-affiliate-area/"
+        },
+        {
+          "title": "Change the URL shown in the Affiliate URLs tab of the affiliate area",
+          "url": "https://affiliatewp.com/docs/change-the-url-shown-in-the-affiliate-urls-tab-of-the-affiliate-area/"
+        },
+        {
+          "title": "WP Simple Pay",
+          "url": "https://affiliatewp.com/docs/wp-simple-pay/"
+        },
+        {
+          "title": "Paid Member Subscriptions",
+          "url": "https://affiliatewp.com/docs/paid-member-subscriptions/"
+        },
+        {
+          "title": "WPForms",
+          "url": "https://affiliatewp.com/docs/wpforms/"
+        },
+        {
+          "title": "GiveWP",
+          "url": "https://affiliatewp.com/docs/givewp/"
+        },
+        {
+          "title": "Contact Form 7",
+          "url": "https://affiliatewp.com/docs/contact-form-7/"
+        },
+        {
+          "title": "WP EasyCart",
+          "url": "https://affiliatewp.com/docs/wp-easycart/"
+        },
+        {
+          "title": "OptimizeMember",
+          "url": "https://affiliatewp.com/docs/optimizemember/"
+        },
+        {
+          "title": "s2Member",
+          "url": "https://affiliatewp.com/docs/s2member/"
+        },
+        {
+          "title": "MemberMouse",
+          "url": "https://affiliatewp.com/docs/membermouse/"
+        },
+        {
+          "title": "Sprout Invoices",
+          "url": "https://affiliatewp.com/docs/sprout-invoices/"
+        },
+        {
+          "title": "MemberPress",
+          "url": "https://affiliatewp.com/docs/memberpress/"
+        },
+        {
+          "title": "Paid Memberships Pro",
+          "url": "https://affiliatewp.com/docs/paid-memberships-pro/"
+        },
+        {
+          "title": "LifterLMS",
+          "url": "https://affiliatewp.com/docs/lifterlms/"
+        },
+        {
+          "title": "Formidable Pro",
+          "url": "https://affiliatewp.com/docs/formidable-pro/"
+        },
+        {
+          "title": "PayPal Buttons",
+          "url": "https://affiliatewp.com/docs/paypal-buttons/"
+        },
+        {
+          "title": "Ninja Forms",
+          "url": "https://affiliatewp.com/docs/ninja-forms/"
+        },
+        {
+          "title": "Gravity Forms Integration",
+          "url": "https://affiliatewp.com/docs/gravity-forms/"
+        },
+        {
+          "title": "Restrict Content Pro",
+          "url": "https://affiliatewp.com/docs/restrict-content-pro/"
+        },
+        {
+          "title": "Easy Digital Downloads",
+          "url": "https://affiliatewp.com/docs/easy-digital-downloads/"
+        },
+        {
+          "title": "WooCommerce",
+          "url": "https://affiliatewp.com/docs/woocommerce/"
+        },
+        {
+          "title": "Email Settings",
+          "url": "https://affiliatewp.com/docs/email-settings/"
+        },
+        {
+          "title": "Opt-In Form Settings",
+          "url": "https://affiliatewp.com/docs/opt-in-form-settings/"
+        },
+        {
+          "title": "Miscellaneous Settings",
+          "url": "https://affiliatewp.com/docs/misc-settings/"
+        },
+        {
+          "title": "General Settings",
+          "url": "https://affiliatewp.com/docs/general-settings/"
+        },
+        {
+          "title": "Zip file automatically un-zips upon download",
+          "url": "https://affiliatewp.com/docs/zip-file-automatically-un-zips-upon-download/"
+        },
+        {
+          "title": "Dynamic coupons",
+          "url": "https://affiliatewp.com/docs/dynamic-coupons/"
+        },
+        {
+          "title": "Glossary: Common affiliate marketing and AffiliateWP terms",
+          "url": "https://affiliatewp.com/docs/glossary-common-affiliate-marketing-and-affiliatewp-terms/"
+        },
+        {
+          "title": "A complete guide to paying your affiliates",
+          "url": "https://affiliatewp.com/docs/paying-your-affiliates/"
+        },
+        {
+          "title": "Affiliate coupon tracking",
+          "url": "https://affiliatewp.com/docs/affiliate-coupon-tracking/"
+        },
+        {
+          "title": "Credit Last Referrer",
+          "url": "https://affiliatewp.com/docs/credit-last-referrer/"
+        },
+        {
+          "title": "Adding, Editing, and Deleting Referrals",
+          "url": "https://affiliatewp.com/docs/adding-editing-deleting-referrals/"
+        },
+        {
+          "title": "Showing pretty URLs to your affiliates",
+          "url": "https://affiliatewp.com/docs/showing-pretty-urls-to-your-affiliates/"
+        },
+        {
+          "title": "Affiliate URLs",
+          "url": "https://affiliatewp.com/docs/affiliate-urls/"
+        },
+        {
+          "title": "Adding New Affiliates",
+          "url": "https://affiliatewp.com/docs/adding-new-affiliates/"
+        },
+        {
+          "title": "Enabling affiliate registration",
+          "url": "https://affiliatewp.com/docs/enabling-affiliate-registration/"
+        },
+        {
+          "title": "Setting referral rates",
+          "url": "https://affiliatewp.com/docs/setting-referral-rates/"
+        },
+        {
+          "title": "Setting the referral URL variable",
+          "url": "https://affiliatewp.com/docs/setting-the-referral-url-variable/"
+        },
+        {
+          "title": "Affiliate Area Overview",
+          "url": "https://affiliatewp.com/docs/creating-the-affiliate-area/"
+        },
+        {
+          "title": "Enabling your chosen integration",
+          "url": "https://affiliatewp.com/docs/enabling-your-chosen-integration/"
+        },
+        {
+          "title": "How does affiliate marketing work?",
+          "url": "https://affiliatewp.com/docs/how-does-affiliate-marketing-work/"
+        },
+        {
+          "title": "Creatives are not showing",
+          "url": "https://affiliatewp.com/docs/creative-not-showing/"
+        },
+        {
+          "title": "Emails not being sent",
+          "url": "https://affiliatewp.com/docs/emails-not-being-sent/"
+        },
+        {
+          "title": "Why do I see a 404 page when testing an affiliate link?",
+          "url": "https://affiliatewp.com/docs/why-do-i-see-404-page-when-testing-referral-link/"
+        },
+        {
+          "title": "How to delete AffiliateWP’s cookies from your browser",
+          "url": "https://affiliatewp.com/docs/how-to-delete-cookies-from-your-browser/"
+        },
+        {
+          "title": "Visits or referrals are not working",
+          "url": "https://affiliatewp.com/docs/visits-referrals-are-not-working/"
+        },
+        {
+          "title": "How does AffiliateWP track visits with cookies?",
+          "url": "https://affiliatewp.com/docs/how-does-affiliatewp-track-visits-with-cookies/"
+        },
+        {
+          "title": "How to test everything is working",
+          "url": "https://affiliatewp.com/docs/how-to-test-everything-is-working/"
+        },
+        {
+          "title": "Sales Reports",
+          "url": "https://affiliatewp.com/docs/sales-reports/"
+        },
+        {
+          "title": "Individual Affiliate Reports",
+          "url": "https://affiliatewp.com/docs/individual-affiliate-reports/"
+        },
+        {
+          "title": "Reports",
+          "url": "https://affiliatewp.com/docs/reports/"
+        }
+      ]
+    }
+  ]
 }

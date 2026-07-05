@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Store Credit For Woocommerce scraper
-        run: node scraper.js --slug=store-credit-for-woocommerce --mode=wp-api --url=https://woocommerce.com/document/woocommerce-store-credit/ --post-type=documentation --taxonomy=documentation_category --name="Store Credit for WooCommerce"
+        run: node scraper.js --slug=store-credit-for-woocommerce --mode=html-scrape --url=https://woocommerce.com/document/woocommerce-store-credit/ --selector=.wccom-single-doc-content --name="Store Credit for WooCommerce"
 
       - name: Check for changes
         id: changes

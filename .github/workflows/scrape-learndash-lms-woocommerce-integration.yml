@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Learndash Lms Woocommerce Integration scraper
-        run: node scraper.js --slug=learndash-lms-woocommerce-integration --mode=wp-api --url=https://www.learndash.com/support/ --post-type=kb_icon --name="LearnDash LMS - WooCommerce Integration"
+        run: node scraper.js --slug=learndash-lms-woocommerce-integration --mode=wp-api --url=https://learndash.com/support --post-type=docs --taxonomy=doc_category --name="LearnDash LMS - WooCommerce Integration"
 
       - name: Check for changes
         id: changes

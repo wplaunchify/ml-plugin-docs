@@ -1,9 +1,382 @@
 {
   "plugin_slug": "kadence-simple-share",
   "plugin_name": "Kadence Simple Share",
-  "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-  "last_scraped": "2026-06-28T20:32:44.448Z",
-  "total_pages": 0,
-  "failed_urls_count": 5,
-  "sections": []
+  "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
+  "last_scraped": "2026-07-05T17:20:12.690Z",
+  "total_pages": 30,
+  "failed_urls_count": 1,
+  "sections": [
+    {
+      "title": "Captcha",
+      "slug": "captcha",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/captcha/",
+      "file": "categories/captcha.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence CAPTCHA",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/captcha/"
+        }
+      ]
+    },
+    {
+      "title": "Child Theme Builder",
+      "slug": "child-theme-builder",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/child-theme-builder/",
+      "file": "categories/child-theme-builder.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Child Theme Builder (Create and Sell Child Themes)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/child-theme-builder/"
+        }
+      ]
+    },
+    {
+      "title": "Classic Galleries",
+      "slug": "classic-galleries",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/classic-galleries/",
+      "file": "categories/classic-galleries.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Galleries",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/classic-galleries/"
+        }
+      ]
+    },
+    {
+      "title": "Classic Kadence Themes And Plugins",
+      "slug": "classic-kadence-themes-and-plugins",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/classic-kadence-themes-and-plugins/",
+      "file": "categories/classic-kadence-themes-and-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Classic Kadence Themes and Plugins",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/classic-kadence-themes-and-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "Classic Themes And Plugins",
+      "slug": "classic-themes-and-plugins",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/classic-themes-and-plugins/",
+      "file": "categories/classic-themes-and-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Classic Kadence Themes and Plugins",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/classic-themes-and-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "Clearing Your Browser Data",
+      "slug": "clearing-your-browser-data",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/clearing-your-browser-data/",
+      "file": "categories/clearing-your-browser-data.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Clear Browser Cache and Cookies",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/clearing-your-browser-data/"
+        }
+      ]
+    },
+    {
+      "title": "How To Eliminate Empty Space On Posts Pages And Archives",
+      "slug": "how-to-eliminate-empty-space-on-posts-pages-and-archives",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-eliminate-empty-space-on-posts-pages-and-archives/",
+      "file": "categories/how-to-eliminate-empty-space-on-posts-pages-and-archives.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to eliminate empty space on Posts, Pages, and Archives",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-eliminate-empty-space-on-posts-pages-and-archives/"
+        }
+      ]
+    },
+    {
+      "title": "How To Generate A Custom Child Theme",
+      "slug": "how-to-generate-a-custom-child-theme",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-generate-a-custom-child-theme/",
+      "file": "categories/how-to-generate-a-custom-child-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Child Theme Builder (Create and Sell Child Themes)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-generate-a-custom-child-theme/"
+        }
+      ]
+    },
+    {
+      "title": "How To Manually Install And Update Free Kadence Plugins From Wordpress Org",
+      "slug": "how-to-manually-install-and-update-free-kadence-plugins-from-wordpress-org",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-manually-install-and-update-free-kadence-plugins-from-wordpress-org/",
+      "file": "categories/how-to-manually-install-and-update-free-kadence-plugins-from-wordpress-org.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Manually Install and Update Free Kadence Plugins from WordPress.org",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-manually-install-and-update-free-kadence-plugins-from-wordpress-org/"
+        }
+      ]
+    },
+    {
+      "title": "How To Renew Your Subscription Early",
+      "slug": "how-to-renew-your-subscription-early",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-renew-your-subscription-early/",
+      "file": "categories/how-to-renew-your-subscription-early.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Renew Your Subscription Early",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-renew-your-subscription-early/"
+        }
+      ]
+    },
+    {
+      "title": "How To Upgrade Your Kadence Purchase",
+      "slug": "how-to-upgrade-your-kadence-purchase",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-upgrade-your-kadence-purchase/",
+      "file": "categories/how-to-upgrade-your-kadence-purchase.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Upgrade Your License",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-upgrade-your-kadence-purchase/"
+        }
+      ]
+    },
+    {
+      "title": "Install And Update Free Kadence Plugins",
+      "slug": "install-and-update-free-kadence-plugins",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/install-and-update-free-kadence-plugins/",
+      "file": "categories/install-and-update-free-kadence-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Manually Install and Update Free Kadence Plugins from WordPress.org",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/install-and-update-free-kadence-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Galleries",
+      "slug": "kadence-galleries",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-galleries/",
+      "file": "categories/kadence-galleries.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Galleries",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-galleries/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence License Activation And Renewal Faq",
+      "slug": "kadence-license-activation-and-renewal-faq",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-license-activation-and-renewal-faq/",
+      "file": "categories/kadence-license-activation-and-renewal-faq.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence License Activation & Renewal FAQ",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-license-activation-and-renewal-faq/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Page Transitions",
+      "slug": "kadence-page-transitions",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-page-transitions/",
+      "file": "categories/kadence-page-transitions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Page Transitions",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-page-transitions/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Reading Time",
+      "slug": "kadence-reading-time",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-reading-time/",
+      "file": "categories/kadence-reading-time.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Reading Time",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-reading-time/"
+        }
+      ]
+    },
+    {
+      "title": "License Activation And Renewal",
+      "slug": "license-activation-and-renewal",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/license-activation-and-renewal/",
+      "file": "categories/license-activation-and-renewal.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence License Activation & Renewal FAQ",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/license-activation-and-renewal/"
+        }
+      ]
+    },
+    {
+      "title": "My Account Page",
+      "slug": "my-account-page",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/my-account-page/",
+      "file": "categories/my-account-page.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "My Account Page",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/my-account-page/"
+        },
+        {
+          "title": "My Account Page",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/my-account-page/"
+        }
+      ]
+    },
+    {
+      "title": "Page Transitions",
+      "slug": "page-transitions",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/page-transitions/",
+      "file": "categories/page-transitions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Page Transitions",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/page-transitions/"
+        }
+      ]
+    },
+    {
+      "title": "Reading Time",
+      "slug": "reading-time",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/reading-time/",
+      "file": "categories/reading-time.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Reading Time",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/reading-time/"
+        }
+      ]
+    },
+    {
+      "title": "Renew Your Subscription Early",
+      "slug": "renew-your-subscription-early",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/renew-your-subscription-early/",
+      "file": "categories/renew-your-subscription-early.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Renew Your Subscription Early",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/renew-your-subscription-early/"
+        }
+      ]
+    },
+    {
+      "title": "Simple Share",
+      "slug": "simple-share",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/simple-share/",
+      "file": "categories/simple-share.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Simple Share (Add Social Share Icons to Posts)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/simple-share/"
+        }
+      ]
+    },
+    {
+      "title": "Site Limits And License Usage",
+      "slug": "site-limits-and-license-usage",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/site-limits-and-license-usage/",
+      "file": "categories/site-limits-and-license-usage.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding Site Limits and License Usage Guidelines",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/site-limits-and-license-usage/"
+        }
+      ]
+    },
+    {
+      "title": "Understanding Site Limits And License Usage Guidelines",
+      "slug": "understanding-site-limits-and-license-usage-guidelines",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/understanding-site-limits-and-license-usage-guidelines/",
+      "file": "categories/understanding-site-limits-and-license-usage-guidelines.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding Site Limits and License Usage Guidelines",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/understanding-site-limits-and-license-usage-guidelines/"
+        }
+      ]
+    },
+    {
+      "title": "Upgrade Your Kadence Purchase",
+      "slug": "upgrade-your-kadence-purchase",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/upgrade-your-kadence-purchase/",
+      "file": "categories/upgrade-your-kadence-purchase.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Upgrade Your License",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/upgrade-your-kadence-purchase/"
+        }
+      ]
+    },
+    {
+      "title": "What Is Wordpress",
+      "slug": "what-is-wordpress",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/",
+      "file": "categories/what-is-wordpress.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "What is WordPress?",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/"
+        },
+        {
+          "title": "What is WordPress?",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/"
+        }
+      ]
+    },
+    {
+      "title": "White Label",
+      "slug": "white-label",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/white-label/",
+      "file": "categories/white-label.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence White Label",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/white-label/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Email Designer",
+      "slug": "woocommerce-email-designer",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/woocommerce-email-designer/",
+      "file": "categories/woocommerce-email-designer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence WooCommerce Email Designer",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/woocommerce-email-designer/"
+        }
+      ]
+    }
+  ]
 }

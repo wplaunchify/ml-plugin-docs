@@ -1,9 +1,212 @@
 {
   "plugin_slug": "woocommerce-stripe-gateway",
   "plugin_name": "WooCommerce Stripe Gateway",
-  "documentation_url": "https://woocommerce.com/document/documentation/",
-  "last_scraped": "2026-06-28T18:27:10.544Z",
-  "total_pages": 0,
-  "failed_urls_count": 0,
-  "sections": []
+  "documentation_url": "https://woocommerce.com/document/stripe/",
+  "last_scraped": "2026-07-05T17:06:41.842Z",
+  "total_pages": 37,
+  "failed_urls_count": 1,
+  "sections": [
+    {
+      "title": "Admin Experience",
+      "slug": "admin-experience",
+      "url": "https://woocommerce.com/document/stripe/admin-experience/",
+      "file": "categories/admin-experience.md",
+      "page_count": 11,
+      "pages": [
+        {
+          "title": "Administrator experience with the Stripe extension",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/"
+        },
+        {
+          "title": "Authorize and Capture Guide",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/authorize-and-capture/"
+        },
+        {
+          "title": "Getting started with In-Person Payments with Stripe",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/in-person-payments/"
+        },
+        {
+          "title": "Stripe extension and Level III Data",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/level-iii-data/"
+        },
+        {
+          "title": "Optimized Checkout Suite",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/optimized-checkout-suite/"
+        },
+        {
+          "title": "Adaptive Pricing",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/optimized-checkout-suite/adaptive-pricing/"
+        },
+        {
+          "title": "What information does the Stripe extension add to my orders?",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/order-information/"
+        },
+        {
+          "title": "Does the Stripe extension modify my order statuses?",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/order-statuses/"
+        },
+        {
+          "title": "Preventing fraud via Stripe Radar",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/preventing-fraud-via-stripe-radar/"
+        },
+        {
+          "title": "How do I refund orders?",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/refunding-orders/"
+        },
+        {
+          "title": "Can I use Stripe Billing for recurring payments?",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/stripe-billing/"
+        }
+      ]
+    },
+    {
+      "title": "Customer Experience",
+      "slug": "customer-experience",
+      "url": "https://woocommerce.com/document/stripe/customer-experience/",
+      "file": "categories/customer-experience.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Does the Stripe extension support 3D Secure?",
+          "url": "https://woocommerce.com/document/stripe/customer-experience/3d-secure/"
+        },
+        {
+          "title": "How will additional payment methods appear on my checkout page?",
+          "url": "https://woocommerce.com/document/stripe/customer-experience/additional-payment-methods/"
+        },
+        {
+          "title": "Does the Stripe extension support Cartes Bancaires?",
+          "url": "https://woocommerce.com/document/stripe/customer-experience/cartes-bancaires/"
+        },
+        {
+          "title": "What is the checkout experience like with the Stripe extension?",
+          "url": "https://woocommerce.com/document/stripe/customer-experience/checkout/"
+        },
+        {
+          "title": "How can customers use express checkouts?",
+          "url": "https://woocommerce.com/document/stripe/customer-experience/express-checkouts/"
+        },
+        {
+          "title": "Testing the Stripe extension",
+          "url": "https://woocommerce.com/document/stripe/customer-experience/testing/"
+        }
+      ]
+    },
+    {
+      "title": "Customization",
+      "slug": "customization",
+      "url": "https://woocommerce.com/document/stripe/customization/",
+      "file": "categories/customization.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Customizing the Stripe extension",
+          "url": "https://woocommerce.com/document/stripe/customization/"
+        },
+        {
+          "title": "How can I clean up the database after changing my Stripe account?",
+          "url": "https://woocommerce.com/document/stripe/customization/database-cleanup/"
+        },
+        {
+          "title": "How do I change which payment icons are used?",
+          "url": "https://woocommerce.com/document/stripe/customization/payment-icons/"
+        },
+        {
+          "title": "How can I send product details to Stripe as metadata?",
+          "url": "https://woocommerce.com/document/stripe/customization/products-as-metadata/"
+        },
+        {
+          "title": "How can I change the style of the payment form?",
+          "url": "https://woocommerce.com/document/stripe/customization/style-payment-form/"
+        },
+        {
+          "title": "How do I translate the payment form placeholder text?",
+          "url": "https://woocommerce.com/document/stripe/customization/translate-placeholders/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://woocommerce.com/document/stripe/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Stripe WooCommerce Extension",
+          "url": "https://woocommerce.com/document/stripe/"
+        }
+      ]
+    },
+    {
+      "title": "Setup And Configuration",
+      "slug": "setup-and-configuration",
+      "url": "https://woocommerce.com/document/stripe/setup-and-configuration/",
+      "file": "categories/setup-and-configuration.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "Setup and configuration of the Stripe extension",
+          "url": "https://woocommerce.com/document/stripe/setup-and-configuration/"
+        },
+        {
+          "title": "Additional payment methods",
+          "url": "https://woocommerce.com/document/stripe/setup-and-configuration/additional-payment-methods/"
+        },
+        {
+          "title": "Connecting to a Stripe account",
+          "url": "https://woocommerce.com/document/stripe/setup-and-configuration/connecting-to-stripe/"
+        },
+        {
+          "title": "Enabling express checkouts",
+          "url": "https://woocommerce.com/document/stripe/setup-and-configuration/express-checkouts/"
+        },
+        {
+          "title": "Installing the Stripe extension",
+          "url": "https://woocommerce.com/document/stripe/setup-and-configuration/installation/"
+        },
+        {
+          "title": "Settings Guide",
+          "url": "https://woocommerce.com/document/stripe/setup-and-configuration/settings-guide/"
+        },
+        {
+          "title": "Setting up webhooks",
+          "url": "https://woocommerce.com/document/stripe/setup-and-configuration/stripe-webhooks/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "slug": "troubleshooting",
+      "url": "https://woocommerce.com/document/stripe/troubleshooting/",
+      "file": "categories/troubleshooting.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Troubleshooting the Stripe extension",
+          "url": "https://woocommerce.com/document/stripe/troubleshooting/"
+        },
+        {
+          "title": "What version of the Stripe API does the Stripe extension use?",
+          "url": "https://woocommerce.com/document/stripe/troubleshooting/api-version/"
+        },
+        {
+          "title": "Why was a charge successful despite an AVS or CVC mismatch?",
+          "url": "https://woocommerce.com/document/stripe/troubleshooting/avs-or-cvc-mismatch/"
+        },
+        {
+          "title": "Why do some customers get an error to enable JavaScript?",
+          "url": "https://woocommerce.com/document/stripe/troubleshooting/enable-javascript-error/"
+        },
+        {
+          "title": "Is the Stripe extension PCI compliant?",
+          "url": "https://woocommerce.com/document/stripe/troubleshooting/pci-compliance/"
+        },
+        {
+          "title": "Why aren’t Stripe payment methods showing at checkout?",
+          "url": "https://woocommerce.com/document/stripe/troubleshooting/stripe-not-showing-at-checkout/"
+        }
+      ]
+    }
+  ]
 }

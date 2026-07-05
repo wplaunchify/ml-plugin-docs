@@ -2,8 +2,1790 @@
   "plugin_slug": "ninja-tables-easy-data-table-builder",
   "plugin_name": "Ninja Tables – Easy Data Table Builder",
   "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-  "last_scraped": "2026-07-05T17:29:32.562Z",
-  "total_pages": 0,
-  "failed_urls_count": 0,
-  "sections": []
+  "last_scraped": "2026-07-05T17:02:50.957Z",
+  "total_pages": 443,
+  "failed_urls_count": 33,
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://wpmanageninja.com/docs/ninja-tables/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 443,
+      "pages": [
+        {
+          "title": "Changelog",
+          "url": "https://wpmanageninja.com/docs/azonpress/changelog/"
+        },
+        {
+          "title": "Front End Entry View",
+          "url": "https://wpmanageninja.com/docs/fluent-form/view-submitted-form-data-in-wp-fluent-forms/front-end-entry-view/"
+        },
+        {
+          "title": "Translate Forms with WPML",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/translate-forms-with-wpml/"
+        },
+        {
+          "title": "Create a Form with Fluent Forms AI",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/create-a-form-with-fluent-forms-ai/"
+        },
+        {
+          "title": "CleanTalk Spam Protection in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/cleantalk-spam-protection-in-fluent-forms/"
+        },
+        {
+          "title": "Repeat Container Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/repeat-container-field-in-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms with Oxygen Builder Widget",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/fluent-forms-with-oxygen-builder-widget/"
+        },
+        {
+          "title": "Keyboard Navigation & Shortcuts in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/keyboard-navigation-shortcuts-in-fluent-forms/"
+        },
+        {
+          "title": "Edit History Feature in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/edit-history-feature-in-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Paddle with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-integrate-paddle-with-fluent-forms/"
+        },
+        {
+          "title": "How to Use JetEngine Custom Fields With Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-use-jetengine-custom-fields-with-fluent-forms/"
+        },
+        {
+          "title": "Dynamic Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/dynamic-field-in-fluent-forms/"
+        },
+        {
+          "title": "Settings for Custom Products’ Template Customization",
+          "url": "https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/settings-for-custom-products-template-customization/"
+        },
+        {
+          "title": "Other Settings in AzonPress",
+          "url": "https://wpmanageninja.com/docs/azonpress/miscellaneous/other-settings-in-azonpress/"
+        },
+        {
+          "title": "Dashboard of AzonPress",
+          "url": "https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/dashboard-of-azonpress/"
+        },
+        {
+          "title": "Embed Amazon/Custom Product Tables into Posts/Pages",
+          "url": "https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/embed-amazon-custom-product-tables-into-posts-pages-of-wordpress/"
+        },
+        {
+          "title": "OpenAI ChatGPT with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/fluent-forms-with-openai-chatgpt/"
+        },
+        {
+          "title": "Fluent Forms API Logs",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/fluent-forms-api-logs/"
+        },
+        {
+          "title": "Fluent Forms Activity Logs",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/fluent-forms-activity-logs/"
+        },
+        {
+          "title": "Fluent Forms Global Search",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/fluentforms-global-search/"
+        },
+        {
+          "title": "Affiliate Link Configuration",
+          "url": "https://wpmanageninja.com/docs/azonpress/miscellaneous/global-affiliate-link-configuration/"
+        },
+        {
+          "title": "Geo Location Report",
+          "url": "https://wpmanageninja.com/docs/azonpress/reports/geo-location-reports/"
+        },
+        {
+          "title": "Reports Overview with AzonPress",
+          "url": "https://wpmanageninja.com/docs/azonpress/reports/reports-overview-with-azonpress/"
+        },
+        {
+          "title": "How To Use AzonPress With Gutenberg Blocks",
+          "url": "https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/azonprress-gutenberg-blocks/"
+        },
+        {
+          "title": "Customization Of Comparison Tables",
+          "url": "https://wpmanageninja.com/docs/azonpress/amazon-comparison-tables/customization-of-comparison-tables/"
+        },
+        {
+          "title": "Custom Products And Its Dashboard",
+          "url": "https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/custom-product-dashboard-overview/"
+        },
+        {
+          "title": "How to Add Multiple Custom Products",
+          "url": "https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/how-to-add-multiple-custom-products/"
+        },
+        {
+          "title": "How to Add a Single Custom Product",
+          "url": "https://wpmanageninja.com/docs/azonpress/custom-product-in-azonpress/create-a-custom-product/"
+        },
+        {
+          "title": "Global Inventory Manager in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/global-inventory-manager-in-fluent-forms/"
+        },
+        {
+          "title": "Importing Entries in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/import-export/importing-entries-with-fluent-forms/"
+        },
+        {
+          "title": "Admin Approval Feature in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/admin-approval-feature-in-fluent-forms/"
+        },
+        {
+          "title": "Creating a Personality Quiz Form in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/creating-a-personality-quiz-form-in-fluent-forms/"
+        },
+        {
+          "title": "Restrict Forms Submission (IP, Country, Keyword)",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/restrict-forms-submission-ip-country-keyword/"
+        },
+        {
+          "title": "Notion Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/notion-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Airtable Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/airtable-integration-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Square with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-integrate-square-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to Show Fluent Forms Entries on Frontend using Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/how-to-show-fluent-forms-entries-on-frontend-using-ninja-tables/"
+        },
+        {
+          "title": "MailPoet Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/mailpoet-integration-with-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Cloudflare Turnstile in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/how-to-integrate-cloudflare-turnstile-in-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms Inventory Module",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/fluent-forms-inventory-module/"
+        },
+        {
+          "title": "Buddyboss Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/buddyboss-integration-with-fluent-forms/"
+        },
+        {
+          "title": "How to Update & Activate the License Key",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/getting-started-with-ninja-tables/how-to-update-activate-the-license-key/"
+        },
+        {
+          "title": "How to Transfer a License from one Domain to another?",
+          "url": "https://wpmanageninja.com/docs/fluent-form/frequently-asked-questions-for-wp-fluent-forms/how-to-transfer-license-from-one-domain-to-another/"
+        },
+        {
+          "title": "Form Editor Smart Codes",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/form-editor-smart-codes/"
+        },
+        {
+          "title": "Rich Text Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/rich-text-input-field-in-fluent-forms/"
+        },
+        {
+          "title": "Save Progress Button in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/save-progress-button-in-fluent-forms/"
+        },
+        {
+          "title": "Mailster Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/mailster-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Insightly Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/insightly-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Regular Expressions with Conditional Logic in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/regular-expressions-with-conditional-logic-in-fluent-forms/"
+        },
+        {
+          "title": "Shortcodes in Confirmation Settings",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/shortcodes-in-fluent-forms/"
+        },
+        {
+          "title": "How to Create a WordPress User Update Form with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-create-a-wordpress-user-update-form-with-fluent-forms/"
+        },
+        {
+          "title": "Resizeable Container in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/resizeable-container-width-in-fluent-forms/"
+        },
+        {
+          "title": "Mailjet Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/mailjet-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Quiz Score in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/quiz-score-in-fluent-forms/"
+        },
+        {
+          "title": "Post Update with Form Submission in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/post-update-with-form-submission/"
+        },
+        {
+          "title": "Airtable Legacy Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/airtable-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Set Scroll Offset of Form Steps",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/auto-scroll-offset-of-form-steps/"
+        },
+        {
+          "title": "hCaptcha in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/hcaptcha-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Custom Payment Amount in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/custom-payment-amount/"
+        },
+        {
+          "title": "Subscription Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/subscription-field-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Dynamic Default Value in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/default-value-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Item Quantity in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/item-quantity-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Payment Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/payment-field-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Color Picker Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/color-picker-field/"
+        },
+        {
+          "title": "Fluent Forms Quiz Module",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/fluent-forms-quiz-module/"
+        },
+        {
+          "title": "Pipedrive Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/pipedrive-integration/"
+        },
+        {
+          "title": "amoCRM Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/amocrm-integration/"
+        },
+        {
+          "title": "OnePageCRM Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/one-page-crm/"
+        },
+        {
+          "title": "Salesforce Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/salesforce-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms Event Tracking with Google Analytics (GA4) via Google Tag Manager",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/fluent-forms-event-tracking-with-google-analytics-ga4-via-google-tag-manager/"
+        },
+        {
+          "title": "Fluent Forms Event Tracking with Google Analytics (v3) via Google Tag Manager",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/fluent-forms-event-tracking-with-google-analytics-v3-google-tag-manager/"
+        },
+        {
+          "title": "AffiliateWP Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/affiliatewp-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Setting up Managers in Fluent Forms (Access Control)",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/setting-up-managers-in-fluent-forms-access-control/"
+        },
+        {
+          "title": "CleverReach Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/cleverreach-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "ClickSend SMS Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/clicksend-sms-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Zoho CRM Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/zoho-crm-integration-with-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms Migrator (WPForms, Contact Form 7, Gravity Forms, Ninja Forms & Caldera Forms)",
+          "url": "https://wpmanageninja.com/docs/fluent-form/import-export/fluent-forms-migrator-caldera-forms-ninja-forms-gravity-forms/"
+        },
+        {
+          "title": "Salesflare Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/salesflare-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate hCaptcha in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/how-to-integrate-hcaptcha-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Discord Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/discord-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Change Log",
+          "url": "https://wpmanageninja.com/docs/wppayform/change-log/"
+        },
+        {
+          "title": "FluentCRM",
+          "url": "https://wpmanageninja.com/docs/wppayform/integrations/fluentcrm/"
+        },
+        {
+          "title": "Slack",
+          "url": "https://wpmanageninja.com/docs/wppayform/integrations/slack/"
+        },
+        {
+          "title": "Paystack Settings",
+          "url": "https://wpmanageninja.com/docs/wppayform/payment-settings/paystack-settings/"
+        },
+        {
+          "title": "Razorpay Settings",
+          "url": "https://wpmanageninja.com/docs/wppayform/payment-settings/razorpay-settings/"
+        },
+        {
+          "title": "Mollie Settings",
+          "url": "https://wpmanageninja.com/docs/wppayform/payment-settings/mollie-settings/"
+        },
+        {
+          "title": "Payment Management Settings",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/payment-management-settings/"
+        },
+        {
+          "title": "How to Integrate Paystack with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-integrate-paystack-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to setup Stripe IPN with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-setup-stripe-ipn-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Accept Recurring Payments With Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/accept-recurring-payments-with-wp-fluent-forms-wordpress-plugin/"
+        },
+        {
+          "title": "Google Maps integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/google-maps-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to add Calc Values on the Repeat Field",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/how-to-add-calc-values-on-the-repeat-field/"
+        },
+        {
+          "title": "Email Validation With ClearOut",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/email-validation-with-clearout/"
+        },
+        {
+          "title": "How to Customize a Conversational Form with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-customize-a-conversational-form-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to Create a Conversational Form with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-create-a-conversational-form-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to use Meta Box Custom Fields with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-use-metabox-custom-fields-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate Mollie with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-integrate-mollie-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate RazorPay with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-integrate-razorpay-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate reCAPTCHA V3 Service in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/how-to-integrate-recaptcha-v3-service-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Connecting Fluent Forms from one domain with Fluent CRM to another domain",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/connecting-fluent-forms-from-one-domain-with-fluent-crm-to-another-domain/"
+        },
+        {
+          "title": "Payment is not getting Marked as Paid",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/payment-is-not-getting-marked-as-complete/"
+        },
+        {
+          "title": "How to setup PayPal IPN with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-setup-paypal-ipn-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Sendinblue/Brevo integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/sendinblue-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to add Coupon field to your Payment Form",
+          "url": "https://wpmanageninja.com/docs/wppayform/payment-settings/how-to-add-coupon-field-to-your-payment-form/"
+        },
+        {
+          "title": "Constant Contact Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/constant-contact-v2-integration-with-wp-fluent-form/"
+        },
+        {
+          "title": "FluentCRM integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/fluent-crm-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to create Ninja Charts with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/ninja-charts/types-of-ninja-charts/how-to-create-ninja-charts-with-fluent-forms/"
+        },
+        {
+          "title": "How to create Ninja Charts with Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-charts/types-of-ninja-charts/how-to-create-ninja-charts-with-google-charts/"
+        },
+        {
+          "title": "How to use Data Range picker with Ninja Charts",
+          "url": "https://wpmanageninja.com/docs/ninja-charts/how-to-use-ninja-charts/how-to-use-a-date-range-picker-with-ninja-charts/"
+        },
+        {
+          "title": "How to Render a chart in the Frontend by Shortcode with Ninja Charts",
+          "url": "https://wpmanageninja.com/docs/ninja-charts/how-to-use-ninja-charts/how-to-render-a-chart-in-frontend-by-shortcode-with-ninja-charts/"
+        },
+        {
+          "title": "How to Create a Manual Chart with Ninja Charts",
+          "url": "https://wpmanageninja.com/docs/ninja-charts/how-to-use-ninja-charts/how-to-create-a-manual-chart-with-ninja-charts/"
+        },
+        {
+          "title": "How to Customize any chart with Ninja Charts",
+          "url": "https://wpmanageninja.com/docs/ninja-charts/how-to-use-ninja-charts/how-to-customize-any-chart-with-ninja-charts/"
+        },
+        {
+          "title": "How to Create different type of Charts with Ninja Charts",
+          "url": "https://wpmanageninja.com/docs/ninja-charts/how-to-use-ninja-charts/how-to-create-different-type-of-charts/"
+        },
+        {
+          "title": "How to Install Ninja Charts",
+          "url": "https://wpmanageninja.com/docs/ninja-charts/getting-started-with-ninja-charts/how-to-install-ninja-charts/"
+        },
+        {
+          "title": "Ninja Charts Introduction",
+          "url": "https://wpmanageninja.com/docs/ninja-charts/getting-started-with-ninja-charts/ninja-tables-introduction/"
+        },
+        {
+          "title": "How to Add Coupon Field to your payment form",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-add-coupon-field-to-your-payment-form/"
+        },
+        {
+          "title": "Telegram Messenger Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/telegram-messenger-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Inline Opt-in Form using Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/inline-opt-in-form-using-fluent-forms/"
+        },
+        {
+          "title": "Advanced Form Validation in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/advanced-form-validation-in-wp-fluent-forms-wordpress-plugin/"
+        },
+        {
+          "title": "Mapping Meta Fields with Meta Keys in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/mapping-meta-fields-with-meta-keys-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Conditional Logic on Post Categories",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/conditional-logic-on-post-categories/"
+        },
+        {
+          "title": "Recurring Payment WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/recurring-payment/"
+        },
+        {
+          "title": "Post Selection Module in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/post-selection-input-field/"
+        },
+        {
+          "title": "PayPal IPN Setup",
+          "url": "https://wpmanageninja.com/docs/wppayform/payment-settings/paypal-ipn-setup/"
+        },
+        {
+          "title": "Trello Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/trello-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to use ACF in Post Creation Form",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-use-acf-in-post-creation-form/"
+        },
+        {
+          "title": "Set up Double Opt-in emails in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/set-up-double-opt-in-emails-in-wp-fluent-forms-2/"
+        },
+        {
+          "title": "How to use AzonPress with Classic Editor (Gutenberg Block)",
+          "url": "https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/how-to-use-azonpress-with-gutenberg/"
+        },
+        {
+          "title": "Other Styling Options",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/designing-tables/other/"
+        },
+        {
+          "title": "Phone Field GEO-Location Provider",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/phone-field-geo-location-provider/"
+        },
+        {
+          "title": "Unique Field Validation",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/unique-field-validation/"
+        },
+        {
+          "title": "Conditional Shortcodes in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/conditional-shortcodes-in-email-notifications-form-confirmation/"
+        },
+        {
+          "title": "Automizy Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/automizy-integration-wp-fluent-forms/"
+        },
+        {
+          "title": "Conditional Email Routing",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/conditional-email-routing/"
+        },
+        {
+          "title": "How to Integrate PayPal with WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/payment-settings/paypal-settings/"
+        },
+        {
+          "title": "Stripe Settings in WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/payment-settings/stripe-settings/"
+        },
+        {
+          "title": "How to Configure reCAPTCHA in WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/recaptcha-setting/"
+        },
+        {
+          "title": "Payment Method Fields",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/payment-method-fields/"
+        },
+        {
+          "title": "Form Product Fields- WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/product-fields/"
+        },
+        {
+          "title": "Import/Export WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/getting-started-with-wppayform/import-export-wppayform/"
+        },
+        {
+          "title": "Setting up Admin Email Notifications",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/admin-email-notifications/"
+        },
+        {
+          "title": "Mautic Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/mautic-integration-with-wp-fluent-forms/"
+        },
+        {
+          "title": "All the Entries aggregated from all the Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/view-submitted-form-data-in-wp-fluent-forms/all-the-entries-aggregated-from-all-the-forms/"
+        },
+        {
+          "title": "Introducing the Elementor widget",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/introducing-the-elementor-widget/"
+        },
+        {
+          "title": "Weekly Email Summary",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/weekly-email-summary/"
+        },
+        {
+          "title": "Partial Entries for Step Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/partial-entries-for-step-forms/"
+        },
+        {
+          "title": "Google docs/CSV transformation: Image with light box",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/miscellaneous/google-docs-csv-transformation-image-with-light-box/"
+        },
+        {
+          "title": "Google docs/CSV transformation: hyperlink",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/miscellaneous/google-docs-csv-transformation-hyperlink/"
+        },
+        {
+          "title": "Ninja table calculation row/column",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/miscellaneous/ninja-table-calculation-row-column/"
+        },
+        {
+          "title": "Geo Tracking (Targeting) Settings",
+          "url": "https://wpmanageninja.com/docs/azonpress/setting-up-with-azonpress/configure-custom-geo-targeting-in-azonpress/"
+        },
+        {
+          "title": "PayPal Error: Things don’t appear to be working at the moment",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/paypal-error-things-dont-appear-to-be-working-at-the-moment/"
+        },
+        {
+          "title": "Chained Select in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/chained-select-in-wp-fluent-forms-wordpress-plugin/"
+        },
+        {
+          "title": "Multi-Step Form Automatically Next",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/multi-step-form-automatically-next/"
+        },
+        {
+          "title": "Fluent Forms PDF Module",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/wp-fluent-forms-pdf-module/"
+        },
+        {
+          "title": "File or Image Attachment in Email Notification",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/file-or-image-attachment-in-email-notification/"
+        },
+        {
+          "title": "Dynamic Input Values In Form Steps | Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/dynamic-input-values-in-the-form-steps/"
+        },
+        {
+          "title": "Helper shortcodes available in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/helper-shortcodes-available-in-fluent-forms/"
+        },
+        {
+          "title": "Phone/Mobile Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/phone-number-input-field-in-wp-fluent-forms-wordpress-plugin/"
+        },
+        {
+          "title": "Accept Simple Payments With Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/accept-simple-payments-with-wp-fluent-forms-wordpress-plugin/"
+        },
+        {
+          "title": "How to Create a WordPress User Registration Form With Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-create-a-wordpress-user-registration-form-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Drip Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/wp-fluent-forms-drip-integration/"
+        },
+        {
+          "title": "Akismet Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/wp-fluent-forms-akismet-integration/"
+        },
+        {
+          "title": "How to Integrate Stripe with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-integrate-stripe-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to Integrate PayPal with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/how-to-integrate-paypal-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Configure Payment Settings with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/payment-settings/configure-payment-settings-with-wp-fluent-forms/"
+        },
+        {
+          "title": "How to Resolve “Request Throttled” Error of Amazon API",
+          "url": "https://wpmanageninja.com/docs/azonpress/miscellaneous/error-request-throttled/"
+        },
+        {
+          "title": "Configuring Data Types With Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-data-types-with-ninja-tables/"
+        },
+        {
+          "title": "Creating your First Table",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/create-a-table/"
+        },
+        {
+          "title": "Language Settings",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/language-settings/"
+        },
+        {
+          "title": "Configure Stackable Tables with Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/designing-tables/configure-stackable-tables-with-ninja-tables/"
+        },
+        {
+          "title": "Dedicated Landing Page in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/dedicated-landing-page-fluent-forms/"
+        },
+        {
+          "title": "Post Creation with Form Submission in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/post-creation-with-form-submission/"
+        },
+        {
+          "title": "WPPayForm Auto User Register",
+          "url": "https://wpmanageninja.com/docs/wppayform/frequently-asked-question-for-wppayform/wppayform-auto-user-register/"
+        },
+        {
+          "title": "Official Form Styler of Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/fluent-forms-styles/official-global-styler-wp-fluent-forms/"
+        },
+        {
+          "title": "Surveys and Polls – Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/surveys-and-polls-wp-fluent-forms/"
+        },
+        {
+          "title": "Net Promoter Score in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/net-promoter-score-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Platformly Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/platformly-integration-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Fluent Forms Not Sending Email Confirmations",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/wp-fluent-forms-not-sending-email-confirmations/"
+        },
+        {
+          "title": "Range Slider Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/range-slider-field-wp-fluent-forms/"
+        },
+        {
+          "title": "Signature Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/signature-field-wp-fluent-forms/"
+        },
+        {
+          "title": "Custom Submit Button Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/custom-submit-button-field-wp-fluent-forms/"
+        },
+        {
+          "title": "How to Use Your Forms as Widgets on Your Sidebar or Footer",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/wp-fluent-forms-sidebar-footer-widget/"
+        },
+        {
+          "title": "How to embed your forms directly in Gutenberg layout",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/embed-fluent-forms-gutenberg-block/"
+        },
+        {
+          "title": "How to Create an Inline Form with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/inline-form-wp-fluent-forms/"
+        },
+        {
+          "title": "Google Sheets Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/google-sheet-integration/"
+        },
+        {
+          "title": "CSS Ready Classes for Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/css-ready-classes-for-fluent-forms/"
+        },
+        {
+          "title": "Thrive Architect Compatibility Issue With Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/thrive-architect-compatibility-issue-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Change Log",
+          "url": "https://wpmanageninja.com/docs/fluent-form/change-log/"
+        },
+        {
+          "title": "Modal/Popup/Lightbox – Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/modal-popup-lightbox-wp-fluent-forms/"
+        },
+        {
+          "title": "Translate Datepicker Field of Fluent Forms Plugin",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/translate-datepicker-field-of-wp-fluent-forms-plugin/"
+        },
+        {
+          "title": "How to Import and Export Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/import-export/how-to-import-and-export-wp-fluent-forms/"
+        },
+        {
+          "title": "Import-Export",
+          "url": "https://wpmanageninja.com/docs/fluent-form/import-export/"
+        },
+        {
+          "title": "Spam Protection With Honeypot and Google reCAPTCHA in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/spam-protection-with-honeypot-and-google-recaptcha-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Where do I enter the Fluent Forms License key?",
+          "url": "https://wpmanageninja.com/docs/fluent-form/frequently-asked-questions-for-wp-fluent-forms/where-do-i-enter-fluent-forms-license-key/"
+        },
+        {
+          "title": "How do I find the Fluent Forms License key?",
+          "url": "https://wpmanageninja.com/docs/fluent-form/frequently-asked-questions-for-wp-fluent-forms/how-do-i-find-wp-fluent-forms-license-key/"
+        },
+        {
+          "title": "Gist Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/integrate-gist-with-wp-fluent-forms-wordpress-form-builder-plugin/"
+        },
+        {
+          "title": "Fluent Forms Styling/Custom CSS",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/form-styling-custom-css/"
+        },
+        {
+          "title": "Set Default Form Value from URL Parameters",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/set-default-from-value-from-url-parameters/"
+        },
+        {
+          "title": "Editor | Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/editor/the-wp-fluent-forms-editor/"
+        },
+        {
+          "title": "Edit User Submitted Entries With Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/view-submitted-form-data-in-wp-fluent-forms/edit-user-submitted-entries-with-wp-fluent-forms/"
+        },
+        {
+          "title": "Numeric Calculation in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/calculate-numeric-entities-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Visual Representation of Form Entries in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/view-submitted-form-data-in-wp-fluent-forms/graphical-representation-of-form-entries-in-wp-fluent-forms/"
+        },
+        {
+          "title": "View & Manage Submitted Form Entries",
+          "url": "https://wpmanageninja.com/docs/fluent-form/view-submitted-form-data-in-wp-fluent-forms/view-manage-submitted-form-entries/"
+        },
+        {
+          "title": "View / Manage User Submitted  Data",
+          "url": "https://wpmanageninja.com/docs/fluent-form/view-submitted-form-data-in-wp-fluent-forms/"
+        },
+        {
+          "title": "Twilio Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/twilio-integration-with-wp-fluent-forms-wordpress-form-builder-plugin/"
+        },
+        {
+          "title": "How to Add Fields to Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/how-to-create-a-form-with-wp-fluent-form-wordpress-plugin/"
+        },
+        {
+          "title": "SendFox Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/sendfox-integration-with-wp-fluent-forms-plugin/"
+        },
+        {
+          "title": "Team Profile Information Editing:",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/teams/team-profile-information-editing/"
+        },
+        {
+          "title": "Deleting a Menu Item",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/using-science-x/deleting-a-menu-item/"
+        },
+        {
+          "title": "Choose Menu Specification",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/using-science-x/choose-menu-specification/"
+        },
+        {
+          "title": "ConvertKit Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/convertkit-integration-with-wp-fluent-form-plugin/"
+        },
+        {
+          "title": "HubSpot Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/hubspot-integration-with-wp-fluent-form-wordpress-plugin/"
+        },
+        {
+          "title": "MooSend Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/moosend-integration-with-wp-fluent-form-wordpress-form-builder-plugin/"
+        },
+        {
+          "title": "MailerLite Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/mailerlite-integration-with-wp-fluent-form/"
+        },
+        {
+          "title": "WooCommerce Products Table Using Ninja Table",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/woocommerce-products-table-using-ninja-table/"
+        },
+        {
+          "title": "Custom Post Type Settings",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/custom-post-type-settings/"
+        },
+        {
+          "title": "Widgets",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/widgets/"
+        },
+        {
+          "title": "Teams",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/teams/"
+        },
+        {
+          "title": "Contact Forms Import",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/contact-forms-import/"
+        },
+        {
+          "title": "Elementor Builder",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/short-codes/"
+        },
+        {
+          "title": "Theme Options / Science-X Options",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/theme-options-science-x-options/"
+        },
+        {
+          "title": "Using Permalinks",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/using-permalinks/"
+        },
+        {
+          "title": "General Settings",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/general-settings/"
+        },
+        {
+          "title": "Menu Creation",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/menu-options/menu-creation/"
+        },
+        {
+          "title": "Menus",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/menu-options/"
+        },
+        {
+          "title": "Troubleshooting FAQ",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/troubleshooting-faq/"
+        },
+        {
+          "title": "Creating Blog",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/creating-blog/"
+        },
+        {
+          "title": "Importing Demo Content (Optional)",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/welcome-to-elementor/importing-demo-content-optional/"
+        },
+        {
+          "title": "Choose Menu Specification",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/page-creation/choose-menu-specification/"
+        },
+        {
+          "title": "Page Building",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/using-science-x/page-building/"
+        },
+        {
+          "title": "Using Science-X",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/using-science-x/"
+        },
+        {
+          "title": "Updating Theme",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/welcome-to-elementor/updating-theme/"
+        },
+        {
+          "title": "Installation ( One-Click Demo Import )",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/welcome-to-elementor/installation-one-click-demo-import/"
+        },
+        {
+          "title": "Theme Activation",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/welcome-to-elementor/activate-the-theme/"
+        },
+        {
+          "title": "Installing Science-X",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/welcome-to-elementor/installing-science-x/"
+        },
+        {
+          "title": "Getting Started",
+          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/welcome-to-elementor/"
+        },
+        {
+          "title": "Setting up Email Notifications in WPPayForm WordPress Plugin",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/setting-up-email-notifications-in-wppayform-wordpress-plugin/"
+        },
+        {
+          "title": "Frontend Editing",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/frontend-editing/"
+        },
+        {
+          "title": "Rowspan in Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/rowspan/"
+        },
+        {
+          "title": "Custom CSS / JS in WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/custom-css-js-for-custom-styles-and-scripts-in-wppayform/"
+        },
+        {
+          "title": "Construct Table from Custom SQL",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/integrations/construct-table-from-custom-sql/"
+        },
+        {
+          "title": "Date Formats Customization",
+          "url": "https://wpmanageninja.com/docs/wppayform/frequently-asked-question-for-wppayform/date-formats-customization/"
+        },
+        {
+          "title": "WPPayForm Introduction",
+          "url": "https://wpmanageninja.com/docs/wppayform/getting-started-with-wppayform/wppayform-introduction/"
+        },
+        {
+          "title": "Frequently Asked Questions for WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/frequently-asked-question-for-wppayform/"
+        },
+        {
+          "title": "View Single Submission Data and Managing Payments in WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/managing-form-entries-in-wppayform/view-single-submission-data-and-managing-payments-in-wppayform/"
+        },
+        {
+          "title": "View and Manage all Form Entries in WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/managing-form-entries-in-wppayform/view-and-manage-all-form-entries-in-wppayform/"
+        },
+        {
+          "title": "Form Scheduling and Restriction Settings in WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/form-scheduling-and-restriction-settings-in-wppayform/"
+        },
+        {
+          "title": "Form Design Settings in WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/form-design-settings-in-wppayform/"
+        },
+        {
+          "title": "Custom Currency Settings – WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/custom-currency-settings-wppayform/"
+        },
+        {
+          "title": "Form Confirmation Settings – WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/form-confirmation-settings-wppayform/"
+        },
+        {
+          "title": "General Form Input Fields – WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/form-input-fields-wppayform/"
+        },
+        {
+          "title": "Create your first Payment Form under a minute and accept payments with WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/form-configuration-wppayform/create-your-first-payment-form-under-a-minute-and-accept-payments/"
+        },
+        {
+          "title": "Install and Activate – WPPayForm",
+          "url": "https://wpmanageninja.com/docs/wppayform/getting-started-with-wppayform/install-and-activate-wppayform/"
+        },
+        {
+          "title": "Configure Payment Methods and Currency",
+          "url": "https://wpmanageninja.com/docs/wppayform/getting-started-with-wppayform/configure-payment-methods-and-currency/"
+        },
+        {
+          "title": "Pre-purchase Queries",
+          "url": "https://wpmanageninja.com/docs/azonpress/pre-purchase-questions/"
+        },
+        {
+          "title": "How to Create an Amazon Comparison Table with AzonPress",
+          "url": "https://wpmanageninja.com/docs/azonpress/amazon-comparison-tables/how-to-create-a-comparison-table-with-azonpress/"
+        },
+        {
+          "title": "Product Elements",
+          "url": "https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/product-elements/"
+        },
+        {
+          "title": "BestSeller Lists",
+          "url": "https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/bestseller-templates/"
+        },
+        {
+          "title": "Widget Small Template",
+          "url": "https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/small-widget/"
+        },
+        {
+          "title": "Widget Template",
+          "url": "https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/featured-widget/"
+        },
+        {
+          "title": "Table Template",
+          "url": "https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/table-template/"
+        },
+        {
+          "title": "List Template",
+          "url": "https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/list-template/"
+        },
+        {
+          "title": "Box Template",
+          "url": "https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/box-template/"
+        },
+        {
+          "title": "Grid Template",
+          "url": "https://wpmanageninja.com/docs/azonpress/placing-products-shortcodes/grid-template/"
+        },
+        {
+          "title": "Appearance Settings",
+          "url": "https://wpmanageninja.com/docs/azonpress/miscellaneous/appearance-settings/"
+        },
+        {
+          "title": "Configure Amazon API in AzonPress",
+          "url": "https://wpmanageninja.com/docs/azonpress/setting-up-with-azonpress/configure-api-in-azonpress/"
+        },
+        {
+          "title": "Featured Image",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/wp-posts-table/featured-image/"
+        },
+        {
+          "title": "Post Meta Field",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/wp-posts-table/post-meta-field/"
+        },
+        {
+          "title": "Custom CSS In Product/Comparison Tables",
+          "url": "https://wpmanageninja.com/docs/azonpress/product-tables-module/custom-css-in-product-tables/"
+        },
+        {
+          "title": "Add Columns in Product Tables",
+          "url": "https://wpmanageninja.com/docs/azonpress/product-tables-module/add-columns-in-product-tables/"
+        },
+        {
+          "title": "Customization of Product Tables",
+          "url": "https://wpmanageninja.com/docs/azonpress/product-tables-module/customize-product-tables/"
+        },
+        {
+          "title": "How to Create an Amazon Product Table With AzonPress",
+          "url": "https://wpmanageninja.com/docs/azonpress/product-tables-module/how-to-create-a-product-table-with-azonpress/"
+        },
+        {
+          "title": "How to Install, Activate, and Update the AzonPress",
+          "url": "https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/how-to-install-upgrade-and-activate-license/"
+        },
+        {
+          "title": "Creating Credentials for Amazon Product Advertising API",
+          "url": "https://wpmanageninja.com/docs/azonpress/setting-up-with-azonpress/creating-api-credentials/"
+        },
+        {
+          "title": "AzonPress Introduction",
+          "url": "https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/azonpress-introduction/"
+        },
+        {
+          "title": "Getting Started with AzonPress",
+          "url": "https://wpmanageninja.com/docs/azonpress/getting-started-with-azonpress/"
+        },
+        {
+          "title": "Value Transformation",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/value-transformation/"
+        },
+        {
+          "title": "Advanced Settings",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/advanced-settings/"
+        },
+        {
+          "title": "Designing Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/designing-tables/"
+        },
+        {
+          "title": "Configuring Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/"
+        },
+        {
+          "title": "Getting Started with Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/getting-started-with-ninja-tables/"
+        },
+        {
+          "title": "Advanced Shortcode Usage",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/miscellaneous/advance-shortcode-usage/"
+        },
+        {
+          "title": "Conditional Column Formatting",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/conditional-column-formatting/"
+        },
+        {
+          "title": "Construct Table from Google Sheets",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/integrations/construct-table-from-google-sheets/"
+        },
+        {
+          "title": "Fluent Forms Integration",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/integrations/wp-fluent-form-integration/"
+        },
+        {
+          "title": "Shortcode / Computed Value or HTML in WP Posts Table",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/wp-posts-table/shortcode-computed-value-or-html-in-wp-posts-table/"
+        },
+        {
+          "title": "Custom Column on WP Posts Table",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/wp-posts-table/custom-column-on-wp-posts-table/"
+        },
+        {
+          "title": "ACF Field Integration with Ninja Table Column",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/wp-posts-table/acf-field/"
+        },
+        {
+          "title": "WP Posts / Custom Post Type Integration",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/wp-posts-table/"
+        },
+        {
+          "title": "How to Create IMDb Top Chart Using Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/demo-tables-using-ninja-tables/how-to-create-imdb-top-chart/"
+        },
+        {
+          "title": "Webhook Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/webhook-integration/"
+        },
+        {
+          "title": "Zapier Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/zapier-integration/"
+        },
+        {
+          "title": "iContact Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/icontact-integration/"
+        },
+        {
+          "title": "Campaign Monitor Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/campaign-monitor-integration/"
+        },
+        {
+          "title": "ActiveCampaign Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/activecampaign-integration/"
+        },
+        {
+          "title": "GetResponse integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/getresponse-integration/"
+        },
+        {
+          "title": "User Login Requirement in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/user-login-requirement/"
+        },
+        {
+          "title": "Restrict Blank Form Submission with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/restrict-blank-form-submission/"
+        },
+        {
+          "title": "Error Message Customization with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/error-message/"
+        },
+        {
+          "title": "Help Message Customization in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/miscellaneous/help-message/"
+        },
+        {
+          "title": "Form Scheduling Feature in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/form-scheduling/"
+        },
+        {
+          "title": "Form Restrictions Feature in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/form-restrictions/"
+        },
+        {
+          "title": "Conditional Email Notification in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/conditional-email-notification/"
+        },
+        {
+          "title": "Custom Filters On Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/custom-filters-on-ninja-tables/"
+        },
+        {
+          "title": "Using and Customizing Pre-built Quick Forms in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/pre-built-quick-forms/"
+        },
+        {
+          "title": "Send Users Email Notification with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/send-users-email-notification-wp-fluent-form/"
+        },
+        {
+          "title": "How To Use Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/"
+        },
+        {
+          "title": "Upgrade to Fluent Forms Pro Add-on",
+          "url": "https://wpmanageninja.com/docs/fluent-form/getting-started-wp-fluent-form/upgrade-wp-fluent-form-pro-add-on/"
+        },
+        {
+          "title": "Getting Started with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/getting-started-wp-fluent-form/"
+        },
+        {
+          "title": "Custom Post Type Settings",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/custom-post-type-settings/"
+        },
+        {
+          "title": "Widgets",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/widgets/"
+        },
+        {
+          "title": "Teams",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/teams/"
+        },
+        {
+          "title": "Contact Forms Import",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/contact-forms-import/"
+        },
+        {
+          "title": "Short-codes",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/short-codes/"
+        },
+        {
+          "title": "Theme Options / Science-X Options",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/theme-options-science-x-options/"
+        },
+        {
+          "title": "Using Permalinks",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/using-permalinks/"
+        },
+        {
+          "title": "General Settings",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/general-settings/"
+        },
+        {
+          "title": "Menu Creation",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/menus/menu-creation/"
+        },
+        {
+          "title": "Menus",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/menus/"
+        },
+        {
+          "title": "Child and Parent Theme",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/troubleshooting-faq/child-and-parent-theme/"
+        },
+        {
+          "title": "King Composer",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/troubleshooting-faq/king-composer/"
+        },
+        {
+          "title": "Troubleshooting FAQ",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/troubleshooting-faq/"
+        },
+        {
+          "title": "Date Format",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/creating-blog/date-format/"
+        },
+        {
+          "title": "Blog Posts",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/creating-blog/blog-posts/"
+        },
+        {
+          "title": "Creating Blog",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/creating-blog/"
+        },
+        {
+          "title": "Deleting a Menu Item",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/creating-pages/deleting-a-menu-item/"
+        },
+        {
+          "title": "Choose Menu Specification",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/creating-pages/choose-menu-specification/"
+        },
+        {
+          "title": "Creating Pages",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/creating-pages/"
+        },
+        {
+          "title": "Building Pages",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/using-science-x/building-pages/"
+        },
+        {
+          "title": "Using Science-X",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/using-science-x/"
+        },
+        {
+          "title": "Updating Theme",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/getting-started/updating-theme/"
+        },
+        {
+          "title": "Importing Demo Content (Optional)",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/getting-started/importing-demo-content-optional/"
+        },
+        {
+          "title": "Installation ( One-Click Demo Import )",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/getting-started/installation-one-click-demo-import/"
+        },
+        {
+          "title": "Activate the Theme",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/getting-started/activate-the-theme/"
+        },
+        {
+          "title": "Installing Science-X",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/getting-started/installing-science-x/"
+        },
+        {
+          "title": "Getting Started",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/getting-started/"
+        },
+        {
+          "title": "ScienceX – Multipurpose Education, Researcher & Professor WordPress Theme",
+          "url": "https://wpmanageninja.com/docs/sciencex-multipurpose-education-researcher-professor-wordpress-theme/"
+        },
+        {
+          "title": "Managing Widgets",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/managing-widgets/"
+        },
+        {
+          "title": "Contact Forms Importation",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/contact-forms-import/"
+        },
+        {
+          "title": "Managing Elements",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/elements/"
+        },
+        {
+          "title": "Theme Options / Inspirar Theme Options",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/theme-options-inspirar-theme-options/"
+        },
+        {
+          "title": "Using Permalinks",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/using-permalinks/"
+        },
+        {
+          "title": "General Settings",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/general-settings/"
+        },
+        {
+          "title": "Managing Menus",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/managing-menus/"
+        },
+        {
+          "title": "Troubleshooting FAQ",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/troubleshooting-faq/"
+        },
+        {
+          "title": "Managing Blogs",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/managing-blog/"
+        },
+        {
+          "title": "Using Pages",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/using-pages/"
+        },
+        {
+          "title": "Using Inspirar",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/using-inspirar/"
+        },
+        {
+          "title": "Updating Theme",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/getting-started/updating-theme/"
+        },
+        {
+          "title": "Importing Demo Content (Optional)",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/getting-started/importing-demo-content-optional/"
+        },
+        {
+          "title": "Installation ( One Click Demo Import )",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/getting-started/installation-one-click-demo-import/"
+        },
+        {
+          "title": "Activate the Theme",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/getting-started/activate-the-theme/"
+        },
+        {
+          "title": "Installing Inspirar",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/getting-started/installing-inspirar/"
+        },
+        {
+          "title": "Getting Started",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/getting-started/"
+        },
+        {
+          "title": "Inspirar Pro Multipurpose WordPress Theme",
+          "url": "https://wpmanageninja.com/docs/inspirar-pro-wordpress-theme/"
+        },
+        {
+          "title": "Visual Table Styling",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/designing-tables/visual-table-styling/"
+        },
+        {
+          "title": "Demo: Amazon Product Comparison Table",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/demo-tables-using-ninja-tables/demo-amazon-product-comparison/"
+        },
+        {
+          "title": "How to Create Product Specification Table Using Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/demo-tables-using-ninja-tables/demo-product-specification/"
+        },
+        {
+          "title": "Creating Pricing Table for Divi Theme",
+          "url": "https://wpmanageninja.com/docs/pricing-table-builder/creating-pricing-table-for-divi-theme/"
+        },
+        {
+          "title": "How to Create a Cryptocurrency Table Using Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/demo-tables-using-ninja-tables/demo-cryptocurrency-table/"
+        },
+        {
+          "title": "Table Using with Shortcodes",
+          "url": "https://wpmanageninja.com/docs/pricing-table-builder/table-using/"
+        },
+        {
+          "title": "Featured Content",
+          "url": "https://wpmanageninja.com/docs/pricing-table-builder/featured-content/"
+        },
+        {
+          "title": "ELEMENTS",
+          "url": "https://wpmanageninja.com/docs/pricing-table-builder/configuring-with-the-section/elements/"
+        },
+        {
+          "title": "CONTENTS",
+          "url": "https://wpmanageninja.com/docs/pricing-table-builder/configuring-with-the-section/contents/"
+        },
+        {
+          "title": "STYLE",
+          "url": "https://wpmanageninja.com/docs/pricing-table-builder/configuring-with-the-section/style/"
+        },
+        {
+          "title": "Starting with Pricing Table Builder",
+          "url": "https://wpmanageninja.com/docs/pricing-table-builder/creating-a-table/"
+        },
+        {
+          "title": "Download, Install and Activate the Pricing Table Builder",
+          "url": "https://wpmanageninja.com/docs/pricing-table-builder/download-install-and-activate-the-pricing-table-builder/"
+        },
+        {
+          "title": "How to Create a Pricing Table Using Pricing Table Builder",
+          "url": "https://wpmanageninja.com/docs/pricing-table-builder/creating-pricing-table/"
+        },
+        {
+          "title": "GDPR Agreement Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/gdpr-agreement/"
+        },
+        {
+          "title": "Checkable Grid Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/checkable-grid/"
+        },
+        {
+          "title": "Rows Drag & Drop/ Row Rearrangement with Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/rows-drag-drop-row-rearrangement-with-ninja-tables/"
+        },
+        {
+          "title": "Table Cloning / Duplicate a Table with Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/miscellaneous/table-cloning-duplicate-with-ninja-tables/"
+        },
+        {
+          "title": "Colspan / Cell-merge in Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/colspan-cell-merge-in-ninja-tables/"
+        },
+        {
+          "title": "Conditional Confirmation Message in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/conditional-confirmation-wp-fluent-form/"
+        },
+        {
+          "title": "Multiple Column Containers in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/container/"
+        },
+        {
+          "title": "Ratings Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/ratings/"
+        },
+        {
+          "title": "Creating a Multi-Step Form in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/form-step/"
+        },
+        {
+          "title": "Action Hook Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/action-hook/"
+        },
+        {
+          "title": "Terms & Conditions Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/terms-conditions/"
+        },
+        {
+          "title": "Shortcode Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/shortcode/"
+        },
+        {
+          "title": "Custom HTML Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/custom-html/"
+        },
+        {
+          "title": "reCAPTCHA in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/recaptcha-2/"
+        },
+        {
+          "title": "How to Integrate reCAPTCHA V2 Service in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/recaptcha/"
+        },
+        {
+          "title": "Integrations Available in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/"
+        },
+        {
+          "title": "Advanced Features & Functionalities in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/"
+        },
+        {
+          "title": "Section Break in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/section-break/"
+        },
+        {
+          "title": "Hidden Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/hidden-field/"
+        },
+        {
+          "title": "Repeat Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/repeat-field/"
+        },
+        {
+          "title": "Image Upload Input Field in Fluent Form",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/image-upload/"
+        },
+        {
+          "title": "File Upload Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/file-upload/"
+        },
+        {
+          "title": "Time & Date Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/time-date/"
+        },
+        {
+          "title": "Password Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/password-field/"
+        },
+        {
+          "title": "Website URL Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/website-url/"
+        },
+        {
+          "title": "Multiple Choice Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/multiple-choice/"
+        },
+        {
+          "title": "CheckBox Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/check-box/"
+        },
+        {
+          "title": "Radio Button in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/radio-button/"
+        },
+        {
+          "title": "Dropdown Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/dropdown/"
+        },
+        {
+          "title": "Numeric Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/numeric-field/"
+        },
+        {
+          "title": "Country List Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/country-list/"
+        },
+        {
+          "title": "Address Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/address-fields/"
+        },
+        {
+          "title": "Text Area Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/text-area/"
+        },
+        {
+          "title": "Mask Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/mask-input/"
+        },
+        {
+          "title": "Simple Text Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/simple-text/"
+        },
+        {
+          "title": "Email Address Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/email-address/"
+        },
+        {
+          "title": "Name Input Field in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/name-field/"
+        },
+        {
+          "title": "Field Types",
+          "url": "https://wpmanageninja.com/docs/fluent-form/field-types/"
+        },
+        {
+          "title": "How to Install Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/getting-started-wp-fluent-form/install-wp-fluent-form/"
+        },
+        {
+          "title": "Table color customization by Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/designing-tables/table-color-customization-by-ninja-tables/"
+        },
+        {
+          "title": "T-Managing Amazon Product Listing Table",
+          "url": "https://wpmanageninja.com/docs/blogs/managing-amazon-product-listing-table/"
+        },
+        {
+          "title": "Demo: Amazon Product Listing",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/demo-tables-using-ninja-tables/demo-amazon-product-listing/"
+        },
+        {
+          "title": "Contact Forms",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/contact-forms/"
+        },
+        {
+          "title": "Table Styling and CSS Selectors [Pro]",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/miscellaneous/table-styling-and-css-selectors/"
+        },
+        {
+          "title": "How to Create a League Points Table Using Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/demo-tables-using-ninja-tables/league-points-table-ninja-tables/"
+        },
+        {
+          "title": "Slack Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/slack-integration-fluentform/"
+        },
+        {
+          "title": "Mailchimp Integration with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/mailchimp-integration/"
+        },
+        {
+          "title": "Setting up Admin Email Notifications in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/email-notification/"
+        },
+        {
+          "title": "Set up Forms with Conditional Logic in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/conditional-logic-fluent-form/"
+        },
+        {
+          "title": "Form Layout Settings in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/form-layout-settings/"
+        },
+        {
+          "title": "Set up Form Submission Confirmation Message in Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/submission-confirmation-message/"
+        },
+        {
+          "title": "How to Create a Form with Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/how-to-use-wp-fluent-form/create-fluent-form/"
+        },
+        {
+          "title": "Fluent Forms",
+          "url": "https://wpmanageninja.com/docs/fluent-form/"
+        },
+        {
+          "title": "Widgets",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/widgets/"
+        },
+        {
+          "title": "Shortcodes",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/shortcodes/"
+        },
+        {
+          "title": "Theme Options / simplipro Options",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/theme-options-simplipro-options/"
+        },
+        {
+          "title": "Using permalinks",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/using-permalinks/"
+        },
+        {
+          "title": "General Settings",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/general-settings/"
+        },
+        {
+          "title": "Menus",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/menus/"
+        },
+        {
+          "title": "Troubleshooting FAQ",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/troubleshooting-faq/"
+        },
+        {
+          "title": "Managing Blog With SimpliPro",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/blog/"
+        },
+        {
+          "title": "Managing Pages With SimpliPro",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/pages/"
+        },
+        {
+          "title": "Using simplipro",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/using-simplipro/"
+        },
+        {
+          "title": "Getting Started",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/getting-started/"
+        },
+        {
+          "title": "Simpli Pro WordPress Theme",
+          "url": "https://wpmanageninja.com/docs/simpli-pro-wordpress-theme/"
+        },
+        {
+          "title": "How to Install & Activate the Ninja Tables Plugin",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/getting-started-with-ninja-tables/how-to-install-and-upgrade/"
+        },
+        {
+          "title": "Default Data Filtering (New)",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/miscellaneous/default-data-filtering/"
+        },
+        {
+          "title": "Add / Remove Search or Filter Functionality",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/designing-tables/search-filter-functionality/"
+        },
+        {
+          "title": "Define Permission for Table Users",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/miscellaneous/table-users-permission/"
+        },
+        {
+          "title": "Configure Responsive Breakpoints (Expandable Table) for WordPress Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/configuring-tables/configure-responsive-breakdowns-for-table/"
+        },
+        {
+          "title": "Import Table from TablePress Plugin",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/import-export/import-table-from-table-press-plugin/"
+        },
+        {
+          "title": "Export Data from Ninja Tables",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/import-export/export-data/"
+        },
+        {
+          "title": "Import Table Data from CSV",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/import-export/import-table-data-from-csv/"
+        },
+        {
+          "title": "Ninja Tables Demo: Configure your tables in just a Few Clicks!",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/demo-tables-using-ninja-tables/configure-tables/"
+        },
+        {
+          "title": "Ninja Tables Introduction",
+          "url": "https://wpmanageninja.com/docs/ninja-tables/getting-started-with-ninja-tables/getting-started/"
+        }
+      ]
+    }
+  ]
 }

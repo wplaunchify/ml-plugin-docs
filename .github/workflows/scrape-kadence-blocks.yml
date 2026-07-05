@@ -31,7 +31,7 @@ jobs:
           node scraper.js --slug=kadence-blocks --mode=sitemap \
             --url=https://www.kadencewp.com/help-center/docs/kadence-blocks/ \
             --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml \
-            --selector=.betterdocs-single-content \
+            --selector=.entry-content \
             --name="Kadence Blocks"
 
       - name: Check for changes

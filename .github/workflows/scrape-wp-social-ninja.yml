@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wp Social Ninja scraper
-        run: node scraper.js --slug=wp-social-ninja --mode=wp-api --url=https://wpsocialninja.com/docs/ --post-type=kb_icon --name="WP Social Ninja"
+        run: node scraper.js --slug=wp-social-ninja --mode=sitemap --url=https://docs.wpsocialninja.com/guide/ --selector=.vp-doc --name="WP Social Ninja"
 
       - name: Check for changes
         id: changes

@@ -1,9 +1,1076 @@
 {
   "plugin_slug": "woocommerce-smart-coupons",
   "plugin_name": "WooCommerce Smart Coupons",
-  "documentation_url": "https://woocommerce.com/document/documentation/",
-  "last_scraped": "2026-07-05T07:07:27.295Z",
-  "total_pages": 0,
+  "documentation_url": "https://woocommerce.com/document/smart-coupons/",
+  "last_scraped": "2026-07-05T17:06:18.083Z",
+  "total_pages": 82,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Code Snippets",
+      "slug": "code-snippets",
+      "url": "https://woocommerce.com/document/smart-coupons/code-snippets/",
+      "file": "categories/code-snippets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Code Snippets",
+          "url": "https://woocommerce.com/document/smart-coupons/code-snippets/"
+        }
+      ]
+    },
+    {
+      "title": "Different Ways To Restrict Gift Cards",
+      "slug": "different-ways-to-restrict-gift-cards",
+      "url": "https://woocommerce.com/document/smart-coupons/different-ways-to-restrict-gift-cards/",
+      "file": "categories/different-ways-to-restrict-gift-cards.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Different ways to restrict gift cards",
+          "url": "https://woocommerce.com/document/smart-coupons/different-ways-to-restrict-gift-cards/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add A Countdown Timer To A Coupon",
+      "slug": "how-to-add-a-countdown-timer-to-a-coupon",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-add-a-countdown-timer-to-a-coupon/",
+      "file": "categories/how-to-add-a-countdown-timer-to-a-coupon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add a Countdown Timer to a Coupon",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-add-a-countdown-timer-to-a-coupon/"
+        }
+      ]
+    },
+    {
+      "title": "How To Allow Customers To Pick One Out Of Many Gift Products",
+      "slug": "how-to-allow-customers-to-pick-one-out-of-many-gift-products",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-allow-customers-to-pick-one-out-of-many-gift-products/",
+      "file": "categories/how-to-allow-customers-to-pick-one-out-of-many-gift-products.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to allow customers to pick one out of many gift products",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-allow-customers-to-pick-one-out-of-many-gift-products/"
+        }
+      ]
+    },
+    {
+      "title": "How To Allow Your Customers To Send Gift Coupons",
+      "slug": "how-to-allow-your-customers-to-send-gift-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-allow-your-customers-to-send-gift-coupons/",
+      "file": "categories/how-to-allow-your-customers-to-send-gift-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to allow your customers to send gift coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-allow-your-customers-to-send-gift-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Apply Coupons On Cheapest Costliest Product In Cart",
+      "slug": "how-to-apply-coupons-on-cheapest-costliest-product-in-cart",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-apply-coupons-on-cheapest-costliest-product-in-cart/",
+      "file": "categories/how-to-apply-coupons-on-cheapest-costliest-product-in-cart.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to apply coupons on cheapest / costliest product in cart",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-apply-coupons-on-cheapest-costliest-product-in-cart/"
+        }
+      ]
+    },
+    {
+      "title": "How To Apply Single Or Multiple Coupons On Click Of A Link",
+      "slug": "how-to-apply-single-or-multiple-coupons-on-click-of-a-link",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-apply-single-or-multiple-coupons-on-click-of-a-link/",
+      "file": "categories/how-to-apply-single-or-multiple-coupons-on-click-of-a-link.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "​​URL coupons – how to auto-apply promo coupon codes via a link",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-apply-single-or-multiple-coupons-on-click-of-a-link/"
+        }
+      ]
+    },
+    {
+      "title": "How To Assign Gift Certificates To User",
+      "slug": "how-to-assign-gift-certificates-to-user",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-assign-gift-certificates-to-user/",
+      "file": "categories/how-to-assign-gift-certificates-to-user.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to assign gift certificates to user",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-assign-gift-certificates-to-user/"
+        }
+      ]
+    },
+    {
+      "title": "How To Auto Apply Coupon",
+      "slug": "how-to-auto-apply-coupon",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-auto-apply-coupon/",
+      "file": "categories/how-to-auto-apply-coupon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to auto apply coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-auto-apply-coupon/"
+        }
+      ]
+    },
+    {
+      "title": "How To Auto Apply Tiered Discounts Based On Customers Spending",
+      "slug": "how-to-auto-apply-tiered-discounts-based-on-customers-spending",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-auto-apply-tiered-discounts-based-on-customers-spending/",
+      "file": "categories/how-to-auto-apply-tiered-discounts-based-on-customers-spending.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to auto apply tiered discounts based on customer’s spending",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-auto-apply-tiered-discounts-based-on-customers-spending/"
+        }
+      ]
+    },
+    {
+      "title": "How To Auto Generate Coupons Using Shortcode",
+      "slug": "how-to-auto-generate-coupons-using-shortcode",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-auto-generate-coupons-using-shortcode/",
+      "file": "categories/how-to-auto-generate-coupons-using-shortcode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to auto-generate coupons (using shortcode)",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-auto-generate-coupons-using-shortcode/"
+        }
+      ]
+    },
+    {
+      "title": "How To Block Emails Domains From Applying The Coupon",
+      "slug": "how-to-block-emails-domains-from-applying-the-coupon",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-block-emails-domains-from-applying-the-coupon/",
+      "file": "categories/how-to-block-emails-domains-from-applying-the-coupon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to block emails or domains from applying the coupon",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-block-emails-domains-from-applying-the-coupon/"
+        }
+      ]
+    },
+    {
+      "title": "How To Bulk Generate Coupons",
+      "slug": "how-to-bulk-generate-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-bulk-generate-coupons/",
+      "file": "categories/how-to-bulk-generate-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to bulk generate coupons (WooCommerce coupon code generator)",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-bulk-generate-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Categorize Coupons",
+      "slug": "how-to-categorize-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-categorize-coupons/",
+      "file": "categories/how-to-categorize-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to categorize coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-categorize-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Change Coupon Page Url In My Account",
+      "slug": "how-to-change-coupon-page-url-in-my-account",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-change-coupon-page-url-in-my-account/",
+      "file": "categories/how-to-change-coupon-page-url-in-my-account.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to change coupon page URL/endpoint in My Account",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-change-coupon-page-url-in-my-account/"
+        }
+      ]
+    },
+    {
+      "title": "How To Change Edit The Subject Line Of An Auto Generated Coupon Email",
+      "slug": "how-to-change-edit-the-subject-line-of-an-auto-generated-coupon-email",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-change-edit-the-subject-line-of-an-auto-generated-coupon-email/",
+      "file": "categories/how-to-change-edit-the-subject-line-of-an-auto-generated-coupon-email.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to change/edit the subject line of an auto-generated coupon email",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-change-edit-the-subject-line-of-an-auto-generated-coupon-email/"
+        }
+      ]
+    },
+    {
+      "title": "How To Change Replace And Override Email Template",
+      "slug": "how-to-change-replace-and-override-email-template",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-change-replace-and-override-email-template/",
+      "file": "categories/how-to-change-replace-and-override-email-template.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to change, replace and override email template",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-change-replace-and-override-email-template/"
+        }
+      ]
+    },
+    {
+      "title": "How To Change The Coupon Expiry Date Format Displayed On The Website",
+      "slug": "how-to-change-the-coupon-expiry-date-format-displayed-on-the-website",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-change-the-coupon-expiry-date-format-displayed-on-the-website/",
+      "file": "categories/how-to-change-the-coupon-expiry-date-format-displayed-on-the-website.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to change the coupon expiry date format displayed on the website",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-change-the-coupon-expiry-date-format-displayed-on-the-website/"
+        }
+      ]
+    },
+    {
+      "title": "How To Choose Order Statuses For Coupon Auto Generation",
+      "slug": "how-to-choose-order-statuses-for-coupon-auto-generation",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-choose-order-statuses-for-coupon-auto-generation/",
+      "file": "categories/how-to-choose-order-statuses-for-coupon-auto-generation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Choose Order Status for Auto-generating Coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-choose-order-statuses-for-coupon-auto-generation/"
+        }
+      ]
+    },
+    {
+      "title": "How To Configure Smart Coupons",
+      "slug": "how-to-configure-smart-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-configure-smart-coupons/",
+      "file": "categories/how-to-configure-smart-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to configure Smart Coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-configure-smart-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Copy Coupon Code From Coupon List Page",
+      "slug": "how-to-copy-coupon-code-from-coupon-list-page",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-copy-coupon-code-from-coupon-list-page/",
+      "file": "categories/how-to-copy-coupon-code-from-coupon-list-page.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to copy coupon code from coupon list page",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-copy-coupon-code-from-coupon-list-page/"
+        }
+      ]
+    },
+    {
+      "title": "How To Create A Bogo Coupon Using Presets",
+      "slug": "how-to-create-a-bogo-coupon-using-presets",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-create-a-bogo-coupon-using-presets/",
+      "file": "categories/how-to-create-a-bogo-coupon-using-presets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to create a BOGO coupon using presets",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-create-a-bogo-coupon-using-presets/"
+        }
+      ]
+    },
+    {
+      "title": "How To Create A Woocommerce Bogo Buy One Get One Offer",
+      "slug": "how-to-create-a-woocommerce-bogo-buy-one-get-one-offer",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-create-a-woocommerce-bogo-buy-one-get-one-offer/",
+      "file": "categories/how-to-create-a-woocommerce-bogo-buy-one-get-one-offer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to create a WooCommerce BOGO (Buy One Get One) offer",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-create-a-woocommerce-bogo-buy-one-get-one-offer/"
+        }
+      ]
+    },
+    {
+      "title": "How To Create Coupon For New Users Only",
+      "slug": "how-to-create-coupon-for-new-users-only",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-create-coupon-for-new-users-only/",
+      "file": "categories/how-to-create-coupon-for-new-users-only.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to provide a discount coupon to new users only",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-create-coupon-for-new-users-only/"
+        }
+      ]
+    },
+    {
+      "title": "How To Create Coupons Using Smart Coupons",
+      "slug": "how-to-create-coupons-using-smart-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-create-coupons-using-smart-coupons/",
+      "file": "categories/how-to-create-coupons-using-smart-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to create smart and advanced WooCommerce coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-create-coupons-using-smart-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Customize Coupon Style Smart Coupons",
+      "slug": "how-to-customize-coupon-style-smart-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-customize-coupon-style-smart-coupons/",
+      "file": "categories/how-to-customize-coupon-style-smart-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to customize coupon styles in Smart Coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-customize-coupon-style-smart-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Display A Coupon Code Notice Sitewide",
+      "slug": "how-to-display-a-coupon-code-notice-sitewide",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-display-a-coupon-code-notice-sitewide/",
+      "file": "categories/how-to-display-a-coupon-code-notice-sitewide.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to display a coupon code notice sitewide",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-display-a-coupon-code-notice-sitewide/"
+        }
+      ]
+    },
+    {
+      "title": "How To Display Any Message On Cart After Applying A Coupon",
+      "slug": "how-to-display-any-message-on-cart-after-applying-a-coupon",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-display-any-message-on-cart-after-applying-a-coupon/",
+      "file": "categories/how-to-display-any-message-on-cart-after-applying-a-coupon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Display Any Message on Cart or Checkout Page After Applying a Coupon",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-display-any-message-on-cart-after-applying-a-coupon/"
+        }
+      ]
+    },
+    {
+      "title": "How To Display Available Coupons On Any Page Using Shortcode",
+      "slug": "how-to-display-available-coupons-on-any-page-using-shortcode",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-display-available-coupons-on-any-page-using-shortcode/",
+      "file": "categories/how-to-display-available-coupons-on-any-page-using-shortcode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Display Available Coupons on Any Page (Using Shortcode)",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-display-available-coupons-on-any-page-using-shortcode/"
+        }
+      ]
+    },
+    {
+      "title": "How To Display Product Promotion Messages On Product Pages",
+      "slug": "how-to-display-product-promotion-messages-on-product-pages",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-display-product-promotion-messages-on-product-pages/",
+      "file": "categories/how-to-display-product-promotion-messages-on-product-pages.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to display Product Promotion Messages on Product Pages",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-display-product-promotion-messages-on-product-pages/"
+        }
+      ]
+    },
+    {
+      "title": "How To Display The Products Original And Discounted Prices In The Cart",
+      "slug": "how-to-display-the-products-original-and-discounted-prices-in-the-cart",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-display-the-products-original-and-discounted-prices-in-the-cart/",
+      "file": "categories/how-to-display-the-products-original-and-discounted-prices-in-the-cart.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to display the product’s original and discounted prices in the cart",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-display-the-products-original-and-discounted-prices-in-the-cart/"
+        }
+      ]
+    },
+    {
+      "title": "How To Enable And Customize Coupon Banners",
+      "slug": "how-to-enable-and-customize-coupon-banners",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-enable-and-customize-coupon-banners/",
+      "file": "categories/how-to-enable-and-customize-coupon-banners.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to enable and customize coupon banners",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-enable-and-customize-coupon-banners/"
+        }
+      ]
+    },
+    {
+      "title": "How To Find Or Search Coupons Restricted To Email",
+      "slug": "how-to-find-or-search-coupons-restricted-to-email",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-find-or-search-coupons-restricted-to-email/",
+      "file": "categories/how-to-find-or-search-coupons-restricted-to-email.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Find Coupons Restricted by Email Address",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-find-or-search-coupons-restricted-to-email/"
+        }
+      ]
+    },
+    {
+      "title": "How To Get A Shareable Link Of A Coupon",
+      "slug": "how-to-get-a-shareable-link-of-a-coupon",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-get-a-shareable-link-of-a-coupon/",
+      "file": "categories/how-to-get-a-shareable-link-of-a-coupon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Get a Coupon Shareable Link",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-get-a-shareable-link-of-a-coupon/"
+        }
+      ]
+    },
+    {
+      "title": "How To Gift A Product Via Coupon",
+      "slug": "how-to-gift-a-product-via-coupon",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-gift-a-product-via-coupon/",
+      "file": "categories/how-to-gift-a-product-via-coupon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to offer free gift (free product with purchase)",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-gift-a-product-via-coupon/"
+        }
+      ]
+    },
+    {
+      "title": "How To Give A Sample Product For Free",
+      "slug": "how-to-give-a-sample-product-for-free",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-give-a-sample-product-for-free/",
+      "file": "categories/how-to-give-a-sample-product-for-free.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to give a sample product for free",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-give-a-sample-product-for-free/"
+        }
+      ]
+    },
+    {
+      "title": "How To Give Coupons With Products For Next Order",
+      "slug": "how-to-give-coupons-with-products-for-next-order",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-give-coupons-with-products-for-next-order/",
+      "file": "categories/how-to-give-coupons-with-products-for-next-order.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to link next order coupons to a product",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-give-coupons-with-products-for-next-order/"
+        }
+      ]
+    },
+    {
+      "title": "How To Import Coupons In Bulk Using A Csv File",
+      "slug": "how-to-import-coupons-in-bulk-using-a-csv-file",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-import-coupons-in-bulk-using-a-csv-file/",
+      "file": "categories/how-to-import-coupons-in-bulk-using-a-csv-file.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to import coupons in bulk using a CSV file",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-import-coupons-in-bulk-using-a-csv-file/"
+        }
+      ]
+    },
+    {
+      "title": "How To Make Coupons Visible To Customers On The Website",
+      "slug": "how-to-make-coupons-visible-to-customers-on-the-website",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-make-coupons-visible-to-customers-on-the-website/",
+      "file": "categories/how-to-make-coupons-visible-to-customers-on-the-website.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to make coupons visible to customers on the website",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-make-coupons-visible-to-customers-on-the-website/"
+        }
+      ]
+    },
+    {
+      "title": "How To Migrate Coupons From One Store To Another",
+      "slug": "how-to-migrate-coupons-from-one-store-to-another",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-migrate-coupons-from-one-store-to-another/",
+      "file": "categories/how-to-migrate-coupons-from-one-store-to-another.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to migrate coupons from one store to another",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-migrate-coupons-from-one-store-to-another/"
+        }
+      ]
+    },
+    {
+      "title": "How To Offer Cashback Coupons",
+      "slug": "how-to-offer-cashback-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-offer-cashback-coupons/",
+      "file": "categories/how-to-offer-cashback-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to offer cashback coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-offer-cashback-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Prevent Users From Applying Multiple Coupons",
+      "slug": "how-to-prevent-users-from-applying-multiple-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-prevent-users-from-applying-multiple-coupons/",
+      "file": "categories/how-to-prevent-users-from-applying-multiple-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to prevent users from applying multiple coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-prevent-users-from-applying-multiple-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Print Coupons",
+      "slug": "how-to-print-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-print-coupons/",
+      "file": "categories/how-to-print-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to print coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-print-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Provide Store Credit For A Refund",
+      "slug": "how-to-provide-store-credit-for-a-refund",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-provide-store-credit-for-a-refund/",
+      "file": "categories/how-to-provide-store-credit-for-a-refund.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to provide store credit for a refund",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-provide-store-credit-for-a-refund/"
+        }
+      ]
+    },
+    {
+      "title": "How To Quickly Send Store Credit",
+      "slug": "how-to-quickly-send-store-credit",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-quickly-send-store-credit/",
+      "file": "categories/how-to-quickly-send-store-credit.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to send store credit to customers instantly",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-quickly-send-store-credit/"
+        }
+      ]
+    },
+    {
+      "title": "How To Regenerate And Resend Coupons",
+      "slug": "how-to-regenerate-and-resend-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-regenerate-and-resend-coupons/",
+      "file": "categories/how-to-regenerate-and-resend-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Regenerate and Resend Coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-regenerate-and-resend-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Rename Store Credit",
+      "slug": "how-to-rename-store-credit",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-rename-store-credit/",
+      "file": "categories/how-to-rename-store-credit.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to rename Store Credit",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-rename-store-credit/"
+        }
+      ]
+    },
+    {
+      "title": "How To Restrict A Coupon Based On Product Attributes",
+      "slug": "how-to-restrict-a-coupon-based-on-product-attributes",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-a-coupon-based-on-product-attributes/",
+      "file": "categories/how-to-restrict-a-coupon-based-on-product-attributes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to restrict coupons by product attributes",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-a-coupon-based-on-product-attributes/"
+        }
+      ]
+    },
+    {
+      "title": "How To Restrict Coupon By Country State City And Zip Code",
+      "slug": "how-to-restrict-coupon-by-country-state-city-and-zip-code",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-country-state-city-and-zip-code/",
+      "file": "categories/how-to-restrict-coupon-by-country-state-city-and-zip-code.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to restrict coupons by location — country, state, city and ZIP code",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-country-state-city-and-zip-code/"
+        }
+      ]
+    },
+    {
+      "title": "How To Restrict Coupon By Payment Method",
+      "slug": "how-to-restrict-coupon-by-payment-method",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-payment-method/",
+      "file": "categories/how-to-restrict-coupon-by-payment-method.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to restrict coupons by payment methods",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-payment-method/"
+        }
+      ]
+    },
+    {
+      "title": "How To Restrict Coupon By Product Quantity In Cart",
+      "slug": "how-to-restrict-coupon-by-product-quantity-in-cart",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-product-quantity-in-cart/",
+      "file": "categories/how-to-restrict-coupon-by-product-quantity-in-cart.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to set up quantity discounts (bulk or volume discounts)",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-product-quantity-in-cart/"
+        }
+      ]
+    },
+    {
+      "title": "How To Restrict Coupon By Shipping Method",
+      "slug": "how-to-restrict-coupon-by-shipping-method",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-shipping-method/",
+      "file": "categories/how-to-restrict-coupon-by-shipping-method.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to restrict coupons by shipping methods",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-shipping-method/"
+        }
+      ]
+    },
+    {
+      "title": "How To Restrict Coupon By User Roles",
+      "slug": "how-to-restrict-coupon-by-user-roles",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-user-roles/",
+      "file": "categories/how-to-restrict-coupon-by-user-roles.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to restrict coupons by user roles",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupon-by-user-roles/"
+        }
+      ]
+    },
+    {
+      "title": "How To Restrict Coupons By Product Taxonomy",
+      "slug": "how-to-restrict-coupons-by-product-taxonomy",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupons-by-product-taxonomy/",
+      "file": "categories/how-to-restrict-coupons-by-product-taxonomy.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to restrict coupons by product taxonomy",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupons-by-product-taxonomy/"
+        }
+      ]
+    },
+    {
+      "title": "How To Restrict Coupons To Billing Emails",
+      "slug": "how-to-restrict-coupons-to-billing-emails",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupons-to-billing-emails/",
+      "file": "categories/how-to-restrict-coupons-to-billing-emails.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to restrict coupons to billing emails",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupons-to-billing-emails/"
+        }
+      ]
+    },
+    {
+      "title": "How To Restrict Coupons To Woocommerce Custom Taxonomies",
+      "slug": "how-to-restrict-coupons-to-woocommerce-custom-taxonomies",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupons-to-woocommerce-custom-taxonomies/",
+      "file": "categories/how-to-restrict-coupons-to-woocommerce-custom-taxonomies.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to restrict coupons to WooCommerce custom taxonomies",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-coupons-to-woocommerce-custom-taxonomies/"
+        }
+      ]
+    },
+    {
+      "title": "How To Run A Flash Sale On A Product",
+      "slug": "how-to-run-a-flash-sale-on-a-product",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-run-a-flash-sale-on-a-product/",
+      "file": "categories/how-to-run-a-flash-sale-on-a-product.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to run a flash sale on a product",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-run-a-flash-sale-on-a-product/"
+        }
+      ]
+    },
+    {
+      "title": "How To Schedule Delivery Of Coupon",
+      "slug": "how-to-schedule-delivery-of-coupon",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-schedule-delivery-of-coupon/",
+      "file": "categories/how-to-schedule-delivery-of-coupon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to schedule coupon / store credit delivery",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-schedule-delivery-of-coupon/"
+        }
+      ]
+    },
+    {
+      "title": "How To See Sent Received Coupons",
+      "slug": "how-to-see-sent-received-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-see-sent-received-coupons/",
+      "file": "categories/how-to-see-sent-received-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to view sent/received coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-see-sent-received-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Sell Gift Card At Less Price",
+      "slug": "how-to-sell-gift-card-at-less-price",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-at-less-price/",
+      "file": "categories/how-to-sell-gift-card-at-less-price.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to sell gift cards at a discount",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-at-less-price/"
+        }
+      ]
+    },
+    {
+      "title": "How To Sell Gift Card Of A Fixed Amount",
+      "slug": "how-to-sell-gift-card-of-a-fixed-amount",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-a-fixed-amount/",
+      "file": "categories/how-to-sell-gift-card-of-a-fixed-amount.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to create and sell a fixed-amount gift card",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-a-fixed-amount/"
+        }
+      ]
+    },
+    {
+      "title": "How To Sell Gift Card Of Any Amount",
+      "slug": "how-to-sell-gift-card-of-any-amount",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-any-amount/",
+      "file": "categories/how-to-sell-gift-card-of-any-amount.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to create gift cards in WooCommerce (advanced)",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-any-amount/"
+        }
+      ]
+    },
+    {
+      "title": "How To Sell Gift Card Of Variable But A Fixed Amount",
+      "slug": "how-to-sell-gift-card-of-variable-but-a-fixed-amount",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-variable-but-a-fixed-amount/",
+      "file": "categories/how-to-sell-gift-card-of-variable-but-a-fixed-amount.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to create gift card denominations in WooCommerce",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-variable-but-a-fixed-amount/"
+        }
+      ]
+    },
+    {
+      "title": "How To Set A Max Discount For Percentage Discount Coupon",
+      "slug": "how-to-set-a-max-discount-for-percentage-discount-coupon",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-set-a-max-discount-for-percentage-discount-coupon/",
+      "file": "categories/how-to-set-a-max-discount-for-percentage-discount-coupon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to limit a percentage discount coupon (70% off up to $50)",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-set-a-max-discount-for-percentage-discount-coupon/"
+        }
+      ]
+    },
+    {
+      "title": "How To Set Coupon Code Length For Auto Generated Coupons",
+      "slug": "how-to-set-coupon-code-length-for-auto-generated-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-set-coupon-code-length-for-auto-generated-coupons/",
+      "file": "categories/how-to-set-coupon-code-length-for-auto-generated-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to set coupon code length for auto-generated coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-set-coupon-code-length-for-auto-generated-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Set Expiry Time With The Expiry Date",
+      "slug": "how-to-set-expiry-time-with-the-expiry-date",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-set-expiry-time-with-the-expiry-date/",
+      "file": "categories/how-to-set-expiry-time-with-the-expiry-date.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Set a Coupon Expiry Date and Time",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-set-expiry-time-with-the-expiry-date/"
+        }
+      ]
+    },
+    {
+      "title": "How To Set Up A Buy 2 Get 50 Off Offer",
+      "slug": "how-to-set-up-a-buy-2-get-50-off-offer",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-set-up-a-buy-2-get-50-off-offer/",
+      "file": "categories/how-to-set-up-a-buy-2-get-50-off-offer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to set up a ‘buy 2 get 50% off’ offer",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-set-up-a-buy-2-get-50-off-offer/"
+        }
+      ]
+    },
+    {
+      "title": "How To Set Up A Reminder Email For Expiring Coupons",
+      "slug": "how-to-set-up-a-reminder-email-for-expiring-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-set-up-a-reminder-email-for-expiring-coupons/",
+      "file": "categories/how-to-set-up-a-reminder-email-for-expiring-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to set up a reminder email for expiring coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-set-up-a-reminder-email-for-expiring-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Share Coupons For Signup",
+      "slug": "how-to-share-coupons-for-signup",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-share-coupons-for-signup/",
+      "file": "categories/how-to-share-coupons-for-signup.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to share coupons for signup",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-share-coupons-for-signup/"
+        }
+      ]
+    },
+    {
+      "title": "How To Show An Image On The Email Template",
+      "slug": "how-to-show-an-image-on-the-email-template",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-show-an-image-on-the-email-template/",
+      "file": "categories/how-to-show-an-image-on-the-email-template.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to show an image on the email template",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-show-an-image-on-the-email-template/"
+        }
+      ]
+    },
+    {
+      "title": "How To Show Any Message Coupon Description On A Coupon",
+      "slug": "how-to-show-any-message-coupon-description-on-a-coupon",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-show-any-message-coupon-description-on-a-coupon/",
+      "file": "categories/how-to-show-any-message-coupon-description-on-a-coupon.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to show any message/coupon description on a coupon",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-show-any-message-coupon-description-on-a-coupon/"
+        }
+      ]
+    },
+    {
+      "title": "How To Show Coupons On The Product Page",
+      "slug": "how-to-show-coupons-on-the-product-page",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-show-coupons-on-the-product-page/",
+      "file": "categories/how-to-show-coupons-on-the-product-page.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to show coupons on the product page",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-show-coupons-on-the-product-page/"
+        }
+      ]
+    },
+    {
+      "title": "How To Stack Or Combine Coupons",
+      "slug": "how-to-stack-or-combine-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-stack-or-combine-coupons/",
+      "file": "categories/how-to-stack-or-combine-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to stack or combine coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-stack-or-combine-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "How To Translate Smart Coupons",
+      "slug": "how-to-translate-smart-coupons",
+      "url": "https://woocommerce.com/document/smart-coupons/how-to-translate-smart-coupons/",
+      "file": "categories/how-to-translate-smart-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to translate Smart Coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/how-to-translate-smart-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://woocommerce.com/document/smart-coupons/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Smart Coupons",
+          "url": "https://woocommerce.com/document/smart-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "Quickly Create Gift Cards",
+      "slug": "quickly-create-gift-cards",
+      "url": "https://woocommerce.com/document/smart-coupons/quickly-create-gift-cards/",
+      "file": "categories/quickly-create-gift-cards.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Quickly create Gift Cards",
+          "url": "https://woocommerce.com/document/smart-coupons/quickly-create-gift-cards/"
+        }
+      ]
+    },
+    {
+      "title": "Smart Coupons Compatibility With Paypal Standard",
+      "slug": "smart-coupons-compatibility-with-paypal-standard",
+      "url": "https://woocommerce.com/document/smart-coupons/smart-coupons-compatibility-with-paypal-standard/",
+      "file": "categories/smart-coupons-compatibility-with-paypal-standard.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Smart Coupons compatibility with PayPal Standard for gift cards",
+          "url": "https://woocommerce.com/document/smart-coupons/smart-coupons-compatibility-with-paypal-standard/"
+        }
+      ]
+    },
+    {
+      "title": "Smart Coupons Faqs",
+      "slug": "smart-coupons-faqs",
+      "url": "https://woocommerce.com/document/smart-coupons/smart-coupons-faqs/",
+      "file": "categories/smart-coupons-faqs.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Smart Coupons FAQs",
+          "url": "https://woocommerce.com/document/smart-coupons/smart-coupons-faqs/"
+        }
+      ]
+    },
+    {
+      "title": "Tiered Discounts",
+      "slug": "tiered-discounts",
+      "url": "https://woocommerce.com/document/smart-coupons/tiered-discounts/",
+      "file": "categories/tiered-discounts.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Tiered Discounts",
+          "url": "https://woocommerce.com/document/smart-coupons/tiered-discounts/"
+        }
+      ]
+    },
+    {
+      "title": "Use Case How To Offer Bonus Gift Certificates With Gift Card Purchases",
+      "slug": "use-case-how-to-offer-bonus-gift-certificates-with-gift-card-purchases",
+      "url": "https://woocommerce.com/document/smart-coupons/use-case-how-to-offer-bonus-gift-certificates-with-gift-card-purchases/",
+      "file": "categories/use-case-how-to-offer-bonus-gift-certificates-with-gift-card-purchases.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Use Case: How to offer bonus Gift Certificates with Gift Card purchases",
+          "url": "https://woocommerce.com/document/smart-coupons/use-case-how-to-offer-bonus-gift-certificates-with-gift-card-purchases/"
+        }
+      ]
+    },
+    {
+      "title": "Using Apply Before Tax",
+      "slug": "using-apply-before-tax",
+      "url": "https://woocommerce.com/document/smart-coupons/using-apply-before-tax/",
+      "file": "categories/using-apply-before-tax.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using ‘Apply Before Tax’",
+          "url": "https://woocommerce.com/document/smart-coupons/using-apply-before-tax/"
+        }
+      ]
+    },
+    {
+      "title": "Using Multiple Currencies For Purchasing Gift Cards",
+      "slug": "using-multiple-currencies-for-purchasing-gift-cards",
+      "url": "https://woocommerce.com/document/smart-coupons/using-multiple-currencies-for-purchasing-gift-cards/",
+      "file": "categories/using-multiple-currencies-for-purchasing-gift-cards.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using multiple currencies for purchasing gift cards",
+          "url": "https://woocommerce.com/document/smart-coupons/using-multiple-currencies-for-purchasing-gift-cards/"
+        }
+      ]
+    }
+  ]
 }

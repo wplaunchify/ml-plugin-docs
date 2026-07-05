@@ -2,8 +2,1998 @@
   "plugin_slug": "kadence-blocks",
   "plugin_name": "Kadence Blocks",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-  "last_scraped": "2026-07-05T11:30:59.089Z",
-  "total_pages": 0,
-  "failed_urls_count": 153,
-  "sections": []
+  "last_scraped": "2026-07-05T17:11:42.111Z",
+  "total_pages": 153,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Access The Design Library",
+      "slug": "access-the-design-library",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/access-the-design-library/",
+      "file": "categories/access-the-design-library.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Access the Kadence Design Library",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/access-the-design-library/"
+        }
+      ]
+    },
+    {
+      "title": "Activecampaign Form Adv Block",
+      "slug": "activecampaign-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/activecampaign-form-adv-block/",
+      "file": "categories/activecampaign-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "ActiveCampaign",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/activecampaign-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Add A Full Width Row",
+      "slug": "add-a-full-width-row",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/add-a-full-width-row/",
+      "file": "categories/add-a-full-width-row.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding a Full-width Row",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/add-a-full-width-row/"
+        }
+      ]
+    },
+    {
+      "title": "Add Classes And Ids To Blocks",
+      "slug": "add-classes-and-ids-to-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/add-classes-and-ids-to-blocks/",
+      "file": "categories/add-classes-and-ids-to-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add Custom CSS Classes and HTML IDs to Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/add-classes-and-ids-to-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Add Modify Row Layout Svg Dividers",
+      "slug": "add-modify-row-layout-svg-dividers",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/add-modify-row-layout-svg-dividers/",
+      "file": "categories/add-modify-row-layout-svg-dividers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Modify SVG Dividers in Kadence Row Layout Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/add-modify-row-layout-svg-dividers/"
+        }
+      ]
+    },
+    {
+      "title": "Add Privacy Policy Link To Kadence Form",
+      "slug": "add-privacy-policy-link-to-kadence-form",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/add-privacy-policy-link-to-kadence-form/",
+      "file": "categories/add-privacy-policy-link-to-kadence-form.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Privacy Policy link to Kadence Form",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/add-privacy-policy-link-to-kadence-form/"
+        }
+      ]
+    },
+    {
+      "title": "Adding A Fullwidth Row",
+      "slug": "adding-a-fullwidth-row",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/adding-a-fullwidth-row/",
+      "file": "categories/adding-a-fullwidth-row.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding a Full-width Row",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/adding-a-fullwidth-row/"
+        }
+      ]
+    },
+    {
+      "title": "Adding Old Wireframes Starter Packs And Sections To The New Design Library",
+      "slug": "adding-old-wireframes-starter-packs-and-sections-to-the-new-design-library",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/adding-old-wireframes-starter-packs-and-sections-to-the-new-design-library/",
+      "file": "categories/adding-old-wireframes-starter-packs-and-sections-to-the-new-design-library.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Classic Wireframes, Starter Packs, and Sections to the New Design Library",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/adding-old-wireframes-starter-packs-and-sections-to-the-new-design-library/"
+        }
+      ]
+    },
+    {
+      "title": "Adding Privacy Policy Link To Kadence Form",
+      "slug": "adding-privacy-policy-link-to-kadence-form",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/adding-privacy-policy-link-to-kadence-form/",
+      "file": "categories/adding-privacy-policy-link-to-kadence-form.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Privacy Policy link to Kadence Form",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/adding-privacy-policy-link-to-kadence-form/"
+        }
+      ]
+    },
+    {
+      "title": "Adding Video Backgrounds To Row Layout",
+      "slug": "adding-video-backgrounds-to-row-layout",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/adding-video-backgrounds-to-row-layout/",
+      "file": "categories/adding-video-backgrounds-to-row-layout.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Video Backgrounds to Row Layout",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/adding-video-backgrounds-to-row-layout/"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Header Best Practices",
+      "slug": "advanced-header-best-practices",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-header-best-practices/",
+      "file": "categories/advanced-header-best-practices.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Advanced Header Best Practices",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-header-best-practices/"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Header Navigations",
+      "slug": "advanced-header-navigations",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-header-navigations/",
+      "file": "categories/advanced-header-navigations.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting started with Advanced Header/Navigations",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-header-navigations/"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Icon Block 2",
+      "slug": "advanced-icon-block-2",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-icon-block-2/",
+      "file": "categories/advanced-icon-block-2.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Icon Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-icon-block-2/"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Navigation Sub Menus And Mega Menus",
+      "slug": "advanced-navigation-sub-menus-and-mega-menus",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-navigation-sub-menus-and-mega-menus/",
+      "file": "categories/advanced-navigation-sub-menus-and-mega-menus.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Advanced Navigation Sub Menus and Mega Menus",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-navigation-sub-menus-and-mega-menus/"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Slider Block",
+      "slug": "advanced-slider-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-slider-block/",
+      "file": "categories/advanced-slider-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Advanced Slider",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/advanced-slider-block/"
+        }
+      ]
+    },
+    {
+      "title": "Animate On Scroll Effects",
+      "slug": "animate-on-scroll-effects",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/animate-on-scroll-effects/",
+      "file": "categories/animate-on-scroll-effects.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/animate-on-scroll-effects/"
+        }
+      ]
+    },
+    {
+      "title": "Auto Responder Form Adv Block",
+      "slug": "auto-responder-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/auto-responder-form-adv-block/",
+      "file": "categories/auto-responder-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Forms and Auto Respond Emails",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/auto-responder-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Autoplay Problems In Advanced Slider Gallery Blocks",
+      "slug": "autoplay-problems-in-advanced-slider-gallery-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/autoplay-problems-in-advanced-slider-gallery-blocks/",
+      "file": "categories/autoplay-problems-in-advanced-slider-gallery-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Resolving Autoplay Problems in Advanced Slider/Gallery Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/autoplay-problems-in-advanced-slider-gallery-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Block Controls",
+      "slug": "block-controls",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/block-controls/",
+      "file": "categories/block-controls.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Kadence Block Controls",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/block-controls/"
+        }
+      ]
+    },
+    {
+      "title": "Block Errors When Script Debug Is Enabled",
+      "slug": "block-errors-when-script-debug-is-enabled",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/block-errors-when-script-debug-is-enabled/",
+      "file": "categories/block-errors-when-script-debug-is-enabled.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Blocks Errors when SCRIPT_DEBUG is Enabled",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/block-errors-when-script-debug-is-enabled/"
+        }
+      ]
+    },
+    {
+      "title": "Block Level Custom Css",
+      "slug": "block-level-custom-css",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/block-level-custom-css/",
+      "file": "categories/block-level-custom-css.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Applying Block-Level Custom CSS in Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/block-level-custom-css/"
+        }
+      ]
+    },
+    {
+      "title": "Block Padding And Margin",
+      "slug": "block-padding-and-margin",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/block-padding-and-margin/",
+      "file": "categories/block-padding-and-margin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Padding and Margin in Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/block-padding-and-margin/"
+        }
+      ]
+    },
+    {
+      "title": "Brevo Form Adv Block",
+      "slug": "brevo-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/brevo-form-adv-block/",
+      "file": "categories/brevo-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with Brevo",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/brevo-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Change The Query Loop Adv All Button Text",
+      "slug": "change-the-query-loop-adv-all-button-text",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/change-the-query-loop-adv-all-button-text/",
+      "file": "categories/change-the-query-loop-adv-all-button-text.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Change the Query Loop (Adv) “All” Button Text",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/change-the-query-loop-adv-all-button-text/"
+        }
+      ]
+    },
+    {
+      "title": "Cloudflare Turnstile Form Adv Block",
+      "slug": "cloudflare-turnstile-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/cloudflare-turnstile-form-adv-block/",
+      "file": "categories/cloudflare-turnstile-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Cloudflare Turnstile",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/cloudflare-turnstile-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Configure A Blog List With Post Grid Carousel Block",
+      "slug": "configure-a-blog-list-with-post-grid-carousel-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/configure-a-blog-list-with-post-grid-carousel-block/",
+      "file": "categories/configure-a-blog-list-with-post-grid-carousel-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Post Grid/Carousel Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/configure-a-blog-list-with-post-grid-carousel-block/"
+        }
+      ]
+    },
+    {
+      "title": "Control The Hero Or Title Section Sitewide And Per Page",
+      "slug": "control-the-hero-or-title-section-sitewide-and-per-page",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/control-the-hero-or-title-section-sitewide-and-per-page/",
+      "file": "categories/control-the-hero-or-title-section-sitewide-and-per-page.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Control the Hero or Title Section Sitewide and Per Page in Kadence",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/control-the-hero-or-title-section-sitewide-and-per-page/"
+        }
+      ]
+    },
+    {
+      "title": "Count Up Block",
+      "slug": "count-up-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/count-up-block/",
+      "file": "categories/count-up-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Count Up Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/count-up-block/"
+        }
+      ]
+    },
+    {
+      "title": "Countdown Block",
+      "slug": "countdown-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/countdown-block/",
+      "file": "categories/countdown-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Countdown Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/countdown-block/"
+        }
+      ]
+    },
+    {
+      "title": "Create A Full Screen Landing Page",
+      "slug": "create-a-full-screen-landing-page",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/create-a-full-screen-landing-page/",
+      "file": "categories/create-a-full-screen-landing-page.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Create a Full Screen Landing Page",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/create-a-full-screen-landing-page/"
+        }
+      ]
+    },
+    {
+      "title": "Creating Sticky And Transparent Advanced Headers",
+      "slug": "creating-sticky-and-transparent-advanced-headers",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/creating-sticky-and-transparent-advanced-headers/",
+      "file": "categories/creating-sticky-and-transparent-advanced-headers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Sticky and Transparent Advanced Headers",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/creating-sticky-and-transparent-advanced-headers/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Fonts",
+      "slug": "custom-fonts",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-fonts/",
+      "file": "categories/custom-fonts.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Custom Fonts",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-fonts/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Fonts Kadence Blocks",
+      "slug": "custom-fonts-kadence-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-fonts-kadence-blocks/",
+      "file": "categories/custom-fonts-kadence-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Custom Fonts",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-fonts-kadence-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Icons",
+      "slug": "custom-icons",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-icons/",
+      "file": "categories/custom-icons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Custom SVG Icons with Kadence Blocks Pro",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-icons/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Queries Advanced Query Loop",
+      "slug": "custom-queries-advanced-query-loop",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-advanced-query-loop/",
+      "file": "categories/custom-queries-advanced-query-loop.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Custom Queries for the Advanced Query Loop Block (Filter)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-advanced-query-loop/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Queries For Portfolio Grid Carousel Block",
+      "slug": "custom-queries-for-portfolio-grid-carousel-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-for-portfolio-grid-carousel-block/",
+      "file": "categories/custom-queries-for-portfolio-grid-carousel-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Custom Queries for the Portfolio Grid/Carousel Block (Filter)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-for-portfolio-grid-carousel-block/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Queries For Posts Block",
+      "slug": "custom-queries-for-posts-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-for-posts-block/",
+      "file": "categories/custom-queries-for-posts-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Custom Queries for the Portfolio Grid/Carousel Block (Filter)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-for-posts-block/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Queries Post Grid Carousel Block",
+      "slug": "custom-queries-post-grid-carousel-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-post-grid-carousel-block/",
+      "file": "categories/custom-queries-post-grid-carousel-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Custom Queries for the Portfolio Grid/Carousel Block (Filter)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-post-grid-carousel-block/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Upload Directory Form Adv Block",
+      "slug": "custom-upload-directory-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-upload-directory-form-adv-block/",
+      "file": "categories/custom-upload-directory-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Custom Upload Directory in Kadence Form (Adv) Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-upload-directory-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Design Library Color Palette",
+      "slug": "customize-design-library-color-palette",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/customize-design-library-color-palette/",
+      "file": "categories/customize-design-library-color-palette.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to customize the design library color palette",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/customize-design-library-color-palette/"
+        }
+      ]
+    },
+    {
+      "title": "Customizing The Kadence Blocks Pro Post Grid Carousel Blocks Query To Show Multiple Post Types",
+      "slug": "customizing-the-kadence-blocks-pro-post-grid-carousel-blocks-query-to-show-multiple-post-types",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/customizing-the-kadence-blocks-pro-post-grid-carousel-blocks-query-to-show-multiple-post-types/",
+      "file": "categories/customizing-the-kadence-blocks-pro-post-grid-carousel-blocks-query-to-show-multiple-post-types.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Kadence Blocks Pro Post Grid/Carousel block’s Query to show multiple post types",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/customizing-the-kadence-blocks-pro-post-grid-carousel-blocks-query-to-show-multiple-post-types/"
+        }
+      ]
+    },
+    {
+      "title": "Database Entries Form Adv Block",
+      "slug": "database-entries-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/database-entries-form-adv-block/",
+      "file": "categories/database-entries-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Forms and Database Entries",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/database-entries-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Default Icon Selections",
+      "slug": "default-icon-selections",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/default-icon-selections/",
+      "file": "categories/default-icon-selections.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Blocks Default Icon Selections",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/default-icon-selections/"
+        }
+      ]
+    },
+    {
+      "title": "Define Color Palette",
+      "slug": "define-color-palette",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/define-color-palette/",
+      "file": "categories/define-color-palette.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to define a color Palette with Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/define-color-palette/"
+        }
+      ]
+    },
+    {
+      "title": "Delete Or Remove Block",
+      "slug": "delete-or-remove-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/delete-or-remove-block/",
+      "file": "categories/delete-or-remove-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to delete/remove a Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/delete-or-remove-block/"
+        }
+      ]
+    },
+    {
+      "title": "Display Acf Relationship Fields Query Loop Adv Block",
+      "slug": "display-acf-relationship-fields-query-loop-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/display-acf-relationship-fields-query-loop-adv-block/",
+      "file": "categories/display-acf-relationship-fields-query-loop-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Dynamically Displaying ACF or Metabox Relationships in Query Loop (Adv) blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/display-acf-relationship-fields-query-loop-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Displaying Shortcodes In The Wordpress Editor",
+      "slug": "displaying-shortcodes-in-the-wordpress-editor",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/displaying-shortcodes-in-the-wordpress-editor/",
+      "file": "categories/displaying-shortcodes-in-the-wordpress-editor.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Displaying Shortcodes in the WordPress Editor",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/displaying-shortcodes-in-the-wordpress-editor/"
+        }
+      ]
+    },
+    {
+      "title": "Download Previous Versions Of Kadence Theme And Plugins",
+      "slug": "download-previous-versions-of-kadence-theme-and-plugins",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/download-previous-versions-of-kadence-theme-and-plugins/",
+      "file": "categories/download-previous-versions-of-kadence-theme-and-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Download Previous Versions of the Kadence Theme and Plugins",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/download-previous-versions-of-kadence-theme-and-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "Duplicate Block Styles",
+      "slug": "duplicate-block-styles",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/duplicate-block-styles/",
+      "file": "categories/duplicate-block-styles.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Duplicate and Copy/Paste Block Styles",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/duplicate-block-styles/"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic Content Custom Input And Showing Fields From All Post Types",
+      "slug": "dynamic-content-custom-input-and-showing-fields-from-all-post-types",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/dynamic-content-custom-input-and-showing-fields-from-all-post-types/",
+      "file": "categories/dynamic-content-custom-input-and-showing-fields-from-all-post-types.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Dynamic Content: Custom Input and Showing Fields from all Post Types",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/dynamic-content-custom-input-and-showing-fields-from-all-post-types/"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic Content Show Fields All Post Types",
+      "slug": "dynamic-content-show-fields-all-post-types",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/dynamic-content-show-fields-all-post-types/",
+      "file": "categories/dynamic-content-show-fields-all-post-types.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Dynamic Content: Custom Input and Showing Fields from all Post Types",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/dynamic-content-show-fields-all-post-types/"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic Html Block",
+      "slug": "dynamic-html-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/dynamic-html-block/",
+      "file": "categories/dynamic-html-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Dynamic HTML Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/dynamic-html-block/"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic List Block",
+      "slug": "dynamic-list-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/dynamic-list-block/",
+      "file": "categories/dynamic-list-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using a Dynamic List Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/dynamic-list-block/"
+        }
+      ]
+    },
+    {
+      "title": "Equal Column Heights Row Layout Block",
+      "slug": "equal-column-heights-row-layout-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/equal-column-heights-row-layout-block/",
+      "file": "categories/equal-column-heights-row-layout-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Set Equal Column Heights with the Row Layout Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/equal-column-heights-row-layout-block/"
+        }
+      ]
+    },
+    {
+      "title": "Flexbox Layouts With Section Blocks",
+      "slug": "flexbox-layouts-with-section-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/flexbox-layouts-with-section-blocks/",
+      "file": "categories/flexbox-layouts-with-section-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Use Flexbox Layouts with Section Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/flexbox-layouts-with-section-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Fluentcrm Form Advanced Block",
+      "slug": "fluentcrm-form-advanced-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/fluentcrm-form-advanced-block/",
+      "file": "categories/fluentcrm-form-advanced-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with FluentCRM",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/fluentcrm-form-advanced-block/"
+        }
+      ]
+    },
+    {
+      "title": "Force Reindex Advanced Queries",
+      "slug": "force-reindex-advanced-queries",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/force-reindex-advanced-queries/",
+      "file": "categories/force-reindex-advanced-queries.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Force Reindex Advanced Queries",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/force-reindex-advanced-queries/"
+        }
+      ]
+    },
+    {
+      "title": "Form Adv Block Disallowed Comment Keys",
+      "slug": "form-adv-block-disallowed-comment-keys",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/form-adv-block-disallowed-comment-keys/",
+      "file": "categories/form-adv-block-disallowed-comment-keys.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Block Form (Adv) Spam Using WordPress Disallowed Comment Keys",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/form-adv-block-disallowed-comment-keys/"
+        }
+      ]
+    },
+    {
+      "title": "Form Adv Submit Actions Filter",
+      "slug": "form-adv-submit-actions-filter",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/form-adv-submit-actions-filter/",
+      "file": "categories/form-adv-submit-actions-filter.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Modify the Form (Adv) Submit Actions using a Filter",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/form-adv-submit-actions-filter/"
+        }
+      ]
+    },
+    {
+      "title": "Full Screen Landing Page",
+      "slug": "full-screen-landing-page",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/full-screen-landing-page/",
+      "file": "categories/full-screen-landing-page.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Create a Full Screen Landing Page",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/full-screen-landing-page/"
+        }
+      ]
+    },
+    {
+      "title": "Getting The Most Out Of Navigation Link Blocks",
+      "slug": "getting-the-most-out-of-navigation-link-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/getting-the-most-out-of-navigation-link-blocks/",
+      "file": "categories/getting-the-most-out-of-navigation-link-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting the most out of Navigation Link Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/getting-the-most-out-of-navigation-link-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Gifs And Lottie Animations",
+      "slug": "gifs-and-lottie-animations",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/gifs-and-lottie-animations/",
+      "file": "categories/gifs-and-lottie-animations.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using GIFS and Lottie Animations with Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/gifs-and-lottie-animations/"
+        }
+      ]
+    },
+    {
+      "title": "Google Analytics Form Adv Block",
+      "slug": "google-analytics-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/google-analytics-form-adv-block/",
+      "file": "categories/google-analytics-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Integrate Google Analytics with Kadence Forms",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/google-analytics-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Google Recaptcha Form Adv Block",
+      "slug": "google-recaptcha-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/google-recaptcha-form-adv-block/",
+      "file": "categories/google-recaptcha-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Google reCaptcha",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/google-recaptcha-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Gradient Border Section Block",
+      "slug": "gradient-border-section-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/gradient-border-section-block/",
+      "file": "categories/gradient-border-section-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Set a Gradient Border for the Section block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/gradient-border-section-block/"
+        }
+      ]
+    },
+    {
+      "title": "Hcaptcha Form Adv Block",
+      "slug": "hcaptcha-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/hcaptcha-form-adv-block/",
+      "file": "categories/hcaptcha-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to integrate hCaptcha with Kadence Form (Adv) Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/hcaptcha-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Headers Footers Full Site Editing",
+      "slug": "headers-footers-full-site-editing",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/headers-footers-full-site-editing/",
+      "file": "categories/headers-footers-full-site-editing.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Building Headers and Footers in Full Site Editing with Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/headers-footers-full-site-editing/"
+        }
+      ]
+    },
+    {
+      "title": "Hide Kadence Blocks",
+      "slug": "hide-kadence-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/hide-kadence-blocks/",
+      "file": "categories/hide-kadence-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to hide Kadence blocks via WordPress Gutenberg Preferences",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/hide-kadence-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add Custom Css Classes And Html Ids To Kadence Blocks",
+      "slug": "how-to-add-custom-css-classes-and-html-ids-to-kadence-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-add-custom-css-classes-and-html-ids-to-kadence-blocks/",
+      "file": "categories/how-to-add-custom-css-classes-and-html-ids-to-kadence-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add Custom CSS Classes and HTML IDs to Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-add-custom-css-classes-and-html-ids-to-kadence-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "How To Change The Query Loop Adv All Button Text",
+      "slug": "how-to-change-the-query-loop-adv-all-button-text",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-change-the-query-loop-adv-all-button-text/",
+      "file": "categories/how-to-change-the-query-loop-adv-all-button-text.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Change the Query Loop (Adv) “All” Button Text",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-change-the-query-loop-adv-all-button-text/"
+        }
+      ]
+    },
+    {
+      "title": "How To Control The Kadence Design Library",
+      "slug": "how-to-control-the-kadence-design-library",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-control-the-kadence-design-library/",
+      "file": "categories/how-to-control-the-kadence-design-library.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Access the Kadence Design Library",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-control-the-kadence-design-library/"
+        }
+      ]
+    },
+    {
+      "title": "How To Customize The Design Library Color Palette",
+      "slug": "how-to-customize-the-design-library-color-palette",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-customize-the-design-library-color-palette/",
+      "file": "categories/how-to-customize-the-design-library-color-palette.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to customize the design library color palette",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-customize-the-design-library-color-palette/"
+        }
+      ]
+    },
+    {
+      "title": "How To Define A Color Palette With Kadence Blocks",
+      "slug": "how-to-define-a-color-palette-with-kadence-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-define-a-color-palette-with-kadence-blocks/",
+      "file": "categories/how-to-define-a-color-palette-with-kadence-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to define a color Palette with Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-define-a-color-palette-with-kadence-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "How To Delete Remove A Block",
+      "slug": "how-to-delete-remove-a-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-delete-remove-a-block/",
+      "file": "categories/how-to-delete-remove-a-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to delete/remove a Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-delete-remove-a-block/"
+        }
+      ]
+    },
+    {
+      "title": "How To Design A Post Grid Carousel Using A Kadence Element",
+      "slug": "how-to-design-a-post-grid-carousel-using-a-kadence-element",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-design-a-post-grid-carousel-using-a-kadence-element/",
+      "file": "categories/how-to-design-a-post-grid-carousel-using-a-kadence-element.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Design a Post Grid/Carousel using a Kadence Element",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-design-a-post-grid-carousel-using-a-kadence-element/"
+        }
+      ]
+    },
+    {
+      "title": "How To Download Previous Versions Of The Kadence Theme And Plugins",
+      "slug": "how-to-download-previous-versions-of-the-kadence-theme-and-plugins",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-download-previous-versions-of-the-kadence-theme-and-plugins/",
+      "file": "categories/how-to-download-previous-versions-of-the-kadence-theme-and-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Download Previous Versions of the Kadence Theme and Plugins",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-download-previous-versions-of-the-kadence-theme-and-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "How To Duplicate A Block",
+      "slug": "how-to-duplicate-a-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-duplicate-a-block/",
+      "file": "categories/how-to-duplicate-a-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Duplicate and Copy/Paste Block Styles",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-duplicate-a-block/"
+        }
+      ]
+    },
+    {
+      "title": "How To Force Reindex Advanced Queries",
+      "slug": "how-to-force-reindex-advanced-queries",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-force-reindex-advanced-queries/",
+      "file": "categories/how-to-force-reindex-advanced-queries.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Force Reindex Advanced Queries",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-force-reindex-advanced-queries/"
+        }
+      ]
+    },
+    {
+      "title": "How To Hide Kadence Blocks Via Wordpress Gutenberg Preferences",
+      "slug": "how-to-hide-kadence-blocks-via-wordpress-gutenberg-preferences",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-hide-kadence-blocks-via-wordpress-gutenberg-preferences/",
+      "file": "categories/how-to-hide-kadence-blocks-via-wordpress-gutenberg-preferences.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to hide Kadence blocks via WordPress Gutenberg Preferences",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-hide-kadence-blocks-via-wordpress-gutenberg-preferences/"
+        }
+      ]
+    },
+    {
+      "title": "How To Integrate Google Analytics With Kadence Forms",
+      "slug": "how-to-integrate-google-analytics-with-kadence-forms",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-integrate-google-analytics-with-kadence-forms/",
+      "file": "categories/how-to-integrate-google-analytics-with-kadence-forms.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Integrate Google Analytics with Kadence Forms",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-integrate-google-analytics-with-kadence-forms/"
+        }
+      ]
+    },
+    {
+      "title": "How To Recover A Broken Block",
+      "slug": "how-to-recover-a-broken-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-recover-a-broken-block/",
+      "file": "categories/how-to-recover-a-broken-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Recover a Broken Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-recover-a-broken-block/"
+        }
+      ]
+    },
+    {
+      "title": "How To Use The Kadence Dynamic Html Block",
+      "slug": "how-to-use-the-kadence-dynamic-html-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-use-the-kadence-dynamic-html-block/",
+      "file": "categories/how-to-use-the-kadence-dynamic-html-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Dynamic HTML Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-use-the-kadence-dynamic-html-block/"
+        }
+      ]
+    },
+    {
+      "title": "Image Overlay Block",
+      "slug": "image-overlay-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/image-overlay-block/",
+      "file": "categories/image-overlay-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Image Overlay Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/image-overlay-block/"
+        }
+      ]
+    },
+    {
+      "title": "Image Overlay Quick Start Guide",
+      "slug": "image-overlay-quick-start-guide",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/image-overlay-quick-start-guide/",
+      "file": "categories/image-overlay-quick-start-guide.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Image Overlay Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/image-overlay-quick-start-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Importing Exporting Advanced Headers Navigations",
+      "slug": "importing-exporting-advanced-headers-navigations",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/importing-exporting-advanced-headers-navigations/",
+      "file": "categories/importing-exporting-advanced-headers-navigations.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Importing & Exporting Advanced Headers & Navigations",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/importing-exporting-advanced-headers-navigations/"
+        }
+      ]
+    },
+    {
+      "title": "Insert Shortcodes",
+      "slug": "insert-shortcodes",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/insert-shortcodes/",
+      "file": "categories/insert-shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Displaying Shortcodes in the WordPress Editor",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/insert-shortcodes/"
+        }
+      ]
+    },
+    {
+      "title": "Install Kadence Blocks",
+      "slug": "install-kadence-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/install-kadence-blocks/",
+      "file": "categories/install-kadence-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Installing Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/install-kadence-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Integrating Kadence Forms With Activecampaign",
+      "slug": "integrating-kadence-forms-with-activecampaign",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-activecampaign/",
+      "file": "categories/integrating-kadence-forms-with-activecampaign.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "ActiveCampaign",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-activecampaign/"
+        }
+      ]
+    },
+    {
+      "title": "Integrating Kadence Forms With Fluentcrm",
+      "slug": "integrating-kadence-forms-with-fluentcrm",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-fluentcrm/",
+      "file": "categories/integrating-kadence-forms-with-fluentcrm.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with FluentCRM",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-fluentcrm/"
+        }
+      ]
+    },
+    {
+      "title": "Integrating Kadence Forms With Mailchimp",
+      "slug": "integrating-kadence-forms-with-mailchimp",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-mailchimp/",
+      "file": "categories/integrating-kadence-forms-with-mailchimp.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with Mailchimp",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-mailchimp/"
+        }
+      ]
+    },
+    {
+      "title": "Integrating Kadence Forms With Mailerlite",
+      "slug": "integrating-kadence-forms-with-mailerlite",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-mailerlite/",
+      "file": "categories/integrating-kadence-forms-with-mailerlite.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with Mailerlite",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-mailerlite/"
+        }
+      ]
+    },
+    {
+      "title": "Integrating Kadence Forms With Webhooks",
+      "slug": "integrating-kadence-forms-with-webhooks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-webhooks/",
+      "file": "categories/integrating-kadence-forms-with-webhooks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with Webhooks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-webhooks/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Blocks Default Icon Selections",
+      "slug": "kadence-blocks-default-icon-selections",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-blocks-default-icon-selections/",
+      "file": "categories/kadence-blocks-default-icon-selections.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Blocks Default Icon Selections",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-blocks-default-icon-selections/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Blocks Pexels Integration",
+      "slug": "kadence-blocks-pexels-integration",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-blocks-pexels-integration/",
+      "file": "categories/kadence-blocks-pexels-integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Blocks Pexels Integration",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-blocks-pexels-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Forms And Auto Respond Emails",
+      "slug": "kadence-forms-and-auto-respond-emails",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-forms-and-auto-respond-emails/",
+      "file": "categories/kadence-forms-and-auto-respond-emails.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Forms and Auto Respond Emails",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-forms-and-auto-respond-emails/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Forms And Database Entries",
+      "slug": "kadence-forms-and-database-entries",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-forms-and-database-entries/",
+      "file": "categories/kadence-forms-and-database-entries.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Forms and Database Entries",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-forms-and-database-entries/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Navigation Advanced Block",
+      "slug": "kadence-navigation-advanced-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-navigation-advanced-block/",
+      "file": "categories/kadence-navigation-advanced-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Kadence Navigation Builder",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-navigation-advanced-block/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Navigation Link Block",
+      "slug": "kadence-navigation-link-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-navigation-link-block/",
+      "file": "categories/kadence-navigation-link-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting the most out of Navigation Link Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-navigation-link-block/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Performance",
+      "slug": "kadence-performance",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-performance/",
+      "file": "categories/kadence-performance.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Kadence Performance",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kadence-performance/"
+        }
+      ]
+    },
+    {
+      "title": "Kit Form Adv Block",
+      "slug": "kit-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kit-form-adv-block/",
+      "file": "categories/kit-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with Kit (ConvertKit)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/kit-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Lottie Animation",
+      "slug": "lottie-animation",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/lottie-animation/",
+      "file": "categories/lottie-animation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Lottie Animations Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/lottie-animation/"
+        }
+      ]
+    },
+    {
+      "title": "Mailchimp Form Adv Block",
+      "slug": "mailchimp-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/mailchimp-form-adv-block/",
+      "file": "categories/mailchimp-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with Mailchimp",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/mailchimp-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Mailerlite Form Advanced Block",
+      "slug": "mailerlite-form-advanced-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/mailerlite-form-advanced-block/",
+      "file": "categories/mailerlite-form-advanced-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with Mailerlite",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/mailerlite-form-advanced-block/"
+        }
+      ]
+    },
+    {
+      "title": "Make Top Section Sticky Kadence Blocks",
+      "slug": "make-top-section-sticky-kadence-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/make-top-section-sticky-kadence-blocks/",
+      "file": "categories/make-top-section-sticky-kadence-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Make a Top Section Sticky with Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/make-top-section-sticky-kadence-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Multiple Markers Google Maps Block",
+      "slug": "multiple-markers-google-maps-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/multiple-markers-google-maps-block/",
+      "file": "categories/multiple-markers-google-maps-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add Multiple Markers in the Kadence Google Maps Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/multiple-markers-google-maps-block/"
+        }
+      ]
+    },
+    {
+      "title": "Override Form Email Template",
+      "slug": "override-form-email-template",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/override-form-email-template/",
+      "file": "categories/override-form-email-template.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Override the Kadence Forms Email Template",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/override-form-email-template/"
+        }
+      ]
+    },
+    {
+      "title": "Pexels Integration",
+      "slug": "pexels-integration",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/pexels-integration/",
+      "file": "categories/pexels-integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Blocks Pexels Integration",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/pexels-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Pexels Picker",
+      "slug": "pexels-picker",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/pexels-picker/",
+      "file": "categories/pexels-picker.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Pexels Picker",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/pexels-picker/"
+        }
+      ]
+    },
+    {
+      "title": "Populate Field Values Programmatically Form Adv",
+      "slug": "populate-field-values-programmatically-form-adv",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/populate-field-values-programmatically-form-adv/",
+      "file": "categories/populate-field-values-programmatically-form-adv.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Populate Select, Checkbox, and Radio field option values programmatically in Form (Adv)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/populate-field-values-programmatically-form-adv/"
+        }
+      ]
+    },
+    {
+      "title": "Popup Modal Filters Advanced Query Loops",
+      "slug": "popup-modal-filters-advanced-query-loops",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/popup-modal-filters-advanced-query-loops/",
+      "file": "categories/popup-modal-filters-advanced-query-loops.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to use Popup Modal Filters with Advanced Query Loops",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/popup-modal-filters-advanced-query-loops/"
+        }
+      ]
+    },
+    {
+      "title": "Post Grid Carousel Block",
+      "slug": "post-grid-carousel-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/post-grid-carousel-block/",
+      "file": "categories/post-grid-carousel-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Post Grid/Carousel Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/post-grid-carousel-block/"
+        }
+      ]
+    },
+    {
+      "title": "Prebuilt Layouts",
+      "slug": "prebuilt-layouts",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/prebuilt-layouts/",
+      "file": "categories/prebuilt-layouts.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Prebuilt Layouts",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/prebuilt-layouts/"
+        }
+      ]
+    },
+    {
+      "title": "Progress Bar Block",
+      "slug": "progress-bar-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/progress-bar-block/",
+      "file": "categories/progress-bar-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Progress Bar Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/progress-bar-block/"
+        }
+      ]
+    },
+    {
+      "title": "Recommended Server Resources",
+      "slug": "recommended-server-resources",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/recommended-server-resources/",
+      "file": "categories/recommended-server-resources.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Recommended Server Resources",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/recommended-server-resources/"
+        }
+      ]
+    },
+    {
+      "title": "Recover A Broken Block",
+      "slug": "recover-a-broken-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/recover-a-broken-block/",
+      "file": "categories/recover-a-broken-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Recover a Broken Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/recover-a-broken-block/"
+        }
+      ]
+    },
+    {
+      "title": "Repeater",
+      "slug": "repeater",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/repeater/",
+      "file": "categories/repeater.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Repeater Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/repeater/"
+        }
+      ]
+    },
+    {
+      "title": "Resolving Autoplay Problems In Advanced Slider Gallery Blocks",
+      "slug": "resolving-autoplay-problems-in-advanced-slider-gallery-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/resolving-autoplay-problems-in-advanced-slider-gallery-blocks/",
+      "file": "categories/resolving-autoplay-problems-in-advanced-slider-gallery-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Resolving Autoplay Problems in Advanced Slider/Gallery Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/resolving-autoplay-problems-in-advanced-slider-gallery-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Responsive Breakpoints",
+      "slug": "responsive-breakpoints",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/responsive-breakpoints/",
+      "file": "categories/responsive-breakpoints.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Responsive Breakpoints in Kadence",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/responsive-breakpoints/"
+        }
+      ]
+    },
+    {
+      "title": "Run Javascript After Form Submitted",
+      "slug": "run-javascript-after-form-submitted",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/run-javascript-after-form-submitted/",
+      "file": "categories/run-javascript-after-form-submitted.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Run JavaScript After a Kadence Form is Successfully Submitted (On Event)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/run-javascript-after-form-submitted/"
+        }
+      ]
+    },
+    {
+      "title": "Search Advanced Block",
+      "slug": "search-advanced-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/search-advanced-block/",
+      "file": "categories/search-advanced-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/search-advanced-block/"
+        }
+      ]
+    },
+    {
+      "title": "Set Block Defaults",
+      "slug": "set-block-defaults",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/set-block-defaults/",
+      "file": "categories/set-block-defaults.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting Block Defaults",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/set-block-defaults/"
+        }
+      ]
+    },
+    {
+      "title": "Set Conditions For Form Adv Submissions",
+      "slug": "set-conditions-for-form-adv-submissions",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/set-conditions-for-form-adv-submissions/",
+      "file": "categories/set-conditions-for-form-adv-submissions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How To Set Your Own Conditions for Successful Form (Adv) Submissions",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/set-conditions-for-form-adv-submissions/"
+        }
+      ]
+    },
+    {
+      "title": "Set Custom Widths In Multi Column Row Layout Blocks",
+      "slug": "set-custom-widths-in-multi-column-row-layout-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/set-custom-widths-in-multi-column-row-layout-blocks/",
+      "file": "categories/set-custom-widths-in-multi-column-row-layout-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting custom widths in multi-column Row Layout Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/set-custom-widths-in-multi-column-row-layout-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Set Equal Column Heights With The Row Layout Block",
+      "slug": "set-equal-column-heights-with-the-row-layout-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/set-equal-column-heights-with-the-row-layout-block/",
+      "file": "categories/set-equal-column-heights-with-the-row-layout-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Set Equal Column Heights with the Row Layout Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/set-equal-column-heights-with-the-row-layout-block/"
+        }
+      ]
+    },
+    {
+      "title": "Setting Block Defaults",
+      "slug": "setting-block-defaults",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/setting-block-defaults/",
+      "file": "categories/setting-block-defaults.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting Block Defaults",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/setting-block-defaults/"
+        }
+      ]
+    },
+    {
+      "title": "Setting Custom Widths In Multi Column Row Layout Blocks",
+      "slug": "setting-custom-widths-in-multi-column-row-layout-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/setting-custom-widths-in-multi-column-row-layout-blocks/",
+      "file": "categories/setting-custom-widths-in-multi-column-row-layout-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting custom widths in multi-column Row Layout Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/setting-custom-widths-in-multi-column-row-layout-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Show Multiple Post Types Post Grid Carousel Block",
+      "slug": "show-multiple-post-types-post-grid-carousel-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/show-multiple-post-types-post-grid-carousel-block/",
+      "file": "categories/show-multiple-post-types-post-grid-carousel-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Kadence Blocks Pro Post Grid/Carousel block’s Query to show multiple post types",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/show-multiple-post-types-post-grid-carousel-block/"
+        }
+      ]
+    },
+    {
+      "title": "Showing Events Post Grid Carousel Block",
+      "slug": "showing-events-post-grid-carousel-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/showing-events-post-grid-carousel-block/",
+      "file": "categories/showing-events-post-grid-carousel-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Show Events Using the Kadence Post Grid/Carousel Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/showing-events-post-grid-carousel-block/"
+        }
+      ]
+    },
+    {
+      "title": "Showing Events Using The Kadence Post Grid Carousel Block",
+      "slug": "showing-events-using-the-kadence-post-grid-carousel-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/showing-events-using-the-kadence-post-grid-carousel-block/",
+      "file": "categories/showing-events-using-the-kadence-post-grid-carousel-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Show Events Using the Kadence Post Grid/Carousel Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/showing-events-using-the-kadence-post-grid-carousel-block/"
+        }
+      ]
+    },
+    {
+      "title": "Site Identity Block",
+      "slug": "site-identity-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/site-identity-block/",
+      "file": "categories/site-identity-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Site Identity Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/site-identity-block/"
+        }
+      ]
+    },
+    {
+      "title": "Spacer Divider Block",
+      "slug": "spacer-divider-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/spacer-divider-block/",
+      "file": "categories/spacer-divider-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Spacer/Divider Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/spacer-divider-block/"
+        }
+      ]
+    },
+    {
+      "title": "Split Character Filter Query Loop Adv Block",
+      "slug": "split-character-filter-query-loop-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/split-character-filter-query-loop-adv-block/",
+      "file": "categories/split-character-filter-query-loop-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Query Loop (Adv) Block: Split Character Filter",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/split-character-filter-query-loop-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "Split Content Block",
+      "slug": "split-content-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/split-content-block/",
+      "file": "categories/split-content-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Split Content Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/split-content-block/"
+        }
+      ]
+    },
+    {
+      "title": "Split Content Quick Start Guide",
+      "slug": "split-content-quick-start-guide",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/split-content-quick-start-guide/",
+      "file": "categories/split-content-quick-start-guide.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Split Content Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/split-content-quick-start-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Sticky Transparent Adv Headers",
+      "slug": "sticky-transparent-adv-headers",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/sticky-transparent-adv-headers/",
+      "file": "categories/sticky-transparent-adv-headers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Sticky and Transparent Advanced Headers",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/sticky-transparent-adv-headers/"
+        }
+      ]
+    },
+    {
+      "title": "Table Advanced Block",
+      "slug": "table-advanced-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/table-advanced-block/",
+      "file": "categories/table-advanced-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Table of Contents Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/table-advanced-block/"
+        }
+      ]
+    },
+    {
+      "title": "Testimonial Block",
+      "slug": "testimonial-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/testimonial-block/",
+      "file": "categories/testimonial-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Testimonial Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/testimonial-block/"
+        }
+      ]
+    },
+    {
+      "title": "The Kadence Navigation Builder",
+      "slug": "the-kadence-navigation-builder",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/the-kadence-navigation-builder/",
+      "file": "categories/the-kadence-navigation-builder.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Kadence Navigation Builder",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/the-kadence-navigation-builder/"
+        }
+      ]
+    },
+    {
+      "title": "The Kadence Visual Builder Off Canvas Settings",
+      "slug": "the-kadence-visual-builder-off-canvas-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/the-kadence-visual-builder-off-canvas-settings/",
+      "file": "categories/the-kadence-visual-builder-off-canvas-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Kadence Visual Builder & Off Canvas Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/the-kadence-visual-builder-off-canvas-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Tooltips Kadence Blocks",
+      "slug": "tooltips-kadence-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/tooltips-kadence-blocks/",
+      "file": "categories/tooltips-kadence-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Tooltips with Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/tooltips-kadence-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Kadence Form Adv Email Delivery",
+      "slug": "troubleshoot-kadence-form-adv-email-delivery",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/troubleshoot-kadence-form-adv-email-delivery/",
+      "file": "categories/troubleshoot-kadence-form-adv-email-delivery.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Kadence Form (Adv) Email Delivery",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/troubleshoot-kadence-form-adv-email-delivery/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Query Loop Adv Filters And Search",
+      "slug": "troubleshoot-query-loop-adv-filters-and-search",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/troubleshoot-query-loop-adv-filters-and-search/",
+      "file": "categories/troubleshoot-query-loop-adv-filters-and-search.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Query Loop (Adv) Blocks, Filters, and Search issues",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/troubleshoot-query-loop-adv-filters-and-search/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting Kadence Form Adv Email Delivery",
+      "slug": "troubleshooting-kadence-form-adv-email-delivery",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/troubleshooting-kadence-form-adv-email-delivery/",
+      "file": "categories/troubleshooting-kadence-form-adv-email-delivery.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Kadence Form (Adv) Email Delivery",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/troubleshooting-kadence-form-adv-email-delivery/"
+        }
+      ]
+    },
+    {
+      "title": "Unable To Access Library Database Error",
+      "slug": "unable-to-access-library-database-error",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/unable-to-access-library-database-error/",
+      "file": "categories/unable-to-access-library-database-error.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting the “Error, Unable to access library database, please try re-syncing” error on the Kadence Blocks Design Library",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/unable-to-access-library-database-error/"
+        }
+      ]
+    },
+    {
+      "title": "Using A Dynamic List Block",
+      "slug": "using-a-dynamic-list-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/using-a-dynamic-list-block/",
+      "file": "categories/using-a-dynamic-list-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using a Dynamic List Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/using-a-dynamic-list-block/"
+        }
+      ]
+    },
+    {
+      "title": "Using Advanced Header Navigation Blocks Vs Kadence Theme Header Builder",
+      "slug": "using-advanced-header-navigation-blocks-vs-kadence-theme-header-builder",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/using-advanced-header-navigation-blocks-vs-kadence-theme-header-builder/",
+      "file": "categories/using-advanced-header-navigation-blocks-vs-kadence-theme-header-builder.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Advanced Header / Navigation Blocks vs Kadence Theme Header Builder",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/using-advanced-header-navigation-blocks-vs-kadence-theme-header-builder/"
+        }
+      ]
+    },
+    {
+      "title": "Using Gifs And Lottie Animations With Kadence Blocks",
+      "slug": "using-gifs-and-lottie-animations-with-kadence-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/using-gifs-and-lottie-animations-with-kadence-blocks/",
+      "file": "categories/using-gifs-and-lottie-animations-with-kadence-blocks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using GIFS and Lottie Animations with Kadence Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/using-gifs-and-lottie-animations-with-kadence-blocks/"
+        }
+      ]
+    },
+    {
+      "title": "Variable Font Sizes",
+      "slug": "variable-font-sizes",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/variable-font-sizes/",
+      "file": "categories/variable-font-sizes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Customize the Kadence Blocks Variable Font Sizes (SM, MD, LG, XL, 2XL, and 3XL)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/variable-font-sizes/"
+        }
+      ]
+    },
+    {
+      "title": "Vector Graphic Block",
+      "slug": "vector-graphic-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/vector-graphic-block/",
+      "file": "categories/vector-graphic-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Vector Graphic Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/vector-graphic-block/"
+        }
+      ]
+    },
+    {
+      "title": "Video Backgrounds Row Layout Block",
+      "slug": "video-backgrounds-row-layout-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/video-backgrounds-row-layout-block/",
+      "file": "categories/video-backgrounds-row-layout-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Video Backgrounds to Row Layout",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/video-backgrounds-row-layout-block/"
+        }
+      ]
+    },
+    {
+      "title": "Webhooks Form Adv Block",
+      "slug": "webhooks-form-adv-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/webhooks-form-adv-block/",
+      "file": "categories/webhooks-form-adv-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Kadence Forms with Webhooks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/webhooks-form-adv-block/"
+        }
+      ]
+    },
+    {
+      "title": "White Blank Screens In Editor Or Customizer",
+      "slug": "white-blank-screens-in-editor-or-customizer",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/white-blank-screens-in-editor-or-customizer/",
+      "file": "categories/white-blank-screens-in-editor-or-customizer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting White/Blank Screens in the Editor or Customizer",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/white-blank-screens-in-editor-or-customizer/"
+        }
+      ]
+    },
+    {
+      "title": "Wireframes Starter Packs Sections Design Library",
+      "slug": "wireframes-starter-packs-sections-design-library",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/wireframes-starter-packs-sections-design-library/",
+      "file": "categories/wireframes-starter-packs-sections-design-library.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Classic Wireframes, Starter Packs, and Sections to the New Design Library",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/wireframes-starter-packs-sections-design-library/"
+        }
+      ]
+    }
+  ]
 }

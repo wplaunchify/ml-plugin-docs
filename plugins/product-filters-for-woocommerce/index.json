@@ -2,8 +2,734 @@
   "plugin_slug": "product-filters-for-woocommerce",
   "plugin_name": "Product Filters for WooCommerce",
   "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
-  "last_scraped": "2026-07-05T09:52:19.485Z",
-  "total_pages": 0,
+  "last_scraped": "2026-07-05T17:03:46.153Z",
+  "total_pages": 179,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 179,
+      "pages": [
+        {
+          "title": "Product Filter Design Modification Guide (CSS)",
+          "url": "https://woobewoo.com/documentation/product-filter-design-modification-guide-css/"
+        },
+        {
+          "title": "Filter by Downloadable / Virtual",
+          "url": "https://woobewoo.com/documentation/filter-by-downloadable-virtual/"
+        },
+        {
+          "title": "Filter by Length, Width, Height and Weight",
+          "url": "https://woobewoo.com/documentation/filter-by-length-width-height-and-weight/"
+        },
+        {
+          "title": "Plugin Quick Guide",
+          "url": "https://woobewoo.com/documentation/plugin-quick-guide/"
+        },
+        {
+          "title": "Setting points as a reward for a purchase",
+          "url": "https://woobewoo.com/documentation/setting-points-as-a-reward-for-a-purchase/"
+        },
+        {
+          "title": "User Balance",
+          "url": "https://woobewoo.com/documentation/user-balance/"
+        },
+        {
+          "title": "Activation and stop of the bonus system",
+          "url": "https://woobewoo.com/documentation/activation-and-stop-of-the-bonus-system/"
+        },
+        {
+          "title": "Balance Widget + Shortcode",
+          "url": "https://woobewoo.com/documentation/balance-widget-shortcode/"
+        },
+        {
+          "title": "Rules page",
+          "url": "https://woobewoo.com/documentation/rules-page/"
+        },
+        {
+          "title": "Control of participants by age",
+          "url": "https://woobewoo.com/documentation/control-of-participants-by-age/"
+        },
+        {
+          "title": "Points Value and Auto Conversion",
+          "url": "https://woobewoo.com/documentation/points-value-and-auto-conversion/"
+        },
+        {
+          "title": "Name of Reward Points",
+          "url": "https://woobewoo.com/documentation/name-of-reward-points/"
+        },
+        {
+          "title": "Response time for accruals and promotions",
+          "url": "https://woobewoo.com/documentation/response-time-for-accruals-and-promotions/"
+        },
+        {
+          "title": "Setting the expiration date for purchases",
+          "url": "https://woobewoo.com/documentation/setting-the-expiration-date-for-purchases/"
+        },
+        {
+          "title": "The expiration date for points for promotion / manual accrual",
+          "url": "https://woobewoo.com/documentation/the-expiration-date-for-points-for-promotion-manual-accrual/"
+        },
+        {
+          "title": "Settings Payment for purchases with reward points",
+          "url": "https://woobewoo.com/documentation/settings-payment-for-purchases-with-reward-points/"
+        },
+        {
+          "title": "Refund Settings",
+          "url": "https://woobewoo.com/documentation/refund-settings/"
+        },
+        {
+          "title": "User Balance Widget Design",
+          "url": "https://woobewoo.com/documentation/user-balance-widget-design/"
+        },
+        {
+          "title": "Product Badge Design",
+          "url": "https://woobewoo.com/documentation/product-badge-design/"
+        },
+        {
+          "title": "Cart Size Rewards",
+          "url": "https://woobewoo.com/documentation/cart-size-rewards/"
+        },
+        {
+          "title": "User levels in the Reward System",
+          "url": "https://woobewoo.com/documentation/user-levels-in-the-reward-system/"
+        },
+        {
+          "title": "Setting up a new auto-action company",
+          "url": "https://woobewoo.com/documentation/setting-up-a-new-auto-action-company/"
+        },
+        {
+          "title": "Getting to know the analytics section",
+          "url": "https://woobewoo.com/documentation/getting-to-know-the-analytics-section/"
+        },
+        {
+          "title": "Installation and Activation",
+          "url": "https://woobewoo.com/documentation/installation-and-activation/"
+        },
+        {
+          "title": "Product Filter Statistics",
+          "url": "https://woobewoo.com/documentation/product-filter-statistics/"
+        },
+        {
+          "title": "Why is my WordPress site crashing? Fixes for the Most Common Problems",
+          "url": "https://woobewoo.com/documentation/why-is-my-wordpress-site-crashing-fixes-for-the-most-common-problems/"
+        },
+        {
+          "title": "Floating Mode",
+          "url": "https://woobewoo.com/documentation/floating-mode/"
+        },
+        {
+          "title": "Issue: Displaying all products on category page",
+          "url": "https://woobewoo.com/documentation/shows-all-products-on-category-page/"
+        },
+        {
+          "title": "Synchronizing multiple filters on a page",
+          "url": "https://woobewoo.com/documentation/synchronizing-multiple-filters-on-a-page/"
+        },
+        {
+          "title": "How to Sort Filter Results",
+          "url": "https://woobewoo.com/documentation/how-to-sort-filter-results/"
+        },
+        {
+          "title": "Compatibility with Elementor Addons",
+          "url": "https://woobewoo.com/documentation/compatibility-with-elementor-addons/"
+        },
+        {
+          "title": "Main Plugin Settings",
+          "url": "https://woobewoo.com/documentation/main-plugin-settings/"
+        },
+        {
+          "title": "Category hierarchy display settings",
+          "url": "https://woobewoo.com/documentation/category-hierarchy-display-settings/"
+        },
+        {
+          "title": "How to Enable Currency Switcher for Product Table?",
+          "url": "https://woobewoo.com/documentation/how-to-enable-currency-switcher-for-product-table/"
+        },
+        {
+          "title": "Display Filter with Divi Builder",
+          "url": "https://woobewoo.com/documentation/display-filter-with-divi-builder/"
+        },
+        {
+          "title": "How to Filter WCFM Multiple Vendors\\’ Products?",
+          "url": "https://woobewoo.com/documentation/how-to-filter-wcfm-multiple-vendors-products/"
+        },
+        {
+          "title": "How to Add YITH Quick View to Product Table?",
+          "url": "https://woobewoo.com/documentation/how-to-add-yith-quick-view-to-product-table/"
+        },
+        {
+          "title": "WooCommerce Product Table Import and Export",
+          "url": "https://woobewoo.com/documentation/woocommerce-product-table-import-and-export/"
+        },
+        {
+          "title": "Force theme templates",
+          "url": "https://woobewoo.com/documentation/force-theme-templates/"
+        },
+        {
+          "title": "How to paginate filter results?",
+          "url": "https://woobewoo.com/documentation/is-it-possible-to-paginate-filter-results/"
+        },
+        {
+          "title": "Filter by Custom Meta Field",
+          "url": "https://woobewoo.com/documentation/filter-by-custom-meta-field/"
+        },
+        {
+          "title": "How to use two filters on one page",
+          "url": "https://woobewoo.com/documentation/how-to-use-two-filters-on-one-page/"
+        },
+        {
+          "title": "Filter with Redirect to page",
+          "url": "https://woobewoo.com/documentation/filter-with-redirect-to-page/"
+        },
+        {
+          "title": "How to set a fixed table width",
+          "url": "https://woobewoo.com/documentation/how-to-set-a-fixed-table-width/"
+        },
+        {
+          "title": "Lazy load",
+          "url": "https://woobewoo.com/documentation/lazy-load-2/"
+        },
+        {
+          "title": "Pre-Sorting",
+          "url": "https://woobewoo.com/documentation/pre-sorting-2/"
+        },
+        {
+          "title": "Filter by Brands",
+          "url": "https://woobewoo.com/documentation/filter-by-brands/"
+        },
+        {
+          "title": "Columns and Settings",
+          "url": "https://woobewoo.com/documentation/columns-in-the-product-table/"
+        },
+        {
+          "title": "Can I add product variations as separate products?",
+          "url": "https://woobewoo.com/documentation/can-i-add-product-variations-as-separate-products/"
+        },
+        {
+          "title": "How to create a multiply filter?",
+          "url": "https://woobewoo.com/documentation/how-to-create-a-multiply-filter/"
+        },
+        {
+          "title": "How to create a Product Directory ?",
+          "url": "https://woobewoo.com/documentation/how-to-create-a-product-directory/"
+        },
+        {
+          "title": "Select options in the popup",
+          "url": "https://woobewoo.com/documentation/select-options-in-the-popup-2/"
+        },
+        {
+          "title": "How can I display a product filter on my store page?",
+          "url": "https://woobewoo.com/documentation/how-can-i-display-a-product-filter-on-my-store-page/"
+        },
+        {
+          "title": "How to create Product Filter Accordion ?",
+          "url": "https://woobewoo.com/documentation/how-to-create-product-filter-accordion/"
+        },
+        {
+          "title": "Product filtering by Custom Taxonomy (manually)",
+          "url": "https://woobewoo.com/documentation/product-filtering-by-custom-taxonomy-manually/"
+        },
+        {
+          "title": "How to Filter Products by Colors",
+          "url": "https://woobewoo.com/documentation/how-to-create-product-filter-by-color/"
+        },
+        {
+          "title": "How do I create a dropdown filter?",
+          "url": "https://woobewoo.com/documentation/how-do-i-create-a-dropdown-filter/"
+        },
+        {
+          "title": "Filtering by Custom Taxonomy (Compatible with ACF and CPT Ui plugins)",
+          "url": "https://woobewoo.com/documentation/filtering-by-custom-taxonomy-compatible-with-acf-and-cpt-ui-plugins/"
+        },
+        {
+          "title": "Attribute Filter Settings",
+          "url": "https://woobewoo.com/documentation/attribute-filter-settings/"
+        },
+        {
+          "title": "On sale",
+          "url": "https://woobewoo.com/documentation/filter-on-sale/"
+        },
+        {
+          "title": "Filter “Featured”",
+          "url": "https://woobewoo.com/documentation/featured-filter-settings/"
+        },
+        {
+          "title": "Product tags",
+          "url": "https://woobewoo.com/documentation/product-tags-2/"
+        },
+        {
+          "title": "Product Categories",
+          "url": "https://woobewoo.com/documentation/product-categories-2/"
+        },
+        {
+          "title": "Price Range Filter",
+          "url": "https://woobewoo.com/documentation/price-range-filter-2/"
+        },
+        {
+          "title": "Price Filter",
+          "url": "https://woobewoo.com/documentation/price-product-filter/"
+        },
+        {
+          "title": "Filter Titles Design",
+          "url": "https://woobewoo.com/documentation/filter-title-design/"
+        },
+        {
+          "title": "Buttons Design",
+          "url": "https://woobewoo.com/documentation/buttons-design/"
+        },
+        {
+          "title": "General Filter Design",
+          "url": "https://woobewoo.com/documentation/general-design-tab/"
+        },
+        {
+          "title": "Filter Block Design",
+          "url": "https://woobewoo.com/documentation/filter-block-design/"
+        },
+        {
+          "title": "Content Options",
+          "url": "https://woobewoo.com/documentation/content-options/"
+        },
+        {
+          "title": "Loader Options",
+          "url": "https://woobewoo.com/documentation/loader-options/"
+        },
+        {
+          "title": "Button Options",
+          "url": "https://woobewoo.com/documentation/button-options/"
+        },
+        {
+          "title": "Main Options",
+          "url": "https://woobewoo.com/documentation/options-main-tab/"
+        },
+        {
+          "title": "Media in the Product Table",
+          "url": "https://woobewoo.com/documentation/media-in-the-product-table/"
+        },
+        {
+          "title": "Sort by",
+          "url": "https://woobewoo.com/documentation/sort-by-3/"
+        },
+        {
+          "title": "Translation of WooCommerce Product Table into other languages",
+          "url": "https://woobewoo.com/documentation/translation-of-woocommerce-product-table-into-other-languages/"
+        },
+        {
+          "title": "Translate Plugin and Get Pro version for Free",
+          "url": "https://woobewoo.com/documentation/translate-plugin-and-get-pro-version-for-free/"
+        },
+        {
+          "title": "How can I change / delete the title of columns in a table?",
+          "url": "https://woobewoo.com/documentation/how-can-i-change-delete-the-title-of-columns-in-a-table/"
+        },
+        {
+          "title": "Can you customize the plugin for me?",
+          "url": "https://woobewoo.com/documentation/can-you-customize-the-plugin-for-me/"
+        },
+        {
+          "title": "Can I add custom columns to the product table?",
+          "url": "https://woobewoo.com/documentation/can-i-add-custom-columns-to-the-product-table/"
+        },
+        {
+          "title": "Woo Product Table compatible with Page Builder Plugins?",
+          "url": "https://woobewoo.com/documentation/woo-product-table-compatible-with-page-builder-plugins/"
+        },
+        {
+          "title": "How to Fix Header in the Table?",
+          "url": "https://woobewoo.com/documentation/how-to-fix-header-in-the-tablefaq-ptables/"
+        },
+        {
+          "title": "How to make a Product Table from only a certain category?",
+          "url": "https://woobewoo.com/documentation/how-to-make-a-product-table-from-only-a-certain-category-faq-ptables/"
+        },
+        {
+          "title": "How can I add products to the table?",
+          "url": "https://woobewoo.com/documentation/how-can-i-add-products-to-the-table/"
+        },
+        {
+          "title": "How to use attributes in a WooCommerce product table?",
+          "url": "https://woobewoo.com/documentation/how-to-use-attributes-in-a-woocommerce-product-table-faq-ptables/"
+        },
+        {
+          "title": "Create Your First Product Filter",
+          "url": "https://woobewoo.com/documentation/create-your-first-product-filter/"
+        },
+        {
+          "title": "2. Create Your First Product Table",
+          "url": "https://woobewoo.com/documentation/create-your-first-product-table/"
+        },
+        {
+          "title": "How to sort a filters by drag and drop?",
+          "url": "https://woobewoo.com/documentation/drag-and-drop-builder-wpf/"
+        },
+        {
+          "title": "Filter by Author",
+          "url": "https://woobewoo.com/documentation/author-filter-optionswpf/"
+        },
+        {
+          "title": "Filter Block Height",
+          "url": "https://woobewoo.com/documentation/filter-block-heightwpf/"
+        },
+        {
+          "title": "Customizable Loader icon",
+          "url": "https://woobewoo.com/documentation/customizable-loader-iconwpf/"
+        },
+        {
+          "title": "Filter and Block Width",
+          "url": "https://woobewoo.com/documentation/filter-and-block-widthwpf/"
+        },
+        {
+          "title": "Customizable Filter Title and Description",
+          "url": "https://woobewoo.com/documentation/customizable-filter-title-and-descriptionwpf/"
+        },
+        {
+          "title": "Clear all,Clear block and Filtering Buttons",
+          "url": "https://woobewoo.com/documentation/clear-allclear-block-and-filtering-buttonswpf/"
+        },
+        {
+          "title": "Filtering Button",
+          "url": "https://woobewoo.com/documentation/filtering-buttonwpf/"
+        },
+        {
+          "title": "Enable Ajax",
+          "url": "https://woobewoo.com/documentation/enable-ajax/"
+        },
+        {
+          "title": "Display Selected Parameters",
+          "url": "https://woobewoo.com/documentation/display-selected-parameterswpf/"
+        },
+        {
+          "title": "Set no products found text",
+          "url": "https://woobewoo.com/documentation/customising-the-no-products-found-text-wpf/"
+        },
+        {
+          "title": "Search by Text",
+          "url": "https://woobewoo.com/documentation/search-by-text-optionswpf/"
+        },
+        {
+          "title": "Hide Filters Button and Hide Filter by Title Click",
+          "url": "https://woobewoo.com/documentation/hide-filters-button-and-hide-filter-by-title-click-wpf/"
+        },
+        {
+          "title": "Checked items",
+          "url": "https://woobewoo.com/documentation/checked-items-to-the-top-wpf/"
+        },
+        {
+          "title": "Stock Status Filter",
+          "url": "https://woobewoo.com/documentation/stock-status-filter-optionswpf/"
+        },
+        {
+          "title": "Enable and Setting Overlay",
+          "url": "https://woobewoo.com/documentation/enable-and-setting-overlay/"
+        },
+        {
+          "title": "Full list of WooCommerce Product Filter options",
+          "url": "https://woobewoo.com/documentation/full-list-of-woocommerce-product-filter-options/"
+        },
+        {
+          "title": "Adding Products to a Table",
+          "url": "https://woobewoo.com/documentation/add-products/"
+        },
+        {
+          "title": "Display Filter on Pages",
+          "url": "https://woobewoo.com/documentation/display-only-on-page-wpf/"
+        },
+        {
+          "title": "Category Display and Category Filter",
+          "url": "https://woobewoo.com/documentation/category-display-and-category-filter/"
+        },
+        {
+          "title": "Search by Columns",
+          "url": "https://woobewoo.com/documentation/search-by-columns/"
+        },
+        {
+          "title": "Tag Display and Tag Filter",
+          "url": "https://woobewoo.com/documentation/tag-display-and-tag-filter/"
+        },
+        {
+          "title": "Price Filter Settings",
+          "url": "https://woobewoo.com/documentation/price-filter-settings/"
+        },
+        {
+          "title": "Stock Status Settings",
+          "url": "https://woobewoo.com/documentation/stock-status-settings/"
+        },
+        {
+          "title": "Borders",
+          "url": "https://woobewoo.com/documentation/borders-row-striping/"
+        },
+        {
+          "title": "Highlighting",
+          "url": "https://woobewoo.com/documentation/highlighting/"
+        },
+        {
+          "title": "Multiselect for Filters",
+          "url": "https://woobewoo.com/documentation/multiselect-for-filters/"
+        },
+        {
+          "title": "Table Elements",
+          "url": "https://woobewoo.com/documentation/table-elements/"
+        },
+        {
+          "title": "Custom Table Styles and Design",
+          "url": "https://woobewoo.com/documentation/custom-table-styles-and-design/"
+        },
+        {
+          "title": "Column Widths",
+          "url": "https://woobewoo.com/documentation/product-table-column-widths/"
+        },
+        {
+          "title": "Text Overwriting",
+          "url": "https://woobewoo.com/documentation/text-overwriting/"
+        },
+        {
+          "title": "Product Table on Mobile Devices",
+          "url": "https://woobewoo.com/documentation/product-table-on-mobile-devices/"
+        },
+        {
+          "title": "Product Description Length",
+          "url": "https://woobewoo.com/documentation/product-description-length/"
+        },
+        {
+          "title": "Product Table Columns",
+          "url": "https://woobewoo.com/documentation/product-table-columns/"
+        },
+        {
+          "title": "Print Button",
+          "url": "https://woobewoo.com/documentation/print-button/"
+        },
+        {
+          "title": "Table Loader",
+          "url": "https://woobewoo.com/documentation/table-loader/"
+        },
+        {
+          "title": "Pagination",
+          "url": "https://woobewoo.com/documentation/pagination-2/"
+        },
+        {
+          "title": "3. WooCommerce Product Table – Full list of options",
+          "url": "https://woobewoo.com/documentation/woocommerce-product-table-full-list-of-options/"
+        },
+        {
+          "title": "How to show a quantity of input in the product table",
+          "url": "https://woobewoo.com/documentation/how-to-show-a-quantity-picker-in-the-product-table/"
+        },
+        {
+          "title": "How to sell by weight?",
+          "url": "https://woobewoo.com/documentation/how-to-sell-by-weight/"
+        },
+        {
+          "title": "Thumbnail Size",
+          "url": "https://woobewoo.com/documentation/thumbnail-size/"
+        },
+        {
+          "title": "Show variation description",
+          "url": "https://woobewoo.com/documentation/show-variation-description/"
+        },
+        {
+          "title": "Custom attributes converter",
+          "url": "https://woobewoo.com/documentation/custom-attributes-converter/"
+        },
+        {
+          "title": "Buy button design",
+          "url": "https://woobewoo.com/documentation/buy-button-design-2/"
+        },
+        {
+          "title": "Help us to solve your problem faster",
+          "url": "https://woobewoo.com/documentation/help-us-to-solve-your-problem-faster/"
+        },
+        {
+          "title": "Show variation price in price column",
+          "url": "https://woobewoo.com/documentation/show-variation-price-in-price-column/"
+        },
+        {
+          "title": "Show the first variation as default",
+          "url": "https://woobewoo.com/documentation/show-first-variation-as-default/"
+        },
+        {
+          "title": "Show variation thumbnails",
+          "url": "https://woobewoo.com/documentation/show-variation-thumbnails/"
+        },
+        {
+          "title": "How to display sales of the products",
+          "url": "https://woobewoo.com/documentation/how-to-display-sales-of-the-products/"
+        },
+        {
+          "title": "How to Configure CSS for Product Table?",
+          "url": "https://woobewoo.com/documentation/css-for-product-table/"
+        },
+        {
+          "title": "How to Configure CSS for Product Filter?",
+          "url": "https://woobewoo.com/documentation/how-to-configure-css/"
+        },
+        {
+          "title": "How to create Horizontal Product Filter",
+          "url": "https://woobewoo.com/documentation/how-to-create-horizontal-product-filter/"
+        },
+        {
+          "title": "WooCommerce Popup Notification Main Settings",
+          "url": "https://woobewoo.com/documentation/woocommerce-popup-notification-main-settings/"
+        },
+        {
+          "title": "How to add custom taxonomy (Custom Post Type UI)",
+          "url": "https://woobewoo.com/documentation/how-to-add-custom-taxonomy-to-the-table/"
+        },
+        {
+          "title": "Getting Started with WooCommerce Popup Notifications",
+          "url": "https://woobewoo.com/documentation/woocommerce-popup-notifications-getting-started/"
+        },
+        {
+          "title": "How to add custom fields to the table (ACF)",
+          "url": "https://woobewoo.com/documentation/how-to-add-custom-fields-to-the-table/"
+        },
+        {
+          "title": "Variable products and settings",
+          "url": "https://woobewoo.com/documentation/variable-products-and-settings/"
+        },
+        {
+          "title": "Show Private products",
+          "url": "https://woobewoo.com/documentation/private-products/"
+        },
+        {
+          "title": "How to translate WordPress plugin?",
+          "url": "https://woobewoo.com/documentation/how-to-translate-wordpress-plugin/"
+        },
+        {
+          "title": "Change currency at checkout",
+          "url": "https://woobewoo.com/documentation/change-currency-at-checkout/"
+        },
+        {
+          "title": "Show Count",
+          "url": "https://woobewoo.com/documentation/show-count-option/"
+        },
+        {
+          "title": "Product rating settings and filtering",
+          "url": "https://woobewoo.com/documentation/product-rating-settings-and-filtering/"
+        },
+        {
+          "title": "Product categories settings and filtering",
+          "url": "https://woobewoo.com/documentation/product-categories-settings-filtering/"
+        },
+        {
+          "title": "Show and Hide Cents",
+          "url": "https://woobewoo.com/documentation/show-and-hide-cents/"
+        },
+        {
+          "title": "Currency Rates mode",
+          "url": "https://woobewoo.com/documentation/currency-rates-mode/"
+        },
+        {
+          "title": "Currency Converter mode",
+          "url": "https://woobewoo.com/documentation/currency-converter-mode/"
+        },
+        {
+          "title": "Currency Tooltip mode",
+          "url": "https://woobewoo.com/documentation/currency-tooltip-mode/"
+        },
+        {
+          "title": "Currency Switcher mode",
+          "url": "https://woobewoo.com/documentation/currency-switcher-mode/"
+        },
+        {
+          "title": "Geo IP rules",
+          "url": "https://woobewoo.com/documentation/geo-ip-rules/"
+        },
+        {
+          "title": "How to add Currency Switcher to the website",
+          "url": "https://woobewoo.com/documentation/add-currency-switcher/"
+        },
+        {
+          "title": "How to add WooCommerce product filter to the shop?",
+          "url": "https://woobewoo.com/documentation/how-to-add-woocommerce-product-filter-to-shop/"
+        },
+        {
+          "title": "Add to cart button and variations",
+          "url": "https://woobewoo.com/documentation/add-to-cart-button-and-variations/"
+        },
+        {
+          "title": "Product Table Appearance Settings",
+          "url": "https://woobewoo.com/documentation/appearance-settings/"
+        },
+        {
+          "title": "Searching",
+          "url": "https://woobewoo.com/documentation/searching-feature-of-product-table/"
+        },
+        {
+          "title": "Sorting",
+          "url": "https://woobewoo.com/documentation/sorting-product-table/"
+        },
+        {
+          "title": "How to display Product attribute and category filter",
+          "url": "https://woobewoo.com/documentation/product-attribute-and-category-filters/"
+        },
+        {
+          "title": "How to add a Product Table to a page",
+          "url": "https://woobewoo.com/documentation/how-to-add-a-product-table-to-a-page/"
+        },
+        {
+          "title": "Table Content Settings",
+          "url": "https://woobewoo.com/documentation/table-content/"
+        },
+        {
+          "title": "Getting Started with WooCommerce Currency Switcher",
+          "url": "https://woobewoo.com/documentation/woocommerce-currency-switcher-plugin/"
+        },
+        {
+          "title": "Currency Switcher Main Settings",
+          "url": "https://woobewoo.com/documentation/currency-main-settings/"
+        },
+        {
+          "title": "Main Settings",
+          "url": "https://woobewoo.com/documentation/main-settings-comparison/"
+        },
+        {
+          "title": "Getting Started with WooCommerce Product Comparison Plugin",
+          "url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-product-comparison-plugin/"
+        },
+        {
+          "title": "WooCommerce Product Filter Main Settings",
+          "url": "https://woobewoo.com/documentation/woocommerce-filter-main-settings/"
+        },
+        {
+          "title": "Getting Started with Product Filter Plugin",
+          "url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/"
+        },
+        {
+          "title": "Product Table Settings",
+          "url": "https://woobewoo.com/documentation/woocommerce-product-plugin-settings/"
+        },
+        {
+          "title": "1. Installing WooCommerce Product Table",
+          "url": "https://woobewoo.com/documentation/getting-started-woocommerce-product-table/"
+        },
+        {
+          "title": "Migrating tables – Export and Import",
+          "url": "https://woobewoo.com/documentation/migrating-tables-export-and-import/"
+        },
+        {
+          "title": "Is my table responsive?",
+          "url": "https://woobewoo.com/documentation/is-my-table-responsive/"
+        },
+        {
+          "title": "Button Color Changing",
+          "url": "https://woobewoo.com/documentation/button-color-changing/"
+        },
+        {
+          "title": "Main Settings",
+          "url": "https://woobewoo.com/documentation/main-settings-pricing/"
+        },
+        {
+          "title": "Get Pro version for Free!",
+          "url": "https://woobewoo.com/documentation/translation/"
+        },
+        {
+          "title": "Getting Started with WooCommerce Product Pricing Table",
+          "url": "https://woobewoo.com/documentation/getting-started-pricing-table/"
+        }
+      ]
+    }
+  ]
 }

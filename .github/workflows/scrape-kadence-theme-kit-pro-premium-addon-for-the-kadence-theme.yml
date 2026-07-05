@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Theme Kit Pro Premium Addon For The Kadence Theme scraper
-        run: node scraper.js --slug=kadence-theme-kit-pro-premium-addon-for-the-kadence-theme --mode=wp-api --url=https://www.kadencewp.com/help-center/ --post-type=kb_icon --name="Kadence Theme Kit Pro - Premium addon for the Kadence Theme"
+        run: node scraper.js --slug=kadence-theme-kit-pro-premium-addon-for-the-kadence-theme --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-theme/ --selector=.entry-content --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Theme Kit Pro - Premium addon for the Kadence Theme"
 
       - name: Check for changes
         id: changes

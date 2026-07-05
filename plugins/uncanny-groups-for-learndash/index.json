@@ -2,8 +2,338 @@
   "plugin_slug": "uncanny-groups-for-learndash",
   "plugin_name": "Uncanny Groups for LearnDash",
   "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-  "last_scraped": "2026-07-05T13:31:30.435Z",
-  "total_pages": 0,
+  "last_scraped": "2026-07-05T17:03:58.363Z",
+  "total_pages": 80,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://www.uncannyowl.com/knowledge-base/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 80,
+      "pages": [
+        {
+          "title": "Use Case: Selling Accredited & Continuing Education Courses",
+          "url": "https://www.uncannyowl.com/knowledge-base/use-case-selling-accredited-continuing-education-courses/"
+        },
+        {
+          "title": "Use Case: Continuing Education for Professional Associations",
+          "url": "https://www.uncannyowl.com/knowledge-base/use-case-continuing-education-for-professional-associations/"
+        },
+        {
+          "title": "Use Case: Compliance & Recertification Training",
+          "url": "https://www.uncannyowl.com/knowledge-base/use-case-compliance-recertification-training/"
+        },
+        {
+          "title": "Getting Started with Uncanny Continuing Education Credits",
+          "url": "https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-continuing-education-credits/"
+        },
+        {
+          "title": "Tin Canny Blocks & Shortcodes Quick Reference",
+          "url": "https://www.uncannyowl.com/knowledge-base/tin-canny-blocks-shortcodes-quick-reference/"
+        },
+        {
+          "title": "From Articulate & Captivate to LearnDash — With Real Reporting",
+          "url": "https://www.uncannyowl.com/knowledge-base/from-articulate-captivate-to-learndash-with-real-reporting/"
+        },
+        {
+          "title": "See How Learners Actually Engage with Your Content",
+          "url": "https://www.uncannyowl.com/knowledge-base/see-how-learners-actually-engage-with-your-content/"
+        },
+        {
+          "title": "Give Managers Their Own Reports — No Admin Access Needed",
+          "url": "https://www.uncannyowl.com/knowledge-base/give-managers-their-own-reports-no-admin-access-needed/"
+        },
+        {
+          "title": "Prove Training Compliance with Tin Canny",
+          "url": "https://www.uncannyowl.com/knowledge-base/prove-training-compliance-with-tin-canny/"
+        },
+        {
+          "title": "Getting Started with Tin Canny Reporting for LearnDash",
+          "url": "https://www.uncannyowl.com/knowledge-base/getting-started-with-tin-canny-reporting-for-learndash/"
+        },
+        {
+          "title": "Toolkit Pro vs. the Free Toolkit: What You Get",
+          "url": "https://www.uncannyowl.com/knowledge-base/toolkit-pro-vs-the-free-toolkit-what-you-get/"
+        },
+        {
+          "title": "Cohort & Membership Programs",
+          "url": "https://www.uncannyowl.com/knowledge-base/cohort-membership-programs/"
+        },
+        {
+          "title": "Selling Online Courses: Certificates, Transcripts & Expiry",
+          "url": "https://www.uncannyowl.com/knowledge-base/selling-online-courses-certificates-transcripts-expiry/"
+        },
+        {
+          "title": "Employee Training & Onboarding at Scale",
+          "url": "https://www.uncannyowl.com/knowledge-base/employee-training-onboarding-at-scale/"
+        },
+        {
+          "title": "Getting Started with Uncanny Toolkit Pro",
+          "url": "https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/"
+        },
+        {
+          "title": "Use Case: Safely Test Your LearnDash Site",
+          "url": "https://www.uncannyowl.com/knowledge-base/use-case-safely-test-your-learndash-site/"
+        },
+        {
+          "title": "Use Case: A Distraction-Free Student Dashboard",
+          "url": "https://www.uncannyowl.com/knowledge-base/use-case-a-distraction-free-student-dashboard/"
+        },
+        {
+          "title": "Use Case: Build a Custom-Branded Login Experience",
+          "url": "https://www.uncannyowl.com/knowledge-base/use-case-build-a-custom-branded-login-experience/"
+        },
+        {
+          "title": "Uncanny Toolkit: Free vs. Pro",
+          "url": "https://www.uncannyowl.com/knowledge-base/uncanny-toolkit-free-vs-pro/"
+        },
+        {
+          "title": "Getting Started with the Uncanny Toolkit",
+          "url": "https://www.uncannyowl.com/knowledge-base/getting-started-with-the-uncanny-toolkit/"
+        },
+        {
+          "title": "Migrating from Manual Enrollment to Code-Based Enrollment",
+          "url": "https://www.uncannyowl.com/knowledge-base/migrating-from-manual-enrollment-to-code-based-enrollment/"
+        },
+        {
+          "title": "Use Case: Event & Conference Access Codes",
+          "url": "https://www.uncannyowl.com/knowledge-base/use-case-event-conference-access-codes/"
+        },
+        {
+          "title": "Uncanny Codes vs. WooCommerce Coupons: What’s the Difference?",
+          "url": "https://www.uncannyowl.com/knowledge-base/uncanny-codes-vs-woocommerce-coupons-whats-the-difference/"
+        },
+        {
+          "title": "Use Case: Promotional Codes & Marketing Campaigns",
+          "url": "https://www.uncannyowl.com/knowledge-base/use-case-promotional-codes-marketing-campaigns/"
+        },
+        {
+          "title": "Use Case: Corporate Training & Bulk Enrollment Codes",
+          "url": "https://www.uncannyowl.com/knowledge-base/use-case-corporate-training-bulk-enrollment-codes/"
+        },
+        {
+          "title": "Codes + Automator: Advanced Workflows",
+          "url": "https://www.uncannyowl.com/knowledge-base/codes-automator-advanced-workflows/"
+        },
+        {
+          "title": "Using Codes Without LearnDash",
+          "url": "https://www.uncannyowl.com/knowledge-base/using-codes-without-learndash/"
+        },
+        {
+          "title": "Setting Up Code Redemption Forms",
+          "url": "https://www.uncannyowl.com/knowledge-base/setting-up-code-redemption-forms/"
+        },
+        {
+          "title": "Troubleshooting & FAQ",
+          "url": "https://www.uncannyowl.com/knowledge-base/troubleshooting-faq/"
+        },
+        {
+          "title": "Developer Hooks & Filters Reference",
+          "url": "https://www.uncannyowl.com/knowledge-base/developer-hooks-filters-reference/"
+        },
+        {
+          "title": "Getting Started with Uncanny Codes",
+          "url": "https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-codes/"
+        },
+        {
+          "title": "Install the Uncanny Toolkit Pro for LearnDash",
+          "url": "https://www.uncannyowl.com/knowledge-base/install-the-uncanny-toolkit-pro-for-learndash/"
+        },
+        {
+          "title": "Download your plugins and get your license keys",
+          "url": "https://www.uncannyowl.com/knowledge-base/how-to-download-your-plugins-and-get-your-license-keys/"
+        },
+        {
+          "title": "Update Your Credit Card or Change Your Payment Method",
+          "url": "https://www.uncannyowl.com/knowledge-base/update-your-credit-card-or-change-your-payment-method/"
+        },
+        {
+          "title": "Request a Refund",
+          "url": "https://www.uncannyowl.com/knowledge-base/request-a-refund/"
+        },
+        {
+          "title": "Renew Your License",
+          "url": "https://www.uncannyowl.com/knowledge-base/renew-your-license/"
+        },
+        {
+          "title": "Upgrade or Downgrade Your License",
+          "url": "https://www.uncannyowl.com/knowledge-base/upgrade-or-downgrade-your-license/"
+        },
+        {
+          "title": "Manage Your Subscription",
+          "url": "https://www.uncannyowl.com/knowledge-base/manage-your-subscription/"
+        },
+        {
+          "title": "Transfer Your Plugin License to Another Domain",
+          "url": "https://www.uncannyowl.com/knowledge-base/transfer-your-plugin-license-to-another-domain/"
+        },
+        {
+          "title": "Change the Email Address Associated With Your Account",
+          "url": "https://www.uncannyowl.com/knowledge-base/change-the-email-address-associated-with-your-account/"
+        },
+        {
+          "title": "Generate an Invoice For Your Purchase",
+          "url": "https://www.uncannyowl.com/knowledge-base/generate-an-invoice-for-your-purchase/"
+        },
+        {
+          "title": "Change or Reset Your Password",
+          "url": "https://www.uncannyowl.com/knowledge-base/change-or-reset-your-password/"
+        },
+        {
+          "title": "Translating Uncanny Owl Groups plugin using WPML",
+          "url": "https://www.uncannyowl.com/knowledge-base/translating-uncanny-owl-groups-plugin-using-wpml/"
+        },
+        {
+          "title": "Lesson and Topic Completion Reports",
+          "url": "https://www.uncannyowl.com/knowledge-base/lesson-and-topic-completion-reports/"
+        },
+        {
+          "title": "Download Certificates in Bulk",
+          "url": "https://www.uncannyowl.com/knowledge-base/download-certificates-in-bulk/"
+        },
+        {
+          "title": "Pooled Seats",
+          "url": "https://www.uncannyowl.com/knowledge-base/pooled-seats/"
+        },
+        {
+          "title": "Cancelling Codes",
+          "url": "https://www.uncannyowl.com/knowledge-base/cancelling-codes/"
+        },
+        {
+          "title": "Adding Seats after Subscription-based Group Purchase",
+          "url": "https://www.uncannyowl.com/knowledge-base/adding-seats-after-subscription-based-group-purchase/"
+        },
+        {
+          "title": "LearnDash Quiz Question Analysis Report",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-quiz-question-analysis-report/"
+        },
+        {
+          "title": "Autocomplete Lessons & Topics on Formidable Forms Submission",
+          "url": "https://www.uncannyowl.com/knowledge-base/formidable-auto-completes-lessons-topics/"
+        },
+        {
+          "title": "Autocomplete Lessons & Topics on Fluent Forms submission",
+          "url": "https://www.uncannyowl.com/knowledge-base/ffforms-auto-completes-lessons-topics/"
+        },
+        {
+          "title": "Autocomplete Lessons & Topics on WPForms Submission",
+          "url": "https://www.uncannyowl.com/knowledge-base/wpforms-auto-completes-lessons-topics/"
+        },
+        {
+          "title": "Submit a support request",
+          "url": "https://www.uncannyowl.com/knowledge-base/submit-a-support-request/"
+        },
+        {
+          "title": "Connecting codes to Uncanny Automator",
+          "url": "https://www.uncannyowl.com/knowledge-base/connect-codes-to-uncanny-automator/"
+        },
+        {
+          "title": "Sell Code Batches as WooCommerce Products",
+          "url": "https://www.uncannyowl.com/knowledge-base/sell-uncanny-codes/"
+        },
+        {
+          "title": "BuddyBoss Group Sync",
+          "url": "https://www.uncannyowl.com/knowledge-base/buddyboss-group-sync/"
+        },
+        {
+          "title": "Generate Historical LearnDash Course Credits",
+          "url": "https://www.uncannyowl.com/knowledge-base/generate-learndash-course-credits/"
+        },
+        {
+          "title": "Single Page Courses",
+          "url": "https://www.uncannyowl.com/knowledge-base/single-page-courses/"
+        },
+        {
+          "title": "Add and Remove Credits",
+          "url": "https://www.uncannyowl.com/knowledge-base/add-and-remove-credits/"
+        },
+        {
+          "title": "Actions/Filters for Developers",
+          "url": "https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers-2/"
+        },
+        {
+          "title": "Quiz Completion Advances to Next Step",
+          "url": "https://www.uncannyowl.com/knowledge-base/quiz-completion-advances-to-next-step/"
+        },
+        {
+          "title": "Enhanced LearnDash CSV Reports",
+          "url": "https://www.uncannyowl.com/knowledge-base/enhanced-learndash-csv-reports/"
+        },
+        {
+          "title": "Group Forums with bbPress",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-group-forums-with-bbpress/"
+        },
+        {
+          "title": "Restrict Page Access",
+          "url": "https://www.uncannyowl.com/knowledge-base/restrict-page-access/"
+        },
+        {
+          "title": "Disable Emails",
+          "url": "https://www.uncannyowl.com/knowledge-base/disable-emails/"
+        },
+        {
+          "title": "Configure Group Emails",
+          "url": "https://www.uncannyowl.com/knowledge-base/configuring-group-emails/"
+        },
+        {
+          "title": "Manage Learner Progress",
+          "url": "https://www.uncannyowl.com/knowledge-base/manage-learner-progress/"
+        },
+        {
+          "title": "Site Check",
+          "url": "https://www.uncannyowl.com/knowledge-base/site-check/"
+        },
+        {
+          "title": "Lazy Loading Course Navigation",
+          "url": "https://www.uncannyowl.com/knowledge-base/lazy-loading-course-navigation/"
+        },
+        {
+          "title": "Certificate Preview",
+          "url": "https://www.uncannyowl.com/knowledge-base/certificate-preview/"
+        },
+        {
+          "title": "Template Overrides",
+          "url": "https://www.uncannyowl.com/knowledge-base/template-overrides/"
+        },
+        {
+          "title": "Template Overrides",
+          "url": "https://www.uncannyowl.com/knowledge-base/extending-uncanny-learndash-groups/"
+        },
+        {
+          "title": "Adding Credits to Student Transcript",
+          "url": "https://www.uncannyowl.com/knowledge-base/adding-credits-to-student-transcript/"
+        },
+        {
+          "title": "Actions/Filters for Developers",
+          "url": "https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/"
+        },
+        {
+          "title": "Autocomplete Lessons & Topics when Quiz is Graded",
+          "url": "https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics-when-quiz-is-graded/"
+        },
+        {
+          "title": "Group Login Redirect",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-group-login-redirect/"
+        },
+        {
+          "title": "Managing Elearning Content",
+          "url": "https://www.uncannyowl.com/knowledge-base/managing-elearning-content/"
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "url": "https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/"
+        },
+        {
+          "title": "Uncanny Groups for LearnDash – Changelog",
+          "url": "https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-changelog/"
+        },
+        {
+          "title": "Uncanny Groups for LearnDash – Technical Requirements",
+          "url": "https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-technical-requirements/"
+        }
+      ]
+    }
+  ]
 }

@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Insights A B Testing scraper
-        run: node scraper.js --slug=kadence-insights-a-b-testing --mode=wp-api --url=https://www.kadencewp.com/help-center/ --post-type=kb_icon --name="Kadence Insights - A/B Testing"
+        run: node scraper.js --slug=kadence-insights-a-b-testing --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-insights/ --selector=.entry-content --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Insights - A/B Testing"
 
       - name: Check for changes
         id: changes

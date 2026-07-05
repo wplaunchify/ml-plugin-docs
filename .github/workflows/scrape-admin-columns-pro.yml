@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Admin Columns Pro scraper
-        run: node scraper.js --slug=admin-columns-pro --mode=html-scrape --url=https://www.admincolumns.com --name="Admin Columns Pro"
+        run: node scraper.js --slug=admin-columns-pro --mode=sitemap --url=https://docs.admincolumns.com/ --selector=#fullArticle --name="Admin Columns Pro"
 
       - name: Check for changes
         id: changes

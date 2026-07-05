@@ -1,9 +1,23 @@
 {
   "plugin_slug": "customize-my-account-page-for-woocommerce",
   "plugin_name": "Customize My Account Page For Woocommerce",
-  "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/documentation/",
-  "last_scraped": "2026-07-05T10:46:23.296Z",
-  "total_pages": 0,
+  "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/",
+  "last_scraped": "2026-07-05T16:43:51.916Z",
+  "total_pages": 1,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customize My Account For WooCommerce",
+          "url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/"
+        }
+      ]
+    }
+  ]
 }

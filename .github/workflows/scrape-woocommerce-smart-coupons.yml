@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Woocommerce Smart Coupons scraper
-        run: node scraper.js --slug=woocommerce-smart-coupons --mode=wp-api --url=https://woocommerce.com/document/ --post-type=documentation --taxonomy=documentation_category --name="WooCommerce Smart Coupons"
+        run: node scraper.js --slug=woocommerce-smart-coupons --mode=html-scrape --url=https://woocommerce.com/document/smart-coupons/ --selector=.wccom-single-doc-content --name="WooCommerce Smart Coupons"
 
       - name: Check for changes
         id: changes

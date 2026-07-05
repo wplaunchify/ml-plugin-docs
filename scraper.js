@@ -289,12 +289,28 @@ function extractCategoryFromUrl(pageUrl, baseUrl) {
   const basePath = new URL(baseUrl).pathname;
   const relPath = new URL(pageUrl).pathname.replace(basePath, '').replace(/^\/|\/$/g, '');
   const parts = relPath.split('/');
-  return parts.length >= 1 ? parts[0] : 'uncategorized';
+  return (parts.length >= 1 && parts[0]) ? parts[0] : 'overview';
 }
 
 // ---------------------------------------------------------------------------
 // Output Generation (shared across all modes)
 // ---------------------------------------------------------------------------
+
+/**
+ * Fail fast: a scrape that yields zero pages means the config is broken or the
+ * site moved. Exit non-zero BEFORE writing anything so the GitHub Action fails
+ * loudly and existing good data is never overwritten with empty output.
+ */
+function assertPagesScraped(pages, failedUrls) {
+  if (pages.length > 0) return;
+  console.error('\nFATAL: 0 pages scraped. Refusing to write empty output.');
+  console.error('The docs source has likely moved or the scrape config (mode/url/post-type/selector) is wrong.');
+  if (failedUrls.length > 0) {
+    console.error(`${failedUrls.length} URL(s) were found but failed to scrape:`);
+    failedUrls.slice(0, 20).forEach(u => console.error(`  - ${u}`));
+  }
+  process.exit(1);
+}
 
 function writePluginData(slug, pluginName, baseUrl, pages, failedUrls) {
   const pluginDir = path.join(__dirname, 'plugins', slug);
@@ -432,7 +448,22 @@ async function runWpApi(args) {
   const taxonomy = args['taxonomy'] || '';
   const pluginName = args['name'] || slug.split(/[-_]/).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
-  const apiBase = siteUrl.replace(/\/$/, '') + '/wp-json/wp/v2';
+  // The WP REST API usually lives at the site origin even when the docs page
+  // is at a sub-path like /docs/ — but some sites (e.g. learndash.com/support)
+  // run WordPress in a subdirectory. Probe the configured path first, then the
+  // origin, and use whichever answers.
+  const candidates = [...new Set([
+    siteUrl.replace(/\/$/, '') + '/wp-json/wp/v2',
+    new URL(siteUrl).origin + '/wp-json/wp/v2'
+  ])];
+  let apiBase = candidates[candidates.length - 1];
+  for (const base of candidates) {
+    const probe = await fetchJson(`${base}/${postType}?per_page=1`, 1);
+    if (probe && Array.isArray(probe.data)) {
+      apiBase = base;
+      break;
+    }
+  }
 
   console.log(`\n========================================`);
   console.log(`  ML Plugin Docs Scraper (WP REST API)`);
@@ -527,6 +558,8 @@ async function runWpApi(args) {
 
   console.log(`\n  Fetched: ${pages.length} pages`);
   console.log(`  Failed:  ${failedUrls.length} pages\n`);
+
+  assertPagesScraped(pages, failedUrls);
 
   // Step 3: Write output
   console.log('[3/3] Writing output files...');
@@ -683,6 +716,8 @@ async function runSitemap(args) {
   console.log(`\n  Scraped: ${pages.length} pages`);
   console.log(`  Failed:  ${failedUrls.length} pages\n`);
 
+  assertPagesScraped(pages, failedUrls);
+
   // Step 3: Write output
   console.log('[3/4] Writing output files...');
   writePluginData(slug, pluginName, baseUrl, pages, failedUrls);
@@ -784,8 +819,11 @@ async function runHtmlScrape(args) {
     process.exit(1);
   }
 
-  const docLinks = discoverDocLinks(indexHtml, baseUrl, config.indexPageSelector);
-  console.log(`  Found ${docLinks.length} documentation pages\n`);
+  // Include the index page itself: for single-page docs it may be the only
+  // content, and for hubs it usually carries a useful overview.
+  const docLinks = [baseUrl, ...discoverDocLinks(indexHtml, baseUrl, config.indexPageSelector)
+    .filter(u => u !== baseUrl && u !== baseUrl.replace(/\/$/, ''))];
+  console.log(`  Found ${docLinks.length} documentation pages (including index)\n`);
 
   console.log(`[2/4] Scraping ${docLinks.length} pages (${RATE_LIMIT_MS}ms rate limit)...\n`);
   const pages = [];
@@ -824,6 +862,8 @@ async function runHtmlScrape(args) {
 
   console.log(`\n  Scraped: ${pages.length} pages`);
   console.log(`  Failed:  ${failedUrls.length} pages\n`);
+
+  assertPagesScraped(pages, failedUrls);
 
   console.log('[3/4] Writing output files...');
   writePluginData(slug, pluginName, baseUrl, pages, failedUrls);

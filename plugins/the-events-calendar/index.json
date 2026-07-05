@@ -1,9 +1,153 @@
 {
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
-  "documentation_url": "https://theeventscalendar.com/knowledgebase/documentation/",
-  "last_scraped": "2026-07-05T16:19:57.806Z",
-  "total_pages": 0,
-  "failed_urls_count": 1,
-  "sections": []
+  "documentation_url": "https://www.liquidweb.com/help-docs/software/events-calendar/",
+  "last_scraped": "2026-07-05T17:27:10.468Z",
+  "total_pages": 11,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Assigned Seating",
+      "slug": "assigned-seating",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/assigned-seating/",
+      "file": "categories/assigned-seating.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Assigned Seating",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/assigned-seating/"
+        }
+      ]
+    },
+    {
+      "title": "Automation",
+      "slug": "automation",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/automation/",
+      "file": "categories/automation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Automation",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/automation/"
+        }
+      ]
+    },
+    {
+      "title": "Compliance",
+      "slug": "compliance",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/compliance/",
+      "file": "categories/compliance.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Compliance",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/compliance/"
+        }
+      ]
+    },
+    {
+      "title": "Elementor",
+      "slug": "elementor",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/elementor/",
+      "file": "categories/elementor.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Elementor",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/elementor/"
+        }
+      ]
+    },
+    {
+      "title": "Elementor Csv Import",
+      "slug": "elementor-csv-import",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/elementor-csv-import/",
+      "file": "categories/elementor-csv-import.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Elementor Compatibility Handbook",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/elementor-csv-import/"
+        }
+      ]
+    },
+    {
+      "title": "Errors",
+      "slug": "errors",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/errors/",
+      "file": "categories/errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Errors",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/errors/"
+        }
+      ]
+    },
+    {
+      "title": "Event Attendees",
+      "slug": "event-attendees",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-attendees/",
+      "file": "categories/event-attendees.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Event Attendees",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-attendees/"
+        }
+      ]
+    },
+    {
+      "title": "Event Display",
+      "slug": "event-display",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-display/",
+      "file": "categories/event-display.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Event Display",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-display/"
+        }
+      ]
+    },
+    {
+      "title": "Event Management",
+      "slug": "event-management",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-management/",
+      "file": "categories/event-management.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Working with Past Events",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-management/past-events/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Shortcodes",
+      "slug": "shortcodes",
+      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/shortcodes/",
+      "file": "categories/shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Add the Events Calendar to Pages with Shortcodes",
+          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/shortcodes/calendar-embed-shortcodes/"
+        }
+      ]
+    }
+  ]
 }

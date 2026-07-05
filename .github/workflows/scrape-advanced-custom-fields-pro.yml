@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Advanced Custom Fields Pro scraper
-        run: node scraper.js --slug=advanced-custom-fields-pro --mode=html-scrape --url=https://www.advancedcustomfields.com/resources/ --name="Advanced Custom Fields PRO"
+        run: node scraper.js --slug=advanced-custom-fields-pro --mode=wp-api --url=https://www.advancedcustomfields.com --post-type=resource --name="Advanced Custom Fields PRO"
 
       - name: Check for changes
         id: changes

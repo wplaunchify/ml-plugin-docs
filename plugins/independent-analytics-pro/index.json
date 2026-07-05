@@ -2,8 +2,922 @@
   "plugin_slug": "independent-analytics-pro",
   "plugin_name": "Independent Analytics Pro",
   "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-  "last_scraped": "2026-07-05T09:04:16.139Z",
-  "total_pages": 0,
+  "last_scraped": "2026-07-05T17:02:25.705Z",
+  "total_pages": 190,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Campaigns",
+      "slug": "campaigns",
+      "url": "https://independentwp.com/knowledge-base/documentation/campaigns/",
+      "file": "categories/campaigns.md",
+      "page_count": 11,
+      "pages": [
+        {
+          "title": "Why Aren’t My Campaigns Getting Tracked?",
+          "url": "https://independentwp.com/knowledgebase/campaigns/campaigns-not-tracked/"
+        },
+        {
+          "title": "Why Am I Seeing Weird Looking Campaigns I Didn’t Create?",
+          "url": "https://independentwp.com/knowledgebase/campaigns/weird-campaigns/"
+        },
+        {
+          "title": "How to Create QR Codes for Campaign URLs",
+          "url": "https://independentwp.com/knowledgebase/campaigns/qr-codes/"
+        },
+        {
+          "title": "How to Shorten Your Campaign URLs",
+          "url": "https://independentwp.com/knowledgebase/campaigns/shorten-campaign-urls/"
+        },
+        {
+          "title": "When to Use Click Tracking vs. Campaign Tracking",
+          "url": "https://independentwp.com/knowledgebase/campaigns/when-click-tracking-vs-campaign-tracking/"
+        },
+        {
+          "title": "How Sales Attribution Works with Campaigns",
+          "url": "https://independentwp.com/knowledgebase/campaigns/campaign-sales-attribution/"
+        },
+        {
+          "title": "Why Clicks from PPC Ads are Lower in the Campaigns menu",
+          "url": "https://independentwp.com/knowledgebase/campaigns/clicks-difference-ppc-ads-campaigns/"
+        },
+        {
+          "title": "Why Should I Use Campaign URLs?",
+          "url": "https://independentwp.com/knowledgebase/campaigns/why-use-campaign-urls/"
+        },
+        {
+          "title": "How to Use the Campaign URL Builder",
+          "url": "https://independentwp.com/knowledgebase/campaigns/campaign-builder/"
+        },
+        {
+          "title": "What is a UTM Parameter?",
+          "url": "https://independentwp.com/knowledgebase/campaigns/what-is-utm-parameter/"
+        },
+        {
+          "title": "How to Use the Campaigns Report",
+          "url": "https://independentwp.com/knowledgebase/campaigns/campaigns-dashboard/"
+        }
+      ]
+    },
+    {
+      "title": "Click Tracking",
+      "slug": "click-tracking",
+      "url": "https://independentwp.com/knowledge-base/documentation/click-tracking/",
+      "file": "categories/click-tracking.md",
+      "page_count": 14,
+      "pages": [
+        {
+          "title": "What File Types Can it Track?",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/trackable-file-stypes/"
+        },
+        {
+          "title": "How to Track Clicks on Add to Cart Buttons",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/track-add-to-cart-buttons/"
+        },
+        {
+          "title": "Why the Total Number of Clicks can be Higher in the Table",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/clicks-higher-table/"
+        },
+        {
+          "title": "How to Track Links with Redirects",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/track-links-with-redirects/"
+        },
+        {
+          "title": "What is a Click?",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/what-is-click/"
+        },
+        {
+          "title": "Click Tracking is Not Compatible with GoDaddy’s “Managed WordPress” Hosting",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/click-tracking-not-compatible-godaddy/"
+        },
+        {
+          "title": "How to Allow PHP Execution in the Plugins Folder",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/allow-php-execution-plugins-folder/"
+        },
+        {
+          "title": "How to Add Classes to Your Links",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/add-class-editor/"
+        },
+        {
+          "title": "How to Use the Clicks Report",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/how-to-clicks-report/"
+        },
+        {
+          "title": "How to Create an Outbound Clicks Report",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/outbound-clicks-report/"
+        },
+        {
+          "title": "How to Track Clicks on Your Website",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/click-tracking/"
+        },
+        {
+          "title": "How (and Why) to Archive & Delete Link Patterns",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/archive-delete-link-patterns/"
+        },
+        {
+          "title": "My Clicks Aren’t Getting Tracked (Debugging Guide)",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/clicks-not-tracked/"
+        },
+        {
+          "title": "Why the Click Tracking Data Syncs Once Every Minute",
+          "url": "https://independentwp.com/knowledgebase/click-tracking/click-tracking-update-process/"
+        }
+      ]
+    },
+    {
+      "title": "Common Questions",
+      "slug": "common-questions",
+      "url": "https://independentwp.com/knowledge-base/documentation/common-questions/",
+      "file": "categories/common-questions.md",
+      "page_count": 35,
+      "pages": [
+        {
+          "title": "Why You Need to Clear Your Cache",
+          "url": "https://independentwp.com/knowledgebase/common-questions/why-clear-cache/"
+        },
+        {
+          "title": "Does it Work Well with Large Sites?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/work-large-sites/"
+        },
+        {
+          "title": "Does it Track Search Engine Keywords and Queries?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/track-keywords-search-engines/"
+        },
+        {
+          "title": "Blog vs Home in Pages Report",
+          "url": "https://independentwp.com/knowledgebase/common-questions/blog-vs-home-pages-report/"
+        },
+        {
+          "title": "Are IP Addresses Stored?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/are-ip-addresses-stored/"
+        },
+        {
+          "title": "Why Do I Have So Much “Direct” Traffic?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/direct-traffic/"
+        },
+        {
+          "title": "Can I Display the Analytics on the Front-End?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/display-analytics-front-end/"
+        },
+        {
+          "title": "Can I Add My Data to Looker Studio?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/add-data-looker-studio/"
+        },
+        {
+          "title": "How Event / Goal Tracking Works",
+          "url": "https://independentwp.com/knowledgebase/common-questions/event-goal-tracking-works/"
+        },
+        {
+          "title": "How to Fix the upload_max_filesize Error",
+          "url": "https://independentwp.com/knowledgebase/common-questions/fix-upload-max-filesize-error/"
+        },
+        {
+          "title": "How to Fix the Database Prefix Length Error",
+          "url": "https://independentwp.com/knowledgebase/common-questions/database-prefix-length-error/"
+        },
+        {
+          "title": "Can I Import Data from Google Analytics or Jetpack?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/import-data-google-analytics-jetpack/"
+        },
+        {
+          "title": "Do You Have an Affiliate Program?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/affiliate-program/"
+        },
+        {
+          "title": "Can I Run the Independent Analytics Script Without Installing the Plugin?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/run-independent-analytics-without-plugin/"
+        },
+        {
+          "title": "How to Fix Missing Geographic Data",
+          "url": "https://independentwp.com/knowledgebase/common-questions/fix-missing-geographic-data/"
+        },
+        {
+          "title": "Missing Database Tables: How to Fix this Error",
+          "url": "https://independentwp.com/knowledgebase/common-questions/missing-database-tables-error/"
+        },
+        {
+          "title": "Does it Include Historical Data?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/historical-data/"
+        },
+        {
+          "title": "Missing Database Permissions: How to Fix this Error Message",
+          "url": "https://independentwp.com/knowledgebase/common-questions/missing-database-permissions/"
+        },
+        {
+          "title": "Why are My Cloudflare Stats So Much Higher?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/why-cloudflare-stats-different/"
+        },
+        {
+          "title": "Is it RTL Compatible?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/rtl-compatibility/"
+        },
+        {
+          "title": "Is it Compatible with WPML?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/wpml-compatibility/"
+        },
+        {
+          "title": "How to Set the Local Timezone",
+          "url": "https://independentwp.com/knowledgebase/common-questions/what-timezone/"
+        },
+        {
+          "title": "Data Migration Failed: Fix the “Update Running” Message",
+          "url": "https://independentwp.com/knowledgebase/common-questions/help-update-running-message/"
+        },
+        {
+          "title": "Can I Translate Independent Analytics?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/translate-independent-analytics/"
+        },
+        {
+          "title": "How to Enable Error Logging",
+          "url": "https://independentwp.com/knowledgebase/common-questions/enable-error-logging/"
+        },
+        {
+          "title": "How to fix the “Missing PDO” error message",
+          "url": "https://independentwp.com/knowledgebase/common-questions/pdo-error/"
+        },
+        {
+          "title": "Does it Work with Multisite?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/multisite-compatibility/"
+        },
+        {
+          "title": "Why Does Independent Analytics Show Different Stats Than Google Analytics?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/independent-analytics-show-more-visitors-than-google-analytics/"
+        },
+        {
+          "title": "Will My Database Get Bloated?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/space-used-in-database/"
+        },
+        {
+          "title": "What are Page-Based Analytics?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/page-based-analytics/"
+        },
+        {
+          "title": "What Makes it Privacy-Friendly?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/what-makes-it-gdpr-compliant/"
+        },
+        {
+          "title": "Why Aren’t My Views Showing Up?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/views-not-recording/"
+        },
+        {
+          "title": "Do I Need to Use a Cookie Popup?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/cookie-popup/"
+        },
+        {
+          "title": "Can I Use Both Independent Analytics & Google Analytics?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/use-with-google-analytics/"
+        },
+        {
+          "title": "Will it Slow Down My Site?",
+          "url": "https://independentwp.com/knowledgebase/common-questions/will-it-slow-down-my-site/"
+        }
+      ]
+    },
+    {
+      "title": "Dashboard",
+      "slug": "dashboard",
+      "url": "https://independentwp.com/knowledge-base/documentation/dashboard/",
+      "file": "categories/dashboard.md",
+      "page_count": 29,
+      "pages": [
+        {
+          "title": "How to Use the MainWP Extension",
+          "url": "https://independentwp.com/knowledgebase/dashboard/mainwp-extension/"
+        },
+        {
+          "title": "Getting Started Video Tutorial",
+          "url": "https://independentwp.com/knowledgebase/dashboard/getting-started/"
+        },
+        {
+          "title": "How to Allow Post Authors to See Their Stats",
+          "url": "https://independentwp.com/knowledgebase/dashboard/post-authors-view-analytics/"
+        },
+        {
+          "title": "How to Use the Chart",
+          "url": "https://independentwp.com/knowledgebase/dashboard/chart/"
+        },
+        {
+          "title": "Find View Counts in the Posts Menu (Or Hide Them)",
+          "url": "https://independentwp.com/knowledgebase/dashboard/view-count-column-posts-menu/"
+        },
+        {
+          "title": "How to Download a Report as a PDF",
+          "url": "https://independentwp.com/knowledgebase/dashboard/download-pdf-report/"
+        },
+        {
+          "title": "How to Track Analytics for PDFs",
+          "url": "https://independentwp.com/knowledgebase/dashboard/track-analytics-pdfs/"
+        },
+        {
+          "title": "How to Export & Import Custom Reports",
+          "url": "https://independentwp.com/knowledgebase/dashboard/export-import-custom-reports/"
+        },
+        {
+          "title": "How to Set a Default Report",
+          "url": "https://independentwp.com/knowledgebase/dashboard/set-default-report/"
+        },
+        {
+          "title": "How to Collapse the Sidebar for More Space",
+          "url": "https://independentwp.com/knowledgebase/dashboard/collapse-sidebar/"
+        },
+        {
+          "title": "How to Use the Referrers Report",
+          "url": "https://independentwp.com/knowledgebase/dashboard/how-to-referrers-report/"
+        },
+        {
+          "title": "How to Use the Pages Report",
+          "url": "https://independentwp.com/knowledgebase/dashboard/how-to-pages-report/"
+        },
+        {
+          "title": "How to use the Devices Report",
+          "url": "https://independentwp.com/knowledgebase/dashboard/how-to-devices-report/"
+        },
+        {
+          "title": "How to Access Your Analytics on a Mobile Device",
+          "url": "https://independentwp.com/knowledgebase/dashboard/analytics-mobile-device/"
+        },
+        {
+          "title": "How to Use the Admin Bar Stats (or Hide Them)",
+          "url": "https://independentwp.com/knowledgebase/dashboard/admin-bar-stats/"
+        },
+        {
+          "title": "How to Share Analytics Access with Non-Admin User Roles (and white-label the dashboard)",
+          "url": "https://independentwp.com/knowledgebase/dashboard/give-users-permission-view-analytics/"
+        },
+        {
+          "title": "How to Create & Save Custom Reports",
+          "url": "https://independentwp.com/knowledgebase/dashboard/save-reports-revisit-later/"
+        },
+        {
+          "title": "How to Reposition and Hide the Dashboard Widget",
+          "url": "https://independentwp.com/knowledgebase/dashboard/dashboard-widget-reposition-hide/"
+        },
+        {
+          "title": "How to Display View Counters on Your Site",
+          "url": "https://independentwp.com/knowledgebase/dashboard/display-view-counter/"
+        },
+        {
+          "title": "How to Use the Geographic Report",
+          "url": "https://independentwp.com/knowledgebase/dashboard/how-to-geodata/"
+        },
+        {
+          "title": "How to Change the Calendar’s Starting Day of the Week",
+          "url": "https://independentwp.com/knowledgebase/dashboard/change-starting-day-week/"
+        },
+        {
+          "title": "How to Switch to Dark Mode",
+          "url": "https://independentwp.com/knowledgebase/dashboard/dark-mode/"
+        },
+        {
+          "title": "How to Use the Quick Stats",
+          "url": "https://independentwp.com/knowledgebase/dashboard/quick-stats/"
+        },
+        {
+          "title": "How to Install Independent Analytics with the Zip File",
+          "url": "https://independentwp.com/knowledgebase/dashboard/install-zip-file/"
+        },
+        {
+          "title": "How to Install Independent Analytics",
+          "url": "https://independentwp.com/knowledgebase/dashboard/how-to-install-independent-analytics/"
+        },
+        {
+          "title": "How to Customize the Data Columns",
+          "url": "https://independentwp.com/knowledgebase/dashboard/how-to-customize-the-columns/"
+        },
+        {
+          "title": "How to Change the Date",
+          "url": "https://independentwp.com/knowledgebase/dashboard/how-to-change-the-date/"
+        },
+        {
+          "title": "How to Sort Your Data",
+          "url": "https://independentwp.com/knowledgebase/dashboard/how-to-sort-your-data/"
+        },
+        {
+          "title": "How to Filter Your Data",
+          "url": "https://independentwp.com/knowledgebase/dashboard/how-to-filter-your-data/"
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "slug": "data",
+      "url": "https://independentwp.com/knowledge-base/documentation/data/",
+      "file": "categories/data.md",
+      "page_count": 15,
+      "pages": [
+        {
+          "title": "What Refreshing the Visitor Salt Every Day Means",
+          "url": "https://independentwp.com/knowledgebase/data/refresh-visitor-salt/"
+        },
+        {
+          "title": "What are Entrances, Exits, and Exit Rate?",
+          "url": "https://independentwp.com/knowledgebase/data/what-are-entrances-exits-exit-percentage/"
+        },
+        {
+          "title": "What is Views Per Session?",
+          "url": "https://independentwp.com/knowledgebase/data/what-is-views-per-session/"
+        },
+        {
+          "title": "What is Bounce Rate?",
+          "url": "https://independentwp.com/knowledgebase/data/what-is-bounce-rate/"
+        },
+        {
+          "title": "What is View Duration?",
+          "url": "https://independentwp.com/knowledgebase/data/what-is-view-duration/"
+        },
+        {
+          "title": "What is Session Duration?",
+          "url": "https://independentwp.com/knowledgebase/data/what-is-session-duration/"
+        },
+        {
+          "title": "What is a Session?",
+          "url": "https://independentwp.com/knowledgebase/data/what-is-session/"
+        },
+        {
+          "title": "Why are there fewer visitors in the Geographic dashboard?",
+          "url": "https://independentwp.com/knowledgebase/data/fewer-visitors-geographic-dashboard/"
+        },
+        {
+          "title": "What is a Location?",
+          "url": "https://independentwp.com/knowledgebase/data/what-is-a-location/"
+        },
+        {
+          "title": "How Accurate is the Geographic Data?",
+          "url": "https://independentwp.com/knowledgebase/data/geo-data-accuracy/"
+        },
+        {
+          "title": "What is a Visitor?",
+          "url": "https://independentwp.com/knowledgebase/data/what-is-a-visitor/"
+        },
+        {
+          "title": "What Metrics Does it Track?",
+          "url": "https://independentwp.com/knowledgebase/data/what-data-does-it-track/"
+        },
+        {
+          "title": "What are the Page Types?",
+          "url": "https://independentwp.com/knowledgebase/data/what-are-all-the-page-types/"
+        },
+        {
+          "title": "What is a Referrer?",
+          "url": "https://independentwp.com/knowledgebase/data/what-is-a-referrer/"
+        },
+        {
+          "title": "What is a View?",
+          "url": "https://independentwp.com/knowledgebase/data/what-is-a-view/"
+        }
+      ]
+    },
+    {
+      "title": "Developer",
+      "slug": "developer",
+      "url": "https://independentwp.com/knowledge-base/documentation/developer/",
+      "file": "categories/developer.md",
+      "page_count": 7,
+      "pages": [
+        {
+          "title": "Programmatically Editing User Role Capabilities for Analytics Access",
+          "url": "https://independentwp.com/knowledgebase/developer/edit-user-roles-programmatically/"
+        },
+        {
+          "title": "Temporary solution for “Implicitly marking parameter” deprecation notices",
+          "url": "https://independentwp.com/knowledgebase/developer/deprecation-notices/"
+        },
+        {
+          "title": "How to Remove the mmdb File by Disabling Geotracking",
+          "url": "https://independentwp.com/knowledgebase/developer/remove-mmdb-file/"
+        },
+        {
+          "title": "How to Create Your Own Popular Posts Widget",
+          "url": "https://independentwp.com/knowledgebase/developer/popular-posts-widget/"
+        },
+        {
+          "title": "Detecting IP Addresses with Custom Headers",
+          "url": "https://independentwp.com/knowledgebase/developer/detect-ip-address-custom-headers/"
+        },
+        {
+          "title": "How to Use the Developer API",
+          "url": "https://independentwp.com/knowledgebase/developer/developer-api/"
+        },
+        {
+          "title": "Pantheon Compatibility Fix for BladeOne Error (moving the temp folder)",
+          "url": "https://independentwp.com/knowledgebase/developer/pantheon-compatibility-fix-bladeone-error/"
+        }
+      ]
+    },
+    {
+      "title": "Email Report",
+      "slug": "email-report",
+      "url": "https://independentwp.com/knowledge-base/documentation/email-report/",
+      "file": "categories/email-report.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "How to Debug & Improve Email Deliverability",
+          "url": "https://independentwp.com/knowledgebase/email-report/improve-email-deliverability/"
+        },
+        {
+          "title": "How to Send the Automated HTML Email Report",
+          "url": "https://independentwp.com/knowledgebase/email-report/email-reports/"
+        }
+      ]
+    },
+    {
+      "title": "Form Tracking",
+      "slug": "form-tracking",
+      "url": "https://independentwp.com/knowledge-base/documentation/form-tracking/",
+      "file": "categories/form-tracking.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Why Aren’t My Forms Showing Up?",
+          "url": "https://independentwp.com/knowledgebase/form-tracking/why-arent-forms-showing/"
+        },
+        {
+          "title": "How to Track Submissions from Custom Forms (Developer Guide)",
+          "url": "https://independentwp.com/knowledgebase/form-tracking/track-submissions-custom-forms/"
+        },
+        {
+          "title": "How to Track Bricks Builder Form Submissions",
+          "url": "https://independentwp.com/knowledgebase/form-tracking/bricks-builder-forms/"
+        },
+        {
+          "title": "What Form Plugins Does it Integrate With?",
+          "url": "https://independentwp.com/knowledgebase/form-tracking/form-plugin-integrations/"
+        },
+        {
+          "title": "How to Track Form Submissions",
+          "url": "https://independentwp.com/knowledgebase/form-tracking/track-form-submissions/"
+        }
+      ]
+    },
+    {
+      "title": "Insights",
+      "slug": "insights",
+      "url": "https://independentwp.com/knowledge-base/documentation/insights/",
+      "file": "categories/insights.md",
+      "page_count": 20,
+      "pages": [
+        {
+          "title": "How to Find Your Top Landing Pages",
+          "url": "https://independentwp.com/knowledgebase/insights/top-landing-pages/"
+        },
+        {
+          "title": "How to Find the IP Addresses of Visitors",
+          "url": "https://independentwp.com/knowledgebase/insights/find-ip-addresses/"
+        },
+        {
+          "title": "How to Compare Traffic by Referrer Type",
+          "url": "https://independentwp.com/knowledgebase/insights/compare-traffic-referrer-type/"
+        },
+        {
+          "title": "How to Find User Search Queries in the Pages Report",
+          "url": "https://independentwp.com/knowledgebase/insights/find-user-search-queries-pages-report/"
+        },
+        {
+          "title": "How to Find 404 Errors in the Pages Report",
+          "url": "https://independentwp.com/knowledgebase/insights/find-404-errors-pages-report/"
+        },
+        {
+          "title": "How to Analyze the Growth of Pages (and Referrers)",
+          "url": "https://independentwp.com/knowledgebase/insights/analyze-growth-pages-referrers/"
+        },
+        {
+          "title": "How to View Traffic by Browser",
+          "url": "https://independentwp.com/knowledgebase/insights/view-traffic-by-browser/"
+        },
+        {
+          "title": "How to View Traffic by OS",
+          "url": "https://independentwp.com/knowledgebase/insights/view-traffic-by-os/"
+        },
+        {
+          "title": "How to Compare Posts by Number of Recent Comments",
+          "url": "https://independentwp.com/knowledgebase/insights/compare-posts-number-comments/"
+        },
+        {
+          "title": "How to See the Stats for a Single Post Type",
+          "url": "https://independentwp.com/knowledgebase/insights/stats-single-post-type/"
+        },
+        {
+          "title": "How to Analyze Your Content by Author",
+          "url": "https://independentwp.com/knowledgebase/insights/analyze-content-by-author/"
+        },
+        {
+          "title": "How to Analyze Posts & Pages by Their Publication Dates",
+          "url": "https://independentwp.com/knowledgebase/insights/analyze-posts-pages-by-publication-dates/"
+        },
+        {
+          "title": "How to Find the Traffic Share of Any Page, Referrer, or Country",
+          "url": "https://independentwp.com/knowledgebase/insights/find-traffic-share-page-referrer-country/"
+        },
+        {
+          "title": "How to Find & Use Post Category Data",
+          "url": "https://independentwp.com/knowledgebase/insights/post-category-column/"
+        },
+        {
+          "title": "How to View City Data in the Geographic Report",
+          "url": "https://independentwp.com/knowledgebase/insights/city-data-geographic-report/"
+        },
+        {
+          "title": "How to Find Your Fastest-Growing (and Slowing) Pages & Traffic Sources",
+          "url": "https://independentwp.com/knowledgebase/insights/find-growing-pages/"
+        },
+        {
+          "title": "Find and Fix 404 Errors",
+          "url": "https://independentwp.com/knowledgebase/insights/find-and-fix-404-errors/"
+        },
+        {
+          "title": "Find Out What Your Visitors are Searching For",
+          "url": "https://independentwp.com/knowledgebase/insights/find-visitor-search-terms/"
+        },
+        {
+          "title": "Find Your Top Traffic Sources",
+          "url": "https://independentwp.com/knowledgebase/insights/top-traffic-sources/"
+        },
+        {
+          "title": "Find Your Most Popular Pages",
+          "url": "https://independentwp.com/knowledgebase/insights/find-top-pages/"
+        }
+      ]
+    },
+    {
+      "title": "Overview Report",
+      "slug": "overview-report",
+      "url": "https://independentwp.com/knowledge-base/documentation/overview-report/",
+      "file": "categories/overview-report.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Summary of All Module Types",
+          "url": "https://independentwp.com/knowledgebase/overview-report/summary-module-types/"
+        },
+        {
+          "title": "How the New vs. Returning Sessions Metric Works",
+          "url": "https://independentwp.com/knowledgebase/overview-report/new-vs-returning-metric/"
+        },
+        {
+          "title": "How to Use the Overview Report",
+          "url": "https://independentwp.com/knowledgebase/overview-report/overview-report/"
+        }
+      ]
+    },
+    {
+      "title": "Pro",
+      "slug": "pro",
+      "url": "https://independentwp.com/knowledge-base/documentation/pro/",
+      "file": "categories/pro.md",
+      "page_count": 13,
+      "pages": [
+        {
+          "title": "How to Change Your Password",
+          "url": "https://independentwp.com/knowledgebase/pro/change-password/"
+        },
+        {
+          "title": "Managing License Activations Across Staging and Development Environments",
+          "url": "https://independentwp.com/knowledgebase/pro/managing-license-activations/"
+        },
+        {
+          "title": "How to Auto-Activate Your License Key On Client Sites (Bulk License Activation)",
+          "url": "https://independentwp.com/knowledgebase/pro/auto-activate-license-key/"
+        },
+        {
+          "title": "How to Update and Download Your Invoice",
+          "url": "https://independentwp.com/knowledgebase/pro/update-your-invoice/"
+        },
+        {
+          "title": "How to Access Your Account",
+          "url": "https://independentwp.com/knowledgebase/pro/access-your-account/"
+        },
+        {
+          "title": "Subdomains and TLDs that Don’t Count Towards License Activations",
+          "url": "https://independentwp.com/knowledgebase/pro/staging-sites-license-activations/"
+        },
+        {
+          "title": "How to Deactivate a License Key Remotely",
+          "url": "https://independentwp.com/knowledgebase/pro/deactivate-license-key-remotely/"
+        },
+        {
+          "title": "How to Cancel Your Subscription Auto-Renewal",
+          "url": "https://independentwp.com/knowledgebase/pro/cancel-auto-renew/"
+        },
+        {
+          "title": "How to White-Label Your License Key for Client Websites",
+          "url": "https://independentwp.com/knowledgebase/pro/white-label-license-key/"
+        },
+        {
+          "title": "Can I Delete the Free Version?",
+          "url": "https://independentwp.com/knowledgebase/pro/can-delete-free-version/"
+        },
+        {
+          "title": "How Can I Upgrade My License for More Domains?",
+          "url": "https://independentwp.com/knowledgebase/pro/upgrade-license/"
+        },
+        {
+          "title": "Is it a subscription and do I have to renew?",
+          "url": "https://independentwp.com/knowledgebase/pro/is-it-subscription/"
+        },
+        {
+          "title": "How to Install Independent Analytics Pro",
+          "url": "https://independentwp.com/knowledgebase/pro/install-independent-analytics-pro/"
+        }
+      ]
+    },
+    {
+      "title": "Real Time Analytics",
+      "slug": "real-time-analytics",
+      "url": "https://independentwp.com/knowledge-base/documentation/real-time-analytics/",
+      "file": "categories/real-time-analytics.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "How Often Does the Real-time Dashboard Update?",
+          "url": "https://independentwp.com/knowledgebase/real-time-analytics/how-often-does-the-real-time-dashboard-update/"
+        },
+        {
+          "title": "How to Use the Real-time Analytics",
+          "url": "https://independentwp.com/knowledgebase/real-time-analytics/real-time-analytics/"
+        },
+        {
+          "title": "What is an Active Visitor?",
+          "url": "https://independentwp.com/knowledgebase/real-time-analytics/what-is-an-active-visitor/"
+        }
+      ]
+    },
+    {
+      "title": "Solo Reports",
+      "slug": "solo-reports",
+      "url": "https://independentwp.com/knowledge-base/documentation/solo-reports/",
+      "file": "categories/solo-reports.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Use Solo Reports",
+          "url": "https://independentwp.com/knowledgebase/solo-reports/how-to-solo-reports/"
+        }
+      ]
+    },
+    {
+      "title": "Tracking",
+      "slug": "tracking",
+      "url": "https://independentwp.com/knowledge-base/documentation/tracking/",
+      "file": "categories/tracking.md",
+      "page_count": 11,
+      "pages": [
+        {
+          "title": "How to Require Consent with the Complianz Plugin",
+          "url": "https://independentwp.com/knowledgebase/tracking/require-consent-complianz-plugin/"
+        },
+        {
+          "title": "How to Ignore Your Own Activity",
+          "url": "https://independentwp.com/knowledgebase/tracking/ignore-your-own-activity/"
+        },
+        {
+          "title": "How to Track Facebook Ads Performance",
+          "url": "https://independentwp.com/knowledgebase/tracking/track-facebook-ads/"
+        },
+        {
+          "title": "How to Track Email Visitors",
+          "url": "https://independentwp.com/knowledgebase/tracking/track-email-visitors/"
+        },
+        {
+          "title": "How to Track Google Ads Performance",
+          "url": "https://independentwp.com/knowledgebase/tracking/track-google-ads-performance/"
+        },
+        {
+          "title": "How the Tracking Script Works",
+          "url": "https://independentwp.com/knowledgebase/tracking/how-does-tracking-script-work/"
+        },
+        {
+          "title": "How to Ignore Traffic by User Role",
+          "url": "https://independentwp.com/knowledgebase/tracking/block-user-roles/"
+        },
+        {
+          "title": "How to Secure the REST-API and Still Use Independent Analytics",
+          "url": "https://independentwp.com/knowledgebase/tracking/secure-rest-api/"
+        },
+        {
+          "title": "How to Ignore Traffic by IP Address",
+          "url": "https://independentwp.com/knowledgebase/tracking/block-ip-addresses/"
+        },
+        {
+          "title": "How to Block Spam and Bot Traffic on Your Website",
+          "url": "https://independentwp.com/knowledgebase/tracking/bot-visits/"
+        },
+        {
+          "title": "How to Track Logged-in Visitors",
+          "url": "https://independentwp.com/knowledgebase/tracking/how-to-track-logged-in-visitors/"
+        }
+      ]
+    },
+    {
+      "title": "User Journeys",
+      "slug": "user-journeys",
+      "url": "https://independentwp.com/knowledge-base/documentation/user-journeys/",
+      "file": "categories/user-journeys.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "How Does this Affect Visitor Privacy?",
+          "url": "https://independentwp.com/knowledgebase/user-journeys/user-journeys-visitor-privacy/"
+        },
+        {
+          "title": "How Long Are Repeat Visitors Recognized?",
+          "url": "https://independentwp.com/knowledgebase/user-journeys/repeat-visitors-recognized/"
+        },
+        {
+          "title": "How to Use the User Journeys Report",
+          "url": "https://independentwp.com/knowledgebase/user-journeys/user-journeys-report/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce",
+      "slug": "woocommerce",
+      "url": "https://independentwp.com/knowledge-base/documentation/woocommerce/",
+      "file": "categories/woocommerce.md",
+      "page_count": 10,
+      "pages": [
+        {
+          "title": "Why Are My Sales Metrics Different in WooCommerce vs. Independent Analytics Pro?",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/metrics-different-woocommerce/"
+        },
+        {
+          "title": "Why Aren’t My Sales Getting Tracked?",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/why-arent-sales-tracked/"
+        },
+        {
+          "title": "Do Sales Show Up Right Away?",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/do-sales-show-up-right-away/"
+        },
+        {
+          "title": "Which eCommerce Plugins Does it Integrate With?",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/supported-ecommerce-plugins/"
+        },
+        {
+          "title": "How to Choose Which WooCommerce Order Statuses to Track",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/woocommerce-order-statuses/"
+        },
+        {
+          "title": "The eCommerce Metrics Explained",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/woocommerce-metrics/"
+        },
+        {
+          "title": "What the WooCommerce “Customer Journey” Box Displays",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/order-referrers-box/"
+        },
+        {
+          "title": "WooCommerce Multi-Currency Plugin Support",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/multi-currency-plugin-support/"
+        },
+        {
+          "title": "How Does Attribution Work?",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/how-does-attribution-work/"
+        },
+        {
+          "title": "How to Use the eCommerce Integration",
+          "url": "https://independentwp.com/knowledgebase/woocommerce/woocommerce-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Your Data",
+      "slug": "your-data",
+      "url": "https://independentwp.com/knowledge-base/documentation/your-data/",
+      "file": "categories/your-data.md",
+      "page_count": 8,
+      "pages": [
+        {
+          "title": "How to Automatically Delete Old Data",
+          "url": "https://independentwp.com/knowledgebase/your-data/automatically-delete-old-data/"
+        },
+        {
+          "title": "How to Prevent Data Loss with a Backup Plugin",
+          "url": "https://independentwp.com/knowledgebase/your-data/prevent-data-loss-backup/"
+        },
+        {
+          "title": "How Much Data is Stored and Where It’s Stored in the Database",
+          "url": "https://independentwp.com/knowledgebase/your-data/how-much-data-stored-and-where/"
+        },
+        {
+          "title": "How to Opt-Out of Freemius Data Tracking",
+          "url": "https://independentwp.com/knowledgebase/your-data/freemius-opt-out/"
+        },
+        {
+          "title": "How to Delete Your Data",
+          "url": "https://independentwp.com/knowledgebase/your-data/delete-all-data/"
+        },
+        {
+          "title": "How to Retain Your Analytics Data When Pushing from Staging to Production",
+          "url": "https://independentwp.com/knowledgebase/your-data/transfer-data-staging-local-production/"
+        },
+        {
+          "title": "How to Export Your Data to CSV",
+          "url": "https://independentwp.com/knowledgebase/your-data/import-export-data/"
+        },
+        {
+          "title": "Why We Use Freemius",
+          "url": "https://independentwp.com/knowledgebase/your-data/why-we-use-freemius/"
+        }
+      ]
+    }
+  ]
 }

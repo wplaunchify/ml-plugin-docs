@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Autocomplete Woocommerce Orders scraper
-        run: node scraper.js --slug=autocomplete-woocommerce-orders --mode=wp-api --url=https://quadlayers.com/documentation/woocommerce-autocomplete-orders/ --post-type=doc --name="Autocomplete WooCommerce Orders"
+        run: node scraper.js --slug=autocomplete-woocommerce-orders --mode=html-scrape --url=https://quadlayers.com/documentation/woocommerce-autocomplete-orders/ --selector=.doc-main__content --name="Autocomplete WooCommerce Orders"
 
       - name: Check for changes
         id: changes

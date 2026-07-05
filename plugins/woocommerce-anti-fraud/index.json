@@ -1,9 +1,23 @@
 {
   "plugin_slug": "woocommerce-anti-fraud",
   "plugin_name": "WooCommerce Anti Fraud",
-  "documentation_url": "https://woocommerce.com/document/documentation/",
-  "last_scraped": "2026-07-05T10:46:20.991Z",
-  "total_pages": 0,
+  "documentation_url": "https://woocommerce.com/document/woocommerce-anti-fraud/",
+  "last_scraped": "2026-07-05T17:05:26.967Z",
+  "total_pages": 1,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://woocommerce.com/document/woocommerce-anti-fraud/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WooCommerce Anti-Fraud",
+          "url": "https://woocommerce.com/document/woocommerce-anti-fraud/"
+        }
+      ]
+    }
+  ]
 }

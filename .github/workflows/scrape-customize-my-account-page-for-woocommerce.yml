@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Customize My Account Page For Woocommerce scraper
-        run: node scraper.js --slug=customize-my-account-page-for-woocommerce --mode=wp-api --url=https://woocommerce.com/document/customize-my-account-for-woocommerce/ --post-type=documentation --taxonomy=documentation_category --name="Customize My Account Page For Woocommerce"
+        run: node scraper.js --slug=customize-my-account-page-for-woocommerce --mode=html-scrape --url=https://woocommerce.com/document/customize-my-account-for-woocommerce/ --selector=.wccom-single-doc-content --name="Customize My Account Page For Woocommerce"
 
       - name: Check for changes
         id: changes

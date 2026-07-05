@@ -1,9 +1,218 @@
 {
   "plugin_slug": "kadence-conversions-popups-slide-ins",
   "plugin_name": "Kadence Conversions - Popups, slide-ins",
-  "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-  "last_scraped": "2026-06-28T20:22:54.821Z",
-  "total_pages": 0,
-  "failed_urls_count": 5,
-  "sections": []
+  "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/",
+  "last_scraped": "2026-07-05T17:17:45.277Z",
+  "total_pages": 16,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Container Styling Settings",
+      "slug": "container-styling-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/container-styling-settings/",
+      "file": "categories/container-styling-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Container Styling Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/container-styling-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Conversion Settings",
+      "slug": "conversion-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/conversion-settings/",
+      "file": "categories/conversion-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Conversion Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/conversion-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started Creating Your First Kadence Conversion",
+      "slug": "getting-started-creating-your-first-kadence-conversion",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/getting-started-creating-your-first-kadence-conversion/",
+      "file": "categories/getting-started-creating-your-first-kadence-conversion.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting started: Creating your First Kadence Conversion",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/getting-started-creating-your-first-kadence-conversion/"
+        }
+      ]
+    },
+    {
+      "title": "Install Activate Kadence Conversions",
+      "slug": "install-activate-kadence-conversions",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/install-activate-kadence-conversions/",
+      "file": "categories/install-activate-kadence-conversions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Install & Activate Kadence Conversions",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/install-activate-kadence-conversions/"
+        }
+      ]
+    },
+    {
+      "title": "Launch Triggers",
+      "slug": "launch-triggers",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/launch-triggers/",
+      "file": "categories/launch-triggers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Launch Triggers",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/launch-triggers/"
+        }
+      ]
+    },
+    {
+      "title": "Position Settings",
+      "slug": "position-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/position-settings/",
+      "file": "categories/position-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Position Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/position-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Repeat Control Settings",
+      "slug": "repeat-control-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/repeat-control-settings/",
+      "file": "categories/repeat-control-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Repeat Control Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/repeat-control-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Scheduling Kadence Conversions",
+      "slug": "scheduling-kadence-conversions",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/scheduling-kadence-conversions/",
+      "file": "categories/scheduling-kadence-conversions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Scheduling Kadence Conversions",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/scheduling-kadence-conversions/"
+        }
+      ]
+    },
+    {
+      "title": "Setting Up Your Kadence Conversion Item Settings",
+      "slug": "setting-up-your-kadence-conversion-item-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/setting-up-your-kadence-conversion-item-settings/",
+      "file": "categories/setting-up-your-kadence-conversion-item-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting Up Your Kadence Conversion Item Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/setting-up-your-kadence-conversion-item-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Size Settings",
+      "slug": "size-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/size-settings/",
+      "file": "categories/size-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Size Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/size-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Target Devices",
+      "slug": "target-devices",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-devices/",
+      "file": "categories/target-devices.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Target Devices",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-devices/"
+        }
+      ]
+    },
+    {
+      "title": "Target Pages",
+      "slug": "target-pages",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-pages/",
+      "file": "categories/target-pages.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Target Pages",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-pages/"
+        }
+      ]
+    },
+    {
+      "title": "Target Requests",
+      "slug": "target-requests",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-requests/",
+      "file": "categories/target-requests.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Target Requests",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-requests/"
+        }
+      ]
+    },
+    {
+      "title": "Target Visitors",
+      "slug": "target-visitors",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-visitors/",
+      "file": "categories/target-visitors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Target Visitors",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-visitors/"
+        }
+      ]
+    },
+    {
+      "title": "Target Woocommerce Cart",
+      "slug": "target-woocommerce-cart",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-woocommerce-cart/",
+      "file": "categories/target-woocommerce-cart.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Target WooCommerce Cart",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/target-woocommerce-cart/"
+        }
+      ]
+    },
+    {
+      "title": "What Kadence Conversions Can Do Types Of Conversions",
+      "slug": "what-kadence-conversions-can-do-types-of-conversions",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/what-kadence-conversions-can-do-types-of-conversions/",
+      "file": "categories/what-kadence-conversions-can-do-types-of-conversions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What Kadence Conversions Can Do, Types of Conversions",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/what-kadence-conversions-can-do-types-of-conversions/"
+        }
+      ]
+    }
+  ]
 }

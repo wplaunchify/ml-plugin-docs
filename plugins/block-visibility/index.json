@@ -2,8 +2,122 @@
   "plugin_slug": "block-visibility",
   "plugin_name": "Block Visibility",
   "documentation_url": "https://www.blockvisibilitywp.com/knowledge-base/documentation/",
-  "last_scraped": "2026-07-05T01:37:34.999Z",
-  "total_pages": 0,
+  "last_scraped": "2026-07-05T17:02:13.683Z",
+  "total_pages": 26,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://www.blockvisibilitywp.com/knowledge-base/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 26,
+      "pages": [
+        {
+          "title": "Filter & Slot Reference",
+          "url": "https://blockvisibilitywp.com/knowledge-base/filter-slot-reference/"
+        },
+        {
+          "title": "How to Use the Cookie Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-cookie-control/"
+        },
+        {
+          "title": "Guide to Visibility Presets",
+          "url": "https://blockvisibilitywp.com/knowledge-base/guide-to-visibility-presets/"
+        },
+        {
+          "title": "How to Use the Metadata Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-metadata-control/"
+        },
+        {
+          "title": "How to Install",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-install/"
+        },
+        {
+          "title": "How to Use the URL Path Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-url-path-control/"
+        },
+        {
+          "title": "How to Use the Browser & Device Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-browser-device-control/"
+        },
+        {
+          "title": "Changelog",
+          "url": "https://blockvisibilitywp.com/knowledge-base/changelog/"
+        },
+        {
+          "title": "How to Use the Referral Source Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-referral-source-control/"
+        },
+        {
+          "title": "How to Use the Location Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-location-control/"
+        },
+        {
+          "title": "How to Use the Easy Digital Downloads Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-easy-digital-downloads-control/"
+        },
+        {
+          "title": "How to Use the WooCommerce Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-woocommerce-control/"
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "url": "https://blockvisibilitywp.com/knowledge-base/frequently-asked-questions/"
+        },
+        {
+          "title": "How to Use the Advanced Custom Fields Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-advanced-custom-fields-control/"
+        },
+        {
+          "title": "How to Use the Hide Block Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-hide-block-control/"
+        },
+        {
+          "title": "How to Use the WP Fusion Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-wp-fusion-control/"
+        },
+        {
+          "title": "How to Use the Screen Size Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-screen-size-control/"
+        },
+        {
+          "title": "How to Use the User Role Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-user-role-control/"
+        },
+        {
+          "title": "How to Use the Date & Time Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-date-time-control/"
+        },
+        {
+          "title": "How to Use the Query String Control",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-use-the-query-string-control/"
+        },
+        {
+          "title": "Guide to Visibility Controls and Control Sets",
+          "url": "https://blockvisibilitywp.com/knowledge-base/guide-to-visibility-controls-and-control-sets/"
+        },
+        {
+          "title": "Guide to Getting Started with Block Visibility",
+          "url": "https://blockvisibilitywp.com/knowledge-base/guide-to-getting-started-with-block-visibility/"
+        },
+        {
+          "title": "How to Configure the General Settings",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-configure-the-general-settings/"
+        },
+        {
+          "title": "Guide to Plugin Settings in Block Visibility",
+          "url": "https://blockvisibilitywp.com/knowledge-base/guide-to-plugin-settings-in-block-visibility/"
+        },
+        {
+          "title": "How to Configure the Visibility Control Settings",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-configure-the-visibility-control-settings/"
+        },
+        {
+          "title": "How to Configure the Block Manager",
+          "url": "https://blockvisibilitywp.com/knowledge-base/how-to-configure-the-block-manager/"
+        }
+      ]
+    }
+  ]
 }

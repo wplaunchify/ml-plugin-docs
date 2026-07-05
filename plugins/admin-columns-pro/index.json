@@ -1,9 +1,327 @@
 {
   "plugin_slug": "admin-columns-pro",
   "plugin_name": "Admin Columns Pro",
-  "documentation_url": "https://www.admincolumns.com",
-  "last_scraped": "2026-07-05T09:10:07.456Z",
-  "total_pages": 0,
-  "failed_urls_count": 55,
-  "sections": []
+  "documentation_url": "https://docs.admincolumns.com/",
+  "last_scraped": "2026-07-05T17:24:01.047Z",
+  "total_pages": 77,
+  "failed_urls_count": 7,
+  "sections": [
+    {
+      "title": "Article",
+      "slug": "article",
+      "url": "https://docs.admincolumns.com/article/",
+      "file": "categories/article.md",
+      "page_count": 77,
+      "pages": [
+        {
+          "title": "Gravity Forms & Admin Columns Integration",
+          "url": "https://docs.admincolumns.com/article/100-gravity-forms-integration"
+        },
+        {
+          "title": "How to use Sticky Headers",
+          "url": "https://docs.admincolumns.com/article/101-how-to-use-sticky-headers"
+        },
+        {
+          "title": "How to upgrade the ACF integration from v2 to v3",
+          "url": "https://docs.admincolumns.com/article/103-how-to-upgrade-the-acf-integration-from-v2-to-v3"
+        },
+        {
+          "title": "How to use the Column Resizer",
+          "url": "https://docs.admincolumns.com/article/104-how-to-use-the-column-resizer"
+        },
+        {
+          "title": "JetEngine & Admin Columns Integration",
+          "url": "https://docs.admincolumns.com/article/105-jetengine-admin-columns-integration"
+        },
+        {
+          "title": "How to use Column Ordering",
+          "url": "https://docs.admincolumns.com/article/106-how-to-use-column-ordering"
+        },
+        {
+          "title": "How to use Bulk Delete",
+          "url": "https://docs.admincolumns.com/article/107-how-to-use-bulk-delete"
+        },
+        {
+          "title": "How to use Conditional Formatting",
+          "url": "https://docs.admincolumns.com/article/108-how-to-use-conditional-formatting"
+        },
+        {
+          "title": "Admin Columns Pro 6.0 Changes",
+          "url": "https://docs.admincolumns.com/article/109-admin-columns-pro-6-0-changes"
+        },
+        {
+          "title": "How to use Horizontal Scrolling",
+          "url": "https://docs.admincolumns.com/article/115-how-to-use-horizontal-scrolling"
+        },
+        {
+          "title": "How to use the Primary Column",
+          "url": "https://docs.admincolumns.com/article/116-how-to-use-the-primary-column"
+        },
+        {
+          "title": "Upgrade guide for Admin Columns 7",
+          "url": "https://docs.admincolumns.com/article/117-how-to-upgrade-from-v6-to-v7"
+        },
+        {
+          "title": "How to use Metrics",
+          "url": "https://docs.admincolumns.com/article/119-how-to-use-metrics"
+        },
+        {
+          "title": "How to setup Custom List Tables",
+          "url": "https://docs.admincolumns.com/article/120-how-to-setup-custom-list-tables"
+        },
+        {
+          "title": "How to add Templates (Presets) for List Tables",
+          "url": "https://docs.admincolumns.com/article/121-how-to-add-template"
+        },
+        {
+          "title": "Class: ColumnFactory",
+          "url": "https://docs.admincolumns.com/article/122-class-columnfactory"
+        },
+        {
+          "title": "Hooks: Actions and Filters",
+          "url": "https://docs.admincolumns.com/article/15-hooks-and-filters"
+        },
+        {
+          "title": "How to create my own custom column",
+          "url": "https://docs.admincolumns.com/article/21-how-to-create-my-own-column"
+        },
+        {
+          "title": "Advanced Custom Fields & Admin Columns integration",
+          "url": "https://docs.admincolumns.com/article/23-advanced-custom-fields-integration-add-on"
+        },
+        {
+          "title": "Requirements",
+          "url": "https://docs.admincolumns.com/article/24-requirements"
+        },
+        {
+          "title": "The Basics: How to use Admin Columns",
+          "url": "https://docs.admincolumns.com/article/25-basics-how-to-use-admin-columns-pro"
+        },
+        {
+          "title": "How to use Inline Editing",
+          "url": "https://docs.admincolumns.com/article/27-how-to-use-inline-editing"
+        },
+        {
+          "title": "How to use Sortable Columns",
+          "url": "https://docs.admincolumns.com/article/34-how-to-enable-sorting"
+        },
+        {
+          "title": "Posts, Pages and Custom Post Types columns",
+          "url": "https://docs.admincolumns.com/article/36-posts-pages-and-custom-post-types-columns"
+        },
+        {
+          "title": "User Columns for WordPress",
+          "url": "https://docs.admincolumns.com/article/38-user-columns-for-wordpress"
+        },
+        {
+          "title": "Media Columns for WordPress",
+          "url": "https://docs.admincolumns.com/article/39-media-columns-for-wordpress"
+        },
+        {
+          "title": "Comment Columns for WordPress",
+          "url": "https://docs.admincolumns.com/article/40-comment-columns-for-wordpress"
+        },
+        {
+          "title": "WooCommerce Product Columns",
+          "url": "https://docs.admincolumns.com/article/41-woocommerce-product-columns"
+        },
+        {
+          "title": "WooCommerce Coupon Columns",
+          "url": "https://docs.admincolumns.com/article/43-woocommerce-coupon-columns"
+        },
+        {
+          "title": "WooCommerce User Columns",
+          "url": "https://docs.admincolumns.com/article/44-woocommerce-user-columns"
+        },
+        {
+          "title": "WooCommerce Product Variation Columns",
+          "url": "https://docs.admincolumns.com/article/45-woocommerce-product-variation-columns"
+        },
+        {
+          "title": "Meta Box & Admin Columns integration",
+          "url": "https://docs.admincolumns.com/article/47-meta-box-integration-columns"
+        },
+        {
+          "title": "The Events Calendar & Admin Columns Integration",
+          "url": "https://docs.admincolumns.com/article/48-the-events-calendar-integration-columns"
+        },
+        {
+          "title": "Ninjaforms & Admin Columns Integration (deprecated)",
+          "url": "https://docs.admincolumns.com/article/49-ninjaforms-integration-columns"
+        },
+        {
+          "title": "BuddyPress Integration Columns",
+          "url": "https://docs.admincolumns.com/article/50-buddypress-integration-columns"
+        },
+        {
+          "title": "Yoast SEO & Admin Columns integration",
+          "url": "https://docs.admincolumns.com/article/51-yoastseo-columns"
+        },
+        {
+          "title": "Taxonomy Columns for Wordpress",
+          "url": "https://docs.admincolumns.com/article/52-taxonomy-columns-for-wordpress"
+        },
+        {
+          "title": "Class: AC\\Column\\Context",
+          "url": "https://docs.admincolumns.com/article/53-class-ac-column"
+        },
+        {
+          "title": "Class: AC\\TableScreen",
+          "url": "https://docs.admincolumns.com/article/54-class-ac-listscreen"
+        },
+        {
+          "title": "Translate Admin Columns into your own language",
+          "url": "https://docs.admincolumns.com/article/55-how-to-translate-admin-columns"
+        },
+        {
+          "title": "Contribute to Admin Columns",
+          "url": "https://docs.admincolumns.com/article/56-contribute-to-admin-columns"
+        },
+        {
+          "title": "Template Functions and Code Snippets",
+          "url": "https://docs.admincolumns.com/article/57-code-snippets"
+        },
+        {
+          "title": "How to setup File Storage",
+          "url": "https://docs.admincolumns.com/article/58-how-to-setup-local-storage"
+        },
+        {
+          "title": "Custom Field Columns",
+          "url": "https://docs.admincolumns.com/article/59-custom-field-columns"
+        },
+        {
+          "title": "Define your license key in your wp-config.php",
+          "url": "https://docs.admincolumns.com/article/60-how-to-define-your-license-key-in-your-wp-config-php"
+        },
+        {
+          "title": "How to use Smart Filtering",
+          "url": "https://docs.admincolumns.com/article/61-how-to-use-smart-filtering"
+        },
+        {
+          "title": "Changelog",
+          "url": "https://docs.admincolumns.com/article/62-changelog"
+        },
+        {
+          "title": "Enable automatic updates on a multisite network",
+          "url": "https://docs.admincolumns.com/article/63-enable-automatic-updates-on-a-multisite-network"
+        },
+        {
+          "title": "How to find the Column Name or Type",
+          "url": "https://docs.admincolumns.com/article/65-how-to-find-the-column-id"
+        },
+        {
+          "title": "How to find the List Screen ID and Table ID",
+          "url": "https://docs.admincolumns.com/article/66-how-to-find-the-list-screen-id"
+        },
+        {
+          "title": "How to use Bulk Editing",
+          "url": "https://docs.admincolumns.com/article/67-how-to-use-bulk-editing"
+        },
+        {
+          "title": "Enable inline- and bulk-editing for custom field columns",
+          "url": "https://docs.admincolumns.com/article/68-enable-editing-for-custom-field-columns"
+        },
+        {
+          "title": "How to use Export",
+          "url": "https://docs.admincolumns.com/article/69-how-to-use-export"
+        },
+        {
+          "title": "How to use Quick Add",
+          "url": "https://docs.admincolumns.com/article/71-how-to-use-quick-add"
+        },
+        {
+          "title": "How to use Table Views",
+          "url": "https://docs.admincolumns.com/article/72-how-to-create-column-sets"
+        },
+        {
+          "title": "How to use Saved Filters",
+          "url": "https://docs.admincolumns.com/article/73-how-to-use-saved-filters"
+        },
+        {
+          "title": "WooCommerce & Admin Columns integration",
+          "url": "https://docs.admincolumns.com/article/74-woocommerce-integration-columns"
+        },
+        {
+          "title": "Network Sites Columns",
+          "url": "https://docs.admincolumns.com/article/76-network-sites-columns"
+        },
+        {
+          "title": "Pods & Admin Columns integration",
+          "url": "https://docs.admincolumns.com/article/77-pods-columns"
+        },
+        {
+          "title": "Toolset Types & Admin Columsn integration",
+          "url": "https://docs.admincolumns.com/article/78-toolset-types-columns"
+        },
+        {
+          "title": "How to activate your license",
+          "url": "https://docs.admincolumns.com/article/80-how-to-activate-your-license"
+        },
+        {
+          "title": "How many sites can I activate with my license",
+          "url": "https://docs.admincolumns.com/article/81-how-many-sites-can-i-activate-with-my-license"
+        },
+        {
+          "title": "Where can I find my license key",
+          "url": "https://docs.admincolumns.com/article/82-where-can-i-find-my-license-key"
+        },
+        {
+          "title": "Auto-Renewal Questions",
+          "url": "https://docs.admincolumns.com/article/83-auto-renewals"
+        },
+        {
+          "title": "How to replace generated PHP Settings with Local Storage",
+          "url": "https://docs.admincolumns.com/article/87-how-to-replace-generated-php-settings-with-local-storage"
+        },
+        {
+          "title": "How to use Import and Export Column Settings",
+          "url": "https://docs.admincolumns.com/article/88-how-to-use-import-and-export-column-settings"
+        },
+        {
+          "title": "Installation",
+          "url": "https://docs.admincolumns.com/article/9-installation"
+        },
+        {
+          "title": "How to display columns based on user or role",
+          "url": "https://docs.admincolumns.com/article/90-how-to-display-columns-based-on-user-or-role"
+        },
+        {
+          "title": "How to upgrade from  v3 to v4",
+          "url": "https://docs.admincolumns.com/article/91-how-to-upgrade-from-v3-to-v4"
+        },
+        {
+          "title": "Unable to update Admin Columns Pro 4.3.8",
+          "url": "https://docs.admincolumns.com/article/92-unable-to-update-admin-columns-pro-438"
+        },
+        {
+          "title": "WooCommerce Subscription Columns",
+          "url": "https://docs.admincolumns.com/article/93-woocommerce-subscription-columns"
+        },
+        {
+          "title": "Using Admin Columns Pro in a commercial theme of plugin",
+          "url": "https://docs.admincolumns.com/article/94-using-admin-columns-pro-in-a-commercial-theme-of-plugin"
+        },
+        {
+          "title": "Installing via Composer",
+          "url": "https://docs.admincolumns.com/article/95-installing-via-composer"
+        },
+        {
+          "title": "Subscription and License Key Questions",
+          "url": "https://docs.admincolumns.com/article/96-subscription-or-license-questions"
+        },
+        {
+          "title": "How to use Table Elements",
+          "url": "https://docs.admincolumns.com/article/97-how-to-use-hide-on-screen"
+        },
+        {
+          "title": "Class: AC\\Column\\CustomFieldContext",
+          "url": "https://docs.admincolumns.com/article/98-class-ac-column-custom-field"
+        },
+        {
+          "title": "How to upgrade or downgrade your license",
+          "url": "https://docs.admincolumns.com/article/99-how-to-change-your-license"
+        }
+      ]
+    }
+  ]
 }

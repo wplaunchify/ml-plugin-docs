@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Learndash Lms scraper
-        run: node scraper.js --slug=learndash-lms --mode=wp-api --url=https://www.learndash.com/support/ --post-type=kb_icon --name="LearnDash LMS"
+        run: node scraper.js --slug=learndash-lms --mode=wp-api --url=https://learndash.com/support --post-type=docs --taxonomy=doc_category --name="LearnDash LMS"
 
       - name: Check for changes
         id: changes

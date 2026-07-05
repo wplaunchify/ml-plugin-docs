@@ -1,9 +1,23 @@
 {
   "plugin_slug": "woocommerce-subscriptions-custom-price-string",
   "plugin_name": "WooCommerce Subscriptions - Custom Price String",
-  "documentation_url": "https://woocommerce.com/document/documentation/",
-  "last_scraped": "2026-07-05T12:25:57.554Z",
-  "total_pages": 0,
+  "documentation_url": "https://github.com/woocommerce/woocommerce-subscriptions-custom-price-string",
+  "last_scraped": "2026-07-05T16:49:26.477Z",
+  "total_pages": 1,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://github.com/woocommerce/woocommerce-subscriptions-custom-price-stringoverview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Search code, repositories, users, issues, pull requests...",
+          "url": "https://github.com/woocommerce/woocommerce-subscriptions-custom-price-string"
+        }
+      ]
+    }
+  ]
 }

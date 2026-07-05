@@ -1,9 +1,36 @@
 {
   "plugin_slug": "launchkit-pro",
   "plugin_name": "LaunchKit Pro",
-  "documentation_url": "https://wplaunchify.com/documentation/",
-  "last_scraped": "2026-07-05T17:29:48.757Z",
-  "total_pages": 0,
+  "documentation_url": "https://wordpress.org/plugins/launchkit/",
+  "last_scraped": "2026-07-05T17:27:12.260Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
-  "sections": []
+  "sections": [
+    {
+      "title": "Advanced",
+      "slug": "advanced",
+      "url": "https://wordpress.org/plugins/launchkit/advanced/",
+      "file": "categories/advanced.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "launchkit",
+          "url": "https://wordpress.org/plugins/launchkit/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/launchkit/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "launchkit",
+          "url": "https://wordpress.org/plugins/launchkit/"
+        }
+      ]
+    }
+  ]
 }
