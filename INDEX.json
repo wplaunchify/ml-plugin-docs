@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T18:19:55.616Z",
+  "last_updated": "2026-07-05T18:21:14.172Z",
   "total_plugins": 130,
   "plugins": [
     {
@@ -959,7 +959,7 @@
       "slug": "fluentsupport",
       "name": "Fluent Support",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-07-05T18:19:55.616Z",
+      "last_scraped": "2026-07-05T18:19:55.613Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -1357,7 +1357,7 @@
       "slug": "kadence-blocks-page-builder-toolkit-for-gutenberg-editor",
       "name": "Kadence Blocks — Page Builder Toolkit for Gutenberg Editor",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-07-05T17:17:31.299Z",
+      "last_scraped": "2026-07-05T18:21:12.030Z",
       "page_count": 153,
       "categories": [
         "access-the-design-library",
