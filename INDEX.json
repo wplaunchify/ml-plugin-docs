@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T20:22:12.880Z",
+  "last_updated": "2026-07-05T20:22:47.444Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -148,7 +148,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com/documentation/",
-      "last_scraped": "2026-07-05T18:30:09.328Z",
+      "last_scraped": "2026-07-05T18:30:09.324Z",
       "page_count": 13,
       "categories": [
         "changelog",
@@ -195,7 +195,7 @@
       "slug": "block-specific-spam-woo-orders",
       "name": "Block Specific Spam Woo Orders",
       "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
-      "last_scraped": "2026-07-05T18:24:00.082Z",
+      "last_scraped": "2026-07-05T18:24:00.081Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -647,7 +647,7 @@
       "slug": "fluentaffiliate-pro",
       "name": "FluentAffiliate Pro",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-07-05T19:30:14.112Z",
+      "last_scraped": "2026-07-05T19:30:14.109Z",
       "page_count": 53,
       "categories": [
         "admin-portal",
@@ -1682,7 +1682,7 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/",
-      "last_scraped": "2026-07-05T20:22:12.880Z",
+      "last_scraped": "2026-07-05T20:22:12.876Z",
       "page_count": 16,
       "categories": [
         "container-styling-settings",
@@ -1851,7 +1851,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/",
-      "last_scraped": "2026-07-05T17:19:42.156Z",
+      "last_scraped": "2026-07-05T20:22:45.060Z",
       "page_count": 52,
       "categories": [
         "add-gutenberg-editor-to-woocommerce",
@@ -2460,7 +2460,7 @@
       "slug": "menu-image",
       "name": "Menu Image",
       "documentation_url": "https://wordpress.org/plugins/menu-image/",
-      "last_scraped": "2026-07-05T18:26:51.612Z",
+      "last_scraped": "2026-07-05T18:26:51.610Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2761,7 +2761,7 @@
       "slug": "store-credit-for-woocommerce",
       "name": "Store Credit for WooCommerce",
       "documentation_url": "https://woocommerce.com/document/woocommerce-store-credit/",
-      "last_scraped": "2026-07-05T19:33:22.643Z",
+      "last_scraped": "2026-07-05T19:33:22.642Z",
       "page_count": 1,
       "categories": [
         "overview"
@@ -2965,7 +2965,7 @@
       "slug": "woocommerce-stripe-gateway",
       "name": "WooCommerce Stripe Gateway",
       "documentation_url": "https://woocommerce.com/document/stripe/",
-      "last_scraped": "2026-07-05T18:24:43.496Z",
+      "last_scraped": "2026-07-05T18:24:43.493Z",
       "page_count": 37,
       "categories": [
         "admin-experience",
@@ -3490,7 +3490,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://docs.wpsocialninja.com/guide/",
-      "last_scraped": "2026-07-05T18:28:21.120Z",
+      "last_scraped": "2026-07-05T18:28:21.116Z",
       "page_count": 92,
       "categories": [
         "advanced-features",
@@ -3546,51 +3546,10 @@
       ]
     },
     {
-      "slug": "wpfusion",
-      "name": "WP Fusion",
-      "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-05T00:43:57.902Z",
-      "page_count": 484,
-      "categories": [
-        "abandoned-cart-tracking",
-        "actions",
-        "advanced-developer-tutorials",
-        "affiliates",
-        "automators",
-        "content-management",
-        "crm-specific-docs",
-        "downloads",
-        "ecommerce",
-        "ecommerce-tracking",
-        "event-tracking",
-        "events",
-        "faq",
-        "filters",
-        "forums",
-        "functions",
-        "gamification",
-        "getting-started",
-        "installation-guides",
-        "lead-generation",
-        "learning-management",
-        "logins",
-        "media-tools",
-        "membership",
-        "multilingual",
-        "other",
-        "other-common-issues",
-        "page-builders",
-        "tutorials",
-        "user-roles",
-        "webhooks",
-        "webhooks-zapier"
-      ]
-    },
-    {
       "slug": "wpcodebox-2",
       "name": "WPCodeBox 2",
       "documentation_url": "https://docs.wpcodebox.com/",
-      "last_scraped": "2026-07-05T19:12:27.535Z",
+      "last_scraped": "2026-07-05T19:12:27.486Z",
       "page_count": 42,
       "categories": [
         "acf_options_pages",
@@ -3635,6 +3594,47 @@
         "woocommerce_hooks_insertion_points",
         "wordpress_autocomplete",
         "wpcodebox_ui"
+      ]
+    },
+    {
+      "slug": "wpfusion",
+      "name": "WP Fusion",
+      "documentation_url": "https://wpfusion.com/documentation/",
+      "last_scraped": "2026-07-05T00:43:57.902Z",
+      "page_count": 484,
+      "categories": [
+        "abandoned-cart-tracking",
+        "actions",
+        "advanced-developer-tutorials",
+        "affiliates",
+        "automators",
+        "content-management",
+        "crm-specific-docs",
+        "downloads",
+        "ecommerce",
+        "ecommerce-tracking",
+        "event-tracking",
+        "events",
+        "faq",
+        "filters",
+        "forums",
+        "functions",
+        "gamification",
+        "getting-started",
+        "installation-guides",
+        "lead-generation",
+        "learning-management",
+        "logins",
+        "media-tools",
+        "membership",
+        "multilingual",
+        "other",
+        "other-common-issues",
+        "page-builders",
+        "tutorials",
+        "user-roles",
+        "webhooks",
+        "webhooks-zapier"
       ]
     }
   ]
