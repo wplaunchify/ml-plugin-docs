@@ -235,14 +235,14 @@ These reference guides should not be considered instructive for specific problem
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -873,14 +873,14 @@ $order
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -901,7 +901,7 @@ This guide is designed for developers looking for a technical understanding of t
 
 ## Subscription Related Order Cache
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 A subscription can have a variety of [related orders](https://woocommerce.com/document/subscriptions/orders/), including:
 
@@ -976,7 +976,7 @@ get_post_meta()
 
 ### Subscription Related Order Cache Meta Keys
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The meta keys use for each related order cache are:
 
@@ -995,7 +995,7 @@ _subscription_resubscribe_order_ids_cache
 
 ## Customer’s Subscription Cache
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 A subscription’s data is a [superset of a WooCommerce order’s data](https://woocommerce.com/document/subscriptions/orders/). As a result, the way a subscription is linked to a customer is the same as the way an order is linked to a customer, where the 
 ```
@@ -1069,7 +1069,7 @@ get_user_meta()
 
 ## Subscription Cache Management Tools
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 To use the subscription cache management tool to create and delete the subscription caches:
 
@@ -1086,7 +1086,7 @@ To use the subscription cache management tool to create and delete the subscript
 
 ### Subscription Cache Generation via the Generator Tools
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Cache generation will normally happen just-in-time, meaning the first time it’s required, the data will be pulled from the source and then cached for future use. However, each cache can also be generated via the cache Generate Tools mentioned above.
 
@@ -1096,7 +1096,7 @@ That’s because the cache tools are designed to generate the cache without inte
 
 ## Cache Data Stores
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 To abstract the caching layer, and incorporate it in a way that can easily be extended, swapped or removed, the caching logic is implemented within data store classes for each type of data being cached.
 
@@ -1127,7 +1127,7 @@ Each of these classes are used as the data stores for accessing respective data,
 
 ### Using a Custom Related Order Data Store
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The 
 ```
@@ -1162,7 +1162,7 @@ function wcs_bypass_related_order_cache_layer( $class ) {
 
 ### Using a Custom Customer Subscription Data Store
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The 
 ```
@@ -1197,11 +1197,11 @@ function wcs_bypass_customer_subscriptions_cache_layer( $class ) {
 
 ## FAQs
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Why does subscription data need to be cached?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 WooCommerce Subscriptions builds on [WordPress custom post types](https://wordpress.org/documentation/article/what-is-post-type/) to [store subscription data](https://woocommerce.com/document/subscriptions/develop/data-structure/#subscription-product-data-structure-and-storage). As a result, much of its data is stored in the same database tables as other content types, like blog posts, website pages, WooCommerce orders, and data from other plugins.
 
@@ -1218,7 +1218,7 @@ To address this, many items of known subscription data will be migrated to separ
 
 ### How does the subscription cache work?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Normally, to find a piece of data, like the IDs of orders related to a subscription, a database query is run against the source of that data.
 
@@ -1242,7 +1242,7 @@ After updating to Subscriptions 2.3, known slow queries will run just once. From
 
 ### How long does the subscription cache last?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 In some systems, like [WordPress’ transient system](https://developer.wordpress.org/apis/transients/), cached data will expired after a pre-defined period of time.
 
@@ -1252,7 +1252,7 @@ It is possible to maintain the cache indefinitely by keeping it up-to-date whene
 
 ### Why isn’t the Parent Order in the related order cache?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Parent Orders are linked to a subscription using the 
 ```
@@ -1282,14 +1282,14 @@ As a result, it is not necessary cache the parent orders for a subscription.
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -1407,14 +1407,14 @@ true
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -1917,14 +1917,14 @@ More information about using these commands can be found on the Action Scheduler
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -2029,14 +2029,14 @@ With that in place, your customers should see this notice confirming they do wan
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -2557,14 +2557,14 @@ wcs_get_subscription()
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -2659,14 +2659,14 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -3520,14 +3520,14 @@ payment_retry
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -4333,14 +4333,14 @@ woocommerce_update_options()
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -5247,14 +5247,14 @@ Get the total sign-up fee amount charged at the outset of the subscription, if a
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -5614,14 +5614,14 @@ $user_id
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -5845,14 +5845,14 @@ false
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -6091,14 +6091,14 @@ $order_date
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -6241,14 +6241,14 @@ As a result, the **Recurring Totals** section was chosen as it was the most conc
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -6406,14 +6406,14 @@ For example, the 3 screenshots below show:
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -7378,14 +7378,14 @@ PHP Fatal error
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -7405,7 +7405,7 @@ If you are a developer of a payment gateway and have not yet provided support fo
 
 ## Payment Method Change Overview
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 This feature provides a way for payment gateways to allow store managers to add or edit a subscription’s payment method and meta data on the new **Edit Subscription** administration screen.
 
@@ -7419,7 +7419,7 @@ Adding support for this feature can be achieved with any payment gateway that us
 
 ## Step 1. Declare Support for Changing Payment Methods
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 By default, Subscriptions does not allow store managers to change or modify the payment gateway on the **Edit Subscription** screen to anything other than the built-in **Manual Renewals** gateway.
 
@@ -7461,7 +7461,7 @@ Once your gateway declares support, it is included as an option on the **Edit Su
 
 ## Step 2: Declare your Payment Gateway’s Meta Data
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To allow store managers to correctly configure automatic payments with your payment gateway via the **Edit Subscription** screen, you also need to tell Subscriptions about the meta data required by your payment gateway for processing automatic payments. This is done using the filter: 
 ```
@@ -7576,7 +7576,7 @@ update_option( 'meta_key', $new_data )
 
 ### Meta Data Declaration Example: Stripe
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Here’s an example of how the Stripe payment gateway uses this filter to allow administrators to change the 
 ```
@@ -7628,7 +7628,7 @@ class WC_Gateway_Stripe_Addons extends WC_Gateway_Stripe {
 
 ## Step 3: Validate Meta Data
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To ensure store managers are inputting correct data, an optional but highly recommended feature you can implement is validation of the data before it is saved to the subscription.
 
@@ -7662,7 +7662,7 @@ function my_validation_function( $payment_method_id, $payment_meta ) {    if ( '
 
 ### Validation Example: Stripe
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 The following codes demonstrate the validation function used by the Stripe Payment Gateway to validate its data.
 
@@ -7705,13 +7705,13 @@ class WC_Gateway_Stripe_Addons extends WC_Gateway_Stripe {
 
 ## Full Example: Simplify Commerce
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 For a full example, see the code required to add support to Simplify Commerce in WooCommerce core in [this commit](https://github.com/woocommerce/woocommerce/commit/4c8e3788b3b19b8e0f6536616fdf7b74a0f1b2ca). This was submitted as part of the [Simplify Commerce Subscriptions v2.0 compatibility pull request](https://github.com/woocommerce/woocommerce/pull/8657).
 
 ## Testing
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Once you have completed the steps above, your gateway should:
 
@@ -7737,11 +7737,11 @@ To ensure that automatic recurring payments work with the new meta data:
 
 ## FAQ
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 ### I haven’t added support but my gateway is still showing as an option on the Edit Subscription screen?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If a subscription is purchased via the normal checkout process, the payment method used during checkout will be shown on the **Edit Subscription** screen because the meta data required for automatic payment should have been collected during checkout.
 
@@ -7749,7 +7749,7 @@ If the store manager changes the payment method for the subscription from your p
 
 ### How can I save the payment meta data for the subscription using my own custom method?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 We have provided an action hook that will allow you to save the payment meta data wherever you like, but to ensure you stop us from saving the data, you will need to make sure the table_name does not equal post_meta, postmeta, user_meta, usermeta or options. Then, you should make sure your plugin catches the 
 ```
@@ -7807,14 +7807,14 @@ add_action( 'wcs_save_other_payment_meta', 'save_meta_in_comments', 10, 4 );
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -7867,14 +7867,14 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -8080,14 +8080,14 @@ function apply_recurring_fees( $is_recurring, $fee, $cart ) {
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -8177,14 +8177,14 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -8312,14 +8312,14 @@ add_filter( 'wcs_upgrade_subscription_meta_to_copy', 'eg_do_not_copy_tracking_co
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 

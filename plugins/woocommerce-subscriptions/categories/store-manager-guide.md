@@ -49,6 +49,16 @@ If disabled, the product type drop-down does not include these options when crea
 
 If a merchant changes a simple or variable subscription product to a different product type and saves, the subscription options will no longer appear in the dropdown for that product.
 
+You may notice a deprecation message for the **Simple Subscription** and **Variable Subscription** product types.
+
+![](https://woocommerce.com/wp-content/uploads/2026/07/Deprecation-message.png?strip=all&w=704)
+
+This message does **not** mean these product types are being removed or that your existing products will stop working. Any Simple Subscription or Variable Subscription products you’ve already created will continue to function as they do today, and disabling this setting will not affect them.
+
+Instead, the message reflects the direction of future development. Going forward, new features and improvements will focus on **subscription plans**, which allow you to add subscriptions to **Simple**, **Variable**, **Product Bundle**, and **Composite** products while providing the same functionality as the dedicated subscription product types.
+
+There is currently no fixed removal date and no planned automatic migration. If your store already uses the dedicated subscription product types, you can continue using them. However, for any new subscription products you create, we recommend using subscription plans on standard Simple and Variable products.
+
 ## Add to Subscription
 
 [↑ Back to top](#doc-title)
@@ -423,14 +433,14 @@ More at: [How to Use Shortcodes](https://woocommerce.com/document/woocommerce-sh
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -448,7 +458,7 @@ This guide provides an overview of the Subscriptions Reports feature. It is inte
 
 ## Viewing Reports
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 To view the Subscriptions Reports:
 
 1. Go to **WooCommerce > Reports**.
@@ -457,7 +467,7 @@ To view the Subscriptions Reports:
 
 ## Subscription Events by Date Report
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 The Subscription Events by Date report displays aggregated data for the most important events that occur during the lifecycle of your subscriptions, like sign-ups, renewals and cancellations. This data can be displayed over a number of predefined durations, like current year, current month, last month or last 7 days. They can also be displayed over a custom date range.
 
 The following data is displayed in the Subscription Events by Date report:
@@ -480,7 +490,7 @@ This report makes it possible to review historical trends across many different 
 ![Subscription Report Screenshot: Subscription Events by Date ](https://woocommerce.com/wp-content/uploads/2016/09/report-subscription-events-by-date.png?w=950)Subscription Events by Date Report
 ## Upcoming Recurring Revenue Report
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 The Upcoming Recurring Revenue report provides a basic forecast for your subscription revenue.
 
 The report determines the number of renewal events that will occur during a given period of time in the future. It does this by looking at the next payment date, billing period and interval for each of your active subscriptions and determining how many payments will occur before the end of the report’s duration, or the subscription’s end date, whichever comes first.
@@ -497,7 +507,7 @@ For these reasons, the upcoming recurring revenue forecasts should be treated as
 For this report, the report’s time period covers the future, whereas other WooCommerce and Subscription reports cover the past.
 ## Retention Rate Report
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 > Retention is the foundation of growth; without keeping your existing users, you’re always filling a leaky bucket.
 
 The Subscription Events by Date report displays churn over time. However, it does not provide any insight into the average length of your subscriptions.
@@ -511,7 +521,7 @@ Unlike other Subscription reports, the Retention Rate report does not provide a 
 ![Subscriber Retention Rate Report](https://woocommerce.com/wp-content/uploads/2016/09/report-retention-rate.png?w=950)Subscriber Retention Rate Report
 ### Subscription Lifespan
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 The *lifespan* for a subscription is the total time between when it is first created and when it ends, either by cancellation or expiration. Subscriptions doesn’t take into consideration how long the subscription is *active* or *on-hold* during these two points. It does not record that data.
 
 For example, a subscription that is created on 1st January 2016 and expires on 1st January 2017 has a lifespan of 12 months, regardless of whether it is *on-hold* for some of those months.
@@ -522,19 +532,19 @@ For example, an annual subscription created on 1st January 2016 and cancelled on
 
 ### Retention Period for X-Axis
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 The period used to plot the lifespan of your subscriptions on the x-axis depends on the length of the longest subscription lifespan in your store.
 
 If any subscription in your store has a lifespan over one year, the chart will plot retention by month. If a subscription has a lifespan of more than 6 months but not more than a year, it will plot it using weeks, otherwise, it will use days.
 
 ### Unended Base Point
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 The Retention Rate chart uses the number of subscriptions that have not yet ended as the base point for the y-axis, rather than a 0 base. This helps to exaggerate changes in the chart.
 
 ## Subscriptions by Product Report
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 The Subscriptions by Product report provides an overview of the popularity and revenue for your subscription products and subscription product variations. Specifically, this report details:
 
 - **Subscription Counts by Product**: Number of subscriptions that include this product as a line item and have a status other than pending or trashed.
@@ -549,7 +559,7 @@ Subscription product variations are also included in the*‘Subscription Product
 If you’re unfamiliar with differences between a subscription and subscription product, refer to the [Subscription Product vs Subscription](https://docs.woothemes.com/document/subscriptions/subscription-product-vs-subscription/) guide.
 ## Subscriptions by Customer Report
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 The Subscriptions by Customer report provides an overview of your most loyal and valuable customers.
 
 This report provides a breakdown of:
@@ -562,7 +572,7 @@ This report provides a breakdown of:
 ![Subscriptions by Customer Report](https://woocommerce.com/wp-content/uploads/2016/09/report-subscriptions-by-customer1.png?w=950)Subscriptions by Customer Report
 ## Failed Payment Retries Report
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 The Failed Payment Retries report provides an overview of the attempts to automatically retry recurring payments that previously failed via the [Subscriptions’ Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/).
 
 This report details:
@@ -577,7 +587,7 @@ This report details:
 This report is only available when the [Failed Payment Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/) is enabled.
 ## WooCommerce Status Widget
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 In addition to data on the **WooCommerce > Reports** administration screens, Subscriptions also adds data about subscription related events to the **WooCommerce Status** widget on the main [WordPress Dashboard](https://codex.wordpress.org/Dashboard_Screen).
 
 Data in this widget includes the following for current calendar month:
@@ -588,10 +598,10 @@ Data in this widget includes the following for current calendar month:
 ![WooCommerce Status Widget with Subscription Signups and Renewals](https://woocommerce.com/wp-content/uploads/2016/09/woocommerce-status-widget-with-subscription-signup-and-renewals.png?w=950)WooCommerce Status Widget with Subscription Signups and Renewals
 ## FAQ
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 ### How is report data cached?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 Report data is cached to speed up the load time of the Reports. Report data is cached in the background to avoid slowing down page load times for your customers or other administrators. These requests are initiated via [WordPress’s Cron system](https://developer.wordpress.org/plugins/cron/). When and exactly how the report data is cached depends on the size of your site’s database.
 
 On small sites with less than 3,000 subscriptions and 25,000 orders, the process to update the cache for report data is scheduled to be 5 minutes after any event that would invalidate the existing cache. The update process for each report is then separated 5 minutes to avoid running the resource intensive queries on your site’s database at the same time. This means the cache of report data may fall out-of-sync by up to 30 minutes with the site’s current data.
@@ -603,7 +613,7 @@ If your site is using the later method, a notice indicating this will be display
 ![Subscriptions Reports Cache Update Notice](https://woocommerce.com/wp-content/uploads/2016/09/subscriptions-report-cache-update-notice.png?w=950)Subscriptions Reports Cache Update Notice
 ### How can I disable report cache updates?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 On larger sites with over a hundred thousand rows in the posts table, which generally means over 100,000 orders, subscriptions or other WordPress post types, like blog posts or pages, the report queries may lead to MySQL errors, often seen by 502 Bad Gateway HTTP errors.
 
 To avoid these errors without having to fine tune MySQL, you can [disable report cache updates](https://github.com/Prospress/woocommerce-subscriptions-disable-report-cache-updates) using the free plugin [here](https://github.com/Prospress/woocommerce-subscriptions-disable-report-cache-updates). This prevents the queries running automatically in the background to update the report data. The database queries will still run when loading the Reports page to generate the data.
@@ -612,19 +622,19 @@ These queries will be rewritten once WooCommerce and Subscriptions move to custo
 
 ### What is a “cache invalidating” event?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 Cache updates are only run after a *cache invalidating* event. These are events which add, remove or modify some piece of data that is included in a report.
 
 The events which invalidate the cache vary depending on the report. Example events are a new renewal payment, subscription status change or subscription upgrade/downgrade.
 
 ### Why do reports on custom time periods load more slowly than default time periods?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 When loading reports for pre-defined time periods, like *Last Month*, cached data is used. However, when loading reports for customer time periods, like 18th January to 13th November, the report data must be generated. It is not feasible to cache report data for all possible time periods. This means viewing a report for a custom time period will often be slower than viewing a report for a pre-defined period.
 
 ### How do I get more advanced reporting?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 To get access to additional reports or more fine grained control over reports, there are two options:
 
 1. Use [Metorik reports for Woo Subscriptions](https://metorik.com/subscriptions). Connecting your store to Metorik provides reports for historical data, not just events which occur after connecting to Metorik.
@@ -646,14 +656,14 @@ To get access to additional reports or more fine grained control over reports, t
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 

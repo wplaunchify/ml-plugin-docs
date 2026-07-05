@@ -18,7 +18,7 @@ When a customer purchases a subscription with a defined length, it will [renew]
 
 ## Resubscribe to the Subscription after expiration
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 After their subscription expires, customers can login to your store and [create a new subscription](https://woocommerce.com/document/subscriptions/customers-view/#subscription-management) to that exact product by **resubscribing** from their **My Account** page. This is the simplest way for a customer to extend a subscription with an expiration. After clicking to resubscribe the customer is taken directly to checkout to purchase a new subscription that matches the one that had expired.
 
@@ -54,7 +54,7 @@ Customers can then use the [upgrade process](https://woocommerce.com/document/su
 
 ## What About Altering the Expiration Date?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Although the two other methods mentioned allow your customers to extend their subscriptions, they both create a *new* subscription with the extended expiration date rather than changing the expiration date of the *existing* subscription.
 
@@ -66,7 +66,7 @@ That said, if your payment gateway supports changing payment dates on existing s
 
 ## Questions and support
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 **Something missing from this documentation? Still have questions and need assistance?**
 
@@ -87,14 +87,14 @@ That said, if your payment gateway supports changing payment dates on existing s
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 

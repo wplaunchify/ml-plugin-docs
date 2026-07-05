@@ -78,6 +78,17 @@ That said, we are aware of this feature request and intend to offer it in a futu
 
 [↑ Back to top](#doc-title)
 
+### What does the deprecation message on the Simple and Variable Subscription product types mean?
+
+[↑ Back to top](#doc-title)
+
+On the Subscriptions settings page (**WooCommerce > Settings > Subscriptions**), under **Subscription Product Creation**, you may notice a **deprecation message** relating to the **Simple Subscription** and **Variable Subscription** product types. This does not mean the product types are being removed, and **nothing will break**.
+
+- **Existing products keep working.** If your store already uses Simple or Variable Subscription products, they remain fully supported. Nothing breaks, and you don’t need to change anything.
+- **No forced migration.** There are no plans to automatically convert or remove existing subscription products. Migrating product types can be risky for stores with custom integrations, so this is not something being forced on merchants.
+- **No fixed removal date.** The message reflects that new development is focused on adding **subscription plans** to **Simple**, **Variable**, **Product Bundle**, and **Composite** products — not that the product types are disappearing in a specific release.
+- **For new subscription products**, we recommend using **subscription plans**. Subscription plans can be added to **Simple**, **Variable**, **Product Bundle**, and **Composite** products and provide the same functionality as the dedicated **Simple Subscription** and **Variable Subscription** product types.
+
 ### How can I offer a subscription with a variable billing period?
 
 [↑ Back to top](#doc-title)
@@ -98,7 +109,7 @@ Here is a screenshot of a grouped product with subscriptions at three different 
 
 ![](https://woocommerce.com/wp-content/uploads/2020/04/subscriptions-faq-grouped-product.png?w=980)Variable Recurring Billing Periods on a Grouped Product
 
-The [All Products for Woo Subscriptions](https://woocommerce.com/products/all-products-for-woocommerce-subscriptions/) plugin can be used to create a product that has both one time purchase options and subscription options within the same product
+With WooCommerce Subscriptions, you can offer both one-time purchase and subscription options for the same product.
 
 ### How can I enable customers to add additional services to their subscription?
 
@@ -738,14 +749,14 @@ ipn
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 

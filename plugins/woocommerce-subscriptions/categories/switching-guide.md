@@ -160,14 +160,14 @@ The Switch button is displayed in your customer’s detailed view of their subsc
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -226,14 +226,14 @@ To maintain the discount on the new subscription, the customer needs to apply th
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -432,14 +432,14 @@ To change this text, either to remove it completely or make it display something
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -507,14 +507,14 @@ After completing [steps 1 and 2 of the switch process](https://woocommerce.com/d
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -591,14 +591,14 @@ The screenshot below highlights the **Related Orders** meta box on the **Edit Su
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
-				![](https://woocommerce.com/wp-content/uploads/2019/03/All_Products_Woo_Subscriptions_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
-### All Products for WooCommerce Subscriptions
+### Product Add-Ons
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Offer your existing products on subscription, with this powerful add-on for WooCommerce Subscriptions.
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
