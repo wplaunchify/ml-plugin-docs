@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T22:18:40.331Z",
+  "last_updated": "2026-07-05T22:19:27.461Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -590,7 +590,7 @@
       "slug": "fluent-support",
       "name": "Fluent Support",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-07-05T21:24:51.449Z",
+      "last_scraped": "2026-07-05T21:24:51.447Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -1835,7 +1835,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-insights/",
-      "last_scraped": "2026-07-05T20:30:00.740Z",
+      "last_scraped": "2026-07-05T20:30:00.737Z",
       "page_count": 7,
       "categories": [
         "a-b-testing-101",
@@ -1910,7 +1910,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-      "last_scraped": "2026-07-05T20:29:08.854Z",
+      "last_scraped": "2026-07-05T20:29:08.849Z",
       "page_count": 30,
       "categories": [
         "captcha",
@@ -2594,7 +2594,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-07-05T21:23:28.666Z",
+      "last_scraped": "2026-07-05T21:23:28.663Z",
       "page_count": 11,
       "categories": [
         "detective-mode",
@@ -2853,7 +2853,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/",
-      "last_scraped": "2026-07-05T22:18:40.331Z",
+      "last_scraped": "2026-07-05T22:18:40.328Z",
       "page_count": 13,
       "categories": [
         "activation",
@@ -3061,7 +3061,7 @@
       "slug": "wp-all-export-user-export-add-on-pro",
       "name": "WP All Export - User Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-05T21:22:37.652Z",
+      "last_scraped": "2026-07-05T21:22:37.647Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -3071,7 +3071,7 @@
       "slug": "wp-all-import-acf-add-on-free",
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-05T20:25:24.753Z",
+      "last_scraped": "2026-07-05T20:25:24.748Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
@@ -3101,7 +3101,7 @@
       "slug": "wp-all-import-user-import-add-on-pro",
       "name": "WP All Import - User Import Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-28T22:20:19.555Z",
+      "last_scraped": "2026-07-05T22:19:25.292Z",
       "page_count": 198,
       "categories": [
         "uncategorized"
