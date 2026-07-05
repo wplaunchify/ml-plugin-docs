@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T12:32:56.390Z",
+  "last_updated": "2026-07-05T12:33:32.496Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -268,7 +268,7 @@
       "slug": "fluent-forms-signature-addon",
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-07-01T08:50:49.326Z",
+      "last_scraped": "2026-07-05T12:33:30.976Z",
       "page_count": 0,
       "categories": []
     },
