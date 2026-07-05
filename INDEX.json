@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T17:28:00.752Z",
+  "last_updated": "2026-07-05T17:28:12.694Z",
   "total_plugins": 130,
   "plugins": [
     {
@@ -334,7 +334,7 @@
       "slug": "fluent-support-pro",
       "name": "Fluent Support Pro",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-07-05T17:28:00.752Z",
+      "last_scraped": "2026-07-05T17:28:00.749Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -546,7 +546,7 @@
       "slug": "fluentcrm-pro",
       "name": "FluentCRM Pro",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-06-28T17:29:23.126Z",
+      "last_scraped": "2026-07-05T17:28:10.759Z",
       "page_count": 0,
       "categories": []
     },
