@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T17:24:41.023Z",
+  "last_updated": "2026-07-05T17:26:19.528Z",
   "total_plugins": 130,
   "plugins": [
     {
@@ -554,7 +554,7 @@
       "slug": "fluentforms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/documentation/",
-      "last_scraped": "2026-06-28T17:26:39.642Z",
+      "last_scraped": "2026-07-05T17:26:17.723Z",
       "page_count": 457,
       "categories": [
         "account-management",
@@ -1030,7 +1030,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-07-05T17:24:41.023Z",
+      "last_scraped": "2026-07-05T17:24:41.022Z",
       "page_count": 1,
       "categories": [
         "advanced"
