@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T12:35:42.926Z",
+  "last_updated": "2026-07-05T12:35:55.837Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1288,7 +1288,7 @@
       "slug": "wp-fusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-06-28T12:32:27.392Z",
+      "last_scraped": "2026-07-05T12:35:46.227Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
