@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T09:50:50.048Z",
+  "last_updated": "2026-07-05T09:51:18.899Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -715,7 +715,7 @@
       "slug": "hide-from-search",
       "name": "Hide from Search",
       "documentation_url": "https://wordpress.org/plugins/mpress-hide-from-search/",
-      "last_scraped": "2026-07-05T09:50:50.048Z",
+      "last_scraped": "2026-07-05T09:50:50.047Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -942,7 +942,7 @@
       "slug": "ninja-tables-pro",
       "name": "Ninja Tables Pro",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-07-05T09:49:47.944Z",
+      "last_scraped": "2026-07-05T09:49:47.943Z",
       "page_count": 0,
       "categories": []
     },
@@ -1060,7 +1060,7 @@
       "slug": "simple-post-redirect",
       "name": "Simple Post Redirect",
       "documentation_url": "https://wordpress.org/plugins/simple-post-redirect/",
-      "last_scraped": "2026-07-05T09:50:15.567Z",
+      "last_scraped": "2026-07-05T09:50:15.566Z",
       "page_count": 1,
       "categories": [
         "advanced"
@@ -1258,9 +1258,11 @@
       "slug": "wp-all-import-acf-add-on-pro",
       "name": "WP All Import - ACF Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-06-28T10:01:45.674Z",
-      "page_count": 0,
-      "categories": []
+      "last_scraped": "2026-07-05T09:51:17.141Z",
+      "page_count": 198,
+      "categories": [
+        "uncategorized"
+      ]
     },
     {
       "slug": "wp-all-import-pro",
