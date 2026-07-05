@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T08:02:08.780Z",
+  "last_updated": "2026-07-05T08:28:37.943Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -40,7 +40,7 @@
       "slug": "affiliatewp",
       "name": "AffiliateWP",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-05T07:12:13.243Z",
+      "last_scraped": "2026-07-05T08:28:37.943Z",
       "page_count": 0,
       "categories": []
     },
