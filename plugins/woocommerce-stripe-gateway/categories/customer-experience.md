@@ -296,7 +296,15 @@ Known incompatibilities with express checkout buttons include but are not limite
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+
+### WooCommerce Tax
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
 
@@ -304,14 +312,6 @@ Known incompatibilities with express checkout buttons include but are not limite
 			by [Klarna](https://woocommerce.com/vendor/klarna)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
-
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -490,7 +490,15 @@ Note that as long as your Stripe account is restricted to test mode only, you wi
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+
+### WooCommerce Tax
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
 
@@ -498,14 +506,6 @@ Note that as long as your Stripe account is restricted to test mode only, you wi
 			by [Klarna](https://woocommerce.com/vendor/klarna)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
-
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
