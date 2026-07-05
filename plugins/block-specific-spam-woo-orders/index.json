@@ -2,8 +2,8 @@
   "plugin_slug": "block-specific-spam-woo-orders",
   "plugin_name": "Block Specific Spam Woo Orders",
   "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
-  "last_scraped": "2026-06-28T18:26:04.537Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-05T18:24:00.081Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Block Specific Spam Woo Orders",
           "url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Block Specific Spam Woo Orders",
+          "url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/"
         }
       ]
     }
