@@ -1,0 +1,671 @@
+{
+  "plugin_slug": "wpcodebox-2",
+  "plugin_name": "WPCodeBox 2",
+  "last_scraped": "2026-07-05T19:12:27.483Z",
+  "total_pages": 42,
+  "failed_urls": [],
+  "pages": [
+    {
+      "title": "WPCodeBox 2 Documentation",
+      "url": "https://docs.wpcodebox.com/",
+      "category": "Overview",
+      "content": "Home\n# WPCodeBox 2 Documentation\n\n## Overview video:\n\n## Common topics:\n\n### Troubleshooting\n\n[What to do if a snippet throws an error, how to enable safe mode](/safe_mode).\n\n[What to do if a snippet doesn't run](/snippet_doesnt_run).\n\n[Common notices, warnings and errors](/common_errors).\n\n### Getting Started\n\n[Installation](/installation).\n\n[The WPCodeBox UI](/wpcodebox_ui).\n\n[The Condition Builder](/condition_builder).\n\n### How to's\n\n[How to add Google Tag Manager to your site using WPCodeBox](/google_tag_manager).\n\n[Register an ACF options page](/acf_options_pages).\n\n[How to use hooks instead of conditions](/use_hooks_instead_of_conditions).\n\n## Learn to code:\n\nFor more topics, check out the menu on the left, or use the search at the top.\n\n[Migrating from v1](/migrating)",
+      "headings": [
+        "Overview video:",
+        "Common topics:",
+        "Troubleshooting",
+        "Getting Started",
+        "How to's",
+        "Learn to code:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Register an ACF Options Page using WPCodeBox",
+      "url": "https://docs.wpcodebox.com/acf_options_pages",
+      "category": "Acf_options_pages",
+      "content": "Add an ACF Options Page\n# Register an ACF Options Page using WPCodeBox\n\nTo register an ACF Options Page, you need to create a new snippet, and leave all its settings to the default values.\n\nThen, you need to add the following code to the snippet:\n\n```\n<?php\n \nif( function_exists('acf_add_options_page') ) {\n \n    acf_add_options_page();\n \n}\n```\nThen, you need to save the snippet and enable it, and you will see the ACF Options Page in the WordPress admin menu.\n\n[Add Google Tag Manager to WordPress](/google_tag_manager)[Display an ACF Field in a Shortcode](/display_acf_field_in_a_shortcode)",
+      "headings": [],
+      "code_blocks": [
+        "<?php\n \nif( function_exists('acf_add_options_page') ) {\n \n    acf_add_options_page();\n \n}",
+        "<?php\n \nif( function_exists('acf_add_options_page') ) {\n \n    acf_add_options_page();\n \n}"
+      ]
+    },
+    {
+      "title": "How to add external CSS code to your WordPress site",
+      "url": "https://docs.wpcodebox.com/add_external_css_code",
+      "category": "Add_external_css_code",
+      "content": "How to add external CSS code to your WordPress site\n# How to add external CSS code to your WordPress site\n\nWPCodeBox makes it easy to add external CSS code to your site. This is useful when you want to include 3rd party libraries from external CDNs.\n\nTo enqueue external CSS code, we are going to select \"CSS (External File)\" as the type when creating a snippet.\n\nThen, you can input the URL to your external CSS file under \"External CSS File URL\":\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fcss_external_file.png&w=828&q=75)\nYou can set it to run on the page where you need the external CSS code to be included.\n\n[How to add external JS code to your WordPress site](/add_external_js_code)[How to run your code on a specific WooCommerce hook or action](/woocommerce_hooks_insertion_points)",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "How to add external JS code to your WordPress site",
+      "url": "https://docs.wpcodebox.com/add_external_js_code",
+      "category": "Add_external_js_code",
+      "content": "How to add external JS code to your WordPress site\n# How to add external JS code to your WordPress site\n\nWPCodeBox makes it easy to add external JS code to your site. This is useful when you want to include 3rd party libraries from external CDNs.\n\nTo enqueue external JS code, we are going to select \"JavaScript (External File)\" as the type when creating a snippet.\n\nThen, you can input the URL to your external JS file under \"External JS File URL\":\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fjs_external_file.png&w=828&q=75)\nYou can also change here the script tag options, to define how the script loads, and then set it to run on the page where you need the external JS code to be included.\n\nIf you need to add a snipept from CDNJS, you can use our CDNJS integration feature. See [CDNJS Integration](/cdnjs_integration) for more details.\n\n[How to target the Oxygen Builder UI using the Condition Builder](/target_oxygen_builder)[How to add external CSS code to your WordPress site](/add_external_css_code)",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "How to Add PHP Code Snippets to Your WordPress Site with WPCodeBox",
+      "url": "https://docs.wpcodebox.com/add_php_code",
+      "category": "Add_php_code",
+      "content": "Add PHP Code Snippets to your WordPress site\n# How to Add PHP Code Snippets to Your WordPress Site with WPCodeBox\n\nWPCodeBox makes adding PHP code snippets to your WordPress site a breeze! With just a few simple steps, you can create and manage custom PHP code snippets effortlessly. Follow this guide to get started:\n\n## Creating a New PHP Snippet\n\n1. Click on the \"New Snippet\" button located in the left pane of WPCodeBox. This will open up a new snippet creation window.\n2. Fill out the required fields:\n\n- **Title**: Give your snippet a descriptive title to easily identify its purpose.\n- **Description**: Provide a brief description of what the snippet does or its intended use.\n- **How to Run**: Select the appropriate option to specify how the snippet should be executed (e.g., on 'init', 'wp_footer', etc.).\n3. You'll find an interactive text editor that supports various languages, including PHP, JavaScript, and HTML. Since the default Code Type is PHP, you don't need to make any changes to indicate PHP code.\n4. Start pasting your PHP code into the text editor, ensuring to include the opening PHP tag \n```\n<?php\n```\n\n.\n\n## Saving and Managing Snippets\n\n1. To save your changes, simply click the \"Save\" button above the text editor or use the keyboard shortcut Ctrl + S (Command + S on Mac).\n2. By default, when you save a snippet, it will be disabled to prevent potential errors on your site. This allows you to review and test the code before enabling it to run.\n3. Once you are satisfied with your code and have tested it thoroughly, you can enable the snippet to make it functional on your WordPress site.\n\n## Get Creative with WPCodeBox\n\nWPCodeBox provides a user-friendly platform for organizing and managing your custom PHP code snippets. With the ability to enable or disable snippets, you have full control over their execution, ensuring a seamless and error-free experience for your site visitors.\n\nStart adding PHP magic to your WordPress site today with WPCodeBox!\n\n[Save Code Snippets to the Cloud](/cloud)[Download a Code Snippet from the Repository](/download_code)",
+      "headings": [
+        "Creating a New PHP Snippet",
+        "Saving and Managing Snippets",
+        "Get Creative with WPCodeBox"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Anonymous Function – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/anonymous_function",
+      "category": "Anonymous_function",
+      "content": "Generate an Anonymous Function\n### Generates Anonymous Function\n\nWhen adding filters and functions, you can automatically generate an anonymous function with the correct parameters and return types\n\nThis is done by choosing the \"Anonymous Function\" option when typing either a filter or a function in WPCodeBox, see:\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fenabling_anonymous_function.png&w=3840&q=75)\nOnce you click that option, WPCodeBox will automatically generate the anonymous function with all the required parameters:\n\n```\nadd_filter('the_title', function( $title, $id ) {\n    \n    return $title;\n}, 10, 2\n```[WordPress Auto-Complete](/wordpress_autocomplete)[Documentation in Editor](/documentation_in_editor)",
+      "headings": [
+        "Generates Anonymous Function"
+      ],
+      "code_blocks": [
+        "add_filter('the_title', function( $title, $id ) {\n    \n    return $title;\n}, 10, 2",
+        "add_filter('the_title', function( $title, $id ) {\n    \n    return $title;\n}, 10, 2"
+      ]
+    },
+    {
+      "title": "What to do if your cloud snippets don't load",
+      "url": "https://docs.wpcodebox.com/cant_load_cloud_snippets",
+      "category": "Cant_load_cloud_snippets",
+      "content": "Cloud snippets won't load\n# What to do if your cloud snippets don't load\n\n## Check you have the correct API Key in the settings\n\nYou can find your master API Key in your WPCodeBox dashboard, or you can create additional API Keys\nusing the API Key Manager (Beta).\n\nIf you created your API Key using the API Key Manager, make sure you have the correct permissions set and that it's enabled.\n\n## If you use a VPN, try refreshing your IP\n\nIf you use a VPN, try refreshing your IP address. Some VPNs use shared IP addresses, and if that IP was used for suspicious\nactivity, your IP may be blocked. You can refresh your IP by disconnecting and reconnecting to your VPN.\n\n## Check for plugin conflicts\n\nA plugin conflict may prevent your cloud snippets from loading. Try disabling all other plugins and see if your cloud snippets load.\n\n[A snippet throws an error](/safe_mode)[My snippet doesn't run](/snippet_doesnt_run)",
+      "headings": [
+        "Check you have the correct API Key in the settings",
+        "If you use a VPN, try refreshing your IP",
+        "Check for plugin conflicts"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Cdnjs Integration – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/cdnjs_integration",
+      "category": "Cdnjs_integration",
+      "content": "CDNJS Integration\n### CDNJS Integration\n\nIncluding thousands of libraries in your WordPress site is as easy as 1-2-3! Simply search for the library you need, and done - it's included.\n\nHere's how to use the cdnjs integration:\n\n- For Snippet Type, choose \"JavaScript (External File)\"\n- Under \"External JS File URL\", choose \"Load from <cdn>\"\n- You can now search the cdnjs library and load the desired library easily\n\n[Quick Actions](/quick_actions)[WordPress Auto-Complete](/wordpress_autocomplete)",
+      "headings": [
+        "CDNJS Integration"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Cloud – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/cloud",
+      "category": "Cloud",
+      "content": "Save Code Snippets to the Cloud\n## WordPress code snippets cloud storage\n\nWPCodeBox features the ability to save your code snippets to the cloud. This allows you to share code snippets across all your WordPress installs.\n\nOur users reported that this feature saves them hours when working with WordPress code snippets on as little as 2 sites.\n\n### Accessing your cloud account\n\nWPCodeBox can access the cloud account using an API Key. When you download WPCodeBox, your API Key will be included in the plugin, so you don't have to do anything.\n\nYou can regenerate the API Key in your account. When doing this, you will have to change the API Key in settings everywhere where you installed WPCodeBox.\n\n### Uploading code snippets to the cloud\n\nTo upload code snippets to the cloud, you can click the \"Upload to cloud\" button. That button is available once you save the snippet. If you want to make changes to a cloud snippet, you just modify it locally, and then click \"Upload to cloud again\". Snippets that are saved to the cloud will have a cloud icon next to them in the snippet list.\n\n### Downloading code snippets from the cloud\n\nYou will see the cloud snippets listed on the bottom left-hand side in the snippet list. To download a snippet from the cloud, just hover over the snippet you want to download, and the \"Download from cloud\" icon will appear next to the snippet. Once you download the snippet from the cloud, you just need to enable it. Snippets that are downloaded from the cloud are disabled by default.\n\n## Video:\n\n[Snippet Settings](/snippet_settings)[Add PHP Code Snippets to your WordPress site](/add_php_code)",
+      "headings": [
+        "WordPress code snippets cloud storage",
+        "Accessing your cloud account",
+        "Uploading code snippets to the cloud",
+        "Downloading code snippets from the cloud",
+        "Video:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WordPress code snippets cloud storage",
+      "url": "https://docs.wpcodebox.com/cloud_storage",
+      "category": "Cloud_storage",
+      "content": "Cloud Storage for WordPress Code Snippets\n# WordPress code snippets cloud storage\n\nWPCodeBox features the ability to save your code snippets to the cloud. This allows you to share code snippets across all your WordPress installs.\n\nOur users reported that his feature saves them hours when working with WordPress code snippets on as little as 2 sites.\n\n## Video overview:\n\nYou can also read the rest of this page for more information about the cloud features.\n\n## How do I have access to my cloud account?\n\nWPCodeBox can access the cloud account using an API Key. When you download WPCodeBox, your API Key will be included in the plugin, so you don't have to do anything.\n\nYou can regenerate the API Key in your account. When doing this, you will have to change the API Key in settings everywhere where you installed WPCodeBox.\n\n## Uploading code snippets to the cloud\n\nTo upload code snippets to the cloud, you can click the \"Upload to cloud button\". That button is available once you save the snippet. If you want to make changes to a cloud snippet, you just modify it locally, and then click \"Upload to cloud again\". Snippets that are saved to the cloud, will have a cloud icon next to them in the snippet list.\n\n## Downloading code snippets from the cloud\n\nYou will see the cloud snippets listed on the bottom left-hand side in the snippet list. To download a snippet from the cloud, just hover the snippet you want to download, and the \"Download from cloud\" icon will appear next to the snippet. Once you download the snippet from the cloud, you just need to enable it. Snippets that are downloaded from the cloud are disabled by default.\n\n### Cloud Folders\n\nSince version 1.2.0, WPCodeBox allows you to create and upload/download folders from the cloud.\n\nThis feature allows you to better organize your WordPress cloud snippets.\n\n#### How it works\n\nLocal and cloud folder management is independent. So, if you have a folder locally, and remove a snippet from it, or move a snippet to another folder, when uploading the folder to the cloud these changes won’t be updated. Only the changes that are currently in that folder will be updated in the cloud.\n\nThis way you can manage folders independently locally and in the cloud. When downloading a folder from the cloud, only the snippets that are in that folder will be updated locally. Changes like moving a snippet from one folder to another locally won’t get updated to the cloud as that could cause confusion.\n\n#### Why use Cloud Folders\n\nThis feature allows you to organize your WordPress snippets as you want, locally or in the cloud.\n\nWhen installing WPCodeBox on a new site, this allows you to pull all your Code Snippets with just one click, saving you time by not needing to download them one by one.\n\nWordPress code snippets can still be uploaded and downloaded from the cloud one by one as needed.\n\n[The Functionality Plugin](/functionality_plugin)[CSS Dev Mode](/css_dev_mode)",
+      "headings": [
+        "Video overview:",
+        "How do I have access to my cloud account?",
+        "Uploading code snippets to the cloud",
+        "Downloading code snippets from the cloud",
+        "Cloud Folders",
+        "How it works",
+        "Why use Cloud Folders"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Code Signing – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/code_signing",
+      "category": "Code_signing",
+      "content": "Code Signing and Security\n### Code Signing and Signatures in the WPCodeBox Functionality Plugin\n\nWhen using the WPCodeBox Functionality Plugin, code signing ensures the integrity of your snippets. Here's how it works:\n\n- **Signatures File (signatures.php):** The Functionality Plugin generates a \n```\nsignatures.php\n```\n\n file containing a hash (signature) for each snippet. This hash is based on the snippet's code, providing a unique identifier that reflects the snippet's content.\n- **Integrity Verification:** WPCodeBox checks the signatures in the \n```\nsignatures.php\n```\n\n file against the actual code snippets in the database. If a discrepancy is found (e.g., a snippet is modified directly in the database), WPCodeBox will notify you about the change.\n- **Protection Against Unauthorized Changes:** This mechanism ensures that any changes made outside WPCodeBox (such as direct database edits) are detected, helping to secure your site's custom functionality.\n\nThe signatures help maintain trust and stability, alerting you to any potential issues with your code snippets.\n\n[Generate a WordPress Plugin from your snippets](/generate_plugin)[Quick Actions](/quick_actions)",
+      "headings": [
+        "Code Signing and Signatures in the WPCodeBox Functionality Plugin"
+      ],
+      "code_blocks": [
+        "signatures.php",
+        "signatures.php",
+        "signatures.php"
+      ]
+    },
+    {
+      "title": "WordPress Code Snippet Repository",
+      "url": "https://docs.wpcodebox.com/code_snippets_repository",
+      "category": "Code_snippets_repository",
+      "content": "The WordPress Code Snippets Repository\n# WordPress Code Snippet Repository\n\nThe Code Snippet Repository is a one-stop-shop for all your code needs. Whether you're looking to improve WordPress performance, make security upgrades or simply do general maintenance tasks - we have the snippet just waiting for you!\n\n## What Code Snippets are available on the Repository?\n\nFrom the Code Snippet Repository, you can find snippets for WooCommerce, Oxygen, ACF as well as code snippets that are made specifically to improve performance on WordPress. These include security and general maintenance tasks like optimizing your database or editing wp-config files.\n\n[CSS Dev Mode](/css_dev_mode)[Generate a WordPress Plugin from your snippets](/generate_plugin)",
+      "headings": [
+        "What Code Snippets are available on the Repository?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Common Errors – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/common_errors",
+      "category": "Common_errors",
+      "content": "Common Notices, Warnings and ErrorsWhen writing Code Snippets, you may encounter some common notices, warnings, and errors. This page lists the most common ones and how to fix them.\nWhile notices and warning won't prevent your snippets from working, they can be useful for debugging and improving your snippets.\nErrors will prevent your snippets from working, so it's important to fix them as soon as possible.\n\nTo log any errors or notices, you can use [WP Debug Toolkit (opens in a new tab)](https://wpdebugtoolkit.com/), the best tool to easily handle error logs and troubleshooting. We partnered with them to offer a discount, just use code **WPCBDOC** when you checkout.\n\n## Common Notices\n\n### Trying to access array offset on value of type null\n\nIn WordPress, a common scenario that might cause a notice is when you try to access an array index or object property that doesn't exist. Here's an example of PHP code that could potentially cause a notice in WordPress:\n\n```\nfunction get_post_title() {\n// Get the post object\n$post = get_post();\n \n    // Access the post title\n    $title = $post['post_title']; // This line may cause a notice\n \n    return $title;\n}\n```\nIn this example, the \n```\nget_post()\n```\n\n function returns a post object, and we are trying to access the \n```\npost_title\n```\n\n property using array notation (\n```\n$post['post_title']\n```\n\n). However, in WordPress, the \n```\nget_post()\n```\n\n function returns an object, not an array. So, attempting to access the \n```\npost_title\n```\n\n property using array notation will trigger a notice similar to:\n\n```\nNotice: Trying to access array offset on value of type null in /path/to/your-file.php on line X\n```\nTo fix this issue and prevent the notice, you should use object notation instead:\n\n```\nfunction get_post_title() {\n// Get the post object\n$post = get_post();\n\n    // Access the post title using object notation\n    $title = $post->post_title;\n\n    return $title;\n}\n```\nBy using \n```\n$post->post_title\n```\n\n, we correctly access the \n```\npost_title\n```\n\n property of the post object without causing any notices.\n\nNotices are helpful for debugging and identifying potential issues in your code. It's always a good practice to handle them properly and ensure your code runs without generating any notices or warnings.\n\n## Common Warnings\n\n### Trying to access array offset on value of type\n\nHere's an example of WordPress PHP code that might trigger a warning when accessing an offset of an array:\n\n```\nfunction get_post_meta_value($meta_key) {\n \n    // Get the post ID\n    $post_id = get_the_ID();\n    \n    // Get the post meta data as an array\n    $meta_data = get_post_meta($post_id, 'my_custom_field', true);\n    \n    // Access a specific meta value using an offset that may cause a warning\n    $meta_value = $meta_data['some_key']; // This line may trigger a warning\n    \n    return $meta_value;\n \n}\n```\nIn this example, we are trying to retrieve a specific value from post meta data using array notation (\n```\n$meta_data['some_key']\n```\n\n). However, if the 'some_key' does not exist in the \n```\n$meta_data\n```\n\n array, it will trigger a warning similar to:\n\n```\nWarning: Illegal string offset 'some_key' in /path/to/your-file.php on line X\n```\nTo handle this situation and avoid the warning, you should first check if the key exists in the array before accessing it:\n\n```\nfunction get_post_meta_value($meta_key) {\n \n    // Get the post ID\n    $post_id = get_the_ID();\n    \n    // Get the post meta data as an array\n    $meta_data = get_post_meta($post_id, 'my_custom_field', true);\n    \n    // Check if the key exists in the array before accessing it\n    $meta_value = isset($meta_data['some_key']) ? $meta_data['some_key'] : '';\n    \n    return $meta_value;\n \n}\n```\nBy using \n```\nisset()\n```\n\n to check if the key 'some_key' exists in the \n```\n$meta_data\n```\n\n array, we can prevent the warning and provide a default value (in this case, an empty string) if the key is not found.\n\n### Warning: Invalid argument supplied for foreach\n\nHere's an example of WordPress PHP code that might trigger a warning when using \n```\nforeach\n```\n\n with the wrong argument passed:\n\n```\nfunction print_post_titles($post_ids) {\n    // Ensure we have an array of post IDs\n    if (!is_array($post_ids)) {\n        // Trigger a warning if the argument is not an array\n        foreach ($post_ids as $post_id) {\n            $post_title = get_the_title($post_id);\n            echo $post_title . '<br>';\n        }\n    }\n}\n```\nIn this example, the \n```\nprint_post_titles()\n```\n\n function is intended to print the titles of posts given an array of post IDs as the argument. However, if the function is called with something other than an array (e.g., a single post ID), it will trigger a warning similar to:\n\n```\nWarning: Invalid argument supplied for foreach() in /path/to/your-file.php on line X\n```\nTo handle this situation and avoid the warning, you should check if the \n```\n$post_ids\n```\n\n argument is an array before using \n```\nforeach\n```\n\n:\n\n```\nfunction print_post_titles($post_ids) {\n    // Ensure we have an array of post IDs\n    if (is_array($post_ids)) {\n        foreach ($post_ids as $post_id) {\n            $post_title = get_the_title($post_id);\n            echo $post_title . '<br>';\n        }\n    }\n}\n```\nBy using \n```\nis_array()\n```\n\n to check if \n```\n$post_ids\n```\n\n is indeed an array, we prevent the warning from being triggered when the function is called with a single post ID or any other non-array argument.\n\nHandling warnings properly is crucial for maintaining a stable and reliable WordPress website. Always ensure that your functions are designed to handle different types of input and avoid triggering warnings when possible.\n\nHandling warnings properly is essential for maintaining a stable and error-free WordPress website. Always ensure that you handle potential warning situations in your code to provide a smooth user experience.\n\n## Common Errors\n\n### Cannot use object of type WP_Post as an array\n\nHere's an example that triggers an error and the corresponding solution:\n\nExample Code (Triggering an Error):\n\n```\nfunction get_post_title_by_id($post_id) {\n    $post = get_post($post_id);\n    $title = $post['post_title']; // This line will trigger an error\n    return $title;\n}\n \n// Call the function with a non-existent post ID (causing an error)\n$post_title = get_post_title_by_id(9999);\necho $post_title;\n```\nIn this example, the \n```\nget_post_title_by_id()\n```\n\n function takes a \n```\n$post_id\n```\n\n as an argument and attempts to retrieve the post title by accessing the \n```\n'post_title'\n```\n\n property using array notation (\n```\n$post['post_title']\n```\n\n). However, the \n```\nget_post()\n```\n\n function returns an object, not an array. So, trying to access the \n```\n'post_title'\n```\n\n property using array notation will trigger an error similar to:\n\n```\nFatal error: Uncaught Error: Cannot use object of type WP_Post as array in /path/to/your-file.php: Line X\n```\nSolution:\n\nTo fix this error, you should use object notation (\n```\n$post->post_title\n```\n\n) to access the \n```\n'post_title'\n```\n\n property correctly:\n\n```\nfunction get_post_title_by_id($post_id) {\n    $post = get_post($post_id);\n    \n    if (is_a($post, 'WP_Post')) {\n        $title = $post->post_title; // Use object notation to access post_title\n        return $title;\n    } else {\n        return 'Post not found';\n    }\n}\n \n// Call the function with a non-existent post ID (handled gracefully)\n$post_title = get_post_title_by_id(9999);\necho $post_title;\n```\nBy using \n```\n$post->post_title\n```\n\n, we correctly access the \n```\n'post_title'\n```\n\n property of the \n```\n$post\n```\n\n object and avoid triggering an error. We also added a conditional check using \n```\nis_a()\n```\n\n to ensure that the \n```\n$post\n```\n\n variable is an instance of the \n```\nWP_Post\n```\n\n class before attempting to access its properties.\n\nNow, when calling the \n```\nget_post_title_by_id()\n```\n\n function with a non-existent post ID, the output will be:\n\n```\nPost not found\n```\nThis approach ensures that your code handles potential errors gracefully and provides informative responses when encountering unexpected scenarios.\n\n[My snippet doesn't run](/snippet_doesnt_run)[WPCodeBox UI won't load](/ui_wont_load)",
+      "headings": [
+        "Common Notices",
+        "Trying to access array offset on value of type null",
+        "Common Warnings",
+        "Trying to access array offset on value of type",
+        "Warning: Invalid argument supplied for foreach",
+        "Common Errors",
+        "Cannot use object of type WP_Post as an array"
+      ],
+      "code_blocks": [
+        "function get_post_title() {\n// Get the post object\n$post = get_post();\n \n    // Access the post title\n    $title = $post['post_title']; // This line may cause a notice\n \n    return $title;\n}",
+        "function get_post_title() {\n// Get the post object\n$post = get_post();\n \n    // Access the post title\n    $title = $post['post_title']; // This line may cause a notice\n \n    return $title;\n}",
+        "$post['post_title']",
+        "Notice: Trying to access array offset on value of type null in /path/to/your-file.php on line X",
+        "Notice: Trying to access array offset on value of type null in /path/to/your-file.php on line X",
+        "function get_post_title() {\n// Get the post object\n$post = get_post();\n\n    // Access the post title using object notation\n    $title = $post->post_title;\n\n    return $title;\n}",
+        "function get_post_title() {\n// Get the post object\n$post = get_post();\n\n    // Access the post title using object notation\n    $title = $post->post_title;\n\n    return $title;\n}",
+        "$post->post_title",
+        "function get_post_meta_value($meta_key) {\n \n    // Get the post ID\n    $post_id = get_the_ID();\n    \n    // Get the post meta data as an array\n    $meta_data = get_post_meta($post_id, 'my_custom_field', true);\n    \n    // Access a specific meta value using an offset that may cause a warning\n    $meta_value = $meta_data['some_key']; // This line may trigger a warning\n    \n    return $meta_value;\n \n}",
+        "function get_post_meta_value($meta_key) {\n \n    // Get the post ID\n    $post_id = get_the_ID();\n    \n    // Get the post meta data as an array\n    $meta_data = get_post_meta($post_id, 'my_custom_field', true);\n    \n    // Access a specific meta value using an offset that may cause a warning\n    $meta_value = $meta_data['some_key']; // This line may trigger a warning\n    \n    return $meta_value;\n \n}",
+        "$meta_data['some_key']",
+        "Warning: Illegal string offset 'some_key' in /path/to/your-file.php on line X",
+        "Warning: Illegal string offset 'some_key' in /path/to/your-file.php on line X",
+        "function get_post_meta_value($meta_key) {\n \n    // Get the post ID\n    $post_id = get_the_ID();\n    \n    // Get the post meta data as an array\n    $meta_data = get_post_meta($post_id, 'my_custom_field', true);\n    \n    // Check if the key exists in the array before accessing it\n    $meta_value = isset($meta_data['some_key']) ? $meta_data['some_key'] : '';\n    \n    return $meta_value;\n \n}",
+        "function get_post_meta_value($meta_key) {\n \n    // Get the post ID\n    $post_id = get_the_ID();\n    \n    // Get the post meta data as an array\n    $meta_data = get_post_meta($post_id, 'my_custom_field', true);\n    \n    // Check if the key exists in the array before accessing it\n    $meta_value = isset($meta_data['some_key']) ? $meta_data['some_key'] : '';\n    \n    return $meta_value;\n \n}",
+        "function print_post_titles($post_ids) {\n    // Ensure we have an array of post IDs\n    if (!is_array($post_ids)) {\n        // Trigger a warning if the argument is not an array\n        foreach ($post_ids as $post_id) {\n            $post_title = get_the_title($post_id);\n            echo $post_title . '<br>';\n        }\n    }\n}",
+        "function print_post_titles($post_ids) {\n    // Ensure we have an array of post IDs\n    if (!is_array($post_ids)) {\n        // Trigger a warning if the argument is not an array\n        foreach ($post_ids as $post_id) {\n            $post_title = get_the_title($post_id);\n            echo $post_title . '<br>';\n        }\n    }\n}",
+        "print_post_titles()",
+        "Warning: Invalid argument supplied for foreach() in /path/to/your-file.php on line X",
+        "Warning: Invalid argument supplied for foreach() in /path/to/your-file.php on line X",
+        "function print_post_titles($post_ids) {\n    // Ensure we have an array of post IDs\n    if (is_array($post_ids)) {\n        foreach ($post_ids as $post_id) {\n            $post_title = get_the_title($post_id);\n            echo $post_title . '<br>';\n        }\n    }\n}",
+        "function print_post_titles($post_ids) {\n    // Ensure we have an array of post IDs\n    if (is_array($post_ids)) {\n        foreach ($post_ids as $post_id) {\n            $post_title = get_the_title($post_id);\n            echo $post_title . '<br>';\n        }\n    }\n}",
+        "function get_post_title_by_id($post_id) {\n    $post = get_post($post_id);\n    $title = $post['post_title']; // This line will trigger an error\n    return $title;\n}\n \n// Call the function with a non-existent post ID (causing an error)\n$post_title = get_post_title_by_id(9999);\necho $post_title;",
+        "function get_post_title_by_id($post_id) {\n    $post = get_post($post_id);\n    $title = $post['post_title']; // This line will trigger an error\n    return $title;\n}\n \n// Call the function with a non-existent post ID (causing an error)\n$post_title = get_post_title_by_id(9999);\necho $post_title;",
+        "get_post_title_by_id()",
+        "'post_title'",
+        "$post['post_title']",
+        "'post_title'",
+        "Fatal error: Uncaught Error: Cannot use object of type WP_Post as array in /path/to/your-file.php: Line X",
+        "Fatal error: Uncaught Error: Cannot use object of type WP_Post as array in /path/to/your-file.php: Line X",
+        "$post->post_title",
+        "'post_title'",
+        "function get_post_title_by_id($post_id) {\n    $post = get_post($post_id);\n    \n    if (is_a($post, 'WP_Post')) {\n        $title = $post->post_title; // Use object notation to access post_title\n        return $title;\n    } else {\n        return 'Post not found';\n    }\n}\n \n// Call the function with a non-existent post ID (handled gracefully)\n$post_title = get_post_title_by_id(9999);\necho $post_title;",
+        "function get_post_title_by_id($post_id) {\n    $post = get_post($post_id);\n    \n    if (is_a($post, 'WP_Post')) {\n        $title = $post->post_title; // Use object notation to access post_title\n        return $title;\n    } else {\n        return 'Post not found';\n    }\n}\n \n// Call the function with a non-existent post ID (handled gracefully)\n$post_title = get_post_title_by_id(9999);\necho $post_title;",
+        "$post->post_title",
+        "'post_title'",
+        "get_post_title_by_id()",
+        "Post not found",
+        "Post not found"
+      ]
+    },
+    {
+      "title": "Condition Builder",
+      "url": "https://docs.wpcodebox.com/condition_builder",
+      "category": "Condition_builder",
+      "content": "The Condition Builder\n# Condition Builder\n\nThe WPCodeBox condition builder allows you to set where and when Code Snippets execute on your WordPress Site.\n\n![](https://wpcodebox.b-cdn.net/wp-content/uploads/2022/05/open_condition_builder.png)\n\n## Condition Building Blocks\n\n### Condition\n\nA condition can be true or false. If you add multiple conditions, they must all be true. Condition groups can be true individually.\n\n### Condition Group\n\nA condition group consists of more conditions. The conditions in a group are separated by an \"AND\" logical operator.\n\nGroups are separated by the \"OR\" logical operator.\n\nAs you add conditions or condition groups, you will see an overview on the right side that shows the logical composition of your conditions.\n\n## Types of conditions\n\n### Location\n\nThe location condition has three options: Everywhere, Admin and Frontend.\n\n- Everywhere - will run the snippet everywhere\n- Admin - Will load the snippet in the Admin Area\n- Frontend - Will only load the snippet on the Frontend\n\n### Current Post\n\nThis condition allows you to select one or more posts on which the snippet to run or not to run. If you choose \"Is\", the snippet will only run for the selected posts. If you select \"Is Not\", the snippet will not run on the selected posts.\n\n### Current Post Type\n\nThis condition works the same as the \"Current Post\" condition, but it will work for all post types, not only individual posts.\n\n### Current Post Parent\n\nThis condition works the same as the \"Current Post\" condition, but you can select the snippet to run only for children's posts of a specific post.\n\n### Taxonomy\n\nThe taxonomy condition is helpful when you want to set a snippet to only run for posts that belong or do not belong to specific categories, tags, or other taxonomies.\n\n### Custom PHP Condition\n\nCustom PHP Conditions are a powerful tool for creating your custom conditions.\n\nYou can use [WordPress Conditional Tags (opens in a new tab)](https://codex.wordpress.org/Conditional_Tags) here, and you can compose them using && (and) or || (or).\n\nAn example of a custom PHP condition is this:\n\n```\n<?php\n\nis_tax( 'flavor' ) || is_tax('taste');\n```\nThis condition will run on archive pages for the 'flavor' and 'taste' taxonomies.\n\nAnother example could be:\n\n```\n<?php\n\nis_singular() && has_excerpt();\n```\nThis condition will execute the snippet only if we are on a single page, post, etc., and that post has an excerpt.\n\nThe PHP conditions are effective in creating your custom conditions. They also can be used alongside the other conditions available and can be included in condition groups.\n\n### Page URL\n\nThe page URL condition allows you only to run a code snippet if the current page URL contains or doesn't contain a particular string in the page URL.\n\n### Current Logged In User\n\nThis condition allows you to run a code snippet if the currently logged-in user has or does not have a particular role.\n\nFor example, you can run the snippet if the current user is an admin or is not an admin or customer.\n\n### Time\n\nThe time condition allows you to select a time before or after the snippet will run. The time condition is helpful if you want particular banners to appear only before or after a specific date.\n\n### Day Of The Week\n\nThis condition allows you to only run the current snippet on specific weekdays. So, for example, you can show a banner that the store is open only from Monday to Friday.\n\n## Examples\n\n#### Run a snippet on the product page and on the checkout page\n\n- Current Post Type Is \"Product\"\n- OR Current Post Is Checkout\n\n#### Run a snippet on the product page when the user is logged in\n\n- Current Post Type Is \"Product\"\n- AND Current User Logged-In Status Is Logged In\n\n#### Run a snippet if we're on a single page and that page has an excerpt\n\n- Custom PHP Condition Is True\n\n```\nis_singular() && has_excerpt();\n```\n\n#### Run a snippet if the page URL does not contain a string\n\n- Page URL Does Not Contain \"checkout\"\n\n[How to run a WordPress code snippet](/how_to_run_a_wordpress_code_snippet)[Snippet types and how to select the right one](/snippet_types)",
+      "headings": [
+        "Condition Building Blocks",
+        "Condition",
+        "Condition Group",
+        "Types of conditions",
+        "Location",
+        "Current Post",
+        "Current Post Type",
+        "Current Post Parent",
+        "Taxonomy",
+        "Custom PHP Condition",
+        "Page URL",
+        "Current Logged In User",
+        "Time",
+        "Day Of The Week",
+        "Examples",
+        "Run a snippet on the product page and on the checkout page",
+        "Run a snippet on the product page when the user is logged in",
+        "Run a snippet if we're on a single page and that page has an excerpt",
+        "Run a snippet if the page URL does not contain a string"
+      ],
+      "code_blocks": [
+        "<?php\n\nis_tax( 'flavor' ) || is_tax('taste');",
+        "<?php\n\nis_tax( 'flavor' ) || is_tax('taste');",
+        "<?php\n\nis_singular() && has_excerpt();",
+        "<?php\n\nis_singular() && has_excerpt();",
+        "is_singular() && has_excerpt();",
+        "is_singular() && has_excerpt();"
+      ]
+    },
+    {
+      "title": "CSS Dev Mode (Autoreload)",
+      "url": "https://docs.wpcodebox.com/css_dev_mode",
+      "category": "Css_dev_mode",
+      "content": "CSS Dev Mode\n# CSS Dev Mode (Autoreload)\n\nCSS Dev Mode is useful for auto-reloading CSS changes on the front end while customizing your sites using CSS Code Snippets.\n\nAfter you enable CSS dev mode, you need to refresh the page you are working on, and CSS changes will be automatically reloaded on that specific page.\n\n[Cloud Storage for WordPress Code Snippets](/cloud_storage)[The WordPress Code Snippets Repository](/code_snippets_repository)",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "How to display an ACF Field using a shortcode",
+      "url": "https://docs.wpcodebox.com/display_acf_field_in_a_shortcode",
+      "category": "Display_acf_field_in_a_shortcode",
+      "content": "Display an ACF Field in a Shortcode\n# How to display an ACF Field using a shortcode\n\nThis is a simple example of how to display an ACF field using a shortcode.\nYou will need to create a PHP Snippet and set it to run as a shortcode:\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Facf_field_shortcode.png&w=1920&q=75)\nThis will allow you to use the shortcode in your content editor like this:\n\n```\n[my_custom_shortcode]\n```\n\nThe shortcode will then display the ACF field value on the front end.\n\n[Add an ACF Options Page](/acf_options_pages)[How to target the Oxygen Builder UI using the Condition Builder](/target_oxygen_builder)",
+      "headings": [],
+      "code_blocks": [
+        "[my_custom_shortcode]"
+      ]
+    },
+    {
+      "title": "Documentation in Editor – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/documentation_in_editor",
+      "category": "Documentation_in_editor",
+      "content": "Documentation in Editor\n### Documention in Editor\n\nIn WPCodeBox, documentation appears when hovering WP Functions, hooks and filters.\n\nThis documentation includes a small description, a link to the actual documentation in WordPress, and since when the action/hook/filter was introduced.\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fget_header_example_documentation.jpg&w=3840&q=75)[Generate an Anonymous Function](/anonymous_function)[How to use hooks instead of conditions](/use_hooks_instead_of_conditions)",
+      "headings": [
+        "Documention in Editor"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "How to download a code snippet from the Code Snippet Repository",
+      "url": "https://docs.wpcodebox.com/download_code",
+      "category": "Download_code",
+      "content": "Download a Code Snippet from the Repository\n# How to download a code snippet from the Code Snippet Repository\n\nTo download a code snippet from the Code Snippet Repository, you just need to open the snippet repository using the button above the snippet manager. You can search for the code snippet you need using either the search box or by selecting the appropriate category on the left.\n\nOnce you found the snippet you want to download, just click \"Download Snippet\" and the snippet will be downloaded locally. Once the snippet is downloaded, it will be disabled by default. You just need to enable the snippet to make it execute.\n\n[Add PHP Code Snippets to your WordPress site](/add_php_code)[How to run a WordPress code snippet](/how_to_run_a_wordpress_code_snippet)",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "WPCodeBox Editor",
+      "url": "https://docs.wpcodebox.com/editor",
+      "category": "Editor",
+      "content": "Code Editor\n# WPCodeBox Editor\n\nWPCodeBox 2 uses [Monaco Editor (opens in a new tab)](https://microsoft.github.io/monaco-editor/) for editing code. Below you can find a list of keyboard shortcuts that you can use to speed up your workflow.\n\n## Editor shortcuts\n\n| Description | Windows/Linux | Mac |\n| --- | --- | --- |\n| Undo | Ctrl + Z | Command + Z |\n| Redo | Ctrl + Y | Shift + Command + Z or Command + Y |\n| Cut | Ctrl + X | Command + X |\n| Copy | Ctrl + C | Command + C |\n| Paste | Ctrl + V | Command + V |\n| Format Document | Shift + Alt + F | Shift + Alt + F |\n| Toggle Line Comment | Ctrl + / | Command + / |\n| Search | Ctrl + F | Command + F |\n| Replace | Shift + Ctrl + F | Command + Alt + F |\n| Increase indent | Tab or Ctrl + ] | Tab or Command + ] |\n| Decrease indent | Shift + Tab or Ctrl + [ | Shift + Tab or Command + ] |\n| Comment out | Ctrl + / | Command + / |\n| Comment In | Ctrl + / | Command + / |\n| Increase font size | Ctrl + . | Command + . |\n| Decrease font size | Ctrl + , | Command + , |\n| Move a line down | Alt + Down | Option + Down |\n| Move a line up | Alt + Up | Option + Up |\n| Select all | Ctrl + A | Command + A |\n| Select downward | Shift + Down | Shift + Down |\n| Select right | Shift + Right | Shift + Right |\n| Select left | Shift + Left | Shift + Left |\n| Select upward | Shift + Up | Shift + Up |\n| Select to the end | Alt + Shift + Right | Alt + Shift + Right |\n| Select to the start | Alt + Shift + Left | Alt + Shift + Left |\n| Align text right | Ctrl + Shift + Rght | Command + Shift + Right |\n| Align text left | Ctrl + Shift + Left | Command + Shift + Left |\n| Add multi-curosr above | Ctrl + Alt + Up | Command + Alt + Up |\n| Add multi-cursor below | Ctrl + Alt + Down | Comment + Alt + Down |\n| Move multi-cursor from current line to line below | Ctrl + Alt + Shift + Down | Command + Alt + Shift + Down |\n| Command Palette | F1 | F1 |\n\n[SCSS Partials](/scss_partials)[Shortcodes](/shortcodes)",
+      "headings": [
+        "Editor shortcuts"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Running Snippets using an External Secure URL",
+      "url": "https://docs.wpcodebox.com/external_url",
+      "category": "External_url",
+      "content": "Run Snippets using an External URL\n# Running Snippets using an External Secure URL\n\nWith WPCodeBox, you can run your snippets using an external secure URL. This is useful if you want to trigger a specific action on your website, or if you want to run a snippet from an external service like Zapier.\n\n## How to Run the Snippet using an External Secure URL\n\n1. Go to the WPCodeBox Snippet Editor.\n\n2. Select \"Using an external secure URL\" for the \"How to run the snippet\" option.\n\n3. A secure URL will be generated. Copy it to the clipboard.\n\n4. You can now use this URL to run the snippet.\n\n## Regenerating the External Secure URL\n\nIf you want to regenerate the external secure URL, simply click the \"Regenerate\" button. This will make the old URL invalid and generate a new one.\n\n## Examples of Using External Secure URL\n\nHere are some examples of how you can use the external secure URL feature:\n\n- Trigger a specific action on your website when a certain event happens, like a new email subscription or a form submission.\n- Run a snippet from an external service like Zapier.\n- Use the URL in a webhook to execute the snippet when a certain event happens.\n\n[Shortcodes](/shortcodes)[The Functionality Plugin](/functionality_plugin)",
+      "headings": [
+        "How to Run the Snippet using an External Secure URL",
+        "Regenerating the External Secure URL",
+        "Examples of Using External Secure URL"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPCodeBox Functionality Plugin",
+      "url": "https://docs.wpcodebox.com/functionality_plugin",
+      "category": "Functionality_plugin",
+      "content": "The Functionality Plugin\n# WPCodeBox Functionality Plugin\n\nThe WPCodeBox Functionality Plugin feature allows you to save code snippets to a separate plugin, different from the main WPCodeBox plugin. This setup can improve performance and simplify site handoff to clients by keeping your custom functionality active even if the WPCodeBox plugin is deactivated or removed.\n\n## Key Features\n\n- **Independent Snippet Management:** The Functionality Plugin (FP) enables you to disable WPCodeBox while still keeping all your snippets running. The snippets are managed by the FP, ensuring your custom functionality remains intact.\n- **Automatic Synchronization:** WPCodeBox automatically keeps the FP in sync with your snippets. Whenever you make changes to your code snippets in WPCodeBox, the FP is updated accordingly.\n- **Signatures File:** The FP includes a \n```\nsignatures.php\n```\n\n file that contains a hash of all your code snippets. This file ensures the integrity of your snippets by detecting changes made directly to the database. If changes are detected, WPCodeBox will notify you.\n- **Customizable Plugin Name and Description:** You can change the default name and description of the FP by adding the following lines to your \n```\nwp-config.php\n```\n\n file before activating the Functionality Plugin:\n\n```\ndefine('WPCB_FP_PLUGIN_NAME', 'My Custom Plugin Name');\ndefine('WPCB_FP_PLUGIN_DESCRIPTION', 'My Custom Plugin Description');\n```\nHere's a video explaining more about the Functionality Plugin:\n\n## How to Use the Functionality Plugin\n\n1. **Open the Functionality Plugin settings in WPCodeBox:**\n- Click on the \"FPlugin\" button in WPCodeBox, above the snippet list, to open the Functionality Plugin settings.\n2. **Enable the Functionality Plugin in WPCodeBox:**\n- Click the \"Enable Functionality Plugin\" button to activate the FP. WPCodeBox will automatically create the FP and synchronize your snippets.\n3. **Managing Snippets:**\n- Use WPCodeBox as before to create, edit, and delete code snippets. The changes will automatically be reflected in the FP.\n4. **Deactivating WPCodeBox:**\n- You can safely deactivate WPCodeBox without losing the functionality of your snippets. The FP will continue executing your code.\n5. **Reactivating WPCodeBox:**\n- If you decide to reactivate WPCodeBox, any changes made will be updated in the FP seamlessly.\n\n## Where to Find the Signatures File\n\nThe \n```\nsignatures.php\n```\n\n file is located in the root folder of the Functionality Plugin. It helps maintain the integrity of your code by verifying that no unauthorized changes have been made to your snippets.\n\n## Differences Between the Functionality Plugin and Generated Plugins\n\n- **Functionality Plugin:**\n- Works in tandem with WPCodeBox. WPCodeBox becomes an user interface (UI) for snippet management.\n- Allows deactivating WPCodeBox while keeping the snippets running. You can reactivate WPCodeBox to make changes, which will be updated in the FP.\n- **Generated Plugins:**\n- Standalone plugins created from selected snippets, not editable with WPCodeBox.\n\n[Run Snippets using an External URL](/external_url)[Cloud Storage for WordPress Code Snippets](/cloud_storage)",
+      "headings": [
+        "Key Features",
+        "How to Use the Functionality Plugin",
+        "Where to Find the Signatures File",
+        "Differences Between the Functionality Plugin and Generated Plugins"
+      ],
+      "code_blocks": [
+        "signatures.php",
+        "wp-config.php",
+        "define('WPCB_FP_PLUGIN_NAME', 'My Custom Plugin Name');\ndefine('WPCB_FP_PLUGIN_DESCRIPTION', 'My Custom Plugin Description');",
+        "define('WPCB_FP_PLUGIN_NAME', 'My Custom Plugin Name');\ndefine('WPCB_FP_PLUGIN_DESCRIPTION', 'My Custom Plugin Description');",
+        "signatures.php"
+      ]
+    },
+    {
+      "title": "Generating a Plugin from WPCodeBox",
+      "url": "https://docs.wpcodebox.com/generate_plugin",
+      "category": "Generate_plugin",
+      "content": "Generate a WordPress Plugin from your snippets\n# Generating a Plugin from WPCodeBox\n\nWPCodeBox allows you to generate standalone plugins based on selected code snippets. This feature is ideal when you want to package specific functionality into a plugin that does not depend on WPCodeBox for management.\n\n## Key Features\n\n- **Standalone Plugin Creation:** Create a new plugin by selecting the snippets you want to include. The resulting plugin is independent of WPCodeBox.\n- **Selective Snippet Packaging:** Choose which snippets to include in the generated plugin for fine-grained control over the functionality provided by your plugin.\n- **Avoiding Conflicts:** Do not activate the generated plugin on a site where the same snippets are already running in WPCodeBox, as this could cause conflicts or errors.\n\n## How to Generate a Plugin\n\n1. **Click on \"Generate Plugin\":**\n\n- Click on the \"Generate Plugin\" option above the snippet list.\n\n1. **Select Snippets in WPCodeBox:**\n\n- Choose the snippets you want to include in the plugin.\n\n1. **Download and Install the Plugin:**\n\n- Download the generated plugin ZIP file and install it on the desired WordPress site.\n\n1. **Activate the Plugin:**\n\n- Activate the plugin through the WordPress admin panel. Make sure WPCodeBox is not running the same snippets to avoid conflicts.\n\n## Video Overview\n\n## Best Practices\n\n- **Test the Generated Plugin Separately:** Before using it on a live site, test the generated plugin in a staging environment.\n- **Avoid Duplicate Snippets:** Do not activate the generated plugin on sites where WPCodeBox is managing the same snippets, as it can lead to conflicts.\n- **Document Changes Manually:** Since the generated plugin is not editable with WPCodeBox, any further changes will need to be made directly in the plugin's code.\n\n## Differences Between Generated Plugins and the Functionality Plugin\n\n- **Functionality Plugin:**\n- Allows continued management of snippets through WPCodeBox and keeps snippets running even if WPCodeBox is deactivated.\n- Snippet changes made in WPCodeBox will be reflected in the FP.\n- **Generated Plugins:**\n- Are standalone and independent of WPCodeBox.\n- Cannot be edited or updated through WPCodeBox after generation.\n\n[The WordPress Code Snippets Repository](/code_snippets_repository)[Code Signing and Security](/code_signing)",
+      "headings": [
+        "Key Features",
+        "How to Generate a Plugin",
+        "Video Overview",
+        "Best Practices",
+        "Differences Between Generated Plugins and the Functionality Plugin"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Add Google Tag Manager to WordPress using WPCodeBox",
+      "url": "https://docs.wpcodebox.com/google_tag_manager",
+      "category": "Google_tag_manager",
+      "content": "Add Google Tag Manager to WordPress\n# Add Google Tag Manager to WordPress using WPCodeBox\n\nTo add Google Tag Manager to WordPress, you can download the Google Tag Manager Snippet from the Repository. To do this you can follow these steps:\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fgtm.png&w=1920&q=75)\n1. Search for the Google Tag Manager snippet in the Repository.\n2. Download the snippet and enable it\n\nGoogle Tag Manager has 2 snippets. One is for the header and the other is for the body. You can paste these two parts in the placeholders in the download snippet and save it.\n\n[How to use hooks instead of conditions](/use_hooks_instead_of_conditions)[Add an ACF Options Page](/acf_options_pages)",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "How to run a WordPress code snippet",
+      "url": "https://docs.wpcodebox.com/how_to_run_a_wordpress_code_snippet",
+      "category": "How_to_run_a_wordpress_code_snippet",
+      "content": "How to run a WordPress code snippet\n# How to run a WordPress code snippet\n\nWPCodeBox has two main ways in which it can run a WordPress code snippet: automatic and manual.\n\n## Run a code snippet automatically\n\nThis is the default way WPCodeBox will run a code snippet. When you run a code snippet automatically, the snippet will run on page load, according to conditions set by the \"Where to run\" option.\n\nFor example, you can run a code snippet automatically on the home page, on a specific page, or on the WordPress frontend or admin. Each time that page will load, the snippet will run. This is the only option available for CSS/SCSS/LESS and JS scripts.\n\nThis is useful, for example, when you want to modify the WooCommerce checkout page, you would create a code snippet that would run automatically on the WooCommerce checkout page and modify its behavior. This is also helpful when you want to add tracking codes like Google Tag Manager, or Facebook Pixel to your WordPress site. In this case, you would set the snippet to run everywhere on the frontend.\n\n## Run a code snippet manually\n\nThis is a unique feature of WPCodeBox, and it allows you to run a code snippet on demand. These snippets won't run until you click the run button above the editor. You can also see the output of these snippets below the editor window.\n\nThis option is only available for PHP Code Snippets. It is really useful when you want to run some code in the context of WordPress, for example, run a query against the database, or test a piece of code in the context of WordPress. For example, the snippet below will run a query to find the unused tags, and then it will display them in the output pane below the editor:\n\n![](https://wpcodebox.b-cdn.net/wp-content/uploads/2021/07/wordpress-code-snippets-run-snippets-once.png)\n\n[Download a Code Snippet from the Repository](/download_code)[The Condition Builder](/condition_builder)",
+      "headings": [
+        "Run a code snippet automatically",
+        "Run a code snippet manually"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Installation",
+      "url": "https://docs.wpcodebox.com/installation",
+      "category": "Installation",
+      "content": "Installation\n# Installation\n\nTo install WPCodeBox, you will need to download the plugin from your account on the WPCodeBox website, then upload and activate it on your WordPress site.\n\n### Step 1: Download WPCodeBox 2\n\n1. Log in to your account on the WPCodeBox website.\n2. Navigate to the \"Downloads\" section.\n3. Find WPCodeBox in the list of available downloads and click the \"Download\" button.\n4. Save the plugin ZIP file to your computer.\n\n### Step 2: Upload WPCodeBox 2 to your WordPress Site\n\n1. Log in to your WordPress site's dashboard.\n2. Navigate to the \"Plugins\" section and click the \"Add New\" button.\n3. Click the \"Upload Plugin\" button at the top of the page.\n4. Click the \"Choose File\" button and select the WPCodeBox ZIP file you downloaded earlier.\n5. Click the \"Install Now\" button.\n6. Once the plugin has been installed, click the \"Activate Plugin\" button.\n\n### Step 3: Verify that WPCodeBox 2 is Installed and Activated\n\n1. Navigate to the \"Plugins\" section of your WordPress site's dashboard.\n2. Find WPCodeBox in the list of installed plugins.\n3. Check that the plugin is listed as \"Active\".\n\nCongratulations, you have successfully installed and activated WPCodeBox 2! You can now start managing your code snippets with advanced editing features.\n\n[Migrating from v1](/migrating)[WPCodeBox UI](/wpcodebox_ui)",
+      "headings": [
+        "Step 1: Download WPCodeBox 2",
+        "Step 2: Upload WPCodeBox 2 to your WordPress Site",
+        "Step 3: Verify that WPCodeBox 2 is Installed and Activated"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Known issues in WPCodeBox 2 v1.0.3",
+      "url": "https://docs.wpcodebox.com/known_issues",
+      "category": "Known_issues",
+      "content": "Known Issues\n# Known issues in WPCodeBox 2 v1.0.3\n\n### Cannot update hook priority when writing PHP Snippets\n\nA JS error is thrown when trying to update the hook priority when writing PHP snippets. When trying\nto update the hook priority, the number doesn't change.\nThis is a known issue and will be fixed in the next release.\n\n### Error triggered if you have XML code in a php snippet, like this\n\n```\n<?php\n \n// This is a PHP snippet with XML code\n$xml = '<?xml version=\"1.0\" encoding=\"UTF-8\" ?>';\n```\nSolution:\n\nTo fix the error, at this at the end of your snippet:\n\n// <?php\n\nYour snippet would look like this:\n\n```\n<?php\n \n// This is a PHP snippet with XML code\n$xml = '<?xml version=\"1.0\" encoding=\"UTF-8\" ?>;\n \n// <?php\n```\n\n### Blank screen when enabling the functionality plugin and removing WPCodeBox 2\n\nIf you enable the functionality plugin and then remove WPCodeBox 2, you will get a blank screen. This is caused by the autoreload code\nfrom withing the FP, a fix is available in the next release\n\n### Error in the logs when activating WPCodeBox 2 for the first time\n\nWhen you activate WPCodeBox 2 for the first time, you might see this error in your logs:\n\n```\nWordPress database error Server shutdown in progress for query SELECT * FROM wp_wpcb_snippets WHERE id = 1 made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/wpcodebox2/wpcodebox2.php'), Wpcb2\\Service\\WPCodeBox2->executeSnippets, Wpcb2\\Runner\\QueryRunner->runQueries, eval, Wpcb2\\ConditionBuilder\\ShouldExecute::should_execute, Wpcb2\\ConditionBuilder\\ShouldExecute->shouldExecute, Wpcb2\\Repository\\SnippetRepository->getSnippet\"\n```\nThis happens because WPCodeBox 2 is trying to execute the snippets before the custom tables are created. It doesn't impede in anyway the functionality of the plugin.\n\nI am looking for a fix that would not require extra DB queries on each request to handle this edge case.\n\n### Minification of CSS snippets might remove quotes in some cases\n\nWith the more exotic CSS properties, minification might remove quotes in some cases. If this happens, you can add the respective properties to an unminified CSS file.\n\n### You cannot include a SCSS partial in another SCSS partial\n\nThis is a known limitation of the SCSS compiler. You cannot include _partial2 in _partial2. You would need to include both _partial1 and _partial2 in the SCSS file where you want to use the variables from _partial2.\n\n### Format code doesn't work for SCSS Partials\n\nThe format code button has an issue with SCSS partials. For now, if you need to format a SCSS partial, you can create a temporary SCSS snippet and use that for formatting.\n\n[Where are my snippets stored?](/where_are_snippets_stored)",
+      "headings": [
+        "Cannot update hook priority when writing PHP Snippets",
+        "Error triggered if you have XML code in a php snippet, like this",
+        "Blank screen when enabling the functionality plugin and removing WPCodeBox 2",
+        "Error in the logs when activating WPCodeBox 2 for the first time",
+        "Minification of CSS snippets might remove quotes in some cases",
+        "You cannot include a SCSS partial in another SCSS partial",
+        "Format code doesn't work for SCSS Partials"
+      ],
+      "code_blocks": [
+        "<?php\n \n// This is a PHP snippet with XML code\n$xml = '<?xml version=\"1.0\" encoding=\"UTF-8\" ?>';",
+        "<?php\n \n// This is a PHP snippet with XML code\n$xml = '<?xml version=\"1.0\" encoding=\"UTF-8\" ?>';",
+        "<?php\n \n// This is a PHP snippet with XML code\n$xml = '<?xml version=\"1.0\" encoding=\"UTF-8\" ?>;\n \n// <?php",
+        "<?php\n \n// This is a PHP snippet with XML code\n$xml = '<?xml version=\"1.0\" encoding=\"UTF-8\" ?>;\n \n// <?php",
+        "WordPress database error Server shutdown in progress for query SELECT * FROM wp_wpcb_snippets WHERE id = 1 made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/wpcodebox2/wpcodebox2.php'), Wpcb2\\Service\\WPCodeBox2->executeSnippets, Wpcb2\\Runner\\QueryRunner->runQueries, eval, Wpcb2\\ConditionBuilder\\ShouldExecute::should_execute, Wpcb2\\ConditionBuilder\\ShouldExecute->shouldExecute, Wpcb2\\Repository\\SnippetRepository->getSnippet\"",
+        "WordPress database error Server shutdown in progress for query SELECT * FROM wp_wpcb_snippets WHERE id = 1 made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/wpcodebox2/wpcodebox2.php'), Wpcb2\\Service\\WPCodeBox2->executeSnippets, Wpcb2\\Runner\\QueryRunner->runQueries, eval, Wpcb2\\ConditionBuilder\\ShouldExecute::should_execute, Wpcb2\\ConditionBuilder\\ShouldExecute->shouldExecute, Wpcb2\\Repository\\SnippetRepository->getSnippet\""
+      ]
+    },
+    {
+      "title": "Migrating to WPCodeBox 2",
+      "url": "https://docs.wpcodebox.com/migrating",
+      "category": "Migrating",
+      "content": "Migrating from v1\n# Migrating to WPCodeBox 2\n\nFirst things first: WPCodeBox 2 is a separate plugin from the original WPCodeBox.\nThis means that you'll need to install the new plugin separately, and it won't automatically replace the old one.\nYou can download WPCodeBox 2 from your account on the WPCodeBox website, Downloads section.\n\nOnce you've installed WPCodeBox 2, you'll need to migrate your code snippets from the old plugin to the new one.\nUnfortunately, this can't be done automatically, as the two plugins have different database structures.\nYou'll need to manually copy your snippets from the old plugin to the new one.\n\n[Read more about why I decided to release WPCodeBox 2 as a separate plugin here](/#why-i-released-wpcodebox-2-as-a-separate-plugin)\n\nWPCodeBox v1 will continue to be supported and receive security updates for a while, so there's no need to rush the migration, if you don't need the new features.\n\n## Migration Steps\n\nTo do this, follow these steps:\n\n### Download\n\nDownload WPCodeBox 2.0 from your WPCodeBox account page.\n\n### Backup\n\nMake sure you have a backup of your WordPress site, just in case something goes wrong during the update.\n\n### Install WPCodeBox 2\n\nInstall and activate the new WPCodeBox 2.0 plugin. It will work alongside the old plugin, so you can keep using the old plugin while you migrate your snippets.\n\n### Move your code snippets\n\nMove your code snippets from v1 to v2 as descibed in this guide.\n\n### Delete v1\n\nOnce you know everything works, delete all your V1 snippets and deactivate and delete the old plugin.\n⚠️Make sure you don't have the same snippet active in both WPCodeBox 1 and WPCodeBox 2. This could lead to errors.\n**Deactivate a snippet in WPCodeBox 1 before activating it in WPCodeBox 2.**\n\n## Moving Your Code Snippets\n\nOnce you have both plugins installed, you can start moving your code snippets to the new version. You could do this using the cloud or manually.\n\n#### Move Snippets Using the Cloud\n\nTo move snippets using the cloud, you can upload them from WPCodeBox (you could use a folder structure to make this easier). Then, in WPCodeBox 2 you can download the snippets from the cloud and enable them. **Make sure to disable the snippet in WPCodeBox 1 before enabling it in WPCodeBox 2.**.\n\nBefore enabling a snippet, please double-check the settings to make sure it has the right conditions, and it would run where you need it to.WPCodeBox\n\n#### Move Snippets Manually\n\nTo move snippets manually, you could just go through them one by one and copy the code from the old plugin to the new one. This is a bit more time-consuming, but it's a good opportunity to test your snippets and make sure they're working as expected.\n\n## Things to consider when migrating to WPCodeBox 2\n\n## New Hook Options\n\nOne of the main changes in WPCodeBox 2.0 is the introduction of more hook options.\nInstead of using conditions to execute snippets, you can now use hooks to specify where and when the snippets should run.\nThis means that you can use hooks such as 'admin_init' instead of selecting the condition 'Location is admin'.\n\nThe advantage of using hooks is that these settings are saved to the cloud, which means you don't have to worry about losing\nyour settings when you download the code snippet to another site.\n\nℹ️Using hooks is faster than conditions, so you should use them instead whenever possible.\n\n## Migrating CSS/SCSS/HTML/JS snippets\n\nWPCodeBox v1 had basic options to allow you to select where to load your CSS/SCSS/HTML/JS snippets. WPCodeBox 2 improves this by allowing you to select multiple insert locations for each snippet.Callout\nWhile this is a great improvement, it means that you'll need to manually select the insert locations for each snippet when you migrate to WPCodeBox 2.0.\n\nHere are a few examples of how to update your snippet settings:\n\n| WPCodeBox v1 | WPCodeBox v2 |\n| --- | --- |\n|  |  |\n\nIf you use WooCommerce, you'll also see WooCommerce-related hooks in the list of hooks. These are useful for inserting HTML snippets at specific locations on your WooCommerce pages.\n\n## Migrating PHP snippets\n\nWPCodeBox v2 changes the default location that PHP snippets run to plugins_loaded. This will make it compatible with\nmore plugins and themes. However, if you have PHP snippets that rely on the old location, you'll need to update them.\n\n| WPCodeBox v1 | WPCodeBox v2 |\n| --- | --- |\n|  |  |\n\n### New things you can do to render PHP Snippets\n\nIn WPCodeBox v1 you had to use conditions if you wanted to render a snippet only on the backend or on the frontend, for examples. Now you can achieve the same with hooks.\nIf you want a snippet to run only on the frontend you could select the 'wp' action, or the 'admin_init' action if you want it to run only on the backend.\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fadmin_init_example.png&w=640&q=75)\n\n## Troubleshooting\n\nIf a snippet that ran fine in WPCodeBox 1 doesn't work in WPCodeBox 2, you can check a few things:\n\n- Make sure the correct conditions are set for the snippet (remember, conditions are not saved and downloaded from the cloud)\n- Make sure the snippet is enabled\n- Make sure the snippet is set to run on the correct hook\n- Some conditions might not work on hooks that trigger to early (for example, the current post is not defined in plugins_loaded), try using a later hook\n\n## Why I Released WPCodeBox 2 as a Separate Plugin\n\nWPCodeBox 2.0 is a major update to the WPCodeBox plugin that includes a lot of new features and improvements. Due to the significant changes that were made in this update, preserving backward compatibility with older versions of the plugin would have been difficult.\n\nTo avoid the risk of breaking existing sites, I decided to release WPCodeBox 2.0 as a separate plugin. This allows users to upgrade to the new version on their own terms, and ensures that the transition is smooth and painless.\n\nWhile I understand that this may be an inconvenience for some users, I believe that it is the best approach for ensuring the stability and reliability of WPCodeBox. I hope that you will enjoy the new features and improvements that WPCodeBox 2.0 has to offer, and I look forward to your feedback and suggestions as I continue to improve and refine the plugin.\n\n[Home](/)[Installation](/installation)",
+      "headings": [
+        "Migration Steps",
+        "Download",
+        "Backup",
+        "Install WPCodeBox 2",
+        "Move your code snippets",
+        "Delete v1",
+        "Moving Your Code Snippets",
+        "Move Snippets Using the Cloud",
+        "Move Snippets Manually",
+        "Things to consider when migrating to WPCodeBox 2",
+        "New Hook Options",
+        "Migrating CSS/SCSS/HTML/JS snippets",
+        "Migrating PHP snippets",
+        "New things you can do to render PHP Snippets",
+        "Troubleshooting",
+        "Why I Released WPCodeBox 2 as a Separate Plugin"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPCodeBox Plugin Settings",
+      "url": "https://docs.wpcodebox.com/plugin_settings",
+      "category": "Plugin_settings",
+      "content": "Plugin Settings\n# WPCodeBox Plugin Settings\n\nWPCodeBox offers several settings that allow you to customize the behavior and appearance of the plugin. Once you update the settings, you need to save them for the changes to take effect. This page will explain the various settings available in WPCodeBox.\n\n## API Key\n\nThe API Key is used for accessing cloud snippets and for plugin updates. When you download WPCodeBox, your API Key will be included in the plugin, so you don't have to do anything. However, you can regenerate the API Key in your account. When doing this, you will have to change the API Key in settings everywhere where you installed WPCodeBox.\n\n## Revisions\n\nSet the total revisions to save for each snippet with the Number of revisions to save setting.\n\n## UI Settings\n\nThe UI Settings section lets you download/upload UI settings to the cloud to make your editor settings the same across multiple WordPress installs. There are two options:\n\n- **Upload UI settings to cloud:** Use this to upload your current UI settings to the cloud.\n- **Download UI settings from the cloud:** Use this to download UI settings from the cloud to your current WordPress install.\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fupload_settings_to_the_cloud.png&w=640&q=75)\n\n## Editor Font Size\n\nThe Editor Font Size setting allows you to adjust the font size of the editor. You can set it to any value between 8 and 28 pixels.\n\n## Wrap Long Lines\n\nThe Wrap Long Lines setting lets you control whether lines in the editor should wrap or extend beyond the visible area. If this option is enabled, long lines will wrap automatically.\n\n## Show code map\n\nThis will show a map of your code on the right side of the editor. This is especially useful if you work with long code snippets and want to get a visual representation of the code. It will allow you to navigate through your code quicker by giving you a birds-eye view.\n\n![Code Map](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fcodemap.png&w=1920&q=75)\n\n## Move WPCodeBox to the Tools Menu\n\nThis setting allows you to move WPCodeBox from the Admin Menu to the Tools Menu. This is useful if you have many plugins installed, and you want to keep the admin menu organized.\n\n## Ask Before Uploading to the Cloud\n\nEnabling this setting will prompt you to confirm before uploading a code snippet to the cloud. This can help prevent accidentally uploading sensitive or incomplete code snippets.\n\n## Dark Mode\n\nThis setting allows you to switch the plugin's interface to Dark Mode, which uses a darker color scheme that may be easier on the eyes.\n\n## Layout\n\nThe Layout setting lets you choose how the plugin's interface is organized. You can choose between two options:\n\n- **Editor in the Middle:** This option places the code editor in the center of the page, with the snippet list and settings on either side.\n- **Snippet List and Snippet Settings on the Left:** This option places the snippet list and settings on the left side of the page, with the code editor on the right.\n\n## Functionality Plugin (Experimental)\n\nThe Functionality Plugin setting is an experimental feature that allows you to save your snippets to a plugin different than WPCodeBox. This can be useful for performance improvements and also when handing off a site to a client.\n\n[WPCodeBox UI](/wpcodebox_ui)[Snippet Settings](/snippet_settings)",
+      "headings": [
+        "API Key",
+        "Revisions",
+        "UI Settings",
+        "Editor Font Size",
+        "Wrap Long Lines",
+        "Show code map",
+        "Move WPCodeBox to the Tools Menu",
+        "Ask Before Uploading to the Cloud",
+        "Dark Mode",
+        "Layout",
+        "Functionality Plugin (Experimental)"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Quick Actions – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/quick_actions",
+      "category": "Quick_actions",
+      "content": "Quick Actions\n### Define a Snippet in Quick Actions\n\nQuick Actions are snippets that can be run easily and with a one click directly from your WordPress admin top bar. This helps when you want to speed up repetitive actions.\n\nTo make a snippet work as a quick action, do the following:\n\n- Create a snippet or edit an existing snippet\n- Change \"How to run the snippet\" to \"Manual (On Demand)\"\n- Then, enable \"Add to quick actions\"\n\nThat's it! Once enabled, a \"WPCodeBox Quick Actions\" menu will appear with the snippet available to run it quickly and with just a click.\n\n[Code Signing and Security](/code_signing)[CDNJS Integration](/cdnjs_integration)",
+      "headings": [
+        "Define a Snippet in Quick Actions"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Safe Mode – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/safe_mode",
+      "category": "Safe_mode",
+      "content": "A snippet throws an error\n## Dealing with Snippet Errors in WPCodeBox\n\nIn most cases, WPCodeBox can detect if a snippet triggers an error and it will disable it automatically. If a snippet is disabled due to an error, it will be colored red in WPCodeBox, and the error message will be displayed above the editor. You can also see the error using [WP Debug Toolkit (opens in a new tab)](https://wpdebugtoolkit.com/), the best tool to handle error logs and troubleshooting. We partnered with them to offer a discount using code **WPCBDOC** on your first purchase.\n\nAt this point, you have the option to dismiss the error, fix the issue and re-enable the snippet.\n\nHowever, in rare cases, a snippet may cause an error that is not caught by WPCodeBox, leading to being locked out of the site. In such cases, you can disable snippet execution by adding the following code to your \n```\nwp-config.php\n```\n\n file:\n\n```\ndefine('WPCB_SAFE_MODE', true);\n```\n️🚫**Important:** Make sure to add this line **before** the /* That's all, stop editing! */ line in the wp-config.php file.\nThis will disable snippet execution, allowing you to log in and disable the offending snippet.\n\n️🚫**Important:** Make sure to remove this line once you are done troubleshooting the issue. Setting the value to false won't work. You will need to comment or remove the line in your wp-config.php file.\n\n## Disable snippet execution on the WPCodeBox 2 page, using an URL parameter\n\nIn WPCodeBox 2.0, you can also add the \n```\nsafe_mode=1\n```\n\n URL parameter to the WPCodeBox page to enable safe mode. This option should only be used as a last resort when you are unable to log in to your site. The URL with the \n```\nsafe_mode\n```\n\n parameter would look like this:\n\n```\nhttps://site.com/wp-admin/admin.php?page=wpcodebox2&safe_mode=1\n```\nBy using the \n```\nsafe_mode\n```\n\n parameter, you can access WPCodeBox with the disabled snippet execution feature, giving you the opportunity to fix the issue and re-enable the snippet.\n\n[How to run your code on a specific WooCommerce hook or action](/woocommerce_hooks_insertion_points)[Cloud snippets won't load](/cant_load_cloud_snippets)",
+      "headings": [
+        "Dealing with Snippet Errors in WPCodeBox",
+        "Disable snippet execution on the WPCodeBox 2 page, using an URL parameter"
+      ],
+      "code_blocks": [
+        "wp-config.php",
+        "define('WPCB_SAFE_MODE', true);",
+        "define('WPCB_SAFE_MODE', true);",
+        "safe_mode=1",
+        "https://site.com/wp-admin/admin.php?page=wpcodebox2&safe_mode=1",
+        "https://site.com/wp-admin/admin.php?page=wpcodebox2&safe_mode=1"
+      ]
+    },
+    {
+      "title": "Scss Partials – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/scss_partials",
+      "category": "Scss_partials",
+      "content": "SCSS Partials\n## Using SCSS Partials in WPCodeBox\n\nWPCodeBox supports the use of SCSS partials, which can help you to better organize your CSS code and make it more reusable.\n\n### Creating a SCSS Partial\n\nTo create a SCSS partial in WPCodeBox, you can simply create a new SCSS snippet with a filename that starts with an underscore (_), followed by the name of your partial. For example, if you wanted to create a partial for your typography styles, you might name your file \"_typography.scss\".\n\nWhen you save your new SCSS snippet, WPCodeBox will automatically rename the file to \"_partial_name.scss\" to conform to SCSS naming conventions.\n\n### Importing SCSS Partials\n\nTo use a SCSS partial in another snippet, you can use the \n```\n@use\n```\n\n directive followed by the filename of the partial in single quotes. For example, to import the \"_typography\" partial, you would write:\n\n```\n@use '_typography';\n```\n**Important:** Note that you must use single quotes around the filename.\n\n### Autocomplete for SCSS Partials\n\nTo help you easily import SCSS partials in your snippets, WPCodeBox provides an autocomplete feature. When you type \n```\n@use\n```\n\n in a new snippet, you can press \n```\nctrl + space\n```\n\n to open the autocomplete menu, which will display a list of available partials.\n\n### Limitations\n\nCurrently, there are some limitations to using SCSS partials in WPCodeBox. You cannot use nested partials, and you cannot \n```\n@use\n```\n\n a partial that \n```\n@uses\n```\n\n another partial. However, WPCodeBox is constantly improving and updating, so these limitations may be resolved in future updates.\n\n[Snippet types and how to select the right one](/snippet_types)[Code Editor](/editor)",
+      "headings": [
+        "Using SCSS Partials in WPCodeBox",
+        "Creating a SCSS Partial",
+        "Importing SCSS Partials",
+        "Autocomplete for SCSS Partials",
+        "Limitations"
+      ],
+      "code_blocks": [
+        "@use '_typography';",
+        "@use '_typography';",
+        "ctrl + space"
+      ]
+    },
+    {
+      "title": "Running PHP/HTML Snippets using Shortcodes in WPCodeBox",
+      "url": "https://docs.wpcodebox.com/shortcodes",
+      "category": "Shortcodes",
+      "content": "Shortcodes\n# Running PHP/HTML Snippets using Shortcodes in WPCodeBox\n\nWPCodeBox is a WordPress code snippet manager that allows you to easily manage and use code snippets on your website. With the latest version of WPCodeBox, you can now run PHP/HTML snippets using shortcodes.\n\n## How to Use Shortcodes for PHP/HTML Snippets\n\nTo use shortcodes for your PHP/HTML snippets, follow these steps:\n\n1. Click on \"Add New Snippet\" in the WPCodeBox dashboard.\n\n2. In the \"Snippet Settings\" section, select \"Shortcode\" as the \"Where to insert the snippet\" option.\n\n3. In the \"Shortcode name\" field, enter the shortcode name you want to use for this snippet. This name can be anything you want, but it should be unique and easy to remember.\n\n4. Enter your PHP/HTML code in the \"Snippet Code\" section.\n\n5. Click \"Save Changes\" to save your new snippet.\n\nOnce your snippet is saved, you can use it on any page or post on your WordPress site by using the shortcode you defined in the \"Shortcode name\" field. For example, if your shortcode name is \"my_snippet\", you can use it on a page or post by adding the following shortcode:\n\n```\n[my_snippet]\n```\nWhen you publish the page or post, the shortcode will be replaced with the PHP/HTML code from your snippet.\n\n## Sending parameters to shortcodes\n\nWhen creating a custom shortcode in WPCodeBox, you may want to pass parameters to it. To do this, you can use the following syntax when adding the shortcode to your post:\n\n```\n[shortcode_name parameter1=\"value1\" parameter2=\"value2\"]\n```\nIn your custom shortcode, you can then parse the parameters using the \n```\nshortcode_atts()\n```\n\n function. Here's an example of how to use it:\n\n```\n$params = shortcode_atts( array(\n \n    'parameter1' => 'default_value1',\n \n    'parameter2' => 'default_value2',\n \n), $atts );\n \n// Access the parameters like this:\n \n$value1 = $params['parameter1'];\n \n$value2 = $params['parameter2'];\n \n// Your shortcode code goes here...\n \necho $output;\n```\nIn this example, the \n```\nshortcode_atts()\n```\n\n function takes an array of default parameter values as its first argument, and an array of actual parameter values passed to the shortcode as its second argument. The function merges the two arrays, overriding any default values with actual values where they exist.\n\nYou can then access the parameters in your shortcode code by accessing the \n```\n$params\n```\n\n array, which contains all parameter values. If a parameter was not passed to the shortcode, the default value specified in the first argument of \n```\nshortcode_atts()\n```\n\n will be used.\n\nThis method of parsing shortcode parameters can make your code more flexible and customizable.\n\n## Automatic PHP Output Capturing\n\nOne important thing to note is that PHP output is automatically captured when using shortcodes in WPCodeBox. This means that you don't need to use the \"return\" statement in your PHP code to output the results of your code. Instead, you can use the \"echo\" statement or any other method to output your code, and it will be captured by the shortcode.\n\n[Code Editor](/editor)[Run Snippets using an External URL](/external_url)",
+      "headings": [
+        "How to Use Shortcodes for PHP/HTML Snippets",
+        "Sending parameters to shortcodes",
+        "Automatic PHP Output Capturing"
+      ],
+      "code_blocks": [
+        "[my_snippet]",
+        "[my_snippet]",
+        "[shortcode_name parameter1=\"value1\" parameter2=\"value2\"]",
+        "[shortcode_name parameter1=\"value1\" parameter2=\"value2\"]",
+        "shortcode_atts()",
+        "$params = shortcode_atts( array(\n \n    'parameter1' => 'default_value1',\n \n    'parameter2' => 'default_value2',\n \n), $atts );\n \n// Access the parameters like this:\n \n$value1 = $params['parameter1'];\n \n$value2 = $params['parameter2'];\n \n// Your shortcode code goes here...\n \necho $output;",
+        "$params = shortcode_atts( array(\n \n    'parameter1' => 'default_value1',\n \n    'parameter2' => 'default_value2',\n \n), $atts );\n \n// Access the parameters like this:\n \n$value1 = $params['parameter1'];\n \n$value2 = $params['parameter2'];\n \n// Your shortcode code goes here...\n \necho $output;",
+        "shortcode_atts()",
+        "shortcode_atts()"
+      ]
+    },
+    {
+      "title": "Troubleshooting a snippet that doesn't run",
+      "url": "https://docs.wpcodebox.com/snippet_doesnt_run",
+      "category": "Snippet_doesnt_run",
+      "content": "My snippet doesn't run\n# Troubleshooting a snippet that doesn't run\n\nThe first thing to check if a snippet doesn't run is to make sure that the snippet is enabled.\nYou can do this by selecting the snippet and checking the \"Enabled\" toggle in the upper left corner of the editor.\n\nYou also need to check if you have the correct snippet type selected. [Read more about the supported snippet types and when to use them.](/snippet_types)\n\n## A PHP Snippet doesn't run\n\n### The conditions you use can't be evaluated for the selected hook\n\nWhen using conditions, not all conditions can be evaluated in all hooks. For example, the \n```\nplugins_loaded\n```\n\n hook is triggered before the current post type is known.\n\nFor frontend pages, the current post type is only known after the \n```\nwp\n```\n\n hook is triggered. So if you use a condition that checks the current post type on the \n```\nplugins_loaded\n```\n\n hook, it will always return false.\n\n️ℹ️If you use conditions in a PHP Snippet, the \n```\nwp\n```\n\n hook is the best hook to use.\n\n### You add an action in your code using the add_action function, but that action already fired\n\nIf you use the \n```\nadd_action\n```\n\n function in your code, make sure that the action you add hasn't already fired. If it has, your code won't run.\nFor example, if you add this code snippet:\n\n```\n<?php\n \nadd_action('plugins_loaded', function() {\n    echo 'Hello world';\n});\n```\nAnd select the \n```\nplugins_loaded\n```\n\n hook in the WPCodeBox UI, the snippet won't run. Because our code executes when \n```\nplugins_loaded\n```\n\n is triggered, so we add the hook for \n```\nplugins_loaded\n```\n\n too late.\n\nA solution here would be to use an earlier hook, like 'Root'.\n\n️ℹ️If adding an action using the \n```\nadd_action\n```\n\n function, make sure you select an earlier hook in the WPCodeBox UI. \n```\nroot\n```\n\n and \n```\nplugins_loaded\n```\n\n should be the safest.\n\n### Wrong hook selected\n\nIf a PHP Snippet doesn't run, it's most likely because you have the wrong hook selected for the snippet.\n\nIf the hook isn't triggered you snippet won't run. For example, the \n```\nwoocommerce_before_add_to_cart_button\n```\n\n hook is only triggered on the single product page. If you add a snippet with this hook to the cart page, it won't run.\n\n## A CSS/SCSS/JS/HTML Snippet doesn't run\n\n### Confusion between JS and HTML snippets\n\nThe most common reason why a JS snippet doesn't run, is because there is confusion between JS and HTML snippets.\nIf your code looks like this (notice the <script> </script>tags:\n\n```\n<script>\n    console.log('Hello world');\n</script>\n```\nThen you need to select the HTML snippet type, not the JS snippet type. Because this code is JS code embedded in HTML.\n\nIf you select the JS snippet, your code should look like this:\n\n```\nconsole.log('Hello world');\n```\n\n### Conditions aren't met\n\nAnother reason that might cause a snippet to not run, is that conditions aren't met.\nDouble-check you have the correct snippet type selected according to your code, and make sure the conditions are met on the page where you want the snippet to run.\n\n[Cloud snippets won't load](/cant_load_cloud_snippets)[Common Notices, Warnings and Errors](/common_errors)",
+      "headings": [
+        "A PHP Snippet doesn't run",
+        "The conditions you use can't be evaluated for the selected hook",
+        "You add an action in your code using the add_action function, but that action already fired",
+        "Wrong hook selected",
+        "A CSS/SCSS/JS/HTML Snippet doesn't run",
+        "Confusion between JS and HTML snippets",
+        "Conditions aren't met"
+      ],
+      "code_blocks": [
+        "plugins_loaded",
+        "plugins_loaded",
+        "<?php\n \nadd_action('plugins_loaded', function() {\n    echo 'Hello world';\n});",
+        "<?php\n \nadd_action('plugins_loaded', function() {\n    echo 'Hello world';\n});",
+        "plugins_loaded",
+        "plugins_loaded",
+        "plugins_loaded",
+        "plugins_loaded",
+        "woocommerce_before_add_to_cart_button",
+        "<script>\n    console.log('Hello world');\n</script>",
+        "<script>\n    console.log('Hello world');\n</script>",
+        "console.log('Hello world');",
+        "console.log('Hello world');"
+      ]
+    },
+    {
+      "title": "Snippet settings",
+      "url": "https://docs.wpcodebox.com/snippet_settings",
+      "category": "Snippet_settings",
+      "content": "Snippet Settings\n# Snippet settings\n\nWhen creating a snippet you have options to select what kind of snippet you create, and how will that snippet run.\n\n## Title/Description\n\nThis is pretty self-explanatory, it is the title of the snippet. This title will appear in the left sidebar, and also will be the title of the snippet when you save it to the cloud. The description is an extra text that you can use to describe the snippet. Both these fields are matched when searching for a snippet.\n\n## Snippet Type\n\nThis option determines the language or the snippet you have to run.\n\nPHP\nThe most common type of snippet. It starts with \n```\n<?php\n```\n\n and it must have no closing tag.\n\nJS\nThis is used for adding JS code to your WordPress site. This is not used to add external JS code, for example from a CDN. See how to add external JS code to your WordPress site here [How to add external JS code to your WordPress site (opens in a new tab)](https://wpcodebox.com/documentation/how-to-add-external-js-code-to-your-wordpress-site/).\n\nCSS/SCSS/LESS\nThis is used to add inline styles to your WordPress site. This is not used to add external CSS code, for example from a CDN. See how to add external CSS code to your WordPress site here [How to add external CSS code to your WordPress site (opens in a new tab)](https://wpcodebox.com/documentation/how-to-add-external-css-code-to-your-wordpress-site/)\n\nSCSS/LESS code is compiled to CSS every time the snippet is saved. This is completely transparent to the user.\n\n## CSS Dev Mode (Auto-Reload)\n\nCSS Dev Mode is available for CSS/SCSS/LESS snippets. This is useful when you want to see the changes you make in real-time. If you write CSS for the homepage, for example, you can have the homepage open, and if dev mode is enabled, the CSS changes will be loaded in real-time on the page without the need to reload the page. It saves you time by not having to leave the editor to refresh the page to see how the changes you make look.\n\nIMPORTANT: You need to refresh the page that you are working on after you enable dev mode.\n\n## How to run the snippet\n\nThis option is only available for PHP snippets. The 2 options here are:\n\nAlways (On Page Load)\nThis is the default option. The snippets will run when the page loads, exactly like when adding code to functions.php or wp-config.php. If you select this option you will have the options to run the snippet on the front-end, back-end (wp-admin), or custom conditions (run/not run on specific pages).\n\nManual (On Demand)\nThis option is useful if you want to run code in the context of WordPress. The code will run when you click the RUN button above the editor. The output of the script will be displayed in the section below the editor.\n\nSelecting this allows you to run code that you don't necessarily want to run all the time. For example, you might want to run a script that deletes all the orphaned post meta. You can add the code, hit run and that code will run. Or you might want to test a custom WP_Query, you can write the query and echo the values you want to check, and the output will be displayed below the editor.\n\nAnother use case is a snippet that deletes the orphaned WooCommerce product variations. You write the code (or download it from the snippet repository). You set the run-type to manual, and whenever you want to delete the orphaned product variations, you hit the run button and run the code.\n\nIMPORTANT: Before running code that makes changes to the database, it is a good idea to do a dry run and backup the database. For example, in the case of deleting the orphaned product variations snippet, there is also a snippet that just runs the queries and shows how many variations would be deleted.\n\n[(opens in a new tab)](https://wpcodebox.com/documentation/how-to-run-a-wordpress-code-snippet/)\n\n## Revisions\n\nWPCodeBox Snippets have a built-in revisions system that lets you review previous changes and easily restore code that has been changed.\n\nUsing Revisions\nTo use Revisions click on a Snippet and then click the \"+ Revisions\" button in the Edit Snippet panel to see revisions for that Snippet. You can add notes for each revision by clicking the notes icon for any revision in the list.\n\nAfter selecting a revision you'll see several new buttons in the editor.\n\nOn the top row you'll see an option to close the current revision, or delete it entirely.\n\nOn the left side of the editor, you'll see a blue rectangle where you can click the undo button to restore previous code. When working with deleted code, you can click the lightbulb icon next to the code to copy the code or revert the changes.\n\nSet the Number of Revisions\nYou can set the number of Revisions via Settings > Number of revisions to save in WPCodeBox.\n\n## Snippet URL\n\nEach Snippet has a unique URL which you can use to easily navigate to. The Snippet URL is the same as the WPCodeBox URL and a parameter that includes the snippet ID. You may find a Snippet's URL in the browser's Address Bar.\n\n[Plugin Settings](/plugin_settings)[Save Code Snippets to the Cloud](/cloud)",
+      "headings": [
+        "Title/Description",
+        "Snippet Type",
+        "CSS Dev Mode (Auto-Reload)",
+        "How to run the snippet",
+        "Revisions",
+        "Snippet URL"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Snippet Types – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/snippet_types",
+      "category": "Snippet_types",
+      "content": "Snippet types and how to select the right one\n## Snippet Types and how to select the right one\n\nWPCodeBox, the WordPress Code Snippets Manager, offers a comprehensive range of supported snippet types to enhance the functionality and design of your WordPress website. This documentation page aims to guide users in choosing the appropriate snippet type for their specific needs. WPCodeBox supports the following snippet types:\n\n### PHP Snippets\n\n**Description:** PHP snippets allow you to inject custom PHP code directly into your WordPress website. This powerful snippet type enables you to extend the functionality of your themes or plugins without the need to modify their core files.\n\n**When to Use:**\n\n- **Custom Functions:** Define custom PHP functions or modify existing ones to tailor your website to specific requirements.\n- **Database Queries:** Execute custom database queries to retrieve or update data.\n- **Conditional Logic:** Implement conditional statements and logic to control various aspects of your site dynamically.\n\n**Example:**\n\n```\n<?php\n \nfunction custom_hello_message() {\n    echo \"Hello, World!\";\n}\n \nadd_action('wp_footer', 'custom_hello_message');\n```\n\n### CSS Snippets\n\n**Description:** CSS snippets allow you to apply custom styles to elements on your WordPress site. With this snippet type, you can easily personalize the appearance and layout of your website without directly editing theme files.\n\n**When to Use:**\n\n- **Styling Overrides:** Override existing styles and apply your own custom styles to specific elements.\n- **Responsive Design:** Implement responsive design changes to adapt your site's layout across different devices.\n- **Animation and Effects:** Add animations or other visual effects to enhance user experience.\n\n**Example:**\n\n```\n/* Customize the header background color */\n.site-header {\n    background-color: #f2f2f2;\n}\n \n/* Increase the font size of post titles */\n.entry-title {\n    font-size: 24px;\n}\n```\n\n### SCSS/LESS Snippets\n\n**Description:** SCSS/LESS snippets are used for more advanced CSS styling. They support the SCSS (Sass) and LESS preprocessors, which offer additional features like variables, nesting, and mixins to make your stylesheets more maintainable and organized.\n\n**When to Use:**\n\n- **Complex Styling:** When dealing with intricate and extensive CSS styling, SCSS/LESS provide a more organized approach.\n- **Code Reusability:** Utilize variables and mixins to reuse code and maintain consistency in your styles.\n\n**Example (SCSS):**\n\n```\n$primary-color: #007bff;\n \n.button {\n    background-color: $primary-color;\n    color: white;\n    padding: 10px 20px;\n}\n```\n\n### JavaScript (JS) Snippets\n\n**Description:** JavaScript snippets enable you to add custom client-side scripts to your WordPress website. By leveraging JS snippets, you can introduce interactive features and dynamic behavior to your site.\n\n**When to Use:**\n\n- **User Interaction:** Implement features such as dropdown menus, sliders, and pop-up modals for improved user engagement.\n- **Form Validation:** Validate user input in forms before submission to ensure data accuracy.\n- **AJAX Requests:** Make asynchronous requests to the server for smoother user experience.\n\n**Example:**\n\n```\n// Display an alert when the page finishes loading\ndocument.addEventListener('DOMContentLoaded', function() {\n    alert('Welcome to our website!');\n});\n \n// AJAX request example\ndocument.getElementById('load-more-button').addEventListener('click', function() {\n    // Your AJAX request code here\n});\n```\n️ℹ️If your snippet has script tags in it, like <script></script> or <script type=\"text/javascript\"></script>, or <script src=\"https://example.com/script.js\"><script> then you should use the HTML snippet type.\n\n### HTML Snippets\n\n**Description:** HTML snippets allow you to add custom HTML code to your WordPress website. They are particularly useful for adding custom elements, forms, or structuring content.\n\n**When to Use:**\n\n- **Custom Elements:** Add unique elements or components not natively supported by WordPress.\n- **Custom Forms:** Implement specialized forms or UI elements.\n\n**Example:**\n\n```\n<div class=\"custom-banner\">\n    <h2>Welcome to Our Website!</h2>\n    <p>Discover amazing products and services.</p>\n</div>\n```\n\n### TXT Snippets\n\n**Description:** TXT snippets are used for notes and other non-executable content. They are purely for informational purposes and do not affect the functionality of your website.\n\n**When to Use:**\n\n- **Documentation:** Add notes, explanations, or documentation for your code snippets.\n- **Code Organization:** Use TXT snippets to provide context or label specific sections of your snippets.\n\n**Example:**\n\n```\n// This snippet customizes the footer style.\n// Note: Make sure to clear cache after making changes.\n```\n\n### Markdown\n\n**Description:** Markdown snippets are useful for notes, documentation, and other non-executable content. They are solely for informational purposes and have no impact on your website.\n\n**When to Use:**\n\n- **Documentation:** Add explanations or instructions for your code snippets.\n- **Code Organization:** USe Markdown snippets to provide context to your snippets or label specific sections of snippets.\n\n**Example:**\n\n```\n## Snippet Usage\nThe following snippet customizes the footer style by using the `wp_enqueue_styles` function to register new styles. \n \n**Note:** You'll want to clear any caches on your site after making changes.\n```\n\n## Choosing the Right Snippet Type\n\nWhen selecting the appropriate snippet type in WPCodeBox, consider the specific functionality or changes you want to achieve. Here are some key points to keep in mind:\n\n- **Functionality:** For adding or modifying PHP functions, go with PHP snippets.\n- **Styling:** For custom CSS styles, use CSS or SCSS/LESS snippets depending on your project's complexity.\n- **Interactivity:** If you require dynamic behavior or interactive features, opt for JavaScript (JS) snippets.\n- **HTML Structure:** When adding custom HTML elements or forms, choose HTML snippets.\n- **Documentation and Notes:** For non-executable content, use TXT snippets to provide explanations or context for your code.\n\nBy choosing the right snippet type for each scenario, you can efficiently manage and execute custom code within your WordPress website using WPCodeBox. Enjoy the flexibility and possibilities that these snippets bring to your WordPress development journey!\n\n[The Condition Builder](/condition_builder)[SCSS Partials](/scss_partials)",
+      "headings": [
+        "Snippet Types and how to select the right one",
+        "PHP Snippets",
+        "CSS Snippets",
+        "SCSS/LESS Snippets",
+        "JavaScript (JS) Snippets",
+        "HTML Snippets",
+        "TXT Snippets",
+        "Markdown",
+        "Choosing the Right Snippet Type"
+      ],
+      "code_blocks": [
+        "<?php\n \nfunction custom_hello_message() {\n    echo \"Hello, World!\";\n}\n \nadd_action('wp_footer', 'custom_hello_message');",
+        "<?php\n \nfunction custom_hello_message() {\n    echo \"Hello, World!\";\n}\n \nadd_action('wp_footer', 'custom_hello_message');",
+        "/* Customize the header background color */\n.site-header {\n    background-color: #f2f2f2;\n}\n \n/* Increase the font size of post titles */\n.entry-title {\n    font-size: 24px;\n}",
+        "/* Customize the header background color */\n.site-header {\n    background-color: #f2f2f2;\n}\n \n/* Increase the font size of post titles */\n.entry-title {\n    font-size: 24px;\n}",
+        "$primary-color: #007bff;\n \n.button {\n    background-color: $primary-color;\n    color: white;\n    padding: 10px 20px;\n}",
+        "$primary-color: #007bff;\n \n.button {\n    background-color: $primary-color;\n    color: white;\n    padding: 10px 20px;\n}",
+        "// Display an alert when the page finishes loading\ndocument.addEventListener('DOMContentLoaded', function() {\n    alert('Welcome to our website!');\n});\n \n// AJAX request example\ndocument.getElementById('load-more-button').addEventListener('click', function() {\n    // Your AJAX request code here\n});",
+        "// Display an alert when the page finishes loading\ndocument.addEventListener('DOMContentLoaded', function() {\n    alert('Welcome to our website!');\n});\n \n// AJAX request example\ndocument.getElementById('load-more-button').addEventListener('click', function() {\n    // Your AJAX request code here\n});",
+        "<div class=\"custom-banner\">\n    <h2>Welcome to Our Website!</h2>\n    <p>Discover amazing products and services.</p>\n</div>",
+        "<div class=\"custom-banner\">\n    <h2>Welcome to Our Website!</h2>\n    <p>Discover amazing products and services.</p>\n</div>",
+        "// This snippet customizes the footer style.\n// Note: Make sure to clear cache after making changes.",
+        "// This snippet customizes the footer style.\n// Note: Make sure to clear cache after making changes.",
+        "## Snippet Usage\nThe following snippet customizes the footer style by using the `wp_enqueue_styles` function to register new styles. \n \n**Note:** You'll want to clear any caches on your site after making changes.",
+        "## Snippet Usage\nThe following snippet customizes the footer style by using the `wp_enqueue_styles` function to register new styles. \n \n**Note:** You'll want to clear any caches on your site after making changes."
+      ]
+    },
+    {
+      "title": "How to target the Oxygen Builder UI using the condition builder",
+      "url": "https://docs.wpcodebox.com/target_oxygen_builder",
+      "category": "Target_oxygen_builder",
+      "content": "How to target the Oxygen Builder UI using the Condition Builder\n# How to target the Oxygen Builder UI using the condition builder\n\n## How not to run a Code Snippet in the Oxygen Builder\n\nIn case you don't want to run a Code Snippet in the Oxygen Builder UI, you need to use the Page URL Condition. The Oxygen editor pages have a ct_builder=true in the URL. So, to not run a snippet in the Oxygen UI or in the Oxygen iframe, we can set a condition like this:\n\nPage URL Doesn't contain ct_builder=true\n\n![](https://wpcodebox.b-cdn.net/wp-content/uploads/2021/07/Selection_071.png)\n\n## How to run a Code Snippet only in the Oxygen UI\n\nTo run a Code Snippet in the Oxygen Builder UI, we would do the same as above, but use the Contains verb instead of Doesn't contain.\n\nTo run code snippet only in the Oxygen Builder iframe (that's the area of the page that's rendered inside the Oxygen Builder) we can use *oxygen_iframe=true* instead of *ct_builder=true*.\n\n## Combining these conditions\n\nThese conditions can be combined using otherconditions or condition groups to achieve more complex conditional logic. For example you can run snippets in the Oxygen builder context only on certain pages or post types.\n\n[Display an ACF Field in a Shortcode](/display_acf_field_in_a_shortcode)[How to add external JS code to your WordPress site](/add_external_js_code)",
+      "headings": [
+        "How not to run a Code Snippet in the Oxygen Builder",
+        "How to run a Code Snippet only in the Oxygen UI",
+        "Combining these conditions"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "What to do in case the WPCodeBox UI doesn't load",
+      "url": "https://docs.wpcodebox.com/ui_wont_load",
+      "category": "Ui_wont_load",
+      "content": "WPCodeBox UI won't load\n# What to do in case the WPCodeBox UI doesn't load\n\n## Clear your local storage\n\nIt can happen sometimes that a bad snippet ID is stored in your local storage.\nClearing your local storage should fix this. [How to clear your local storage (opens in a new tab)](https://support.conquer.io/hc/en-us/articles/5821475923988-How-to-clear-local-storage-in-Chrome)\n\n## Run a plugin conflict check\n\nIn rare cases, some plugins might interfere with the WPCodeBox UI. If your UI doesn't load, try running a plugin conflict check, by disabling all your plugins except WPCodeBox.\nIf the UI loads, you can enable your plugins one by one to find the culprit.\n\n[Common Notices, Warnings and Errors](/common_errors)[Where are my snippets stored?](/where_are_snippets_stored)",
+      "headings": [
+        "Clear your local storage",
+        "Run a plugin conflict check"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Using hooks instead of conditions",
+      "url": "https://docs.wpcodebox.com/use_hooks_instead_of_conditions",
+      "category": "Use_hooks_instead_of_conditions",
+      "content": "How to use hooks instead of conditions\n# Using hooks instead of conditions\n\nWPCodeBox 2 introduces a more advanced hook system. It is recommended to use this instead of conditions when possible. This will give you better\nperformance. Also, the hooks, unlike conditions, are saved to the cloud, because they are universal and not specific to a single WordPress website.\n\n## When can you use hooks instead of conditions?\n\n### For PHP Snippets\n\n- Instead of the \"Admin Area\" condition, you can use the admin_init\" hook.\n- Instead of the \"Frontend\" condition, you can use the \"wp\" hook.\n- Instead of the \"Login Page\" condition, you can use the \"login_init\" hook.\n\n### For CSS/SCSS/JS/HTML Snippets\n\n- Instead of the \"Admin Area\" condition, you can use the \"Admin Header\" or \"Admin Footer\" hooks.\n- Instead ot the \"Frontend\" condition, you can use the \"Frontend Header\" or \"Frontend Footer\" hooks.\n- Instead of the \"Login Page\" condition, you can use the \"Login Header\" or \"Login Footer\" hooks.\n\n[Documentation in Editor](/documentation_in_editor)[Add Google Tag Manager to WordPress](/google_tag_manager)",
+      "headings": [
+        "When can you use hooks instead of conditions?",
+        "For PHP Snippets",
+        "For CSS/SCSS/JS/HTML Snippets"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Where are snippets stored",
+      "url": "https://docs.wpcodebox.com/where_are_snippets_stored",
+      "category": "Where_are_snippets_stored",
+      "content": "Where are my snippets stored?\n# Where are snippets stored\n\nSometimes, adding a bad snippets could cause an issue, and deleting it from the database is the easiest way to fix it.\n\nWPCodeBox stores the snippets in the database in two tables:\n\n- ```\nwp_wpcb_snippets\n```\n\n - stores the code snippets\n- ```\nwp_wpcb_folders\n```\n\n - stores the folders\n\n[WPCodeBox UI won't load](/ui_wont_load)[Known Issues](/known_issues)",
+      "headings": [],
+      "code_blocks": [
+        "wp_wpcb_snippets",
+        "wp_wpcb_folders"
+      ]
+    },
+    {
+      "title": "How to run your code on a specific WooCommerce hook or action",
+      "url": "https://docs.wpcodebox.com/woocommerce_hooks_insertion_points",
+      "category": "Woocommerce_hooks_insertion_points",
+      "content": "How to run your code on a specific WooCommerce hook or action\n# How to run your code on a specific WooCommerce hook or action\n\nWPCodeBox makes it easy to run code when WooCommerce is active on specific actions or hooks.\n\nFor example, if you want to run a code snippet after the summary on the single product page, you just need to select that under \"Where to insert the snippet\" when creating the snippet:\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fwoocommerce_hooks_insertion_points.png&w=828&q=75)[How to add external CSS code to your WordPress site](/add_external_css_code)[A snippet throws an error](/safe_mode)",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "WordPress Autocomplete – WPCodeBox Documentation",
+      "url": "https://docs.wpcodebox.com/wordpress_autocomplete",
+      "category": "Wordpress_autocomplete",
+      "content": "WordPress Auto-Complete\n### WordPress Auto-Complete\n\nDon't waste time googling WordPress actions, hooks or filters.\n\nThe WPCodeBox editor will suggest them based on the context in the editor, letting you search them in the autocomplete window that appears:\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fwordpress_autocomplete.png&w=3840&q=75)\nWPCodeBox includes the most recent actions, hooks, filters and functions found in WordPress.\n\n[CDNJS Integration](/cdnjs_integration)[Generate an Anonymous Function](/anonymous_function)",
+      "headings": [
+        "WordPress Auto-Complete"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPCodeBox UI",
+      "url": "https://docs.wpcodebox.com/wpcodebox_ui",
+      "category": "Wpcodebox_ui",
+      "content": "WPCodeBox UI\n# WPCodeBox UI\n\n## Main interface\n\n![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fwpcodebox_ui_2.png&w=1920&q=75)\n\n### 1. Create new Snippet Button\n\nUsing this button you create a new Snippet. Before you save the snippet make sure to select the snippet type. Once the snippet is saved, its type cannot be changed.\n\n### 2. WordPress Snippet Repository\n\nThis is the place where you can find all the snippets that are available in the WordPress Snippet Repository. You can search for snippets using the search box. You can also filter the snippets by category.\n\n### 3. Plugin Settings\n\nHere you can set your WPCodeBox Cloud API Key. Also, you can edit the editor settings, like layouts, font sizes or line wraps.\n\n### 4. Snippet Search\n\nUsing the search textfield, you can search the local snippets by name, description or code. For example, if you want to find all snippets that access an ACF field, you could search for \n```\nget_field\n```\n\n or \n```\nget_field_object\n```\n\n.\n\n### 5. Local Snippets List\n\nThis is the list of all the snippets that you have created locally. You can search for snippets using the search box. If a snippet is disabled, its name will be in italics. Only enabled snippets run.\nYou can create folders to organize the snippet list, and you can push/pull local snippets to and from the cloud.\n\n### 6. Cloud Snippets List\n\nThese are the cloud snippets you have available. You can download and enable them locally. When a cloud snippet is downloaded, it will be disabled by default.\n\n### 7. Code Editor\n\nThe main code editor allows you to edit your Code Snippets. The Editor will automaticallt detect what code snippet you are editing, and will provide completions and suggestions accordingly.\n\n### 8. Snippet Settings\n\nIn this section, you have all the snippet details. You can edit the snippet name, description, and other settings.\n\n### 9. Snippet Title\n\nThe snippet title is the name of the snippet. It is used to identify the snippet in the snippet list.\n\n### 10. Snippet Description\n\nThe optional description allows you to describe in more detail what the snippet does.\n\n### 11. How to run the snippet\n\nYou have 3 options here.\n\n- Always - this will run the snippet automatically (best for snippets that need to run on every page load).\n- Manually - this will add a button to the top bar above the editor that allows you to run the snippet manually.\n- Using External Secure URL - This will generate an URL that you can call to run the snippet. Useful for running snippets from external services.\n\n### 12. Where to insert the snippet\n\nThis allows you to customize where the snippet will run. The default option is \n```\nplugins_loaded\n```\n\n, and it should be the best for most cases.\nYou can also select to run the snippet in a custom action or a custom shortcode.\nBy changing the priority, you set the priority for that respective action. The priority is the argument sent to the [add_action function (opens in a new tab)](https://developer.wordpress.org/reference/functions/add_action/).\n\n### 13. Snippet Order\n\nThe snippet order determines the order in which the snippets are run. The lower the number, the earlier the snippet will run. The default order is 10. This doesn't affect where the code runs, but only how snippets are rendered in relation to eachother.\n\n### 14. Condition builder\n\nThis will open the condition builder, where you can conditionally run the snippet. You can add multiple conditions, and you can also nest conditions. [Read more about the condition builder here.](/condition_builder)\n\n### 15. Current Snippet Actions\n\nFrom this area you can enable/disable the snippet, save it and upload or download the current snippet from the cloud.\n\n[Installation](/installation)[Plugin Settings](/plugin_settings)",
+      "headings": [
+        "Main interface",
+        "1. Create new Snippet Button",
+        "2. WordPress Snippet Repository",
+        "3. Plugin Settings",
+        "4. Snippet Search",
+        "5. Local Snippets List",
+        "6. Cloud Snippets List",
+        "7. Code Editor",
+        "8. Snippet Settings",
+        "9. Snippet Title",
+        "10. Snippet Description",
+        "11. How to run the snippet",
+        "12. Where to insert the snippet",
+        "13. Snippet Order",
+        "14. Condition builder",
+        "15. Current Snippet Actions"
+      ],
+      "code_blocks": [
+        "get_field_object",
+        "plugins_loaded"
+      ]
+    }
+  ]
+}

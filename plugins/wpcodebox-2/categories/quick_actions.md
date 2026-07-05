@@ -1,0 +1,27 @@
+# Quick_actions
+
+*Category from WPCodeBox 2 documentation*
+
+---
+
+## Quick Actions – WPCodeBox Documentation
+
+**Source:** [https://docs.wpcodebox.com/quick_actions](https://docs.wpcodebox.com/quick_actions)
+
+Quick Actions
+### Define a Snippet in Quick Actions
+
+Quick Actions are snippets that can be run easily and with a one click directly from your WordPress admin top bar. This helps when you want to speed up repetitive actions.
+
+To make a snippet work as a quick action, do the following:
+
+- Create a snippet or edit an existing snippet
+- Change "How to run the snippet" to "Manual (On Demand)"
+- Then, enable "Add to quick actions"
+
+That's it! Once enabled, a "WPCodeBox Quick Actions" menu will appear with the snippet available to run it quickly and with just a click.
+
+[Code Signing and Security](/code_signing)[CDNJS Integration](/cdnjs_integration)
+
+---
+

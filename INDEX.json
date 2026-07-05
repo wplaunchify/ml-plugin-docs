@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-05T18:30:09.328Z",
-  "total_plugins": 130,
+  "last_updated": "2026-07-05T19:12:27.535Z",
+  "total_plugins": 131,
   "plugins": [
     {
       "slug": "add-anchor-links",
@@ -3584,6 +3584,57 @@
         "user-roles",
         "webhooks",
         "webhooks-zapier"
+      ]
+    },
+    {
+      "slug": "wpcodebox-2",
+      "name": "WPCodeBox 2",
+      "documentation_url": "https://docs.wpcodebox.com/",
+      "last_scraped": "2026-07-05T19:12:27.535Z",
+      "page_count": 42,
+      "categories": [
+        "acf_options_pages",
+        "add_external_css_code",
+        "add_external_js_code",
+        "add_php_code",
+        "anonymous_function",
+        "cant_load_cloud_snippets",
+        "cdnjs_integration",
+        "cloud",
+        "cloud_storage",
+        "code_signing",
+        "code_snippets_repository",
+        "common_errors",
+        "condition_builder",
+        "css_dev_mode",
+        "display_acf_field_in_a_shortcode",
+        "documentation_in_editor",
+        "download_code",
+        "editor",
+        "external_url",
+        "functionality_plugin",
+        "generate_plugin",
+        "google_tag_manager",
+        "how_to_run_a_wordpress_code_snippet",
+        "installation",
+        "known_issues",
+        "migrating",
+        "overview",
+        "plugin_settings",
+        "quick_actions",
+        "safe_mode",
+        "scss_partials",
+        "shortcodes",
+        "snippet_doesnt_run",
+        "snippet_settings",
+        "snippet_types",
+        "target_oxygen_builder",
+        "ui_wont_load",
+        "use_hooks_instead_of_conditions",
+        "where_are_snippets_stored",
+        "woocommerce_hooks_insertion_points",
+        "wordpress_autocomplete",
+        "wpcodebox_ui"
       ]
     }
   ]

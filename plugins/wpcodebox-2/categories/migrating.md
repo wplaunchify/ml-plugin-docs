@@ -1,0 +1,128 @@
+# Migrating
+
+*Category from WPCodeBox 2 documentation*
+
+---
+
+## Migrating to WPCodeBox 2
+
+**Source:** [https://docs.wpcodebox.com/migrating](https://docs.wpcodebox.com/migrating)
+
+Migrating from v1
+# Migrating to WPCodeBox 2
+
+First things first: WPCodeBox 2 is a separate plugin from the original WPCodeBox.
+This means that you'll need to install the new plugin separately, and it won't automatically replace the old one.
+You can download WPCodeBox 2 from your account on the WPCodeBox website, Downloads section.
+
+Once you've installed WPCodeBox 2, you'll need to migrate your code snippets from the old plugin to the new one.
+Unfortunately, this can't be done automatically, as the two plugins have different database structures.
+You'll need to manually copy your snippets from the old plugin to the new one.
+
+[Read more about why I decided to release WPCodeBox 2 as a separate plugin here](/#why-i-released-wpcodebox-2-as-a-separate-plugin)
+
+WPCodeBox v1 will continue to be supported and receive security updates for a while, so there's no need to rush the migration, if you don't need the new features.
+
+## Migration Steps
+
+To do this, follow these steps:
+
+### Download
+
+Download WPCodeBox 2.0 from your WPCodeBox account page.
+
+### Backup
+
+Make sure you have a backup of your WordPress site, just in case something goes wrong during the update.
+
+### Install WPCodeBox 2
+
+Install and activate the new WPCodeBox 2.0 plugin. It will work alongside the old plugin, so you can keep using the old plugin while you migrate your snippets.
+
+### Move your code snippets
+
+Move your code snippets from v1 to v2 as descibed in this guide.
+
+### Delete v1
+
+Once you know everything works, delete all your V1 snippets and deactivate and delete the old plugin.
+⚠️Make sure you don't have the same snippet active in both WPCodeBox 1 and WPCodeBox 2. This could lead to errors.
+**Deactivate a snippet in WPCodeBox 1 before activating it in WPCodeBox 2.**
+
+## Moving Your Code Snippets
+
+Once you have both plugins installed, you can start moving your code snippets to the new version. You could do this using the cloud or manually.
+
+#### Move Snippets Using the Cloud
+
+To move snippets using the cloud, you can upload them from WPCodeBox (you could use a folder structure to make this easier). Then, in WPCodeBox 2 you can download the snippets from the cloud and enable them. **Make sure to disable the snippet in WPCodeBox 1 before enabling it in WPCodeBox 2.**.
+
+Before enabling a snippet, please double-check the settings to make sure it has the right conditions, and it would run where you need it to.WPCodeBox
+
+#### Move Snippets Manually
+
+To move snippets manually, you could just go through them one by one and copy the code from the old plugin to the new one. This is a bit more time-consuming, but it's a good opportunity to test your snippets and make sure they're working as expected.
+
+## Things to consider when migrating to WPCodeBox 2
+
+## New Hook Options
+
+One of the main changes in WPCodeBox 2.0 is the introduction of more hook options.
+Instead of using conditions to execute snippets, you can now use hooks to specify where and when the snippets should run.
+This means that you can use hooks such as 'admin_init' instead of selecting the condition 'Location is admin'.
+
+The advantage of using hooks is that these settings are saved to the cloud, which means you don't have to worry about losing
+your settings when you download the code snippet to another site.
+
+ℹ️Using hooks is faster than conditions, so you should use them instead whenever possible.
+
+## Migrating CSS/SCSS/HTML/JS snippets
+
+WPCodeBox v1 had basic options to allow you to select where to load your CSS/SCSS/HTML/JS snippets. WPCodeBox 2 improves this by allowing you to select multiple insert locations for each snippet.Callout
+While this is a great improvement, it means that you'll need to manually select the insert locations for each snippet when you migrate to WPCodeBox 2.0.
+
+Here are a few examples of how to update your snippet settings:
+
+| WPCodeBox v1 | WPCodeBox v2 |
+| --- | --- |
+|  |  |
+
+If you use WooCommerce, you'll also see WooCommerce-related hooks in the list of hooks. These are useful for inserting HTML snippets at specific locations on your WooCommerce pages.
+
+## Migrating PHP snippets
+
+WPCodeBox v2 changes the default location that PHP snippets run to plugins_loaded. This will make it compatible with
+more plugins and themes. However, if you have PHP snippets that rely on the old location, you'll need to update them.
+
+| WPCodeBox v1 | WPCodeBox v2 |
+| --- | --- |
+|  |  |
+
+### New things you can do to render PHP Snippets
+
+In WPCodeBox v1 you had to use conditions if you wanted to render a snippet only on the backend or on the frontend, for examples. Now you can achieve the same with hooks.
+If you want a snippet to run only on the frontend you could select the 'wp' action, or the 'admin_init' action if you want it to run only on the backend.
+
+![](https://docs.wpcodebox.com/_next/image?url=%2Fimages%2Fadmin_init_example.png&w=640&q=75)
+
+## Troubleshooting
+
+If a snippet that ran fine in WPCodeBox 1 doesn't work in WPCodeBox 2, you can check a few things:
+
+- Make sure the correct conditions are set for the snippet (remember, conditions are not saved and downloaded from the cloud)
+- Make sure the snippet is enabled
+- Make sure the snippet is set to run on the correct hook
+- Some conditions might not work on hooks that trigger to early (for example, the current post is not defined in plugins_loaded), try using a later hook
+
+## Why I Released WPCodeBox 2 as a Separate Plugin
+
+WPCodeBox 2.0 is a major update to the WPCodeBox plugin that includes a lot of new features and improvements. Due to the significant changes that were made in this update, preserving backward compatibility with older versions of the plugin would have been difficult.
+
+To avoid the risk of breaking existing sites, I decided to release WPCodeBox 2.0 as a separate plugin. This allows users to upgrade to the new version on their own terms, and ensures that the transition is smooth and painless.
+
+While I understand that this may be an inconvenience for some users, I believe that it is the best approach for ensuring the stability and reliability of WPCodeBox. I hope that you will enjoy the new features and improvements that WPCodeBox 2.0 has to offer, and I look forward to your feedback and suggestions as I continue to improve and refine the plugin.
+
+[Home](/)[Installation](/installation)
+
+---
+

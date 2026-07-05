@@ -1,0 +1,87 @@
+# Snippet_settings
+
+*Category from WPCodeBox 2 documentation*
+
+---
+
+## Snippet settings
+
+**Source:** [https://docs.wpcodebox.com/snippet_settings](https://docs.wpcodebox.com/snippet_settings)
+
+Snippet Settings
+# Snippet settings
+
+When creating a snippet you have options to select what kind of snippet you create, and how will that snippet run.
+
+## Title/Description
+
+This is pretty self-explanatory, it is the title of the snippet. This title will appear in the left sidebar, and also will be the title of the snippet when you save it to the cloud. The description is an extra text that you can use to describe the snippet. Both these fields are matched when searching for a snippet.
+
+## Snippet Type
+
+This option determines the language or the snippet you have to run.
+
+PHP
+The most common type of snippet. It starts with 
+```
+<?php
+```
+
+ and it must have no closing tag.
+
+JS
+This is used for adding JS code to your WordPress site. This is not used to add external JS code, for example from a CDN. See how to add external JS code to your WordPress site here [How to add external JS code to your WordPress site (opens in a new tab)](https://wpcodebox.com/documentation/how-to-add-external-js-code-to-your-wordpress-site/).
+
+CSS/SCSS/LESS
+This is used to add inline styles to your WordPress site. This is not used to add external CSS code, for example from a CDN. See how to add external CSS code to your WordPress site here [How to add external CSS code to your WordPress site (opens in a new tab)](https://wpcodebox.com/documentation/how-to-add-external-css-code-to-your-wordpress-site/)
+
+SCSS/LESS code is compiled to CSS every time the snippet is saved. This is completely transparent to the user.
+
+## CSS Dev Mode (Auto-Reload)
+
+CSS Dev Mode is available for CSS/SCSS/LESS snippets. This is useful when you want to see the changes you make in real-time. If you write CSS for the homepage, for example, you can have the homepage open, and if dev mode is enabled, the CSS changes will be loaded in real-time on the page without the need to reload the page. It saves you time by not having to leave the editor to refresh the page to see how the changes you make look.
+
+IMPORTANT: You need to refresh the page that you are working on after you enable dev mode.
+
+## How to run the snippet
+
+This option is only available for PHP snippets. The 2 options here are:
+
+Always (On Page Load)
+This is the default option. The snippets will run when the page loads, exactly like when adding code to functions.php or wp-config.php. If you select this option you will have the options to run the snippet on the front-end, back-end (wp-admin), or custom conditions (run/not run on specific pages).
+
+Manual (On Demand)
+This option is useful if you want to run code in the context of WordPress. The code will run when you click the RUN button above the editor. The output of the script will be displayed in the section below the editor.
+
+Selecting this allows you to run code that you don't necessarily want to run all the time. For example, you might want to run a script that deletes all the orphaned post meta. You can add the code, hit run and that code will run. Or you might want to test a custom WP_Query, you can write the query and echo the values you want to check, and the output will be displayed below the editor.
+
+Another use case is a snippet that deletes the orphaned WooCommerce product variations. You write the code (or download it from the snippet repository). You set the run-type to manual, and whenever you want to delete the orphaned product variations, you hit the run button and run the code.
+
+IMPORTANT: Before running code that makes changes to the database, it is a good idea to do a dry run and backup the database. For example, in the case of deleting the orphaned product variations snippet, there is also a snippet that just runs the queries and shows how many variations would be deleted.
+
+[(opens in a new tab)](https://wpcodebox.com/documentation/how-to-run-a-wordpress-code-snippet/)
+
+## Revisions
+
+WPCodeBox Snippets have a built-in revisions system that lets you review previous changes and easily restore code that has been changed.
+
+Using Revisions
+To use Revisions click on a Snippet and then click the "+ Revisions" button in the Edit Snippet panel to see revisions for that Snippet. You can add notes for each revision by clicking the notes icon for any revision in the list.
+
+After selecting a revision you'll see several new buttons in the editor.
+
+On the top row you'll see an option to close the current revision, or delete it entirely.
+
+On the left side of the editor, you'll see a blue rectangle where you can click the undo button to restore previous code. When working with deleted code, you can click the lightbulb icon next to the code to copy the code or revert the changes.
+
+Set the Number of Revisions
+You can set the number of Revisions via Settings > Number of revisions to save in WPCodeBox.
+
+## Snippet URL
+
+Each Snippet has a unique URL which you can use to easily navigate to. The Snippet URL is the same as the WPCodeBox URL and a parameter that includes the snippet ID. You may find a Snippet's URL in the browser's Address Bar.
+
+[Plugin Settings](/plugin_settings)[Save Code Snippets to the Cloud](/cloud)
+
+---
+

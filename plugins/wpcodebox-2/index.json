@@ -1,0 +1,556 @@
+{
+  "plugin_slug": "wpcodebox-2",
+  "plugin_name": "WPCodeBox 2",
+  "documentation_url": "https://docs.wpcodebox.com/",
+  "last_scraped": "2026-07-05T19:12:27.486Z",
+  "total_pages": 42,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Acf_options_pages",
+      "slug": "acf_options_pages",
+      "url": "https://docs.wpcodebox.com/acf_options_pages/",
+      "file": "categories/acf_options_pages.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Register an ACF Options Page using WPCodeBox",
+          "url": "https://docs.wpcodebox.com/acf_options_pages"
+        }
+      ]
+    },
+    {
+      "title": "Add_external_css_code",
+      "slug": "add_external_css_code",
+      "url": "https://docs.wpcodebox.com/add_external_css_code/",
+      "file": "categories/add_external_css_code.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add external CSS code to your WordPress site",
+          "url": "https://docs.wpcodebox.com/add_external_css_code"
+        }
+      ]
+    },
+    {
+      "title": "Add_external_js_code",
+      "slug": "add_external_js_code",
+      "url": "https://docs.wpcodebox.com/add_external_js_code/",
+      "file": "categories/add_external_js_code.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to add external JS code to your WordPress site",
+          "url": "https://docs.wpcodebox.com/add_external_js_code"
+        }
+      ]
+    },
+    {
+      "title": "Add_php_code",
+      "slug": "add_php_code",
+      "url": "https://docs.wpcodebox.com/add_php_code/",
+      "file": "categories/add_php_code.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add PHP Code Snippets to Your WordPress Site with WPCodeBox",
+          "url": "https://docs.wpcodebox.com/add_php_code"
+        }
+      ]
+    },
+    {
+      "title": "Anonymous_function",
+      "slug": "anonymous_function",
+      "url": "https://docs.wpcodebox.com/anonymous_function/",
+      "file": "categories/anonymous_function.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Anonymous Function – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/anonymous_function"
+        }
+      ]
+    },
+    {
+      "title": "Cant_load_cloud_snippets",
+      "slug": "cant_load_cloud_snippets",
+      "url": "https://docs.wpcodebox.com/cant_load_cloud_snippets/",
+      "file": "categories/cant_load_cloud_snippets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What to do if your cloud snippets don't load",
+          "url": "https://docs.wpcodebox.com/cant_load_cloud_snippets"
+        }
+      ]
+    },
+    {
+      "title": "Cdnjs_integration",
+      "slug": "cdnjs_integration",
+      "url": "https://docs.wpcodebox.com/cdnjs_integration/",
+      "file": "categories/cdnjs_integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Cdnjs Integration – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/cdnjs_integration"
+        }
+      ]
+    },
+    {
+      "title": "Cloud",
+      "slug": "cloud",
+      "url": "https://docs.wpcodebox.com/cloud/",
+      "file": "categories/cloud.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Cloud – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/cloud"
+        }
+      ]
+    },
+    {
+      "title": "Cloud_storage",
+      "slug": "cloud_storage",
+      "url": "https://docs.wpcodebox.com/cloud_storage/",
+      "file": "categories/cloud_storage.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WordPress code snippets cloud storage",
+          "url": "https://docs.wpcodebox.com/cloud_storage"
+        }
+      ]
+    },
+    {
+      "title": "Code_signing",
+      "slug": "code_signing",
+      "url": "https://docs.wpcodebox.com/code_signing/",
+      "file": "categories/code_signing.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Code Signing – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/code_signing"
+        }
+      ]
+    },
+    {
+      "title": "Code_snippets_repository",
+      "slug": "code_snippets_repository",
+      "url": "https://docs.wpcodebox.com/code_snippets_repository/",
+      "file": "categories/code_snippets_repository.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WordPress Code Snippet Repository",
+          "url": "https://docs.wpcodebox.com/code_snippets_repository"
+        }
+      ]
+    },
+    {
+      "title": "Common_errors",
+      "slug": "common_errors",
+      "url": "https://docs.wpcodebox.com/common_errors/",
+      "file": "categories/common_errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Common Errors – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/common_errors"
+        }
+      ]
+    },
+    {
+      "title": "Condition_builder",
+      "slug": "condition_builder",
+      "url": "https://docs.wpcodebox.com/condition_builder/",
+      "file": "categories/condition_builder.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Condition Builder",
+          "url": "https://docs.wpcodebox.com/condition_builder"
+        }
+      ]
+    },
+    {
+      "title": "Css_dev_mode",
+      "slug": "css_dev_mode",
+      "url": "https://docs.wpcodebox.com/css_dev_mode/",
+      "file": "categories/css_dev_mode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "CSS Dev Mode (Autoreload)",
+          "url": "https://docs.wpcodebox.com/css_dev_mode"
+        }
+      ]
+    },
+    {
+      "title": "Display_acf_field_in_a_shortcode",
+      "slug": "display_acf_field_in_a_shortcode",
+      "url": "https://docs.wpcodebox.com/display_acf_field_in_a_shortcode/",
+      "file": "categories/display_acf_field_in_a_shortcode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to display an ACF Field using a shortcode",
+          "url": "https://docs.wpcodebox.com/display_acf_field_in_a_shortcode"
+        }
+      ]
+    },
+    {
+      "title": "Documentation_in_editor",
+      "slug": "documentation_in_editor",
+      "url": "https://docs.wpcodebox.com/documentation_in_editor/",
+      "file": "categories/documentation_in_editor.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Documentation in Editor – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/documentation_in_editor"
+        }
+      ]
+    },
+    {
+      "title": "Download_code",
+      "slug": "download_code",
+      "url": "https://docs.wpcodebox.com/download_code/",
+      "file": "categories/download_code.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to download a code snippet from the Code Snippet Repository",
+          "url": "https://docs.wpcodebox.com/download_code"
+        }
+      ]
+    },
+    {
+      "title": "Editor",
+      "slug": "editor",
+      "url": "https://docs.wpcodebox.com/editor/",
+      "file": "categories/editor.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WPCodeBox Editor",
+          "url": "https://docs.wpcodebox.com/editor"
+        }
+      ]
+    },
+    {
+      "title": "External_url",
+      "slug": "external_url",
+      "url": "https://docs.wpcodebox.com/external_url/",
+      "file": "categories/external_url.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Running Snippets using an External Secure URL",
+          "url": "https://docs.wpcodebox.com/external_url"
+        }
+      ]
+    },
+    {
+      "title": "Functionality_plugin",
+      "slug": "functionality_plugin",
+      "url": "https://docs.wpcodebox.com/functionality_plugin/",
+      "file": "categories/functionality_plugin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WPCodeBox Functionality Plugin",
+          "url": "https://docs.wpcodebox.com/functionality_plugin"
+        }
+      ]
+    },
+    {
+      "title": "Generate_plugin",
+      "slug": "generate_plugin",
+      "url": "https://docs.wpcodebox.com/generate_plugin/",
+      "file": "categories/generate_plugin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Generating a Plugin from WPCodeBox",
+          "url": "https://docs.wpcodebox.com/generate_plugin"
+        }
+      ]
+    },
+    {
+      "title": "Google_tag_manager",
+      "slug": "google_tag_manager",
+      "url": "https://docs.wpcodebox.com/google_tag_manager/",
+      "file": "categories/google_tag_manager.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Add Google Tag Manager to WordPress using WPCodeBox",
+          "url": "https://docs.wpcodebox.com/google_tag_manager"
+        }
+      ]
+    },
+    {
+      "title": "How_to_run_a_wordpress_code_snippet",
+      "slug": "how_to_run_a_wordpress_code_snippet",
+      "url": "https://docs.wpcodebox.com/how_to_run_a_wordpress_code_snippet/",
+      "file": "categories/how_to_run_a_wordpress_code_snippet.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to run a WordPress code snippet",
+          "url": "https://docs.wpcodebox.com/how_to_run_a_wordpress_code_snippet"
+        }
+      ]
+    },
+    {
+      "title": "Installation",
+      "slug": "installation",
+      "url": "https://docs.wpcodebox.com/installation/",
+      "file": "categories/installation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Installation",
+          "url": "https://docs.wpcodebox.com/installation"
+        }
+      ]
+    },
+    {
+      "title": "Known_issues",
+      "slug": "known_issues",
+      "url": "https://docs.wpcodebox.com/known_issues/",
+      "file": "categories/known_issues.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Known issues in WPCodeBox 2 v1.0.3",
+          "url": "https://docs.wpcodebox.com/known_issues"
+        }
+      ]
+    },
+    {
+      "title": "Migrating",
+      "slug": "migrating",
+      "url": "https://docs.wpcodebox.com/migrating/",
+      "file": "categories/migrating.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Migrating to WPCodeBox 2",
+          "url": "https://docs.wpcodebox.com/migrating"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://docs.wpcodebox.com/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WPCodeBox 2 Documentation",
+          "url": "https://docs.wpcodebox.com/"
+        }
+      ]
+    },
+    {
+      "title": "Plugin_settings",
+      "slug": "plugin_settings",
+      "url": "https://docs.wpcodebox.com/plugin_settings/",
+      "file": "categories/plugin_settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WPCodeBox Plugin Settings",
+          "url": "https://docs.wpcodebox.com/plugin_settings"
+        }
+      ]
+    },
+    {
+      "title": "Quick_actions",
+      "slug": "quick_actions",
+      "url": "https://docs.wpcodebox.com/quick_actions/",
+      "file": "categories/quick_actions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Quick Actions – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/quick_actions"
+        }
+      ]
+    },
+    {
+      "title": "Safe_mode",
+      "slug": "safe_mode",
+      "url": "https://docs.wpcodebox.com/safe_mode/",
+      "file": "categories/safe_mode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Safe Mode – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/safe_mode"
+        }
+      ]
+    },
+    {
+      "title": "Scss_partials",
+      "slug": "scss_partials",
+      "url": "https://docs.wpcodebox.com/scss_partials/",
+      "file": "categories/scss_partials.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Scss Partials – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/scss_partials"
+        }
+      ]
+    },
+    {
+      "title": "Shortcodes",
+      "slug": "shortcodes",
+      "url": "https://docs.wpcodebox.com/shortcodes/",
+      "file": "categories/shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Running PHP/HTML Snippets using Shortcodes in WPCodeBox",
+          "url": "https://docs.wpcodebox.com/shortcodes"
+        }
+      ]
+    },
+    {
+      "title": "Snippet_doesnt_run",
+      "slug": "snippet_doesnt_run",
+      "url": "https://docs.wpcodebox.com/snippet_doesnt_run/",
+      "file": "categories/snippet_doesnt_run.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting a snippet that doesn't run",
+          "url": "https://docs.wpcodebox.com/snippet_doesnt_run"
+        }
+      ]
+    },
+    {
+      "title": "Snippet_settings",
+      "slug": "snippet_settings",
+      "url": "https://docs.wpcodebox.com/snippet_settings/",
+      "file": "categories/snippet_settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Snippet settings",
+          "url": "https://docs.wpcodebox.com/snippet_settings"
+        }
+      ]
+    },
+    {
+      "title": "Snippet_types",
+      "slug": "snippet_types",
+      "url": "https://docs.wpcodebox.com/snippet_types/",
+      "file": "categories/snippet_types.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Snippet Types – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/snippet_types"
+        }
+      ]
+    },
+    {
+      "title": "Target_oxygen_builder",
+      "slug": "target_oxygen_builder",
+      "url": "https://docs.wpcodebox.com/target_oxygen_builder/",
+      "file": "categories/target_oxygen_builder.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to target the Oxygen Builder UI using the condition builder",
+          "url": "https://docs.wpcodebox.com/target_oxygen_builder"
+        }
+      ]
+    },
+    {
+      "title": "Ui_wont_load",
+      "slug": "ui_wont_load",
+      "url": "https://docs.wpcodebox.com/ui_wont_load/",
+      "file": "categories/ui_wont_load.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What to do in case the WPCodeBox UI doesn't load",
+          "url": "https://docs.wpcodebox.com/ui_wont_load"
+        }
+      ]
+    },
+    {
+      "title": "Use_hooks_instead_of_conditions",
+      "slug": "use_hooks_instead_of_conditions",
+      "url": "https://docs.wpcodebox.com/use_hooks_instead_of_conditions/",
+      "file": "categories/use_hooks_instead_of_conditions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using hooks instead of conditions",
+          "url": "https://docs.wpcodebox.com/use_hooks_instead_of_conditions"
+        }
+      ]
+    },
+    {
+      "title": "Where_are_snippets_stored",
+      "slug": "where_are_snippets_stored",
+      "url": "https://docs.wpcodebox.com/where_are_snippets_stored/",
+      "file": "categories/where_are_snippets_stored.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Where are snippets stored",
+          "url": "https://docs.wpcodebox.com/where_are_snippets_stored"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce_hooks_insertion_points",
+      "slug": "woocommerce_hooks_insertion_points",
+      "url": "https://docs.wpcodebox.com/woocommerce_hooks_insertion_points/",
+      "file": "categories/woocommerce_hooks_insertion_points.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to run your code on a specific WooCommerce hook or action",
+          "url": "https://docs.wpcodebox.com/woocommerce_hooks_insertion_points"
+        }
+      ]
+    },
+    {
+      "title": "Wordpress_autocomplete",
+      "slug": "wordpress_autocomplete",
+      "url": "https://docs.wpcodebox.com/wordpress_autocomplete/",
+      "file": "categories/wordpress_autocomplete.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WordPress Autocomplete – WPCodeBox Documentation",
+          "url": "https://docs.wpcodebox.com/wordpress_autocomplete"
+        }
+      ]
+    },
+    {
+      "title": "Wpcodebox_ui",
+      "slug": "wpcodebox_ui",
+      "url": "https://docs.wpcodebox.com/wpcodebox_ui/",
+      "file": "categories/wpcodebox_ui.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WPCodeBox UI",
+          "url": "https://docs.wpcodebox.com/wpcodebox_ui"
+        }
+      ]
+    }
+  ]
+}

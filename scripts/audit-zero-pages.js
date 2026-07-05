@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// One-off audit: for every plugin with 0 pages in INDEX.json, parse its
-// workflow config and test whether the (origin-corrected) endpoint returns
-// real content. Prints a verdict per slug.
+// Audit scrape configs: parse each workflow and test whether its endpoint
+// returns real content. By default only audits plugins with 0 pages in
+// INDEX.json; pass --all to audit every workflow. Prints a verdict per slug.
 
 const axios = require('axios');
 const fs = require('fs');
@@ -9,6 +9,7 @@ const path = require('path');
 
 const UA = 'ML-Plugin-Docs-Scraper/1.0 (+https://github.com/wplaunchify/ml-plugin-docs)';
 
+const auditAll = process.argv.includes('--all');
 const index = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'INDEX.json'), 'utf8'));
 const zeroSlugs = new Set(index.plugins.filter(p => p.page_count === 0).map(p => p.slug));
 
@@ -45,8 +46,8 @@ async function probe(url) {
 }
 
 (async () => {
-  const targets = configs.filter(c => zeroSlugs.has(c.slug));
-  console.log(`Zero-page plugins with workflows: ${targets.length}\n`);
+  const targets = auditAll ? configs : configs.filter(c => zeroSlugs.has(c.slug));
+  console.log(`Workflows to audit: ${targets.length}\n`);
 
   for (const c of targets) {
     let verdict = '';

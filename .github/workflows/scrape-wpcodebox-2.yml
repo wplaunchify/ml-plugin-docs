@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wpcodebox 2 scraper
-        run: node scraper.js --slug=wpcodebox-2 --mode=html-scrape --url=https://wpcodebox.com/docs/ --name="WPCodeBox 2"
+        run: node scraper.js --slug=wpcodebox-2 --mode=html-scrape --url=https://docs.wpcodebox.com/ --selector=.nextra-content --name="WPCodeBox 2"
 
       - name: Check for changes
         id: changes

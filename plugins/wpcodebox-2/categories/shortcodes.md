@@ -1,0 +1,98 @@
+# Shortcodes
+
+*Category from WPCodeBox 2 documentation*
+
+---
+
+## Running PHP/HTML Snippets using Shortcodes in WPCodeBox
+
+**Source:** [https://docs.wpcodebox.com/shortcodes](https://docs.wpcodebox.com/shortcodes)
+
+Shortcodes
+# Running PHP/HTML Snippets using Shortcodes in WPCodeBox
+
+WPCodeBox is a WordPress code snippet manager that allows you to easily manage and use code snippets on your website. With the latest version of WPCodeBox, you can now run PHP/HTML snippets using shortcodes.
+
+## How to Use Shortcodes for PHP/HTML Snippets
+
+To use shortcodes for your PHP/HTML snippets, follow these steps:
+
+1. Click on "Add New Snippet" in the WPCodeBox dashboard.
+
+2. In the "Snippet Settings" section, select "Shortcode" as the "Where to insert the snippet" option.
+
+3. In the "Shortcode name" field, enter the shortcode name you want to use for this snippet. This name can be anything you want, but it should be unique and easy to remember.
+
+4. Enter your PHP/HTML code in the "Snippet Code" section.
+
+5. Click "Save Changes" to save your new snippet.
+
+Once your snippet is saved, you can use it on any page or post on your WordPress site by using the shortcode you defined in the "Shortcode name" field. For example, if your shortcode name is "my_snippet", you can use it on a page or post by adding the following shortcode:
+
+```
+[my_snippet]
+```
+When you publish the page or post, the shortcode will be replaced with the PHP/HTML code from your snippet.
+
+## Sending parameters to shortcodes
+
+When creating a custom shortcode in WPCodeBox, you may want to pass parameters to it. To do this, you can use the following syntax when adding the shortcode to your post:
+
+```
+[shortcode_name parameter1="value1" parameter2="value2"]
+```
+In your custom shortcode, you can then parse the parameters using the 
+```
+shortcode_atts()
+```
+
+ function. Here's an example of how to use it:
+
+```
+$params = shortcode_atts( array(
+ 
+    'parameter1' => 'default_value1',
+ 
+    'parameter2' => 'default_value2',
+ 
+), $atts );
+ 
+// Access the parameters like this:
+ 
+$value1 = $params['parameter1'];
+ 
+$value2 = $params['parameter2'];
+ 
+// Your shortcode code goes here...
+ 
+echo $output;
+```
+In this example, the 
+```
+shortcode_atts()
+```
+
+ function takes an array of default parameter values as its first argument, and an array of actual parameter values passed to the shortcode as its second argument. The function merges the two arrays, overriding any default values with actual values where they exist.
+
+You can then access the parameters in your shortcode code by accessing the 
+```
+$params
+```
+
+ array, which contains all parameter values. If a parameter was not passed to the shortcode, the default value specified in the first argument of 
+```
+shortcode_atts()
+```
+
+ will be used.
+
+This method of parsing shortcode parameters can make your code more flexible and customizable.
+
+## Automatic PHP Output Capturing
+
+One important thing to note is that PHP output is automatically captured when using shortcodes in WPCodeBox. This means that you don't need to use the "return" statement in your PHP code to output the results of your code. Instead, you can use the "echo" statement or any other method to output your code, and it will be captured by the shortcode.
+
+[Code Editor](/editor)[Run Snippets using an External URL](/external_url)
+
+---
+

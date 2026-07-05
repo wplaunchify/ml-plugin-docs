@@ -1,0 +1,72 @@
+# Functionality_plugin
+
+*Category from WPCodeBox 2 documentation*
+
+---
+
+## WPCodeBox Functionality Plugin
+
+**Source:** [https://docs.wpcodebox.com/functionality_plugin](https://docs.wpcodebox.com/functionality_plugin)
+
+The Functionality Plugin
+# WPCodeBox Functionality Plugin
+
+The WPCodeBox Functionality Plugin feature allows you to save code snippets to a separate plugin, different from the main WPCodeBox plugin. This setup can improve performance and simplify site handoff to clients by keeping your custom functionality active even if the WPCodeBox plugin is deactivated or removed.
+
+## Key Features
+
+- **Independent Snippet Management:** The Functionality Plugin (FP) enables you to disable WPCodeBox while still keeping all your snippets running. The snippets are managed by the FP, ensuring your custom functionality remains intact.
+- **Automatic Synchronization:** WPCodeBox automatically keeps the FP in sync with your snippets. Whenever you make changes to your code snippets in WPCodeBox, the FP is updated accordingly.
+- **Signatures File:** The FP includes a 
+```
+signatures.php
+```
+
+ file that contains a hash of all your code snippets. This file ensures the integrity of your snippets by detecting changes made directly to the database. If changes are detected, WPCodeBox will notify you.
+- **Customizable Plugin Name and Description:** You can change the default name and description of the FP by adding the following lines to your 
+```
+wp-config.php
+```
+
+ file before activating the Functionality Plugin:
+
+```
+define('WPCB_FP_PLUGIN_NAME', 'My Custom Plugin Name');
+define('WPCB_FP_PLUGIN_DESCRIPTION', 'My Custom Plugin Description');
+```
+Here's a video explaining more about the Functionality Plugin:
+
+## How to Use the Functionality Plugin
+
+1. **Open the Functionality Plugin settings in WPCodeBox:**
+- Click on the "FPlugin" button in WPCodeBox, above the snippet list, to open the Functionality Plugin settings.
+2. **Enable the Functionality Plugin in WPCodeBox:**
+- Click the "Enable Functionality Plugin" button to activate the FP. WPCodeBox will automatically create the FP and synchronize your snippets.
+3. **Managing Snippets:**
+- Use WPCodeBox as before to create, edit, and delete code snippets. The changes will automatically be reflected in the FP.
+4. **Deactivating WPCodeBox:**
+- You can safely deactivate WPCodeBox without losing the functionality of your snippets. The FP will continue executing your code.
+5. **Reactivating WPCodeBox:**
+- If you decide to reactivate WPCodeBox, any changes made will be updated in the FP seamlessly.
+
+## Where to Find the Signatures File
+
+The 
+```
+signatures.php
+```
+
+ file is located in the root folder of the Functionality Plugin. It helps maintain the integrity of your code by verifying that no unauthorized changes have been made to your snippets.
+
+## Differences Between the Functionality Plugin and Generated Plugins
+
+- **Functionality Plugin:**
+- Works in tandem with WPCodeBox. WPCodeBox becomes an user interface (UI) for snippet management.
+- Allows deactivating WPCodeBox while keeping the snippets running. You can reactivate WPCodeBox to make changes, which will be updated in the FP.
+- **Generated Plugins:**
+- Standalone plugins created from selected snippets, not editable with WPCodeBox.
+
+[Run Snippets using an External URL](/external_url)[Cloud Storage for WordPress Code Snippets](/cloud_storage)
+
+---
+
