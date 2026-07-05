@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T10:44:54.932Z",
+  "last_updated": "2026-07-05T10:46:07.308Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -685,7 +685,7 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-06-28T10:47:43.163Z",
+      "last_scraped": "2026-07-05T10:46:05.305Z",
       "page_count": 56,
       "categories": [
         "about-us",
@@ -1583,7 +1583,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-07-05T10:44:54.932Z",
+      "last_scraped": "2026-07-05T10:44:54.931Z",
       "page_count": 5,
       "categories": [
         "bulk-increase-woocommerce-prices-percentage",
