@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T16:32:43.797Z",
+  "last_updated": "2026-07-05T17:24:41.023Z",
   "total_plugins": 130,
   "plugins": [
     {
@@ -1030,7 +1030,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-06-28T17:24:15.138Z",
+      "last_scraped": "2026-07-05T17:24:41.023Z",
       "page_count": 1,
       "categories": [
         "advanced"
