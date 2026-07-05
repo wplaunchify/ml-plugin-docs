@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T09:04:08.734Z",
+  "last_updated": "2026-07-05T09:04:18.541Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -228,7 +228,7 @@
       "slug": "fluent-boards-pro",
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-07-05T09:01:15.101Z",
+      "last_scraped": "2026-07-05T09:01:15.100Z",
       "page_count": 0,
       "categories": []
     },
@@ -292,7 +292,7 @@
       "slug": "fluentaffiliate",
       "name": "FluentAffiliate",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-07-05T08:02:08.780Z",
+      "last_scraped": "2026-07-05T08:02:08.778Z",
       "page_count": 53,
       "categories": [
         "admin-portal",
@@ -353,7 +353,7 @@
       "slug": "fluentcart",
       "name": "FluentCart",
       "documentation_url": "https://docs.fluentcart.com/guide/",
-      "last_scraped": "2026-07-05T07:15:53.872Z",
+      "last_scraped": "2026-07-05T07:15:53.866Z",
       "page_count": 141,
       "categories": [
         "browsing-history",
@@ -401,7 +401,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-07-05T07:13:12.710Z",
+      "last_scraped": "2026-07-05T07:13:12.709Z",
       "page_count": 0,
       "categories": []
     },
@@ -625,7 +625,7 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-05T08:01:04.726Z",
+      "last_scraped": "2026-07-05T08:01:04.723Z",
       "page_count": 56,
       "categories": [
         "about-us",
@@ -725,7 +725,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-06-28T09:06:18.782Z",
+      "last_scraped": "2026-07-05T09:04:16.139Z",
       "page_count": 0,
       "categories": []
     },
@@ -898,7 +898,7 @@
       "slug": "learndash-lms-certificate-builder",
       "name": "LearnDash LMS - Certificate Builder",
       "documentation_url": "https://www.learndash.com/support/documentation/",
-      "last_scraped": "2026-07-05T08:59:36.081Z",
+      "last_scraped": "2026-07-05T08:59:36.080Z",
       "page_count": 0,
       "categories": []
     },
@@ -1130,7 +1130,7 @@
       "slug": "woocommerce-anti-fraud",
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/documentation/",
-      "last_scraped": "2026-07-05T08:29:26.244Z",
+      "last_scraped": "2026-07-05T08:29:26.243Z",
       "page_count": 0,
       "categories": []
     },
@@ -1491,7 +1491,7 @@
       "slug": "wp-fusion-logins-addon",
       "name": "WP Fusion - Logins Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-05T09:04:08.734Z",
+      "last_scraped": "2026-07-05T09:04:08.724Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
