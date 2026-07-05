@@ -649,6 +649,31 @@ shoebox
 
 Use these together to build a filtered shop experience that matches your customers' expectations — the filters work without a page reload when **Live Filter** is on, and they integrate with the **Sort By** dropdown for combined refinement.
 
+## Building a Single Product Template ​
+
+Beyond shop pages, Bricks can now render your single product pages from one reusable template. FluentCart registers a dedicated **FluentCart - Product** template type in Bricks, so you design the layout once and every product page follows it automatically.
+
+### Creating the Template ​
+
+Follow these steps to build your product template:
+
+1. From your WordPress dashboard, navigate to **Bricks > Templates** and add a new template.
+2. Give the template a name, then set its **Template Type** to **FluentCart - Product**. You will find it in the type dropdown right after **Single post/page**.
+3. Publish the template, then open it with the Bricks editor.
+4. Build your layout using the single-product elements from the **FluentCart** category, such as **Product Title**, **Product Gallery**, **Price Range**, **Product Stock**, and the **Buy Section**.
+5. Save the template. It now renders on your single product pages, with each element pulling its content from the product being viewed.
+
+### Controlling Where the Template Applies ​
+
+If you have a single product template, it acts as the default and applies to every product page. Running multiple templates works too:
+
+- **Template conditions:** Use Bricks' standard **Conditions** setting on a template to scope where it applies, for example to specific products.
+- **Default fallback:** When no condition matches the product being viewed, FluentCart falls back to your default product template, so no product page is ever left without a layout.
+
+INFO
+
+Product templates only affect single product pages. Your shop and archive layouts still come from the **Products** element described in [Building Your Main Shop Page](#building-your-main-shop-page).
+
 ---
 
 ## FluentCart Widgets for Elementor ​

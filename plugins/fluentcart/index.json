@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-06-28T07:33:31.882Z",
-  "total_pages": 140,
+  "last_scraped": "2026-07-05T07:15:53.866Z",
+  "total_pages": 141,
   "failed_urls_count": 8,
   "sections": [
     {
@@ -267,7 +267,7 @@
       "slug": "payments-checkout",
       "url": "https://docs.fluentcart.com/guide/payments-checkout/",
       "file": "categories/payments-checkout.md",
-      "page_count": 13,
+      "page_count": 14,
       "pages": [
         {
           "title": "Configuring Payments Overview ​",
@@ -316,6 +316,10 @@
         {
           "title": "Square Settings ​",
           "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/square-settings"
+        },
+        {
+          "title": "SSL Commerz Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/sslcommerz-settings"
         },
         {
           "title": "Stripe Settings ​",
