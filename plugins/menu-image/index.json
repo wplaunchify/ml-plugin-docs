@@ -2,8 +2,8 @@
   "plugin_slug": "menu-image",
   "plugin_name": "Menu Image",
   "documentation_url": "https://wordpress.org/plugins/menu-image/",
-  "last_scraped": "2026-06-28T18:29:55.494Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-05T18:26:51.610Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Menu Image, Icons made easy",
           "url": "https://wordpress.org/plugins/menu-image/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/menu-image/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Menu Image, Icons made easy",
+          "url": "https://wordpress.org/plugins/menu-image/"
         }
       ]
     }
