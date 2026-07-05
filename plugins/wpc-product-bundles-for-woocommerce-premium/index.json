@@ -1,0 +1,454 @@
+{
+  "plugin_slug": "wpc-product-bundles-for-woocommerce-premium",
+  "plugin_name": "WPC Product Bundles for WooCommerce (Premium)",
+  "documentation_url": "https://doc.wpclever.net/woosb/",
+  "last_scraped": "2026-07-05T16:27:28.658Z",
+  "total_pages": 75,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Basic Installations",
+      "slug": "basic-installations",
+      "url": "https://doc.wpclever.net/woosb/basic-installations/",
+      "file": "categories/basic-installations.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Basic Installations",
+          "url": "https://doc.wpclever.net/woosb/basic-installations/"
+        },
+        {
+          "title": "Free version",
+          "url": "https://doc.wpclever.net/woosb/basic-installations/free-version/"
+        },
+        {
+          "title": "Premium version",
+          "url": "https://doc.wpclever.net/woosb/basic-installations/premium-version/"
+        }
+      ]
+    },
+    {
+      "title": "Bundle Samples",
+      "slug": "bundle-samples",
+      "url": "https://doc.wpclever.net/woosb/bundle-samples/",
+      "file": "categories/bundle-samples.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Bundle Samples",
+          "url": "https://doc.wpclever.net/woosb/bundle-samples/"
+        },
+        {
+          "title": "Smart Bundle 01 – Comprehensive bundle",
+          "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-01-comprehensive-bundle/"
+        },
+        {
+          "title": "Smart Bundle 02 – All-variation bundle",
+          "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-02-all-variation-bundle/"
+        },
+        {
+          "title": "Smart Bundle 03 – Product Combos",
+          "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-3-product-combos/"
+        },
+        {
+          "title": "Smart Bundle – Required and Optional Items",
+          "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-required-and-optional-items/"
+        },
+        {
+          "title": "Smart Bundles & WPC Variation Swatches",
+          "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundles-variation-swatches/"
+        }
+      ]
+    },
+    {
+      "title": "Bundle Setup",
+      "slug": "bundle-setup",
+      "url": "https://doc.wpclever.net/woosb/bundle-setup/",
+      "file": "categories/bundle-setup.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Steps to Configure Smart Bundles",
+          "url": "https://doc.wpclever.net/woosb/bundle-setup/"
+        },
+        {
+          "title": "Configure Terms for Variable Products",
+          "url": "https://doc.wpclever.net/woosb/bundle-setup/configure-terms-for-variable-products/"
+        },
+        {
+          "title": "Headings/ Paragraphs",
+          "url": "https://doc.wpclever.net/woosb/bundle-setup/headings-paragraphs/"
+        }
+      ]
+    },
+    {
+      "title": "Cart Checkout Order Details",
+      "slug": "cart-checkout-order-details",
+      "url": "https://doc.wpclever.net/woosb/cart-checkout-order-details/",
+      "file": "categories/cart-checkout-order-details.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Cart, Checkout & Order details",
+          "url": "https://doc.wpclever.net/woosb/cart-checkout-order-details/"
+        }
+      ]
+    },
+    {
+      "title": "Faqs",
+      "slug": "faqs",
+      "url": "https://doc.wpclever.net/woosb/faqs/",
+      "file": "categories/faqs.md",
+      "page_count": 18,
+      "pages": [
+        {
+          "title": "FAQs",
+          "url": "https://doc.wpclever.net/woosb/faqs/"
+        },
+        {
+          "title": "1. Composite + Grouped in a bundle?",
+          "url": "https://doc.wpclever.net/woosb/faqs/1-composite-grouped-in-a-bundle/"
+        },
+        {
+          "title": "10. Hide bundle’s name before bundled products?",
+          "url": "https://doc.wpclever.net/woosb/faqs/10-hide-bundles-name-before-bundled-products/"
+        },
+        {
+          "title": "11. Hide bundled products in mini-cart, cart & checkout?",
+          "url": "https://doc.wpclever.net/woosb/faqs/11-hide-bundled-products-in-mini-cart-cart-checkout/"
+        },
+        {
+          "title": "12. Unlink individual products in bundles?",
+          "url": "https://doc.wpclever.net/woosb/faqs/12-unlink-individual-products-in-bundles/"
+        },
+        {
+          "title": "13. Add the same products to bundles several times?",
+          "url": "https://doc.wpclever.net/woosb/faqs/13-add-the-same-products-to-bundles-several-times/"
+        },
+        {
+          "title": "14. Display discounted amount on bundles?",
+          "url": "https://doc.wpclever.net/woosb/faqs/14-display-discounted-amount-on-bundles/"
+        },
+        {
+          "title": "15. Set different min/max quantity limits?",
+          "url": "https://doc.wpclever.net/woosb/faqs/15-set-different-min-max-quantity-limits/"
+        },
+        {
+          "title": "16. How to disable the universal quantity box next to the Add to Cart button",
+          "url": "https://doc.wpclever.net/woosb/faqs/16-how-to-disable-the-universal-quantity-box-next-to-the-add-to-cart-button/"
+        },
+        {
+          "title": "17. Bundle with different tax rates for sub-products",
+          "url": "https://doc.wpclever.net/woosb/faqs/17-bundle-with-different-tax-rates-for-sub-products/"
+        },
+        {
+          "title": "2. Use ddSlick interface in Product Bundles?",
+          "url": "https://doc.wpclever.net/woosb/faqs/2-use-ddslick-interface-in-product-bundles/"
+        },
+        {
+          "title": "3. Hide bundles’ price based on user roles?",
+          "url": "https://doc.wpclever.net/woosb/faqs/3-hide-bundles-price-based-on-user-roles/"
+        },
+        {
+          "title": "4. Doubled sets of quantity buttons?",
+          "url": "https://doc.wpclever.net/woosb/faqs/4-doubled-sets-of-quantity-buttons/"
+        },
+        {
+          "title": "5. Use Smart Quick View with bundles?",
+          "url": "https://doc.wpclever.net/woosb/faqs/5-use-smart-quick-view-with-bundles/"
+        },
+        {
+          "title": "6. How to make prices change?",
+          "url": "https://doc.wpclever.net/woosb/faqs/6-how-to-make-prices-change/"
+        },
+        {
+          "title": "7. How to fix not changing prices?",
+          "url": "https://doc.wpclever.net/woosb/faqs/7-how-to-fix-not-changing-prices/"
+        },
+        {
+          "title": "8. Exempt bundles from coupons?",
+          "url": "https://doc.wpclever.net/woosb/faqs/8-exempt-bundles-from-coupons/"
+        },
+        {
+          "title": "9. Out of Stock bundles?",
+          "url": "https://doc.wpclever.net/woosb/faqs/9-out-of-stock-bundles/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://doc.wpclever.net/woosb/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 2,
+      "pages": [
+        {
+          "title": "Getting Started",
+          "url": "https://doc.wpclever.net/woosb/getting-started/"
+        },
+        {
+          "title": "Welcome",
+          "url": "https://doc.wpclever.net/woosb/getting-started/welcome/"
+        }
+      ]
+    },
+    {
+      "title": "Pdf Invoice Packing",
+      "slug": "pdf-invoice-packing",
+      "url": "https://doc.wpclever.net/woosb/pdf-invoice-packing/",
+      "file": "categories/pdf-invoice-packing.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "PDF Invoice & Packing",
+          "url": "https://doc.wpclever.net/woosb/pdf-invoice-packing/"
+        }
+      ]
+    },
+    {
+      "title": "Plugin Settings",
+      "slug": "plugin-settings",
+      "url": "https://doc.wpclever.net/woosb/plugin-settings/",
+      "file": "categories/plugin-settings.md",
+      "page_count": 8,
+      "pages": [
+        {
+          "title": "Plugin Settings",
+          "url": "https://doc.wpclever.net/woosb/plugin-settings/"
+        },
+        {
+          "title": "Bundled products on the bundle page",
+          "url": "https://doc.wpclever.net/woosb/plugin-settings/bundled-products-on-the-bundle-page/"
+        },
+        {
+          "title": "Bundle’s details",
+          "url": "https://doc.wpclever.net/woosb/plugin-settings/bundles-details/"
+        },
+        {
+          "title": "Bundles on single product and shop archive page",
+          "url": "https://doc.wpclever.net/woosb/plugin-settings/bundles-on-single-product-and-shop-archive-page/"
+        },
+        {
+          "title": "Coupon Restriction",
+          "url": "https://doc.wpclever.net/woosb/plugin-settings/coupon-restriction-2/"
+        },
+        {
+          "title": "Layout settings",
+          "url": "https://doc.wpclever.net/woosb/plugin-settings/layout-settings/"
+        },
+        {
+          "title": "Price formats",
+          "url": "https://doc.wpclever.net/woosb/plugin-settings/price-formats/"
+        },
+        {
+          "title": "Search settings",
+          "url": "https://doc.wpclever.net/woosb/plugin-settings/search-settings-2/"
+        }
+      ]
+    },
+    {
+      "title": "Pricing Discounts",
+      "slug": "pricing-discounts",
+      "url": "https://doc.wpclever.net/woosb/pricing-discounts/",
+      "file": "categories/pricing-discounts.md",
+      "page_count": 5,
+      "pages": [
+        {
+          "title": "Pricing & Discounts",
+          "url": "https://doc.wpclever.net/woosb/pricing-discounts/"
+        },
+        {
+          "title": "Discounting methods",
+          "url": "https://doc.wpclever.net/woosb/pricing-discounts/discounting-methods/"
+        },
+        {
+          "title": "Price Display",
+          "url": "https://doc.wpclever.net/woosb/pricing-discounts/price-display/"
+        },
+        {
+          "title": "Pricing method",
+          "url": "https://doc.wpclever.net/woosb/pricing-discounts/pricing-method/"
+        },
+        {
+          "title": "Saved Text",
+          "url": "https://doc.wpclever.net/woosb/pricing-discounts/saved-text/"
+        }
+      ]
+    },
+    {
+      "title": "Quantity Settings",
+      "slug": "quantity-settings",
+      "url": "https://doc.wpclever.net/woosb/quantity-settings/",
+      "file": "categories/quantity-settings.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Quantity Settings",
+          "url": "https://doc.wpclever.net/woosb/quantity-settings/"
+        },
+        {
+          "title": "Custom quantity",
+          "url": "https://doc.wpclever.net/woosb/quantity-settings/custom-quantity/"
+        },
+        {
+          "title": "Default quantity",
+          "url": "https://doc.wpclever.net/woosb/quantity-settings/default-quantity/"
+        }
+      ]
+    },
+    {
+      "title": "Shipping Fee",
+      "slug": "shipping-fee",
+      "url": "https://doc.wpclever.net/woosb/shipping-fee/",
+      "file": "categories/shipping-fee.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Shipping Fee",
+          "url": "https://doc.wpclever.net/woosb/shipping-fee/"
+        }
+      ]
+    },
+    {
+      "title": "Stock Inventory",
+      "slug": "stock-inventory",
+      "url": "https://doc.wpclever.net/woosb/stock-inventory/",
+      "file": "categories/stock-inventory.md",
+      "page_count": 6,
+      "pages": [
+        {
+          "title": "Stock & Inventory",
+          "url": "https://doc.wpclever.net/woosb/stock-inventory/"
+        },
+        {
+          "title": "Inventory display",
+          "url": "https://doc.wpclever.net/woosb/stock-inventory/inventory-display/"
+        },
+        {
+          "title": "Sold Individually",
+          "url": "https://doc.wpclever.net/woosb/stock-inventory/sold-individually/"
+        },
+        {
+          "title": "Stock management (2): bundle level",
+          "url": "https://doc.wpclever.net/woosb/stock-inventory/stock-management-2-bundle-level/"
+        },
+        {
+          "title": "Stock management (3): variation level",
+          "url": "https://doc.wpclever.net/woosb/stock-inventory/stock-management-3-variation-level/"
+        },
+        {
+          "title": "Stock management (1): product level",
+          "url": "https://doc.wpclever.net/woosb/stock-inventory/stock-management/"
+        }
+      ]
+    },
+    {
+      "title": "Support",
+      "slug": "support",
+      "url": "https://doc.wpclever.net/woosb/support/",
+      "file": "categories/support.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Support",
+          "url": "https://doc.wpclever.net/woosb/support/"
+        }
+      ]
+    },
+    {
+      "title": "Tax Rate",
+      "slug": "tax-rate",
+      "url": "https://doc.wpclever.net/woosb/tax-rate/",
+      "file": "categories/tax-rate.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Tax Rate",
+          "url": "https://doc.wpclever.net/woosb/tax-rate/"
+        }
+      ]
+    },
+    {
+      "title": "Wpc Plugins Wpc Product Bundles",
+      "slug": "wpc-plugins-wpc-product-bundles",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/",
+      "file": "categories/wpc-plugins-wpc-product-bundles.md",
+      "page_count": 13,
+      "pages": [
+        {
+          "title": "WPC Plugins + WPC Product Bundles",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/"
+        },
+        {
+          "title": "WPC Countdown Timer for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-countdown-timer-for-woocommerce/"
+        },
+        {
+          "title": "WPC Fly Cart for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-fly-cart-for-woocommerce/"
+        },
+        {
+          "title": "WPC Force Sells for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-force-sells-for-woocommerce/"
+        },
+        {
+          "title": "WPC Frequently Bought Together for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-frequently-bought-together-for-woocommerce/"
+        },
+        {
+          "title": "WPC Linked Variation for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-linked-variation-for-woocommerce/"
+        },
+        {
+          "title": "WPC Product Quantity for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-product-quantity-for-woocommerce/"
+        },
+        {
+          "title": "WPC Product Timer for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-product-timer-for-woocommerce/"
+        },
+        {
+          "title": "WPC Smart Compare for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-smart-compare-for-woocommerce/"
+        },
+        {
+          "title": "WPC Smart Quick View for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-smart-quick-view-for-woocommerce/"
+        },
+        {
+          "title": "WPC Smart Wishlist for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-smart-wishlist-for-woocommerce/"
+        },
+        {
+          "title": "WPC Variation Swatches for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-variation-swatches-for-woocommerce/"
+        },
+        {
+          "title": "WPC Variations Radio Buttons for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-variations-radio-buttons-for-woocommerce/"
+        }
+      ]
+    },
+    {
+      "title": "Wpc Product Bundles Alternatives",
+      "slug": "wpc-product-bundles-alternatives",
+      "url": "https://doc.wpclever.net/woosb/wpc-product-bundles-alternatives/",
+      "file": "categories/wpc-product-bundles-alternatives.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "WPC Product Bundles Alternatives",
+          "url": "https://doc.wpclever.net/woosb/wpc-product-bundles-alternatives/"
+        },
+        {
+          "title": "WPC Composite Products for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-product-bundles-alternatives/wpc-composite-products-for-woocommerce/"
+        },
+        {
+          "title": "WPC Grouped Products for WooCommerce",
+          "url": "https://doc.wpclever.net/woosb/wpc-product-bundles-alternatives/wpc-grouped-products-for-woocommerce/"
+        }
+      ]
+    }
+  ]
+}

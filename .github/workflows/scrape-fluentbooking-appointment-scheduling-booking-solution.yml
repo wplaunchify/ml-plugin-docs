@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluentbooking Appointment Scheduling Booking Solution scraper
-        run: node scraper.js --slug=fluentbooking-appointment-scheduling-booking-solution --mode=html-scrape --url=https://fluentbooking.co/docs/ --name="FluentBooking - Appointment Scheduling & Booking Solution"
+        run: node scraper.js --slug=fluentbooking-appointment-scheduling-booking-solution --mode=wp-api --url=https://fluentbooking.com --post-type=docs --taxonomy=doc_category --name="FluentBooking - Appointment Scheduling & Booking Solution"
 
       - name: Check for changes
         id: changes

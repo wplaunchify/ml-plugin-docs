@@ -1,0 +1,893 @@
+{
+  "plugin_slug": "wpc-product-bundles-for-woocommerce-premium",
+  "plugin_name": "WPC Product Bundles for WooCommerce (Premium)",
+  "last_scraped": "2026-07-05T16:27:28.650Z",
+  "total_pages": 75,
+  "failed_urls": [],
+  "pages": [
+    {
+      "title": "Basic Installations",
+      "url": "https://doc.wpclever.net/woosb/basic-installations/",
+      "category": "Basic Installations",
+      "content": "## WPC Product Bundles Video Tutorial\n\n### Articles\n\n- [Free version](https://doc.wpclever.net/woosb/basic-installations/free-version/)\n- [Premium version](https://doc.wpclever.net/woosb/basic-installations/premium-version/)",
+      "headings": [
+        "WPC Product Bundles Video Tutorial",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Free version",
+      "url": "https://doc.wpclever.net/woosb/basic-installations/free-version/",
+      "category": "Basic Installations",
+      "content": "![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-banner-1.png)\n\nYou can find the free version and install it directly from the WordPress plugin repository:\n\n- Navigate to **Plugins >> Add New.**\n- Type “WPC Product Bundles for WooCommerce” in the search box.\n- Click **Install Now >> Activate**.\n\n![WPC Product Bundles for WooCommerce](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-installation-free.png)\n\nFind the free version of WPC Product Bundles from the WordPress repository.\n\nOr you can download it from this link: [https://wordpress.org/plugins/woo-product-bundle/](https://wordpress.org/plugins/woo-product-bundle/) .\n\n![WPC Product Bundles for WooCommerce](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-installation-download-free.png)Download the free installation file from the plugin page.",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "Premium version",
+      "url": "https://doc.wpclever.net/woosb/basic-installations/premium-version/",
+      "category": "Basic Installations",
+      "content": "![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_772x250_2021.png)\n\nAfter successfully purchased the Premium license, users will receive a confirmation email sent to their inbox with the installation *.zip* file attachment.\n\n- Download the Premium *.zip* format file.\n- Deactivate the free version, then delete it from your site.\n- Click **Upload New >> Choose file**.\n- Locate the Premium file then press **Install Now >> Activate**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-basic-installation.png)\n\nNow you can access the plugin settings from the admin dashboard under the **WPClever** section.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpclever.png)\n\n### VERIFY LICENSE KEYS\n\nIn order to verify your identity as a Premium user of our plugin, whom has purchased a license from our website at wpclever.net, please go to **WPClever >> License Keys** to enter your key there.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/license-keys.png)\n\nVerified users will enjoy:\n\n- Premium support from our professional Support Team at [wpc.ticksy.com](http://wpc.ticksy.com) for FREE.\n- Unlimited Premium plugin update with notification in the Plugins section. Users who have got their Premium plugins from other sources, **not** our official website, won’t be able to update to higher versions.\n- Direct access to Downloads to get the .zip file of the latest version on **Membership** page. (You must use your *License Email* to register for an account on our website first if you haven’t done so before).",
+      "headings": [
+        "VERIFY LICENSE KEYS"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Bundle Samples",
+      "url": "https://doc.wpclever.net/woosb/bundle-samples/",
+      "category": "Bundle Samples",
+      "content": "### Sample 1: Comprehensive bundle\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-1.png)\n\n### Sample 2: All-variation bundle\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-2-1.png)\n\n### Sample 3: Product combos\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-3.png)\n\n### Articles\n\n- [Smart Bundle 01 – Comprehensive bundle](https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-01-comprehensive-bundle/)\n- [Smart Bundle 02 – All-variation bundle](https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-02-all-variation-bundle/)\n- [Smart Bundle 03 – Product Combos](https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-3-product-combos/)\n- [Smart Bundle – Required and Optional Items](https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-required-and-optional-items/)\n- [Smart Bundles & WPC Variation Swatches](https://doc.wpclever.net/woosb/bundle-samples/smart-bundles-variation-swatches/)",
+      "headings": [
+        "Sample 1: Comprehensive bundle",
+        "Sample 2: All-variation bundle",
+        "Sample 3: Product combos",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Smart Bundle 01 – Comprehensive bundle",
+      "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-01-comprehensive-bundle/",
+      "category": "Bundle Samples",
+      "content": "## Smart Bundle 01 – Comprehensive bundle\n\nThis bundle contains all basic product types: 1 simple product, 1 variable product (1 attribute), 1 variable product (2 attributes), 1 variable product (3 attributes) & 1 variation at 10% flat discount. Buyers can choose any combination and remove any unwanted item, but they must at least buy 3 units and no more than 5 units in total. Only 4 bundles can be sold.\n\nBasic settings:\n\n- Add products at default quantity: **1**.\n- Discount: **10%**.\n- Custom quantity: Enable “Buyers can change the quantity of bundled products”.\n- All items’ quantity limit: **Min:3 – Max:5**.\n- Enable stock management at bundle level **>> Update**.\n- Inventory tab – Stock quantity: **4**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-1-backend.png)\n\nFront-end display:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-1.png)",
+      "headings": [
+        "Smart Bundle 01 – Comprehensive bundle"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Smart Bundle 02 – All-variation bundle",
+      "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-02-all-variation-bundle/",
+      "category": "Bundle Samples",
+      "content": "## Smart Bundle 02 – All-variation bundle\n\nThis bundle helps grouping variations of all kinds together so that buyers can buy 5 at $150. Limit 1 bundle per customer and order only. Instead of keeping variations as individual products, users just need to create 1 variable with attribute(s) then enable “Manage stock” & set a Stock quantity, add all those variations to the bundle to create such a deal. Only 15 bundles in stock.\n\n**Note****:****Please make sure you have chosen “Yes” for the “Accept same product” option in the Search settings of Product Bundles so that you can add the same product to a bundle multiple times.**\n\nBasic settings:\n\nBefore adding products to the smart bundle, make sure you choose the appropriate type of products then click (+) to add. Notice the marks at the end of each line:\n\n- > simple #…: simple product\n- > variable #…: variable product\n- > variation #…: a specific variation of the variable product above it.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-marks.png)\n\n- Add all variations, default quantity: **0** (suggested) or **1**.\n- Enable “Disable auto-calculated price”.\n- *General* tab – Regular price:**$150**.\n- Enable “Buyers can change the quantity of bundled products”.\n- All items’ quantity limit: **Max:5**.\n- *Inventory* tab – Enable “Sold individually”.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-2-backend.png)\n\nFront-end display:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-2-1.png)",
+      "headings": [
+        "Smart Bundle 02 – All-variation bundle"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Smart Bundle 03 – Product Combos",
+      "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-3-product-combos/",
+      "category": "Bundle Samples",
+      "content": "## Smart Bundle 03 – Product Combos\n\nThis bundle gives customers a chance to buy a collection of clothes including 5 t-shirts (variable product), 3 cool tee designs (simple product) & 1 new tee design (variable product) with a discount of $20 for such a combo. Users can use Smart Bundle to create such a collection with fixed quantities for bundled items. Only 4 bundles in stock.\n\nBasic settings:\n\n- Add all products & set default quantities accordingly: **5-3-1**.\n- Discount:**$20**.\n- Custom quantity: **disabled/unchecked**.\n- Click on “Enable stock management at bundle level” **>> Update**.\n- Click on “Enable stock management at product level” (if bundled products don’t have stock management turned on, skip this if at least one of your bundled items already has stock management).\n- *Inventory* tab – Stock quantity: **4**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-3-backend.png)\n\nFront-end display:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-3.png)",
+      "headings": [
+        "Smart Bundle 03 – Product Combos"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Smart Bundle – Required and Optional Items",
+      "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundle-required-and-optional-items/",
+      "category": "Bundle Samples",
+      "content": "If you have a need to set up a bundle where one of the bundled sub-products is required with at least 1 unit and cannot be removed from the order, you can make use of the “Use default quantity as min?” option to set up different minimum quantity.\n\nYour shop offer a bundle in which there are 3 bundled products, the first one is required and customers need to choose one of the other two products to complete the bundle and add it to the cart. Configurations should be as belows:\n\n- Product 1: Default quantity = 1\n- Product 2: Default quantity = 0\n- Product 3: Default quantity = 0\n\nThen put a check to enable the **Custom quantity** option, configure:\n\n– Each item’s quantity limit: put a check on *“Use default quantity as min?”*, Max = **1**\n\n– All items’ quantity limit: *Min=2, Max =2*.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/04/woosb-sample-backend.png)Backend settings for the offer\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/04/woosb-sample.gif)How it works in the frontend",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "Smart Bundles & WPC Variation Swatches",
+      "url": "https://doc.wpclever.net/woosb/bundle-samples/smart-bundles-variation-swatches/",
+      "category": "Bundle Samples",
+      "content": "### HOW TO SET UP COMPLEX VARIABLE BUNDLE OFFER\n\nThere are cases when store owners have a need to configure an offer like this: A combo in which customers will need to choose the first product, then go on to the second one and make sure the combination is well managed. For example, a customer can choose a T-shirt of the Blue color, then he must choose a pair of pants of the same color.\n\nOur WPC Product Bundles plugin **CANNOT** make customers do that, nor it can require the chosen attributes or variations in sync like that. It does not support such kind of “step by step” choosing method. All bundled products are equal and independent of one another in a smart bundle.\n\nSo, instead of keeping those options as individual products, you can consider keeping them as variations under a variable product then add them to a Smart bundle & use the WPC Variation Swatches plugin to display all options nicely for buyers’ convenience.\n\n> Scenario: Your store sells t-shirt combos. The hoodies have 2 style: A & B. Style A has 3 colors and so does the style B. The belt is a simple product only.\n\nInstead of creating 2 variable products for Hoodie A with 3 variations &  Hoodie B with 3 variations, you can combine them into 1 variable product and still be able to manage the stock, prices, and others.\n\n*Your bundle will include 1 simple product (belt) & 1 variable product (hoodie).*\n\n#### Step 1:\n\nCreate a new variable product for the Hoodie, with 2 attributes: Style and Color.\n\n- Style has 2 variations: A, B.\n- Color has 3 variations: Blue, Red, Green.\n\nHere are the suggested attribute settings for your reference:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/1.png)\n\n#### Step 2:\n\nAfter creating 2 attributes, you can go to the *Variations* tab of the variable product page, choose “Create variations from all attributes” then press **Go**:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-variation-stock.png)\n\nNow, you can click on each variation, configure a price, stock, thumbnail, etc for each variation as in above image. Any unavailable variation, you can leave out the check on the *Enabled* box  as in the below image, or click on the **Remove** button to completely delete that variation from the list.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/woosb-wpcstore-inactive-variation.png)\n\nInstead of keeping individual products, now you can manage them as*variations in a variable product*.\n\n#### Step 3:\n\nAdd those products to the Smart bundle, enable the *Custom quantity* option, and configure the min/max limits based on your preferences:\n\nIf you would like to allow just 1 unit of each bundled product, just set all the default quantities to 1 and disable the *Custom quantity* option.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/woosb-wpcstore-default-bundle-backend.gif)\n\n#### Step 4:\n\nInstall our free plugin called [WPC Variation Swatches for WooCommerce](https://wordpress.org/plugins/wpc-variation-swatches/) . This plugin is available for FREE on the WordPress repository, you can search for it to install or download from the plugin page in the link.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpcvs-banner.png)\n\nNow, users can display all options visually on the smart bundle. When buyers choose a variation, the stock and thumbnail will be displayed like this:\n\nThis would be a nice solution to your need of displaying all available options properly, manage stocks & discounts, and get buyers to make the choices correctly.",
+      "headings": [
+        "HOW TO SET UP COMPLEX VARIABLE BUNDLE OFFER",
+        "Step 1:",
+        "Step 2:",
+        "Step 3:",
+        "Step 4:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Steps to Configure Smart Bundles",
+      "url": "https://doc.wpclever.net/woosb/bundle-setup/",
+      "category": "Bundle Setup",
+      "content": "In order to create a product bundle, please follow these steps:\n\n#### Step 1: Create a new product\n\nClick on **Products >> Add New.**\n\n#### Step 2: Choose “Smart bundle”\n\nChoose *Smart bundle* from the drop-down of product type.\n\n#### Step 3: Search for product(s)\n\nOn *Bundled Products* tab, type in the Search box with keyword(s) to look for products.\n\n#### Step 4: Select product types\n\nChoose an appropriate type then click (+) to add. Notice the marks at the end of each item:\n\n- simple #…: simple product\n- variable #…: variable product\n- variation #…: a specific variation of the variable product above it.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-marks.png)\n\n> Variable products and variations are only available in the Premium version\n\nIf you would like to search for specific produc types only, you can click on the Settings button and hold down the Ctrl button to choose some:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-search-popup.png)\n\n#### Step 5: Re-arrange the items\n\nUse the arrow drag & drop symbol to rearrange the order of items:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-move.png)\n\n#### Step 6: Set default quantity & min/max\n\nFill in the default quantity box for each item. By default, when a new product is added to the bundle, the default quantity is **1.**\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-default-quantity.png)\n\nIf you want your customers to choose the unit of each item to their preferences, put a check in the box “Buyer can change the quantity of bundled products” to enable the Custom quantity feature.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-9.png)\n\nClicking on the *Custom quantity* box will open up the min/max options. Set up the quantity limit for each item (*Each item’s quantity limit*) or the whole bundle (*All items’ quantity limit*) accordingly.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-10.png)\n\nIf you’d like to set *different minimum quantity limits* for bundled items by using the default quantities, put a check on “Use default quantity as min?”.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-10-3.png)\n\nThere will be a warning in the front-end to remind customers of how much they can buy per order.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-10-2.png)\n\n#### Step 7: Configure the Pricing method\n\nInitially, the plugin will automatically calculate the sum of all bundled products’ price and use it as the Regular price.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-auto-price-e1629363954505.png)\n\nIf you want to manually set the fixed total price for the whole bundle, click on “Disable auto-calculated price”\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-fixed-price.png)\n\nThen press “click here to set price” or go to the *General* tab and fill in with a new price:\n\n#### Step 8: Configure the Discount\n\nType in a discount on the corresponding box to set it up as **a percentage** or **amount discount.** Note that the Discount option will be disabled when you disable the auto-calculated price and enter a manual total price for the bundle.\n\nIf both these boxes are filled, the *amount discount* will be prioritized and applied to sub-products:\n\n#### Step 9: Configure the Total limits\n\nIf the package you’re creating has some limits for the total price, you can configure the min/max total limits in the coresponding box:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-total-limit.png)\n\n#### Step 10: Set up the Shipping fee\n\nFirst, open the *Shipping* tab and choose a Shipping class:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-shipping-tab.png)\n\nThen go back to the Bundled products tab and now you can choose an option for configuring the *Shipping fee.* The Shipping fee will be calculated based on the chosen shipping class and applied to each product individually or for the whole bundle due to this choice.\n\n#### Step 11: Configure Stock\n\nIf any of the sub-products in the list has the Stock management enabled, the Stock management for the whole bundle will be enabled as well. This means bundle doesn’t just use “In stock/Out of Stock/ On backorders” as stock status, but now the stock of the whole bundle will be tied with the item that has the lowest stock in the list. You can read more about Stocks [here](https://doc.wpclever.net/woosb/stock-inventory/).\n\nTo set up a stock quantity for the whole bundle, put a check to turn on “Enable stock management at bundle level”**>> Update**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-12-1.png)\n\nThen go to the *Inventory* tab, put a check on “Enable the stock management at product level” and set up stock quantity for the bundle.\n\n#### Step 12: Custom display price\n\nEnter a custom display price if you want to show a price rather than the total or starting price of the bundle. For example: “From $49”.\n\n#### \n\n> The Custom display price will be visible only if the “Change price” option is disabled. When the Change price is enabled, the custom display price will be displayed on the archive/shop pages only.\n\n#### Step 13: Above/Under text\n\nCustomize the *Above/ Under text* for the current bundle in bundle page to encourage buyers.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-14.png)\n\n#### Step 14: Layout\n\nBy default, all smart bundles will use the default layout in the plugin setting under **WPClever >> Product Bundles >>** Layouts\n\nYou can choose a different layout for the current bundle:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-layout.png)\n\n#### Step 15: Press Publish to finish.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-15.png)\n\nSee this video for more information on how to create a new smart bundle.\n\n### Articles\n\n- [Configure Terms for Variable Products](https://doc.wpclever.net/woosb/bundle-setup/configure-terms-for-variable-products/)\n- [Headings/ Paragraphs](https://doc.wpclever.net/woosb/bundle-setup/headings-paragraphs/)",
+      "headings": [
+        "Step 1: Create a new product",
+        "Step 2: Choose “Smart bundle”",
+        "Step 3: Search for product(s)",
+        "Step 4: Select product types",
+        "Variable products and variations are only available in the Premium version",
+        "Step 5: Re-arrange the items",
+        "Step 6: Set default quantity & min/max",
+        "Step 7: Configure the Pricing method",
+        "Step 8: Configure the Discount",
+        "Step 9: Configure the Total limits",
+        "Step 10: Set up the Shipping fee",
+        "Step 11: Configure Stock",
+        "Step 12: Custom display price",
+        "The Custom display price will be visible only if the “Change price” option is disabled. When the Change price is enabled, the custom display price will be displayed on the archive/shop pages only.",
+        "Step 13: Above/Under text",
+        "Step 14: Layout",
+        "Step 15: Press Publish to finish.",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Configure Terms for Variable Products",
+      "url": "https://doc.wpclever.net/woosb/bundle-setup/configure-terms-for-variable-products/",
+      "category": "Bundle Setup",
+      "content": "### (Version prior to 8.0.0)\n\nUsers can now configure terms for variable products so that certain variations will be enabled for the selection in the frontend. This requires version 7.2.1 or higher of [WPC Product Bundles](https://wpclever.net/downloads/product-bundles/) plugin.\n\nWhen adding variable products (with the mark “variable #…” at the end) to smart bundles, there is a little button written “Config terms” at the end. Users can click on that and the popup for choosing terms will be opened.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-config-terms-button.png)\n\nBy default, if any attribute box is left blank, all terms will be used. You can type in and select some terms to be enabled in each box.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-config-terms-popup.png)\n\nIn the frontend, buyers can only see the selected terms in the drop-down list. You can also use the [WPC Variations Radio Buttons](https://wpclever.net/downloads/variations-radio-buttons/) plugin and show the selected variations in a clearer way:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-config-term-radio-buttons.png)\n\n### (Version 8.0.0 or later)\n\nWith version 8.0.0, the **Custom quantity** and Config terms features have some changes in the display. Users can configure a different sets of min/max quantity limit for each subproduct. The Config terms feature is located at the end of this dropdown for variable subproduct.  The rules for configuring the terms of attributes are still the same.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_custom_quantity_terms.jpg)",
+      "headings": [
+        "(Version prior to 8.0.0)",
+        "(Version 8.0.0 or later)"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Headings/ Paragraphs",
+      "url": "https://doc.wpclever.net/woosb/bundle-setup/headings-paragraphs/",
+      "category": "Bundle Setup",
+      "content": "### This is a feature for the Premium version only\n\nThe Headings/Paragraphs button is available in the Premium version only. Users can add headings at many levels H1, H2, H3, H4, H5, H6 and paragraph, span or none. It’s possible to drag and drop to rearrange their order so that sections of the offer are more outstanding to buyers.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-headings-frontend-1.png)Preview of all level headings\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-headings-backend-1.png)The backend button",
+      "headings": [
+        "This is a feature for the Premium version only"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Cart, Checkout & Order details",
+      "url": "https://doc.wpclever.net/woosb/cart-checkout-order-details/",
+      "category": "Cart Checkout Order Details",
+      "content": "## Cart & Checkout Display\n\nIt’s impossible to hide the main bundle on cart and checkout pages, since the main virtual bundle is needed for increasing/decreasing the quantity of the whole bundle. Removing the main bundle will remove the whole deal from cart.\n\nUsers can choose to hide the sub-products completely or list their name under the main bundle on cart & checkout pages. This list can be a single line or an unordered list with each item in 1 line.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-hide-bundled-products.png)\n\nThe option to list sub-product names in several lines was newly added in a recent update. In the frontend, it will be like:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-hide-subproducts-in-separate-lines.png)**Bundle on cart page**\n\n## Order Details/ Confirmation Email\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-hide-sub-products-checkout.png)Bundle on checkout page\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-hide-subproducts-orders.png)\n\nThis will also be reflected into the WooCommerce >> Orders.\n\n**Hide bundled products on order details:** This option has been added to the plugin setting since version 7.2.6. Users can choose to hide the sub-products on the order details or confirmation emails sent to customers.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/08/woosb-hide-on-email-order-details.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/08/woosb-hide-subproducts-order-details.png)",
+      "headings": [
+        "Cart & Checkout Display",
+        "Order Details/ Confirmation Email"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "FAQs",
+      "url": "https://doc.wpclever.net/woosb/faqs/",
+      "category": "Faqs",
+      "content": "## FAQs\n\n### Articles\n\n- [1. Composite + Grouped in a bundle?](https://doc.wpclever.net/woosb/faqs/1-composite-grouped-in-a-bundle/)\n- [2. Use ddSlick interface in Product Bundles?](https://doc.wpclever.net/woosb/faqs/2-use-ddslick-interface-in-product-bundles/)\n- [3. Hide bundles’ price based on user roles?](https://doc.wpclever.net/woosb/faqs/3-hide-bundles-price-based-on-user-roles/)\n- [4. Doubled sets of quantity buttons?](https://doc.wpclever.net/woosb/faqs/4-doubled-sets-of-quantity-buttons/)\n- [5. Use Smart Quick View with bundles?](https://doc.wpclever.net/woosb/faqs/5-use-smart-quick-view-with-bundles/)\n- [6. How to make prices change?](https://doc.wpclever.net/woosb/faqs/6-how-to-make-prices-change/)\n- [7. How to fix not changing prices?](https://doc.wpclever.net/woosb/faqs/7-how-to-fix-not-changing-prices/)\n- [8. Exempt bundles from coupons?](https://doc.wpclever.net/woosb/faqs/8-exempt-bundles-from-coupons/)\n- [9. Out of Stock bundles?](https://doc.wpclever.net/woosb/faqs/9-out-of-stock-bundles/)\n- [10. Hide bundle’s name before bundled products?](https://doc.wpclever.net/woosb/faqs/10-hide-bundles-name-before-bundled-products/)\n- [11. Hide bundled products in mini-cart, cart & checkout?](https://doc.wpclever.net/woosb/faqs/11-hide-bundled-products-in-mini-cart-cart-checkout/)\n- [12. Unlink individual products in bundles?](https://doc.wpclever.net/woosb/faqs/12-unlink-individual-products-in-bundles/)\n- [13. Add the same products to bundles several times?](https://doc.wpclever.net/woosb/faqs/13-add-the-same-products-to-bundles-several-times/)\n- [14. Display discounted amount on bundles?](https://doc.wpclever.net/woosb/faqs/14-display-discounted-amount-on-bundles/)\n- [15. Set different min/max quantity limits?](https://doc.wpclever.net/woosb/faqs/15-set-different-min-max-quantity-limits/)\n- [16. How to disable the universal quantity box next to the Add to Cart button](https://doc.wpclever.net/woosb/faqs/16-how-to-disable-the-universal-quantity-box-next-to-the-add-to-cart-button/)\n- [17. Bundle with different tax rates for sub-products](https://doc.wpclever.net/woosb/faqs/17-bundle-with-different-tax-rates-for-sub-products/)",
+      "headings": [
+        "FAQs",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "1. Composite + Grouped in a bundle?",
+      "url": "https://doc.wpclever.net/woosb/faqs/1-composite-grouped-in-a-bundle/",
+      "category": "Faqs",
+      "content": "#### Question 1: Can I add a grouped product or a composite product to another bundle to use as a bundled product?\n\n**Answer:** No. All products created by [WPC Product Bundles](https://wpclever.net/downloads/woocommerce-product-bundle), [WPC Composite Products](https://wpclever.net/downloads/wpc-composite-products-for-woocommerce), or [WPC Grouped Products](https://wpclever.net/downloads/wpc-grouped-product-for-woocommerce) plugin are of equivalent product types.\n\nYou can observe that fact when choosing a product type from the Product Data drop-down list. Therefore, smart bundles, composite products, and smart grouped products CANNOT be added inside one another. Even if you can search for and add them in the back-end, but in the front-end, they won’t be visible or functional as normal.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-1.png)\n\nIn order to add extra items to a Smart Bundle, Composite Product, or Smart Grouped, you can use [WPC Frequently Bought Together](https://wpclever.net/downloads/woocommerce-bought-together) or [WPC Force Sells](https://wpclever.net/downloads/wpc-force-sells) plugin. After installing these plugins, users can add extra products in the Bought Together tab or Force Sells tab.",
+      "headings": [
+        "Question 1: Can I add a grouped product or a composite product to another bundle to use as a bundled product?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "10. Hide bundle’s name before bundled products?",
+      "url": "https://doc.wpclever.net/woosb/faqs/10-hide-bundles-name-before-bundled-products/",
+      "category": "Faqs",
+      "content": "#### Question 10: How to hide the bundle’s name before bundled products in cart and checkout?\n\n**Answer:** Please go to**WPClever >> Product Bundles >>** in “Hide bundle name before bundled products” choose “Yes” **>> Update options**. In cart and checkout, the title of each bundled product will change from “Product Bundle 1 → Product 1” to just “Product 1”.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-10.png)\n\n*Note:*Doing this won’t hide the main product (eg. Product Bundle 1), this is to just hide the bundle’s name in the title of each bundled item on the cart and checkout pages.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-hide-bundled-products-cart.gif)",
+      "headings": [
+        "Question 10: How to hide the bundle’s name before bundled products in cart and checkout?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "11. Hide bundled products in mini-cart, cart & checkout?",
+      "url": "https://doc.wpclever.net/woosb/faqs/11-hide-bundled-products-in-mini-cart-cart-checkout/",
+      "category": "Faqs",
+      "content": "#### Question 11: How to hide bundled products under the bundle on mini-cart, cart & checkout page?\n\n**Answer:** Please go to **WPClever >> Product Bundles:**\n\n### On mini-cart\n\nIn “Hide bundled products on mini-cart”, choose “Yes” **>> Update options**.\n\nOn mini-cart:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-hide-bundled-product-mini-cart.gif)\n\n### On the cart and checkout pages:\n\nUsers can choose to completely hide the sub-products (choose “Yes, just show the main bundle” option) or list them in one line/separate lines:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-hide-bundled-products.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-hide-bundled-products.png)List sub-product names in one line under the main bundle\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-hide-subproducts-in-separate-lines.png)List sub-product names in separate lines under the main bundle\n\n### On the checkout page:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wcpstore-hide-bundled-products-checkout.png)List sub-product names in one line under the main bundle – Checkout\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-hide-sub-products-checkout.png)",
+      "headings": [
+        "Question 11: How to hide bundled products under the bundle on mini-cart, cart & checkout page?",
+        "On mini-cart",
+        "On the cart and checkout pages:",
+        "On the checkout page:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "12. Unlink individual products in bundles?",
+      "url": "https://doc.wpclever.net/woosb/faqs/12-unlink-individual-products-in-bundles/",
+      "category": "Faqs",
+      "content": "#### Question 12: I just want to sell some products in bundles, but not as individual products in my shop. How do I prevent customers from finding them and adding them to the cart?\n\n**Answer:**\n\n> It’s required that all bundled products are set as Public, not Private or Hidden, so that our plugin can find and add them to the smart bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-visibility.png)\n\nThere are two things you can do to prevent buyers from reaching those bundled items:\n\n1/ Disable “Link to individual product” by choosing “No” for this option in **WPClever >> Product Bundles**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-12-1.png)\n\n2/ Hide them from your shop archive and search by adjusting their visibility to *Hidden*.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-12-2.png)\n\nThen buyers won’t be able to click through the title of bundled products to visit individual product pages anymore.",
+      "headings": [
+        "Question 12: I just want to sell some products in bundles, but not as individual products in my shop. How do I prevent customers from finding them and adding them to the cart?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "13. Add the same products to bundles several times?",
+      "url": "https://doc.wpclever.net/woosb/faqs/13-add-the-same-products-to-bundles-several-times/",
+      "category": "Faqs",
+      "content": "#### Question 13: How can I add the same product to a bundle several times?\n\n**Answer:** In order to do this, please go to **WPClever >> Product Bundles >>** in Search setting, choose “Yes” for “Accept same products” **>> Update options**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-13.png)\n\nHere is an example of a smart bundle that has the same products added more than one time:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-same-products.png)Pay attention to how variable product and its variations are displayed in different ways in the front end",
+      "headings": [
+        "Question 13: How can I add the same product to a bundle several times?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "14. Display discounted amount on bundles?",
+      "url": "https://doc.wpclever.net/woosb/faqs/14-display-discounted-amount-on-bundles/",
+      "category": "Faqs",
+      "content": "#### Question 14: How can I display the discounted amount on bundles?\n\n**Answer:** Only bundles whose prices are automatically calculated can display the “Saved text”. Please make sure the “Disable the auto-calculated price” is unchecked and fill in a discount in the corresponding box (**% or $**).\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-8.png)\n\nDepending on the type of discount applied to your bundle, the saved text will display accordingly. The amount discount will override the percentage discount when both boxes are filled.\n\nIn order to show the Saved text in both Starting price & Subtotal, please enable “Change price” from the plugin settings. Then the saved text will be visible on all auto-priced bundles in both positions.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-pricing-price-display-3.png)\n\nSee more in the [Saved Text](https://doc.wpclever.net/docs/wpc-product-bundles-for-woocommerce/pricing-discounts/saved-text/) under the Pricing and Discounts section.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-custom-saved-text.png)",
+      "headings": [
+        "Question 14: How can I display the discounted amount on bundles?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "15. Set different min/max quantity limits?",
+      "url": "https://doc.wpclever.net/woosb/faqs/15-set-different-min-max-quantity-limits/",
+      "category": "Faqs",
+      "content": "#### Question 15: Can I set different minimum & maximum quantities for bundled items in a bundle?\n\n**Answer:** The answer is yes and no. In order to set up Min/Max quantity for bundles, you must first enable Custom quantity by choosing the checkbox “Buyer can change the quantity of bundled products”.\n\nAfter that, you can set different minimum quantities by configuring a different predefined quantity for each item, then putting a check in the “Use the default quantity as Min?” option.\n\nYou CAN’T set up different maximum quantities for each item. The Min & Max quantity limit for the whole bundle is the min and max of total units for all bundled items.\n\nIf you enabled the “Use the default quantity as Min?” and also fill in any of the 2 Min boxes with a number, the default quantity will be prioritized as min quantity limit for each item.\n\nThe logic when it comes to setting the Min-Max should also be considered upon bundle creation. The multiplication of each item’s min limit and the number of bundled products should be equal or lower than the max limit for all items.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-15.png)",
+      "headings": [
+        "Question 15: Can I set different minimum & maximum quantities for bundled items in a bundle?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "16. How to disable the universal quantity box next to the Add to Cart button",
+      "url": "https://doc.wpclever.net/woosb/faqs/16-how-to-disable-the-universal-quantity-box-next-to-the-add-to-cart-button/",
+      "category": "Faqs",
+      "content": "#### Question 16: I would like to disable the universal quantity box next to the Add to Cart button so that each customer can buy only 1 bundle. How to do that?\n\n**Answer:** In the bundle page, you can go to the *Inventory* tab then put a check to enable the “Sold Individually” option for that bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/new-inventory-tab.png)\n\nWhen this option is enabled, the universal quantity box next to the Add to Cart button will be hidden. Therefore, one buyer/customer can only add 1 unit of that bundle to an order. This option is to make sure each customer can only get 1 unit of the chosen bundle per single order.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/10/woosb-wpcstore-sold-individually.gif)\n\nIf you want to allow multiple bundles to be purchased in a single order per customer, remember to uncheck/disable this option from the *Inventory* tab of the bundle page.",
+      "headings": [
+        "Question 16: I would like to disable the universal quantity box next to the Add to Cart button so that each customer can buy only 1 bundle. How to do that?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "17. Bundle with different tax rates for sub-products",
+      "url": "https://doc.wpclever.net/woosb/faqs/17-bundle-with-different-tax-rates-for-sub-products/",
+      "category": "Faqs",
+      "content": "## 17. Bundle with different tax rates for sub-products\n\n> In order to apply the different tax rates configured for individual products as sub-items inside smart bundles, your bundle must use the auto-calculated price, not the fixed price enter in the General tab.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/12/woosb-auto-price.png)\n\nThen when you add items with different tax rates into the bundle, the tax for each item will be calculated properly:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/12/woosb-different-tax.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/12/woosb-cart-tax-.png)Different tax rate calculation on the cart page\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/12/woosb-checkout-tax.png)Different tax rate calculation on the checkout page\n\nThe tax elaboration in the WooCommerce >> Orders:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/12/woosb-cart-tax.png)\n\nIn WPClever >> Product Bundles >> Compatible tab, users can find two plugins that we found compatible with our plugin. Using these plugins, users can have the following tax elaboration:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/12/woosb-invoice-tax.png)Tax elaboration on the PDF invoice.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/12/woosb-packing-slip-tax.png)and on the packing slip.",
+      "headings": [
+        "17. Bundle with different tax rates for sub-products"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "2. Use ddSlick interface in Product Bundles?",
+      "url": "https://doc.wpclever.net/woosb/faqs/2-use-ddslick-interface-in-product-bundles/",
+      "category": "Faqs",
+      "content": "#### Question 2: Can I use the ddSlick interface with WPC Product Bundles?\n\n**Answer:** No. There’s no ddSlick interface integrated into WPC Product Bundles.\n\nHowever, you can still use it by choosing the “Use Variations Radio Buttons” option, install this plugin from us, then configure the interface from WPC Variations Radio Buttons plugin settings. This plugin brings about ddSlick, Select2, and HTML tags interfaces to your bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-2.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-radio-buttons.png)The chosen interface in the Radio Buttons tab of each variable product will be displayed in the smart bundle when that product is added as a bundled item. Different variable products with different chosen interfaces will be displayed differently in a bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpsctore-ddslick-1.png)ddSlick on Smart Bundles\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-radio-buttons-1.png)Radio Buttons on Smart Bundles",
+      "headings": [
+        "Question 2: Can I use the ddSlick interface with WPC Product Bundles?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "3. Hide bundles’ price based on user roles?",
+      "url": "https://doc.wpclever.net/woosb/faqs/3-hide-bundles-price-based-on-user-roles/",
+      "category": "Faqs",
+      "content": "#### Question 3: Can I hide the price of bundles on the shop archive page for certain customers/ user roles?\n\n**Answer:** No. You can only choose to hide the price of bundled products on the bundle page.\n\nTo hide them, navigate to **WPClever >> Product Bundles >>** Show price, choose “No” then press **Update options**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-3.png)\n\nOn the bundle product page, the prices of bundled products will be hidden:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-hidden-price.png)\n\nIf you would like to hide those prices also on mini-cart, cart & checkout pages, you can choose the following options in the plugin settings:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-3-4.png)\n\nOn the mini-cart, the display is like this:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-hide-bundled-product-mini-cart.gif)\n\nOn the Cart page:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-hide-bundled-products-cart.png)\n\nAnd the Checkout page:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wcpstore-hide-bundled-products-checkout.png)",
+      "headings": [
+        "Question 3: Can I hide the price of bundles on the shop archive page for certain customers/ user roles?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "4. Doubled sets of quantity buttons?",
+      "url": "https://doc.wpclever.net/woosb/faqs/4-doubled-sets-of-quantity-buttons/",
+      "category": "Faqs",
+      "content": "#### Question 4: I saw two types of quantity buttons on my site, how to fix it?\n\n**Answer:** You can hide the extra plus/minus buttons for quantity input in plugin setting: **WPClever >> Product Bundles >>** choose “No” for the “Show plus/minus button” option **>> Update options**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-4.png)",
+      "headings": [
+        "Question 4: I saw two types of quantity buttons on my site, how to fix it?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "5. Use Smart Quick View with bundles?",
+      "url": "https://doc.wpclever.net/woosb/faqs/5-use-smart-quick-view-with-bundles/",
+      "category": "Faqs",
+      "content": "#### Question 5: How do I use the Quick View with bundles?\n\n**Answer:** First, you need to install and activate the WPC Smart Quick View plugin.\n\nGo to **WPClever >> Product Bundles >>** find “Link to individual products” then choose “Yes, open quick view popup” option **>> Update options**.\n\nFor popup settings, please navigate to **WPClever >> Smart Quick View**. After successfully added, whenever customers click on either each product’s thumbnail image or title, the popup for that item will be opened.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-5.png)\n\n#### Preview bundles on single product pages\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-quick-view-for-bundle.png)\n\n#### See how Smart Quick View works on product bundles\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-quick-view-on-bundles.gif)",
+      "headings": [
+        "Question 5: How do I use the Quick View with bundles?",
+        "Preview bundles on single product pages",
+        "See how Smart Quick View works on product bundles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "6. How to make prices change?",
+      "url": "https://doc.wpclever.net/woosb/faqs/6-how-to-make-prices-change/",
+      "category": "Faqs",
+      "content": "#### Question 6: I want to make both the starting price in the beginning and the subtotal change when buyers change the products or quantity. How to do that?\n\n**Answer:** If you want the starting price to be changed synchronously with the subtotal when buyers make any changes in product choice or quantity, please go to **WPClever >> Product Bundles >>** in “Change price,” choose “Yes”.\n\nIf you want to customize how it displays, please choose “Yes, custom selector” **>> Update options**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-6-1.png)\n\n#### The result might look like this:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-custom-saved-text.png)",
+      "headings": [
+        "Question 6: I want to make both the starting price in the beginning and the subtotal change when buyers change the products or quantity. How to do that?",
+        "The result might look like this:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "7. How to fix not changing prices?",
+      "url": "https://doc.wpclever.net/woosb/faqs/7-how-to-fix-not-changing-prices/",
+      "category": "Faqs",
+      "content": "#### Question 7: Prices on my site are not changing when customers change the product choice or quantity, how to fix that?\n\n**Answer:** First, please check **WPClever >> Product Bundles >> Change price** if the chosen option is “Yes”. If this still doesn’t work, please contact our [WPClever Support Forum](https://wpc.ticksy.com/) for help.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-7.png)",
+      "headings": [
+        "Question 7: Prices on my site are not changing when customers change the product choice or quantity, how to fix that?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "8. Exempt bundles from coupons?",
+      "url": "https://doc.wpclever.net/woosb/faqs/8-exempt-bundles-from-coupons/",
+      "category": "Faqs",
+      "content": "#### Question 8: I’ve already set up discounts for bundles, so how do I exclude bundles from coupon applications?\n\n**Answer:** By default, coupons are still applicable to product bundles (thus, no restrictions on coupons). You can go to **WPClever >> Product Bundles >>** in the “Coupon Restrictions” option, choose a suitable one that suits your need:\n\n- *Exclude bundles:* Auto-priced bundles will still accept coupons. Individual products are applicable to coupons but not when they are purchased altogether as a bundle.\n- *Exclude bundled products*: Manually priced bundles will still accept coupons. Individual products are NOT applicable to coupons when they are purchased as individual items, not part of a bundle.\n\nFor both these options, the *fixed cart amount* coupon type is still applicable.\n\n> If you want to completely exempt both bundles and bundled products from coupon applications, please choose the last option “Exclude both bundles and bundled products”.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-8-e1593094946139.png)\n\nHOW TO EXCLUDE INDIVIDUAL PRODUCTS FROM COUPON RESTRICTION WHEN PURCHASED SEPARATELY (NOT AS PART OF BUNDLES)",
+      "headings": [
+        "Question 8: I’ve already set up discounts for bundles, so how do I exclude bundles from coupon applications?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "9. Out of Stock bundles?",
+      "url": "https://doc.wpclever.net/woosb/faqs/9-out-of-stock-bundles/",
+      "category": "Faqs",
+      "content": "#### Question 9: I create a bundle and all bundled products are in stock, but in the front-end, my bundle displays “Out of stock”. How to fix that?\n\n**Answer:** First, please check if you have selected “Enable stock management at bundle level?”, then go to the *Inventory* tab to check the stock quantity configured.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-inventory-stock-bundle-level.png)\n\nNormally after enabling this option and press **Update**, the stock quantity for the whole bundle in the Inventory tab will be **0**, you need to enter a number into this box to make it “**In stock**” and enable stock management.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-12-2.png)\n\nYou can also go to **WPClever >> Product Bundles >>** in the “Cart & Checkout” section, choose “Yes” for “Exclude un-purchasable products”, in the front-end, out-of-stock products will still be visible, but buyers cannot choose or add them to the cart.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-9.png)\n\nWhen the *Exclude unpurchasable* option is enabled, any out-of-stock products will be removed from the bundles in the front end:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-exclude-unpurchasable-back-end.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-saved-text.png)",
+      "headings": [
+        "Question 9: I create a bundle and all bundled products are in stock, but in the front-end, my bundle displays “Out of stock”. How to fix that?"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Getting Started",
+      "url": "https://doc.wpclever.net/woosb/getting-started/",
+      "category": "Getting Started",
+      "content": "### WPC Product Bundles for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_772x250_2021.png)\n\n**WPC Product Bundles for WooCommerce** is a powerful plugin developed by the WPClever team. This plugin is designed for bundling several products together with great discount offers to increase sales, promote cross-sell products, and boost your income.\n\nYou can learn more about the functionalities of this plugin in this [description](https://wpclever.net/downloads/woocommerce-product-bundle).\n\nWPC Product Bundles comes in 2 versions:\n\n- The free version: unlimited item limit, allows simple and subscription products.\n- The Premium version: allows simple products, subscription products, variable products, and variations to be added with entire powerful features and regular updates.\n\n#### You’ve got an invitation from the WPClever team: Play around with the live demo.\n\n### Articles\n\n- [Welcome](https://doc.wpclever.net/woosb/getting-started/welcome/)",
+      "headings": [
+        "WPC Product Bundles for WooCommerce",
+        "You’ve got an invitation from the WPClever team: Play around with the live demo.",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Welcome",
+      "url": "https://doc.wpclever.net/woosb/getting-started/welcome/",
+      "category": "Getting Started",
+      "content": "## WPC Product Bundles for WooCommerce\n\nWPC Product Bundles for WooCommerce is a powerful plugin developed by the WPClever team. This plugin is designed for bundling several products together with great discount offers to increase sales, promote cross-sell products, and boost your income.\n\nYou can learn more about the functionalities of this plugin in this [description](https://wpclever.net/downloads/woocommerce-product-bundle).\n\nWPC Product Bundles comes in 2 versions:\n\n- *The free version*: unlimited item limit, allows simple and subscription products.\n- *The Premium version*: allows simple products, subscription products, variable products, and variations to be added with entire powerful features and regular updates.\n\n**System requirements:**\n\n- Version: 5.2.2\n- WordPress  4.0 or higher\n- WooCommerce 3.0 or higher",
+      "headings": [
+        "WPC Product Bundles for WooCommerce"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "PDF Invoice & Packing",
+      "url": "https://doc.wpclever.net/woosb/pdf-invoice-packing/",
+      "category": "Pdf Invoice Packing",
+      "content": "In order to hide bundles, bundled products, or both in PDF invoice & order details, you can check the *Compatible* tab of WPC Product Bundles plugin settings to find the plugin you’re using for packaging.\n\nWe have integrated this feature for two following plugins:\n\n- WooCommerce PDF Invoices & Packing Slips\n- WooCommerce PDF Invoices, Packing Slips, Delivery Notes & Shipping Labels\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-pdf-invoice.png)",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "Plugin Settings",
+      "url": "https://doc.wpclever.net/woosb/plugin-settings/",
+      "category": "Plugin Settings",
+      "content": "From the admin dashboard, navigate to**WPClever >> Product Bundles**to access the plugin settings.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpclever.png)\n\n### Articles\n\n- [Price formats](https://doc.wpclever.net/woosb/plugin-settings/price-formats/)\n- [Bundle’s details](https://doc.wpclever.net/woosb/plugin-settings/bundles-details/)\n- [Layout settings](https://doc.wpclever.net/woosb/plugin-settings/layout-settings/)\n- [Bundled products on the bundle page](https://doc.wpclever.net/woosb/plugin-settings/bundled-products-on-the-bundle-page/)\n- [Bundles on single product and shop archive page](https://doc.wpclever.net/woosb/plugin-settings/bundles-on-single-product-and-shop-archive-page/)\n- [Coupon Restriction](https://doc.wpclever.net/woosb/plugin-settings/coupon-restriction-2/)\n- [Search settings](https://doc.wpclever.net/woosb/plugin-settings/search-settings-2/)",
+      "headings": [
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Bundled products on the bundle page",
+      "url": "https://doc.wpclever.net/woosb/plugin-settings/bundled-products-on-the-bundle-page/",
+      "category": "Plugin Settings",
+      "content": "## Bundled products on the bundle page\n\n#### 1/ Position:\n\nChoose a position to display the list of bundled products in bundle page:\n\n- Above Add to Cart button\n- Under Add to Cart button\n- Under the title\n- Under the price\n- Under the excerpt\n- In a new tab\n- No (hide it)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-plugin-settings-position.png)\n\nThis is the default position where the list of bundled products appears on the bundle page.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-smart-bundle-list.png)\n\nIf you want to adjust the position of bundle name on bundled products’ individual pages, choose an option in the “Bundles” section.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-above-under-text-settings.png)\n\nWhere the list of all bundles that an individual product is included in appears:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-above-under-text.png)\n\n#### 2/Layouts:\n\nIn the plugin setting, the default layout is List. Users can choose another layout there for all bundles storewide:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-layouts.png)\n\nTo change the layout of specific bundles, you can choose a layout in the *Bundled products* tab of the bundle page:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-layout.png)\n\n#### 3/ Variations Selector Interfaces:\n\nWPC Product Bundles provides two kinds of selector interfaces:\n\n- Default interface\n- Use WPC Variations Radio Buttons\n\n*3.1/ Default interface:*\n\nThe default interface displays a drop-down for **attributes** of each variable product in a bundle (for example, product A has two attributes, there are 2 drop-down lists, one for Size, one for Color, see image below).\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-default-smart-bundle.png)\n\n*3.2/ Use WPC Variations Radio Buttons:*\n\nIf you choose to display the radio buttons in the front-end, please install the WPC Variations Radio Buttons plugin first. Then, set things up in Radio Button plugin settings. WPC Variations Radio Buttons can also bring about **ddSlick, Select2,** and **HTML tags** interfaces to your bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpsctore-ddslick.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-radio-buttons.png)The chosen interface in the Radio Buttons tab of each variable product will be displayed in the smart bundle when that product is added as a bundled item. Different variable products with different chosen interfaces will be displayed differently in a bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-radio-buttons.png)Radio Buttons interface on Smart Bundles",
+      "headings": [
+        "Bundled products on the bundle page",
+        "1/ Position:",
+        "2/Layouts:",
+        "3/ Variations Selector Interfaces:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Bundle’s details",
+      "url": "https://doc.wpclever.net/woosb/plugin-settings/bundles-details/",
+      "category": "Plugin Settings",
+      "content": "## Bundle settings\n\nYou can choose *Yes/No* respectively for each of the following options to display/hide the details of bundled products in bundle page:\n\n- Thumbnail image\n- Quantity\n- Short description\n- Price/ subtotal\n- Plus/minus buttons for quantity input\n\n![Configure the bundle details.](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-plugin-settings-bundle-details.png)Configure the bundle details.\n\nIn the “Show price” option, you can choose 1 of the following options:\n\n- *Price:*show unit price per bundled product.\n- **Subtotal:** show unit price x quantity per bundled product. If the Custom quantity option is enabled, the subtotal will be updated upon changing the quantity.\n- *No:* hide the price of bundled products. Only the quantity is shown.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-default-interface.png)Show price: Price\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-spcstore-subtotal.png)Show price: Subtotal\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-subtotal-plus-minus.gif)Show price: Subtotal with Plus/Minus buttons enabled\n\n#### Change Image\n\nWhen the Change image option is enabled, the main product image will be replaced with the most recently chosen variation of the variable sub-product inside the smart bundle. This feature only works for variable sub-products, not for simple products or variations as bundled items.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-change-image-setting.png)\n\nSee how it works in the frontend:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-change-image-scaled.gif)",
+      "headings": [
+        "Bundle settings",
+        "Change Image"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Bundles on single product and shop archive page",
+      "url": "https://doc.wpclever.net/woosb/plugin-settings/bundles-on-single-product-and-shop-archive-page/",
+      "category": "Plugin Settings",
+      "content": "## Bundles on single product and shop archive page\n\n#### 1.1/ Position:\n\nChoose a position to display the list of bundles that an individual product is included in its single product page:\n\n- Above Add to Cart button\n- Under Add to Cart button\n- In a new tab\n- No (hide it)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-above-under-text-settings.png)![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundles-on-single-product-page.png)\n\nIn case you would like to hide this list of bundles in single product pages, choose “No, hide it”.\n\n#### 1.2/ Above text – Under text:\n\nThis is the text above and under the list of bundles on all single product pages.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-above-under-text-settings.png)\n\nHow it looks on bundled product pages:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-above-under-text.png)\n\n### 2/ Button labels for bundles on shop archive:\n\n#### Button labels:\n\nYou can change the labels for the Add to Cart button on the archive page based on bundles’ availability:\n\n- *“Add to Cart”*: on bundles that are available for purchase.\n- *“Select options”*: on bundles that have variable products.\n- *“Read more”*: on bundles that are unavailable or out of stock.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-plugin-settings-button-labels-e1593075311678.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-add-to-cart-label.png)\n\nThe “Single product page” box is for the Add to Cart button on the bundle page.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-add-to-cart-single.png)",
+      "headings": [
+        "Bundles on single product and shop archive page",
+        "1.1/ Position:",
+        "1.2/ Above text – Under text:",
+        "2/ Button labels for bundles on shop archive:",
+        "Button labels:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Coupon Restriction",
+      "url": "https://doc.wpclever.net/woosb/plugin-settings/coupon-restriction-2/",
+      "category": "Plugin Settings",
+      "content": "## Coupon Restriction\n\nIn order to exempt bundles from the coupon application, you can set it up accordingly:\n\n- *No:* All kinds of coupons are applicable to bundles.\n- *Exclude bundles:* For auto-priced bundles, all coupons are applicable. Manually priced bundles only accept fixed cart amount coupons.\n- *Exclude bundled products*: For manually priced bundles, all coupons are applicable. Auto-priced bundles only accept fixed cart amount coupons.\n- *Exclude both bundles and bundled products*: No coupons are applicable to product bundle type.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-cart-checkout-coupon-restriction.png)Coupon restriction choices",
+      "headings": [
+        "Coupon Restriction"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Layout settings",
+      "url": "https://doc.wpclever.net/woosb/plugin-settings/layout-settings/",
+      "category": "Plugin Settings",
+      "content": "## Layout settings\n\nYou can set up the overall layout settings for all bundles on your site in the plugin setting under WPClever >> Product Bundles >> Bundled products >> Layout\n\nThe default layout is the List. All bundles will start with the default layout chosen here.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-layouts.png)\n\nUsers can choose a different layout for individual bundle in the Bundled products tab.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-layout.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-layout-list.png)Default List layout\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-layout-grid-2.png)Grid with 2 columns\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-layout-3.png)Grid with 3 columns\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2023/06/woosb-layout-grid-4.png)Grid with 4 columns",
+      "headings": [
+        "Layout settings"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Price formats",
+      "url": "https://doc.wpclever.net/woosb/plugin-settings/price-formats/",
+      "category": "Plugin Settings",
+      "content": "## Price formats\n\nChoose a format to define how the bundle price is displayed in shop archive page:\n\n- From Min price, ie. “From $49”\n- Min price only, ie. “$20”\n- Min – Max, ie. “$20 -$49”\n- Regular and Sale price, ie. “$20$49”\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-plugin-settings-price-format.png)\n\nYou can add a custom price display for each bundle in the box next to “Custom display price” under *Bundled Products* tab of the bundle page.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-plugin-settings-custom-display-price.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-custom-display-price.png)Custom display price in the front end",
+      "headings": [
+        "Price formats"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Search settings",
+      "url": "https://doc.wpclever.net/woosb/plugin-settings/search-settings-2/",
+      "category": "Plugin Settings",
+      "content": "## Search settings\n\nConfigure the search behavior on your site:\n\n- **Search limit:** enter a number to limit the maximum of results appearing in search.\n- **Search by ID:** choose “Yes” to enable ID search by numeric input\n- **Search exact:** choose “Yes” then products are displayed only when the whole title or content is matched.\n- **Search sentence:** choose “Yes” to enable phrase search\n- **Accept same product:** choose “Yes” to allow a product to be added several times to the same bundle.\n\nFrom version *5.9.8* on, users can choose product types that can appear in the Search box from the plugin setting.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-search-settings.png)\n\nFrom version 7.2.1, users can now choose to hide or show thumbnails of products in the backend for faster search results:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-hide-thumbnail-backend.png)\n\nHiding thumbnails will help results to be loaded faster when typing for items:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-hide-thumbnails-backend.png)",
+      "headings": [
+        "Search settings"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Pricing & Discounts",
+      "url": "https://doc.wpclever.net/woosb/pricing-discounts/",
+      "category": "Pricing Discounts",
+      "content": "### Articles\n\n- [Pricing method](https://doc.wpclever.net/woosb/pricing-discounts/pricing-method/)\n- [Discounting methods](https://doc.wpclever.net/woosb/pricing-discounts/discounting-methods/)\n- [Saved Text](https://doc.wpclever.net/woosb/pricing-discounts/saved-text/)\n- [Price Display](https://doc.wpclever.net/woosb/pricing-discounts/price-display/)",
+      "headings": [
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Discounting methods",
+      "url": "https://doc.wpclever.net/woosb/pricing-discounts/discounting-methods/",
+      "category": "Pricing Discounts",
+      "content": "## Discounting methods\n\nChoose either of the following options to enter in the Discount box:\n\n- Using a *discounting percentage* (for example 10% off -> fill “10” in the first box)\n- Using *an amount* to be directly deducted (fill “49” in the second box for deducting $49 from the bundle total)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-plugin-settings-discount.png)\n\nKindly note that the mechanism of discounting on Product Bundles is to apply **a flat rate** on every bundled product, whether it is by the percentage or by an amount.\n\n⨯You **CANNOT** set different discounts for bundled items.\n\n⨯You **CANNOT** set discount rules based on the quantity accumulation (10% off for 10 units, 20% for 20 units, etc.) or user roles (10% for unregistered buyers, 20% for VIP customers, etc.)\n\nWhen both the percentage and amount boxes are filled with a number, the **amount** discount will be applied.",
+      "headings": [
+        "Discounting methods"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Price Display",
+      "url": "https://doc.wpclever.net/woosb/pricing-discounts/price-display/",
+      "category": "Pricing Discounts",
+      "content": "# Price Display\n\n#### 1/ Bundle price display on the shop page:\n\nTo set a universal price format display for all bundles on the shop archive page, please go to **WPClever >> Product Bundles >> Price formats**, choose a type then press **Update options**.\n\n#### 2/ Custom price display for each bundle:\n\nTo set a custom price display for each bundle, go to the bundle page and fill in the box next to the “Custom display price” option. This price will override the universal price format in the plugin settings.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-pricing-price-display-2.png)\n\nThe custom display price located under the product title in the bundle page is called the **starting price**, and by default, this price won’t change according to product choice or quantity change. The price that always changes based on the changes in products or variations is the **subtotal** that lies above the Add to Cart button.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-custom-display-price.png)\n\nIf you want the starting price to change synchronously with the subtotal when buyers make any changes in product choice or quantity, please go to **WPClever >> Product Bundles >> Change price**, choose “Yes”. If you want to customize how it displays, please choose “Yes, custom selector” **>> Update options**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-saved-text.png)\n\n#### 3/ Price display for bundled products on bundle page:\n\nIn **WPClever >> Product Bundles >>** find the “Show price” option and choose 1 of the following options:\n\n- *Price:*show unit price per bundled product.\n- **Subtotal:** show unit price x quantity per bundled product. If the Custom quantity option is enabled, the subtotal will be updated upon changing the quantity.\n- *No:* hide the price of bundled products. Only the quantity is shown.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-default-interface.png)Show price: Price (unit price of each bundled item)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-spcstore-subtotal.png)Show price: Subtotal (unit price x quantity of each bundled item)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-subtotal-plus-minus.gif)Show price: Subtotal (unit price x quantity of each bundled item) / Plus/minus button enabled\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-hidden-price.png)Show price: No (prices of bundled items are hidden)",
+      "headings": [
+        "1/ Bundle price display on the shop page:",
+        "2/ Custom price display for each bundle:",
+        "3/ Price display for bundled products on bundle page:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Pricing method",
+      "url": "https://doc.wpclever.net/woosb/pricing-discounts/pricing-method/",
+      "category": "Pricing Discounts",
+      "content": "## Pricing methods\n\nThere are two kinds of prices you can use for bundles:\n\n- Auto-calculated price\n- Manual price\n\n#### 1/ Auto-calculated price:\n\nThe plugin will automatically calculate the price of the bundle based on the sum of all bundled products’ prices.\n\n#### 2/ Manual price:\n\nPut a check on “Disable auto-calculated price”.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-7-2.png)\n\nThen go to the *General* tab, fill in a new price (Regular or Sale price) as you normally do with the simple or variable products.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-7-3.png)\n\n#### 3/ Bundled pricing method:\n\nBundled pricing method refers to how prices of bundled products will be calculated. The discount entered on the Bundled products tab will be applied to the regular or the sale price of bundled items.\n\nBy default, WPC Product Bundles takes the sale price of bundled items into account. If you want to calculate discounts/ new prices from the regular price instead to avoid double discounting on sale items, please go to **WPClever >> Product Bundles** find “Calculated bundled prices” option >> choose “from Regular price”.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-pricing-calculate-prices.png)\n\nFor example, with the below bundle:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-back-end-pricing.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-from-regular-price.png)From Regular price method\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-from-sale-price.png)From Sale price method (default)\n\n#### 4/ Total Limits:\n\nFrom version 6.5.0, a new option has been added to allow users configure a minimum and maximum limit for the bundle’s total. In the *Bundled products* tab, users can find the Total Limits option.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/Total-Limit.png)",
+      "headings": [
+        "Pricing methods",
+        "1/ Auto-calculated price:",
+        "2/ Manual price:",
+        "3/ Bundled pricing method:",
+        "4/ Total Limits:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Saved Text",
+      "url": "https://doc.wpclever.net/woosb/pricing-discounts/saved-text/",
+      "category": "Pricing Discounts",
+      "content": "When you use the **auto-calculated price** for your bundle and enter a *percentage* or an **amount** in the “Discount” option, then the applied discount will be displayed in the “Saved text”.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-discount.png)\n\nIn the front-end, the saved text will display the type of discount you have set:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-plugin-settings-saved-text-frontend.png)Percentage discount on auto-calculated price bundles\n\n#### \n\n#### 1/ Individual bundles’ saved text:\n\nEither a saved percentage or a saved amount will be displayed based on your choice of discounting method.\n\nWhen both types are filled (ie. both “10%” & “$50” are entered for a bundle, the *amount discount* will be prioritized and displayed in the saved text; while the percentage is ignored.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-saved-text.png)\n\nEach bundle can have a different saved text, based on the type of discount applied to it.\n\n#### 2/ Bulk edit the Saved text:\n\nYou can change this saved text in the Product Bundles plugin setting, on the “Saved text” option. ALWAYS keep **“[d]”** to display the discounted percentage or amount applied.\n\nFor example:\n\n- Back-end: (saved up to [d]) => Front-end: (saved up to $5) (with amount discount)\n- Back-end: (saved up to [d]) => Front-end: (saved up to 10%) (with percentage discount)\n- Back-end: (save up to 50% now) => Front-end: (save up to 50% now) (same for all bundles)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-plugin-settings-saved-text.png)\n\nWithout this symbol “[d]”, the text will be the same for all bundles on your store, and no number is displayed in the front-end. Saved text is always displayed next to the subtotal of each bundle.\n\nIf you’d like to display the *saved text in the starting price* of your bundle as well, go to **WPClever >> Product Bundles >>** choose “Yes” for the “Change price” option.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-change-price.png)\n\nIn the front-end, both starting price and total text will be added with a saved text:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-custom-saved-text.png)",
+      "headings": [
+        "1/ Individual bundles’ saved text:",
+        "2/ Bulk edit the Saved text:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Quantity Settings",
+      "url": "https://doc.wpclever.net/woosb/quantity-settings/",
+      "category": "Quantity Settings",
+      "content": "### 1/ Default quantity\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_default_qty_2024.png)\n\n### 2/ Custom quantity\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_qty_2024.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_bulk_qty_2024.png)\n\n### Articles\n\n- [Default quantity](https://doc.wpclever.net/woosb/quantity-settings/default-quantity/)\n- [Custom quantity](https://doc.wpclever.net/woosb/quantity-settings/custom-quantity/)",
+      "headings": [
+        "1/ Default quantity",
+        "2/ Custom quantity",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Custom quantity",
+      "url": "https://doc.wpclever.net/woosb/quantity-settings/custom-quantity/",
+      "category": "Quantity Settings",
+      "content": "## \n\n## Custom Quantity\n\n## (Version prior to 8.0.0)\n\nWhen you enable “Custom quantity” (Put a check on “Buyer can change the quantity of bundled products”), the options for quantity limits will appear.\n\n#### 1/ Each item’s quantity limit:\n\nMin/max quantity limit for each item.\n\nUsers can use different Min quantity limits for each bundled item by selecting “Use default quantity as Min?”.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-10-3.png)\n\nIf you fill a number in the Min/Max box, this quantity limit will apply to all items equally.\n\n#### 2/ All items’quantity limit:\n\nMin/Max limit for the total quantity of the whole bundle/all bundled items. Customers can choose any combination of item units as long as the total quantity meets the Min/Max. There will be a warning in the front-end for the max items to be chosen.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-10-2.png)\n\nLeave all Min/Max boxes blank or fill in the boxes with **0** if you want customers to freely buy as many as they’d prefer to.\n\n## CUSTOM QUANTITY\n\n## (Version 8.0.0 or later)\n\nSince version 8.0.0 on, the *Custom Quantity* option is now can be enabled or disabled for each subproduct individually. To enable this feature for any subproduct, click on an item then put a check into the box at the beginning of the line. If there should be quantity limits, enter a Min/Max number for each of them.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_8.0.0.png)\n\n> NOTE: If you are applying the quantity rules from the WPC Product Quantity plugin, the step can still be applicable to subproducts added to smart bundles\n\nClicking on each subitem in the list will reveal the dropdown for more options. The Custom quantity options won’t appear until you put a check to enable this feature for each item:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_custom_quantity_expand.jpg)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-custom-quantity-6.0.0.jpg)\n\nIf you would like to keep a fixed default quantity for any item, uncheck the Custom quantity box, the result will be:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-6.0.0.jpg)\n\nTo enter a total quantity limit (total Min/Max) for *all items* inside smart bundles, especially when there is any item with the default quantity set to *0* (optional item), enter a limit in the corresponding boxes below:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_6.0.0_quantity_limits.jpg)\n\nThe *Config terms* feature for variable subproducts can be found at the end of the dropdown for each variable subitem.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_custom_quantity_terms.jpg)\n\nYou can learn more about the [Config terms](https://doc.wpclever.net/woosb/bundle-setup/configure-terms-for-variable-products/) feature [here](https://doc.wpclever.net/woosb/bundle-setup/configure-terms-for-variable-products/).\n\n### Bulk actions for subproducts\n\nThere’s a list of bulk actions you can set for all subproducts in the list to save time, please pay attention to the Bulk action button on the right:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_bulk_actions.jpg)\n\nWhen choosing an action, there will be a warning for the confirmation, please confirm your choice then it’s all set. After using the Bulk actions, users can still configure a different setting for each subproduct to override the bulk settings.\n\n> NOTE: If you enable the “Sold Individually” option for subproducts in their single product page >> Product Data’s section >> Inventory tab, the Min/Max limits of the Custom Quantity option won’t work. The “Sold Individually” option will always change the quantities of subproducts to 1 even after adding them to the cart.\n\n### 3/ Sold Individually: (General quantity box)\n\nTo disable the *general quantity box* next to the Add to Cart button, go to *Inventory* tab >> enable “Sold individually”. Turn on this option to limit only one such bundle per order for each customer.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-quantity-settings-3.png)",
+      "headings": [
+        "Custom Quantity",
+        "(Version prior to 8.0.0)",
+        "1/ Each item’s quantity limit:",
+        "2/ All items’quantity limit:",
+        "CUSTOM QUANTITY",
+        "(Version 8.0.0 or later)",
+        "NOTE: If you are applying the quantity rules from the WPC Product Quantity plugin, the step can still be applicable to subproducts added to smart bundles",
+        "Bulk actions for subproducts",
+        "NOTE: If you enable the “Sold Individually” option for subproducts in their single product page >> Product Data’s section >> Inventory tab, the Min/Max limits of the Custom Quantity option won’t work. The “Sold Individually” option will always change the quantities of subproducts to 1 even after adding them to the cart.",
+        "3/ Sold Individually: (General quantity box)"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Default quantity",
+      "url": "https://doc.wpclever.net/woosb/quantity-settings/default-quantity/",
+      "category": "Quantity Settings",
+      "content": "## Default quantity\n\nUsers can set up different default quantities for bundled products. When a new product is added to the bundle, the default quantity is 1.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-default-quantity.png)\n\nYou can use the up/down button to change it or enter a new number in the box. When loading the bundle page, all subproducts will start with the default quantity in the backend. Depending on whether the [Custom quantity](https://doc.wpclever.net/woosb/quantity-settings/custom-quantity/) option is enabled or not, the quantity input might vary.\n\nIf you’re using the auto-calculated price, the sum of bundled products’ prices will be multiplied by the default quantities.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-default-interface.png)\n\n> NOTE: If you have configured the Default quantity for each subproduct, but these change back to 1 in the frontend or when the whole bundle is added to the cart, there must be another setting interfering with our plugin.\n\n- Please check if you are using any **quantity controlling** plugin such as [WPC Product Quantity](https://wpclever.net/downloads/product-quantity/) plugin. The min/max/step of the single products can be effective inside smart bundles.\n- Please check if you are using any *Dynamic Pricing or Discount Rules* plugin. These can interfere with our plugin. *WPC Product Bundles* is not compatible with these dynamic discount plugins.\n- Please check if you enable the *“Sold Individually”* feature in the Inventory tab of the individual subproduct. This will always change the quantity to 1.",
+      "headings": [
+        "Default quantity",
+        "NOTE: If you have configured the Default quantity for each subproduct, but these change back to 1 in the frontend or when the whole bundle is added to the cart, there must be another setting interfering with our plugin."
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Shipping Fee",
+      "url": "https://doc.wpclever.net/woosb/shipping-fee/",
+      "category": "Shipping Fee",
+      "content": "## Shipping Fee\n\nWhen configuring the shipping method for product bundles, you need to choose how you would like to charge your customers with the shipping fee. Users need to choose either:\n\n- *Apply to the whole bundle*: only *charge once* for the bundle as a whole.\n- *Apply to each bundled product:* charge the *same shipping fee* on each item chosen in the current bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-11.png)\n\nFor example, if you have set up the shipping fee to $5 & choose the first option, the whole bundle will be charged with a $5 shipping fee no matter how many bundled products are included. If you choose the second option,  each chosen bundled product will be charged with a $5 shipping fee equally.\n\n[Bundled item 1 + $5 shipping fee] + [Bundled item 2 + $5 shipping fee] = Total\n\n> Smart bundles only accept a flat shipping rate based on the chosen shipping class for all bundled items. It’s impossible to set up different shipping rates for bundled items.\n\n#### STEPS TO CONFIGURE THE SHIPPING FEE FOR SMART BUNDLES\n\n> Step 1: Set up shipping options in WooCommerce settings: WooCommerce >> Settings >> Shipping tab.\n> \n> Set up shipping zones (if any)\n> Add flat rate shipping method under the Shipping zones section\n> Add Shipping classes from the Shipping Classes section\n> Click Edit the Flat rate shipping method & add the rates for each shipping class\n> \n> Step 2: Choose a shipping class in the Shipping tab of the Product Data section on the bundle page.\n> Step 3: Choose a shipping method for the Shipping fee option in the Bundled Products tab of the bundle page.\n> \n> Apply to the whole bundle.\n> Apply to each bundled product\n\n### STEP 1 – SET UP SHIPPING OPTIONS IN THE WOOCOMMERCE SETTINGS:\n\nOn the admin dashboard, you can configure all shipping options from **WooCommerce >> Settings >> Shipping tab.**\n\nHere you can find *Shipping zones, Shipping options,*and *Shipping classes*.\n\n#### 1/ Shipping zones:\n\nSet up shipping rates based on different zones.  For example: US, EU, and other zones.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-shipping-settings.png)Shipping settings in WooCommerce dashboard\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-shipping-zones.png)Add shipping methods to each shipping zone.\n\nIf you don’t want to set up zones, you can skip this and continue to add shipping methods by clicking on the “Manage shipping methods” button.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-manage-shipping-methods.png)\n\nThere are 3 shipping methods you can add: **Flat rate, Free shipping,**or**Local pickup**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-add-shipping-method.png)Click Add shipping method to choose either Flat rate, Free shipping, or Local pickup. You can choose some or all of these methods to add.\n\nThe flat rate shipping method can be configured based on different shipping classes. If you haven’t set up any shipping classes, go to the *Shipping classes* tab to add some first. Read more in part 3.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-flat-rate-shipping.png)Flat rate method\n\nFree shipping can be configured based on many rules. If you would like to use free shipping for smart bundles, you can add this shipping method and configure it.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-free-shipping.png)Free shipping method\n\nThe local pickup method for buyers to come to the store and pick up their order themselves.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-local-pickup.png)Local pickup shipping method\n\n#### 2/ Shipping options:\n\nClick on the **Shipping options** tab to configure how you would like to charge the shipping fee.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-shipping-options.png)\n\n#### 3/ Shipping classes:\n\nThe flat rate shipping methods can be set based on **shipping classes**, so you will need to have different shipping classes before you can set up shipping rates for each class in flat rate shipping methods in part 1.\n\nIf you haven’t set up any shipping class or shipping options, you can add new ones from **WooCommerce >> Settings >> Shipping >> Shipping class**then press *Add shipping class* to create new ones.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-shipping-classes.png)Shipping classes\n\nNavigate back to the *Flat rate shipping methods* under the *Shipping zones* section and click *Edit* to configure the rates.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-shipping-rates.png)\n\nSet up the rates for each shipping class in each shipping method\n\nNow the shipping classes are ready for smart bundles.\n\n### STEP 2 – CONFIGURE A SHIPPING CLASS ON THE BUNDLE PAGE:\n\nAfter having proper shipping classes, you should go to the *Product Data* section of the bundle page, open the *Shipping* tab to choose one of the existing **Shipping classes** to apply to the current bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-shipping-class-e1593083410762.png)\n\n### STEP 3 – CONFIGURE A SHIPPING METHOD FOR THE CURRENT BUNDLE:\n\nContinue with a shipping method, open the *Bundled Products* tab to choose a shipping method **>> Update**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-shipping-fee-e1629796384596.png)\n\nNow the shipping fee for your bundle will be reflected on the cart and checkout pages.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-shipping-fee-cart.png)Shipping cost on the cart page\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-shipping-fee-checkout.png)Shipping cost on the checkout page",
+      "headings": [
+        "Shipping Fee",
+        "STEPS TO CONFIGURE THE SHIPPING FEE FOR SMART BUNDLES",
+        "STEP 1 – SET UP SHIPPING OPTIONS IN THE WOOCOMMERCE SETTINGS:",
+        "1/ Shipping zones:",
+        "2/ Shipping options:",
+        "3/ Shipping classes:",
+        "STEP 2 – CONFIGURE A SHIPPING CLASS ON THE BUNDLE PAGE:",
+        "STEP 3 – CONFIGURE A SHIPPING METHOD FOR THE CURRENT BUNDLE:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Stock & Inventory",
+      "url": "https://doc.wpclever.net/woosb/stock-inventory/",
+      "category": "Stock Inventory",
+      "content": "In order to configure the stock for a smart bundle, in the Bundled products tab, put a check on the Enable stock management at bundle level box then press Update:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-stock-management-bundle-level.png)\n\nNext, you can go to the*Inventory*tab, turn on the Enable stock management at product level option (if not enabled) then enter a stock quantity**> > Update**:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-12-2.png)\n\n### 1. Stock management at product level:\n\nFor your information, when there is at least one of the bundled products in your bundle has this stock management option enabled in the*Inventory* tab of their single product page, this option will also be automatically enabled for smart bundles that include them.\n\nHence, in the *Inventory* tab of the Smart bundle page, this option will always be enabled when any of the bundled items have this turned on.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-stock-management-product-level.png)\n\n### 2. Stock management at bundle level:\n\nWhen stock management at bundle level is checked & press Update, users can go to the Inventory tab, enter a stock quantity for the bundle.\n\n> NOTE: The stock quantity of a bundle must NOT be higher than the available lowest stock of the bundled products.\n\nIn case you would like to set up a specific stock quantity for the bundle, **ALL** of your bundled products must be *in stock* and only configured with a stock status instead of a stock quantity. If any of your bundled items has a stock quantity configured, it will tie the smart bundle’s stock to that quantity.\n\nFor example:\n\n- Item 1: In Stock\n- Item 2: In Stock\n- Item 3: In Stock\n\n=> Enable stock management at bundle level, configure stock quantity: 9**>> OK**.\n\n- Item 1: 3 in Stock\n- Item 2: In Stock\n- Item 3: In Stock\n\n=> Enable stock management at bundle level, configure stock quantity: 9 >> the quantity will always change to 3 after pressing the**Update** button. You can still configure the stock quantity of the bundle to be 2, 1, or 0.\n\n>> Stock management at the product level *is always prioritized*over stock management at the bundle level.\n\nSo the only way you can configure a higher stock quantity for your bundle OR disable the stock management at the product level in the *Inventory* tab of the bundle is to make all bundled items use the stock status: *In Stock/ Out of Stock* instead of stock quantity.\n\n### Articles\n\n- [Inventory display](https://doc.wpclever.net/woosb/stock-inventory/inventory-display/)\n- [Stock management (1): product level](https://doc.wpclever.net/woosb/stock-inventory/stock-management/)\n- [Stock management (2): bundle level](https://doc.wpclever.net/woosb/stock-inventory/stock-management-2-bundle-level/)\n- [Stock management (3): variation level](https://doc.wpclever.net/woosb/stock-inventory/stock-management-3-variation-level/)\n- [Sold Individually](https://doc.wpclever.net/woosb/stock-inventory/sold-individually/)",
+      "headings": [
+        "1. Stock management at product level:",
+        "2. Stock management at bundle level:",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Inventory display",
+      "url": "https://doc.wpclever.net/woosb/stock-inventory/inventory-display/",
+      "category": "Stock Inventory",
+      "content": "## Inventory display\n\nThere are two ways of configuring the stock for bundle:\n\n- Stock status: In stock/Out of stock.\n- Stock management: X in stock.\n\n#### 1/ Stock status:\n\nDisplay a simple **In Stock/ Out of Stock/ On backorder**status.\n\nIf you’re using the newer WooCommerce versions, the Inventory tab will be as follows:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/new-inventory.png)\n\n#### 2/ Stock management:\n\nDisplay the number of products left in stock. By default, the stock status will be used. If you click on the Stock management box to enable that, you can enter a stock quantity underneath.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/new-stock-quantity.png)The new Inventory tab – Stock management\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-stock.png)For example: “12 in stock”.\n*Note:* Stock management at the product level will be automatically enabled for bundles when there is at least one of the bundled products has stock management turned on with a stock quantity. [Read more here.](https://doc.wpclever.net/docs/woosb/stock-inventory/stock-management/)",
+      "headings": [
+        "Inventory display",
+        "1/ Stock status:",
+        "2/ Stock management:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Sold Individually",
+      "url": "https://doc.wpclever.net/woosb/stock-inventory/sold-individually/",
+      "category": "Stock Inventory",
+      "content": "## Sold Individually\n\nIn the *Inventory* tab, there is an option to control the universal quantity box for smart bundles, which is “Sold Individually”.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/new-inventory-tab.png)\n\n> When this option is enabled, the universal quantity box next to the Add to Cart button will be hidden. Therefore, one buyer/customer can only add 1 unit of this bundle to the cart and place an order. This option is to make sure each customer can only purchase 1 unit of the chosen bundle per single order.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/10/woosb-wpcstore-sold-individually.gif)\n\nIf you want to allow multiple bundles to be purchased in a single order per customer, remember to uncheck/disable this option from the *Inventory* tab of the bundle page.",
+      "headings": [
+        "Sold Individually",
+        "When this option is enabled, the universal quantity box next to the Add to Cart button will be hidden. Therefore, one buyer/customer can only add 1 unit of this bundle to the cart and place an order. This option is to make sure each customer can only purchase 1 unit of the chosen bundle per single order."
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Stock management (2): bundle level",
+      "url": "https://doc.wpclever.net/woosb/stock-inventory/stock-management-2-bundle-level/",
+      "category": "Stock Inventory",
+      "content": "## 2/ Stock management at the bundle level:\n\nIn case you include all bove 5 products in your bundle, the auto-calculated stock is “**5 in stock**”, but you just want to sell 3 bundles only, you can set up the stock at *bundle level* to control this.\n\nIn the *Bundled Products* tab, put a check on “Enable stock management at bundle level” **>> Update**. Then go to the Inventory tab and fill in with a stock quantity, in the above example, fill in “3”.\n\n#### How to do\n\nOnly when “Enable stock management at bundle level” (1) is turned on then the stock quantity set in the *Inventory* tab is saved to the bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-step-12-1.png)\n\nIn order to put in a stock quantity, you must enable the stock management at bundle level first. Next, open the Inventory tab, put a check on “Track stock for this product” option, then enter a number in the Quantity box underneath.\n\n> So the process is to enable the stock management at bundle level first then at product level (bundle’s page Inventory tab), then set up a stock quantity for the whole bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/new-stock-quantity.png)\n\nIf this is disabled/unchecked, no matter whatever number you put in for stock quantity *will not be saved* after pressing the Update button & our plugin will calculate stock on the product level as the above-mentioned cases.\n\n### Out-of-stock Bundles:\n\nWhen one of the bundled products goes out-of-stock, the whole bundle is out-of-stock. You can make it purchasable again by going to **WPClever >> Product Bundles >>** in the “Cart & Checkout” section, choose “Yes” for “Exclude un-purchasable products”, in the front-end, out-of-stock products will still be visible, but buyers cannot choose or add them to the cart.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-9.png)\n\nFor example, this bundle includes an out-of-stock product:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-exclude-unpurchasable-back-end.png)\n\nThat out-of-stock item will be removed from the front-end display when Exclude unpurchasable is enabled:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-default-interface.png)",
+      "headings": [
+        "2/ Stock management at the bundle level:",
+        "How to do",
+        "So the process is to enable the stock management at bundle level first then at product level (bundle’s page Inventory tab), then set up a stock quantity for the whole bundle.",
+        "Out-of-stock Bundles:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Stock management (3): variation level",
+      "url": "https://doc.wpclever.net/woosb/stock-inventory/stock-management-3-variation-level/",
+      "category": "Stock Inventory",
+      "content": "## 3/ Stock management at variation level:\n\nSometimes, you might want to create a bundle comprised of *all variations* (marked at the end as “variations #123” for example) instead of variables (marked at the end as “variable #120 for example).\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-marks.png)\n\nIf the parent variable product just uses simple stock status like “In Stock/ Out of Stock”, when you add those variations to a bundle, remember to enable stock management at variation level by following these steps:\n\n- Find that variable product\n- Click on **Edit**\n- Navigate to the *Variations* tab\n- Put a check on “Manage stock”\n- Enter a number in the “Stock quantity” box **>> Update**\n- Add it to the bundle, now its stock will be managed as a normal individual product in a bundle.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-variation-stock.png)\n\nA sample bundle with all variations:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-bundle-sample-2.png)",
+      "headings": [
+        "3/ Stock management at variation level:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Stock management (1): product level",
+      "url": "https://doc.wpclever.net/woosb/stock-inventory/stock-management/",
+      "category": "Stock Inventory",
+      "content": "## 1/ Stock management at the product level\n\nIn order to manage the stocks of the bundle, you can set it up on different levels:\n\n- Product level\n- Bundle level\n- Variation level\n\n### 1/ Stock management at the product level:\n\nWhen any of the bundled products have the stock management enabled, the stock management for the bundle will be automatically enabled (even though the box next to “Enable stock management at product level” option in the *Inventory* tab is unchecked).\n\nIf one of the bundled products becomes **Out of stock**, then the whole bundle will be **Out of stock** as well in this case. No matter how hard you try to change the stock quantity by filling with a number or change the stock status to **In Stock,** that bundle will change back to **Out of Stock** after pressing the **Update** button.\n\nNow, we will take this example to discuss how to set up stock management:\n\nWe have 5 products with different stocks configured as below:\n\n- *Product A:* use Stock status with *In Stock* displayed.\n- *Product B:* use Stock management, stock quantity: **8**\n- *Product C:* use Stock status with **Out of Stock** displayed.\n- *Product D:* use Stock management, stock quantity: **5**\n- *Product E:* use Stock status with **In Stock** displayed.\n\nWe add some of them to a bundle, both Stock management at product level and at bundle level options are disabled.\n\n**Case 1:** With 4 products A, B, C, D included, this bundle will always be **Out of Stock** as the bundled product C is **Out of Stock**.\n\n**Case 2:** With only product A & product C included, the whole bundle will always be **Out of Stock**.\n\n**Case 3:** With only product A & product E included then the bundle will be **In Stock** (but no stock quantity displayed since it’s been configured yet).\n\n**Case 4:** With only product A & product B included, in the front-end, the stock will be “**8 in stock**” for the whole bundle based on the stock configured for product B. Similarly, if only product A & product D or product D & product E included, the stock will be “**5 in stock**”.\n\n**Case 5:** With only product B & product D included, the stock will be “**5 in stock**” based on the lowest stock among bundled items.\n\nWe can see that any combination that excludes out-of-stock product C is either “**In Stock**” or “**5 In Stock**”. So the *stock management is prioritized over stock status* and the *lowest stock* among bundled products will be used as the stock quantity for the whole bundle.\n\nEven though you don’t check the “Enable stock management at product level” option, when you add any product, which has stock management configured, to your bundle and press **Update**, check back on the *Inventory* tab after saving the changes, you’ll see this option is turned on and the stock quantity is filled with “**5**”.\n\nTherefore, you can rest assured that when a bundle is purchased successfully from your store, the stock will be *automatically reduced* from bundled products if they have stock management enabled with a positive stock quantity.",
+      "headings": [
+        "1/ Stock management at the product level",
+        "1/ Stock management at the product level:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Support",
+      "url": "https://doc.wpclever.net/woosb/support/",
+      "category": "Support",
+      "content": "In order to contact our support team on WPClever Support Forum, feel free to submit a new ticket on [https://wpc.ticksy.com/](https://wpc.ticksy.com/).\n\n- Please be as specific as possible (attach screenshots, links, etc.)\n- Fill in with your *PayPal transaction ID* and/or **email address used to purchase** our plugin.\n\nOur staff will respond to your ticket within *24-48 hours.* Support might not be available at the weekends.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-support.png)",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "Tax Rate",
+      "url": "https://doc.wpclever.net/woosb/tax-rate/",
+      "category": "Tax Rate",
+      "content": "## Tax Rate\n\nTax will be calculated based on your store settings at **WooCommerce >> Settings >> Tax**.\n\nIn this section, users can configure the *Tax classes, Shipping tax class, Additional tax classes, Tax in price display in shop, cart & checkout,* and *Tax total display*.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-tax.png)\n\nIn the *General* tab of the**Product Data** section of the bundle page, you can choose *a tax status* and *a tax class* for your bundle there:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-tax-class-e1594133285863.png)",
+      "headings": [
+        "Tax Rate"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Plugins + WPC Product Bundles",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "Take a look at how other powerful plugins can give your business a strong boost when combining with Product Bundles.\n\n## Best pals of WPC Product Bundles:\n\n#### WPC Variations Radio Buttons for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/09/woovr-banner.png)\n\n#### WPC Frequently Bought Together for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/09/woobt-banner.png)\n\n#### WPC Force Sells for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/09/woofs-banner.png)\n\n#### WPC Smart Quick View for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/09/woosq-banner.png)\n\n#### WPC Fly Cart for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woofc-banner.png)\n\n#### WPC Product Timer for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/07/woopt-banner.png)\n\n#### WPC Countdown Timer for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/wooct-banner.png)\n\n### Alternatives to WPC Product Bundles:\n\n#### WPC Composite Products for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/08/wooco-banner.jpg)\n\n#### WPC Grouped Products for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/09/woosg-banner.png)\n\n### Smart spending with plugins bundles.\n\n### Articles\n\n- [WPC Variations Radio Buttons for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-variations-radio-buttons-for-woocommerce/)\n- [WPC Frequently Bought Together for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-frequently-bought-together-for-woocommerce/)\n- [WPC Force Sells for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-force-sells-for-woocommerce/)\n- [WPC Smart Quick View for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-smart-quick-view-for-woocommerce/)\n- [WPC Smart Wishlist for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-smart-wishlist-for-woocommerce/)\n- [WPC Smart Compare for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-smart-compare-for-woocommerce/)\n- [WPC Fly Cart for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-fly-cart-for-woocommerce/)\n- [WPC Product Timer for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-product-timer-for-woocommerce/)\n- [WPC Countdown Timer for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-countdown-timer-for-woocommerce/)\n- [WPC Product Quantity for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-product-quantity-for-woocommerce/)\n- [WPC Variation Swatches for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-variation-swatches-for-woocommerce/)\n- [WPC Linked Variation for WooCommerce](https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-linked-variation-for-woocommerce/)",
+      "headings": [
+        "Best pals of WPC Product Bundles:",
+        "WPC Variations Radio Buttons for WooCommerce",
+        "WPC Frequently Bought Together for WooCommerce",
+        "WPC Force Sells for WooCommerce",
+        "WPC Smart Quick View for WooCommerce",
+        "WPC Fly Cart for WooCommerce",
+        "WPC Product Timer for WooCommerce",
+        "WPC Countdown Timer for WooCommerce",
+        "Alternatives to WPC Product Bundles:",
+        "WPC Composite Products for WooCommerce",
+        "WPC Grouped Products for WooCommerce",
+        "Smart spending with plugins bundles.",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Countdown Timer for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-countdown-timer-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Countdown Timer for WooCommerce\n\nEasy to add and set up a wonderful countdown clock for product bundles with intuitive settings and 3 different clock styles.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/wooct_772x250_2021.png)\n\n**Note:** This plugin is only for front-end timer display, it doesn’t assert any actual effects on your products at all. If you would like to achieve some actions like setting a product to unpurchasable/out of stock/ on sale/ featured…, please choose **WPC Product Timer** plugin.\n\nBasic steps to set up a Countdown Timer for any product:\n\n- *Step 1:* Go to the Countdown tab of the Product data section. In the Active option –  choose “Yes” to use the Countdown Timer. You can disable the Countdown Timer by choosing “No”, there’s no need to deactivate the plugin.\n- *Step 2:* Choose the starting and ending time. Click on the selector more than once to open the calendar widget and choose the date & time.\n- *Step 3:* Enter the Above/Under text.\n- *Step 4:*The End text is the text displayed when the countdown ends.\n- **Step 5:** Choose a style for the clock.\n\nThere are 3 styles:\n\n#### Style 01: Flat Countdown Timer\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-countdown-flat.gif)\n\n#### Style 02: Square Countdown Timer\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-countdown-square-1.gif)\n\n#### Style 03: Rounded Countdown Timer\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-countdown-rounded.gif)\n\n#### Back-end settings – Countdown Tab\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-countdown-timer-2.png)\n\n#### Front-end display\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-countdown-timer.png)",
+      "headings": [
+        "WPC Countdown Timer for WooCommerce",
+        "Style 01: Flat Countdown Timer",
+        "Style 02: Square Countdown Timer",
+        "Style 03: Rounded Countdown Timer",
+        "Back-end settings – Countdown Tab",
+        "Front-end display"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Fly Cart for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-fly-cart-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Fly Cart for WooCommerce\n\n**WPC Fly Cart**adds more stunning styling effects and functionalities to your shop. When adding bundles to the cart, buyers can easily change the quantity, apply coupons, add or remove products, proceed to checkout.\n\n- Compatible with both AJAX and normal Add to Cart buttons\n- Enable/disable the overlay effect\n- Various styles: solid colors, thumbnail image, or image background\n- Unlimited color choices & image upload for background\n- Customizable cart details: close button, total, subtotal, product data\n- Customizable cart heading text, action buttons & Continue Shopping button\n- Easily remove products or undo the removal of an item\n- Enable/disable automatically reload cart when opening pages\n- 16+ different types of bubble icons for choice\n- 05+ predefined cart skins for choice\n- Customizable cart’s position, bubble’s display & position\n- Select Menus to add Fly Cart at the end: Handheld, primary or secondary menu\n- RTL support\n- WPML integration for building multilingual sites\n- **Enable/disable coupon filling on Fly Cart**\n- **Enable/disable the Shipping Calculator on popup**\n- **Enable/disable the display of related, up-selling & cross-selling products**\n- **Enable/disable Instant Checkout right on the fly cart popup**\n- **Lifetime access to dedicated plugin updates & customization support**\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woofc_772x250_2021.png)\n\n#### How WPC Fly Cart works with WPC Product Bundles\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-fly-cart.gif)\n\n#### Fly Cart on bundles – Coupon & Cross-sell enabled\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-fly-cart-2.png)\n\n### How Shipping Calculator works on the Fly Cart\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/04/woofc-shipping-calculator-frontend.gif)\n\n### Instant Checkout on Fly Cart popup from version 5.0.0\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/06/Instant.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/06/Instant-Checkout.gif)",
+      "headings": [
+        "WPC Fly Cart for WooCommerce",
+        "How WPC Fly Cart works with WPC Product Bundles",
+        "Fly Cart on bundles – Coupon & Cross-sell enabled",
+        "How Shipping Calculator works on the Fly Cart",
+        "Instant Checkout on Fly Cart popup from version 5.0.0"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Force Sells for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-force-sells-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Force Sells for WooCommerce\n\nYou can add extra products to a smart bundle from the Force Sells tab to insert required choices with separate discounts or provide free/ give-away products.\n\n- Add products with a new price by % of original prices.\n- Use 0% for give-away items.\n- Fixed default quantities.\n- Add Force Sells items to cart as a combo or separate products.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woofs_772x250_2021.png)\n\n#### \n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/10/woofs-sample-5-frontend.png)",
+      "headings": [
+        "WPC Force Sells for WooCommerce"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Frequently Bought Together for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-frequently-bought-together-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Frequently Bought Together for WooCommerce\n\nYou can add extra products to a smart bundle from the Bought Together tab to allow optional choices with separate discounts or free/ give-away products.\n\n- Add products with a new price by % of original prices.\n- Use 0% for give-away items.\n- Fixed or customizable default quantities.\n- Set Min/Max quanttiy limits.\n- Sync the quantity of the bundle with Bought Together items.\n- Add Bought Together items to cart as a combo or separate products.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woobt_772x250_2021.png)\n\n#### Back-end settings\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-bought-together-backend.png)\n\n#### Front-end display\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-bought-together.png)Radio Button interface, Separate image layout on Bought Together products\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-bought-together-default.png)Default interface for Bought Together products",
+      "headings": [
+        "WPC Frequently Bought Together for WooCommerce",
+        "Back-end settings",
+        "Front-end display"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Linked Variation for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-linked-variation-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Linked Variation for WooCommerce\n\nAlthough products of special types such as [Smart Bundles](https://wordpress.org/plugins/woo-product-bundle/), [Smart Grouped Products,](https://wordpress.org/plugins/wpc-grouped-product/) and [Composite Products](https://wordpress.org/plugins/wpc-composite-products/) cannot be combined into a unified product, it’s possible to link them together and display them as **nominal** variations of a variable product. WPC Linked Variation is such a plugin for users to turn that into reality.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/Linked-Variation-Smart-3.gif)Users can turn Smart Bundles, Smart Grouped Products, and Composite Products into linked variations.\n\nThis plugin is totally free and can be founded/installed from the WordPress repository.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpclv.png)\n\n#### LIVE DEMO\n\n#### KEY FEATURES\n\n- Configure a position to display the linked variations on each single product page.\n- Swatches style for linked variations.\n- Use the shortcode to display the linked variations in any place on your site.\n- Preview individual products in a new tab, the same tab, or on a Quick View popup.\n- Translatable for multilingual sites\n- Integrated with the feature from the **WPC Smart Quick View**plugin\n- Compatible with most WooCommerce themes & plugins\n\n#### STEPS TO SET UP LINKED VARIATIONS\n\n**STEP 1:** Create the attributes by navigating to **Products >> Attributes**, configure a name, slug then click on the *Configure the terms* button to add terms.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpclv-attributes.png)\n\nIf the attributes you need have already been created, you still need to check carefully if the terms are fully configured or not. Add new terms or edit the current terms.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpclv-terms.png)\n\n> Since WPC Linked Variations will display swatches buttons for linked variations, it’s important that all terms under each attribute be fully configured. If you click to create new custom attributes, then configure the terms in the Attributes tab of the product page, this won’t work and those attributes won’t be displayed in the swatches.\n\n**STEP 2:** Go to the single product page, in the *Product Data* section, open the *Attributes* tab and check the drop-down list to make sure the attributes chosen are the ones configured in the **Attributes** section above.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpclv-attribute.png)\n\n**STEP 3:** Make sure you have properly added the chosen attributes to all products that are about to be linked.\n\n- The *selected attributes* for linked variation must be *common for all chosen products*.\n- The *terms used for variations must be distinctive* in order to distinguish between. linked variations in the preview step.\n\nFor example:\n\nThe chosen Attributes – Color must be chosen in the Attributes tab of both product A & product B. The terms chosen for each item must be different from each other: Color – Blue for product A & Color – Red for product B.\n\nOr both can have the same color but they need a second common attribute where they can be distinguished.\n\n**STEP 4:** Navigate to **WPClever >> Linked Variation >>**open the**Linked Variations** tab:\n\n> Categories and Tags sources are available from version 2.0.0. Make sure you have this or a later version.\n\n- Choose a type of source for products: Products or Categories or Tags.\n- Type in to search and add products.\n- Choose the selected attribute(s).\n- Enable/disable *Show images*.\n- Press **Update Options**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/Linked-Variation-2.0.0.gif)\n\n> NOTE: One product can be added to only one Linked Variation group. If a product is added multiple times, only the first linked variation will be recognized.\n\n**STEP 5:** Navigate to **WPClever >> Linked Variation >>**open the**Settings** tab:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpclv-settings-1.png)\n\n- Configure a position to display the list of linked variations.\n- Choose a preview style: in the same tab, new tab, or Quick View.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/Linked-Variation-Quick-VIew.gif)Open linked variation in a Quick View popup\n\nThen you’re good to go. Good luck and enjoy our plugin.\n                        \n#### KEY FEATURES\n\n- Configure a position to display the linked variations on each single product page.\n- Swatches style for linked variations.\n- Use the shortcode to display the linked variations in any place on your site.\n- Preview individual products in a new tab, the same tab, or on a Quick View popup.\n- Translatable for multilingual sites\n- Integrated with the feature from the **WPC Smart Quick View**plugin\n- Compatible with most WooCommerce themes & plugins\n\n#### STEPS TO SET UP LINKED VARIATIONS\n\n**STEP 1:** Create the attributes by navigating to **Products >> Attributes**, configure a name, slug then click on the *Configure the terms* button to add terms.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpclv-attributes.png)\n\nIf the attributes you need have already been created, you still need to check carefully if the terms are fully configured or not. Add new terms or edit the current terms.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpclv-terms.png)\n\n> Since WPC Linked Variations will display swatches buttons for linked variations, it’s important that all terms under each attribute be fully configured. If you click to create new custom attributes, then configure the terms in the Attributes tab of the product page, this won’t work and those attributes won’t be displayed in the swatches.\n\n**STEP 2:** Go to the single product page, in the *Product Data* section, open the *Attributes* tab and check the drop-down list to make sure the attributes chosen are the ones configured in the **Attributes** section above.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpclv-attribute.png)\n\n**STEP 3:** Make sure you have properly added the chosen attributes to all products that are about to be linked.\n\n- The *selected attributes* for linked variation must be *common for all chosen products*.\n- The *terms used for variations must be distinctive* in order to distinguish between. linked variations in the preview step.\n\nFor example:\n\nThe chosen Attributes – Color must be chosen in the Attributes tab of both product A & product B. The terms chosen for each item must be different from each other: Color – Blue for product A & Color – Red for product B.\n\nOr both can have the same color but they need a second common attribute where they can be distinguished.\n\n**STEP 4:** Navigate to **WPClever >> Linked Variation >>**open the**Linked Variations** tab:\n\n> Categories and Tags sources are available from version 2.0.0. Make sure you have this or a later version.\n\n- Choose a type of source for products: Products or Categories or Tags.\n- Type in to search and add products.\n- Choose the selected attribute(s).\n- Enable/disable *Show images*.\n- Press **Update Options**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/Linked-Variation-2.0.0.gif)\n\n> NOTE: One product can be added to only one Linked Variation group. If a product is added multiple times, only the first linked variation will be recognized.\n\n**STEP 5:** Navigate to **WPClever >> Linked Variation >>**open the**Settings** tab:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpclv-settings-1.png)\n\n- Configure a position to display the list of linked variations.\n- Choose a preview style: in the same tab, new tab, or Quick View.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/Linked-Variation-Quick-VIew.gif)Open linked variation in a Quick View popup\n\nThen you’re good to go. Good luck and enjoy our plugin.",
+      "headings": [
+        "WPC Linked Variation for WooCommerce",
+        "LIVE DEMO",
+        "KEY FEATURES",
+        "STEPS TO SET UP LINKED VARIATIONS"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Product Quantity for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-product-quantity-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "## WPC Product Quantity for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woopq_772x250_2021.png)\n\n#### Four levels of settings from the HIGHEST to the LOWEST:\n\n> Overwrite (Variation level – the Variations tab settings) >> Parent (Product level – the Quantity tab settings) >> Default (Plugin settings) >> Disabled (No settings from this plugin applied).\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/quantity-2.0.gif)\n\n### 1/ General settings\n\nYou can access the general plugin settings from the admin dashboard **WPClever >> Product Quantity.**\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-plugin-settings.png)\n\n#### 1.2/ Decimal use:\n\nOne of the most outstanding features of the **WPC Product Quantity** plugin is that it brings about the possibility to use decimal quantities for WooCommerce sites. The default WooCommerce settings won’t allow this, but it is now possible with **WPC Product Quantity**.\n\nFrom **WPClever >> Product Quantity >>** Decimal quantities, choose “Yes” **>> Update options**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-decimal-quantities.png)\n\nNow, you can easily *add fractional values* (Min/Max/Step/ Default value) for all products on your website as in the below image.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-decimal-1.gif)\n\nIf your site is using [WPC Fly Cart for WooCommerce](https://wpclever.net/downloads/woocommerce-fly-cart) plugin from our team, you can have a fancy quantity selector like this:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-decimal-2.gif)\n\n*These are general configurations for all products and can be overridden by the specific settings in the Quantity tab of individual products.*\n\nHere are the settings of the smart bundle we will use in the following examples for quantity selectors:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-smart-bundle-with-quantity.png)\n\nTo set up the quantity selector for this smart bundle, users can click on the *Quantity* tab >> choose “Overwrite”:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-tab-in-smart-bundle.png)\n\n#### 1.3/ Plus/minus buttons:\n\nIf you would like to add a pair of plus/minus buttons to the Input type, choose “Show” for this option in the plugin setting.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-plus-minus-buttons.png)\n\nIn the front-end, the quantity selector will be like this:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-plus-minus.png)\n\n### 2/ Quantity selectors\n\nBasically, the Min/Max/Step/Default value in the plugin settings are the same as in the *Quantity* tab of individual product pages.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-plugin.png)\n\n[WPC Product Quantity](https://wpclever.net/downloads/wpc-product-quantity) provides 3 types of quantity selectors:\n\n- Input (default selector)\n- Select\n- Radio\n\n> Note: Both the Select & Radio types must have a value range specified to take effect. Users must enter the lowest value in the Min box and the highest value in the Max box.\n\nThe first value to be displayed when the product page is loaded is the default value. You can enter any value *within the Min-Max value* range to suggest a recommended quantity to buyers. If not specified, the default value will be *the first one* in the value range.\n\nFor example,  Min  = 0, Max = 2, the default value can be any value within 0-2 range.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-setting-values.png)\n\n#### 2.1/ Input type (default):\n\nThis type of selector is set by default. When you choose this type of selector, it’s required to specify the *Min/Max values*and *a step value*for your customers to choose. If you don’t enter any value for the step, the general setting in **WPClever >> Product Quantity**will be adopted.\n\nBack-end setting:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-input-type.png)\n\nFront-end display:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-input.png)\n\n#### 2.2/ Select type:\n\nThe Select quantity selector requires a value range to be specified. Remember to add only 1 value in one line and press Enter to add a new one then go on and on. If you want to add a continued range, you can put it like “10-20” to add the choices from 10 to 20.\n\nIf not specified, the default value will be the first value in the range. Users must enter the *lowest value in the Min box* and the *highest value in the Max box*. The step box can be left blank since all choices have been predefined for this type.\n\nBack-end setting:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-select-type.png)\n\nFront-end display:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-select.png)\n\n#### 2.3/ Radio type:\n\nIf you love the [Radio Buttons interface](https://wpclever.net/downloads/wpc-variations-radio-buttons-for-woocommerce) from us for variable products, you might fall for this quantity selector type. Like Select type, the Radio quantity selector also requires *a value range to be specified*. Remember to add only 1 value in one line and press Enter to add a new one then go on and on. If you want to add a continued range, you can put it like “10-20” to add the choices from 10 to 20.\n\nIf not specified, the default value will be the first value in the range. Users must enter the *lowest value in the Min box* and the *highest value in the Max box*. The step box can be left blank since all choices have been predefined for this type.\n\nBack-end setting:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-radio-type.png)\n\nFront-end display:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-radio.png)\n\n### 3/ Quantity settings for individual products:\n\n> In order to set up quantities for individual products and override the general plugin settings, go to the Quantity tab\n> Step 1: Choose the “Overwrite” option\n> Step 2: Choose a selector type\n> Step 3: Follow the steps for each type above\n> Step 4: Press “Update” to save the changes.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/woosb-quantity-tab.png)\n\n4/ Quantity settings for variations in a variable product (Multiple steps are possible)\n\n**Step 1:** Open the *Variations* tab of Product Data.\n\n**Step 2:** Navigate down to find the **WPC Product Quantity** setting section.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/quantity.png)\n\n**Step 3:** Click on*Overwrite*.\n\n**Step 4:** Configure the quantity as instructed above. The setting will be applied to the being edited variation only.\n\n**Step 5:** If you would like to set up the decimal step or decimal values for variations, you should go to **WPClever >> Product Quantity >> Decimal quantities >** choose**Yes >> Update options**.\n\nYou can set up *different steps & quantity selectors* for different variations of the same variable product as below:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/12/quantity-2.gif)",
+      "headings": [
+        "WPC Product Quantity for WooCommerce",
+        "Four levels of settings from the HIGHEST to the LOWEST:",
+        "1/ General settings",
+        "1.2/ Decimal use:",
+        "1.3/ Plus/minus buttons:",
+        "2/ Quantity selectors",
+        "2.1/ Input type (default):",
+        "2.2/ Select type:",
+        "2.3/ Radio type:",
+        "3/ Quantity settings for individual products:"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Product Timer for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-product-timer-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Product Timer for WooCommerce\n\nBack-end timers that can configure various actions with complicated time conditionals:\n\n- Set In Stock/Out of Stock\n- Set Purchasable/Unpurchasable\n- Set Sale/Regular price\n- Set Featured/Unfeatured\n- Set Visible/Hidden\n- Date/time range – Before/After date & time, Everyday, Weekly Every, etc.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woopt_772x250_2021.png)\n\n#### Back-end settings\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-product-timer.png)",
+      "headings": [
+        "WPC Product Timer for WooCommerce",
+        "Back-end settings"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Smart Compare for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-smart-compare-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Smart Compare for WooCommerce\n\n[WPC Smart Compare for WooCommerce](https://wpclever.net/downloads/smart-compare) is apparently a salient tool for boosting the effects of sales strategies for online shops and stores. Upon building this plugin, we have put quite a tremendously large amount of time and effort into researching customer behaviors, popular search mechanisms, and functions.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/woosc_772x250_2021.png)\n\n#### SMART COMPARE FEATURES\n\n- **PREMIUM:**Customization of all attributes & custom attributes\n- **PREMIUM:**Customization of all custom fields\n- **PREMIUM:**Free support of compare button’s adjustment to customers’ theme design\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/woosb-compare.png)",
+      "headings": [
+        "WPC Smart Compare for WooCommerce",
+        "SMART COMPARE FEATURES"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Smart Quick View for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-smart-quick-view-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Smart Quick View for WooCommerce\n\nEquip your bundle with this plugin to allow a quick view popup to be displayed once customers click on the thumbnail image or product title of bundled products.\n\n- Display product’s details\n- Add to Cart button\n- Two types: link/ button\n- View Details button\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosq_772x250_2021.png)\n\n#### SMART FEATURES FOR A CUSTOMIZED QUICK VIEW POPUP\n\n- **PREMIUM:** Customizable Quick view content\n- **PREMIUM:** Choose the image source, add lightbox images\n- **PREMIUM:** Product summary fields: Title, Rating, Price, Excerpt, Add to Cart, Meta\n- **PREMIUM:** Add to Cart button can function as a single page or the archive page\n- **PREMIUM:** Customizable the visibility and text for the View Product Details button\n\n#### How Smart Quick View works for WPC Product Bundles\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-quick-view-on-bundles.gif)\n\n#### GET 30% OFF FOR A LICENSE OF 3 SMART PLUGINS: WPC SMART COMPARE, SMART QUICK VIEW & SMART WISHLIST – STARTING FROM JUST $59 WITH OUR PLUGIN BUNDLE.",
+      "headings": [
+        "WPC Smart Quick View for WooCommerce",
+        "SMART FEATURES FOR A CUSTOMIZED QUICK VIEW POPUP",
+        "How Smart Quick View works for WPC Product Bundles",
+        "GET 30% OFF FOR A LICENSE OF 3 SMART PLUGINS: WPC SMART COMPARE, SMART QUICK VIEW & SMART WISHLIST – STARTING FROM JUST $59 WITH OUR PLUGIN BUNDLE."
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Smart Wishlist for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-smart-wishlist-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "## WPC Smart Wishlist for WooCommerce\n\n[WPC Smart Wishlist](https://wpclever.net/downloads/smart-wishlist) is a powerful yet intuitive plugin for helping your customers manage their to-buy list and save favorite items for later purchase. This helps the purchase flow on your site become more fluent and convenient while saving quite a great amount of time on searching for products and adding them to the cart for buyers.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/woosw_750.png)\n\nClick [here](https://wpclever.net/downloads/smart-wishlist) to learn more about the functionalities of this plugin:\n\n- **PREMIUM:** Show notes on each product for all visitors to your site.\n- **PREMIUM:** Add the wishlist menu to various menus as you prefer.\n\n#### SMART FEATURES FOR MANAGING WISHLISTS\n\n> WISHLIST BY USER: See how many products and what users have added to their wishlist.\n\nFrom the admin dashboard, you can navigate to **Users >> All users >>** click on the *Wishlist* column to find out:. In order to see all containing wishlists, click the *See in wishlist* button to show all wishlists that contain the current product.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/woosb-wishlist-users.png)\n\n> WISHLIST BY PRODUCT: See how many times a product has been added to the wishlist and which user(s) have this product on their wishlist.\n\nFrom the admin dashboard, you can navigate to **Products  >>** click on the *Wishlist* column to find a list of all users that have added this item to their wishlist. Click on the number of products to find out which products a user has added to their wishlist specifically.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/woosb-wishlist-products.png)\n\n#### GET 30% OFF FOR A LICENSE OF 3 SMART PLUGINS: WPC SMART COMPARE, SMART QUICK VIEW & SMART WISHLIST – STARTING FROM JUST $59 WITH OUR PLUGIN BUNDLE.",
+      "headings": [
+        "WPC Smart Wishlist for WooCommerce",
+        "SMART FEATURES FOR MANAGING WISHLISTS",
+        "GET 30% OFF FOR A LICENSE OF 3 SMART PLUGINS: WPC SMART COMPARE, SMART QUICK VIEW & SMART WISHLIST – STARTING FROM JUST $59 WITH OUR PLUGIN BUNDLE."
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Variation Swatches for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-variation-swatches-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Variation Swatches for WooCommerce\n\n[WPC Variation Swatches for WooCommerce](https://wordpress.org/plugins/wpc-variation-swatches/) will definitely kill the game for online shops and WooCommerce sites with an elegant, responsive look and impressive effects. There’s no better way to showcase your products in the best look and assist customers in choosing their preferred options. WPC Variation Swatches offers a variety of predefined styles for attributes of variable products, with the ability to use different selector types on a single product page and position tooltips at the best position for a great match with your theme/template.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpcvs-banner-new.png)\n\n#### UP TO 5 DIFFERENT SWATCHES STYLES FOR ATTRIBUTES OF VARIABLE PRODUCTS\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/woosb-wpcstore-variation-swatches-variable-product.gif)\n\nYou can visit our [LIVE DEMO](https://demo.wpclever.net/wpcvs/product/variable-product/) for a straightforward experience on our plugin.\n\n#### HOW VARIATION SWATCHES WORK ON SMART BUNDLES\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/woosb-wpcstore-swatches-on-bundles.gif)\n\n#### HOW TO USE THE WPC VARIATION SWATCHES PLUGIN\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpcvs-steps.png)\n\n#### Step 1: Create a new custom attribute or edit the attributes on your site:\n\nOpen the**Plugins** section, find the [WPC Variations Swatches](https://wordpress.org/plugins/wpc-variation-swatches/) plugin or download it from [this page](https://wordpress.org/plugins/wpc-variation-swatches/) for FREE. Navigate to **Products >> Attributes >>** add a new attribute, configure a name & slug for the new attribute.\n\n#### Step 2: Choose a swatches type. Notice the type of the current attribute.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/variations-swatches-2.gif)\n\n> There are 5 different swatches types when you click on the Type options:\n\n- > Select (default for all custom attributes)\n- > Radio\n- > Image\n- > Button\n- > Color\n\n#### Step 3: Check the swatches type of existing attributes.\n\nClick on Edit to choose a type for each attribute. Skip this if you have configured the type for each attribute when you created them as in Step 2.\n\n#### Step 4: Review the types:\n\nYou can also create new attributes from the *Attributes* tab of the **Product Data** section on each Variable product page.\n\nExcept for the **default attributes** created by WooCommerce (color & size) and **all fully-configured attributes**, if you choose to create new custom attributes when configuring variations for variable products as in the following image, the default swatches type will be the *Select (drop-down type)*.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpcvs-custom-att.png)\n\nIf you would like to set the *Button*type as default for all new custom attributes on your site, go to **WPClever >> Variation Swatches**, then choose “Yes” for this:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpcvs-settings.png)\n\n#### Step 5: Configure the thumbnails for the terms\n\nThere are cases when the color variations on your site are not properly displayed, only an empty button in the front-end. That is because you haven’t configured the values for each variation (terms).\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpcvs-terms.png)\n\nYou can click on the **Configure the terms** button, then choose to **Edit** each term and set the values for them.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/wpcvs-terms-1.png)\n\n### CHECK OUT THE VIDEO TUTORIAL ON OUR WPCLEVER YOUTUBE CHANNEL",
+      "headings": [
+        "WPC Variation Swatches for WooCommerce",
+        "UP TO 5 DIFFERENT SWATCHES STYLES FOR ATTRIBUTES OF VARIABLE PRODUCTS",
+        "HOW VARIATION SWATCHES WORK ON SMART BUNDLES",
+        "HOW TO USE THE WPC VARIATION SWATCHES PLUGIN",
+        "Step 1: Create a new custom attribute or edit the attributes on your site:",
+        "Step 2: Choose a swatches type. Notice the type of the current attribute.",
+        "Step 3: Check the swatches type of existing attributes.",
+        "Step 4: Review the types:",
+        "Step 5: Configure the thumbnails for the terms",
+        "CHECK OUT THE VIDEO TUTORIAL ON OUR WPCLEVER YOUTUBE CHANNEL"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Variations Radio Buttons for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-plugins-wpc-product-bundles/wpc-variations-radio-buttons-for-woocommerce/",
+      "category": "Wpc Plugins Wpc Product Bundles",
+      "content": "### WPC Variations Radio Buttons for WooCommerce\n\n> Enable throughout the store or for WPC plugins only.\n\n- Add beautiful selector interfaces: Radio Buttons (default), ddSlick, Select2, & HTML tags.\n- Show or Hide stock, image, price, description for variations.\n- Show or Hide out-of-stock variations.\n- Format variations with attributes.\n- Choose a different interface for each product.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woovr_772x250_2021.png)\n\n[LIVE DEMO](https://demo.wpclever.net/woovr/)\n\nIn order to use it, please choose “Use WPC Variations Radio Buttons” for the “Variations selector” option in Product Bundles settings.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-variation-radio-button.png)\n\n#### Sample bundle with ddSlick interface from WPC Variations Radio Buttons:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpsctore-ddslick-1.png)ddSlick interface from WPC Variations Radio Buttons\n\n#### \n\n#### Settings for WPC Variations Radio Buttons in variable products:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-radio-buttons.png)The chosen interface in the Radio Buttons tab of each variable product will be displayed in the smart bundle when that product is added as a bundled item. Different variable products with different chosen interfaces will be displayed differently in a bundle as in the below image:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpcstore-radio-buttons-1.png)\n\n#### SEE DIFFERENT INTERFACES IN THE FRONTEND",
+      "headings": [
+        "WPC Variations Radio Buttons for WooCommerce",
+        "Sample bundle with ddSlick interface from WPC Variations Radio Buttons:",
+        "Settings for WPC Variations Radio Buttons in variable products:",
+        "SEE DIFFERENT INTERFACES IN THE FRONTEND"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Product Bundles Alternatives",
+      "url": "https://doc.wpclever.net/woosb/wpc-product-bundles-alternatives/",
+      "category": "Wpc Product Bundles Alternatives",
+      "content": "### 1. WPC Composite Products for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-composite-01.png) ![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-composite-02.png) ![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-composite-03.png)\n\n### 2. WPC Grouped Products for WooCommerce\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpc-plugins-smart-grouped-product.png)\n\n### Articles\n\n- [WPC Composite Products for WooCommerce](https://doc.wpclever.net/woosb/wpc-product-bundles-alternatives/wpc-composite-products-for-woocommerce/)\n- [WPC Grouped Products for WooCommerce](https://doc.wpclever.net/woosb/wpc-product-bundles-alternatives/wpc-grouped-products-for-woocommerce/)",
+      "headings": [
+        "1. WPC Composite Products for WooCommerce",
+        "2. WPC Grouped Products for WooCommerce",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Composite Products for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-product-bundles-alternatives/wpc-composite-products-for-woocommerce/",
+      "category": "Wpc Product Bundles Alternatives",
+      "content": "*WPC Composite Products for WooCommerce*is a kit-building plugin, which allows users to add multiple products to a component using Products, Categories, or Product Tags sources. WPC Composite Products gives you a chance to set a separate new price, discount, min/max, short description, and a new name for each component to describe what’s included.\n\n- Has many selector interfaces integrated: ddSlick, Select2, HTML tags\n- Multiple products in a component\n- Pricing methods: only base price, include/exclude the base price\n- Convenient source: Products, Categories & Tags\n- Required & Optional component products\n- New price for each component, flexible discounting & pricing\n- Minx/Max for each or all components\n- Short description, rename components, etc.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/wooco_772x250_2021.png)\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/08/wooco-composite-02-frontend.png)Variations as components – Attribute Color\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/08/wooco-composite-product-03-frontend.png)Composite products with WPC Product Quantity\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/08/wooco-faq-03.png)3 sources for components\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/08/wooco-composite-01-frontend.png)",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "WPC Grouped Products for WooCommerce",
+      "url": "https://doc.wpclever.net/woosb/wpc-product-bundles-alternatives/wpc-grouped-products-for-woocommerce/",
+      "category": "Wpc Product Bundles Alternatives",
+      "content": "### WPC Grouped Products for WooCommerce\n\n**WPC Grouped Products** plugin allows users to group items to be purchased together but still remained as individual products. This plugin provides the most freedom to customers: **no quantity control (min/max not applicable)** & **no manual pricing/ discounting method**. The total of a grouped product is calculated based on the sum of chosen grouped items’ prices.\n\n- The default quantity is possible, but no min/max limit is applied.\n- The default pricing method is the auto-calculated price.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg_772x250_2021.png)\n\nWith WPC Grouped Products, **simple, variable, or selected variations of some variable products**can be grouped for customers’ convenience in purchasing a large number of items in a collection. Customers can adjust to any quantity or remove any item based on their preferences.\n\n- > No manual fixed pricing, discount, or quantity (min/max) control.\n- > The main product has a $0 price can be shown or hidden.\n- > Grouped items stay as individual products: removed one of the grouped items or the main product from the cart won’t affect others.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-cart.gif)\n\n## \n\n## Steps to create a Smart Grouped Product\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-default.png)\n\n**Step 1:** From the Product Data section, open the *Grouped Products* tab. Type in some words to find existing products from your store and click (+) to add to the group:\n\nNotice the marks at the end of the product title:\n\n- simple #…: simple product\n- variable #…: variable product\n- variation #…: a specific variation of the variable product above it.\n\n**Step 2:** Set a default quantity for each grouped item (if any). These quantities are not fixed or min/max. It’s just a suggesting quantity for customers.\n\n**Step 3:**Configure the *Above/Under text* if any to encourage buyers.\n\n**Step 4:** Open the General tab, fill in a price for the Add to Cart button to be enabled in the front-end.\n\n> The price you’ve put in the General tab is a nominal price, it’s not the price to be calculated when it comes to calculating the total. By default, WooCommerce requires every product to have a price in that box for the Add to Cart button to be displayed.\n\n**Step 5:******If you would like to add a $0 main product, you can go to **WPClever >> Grouped Product >>**find the “Include main product” option then choose “Yes”. If you would like to hide this one by choosing “No” for this option **>> Update Options**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-main-product.png)\n\n**Step 6:** If you want to hide the general quantity box next to the Add to Cart button, please go to the *Inventory* tab to enable the “Sold Individually” option for your product. When this option is enabled, each customer can buy only 1 such deal per order per customer. Skip this step if you do not wish to do that.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-sold-individually.png)\n\n**Step 7:** Press **Publish**. Your Grouped product is now ready for sale.\n\n## \n\n## Plugin Settings\n\n#### 1/ General settings:\n\n*Price format:* This is how the price of Grouped products appears in the shop archive (not for grouped product page).\n\n- Normal price: Only the prices are displayed, for example: $45.\n- From price: Prices of Grouped product in shop archive will have this format: From $45.\n- None: No price is displayed.\n\nYou can hide the price of Smart Grouped in the shop archive by choosing “None” for this option.\n\n#### \n\n#### 2/ Grouped product page details:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-setting-1.png)\n\n**Position:**Configure a place for showing the list of grouped items on the product page.\n\n**Variation selector:**Use the default drop-down interface or use [WPC Variations Radio Buttons](https://wpclever.net/downloads/variations-radio-buttons) plugin to set up the ddSlick, HTML select tag, Select2, or Radio Buttons interface.\n\n**Show thumbnail:** choose “Yes” to show the thumbnail of grouped items. Choose “No” to hide them.\n\n**Show short description:** choose “Yes” to show the short description of grouped items. Choose “No” to hide them.\n\n**Show price:** choose “Yes” to show the prices of grouped items. Choose “No” to hide them.\n\n**Show plus/minus buttons:** choose “Yes” to show a pair of + – buttons for the quantity selector of each grouped item. Choose “No” to hide them.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-setting-2.png)\n\n**Link to individual products:**\n\n- If you choose “Yes, open in the new/same tab”, customers can click on each grouped item’s product title to visit the individual product page in the same or new tab.\n- If you choose “Yes, open in the quick view popup”, you must first install the [WPC Smart Quick View](https://wpclever.net/downloads/smart-quick-view) plugin.\n- If you choose “No”, customers won’t be able to see the grouped item’s product page.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-woosq.gif)\n\n**Note:** If you would like to completely unlink individual products from Smart Grouped product, you need to choose “No”, then on the individual product page, adjust the *Catalog Visibility* to “Hidden from search and shop archive”. Don’t adjust the Visibility to Private, your customers won’t be able to see that product on the Grouped product page.\n\n**Change image:** If “Yes” is chosen, when customers choose a variation of a variable grouped product, its thumbnail will replace the main product’s image. Choose “No” to disable this.\n\n**Change price:****** Choose “Yes” to make the price changes as customers choose a quantity. If your site uses a special structure, you can choose “Yes, custom selector”.\n\n**Total text:** Enter a new text for the total based on your preference here.\n\n#### 3/ Add to Cart button labels:\n\nYou can change the wording for labels and other alert texts in the *Localization* tab under **WPClever >> Grouped Product**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-localization.png)\n\n#### 4/ Search settings:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-search.png)\n\n**Search limit:** choose a limit for search results. You can increase/decrease the limit.\n\n**Search by SKU:** choose “Yes” to enable.\n\n**Search by ID:** choose “Yes” to enable.\n\n**Search exact:** choose “Yes” to enable.\n\n**Search sentence:** choose “Yes” to enable.\n\n**Accept same product:** choose “Yes” to allow the same product to be added multiple times.\n\n**Product types:** choose product types that should appear in the Search box.\n\n### Product Selector vs Variation Selector\n\n### PRODUCT SELECTOR\n\nUsers can choose a type of product selector from the plugin settings under **WPClever >> Grouped Product >> Product selector**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-product-selector.png)\n\nThere are 2 supported types of product selectors for Smart Grouped Products:\n\n- *Quantity*: display the quantity box for each grouped item.\n- *Checkboxes*: display the checkboxes, the quantity selector will be hidden and the default quantity of each item will be set to 1.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-default-selector.png)Default product selector\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-checkbox.png)Checkbox product selector\n\nThe chosen product selector will be applied across all Smart Grouped Products in your store. You can also set distinctive product selector for individual Smart Grouped Products in their single product pages: Open the *Grouped products* tab >> Product Selector then choose a type:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-selector.png)\n\n### VARIATION SELECTOR\n\nAs its name implies, the Variation Selector option is for choosing a selector for variable products within Smart Grouped Products, not for grouped items (*it’s different from the Product Selector above*).\n\nThere are 2 types of variation selectors you can apply to variable grouped products:\n\n- *Default*: The default variation selector offers a drop-down for each attribute of the variable products.\n- [WPC Variations Radio Buttons](https://wpclever.net/downloads/variations-radio-buttons): offer 4 types of interfaces – Radio Buttons, ddSlick, Select2, and HTML Select Tag.\n\nIn order to set up a variation selector for Smart Grouped Products, please navigate to **WPClever >> Grouped Products >>** find the Variation selector option and choose a type. If you would like to use the interfaces from the WPC Variations Radio Buttons plugin, you must first **INSTALL** it then choose the mentioned option.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-radio-button.png)\n\nBy default, the chosen interface under **WPClever >> Variations Radio Buttons >> Variation Selector** will be applied to all variable products on your site. However, if you’re using the [Premium version](https://wpclever.net/downloads/variations-radio-buttons) of this plugin, you can choose a different style for individual products from the *Radio Buttons* tab of the **Product Data** section on the individual product page.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-radio-buttons.png)\n\nDifferent variable products in the same Smart Grouped Products can have different interfaces. Here’s how Radio Buttons will look on Smart Grouped Products:\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosg-radio.png)\n\nFor further instructions on how to use the [WPC Variations Radio Buttons](https://wpclever.net/downloads/variations-radio-buttons), you can read [here](https://doc.wpclever.net/wp-admin/post.php?action=edit&post=255).",
+      "headings": [
+        "WPC Grouped Products for WooCommerce",
+        "Steps to create a Smart Grouped Product",
+        "Plugin Settings",
+        "1/ General settings:",
+        "2/ Grouped product page details:",
+        "3/ Add to Cart button labels:",
+        "4/ Search settings:",
+        "Product Selector vs Variation Selector",
+        "PRODUCT SELECTOR",
+        "VARIATION SELECTOR"
+      ],
+      "code_blocks": []
+    }
+  ]
+}

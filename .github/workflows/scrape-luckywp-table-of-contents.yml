@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Luckywp Table Of Contents scraper
-        run: node scraper.js --slug=luckywp-table-of-contents --mode=html-scrape --url=https://theluckywp.com/product/table-of-contents/ --name="LuckyWP Table of Contents"
+        run: node scraper.js --slug=luckywp-table-of-contents --mode=html-scrape --url=https://wordpress.org/plugins/luckywp-table-of-contents/ --name="LuckyWP Table of Contents"
 
       - name: Check for changes
         id: changes

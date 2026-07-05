@@ -1,0 +1,23 @@
+{
+  "plugin_slug": "luckywp-table-of-contents",
+  "plugin_name": "LuckyWP Table of Contents",
+  "documentation_url": "https://wordpress.org/plugins/luckywp-table-of-contents/",
+  "last_scraped": "2026-07-05T16:27:39.091Z",
+  "total_pages": 1,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Advanced",
+      "slug": "advanced",
+      "url": "https://wordpress.org/plugins/luckywp-table-of-contents/advanced/",
+      "file": "categories/advanced.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "LuckyWP Table of Contents",
+          "url": "https://wordpress.org/plugins/luckywp-table-of-contents/advanced/"
+        }
+      ]
+    }
+  ]
+}

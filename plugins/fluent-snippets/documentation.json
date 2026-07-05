@@ -1,0 +1,43 @@
+{
+  "plugin_slug": "fluent-snippets",
+  "plugin_name": "Fluent Snippets",
+  "last_scraped": "2026-07-05T16:22:10.981Z",
+  "total_pages": 2,
+  "failed_urls": [],
+  "pages": [
+    {
+      "title": "Create Your First Snippet",
+      "url": "https://fluentsnippets.com/docs/create-snippet/",
+      "category": "Create Snippet",
+      "content": "Ready to add your first code snippet with FluentSnippets? Follow this guide to get started.\n\n## Adding a new snippet\n\nGet started by logging in to your WordPress admin. In that area look for “FluentSnippets” in the admin left sidebar menu and navigate to it and you can see all your snippets.\n\n![FluentSnippets Menu](https://fluentsnippets.com/wp-content/uploads/2023/12/all-snippets-screen.png)\n\nClick on the “New Snippet” button to create a new snippet.\n\n![FluentSnippets New Snippet](https://fluentsnippets.com/wp-content/uploads/2023/12/snippet-explained.png)\n\nYou will see a screen like the above screenshot. Now you can add your snippet code in the “Snippet Code” field. You can also add a title and description for your snippet. Don’t forget to click on the “**Save Snippet**” button and then **activate** to save and run your snippet.\n\n## Snippet Types\n\nFluentSnippets has four types of snippets. You can choose the snippet type from the snippet type selection.\n\n**Functions – PHP Snippet**\n\nThis snippet is for all your PHP code where you need to execute in specific area like you would write in your theme’s functions.php file.\n\nYou can use this snippet type to create functions / class, hook into other actions and filters, and more.\n\n**Content – PHP + HTML Snippet Type**\n\nThis snippet type is used to insert content to different places like header, footer, after post content, before post content, etc. You can write php / html / js / css code in this snippet type.\n\nYou can also use this snippet type to create shortcodes.\n\n*Use Cases:*\n\n- Add Analytics code to the header/footer\n- Add banner before/after post content\n- Add content just after body tag\n- Creating dynamic shortcodes\n\n**CSS Snippet Type**\n\nYou can use this snippet type to add custom CSS to your site.\n\n**JS Snippet Type**\n\nYou can use this snippet type to add custom JS to your site.\n\n## Snippet Location – Where to run\n\nYou can choose where you want to run your snippet. Depending on the snippet type you will see different options.\n\n**Snippet Locations**\n\n| Location Name | Description | Available In |\n| --- | --- | --- |\n| Run Everywhere | The snippet will run everywhere both backend and fronent | Functions (php) |\n| Admin Only | The Snippet will only run on /wp-admin area | Functions (php), CSS, JS |\n| Frontend Only | The Snippet will run on frontend | Functions (php), JS, CSS |\n| Site Wide Header | It will include the snippet in the head tag of your site | content (PHP + HTML), JS |\n| Site Wide Footer | It will include the snippet in the footer of your site | content (PHP + HTML), JS |\n| Site Wide Body Open | It will include the snippet just after body tag opening | content (PHP + HTML) |\n| Before Content | Snippet will be included just before the single post/page/cpt’s post content | content (PHP + HTML) |\n| After Content | Snippet will be included after the single post/page/cpt’s post content | content (PHP + HTML) |\n| Shortcode | Create dynamic shortcode from your snippet and print anywhere you want | content (PHP + HTML) |\n| Both Backend & Frontend | Available in CSS type snippets to add custom css styles | Styles (CSS) |\n\n## Advanced Conditional Logic\n\nThe Advanced Conditional Logic allows you to create powerful rules to run the snippet based on a set of rules.\n\nYou can create groups of conditions that will all have to be true for the snippet to run. “OR” rules to add multiple groups of such combination of conditional rules.\n\n![FluentSnippets Advanced Conditional Logic](https://fluentsnippets.com/wp-content/uploads/2023/12/conditiona-group-fluent-snippets.png)\n\nThe above screenshot shows an example of a conditional group that will run the snippet if the post type is post,page OR the page type is the homepage.\n\n## Snippet Grouping – Virtual Folder\n\nYou can group your snippets by creating a snippet group. You can create a snippet group from the snippet group section. The same grouped snippets will be shown together in the snippet list page. This works as a virtual folder for your snippets.\n\n## Snippet Tags\n\nYou can add multiple tags to your snippet for easily filter and find your snippets from all snippets page.",
+      "headings": [
+        "Adding a new snippet",
+        "Snippet Types",
+        "Snippet Location – Where to run",
+        "Advanced Conditional Logic",
+        "Snippet Grouping – Virtual Folder",
+        "Snippet Tags"
+      ],
+      "code_blocks": []
+    },
+    {
+      "title": "Getting Started with FluentSnippets",
+      "url": "https://fluentsnippets.com/docs/getting-started/",
+      "category": "Getting Started",
+      "content": "## Installation\n\nTo install FluentSnippets on your WordPress website, login to your WordPress Website, go to Plugins -> Add New and then Search for “FluentSnippets”\n\nOnce you find the plugin, Click Install and then Activate.\n\n## Configure FluentSnippets\n\nThere has few different section which you can configure in under a minute.\n\n### General Settings\n\n![General Settings](https://fluentsnippets.com/wp-content/uploads/2023/12/fluent-snippets-general-settings.png)\n\n- **Auto Activate:** You may enable this if you want to activate new snippets automatically. If you disable this then you have to manually activate new snippets after creation.\n- **Auto Disable:** FluentSnippets handle snippet errors automatically. So once a snippet has an error, it will be disabled automatically. If you want to alter this behavior then you can disable this feature.\n\n### Safe Mode Settings\n\n![FluentSnippets Safe Mode](https://fluentsnippets.com/wp-content/uploads/2023/12/fluent-snippets-safe-mode.png)\n\nFluentSnippets may automatically disable a snippet on fatal error based your General Settings. There are still situations when you might get locked out by running a snippet that doesn’t throw a fatal error on runtime.\n\nThese scenarios are very rare but in case you run into that or you may just want to temporarily disable all the snippets on your site you can use the safe mode.\n\nThere has two-way, you can disable all the custom snippets on your site.\n\n**By Safe Mode URL:**\n\nYou can disable all the custom snippets on your site by visiting the Safe Mode URL. The Safe Mode URL is something like this: \n```\nhttps://your-site.com/index.php?fluent_snippets=1&snippet_secret=RANDOM__SECURE_STRING\n```\n\nThe URL will be different for each site and you can find the URL in the Safe Mode Settings section.\n\n**By Safe Mode Constant:**\n\nYou can also disable all the custom snippets on your site by defining a constant in your wp-config.php file. The constant is \n```\nFLUENT_SNIPPETS_SAFE_MODE\n```\n\n and you have to set the value to \n```\ntrue\n```\n\n to enable the safe mode.\n\n```\ndefine( 'FLUENT_SNIPPETS_SAFE_MODE', true );\n```\n\n#### Standalone Mode\n\n![FluentSnippets Standalone Mode](https://fluentsnippets.com/wp-content/uploads/2023/12/fluent-snippets-standalone-mode.png)\n\nFluentSnippets does not force you to keep installing this plugin all the time. You can disable or uninstall this plugin and still keep running your snippets as a stand-alone mode.\n\nWhen using standalone mode your scripts will be executed from mu-plugins file.",
+      "headings": [
+        "Installation",
+        "Configure FluentSnippets",
+        "General Settings",
+        "Safe Mode Settings",
+        "Standalone Mode"
+      ],
+      "code_blocks": [
+        "https://your-site.com/index.php?fluent_snippets=1&snippet_secret=RANDOM__SECURE_STRING",
+        "FLUENT_SNIPPETS_SAFE_MODE",
+        "define( 'FLUENT_SNIPPETS_SAFE_MODE', true );",
+        "define( 'FLUENT_SNIPPETS_SAFE_MODE', true );"
+      ]
+    }
+  ]
+}

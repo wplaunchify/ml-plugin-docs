@@ -1,0 +1,36 @@
+{
+  "plugin_slug": "fluent-snippet-version-control",
+  "plugin_name": "Fluent Snippet Version Control",
+  "documentation_url": "https://fluentsnippets.com/docs/",
+  "last_scraped": "2026-07-05T16:21:49.310Z",
+  "total_pages": 2,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Create Snippet",
+      "slug": "create-snippet",
+      "url": "https://fluentsnippets.com/docs/create-snippet/",
+      "file": "categories/create-snippet.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Create Your First Snippet",
+          "url": "https://fluentsnippets.com/docs/create-snippet/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://fluentsnippets.com/docs/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with FluentSnippets",
+          "url": "https://fluentsnippets.com/docs/getting-started/"
+        }
+      ]
+    }
+  ]
+}

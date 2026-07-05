@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Prime Mover scraper
-        run: node scraper.js --slug=prime-mover --mode=html-scrape --url=https://codexonics.com/prime-mover/prime-mover-documentation/ --name="Prime Mover"
+        run: node scraper.js --slug=prime-mover --mode=sitemap --url=https://codexonics.com/prime_mover/ --name="Prime Mover"
 
       - name: Check for changes
         id: changes

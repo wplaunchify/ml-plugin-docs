@@ -1,0 +1,9116 @@
+# Prime Mover
+
+*Category from Prime Mover documentation*
+
+---
+
+## Prime Mover – WordPress Single-Site / Multisite Migration Plugin
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/](https://codexonics.com/prime_mover/prime-mover/)
+
+# Prime Mover
+
+**Prime Mover**® is a complete WordPress migration solution for moving a single-site to a multisite platform and vice versa.
+
+Administrators or Network administrators can use this to migrate WordPress to the following supported modes :
+
+- Migrate a single-site installation to another server, and vice versa.
+- Migrate a single-site to a multisite subsite installation and vice versa.
+- Migrate multisite subsite to single-site.
+- Migrate a multisite subsite to another multisite subsite. (even with different blog IDs).
+- Back up a single site or multisite sub-site so it can be restored at any time.
+
+This can also be used to migrate a single-site installation to another single-site installation or a multisite subsite to another multisite subsite installation.
+
+[Buy and Download](https://codexonics.com/prime_mover/prime-mover/pricing/)
+# News and Updates
+
+> Prime Mover 2.1.6 – Better Parallel Export and Import support
+# Official Documentation
+
+[GENERAL DOCUMENTATION](https://codexonics.com/prime_mover/prime-mover/general-documentation/)[PRO VERSION DOCUMENTATION](https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/)[TROUBLESHOOTING GUIDE](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/)[FREQUENTLY ASKED QUESTIONS](https://codexonics.com/prime_mover/prime-mover/faq/)
+# Find documentation
+
+Search
+
+---
+
+## A Complete Guide on using Prime Mover Licenses
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/a-complete-guide-on-using-prime-mover-licenses/](https://codexonics.com/prime_mover/prime-mover/a-complete-guide-on-using-prime-mover-licenses/)
+
+### Introduction
+
+You must know exactly how many licenses you need when you plan to purchase Prime Mover or subscribe to a free trial to test it first.
+
+This quick guide will show you how.
+
+### Read first: Always buy directly from developers.
+
+Please refer to this guide for [legal instructions on purchasing PRO licenses](https://codexonics.com/prime_mover/prime-mover/general-documentation/how-to-legally-purchase-the-pro-version/) from us.
+
+### It’s the number of sites that matters
+
+Prime Mover license keys come in two flavors:
+
+- Single-site license (*one site only*)
+- Multisite site license ( *starts at 10-site licenses and unlimited site licenses*)
+
+A single-site license will only work on one site. However, since Prime Mover version 1.2.9, this license type has supported single-site and WordPress multisite.
+
+**If you use a single-site license in a multisite,  you can activate a license in only one site you choose. And that PRO features can only be activated for this site.**
+
+Multisite licenses allow you to use the license on multiple sites. Currently, Prime Mover supports 10-site and unlimited-site licenses.
+
+### Do localhost / dev.* / *.dev or any development domains also require a license?
+
+PRO license is not required for the local host or [any qualified development domains](https://freemius.com/help/documentation/selling-with-freemius/license-utilization/). If you have a single-site license activated on your remote host, you can use the same license on localhost without purchasing another license! Please read this specification (from Freemius Inc.) for details on how this is implemented, or whether it covers your dev domain.
+
+### How to use multisite licenses?
+
+If you have 10-site licenses, you can activate this license on 10 different WordPress single-site installations, or on one multisite with the license activated on the main site and 9 subsites.
+
+Or, if you have two different multisite installations with these license key activation plans:
+
+First multisite: Main site + 4 subsites. (5 sites activated on first multisite)
+
+Second multisite: Main site + four subsites. (5 sites activated on the second multisite)
+
+So, ten sites (5 sites + 5 sites) were activated for two multisites.
+
+If you purchase unlimited site licenses, you can activate them on any single site or multisite—there are no restrictions.
+
+This is the most flexible and worry-free license plan. If you have the budget, we would recommend getting the unlimited license.
+
+It’s also the most cost-effective because you can use it on any number of sites, and it obviously has the lowest per-site cost. (in terms of licenses).
+
+### What sites should I activate if I have a WordPress Multisite network?
+
+It depends on your usage. If you want to migrate or back up the main site, you should activate the license on that site.
+
+It could be any of your subsites. PRO features are available only on subsites with an *active PRO license*.
+
+Please [check out this tutorial](https://codexonics.com/prime_mover/prime-mover/how-to-activate-prime-mover-pro-licenses-in-some-of-your-wordpress-multisite/) for details on activating licenses on any multisite site (e.g., whether subsites or the main site).
+
+### How do you deactivate a license and reuse it elsewhere?
+
+Yes, this is possible. If you have a valid license, log in to your WordPress site, go to Prime Mover > Account, and deactivate the license. This will deactivate the license for that site only. Your subscription and account will still be active. Please [check out this guide for details on deactivating licenses](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/)so you can reuse them on other sites.
+
+Then, **download a Prime Mover Pro copy**and activate it on another single-site installation to which you wish to migrate the license. Then, activate the license key on that site. It will work since you already deactivated the license on the first site.
+
+**If you are on a Free Trial, you might not see the deactivated license in** the WordPress admin (Prime Mover > Account). Log in to your Freemius account (using the login credentials sent via email when you subscribed to the Free trial), then deactivate the license there.
+
+The same thing will work with multisite. You can deactivate licenses on some subsites and reuse them for different multisite or single-site installations.
+
+### I’m having licensing activation issues. Is there a way to reset and re-activate the license in a clean state?
+
+Yes, of course! Please [read this detailed guide](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/).
+
+### An important note on using the Remote URL restore feature
+
+One of the key features of the Pro version is remote URL restoration. This saves a lot of time since you can migrate directly from one site to another without downloading it to your Desktop (as in the Free version). See this YouTube video for details on this feature: [https://www.youtube.com/watch?v=zHU2_rusZ_A](https://www.youtube.com/watch?v=zHU2_rusZ_A)
+
+**If you want to implement a remote URL restore feature** with a single site license:
+
+- Activate the license in the source site.
+- Generate an export at the source site.
+- Deactivate the license at the source site.
+- Transfer the license to your target site.
+- Copy the restored URL from the source site to the target site.
+
+Note: If you encounter unauthorized restore errors, please [check out this tutorial](https://codexonics.com/prime_mover/prime-mover/troubleshooting-unauthorized-download-error-when-using-remote-url-pro-feature/).
+
+*Last updated: February 10, 2026*
+
+Was this article helpful?YesNo
+
+---
+
+## Automatic Backup – Frequently Asked Questions
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/automatic-backup-frequently-asked-questions/](https://codexonics.com/prime_mover/prime-mover/automatic-backup-frequently-asked-questions/)
+
+## Can I use scheduled backups on the FREE version?
+
+Automatic backup is a PRO feature added to Prime Mover version 2.0.0+. You must purchase a license to use it.
+
+## Can you show me a guide on how to get started using scheduled backups?
+
+Sure, please [check out this tutorial](https://codexonics.com/prime_mover/prime-mover/how-to-enable-automatic-backup-for-wordpress-multisite-and-single-site/).
+
+## Do you support setting custom schedules for my backups?
+
+Yes, you can set custom schedules for your automatic backups. Please [read this tutorial](https://codexonics.com/prime_mover/prime-mover/how-to-add-custom-backup-schedules-for-automatic-backup/).
+
+## My backup doesn’t fire or is very slow to complete. Do you have any advice?
+
+Prime Mover PRO automatic backups use WordPress cron. WordPress cron only fires when someone visits your site.
+
+Your schedules won’t fire if you don’t have enough traffic. We recommend using an [external cron service](https://codexonics.com/prime_mover/prime-mover/how-to-use-external-cron-service-to-trigger-automatic-backups/) to fix this problem. If you have a dedicated or VPS server, you can use the [native Linux cron to replace the default WordPress cron functionality](https://codexonics.com/prime_mover/prime-mover/how-to-use-your-hosting-cron-to-trigger-automatic-backups/). Both of these solutions will ensure that your backups run on time. You can also [turn on turbo mode](https://codexonics.com/prime_mover/prime-mover/help-my-export-and-restore-is-very-slow-after-updating-to-prime-mover-1-9-5/) if your host supports it.
+
+## My scheduled backup appears stuck and not running anymore; what would I do?
+
+If you run too many backups simultaneously, you can try [restarting the scheduled backup process](https://codexonics.com/prime_mover/prime-mover/how-to-restart-scheduled-backup-process/) and evenly distributing your server resources.
+
+## What makes Prime Mover PRO’s scheduled backup feature unique to other backup solutions?
+
+It is one of the most versatile automated backup solutions. It will allow you to:
+
+- Create scheduled backups for a WordPress single site, whether local or remotely hosted.
+- Entire WordPress multisite subsite automated backup support.
+- Create encrypted backups for security. All data, including user information, database, media files, plugins, and themes, is encrypted.
+- You can store these backups to Google Drive and DropBox remote cloud storage.
+- Decide on any schedule on when you want the backups to run.
+- It doesn’t use PHP shell functions (
+```
+exec
+```
+
+, 
+```
+shell_exec
+```
+
+, etc.). This makes the implementation more friendly and secure. You can run automatic backup on any host, even shared hosts.
+- You can set a custom timeout that depends on your server’s timeout. Your backup will run even if your hosting timeout is very low. Set a low timeout value (lower than your hosts’), and you’ll be good to go.
+- When the backup runs – it is a pure standalone process. So once the backup is running – Prime Mover turns off the executions of all third-party plugins/ hooks/calls or custom code in the background (while not affecting any user in your site or your site front end/ back end operations). This drastically lowers the memory and CPU usage footprint every time the backup runs. This makes it very efficient in terms of performance usage.
+- It is designed to be as easy to use as possible without requiring knowledge of server settings or command lines. All options are intuitively accessible to an average website administrator, including non-coders with average WordPress experience.
+
+## If my Prime Mover PRO license expires, will automatic backups stop?
+
+Since this is a PRO feature, you will need an active license to have the backups continuously run on your site. If your license expires, your scheduled backup will not also be executed. To prevent this kind of issue, it is recommended that you refrain from canceling the automatic renewal within your Freemius account. After purchase, automatic renewal is automatically enabled.
+
+This is to ensure your license is always working (and that it is renewed when its expiration date is approaching). If you want to stop the automatic renewal, put a reminder in your calendar to restore it manually.
+
+## Do you support email notifications when an automatic backup is made?
+
+To follow our GDPR policies. We decided to delay this privacy-sensitive feature. Many free plugins can do this. For example, [this one](https://wordpress.org/plugins/get-url-cron/) hasn’t been tested yet. You can try it out to see if it works in your case. It will send emails on cron failures or updates.
+
+Since Prime Mover PRO uses WordPress cron, you can also use third-party plugins to monitor it.
+
+## Do you support automatically deleting old backups after a specified number of months?
+
+Deleting backups automatically, even if they are old, is dangerous for us. We believe that backups should be reviewed personally by the administrators/network administrators before you hit the delete button (which is found in *Prime Mover PRO -> Packages*). This will prevent the accidental deletion of important backups.
+
+You must review the backups or test them as often (in your local site or another site) and then decide if you don’t need that one – delete it. Determining which backups should remain in your package manager is up to you.
+
+## How do I know if my scheduled backup has been added correctly?
+
+You can go to *Prime Mover PRO -> Event Viewer*. You should see two cron events for every site with an active automatic backup schedule.
+
+- The main schedule event (*this will cause the backup task to be fired according to the schedule*).
+- If the retry timeout occurs, the Retry event will trigger to continue the pending backup process.
+
+The schedule backup is correctly added and queued for execution as long as you see these two events.
+
+## Can an ongoing scheduled backup process be canceled, and if so, how?
+
+It’s as easy as turning off the automatic backup to end an ongoing backup process. This procedure assumes that an ongoing backup process is running (you can see a progress percentage on the Event Viewer)
+
+The following steps are necessary for best results and correctness.
+
+### If it’s a single site:
+
+- Log in as the site administrator.
+- Go to *Prime Mover PRO -> Settings* -> *Backup management* -> *Automatic backup*.
+- Unchecked “*Enable automatic backup*” checkbox.
+- Save it.
+- Go to *Prime Mover PRO -> Packages*.
+- On the site’s package manager page, click the “*Refresh packages*” button. This will clear and delete any artifacts or incomplete packages.
+
+### If it’s multisite
+
+- Login as network administrator.
+- Go to *Prime Mover PRO -> Toolbox*.
+- Enter the blog ID of the site where you need to cancel and the ongoing scheduled backup process.
+- Unchecked “Enable automatic backup” checkbox. This turns off the automatic backup process for this sub-site only (not for other sites).
+- Go to *Prime Mover PRO -> Packages*.
+- Enter the blog ID of the sub-site where the automatic backup is now canceled.
+- On the package manager page, click the“*Refresh packages*” button. This will clear and delete any artifacts or incomplete packages.
+
+## How can I restore my automatic backup package to another site/domain or hosting?
+
+Suppose the environment is identical to the site where the backup was initially created. You can only restore an automatic backup package to another single-site environment. This is true regardless of the domain names, URLs, or hosting. It will work if the site is still a WordPress single site.
+
+However, it is not possible to restore a single-site package to any multisite multisite. Or the opposite way – you cannot restore a multisite package to a WordPress single site. Another example is that a multisite package can only be converted to another one, provided the blog ID matches. For instance, if a package was created automatically for blog ID 3 in the origin site. It can be restored to any multisite if the target blog ID is 3. Therefore, you cannot restore the multisite backup package to another multisite if there is a mismatch with the blog ID.
+
+## How many licenses do I need to use automatic backups for multisite?
+
+It depends on the site you use. A single-site license plan is enough if you only want to schedule backups on one site in your multisite (such as the main website).
+
+But if you want all the sites in your multisite to have scheduled backups, you must buy a license plan covering them all. It depends on how many sites are included in your multisite. You should buy an unlimited license plan if you have more than 10 sites.
+
+## Do I need to clean up some of the backup logs manually?
+
+No, and yes. Backup logs are cleaned periodically by their routine maintenance. So, old logs have been removed because they are now outdated. Cleaning the logs regularly keeps them from taking up too much space on your server.
+
+You can manually clear the automatic backup logs by going to Prime Mover PRO -> Toolbox and clicking the Clear log button.
+
+## Can I try out the automatic backup feature for 14 days?
+
+Yes, but only for fourteen days in a row. You can test its features/settings if the trial is valid. You can test shorter schedules, like daily executions, to see if it works. You can also [set custom schedules](https://codexonics.com/prime_mover/prime-mover/how-to-add-custom-backup-schedules-for-automatic-backup/) to test that are in your trial period.
+
+The trial lasts only 14 days, so you can’t try it out for a month.
+
+*Last updated: January 11, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Can I change the exporting Blog ID to another site importing blog ID?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/can-i-change-the-exporting-blog-id-to-another-site-importing-blog-id/](https://codexonics.com/prime_mover/prime-mover/can-i-change-the-exporting-blog-id-to-another-site-importing-blog-id/)
+
+Scope: **Prime Mover Free / Pro version**
+
+Short answer. **Yes**. Make sure you are using Prime Mover version 1.0.6 since this feature is added on this version.
+
+Long answer is below.
+
+### Why Prime Mover requires same blog IDs between export and import?
+
+When you [migrate a multisite sub-site to another multisite sub-site](https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-multisite-sub-site-to-another-multisite-sub-site/), Prime Mover requires the target blog ID to be the same with the origin site blog ID. For example you have subsite at the origin multisite with blog ID of 6. Prime Mover requires that the target multisite subsite should also be blog ID of 6.
+
+The reason behind this is **site validation**. In a multisite network, Prime Mover uses blog ID to identify or validate if you are restoring to a correct site. If Prime Mover does not conduct site validation,   a user can accidentally overwrite any site on a multisite network !
+
+For example, your origin subsite has blog ID of 6 and then you accidentally restore it to blog ID of 12 (this is a different site in another network). Prime Mover won’t allow you to restore because this is a different site.
+
+### Workaround #1: Use Prime Mover version 1.0.6 +
+
+- Go to *Tools -> Migration Tools*.
+- Click “*Export*” button.
+- Say for example, you want generate complete export. (select *Export database, media files, plugins and themes.*).
+- Click “*Export to Multisite Format*“.
+- Say for example you want to migrate to a sub-site with ID of 77. Enter the ID as 77.
+
+### Workaround #2 – Prime Mover Target Blog ID (pro version only)
+
+If you have Pro version (including trial version), things will be easier.
+
+**Example illustration** : Migrate*test.abc.com* with blog ID of 9 to *test.xyz.com* with blog ID of 12):
+
+- Check first in target **xyz.com** multisite that the blog ID 9 is still not used with any sites. You can do this check by going to Network Admin -> Sites -> All sites and then search the blog ID.
+
+- Congratulations, based on the above screenshot, blog ID 9 is still not used with any sites (it gives “No sites found”.). This means we can use this as our importing ID instead of blog ID 12.
+- Now go to Sites -> Add New. You need to create a new site which is now using a **blog ID of 9**.
+- In Pro version of Prime version (trial included), you should see a new section **Prime Mover Target Blog ID ( Optional )**
+- Go ahead and make sure you enter target blog ID as 9 when creating this site.
+
+- Finally click “**Add site**“. If target blog ID 9 is still not used with any site, the new site should be created with blog ID of 9.  Otherwise if its already used by another site, WordPress generates a different blog ID (which is not 9, since 9 is already used).
+- At this point, you should have a blog ID of 9 at the target site and in the origin source site also. You should be able to [proceed to sub-site to sub-site migration](https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-multisite-sub-site-to-another-multisite-sub-site/).
+
+**What if target blog ID is already used by another/different sub-site?** You should use the *first workaround* (subsite -> single-site (then generate any blog ID ) -> back to subsite again.
+
+### Future plans on handling this
+
+We have plans to make this process easier for users. So in the future versions of Prime Mover, you can specify target blog ID when you export sub-site to another sub-site (just like what we have in single-site to multisite).
+
+We don’t have definite timeline yet because this process can take some time to test. (**This is already added since version 1.0.6**)
+
+Was this article helpful?YesNo
+
+---
+
+## Compatible local development apps – Prime Mover plugin
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/compatible-local-development-apps-prime-mover-plugin/](https://codexonics.com/prime_mover/prime-mover/compatible-local-development-apps-prime-mover-plugin/)
+
+## Background
+
+Prime Mover plugin is thoroughly tested to work with the most commonly used local development applications.  You use local development software when creating, testing, and debugging sites locally (within your computer or a virtualized environment).
+
+Although not all are thoroughly tested and compatible, some are not compatible because the apps support software that is not yet widely supported or fully supported by WordPress out of the box.
+
+## Tested and Compatible
+
+The following apps are thoroughly tested and compatible, requiring no adjustments or customizations.
+
+- [LocalWP by WP Engine](https://localwp.com/)
+- [XAMPP](https://www.apachefriends.org/)
+- [Bitnami VM](https://bitnami.com/stacks/wordpress)
+- [Lando](https://lando.dev/) (requires Docker)
+- [Laragon](https://laragon.org/)
+- [MAMPP](https://www.mamp.info/en/windows/)
+- [DDEV](https://ddev.readthedocs.io/en/stable/users/quickstart/#wordpress) (requires Docker)
+- [DevKinsta](https://kinsta.com/devkinsta/) (requires Docker)
+- [WAMPServer](https://www.wampserver.com/en/)
+- [Devilbox](https://devilbox.readthedocs.io/en/latest/index.html) (requires Docker)
+
+There may be other apps that are not yet known but are compatible with the Prime Mover plugin. If you are using it and it is not listed above, please [let us know](https://codexonics.com/contact/), and we will add it to the list of tested and compatible products.
+
+## Tested incompatible
+
+Unfortunately, some apps will not work with the Prime Mover plugin:
+
+- [Studio by WordPress.com](https://developer.wordpress.com/de/studio/) – this is because this uses a SQLite database, which the Prime Mover database exporter does not support.  The exporter will perform complex queries (to export specific aspects of the WordPress database) that SQLite does not support.
+- [https://playground.wordpress.net/](https://playground.wordpress.net/) – This is because it lacks the MySQL PDO extension. The Prime Mover plugin requires this to work. This is a sandbox environment and is not meant for doing serious backup and migration tasks for development work. You should be using the compatible apps listed previously.
+
+*Last updated: June 30, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Configure Basic Settings in Prime Mover Pro
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/configure-basic-settings-in-prime-mover-pro/](https://codexonics.com/prime_mover/prime-mover/configure-basic-settings-in-prime-mover-pro/)
+
+Scope: **Prime Mover Pro**
+
+### Steps
+
+1. In the Prime Mover control panel , click **Go to Settings** button.
+2. [*OPTIONAL* *BUT RECOMMENDED*] Go to **Basic Settings – Custom backup directory**. By default, this is pointed to your site *wp-content/uploads*directory. It’s protected by *.htaccess* if you are using Apache server. For best security (in any server), you need to change this to point the path outside your WordPress directory. This should not be publicly accessible.
+3. [*OPTIONAL* *BUT RECOMMENDED*] Next , [you need to exclude some plugins](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/). Not all plugins are really needed at the target site (e.g. SSL redirect plugins, caching plugins ,etc.). You simply need to click expand and check plugins you don’t need to be exported.
+4. [*OPTIONAL* *BUT RECOMMENDED*] Finally and you can [implement an export filters](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-upload-media-files-in-prime-mover-pro/). These filters works by excluding files with specific file types, names and paths. If you think your uploads directory contains a lot of large files, and some very large file is not even useful at target site, you can exclude it. This would be a very useful feature.
+
+Make sure to **save all setting**s. The above four settings should be able to get you started. Do this settings configuration in all of your sites so they will be ready for migration.
+
+The video below illustrates the above basic settings guide. It implement settings configuration for the test site *single-site-one.test* and *single-site-two.test*.
+
+Please refer for your guidance:
+
+Was this article helpful?YesNo
+
+---
+
+## Corrupted WPRIME packages troubleshooting
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/corrupted-wprime-packages-troubleshooting/](https://codexonics.com/prime_mover/prime-mover/corrupted-wprime-packages-troubleshooting/)
+
+## Definition
+
+The corrupted 
+```
+WPRIME
+```
+
+ package still has 
+```
+wprime
+```
+
+ file extension. It looks like a normal WPRIME package. However, it cannot be restored or read by the Prime Mover plugin because it is incomplete, unreadable, or damaged. There are many causes of corrupted packages, but the most common cause is when it’s *partially downloaded from your web host*.
+
+## Symptoms
+
+- You will get “*Corrupt package error*” when restoring the package via upload.
+- [*PRO USERS*] You will get “*Corrupt package error*” when restoring the package via the remote URL feature (direct site-to-site migration).
+- When you try to restore the package via *Prime Mover -> Packages*, it cannot be restored or appears in the package manager as corrupted.
+- In some cases (if you are using an older version of Prime Mover), you will get “*File type error*“.
+- In general, any error message saying that the WPRIME package is corrupted.
+- If you have renamed the file extension, e.g., from .wprime to .tar, Prime Mover cannot recognize it and will appear corrupted.
+
+## Solutions
+
+- [*OPTIONAL – PRO USERS ONLY – IF THIS OCCURRED DURING REMOTE URL MIGRATION]* – Check that 
+```
+curl_exec
+```
+
+ is not disabled or listed in the php.ini 
+```
+disable_function
+```
+
+ directive: [https://www.php.net/manual/en/ini.core.php#ini.disable-functions](https://www.php.net/manual/en/ini.core.php#ini.disable-functions).
+- Log in to the site where the package is created. This is your source site where you have created the Prime Mover 
+```
+WPRIME
+```
+
+ package.
+- Go to *Prime Mover -> Packages*. It should list all created packages. Find your created packages in this list. For example, this is how it looks:
+
+*List of created packages in the package manager*- If the package is listed there, it’s not actually corrupted; [it gets corrupted when it’s downloaded](#whysomewebhostsproblematic).
+- Once you find the correct package to download, [please download it using another method to ensure it does not get corrupted again](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/).
+
+**IMPORTANT**: *Do NOT download the package using the native “Download” button in Package Manager, as this can be problematic for some shared web hosts*. [More details in this section](#whysomewebhostsproblematic).
+
+- Once you have downloaded the package either via SFTP or your hosting File manager, double-check the file size. You should get a similar file size as shown in the package manager.
+- Don’t change the file extension or modify the package contents. Prime Mover packages should have 
+```
+wprime
+```
+
+ file extension.
+- Once the package is downloaded, you can safely restore it to your target site. There should be no more corrupt package errors.
+
+**NOTE**:
+
+- If the package is not listed there, please recreate the package until you see the export success message. Once you see the export success message, close it and open the Package Manager to check your package’s filename. After that, you can then [download your package](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/) to restore it to your target site.
+- If you have downloaded the package via SFTP and still encounter corruption, try re-creating it to confirm whether it’s still corrupted. If it’s still corrupted, [please contact us and report this issue](https://codexonics.com/contact/).
+
+## Why can some shared web hosts corrupt the package?
+
+Some shared web hosts limit bandwidth, CPU, and memory resources allocated to each shared site. In some cases, you are downloading the WPRIME package after exporting the site. The web host will terminate the WPRIME package download without any notice. Sadly, once they terminate the download, the browser reports that the package is downloaded completely.
+
+However, it is only partially downloaded; the obvious clue is to look at the downloaded file size. If the package manager reports that the package size is around 300MB, but you only have 60MB when downloaded, then most likely this package is corrupted and cannot be restored. You should [download it using other methods](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/), such as SFTP, where your hosting cannot restrict resources.
+
+## Deleting corrupted packages
+
+Once the package is replaced with the correct one, you should delete the corrupted packages to free up disk space on your server. You can also delete corrupt packages if you have no plans on updating them. This will also prevent your backup directory from being cluttered with unusable packages. Deleting corrupted packages will also fix corrupt package warnings you see in your Prime Mover package manager. This happens when you refresh the packages.
+
+Since these are not official/validated 
+```
+WPRIME
+```
+
+ packages – they cannot be deleted within the package manager. These corrupted packages can only be deleted via SFTP or by navigating to your backup directory and deleting them **in your host’s****file manager**.
+
+So before deleting, take note of the following:
+
+- File name
+- Full path to your package (including the package file name).
+
+You will get this information from the Prime Mover corrupt package warnings in your package manager.
+
+**IMPORTANT**: Do not delete normal packages when deleting corrupted packages. And it is not recommended to delete working packages using SFTP or using your hosting file manager. Please delete non-corrupted packages in Prime Mover -> Packages (Package manager) so that all their metadata is*also cleared correctly. This will avoid cluttering your database with obsolete info.*
+
+## Still need assistance?
+
+Please [get in touch with our technical support](https://codexonics.com/contact/).
+
+*Last updated: February 28, 2026*
+
+Was this article helpful?YesNo
+
+---
+
+## cURL error 28: Connection timed out after 10001 milliseconds when importing Prime Mover package
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/curl-error-28-connection-timed-out-after-10001-milliseconds-when-importing-prime-mover-package/](https://codexonics.com/prime_mover/prime-mover/curl-error-28-connection-timed-out-after-10001-milliseconds-when-importing-prime-mover-package/)
+
+Scope: **Prime Mover Pro**
+
+### Cause
+
+If you are using Prime Mover Pro and you are restoring site via remote URL; one requirement is a good Internet connection.
+
+This error comes out when:
+
+- You have a very slow Internet connection.
+- The connection is not stable and timing out.
+
+### Solution:
+
+This is not something that can be fixed inside Prime Mover. All you need to find a good Internet connection so you can proceed with the migration.
+
+In summary, the following suggestions should help in most cases:
+
+- Reboot your router.
+- Do a speed test of your connection.
+- If your connection is fine, clear the browser cache.
+- Repeat the migration procedure again.
+- Make sure the site where you are fetching the package is live, active and not behind any firewall that can block connections.
+- You should not be able to see this error again.
+
+### If symptoms persist, consult developer…
+
+Just in case, the above suggestions does not help, [please submit debug data to us](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/) so we can diagnose the issue.
+
+**Important**:  Before you will submit any data. Make sure enable the logging of HTTP API connections:
+
+- Login as administrator.
+- Go to **Prime Mover -> Advanced**.
+- Under **Debugging Tools**. Check “**Enable troubleshooting log**“.
+- Under **Debugging Tools** also, check **Persist / HTTP API Log**.
+
+Then repeat the migration procedure to reproduce the problem. Once the problem is reproduced. Retrieved the logs and please sent it to us.
+
+Was this article helpful?YesNo
+
+---
+
+## Custom user adjustment usage feature
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/custom-user-adjustment-usage-feature/](https://codexonics.com/prime_mover/prime-mover/custom-user-adjustment-usage-feature/)
+
+## Background
+
+Starting in Prime Mover 2.0.2, a new feature called *custom user adjustment* was introduced. This allows you to adjust non 
+```
+user_id
+```
+
+ database columns during export and restore.
+
+If you still don’t understand this feature, this article will clarify your doubts and explain its importance. First, let’s show an example of how the Prime Mover user adjustment feature works.
+
+## user_id are adjusted by default
+
+Prime Mover plugin auto-adjusts 
+```
+user_id
+```
+
+ columns since version 1.9.7. Supposing you have a table named as 
+```
+hobbies
+```
+
+ in your source site database:
+
+| ID | user_id | hobbies |
+| --- | --- | --- |
+| 1 | 56 | singing |
+| 2 | 57 | dancing |Looking at the table, you will know that user_id 56 has a hobby of singing while user_id 57 has a dancing hobby. A third-party plugin could create these types of database tables. The user_id also corresponds to the WordPress user ID in the 
+```
+wp_users
+```
+
+ table.
+
+If you migrate your source site to another site installation, the user IDs of these users will change. This is because the site database is fresh, and no users are still added. It could also be that there are already many existing users in the target site and that Prime Mover adds new users to that target site during the migration (like when you migrate to a multisite with already existing users).
+
+Once the above table is migrated and re-created in the target site database, Prime Mover auto-adjusts the user_ids to their new and correct user_ids on the target site. Supposing user_id 56 now becomes user_id 312 and user_id 57 becomes user_id 313. The table at the target site becomes:
+
+| ID | user_id | hobbies |
+| --- | --- | --- |
+| 1 | 312 | singing |
+| 2 | 313 | dancing |As a result of the auto-user ID adjustment, your data’s integrity remains intact. So, user ID 56 (now user ID 312) still corresponds to the hobby of singing, and user ID 57 (now user ID 313) still corresponds to the hobby of dancing. This automatic user ID adjustment preserves the relationship between your user_id and their corresponding hobby.
+
+This has been implemented since Prime Mover 1.9.7, only if the column is user_id. Otherwise, it is not auto-adjusted simply because Prime Mover does not know if your database columns refer to user_id data. It is impossible for a plugin to auto-determine that!
+
+## Non-user ID column adjustment feature
+
+A custom user ID feature has been added to Prime Mover 2.0.2 to address the above limitations. This feature is available in both FREE and PRO versions. This is how it works. Supposing that instead of 
+```
+user_id
+```
+
+ column, you have a column named as 
+```
+fan_id
+```
+
+ in the table named as 
+```
+wp_band_fans
+```
+
+.
+
+| ID | fan_id | favorite_band |
+| --- | --- | --- |
+| 1 | 24 | Beatles |
+| 2 | 25 | Led Zeppelin |Looking at the above table, the column 
+```
+fan_id
+```
+
+ corresponds to the 
+```
+user ID
+```
+
+ in the WordPress users table. So, a 
+```
+fan_id
+```
+
+ of 
+```
+24
+```
+
+ also corresponds to a user with a WordPress user ID of 
+```
+24
+```
+
+. It’s just that a third-party plugin chose to name the column 
+```
+fan_id
+```
+
+ and not 
+```
+user_id
+```
+
+ for specific reasons.
+
+In version Prime Mover 2.0.2+ – you can define this user adjustment by doing the following:
+
+- Log in as administrator or network administrator (if multisite).
+- Make sure you are updated to at least Prime Mover 2.0.2.
+- Go to *Prime Mover -> Toolbox*.
+- If multisite – enter the blog ID of the subsite where you would like to adjust.
+- Scroll down to the bottom; see the *Export-Import Utilities* setting section.
+- You should see the *Non-user_id column auto-adjustment*text area settings.
+- Define the settings one table per row as follows (using the above example)
+
+It should be in this format: 
+```
+TABLENAME : COLUMN_NAME
+```
+
+Make sure  that the following rules are followed:
+
+- The table should exist in the database.
+- The column name should exist in the database.
+- If you like to enter multiple column names in a specific table, separate it with a comma like: 
+```
+TABLENAME : COLUMN_NAME1, COLUMN_NAME2
+```
+- The column name should not be 
+```
+user_id
+```
+
+. This is already handled automatically.
+- The table name should already include the database table prefix.
+- In multisite, enter the table name in the toolbox setting corresponding to the correct blog ID. For example, if the table 
+```
+wp_6_my_table
+```
+
+ is the target table and 
+```
+my_column
+```
+
+ is the target column name for which the table belongs to blog ID 6. Enter that only to *Prime Mover -> Toolbox* -> Enter blog ID (enter six as blog ID) -> scroll down to *Export-Import Utilities* -> *Non-user_id column auto-adjustment* and define the settings there. This is to avoid entering the incorrect tables for the corresponding blog ID.
+- Finally, save the settings. Prime Mover will validate the settings and only save them if they are correct.
+
+Once the settings are saved, you can proceed to create an export. The package will include instructions for the target site to auto-adjust user columns that do not use the user_id column name.
+
+## What happens on the restore site with custom user adjustment implementation?
+
+When a package includes custom user adjustment implementation and is migrated to the target site – this is what will happen:
+
+- Prime Mover restores the package.
+- It then restores the database and all users from the source site to the target site.
+- Prime Mover checks if the package includes custom user adjustment implementation.
+- Prime Mover will auto-adjust these columns if applicable.
+
+Therefore, the above table will look like the following (supposing 
+```
+fan_id: 24
+```
+
+ it has a new user ID of 5 in the target site and
+```
+fan_id
+```
+
+ : 
+```
+25
+```
+
+ has a new 
+```
+user ID
+```
+
+ of 
+```
+6
+```
+
+).
+
+| ID | fan_id | favorite_band |
+| --- | --- | --- |
+| 1 | 5 | Beatles |
+| 2 | 6 | Led Zeppelin |As you can see, the fan_id information still corresponds correctly to their favorite band (as it was set on the source site) because of the custom user adjustment feature, even though their user_ids have been changed on the target site.
+
+## Questions on this feature?
+
+Please [get in touch with technical support](https://codexonics.com/contact/). Thank you!
+
+*Last updated: November 30, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## Error: Your MySQL server max_allowed_packet size is insufficient
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/error-your-mysql-server-max_allowed_packet-size-is-insufficient/](https://codexonics.com/prime_mover/prime-mover/error-your-mysql-server-max_allowed_packet-size-is-insufficient/)
+
+## Symptoms
+
+You will get the runtime error on log:
+
+```
+Error: Your MySQL server max_allowed_packet size is insufficient
+```
+
+## Causes
+
+This is not actually a bug but a control inside Prime Mover plugin to prevent the MySQL server [Package too large error](https://dev.mysql.com/doc/refman/8.0/en/packet-too-large.html).
+To explain this, when a string is imported to your MySQL database, the maximum bytes per packet that can be imported is controlled through a MySQL server setting called 
+```
+max_allowed_packet
+```
+
+.
+
+What happens is that when the database is restored by Prime Mover, there is a specific packet string that exceeds your MySQL server 
+```
+max_allowed_packet
+```
+
+ setting. When this happens, a runtime error is returned.
+
+## Solution
+
+The solution is to increase the MySQL parameter 
+```
+max_allowed_packet
+```
+
+ value. Increase it in a way it is larger than the maximum bytes per packet.  You need to increase the value (from the default which is 1MB) until there is no more error found. (e.g. start with 32MB and gradually increase this if necessary). This depends on your server. Suggestions are as follows:
+
+**XAMP Windows server** – you can easily increase the max_allowed_packet setting value.
+Please follow this tutorial: [https://stackoverflow.com/questions/1679442/how-do-you-set-max-allowed-packet-in-xampp/1679486](https://stackoverflow.com/questions/1679442/how-do-you-set-max-allowed-packet-in-xampp/1679486)
+Usually in Windows server, the MySQL configuration file is found in 
+```
+C:\xampp\mysql\bin\my.ini
+```
+
+You need to restart your XAMPP MySQL service to affect this change and make sure to set a high value to prevent error.
+
+**Linux server** –  You can change this setting by editing 
+```
+my.ini
+```
+
+or 
+```
+~/.my.cnf
+```
+
+More details of this solution here: [https://stackoverflow.com/questions/8062496/how-to-change-max-allowed-packet-size](https://stackoverflow.com/questions/8062496/how-to-change-max-allowed-packet-size)
+
+**Note**: If you don’t have access to these settings or does not know where to find this setting – please create a ticket with your web host and request them to increase this value.
+
+Once the value is increased – try again doing the restore or export with Prime Mover and it should fix this error.
+
+**Update**: Since Prime Mover 1.6.0 – it will auto-detect this error. It will auto-adjust the 
+```
+max_allowed_packet
+```
+
+ size value if the database user (used by WordPress) are granted with SUPER privileges or global privilege that allows setting this value.
+
+If user does not have the privilege required – Prime Mover cannot auto-fix and the runtime error is returned. The only fix at this point is to contact the database administrator or hosting support and manually raise the 
+```
+max_allowed_packet
+```
+
+ size value in the MySQL database server.
+
+Was this article helpful?YesNo
+
+---
+
+## Export stuck at 0% – Troubleshooting guide
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/export-stuck-at-0-troubleshooting-guide/](https://codexonics.com/prime_mover/prime-mover/export-stuck-at-0-troubleshooting-guide/)
+
+## Symptoms
+
+When you hit export, the progress bar stays at 0% and never moves. If you have this type of issue – this is the troubleshooting guide. Start with each step and move on to the next step if the problem persists.
+
+Before you proceed with the troubleshooting steps, please make sure the following is TRUE:
+
+- Your site front end / back end works and displays correctly. If not – please fix it first.
+- You are using the latest version of Prime Mover. If not, please update it to the newest version.
+
+## Step 1 – Check if you have correct and active login sessions
+
+First – clear your browser cache and log in again to your site / multisite. This ensures that you have a clean and active login session. Incorrect or expired login sessions will cause AJAX errors, which can cause export to hang at 0%. Once logged in, hit the export button again. If the issue persists – proceed to the next step.
+
+## Step 2 – Check if your site has a CORS issue
+
+This can cause AJAX issues because of the browser’s “*same origin policy*” ([Cross-Origin Resource Sharing](https://www.contentstack.com/docs/developers/how-to-guides/understanding-and-resolving-cors-error/)). For example, say you accessed the site’s network at **https://www.yoursite.tld/wp-admin/network/sites.php**. However, your AJAX URL is using the on-www version: **https://yoursite.tld/wp-admin/network/sites.php.**This violates the same origin policy, which can block AJAX requests.
+
+The temporary solution is to log in, clear your browser cache, and then log in to your non-www version because this is the version used by your AJAX URL. This should resolve the CORS issue. It is because you are now logged into your non-www version:**https://yoursite.tld/wp-admin/network/sites.,PHP** and your AJAX URL is using the non-www version too: **https://yoursite.tld/wp-admin/admin-ajax.php.**
+
+In this case, the permanent solution is to ensure that your site uses only one canonical version. This is useful not only in CORS but also for your site’s SEO. It will ensure that your site is only accessible in one version. You can fix the server by redirecting www to an on-www version.
+
+SSL mixed content issues can also cause CORS / same-origin policy issues. For example, if your site is accessible in both HTTP and HTTP versions, AJAX cannot work correctly. Please make sure to use only the HTTP version. In this case, you can permanently redirect HTTP to HTTPS.
+
+If the issue persists – move to step 3.
+
+## Step 3 – Check if you have a JS conflict with other plugins
+
+In this case, you have a third-party plugin that conflicts with other plugins’ AJAX process, such as the one used by Prime Mover. This is usually caused if the plugin JS occupies a global state and is not isolated – so it conflicts with other plugins.
+
+To check if you are affected by this issue, clear your browser console and make sure you are logged in to your site. Then, open the browser console and start the export process.
+
+Check if you have JS console errors that are being logged and initiated. Usually, these errors will tell you the name of the conflicting plugin, so you can try deactivating it to see if the issue is resolved. If you are not sure of the conflicting plugin, try deactivating each plugin one at a time until you find the problem. Once you find the conflicting plugin, deactivate it permanently until you have completed the export.
+
+## Step 4 – Check if starting the export causes PHP fatal errors.
+
+In some instances, fatal PHP errors can prevent the export from starting. You will know this by enabling WordPress debugging in your wp-config.php:
+
+```
+// Enable WP_DEBUG mode
+define( 'WP_DEBUG', true );
+
+// Enable Debug logging to the /wp-content/debug.log file
+define( 'WP_DEBUG_LOG', true );
+
+// Disable display of errors and warnings
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 0 );
+```
+
+Before starting the export – make sure your debug.log is cleared or not does not exist yet on **/wp-content/debug.log/**
+
+Then hit export or start export. If it’s stuck at 0%, please check if the debug.log is generated. If it is, please check the log to see if it’s a PHP fatal error.
+
+Usually, this PHP fatal error can be caused by the following:
+
+- Your site uses a plugin/theme incompatible with your PHP version. (e.g., a plugin not yet compatible with PHP 8.0).
+- Your site is using a very outdated version of PHP (e.g., 5.6), but you are using a plugin that is not compatible with it.
+- You have customer code, plugin, or script that is incompatible with your new server /OS/environment. This could interrupt other processes, such as the one with Prime Mover.
+- You are using an outdated version of WordPress that conflicts with your third-party plugins.
+
+Usually, you can resolve these errors easily by deactivating the conflicting plugin to proceed with the export.
+
+## Step 5 – If nothing works – report the issue
+
+Finally – if you reach this step and nothing works. Please [generate debug logs](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/) when you start the export, and please send us these logs:
+
+- Export site info log. (generated in *Prime Mover -> Advanced -> Advanced Settings Panel -> Upload/Download Parameters -> Export site info*)
+
+- Debug.log (in your */wp-content/debug.log* if it is generated)
+
+- Migration log ( generated in *Prime Mover -> Advanced -> Advanced Settings Panel -> Debugging Tools -> Download log*
+
+You can zip all these logs and send us the link to download them by reporting the issue on this [contact form](https://codexonics.com/contact/). Please include all relevant details and do not share these logs publicly. It is because it contains sensitive information.
+
+We will analyze your logs to find clues to the issue. Any information obtained will be used to reproduce the problem. If we need more information, we will contact you.
+
+*Date updated: March 11, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## FAQ – How does WordPress multisite migration affects the main site?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-how-does-wordpress-multisite-migration-affects-the-main-site/](https://codexonics.com/prime_mover/prime-mover/faq-how-does-wordpress-multisite-migration-affects-the-main-site/)
+
+## Background
+
+If you create complete Prime Mover export package that you want to migrate to another multisite – this package includes the following resources:
+
+- Database
+- Plugins
+- Themes
+- Uploads media files
+
+**What happens if you migrate this package to another multisite subsite- how does this affect the main site?  Will it work?**
+
+Yes it will work, but take note that by WordPress multisite design – *plugins are shared and used among all the* sites (including main site and subsites). If your newly migrated subsite uses plugins that are also used by the target main site – the main site continues to work as long as the migrated plugin is compatible.
+
+For example: **Plugin X version 3.0** (latest version) is used by source multisite main site. This is to be migrated as a new subsite to another target multisite. Let’s assume **Plugin X version 2.0** (older version) is used by this another target multisite main site.
+
+Now what will happen is that if you migrate the site to the new subsite (by creating Prime Mover package that includes plugins/themes – complete package) – plugins are migrated as well. So, this means that **Plugin X version 2.0** is deleted and replaced it with **Plugin X version 3.0** (latest version from the source site).
+
+If **Plugin X version 3.0** is compatible with the target multisite main site – the main site continues to work normally. Otherwise, if **Plugin X version 3.0** is not compatible with the main site – you might have errors.
+
+Other aspects of the migration such as uploads media files and database are specific to the subsite – so this won’t affect the main site at all during the migration. It’s only the plugins that you need to check to. If you are sure the migrated plugins are compatible to the target site – you don’t need to worry about anything.
+
+## Recommendations
+
+The main site is affected by the migration ONLY if the subsite (that is migrated) uses plugins that are also used by the main site (since plugins are shared among sites in multisite). Prime Mover handles this gracefully during the migration and should not return any errors.
+
+However after the migration – if the target site plugins are not compatible with the main site – you might have errors. The first recommendation is to check whether plugin versions of the migrated plugins are fully compatible with the main site.  If you have a dev copy of your multisite in your test server – try doing a test plugin update (using the plugin versions of the source site) in your main site to see if it works.
+
+Otherwise – another recommendation would be to [exclude affected plugins](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/) in the backup package by using [Prime Mover PRO](https://codexonics.com/prime_mover/prime-mover/pricing/) if this is possible. This works by excluding plugins that are used by the main site so that none of the main site plugins are touched during  the migration. In this case, you might need to manually install and activate some plugins in your subsite after migration one by one to make sure this own’t affect your main site.
+
+The last but the safest recommendation is to use Prime Mover PRO to backup your main site first to a single site format and then migrate it to WordPress single site in your localhost server. The purpose is to have a dev copy of your main site but now in single site format – you can then test plugins update (update to the versions that will be used during the migration) to see if those plugin versions are compatible.  Once compatible – you can then safely proceed to the standard migration and you are confident this won’t break.
+
+Finally as a safely measure – it would be good to backup your main site first using Prime Mover PRO so you can safely restore to it when needed.
+
+## Questions?
+
+Please [get in touch with us here](https://codexonics.com/contact/).
+
+Was this article helpful?YesNo
+
+---
+
+## FAQ – How to activate Prime Mover PRO?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-how-to-activate-prime-mover-pro/](https://codexonics.com/prime_mover/prime-mover/faq-how-to-activate-prime-mover-pro/)
+
+## Overview
+
+Thank you for purchasing Prime Mover PRO! Before you can enable the PRO version and use its features, you need to successfully activate it. There are several ways to activate the PRO version.
+
+## The Basics After Purchase
+
+After purchase or trial signup, Freemius (our license provider) will send an email with the subject line “*Thanks for upgrading*” or “*Your free 14-day trial started*“. This email contains important details about your buyer account, such as your Freemius username/password. Once you have this email, follow these steps to [activate the license](https://codexonics.com/prime_mover/prime-mover/how-to-activate-license-in-prime-mover-pro/).
+
+## I cannot activate the license due to errors.
+
+This is usually caused by corrupted Freemius data (caused by other plugins /themes that use Freemius). However, it can be reset easily. If you have issues activating the license due to errors, [please refer to this detailed FAQ](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/).
+
+## Is your site license previously activated by your developer?
+
+In this case, your developer is the one who purchases and activates Prime Mover PRO features for your site or other clients. To activate the license, you can [refer to this section in the tutorial](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/#white-label).
+
+## I do not see where to put the license key.
+
+The basic procedure should allow you to enter the license key (after purchase).
+
+*However,* in rare cases (e.g., if you don’t opt into Freemius emails), you cannot see Prime Mover -> Account. Alternatively, you can activate the license via WordPress admin -> Plugins.
+
+This is what it looks like:
+
+Click “Activate License” and enter the license key there.
+
+## Is the license not activated because it says it’s already been utilized?
+
+This means that some of your other sites already utilize the license, and you hit the license limit. For example, if you only have a single-site license, the license is only valid for one site. If this license is already activated somewhere else, you will get an error if you activate it on another site.
+
+You can upgrade the license to accommodate all your sites.
+
+The other option is to deactivate the license in your Freemius account so you can reactivate it on your other site. To do this, [please refer to this tutorial](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/#licensealreadyutilitized).
+
+## I want to reset the license.
+
+You might want to reset your license if you think some Freemius data is corrupted and returning errors on your Freemius Account page or if you are unable to activate PRO features. This is also useful if you are unable to activate PRO features despite following the above procedures. To do this, [please follow this tutorial](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/).
+
+*Last updated: August 26, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## FAQ: How to download WPRIME package via other methods?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/)
+
+## Overview
+
+If you are not able to download the 
+```
+WPRIME
+```
+
+ package using default methods (e.g., after export or via *Prime Mover -> Packager*), you can still download the package using other methods.
+
+## Step 1 – Get your current export directory
+
+- Login to your WordPress site as administrator (or network admin if multisite)
+- Go to *Prime Mover -> Package Manager*.
+- Get the path to your Prime Mover export directory. For example, It is shown in the screenshot below:
+
+This path is different for each site / sub-site. Make sure to get the correct path and note it. You can paste the path into a text editor like Notepad and save it to your Desktop for reference.
+
+## Step 2 – Get the WPRIME package file name
+
+Now you know the path, get also the 
+```
+WPRIME
+```
+
+ package file name that you want to download. The packages are sorted by date (the latest package created will appear at the top). But you can use the sortable header to find the package you want to download. This is useful if you need to identify the file name by its site name, package size, etc.
+
+Ensure you get the correct file name so you can only take these steps once.
+
+## Step 3 – Download using SFTP Client / cPanel Package manager / other hosting file managers
+
+Once you obtain the Prime Mover export path and your WPRIME package file name:
+
+- Launch and connect to your site server using an SFTP client (e.g., Filezilla).
+- Navigate to the Prime Mover export directory.
+- Find the correct WPRIME file to download.
+- Download it.
+- That’s it. Done! 🙂
+
+Aside from using the SFTP client, you can also use your hosting File manager to download the package. The procedure is essentially the same with the SFTP client. All you need to do is navigate to the Prime Mover export directory and download the file from there.
+
+## Why does downloading not work inside the Prime Mover package manager?
+
+Prime Mover is a WordPress plugin that relies on WordPress and gives hosting resources to download the package. There are several reasons why this cannot be downloaded perfectly:
+
+- Some hosts restrict this resource inside WordPress for security/performance reasons.
+- Or it could mean that your Internet connection is not that stable.
+- Or your browser might have strict download settings.
+- Your hosts might also implement a timeout for download items.
+
+However, downloading using sFTP and a hosting file manager is reliable since your hosts do not impose resource/browser/security restrictions on WordPress. You should be able to download the package using this method just in case the default method does not work.
+
+If you are not able to download the package you created—even using these methods—feel [free to contact us](https://codexonics.com/contact/) so we can investigate further.
+
+*Last updated: November 15, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## FAQ – I cannot activate license, how to fix?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/)
+
+### Reset the Freemius data to fix errors.
+
+Unable to activate the license is usually caused by corrupted Freemius licensing data. This fix applies to any errors that prevent you from successfully activating the license (after purchase, upgrades, or anything else).  This procedure also helps to clear the outdated Freemius data on your site so you can start with a fresh state.
+
+To fix this:
+
+1. Deactivate the Prime Mover plugin. (Network deactivate if multisite)
+2. Install and activate this [Freemius Fixer plugin](https://codexonics.com/prime-mover/freemius-fixer/freemius-fixer.zip). (*network activate if multisite*)
+3. Click **Clean up data and deactivate**.
+4. You will be redirected to an empty page, but don’t worry; the reset is done now.
+5. Navigate back to your site using the browser address bar.
+6. [*Multisite only*] If you are on a multisite, go to the main site *WordPress admin -> Plugins* and activate Freemius Fixer.
+7. [*Multisite only*] Click **Clean up data and deactivate**.
+8. [*Multisite only*] You will be redirected to an empty page.
+9. [*Multisite only*] Navigate to your site using the browser address bar.
+10. [*Multisite only*] Make sure the Freemius Fixer plugin is deactivated on the main site.
+11. Activate the Prime Mover plugin. (network activate if multisite)
+12. [OPTIONAL – if using PRO version) Activate your license on your selected sites; you should have no more problems. If difficulties persist, please [contact us](https://codexonics.com/contact/).
+13. You can delete Freemius Fixer if you don’t need it anymore.
+
+### How do you fix license errors that have already been utilized?
+
+Licenses are already utilized, and errors occur when you try to activate a license already used by other sites. For example:
+
+[Please](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/#allsites)[read this tutorial on deactivating](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/#allsites)all sites’ licenses to fix this.
+
+### Is your site license previously activated by your developer?
+
+If your site developer activates the license for your site, then your developer only has access to deactivate and reactivate your license. This is known as [white labelling activation](https://freemius.com/blog/white-label-mode-url-whitelisting-user-dev-dashboard-upgrades-coupon-improvements/) (a Freemius licensing feature).
+
+You will know this if you cannot see the button to activate a license in your *Prime Mover -> Account*when you are about to activate a license for your site.
+
+To resolve this, you can do any of the following:
+
+- If you have access to your [Freemius account](https://users.freemius.com/login), log in and click the “*Licenses*” tab. Then, click on the specific license, and make sure “**This license is activated on my client ‘s site(s)**” is *unchecked* like this:
+
+- To refresh all changes made to your account, log in to your site and then go to **Prime Mover -> Account**and click the “**Sync**” button. Check if the PRO license activation is loaded or if you see the Activate PRO button.
+- Contact your developer or anyone who has access to your site’s [Freemius account](https://users.freemius.com/login). They are the ones who previously activated the Prime Mover PRO license on your site and request that it be activated on your developer’s end.
+- If you have a copy of the license key provided by your developer. You can [reset Freemius data](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/#resetfreemius) first and then reactivate Prime Mover PRO to enter the license key. This should reactivate PRO features.
+- If you can no longer contact your developer and don’t have a license key, you can still [purchase a new license](https://codexonics.com/prime_mover/prime-mover/pricing/) on our pricing page. Then, do a [Freemius reset](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/#resetfreemius) before you can re-enter this new license key to your site.
+- If you are unsure whether a developer has activated the license for you or you forgot, please send as many details as possible to [our technical support.](https://codexonics.com/contact/) This includes your site URL where you must activate the license and the email associated with Freemius or any of your developer’s company or email address. We will use this information to check and verify the account related to your site.
+
+### Do you have the restricted sites feature enabled?
+
+This Freemius licensing feature can prevent you from adequately activating the license on **“any”** sites. To turn this off:
+
+- Log in to your [Freemius account](https://users.freemius.com/login).
+- Go to the “*Licenses*” tab.
+- Click the row containing the active license. You should be able to see the license details.
+- Scroll down in the license details and find “*License security*.”
+- Under License security – click “*Restrict sites*.”
+- You should be able to see a pop-up. **IMPORTANT: Make sure this list is empty. You should not see any sites listed**. It should only look like the screenshot below (no URLs or domains of sites allowed):
+
+**Recommendation:****If yo****u see any sites there, please “delete all of them” to**turn off this feature. Then**, you should be able to activate your license on any site**.
+
+### Other known license activation issues
+
+Issues affecting license activation relate to your server, ISP, site settings, caching, etc. For details, [please read this guide from Freemius Inc](https://freemius.com/help/documentation/wordpress-sdk/license-activation-issues/).
+
+### Localhost limitations
+
+If you want to activate the license on the localhost/development/staging environment for free, ensure your site runs from a domain named “localhost.” Alternatively, you can run it from one of the following subdomains: “local.” “dev.”, “test.” or “staging.”
+
+### Contact technical support
+
+If any of the issues persist after you have tried all the suggestions, please get in touch with us[and provide your WordPress site username and password](https://codexonics.com/contact/), and we will try to check this issue directly on your site 🙂
+
+*Last updated: May 9, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## FAQ: Runtime error on Windows: Failed to open stream: No such file or directory
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-runtime-error-on-windows-failed-to-open-stream-no-such-file-or-directory/](https://codexonics.com/prime_mover/prime-mover/faq-runtime-error-on-windows-failed-to-open-stream-no-such-file-or-directory/)
+
+### Symptoms
+
+When you restore a site in Windows server, you’ve got a runtime error e.g.:
+
+```
+Uncaught Codexonics\PrimeMoverFramework\build\splitbrain\PHPArchive\ArchiveIOException: fopen(C:/paths/prime-mover-import-files/testfile:4pm): failed to open stream: No such file or directory in C:\paths\plugins\prime-mover\build\splitbrain\php-archive\src\Tar.php:353
+```
+
+Typically this package originated and created from a NIX server (e.g. Linux server, or any NIX environments such as MacOS). And then it cannot be restored to Windows but can be restored to any NIX environments.
+
+### Causes
+
+The main cause of this issue is that Prime Mover tries to copy a file from a package to Windows file system with invalid filenames.
+
+Common invalid file name in Windows includes having colon (:) in the filename that works in NIX environment but does not work in Windows. Please read this [official Microsoft documentation](https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file) regarding all list of characters that are not allowed in Windows.
+
+For example, say you have an image inside your uploads directory in Linux server with this filename:
+
+```
+1-IMAGE 2021-07-21 20:04:24-1024x768.jpg
+```
+
+The filename contains a colon that works with Linux/Mac/Nix servers but it is not acceptable with Windows. What happens is that if you are trying to migrate this site (which is hosted on Linux server) to Windows server (e.g. XAMPP/MAMP in Windows or even IIS) – you will get runtime error.
+
+### Solution
+
+Prime Mover tries it’s best to handle this situation and if the host operating system rejects the filename, it throws exception runtime errors. Prime Mover cannot just simply rename this on the fly while it’s being copied because the file name might be be referenced somewhere else (e.g. your code, plugins, themes or even dB) thus it can result to 404s or missing images.
+
+Prime Mover cannot just simply ignore or skip this file as this file might be something important for your website to work, otherwise your site won’t properly. Thus the best situation is to bail out and inform the user of this issue.
+
+Once you know the issue that the filename is invalid, the most obvious solution is to rename the file at the source site. If you are trying to rename the file, make sure to update also the links and attachments that uses the image. Otherwise you will end up with 404.
+
+Another solution that you can implement is simply to [exclude the media files in your Prime Mover PRO exports](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-upload-media-files-in-prime-mover-pro/). This requires that you have a [PRO version license activated](https://codexonics.com/prime_mover/prime-mover/pricing/).
+
+Finally the last solution is simply to delete the file in your source site.  This is useful if you don’t need the file in your WordPress posts and content.
+
+Once you have either renamed, exclude or delete the problematic file – please re-generate the export and restore it again on the Windows server. This time, you should not have any runtime errors.
+
+### Contact us
+
+If it still does not work – [please get in touch with us](https://codexonics.com/contact/) and we will check this issue directly in your site.
+
+Was this article helpful?YesNo
+
+---
+
+## FAQ – Troubleshoot Slow Uploads on Package restoration on Local / Remote
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-troubleshoot-slow-uploads-on-package-restoration-on-local-remote/](https://codexonics.com/prime_mover/prime-mover/faq-troubleshoot-slow-uploads-on-package-restoration-on-local-remote/)
+
+## Symptoms
+
+- Prime Mover restore dialog says it takes a lot of time to upload a package.
+- Package is not too big.
+- Package is restored locally (but issue could occur also remotely).
+- Could be using Nginx server (but this issue also occur in Apache, etc.).
+
+## Quickest Solution
+
+If you are really in a hurry to restore package in your local – [please copy the WPRIME package to your Prime Mover export directory](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/). Once you copied it – you can restore it immediately via *WordPress admin -> Prime Mover – Packages*.
+
+## Long Solution
+
+If you really want to upload package, you need to tweak your PHP parameters to make sure it is optimal for uploading. Prime Mover plugin uses these parameters to determine the upload chunks. If your PHP upload parameters are small – chunks are small – thus the upload computed time is very slow.
+
+This solution requires that you have access to your PHP ini configuration file. If you don’t know this – it might be worth checking with your web hosting company. Below are recommended values  a start:
+
+```
+upload_max_filesize = 256M
+post_max_size = 1024M
+memory_limit = 256M
+```
+
+Restart your server and then your PHP upload parameters should now be adjusted. If you do a test upload, the upload time is faster and quicker than the original setting.
+
+## Important for Nginx servers
+
+In Nginx, there is a special directive that limits uploads to 1 MB by default. This is used by WordPress and Prime Mover – thus in Nginx , the default upload with Prime Mover could be very slow!
+
+To fix this , [simply increase the Nginx upload directive](https://www.tecmint.com/limit-file-upload-size-in-nginx/) – this requires you to have server access to your Nginx server. Check with your web host if they can adjust this setting for you. Make sure your server is restarted to make sure the server setting is updated.
+
+## Note on browser upload performance
+
+Take note that Prime Mover can support uploads up to 
+```
+2GB
+```
+
+ using browser. This is because of browser limitation that can vary around 2GB to 4GB with different browsers (including older browsers). Allowing browser uploads of this size can result to poor user experience, timeouts and other issues (e.g. connection issues).
+
+You should upload the package manually using other methods (e.g. SFTP or your hosting cPanel) to Prime Mover export directory and restore it from there. This is the [complete tutorial on how to do this](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/).
+
+## Still having issues?
+
+Please [send us a message](https://codexonics.com/contact/). Thanks.
+
+Was this article helpful?YesNo
+
+---
+
+## FAQ – User difference detection feature
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-user-difference-detection-feature/](https://codexonics.com/prime_mover/prime-mover/faq-user-difference-detection-feature/)
+
+## Benefits
+
+Starting in *Prime Mover 2.0.3*, the plugin checks for user differences. It gives a warning if it detects these issues.
+
+Note: This warning is optional, and the user can proceed to restoration if they wish to.This is added solely for optimal restoration results and practices. By implementing the suggestions in the user difference warning, you will get the following benefits:
+
+- Your source site user IDs are preserved when restored to the target site. When the site is freshly installed, there are no users except one administrator recommended by Prime Mover. During restoration, all users will be recreated using their original user IDs.
+
+- By preserving your site user IDs at the target import site, you will most likely avoid issues associated with user functionality. This is particularly helpful if your site depends heavily on user-based functionalities such as membership sites, E-commerce sites, forums, and subscription-based sites. However, if you skip the fresh install, Prime Mover will still attempt to make an automated user adjustment (by adjusting the source site user ID to the target user ID). But this won’t cover all possible cases, depending on the complexity of your site plugin. That is why a fresh install is usually recommended.
+
+- Starting from a fresh installation speeds up user import and restoration. Prime Mover will skip user adjustment if no differences are detected between the source and target site users. This is particularly important if you migrate a site with many users, as it will save time on restoration.
+
+- Since starting from a fresh blank WordPress database, you will eliminate all possible issues associated with existing and conflicting data. This results in fewer errors and more stable restoration. Otherwise, Prime Mover will still attempt to clean up these tables, which is sometimes complicated due to some existing locking data (such as existing enforced foreign keys).
+
+## What happens if I proceed with “Yes” and ignore the user difference warning?
+
+*The import/restoration should proceed as usual***.** However, when users migrate to the target site, a new user ID will be generated if the existing user ID is already in use by other users (because the site is not empty; there are existing users).
+
+Otherwise, it will still use the original user ID if it isn’t used on the target site. If a user difference is detected, Prime Mover automatically adjusts the old user IDs in the database to their new equivalent user ID at the target site. The detection is based on your site database table 
+```
+user_id
+```
+
+ column, and this automated adjustment does not cover all cases.
+
+This is why, to ensure safety and preserve all source site user IDs, the target site should start from a fresh installation, ensuring the user tables are clean. For this to work fully, the target site’s first user should also match the source site’s first user.
+
+## How does Prime Mover resolve user differences?
+
+This warning dialog only appears if you migrate a package to a WordPress single site. Since Prime Mover 2.0.7, this feature will also be supported in multisite environments, but only in a fresh multisite and when restoring a package to the main site (not to any subsites).
+
+For explanation purposes: “*first user*” is defined as the user with the least user ID on a site. The summarized logic is as follows when restoring the package:
+
+**Case 1: Package’s first user has a user ID of 1, and its email is not the same as the target site’s first user**
+
+If the target site user ID 1 has an email of *target@test.com* and the package from the source site with user ID 1 has an email of*source@test.com*, Prime Mover will recommend a fresh WordPress install using the source site email. This will align the users from the source site with the target site, resulting in zero differences in their user IDs.
+
+**Case 2: Package first user has a user ID greater than 1**
+
+Prime Mover recommends a fresh install using a *different email address*from the source site’s first user. This way, the package’s first user will always use the source site ID and avoid conflict with the target site’s first user email. This will again align the user IDs from the first user to the last user. The user ID of 1 is a unique user that only exists on the target site.
+
+**Case 3: The source and target sites’ first user is already the same, but there are already other users**
+
+In this case, the site is not blank or a fresh install. A fresh installation using the source site email address is recommended. Once the fresh install procedure is completed, there is only one user/administrator in the database, and the rest of the source site users will be migrated using their original user IDs.
+
+## What if the recommended user is not an administrator from the source site?
+
+You can “*temporarily*” make that user the administrator to restore and resolve user differences. Once the restore is done, log in as another administrator and change the user role of that temporary administrator back to its original role.
+
+If this is impossible, click “Yes” to skip the user difference dialog and proceed with the rest of the import. Prime Mover will automatically resolve all user differences via an adjustment.
+
+## Can I turn off this feature? I don’t want to check for user differences during restore; I wish to proceed immediately with the rest of the import process.
+
+Yes, if you need to turn off this feature altogether. Please do the following:
+
+- Log in to your target site as an administrator.
+- Make sure the Prime Mover plugin’s latest version is activated.
+- Go to *Prime Mover -> Advanced -> Debugging Tools -> User diff check* -> check to turn off.
+- Save the setting.
+- Proceed to restore. It no longer checks for user differences for all packages.
+
+## Why is there no user difference warning in multisite?
+
+The user difference warning feature only applies to the following:
+
+- All single-site restorations.
+- (Since Prime Mover 2.0.7) – Multisite main site restorations and using a **freshly installed multisite** (which means only one user/super-admin, only the main site exists – no other subsites). This does not apply to an already established WordPress multisite network.
+
+## Can I still benefit from a fresh install in a multisite to preserve user IDs during import, even without this warning dialog?
+
+*Yes!**Only if you are restoring to a brand-new, freshly installed multisite with no subsites, only one user on it, a**nd your source site’s first user has a user ID of 1.*
+
+If so, install your multisite and start with only one user (“*the network administrator*“). Ensure that your network administrator user ID matches the first user from your source site. This will automatically preserve the user IDs from the user source site.
+
+For example, suppose you want to migrate an existing single site or from another multisite subsite to the target multisite, and the first user of that source site is *someuser@user.test, with a* user ID of 1. In that case, you canresolve user differences at the target multisite by creating your multisite with the network administrator’s email address, such as *someuser@user.test*, and ensuring thatthis first user has a user ID of 1.
+
+In Prime Mover 2.0.7 and later versions, this is now checked during main site migration (e.g., migrating from other sites to your WordPress multisite main site).
+
+## Does it require a new export using the latest version to take advantage of this new feature?
+
+**No**, as long as the package has an 
+```
+WPRIME
+```
+
+ extension and has users exported. You can take advantage of this feature. It does not matter if it’s a package created with older Prime Mover versions.
+
+## Does this feature work for both the FREE and PRO versions?
+
+Yes, this works for both the FREE and PRO versions.
+
+*Last updated: June 7, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## FAQ: What is the difference between “Export as subsite backup” and “Export to multisite format?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-what-is-the-difference-between-export-as-subsite-backup-and-export-to-multisite-format/](https://codexonics.com/prime_mover/prime-mover/faq-what-is-the-difference-between-export-as-subsite-backup-and-export-to-multisite-format/)
+
+## Background
+
+Supposing you arein multisite (at *Sites -> All Sites*) and you click the Export button in your subsite blog ID: 3 – you might see this Export type setting:
+
+## The difference between the two
+
+Basically, “*Export as subsite backup*” is a short cut of “*Export to multisite format*” when you are creating a backup of the same multisite subsite. For example – when you click Export button of sub-site blog ID: 3 and you want to create a subsite backup  (*like the above screenshot*).
+
+When you select “*Export as subsite backup*” – it will create a Prime Mover WPRIME package targeting blog ID: 3 (a backup of blog ID: 3) which you can restore to a subsite with blog ID 3.
+
+However if you select “*Export to multisite format*” – an additional text box will slide down asking you to enter the target blog ID:
+
+Now if you enter 3 in the text box (as blog ID) – **The resulting package between “Export to multisite format” will be same as “Export as subsite backup”**.
+
+In other words – “*Export as subsite backup*” – is the same as “Export to multisite format” with the blog ID of the current site you are exporting. This feature is added so user won’t be adding the blog ID number manually  every time  they want to create backup. It saves time and convenient as you don’t need to enter the blog ID every time you create a backup.
+
+If you enter a different blog ID in the “*Export to multisite format*” – the package is now targeted to a different subsite – it’s no longer considered as a subsite backup package since it cannot be restored to the current sub-site (the blog ID is now different). This is usually used when you want to migrate subsite to a different subsite with diferent blog ID. For example – if you enter blog ID: 10. It will create a multisite package targeting to blog ID 10.
+
+Please [read this guide on the explanation of different Prime Mover packages](https://codexonics.com/prime_mover/prime-mover/important-notes-on-prime-mover-single-site-and-multisite-packages/) and how it can be applied to different migration/backup scenarios.
+
+## Questions?
+
+If you have follow-up questions on this topic – please ask it via our [official contact page](https://codexonics.com/contact/).
+
+Was this article helpful?YesNo
+
+---
+
+## FAQ – When migrating a multisite to another multisite – do source subsite and target subsite IDs need to be the same?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-when-migrating-a-multisite-to-another-multisite-do-source-subsite-and-target-subsite-ids-need-to-be-the-same/](https://codexonics.com/prime_mover/prime-mover/faq-when-migrating-a-multisite-to-another-multisite-do-source-subsite-and-target-subsite-ids-need-to-be-the-same/)
+
+The target subsite blog ID may or may not be the same with the source subsite blog ID. Prime Mover supports this type of migration as long as you created a multisite package for the**correct target blog ID**.
+
+## Case Example
+
+Say you have a source WordPress multisite subsite that you want to migrate to another WordPress multisite server. The source subsite blog ID is 145. But the target subsite does not yet exist on target multisite.
+
+For this type of migration example,  a typical solution would be:
+
+- In your target multisite server – create a blank subsite in *Network Admin -> Sites -> Add New*.
+- WordPress assigns a new blog ID of this new subsite.  This is your target blog ID. Say for example the target blog ID is 101. [Please take note of this target blog ID](https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/).
+- In your source site multisite server – click Export button for source subsite blog ID 145 in *Network Admin -> Sites*.
+
+- Create a multisite package targeting to the target subsite blog ID (which is 101 in our example).
+
+- Once the package is completely created – you can now migrate this package to target multisite subsite blog ID 101.
+
+====================================
+
+Optionally – you can read the following related documentations on knowing more about Prime Mover packages as well as the other features that you can use.
+
+- [Mismatch Import! Error – Troubleshooting and Solutions](https://codexonics.com/prime_mover/prime-mover/mismatch-import-error-troubleshooting-and-solutions/)
+- [Can I change the exporting Blog ID to another site importing blog ID?](https://codexonics.com/prime_mover/prime-mover/can-i-change-the-exporting-blog-id-to-another-site-importing-blog-id/)
+- [Prime Mover single-site and multisite packages](https://codexonics.com/prime_mover/prime-mover/important-notes-on-prime-mover-single-site-and-multisite-packages/)
+- [Complete plugin documentation (PRO and FREE)](https://codexonics.com/prime_mover/prime-mover/)
+
+Was this article helpful?YesNo
+
+---
+
+## Frequently Asked Questions
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq/](https://codexonics.com/prime_mover/prime-mover/faq/)
+
+Scope: **Prime Mover Free / Pro version**
+
+### Can I purchase Prime Mover PRO if it’s sold on another website?
+
+No, that is illegal and a counterfeit copy of the PRO version. Please [purchase and upgrade directly from us](https://codexonics.com/prime_mover/prime-mover/general-documentation/how-to-legally-purchase-the-pro-version/). This will ensure we can support it and that you are using the genuine PRO version.
+
+### What is the complete list of files that have been migrated or backed up?
+
+Please [check out this answer](https://codexonics.com/prime_mover/prime-mover/faq/what-is-the-complete-list-of-files-migrated-or-backed-up/).
+
+### Does Prime Mover allow for automatic or scheduled backups?
+
+Yes, but you must upgrade to Prime Mover PRO 2.0 or higher. This new feature is compatible with both multisite and single-site WordPress environments. Refer to the [documentation](https://codexonics.com/prime_mover/prime-mover/#automaticbackup) to learn how it works and how to use it effectively.
+
+### Can this migrate or back up the multisite main/primary site?
+
+Since Prime Mover version 1.2.2, [it can now support backup and migration on the multisite main site](https://codexonics.com/prime_mover/prime-mover/how-to-backup-and-migrate-multisite-main-site-in-wordpress/). This is only available with the PRO version.
+
+However, please note that the free version allows backup and migration for an unlimited number of multisite sub-sites.
+
+### Can this be used to migrate an entire multisite network?
+
+No, the Prime Mover plugin can only import one site or subsite at a time. This feature will be added in a future release.
+
+### Is there a way to speed up the export and import process?
+
+Yes, sure, you can [enable turbo mode](https://codexonics.com/prime_mover/prime-mover/help-my-export-and-restore-is-very-slow-after-updating-to-prime-mover-1-9-5/), which works for both export and import. Please note that not all hosts can support this feature.
+
+### What are Prime Mover’s technical requirements?
+
+Please refer to the [plugin’s minimum technical requirements](https://codexonics.com/prime_mover/prime-mover/prime-mover-technical-requirements/).
+
+### How do you restore large packages using the Free version?
+
+Please [read this tutorial for details](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/).
+
+### When migrating a multisite to another multisite, do the source subsite and target subsite blog IDs need to match?
+
+Please [read this FAQ](https://codexonics.com/prime_mover/prime-mover/faq-when-migrating-a-multisite-to-another-multisite-do-source-subsite-and-target-subsite-ids-need-to-be-the-same/).
+
+### I am unable to activate the license due to errors.
+
+Please [read this tutorial for details](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/).
+
+### The Prime Mover plugin gets deactivated every time I activate it. Is this normal?
+
+Yes, Prime Mover ensures that it can only be activated on sites that meet the minimum requirements. Therefore, it will automatically deactivate if it detects missing requirements. You should be able to determine the missing requirements, as it will output an admin notice error. You can resolve the issue (e.g., check for permission issues) or contact your web host. If you have not received an administrative error notice, please contact us to check on the status.
+
+### I want to purchase; how many licenses do I need?
+
+Please read our [licensing guide for details](https://codexonics.com/prime_mover/prime-mover/a-complete-guide-on-using-prime-mover-licenses/).
+
+### Does this plugin work on localhost?
+
+Yes, of course. You can migrate or do backups at localhost. And then migrate to a remote server and vice versa.
+
+### When downloading my packages, I got a “Secure Connection Failed” error in Firefox.
+
+Try downloading the packages using the Chrome browser. Alternatively, you can [download your package via SFTP or use your hosting file manager](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/).
+
+### I’m unable to download the WPRIME package because it hangs or encounters errors. Is there any other way?
+
+Yes, [please look into this guide](https://codexonics.com/prime_mover/faq-how-to-download-wprime-package-via-other-methods/). You can also [download the package via SFTP or a file manager](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/).
+
+### Does this plugin work with any hosting companies?
+
+Yes. This plugin also supports both Linux and Windows server environments. If you find a host that does not work with Prime Mover, please submit a bug ticket so we can[investigate the issue immediately](https://codexonics.com/contact/).
+
+### How do you cancel ongoing exports and try again?
+
+To correctly cancel an ongoing export and try the export again, [please read this detailed tutorial](https://codexonics.com/prime_mover/prime-mover/how-to-cancel-ongoing-export-and-try-again/).
+
+### Do I need to adjust my PHP upload parameters for large packages?
+
+**Updated solution**: [Please check out this recent tutorial](https://codexonics.com/prime_mover/prime-mover/faq-troubleshoot-slow-uploads-on-package-restoration-on-local-remote/).
+
+This is not required. Prime Mover is designed to cope with limited PHP upload parameters. So, even if your package size is 60 MB and your server’s PHP max upload file size is only 2 MB (the PHP default, and you are on shared hosting—this cannot be changed), Prime Mover will still work.
+
+Prime Mover will automatically slice your package into 2MB upload sessions until it is uploaded completely. It even checks if you have a slower connection and adjusts the slice accordingly, as your connection can only handle a certain amount of data without sending too much to the server.
+
+### I encountered the runtime error “Main extraction failed: No error” in Windows/Microsoft IIS. What’s the workaround?
+
+This is caused by a Windows limitation relating to the number of characters in the file path (the path inside the package is included). [Please read this guide for the complete workaround and solution](https://codexonics.com/prime_mover/prime-mover/zip-failed-some-file-paths-exceed-windows-max_path-limit/).
+
+### I want to take advantage of a free trial or purchase a license. How many licenses do I need?
+
+For detailed guidance, please [refer to this guide](https://codexonics.com/prime_mover/prime-mover/faq/i-would-like-to-avail-myself-of-a-free-trial-or-purchase-a-license-how-many-licenses-do-i-need/).
+
+### Should I adjust my server timeout settings to export or restore large sites?
+
+It [depends on your server timeout settings](https://codexonics.com/prime_mover/prime-mover/faq/should-i-adjust-my-server-timeout-settings-to-export-or-restore-large-sites/).
+
+### I received an error stating that the wp-config file is not writable.
+
+Since Prime Mover version 1.2.7, you can manually add constants to the config file (provided by your host or any other means to add those constants manually) if wp-config.php is not writable by the plugin.
+
+Then, you should be able to re-activate and usually use Prime Mover. Please [review this documentation using the plugin on sites that restrict access to the wp-config.php](https://codexonics.com/prime_mover/prime-mover/how-does-prime-mover-works-in-hosts-that-restricts-wp-config-php-writing-access/) file.
+
+### What is a debug package?
+
+The debug package is a Prime Mover package without media uploads, simplifying migration. It is ideal for developers needing to clone/migrate a site for WordPress debugging.
+
+The debug package is not recommended for migrating complete sites (which means working/stable images, etc.). It does not handle images as it did in stable sites. It is only used for debugging/troubleshooting purposes.
+
+### What is the WPRIME file extension / archiving format?
+
+Since version 1.1.5, Prime Mover archives using 
+```
+WPRIME
+```
+
+ file extension. This derivative of the Linux tarball (.tar) format follows its specifications. It’s customized to meet Prime Mover’s specialized archiving needs, including encryption, decryption, file integrity checks, and storing specific metadata used during the archiving process.
+
+This more robust archiving format outperforms the previous zip archiving format.
+
+### Will the free version be able to handle huge sites?
+
+Yes, but it [depends on your server specifications](https://codexonics.com/prime_mover/prime-mover/faq/will-the-free-version-be-able-to-handle-huge-sites/).
+
+### Is there any way to speed up the migration process for default upload restoration?
+
+**Updated solution**: [Check out this recent tutorial](https://codexonics.com/prime_mover/prime-mover/faq-troubleshoot-slow-uploads-on-package-restoration-on-local-remote/)!
+
+If your package is hosted on third-party sites, such as other websites or cloud services like Dropbox or Google Drive, you can use the PRO feature “*Remote URL restore*.” This will speed up the process since it will fetch the package URL directly from the source and download it directly to your site. No need to download to your Desktop and upload again!
+
+### Will the free version restore encrypted packages created by the Pro version?
+
+No, you need the PRO version to restore encrypted packages.
+
+### Why am I only able to restore by uploading or via the backup page
+
+You are using the Free version. In the Pro version, you should be able to restore the package via uploads and remote URLs, as well as restore it as a backup within your server or from Dropbox**.**
+
+### How can I exclude some plugins from being included in the migration package?
+
+The free version does not include a plugin exclusion feature, which is only available in the PRO version. This is the [complete documentation of this feature](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/).
+
+### How can I exclude some media files from the migration package?
+
+The free version does not include a media files exclusion feature, which is only available in the PRO version. This is the [complete documentation of this feature](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-upload-media-files-in-prime-mover-pro/).
+
+### I encountered a runtime restore/import error on Windows: ‘Failed to open the stream, no such file or directory exists.’
+
+Your package might contain [invalid file names in Windows](https://codexonics.com/prime_mover/prime-mover/faq-runtime-error-on-windows-failed-to-open-stream-no-such-file-or-directory/).
+
+### Is my package secure?
+
+The free version saves the package path in your Prime Mover backup directory with randomized file names. The package is also protected with .htaccess in Apache, so there is no direct way for anyone to download it. However, the free version does not support encryption, so anyone with access to your package can read the database and media files.
+
+In the Pro version, optional encryption support is available to protect your database, media files, plugins, and theme files. Also, in the Pro version, you can move the backup directory outside the web root. This is highly recommended if data security is a concern.
+
+### How does this work in multisites?
+
+Prime Mover supports multisite migrations (including FREE versions). This is done only on the network administration pages by super-administrators. The free and pro versions do not support giving this privilege to ordinary subsite administrators.
+
+The migration mode can support (available in both Free and Pro versions):
+
+- Single-site migration to Single-site
+- Single-site migration to Multisite sub-site
+- Multisite sub-site migrate to another Multisite sub-site (even using different blog IDs)
+- Multisite sub-site migrates to a single site.
+
+### Why must a blog ID be provided for a single-site to multisite migration?
+
+Prime Mover uses this blog ID to validate the site restoration. Without the blog ID, it is impossible to detect the target subsite in a multisite.
+
+### Are there any limitations to using this plugin?
+
+It can be prolonged if you are on shared hosting and migrating huge sites. The resources provided by your shared host (CPU, memory, requests, etc.) limit the plugin. Sometimes, these shared hosts are very restrictive in terms of resources, which makes them unable to complete exports, imports, or even any migration plugins. Even WordPress core operations themselves, such as installing or updating large plugins from the repository, can result in errors.
+
+### Is this PHP 8.3 + compatible?
+
+Yes, PHP 8.3+ is fully supported and highly recommended if your plugins and themes also support it. However, if you have doubts, Prime Mover is fully compatible with PHP 7.4 / 8.0 / 8.1, ensuring that all your site’s plugins/themes/custom code can support it (which is unusual if it doesn’t).
+
+Prime Mover could still reliably run PHP 5.6+ (provided you are still usinancientld/outdated plugins/themes or have an ancient site that still supports it). We added this support so users can still migrate old sites to newer installations. We no longer recommend using PHP 5.6 – PHP 7.3, as it’s outdated, slow, and not supported by WordPress Core.
+
+### While restoring a site, it freezes and no longer provides progress. Is this normal?
+
+Your internet connection might have been disconnected while you were doing an export or restore. As a result, the JS progress update is cut off (as it communicates from your browser to the server). Please clear your browser and ensure your connection is stable; then try again.
+
+### I saw some errors being logged during migration. Do I need to panic?
+
+No. Due to the complex nature of restoration, you may encounter random errors as the site is not yet fully migrated. This is usually normal if the site does not encounter fatal runtime errors. It is recommended to wait until the migration is complete and then check the site’s visual and functional results. If the site appears to be broken, it’s time to investigate these errors in detail.
+
+### I saw some 404 errors after the migration. Do I need to worry?
+
+No. You need to refresh the permalink by logging in to your *WordPress admin, then* navigating to Settings >*Permalinks*. Click save (do not change any settings). This should resolve most 404 issues.
+
+If you are using Litespeed servers with built-in caching + Cloudflare, you will experience incompatibility issues. To fix this, [please check this tutorial](https://codexonics.com/prime_mover/prime-mover/troubleshooting-all-post-and-pages-are-404-after-migration-except-homepage/).
+
+### The site got locked in maintenance mode. How to get out of maintenance mode?
+
+In version 1.0.3 and later, we added a link for administrators to turn off maintenance mode. Pasting the link in the browser address bar is no longer necessary. If you happen to be logged out, you should manually delete the option *prime_mover_maintenance* in the WordPress database options table.
+
+If you are on a multisite, manually delete the 
+```
+.maintenance
+```
+
+ file like any stalled WordPress updates.
+
+### Error: Wrong import site package! Please check that the import package is correct for this site.
+
+Please read [this tutorial](https://codexonics.com/prime_mover/prime-mover/faq/error-wrong-import-site-package-please-check-that-the-import-package-is-correct-for-this-site/).
+
+### Who is Freemius? Can I deactivate or remove Freemius?
+
+Learn more about our [partnership with Freemius here](https://codexonics.com/prime_mover/prime-mover/faq/who-is-freemius-can-i-deactivate-or-remove-freemius/) and why this cannot be deactivated or removed.
+
+### How can I get support?
+
+The free version of Prime Mover has community support in the WordPress.org forum. PRO and Free Trial customers can get faster/dedicated technical support through email. This can be done using the contact form within the plugin admin settings. If you wish to send sensitive details to the plugin author only, [please use](https://codexonics.com/contact/)[our contact page](https://codexonics.com/contact/).
+
+You can also obtain support directly from your WordPress admin panel. Head to Prime Mover -> Contact Us and send us a message or submit details. Please ensure that you include all necessary information (such as the link to download the package and WordPress logins) to help us resolve the issue quickly.
+
+### What is your support policy?
+
+[It’s here.](https://codexonics.com/support-policy/)
+
+### What is your refund policy?
+
+Please read the [refund policy](https://codexonics.com/support-policy/#refundpolicy).
+
+### Where can I ask Pre-sales Questions?
+
+You can ask questions before making a purchase. Please click the link to our pre-sales questions page or our contact page for more information.
+
+*Last updated: February 10, 2026*
+
+Was this article helpful?YesNo
+
+---
+
+## Error: Wrong import site package! Please check that the import package is correct for this site.
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq/error-wrong-import-site-package-please-check-that-the-import-package-is-correct-for-this-site/](https://codexonics.com/prime_mover/prime-mover/faq/error-wrong-import-site-package-please-check-that-the-import-package-is-correct-for-this-site/)
+
+An incompatible restore package causes this. For example, you can restore a single-site package to a multisite server or vice versa, or you can restore a multisite package intended for another sub-site blog ID.
+
+To fix this issue, make sure that:
+
+- If you want to **migrate to a Wor****dPress single-site, create a single-site export and restore that single-site package to any WordPress single-site only.**For example, make sure this is checked during export:
+
+Then,restore this package ONLY to the single site.
+
+- If you want to **migrate to a WordPress multisite subsite** with blog ID (e.g., 7), **create a multisite package**targeting blog ID 7. Restore that multisite package to only the subsite blog ID 7. For example, you need to check export to multisite format and provide seven as the blog ID, e.g.
+
+Then,****this package will be restored **only to the multisite sub-site with blog ID 7**.
+
+It does not matter whether you create these packages at a single site or a multisite. The only important thing is that you make the **correct package for your target destination** (by providing the correct export type) (*single site package for single site destination or multisite package for multisite destination*)
+
+*Last updated: August 27, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How many licenses do I need? I would like to avail myself of a free trial or purchase a license.
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq/i-would-like-to-avail-myself-of-a-free-trial-or-purchase-a-license-how-many-licenses-do-i-need/](https://codexonics.com/prime_mover/prime-mover/faq/i-would-like-to-avail-myself-of-a-free-trial-or-purchase-a-license-how-many-licenses-do-i-need/)
+
+First, we would like to thank you for your interest in purchasing a plugin license. It helps the plugin author find a sustainable livelihood!
+
+We always **recommend****starting w****ith a 10-site license if you are migrating from a WordPress multisite to a single site** or vice versa. This is one of the most popular plans.
+
+This is the most flexible license and should work whether you are planning to use the plugin on a single-site or multisite platform.
+
+If you are really sure that you are*only dealing with one WordPress**single site* (no multisites at all or multiple single sites in different hosts!), Then you can start with a single-site license only.
+
+If you are aWordPress site development business, web agency, or professional site developer/designer migrating/developing/deploying a large number of sites — whether multisite or single-site — then we recommend an unlimited site license. This way, you are not limited to the number of sites on which you can install the license.
+
+For more information, [please refer to](https://codexonics.com/prime_mover/prime-mover/a-complete-guide-on-using-prime-mover-licenses/)[the Prime Mover licensing guide](https://codexonics.com/prime_mover/prime-mover/a-complete-guide-on-using-prime-mover-licenses/). Click this link if you’d like to try the [14-](https://checkout.freemius.com/mode/dialog/plugin/3826/plan/6162/?trial=paid)[day risk-free trial.](https://checkout.freemius.com/mode/dialog/plugin/3826/plan/6162/?trial=paid)
+
+Was this article helpful?YesNo
+
+---
+
+## Should I adjust my server timeout settings to export or restore large sites?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq/should-i-adjust-my-server-timeout-settings-to-export-or-restore-large-sites/](https://codexonics.com/prime_mover/prime-mover/faq/should-i-adjust-my-server-timeout-settings-to-export-or-restore-large-sites/)
+
+It is not needed since Prime Mover defaults to a 15-second retry timeout. This means that Prime Mover has 15 seconds to process any task. If a process requires more than 15 seconds, it will exit and make another request, which will also take 15 seconds to continue processing. This is repeated until the entire process is completed.
+
+15 seconds should be enough to avoid standard timeout settings, such as PHP’s default of 30 seconds or 60 seconds (or more, which most hosts implement).
+
+If 15 seconds is still not enough because, for some reason, you still hit the short timeout (e.g., your host has a strict 30-second timeout), you can set it to a shorter duration, such as 10 seconds. Add this to your wp-config.php:
+
+```
+define('PRIME_MOVER_RETRY_TIMEOUT_SECONDS', 10);
+```
+
+Therefore, any process that is not completed within 10 seconds should exit and retry. A 10-second retry should now appear before hitting a 30-second timeout.
+
+Was this article helpful?YesNo
+
+---
+
+## What is the complete list of files that have been migrated or backed up?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq/what-is-the-complete-list-of-files-migrated-or-backed-up/](https://codexonics.com/prime_mover/prime-mover/faq/what-is-the-complete-list-of-files-migrated-or-backed-up/)
+
+If you choose the complete export mode, which is “**Export database, media files, plugins, and themes**.”, it will export the following:
+
+- Database of your site. (one SQL file), You can encrypt this database using the PRO version.
+- All files in your 
+```
+wp-content/uploads
+```
+
+ directory for a single site or 
+```
+wp-content/uploads/sites/[blog_id]
+```
+
+ in case of a multisite subsite. You can exclude files in the PRO version. You can also encrypt all these media files in the PRO version.
+- All **activated plugins** for that site (including network-activated plugins if you are in a multisite) are exported. You can exclude these plugins in the PRO version for both single-site and multisite. You can also encrypt plugin files for security reasons and to avoid code tampering.
+- The site’s current activated theme (parent theme or parent theme + child theme if both are used). In the PRO version, you can choose to encrypt both parent and child themes for the****best security.
+
+It does not currently include the following:
+
+- WordPress core files. This is not needed since most WordPress installations assume they are using the latest version for security reasons.
+- All files outside your WordPress installation. For example, you have a custom directory created outside your WordPress installation that is NOT in the site uploads directory.
+- ```
+wp-config.php
+```
+
+ Of the site. This is not needed since it will always use the wp-config.php of the target site.
+- ```
+.htaccess
+```
+
+ or any other server configurations (such as in nginx, etc.)—this is also not needed since it will always use the target site server configurations for maximum compatibility.
+
+Was this article helpful?YesNo
+
+---
+
+## Who is Freemius? Can I deactivate or remove Freemius?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq/who-is-freemius-can-i-deactivate-or-remove-freemius/](https://codexonics.com/prime_mover/prime-mover/faq/who-is-freemius-can-i-deactivate-or-remove-freemius/)
+
+We use [Freemius](https://freemius.com/) as a licensing platform for the plugin’s pro version. It’s included in the free version, so any user can easily upgrade to the PRO version. You can choose to unsubscribe from any communications by Freemius after activating the free version. Just click “Skip” in the opt-in dialog. Freemius will not slow down your site or harvest personal details without your permission. If you have any questions related to Freemius, feel free to shoot a question to freemius.com.
+
+By partnering with Freemius, we are able to do the following easily as developers:
+
+- Offer and sell our PRO version to users worldwide.
+- Easily accepts the three main currencies when purchasing the PRO version (USD, GBP, and EUR).
+- Manage our customer accounts with a client and developer dashboard.
+- Clear separation of technical work (our work as developers) from the selling aspect of the plugin (which is handled by Freemius)
+- Offer different selling modes to cater to all types of customers (yearly/monthly subscription or even lifetime plans, which work for them).
+- Manage licenses and plans that any customer will need (single-site license plan, 10-site license, or even unlimited license plan)
+- Create our PRO and FREE versions seamlessly which simplifies the release cycle.
+
+Because we earn income from selling our PRO versions, this cash flow sustains us, and that is the reason the Prime Mover plugin will continue to improve, become more powerful, stable, and reliable with every released version.
+
+Every time we release a new PRO version, there is an equivalent free version that is made available on [WordPress.org](https://wordpress.org/plugins/prime-mover/). This means a bug fix meant for the plugin is beneficial for both free and paid customers. This does not limit itself to bug fixes, but also includes usability and other minor features.
+
+The only difference is that the free version does not include the paid PRO features. Freemius is an indispensable tool in all of these endeavors. Therefore it cannot be remove as it is part of the workflow and processes.
+
+Was this article helpful?YesNo
+
+---
+
+## Will the free version be able to handle huge sites?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq/will-the-free-version-be-able-to-handle-huge-sites/](https://codexonics.com/prime_mover/prime-mover/faq/will-the-free-version-be-able-to-handle-huge-sites/)
+
+Yes, actually, supposing you have a reasonably fast hosting server and ample hosting resources available (CPU, memory, disk space, etc.). Prime Mover should have no issues exporting large sites, even those exceeding several GB, even with the*free version.*
+
+If you also have a super-fast upload connection speed (e.g., a 100 Mbps upload speed—please check with a speed test), Prime Mover should have no issues uploading it to your target site. This is recommended up to 3.5 GB only. This is due to browser limitations, as some browsers may experience problems uploading huge files.
+
+If you fall into the following scenarios:
+
+- Slow upload connection speed.
+- Slow target site hosting server. (e.g., the limited shared host that restricts file size)
+- Your package size is beyond 3.5 GB.
+
+The best solution is to manually upload the package and then restore it from the [Prime Mover package management page (within the](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/)[WordPress admin)](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/).
+
+If the restore fails due to a server limitation and you want to manually migrate files (uploads directory, plugins/ themes),[this tutorial could help](https://codexonics.com/prime_mover/prime-mover/how-to-migrate-very-large-wordpress-sites-by-parts/).
+
+Was this article helpful?YesNo
+
+---
+
+## General Documentation
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/general-documentation/](https://codexonics.com/prime_mover/prime-mover/general-documentation/)
+
+## Search
+
+Search
+## Index
+
+[Frequently Asked Questions](https://codexonics.com/prime_mover/faq/)
+
+[Prime Mover Technical Requirements](https://codexonics.com/prime_mover/prime-mover/prime-mover-technical-requirements/)
+
+[Complete guide on Prime Mover Licensing](https://codexonics.com/prime_mover/prime-mover/a-complete-guide-on-using-prime-mover-licenses/)
+
+[How to legally purchase the PRO version?](https://codexonics.com/prime_mover/prime-mover/general-documentation/how-to-legally-purchase-the-pro-version/)
+
+[How to migrate your WordPress single-site to another single site](https://codexonics.com/prime_mover/video-how-to-migrate-your-wordpress-single-site-to-another-single-site/)
+
+[How to migrate your WordPress single-site to a multisite subsite](https://codexonics.com/prime_mover/how-to-migrate-your-wordpress-single-site-to-multisite-sub-site/)
+
+[How to migrate your WordPress multisite subsite to single-site](https://codexonics.com/prime_mover/how-to-migrate-your-wordpress-multisite-sub-site-to-single-site/)
+
+[How to migrate your WordPress multisite subsite to another multisite network](https://codexonics.com/prime_mover/how-to-migrate-your-wordpress-multisite-sub-site-to-another-multisite-sub-site/)
+
+[Prime Mover single-site and multisite packages](https://codexonics.com/prime_mover/prime-mover/important-notes-on-prime-mover-single-site-and-multisite-packages/)
+
+[How to get a multisite target blog ID?](https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/)
+
+[Can I change the exporting Blog ID to another site that imports the blog ID?](https://codexonics.com/prime_mover/prime-mover/can-i-change-the-exporting-blog-id-to-another-site-importing-blog-id/)
+
+[Prime Mover User Migration documentation](https://codexonics.com/prime_mover/prime-mover/prime-mover-user-migration-documentation/)
+
+[Using Prime Mover when wp-config.php is not writable](https://codexonics.com/prime_mover/prime-mover/how-does-prime-mover-works-in-hosts-that-restricts-wp-config-php-writing-access/)
+
+[Best practices when migrating large sites with Prime Mover Plugin](https://codexonics.com/prime_mover/prime-mover/tips-and-techniques-in-migrating-large-sites-with-prime-mover-plugin/)
+
+[FAQ: How do you download the WPRIME package using other methods?](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/)
+
+[How do you extract the WPRIME package manually?](https://codexonics.com/prime_mover/prime-mover/how-to-manually-extract-wprime-package/)
+
+[How do you migrate very large WordPress sites by parts?](https://codexonics.com/prime_mover/prime-mover/how-to-migrate-very-large-wordpress-sites-by-parts/)
+
+[FAQ – How does WordPress multisite migration affect the main site?](https://codexonics.com/prime_mover/prime-mover/faq-how-does-wordpress-multisite-migration-affects-the-main-site/)
+
+[FAQ: What is the difference between “Export as subsite backup” and “Export to multisite format?](https://codexonics.com/prime_mover/prime-mover/faq-what-is-the-difference-between-export-as-subsite-backup-and-export-to-multisite-format/)
+
+[Prime Mover user adjustment API complete documentation](https://codexonics.com/prime_mover/prime-mover/prime-mover-user-adjustment-api/)
+
+[How do you free up space and delete unneeded files and backups?](https://codexonics.com/prime_mover/prime-mover/how-to-free-up-space-and-deleting-unneeded-files-and-backups/)
+
+[How do you cancel ongoing exports or imports and try again?](https://codexonics.com/prime_mover/prime-mover/how-to-cancel-ongoing-export-and-try-again/)
+
+[Custom user adjustment usage feature](https://codexonics.com/prime_mover/prime-mover/custom-user-adjustment-usage-feature/)
+
+[How to create a fresh WordPress install with a specific administrator email?](https://codexonics.com/prime_mover/prime-mover/how-to-create-fresh-wordpress-install-with-specific-administrator-email/)
+
+[Understanding Prime Mover backup options](https://codexonics.com/prime_mover/prime-mover/understanding-prime-mover-backup-options/)
+
+[How to create a fresh WordPress multisite install with a specific network administrator email?](https://codexonics.com/prime_mover/prime-mover/how-to-create-a-fresh-wordpress-multisite-install-with-a-specific-network-administrator-email/)
+
+[Compatible local development apps – Prime Mover plugin](https://codexonics.com/prime_mover/prime-mover/compatible-local-development-apps-prime-mover-plugin/)
+
+[Migration tip: Do not use relative URLs in your WordPress site development](https://codexonics.com/prime_mover/prime-mover/general-documentation/migration-tip-do-not-use-relative-urls-in-your-wordpress-site-development/)
+
+Was this article helpful?YesNo
+
+---
+
+## How to legally purchase the PRO version?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/general-documentation/how-to-legally-purchase-the-pro-version/](https://codexonics.com/prime_mover/prime-mover/general-documentation/how-to-legally-purchase-the-pro-version/)
+
+## Authorized seller
+
+There is only **one authorized seller**of Prime Mover PRO**,** and that is from the developer 
+```
+Codexonics Ltd
+```
+
+ in partnership with [Freemius Inc.](https://freemius.com/) (*which handles our checkout procedures, subscriptions, and user accounts*).
+
+Please purchase or upgrade only to Prime Mover PRO via any of the following options(*choose which is most convenient for you*)
+
+- On our official website [purchase page](https://codexonics.com/prime_mover/prime-mover/pricing/).
+- Inside your WordPress admin (via *Prime Mover -> Upgrade*). This is best if you are already using the Prime Mover FREE version obtained from the official [WordPress.org plugin repository](https://wordpress.org/plugins/prime-mover/).
+- If you already have a Freemius account associated with the Prime Mover plugin, please [refer to this upgrade procedure](https://codexonics.com/prime_mover/prime-mover/how-to-upgrade-your-existing-pro-plan-to-higher-plan/).
+
+That’s it! Please don’t upgrade or purchase licenses from sources not listed above, as this is *illegal and could harm**your site*.
+
+## Why is purchasing cracked/nulled versions or from unauthorized sources dangerous?
+
+If you search the Internet and decide to buy a cracked version because it’s cheap and practical, please read below so you will know the consequences of these actions:
+
+- Cracked or nulled versions may contain viruses or malware that could compromise your site’s security.
+- The copies you obtained from these unauthorized sources are not guaranteed to be *genuine* (from the developer’s perspective) as they are considered **counterfeit products**.
+- Counterfeit products may have serious security issues, limited functionality, outdated versions, and altered code that could result in bugs. This is never the same as a fully working, genuine PRO version you get when you buy directly from us.
+- You are supporting the proliferation of software piracy, which is illegal, and you possibly face legal consequences (depending on the laws of your country).
+- We don’t honor licenses obtained from unauthorized sources, and we don’t provide updates or technical support to customers who obtain their PRO licenses from unauthorized sources.
+- By purchasing directly from the developers, you support their ongoing development and improvements, which require time and money.
+- Purchasing through unauthorized sources does not really benefit the WordPress community and the entire plugin ecosystem. These software pirates don’t code, fix bugs, test releases, write documentation, add new features, promote plugins, or even provide timely, detailed technical support. Always remember that.
+
+Was this article helpful?YesNo
+
+---
+
+## Migration tip: Do not use relative URLs in your WordPress site development
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/general-documentation/migration-tip-do-not-use-relative-urls-in-your-wordpress-site-development/](https://codexonics.com/prime_mover/prime-mover/general-documentation/migration-tip-do-not-use-relative-urls-in-your-wordpress-site-development/)
+
+## Background
+
+Illustrating with a concrete example is the best way to demonstrate why this is a bad idea, especially if you want your site to be portable (e.g., migrating from multisite to single site, or vice versa).
+
+## Case development example
+
+Say, for example, you have a URL to your image like this on your subsite:
+
+```
+https://yoursite.test/my-subsite/wp-content/themes/test-theme/test.jpg
+```
+
+For which:
+
+```
+https://yoursite.test/
+```
+
+  -> This is your main site URL (*your multisite uses a subdirectory format*). And then:
+
+```
+https://yoursite.test/my-subsite/
+```
+
+ is your subsite URL.
+
+Supposing you use the relative URL version of this image in your WordPress site like this:
+
+```
+/my-subsite/wp-content/themes/test-theme/test.jpg
+```
+
+While you are still in multisite, the relative URL should still work because when WordPress sees:
+
+```
+/my-subsite/wp-content/themes/test-theme/test.jpg
+```
+
+It will resolve correctly and append your main site to it so that it will become:
+
+```
+https://yoursite.test/my-subsite/wp-content/themes/test-theme/test.jpg
+```
+
+## Why do relative URLs cause migration problems?
+
+Now, suppose you decide to migrate this subsite to a standalone WordPress installation *(single-site*) using Prime Mover. Say, for example, your new domain in a single-site is:
+
+```
+https://my-standalonesite.test/
+```
+
+The search-and-replace process during migration automatically detects all URLs and paths and replaces them with the target site paths/URLs.
+
+However, if you are using a relative URL, this won’t work. Looking into this relative URL path:
+
+```
+/my-subsite/wp-content/themes/test-theme/test.jpg
+```
+
+Prime Mover’s automated search-and-replace process has no idea how to handle this URL. It is because it has no domain attached. Therefore, the above URL is skipped during search-and-replace processing. It remains as a relative URL.
+
+As a result, the above relative URL at the target standalone site becomes:
+
+```
+https://my-standalonesite.test/my-subsite/wp-content/themes/test-theme/test.jpg
+```
+
+Obviously, this does not exist on your target site, which is why it returns a 404 error for the image.
+
+## Fix the issue: Always use absolute URLs!
+
+Instead of using relative URLs, use absolute URLs. These URLs show the full URL, including the domain name, path, and query parameters. This makes your site fully portable for migrations. Since the domain name is included, it will be searchable and replaceable during the Prime Mover migration process.
+
+Let’s use the above example – supposing you use absolute URLs instead of relative URLs to render your image. The URL that is stored inside your database for that example image is:
+
+```
+https://yoursite.test/my-subsite/wp-content/themes/test-theme/test.jpg
+```
+
+When this is migrated to a WordPress single site with a domain name:
+
+```
+https://my-standalonesite.test/
+```
+
+The subsite URL:
+
+```
+https://yoursite.test/my-subsite/
+```
+
+This will be searched and replaced with the single-site domain name: 
+```
+https://my-standalonesite.test/
+```
+
+Therefore, it will become:
+
+```
+https://my-standalonesite.test/wp-content/themes/test-theme/test.jpg
+```
+
+The image URL will now be correct after migration. This is why you should always use absolute URLs rather than relative ones.
+
+## Summary
+
+- Relative URLs are not friendly for migration.
+- Absolute URLs are the best all-around solution to generating URLs in your site. This makes your site portable and migration-friendly.
+
+Was this article helpful?YesNo
+
+---
+
+## Getting Started with Pro Version
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/getting-started-with-pro-version/](https://codexonics.com/prime_mover/prime-mover/getting-started-with-pro-version/)
+
+Scope: **Prime Mover Pro**
+
+### Background
+
+Thank you for using **Prime Mover Pro**. This version comes with so many useful features that you need to know and configure before using the plugin.
+
+It is recommended to follow each of them in a step by step manner. Y**ou ONLY need to do this for the first time only**. Once you have followed the getting started guide, you don’t need to go over this step again. And you will go directly to exporting / restoring your sites.
+
+If you are first time user, it is highly recommended to read the [entire documentation](https://codexonics.com/prime_mover/prime-mover/) for your added knowledge / learning.
+
+### Configure Basic Settings (Optional but recommended)
+
+There are currently some settings you need to review before moving on. [Read this dedicated guide on configuring basic settings.](https://codexonics.com/prime_mover/configure-basic-settings-in-prime-mover-pro/)
+
+### Configure Remote Storage (Optional but recommended)
+
+Prime Mover PRO version supports two cloud storage solutions: **Dropbox** and **Google Drive**. Remote storage allows you to export your backups or migration packages TO these cloud platforms.
+
+You can also restore and migrate your packages FROM these cloud platforms. These platforms are very stable and solid, so downloading and uploading to these remote storage are usually very fast.
+
+You can enable both or only one of them. Below are the documentations for configuring these remote storage.
+
+- [Google Drive Integration](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-google-drive-api-integration/).
+- [Dropbox Integration](https://codexonics.com/prime_mover/prime-mover/prime-mover-dropbox-integration/).
+
+**NOTE**: Only if you have successfully configured these remote storage solutions where “*Export to DropBox*” or “*Export to Google Drive*” will appear on the Export options. If you don’t configure these remote storage – these checkbox will not appear.
+
+### Note on Prime Mover authorization and encryption keys
+
+These are auto-configured upon PRO version license activation – so you don’t need to deal with these settings unless absolutely necessary. To take advantage of full automatic configuration – you should update to at least Prime Mover PRO 1.6.0+.
+
+### Export and Restore Package
+
+Now everything is configured, you can now [export and restore package using remote URL feature](https://codexonics.com/prime_mover/how-to-export-and-restore-using-pro-version/) OR [export and restore packages via backup manager](https://codexonics.com/prime_mover/prime-mover/how-to-restore-backup-packages-using-the-new-prime-mover-backup-management-added-in-version-1-0-7/) (available starting version 1.0.7).
+
+Was this article helpful?YesNo
+
+---
+
+## Help! I’m not able to login to my site due to insufficient disk space (after creating a backup)
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/help-im-not-able-to-login-to-my-site-due-to-insufficient-disk-space-after-creating-backup/](https://codexonics.com/prime_mover/prime-mover/help-im-not-able-to-login-to-my-site-due-to-insufficient-disk-space-after-creating-backup/)
+
+## Troubleshooting steps
+
+- Upgrade your disk space plan from your hosting account if you can. Your site obviously needs some extra disk space due to its size or needs. So it pays off if you upgrade disk space so your site can continue working properly. Once your host increases your disk space, you should be able to access your site and WP-admin immediately, which makes the rest of the troubleshooting below easier.
+
+- Start deleting some unused large files from your site (not necessarily Prime Mover packages or files). These files might be left from some ancient backup (another plugin, etc.) that has never been used. So, it might be good to check if these files exist and delete them via FTP.
+
+- The next thing to do is to manually keep a copy of all your Prime Mover backups on your local computer. You can do this via FTP by navigating to  (if your site is single-site) 
+```
+/wp-content/uploads/prime-mover-export-files/1/
+```
+
+  or (
+```
+/wp-content/uploads/prime-mover-export-files/{blog_id}/
+```
+
+ if multisite)
+
+- Find all files with 
+```
+WPRIME
+```
+
+ extension and download it to your Desktop. This way, you have extra backups on your local desktop computer without worrying that you might accidentally delete these backups from your site.  If you want to protect these backups further, you can even put them in cloud storage like Google Drive or Dropbox so there are multiple copies of backups.
+
+- [*OPTIONAL*] – if your site is multisite with backups in different subsites, you can find backup folders for each subsite, e.g., for subsite with blog ID: 2 and so forth, it will look like 
+```
+/wp-content/uploads/prime-mover-export-files/2/
+```
+
+ OR ( 
+```
+/wp-content/uploads/prime-mover-export-files/{blog_id}/-replace {blog_id} with your subsite blog ID)
+```
+
+. Manually download these backups as well if they exist. Repeat the process until all backups are downloaded to your local Desktop.
+
+- If you want to delete some Prime Mover files from your site, you can start deleting the temporary files. Return to /wp-content/uploads/prime-mover-export-files/1/ or (/wp-content/uploads/prime-mover-export-files/{blog_id}/ if multisite) and delete all folders. Do not delete files with WPRIME extensions. Folders are temporary – they should not exist and can be deleted. However, you should not delete any 
+```
+WPRIME
+```
+
+ extension using FTP.
+
+- Check if you are now able to access your site and WP-admin. If it’s still not working, start deleting your old Prime Mover backups until you can regain your WP-admin access.
+
+- Once you can log in to your wp-admin, go to Prime Mover -> Packages. Click “Refresh Packages.” If there is an error on corrupt packages, manually delete them[via your FTP](https://codexonics.com/prime_mover/prime-mover/corrupted-wprime-packages-troubleshooting/#deletingcorrupted).
+
+- Once all packages are shown without any corrupt packages, these are your clean backups. You can manually delete very old backups to free up some disk space.
+
+## Tips and suggestions
+
+- It would be best if you consistently upgraded to a higher disk space plan (from your hosting account) to fit your website needs and avoid this issue in the future.
+- Whenever you export a site (even to your Downloads local folder) – it will use some disk space because Prime Mover will archive files (plugins, media files, database, etc.) into a 
+```
+WPRIME
+```
+
+package.
+- To reduce the size of the exported package – you can export only the database. This is typically true if you don’t change the media files, plugins/themes always. And do a full backup only once a month (depending on plugin update frequency)
+
+- In the PRO version, you can exclude large files and folders from your backup, reducing its size.
+- In addition – you can [exclude plugins from your backup](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/) in the PRO version.
+- Also, in the PRO version, you can [export your backups to Google Drive](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-google-drive-api-integration/) and Dropbox. This way, your backups are stored in external storage. If you need to, you can delete all redundant backups on your server to free up disk space (since you have backups in the cloud).
+- Finally, suppose you have already downloaded all-important Prime Mover backups on your local computer and want to clean up your site of all Prime Mover packages. In that case, you can delete all of them at once by following this tutorial.
+
+## Do you still need assistance?
+
+If you still need technical assistance, please let us know. To speed up technical assistance, you can share your SFTP access or WordPress admin access if you are still unable to access your site after following all the above steps. Please send it via our [technical support contact page](https://codexonics.com/contact/).
+
+*Last updated: November 30, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## Help! My export and restore is very slow after updating to Prime Mover 1.9.5+
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/help-my-export-and-restore-is-very-slow-after-updating-to-prime-mover-1-9-5/](https://codexonics.com/prime_mover/prime-mover/help-my-export-and-restore-is-very-slow-after-updating-to-prime-mover-1-9-5/)
+
+## Symptoms
+
+After updating to Prime Mover 1.9.5, export and restore are way slower than in previous versions.
+
+## Why does this happen?
+
+Some hosts aggressively block continuous AJAX server requests, which could trigger the host WAF and rate-limiting security policies. As a result, Prime Mover is completely blocked from completing the export or restore process, and it returns a timeout error.
+
+Starting with Prime Mover 1.9.5 +, the overall Prime Mover requests mechanism is significantly slowed down. This ensures that it will work in these types of hosts and allows the export/restore to complete without throwing any server timeout errors.
+
+The only side effect is that the export and restore will also become very slow. But there is a solution to this (see next section).
+
+## Solution
+
+If you want to bring back the original “fast” export and restore – it is straightforward:
+
+- Login as administrator (or network administrator if multisite).
+- Go to **Prime Mover -> Advanced**.
+- Go to**Debugging Tools -> Turbo mode** settings.
+- Check “**Turbo mode**” (*see screenshot below*) and click **Save**.
+
+- Depending on how your site or host handles caching – it is best to clear your browser cache after saving this setting. This will ensure that Prime Mover uses the turbo mode setting for export and restoration.
+
+## How does “Turbo mode” work?
+
+Prime Mover sends two kinds of requests to the server: progress tracker requests and core processing requests. The progress tracker requests monitor the updates of the export and restore process, while the core processing requests are responsible for executing the actual export and restore processing steps.
+
+When turbo mode is enabled, Prime Mover sends progress tracker requests every 7 seconds and core processing requests every second (there are only a few export or restore processing steps). This results in faster processing; however, the frequency seems too high for some hosts.
+
+By default (since Prime Mover 1.9.5), this is off. When disabled, Prime Mover only sends progress tracker requests every 37 seconds and core processing requests every 15 seconds. This does not affect Prime Mover functionality at all—it only slows down the frequency of requests so it won’t be flagged as too much by some hosts.
+
+## Is it safe to use “Turbo Mode”?
+
+If your site has already been using Prime Mover for some time and there is no problem with your host (you can export and restore just fine), yes, you can use Turbo mode without any issues.
+
+But if you are new to the Prime Mover plugin or you are using it with a new host – we don’t suggest enabling this setting as your host might be implementing security rules that could block Prime Mover requests.
+
+Disabling turbo mode ensures that few requests are sent to the server and won’t trigger any rate-limiting security rules. This is why, by default, this setting is OFF, which is the safest option for all hosts.
+
+## Are there other benefits of turning off “Turbo mode”?
+
+Yes, of course—disabling turbo mode results in sending fewer requests to the server when you are doing export and restore. This translates to less CPU and memory usage. Your CPU doesn’t spike as always when only a few requests are being sent and processed by your server.
+
+In addition, this minimizes the possibility of parallel requests, which could overload some servers (typically if you are using a shared host with minimal resources set). In the end, this update makes the plugin more resource-friendly for your server.
+
+## Does this setting work for both Prime Mover FREE and Prime Mover PRO?
+
+This setting can be found in both Prime Mover’s free and PRO versions.
+
+## What if I have further questions on this setting?
+
+Please let us know by [contacting our tech support](https://codexonics.com/contact/).
+
+*Last updated: November 13, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## How do we exclude database tables in Prime Mover export?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-do-we-exclude-database-tables-in-prime-mover-export/](https://codexonics.com/prime_mover/prime-mover/how-do-we-exclude-database-tables-in-prime-mover-export/)
+
+Scope: **Prime Mover PRO**
+
+## Background
+
+By default, Prime Mover includes all tables belonging to the site during export. In a single-site setup, this consists of all tables belonging to the site that match the site’s database prefix. In multisite, this only includes all tables belonging to the subsite that match the subsite DB prefix. Specifically, the subsite prefix is the table prefix with the blog ID of the subsite appended to it.
+
+Since **Prime Mover PRO 2.0.6 and later**, it’s now possible to exclude database tables belonging to a site (either from a multisite subsite, main site, or single-site). Excluded database tables will not be included in the exported package SQL file and will not be present on the site when restored.
+
+## Requisites
+
+Take note that this is a PRO feature and will only work for sites with an active PRO license. Before proceeding, please ensure that your site or sub-site (if it’s a multisite) has a [valid license activated](https://codexonics.com/prime_mover/prime-mover/how-do-we-know-if-the-site-has-a-prime-mover-pro-license-activated/). Otherwise, this feature won’t work and will not be available for that site.
+
+## Why exclude tables?
+
+There are many reasons to exclude tables:
+
+- Exclude database tables created by unused, deactivated, or uninstalled plugins. This effectively reduces the database size and speeds up the export and import.
+- Effectively restore a site without a specific plugin implementation. For example, if you want to export a site using Wordfence but you don’t need Wordfence in the target site/host. Instead, it uses another security plugin. You can exclude the Wordfence plugin from the export, and then exclude all Wordfence tables from the export. The result (after import) is a completely functioning site, identical to the source site, but without the specific plugin activated (e.g., Wordfence).
+
+## Scope of implementation
+
+- It can only exclude custom database tables created by third-party plugins.
+- It cannot exclude WordPress core tables, including both single-site and multisite core tables, which WordPress itself creates.
+- It cannot exclude non-WordPress tables in general, such as those that do not use the specific WordPress database prefix. For example, if your database prefix is wp_, but you have a custom table name as 
+```
+this_is_my_custom_table
+```
+
+ instead of 
+```
+wp_this_is_my_custom_table
+```
+
+. The non-prefixed table 
+```
+this_is_my_custom_table
+```
+
+ will not appear in the tables to be excluded or even included in the database SQL export.
+
+## Exclude tables (step by step)
+
+- [*Optional but recommended*] Using phpMyAdmin or any MySQL database management software (e.g., DBeaver), list down all tables that would need to be excluded. This requires some planning to ensure that you do not remove tables that are still actively used by your site.
+- [*Optional but recommended*] Search each table name in Google to check which plugins created them. This is to ensure that you are aware whether those plugins are still actively used on your site or have already been uninstalled. If that table belongs to a plugin that is still actively used on your site, don’t include it for exclusion. Otherwise, you will have a non-working site.
+- Now that you have finalized the list of tables to be excluded, log in to your site as an administrator (or network administrator if you are using a multisite setup).
+- Go to *Prime Mover PRO -> Toolbox*.
+- [*Multisite only*] Enter the blog ID of the subsite for which you want some database tables to be excluded. Ensure you enter the correct blog ID of the site; otherwise, it will load the wrong site. You can [refer to this tutorial to obtain the blog ID](https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/) of your site in a multisite environment.
+- Once the Toolbox settings are loaded, scroll down to **** Export-Import Utilities *** -> Excluded Tables*.
+- Click “*Click to Expand*“. You should all be able to view the custom database tables associated with that site/subsite.
+- Now, using your list, check all the tables that you need to exclude from the export.
+- Finally, once you have checked all the necessary tables to exclude, click “Save.”
+
+## Case example: Exclude Wordfence from backup or migration
+
+Supposing you have a source site with the Wordfence plugin activated and fully running. And then you want to migrate or create a backup of this site without any Wordfence implementation. This is done by excluding the Wordfence plugin and its database tables from the export.
+
+The purpose might be to migrate the site to another host or target site that uses a different security plugin. Or you want to create a backup without it for simplicity reasons.
+
+**Step 1. Exclude Wordfence Plugin from settings**
+
+With Prime Mover PRO, you can [easily exclude any plugin from export](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/). For example, to exclude the Wordfence plugin, check the plugin in the exclude settings.
+
+**Step 2. Find out all the Wordfence tables to exclude**
+
+Now that you have excluded the Wordfence plugin, it will not be restored in your backup or on your target site. However, your site database still contains a huge amount of Wordfence data (from its tables). You will need to exclude these tables from the backup so that they won’t get restored to your target site. These data are no longer required, as the Wordfence plugin is also excluded.
+
+Googling, [this page lists all Wordfence tables](https://www.websitehelper.co.uk/wordfence-database-tables/), and it all starts with 
+```
+wf
+```
+
+.
+
+**Step 3. Exclude Wordfence tables in Prime Mover PRO settings**
+
+Finally, log in and go to *Prime Mover PRO -> Toolbox* -> enter blog ID of your subsite (IF MULTISITE), and then it will load the Toolbox settings for your site. Scroll down the exclude tables settings and check all tables belonging to Wordfence. All checked tables will appear in the text area above them. This is what it looks like:
+
+Make sure to save all settings, and then you’re done.
+
+**What will happen next?**
+
+Next time you create an export via manual or automated (scheduled) backups, the excluded tables are implemented and not included in the database, as per the above case example.
+
+## FAQ on Excluded Tables feature
+
+**Do I need to exclude plugins before I can exclude tables?**
+
+No, you only need to exclude plugins if they are active on your site, and you also need to exclude their tables.  Suppose the plugin is already deactivated or uninstalled. In that case, you can proceed to exclude its tables, provided you have conducted research on the correct tables to exclude and that this exclusion will not cause problems on your site.
+
+**Can a beginner blogger or someone not familiar with SQL databases or WordPress databases use this feature?**
+
+Although the user interface is straightforward to use (check the tables and save), it is not recommended for beginners or those unfamiliar with WordPress’s database. You must be a novice administrator with sufficient knowledge of the WordPress site database in order to exclude items when exporting.
+
+If you are unfamiliar with this information, it is best not to use this feature.
+
+**What will happen if my license expires? Does this feature continue to work?**
+
+Once your license expires, the exclude table setting will no longer be enforceable during exports or automated backups.
+
+**Is this a global setting that applies to all sites?**
+
+No, the excluded tables are on a per-site basis. This means that your setting to exclude tables for a specific site should only apply to that site and not to any other site.
+
+**Will this setting break my site?**
+
+Yes, if you have incorrect settings. No, if the setting is appropriate.  Incorrect settings mean you exclude tables that are still used by activated plugins, themes, or even third-party code on your site. Thoroughly review your excluded settings to ensure these are no longer in use by your site.
+
+Ensure that you test your exported package on a development server before deploying it live.
+
+**I saw “No tables found” in the exclude tables settings. I don’t see any table to check. What does this mean?**
+
+It simply means the Prime Mover plugin does not detect any custom table implementation in your WordPress site database. And that all database tables on your site belong to WordPress core, which you cannot exclude by default.
+
+This is very common for a new site installation or a site that has been newly reset to a fresh WordPress installation.
+
+Was this article helpful?YesNo
+
+---
+
+## How do we know if the site has a Prime Mover PRO license activated?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-do-we-know-if-the-site-has-a-prime-mover-pro-license-activated/](https://codexonics.com/prime_mover/prime-mover/how-do-we-know-if-the-site-has-a-prime-mover-pro-license-activated/)
+
+## For WordPress single-site and multisite installations
+
+- Log in as an administrator to your site. For multisite, you need to log in as a network administrator.
+- Go to the Plugins page and should see **Prime Mover PRO** activated. In multisite, you need to go to *Network admin -> Plugins*.
+
+If you don’t see Prime Mover PRO activated but only the Prime Mover FREE version, you first need to [download and activate Prime Mover PRO](https://codexonics.com/prime_mover/prime-mover/how-to-activate-license-in-prime-mover-pro/) on your site.
+
+- Once you are using Prime Mover PRO with a license activated, go to **Prime Mover PRO -> Account**. You should see the details of your Freemius account, which includes the License key, etc. In a single site, you should see a link to “*Deactivate License*“. This means that the license is currently active on your site.
+
+In multisite, you should see a link “*Deactivate license*” to each of the sub-sites, such as shown below:
+
+If you see “*Deactivate license*” for that specific sub-site, it means the license is activated for that sub-site. For example, the above screenshot shows the license is activated for:
+
+- *test100.local*
+- *test100.local/subsite-one*
+- *test100.local/subsite-four*
+
+However, the license is NOT activated for:
+
+- test100.local/subsite-two
+- test100.local/subsite-three
+
+If you don’t see the “Account” page or encounter errors accessing it, and you are already using the Prime Mover PRO version, you may have a corrupted installation. To resolve this issue, you will need to [reset your site’s Freemius data](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/), then reactivate the plugin and enter your license key.
+
+- Now, click the “Sync” link in *Prime Mover PRO -> Account*. If the license is correctly activated, it should remain unchanged. Otherwise, if the “Deactivate License” link is no longer visible, it means the license has been deactivated on the Freemius server end. You need to manually activate the license again in Prime Mover PRO -> Account. If you encounter errors when syncing (e.g., a fatal error or similar), you will need to [reset your Freemius site data,](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/) then reactivate the plugin and enter your license key.
+- Go to **Prime Mover PRO -> Packages**. For multisite, enter the blog ID of the sub-site to check if the license is activated. For a single site, you don’t need to enter anything since there is only one site. You will know if the license is activated if you see “**Prime Mover PRO Package Manager**” as the heading instead of “*Prime Mover Package* Manager”.
+
+For example, below, for sub-site blog ID 2 – the license has been activated since you see “*Prime Mover PRO Package Manager*“:
+
+Below does not have a license activated because you see “*Prime Mover Package Manager*” instead of “*Prime Mover PRO Package Manager*“.
+
+*Last updated: August 26, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How does Prime Mover works in hosts that restricts wp-config.php writing access?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-does-prime-mover-works-in-hosts-that-restricts-wp-config-php-writing-access/](https://codexonics.com/prime_mover/prime-mover/how-does-prime-mover-works-in-hosts-that-restricts-wp-config-php-writing-access/)
+
+Scope: **Prime Mover Free / Pro version**
+
+### Background
+
+*UPDATE: Since Prime Mover 1.8.0 – it now fully supports non-writable wp-config.php files automatically. You don’t need to set these constants manually. We always recommend upgrade to the latest version so you don’t need these manual procedures anymore.*
+
+Since Prime Mover version 1.2.7, you can now use Prime Mover in hosts that restricts write access to wp-config.php. In this short documentation, it will give you all the information you need to make this implementation as easy as possible.
+
+### Prime Mover activation process when config file is not writable
+
+1. User installs Prime Mover plugin.
+2. User activates Prime Mover plugin.
+3. Prime Mover detects if wp-config.php is writable. If not writable, it won’t activate initially.
+4. *[OPTIONAL]* If user has access to the server to give wp-config.php writing permissions(e.g. in VPS or dedicated hosting), user can do so and can re-activate the plugin successfully.
+5. *[REQUIRED]* If user don’t have access to the wp-config.php to give writing permissions(e.g. shared host), then user needs to manually add required constants to it. These required constants are essential for Prime Mover to activate successfully. This is similar to caching plugins that depends on 
+```
+WP_CACHE
+```
+
+ constants. Prime Mover depends on the site URL/home URL and its encryption key. Simply add the required constants as stated.
+6. User should be able re-activate the plugin.
+
+### Required constants
+
+These are the required constants when you are using WordPress single-site:
+
+- ```
+PRIME_MOVER_DB_ENCRYPTION_KEY
+```
+- ```
+WP_SITEURL
+```
+- ```
+WP_HOME
+```
+
+In multisite, it will simply be:
+
+- ```
+PRIME_MOVER_DB_ENCRYPTION_KEY
+```
+
+Prime Mover automatically generates the correct constant values so you don’t need to worry about them. You just need them to copy and paste those values to your wp-config.php or any other similar editing platform provided by your hosts.
+
+### Case Example: RaidBoxes WordPress Hosting
+
+[RAIDBOXES](https://raidboxes.io/en/) is one of the WordPress host that restricts write access for plugins to the site wp-config.php. In Raidboxes, it has its own dashboard for adding custom WordPress constants.
+
+Once logged-in Simply navigate to *Settings -> WordPress -> wp-config.php*
+
+It looks like this:
+
+You simply need to add the DEFINE statements for your constants under wp-config.php – add entries.
+
+Now this is just one example, there are several hosting companies out there that restricts wp-config.php writing access (for good security reasons). You need to get in touch with their support or check their documentation on how to manually add new entries to your wp-config.php.
+
+Once added, you need to clear site cache.  Some hosts have built-in cache (not by caching plugins) so you have to clear that first.
+
+### Changing encryption key
+
+By default, Prime Mover encryption key is added even when using free version. This is the same encryption key that is used after you update to PRO version.
+
+Take note that this key is an important one, take a backup of it (writing in a piece of paper and keeping it safe) and never lost it. This key is used when you encrypt packages during export and when you restore the packages also. In addition, these are used to encrypt Prime Mover settings in database.
+
+There are times when you need to change this so you can restore another encrypted packages that is being created at another site.
+
+**To change your encryption key when wp-config.php is not writable, simply add the change directly to wp-config.php.**
+
+You cannot change this under *Prime Mover -> Settings -> Security*. It is because that requires wp-config.php to be writable for which in this case is not. In this instances, that setting will only show as read only. See screenshot:
+
+### When site uses caching plugins
+
+When caching plugin is activated, the**default Prime Mover functionality during restore/import is to deactivate and turn off this caching**.
+
+It is because caching interferes with site restoration and cause runtime errors.
+
+Turning off caching usually involves three things. These are done automatically by Prime Mover when wp-config is writable (when restoring a package):
+
+- Deactivating the caching plugin during restore. If it’s network activated (in case of multisite), it will be network deactivated.
+- Removing the constant 
+```
+WP_CACHE
+```
+
+  in wp-config.php
+- Deleting drop-in files generated by caching plugin in wp-content directory. These are usually *advanced-cache.php*, *db.php*, etc.
+
+After restore is complete; caching plugin is re-activated, WP_CACHE and drop-in files are re-generated when purge files are cleared.
+
+However when wp-config.php is NOT writable, you cannot restore package right-away.  You need to do these things (manually):
+
+- Deactivate caching plugin.
+- Make sure 
+```
+WP_CACHE
+```
+
+` is not used in wp-config.php
+
+That’s it. You don’t need to delete drop-in files since they are harmless when WP_CACHE is not loaded.
+
+### *.primemoversignature_file
+
+In PRO versions, it adds a new file called prime mover signature file in the WorPress root. This is a requirement for PRO version security features to work properly.
+
+This is used when wp-config.php is not writable and you are going to change the encryption key directly inside wp-config.php. Or it is also used when wp-config.php is writable but choose to change the keys directly inside wp-config.php or som other means.
+
+During restore or migration, the database is overwritten with the target package. This signature file is added to make the restoration process independent with database changes.
+
+This signature file name is generated randomly so it cannot be guessed easily by any user. For best security, you need to follow WordPress most common security practices:
+
+- Change your [WordPress security keys in wp-config.php](https://api.wordpress.org/secret-key/1.1/salt/) in a span of 6 months. This signature file depends on these security keys.
+- Just like any file, do not reveal their names publicly, do not or share that link in forums or any public places.
+
+Even when someone will be able to read and access this file, it’s useless to them unless they also know your WordPress security keys that is stored in wp-config.php. It is why you should protect your wp-config.php since it contains a lot of sensitive information (db credentials, keys, etc.).
+
+Take note this signature file cannot be deleted. If you delete it accidentally, it will just re-generate itself as long as Prime Mover plugin is activated. This file is entirely harmless and does not interfere with WordPress and is only used with Prime Mover plugin.
+
+If you plan to deactivate Prime Mover or do not use Prime Mover anymore, you can safely delete this file and it won’t regenerate anymore.
+
+Was this article helpful?YesNo
+
+---
+
+## How to activate license in Prime Mover PRO?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-activate-license-in-prime-mover-pro/](https://codexonics.com/prime_mover/prime-mover/how-to-activate-license-in-prime-mover-pro/)
+
+## Make sure you use the PRO version
+
+You cannot activate a license on a FREE version, so you need to make sure you use the PRO version of the plugin. You should only use the latest PRO version for the best stability and performance. If you have already [upgraded your account to PRO](https://codexonics.com/prime_mover/prime-mover/how-to-upgrade-your-existing-pro-plan-to-higher-plan/) or just recently purchased via your WordPress admin or on our [pricing page,](https://codexonics.com/prime_mover/prime-mover/pricing/) then you can download the latest PRO version.
+
+Please follow the steps below:
+
+- [Log in to your Freemius account](https://users.freemius.com/login)using the credentials provided in the email.
+- Download the PRO version zip from Downloads.
+
+- Upload the Prime Mover PRO zip to your site to install (via *Plugins -> Add New* from your WordPress admin dashboard). Or you can unzip it in your plugins directory (*/wp-content/plugins*/).
+
+You will know if it’s a PRO version because the plugin name is “**Prime Mover PRO**” and the plugin slug should be ‘*prime-mover-pro*‘.
+
+## Activate the license in a multisite
+
+To activate a license in any of your subsites or sites in a multisite, please [refer to this dedicated tutorial](https://codexonics.com/prime_mover/prime-mover/how-to-activate-prime-mover-pro-licenses-in-some-of-your-wordpress-multisite/).
+
+## Single-site license activation
+
+- Activate Prime Mover PRO by logging in as an administrator and going to the *Plugins*section in your admin dashboard.
+- If it asks for a license key, enter the license key. You can get this from your Freemius account -> go to *Licenses*. You can also get the license key from your email (after purchase, we email all the details to your inbox, including the license key).
+
+**TIP**: *If you don’t see the activate license key page when you activate your PRO version, you might already have a license key recognized by Freemius. Go to Prime Mover PRO -> Account and then click “Sync” to verify that you have the PRO plan enabled already.  You can check out this tutorial to determine if you have successfully activated the PRO version.*
+
+- After entering the license key, click the “**Activate license**” button, and as long as you are within your license quota credits, it should activate.
+
+**TIP**:***If the license activation failed due to insufficient license credits or quota, please deactivate the license first and then re-activate it on this site. This can happen if you exceed your licensing quotas. For example, you are a one-site license PRO plan, which you already use on another site. You cannot activate it anymore on this site.*
+
+- When you don’t see errors, you should have successfully activated the PRO version and its license on your site. You can double-check if you have activated your PRO plan by [looking at this short tutorial](https://codexonics.com/prime_mover/prime-mover/how-do-we-know-if-the-site-has-a-prime-mover-pro-license-activated/).
+
+*Last updated: August 26, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to activate Prime Mover PRO licenses in some of your WordPress Multisite Subsites?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-activate-prime-mover-pro-licenses-in-some-of-your-wordpress-multisite/](https://codexonics.com/prime_mover/prime-mover/how-to-activate-prime-mover-pro-licenses-in-some-of-your-wordpress-multisite/)
+
+## Objective
+
+This tutorial shows how to activate your Prime Mover PRO license (single site, 10-site, etc.) on some of your WordPress multisite subsites. This is useful if you only want to activate the license on some of your subsites.
+
+**NOTE: This tutorial only applies to Prime Mover PRO users of WordPress multisites.**
+
+## STEP 1 – Install the latest version of Prime Mover PRO
+
+You should use the latest version of Prime Mover PRO to get the most up-to-date fixes, features, etc. You need to download the latest PRO version from your [Freemius account](https://users.freemius.com/login).
+
+## STEP 2 – Network activate Prime Mover PRO
+
+You need to network and activate the plugin.
+
+## STEP 3 – Unchecked “Activate the license on all sites in the network.“
+
+**TIP**: If you have an unlimited sites license, you have the option to activate the license on all sites in the network in a single click! This is done by leaving the checkbox “*Activate license on all sites in the network*” checked.
+
+However, if you have too many sites in your multisite (say, a thousand or more), you will run into a timeout error if you activate the license in all sites at once.
+
+This is why we recommend unchecking “*Activate license on all sites in the network*” so you can select which subsites you need to activate the license first.
+
+## STEP 4 – Enter the license key and check the sites you want to activate the license
+
+**IMPORTANT**: Please check only the number of sites your license can handle. For example, if you have a single-site license, please check only one site. Do not check more sites than your license can handle; otherwise, the permit cannot be successfully activated.
+
+## STEP 5 – Click “Agree & Activate License“
+
+Once everything is ready, click “*Agree & Activate license*” to activate the license in your selected sites. Done!
+
+## How to manage licenses inside a multisite network admin (activation and deactivation of licenses)?
+
+- Log in to your WordPress multisite as network administrator / super-admin.
+- Go to Network admin.
+- Go to *Prime Mover PRO -> Accounts*.
+- You should see the “*License*” column, where you can activate/deactivate licenses.
+
+## FAQ – How do I move licenses from my single-site to multisite?
+
+First, you need to [deactivate the license from your source site](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/) and then move the license to your multisite, following the steps in this tutorial. This is useful if you have a limited license quota, such as a single-site/one-site license plan. [dedicated tutorial](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/).
+
+## FAQ – I cannot activate the license; how do I fix it?
+
+Please [refer to this tutorial](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/) for details. If the issue persists, please provide us with your WordPress login credentials (network admin if your site is multisite) and [contact us here](https://codexonics.com/contact/) so we can activate the license on your site.
+
+*Last updated: August 26, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to Add and Configure Authorization Keys ?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-add-and-use-authorization-keys-in-migrations/](https://codexonics.com/prime_mover/prime-mover/how-to-add-and-use-authorization-keys-in-migrations/)
+
+Scope: **Prime Mover Pro**
+
+### How Authorization Keys Work?
+
+===========================================================================
+
+**NOTE**: Since Prime Mover 1.6.0 – authorization keys are auto-configured upon PRO license activation so there is no manual configuration needed in your end. This tutorial is added so you will know how to manually change these authorization keys. If you already set-up these keys using older Prime Mover versions – then the keys will continue to work as it is – they are not overwritten or gets changed in Prime Mover 1.6.0.
+
+===========================================================================
+
+In the Prime Mover Pro version, authorization keys are used to authorize the download of the package. This ensures that only authorized sites can download the created package in your site.
+
+This means that public user, bots , etc. can never download your Prime Mover package because it requires authorization to do it.
+
+If you use Pro version and does not set authorization keys, you cannot migrate package successfully to your another site. **You really need to set authorization keys before you can migrate package.**
+
+The format of authorization key is:
+
+```
+DOMAIN:AUTHORIZATION_KEYS
+```
+
+**DOMAIN** is the domain that the authorization key belongs. AUTHORIZATION_KEYS is 64-character length alphanumeric. It rejects authorization keys shorter than this.
+
+Prime Mover has native authorization key generator, that will do this for you easily. **You should use the built-in generator for consistency and compatibility.**
+
+### Steps to Configure and Set Authorization Keys
+
+**IMPORTANT**: Configuring and setting up authorization keys is only **done on a first-time basis** only. (Usually done after you upgrade to Prime Mover Pro version.)  You **SHOULD NOT**need to to generate authorization keys for each migration.
+
+Follow the steps below on how to configure and set Prime Mover authorization keys in your sites.
+
+Take note that these steps applies to both single-sites / multisite. In multisite, this is done on the Prime Mover settings panel on the network administration page.
+
+The following steps assumes you migrate *single-site-one.test* to  *single-site-two.test*. There is a video at the end for clarity.
+
+1. First, you create authorization key for *single-site-one.test*. This is done by going to **Prime Mover – Settings – Security Settings – Authorization Keys****setting.
+2. Then click the button, **Generate authorization key of this site***.* Make sure you do  this at *single-site-one.test* server. And then click **Save** button to store the setting to the database.
+3. You then need to copy the authorization key of *single-site-one.test* to *single-site-two.test*  server. So that we can authorize *single-site-two.test* to download/migrate Prime Mover package from *single-site-one.test* server. This is done by clicking **Copy site authorization key to clipboard** at *single-site-one.test*.
+4. Login to *single-site-two.test* WordPress admin with Prime Mover Pro activated.
+5. Go to **Prime Mover – Settings – Security Settings – Authorization Keys****setting section.
+6. Paste the authorization key of *single-site-one.test* in the text area and then **hit the save button**.
+7. (*OPTIONAL BUT RECOMMENDED*) If you are planning to migrate package from *single-site-two.test* back to *single-site-one.test*, then you should also generate authorization key for *single-site-two.test*
+8. Paste that key also at *single-site-one.test*. This way you can do two-way migrations. Don’t forget to save the generated keys.
+
+By this time, your site should now be ready to migrate using Prime Mover Pro.
+
+### FAQ in using authorization keys
+
+1. **How often will I need to change my authorization keys**?  You don’t need to change this very often. Only change this if you think its compromised. To change this, you need to do this on the origin site first, then update the authorization key for that site in all sites in your network.
+2. **Is there a way to bypass authorization keys so we can migrate without this**? No, for security reasons you should be using authorization keys. This will ensure your package are safe and in the right hands. Take note setting and configuring is only done one-time. You should do this for your own security benefit.
+3. **How does Prime Mover authorization keys differ from Prime Mover encryption keys?** Encryption keys are used to encrypt your package contents (specifically database and media files). Encryption keys directly affects or tied with your package contents. Meanwhile authorization keys does not have something do with your package, but its used simply to authenticate the communication between Site A and Site B during migration. This to make sure that both sites are authorized to do migrations. This means that if you change authorization keys, it does not affect your package. But if you change your encryption keys, you may not be able to decrypt packages if its generated with other encryption keys.
+4. **What restore scenario is using authorization keys?** Only when you restore a package using Prime Mover restore URL in the format of 
+```
+https://single-site-one.test?prime_mover_export_hash=xxxxxxxxxxxx&prime_mover_blogid=blog_id
+```
+
+ using option “*Restore backup from a remote URL*” . This is where authorization keys are used. If you restore by some other means, (e.g. upload / download, download package from DropBox or other cloud service or restore within server), then authorization keys are not used.
+5. **I got “Unauthorized” (401) errors, what does this mean?** It means that authorization key is not used or its not correct. Please thoroughly review your authorization keys before and make sure this is correct before you start any migration.
+
+Was this article helpful?YesNo
+
+---
+
+## How to add custom backup schedules for automatic backup?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-add-custom-backup-schedules-for-automatic-backup/](https://codexonics.com/prime_mover/prime-mover/how-to-add-custom-backup-schedules-for-automatic-backup/)
+
+## Background
+
+By default – Prime Mover 2.0.0+ automatic backup PRO feature supports the following backup schedules:
+
+- Once daily
+- Twice weekly
+- Once weekly
+- Twice monthly
+- Once monthly
+
+These default schedules are designed to be sufficient for most auto-backup implementations. However, this short tutorial illustrates the solution for those who need a custom backup schedule.
+
+## Formulate custom backup schedule parameters.
+
+The first step is formulating your custom backup schedule parameters using a constant. This needs to be added to wp-config.php. For example, the code below will add two new custom backup schedules: *once every three***months** and **once every six months**.
+
+```
+define('PRIME_MOVER_AUTOBACKUP_CUSTOM_SCHEDULES', json_encode (
+   [
+       'prime_mover_every_three_months' => [
+           'interval' => 7776000,
+           'display'  => 'Once in 3 months'
+       ],
+      
+       'prime_mover_every_six_months' => [
+           'interval' => 15552000,
+           'display'  => 'Once in 6 months'
+       ]
+   ]
+   )
+);
+```
+
+Some notes of the above example:
+
+- ```
+PRIME_MOVER_AUTOBACKUP_CUSTOM_SCHEDULES
+```
+
+  – It is the constant name. Please do not change this.
+- Only change these lines to add your custom backup schedules:
+
+```
+'prime_mover_every_three_months' => [
+           'interval' => 7776000,
+           'display'  => 'Once in 3 months'
+       ],
+      
+ 'prime_mover_every_six_months' => [
+           'interval' => 15552000,
+           'display'  => 'Once in 6 months'
+       ]
+```
+
+WHERE:
+
+- ```
+prime_mover_every_three_months
+```
+
+ =  the identifier of your new custom backup schedule. Make this name user-friendly for easy identification. It is recommended to use the naming convention: 
+```
+prime_mover_every_{YOUR_SCHEDULE_SLUG}
+```
+- ```
+interval
+```
+
+ – your backup schedule in **seconds**. For example, in 3 months, the total number of seconds is 7776000. This is because, in approximately one month, the total number of seconds is 2592000. Multiply this by 3 (for 3 months), the total seconds in months.
+- ```
+display
+```
+
+ This user-friendly name will be displayed in your Prime Mover automatic backup custom schedule settings. For maximum compatibility, it is recommended that you use English name descriptions. For now, this is not translatable.
+
+## Case example: Add a new custom backup schedule – “Once in three weeks.”
+
+Let’s use an example for clarification purposes. Suppose you want to run an automatic backup once every three weeks. However, this schedule is not included in the Prime Mover default backup schedules. You need to add this custom schedule.
+
+First, let’s compute the total number of seconds in 3 weeks. In addition, it is known that one day has 86400 seconds. Therefore, the total number of seconds in 3 weeks (which has 21 days on it) will be:
+
+Total number of seconds = 21 x 86400 = **1814400**
+
+Next, we formulate the custom backup schedule parameters and define all needed parameter values:
+
+```
+define('PRIME_MOVER_AUTOBACKUP_CUSTOM_SCHEDULES', json_encode (
+   [
+       'prime_mover_every_three_weeks' => [
+           'interval' => 1814400,
+           'display'  => 'Once in 3 weeks'
+       ]
+   ]
+   )
+);
+```
+
+It’s done! The only thing left to do is add it to wp-config.php. This is how it looks if it’s added to wp-config.php. For example, it is added to the topmost part of the configuration file for visibility.
+
+## Verify if the settings appear in backup schedules.
+
+Finally, you must log in as a network administrator and verify that your custom backup schedule appears in your Prime Mover backup schedule settings.
+
+Go to *Prime Mover PRO -> Toolbox*-> Under “*Backup schedule,*” you should see your custom backup schedule, which is ready to use.
+
+As you can see, the new custom backup schedule, “*Once in 3 weeks,*” has been added. This implies that you have added this schedule correctly.
+
+## Important note about the custom backup schedule
+
+Make sure this custom backup schedule is not removed from your 
+```
+wp-config.php
+```
+
+. Otherwise, your automatic backup won’t run anymore if this is not available.
+
+## Need help?
+
+Please get in touch with our technical support team if you need help adding a custom backup schedule. Thank you!
+
+*Last updated: January 11, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to add default Prime Mover constants to “mu-plugins” directory?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-add-default-prime-mover-constants-to-mu-plugins-directory/](https://codexonics.com/prime_mover/prime-mover/how-to-add-default-prime-mover-constants-to-mu-plugins-directory/)
+
+## When to use this workaround?
+
+This should only be used when you cannot activate Prime Mover plugin because:
+
+- Your site 
+```
+wp-config.php
+```
+
+ is not writable and not editable by your account.
+- Your hosting does not offer feature for you to add all Prime Mover custom constants.
+- Your hosting support does not able to add the required constants to the restricted 
+```
+wp-config.php
+```
+
+ file.
+- Your hosting supports “mu-plugins” ([Must use plugins](https://wordpress.org/support/article/must-use-plugins/))
+
+## Step 1 – Get the required constants to be added
+
+First, clear your browser cache and login again to your site. Make sure Prime Mover plugin is already installed. Then please do the following:
+
+- Activate the Prime Mover plugin.
+- When your 
+```
+wp-config.php
+```
+
+ is not writable – it will output an error message telling you to add constants to config file. Prime Mover plugin will be auto-deactivated. The error message looks like this.
+
+Make sure to copy the constants as it appears in the above message. Take note that these constants might be different if you have single-site or multisite. Please[read this documentation](https://codexonics.com/prime_mover/prime-mover/how-does-prime-mover-works-in-hosts-that-restricts-wp-config-php-writing-access/) to get to know more about the Prime Mover constants.
+
+## Step 2 – Create a custom Prime Mover constants PHP file
+
+Second, please do the following:
+
+- Open your text editor.
+- Copy and paste the following code:
+
+```
+<?php
+define( 'PRIME_MOVER_DB_ENCRYPTION_KEY', 'YOUR_ACTUAL_ENCRYPTION_KEY' );
+define( 'WP_SITEURL', 'https://YOURSITEURL' );
+define( 'WP_HOME', 'https://YOURHOMEURL' );
+```
+
+- Make sure to replace the following values : 
+```
+YOUR_ACTUAL_ENCRYPTION_KEY
+```
+
+, 
+```
+https://YOURSITEURL
+```
+
+, 
+```
+https://YOURHOMEURL
+```
+
+ with the correct values from the required constants you get from *Step1.* It should like this after correcting the values:
+
+- Finally save this PHP file as:    **000-prime-mover-constants.php**
+
+Make sure to use the filename: *000-prime-mover-constants.php* – so that these custom plugin constants will be loaded before other must use plugin scripts and plugins.  That is why it includes “000-” appended at the start of it’s filename.
+
+## Step 3 – Upload 000-prime-mover-constants.php to /wp-content/mu-plugins/
+
+- Make sure **/wp-content/mu-plugins/** exists. If this does not exist – please manually create “mu-plugins” directory in your wp-content directory so that the resulting path will be */wp-content/mu-plugins/*
+
+- Using your SFTP/cPanel file manager – upload **000-prime-mover-constants.php** to “mu-plugins” directory.
+
+This is how it looks like after being uploaded to the “mu-plugins” directory.
+
+## Step 4 – Clear browser cache, login and re-activate Prime Mover plugin
+
+Once the constants are in-placed in your mu-plugins directory:
+
+- Clear your browser cache.
+- Login back to your WordPress backend.
+- Re-activate Prime Mover plugin.
+
+This time – the plugin should be correctly activated and you should be able to see the Freemius Opt-in dialog:
+
+That’s it! Enjoy Prime Mover!
+
+## Still cannot activate Prime Mover?
+
+Please get in touch with our technical support and provide us the following:
+
+- WordPress site URL
+- WordPress username/password (if its multisite make sure to have a network admin access)
+
+We will check your site and investigate why the plugin cannot be activated.
+
+Was this article helpful?YesNo
+
+---
+
+## How to backup and migrate multisite main site in WordPress?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-backup-and-migrate-multisite-main-site-in-wordpress/](https://codexonics.com/prime_mover/prime-mover/how-to-backup-and-migrate-multisite-main-site-in-wordpress/)
+
+Scope: **Prime Mover Pro version**
+
+**Prime Mover 1.2.2+** (onwards) supports backup and migration of the WordPress multisite main sites. This is also called the primary domain or primary site.
+
+How this works exactly is very easy; it works exactly the same as you would backup and migrate any multisite subsites. To help you understand this clearly, please refer to the following case examples below.
+
+Bear in mind that this feature only works if you are using **Prime Mover PRO** version. This is not supported with Prime Mover FREE version. The free version of Prime Mover can still be used to backup and migrate any multisite subsite except the main site.
+
+If you have not upgraded yet, [you can do it here.](https://codexonics.com/prime_mover/prime-mover/pricing/)
+
+### Example #1: Backup WordPress Multisite Main site (requires PRO license)
+
+Supposing you want to backup the main site; simply go to :
+
+- Login as network administrator.
+- Go to *Sites -> All Sites*.
+- You should see a list of sites, usually the main site is listed first and WordPress does put a label “**-Main**” when it’s a main site. And also, most main sites will use a blog ID of 1, so it’s easy to spot. For example below is the main site.
+
+- As long as you have PRO version license is activated, the export and restore buttons should be working. Otherwise, you will see the link “*Upgrade to PRO*“.
+- Now click the Export button to generate a backup. This is an example setting to generate a backup. This is assuming you want a full/complete backup which you want to restore to the main site also.
+
+- The export type to select should be “*Export as subsite backup*” so it will create a backup that can be restored to the same main site.
+- Finally click “**Export now**” to start exporting the main site. After that, the backup is created.
+
+### Example #2: Migrate WordPress multisite main site to single site format (requires PRO license)
+
+With Prime Mover 1.2.2+ onward, you can now also migrate your WordPress multisite main site to WordPress single site format. This is very useful if you decide to move out of main site and manage it as a single site installation of WordPress.
+
+This is the export setting:
+
+The most important setting here is to select “**Export to single-site format**“. This will allow Prime Mover to create a single-site package format for your multisite main site. Once the export is done, you can then migrate that package to any WordPress single site installation.
+
+### Example #3. Migrate WordPress multisite main site to any multisite subsite (requires PRO license)
+
+Finally; you can also migrate your WordPress multisite main site to a multisite subsite format. This is specially useful if you are moving out your main site to another multisite installation but you want it to be on a subsite (not a main site).
+
+To do this, simply follow this example setting (assuming the subsite target blog ID is 7).
+
+The most important setting is to select “*Export to multisite format*” and then provide the target subsite blog ID. In the above example, the subsite blog ID target is 7.  You can get the target subsite blog ID by [following this tutorial](https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/).
+
+Make sure you set the target blog ID for the subsite correctly, otherwise you cannot restore the site!
+
+### Example 4: Migrate any WordPress single-site to multisite main site (export works with FREE, restore requires PRO)
+
+If you have a WordPress single site that you wish to migrate to multisite main site, you can generate an export using Prime Mover FREE plan. Make sure you select blog ID as 1 and create multisite package format. This should create a package compatible to be restored to multisite main site.
+
+However, once the package is created via export at your single site – you need PRO license to restore this to your WordPress multisite main site. Once license is activated on your main site, you can now restore just the previous examples.
+
+### Example 5: Migrate any subsite to multisite main site in same or different multisite (restore requires PRO)
+
+In this example, you want to migrate any subsite to the multisite main site. This main site could be in the same multisite network or it could be in different server or network.
+
+To make this possible, simply select Export for the specific subsite in **Sites -> All Sites**.
+
+And then make sure to select “*Export to multisite format*” and then enter the blog ID of your main site (usually 1).
+
+Once export is done – You can then restore the package to the main site using a variety of methods available in PRO version such as [remote URL restore](https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/). Or you can download and upload the package to the main site export directory and [restore it via the package manager](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/) if remote URL is not possible.
+
+### Final thoughts
+
+This feature has been tested to work on both legacy and modern WordPress multisites format. Legacy multisites are the old multisite format where it still uses */wp-content/blogs.dir/* for storing media files. Modern multisites uses */wp-content/uploads/sites/* to store media files.
+
+Just in case you have other thoughts, doubts and questions on this feature, [please let us know](https://codexonics.com/contact/). Thanks!
+
+Was this article helpful?YesNo
+
+---
+
+## How to cancel ongoing export or import and try again?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-cancel-ongoing-export-and-try-again/](https://codexonics.com/prime_mover/prime-mover/how-to-cancel-ongoing-export-and-try-again/)
+
+## Background
+
+For some valid reasons, you might want to stop an ongoing export/import because you might have selected the wrong export options or simply want to cancel it. These procedures should work for both Prime Mover FREE and PRO versions.
+
+## Step 1 – Refresh the browser tab
+
+Just refresh the browser tab where the export or import is ongoing. This sends a signal to PHP to stop the export processing work.
+
+## Step 2 – Close the browser tab
+
+This officially closes any remaining browser tab sessions.
+
+## Step 3 – Logout from the  WordPress admin
+
+Logging out will send a signal to WordPress that its session is over.
+
+## Step 4 – Close the browser itself
+
+This will close all sessions started by the browser, so there is no way it can still send requests to WordPress.
+
+## Step 5 – Cleanup to regain free space
+
+After stopping your export, your server will have artifacts, chunks, and incomplete packages,which can appear corrupted in your package manager. It is recommended that all of this (including its folders) be deleted. You can refer to this detailed cleanup procedure to regain free space on[your server](https://codexonics.com/prime_mover/prime-mover/how-to-free-up-space-and-deleting-unneeded-files-and-backups/)after the canceled export.
+
+## Step 6 – [Optional] Restart your server
+
+If the export is canceled and has already been running for a very long time, PHP might have several queued processes. This is true if the exported site is very large and takes a lot of time to complete. In this case, it is recommended to restart the server so PHP will cancel all of these queued processes.
+
+This can be done easily with any hosting web panel or control panel. If you are on VPS/Dedicated hosting, your hosting control panel should allow you to restart your server easily, or you can even do it on the command line if you are comfortable with it.
+
+If you are in a shared hosting environment – some hosts only allow you to stop all running processes, such as Hostinger hosting, which has this feature called “*Stop running processes*“:
+
+Stopping all running processes should be enough to cancel all queued PHP processes. If you cannot find any of these features in your hosting, don’t worry—this step is optional.
+
+## Step 7 – Start the export or import again
+
+Finally, log in to your WordPress site and go to Prime Mover export. Since all temp files are deleted and you have stopped all previous running processes, it should be OK now to start another export to create the packages.
+
+## Contact technical support
+
+If you have issues cancelling the export or you want technical assistance, please [contact us](https://codexonics.com/contact/).
+
+*Last updated: November 30, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## How to convert WordPress multisite main site into a single site installation?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-convert-wordpress-multisite-main-site-into-a-single-site-installation/](https://codexonics.com/prime_mover/prime-mover/how-to-convert-wordpress-multisite-main-site-into-a-single-site-installation/)
+
+### Introduction
+
+This tutorial is on converting your WordPress multisite main site into a pure single-site installation. This tutorial assumes the following:
+
+- You only want to move your multisite main site into a single-site installation, and you don’t care about your subsites.
+- You are using an Apache web server (that uses .htaccess)
+- You are using the Prime Mover PRO plugin. If you use the [Prime Mover FREE version](https://wordpress.org/plugins/prime-mover/), you must [upgrade to a paid version](https://codexonics.com/prime_mover/prime-mover/pricing/).  PRO version is required to move the multisite main site.
+- You don’t want to delete your existing wp-content/uploads/ files, plugins, and themes.
+- You want to use the same domain name after being converted to a WordPress single site.
+- You want to use the same hosting server (you don’t want to move to another different hosting).
+
+### Complete steps
+
+- Using Prime Mover PRO, create a single-site package of your current multisite main site. Make sure it is in **single-site format**.
+- Download a copy of that single-site format package to your Desktop just to be sure you have a local copy. The original copy will still be saved in*/wp-content/uploads/prime-mover-export-files/1/. Please do not delete it; you will use it later.*
+- Just to be sure, **manually backup all of your files and database** so you can restore it just in case you need it back.
+- Now that you have backed up and created a single-site format, it’s time to delete your **current WordPress multisite database**.
+- **Please create a new WordPress database using the same name** as the old one (so you don’t need to change the wp-config dB credentials). This new database should be empty. Later, WordPress and Prime Mover will fill it with content.
+- Open your wp-config.php and **delete all multisite-related** constants. Make sure you removed all multisite constants in wp-config.php. For example, these are the multisite constants common to all multisite:
+
+```
+/* Multisite */
+
+define( 'WP_ALLOW_MULTISITE', true );
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', true);
+define('DOMAIN_CURRENT_SITE', 'yourexamplesite.test');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+define( 'COOKIE_DOMAIN', $_SERVER['HTTP_HOST'] );
+```
+
+- Open your .htaccess and remove all of the current syntax. Empty your .htaccess – **make it blank**.
+- Open your site in the browser to install WordPress. Example: https://yourexamplesite.test/wp-admin/install.php
+- Proceed to install WordPress until it’s done.
+- Now that your fresh single-site WordPress installation is working log in and activate Prime Mover PRO by entering the license key.
+- Go to *Prime Mover -> Packages*. You should see your single-site package there.
+- Now restore it; once restoration is done – **re-save your permalinks** so the .htaccess can be updated.
+- Done – **Your site has been successfully converted into a single site installation**.
+
+### Conclusion
+
+In summary, using Prime Mover PRO, you can easily convert your existing WordPress multi-site main site into a single installation.
+
+*Updated: February 12, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to create a fresh WordPress multisite install with a specific network administrator email?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-create-a-fresh-wordpress-multisite-install-with-a-specific-network-administrator-email/](https://codexonics.com/prime_mover/prime-mover/how-to-create-a-fresh-wordpress-multisite-install-with-a-specific-network-administrator-email/)
+
+## Scope
+
+This step applies only to **WordPress multisites,** and if you are using the Prime Mover plugin version **2.0.7 or later** (to restore the package to a main site).
+
+These are straightforward steps to create a fresh WordPress multisite installation with a specific network or super administrator email, as recommended by the Prime Mover plugin.
+
+## [Optional] Step 1. Create a new WordPress multisite installation
+
+Prime Mover plugin already checks if your multisite can be considered new. “*New*” means that your multisite passed the following initial checks before a main site migration with user differences:
+
+- You only have the main site as your only site (no other subsites, etc.)
+- There is only one super or network administrator.
+- There is only one WordPress user in the multisite, and that is the super/network administrator.
+
+Prime Mover plugin checks this because it does not make sense to reset an already working and large multisite installation (which already has many users or sites).
+
+Since this step is optional, you can skip it if your multisite is already brand new, as creating a new multisite installation may take some time.
+
+But if you need to create a brand new WordPress multisite, you can do the following steps:
+
+- Drop your existing WordPress multisite database and create a new blank database.
+- Delete your multisite configurations in wp-config.php and .htaccess (or some other server configs as applicable).
+- Proceed with the [classic WordPress installation](https://codexonics.com/prime_mover/prime-mover/how-to-create-fresh-wordpress-install-with-specific-administrator-email/#classic) and make sure to use the recommended target email address as the administrator.
+- At this point, you now have a fresh WordPress installation using the specified/target email address as administrator. You can [convert this site into a multisite](https://developer.wordpress.org/advanced-administration/multisite/create-network/) by following the steps outlined by WordPress. You should use the same recommended target email as the network admin email.
+
+## Step 2. Network deactivate Prime Mover plugin and PRO license (if using PRO version)
+
+If the Prime Mover plugin is still network-activated at this point, please network-deactivate the plugin first. If you are using a license for your main site, please temporarily deactivate the license by going to *Prime Mover PRO -> Account* and then deactivating the license.
+
+## Step 3. Change the network administrator’s email to the recommended one
+
+If you have skipped Step 1, you need to update the current network administrator’s email address to the recommended one, as verified by the Prime Mover plugin.
+
+- Install and network activate the [Better Search Replace plugin](https://wordpress.org/plugins/better-search-replace/).
+- Go to *Users -> All Users*.
+- Take note of the email address of the existing network/super administrator.
+- Go to the main site WordPress admin dashboard.
+- Go to *Tools -> Better Search Replace*.
+- Enter the existing administrator email in “*Search for*.”
+- Enter the target administrator’s email in “*Replace with*.”
+- Under “*Select tables,*” select all of them.
+- Uncheck “*Run as dry run*“. This is what it looks like so far:
+
+- Finally, click the “*Run Search/Replace*” button.
+- Done.
+- Network deactivate the “*Better Search Replace*” plugin.
+
+## Step 4. Reset Freemius data
+
+To complete the reset procedure, you also need to reset Freemius data. This will prevent problems with activating the PRO license or Prime Mover plugin in cases where you have changed the network administrator’s email.
+
+To reset Freemius data, [please follow these steps](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/#resetfreemius).
+
+## Step 5. Network activate Prime Mover plugin (and activate PRO version if license is required)
+
+Finally, on this point, you can safely network activate the Prime Mover plugin and activate the license on your main site. You can then try re-restoring the package as you originally did, and there should be no more warnings; the restore will then be processed until completion.
+
+Was this article helpful?YesNo
+
+---
+
+## How to create a fresh WordPress install with a specific administrator email?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-create-fresh-wordpress-install-with-specific-administrator-email/](https://codexonics.com/prime_mover/prime-mover/how-to-create-fresh-wordpress-install-with-specific-administrator-email/)
+
+## Scope
+
+This step applies only to **WordPress single sites.** This is an easy two-step to create a fresh WordPress install *without* needing to access your database server using 
+```
+phpMyAdmin
+```
+
+ or other database tools.
+
+An administrator can do all of these steps inside the WordPress admin dashboard.
+
+## Step 1. Reset WordPress site database to fresh install
+
+- [*Optional*] If using the PRO version, please [deactivate the license](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/#allsites) on your single site first.
+- [*Optional*] If you have activated plugins, it is recommended that you deactivate all of them first to avoid conflicting them with the reset process.
+- [*Optional*] Switch to the default WordPress theme if possible.
+- Install and activate this [WordPress Reset plugin](https://wordpress.org/plugins/advanced-wp-reset/) on your single site.
+- Go to *Tools -> Advanced WP Reset*.
+- Under “*Site Reset*” – enter the word **RESET**
+- Click the “*Reset*” button.
+- Confirm the reset by clicking the “*Reset Now*” button.
+- That’s it; the reset procedure is done.
+- Deactivate the *Advanced WP Reset*plugin.
+
+## Step 2. Change the administrator’s email
+
+This step is needed if you need to set the administrator email to the one recommended by the Prime Mover.
+
+- Install and activate the [Better Search Replace plugin](https://wordpress.org/plugins/better-search-replace/).
+- Go to *Users -> All Users*.
+- Take note of the email address of the existing administrator.
+- Go to *Tools -> Better Search Replace*.
+- Enter the existing administrator email in “*Search for*.”
+- Enter the target administrator email in “*Replace with*.”
+- Under “*Select tables*” – select all of them.
+- Uncheck “*Run as dry run*“. This is what it looks like so far:
+
+- Finally, click the “*Run Search/Replace*” button.
+- Done.
+- Deactivate the “*Better Search Replace*” plugin.
+
+Once you finish Steps 1 and 2 above, please reactivate the Prime Mover plugin and try the restore process again.
+
+## The classic fresh WordPress installation method – workaround
+
+If you cannot use the above solutions or want a no-plugin solution – you can always adopt the tried and tested WordPress’s famous 5-minute install!  This requires access to your database via phpMyAdmin or any database administration tools (e.g., MySQL Workbench, dBeaver, etc.; for details of available tools – check your web host).
+
+In a nutshell:
+
+- Access your WordPress database via 
+```
+phpMyAdmin
+```
+
+ – your hosting database control panel.
+- Delete the target site WordPress database (which you want to restore or migrate the package).
+- Re-create a new *blank* WordPress database.
+- Re-install WordPress by accessing the URL:  
+```
+https://yoursite.test/wp-admin/install.php
+```
+- Fill out all the required details and use the specific target administrator email when installing.
+
+- Done. The above steps should always work since that is the standard procedure for installing WordPress.
+
+Was this article helpful?YesNo
+
+---
+
+## How to enable automatic backup for WordPress multisite and single-site?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-enable-automatic-backup-for-wordpress-multisite-and-single-site/](https://codexonics.com/prime_mover/prime-mover/how-to-enable-automatic-backup-for-wordpress-multisite-and-single-site/)
+
+## Background
+
+If you are using Prime Mover PRO 2.0.0+, you can use the automatic backup feature to automatically create backup snapshots of your site. You don’t need to log in to your site to make backups manually.
+
+The automatic backup feature will work if your site and hosting fully support WordPress CRON jobs and are working properly.
+
+This is a PRO feature and requires a license to work. If you haven’t got one, it’s time to [upgrade to a PRO plan](https://codexonics.com/prime_mover/prime-mover/pricing/).
+
+## Enabling Automatic Backup
+
+To enable automatic backup is easy:
+
+- Login to your site as administrator or super administrator (if multisite).
+- If you use a single site, ensure the site has a PRO license activated.
+- If you use multisite, ensure all subsites you want automatic backup are activated with a PRO license.
+- Go to *Prime Mover PRO -> Settings -> Backup Management -> Automatic Backup*.
+
+- Please check the “*Automatic Backup*” checkbox and save. This activates the automatic backup globally, but it won’t run yet because you still need to configure the sites’ auto backup settings.
+
+- After saving it, click the “*Scheduled backup*” link or go to *Prime Mover PRO -> Toolbox*.
+- [*OPTIONAL*] In multisite – to load the correct automatic backup settings, you should enter the blog ID of that subsite.
+
+- In the Toolbox – please configure each of the **minimum** **required settings** for auto backup to work, namely:- Backup options – e.g., full backup, database + media only, or database-only backup.
+- Backup schedule – defaults show the most common schedules, but you can also [set custom schedules if necessary](https://codexonics.com/prime_mover/prime-mover/how-to-add-custom-backup-schedules-for-automatic-backup/).
+- Automatic backup (*checkbox on multisite only*): The network administrator can turn on and off the auto backup on a*per-subsite basis*.
+
+- Once all required settings are saved, verify that the backup is queued for running by going to *Prime Mover PRO -> Event Viewer*. If the backup task appears here, you have configured it correctly.
+
+- Check that two backup CRON tasks appear for every configured site in the Event Viewer. The first task is the main auto-backup event that depends on your backup schedule. The second task is the progress event, which is meant to check/continue pending automatic backup processes. This depends on your backup retry timeout options for that site – currently, this defaults to 50 seconds. This means that automatic backup processes can run up to 50 seconds on each session before it exits and tries again. This control ensures that all PHP processes are within your server timeout (most hosting is set to 60 seconds or even more). If your host kills PHP processes running for more than 30 seconds (this is rare, though), Then you need to lower the retry timeout settings to 20 seconds. This will ensure that your host does not kill backup processes on each session but will continue to run until completion.
+
+- *[OPTIONAL]* Set the Retry Timeout Options as high as possible but within your hosting timeout for best performance. This depends on your hosting server timeout (please check with your hosting tech support). By default, this is set to 50 seconds, which is best for shared hosting with a timeout of 120 seconds (standard among popular hosts like Hostinger). Don’t exceed your retry timeout setting with your hosting timeout; otherwise, your auto-backup process can hang without noticeable errors in the logs. Hosts will kill these running processes silently if you are unsure about your host timeout setting – set this to default (50 seconds) or even 20 seconds to be sure.
+
+- [*OPTIONAL*] For best performance, go to Prime Mover PRO -> Advanced -> Debugging Tools -> Turbo mode. Check “Enable turbo mode.” This significantly speeds up automatic backup creation. However, please check if this is supported by hosts as well. Please refer to this [dedicated guide regarding this setting](https://codexonics.com/prime_mover/prime-mover/help-my-export-and-restore-is-very-slow-after-updating-to-prime-mover-1-9-5/).
+
+- [*OPTIONAL*] Backup redundancy is usually the best practice. You can optionally configure to upload your backups to cloud services such as [Google Drive](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-google-drive-api-integration/) and [Dropbox](https://codexonics.com/prime_mover/prime-mover/prime-mover-dropbox-integration/). Check the backup to Google Drive or Dropbox once these cloud services are configured to work with the Prime Mover plugin. Once checked – automatic backup creates a clone copy of the finished backup and saves it to the cloud. The original backup copy is still saved within your server. These redundant copies are helpful if you need them.
+
+- That’s it. Done. If you are using multisite – you will need to enable and configure each subsite for automatic backups to work (via *Prime Mover PRO -> Toolbox* and enter the blog ID to load the specific subsite settings). You can monitor everything on the Event Viewer (including its progress or queued backups for all sites where you have enabled auto-backups).
+
+## Ensuring your auto-backup schedule will run
+
+WordPress cron fires whenever a page is visited on your site. If you have a low-traffic site, your automatic backup tasks won’t fire as often as those of a high-traffic site.
+
+You can use a free external cron service to ensure your schedules will run (regardless of your site traffic). If you are configuring automatic backup with multisite, [set the cron URL correctly via the external cron service](https://codexonics.com/prime_mover/prime-mover/how-to-use-external-cron-service-to-trigger-automatic-backups/#multisite).
+
+You can also enable it using your [hosting cron feature](https://codexonics.com/prime_mover/prime-mover/how-to-use-your-hosting-cron-to-trigger-automatic-backups/), which is easy and convenient.
+
+## Important Notes
+
+- If you disable or deactivate the Prime Mover PRO license for a site with automatic backup enabled, the backup can no longer run. A valid license must always be active for automatic backup to continue.
+
+- If your PRO license expires, the automatic backup configured for that site will no longer run. So make sure to renew before your license expires, or, even better, ensure automatic renewal is enabled inside your Freemius account.
+
+- Prime Mover PRO does not delete old backups automatically. So, you must look at your site occasionally and decide what backups to delete manually (to manage your hosting disk space allocation). The site owner/administrator should resolve this matter. It is because what backups to retain or delete does not depend on the age of the backup but on its usefulness and relevance to your site functionality.
+
+## Need technical assistance?
+
+If you have issues with automatic / scheduled backups, please contact[our technical support](https://codexonics.com/contact/) team.
+
+*Last updated: January 11, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to Enable Encryption Support in Prime Mover Pro version?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-enable-encryption-support-in-prime-mover/](https://codexonics.com/prime_mover/prime-mover/how-to-enable-encryption-support-in-prime-mover/)
+
+Scope: **Prime Mover Pro**
+
+The free version of Prime Mover **does not support encryption and decryption of Prime Mover packages**.
+
+Take note that since version 1.2.4 – **Prime Mover PRO auto-configures your site to enable package encryption**. This default setting is done to maximize security and privacy of your packages data as well as your plugin settings. However if you need to create a non-encrypted packages, you can always uncheck the encrypt packages checkbox when you create an import.
+
+There is no other manual work needed at your end but you need to take note of a very few important things.
+
+### Important notes on Prime Mover package encryption
+
+- **Encryption key is ONLY** **stored in wp-config.php**. This is not stored in database or any other places in your site.  After upgrading to PRO version; Prime Mover auto-enables the encryption support (since version 1.2.4) by adding this encryption key:
+
+```
+define('PRIME_MOVER_DB_ENCRYPTION_KEY', 'YOUR_ENCRYPTION_KEY');
+```
+
+By default, Prime Mover uses a 64-character length key. This is secure enough for most implementations.
+
+- **You** **should never edit encryption key manually in your wp-config.php**. Doing so can make sure your encrypted package not restorable and it can messed up your Prime Mover settings (since these settings are stored as encrypted also in database).
+- In case you need to edit your key, login to your WordPress admin and go to **Prime Mover -> Settings -> Security Settings -> Encryption Key**.
+
+As you can see the key is hidden for security reasons, click show key so you can see it. This is  the only correct place to edit your key.
+
+- **Prime Mover encrypts all important data in your packages.** This includes your plugin files, theme files, media files, user files and database contents are all will be encrypted.
+- Like your most important password which you wrote in a piece of paper; you should do the same for your Prime Mover encryption key. **Please write this in a piece of paper and keep it on a safe**. In the event that it gets deleted or removed from your sites, you should be able to restore them from any offline source.
+- **Take note that if ever you lost your key, there is no way to decrypt the packages**. It is why you should keep a copy of your key.
+
+### Tip: Use SAME encryption keys in your network of sites
+
+Prime Mover uses **AES-256** encryption. When a package is encrypted, that package can ONLY be decrypted using the SAME key that is used to encrypt it.
+
+What does this mean? **It means you need to add the same encryption key in your network of sites**. Otherwise if its different, a package cannot be decrypted when you might migrate it to any of your site.
+
+Let me illustrate. Supposing your website domain is *website.test*. You add encryption key 
+```
+ABC12345
+```
+
+ to this site. When you export an encrypted package in *website.test*. The package data is encrypted using the encryption key 
+```
+ABC12345
+```
+
+.
+
+Supposing you want to migrate *website.test* encrypted package to your *anotherwebsite.test* domain ?
+
+If Prime Mover is also installed in *anotherwebsite.test* but does not use the same encryption key as *website.test* , then the package cannot be restored. It is because Prime Mover cannot decrypt the package because of incorrect key.
+
+Therefore, you also need to add 
+```
+ABC12345
+```
+
+ encryption to *anotherwebsite.test*  wp-config.php before you restore the encrypted package created at *website.test*.
+
+### How to copy encryption key from SOURCE site to TARGET site?
+
+- Login to your **source site** WordPress admin(where the encrypted package is created).
+- Once logged-in, go to **Prime Mover -> Settings**.
+- Go to Security settings -> Encryption Key.
+- Click “**Copy site encryption key to clipboard.**“
+
+- Now login to**target site** WordPress admin where the site needs to be restored.
+- Once logged-in, go to **Prime Mover -> Settings**.
+- Go to Security settings -> Encryption Key.
+- In the text box, paste the encryption key.
+- Click the checkbox “Show encryption key used in wp-config.php” to review if its correct.
+- Once correct, click “Save”.
+
+- It will ask for confirmation if you are sure to change this, just click *Yes I understand.*
+- That’s it, the encryption key is now copied to your target site!
+
+### How encryption is used to protect your data?
+
+When encryption key is added to wp-config.php.  Encryption support is now enabled. **But how is this used inside the plugin?**
+
+- When you create or export package with encryption support enabled, you will be given an option to encrypt your packages. **This is checked by default since version 1.2.4**.
+
+- When you decide to uncheck the above setting, the package is not encrypted.
+- When a package is encrypted, no one can read your package data.
+
+### Encrypting Prime Mover settings
+
+When encryption support is enabled, this is used **automatically** to encrypt your sensitive plugin settings in database. The following settings are encrypted for your security:
+
+- Custom backup directory path
+- Domain authorization keys
+- Dropbox access key
+
+If you have just upgraded to PRO version and enabled encryption support, it is recommended you re-saved all settings as follows:
+
+- Login as administrator to your single site or network administrator in multisite.
+- Go to **Prime Mover – Settings**.
+- Click **Saved** for the following basic settings: *Custom backup directory, Authorization Keys*, *Dropbox access token*
+- That’s it! These sensitive settings will now be encrypted in your database.
+
+### FAQ on using encryption keys
+
+1. **If I downgrade my plan to FREE version, would I be able to restore already encrypted packages?** No. It is because encryption/decryption is only supported with PRO/paid plan. There is no other 3rd-party/dev tools that can decrypt your packages once you are in a FREE plan.
+2. **How often should I change my encryption keys?***Ideally never*. Your encryption key is tied with your encrypted package content. If you change encryption keys, then Prime Mover can no longer decrypt your package. Remember that an encrypted package can only be decrypted using the key that is used to encrypt it. You should never change this often inside your *wp-config.php*.
+3. **I really need to change encryption keys what should I do?**Audit all of your old packages that might be using the old keys. Restore it to a local site temporarily. Once restored you can delete them safely. Then change encryption keys in all of your sites.  Re-generate encrypted package if needed. You might need to go over again the section on **Encrypting Prime Mover Settings**, you need to re-save those settings that uses encryption so they can be used again.
+4. **If I am using Prime Mover in different sites, does this I need to use SAME ENCRYPTION KEY to all of them?** Yes, because if you encrypt package from Site A and restore it to Site B. Prime Mover will need to use the same encryption key that is used in Site A to decrypt package in Site B. If your encryption key in your sites differs, you might issues migrating a certain package from one site to another.
+5. **Can I use Pro version without enabling encryption?** Encryption will always be enabled (using a constant added in your site wp-config.php). **But you can always choose to create non-encrypted packages even with encryption enabled**. This is as simple as unchecking this box:
+
+Was this article helpful?YesNo
+
+---
+
+## How to Exclude Plugins in Prime Mover Pro?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/)
+
+Scope: **Prime Mover Pro**
+
+### Background
+
+Prime Mover Pro version includes a feature to exclude plugins in the export package. This is how it looks like:
+
+### What does exclusion means?
+
+If you exclude Plugin A, Plugin B , and Plugin C. Then these **plugins won’t be activated when you restore the site package to another site**.
+
+This also means that **these excluded plugins won’t even be included in the Prime Mover package**. So for example, if you exclude Akismet and Hello Dolly plugin ,then the export package won’t include these plugins.
+
+This means, you can use exclude plugins to reduce the size of your export package. If for example, there is a one super heavy plugin that you don’t want to be exported and included in package, simply exclude it.
+
+Bear in mind that this setting **ONLY works if you are exporting a package that includes plugins**. This setting is not applicable if you are exporting only database or media files.
+
+### Why exclude plugins?
+
+Aside from saving bandwidth or reducing the size of your export package, there are several reasons why you should be excluding plugins.
+
+These are several examples:
+
+- For example, you are migrating from website which is using HTTPS to a local website that is not using HTTPS. It make sense to exclude plugins that depends on HTTPS. Example of these plugins are **Really Simple SSL plugins**. It is because they don’t work in non-HTTPs environment.
+- If you have a plugin that is platform specific, you might want to exclude them from the export to a different OS which does not support the plugin. For example, if your website is hosted on Linux and you have a custom plugin that works only on Linux. You might need to exclude them if you are migrating the WordPress site to a Windows server.
+- If you have a plugin that does not make sense to be activated on the target environment. For example, if your target environment is LOCAL. It does not make sense to include caching plugins, brute force prevention plugins, anti-spam plugins,  It is because these plugins are not needed on the local environment. Of course except if you need to test them locally then you need to include them.
+- If you are exporting from multisite to single site and you don’t want to include plugins that is not compatible to single site or vice versa.
+
+### How excluding plugin works in Multisite?
+
+In multisite, there are two ways to activate plugins:
+
+- Network activated.
+- Activated only on subsite.
+
+In Prime Mover, there is**only one plugin exclusion setting (available in network admin) and this will be used for the entire sites.**
+
+This is regardless if the plugin is network activated or not.
+
+For example, if you happen to exclude Akismet plugin. Then Akismet will not be included in the package, if the site to be exported is using Akismet plugin. This is regardless if the plugin is network activated or not.
+
+This makes this setting very helpful if want to exclude network activated plugins. Many of the network activated plugins are maintenance plugins in nature and they are not helpful in the target site.
+
+For example, if you want to migrate a subsite to a single site. You might want to exclude some network activated plugins from being exported if they are purely maintenance in nature (their use is only applicable to multisite).
+
+### Prime Mover Implementation for Excluding Plugins
+
+- Prime Mover retrieves all activated plugins. (including network activated).
+- Prime Mover runs this into a filter that goes to the Prime Mover setting which provides info as to what plugins are to be excluded.
+- Prime Mover checks if that excluded plugin exists in plugins directory.
+- If that plugin happens to exist and also excluded, it is removed from the list.
+- The filter output is the final list of plugins to be exported.
+
+You can see this in **Prime Mover – Settings – Exclude Plugins** sections. Check as many plugins that you want to be excluded.
+
+Take note the setting on the text area is intentionally read-only. It is because the setting should be done by check boxes so the user won’t anymore be needing to enter or type the plugin basename or path. Prime Mover handles all these things automatically.
+
+Was this article helpful?YesNo
+
+---
+
+## How to exclude upload media files in Prime Mover Pro?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-exclude-upload-media-files-in-prime-mover-pro/](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-upload-media-files-in-prime-mover-pro/)
+
+Scope: **Prime Mover Pro**
+
+### Background
+
+In the Prime Mover Pro version, it’s possible to exclude some media files from your **WordPress content****/uploads** directory when you export a site for WordPress migration/backup.
+
+This setting is called “*Export Filter*.” However, this setting **ONLY excludes files when they are inside your WordPress uploads directory.**
+
+### Uses
+
+Sometimes, very large or unrelated files lurk in your *wp-content/uploads* directory. An example is large media files like videos or MP3s that you cannot delete because they might be used somewhere else.
+
+When you export a site with Prime Mover that includes media files, the entire uploads directory is exported by default. This includes large files that you might not need at the restore end.
+
+It might be folders that you don’t need, not only files. For example, there is a massive log folder that you cannot delete because it’s still used, but you don’t want to include that log folder.
+
+### How does Prime Mover exclude media Files?
+
+Prime Mover supports three types of exclusion. These types should be enough to cover all possibilities of excluding files when exporting a package.
+
+- **Exclude by file**. This should be a relative path to the file and include a complete file name. Use this if you want to exclude on a per-file-name basis.
+- **Exclude by folder**. This should be a relative path to the folder.
+- **Exclude by extensions.** In general, if you want to target all extensions, you can do so. For example, if you want to exclude all mp3 files, any mp3 files will be excluded regardless of where they are located inside the uploads directory.
+
+### Exclude by File – Syntax Examples
+
+Prime Mover implements exclusion syntax as a command to exclude files, folders, and extensions. This is very easy to use; refer to the following examples.
+
+For example, you want to exclude two big files inside your wp-content/uploads directory.
+
+These files are **examplebigfile.mp4** and **anotherbigfile.wav**. For example, the absolute path to these files is:
+
+```
+/home/test/www/wp-content/uploads/2019/04/bigfile.mp4
+```
+
+```
+/home/test/www/wp-content/uploads/2019/04/anotherbigfile.wav
+```
+
+The syntax to exclude these two files is as follows (relative to uploads directory path*/home/test/www/wp-content/uploads/*
+
+```
+files-1 : "2019/04/bigfile.mp4", "2019/04/anotherbigfile.wav"
+```
+
+**files-1** means you want to implement the file exclusion in a single WordPress site. If you want to exclude a file in a multisite environment, **change 1 to any blog ID**.
+
+For example, say you export a subsite with a blog ID 54321. If you want to exclude the above files, then the syntax will be:
+
+```
+files-54321 : "2019/04/bigfile.mp4", "2019/04/anotherbigfile.wav"
+```
+
+In multisite, note that there is still one uploads directory for all subsites. But each subsites are differentiated by a blog ID folder name inside a “sites” folder (blogs.dir for older multisite configuration)
+
+For example, you want to exclude this file from the blog ID 58 site.
+
+```
+/home/www/sourcecode/mysite/wp-content/uploads/sites/58/GeoIPv6.dat
+```
+
+Then the syntax to exclude should be relative to */home/www/sourcecode/mysite/wp-content/uploads/sites/58/,* which itself is the actual uploads folder path for blog ID 58:
+
+```
+files-58:"GeoIPv6.dat"
+```
+
+### Exclude by Folder – Syntax Examples
+
+The syntax for excluding a folder is very similar to excluding a file. Except that you want to explicitly provide the folder exclusion path and tell Prime Mover that it’s a folder, not a file.
+
+For example, say you want to exclude these two large folders inside your WordPress single site uploads directory, and these are the absolute paths:
+
+```
+/home/test/www/wp-content/uploads/2019/04/some-large-folder/
+```
+
+```
+/home/test/www/wp-content/uploads/special-giant-folder/
+```
+
+The syntax to exclude will be:
+
+```
+folders-1 : "2019/04/some-large-folder", "special-giant-folder"
+```
+
+In a multisite, there is only one exclude setting available to network administrators. However, you can implement exclusion filters for each subsite if you add the correct blog ID in the exclusion syntax, just like with files.
+
+For example:
+
+```
+folders-67 : "2019/04/some-large-folder", "special-giant-folder"
+folders-3 : "2019/04/my-movies"
+```
+
+In the above example, the **my-movies** folder of subsite blog ID 3 will be excluded if it is exported by Prime Mover.
+
+In multisite, for example, if you want to exclude this folder path:
+
+```
+/home/www/sourcecode/mysite/wp-content/uploads/sites/58/2019
+```
+
+The syntax to exclude should be relative to */home/www/sourcecode/mysite/wp-content/uploads/sites/58/,* which is the actual uploads folder path for that multisite subsite:
+
+```
+folders-58 : "2019"
+```
+
+### Exclude by Extensions – Syntax Examples
+
+If you want to exclude files by extension, the same principle applies to folders and files. You must explicitly provide that you are filtering by extension and the blog ID ( 1 for single-site).
+
+Supposing you want to exclude the following movie extensions: **avi, zip, mp4** in your WordPress single-site.
+
+The syntax to exclude will be:
+
+```
+extensions-1 : "avi", "zip", "mp4"
+```
+
+Suppose your site is using a multisite configuration. You can implement extension exclusion per site by identifying each rule with a specific blog ID. For example, if you want zip to be excluded on blog ID 34, exclude all three file types in blog ID 65.
+
+```
+extensions-34 :  "zip"
+```
+
+```
+extensions-65 : "avi", "zip", "mp4"
+```
+
+### Implement Media Exclusion in Prime Mover Pro Settings
+
+- Login as administrator/network administrator.
+- Go to **Prime Mover -> Settings.**
+- Scroll down and find **Export filters**.
+- Add your exclusion rules using the correct syntax. All you need is the proper path to the file or files. Prime Mover validates these rules when you save them to ensure they are applicable. They won’t be saved if the rule is incorrect (e.g., the file does not exist or the path is wrong).
+- Finally, once you have all the rules, **click Save**.
+
+You can input several rules for several sites; you can separate each of them one per line. For example, below are some rules implemented in a multisite using Prime Mover Pro:
+
+### Usage Tips
+
+- Use your host FTP / SFTP / SSH access to access the correct file path.
+- You can use the WordPress Media Library screen, which is available inside the WordPress admin, to get the correct path of the media to exclude.
+- Use WordPress plugins like WP File Manager to browse your uploads folder directly inside your WordPress admin: [https://wordpress.org/plugins/wp-file-manager/](https://wordpress.org/plugins/wp-file-manager/). Then, using that, you can get the correct paths to the folder/file to exclude.
+
+What is also great about WP File Manager is that it will give you the total file size of the folder or file. So you can use that to scan your uploads directory for big files or folders and exclude them in Prime Mover settings.
+
+- If you use the FREE version of Prime Mover, you don’t have this setting available. One feasible solution is to export the site as a debug package. See screenshot:
+
+This works by allowing you to export a complete site with plugins/ themes and a database. The only difference is that WordPress uploads are excluded from the export.
+
+When you restore this, the image will resolve to the source site. Prime Mover does its best to handle this adjustment. So, the image will still show after restoring a debug package.
+
+This is very helpful if you are a tech supporter and want to quickly clone a big site to your local for quick WordPress debugging.
+
+*Last updated: February 22, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to Export and Restore using Remote URL feature
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/](https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/)
+
+Scope: **Prime Mover Pro**
+
+**IMPORTANT** : If you are using Prime Mover Pro for the first-time , [please read this get started guide first.](https://codexonics.com/prime_mover/prime-mover/getting-started-with-pro-version/)
+
+### Background: Why use Remote URL feature ?
+
+**Update**: *Since Prime Mover version 1.1.5, it now uses WPRIME file extension archiving format. The example shown here is still using the ZIP format which is only applicable in older versions. However, there is no other changes in this feature except for the file extension/archiving format change. This should not affect anything at all to this feature.*
+
+It’s the fastest way to restore a site using Prime Mover. The default restoration method of Prime Mover is via browser uploads (available in free version and Pro version also) and also [restoring within Prime Mover package manager](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/).
+
+Browser uploads is slow because its subjected to a lot of factors (latency, Internet upload speed, server upload limitations, etc., browser limitations (can upload up to 4 Gigabyte only).  Package manager restoration is also a good alternative but that requires you to upload the package to your target site (using 
+```
+SCP/SFTP/FTP
+```
+
+).  If these are big packages and your connection from your Desktop to your server is very slow or just these are not available – then remote URL feature is an excellent option.
+
+If you use browser upload, restoration is possible but takes a lot of time. Say your origin site is *abc.com* and your target site is *xyz.com*. Using browser uploads:
+
+- Generate Prime Mover package in *abc.com*.
+- After export, you download this to your computer (your local desktop or laptop for example). Downloading can take time, depending on your Internet download speed.
+- Then you restore it to *xyz.com* via Prime Mover restore via uploads method.  This is usually slow depending factors discussed previously.
+
+Using remote URL, you can bypass downloading/uploading to your desktop  (which is time-consuming) and let two sites communicate each other directly using WordPress HTTP API. This is how it works (available in Pro version only):
+
+- Generate Prime Mover package in *abc.com* and save it to your export directory (don’t download it to your desktop).
+- Make sure the PRO export option “*Generate package URL for direct site migration*” is checked.
+- Restore package using remote URL. This is very fast since it uses the hosting server connection speed (usually last seconds to fetch packages). *xyz.com*will fetch package directly from *abc.com*. This is not limited to package size(unlike browser uploads) and even if your package more than 4 Gigabytes, it can still be fetched.
+
+### First step: Generate Export Package at Origin Site
+
+- In a site using Prime Mover Pro, go to Prime Mover Control Panel.
+- Click **Go to Migration Tools** button.
+- Click **Export** button. The **Export Options** dialog will pop-up.
+- Select **Export database, media files, plugins and themes** – this will export everything.
+- Check **Generate package URL for direct site migration**. This will generate the restore URL which you can use in the second step.
+- **[OPTIONAL – not recommended for very big sites]** Checked *Data Encryption* – *Encrypt database & media files with industry standard AES-256 encryption*. This will encrypt the database and media files. This is also checked by default if supported. On very large sites, this can slow the export process so use this with caution.
+- Set **Export type** (whether you want to export single site or multisite). If exporting to multisite , please input the target sub-site blog ID.
+- Finally click **Export now**.
+- It can take time to export the entire package depending on the size of your website.
+- When its completed, you will see **Export saved** notice.
+- Click **Copy URL to Clipboard**. A confirmation dialog will show that the URL is successfully copied to clipboard. Click OK to confirm.
+
+### [PRO Feature] Second step: Restore Package at Target Site
+
+*Note: If you don’t have PRO license activated at target site – you can still migrate by downloading the package at the source site. You can then upload it to your target site via SFTP or cPanel file manager to the target Prime Mover export directory. You can then restore the package via target site package manager. For more details – please check out this tutorial.*
+
+The following steps assumes the target site has PRO license activated:
+
+- At target site, go to **Tools – Migration Tools** (or **Network Admin -> Sites -> All Sites**in multisite)
+- Click **Import** button (or**PRO restore**button under “*Import site*” column if it’s in multisite network admin)
+- Select **Restore package from a remote URL**.
+- In the input text box, paste the URL copied from the clipboard (from source site). This is how it looks like:
+
+*Single site PRO restore options dialog**Multisite PRO restore options dialog***Tips**:  There are several types of remote URLs to the package that you can use. Details of this will be discussed below.
+
+If you want to use this PRO feature –[please check out pricing page](https://codexonics.com/prime_mover/prime-mover/pricing/).
+
+## Using PRO restore API
+
+**NOTE:** *Please upgrade to Prime Mover 1.6.2 since this now supports two-way remote URL restorations even for single site license.*
+
+The first and default implementation (as shown in the screenshot) is the standard *Prime Mover remote API URL*.  The format of this URL is: 
+```
+https://yourtestsite.test?prime_mover_export_hash=2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824&prime_mover_blogid=1
+```
+
+This taken from the source site (where the Prime Mover export package is created or originated) by clicking “*Copy URL to clipboard*” see screenshot after creating the export package:
+
+Or you can get the *Prime Mover remote API URL* from *Tools -> Migration Tools -> click “Import” button ->*click *Restore files from this site backup directory*at the source site. You should able to see the list of packages created. There is a copy to clipboard button to copy the remote API URL for each of these packages, see screenshot (clicking on it will automatically the API Restoration URL to clipboard so you can paste it on the import end):
+
+Take note that packages will appear in the list only after they are successfully created (via Exporting packages) and not corrupted.
+
+**NOTE**: If you already done the export and close the windows/browser tabs, etc. You can still get the API restoration URL by logging into your site. Once logged-in, go to *Prime Mover PRO -> Packages* and load your site packages.
+
+You should see the “*Migrate site*” column and below it is the button named as “*Copy restore URL*“. Click this button to copy the restore URL to the clipboard. And then paste this restore URL to your text editor (e.g. notepad) and keep a copy of this in you Desktop. You need this restore URL when you migrate the package in your target site/server.
+
+## Using static URL restore method to a valid Prime Mover package
+
+Another type of remote URL restore implementation is **any publicly accessible URL that points to a valid Prime Mover package**. For example, say you have Prime Mover package you uploaded manually to your WordPress root directory named as 
+```
+myprimemoverzippackage.wprime
+```
+
+ . Then this becomes a static URL which is:
+
+```
+https://mytest.site/myprimemoverzippackage.wprime
+```
+
+Then use this static URL as your remote URL to import package. **TIP: You can use this “static URL” method of using restoring from a site that don’t have an active PRO license**.  All you need to do is to copy the package out of Prime Mover export directory in the source site that don’t have license to a publicly accessible directory inside your site server (e.g. your WordPress root directory).
+
+## Using cloud based URLs pointing to a valid Prime Mover package
+
+Also any URL pointing to a valid Prime Mover zip package hosted in any Cloud solutions can be used. Say for example, you have a Prime Mover zip package uploaded in DropBox and this is the URL: (you can get this by clicking *Share -> Create Link*in Dropbox) : 
+```
+https://www.dropbox.com/s/abcdefgdxsfdfds/mypackagezip.zip?dl=0
+```
+
+Make sure to set 
+```
+dl=1
+```
+
+ as the parameter so it will be a **direct download** to the zip.
+
+Therefore this is the URL to download the Prime Mover package from the DropBox:
+
+```
+https://www.dropbox.com/s/abcdefgdxsfdfds/mypackagezip.zip?dl=1
+```
+
+Use this URL as your remote URL to restore the site.
+
+## How to proceed with the restore?
+
+- Finally once you have remote URL set and pasted, Click **Import** button. If you see “*Unauthorized*” error, you need to set authorization keys. Please read this guide for details: [https://codexonics.com/prime_mover/prime-mover/how-to-add-and-use-authorization-keys-in-migrations/](https://codexonics.com/prime_mover/prime-mover/how-to-add-and-use-authorization-keys-in-migrations/) . Basically, you create authorization key in the source site and copy that source site authorization key to the target site. This will ensure that target site is now authorized to fetched/download or copy package from source site.  This security feature prevents any site or anyone from fetching or downloading your package.
+
+- Tip: *Prime Mover validates any URL entered. It will verify if the package is a valid Prime Mover package (which is of zip format), it will reject any URLs that is invalid and you should see errors.*
+
+- After starting the import, wait until you see**Import is done**. It will show progress to each step being processed. This process can take some time depending on the size of your packages.
+- Refresh the page.
+- Settings – Permalinks. **Re-save permalinks**.
+- Everything should be restored at this point. You can check the front end and back end of the site.
+
+## What if I cannot use remote URL feature?
+
+If for some reason this does not work (server security limitations or policies) – then you should be able to restore the package via browser upload OR using [package manager restoration](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/). Browser upload is not recommended if you have a very big package or slow upload connection. Using package manager restoration is the best alternative in this case.
+
+Was this article helpful?YesNo
+
+---
+
+## How to free up space and deleting unneeded files and backups?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-free-up-space-and-deleting-unneeded-files-and-backups/](https://codexonics.com/prime_mover/prime-mover/how-to-free-up-space-and-deleting-unneeded-files-and-backups/)
+
+When using Prime Mover, you might want to perform maintenance, such as deleting unneeded files and clearing some files to regain disk space. This tutorial illustrates the complete procedure.
+
+## Step 1 – Use the package manager to delete backups
+
+Login to your WordPress site and go to *Prime Mover -> Packages*. Review each of the packages and decide which one you would like to delete. Take note that after deleting – the file is completely lost so make sure you do this process carefully.
+
+If you have a fairly large site, backup files can easily clog it up and use significant disk space. Deleting very old and unused backups can help free up some space, which is very useful if you are in a hosting environment that limits disk space.
+
+## Step 2 – Use “Delete all backups and files” feature
+
+Now, if you want to delete all backups and logs to regain all disk space used by Prime Mover. You can easily do that using the “*Delete all backups*” button:
+
+- Login to your WordPress site.
+- Go to *Prime Mover -> Settings*.
+- Scroll down to the “*Backup management*” section.
+- You should see the red “*Delete all backups*” button.
+- Before you proceed, you can click “Compute backup directory size” to quickly check how much disk space is being used by all of your existing Prime Mover packages/logs.
+- When you want to delete all backups and all logs – click the “*Delete all backups*” button.
+- It will ask for confirmation. (Be careful because these files cannot be restored once deleted!)
+- Once you proceed, you can re-compute disk usage using “*Compute backup directory size,*” it should now be zero.
+
+## [Optional] Step 3 – Manually clear up the Prime Mover import files directory
+
+If you have used the Prime Mover default upload feature (usually available in free versions) and these uploads fail (e.g., your connection is disconnected, you are in unstable Internet, or you have canceled the upload, etc.), you can delete these chunks inside your Prime Mover import files directory.
+
+- Log in to your WordPress server via FTP or any file manager (e.g., the one provided by your web host).
+- Navigate to */wp-content/uploads/prime-mover-import-files/*
+- If this directory exists, please go inside it and delete all files (if there are files in it).
+- If this directory does not exist, that’s fine—since it is only created when you restore a site via upload.
+
+## Need help?
+
+Please [contact our technical support](https://codexonics.com/contact/). For faster resolution, please include screenshots, details, logs, and—much better—WordPress/ SFTP access to your site if you need immediate assistance.
+
+*Last updated: November 30, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## How to generate an invoice under the company name after purchase?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-generate-an-invoice-under-the-company-name-after-purchase/](https://codexonics.com/prime_mover/prime-mover/how-to-generate-an-invoice-under-the-company-name-after-purchase/)
+
+## Complete steps
+
+Sometimes you purchase Prime Mover PRO under your own personal name but you would like to have the invoice under your company name. This can be done within your Freemius account after successful purchase.
+
+- [Login to your Freemius account](https://users.freemius.com/login).
+- Go to “My Profile” tab.
+- Under “Billing” section, enter your company details such as company name, company email, address, etc. For example:
+
+- Once done, review that all details under Billing sections are correct.
+- You can then get the invoice by going to “*Orders History*“.
+- When you open or download the invoice PDF file – it should now be invoiced to your company name.
+
+That’s it.
+
+**Important**: Take note that technical support cannot make this change for you. It is only the account owner who can make this change.
+
+Was this article helpful?YesNo
+
+---
+
+## How to get multisite subsite target blog ID ?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/](https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/)
+
+### Complete Steps
+
+- Log in to your multisite as a network administrator / super-administrator.
+- Install the latest version of the Prime Mover plugin.
+- Network activate Prime Mover plugin.
+- Optionally opt-in to Freemius notifications.
+- Go to Network -> Sites -> All Sites.
+
+**PLEASE DO THIS ONLY IF THE TARGET SUBSITE DOES NOT YET EXIST:**
+
+- In *Sites -> All Sites*. Click *Add New* to add a new site.
+- Enter all required details to enter the new Site (Site Title, Site Address, email, etc.).
+- When it’s done, click **Add Site**. You have now created a blank site for which you must import your single Site.
+- Go to *Sites -> All Sites* again. You should be able to see the ID under both *the Export Site* and *Import Site* columns. For example, in the screenshot below, the blog ID is 4.
+
+- Or if there are many sites listed and you cannot see your newly created sub-site immediately, proceed to the steps below to find your Site and get the ID.
+
+**NOW IF THE  SUB-SITE EXISTS OR IS ALREADY CREATED :**
+
+- Go to *Network -> Sites -> All Sites*.
+- Search the Site using its slug or hostname; for example, if your subsite is *http://test100.local/my-new-site*, the slug to search is **my-new-site; se**e the screenshot below (showing the blog ID as **73**):
+
+- Or, if your sub-site is a subdomain format, you can search using its name. For example, your subdomain is *jeaninetravelsite.subdomaintest.tld; th*e subdomain name is *jeaninetravelsite; se*arch it as follows (shows a target blog ID of 4):
+
+**Another method of getting the target blog ID using Edit Site (if Prime Mover is not activated)**:
+
+- You can click the **Edit Site** link for the target site.
+- Take note of the edit site URL and get the blog ID. (e.g.,*/wp-admin/network/site-info.php?id=73,*the blog ID in this example is 73. See screenshot below:
+
+### What to do next?
+
+- Now you know the target blog ID of the migration, make sure to **take note of this blog ID** because you will need it when creating the multisite format package when exporting a site for migration using Prime Mover.
+
+*Last updated: August 26, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to manually extract WPRIME package?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-manually-extract-wprime-package/](https://codexonics.com/prime_mover/prime-mover/how-to-manually-extract-wprime-package/)
+
+## Background
+
+```
+WPRIME
+```
+
+ package is based on [UNIX tarball](https://en.wikipedia.org/wiki/Tar_(computing)). However it’s beyond that – it supports encryption and storing custom meta data meant for Prime Mover plugin. This is more robust and stable than using the original zip specification. For details [read our FAQ](https://codexonics.com/prime_mover/prime-mover/faq/#whatiswprime).
+
+One thing to note if you want to extract 
+```
+WPRIME
+```
+
+ package. You cannot extract encrypted packages manually because it requires an encryption key. We will develop a tool for this in the future so any users can extracted encrypted package manually – but not yet today.
+
+This short guide will only teach you to extract 
+```
+WPRIME
+```
+
+ package that is not encrypted – this is the default package that comes from the Prime Mover FREE version (PRO version supports encryption). Actually *no data compression* is applied to WPRIME package (this is done for performance reasons) – so the accurate term would be extracting – not decompressing!
+
+## Step 1 – Download the WPRIME package to your Desktop
+
+The first step is to download the 
+```
+WPRIME
+```
+
+ package to your local environment (e.g. your desktop). You can simply go to Prime Mover -> Packages and then download the package from there. If you have issues downloading the packages – [you can follow the tips in this tutorial](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/).
+
+## Step 2 – Backup your package first by creating another copy
+
+Once you have downloaded the file – back it up first. This can be done by creating duplicate copies of your
+```
+WPRIME
+```
+
+package and save it somewhere else.  So just in case you have accidentally deleted your package or your extraction software deletes it – you still have the copy.
+
+## Step 3 – Rename .wprime extension to .tar extension
+
+Since 
+```
+WPRIME
+```
+
+ is based on tarball – simply rename the file extension to 
+```
+.tar
+```
+
+For example if your file is named as:
+
+```
+mytest.wprime
+```
+
+It should now become:
+
+```
+mytest.tar
+```
+
+That’s it!
+
+## Step 4 – Use third party software to extract the .tar package
+
+At this point – you should already renamed the package to .tar extension – now simply use third party software that comes with your OS to extract it. For example you can use [7-zip software](https://www.7-zip.org/download.html) that supports .tar package extraction.
+
+Simple right? Once extracted – you should be able to see all the files contained in the package. Note that if you are unable to extract the tar package – it’s because it is corrupted during creation or transit. If this is the case – try re-creating another WPRIME package using Prime Mover plugin. If issues persist (still corrupted)- [please contact us](https://codexonics.com/contact/) for troubleshooting.
+
+## Limitations
+
+Extraction is only one-way (read only). This means that if you edit files inside your packages and  then create another tarball and renamed again to 
+```
+.wprime
+```
+
+ extension – it won’t work and it will be corrupted. Extraction is only meant to check files and retrieved your files if needed. It should not be used to edit  or alter WPRIME packages. In this case – you should only use Prime Mover plugin to create Prime Mover packages (right directly from your source site).
+
+Was this article helpful?YesNo
+
+---
+
+## How to migrate very large WordPress sites by parts?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-migrate-very-large-wordpress-sites-by-parts/](https://codexonics.com/prime_mover/prime-mover/how-to-migrate-very-large-wordpress-sites-by-parts/)
+
+## The problem
+
+This tutorial is only needed when you have problems migrating media files/plugins/themes due to their size. Or it could be due to server resource limitation or security rules. In most cases, Prime Mover plugin should be able to handle every migration cases.
+
+In some rare instances – you might need to copy these files manually to facilitate this migration. And only use Prime Mover to migrate the database (which contains your content, data, users ,etc.).
+
+This quick tutorial illustrates on how complete these steps.
+
+## Step 1 – Manually copy uploads directory from SOURCE to TARGET site manually
+
+**Example A**. Migrate single site  to another single site :
+
+Copy all media files from this path:
+
+```
+/home/my-singlesite-one/wp-content/uploads/
+```
+
+TO:
+
+```
+/home/my-singlesite-two/wp-content/uploads/
+```
+
+**Example B**. Migrate single site  to multisite subsite blog ID 77:
+
+Copy all media files from this path:
+
+```
+/home/my-singlesite-one/wp-content/uploads/
+```
+
+TO:
+
+```
+/home/my-multisite-two/wp-content/uploads/sites/77/
+```
+
+**Example B**. Migrate multisite subsite blog ID 3 to multisite subsite blog ID 77:
+
+Copy all media files from this path:
+
+```
+/home/my-multisite-one/wp-content/uploads/sites/3/
+```
+
+TO:
+
+```
+/home/my-multisite-two/wp-content/uploads/sites/77/
+```
+
+**Example C**. Migrate multisite main site  to single site
+
+Copy all media files from this path **EXCEPT**the “sites” folder
+
+```
+/home/my-multisite-one/wp-content/uploads/
+```
+
+TO:
+
+```
+/home/my-singlesite-one/wp-content/uploads/
+```
+
+There are many ways you can manually copy these files. You could do it via SCP (Command line copy), RSYNC, SFTP or even your hosting File manager (for a GUI solution)
+
+## Step 2 – Manually copy all activated plugins of that site
+
+The second step is to simply copy all activated plugins of the SOURCE site to TARGET site. If the source site is a multisite subsite – go to the subsite *WordPress admin -> Plugins* and list all activated plugins that you need to copy to the target site.
+
+If the plugins already exists in the target site – you need to delete that plugin and replace with the one from the source site. This is to ensure that your migrated site uses exact plugin versions as the one in the source site.
+
+## Step 3 – Manually copy the themes used by the site
+
+The third step is to copy the parent theme and child theme (if using child theme) from the SOURCE site to TARGET site.  Just like plugins, if the theme already exists in the target site – delete that theme and replace it with the one from the source site. This is to ensure that your migrated site uses the exact theme as used from the source site.
+
+## Step 4 – Migrate the database only using Prime Mover plugin
+
+Finally you have manually copied ALL resources (media files, plugins and themes) from the SOURCE site to TARGET site. Now it’s time to migrate the WordPress database of the SOURCE site to the TARGET site. In this step – it uses the Prime Mover plugin.
+
+In your source site – generate export package (by selecting “**Export database only**“) that targets correct export type. For example if your target site is a WordPress single site:
+
+Or if your target site is a  multisite sub-site – you need to specify the blog ID (e.g. 77). If it’s a multisite main site – usually this blog ID is 1.
+
+Once you have generated the export – you can then restore this to your target site. Prime Mover automatically adjusts all paths, URLs ,etc. So you don’t need to worry about search and replace during the migration. After the database is restored on the target site. The site is now completely migrated.
+
+If you have any doubts and questions – [please contact us here](https://codexonics.com/contact/).
+
+Was this article helpful?YesNo
+
+---
+
+## How to migrate your WordPress multisite sub-site to another multisite subsite or network
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-multisite-sub-site-to-another-multisite-sub-site/](https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-multisite-sub-site-to-another-multisite-sub-site/)
+
+Scope: **Prime Mover Free / Pro version**
+
+**IMPORTANT: If you are using Prime Mover Pro for the first time**, please read this get-started guide.
+
+This tutorial illustrates how to migrate an existing sub-site in a multisite environment to another multisite environment. This tutorial applies to both Prime Mover Free and the Pro Version. The target site installation could reside on a different server, localhost, or even in the same multisite.
+
+### Before you export your multisite subsite
+
+Please do the following before you export your subsite (in your source multisite):
+
+- Set up your blank target subsite in a different or the same multisite. If your target subsite has not been created yet, it is best to do so before you export your source subsite.
+- Now that you have created your blank subsite in your target multisite, please note the target subsite blog ID. Refer to this tutorial for [instructions on obtaining the blog ID of the subsite](https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/). You will need this blog ID to correctly target your target multisite package later on in the examples.
+
+### Example #1: Migrate the same subsite to another multisite network
+
+**Description**: For example, say you want to migrate a subsite with blog ID: 3 to another multisite environment on another server or hosting.  The target subsite blog ID in another multisite is also 3.
+
+#### Source multisite site:
+
+- Install the latest version of the Prime Mover plugin.
+- Log in as a network administrator and activate.
+- Optionally opt in to Freemius notifications.
+- Go to Network Sites.
+- Search the sub-site that you would like to export.
+- Select appropriate export options. For example, say you want to migrate the entire subsite (database, media files, plugins, themes) – the export dialog will look like this.
+
+The most critical settings in the above export dialog are as follows: Specify that you need to export to a multisite package format (selecting “*Export to multisite format*“), specify the target subsite blog ID (*Enter the multisite target blog ID*).
+
+- Finally, click**Export Now.** Wait until the export process is completed. Do not close or refresh the window.
+- After completing export, you need to download your package to your local Desktop or laptop. Please double-check that the download process is complete, as some hosts cut off huge package downloads due to a timeout or server limitation. To make sure that you will be able to download the package at all times (regardless of whether your host implements a timeout or not). You need to [download the package via SFTP/FTP](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/). Downloading via cPanel or using your hosting file manager is also recommended if your host does not provide FTP access.
+
+### Example #2: Migrate the subsite to another multisite network with a different blog ID
+
+**Description**: In this example, say your original subsite blog ID is 3, but the freshly created blank subsite in the target multisite is blog ID 499. To make the correct package, you need to specify the correct blog ID  in the export dialog.
+
+### Example #3: Migrate subsite to target multisite main site
+
+Migrating a subsite to another multisite main site requires knowing the target main site blog ID. Most multisite main sites, however, use a blog ID of 1 (not all, so make sure to check this before creating an export).
+
+For details, please refer to this tutorial: [Migrate the subsite to the multisite main site](https://codexonics.com/prime_mover/prime-mover/how-to-backup-and-migrate-multisite-main-site-in-wordpress/#subsitetomainsite). Please note that restoring a package to a multisite main site is a Pro feature. Therefore, ensure that you [upgrade your plan to PRO](https://codexonics.com/prime_mover/prime-mover/pricing/) before attempting to restore the package in your target multisite.
+
+### Example #4: Migrate your source site’s multisite main site to another multisite
+
+Note: To export your source multisite main site, it requires a PRO version of the Prime Mover plugin. If you are still using the free version, you need to [upgrade to the PRO version](https://codexonics.com/prime_mover/prime-mover/pricing/).
+
+For details on this example, please refer to the complete tutorial on [migrating your multisite main site to a subsite](https://codexonics.com/prime_mover/prime-mover/how-to-backup-and-migrate-multisite-main-site-in-wordpress/#main-site-to-subsite).
+
+### Restore Package
+
+The restoration process is the same regardless of what export methods you’ve used. In summary, these are as follows:
+
+- Install the latest version of the Prime Mover plugin. It should be the same version as the one used to create the export package.
+- Log in as a network administrator and activate the Prime Mover plugin in the network.
+- Optionally opt in to Freemius notifications.
+- Go to Network Sites.
+- Search the sub-site that you would like to be restored.
+- Click the Restore button.
+- Browse to the exported package.
+- Prime Mover validates the exported package (e.g., analyzes the blog ID vs the target blog ID).
+- If it matches, Prime Mover asks you to confirm the restoration.
+- If you proceed, wait until the restoration process is completed. This process may take some time, depending on the size of the package.
+
+### Help! Mismatch import error!
+
+A mismatch error is caused when you create a multisite package with an incorrect target blog ID. For example, if you restore your package (exported with a specified target blog ID of 5) to a blank subsite with a blog ID of 6. This mismatched blog ID between the source and target subsites prevents the package from being restored. There are a couple of easy solutions to this issue (whichever is possible):
+
+- For FREE versions, you can re-create a new export (at the source site) targeting the correct target blog ID. Use this updated package to restore the subsite.
+- If you are using the PRO version and the target subsite blog ID isn’t used by another existing subsite, you can [create an empty/fresh/blank subsite with this target blog ID](https://codexonics.com/prime_mover/prime-mover/can-i-change-the-exporting-blog-id-to-another-site-importing-blog-id/#workaround-two). For example, if you have created a package targeting blog ID 6, you can then create a blank subsite with the same blog ID. This is supported with the PRO version.
+
+*Last updated: June 16, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to migrate your WordPress multisite sub-site to single-site
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-multisite-sub-site-to-single-site/](https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-multisite-sub-site-to-single-site/)
+
+Scope: **Prime Mover Free / Pro version**
+
+**IMPORTANT**: If you are using Prime Mover Pro for the first time, please read this get-started[guide first.](https://codexonics.com/prime_mover/prime-mover/getting-started-with-pro-version/)
+
+This tutorial applies to both Prime Mover Free and Pro Versions. It teaches you how to migrate your WordPress multisite subsite installation to a single-site installation. The target site installation could reside on a different server or your local host.
+
+## Exporting a package
+
+- Install the latest version of the Prime Mover plugin.
+- Log in as a network administrator and activate the plugin in the network.
+- Optionally opt-in to Freemius notifications.
+- Go to *Network Admin -> Sites -> All Sites*.
+- Search the sub-site that you would like to export.
+- Click the export button – and the export dialog will pop up.
+- Select appropriate export options. If you want to make a complete site migration (which means including the database, plugins, themes, and media files), makesure to select “*Export database, media files, plugins, and themes*.”
+- Under “*Export type*,” ensure the**Export to single-site format** is checked.
+
+- Click**Export Now.** Wait until the export process is completed. Do not close or refresh the window.
+- **Download the package to your Desktop**. For best results and to avoid hosting timeout when downloading your package (especially if it’s large), please [download via SFTP or using your hosting file manager](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/).
+
+To summarize, the above screenshot example migrates the subsite with blog ID 3 to a standalone WordPress single-site installation.
+
+## Restore package in single-site
+
+- In the target site, reset the WordPress database so it becomes like a fresh WordPress installation. You can use a plugin like [WordPress Reset](https://wordpress.org/plugins/advanced-wp-reset/) to do this. Note that this deletes the target site database; make a backup if this is still useful to you.
+- Optionally, you can entirely clear the uploads directory so that the old and new media files will not be mixed.
+- Activate the latest version of the Prime Mover plugin. This should be the exact same version as the one used in your multisite.
+- Optionally opt-in to Freemius notifications.
+- Go to *Tools – Migration Tools*.
+- Click the **Import** button.
+- Browse to the exported package to upload it.
+- Prime Mover analyzes the package and needs confirmation from you before proceeding.
+- Once the import starts, there is no going back. You must wait until this process is completed.
+- Optionally, once the restore is completed, you need to re-save permalinks if necessary to resolve 404 errors on some pages (if you see them).
+
+*If your package is huge to restore via default browser upload:*
+
+- Ensure your package is completely downloaded to your Desktop (from the multisite source site).
+- You can [restore your package via the package manager](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/#packagemanager). This requires uploading your package from your Desktop to your target site’s Prime Mover export directory.
+- Finally, once the package is uploaded, you can safely restore it via the Package manager on the target site.
+- Wait until the restore is completely done. Then, you should have migrated your site to a single site.
+
+*Last updated: November 19, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## How to migrate your WordPress single-site to multisite sub-site
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-single-site-to-multisite-sub-site/](https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-single-site-to-multisite-sub-site/)
+
+Scope: **Prime Mover Free / Pro version**
+
+This tutorial applies to both Prime Mover Free and Pro Versions. It teaches you how to migrate your WordPress single-site installation to a multisite installation. The target site installation could reside on a different server or your local host.
+
+**IMPORTANT**: **If you are using Prime Mover Pro for the first time**, [please read this get-started](https://codexonics.com/prime_mover/prime-mover/getting-started-with-pro-version/)[guide first.](https://codexonics.com/prime_mover/prime-mover/getting-started-with-pro-version/)
+
+**WARNING!**Please follow the instructions below **religiously** so you won’t get an error like “**Wrong import site package! Please check that the import package is correct for this site**.” when restoring the package.
+
+### Step1: Get the blog ID of the TARGET subsite in multisite
+
+Please read this [dedicated guide on retrieving target subsite ID in multisite](https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/). Once you have the target subsite blog ID, return to this tutorial and move on to Step 2. below.
+
+### Step2. EXPORT A MULTISITE PACKAGE in your SOURCE single-site
+
+1. **Login to your WordPress source single-site installation.**This should be the site that you want to migrate to multisite.
+2. Activate the latest version of the Prime Mover plugin. This should be the exact same version as the one used in your multisite.
+3. Optionally opt-in to Freemius notifications.
+4. Go to *Tools – Migration Tools* or *Prime Mover -> Packages -> Create a new package*.
+5. Click the button (or Export button).
+6. Choose **Export database, media files, plugins, and themes.**( *in this example, we export everything (dB, media, plugins/themes*)
+7. Under “**Export type (required)**,” select **Export to multisite format**.
+8. *Enter**the blog ID* of the multisite sub-site created in the previous section. Enter only integer format; the plugin will validate this and won’t accept non-integer values. In this example, the blog ID is 4.
+9. Click **Export Now**. Wait until the Export is completed. Depending on the size of your website, this process can take time.
+10. When it’s all done, the package will be downloaded to your computer (for free versions). If you have issues with incomplete downloads or download timeouts from your hosts, you can [download this package via SFTP or your hosting file manager](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/).
+
+### Step 3. Restoring a multisite package
+
+**First method: Using default browser upload (applicable only for small packages or sites)**:
+
+- Login to your multisite as a network administrator.
+- You should already have installed the latest version of the Prime Mover plugin in your multisite (*from Step 1*)
+- Go to *Network -> Sites -> All Sites.*
+- Find the site that will be imported under the **Import Site** column and click the corresponding Restore button.**It shows the blog ID is 4, so it’s the correct site to restore it.**
+
+- If the package is correct for the site, a confirmation dialog will appear. Please review the information to ensure it’s correct for your site.
+- Suppose you get an error like “Wrong import site package! Please check that the import package is correct for this site.” This means you have created the wrong package (e.g., you made*a package for a single site package but restored it to a multisite). Or you have restored the multisite package to the**wrong subsite (e.g., you created a multisite package for blog ID 4 but restored it to blog ID 6).*
+- If there is no error, Proceed to the import. Depending on the size of your package, this process can take time.
+
+**Second method: Using the package manager method (***applicable for huge site-packages***)**
+
+Please refer to this [dedicated tutorial on restoring a large package](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/#packagemanager) (which also works with the FREE version) to your target site via the package manager method.
+
+*Last updated: November 17, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## How to restart scheduled backup process?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-restart-scheduled-backup-process/](https://codexonics.com/prime_mover/prime-mover/how-to-restart-scheduled-backup-process/)
+
+## Background
+
+If you notice that some of your scheduled backup processes have stalled and are no longer progressing, they must be restarted to continue creating backups.
+
+Please note that backups might take some time to complete (depending on your site and server speed). Give it time before you decide to restart the scheduled backup process.
+
+## When to restart scheduled backups?
+
+There are many reasons why scheduled backups should be restarted. Some of them go beyond the scope of the Prime Mover PRO plugin and even the WordPress platform itself. Below are some reasons:
+
+- Your server restarts while the scheduled backup is running. This clears up the memory and running processes, resulting in stalled backups.
+- Your hosting executes scheduled server maintenance. These maintenance tasks can be anything, from installing new software to updating old software to cleaning up your server. Once these updates refresh the running site, any running processes, including automatic backup, get stalled and need to be restarted.
+- You establish a backup timeout that exceeds the timeout of your hosting server. For instance, your hosting timeout is 60 seconds, yet you have set it to 180 seconds. Your host could silently kill these processes without putting any errors in the logs. The solution would be to set a conservative backup timeout and restart the backup process.
+- You scheduled too many backups to run simultaneously, using more hosting resources than you should have. Your hosts can kill them quietly. The solution is to spread out your scheduled backups and not let them all run simultaneously.
+
+## Before you can restart scheduled backups
+
+- Ensure that the site you need to restart the automatic backups has the PRO license activated. Otherwise, you cannot set and save the settings below.
+- This tutorial assumes automatic backup is already globally enabled before you can restart any process. You will know that the automatic backup is globally enabled by going to *Prime Mover PRO -> Settings* -> *Backup management* -> *Automatic backup*.
+- If this option is checked, automatic backups are enabled globally. If it is not checked, check it out first and save it.
+
+## Steps to safely restart automatic backups
+
+- Login to your WordPress site as administrator (*network administrator if multisite*).
+- **[If your site is multisite]**: Go to *Prime Mover PRO -> Event Viewer*. Confirm and get the blog ID of the affected site so you can restart the scheduled backups.
+
+- [*If your site is multisite*]: Go to *Prime Mover PRO -> Toolbox*. Enter the blog ID of the affected subsite. Uncheck the ‘Enable automatic backup’ checkbox, and click the “Save” button. This will turn off the automatic backup only for that specific multisite subsite.
+- [*If your site is single-site*] – Go to *Prime Mover PRO -> Settings* -> *Backup management* -> *Automatic backup*. Uncheck the ‘Enable automatic backup’ checkbox and click the “Save” button. This will turn off the automatic backup for your WordPress single site.
+- [**If your site is multisite**] Click the “Package Manager” link in the breadcrumb navigation above as indicated in this screenshot:
+
+- **[If your site is single-site]** Go to *Prime Mover PRO -> Packages*.
+- On the site’s package manager page, click the “*Refresh packages*” button. This will clear and delete any artifacts or incomplete packages.
+- On the package manager page of the site – click the “*Scheduled backup settings*” button as indicated in this screenshot:
+
+- Scroll down to the bottom of that site’s Sites Tools / Scheduled backup settings page.
+- Click the following three red buttons in the following order:- “*Clear auto backup log*“
+- “*Clear error log*“
+- “*Clear auto backup init key*“
+
+This is what the buttons look like:
+
+These buttons clear the logs and initialization keys, which is necessary to restart the process cleanly.
+
+- You are now ready to re-enable/restart the scheduled backup process. Make sure that the automatic backup settings are globally enabled. Go to*Prime Mover PRO -> Settings* -> *Backup management* -> *Automatic backup*. And make sure this is checked like this one and click “Save”:
+
+- Go to *Prime Mover PRO -> Toolbox*.
+- [*If your site is multisite*] Enter the blog ID of the affected site where you want automatic backup to be restarted.
+- *[required]* **[If your site is multisite]** Go to the Top of the Sites Tools / Scheduled backup settings page, re-check the *Enable automatic backup* checkbox, and click “*Save*.” This is what it looks like:
+
+- *[required]* Under “*Backup options,*” – make sure to set this and save it.
+- *[required]* Make sure to set also “*Backup schedule*” and save it.
+- *[Optional tips for multisite ]* Don’t schedule backups for several sites simultaneously. Running backups consumes server resources. Please spread your backup process over different schedules to avoid running them together. This efficiently distributes your server resource usage, which is beneficial for your site. You can [assign as many custom schedules](https://codexonics.com/prime_mover/prime-mover/how-to-add-custom-backup-schedules-for-automatic-backup/) as you want for your sites.
+- *[required]*Since you are restarting the process – you might want to be very conservative with your backup timeouts. To avoid hitting a timeout that could disrupt your process, assign the shortest timeout possible under “Retry timeout options” – set the timeout to 20 seconds. This will ensure it will run as most hosting configurations will have server timeout higher than 20 seconds.
+- Confirm that the backup schedule is now active. To do this – go to *Prime Mover PRO -> Event Viewer*. You should see the two sets of events for that site (one for the main schedule and one for the retry checking). This is what it looks like:
+
+Suppose you see the above two entries for your site. Congratulations! Your schedule backup is now restarted! Please wait for some time until it fires in your set schedule.
+
+## Contact tech support
+
+If your scheduled backups still don’t work after restarting them, please [open a ticket with technical support](https://codexonics.com/contact/). To assist you as soon as possible, please provide your WordPress site login (network admin credentials if your site is multisite) so we can immediately check the problem directly on your affected site.
+
+If your site is multisite, please specify the affected sub-site URL or blog ID so we know which site has issues.
+
+*Last updated: January 11, 202*5
+
+Was this article helpful?YesNo
+
+---
+
+## How to restore backup packages using the new Prime Mover backup management?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-restore-backup-packages-using-the-new-prime-mover-backup-management-added-in-version-1-0-7/](https://codexonics.com/prime_mover/prime-mover/how-to-restore-backup-packages-using-the-new-prime-mover-backup-management-added-in-version-1-0-7/)
+
+Scope: **Prime Mover Pro / Prime Mover Free**
+
+### Background
+
+Prime Mover 1.0.7 added new backup management page. This adds a new way of restoring packages with Prime Mover.
+
+This is very useful in case:
+
+- Uploading packages to your site via **Tools -> Migration Tools** (or **Network sites -> Sites in multi-site**) takes too long or does not work. Prime Mover by default uses browser upload which is slow.
+- [Remote URL restoration](https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/) fails because of insufficient server RAM, or hosting / network related issues.
+- You want to restore a big site and that your target hosting server has limited resources (e.g. in shared hosting environment).
+
+### Step 1. Create backup package in the source site
+
+In your source site (e.g. the site that you want to migrate or create a backup copy), create an export package.
+
+This could be a single-site or multisite package. It depends on your target site.
+
+If your  target site is a single-site, you should create single-site package. Otherwise if its multisite, you should create a multisite package.
+
+Once the export is done, a copy is saved to your Prime Mover backup directory.  Go to *Prime Mover -> Packages*and you should be able to see your newly created package.
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NjgiIGhlaWdodD0iMzI0IiB2aWV3Qm94PSIwIDAgNzY4IDMyNCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=)In the above example, I created single-site package in a multisite network because I would like to move this to a single site server in different hosting.
+
+### Step 2. Manually copy the package to your target site Prime Mover backup directory
+
+There are several ways to copy the package you have created in Step 1 to your target site. The easiest would be to use the **download button** (see above screenshot). This will download the package to your Desktop.
+
+This is useful if your target site is local or in your own computer.
+
+If your target site is another remote hosting server, you will need to re-upload that downloaded package using your favorite SFTP client (e.g. Filezilla).
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDEiIGhlaWdodD0iNTgyIiB2aWV3Qm94PSIwIDAgODAxIDU4MiI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=)Re-upload it to your target site Prime Mover backup directory. Again your target site needs to have Prime Mover Pro license activated and you can get the path to your backup directory in your target site *Prime Mover -> Packages*
+
+If you are a command line savvy and knows how to use terminal /shell commands (if supported by your server), you can directly copy from your source site backup directory to your target site backup directory using SCP. This way you will never need to download it to your desktop and re-upload it in the first place.
+
+### Step 3. Refresh your target site Prime Mover backups management page
+
+OK now you have uploaded the package to restore to your target backup directory, login to your target WordPress site via admin.
+
+Go to **Prime Mover -> Packages** and then refresh this page. Or use the **Refresh Packages** button. You should now be able to see the backup there listed.
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iMzg2IiB2aWV3Qm94PSIwIDAgNTEyIDM4NiI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=)
+### Step 4. Click the “Restore Backup” button
+
+In the above screenshot, you should be able to see the restore backup button activated.
+
+If its clickable, click “**Restore backup**” button and it will take you to the import confirmation dialog screen.
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDUiIGhlaWdodD0iMzMxIiB2aWV3Qm94PSIwIDAgNDA1IDMzMSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=)The confirmation dialog shows the details of the site you are restoring. Take a look at the details and see if you are restoring the correct site. If its all correct, click **Yes** button.
+
+### Step 5. The restoration process starts, wait until its done
+
+After you click yes, the restoration process starts. Don’t navigate away from the page or do something with your site. Your site will be put to maintenance mode automatically by Prime Mover.
+
+The import process shows the progress , for example:
+
+Ongoing import processRestoration process time **depends on the power of your hosting server and the size of your package**. Finally after some time, it should show its done:
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNzciIGhlaWdodD0iMzIwIiB2aWV3Qm94PSIwIDAgMzc3IDMyMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=)
+### Step 6. Refresh permalinks and check frontend
+
+Go to **Settings -> Permalinks** and re-save permalinks. Then check the front end. It should show the same as your source site.
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDciIGhlaWdodD0iNDE2IiB2aWV3Qm94PSIwIDAgNDA3IDQxNiI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGw6I2NmZDRkYjtmaWxsLW9wYWNpdHk6IDAuMTsiLz48L3N2Zz4=)Was this article helpful?YesNo
+
+---
+
+## How to restore large packages with Prime Mover Free version?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/)
+
+Scope: **Prime Mover Free / Pro version**
+
+### The problem
+
+[Go directly to the solution](#packagemanager)
+
+OK, supposing you already exported a site using Prime Mover and ended up with a large package size. Package size is somewhat of a relative figure. It varies from user to user as it depends entirely on your upload speed connection.
+
+If your package size is 350 MB, it will appear large if your browser upload speed is only 64 kbps, as it takes a lot of time to upload this package.
+
+On the other hand, if you have a 1 GB package or even 3 GB but you have a 500 MBPS upload speed or even higher, the uploading experience is a piece of cake. But it’s a different story when you upload this size on a 500 kbps slow DSL.
+
+So, the definition of a large package depends on the upload connection speed. The longer it takes to upload, the larger the package problem.
+
+### The clue to this problem: The time it takes to upload
+
+When you first attempt to import /upload, Prime Mover analyzes resources that checks the package type, encryption status (if encrypted), etc.. Then, a heads-up dialog pops up. It looks like this:
+
+In this process, Prime Mover automatically computes the time to upload for which in this example it takes 284 minutes! This is almost 5 hours! This is because the upload connection speed of where that screenshot is taken is very slow.
+
+In cases like this, it is **not** advisable to proceed with the upload via Prime Mover’s default upload functionality. It will take long hours, and a lot of things can happen. Think about internet disconnection, browser lags, server errors, etc. Your browser cannot handle these things easily because they can be random.
+
+### Why can it be slow aside from my connection?
+
+One reason browser uploads via Prime Mover are slow is that we intentionally delay them in “*between chunks.*” For example, a large upload is broken down into 10 MB chunks, and after uploading each chunk, Prime Mover throttles (pauses a bit) and then resumes uploads.
+
+This is done to avoid a bigger problem—accidentally launching DOS (Denial of Service) attacks on the server or putting a bigger load on the server. Throttling can help resolve this issue.
+
+This is usually tolerable and advisable for smaller packages. But there is a better solution for bigger packages.
+
+### Solution: Manually upload via FTP/SFTP/SCP/Cpanel File Manager
+
+The recommended strategy is to upload the *WPRIME* package to your target site’s Prime Mover export directory. Using tools that do not depend on your browser or server limitations would be best. These are your SFTP/FTP client, SCP (SSH copy), or traditional cPanel File manager (or Plesk manager in some servers).
+
+cPanel file manager is straightforward to use. If you don’t have cPanel, you can use SFTP (which is more secure than FTP). There are a lot of free tools like Filezilla that support SFTP.
+
+If you’re a bit techie and know SCP (command-line SSH copy), this is so much better. It is because CLI uploading seems to be the fastest to me. If you don’t have any of these tools, you can use FTP as a last resort. It is very strange for a hosting company not to offer any uploading solutions. FTP should be there, at least.
+
+The objective is to upload the package to the Prime Mover export directory. Once uploaded, you can restore it within WordPress admin. Simple, right? These are the steps.
+
+**Step 1. Know your target site Prime Mover export directory path.**
+
+- Log in to your WordPress admin. If your target site is a multisite, you need to be logged in as the network administrator.
+- Once logged in, go to Prime Mover -> Packages if it is a single site. If it is a multisite, go to Network Admin first, then to **Prime Mover** -> **Packages**.
+- If your target site is a single site, this is what it looks like.
+
+The one enclosed in the red box shows your target site Prime Mover export path. e.g.
+
+```
+/home/emerson/sourcecode/testplatform/wp-content/uploads/prime-mover-export-files/1/
+```
+
+If your target site is a multisite, things will be slightly different. You need to specify the subsite blog ID first, then press enter key. It will then load the subsite package management page. This is what it looks like:
+
+If you have noticed, there is a blog ID field where you need to enter or select the subsite’s blog ID. This is required to load the correct package management page of the subsite. Each subsite should have its own export directory path and package management page. Make sure you load this one by providing the correct blog ID.
+
+Once it’s loaded, you should be able to retrieve the export directory path of this subsite. This is how it looks in this example:
+
+```
+/home/emerson/sourcecode/test100/wp-content/uploads/prime-mover-export-files/74/
+```
+
+This is where you need to upload your WPRIME package.
+
+**Step 2. Refresh the packages**
+
+Once it’s uploaded, click the “**Refresh packages**” button, and you should be able to see the package. Carefully examine the package file name and all meta details to make sure they are correct and that you have uploaded them correctly.
+
+**Step3. Restore the package.**
+
+Once it’s refreshed and you are sure the package is correct, you are ready to restore it. Click the “Restore package” button to start the migration or restoration of the package to the target site. This can take some time, depending on the size of the package and the speed of the server.
+
+If you cannot see the package, then it means:
+
+- You upload it to the wrong path. Please review the path again.
+- The package might be corrupted (if you are sure it’s uploaded to the correct path). Try [re-downloading the package from your source site via SFTP](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/) and re-upload it again to your target site export directory.
+
+If you see the package but you cannot restore it (the restore button is disabled), then it means:
+
+- You created the wrong package for your target site. For example, you created a single-site package at the source site but restored it to a multisite. In this case, you should create a multisite package.
+- Or you can create a multisite package and restore it to a single site (you should create a single-site package instead).
+- Or you created a multisite package for blog ID 5 but restored it to blog ID 7 (ID mismatch, not allowed). You should create a multisite package for blog ID 5 and restore it to the target subsite with blog ID 5.
+- The package is encrypted, and you are using the free version. (This requires a PRO version).
+
+You will always know why the **Restore package** button is disabled. Click the “*restore package*” button; the title attribute will show the reasons. For example:
+
+### Something isn’t working?
+
+Please get in touch with our technical support [here](https://codexonics.com/contact/).
+
+*Last updated: November 17, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## How to submit debug data to support?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/)
+
+## Prime Mover FREE & PRO users
+
+Note that this procedure requires at least Prime Mover 1.6.0 or later. If you are using an outdated version of Prime Mover, please upgrade to the latest version first. Then, please follow the procedure below:
+
+- First, ensure you always use the latest version of the Prime Mover plugin. If you are using the FREE version, please [download it from WordPress.org](https://wordpress.org/plugins/prime-mover/). If you are using the PRO version, please update it via Prime Mover PRO -> Account or download the latest PRO version zip file from inside your Freemius account. The latest version always includes the latest stability and performance fixes, so it’s best to retest your issue with the newest version to check if it has already been resolved.
+- Enable WordPress 
+```
+debug.log
+```
+
+ (which is generated inside 
+```
+/wp-content/
+```
+
+ the directory). Please add the following code to your wp-config.php to create the debug.log:
+
+```
+// Enable WP_DEBUG mode
+define( 'WP_DEBUG', true );
+
+// Enable Debug logging to the /wp-content/debug.log file
+define( 'WP_DEBUG_LOG', true );
+
+// Disable display of errors and warnings
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 0 );
+```
+
+- Log in again to your WordPress and reproduce the error. If the error occurs during export, please try exporting again. Otherwise, if it is an import error, please repeat the import process.
+- If a runtime error is generated during the export or restore process, click the “*Runtime error*” link to download the runtime error log. (if possible).
+- Go to *Prime Mover -> Advanced -> Advanced Settings Panel -> Debugging Tools -> Download log*and click “**Download log file**.” This will download the complete migration log.
+- Go to *Prime Mover -> Advanced -> Advanced Settings Panel -> Upload/Download Parameters -> Export site info*and click “**Export site info**“. This will download details of your site info, including your Prime Mover settings data. This is your site information log.
+- Retrieve the **debug.log** found in the */wp-content/*directory of your site. Please also include this log.
+
+- Please add relevant screenshots of the issue, if possible, so we will know where and when the problem occurs.
+
+In summary, you will need to provide five key files to support your claim. These are the:
+
+- *Runtime error log* (if caused by runtime error)
+- *Migration log*
+- *Site information log*
+- *Debug log*
+- *Error screenshots* (optional if helpful)
+
+Please put these five files inside a folder and zip them. Please do not share these logs with any public forums or any person. Please provide these logs ONLY to the plugin developer. You can upload this zipped log file to Google Drive or Dropbox and send us the link to download the logs via the support contact form. You can email us if you already have our technical support email address. Or if this is a new ticket, you can open this for us via:
+
+- [*PRO version*] Optionally, inside your WordPress admin, go to **Prime Mover – Contact Us.**
+- [*PRO version*] Select **Technical Support****.** Then, you can paste the migration log and provide us with all the details. If you think the log is too big, please upload it to Google Drive or Dropbox and paste the link to download it.
+- [*PRO version*] You can optionally provide us with administrative access to your site for debugging purposes.
+- [*FREE or PRO versions*] Optionally, if you are doing the import, you can provide us with the package (in 
+```
+WPRIME
+```
+
+ package format). This would be very helpful in allowing us to reproduce the issue more quickly on our end.
+- Finally, remove these constants from your wp-config.php file after sending all the logs to us.
+
+```
+// Enable WP_DEBUG mode
+define( 'WP_DEBUG', true );
+
+// Enable Debug logging to the /wp-content/debug.log file
+define( 'WP_DEBUG_LOG', true );
+
+// Disable display of errors and warnings
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 0 );
+```
+
+**Note**: If you have opened a ticket on the WordPress.org forum, please refrain from posting sensitive links to logs, packages, or WordPress admin access in those forums, as they are public.
+
+## Persistent debugging and migration log for all sites (including HTTP API logs)
+
+If you are a PRO version user, you can go to *Prime Mover PRO -> Advanced -> Debugging Tools -> Persist / HTTP API Log* and check this setting.
+
+After changing this debugging feature, it will do the following:
+
+- The migration log persists and will not be cleared for every restore and export. This is useful if you want to capture all events and issues during every migration, export, or restoration for troubleshooting purposes (or when requested by technical support). Please note that this will result in a significantly large file size for your logs. Limit its usage and disable it when it is no longer needed.
+- Typically, Prime Mover does not log HTTP API calls for [remote URL restoration](https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/). When this setting is checked, it will now log the header status and all events of the HTTP API calls. This is useful when troubleshooting causes associated with remote URL restoration issues. For example, using this log, you will see the actual header status being returned by the server. You can then provide this log to tech support for further validation and analysis.
+
+*Updated: April 19, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to uninstall Prime Mover plugin?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-uninstall-prime-mover-plugin/](https://codexonics.com/prime_mover/prime-mover/how-to-uninstall-prime-mover-plugin/)
+
+This article illustrates the best practices on uninstalling Prime Mover plugin. Look for the uninstall scenario that best fits your case. Take note that *uninstalling* *Prime Mover* means that you no longer plan to use the plugin again in your projects. So please take note of this.
+
+## Using FREE version and just testing the plugin (no backups created)
+
+- If you have not created any backups (meaning no file in your Prime Mover export directory with 
+```
+.wprime
+```
+
+ extension) – you can directly go to plugins and **deactivate** Prime Mover first.
+- Once the plugin is deactivated – **delete** the plugin in the WordPress plugins list. For example – see screenshot below:
+
+- Once you delete the plugin – the cleanup script will delete all traces of Prime Mover in your site (e.g. in uploads directories and WordPress database.)
+
+## Using FREE version and with backups created
+
+- Prime Mover won’t delete backups (*or any file with .wprime extension in your Prime Mover export directory*) during uninstall for safety reasons. So you need to go to */wp-content/uploads/prime-mover-export-files/[blog_ids]* and either download the backups to your local then you should manually delete it. Make sure there are no more 
+```
+WPRIME
+```
+
+ packages left in your export directory.
+- You can also download and delete packages using *Prime Mover -> Package Manager* in the backend aside from manually downloading/deleting these packages via FTP.
+- Once you have deleted all 
+```
+WPRIME
+```
+
+ packages, login to your WordPress admin and then deactivate Prime Mover.
+- After deactivating Prime Mover – you can delete the plugin using the above screenshot.
+- The cleanup script should auto-delete all remnants of Prime Mover plugin in your export directories and database.
+
+## Using PRO version with configured settings and backups
+
+- First – handle the backup/WPRIME packages created just like the FREE version (*refer to the previous heading “Using Free Version and with backups created*). You can either download  the backups first for future use before deleting it. Make sure to delete all files with 
+```
+WPRIME
+```
+
+ extension before proceeding to the next step.
+- If you are using custom export directory (not using default uploads directory to store backups) – this is not auto- deleted by the cleanup script for security/safety reasons. You need to manually delete this directory after you have deleted all backups on it.
+
+- For safety reasons, Prime Mover settings are not deleted during uninstall (including packages created). If you want to completely uninstall PRO version – first look at your Prime Mover settings (*Prime Mover -> Settings*) and take note of any needed settings (encryption keys,  Gdrive API keys ,etc.) that you might need later on.
+- Once you take note of any needed settings – you need to clear the settings first by going to *Prime Mover -> Settings*, scroll down to the bottom and then then click “*Reset to defaults*“. This will delete the Prime Mover settings on the database.
+- Prime Mover encryption key constant (
+```
+PRIME_MOVER_DB_ENCRYPTION_KEY
+```
+
+) is added to the wp-config.php during PRO version activation. This is not auto-deleted by the script for security reasons. You need to manually remove it after you have take note it.
+- Finally deactivate the PRO version and then delete it. This should delete all remnants of Prime Mover plugin in your site.
+
+## FAQ on uninstall procedures
+
+- *Prime Mover export directory is not deleted during uninstall?* Answer: The export directory should still have WPRIME files on it. These are not deleted to prevent the cleanup script from deleting backups or WPRIME packages. You should either delete the packages in the Prime Mover Package manager (in backend or manually delete it via FTP).
+
+- *Does upgrading plugin delete settings or files?* No it should not delete Prime Mover packages or settings. This is true whether you are using WordPress upgrade system or manually upgrading the plugin (*such as deleting the old version and then replacing it with a new version*).
+
+- *What if I would like to use Prime Mover soon?* Then you should not uninstall it – you can still deactivate the plugin but don’t uninstall or delete it. This way you can easily reactivate the plugin with all settings / packages/ files intact.
+
+## Uninstalling /wp-content/mu-plugins/000-prime-mover-constants.php
+
+Since Prime Mover 1.8.0 – this script is implemented if your site wp-config.php is not writable or customizable. This script is not deleted automatically after uninstall to avoid accidentally losing your Prime Mover encryption key constant.
+
+Your encryption key is constant is used to decrypt packages, encrypt your Prime Mover settings etc. You can uninstall this script as follows:
+
+- Login via FTP and go to 
+```
+/wp-content/mu-plugins/
+```
+- Check if you have 
+```
+000-prime-mover-constants.php
+```
+
+ script implemented. If you don’t have this script – skip this section, it’s not for you.
+- Download this script in your Desktop.
+- Open this script and check if it contains the encryption key constant: 
+```
+PRIME_MOVER_DB_ENCRYPTION_KEY
+```
+- If the script contains encryption key – take note of it and keep a a safe copy so you can use this anytime when needed (e.g. if you need to restore encrypted packages in the future). If there is no encryption key – no need to worry – skip to the next step.
+- Delete the 
+```
+000-prime-mover-constants.php
+```
+
+ script via FTP.
+- Done.
+
+Was this article helpful?YesNo
+
+---
+
+## How to update Prime Mover PRO to the latest version if you encounter an error?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-update-prime-mover-pro-to-the-latest-version-if-you-encounter-an-error/](https://codexonics.com/prime_mover/prime-mover/how-to-update-prime-mover-pro-to-the-latest-version-if-you-encounter-an-error/)
+
+## Problem
+
+You attempted to update the plugin to the latest version but encountered an error. Examples of such errors include 403 Forbidden errors, server or hosting upload limitations, and any errors related to Freemius data.
+
+## Cause of this issue
+
+This usually occurs because your site has corrupted data. Other plugins may be blocking the update. It could be caused by hosting or server restrictions.
+
+## Solution
+
+- Deactivate all versions of the Prime Mover plugin on your site.
+- Delete all old versions of the Prime Mover plugin in your 
+```
+/wp-content/plugins/
+```
+
+ directory.
+- [Temporarily deactivate your license](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/#allsites) from inside your Freemius account.
+- [OPTIONAL] Reset your Freemius licensing data by [following these procedures](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/). This step is optional only if you are encountering Freemius-related errors or are unable to access your account page (*Prime Mover PRO -> Account*).
+- You can download the latest version of the Prime Mover PRO plugin from [inside your Freemius account](https://users.freemius.com/login) and save it to your desktop.
+- Reinstall the plugin on your site by navigating to *Plugins -> Add Plugins*. If you are unable to upload because your server’s upload limits are exceeded, [please refer to this workaround](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/the-uploaded-file-exceeds-the-upload_max_filesize-directive-in-php-ini-unable-to-install-or-update-plugin/).
+- Re-activate Prime Mover PRO on your site. (*network activate if multisite*).
+- Re-enter the license key in your selected site.
+- Done. You successfully upgraded your Prime Mover PRO to the latest version.
+
+## Still unable to update?
+
+Please [contact our technical support team](https://codexonics.com/contact/).
+
+*Last updated: February 12, 2026*
+
+Was this article helpful?YesNo
+
+---
+
+## How to upgrade to PRO plan from free version?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-upgrade-your-existing-pro-plan-to-higher-plan/](https://codexonics.com/prime_mover/prime-mover/how-to-upgrade-your-existing-pro-plan-to-higher-plan/)
+
+Scope: **Prime Mover Pro**
+
+*Thank you**for using Prime Mover PRO*! This quick tutorial will teach you how to upgrade your existing PRO plan to a higher one.
+
+## Step 1 – Log in to your Freemius account
+
+[Go to this page](https://users.freemius.com/login) to log in. If you don’t remember creating a Freemius account, your site developer might have set up Prime Mover PRO for you. In this case, your developer has an account with us. Please try contacting your developer first and requesting an upgrade to your plan if possible.
+
+Otherwise, if you can no longer contact your developer or if the developer is not willing to upgrade for you, you can [purchase a new license on our pricing page](https://codexonics.com/prime_mover/prime-mover/pricing/). This new license must have a higher plan (or license sites quota) than your existing plan.
+
+You will then need to activate this new license on your site and activate it on other sites for which you need to use PRO features.
+
+Finally, you can safely disable the renewals of your old/original license if you no longer use it and only enable the renewals on your new license plan.
+
+## Step 2 – Click the “Licenses” tab
+
+## Step 3 – Click the license row information to expand
+
+In your license row – click anywhere inside the dotted red box as indicated below:
+
+## Step 4 – You should see the “Upgrade to” drop-down
+
+It is stated inside a dotted box below.
+
+## Step 5 – Select a new plan and check out.
+
+Click the “*Upgrade to*” button and select the plan you need. Double-check the information, then click “Review Order” to proceed to the checkout.
+
+When you upgrade, [prorated adjustments are applied](https://freemius.com/help/documentation/selling-with-freemius/proration/).
+
+## Questions?
+
+Please [let us know](https://codexonics.com/contact/). Thanks!
+
+*Last updated: August 26, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to use external cron service to trigger automatic backups?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-use-external-cron-service-to-trigger-automatic-backups/](https://codexonics.com/prime_mover/prime-mover/how-to-use-external-cron-service-to-trigger-automatic-backups/)
+
+## Background
+
+You should know that WordPress cron differs from real cron. This means that these scheduled tasks (also known as “*cron jobs*“) will only fire if there is a page load event in WordPress. These page load events usually come from your website visitors.
+
+Therefore, if your site does not have visitors, no one triggers WordPress cron, and your WordPress scheduled tasks (including Prime Mover automatic backups) will never be executed. Or, if you have very few website visitors (common in very new sites), your scheduled tasks will execute late, and task execution will be prolonged.
+
+This tutorial will illustrate a solution to this issue using an external cron service.
+
+## Disable WP Cron
+
+Before you can use external cron service – you need to disable WP CRON by adding this constant to your 
+```
+wp-config.php
+```
+
+:
+
+```
+define( 'DISABLE_WP_CRON', true );
+```
+
+This tells WordPress to turn off the native WordPress cron so you can delegate the cron calls to an external service. If you don’t add the above constant, WordPress cron will fire scheduled tasks on page load by default. This is redundant since you now call the cron script via an external service. Adding that constant will improve your site’s performance, so you are removing that redundant execution.
+
+For more details on this topic – please check out this official documentation from the [WordPress cron handbook](https://developer.wordpress.org/plugins/cron/hooking-wp-cron-into-the-system-task-scheduler/).
+
+## External cron service requisite
+
+If you want to rely on an external cron service – your site must be publicly accessible via the Internet. This means that when an external script calls the WordPress cron script – it should not be blocked in any way.
+
+This is not a problem if your site is hosted correctly (like in popular hosting platforms) and you are sure that your site has public DNS. But this is a problem if your site is private and only accessible to you or to selected visitors. Common examples include sites in the local environment (such as on your laptop) or sites within the intranet network (*such as your company network, which is not exposed to the Internet*).
+
+If so, you cannot enable or use the external cron service. Instead, you should use the [native system cron solution](https://codexonics.com/prime_mover/prime-mover/how-to-use-your-hosting-cron-to-trigger-automatic-backups/) your hosting provides.
+
+## Enabling external cron service
+
+External cron service works by pinging your website (*just like having a website visitor*) – but the difference is that this will only call the WordPress cron script (
+```
+wp-cron.php
+```
+
+). These calls are made on a scheduled basis. It could be every 5 or 30 minutes, and so on.
+
+In this tutorial, we will use *cron-job.org,* a free service. You can also choose another similar paid service.
+
+- Create an account in [cron-job.org](https://cron-job.org).
+- Create a cron job with a specific interval. Supposing you want to call the WordPress cron script every two minutes, this will be the setting:
+
+- Finally, save it, and then every two minutes – this web service will call your site WordPress cron script. Make sure to provide the correct cron URL of your site.
+
+Easy, right? This free service includes statistics, logs, and history to see whether your external cron calls are running smoothly or have issues.
+
+## What to expect from this?
+
+As long as the external cron service runs fine and does not return errors (as you can see in the logs),  it should be guaranteed to run at your specified intervals. This will ensure that your scheduled tasks are completed and that you do not always wait in the queue for a website visitor (just as they were initially or by default).
+
+All your cron tasks should run according to schedule. This includes all cron jobs added by plugins like *WooCommerce* and the *Prime Mover PRO* automatic backup feature (if you enable it).
+
+## Multisite tips
+
+If you enable automatic backup in a multisite and want to execute auto-backup for any subsites (including the main site), **use only the main site URL as part of your CRON URL** when calling the script via an external service. You don’t need to add all the URLs for your subsites to the external cron service.
+
+For example – suppose you have a multisite with the following sites (*sub-folder configuration*):
+
+- *Main site URL*: https://mydomain.tld/
+- *1st subsite*: https://mydomain.tld/first-subsite/
+- *2nd subsite*: https://mydomain.tld/second-subsite/
+
+Then you should have the CRON URL based on your main site URL, e.g.
+
+**https://mydomain.tld/wp-cron.php**
+
+Use that CRON URL to configure your external cron service (e.g., in cron-job.org). This will ensure that only the main site cron fires, which the automatic backup functionality uses to analyze the firing sequence for all your subsite’s automatic backup schedules.
+
+If you have a multisite with domain mapping functionality or are configured using a subdomain, always use only the main site CRON URL. For example (*domain-mapped or subdomain multisite configuration*):
+
+- *Main site URL*: https://mytestdomain.tld/
+- *1st subsite*: https://anothergreatdomain.tld/
+- *2nd subsite*: https://awesome-domain.tld/
+
+Then you should have the CRON URL based on your main site URL, e.g.
+
+**https://mytestdomain.tld/wp-cron.php**
+
+In any multisite – identifying the main site URL is easy regardless of whether you are using mapped domains/subdomains or using folder structure. Just log in as network administrator and go to Network admin -> Sites. WordPress labels your main site with “–Main,” just like in the screenshot below:
+
+*Last updated: January 11, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to use your hosting cron to trigger automatic backups?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/how-to-use-your-hosting-cron-to-trigger-automatic-backups/](https://codexonics.com/prime_mover/prime-mover/how-to-use-your-hosting-cron-to-trigger-automatic-backups/)
+
+## Background
+
+Most shared hosts support cron jobs functionality within their control panel. These are real cron jobs triggered within your hosts’ server/operating system level (e.g., Linux) that differ from native WordPress cron jobs. These cron jobs ensure it will fire on your specified schedule.
+
+This is unlike WordPress cron, which waits for a page load event (from a website visitor). This type of cron execution ensures that your automatic backup will run according to your preferred schedule.
+
+Configuring this is super easy as long as your hosts support this feature.
+
+## Disable WP Cron
+
+Since you are now using the hosting cron to trigger your WordPress site cron jobs. You don’t anymore need the native WordPress WP-Cron – so you can safely disable it by adding this constant to your wp-config.php (*if it’s not disabled yet*):
+
+```
+define( 'DISABLE_WP_CRON', true );
+```
+
+## Enable cron job in your hosting
+
+Each hosting company has its way of showing how their customers can create cron jobs (inside their hosting panel). For example, let’s show how to enable cron jobs inside a Hostinger shared hosting account. Let’s assume you want to call your WordPress cron script every 5 minutes to ensure that it will keep all your cron jobs as up-to-date as possible (including Prime Mover PRO automatic backup jobs).
+
+If you are on different hosts – procedures should be similar, but to be sure, please check your hosting documentation.
+
+- Login to your Hostinger shared account hosting panel.
+- Go to the Website control panel (if you have several websites in your account).
+- Navigate to **Advanced -> Cron Jobs**
+
+- You should be able to see the “*Create a New Cron Job*” form.
+- Make sure “PHP” is selected.
+- Under “Command to run,” enter: *public_html/wp-cron.php*
+
+So the entire command to run looks like this:
+
+```
+/usr/bin/php /home/uXXXXXXXXX/public_html/wp-cron.php
+```
+
+Hostinger asks you to enter the path to your WordPress cron PHP file.
+
+- Let’s schedule a call to your cron script every 5 minutes. To configure this, select “**Every 5 minutes (*/5)**” under the “minute” field.
+- Under the “*hour*” field, select “**Every Hour (*)**.”
+- Under the “*day*” field, select “**Every Day (*)**.”
+- Under the “*month*” field, select “**Every Month (*)**.”
+- Under the “*weekDay*” field, select “**Every Weekday (*)**.”
+
+After filling up all the values in the above settings, this looks like before you click “Save.” Note that “{account#}” is unique for each hosting account, so it’s not shown in the screenshot below.
+
+- Finally, hit the Save button. This should officially enable the cron job. You should see a notice that says, “*Cron job created successfully.*“
+- Under “List of cron jobs”. You should see your added cron job. This how it looks like:
+
+Created with GIMPYou have just created a system-based cron (using your hosting cron) that will call your WordPress script every 5 minutes. This will ensure you keep your website cron jobs up to date (including auto-backups).
+
+## Enable cron via the command line.
+
+If you don’t have a hosting panel for adding cron jobs but only a command-line solution, this is also possible. This assumes you are on a Linux web hosting (Debian or Ubuntu, which is common) and offers root access to the command line, where you can add your cron jobs. It also assumes you know how to use command-line tools, e.g., VIM editor.
+
+To do this:
+
+- Log in to your web server via the command line.
+- Edit crontab by issuing this command:
+
+```
+sudo crontab -e
+```
+
+- Once you are in a cron tab editor, you can directly enter your cron jobs, for example, to call the WordPress cron script every minute:
+
+```
+*/1 * * * * wget --delete-after http://yoursite.tld/wp-cron.php
+```
+
+Make sure to replace **yoursite.tld** with your domain (e.g. single-site) or your main site domain (if multisite). For example, we’ve done this with a WordPress VM Bitnami instance (which only comes with command line tools to manage cron jobs). This is what it looks like after adding the above cron job command:
+
+- Exit the cron tab editor and save.
+- If you have root access – you can restart your cron jobs by issuing this command:
+
+```
+sudo systemctl restart cron
+```
+
+That’s it! For more details – you can read the official WordPress cron guidelines on setting up cron jobs using the system scheduler or command line:
+
+- [Hooking WP Cron into your system scheduler.](https://developer.wordpress.org/plugins/cron/hooking-wp-cron-into-the-system-task-scheduler/)
+
+*Last updated: January 11, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## I got “Export fails” or “Import Fails” Error – Can you try increasing web server timeout?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/i-got-export-fails-or-import-fails-error-can-you-try-increasing-web-server-timeout/](https://codexonics.com/prime_mover/prime-mover/i-got-export-fails-or-import-fails-error-can-you-try-increasing-web-server-timeout/)
+
+Scope: **Prime Mover Free / Pro version**
+
+## Background
+
+This error indicates that your server’s timeout setting is insufficient to complete the process. Prime Mover usually indicates which specific method the error occurs in. So please take note when reporting or fixing this specific error. It could be the method that handles the database dump, copying the media directory, etc.
+
+When this error occurs, Prime Mover executes the shutdown procedure, terminates the process, and cleans the temporary directory of any unfinished files or folders to prevent clogging your server.
+
+There are several ways of fixing this error, which this tutorial shows.
+
+### Lower the default timeout retry value
+
+By default, Prime Mover processes tasks in a 15-second interval batch. This may not be enough and could still hit a timeout if your server timeout is very slow. For example, there is a high chance of hitting the server timeout if it’s set to 20 or 30 seconds. In this case, try lowering the default timeout to 10 seconds, clearing your cache, and trying again.
+
+### Enable WordPress debug and check for fatal errors
+
+Sometimes, PHP errors (usually fatal errors) can cause timeouts because PHP can no longer continue processing and hits a timeout (stalled process). You can check this by enabling WordPress debugging. The fatal runtime errors provide clues about what is causing them. If it’s caused by or points to a particular plugin, try deactivating that plugin and try again. Or if the error is caused by Prime Mover or you aren’t sure what to do, please submit a bug ticket to us.
+
+Otherwise, if there are no PHP errors and you have tried lowering the retry timeout value as mentioned previously, it’s time to try server-side settings. If you cannot change the settings below due to hosting restrictions, it’s fine. Please create a support ticket so we can check for workarounds.
+
+### PHP-fpm timeout configuration steps
+
+The following steps work for PHP 7.0+ PHP-FPM on Ubuntu 16.04 + Apache. This requires root access to your server. Ideally, you can get this with VPS or dedicated hosting.
+
+- Know your specific PHP version. You can get this via *the WordPress admin -> Tools -> Site Health -> Info -> Server*.
+- Log in to your SSH using root shell.
+- Go to this path: 
+```
+/etc/php/PHP_VERSION/fpm/pool.d
+```
+
+ , replace 
+```
+PHP_VERSION
+```
+
+ with your PHP version. For example, if you are using PHP 7.3.8, then it’s a PHP 7.3 version. So the path will be 
+```
+/etc/php/7.3/fpm/pool.d
+```
+- Open the file *www.conf*
+- Look for 
+```
+request_terminate_timeout
+```
+
+By default 
+```
+request_terminate_timeout
+```
+
+ is disabled. So it will look like this (starts with semi-colon).
+
+```
+;request_terminate_timeout = 0
+```
+
+If you don’t have a semi-colon that starts with that, request_terminate_timeout, then it means it’s currently using that timeout setting for your PHP processes.
+
+To disable it, make sure to add a semicolon before it. For example, say a 60-second timeout is currently imposed in your PHP process:
+
+```
+request_terminate_timeout = 60
+```
+
+You can disable that by adding a semi-colon:
+
+```
+;request_terminate_timeout = 60
+```
+
+However, if you only want to set a very high timeout, add the value, say, 1 hour.
+
+```
+request_terminate_timeout = 3600
+```
+
+- Restart PHP-fpm and Apache. This is the command to use:
+
+```
+sudo service php7.3-fpm reload;sudo service apache2 restart;
+```
+
+That assumes your PHP version is 7.3, as illustrated in the example above. Replace php7.3-fpm with your actual PHP version (e.g., php7.0-fpm)
+
+### Changes needed on php.ini
+
+Ideally, none, since Prime Mover already adjusts the runtime PHP timeout by using 
+```
+set_time_limit()
+```
+
+ and 
+```
+max_execution_time
+```
+
+.
+
+You can adjust 
+```
+memory_limit
+```
+
+ which is desirable to set as high as possible to avoid memory errors. However, Prime Mover will attempt to increase memory settings during runtime just like WordPress does.
+
+Just in case you really want to customize and test php.ini settings, these are the most important settings if your hosting allows it (e.g.,*if your server can support 2GB memory or unlimited timeout*)
+
+```
+upload_max_filesize=256M;
+post_max_size=1024M;
+memory_limit=2048M;
+max_execution_time = 0;
+max_input_time = 0;
+```
+
+If you are on a super-powerful dedicated server and exporting/restoring a very big site for which you have a big RAM (like 16GB or even bigger), by all means use it, e.g., setting
+
+```
+memory_limit=16384M;
+```
+
+This will configure 
+```
+16GB
+```
+
+  for PHP to be used for your site.
+
+### Apache timeout configuration steps
+
+- Go to 
+```
+/etc/apache2/
+```
+- Find the file 
+```
+apache2.conf
+```
+- Look for 
+```
+Timeout
+```
+
+ directive, by default, this is set to 30 or 60 seconds. You will need to set this to a very high value, the same as you have set in PHP 
+```
+request_terminate_timeout
+```
+
+Note, in some configurations, this is added in httpd.conf. Please refer to this documentation in detail.
+
+If you are using any timeout-related Apache module, you may need to disable or adjust them accordingly. For example [https://httpd.apache.org/docs/2.4/mod/mod_reqtimeout.html](https://httpd.apache.org/docs/2.4/mod/mod_reqtimeout.html)
+
+### Nginx timeout configuration steps
+
+There are already several good tutorials on the Internet on setting Nginx timeout. Please read the following selected posts:
+
+[http://www.doublecloud.org/2014/03/nginx-how-to-fix-timeout-issues-and-more/](http://www.doublecloud.org/2014/03/nginx-how-to-fix-timeout-issues-and-more/)
+
+[https://serverfault.com/questions/777749/how-to-disable-timeout-for-nginx](https://serverfault.com/questions/777749/how-to-disable-timeout-for-nginx)
+[https://www.scalescale.com/tips/nginx/504-gateway-time-out-using-nginx/](https://www.scalescale.com/tips/nginx/504-gateway-time-out-using-nginx/)
+
+### Optimize your large site with Prime Mover
+
+There is a [guide that details how to migrate and back up sites with Prime Mover](https://codexonics.com/prime_mover/prime-mover/tips-and-techniques-in-migrating-large-sites-with-prime-mover-plugin/), particularly for large sites.
+
+*Last updated: January 8, 2026*
+
+Was this article helpful?YesNo
+
+---
+
+## Import / Restoration Hang or Freeze Issue Troubleshooting
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/import-restoration-hang-or-freeze-issue/](https://codexonics.com/prime_mover/prime-mover/import-restoration-hang-or-freeze-issue/)
+
+Scope: **Prime Mover Free / Pro version**
+
+Sometimes an import / restoration process can hang indefinitely. Common symptom is a stuck progress indicator that does not seem to progress to the next step or stays the same forever.
+
+### Possible Cause: Internet Connection Issue
+
+Disconnection of Internet connection can cause restore hang because the plugin can no longer receives updates coming from the server. Even intermittent disruption of connection might cause this issue because a browser hang-up and it needs to be refreshed.
+
+Connection issues are beyond what the plugin can control and its best to check the stability and reliability of your Internet connection before doing a restore.
+
+Below are the recommendations in combating upload speed issue:
+
+- If you are using free version of Prime Mover, it is recommended to test your upload speed first. Since version 1.0.3 + , we added checks on upload speed and adjust chunk slices automatically.
+- If you have a PRO version of Prime Mover, its even gets easier. Browser upload is always slow compared to SSH / SFTP large file uploads, so don’t use browser upload. The strategy is to “manually” upload first the package to your WordPress root using your favorite SFTP client. Once uploaded, restore the package using Prime Mover remote URL functionality. In this feature, you will simply provide the URL to the zip package and Prime Mover will unzip and restore it for you.
+- If you are sure the connection is stable now, please clear browser cache and repeat the process. It should not hang anymore.
+
+Related tutorials:
+
+- [Tips when migrating large sites](https://codexonics.com/prime_mover/prime-mover/tips-and-techniques-in-migrating-large-sites-with-prime-mover-plugin/).
+- [Dealing with export or import failures/ timeouts](https://codexonics.com/prime_mover/prime-mover/i-got-export-fails-or-import-fails-error-can-you-try-increasing-web-server-timeout/).
+
+### Uncleared plugin caching issues
+
+Prime Mover by default, deactivates all plugins (except itself) when restoring a site. But it cannot itself cleared browser cache. The cached remains of recently deactivated plugins will still persist in your browser as you are restoring the site.
+
+In most cases, this is harmless.  But in some rare occasions, this can introduce conflict to the restoration process and the script would look like to become stuck on a specific progress indicator.
+
+Refer to the **recommended solution** below for a more robust solution regarding this issue.
+
+### Recommended solution
+
+If you encounter the hang / freezing during restoration problem and you are sure you don’t have connection issues.  Try the following steps :
+
+- Install [WordPress Reset Plugin](https://wordpress.org/plugins/wordpress-reset/).
+- Activate WordPress Reset plugin and reset your site.
+- **WARNING**: This procedure clears your current site database, make sure you have a manual backup ready if you think that database is still useful to you.
+- This will clear your existing site database in preparation for the new site restoration.
+- **Clear your browser cache** and logged-out
+- Login again and activate Prime Mover plugin.
+- Proceed to restoring the site.
+
+If you are still having issues restoring the site even after following the recommended solution, please let us know and open a bug ticket. Thank you.
+
+### Explanation of the solution
+
+Prime Mover can support importing a package even with an actively running site. **But the best practice should be done with a freshly installed site**. If you have an existing site, make sure you reset the site database first before restoring a site.
+
+This effectively resets the site to default state and there should be no more conflicting plugins / themes/ third party code which can disrupt the restoration process.
+
+You can use plugin like WordPress Reset to bring your back to default state. As a warning earlier, take note that this deletes your current site database. **Make sure you have a backup of your current site if its still valuable to you**.
+
+Was this article helpful?YesNo
+
+---
+
+## Prime Mover single-site and multisite packages
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/important-notes-on-prime-mover-single-site-and-multisite-packages/](https://codexonics.com/prime_mover/prime-mover/important-notes-on-prime-mover-single-site-and-multisite-packages/)
+
+Scope: **Prime Mover Free / Pro version**
+
+### Background
+
+Prime Mover has its own naming conventions for the packages.  By default, the file name contains an alias of the site title, date and time the package was created. For example: mystore_06-29-2019_0443pm_export_package.wprime
+
+It belongs to **My Store** website created on 4:43pm June 29, 2019. However, it would be a bit tricky to identify if the package is for single-site or multisite.
+
+### Identify if package is single-site or multisite
+
+- Upload the package to your Prime Mover backup/export directory.
+- Login to WordPress admin or network admin (in case of multisite)
+- Go to Prime Mover -> Packages.
+- Click Refresh packages button.
+- You should be able to see the package listed. Otherwise please check if you have upload the package to the correct path or if it is not corrupted.
+- This is how it looks like:
+
+- Take a look under “Package type”. If it is “single-site” , the package is for a single site installation. Otherwise, it will show “multisite” if it is for multisite.
+
+### Compatibility
+
+- **Any single-site package** can only be restored to **any single-site environment**.  It is because a Prime Mover package is BOTH a backup or migration package. As long as the environment is compatible, can be used both.
+- **A multisite subsite package can only be restored to any multisite subsite as long as the blog ID matches**. In multisite, a site is identified in terms of blog ID. A multisite package of blog ID 7 can be restored to any multisite subsite as long as the blog ID is 7 also.
+- If you restore a single-site package to a multisite, Prime Mover will block it and shows error.
+- If you restore a multisite package to a single site, it will also be block and shows error.
+- If you restore a multisite subsite package with blog ID of 8 (for example) to a different multisite subsite of blog ID of 9 (not matched). It will be block and shows error.
+
+### Migration Scenarios and Required Package Type
+
+- If you backup a single-site, you will need to create a single-site package so that you can restore it.
+- If you migrate a single site to another single site installation, you will need to a single site package also to migrate it.
+- If you migrate a single-site to multisite, you will need to create multisite package in your source site single-site installation and provide the target blog ID. Make sure that you know the blog ID of the subsite in advance. In this case the subsite should exist first.
+- If you backup a specific multisite subsite, you will need to *export as subsite backup*so that you can restore it (you don’t need to provide blog ID, Prime Mover assumes you are exporting the same site if you choose this setting).
+- If you migrate a multisite subsite to another multisite subsite, you will need to create a multisite package and provide the target blog ID.
+- If you migrate multisite to single-site, you will need to create single-site package in your source site multisite installation.
+
+That’s it folks.
+
+Was this article helpful?YesNo
+
+---
+
+## Mismatch Import! Error – Troubleshooting and Solutions
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/mismatch-import-error-troubleshooting-and-solutions/](https://codexonics.com/prime_mover/prime-mover/mismatch-import-error-troubleshooting-and-solutions/)
+
+## Cause of error
+
+When you get import error using Prime Mover – **“Mismatch import”**– this can either be caused by:
+
+- **Blog ID mismatch** – having the blog ID of the package being different to the blog ID of your target subsite in multisite.
+- **Package type mismatch** – restoring incompatible package type. For example, you have created a single-site package (that is meant for single site only) but you restore it to a multisite subsite. Or you have created a multisite package (that is meant for a multisite subsite) but you restore it to a single-site.
+
+In blog ID mismatch – you created export package for multisite subsite blog ID: 2 (*blog ID 2 is your target blog ID in this case*). Then the package can only be restored to the any subsite with blog ID: 2. If this package will be restored to a subsite with different blog ID e.g. blog ID 7. You will get mismatch import error during import.
+
+In package type mismatch – make sure you create compatible packages. WordPress cannot restore a single-site package to a multisite package and vice versa. It is because these platforms are different. If you are new to Prime Mover – [please take time to read the Prime Mover single site and multisite packages.](https://codexonics.com/prime_mover/prime-mover/important-notes-on-prime-mover-single-site-and-multisite-packages/) So you will know how to create correct packages for your migration/backup.
+
+This mismatch check is added to make sure that the package can only be restored to a correct site. It works by matching the blog ID of your package and the blog ID of your target subsite (in addition to package type). Identification using blog ID/package-type is the only way WordPress knows that the package belongs to the correct site.
+
+## How to get your Prime Mover package target blog ID and package  type?
+
+Before you dive into the solutions – make sure you exactly know your 
+```
+WPRIME
+```
+
+ package target blog ID and package type.  Make sure you take note of this target blog ID and package  type before you read the solutions below. There are two ways you will know this:
+
+First method: Using Prime Mover package manager- Login to your source site (where you have created the package for migration).
+- Go to *Prime Mover -> Packages*.
+- [*OPTIONAL*] If in multisite – enter the correct blog ID of the site you wish to see the packages.
+- Look for your package in the list and you will know the target blog ID under the column “**Target blog ID**“. The package type is on the “**Package type**” column.
+
+*In the above example, the package has a target blog ID of 2* which is of multisite package type.Second method: By extracting the packageIf you cannot access your WordPress source site Prime Mover package manager anymore. You can manually extract the package and analyze the package target blog ID/package type.
+
+This is only applicable if the package is not encrypted. You cannot extract encrypted package for now for security reasons.
+
+For non-encrypted packages – please follow this procedure to [extract the package manually](https://codexonics.com/prime_mover/prime-mover/how-to-manually-extract-wprime-package/). Once the package is extracted – open the file named as **wprime-config.json**. In this configuration file you will get the target blog ID (“*prime_mover_export_targetid*“) and package type (“*prime_mover_export_type*“).
+
+You can use [this tool](http://jsonviewer.stack.hu/) and paste the contents of the JSON file to get a readable output of your package configuration. For example:
+
+In the above example, it shows that the package is a**multisite package type** and **target blog ID of 2**. This means that the package can only be restored to a multisite subsite of blog ID 2.
+
+If you have encrypted packages and you want to extract/analyze the contents – [please contact us](https://codexonics.com/contact/) so we can assist. This requires you to provide us your encryption key ,etc.
+
+## Solutions
+
+At this point – you know exactly your 
+```
+WPRIME
+```
+
+ package target blog ID and package type. Different solutions are available depending on the cases. Please check out which one below best applies to your situation.
+
+Case 1:  You created a multisite package type and you know the target blog ID of the package. The target blank subsite already exists in your multisite.- Say the package target blog ID is **2**.
+- Login to your multisite with Prime Mover plugin activated.
+- Go to *Network -> Sites* -> *All sites*.
+- Under *Search Sites*, enter **2** to search the subsite.
+- Once the subsite is found – you can then restore the package.
+
+- There should be no mismatch import error because the target subsite (which is blog ID: 2) – matches with your package target blog ID which is 2 also.
+
+Case 2:You created a multisite package type and you know the target blog ID of the package. The target subsite does not yet exist on the multisite.*If you are a Prime Mover PRO user :*
+
+- Login to your multisite with Prime Mover PRO activated (as network admin).
+- For example if your package target blog ID is 2 – **you need to create a new subsite with target blog ID of 2 so it will match the package target blog ID**. To do this – go to *Network -> Sites -> Add New*.
+- Create a new subsite and make sure to provide blog ID: 2 as the target subsite new blog ID (to match with your package blog ID)
+
+- Now that the site is created – it should appear in *Network Sites -> All Sites*– search for the subsite and you should be able to restore your package.
+- There should be no mismatch error since you have restored the package(for blog ID 2) to the correct subsite match with blog ID 2 as well.
+
+**If you are a Prime Mover FREE user:**
+
+You need to create the blank subsite first in your target multisite and get it’s newly created blog ID. Then you will use this newly created blog ID to re-create the package in your source site. This will ensure that the package will match to your new subsite. In details:
+
+- Login to your **target multisite** as nework administrator.
+- Make sure you have latest Prime Mover activated in your target site.
+- Go to *Network -> Add New*.
+- Fill up the details and create the site.
+- Once the site is created, it should appear in your Network -> All Sites.
+- You should be able to [get the newly created blog ID](https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/) like in the screenshot below.
+
+For example the **blog ID of the newly created site is 4**.- Login to your**source site** where you want to create the package.
+- Make sure latest Prime Mover version is activated on the site.
+- Launch the export button and create a multisite package.
+- Make sure you assign the target blog ID correctly (that matches with your target site blog ID, in above example – blog ID: 4)
+
+Case 3: You created a single-site package but you want to restore it to a target multisite subsite of blog ID: 2This is incorrect and will result to mismatch import. To fix this – the only solution is to *re-create the package in your source site as follows*. Make sure to create a multisite package format with blog ID: 2
+
+After the package is created – restore it to your target multisite subsite of blog ID: 2. There should be no more mismatch import errors since the package and the target subsite blog ID’s and type are matched.
+
+Case 4: You created a multisite package format but you want to restore the package to a single-siteThis is not possible and you will only get mismatch import errors. The only solution in this case is to re-create the package at your source site and make sure to create a single site package format, e.g.
+
+After the single-site package is created – restore it to your target single-site and you should not get mismatch import errors.
+
+## Still need help?
+
+If the above troubleshooting steps still does not work – [please get in touch with us](https://codexonics.com/contact/) and please provide as much details as possible (*WordPress login details, logs, error screenshots*). We will use this information to debug and check your site.
+
+Was this article helpful?YesNo
+
+---
+
+## Optimize Local WP in the Windows operating system for best performance
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/optimize-local-wp-in-the-windows-operating-system-for-best-performance/](https://codexonics.com/prime_mover/prime-mover/optimize-local-wp-in-the-windows-operating-system-for-best-performance/)
+
+## Background
+
+If you are running the Local WP Development App on your Windows operating system and it’s running very slowly, then this quick tutorial guide can help. This is in relation to also using the Prime Mover plugin with the Local WP app. This will speed up and boost performance when running both export and import, particularly if your site is large and uses a lot of plugins.
+
+## Exclude the Local Sites folder and executable in real-time scans
+
+- Go to **Windows Security**.
+- Click “**Virus & Threat protection**“.
+- Under “**Virus & Threat protection settings**,” click “**Manage settings**“.
+- Scroll down to “**Exclusions**” and click “**Add or remove exclusions**“.
+
+Ensure that you exclude two items: the **Local Sites** folder and the Local executable file (**Local.exe**).
+
+**To exclude Local.exe:**
+
+- Click the “Add an exclusion” button.
+- Click “File”.
+- Navigate to the Local.exe file path, e.g.
+
+*C:\Users\yourusername\AppData\Local\Programs\Local\Local.exe*
+
+**To exclude the Local Sites folder:**
+
+- Click the “Add an exclusion” button.
+- Click “Folder”.
+- Enter the path to your Local sites folder, e.g.
+
+*C:\Users\yourusername\Local Sites*
+
+After adding those two, it should look like this:
+
+## Turn off game mode
+
+- Go to **Game Mode settings**.
+- Make sure Game mode is **off**.
+
+The reason is that by turning off Game mode, it prioritizes background processes, on which Local WP is based.
+
+## Set for “Best performance” when plugged in
+
+- Go to System -> Power & Battery.
+- Expand “**Power mode**“.
+- Ensure that “Best performance” is selected when plugged in.
+
+This will ensure that the CPU and system are optimized for the best performance when you have plugged in your laptop or Desktop. This is typically useful if you are using Local WP with a laptop that is plugged in.
+
+## Improvement
+
+We tested the above settings, and it significantly sped up the local WordPress export and import using the Prime Mover plugin. Try it on your own and hope it helps you, too!
+
+Was this article helpful?YesNo
+
+---
+
+## PHP Fatal error:  Uncaught Error: Call to a member function is_anonymous() on bool
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/php-fatal-error-uncaught-error-call-to-a-member-function-is_anonymous-on-bool/](https://codexonics.com/prime_mover/prime-mover/php-fatal-error-uncaught-error-call-to-a-member-function-is_anonymous-on-bool/)
+
+## Symptoms and Troubleshooting
+
+You are running a restore in your localhost where suddenly the restore freezes and does not progress any further. If you clear your browser cache and restore again – it again freezes and will not finish the error.
+
+In this case, cancel the ongoing restore by closing the tab or navigating away from the page.
+
+You should then enable WordPress debugging by adding this to your 
+```
+wp-config.php
+```
+
+:
+
+```
+define( 'WP_DEBUG', true );
+```
+
+```
+define( 'WP_DEBUG_LOG', true );
+```
+
+```
+define( 'WP_DEBUG_DISPLAY', false );
+```
+
+```
+@ini_set( 'display_errors', 0 );
+```
+
+Please try to restore again if you get this complete error logged into 
+```
+/wp-content/debug.log
+```
+
+ file:
+
+```
+PHP Fatal error: Uncaught Error: Call to a member function is_anonymous() on bool in /home/path/to/wordpress-install/wp-content/plugins/prime-mover-pro/freemius/includes/class-freemius.php
+```
+
+## Causes
+
+Prime Mover uses [Freemius Inc](http://freemius.com/) SDK for licensing usage. This is also used partially in our marketing initiative for which you can opt-in or opt-out during plugin installation.
+
+When you restore a site with Prime Mover – part of the Freemius SDK code runs for which it communicates with its server to verify licensing or opt-in status. This requires an active Internet connection.
+
+In cases where an active Internet connection is not found – you will get this error. This is particularly true for localhost installations where there are times you will not be connected to an Internet
+
+Actually this error is intermittent  – this may or may not always occur without Internet connection. This is primarily due to the fact that Freemius only queries this once and not always(probably for API performance reasons).
+
+So once Freemius got the correct confirmation data from its’ servers. You can even run the restore without an Internet connection and you should not get this error again.
+
+## First solution – Check your Internet connection
+
+If you get this error – **you should connect your local laptop/server to the Internet**. Make sure your Internet is working – and then clear browser cache. Once you are surely connected – you should try again restoring the site.
+
+## Second solution – Reset PRO license
+
+If you are connected to the Internet and using PRO version at the same time – but the error still comes out. Try doing a [full PRO license reset](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/). This will clean up all corrupted data so this error should clear up.
+
+## Still having issues?
+
+The above two solutions should fix the error permanently and should not occur again. If the error does not go away even with Internet connection or a license reset- [please get in touch with us](https://codexonics.com/contact/) and please all provide details to your error (including WordPress login if possible).
+
+Was this article helpful?YesNo
+
+---
+
+## Post-migration Troubleshooting: Tips and Advice
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/post-migration-troubleshooting-tips-and-advices/](https://codexonics.com/prime_mover/prime-mover/post-migration-troubleshooting-tips-and-advices/)
+
+## When to run this troubleshooting?
+
+You can run this troubleshooting right after you have migrated a new site. And then you encounter any of the following issues:
+
+- Images are not showing up after migration.
+- Some critical error/fatal errors have occurred.
+- Styling issues.
+- Any visual/plugin/theme related glitches not found on the original site.
+
+Go to each troubleshooting steps as long as it applies to your case.
+
+## Step 1: Does your source site have these problems too?
+
+First thing to check is if these issues were already present before the migration (e.g. in your source site). For example – if you have missing images after migration. Check first if the source site has that image there. If the image is already missing at the source site – then Prime Mover will simply clone that site and the target site does not have that image too 🙂
+
+The same with all the issues you’ve seen (plugin setting issues, errors, visual/styling glitches, etc) – please check first with the source site to make sure they don’t have these issues as well.
+
+If these issues are also found at the source site – please fix the issues there first. Once all fixed, create another export for migration. It is recommended to fully check your source site before you migrate it to make sure all things are OK.
+
+## Step 2: Are you using latest Prime Mover plugin version?
+
+Latest Prime Mover version includes latest bug fixes related to migration issues. If you are using outdated version – please upgrade to latest version and use this to create the export and restore. This is to rule-out any possible migration-related issues inside Prime Mover that is already fixed with the latest version.
+
+## Step 3: Re-save permalinks at target site
+
+Login as administrator/super-administrator. In the migrated site – go to 
+```
+Settings -> Permalinks
+```
+
+.  Without changing the settings – just click “**Save changes**“.
+
+## Step 4: If using caching plugin – please purge at target site
+
+Are you using a caching plugin? Please purge all the cache after migration. Please refer to the documentation of your caching plugin on how clear and purge the cache.
+
+If you are in a hosting company with built-in cache – please read your hosting documentation on how to clear the default/built-in cache. This is typically done in the hosting dashboard or panel. When in doubt – consult your hosting support.
+
+## Step 5: If using JS/CSS/Font asset management plugin – please clear cache at target site
+
+If you are using any JS/CSS/Font asset management solution (e.g. 
+```
+Autoptimize
+```
+
+ plugin, etc. ) to manage your resources, custom styling ,etc. please check that they have caching feature. If that is the case – they are rendering outdated resources that needs to be cleared after migration.
+
+## Step 6: If using CDN – refresh it at target site
+
+If your site is using CDN solution to render images, JS/ CSS then refresh it to make sure the resources are updated. You can also temporarily disable it for troubleshooting purposes just in case you still don’t  see the images. This is to make sure that WordPress renders the images from the uploads directory and not from CDN.
+
+## Step 7: If your site uses a page builder plugin – clear it’s cache
+
+Most page builder plugins have their own caching mechanisms. They store their image in their own cache directory which could be outdated if you are migrating the site. Purging this cache helps clear out the resources. The purging process depends on what page builder plugin you are using. Example of page builder plugins with their own cache clearing solutions:
+
+[Elementor: Re-generate CSS](https://elementor.com/help/caching-prevents-live-site-from-showing-changes-in-editor/)
+
+[Beaver builder: Clear cache](https://docs.wpbeaverbuilder.com/beaver-builder/troubleshooting/debugging/issue-fixer-clear-the-cache/)
+
+If you are using different page builder plugin – please consult your plugin documentation for details.
+
+## Step 8: Check if your asset is stored outside uploads or WordPress directory in source site
+
+Prime Mover can only migrate assets (images, etc) if they are stored in the WordPress uploads directory. It cannot migrate assets if they are stored outside the WordPress directory or any custom paths. If the image is missing because you are storing it in unusual location in the source site – then you need to manually move the folder to your target site for the images to appear.
+
+Please check the [complete list of files and resources](https://codexonics.com/prime_mover/prime-mover/faq/#completelistoffiles) that is currently migrated by Prime Mover.
+
+## Step 9: If you are getting fatal errors from a specific plugin at target site
+
+This is usually caused by migrating incompatible plugins. For example – a multisite-only plugin is included in your migration and you are migrating to WordPress single-site. Or the other way around – you are migrating a plugin that is not compatible to a multisite from a single-site. Leaving these incompatible plugins deactivated in your site is the only solution.
+
+Other several reasons of getting fatal errors from the plugin after migration includes:
+
+- **Migrating a plugin to incompatible server**. For example your plugin is not compatible with Microsoft IIS server. Make sure your plugin only runs in a compatible server. Ideally source and target site server should be the same or compatible to ensure your plugin compatibility before and after migration.
+- **Migrating a plugin that is not allowed in your target hosts** (e.g. plugins that is too resource-intensive that is blocked by your shared host)
+- **Migrating a plugin that is resource intensive** – requiring a lot of memory (in this case try [increasing memory limit](https://woocommerce.com/document/increasing-the-wordpress-memory-limit/) to see if it helps. This is usually happens if you migrate to a low-spec host with limited RAM/resources.
+- **Incompatible PHP versions**. For example – If your source site is 
+```
+PHP 5.6
+```
+
+ and you are migrating to 
+```
+PHP 8.0
+```
+
+.  The plugin is not tested to work with PHP 8.0 resulting to fatal errors.  You can downgrade PHP version in this case or contact the plugin author to report this issue.
+- **Incompatible database versions** – your plugins might require specific MySQL versions. So if its designed to work only with older MySQL versions but you migrate to new server with MySQL 8.0 – you will get errors.
+
+To rule out all possible plugin glitches is to try the following:
+
+- Deactivate problematic plugins. If you cannot access your WordPress admin – [deactivate it via FTP](https://wpshout.com/quick-guides/how-to-use-ftp-to-deactivate-a-plugin-thats-breaking-your-wordpress-site/).
+- Re-activate the plugin and move to next step.
+
+## Step 10: Re-save your plugin settings at target site
+
+Login to your migrated WordPress site and go to each plugin settings. Re-check if the settings are correct and re-save it. Re-saving settings help things clear up and reflect to it’s latest state.
+
+Take note that if you are using plugins with authorization keys, licenses, etc. – you will need to re-save and re-register them after migration to make sure these plugins fully work like in the source site. As some plugins might disable these features because they require licenses,etc. And they disable these paid features after detecting a change of URL/domain (usually during a migration).
+
+## Step 11: Re-save your theme settings at target site
+
+If your site is using a theme with custom theme options – try re-saving it to clear out any styling issues. This is usually the case when your theme has custom cache folder that is rendering outdated resources.
+
+## Step 12: Does your site depends on some custom wp-config.php constants?
+
+Check your source site 
+```
+wp-config.php
+```
+
+ and see if there are some custom constants there (added by your plugins/themes) that is needed by your target site. Manually migrate these constants as Prime Mover does not migrate the source site wp-config.php (because they are site-specific).
+
+## Step 13: Is your target site server wrongly configured?
+
+Please also check that your site server is correctly configured. Otherwise it can also cause your assets / JS/ CSS and images to stop displaying properly. For example if you are in a multisite instance using Nginx – try refreshing the Nginx site settings.
+
+Quickest way to tell if your server has some issues in a multisite environment:
+
+- Temporarily deactivate Prime Mover plugin.
+- If you are in a multisite – try creating a new blank subsite (*Network -> Add New Site*).
+- Once the site is created – please check the site front end and back end.
+- If the newly created sub-site front end are still not displaying properly even with the default theme then the multisite has some wrong / incorrect configuration. You should review settings or refresh your server settings to make sure it’s working properly.  You might need to contact your web hosting technical support in this case.
+
+Quickest way to tell if your server has some issues in single-site environment:
+
+- Try installing a new – fresh WordPress single-site instance in a subdirectory / folder of your WordPress single site.
+- For example if your target site (where you have installed and restored package) is *www.mytest.local* then you need to create a new test site at *www.mytest.local/my-temp-testsite*
+- Once you have done installing the WordPress at the temporary subdirectory location – open it up in the browser.
+- The test site: *www.mytest.local/my-temp-testsite* , should display correctly in it’s default state and no missing images, etc.
+- If you see any image / CSS / JS glitch even with fresh install – then your server has some issues. Please double check with your web hosting support to fix this.
+
+## Step 14 – Do administrator on the multisite subsite not being able to access admin dashboard?
+
+This only applies to multisite and if you have “**Ultimate Member**” plugin activated.
+
+- Login as network administrator.
+- Go to*Network -> Plugins*.
+- Network Deactivate “Ultimate Member” temporarily.
+- Refresh plugin page.
+- Network Activate “Ultimate Member” again.
+- Refresh plugin page.
+- Go to *Network -> Sites*.
+- Find the sites having issues and go to Admin dashboard by clicking “Dashboard” link.
+- Now you are in the subsite administrator dashboard, go to Users.
+- Find the user having administrator login issue and click “Edit”.
+- Once the “Edit User” page is loaded, don’t change anything -> Simply click “Update User”.
+- That’s it. The user should now be able to login as administrator and should now be able to access the admin dashboard pages.
+- Repeat the above steps for any affected users until all are refreshed.
+
+## How to debug missing images or assets (fonts, css, js ,etc) at source site ?
+
+- Visit the old site (source site) and check if the image, css, js is rendered there.
+- If the image is there – get the image URL so you will know how it’s being rendered, e.g. 
+```
+https://dummy.tld/wp-content/uploads/2022/02/test.jpg
+```
+
+Knowing your source image URL is important so we will know how it’s being rendered. This information can be used to troubleshoot easily at target site.
+
+- Clear your browser cache and load your migrated/target site.
+- At the target site, go to the page with missing images.
+- Using browser console – analyze and get the 404 URL (you should be able to get to the image URL if its 404 since console will report it).
+- Now you have this URL – check that asset is physically present in your target server. For example – check if the image is really present in your WordPress uploads directory or CDN.
+- If the image is not physically present but present in the source site – manually copy the image to your target site to see if it’s rendered.
+- If the image URL is pointing to the cache directory at target site but image is in uploads directory – try clearing your site cache (you should already done this in previous troubleshooting steps). You can temporarily disable the caching plugin to see if its really rendered.
+- If the image URL is pointing to a CDN resource – invalidate the CDN resource to see if the image is rendered. Temporarily disable CDN to see if the image is rendered.
+- If the image is still pointing to your old site – it is possible they are cached by either a page builder plugin. Try clearing them. If its only very few – it’s probably missed by  default search/replace feature due to some data glitches. You can [manually do search and replace](https://wordpress.org/plugins/better-search-replace/) again to point to correct URL.
+
+## Why my images/resources still missing after all the troubleshooting?
+
+There are some page builders that store image URL’s or any assets in 
+```
+base64
+```
+
+ encoded data. For example instead of this background image code (where URL is clearly visible, searchable and replaceable):
+
+```
+{"all":{"background-image":"url(\"https://test.tld/wp-content/uploads/2022/01/test.jpg\")","display":""}}
+```
+
+There are page builders that stored this in 
+```
+base64
+```
+
+ encoded data inside your database such as this:
+
+```
+eyJhbGwiOnsiYmFja2dyb3VuZC1pbWFnZSI6InVybChcImh0dHBzOi8vdGVzdC50bGQvd3AtY29udGVudC91cGxvYWRzLzIwMjIvMDEvdGVzdC5qcGdcIikiLCJkaXNwbGF5IjoiIn19
+```
+
+Obviously, when the HTML code (that includes image URL) is converted to 
+```
+base64
+```
+
+ format, Prime Mover plugin cannot search and replace these URLs during migration. And even if you do manual search and replace after import – it will not work also. Simply because – the URL is not visible, it is 
+```
+base64
+```
+
+ encoded.
+
+If you are migrating sites and affected with this issue – please contact your page builder plugin author to make the adjustment.
+
+## Contact us for further troubleshooting
+
+If you still need technical assistance after going through all the troubleshooting steps and the issue still remains. Please [contact us here](https://codexonics.com/contact/). And then please provide us the following:
+
+- Detailed description of the issue. E.g. screenshots of the normal (working state) and screenshots of the non-working state/problem. Also please provide the URL or where to find this issue in your site.
+- Link to download your 
+```
+WPRIME
+```
+
+ package which you have used to migrate. You can store this in Google Drive, DropBox, etc. Please share this link only to our support via the contact form. Tech support will use this package to reproduce your reported issue.
+- [Provide us as much debug data as possible](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/). These includes screenshots, logs, etc.
+
+Was this article helpful?YesNo
+
+---
+
+## Prime Mover PRO Pricing – Compare and Purchase
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/pricing/](https://codexonics.com/prime_mover/prime-mover/pricing/)
+
+FreeStarts at$0Free versionThis plan is suitable for students and hobbyists of WordPress website development.Restore backup within siteMigrate single-site to single siteMigrate single-site to multisiteMigrate multisite to multisiteMigrate multisite to single-siteMigrate within WordPress adminMigrate from and to localhostExport as WordPress debug packageExport database onlyExport database + media files onlyComplete export mode (db + media + plugins/themes)No package size restrictionsResponsive / Mobile CompatibleBackup package management screen[Free download](https://downloads.wordpress.org/plugin/prime-mover.2.1.6.zip)ProfessionalStarts at$59Pro version (annual single-site or one subsite in multisite)This plan suits professional website designers, developers, and system administrators.**ALL FREE FEATURES +**Backup/migrate multisite main siteAutomatic/scheduled backupsMigrate faster using remote URL APIFree localhost licenseEncrypt databaseEncrypt media files and plugins/themesMigrate non-UTF8 charset to default utf8mb4 charsetOption to move backup packages outside WordPress rootExport package to Dropbox or Google DriveExclude plugins and media upload filesAssign specific blog ID for new subsiteOption to delete backups and enable migration logsComplete restoration options[Start free trial](https://checkout.freemius.com/mode/dialog/plugin/3826/plan/6162/?trial=paid)
+Buy now
+### Trusted by More than 100,000 Blogs, Online Shops & Websites!
+
+### Discounted plans: Multisite licenses (annual plans)
+
+- Starts at **$59 per year** for a single site (*or one multisite subsite*) license.
+- 10 sites (multisite license) start at **$159 per year**.
+- Unlimited site license at **$209 per year**.
+
+**All plans include a free 14-day trial.** The professional plan includes one year of premium technical support and PRO version plugin updates.
+
+You can buy annual plans by clicking the *Buy Now* button on this pricing page. An annual plan is a one-year subscription that is renewable annually. Depending on your needs, you can cancel at any time.
+
+**IMPORTANT**: [How to legally purchase the PRO version?](https://codexonics.com/prime_mover/prime-mover/general-documentation/how-to-legally-purchase-the-pro-version/)
+
+**How do you purchase annual plans?**
+
+1. Click the “**Buy now**” button on this pricing page.
+2. The checkout dialog will open and default to annual plans.
+3. Select your license type: *single-site, 10-site, or unlimited sites*.
+4. Complete the required details and then click “**Review order**.”
+5. Proceed to complete the checkout.
+
+### Lifetime plans: Multisite licenses (pay once)
+
+- Starts at **$179.99**for a single site (*or one multisite subsite*) license.
+- 10 sites (multisite license) start at **$479.99**.
+- Unlimited site license at **$629.99**.
+
+Simplify everything with a lifetime license! Pay once and forget about renewals. You have unlocked the Prime Mover PRO features for life.
+
+**How do you purchase lifetime plans?**
+
+1. Click the “**Buy now**” button on this pricing page.
+2. The checkout dialog will pop up and default to annual plans.
+3. Click “**Pay once**” to change this to a lifetime plan.
+4. Select your license type: *single-site, 10-site, or unlimited sites*.
+5. Complete the required details and then click “**Review order**.”
+6. Proceed to complete the checkout.
+
+### Monthly plans (pay monthly)
+
+- Starts at **$7.99 per month**for a single site (*or one multisite subsite*) license.
+- 10 sites (multisite license) start at **$20.99 per month**.
+- Unlimited site license at **$27.99 per month**.
+
+This plan is ideal if you only want to use the PRO features for a short period, such as a month.
+
+**How do you purchase monthly plans?**
+
+1. Install and activate the [Prime Mover FREE version](https://wordpress.org/plugins/prime-mover/)on your site.
+2. Complete the Freemius opt-in process for easier checkout (optional but recommended).
+3. Once the plugin is fully activated, go to **Prime Mover -> Upgrade**.
+4. By default, it shows annual plans. Click “Monthly” to view prices for monthly plans.
+5. Select your license type: *single-site, 10-site, or unlimited sites*.
+6. Click the “**Upgrade now**” button to complete your purchase.
+7. Proceed to complete the checkout.
+
+### Licensing guide
+
+**NOTE**: For licensing purposes, the site license count pertains to distinct sites. So, a single-site (one-site) license can be used for one WordPress or subsite in your multisite.
+
+For example, a site license can be utilized in any of these combinations (as long as the total distinct sites count is 10):
+
+- 10 WordPress single sites.
+- 10 WordPress multisite subsites.
+- Six single-sites and four multisite subsites.
+- One multisite main site, five multisite subsites, and four single-sites.
+- 8 WordPress single-sites, one multisite main site, and one multisite subsite.
+
+And many more possible combinations 🙂 Please [read our licensing guide](https://codexonics.com/prime_mover/prime-mover/a-complete-guide-on-using-prime-mover-licenses/) for details.
+
+### 30-day Money-Back Guarantee
+
+Our 100% Satisfaction Guarantee fully protects you. If you are unhappy with our plugin or have an issue we cannot resolve within 30 days, we’ll happily offer a 100% refund. Please read our [refund policy details](https://codexonics.com/support-policy/#refundpolicy).
+
+### FAQ
+
+You can find the [list of frequently asked questions here](https://codexonics.com/prime_mover/prime-mover/faq/).
+
+### Plugin Documentation
+
+The plugin [includes complete documentation](https://codexonics.com/prime_mover/prime-mover/).
+
+*Last updated:  February 10, 2026*
+
+---
+
+## Prime Mover Dropbox Integration
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/prime-mover-dropbox-integration/](https://codexonics.com/prime_mover/prime-mover/prime-mover-dropbox-integration/)
+
+Scope: **Prime Mover Pro**
+
+### Step 1. Create a Dropbox app and get a token
+
+Before you can export and restore backups from Dropbox with Prime Mover, you must have a functioning Dropbox account.
+
+Once you have an account, you need to [create a Dropbox app](https://www.dropbox.com/developers) for your site. Then in your app, go to **OAuth 2 – Generate Access token**.
+
+The purpose of this token is to serve as access for Prime Mover to save packages to your Dropbox account.
+
+*Screenshot #1: Recommended Dropbox app settings*
+
+*Screenshot #2: Dropbox app recommended permissions*
+
+*Screenshot #3: Recommended Dropbox app branding settings*
+
+*Dropbox App User Tips (when doing settings and permissions) to work with Prime Mover PRO:*
+
+Log in to [https://www.dropbox.com/developers/apps](https://www.dropbox.com/developers/apps) and, while in the Dropbox API console, verify the following parameters for your named app.
+
+1. In Dropbox app settings: 
+```
+"Allow public clients" = Disallow
+```
+2. In Dropbox app permissions: CHECK the following checkbox:  
+```
+files.metadata.write
+```
+
+ , 
+```
+files.metadata.read
+```
+
+ , 
+```
+files.content.write
+```
+
+,  
+```
+files.content.read
+```
+3. Click the ‘Submit’ button at the bottom of the page.
+4. Go back to Dropbox app settings: 
+```
+Generated access token
+```
+
+ => Click the ‘Generate’ button and copy the token text.
+5. In WordPress, navigate to the Admin dashboard menu: Prime Mover PRO > Settings > Dropbox access token. Paste the token text and click ‘Save’. (Please see details of these steps below.)
+
+### Step 2. Save the Dropbox token in Prime Mover
+
+- Log in as an administrator.
+- Ensure that you have a Prime Mover Pro license activated to access the settings page.
+- Go to **Prime Mover -> Settings**.
+- In the Dropbox access token box, enter the token obtained in step 1.
+- Save. This is what it looks like after saving.
+
+- The token is validated with Dropbox, and it will only be saved if it’s valid and usable. If you have [enabled encryption with Prime Mover Pro,](https://codexonics.com/prime_mover/prime-mover/how-to-enable-encryption-support-in-prime-mover/) this token will be saved to your site database encrypted.
+- Make sure to keep a safe copy of this token in a secure location (e.g., writing it down to ensure you have a backup).
+- At this point, the Dropbox integration is ready, allowing you to use it during both export and restore.
+
+### Step 3. Set the optimal Dropbox upload chunk
+
+If your server or source site has a fast Internet connection, you can take advantage of this by setting a large Dropbox upload chunk size (in bytes). For example, go to Prime Mover PRO -> Advanced -> Upload/Download Parameters -> Dropbox upload chunk. And set 32MB (33554432), for instance, as the chunk size:
+
+You can use [this tool to convert your value in megabytes (MB) to bytes](https://www.gbmb.org/mb-to-bytes). Ensure that you convert the values to bytes. Using the conversion tool is highly recommended, ensuring you always obtain the correct values.
+
+### Step 4. Generate export and save (optionally) to Dropbox
+
+With Prime Mover Pro integrated with Dropbox support, you will be presented with an additional checkbox to optionally save a copy of your backup or migration package to Dropbox. This is when you create an export. Make sure this checkbox is **checked**, as shown below:
+
+If you check this box, Prime Mover will save a copy of your backup to your Dropbox account.
+
+*NOTE: Even if*you upload a copy of the backup package to Dropbox. Prime Mover will still save a *copy of it inside your Prime Mover export directory.*
+
+*Sample screenshot showing Prime Mover is uploading the package to Dropbox (in-progress):*
+
+*Sample screenshot showing the package is finally uploaded to your Dropbox app:*
+
+### Step 5. Restore your backup from Dropbox
+
+You need to restore the Dropbox package URL using the [Prime Mover’s’ Restore from remote URL’ feature](https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/).
+
+In brief, the Dropbox package URL should resemble the following (with the parameter’ dl’ set to 1).
+
+For example:
+
+```
+https://www.dropbox.com/s/abcdefgdxsfdfds/mypackage.wprime?dl=1
+```
+
+Prime Mover can restore this package by first downloading it from your Dropbox account and then restoring it to your site.
+
+## Troubleshooting Dropbox integration
+
+If you are experiencing issues with the integration steps or something is not working with Dropbox, [please refer to this troubleshooting guide](https://codexonics.com/prime_mover/prime-mover/troubleshooting-dropbox-integration-issues-with-prime-mover/).
+
+*Last updated: April 19, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Prime Mover Pro Custom Backup Directory
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-custom-backup-directory/](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-custom-backup-directory/)
+
+Scope: **Prime Mover Pro**
+
+### Background
+
+Custom backup directory is one of the [first settings for Prime Mover Pro](https://codexonics.com/prime_mover/prime-mover/configure-basic-settings-in-prime-mover-pro/) that you would like to configure.
+
+By default, this path is set to WordPress uploads directory for both free and pro version of Prime Mover. Prime Mover automatically detects if it has both read and write permission to this directory. If it does not write permission, the plugin will not be activated and you cannot use the plugin.
+
+This directory is used when Prime Mover creates backup / migration packages. Temporary files will be stored in this directory as the export is ongoing. For example, database are dump to this directory, media / plugin / theme files will be copied from the plugins directory to this custom directory.
+
+This directory will store WPRIME packages that will be used when you restore a site from the backup. The nice thing about Prime Mover Pro is that it can take snapshot of your site, for example if you want to create a backup before you do major changes in your site like major plugin updates.
+
+When something goes wrong, you can simply deactivate all plugins except Prime Mover Pro and then restore your latest site backup from the custom backup directory. After that everything should goes back to normal.
+
+### Security – move your custom backup directory beyond public access
+
+As you have learned earlier, the directory will be used to store Prime Mover packages. It’s important that you move this backup directory beyond public access.
+
+By default, this is protected with .htaccess which will work only for Apache servers.  The [generated file name is hard to guess though](https://codexonics.com/prime_mover/prime-mover/important-notes-on-prime-mover-single-site-and-multisite-packages/), but **you need to make sure that you will move this directory beyond public access**. This is to make sure no one can publicly access your backups.
+
+For example, you should move this above public_html directory. Simply update the path and click Save.
+
+Let’s assume your WordPress public html root path is */home/mysite/public_html/*
+
+Then you might want to create a temporary folder named as “myprimemover-backups” in the mysite folder which is now above public_html.
+
+Therefore the new custom backup directory path that you need to save is: */home/mysite/***myprimemover-backups***/*
+
+This [tutorial has a video on how this is done](https://codexonics.com/prime_mover/prime-mover/configure-basic-settings-in-prime-mover-pro/).
+
+### Prime Mover Log Files ,Debug Log , Error Logs
+
+Your custom backup directory is where all log files, debug log and error log files related to Prime Mover will be stored.
+
+You don’t need to worry about them as you can easily delete them in: **Prime Mover – Advance – Clear logs**
+
+Take note that one you cleared the log, there is no way to get it back.
+
+### Moving backup path – best practices
+
+Using the custom backup directory setting, you can easily move your backup path to any path you specify. When you move backup path, take note that it also**automatically copies all packages to the new path**.
+
+If your backup directory is so BIG, your server might reach a timeout as the plugin is copying files. You will know this because you can get errors when you save this in the backend.
+
+To avoid this issue, you can do the following:
+
+- Check the size of your backup directory first. You can get this info in Prime Mover – Settings – Backup management – Backup stats.
+- Click “**Compute backup directory size**“.
+- It will give you the total size of your backup directory.
+- Usually if you are on the shared hosting, you might need to delete some backups if its beyond 100MB, to make sure your server does not reach limits.
+- If you are on a dedicated hosting with flexible timeout, you can move like 100MB to 500MB or even 1GB if your server can support it.
+
+The key is to **delete unneeded backups before moving your backup directory, so it appears manageable**.
+
+### Deleting package in custom backup directory
+
+Prime Mover has a lot of built-in tools to manage your custom backup directory within WordPress admin. There should be no need to login to SSH to delete files for example.
+
+If you want to delete some backup:
+
+- Go to *Tools – Migration*
+- Click **Import** button.
+- In Restore Options dialog, click **Restore files from this site backup directory**
+- It will show a list of active backups in your backup directory.
+- Mouse over the package link until you see package description. Use this description what files to delete as it shows when the backup is created ,etc. (e.g. you might want to delete older backups)
+- Use the delete icon to delete any of the backup. See screenshot below:
+
+**NOTE**: *This screenshot is taken before Prime Mover 1.1.5 which uses ZIP archiving format. Since Prime Mover 1.1.5, zip is no longer used, you should be able to see WPRIME archives. Take note that ZIP package works only for backward compatibility reasons. This is the case when the backup is created before version 1.1.5 is released.*
+
+### Delete all files in custom backup directory
+
+If you are sure you don’t need ALL of your backups and logs, you can delete this in one button.
+
+- Go to Prime Mover
+- Go to Settings
+- Scroll down to “Backup management”
+- Click Delete ALL backups button.
+
+Was this article helpful?YesNo
+
+---
+
+## Prime Mover PRO Google Drive API Integration
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-google-drive-api-integration/](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-google-drive-api-integration/)
+
+Scope: **Prime Mover Pro version**
+
+### Introduction
+
+**Prime Mover PRO version 1.2.5 and later** now supports Google Drive. It is now possible to save or restore a package from your Google Drive account. This is a PRO feature, so you need to purchase a PRO license to use it. If you already have a license, please update to version 1.2.5 or later to enable the use of this feature.
+
+Google Drive comes with***15 GB of free storage*, which is significantly larger than that of competitors like Dropbox or OneDrive. This should already be enough for most website backup, restoration, and migration needs. You can further increase this limit by purchasing more disk space from Google Drive.
+
+This documentation guides you through integrating the Google Drive API with your Prime Mover PRO installation. The integration process is straightforward. All you need is a Google account!
+
+### Step 1: Enable Google Drive API
+
+First, ensure that you have enabled the Google Drive API for your account.
+
+- Log in to the [Google API Console](https://console.developers.google.com/) using your Google account.
+- Click **ENABLE APIS AND SERVICES**, see screenshot below:
+
+- Click **Google Drive API**to enable it.
+
+- Then, click the Enable button to enable it.
+
+### Step 2: Create OAuth2 credentials
+
+- Now that you have enabled the Google Drive API, you need to create OAuth 2.0 credentials. Click the **Credentials** link.
+
+- Then, click **Create Credentials> OAuth Client****ID**.
+
+- You need to obtain the URL of your Prime Mover Settings page. You will need this in the Google Drive OAuth2 setup. Log in as an administrator or network administrator and navigate to **Prime Mover -> Settings**. Get the URL of this settings page from the browser address bar:
+
+- In the “Create OAuth client ID” page, enter the following details
+
+**Application Type**: *Web Application*
+
+**Name**(actually, you can name anything): *Prime Mover Google Drive Integration*
+
+**Authorized redirect URIs**: (*Must be your Prime Mover settings page URL*). This will vary from site to site. For example, the screenshot below is from a local host.
+
+- Finally, click **Create**. You should be able to see the **OAuth client created** dialog. Click OK to close.
+
+### Step 3: Save Google Drive OAuth credentials to Prime Mover PRO settings
+
+Now that you have successfully created OAuth credentials, it’s time to save them to your Prime Mover PRO settings. Prime Mover will use these credentials every time you like to connect to the Google Drive API.
+
+- Download the credentials that you have just created. This file is in JSON format. See the screenshot below on how to download it. Clicking on it will download it to your Desktop.
+
+- After downloading, open the file. **Select all of the contents and copy**.
+- Log in to your WordPress single-site or multisite (in the Network Admin). Then, *paste the contents* into **Prime Mover> Settings> Google Drive OAuth 2.0** text area. It should look like this. (*actual client values removed for privacy reasons*)
+
+- Click the Save button to save the settings. Please note that this setting is saved encrypted in the WordPress database.
+
+### Step 4: Connect to Google Drive API from the Prime Mover PRO settings page
+
+Now that you have saved the settings, it’s time to connect to the Google Drive API. Please note that you cannot save or restore a package from Google Drive if you are not connected. This should be the first thing to check if you want to save or restore a package from Google Drive.
+
+- Log in to your WordPress single-site or multisite.
+- Go to **Prime Mover -> Settings -> Google Drive OAuth 2.0**.
+- You should see a button labeled “**Connect to Google Drive”**.
+
+- Click the “**Connect to Google Drive**” button.  Since you are creating the app for the first time, you may see an ‘**Unverified App’** warning. Just skip and proceed. This is just a reminder for you to verify your app with Google. You can do this at a later stage; it will only take a couple of days for Google to verify your app.
+- If you log in to your Google account via the “*Connect to Google Drive”*button, you will be presented with a consent screen. Just click **Allow.**
+
+- Once logged in, you will be redirected back to the Prime Mover PRO Settings page. If you are not redirected, repeat the above connection process or refresh the settings page (this sometimes happens when your Internet connection is unstable).
+- You will know that you are connected because you see the “*Success! You are connected to Google Drive*” message in your Prime Mover PRO settings page for Google Drive.
+
+That’s it! You have successfully integrated the Google Drive API with the Prime Mover PRO plugin. **Congratulations!**
+
+### How to set the Google Drive upload and download chunk?
+
+Before you can export or restore via Google Drive, it is best to set optimal chunk values. You can set the Google Drive upload chunk by navigating to *Prime Mover PRO> Advanced> Upload/Download Parameters>**Google Drive upload chunk*. Likewise, the setting to set the download chunk can be found below: *Prime Mover PRO > Advanced > Upload/Download Parameters >**Google Drive download chunk.*
+
+“*Chunking*” is the best practice for uploading and downloading large files, such as backup files. This works by breaking down your package into pieces (called “*chunks*“), making the file size small and allowing for faster uploads and downloads.
+
+The default upload and download chunk size is 1 MB, designed to work even with the slowest connections.  Therefore, this is the safest option, but it has the downside of taking a longer time to process and making a large number of requests to the Google Drive API, which counts towards your overall request quota.
+
+Most connection speeds nowadays are above 100 Mbps; therefore, you can adjust this to the optimal value. For the sake of clarity, connection speed refers to either upload or download speed.
+
+Based on experience, below are some recommended values on upload/download chunk size based on your connection speed:
+
+- If your connection speed is between 50 and 100 Mbps, you can increase the default value to around 4MB (4194304 bytes)
+- If your connection speed is above 100 Mbps but below 300 Mbps, you can increase the default value to 8MB (or 8388608 bytes)
+- It is safe to use 16MB (16777216 bytes) as chunk size values if your site’s connection speed is now above 300 Mbps but less than 500 Mbps.
+- 32MB (33554432 bytes) chunk size is best if you have a connection speed greater than 500 Mbps.
+
+Connection speed is measured as the speed between your source site (where backups are created or restored) and the Google Drive server on the Internet.
+
+For example, if you are creating a backup on your laptop’s local host and uploading it to Google Drive, the connection speed is provided by your ISP from your computer to the Internet. Or if you are in a remote hosting company, the connection speed is determined by your hosting server’s connection speed to the Internet.
+
+The chunk size value should be specified in bytes. If you are only familiar with megabytes (MB), you should [convert that megabyte value to bytes](https://www.gbmb.org/mb-to-bytes).
+
+### How to export a package to Google Drive?
+
+Once you are connected to the Google Drive API, click the Export button, and you should see a checkbox labeled “**Save a copy to Google Drive**” under Export location.
+
+### How to restore a package from Google Drive?
+
+Restoring is very simple; right-click on the WPRIME package saved on Google Drive and then click “**Get Link**“.
+
+And then click **Copy Link**.
+
+Finally, paste this URL into the Prime Mover Restore Options Dialog -> Restore package from a remote URL. This is a [remote URL feature of Prime Mover](https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/).
+
+### How to add new sites using the same configured API Credentials?
+
+- **Can I use the same API credentials for** multiple sites? Yes, but you must add the Prime Mover settings URI of that new site. You can do this in the Google Developer console -> Authorized Redirect URIs. See screenshot below.
+- IMPORTANT: Google Drive API requires that all redirect URIs use the HTTPS protocol.
+
+Click the “Add URI” and then add the Prime Mover settings URL of your other site. After that, download the credentials again and use them to save to your new site. You can then connect to Google Drive.
+
+### Frequently Asked Questions on Google Drive API Integration
+
+- **Is this a persistent connection? Is it possible?** Note that once you are connected to the Google Drive API. There is a one-hour expiration by default. This is one hour of idle time. However, if you are exporting and restoring a massive package to Google Drive, it will not expire because it is not an idle connection.
+
+- **Does this use PHP sessions**? No, this integration does not use PHP sessions. This is to maintain consistency with WordPress’s design, which is stateless.
+
+- **Can I save and restore data**from the Google Drive API, even though my app is unverified? Yes, it will work, but it is highly recommended to have your app go through the verification process if you want to use it frequently or if there are a couple of users who will use it.
+
+- **Does this work on** **localhost?**Yes, but your site hostname should ONLY be “localhost”. Anything will not work. The Google Drive API will block it.
+- **Does this work with a**non-HTTP protocol? No, Google Drive API requires authorized redirect URIs to use the HTTPS protocol. You should use HTTPS to access this feature. This is because you cannot add non-HTTPS redirect URIs in the Google Developer Console.
+- **Does this work with Windows OS?** Yes, we have tested this with Windows OS using PHP.
+- **When restoring from Google Drive, do I need to share my package publicly?**No, since you are connected and authenticated to the Google Drive API, you don’t need to share your package publicly.
+- **I have already integrated with Google Drive, but I don’t see a checkbox to save the package to Google Drive.** Make sure you are connected to Google Drive. If you are not connected, you will be unable to export or restore files from Google Drive.
+
+### Prime Mover 1.4.8+ update – prevent one-hour token expiration using refresh token
+
+In older Prime Mover versions, an access token’s life is only one hour. If it exceeds one hour, it expires, and you need to reconnect the app to GDrive manually. If the export/restore process is ongoing and the access token expires, the process is disrupted, and you need to repeat it.
+
+To prevent this usability issue, the solution is to use [refresh tokens](https://developers.google.com/identity/protocols/oauth2#5.-refresh-the-access-token,-if-necessary.). This will ensure that when the old token expires. Google will auto-renew this token using the refresh tokens. To get the most out of this refresh token update (if you have an existing GDrive integration with Prime Mover):
+
+- Log in to your WordPress site.
+- Go to 
+```
+Prime Mover -> Settings
+```
+
+.
+- Please scroll down to GDrive settings and ensure it is not currently connected to GDrive.
+- Log in to your Google account.
+- Go to 
+```
+Manage your Google Account
+```
+
+ the link.
+- Click “*Security*“.
+- Find the section “*Manage third-party access*“.
+- “*Remove Access*” to your current app.
+
+- Now in *Prime Mover -> Settings -> Google Drive OAuth* 2.0. Reconnect to GDrive.
+- Complete the authentication process, including granting access.
+- Once fully connected, this session should now include refresh tokens, and you can use GDrive with Prime Mover for more than an hour.
+
+*Last updated: April 19, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Prime Mover PRO: How to deactivate licenses and transfer to another site?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/)
+
+## Overview
+
+Deactivating licenses is sometimes needed for the following:
+
+- You want to use free licenses to transfer/activate the license to your other sites.
+- You want to deactivate licenses temporarily for troubleshooting purposes.
+- You want to deactivate the license as part of the [license reset process](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/).
+
+## Can I deactivate licenses inside my WordPress admin?
+
+Of course! Whether using a multisite or a single site, you can easily manage licenses (*activation and deactivation*) via the Freemius account page from your WordPress admin. You can access this page via *Prime Mover PRO -> Account*.
+
+**Note**: *You can only deactivate a license from within your WordPress admin if you have already activated it. If you cannot remember activating the license in any of your sites before – you need to deactivate the license from inside your Freemius account.*
+
+**In multisite** – this is how it looks:
+
+- Click “Deactivate license” to turn off the license for that site.
+- [*if multisite*] To transfer the license to another subsite, click the “Activate PRO” button on the site where you need to activate the license.
+- [*if single-site*] To transfer the license to a single-site, activate the license directly under *Prime Mover PRO -> Account.*
+
+**In a single site**, this is how it looks:
+
+To deactivate the license in a single site (from inside your WordPress admin) – simply click that “*Decativate license*” link.
+
+## Deactivate licenses in all sites in one click
+
+In this method, you can deactivate licenses in all sites in just one click; this is useful if you want to reset the license usage:
+
+- Log in to your [Freemius account](https://users.freemius.com/login).
+- Go to the “*Licenses*” tab.
+- Click the red “*Deactivate*” link. It looks like this:
+
+- It will ask for confirmation – so click “*Yes, deactivate license*” to proceed.
+- This will deactivate the license on all sites. For example, the account in the above screenshot uses a 4-site license. After license deactivation, the “*ACTIVATIONS*” column will become “*0 out of 4*.” This means there are no more active sites using the license key.
+
+## Deactivate the license on just one site
+
+Sometimes, you only want to deactivate the license on one site. You can also do this via [WordPress admin](#wpadmin). This is useful if the license key is activated on many sites and you only want to use the license for free for one site.
+
+Just in case you don’t have access to your site but have access to your Freemius account:
+
+- Log in to your [Freemius account](https://users.freemius.com/login).
+- Click the “*Websites*” tab.
+- It will list all sites registered with Freemius. *NOTE: The site with an active license has a license key value in the “LICENSE” column, and it will be labeled “Pro” under the “PLAN” column*.
+- Supposing you want to deactivate the license in one site only (e.g. 
+```
+grizzlybear.azz
+```
+
+ in the screenshot below).
+- Click the site row, and the detailed site info will expand on the right:
+
+- On the expanded site, detailed info. Click the “Deactivate” red link, which will deactivate the license for that site.
+
+- After this deactivation, you will be free of one usage in your license quota. For example, if your current license activation is *3 out of 4, it* will become *2 out of 4*. You can then reuse or activate this usage on your other site.
+
+## Transfer and move the license
+
+Now that you have deactivated the license in your source site, you can transfer and move that license to another site of your choice. It could be another single-site or any subsite in your multisite (or even main site).
+
+To do this, please follow these steps to [activate the license for your target site](https://codexonics.com/prime_mover/prime-mover/how-to-activate-license-in-prime-mover-pro/).
+
+## Contact us
+
+If you are having issues deactivating or freeing some license usage, [please get in touch with us](https://codexonics.com/contact/) and provide the email address you used with Freemius so we can re-check.
+
+*Last updated: August 26, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Prime Mover Pro: Media files NOT encrypted when it should be
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-media-files-not-encrypted-when-it-should-be/](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-media-files-not-encrypted-when-it-should-be/)
+
+### Background
+
+By default, if you check data encryption. It should encrypt **BOTH database and media files** during export. This is how the setting currently looks like:
+
+**IMPORTANT: This tutorial only applies before Prime Mover 1.1.5 where it uses ZIP as an archiving format. This is no longer applicable starting Prime Mover 1.1.5 since media encryption/decryption does not depend on LIBZIP library.**
+
+However, some servers might only encrypt database and your media file contents does not have encryption. This is because PHP has some specific requirements for this to work.
+
+Make sure your server complies with ALL of the following requirements.
+
+### Requirements
+
+- Your server should use at least PHP**7.2.0**
+- Libzip extension should be at least **1.2.0**
+
+### Troubleshooting Steps
+
+- [*PRO version only*] In Prime Mover Pro, login as administrator.
+- [*PRO version only*] Go to Prime Mover – Advance settings.
+- [*PRO version only*] Scroll down to the bottom and click **Export site info** . This will download the debug info of your site to your downloads folder.
+- Open it with a text editor.
+- Go to section **phpinfo**
+- The PHP version should be at least PHP 7.2.0. If not, please upgrade to this minimum version requirement for media encryption to work.
+- Find the value of **Libzip library version,**it should be at least 1.2.0. If not, you should contact your server administrator to upgrade libzip to this version.
+- Upload this PHP script to your server to know if **setEncryptionName**  method in Zip archive class. It should output that its found. Otherwise your requisite is lacking and you need to contact your server administrator to fix this.
+
+```
+<?php
+$ziparchive = new \ZipArchive();
+$methods = get_class_methods($ziparchive);
+if (in_array('setEncryptionName', $methods)) {
+    echo 'setEncryptionName is FOUND';
+} else {
+    echo 'setEncryptionName is NOT FOUND';
+}
+```
+
+This method is [first added in PHP 7.2.0](https://www.php.net/manual/en/ziparchive.setencryptionname.php)and its used to encrypt the media files.
+
+**Important** : Prime Mover handles these checks automatically. So if it founds out your server does not meet this minimum requirement. It will use default setting which is not to encrypt the media files (only database contents are encrypted).
+
+Once your server meets the requirements, you should be able to encrypt media files also.
+
+Was this article helpful?YesNo
+
+---
+
+## Prime Mover Technical Requirements
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/prime-mover-technical-requirements/](https://codexonics.com/prime_mover/prime-mover/prime-mover-technical-requirements/)
+
+## Overview
+
+The Prime Mover plugin includes a built-in dependency requisite checker. When the plugin is activated, it will perform automated checks to determine whether your site or server meets Prime Mover requirements.
+
+How it works is that when Prime Mover is activated,it checks all its needed requirements, such as WordPress and PHP versions. When some requirements are missing during these checks, Prime Mover is auto-deactivated and outputs a user-friendly message about**the missing dependencies**.
+
+This allows the user to adjust the server to ensure it is compatible with Prime Mover. This check also prevents running Prime Mover in incompatible environments, which can cause many unnecessary issues.
+
+Below are details of Prime Mover technical requirements that the plugin will check when activated.
+
+## WordPress version
+
+The Minimum WordPress-supported version is 4.9.8. Prime Mover support cannot be lower than this version because some functions are needed but do not exist below it.
+
+You should always use the latest WordPress version for the best migration and backup stability compatibility.
+
+## PHP version
+
+The minimum PHP-supported version is 5.6. The recommended version is the same as WordPress (PHP 7.4+). It is not recommended to stay in PHP 5.6 due to****security vulnerabilities.
+
+## MySQL or Database version
+
+Prime Mover has no specific minimum MySQL version as long as the current WordPress installation is compatible with Prime Mover (>= 4.9.8). This means it can work with legacy MySQL 5.0+, but these versions have reached official End-of-Life and may expose your site to security vulnerabilities.
+
+For best results with migration and backup – it is always recommended to use MySQL version 5.7 or greater OR MariaDB version 10.3 or greater. These are the identical database versions currently recommended by WordPress Core.
+
+## Supported Servers
+
+Prime Mover is tested to work with Apache, Nginx, Microsoft IIS, Litespeed servers, etc. As long as your server meets dependencies and runs a supported version of WordPress (along with supported PHP and MySQL versions, etc.), you should be able to use this plugin on any server.
+
+## FAQ
+
+- *Do server PHP/MySQL/WordPress version differences between source and target site can result in migration glitches?*
+
+Yes, typically, if you have a big, complicated site, there might be little difference between the source site and the target site. This is due to the fact that you are using third-party plugins (not only Prime Mover) and themes, which, of course, react to differing versions.
+
+For example, your original site uses PHP 5.6 and legacy/outdated plugins. However, when you migrate to a new PHP 7.4 server, some of your plugins might not work perfectly and need tuning up/updating, which can cause differences in how your site behaves.
+
+The same is true when you migrate from PHP 7.4 to PHP 5.6—your plugins or themes might not work correctly because of the outdated PHP version.
+
+It is always recommended to migrate to a target site with the **same server specs as your source site.** This will eliminate issues caused by server technical differences.
+
+- **I find it weird that multisite migration sometimes has glitches. What would have caused this?**
+
+Take note, for example, that these are significant changes if you move your site from a multisite to a single site or vice versa. This is because the site used to work with multisite, along with its multisite plugins, multisite-related settings, and all network-related stuff/customization. Prime Mover does its best to make this migration as smooth as possible, but there are times when differences and glitches are bound to happen.
+
+The most contributing factor to these differences is the plugins and themes you are using. For example – say you have a *multisite-only plugin* and are migrating to a single site. These multisite plugins do not work anymore on a single site. Thus, one reason for the differences in your site behavior is that.
+
+Or if your site is using multisite-related settings for a plugin that are no longer applicable when being migrated to a single site, Prime Mover cannot adjust this because migration simply replaces paths, domain names, or hostnames as well as URLs to the target site. *Changing detailed plugin settings is beyond the scope of the migration*.
+
+As usual,if you see some strange behavior after migration, it is suggested that you do a [post-migration troubleshooting](https://codexonics.com/prime_mover/prime-mover/post-migration-troubleshooting-tips-and-advices/)to check and review the site plugins’ settings after migration (and to sort out possible issues).
+
+Prime Mover PRO also has a [feature that excludes plugins](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/). Using this feature, you can exclude problematic or multisite-only plugins from your package.
+
+The differences could become more pronounced if you migrate to a completely different *PHP/MySQL/WordPress version* from your source multisite or single site. Your plugin settings and customization might be greatly affected in this case.
+
+## Get in touch with us!
+
+If you think the issues could be Prime Mover-related, [please get in touch with us](https://codexonics.com/contact/) and provide us with your 
+```
+WPRIME
+```
+
+ package for troubleshooting. You can upload this to Google Drive or DropBox and share the link to download it. Please describe the differences between the source site and the target site. Show expected and actual behavior screenshots so the tech support knows where to find the problem.
+
+It would be helpful to [provide us](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/)[with as much debug data as possible,](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/) such as your site info, so we can mimic your server environment in our test servers.
+
+*Last updated: November 11, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## Prime Mover User Adjustment API
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/prime-mover-user-adjustment-api/](https://codexonics.com/prime_mover/prime-mover/prime-mover-user-adjustment-api/)
+
+## Introduction
+
+This guide is only for WordPress plugin developers wanting to integrate Prime Mover user adjustment API.  This guide requires at least **Prime Mover 1.5.2+** for both export and import end. If you are using an earlier version – you cannot use this API and you must upgrade to the latest version of Prime Mover.
+
+## Problem description
+
+As you have learned already – Prime Mover is a plugin that can be used to migrate WordPress websites whether multisite sub-sites or single sites. When Prime Mover migrate sites – it also migrate it’s users. When users are migrated to a different/new installation – they are added by Prime Mover using WordPress functions like 
+```
+wp_insert_user
+```
+
+ for new users or 
+```
+wp_update_user
+```
+
+ for existing users . You can read how [Prime Mover handles user migration here](https://codexonics.com/prime_mover/prime-mover/prime-mover-user-migration-documentation/).
+
+When user is added to the newly migrated site, a different user ID is created in the WordPress user database table.   Even if the user is the same (e.g. same email address from the source site and the target site) – you must never assume that they have the same user ID!
+
+This can create problems with WordPress plugins hard coding user IDs in their own WordPress custom database table. Since the user IDs might be different – plugin functionality is affected. For example – consider this custom database table**wp_my_custom_test_table** (added by  a fictitious third party WordPress plugin) that is hard coding user IDs as 
+```
+user_id
+```
+
+ column:
+
+Supposing the tables above is the data in the original/source site. So for example that means **dummyfour@dummytest.com**user hobby is “*swimming*“. WordPress users table is the standard user database table like 
+```
+wp_users
+```
+
+.
+
+When this site is migrated using Prime Mover to a multisite or it could be another single-site with different users or already existing users – these source site users might not exists and should be added to the new target site. Supposing this is the table after migration (before any user adjustment):
+
+As you have observed after migration –  the association between the user IDs and it’s hobbies are disconnected. For example**dummyfour@dummytest.com**user ID is now 506 however no associated hobby is found in the custom database table. The table**wp_my_custom_test_table** is not adjusted in this case. It still uses the source site user ID. This can create problems in the target site.
+
+## Solution: User Adjustment API
+
+The problem above can be fixed permanently by integrating Prime Mover plugin user adjustment API in your third party WordPress plugin (that is hard coding user IDs). The API works as follows:
+
+- When a site is exported –  Prime Mover detects which plugins uses the user adjustment API automatically.  This detection requires your plugin to be active on that site to be exported and that you have correct API implementation (see example below).
+- When the site is restored/imported – Prime Mover let’s the third party plugin runs it’s code (that uses  the API) to do it’s own user adjustment.
+- After the site is restored – user adjustment is done also.
+- As expected – the user data in the custom database table are connected/updated to use the latest user IDs after migration. This way – site functionality is not affected by the migration/user ID change.
+
+## API usage example – object oriented
+
+If you are a third party WordPress plugin developer and using object oriented approach in coding. You can add the integration in very steps . Simply add the filter hook and it’s callback method. You then to configure your own parameter values. That’s it. Example (supposing you implemented the above custom table data**wp_my_custom_test_table**):
+
+```
+add_filter('prime_mover_do_process_thirdparty_data', [$this, 'userAdjustment'], 2, 3);
+
+    /**
+     * User adjustment when migrating site with Prime Mover plugin
+     * @param array $ret
+     * @param number $blogid_to_import
+     * @param number $start_time
+     * @return array
+     */
+    public function userAdjustment($ret = [], $blogid_to_import = 0, $start_time = 0)
+    {
+        /**
+         * START - CONFIGURATION
+         */
+        $plugin = 'yourplugin/yourplugin.php';
+        $table = 'my_custom_test_table';
+        $identifier = "sometestidentifier";
+        
+        $primary_index = 'key';
+        $user_column = 'user_id';
+        
+        $table_description = 'custom data table';
+        $handle_unique_constraint = '';
+
+        /**
+         * END -CONFIGURATION
+         */
+        
+        /**
+         * DEVELOPERS: DONT EDIT ANYTHING BELOW!
+         */
+        $validation_error = apply_filters('prime_mover_validate_thirdpartyuser_processing', $ret, $blogid_to_import, $plugin);
+        if (is_array($validation_error)) {
+            return $validation_error;
+        }
+        
+        if (!empty($ret['3rdparty_current_function']) && __FUNCTION__ !== $ret['3rdparty_current_function']) {
+            return $ret;
+        }
+        
+        $ret['3rdparty_current_function'] = __FUNCTION__;        
+        $leftoff_identifier = "3rdparty_{$identifier}_leftoff";        
+        $column_strings = "{$primary_index}, {$user_column}";
+        
+        $update_variable = "3rdparty_{$identifier}_log_updated";        
+        $progress_identifier = $table_description;
+       
+        $last_processor = apply_filters('prime_mover_is_thirdparty_lastprocessor', false, $this, __FUNCTION__, $ret, $blogid_to_import);        
+        
+        return apply_filters('prime_mover_process_userid_adjustment_db', $ret, $table, $blogid_to_import, $leftoff_identifier, $primary_index, $column_strings,
+            $update_variable, $progress_identifier, $start_time, $last_processor, $handle_unique_constraint);
+    }
+```
+
+Simply provide the values inside the code block marked as 
+```
+START - CONFIGURATION
+```
+
+ and **END -CONFIGURATION**
+
+These are the parameters needed inside the callback method with some guidance on how to set this up correctly:
+
+- ```
+$plugin
+```
+
+ = this is your plugin e.g. **akismet/akismet.php**
+
+- ```
+$table
+```
+
+ = this is the affected custom database table. Do not include the table prefix!. In the above example, the affected table is **wp_my_custom_test_table**. Therefore defined only **my_custom_test_table** (without the prefix “wp_” or any table prefix).
+
+- ```
+$identifier
+```
+
+ = this should be one word – alphabetic strings only. (No other characters, numbers, spaces, hypens, etc). This is used by Prime Mover to uniquely identify your plugin AP implementation.
+
+- ```
+$primary_index
+```
+
+ = This is the primary index column used by your custom database table. In the above example for database table**wp_my_custom_test_table**, the primary index column is 
+```
+key
+```
+
+.
+
+- ```
+$user_column
+```
+
+ = This is the affected user ID column. This is the column that needs to be adjusted. In the above example, this column is 
+```
+user_id
+```
+
+.
+
+- $table_description  = a very short description of your table (**should not exceed three words**). This will be used internally by Prime Mover plugin to give status of the database update to its user.
+
+- $handle_unique_constraint = if 
+```
+$user_column
+```
+
+ is a unique column, then add it here as well. e.g. provide:  
+```
+$handle_unique_constraint = 'user_id'
+```
+
+. If your 
+```
+$user_column
+```
+
+ is not unique (as in most cases) – then you should only provide empty value , e.g. 
+```
+$handle_unique_constraint = ''
+```
+
+## Limitation on API object oriented implementation
+
+- The hook and the callback method should not be using anonymous functions.
+- It should not be inside static class. Use 
+```
+$this
+```
+
+.
+- Provide only the table specific parameters as indicated in the API. This does matter whether you have thousands or millions of data rows. Prime Mover will handle everything automatically.
+- Plugin inside 
+```
+/wp-content/mu-plugins
+```
+
+ is not supported.
+- If there are more than one user ID columns, it requires a separate hook-callback. Each callback should adjust one user ID column only.
+- Your custom database table should have primary keys. It does not support tables that is not using primary keys.
+- The hook priority does not matter. But make it sensible e.g. around 10 – don’t use very high hook priority or negative hook priority.
+- This API implementation should only used for WordPress plugins – adding this to theme 
+```
+functions.php
+```
+
+ is not supported.
+- For this to fully work – the plugin that is implementing this API should be activated at the source site (before exporting) and should be also be used at the target site. Prime Mover handles the user adjustment automatically to plugins that hooking to this API.
+
+## Procedural code method API usage example
+
+If you don’t use object oriented inside your plugin code – you can also implement the API as follows:
+
+```
+add_filter('prime_mover_do_process_thirdparty_data', 'primeMoverCustomUserAdjustment', 77, 3);
+/**
+ * User adjustment when migrating site with Prime Mover plugin
+ * @param array $ret
+ * @param number $blogid_to_import
+ * @param number $start_time
+ * @return array
+ */
+function primeMoverCustomUserAdjustment($ret = [], $blogid_to_import = 0, $start_time = 0)
+{
+    /**
+     * START -CONFIGURATION
+     */  
+     $plugin = 'yourplugin/yourplugin.php';
+     $table = 'my_custom_test_table';
+     $identifier = "sometestidentifier";
+        
+     $primary_index = 'key';
+     $$user_column = 'user_id';
+        
+     $table_description = 'custom data table';
+     $handle_unique_constraint = '';
+    /**
+     * END -CONFIGURATION
+     */
+    
+    /**
+     * DEVELOPERS: DONT EDIT ANYTHING BELOW!
+     */
+    $validation_error = apply_filters('prime_mover_validate_thirdpartyuser_processing', $ret, $blogid_to_import, $plugin);
+    if (is_array($validation_error)) {
+        return $validation_error;
+    }
+    
+    if (!empty($ret['3rdparty_current_function']) && __FUNCTION__ !== $ret['3rdparty_current_function']) {
+        return $ret;
+    }
+    
+    $ret['3rdparty_current_function'] = __FUNCTION__;
+    $leftoff_identifier = "3rdparty_{$identifier}_leftoff";
+    $column_strings = "{$primary_index}, {$user_column}";
+    
+    $update_variable = "3rdparty_{$identifier}_log_updated";
+    $progress_identifier = $table_description;
+    $last_processor = apply_filters('prime_mover_is_thirdparty_lastprocessor', false, '', __FUNCTION__, $ret, $blogid_to_import);
+    
+    return apply_filters('prime_mover_process_userid_adjustment_db', $ret, $table, $blogid_to_import, $leftoff_identifier, $primary_index, $column_strings,
+        $update_variable, $progress_identifier, $start_time, $last_processor, $handle_unique_constraint);
+}
+```
+
+## Testing – how to check if it works?
+
+Going back to the above problem description – when the plugin implements the API correctly. The user ID in the affected custom database table will also be automatically adjusted by Prime Mover. So the above example will produce this output after migration at the target site (supposing user adjustment is implemented):
+
+As you can see – with API implemented correctly – the user ID is now correctly adjusted in the affected custom database table. To test – simply check the user ID in your WordPress site after migration and check your custom database table to see if it’s adjusted accordingly. You can use the data in the source site to interpolate expected results.
+
+## Frequently asked questions
+
+- **What happens if there is no migration – does this code adds performance overhead?** No because this code runs only during migration where all plugins are disabled except plugins implementing the API.
+
+- **Does user adjustment needs to run all the time during migration?** No, if user equivalence are the same (e.g. you have mirror site for export and import, with same user IDs correspondence.) – then the user adjustment is not needed. This is decided by Prime Mover automatically.
+
+- **Do all WordPress plugins needs to do this?** No, this is only for plugins that having custom database table implementation that hard codes user IDs.
+
+- **Why can’t Prime Mover permanently fixes this for all plugins?** No, it’s not possible. It is because each WordPress custom database table used by each plugins have it’s own unique definition. This means there is no general solution that works for all plugins. It would be simpler for the third party plugin to hook to Prime Mover and inform it to do it’s own user adjustment when user is migrating site.
+
+- **Does other migration plugins have this API also?** No this API is only for Prime Mover plugin.
+
+- **The API integration is very simple – I only need to provide the user ID column, table name, and a few parameters. Where is the rest of the detailed user ID detailed data?**– this is designed to be as simple to integrate as possible. It’s almost copy and paste of the above code examples! The rest of the detailed calculations and user IDs complete list – you don’t need need to worry about it as Prime Mover handles all the hard work in the background silently 🙂
+
+## Case example: Affected plugin and it’s user adjustment API implementation
+
+In this example – the affected WordPress plugin named as “**Third party compat plugin**” relies on it’s own custom database tables.  These tables have user ID columns that when migrated to another site – these user IDs might change and no longer applies. So in this case – it needs user ID adjustment after import to re-aligned the user ID to correct users.
+
+The user ID adjustment is implemented as another plugin for convenience.  The name of this user ID adjustment is “**Third party user adjustment API plugin**“.
+
+Overall the user ID adjustment implementation steps are as follows:
+
+- In the source site (*where package needs to exported*) – re-examine the affected plugin in the database that has user ID columns on it’s own custom database table. Jot down the table name (without the dB prefix- see above example for details), name of the user ID column (e.g. **user_id**) ,  the primary index column name of the table (usually it’s **ID** – but check with it) and the plugin path (e.g. **yourplugin/yourplugin.php**). You need all these information to write down the user ID adjustment patch.
+- Write down the user ID adjustment patch as another plugin (you can download the plugin example link below).
+- *[optional]*If there are more than one affected database tables – write another patch for it and put it on the same user adjustment API plugin. Make sure to assign unique identifiers for each adjustment for proper identification (read above example for details on identifiers).
+- Once all is done – review the patch and make sure it contains correct user ID column names, table names, etc.
+- Activate the user ID adjustment plugin in your site. If you have a multisite – activate it on the same subsite where the affected plugin is activated.
+- Once this is done – review your site and make sure it still works great (just a quick look).
+- Finally activate Prime Mover plugin (network activate if multisite).
+- Visit again your site /subsite admin dashboard (where the affected plugin is activated) and make sure that both the affected plugins and it’s corresponding user adjustment API plugin are activated.
+- Once that is done – create an export with Prime Mover.
+- Once export is done – reset your target site database (make sure the database is cleaned up for better testing just like fresh WordPress install if possible).
+- Restore the package to your target site database.
+- Review that the user adjustment is properly implemented and corrected.
+- Once confirmed that the user adjustment is correct – you can [send us your working user ID adjustment plugin patch](https://codexonics.com/contact/) so we can permanently add this patch inside Prime Mover (which would be fixed for all future affected users).
+
+That’s it! You can download the affected plugin and it’s own user adjustment API plugin below so you can study them in details:
+
+[Download plugin – Third party user adjustment API plugin](https://codexonics.com/prime-mover/beta/thirdparty-user-adjustment-api.zip)
+
+[Download plugin – Third party compat plugin](https://codexonics.com/prime-mover/beta/thirdparty-compat-plugin.zip)
+
+## Still have questions?
+
+Please [send us your question here](https://codexonics.com/contact/). Thank you.
+
+Was this article helpful?YesNo
+
+---
+
+## Prime Mover User Migration Documentation
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/prime-mover-user-migration-documentation/](https://codexonics.com/prime_mover/prime-mover/prime-mover-user-migration-documentation/)
+
+Scope: **Prime Mover Free / Pro version**
+
+### Background
+
+User migration support has been added, starting with **Prime Mover 1.1.0**. If you create packages with older versions, they do not include user migration, and users will not be migrated to the new site or have their post authors correctly updated.
+
+To use this feature, constantly update to Prime Mover version 1.1.0. Then, re-generate the export to make it available. This will automatically include users in your backup/migration packages.
+
+### Disabling or Enabling this Feature
+
+User migration support is**enabled by default** in both free and pro versions of Prime Mover. However, in the pro version, you can choose not to include users in the migration for a specific single site or subsite (in multisite).
+
+This is helpful if you are migrating to a mirror site with the same set of users (duplicate user IDs from the source site to the target site). Including users in the migration would be a waste of resources (especially if you have many users).
+
+This is how it looks like in the export options menu (for Pro version users):
+
+To exclude users in the migration, uncheck the box “Export users.”
+
+A constant can also be added to wp-config.php that globally disables user export. This is the constant:
+
+```
+define('PRIME_MOVER_DONT_EXPORT_USER', true);
+```
+
+This constant is usable for Prime Mover’s free and pro versions. However, unlike the old versions, it will not export users when defined and set.
+
+If you have a Pro version and this constant set, the export user checkbox is not shown and is not usable in this case.
+
+### Is Prime Mover user migration data included in the exported database?
+
+No, it’s because Prime Mover is also designed to migrate to a multisite subsite or from a multisite subsite to a single site database (and vice versa).
+
+It does not dump the entire 
+```
+wp_users
+```
+
+ and 
+```
+wp_usermeta
+```
+
+ to a database table. If this is the case, it will dump the entire user’s table in a multisite (which is only one) that contains millions of users that do not have any relationship to your site’s actual users!
+
+Prime Mover user migration export users this way:
+
+- Retrieve your site users only. In a single site, this is straightforward. In a multisite, Prime Mover only retrieves users of the subsite being exported. Please review the site users in your user’s back-end to ensure they are correct and up-to-date users in your site/sub-site. These are the users that Prime Mover will retrieve.
+- Prime Mover dumps the user’s details and user-detailed data to a JSON file (instead of an SQL file).
+- Prime Mover breaks down the export into chunks for a site with a large user base.
+
+### How does Prime Mover migrate or import users?
+
+In general (applicable to both single-site and multisite), Prime Mover imports users this way:
+
+- It checks if the user’s JSON file exists in the package. If it does, it will import users. Otherwise, if this JSON does not exist (such as with older version packages or if you choose to exclude users), it will skip the user import step.
+- It will read the JSON file in chunks and then import users by batches to the database.
+- Once a user is imported, meta, roles, and site assignments are automatically imported.
+- In a multisite, the user is only added as the user of the multisite subsite being imported; it does not add that user to any other subsites.
+- User roles are also imported, so if a user has an administrator role in the source site, the user imported should also have an administrator role. Similarly, if the user is an editor, the user should also be an editor after migration.
+- Prime Mover does not export or import users and is assigned super admin roles (in case of multisite) as this is on a network level (not sub-site level). The highest role imported is only an administrator for a specific site or sub-site.
+
+### How does Prime Mover handle existing and new users?
+
+The following are rules on how Prime Mover handles existing users during the import stage:
+
+- It only checks user uniqueness by email, as no two or more distinct persons will generally share the same email address. (privacy reasons, personal security, etc.)
+- It does not check user uniqueness by username, as two or more distinct persons might have the same username (from different sites). The same is true for user ID, display name, etc.
+- A user is considered to exist on a target site if their email address is present on both the source and target sites.
+- Otherwise, if the user to be migrated has an email address that has not yet been added to the target site, this user is considered new (does not exist yet).
+- Suppose the user exists and is migrating (e.g., administrator of a particular single site or network administrator in a specific multisite). In that case, the user login details are not updated (no password change, no username change). However, the display name and user metadata will be updated to match the imported site details.
+- If the user already exists and is not doing the migration, the user login details will be updated to use the source site login details. The password of this existing user at the target site will updated to be the same as the source site. This includes its username (if it is unique; otherwise, WordPress will increment its username by appending a number), display name, user meta, etc. Since this is a migration, the goal is to copy user details *from the source site to the target site as precisely as possible*.
+- If the user does not yet exist on the target site, the user is inserted into the database with the exact user login details, meta, etc., as the source site.
+- Remember that during this user migration, user details remain intact as in the source site.  Before Prime Mover 2.0.3 – the one exception was the user ID, for which WordPress generates a new user ID for new users added to the site. The user ID generated for this new site may not be the same as that of a specific user in the source site. Starting Prime Mover 2.0.3 and beyond, the source site user IDs are preserved after backup restoration and migration, but only if the user ID is not used in the target site database and the site is not multisite.
+- The other rare exception is the username. When the user is inserted into the target site, but the source site username already exists on the target site (by a different user), WordPress will append a number to the username to make it unique before it is inserted. For example, if the username from the source is testone, it will become testone-1 at the target site (if there is already a user with the same username, testone).
+
+### How does user migration affect posts and content authors?
+
+Since users are migrated, the associated posts and content authors are also migrated. Prime Mover makes some adjustments to ensure the user IDs of the post authors are consistent with the correct authors from the source site.
+
+For example, consider a user with the email “test@test.com” who wrote the post “Hello World.” This user initially had a user ID of 7 at the source site. WordPress uses this user ID to pinpoint the correct content author.
+
+When this site is migrated to another site (whether to another single site or multisite), WordPress generates another user ID that may not be the same as the source site (during user migration).
+
+For example, the new user ID of “test@test.com” is now 10 at the target site. Prime Mover automatically adjusts this during the post-author update process. It will change the user ID of 7 (which is only correct on the source site ) to 10 at the target site. As a result, the post content author assignment is still accurate after migration.
+
+### Does Prime Mover export and import user taxonomies?
+
+If your site uses user taxonomy, it will be exported and imported automatically, just like post-taxonomies, etc.
+
+### Are user details secure in the package?
+
+User details are written to JSON files in plain text, just like what you can get with a native MySQL dump of other migration plugins (in .sql format); the data is not in any way encrypted.
+
+If security is a concern, especially if you store this package in a remote cloud or other places (such as a flash drive, which others might read), you should encrypt user data. Prime Mover Pro supports this encryption feature. If you encrypt the package, the user details are automatically encrypted and no longer plain text.
+
+Try the [Prime Mover Pro 14-day trial to see how this user data encryption works](https://codexonics.com/prime_mover/prime-mover/pricing/).
+
+### I have the PRO version. Do you have any tips on excluding users for better performance?
+
+If your source and target sites are mirrors, you can easily exclude users from your export. However, *we**recommend including users in your export whenever possible*.
+
+Mirror sites have the same set of users from the source and target sites. The same set of users means users have the same user IDs from both sites (corresponding to the correct users).
+
+For example, if you have source site A with the following users:
+
+*User ID 1: admin, email: testadmin@test.com*
+
+*User ID 2: testone, email: testone@test.com*
+
+*User ID 3: test two, email: testtwo@test.com*
+
+And in the target site B, you also have the same set of users as follows:
+
+*User ID 1: admin, email: testadmin@test.com*
+
+*User ID 2: testone, email: testone@test.com*
+
+*User ID 3: test two, email: testtwo@test.com*Under these conditions, you can safely exclude users from the export to get faster export and restoration performance if the user IDs from the source site to the target site do not correspond. Including users in the export package is usually safer, so Prime Mover can automatically adjust user and author assignments.
+
+### How to enable user export and import debugging?
+
+For privacy reasons, user import and export logging are not included in the default migration log that is found in 
+```
+/wp-content/uploads/prime-mover-export-files/
+```
+
+If you have issues with users’ export and import and would like to report this issue to us, please enable user logging first by adding this constant in wp-config.php:
+
+```
+define('PRIME_MOVER_LOG_USER_IMPORT', true);
+```
+
+Then, repeat the import/export process to include the logs and reproduce the issue. Finally, send this log to us for analysis. After this troubleshooting, you should turn off user logging and remove the logs.
+
+*Last updated: January 6, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## PRO version documentation
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/](https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/)
+
+## Search
+
+Search
+## Index
+
+[How to activate the license in Prime Mover PRO?](https://codexonics.com/prime_mover/prime-mover/how-to-activate-license-in-prime-mover-pro/)
+
+[How do we know if the site has a Prime Mover PRO license activated?](https://codexonics.com/prime_mover/prime-mover/how-do-we-know-if-the-site-has-a-prime-mover-pro-license-activated/)
+
+[“Sorry, you are not allowed to access this page.” when downloading Prime Mover PRO](https://codexonics.com/prime_mover/prime-mover/sorry-you-are-not-allowed-to-access-this-page-when-downloading-prime-mover-pro/)
+
+[FAQ – How do you activate Prime Mover PRO?](https://codexonics.com/prime_mover/prime-mover/faq-how-to-activate-prime-mover-pro/)
+
+[How can Prime Mover PRO licenses be activated in some of your WordPress Multisite subsites?](https://codexonics.com/prime_mover/prime-mover/how-to-activate-prime-mover-pro-licenses-in-some-of-your-wordpress-multisite/)
+
+[Prime Mover PRO: How do you deactivate licenses inside your Freemius account?](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/)
+
+[How do I generate an invoice under the company name (after purchase)?](https://codexonics.com/prime_mover/prime-mover/how-to-generate-an-invoice-under-the-company-name-after-purchase/)
+
+[Getting Started with Pro Version](https://codexonics.com/prime_mover/getting-started-with-pro-version/)
+
+[How to upgrade your existing PRO plan to a higher plan?](https://codexonics.com/prime_mover/prime-mover/how-to-upgrade-your-existing-pro-plan-to-higher-plan/)
+
+[How do you enable encryption support in the Prime Mover Pro version?](https://codexonics.com/prime_mover/how-to-enable-encryption-support-in-prime-mover/)
+
+[Configure Basic Settings in Prime Mover Pro](https://codexonics.com/prime_mover/configure-basic-settings-in-prime-mover-pro/)
+
+[How to Add and Configure Authorization Keys?](https://codexonics.com/prime_mover/how-to-add-and-use-authorization-keys-in-migrations/)
+
+[How to restore backup packages using the new Prime Mover backup management (added in version 1.0.7)](https://codexonics.com/prime_mover/prime-mover/how-to-restore-backup-packages-using-the-new-prime-mover-backup-management-added-in-version-1-0-7/)
+
+[How to Export and Restore using the Remote URL feature](https://codexonics.com/prime_mover/how-to-export-and-restore-using-pro-version/)
+
+[Prime Mover Pro Custom Backup Directory](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-custom-backup-directory/)
+
+[How do you exclude plugins in Prime Mover Pro?](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/)
+
+[How do we exclude specific database tables from the Prime Mover export?](https://codexonics.com/prime_mover/prime-mover/how-do-we-exclude-database-tables-in-prime-mover-export/)
+
+[How do we exclude uploading media files in Prime Mover Pro?](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-upload-media-files-in-prime-mover-pro/)
+
+[How do you test Prime Mover Pro single-site license in WordPress Multisite?](https://codexonics.com/prime_mover/prime-mover/how-to-test-prime-mover-pro-single-site-license-in-wordpress-multisite/)
+
+[Prime Mover Google Drive Integration](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-google-drive-api-integration/)
+
+[Prime Mover Dropbox integration](https://codexonics.com/prime_mover/prime-mover/prime-mover-dropbox-integration/)
+
+[How do you back up and migrate a multisite main site in WordPress?](https://codexonics.com/prime_mover/prime-mover/how-to-backup-and-migrate-multisite-main-site-in-wordpress/)
+
+[How do you convert WordPress’s multisite main site into a single site installation?](https://codexonics.com/prime_mover/prime-mover/how-to-convert-wordpress-multisite-main-site-into-a-single-site-installation/)
+
+[Solution: 403 Forbidden error after Prime Mover purchase/upgrade](https://codexonics.com/prime_mover/prime-mover/solution-403-forbidden-error-after-prime-mover-purchase-upgrade/)
+
+[How do I activate the license across all subsites in a multisite network?](https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/how-do-i-activate-the-license-across-all-subsites-in-a-multisite-network/)
+
+## Automatic backup PRO feature documentation
+
+[How do you enable automatic backup for WordPress multisite and single-site?](https://codexonics.com/prime_mover/prime-mover/how-to-enable-automatic-backup-for-wordpress-multisite-and-single-site/)
+
+[How do you add custom backup schedules for automatic backup?](https://codexonics.com/prime_mover/prime-mover/how-to-add-custom-backup-schedules-for-automatic-backup/)
+
+[How do you use an external cron service to trigger automatic backups?](https://codexonics.com/prime_mover/prime-mover/how-to-use-external-cron-service-to-trigger-automatic-backups/)
+
+[How do you use your hosting cron to trigger automatic backups?](https://codexonics.com/prime_mover/prime-mover/how-to-use-your-hosting-cron-to-trigger-automatic-backups/)
+
+[How do you restart the scheduled backup process?](https://codexonics.com/prime_mover/prime-mover/how-to-restart-scheduled-backup-process/)
+
+[Automatic Backup – Frequently Asked Questions](https://codexonics.com/prime_mover/prime-mover/automatic-backup-frequently-asked-questions/)
+
+Was this article helpful?YesNo
+
+---
+
+## How do I activate the license across all subsites in a multisite network?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/how-do-i-activate-the-license-across-all-subsites-in-a-multisite-network/](https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/how-do-i-activate-the-license-across-all-subsites-in-a-multisite-network/)
+
+## Scope
+
+Applies to: **This tutorial only applies if you have an unlimited license plan for your multisite network**.
+
+## Objective
+
+The goal of this tutorial is to activate the license for subsites in your multisite network successfully. Any new sites added will have a license automatically activated, so you won’t need to activate a license for each new site.
+
+## Step 1 – Make sure you are using the latest Prime Mover PRO version
+
+Using the latest PRO version ensures you always have the most stable version of the Prime Mover plugin across your multisite. You can always download the latest PRO version [inside your Freemius account](https://customers.freemius.com/downloads).
+
+In addition, the latest PRO version always ships with the latest Freemius licensing library, so it includes all bug and performance fixes related to license activation across your multisites.
+
+## Step 2 – Network deactivate Prime Mover PRO and delete all FREE versions
+
+As a prerequisite for the next step, you need to network deactivate Prime Mover PRO.  If you have the Prime Mover FREE version installed in your /wp-content/plugins/, it is recommended to delete it so you have only the PRO version in your plugins directory.  Deleting the FREE version ensures it cannot be accidentally network-activated later. The FREE version does not have a license activation screen, so you cannot enter a license key.
+
+## Step 3 – Reset Freemius data to fix possible errors
+
+Some of your subsites might not have a license activated because of other plugins or an incomplete installation, which can corrupt their Freemius data. Please follow these [steps to reset Freemius data](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/#resetfreemius).
+
+Note that you need to network-deactivate the Prime Mover PRO plugin during the reset process.[
+
+## Step 4 – Set server timeout as high as possible for large multisites
+
+If your multisite network has many subsites (e.g., more than 50 or hundreds, even thousands), it is recommended to set your server timeout as high as possible to avoid timeouts when activating the license for all subsites.
+
+The timeout depends on the size of your site, but if you have thousands of sites, you can temporarily increase the timeout to about 60 minutes to be sure, then bring it back to the normal timeout once all sites have a license activated.
+
+There is a separate tutorial on this topic, which you can[read here for details](https://codexonics.com/prime_mover/prime-mover/i-got-export-fails-or-import-fails-error-can-you-try-increasing-web-server-timeout/#php-fpm).
+
+## Step 5 – Network activate Prime Mover PRO and enter the license key
+
+Now here comes the most important part: once all the above requirements are met, you can network activate Prime Mover PRO and enter the license key.
+
+Right after network activating the PRO version inside your multisite network admin, you should see this screen:
+
+You need to set two essential things in that dialog:
+
+1. **Your Prime Mover valid and active license key.**
+2. Make sure you checked “**Activate license on all sites in the network.**“
+
+After that, clickthe “Activate license” button and wait for the license to activate across all your subsites. This can take some time if your multisite is very large, but it should not have an issue if you already set the timeout to high settings in the previous steps.
+
+That’s it! It’s done – you can check if you have truly activated the PRO version on your site [using this tutorial](https://codexonics.com/prime_mover/prime-mover/how-do-we-know-if-the-site-has-a-prime-mover-pro-license-activated/). And when you add new sites, it will automatically activate the license on them, saving you time by avoiding per-site activation.
+
+*NOTE: In some Freemius libraries, Freemius limits network license activation to the first 1000-sites only to avoid hitting the timeout and corrupting the license activation data. If your site exceeds 1000 sites, you now need to manually activate the license on each of them. Please contact us so we can coordinate with the Freemius team to see if there is a way to mass-activate all sites if manual activation is not feasible.*
+
+Was this article helpful?YesNo
+
+---
+
+## Refresh page builder cache to fix missing images after migration
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/refresh-page-builder-cache-to-fix-missing-images-after-migration/](https://codexonics.com/prime_mover/prime-mover/refresh-page-builder-cache-to-fix-missing-images-after-migration/)
+
+This is a troubleshooting guide for when you notice missing images after migration. This is part of the [post-migration troubleshooting checks](https://codexonics.com/prime_mover/prime-mover/post-migration-troubleshooting-tips-and-advices/).
+
+The most common cause is outdated settings in your page builder data. Prime Mover plugin already handles the search and replacement of URLs from your source site to the target site. So as long as the URLs are not encoded in the database, they are automatically adjusted.
+
+However, some page builder plugins store these settings (containing the URLs) in an 
+```
+base64
+```
+
+ encoded format. Thus, the search-and-replace process cannot detect or adjust these URLs. This does not affect only the Prime Mover plugin, but also other popular search/replace plugins, including the *Better Search and Replace plugin by WP Engine*.
+
+Given the number of page builder plugins available for WordPress, it is impossible to provide a general solution for all of them. Instead, this guide shows you where to make this adjustment after migration so that your page builder can display the updated settings.
+
+If you don’t see your page builder listed here, check your page builder’s documentation or contact their technical support for instructions on clearing the cache after migration.
+
+## Elementor plugin
+
+Due to the plugin’s popularity, Prime Mover auto-adjusts this internally during migration. However, there are instances where the adjustment code won’t run because it depends on your environment.
+
+To refresh the Elementor page builder cache after migration, please [follow this documentation](https://elementor.com/help/regenerate-css-data/).
+
+## Brizy plugin
+
+If you notice missing images after migration and your site is using the Brizy plugin, then you need to follow the steps below:
+
+- Log in to the site as an administrator after migration.
+- Go to 
+```
+Brizy -> Tools
+```
+
+.
+- You should see the replace URL tool. It looks like this:
+
+- In the “*Update Site Address (URL)*“, enter the source site (where your site originated, the old site) to your new site (the migrated target site). And then press the “*Replace URL*” button.
+
+For example:
+
+Source site: **https://www.mysourcesite.tld**
+
+Target site: **https://www.mytargetsite.tld**
+
+Brizy plugin stores URL data inside the database in 
+```
+Base64
+```
+
+ Encoded format – so the only way to refresh and update the URLs after migration is to use this search and replace tool provided by the Brizy plugin itself.
+
+## Beaver Builder plugin
+
+Another popular page builder is Beaver Builder, for which you can find the cache[-clearing instructions](https://docs.wpbeaverbuilder.com/beaver-builder/2.9/troubleshooting/debugging/cache-clearing-tool)[here](https://docs.wpbeaverbuilder.com/beaver-builder/2.9/troubleshooting/debugging/cache-clearing-tool).
+
+## Your page builder is not listed here?
+
+Pressable has a [nice tutorial on clearing the cache](https://pressable.com/knowledgebase/how-to-flush-the-cache-in-popular-wordpress-page-builders/) of the most popular page builder solutions in WordPress. If your plugin is not listed here, you can go to that plugin documentation guide and search for the following keywords:
+
+- Clear cache
+- Regenerate assets
+- Purge cache
+
+That’s it!
+
+*Last updated: January 14, 2026*
+
+Was this article helpful?YesNo
+
+---
+
+## Runtime error: Mismatch source and target database charset error
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/runtime-error-mismatch-source-and-target-database-charset-error/](https://codexonics.com/prime_mover/prime-mover/runtime-error-mismatch-source-and-target-database-charset-error/)
+
+### Symptoms
+
+When you migrate a site using Prime Mover 1.7.0+  you might get this runtime error during the restore/import process. The restore/import process is stopped with this runtime error.
+
+Actual error message is something like:
+
+```
+Mismatch source and target database charset error. Source site charset [source-db-charset] cannot be restored to this database charset using [target-db-charset]
+```
+
+### Causes
+
+The source site database character set is different from the target site database character set. Since migration requires restoring the source database data to target database – the source and target database character set needs to be perfectly compatible or the same.
+
+For example, if your database character set is UTF-8 (
+```
+utf8mb4
+```
+
+) , the target database needs to be in UTF-8 (
+```
+utf8mb4)
+```
+
+ also. Or if you are using non-UTF8 charset such as 
+```
+greek
+```
+
+ charset – the target site needs to be in 
+```
+greek
+```
+
+ charset also.
+
+Database character set is [configured in WordPress via wp-config.php](https://developer.wordpress.org/apis/wp-config-php/#database-character-set) when you first install the site.
+
+Please refer below for the solutions for this error. Take note these solutions can work for both single-site and multisite.
+
+### Solution #1: Create a fresh WordPress install to match the source site dB charset.
+
+In this solution you can create a fresh WP install to match the source site database charset. This makes the target site dB charset to be same as the source site so you can restore the package. Detailed procedure of this solution are as follows:
+
+1. Open your**target site**wp-config.php.
+2. Change charset to match your source site dB charset. For example if the source site dB charset is
+```
+latin1
+```
+
+ then the DB_CHARSET should be set to:  
+```
+define( 'DB_CHARSET', 'latin1' );
+```
+3. Install [WordPress Reset](https://wordpress.org/plugins/advanced-wp-reset/) to easily reset your WordPress database back to fresh install state. This will create a new WordPress database based on new target charset (e.g. 
+```
+latin1
+```
+
+).
+4. Login to your freshly installed target WordPress site and [confirm that your target dB charset is now the same with source site dB charset](https://codexonics.com/prime_mover/prime-mover/runtime-error-mismatch-source-and-target-database-charset-error/#getdbcharset)after WordPress reset. For example if the source site is 
+```
+latin1
+```
+
+, the target site should also be 
+```
+latin1
+```
+
+.
+5. [OPTIONAL] If the target DB charset is still not correct – delete the WordPress database from your MySQL server and re-install again WordPress from scratch.
+6. Finally now that the source and target site dB charset are the same – please install and activate latest Prime Mover version on your target.
+7. You can [proceed to restore the package](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/#packagemanager). There should be no more runtime errors related to dB charset.
+
+### Solution #2:
+
+- **You cannot create a fresh WordPress install on target site.  (e.g. if site is already existing and working)**
+- **The source site database character set is non-UTF-8** **(e.g. tis620, greek, hebrew, etc.)**
+- **The target site database charset is UTF8 (utf8mb4)**.
+
+This solution requires PRO version:
+
+1. [Upgrade to Prime Mover PRO version](https://codexonics.com/prime_mover/prime-mover/pricing/) in your source site.
+2. Make sure the source site database character set is *non-UTF8*  ([please read dedicated FAQ section on what is non-UTF8 dB charset](#nonutf8))
+3. Now that license is activated, launch export dialog and check “*Migrate to UTF-8 (utf8mb4) database character set.*“
+
+1. When “*Migrate to UTF-8 database character set*” checkbox is checked – it will force Prime Mover to export the database using utf8mb4 charset.
+2. You can then migrate this package to your target site that is using utf8mb4 database character set.
+
+### Solution #3:
+
+- **You cannot create a fresh WordPress install on target site. (e.g. if site is already existing and working)**
+- **The source site database character set is UTF-8  (e.g. utf8mb4)**
+- **The target site database charset is non-UTF8. (e.g. hebrew, greek, tis620, etc.)**
+
+This solution also requires PRO version:
+
+1. [Upgrade to Prime Mover PRO version](https://codexonics.com/prime_mover/prime-mover/pricing/) in your source site.
+2. Get exactly the target site database charset value being used. Please [refer to this FAQ details](#getdbcharset) on getting this value.
+3. In your source site,  add this constant to your wp-config.php to allow exporting database to a non-UTF8 charset:
+
+```
+define('PRIME_MOVER_CUSTOM_TARGET_CHARSET', 'YOURTARGET-CHARSET');
+```
+
+Replace 
+```
+YOURTARGET-CHARSET
+```
+
+ with the correct target dB charset value. For example if your target database charset value is 
+```
+hebrew
+```
+
+, the constant should look like this:
+
+```
+define('PRIME_MOVER_CUSTOM_TARGET_CHARSET', 'hebrew');
+```
+
+**Important**:*This constant should only be set if the source dB charset is already UTF-8 (utf8mb4) but the target dB charset is non-UTF8.*
+
+1. Now that the constant is added, launch export dialog and you should see an option to export the dB using hebrew charset (based on the above example):
+
+1. When “*Migrate to hebrew database character set*” checkbox is checked – it will force Prime Mover to export the database using 
+```
+hebrew
+```
+
+ charset.
+2. You can then migrate this package to your target site that is using 
+```
+hebrew
+```
+
+ database character set.
+
+### FAQ: How to get the correct database character set used by your WordPress site?
+
+1. Login to your source site (where you have created the package).
+2. Make sure latest version of Prime Mover plugin is installed.
+3. Go to *Prime Mover -> Advanced*.
+4. Scroll down to the bottom until you see “*Export site info*“.
+5. Click “*Export site info*” button.
+6. Open the site info log.
+7. Search for **[database_charset]**
+8. This value is your source site database character set. For example:
+
+In the above screenshot, the database charset value is 
+```
+utf8mb4
+```
+
+.
+### FAQ: What are UTF8 and non-UTF8 database character sets?
+
+UTF8 database character set today in modern WordPress installation is using 
+```
+utf8mb4
+```
+
+ as default. The older UTF8 database charset are *utf8mb3* or the *utf8*. It is not recommended to use old database UTF8 character sets because they are already deprecated.
+
+Non-UTF8 database character sets does not have 
+```
+utf
+```
+
+ in their names. For example:
+
+- ```
+tis620
+```
+- ```
+latin1
+```
+- ```
+greek
+```
+- ```
+koi8r
+```
+- ```
+hebrew
+```
+
+And many others – [complete list of supported database characters can found here](https://dev.mysql.com/doc/refman/5.6/en/charset-charsets.html).
+
+### FAQ: What about setting dB collations?
+
+When Prime Mover exports the site on a specific DB charset – it should be migrated to a target site on that same character set also. And it uses the default collation associated with that charset. It is why Prime Mover will not ask for this value in export settings (only it’s character set).
+
+After restoring the site and depending on the character set – WordPress chooses the best collation for that specific character set. (e.g. UTF-8) after restoring the site. This depends also on your MySQL version, etc.
+
+This is also the reason why the dB collation is empty by default in wp-config.php. However when you first install a site – if there is really a need to provide a specific collation – please do it so in the wp-config.php file (before creating a fresh WordPress install).
+
+### Still getting runtime error?
+
+If you are still getting runtime errors even after following the above steps – [please generate logs](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/) and please [provide them to technical support](https://codexonics.com/contact/). Thank you!
+
+Was this article helpful?YesNo
+
+---
+
+## Runtime error: Theme files missing for export. Check if you have themes activated.
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/runtime-error-theme-files-missing-for-export-check-if-you-have-themes-activated/](https://codexonics.com/prime_mover/prime-mover/runtime-error-theme-files-missing-for-export-check-if-you-have-themes-activated/)
+
+## Symptoms
+
+When exporting a site – you will get a runtime error with a message:
+
+```
+Export result error found:Theme files missing for export. Check if you have themes activated.
+```
+
+## Troubleshooting Tips
+
+When exporting the site – theme files are not found (probably theme is deleted) and error is returned to informed the user that there is a problem with the site.
+
+Below are some tips to troubleshoot this error before you will try another export:
+
+- Visit the site (e.g. *yoursite.tld*) that you want the export – check the front end. Does it look correct? Does it use the correct theme? If the front end appears broken, please make sure to activate the correct theme.
+
+- Visit the site WP admin (*yoursite.tld/wp-admin/*) – check the activated theme for the subsite. Is it correct? Is it there? If the theme appears missing – please make sure to activate the correct theme.
+
+- Go inside *yoursite.tld/wp-admin/* and go to **Tools -> SiteHealth -> Info**. Click “*Copy Site info to clipboard*“. Paste it to text editor (e.g., notepad) and save.
+
+- Open the site info details (which you have copied). Check that 
+```
+multisite = true
+```
+
+ a. If multisite is false – this means that site is actually a single site and not a subsite. If this is the case – you should install Prime Mover in that single site and then do another export.
+
+- Lastly, check if 
+```
+wp-active-theme
+```
+
+ value in your site health data points to theme files that exists in your theme’s directory. If its missing or deleted – then that’s the reason of the error. Please put it back and re-activate the theme.
+
+## Still having issues?
+
+Please [let us know](https://codexonics.com/contact/) so we can troubleshoot it as well.
+
+Was this article helpful?YesNo
+
+---
+
+## Runtime error: Uncaught TypeError: urldecode(): Argument #1 ($string) must be of type string, array given
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/runtime-error-uncaught-typeerror-urldecode-argument-1-string-must-be-of-type-string-array-given/](https://codexonics.com/prime_mover/prime-mover/runtime-error-uncaught-typeerror-urldecode-argument-1-string-must-be-of-type-string-array-given/)
+
+### Symptoms
+
+You might get this runtime error when exporting the site with Prime Mover using PHP 8.0+
+
+### Causes
+
+Some third party code (*not yet fully identifiable*)  alter the way cookies are being handled – instead of a string – the cookies become an array type.  The tricky thing is that this is not consistently reproducible – even though the test site uses the same plugins/themes and PHP version (8.0). The issue is no longer reproducible.
+
+This will cause fatal error only when you are using PHP 8.0+
+
+### Solution
+
+The only working solution for this issue is to **downgrade PHP of the source site to PHP 7.4**. Once downgraded – confirm that you are really using PHP 7.4.
+
+Once confirmed that the PHP version is now downgraded to PHP 7.4 – repeat the export process. There should be no more runtime errors.
+
+Once the export is completed – you can switch back again to PHP 8.0+.
+
+### Help us fix this error
+
+If you are able to reproduce this error on a test site where we can access  (not a production site) – then that would be awesome. Please [send us a ticket here with the login access to your test site](https://codexonics.com/contact/) where we can reproduce this issue.
+
+This would greatly help in finally closing this issue. Thank you!
+
+Was this article helpful?YesNo
+
+---
+
+## Solution: 403 Forbidden error after Prime Mover purchase / upgrade
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/solution-403-forbidden-error-after-prime-mover-purchase-upgrade/](https://codexonics.com/prime_mover/prime-mover/solution-403-forbidden-error-after-prime-mover-purchase-upgrade/)
+
+## Background
+
+When you get a 403 forbidden error after upgrade to Prime Mover PRO version – this is because of 
+```
+ModSecurity module
+```
+
+**enabled in your site. This is a security module that is used by hosting companies to protect your site. However – this event is a **false positive**.
+
+Good news – the solution is very easy.
+
+## Step 1 – Navigate to /wp-admin or /wp-admin/network page
+
+Usually after purchase – you will be redirected back to your site admin page via a URL that looks like this:
+
+```
+https://yoursite.tld/wp-admin/admin.php?fs_action=prime-mover_activate_new&plugin_id=1234&page=migration-panel-settings-account&_wpnonce=12345
+```
+
+This is where the 
+```
+Modsecurity
+```
+
+ returns a 403 forbidden status. The solution is change the address of the URL of your address bar to simply go to /wp-admin/ page, e.g
+
+```
+https://yoursite.tld/wp-admin/
+```
+
+If your site is a multisite – simply go to network admin dashboard:
+
+```
+https://yoursite.tld/wp-admin/network/
+```
+
+This will load the index page of your WordPress admin dashboard (for single site) and network admin dashboard (if multisite). You should no longer see 403 forbidden errors or other errors on this page.
+
+## Step 2 – Deactivate Prime Mover FREE version
+
+After upgrading from Prime Mover FREE to PRO, the FREE version is still activated in your site. You will need to deactivate this plugin. Simply go to plugins page and deactivate it.
+
+In multisite – you will need to network deactivate the FREE version.
+
+## Step 3 – Uninstall and delete Prime Mover FREE version
+
+After deactivating the plugin – uninstall it by clicking the red delete link of the Prime Mover plugin in your plugin page:
+
+## Step 4 – Download the latest Prime Mover PRO
+
+- Login to your [Freemius buyer account](https://users.freemius.com/login).
+- Go to downloads tab and download latest Prime Mover PRO zip to your Desktop.
+- Don’t unzip because you will need this to be installed to your site.
+
+## Step 5 – Install and activate Prime Mover PRO
+
+- Login to your WordPress site.
+- Install the plugin by uploading the zip in *WordPress admin -> Plugins* -> *Add New*or *WordPress Network admin -> Plugins* (if multisite) -> *Add New*
+- Once installed – activate the plugin (network activate if on multisite).
+- You should be able to see the license key form page.
+
+## Step 6 – Enter your license key
+
+Finally you will need to enter your license key. You can find this in your Freemius account -> License section. Once entered click activate license button.
+
+If you are unable to activate license in because it says that the license key is already utilized – please do the following:
+
+- [Deactivate license key](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/) inside your Freemius account.
+- Activate license again inside your WordPress site. If you are activating license in a multisite for only some sites – [please read this tutorial](https://codexonics.com/prime_mover/prime-mover/how-to-activate-prime-mover-pro-licenses-in-some-of-your-wordpress-multisite/).
+
+## Step 7 – Congratulations – PRO features are now activated!
+
+You will know the PRO features are activated when you can now start using them in the Settings page or you will always see the Prime Mover PRO label in your plugins dashboard.
+
+For example – you will see “*Prime Mover PRO Control Panel*” instead of “*Prime Mover Control Panel*“.
+
+## Do you have issues activating licenses?
+
+Please [contact technical support](https://codexonics.com/contact/) and provide us the details.
+
+Was this article helpful?YesNo
+
+---
+
+## “Sorry, you are not allowed to access this page.” when downloading Prime Mover PRO
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/sorry-you-are-not-allowed-to-access-this-page-when-downloading-prime-mover-pro/](https://codexonics.com/prime_mover/prime-mover/sorry-you-are-not-allowed-to-access-this-page-when-downloading-prime-mover-pro/)
+
+## Symptoms
+
+- After purchasing and upgrading to Prime Mover PRO – you will be redirected back to the Prime Mover PRO account page in your WordPress admin.
+- On the Prime Mover account page, click the button or link *“Download PRO version*” or “*Download the latest PRO version*.”
+- You will be redirected to an error page with message “**Sorry, you are not allowed to access this page**“.
+
+## Cause
+
+After purchase – your Freemius account or purchase is not fully validated or verified.
+
+## Solution
+
+- After purchase – you should receive an email in your inbox with the subject “Thanks for upgrading.”
+- This email contains all of your account upgrade information.
+- To download the Prime Mover PRO, click the link in the email “**Download the plugin’s PRO version**.” Please see the screenshot below:
+
+- Install and activate the Prime Mover PRO on your target site.
+- That’s it.
+
+If you cannot download the PRO version zip inside your email for some reason (e.g., blocked by your email client, etc.):
+
+- [Login to your Freemius account](https://users.freemius.com/login). After purchase or upgrade, you can get your Freemius account credentials in the email.
+- Click the “Downloads” section on your Freemius account.
+- From there – you can download the latest PRO version. That’s it.
+
+## Getting your License Key
+
+- [Login to your Freemius account](https://users.freemius.com/login). After purchase or upgrade, you can get your Freemius account credentials in the email.
+- Click the “Licenses” section on the Freemius account page.
+- From there, you can get your license key, which you can paste to your target site to activate Prime Mover PRO features.
+
+## If it says – License is already utilized.
+
+This is usually caused when the license key is activated in your Freemius account but has not yet been used on your target site. You must deactivate the license inside your Freemius account before activating it on your site.
+
+- [Login to your Freemius account](https://users.freemius.com/login). After purchase or upgrade, you can get your Freemius account credentials in the email.
+- Follow this procedure to [deactivate your license first](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/).
+- You can activate the license on your target site once it is activated. If your target site is a multisite and you want to activate it only for your main site or subsite, please[read this activation tutorial.](https://codexonics.com/prime_mover/prime-mover/how-to-activate-prime-mover-pro-licenses-in-some-of-your-wordpress-multisite/)
+
+## If you still have PHP or fatal errors when activating licenses
+
+If you still cannot activate the license key or have PHP errors, [please reset it](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/) before re-activating it for your target site.
+
+## Still, have PRO activating issues?
+
+Please [get in touch with tech support](https://codexonics.com/contact/)[and include all details regarding your account](https://codexonics.com/contact/).
+
+*Last updated: January 11, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Best practices when migrating large sites with Prime Mover Plugin
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/tips-and-techniques-in-migrating-large-sites-with-prime-mover-plugin/](https://codexonics.com/prime_mover/prime-mover/tips-and-techniques-in-migrating-large-sites-with-prime-mover-plugin/)
+
+## General Requirements
+
+With Prime Mover, it includes support where you can export and import large sites.
+
+If you think you have a large site, please follow these recommendations:
+
+### Upgrade to a fast hosting !
+
+A world of difference if your site is hosted in a cheap hosting solution compared to a fast , more expensive hosting solutions. The amount of time save? Massive. For example in a fast host, you can get the export and import process done within 3 minutes compared to waiting hours in cheap hosting! (And that’s importing the same site or package size only hosting is changed).
+
+Large sites should be on a fast hosting to matched up with the number of files and database sizes to be migrated.
+
+Upgrading to fast hosting does not mean expensive hosting. There are tons of fast hosting today as compared before where the price is competitive and reasonable.
+
+Stay away from shared hosting solutions if you can and adopt the modern VPS hosting solutions. This way, you have more dedicated resources to your site that you can use to export and import sites.
+
+### Linux hosting appears to perform better than Windows (IIS host)
+
+Prime Mover is designed to work platform independent. So it will work with Microsoft IIS servers using PHP/WordPress. However in our experience, [performance is not the same as it was in Linux host](https://support.plesk.com/hc/en-us/articles/115001479065-How-to-optimize-PHP-perfomance-on-Windows). The reason is that Prime Mover uses tar ball archiving which is not native to Windows OS. This tar ball saves file attributes like permissions ,etc, which is handled more efficiently in Linux than in Windows. Also copying, file deleting, file handling operations appears faster in Linux with PHP.
+
+If you have a choice between Linux and Windows, choose Linux. Otherwise if you have no choice but use Microsoft IIS, Prime Mover plugin and all it’s features would still work.
+
+### Upgrade your server PHP version to the latest version
+
+Prime Mover supports latest version PHP 7.4 (*latest as of May 2020*). If you can upgrade PHP version, please do so and this is also recommended by WordPress core.
+
+The latest versions of PHP should always be faster, memory efficient, stable and secure compared to older PHP versions.
+
+### Always use latest Prime Mover version
+
+The latest version of the plugin should always be better than the previous version. It includes stability fixes, performance fixes and other new features that are not found in the old version.
+
+And always use the same Prime Mover version in both source and target site.
+
+### Upload package using your favorite FTP to Prime Mover export directory to restore it
+
+Starting version 1.1.3, it is possible to copy the package manually to Prime Mover export directory which you can see in **Prime Mover -> Packages**. This will bypass long browser uploading which is slower than FTP client.
+
+You can also use your hosting file manager upload client to do this. You can use SSH or SCP via terminal to fetch files remotely if you know how to do this.
+
+For example, this is your target site Prime Mover export directory: 
+```
+/home/mytestsite/wp-content/uploads/prime-mover-export-files/1/
+```
+
+You can upload or fetch the Prime Mover package to this path either via FTP, SCP or any other client (such as your hosting built-in file manager). Once the package is inside this path, you can refresh packages in the Prime Mover -> Packages and you should see the package and easily restore it.
+
+There is a [detailed tutorial on how to restore packages using this technique](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/).
+
+### Upgrade to Prime Mover Pro version
+
+The last recommendation would be to upgrade to Prime Mover Pro version. It includes so many features that can support your large site backup and migration. For example, you can restore within your site server than using the default upload. You can also fetch large packages directly from the source server to your target site server.
+
+It also includes settings you can tweak to maximize compatibility with your server.
+
+### Troubleshooting Problems
+
+In case you run into issues, Prime Mover has many tools that shows problems and potential issues.
+
+- The default migration log is found in 
+```
+wp-content/uploads/prime-mover-export-files/
+```
+
+. Find log files with file names like 
+```
+***.migration.log
+```
+
+.
+- If you are on a Pro versions, you can download log right immediately you see the problem by going to *Prime Mover -> Advanced -> Download Log File*. This log shows the details of the migration / backup process and should reveal issues to us.
+- Also with Pro version, you can also download the server info details in*Prime Mover -> Advanced -> Export site info*. This log shows your site server info so we will know if something is incompatible with your server with the plugin. If you are on a free version, use the default WordPress site health check or just the output of 
+```
+phpinfo()
+```
+
+ will do.
+
+Now please share these logs to us by contacting directly in WordPress admin (Prime Mover 1.1.1 + ) in *Prime Mover -> Contact Us*.
+
+You can also contact us via this [contact page](https://codexonics.com/contact/).
+
+### Recommended workflow
+
+Prime Mover supports four export modes:
+
+- Export database only
+- Export database + media files
+- Export debugging package.
+- Complete export mode.
+
+If you are cloning a big site for the first time, you should use complete export mode to clone everything (media, database and plugins/themes).
+
+And then restore it to your target site.
+
+Once the site is cloned, and you want to refresh the site to your target site. You don’t need the complete export mode if the plugins and media files are the same. You simply need to export database and restore database to your target site. This way the target site is refreshed with the source site changes.
+
+If the source site only has database and images being updated, you can export database + media files only. This way , you don’t need to restore plugins in your target since its the same.
+
+As of *Prime Mover 1.1.1*, it does not yet support incremental image migration (meaning it will only import new images instead of migrating all images again). This will be added to our to-do list.
+
+## Available strategies on moving sites
+
+If complete package is not possible due to very large sizes that your server cannot handle – you can try the following strategies below:
+
+#### Solution #1:  Migrate database only. Manually copy all uploads, plugins and themes.
+
+*Detailed Explanation*: Prime Mover handles auto-replacement of URLs, paths ,etc. So if your site is very large, most likely you have a giant uploads directory or using too many plugins. What you can do is to export database only.
+
+And then manually copy all plugins and media directory to the target site. You can do this quite easily using 
+```
+scp
+```
+
+ or 
+```
+sftp
+```
+
+ or even 
+```
+rsync
+```
+
+. Make sure to copy the media directory to correct paths. If you are migrating from single site to single site, it would be like 
+```
+/sourcesite/wp-content/uploads/
+```
+
+ to 
+```
+/targetsite/wp-content/uploads
+```
+
+.
+
+Or if you migrate from single site to multisite, it will be like 
+```
+/sourcesite/wp-content/uploads/
+```
+
+ to 
+```
+/targetmultisite/wp-content/uploads/sites/7/
+```
+
+ (Assuming the sub-site blog ID is 7.)
+
+Just like that and vice versa.
+
+[Please read here for details on this tip](https://codexonics.com/prime_mover/prime-mover/how-to-migrate-very-large-wordpress-sites-by-parts/).
+
+#### Solution #2: [PRO VERSION USERS ONLY] Exclude media directory and generate full / complete export mode.
+
+*Detailed Explanation*: With this solution, you need PRO version. The technique is to [exclude all media files using this feature.](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-upload-media-files-in-prime-mover-pro/)
+
+This works especially if your uploads directory is too big to migrate using Prime Mover (you will time out error which you don’t want to fix).
+
+In this solution, a complete package is generated by Prime Mover which you can [migrate using remote URL feature](https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/). It’s a complete package as it includes databases and plugins/themes. There are no images on the package but on all images will be searched / replaced automatically during site restoration. As if the images were on your target site uploads directory.
+
+After you completely restore the complete package with excluded media. You can then proceed to manually copy only the uploads files from the source site to target site using SFTP,  SCP ,etc. Since the image paths and URL’s are already replaced at target site during migration restore, the images should be resolved correctly.
+
+#### Solution #3: Migrate only database and media files.
+
+*Detailed Explanation*: This solution is helpful when you feel its redundant to move plugins and themes since its the same or very similar between the source and target site. Plugins and themes can be very heavy and could be one of the reasons of having a big package to migrate.
+
+This solution is supported both in the PRO and Free version. When migrating a package which does not include plugins and themes. Prime Mover checks for compatibility and needs your approval to proceed with the migration restore in case it founds some differences.
+
+#### Solution 4: [PRO VERSION USERS ONLY]  Upload the package to your WordPress root directory and use remote URL feature to restore it
+
+This solution is helpful if you want to migrate a very large site from your computer to a remote server location (e.g .your host). Prime Mover supports browser upload restoration (free and pro versions) but can be very slow depending on your Internet connection speed and your server limits (e.g. your server does not want to receive continuous upload requests).
+
+What you can do easily is just to upload that package using FTP to your WordPress root directory. Take note of the resulting path URL, e.g .
+```
+http://mysite.com/thisismypackage.wprime
+```
+
+Now you have the URL to the package location inside your server, you can then [migrate it using remote URL restore](https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/).
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: All posts and pages are 404 after migration except the homepage
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-all-post-and-pages-are-404-after-migration-except-homepage/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-all-post-and-pages-are-404-after-migration-except-homepage/)
+
+## Scope
+
+This troubleshooting guide applies only to the following environment having this specific issue:
+
+- Openlitespeed and Litespeed server.
+- Ubuntu 22.04+
+- The affected site is using Cloudflare
+- The site has successfully been migrated.
+- Your site uses the Litespeed Cache plugin.
+- The site uses custom permalinks, which are non-default WordPress permalinks.
+- The homepage is loading correctly.
+- The other pages have a 404 error message.
+
+## Step 1: Troubleshooting the problem
+
+Check if permalinks don’t cause the problem at first.
+
+- As an administrator, log in.
+- Go to *Settings -> Permalinks* and select Permalinks.
+- Don’t change anything; scroll to the bottom and click “*Save changes*.”
+- Check if the pages are still 404s. If the problem is still not fixed, move on to Step 2.
+
+## Step 2 – Pause Cloudflare implementation
+
+- Login to your Cloudflare account.
+- Click “*Overview*“.
+- Scroll down to the bottom and find “Advanced Actions.”
+- Click “*Pause Cloudflare*“.
+- Confirm by clicking the “*Pause*” button.
+- Now login to your site and make sure you have the Litespeed Cache WordPress plugin activated.
+- Purge all caches on your site using the LiteSpeed Cache plugin.
+- Once purged, wait for 5 to 10 minutes for the entire Cloudflare to be flushed from the system (depending on the size of your site).
+- Log out and clear your browser cache.
+- Check the pages affected with 404 – it should now be accessible and visible (200 OK status).
+
+## Cause of the issue
+
+This is a conflict between Cloudflare and LiteSpeed cache plugin, as mentioned by this Reddit user:
+
+> How to fix cloudflare and litespeed cache clashing? byu/Dapper_Run_2423 inWordPressThis is also confirmed in [Litespeed documentation itself](https://docs.litespeedtech.com/lscache/lscwp/thirdparty/#incompatible). This is unrelated to Prime Mover plugin migration or any migration.
+
+Last updated: November 30, 2024
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: ArchiveIOException – Failed to write to archive stream during Export
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-archiveioexception-failed-to-write-to-archive-stream-during-export/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-archiveioexception-failed-to-write-to-archive-stream-during-export/)
+
+## Symptoms
+
+During Prime Mover export – it generates a runtime error like this:
+
+```
+Uncaught Codexonics\PrimeMoverFramework\build\splitbrain\PHPArchive\ArchiveIOException: Failed to write to archive stream in /yourpath/wp-content/plugins/prime-mover/build/splitbrain/php-archive/src/Tar.php:713
+```
+
+The export then stops and unable to proceed. This is a troubleshooting guide for user to try all possible workarounds before contacting technical support to check your site.
+
+## Possible cause #1 – Disk is full
+
+When disk is full – PHP is unable to write to the disk anymore. Prime Mover cannot write anymore files during the export process thus it returns error. This is common issue if your site is large and you have insufficient disk space in your account.
+
+There is a tech support case before where a user is exporting a 25 GB site (its an internet radio website) but has this error. After investigation – it turns out lack of disk space is the problem. The user upgraded his disk space (via hosting account) and the issue is resolved.
+
+If you suspect insufficient disk size is the issue – please try doing the following:
+
+- Login to your hosting account.
+- Refresh all disk usage statistics (so it reflects latest values.)
+- Find out the disk usage. If its full or almost full – that’s the problem. Ideally you should provide adequate headroom for your export process to complete. For example if you have a 10 GB website but you are in a 15 GB hosting plan. This is insufficient since after export (it creates a 10 GB additional package + 10 GB existing disk usage (for your website files) which is 20 GB and now exceeds your 15 GB hosting plan. In this case – you might want to upgrade to 30 GB plan or higher.
+- If you are not sure of your disk usage – it is good to double check with your hosting support so you will always get correct and accurate disk usage values.
+
+Also – it’s recommended that you [check your Prime Mover package disk usage and delete unneeded files](https://codexonics.com/prime_mover/prime-mover/how-to-free-up-space-and-deleting-unneeded-files-and-backups/).
+
+## Possible cause #2 – PHP fatal errors
+
+To get a clearer view of the runtime error – it is good to check whether PHP generates fatal errors also when a runtime error occurred. This helps us isolate whether a conflicting process exists (e.g. third party plugin code / theme code or other PHP codes).
+
+Please enable WordPress debugging by adding these lines to your 
+```
+wp-config.php
+```
+
+:
+
+```
+// Enable WP_DEBUG mode
+define( 'WP_DEBUG', true );
+
+// Enable Debug logging to the /wp-content/debug.log file
+define( 'WP_DEBUG_LOG', true );
+
+// Disable display of errors and warnings
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 0 );
+```
+
+And then once WordPress debugging is enabled – run the export again until you will be able to reproduce the runtime error.
+
+This time check the error being logged at **/wp-content/debug.log**
+
+Check if the fatal error is familiar to you so you will know the workaround. For example – if it says disk usage exceeded issue ,etc. then it’s clear that’s the problem.
+
+**IMPORTANT**: *Please keep a copy of this debug.log so you can provide to the technical support if you still need technical assistance at the end of these troubleshooting steps.*
+
+## Possible cause #3 – File permission issues
+
+Double check that your */wp-content/plugins/*, */wp-content/themes/* and */wp-content/uploads/* directory as well as all its files are using correct permissions.
+
+If your hosting has features to reset file permissions, this is great as you can use this feature to make sure your files have correct file permissions.
+
+## Possible cause #4 – Invalid file names (too long or having invalid character)
+
+Sometimes your site has some invalid file names that cannot be added to a Linux tar archive. To double check if this is the case – enable detailed logs by adding this to your wp-config.php:
+
+```
+define('PRIME_MOVER_ENABLE_FILE_LOG', true);
+```
+
+This will generate detailed file logs and when runtime error occurs again – you can download the runtime error log and check which file has issues adding to the archive. Check if the file has unusual file names ,etc.
+
+If there are problematic files detected – the quickest workaround is to delete them so they will be included in the export package Make sure you backup these files manually (e.g. download a copy of that file to your Desktop) so you can easily restore this deleted files after your troubleshooting.
+
+Once you are done doing this step, remove this constant again in 
+```
+wp-config.php
+```
+
+:
+
+```
+define('PRIME_MOVER_ENABLE_FILE_LOG', true);
+```
+
+**IMPORTANT**:*Keep a copy of this detailed file export runtime error log so you can provide to the technical support if you still need technical assistance at the end of these troubleshooting steps.*
+
+## Possible cause #5 – Hosting security feature enabled
+
+Double check your hosting security panel if they have enabled tight security features that can interfere with your export. For example they might enable common hosting security solutions like *ModSecurity*, *Imunify360* *Pro active defense*, etc. You might want to temporarily disable these security features to see if it resolves the export issues.
+
+Please [double check if you Imunify360 enabled and try disabling it first](https://codexonics.com/prime_mover/prime-mover/troubleshooting-stalled-restore-or-export-guide/#imunify360) before running export or restore. You can re-enable them again once you are done with this troubleshooting step.
+
+## Possible cause #6 – Hosting resource limit exceeded
+
+Finally – If you are on a shared hosting plan and have very limited CPU/ RAM or disk resources – your host will silently terminate any running processes to avoid over usage in your account. This error will not be logged anywhere but only your hosting support knows this.
+
+If the above troubleshooting steps fail to detect the issue – double check with your web hosting support regarding your hosting resource usage. Your hosting support should tell you if there is issue with your usage or not. Temporarily you can ask them to remove this hosting limit or you can upgrade your hosting account to a higher plan if they advise you to do so.
+
+## Next step – contact Prime Mover technical support
+
+Finally – when the above troubleshooting steps fails and you are still unable to generate the export – please provide the following to technical support:
+
+- Zip all requested logs in your troubleshooting (e.g. your debug.log , updated file to file runtime error log, other logs if it exists).
+- Add relevant screenshots if it exists.
+- Upload these logs and screenshots to Google Drive or other platforms and make sure tech support can download these files via a link provided.
+- [*Optional but highly recommended*] WordPress access to your site  – please provide your WordPress site URL, username and password. It should have network admin access if this is a multisite.
+
+If you want a faster resolution on this issue – it would be great to provide your WordPress site login so tech support can immediately check your site for issues that is not detected with the above troubleshooting.
+
+Please send us the link to download your logs and WordPress access credentials to the [technical support contact form](https://codexonics.com/contact/). Once we received your logs, access, etc. – please give us time to analyze the issue so we can find a workaround that works for your site.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting Dropbox integration issues with Prime Mover
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-dropbox-integration-issues-with-prime-mover/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-dropbox-integration-issues-with-prime-mover/)
+
+## Background
+
+This short tutorial highlights common issues with Dropbox integration with the Prime Mover plugin. First, please note that Dropbox integration is a PRO feature. Before using this feature, make sure your site or subsite (if multisite) has a license activated.
+
+## Unable to save Dropbox token (Error or Critical Error)
+
+If you are unable to save a Dropbox token because it says unable to save due to WordPress or critical error – then you must ensure you have the 
+```
+cURL
+```
+
+ extension enabled in your PHP.
+
+You will know if you have a 
+```
+cURL
+```
+
+ extension by doing the following checks:
+
+- Go to *Prime Mover -> Advanced -> Export site info* -> Click the “Export site info” button.
+- Download the site information log to your Desktop.
+- Please open it and search for **curl_version**
+- If you can see a 
+```
+cURL
+```
+
+ version – then 
+```
+cURL
+```
+
+ It is now installed with PHP; you can save the Dropbox token. If you don’t see a curl version, then the cURL extension is not enabled; please consult your hosting tech support to enable it. Most servers or hosts have this extension enabled, so your hosting company should allow it.
+
+## Unable to save Dropbox token in Windows / IIS Servers
+
+This is a limitation of Windows servers. To get around this issue, it is recommended that you [try the solution in this tutorial first](https://stackoverflow.com/questions/28858351/php-ssl-certificate-error-unable-to-get-local-issuer-certificate).
+
+The most essential thing in the above fix is to add a PEM file to your PHP installation in Windows. It should be added to your php.ini with a writable/readable path in your Windows server (not in system folders where it’s not writable), for example:
+
+```
+curl.cainfo = "C:/Users/emerson/Desktop/WORK/CA-CERTIFICATE-DONT-DELETE/cacert.pem"openssl.cafile = "C:/Users/emerson/Desktop/WORK/CA-CERTIFICATE-DONT-DELETE/cacert.pem"
+```
+
+In addition – make sure the file name of the PEM file is **cacert.pem**
+
+Ensure that it’s correctly added to your php.ini, e.g., the topmost like this:
+
+Once the above changes are made:
+
+- Restart your Windows / IIS server.
+- Clear your browser cache and log in again.
+- Once logged in to your WordPress admin, resave the Dropbox token key, which should work.
+
+## Get tech support
+
+If you are still having issues with Dropbox integration, please [contact](https://codexonics.com/contact/)[our tech support](https://codexonics.com/contact/). We are happy to assist.
+
+*Last updated: November 30, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: Export process fails for site ID if using Cloudflare
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-export-process-fails-for-site-id-if-using-cloudflare/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-export-process-fails-for-site-id-if-using-cloudflare/)
+
+## Symptoms
+
+When exporting a site – the export looks stuck at around 9% or more. And after some time – it outputs an error message dialog something like:
+
+```
+Export process fails for site ID : {yourblogID}. Retry is attempted but still fails after 100 seconds.Server Error : Unknown error occurred, please try again.Error occurs while processing dumpDbForExport method.
+```
+
+This happens when your site uses Cloudflare services. Even if you increase the timeout inside your server or change any settings- there is nothing that can be fixed, and you still have the error. So, you will not be able to export successfully.
+
+In addition, if you check the browser console or click *Inspect -> Network*, you might be getting the Cloudflare 524 error response in AJAX requests. It looks like this error is also a timeout-related error from Cloudflare.
+
+## Solution
+
+The following are the recommended solutions:
+
+- Disable Cloudflare temporarily.
+- Add a new Cloudflare rule (under security -> WAF) to bypass any URL that contains **/wp-admin/admin-ajax** (see screenshot below).
+
+- Save the changes.
+- Make sure the new rules are implemented (review it).
+- Clear browser cache.
+- Repeat the export and see that it works.
+
+## Contact tech support
+
+If the above workarounds didn’t resolve your issue – please [send all relevant debugging logs](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/) to [tech support](https://codexonics.com/contact/).
+
+*Last updated: November 30, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting guide
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/)
+
+## Search
+
+Search
+## Index
+
+[Troubleshooting permission issues with the Prime Mover plugin](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/troubleshooting-permission-issues-with-prime-mover-plugin/)
+
+[Troubleshooting: yourpackage.wprime is not a valid migration package when using Hostinger Preview domain](https://codexonics.com/prime_mover/prime-mover/troubleshooting-yourpackage-wprime-is-not-a-valid-migration-package-when-using-hostinger-preview-domain/)
+
+[The uploaded file exceeds the upload_max_filesize directive in php.ini – unable to install or update plugin](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/the-uploaded-file-exceeds-the-upload_max_filesize-directive-in-php-ini-unable-to-install-or-update-plugin/)
+
+[Troubleshooting: Unable to activate Prime Mover in restricted mu-plugins directory](https://codexonics.com/prime_mover/prime-mover/troubleshooting-unable-to-activate-prime-mover-in-restricted-mu-plugins-directory/)
+
+[Troubleshooting: I have not received account-related emails since the purchase.](https://codexonics.com/prime_mover/prime-mover/troubleshooting-i-have-not-received-account-related-emails-since-the-purchase/)
+
+[Workaround – Unable to install theme or delete plugins after migration from multisite to single-site (standalone)](https://codexonics.com/prime_mover/prime-mover/workaround-unable-to-install-theme-or-delete-plugins-after-migration-from-multisite-to-single-site-standalone/)
+
+[Troubleshooting: “Unauthorized Download” error when using remote URL PRO feature?](https://codexonics.com/prime_mover/prime-mover/troubleshooting-unauthorized-download-error-when-using-remote-url-pro-feature/)
+
+[Troubleshooting: The site URL is not defined on this site. Please check your multisite settings](https://codexonics.com/prime_mover/prime-mover/troubleshooting-site-url-is-not-defined-in-this-site-please-check-your-multisite-settings/)
+
+[Help! My export and restore is very slow after updating to Prime Mover 1.9.5+](https://codexonics.com/prime_mover/prime-mover/help-my-export-and-restore-is-very-slow-after-updating-to-prime-mover-1-9-5/)
+
+[Troubleshooting: Unable to rename tables, please check that your database is not empty or these tables exist](https://codexonics.com/prime_mover/prime-mover/troubleshooting-unable-to-rename-tables-please-check-that-your-database-is-not-empty-or-these-tables-exists/)
+
+[Troubleshooting: Stalled restore or export guide](https://codexonics.com/prime_mover/prime-mover/troubleshooting-stalled-restore-or-export-guide/)
+
+[Troubleshooting: ArchiveIOException – Failed to write to archive stream during Export](https://codexonics.com/prime_mover/prime-mover/troubleshooting-archiveioexception-failed-to-write-to-archive-stream-during-export/)
+
+[Troubleshooting: No packages found](https://codexonics.com/prime_mover/prime-mover/troubleshooting-no-packages-found/)
+
+[How do you troubleshoot corrupted packages?](https://codexonics.com/prime_mover/prime-mover/corrupted-wprime-packages-troubleshooting/)
+
+[Export stuck at 0% – Troubleshooting guide](https://codexonics.com/prime_mover/prime-mover/export-stuck-at-0-troubleshooting-guide/)
+
+[Troubleshooting: mysqli_stmt_get_result() – The plugin cannot be activated if this function is missing](https://codexonics.com/prime_mover/prime-mover/troubleshooting-mysqli_stmt_get_result-plugin-cannot-be-activated-if-this-function-is-missing/)
+
+[How to uninstall the Prime Mover plugin?](https://codexonics.com/prime_mover/prime-mover/how-to-uninstall-prime-mover-plugin/)
+
+[Post-migration Troubleshooting: Tips and Advice](https://codexonics.com/prime_mover/prime-mover/post-migration-troubleshooting-tips-and-advices/)
+
+[Runtime error: Mismatch source and target database charset error](https://codexonics.com/prime_mover/prime-mover/runtime-error-mismatch-source-and-target-database-charset-error/)
+
+[Mismatch Import! Error – Troubleshooting and solutions](https://codexonics.com/prime_mover/prime-mover/mismatch-import-error-troubleshooting-and-solutions/)
+
+[How do you submit debug data to support?](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/)
+
+[PHP Fatal error: Uncaught Error: Call to a member function is_anonymous() on bool](https://codexonics.com/prime_mover/prime-mover/php-fatal-error-uncaught-error-call-to-a-member-function-is_anonymous-on-bool/)
+
+[Prime Mover Pro: Media files NOT encrypted when it should be](https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-media-files-not-encrypted-when-it-should-be/)
+
+[Zip failed! Some file paths exceed Windows MAX_PATH limit](https://codexonics.com/prime_mover/prime-mover/zip-failed-some-file-paths-exceed-windows-max_path-limit/)
+
+[How do you add default Prime Mover constants to the “mu-plugins” directory?](https://codexonics.com/prime_mover/prime-mover/how-to-add-default-prime-mover-constants-to-mu-plugins-directory/)
+
+[Import / Restoration Hang or Freeze Issue Troubleshooting](https://codexonics.com/prime_mover/prime-mover/import-restoration-hang-or-freeze-issue/)
+
+[I got an “Export fails” or “Import Fails” Error – Can you try increasing the web server timeout?](https://codexonics.com/prime_mover/prime-mover/i-got-export-fails-or-import-fails-error-can-you-try-increasing-web-server-timeout/)
+
+[cURL error 28: Connection timed out after 10001 milliseconds](https://codexonics.com/prime_mover/prime-mover/curl-error-28-connection-timed-out-after-10001-milliseconds-when-importing-prime-mover-package/)
+
+[FAQ – Troubleshoot Slow Uploads on Package restoration on Local / Remote](https://codexonics.com/prime_mover/prime-mover/faq-troubleshoot-slow-uploads-on-package-restoration-on-local-remote/)
+
+[Runtime error: Theme files missing for export. Check if you have themes activated](https://codexonics.com/prime_mover/prime-mover/runtime-error-theme-files-missing-for-export-check-if-you-have-themes-activated/)
+
+[Error: Your MySQL server max_allowed_packet size is insufficient](https://codexonics.com/prime_mover/prime-mover/error-your-mysql-server-max_allowed_packet-size-is-insufficient/)
+
+[Runtime error: Uncaught TypeError: urldecode(): Argument #1 ($string) must be of type string, array given](https://codexonics.com/prime_mover/prime-mover/runtime-error-uncaught-typeerror-urldecode-argument-1-string-must-be-of-type-string-array-given/)
+
+[Troubleshooting: Invalid Site Details Collection – Plugin activation error](https://codexonics.com/prime_mover/prime-mover/troubleshooting-invalid-site-details-collection-plugin-activation-error/)
+
+[Troubleshooting: Export process fails for site ID if using Cloudflare](https://codexonics.com/prime_mover/prime-mover/troubleshooting-export-process-fails-for-site-id-if-using-cloudflare/)
+
+[Help! I’m not able to login to my site due to insufficient disk space (after creating a backup)](https://codexonics.com/prime_mover/prime-mover/help-im-not-able-to-login-to-my-site-due-to-insufficient-disk-space-after-creating-backup/)
+
+[Troubleshooting Dropbox integration issues with Prime Mover](https://codexonics.com/prime_mover/prime-mover/troubleshooting-dropbox-integration-issues-with-prime-mover/)
+
+[How to update Prime Mover PRO to the latest version if you encounter an error?](https://codexonics.com/prime_mover/prime-mover/how-to-update-prime-mover-pro-to-the-latest-version-if-you-encounter-an-error/)
+
+[Troubleshooting: All posts and pages are 404 after migration except the homepage](https://codexonics.com/prime_mover/prime-mover/troubleshooting-all-post-and-pages-are-404-after-migration-except-homepage/)
+
+[Refresh the page builder cache to fix missing images after migration](https://codexonics.com/prime_mover/prime-mover/refresh-page-builder-cache-to-fix-missing-images-after-migration/)
+
+[Optimize Local WP in the Windows operating system for best performance](https://codexonics.com/prime_mover/prime-mover/optimize-local-wp-in-the-windows-operating-system-for-best-performance/)
+
+[Parallel Export and Import-Restore: Is it supported?](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/parallel-export-and-import-restore-is-it-supported/)
+
+Was this article helpful?YesNo
+
+---
+
+## Parallel Export and Import-Restore – is it supported?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/parallel-export-and-import-restore-is-it-supported/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/parallel-export-and-import-restore-is-it-supported/)
+
+## What is parallel export?
+
+Parallel export is the process of doing exports simultaneously in a multisite environment.
+
+## Does the Prime Mover plugin support parallel export in a multisite setup?
+
+Yes, the plugin is tested to work with parallel export. This means that in a multisite setting, you can export subsites simultaneously, and it should work fine.
+
+## What are the limitations of Parallel export?
+
+Parallel export is only limited by your server resources. Since exporting can consume RAM, CPU, and disk space, be careful when running parallel exports, as they will consume significant resources! Your site’s backend and frontend might become very slow due to heavy resource usage.
+
+## Do you recommend doing parallel export in multisite?
+
+Since Prime Mover 2.1.6+, parallel export is now fully supported in multisite, as long as you have sufficient server resources to support it. If you are on a shared host, it is recommended to do this conservatively, such as by running 3 simultaneous exports to prevent your server from overloading. Or at worst, if you already have an underperforming server, don’t do this at all!
+
+## What is a parallel import?
+
+Parallel import is the process of restoring packages simultaneously in a multisite environment.
+
+## Does the Prime Mover plugin support parallel import in a multisite setup?
+
+Yes, since Prime Mover 2.1.6+, the plugin is fully updated to support multisite parallel/concurrent or simultaneous imports. So you can restore several subsites simultaneously and save time. As with exporting, the only limitation is your server resources, such as disk space, RAM, or CPU. In our tests, the optimal number of sites to restore (at the same time) for a reasonable server is around 5. If your site server is underperforming or slow, please don’t do a parallel restore. You should only restore one site at a time.
+
+*Last updated: June 6, 2026*
+
+Was this article helpful?YesNo
+
+---
+
+## The uploaded file exceeds the upload_max_filesize directive in php.ini – unable to install or update plugin
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/the-uploaded-file-exceeds-the-upload_max_filesize-directive-in-php-ini-unable-to-install-or-update-plugin/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/the-uploaded-file-exceeds-the-upload_max_filesize-directive-in-php-ini-unable-to-install-or-update-plugin/)
+
+## Problem
+
+You are installing Prime Mover, either the FREE or PRO version, on your WordPress site. When you go to *Plugins -> Add Plugin -> Upload plugin,* you are not able to install the plugin because of this error:
+
+```
+The uploaded file exceeds the upload_max_filesize directive in php.ini.
+```
+
+## Solution
+
+The easiest solution without making changes to your php.ini or server is the following:
+
+- Log in as administrator or super admin if it’s multisite.
+- In your WordPress admin, go to *Plugins -> Add Plugin*. If this is multisite, go to *Network admin -> Plugins -> Add Plugin*.
+- Search the plugin: **Upload larger plugins.**
+
+- Click the “*Install now*” button to install the plugin and then activate it. If you are in a multisite, you need to network activate this plugin.
+- Once activated, go back again to *Plugins -> Add Plugin* -> *Upload plugin*.
+- Install Prime Mover FREE zip or Prime Mover PRO zip again.
+- It should work this time, and you should no longer see the error displayed.
+- Once installed, activate the Prime Mover plugin.
+- Once you have successfully activated the plugin, you no longer need “*Upload larger plugins*“; then you can safely deactivate it.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting permission issues with Prime Mover plugin
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/troubleshooting-permission-issues-with-prime-mover-plugin/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/troubleshooting-permission-issues-with-prime-mover-plugin/)
+
+## Key takeaways
+
+- Prime Mover plugin won’t activate if it detects permission issues.
+- You won’t be able to export your site or restore a package if permission issues are detected.
+- Correct permission issues are required for export and import because these processes need to:- Open and read the file contents (e.g., those exported from your site, such as the site database, media files, plugins, or themes).
+- Create a new file and write these contents to an archive or a directory.
+- Without the correct file permissions, it is impossible to complete the required processes above.
+
+This guide assumes you are using the latest version of the Prime Mover plugin – ideally starting **Prime Mover 2.1.2+**. If you are using an outdated version, please update to the latest version before using this guide.
+
+## Troubleshooting guide
+
+1. Activate or Network activate Prime Mover plugin (FREE or PRO version).
+2. If serious permission issues are detected, the plugin will **automatically deactivate** and return an error. For example, let’s assume the uploads directory is not writable:
+
+For the above error, you must first address the permission issues and ensure that WordPress and PHP have **read and write permissions** to the error path shown in the screenshot above. 
+```
+/home/emerson/sourcecode/testplatform/wp-content/uploads/
+```
+
+1. Once activated on a WordPress single site, permission issues can still occur. You will know this because you cannot export and import. Error messages are clear that this is the issue, e.g.
+
+In the above example screenshot, a permission issue is detected in this path:
+
+```
+/home/emerson/sourcecode/testplatform/wp-content/uploads/prime-mover-export-files/1/
+```
+
+Therefore, the export and import buttons are not available in *Tools -> Migration Tools* until the permission issue is resolved.
+
+This error is also visible in *Prime Mover -> Packages*. Prime Mover does not display the packages due to a permission issue, and you cannot create a new package.
+
+1. If you are network-activating Prime Mover in a multisite environment, permission handling is the same as in a single-site environment. In multisite, the subsite export and import buttons are unusable if a permission issue is detected in the assigned export folders. For example:
+
+In the screenshot above, in the *Sites -> Network admin* section of a multisite environment, the export and restore buttons for subsite blog ID 3 are disabled because a permission issue is detected.
+
+If you **mouse over the disabled button**, the error message displays the path with the permission issue. You need to fix the permissions affecting these paths so that you can export or restore.
+
+## Fixing guide
+
+Fixing the permission issues requires access to your server directories and files. It can be fixed in any of the following ways:
+
+- The easiest way is to use your shared hosting “fix file permission” tool, if available. For example, this is available in Hostinger, as shown below:
+
+- Another option is to use your SFTP file manager app, such as FileZilla, and then fix the permissions there. Every site has unique permission configurations, so it’s best to consult your web hosting provider for the recommended settings. In a WordPress hosting environment (in Linux), the most common is to use 755 for directories and 644 for files. And then make sure the owner has **read and write access** to those files/folders.
+
+Of course, advanced users (such as Linux administrators) can always use SSH and command-line tools to fix these issues.
+
+You will know that the issues are fixed when:
+
+1. Export and import/restore buttons appear and are usable(or clickable).
+2. You will see the package listed in the package manager.
+3. Prime Mover plugin is fully activated without errors.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: I have not received account-related emails since the purchase.
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-i-have-not-received-account-related-emails-since-the-purchase/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-i-have-not-received-account-related-emails-since-the-purchase/)
+
+## Description of the problem
+
+After an upgrade or purchase – Freemius sends the following account-related emails with the subjects:
+
+- “*Thank you for upgrading*.” – this email contains [initial login access to your Freemius account](https://users.freemius.com/login). Inside your account – it includes everything you need to start using the PRO version. You can download the PRO zip version and manage your license keys, emails, invoices, etc.
+- “*Your payment for your Prime Mover account was successfully processed.*” – this email shows details of your purchase and subscription.
+
+However, if the email you provided has some deliverability issues – you might not be able to receive these emails.  The most common reasons are that your email server is not working or you are using a non-existing email. It will also occur if your email server has an aggressive setting for blocking emails from other users.
+
+As a result, you cannot start using the PRO version. This is the troubleshooting guide for this problem.
+
+## Solution
+
+- Give it at most 8 hours after purchase to receive your emails. Sometimes, there is congestion in the email servers, which takes time for email to reach.  If Freemius email servers detect an initial issue, they will attempt to re-send within these hours.
+- After 8 hours, if you still haven’t received these emails, [contact us and report this issue](https://codexonics.com/contact/).
+- Please provide us with the email you used to make the purchase. We will use this to check the status updates in our system. To make it easier to find your account, you can send screenshots and include all details regarding your purchase (e.g., the sites where you need to use the license, your name, etc.).
+- Provide alternative emails you know will indeed work – (check the spelling and ensure it can receive emails from anyone); we will use them to change your account email to something that will work.
+- Once we receive your support request, we will check your details over our bounced email lists. If we can trace it – we will try emailing to check if it’s a confirmed issue. If it bounces again, we will use your alternative emails to see if it can be received.
+- Once we have validated that your alternative email works and that you reply (which means it’s working) – we will change your old non-working email to the new email address on your account.
+- Once confirmed that your account email has been changed, please [request to re-send](https://users.freemius.com/password/recover)[your account-related email](https://users.freemius.com/password/recover)to the newly working email address.
+- You should now be able to receive your Freemius account username and password.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: Invalid Site Details Collection – Plugin activation error
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-invalid-site-details-collection-plugin-activation-error/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-invalid-site-details-collection-plugin-activation-error/)
+
+## Symptoms
+
+When trying to activate Prime Mover plugin in a multisite – you will get this error:
+
+This is a Freemius SDK error and not specific to Prime Mover plugin.
+
+## Solution
+
+- Deactivate Prime Mover plugin.
+- [Reset Freemius data by installing Freemius Fixer plugin](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/).
+- After full complete reset – logout WordPress and clear your browser cache.
+- Check that the front end of your site works – no error.
+- Login again to your network admin. Make sure your network admin works and no errors found.
+- Make sure you are using the latest version of Prime Mover plugin version.
+- Go to *Network admin -> Sites* and make sure you see some sites on it (e.g., main site , subsites ,etc.) – > it should not be empty.
+- Go to *Network -> Plugins* and network activate Prime Mover plugin.
+- Proceed to activation – check that you can now successfully activate the plugin.
+- If the plugin activation/Freemius skipping still hangs – check your browser console for errors. If you see some CORS related errors – [please refer to this tutorial](https://codexonics.com/prime_mover/prime-mover/export-stuck-at-0-troubleshooting-guide/#cors).
+
+## Still having issues?
+
+If the none of the above troubleshooting steps work – please provide the following:
+
+- WordPress network admin username and password.
+- WordPress site URL.
+
+And [please send it to technical support team](https://codexonics.com/contact/) – we will take a look at your site and why this issue still occurs.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: `mysqli_stmt_get_result()` – plugin cannot be activated if this function is missing
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-mysqli_stmt_get_result-plugin-cannot-be-activated-if-this-function-is-missing/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-mysqli_stmt_get_result-plugin-cannot-be-activated-if-this-function-is-missing/)
+
+## Symptoms
+
+When activating Prime Mover plugin (*since version 1.8.3*) – plugin is deactivated automatically with an error 
+```
+mysqli_stmt_get_result()
+```
+
+ function is missing:
+
+## Causes
+
+Your server disabled this function or this function is not available in your current PHP version or installation.
+
+## Why this is needed?
+
+Since Prime Mover 1.8.3 – some legacy SQL queries are rewritten to use [prepared statements](https://www.php.net/manual/en/mysqli.quickstart.prepared-statements.php). This is done to enhance security of existing MySQL queries.  
+```
+mysqli_stmt_get_result()
+```
+
+ is an important function to accomplish this objective.
+
+Since Prime Mover plugin uses this function to safeguard MySQLi statements – this is now a required function for plugin activation. It is not currently possible to have this plugin activated without this function enabled in your server.
+
+Most servers tested already included this function. But if this is somewhat disabled – you should at least request this to your hosting company to have it enabled.
+
+## Workaround
+
+There are many workarounds, it is suggested to try this one by one to see what works for you:
+
+- If you are using PHP 5.6, try upgrading your PHP version to at least PHP 7.4 or PHP 8.0+. This is because this function is not available in older PHP versions. Try upgrading your PHP version to see if it works.
+
+- If upgrading PHP version does not work – please open a ticket to your web hosting support requesting this function to be enabled. In most cases – this request should be granted and fixed by your web hosting support.
+
+## What if workaround does not work?
+
+- If workaround does not work and you really need to use Prime Mover to restore your package – downgrade your Prime Mover version to 1.8.2. This function is not yet checked on this version. Once you have activated version 1.8.2 – you should be able to restore your package. Take note that this version 1.8.2 is now outdated – you should take this as temporary solution only.
+
+- As a last resort – if you need to use Prime Mover and your host cannot support this function – you can try switching web host that supports this PHP function. You should do this for security reasons.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: No packages found
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-no-packages-found/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-no-packages-found/)
+
+## Background
+
+If you have backed up a site or like to restore a package, but the package manager says “No Packages found”. This is a quick troubleshooting step to identify the issue.
+
+## Step 1 – Get the correct Prime Mover export directory
+
+- Log in to your WordPress site.
+- Go to **Prime Mover -> Packages**.
+- [OPTIONAL] If the site is a multisite, *enter the blog ID of the subsite where you want to upload/download/restore packages*:
+
+**Note**: If you’re working with a multisite and don’t know the blog ID of the subsite, go to Network Admin -> Sites and locate the subsite listed there. Once you see the site, you should be able to get its blog ID, e.g., the blog ID below is 3:
+
+- Finally, once the correct export directory is loaded, you should be able to get the correct export directory used by Prime Mover (for that site/subsite).
+
+This is what it looks like:
+
+The export directory is indicated as the path. For example, in a multisite subsite of blog ID 3, the path could be:
+
+```
+/home/your-username/your-wp-multisite/wp-content/uploads/prime-mover-export-files/3/
+```
+
+In WordPress single-site, it looks like this:
+
+```
+/home/your-username/your-wp-singlesite/wp-content/uploads/prime-mover-export-files/1/
+```
+
+Once the export directory is known, please proceed to the next step.
+
+## Step 2 – Make sure your package is there
+
+Now that you know the correct export directory, does your package exist if you inspect it visually via FTP or File Manager? If not, ensure that you upload your package to the correct directory via FTP, SFTP, or hosting[file manager](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/#packagemanager). This is the case if you want to restore the package to the target site.
+
+If the package exists in the correct Prime Move export directory, proceed to the next step.
+
+## Step 3 – Refresh packages
+
+Once the package exists, refresh the package to check if it will be listed and visible in the package.
+
+- Go to *Prime Mover -> Packages*.
+- Click the “**Refresh packages**” button.
+- Confirm whether the package is listed or not, and if there are any errors related to corrupt packages.
+- Proceed to the following troubleshooting section depending on what you see.
+
+*If you see corrupt package errors…*
+
+If the package is corrupted, [please check out this tutorial on handling corrupted packages](https://codexonics.com/prime_mover/prime-mover/corrupted-wprime-packages-troubleshooting/).
+
+*If the package is listed normally…*
+
+If there are no corrupt package errors, then the package is not corrupted, so you can use it to restore or migrate that package to another site.
+
+## Still, no packages found?
+
+Please [open a technical support ticket](https://codexonics.com/contact/) and provide us with your WordPress site URL / username, and password. We will use this to inspect your site and diagnose the reason why the package isn’t there.
+
+*Last updated: June 15, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: Site URL is not defined in this site. Please check your multisite settings
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-site-url-is-not-defined-in-this-site-please-check-your-multisite-settings/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-site-url-is-not-defined-in-this-site-please-check-your-multisite-settings/)
+
+## Symptoms
+
+When importing a package to a site (or multisite), you will get a runtime error:
+
+```
+Site URL is not defined in this site. Please check your multisite settings
+```
+
+## Cause
+
+The target site URL (
+```
+siteurl
+```
+
+) is missing in the database options table. When restoring the package, Prime Mover needs the target site URL information to complete the restoration. It will also require the target site URL so that the auto-search and replace process can be achieved. This is to adjust the origin site URL (*from the source site*) to the target site URL.
+
+Therefore, the site URL is required when restoring the site. If this is missing, the package cannot be restored, and a runtime error is returned.
+
+## Solutions
+
+- If you have access to your database, locate the options table for the site or subsite. The options table is where WordPress options and settings are saved. Commonly, it is named 
+```
+{prefix}_options
+```
+
+ . For example 
+```
+wp_4_options
+```
+
+.
+- Add a new option with the following information:
+
+**option_name** : 
+```
+siteurl
+```
+
+**option_value**: 
+```
+https://replacethiswithyoursiteurl.test
+```
+
+Ensure you use the correct site URL as expected. If your site uses HTTPS, start the URL with https://. Otherwise, if your site does not use HTTPS, use http://
+
+- Make sure to save the changes. After saving the changes, 
+```
+siteurl
+```
+
+ it should be added to your options table as follows.
+
+- Once saved and 
+```
+siteurl
+```
+
+ exists in your target site options table. Repeat the package import /restoration. It should work this time.
+
+## Alternative solutions
+
+- If your site is a multisite, you can delete the subsite experiencing this issue (if it’s okay and not needed). Then, create another blank subsite and retrieve its[new blog ID](https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/#new-site). Once you have the newly created blog ID, you can re-create a new multisite package (*from the source site*) targeting the new blog ID. You can then restore this package to the newly created blank subsite. You should not get this error again.
+- If your site is a single-site, you can check [this alternative solution](https://www.inmotionhosting.com/support/edu/wordpress/wordpress-changing-the-site-url-and-home-settings/). Or, much better, you can reset your single-site to a fresh WordPress install so WordPress core can reset the siteurl to its default values, just in case your site is corrupted.
+
+## Contact tech support
+
+If you continue to experience issues after following the above troubleshooting steps, please contact our technical support so we can assist you. Please include details, logs, screenshots, or, ideally, access to the site if you allow.
+
+*Last updated: June 15, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: Stalled restore/import or export guide
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-stalled-restore-or-export-guide/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-stalled-restore-or-export-guide/)
+
+## Symptoms
+
+When restoring or exporting a site, the process suddenly stalls and is unable to continue until you receive a JavaScript dialog error (sometimes not).
+
+In addition, you might be getting runtime errors such as:
+
+- ```
+Uncaught Codexonics\PrimeMoverFramework\build\splitbrain\PHPArchive\ArchiveIOException: Could not open file for writing
+```
+
+You can also use this guide when encountering other runtime errors, aside from the known symptoms above.
+
+Additionally, where and when it stalls is sporadic or random – when you try to re-run the restore/export, it will get stuck in different steps than before or at a different progress percentage.
+
+## Step 1: Check if you have Imunify360 enabled
+
+Imunify360 is a web hosting security solution. Some web hosting companies add this as an extension or module to their cPanel or security suites. This security software runs in real-time to scan files inside your web server. This can cause issues if you are running an export or restore. This is because, while the site is restored, Imunify360 interferes with this process and could stop any running migration processes. The migration processes will then appear stalled once any of their processes are killed/stopped.
+
+To check if you have Imunify360 enabled:
+
+- Log in to your hosting control panel.
+- Check if you have the Imunify360 module enabled. This might appear different from some web hosts, but it will look like this:
+
+- Also, you can view this information inside your site’s phpinfo() output to check if the server is using this security module. You will see a section. i360 In the output, such as this:
+
+### Solution
+
+Once it’s confirmed you have Imunify360 enabled, you can turn it off as follows (requires access to your cPanel or Hosting panel/console) :
+
+- Log into *cPanel  (or your hosting manager) -> Imunify360 -> Proactive Defense* and check on the “*Detected Events*” tab.
+- Try checking if Imunify360 Proactive defense has detected/flagged a Prime Mover archive processor file – 
+```
+/wp-content/plugins/prime-mover/build/splitbrain/php-archive/src/Tar.php
+```
+- Once you see that it’s detected there, move the Prime Mover archive processor file to the “Ignore list”. This will cause Imunify360 Proactive defense to ignore this script during runtime and prevent it from stopping the migration process.  Please see the attached screenshot below for an example of adding the Prime Mover archiver processor script to the ignore list.
+
+- **Once added to the**Ignore list, clear your browser cache and repeat **the restore process.**
+
+[OPTIONAL] If no Prime Mover script is detected under Detected Events, but you have Imunify Proactive defense enabled. Please try [turning this off completely](https://cloudlinux.zendesk.com/hc/en-us/articles/4412093428882-Disabling-Proactive-Defense-components) before doing any migration processes with Prime Mover for troubleshooting purposes.
+
+If you don’t have access to your server to turn this off, please request that your web hosting support do so. You can re-enable this module once you are not running any export and restore tasks.
+
+## Step 2: Check if the server is using any security module other than Imunify360
+
+Sometimes, the server is not using Imunify360 but instead uses a different security solution. If this is the case, please contact your web hosting support and ask if they use any real-time security file scanning. You should deactivate all of these before proceeding to any restore or export processes.
+
+## Step 3: Check if your hosts have some tight resource controls
+
+If your host does not use any real-time security file scanning solutions and you still experience stalled export or restore, most likely this is due to the tight resource controls implemented by your host.
+
+You will know this because Prime Mover will bail out any timeout errors, etc. The only solution in this case is to open a ticket with your hosting company and request the following:
+
+- Temporarily increase timeout controls.
+- Temporarily lift any hosting resource controls in your account (e.g., request controls, etc.)
+
+This should happen only to a few hosts. Prime Mover plugin is designed to handle timeouts even in a very restrictive shared hosting environment. Currently, this is how the Prime Mover plugin deals with this:
+
+- By default, the Prime Mover timeout is set to 15 seconds. This is lower than most hosting timeouts, which typically range from 30 seconds to several minutes. The default PHP maximum execution timeout is 30 seconds. Most hosting companies should even use a more conservative timeout, e.g., a minute or more. If a migration process takes more than 15 seconds, Prime Mover times out and exits the process to avoid hitting the server timeout. It will then make another request so that each of the long-running processes will not exceed the hosting timeout limitations.
+
+- Prime Mover progress AJAX interval sends a request every 7 seconds to check the status of the restore or export process. This is very conservative and should not overload any server.
+
+- Prime Mover waits for one second before sending another export or restore AJAX request.
+- Only Prime Mover plugin processes are running when doing any export or restore tasks. It won’t execute third-party plugin code or themes. This is to conserve resources, such as CPU and RAM, while performing a restore.
+
+These controls are tested to work even with the cheapest and most restrictive shared hosting environments (including free hosting). Suppose these controls within Prime Mover are still insufficient for your hosts. In that case, you should contact your hosting company and temporarily lift any restrictions inside your account so that you can successfully migrate sites.
+
+## Step 4: Escalate to Technical Support
+
+If you have completed all the above steps and are still experiencing this issue, please contact us so we can confirm that you are still having the problem. We will then identify workarounds that best suit your specific case.
+
+*Last updated: June 15, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: Unable to activate Prime Mover in restricted mu-plugins directory
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-unable-to-activate-prime-mover-in-restricted-mu-plugins-directory/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-unable-to-activate-prime-mover-in-restricted-mu-plugins-directory/)
+
+## Background
+
+This is a workaround if you use the Prime Mover plugin in hosts that don’t allow you to write files to the 
+```
+mu-plugins
+```
+
+ directory.
+
+In some instances, where the Prime Mover script inside 
+```
+mu-plugins
+```
+
+ the directory is not writable, you get a similar error when you upgrade to Prime Mover 2.0.0+ from Prime Mover 1.9.9 (and exporting any site):
+
+```
+PHP Fatal error: Uncaught Error: Call to undefined method Codexonics\PrimeMoverFramework\general\PrimeMoverMustUsePluginManager::getAutoBackupCronInitialized()
+```
+
+This is because Prime Mover 2.0.0+ is a significant update from the previous version, 1.9.9. An updated script must be written for the 
+```
+mu-plugins
+```
+
+ directory.
+
+The script in the 
+```
+mu-plugins
+```
+
+ directory must be updated and compatible with the one being used by the Prime Mover plugin (latest version)
+
+```
+/wp-content/mu-plugins/prime-mover-cli-plugin-manager.php
+```
+
+## Solution
+
+Let’s fix this manually on your end.  Before we start, ensure you know the plugin slug to use when finding these paths on your server. If you are activating the pro version, the plugin slug should be 
+```
+prime-mover-pro
+```
+
+ so the path to your plugin manager script should be:
+
+```
+/wp-content/plugins/prime-mover-pro/scripts/prime-mover-cli-plugin-manager.php
+```
+
+For the free version, it should be:
+
+```
+/wp-content/plugins/prime-mover/scripts/prime-mover-cli-plugin-manager.php
+```
+
+These are the steps:
+
+- Ensure you always use the latest version of the Prime Mover plugin (PRO or FREE version).
+- Ensure the plugin is deactivated (network-wide deactivated if using multisite).
+- Log in to your WordPress directory via SFTP or your hosting file manager.
+- Delete this outdated Prime Mover script file (if it exists):
+
+```
+/wp-content/mu-plugins/prime-mover-cli-plugin-manager.php
+```
+
+- [*Optional*] If this file cannot be deleted, then you don’t have access to delete it, so you must contact your hosting technical support to delete it.
+- Copy this updated file FROM (e.g., if the free version is used, use the PRO version path above if required):
+
+```
+/wp-content/plugins/prime-mover/scripts/prime-mover-cli-plugin-manager.php
+```
+
+And paste it into the 
+```
+mu-plugins
+```
+
+ directory:
+
+```
+/wp-content/mu-plugins/
+```
+
+This updates the Prime Mover plugin manager script inside the 
+```
+mu-plugins
+```
+
+ directory to its latest version.
+
+- [*Optional*] Now, if you cannot copy the above to the mu-plugins directory, it’s because you don’t have access to it, or your hosting won’t allow it. In this case, please get in touch with your hosting technical support to manually copy the specified file to the 
+```
+mu-plugins
+```
+
+ directory.
+
+- Finally, once the script is updated, activate the Prime Mover 2.0.4 again (network activate if multisite). You should be able to activate the plugin without any errors. The export should work with the latest version, and the plugin should operate normally, just as expected.
+
+## Importance of Prime Mover mu-plugins directory script
+
+This file is crucial since it controls the entire plugin’s runtime operations, including export and import. If it is not updated, several issues can occur, including the inability to export and import data, as well as performance issues related to the database. In summary, without this update or if you are using an outdated version, you cannot use the Prime Mover plugin on your site.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting:  Unable to rename tables, please check that your database is not empty or these tables exists
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-unable-to-rename-tables-please-check-that-your-database-is-not-empty-or-these-tables-exists/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-unable-to-rename-tables-please-check-that-your-database-is-not-empty-or-these-tables-exists/)
+
+## Symptoms
+
+When restoring a package to a target site – the import / restore stops with this runtime error:
+
+```
+Unable to rename tables, please check that your database is not empty or these tables exists
+```
+
+## Causes
+
+Based on previous cases – this is usually caused by some customized database configuration in your source site. It creates an incorrect database / incompatible dump to your target database. As a result – you will get this error when doing an import.
+
+## Solution
+
+The most recommended solution is to re-create the export package using the latest version of the Prime Mover plugin. This will ensure the exported package is correct and includes the fix to handle this error.
+
+In detailed steps:
+
+- In your source site (where you create the package) – make sure you are using the *latest Prime Mover version*. As of June 2024 – this should be Prime Mover 1.9.9 + / Prime Mover PRO 1.9.9 +. If you are using an old version – deactivate and uninstall/delete the version. Please download the latest version from the [WordPress.org repository](https://wordpress.org/plugins/prime-mover/) (for FREE version users) or [inside your Freemius account](https://users.freemius.com/login) for PRO / Trial users.
+
+- Now you are using the latest version of Prime Mover, re-generate the export to your target site.  If you are using PRO version – **don’t check** the encryption setting in the export. This will disable encryption for the package which will make troubleshooting easier later on.
+
+- In your target site (where you want to restore the package) – make sure also that you are using the same latest version of the Prime Mover plugin.
+
+- Finally, restore the package and you should not see this error.
+
+## Help! I am still getting the error
+
+If you are still getting the error after following the above troubleshooting steps – you need to escalate this to technical support for analysis and investigation. Please send us an email directly to our technical support by using the [official contact form](https://codexonics.com/contact/). Please include the following required information in your message:
+
+- Link to download the 
+```
+WPRIME
+```
+
+ package. You can upload this temporarily to Google Drive or DropBox and share it with us. You can delete it after we already downloaded it.
+
+- Name of your source site and target site hosting company (where you create and restore the package). We need this information so we run tests for hosting compatibility.
+
+- Link to download the runtime error log. This is the error log generated when you attempted to restore the package in your target site. For convenience (especially if this is large) – you can zip it and send us a link to download it in your email.
+
+- In your source site (where you create the package) – Go to *Prime Mover -> Advanced -> Advanced Settings Panel -> Debugging Tools -> Download log*and click “**Download log file**“. This will download the complete migration export log.
+
+- In your source site (where you create the package)  – Go to *Prime Mover -> Advanced -> Advanced Settings Panel -> Upload/Download Parameters -> Export site info*and click “**Export site info**“. This will download your source site info details including your Prime Mover settings data. This is your site information log.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: “Unauthorized Download” error when using remote URL PRO feature?
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-unauthorized-download-error-when-using-remote-url-pro-feature/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-unauthorized-download-error-when-using-remote-url-pro-feature/)
+
+## Background
+
+This is caused when that site has incorrect authorization key when downloading the package from the source site. The authorization key can become incorrect because it might be deleted or it’s using a different expired key before.
+
+When you purchase or upgrade to Prime Mover PRO – it will automatically setup authorization keys based from your license keys for convenience. This is automatically setup when you first activate the license in your site.
+
+Therefore this error might be caused when your target site authorization key is different because it’s generated from a different license key from an old installation or expired keys, or simply no longer exists, etc.
+
+Authorization key is verified to ensure that all remote URL downloading / migration is authenticated. This is for the security of your package so not everyone can download your package.
+
+## How to fix
+
+Fixing this error is very easy because all you need is to copy the correct  authorization key from the source site to target site. In detailed steps:
+
+- Login to your source site where the package is created.
+- Go to *Prime Mover PRO -> Settings.*
+- Scroll down to *Security settings -> Authorization Keys*.
+- Click “*Copy authorization key of this site to clipboard*.”. For example this is how your source site authorization key looks like:
+
+```
+yoursourcesite.com:acxsYYyDwJf7u8zawbLbgh67ujzF4b234d3Lp3edLLlTpNvRgb6CL8LK6Jvfct5
+```
+
+- Login to your target site where you want the package to be migrated.
+- *Important:*Make sure Prime Mover PRO license is activated for this target site.
+- Go to *Prime Mover PRO -> Settings.*
+- Scroll down to *Security settings -> Authorization Keys*.
+- Check “*Show authorization keys*“.  By default – Prime Mover PRO generates authorization key for this target site also. This is shown in the text area field as first line.
+- Paste the authorization key from the source site as a new line (below the first line if it exist). This is how it looks like after pasting it:
+
+As you can see – your source site authorization is pasted as second line.
+
+- Finally click “Save”.
+- Once saved – refresh your browsers and try again importing the package from the source site using remote URL PRO feature.
+
+## Still having issues?
+
+If the above steps didn’t work – you can try the native [package manager restoration method.](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/#packagemanager)  In this workaround – it requires you to upload the package to the target site Prime Mover export directory via SFTP / File manager. This workaround should work for both FREE and PRO versions.
+
+In addition – if you want us to troubleshoot remote URL restoration issues, please [get in touch with our technical support](https://codexonics.com/contact/). To speed up this troubleshooting – you can provide your site login credentials ( both source and target site) so we could easily reproduce the issue.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: yourpackage.wprime is not a valid migration package when using Hostinger Preview domain
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-yourpackage-wprime-is-not-a-valid-migration-package-when-using-hostinger-preview-domain/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-yourpackage-wprime-is-not-a-valid-migration-package-when-using-hostinger-preview-domain/)
+
+## Update (September 13, 2025)
+
+Please upgrade to **Prime Mover 2.0.9+** as this is already fixed with this version.  The steps and solutions below only apply if you are still using an old version of the Prime Mover plugin.
+
+## Cause of the issue
+
+Using the Hostinger preview domain feature allows you to see a snapshot of your domain via the Hostinger domain in preview domain mode. You will be accessing your site via a temporary preview domain. For example, if your domain is 
+```
+mycoolsite.tld
+```
+
+,  the equivalent preview domain in Hostinger will be: 
+```
+mycoolsite-tld.preview-domain.com
+```
+
+When you restore your package to the Hostinger preview domain, it won’t work, and you will get a runtime error: 
+```
+yourpackage.wprime is not a valid migration package
+```
+
+.
+
+The cause is that when Hostinger previews a domain, Hostinger uses a preview domain in its **file path, resulting in a 404 error**. For example:
+
+```
+/home/uXXXXXXXXX/domains/mycoolsite-tld.preview-domain.com/public_html/wp-content/uploads/prime-mover-export-files/1/yourpackage.wprime
+```
+
+This is not an issue with the Prime Mover plugin but a limitation with the Hostinger preview domain implementation. In fact, any file path that has a preview domain on it will return 404, for example, the path to wp-config.php:
+
+```
+/home/uXXXXXXXXX/domains/mycoolsite-tld.preview-domain.com/public_html/
+```
+
+wp-config.php
+
+If we replace it with a live site path, e.g.
+
+```
+/home/uXXXXXXXXX/domains/mycoolsite.tld/public_html/wp-config.php
+```
+
+It will exist now; however, Hostinger in the background will do a real-time replacement of any file paths containing 
+```
+mycoolsite.tld
+```
+
+and replace it with a preview domain 
+```
+mycoolsite-tld.preview-domain.com
+```
+
+This makes it impossible to fix with code changes, as Hostinger will still run auto-replacements in real-time. Two tested solutions are available to migrate the package to your preview domain.
+
+- Migrate only using the live site domain (*works with FREE and PRO*).
+- Migrate inside your Hostinger preview domain (*works only with the PRO version*).
+
+## First solution: Use Prime Mover PRO’s Custom backup directory feature
+
+Now that we know any file paths containing the Hostinger preview domain will return 404, we can change the backup/export directory path to one that does not use the preview domain. This will no longer return 404 and should allow you to migrate the package.
+
+However, changing the backup directory inside Prime Mover is a Pro feature, so you need a valid license for this to work. In summary, these are the steps:
+
+- If you still use the Prime Mover FREE version, please purchase a license to [upgrade to the PRO version](https://codexonics.com/prime_mover/prime-mover/pricing/).
+- Once the PRO version is activated on your site, go to *Prime Mover PRO -> Settings*.
+- Go to *Basic Settings -> Custom backup directory*.
+- Enter a custom backup directory above all your sites to ensure it won’t use the preview domain on its path. For example:  
+```
+/home/uXXXXXXXXX/domains/mypackages/
+```
+
+Supposing your WordPress directory root path in your preview domain is this:
+
+```
+/home/u123456789/domains/mycoolsite-tld.preview-domain.com/public_html/
+```
+
+Then enter this value as your custom backup directory:
+
+```
+/home/u123456789/domains/mypackages/
+```
+
+This is what it looks like in the PRO custom backup directory settings:
+
+- Click the “Save” button below the custom backup directory setting. This saves the setting and moves the package from the original uploads directory to the new backup directory path.
+- Finally, once the setting is saved, go to *Prime Mover PRO -> Packages,* and you should see the packagesunder the new custom backup directory, e.g.
+
+- You should now be able to restore your package without the runtime error since the path to the package no longer uses the Hostinger Preview domain.
+
+## Second solution: Use the live site domain to restore your package
+
+The first solution won’t work if you are using the FREE version. If you don’t want to upgrade to the PRO version, you can still migrate the package using your Hostinger live site domain with the FREE version.
+
+Detailed steps are as follows:
+
+- Log in to your live site hosted in Hostinger (not a preview domain).
+- Install and activate the latest version of Prime Mover (the FREE version will do).
+- Restore your package using the [package manager method](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/#packagemanager).
+- You should not get errors  
+```
+yourpackage.wprime is not a valid migration package
+```
+
+ because the package file path uses no Hostinger preview domain.
+
+The second solution’s only limitation is that it requires the live site connected to your Hostinger host to restore the package. If you need to test your site in a preview domain environment, use the PRO version of Prime Mover to switch your backup directory to a customized path.
+
+## Questions? Issues?
+
+Please [contact our technical support team](https://codexonics.com/contact/) and provide details about all the issues anderrors.
+
+*Last updated:  September 13, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Understanding Prime Mover backup options
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/understanding-prime-mover-backup-options/](https://codexonics.com/prime_mover/prime-mover/understanding-prime-mover-backup-options/)
+
+## Background
+
+When you create a package for backup or migration, you need to set backup options. There are currently four backup options. Let’s discuss how you can use each of these to the fullest.
+
+## Database backup only
+
+```
+Manual backup support: YES
+```
+
+```
+Scheduled backups support: YES
+```
+
+**Description:**
+
+This package contains only the database for your site or subsite. It does not include your site’s plugins, themes, or media files.
+
+**When to use this:**
+
+Use this option if you only want a snapshot of your site database. This package type can be created much faster than the other options because it does not require archiving media files, plugins, or themes.
+
+Select this option if you are certain that your plugins, themes, and media files remain unchanged, and only the content, data, and users are frequently updated (which you need to back up). This is where you want to select the database backup only package.
+
+This is typically useful if you have a large site with numerous plugins and a substantial uploads directory. A periodic backup that includes all this will consume much of your hard drive space. Selecting a database backup package for your periodic backup solution using Prime Mover PRO would be simpler.
+
+Then your host should take care of the rest of your file backups, including your plugins, themes, and media files, except for your database and your large site. At this site size, you should rely on additional redundant file backups, such as those provided by your host.
+
+## Database + Media files backup only
+
+```
+Manual backup support: YES
+```
+
+```
+Scheduled backups support: YES
+
+Description:
+```
+
+This package contains your site/subsite database and all files in your site’s uploads directory, except those [intentionally excluded](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-upload-media-files-in-prime-mover-pro/). This does not include your site plugins or themes.
+
+**When to use this:**
+
+Use this if you need a backup that includes your site database and media files. This is particularly useful if your site content and media files are frequently updated. Then, your site’s plugins and themes remain unchanged or are not crucial to back up (because you can easily restore them in other ways, such as re-downloading from the WordPress plugin repository and your third-party plugin vendors).
+
+This type of package can be completed much faster than a complete package, but slower than the database-only package.
+
+## Complete full backup (Database + Plugins/Themes + Media files)
+
+```
+Manual backup support: YES
+```
+
+```
+Scheduled backups support: YES
+```
+
+**Description:**
+
+As the name implies, this package includes the following:
+
+- Database
+- All activated plugins (except [intentionally excluded](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/))
+- Media files
+- Themes
+
+**When to use this:**
+
+If you want a comprehensive snapshot, you need to choose this option. This will enable you to restore the site to its exact state when the snapshot was created. This means restoring the site to its original plugin/theme versions, including all media files and database content at that time. This package is also most suitable for migration to another site, as it includes everything the site needs to restore.
+
+However, please note that this package type is the slowest to create and one of the most resource-intensive. It will consume the highest amount of disk space among all backup options, so it is recommended to save this type of backup to external locations (such as Google Drive or Dropbox) and then regularly delete backups on your server to conserve space. Then, schedule the backup every month or less frequently.
+
+## Debugging Package
+
+```
+Manual backup support: YES
+```
+
+```
+Scheduled backups support: NO
+```
+
+**Description:**
+
+Prime Mover debugging package. This feature is only supported when creating a package manually, but it is not supported as a backup option for scheduled backups.
+
+**When to use this:**
+
+This is best used when you want to create a package from a super large site and transfer it to your development environment for debugging purposes. This should not be used for a regular site migration because it does not include media files in the package or perform any search and replace during migration.
+
+The URLs of the media files are still referenced externally to the source site.
+
+*Last updated: May 10, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## How to migrate your WordPress single-site to another single site
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/video-how-to-migrate-your-wordpress-single-site-to-another-single-site/](https://codexonics.com/prime_mover/prime-mover/video-how-to-migrate-your-wordpress-single-site-to-another-single-site/)
+
+Scope: **Prime Mover Free / Pro version**
+
+**IMPORTANT**: If you are using Prime Mover Pro for the first time, please read this [get-started guide](https://codexonics.com/prime_mover/prime-mover/getting-started-with-pro-version/).
+
+This tutorial applies to both Prime Mover Free and Pro Versions. It teaches you how to migrate your WordPress single-site installation to another single-site installation. The target site installation could reside on a different server or your local host.
+
+### Exporting a package
+
+- Activate Prime Mover Plugin
+- Optionally opt-in to Freemius notifications.
+- Go to *Migration Tools* or *Prime Mover -> Packages -> Create New Package*.
+- Click “Export,” and the export options dialog will show.
+- Select appropriate export options. In this tutorial, we select the complete export mode (*Export database + media + plugins/themes*).
+- Under “Export type,” select “*Export to single-site format*.”
+- Click **Export Now**.
+- Wait until this process is completed; this can take time for huge sites.
+- The package will be downloaded to your Downloads directory after completing the export process.
+
+**Tip**: Some hosting hosts have a timeout for downloading the package. You should download your package using either SFTP or your hosting file manager to ensure it will not be partially downloaded or corrupted. Please [read this tutorial for details](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/).
+
+## Importing/Restoring a Package
+
+- Now, go to the target single site to migrate the package. Ensure you install the same version of Prime Mover used to generate the export.
+
+**Tip #1**: You should clean the target site uploads directory or database before restoring another site with Prime Mover, but this is not a requirement. Cleaning before restoration will keep your site size manageable as it contains no files or data that do not belong to the current site.
+
+To clean a site, you must reset the WordPress database and delete all files in the uploads directory. You can use free plugins like the [Advance WordPress Reset plugin](https://wordpress.org/plugins/advanced-wp-reset/)to restore a fresh WordPress install.
+
+**Tip #2**: If possible, ensure the first administrator email address in the target site is the same as the source site. For example, if the source site *user_id: 1* has the email address 
+```
+xyz@test.com
+```
+
+, then the target *user_id: 1* should also be 
+```
+xyz@test.com
+```
+
+.
+
+This will ensure the users are consistent and replicate with the source site.
+
+**Warning! If you are using the PRO version, use the custom backup directory path feature to move your backup directory away from the default WordPress uploads directory BEFORE cleaning your uploads directory. Otherwise, you can accidentally delete your backups when you clear the uploads directory**!
+
+Once you have cleaned up your site and are ready for restoration, here are the steps:
+
+- Activate the Prime Mover version and opt-in to Freemius notifications.
+- Go to Migration Tools.
+- Click**Import**.
+- Browse to the uploaded package and select it.
+- A confirmation dialog will pop up. Please read the details and make sure they’re correct. Use this information to verify whether you have the proper site to be imported and other details.
+- Wait until you see “**Import done**.”
+- Go to *Settings – Permalinks*.
+- Without changing any settings, click “**Save changes.**“
+
+**Tip**: Another way to restore your site is via the [package manager method](https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/#packagemanager). This is often the most recommended method because it does not depend on your package size. Browser uploading (from the first method mentioned previously) is limited to 3GB to 4 GB.
+
+### Troubleshooting
+
+- **Export/Import will not****be****completed—**if you think the process will not be completed, please read the following solution guide.
+
+1. [I got an “Export fails” or “Import Fails” Error. Can you try increasing the web server timeout?](https://codexonics.com/prime_mover/prime-mover/i-got-export-fails-or-import-fails-error-can-you-try-increasing-web-server-timeout/)
+2. [Tips and Techniques in migrating large sites with Prime Mover Plugin](https://codexonics.com/prime_mover/prime-mover/tips-and-techniques-in-migrating-large-sites-with-prime-mover-plugin/)
+3. [Import / Restoration Hang or Freeze Issue Troubleshooting](https://codexonics.com/prime_mover/prime-mover/import-restoration-hang-or-freeze-issue/)
+
+*Last updated: December 6, 2024*
+
+Was this article helpful?YesNo
+
+---
+
+## Workaround – Unable to install theme or delete plugins after migration from multisite to single-site (standalone)
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/workaround-unable-to-install-theme-or-delete-plugins-after-migration-from-multisite-to-single-site-standalone/](https://codexonics.com/prime_mover/prime-mover/workaround-unable-to-install-theme-or-delete-plugins-after-migration-from-multisite-to-single-site-standalone/)
+
+## Background
+
+After migrating from a multisite subsite to a standalone WordPress installation (single-site), administrators, including new ones, can no longer add new themes or delete plugins.
+
+## Cause of the issue
+
+The administrator capabilities for deleting plugins and adding new themes are not set from the multisite install. This is usually set by WordPress core by default; however, it may be overridden by some plugins, custom code, or manually updated by the network administrator.
+
+And then, when the site is migrated from the multisite to a single site, these administrator roles and capabilities are copied. The result is that the single-site install also does not have these capabilities set.
+
+This issue does not occur in multisite because only network administrators can delete plugins or install new themes. However, in a single-site install, administrators need to have these capabilities set.
+
+## Fix this problem.
+
+However, the workaround is easy; please refer to the steps below:
+
+- Log in as the administrator of your single-site.
+- Go to **Plugins -> Add New Plugins**.
+- Search “**User role editor**“.
+- Install and activate the plugin. See screenshot below for the correct plugin to install and activate:
+
+- Go to Plugins and make sure you now have this plugin installed and activated:
+
+*User Role Editor By Vladimir Garagulya*
+
+- Go to **Settings -> User Role Editor**.
+- Under the “General” tab, check “**Show Administrator role at User Role Editor**“.
+- Click “Save”.
+- Go to **Users -> User Role Editor**.
+- Under “*Select Role and change its capabilities*” -> select “**Administrator(administrator)**“.
+- It will show all default capabilities for administrators. Double-check that “**install_themes**” and “**delete_plugins**” are already checked.
+- That’s it – the administrator capabilities are refreshed. Go to **Appearance -> Themes**. You should now be able to see the “Add new theme” button.
+- Go to **Plugins -> Installed Plugins**. You should now be able to delete any plugin.
+- You can now safely uninstall and delete the “User role editor” plugin after confirming that the issue is now resolved.
+
+That’s it. This issue should now be fixed on your end. In the future release, this will be handled automatically during migration by the Prime Mover plugin. In the meantime, you can refer to this tutorial as a workaround.
+
+*Last updated: June 15, 2025*
+
+Was this article helpful?YesNo
+
+---
+
+## Error: Some file paths exceed Windows MAX_PATH limit
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/zip-failed-some-file-paths-exceed-windows-max_path-limit/](https://codexonics.com/prime_mover/prime-mover/zip-failed-some-file-paths-exceed-windows-max_path-limit/)
+
+Scope: **Prime Mover Free**
+
+### Background
+
+This issue only affects users of **Prime Mover Free** in **Windows operating systems**. This is due to the fact that Windows limits the number of characters in the path with a constant known as MAX_PATH limit.
+
+You will get this error if the website under migration has some very long file paths. Usually you will get this if you have a plugin with git folders or vendor folders which is deep nested. This results to very long file paths.
+
+### Related Errors
+
+Using Prime Mover plugin, the following are the associated runtime errors caused by this issue:
+
+- **Main extraction failed** **(No error)**
+
+### Windows OS Workaround
+
+- Check first if you already configured Windows to accept file paths over 260 characters. If you are not sure, try this [regedit fix by this tutorial](https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/).
+- Do not proceed below unless you have done above.
+
+### Temporary Plugin Workaround
+
+If you have done above, the next thing would be apply a temporary plugin workaround.
+
+- In your Windows OS, go to **C:\** root drive and create folder named as **pm_tmp**
+- Open your favorite code editor and copy the code below :
+
+```
+<?php
+/**
+Plugin Name: Prime Mover Windows MAX Path Limit Error Workaround
+Plugin URI: https://codexonics.com
+Author: Codexonics
+Version: 1.0.0
+Author URI: https://codexonics.com
+*/
+
+add_filter( 'prime_mover_filter_basebackup_dir', function( $path ) {
+
+//This will create and use C:\pm_tmp as the temporary backup tmp
+return 'C:\pm_tmp';
+
+});
+```
+
+- Save this code as **prime-mover-max-path-workaround.php**
+- The above code will use **C:\pm_tmp** as your new Prime Mover export directory which is actually a shorter path than the default.
+- In your
+```
+/wp-content/
+```
+
+ directory, create a folder named as **mu-plugins** (if it is not yet created)
+- Copy the above plugin code to this directory. Make sure to place it inside the mu-plugins directory. The resulting path to this script should be 
+```
+/wp-content/mu-plugins/prime-mover-max-path-workaround.php
+```
+- Activate Prime Mover plugin.
+- That’s it, you can now proceed to export / import using Prime Mover Free version. You should not be getting errors anymore.
+
+### Permanent Fix
+
+The above plugin is just a workaround for Windows MAX Path limit error. The recommended permanent solution would be to use the PRO version which allows you set a custom base backup directory directly inside Prime Mover.
+
+It looks something like this (**temporary plugin is no longer needed and should be deactivated**)
+
+As you can see, the custom backup directory is permanently set to use **C:\pm_tmp**. Since the directory is placed on the Drive C root directory, the paths will shorten.
+
+If you still see errors after doing this fix (permanent or the workaround), then the issue is in your site paths. It might be too long that its affecting *portability between operating systems*.
+
+**IMPORTANT**: Please remove the temporary script **prime-mover-max-path-workaround.php** in the 
+```
+/wp-content/mu-plugins/
+```
+
+ after you have upgraded to Prime Mover Pro version. It is not anymore needed since you can set the custom export directory path in the plugin settings.
+
+Was this article helpful?YesNo
+
+---
+

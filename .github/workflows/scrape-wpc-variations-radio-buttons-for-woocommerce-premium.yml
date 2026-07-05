@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wpc Variations Radio Buttons For Woocommerce Premium scraper
-        run: node scraper.js --slug=wpc-variations-radio-buttons-for-woocommerce-premium --mode=html-scrape --url=https://wpclever.net/docs/ --name="WPC Variations Radio Buttons for WooCommerce (Premium)"
+        run: node scraper.js --slug=wpc-variations-radio-buttons-for-woocommerce-premium --mode=html-scrape --url=https://doc.wpclever.net/woovr/ --name="WPC Variations Radio Buttons for WooCommerce (Premium)"
 
       - name: Check for changes
         id: changes

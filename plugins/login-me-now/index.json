@@ -1,0 +1,23 @@
+{
+  "plugin_slug": "login-me-now",
+  "plugin_name": "Login Me Now",
+  "documentation_url": "https://wordpress.org/plugins/login-me-now/",
+  "last_scraped": "2026-07-05T16:27:30.018Z",
+  "total_pages": 1,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Advanced",
+      "slug": "advanced",
+      "url": "https://wordpress.org/plugins/login-me-now/advanced/",
+      "file": "categories/advanced.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Login Me Now – Passwordless, Magic Link, OTP & Social Login for WordPress",
+          "url": "https://wordpress.org/plugins/login-me-now/advanced/"
+        }
+      ]
+    }
+  ]
+}

@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluent Snippets scraper
-        run: node scraper.js --slug=fluent-snippets --mode=html-scrape --url=https://fluent-snippet.com/docs/ --name="Fluent Snippets"
+        run: node scraper.js --slug=fluent-snippets --mode=html-scrape --url=https://fluentsnippets.com/docs/ --name="Fluent Snippets"
 
       - name: Check for changes
         id: changes

@@ -1,0 +1,70 @@
+{
+  "plugin_slug": "wpc-variations-radio-buttons-for-woocommerce-premium",
+  "plugin_name": "WPC Variations Radio Buttons for WooCommerce (Premium)",
+  "documentation_url": "https://doc.wpclever.net/woovr/",
+  "last_scraped": "2026-07-05T16:26:40.533Z",
+  "total_pages": 6,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "url": "https://doc.wpclever.net/woovr/getting-started/",
+      "file": "categories/getting-started.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started",
+          "url": "https://doc.wpclever.net/woovr/getting-started/"
+        }
+      ]
+    },
+    {
+      "title": "Plugin Settings",
+      "slug": "plugin-settings",
+      "url": "https://doc.wpclever.net/woovr/plugin-settings/",
+      "file": "categories/plugin-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Plugin settings",
+          "url": "https://doc.wpclever.net/woovr/plugin-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Versions",
+      "slug": "versions",
+      "url": "https://doc.wpclever.net/woovr/versions/",
+      "file": "categories/versions.md",
+      "page_count": 3,
+      "pages": [
+        {
+          "title": "Versions",
+          "url": "https://doc.wpclever.net/woovr/versions/"
+        },
+        {
+          "title": "Free version",
+          "url": "https://doc.wpclever.net/woovr/versions/free-version/"
+        },
+        {
+          "title": "Premium version",
+          "url": "https://doc.wpclever.net/woovr/versions/premium-version/"
+        }
+      ]
+    },
+    {
+      "title": "Wpc Plugin Compatibility",
+      "slug": "wpc-plugin-compatibility",
+      "url": "https://doc.wpclever.net/woovr/wpc-plugin-compatibility/",
+      "file": "categories/wpc-plugin-compatibility.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WPC Plugin Compatibility",
+          "url": "https://doc.wpclever.net/woovr/wpc-plugin-compatibility/"
+        }
+      ]
+    }
+  ]
+}

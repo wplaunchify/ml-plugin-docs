@@ -1,0 +1,517 @@
+{
+  "plugin_slug": "wp-file-manager",
+  "plugin_name": "WP File Manager",
+  "documentation_url": "https://filemanagerpro.io/article/",
+  "last_scraped": "2026-07-05T16:25:14.770Z",
+  "total_pages": 39,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Aws S3 Integration",
+      "slug": "aws-s3-integration",
+      "url": "https://filemanagerpro.io/article/aws-s3-integration/",
+      "file": "categories/aws-s3-integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "AWS S3 Integration < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/aws-s3-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Box Com Shortcode",
+      "slug": "box-com-shortcode",
+      "url": "https://filemanagerpro.io/article/box-com-shortcode/",
+      "file": "categories/box-com-shortcode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Box.com Shortcode < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/box-com-shortcode/"
+        }
+      ]
+    },
+    {
+      "title": "Cloudflare R2 Shortcodes",
+      "slug": "cloudflare-r2-shortcodes",
+      "url": "https://filemanagerpro.io/article/cloudflare-r2-shortcodes/",
+      "file": "categories/cloudflare-r2-shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Cloudflare R2 Shortcodes < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/cloudflare-r2-shortcodes/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Shortcode With Filter",
+      "slug": "customize-shortcode-with-filter",
+      "url": "https://filemanagerpro.io/article/customize-shortcode-with-filter/",
+      "file": "categories/customize-shortcode-with-filter.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customize shortcode with filter < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/customize-shortcode-with-filter/"
+        }
+      ]
+    },
+    {
+      "title": "Different File Manager Languages",
+      "slug": "different-file-manager-languages",
+      "url": "https://filemanagerpro.io/article/different-file-manager-languages/",
+      "file": "categories/different-file-manager-languages.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Different File Manager Languages < File Manager Pro Plugin for Wordpress",
+          "url": "https://filemanagerpro.io/article/different-file-manager-languages/"
+        }
+      ]
+    },
+    {
+      "title": "Digital Ocean",
+      "slug": "digital-ocean",
+      "url": "https://filemanagerpro.io/article/digital-ocean/",
+      "file": "categories/digital-ocean.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Digital Ocean < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/digital-ocean/"
+        }
+      ]
+    },
+    {
+      "title": "Dropbox Integration",
+      "slug": "dropbox-integration",
+      "url": "https://filemanagerpro.io/article/dropbox-integration/",
+      "file": "categories/dropbox-integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Dropbox Integration < File Manager Pro Plugin for Wordpress",
+          "url": "https://filemanagerpro.io/article/dropbox-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Dropbox Shortcode",
+      "slug": "dropbox-shortcode",
+      "url": "https://filemanagerpro.io/article/dropbox-shortcode/",
+      "file": "categories/dropbox-shortcode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Dropbox Shortcode < File Manager Pro Plugin for Wordpress",
+          "url": "https://filemanagerpro.io/article/dropbox-shortcode/"
+        }
+      ]
+    },
+    {
+      "title": "Email Notifications",
+      "slug": "email-notifications",
+      "url": "https://filemanagerpro.io/article/email-notifications/",
+      "file": "categories/email-notifications.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Email Notifications < File Manager Pro Plugin for Wordpress",
+          "url": "https://filemanagerpro.io/article/email-notifications/"
+        }
+      ]
+    },
+    {
+      "title": "File Manager Theme",
+      "slug": "file-manager-theme",
+      "url": "https://filemanagerpro.io/article/file-manager-theme/",
+      "file": "categories/file-manager-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "File Manager Theme < File Manager Pro Plugin for Wordpress",
+          "url": "https://filemanagerpro.io/article/file-manager-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Full Screen Code Editor",
+      "slug": "full-screen-code-editor",
+      "url": "https://filemanagerpro.io/article/full-screen-code-editor/",
+      "file": "categories/full-screen-code-editor.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Full Screen Code Editor < File Manager Pro Plugin for Wordpress",
+          "url": "https://filemanagerpro.io/article/full-screen-code-editor/"
+        }
+      ]
+    },
+    {
+      "title": "Google Cloud",
+      "slug": "google-cloud",
+      "url": "https://filemanagerpro.io/article/google-cloud/",
+      "file": "categories/google-cloud.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Google Cloud < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/google-cloud/"
+        }
+      ]
+    },
+    {
+      "title": "Google Drive Integration",
+      "slug": "google-drive-integration",
+      "url": "https://filemanagerpro.io/article/google-drive-integration/",
+      "file": "categories/google-drive-integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Google Drive Integration < File Manager Pro Plugin for Wordpress",
+          "url": "https://filemanagerpro.io/article/google-drive-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Google Drive Integration New",
+      "slug": "google-drive-integration-new",
+      "url": "https://filemanagerpro.io/article/google-drive-integration-new/",
+      "file": "categories/google-drive-integration-new.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Google Drive Integration New < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/google-drive-integration-new/"
+        }
+      ]
+    },
+    {
+      "title": "Google Drive Shortcode",
+      "slug": "google-drive-shortcode",
+      "url": "https://filemanagerpro.io/article/google-drive-shortcode/",
+      "file": "categories/google-drive-shortcode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Google Drive Shortcode < File Manager Pro Plugin for Wordpress",
+          "url": "https://filemanagerpro.io/article/google-drive-shortcode/"
+        }
+      ]
+    },
+    {
+      "title": "How Can I Get My Microsoft Account Client Id And Client Secret Key",
+      "slug": "how-can-i-get-my-microsoft-account-client-id-and-client-secret-key",
+      "url": "https://filemanagerpro.io/article/how-can-i-get-my-microsoft-account-client-id-and-client-secret-key/",
+      "file": "categories/how-can-i-get-my-microsoft-account-client-id-and-client-secret-key.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How To Integrate OneDrive With WP File Manager Pro?",
+          "url": "https://filemanagerpro.io/article/how-can-i-get-my-microsoft-account-client-id-and-client-secret-key/"
+        }
+      ]
+    },
+    {
+      "title": "How To Change File And Folder Permissions Via Ftp",
+      "slug": "how-to-change-file-and-folder-permissions-via-ftp",
+      "url": "https://filemanagerpro.io/article/how-to-change-file-and-folder-permissions-via-ftp/",
+      "file": "categories/how-to-change-file-and-folder-permissions-via-ftp.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Change File and Folder Permissions via FTP < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-change-file-and-folder-permissions-via-ftp/"
+        }
+      ]
+    },
+    {
+      "title": "How To Deny Access To Files Folders Through Htaccess File",
+      "slug": "how-to-deny-access-to-files-folders-through-htaccess-file",
+      "url": "https://filemanagerpro.io/article/how-to-deny-access-to-files-folders-through-htaccess-file/",
+      "file": "categories/how-to-deny-access-to-files-folders-through-htaccess-file.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to deny access to files, folders through htaccess file < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-deny-access-to-files-folders-through-htaccess-file/"
+        }
+      ]
+    },
+    {
+      "title": "How To Download Latest Version Of File Manager Pro",
+      "slug": "how-to-download-latest-version-of-file-manager-pro",
+      "url": "https://filemanagerpro.io/article/how-to-download-latest-version-of-file-manager-pro/",
+      "file": "categories/how-to-download-latest-version-of-file-manager-pro.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to download the latest version of file manager? < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-download-latest-version-of-file-manager-pro/"
+        }
+      ]
+    },
+    {
+      "title": "How To Enable Curl Extension In Php",
+      "slug": "how-to-enable-curl-extension-in-php",
+      "url": "https://filemanagerpro.io/article/how-to-enable-curl-extension-in-php/",
+      "file": "categories/how-to-enable-curl-extension-in-php.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to enable cURL extension in PHP? < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-enable-curl-extension-in-php/"
+        }
+      ]
+    },
+    {
+      "title": "How To Get App Key Secret From Digital Ocean",
+      "slug": "how-to-get-app-key-secret-from-digital-ocean",
+      "url": "https://filemanagerpro.io/article/how-to-get-app-key-secret-from-digital-ocean/",
+      "file": "categories/how-to-get-app-key-secret-from-digital-ocean.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to get App Key & Secret from Digital Ocean < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-get-app-key-secret-from-digital-ocean/"
+        }
+      ]
+    },
+    {
+      "title": "How To Get Aws S3 Api Details",
+      "slug": "how-to-get-aws-s3-api-details",
+      "url": "https://filemanagerpro.io/article/how-to-get-aws-s3-api-details/",
+      "file": "categories/how-to-get-aws-s3-api-details.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to get AWS S3 api details < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-get-aws-s3-api-details/"
+        }
+      ]
+    },
+    {
+      "title": "How To Get Google Cloud Keys",
+      "slug": "how-to-get-google-cloud-keys",
+      "url": "https://filemanagerpro.io/article/how-to-get-google-cloud-keys/",
+      "file": "categories/how-to-get-google-cloud-keys.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to get Google Cloud keys < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-get-google-cloud-keys/"
+        }
+      ]
+    },
+    {
+      "title": "How To Identify The License Key In Case An Email Is Not Received From The Wp File Manager",
+      "slug": "how-to-identify-the-license-key-in-case-an-email-is-not-received-from-the-wp-file-manager",
+      "url": "https://filemanagerpro.io/article/how-to-identify-the-license-key-in-case-an-email-is-not-received-from-the-wp-file-manager/",
+      "file": "categories/how-to-identify-the-license-key-in-case-an-email-is-not-received-from-the-wp-file-manager.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to identify the license key in case an email is not received from the WP File Manager? < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-identify-the-license-key-in-case-an-email-is-not-received-from-the-wp-file-manager/"
+        }
+      ]
+    },
+    {
+      "title": "How To Increase Maximum File Upload Size In Wordpress",
+      "slug": "how-to-increase-maximum-file-upload-size-in-wordpress",
+      "url": "https://filemanagerpro.io/article/how-to-increase-maximum-file-upload-size-in-wordpress/",
+      "file": "categories/how-to-increase-maximum-file-upload-size-in-wordpress.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Increase the Maximum File Upload Size in WordPress?",
+          "url": "https://filemanagerpro.io/article/how-to-increase-maximum-file-upload-size-in-wordpress/"
+        }
+      ]
+    },
+    {
+      "title": "How To Increase The Max_input_vars Limit",
+      "slug": "how-to-increase-the-max_input_vars-limit",
+      "url": "https://filemanagerpro.io/article/how-to-increase-the-max_input_vars-limit/",
+      "file": "categories/how-to-increase-the-max_input_vars-limit.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to increase the max_input_vars Limit? < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-increase-the-max_input_vars-limit/"
+        }
+      ]
+    },
+    {
+      "title": "How To Migrate License To Other Domain",
+      "slug": "how-to-migrate-license-to-other-domain",
+      "url": "https://filemanagerpro.io/article/how-to-migrate-license-to-other-domain/",
+      "file": "categories/how-to-migrate-license-to-other-domain.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to migrate your license to other domain? < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/how-to-migrate-license-to-other-domain/"
+        }
+      ]
+    },
+    {
+      "title": "Maximum Upload Size",
+      "slug": "maximum-upload-size",
+      "url": "https://filemanagerpro.io/article/maximum-upload-size/",
+      "file": "categories/maximum-upload-size.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Maximum Upload Size < File Manager Pro Plugin for Wordpress",
+          "url": "https://filemanagerpro.io/article/maximum-upload-size/"
+        }
+      ]
+    },
+    {
+      "title": "One Drive Shortcode",
+      "slug": "one-drive-shortcode",
+      "url": "https://filemanagerpro.io/article/one-drive-shortcode/",
+      "file": "categories/one-drive-shortcode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "One Drive Shortcode < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/one-drive-shortcode/"
+        }
+      ]
+    },
+    {
+      "title": "Prevent Direct File Access To Your Plugin Files",
+      "slug": "prevent-direct-file-access-to-your-plugin-files",
+      "url": "https://filemanagerpro.io/article/prevent-direct-file-access-to-your-plugin-files/",
+      "file": "categories/prevent-direct-file-access-to-your-plugin-files.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Prevent direct file access to your plugin files < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/prevent-direct-file-access-to-your-plugin-files/"
+        }
+      ]
+    },
+    {
+      "title": "Root Directory",
+      "slug": "root-directory",
+      "url": "https://filemanagerpro.io/article/root-directory/",
+      "file": "categories/root-directory.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Root Directory < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/root-directory/"
+        }
+      ]
+    },
+    {
+      "title": "Separate Or Private Folder Access",
+      "slug": "separate-or-private-folder-access",
+      "url": "https://filemanagerpro.io/article/separate-or-private-folder-access/",
+      "file": "categories/separate-or-private-folder-access.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Separate or Private Folder Access < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/separate-or-private-folder-access/"
+        }
+      ]
+    },
+    {
+      "title": "Theme For Code Editor",
+      "slug": "theme-for-code-editor",
+      "url": "https://filemanagerpro.io/article/theme-for-code-editor/",
+      "file": "categories/theme-for-code-editor.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Theme for Code Editor < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/theme-for-code-editor/"
+        }
+      ]
+    },
+    {
+      "title": "User Restriction Usage",
+      "slug": "user-restriction-usage",
+      "url": "https://filemanagerpro.io/article/user-restriction-usage/",
+      "file": "categories/user-restriction-usage.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "User Restriction Usage < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/user-restriction-usage/"
+        }
+      ]
+    },
+    {
+      "title": "User Restrictions",
+      "slug": "user-restrictions",
+      "url": "https://filemanagerpro.io/article/user-restrictions/",
+      "file": "categories/user-restrictions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "User Restrictions < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/user-restrictions/"
+        }
+      ]
+    },
+    {
+      "title": "User Role Restriction Usage",
+      "slug": "user-role-restriction-usage",
+      "url": "https://filemanagerpro.io/article/user-role-restriction-usage/",
+      "file": "categories/user-role-restriction-usage.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "User Role Restriction Usage < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/user-role-restriction-usage/"
+        }
+      ]
+    },
+    {
+      "title": "User Role Restrictions",
+      "slug": "user-role-restrictions",
+      "url": "https://filemanagerpro.io/article/user-role-restrictions/",
+      "file": "categories/user-role-restrictions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "User Role Restrictions < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/user-role-restrictions/"
+        }
+      ]
+    },
+    {
+      "title": "Wp File Manager Access Only To Particular User Type Roles",
+      "slug": "wp-file-manager-access-only-to-particular-user-type-roles",
+      "url": "https://filemanagerpro.io/article/wp-file-manager-access-only-to-particular-user-type-roles/",
+      "file": "categories/wp-file-manager-access-only-to-particular-user-type-roles.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WP File Manager access only to particular User Type Roles .",
+          "url": "https://filemanagerpro.io/article/wp-file-manager-access-only-to-particular-user-type-roles/"
+        }
+      ]
+    },
+    {
+      "title": "Wp File Manager Admin Shortcode",
+      "slug": "wp-file-manager-admin-shortcode",
+      "url": "https://filemanagerpro.io/article/wp-file-manager-admin-shortcode/",
+      "file": "categories/wp-file-manager-admin-shortcode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "wp file manager admin shortcode < File Manager Pro",
+          "url": "https://filemanagerpro.io/article/wp-file-manager-admin-shortcode/"
+        }
+      ]
+    }
+  ]
+}

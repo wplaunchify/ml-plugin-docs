@@ -1,0 +1,479 @@
+{
+  "plugin_slug": "prime-mover",
+  "plugin_name": "Prime Mover",
+  "documentation_url": "https://codexonics.com/prime_mover/",
+  "last_scraped": "2026-07-05T16:26:26.852Z",
+  "total_pages": 115,
+  "failed_urls_count": 0,
+  "sections": [
+    {
+      "title": "Prime Mover",
+      "slug": "prime-mover",
+      "url": "https://codexonics.com/prime_mover/prime-mover/",
+      "file": "categories/prime-mover.md",
+      "page_count": 115,
+      "pages": [
+        {
+          "title": "Prime Mover – WordPress Single-Site / Multisite Migration Plugin",
+          "url": "https://codexonics.com/prime_mover/prime-mover/"
+        },
+        {
+          "title": "A Complete Guide on using Prime Mover Licenses",
+          "url": "https://codexonics.com/prime_mover/prime-mover/a-complete-guide-on-using-prime-mover-licenses/"
+        },
+        {
+          "title": "Automatic Backup – Frequently Asked Questions",
+          "url": "https://codexonics.com/prime_mover/prime-mover/automatic-backup-frequently-asked-questions/"
+        },
+        {
+          "title": "Can I change the exporting Blog ID to another site importing blog ID?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/can-i-change-the-exporting-blog-id-to-another-site-importing-blog-id/"
+        },
+        {
+          "title": "Compatible local development apps – Prime Mover plugin",
+          "url": "https://codexonics.com/prime_mover/prime-mover/compatible-local-development-apps-prime-mover-plugin/"
+        },
+        {
+          "title": "Configure Basic Settings in Prime Mover Pro",
+          "url": "https://codexonics.com/prime_mover/prime-mover/configure-basic-settings-in-prime-mover-pro/"
+        },
+        {
+          "title": "Corrupted WPRIME packages troubleshooting",
+          "url": "https://codexonics.com/prime_mover/prime-mover/corrupted-wprime-packages-troubleshooting/"
+        },
+        {
+          "title": "cURL error 28: Connection timed out after 10001 milliseconds when importing Prime Mover package",
+          "url": "https://codexonics.com/prime_mover/prime-mover/curl-error-28-connection-timed-out-after-10001-milliseconds-when-importing-prime-mover-package/"
+        },
+        {
+          "title": "Custom user adjustment usage feature",
+          "url": "https://codexonics.com/prime_mover/prime-mover/custom-user-adjustment-usage-feature/"
+        },
+        {
+          "title": "Error: Your MySQL server max_allowed_packet size is insufficient",
+          "url": "https://codexonics.com/prime_mover/prime-mover/error-your-mysql-server-max_allowed_packet-size-is-insufficient/"
+        },
+        {
+          "title": "Export stuck at 0% – Troubleshooting guide",
+          "url": "https://codexonics.com/prime_mover/prime-mover/export-stuck-at-0-troubleshooting-guide/"
+        },
+        {
+          "title": "FAQ – How does WordPress multisite migration affects the main site?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq-how-does-wordpress-multisite-migration-affects-the-main-site/"
+        },
+        {
+          "title": "FAQ – How to activate Prime Mover PRO?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq-how-to-activate-prime-mover-pro/"
+        },
+        {
+          "title": "FAQ: How to download WPRIME package via other methods?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/"
+        },
+        {
+          "title": "FAQ – I cannot activate license, how to fix?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/"
+        },
+        {
+          "title": "FAQ: Runtime error on Windows: Failed to open stream: No such file or directory",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq-runtime-error-on-windows-failed-to-open-stream-no-such-file-or-directory/"
+        },
+        {
+          "title": "FAQ – Troubleshoot Slow Uploads on Package restoration on Local / Remote",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq-troubleshoot-slow-uploads-on-package-restoration-on-local-remote/"
+        },
+        {
+          "title": "FAQ – User difference detection feature",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq-user-difference-detection-feature/"
+        },
+        {
+          "title": "FAQ: What is the difference between “Export as subsite backup” and “Export to multisite format?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq-what-is-the-difference-between-export-as-subsite-backup-and-export-to-multisite-format/"
+        },
+        {
+          "title": "FAQ – When migrating a multisite to another multisite – do source subsite and target subsite IDs need to be the same?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq-when-migrating-a-multisite-to-another-multisite-do-source-subsite-and-target-subsite-ids-need-to-be-the-same/"
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq/"
+        },
+        {
+          "title": "Error: Wrong import site package! Please check that the import package is correct for this site.",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq/error-wrong-import-site-package-please-check-that-the-import-package-is-correct-for-this-site/"
+        },
+        {
+          "title": "How many licenses do I need? I would like to avail myself of a free trial or purchase a license.",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq/i-would-like-to-avail-myself-of-a-free-trial-or-purchase-a-license-how-many-licenses-do-i-need/"
+        },
+        {
+          "title": "Should I adjust my server timeout settings to export or restore large sites?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq/should-i-adjust-my-server-timeout-settings-to-export-or-restore-large-sites/"
+        },
+        {
+          "title": "What is the complete list of files that have been migrated or backed up?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq/what-is-the-complete-list-of-files-migrated-or-backed-up/"
+        },
+        {
+          "title": "Who is Freemius? Can I deactivate or remove Freemius?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq/who-is-freemius-can-i-deactivate-or-remove-freemius/"
+        },
+        {
+          "title": "Will the free version be able to handle huge sites?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/faq/will-the-free-version-be-able-to-handle-huge-sites/"
+        },
+        {
+          "title": "General Documentation",
+          "url": "https://codexonics.com/prime_mover/prime-mover/general-documentation/"
+        },
+        {
+          "title": "How to legally purchase the PRO version?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/general-documentation/how-to-legally-purchase-the-pro-version/"
+        },
+        {
+          "title": "Migration tip: Do not use relative URLs in your WordPress site development",
+          "url": "https://codexonics.com/prime_mover/prime-mover/general-documentation/migration-tip-do-not-use-relative-urls-in-your-wordpress-site-development/"
+        },
+        {
+          "title": "Getting Started with Pro Version",
+          "url": "https://codexonics.com/prime_mover/prime-mover/getting-started-with-pro-version/"
+        },
+        {
+          "title": "Help! I’m not able to login to my site due to insufficient disk space (after creating a backup)",
+          "url": "https://codexonics.com/prime_mover/prime-mover/help-im-not-able-to-login-to-my-site-due-to-insufficient-disk-space-after-creating-backup/"
+        },
+        {
+          "title": "Help! My export and restore is very slow after updating to Prime Mover 1.9.5+",
+          "url": "https://codexonics.com/prime_mover/prime-mover/help-my-export-and-restore-is-very-slow-after-updating-to-prime-mover-1-9-5/"
+        },
+        {
+          "title": "How do we exclude database tables in Prime Mover export?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-do-we-exclude-database-tables-in-prime-mover-export/"
+        },
+        {
+          "title": "How do we know if the site has a Prime Mover PRO license activated?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-do-we-know-if-the-site-has-a-prime-mover-pro-license-activated/"
+        },
+        {
+          "title": "How does Prime Mover works in hosts that restricts wp-config.php writing access?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-does-prime-mover-works-in-hosts-that-restricts-wp-config-php-writing-access/"
+        },
+        {
+          "title": "How to activate license in Prime Mover PRO?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-activate-license-in-prime-mover-pro/"
+        },
+        {
+          "title": "How to activate Prime Mover PRO licenses in some of your WordPress Multisite Subsites?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-activate-prime-mover-pro-licenses-in-some-of-your-wordpress-multisite/"
+        },
+        {
+          "title": "How to Add and Configure Authorization Keys ?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-add-and-use-authorization-keys-in-migrations/"
+        },
+        {
+          "title": "How to add custom backup schedules for automatic backup?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-add-custom-backup-schedules-for-automatic-backup/"
+        },
+        {
+          "title": "How to add default Prime Mover constants to “mu-plugins” directory?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-add-default-prime-mover-constants-to-mu-plugins-directory/"
+        },
+        {
+          "title": "How to backup and migrate multisite main site in WordPress?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-backup-and-migrate-multisite-main-site-in-wordpress/"
+        },
+        {
+          "title": "How to cancel ongoing export or import and try again?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-cancel-ongoing-export-and-try-again/"
+        },
+        {
+          "title": "How to convert WordPress multisite main site into a single site installation?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-convert-wordpress-multisite-main-site-into-a-single-site-installation/"
+        },
+        {
+          "title": "How to create a fresh WordPress multisite install with a specific network administrator email?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-create-a-fresh-wordpress-multisite-install-with-a-specific-network-administrator-email/"
+        },
+        {
+          "title": "How to create a fresh WordPress install with a specific administrator email?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-create-fresh-wordpress-install-with-specific-administrator-email/"
+        },
+        {
+          "title": "How to enable automatic backup for WordPress multisite and single-site?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-enable-automatic-backup-for-wordpress-multisite-and-single-site/"
+        },
+        {
+          "title": "How to Enable Encryption Support in Prime Mover Pro version?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-enable-encryption-support-in-prime-mover/"
+        },
+        {
+          "title": "How to Exclude Plugins in Prime Mover Pro?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/"
+        },
+        {
+          "title": "How to exclude upload media files in Prime Mover Pro?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-exclude-upload-media-files-in-prime-mover-pro/"
+        },
+        {
+          "title": "How to Export and Restore using Remote URL feature",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-export-and-restore-using-pro-version/"
+        },
+        {
+          "title": "How to free up space and deleting unneeded files and backups?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-free-up-space-and-deleting-unneeded-files-and-backups/"
+        },
+        {
+          "title": "How to generate an invoice under the company name after purchase?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-generate-an-invoice-under-the-company-name-after-purchase/"
+        },
+        {
+          "title": "How to get multisite subsite target blog ID ?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-get-multisite-target-blog-id/"
+        },
+        {
+          "title": "How to manually extract WPRIME package?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-manually-extract-wprime-package/"
+        },
+        {
+          "title": "How to migrate very large WordPress sites by parts?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-migrate-very-large-wordpress-sites-by-parts/"
+        },
+        {
+          "title": "How to migrate your WordPress multisite sub-site to another multisite subsite or network",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-multisite-sub-site-to-another-multisite-sub-site/"
+        },
+        {
+          "title": "How to migrate your WordPress multisite sub-site to single-site",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-multisite-sub-site-to-single-site/"
+        },
+        {
+          "title": "How to migrate your WordPress single-site to multisite sub-site",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-migrate-your-wordpress-single-site-to-multisite-sub-site/"
+        },
+        {
+          "title": "How to restart scheduled backup process?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-restart-scheduled-backup-process/"
+        },
+        {
+          "title": "How to restore backup packages using the new Prime Mover backup management?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-restore-backup-packages-using-the-new-prime-mover-backup-management-added-in-version-1-0-7/"
+        },
+        {
+          "title": "How to restore large packages with Prime Mover Free version?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-restore-large-packages-with-prime-mover-free-version/"
+        },
+        {
+          "title": "How to submit debug data to support?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/"
+        },
+        {
+          "title": "How to uninstall Prime Mover plugin?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-uninstall-prime-mover-plugin/"
+        },
+        {
+          "title": "How to update Prime Mover PRO to the latest version if you encounter an error?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-update-prime-mover-pro-to-the-latest-version-if-you-encounter-an-error/"
+        },
+        {
+          "title": "How to upgrade to PRO plan from free version?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-upgrade-your-existing-pro-plan-to-higher-plan/"
+        },
+        {
+          "title": "How to use external cron service to trigger automatic backups?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-use-external-cron-service-to-trigger-automatic-backups/"
+        },
+        {
+          "title": "How to use your hosting cron to trigger automatic backups?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/how-to-use-your-hosting-cron-to-trigger-automatic-backups/"
+        },
+        {
+          "title": "I got “Export fails” or “Import Fails” Error – Can you try increasing web server timeout?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/i-got-export-fails-or-import-fails-error-can-you-try-increasing-web-server-timeout/"
+        },
+        {
+          "title": "Import / Restoration Hang or Freeze Issue Troubleshooting",
+          "url": "https://codexonics.com/prime_mover/prime-mover/import-restoration-hang-or-freeze-issue/"
+        },
+        {
+          "title": "Prime Mover single-site and multisite packages",
+          "url": "https://codexonics.com/prime_mover/prime-mover/important-notes-on-prime-mover-single-site-and-multisite-packages/"
+        },
+        {
+          "title": "Mismatch Import! Error – Troubleshooting and Solutions",
+          "url": "https://codexonics.com/prime_mover/prime-mover/mismatch-import-error-troubleshooting-and-solutions/"
+        },
+        {
+          "title": "Optimize Local WP in the Windows operating system for best performance",
+          "url": "https://codexonics.com/prime_mover/prime-mover/optimize-local-wp-in-the-windows-operating-system-for-best-performance/"
+        },
+        {
+          "title": "PHP Fatal error:  Uncaught Error: Call to a member function is_anonymous() on bool",
+          "url": "https://codexonics.com/prime_mover/prime-mover/php-fatal-error-uncaught-error-call-to-a-member-function-is_anonymous-on-bool/"
+        },
+        {
+          "title": "Post-migration Troubleshooting: Tips and Advice",
+          "url": "https://codexonics.com/prime_mover/prime-mover/post-migration-troubleshooting-tips-and-advices/"
+        },
+        {
+          "title": "Prime Mover PRO Pricing – Compare and Purchase",
+          "url": "https://codexonics.com/prime_mover/prime-mover/pricing/"
+        },
+        {
+          "title": "Prime Mover Dropbox Integration",
+          "url": "https://codexonics.com/prime_mover/prime-mover/prime-mover-dropbox-integration/"
+        },
+        {
+          "title": "Prime Mover Pro Custom Backup Directory",
+          "url": "https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-custom-backup-directory/"
+        },
+        {
+          "title": "Prime Mover PRO Google Drive API Integration",
+          "url": "https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-google-drive-api-integration/"
+        },
+        {
+          "title": "Prime Mover PRO: How to deactivate licenses and transfer to another site?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/"
+        },
+        {
+          "title": "Prime Mover Pro: Media files NOT encrypted when it should be",
+          "url": "https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-media-files-not-encrypted-when-it-should-be/"
+        },
+        {
+          "title": "Prime Mover Technical Requirements",
+          "url": "https://codexonics.com/prime_mover/prime-mover/prime-mover-technical-requirements/"
+        },
+        {
+          "title": "Prime Mover User Adjustment API",
+          "url": "https://codexonics.com/prime_mover/prime-mover/prime-mover-user-adjustment-api/"
+        },
+        {
+          "title": "Prime Mover User Migration Documentation",
+          "url": "https://codexonics.com/prime_mover/prime-mover/prime-mover-user-migration-documentation/"
+        },
+        {
+          "title": "PRO version documentation",
+          "url": "https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/"
+        },
+        {
+          "title": "How do I activate the license across all subsites in a multisite network?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/how-do-i-activate-the-license-across-all-subsites-in-a-multisite-network/"
+        },
+        {
+          "title": "Refresh page builder cache to fix missing images after migration",
+          "url": "https://codexonics.com/prime_mover/prime-mover/refresh-page-builder-cache-to-fix-missing-images-after-migration/"
+        },
+        {
+          "title": "Runtime error: Mismatch source and target database charset error",
+          "url": "https://codexonics.com/prime_mover/prime-mover/runtime-error-mismatch-source-and-target-database-charset-error/"
+        },
+        {
+          "title": "Runtime error: Theme files missing for export. Check if you have themes activated.",
+          "url": "https://codexonics.com/prime_mover/prime-mover/runtime-error-theme-files-missing-for-export-check-if-you-have-themes-activated/"
+        },
+        {
+          "title": "Runtime error: Uncaught TypeError: urldecode(): Argument #1 ($string) must be of type string, array given",
+          "url": "https://codexonics.com/prime_mover/prime-mover/runtime-error-uncaught-typeerror-urldecode-argument-1-string-must-be-of-type-string-array-given/"
+        },
+        {
+          "title": "Solution: 403 Forbidden error after Prime Mover purchase / upgrade",
+          "url": "https://codexonics.com/prime_mover/prime-mover/solution-403-forbidden-error-after-prime-mover-purchase-upgrade/"
+        },
+        {
+          "title": "“Sorry, you are not allowed to access this page.” when downloading Prime Mover PRO",
+          "url": "https://codexonics.com/prime_mover/prime-mover/sorry-you-are-not-allowed-to-access-this-page-when-downloading-prime-mover-pro/"
+        },
+        {
+          "title": "Best practices when migrating large sites with Prime Mover Plugin",
+          "url": "https://codexonics.com/prime_mover/prime-mover/tips-and-techniques-in-migrating-large-sites-with-prime-mover-plugin/"
+        },
+        {
+          "title": "Troubleshooting: All posts and pages are 404 after migration except the homepage",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-all-post-and-pages-are-404-after-migration-except-homepage/"
+        },
+        {
+          "title": "Troubleshooting: ArchiveIOException – Failed to write to archive stream during Export",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-archiveioexception-failed-to-write-to-archive-stream-during-export/"
+        },
+        {
+          "title": "Troubleshooting Dropbox integration issues with Prime Mover",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-dropbox-integration-issues-with-prime-mover/"
+        },
+        {
+          "title": "Troubleshooting: Export process fails for site ID if using Cloudflare",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-export-process-fails-for-site-id-if-using-cloudflare/"
+        },
+        {
+          "title": "Troubleshooting guide",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/"
+        },
+        {
+          "title": "Parallel Export and Import-Restore – is it supported?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/parallel-export-and-import-restore-is-it-supported/"
+        },
+        {
+          "title": "The uploaded file exceeds the upload_max_filesize directive in php.ini – unable to install or update plugin",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/the-uploaded-file-exceeds-the-upload_max_filesize-directive-in-php-ini-unable-to-install-or-update-plugin/"
+        },
+        {
+          "title": "Troubleshooting permission issues with Prime Mover plugin",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/troubleshooting-permission-issues-with-prime-mover-plugin/"
+        },
+        {
+          "title": "Troubleshooting: I have not received account-related emails since the purchase.",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-i-have-not-received-account-related-emails-since-the-purchase/"
+        },
+        {
+          "title": "Troubleshooting: Invalid Site Details Collection – Plugin activation error",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-invalid-site-details-collection-plugin-activation-error/"
+        },
+        {
+          "title": "Troubleshooting: `mysqli_stmt_get_result()` – plugin cannot be activated if this function is missing",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-mysqli_stmt_get_result-plugin-cannot-be-activated-if-this-function-is-missing/"
+        },
+        {
+          "title": "Troubleshooting: No packages found",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-no-packages-found/"
+        },
+        {
+          "title": "Troubleshooting: Site URL is not defined in this site. Please check your multisite settings",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-site-url-is-not-defined-in-this-site-please-check-your-multisite-settings/"
+        },
+        {
+          "title": "Troubleshooting: Stalled restore/import or export guide",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-stalled-restore-or-export-guide/"
+        },
+        {
+          "title": "Troubleshooting: Unable to activate Prime Mover in restricted mu-plugins directory",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-unable-to-activate-prime-mover-in-restricted-mu-plugins-directory/"
+        },
+        {
+          "title": "Troubleshooting:  Unable to rename tables, please check that your database is not empty or these tables exists",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-unable-to-rename-tables-please-check-that-your-database-is-not-empty-or-these-tables-exists/"
+        },
+        {
+          "title": "Troubleshooting: “Unauthorized Download” error when using remote URL PRO feature?",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-unauthorized-download-error-when-using-remote-url-pro-feature/"
+        },
+        {
+          "title": "Troubleshooting: yourpackage.wprime is not a valid migration package when using Hostinger Preview domain",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-yourpackage-wprime-is-not-a-valid-migration-package-when-using-hostinger-preview-domain/"
+        },
+        {
+          "title": "Understanding Prime Mover backup options",
+          "url": "https://codexonics.com/prime_mover/prime-mover/understanding-prime-mover-backup-options/"
+        },
+        {
+          "title": "How to migrate your WordPress single-site to another single site",
+          "url": "https://codexonics.com/prime_mover/prime-mover/video-how-to-migrate-your-wordpress-single-site-to-another-single-site/"
+        },
+        {
+          "title": "Workaround – Unable to install theme or delete plugins after migration from multisite to single-site (standalone)",
+          "url": "https://codexonics.com/prime_mover/prime-mover/workaround-unable-to-install-theme-or-delete-plugins-after-migration-from-multisite-to-single-site-standalone/"
+        },
+        {
+          "title": "Error: Some file paths exceed Windows MAX_PATH limit",
+          "url": "https://codexonics.com/prime_mover/prime-mover/zip-failed-some-file-paths-exceed-windows-max_path-limit/"
+        }
+      ]
+    }
+  ]
+}

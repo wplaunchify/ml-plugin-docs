@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wp File Manager scraper
-        run: node scraper.js --slug=wp-file-manager --mode=html-scrape --url=https://docs.wpfilemanager.com/ --name="WP File Manager"
+        run: node scraper.js --slug=wp-file-manager --mode=sitemap --url=https://filemanagerpro.io/article/ --selector=.article_container --name="WP File Manager"
 
       - name: Check for changes
         id: changes
