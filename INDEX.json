@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T09:49:47.944Z",
+  "last_updated": "2026-07-05T09:50:15.567Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -1060,7 +1060,7 @@
       "slug": "simple-post-redirect",
       "name": "Simple Post Redirect",
       "documentation_url": "https://wordpress.org/plugins/simple-post-redirect/",
-      "last_scraped": "2026-06-28T10:00:51.091Z",
+      "last_scraped": "2026-07-05T09:50:15.567Z",
       "page_count": 1,
       "categories": [
         "advanced"
