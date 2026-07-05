@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T10:46:32.073Z",
+  "last_updated": "2026-07-05T11:29:48.714Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -749,7 +749,7 @@
       "slug": "kadence-blocks-pro-extension",
       "name": "Kadence Blocks - PRO Extension",
       "documentation_url": "https://www.kadencewp.com/help-center/documentation/",
-      "last_scraped": "2026-06-28T11:32:22.555Z",
+      "last_scraped": "2026-07-05T11:29:48.714Z",
       "page_count": 0,
       "categories": []
     },
