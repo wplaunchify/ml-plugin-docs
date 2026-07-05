@@ -1,10 +1,41 @@
 {
   "plugin_slug": "simple-history",
   "plugin_name": "Simple History",
-  "last_scraped": "2026-06-28T21:24:34.474Z",
-  "total_pages": 10,
+  "last_scraped": "2026-07-05T21:23:28.662Z",
+  "total_pages": 11,
   "failed_urls": [],
   "pages": [
+    {
+      "title": "Support",
+      "url": "https://simple-history.com/support/",
+      "category": "Overview",
+      "content": "**For the free version** of Simple History you can use the [support forum](https://wordpress.org/support/plugin/simple-history/) to ask questions.\n\n**For questions about paid add-ons** (like [Premium](https://simple-history.com/add-ons/premium/) or [WooCommerce logger](https://simple-history.com/add-ons/woocommerce/)) you can email us at [support@simple-history.com](mailto:support@simple-history.com).\n\nThere is also support articles and developer documentation available:\n\n## Support\n\n- #### How do I manage my add-on subscriptions\n- #### What is an initiator\n- #### Weekly email reports\n- #### GDPR and Privacy: How Your Data is Stored in Simple History\n- #### Got a charge from “LEMSQZY* SIMPLE-HISTORY”?\n- #### Troubleshooting errors when loading events\n- #### ⏰ Why is the time of my events wrong?\n- #### Third party plugins with support for Simple History\n- #### Does it work with SQLite? (Yes it does!)\n- #### Detective mode\n\n## Developer documentation\n\n- #### How Simple History detects AI agents\n- #### REST API endpoints\n- #### How do I get a Google Maps API key to use in the Premium Add-On?\n- #### Feeds\n- #### FAQ (Frequently Asked Questions)\n- #### Add or update translations of the plugin\n- #### Logger example\n- #### Log Levels\n- #### Actions and filters (hooks)\n- #### Query API",
+      "headings": [
+        "Support",
+        "How do I manage my add-on subscriptions",
+        "What is an initiator",
+        "Weekly email reports",
+        "GDPR and Privacy: How Your Data is Stored in Simple History",
+        "Got a charge from “LEMSQZY* SIMPLE-HISTORY”?",
+        "Troubleshooting errors when loading events",
+        "⏰ Why is the time of my events wrong?",
+        "Third party plugins with support for Simple History",
+        "Does it work with SQLite? (Yes it does!)",
+        "Detective mode",
+        "Developer documentation",
+        "How Simple History detects AI agents",
+        "REST API endpoints",
+        "How do I get a Google Maps API key to use in the Premium Add-On?",
+        "Feeds",
+        "FAQ (Frequently Asked Questions)",
+        "Add or update translations of the plugin",
+        "Logger example",
+        "Log Levels",
+        "Actions and filters (hooks)",
+        "Query API"
+      ],
+      "code_blocks": []
+    },
     {
       "title": "Detective mode",
       "url": "https://simple-history.com/support/detective-mode/",
