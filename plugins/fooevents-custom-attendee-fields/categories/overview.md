@@ -1,4 +1,4 @@
-# Fooevents Ultimate Event Checklist
+# Overview
 
 *Category from FooEvents Custom Attendee Fields documentation*
 
@@ -6,7 +6,7 @@
 
 ## Sell tickets to your events, venues and bookable services like a pro!
 
-**Source:** [https://www.fooevents.com/fooevents-ultimate-event-checklist/](https://www.fooevents.com/fooevents-ultimate-event-checklist/)
+**Source:** [https://www.fooevents.com](https://www.fooevents.com)
 
 ### The #1 Event, Ticketing & Bookings Platform for WooCommerce
 				# Sell tickets to your events, venues and bookable services like a pro!

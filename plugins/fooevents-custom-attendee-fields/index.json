@@ -2,8 +2,8 @@
   "plugin_slug": "fooevents-custom-attendee-fields",
   "plugin_name": "FooEvents Custom Attendee Fields",
   "documentation_url": "https://www.fooevents.com",
-  "last_scraped": "2026-06-28T22:22:34.339Z",
-  "total_pages": 56,
+  "last_scraped": "2026-07-05T22:20:24.316Z",
+  "total_pages": 57,
   "failed_urls_count": 2,
   "sections": [
     {
@@ -289,6 +289,19 @@
         {
           "title": "Verkoop tickets voor je evenementen, locaties en boekbare diensten als een pro!",
           "url": "https://www.fooevents.com/nl/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://www.fooevents.comoverview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sell tickets to your events, venues and bookable services like a pro!",
+          "url": "https://www.fooevents.com"
         }
       ]
     },
