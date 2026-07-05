@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T12:31:43.008Z",
+  "last_updated": "2026-07-05T12:32:19.528Z",
   "total_plugins": 118,
   "plugins": [
     {
@@ -156,7 +156,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-06-28T12:33:22.713Z",
+      "last_scraped": "2026-07-05T12:32:16.876Z",
       "page_count": 0,
       "categories": []
     },
@@ -252,7 +252,7 @@
       "slug": "fluent-forms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-07-05T12:31:43.008Z",
+      "last_scraped": "2026-07-05T12:31:43.007Z",
       "page_count": 0,
       "categories": []
     },
@@ -595,7 +595,7 @@
       "slug": "fooevents-express-check-in",
       "name": "FooEvents Express Check-in",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-05T12:28:45.142Z",
+      "last_scraped": "2026-07-05T12:28:45.133Z",
       "page_count": 56,
       "categories": [
         "about-us",
