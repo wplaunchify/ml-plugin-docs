@@ -2,8 +2,8 @@
   "plugin_slug": "luckywp-table-of-contents",
   "plugin_name": "LuckyWP Table of Contents",
   "documentation_url": "https://wordpress.org/plugins/luckywp-table-of-contents/",
-  "last_scraped": "2026-07-05T16:27:39.091Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T10:30:18.991Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "LuckyWP Table of Contents",
           "url": "https://wordpress.org/plugins/luckywp-table-of-contents/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/luckywp-table-of-contents/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "LuckyWP Table of Contents",
+          "url": "https://wordpress.org/plugins/luckywp-table-of-contents/"
         }
       ]
     }
