@@ -1,10 +1,22 @@
 {
   "plugin_slug": "wpc-variations-radio-buttons-for-woocommerce-premium",
   "plugin_name": "WPC Variations Radio Buttons for WooCommerce (Premium)",
-  "last_scraped": "2026-07-05T16:26:40.527Z",
-  "total_pages": 6,
+  "last_scraped": "2026-07-12T05:08:23.817Z",
+  "total_pages": 7,
   "failed_urls": [],
   "pages": [
+    {
+      "title": "WPC Variations Radio Buttons",
+      "url": "https://doc.wpclever.net/woovr/",
+      "category": "Overview",
+      "content": "- Add beautiful selector interfaces: Radio Buttons (default), ddSlick, Select2, & HTML tags.\n- Show or Hide stock, image, price, description for variations.\n- Show or Hide out-of-stock variations.\n- Format variations with attributes.\n- Choose a different interface for each product.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woovr_772x250_2021.png)\n\n[LIVE DEMO](https://demo.wpclever.net/woovr/)\n\nIn order to use it, please activate the plugin then go to WPClever >> Variations Radio Buttons and choose a selector interface for all variable products on your site.\n\nWith the Premium version, users can open the Radio Buttons tab on the single product page of each item to choose a different interface on the product level. So you can have multiple interfaces for different products in your store.\n\nFor variable products inside special products such as Smart Bundles, Smart Grouped , Bought Together and Force Sells, users can choose “Use WPC Variations Radio Buttons” for the “Variations selector” option in the plugin settings of each aforementioned plugin.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-variation-radio-button.png)\n\n#### SEE DIFFERENT INTERFACES IN THE FRONTEND\n\n#### Custom name & image for Variable Products\n\nUsing this plugin, users can shorten the variation title or use a custom image for each variation. You can find the *WPC Variations Radio Buttons* section in the *Variations* tab of the variable product page.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/01/custom-name.png)\n\nThen in the Radio Buttons tab, choose to enable the Radio Buttons and select an interface.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/01/woovr-custom-name.png)How custom name in this plugin shows on variable products.\n\nThese custom names and images can only be displayed for variable products inside special products such as Smart bundles, Smart grouped product, Bought Together and Force Sells products.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2022/01/woovr-custom-name.gif)Custom names from this plugin can be used for variable products within special product types as well.\n### Articles\n\n- [Getting Started](https://doc.wpclever.net/woovr/getting-started/)\n- [Versions](https://doc.wpclever.net/woovr/versions/)\n- [Free version](https://doc.wpclever.net/woovr/versions/free-version/)\n- [Premium version](https://doc.wpclever.net/woovr/versions/premium-version/)\n- [Plugin settings](https://doc.wpclever.net/woovr/plugin-settings/)\n- [WPC Plugin Compatibility](https://doc.wpclever.net/woovr/wpc-plugin-compatibility/)",
+      "headings": [
+        "SEE DIFFERENT INTERFACES IN THE FRONTEND",
+        "Custom name & image for Variable Products",
+        "Articles"
+      ],
+      "code_blocks": []
+    },
     {
       "title": "Getting Started",
       "url": "https://doc.wpclever.net/woovr/getting-started/",

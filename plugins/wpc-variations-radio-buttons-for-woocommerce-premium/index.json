@@ -2,8 +2,8 @@
   "plugin_slug": "wpc-variations-radio-buttons-for-woocommerce-premium",
   "plugin_name": "WPC Variations Radio Buttons for WooCommerce (Premium)",
   "documentation_url": "https://doc.wpclever.net/woovr/",
-  "last_scraped": "2026-07-05T16:26:40.533Z",
-  "total_pages": 6,
+  "last_scraped": "2026-07-12T05:08:23.818Z",
+  "total_pages": 7,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Getting Started",
           "url": "https://doc.wpclever.net/woovr/getting-started/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://doc.wpclever.net/woovr/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WPC Variations Radio Buttons",
+          "url": "https://doc.wpclever.net/woovr/"
         }
       ]
     },
