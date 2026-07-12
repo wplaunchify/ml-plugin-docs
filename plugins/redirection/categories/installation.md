@@ -12,8 +12,8 @@
 
 The plugin has the following requirements:
 
-- WordPress 5.3 or greater
-- PHP 5.6 to 8.1
+- WordPress 6.6 or greater
+- PHP 7.4+
 - Permalink support
 
 It will run on any server, such as Apache, Nginx, and even IIS, provided you have [WordPress permalinks](https://codex.wordpress.org/Using_Permalinks) already running and requests for the URLs you want to redirect are being served by WordPress.

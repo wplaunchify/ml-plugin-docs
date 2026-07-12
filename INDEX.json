@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T15:21:09.744Z",
+  "last_updated": "2026-07-12T15:22:11.864Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2572,8 +2572,8 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-07-05T15:26:55.244Z",
-      "page_count": 24,
+      "last_scraped": "2026-07-12T15:22:11.864Z",
+      "page_count": 25,
       "categories": [
         "beta-release",
         "create-redirects",
@@ -2588,6 +2588,7 @@
         "matching-a-url",
         "matching-redirects",
         "options",
+        "overview",
         "privacy-gdpr",
         "problems",
         "redirect-actions",

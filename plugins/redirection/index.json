@@ -2,8 +2,8 @@
   "plugin_slug": "redirection",
   "plugin_name": "Redirection",
   "documentation_url": "https://redirection.me/support/",
-  "last_scraped": "2026-07-05T15:26:55.244Z",
-  "total_pages": 24,
+  "last_scraped": "2026-07-12T15:22:11.859Z",
+  "total_pages": 25,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -172,6 +172,19 @@
         {
           "title": "Options",
           "url": "https://redirection.me/support/options/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://redirection.me/support/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Support",
+          "url": "https://redirection.me/support/"
         }
       ]
     },
