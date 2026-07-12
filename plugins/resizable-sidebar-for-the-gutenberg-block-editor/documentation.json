@@ -1,10 +1,32 @@
 {
   "plugin_slug": "resizable-sidebar-for-the-gutenberg-block-editor",
   "plugin_name": "Resizable Sidebar for the Gutenberg Block Editor",
-  "last_scraped": "2026-07-05T12:35:15.667Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T12:24:28.138Z",
+  "total_pages": 2,
   "failed_urls": [],
   "pages": [
+    {
+      "title": "Resizable Sidebar for the Gutenberg Block Editor",
+      "url": "https://wordpress.org/plugins/resizable-editor-sidebar/",
+      "category": "Overview",
+      "content": "## Description\n\n\tAn intuitive solution to make the default WordPress Gutenberg sidebar resizable.\n\n### Key points\n\n- Functions straight out of the box\n- An easy to use drag and drop interface\n- Preferences are saved directly to your machine so your editors can work along side you with their own preference.\n\n## Installation\n\n\t\n#### PHP 5.6 or greater is recommended before installation\n\n1. Navigate to the plugins menu.\n2. Search for ‘Resizable Editor Sidebar’\n3. Click ‘Install Now’ followed by ‘Activate’\n4. You’ll now be able to drag the sidebar to a width that is suitable for yourself.\n\n## Reviews\n\n\t![](https://secure.gravatar.com/avatar/f0099e3e3e83c8ade57aa335c10244b0ece809e159f5cc25d0dae88bab1ddad9?s=60&d=retro&r=g)### Very useful. I am surprised it is not a core feature.\n\t\t\t\t\t\t\t[kwebdesign](https://profiles.wordpress.org/kwebdesign/)\n\t\t\t\t\t\t\t\tJanuary 8, 2026\n\t\t\t\t\t\tWhen using ACF blocks in the sidebar, the default width can make editing difficult when there are a large number of fields. Being able to adjust the width is a huge help.\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/2d09f8bacd00494073c806854b14b832acaae075d572a1fa7a7bd52d407604ea?s=60&d=retro&r=g)### The ad is a little to much\n\t\t\t\t\t\t\t[melcarthus](https://profiles.wordpress.org/melcarthus/)\n\t\t\t\t\t\t\t\tJanuary 17, 2025\n\t\t\t\t\t\tGreat little plugin but the Ad when resizing is a little to much intrusive. Clients asked if the site was hacked multiple times. Yes, clients are not as tech savvy sometimes. Is there not a better place to advertise your other plugins?\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/8c0ced2ad5a0c50ec3a0903b1d1946b4309a9b5e4ed01ff7f8d40bc710f49e3e?s=60&d=retro&r=g)### It works perfectly.\n\t\t\t\t\t\t\t[nick6352683](https://profiles.wordpress.org/nick6352683/)\n\t\t\t\t\t\t\t\tSeptember 4, 2024\n\t\t\t\t\t\tThe most important thing for me is that it works with WP 6.6, as another plugin solution that I had, stopped working with v6.6. So thank you very much for this plugin.\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/21c99de6e0185ef7bc887dee56b117cdfc4cfe39c182c0091263b5a6083dca7c?s=60&d=retro&r=g)### Elevates Block Editor UX\n\t\t\t\t\t\t\t[dromvati](https://profiles.wordpress.org/dromvati/)\n\t\t\t\t\t\t\t\tAugust 4, 2024\n\t\t\t\t\t\tAfter developing for many years with gutenberg/blocks I can confidently say: This is easily one of the most missing basic features for authoring experience. Shame this isn’t part of the core and kudos to the author.\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/5f49067f3d39d2e75287f9f2b7019b61f4f7f7b475adbd3e75335cbc9a75e961?s=60&d=retro&r=g)### What I’ve been looking for years. This is it.\n\t\t\t\t\t\t\t[Wolfram Kläger](https://profiles.wordpress.org/wolframhk/)\n\t\t\t\t\t\t\t\tJuly 27, 2023\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1 reply\n\t\t\t\t\t\tOMG. How could Gutenberg have been released, ever, without this simple, little feature?! WordPress should pay millions to integrate this plugin in the next release!\n\nSeriously. Took me years to understand the “logic” of how to move Gutenberg metaboxes from below the content to the right, into the sidebar. And back. \n\nTogether with this little plugin, the Resizable Editor Sidebar, this semi-ugly UX of Gutenberg begins to shine. Finally.\n\nThank you ever so much for all the efforts!\n\nAs of today, only 900 downloads. Unbelievable. Should easily grow to 9.000, 90.000, 900.000, 9.000.000. Let’s spread the word!\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/ca4999af3377117b7fa7bc63bf67be8e0e245a9bed52c301ac21cb14d163fda5?s=60&d=retro&r=g)### Just what I was after\n\t\t\t\t\t\t\t[footstepsdesign](https://profiles.wordpress.org/footstepsdesign/)\n\t\t\t\t\t\t\t\tNovember 15, 2022\n\t\t\t\t\t\tI have ACF fields in the sidebar and a wider bar accommodates them much better, thanks 🙂\n\nI’m OK with the ad when you resize, but have you thought about an add free paid version?\n\n\t\t[Read all 9 reviews](https://wordpress.org/support/plugin/resizable-editor-sidebar/reviews/)\n\n## Contributors & Developers\n\n\t“Resizable Sidebar for the Gutenberg Block Editor” is open source software. The following people have contributed to this plugin.\n\nContributors\n\t\t- ![](https://secure.gravatar.com/avatar/9f1892e65c414e43de3b76c36402980dea0037647c0335b9dca29dd5ea867dc0?s=32&d=mm&r=g)\t\t\t\t[Toast Plugins](https://profiles.wordpress.org/toastwebsites/)\n- ![](https://secure.gravatar.com/avatar/6aa77980b625c2773e6253d7b87278e97c03f683b30b2fd4b6745fdb7d9bff2a?s=32&d=mm&r=g)\t\t\t\t[Aaron Jones](https://profiles.wordpress.org/aaronj1998/)\n- ![](https://secure.gravatar.com/avatar/92a705835c1fa21b8023bf6068bd14413642e072a36abc5413937617326efb67?s=32&d=mm&r=g)\t\t\t\t[David Foreman](https://profiles.wordpress.org/davros20/)“Resizable Sidebar for the Gutenberg Block Editor” has been translated into 3 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/resizable-editor-sidebar/contributors) for their contributions.\n\n[Translate “Resizable Sidebar for the Gutenberg Block Editor” into your language.](https://translate.wordpress.org/projects/wp-plugins/resizable-editor-sidebar)\n\n### Interested in development?\n\n[Browse the code](https://plugins.trac.wordpress.org/browser/resizable-editor-sidebar/), check out the [SVN repository](https://plugins.svn.wordpress.org/resizable-editor-sidebar/), or subscribe to the [development log](https://plugins.trac.wordpress.org/log/resizable-editor-sidebar/) by [RSS](https://plugins.trac.wordpress.org/log/resizable-editor-sidebar/?limit=100&mode=stop_on_copy&format=rss).",
+      "headings": [
+        "Description",
+        "Key points",
+        "Installation",
+        "PHP 5.6 or greater is recommended before installation",
+        "Reviews",
+        "Very useful. I am surprised it is not a core feature.",
+        "The ad is a little to much",
+        "It works perfectly.",
+        "Elevates Block Editor UX",
+        "What I’ve been looking for years. This is it.",
+        "Just what I was after",
+        "Contributors & Developers",
+        "Interested in development?"
+      ],
+      "code_blocks": []
+    },
     {
       "title": "Resizable Sidebar for the Gutenberg Block Editor",
       "url": "https://wordpress.org/plugins/resizable-editor-sidebar/advanced/",
