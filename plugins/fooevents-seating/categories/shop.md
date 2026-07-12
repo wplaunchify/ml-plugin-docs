@@ -1,4 +1,4 @@
-# Pricing
+# Shop
 
 *Category from FooEvents Seating documentation*
 
@@ -6,7 +6,7 @@
 
 ## FooEvents Pricing
 
-**Source:** [https://www.fooevents.com/pricing/](https://www.fooevents.com/pricing/)
+**Source:** [https://www.fooevents.com/shop/](https://www.fooevents.com/shop/)
 
 14-day Money Back Guarantee
 

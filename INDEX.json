@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T10:33:14.011Z",
+  "last_updated": "2026-07-12T10:34:07.910Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1145,30 +1145,34 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-05T10:46:05.305Z",
-      "page_count": 56,
+      "last_scraped": "2026-07-12T10:34:05.163Z",
+      "page_count": 60,
       "categories": [
         "about-us",
-        "blog",
         "bundles",
         "cart",
+        "checkout",
         "de",
         "disclaimer",
         "el",
         "es",
         "features",
-        "fooevents-ultimate-event-checklist",
         "fr",
         "it",
         "my-account",
         "nl",
+        "overview",
         "pl",
         "pricing",
         "privacy-statement-us",
         "products",
+        "promo",
         "pt",
         "reviews",
-        "terms-and-conditions"
+        "shapes",
+        "shop",
+        "terms-and-conditions",
+        "use-cases"
       ]
     },
     {

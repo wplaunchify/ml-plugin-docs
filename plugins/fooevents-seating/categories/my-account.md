@@ -168,7 +168,7 @@
 
 ## My Account - FooEvents
 
-**Source:** [https://www.fooevents.com/my-account/subscriptions//](https://www.fooevents.com/my-account/subscriptions//)
+**Source:** [https://www.fooevents.com/my-account/subscriptions/](https://www.fooevents.com/my-account/subscriptions/)
 
 ## Login
 
