@@ -2,8 +2,8 @@
   "plugin_slug": "debug-log-manager-tool",
   "plugin_name": "Debug Log Manager Tool",
   "documentation_url": "https://wordpress.org/plugins/debug-log-manager/",
-  "last_scraped": "2026-07-05T03:01:28.664Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T03:00:41.805Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Debug Log Manager – Conveniently Monitor and Inspect Errors",
           "url": "https://wordpress.org/plugins/debug-log-manager/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/debug-log-manager/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Debug Log Manager – Conveniently Monitor and Inspect Errors",
+          "url": "https://wordpress.org/plugins/debug-log-manager/"
         }
       ]
     }
