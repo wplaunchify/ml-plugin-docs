@@ -18,7 +18,7 @@ This is one of the powerful Smart Coupons features for Buy One Get One (BOGO) pr
 
 ## Steps to set up free gift coupon
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. Create a new coupon or open an existing coupon.
 2. If you’re creating a new coupon, set discount type, amount & other settings as per your requirements.

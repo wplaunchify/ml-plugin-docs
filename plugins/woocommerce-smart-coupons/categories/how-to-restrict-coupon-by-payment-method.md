@@ -20,7 +20,7 @@ Some customers prefer only trusted/popular or their local payment gateway while 
 
 ## How to configure payment-based coupons?
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Torna in cima](#doc-title)
 
 1. Navigate to **WordPress Admin panel** > **Marketing > Coupons**.
 2. Create a coupon or edit an existing coupon.

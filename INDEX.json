@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T06:54:57.905Z",
+  "last_updated": "2026-07-12T06:55:19.819Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -947,7 +947,7 @@
       "slug": "fluentsmtp",
       "name": "FluentSMTP",
       "documentation_url": "https://fluentsmtp.com/documentation/",
-      "last_scraped": "2026-07-12T06:04:13.237Z",
+      "last_scraped": "2026-07-12T06:04:13.235Z",
       "page_count": 25,
       "categories": [
         "alerts",
@@ -2637,7 +2637,7 @@
       "slug": "simple-seo",
       "name": "Simple SEO",
       "documentation_url": "https://wordpress.org/plugins/simple-seo/",
-      "last_scraped": "2026-07-12T06:48:50.333Z",
+      "last_scraped": "2026-07-12T06:48:50.332Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2889,7 +2889,7 @@
       "slug": "woocommerce-smart-coupons",
       "name": "WooCommerce Smart Coupons",
       "documentation_url": "https://woocommerce.com/document/smart-coupons/",
-      "last_scraped": "2026-07-05T17:06:18.083Z",
+      "last_scraped": "2026-07-12T06:55:18.182Z",
       "page_count": 82,
       "categories": [
         "code-snippets",
@@ -3419,7 +3419,7 @@
       "slug": "wp-fusion-media-tools-addon",
       "name": "WP Fusion - Media Tools Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-12T06:51:42.559Z",
+      "last_scraped": "2026-07-12T06:51:42.548Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
@@ -3460,7 +3460,7 @@
       "slug": "wp-migrate-lite",
       "name": "WP Migrate Lite",
       "documentation_url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/",
-      "last_scraped": "2026-07-12T06:54:57.905Z",
+      "last_scraped": "2026-07-12T06:54:57.903Z",
       "page_count": 55,
       "categories": [
         "uncategorized"

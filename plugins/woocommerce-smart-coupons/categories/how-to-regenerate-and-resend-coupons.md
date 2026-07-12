@@ -18,7 +18,7 @@ This doc article explains how to **Regenerate & Resend Coupon through Emails**:
 
 ### Steps to regenerate & resend coupons
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Navigate to the **WordPress Admin panel > WooCommerce > Orders dashboard**.
 2. Open the order to which you want to Regenerate & Resend coupons.

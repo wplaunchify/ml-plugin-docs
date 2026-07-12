@@ -18,7 +18,7 @@ To offer a refund, you should follow the documentation of the WooCommerce plugin
 
 ## Steps to send store credits
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 1. Navigate to **Marketing > Coupons**.
 2. Select the “**Send Store Credit**” tab.
@@ -32,7 +32,7 @@ Thats it!
 
 ## Preview email
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 To check the email preview, click on the Preview Email button:
 
