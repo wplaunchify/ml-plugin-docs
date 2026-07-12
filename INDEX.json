@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T04:15:47.091Z",
+  "last_updated": "2026-07-12T04:16:53.488Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1102,30 +1102,34 @@
       "slug": "fooevents-multi-day",
       "name": "FooEvents Multi-Day",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-05T04:29:10.047Z",
-      "page_count": 56,
+      "last_scraped": "2026-07-12T04:16:51.632Z",
+      "page_count": 60,
       "categories": [
         "about-us",
-        "blog",
         "bundles",
         "cart",
+        "checkout",
         "de",
         "disclaimer",
         "el",
         "es",
         "features",
-        "fooevents-ultimate-event-checklist",
         "fr",
         "it",
         "my-account",
         "nl",
+        "overview",
         "pl",
         "pricing",
         "privacy-statement-us",
         "products",
+        "promo",
         "pt",
         "reviews",
-        "terms-and-conditions"
+        "shapes",
+        "shop",
+        "terms-and-conditions",
+        "use-cases"
       ]
     },
     {
@@ -3054,7 +3058,7 @@
       "slug": "wp-all-export-pro",
       "name": "WP All Export Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-12T04:15:47.091Z",
+      "last_scraped": "2026-07-12T04:15:47.087Z",
       "page_count": 199,
       "categories": [
         "uncategorized"

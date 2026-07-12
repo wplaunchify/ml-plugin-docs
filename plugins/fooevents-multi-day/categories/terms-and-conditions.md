@@ -60,9 +60,9 @@ You have the right to withdraw from this contract within 14 days without giving 
 
 The withdrawal period will expire after 14 days from the day of the conclusion of the contract.
 
-To exercise the right of withdrawal, you must inform us of your decision to withdraw from this contract by an unequivocal statement (for example a letter sent by post, fax, or email). Our contact details can be found below. You may use the attached model [withdrawal form](https://help.fooevents.com/contact/cancel/), but it is not obligatory.
+To exercise your right of withdrawal, you must inform us of your decision to withdraw from this contract by an unequivocal statement. To this end, you may use the [withdrawal function available](https://help.fooevents.com/contact/cancel/). You are, however, free to express your intention to withdraw from the contract by making an unequivocal statement in any other suitable way.
 
-You can also electronically fill in and submit the model withdrawal form or any other unequivocal statement on our [website](https://help.fooevents.com/contact/).
+You can also submit any other unequivocal statement on our [website](https://help.fooevents.com/contact/).
 
 If you use this option, we will communicate to you an acknowledgement of receipt of such a withdrawal on a durable medium (for example by email) without delay.
 
