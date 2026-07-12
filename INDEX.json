@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T05:06:04.006Z",
+  "last_updated": "2026-07-12T05:07:22.483Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -981,30 +981,34 @@
       "slug": "fooevents-bookings",
       "name": "FooEvents Bookings",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-05T05:21:56.776Z",
-      "page_count": 56,
+      "last_scraped": "2026-07-12T05:07:20.551Z",
+      "page_count": 60,
       "categories": [
         "about-us",
-        "blog",
         "bundles",
         "cart",
+        "checkout",
         "de",
         "disclaimer",
         "el",
         "es",
         "features",
-        "fooevents-ultimate-event-checklist",
         "fr",
         "it",
         "my-account",
         "nl",
+        "overview",
         "pl",
         "pricing",
         "privacy-statement-us",
         "products",
+        "promo",
         "pt",
         "reviews",
-        "terms-and-conditions"
+        "shapes",
+        "shop",
+        "terms-and-conditions",
+        "use-cases"
       ]
     },
     {
