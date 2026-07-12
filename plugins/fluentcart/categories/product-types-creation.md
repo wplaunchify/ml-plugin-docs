@@ -79,8 +79,6 @@ If Advanced Inventory is disabled, the Inventory submenu disappears and no new a
 
 Navigate to **FluentCart > Inventory** to open the Advanced Inventory workspace.
 
-![Screenshot of the Advanced Inventory list showing All / Low Stock / Out of Stock tabs, Advanced Filter toggle, Total Stock, Available, On hold, and Delivered columns across multiple products](https://docs.fluentcart.com/images/product-types-creation/advanced-inventory/inventory-list.webp)
-
 ### Scope tabs ​
 
 Across the top of the list you'll see three quick-filter tabs:
@@ -259,15 +257,11 @@ You manage both from one central screen, and anything you create here becomes av
 
 First, open the attributes manager from your WordPress dashboard. Navigate to **FluentCart Pro > Products**, then click **Attributes** in the submenu.
 
-![Screenshot of the FluentCart Products menu with the Attributes item highlighted](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-0.webp)
-
 This opens the **Attributes & Terms** screen. The left panel lists every attribute group in your store, each showing its type, styling, and term count. Selecting a group loads its terms on the right, where you can review, add, or remove values.
 
 ### Creating an Attribute Group ​
 
 To create a new attribute, click the **+** icon next to the **Attributes** heading in the left panel. The **Add new attribute group** modal opens with three fields to fill in.
-
-![Screenshot of the Styling dropdown showing Dropdown and Button](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-2.webp)
 
 Here is what each field does:
 
@@ -277,8 +271,6 @@ Here is what each field does:
 - **Image:** Image thumbnails, where each term carries an image.
 - **Styling:** Controls how the values appear on the product page: - **Button:** Values display as clickable buttons (the most common choice).
 - **Dropdown:** Values display in a dropdown select menu.
-
-![Screenshot of the Attribute Type dropdown showing Options, Color, and Image](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-3.webp)
 
 Once all three fields are set, click **Add Group** to save your new attribute.
 
@@ -293,8 +285,6 @@ Follow these steps to add terms:
 3. An inline input row appears. Type the term title, for example "Cotton".
 4. Click **+ Add more** to keep adding terms without leaving the panel.
 5. Click **Save** in the top right to apply your changes.
-
-![Screenshot of the Material attribute with an inline term input row and the Add more and Save controls](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-4.webp)
 
 You can rename a term with the pencil icon or remove it with the trash icon beside each row.
 
@@ -311,26 +301,18 @@ First, start a new product and tell FluentCart it will use Advanced Variations.
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Products**.
 2. Click the **Add Product** button at the top right of the Products screen.
 
-![Screenshot of the Add New Product modal with the Variation Type dropdown open and Advanced Variations selected](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-1.webp)
-
 1. In the **Add New Product** modal, enter the **Product Title**.
 2. Open the **Variation Type** dropdown and select **Advanced Variations**.
 3. Click **Add Product**. FluentCart creates the product and opens its edit screen.
-
-![Screenshot of the Products list with the Add Product button highlighted](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-5.webp)
 
 ### Step 2: Add Options in the Pricing Panel ​
 
 On the product edit screen, scroll to the **Pricing** panel. Because no options have been assigned yet, it shows "No options added yet" along with a button to get started.
 
-![Screenshot of the Pricing panel in Advanced Variations mode showing the empty state](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-6.webp)
-
 Now add your first option dimension:
 
 1. Click **+ Add options like size or color**. A new option row appears with an **Option name** and **Option values** field.
 2. Click **Option name** and either select an existing attribute from the list, or click **+ Create new attribute group** to define one without leaving the page.
-
-![Screenshot of the option row showing the Option name field and the Create new attribute group link](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-7.webp)
 
 1. Click **Option values** and check the terms you want this product to offer. You do not have to include every term from the attribute, just the ones that apply to this product.
 2. For a **Color** attribute, a color picker appears when you add a new value. Pick from the preset swatches or enter a hex code directly, then add it.
@@ -351,8 +333,6 @@ Switching to Advanced Variations permanently deletes all current variations for 
 1. Open the product on its edit screen and scroll to the **Pricing** panel.
 2. Click the variation type dropdown at the top right of the panel. It currently shows your active type, such as "Simple Variations".
 3. Select **Advanced Variations** from the dropdown.
-
-![Screenshot of an existing product Pricing panel with the variation type dropdown open and Advanced Variations highlighted](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-8.webp)
 4. A **Confirm Delete!** dialog appears. Read the warning carefully.
 5. Type 
 ```
@@ -361,8 +341,6 @@ proceed
 
  exactly into the text field. The confirm button stays disabled until you do.
 6. Click **Yes, Delete!** to confirm the switch.
-
-![Screenshot of the Confirm Delete dialog with proceed typed in the field and the Yes, Delete button](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/advanced-variation-9.webp)
 
 Once confirmed, the old variations are removed and the Pricing panel resets to the Advanced Variations empty state. From here, follow [Step 2: Add Options in the Pricing Panel](#step-2-add-options-in-the-pricing-panel) to build out your new attribute-based options.
 
@@ -404,8 +382,6 @@ Clicking **Cancel** leaves group-edit mode and returns you to the regular single
 ## How Advanced Variations Appear to Customers ​
 
 Once your product is published, all the attributes you configured turn into interactive selectors on the storefront. Each attribute renders in the style you chose, so customers can mix and match options to land on the exact variant they want.
-
-![Screenshot of a storefront product page showing Images, Material, and Size attribute selectors for a Reglan Tshirt](https://docs.fluentcart.com/images/product-types-creation/advanced-variations/tg_image_1025992249.webp)
 
 In this example, the **Reglan Tshirt** uses three attributes, and here is how each one behaves for the customer:
 
@@ -453,15 +429,11 @@ First, let's navigate to the right tool in your dashboard.
 3. Look at the top right corner of your product list and click on the white **More actions** dropdown button.
 4. Select **Bulk Product Insert** from the menu.
 
-![Bulk Product Import](https://docs.fluentcart.com/assets/product-import-1.D1m27HmI.webp)
-
 ## Step 2: Upload Your CSV File (Your Product Spreadsheet) ​
 
 You will now be looking at a blank Bulk Insert page. This is where you will hand your data over to FluentCart.
 
 1. Click the **Import** button located at the top right of the screen.
-
-![Bulk Product Import](https://docs.fluentcart.com/assets/product-import-2.B352DENt.webp)
 
 1. A popup window will appear asking for your file.
 2. Here upload your CSV file that is saved to your computer, simply drag and drop the file into the upload area, or click the **Browse/Upload Files** text to select it.
@@ -469,8 +441,6 @@ You will now be looking at a blank Bulk Insert page. This is where you will hand
 > Note: FluentCart can handle massive catalogs! The maximum file size allowed is a generous 300 MB.
 
 > Need a template? If you are unsure how to format your spreadsheet, look at the bottom left of this popup and click Download a Sample CSV File. This gives you a perfectly formatted template you can fill out in Excel or Google Sheets!
-
-![Bulk Product Import](https://docs.fluentcart.com/assets/product-import-3.DpMjd8-7.webp)
 
 ## Step 3: Map Your Columns (Connecting the Dots) ​
 
@@ -491,8 +461,6 @@ Carefully match them up. For example:
 
 When everything looks correctly matched, click the **Add Products** button at the bottom of the window.
 
-![Bulk Product Import](https://docs.fluentcart.com/assets/product-import-4._3f411OY.webp)
-
 ## Step 4: The Staging Table (Your Safe Review Zone) ​
 
 This is where the magic happens. Instead of making your products live immediately, FluentCart loads all your imported data into a massive, interactive table. Do not worry—at this stage, your products are not live in your store yet!
@@ -504,8 +472,6 @@ Think of this as a final rehearsal. You can use this table to quickly review and
 - **Manage Variations Easily:** If you imported products with different sizes or colors (variable products), you will see them neatly nested under the main product. Forgot a size? Just click the **+ Add Variant** text directly in the table to create a new row for it instantly.
 - **Clean Up Mistakes (Row Actions):** If a product got imported by mistake, simply check the box next to its name on the far left, and click the red **Delete** button at the top. You can also use the **Duplicate** button to quickly copy a product setup.
 - **Pin Actions:** If you have many columns and need to scroll horizontally, check the **Pin Actions** box at the top right. This freezes your action buttons so they are always visible, no matter how far you scroll.
-
-![Bulk Product Import](https://docs.fluentcart.com/assets/product-import-5.DSFv7UVK.webp)
 
 ## Step 5: Save and Publish (Going Live!) ​
 
@@ -543,8 +509,6 @@ To get started, open any product in edit mode and scroll down to the **Pricing**
 - **Simple** — For products sold as a single item with no variations (one price fits all)
 - **Simple Variations** — For products that come in multiple versions, like different colors, sizes, or license tiers, each with its own unique price
 - **Advanced Variations** — For products built from reusable attributes (Color, Size, Material), where FluentCart generates every combination automatically. See the [Advanced Variations](/guide/product-types-creation/advanced-variations) guide.
-
-![Screenshot of the Pricing section showing the Simple/Simple Variations dropdown](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-1.webp)
 
 ## Option 1: Simple Pricing ​
 
@@ -621,8 +585,6 @@ The **Shipping** section at the bottom of the pricing panel is where you define 
 
 If you haven't set up any packages yet, click the **Package** dropdown and choose the option to add a new one. The **Add package** modal will appear.
 
-![Screenshot of the Shipping section showing Physical Product toggle, Package dropdown, and Product weight field](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-3.webp)
-
 Here's what to fill in:
 
 **Package type** Choose the shape that best matches how you ship this product:
@@ -656,8 +618,6 @@ Once everything looks correct, click **Add package** to save it. Your new packag
 ### B. Subscription Payment ​
 
 Toggle the **Subscription** switch to the on position and the pricing fields transform to everything you need for a recurring billing setup.
-
-![Screenshot of Simple pricing — one-time payment showing Price, Compare at price, Calculate profit/cost, SKU, and Shipping sections](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-2.webp)
 
 **Installment Price** *(Required)* The amount charged to the customer on each billing cycle. The 
 ```
@@ -741,8 +701,6 @@ Select **Simple Variations** from the pricing dropdown to activate this mode.
 
 Once you're in Simple Variations mode, you'll see a clean table listing all your current variations. Each row represents one version of your product.
 
-![Screenshot of the Simple Variations table showing drag handles, Image, Title, Price, Compare at price, and Action columns, with the + Add more button at the bottom](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-4.webp)
-
 Here's what each column means:
 
 - **⠿ (Drag handle)** — Click and drag any row to reorder your variations. The order here directly controls how options appear on your product page — put your most popular first.
@@ -794,8 +752,6 @@ At the bottom of the panel, you'll find three action buttons: **Discard** (undo 
 #### A. One-Time Payment for a Variation (Subscription Toggle OFF) ​
 
 When the **Subscription** toggle in the variation editor is off, you're configuring a standard one-time purchase for this specific version.
-
-![Screenshot of the variation editor panel showing the White variation selected, with left variant list, Pricing fields, Inventory section, SKU section, and Shipping section](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-5.webp)
 
 **Variation image** Click the image thumbnail at the top left of the right panel to upload a photo specific to this variation. Showing customers exactly what color, size, or version they're selecting builds confidence and reduces returns.
 
@@ -854,8 +810,6 @@ When you've finished configuring this variation, click **Update** to save all yo
 #### B. Subscription Payment for a Variation (Subscription Toggle ON) ​
 
 Toggle the **Subscription** switch to the on position inside the variation editor to set this variation up as a recurring subscription — perfect for software license tiers, membership levels, or any product where different versions bill at different rates.
-
-![Screenshot of the variation editor showing the Subscription toggle ON for the Oxley variation, with Compare at price, Interval, Trial Days, Enable installment payment, Setup fee, and Calculate profit/cost fields visible](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-6.webp)
 
 All the same subscription fields are available here as in Simple pricing:
 
@@ -933,11 +887,7 @@ By the end, you will be able to confidently sell and manage any downloadable ite
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Products** in the left WordPress sidebar.
 2. On the **Products** screen, click the **"Add Product"** button at the top right.
-
-![Screenshot of Add Product Button](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/Digital-product-1.webp)
 3. This will open the **Add New Product** popup from where you have to give the product name and select the product type **Digital Product** then the **Edit Product** page will come.
-
-![Screenshot of Product Edit Screen (Digital Product Example)](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/Digital-product-3.webp)
 
 ### 1. Basic Product Information ​
 
@@ -957,8 +907,6 @@ This section allows you to manage the visual presentation of your product, ensur
 - **Add by URL Tab:** If you have high-quality images hosted on a separate server or a dedicated media site, you can simply paste the direct web address here and click Add to bring them into your gallery without taking up space on your own site.
 
 Once you've picked your files or linked your URLs, just click the **Save** button at the bottom of the modal to update your product's look.
-
-![Screenshot of Add Media](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/product-image-add-with-url.webp)
 
 ### 3. Product Taxonomies ​
 
@@ -1084,8 +1032,6 @@ Enrollment Fee
 
 > 📝 Note: The SKU section works exactly the same in subscription mode as it does for one-time payments. Digital products don't need a shipping package or physical weight — so those fields don't appear here.
 
-![Gif of Digital Product Edit Screen (Simple Pricing)](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-2.webp)
-
 ---
 
 #### Option B: Simple Variations ​
@@ -1205,8 +1151,6 @@ Activation Fee
 
 **Calculate profit/cost** *(Toggle — Optional)* Track your internal **Cost per item**, **Profit**, and **Margin** for this subscription variation.
 
-![Gif of Digital Product Edit Screen (Simple Variation)](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/simple-variation2.gif)
-
 INFO
 
 For the complete, field-by-field reference on every pricing option — including the full breakdown of all interval choices, installment plans, setup fees, trial periods, and the Add Package walkthrough — see the [Configuring Product Pricing & Variations](/guide/product-types-creation/configuring-product-pricing) guide.
@@ -1214,14 +1158,10 @@ For the complete, field-by-field reference on every pricing option — including
 
 This is where you attach the actual files your customers will receive after purchase. Toggle the **Downloadable Asset(s)** switch on to enable the section, then click **+ Add** to attach your first file.
 
-![Screenshot of the Downloadable Asset(s) section with the Add button](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/digital-asset-section.png)
-
 The **Add Downloadable Asset(s)** modal opens with the following options:
 
 - **Choose variant** *(Optional)* — If your product has multiple variations, select the specific variant this file belongs to. Leave it empty to make the asset available across all variants.
 - **Choose File** — Click this button to open the **Storage Providers** modal and pick or upload your file.
-
-![Screenshot of the Add Downloadable Asset(s) modal](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/digital-asset-add-modal.png)
 
 **Storage Providers modal**
 
@@ -1230,11 +1170,7 @@ The **Storage Providers** modal is where you manage and select the file to attac
 Each provider offers two tabs:
 
 - **Select Files** — Browse files already uploaded to that provider. Use the search bar to find a file by name, check the box next to it, and click **Confirm** to attach it.
-
-![Screenshot of the Storage Providers modal showing the Select Files tab](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/storage-providers-select-files.png)
 - **Upload** — Drag and drop a new file directly onto the upload area, or click **Browse/Upload Files** to pick one from your computer. Any file format is accepted, up to **300 MB** per file.
-
-![Screenshot of the Storage Providers modal showing the Upload tab](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product/storage-providers-upload.png)
 
 Once you've selected or uploaded your file, click **Confirm** to return to the asset modal, then click **Save Asset** to attach it to your product.
 
@@ -1319,8 +1255,6 @@ This section allows you to manage the visual presentation of your product, ensur
 - **Add by URL Tab:** If you have high-quality images hosted on a separate server or a dedicated media site, you can simply paste the direct web address here and click Add to bring them into your gallery without taking up space on your own site.
 
 Once you've picked your files or linked your URLs, just click the **Save** button at the bottom of the modal to update your product's look.
-
-![Screenshot of Add Media](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product-license/product-image-add-with-url.webp)
 
 ### 4. Product Taxonomies ​
 
@@ -1442,15 +1376,11 @@ Before you can set up licenses for a specific product, you need to make sure the
 3. Locate the **Product Licensing** option and click the **toggle** button to enable it.
 4. Click the **Save Settings** button to apply the change.
 
-![Screenshot of Enable License Add-on](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product-license/license-add-on.webp)
-
 #### Configure Product License Settings ​
 
 Once the add-on is enabled, you can configure the license settings for each product. On the Product Edit screen, click the **License Settings** tab.
 
 1. On the Product Edit screen, click the **"License Settings"** tab.
-
-![Screenshot of Product License Settings Tab](https://docs.fluentcart.com/images/product-types-creation/creating-digital-product-license/License-Settings-1.webp)
 2. **Enable Licensing for this product:** Ensure this checkbox is enabled to activate licensing for this product.
 3. **License Configuration Table (Per Variant):**
 
@@ -1518,8 +1448,6 @@ To get started, you first need to create your brands. This process is straightfo
 1. From your WordPress dashboard, go to **FluentCart Pro → Brands**.
 2. This will take you to the main **Brands** screen. On the left side, you will see the "**Add New Brand**" form.
 
-![Product Brand](https://docs.fluentcart.com/images/product-types-creation/creating-managing-brand/product-brand-1.webp)
-
 Fill in the details for your brand:
 
 - **Name:** Enter the brand's name exactly as you want it to appear to your customers. This is the primary identifier for the brand.
@@ -1583,8 +1511,6 @@ Here’s a breakdown of the fields:
 
 After filling in the details, click the **Add New Category** button. Your new category will now appear in the list on the right.
 
-![Add New Categories](https://docs.fluentcart.com/assets/Product-Category-1.CaHNodcJ.webp)
-
 ### Managing Existing Categories ​
 
 The table on the right side of the screen lists all your existing product categories. From here, you can quickly see the category's **Name, Description, Slug,** and a **Count** of how many products are in it.
@@ -1621,11 +1547,7 @@ By the end of this guide, you will be able to confidently list and manage any ph
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Products** in the left sidebar.
 2. On the **Products** screen, click the **"Add Product"** button at the top right.
-
-![Screenshot of Add Product Button](https://docs.fluentcart.com/images/product-types-creation/Creating-Physical-Products/physical-product-1.webp)
 3. This action will open a new **Add New Product** modal, where you’ll enter the product name and select the product type, either **Physical Product** or **Digital Product**. After making your selection, click on the **Add Product** button and you’ll be redirected to the **Edit Product** page to configure all product details.
-
-![Screenshot of Add New Product Modal)](https://docs.fluentcart.com/images/product-types-creation/Creating-Physical-Products/add-new-product.webp)
 
 ### 1. Basic Product Information ​
 
@@ -1648,8 +1570,6 @@ By using the **Visual Builder**, you get the power to create beautiful product d
 - **Visual Mode:** This is the standard view where you type your description directly. You'll have formatting options above (like bold, italics, lists) and options to easily add media with your text.
 - **Code Mode (HTML):** This view is for advanced users who want to write the long description using raw **HTML codes**.
 
-![Screenshot of Product Edit Screen (Physical Product Example)](https://docs.fluentcart.com/images/product-types-creation/Creating-Physical-Products/eidt-product-1.webp)
-
 ### 2. Media ​
 
 This section allows you to manage the visual presentation of your product, ensuring customers get a clear view of what they are buying. You can set a primary image and build a gallery to showcase different angles or use cases.
@@ -1666,8 +1586,6 @@ By clicking the **Add Media** button, you open the **Product Gallery** modal, wh
 - **Add by URL:** This convenient option allows you to link to an image hosted elsewhere on the web. Simply paste the direct web address of the image into the input field and click the **Add** button to include it in your gallery.
 
 Once you have selected or linked your media, click the **Save** button at the bottom of the modal to update your product's gallery.
-
-![Add Media](https://docs.fluentcart.com/images/product-types-creation/Creating-Physical-Products/product-image-add-with-url.webp)
 
 ### 3. Product Taxonomies ​
 
@@ -1689,8 +1607,6 @@ Open the **Pricing** panel and look at the dropdown in the top right corner — 
 - **Advanced Variations** — Versions built from reusable attributes like Color and Size, where FluentCart generates every combination automatically. See the [Advanced Variations](/guide/product-types-creation/advanced-variations) guide.
 
 Pick the method that matches your product structure, and the fields below will adapt accordingly.
-
-![Screenshot of the Pricing section showing the Simple/Simple Variations dropdown](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-1.webp)
 
 ---
 
@@ -1733,6 +1649,8 @@ SHOE-WHT-42
 ). You can type your own or click **Generate SKU** to have FluentCart create one automatically. Accepts up to 30 characters.
 
 > 📝 Note: Assigning SKUs makes inventory tracking, order fulfillment, and reporting significantly easier — especially when you're managing stock across multiple platforms or warehouses.
+
+> 💡 Tip — hide a SKU from the storefront: Leave the SKU field empty and FluentCart shows no SKU line on the product page for that item, so it stays hidden from customers.
 
 **Shipping**
 
@@ -1847,8 +1765,6 @@ HOO-RED-M
 
 When you're done, click **Update** to save all your changes.
 
-![Screenshot of the variation editor showing the left panel list and right panel configuration](https://docs.fluentcart.com/images/product-types-creation/product-pricing/product-variation-5.webp)
-
 INFO
 
 For the complete field-by-field reference — including the full subscription setup for physical subscription boxes, installment plans, trial days, setup fees, and a step-by-step walkthrough of the Add Package modal — see the [Configuring Product Pricing & Variations](/guide/product-types-creation/configuring-product-pricing) guide.
@@ -1947,16 +1863,12 @@ In this guide, you’ll learn how to create, configure, and manage bundle produc
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Products** in the left sidebar.
 2. On the Products screen, click the **"Add Product"** button at the top right.
-
-![Screenshot of Add Product Button](https://docs.fluentcart.com/assets/add-product-1.Fx_878zI.webp)
 3. This action will open a new **Add New Product** modal.
 
 - Enter the **Bundle Title**.
 - Select the product type, either **Physical Product** or **Digital Product**.
 - Check the box labeled **Add as a Bundle** to combine multiple items into one package.
 4. Click the **"Add Product"** button, and you will be redirected to the **"Edit Product"** page to configure all details.
-
-![Screenshot of Add as a bundle](https://docs.fluentcart.com/assets/add-as-a-bundle-2.ZkXXfvo-.webp)
 
 ### 1. Basic Product Information ​
 
@@ -1986,8 +1898,6 @@ This section helps you organize and tag your bundle for better storefront filter
 
 - **Product Categories:** Assign the bundle to relevant categories (e.g., "Gift Sets"). You can select existing categories or click **+ Add Category** to create one instantly.
 - **Product Brand::** Associate the bundle with a specific brand using the dropdown or the **+ Add Brand** button.
-
-![Screenshot of Product Edit Screen (Physical Product Example)](https://docs.fluentcart.com/assets/map-bundle-items-3.CaxILLee.webp)
 
 ### 5. Pricing & Variations ​
 
@@ -2026,8 +1936,6 @@ BUNDLE-STARTER-01
 ). Click **Generate SKU** to auto-generate one. Accepts up to 30 characters.
 
 **Direct Checkout** *(Link)* Generates a unique URL that takes customers straight to checkout with this bundle pre-loaded. Great for promotional landing pages, email campaigns, or limited-time offers where you want to reduce every step between interest and purchase.
-
-![Screenshot of Simple Price for Bundle](https://docs.fluentcart.com/assets/simple-price.DliAvTLH.gif)
 
 ---
 
@@ -2117,8 +2025,6 @@ BUNDLE-PRO-01
 
 When you're done, click **Update** to save all your changes for this tier.
 
-![Screenshot of Simple Variation for Bundle](https://docs.fluentcart.com/assets/simple-variation.BvWpgyew.gif)
-
 INFO
 
 For the complete field-by-field reference on every pricing option — including subscription setup, installment plans, trial days, setup fees, and the Add Package walkthrough — see the [Configuring Product Pricing & Variations](/guide/product-types-creation/configuring-product-pricing) guide.
@@ -2164,8 +2070,6 @@ Upgrade path settings are found within the **Edit Product** screen for individua
 2. [Edit an existing product](/guide/product-types-creation/product-list-overview) that has multiple license tiers (e.g., "Fluent Forms").
 3. On the **Edit Product** screen, click on the **"Upgrade Paths"** tab.
 
-![Screenshot of Product Upgrade Paths Tab](https://docs.fluentcart.com/images/product-types-creation/define-upgrade-path/Upgrade-Paths-1.webp)
-
 ## Understanding and Adding Upgrade Paths ​
 
 The "Upgrade Paths" tab displays a table where you define the upgrade logic.
@@ -2181,8 +2085,6 @@ The "Upgrade Paths" tab displays a table where you define the upgrade logic.
 - **Is Prorate:** Select "Yes" or "No". - **Yes (Prorated):** This means the customer will receive credit for the unused portion of their existing "From Plan" license/subscription. This credit is then applied towards the cost of the "To Plan," ensuring they only pay the difference. This is commonly used for subscriptions.
 - **No:** The upgrade will simply apply the "Discount Amount" without considering any remaining value from the old plan.
 3. After configuring the path, ensure you save your product settings by clicking the **"Save"** button on the bottom of the Edit screen.
-
-![Screenshot of Product Upgrade Paths Tab](https://docs.fluentcart.com/images/product-types-creation/define-upgrade-path/add-Upgrade-Paths.webp)
 
 ### 2. Examples of Upgrade Paths ​
 
@@ -2201,8 +2103,6 @@ Once your upgrade paths are set up in the backend, the actual upgrade process is
 - Step 3: Click to Upgrade Right below their current billing terms and payment method, they will easily spot a prominent **Upgrade Plan** button.
 - Step 4: Choose a New Package Clicking that button opens a simple "Upgrade Options" popup. Here, they can review the higher-tier plans you've made available, check the new price, and simply click the **Upgrade** button next to the one they want.
 - Step 5: Instant Checkout They are immediately taken to the checkout page to finalize the transaction. A friendly notice confirms what they are upgrading to, and the order summary automatically calculates their new cost—applying any prorated discounts instantly!
-
-![Upgrade Path](https://docs.fluentcart.com/assets/customer-upgrade-path.D7rT1KGQ.webp)
 
 Streamlined Customer Experience
 
@@ -2232,8 +2132,6 @@ Before you can manage inventory for individual products, you must first activate
 3. You will see a list of available features. Find **Stock Management** and make sure the toggle next to it is enabled.
 4. Click the **Save Settings** button.
 
-![Screenshot of Stock Management Enable](https://docs.fluentcart.com/images/product-types-creation/inventory-management/stock-management.webp)
-
 Once this feature is active, the **Inventory Management** section will become available on the product edit screen for your individual products.
 
 ---
@@ -2257,8 +2155,6 @@ The **Inventory Management** section gives you a clear, real-time overview of th
 - **On hold:** The number of units that are currently reserved in pending or processing orders. These units are not available for sale.
 - **Delivered:** The total number of units that have been successfully sold and fulfilled.
 
-![Screenshot of Inventory Management Section](https://docs.fluentcart.com/images/product-types-creation/inventory-management/inventory-management-section.webp)
-
 #### Adjusting Stock Levels ​
 
 You can easily add or remove stock manually right from this screen.
@@ -2266,8 +2162,6 @@ You can easily add or remove stock manually right from this screen.
 1. In the Inventory Management table, find the variant you want to adjust.
 2. In the input field under the Title, enter the quantity by which you want to change the stock.
 3. Click to **Apply** button for the stock adjustment. The **"Total Stock"** and **"Available"** quantities will update instantly.
-
-![Screenshot of Adjust Stock Section](https://docs.fluentcart.com/images/product-types-creation/inventory-management/inventory-adjust-by.webp)
 
 Stock Management Best Practices
 
@@ -2292,8 +2186,6 @@ Product-specific integration settings are found within the **Edit Product** scre
 1. Navigate to **FluentCart Pro > Products** in your WordPress dashboard.
 2. [Edit an existing product](/guide/product-types-creation/product-list-overview) by clicking its name or the "Edit" action.
 3. On the **Edit Product** screen, click on the **"Integrations"** tab.
-
-![Screenshot of Product Integrations Tab](https://docs.fluentcart.com/images/product-types-creation/managing-product-integration/Product-Integration.webp)
 
 ## Configuring Product Integrations ​
 
@@ -2328,8 +2220,6 @@ For any business selling recurring products or services, the **Subscriptions** d
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro**.
 2. Click on **Subscriptions** in the top menu bar.
-
-![Managing Subscription](https://docs.fluentcart.com/images/product-types-creation/managing-subscription/managing-subscription-1.webp)
 
 This will take you to the main Subscriptions screen, which lists all of your store's active and past subscriptions.
 
@@ -2371,8 +2261,6 @@ For even more specific searches, you can use the **Advanced Filter** to build co
 - **License Property**
 - **Labels**
 
-![Managing Subscription Advance Filter](https://docs.fluentcart.com/images/product-types-creation/managing-subscription/managing-subscription-2.webp)
-
 You can combine multiple rules to create highly targeted lists of your subscribers.
 
 ### Viewing Individual Subscription Details ​
@@ -2412,8 +2300,6 @@ This makes it clear when the customer's access actually ends, instead of leaving
 
 You can enable, disable, or customise the body of this email from **FluentCart Pro > Settings > Email Configuration > Notifications**. See [Configuring Email Notifications](/guide/settings-configuration/email-configuration/configuring-email-notification) for details.
 
-![Managing Subscription Detailed View](https://docs.fluentcart.com/images/product-types-creation/managing-subscription/managing-subscription-3.webp)
-
 ---
 
 ## Per-Variation Tax Settings ​
@@ -2438,15 +2324,11 @@ These controls are visible **only when store-level tax is enabled** on the [Tax 
 
 The variation editor opens as a side panel. The three tax controls are split across two sections: a **Tax** dropdown in **Pricing** (next to the **Price** field) and a **Tax** block further down (below **Shipping**).
 
-![Screenshot of the variation editor with the Tax dropdown in Pricing and the Tax section at the bottom showing Charge tax on this variation and Class Standard](https://docs.fluentcart.com/images/product-types-creation/per-variation-tax/per-variation-tax-overview.webp)
-
 ## The Three Variation Tax Controls ​
 
 ### 1. Tax Inclusion (Pricing section) ​
 
 A **Tax** dropdown next to the **Price** field, with three options:
-
-![Screenshot of the Tax inclusion dropdown open with Store default, Tax included, and Tax excluded](https://docs.fluentcart.com/images/product-types-creation/per-variation-tax/per-variation-tax-inclusion.webp)
 
 - **Store default:** inherit the store-level **Prices entered with tax** setting from Tax Configuration. This is the default; use the other options if you collect tax differently for this variation.
 - **Tax included:** this variation's price already contains tax. Use when one variation needs the opposite of the store default (e.g. your store ships prices tax-exclusive but this single variation is quoted tax-inclusive on supplier paperwork).
@@ -2471,8 +2353,6 @@ Free Sample
 ### 3. Tax Class (Tax section) ​
 
 When **Charge tax on this variation** is checked, a **Class:** row appears below the checkbox showing the active class (for example, **Standard**). Click the **pencil icon** beside the class name to open a dropdown and pick a different class.
-
-![Screenshot of the Tax class dropdown open with Standard, Reduced, and Zero options](https://docs.fluentcart.com/images/product-types-creation/per-variation-tax/per-variation-tax-class.webp)
 
 The list includes every tax class configured on your store: **Standard** (default), **Reduced**, **Zero**, and any custom classes you've created. To add or rename classes store-wide, use [Configuring Tax Settings & Classes](/guide/tax-&-duties/configuration-and-classes) or the class tabs on [Tax Rates](/guide/tax-&-duties/tax-rates).
 
@@ -2516,8 +2396,6 @@ The **Products** screen in FluentCart is your central management hub for all ite
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Products** in the left sidebar.
 2. This will open the main **Products** screen, displaying a comprehensive table of all your products.
-
-![Screenshot of Products List Page](https://docs.fluentcart.com/images/product-types-creation/product-list/Products-list-1.webp)
 
 ## Understanding the Products List Table ​
 
@@ -2567,8 +2445,6 @@ For more detailed control, use the **Advanced Filter** option:
 - **Taxonomies:** Filter products by their classification, including Product Categories, and Product Brands.
 - **Conditional Logic:** Use the **"+ Add"** button for "AND" conditions and the **"+ OR"** button for "OR" conditions to combine multiple criteria.
 3. Apply your desired filters by clicking **"Apply"** or **"Reset"** them to view the complete list.
-
-![Screenshot of Product Advanced Filter Button](https://docs.fluentcart.com/images/product-types-creation/product-list/Products-list-2.webp)
 
 ## Pagination ​
 

@@ -456,7 +456,12 @@ functions.php
 
 By default, FluentCart displays prices with decimal places (e.g., $10.00). If you prefer cleaner pricing without unnecessary decimals (e.g., $10 instead of $10.00), use this snippet.
 
-Loading gist...This filter removes trailing zeros from prices, so 
+php
+```
+<?php
+
+add_filter('fluent_cart/hide_unnecessary_decimals', '__return_true');
+```This filter removes trailing zeros from prices, so 
 ```
 $10.00
 ```
@@ -544,7 +549,23 @@ addCustomerDashboardEndpoint()
 
  method to add a custom menu item to the FluentCart customer profile dashboard.
 
-Loading gist...If you use 
+php
+```
+<?php
+
+add_action('init', function () {
+    \FluentCart\Api\FluentCartGeneralApi::getInstance()->addCustomerDashboardEndpoint(
+        'support', [
+            'title' => __('Customer Support', 'fluent-cart-pro'),
+            // 'render_callback' => function () {
+            //     echo 'Put your text';
+            // },
+            'icon_svg' => '<svg style="padding: 2px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H4.5a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"></path></svg>',
+            'page_id' => 178,
+        ]
+    );
+});
+```If you use 
 ```
 render_callback
 ```
@@ -585,8 +606,6 @@ The easiest way to display your products is by using the main **Products** eleme
 2. Click the plus icon (**+**) to add a new element.
 3. In the elements panel, scroll down to the **FluentCart** category and click the **Products** element.
 
-![FluentCart Elements in Brick](https://docs.fluentcart.com/assets/bricks-1.B2pCGDOm.webp)
-
 This will instantly add a beautiful, fully functional grid of your products to the page.
 
 #### Customizing the Products Element ​
@@ -598,8 +617,6 @@ The real power comes from the customization options. After adding the **Products
 - **Filter:** Add a customer-facing filter sidebar so shoppers can narrow the collection themselves. See [Customer-Facing Product Filters](#customer-facing-product-filters) below for the full list of filter controls.
 - **Fields:** This allows you to reorder the different parts of the product card. You can drag and drop the fields to change the order of the product image, title, price, and button.
 - **Style Settings** Under the **Style** tab, you have full control over the visual design. You can customize the Layout, Typography, Borders, and more to perfectly match the look and feel of your brand.
-
-![Elements options in Brick](https://docs.fluentcart.com/assets/bricks-3.Dje4akbU.webp)
 
 ### Grid vs. List View ​
 
@@ -696,8 +713,6 @@ Adds a single **Add to Cart** button that customers can click to drop a specific
 - **Style Tab:** Customize the button's typography, background color, text color, border, hover state, and padding.
 - **Advanced Tab:** Standard Elementor controls for margin, padding, and responsive visibility.
 
-![Screenshot of the Add to Cart widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-2.webp)
-
 ## 2. Buy Now Button ​
 
 A focused shortcut that sends customers straight to checkout without stopping at the cart. Perfect for landing pages built around a single offer.
@@ -708,8 +723,6 @@ A focused shortcut that sends customers straight to checkout without stopping at
 - **Style Tab:** Style the background color, text color, typography, borders, and hover effects.
 - **Advanced Tab:** Standard Elementor positioning and responsive controls.
 
-![Screenshot of the Buy Now Button widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-3.webp)
-
 ## 3. Mini Cart ​
 
 A compact cart icon that usually sits in your site header. It lets customers see their cart count and total without leaving the current page.
@@ -718,8 +731,6 @@ A compact cart icon that usually sits in your site header. It lets customers see
 - **Typography & Colors:** Adjust the typography, text color, and icon color.
 - **Container Style:** Pick a **Background Type** (Classic or Gradient), choose a **Border Type**, set the **Border Radius** for rounded corners, and add a **Box Shadow**.
 - **Advanced Tab:** Fine-tune padding and margin so the cart icon aligns perfectly with the rest of your header.
-
-![Screenshot of the Mini Cart widget edit panel in Elementor showing Style controls](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-4.webp)
 
 ## 4. Products ​
 
@@ -732,8 +743,6 @@ The main widget for building shop pages. It renders your product catalog as a cl
 - **Style Tab:** Customize typography, card colors, button colors, and grid spacing.
 - **Advanced Tab:** Standard Elementor margin, padding, and responsive controls.
 
-![Screenshot of the Products widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-5.webp)
-
 ## 5. Product Card ​
 
 Renders a single product as a card — the same card layout used in the Products grid, but for a product you pick yourself. Great for highlighting a featured product anywhere on the page.
@@ -744,8 +753,6 @@ Renders a single product as a card — the same card layout used in the Products
 - **Style Tab:** Customize typography, colors, spacing, and the card's background and border.
 - **Advanced Tab:** Standard Elementor controls.
 
-![Screenshot of the Product Card widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-6.webp)
-
 ## 6. Product Carousel ​
 
 Use this on home pages or landing pages to show off a sliding row of products — perfect for "Best Sellers," "New Arrivals," or seasonal lineups.
@@ -755,8 +762,6 @@ Use this on home pages or landing pages to show off a sliding row of products �
 - **Card Layout:** Customize the look of each product card inside the carousel.
 - **Style Tab:** Change the size and color of the arrows and pagination dots to match your theme.
 - **Advanced Tab:** Add entrance animations or hide the carousel on specific devices.
-
-![Screenshot of the Product Carousel widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-7.webp)
 
 ## 7. Product Categories List ​
 
@@ -769,8 +774,6 @@ Helps customers navigate your store by listing all of your product categories. U
 - **Style Tab:** Adjust spacing, link colors, hover states, and typography.
 - **Advanced Tab:** Standard Elementor positioning controls.
 
-![Screenshot of the Product Categories List widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-8.webp)
-
 ## 8. Checkout ​
 
 Place the FluentCart checkout form on any page. This gives you full control over the layout of your sales funnel — useful for one-page checkouts, dedicated landing pages, and custom upsell flows.
@@ -781,8 +784,6 @@ Place the FluentCart checkout form on any page. This gives you full control over
 - **Layout Options:** Fine-tune the spacing and structure of the checkout container.
 - **Style Tab:** Available when **Use Default FluentCart Styles** is set to **No**. Customize field colors, label typography, button styles, and the order summary box.
 - **Advanced Tab:** Adjust width, spacing, and responsive behavior.
-
-![Screenshot of the Checkout widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-9.webp)
 
 ## 9. Customer Dashboard Button ​
 
@@ -797,8 +798,6 @@ A button that links to your customer's account dashboard. Drop it into your head
 
 The dashboard page itself is configured under **FluentCart Pro → Settings → Pages Setup**.
 
-![Screenshot of the Customer Dashboard Button widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-10.webp)
-
 ## 10. Product Search Bar ​
 
 A search input that lets customers find products from anywhere on your site. Use it in headers, hero sections, or a dedicated search page.
@@ -808,8 +807,6 @@ A search input that lets customers find products from anywhere on your site. Use
 - **Link With Shop App:** Connect the bar to your configured Shop App page so results display in your store's layout.
 - **Style Tab:** Style the input field, the category dropdown, the submit button, and the placeholder text.
 - **Advanced Tab:** Standard Elementor controls.
-
-![Screenshot of the Product Search Bar widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-11.webp)
 
 ## 11. Store Logo ​
 
@@ -822,8 +819,6 @@ Renders the store logo you configured in your FluentCart store settings. Drop it
 
 To set or change the logo image itself, open your FluentCart store settings.
 
-![Screenshot of the Store Logo widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-12.webp)
-
 ## 12. Product Info ​
 
 An all-in-one product summary widget. Instead of stacking a dozen smaller widgets, Product Info lets you compose the entire product summary block — title, price, stock, SKU, excerpt, package details, and buy section — inside a single widget with drag-and-drop reordering.
@@ -831,8 +826,6 @@ An all-in-one product summary widget. Instead of stacking a dozen smaller widget
 ### Content Tab — Display ​
 
 - **Source:** Pull data from the **Current Product** (the product whose template you are editing) or a **Custom** product.
-
-![Screenshot of the Product Info widget Content tab in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-13.webp)
 
 ### Content Tab — Sections ​
 
@@ -852,8 +845,6 @@ Product Info groups its output into four section panels you can show or reorder 
 Drag the handle on each row to change its position. Click **Add Item** to insert a new row. The order in the editor matches the order on the rendered template.
 - **Description:** Toggle **Show** to display the product's long-form description below the summary block.
 - **Related Products:** Toggle **Show** to display a related-products row at the bottom.
-
-![Screenshot of the Product Info widget Sections panel showing the drag-and-drop Summary Sections repeater](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-14.webp)
 
 ### Style Tab ​
 
@@ -893,8 +884,6 @@ Renders the title of the current product. Use it as the H1 on your single-produc
 - **Style Tab:** Customize typography, color, and text shadow.
 - **Advanced Tab:** Standard Elementor controls.
 
-![Screenshot of the Product Title widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-2.webp)
-
 ## 2. Product Gallery ​
 
 Renders the product's image gallery with the main image plus thumbnails. Use it on single-product templates to put the gallery exactly where you want it.
@@ -906,8 +895,6 @@ Renders the product's image gallery with the main image plus thumbnails. Use it 
 - **Max Thumbnails:** Cap the visible thumbnails — extra images become accessible behind a **See More** button.
 - **Advanced Tab:** Standard Elementor controls.
 
-![Screenshot of the Product Gallery widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-3.webp)
-
 ## 3. Product Price ​
 
 Displays the current product's price. For variable products, it shows the price range — and updates automatically when a customer picks a variation.
@@ -918,8 +905,6 @@ Displays the current product's price. For variable products, it shows the price 
 - **Style Tab:** Customize typography, regular-price color, sale-price color, and spacing.
 - **Advanced Tab:** Standard Elementor controls.
 
-![Screenshot of the Product Price widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-4.webp)
-
 ## 4. Product Stock ​
 
 Shows the current product's stock status — **In Stock**, **Out of Stock**, or a custom availability label.
@@ -928,8 +913,6 @@ Shows the current product's stock status — **In Stock**, **Out of Stock**, or 
 - **Select Product:** When **Source** is **Custom**, pick the product to display.
 - **Style Tab:** Customize the label typography and the color used for each stock state.
 - **Advanced Tab:** Standard Elementor controls.
-
-![Screenshot of the Product Stock widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-5.webp)
 
 ## 5. Product SKU ​
 
@@ -945,8 +928,6 @@ SKU:
 ).
 - **Style Tab:** Customize label typography, value typography, and color — independently.
 - **Advanced Tab:** Standard Elementor controls.
-
-![Screenshot of the Product SKU widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-6.webp)
 
 ## 6. Product Package Description ​
 
@@ -967,8 +948,6 @@ L × W × H
 
 The data comes from the package assigned in the product's [Pricing & Shipping settings](/guide/product-types-creation/configuring-product-pricing).
 
-![Screenshot of the Product Package Description widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-7.webp)
-
 ## 7. Product Excerpt ​
 
 Renders the product's short description (excerpt). Use it on single-product templates above the buy section, or on archive templates as a quick teaser.
@@ -978,8 +957,6 @@ Renders the product's short description (excerpt). Use it on single-product temp
 - **Style Tab:** Customize typography, color, and spacing.
 - **Advanced Tab:** Standard Elementor controls.
 
-![Screenshot of the Product Excerpt widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-8.webp)
-
 ## 8. Product Buy Section ​
 
 The full purchase block — variation selector, price, quantity field, **Buy Now** button, and **Add to Cart** button — rendered as a single widget. Drop it onto your single-product template to give customers everything they need to check out.
@@ -988,8 +965,6 @@ The full purchase block — variation selector, price, quantity field, **Buy Now
 - **Select Product:** When **Source** is **Custom**, pick the product to preview.
 - **Style Tab:** Customize the variation chips, price display, quantity input, and both action buttons — each has its own typography, color, and spacing controls.
 - **Advanced Tab:** Standard Elementor controls.
-
-![Screenshot of the Product Buy Section widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-9.webp)
 
 ## 9. Product Content ​
 
@@ -1001,8 +976,6 @@ Renders the long-form product content — the rich-text body of the product. Use
 - **Style Tab:** Customize typography, link colors, and spacing.
 - **Advanced Tab:** Standard Elementor controls.
 
-![Screenshot of the Product Content widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-10.webp)
-
 ## 10. Related Products ​
 
 Renders a row of products related to the current product. FluentCart picks the related items based on shared categories and tags, plus any manual relations you set in the product editor.
@@ -1011,8 +984,6 @@ Renders a row of products related to the current product. FluentCart picks the r
 - **Select Product:** When **Source** is **Custom**, pick the product whose related items you want to preview.
 - **Style Tab:** Customize the card spacing, typography, button styles, and image aspect ratio.
 - **Advanced Tab:** Standard Elementor controls.
-
-![Screenshot of the Related Products widget edit panel in Elementor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/product-widgets/fluentcart-elementor-11.webp)
 
 ---
 
@@ -1518,8 +1489,6 @@ Let's say you want to create a unique look for your shop by displaying the price
 
 Just like that, you have changed the layout for every product in the grid. You can reorder, remove, or customize any of the inner blocks to create the perfect design for your store.
 
-![Screenshot of List View](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/list-view.webp)
-
 ## Customizing Core Layouts with Templates (for Block Themes) ​
 
 If you are using a modern, block-based WordPress theme, you can edit FluentCart's core templates directly. This gives you control over the fundamental design of your product and archive pages.
@@ -1532,8 +1501,6 @@ If you are using a modern, block-based WordPress theme, you can edit FluentCart'
 
 - **Single Product:** This template controls the design of your individual product pages. Edit this to change the layout of the product title, image, description, and price for all products at once.
 - **Products by Category:** This template controls the design of your category pages (the pages that list all products in a category).
-
-![Screenshot of FluentCart Templates](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/fluentcart-templates.webp)
 
 ## Integrating with Page Builders Bricks ​
 
@@ -1609,19 +1576,13 @@ First, you'll need to install the tool that will help you translate the plugin t
 3. Find the plugin in the search results and click **Install Now**.
 4. Once it's installed, click the **Activate** button.
 
-![Activating the Loco Translate plugin from the WordPress plugins page.](https://docs.fluentcart.com/assets/loco-translate-activate.mKKBs23g.webp)
-
 ### Step 2. Translate FluentCart and FluentCart Pro ​
 
 Now you are ready to start translating. It's important to translate both the free **FluentCart** plugin and the **FluentCart Pro** add-on for a complete translation.
 
 1. Navigate to the new **Loco Translate** menu in your dashboard sidebar and click on **Plugins**.
 2. You will see a list of all your installed plugins. Click on **FluentCart** to begin. (You will repeat these steps for **FluentCart Pro** later.)
-
-![The Loco Translate plugins list](https://docs.fluentcart.com/assets/loco-translate-fluentcart.DgQcjJvu.webp)
 3. Click the **+ New language** link to add your translation file.
-
-![Clicking the 'New language' link in Loco Translate.](https://docs.fluentcart.com/assets/new-language.DZkZoE1X.webp)
 4. On the next screen, you will need to configure your new language file.
 
 - **Choose a language:** Choose the language that matches your WordPress General Settings language.
@@ -1630,8 +1591,6 @@ Now you are ready to start translating. It's important to translate both the fre
 INFO
 
 We highly recommend choosing the "**Custom**" location. Files saved here are protected from being overwritten when you update the FluentCart plugin. If you choose the "Author" location, your custom translations could be lost during an update.1. Click the **Start translating** button.
-
-![Select Language Location](https://docs.fluentcart.com/assets/select-language-location.Ddf2QsRi.webp)
 2. You will now be on the editor screen. Here you'll see a list of all the English text ("Source text") from the plugin.
 
 - Click on any English string from the list.
@@ -1639,8 +1598,6 @@ We highly recommend choosing the "**Custom**" location. Files saved here are pro
 - Click the **Save** button in the top left.
 - Repeat this process for all the text you wish to translate.
 3. Once you have finished translating the free version, go back to **Loco Translate → Plugins** and repeat the same steps for **FluentCart Pro** to ensure all features are translated.
-
-![Clicking the Save button](https://docs.fluentcart.com/assets/save-button.BCGkDylx.webp)
 
 ### Step 3. Set Your WordPress Site Language ​
 
@@ -1651,8 +1608,6 @@ For your translations to appear, you must tell WordPress which language your web
 3. Select your desired language from the list.
 4. Scroll to the bottom of the page and click the **Save Changes** button.
 
-![Setting the Site Language in WordPress General Settings](https://docs.fluentcart.com/assets/general-settings.Cvt0rrtN.webp)
-
 ### Previewing Your Translations ​
 
 After you save a translation, you can instantly see the changes on your site. There’s no need to log out or refresh anything except the page you’re viewing.
@@ -1660,8 +1615,6 @@ After you save a translation, you can instantly see the changes on your site. Th
 For example, let’s say you translated the helper text for the **Store Name** field as shown below.
 
 Now, go to **FluentCart Pro → Settings → Store Setup**. You’ll notice that the text under the Store Name field now appears in your translated language. You can use this same method to preview any string you translate.
-
-![Viewing the successfully translated helper text in the FluentCart Store Setup settings.](https://docs.fluentcart.com/assets/previewing-translation.B348Tg47.webp)
 
 ### Keeping Your Translations Up-to-Date ​
 
@@ -1725,8 +1678,6 @@ FluentCart starts with only the basics to keep your site fast. To use the Elemen
 3. **Find Plugin Addons:** Scroll to the bottom of the page to find the **Plugin Addons** section.
 4. **Turn it On:** Find the **Elementor Blocks** card and click **Install & Activate**.
 
-![Screenshot of the FluentCart widget category panel in the Elementor editor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/elementor-widget-1.webp)
-
 Once activated, two new categories appear inside the Elementor editor: **FluentCart** for store-wide widgets and **FluentCart Product** for single-product Theme Builder widgets.
 
 ## How to Find Your Widgets in the Editor ​
@@ -1735,8 +1686,6 @@ When you open any page or template in Elementor:
 
 1. Open the **Elements panel** (click the grid icon in the top-left corner).
 2. Type **FluentCart** in the search bar, or scroll the panel until you find the FluentCart categories.
-
-![Screenshot of the FluentCart widget category panel in the Elementor editor](https://docs.fluentcart.com/images/customization-and-themes/fluentcart-elementor-widgets/widget-for-fluentcart/fluentcart-elementor-1.webp)
 
 FluentCart groups its Elementor widgets into two categories so you always know where to look:
 
@@ -1803,8 +1752,6 @@ This is the main tool for building your shop pages using the WordPress block edi
 - **Filter Option:** You can toggle Enable Filter to let customers sort products easily. You can also turn on Default Filter to manage the starting order of your items.
 - **Additional CSS Class(es):** Enter custom code here if you want to add unique styling to the product block.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/accessing-fluentcart-blocks.webp)
-
 ### 2. Product Title ​
 
 This block displays the name of your product, pulling data automatically to keep your page accurate. It is a standalone tool, allowing you to place and style the title independently in your custom designs. Here you control how your product name behaves in the editor.
@@ -1830,8 +1777,6 @@ This block is used to display the full, detailed description of your product, pr
 
 **Additional CSS Class(es):** Enter custom code here if you want to add unique styling or specialized formatting to the product description block.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/product-description.webp)
-
 ### 4. Product Search ​
 
 The Product Search block helps customers quickly find specific items in your store. Instead of browsing through many products, users can simply type what they’re looking for and get instant results.
@@ -1846,8 +1791,6 @@ You can add this block from the editor by selecting the magnifying glass icon un
 - **Advanced Settings:** Standard block options for layout and design customization.
 - **Additional CSS Class(es):** Add custom CSS classes if you want to modify the search bar’s style, such as colors, borders, or width.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/product-search.webp)
-
 ### 5. Product Carousel ​
 
 The Product Carousel block is a dynamic tool for highlighting your best-selling or newest items in an interactive, sliding row. It is perfect for homepages or landing pages where you want to showcase multiple products in a limited space without overwhelming your shoppers.
@@ -1858,8 +1801,6 @@ The Product Carousel block is a dynamic tool for highlighting your best-selling 
 - **Additional CSS Class(es):** Enter custom code here if you want to add unique styling, like specialized borders or shadow effects, to the carousel container.
 
 > Tip: Use the Product Carousel block at the top of your homepage to highlight your best-selling items with high-quality imagery to grab attention immediately.
-
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/product-carousel.webp)
 
 ### 6. Customer Dashboard ​
 
@@ -1880,8 +1821,6 @@ This block is the "home base" for your customers. It acts as a personalized port
 - **Profile & Address Settings:** This allows shoppers to keep their contact information and shipping addresses up-to-date without needing to contact your support team.
 - **Additional CSS Class(es):** Use this section to add custom code if you want to change the colors or spacing of the dashboard to match your theme perfectly.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/customer-dashboard.webp)
-
 ### 7. Product Card ​
 
 If you want to highlight one specific item on a special page—like a "Deal of the Day"—the Product Card block is the perfect tool. It puts a single product into a beautiful, standalone card that includes the featured image, price, and an "Add to Cart" button all in one neat package.
@@ -1896,8 +1835,6 @@ You can find this block in the FluentCart section of your editor, represented by
 - **Card Sizing:** You can fully control the size by choosing Custom Width and using the slider to make the card wider or narrower to fit your layout (e.g., setting it to 216 pixels).
 - **Additional CSS Class(es):** Enter custom code here if you want to add unique styling, like special shadows or borders, to your product card.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/product-card.webp)
-
 ### 8. Product Image ​
 
 This block allows you to showcase the visual identity of your products anywhere on your site. It renders the featured image of a specific product, making it an essential tool for building custom landing pages or highlighted product sections.
@@ -1908,8 +1845,6 @@ This block allows you to showcase the visual identity of your products anywhere 
 - **Select Product:** Click this button to open a search and select the exact product whose image you want to feature.
 - **Product Title:** This area displays the name of the product you have currently selected (e.g., "Perfume") so you can easily verify you've picked the right one.
 - **Additional CSS Class(es):** Enter custom code here if you want to add unique styling, like custom borders, shadows, or hover effects to your product image.
-
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/product-image.webp)
 
 ### 9. Sale Badge ​
 
@@ -1931,8 +1866,6 @@ The Sale Badge block is a must-have for any store looking to boost conversions b
 - **Border & Shadow:** Add specialized borders or shadow effects to give your badges a professional, 3D look.
 - **Additional CSS Class(es):** Enter custom code here if you want to add unique styling, like custom shapes or pulsing animations, to your sale badges.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/sale-badge.webp)
-
 ### 10. Sold Out Badge ​
 
 This block displays a clear visual alert on products that are currently out of stock, helping you manage customer expectations at a glance. It automatically triggers based on your real-time inventory levels, ensuring shoppers always know which items are unavailable before they try to purchase.
@@ -1944,8 +1877,6 @@ This block displays a clear visual alert on products that are currently out of s
 
 **Additional CSS Class(es):** Enter custom code here if you want to apply unique styling, such as custom colors or specialized font effects, to the sold-out label.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/sold-out-badge.webp)
-
 ### 11. Product Info ​
 
 This block is used to display essential details about your product—such as the title, description, and price—in a clean and organized way. It acts as a central hub for pulling product data directly into your custom layouts or landing pages.
@@ -1955,8 +1886,6 @@ Here you control which product's information the block displays.
 - **Query type:** This setting allows you to choose how the block identifies the product. Setting it to **Default** will automatically pull data from the product page it is placed on, while choosing **Custom** allows you to manually search for and select a specific item from your catalog.
 - **Select Product:** If you choose a custom query, you can use the selection button in the editor to pick the exact product you want to showcase.
 - **Additional CSS Class(es):** Enter custom code here if you want to add unique styling, such as custom borders or specific text colors, to the product information container.
-
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/product-info.webp)
 
 ### 12. Price Range ​
 
@@ -1982,8 +1911,6 @@ This block is a compact cart widget designed to let shoppers quickly view their 
 
 - **Additional CSS Class(es):** Enter custom code here if you want to add unique styling, such as specialized hover animations or custom border effects.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/minicart-8.webp)
-
 ### 14. Buy Now Button ​
 
 The Buy Now button is a powerful shortcut designed for landing pages to trigger an immediate purchase action. Instead of sending customers through the standard cart process, this block can be configured to take them directly to checkout or open a payment window on the same page.
@@ -1998,8 +1925,6 @@ The Buy Now button is a powerful shortcut designed for landing pages to trigger 
 - **Typography:** Adjust the Font Size (from Small to Extra Large) and Line Height to ensure your call-to-action is clear and readable.
 - **Dimensions:** Use the Padding and Margin sliders to adjust the size of the button and its spacing within your layout.
 - **Additional CSS Class(es):** Enter custom code here if you want to add unique styling, such as custom hover animations or specialized border effects.
-
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/buy-now-8.webp)
 
 ### 15. Add to Cart Button ​
 
@@ -2016,8 +1941,6 @@ The Add to Cart button is a standalone tool that allows customers to add a speci
 - **Border & Shadow:** Add depth to your button by configuring border styles or shadow effects.
 - **Additional CSS Class(es):** Enter custom code here if you want to apply unique CSS styling, such as custom hover states or specialized animations.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/add-to-cart-9.webp)
-
 ### 16. Buy Section ​
 
 This block acts as the functional hub of your product page. It brings together all the essential purchase elements—like price, quantity, and action buttons—into one convenient area for your customers.
@@ -2028,8 +1951,6 @@ This block acts as the functional hub of your product page. It brings together a
 - **Included Elements:** The block automatically renders the product price, a Quantity selector (with plus and minus buttons), and both Buy Now and Add To Cart buttons to provide a complete shopping experience.
 - **Additional CSS Class(es):** Enter custom code here if you want to apply unique styling or specialized layout adjustments to the entire buy section container.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/buy-section-10.webp)
-
 ### 17. Checkout Page ​
 
 This is the essential block that renders the secure checkout form for completing purchases. It provides a comprehensive, professional layout where customers enter their details and review their items before finalizing their order.
@@ -2039,8 +1960,6 @@ This is the essential block that renders the secure checkout form for completing
 - **Order Summary Sidebar:** Displays a clear breakdown of the purchase, including product variations, subtotals, shipping costs, and tax estimates.
 - **Coupons & Terms:** Features a **Have a Coupon?** section for applying manual discounts and a checkbox at the bottom for customers to agree to your terms and conditions.
 - **Additional CSS Class(es):** Enter custom code here if you want to apply unique styling to the checkout form, such as custom borders or specific background colors for the form fields.
-
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/checkout-page-11.webp)
 
 ### 18. Product Categories List ​
 
@@ -2058,8 +1977,6 @@ The Product Categories List block helps your customers navigate your store by di
 - **Typography:** Adjust the Font Size (ranging from Small to Extra Large) and the Line Height to ensure the list matches your website's design.
 - **Additional CSS Class(es):** Enter custom code here if you want to add unique styling, such as custom bullet points or specialized hover effects for the category links.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/product-category-list-12.webp)
-
 ### 19. Excerpt ​
 
 The Excerpt block is designed to display a brief summary or snippet of your product's description. It is an ideal tool for building custom shop layouts or landing pages where you want to provide a quick preview of an item without including the full description text.
@@ -2074,15 +1991,11 @@ Here, you can easily control the data source for the snippet.
 - **Dimensions:** Use the Margin slider to adjust the external spacing around the excerpt for perfect placement within your layout.
 - **Additional CSS Class(es):** Enter custom code here if you want to apply unique styling, such as specific font weights or text effects, to the product excerpt.
 
-![Screenshot of FluentCart Blocks](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/excerpt.webp)
-
 ### 20. Product Package Description ​
 
 The **Product Package Description** block surfaces the physical details of a product — package name, dimensions, product weight, and total shipping weight — directly on the product page in a clean, theme-aware table. It reads from the package you assigned in the product's [Pricing & Shipping settings](/guide/product-types-creation/configuring-product-pricing#adding-a-new-package), so there is no duplicate data to maintain.
 
 For stores selling furniture, books, appliances, food, or anything where size and weight meaningfully influence a buying decision, this block turns hidden shipping metadata into information customers can see *before* they check out.
-
-![Screenshot of the Product Package Description block on a single product page showing Package, Dimensions, Weight, and Shipping Weight rows next to variant selectors](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/product-package-description.webp)
 
 **Inspector Settings:** Use the settings tab (gear icon) to control what the table displays.
 
@@ -2118,8 +2031,6 @@ The table uses CSS variables (border, text, and background) inherited from your 
 Once you configure the package data, the same information flows through the customer's journey without further configuration:
 
 - **Checkout order summary** — package name and shipping weight appear under each cart line, so shoppers confirm shipping details before they pay.
-
-![Screenshot of the checkout order summary showing Gift box and shipping weight under an order line](https://docs.fluentcart.com/images/customization-and-themes/using-fluentcart-blocks/package-description-checkout.webp)
 - **Order confirmation emails** — the default email body and customized templates can both display package details. See [Configuring Email Notifications](/guide/settings-configuration/email-configuration/configuring-email-notification) for the merge tags.
 
 > Note: Each FluentCart block comes with its own customization settings. After adding a block, check the settings panel on the right to adjust design, alignment, behavior, and visibility.

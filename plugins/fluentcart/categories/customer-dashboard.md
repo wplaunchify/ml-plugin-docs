@@ -18,8 +18,6 @@ Ensure you have set the Customer Dashboard page from **FluentCart Pro** > **Sett
 
 When a customer logs in, they'll see a quick summary of their activity. From there, they can dive into several key sections to manage their account:
 
-![Screenshot of Customer Dashboard Overview](https://docs.fluentcart.com/images/customer-dashboard/customer-dashboard-overview/customer-dashboard.webp)
-
 - **View Purchase History (Orders & Payment Details)**: Provides a complete and detailed record of all past orders, including transaction details, payment statuses, and options to download invoices.
 - **Managing Subscriptions**: If you sell subscription products, this is where customers can view and control their recurring plans. They can check the status, see upcoming renewal dates, and manage other details.
 - **Managing Licenses**: For software or other digital products that use license keys, this is a dedicated area for customers to find their keys, check activation limits, and see renewal information.
@@ -48,8 +46,6 @@ When you go to the Downloads page, you will see a simple list of all the files a
 
 To save a file to your computer, just click the **Download** button next to it. The download will start automatically. If you have many purchased files, you can navigate through them using the page numbers at the bottom of the list.
 
-![Screenshot of Licenses](https://docs.fluentcart.com/images/customer-dashboard/downloads/downloads-1.webp)
-
 ---
 
 ## Licenses ​
@@ -77,8 +73,6 @@ SNW-.......... f1bc1
 
 You can navigate through pages if you have many licenses (e.g., "Page 1 of 1", "10/page Total 1").
 
-![Screenshot of Licenses](https://docs.fluentcart.com/images/customer-dashboard/licenses/licenses-1.webp)
-
 ## Managing an Individual License ​
 
 This screen gives the customer all the essential information about their license in one clean interface.
@@ -92,7 +86,7 @@ This screen gives the customer all the essential information about their license
 
 NOTE
 
-If the license is connected to a LearnDash course through a [LearnDash integration feed](/guide/integrations/learndash-integration) with **Set Course Expiration from Subscription / License Expiry** enabled, the customer's course access will end on the same date shown here. Renewing the license automatically extends both the license and the connected LearnDash course access.![Screenshot of Licenses](https://docs.fluentcart.com/images/customer-dashboard/licenses/licenses-2.webp)
+If the license is connected to a LearnDash course through a [LearnDash integration feed](/guide/integrations/learndash-integration) with **Set Course Expiration from Subscription / License Expiry** enabled, the customer's course access will end on the same date shown here. Renewing the license automatically extends both the license and the connected LearnDash course access.
 
 ---
 
@@ -128,8 +122,6 @@ This section allows you to provide or update the address where your orders will 
 - **Add New Address:** Click the **+ ADD NEW ADDRESS** button to add a new shipping address.
 - **Default Address:** You can view your saved shipping addresses.
 
-![Screenshot of Purchase History](https://docs.fluentcart.com/images/customer-dashboard/customer-profile/customer-profile.webp)
-
 ## Edit an Existing Address ​
 
 To change an address you've already saved, find it in the list. Click the **three-dot** menu on the right side of the address card and select the **Edit** option.
@@ -139,8 +131,6 @@ A pop-up window will appear, allowing you to update any part of your address.
 When you're finished with your changes, click the **Update Address** button or **Cancel** button to cancel editing.
 
 After making any changes on this page, make sure you scroll to the bottom and click the main **Save Profile** button. This saves all your updates to your name and addresses
-
-![Screenshot of Purchase History](https://docs.fluentcart.com/images/customer-dashboard/customer-profile/edit-address.webp)
 
 ---
 
@@ -181,11 +171,7 @@ incl.
 
 When prices Tax Include:
 
-![Screenshot of the Purchase Successful page with tax-inclusive pricing, showing per-item tax badges marked incl. and the TAX SUMMARY Total tax in this order row](https://docs.fluentcart.com/images/customer-dashboard/purchase-confirmation/purchase-bill-tax.webp)
-
 When prices Tax Exclude:
-
-![Screenshot of the Purchase Successful page with tax-exclusive pricing, showing per-item tax badges with a plus and the TAX SUMMARY Total payable tax row](https://docs.fluentcart.com/images/customer-dashboard/purchase-confirmation/purchase-bill-tax-excluded.webp)
 
 ### Invoice & Receipt Details ​
 
@@ -205,8 +191,6 @@ FluentCart automatically generates an invoice receipt for every order. This invo
 NOTE
 
 If the purchased subscription includes a **Setup Fee**, it now appears as a clearly labeled line item on both the invoice receipt and the order confirmation email — so customers always know exactly what the one-time charge was for, on top of the recurring subscription price.This detailed invoice ensures that customers have all the necessary purchase information in one place. For B2B customers selling into the EU, UK, and other VAT jurisdictions, the VAT number on the receipt makes the document compliance-ready for the buyer's own bookkeeping — no manual workaround needed.
-
-![Purchase Confirmation](https://docs.fluentcart.com/assets/purchase-confirmation.DkO1RPUS.webp)
 
 ### Downloading the Invoice Receipt ​
 
@@ -258,8 +242,6 @@ When you go to the Purchase History page, you'll see a list of all your orders. 
 
 Have a lot of past orders? No problem. Use the **Search bar** (look for the magnifying glass icon) at the top-right of your order list to quickly find the purchase you're looking for.
 
-![Screenshot of Purchase History](https://docs.fluentcart.com/images/customer-dashboard/purchase-history/purchase-history-1.webp)
-
 ## Viewing Individual Order Details ​
 
 To see the full details for a purchase, just click on its order number in the list. This will take you to a detailed summary page where you can find everything related to that specific order.
@@ -271,8 +253,6 @@ Here’s what you might see on the details page:
 - **Downloads**: For any digital products, a 'Download' section will appear with a list of your files. Simply click the **Download** button to save the file to your device.
 - **Transaction and Billing Info**: At the bottom of the page, you can find the specific **Related Transactions** for your payment and the **Billing Address** that was used for the order.
 - **License Details**: If your order included a product with a software license, you would also see a section here with your license key and activation details.
-
-![Screenshot of Purchase History](https://docs.fluentcart.com/images/customer-dashboard/purchase-history/purchase-history-2.webp)
 
 ---
 
@@ -294,8 +274,6 @@ For each subscription, you can quickly see:
 - **Status:** The current status of the subscription (e.g., Active) and its next renewal date.
 - **Plan:** The recurring cost and billing frequency (e.g., "$79.00 per year, until cancel.").
 - **Payment Method:** The saved payment method used for automatic renewals (e.g., the last four digits of a credit card).
-
-![Screenshot of Subscription](https://docs.fluentcart.com/images/customer-dashboard/subscriptions/subscriptions-1.webp)
 
 ### Managing an Individual Subscription ​
 
@@ -333,8 +311,6 @@ At the bottom of the page, you'll find a complete financial audit trail for your
 When a subscription is cancelled, the customer automatically receives a cancellation email that includes the **access end date** — the exact date their access will end. This removes the guesswork around whether cancellation is immediate or continues through the paid period and gives the customer a clear timeline.
 
 For stores running courses, memberships, or licensed products, this means buyers always know how much time is left on their plan after cancellation, without needing to contact support.
-
-![Screenshot of Subscription](https://docs.fluentcart.com/images/customer-dashboard/subscriptions/subscriptions-2.webp)
 
 ---
 

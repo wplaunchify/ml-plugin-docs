@@ -113,8 +113,6 @@ Before you open the FluentCart Storage screen, create a pair of S3 access keys i
 3. In the IAM sidebar, expand **Access Management** and click **Users**.
 4. Click the **Create user** button in the top-right.
 
-![AWS IAM — Users list with Create user highlighted](https://docs.fluentcart.com/images/storage/s3/aws-iam-users-list.webp)
-
 > Tip: IAM is a global service — you do not need to pick a region for user creation.
 
 ### 2. Specify User Details ​
@@ -125,8 +123,6 @@ fluentcart-s3
 ```
 
 ). Leave **Provide user access to the AWS Management Console** **unchecked** — FluentCart only needs programmatic (API) access, not a console login. Click **Next**.
-
-![AWS IAM — Specify user details with a programmatic-only user](https://docs.fluentcart.com/images/storage/s3/aws-user-details.webp)
 
 > Why no console access? A dedicated API-only user reduces your attack surface. If the key ever leaks, the attacker cannot log into the AWS console with it.
 
@@ -144,15 +140,11 @@ s3full
 3. Tick the row for **AmazonS3FullAccess**.
 4. Click **Next**.
 
-![AWS IAM — Attach AmazonS3FullAccess policy directly](https://docs.fluentcart.com/images/storage/s3/aws-attach-policy.webp)
-
 > Security-conscious alternative: instead of AmazonS3FullAccess, you can create a custom policy scoped to a single bucket ARN with only the actions FluentCart uses (s3:ListAllMyBuckets, s3:ListBucket, s3:CreateBucket, s3:PutObject, s3:GetObject, s3:DeleteObject, s3:PutBucketPublicAccessBlock, s3:PutBucketOwnershipControls). The managed policy is simpler and is what this guide assumes.
 
 ### 4. Review and Create the User ​
 
 Double-check the user name and the attached policy. Tags are optional — you can skip them. Click **Create user**.
-
-![AWS IAM — Review and create the new IAM user](https://docs.fluentcart.com/images/storage/s3/aws-review-create.webp)
 
 ### 5. Open the New User's Security Credentials ​
 
@@ -163,13 +155,9 @@ fluentcart-s3
 
 ). On the user details page, open the **Security credentials** tab, scroll down to the **Access keys** section, and click **Create access key**.
 
-![AWS IAM — User security credentials with Create access key](https://docs.fluentcart.com/images/storage/s3/aws-security-credentials.webp)
-
 ### 6. Pick a Use Case for the Access Key ​
 
 AWS asks what the key will be used for. Choose **Third-party service** (FluentCart is a third-party application calling the S3 API on your behalf). AWS will surface a best-practice reminder — tick **I understand the above recommendation and want to proceed to create an access key**, then click **Next**.
-
-![AWS IAM — Access key use case: Third-party service](https://docs.fluentcart.com/images/storage/s3/aws-access-key-usecase.webp)
 
 You can leave the optional **description tag** blank, or add something like 
 ```
@@ -184,8 +172,6 @@ AWS now shows both values:
 
 - **Access key** — the public ID.
 - **Secret access key** — the private half. Click **Show** to reveal it.
-
-![AWS IAM — Retrieve access key and secret access key](https://docs.fluentcart.com/images/storage/s3/aws-retrieve-keys.webp)
 
 The secret is shown **only once**
 
@@ -227,8 +213,6 @@ FluentCart supports two ways to supply your AWS access keys.
 
 This is the most secure option. Your keys live in your WordPress configuration file, never in the database, and are not readable from the admin UI.
 
-![Amazon S3 — Define access keys in wp-config.php](https://docs.fluentcart.com/images/storage/s3/credential-define.webp)
-
 Copy the snippet below **near the top** of your 
 ```
 wp-config.php
@@ -258,8 +242,6 @@ wp-config.php
 
 Available when you need UI-only configuration. Keys are saved to the database, which is inherently less secure than a file-based constant — an acknowledgement is shown before you proceed.
 
-![Amazon S3 — Store access keys in the database](https://docs.fluentcart.com/images/storage/s3/credential-db.webp)
-
 Select **"I understand the risks but I'd like to store access keys in the database."** Then enter:
 
 - **Access Key** — your AWS Access Key ID.
@@ -279,8 +261,6 @@ An S3 **bucket** is a named storage container inside your AWS account. FluentCar
 
 If you already know the exact name of the bucket you want to use, type it directly.
 
-![Amazon S3 — Enter bucket name manually](https://docs.fluentcart.com/images/storage/s3/bucket-existing-manual.webp)
-
 1. Select **Use Existing Bucket**.
 2. Choose **Enter bucket name**.
 3. Type the bucket name and click **Save Selected Bucket**.
@@ -288,8 +268,6 @@ If you already know the exact name of the bucket you want to use, type it direct
 ### Option 2 — Use Existing Bucket, Browse From AWS ​
 
 FluentCart can fetch the list of buckets attached to the connected AWS account so you can pick from a dropdown — no copy-pasting names, no typos.
-
-![Amazon S3 — Browse existing buckets](https://docs.fluentcart.com/images/storage/s3/bucket-existing-browse.webp)
 
 1. Select **Use Existing Bucket**.
 2. Choose **Browse existing buckets**.
@@ -299,8 +277,6 @@ FluentCart can fetch the list of buckets attached to the connected AWS account s
 ### Option 3 — Create a New Bucket From the UI ​
 
 No need to switch to the AWS console. FluentCart can create a fresh S3 bucket in the region you pick.
-
-![Amazon S3 — Create a new bucket](https://docs.fluentcart.com/images/storage/s3/bucket-create-new.webp)
 
 1. Select **Create New Bucket**.
 2. Enter a **Bucket Name**. Bucket names must be unique across **all of AWS globally**, follow DNS-style naming (lowercase letters, numbers, hyphens), and cannot be reused after deletion for a while.
@@ -314,8 +290,6 @@ No need to switch to the AWS console. FluentCart can create a fresh S3 bucket in
 ## Step 3 — Security ​
 
 This step configures two bucket-level protections on AWS.
-
-![Amazon S3 — Security step with recommended toggles enabled](https://docs.fluentcart.com/images/storage/s3/security-enabled.webp)
 
 ### Block All Public Access ​
 
@@ -333,8 +307,6 @@ Controls who owns objects uploaded into the bucket.
 
 Both toggles are surfaced as first-class controls with clear recommendation labels:
 
-![Amazon S3 — Security step with toggles disabled, not recommended](https://docs.fluentcart.com/images/storage/s3/security-disabled.webp)
-
 Click **Save Settings** to finish.
 
 ---
@@ -342,8 +314,6 @@ Click **Save Settings** to finish.
 ## Connected State ​
 
 Once all three steps are complete, the Amazon S3 card shows the provider as **Active**, with the bucket name, region, and security summary.
-
-![Amazon S3 — Connected and ready to serve assets](https://docs.fluentcart.com/images/storage/s3/connected.webp)
 
 What each element does:
 
@@ -559,8 +529,6 @@ You should now see the **R2 Object Storage** overview, listing any existing buck
 
 Look at the right-hand side of the R2 overview page, under **Account Details**. Your **Account ID** is displayed as a long hex string — click the copy icon next to it to grab it.
 
-![Cloudflare dashboard — Account ID location in R2 overview](https://docs.fluentcart.com/images/storage/r2/cloudflare-r2-id.webp)
-
 Paste it somewhere safe for a moment; you will need it shortly when filling in FluentCart (Method B) or your 
 ```
 wp-config.php
@@ -572,8 +540,6 @@ wp-config.php
 
 Still on the R2 overview page, look inside the **Account Details** card for the **API Tokens** row and click the **Manage** button next to it.
 
-![Cloudflare dashboard — Manage API Tokens button](https://docs.fluentcart.com/images/storage/r2/cloudflare-r2-id-manage.webp)
-
 This opens the R2 API Tokens management page, where you will create a new token.
 
 #### 4. Create an Account API Token ​
@@ -584,8 +550,6 @@ The API Tokens page splits into two sections:
 - **User API Tokens** — tokens tied to your individual Cloudflare user. They become inactive if you leave the organization. Only useful for personal or short-lived development setups.
 
 Click **Create Account API token** (the recommended path for a real store).
-
-![Cloudflare dashboard — Create Account API Token button](https://docs.fluentcart.com/images/storage/r2/cloudflare-r2-id-api.webp)
 
 #### 5. Configure Token Permissions ​
 
@@ -602,8 +566,6 @@ R2 Account Token for FluentCart
 - Reading, writing, and deleting objects inside buckets (so uploads, downloads, and file management work)
 - **TTL (Time to live)** — choose **Forever**. You do not want your store's storage driver to silently stop working when a token expires. If your security policy requires token rotation, pick a date you can actually track and set a calendar reminder to rotate the token before it expires.
 - **Client IP Address Filtering** *(optional)* — leave blank unless your store runs from a known, fixed set of server IPs. If you do restrict by IP, remember to add any load balancer or cron-runner IPs too, or uploads from background processes will fail.
-
-![Cloudflare dashboard — Create Account API Token with Admin Read & Write and Forever TTL](https://docs.fluentcart.com/images/storage/r2/cloudflare-r2-bucket-api.webp)
 
 > Why "Admin Read & Write" rather than "Object Read & Write"?Object Read & Write only covers reading, writing, and listing objects in specific buckets. FluentCart additionally lets you list all your buckets and create new ones from its own UI — that needs the broader Admin permission. If you prefer a narrower token, use Object Read & Write scoped to your FluentCart bucket, but you will lose the bucket-browse and bucket-create conveniences in the plugin.
 
@@ -629,8 +591,6 @@ You now have all three values FluentCart needs:
 
 Head back to FluentCart and continue with Step 1 below.
 
-![Cloudflare dashboard — Create Account API Token](https://docs.fluentcart.com/images/storage/r2/cloudflare-r2-api-created.webp)
-
 ---
 
 ## Step 1 — Credential ​
@@ -640,8 +600,6 @@ FluentCart supports two ways to supply your R2 credentials.
 ### Method A — Define Access Keys in wp-config.php (Recommended) ​
 
 The most secure option. Keys live in your WordPress configuration file, not in the database, and are not editable from the admin UI.
-
-![Cloudflare R2 — Define access keys in wp-config.php](https://docs.fluentcart.com/images/storage/r2/credential-define.webp)
 
 Copy the snippet below **near the top** of your 
 ```
@@ -673,8 +631,6 @@ wp-config.php
 
 Available when you need UI-only configuration. Keys are saved to the database; an explicit acknowledgement is required.
 
-![Cloudflare R2 — Store access keys in the database](https://docs.fluentcart.com/images/storage/r2/credential-db.webp)
-
 Select **"I understand the risks but I'd like to store access keys in the database anyway."** Then enter:
 
 - **Account ID** — your Cloudflare Account ID.
@@ -693,8 +649,6 @@ An R2 **bucket** is a named storage container inside your Cloudflare account. Fl
 
 If you already know the name of the bucket you want to use, type it directly.
 
-![Cloudflare R2 — Enter bucket name manually](https://docs.fluentcart.com/images/storage/r2/bucket-existing-manual.webp)
-
 1. Select **Use Existing Bucket**.
 2. Choose **Enter bucket name**.
 3. Type the bucket name and click **Save Settings**.
@@ -702,8 +656,6 @@ If you already know the name of the bucket you want to use, type it directly.
 ### Option 2 — Use Existing Bucket, Browse From Cloudflare ​
 
 FluentCart can fetch the buckets attached to your Cloudflare account so you can pick one from the list.
-
-![Cloudflare R2 — Browse existing buckets](https://docs.fluentcart.com/images/storage/r2/bucket-existing-browse.webp)
 
 1. Select **Use Existing Bucket**.
 2. Choose **Browse existing buckets**.
@@ -713,8 +665,6 @@ FluentCart can fetch the buckets attached to your Cloudflare account so you can 
 ### Option 3 — Create a New Bucket From the UI ​
 
 No need to switch over to the Cloudflare dashboard. FluentCart can create a fresh R2 bucket in the jurisdiction you pick.
-
-![Cloudflare R2 — Create a new bucket](https://docs.fluentcart.com/images/storage/r2/bucket-create-new.webp)
 
 1. Select **Create New Bucket**.
 2. Enter a **Bucket Name**. R2 bucket names must be **globally unique across all Cloudflare R2 accounts** — this is called out directly in the UI.
@@ -742,8 +692,6 @@ R2 lets you pin a bucket to a geographic jurisdiction for data residency, latenc
 ## Connected State ​
 
 Once credentials are verified and a bucket is picked, the Cloudflare R2 card shows the provider as **Active**, with the bucket name and jurisdiction.
-
-![Cloudflare R2 — Connected and ready to serve assets](https://docs.fluentcart.com/images/storage/r2/connected.webp)
 
 What each element does:
 

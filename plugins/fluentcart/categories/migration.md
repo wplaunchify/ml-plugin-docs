@@ -76,8 +76,6 @@ This layer is what turns a migration from a hard cutover into a soft transition.
 
 The completion screen lists the four areas the Migrator continues to bridge:
 
-![Completion screen showing the backward compatibility notice listing License API, PayPal IPN, Stripe webhooks, and download/renewal URLs](https://docs.fluentcart.com/assets/06-backward-compat.CIekn9YY.webp)
-
 ### License API endpoints ​
 
 If you sold software with EDD Software Licensing, your customers' plugins, themes, or apps make periodic API calls to your site to:
@@ -318,8 +316,6 @@ The wizard remains the right choice for small-to-medium stores or for non-techni
 ## Commands at a glance ​
 
 The wizard surfaces the most common commands inside the **WP-CLI (Recommended for Large Stores)** panel:
-
-![Migration steps with the WP-CLI command panel below](https://docs.fluentcart.com/assets/04-steps-cli.CS_cTgfq.webp)
 
 ## The primary command ​
 
@@ -625,8 +621,6 @@ Now that the bridge is built, open the tool.
 
 This launches the **Migration Wizard** — a clean, step-by-step interface that walks you through the entire transfer.
 
-![FluentCart Migrator landing screen with the source platform picker](https://docs.fluentcart.com/assets/01-source-select.DAxuYu_p.webp)
-
 ## Step 3: Select Your Source ​
 
 The wizard auto-detects which eCommerce plugins are installed. If you're running Easy Digital Downloads, the **Easy Digital Downloads** card displays a green **DETECTED** badge.
@@ -642,8 +636,6 @@ Before moving any data, the wizard runs a quick compatibility check.
 This step verifies that your installation of Easy Digital Downloads is fully compatible with the migration tool. Specifically, it checks for EDD 3.x with the v3 table schema. EDD 2.x stores using the legacy CPT data model are blocked here with a clear message — update to EDD 3.x first, then return to the wizard.
 
 Once you see the **green confirmation box**, click **Continue**.
-
-![Compatibility check screen showing EDD 3.x detected with version number](https://docs.fluentcart.com/assets/02-compatibility.D5t3rahG.webp)
 
 ## Step 5: Pre-Migration Overview ​
 
@@ -661,8 +653,6 @@ You'll see clear summary cards displaying the total count of:
 The wizard also surfaces detected payment gateways and the order statuses present in your data, so you can confirm there are no surprises.
 
 Compare these numbers against what you know is in your EDD store. If they look right, proceed.
-
-![Pre-migration overview showing entity counts, gateways, and order statuses](https://docs.fluentcart.com/assets/03-pre-overview.D5oAYckQ.webp)
 
 ## Step 6: Configure and Start the Migration ​
 
@@ -696,16 +686,12 @@ Keep this tab open
 
 Don't close or refresh this browser tab while the migration is running. The progress bar needs an active connection to process your data. Grab a coffee and let FluentCart do the heavy lifting.If the migration is interrupted
 
-No need to panic. The Migrator tracks its progress as it goes. If your browser closes, your session times out, or anything else interrupts the process, return to the Migrator screen and start it again. It will automatically skip everything that already completed and resume the payments stage from the exact batch where it stopped.![Migration steps with WP-CLI command panel below](https://docs.fluentcart.com/assets/04-steps-cli.CS_cTgfq.webp)
-
-On the same screen: WP-CLI commands
+No need to panic. The Migrator tracks its progress as it goes. If your browser closes, your session times out, or anything else interrupts the process, return to the Migrator screen and start it again. It will automatically skip everything that already completed and resume the payments stage from the exact batch where it stopped.On the same screen: WP-CLI commands
 
 The configuration screen also surfaces the WP-CLI commands for each stage. For stores with thousands of orders, switching to the CLI is significantly faster and avoids browser timeouts entirely. See the [WP-CLI Reference](/guide/migration/edd/edd-cli) for the full command surface.
 ## Step 7: Migration Complete — Verify Before Going Live ​
 
 Once the progress bar reaches **100%**, you'll see a green checkmark and a **Migration Completed** screen with a final breakdown of how many items were copied across each category.
-
-![Migration completion screen with stats, backward compatibility notice, and next steps](https://docs.fluentcart.com/assets/06-backward-compat.CIekn9YY.webp)
 
 The completion screen also includes an important notice — **keep the Migrator plugin active** even after the migration finishes. It provides a backward compatibility layer for existing customers. See [Backward Compatibility](/guide/migration/edd/backward-compatibility) for the full explanation.
 
@@ -963,8 +949,6 @@ Reset drops FluentCart tables and deletes migrated post data. Only ever run it o
 ### The reset button in the wizard ​
 
 When Developer Mode is active and the wizard detects a previous migration on the current site, a **Reset Migration** link appears on the Pre-Migration Overview screen inside the "Previous migration detected" notice:
-
-![Pre-Migration Overview with the Previous migration detected notice and Reset Migration link](https://docs.fluentcart.com/assets/07-reset-button.DDretq2x.webp)
 
 Clicking the link asks for confirmation, then runs the reset. On production (Developer Mode disabled), this link is hidden entirely — the notice still appears to confirm the previous run completed, but without the reset option.
 

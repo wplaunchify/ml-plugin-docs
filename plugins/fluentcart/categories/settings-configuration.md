@@ -46,8 +46,6 @@ This section controls the visibility of the cart, how user accounts are created,
 2. Click on the **Store Settings** tab.
 3. From the sub-menu, select **Cart & Checkout**.
 
-![Screenshot of Additional Info Settings Tab](https://docs.fluentcart.com/images/settings-configuration/cart-checkout/cart-checkout.webp)
-
 #### Cart Icon in Body ​
 
 Enable this to display a floating cart icon that remains visible on the side of the screen as the user scrolls. This provides a convenient, one-click path for customers to return to their cart from anywhere on your site.
@@ -113,8 +111,6 @@ This section allows you to define the address fields required for billing purpos
 - **Post Code**: Displays the postal/zip code field. It is enabled and required by default.
 - **Phone**: An optional field to collect the customer’s phone number.
 
-![Screenshot of Additional Info Settings Tab](https://docs.fluentcart.com/images/settings-configuration/checkout-field/checkout-fields.webp)
-
 ### 3. Shipping Address ​
 
 This section lets you configure the fields for the shipping address, which is crucial for physical products.
@@ -127,8 +123,6 @@ This section lets you configure the fields for the shipping address, which is cr
 - **City**: Displays the city field for shipping.
 - **Post Code**: Displays the postal/zip code field for shipping.
 - **Phone**: An optional field to collect the recipient’s phone number for delivery purposes.
-
-![Screenshot of Additional Info Settings Tab](https://docs.fluentcart.com/images/settings-configuration/checkout-field/shipping-address.webp)
 
 ### 4. Agree Terms ​
 
@@ -240,8 +234,6 @@ The cancellation email is sent automatically whenever a subscription moves to a 
 
 To quickly activate or deactivate any notification, simply click the **toggle switch** in the "Enabled" column. The email will only be sent if the toggle is on.
 
-![Email Notification](https://docs.fluentcart.com/images/settings-configuration/email-notifications/email-notification-1.webp)
-
 ### Customizing an Email Notification ​
 
 To customize the content of a specific email, click the **pencil icon** on the right-hand side of its row. This will take you to the editor for that specific email template.
@@ -267,8 +259,6 @@ If you select **Customized Body**, a full rich text editor will appear.
 - **Shortcodes:** Just like with the subject line, you can use the **shortcode icon {;}** above the editor to insert dynamic placeholders for order, customer, and general store details. This allows you to create highly personalized and informative emails.
 - **Visual/Code View:** You can switch between the **Visual** editor and the **Code** editor (for HTML) to achieve more advanced customizations.
 
-![Email Notification Customization](https://docs.fluentcart.com/images/settings-configuration/email-notifications/email-notification-body.webp)
-
 #### Package Merge Tags ​
 
 For stores selling physical products, FluentCart exposes the package details of each ordered item as email merge tags. Use these to build custom order confirmations, packing notifications, or warehouse-facing receipts that show shoppers exactly what is shipping — without writing any code.
@@ -284,8 +274,6 @@ Place the cursor where the tag should appear, click the **shortcode icon {;}**, 
 | \{\{item.shipping_weight\}\} | The total shipping weight - product weight plus empty-package weight (e.g., 6 kg) |**Default email body already includes package info**
 
 If the notification uses the **Default Body**, package name, dimensions, product weight, and shipping weight are rendered automatically below each item line — no template changes needed. The values match what the customer saw on the product page and at checkout.
-
-![Screenshot of an order confirmation email showing Package, Dimensions, Weight, and Shipping Weight under the order line](https://docs.fluentcart.com/images/settings-configuration/email-notifications/package-info-email.webp)
 
 **Values are captured at checkout**
 
@@ -309,8 +297,6 @@ The **Mailing Settings** section is the central place for managing the global se
 2. Click on the **Email Configuration** tab. The **Mailing Settings** page opens by default.
 
 ### Configuration Options ​
-
-![Mailing Settings](https://docs.fluentcart.com/images/settings-configuration/email-notifications/mailing-settings-1.webp)
 
 These settings apply globally to all emails sent from FluentCart, including order confirmations and notifications.
 
@@ -356,8 +342,6 @@ Before you can start designing, you need to turn the feature on. Fluent PDF is a
 
 FluentCart will fetch the addon from the licensed update server, install it, and activate it in a single step. The card switches to **Active** as soon as it's ready.
 
-![PDF Invoice](https://docs.fluentcart.com/images/store-management/pdf-invoice/pdf-1.webp)
-
 ## Step 2: Install Required Fonts ​
 
 To make sure your PDFs generate perfectly and look great on any device (whether your customer opens it on an iPhone or a Windows PC), the system needs to download some specific font files.
@@ -365,15 +349,9 @@ To make sure your PDFs generate perfectly and look great on any device (whether 
 1. After activating the addon, go to **Settings** of Fluent PDF.
 2. Click on the **Settings** icon button.
 
-![PDF Invoice](https://docs.fluentcart.com/images/store-management/pdf-invoice/pdf-2.webp)
-
 1. You will see a "Font Setup Required" notice. Click the orange **Setup Fluent PDF** button.
 
-![PDF Invoice](https://docs.fluentcart.com/images/store-management/pdf-invoice/pdf-3.webp)
-
 1. You will be redirected to a setup page with a blue **Install Fonts** button. Click it. *(Don't worry—this is a quick, one-time process! You will never have to do this again).*
-
-![PDF Invoice](https://docs.fluentcart.com/images/store-management/pdf-invoice/pdf-4.webp)
 
 ## Step 3: Choose a Template to Edit ​
 
@@ -387,8 +365,6 @@ You will now see four built-in templates ready for your personal touch:
 - **Invoice:** A standardized, formal invoice document for business transactions.
 
 Hover your mouse over the template you want to customize (for example, "Order Receipt") and click the blue **Edit Template** button that appears.
-
-![PDF Invoice](https://docs.fluentcart.com/images/store-management/pdf-invoice/pdf-5.webp)
 
 ## Step 4: Designing Your PDF (The Fun Part!) ​
 
@@ -487,8 +463,7 @@ This makes FluentCart receipts drop-in ready for B2B customers in the EU, UK, an
 
 NOTE
 
-VAT numbers are captured during checkout via the EU VAT field. To learn how to enable and configure VAT collection for your store, see [Configuring European Union (EU) VAT](/guide/tax-&-duties/european-union-vat).![PDF Invoice](https://docs.fluentcart.com/images/store-management/pdf-invoice/pdf-6.webp)
-
+VAT numbers are captured during checkout via the EU VAT field. To learn how to enable and configure VAT collection for your store, see [Configuring European Union (EU) VAT](/guide/tax-&-duties/european-union-vat).
 ## Step 5: Test and Save Your Masterpiece ​
 
 Before you let this template go live to your real customers, you should always check your work.
@@ -518,8 +493,6 @@ The **Reminders** section in FluentCart lets you control the automated reminder 
 
 The first thing you will see on this page is the **Reminder Emails** toggle. By default, it is turned off.
 
-![Reminders - Disabled State](https://docs.fluentcart.com/images/settings-configuration/email-notifications/reminders/reminders-1.webp)
-
 Click the toggle to enable it. Once turned on, the full reminder configuration options will appear on the page.
 
 IMPORTANT
@@ -528,8 +501,6 @@ Enabling this toggle alone is not enough. For reminder emails to actually be del
 ### Configuring Subscription Reminders ​
 
 Once Reminder Emails are enabled, you will see the **Subscription Reminders** section with two configurable reminder types.
-
-![Reminders - Enabled with Configuration](https://docs.fluentcart.com/images/settings-configuration/email-notifications/reminders/reminders-2.webp)
 
 #### Trial Ending ​
 
@@ -570,8 +541,6 @@ You can send a **Daily**, **Weekly**, or **Monthly** digest (or any combination)
 1. From your WordPress dashboard, navigate to **FluentCart Pro** > **Settings**.
 2. Click on the **Email Configuration** tab.
 3. From the sub-menu, select **Store Digest**.
-
-![Screenshot of the Store Digest Emails settings screen with the Recipients & General, Daily, Weekly, and Monthly digest sections](https://docs.fluentcart.com/images/settings-configuration/email-notifications/store-digest/store-digest-1.webp)
 
 ### Recipients & General ​
 
@@ -625,8 +594,6 @@ Every digest opens with your store name, the digest type, and the date range it 
 
 If a period had no paid orders and you have **Empty periods** turned on, the digest shows a quiet-period message ("A quiet period, no orders to report.") in place of the metrics.
 
-![Screenshot of an example weekly Store Digest email showing the date range, a quiet-period notice, and the View full reports button](https://docs.fluentcart.com/images/settings-configuration/email-notifications/store-digest/store-digest-2.webp)
-
 ### Sending a Test Email ​
 
 Each digest has its own **Send test email** button. Use it to preview exactly what a recipient will receive before relying on the schedule. Test emails go to your saved recipient addresses and are always sent, even for a period with no activity, so you can confirm delivery at any time.
@@ -652,8 +619,6 @@ To manage your store's modules:
 1. Log in to your **WordPress Dashboard**.
 2. Navigate to **FluentCart > Settings** in the side menu.
 3. Select the **Features & Addon** tab from the left-hand sidebar.
-
-![Features & Addons](https://docs.fluentcart.com/images/settings-configuration/feature-addon/features-addons-1.webp)
 
 ## Managing Available Modules ​
 
@@ -750,8 +715,6 @@ The **Global Integrations** section is your central dashboard for managing power
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
 2. Click on the **Global Integrations** tab.
 
-![Screenshot of Checkout Actions Tab](https://docs.fluentcart.com/images/settings-configuration/checkout/checkout-actions-tab.webp)
-
 ### The Global Integrations Dashboard ​
 
 This screen provides a comprehensive overview of all the integration feeds you have configured, serving as your command center for all connected services.
@@ -767,8 +730,6 @@ This screen provides a comprehensive overview of all the integration feeds you h
 - **Enable/Disable Toggle:** Use this switch to quickly activate or deactivate a feed without deleting its configuration. This is perfect for temporarily pausing an automation during testing or promotional periods.
 - **Edit (Pencil Icon):** Click this to open the configuration screen and make changes to the feed's settings, such as adding new triggers or modifying data mappings.
 - **Delete (Trash Can Icon):** Click this to permanently delete the integration feed. This action cannot be undone.
-
-![Screenshot of Checkout Actions Tab](https://docs.fluentcart.com/images/settings-configuration/checkout/global-integration.webp)
 
 #### Adding a New Integration ​
 
@@ -799,8 +760,6 @@ To begin customizing your documents, you first need to access the correct settin
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
 2. Click on the **Invoice & Packing** tab from the left-hand menu.
 
-![Screenshot of Invoice & Packaging Page](https://docs.fluentcart.com/images/settings-configuration/Invoice/invoice-packaging.webp)
-
 ### Step 2: Understand the Available Templates ​
 
 On this page, you will find a series of editors for different types of fulfillment documents. While the customization process is the same for all, each serves a unique purpose:
@@ -822,8 +781,6 @@ The customization process is identical for each of the five templates. Select th
 1. Place your cursor in the editor where you want the information to appear.
 2. Click the **Add ShortCodes** dropdown menu.
 3. Select the desired placeholder from the list to insert it into the template.
-
-![Screenshot of Invoice & Packaging Page](https://docs.fluentcart.com/images/settings-configuration/Invoice/template-customization.webp)
 
 ### Step 4: Save Your Templates ​
 
@@ -860,8 +817,6 @@ If you sell licensed digital products through FluentCart and want to see which *
 2. To activate or update your license, locate the license key input field.
 3. Enter your license key in the provided field.
 4. Click the **"Verify License"** button to activate your license.
-
-![Screenshot of Licensing Settings Tab](https://docs.fluentcart.com/images/settings-configuration/license/licensing-settings-tab.webp)
 
 Need a License Key?
 
@@ -1054,8 +1009,6 @@ The MCP setup lives alongside FluentCart's other optional features.
 
 When MCP hasn't been set up yet, the card shows a **Setup Required** badge.
 
-![Screenshot of the FluentCart Features & Addon page with the MCP for AI Agents card showing the Setup Required badge and the Configure button](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-1.webp)
-
 ## Step 2: Install the MCP Adapter ​
 
 If no adapter is active yet, the **MCP Connection** panel asks you to install one before the endpoint can respond.
@@ -1063,16 +1016,12 @@ If no adapter is active yet, the **MCP Connection** panel asks you to install on
 - Click **Download FluentHub** to install the recommended adapter, then activate it and reload the page.
 - If you already have FluentHub or the standalone MCP Adapter active, FluentCart skips this step and you can move straight to enabling MCP.
 
-![Screenshot of the MCP Connection panel showing the FluentHub is required notice with the Download FluentHub button](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-2.webp)
-
 TIP
 
 FluentCart Pro can install FluentHub for you in one click. The tip inside the panel will point this out when it's available.
 ## Step 3: Turn On MCP ​
 
 With an adapter active, switch the **MCP for AI Agents** toggle **on**. The card badge changes to **Active**, the connection endpoint goes live immediately, and the **Configure** button now opens the full connection panel.
-
-![Screenshot of the MCP for AI Agents card with the Active badge and the toggle switched on](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-3.webp)
 
 ## Step 4: Open the MCP Connection Panel ​
 
@@ -1087,8 +1036,6 @@ https://your-store.com/wp-json/fluent-cart/mcp
 . Use the **Copy** button to grab it.
 - **Connect a client:** fields for your WordPress username and application password, plus a tab for each supported client (**Claude Code**, **Claude Desktop**, **Cursor**, **Codex**, and **Other**).
 - **A ready-to-copy snippet** that updates as you fill in your details.
-
-![Screenshot of the MCP Connection panel showing the endpoint URL, username and application password fields, client tabs, and the generated snippet](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-4.webp)
 
 INFO
 
@@ -1106,11 +1053,7 @@ Cursor MCP
 ).
 3. Click **Add Application Password**.
 
-![Screenshot of the WordPress Application Passwords section with the New Application Password Name field and the Add Application Password button](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-5.webp)
-
 WordPress generates the password once and shows it in a confirmation box. Click **Copy** and store it somewhere safe; you won't be able to view it again after you leave the page.
-
-![Screenshot of the WordPress confirmation showing the newly generated application password with a Copy button](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-6.webp)
 
 ## Step 6: Generate Your Connection Snippet ​
 
@@ -1125,8 +1068,6 @@ Authorization: Basic
 ```
 
  header for you.
-
-![Screenshot of the MCP Connection panel with the application password filled in and the Copy snippet button highlighted](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-7.webp)
 
 INFO
 
@@ -1167,11 +1108,7 @@ json
     }
   }
 }
-```![Screenshot of an mcp.json file in Cursor containing the fluent-cart MCP server block with the URL and Authorization header](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-9.webp)
-
-Once saved, Cursor lists **fluent-cart** under **Settings > Tools & MCPs**, with its tools enabled and ready to use.
-
-![Screenshot of the Cursor Tools and MCPs settings showing the fluent-cart server installed with its tools enabled](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-8.webp)
+```Once saved, Cursor lists **fluent-cart** under **Settings > Tools & MCPs**, with its tools enabled and ready to use.
 
 ### Claude Code ​
 
@@ -1225,8 +1162,6 @@ Any MCP client that speaks Streamable HTTP can connect with the same endpoint UR
 
 Once your client is connected, ask the assistant a simple question about your store to confirm everything is wired up correctly. For example, prompt it for the most recently added product. The assistant will call the FluentCart tools and return live data, such as the product's status, type, price range, and per-variation stock.
 
-![Screenshot of an AI assistant using FluentCart MCP tools to return details for the most recently added product, including its variations and stock](https://docs.fluentcart.com/images/settings-configuration/mcp/fluentcart-mcp-10.webp)
-
 ## What AI Assistants Can Access ​
 
 When MCP is on, FluentCart hands the assistant a focused toolkit. **Most tools are read-only and never change anything.** The few that do make changes are clearly separated and always run with the connected account's permissions, so an assistant can only do what that account is allowed to do.
@@ -1240,8 +1175,11 @@ These are read-only. Ask in plain language and the assistant pulls the answer fr
 - **Customers:** find customers by name, email, location, or lifetime value, and open a full profile with order and subscription history.
 - **Products & inventory:** search products, see full product detail with per-variation stock, and get a "what needs restocking?" view.
 - **Subscriptions:** search subscriptions and open one to see its billing schedule and renewal history.
-- **Coupons:** list coupons with their usage counts and validity windows.
-- **Reports & analytics:** sales summaries with period-over-period comparison, revenue trends over time, best-selling products, refund metrics, and flexible breakdowns by order, product, customer, or marketing source (UTM attribution).
+- **Subscription forecasts:** ask what recurring revenue is coming — upcoming renewals grouped by date, split into fixed-length installments versus open-ended renewals, with an at-risk figure estimated from past-due subscriptions.
+- **Coupons:** list coupons with their usage counts and validity windows, so you can ask which coupons are used most or which have expired.
+- **Payment ledger:** pull every transaction — charges, refunds, disputes, and signup fees — across all orders and subscriptions, filterable by type, status, gateway, customer, or date, with totals kept separate per currency.
+- **Product profitability:** open a single product's full financial picture — gross and net revenue, refunds, average order value, and recurring run-rate (**MRR/ARR**) with a forward payment schedule. It also surfaces discount-driven **margin leakage** (list price versus what actually sold), so you can see where discounts are eroding revenue. *(This "profitability" is revenue- and discount-based; it does not include cost-of-goods.)*
+- **Reports & analytics:** sales summaries with period-over-period comparison, revenue trends over time, best-selling products, refund metrics, and flexible breakdowns by order, product, variation, customer, or marketing source (UTM attribution). Reports accept flexible time windows — relative ranges like "last quarter," explicit start/end dates, even hour-precise custom windows — and can be scoped to **live**, **test**, or all orders, so a figure is never quietly skewed by test data.
 
 ### Actions an assistant can take ​
 
@@ -1313,8 +1251,6 @@ For each core FluentCart functionality, you need to select an existing WordPress
 [fluent_cart_checkout]
 ```
 
-![Screenshot of Pages Setup Tab](https://docs.fluentcart.com/images/settings-configuration/pages-setup/pages-setup.webp)
-
 ## Saving Your Settings ​
 
 After assigning all the necessary pages, remember to click the **"Save Settings"** button at the bottom right of the screen to apply your configurations.
@@ -1337,8 +1273,6 @@ The **Payment Settings** screen in FluentCart lets you set up how your store han
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings** in the left sidebar.
 2. Click on the **"Payment Settings"** tab.
-
-![Screenshot of Payment Settings Tab](https://docs.fluentcart.com/images/settings-configuration/payment/payment-settings-tab.webp)
 
 ## Configuration Options ​
 
@@ -1399,8 +1333,6 @@ These settings control how additional information is presented on your individua
 
 - **Show Relevant in Single Page:** When enabled, this will display a section for related products or upsells directly on the single product page. This is a highly effective strategy for encouraging customers to discover other items they might like, potentially leading to larger purchases.
 - **Show Relevant in Product Modal:** If your theme uses a product quick-view or modal pop-up, this option will display those same relevant products within that modal view. This provides a seamless cross selling opportunity without requiring the customer to navigate to a new page.
-
-![Screenshot of Single Product & Order Setup Tab](https://docs.fluentcart.com/images/settings-configuration/product-page-settings/single-product-order-setup.webp)
 
 ### 2. Image Zooming ​
 
@@ -1484,8 +1416,6 @@ The table provides an overview of existing role assignments:
 - **Roles:** A brief description of the permissions granted by that role.
 - **Action Icons:** On the far right of each row, you'll see icons that let you quickly "edit" or "delete" roles & permission details.
 
-![Screenshot of Roles and Permissions Tab](https://docs.fluentcart.com/images/settings-configuration/roles-permissions/roles-permissions-tab.webp)
-
 ### 2. Adding New Roles ​
 
 You can assign existing WordPress users to predefined **FluentCart** roles directly from this display.
@@ -1508,8 +1438,6 @@ FluentCart's **Roles and Permissions** system allows you to assign specific acce
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings > Roles And Permissions**.
 2. On the **Roles And Permissions** screen, click the **"+ Add Role"** button at the top right corner.
-
-![Screenshot of Add Role Button](https://docs.fluentcart.com/images/settings-configuration/roles-permissions/add-role-button.webp)
 3. An **"Add Role"** modal window will appear.
 4. **Select User:**
 
@@ -1520,8 +1448,6 @@ FluentCart's **Roles and Permissions** system allows you to assign specific acce
 - **Manager:** "With All Permissions Except Sensitive Settings". This role can manage most aspects of the store but is restricted from critical configurations.
 - **Worker:** "View Access for products, customers, coupons, integretions." It also has "**Manage Access** for Order Statuses". This role is suitable for staff primarily involved in fulfillment and basic order updates.
 - **Accountant:** "View Access for products, customers, orders, subscriptions, licenses, coupons, reports and integrations". This role is designed for users who need to view financial and sales data without making operational changes.
-
-![Screenshot of Add Role Modal - Select User](https://docs.fluentcart.com/images/settings-configuration/roles-permissions/add-role-select-user.webp)
 6. After selecting both the user and the role, click the **"Attach Role"** button within the modal to confirm the assignment.
 7. To cancel the process, click the **"Cancel"** button.
 
@@ -1558,8 +1484,6 @@ The **Store Setup** tab is where you configure the fundamental information about
 1. From your WordPress dashboard, go to **FluentCart > Settings**.
 2. In the left-hand menu, click **Store Settings**. The group expands.
 3. Click **Store Setup** to open the tab.
-
-![Screenshot of the full Store Setup tab](https://docs.fluentcart.com/images/settings-configuration/store-setting/store-settings-setup.webp)
 
 ## Configuring Your Store Details ​
 
@@ -1601,8 +1525,6 @@ Below the address fields you'll find the **Business Details** block — your leg
 ```
 
  smart tag for email templates. Use this field if you collect EU VAT — see [Configuring European Union (EU) VAT](/guide/tax-&-duties/european-union-vat) for how the VAT ID ties into reverse-charge handling.
-
-![Screenshot of Store Settings - Business Details block](https://docs.fluentcart.com/images/settings-configuration/store-setting/store-business-tax.webp)
 
 ### 5. Currency ​
 
@@ -1721,8 +1643,6 @@ With the module active, all of its controls live in one settings tab. To open it
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
 2. Select the **Withdrawal (EU)** tab from the left-hand sidebar.
 
-![Screenshot of the FluentCart Withdrawal (EU) settings screen showing the Button Placement, Form Behaviour, Time Windows, and Order Filtering sections](https://docs.fluentcart.com/images/settings-configuration/withdrawal/withdrawal-settings.webp)
-
 The settings are grouped into four areas: **Button Placement**, **Form Behaviour**, **Time Windows**, and **Order Filtering**, plus the **Select Withdrawal Page** option at the bottom. Each is covered below.
 
 ## Button Placement ​
@@ -1791,8 +1711,6 @@ Once the feature is set up, withdrawing is a short, guided flow for the customer
 
 A customer who wants to cancel opens their order in the **Purchase History** area of their account and clicks the **Withdraw from contract here** link beneath the billing and shipping details. Depending on your **Button Placement** settings, the same link can also appear on the dashboard or a subscription view.
 
-![Screenshot of a customer's Purchase History order detail with the Withdraw from contract here link below the billing and shipping address](https://docs.fluentcart.com/images/settings-configuration/withdrawal/withdrawal-portal-link.webp)
-
 ### Step 1: Enter Details ​
 
 The form opens on the **Withdraw from contract** page. The customer confirms who they are and which order they mean. No reason is required at any point.
@@ -1802,15 +1720,11 @@ The form opens on the **Withdraw from contract** page. The customer confirms who
 - **Email address:** *(Required)* Where the acknowledgment of receipt will be sent.
 - **Additional note:** *(Optional)* A free-text note. This appears only when **Show the optional note field** is enabled, and the customer can leave it blank.
 
-![Screenshot of step one of the Withdraw from contract form with first name, last name, receipt number, email address, and an optional note field](https://docs.fluentcart.com/images/settings-configuration/withdrawal/withdrawal-step-1-details.webp)
-
 When the details are filled in, the customer clicks **Continue**.
 
 ### Step 2: Choose What to Withdraw ​
 
 If you allow partial revocations and the customer is eligible for the item-selection step, they now choose which items to withdraw. Every item is **pre-selected**, so a customer who wants to cancel the whole order can simply continue. To keep an item, they uncheck it.
-
-![Screenshot of the item-selection step showing the order items pre-selected with item, unit price, and quantity columns](https://docs.fluentcart.com/images/settings-configuration/withdrawal/withdrawal-step-2-items.webp)
 
 Clicking **Continue** moves to the review step, and **Back to edit details** returns to step 1.
 
@@ -1818,15 +1732,11 @@ Clicking **Continue** moves to the review step, and **Back to edit details** ret
 
 The final step summarizes the whole request so the customer can check it before submitting. It shows the order reference and total, the customer's name, receipt number, email, and note, the items being withdrawn, and an **estimated refund**.
 
-![Screenshot of the review and confirm step showing the order summary, the withdrawal request details, the items to withdraw, and the estimated refund](https://docs.fluentcart.com/images/settings-configuration/withdrawal/withdrawal-step-3-review.webp)
-
 The customer clicks **Confirm withdrawal** to submit the declaration.
 
 ### Acknowledgment of Receipt ​
 
 As soon as the request is submitted, FluentCart confirms it on screen and emails an **acknowledgment of receipt** to the address provided. The acknowledgment records the date and time the declaration was received, the customer's name, the receipt number, and a unique **reference** code. This time-stamped acknowledgment is your proof that the customer exercised their right within the cooling-off period.
-
-![Screenshot of the withdrawal confirmation screen showing the acknowledgment of receipt with the received date and time, name, receipt number, and reference code](https://docs.fluentcart.com/images/settings-configuration/withdrawal/withdrawal-confirmation.webp)
 
 The screen makes clear that this acknowledgment confirms receipt of the declaration, and that the store will review the request and follow up on next steps.
 
@@ -1844,16 +1754,12 @@ Each request card shows its current state at a glance:
 - **Verification badge:** Shows how the request was authenticated. A logged-in account owner shows as **Verified User**, a guest who matched the receipt number and billing email shows as **Verified Mail**, and a request that could not be matched shows as **Unverified**.
 - **Details:** The reference code, the date and time received, the customer's name, the order reference, and any note they left.
 
-![Screenshot of a pending, verified withdrawal request card with Accept withdrawal and Decline buttons](https://docs.fluentcart.com/images/settings-configuration/withdrawal/withdrawal-request-pending.webp)
-
 To act on a pending request, use the two buttons on the card:
 
 - **Accept withdrawal:** Approves the request. The customer is emailed automatically with the decision.
 - **Decline:** Rejects the request. The customer is also notified by email.
 
 Once you decide, the card updates to show the outcome, who acted, and when, along with a note that the decision email was sent to the customer.
-
-![Screenshot of an accepted withdrawal request card showing the Accepted and Verified badges and a note that the decision email was sent to the customer](https://docs.fluentcart.com/images/settings-configuration/withdrawal/withdrawal-request-accepted.webp)
 
 INFO
 

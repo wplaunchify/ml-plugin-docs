@@ -151,8 +151,6 @@ To begin, you must navigate to the shipping configuration area within FluentCart
 1. Click the dark **Add Shipping Zone** button located at the top right of the screen.
 2. You will be taken to the "Add Shipping Zone" setup page.
 
-![Screenshot of Configuring Shipping Zones](https://docs.fluentcart.com/images/shipping/Configuring-Shipping-Zones/FluentCart-Shipping-Category-1.webp)
-
 ### 3. Name Your Zone and Define Coverage ​
 
 Now you are on the setup page for your new zone. Here, you will name your zone and precisely target where it applies using the new coverage settings:
@@ -163,15 +161,9 @@ Now you are on the setup page for your new zone. Here, you will name your zone a
 
 - **Whole world:** Select this if the shipping methods in this zone apply globally to every single country and territory.
 
-![Screenshot of Configuring Shipping Zones](https://docs.fluentcart.com/images/shipping/Configuring-Shipping-Zones/FluentCart-Shipping-Category-2.webp)
-
 - **Selected countries only:** Select this to ship exclusively to specific countries. A *Countries* dropdown box will appear below. You can search and check the boxes next to the specific countries you want to include (e.g., just the United States and Canada).
 
-![Screenshot of Configuring Shipping Zones](https://docs.fluentcart.com/images/shipping/Configuring-Shipping-Zones/FluentCart-Shipping-Category-3.webp)
-
 - **All countries except:** Select this if you ship globally but want to exclude a few specific places. Use the *Countries* dropdown box to search and select the regions where you do not want to offer these shipping methods.
-
-![Screenshot of Configuring Shipping Zones](https://docs.fluentcart.com/images/shipping/Configuring-Shipping-Zones/FluentCart-Shipping-Category-4.webp)
 
 ### 4. Save Your Zone ​
 
@@ -204,13 +196,9 @@ To get started, navigate to **FluentCart Pro** > **Settings** > **Shipping** > *
 
 You will see a list of all the packages you have already created. From here, you can add new packages or manage existing ones.
 
-![Screenshot of Packages list](https://docs.fluentcart.com/images/shipping/packages/packages-1.webp)
-
 ## Adding a New Package ​
 
 To add a new package, click the **Add Package** button in the top-right corner of the Packages screen. This will open the **Add package** modal where you can configure all the details for your new package.
-
-![Screenshot of Add Package modal](https://docs.fluentcart.com/images/shipping/packages/packages-2.webp)
 
 ### Package Type ​
 
@@ -247,8 +235,6 @@ Only one package can be the store default at a time. Setting a new package as th
 
 Each package in your list has a three-dot menu (**⋮**) on the right side. Click it to reveal the available actions:
 
-![Screenshot of Package management options](https://docs.fluentcart.com/images/shipping/packages/packages-3.webp)
-
 - **Edit** — Opens the package settings so you can update its name, type, dimensions, or weight.
 - **Set as default** — Marks this package as the store default, which will be used for shipping rate calculations at checkout.
 - **Delete** — Permanently removes the package from your store. Deleting a package cannot be undone.
@@ -274,8 +260,6 @@ Before you can add a method, you must have already created a shipping zone.
 3. Find the shipping zone you want to add a method to and click on its name to edit it.
 4. Inside the zone's settings, scroll down to the **Shipping Methods** section and click the **Add Shipping Method** button. You can also manage your existing shipping methods from this screen. To update a method's settings, click the Edit button located on the same row as its title.
 5. This will open a pop-up window where you can configure the details of your new shipping method.
-
-![Screenshot of Shipping Method](https://docs.fluentcart.com/images/shipping/setting-up-shipping-method/shipping-method-1.webp)
 
 ### Configuring the Shipping Method ​
 
@@ -358,8 +342,6 @@ Correct the highlighted tier and the error clears immediately, re-enabling the *
 
 Once saved, the shipping method appears under **Shipping Options** on the checkout page with the method title and its calculated cost. The Order summary on the right reflects the same amount under **Shipping**, so what the customer picks is exactly what they pay.
 
-![Screenshot of the checkout page showing the shipping method under Shipping Options with its price, and the Order summary reflecting the Shipping line](https://docs.fluentcart.com/images/shipping/setting-up-shipping-method/shipping-method-checkout.webp)
-
 - **Class Aggregation**
 
 This advanced setting is for when a customer's cart contains products from different shipping classes (e.g., a small item and a bulky, oversized item). It tells FluentCart how to combine the shipping costs.
@@ -372,8 +354,6 @@ INFO
 The Configure Rate and Class Aggregation settings work together to give you precise control over your shipping fees. For a more detailed guide with advanced examples of how these calculations work, especially when a cart contains multiple items from different shipping classes, please see our documentation on [Advanced Shipping Calculations](/guide/shipping/advanced-shipping-calculations).- **Description:**
 
 You can add a short description for the shipping method. Depending on your theme, this might be displayed to the customer at checkout to provide more context (e.g., "Delivered in 3-5 business days").
-
-![Screenshot of Shipping Method](https://docs.fluentcart.com/images/shipping/setting-up-shipping-method/shipping-method-2.webp)
 
 Once you have configured all the details, click the **Save** button. Your new shipping method is now active and will be offered to customers in the selected shipping zone.
 
@@ -402,8 +382,6 @@ This guide explains how to use Shipping Classes to group products with similar s
 2. **Add a New Shipping Class**:
 
 - Click the **"Add Shipping Class"** button.
-
-![Screenshot of Shipping Classes](https://docs.fluentcart.com/images/shipping/understanding-shipping-classes/shipping-classes-1.webp)
 3. **Define Class Details**:
 
 - **Class Name**: Give your shipping class a descriptive name (e.g., "Bulky Items").
@@ -414,8 +392,6 @@ This guide explains how to use Shipping Classes to group products with similar s
 4. **Save the Shipping Class**:
 
 - Click the **"Save"** or **"Add Class"** button.
-
-![Screenshot of Shipping Classes](https://docs.fluentcart.com/images/shipping/understanding-shipping-classes/shipping-classes-2.webp)
 
 ## Assigning Shipping Classes to Products ​
 

@@ -81,8 +81,6 @@ This log shows a list of the newest important things that happened in your store
 
 - **Example Activities:** Order Created, Payment Paid, Order Status Updated, Order Refunded, Shipping Status Updated, License Upgrade.
 
-![Screenshot of Dashboard Overview - Getting Started](https://docs.fluentcart.com/images/getting-started/admin-dashboard/dashboard-overview.webp)
-
 ### 6. Recent Orders ​
 
 A snapshot of your most recent customer orders, allowing for quick review.
@@ -95,8 +93,6 @@ A snapshot of your most recent customer orders, allowing for quick review.
 This widget highlights your current best-sellers, helping you to instantly see which products are most popular with your customers. It's a valuable tool for understanding product trends and making decisions about inventory and marketing.
 
 - Click the **View All** link to navigate to the **Products** section for more details of your products.
-
-![Screenshot of Getting Started](https://docs.fluentcart.com/images/getting-started/admin-dashboard/order-heat-map.webp)
 
 ### 8. Order Heat Map ​
 
@@ -252,8 +248,6 @@ The first step captures the basics about your store so FluentCart can pre-fill c
 
 Click **Continue** to proceed to the next step.
 
-![Screenshot of Initial Setup Wizard - Store Details (Step 1 of 4)](https://docs.fluentcart.com/images/getting-started/initial-setup-wizard/onboarding-1.webp)
-
 Where to find later?
 
 These settings can be accessed and modified anytime from **FluentCart → Settings → Store Settings → Store Setup**.
@@ -269,8 +263,6 @@ The second step turns tax collection on or off and captures the high-level tax b
 An advisory at the bottom of the card reminds you that a **standard tax class will be created automatically for your store country**, and that the actual per-region rates are set later under **Tax → Tax Rates**.
 
 Click **Continue** to proceed. You can also choose **Skip for now** to leave tax disabled (configure it later) or **Skip All** to jump straight past the remaining wizard steps.
-
-![Screenshot of Initial Setup Wizard - Set Up Tax Collection (Step 2 of 4)](https://docs.fluentcart.com/images/getting-started/initial-setup-wizard/onboarding-2.webp)
 
 Where to find later?
 
@@ -289,8 +281,6 @@ Checkout( 159 )
 ).
 - **Click the + icon** next to a slot to create a fresh WordPress page wired up for that role with the correct shortcode embedded.
 - **Click Generate All Pages** at the top of the list to create all five pages in one shot, each with the right shortcode and assigned automatically.
-
-![Screenshot of Initial Setup Wizard - Setup Your Pages (Step 3 of 4)](https://docs.fluentcart.com/images/getting-started/initial-setup-wizard/onboarding-3.webp)
 
 Shortcodes powering each page
 
@@ -335,8 +325,6 @@ You have two paths:
 Sample content uploads in the background and may take a few seconds depending on your network. You might need to reload the page once or twice for the imported items to show up in your product list and reports.
 
 Click **Save** (or press **Cmd+S** / **Ctrl+S**) to finalize the wizard.
-
-![Screenshot of Initial Setup Wizard - Setup Your Products (Step 4 of 4)](https://docs.fluentcart.com/images/getting-started/initial-setup-wizard/onboarding-4.webp)
 
 ## Completing the Wizard and Next Steps for Your Business ​
 
@@ -389,8 +377,6 @@ If you have purchased FluentCart Pro Addons for advanced features, you will need
 
  file from [FluentCart](https://fluentcart.com/).
 
-![Download Plugin](https://docs.fluentcart.com/assets/download-plugin.eDWNpVT8.png)
-
 1. Navigate to your WordPress dashboard.
 2. Go to **Plugins > Add New**.
 3. At the top of the page, click the **"Upload Plugin"** button.
@@ -413,9 +399,7 @@ After installing the Pro Addons, you will need to activate your license key. Thi
 4. Click on the **"License Settings"** tab.
 5. In the "License Key" field, enter the unique license key you received upon purchasing FluentCart Pro Addons from the [site](https://fluentcart.com/account/).
 
-![License Key](https://docs.fluentcart.com/assets/get-license.BOm2Rs3-.png)
-
-1. Click the **"Verify License"** button. ![Screenshot of Licensing Settings Tab](https://docs.fluentcart.com/images/getting-started/install-activation/licensing-1.webp)- If successful, you will see a confirmation message, and your license status will be marked as active.
+1. Click the **"Verify License"** button. - If successful, you will see a confirmation message, and your license status will be marked as active.
 - If you encounter an error, please double-check your license key for any typos or ensure your site can connect to the licensing server.
 
 Need a License Key?
