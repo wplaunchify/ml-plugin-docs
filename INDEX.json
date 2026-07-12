@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T07:43:45.416Z",
+  "last_updated": "2026-07-12T07:44:42.233Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -59,7 +59,7 @@
       "slug": "affiliatewp",
       "name": "AffiliateWP",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-12T06:58:47.596Z",
+      "last_scraped": "2026-07-12T06:58:47.591Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
@@ -570,7 +570,7 @@
       "slug": "fluent-snippet-version-control",
       "name": "Fluent Snippet Version Control",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-07-12T06:56:25.099Z",
+      "last_scraped": "2026-07-12T06:56:25.097Z",
       "page_count": 2,
       "categories": [
         "create-snippet",
@@ -736,7 +736,7 @@
       "slug": "fluentcart",
       "name": "FluentCart",
       "documentation_url": "https://docs.fluentcart.com/guide/",
-      "last_scraped": "2026-07-12T07:02:09.832Z",
+      "last_scraped": "2026-07-12T07:02:09.827Z",
       "page_count": 141,
       "categories": [
         "browsing-history",
@@ -784,7 +784,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-07-12T06:59:29.213Z",
+      "last_scraped": "2026-07-12T06:59:29.209Z",
       "page_count": 80,
       "categories": [
         "administration",
@@ -1077,30 +1077,34 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-05T08:01:04.723Z",
-      "page_count": 56,
+      "last_scraped": "2026-07-12T07:44:40.553Z",
+      "page_count": 60,
       "categories": [
         "about-us",
-        "blog",
         "bundles",
         "cart",
+        "checkout",
         "de",
         "disclaimer",
         "el",
         "es",
         "features",
-        "fooevents-ultimate-event-checklist",
         "fr",
         "it",
         "my-account",
         "nl",
+        "overview",
         "pl",
         "pricing",
         "privacy-statement-us",
         "products",
+        "promo",
         "pt",
         "reviews",
-        "terms-and-conditions"
+        "shapes",
+        "shop",
+        "terms-and-conditions",
+        "use-cases"
       ]
     },
     {
@@ -3125,7 +3129,7 @@
       "slug": "wp-file-manager",
       "name": "WP File Manager",
       "documentation_url": "https://filemanagerpro.io/article/",
-      "last_scraped": "2026-07-12T07:43:45.416Z",
+      "last_scraped": "2026-07-12T07:43:45.405Z",
       "page_count": 39,
       "categories": [
         "aws-s3-integration",

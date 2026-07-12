@@ -4,91 +4,173 @@
 
 ---
 
-## Verkoop tickets voor je evenementen, locaties en boekbare diensten als een pro!
+## WooCommerce ticketingplugin voor evenementen, locaties en boekingen
 
 **Source:** [https://www.fooevents.com/nl/](https://www.fooevents.com/nl/)
 
-### De #1 evenement, ticketing en boekingen platform voor WooCommerce
-				# Verkoop tickets voor je evenementen, locaties en boekbare diensten als een pro!
-				## Word lid over 16.000 tevreden FooEvents-klanten en voeg evenement, ticketing, en het boeken van functionaliteit toe aan uw WordPress website. Verkoop onbeperkt WooCommerce tickets direct vanaf uw site en het beheren van registraties voor fysieke, virtuele of hybride evenementen - geen technische vaardigheden nodig.
-				[Bestel nu FooEvents!](https://www.fooevents.com/nl/prijzen/)
-				Geen commissie OF ticketkosten.
-				![Hoe Woocommerce Tickets Verkopen](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
-				### 14 dagen geld-terug-garantie
-				#### Beheer evenementen en verkoop tickets op je eigen voorwaarden
-				Krijg volledige controle over je ticketverkoopproces en klantgegevens met de veiligste en meest flexibele evenement- en ticketingoplossing die er is. Duizenden FooEvents klanten hebben verkocht miljoenen custom-branded WooCommerce tickets van hun WordPress websites zonder dat ze ticketkosten of commissie hoeven te betalen.
-				[Conferenties](https://www.fooevents.com/nl/functies/conferenties/)
-				[Concerten en shows](https://www.fooevents.com/nl/functies/toont/)
-				[Lessen en training](https://www.fooevents.com/nl/functies/cursussen-lessen-opleiding/)
-				[Activiteiten & algemene toegang](https://www.fooevents.com/nl/functies/algemene-toelating/)
-				[Virtuele evenementen](https://www.fooevents.com/nl/functies/virtuele-evenementen/)
-				[Sportevenementen](https://www.fooevents.com/nl/functies/sportevenementen/)
-				![Marlin Fietsmuseum](https://www.fooevents.com/wp-content/uploads/2024/09/Marlin-Museum-of-Bicycling.png)
-				![Geloof Fest](https://www.fooevents.com/wp-content/uploads/2024/09/Faith-Fest.png)
-				![De Kleurenloop](https://www.fooevents.com/wp-content/uploads/2024/09/The-Color-Run.png)
-				![Tedx](https://www.fooevents.com/wp-content/uploads/2024/09/TedX.png)
-				![Universiteit van Pittsburgh](https://www.fooevents.com/wp-content/uploads/2024/09/University-of-Pittsburgh.png)
-				![Grand Haven Kustwacht](https://www.fooevents.com/wp-content/uploads/2024/09/Grand-Haven-Coast-Guard.png)
-				![5 sterren](https://www.fooevents.com/wp-content/uploads/2018/10/star-rating-lrg.png)
+# WooCommerce ticketingplugin voor evenementen, locaties en boekingen
+
+Met FooEvents kun je via je eigen WooCommerce-website tickets voor evenementen verkopen, boekingen beheren, gegevens van deelnemers verzamelen en deelnemers inchecken. Geen commissie of ticketkosten. Je hebt geen technische kennis nodig.
+
+[Bestel nu FooEvents!](https://www.fooevents.com/nl/prijzen/)
+
+[Ontdek meer](https://www.fooevents.com/nl/functies/)
+
+## 23 miljoen
+
+### Deelnemersaanmeldingen
+
+Bij evenementen in de echte wereld zijn al miljoenen bezoekers ingecheckt via FooEvents.
+
+## 17,000
+
+### Tevreden klanten
+
+Vertrouwd door duizenden agentschappen, ontwikkelaars en bedrijven om tickets rechtstreeks vanaf hun websites te verkopen.
+
+## 11 jaar
+
+### Vakervaring
+
+Al meer dan tien jaar houden we ons bezig met het ontwikkelen, verbeteren en ondersteunen van ticketverkoop voor evenementen met WooCommerce.
+
+## Nul
+
+### Ticketkosten of commissie
+
+Wij rekenen geen commissie of per-ticketkosten. Elke cent die u verdient met kaartverkoop, is voor u.
+
+![Hoe verkoop je WooCommerce tickets](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
+
+Maak kennis met FooEvents
+
+## Beheer evenementen en verkoop tickets op je eigen voorwaarden
+
+Krijg volledige controle over je ticketverkoopproces en klantgegevens met de veiligste en meest flexibele evenement- en ticketingoplossing die er is.
+
+[Bekijk alle functies](https://www.fooevents.com/nl/functies/)
+
+![Marlin Museum van de Fiets](https://www.fooevents.com/wp-content/uploads/2024/09/Marlin-Museum-of-Bicycling.png)
+
+![Geloof Fest](https://www.fooevents.com/wp-content/uploads/2024/09/Faith-Fest.png)
+
+![TedX](https://www.fooevents.com/wp-content/uploads/2024/09/TedX.png)
+
+![De Kleurenloop](https://www.fooevents.com/wp-content/uploads/2024/09/The-Color-Run.png)
+
+![Universiteit van Pittsburgh](https://www.fooevents.com/wp-content/uploads/2024/09/University-of-Pittsburgh.png)
+
+![Grand Haven Kustwacht](https://www.fooevents.com/wp-content/uploads/2024/09/Grand-Haven-Coast-Guard.png)
+
+Tickets verkopen
+
+## Stuur professionele, merkgebonden tickets die uw evenementen laten opvallen
+
+Krijg volledige controle over hoe uw tickets eruitzien, hoe ze worden verzonden, in welk formaat ze worden verzonden en hoe ze door uw team en klanten of deelnemers worden gebruikt. Kies uit meer dan 20 gratis ticketthema's of ontwerp uw eigen thema.
+
+[Ticket thema galerij](https://www.fooevents.com/nl/producten/ticket-themas/)
+
+![tickets 1](https://www.fooevents.com/wp-content/uploads/2026/07/tickets-1.png)Home 14
+
+![FooEvents Incheck-apps](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-apps-display.png)Home 15
+
+Beheer **Check-ins**
+
+## Beheer de toegang tot uw evenementen en locatie
+
+Beheer de toegang tot evenementen snel en professioneel met de gratis FooEvents Check-ins-apps. Met deze app, waarmee al meer dan 23 miljoen bezoekers zijn ingecheckt, kun je eenvoudig tickets valideren, de opkomst bijhouden en de doorstroming bij de ingang garanderen.
+
+[Verken App](https://www.fooevents.com/nl/functies/apps/)
+
+**Voor wie is FooEvents?**
+
+## Gebouwd voor evenementen van elke omvang
+
+Van conferenties en concerten tot workshops, benefietevenementen, sportevenementen, evenementen met vaste zitplaatsen en evenementen met vrije plaatskeuze: FooEvents biedt je de flexibiliteit om met WooCommerce tickets te verkopen en een breed scala aan evenementen te beheren.
+
+[Bekijk 57 voorbeeldgebeurtenissen](https://demo.fooevents.com/nl/)
+
+### Conferenties
+
+Creëer een-, meerdaagse, virtuele en terugkerende conferenties, terwijl je ticketverkoop, deelnemersdetails, inchecken en toegang tot het evenement beheert vanaf je eigen website.
+
+[Meer leren](https://www.fooevents.com/nl/use-cases/conferenties/)
+
+### Concerten en shows
+
+Verkoop tickets online, bied gereserveerde zitplaatsen aan, beheer het inchecken met onze gratis mobiele apps en verkoop tickets aan de kassa met behulp van FooEvents Point of Sale.
+
+[Meer leren](https://www.fooevents.com/nl/use-cases/toont/)
+
+### Activiteiten & Toelatingen
+
+Laat klanten plaatsen, tijdvakken, rondleidingen of algemene toegangstickets boeken, terwijl u capaciteit, bezoekersaantallen, beschikbaarheid en toegangscontrole beheert vanaf uw website.
+
+[Meer leren](https://www.fooevents.com/nl/use-cases/algemene-toelating/)
+
+### Sportevenementen
+
+Verkoop race-inschrijvingen, toegangskaarten voor toeschouwers, toernooiregistraties en zaalboekingen, terwijl u registratiegegevens verzamelt, de capaciteit beheert en mensen op de evenementendag incheckt.
+
+[Meer leren](https://www.fooevents.com/nl/use-cases/sportevenementen/)
+
+### Cursussen, lessen en training
+
+Verkoop inschrijvingen voor cursussen, lessen, workshops en trainingen en beheer tegelijkertijd de gegevens van cursisten, de capaciteit van de lessen, de aanwezigheid en het inchecken met FooEvents.
+
+[Meer leren](https://www.fooevents.com/nl/use-cases/cursussen-lessen-opleiding/)
+
+### Virtuele evenementen
+
+Verkoop toegang tot virtuele of hybride evenementen en registreer deelnemers automatisch voor eenmalige of terugkerende Zoom-vergaderingen en webinars wanneer ze tickets kopen.
+
+[Meer leren](https://www.fooevents.com/nl/use-cases/virtuele-evenementen/)
+
+**Beoordelingen**
+
+## Luister van onze grootste fans
+
+Neem niet alleen ons woord ervoor – ontdek de echte ervaringen die door enkele van onze 17.000 tevreden klanten worden gedeeld.
+
+[Bekijk alle recensies](https://www.fooevents.com/nl/beoordelingen/)
 
 Wij zijn een middelgroot evenementenbureau in Duitsland en gebruiken dit systeem voor al onze evenementen (**100-7000 mensen**). We hebben nooit problemen gehad met toegang of tickets. We hebben één keer een klein probleem gehad, maar de support heeft dat snel opgelost.
-			
-						![Henning Klus](https://www.fooevents.com/wp-content/uploads/2024/09/Henning-Klus.png)
-					
-										Henning Klus
-																						Hoofd marketing, FUX&HAS
-				![5 sterren](https://www.fooevents.com/wp-content/uploads/2018/10/star-rating-lrg.png)
 
-FooEvents heeft **meer dan 100.000 tickets verkocht** voor mij. Sinds het ontdekken van FooEvents in 2020 is het alleen maar beter en beter geworden. De ondersteuning is geweldig, de flexibiliteit van de plugin is geweldig en het heeft mijn bedrijf getransformeerd.
-			
-						![Fiona Dawson](https://www.fooevents.com/wp-content/uploads/2024/09/fiona-dawson.png)
-					
-										Fiona Dawson
-																						Digitaal ontwerper, Unavoided Ltd
-				![5 sterren](https://www.fooevents.com/wp-content/uploads/2018/10/star-rating-lrg.png)
+![Henning Klus](https://www.fooevents.com/wp-content/uploads/2024/09/Henning-Klus.png)
 
-FooEvents is een uitstekende plugin. **Ik gebruik het om mijn hobbylessen op mijn website te verkopen**. Het is perfect geïntegreerd met WooCommerce, wat het leven eenvoudiger maakt. De ondersteuning is snel en professioneel. Ik raad het 100% aan!
-			
-						![Chez Susan](https://www.fooevents.com/wp-content/uploads/2024/09/chezsusan_.png)
-					
-										Chez Susan
-																						ChezSusan.ch, Ontwerpateliers
-				### Tickets
-				#### Stuur professioneel uitziende tickets waarmee je evenementen zich onderscheiden van de massa
-				Krijg volledige controle over hoe je tickets eruit zien, hoe ze worden verzonden, in welk formaat ze worden verzonden en hoe ze worden gebruikt door je team en klanten of deelnemers. Je kunt kiezen uit meer dan 20 gratis ticketthema's of je eigen ticket ontwerpen met het starterthema als leidraad.
-				[Verstuur tickets met logo](https://www.fooevents.com/nl/functies/tickets/)
-				[Kaartjesthema's](https://www.fooevents.com/nl/producten/ticket-themas/)
-				![Woocommerce Tickets](https://www.fooevents.com/wp-content/uploads/2024/09/WooCommerce-tickets-1.png)
-				![Fooevents Check-Ins Apps](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
-				### Check-ins apps
-				#### Toegang beheren met onze GRATIS mobiele Check-in apps
-				Beheer de toegang tot evenementen snel en professioneel met de gratis FooEvents Check-ins-app. Wordt gebruikt om in te checken **23,469,163** deelnemers, de app maakt het gemakkelijk om tickets te valideren, de aanwezigheid bij te houden en uw ingang soepel te laten verlopen.
-				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
-				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
-				[Apps verkennen](https://www.fooevents.com/nl/functies/apps/)
-				### Verkooppunt
-				#### Verkoop en print tickets aan de deur van je evenement
-				Krijg volledige controle over hoe je tickets eruit zien, hoe ze worden verzonden, in welk formaat ze worden verzonden en hoe ze worden gebruikt door je team en klanten of deelnemers. Je kunt kiezen uit meer dan 20 gratis ticketthema's of je eigen ticket ontwerpen met het starterthema als leidraad.
-				[Verkoop tickets op je evenement](https://www.fooevents.com/nl/producten/fooevents-pos/)
-				![Screenshot van de Fooevents Pos-interface](https://www.fooevents.com/wp-content/uploads/2024/09/fooevents-woocommerce-point-of-sale-2.png)
-				![Aangepaste deelnemersvelden](https://www.fooevents.com/wp-content/uploads/2024/08/custom-attendee-fields.png)
-				### Aanwezigen
-				#### Gemakkelijk belangrijke informatie over deelnemers vastleggen en exporteren
-				Organiseer je evenementen en ga beter om met je bezoekers door gedetailleerde bezoekersinformatie vast te leggen en te exporteren naar je favoriete CRM, marketing, rapportage, webinar of andere zakelijke tools.
-				[Deelnemersvelden vastleggen](https://www.fooevents.com/nl/functies/aanwezigen/)
-				### Inzichten
-				#### Gefundeerde beslissingen nemen op basis van rapporten over evenementen en tickets
-				Goede beslissingen zijn gebaseerd op goede gegevens. FooEvents biedt real-time evenement en ticket rapporten die naadloos integreren met uw WooCommerce sales rapporten, zodat u altijd weet hoe uw evenementen presteren en kan weloverwogen zakelijke beslissingen te nemen op basis van deze gegevens.
-				[Rapporten en inzichten bekijken](https://www.fooevents.com/nl/functies/inzichten/)
-				![Bekijk analytics en rapporten voor Woocommerce ticketverkoop](https://www.fooevents.com/wp-content/uploads/2024/08/woocommerce-analytics-and-reports.png)
-				![Woocommerce Stripe Square Paypal](https://www.fooevents.com/wp-content/uploads/2024/08/woocommerce-stripe-square-paypal.png)
-				### Kassa
-				#### Je kunt niet verkeerd gaan met 's werelds populairste e-commerce platform
-				FooEvents is ontworpen om naadloos samen te werken met WooCommerce. Dit betekent dat u kunt profiteren van de veiligheid en de kracht van 's werelds meest populaire e-commerce platform, evenals 100 + betalingsgateways die het ondersteunt.
-				[Meer over WooCommerce](https://www.fooevents.com/nl/functies/woocommerce/)
-				# Klaar om te beginnen?
-				Eerst moet je een FooEvents licentie te kopen en download de FooEvents plugins. U kunt dan de plugins te installeren op uw WordPress site, het opzetten van uw evenement, en beginnen met de verkoop van tickets.
-				[Bestel nu FooEvents!](https://www.fooevents.com/nl/prijzen/)
+**Henning Klus**
+
+Hoofd marketing, FUX&HAS
+
+FooEvents is een uitstekende plug-in. Ik gebruik hem om mijn hobbycursussen op mijn website aan te bieden. Hij is perfect geïntegreerd met WooCommerce, wat het leven een stuk makkelijker maakt. De ondersteuning is snel en professioneel. **Ik raad het ten zeerste aan: 100%!**
+
+![Chez Susan](https://www.fooevents.com/wp-content/uploads/2024/09/chezsusan_.png)
+
+**Chez Susan**
+
+ChezSusan.ch, Ontwerpateliers
+
+FooEvents heeft **meer dan 100.000 tickets verkocht** voor mij. Sinds het ontdekken van FooEvents in 2020 is het alleen maar beter en beter geworden. De ondersteuning is geweldig, de flexibiliteit van de plugin is geweldig en het heeft mijn bedrijf getransformeerd.
+
+![Fiona Dawson](https://www.fooevents.com/wp-content/uploads/2024/09/fiona-dawson.png)
+
+**Fiona Dawson**
+
+Digitaal ontwerper, Unavoided Ltd
+
+De integratie met AddToWallet was een direct antwoord op de feedback van onze fans, en het is een van de beste verbeteringen die we aan onze ticketervaring hebben aangebracht. Ons publiek vindt het geweldig om hun tickets in Apple Wallet en Google Wallet te hebben, en voor ons verloopt het inchecken aan de deur nu aanzienlijk sneller en soepeler.
+
+**Acute Buigingen**
+
+New Yorks Toonaangevende Jazzy R&B Duo
+
+![fooevents icoon](https://www.fooevents.com/wp-content/uploads/2020/08/fooevents-icon.png)Home 16
+
+## Klaar om te beginnen met verkopen?
+
+Maak van je WooCommerce-website een compleet platform voor evenemententickets met FooEvents. Verkoop tickets rechtstreeks via je website, beheer boekingen en deelnemers, verstuur tickets met je eigen huisstijl en check mensen in – met alles wat je nodig hebt om succesvolle evenementen te organiseren.
+
+[Ga nu aan de slag met FooEvents!](https://www.fooevents.com/nl/prijzen/)
 
 ---
 
