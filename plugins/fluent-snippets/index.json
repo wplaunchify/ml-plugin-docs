@@ -2,9 +2,9 @@
   "plugin_slug": "fluent-snippets",
   "plugin_name": "Fluent Snippets",
   "documentation_url": "https://fluentsnippets.com/docs/",
-  "last_scraped": "2026-07-05T16:22:10.983Z",
+  "last_scraped": "2026-07-12T16:16:43.051Z",
   "total_pages": 2,
-  "failed_urls_count": 0,
+  "failed_urls_count": 1,
   "sections": [
     {
       "title": "Create Snippet",

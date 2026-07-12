@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T15:25:12.456Z",
+  "last_updated": "2026-07-12T16:16:43.053Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -585,7 +585,7 @@
       "slug": "fluent-snippets",
       "name": "Fluent Snippets",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-07-05T16:22:10.983Z",
+      "last_scraped": "2026-07-12T16:16:43.053Z",
       "page_count": 2,
       "categories": [
         "create-snippet",
