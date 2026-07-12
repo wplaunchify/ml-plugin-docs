@@ -2,9 +2,9 @@
   "plugin_slug": "fluent-snippet-version-control",
   "plugin_name": "Fluent Snippet Version Control",
   "documentation_url": "https://fluentsnippets.com/docs/",
-  "last_scraped": "2026-07-05T16:21:49.310Z",
+  "last_scraped": "2026-07-12T06:56:25.097Z",
   "total_pages": 2,
-  "failed_urls_count": 0,
+  "failed_urls_count": 1,
   "sections": [
     {
       "title": "Create Snippet",
