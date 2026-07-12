@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T03:00:41.806Z",
+  "last_updated": "2026-07-12T03:07:11.613Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2205,7 +2205,7 @@
       "slug": "launchflows",
       "name": "LaunchFlows",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-07-05T03:09:36.322Z",
+      "last_scraped": "2026-07-12T03:07:11.613Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
