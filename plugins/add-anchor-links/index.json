@@ -2,8 +2,8 @@
   "plugin_slug": "add-anchor-links",
   "plugin_name": "Add Anchor Links",
   "documentation_url": "https://wordpress.org/plugins/add-anchor-links/",
-  "last_scraped": "2026-07-05T05:24:39.947Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T05:09:26.782Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Add Anchor Links",
           "url": "https://wordpress.org/plugins/add-anchor-links/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/add-anchor-links/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Add Anchor Links",
+          "url": "https://wordpress.org/plugins/add-anchor-links/"
         }
       ]
     }
