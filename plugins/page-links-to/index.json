@@ -2,8 +2,8 @@
   "plugin_slug": "page-links-to",
   "plugin_name": "Page Links To",
   "documentation_url": "https://wordpress.org/plugins/page-links-to/",
-  "last_scraped": "2026-07-05T12:25:44.934Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T12:15:44.060Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Page Links To",
           "url": "https://wordpress.org/plugins/page-links-to/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/page-links-to/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Page Links To",
+          "url": "https://wordpress.org/plugins/page-links-to/"
         }
       ]
     }
