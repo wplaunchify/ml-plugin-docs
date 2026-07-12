@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T16:19:47.276Z",
+  "last_updated": "2026-07-12T16:20:19.764Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -89,7 +89,7 @@
       "slug": "affiliatewp-custom-affiliate-slugs",
       "name": "AffiliateWP - Custom Affiliate Slugs",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-05T16:52:48.891Z",
+      "last_scraped": "2026-07-12T16:20:16.722Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
@@ -182,7 +182,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/",
-      "last_scraped": "2026-07-12T16:19:47.276Z",
+      "last_scraped": "2026-07-12T16:19:47.273Z",
       "page_count": 6,
       "categories": [
         "activation",
@@ -263,7 +263,7 @@
       "slug": "disable-comments",
       "name": "Disable Comments",
       "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-      "last_scraped": "2026-07-12T15:25:12.456Z",
+      "last_scraped": "2026-07-12T15:25:12.454Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -585,7 +585,7 @@
       "slug": "fluent-snippets",
       "name": "Fluent Snippets",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-07-12T16:16:43.053Z",
+      "last_scraped": "2026-07-12T16:16:43.051Z",
       "page_count": 2,
       "categories": [
         "create-snippet",
@@ -2573,7 +2573,7 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-07-12T15:22:11.864Z",
+      "last_scraped": "2026-07-12T15:22:11.859Z",
       "page_count": 25,
       "categories": [
         "beta-release",
