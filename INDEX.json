@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T01:36:31.819Z",
+  "last_updated": "2026-07-12T01:36:40.877Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -108,7 +108,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-12T00:39:45.881Z",
+      "last_scraped": "2026-07-12T00:39:45.876Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
@@ -206,7 +206,7 @@
       "slug": "block-visibility",
       "name": "Block Visibility",
       "documentation_url": "https://www.blockvisibilitywp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-07-05T17:02:13.683Z",
+      "last_scraped": "2026-07-12T01:36:38.753Z",
       "page_count": 26,
       "categories": [
         "uncategorized"
@@ -230,7 +230,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-07-05T23:22:23.441Z",
+      "last_scraped": "2026-07-05T23:22:23.439Z",
       "page_count": 78,
       "categories": [
         "uncategorized"
@@ -700,7 +700,7 @@
       "slug": "fluentbooking-appointment-scheduling-booking-solution",
       "name": "FluentBooking - Appointment Scheduling & Booking Solution",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-07-12T00:28:41.283Z",
+      "last_scraped": "2026-07-12T00:28:41.274Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -2512,7 +2512,7 @@
       "slug": "preview-e-mails-for-woocommerce",
       "name": "Preview E-mails for WooCommerce",
       "documentation_url": "https://wordpress.org/plugins/woo-preview-emails/",
-      "last_scraped": "2026-07-12T01:34:14.820Z",
+      "last_scraped": "2026-07-12T01:34:14.818Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2586,7 +2586,7 @@
       "slug": "searchwp",
       "name": "SearchWP",
       "documentation_url": "https://searchwp.com/documentation/",
-      "last_scraped": "2026-07-12T00:19:29.635Z",
+      "last_scraped": "2026-07-12T00:19:29.633Z",
       "page_count": 57,
       "categories": [
         "uncategorized"
@@ -2774,7 +2774,7 @@
       "slug": "taxopress",
       "name": "TaxoPress",
       "documentation_url": "https://taxopress.com/docs/documentation/",
-      "last_scraped": "2026-07-12T01:33:15.434Z",
+      "last_scraped": "2026-07-12T01:33:15.429Z",
       "page_count": 232,
       "categories": [
         "accounts",
@@ -3472,7 +3472,7 @@
       "slug": "wp-social-ninja",
       "name": "WP Social Ninja",
       "documentation_url": "https://docs.wpsocialninja.com/guide/",
-      "last_scraped": "2026-07-12T01:36:31.819Z",
+      "last_scraped": "2026-07-12T01:36:31.815Z",
       "page_count": 92,
       "categories": [
         "advanced-features",
@@ -3603,7 +3603,7 @@
       "slug": "wpfusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-12T00:37:08.492Z",
+      "last_scraped": "2026-07-12T00:37:08.481Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
