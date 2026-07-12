@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T17:24:25.647Z",
+  "last_updated": "2026-07-12T17:24:29.115Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -616,7 +616,7 @@
       "slug": "fluent-support-pro",
       "name": "Fluent Support Pro",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-07-12T17:24:25.647Z",
+      "last_scraped": "2026-07-12T17:24:25.644Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -689,7 +689,7 @@
       "slug": "fluentbooking",
       "name": "FluentBooking",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-07-05T17:28:18.853Z",
+      "last_scraped": "2026-07-12T17:24:27.729Z",
       "page_count": 57,
       "categories": [
         "availability",
