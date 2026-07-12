@@ -21,12 +21,7 @@ International affiliate payouts let you pay affiliates who live in other support
 - [What happens to affiliates Stripe can't reach](#what-happens-to-affiliates-stripe-cant-reach)
 - [What turning it off does (and doesn't do)](#what-turning-it-off-does-and-doesnt-do)
 - [Tax forms for US affiliates](#tax-forms-for-us-affiliates)
-- [Frequently asked questions](#frequently-asked-questions)- [Do I need a special Stripe account to pay affiliates internationally?](#aioseo-do-i-need-a-special-stripe-account-to-pay-affiliates-internationally)
-- [An affiliate's country isn't in the list. What do I do?](#aioseo-an-affiliates-country-isnt-in-the-list-what-do-i-do)
-- [The International Affiliate Payouts toggle is greyed out. Why?](#aioseo-the-international-affiliate-payouts-toggle-is-greyed-out-why)
-- [I see the option even though my store isn't in the US or UK. Is that right?](#aioseo-i-see-the-option-even-though-my-store-isnt-in-the-us-or-uk-is-that-right)
-- [Will turning this on change anything for affiliates I already pay?](#aioseo-will-turning-this-on-change-anything-for-affiliates-i-already-pay)
-- [An affiliate isn't getting paid. What should I check?](#aioseo-an-affiliate-isnt-getting-paid-what-should-i-check)
+- [Frequently asked questions](#frequently-asked-questions)
 - [Next steps](#next-steps)
 
 ## What you need before you start

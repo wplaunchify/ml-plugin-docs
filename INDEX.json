@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T15:20:52.687Z",
+  "last_updated": "2026-07-12T15:21:09.744Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -49,7 +49,7 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/documentation/",
-      "last_scraped": "2026-07-12T14:28:05.280Z",
+      "last_scraped": "2026-07-12T14:28:05.276Z",
       "page_count": 271,
       "categories": [
         "uncategorized"
@@ -79,7 +79,7 @@
       "slug": "affiliatewp-affiliate-portal",
       "name": "AffiliateWP - Affiliate Portal",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-05T16:52:25.597Z",
+      "last_scraped": "2026-07-12T15:21:08.287Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
@@ -273,7 +273,7 @@
       "slug": "duplicate-page",
       "name": "Duplicate Page",
       "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
-      "last_scraped": "2026-07-12T15:20:52.687Z",
+      "last_scraped": "2026-07-12T15:20:52.685Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -669,7 +669,7 @@
       "slug": "fluentboards",
       "name": "FluentBoards",
       "documentation_url": "https://fluentboards.com/documentation/",
-      "last_scraped": "2026-07-12T14:34:53.406Z",
+      "last_scraped": "2026-07-12T14:34:53.403Z",
       "page_count": 42,
       "categories": [
         "boards",
@@ -2240,7 +2240,7 @@
       "slug": "launchflows-customer-dashboardboards-for-woocommerce",
       "name": "LaunchFlows Customer Dashboardboards For WooCommerce",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-07-12T14:28:55.931Z",
+      "last_scraped": "2026-07-12T14:28:55.929Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
