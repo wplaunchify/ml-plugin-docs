@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T12:21:46.453Z",
+  "last_updated": "2026-07-12T12:21:52.935Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -217,7 +217,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-07-05T17:02:05.628Z",
+      "last_scraped": "2026-07-12T12:21:46.435Z",
       "page_count": 19,
       "categories": [
         "account-licenses",
@@ -1047,7 +1047,7 @@
       "slug": "fooevents-express-check-in",
       "name": "FooEvents Express Check-in",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-12T12:18:59.259Z",
+      "last_scraped": "2026-07-12T12:18:59.254Z",
       "page_count": 60,
       "categories": [
         "about-us",
@@ -3189,7 +3189,7 @@
       "slug": "wp-fusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-12T12:21:46.453Z",
+      "last_scraped": "2026-07-12T12:21:46.445Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
