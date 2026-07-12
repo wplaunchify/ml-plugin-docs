@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T12:15:45.241Z",
+  "last_updated": "2026-07-12T12:18:59.259Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1047,30 +1047,34 @@
       "slug": "fooevents-express-check-in",
       "name": "FooEvents Express Check-in",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-05T12:28:45.133Z",
-      "page_count": 56,
+      "last_scraped": "2026-07-12T12:18:59.259Z",
+      "page_count": 60,
       "categories": [
         "about-us",
-        "blog",
         "bundles",
         "cart",
+        "checkout",
         "de",
         "disclaimer",
         "el",
         "es",
         "features",
-        "fooevents-ultimate-event-checklist",
         "fr",
         "it",
         "my-account",
         "nl",
+        "overview",
         "pl",
         "pricing",
         "privacy-statement-us",
         "products",
+        "promo",
         "pt",
         "reviews",
-        "terms-and-conditions"
+        "shapes",
+        "shop",
+        "terms-and-conditions",
+        "use-cases"
       ]
     },
     {

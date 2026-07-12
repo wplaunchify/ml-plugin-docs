@@ -8,7 +8,7 @@
 
 **Source:** [https://www.fooevents.com/privacy-statement-us](https://www.fooevents.com/privacy-statement-us)
 
-*This privacy statement was last changed on May 20, 2026, last checked on May 20, 2026, and applies to citizens and legal permanent residents of the United States.*
+*This privacy statement was last changed on July 7, 2026, last checked on July 7, 2026, and applies to citizens and legal permanent residents of the United States.*
 
 In this privacy statement, we explain what we do with the data we obtain about you via [https://www.fooevents.com](https://www.fooevents.com). We recommend you carefully read this statement. In our processing we comply with the requirements of privacy legislation. That means, among other things, that:
 
@@ -32,7 +32,7 @@ We may collect or receive personal information for a number of purposes connecte
 
 ### Retention period
 
-We retain this data upon termination of the service for the following number of months: 24### 1.2 Contact - Through phone, mail, email and/or webforms
+We retain this data upon termination of the service for the following number of months: 24### 1.2 Contact – Through phone, mail, email and/or webforms
 ### The following categories of data are collected
 
 - A first and last name
