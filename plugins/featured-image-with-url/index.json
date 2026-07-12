@@ -2,8 +2,8 @@
   "plugin_slug": "featured-image-with-url",
   "plugin_name": "Featured Image with URL",
   "documentation_url": "https://wordpress.org/plugins/featured-image-with-url/",
-  "last_scraped": "2026-07-05T13:30:07.420Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T13:29:22.161Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Featured Image with URL",
           "url": "https://wordpress.org/plugins/featured-image-with-url/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/featured-image-with-url/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Featured Image with URL",
+          "url": "https://wordpress.org/plugins/featured-image-with-url/"
         }
       ]
     }
