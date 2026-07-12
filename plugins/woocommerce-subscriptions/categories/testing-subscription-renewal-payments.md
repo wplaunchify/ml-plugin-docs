@@ -16,13 +16,13 @@
 
 ## Purchase a Test Subscription
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 If you have not already purchased a subscription to test with, purchase a test subscription on your site using the payment gateway you wish to test. After completing the purchase, take note of the ID number assigned to the created subscription.
 
 ## Trigger the Renewal
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 Now that you have a test subscription, you can trigger the renewal payment.
 
@@ -31,9 +31,9 @@ There are two options to carry this out:
 - The “Process renewal” action in the “Edit Subscription” screen
 - Manually triggering the scheduled action that processes the scheduled subscription payment
 
-### « Process Renewal » Admin Action
+### “Process Renewal” Admin Action
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 The “[Process Renewal](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/update-an-existing-subscription/#process-a-renewal)” action is the simplest method to test a renewal payment. You can take this action on the “edit subscription” screen.
 
@@ -46,7 +46,7 @@ When you process a renewal on a subscription using automatic payments, the subsc
 
 ### Subscription Payment Scheduled Action
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 A more technical option is to manually run the scheduled action that triggers the subscription payment. To do this:
 
@@ -62,11 +62,11 @@ Once you successfully triggered the renewal payment, and it processed correctly 
 
 ## Troubleshooting Issues with Subscription Renewals
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Automatic Renewal Payments not Starting
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 If there are subscriptions that appear to be active but display a renewal date in the past, it is likely due to a Cron issue on your site. These subscriptions will show a “Subscription payment overdue.” warning notice in the admin’s list view at **WooCommerce > Subscriptions**.
 
@@ -83,7 +83,7 @@ Follow these steps to troubleshoot the problem:
 
 ### Diagnosing Stalled Renewal Payments
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 A stalled renewal is when an *automatically-renewing* subscription tries to renew but has an error and stalls somewhere in the process, leaving the subscription on hold and the renewal unfinished – sometimes capturing the payment, but not always. Generally what causes this issue is an error during the renewal process that prevents payment from successfully posting, so the subscriptions stay on hold. The error can be with the payment itself, or it can be caused by a plugin or theme conflict in some cases.
 
@@ -116,7 +116,7 @@ Depending on the clues you find, your resolution may involve correcting payment 
 
 ## Questions and support
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 **Something missing from this documentation? Still have questions and need assistance?**
 

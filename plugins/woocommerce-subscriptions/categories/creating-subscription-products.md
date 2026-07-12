@@ -10,9 +10,166 @@
 
 # Creating a Subscription Product
 
-			WooCommerce Subscriptions lets you create [simple](#simple-subscriptions) or [variable](#variable-subscriptions) subscription products or [add subscription plans to supported non-subscription product types](#purchase-options-for-non-subscription-product-types): Simple Products, Variable Products, Product Bundles, and Composite Products. If you’ve created other product types, much of the setup will feel familiar—but subscription products include additional settings to control the subscriber experience.
+			WooCommerce Subscriptions lets you sell subscription plans on simple, variable, bundle, and composite products. You configure how a product is sold from the **Subscriptions** tab in the **Product data** section.
 
-## Simple Subscriptions
+## Purchase options
+
+[↑ Back to top](#doc-title)
+
+Start with the **Purchase options** dropdown, which determines whether the product is sold on a subscription, as a one-time purchase, or both. There are three options:
+
+**Use storewide subscription plans**—applies the storewide subscription plans defined in WooCommerce > Settings > Subscriptions. (Link placeholder) When selected, you can:
+
+- **Use all storewide subscription plans**: The product will use all storewide plans. New storewide plans will be included automatically.
+- **Select storewide subscription plans**: Choose specific storewide plans to use for this product. A table of available plans is displayed with checkboxes to select which plans apply.
+
+**Create custom subscription plans**—define subscription plans specific to this product, including custom frequency, free trial, signup fee, expiration (number of charges), discount, and billing date alignment.
+
+**Sell one time only**—if selected, the product will only be available as a one-time purchase.
+
+### Subscription plan settings
+
+[↑ Back to top](#doc-title)
+
+The subscription plans include the following settings you can adjust:
+
+### Frequency
+
+[↑ Back to top](#doc-title)
+
+Set the billing interval using a number input and a period dropdown (day, week, month, year). For example, “three months” means the customer is billed every three months. The combination cannot exceed ten years.
+
+### Align renewal
+
+[↑ Back to top](#doc-title)
+
+Optionally select a day to align renewal dates for all subscribers on this plan. When set to “Do not align,” renewals are based on each subscriber’s purchase date. See the [Billing Date Alignment documentation](https://woocommerce.com/document/subscriptions/billing-date-alignment) for details.
+
+### Price
+
+[↑ Back to top](#doc-title)
+
+Each subscription plan includes a price setting that determines how the subscription price is calculated. The Price dropdown has two options:
+
+- Discount product price
+- Set a custom price
+
+This setting is available on both storewide and custom subscription plans.
+
+**Discount product price**
+
+When Price is set to “Discount product price,” the subscription price is based on the product’s regular price, minus an optional discount. This is the default option.
+
+A Discount field appears with two controls:
+
+- **Amount:**Enter the discount value.
+- **Type:**Select the discount type from the dropdown**:**
+**Percentage**—discounts the product price by a percentage. For example, entering 10 will discount the price by 10%.
+**Fixed amount**—discounts the product price by a fixed monetary amount. For example, entering five will discount the price by $5 (or the equivalent in your store’s currency).
+
+If no discount is entered, the subscription price will be the same as the product’s regular price.
+
+**Tip**: Subscription discounts are a great way to incentivize longer billing intervals. For example, you could offer a 10% discount on a yearly plan compared to the monthly price.
+
+**Set a custom price**
+
+When Price is set to “Set a custom price,” the subscription price is set independently of the product’s regular price. Two fields appear:
+
+- **Regular price:**The recurring subscription price for this plan.
+- **Sale price:**An optional sale price for this plan. When set, the sale price is used as the recurring subscription price instead of the regular price.
+
+This option is useful when the subscription price should differ significantly from the product’s one-time purchase price or when you want full control over the recurring amount for each plan.
+
+**Note:**
+
+When using “Set a custom price,” the subscription price is completely independent of the product’s regular price. Changes to the product’s price will not affect the subscription plan price.
+
+### Subscription expiration
+
+[↑ Back to top](#doc-title)
+
+By default, subscriptions renew indefinitely until the subscriber or store manager cancels them. The expiration setting allows you to configure a subscription plan to automatically expire after a set number of payments.
+
+This setting is available on subscription plans at both the storewide level (WooCommerce > Settings > Subscriptions) and the product level (custom subscription plans on individual products). The behavior is the same in both contexts.
+
+**Expire after a set number of payments**—checkbox (default: unchecked). When checked, the subscription will automatically expire after the specified number of payments. When unchecked, the subscription renews indefinitely until cancelled.
+
+**Total payments**—number input; only visible when “Expire after a set number of payments” is checked. The number of payments, including the initial purchase, before the subscription automatically expires.
+
+For example, if a subscription plan has a monthly billing interval and total payments are set to 12, the subscriber will be charged once at signup and 11 more times at each monthly renewal, for a total of 12 payments. After the 12th payment, the subscription expires.
+
+**Note**:
+
+The total payments count includes the initial purchase. A value of six means the subscriber pays six times total, not six renewals after signup.
+
+The number of payments is based on billing periods, not calendar time. If a plan bills every two months with a total payment value of six, the subscription will last 12 months (six payments × two months each).
+
+**How expiration works**
+
+While the subscription is active, payments are processed according to the billing interval defined in the plan. The subscriber can see the expiration date on their View Subscription page in the My Account area.
+
+When the final payment has been processed, the subscription status automatically changes to Expired. No further renewal payments are charged, and the subscriber loses access to subscription benefits. The subscription cannot be reactivated—the subscriber would need to purchase a new subscription.
+
+Subscribers can still cancel an expiring subscription before it reaches its scheduled expiration. If cancelled, the subscription follows the normal cancellation process and does not continue to the expiration point.
+
+### Signup fee
+
+[↑ Back to top](#doc-title)
+
+Add a one-time fee that customers pay when they first subscribe.
+
+### Free trial
+
+[↑ Back to top](#doc-title)
+
+Offer a free trial by setting its duration using the number and period fields (days, weeks, months, years).
+
+![](https://woocommerce.com/wp-content/uploads/2026/04/add-custom-subscription-plan.png?strip=all&w=704)Custom Subscription Plan Settings
+
+### One-time purchases
+
+[↑ Back to top](#doc-title)
+
+When using storewide subscription plans or custom subscription plans, a one-time purchases section appears at the bottom of the Subscriptions tab. This section contains a single checkbox:
+
+Customers can buy this product without subscribing
+
+When checked, customers will be offered the option to purchase the product as a one-time purchase in addition to the available subscription plans. When unchecked, the product can only be purchased on a subscription plan.
+
+**Note:**
+
+If you only add a single subscription plan and disable one-time purchases, customers will not be offered any options above the add-to-cart button.
+
+### Gifting
+
+[↑ Back to top](#doc-title)
+
+If [Gifting is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#gifting-settings) in the subscription settings, the option to enable and disable gifting for the product will be visible.
+
+### Bulk edit purchase options
+
+[↑ Back to top](#doc-title)
+
+From the Products list (WooCommerce > Products), you can select multiple products and use the Bulk Edit action to update their purchase options in bulk.
+
+## Dedicated subscription product types: Simple and Variable Subscriptions
+
+[↑ Back to top](#doc-title)
+
+If you’ve used WooCommerce Subscriptions before, you may be familiar with adding subscriptions through the dedicated **Simple Subscription** and **Variable Subscription** product types.
+
+As of WooCommerce Subscriptions 9.0, we recommend using [subscription plans](#purchase-options)on simple, variable, bundle, and composite products instead. The dedicated Simple and Variable Subscription product types are retained for backward compatibility and use cases that are not yet supported by subscription plans.
+
+Disabling the dedicated subscription product types will not affect existing products—they will continue to work as expected.
+
+You can control whether these product types are available from *WooCommerce > Settings > Subscriptions > Subscription Product Creation*. For more detail, see the [Subscription Product Creation setting](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscription-product-creation).
+
+- When **enabled**, the product type dropdown includes **Simple Subscription** and **Variable Subscription** when you create a new product.
+- When **disabled**, these options are hidden from the dropdown for new products.
+
+**Note:** Disabling the dedicated Simple and Variable Subscription product types does not affect existing products — they continue to function as normal.
+
+### Simple Subscriptions
 
 [↑ Back to top](#doc-title)
 
@@ -26,7 +183,7 @@ To create a Simple subscription product:
 
 ![](https://woocommerce.com/wp-content/uploads/2026/04/adding-a-subscription-product.png?w=980)Adding a subscription product.
 
-## Variable Subscriptions
+### Variable Subscriptions
 
 [↑ Back to top](#doc-title)
 
@@ -42,7 +199,7 @@ If you’d like to see how variable products work in a real-world scenario, see 
 
 **Are your subscription variations showing unexpected product data when added to the cart?** Ensure that you have all attributes of all variations defined. Check the [advanced topics](https://woocommerce.com/document/variable-product/#variations-with-undefined-attributes) section of our variable products documentation for more details on how WooCommerce handles variations with undefined attributes.
 
-## Product options for the Simple and Variable Subscription product types
+### Product options for the Simple and Variable Subscription product types
 
 [↑ Back to top](#doc-title)
 
@@ -270,146 +427,6 @@ If you [allow switching](https://woocommerce.com/document/subscriptions/switchin
 **Note:**
 
 To limit the initial purchase of a product to one, also check the box for “Sold Individually.” Enable this to only allow one of this item to be bought in a single order in the Inventory section of the edit product page.
-
-## Purchase options for non-subscription product types
-
-[↑ Back to top](#doc-title)
-
-You can add subscription plans to supported non-subscription product types from the Subscriptions tab in the Product Data section.
-
-Supported product types: simple products, variable products, product bundles, and composite products.
-
-The Purchase options setting determines how subscription pricing is presented on the product.
-
-There are three options:
-
-**Use storewide subscription plans**—applies the storewide subscription plans defined in WooCommerce > Settings > Subscriptions. (Link placeholder) When selected, you can:
-
-- **Use all storewide subscription plans**: The product will use all storewide plans. New storewide plans will be included automatically.
-- **Select storewide subscription plans**: Choose specific storewide plans to use for this product. A table of available plans is displayed with checkboxes to select which plans apply.
-
-**Create custom subscription plans**—define subscription plans specific to this product, including custom frequency, free trial, signup fee, expiration (number of charges), discount, and billing date alignment.
-
-**Sell one time only**—if selected, the product will only be available as a one-time purchase.
-
-### Subscription plan settings
-
-[↑ Back to top](#doc-title)
-
-The subscription plans include the following settings you can adjust:
-
-### Frequency
-
-[↑ Back to top](#doc-title)
-
-Set the billing interval using a number input and a period dropdown (day, week, month, year). For example, “three months” means the customer is billed every three months. The combination cannot exceed ten years.
-
-### Align renewal
-
-[↑ Back to top](#doc-title)
-
-Optionally select a day to align renewal dates for all subscribers on this plan. When set to “Do not align,” renewals are based on each subscriber’s purchase date. See the [Billing Date Alignment documentation](https://woocommerce.com/document/subscriptions/billing-date-alignment) for details.
-
-### Price
-
-[↑ Back to top](#doc-title)
-
-Each subscription plan includes a price setting that determines how the subscription price is calculated. The Price dropdown has two options:
-
-- Discount product price
-- Set a custom price
-
-This setting is available on both storewide and custom subscription plans.
-
-**Discount product price**
-
-When Price is set to “Discount product price,” the subscription price is based on the product’s regular price, minus an optional discount. This is the default option.
-
-A Discount field appears with two controls:
-
-- **Amount:**Enter the discount value.
-- **Type:**Select the discount type from the dropdown**:**
-**Percentage**—discounts the product price by a percentage. For example, entering 10 will discount the price by 10%.
-**Fixed amount**—discounts the product price by a fixed monetary amount. For example, entering five will discount the price by $5 (or the equivalent in your store’s currency).
-
-If no discount is entered, the subscription price will be the same as the product’s regular price.
-
-**Tip**: Subscription discounts are a great way to incentivize longer billing intervals. For example, you could offer a 10% discount on a yearly plan compared to the monthly price.
-
-**Set a custom price**
-
-When Price is set to “Set a custom price,” the subscription price is set independently of the product’s regular price. Two fields appear:
-
-- **Regular price:**The recurring subscription price for this plan.
-- **Sale price:**An optional sale price for this plan. When set, the sale price is used as the recurring subscription price instead of the regular price.
-
-This option is useful when the subscription price should differ significantly from the product’s one-time purchase price or when you want full control over the recurring amount for each plan.
-
-**Note:**
-
-When using “Set a custom price,” the subscription price is completely independent of the product’s regular price. Changes to the product’s price will not affect the subscription plan price.
-
-### Subscription expiration
-
-[↑ Back to top](#doc-title)
-
-By default, subscriptions renew indefinitely until the subscriber or store manager cancels them. The expiration setting allows you to configure a subscription plan to automatically expire after a set number of payments.
-
-This setting is available on subscription plans at both the storewide level (WooCommerce > Settings > Subscriptions) and the product level (custom subscription plans on individual products). The behavior is the same in both contexts.
-
-**Expire after a set number of payments**—checkbox (default: unchecked). When checked, the subscription will automatically expire after the specified number of payments. When unchecked, the subscription renews indefinitely until cancelled.
-
-**Total payments**—number input; only visible when “Expire after a set number of payments” is checked. The number of payments, including the initial purchase, before the subscription automatically expires.
-
-For example, if a subscription plan has a monthly billing interval and total payments are set to 12, the subscriber will be charged once at signup and 11 more times at each monthly renewal, for a total of 12 payments. After the 12th payment, the subscription expires.
-
-**Note**:
-
-The total payments count includes the initial purchase. A value of six means the subscriber pays six times total, not six renewals after signup.
-
-The number of payments is based on billing periods, not calendar time. If a plan bills every two months with a total payment value of six, the subscription will last 12 months (six payments × two months each).
-
-**How expiration works**
-
-While the subscription is active, payments are processed according to the billing interval defined in the plan. The subscriber can see the expiration date on their View Subscription page in the My Account area.
-
-When the final payment has been processed, the subscription status automatically changes to Expired. No further renewal payments are charged, and the subscriber loses access to subscription benefits. The subscription cannot be reactivated—the subscriber would need to purchase a new subscription.
-
-Subscribers can still cancel an expiring subscription before it reaches its scheduled expiration. If cancelled, the subscription follows the normal cancellation process and does not continue to the expiration point.
-
-### Signup fee
-
-[↑ Back to top](#doc-title)
-
-Add a one-time fee that customers pay when they first subscribe.
-
-### Free trial
-
-[↑ Back to top](#doc-title)
-
-Offer a free trial by setting its duration using the number and period fields (days, weeks, months, years).
-
-![](https://woocommerce.com/wp-content/uploads/2026/04/add-custom-subscription-plan.png?strip=all&w=704)Custom Subscription Plan Settings
-
-### One-time purchases
-
-[↑ Back to top](#doc-title)
-
-When using storewide subscription plans or custom subscription plans, a one-time purchases section appears at the bottom of the Subscriptions tab. This section contains a single checkbox:
-
-Customers can buy this product without subscribing
-
-When checked, customers will be offered the option to purchase the product as a one-time purchase in addition to the available subscription plans. When unchecked, the product can only be purchased on a subscription plan.
-
-**Note:**
-
-If you only add a single subscription plan and disable one-time purchases, customers will not be offered any options above the add-to-cart button.
-
-### Bulk edit purchase options
-
-[↑ Back to top](#doc-title)
-
-From the Products list (WooCommerce > Products), you can select multiple products and use the Bulk Edit action to update their purchase options in bulk.
 
 ## Questions and support
 
