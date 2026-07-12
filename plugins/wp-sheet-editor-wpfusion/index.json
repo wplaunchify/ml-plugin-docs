@@ -2,9 +2,9 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-07-05T10:44:54.931Z",
+  "last_scraped": "2026-07-12T10:32:03.414Z",
   "total_pages": 5,
-  "failed_urls_count": 37,
+  "failed_urls_count": 38,
   "sections": [
     {
       "title": "Bulk Increase Woocommerce Prices Percentage",
@@ -59,15 +59,15 @@
       ]
     },
     {
-      "title": "Woocommerce Manage Coupons Google Sheets",
-      "slug": "woocommerce-manage-coupons-google-sheets",
-      "url": "https://wpsheeteditor.comwoocommerce-manage-coupons-google-sheets/",
-      "file": "categories/woocommerce-manage-coupons-google-sheets.md",
+      "title": "Woocommerce Subscriptions Bulk Edit Prices",
+      "slug": "woocommerce-subscriptions-bulk-edit-prices",
+      "url": "https://wpsheeteditor.comwoocommerce-subscriptions-bulk-edit-prices/",
+      "file": "categories/woocommerce-subscriptions-bulk-edit-prices.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "WooCommerce: How to Manage Coupons in Google Sheets",
-          "url": "https://wpsheeteditor.com/woocommerce-manage-coupons-google-sheets/"
+          "title": "Bulk Edit WooCommerce Subscription Prices (Increase, Decrease)",
+          "url": "https://wpsheeteditor.com/woocommerce-subscriptions-bulk-edit-prices/"
         }
       ]
     }
