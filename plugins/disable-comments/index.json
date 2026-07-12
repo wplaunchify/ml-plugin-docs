@@ -2,8 +2,8 @@
   "plugin_slug": "disable-comments",
   "plugin_name": "Disable Comments",
   "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-  "last_scraped": "2026-07-05T15:30:32.768Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T15:25:12.454Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]",
           "url": "https://wordpress.org/plugins/disable-comments/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/disable-comments/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]",
+          "url": "https://wordpress.org/plugins/disable-comments/"
         }
       ]
     }
