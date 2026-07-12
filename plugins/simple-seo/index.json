@@ -2,8 +2,8 @@
   "plugin_slug": "simple-seo",
   "plugin_name": "Simple SEO",
   "documentation_url": "https://wordpress.org/plugins/simple-seo/",
-  "last_scraped": "2026-07-05T07:00:27.958Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T06:48:50.332Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Simple SEO (Search Engine Optimization)",
           "url": "https://wordpress.org/plugins/simple-seo/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/simple-seo/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Simple SEO (Search Engine Optimization)",
+          "url": "https://wordpress.org/plugins/simple-seo/"
         }
       ]
     }

@@ -1,10 +1,36 @@
 {
   "plugin_slug": "simple-seo",
   "plugin_name": "Simple SEO",
-  "last_scraped": "2026-07-05T07:00:27.958Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T06:48:50.331Z",
+  "total_pages": 2,
   "failed_urls": [],
   "pages": [
+    {
+      "title": "Simple SEO (Search Engine Optimization)",
+      "url": "https://wordpress.org/plugins/simple-seo/",
+      "category": "Overview",
+      "content": "## Description\n\n\tOptimize your web site or blog by changing the title and menu output for any page or post.\n\nThich is very important for SEO (Search Engine Optimization) reasons, but it can also increase\n\nthe usability of your website, making it more friendly and understandable for your visitors.\n\n[Take a look at the screenshots](https://wordpress.org/extend/plugins/simple-seo/screenshots/) to\n\nsee what it looks like and how it works.\n\n#### Features\n\n- **Change the page title of your posts and pages.** This is the title that you see in the title bar of your web browser. It is also the title that shows up in search engines like Google.\n- **Change the menu title label of your posts and pages.** This is the title that is shown in your menus/navigation.\n- Supports **custom post types**.\n- Make your post or page **more attractive** in Google’s search results (Google SERP).\n- Add additional **keywords synonyms** to your pages or posts.\n- Increase **usability**\n- **Nicely integrated** into WordPress. Looks like it was built into the core.\n- No settings, just activate the plugin and you’re ready to go.\n- Uses WordPress own custom fields, so **no extra database tables**.\n- Works with most themes and plugins. (Well.. at least that’s what I hope for… 😉\n\n#### Why yet another SEO-plugin for WordPress?\n\nI felt that the existing plugins for WordPress Search Engine Optimization where a bit to complex\n\nand difficult to use, especially for new users of WordPress.\n\nSimple SEO aim to be a simple and unobtrusive alternative.\n\n#### Donation and more plugins\n\n- If you like this plugin don’t forget to [donate to support further development](http://eskapism.se/sida/donate/).\n- Check out some [more WordPress plugins by me](https://wordpress.org/extend/plugins/profile/eskapism).\n\n## Screenshots\n\n\t![Edit Page screen showing an article with modified/optimized Page Title and Menu Label. The next screenshot shows the corresponding web page.](https://ps.w.org/simple-seo/trunk/screenshot-1.png?rev=1573773)Edit Page screen showing an article with modified/optimized Page Title and Menu Label. The next screenshot shows the corresponding web page.\n\n![Example of a web site after using Simple SEO. Notice that the page title, the menu label and the headline all are different from each other. Hooray for variation!](https://ps.w.org/simple-seo/trunk/screenshot-2.png?rev=1573773)Example of a web site after using Simple SEO. Notice that the page title, the menu label and the headline all are different from each other. Hooray for variation!\n\n## Installation\n\n\t1. Upload the folder “simple-seo” to “/wp-content/plugins/”\n2. Activate the plugin through the “Plugins” menu in WordPress\n3. Done!\n\nNow go and edit a page and you should have two new options: “Custom Page Title” and “Custom Menu Label”.\n\n## Reviews\n\n\tThere are no reviews for this plugin.\n\n## Contributors & Developers\n\n\t“Simple SEO (Search Engine Optimization)” is open source software. The following people have contributed to this plugin.\n\nContributors\n\t\t- ![](https://secure.gravatar.com/avatar/2ce24492279223e09e666c760384573bc045d78af32a1459b8fcf341f7ab56a1?s=32&d=mm&r=g)\t\t\t\t[Pär Thernström](https://profiles.wordpress.org/eskapism/)\n- ![](https://secure.gravatar.com/avatar/89fd568c9ae7e7a514a470aad537713c20d8772407c7ebbd8a5511791457b2ec?s=32&d=mm&r=g)\t\t\t\t[MarsApril](https://profiles.wordpress.org/marsapril/)[Translate “Simple SEO (Search Engine Optimization)” into your language.](https://translate.wordpress.org/projects/wp-plugins/simple-seo)\n\n### Interested in development?\n\n[Browse the code](https://plugins.trac.wordpress.org/browser/simple-seo/), check out the [SVN repository](https://plugins.svn.wordpress.org/simple-seo/), or subscribe to the [development log](https://plugins.trac.wordpress.org/log/simple-seo/) by [RSS](https://plugins.trac.wordpress.org/log/simple-seo/?limit=100&mode=stop_on_copy&format=rss).\n\n## Changelog\n\n\t\n#### 0.3.4\n\n- Added: if post used on front page has a custom title, that title is prepended to the page title.\n\n#### 0.3.3\n\n- Fixed: it ran some SQL queries with errors in them when in admin\n\n#### 0.3.2\n\n- Fixed: No longer depends on get_post_meta to fetch the setting and title for each page. Could take a long time and use a lot of queries on a site/installation with many pages.\n\n#### 0.3.1\n\n- added POT-file. Please translate! 🙂\n- probably something else that I can’t remember…\n\n#### 0.3\n\n- tried to compress the plugin space a bit.\n- prepare for translators.\n\n#### 0.2\n\n- Some text changes\n\n#### 0.1\n\n- It’s kinda the first version. Works fine for me. Let me know if it works for you!",
+      "headings": [
+        "Description",
+        "Features",
+        "Why yet another SEO-plugin for WordPress?",
+        "Donation and more plugins",
+        "Screenshots",
+        "Installation",
+        "Reviews",
+        "Contributors & Developers",
+        "Interested in development?",
+        "Changelog",
+        "0.3.4",
+        "0.3.3",
+        "0.3.2",
+        "0.3.1",
+        "0.3",
+        "0.2",
+        "0.1"
+      ],
+      "code_blocks": []
+    },
     {
       "title": "Simple SEO (Search Engine Optimization)",
       "url": "https://wordpress.org/plugins/simple-seo/advanced/",
