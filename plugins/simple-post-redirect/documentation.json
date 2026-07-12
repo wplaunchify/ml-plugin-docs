@@ -1,10 +1,38 @@
 {
   "plugin_slug": "simple-post-redirect",
   "plugin_name": "Simple Post Redirect",
-  "last_scraped": "2026-07-05T09:50:15.462Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T09:34:07.621Z",
+  "total_pages": 2,
   "failed_urls": [],
   "pages": [
+    {
+      "title": "Simple Page Redirect",
+      "url": "https://wordpress.org/plugins/simple-post-redirect/",
+      "category": "Overview",
+      "content": "## Description\n\n\tSimple Page Redirect is an easy-to-use WordPress plugin that lets you quickly redirect any post, page, custom post type, or portfolio item to an internal or external URL. Perfect for managing redirects across your site, this plugin simplifies URL redirection by adding a text box to the edit screen of all default and custom post types.\n\n### Short Description\n\nQuickly redirect any post, page, or custom post type to another URL using a simple metabox.\n\n### Key Features\n\n- **Easy Redirect Setup**: Redirect any page, post, custom post type, or portfolio item to any internal or external URL.\n- **Simple User Interface**: After activation, a new option box for redirects will appear on the post edit screen, making setup quick and easy.\n- **Custom Post Type Support**: Works seamlessly with both default and custom post types.\n- **Flexible Redirect Options**: Easily manage redirection for your content without complex configurations.\n\n### Pro Version\n\nNeed to manage redirects at scale or keep things organized?\n\n**Simple Page Redirect Pro** adds powerful features on top of the free version:\n\n- **Bulk Edits** – Apply redirects to multiple posts or pages at once.\n- **Redirect Labels** – Add customizable labels to easily identify and manage redirects.\n- **Expiration Times** – Set expiration dates so redirects automatically disable when no longer needed.\n- **Export Options** – Export your redirects for backup or migration.\n- **Priority Support** – Get dedicated email support for faster help.\n\n👉 Learn more about [Simple Page Redirect Pro](https://simpleproplugins.com/product/simple-page-redirect/).\n\nWhether you need simple page redirection or advanced features, **Simple Page Redirect** makes managing URL redirects on your WordPress site easy.\n\n### Support & Reviews\n\nHave questions or need assistance? Visit our support tab for prompt help or suggestions. If you love the plugin, don’t forget to leave a review! 🙂\n\n### After Activation\n\nAfter activation, a new option box for redirects will appear on the edit screen of your posts.\n\n## Screenshots\n\n\t![The plugin metabox with the Classic Editor\nscreenshot-1.png](https://ps.w.org/simple-post-redirect/assets/screenshot-1.png?rev=3133384)The plugin metabox with the Classic Editor\n\nscreenshot-1.png\n\n![The plugin metabox with the Gutenberg Editor\nscreenshot-2.png](https://ps.w.org/simple-post-redirect/assets/screenshot-2.png?rev=3133384)The plugin metabox with the Gutenberg Editor\n\nscreenshot-2.png\n\n## Installation\n\n\t1. Upload **Simple Page Redirect** to the \n```\n/wp-content/plugins/\n```\n\n directory.\n2. Activate the plugin through the ‘Plugins’ menu in WordPress.\n3. Edit any page and add the destination URL to the text option metabox on the top right.\n\nTo **remove** a redirect, simply blank out the field.\n\n## Reviews\n\n\t![](https://secure.gravatar.com/avatar/d367c2724423333f4680ed408ac37dc0aac5ed63c88410ba08d93f1cf3480f51?s=60&d=retro&r=g)### time delay neede…\n\t\t\t\t\t\t\t[looktr](https://profiles.wordpress.org/looktr/)\n\t\t\t\t\t\t\t\tFebruary 27, 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1 reply\n\t\t\t\t\t\tExcellent, but time delay feature needed.\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/a5014f3a800b6e7ffb42eb7a082a4e72b8a3d1fd328eac25119d3612cdca0385?s=60&d=retro&r=g)### Does exactly what it says on the tin\n\t\t\t\t\t\t\t[wpcreations](https://profiles.wordpress.org/wpcreations/)\n\t\t\t\t\t\t\t\tNovember 14, 2024\n\t\t\t\t\t\tGreat plugin, does exactly what it says on the tin. Would be nice to see a target option, feel that’s the only thing missing.\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/4928f78ad4c8d821803790deb82438e48c08f7d7616cc2ba5522322a32e8f180?s=60&d=retro&r=g)### Simple to the Point\n\t\t\t\t\t\t\t[cavuapparel](https://profiles.wordpress.org/cavuapparel/)\n\t\t\t\t\t\t\t\tMarch 3, 2024\n\t\t\t\t\t\tA good simple plugin with no learning curve needed….Does exactly what it says it will do\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/945f3e77f603bfd1e9230895add3b2ce5384055b20a08fe7f79d4acd0809b8d7?s=60&d=retro&r=g)### Nice plugin\n\t\t\t\t\t\t\t[rolandassisla](https://profiles.wordpress.org/rolandassisla/)\n\t\t\t\t\t\t\t\tSeptember 26, 2020\n\t\t\t\t\t\tThanks.\nSimple and convenient plugin.\n\nPlease add a category redirect.\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/83f7b8017d7f8227382b2c2cc9244e78d15df91e6d67389eb76a7c3902c4ba1d?s=60&d=retro&r=g)### Simple and Easy to use\n\t\t\t\t\t\t\t[nadatamas](https://profiles.wordpress.org/nadatamas/)\n\t\t\t\t\t\t\t\tAugust 21, 2020\n\t\t\t\t\t\tSimple and very easy to use. Great support from developer. Thank you for the plugin!\n\t\t\t\t\t\t\t![](https://secure.gravatar.com/avatar/c9937c0b152b9066e1b47d9e8f25ab0ebfa6ece9a94b9fcad43306b488788e11?s=60&d=retro&r=g)### Great Plugin – Simple and clever\n\t\t\t\t\t\t\t[Joerg Romanowski](https://profiles.wordpress.org/romanowski72/)\n\t\t\t\t\t\t\t\tApril 16, 2020\n\t\t\t\t\t\tI use it to redirect Avada’s portfolio items. Just insert URL – ready. \nThanks for this plugin.\n\n\t\t[Read all 9 reviews](https://wordpress.org/support/plugin/simple-post-redirect/reviews/)\n\n## Contributors & Developers\n\n\t“Simple Page Redirect” is open source software. The following people have contributed to this plugin.\n\nContributors\n\t\t- ![](https://secure.gravatar.com/avatar/4a89a9bd7d56cb2f0b9e75586ea6d510cb0d7cd667497077cb2f941fa03dc435?s=32&d=mm&r=g)\t\t\t\t[imemine](https://profiles.wordpress.org/imemine/)“Simple Page Redirect” has been translated into 6 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/simple-post-redirect/contributors) for their contributions.\n\n[Translate “Simple Page Redirect” into your language.](https://translate.wordpress.org/projects/wp-plugins/simple-post-redirect)\n\n### Interested in development?\n\n[Browse the code](https://plugins.trac.wordpress.org/browser/simple-post-redirect/), check out the [SVN repository](https://plugins.svn.wordpress.org/simple-post-redirect/), or subscribe to the [development log](https://plugins.trac.wordpress.org/log/simple-post-redirect/) by [RSS](https://plugins.trac.wordpress.org/log/simple-post-redirect/?limit=100&mode=stop_on_copy&format=rss).",
+      "headings": [
+        "Description",
+        "Short Description",
+        "Key Features",
+        "Pro Version",
+        "Support & Reviews",
+        "After Activation",
+        "Screenshots",
+        "Installation",
+        "Reviews",
+        "time delay neede…",
+        "Does exactly what it says on the tin",
+        "Simple to the Point",
+        "Nice plugin",
+        "Simple and Easy to use",
+        "Great Plugin – Simple and clever",
+        "Contributors & Developers",
+        "Interested in development?"
+      ],
+      "code_blocks": [
+        "/wp-content/plugins/"
+      ]
+    },
     {
       "title": "Simple Page Redirect",
       "url": "https://wordpress.org/plugins/simple-post-redirect/advanced/",

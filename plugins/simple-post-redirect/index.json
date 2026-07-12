@@ -2,8 +2,8 @@
   "plugin_slug": "simple-post-redirect",
   "plugin_name": "Simple Post Redirect",
   "documentation_url": "https://wordpress.org/plugins/simple-post-redirect/",
-  "last_scraped": "2026-07-05T09:50:15.566Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T09:34:07.622Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Simple Page Redirect",
           "url": "https://wordpress.org/plugins/simple-post-redirect/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/simple-post-redirect/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Simple Page Redirect",
+          "url": "https://wordpress.org/plugins/simple-post-redirect/"
         }
       ]
     }
