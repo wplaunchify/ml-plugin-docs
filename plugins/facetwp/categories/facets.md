@@ -18632,7 +18632,7 @@ gm-style-iw
 ### Customize or overwrite the marker info window content with a hook
 
 ![The marker info window 'regular' content.](https://facetwp.com/wp-content/uploads/2026/07/marker-info-window-content.png)The marker info window “regular” content.
-The marker info window content can be [created in the “Info window content” setting field](#add-or-customize-marker-info-window-content-with-the-info-window-content-setting).
+The “regular” marker info window content can be [created in the “Info window content” setting field](#add-or-customize-marker-info-window-content-with-the-info-window-content-setting).
 
 If this field is too limiting, or if you can’t reach certain data with it, you can use the 
 ```
@@ -18771,7 +18771,7 @@ facetwp_map_marker_args
 $post
 ```
 
-, which means that you can use e.g. 
+, which means that in these neweer versions you can use e.g. 
 ```
 get_the_excerpt()
 ```
@@ -18792,7 +18792,7 @@ Note:Be aware that if you have the Map facet’s [“Info window ajax loading”
 facetwp_map_marker_args
 ```
 
- filter, as used in above snippet, will silently bypass AJAX loading. For most sites this is harmless, but on maps with a large number of markers where you specifically enabled AJAX loading for performance reasons, using this filter will negate that benefit. The recommendation is to update to FacetWP v4.5.1+ and migrate this code to [using the facetwp_map_marker_content hook](#custom-marker-info-window-content) instead.
+ filter, as used in above snippet, will silently bypass AJAX loading. For most sites this is harmless, but on maps with a large number of markers where you specifically enabled AJAX loading for performance reasons, using this filter will negate that benefit. The recommendation is to update to FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+ and migrate this code to [using the facetwp_map_marker_content hook](#custom-marker-info-window-content) instead.
 
 ### Add marker info window content from ACF custom fields
 
@@ -18844,14 +18844,14 @@ if ( !empty( $phone ) || !empty( $email_address ) ) {
 
 If you are using [ACF repeater fields](https://www.advancedcustomfields.com/resources/repeater/) to index and display [multiple locations per post](/help-center/facets/facet-types/map/#using-multiple-data-sources-locations-per-post), you may also want to retrieve content from other custom fields within the repeater field, to display in the marker/location’s info window.
 
-If you try to do this [with the “Info window content” setting](#add-or-customize-marker-info-window-content-with-the-info-window-content-setting), you’ll run into trouble, because there only post data can be retrieved, not the data for the separate locations within the repeater.
+If you try to do this [with the “Info window content” setting](#add-or-customize-marker-info-window-content-with-the-info-window-content-setting), you’ll run into trouble, because there, only post data can be retrieved, not the data for the separate locations within the repeater.
 
 Fortunately, there is the 
 ```
 facetwp_map_marker_content
 ```
 
- hook, with which you can set the info window content dynamically. Be aware that this overwrites anything you have set in the [“Info window content” setting](#add-or-customize-marker-info-window-content-with-the-info-window-content-setting):
+ hook, with which you can set the info window content dynamically. Be aware that this overwrites anything you have set in the [“Info window content” setting](#add-or-customize-marker-info-window-content-with-the-info-window-content-setting).
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.5.1+
@@ -19372,7 +19372,7 @@ facetwp-maps-loaded
 
  [event listener](#using-info-window-methods-L6).
 
-In this example we *get* and *set* info window header content and ‘regular’ content, which you would normally do [with a setting or hook](#add-or-customize-marker-info-window-content). See Google’s [InfoWindow method overview](https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow-Methods) for all other available methods.
+In this example we *get* and *set* info window header content and “regular” content, which you would normally do [with a setting or hook](#add-or-customize-marker-info-window-content). See Google’s [InfoWindow method overview](https://developers.google.com/maps/documentation/javascript/reference/info-window#InfoWindow-Methods) for all other available methods.
 
 The marker event hooks’ 
 ```
@@ -19468,7 +19468,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Proximity facet type (legacy)](https://facetwp.com/help-center/facets/facet-types/proximity-legacy/)
 - [Introducing the new Proximity and Map facets in FacetWP v4.4](https://facetwp.com/introducing-the-new-proximity-and-map-facets-in-facetwp-v4-4/)
 
-                    Last updated: July 3, 2026
+                    Last updated: July 6, 2026
 
 ---
 

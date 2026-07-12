@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T04:12:38.093Z",
+  "last_updated": "2026-07-12T04:12:44.243Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -281,7 +281,7 @@
       "slug": "facetwp",
       "name": "FacetWP",
       "documentation_url": "https://facetwp.com/help-center/",
-      "last_scraped": "2026-07-05T17:27:04.050Z",
+      "last_scraped": "2026-07-12T04:12:39.021Z",
       "page_count": 295,
       "categories": [
         "add-on-features-and-extras",
