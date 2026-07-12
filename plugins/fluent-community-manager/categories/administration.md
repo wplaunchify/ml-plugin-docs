@@ -98,25 +98,29 @@ Open the **Content Moderation** page from the left menu of **FluentCommunity** *
 
 ![](https://fluentcommunity.co/wp-content/uploads/2025/03/4.-Settings-of-Content-Moderation--scaled.webp)
 
-Now, a **Moderation Settings**popup page will appear with various settings options. These are:
+Now, a Moderation Settings popup page will appear with various settings options. These are:
 
-> Remember, before starting the process, make sure this Enable Content Moderation checkbox is enabled. But if you don’t want any content being reported by users, just disable the settings.
+Remember, before starting the process, make sure the Enable Content Moderation checkbox at the top of this popup is turned on. But if you don’t want any content being reported by users, just disable the settings.
 
-**A. Profanity Filte**r: This filtering tool detects and blocks offensive language in text or communication to maintain respectful and safe conversations. Here, provide the words (separated by commas) you want to use for content filtering.  If any Post/Comment contains the provided word/s, it will automatically be moved to the review state (i.e., **Flagged** status) and wait for approval.
+**A. Profanity Filter:**This filtering tool detects and blocks offensive language in text or communication to maintain respectful and safe conversations. Here, provide the blocked words (separated by commas) you want to use for content filtering. If any Post/Comment contains the provided word/s, it will automatically be moved to the review state (i.e., Flagged status) and wait for the approval.
 
-**B. Flag a post or comment after it’s reported X times**: Using this option, you can set the number of reports after which content will be unpublished automatically. Set it to **“0”** if you want this feature disabled.
+**B. Flag a post or comment after it’s reported X times:**Using this option, you can set the number of reports after which content will be unpublished automatically. Set it to “0” if you want this feature disabled.
 
-**C. Make all new posts as Pending**: This setting ensures that every new post created by users is automatically marked as **Flagged** for review. This means new posts/comments will not appear on the feed until an admin/moderator reviews and approves them.
+**C. Moderate a member after X of their posts or comments are rejected:**With this option, once a member has this many of their posts or comments rejected by a moderator, all of their future posts and comments will automatically require approval before going live. Set it to “0” to disable this feature.
 
-**D. Require approval for first post**: This setting requires admin/moderator approval only for the first post made by a new/old user. Once their first post is approved, their future posts will be published directly without requiring review.
+**D. Moderate a member after X of their posts or comments are reported:**This option automatically puts a member’s future posts and comments under review once their content has been reported by this many different members. It counts distinct reporters, not the total number of reports. Since reports are still unverified, it’s best to rely on the rejection threshold (option C) as your primary control. Set it to “0” to disable this feature.
 
-E. **Require approval for first comment:** Check this box to hold a member’s very first comment for administrative review. Once approved, their future comments will publish instantly.
+**E. Mark all new posts as Pending:**This setting ensures that every new post created by users is automatically marked as Flagged for review. This means new posts/comments will not appear on the feed until an admin/moderator reviews and approves them.
 
-**F. Mark all new posts as Pending in the given spaces: Here you can define the space/s which new posts will be flagged.**This means any new posts of the selected space/s will be flagged for review and hidden until approved by admin/moderator.
+**F. Require approval for first post:**This setting requires admin/moderator approval only for the first post made by a new user. Once their first post is approved, their future posts will be published directly without requiring review.
 
-After completing the setup, click the **Update** button to save all your changes and make it functional.
+**G. Require approval for first comment:**Similar to the setting above, this requires admin/moderator approval for a member’s very first comment. New comments will be flagged for review and hidden until that first comment is approved, after which future comments are published directly.
 
-![](https://fluentcommunity.co/wp-content/uploads/2025/03/moderation-settings-scaled.webp)
+**H. Mark all new posts as Pending in the given spaces:**Here you can define the space/s in which new posts will be flagged. This means any new posts in the selected space/s will be flagged for review and hidden until approved by an admin/moderator.
+
+After completing the setup, click the Update button to save all your changes and make it functional.
+
+![](https://fluentcommunity.co/wp-content/uploads/2025/03/content-moderation-scaled.webp)
 
 ## How to Review/Ignore/Unpublish a Reported Content
 
@@ -554,76 +558,155 @@ After you’re done customizing your badges, click **Save Settings**. If you hav
 
 **Source:** [https://fluentcommunity.co/docs/customize-your-portal/](https://fluentcommunity.co/docs/customize-your-portal/)
 
-You can easily customize the user interface (UI) features of your portal to enhance your community experience.
+FluentCommunity lets you shape the look and feel of your community portal so it matches the experience you want to give your members. From switching on dark mode to fine-tuning how posts, feeds, and member lists appear, the Customizations panel puts all of these controls in one place.
 
-To explore the portal customization options, go to **Settings** and select **Customization** from the left sidebar. Here, you’ll discover various settings to personalize your portal, which are detailed below.
+To open these settings, go to your FluentCommunity dashboard, click Settings, and select Customizations from the left sidebar. This guide walks you through every option, section by section, so you can decide exactly how your portal behaves.
 
-## Enable Dark Mode
+## Customize the UI Features of the Portal
 
-Switch between dark and light themes to suit different lighting conditions and user preferences.
+This first group of settings controls the general interface and navigation of your portal. Most of them are simple on/off checkboxes — turn on what you need and leave the rest off.
+
+#### Enable Dark Mode
+
+Turn this on to let members switch between dark and light themes. This is a great way to accommodate different lighting conditions and personal preferences, making the portal more comfortable to browse at any time of day.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customize-Portal-1.webp)
 
-## Enable Sticky Page Headers
+#### Enable Sticky Page Headers Across Portal
 
-When this option is on, the page header will stay at the top of the screen while users scroll down, making navigation easier.
+When enabled, the page header stays fixed at the top of the screen as members scroll down a page. This keeps important navigation always within reach, so users never have to scroll back up to move around.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customize-Portal-2.webp)
 
-## Show Default Feed Link on Sidebar
+#### Show Default Feed Link on Left Sidebar
 
-This feature adds a link to the default Feed in the sidebar, giving users quick access to the all feeds page.
+This option adds the default Feed link to the left sidebar, giving members an extra, convenient access point to the all-feeds page. It’s a handy shortcut for communities where the activity feed is a central hub.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customize-Portal-3.webp)
 
-## Hide Mobile Header and Footer on Scroll
+#### Collapse Sidebar Groups by Default
+
+When this is enabled, all space groups in the left sidebar appear collapsed when a member first lands on the portal. This keeps the sidebar tidy and less overwhelming, especially for larger communities. Members can still expand any group manually whenever they want.
+
+#### Enable Sidebar Collapse on Desktop
+
+Turning this on adds a toggle button to the sidebar that lets desktop users collapse or expand it. Collapsing the sidebar gives members more screen space and a more focused, distraction-free browsing experience.
+
+#### Hide Header & Footer on Scroll (Mobile)
+
+This setting is designed for mobile users. When enabled, the header and footer automatically hide as members scroll down and reappear as soon as they scroll back up. The result is more room for content on smaller screens without losing quick access to navigation.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/hide-and-scroll.webp)
 
-## Show Powered By Text
+#### Show Powered by Text
 
-Display a Powered by FluentCommunity link to acknowledge the platform and boost its visibility. You can also click here to add your affiliate ID. A pop-up will appear where you have to give your Affiliate ID, then click on the **Save** button.
+Enable this to display a “Powered by FluentCommunity” link on your portal. It’s a nice way to acknowledge the platform and help boost its visibility. You’ll also see a Click here link that lets you add your affiliate ID — a pop-up will appear where you can enter the ID and then click Save.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customize-Portal-4.webp)
 
-## Show Icons on Header Menu Items
+#### Show Icon on Header Menu Items
 
-Add icons next to the text in header menu items for better navigation and a more appealing look.
+When this is on, icons appear next to the text on your header menu items. This adds a bit of visual polish and makes it easier for members to recognize and navigate between menu items at a glance.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customize-Portal-5.webp)
 
-## Use Modal UI for Quick Post View
+#### Use Modal UI for Quick Post View
 
-Enable this setting to display posts as modals when interacting, providing a more engaging and streamlined user experience.
+Enable this option to have posts open in a modal (pop-up) window when members interact with them, instead of loading a full new page. This creates a smoother, more engaging reading experience and keeps members in the flow of the feed.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customization-Settings-Zoro-03-11-2025_12_33_PM.webp)
 
-## Rich Media Post Layout
+#### Layout Options
 
-Choose between two post layouts:
+The next set of options let you control how content is laid out across the portal — from individual posts to feeds and member lists.
 
-- **Classic**: Image/Video appears after the content.
-- **Modern**: Image/Video is displayed first.
+#### Rich Media Post Layout
+
+Choose how images and videos are arranged within a post:
+
+• Classic — the image or video appears after the post content.
+
+• Modern — the image or video is displayed first, before the content.
+
+Pick the style that best matches the look you want for your feed.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customize-Portal-7.webp)
 
-## Post Title Requirements
+#### Members List Layout
 
-Here, you can configure the post title requirements with three options: Optional, Required, or Disabled. Simply check the circle that fits your needs.
+Decide how member profiles are displayed on your portal:
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customization-Settings.webp)
+• List View — member profiles are shown as a simple, stacked list.
 
-## Members List Layout
+• Grid View — member profiles are shown as cards in a grid layout.
 
-This option is for customizing how member profiles are displayed on your platform. You can choose between a**List View** or **Grid View** for a more personalized experience. Read this [documentation](https://fluentcommunity.co/docs/members-list-grid-layout-view/) to know more.
+Grid View gives a more visual, card-based directory, while List View keeps things compact and easy to scan.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customization-Settings-1.webp)
 
-> Always remember to click the Save Settings button after making changes in Customize your Portal to ensure they are applied.
+#### Post Title Requirements
 
-Customize your portal to create a more engaging and user-friendly community experience!
+This setting controls whether a title is needed when someone creates a new post. You have three choices:
 
-If you have any further questions about this guide, please don’t hesitate to[contact us](https://wpmanageninja.com/support-tickets/).
+• Optional — members can add a title if they want, but it isn’t required.
+
+• Required — members must add a title before they can publish a post.
+
+• Disabled — the title field is removed entirely from the post editor.
+
+Simply select the option that fits how you’d like your community to post.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/Customization-Settings.webp)
+
+#### Default Feed Layout
+
+Set the default way posts appear in the feed. You can choose from:
+
+• Timeline View — a classic, vertical stream of posts.
+
+• List View — a more condensed, list-style layout.
+
+• Card View — posts displayed as individual cards.
+
+#### Disable Layout Style Change Option
+
+By default, members can switch the feed layout to their own preference. If you’d rather keep a consistent look across your community, enable this option to lock the layout and prevent members from changing it.
+
+#### Max Media Per Post
+
+Use this field to set the maximum number of media files (images or videos) a member can attach to a single post. Enter a number that suits your community — for example, 4 — to keep posts balanced and consistent.
+
+#### Default Feed Sort By
+
+Choose how posts are sorted in the feed by default, such as Latest Posts Sort. This determines the order members see content in when they first open a feed.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/customization.png)
+
+#### Disable Feed Sort By Options
+
+Enable this option if you don’t want members to change the feed sorting themselves. The feed will then always use the default sort order you selected above.
+
+> 💡 Note: After adjusting any of the options above, always click the Save Settings button to make sure your changes are applied.
+
+#### Custom Snippets
+
+For those who want to go a step further, the Custom Snippets section lets you add your own code to fine-tune the portal beyond the built-in settings. This is optional and intended for users comfortable with CSS and JavaScript.
+
+#### Custom CSS
+
+Use this field to write your own custom CSS and adjust the styling of your portal — colors, spacing, fonts, and more. Just enter your CSS code directly; there’s no need to include the <style> and </style> tags.
+
+#### Custom JavaScript
+
+Here you can add custom JavaScript, analytics code, tracking scripts, and other enhancements for your portal. When adding JavaScript, remember to include the appropriate <script> tag around your code.
+
+*💡 Note: Once you’ve added your CSS or JavaScript, click the Save Custom CSS & JS button to save these snippets separately from the other settings.*
+
+#### Wrapping Up
+
+The Customizations panel gives you a flexible, easy way to tailor your FluentCommunity portal to your brand and your members’ needs — without touching complicated code (unless you want to). Take a moment to explore each option and create a community experience that feels truly yours.
+
+If you have any further questions about this guide, please don’t hesitate to contact our support team.
 
 ---
 
