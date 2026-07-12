@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T11:24:11.297Z",
+  "last_updated": "2026-07-12T11:24:25.757Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -69,7 +69,7 @@
       "slug": "affiliatewp-affiliate-landing-pages",
       "name": "AffiliateWP - Affiliate Landing Pages",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-12T11:24:11.297Z",
+      "last_scraped": "2026-07-12T11:24:11.293Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
@@ -129,7 +129,7 @@
       "slug": "affiliatewp-multi-tier-commissions",
       "name": "AffiliateWP - Multi-Tier Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-05T16:54:23.506Z",
+      "last_scraped": "2026-07-12T11:24:23.419Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
