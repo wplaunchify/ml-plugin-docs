@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T10:33:06.540Z",
+  "last_updated": "2026-07-12T10:33:14.011Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -139,7 +139,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-12T10:29:18.895Z",
+      "last_scraped": "2026-07-12T10:29:18.891Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
@@ -241,7 +241,7 @@
       "slug": "customize-my-account-page-for-woocommerce",
       "name": "Customize My Account Page For Woocommerce",
       "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/",
-      "last_scraped": "2026-07-05T16:43:51.916Z",
+      "last_scraped": "2026-07-12T10:33:07.012Z",
       "page_count": 1,
       "categories": [
         "overview"
@@ -2457,7 +2457,7 @@
       "slug": "luckywp-table-of-contents",
       "name": "LuckyWP Table of Contents",
       "documentation_url": "https://wordpress.org/plugins/luckywp-table-of-contents/",
-      "last_scraped": "2026-07-12T10:30:18.993Z",
+      "last_scraped": "2026-07-12T10:30:18.991Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2864,7 +2864,7 @@
       "slug": "woocommerce-anti-fraud",
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/woocommerce-anti-fraud/",
-      "last_scraped": "2026-07-12T10:33:06.540Z",
+      "last_scraped": "2026-07-12T10:33:06.538Z",
       "page_count": 1,
       "categories": [
         "overview"
@@ -3477,7 +3477,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-07-12T10:32:03.416Z",
+      "last_scraped": "2026-07-12T10:32:03.414Z",
       "page_count": 5,
       "categories": [
         "bulk-increase-woocommerce-prices-percentage",
