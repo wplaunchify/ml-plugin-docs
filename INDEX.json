@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T07:45:45.382Z",
+  "last_updated": "2026-07-12T08:43:20.070Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2347,7 +2347,7 @@
       "slug": "learndash-lms-certificate-builder",
       "name": "LearnDash LMS - Certificate Builder",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-07-05T17:09:08.581Z",
+      "last_scraped": "2026-07-12T08:43:20.070Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
