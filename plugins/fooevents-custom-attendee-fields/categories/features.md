@@ -8,33 +8,195 @@
 
 **Source:** [https://www.fooevents.com/features/](https://www.fooevents.com/features/)
 
-## FooEvents Features
-				# The Swiss Army Knife for your event or bookable service
-				## Take the 5-minute tour of the key features and see for yourself how FooEvents can streamline your ticket sales, give you full control over attendee access and provide you with everything you need to grow your business.
-				## Pssst! There's a nice little surprise waiting for you at the end of the tour
-				
-				[Start the tour!](https://www.fooevents.com/features/events/)
-				Events
-				[Turn your events, venues and bookable services into products](https://www.fooevents.com/features/events/)
-				Virtual Events
-				[Sell access to virtual events using FooEvents and Zoom](https://www.fooevents.com/features/virtual-events/)
-				Tickets
-				[Send and manage tickets directly from your WordPress website](https://www.fooevents.com/features/tickets/)
-				Check-ins Apps
-				[Manage access with the free Check-ins app](https://www.fooevents.com/features/apps/)
-				Attendees
-				[Capture, manage and export your attendee information](https://www.fooevents.com/features/attendees/)
-				Point of Sale
-				[Sell and print tickets at the door](https://www.fooevents.com/products/fooevents-pos/)
-				Communications
-				[Engage with your customers and attendees every step of the way](https://www.fooevents.com/features/communications/)
-				WooCommerce
-				[You can’t go wrong with the world’s most popular eCommerce platform](https://www.fooevents.com/features/woocommerce/)
-				Insights
-				[Make informed decisions based on event and ticket reports](https://www.fooevents.com/features/insights/)
-				Integrations
-				[Make use of thousands of WooCommerce plugins](https://www.fooevents.com/features/integrations/)
-				[Download the print-friendly Features Fact Sheet](https://www.fooevents.com/features/fact-sheet/)
+FooEvents Feature Tour
+
+# The Swiss Army Knife for your event or bookable service
+
+Take the 5-minute tour of the key features and see for yourself how FooEvents can streamline your ticket sales, give you full control over attendee access and provide you with everything you need to grow your business.
+
+## Events
+
+Create and manage events directly in WooCommerce, from simple ticketed events to bookings, seated events, multi-day experiences, and more.
+
+[View Features](https://www.fooevents.com/features/events/)
+
+## Tickets
+
+Automatically generate professional tickets with unique QR codes, customizable HTML templates, and all the event details attendees need.
+
+[View Features](https://www.fooevents.com/features/tickets/)
+
+## Attendees
+
+Collect, manage, and organize attendee information so your team knows who is coming and what they need.
+
+[View Features](https://www.fooevents.com/features/attendees/)
+
+## Check-ins
+
+Reduce queues and door chaos with flexible tools to scan tickets, validate entry, prevent duplicate check-ins, and track attendance.
+
+[View Features](https://www.fooevents.com/features/check-ins/)
+
+## Insights
+
+Track ticket sales, attendee data, check-in activity, exports, and order information so you can make better event decisions.
+
+[View Features](https://www.fooevents.com/features/insights/)
+
+## Integrations
+
+Connect FooEvents with the wider WordPress and WooCommerce ecosystem to support custom workflows, external tools, and client-specific event setups.
+
+[View Features](https://www.fooevents.com/features/integrations/)
+
+## WooCommerce
+
+Leverage WooCommerce payment gateways, coupons, taxes, orders, reporting, and extensions to build a flexible event sales platform.
+
+[View Features](https://www.fooevents.com/features/events/)
+
+## Use Cases
+
+Every event works differently. FooEvents gives you the tools to sell tickets, manage attendees, take bookings, assign seats, check people in, and build flexible event solutions.
+
+[View Use Cases](https://www.fooevents.com/features/events/)
+
+## Products
+
+Explore the FooEvents product suite, including the core plugin, extensions, free Check-ins apps, and Ticket Themes.
+
+[View Products](https://www.fooevents.com/products/)
+
+---
+
+## Hold the door with the free FooEvents Check-ins app
+
+**Source:** [https://www.fooevents.com/features/apps/](https://www.fooevents.com/features/apps/)
+
+Check-ins App
+
+# Hold the door with the free FooEvents Check-ins app
+
+No more clumsy clipboards! Streamline your check-in process and ensure critical attendee, event, and booking information is at your fingertips when you need it most.
+
+[Download iOS App](https://itunes.apple.com/app/event-check-ins/id1129740503)
+
+[google_play [#133]Created with Sketch.
+
+Download Android App](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
+
+23,478,299
+
+Attendees Checked In and Counting
+
+![fooevents check ins apps](https://www.fooevents.com/wp-content/uploads/2026/07/fooevents-check-ins-apps.png)Fooevents Check-Ins App 2
+
+## Check in attendees faster with the FooEvents Check-ins app
+
+**Scan tickets** using QR codes or barcodes.
+
+**Check in attendees** from iOS and Android devices.
+
+**Search for attendees** when tickets cannot be scanned.
+
+**Track attendance** with live and offline check-ins.
+
+Download the apps for free!
+
+## Check-in app features built for busy event teams
+
+Explore the key features that make the FooEvents Check-ins app a fast and flexible way to manage event entry, from QR code and barcode scanning to attendee search, offline mode, real-time updates, bulk status changes, booking check-ins, multi-day support, and tablet-friendly check-in workflows.
+
+[Documentation](https://help.fooevents.com/docs/topics/check-ins-app/)
+
+### Fast QR Code and Barcode Scanning
+
+Scan attendee tickets using your device’s built-in camera or a compatible Bluetooth barcode scanner. The FooEvents Check-ins app supports both QR codes and 1D barcodes, making it easy to validate tickets from printed tickets or mobile screens.
+
+### Auto Check-ins
+
+Speed up entry using Auto Check-ins. Once a ticket has been successfully scanned and validated, the attendee is automatically checked in and the app returns to the scanning screen, ready for the next ticket.
+
+### Real-time Check-ins
+
+The app connects directly to your WordPress website, so check-ins can update in real time. This helps teams using multiple devices stay aligned and reduces the risk of duplicate or outdated check-in information.
+
+### Offline Mode
+
+Keep checking in attendees even if your internet connection drops. The FooEvents Check-ins app can continue working offline and sync the check-in data once the connection is restored.
+
+### Flexible Event Scanning
+
+Scan tickets for a specific event or use global scanning to scan tickets from anywhere in the app. This makes it easier to manage check-ins across different event setups and busy entrance points.
+
+### Attendee Search
+
+Quickly find attendees by searching for their name or ticket ID. This is useful when an attendee does not have their ticket ready or their QR code cannot be scanned.
+
+### Filters and Sorting
+
+Filter and sort events and attendees to keep large lists organized. This helps staff find the right event, ticket, or attendee faster, especially at busy venues.
+
+### Restricted Event Display
+
+Control which events appear in the app. You can show all published events, only events created by the signed-in user, or selected events that you choose in advance.
+
+### Tablet-optimized Interface
+
+The FooEvents Check-ins app is optimized for iPad and tablet devices, giving your team more screen space to view attendee information, manage check-ins, and work faster on-site.
+
+### Event List Display Options
+
+Choose how events are displayed in the app using featured images or date-based list styles. The date mode uses customizable, color-coded date icons to help staff quickly identify events.
+
+### Swipe Actions
+
+Check in, check out, or cancel attendee access directly from the attendee list by swiping right on an attendee’s name.
+
+### Bulk Status Updates
+
+Update multiple tickets at once by selecting attendees and marking them as checked in, checked out, or canceled. This is useful for managing groups or correcting several ticket statuses quickly.
+
+### View Attendee Information
+
+View attendee details directly in the app, including custom attendee fields captured during checkout. This helps staff access important information without switching systems.
+
+### Privacy Mode
+
+Hide personal attendee and ticket purchaser information in the app. Only attendee names are shown for check-in purposes, helping protect sensitive customer data during event operations.
+
+### Check-in Log
+
+View a check-in activity log for each individual ticket. This gives event teams a clearer record of when ticket status changes were made.
+
+### Multi-day Event Support
+
+When using FooEvents Multi-day, attendees can be checked in across multiple event days, making the app suitable for conferences, festivals, retreats, and other multi-day events.
+
+### Booking Management
+
+When using FooEvents Bookings, the Check-ins app provides booking-specific screens that make it easier to manage attendance for bookable events, sessions, time slots, tours, classes, and appointments.
+
+### Custom Branding
+
+Customize the app logo and color scheme from your FooEvents plugin settings. Branding is managed centrally, so connected apps automatically use your chosen look and feel.
+
+### Custom Terminology
+
+Customize key terms used in the app, such as “Events,” “Attendees,” and “Check-ins,” so the app matches the language used by your business or venue.
+
+### Dark Mode
+
+Use dark mode to reduce screen glare, improve comfort in low-light environments, and help save battery life during long events.
+
+### Bluetooth Scanner Support
+
+Pair your device with a handheld Bluetooth barcode scanner for faster, hardware-assisted scanning at busy entrances or registration desks.
+
+### Multi-language Support
+
+The FooEvents Check-ins app supports 18 languages, including English, Afrikaans, Arabic, Chinese (Simplified), Czech, Dutch, French, German, Greek, Hebrew, Hindi, Hungarian, Italian, Malay, Portuguese, Russian, Spanish, and Swedish.
 
 ---
 
@@ -42,15 +204,85 @@
 
 **Source:** [https://www.fooevents.com/features/attendees/](https://www.fooevents.com/features/attendees/)
 
-## Next
-				## Prev
-				## Attendees
-				# Capture, manage and export your attendee information
-				## Your attendee customer data is the heart of your business and FooEvents ensures that this information is stored safely and accessible to you through various purpose-built channels.
-				![Fooevents Attendee Fields](https://www.fooevents.com/wp-content/uploads/2020/11/fooevents-attendee-fields.png)
-				### Capture customized attendee fields at checkout.
-				### View attendee information in your WordPress admin area, export as a CSV or view it in the FREE FooEvents Check-ins apps.
-				### What type of attendee fields can I capture?
+Attendees
+
+# Capture, manage and export your attendee information
+
+Your attendee customer data is the heart of your business and FooEvents ensures that this information is stored safely and accessible to you through various purpose-built channels.
+
+### Collect the details you need
+
+Capture attendee information during the ticket purchase process, so you have the right details available for planning, communication, reporting, and event-day operations.
+
+### Update and manage tickets easily
+
+View attendee records from your WordPress dashboard, update ticket details when needed, resend ticket emails, cancel tickets, and keep registration information accurate.
+
+### Export attendee data when needed
+
+Export attendee information to CSV for planning, reporting, communication, registration desk preparation, or use with other tools.
+
+[Features](#features)
+
+[FAQs](#faqs)
+
+Features
+
+## Attendee Management Made Simple
+
+Explore how FooEvents helps you collect attendee details, manage attendee records, view ticket information, and support custom attendee fields.
+
+### Standard attendee fields
+
+Capture common attendee information when tickets are purchased, including first name, last name, phone number, email address, company, and designation.
+
+### Custom attendee fields
+
+Create your own attendee fields using [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/). Capture additional information such as dietary requirements, waiver acceptance, ID numbers, shirt sizes, emergency contacts, or any other details needed for your event.
+
+### Attendee access control
+
+Manage event access using the free [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/) or the [FooEvents Express Check-ins](https://www.fooevents.com/products/fooevents-express-check-in/) plugin. Staff can scan tickets, search attendees, and update check-in statuses.
+
+### Attendee data exports
+
+Export attendee data as a CSV file for a specific event. Use the export in spreadsheets, CRM systems, reporting tools, or operational event-day workflows.
+
+### Attendee emails and reminders
+
+Connect FooEvents with [Mailchimp](https://help.fooevents.com/docs/topics/third-party-integration/mailchimp/) to add attendees to an audience list when they purchase tickets. Use default or event-specific tags to segment attendees and send targeted event communications.
+
+### AutomateWoo attendee automations
+
+Create automated event workflows using [AutomateWoo](https://help.fooevents.com/docs/topics/third-party-integration/automatewoo/) and FooEvents attendee, ticket, event, booking, seating, and check-in data. Send reminders, follow-ups, internal notifications, and post-event emails based on ticket creation, booking details, and check-in activity.
+
+### Attendee Labels, badges, and wristbands
+
+Print custom name tags, wristbands, tickets, badges, and personalized labels using a drag-and-drop layout interface.
+
+### Manage attendee details
+
+View and manage attendee/ticket records in the WordPress dashboard, update attendee details, resend tickets, and keep registration data accurate.
+
+### Custom attendee terminology
+
+Rename “attendees” to match your event type, such as guests, participants, students, delegates, members, players, or customers.
+
+### Data ownership
+
+Attendee data is stored in your own WordPress/WooCommerce database, giving you direct access to your registration records without relying on a third-party ticketing platform.
+
+### Attendee privacy
+
+Attendee data is stored in your own WordPress/WooCommerce database, not on a third-party ticketing platform. FooEvents also includes privacy settings that let you control where personal details appear across tickets, order emails, exports, and the Check-ins app.
+
+Frequently Asked Questions
+
+## Frequently asked questions
+
+Find answers about attendee information, custom fields, ticket ownership, attendee lists, and how attendee data is stored.
+
+### What type of attendee fields can I capture?
 
 Capture common information when attendees purchase a ticket. The standard fields include first name, last name, phone number, email address, company and designation.
 
@@ -68,7 +300,7 @@ You can allow attendees to choose their own seats based on the layout of your ve
 
 ### How can I manage attendee access to my events?
 
-Manage access to your events like a pro with our free [FooEvents Check-ins app](https://www.fooevents.com/features/apps/) or the [FooEvents Express Check-ins plugin](https://www.fooevents.com/products/fooevents-express-check-in/).
+Manage access to your events like a pro with our free [FooEvents Check-ins app](https://www.fooevents.com/features/apps/) or the [FooEvents Express Check-ins plugin](https://www.fooevents.com/products/fooevents-express-check-in/).
 
 ### Can I export attendee data?
 
@@ -76,263 +308,301 @@ Export a CSV file containing data for all people attending a specific event that
 
 ### Can I send emails and reminders to attendees?
 
-[FooEvents integrates seamlessly with Mailchimp](https://help.fooevents.com/docs/topics/third-party-integration/mailchimp/) and includes the ability to automatically add your attendees to a Mailchimp audience list when they purchase tickets. You can also specify default tags or event-specific tags that can be used to segment your Mailchimp list.
+[FooEvents integrates seamlessly with Mailchimp](https://help.fooevents.com/docs/topics/third-party-integration/mailchimp/) and includes the ability to automatically add your attendees to a Mailchimp audience list when they purchase tickets. You can also specify default tags or event-specific tags that can be used to segment your Mailchimp list.
 
 ### How do I print labels and badges?
 
 Print custom name tags, wristbands, tickets, badges and personalized labels through an intuitive drag & drop interface.
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/attendees/) for
-more detailed information.
-				[← Apps](https://www.fooevents.com/features/apps) — [Point of Sale →](https://www.fooevents.com/products/fooevents-pos/)
 
 ---
 
-## Engage with your customers and attendees every step of the way
+## Fast, Reliable Check-ins for Every Event
 
-**Source:** [https://www.fooevents.com/features/communications/](https://www.fooevents.com/features/communications/)
+**Source:** [https://www.fooevents.com/features/check-ins/](https://www.fooevents.com/features/check-ins/)
 
-## Next
-				## Prev
-				## Next
-				## Prev
-				## Communications
-				# Engage with your customers and attendees every step of the way
-				## Automatically schedule attendee emails based on custom triggers for an event or booking using our powerful Mailchimp and AutomateWoo integrations. You can also send automated emails and SMSs when tickets are purchased or checked in.
-				[AutomateWoo Integration](#automatewoo)
-				[Mailchimp Integration](#mailchimp)
-				### What types of automated attendee emails can I schedule using these integrations?
-				Before an event or booking
+Check-ins
 
-					- Send welcome packs and confirm registration details
-- Send automated reminders before the day of an event
-- Send a COVID-19 pre-screening survey to attendees
-- Send reminders to bring something to an event or booking
-- Communicate important changes such as a venue change
-- Announce that your event has been canceled or postponed
-- Setup automated drip emails to build excitement for an event
-							After the attendee has arrived
+# Fast, Reliable Check-ins for Every Event
 
-					- Send greetings and welcome messages
-- Provide attendees with additional information and resources that can be used at an event
-- Offer real-time notifications of activities taking place
-							After an event or booking
+Long queues, missing tickets, duplicate scans, and confused door staff can quickly derail the attendee experience. FooEvents gives your team the tools to check people in quickly and confidently, whether you are running a simple event, a busy venue, or a complex multi-day setup.
 
-					- Send automated thank-you emails to everyone who attended an event with links to the event’s presentations, notes or recordings
-- Send a certificate of attendance/completion after a person completes a race or course
-- Create and send a satisfaction survey using the built-in tools in Mailchimp or connect your account to another platform such as SurveyMonkey
-- Request a review of your event or business
-- Create automations to touch base with attendees or customers at specific time intervals e.g. after attendees have completed a specific course or workshop
-- Send out special offers or cross-promote your other events
-- Export or synchronize attendee information with a different marketing or CRM platform
-				*Please note that automated scheduled triggers such as the event date, booking date and check-in time, are only included in the AutomateWoo integration. Please read below for a more detailed overview of how each integration works.*
-				![Woocommerce_Logo.svg](https://www.fooevents.com/wp-content/uploads/elementor/thumbs/WooCommerce_logo.svg_-rbjl4bc6twn0ycnw4bbmfi63labnq0d1t1cwjpqu4g.png)
-				## AutomateWoo Integration
-				### How does the AutomateWoo integration work?
+### Keep your entrance moving
 
-FooEvents adds additional custom triggers to the AutomateWoo plugin making it possible to send automated emails and SMSs to attendees using the purchase time, event date, booking date and check-in time as triggers.
+Use the FooEvents Check-ins apps to scan tickets, validate attendees, and reduce delays at the door, helping your team manage event access quickly and professionally.
 
-### Do I need to install any additional plugins to use the AutomateWoo integration?
+### Scan QR codes and barcodes
 
-The integration is included in the main [FooEvents for WooCommerce plugin](https://www.fooevents.com/products/fooevents-for-woocommerce/), however, you will also need to purchase the [AutomateWoo plugin](https://help.fooevents.com/docs/topics/third-party-integration/automatewoo/) which is [sold separately on the WooCommerce Marketplace](https://woo.com/products/automatewoo/) in order to take advantage of this functionality.
+Validate tickets using QR codes or barcodes on attendee tickets, so your team can confirm ticket status and check people in with a quick scan.
 
-### Why should I use AutomateWoo?
+### Find attendees fast
 
-AutomateWoo is sold as a 12-month license and is excellent value for money. The integration between WooCommerce and AutomateWoo is also advanced and, as a result, many additional FooEvents trigger and filter options are not included in the Mailchimp integration. We highly recommend AutomateWoo if your requirements are geared more toward sending transactional alerts and reminders (one-to-one) or if you have a limited budget.
+Search for attendees manually when a ticket cannot be scanned, making it easier to resolve entry issues without holding up the line.
 
-| Pros: | Cons: |
-| --- | --- |
-| Cost effectiveAdvanced filters and triggersManaged within your WordPress dashboardRequires less configuration | Not ideal for sending emails to large listsLimited reporting toolsEmail delivery is not guaranteed |
+[Overview](#overview)
 
-**Help Documentation →**
-				![Mailchimp](https://www.fooevents.com/wp-content/uploads/elementor/thumbs/mailchimp-rbjl49gig8kkeg7hai8uzxt6ha9rjsjtnh5hzr4m4g.png)
-				## Mailchimp Integration
-				### How does the Mailchimp integration work?
+[Features](#features)
 
-Attendees can be automatically added to a Mailchimp audience list when tickets are generated. You can also specify default tags or event-specific tags that can be used to segment your Mailchimp list.
+[FAQs](#faqs)
 
-### Do I need any additional plugins to use the Mailchimp integration?
+![fooevents check ins apps](https://www.fooevents.com/wp-content/uploads/2026/07/fooevents-check-ins-apps.png)Check-Ins 2
 
-You need a [Mailchimp](https://mailchimp.com/?aid=a47b12e702a733071948c07e9&afl=1) account and the core [FooEvents for WooCommerce plugin](https://www.fooevents.com/products/fooevents-for-woocommerce/) in order to use this integration.
+## Check in attendees quickly and confidently
 
-### Why should I use Mailchimp?
+FooEvents helps you manage event entry using QR codes, barcodes, and the free [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/). Your team can scan tickets, search for attendees, validate ticket status, track check-ins and check-outs, and help prevent duplicate entries, giving you a faster and more reliable check-in process at the door.
 
-Mailchimp has become a household name and for good reason. It’s extremely powerful and packed with loads of features, however, this does come at a price especially if you have a medium to large database. We highly recommend Mailchimp if you regularly send emails to large lists and place a premium on email delivery and reporting or if your business already uses Mailchimp as many do. You may also opt to run AutomateWoo and Mailchimp together depending on your requirements as they both have their own distinct strengths and weaknesses.
+[Explore App](https://www.fooevents.com/products/apps/)
 
-| Pros: | Cons: |
-| --- | --- |
-| Fast and reliable email sendingGreat for sending emails to large listsExcellent reporting toolsIntegrates with popular 3rd-party systemsIncludes other useful CRM features | ExpensiveBasic WooCommerce filters and triggersRequires more setup and configurationAnother system to manage and log into |**Help Documentation →**
-				[← Point of Sale](https://www.fooevents.com/products/fooevents-pos/) — [WooCommerce →](https://www.fooevents.com/features/woocommerce/)
+Features
 
----
+## Fast, Flexible Check-in Tools
 
-## If your conference was popcorn, FooEvents would be the butter!
+See how FooEvents supports QR code scanning, manual attendee search, Express Check-in, offline check-ins, multi-device access, and more.
 
-**Source:** [https://www.fooevents.com/features/conferences/](https://www.fooevents.com/features/conferences/)
+### Flexible ticket check-ins
 
-## Conferences
-				# If your conference was popcorn, FooEvents would be the butter!
-				## Organizing a conference can be pretty stressful - selling tickets doesn't have to be. FooEvents has helped thousands of event organizers sell millions of tickets directly from their own WordPress websites. No coding, no ticket fees, no commission!
-				[See Pricing Options](https://www.fooevents.com/pricing/)
-				**Need help getting started?**
-[Complete our Solution Builder Quiz and get 20% off!](https://www.fooevents.com/promo/quiz/?ref=lp-conferences)
-				### FooEvents works perfectly on any WooCommerce-friendly theme with no customization required!
-				### Create bookable date and time slots with their own seperate availability.
-				### Use WooCommerce variations to offer different ticket types at different price points.
-				![Screenshot Of A Woocommerce Product Used To Sell Conference Tickets](https://www.fooevents.com/wp-content/uploads/2021/07/fooevents-conference-cover-2-1024x423.png)
-				![Grand Haven Coast Guard](https://www.fooevents.com/wp-content/uploads/2024/09/Grand-Haven-Coast-Guard.png)
-				![Victoria Film Festival](https://www.fooevents.com/wp-content/uploads/2024/09/Victoria-Film-Festival.png)
-				![Tedx](https://www.fooevents.com/wp-content/uploads/2024/09/TedX.png)
-				![Faith Fest](https://www.fooevents.com/wp-content/uploads/2024/09/Faith-Fest.png)
-				![Saatchi Gallery](https://www.fooevents.com/wp-content/uploads/2024/09/Saatchi-Gallery.png)
-				## Single-day, multi-day, virtual, recurring?We've got you covered!
-				Conferences come in all shapes and sizes, so we've developed a suite of tools that make it possible to sell tickets for a variety of conference formats. This includes typical single-day conferences and workshops, conferences that span over multiple days, virtual conferences and webinars, and conferences that reoccur on specific dates.
-				![Fooevents Conf Scaled 1](https://www.fooevents.com/wp-content/uploads/2021/07/fooevents_conf-scaled-1-1024x683.jpeg)
-				### Single-day Conferences
-				[Try the demo](https://demo.fooevents.com/product/conference/) | [Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/conference/)
-				![Fooevents Conf 483030007 Scaled 1](https://www.fooevents.com/wp-content/uploads/2021/07/fooevents_conf_483030007-scaled-1-1024x683.jpeg)
-				### Multi-day Conferences
-				[Try the demo](https://demo.fooevents.com/product/multi-day-conference/) | [Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/standard-multi-day-conference/)
-				![Virtual Conference](https://www.fooevents.com/wp-content/uploads/2021/07/virtual-conferences.png)
-				### Virtual Conferences
-				[Try the demo](https://demo.fooevents.com/product/virtual-conference/) | [Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/virtual-conference/)
-				## We get you, because we’ve been in your shoes!
-				Back in 2015 we needed a solution to sell tickets for a conference. Existing solutions were expensive, over complicated and badly coded. We ditched the idea of an off-the-shelf solution and decided to build our own ticket plugin. Fast forward to present-day and FooEvents has helped over 16,000 customers sell millions of tickets.
-				Event Organizers & Small Businesses
+Validate and check in attendees for almost any type of event using tickets generated directly from WooCommerce orders.
 
-					Sell tickets, manage check-ins and grow your events. You don’t need any tech skills and can be up and running within minutes. No commission OR ticket fees.
-							Designers & Developers
+### QR code and barcode scanning
 
-					FooEvents seamlessly integrates with WooCommerce and will feel seamless to any developer or designer that is already familiar with WooCommerce. Since FooEvents is a WooCommerce plugin, you can still make use of your favorite WordPress and WooCommerce plugins, themes and services.
-							Nonprofit Organizations
+Scan ticket QR codes or barcodes from printed tickets or mobile screens using the [FooEvents Check-ins app](https://www.fooevents.com/products/apps/) to quickly validate entry and update the attendee’s check-in status.
 
-					We believe in the ‘pay it forward’ approach to business and life. As such, we offer registered Nonprofit Organizations (NPO) a 50% discount off the first year of your license followed by 30% off annual renewals. [» Apply here](https://help.fooevents.com/contact/npo-discount-application/)
-				## Send and manage tickets directly from your own WordPress website
-				You have complete control over what your tickets look like, how they are sent, the format they are sent in, and how they are used by you, your team and your delegates.
-				![Screenshot 2021 07 19 At 15.27.03 694X1024 1](https://www.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-19-at-15.27.03-694x1024-1.png)
-				### Include event, ticket, attendee and booking information.
-				### Customize the ticket theme, colors, logo, graphics and content.
-				### Scan ticket barcode and QR codes using the FREE FooEvents Check-ins app which can also be paired with a Bluetooth barcode scanner or computer with the FooEvents Express Check-in extension.
-				### Let attendees add events to their preferred calendar using an 'Add to calendar' button.
-				## Sell and print tickets at the door
-				[FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) is a web-based point of sale plugin and can be used to sell and print tickets at the door of your venue. You can also use FooEvents POS to sell physical products such as merchandise, food and beverages.
-				![Woocommerce Tickets](https://www.fooevents.com/wp-content/uploads/2022/11/fooevents_pos_laptop-1024x541.png)
-				[Watch our 5 minute tour of FooEvents POS](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE2MzgxNiIsInRvZ2dsZSI6ZmFsc2V9)
-				## Design and print your own event stationery
-				Design and print custom name tags, wristbands, tickets, badges and personalized labels using the FooEvents Stationery Builder's drag & drop interface.
-				## Sell access to virtual conferences and webinars
-				FooEvents connects securely to your Zoom account and can automatically pre-register attendees for once-off or recurring Zoom meetings and webinars when they purchase tickets on your website. Hybrid conferences (physical and virtual) are possible too!
-				![Virtual Conferences](https://www.fooevents.com/wp-content/uploads/2021/12/virtual-conferences.png)
-				## Speed up your attendee registrations
-				No more clumsy clipboards! Streamline your registrations and ensure that critical delegate information is at your fingertips when you need it most.
-				![App Workshops](https://www.fooevents.com/wp-content/uploads/2021/07/app-workshops.png)
-				## Capture critical attendee information
-				Your attendee data is the heart of your business and FooEvents ensures that this information is stored safely and accessible to you through various purpose-built channels.
-				![Fooevents Ticket](https://www.fooevents.com/wp-content/uploads/2020/11/fooevents-ticket.png)
-				## How do I get started?
-				First, you will need to purchase a FooEvents license and download the FooEvents plugins. You can then install the plugins on your WordPress site, setup your event, and start selling tickets.
-				[See Bundle Options](https://www.fooevents.com/pricing/)
-				[What is WordPress?](https://help.fooevents.com/docs/topics/installation/installing-wordpress/) | [What is WooCommerce?](https://help.fooevents.com/docs/topics/installation/installing-woocommerce/)
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/events/) for
-more detailed information.
+### Manual attendee search
 
----
+Search for attendees manually when they do not have their ticket available or their QR code cannot be scanned. This is available in the FooEvents Check-ins app and Express Check-in.
 
-## Sell physical and virtual courses, classes, training seminars and workshops
+### Real-time check-in status
 
-**Source:** [https://www.fooevents.com/features/courses-classes-training/](https://www.fooevents.com/features/courses-classes-training/)
+See whether a ticket is valid, still available, or already checked in, so staff can make quick decisions at the door.
 
-## Courses, Classes & Training
-				# Sell physical and virtual courses, classes, training seminars and workshops
-				## Use FooEvents to help maximize student enrollment and make managing class capacity and attendance a breeze. No coding, no booking fees, no commission!
-				[See Pricing Options](https://www.fooevents.com/pricing/)
-				**Need help getting started?**
-[Complete our Solution Builder Quiz and get 20% off!](https://www.fooevents.com/promo/quiz/?ref=lp-shows)
-				### Create bookable classes each with their own capacity/availability.
-				![Screenshot 2022 03 09 At 16.09.08](https://www.fooevents.com/wp-content/uploads/2022/03/Screenshot-2022-03-09-at-16.09.08.png)
-				## Sell access to an unlimited number of courses, classes or workshops directly from your WordPress website
-				We've developed a suite of tools that make it possible to offer enrollment for a variety of courses and classes. This includes bookable classes, single-day training seminars and workshops or courses that span over multiple days.
-				![Training](https://www.fooevents.com/wp-content/uploads/2022/03/training.png)
-				### Training / Workshop
-				[Try the demo](https://demo.fooevents.com/product/training/)
-				![Cooking Class](https://www.fooevents.com/wp-content/uploads/2022/03/cooking-class.png)
-				### Cooking Class
-				[Try the demo](https://demo.fooevents.com/product/cooking-class/)
-				![3D Printing](https://www.fooevents.com/wp-content/uploads/2022/03/3d-printing.png)
-				### 3D Printing Course
-				[Try the demo](https://demo.fooevents.com/product/course/)
-				![Yoga Fitness Class](https://www.fooevents.com/wp-content/uploads/2022/03/yoga-fitness-class.png)
-				### Yoga / Fitness Classes
-				[Try the demo](https://demo.fooevents.com/product/fitness-classes/) | [Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/yoga-fitness-classes/)
-				## Sell access to physical, virtual or hybrid classes
-				FooEvents connects securely to your Zoom account and can automatically pre-register attendees for once-off or recurring Zoom meetings and webinars when they purchase access on your website. Hybrid classes (physical and virtual) are possible too!
-				![Virtual Art Class](https://www.fooevents.com/wp-content/uploads/2022/03/virtual-art-class.png)
-				### Virtual Art Classes
-				[Try the demo](https://demo.fooevents.com/product/virtual-art-class/) | [Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/virtual-art-classes/)
-				![Virtual Pilates Class](https://www.fooevents.com/wp-content/uploads/2022/03/virtual-pilates-class.png)
-				### Virtual Pilates Classes
-				[Try the demo](https://demo.fooevents.com/product/virtual-pilates-classes/) | [Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/bookable-and-virtual-pilates-classes/)
-				![Virtual Yoga Class](https://www.fooevents.com/wp-content/uploads/2022/03/virtual-yoga-class.png)
-				### Virtual Yoga Class
-				[Try the demo](https://demo.fooevents.com/product/virtual-group-yoga-class/) | [Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/virtual-yoga-class/)
-				![Virtual Bookable Consult](https://www.fooevents.com/wp-content/uploads/2022/03/virtual-bookable-consult.png)
-				### Bookable Virtual Consult
-				[Try the demo](https://demo.fooevents.com/product/bookable-virtual-consult/)
-				## Capture critical student information
-				Your attendee data is the heart of your business and FooEvents ensures that this information is stored safely and accessible to you through various purpose-built channels.
-				![Fooevents Ticket](https://www.fooevents.com/wp-content/uploads/2020/11/fooevents-ticket.png)
-				## No more clumsy clipboards! Use the FooEvents Check-ins app to manage your schedule and student attendance.
-				![Fooevents App Bookings](https://www.fooevents.com/wp-content/uploads/2020/11/fooevents-app-bookings.png)
-				## Sell and print tickets at the door
-				[FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) is a web-based point of sale plugin and can be used to sell and print tickets at the door of your venue. You can also use FooEvents POS to sell physical products such as merchandise, food and beverages.
-				![Woocommerce Tickets](https://www.fooevents.com/wp-content/uploads/2022/11/fooevents_pos_laptop-1024x541.png)
-				[Watch our 5 minute tour of FooEvents POS](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE2MzgxNiIsInRvZ2dsZSI6ZmFsc2V9)
-				## Automatically onboard your students and provide them with course material using Mailchimp
-				FooEvents integrates seamlessly with Mailchimp and includes the ability to automatically add your students to a Mailchimp audience list when they enroll. Send welcome packs, automated class reminders, course material and communicate important announcements and changes.
-				## Limited capacity? Let your students book their own seats using a visual seating chart
-				Customize the colors of the seats to perfectly match the design of your website and block seats according to health and safety requirements.
-				![Fooevents Seating Selector](https://www.fooevents.com/wp-content/uploads/2021/02/fooevents-seating-selector.png)
-				## How do I get started?
-				First, you will need to purchase a FooEvents license and download the FooEvents plugins. You can then install the plugins on your WordPress site, setup your event, and start selling tickets.
-				[See Bundle Options](https://www.fooevents.com/pricing/)
-				[What is WordPress?](https://help.fooevents.com/docs/topics/installation/installing-wordpress/) | [What is WooCommerce?](https://help.fooevents.com/docs/topics/installation/installing-woocommerce/)
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/events/) for
-more detailed information.
+### Duplicate check-in prevention
+
+Prevent the same ticket from being used more than once and reduce the risk of copied, reused, or incorrect tickets being accepted.
+
+### Free iOS and Android check-ins app
+
+Use the free [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/) for iOS and Android to manage event entry from phones and tablets at the door, registration desk, or event entrance.
+
+### Browser-based Express Check-in
+
+Use [FooEvents Express Check-in](https://www.fooevents.com/products/fooevents-express-check-in/) to check in attendees from a fast, browser-based interface without needing the mobile app. Ideal for laptops, tablets, desktop registration desks, or teams that prefer a web-based workflow.
+
+### Standard event check-ins
+
+Check in attendees for once-off events such as workshops, shows, conferences, fundraisers, parties, tours, and general admission events.
+
+### Booking slot check-ins
+
+Manage check-ins based on the attendee’s selected booking date and time slot when using [FooEvents Bookings.](https://www.fooevents.com/products/fooevents-bookings/) Ideal for tours, classes, appointments, activities, and scheduled experiences.
+
+### Multi-day event check-ins
+
+Manage attendance across events that run over multiple days using [FooEvents Multi-day](https://www.fooevents.com/products/fooevents-multi-day/), such as conferences, festivals, retreats, expos, and training programs.
+
+### Seating check-ins
+
+Validate tickets linked to specific seats when using [FooEvents Seating](https://www.fooevents.com/products/fooevents-seating/), so staff can confirm attendees are checked in for the correct seated event and ticket.
+
+### Multiple devices and staff
+
+Use multiple devices with the FooEvents Check-ins app at different entrances, registration desks, or access points to speed up entry and reduce bottlenecks.
+
+### Offline check-ins
+
+Continue checking in attendees with the FooEvents Check-ins app even when the internet connection is unreliable, then sync check-in data when a connection is available again.
+
+### Sync check-in data
+
+Keep check-in records updated between the [FooEvents Check-ins app](https://www.fooevents.com/products/apps/) and your WooCommerce store so attendance data stays aligned.
+
+### Event-specific ticket filtering
+
+Filter tickets by event so staff only see the attendees relevant to the event they are working on. This is available in the FooEvents Check-ins app and Express Check-in.
+
+### Attendee details at the door
+
+View important attendee information during check-in, including name, ticket details, event details, booking information, seat details, and order information. This is available in the FooEvents Check-ins app and Express Check-in.
+
+### Custom attendee field data
+
+View additional attendee information collected during checkout when using FooEvents Custom Attendee Fields, such as dietary requirements, access needs, company names, T-shirt sizes, or event-specific details.
+
+### Browser-based check-ins
+
+Check in attendees from a browser using WordPress admin tools or [FooEvents Express Check-in](https://www.fooevents.com/products/fooevents-express-check-in/), giving event managers a flexible alternative to the mobile app.
+
+### Check-in lists
+
+View attendee lists and manage check-in statuses from a centralized interface.
+
+### Filter past tickets
+
+Control how many past tickets are loaded in the FooEvents Check-ins app, helping improve performance and keeping staff focused on relevant tickets.
+
+### Attendance tracking
+
+Track which attendees arrived and which tickets were checked in for reporting, support, planning, and post-event follow-up.
+
+### Team access and permissions
+
+Allow event staff to access check-in tools without giving them unnecessary control over the full WooCommerce store.
+
+### Order check-ins
+
+Check in all tickets linked to the same order in one action, instead of scanning each attendee separately. This is ideal for tour operators, group bookings, family activities, and experiences where one person buys multiple tickets for a group arriving together.
+
+Frequently Asked Questions
+
+## Frequently asked questions
+
+Get answers to common questions about scanning tickets, using the Check-ins app, managing duplicate entries, and checking in attendees across different event types.
+
+### Can I check in attendees without using the mobile app?
+
+Yes. FooEvents Express Check-in provides a browser-based check-in option, which is ideal for laptops, tablets, desktop registration desks, or teams that prefer not to use the mobile app.
+
+### Can I use multiple devices or staff members for check-ins?
+
+Yes. Multiple staff members can use the FooEvents Check-ins app at different entrances, registration desks, or access points to help speed up entry and reduce queues.
+
+### What happens if the same ticket is scanned twice?
+
+FooEvents shows the ticket’s check-in status, so staff can see if a ticket has already been checked in and help prevent duplicate entries.
+
+### Can I check in attendees for bookings, multi-day events, or seated events?
+
+Yes. FooEvents supports check-ins for standard events, bookable events, multi-day events, and seated events, so you can manage attendance based on your event setup.
+
+### Which mobile phones work best with the FooEvents Check-ins app?
+
+The FooEvents Check-ins app uses your phone’s camera and the operating system’s built-in scanning libraries. This means scanning speed and accuracy depend largely on the quality of the device, camera, and processor. In general, higher-end smartphones, especially newer iPhones, tend to perform best.
+
+### What languages does the FooEvents Check-ins app support?
+
+The FooEvents Check-ins app currently supports English, Afrikaans, Arabic, Chinese (Simplified), Czech, Dutch, French, German, Greek, Hebrew, Hindi, Hungarian, Italian, Malay, Portuguese, Russian, Spanish, and Swedish.
+
+You can change your language preferences in your device settings to use the app in one of the supported languages.
 
 ---
 
-## Turn your events, venues and bookable services into products that sell
+## Turn your events into products that sell
 
 **Source:** [https://www.fooevents.com/features/events/](https://www.fooevents.com/features/events/)
 
-## Next
-				## Prev
-				## Events
-				# Turn your events, venues and bookable services into products that sell
-				## Your events and services are digital products.  This is the basic premise behind FooEvents and it's what makes it possible to leverage WordPress and the WooCommerce ecosystem to create powerful event and ticketing websites in record time. No coding, no ticket fees, no commission!
-				### FooEvents works perfectly on any WooCommerce friendly theme, no customization needed!
-				### Create and manage bookable events, services and venues.
-				### Easily configure FooEvents for almost any type of event or bookable service.
-				![Screen Shot 2020 11 05 At 1.40.42 Pm](https://www.fooevents.com/wp-content/uploads/2020/11/Screen-Shot-2020-11-05-at-1.40.42-PM-1024x453.png)
-				### What kind of events does FooEvents support?
-				FooEvents can be used to sell tickets to [conferences](https://www.fooevents.com/features/conferences/), [concerts & shows](https://www.fooevents.com/features/shows/), [virtual events](https://www.fooevents.com/features/virtual-events/), [Courses, Classes & Training](https://www.fooevents.com/features/courses-classes-training/), [venue & event bookings](https://www.fooevents.com/features/shows/), [sports events](https://www.fooevents.com/features/sports-events/), and loads more. Visit our [event demo site](https://demo.fooevents.com/) to see firsthand how FooEvents can be used to make ticket sales a breeze.
-				### Single-day Events
-				Offer once-off events that take place on a specific date.
- *(included in the FooEvents for WooCommerce**core**plugin)*
-				- [View Examples](https://demo.fooevents.com/product-tag/single-day-events/)
-- [FooEvents for WooCommerce](https://www.fooevents.com/products/fooevents-for-woocommerce/)
-				### Multi-day Events
-				These are events that take place over multiple days such as festivals and large seminars.
-				- [View Examples](https://demo.fooevents.com/shop/?filter_features=fooevents-multi-day)
-- [FooEvents Multi-day Plugin](https://www.fooevents.com/products/fooevents-multi-day/)
-				### Seating Events
-				Let attendees select their own seats based on preferences and the layout of your venue.
-				- [View Examples](https://demo.fooevents.com/shop/?filter_features=fooevents-seating)
-- [FooEvents Seating Plugin](https://www.fooevents.com/products/fooevents-seating/)
-				### Bookable Events
-				Offer bookings for both physical and virtual events, venues, classes and services.
-				- [View Examples](https://demo.fooevents.com/shop/?filter_features=fooevents-bookings)
-- [FooEvents Bookings Plugin](https://www.fooevents.com/products/fooevents-bookings/)
-				### Do I pay commission or ticket fees?
+Events
+
+# Turn your events into products that sell
+
+Your events and services are digital products. This is the basic premise behind FooEvents and it’s what makes it possible to leverage WordPress and the WooCommerce ecosystem to create powerful event and ticketing websites in record time. No coding, no ticket fees, no commission!
+
+### Sell tickets from your own website
+
+FooEvents lets you sell event tickets directly from your WordPress website, giving you full control over your checkout, customer data, payments, branding, and ticket revenue.
+
+### Create events for different formats
+
+Run simple one-day events or build more advanced setups for conferences, classes, shows, sports fixtures, fundraisers, virtual events, and more.
+
+### No commission or ticket fees
+
+Payments are processed through your chosen WooCommerce payment gateway, so there are no per-ticket commission fees from FooEvents.
+
+[Overview](#overview)
+
+[Features](#features)
+
+[FAQs](#faqs)
+
+![conferences](https://www.fooevents.com/wp-content/uploads/2026/07/conferences.png)Events 2
+
+## Run events directly from WooCommerce
+
+FooEvents works differently from traditional event platforms by turning WooCommerce products into fully functional events. This means you can use the power and flexibility of WooCommerce to sell tickets, take bookings, manage attendees, accept payments, send tickets, and control the entire event experience from your own WordPress website.
+
+Features
+
+## Everything You Needto Manage Events
+
+1Explore the tools that help you create, configure, display, and manage events directly from your WooCommerce store.
+
+### Unlimited events and tickets
+
+Create an unlimited number of events and sell unlimited tickets with any FooEvents license. Licenses are based on the number of websites where FooEvents is installed, not the number of events or tickets sold.
+
+### Sell tickets, products, and digital goods together
+
+Use WooCommerce to sell event tickets, physical products, digital downloads, and other products from the same online store.
+
+### Support for free events
+
+Sell tickets or register attendees for free events. Attendees will be issued tickets and registered on your system which is great for building a database and post event analysis.
+
+### Works with WooCommerce themes
+
+FooEvents uses WooCommerce product templates, so your event pages work with most WooCommerce-compatible themes and can be customized to match your website.
+
+### Custom event pages
+
+Each event has its own product page with a unique URL. Depending on your setup, event pages can include descriptions, images, event information, maps, ticket options, variations, and related products.
+
+### Custom event terminology
+
+Replace default FooEvents wording with terms that match your event or industry. For example, change “attendees” to “participants,” “students,” “guests,” or “customers.”
+
+### Multilingual support
+
+FooEvents includes language files for Afrikaans, Catalan, Czech, German, Spanish, French, Italian, Dutch, and Portuguese.
+
+### Custom translations
+
+Modify the included translations or create your own custom language files to match your site’s language requirements.
+
+### Translation plugin compatibility
+
+FooEvents is compatible with popular multilingual WordPress plugins including [TranslatePress](https://help.fooevents.com/docs/topics/translations/translatepress/) and [WPML](https://help.fooevents.com/docs/topics/translations/wpml/).
+
+### Runs on your own website
+
+FooEvents runs on your own WordPress and WooCommerce website. Your event, customer, order, ticket, and attendee data stays in your own database.
+
+### Automatic event expiry
+
+Set events to expire on a specific date. You can disable ticket sales or hide the event from your website once it has expired.
+
+### WordPress Multisite support
+
+Use FooEvents on WordPress Multisite networks, allowing multiple sites or clients to create and manage their own events.
+
+### Event calendars
+
+Display events in a calendar format using the [FooEvents Calendar](https://www.fooevents.com/products/fooevents-calendar/) extension. Calendars can be added to posts and pages using shortcodes or widgets.
+
+### Bookable dates and time slots
+
+Use [FooEvents Bookings](https://www.fooevents.com/products/fooevents-bookings/) to sell bookable events, venues, classes, appointments, tours, and services. Customers can view availability and book a date or time slot online.
+
+### Multi-day events and daily check-ins
+
+Use [FooEvents Multi-day](https://www.fooevents.com/products/fooevents-multi-day/) to sell tickets for events that run over multiple calendar or sequential days, with separate check-ins for each day.
+
+### Seating charts
+
+Use [FooEvents Seating](https://www.fooevents.com/products/fooevents-seating/) to create visual seating charts where attendees can view available seats and select their own seats during the purchase process.
+
+### Demo events
+
+Explore the [FooEvents demos](https://demo.www.fooevents.com/) to see how different event types, booking setups, seating layouts, ticket options, and check-in workflows can be configured.
+
+### Labels, badges, and wristbands
+
+Print custom name tags, wristbands, tickets, badges, and personalized labels using a drag-and-drop layout interface.
+
+Frequently Asked Questions
+
+## Got questions about using FooEvents for events?
+
+Find answers to common questions about creating events, choosing event types, and managing event settings in FooEvents.
+
+### Do I pay commission or ticket fees?
 
 Nope! Tickets and bookings are sold directly from your own website and payments are processed via any payment gateway that WooCommerce supports. Whether you sell 10 or 10,000 tickets, all your revenue belongs to you!
 
@@ -352,17 +622,13 @@ Absolutely. Attendees will be issued tickets and registered in your WooCommerce 
 
 FooEvents works seamlessly with the majority of WooCommerce compatible themes, meaning you have countless options to choose from when jazzing up your store and marketing your events to customers. The event page uses WooCommerce templates which makes it easy to customize and make your own.
 
-### What languages does FooEvents support?
-
-The FooEvents plugins come bundled with language files for *Afrikaans*, *Catalan*, *Czech*, *German*, *Spanish*, *French*, *Italian*, *Dutch*, and *Portuguese*. These translations are available if your WordPress site is set to any of these languages or locales.
-
 ### Can I translate FooEvents to a different language?
 
-Yes, you can modify the translations that are bundled with the FooEvents plugins or you can create your own [custom language files](https://help.fooevents.com/docs/topics/translations/language-files/).
+Yes, you can modify the translations that are bundled with the FooEvents plugins or you can create your own [custom language files](https://help.fooevents.com/docs/topics/translations/language-files/).
 
 ### Is FooEvents compatible with translation plugins?
 
-FooEvents is compatible with [TranslatePress](https://help.fooevents.com/docs/topics/translations/translatepress/) and [WPML](https://help.fooevents.com/docs/topics/translations/wpml/?_gl=1*18uypjd*_gcl_au*NzQ5NTQ4OTY0LjE3NTMwNzk0ODA.), popular WordPress multilingual plugins that let you translate your website content into multiple languages.
+FooEvents is compatible with [TranslatePress](https://help.fooevents.com/docs/topics/translations/translatepress/) and [WPML](https://help.fooevents.com/docs/topics/translations/wpml/?_gl=1*18uypjd*_gcl_au*NzQ5NTQ4OTY0LjE3NTMwNzk0ODA.), popular WordPress multilingual plugins that let you translate your website content into multiple languages.
 
 ### What information is displayed on the event page?
 
@@ -408,26 +674,34 @@ Yes, you can create and manage visual seating charts where attendees can view wh
 
 **See required plugin →**
 
-### Take FooEvents for a test drive
-
-Try out one of the demos below to experience first-hand just how flexible FooEvents really is.
-				[Standard Events](https://demo.fooevents.com/product-category/standard/)
-				[Virtual Events](https://demo.fooevents.com/product-category/virtual-events/)
-				[Bookable Events](https://demo.fooevents.com/product-category/bookings/)
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/events/) for
-more detailed information.
-				[← Start](https://www.fooevents.com/features/) — [Tickets →](https://www.fooevents.com/features/tickets/)
-
 ---
 
 ## Download the FooEvents Features Fact Sheet
 
 **Source:** [https://www.fooevents.com/features/fact-sheet/](https://www.fooevents.com/features/fact-sheet/)
 
-### Print-Friendly PDF
-				# Download the FooEvents Features Fact Sheet
-				Do you need to convince your client or team that FooEvents is the best fit for your project? Or perhaps you just want to review what FooEvents can offer over a cup of coffee. The FooEvents Fact Sheet includes all our most popular features and is a handy guide to help you determine if FooEvents is the right platform for your needs.**Please complete the form below and you will immediately receive an email that includes a download link for the FooEvents Features Fact Sheet. If you haven’t received it within a few minutes, please check your spam or junk folder.**
-				![loader](https://www.fooevents.com/wp-includes/images/spinner.gif)
+Print-Friendly PDF
+
+# Download the FooEvents Features Fact Sheet
+
+Need to show your client or team why FooEvents is a good fit for your project? Download the fact sheet and get:
+
+A quick overview of FooEvents and how it works
+
+A summary of our most popular features
+
+Key benefits for ticket sales, attendee management, and check-ins
+
+A simple way to compare FooEvents with your project requirements
+
+A handy resource for client proposals, team discussions, and planning sessions
+
+Please complete the form below and you will immediately receive an email that includes a download link for the FooEvents Features Fact Sheet. If you haven’t received it within a few minutes, please check your spam or junk folder.
+
+                    
+					                
+				
+			![loader](https://www.fooevents.com/wp-includes/images/spinner.gif)
 				
 				
                 
@@ -452,112 +726,107 @@ We use Brevo as our marketing platform. By submitting this form you agree that t
 
 ---
 
-## Offer online and in-person bookings for your venue, activity or service business
-
-**Source:** [https://www.fooevents.com/features/general-admission/](https://www.fooevents.com/features/general-admission/)
-
-### Activities & General Admission
-				# Offer online and in-person bookings for your venue, activity or service business
-				### Increase booking conversions by enabling customers to book their spot directly from your WordPress website.No phone calls or emails, 100% self-service.
-				[See Pricing Options](https://www.fooevents.com/pricing/)
-				**Need help getting started?**
-[Complete our Solution Builder Quiz and get 20% off!](https://www.fooevents.com/promo/quiz/?ref=lp-admissions)
-				### FooEvents works perfectly with any WooCommerce-friendly theme – no extra customization required!
-				### Use WooCommerce variations to offer different ticket types at different price points.
-				![Theme Park Access](https://www.fooevents.com/wp-content/uploads/2022/02/theme-park-access-1024x473.jpg)
-				![Marlin Museum Of Bicycling](https://www.fooevents.com/wp-content/uploads/2024/09/Marlin-Museum-of-Bicycling.png)
-				![Grand Haven Coast Guard](https://www.fooevents.com/wp-content/uploads/2024/09/Grand-Haven-Coast-Guard.png)
-				![Saatchi Gallery](https://www.fooevents.com/wp-content/uploads/2024/09/Saatchi-Gallery.png)
-				![St Albans City Football](https://www.fooevents.com/wp-content/uploads/2024/09/St-Albans-City-Football.png)
-				![Fort Bravo](https://www.fooevents.com/wp-content/uploads/2024/09/Fort-Bravo.png)
-				![Stircrazycooking](https://www.fooevents.com/wp-content/uploads/2024/09/StirCrazyCooking.png)
-				### Streamline the booking process and increase revenue
-				If you're not currently offering online bookings, you're missing out on a massive opportunity to increase sales and ensure that your activity or venue is fully booked. Here are a few examples of activities that can be booked online using FooEvents.
-				![Waterpark](https://www.fooevents.com/wp-content/uploads/2022/02/waterpark.jpg)
-				#### Waterpark
-				Sell multiple ticket variations such as VIP,  Pensioner, Adult, Child, Free etc.
-				![Kids Party](https://www.fooevents.com/wp-content/uploads/2022/03/kids-party.jpg)
-				#### Party Venue Booking
-				Let your customers check availability on your website and book a suitable space or time slot.
-				![Museum Booking](https://www.fooevents.com/wp-content/uploads/2022/02/museum-booking.jpg)
-				#### Museum Bookings
-				Sell tickets online and scan ticket QR codes at the entrance using the FooEvents Check-ins app.
-				![Bus Tour](https://www.fooevents.com/wp-content/uploads/2022/04/bus-tour.png)
-				#### Bus Tour
-				Use FooEvents and the FooEvents Check-ins app to manage ticket sales and check-ins for your tours.
-				![People Doing A Kayak Tour](https://www.fooevents.com/wp-content/uploads/2023/01/kayak-tour.jpg)
-				#### Kayak Tour
-				Offer seamless bookable tour experiences and ensure that all attendees are accounted for.
-				![Aquarium Entry](https://www.fooevents.com/wp-content/uploads/2023/01/Aquarium-Entry.jpg)
-				#### Aquarium Entry
-				Manage streamlined attendee access for both online and in-person bookings.
-				![Theme Park](https://www.fooevents.com/wp-content/uploads/2022/02/theme-park.jpg)
-				#### Theme Park Access
-				Enjoy seamless ticket sales and admissions to your entertainment venue, from start to finish.
-				![Scooter Rental](https://www.fooevents.com/wp-content/uploads/2023/01/scooter-rental.jpg)
-				#### Scooter Rental
-				Let your customers book tourist activities for a specific date and time slot.
-				![Outdoor Adventure](https://www.fooevents.com/wp-content/uploads/2022/02/outdoor-adventure.jpg)
-				#### Outdoor Adventure
-				Offer bookable outdoor activities and use FooEvents to manage the itinerary.
-				![Physiotherapy Session](https://www.fooevents.com/wp-content/uploads/2023/01/Physiotherapy-Session.jpg)
-				#### Physiotherapy Session
-				Manage your schedule and ensure that all booking slots are sold well in advance.
-				![Swimming Pool](https://www.fooevents.com/wp-content/uploads/2022/03/swimming-pool.jpg)
-				#### Swimming Pool Booking
-				Integrate with hundreds of different WooCommerce plugins to create a bespoke booking solution.
-				![Food Fair](https://www.fooevents.com/wp-content/uploads/2022/03/food-fair.jpg)
-				#### Food Fair
-				FooEvents can be used for events that repeat on multiple dates or one-off functions.
-				### Sell and print tickets at the door or on the go
-				In addition to accepting online bookings, you can also accept bookings at your venue or activity using [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/), which is a web-based point of sale (POS) plugin that can be used to sell and print bookings or tickets at the door. You can also use FooEvents POS to sell physical products such as merchandise, food and beverages.
-				![Woocommerce Tickets](https://www.fooevents.com/wp-content/uploads/2022/11/fooevents_pos_laptop-1024x541.png)
-				[Watch our 5 minute tour of FooEvents POS](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE2MzgxNiIsInRvZ2dsZSI6ZmFsc2V9)
-				### Say goodbye to long, snaking lines!
-				Manage venue access using the free [FooEvents Check-ins app](https://www.fooevents.com/features/apps/) or the [FooEvents Express Check-ins](https://www.fooevents.com/products/fooevents-express-check-in/) plugin. Scan ticket barcodes and QR codes and speed up the admission process. If you sell bookings for an activity or service, use the apps to manage attendance and the itinerary.
-				![Fooevnets Check Ins App Booking](https://www.fooevents.com/wp-content/uploads/2022/03/fooevnets-check-ins-app-booking.png)
-				### Capture critical attendee information
-				Your attendee data is at the heart of your business and FooEvents ensures that this information is stored safely and accessible to you through various purpose-built channels, including Mailchimp and AutomateWoo.
-				![Fooevents Ticket Viewed Via The Wordpress Admin Area](https://www.fooevents.com/wp-content/uploads/2020/11/fooevents-ticket-1.png)
-				### Good decisions are based on good data
-				FooEvents provides real-time reports which integrate seamlessly with your WooCommerce sales reports so you always know how your sales and events are performing.
-				![Screen Shot 2020 11 06 At 11.26.35 Am](https://www.fooevents.com/wp-content/uploads/2020/11/Screen-Shot-2020-11-06-at-11.26.35-AM-1024x523.png)
-				### How do I get started?
-				First, you will need to purchase a FooEvents license and download the FooEvents plugins. You can then install the plugins on your WordPress site, setup your event, and start selling tickets.
-				[See Bundle Options](https://www.fooevents.com/pricing/)
-				[What is WordPress?](https://help.fooevents.com/docs/topics/installation/installing-wordpress/) | [What is WooCommerce?](https://help.fooevents.com/docs/topics/installation/installing-woocommerce/)
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/events/) for
-more detailed information.
-
----
-
 ## Make informed decisions based on event and ticket reports
 
 **Source:** [https://www.fooevents.com/features/insights/](https://www.fooevents.com/features/insights/)
 
-## Next
-				## Prev
-				## Insights
-				# Make informed decisions based on event and ticket reports
-				## FooEvents provides real-time event and ticket reports which integrate seamlessly with your WooCommerce sales reports so you always know how your events are performing and can make informed data-driven business decisions.
-				![Screen Shot 2020 11 06 At 11.26.35 Am](https://www.fooevents.com/wp-content/uploads/2020/11/Screen-Shot-2020-11-06-at-11.26.35-AM-1024x523.png)
-				### View attendee check-ins using FooEvents Reports
-				### Seamlessly navigate between orders, events and tickets
-				### View critical sales data using WooCommerce Analytics
-				### Event Reports
+Insights
 
-Get a better understanding of your ticket sales and event performance. View event revenue, tickets sold, check-ins, available tickets and more.
+# Make informed decisions based on event and ticket reports
+
+FooEvents provides real-time event and ticket reports which integrate seamlessly with your WooCommerce sales reports so you always know how your events are performing and can make informed data-driven business decisions.
+
+### Know how your event is performing
+
+FooEvents gives you useful event data so you can track ticket sales, revenue, attendance, check-ins, check-outs, and overall event performance from your WordPress dashboard.
+
+### See what’s sold and what’s still available
+
+View ticket totals, available tickets, and sales activity to understand demand, monitor capacity, and make better decisions before and during your event.
+
+### Track attendance activity
+
+Review check-in and check-out information, including timestamps and activity data, so you can understand attendance patterns and keep better event records.
+
+[Overview](#overview)
+
+[Features](#features)
+
+[FAQs](#faqs)
+
+![analytics](https://www.fooevents.com/wp-content/uploads/2026/07/analytics.png)Insights 2
+
+## Run events directly from WooCommerce
+
+FooEvents turns WooCommerce products into fully functional events. This means you can use WooCommerce Analytics to track event revenue, monitor ticket sales, review order performance, compare sales over time, and better understand how your events are performing from your own WordPress website.
+
+Features
+
+## Event Data You Can Actually Use
+
+Explore the reporting, export, attendance, and WooCommerce data tools that help you understand performance and manage your events with confidence.
+
+### Event reports
+
+View key event performance data such as revenue, tickets sold, check-ins, available tickets, and overall attendance activity.
+
+### Ticket sales tracking
+
+Track how many tickets have been sold for each event and monitor remaining ticket availability.
+
+### Check-in reporting
+
+Review attendee check-in totals to understand turnout and compare tickets sold against actual attendance.
+
+### Revenue reporting
+
+Monitor event revenue and sales performance using FooEvents event reports and WooCommerce order data.
 
 ### WooCommerce Analytics
 
-With WooCommerce Analytics, you will always know how your store is performing in realtime or historically using graphs and stats.
+Use WooCommerce Analytics to view store performance, sales trends, revenue, orders, and product activity over time.
 
-### Order Management
+### Online and in-person sales reporting
 
-WooCommerce orders are generated each time a ticket is sold. Orders are linked to your tickets and contain billing information and product data.
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/events/reports/) for
-more detailed information.
-				[← WooCommerce](https://www.fooevents.com/features/woocommerce/) — [Integrations →](https://www.fooevents.com/features/integrations/)
+Track online and POS ticket sales through WooCommerce orders and reporting tools, depending on your sales setup.
+
+### Order management
+
+Each ticket sale creates a WooCommerce order that is linked to the relevant tickets and includes billing details, customer information, and product data.
+
+### Linked tickets and orders
+
+View the relationship between WooCommerce orders, tickets, and attendees so event and sales information stays connected.
+
+### Exportable data
+
+Use WooCommerce and FooEvents exports to download order, attendee, ticket, and check-in data for reporting, reconciliation, or external analysis.
+
+Frequently Asked Questions
+
+## Frequently asked questions
+
+Find answers about tracking attendance, exporting data, viewing sales reports, and using event information for planning and follow-ups.
+
+### What insights can I get from FooEvents?
+
+FooEvents helps you track key event information such as ticket sales, attendee details, check-in status, booking details, seating allocations, and order activity. Since FooEvents works with WooCommerce, you can also use WooCommerce reports and compatible analytics tools to monitor revenue, sales trends, and customer activity.
+
+### Can I see who has checked in to my event?
+
+Yes. You can track which attendees have checked in and which tickets are still unchecked. This makes it easier to monitor attendance during the event and review turnout afterwards.
+
+### Can I export attendee and ticket information?
+
+Yes. FooEvents allows you to export attendee and ticket information, which can be useful for reporting, event planning, customer support, reconciliation, and sharing data with your team.
+
+### Can I view sales and revenue reports?
+
+Yes. Ticket sales are processed through WooCommerce, so you can use WooCommerce’s built-in reporting tools, as well as compatible reporting and analytics extensions, to track sales, revenue, coupon usage, refunds, and order activity.
+
+### Where is my event data stored?
+
+Your event, ticket, attendee, order, and customer data is stored on your own WordPress website. FooEvents does not store your customer data on an external FooEvents platform.
 
 ---
 
@@ -565,224 +834,129 @@ more detailed information.
 
 **Source:** [https://www.fooevents.com/features/integrations/](https://www.fooevents.com/features/integrations/)
 
-## Next
-				## Prev
-				## Integrations
-				# We play nicely with others!
-				## Since FooEvents is a WooCommerce plugin, you can make use of thousands of WordPress and WooCommerce plugins and services that extend the functionality of your website and work seamlessly with FooEvents.
-				### Translation Compatible
+Integrations
+
+# We play nicely with others!
+
+Since FooEvents is a WooCommerce plugin, you can make use of thousands of WordPress and WooCommerce plugins and services that extend the functionality of your website and work seamlessly with FooEvents.
+
+### Work with your existing setup
+
+FooEvents is built for WordPress and WooCommerce, so your events can connect with the tools you already use for payments, orders, emails, customers, coupons, taxes, and reporting.
+
+### Support smarter event communication
+
+Use integrations with tools such as Mailchimp and AutomateWoo to help manage attendee communication, reminders, follow-ups, and event-related automation.
+
+### Connect virtual events with Zoom
+
+Link events to Zoom meetings or webinars and automatically register attendees when they purchase tickets, making it easier to manage virtual and hybrid events.
+
+[Integrations](#features)
+
+[FAQs](#faqs)
+
+FooEvents Integrations
+
+## Flexible Integrations for Real-world Events
+
+See how FooEvents can work with WooCommerce-compatible tools, automation platforms, marketing systems, accounting software, and custom integrations.
+
+### WooCommerce Checkout Blocks Compatibility
+
+Collect attendee information before checkout using the FooEvents Attendee Details page, with support for modern WooCommerce Checkout Block workflows.
+
+### Translation Compatible
 
 FooEvents is compatible with TranslatePress and WPML, popular WordPress multilingual plugins that let you translate your website content into multiple languages.
 
-**TranslatePress | WPML**
+[TranslatePress](https://help.fooevents.com/docs/topics/translations/translatepress/)
+
+[WPML](https://help.fooevents.com/docs/topics/translations/wpml/)
 
 ### WooCommerce AutomateWoo Integration
 
 FooEvents integrates with WooCommerce AutomateWoo which is a great solution for sending pre-scheduled email reminders and text messages.
 
-[Find out more →](https://help.fooevents.com/docs/topics/third-party-integration/automatewoo/)
+[Find out more](https://help.fooevents.com/docs/topics/third-party-integration/automatewoo/)
 
 ### AddToWallet Integration
 
 FooEvents integrates with AddToWallet to allow your attendees to add FooEvents tickets with QR codes to Apple Wallet or Google Wallet on their mobile devices.
 
-[Find out more →](https://help.fooevents.com/docs/topics/third-party-integration/addtowallet/)
+[Find out more](https://help.fooevents.com/docs/topics/third-party-integration/addtowallet/)
 
 ### Mailchimp Integration
 
 Automatically add your attendees to a Mailchimp audience list when tickets are generated. You can also specify default tags or event-specific tags that can be used to segment your Mailchimp list.
 
-[Find out more →](https://help.fooevents.com/docs/topics/third-party-integration/mailchimp/)
+[Find out more](https://help.fooevents.com/docs/topics/third-party-integration/mailchimp/)
 
 ### Eventbrite Integration
 
 Automatically add events created in FooEvents to your Eventbrite account or import events created in Eventbrite to FooEvents.
 
-[Find out more →](https://help.fooevents.com/docs/topics/events/global-settings/#integration)
+[Find out more](https://help.fooevents.com/docs/topics/events/global-settings/#integration)
 
 ### WooCommerce Subscriptions Integration
 
 FooEvents is fully compatible with WooCommerce Subscriptions and it’s possible to prevent new tickets from being created each time a subscription is renewed through a setting.
 
-[Find out more →](https://help.fooevents.com/docs/topics/events/global-settings/#integration)
+[Find out more](https://help.fooevents.com/docs/topics/events/global-settings/#integration)
 
 ### Popular Third-Party Plugins
 
 FooEvents is compatible with thousands of WordPress and WooCommerce plugins. Visit our Help Center to see some of the most popular plugins used with FooEvents.
 
-**See plugins →**
+[See plugins](https://help.fooevents.com/docs/topics/third-party-integration/)
 
 ### FooSales POS
 
 FooSales is a secure point of sale (POS) system for WooCommerce that turns any computer, iPad or Android tablet into a cash register and makes it easy to sell your products and run your business from anywhere in the world.
 
-[Find out more →](https://www.foosales.com/)
-				[← Insights](https://www.fooevents.com/features/insights/) — [Surprise →](https://www.fooevents.com/features/offer/)
+[Find out more](https://www.foosales.com/)
 
----
+### Built-in Google Maps Integration
 
-## Sell tickets to your concert or show directly from your WordPress website
+Display venue maps and directions on your event pages using Google Maps. Add venue coordinates and map details so attendees can easily find where your event is taking place.
 
-**Source:** [https://www.fooevents.com/features/shows/](https://www.fooevents.com/features/shows/)
+[Find out more](https://help.fooevents.com/docs/topics/events/google-maps/)
 
-## Concerts & Shows
-				# Sell tickets to your concert or show directly from your WordPress website
-				## FooEvents adds powerful event and ticketing tools to your WordPress website and makes managing ticket sales and attendee access easier than ever. Whether you sell 100 or 100,000 tickets, all your revenue belongs to you! No coding, no ticket fees, no commission!
-				[See Pricing Options](https://www.fooevents.com/pricing/)
-				**Need help getting started?**
-[Complete our Solution Builder Quiz and get 20% off!](https://www.fooevents.com/promo/quiz/?ref=lp-shows)
-				### FooEvents works perfectly with any WooCommerce-friendly theme – no extra customization required!
-				### Create bookable event slots with their own separate inventory/availability.
-				![Concert Tour](https://www.fooevents.com/wp-content/uploads/2022/02/concert-tour.png)
-				![Faith Fest](https://www.fooevents.com/wp-content/uploads/2024/09/Faith-Fest.png)
-				![The Color Run](https://www.fooevents.com/wp-content/uploads/2024/09/The-Color-Run.png)
-				![Manchester Craft Beer Festival](https://www.fooevents.com/wp-content/uploads/2024/09/manchester-craft-beer-festival.png)
-				![Bristol Folk Festival](https://www.fooevents.com/wp-content/uploads/2024/09/Bristol-Folk-Festival.png)
-				![Grand Haven Coast Guard](https://www.fooevents.com/wp-content/uploads/2024/09/Grand-Haven-Coast-Guard.png)
-				## FooEvents is extremely flexible and can be used to sell tickets for a variety of different events including concerts, shows and performances.
-				![Concert](https://www.fooevents.com/wp-content/uploads/2022/02/concert.png)
-				### Once-off Concerts
-				Create multiple ticket variations such as VIP, Standard, Standing, Pensioner, Free etc.
-				![693103318](https://www.fooevents.com/wp-content/uploads/2022/02/693103318.jpeg)
-				### Theatres & Cinemas
-				Let your attendees pick their seats for your movie screening, theater show, or musical.
-				![Music Show](https://www.fooevents.com/wp-content/uploads/2022/02/music-show.png)
-				### Music Shows
-				Use FooEvents to sell tickets to an unlimited number of repeat or once-off shows.
-				![School Musical](https://www.fooevents.com/wp-content/uploads/2022/02/school-musical.png)
-				### School Musicals & Events
-				Sell tickets to your school productions and events directly from the school's WordPress website.
-				![Music Festival](https://www.fooevents.com/wp-content/uploads/2022/02/Music-Festival.jpeg)
-				### Multi-day Music Festival
-				Provide your guests with access to events that take place over multiple calendar days.
-				![Concert Tour 1](https://www.fooevents.com/wp-content/uploads/2022/02/concert-tour-1.png)
-				### Concert Tours
-				Sell access to tours and shows that take place at multiple locations and  dates.
-				![Drive In](https://www.fooevents.com/wp-content/uploads/2022/02/drive-in.png)
-				### Drive-in Cinema
-				FooEvents is perfect for venues that offer a variety of shows that take place on multiple dates.
-				## Send tickets from your WordPress website and manage venue access using the FooEvents Check-ins apps
-				You have complete control over what your tickets look like, how they are sent, the format they are sent in, and how they are used by you, your team and your customers.
-				![Scan Tickets Camera](https://www.fooevents.com/wp-content/uploads/2022/02/scan-tickets-camera.png)
-				### Scan tickets using a mobile device
-				Use the FooEvents Check-ins apps and your device's built-in camera to scan tickets.
-				![Fooevents Barcodes Scanners Cover](https://www.fooevents.com/wp-content/uploads/2021/05/fooevents-barcodes-scanners-cover.png)
-				### Scan tickets using a Bluetooth Scanner
-				The FooEvents Check-ins apps work seamlessly with Bluetooth barcode and QR code scanners.
-				![Fooevents Contactless Entry](https://www.fooevents.com/wp-content/uploads/2021/05/fooevents-contactless-entry.png)
-				### Safe Contactless Entry
-				Offer safe, contactless and fast entry for your attendees, staff and volunteers.
-				## Sell and print tickets at the door
-				[FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) is a web-based point of sale plugin and can be used to sell and print tickets at the door of your venue. You can also use FooEvents POS to sell physical products such as merchandise, food and beverages.
-				![Woocommerce Tickets](https://www.fooevents.com/wp-content/uploads/2022/11/fooevents_pos_laptop-1024x541.png)
-				[Watch our 5 minute tour of FooEvents POS](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE2MzgxNiIsInRvZ2dsZSI6ZmFsc2V9)
-				## Visual seating charts
-				Let your attendees select their own seats using a visual seating chart. Customize the colors of the seats to perfectly match the design of your website and block seats according to health and safety requirements.
-				![Fooevents Seating Selector](https://www.fooevents.com/wp-content/uploads/2021/02/fooevents-seating-selector.png)
-				## How do I get started?
-				First, you will need to purchase a FooEvents license and download the FooEvents plugins. You can then install the plugins on your WordPress site, setup your event, and start selling tickets.
-				[See Bundle Options](https://www.fooevents.com/pricing/)
-				[What is WordPress?](https://help.fooevents.com/docs/topics/installation/installing-wordpress/) | [What is WooCommerce?](https://help.fooevents.com/docs/topics/installation/installing-woocommerce/)
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/events/) for
-more detailed information.
+### Zoom Meetings and Webinars Integration
 
----
+Connect FooEvents to Zoom to link events to existing meetings or webinars, or automatically create them when needed. With supported extensions, you can also create separate Zoom sessions for multi-day events or bookable slots.
 
-## Sell race entries, spectator passes and manage sports venue bookings with FooEvents
+[Find out more](https://www.fooevents.com/features/virtual-events/)
 
-**Source:** [https://www.fooevents.com/features/sports-events/](https://www.fooevents.com/features/sports-events/)
+### Calendar App Integration (.ics)
 
-## Sports Events
-				# Sell race entries, spectator passes and manage sports venue bookings with FooEvents
-				## FooEvents makes it possible to sell tickets and entries for any type of sports event directly from your WordPress website. No coding, no ticket fees, no commission!
-				[See Pricing Options](https://www.fooevents.com/pricing/)
-				**Need help getting started?**
-[Complete our Solution Builder Quiz and get 20% off!](https://www.fooevents.com/promo/quiz/?ref=lp-conferences)
-				### FooEvents works perfectly on any WooCommerce-friendly theme with no customization required!
-				### Use WooCommerce variations to offer different ticket types at different prices and availability.
-				![Fooevents Mtb Race](https://www.fooevents.com/wp-content/uploads/2022/04/fooevents-mtb-race.png)
-				![Marlin Museum Of Bicycling](https://www.fooevents.com/wp-content/uploads/2024/09/Marlin-Museum-of-Bicycling.png)
-				![](https://www.fooevents.com/wp-content/uploads/2024/09/sabieexperiance.png)
-				![The Color Run](https://www.fooevents.com/wp-content/uploads/2024/09/The-Color-Run.png)
-				![2Dadventures 1](https://www.fooevents.com/wp-content/uploads/2024/09/2dadventures-1.png)
-				![Bar](https://www.fooevents.com/wp-content/uploads/2024/09/bar.png)
-				![St Albans City Football](https://www.fooevents.com/wp-content/uploads/2024/09/St-Albans-City-Football.png)
-				![Crossborder Cycling Logo Kleur E1663529418868](https://www.fooevents.com/wp-content/uploads/2024/09/Crossborder_cycling_logo_kleur-e1663529418868.webp)
-				## Use FooEvents for almost any type of single-day or multi-day sports event.
-				![Marathon](https://www.fooevents.com/wp-content/uploads/2022/04/marathon.png)
-				### Marathon / Race Entry
-				Offer multiple entry variations and allow athletes to enter based on their appropriate age group, distance and fitness level.
-				![Sports](https://www.fooevents.com/wp-content/uploads/2022/04/sports-fixture.png)
-				### Spectator Tickets
-				Sell tickets to your events directly from your WordPress website and manage access using the free FooEvents Check-ins apps.
-				![Mtb Race Team](https://www.fooevents.com/wp-content/uploads/2022/04/mtb-race-team.png)
-				### 3-Day Team Entry
-				Create multiple types of team entries for single-day or multi-day events. Ideal for multi-day stage race and endurance events.
-				![Outdoor Adventure](https://www.fooevents.com/wp-content/uploads/2022/02/outdoor-adventure.jpg)
-				### Bookable Activity
-				Let your customers book adventure activities for a specific date and time slot directly on your website.
-				[Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/outdoor-adventures/)
-				![Yoga Fitness Class](https://www.fooevents.com/wp-content/uploads/2022/03/yoga-fitness-class.png)
-				### Fitness Classes
-				Let your clients purchase access to classes and select the exact slots they would like to attend.
-				[Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/yoga-fitness-classes/)
-				![Esport](https://www.fooevents.com/wp-content/uploads/2022/04/esport.png)
-				### Virtual Spectator Access
-				Automatically pre-register attendees for single or multiple live streaming events using Zoom and FooEvents.
-				[Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/esports-live-streaming/)
-				![Virtual Pilates Class](https://www.fooevents.com/wp-content/uploads/2022/03/virtual-pilates-class.png)
-				### Virtual Fitness Classes
-				Sell access to virtual yoga, pilates or any other fitness classes by connecting FooEvents to Zoom.
-				[Setup Instructions](https://help.fooevents.com/docs/topics/use-cases/virtual-yoga-class/)
-				![Court Booking](https://www.fooevents.com/wp-content/uploads/2022/04/court-booking.png)
-				### Court Bookings
-				Let your customers book a court for a specific date and time slot. Charge per team or individual player.
-				## What does FooEvents do?
-				FooEvents adds the ability to sell access to single-day, multi-day, virtual, bookable, and recurring events by adding additional capabilities to WooCommerce. In addition, it adds vital tools and functionality needed to manage attendees and essential activities when putting on an event. 
+FooEvents can attach ICS calendar files to ticket emails and display “Add to calendar” links on tickets, allowing attendees to add event details to supported calendar apps. You can also configure reminder alerts for calendar entries.
 
-Here are some of the key benefits that FooEvents offers:
-				Sell tickets to fans and spectators
+Frequently Asked Questions
 
-					Let your fans purchase tickets directly on your WordPress website with no commission OR ticket fees. Tickets are sent to attendees via email and will include all the necessary event information as well as a unique 1D barcode or QR code which can be scanned to identify the attendee using the free FooEvents Check-ins app or [FooEvents Express Check-in](https://www.fooevents.com/products/fooevents-express-check-in/) extension.
-							Sell entries to athletes
+## Frequently asked questions
 
-					Athletes can sign-up for the event directly on your WordPress website which lets you capture payment and other relevant entry information such as medical details, contact information, food preferences, merchandise sizing etc. FooEvents can even connect to your Mailchimp account and automatically add participants to a Mailchimp audience list with custom tags which makes event communications a breeze.
-							Manage access to the event
+Learn what’s possible when connecting FooEvents with your website, payment setup, external systems, CRMs, email tools, and reporting platforms.
 
-					Whether you’re dealing with spectators or participants, FooEvents offers various built-in tools for managing access to your event. You can also export all attendee information as a CSV and use other tools or systems to manage people at the event.
-							Design & print your own stationery
+### How can FooEvents integrate with my website?
 
-					Design and print custom name tags, wristbands, badges, personalized labels and tickets using the FooEvents Stationery Builder’s drag & drop interface.
-							Visual seating charts
+FooEvents works directly with WordPress and WooCommerce, so it fits into your existing website instead of sending customers to a separate ticketing platform. You can manage events, tickets, payments, orders, customers, emails, and reporting from your WooCommerce store.
 
-					Let fans and spectators select their own seats using a visual seating chart. Customize the colors of the seats to perfectly match the design of your website and block seats according to health and safety requirements.
-							Real-time reporting
+### Can FooEvents connect with other systems or apps?
 
-					FooEvents provides real-time event and ticket reports which integrate seamlessly with your WooCommerce sales reports so you always know how your events are performing and can make informed business decisions based on this data.
-							Mailchimp integration
+Yes. Because FooEvents is built on WordPress and WooCommerce, it can be connected to many external tools and custom systems. This can be used to share ticket sales, attendee details, bookings, customer information, and order data with other platforms.
 
-					Automatically add spectators and participants to a Mailchimp audience list when they purchase a ticket or enter anevent. Send welcome packs, automated reminders and communicate important announcements and changes.
-							Suitable for physical, virtual or hybrid events
+### Do I need WooCommerce to use FooEvents?
 
-					FooEvents connects securely to your Zoom account and can automatically pre-register attendees for once-off or recurring Zoom meetings and webinars when they purchase access on your website. Hybrid events (physical and virtual) are possible too!
-				## Sell and print tickets at the door
-				[FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) is a web-based point of sale plugin and can be used to sell and print tickets at the door of your venue. You can also use FooEvents POS to sell physical products such as merchandise, food and beverages.
-				![Woocommerce Tickets](https://www.fooevents.com/wp-content/uploads/2022/11/fooevents_pos_laptop-1024x541.png)
-				[Watch our 5 minute tour of FooEvents POS](#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE2MzgxNiIsInRvZ2dsZSI6ZmFsc2V9)
-				## Manage spectator and athlete access
-				Manage spectator and participant access using the free [FooEvents Check-ins app](https://www.fooevents.com/features/apps/) or the [FooEvents Express Check-ins](https://www.fooevents.com/products/fooevents-express-check-in/) plugin. Scan ticket barcodes and QR codes to speed up the admission process.
-				![Fooevents Contactless Entry](https://www.fooevents.com/wp-content/uploads/2021/05/fooevents-contactless-entry.png)
-				### Safe, contactless entry for both spectators and athletes
-				Offer safe, contactless and fast entry for your attendees, staff and volunteers.
-				![Fooevents Barcodes Scanners Cover](https://www.fooevents.com/wp-content/uploads/2021/05/fooevents-barcodes-scanners-cover.png)
-				### Scan tickets using the built-in camera or a Bluetooth barcode scanner
-				The FooEvents Check-ins apps work seamlessly with Bluetooth barcode and QR code scanners.
-				## How do I get started?
-				First, you will need to purchase a FooEvents license and download the FooEvents plugins. You can then install the plugins on your WordPress site, setup your event, and start selling tickets.
-				[See Bundle Options](https://www.fooevents.com/pricing/)
-				[What is WordPress?](https://help.fooevents.com/docs/topics/installation/installing-wordpress/) | [What is WooCommerce?](https://help.fooevents.com/docs/topics/installation/installing-woocommerce/)
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/events/) for
-more detailed information.
+Yes, if you want to sell tickets, take bookings, process payments, or manage paid registrations. FooEvents uses WooCommerce for products, checkout, payments, orders, and customer records. Some display features, such as the FooEvents Calendar, can also be used with regular WordPress content.
+
+### Can FooEvents work with my existing payment gateway or checkout setup?
+
+Yes. Since payments are handled by WooCommerce, FooEvents can work with the payment gateways, checkout settings, tax rules, coupons, and order processes supported by your WooCommerce store.
+
+### Can FooEvents send data to CRMs, email platforms, or reporting tools?
+
+Yes. FooEvents data can be used with many WooCommerce-compatible marketing, CRM, automation, and reporting tools. This makes it possible to send follow-up emails, update customer records, trigger automations, build reports, or connect your event data to other parts of your business.
 
 ---
 
@@ -790,22 +964,109 @@ more detailed information.
 
 **Source:** [https://www.fooevents.com/features/tickets/](https://www.fooevents.com/features/tickets/)
 
-## Next
-				## Prev
-				## Tickets
-				# Send and manage tickets directly from your WordPress website
-				## Take complete control over what your tickets look like, how they are sent, the format they are sent in, and how they are used by you, your team and your customers.
-				![Fooevents Ticket Viewed Via The Wordpress Admin Area](https://www.fooevents.com/wp-content/uploads/2020/11/fooevents-ticket-1.png)
-				### Modify attendee, booking and seating details.
-				### Resend tickets, download a PDF version and view critical event, order and purchaser information.
-				## Send custom branded ticket emails to attendees or ticket purchasers
-				Customize the ticket theme, colors, logo, graphics and content.
-				![Screenshot Of A Woocommerce Ticket Generated By Fooevents](https://www.fooevents.com/wp-content/uploads/2024/09/woocommerce-ticket-712x1024.png)
-				### Include event, ticket, attendee and booking information.
-				### Scan ticket barcode and QR codes using the FREE FooEvents Check-ins app which can also be paired with a Bluetooth barcode scanner or computer with the FooEvents Express Check-in extension.
-				### Display event information in Gmail and other popular email service providers with the attached .ics file.
-				### Let attendees add events to their preferred calendar using an 'Add to calendar' button.
-				### Can I create different ticket types?
+Tickets
+
+# Send and manage tickets directly from your WordPress website
+
+Take complete control over what your tickets look like, how they are sent, the format they are sent in, and how they are used by you, your team and your customers.
+
+### Create tickets that look the part
+
+FooEvents helps you create professional digital tickets that include the key event, attendee, order, and check-in details your customers and team need.
+
+### Send tickets automatically
+
+Tickets are generated after purchase and sent by email, giving attendees a convenient ticket they can access from their inbox and use as proof of entry.
+
+### Match tickets to your brand
+
+Customize ticket designs with your logo, colors, header images, event details, and ticket content so every ticket feels polished and on-brand.
+
+[Overview](#overview)
+
+[Features](#features)
+
+[FAQs](#faqs)
+
+![tickets](https://www.fooevents.com/wp-content/uploads/2026/07/tickets.png)Tickets 2
+
+## Create professional tickets for every attendee
+
+FooEvents automatically generates tickets when customers purchase event products through WooCommerce. Each ticket can include important event, order, attendee, and check-in details, along with QR codes or barcodes for validation at the door. Tickets are sent by email, can be branded using Ticket Themes.
+
+Features
+
+## Powerful Ticketing Features
+
+Discover how FooEvents handles ticket generation, ticket delivery, ticket details, ticket themes, and flexible ticket options.
+
+### Multiple ticket types
+
+Create different ticket types with their own pricing, stock, and access options. This is useful for events with general admission, VIP, student, early bird, or other ticket categories.
+
+### Ticket stock management
+
+FooEvents uses WooCommerce stock and order management to control ticket availability and help prevent overselling.
+
+### Ticket expiry
+
+Set tickets to expire on a fixed date or after a specific amount of time has passed since purchase.
+
+### QR codes and barcodes
+
+Each ticket can include a unique QR code or 1D barcode, which can be scanned at the event to manage access.
+
+### Ticket scanning
+
+Scan ticket QR codes or barcodes using the free FooEvents Check-ins apps, a compatible Bluetooth barcode scanner, or FooEvents Express Check-in on a computer.
+
+### Branded ticket emails
+
+Send branded ticket confirmation emails that include your event logo, attendee details, event information, and a unique QR code or barcode.
+
+### Ticket themes
+
+Choose from over a dozen [free Ticket Themes](https://www.fooevents.com/products/ticket-themes/) to change the appearance of your tickets and match your event branding.
+
+### Custom ticket templates
+
+Customize an existing Ticket Theme or use the [Canvas Theme](https://www.fooevents.com/product/canvas-ticket-theme/) to create your own ticket layout with basic HTML knowledge.
+
+### PDF tickets
+
+Use the [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/) extension to attach tickets as PDF files to ticket emails, making them easy to save, download, and print.
+
+### Apple Wallet and Google Wallet support
+
+[FooEvents integrates with AddToWallet](https://help.fooevents.com/docs/topics/third-party-integration/addtowallet/), allowing attendees to add tickets to Apple Wallet or Google Wallet on their mobile phones for quicker access at the venue.
+
+### Downloadable tickets
+
+Use the [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/) extension to allow attendees to download PDF tickets from the My Account section of your website, which is useful if a ticket email is lost or needs to be reprinted.
+
+### Add to calendar
+
+Add an “Add to calendar” button to tickets so attendees can download an ICS file and add the event to their preferred calendar app.
+
+### Print-friendly tickets
+
+PDF tickets generated using the [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/) extension are designed to be easy to download and print from any device that supports PDF files.
+
+### Manual ticket creation
+
+Create tickets manually from the WordPress admin area for existing customers or new users.
+
+### Resend tickets
+
+Resend tickets individually or in bulk to purchasers or attendees from the WordPress admin area.
+
+Frequently Asked Questions
+
+## Frequently asked questions
+
+Learn how FooEvents creates, sends, customizes, and manages tickets for different types of events.
+
+### Can I create different ticket types?
 
 Yes, you can create different ticket types that have their own stock count, price, discount etc. This is ideal for events where access is based on the type of ticket that your customer purchased.
 
@@ -823,7 +1084,7 @@ Yes, all tickets include either a unique 1D barcode or QR code by default which 
 
 ### How do you scan the QR code or barcode?
 
-You can scan the ticket barcode using the FREE FooEvents Check-ins app which can also be paired with a Bluetooth barcode scanner or from a computer with theFooEvents Express Check-in extension.
+You can scan the ticket barcode using the FREE FooEvents Check-ins app which can also be paired with a Bluetooth barcode scanner or from a computer with the FooEvents Express Check-in extension.
 
 ### Can I brand the tickets or booking confirmation emails?
 
@@ -831,11 +1092,11 @@ Yes, you can send custom branded ticket emails to attendees or ticket purchasers
 
 ### Do you have any ticket templates that I can use?
 
-There are over 20 FREEprofessionally designed Ticket Themes that you can use to transform the appearance of your tickets and make your event stand out.
+There are over 20 FREE professionally designed Ticket Themes that you can use to transform the appearance of your tickets and make your event stand out.
 
 ### Can I use my own email templates?
 
-Yes, with very little HTML knowledge you can customize the layout and design of any current Ticket Theme or usethe Starter Theme as a template to design your own tickets from scratch.
+Yes, with very little HTML knowledge you can customize the layout and design of any current Ticket Theme or use the Starter Theme as a template to design your own tickets from scratch.
 
 ### Can I send PDF tickets?
 
@@ -874,123 +1135,130 @@ Yes, you can manually create tickets for existing customers on your website or c
 ### Can I resend tickets?
 
 Yes, tickets can be resent individually or to a bulk group of purchasers or attendees at any time from your WordPress Admin Area.
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/tickets/) for
-more detailed information.
-				[← Events](https://www.fooevents.com/features/events/) — [Virtual Events →](https://www.fooevents.com/features/virtual-events/)
 
 ---
 
-## Sell access to virtual events with FooEvents and Zoom
-
-**Source:** [https://www.fooevents.com/features/virtual-events/](https://www.fooevents.com/features/virtual-events/)
-
-## Next
-				## Prev
-				## Virtual Events
-				# Sell access to virtual events with FooEvents and Zoom
-				## Save time and ensure seamless integration by automatically pre-registering your attendees for once-off or recurring Zoom meetings and webinars when they purchase tickets on your WordPress website. Hybrid events (physical and virtual) are possible too!
-				[Try the demo](https://demo.fooevents.com/product-category/virtual-events/) or [View documentation](https://help.fooevents.com/docs/topics/events/zoom-meetings-and-webinars/)
-				![Screen Shot 2020 11 06 At 10.33.06 Am](https://www.fooevents.com/wp-content/uploads/2020/11/Screen-Shot-2020-11-06-at-10.33.06-AM-1024x583.png)
-				### Register attendees for single or multiple Zoom meetings and webinars.
-				### Sell access to both physical and virtual events, simultaneously.
-				### Why use Zoom for my virtual event?
-
-Zoom is the leader in modern enterprise video communications, with an easy, reliable cloud platform for video and audio conferencing, chat and webinars. No matter where you are in the world, Zoom has you covered.
-
-### How does it work?
-
-FooEvents connects securely to your Zoom account and can automatically pre-register attendees for once-off or recurring Zoom meetings and webinars when they purchase tickets on your website.
-
-### Why sell access through my website?
-
-By selling tickets to your virtual event directly from your own website, you maintain complete control over your sales funnel and can build your customer database which will allow you to optimize conversions and adapt your event and marketing strategies as needed.
-
-Seamless integration with Zoom means you can take advantage of all the monetization benefits and functionality provided by FooEvents and WooCommerce, while world-class video streaming of your live virtual event is handled by Zoom.
-
-### Can I sell access to physical and virtual events simultaneously?
-
-Yes, with FooEvents you can sell tickets to physical events, virtual events or both (hybrid events). It’s never been easier to sell tickets and manage free registrations for all your events across multiple channels and platforms.
-
-### Can I generate Zoom meetings for bookings?
-
-Yes, the [FooEvents Bookings](https://www.fooevents.com/products/fooevents-bookings/) extension supports virtual meetings using Zoom. FooEvents Bookings can be set to automatically generate a meeting when a customer makes a booking. This is ideal for selling access to virtual consulting services such as therapy sessions, doctors appointments, coaching sessions, or group Zoom meetings such as online workshops, virtual yoga classes, virtual art classes, online courses etc.The Zoom meeting will be scheduled for the date and time of the selected booking and both the attendee and host will be added to the meeting.
-
-### Does this integration support once-off and recurring virtual events?
-
-Yes, you can sell tickets for once-off as well as multi-day virtual events that run over multiple days or sessions such as conferences, classes and workshops. The options are endless!
-
-### What plugin do I need to sell access to virtual events?
-
-The Zoom integration is included in the core [FooEvents for WooCommerce](https://www.fooevents.com/products/fooevents-for-woocommerce/) plugin, however, you may require other extensions depending on your exact requirements (e.g. [FooEvents Bookings](https://www.fooevents.com/products/fooevents-bookings/), [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/) etc). Please note that a paid Zoom plan is required for the Zoom integration as well as the optional webinar add-on if you want to host webinars.
-
-**See required plugin →**
-				## Take FooEvents for a test drive
-				Try out one of the demos below to experience how ticket sales for a virtual event are managed.
-				[All Virtual Events](https://demo.fooevents.com/product-category/virtual-events/)
-				[Virtual Fitness Class](https://demo.fooevents.com/product/virtual-fitness-class/)
-				[Free Zoom Webinar](https://demo.fooevents.com/product/free-webinar/)
-				[Virtual Yoga Class](https://demo.fooevents.com/product/virtual-group-yoga-class/)
-				[Virtual Conference](https://demo.fooevents.com/product/virtual-conference/)
-				[Zoom Webinar](https://demo.fooevents.com/product/webinar/)
-				[Virtual Art Classes](https://demo.fooevents.com/product/virtual-art-class/)
-				[Virtual Zoom Meeting](https://demo.fooevents.com/product/virtual-zoom-meeting/)
-				[eSports Live Streaming](https://demo.fooevents.com/product/esports-live-streaming/)
-				## Zoom Features
-				**See complete list of Zoom video conferencing features**
-				Share your story
-				Host online events with up to 1,000 interactive video participants. Plans range from 100 to 10,000 view-only attendees.
-				Easy set-up and registration
-				Customize and brand your emails and registration forms. Flexible registration management and multiple integration options for your CRM systems.
-				Present with confidence
-				Simple and intuitive host controls for presenters and interactive capabilities for attendees from desktops, laptops, mobile devices, and conference rooms.
-				Live broadcasting
-				Broadcast across social channels with Facebook Live and YouTube integrations.
-				Full-featured host controls
-				Mute/unmute panelists, and promote attendee to panelist, giving them audio and video capabilities for enhanced engagement.
-				Event assistance
-				Host large-scale events with help from the Zoom team, including planning, rehearsal, and live support.
-				![Wapuu Help](https://www.fooevents.com/wp-content/uploads/2021/05/wapuu-help.png)Visit our [Help Center](https://help.fooevents.com/docs/topics/events/zoom-meetings-and-webinars/) for
-more detailed information.
-				[← Tickets](https://www.fooevents.com/features/tickets/) — [Apps →](https://www.fooevents.com/features/apps/)
-
----
-
-## You can't go wrong with the world’s most popular eCommerce platform
+## You can’t go wrong with the world’s most popular eCommerce platform
 
 **Source:** [https://www.fooevents.com/features/woocommerce/](https://www.fooevents.com/features/woocommerce/)
 
-## Next
-				## Prev
-				## WooCommerce
-				# You can't go wrong with the world’s most popular eCommerce platform
-				## FooEvents is designed to work natively with WooCommerce. This means that you can take advantage of the security and ecosystem of the world’s most popular eCommerce platform as well as the extensive list of extensions and payment gateways that it supports.
-				![Woocommerce Logos](https://www.fooevents.com/wp-content/uploads/2020/11/woocommerce-logos.png)
-				### Choose from over 100 popular payment gateways.
-				### Leverage thousands of FooEvents compatible WooCommerce extensions.
-				### What payment gateways does FooEvents support?
+WooCommerce
 
-Payments are processed using WooCommerce which means you can choose from over 100 popular payment gateways, including Stripe, Square, PayPal, most credit cards, direct bank transfer or cash on delivery.
+# You can’t go wrong with the world’s most popular eCommerce platform
+
+FooEvents is designed to work natively with WooCommerce. This means that you can take advantage of the security and ecosystem of the world’s most popular eCommerce platform as well as the extensive list of extensions and payment gateways that it supports.
+
+### Sell events through WooCommerce
+
+FooEvents works with WooCommerce, allowing you to sell event tickets using the same cart, checkout, payment gateways, taxes, coupons, and order process as the rest of your store.
+
+### Use the tools you already know
+
+Manage ticket sales using familiar WooCommerce products, variations, stock settings, customer accounts, order statuses, emails, reports, and admin workflows.
+
+### Stay in control of your event business
+
+Because your events run through your own WooCommerce website, you keep control of your branding, customer data, payment setup, checkout experience, and ticket revenue.
+
+[Features](#features)
+
+[FAQs](#faqs)
+
+Features
+
+## Unlock the WooCommerce Ecosystem
+
+Discover how FooEvents works with WooCommerce payment gateways, extensions, coupons, tax settings, order management, reporting tools, and more.
+
+### Native WooCommerce Integration
+
+Manage events, tickets, orders, customers, payments, taxes, and checkout through WooCommerce.
+
+### 100+ Payment Gateways
+
+Accept payments using Stripe, PayPal, Square, credit cards, bank transfer, cash on delivery, and many local payment providers.
+
+### WooCommerce Coupons
+
+Promote events using fixed discounts, percentage discounts, limited-use coupons, and campaign-specific offers.
+
+### Thousands of Compatible Extensions
+
+Connect FooEvents with WooCommerce plugins for marketing, reporting, accounting, memberships, subscriptions, automation, and more.
+
+### Custom Event Solutions
+
+Use the WooCommerce ecosystem to build event setups tailored to your business, from private events to automated follow-ups.
+
+### Local Currency and Taxes
+
+Sell tickets in your local currency and apply tax rules based on your WooCommerce settings.
+
+### Secure Checkout
+
+Give attendees a familiar and trusted checkout experience powered by WooCommerce.
+
+### Order Management
+
+Manage payments, refunds, order statuses, customer records, and ticket purchases from your WooCommerce dashboard.
+
+### Reporting and Analytics
+
+Track ticket sales, revenue, coupon usage, order activity, and event performance using WooCommerce reports and compatible analytics tools.
+
+### Customer Data Ownership
+
+Keep customer, attendee, order, and ticket data stored on your own website.
+
+### No Ticket Commission Fees
+
+Sell tickets without paying FooEvents a commission on each sale.
+
+### Full Store Control
+
+Own your event store, branding, checkout, data, integrations, and sales process.
+
+Frequently Asked Questions
+
+## Frequently asked questions
+
+Learn how FooEvents uses WooCommerce for payments, checkout, coupons, taxes, customer data, and store management.
+
+### What payment gateways does FooEvents support?
+
+Payments are processed by WooCommerce, which means you can choose from over 100 popular payment gateways, including Stripe, Square, PayPal, credit cards, direct bank transfer, cash on delivery, and many local payment providers.
+
+### Can I use WooCommerce extensions with FooEvents?
+
+Yes. One of the biggest advantages of FooEvents is that it works with WooCommerce, giving you access to thousands of compatible extensions. This makes it possible to add marketing automation, reporting, CRM tools, accounting integrations, memberships, subscriptions, custom checkout flows, and more.
+
+### Can I create a custom event solution with FooEvents?
+
+Yes. Because FooEvents is built for WooCommerce, you can combine it with WooCommerce extensions to create highly customized event setups. This could include member-only events, automated attendee emails, private ticket sales, advanced coupons, recurring payments, multilingual stores, accounting workflows, and more.
+
+### What payment gateways can I use?
+
+You can use any compatible WooCommerce payment gateway. This includes major providers such as Stripe, PayPal, Square, and credit card processors, as well as local and regional payment options supported by WooCommerce.
 
 ### Is FooEvents safe and secure?
 
-Yes, FooEvents piggybacks on the WooCommerce checkout process so your attendees are guaranteed a safe and familiar checkout experience.
+Yes. FooEvents uses the WooCommerce checkout process, so attendees can purchase tickets through a familiar and secure checkout experience powered by your selected payment gateway.
 
 ### Can I use discount coupons to promote my event?
 
-Yes, you can promote your event through fixed or percentage-based discount coupons. Track and manage coupon usage directly from your WooCommerce dashboard.
+Yes. You can use WooCommerce coupons to offer fixed discounts, percentage discounts, limited-use coupons, and promotional codes for your events.
 
 ### Can I offer local currencies and tax rates?
 
-Yes, you can set your local currency and display taxes based on the purchaser’s billing address or your store’s location.
+Yes. WooCommerce allows you to set your store currency and apply tax rates based on your store settings, customer billing address, or regional requirements.
 
 ### Does FooEvents store my customer and attendee information?
 
-No, FooEvents does not access or store any of your data. All customer and ticket data is archived in your website database and never leaves your site.
+No. FooEvents does not store your customer or attendee data on an external FooEvents platform. Your customer, order, attendee, and ticket data remains in your own WordPress database.
 
-### Is FooEvents GDPR Compliant?
+### Is FooEvents GDPR compliant?
 
-We are proudly GDPR compliant and completely respect your privacy. We do not sell or share customer data with any third-parties.
-				[← Communications](https://www.fooevents.com/features/communications/) — [Insights →](https://www.fooevents.com/features/insights/)
+FooEvents is designed with privacy in mind and does not sell or share customer data with third parties. Your data stays on your site, giving you control over how customer and attendee information is managed.
 
 ---
 

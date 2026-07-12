@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T22:17:05.017Z",
+  "last_updated": "2026-07-12T22:17:47.508Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -119,7 +119,7 @@
       "slug": "affiliatewp-lifetime-commissions",
       "name": "AffiliateWP - Lifetime Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-12T22:17:05.017Z",
+      "last_scraped": "2026-07-12T22:17:05.014Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
@@ -1020,19 +1020,18 @@
       "slug": "fooevents-custom-attendee-fields",
       "name": "FooEvents Custom Attendee Fields",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-05T22:20:24.316Z",
-      "page_count": 57,
+      "last_scraped": "2026-07-12T22:17:45.330Z",
+      "page_count": 60,
       "categories": [
         "about-us",
-        "blog",
         "bundles",
         "cart",
+        "checkout",
         "de",
         "disclaimer",
         "el",
         "es",
         "features",
-        "fooevents-ultimate-event-checklist",
         "fr",
         "it",
         "my-account",
@@ -1042,9 +1041,13 @@
         "pricing",
         "privacy-statement-us",
         "products",
+        "promo",
         "pt",
         "reviews",
-        "terms-and-conditions"
+        "shapes",
+        "shop",
+        "terms-and-conditions",
+        "use-cases"
       ]
     },
     {

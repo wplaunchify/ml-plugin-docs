@@ -4,91 +4,173 @@
 
 ---
 
-## Sell tickets to your events, venues and bookable services like a pro!
+## WooCommerce ticketing plugin for events, venues, and bookings
 
 **Source:** [https://www.fooevents.com](https://www.fooevents.com)
 
-### The #1 Event, Ticketing & Bookings Platform for WooCommerce
-				# Sell tickets to your events, venues and bookable services like a pro!
-				## Join over 16,000 happy FooEvents customers and add event, ticketing, and booking functionality to your WordPress website. Sell unlimited WooCommerce tickets directly from your site and manage registrations for physical, virtual, or hybrid events—no tech skills needed.
-				[Get FooEvents Now!](https://www.fooevents.com/pricing/)
-				No commission OR ticket fees.
-				![How To Sell Woocommerce Tickets](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
-				### 14-day Money Back Guarantee
-				#### Manage events and sell tickets on your own terms
-				Gain full control over your ticket sales process and customer data with the safest and most flexible event and ticketing solution available. Thousands of FooEvents customers have sold millions of custom-branded WooCommerce tickets from their WordPress websites without having to pay any ticket fees or commission.
-				[Conferences](https://www.fooevents.com/features/conferences/)
-				[Concerts & Shows](https://www.fooevents.com/features/shows/)
-				[Classes & Training](https://www.fooevents.com/features/courses-classes-training/)
-				[Activities & General Admission](https://www.fooevents.com/features/general-admission/)
-				[Virtual Events](https://www.fooevents.com/features/virtual-events/)
-				[Sport Events](https://www.fooevents.com/features/sports-events/)
-				![Marlin Museum Of Bicycling](https://www.fooevents.com/wp-content/uploads/2024/09/Marlin-Museum-of-Bicycling.png)
-				![Faith Fest](https://www.fooevents.com/wp-content/uploads/2024/09/Faith-Fest.png)
-				![The Color Run](https://www.fooevents.com/wp-content/uploads/2024/09/The-Color-Run.png)
-				![Tedx](https://www.fooevents.com/wp-content/uploads/2024/09/TedX.png)
-				![University Of Pittsburgh](https://www.fooevents.com/wp-content/uploads/2024/09/University-of-Pittsburgh.png)
-				![Grand Haven Coast Guard](https://www.fooevents.com/wp-content/uploads/2024/09/Grand-Haven-Coast-Guard.png)
-				![5 Star Rating](https://www.fooevents.com/wp-content/uploads/2018/10/star-rating-lrg.png)
+# WooCommerce ticketing plugin for events, venues, and bookings
+
+FooEvents helps you sell event tickets, manage bookings, collect attendee details, and check in attendees using your own WooCommerce website. No commission or ticket fees. No tech skills needed.
+
+[Get FooEvents Now!](https://www.fooevents.com/pricing/)
+
+[Discover More](https://www.fooevents.com/features/)
+
+## 23 Million
+
+### Attendee Check-ins
+
+Millions of attendees have been checked in using FooEvents across real-world events.
+
+## 17,000
+
+### Happy Customers
+
+Trusted by thousands of agencies, developers, and businesses to sell tickets directly from their websites.
+
+## 11 years
+
+### Expert Experience
+
+Over a decade of building, improving, and supporting event ticketing with WooCommerce.
+
+## Zero
+
+### Ticket Fees or Commission
+
+We don’t charge commission or per-ticket fees. Every cent you earn from ticket sales is yours to keep.
+
+![How to Sell WooCommerce Tickets](https://www.fooevents.com/wp-content/uploads/2024/09/How-to-Sell-WooCommerce-Tickets-1.jpg)
+
+Meet FooEvents
+
+## Manage events and sell tickets on your own terms
+
+Gain full control over your ticket sales process and customer data with the safest and most flexible event and ticketing solution available.
+
+[See All Features](https://www.fooevents.com/features/)
+
+![Marlin Museum of Bicycling](https://www.fooevents.com/wp-content/uploads/2024/09/Marlin-Museum-of-Bicycling.png)
+
+![Faith Fest](https://www.fooevents.com/wp-content/uploads/2024/09/Faith-Fest.png)
+
+![TedX](https://www.fooevents.com/wp-content/uploads/2024/09/TedX.png)
+
+![The Color Run](https://www.fooevents.com/wp-content/uploads/2024/09/The-Color-Run.png)
+
+![University of Pittsburgh](https://www.fooevents.com/wp-content/uploads/2024/09/University-of-Pittsburgh.png)
+
+![Grand Haven Coast Guard](https://www.fooevents.com/wp-content/uploads/2024/09/Grand-Haven-Coast-Guard.png)
+
+Sell Tickets
+
+## Send professional, branded tickets that help your events stand out
+
+Get complete control over what your tickets look like, how they are sent, the format they are sent in and how they are used by your team and customers or attendees. Pick from over 20 free Ticket Themes or design your own.
+
+[Ticket Theme Gallery](https://www.fooevents.com/products/ticket-themes/)
+
+![tickets 1](https://www.fooevents.com/wp-content/uploads/2026/07/tickets-1.png)Home 14
+
+![FooEvents Check-ins Apps](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-apps-display.png)Home 15
+
+Manage **Check-ins**
+
+## Manage access to your events and venue
+
+Manage event access quickly and professionally with the free FooEvents Check-ins apps. Used to check in over 23 million attendees, the app makes it easy to validate tickets, track attendance, and keep your entrance moving.
+
+[Explore App](https://www.fooevents.com/features/apps/)
+
+**Who is FooEvents for?**
+
+## Built for events of all shapes and sizes
+
+From conferences and concerts to workshops, fundraisers, sports events, seated venues, and general admission, FooEvents gives you the flexibility to sell tickets and manage a wide range of event types with WooCommerce.
+
+[Browse 57 example events](https://demo.fooevents.com)
+
+### Conferences
+
+Create single-day, multi-day, virtual, and recurring conferences while managing ticket sales, attendee details, check-ins, and event access from your own website.
+
+[Learn More](https://www.fooevents.com/use-cases/conferences/)
+
+### Concerts & Shows
+
+Sell tickets online, offer reserved seating, manage check-ins with our free mobile apps, and sell tickets at the door using FooEvents Point of Sale.
+
+[Learn More](https://www.fooevents.com/use-cases/shows/)
+
+### Activities & Admissions
+
+Let customers book spots, slots, tours, or general admission tickets while you manage capacity, attendance, availability, and access control from your website.
+
+[Learn More](https://www.fooevents.com/use-cases/general-admission/)
+
+### Sports Events
+
+Sell race entries, spectator passes, tournament registrations, and venue bookings while collecting registration details, managing capacity, and checking people in on event day.
+
+[Learn More](https://www.fooevents.com/use-cases/sports-events/)
+
+### Courses, Classes & Training
+
+Sell registrations for courses, classes, workshops, and training sessions while managing student details, class capacity, attendance, and check-ins with FooEvents.
+
+[Learn More](https://www.fooevents.com/use-cases/courses-classes-training/)
+
+### Virtual Events
+
+Sell access to virtual or hybrid events and automatically pre-register attendees for once-off or recurring Zoom meetings and webinars when they purchase tickets.
+
+[Learn More](https://www.fooevents.com/use-cases/virtual-events/)
+
+**Reviews**
+
+## Hear from our biggest fans
+
+Don’t just take our word for it – explore the real experiences shared by some of our 17,000 happy customers.
+
+[See All Reviews](https://www.fooevents.com/reviews/)
 
 We are a medium-sized event agency in Germany and use this system for all of our events (**100-7000 people**). We have never had any problems with entry or tickets. We’ve had a small problem once, but support solved it quickly.
-			
-						![Henning Klus](https://www.fooevents.com/wp-content/uploads/2024/09/Henning-Klus.png)
-					
-										Henning Klus
-																						Head of Marketing, FUX&HAS
-				![5 Star Rating](https://www.fooevents.com/wp-content/uploads/2018/10/star-rating-lrg.png)
 
-FooEvents has **sold over 100,000 tickets** for me. Since discovering FooEvents in 2020 it has only got better and better. Support is awesome, the flexibility of the plugin is great and it’s transformed my business.
-			
-						![Fiona Dawson](https://www.fooevents.com/wp-content/uploads/2024/09/fiona-dawson.png)
-					
-										Fiona Dawson
-																						Digital Designer, Unavoided Ltd
-				![5 Star Rating](https://www.fooevents.com/wp-content/uploads/2018/10/star-rating-lrg.png)
+![Henning Klus](https://www.fooevents.com/wp-content/uploads/2024/09/Henning-Klus.png)
 
-FooEvents is an excellent plugin. **I use it to sell my hobby classes on my website**. It’s perfectly integrated with WooCommerce, which makes life easier. Support is fast and professional. I recommend it 100%!
-			
-						![Chez Susan](https://www.fooevents.com/wp-content/uploads/2024/09/chezsusan_.png)
-					
-										Chez Susan
-																						ChezSusan.ch, Ateliers créatifs
-				### Tickets
-				#### Send professional-looking tickets that make your events stand out from the crowd
-				Get complete control over what your tickets look like, how they are sent, the format they are sent in and how they are used by your team and customers or attendees. You can take your pick from over 20 free Ticket Themes or design your own using the starter theme as a guide.
-				[Send Branded Tickets](https://www.fooevents.com/features/tickets/)
-				[Ticket Themes](https://www.fooevents.com/products/ticket-themes/)
-				![Woocommerce Tickets](https://www.fooevents.com/wp-content/uploads/2024/09/WooCommerce-tickets-1.png)
-				![Fooevents Check-Ins Apps](https://www.fooevents.com/wp-content/uploads/2025/01/fooevents-ticket-checkins-apps.png)
-				### Check-ins Apps
-				#### Manage access with our FREE mobile Check-in apps
-				Manage event access quickly and professionally with the free FooEvents Check-ins app. Used to check in **23,469,836** attendees, the app makes it easy to validate tickets, track attendance, and keep your entrance moving.
-				[App Store](https://itunes.apple.com/app/event-check-ins/id1129740503)
-				[Google Play](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
-				[Explore Apps](https://www.fooevents.com/features/apps/)
-				### Point of Sale
-				#### Sell and print tickets at the door of your event
-				Get complete control over what your tickets look like, how they are sent, the format they are sent in and how they are used by your team and customers or attendees. You can take your pick from over 20 free Ticket Themes or design your own using the starter theme as a guide.
-				[Sell Tickets at Your Event](https://www.fooevents.com/products/fooevents-pos/)
-				![Screenshot Of The Fooevents Pos Interface](https://www.fooevents.com/wp-content/uploads/2024/09/fooevents-woocommerce-point-of-sale-2.png)
-				![Custom Attendee Fields](https://www.fooevents.com/wp-content/uploads/2024/08/custom-attendee-fields.png)
-				### Attendees
-				#### Capture and export critical attendee information with ease
-				Organize your events and engage better with your attendees by capturing detailed attendee information and exporting it to your preferred CRM, marketing, reporting, webinar or other business tools.
-				[Capture Attendee Fields](https://www.fooevents.com/features/attendees/)
-				### Insights
-				#### Make informed decisions based on event and ticket reports
-				Good decisions are based on good data. FooEvents provides real-time event and ticket reports which integrate seamlessly with your WooCommerce sales reports so you always know how your events are performing and can make informed business decisions based on this data.
-				[See Reports & Insights](https://www.fooevents.com/features/insights/)
-				![View Analytics And Reports For Woocommerce Tickets Sales](https://www.fooevents.com/wp-content/uploads/2024/08/woocommerce-analytics-and-reports.png)
-				![Woocommerce Stripe Square Paypal](https://www.fooevents.com/wp-content/uploads/2024/08/woocommerce-stripe-square-paypal.png)
-				### Checkout
-				#### You can't go wrong with the world’s most popular eCommerce platform
-				FooEvents is designed to work natively with WooCommerce. This means that you can take advantage of the security and power of the world’s most popular eCommerce platform as well as 100+ payment gateways that it supports.
-				[More About WooCommerce](https://www.fooevents.com/features/woocommerce/)
-				# Ready to get started?
-				First, you will need to purchase a FooEvents license and download the FooEvents plugins. You can then install the plugins on your WordPress site, setup your event, and start selling tickets.
-				[Get FooEvents Now!](https://www.fooevents.com/pricing/)
+**Henning Klus**
+
+Head of Marketing, FUX&HAS
+
+FooEvents is an excellent plugin. I use it to sell my hobby classes on my website. It’s perfectly integrated with WooCommerce, which makes life easier. Support is fast and professional. **I recommend it 100%!**
+
+![Chez Susan](https://www.fooevents.com/wp-content/uploads/2024/09/chezsusan_.png)
+
+**Chez Susan**
+
+ChezSusan.ch, Ateliers créatifs
+
+FooEvents has **sold over 100,000 tickets** for me. Since discovering FooEvents in 2020 it has only got better and better. Support is awesome, the flexibility of the plugin is great and it’s transformed my business.
+
+![Fiona Dawson](https://www.fooevents.com/wp-content/uploads/2024/09/fiona-dawson.png)
+
+**Fiona Dawson**
+
+Digital Designer, Unavoided Ltd
+
+The AddToWallet integration was a direct response to feedback from our fans, and it’s been one of the best improvements we’ve made to our ticketing experience. Our audience absolutely loves having their tickets in Apple Wallet and Google Wallet, and for us, check in has become significantly faster and smoother at the door.
+
+**Acute Inflections**
+
+New York’s Premier Jazzy R&B Duo
+
+![fooevents icon](https://www.fooevents.com/wp-content/uploads/2020/08/fooevents-icon.png)Home 16
+
+## Ready to start selling?
+
+Turn your WooCommerce website into a complete event ticketing platform with FooEvents. Sell tickets directly from your site, manage bookings and attendees, send branded tickets, and check people in with everything you need to run successful events.
+
+[Get started with FooEvents now!](https://www.fooevents.com/pricing/)
 
 ---
 

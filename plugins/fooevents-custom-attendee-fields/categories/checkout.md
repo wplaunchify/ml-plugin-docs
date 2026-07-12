@@ -1,4 +1,4 @@
-# Cart
+# Checkout
 
 *Category from FooEvents Custom Attendee Fields documentation*
 
@@ -6,7 +6,7 @@
 
 ## Cart - FooEvents
 
-**Source:** [https://www.fooevents.com/cart/](https://www.fooevents.com/cart/)
+**Source:** [https://www.fooevents.com/checkout/](https://www.fooevents.com/checkout/)
 
 ## Your cart is currently empty!
 
