@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T07:44:42.233Z",
+  "last_updated": "2026-07-12T07:45:45.382Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -632,7 +632,7 @@
       "slug": "fluentaffiliate",
       "name": "FluentAffiliate",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-07-05T17:27:52.373Z",
+      "last_scraped": "2026-07-12T07:45:44.480Z",
       "page_count": 53,
       "categories": [
         "admin-portal",
