@@ -2,8 +2,8 @@
   "plugin_slug": "duplicate-page",
   "plugin_name": "Duplicate Page",
   "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
-  "last_scraped": "2026-07-05T15:26:07.343Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T15:20:52.685Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Duplicate Page",
           "url": "https://wordpress.org/plugins/duplicate-page/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/duplicate-page/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Duplicate Page",
+          "url": "https://wordpress.org/plugins/duplicate-page/"
         }
       ]
     }
