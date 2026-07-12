@@ -2,8 +2,8 @@
   "plugin_slug": "open-graph",
   "plugin_name": "Open Graph",
   "documentation_url": "https://wordpress.org/plugins/opengraph/",
-  "last_scraped": "2026-07-05T16:23:23.557Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T16:20:30.819Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Open Graph",
           "url": "https://wordpress.org/plugins/opengraph/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/opengraph/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Open Graph",
+          "url": "https://wordpress.org/plugins/opengraph/"
         }
       ]
     }
