@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-07-05T10:05:46.088Z",
-  "total_pages": 3611,
+  "last_scraped": "2026-07-12T09:51:49.829Z",
+  "total_pages": 3630,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,84 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3611,
+      "page_count": 3630,
       "pages": [
+        {
+          "title": "Automatic Order Expiration",
+          "url": "https://woocommerce.com/document/automatic-order-expiration/"
+        },
+        {
+          "title": "List Shipment Tracking providers with the REST API",
+          "url": "https://woocommerce.com/document/shipment-tracking/shipment-tracking-rest-api-list-providers/"
+        },
+        {
+          "title": "Create a custom-provider tracking item with the REST API",
+          "url": "https://woocommerce.com/document/shipment-tracking/shipment-tracking-rest-api-custom-provider/"
+        },
+        {
+          "title": "Understand Shipment Tracking REST API responses",
+          "url": "https://woocommerce.com/document/shipment-tracking/shipment-tracking-rest-api-response-fields/"
+        },
+        {
+          "title": "Create a tracking item with the Shipment Tracking REST API",
+          "url": "https://woocommerce.com/document/shipment-tracking/shipment-tracking-rest-api-create-tracking-item/"
+        },
+        {
+          "title": "Hide a Shipment Tracking provider",
+          "url": "https://woocommerce.com/document/shipment-tracking/shipment-tracking-hide-provider/"
+        },
+        {
+          "title": "Add a custom Shipment Tracking provider",
+          "url": "https://woocommerce.com/document/shipment-tracking/shipment-tracking-add-custom-provider/"
+        },
+        {
+          "title": "Set the default Shipment Tracking provider",
+          "url": "https://woocommerce.com/document/shipment-tracking/shipment-tracking-set-default-provider/"
+        },
+        {
+          "title": "Add shipment tracking to an order programmatically",
+          "url": "https://woocommerce.com/document/shipment-tracking/shipment-tracking-add-tracking-programmatically/"
+        },
+        {
+          "title": "Troubleshooting the All Products for Subscriptions product migration",
+          "url": "https://woocommerce.com/document/troubleshooting-the-all-products-for-subscriptions-product-migration/"
+        },
+        {
+          "title": "ProfitSync – Profit, COGS and Expense Tracker",
+          "url": "https://woocommerce.com/document/profitsync/"
+        },
+        {
+          "title": "Helcim for WooCommerce",
+          "url": "https://woocommerce.com/document/helcim-commerce-for-woocommerce/"
+        },
+        {
+          "title": "TIV Multi-currency for WooCommerce – Page caching",
+          "url": "https://woocommerce.com/document/multi-currency/tiv-multi-currency-for-woocommerce-page-caching/"
+        },
+        {
+          "title": "Previously Ordered Items",
+          "url": "https://woocommerce.com/document/previously-ordered-items/"
+        },
+        {
+          "title": "FMA Extra Fee and Charges",
+          "url": "https://woocommerce.com/document/extra-fee-and-charges/"
+        },
+        {
+          "title": "Balance and fees reports",
+          "url": "https://woocommerce.com/document/woopayments/managing-money/balance-and-fees-reports/"
+        },
+        {
+          "title": "Smart Product Comparison",
+          "url": "https://woocommerce.com/document/smart-product-comparison/"
+        },
+        {
+          "title": "Export and Archive Old Orders",
+          "url": "https://woocommerce.com/document/export-and-archive-old-orders/"
+        },
+        {
+          "title": "Country Based Restrictions Pro",
+          "url": "https://woocommerce.com/document/country-based-restrictions-pro/"
+        },
         {
           "title": "TIV Multi-currency – Compatibility and Integration",
           "url": "https://woocommerce.com/document/multi-currency/compatibility-and-integration/"
@@ -3894,8 +3970,8 @@
           "url": "https://woocommerce.com/document/qode-variation-swatches-for-woocommerce-pro/"
         },
         {
-          "title": "Regenerate AutomateWoo database tables",
-          "url": "https://woocommerce.com/document/automatewoo/regenerate-automatewoo-database-tables/"
+          "title": "Bundle Products for WooCommerce – Documentation",
+          "url": "https://woocommerce.com/document/bundle-products-for-woocommerce-documentation/"
         },
         {
           "title": "How to Hide Sites from the Store Picker",
@@ -5490,8 +5566,8 @@
           "url": "https://woocommerce.com/document/sportiq/"
         },
         {
-          "title": "Removing personal data from orders",
-          "url": "https://woocommerce.com/document/managing-orders/removing-personal-data-from-orders/"
+          "title": "Related Products, Add-to-Cart, and Notification Shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes/"
         },
         {
           "title": "Testing orders",
@@ -7454,7 +7530,7 @@
           "url": "https://woocommerce.com/document/sendcloud/"
         },
         {
-          "title": "PayPal Braintree",
+          "title": "PayPal Enterprise Payments (formerly Braintree)",
           "url": "https://woocommerce.com/document/woocommerce-gateway-paypal-powered-by-braintree/"
         },
         {
@@ -9570,8 +9646,8 @@
           "url": "https://woocommerce.com/document/back-in-stock-notifications/faq/"
         },
         {
-          "title": "Rapyd Payments Plugin",
-          "url": "https://woocommerce.com/document/rapyd-payments-plugin-for-woocommerce/"
+          "title": "Feedback and Suggestions",
+          "url": "https://woocommerce.com/document/back-in-stock-notifications/feedback-and-suggestions/"
         },
         {
           "title": "Live Sales Notification for WooCommerce",
@@ -10410,8 +10486,8 @@
           "url": "https://woocommerce.com/document/name-your-price/whats-new-in-3-0/"
         },
         {
-          "title": "Aliexpress Dropshipping For WooCommerce",
-          "url": "https://woocommerce.com/document/aliexpress-dropshipping-for-woocommerce/"
+          "title": "Google Analytics link tracking",
+          "url": "https://woocommerce.com/document/automatewoo/google-analytics-link-tracking/"
         },
         {
           "title": "Bulk Order Form For WooCommerce",
@@ -11650,8 +11726,8 @@
           "url": "https://woocommerce.com/document/woocommerce-product-search/widgets/product-filter-reset/"
         },
         {
-          "title": "Memberships",
-          "url": "https://woocommerce.com/document/groups-woocommerce/memberships/"
+          "title": "Sending SMS from a workflow",
+          "url": "https://woocommerce.com/document/automatewoo/twilio/sending-sms-from-a-workflow/"
         },
         {
           "title": "Settings",
@@ -11728,6 +11804,46 @@
         {
           "title": "Privacy considerations when using official shipping extensions",
           "url": "https://woocommerce.com/document/privacy-shipping/"
+        },
+        {
+          "title": "Subscriptions Use Case: Gifting a Subscription Box",
+          "url": "https://woocommerce.com/document/gifting-subscription-box/"
+        },
+        {
+          "title": "Debugging",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/api/debugging/"
+        },
+        {
+          "title": "Examples",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/api/examples/"
+        },
+        {
+          "title": "[woocommerce_product_filter_products]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_products/"
+        },
+        {
+          "title": "[woocommerce_product_filter_tag]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_tag/"
+        },
+        {
+          "title": "[woocommerce_product_filter_category]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_category/"
+        },
+        {
+          "title": "[woocommerce_product_filter_attribute]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_attribute/"
+        },
+        {
+          "title": "[woocommerce_product_filter_price]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_price/"
+        },
+        {
+          "title": "[woocommerce_product_filter]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter/"
+        },
+        {
+          "title": "[woocommerce_product_search]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_search/"
         },
         {
           "title": "Product Filter – Attributes",
@@ -13412,46 +13528,6 @@
         {
           "title": "Roles and Capabilities",
           "url": "https://woocommerce.com/document/roles-capabilities/"
-        },
-        {
-          "title": "Installed Database Tables",
-          "url": "https://woocommerce.com/document/installed-database-tables/"
-        },
-        {
-          "title": "Permalinks",
-          "url": "https://woocommerce.com/document/permalinks/"
-        },
-        {
-          "title": "Add a new country to countries list",
-          "url": "https://woocommerce.com/document/add-a-new-country-to-countries-list/"
-        },
-        {
-          "title": "Introduction to Product CSV Import Suite",
-          "url": "https://woocommerce.com/document/product-csv-import-suite/"
-        },
-        {
-          "title": "Importing Products",
-          "url": "https://woocommerce.com/document/product-csv-import-suite/product-csv-import-suite-importing-products/"
-        },
-        {
-          "title": "WooCommerce Authorize.Net Reporting",
-          "url": "https://woocommerce.com/document/woocommerce-authorize-net-reporting/"
-        },
-        {
-          "title": "Hooks and Filters in WooCommerce PDF Invoice",
-          "url": "https://woocommerce.com/document/pdf-invoice-developer-tools/"
-        },
-        {
-          "title": "PDF Invoices",
-          "url": "https://woocommerce.com/document/woocommerce-pdf-invoice-setup-and-customization/"
-        },
-        {
-          "title": "Adjust the quantity input values",
-          "url": "https://woocommerce.com/document/adjust-the-quantity-input-values/"
-        },
-        {
-          "title": "Creating Slideshows with Slides",
-          "url": "https://woocommerce.com/document/creating-slideshows-with-slides/"
         },
         {
           "title": "See You Later",
