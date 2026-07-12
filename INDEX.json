@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T05:08:23.820Z",
+  "last_updated": "2026-07-12T05:08:32.362Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2293,7 +2293,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-07-05T17:08:28.695Z",
+      "last_scraped": "2026-07-12T05:08:15.146Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
@@ -3548,7 +3548,7 @@
       "slug": "wpc-variations-radio-buttons-for-woocommerce-premium",
       "name": "WPC Variations Radio Buttons for WooCommerce (Premium)",
       "documentation_url": "https://doc.wpclever.net/woovr/",
-      "last_scraped": "2026-07-12T05:08:23.820Z",
+      "last_scraped": "2026-07-12T05:08:23.818Z",
       "page_count": 7,
       "categories": [
         "getting-started",
