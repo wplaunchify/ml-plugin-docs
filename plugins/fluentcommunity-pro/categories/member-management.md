@@ -303,20 +303,63 @@ To edit your profile details, click the **Edit Profile** button at the top right
 
 #### Editing Your Profile Details
 
-****Here, you can update personal information and add social media links. Simply enter your changes in the relevant fields and save.
+****The first section lets you manage the core information shown on your profile. Fill in or update any of the fields below, then save your changes.
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/Profile-Edit-4.webp)
+• **First Name:**Your first name. This is a required field and appears as part of your display name across the community.
+
+• **Last Name:**Your last name, shown alongside your first name on your profile and posts.
+
+• **Email:**The email address linked to your account. This is used for account-related communication and notifications.
+
+• **Website URL:**Add a link to your personal website, portfolio, or blog so members can learn more about you.
+
+• **Headline:**A short tagline that sums up who you are or what you do. It’s limited to 60 characters, so keep it brief and catchy — for example, “Community Manager & Coffee Enthusiast.”
+
+• **Short Bio:**A brief description about yourself. Use this space to introduce yourself to the community and share a little about your interests or background.
+
+**Social Links**
+
+In the Social Links section, you can add your social media profile links so members can follow or connect with you on other platforms. Simply paste the last part of your profile URL after the pre-filled prefix for each network.
+
+• **LinkedIn:**Add your LinkedIn profile by entering your username after https://linkedin.com/in/.
+
+• **Facebook:**Add your Facebook profile by entering your username after https://facebook.com/.
+
+*Note: The available social networks may vary depending on how your community’s profile fields are configured by the admin.*
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/member-profile-1.webp)
 
 ## Admin Actions (For Admins Only)
 
-Admins have access to specific profile settings for managing community members profiles.
+If you’re an admin or moderator, you’ll see an additional Admin Actions section on a member’s profile. These tools let you verify accounts and manage member status to keep the community running smoothly.
 
-- **Account Verification:** Mark an account as verified by checking the **Mark this Account as Verified**option.
-- **Space Account Username:** Admins can set or edit the username displayed in the community spaces.
-- **Badge Assignment:** Choose a badge for the user profile from the dropdown menu.
-- **Access Status:** Set a member’s account status as **Active**, **Pending**, or **Blocked** based on their role or permissions.
+**Account Verification**
 
-![](https://fluentcommunity.co/wp-content/uploads/2024/11/Profile-Edit-5.webp)
+Check the Mark this account as verified box to give the member a verified badge. This is a great way to confirm the identity of trusted members, team members, or well-known contributors within your community.
+
+**Moderate Posts and Comments**
+
+Enable Require approval for new posts and comments to place this specific member’s content under review before it goes live. Their new posts and comments will be flagged and hidden until an admin or moderator approves them.
+
+*Note: Admin or moderator accounts cannot be moderated, so this option will appear disabled on those profiles.*
+
+**Access Status**
+
+Set the member’s account status to control their access to the community. You have three options:
+
+• **Active:**The member has full, normal access to the community.
+
+• **Pending:**The member’s account is awaiting approval and has limited access until activated.
+
+• **Blocked:**The member is blocked and can no longer access the community.
+
+**Community Account Username**
+
+This field lets admins set or edit the @username displayed for the member across the community spaces. Type the desired username in the field and click the Change button to update it.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/member-profile-2.webp)
+
+Once you’ve finished updating the profile — whether it’s your own details or an admin action — always click the Save Changes button at the bottom of the screen to make sure everything is applied.
 
 ### Setting Up Custom Profile Fields (Admins Only)
 

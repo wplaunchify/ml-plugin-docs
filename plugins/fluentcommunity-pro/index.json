@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcommunity-pro",
   "plugin_name": "FluentCommunity Pro",
   "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-  "last_scraped": "2026-07-05T17:01:39.141Z",
-  "total_pages": 77,
+  "last_scraped": "2026-07-12T08:49:16.531Z",
+  "total_pages": 80,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -176,8 +176,16 @@
       "slug": "integration",
       "url": "https://fluentcommunity.co/docs/documentation/integration/",
       "file": "categories/integration.md",
-      "page_count": 10,
+      "page_count": 12,
       "pages": [
+        {
+          "title": "FluentSMTP Integration",
+          "url": "https://fluentcommunity.co/docs/fluentsmtp-integration/"
+        },
+        {
+          "title": "Fluent Support Integration",
+          "url": "https://fluentcommunity.co/docs/fluent-support-integration/"
+        },
         {
           "title": "Integrating FluentPlayer with FluentCommunity",
           "url": "https://fluentcommunity.co/docs/integrating-fluentplayer-with-fluentcommunity/"
@@ -367,8 +375,12 @@
       "slug": "space-management",
       "url": "https://fluentcommunity.co/docs/documentation/space-management/",
       "file": "categories/space-management.md",
-      "page_count": 14,
+      "page_count": 15,
       "pages": [
+        {
+          "title": "Media Gallery for Space",
+          "url": "https://fluentcommunity.co/docs/media-gallery-for-space/"
+        },
         {
           "title": "Add Custom Links",
           "url": "https://fluentcommunity.co/docs/add-custom-links/"

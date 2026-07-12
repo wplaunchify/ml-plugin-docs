@@ -4,6 +4,262 @@
 
 ---
 
+## FluentSMTP Integration
+
+**Source:** [https://fluentcommunity.co/docs/fluentsmtp-integration/](https://fluentcommunity.co/docs/fluentsmtp-integration/)
+
+FluentCommunity sends a lot of email on your behalf — new comment alerts, comment replies, post announcements, weekly digests, and more. For your community to stay active, those emails need to reliably reach the inbox instead of the spam folder or getting dropped entirely.
+
+That’s where FluentSMTP comes in. FluentSMTP is a free WordPress mailer plugin that routes your site’s outgoing email through a trusted email service (like Amazon SES, SendGrid, Mailgun, Google Workspace, Microsoft 365, and many more). The result: much better deliverability and full visibility into what’s being sent.
+
+**The key thing to know:**FluentCommunity does NOT have a separate FluentSMTP setting or connection to configure. FluentSMTP works at the WordPress level for your entire site. Once it’s installed and connected, every email FluentCommunity sends automatically goes through it — no extra wiring needed.
+
+**How the Two Work Together**
+
+Think of it as a simple hand-off:
+
+• **FluentCommunity**decides what to send and who to send it to (the notification, the digest, the announcement) and sets the sending identity — your From Name, From Email, reply-to details, and footer.
+
+• **FluentSMTP**takes that email and actually delivers it through your chosen email service, so it arrives reliably and is logged for your review.
+
+**In short:**FluentCommunity handles the message; FluentSMTP handles the delivery. Together they make community email smooth and dependable.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fc-settings-scaled.webp)
+
+#### Connect FluentSMTP
+
+This is a quick, one-time setup that benefits your whole site — not just FluentCommunity.
+
+1. From your WordPress dashboard, go to **Settings → FluentSMTP**.
+
+2. Click and choose your email service provider (for example, Amazon SES, SendGrid, Mailgun, Google Workspace, or SMTP).
+
+3. Enter the **From Email** and **From Name** you want your site to send from, then add the provider’s API keys or SMTP credentials.
+
+4. Save the connection, then use the **Email Test** tab to send a test email and confirm delivery works.
+
+**That’s it:**Once this connection is active, all WordPress email — including everything FluentCommunity sends — is routed through FluentSMTP automatically. There is nothing to switch on inside FluentCommunity itself.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/smtp-scaled.webp)
+
+#### Set Your Sending Identity in FluentCommunity
+
+While FluentSMTP handles delivery, FluentCommunity controls how your emails look and who they appear to come from. You configure this on the FluentCommunity email settings page.
+
+Go to your **FluentCommunity** settings and open the **Mailing Settings** section. Here you’ll find:
+
+• **From Name:**The name your emails are sent from (for example, your community or brand name).
+
+• **From Email:**The address your emails are sent from. Use a valid address that matches your domain and your FluentSMTP connection — this keeps deliverability high and avoids spam filters.
+
+• **Reply-to Name (optional):**The name used for the reply-to address.
+
+• **Reply-to Email (optional):**Where replies should go if a member responds to a notification email.
+
+• **Email Footer:**The footer added to every FluentCommunity email. It’s recommended to include your business name and address for compliance. You can use smart codes like {{site_name_with_url}} and {{manage_email_notification_url|Manage Your Email Notifications Preference}} to insert dynamic links.
+
+• **Logo for Email Header:**Upload a logo to brand the top of your emails.
+
+**Deliverability tip:**Make sure the From Email here uses the same domain you authenticated in FluentSMTP (with SPF, DKIM, and DMARC set up at your provider). Matching them is the single biggest thing you can do to keep community emails out of the spam folder.
+
+When you’re done, click **Save Settings**.
+
+#### Choose Which Emails Get Sent
+
+Just below the Mailing Settings, the Email Notification Settings control the default emails sent to your community members. (Individual members can override these for their own preferences.)
+
+• **Email on new comment:**Send an email to the author when a new comment is added to their post.
+
+• **Email on comment reply:**Email authors when someone replies to their comments.
+
+• **Email Announcement on Post:**Give admins and moderators the option to send an email when they post in a space.
+
+• **Enable Weekly Digest Email:**Send members a weekly roundup of community activity. Members can turn their own digest on or off.
+
+• **Digest day & time:**Choose which day (e.g., Every Tuesday) and the approximate time (e.g., 09:00) the digest emails start sending.
+
+Every one of these emails is delivered through FluentSMTP behind the scenes. Click **Save Settings** once you’ve made your choices.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fc-email-scaled.webp)
+
+#### Test and Verify
+
+After setup, confirm everything is flowing correctly:
+
+5. In **FluentSMTP → Email Test**, send a test email to yourself and confirm it arrives.
+
+6. Trigger a real FluentCommunity email — for example, add a comment on a post — and check that the author receives the notification.
+
+7. Open **FluentSMTP → Email Logs** to see a record of every email sent, including status. This is your go-to place if you ever need to confirm an email went out.
+
+**Troubleshooting:**If an email doesn’t arrive, check the FluentSMTP Email Logs first. A failed entry there points to a delivery/provider issue (fix in FluentSMTP), while a successful entry means the email was sent and the issue is likely on the receiving side (spam folder, filtering, or a typo in the recipient address).
+
+With FluentSMTP handling delivery and FluentCommunity handling the message, your community emails become fast, reliable, and fully trackable — all without a single extra connection to configure inside FluentCommunity. Set your sending identity once, choose your notifications, and let FluentSMTP do the heavy lifting.
+
+---
+
+## Fluent Support Integration
+
+**Source:** [https://fluentcommunity.co/docs/fluent-support-integration/](https://fluentcommunity.co/docs/fluent-support-integration/)
+
+Integrating Fluent Support with FluentCommunity brings your community and your support desk together into one smooth experience. Once the two plugins are connected, you can:
+
+• **Automatically route support tickets** based on the course a member is taking.
+
+• **Give your support agents instant community and course context** inside every ticket.
+
+• **Embed the Fluent Support portal directly inside your FluentCommunity space**, so members never have to leave.
+
+In short: your members get help without leaving the community, and your agents get the full picture of who they’re helping all in one place.
+
+**A Real-World Example**
+
+Imagine a student enrolled in your “Advanced SEO” course runs into a problem. They submit a support ticket and simply pick their course from a dropdown menu.
+
+Behind the scenes, a workflow rule automatically assigns that ticket to your SEO specialist. When the agent opens it, a FluentCommunity widget instantly shows that the student is on “Lesson 5: Link Building.” The agent now has full context to solve the problem quickly no back-and-forth needed.
+
+**Before You Begin**
+
+To use this integration, make sure the following are in place:
+
+• **FluentCommunity** is installed and active on your WordPress site.
+
+• **Fluent Support** is installed and active on the same site.
+
+• You have **administrator access** to your WordPress dashboard.
+
+**Good to know:**The FluentCommunity options described below only appear inside Fluent Support when FluentCommunity is installed and active. If you don’t see them, double-check that both plugins are enabled.
+
+## Embed Fluent Support Inside FluentCommunity
+
+If your support space lives inside FluentCommunity, you can make Fluent Support reachable right there. Once set up, the ticket links in your email notifications will send members into FluentCommunity instead of a separate, standalone portal page.
+
+**Step 1: Set FluentCommunity as the Portal Destination**
+
+1. Go to Fluent Support from your WordPress dashboard.
+
+2. Open Settings and click Global Settings in the left sidebar.
+
+3. In the Customer Portal section, select FluentCommunity Portal.
+
+4. A FluentCommunity Portal URL will appear below the option. Click Copy to copy it — you’ll add it to your FluentCommunity menu in the next step.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fs-integration-0-scaled.webp)
+
+6. Click Save Settings.
+
+**Note:**The FluentCommunity Portal option only appears when FluentCommunity is installed and active on your site.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fs-integration-0.5-scaled.webp)
+
+**Step 2: Add the Portal URL to Your FluentCommunity Navigation**
+
+Now that you’ve copied the portal URL, add it to your community menu:
+
+7. Go to your FluentCommunity settings.
+
+8. Open the navigation or menu settings for your community space.
+
+9. Add a new menu item and paste the Fluent Support portal URL as the link.
+
+10. Save the FluentCommunity menu.
+
+**Result:**A Portal tab now appears in your community navigation. From there, members can create new tickets and track all of their existing ones without ever leaving FluentCommunity.
+
+### Let Members Pick Their Course on a Ticket
+
+This step adds a special field to your support portal so customers can select the exact FluentCommunity course they need help with when they submit a ticket.
+
+**Step 1: Open Custom Ticket Fields**
+
+In your Fluent Support dashboard, go to Settings and choose Custom Fields from the side menu. Click the **Add New Field** button to open the settings modal. A window titled Add New Custom Field will appear.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fs-integration-1-scaled.webp)
+
+**Step 2: Configure the FluentCommunity Course Field**
+
+In the **Field Type** dropdown, select **Fluent Community Courses** (or **Fluent Community User Courses**).
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fs-integration-3-scaled.webp)
+
+Then fill in the details below:
+
+• **Field Type:**Choose the type of field to create — here, set it to Fluent Community Courses or Fluent Community User Courses.
+
+• **Public Label:**The label your members see. Make it clear and descriptive (e.g., “Which course do you need help with?”).
+
+• **Admin Label (optional):**A label visible only to admins and support agents.
+
+• **Slug (optional):**A unique identifier for the field. It’s auto-prefixed with cf_ and cannot be changed once saved.
+
+• **Placeholder:**Optional guide text inside the field (e.g., “Select your course here”).
+
+• **This is an agent-only field:**Check this to show the field to support agents only, not to members.
+
+• **Enable Conditional Logics:**Check this to control when the field appears based on other field values.
+
+• **Required:**Check this box to make choosing a course mandatory.
+
+When you’re done, click the Add button at the bottom to save and create the custom field.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fs-integration-4-scaled.webp)
+
+**Tip:**Once you save the field, members will see a course dropdown on the ticket form and your agents will know exactly which course each ticket relates to.
+
+### Automate Ticket Routing with a Workflow
+
+With your new course field in place, you can build workflows that automatically take action based on the course a member selects like assigning the ticket to the right specialist.
+
+**Step 1: Open Workflows**
+
+From your Fluent Support dashboard, go to the More menu and select **Workflows**. You’ll see all your existing workflows here. Click the **Create New**button to start a new one.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fs-integration-5-scaled.webp)
+
+In the pop-up, provide a Workflow Name and select **Automatic** as the Workflow Type. Then click the **Create Workflow** button.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fs-integration-6-scaled.webp)
+
+**Step 2: Set Triggers, Conditions, and Actions**
+
+• **Workflow Trigger:**Choose the event that starts the workflow from the dropdown (for example, On Ticket Creation).
+
+• **Conditions:**Refine when the workflow should run. Use the dropdowns to pick a condition — such as the Fluent Community Courses field — set it to Equal, and choose the target course. Combine conditions with + OR (for alternatives) or + AND (when all conditions must be true).
+
+• **Workflow Actions:**Define what happens when the conditions are met — for example, Assign Agent to route the ticket to a specific specialist. Add more steps with the Add Another Action button.
+
+**Don’t forget:**When you’re done, save the workflow and switch its status from Draft to Published — otherwise it won’t run.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fs-integration-7-scaled.webp)
+
+### FluentCommunity Widget in the Ticket View
+
+Once the integration is set up, a dedicated Fluent Community Courses widget appears for your agents inside each individual support ticket.
+
+**Where It Appears**
+
+When an agent opens a support ticket, the FluentCommunity widget shows up on the right-hand sidebar, giving them immediate context about the customer’s course enrollments.
+
+**What It Shows**
+
+The widget displays key details about the customer’s FluentCommunity activity, including:
+
+• **Course Name:**The title of the enrolled course.
+
+• **Progress:**How far the customer has progressed in the course.
+
+• **Enrolled At:**The date the customer enrolled in the course.
+
+**The payoff:**Your agents see exactly who they’re helping and where that member is in their learning journey — so every reply is faster, more personal, and more helpful.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/07/fs-integration-8.webp)
+
+**You’re All Set**
+
+With FluentCommunity and Fluent Support working together, your community becomes a true support hub: members raise and track tickets without leaving the space, tickets route themselves to the right people, and your agents always have the full story.
+
+---
+
 ## Integrating FluentPlayer with FluentCommunity
 
 **Source:** [https://fluentcommunity.co/docs/integrating-fluentplayer-with-fluentcommunity/](https://fluentcommunity.co/docs/integrating-fluentplayer-with-fluentcommunity/)
