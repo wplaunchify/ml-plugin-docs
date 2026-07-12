@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T04:16:53.488Z",
+  "last_updated": "2026-07-12T05:02:36.021Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -98,7 +98,7 @@
       "slug": "affiliatewp-direct-link-tracking",
       "name": "AffiliateWP - Direct Link Tracking",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-05T16:53:12.649Z",
+      "last_scraped": "2026-07-12T05:02:36.021Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
