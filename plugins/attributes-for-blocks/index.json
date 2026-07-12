@@ -2,8 +2,8 @@
   "plugin_slug": "attributes-for-blocks",
   "plugin_name": "Attributes for Blocks",
   "documentation_url": "https://wordpress.org/plugins/attributes-for-blocks/",
-  "last_scraped": "2026-07-05T13:30:31.384Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T13:29:45.659Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Attributes for Blocks",
           "url": "https://wordpress.org/plugins/attributes-for-blocks/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/attributes-for-blocks/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Attributes for Blocks",
+          "url": "https://wordpress.org/plugins/attributes-for-blocks/"
         }
       ]
     }
