@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T22:15:40.720Z",
+  "last_updated": "2026-07-12T22:16:04.437Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -149,7 +149,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com/documentation/",
-      "last_scraped": "2026-07-12T18:24:46.869Z",
+      "last_scraped": "2026-07-12T18:24:46.865Z",
       "page_count": 13,
       "categories": [
         "changelog",
@@ -596,7 +596,7 @@
       "slug": "fluent-support",
       "name": "Fluent Support",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-07-12T21:18:41.207Z",
+      "last_scraped": "2026-07-12T21:18:41.203Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -653,7 +653,7 @@
       "slug": "fluentaffiliate-pro",
       "name": "FluentAffiliate Pro",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-07-12T19:25:17.072Z",
+      "last_scraped": "2026-07-12T19:25:17.070Z",
       "page_count": 53,
       "categories": [
         "admin-portal",
@@ -2630,7 +2630,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-07-12T21:17:22.008Z",
+      "last_scraped": "2026-07-12T21:17:22.004Z",
       "page_count": 11,
       "categories": [
         "detective-mode",
@@ -2800,7 +2800,7 @@
       "slug": "store-credit-for-woocommerce",
       "name": "Store Credit for WooCommerce",
       "documentation_url": "https://woocommerce.com/document/woocommerce-store-credit/",
-      "last_scraped": "2026-07-12T19:28:03.676Z",
+      "last_scraped": "2026-07-12T19:28:03.675Z",
       "page_count": 1,
       "categories": [
         "overview"
@@ -2891,7 +2891,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/",
-      "last_scraped": "2026-07-12T22:15:40.720Z",
+      "last_scraped": "2026-07-12T22:15:40.717Z",
       "page_count": 13,
       "categories": [
         "activation",
@@ -3099,7 +3099,7 @@
       "slug": "wp-all-export-user-export-add-on-pro",
       "name": "WP All Export - User Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-12T21:16:29.743Z",
+      "last_scraped": "2026-07-12T21:16:29.738Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
@@ -3109,7 +3109,7 @@
       "slug": "wp-all-import-acf-add-on-free",
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-12T20:17:28.651Z",
+      "last_scraped": "2026-07-12T20:17:28.647Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
@@ -3139,8 +3139,8 @@
       "slug": "wp-all-import-user-import-add-on-pro",
       "name": "WP All Import - User Import Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-05T22:19:25.292Z",
-      "page_count": 198,
+      "last_scraped": "2026-07-12T22:16:01.962Z",
+      "page_count": 199,
       "categories": [
         "uncategorized"
       ]

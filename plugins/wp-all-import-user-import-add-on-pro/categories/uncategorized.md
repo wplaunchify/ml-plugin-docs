@@ -4,6 +4,187 @@
 
 ---
 
+## How to Import Google Sheets to WooCommerce
+
+**Source:** [https://www.wpallimport.com/documentation/google-sheets-woocommerce/](https://www.wpallimport.com/documentation/google-sheets-woocommerce/)
+
+To import Google Sheets to WooCommerce, use the Google Sheet’s sharing URL in **All Import › New Import › Download a file › From URL**, map columns to corresponding product fields using the drag & drop interface. WP All Import lets you schedule updates, control which fields to update, and even remove items that disappear from your Google Sheets.
+
+If you'd like to watch a video on this topic:
+
+Otherwise, you can keep reading the written article below.
+
+## Before Starting
+
+There are two ways to make a Google Sheets file accessible to WooCommerce:
+
+- **Share Link**: Choose the "**Anyone with the link**" option. This is the recommended and fastest way for imports. Copy the link and paste it in the **Download a file › From URL**. WP All Import will use the first sheet.
+- **Publish to the web**: Choose the "**Comma-separated value (CSV)**" option. This produces a direct URL to access the chosen sheet/tab as a CSV.
+
+Both methods work, but we're going to use the share link method in this guide. You also need to make sure that you have **WP All Import Pro** and the **WooCommerce Import Add-On Pro** active and installed on your site.
+
+If you don't know which method to use, start with the regular share link that uses the first sheet by default. You can switch to the published CSV URL if you need to import a different sheet from your spreadsheet.
+
+## Step 1: Obtain "Share link" from Import File in Google Sheets
+
+If you don't have a spreadsheet already, go to Google Sheets and start a new spreadsheet. Set up columns for each product field you plan to import like title, description, price, SKU, images, categories, etc. We recommend one row per record. Add the data into the first sheet of your spreadsheet.
+
+![Import Google Sheets to WooCommerce The Google Sheets File](https://www.wpallimport.com/wp-content/uploads/2026/07/Import-Google-Sheets-to-WooCommerce-The-Google-Sheets-File-1024x575.png)
+
+Once the data looks OK, make the Google Spreadsheet accessible to anyone by obtaining a sharing link.
+
+Click **Share**, then under **General Access** choose **Anyone with the link** and copy the link.
+
+![Import Google Sheets to WooCommerce Share Google Sheets File with Anyone](https://www.wpallimport.com/wp-content/uploads/2026/07/Import-Google-Sheets-to-WooCommerce-Share-Google-Sheets-File-with-Anyone-1024x578.png)
+
+This method shares the first sheet found in the Google Spreadsheet by default. If there are more sheets to import, you can move the data into the first sheet or publish the other sheets as CSVs.
+
+## Step 2: Create New Import Using Google Sheets URL
+
+Next proceed to create the import process for WooCommerce. In your WordPress site, go to **All Import** **›** **New Import**, select **Download a file** › **From URL** and then paste the sharing link we previously obtained as the source URL.
+
+Proceed to select the target post type, WooCommerce Products in this case, and click **Set Up Import**. You could also import WooCommerce Orders, Coupons, Reviews, or Customers.
+
+![Import Google Sheets to WooCommerce Create New Import with Google Sheets URL as Source](https://www.wpallimport.com/wp-content/uploads/2026/07/Import-Google-Sheets-to-WooCommerce-Create-New-Import-with-Google-Sheets-URL-as-Source-1024x676.png)
+
+WP All Import will download the latest version of the import file and detect the columns. It will retrieve all data from the first sheet and you can then proceed to map the retrieved data to WooCommerce.
+
+## Step 3: Map Import Template to Configure Google Sheets to WooCommerce Import
+
+Next you'll find the **Drag & Drop** screen. This lets you map all of your CSV data and fields into the corresponding WooCommerce fields. The data from the Google Sheets appears on the right.
+
+To import from Google Sheets to WooCommerce, drag each element from the right into its matching field on the left. You are able to map title, description, excerpt, prices, SKU, inventory data, attributes, taxonomies like product categories or tags, custom fields, images, etc. You'll find a corresponding field to map all the WooCommerce data you're importing into.
+
+![Import Google Sheets to WooCommerce Map Elements and Configure Import](https://www.wpallimport.com/wp-content/uploads/2026/07/Import-Google-Sheets-to-WooCommerce-Map-Elements-and-Configure-Import-1024x616.png)
+
+There is no limitation or imposition on how the data gets imported or how it should be formatted. You just need to map the data accordingly. WP All Import allows you to filter records, use PHP to modify data on the fly, and map to any third-party plugin or theme by using the custom fields feature.
+
+To import images, provide the complete URL to access the images so they can be added into the Media Library.
+
+Once all fields have been correctly mapped, proceed to click **Continue to Import Settings** at the bottom of the page.
+
+## Step 4: Configure Import Settings
+
+Now you see the **Import Settings** screen. In here, you can assign a **Unique Identifier** using the **Auto-detect** button. This identifier allows WP All Import to match rows to existing records whenever the import runs again.
+
+You also decide what's to happen in future import runs: either to create or not create new records, update existing ones, and/or remove items missing from the imported Google Sheets.
+
+- **What to update**: Use the **Choose which data to update** option to update only specific fields (like stock or price) while leaving other fields intact.
+- **Remove or modify missing items**: If rows are removed from Google Sheets and you want them removed or modified in WordPress, enable the **Remove or modify records not present in this import file** option.
+- **Scheduling**: Define manual cron jobs or enable the Automatic Scheduling Service so the import runs on a schedule (like hourly, daily, weekly, etc.). This is ideal to keep your WooCommerce data synchronized with ongoing changes in your Google Sheets.
+
+![Import Google Sheets to WooCommerce Define Import Settings](https://www.wpallimport.com/wp-content/uploads/2026/07/Import-Google-Sheets-to-WooCommerce-Define-Import-Settings-1024x610.png)
+
+When you complete your settings, click on **Continue**. Next you can confirm the import details and double-check what happens when the import runs. Once everything is confirmed and you're ready to run the import, click **Confirm & Run Import**.
+
+![Import Google Sheets to WooCommerce Summary Before Running Import Process](https://www.wpallimport.com/wp-content/uploads/2026/07/Import-Google-Sheets-to-WooCommerce-Summary-Before-Running-Import-Process-1024x711.png)
+
+Now the import runs and processes all records, importing all of your data from Google Sheets to WooCommerce.
+
+## Step 5: Review Google Sheets to WooCommerce Import
+
+Once the import is done, you can check the target post type (e.g., products, or orders, reviews, etc) and review some of the imported records to ensure everything looks correct.
+
+You can confirm titles, descriptions, SKUs, prices, product type, images, etc. If you have to adjust something, just modify the field mappings or update the import data and re-run the import process. When the import runs again, WP All Import will respect import mappings and settings, but it will update imported matching items with the new data.
+
+![Import Google Sheets to WooCommerce Review Imported Products](https://www.wpallimport.com/wp-content/uploads/2026/07/Import-Google-Sheets-to-WooCommerce-Review-Imported-Products-1024x576.png)
+
+That's it! You've successfully imported data from Google Sheets into WooCommerce using WP All Import and the WooCommerce Import Add-On.
+
+## Import Google Sheets to WooCommerce – Advanced Topics
+
+### Run Automatic Imports from Google Sheets to WooCommerce
+
+WP All Import allows you to keep your Google Sheets synchronized with WooCommerce by scheduling imports so they run automatically. This can be done with two methods:
+
+- [Automatic Scheduling](https://www.wpallimport.com/documentation/schedule-wordpress-imports/): this method can be configured from within WP All Import.
+- [Manual cron jobs](https://www.wpallimport.com/documentation/cron/): this method requires setting up cron jobs in your server that call WP All Import's endpoints on a defined interval.
+
+Both methods will check the source Google Sheets URL, download a fresh copy, and then apply any updates automatically based on the defined import settings and import template.
+
+Scheduled imports don't run the moment you edit your sheet—they run on their configured interval, so there's a delay between your edit and WooCommerce updating.
+
+### Import Any WordPress Data from Google Sheets
+
+You are able to import any WordPress data like posts, pages, comments, users, taxonomies, or any other custom post type available during the setup and use the main WP All Import capabilities.
+
+You map your Google Sheets columns and data to their corresponding WordPress field during import (title, description, custom fields, etc.). You can then schedule that import so it runs automatically and keeps the data in sync.
+
+To update only specific data pieces from your sheet, use **Choose which data to update** and select the specific fields you want to update. This lets you run frequent import updates without touching or modifying existing data.
+
+### Transform Data On the Fly Using PHP
+
+Use PHP built-in functions or your own custom PHP functions to transform the imported data on the fly. This lets you modify any imported data to whatever is required by your import process, or perhaps clean up the imported WooCommerce data so that you remove anything that shouldn't be imported.
+
+Learn more about using PHP code when importing into WP All Import here: [Calling PHP Functions In Your Import Configuration](https://www.wpallimport.com/documentation/inline-php/).
+
+### Delete Products Removed From Google Sheets
+
+Use the **Remove or modify records not present in this import file** option to automatically delete products removed from your Google Sheets spreadsheet. You enable that option in the import settings, and you need to ensure that it's set up correctly since it can damage your site and remove all products if it's not properly configured. To test it out, you can use a [sandbox](https://wpallimport.com/try) environment. To learn more about this feature, please read: [Remove or Modify Data Missing From the Import File](https://www.wpallimport.com/documentation/remove-data-missing-from-the-import-file/).
+
+### Update Google Sheets Source URL
+
+Whenever your Google Sheets file changes (for example, due to having a new Google Sheets document), you can update the source URL like this:
+
+1. Locate your import in **All Import › Manage Imports**
+2. Click on **Settings** for the import.
+3. Change the source under **Download a file › From URL**, found in the **Import File** section. Use the new Google Sheets URL
+4. Save the settings and the next time the import runs, it will use the new Google Sheets.
+
+Go back to **All Import › Manage Imports** to confirm that the new Google Sheets URL is saved and synced, as it will appear for the changed import under the import name.
+
+### Update Stock or Price for Existing Products
+
+To update only stock or prices for existing products, use the **Choose which data to update** in the Import Settings and tick just the fields you want to change: stock and prices. Everything else is left untouched. That way, you can update only the specific products data pieces you want to update. You maintain the SKUs, prices and stocks in a Google Sheet and then tell the import to only update those specific fields. Finally, you can enable a schedule to make this import run automatically.
+
+## Import Google Sheets to WooCommerce — Frequently Asked Questions
+
+### How do I pull data from Google Sheets to WordPress?
+
+You would use a plugin like WP All Import to import the Google Sheet's rows into WordPress as content. Then, you can automate that import so the pulling happens automatically on a schedule.
+
+### How do I connect Google to WooCommerce?
+
+When it comes to Google Sheets data, you would use a plugin like WP All Import and the WooCommerce Import Add-On to connect your Google Sheets with WooCommerce and import the data directly, without having to manually input data pieces.
+
+### Can WooCommerce handle 50,000 products?
+
+Even though WooCommerce is a plugin on top of blogging software (WordPress), yes, it should be able to handle 50,000 products as long as the web host and server have enough resources.
+
+### Can you embed Google Sheets into WordPress?
+
+Yes, you could *embed* a published Google Sheet in a WordPress page or a WordPress post by using **File › Share › Publish to the web** and then embedding the Google Sheet's link. You can also *import* the sheet’s rows into WordPress as content.
+
+### How do I import WooCommerce product images from Google Sheets?
+
+You would add the full image URL to each WooCommerce product in your Google Sheets. When creating the import template, map those image URLs into the Images fields found in WP All Import. The plugin will download those images into the Media Library, or match existing images on your site. You should avoid hosting images in Google Drive due to rate limits imposed by Google. Instead, use a CDN or a conventional server to host your images.
+
+### How do I limit updates to specific fields (e.g., only stock & price)?
+
+This is done in the Import Settings by using the **Choose which data to update** option. You would enable that and then tick which specific fields you want to change. Everything else that's unticked will be left unchanged. This way, you only update the specific data pieces you want to update, like price or stock.
+
+### What if my Google Sheet has multiple tabs?
+
+You would need to move your data into the first tab to use the "**Sharing link**" method described above. Alternatively, you can publish the CSV which is done per tab and then use the CSV URL as source in WP All Import.
+
+### What plugin do I need to import Google Sheets to WooCommerce?
+
+You would need WP All Import Pro and the WooCommerce Import Add-On Pro to import data from Google Sheets to WooCommerce easily and without hassle.
+
+### How do I keep WooCommerce in sync when Google Sheets changes?
+
+You can use WP All Import's [manual cron jobs](https://www.wpallimport.com/documentation/cron/) or the [Automatic Scheduling](https://www.wpallimport.com/documentation/schedule-wordpress-imports/) Service. Just configure what happens on each run (creating, updating, removing) and then set up the import schedule. Since schedules always run at the same time and are asynchronous, this means the import won't process any change when you update the Google Sheet, only when the import runs next.
+
+## Import Google Sheets to WooCommerce — Related Information
+
+Learn how to import data from Google Sheets to WordPress using WP All Import.
+
+Learn how to import your data into your WordPress site using WP All Import and its add-ons.
+
+Use manual cron jobs to schedule and automate your WordPress import process.
+
+---
+
 ## InstaWP: All-in-One WordPress Cloud Platform
 
 **Source:** [https://www.wpallimport.com/documentation/instawp/](https://www.wpallimport.com/documentation/instawp/)
@@ -3178,15 +3359,15 @@ These edit boxes will accept any of the following:
 
 ### How Do I Get WP All Import to Detect Custom Fields That Don't Yet Have Any Data in Them?
 
-Just create a dummy post, enter values in the fields you want to import, and then publish it. Our plugin will then detect those custom fields and their values.
+Just create a dummy post, enter values in the fields you want to import, and then publish it. Our plugin will then detect those custom fields and their values. For more information, see [Custom Fields Overview](https://www.wpallimport.com/documentation/theme-plugin-fields/).
 
 ### What If the Import Data Contains Different Values Than the Ones I Want to Store in My Custom Fields?
 
-In this scenario, you'll need to map the incoming values to the desired values. Our plugin is already set up to let you do this through the interface. For more information, see [How to Map Custom Fields](https://www.wpallimport.com/documentation/mapping-fields/).
+In this scenario, you'll need to map the incoming values to the desired values. Our plugin is already set up to let you do this through the interface. To learn more, see [How to Map Custom Fields](https://www.wpallimport.com/documentation/mapping-fields/).
 
 ### What If a Single Import Data Element Contains Multiple Data Points?
 
-No problem. These multi-value data elements are often referred to as serialized fields. Fortunately, WP All Import has a built-in feature that lets you break serialized fields into a set of key/value pairs during the import process.
+No problem. These multi-value data elements are often referred to as serialized fields. Fortunately, WP All Import has a built-in feature that lets you break serialized fields into a set of key/value pairs during the import process. See [Serialized Fields](https://www.wpallimport.com/documentation/serialized-fields/) for more information.
 
 ## Import Custom Fields to WooCommerce Products — Related Docs
 
@@ -3344,7 +3525,7 @@ function my_set_user_id( $post_id, $xml_node, $is_update ) {
 add_action( 'pmxi_saved_post', 'my_set_user_id', 10, 3 );
 ```
 
-![Import WordPress Users Create New Import](https://www.wpallimport.com/wp-content/uploads/2026/06/Import-WordPress-Users-Create-New-Import-1024x665.png)
+![Screenshot of WP All Import upload page with CSV file and options.](https://www.wpallimport.com/wp-content/uploads/2026/06/Import-WordPress-Users-Create-New-Import-1024x665.png)
 
 ![Import WordPress Users Confirm and Run](https://www.wpallimport.com/wp-content/uploads/2022/03/Import-WordPress-Users-Confirm-and-Run-1024x725.jpg)
 
@@ -8074,11 +8255,11 @@ You can also schedule your imports manually by creating cron jobs on your server
 
 ### How Do I Schedule an Automatic Import Daily?
 
-To schedule an automatic import on a daily basis, just select all days in the preceding image for the **Every week on...** option. In other words, you schedule it to run every day for every week.
+To schedule an automatic import on a daily basis, just select all days in the preceding image for the **Every week on...** option. In other words, schedule it to run every day for every week.
 
 ### How Do I Handle Situations Where the Import File Contains Products That Already Exist in My Store?
 
-Fortunately, there are a set of options in the **Import Settings** screen that allow you to instruct WP All Import on exactly how to handle this situation. These include whether to create new records for new products, update existing products, or remove existing products if they are no longer in your import file.
+There is a set of options in the **Import Settings** screen that let you instruct WP All Import on how to handle this situation. These include whether to create new records for new products, update existing products, or remove existing products if they are no longer in your import file.
 
 ![](https://www.wpallimport.com/wp-content/uploads/2026/06/Automatically-Import-WooCommerce-Products-Import-Settings-1024x583.png)
 
@@ -8253,7 +8434,7 @@ If you're unable to figure out the issue, try to replicate your import and any p
 
 1. Create a new import via **All Import › New Import**.
 2. Upload your XML file with your WooCommerce data.
-3. Select the correct WooCommerce post type.
+3. Choose the correct WooCommerce post type.
 4. Edit the import template and drag and drop your import fields.
 5. Run the import and verify your imported WooCommerce data.
 
@@ -8262,12 +8443,12 @@ The steps to import an XML file into WooCommerce are essentially the same as des
 ### How Do I Import a CSV Attribute into WooCommerce?
 
 1. Go to **All Import › New Import** and upload your CSV with attributes.
-2. Choose **Taxonomies**from the drop-down list.
+2. Select **Taxonomies**from the drop-down list.
 3. Locate your desired attribute and continue.
 4. Drag and drop the import fields to map the term's information.
 5. Run the import and verify the newly imported attribute.
 
-We explain more about importing taxonomy data here: [How to Import WordPress Categories and Tags](https://www.wpallimport.com/documentation/how-to-import-wordpress-categories-and-tags/).
+To learn more about importing taxonomy data, see [How to Import WordPress Categories and Tags](https://www.wpallimport.com/documentation/how-to-import-wordpress-categories-and-tags/).
 
 ### How Do I Schedule WooCommerce Data Imports?
 
@@ -8510,20 +8691,20 @@ To bulk add coupons in WooCommerce, just follow this tutorial. "Bulk add" and "i
 ### How Do I Export WooCommerce Coupons?
 
 1. Go to **All Export › New Export**.
-2. Choose **WooCommerce Coupons** as the post type to export.
+2. Select **WooCommerce Coupons** as the post type to export.
 3. Click **Customize Export File** and build your export template.
 4. Run the export and download the exported coupons.
 
-You can learn more about this process in the following documentation: [How to Export WooCommerce Coupons](https://www.wpallimport.com/documentation/how-to-export-woocommerce-coupons/).
+To learn more, see [How to Export WooCommerce Coupons](https://www.wpallimport.com/documentation/how-to-export-woocommerce-coupons/).
 
 ### How Do I Export Store Data From WooCommerce?
 
 1. Got to **All Export › New Export**.
-2. Choose the WooCommerce data you want to export from the dropdown list.
+2. Select the WooCommerce data you want to export from the dropdown list.
 3. Configure the export template and run the export.
 4. Download the exported store data from your WooCommerce site.
 
-You can learn more about the export process in depth here: [How to Export WordPress to CSV, Excel, and XML](https://www.wpallimport.com/documentation/how-to-export-wordpress-csv-excel-xml/).
+For more information, see [How to Export WordPress to CSV, Excel, and XML](https://www.wpallimport.com/documentation/how-to-export-wordpress-csv-excel-xml/).
 
 ### What Add-Ons Do I Need to Import WooCommerce Coupons?
 
@@ -9022,19 +9203,13 @@ Out of the box, all images will be automatically downloaded to WordPress, and it
 
 ## Import Products With Images – Frequently Asked Questions
 
-### How Do I Import a Product Image into WooCommerce?
+### How Do I Import Product Images from CSV  or Google Sheets to WooCommerce?
 
-To import a product image into WooCommerce, follow the steps from this guide. You can import a single product with a single image, or you can import multiple products, each with multiple images.
-
-### How Do I Import Product Images from CSV or Google Sheets to WooCommerce?
-
-To import images from CSV or Google Sheets to WooCommerce, just specify the CSV file as your import data source. Our plugin will automatically recognize the file format and adjust its interfaces accordingly.
+To import images from CSV to WooCommerce, just specify the CSV file as your import data source. Our plugin will automatically recognize the file format and adjust its interfaces accordingly. For information on Google Sheets, see [How to Import Google Sheets to WooCommerce](https://www.wpallimport.com/documentation/google-sheets-woocommerce/).
 
 ### How Do I Import Products with Multiple Images in WooCommerce?
 
-To import products with multiple images, the **Images** section provides you with several options. For example, if an incoming data element contains multiple images per product, you can specify the character that our plugin should use to separate those images.
-
-For more information, see [Variable Number Of Images Per Post](https://www.wpallimport.com/documentation/variable-number-of-images-per-post/).
+To import products with multiple images, the **Images** section provides you with several options. For example, if an incoming data element contains multiple images per product, you can specify the character that our plugin should use to separate those images. To learn more, see [Variable Number Of Images Per Post](https://www.wpallimport.com/documentation/variable-number-of-images-per-post/).
 
 ### How Do I Bulk Upload Products with Images in WooCommerce?
 
@@ -9044,7 +9219,7 @@ For more information, see [Variable Number Of Images Per Post](https://www.wpall
 4. Be sure to map the product image fields.
 5. Run the import and review your newly imported data.
 
-To learn more about this process, please refer to the full guide above.
+For more information, please refer to the full guide above.
 
 ### How Do I Export All Products From WooCommerce with Images?
 
@@ -9053,7 +9228,7 @@ To learn more about this process, please refer to the full guide above.
 3. Set up your export columns and include your product images.
 4. Run the export and download the export file.
 
-Learn more about this process here: [Export WooCommerce Products with Images](https://www.wpallimport.com/documentation/export-woocommerce-products-with-images/).
+To learn more, see [Export WooCommerce Products with Images](https://www.wpallimport.com/documentation/export-woocommerce-products-with-images/).
 
 ### What Add-Ons Do I Need to Import WooCommerce Products?
 
@@ -9911,7 +10086,7 @@ Learn more about this process in [Send Exported WordPress Data via Email using Z
 
 ### How Do I Export Product Reviews from WooCommerce?
 
-To export product reviews from WooCommerce, just follow the steps in this guide, as WooCommerce reviews *are*product reviews, i.e., they are the same.
+To export product reviews from WooCommerce, just follow the steps in this guide, as WooCommerce reviews *are*product reviews.
 
 ### Where Are WooCommerce Reviews Stored?
 
@@ -9920,12 +10095,12 @@ WooCommerce product reviews are stored with all other comments in the wp_comment
 ### How Do I Import Reviews into WooCommerce?
 
 1. Go to **All Import > New Import**.
-2. Choose your import file.
-3. Select **WooCommerce Reviews** as your import type.
+2. Select your import file.
+3. Choose **WooCommerce Reviews** as your import type.
 4. Map the incoming data elements to their WooCommerce review fields.
 5. Run the import.
 
-For more information, see [How to Import Reviews to WooCommerce](https://www.wpallimport.com/documentation/how-to-import-reviews-to-woocommerce/).
+To learn more, see [How to Import Reviews to WooCommerce](https://www.wpallimport.com/documentation/how-to-import-reviews-to-woocommerce/).
 
 ### How Do I Migrate WooCommerce Reviews?
 
@@ -9936,7 +10111,7 @@ For more information, see [How to Import Reviews to WooCommerce](https://www.wpa
 5. Click **Skip to Step 4** and process the full import.
 6. Once completed, confirm that all reviews were correctly migrated.
 
-Learn more about migrating data in [How to Migrate WooCommerce and WordPress Data](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-and-wordpress-data/).
+For more information, see [How to Migrate WooCommerce and WordPress Data](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-and-wordpress-data/).
 
 ### What Add-Ons Do I Need to Export WooCommerce Reviews?
 
@@ -10114,7 +10289,9 @@ That's how you add WooCommerce reviews using the WordPress dashboard. If you hav
 
 ### How Do I Add Bulk Reviews in WooCommerce?
 
-To add bulk reviews in WooCommerce, just follow this guide. Our plugin doesn't care whether you're importing one review or 100,000 — the process for handling them is exactly the same. The only difference with a very large import is that you might want to take advantage of our advanced settings to control batch processing sizes.
+To add bulk reviews in WooCommerce, just follow this guide. Our plugin doesn't care whether you're importing one review or 100,000 — the process for handling them is exactly the same. The only difference with a very large import is that you might want to use our advanced settings to control batch processing sizes.
+
+If you're looking to bulk-edit reviews, see our [Bulk Edit Overview](https://www.wpallimport.com/documentation/bulk-edit-overview/).
 
 ### How Do I Export Reviews in WooCommerce?
 
@@ -10135,7 +10312,7 @@ You can create this export in any of our available formats to export (CSV, XML, 
 5. Upload the bundle file and click **Skip to Step 4**.
 6. Run the import.
 
-With our plugins, migrating WooCommerce reviews from one site to another is a simple task that  requires only a couple of clicks. This process can also be used to bulk edit reviews.
+With our plugins, migrating WooCommerce reviews from one site to another is a simple task that requires only a couple of clicks. For an overview of this process, see [How to Migrate WordPress Data](https://www.wpallimport.com/documentation/migrate-overview/).
 
 ### What Add-Ons Do I Need to Import WooCommerce Reviews?
 
@@ -11921,17 +12098,13 @@ Likewise, if the shipping amount is not imported or showing correctly, this can 
 
 ## Import WooCommerce Orders – Frequently Asked Questions
 
-### How to Import WooCommerce Orders Using XML?
-
-Simply identify your XML file as the source file for your order import. Our software will automatically recognize the file type and parse the data accordingly. It can handle any XML feed regardless of its complexity.
-
 ### How Do I Import a CSV or Google Sheets File into WooCommerce?
 
-Simply identify your CSV or Google Sheets file as the source file for the import, as WP All Import automatically recognizes the different file types. It will even adjust the interface/tool you use to review the data. As a user, you don't need to worry about the differences in the file types.
+Simply identify your CSV or Google Sheets file as the source file for the import. WP All Import will automatically recognize the different file types. It will even adjust the interface/tool you use to review the data. To learn more, see [How to Import Google Sheets to WooCommerce](https://www.wpallimport.com/documentation/google-sheets-woocommerce/).
 
 ### Is There a Specific Sequence I Should Use to Import WooCommerce Data?
 
-Yes, if you're importing multiple types of WooCommerce data, you should follow this sequence to import the data without issues:
+Yes, if you're importing multiple types of WooCommerce data, you should follow this sequence:
 
 1. WooCommerce Products
 2. WooCommerce Customers
@@ -11945,7 +12118,7 @@ Yes, if you're importing multiple types of WooCommerce data, you should follow t
 3. Run the export.
 4. Download your export file.
 
-To learn more, see [How to Export WooCommerce Orders to CSV, Excel, XML, or Google Sheets](https://www.wpallimport.com/documentation/how-to-export-woocommerce-orders-to-csv-or-xml/).
+For more information, see [How to Export WooCommerce Orders to CSV, Excel, XML, or Google Sheets](https://www.wpallimport.com/documentation/how-to-export-woocommerce-orders-to-csv-or-xml/).
 
 ### How to Migrate WooCommerce Orders From One Site to Another?
 
@@ -11954,7 +12127,7 @@ To learn more, see [How to Export WooCommerce Orders to CSV, Excel, XML, or Goog
 3. Import the bundle file via WP All Import.
 4. Complete the import process and verify the migrated orders.
 
-For more information, see [How to Migrate WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-orders/).
+To learn more, see [How to Migrate WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-orders/).
 
 ### What Table Stores WooCommerce Order Data?
 
@@ -14640,32 +14813,28 @@ function my_wpai_simple_product_func( $prod_id, $import_id ) {
 
 ### How Do I Bulk Upload Variable Products in WooCommerce?
 
-To bulk upload variable products in WooCommerce, simply follow the steps in this tutorial. Anytime that you import more than one variable product, you are "bulk uploading" variable products. Most imports do this, so there is nothing special about it.
-
-### How Do I Import a Variable Product CSV File into WooCommerce?
-
-To import a variable product CSV file into WooCommerce, just follow the instructions in this tutorial. WP All Import will recognize that your import file is CSV and will automatically adjust its interface to accommodate that format.
+To bulk upload variable products in WooCommerce, just follow the steps in this tutorial. Anytime you import more than one variable product, you are "bulk uploading" variable products. Most imports do this, so there is nothing special about it.
 
 ### How Do I Add New Variations to Existing Variable Products?
 
 1. Create a New Import via **All Import › New Import**.
 2. Upload the import file with the new variations.
-3. Set up a variable product's import and use the **I'm importing new variations to existing products** option in the **Variations** tab.
-4. Process the import and review that all new variations are added as expected.
+3. Set up a variable product's import using the **I'm importing new variations to existing products** option in the **Variations** tab.
+4. Process the import and verify that all new variations are added as expected.
 
-This is only possible with a **New Items** import, and the option described above won't appear with an **Existing Items** import. You can match with an existing variable parent product using any custom field or the product's title. You can also **Create new product if no existing product is found**.
+This is only possible with a **New Items** import, as the option described above won't appear with an **Existing Items** import. You can match with an existing variable parent product using any custom field or the product's title. You can also use **Create new product if no existing product is found**.
 
-This process can also be used to convert existing simple products into variable products.
+Finally, this process can also be used to convert existing simple products into variable products.
 
 ### How Do I Add New Variations Using the Bulk Edit Process?
 
 1. Create a new WooCommerce product export using WP All Export.
-2. Modify the exported products to add the new variations as desired.
-3. Ensure the variations comply with the same format in the existing sheet. If there are no variable products, just ensure that the parent row is above all the variations that belong to it (see [Example A](#examplea) above for reference).
+2. Modify the exported products to add the new variations.
+3. Ensure the variations comply with the format used in the existing sheet. If there are no variable products, just ensure that the parent row is above all the variations that belong to it (see [Example A](#examplea) above for reference).
 4. Use the **Import with WP All Import** option in **All Export › Manage Exports**.
 5. Leave the configurations as-is and proceed to re-import the products.
 
-Using the instructions above, you can generate a new export file with all WooCommerce products, add the new variations to that file, and then re-import everything to add new variations to existing products. See [How to Bulk Edit WooCommerce Products in Simple Steps](https://www.wpallimport.com/documentation/how-to-bulk-edit-woocommerce-products/) to learn more.
+Using the instructions above, you can generate a new export file with all WooCommerce products, add the new variations to that file, and then re-import everything to add those variations to existing products. See [How to Bulk Edit WooCommerce Products in Simple Steps](https://www.wpallimport.com/documentation/how-to-bulk-edit-woocommerce-products/) to learn more.
 
 ![](https://www.wpallimport.com/wp-content/plugins/custom-acf-blocks/blocks/docs-interstitial/img/octopus-logo.svg)    
 ### Import WooCommerce Products from CSV, XML, Excel
@@ -14691,7 +14860,7 @@ You should use a **New Items** import type, as it's the only import type that ca
 3. Select your export columns. Note that product attribute and variant columns are selected by default.
 4. Download the exported variable products from WooCommerce.
 
-For more information, see [How to Export WooCommerce Variable Products](https://www.wpallimport.com/documentation/how-to-export-woocommerce-variable-products-csv-xml/).
+To learn more, see [How to Export WooCommerce Variable Products](https://www.wpallimport.com/documentation/how-to-export-woocommerce-variable-products-csv-xml/).
 
 ### How Do I Import Product Data Into WooCommerce?
 
@@ -14700,16 +14869,16 @@ For more information, see [How to Export WooCommerce Variable Products](https://
 3. Map the incoming data elements to your WooCommerce product fields using drag & drop.
 4. Run the import.
 
-To learn more, see [How to Import WooCommerce Products from CSV and XML](https://www.wpallimport.com/documentation/how-to-import-woocommerce-products-csv-xml/).
+For more information, see [How to Import WooCommerce Products from CSV and XML](https://www.wpallimport.com/documentation/how-to-import-woocommerce-products-csv-xml/).
 
 ### How Do I Import a Product Image into WooCommerce?
 
 1. Navigate to **All Import › New Import**.
 2. Choose your import file and then select **WooCommmerce Products** as your import target.
-3. Map the incoming data elements to your WooCommerce product fields using drag & drop. Make sure that you include the image data in this process.
+3. Map the incoming data elements to your WooCommerce product fields using drag & drop. Make sure to include the image data in this process.
 4. Run the import.
 
-For more information, see [Import WooCommerce Products with Images](https://www.wpallimport.com/documentation/import-woocommerce-products-with-images/).
+To learn more, see [Import WooCommerce Products with Images](https://www.wpallimport.com/documentation/import-woocommerce-products-with-images/).
 
 ### What Add-Ons Do I Need to Import WooCommerce Products?
 
@@ -15127,35 +15296,21 @@ If that works, you'll need to re-count the terms manually:
 
 ## Import WooCommerce Products – Frequently Asked Questions
 
-### How Do I Import a CSV File Into Products?
+### Can I Import any WooCommerce Product Type?
 
-To import a CSV file into products, just specify the CSV file as your import source in the **All Import > New Import** screen. Our plugin will recognize the file format and will automatically adjust its interface accordingly.
-
-### How Do I Import a Product Spreadsheet into WooCommerce?
-
-To import a product spreadsheet into WooCommerce, save or export the spreadsheet data as a CSV file. You can then load the CSV file as your import source, and our plugin will take it from there.
-
-### How Do I Import Products From XML?
-
-To import products from XML, just specify the XML file as your product source. WP All Import will automatically recognize the file type, parse the XML, and adjust its interfaces as required. It doesn't matter if the XML is simple or complex — we've got you covered!
+Yes, you can import any standard WooCommerce product type, including simple products, variable products, simple subscription products, grouped products, and affiliate products. Just set the product type during the import process, and the interface will adjust accordingly. For more information on product types, see [Import Types Available in WP All Import](https://www.wpallimport.com/documentation/import-types/).
 
 ### How Do I Import Products From Google Sheets?
 
-To import products from a Google Sheets file, just specify the Google Sheets file as your file source when setting up the import. WP All Import will automatically recognize the file type, parse the data, and adjust its interfaces as required. You can map the products from your Google Sheets as explained in this guide.
+To import products from a Google Sheets file, just specify the Google Sheets file as your file source when setting up the import. WP All Import will automatically recognize the file type, parse the data, and adjust its interfaces as required. To learn more, see [How to Import Google Sheets to WooCommerce](https://www.wpallimport.com/documentation/google-sheets-wordpress/).
 
 ### How Do I Import a Product Feed into WooCommerce?
 
 A product feed is usually organized around a URL or FTP/SFTP import source. Our plugin will handle either. Just select **Download a File > From URL** or **Download a File > From FTP/SFTP** and provide the information required by the interface.
 
-### Can I Import Any WooCommerce Product Type?
-
-Yes. You can import any standard product type such as simple, variable, grouped, affiliate, simple subscription, etc. To do this, just set the product type during the import process. WP All Import will adjust the panels, fields, and options accordingly.
-
 ### How Do I Import WooCommerce Products With Images?
 
-We provide complete support for importing products with images. You can use images already in the media library, download them from another website, or import images that you uploaded to your server in advance. You can also avoid duplicates by having our software check for existing images during the import process.
-
-For more information, see [Import WooCommerce Products with Images](https://www.wpallimport.com/documentation/import-woocommerce-products-with-images/).
+We provide complete support for importing products with images. You can use images already in the media library, download them from another website, or import images that you uploaded to your server in advance. For more information, see [Import WooCommerce Products with Images](https://www.wpallimport.com/documentation/import-woocommerce-products-with-images/).
 
 ### How Do I Import Products to WooCommerce for Free?
 
@@ -15163,7 +15318,7 @@ To import products to WooCommerce for free, use our [Import Products from any XM
 
 ### How Do I Bulk Upload Products to WooCommerce?
 
-To bulk upload products to WooCommerce, just follow the steps in this tutorial while using an import file that contains multiple products. There is nothing special about this process. Most imports contain multiple products.
+To bulk upload products to WooCommerce, just follow the steps in this tutorial while using an import file that contains multiple products. If you're looking to bulk edit products, see [How to Bulk Edit WooCommerce Products](https://www.wpallimport.com/documentation/how-to-bulk-edit-woocommerce-products/).
 
 ### How Do I Automatically Import Products into WooCommerce?
 
@@ -15171,9 +15326,7 @@ To automatically import products into WooCommerce, you must schedule your import
 
 Alternatively, you can manually schedule your imports by setting up cron jobs on your server.
 
-For more information, please see our articles on [Automatic Scheduling](https://www.wpallimport.com/documentation/schedule-wordpress-imports/) and [Manual Scheduling](https://www.wpallimport.com/documentation/cron/).
-
-Keep in mind that to schedule an import, you must download the import file from a URL or FTP connection, or use the **Use existing file**option in the **Settings** interface.
+Please see our articles on [Automatic Scheduling](https://www.wpallimport.com/documentation/schedule-wordpress-imports/) and [Manual Scheduling](https://www.wpallimport.com/documentation/cron/) for additional information.
 
 ### How Do I Export WooCommerce Products?
 
@@ -15206,7 +15359,7 @@ For a full list of import features, see [Export WooCommerce Products](https://ww
 5. Run the import.
 6. Check your imported products.
 
-For additional information, see [Migrate WooCommerce Products](https://www.wpallimport.com/migrate-woocommerce-products/).
+For more information, see [Migrate WooCommerce Products](https://www.wpallimport.com/migrate-woocommerce-products/).
 
 ### What Add-Ons Do I Need to Import WooCommerce Products?
 
@@ -15552,14 +15705,14 @@ If you are looking for information on our product export add-on, see [Export Woo
 ### How Do I Export Selected Products From WooCommerce?
 
 1. Create a new export in **All Export > New Export**.
-2. Select **WooCommerce Products** from the dropdown list.
+2. Choose **WooCommerce Products** from the dropdown list.
 3. Click on **Add Filtering Options** and add a rule to target the desired products.
 4. Run the export and download the exported products.
 
 ### How Do I Export All WooCommerce Products?
 
 1. Navigate to **All Export > New Export**.
-2. Select to export **WooCommerce Products** from the available post types.
+2. Choose export **WooCommerce Products** from the available post types.
 3. Do NOT apply any filters.
 4. Complete the export and download the exported products.
 
@@ -15582,9 +15735,9 @@ To export WooCommerce products to CSV, just follow the steps in this guide, as C
 ### How Do I Export WooCommerce Products to Excel?
 
 1. Create a new export in **All Export > New Export**.
-2. Select **WooCommerce Products** from the available post types.
+2. Choose **WooCommerce Products** from the available post types.
 3. Customize the export file.
-4. Select **Export Type > Spreadsheet > Excel File**.
+4. Choose **Export Type > Spreadsheet > Excel File**.
 5. Complete the export and download your file.
 
 ### How Do I Export All Products From WooCommerce with Images?
@@ -15612,7 +15765,7 @@ You can also [export WooCommerce product categories on their own](https://www.wp
 3. Drag and drop the desired attributes from **Available Data > Product Data > Attributes**.
 4. Run the export and download the exported file.
 
-To learn more, see [How Do I Get a List of WooCommerce Product Attributes](https://www.wpallimport.com/documentation/how-do-i-get-a-list-of-product-attributes-from-woocommerce/).
+See [How Do I Get a List of WooCommerce Product Attributes](https://www.wpallimport.com/documentation/how-do-i-get-a-list-of-product-attributes-from-woocommerce/) for more information.
 
 ### How Do I Set Up a Google Shopping Product Feed for WooCommerce?
 
@@ -15622,13 +15775,13 @@ To learn more, see [How Do I Get a List of WooCommerce Product Attributes](https
 4. Upload to Google.
 5. You can also create a custom WooCommerce product feed.
 
-See [Export WooCommerce Products to Google Shopping](https://www.wpallimport.com/woocommerce-google-shopping/) for more information.
+To learn more, see [Export WooCommerce Products to Google Shopping](https://www.wpallimport.com/woocommerce-google-shopping/).
 
 ### How Do I Schedule WooCommerce Product Exports?
 
 You can schedule your WooCommerce product exports to run on any schedule. You can do this using either cron jobs manually via your server or by using our automatic scheduling service to set your product export schedule directly from our interface.
 
-To learn more, please see [How to Schedule WordPress Exports](https://www.wpallimport.com/documentation/how-to-schedule-wordpress-exports/).
+For more information, see [How to Schedule WordPress Exports](https://www.wpallimport.com/documentation/how-to-schedule-wordpress-exports/).
 
 ### How Do I Import Products into WooCommerce?
 
@@ -15649,7 +15802,7 @@ For a full list of import features, see [Import WooCommerce Products](https://ww
 4. WP All Import will automatically import the WooCommerce products from the bundle file based on its import template.
 5. Check your imported products.
 
-For additional information, see [Migrate WooCommerce Products](https://www.wpallimport.com/migrate-woocommerce-products/).
+To learn more, see [Migrate WooCommerce Products](https://www.wpallimport.com/migrate-woocommerce-products/).
 
 ### How Do I Bulk Edit WooCommerce Products?
 
@@ -15658,7 +15811,7 @@ For additional information, see [Migrate WooCommerce Products](https://www.wpall
 3. Reimport the edited file back into WooCommerce.
 4. Verify your results.
 
-To learn more, please see [Easily Bulk Edit WooCommerce Products](https://www.wpallimport.com/bulk-edit-woocommerce-products/).
+For more information, see [Easily Bulk Edit WooCommerce Products](https://www.wpallimport.com/bulk-edit-woocommerce-products/).
 
 ### How Do I Print a WooCommerce Product List?
 
@@ -16480,11 +16633,11 @@ Add both code snippets to the Function Editor (**All Import › Settings › Fun
 
 ### Can I Migrate All WooCommerce Order Data, Even Custom Fields Added by Other Plugins?
 
-Yes. Our plugins automatically recognize the custom data fields created by most WordPress or WooCommerce plugins and extensions. The only exception is if a plugin stores its data in a nonstandard way. In this case, just contact our support staff for further guidance.
+Yes. Our plugins automatically recognize the custom data fields created by most WordPress or WooCommerce plugins and extensions. The only exception is if a plugin stores its data in a nonstandard way. In this case, just contact our support staff for further guidance. For more information on custom fields, see our [Import Custom Field Overview](https://www.wpallimport.com/documentation/theme-plugin-fields/) and [Export Custom Fields to CSV or XML](https://www.wpallimport.com/documentation/export-custom-fields-to-csv-or-xml/).
 
 ### How Do I Migrate Customers and Orders in WooCommerce?
 
-To migrate customers and orders in WooCommerce, migrate your customers first, then your orders. When you migrate your orders, our plugin will help you link your orders to your customers. You can also add products to the mix, in which case the sequence is customers, products, and then orders.
+To migrate customers and orders in WooCommerce, migrate your customers first, then your orders. When you migrate your orders, our plugin will help you link your orders to your customers. You can also add products to the mix, in which case the sequence is customers, products, and then orders. To learn more, see [How to Migrate WooCommerce Customers to a Different Site](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-customers/) and [How to Migrate WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-orders/).
 
 ### How Do I Synchronize WooCommerce Order Data Between Sites?
 
@@ -16493,11 +16646,11 @@ To migrate customers and orders in WooCommerce, migrate your customers first, th
 3. Set up both the export and import to run automatically using our [scheduling tool](https://www.wpallimport.com/documentation/how-to-schedule-wordpress-exports/).
 4. Make sure to test this process before putting it into production.
 
-Note, if you also need to synchronize customers and products, you will need to repeat the above process for them, as well. You will also need to follow the recommended sequence of synchronizing customers and products before orders.
+If you also need to synchronize customers and products, you will need to repeat the above process for them, as well. You should also follow the recommended sequence of synchronizing customers and products before orders.
 
 ### How Does Your Plugin Differ From Other Plugins That Migrate WooCommerce Orders?
 
-Other plugins migrate your database and overwrite the data on your import site. Our plugin gives you far more control. If you wish, you can configure it to overwrite only the data that you want to overwrite. It even allows you to modify that data while importing or exporting it.
+Other plugins migrate your database and overwrite the data on your import site. Our plugin gives you far more control. If you wish, you can configure it to overwrite only the data that you want to overwrite. It even allows you to modify that data while importing or exporting it. See the different migration types here: [How to Migrate WordPress Data](https://www.wpallimport.com/documentation/migrate-overview/).
 
 ### How Do I Export Orders from WooCommerce?
 
@@ -16507,7 +16660,7 @@ Other plugins migrate your database and overwrite the data on your import site. 
 4. Run the export.
 5. Download your export file.
 
-To learn more, see [How to Export WooCommerce Orders to CSV, Excel, Google Sheets, or XML](https://www.wpallimport.com/documentation/how-to-export-woocommerce-orders-to-csv-or-xml/).
+For more information, see [How to Export WooCommerce Orders to CSV, Excel, Google Sheets, or XML](https://www.wpallimport.com/documentation/how-to-export-woocommerce-orders-to-csv-or-xml/).
 
 ### How Do I Import Orders Into WooCommerce?
 
@@ -16517,7 +16670,7 @@ To learn more, see [How to Export WooCommerce Orders to CSV, Excel, Google Shee
 4. Map the incoming data elements to the WooCommerce order fields using our **Drag & Drop** interface.
 5. Run the import.
 
-See [How to Import WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-import-woocommerce-orders/) for more information.
+To learn more, see [How to Import WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-import-woocommerce-orders/).
 
 ### What Add-Ons Do I Need to Migrate WooCommerce Orders?
 
@@ -17641,27 +17794,23 @@ However, if your import file only contains plaintext passwords, that can also be
 
 ## Import WooCommerce Customers – Frequently Asked Questions
 
-### How Do I Import a Customer CSV into WooCommerce?
-
-To import a customer CSV into WooCommerce, just follow the instructions in this tutorial. WP All Import will recognize that it is dealing with a CSV file and automatically adjust its interface accordingly.
-
 ### Can I Import WooCommerce Customers From Any File Format?
 
-You can import WooCommerce customers from many different file formats. These include XML, CSV, ZIP, GZIP, GZ, JSON, SQL, TXT, DAT, and PSV. Just identify the source file and let WP All Import figure out the rest.
+You can import WooCommerce customers from many different file formats, including XML, CSV, ZIP, GZIP, GZ, JSON, SQL, TXT, DAT, and PSV. Just identify the source file and let WP All Import adjust accordingly.
 
 ### Can I Import Customers From Multiple Feeds?
 
-Each import can only have one (1) feed as the source. However, you can create multiple imports if you have multiple import files. Don't worry about overlaps. Our software can handle any instances of duplicate or conflicting data.
+Each import can only have one (1) feed as the source. However, you can create multiple imports if you have multiple import files. Don't worry about overlaps. Our plugin can handle any instances of duplicate or conflicting data.
 
 ### Do I Need to Reorganize My Data for a Customer Import?
 
-No. Our Drag and Drop interface allows you to map incoming data elements to the correct customer fields regardless of the structure of the import file. If the content needs to be modified, you can do this as part of the import process.
+No. Our Drag and Drop interface lets you map incoming data elements to the correct customer fields regardless of the import file's structure. If the content needs to be modified, you can do this as part of the import process.
 
 ### How Do I Import WooCommerce Customer Passwords?
 
 If you've exported the customers using WP All Export, the passwords will be converted to hash codes. When they're imported using WP All Import, they'll retain their original values from the user's standpoint. This is the most secure method. If you've exported from another CMS, you'll likely have to import readable text. In this case, it is best to reset everyone's password.
 
-For more information, see [What to Expect with WooCommerce Customer Passwords](#woocommerce-customer-passwords).
+To learn more, see [What to Expect with WooCommerce Customer Passwords](#woocommerce-customer-passwords).
 
 ### How Do I Schedule WooCommerce Customer Imports?
 
@@ -17672,7 +17821,7 @@ Let's assume that you're importing your WooCommerce customers from a URL or FTP 
 
 ### Can I Also Import WooCommerce Product and Order Data?
 
-Yes. Just import your customers first, then products, then orders. That way, WP All Import can correctly match the customers and products in the incoming order data to the customers and products that you imported previously.
+Yes. Just import your customers first, then products, then orders. This way, WP All Import can correctly match the customers and products in the incoming order data to the customers and products that you imported previously. For more information, see [How to Import WooCommerce Products from CSV and XML](https://www.wpallimport.com/documentation/how-to-import-woocommerce-products-csv-xml/) and [How to Import WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-import-woocommerce-orders/).
 
 ### How Do I Bulk Edit WooCommerce Customers?
 
@@ -17681,7 +17830,7 @@ Yes. Just import your customers first, then products, then orders. That way, WP 
 3. Once you complete your changes, use the **Import with WP All Import**option to re-import everything into WordPress.
 4. Verify that your changes have been applied.
 
-To learn more about the bulk edit process, please see our [Quickstart Bulk Edit](https://www.wpallimport.com/documentation/bulk-edit/) guide.
+For more information about the bulk edit process, please see our [Quickstart Bulk Edit](https://www.wpallimport.com/documentation/bulk-edit/) guide.
 
 ### How Do I Export Customers From WordPress?
 
@@ -17690,7 +17839,7 @@ To learn more about the bulk edit process, please see our [Quickstart Bulk Edit]
 3. Use our **Drag & Drop** interface to customize your export columns.
 4. Run the export and download the export file.
 
-For more information, see [How to Export WooCommerce Customers to CSV, Excel, XM, or Google Sheets](https://www.wpallimport.com/documentation/how-to-export-woocommerce-customers-to-csv-or-xml/).
+To learn more, see [How to Export WooCommerce Customers to CSV, Excel, XM, or Google Sheets](https://www.wpallimport.com/documentation/how-to-export-woocommerce-customers-to-csv-or-xml/).
 
 ### How Do I Migrate WooCommerce Customers to Another Website?
 
@@ -17700,11 +17849,11 @@ For more information, see [How to Export WooCommerce Customers to CSV, Excel, XM
 4. WP All Import will use the instructions in the bundle file to configure itself automatically.
 5. Complete the import and review the imported customers.
 
-To learn more, see [Migrate WooCommerce Customers](https://www.wpallimport.com/migrate-woocommerce-customers/).
+For more information, see [Migrate WooCommerce Customers](https://www.wpallimport.com/migrate-woocommerce-customers/).
 
 ### How Do I Migrate Customers and Their Orders in WooCommerce?
 
-First, migrate your customers as per the instructions from the preceding question. Then, migrate your orders. When migrating your orders, WP All import will help you link each order to its corresponding customer.
+First, migrate your customers as per the instructions from the preceding question. Then, migrate your orders. When migrating your orders, WP All Import will help you link each order to its corresponding customer. To learn more, see [How to Migrate WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-orders/).
 
 ### How Do I Import WordPress Users?
 
@@ -17714,7 +17863,7 @@ First, migrate your customers as per the instructions from the preceding questio
 4. Use the **Drag & Drop** interface to map incoming fields to your WordPress user fields.
 5. Run the import.
 
-See [Import](https://www.wpallimport.com/import-woocommerce-orders/)[WordPress](https://www.wpallimport.com/import-wordpress-users/)[Users](https://www.wpallimport.com/import-woocommerce-customers/) for relevant features and a video overview. Note, however, that you do not need to explicitly create or import a WordPress user for each WooCommerce customer that you import. Our software will automatically do that for you.
+See [Import WordPress Users](https://www.wpallimport.com/documentation/how-to-import-wordpress-users-from-csv-excel-or-xml/) for relevant features and a video overview. Note, however, that you do not need to explicitly create or import a WordPress user for each WooCommerce customer that you import. Our software will automatically do this for you.
 
 ### What Add-Ons Do I Need to Import WooCommerce Customers?
 
@@ -18203,19 +18352,19 @@ In the import part of this migration, you access the bundle file directly from a
 
 ### What's the Difference Between WordPress Users and WooCommerce Customers?
 
-A WooCommerce customer is a WordPress user. The main difference is that customers are users who have placed an order on your site via WooCommerce. Also, WooCommerce adds custom billing address and shipping address fields to every customer it creates. Regular WordPress users don't have those fields unless they place an order on your site.
+A WooCommerce customer is a WordPress user. The main difference is that customers are users who have placed an order on your WooCommerce site. Also, WooCommerce adds custom billing address and shipping address fields to every customer it creates. Regular WordPress users don't have those fields unless they place an order on your site.
 
-If you migrate WordPress users, all WooCommerce customers will also be included unless you exclude them with filters.
+If you migrate all WordPress users, all WooCommerce customers will also be included unless you exclude them with filters.
 
 ### Can I Migrate All WordPress Customer Data, Even Custom Fields Added by Other Plugins?
 
-Yes. WP All Export and WP All Import both recognize the custom data fields added by most plugins and extensions. The only exception is plugins or extensions that store custom data in a non-standard way. If that happens, just contact our support staff for additional guidance.
+Yes. WP All Export and WP All Import both recognize the custom data fields added by most plugins and extensions. The only exception is plugins or extensions that store custom data in a non-standard way. If this happens, just contact our support staff for additional guidance.
 
 ### How Do I Migrate Customers and Orders in WooCommerce?
 
 To migrate customers and orders in WooCommerce, migrate your customers first, then your orders. This way, our plugin will help you match your orders to your customers based on common values, such as the customer user ID.
 
-For more information on moving orders, see [How to Migrate WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-orders/).
+To learn more, see [How to Migrate WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-orders/).
 
 ### What to Expect with Passwords During a Customer Migration?
 
@@ -18224,22 +18373,22 @@ Since every WooCoommerce customer is also a WordPress user, they will have a pas
 ### How Do I Export WooCommerce Customers?
 
 1. Navigate to **All Export › New Export**.
-2. Choose an export post type of **WooCommerce Customers**.
+2. Select an export post type of **WooCommerce Customers**.
 3. Customize the export columns using our **Drag & Drop** interface.
 4. Configure and run the export.
 5. Download the export file.
 
-See [How to Export WooCommerce Customers to CSV, Excel, Google Sheets, or XML](https://www.wpallimport.com/documentation/how-to-export-woocommerce-customers-to-csv-or-xml/) for additional details.
+For additional information, see [How to Export WooCommerce Customers to CSV, Excel, Google Sheets, or XML](https://www.wpallimport.com/documentation/how-to-export-woocommerce-customers-to-csv-or-xml/).
 
 ### How Do I Import Customers into WooCommerce?
 
 1. Navigate to **All Import › New Import**.
-2. Select how you wish to load your customer data (i.e., upload a file, use a URL, etc.).
-3. Choose the file you want to import and the import target (i.e., **WooCommerce Customers**).
+2. Choose how you wish to load your customer data (i.e., upload a file, use a URL, etc.).
+3. Select the file you want to import and the import target (i.e., **WooCommerce Customers**).
 4. Map the incoming data elements to their target WooCommerce customer fields using our **Drag & Drop** interface.
 5. Complete the import.
 
-For additional information, see [How to Import WooCommerce Customers](https://www.wpallimport.com/documentation/how-to-import-woocommerce-customers/). You can import from CSV, XML, Excel, or Google Sheets.
+To learn more, see [How to Import WooCommerce Customers](https://www.wpallimport.com/documentation/how-to-import-woocommerce-customers/). You can import from CSV, XML, Excel, or Google Sheets.
 
 ### How Do I Bulk Edit WooCommerce Customers?
 
@@ -18247,13 +18396,13 @@ For additional information, see [How to Import WooCommerce Customers](https://ww
 2. Open and modify the exported file in spreadsheet software, where you can perform bulk search-and-replace or copy-and-paste operations with ease.
 3. When you've finished making changes, re-import the data into WooCommerce using the **Import with WP All Import**option.
 
-For more details about the bulk edit process, see our [Quickstart Bulk Edit](https://www.wpallimport.com/documentation/bulk-edit/) guide.
+To learn more about the bulk edit process, see our [Quickstart Bulk Edit](https://www.wpallimport.com/documentation/bulk-edit/) guide.
 
 ### How Do I Migrate WordPress Users?
 
-To migrate WordPress Users, just choose an export post type of **Users** instead of **WooCommerce Customers**. WP All Import will take care of the rest based on the import template.
+To migrate WordPress Users, just select an export post type of **Users** instead of **WooCommerce Customers**. WP All Import will take care of the rest based on the import template.
 
-To learn more, see [How to Migrate WordPress Users from One Website to Another](https://www.wpallimport.com/documentation/how-to-migrate-wordpress-users/).
+For more information, see [How to Migrate WordPress Users from One Website to Another](https://www.wpallimport.com/documentation/how-to-migrate-wordpress-users/).
 
 ### What Add-Ons Do I Need to Migrate WooCommerce Customers?
 
