@@ -2,8 +2,8 @@
   "plugin_slug": "hide-from-search",
   "plugin_name": "Hide from Search",
   "documentation_url": "https://wordpress.org/plugins/mpress-hide-from-search/",
-  "last_scraped": "2026-07-05T09:50:50.047Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T09:35:48.211Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Hide from Search",
           "url": "https://wordpress.org/plugins/mpress-hide-from-search/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/mpress-hide-from-search/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Hide from Search",
+          "url": "https://wordpress.org/plugins/mpress-hide-from-search/"
         }
       ]
     }
