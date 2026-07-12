@@ -2,8 +2,8 @@
   "plugin_slug": "manage-notification-e-mails",
   "plugin_name": "Manage Notification E-mails",
   "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-  "last_scraped": "2026-07-05T17:24:41.022Z",
-  "total_pages": 1,
+  "last_scraped": "2026-07-12T17:20:24.325Z",
+  "total_pages": 2,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -16,6 +16,19 @@
         {
           "title": "Manage Notification E-mails",
           "url": "https://wordpress.org/plugins/manage-notification-emails/advanced/"
+        }
+      ]
+    },
+    {
+      "title": "Overview",
+      "slug": "overview",
+      "url": "https://wordpress.org/plugins/manage-notification-emails/overview/",
+      "file": "categories/overview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Manage Notification E-mails",
+          "url": "https://wordpress.org/plugins/manage-notification-emails/"
         }
       ]
     }
