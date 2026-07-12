@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T16:22:36.560Z",
+  "last_updated": "2026-07-12T16:23:44.323Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3319,7 +3319,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-05T16:32:41.280Z",
+      "last_scraped": "2026-07-12T16:23:40.926Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
@@ -3549,7 +3549,7 @@
       "slug": "wpc-product-bundles-for-woocommerce-premium",
       "name": "WPC Product Bundles for WooCommerce (Premium)",
       "documentation_url": "https://doc.wpclever.net/woosb/",
-      "last_scraped": "2026-07-12T16:22:36.560Z",
+      "last_scraped": "2026-07-12T16:22:36.556Z",
       "page_count": 76,
       "categories": [
         "basic-installations",
