@@ -2,8 +2,8 @@
   "plugin_slug": "wp-all-export-pro",
   "plugin_name": "WP All Export Pro",
   "documentation_url": "https://www.wpallimport.com/documentation/",
-  "last_scraped": "2026-07-05T17:04:37.759Z",
-  "total_pages": 198,
+  "last_scraped": "2026-07-12T04:15:47.087Z",
+  "total_pages": 199,
   "failed_urls_count": 38,
   "sections": [
     {
@@ -11,8 +11,12 @@
       "slug": "uncategorized",
       "url": "https://www.wpallimport.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 198,
+      "page_count": 199,
       "pages": [
+        {
+          "title": "How to Import Google Sheets to WooCommerce",
+          "url": "https://www.wpallimport.com/documentation/google-sheets-woocommerce/"
+        },
         {
           "title": "InstaWP: All-in-One WordPress Cloud Platform",
           "url": "https://www.wpallimport.com/documentation/instawp/"
