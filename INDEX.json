@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T18:21:49.509Z",
+  "last_updated": "2026-07-12T18:23:17.324Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -197,7 +197,7 @@
       "slug": "block-specific-spam-woo-orders",
       "name": "Block Specific Spam Woo Orders",
       "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
-      "last_scraped": "2026-07-12T18:19:28.654Z",
+      "last_scraped": "2026-07-12T18:19:28.653Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -966,7 +966,7 @@
       "slug": "fluentsupport",
       "name": "Fluent Support",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-07-12T18:16:01.426Z",
+      "last_scraped": "2026-07-12T18:16:01.423Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -2491,7 +2491,7 @@
       "slug": "menu-image",
       "name": "Menu Image",
       "documentation_url": "https://wordpress.org/plugins/menu-image/",
-      "last_scraped": "2026-07-12T18:21:49.509Z",
+      "last_scraped": "2026-07-12T18:21:49.506Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -3004,7 +3004,7 @@
       "slug": "woocommerce-stripe-gateway",
       "name": "WooCommerce Stripe Gateway",
       "documentation_url": "https://woocommerce.com/document/stripe/",
-      "last_scraped": "2026-07-12T18:20:36.217Z",
+      "last_scraped": "2026-07-12T18:20:36.214Z",
       "page_count": 37,
       "categories": [
         "admin-experience",
@@ -3529,7 +3529,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://docs.wpsocialninja.com/guide/",
-      "last_scraped": "2026-07-05T18:28:21.116Z",
+      "last_scraped": "2026-07-12T18:23:15.311Z",
       "page_count": 92,
       "categories": [
         "advanced-features",
