@@ -4100,19 +4100,60 @@ Single Page Courses keep the standard LearnDash and Toolkit features you’d exp
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/add-and-remove-credits/](https://www.uncannyowl.com/knowledge-base/add-and-remove-credits/)
 
-The [Uncanny Continuing Education Credits 3.1](https://www.uncannyowl.com/award-ceu-credits-for-anything/) release introduced the ability to add and delete credits. Credits can be added both for LearnDash courses *and* non-LearnDash activities, perhaps including live events, third party training and more. Adding and deleting credits is done from the [Credit Report](https://www.uncannyowl.com/knowledge-base/continuing-education-credits-admin-report/).
+### Overview
 
-![Add and delete LearnDash credits](https://www.uncannyowl.com/wp-content/uploads/2020/12/Add_and_delete_credits_for_Learndash.png)
+Credits are awarded automatically when learners complete courses, but you’ll sometimes need to manage them by hand — to award credit for an activity that happened outside of LearnDash, to correct a record, or to remove one. You can do all of this directly from the Credit Report.
 
-To add credits, click the **Add Credits**button. This will show a modal where details of the new credit can be entered. If the credit assigned is a LearnDash course, you will be given the option of completing the course; assigning credits based on a LearnDash course require that the course have credits assigned to it, and the number of credits granted match whatever is assigned to the course and the assignment will be today’s date (assuming the course is also marked as deleted when the credits are added). See below for an example of the fields.
+The Credit Report supports three manual actions on credit records:
 
-![Uncanny Course Report: Add CEUs](https://www.uncannyowl.com/wp-content/uploads/2020/12/Course_Report_Add_CEUs.png)
+- **Add** a new credit record — for a LearnDash course or for an activity that doesn’t exist as a course on your site (a webinar, a workshop, an in-person session).
+- **Edit** an existing record — adjust the credit amount or date of a record that’s already there.
+- **Delete** a record — permanently remove a credit a learner earned.
 
-If the credits are not related to a LearnDash course, a title, number of credits and the date/time for awarding the credits must be entered.
+Adding and deleting credits have been available since version 3.1. Editing existing records inline was added in **version 5.0**.
 
-While credits can be awarded against a future date, note that these won’t show up in the report unless a custom date range is used with a future end date populated.
+These actions are available to administrators and group leaders in the enhanced report. If you’re displaying the report on the front end with the [uo_ceu_report] shortcode or block, each action is enabled with its own attribute (add=”on”, edit=”on”, delete=”on”). See [Continuing Education Report](https://www.uncannyowl.com/knowledge-base/continuing-education-report/) for those options.
 
-To delete credits, use the checkboxes to the left of the credit rows to select one or more entries. Once selected, click the **Delete credits** button beneath the filters at the top of the report. After confirming the credit deletions, the records will be removed from the system.
+### Adding Credits
+
+1. Go to **Uncanny CEUs > Credit Report** (or open an enhanced front-end report).
+2. Click the **Add Credits** button to open the entry form.
+3. Choose what the credit is for:
+- **A LearnDash course** — Select the course. The credit amount matches the value already assigned to that course, so the course must have a credit value set. See [Adding Credits to Courses](https://www.uncannyowl.com/knowledge-base/adding-course-credits/).
+- **A non-LearnDash activity** — Enter a title, the number of credits, and the date and time the credit was earned.
+4. Select the learner the credit applies to.
+5. Save the entry.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2020/12/Add-CEU-credits-modal-449x500.png)
+
+**Tip:** If you award a credit with a date in the future, it won’t appear in the report under the default date range. Set a custom date range with an end date past the award date to see it.
+
+### Editing Credits
+
+As of version 5.0, you can correct an existing credit record without deleting and re-adding it. If the credit is awarded via course completion, you will be able to edit the options **Complete Course** and **Date and time**. If the credit was awarded without course completion, you will be able to edit the **Title**, **Number of CEUs** and **Date and time** options.
+
+1. In the Credit Report, find the record you want to change and check the box on the left.
+2. Click the **Edit** **credits** button.
+3. Update the credits options depending on type of credit (detailed above).
+4. Save the change.
+
+This is the quickest way to fix a typo in a credit amount or correct an award date.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2020/12/Edit-Credit-500x349.png)
+
+### Deleting Credits
+
+1. In the Credit Report, select the record (or records) you want to remove using the row checkboxes.
+2. Click the **Delete Credits** button below the filters.
+3. Confirm the deletion when prompted.
+
+Deleting a credit record is permanent. If you only need to change a value, use **Edit** instead.
+
+### Related Articles
+
+- [Continuing Education Report](https://www.uncannyowl.com/knowledge-base/continuing-education-report/) — Enable add/edit/delete on the front-end report
+- [Adding Credits to Courses](https://www.uncannyowl.com/knowledge-base/adding-course-credits/) — Set the course credit values used when adding LearnDash credits
+- [Continuing Education Admin Reports](https://www.uncannyowl.com/knowledge-base/continuing-education-credits-admin-report/) — Filter and export the Credit Report
 
 ---
 
