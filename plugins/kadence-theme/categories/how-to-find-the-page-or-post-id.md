@@ -23,9 +23,11 @@ post=
 
  is the ID of that Page.
 
-![Getting the ID of a Page](https://www.liquidweb.com/wp-content/uploads/2020/09/page-id-from-url.png)109 is the ID of this specific PageThe same process applies to all Post Types.
+![Getting the ID of a Page](https://docs.nexcess.com/wp-content/uploads/2026/06/page-id-from-url.png)109 is the ID of this specific Page
 
-## Method 2
+The same process applies to all Post Types.
+
+Method 2
 
 You can also find the Post ID by directly editing the post and checking the URL of the editor page. The Post ID will appear after the 
 ```
@@ -34,8 +36,9 @@ post=
 
  parameter in the URL, just like the method mentioned above.
 
-![](https://www.liquidweb.com/wp-content/uploads/2019/07/howtofindid.png)
-## Method 3
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/howtofindid.png)
+
+Method 3
 
 Additionally, you can use your browser’s Inspector Tools to locate the Post or Page ID from the front end of your WordPress site. Right-click on the page and select Inspect or Inspect Element. In the HTML code, look for the 
 ```
@@ -54,7 +57,9 @@ page-id-####
 
 , where the numbers represent the Post or Page ID. This method provides an easy way to grab the ID directly from the front end.
 
-![Inspector Tools](https://www.liquidweb.com/wp-content/uploads/2019/07/Inspector-Tools.gif)![Inspector Sample](https://www.liquidweb.com/wp-content/uploads/2019/07/Inspector-Sample.jpg)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Inspector Tools](https://docs.nexcess.com/wp-content/uploads/2026/06/Inspector-Tools.gif)
+
+![Inspector Sample](https://docs.nexcess.com/wp-content/uploads/2026/06/Inspector-Sample.jpg)
 
 ---
 

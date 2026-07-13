@@ -16,7 +16,7 @@ This filter lets you control the query Kadence uses to fetch related posts witho
 
 Examples:
 
-### Show only posts from the same custom taxonomy and limit to three posts
+Show only posts from the same custom taxonomy and limit to three posts
 
 ```
 add_filter( 'kadence_related_posts_args', function( $args ) {
@@ -34,7 +34,7 @@ add_filter( 'kadence_related_posts_args', function( $args ) {
 });
 ```
 
-### Show related posts from the same author
+Show related posts from the same author
 
 ```
 add_filter( 'kadence_related_posts_args', function( $args ) {
@@ -43,7 +43,7 @@ add_filter( 'kadence_related_posts_args', function( $args ) {
 });
 ```
 
-### Include custom post types
+Include custom post types
 
 ```
 add_filter( 'kadence_related_posts_args', function( $args ) {
@@ -52,7 +52,7 @@ add_filter( 'kadence_related_posts_args', function( $args ) {
 });
 ```
 
-### Exclude certain categories
+Exclude certain categories
 
 ```
 add_filter( 'kadence_related_posts_args', function( $args ) {
@@ -60,8 +60,6 @@ add_filter( 'kadence_related_posts_args', function( $args ) {
     return $args;
 });
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

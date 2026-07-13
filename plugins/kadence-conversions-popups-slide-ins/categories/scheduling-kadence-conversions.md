@@ -34,14 +34,15 @@ Home/End Go to the first (home) or last (end) day of a week.
 
 Show your conversion item at recurring times, for example, every Tuesday and Thursday from 9 am until noon.
 
-![Kadence Conversions - Scheduling - Recurring](https://res.cloudinary.com/lwcom/images/w_547,h_1023,c_scale/f_auto,q_auto/v1779383715/prod/Screenshot-2026-05-21-at-12.14.41-PM/Screenshot-2026-05-21-at-12.14.41-PM.png?_i=AA)
 ## Combining Range and Recurring Scheduling
 
 You can easily combine range and recurring scheduling for a unique display of your Kadence Conversion item. For example, if you want your conversion item to show on every Wednesday from 9 AM – 5 PM in the month of April 2022 only, first set your range from April 1, 2022 to April 30, 2022.
 
-![](https://www.liquidweb.com/wp-content/uploads/2021/12/range-schedule-338x1024.png)Then, set your recurring schedule for Wednesday 9-5.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/range-schedule-338x1024-1.png)
 
-![Kadence Conversions - Scheduling - Recurring](https://res.cloudinary.com/lwcom/images/w_558,h_826,c_scale/f_auto,q_auto/v1779383886/prod/Screenshot-2026-05-21-at-12.17.40-PM_4566298b10c/Screenshot-2026-05-21-at-12.17.40-PM_4566298b10c.png?_i=AA)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+Then, set your recurring schedule for Wednesday 9-5.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/recur-schedule-497x1024-1.png)
 
 ---
 

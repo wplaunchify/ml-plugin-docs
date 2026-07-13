@@ -12,9 +12,9 @@ If you use the “control + option + z” keys on your keyboard with a block sel
 
 However, it can at times be tricky to make sure you’ve selected the correct block and that you are not typing in an internal input area. So a sure-fire way to remove a block is to click on the three dots on the right of your block toolbar and then click remove block in the dropdown menu area.
 
-![](https://www.liquidweb.com/wp-content/uploads/2020/09/removeblock.jpg)Also note that if you are in top toolbar mode the toolbar for your block will be at the top of your screen and not over the block.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/removeblock.jpg)
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+Also note that if you are in top toolbar mode the toolbar for your block will be at the top of your screen and not over the block.
 
 ---
 

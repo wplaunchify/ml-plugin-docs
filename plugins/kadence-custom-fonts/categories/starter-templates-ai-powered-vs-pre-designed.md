@@ -10,7 +10,7 @@
 
 Kadence offers two powerful options for quickly launching your website: AI Powered Templates and Pre-Designed Templates. Both are excellent choices, and your preference will depend on your specific needs and desired level of customization from the outset. **You can always re-run the starter template wizard and import a new template, allowing you to experiment with both options.**
 
-### AI Powered Templates
+AI Powered Templates
 
 AI Powered Templates leverage artificial intelligence to generate a more personalized and near-launch-ready website.
 
@@ -36,8 +36,6 @@ Pre-Designed Templates are professionally crafted layouts created for hypothetic
 - **Choose Pre-Designed if:** You prefer a professionally designed foundation with a more defined aesthetic tailored to specific industries, and you enjoy browsing a wide selection of pre-built layouts to customize.
 
 Both options are powerful tools for building a beautiful and functional website with Kadence. Feel free to explore both by re-importing starter templates as needed!
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 
@@ -47,7 +45,7 @@ Was this article helpful?Yes NoThank you for your input.Thank you for your feedb
 
 Kadence offers two powerful options for quickly launching your website: AI Powered Templates and Pre-Designed Templates. Both are excellent choices, and your preference will depend on your specific needs and desired level of customization from the outset. **You can always re-run the starter template wizard and import a new template, allowing you to experiment with both options.**
 
-### AI Powered Templates
+AI Powered Templates
 
 AI Powered Templates leverage artificial intelligence to generate a more personalized and near-launch-ready website.
 
@@ -73,8 +71,6 @@ Pre-Designed Templates are professionally crafted layouts created for hypothetic
 - **Choose Pre-Designed if:** You prefer a professionally designed foundation with a more defined aesthetic tailored to specific industries, and you enjoy browsing a wide selection of pre-built layouts to customize.
 
 Both options are powerful tools for building a beautiful and functional website with Kadence. Feel free to explore both by re-importing starter templates as needed!
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

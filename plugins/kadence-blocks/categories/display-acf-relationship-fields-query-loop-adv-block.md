@@ -16,7 +16,7 @@ Want to see this functionality built-in without the need of custom code? Then, c
 
 Follow the steps below to start using relational data within *Advanced Query Loop blocks*. In this example, we’ll work with two Custom Post Types:**Guides**and**Tours**. The goal is to assign a specific **Guide** to a specific **Tour** and display this relationship dynamically using *Advanced Query Loop blocks*.  While this example provides a general use case, the same approach can be adapted to fit your specific needs.
 
-In this example, the [Query Loop Vars Filter](https://www.liquidweb.com/docs/kadence-blocks/custom-queries-for-advanced-query-loop-block/) is used to modify the output of the Advanced Query Loop block. The custom code in this tutorial can be added to your site’s 
+In this example, the [Query Loop Vars Filter](https://docs.nexcess.com/software/kadence/blocks/custom-queries-advanced-query-loop/) is used to modify the output of the Advanced Query Loop block. The custom code in this tutorial can be added to your site’s 
 ```
 functions.php
 ```
@@ -29,7 +29,7 @@ functions.php
 2. Open a post from the **Guide** CPT and select the related **Tours** using the *Relationship Field*.
 3. Within the post content, add an **Advanced Query Loop** block.
 *(If you’re using a Hooked Element to display the query, you can add the Advanced Query Loop block to the Element’s content instead of placing it directly within the Guide post content.)*
-4. In the [Query Loop (Adv) Block Settings](https://www.liquidweb.com/docs/kadence-blocks/advanced-query-loop-block/#general-settings), set the **Post Type** to **Tour**.
+4. In the [Query Loop (Adv) Block Settings](https://docs.nexcess.com/software/kadence/blocks/advanced-query-loop-block/#general-settings), set the **Post Type** to **Tour**.
 5. Then, add the following **Code** **Snippet** to your website if you are using ACF:
 
 ```
@@ -99,8 +99,6 @@ add_filter('kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_que
 - **METABOX_RELATIONSHIP_ID**: Replace this with your actual **Metabox Relationships ID**
 
 The **Guide** post will now show all the **Tour** posts from its associated **ACF** **Relationship** **Field**or **Metabox Relationships,** rendered dynamically using **Kadence’s Query Loop (Adv)** block.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

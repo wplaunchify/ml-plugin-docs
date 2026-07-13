@@ -12,7 +12,9 @@ The **Section Block** in Kadence Blocks includes Flexbox controls by default. Th
 
 Section Block using Flexbox sizes itself based on its own content. This allows more flexibility with alignment, spacing, and wrapping, both initially and responsively, across all device types.
 
-![Section Flex Demo](https://res.cloudinary.com/lwcom/images/w_1024,h_606,c_scale/f_auto,q_auto/v1780350944/prod/Section-Flex-Demo_460714ac636/Section-Flex-Demo_460714ac636.jpg?_i=AA)This guide explains:
+![Section Flex Demo](https://docs.nexcess.com/wp-content/uploads/2026/06/Section-Flex-Demo.jpg)
+
+This guide explains:
 
 - When to use Flexbox in the Section Block instead of a Row Layout.
 - How the Section Block Flex settings work.
@@ -22,10 +24,10 @@ Section Block using Flexbox sizes itself based on its own content. This allows m
 
 Before using Flexbox layouts in the Section Block, confirm the following:
 
-- [Kadence Blocks](https://www.liquidweb.com/docs/kadence-blocks/installing-kadence-blocks/) is installed and active on the website.
+- [Kadence Blocks](https://docs.nexcess.com/software/kadence/install-kadence-blocks/) is installed and active on the website.
 - A **Section Block** is added to the page.
 
-Flexbox controls are available on the Section Block by default under the [Block Settings](https://www.liquidweb.com/docs/kadence-blocks/section-block/#general-settings). The layout behavior changes based on the Flex settings that are applied.
+Flexbox controls are available on the Section Block by default under the [Block Settings](https://docs.nexcess.com/software/kadence/section-block/#general-settings). The layout behavior changes based on the Flex settings that are applied.
 
 ## When to Use Section Block Flexbox
 
@@ -51,7 +53,11 @@ Available options:
 - **Vertical Reverse**. Items stack from bottom to top.
 - **Horizontal Reverse**. Items align side by side in reverse order.
 
-![](https://res.cloudinary.com/lwcom/images/w_1024,h_341,c_scale/f_auto,q_auto/v1778542387/prod/image-5_443897f100d/image-5_443897f100d.png?_i=AA)![Flex Basis](https://res.cloudinary.com/lwcom/images/w_1024,h_341,c_scale/f_auto,q_auto/v1778542360/prod/image-2_443894120f2/image-2_443894120f2.png?_i=AA)**Tip:** The horizontal direction is most commonly used for card layouts and columns.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-5-6.png)
+
+![Flex Basis](https://docs.nexcess.com/wp-content/uploads/2026/06/image-2-12.png)
+
+**Tip:** The horizontal direction is most commonly used for card layouts and columns.
 
 ### Alignment
 
@@ -64,7 +70,8 @@ Options include:
 - **End** – Align items to the right side of the Section.
 - **Stretch** – Stretch items to fill the available horizontal space (when supported).
 
-![Flex Alignment](https://res.cloudinary.com/lwcom/images/w_1024,h_341,c_scale/f_auto,q_auto/v1778542402/prod/image_4438922bcb1/image_4438922bcb1.png?_i=AA)
+![Flex Alignment](https://docs.nexcess.com/wp-content/uploads/2026/06/image-49.png)
+
 ### Vertical Alignment
 
 This setting controls how items are aligned **vertically within the Section height**.
@@ -80,7 +87,8 @@ Options include:
 
 The **Vertical** **Alignment** changes based on the Flex Direction. For horizontal layouts, this setting controls left-to-right spacing.
 
-![Vertical Alignment](https://res.cloudinary.com/lwcom/images/w_1024,h_341,c_scale/f_auto,q_auto/v1778542354/prod/image-1_443893bf48b/image-1_443893bf48b.png?_i=AA)
+![Vertical Alignment](https://docs.nexcess.com/wp-content/uploads/2026/06/image-1-14.png)
+
 ### Gaps
 
 Gaps control spacing between child blocks and replace the need for margins. You can use a **Vertical** and/or **Horizontal** **Gap**.
@@ -90,7 +98,9 @@ Available gap options:
 - **Vertical Gap**. Available for vertical layouts
 - **Horizontal Gap**. Appears when Flex Direction is set to Horizontal or Horizontal Reverse
 
-![Section Gaps](https://res.cloudinary.com/lwcom/images/w_487,h_590,c_scale/f_auto,q_auto/v1780350947/prod/image-3-e1768592505565/image-3-e1768592505565.png?_i=AA)**Tip:** Using gaps instead of margins keeps spacing consistent and responsive across screen sizes.
+![Section Gaps](https://docs.nexcess.com/wp-content/uploads/2026/06/image-3-e1768592505565.png)
+
+**Tip:** Using gaps instead of margins keeps spacing consistent and responsive across screen sizes.
 
 ## Advanced Flex Options for Horizontal Layouts
 
@@ -109,7 +119,8 @@ Options include:
 
 This setting is especially helpful for responsive card grids that adjust naturally on smaller screens.
 
-![Wrap Content](https://res.cloudinary.com/lwcom/images/w_1024,h_341,c_scale/f_auto,q_auto/v1778542373/prod/image-4_443896081ca/image-4_443896081ca.png?_i=AA)
+![Wrap Content](https://docs.nexcess.com/wp-content/uploads/2026/06/image-4-8.png)
+
 ### 2. Flex Basis
 
 **Flex Basis** defines the starting width of each child block before Flexbox adjusts the layout.
@@ -125,7 +136,8 @@ Example:
 - Setting Flex Basis to **50%** creates two equal-width columns.
 - Setting a Flex Basis of **250px** will make each section use a **250px** width. If there isn’t enough width available, the content will wrap depending on the wrap block setting.
 
-![Flex Basis](https://res.cloudinary.com/lwcom/images/w_1024,h_341,c_scale/f_auto,q_auto/v1778542360/prod/image-2_443894120f2/image-2_443894120f2.png?_i=AA)
+![Flex Basis](https://docs.nexcess.com/wp-content/uploads/2026/06/image-2-12.png)
+
 ### 3. Flex Grow
 
 Use the **Flex Grow** setting to control how a Section **expands to fill available space** within a flex layout.
@@ -141,11 +153,13 @@ For example:
 - A Section with **Flex Grow: 2** will take up twice as much space as a Section with Flex Grow set to 1.
 - A Section with **Flex Grow: 0** will not grow beyond its base size.
 
-![Flex Grow](https://res.cloudinary.com/lwcom/images/w_427,h_1024,c_scale/f_auto,q_auto/v1780350932/prod/Flex-Grow/Flex-Grow.jpg?_i=AA)Flex Grow is especially useful for creating **flexible, responsive layouts** where Sections need to adapt dynamically to the available width or height.
+![Flex Grow](https://docs.nexcess.com/wp-content/uploads/2026/06/Flex-Grow-427x1024-1.jpg)
+
+Flex Grow is especially useful for creating **flexible, responsive layouts** where Sections need to adapt dynamically to the available width or height.
 
 ## Section Block vs Row Layout Block
 
-The [Row Layout Block](https://www.liquidweb.com/docs/kadence-blocks/row-layout-block/) already uses [Section Blocks](https://www.liquidweb.com/docs/kadence-blocks/section-block/) internally. In many cases, you can use a Row Layout Block on its own to achieve most layouts. However, Section Blocks are more versatile and can also be used independently or in combination with Row Layout Blocks to provide greater control over complex designs.
+The [Row Layout Block](https://docs.nexcess.com/software/kadence/row-layout-block/) already uses [Section Blocks](https://docs.nexcess.com/software/kadence/section-block/) internally. In many cases, you can use a Row Layout Block on its own to achieve most layouts. However, Section Blocks are more versatile and can also be used independently or in combination with Row Layout Blocks to provide greater control over complex designs.
 
 ### Row Layout Block
 
@@ -161,8 +175,6 @@ The [Row Layout Block](https://www.liquidweb.com/docs/kadence-blocks/row-layout-
 - Columns behave independently
 - Flexible alignment and spacing
 - Ideal for dynamic or expandable content
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

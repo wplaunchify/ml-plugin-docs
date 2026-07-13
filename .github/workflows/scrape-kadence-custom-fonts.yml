@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Custom Fonts scraper
-        run: node scraper.js --slug=kadence-custom-fonts --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-theme/ --selector=.entry-content --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Custom Fonts"
+        run: node scraper.js --slug=kadence-custom-fonts --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-theme/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Custom Fonts"
 
       - name: Check for changes
         id: changes

@@ -10,25 +10,39 @@
 
 The spacer block allows you to set advanced spacing between your other blocks. The spacing block can be configured quick and easy on any part of your site!
 
-![Select Spacer Block](https://www.liquidweb.com/wp-content/uploads/2019/04/Select-Spacer-min.jpeg)Once you’ve selected the spacer block, adjust the spacing to your desired amount:
+![Select Spacer Block](https://docs.nexcess.com/wp-content/uploads/2026/06/Select-Spacer-min.jpeg)
 
-![Kadence Spacer Block adjust space](https://www.liquidweb.com/wp-content/uploads/2019/01/Kadence-Spacer-Block-adjust-space.gif)Kadence Spacer Block adjust spaceSet the appearance of your spacer block:
+Once you’ve selected the spacer block, adjust the spacing to your desired amount:
 
-![SpacerDivider General Settings](https://www.liquidweb.com/wp-content/uploads/2019/01/SpacerDivider-General-Settings.jpeg)There are four (4) unique divider styles available.
+![Kadence Spacer Block adjust space](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Spacer-Block-adjust-space.gif)Kadence Spacer Block adjust space
+
+Set the appearance of your spacer block:
+
+![SpacerDivider General Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/SpacerDivider-General-Settings.jpeg)
+
+There are four (4) unique divider styles available.
 
 **Solid**: You can adjust the solid divider’s color, height, and width.
 
-![Solid divider](https://www.liquidweb.com/wp-content/uploads/2019/01/Solid-divider.jpeg)**Dotted**: You can adjust the dotted divider’s color, height, and width.
+![Solid divider](https://docs.nexcess.com/wp-content/uploads/2026/06/Solid-divider.jpeg)
 
-![Dotted Divider](https://www.liquidweb.com/wp-content/uploads/2019/01/Dotted-Divider-1024x348.jpeg)**Dashed**: You can adjust the dashed divider’s color, height, and width.
+**Dotted**: You can adjust the dotted divider’s color, height, and width.
 
-![Dashed Divider](https://www.liquidweb.com/wp-content/uploads/2019/01/Dashed-Divider-1024x363.jpeg)**Stripe Divider**: You can adjust the solid divider’s color, stripe angle, stripe width, stripe gap, height, and width.
+![Dotted Divider](https://docs.nexcess.com/wp-content/uploads/2026/06/Dotted-Divider-1024x348-1.jpeg)
 
-![](https://www.liquidweb.com/wp-content/uploads/2023/03/Stripe-divider.jpeg)You can also disable the divider if you want to create space alone.
+**Dashed**: You can adjust the dashed divider’s color, height, and width.
 
-![Enable Divider](https://www.liquidweb.com/wp-content/uploads/2019/01/08Divider-OFF-min-1024x255.jpeg)The Spacer/Divider block’s Advanced tab has Visibility Settings to hide the block on desktops, tablets, and mobile devices. You can also save your current block settings as default settings for future Spacer/Divider blocks.
+![Dashed Divider](https://docs.nexcess.com/wp-content/uploads/2026/06/Dashed-Divider-1024x363-1.jpeg)
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+**Stripe Divider**: You can adjust the solid divider’s color, stripe angle, stripe width, stripe gap, height, and width.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Stripe-divider.jpeg)
+
+You can also disable the divider if you want to create space alone.
+
+![Enable Divider](https://docs.nexcess.com/wp-content/uploads/2026/06/08Divider-OFF-min-1024x255-1.jpeg)
+
+The Spacer/Divider block’s Advanced tab has Visibility Settings to hide the block on desktops, tablets, and mobile devices. You can also save your current block settings as default settings for future Spacer/Divider blocks.
 
 ---
 

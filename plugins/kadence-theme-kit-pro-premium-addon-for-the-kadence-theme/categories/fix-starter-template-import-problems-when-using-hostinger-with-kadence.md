@@ -22,16 +22,14 @@ Follow this guide to disable the **Hostinger** **CDN** and ensure a smooth *Kade
 6. Go back to your website and try to import a starter template. This time, it should be successful.
 7. Once the import is finished, you should go to your **Hostinger** **CDN** **settings** once more and set the *Security Level* back to the original or a higher level.
 
-Turning the *Security Level*back up is recommended to ensure your website stays secure. Anytime you need to re-import another *Starter Template*, repeat the process above.
+Turning the *Security Level*back up is recommended to ensure your website stays secure. Anytime you need to reimport another *Starter Template*, repeat the process above.
 
 If **disabling** the **CDN** doesn’t resolve the issue:
 
 - Try **deactivating** all **Caching** and/or **Security** plugins from the website and see if the issue occurs.
 - Check for**Console Logged Errors** and **WordPress Errors** to help indicate where the issue is coming from.
-- Go through **all of the steps** in this [Starter Template Troubleshooting guide](https://www.liquidweb.com/help-docs/software/kadence/starter-templates/starter-templates-faqs-troubleshooting/).
-- If none of the steps above work for you, contact the [Kadence Support](https://software.liquidweb.com/support/) team for further assistance.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+- Go through **all of the steps** in this [Starter Template Troubleshooting guide](https://docs.nexcess.com/software/kadence/starter-templates-faqs-troubleshooting/).
+- If none of the steps above work for you, contact the [Kadence Support](https://www.kadencewp.com/premium-support-tickets/) team for further assistance.
 
 ---
 

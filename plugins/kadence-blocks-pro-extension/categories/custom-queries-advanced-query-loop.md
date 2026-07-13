@@ -8,11 +8,11 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-advanced-query-loop/](https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-queries-advanced-query-loop/)
 
-The [Advanced Query Loop](https://www.liquidweb.com/docs/kadence-blocks/advanced-query-loop-block/) block ([Kadence Blocks Pro](https://www.liquidweb.com/software/kadence/)) provides settings to create a custom query loop. However, sometimes, you need to alter the query beyond the capabilities of the Advanced Query Loop’s settings. In these cases, you can add a code snippet to alter the [WordPress Query](https://developer.wordpress.org/reference/classes/wp_query/) object. You can add PHP code to your site using a plugin like [Code Snippets](https://www.liquidweb.com/software/kadence/knowledge-base/advanced/how-to-add-a-custom-filter-or-function-with-code-snippets/) or your functions.php file (in a [child theme](https://www.liquidweb.com/wordpress/theme/child/)).
+The [Advanced Query Loop](https://docs.nexcess.com/software/kadence/blocks/advanced-query-loop-block/) block ([Kadence Blocks Pro](https://www.kadencewp.com/kadence-blocks/pro/)) provides settings to create a custom query loop. However, sometimes, you need to alter the query beyond the capabilities of the Advanced Query Loop’s settings. In these cases, you can add a code snippet to alter the [WordPress Query](https://developer.wordpress.org/reference/classes/wp_query/) object. You can add PHP code to your site using a plugin like [Code Snippets](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/) or your functions.php file (in a [child theme](https://docs.nexcess.com/software/kadence/what-is-child-theme-do-i-need-one/)).
 
 If you want to modify the query arguments, you can make use of the ‘**kadence_blocks_pro_query_loop_query_vars**‘ filter. Here is an example that implements the filter.
 
-## Examples
+Examples
 
 ```
 add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_query_meta, $ql_id ) {
@@ -33,9 +33,11 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 
 In the above code, the **$ql_id** is set to **5283**. This is the post ID of the specific query you want to target. If you don’t provide the conditional “if” statement to target a query ID, all of your queries will share the arguments, which isn’t ideal. Among other ways, you can find the **$ql_id**by navigating to **Kadence Blocks > All Queries**, hovering over the edit link of your desired query, and looking at the bottom left corner of your browser window. Be sure to change the ID to suit your needs.
 
-![Query Post ID](https://res.cloudinary.com/lwcom/images/w_463,h_924,c_scale/f_auto,q_auto/v1780355430/prod/Query-Post-ID/Query-Post-ID.jpeg?_i=AA)The example also uses the [Simple Taxonomy Query](https://developer.wordpress.org/reference/classes/wp_query/#taxonomy-parameters) provided by the WordPress Query documentation. Here are some additional examples that have been modified from the WordPress documentation.
+![Query Post ID](https://docs.nexcess.com/wp-content/uploads/2026/06/Query-Post-ID.jpeg)
 
-### Returns posts dated December 12, 2012
+The example also uses the [Simple Taxonomy Query](https://developer.wordpress.org/reference/classes/wp_query/#taxonomy-parameters) provided by the WordPress Query documentation. Here are some additional examples that have been modified from the WordPress documentation.
+
+**Returns posts dated December 12, 2012**
 
 Source: [https://developer.wordpress.org/reference/classes/wp_query/#date-parameters](https://developer.wordpress.org/reference/classes/wp_query/#date-parameters)
 
@@ -57,7 +59,7 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 }, 10, 3 );
 ```
 
-### Display posts where the custom field key is ‘color’ and the custom field value IS ‘blue’
+Display posts where the custom field key is ‘color’ and the custom field value IS ‘blue’
 
 Source: [https://developer.wordpress.org/reference/classes/wp_query/#custom-field-post-meta-parameters](https://developer.wordpress.org/reference/classes/wp_query/#custom-field-post-meta-parameters)
 
@@ -75,7 +77,7 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 }, 10, 3 );
 ```
 
-### Display posts with 25 comments or more
+**Display posts with 25 comments or more**
 
 Source: [https://developer.wordpress.org/reference/classes/wp_query/#comment-parameters](https://developer.wordpress.org/reference/classes/wp_query/#comment-parameters).
 
@@ -94,7 +96,7 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 }, 10, 3 );
 ```
 
-### Display posts that are not in a specific category
+Display posts that are not in a specific category
 
 Source: [https://developer.wordpress.org/reference/classes/wp_query/#category-parameters](https://developer.wordpress.org/reference/classes/wp_query/#category-parameters)
 
@@ -109,7 +111,7 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 }, 10, 3 );
 ```
 
-### Display posts from multiple specific taxonomies and terms
+Display posts from multiple specific taxonomies and terms
 
 Source: [https://developer.wordpress.org/reference/classes/wp_query/#taxonomy-parameters](https://developer.wordpress.org/reference/classes/wp_query/#taxonomy-parameters)
 
@@ -138,7 +140,7 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 }, 10, 3 );
 ```
 
-### Display posts from author
+Display posts from author
 
 ```
 add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_query_meta, $ql_id ) {
@@ -154,7 +156,7 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 }, 10, 3 );
 ```
 
-### Show Related Posts for Custom Taxonomies
+Show Related Posts for Custom Taxonomies
 
 The Advanced Query Loop block includes an option to *Show Related Posts*, which by default uses the standard post categories and tags to determine related content. If you’re working with a custom post type and/or a custom taxonomy, you can use the following snippet to modify the query and show related posts based on a specific taxonomy.
 
@@ -186,7 +188,7 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 }, 10, 3 );
 ```
 
-### Show Only In-Stock WooCommerce Products
+Show Only In-Stock WooCommerce Products
 
 By default, Adv Query Loop will display all products regardless of stock status. The following will modify the query so that it only shows in-stock products.
 
@@ -206,7 +208,7 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 }, 10, 3 );
 ```
 
-### Show Only Woocommerce Products that are on sale
+**Show Only WooCommerce Products that are on sale**
 
 ```
 // Show only Products that are on sale
@@ -219,7 +221,7 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
               // Force using these IDs
               $query['post__in'] = $sale_ids;
 
-              // Optionally, ensure it's querying products
+              // Optionally, ensure it’s querying products
               $query['post_type'] = 'product';
           } else {
             // If no products on sale, force an empty result
@@ -230,9 +232,9 @@ add_filter( 'kadence_blocks_pro_query_loop_query_vars', function( $query, $ql_qu
 }, 10, 3 );
 ```
 
-### Enable Relevanssi Integration
+Enable Relevanssi Integration
 
-The text search feature for Adv Query Loop uses the native WordPress search function which only considers the **post title** and **post content** values. Additional details such as custom post meta values, categories, and tags are not included so native searches will not consider these additional fields. **Relevanssi** replaces the native WP search functionality and gives you greater control over your search results. To learn more about Relevanssi, see their [plugin page](https://wordpress.org/plugins/relevanssi/) or the [official website](https://www.relevanssi.com/).
+The text search feature for Adv Query Loop uses the native WordPress search function which only considers the **post title** and **post content** values. Additional details such as custom post meta values, categories, and tags are not included so native searches will not consider these additional fields.  **Relevanssi** replaces the native WP search functionality and gives you greater control over your search results. To learn more about Relevanssi, see their [plugin page](https://wordpress.org/plugins/relevanssi/) or the [official website](https://www.relevanssi.com/).
 
 Adding the following code snippet will enable the Kadence Advance Query Loop to use the Relevanssi search query for a specific Advanced Query Loop block:
 
@@ -246,8 +248,6 @@ add_filter('kadence_blocks_pro_query_loop_query_vars', function( $query_args, $q
      return $query_args; 
 }, 10, 3);
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

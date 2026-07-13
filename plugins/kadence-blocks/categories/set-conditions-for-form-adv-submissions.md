@@ -8,7 +8,7 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/set-conditions-for-form-adv-submissions/](https://www.kadencewp.com/help-center/docs/kadence-blocks/set-conditions-for-form-adv-submissions/)
 
-By default, Kadence [Form (Adv)](https://www.liquidweb.com/docs/kadence-blocks/advanced-form-block/) is marked as “successful” when it passes all of its built-in checks, such as required fields and spam protection. However, there are many real-world situations where you may want **extra rules** before treating a submission as successful.
+By default, Kadence [Form (Adv)](https://docs.nexcess.com/software/kadence/advanced-form-block/) is marked as “successful” when it passes all of its built-in checks, such as required fields and spam protection. However, there are many real-world situations where you may want **extra rules** before treating a submission as successful.
 
 You can achieve this by using the **kadence_blocks_advanced_form_submission_reject** filter.
 
@@ -20,9 +20,9 @@ Once you hook into this filter, you can inspect the submitted fields, apply your
 
 If your custom logic returns **true**, it will stop the submission, show the error message, and prevent any success actions (such as redirecting or showing the success message).
 
-Here are some examples. You can add these PHP code to your site using a plugin like [Code Snippets](https://www.liquidweb.com/software/kadence/knowledge-base/advanced/how-to-add-a-custom-filter-or-function-with-code-snippets/) or your functions.php file (in a [child theme](https://www.liquidweb.com/wordpress/theme/child/)).
+Here are some examples. You can add these PHP code to your site using a plugin like [Code Snippets](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/) or your functions.php file (in a [child theme](https://docs.nexcess.com/software/kadence/what-is-child-theme-do-i-need-one/)).
 
-## Block Disallowed Email Domains
+Block Disallowed Email Domains
 
 ```
 add_filter( 'kadence_blocks_advanced_form_submission_reject', function( $reject, $form_args, $processed_fields, $post_id ) {
@@ -51,11 +51,11 @@ add_filter( 'kadence_blocks_advanced_form_submission_reject', function( $reject,
 
 **What this does:**
 
-- Looks for the email field with [name](https://www.liquidweb.com/docs/kadence-blocks/advanced-form-block/#field-advanced-settings) “email”
+- Looks for the email field with [name](https://docs.nexcess.com/software/kadence/advanced-form-block/#field-advanced-settings) “email”
 - Checks if it ends with @example.com or @testmail.net
 - If so, blocks the submission and shows a custom message
 
-## Require a Specific Field Value
+Require a Specific Field Value
 
 This example checks a field named access_code and only accepts it if the correct value is entered.
 
@@ -97,11 +97,9 @@ return 'The access code you entered is invalid.';
 - Compares its value to the required code (**VIP2025**)
 - Rejects the submission if incorrect and displays a custom message
 
-## Block Spam Using WordPress Disallowed Comment Keys
+Block Spam Using WordPress Disallowed Comment Keys
 
-You can read more about this example [here](https://www.liquidweb.com/docs/kadence-blocks/how-to-block-form-adv-spam-using-wordpress-disallowed-comment-keys/).
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+You can read more about this example [here](https://docs.nexcess.com/software/kadence/blocks/form-adv-block-disallowed-comment-keys/).
 
 ---
 

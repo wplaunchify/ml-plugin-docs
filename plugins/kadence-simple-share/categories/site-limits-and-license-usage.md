@@ -27,7 +27,8 @@ All **Plans** include **Limits** on the **number of sites**.
 | Plan | Express | Plus | Ultimate | Lifetime Ultimate |
 | --- | --- | --- | --- | --- |
 | Number of Sites | Up to 3 sites | Up to 10 sites | Up to 25 Sites (With an option to upgrade to 1,000 sites) | Up to 25 Sites (With an option to upgrade to 1,000 sites.) |
-### What Counts Towards Site Limits?
+
+What Counts Towards Site Limits?
 
 Only **active** **sites** count towards your **allowed** **sites** **limit**. Our system will automatically ignore any staging or local development site and not count them against your allowed installations by your license key.
 
@@ -90,7 +91,7 @@ Please note the list of whitelisted domains below:
 - *.cloudaccess.host (CloudAccess.net)
 - *.hostingersite.com (Hostinger)
 
-#### Examples
+Examples
 
 If you tried using the **same** personal license key on both **example.com** and **example.test**, this would work fine! Both sites would receive updates, and you would not get an *“out of installs”* notice.
 
@@ -98,11 +99,9 @@ However, if you tried to use the **same** personal **License** **Key** on both *
 
 Last but not least, if you tried to use the **same** personal license key on **example.com**, **example.test**, **example.staging**, **example.local**, and **localhost:8888/example**, this would work fine! All sites would get updates, and you would not get any *“out of installs”* notices.
 
-### My dev site’s URL doesn’t match any of the patterns listed above. Will this work?
+My dev site’s URL doesn’t match any of the patterns listed above. Will this work?
 
 Unfortunately, **no**. At this time, we only support the **specific** **patterns** **listed** **above**. Everything else is considered a **“live”**site and will count****against your i**nstall limit**.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run The Events Calendar scraper
-        run: node scraper.js --slug=the-events-calendar --mode=html-scrape --url=https://www.liquidweb.com/help-docs/software/events-calendar/ --selector=.entry-content --name="The Events Calendar"
+        run: node scraper.js --slug=the-events-calendar --mode=html-scrape --url=https://docs.nexcess.com/software/the-events-calendar/ --selector=.nx-prose --name="The Events Calendar"
 
       - name: Check for changes
         id: changes

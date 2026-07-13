@@ -12,16 +12,27 @@ Kadence Shop Kit allows you to set a few **Variation Options**. Products in your
 
 - Show Price Range ($lowest – $highest)
 - Show lowest price only
-- Show highest price only![Shop Kit Variation Options Output Options](https://res.cloudinary.com/lwcom/images/w_1024,h_707,c_scale/f_auto,q_auto/v1780597966/prod/Shop-Kit-Variation-Options-Output-Options/Shop-Kit-Variation-Options-Output-Options.jpeg?_i=AA)
-## Show Price Range ($lowest – $highest)
+- Show highest price only
 
-![Lowest to Highest Variation Option](https://res.cloudinary.com/lwcom/images/w_372,h_617,c_scale/f_auto,q_auto/v1780598086/prod/Lowest-to-Highest-Variation-Option_46166172578/Lowest-to-Highest-Variation-Option_46166172578.jpeg?_i=AA)Lowest to Highest Variation Option![Lowest to Highest Variation Option Product Page](https://res.cloudinary.com/lwcom/images/w_1438,h_657,c_scale/f_auto,q_auto/v1780598155/prod/Shop-Kit-Variation-Options/Shop-Kit-Variation-Options.jpeg?_i=AA)Lowest to Highest Variation Option Product Page
-## Show Lowest Price Only
+![Shop Kit Variation Options Output Options](https://docs.nexcess.com/wp-content/uploads/2026/06/Shop-Kit-Variation-Options-Output-Options-1024x707-1.jpeg)Shop Kit Variation Options Output Options
 
-![Before and After Text for Variation Options](https://res.cloudinary.com/lwcom/images/w_572,h_552,c_scale/f_auto,q_auto/v1780598219/prod/Before-and-After-Text-for-Variation-Options/Before-and-After-Text-for-Variation-Options.jpeg?_i=AA)Before and After Text for Variation Options![Lowest only Variation Option](https://res.cloudinary.com/lwcom/images/w_1023,h_486,c_scale/f_auto,q_auto/v1780598285/prod/Lowest-only-Variation-Option/Lowest-only-Variation-Option.jpeg?_i=AA)Lowest only Variation Option
-## Show Highest Price Only
+Show Price Range ($lowest – $highest)
 
-![Highest price variation only](https://res.cloudinary.com/lwcom/images/w_518,h_527,c_scale/f_auto,q_auto/v1780598352/prod/Highest-price-only-variation-options/Highest-price-only-variation-options.jpeg?_i=AA)Highest price only variation options![Highest only variation sale price product page](https://res.cloudinary.com/lwcom/images/w_1360,h_651,c_scale/f_auto,q_auto/v1780598453/prod/Higest-only-variation-sale-price-product-page_461666c72ba/Higest-only-variation-sale-price-product-page_461666c72ba.jpeg?_i=AA)Highest only variation sale price product pageWas this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Lowest to Highest Variation Option](https://docs.nexcess.com/wp-content/uploads/2026/06/Lowest-to-Highest-Variation-Option.jpeg)Lowest to Highest Variation Option
+
+![Lowest to Highest Variation Option Product Page](https://docs.nexcess.com/wp-content/uploads/2026/06/Shop-Kit-Variation-Options-1024x468-1.jpeg)Lowest to Highest Variation Option Product Page
+
+Show lowest price only
+
+![Before and After Text for Variation Options](https://docs.nexcess.com/wp-content/uploads/2026/06/Before-and-After-Text-for-Variation-Options.jpeg)Before and After Text for Variation Options
+
+![Lowest only Variation Option](https://docs.nexcess.com/wp-content/uploads/2026/06/Lowest-only-Variation-Option-1024x486-1.jpeg)Lowest only Variation Option
+
+Show highest price only
+
+![Highest price only variation options](https://docs.nexcess.com/wp-content/uploads/2026/06/Highest-price-only-variation-options.jpeg)Highest price only variation options
+
+![Higest only variation sale price product page](https://docs.nexcess.com/wp-content/uploads/2026/06/Higest-only-variation-sale-price-product-page-1024x490-1.jpeg)Highest only variation sale price product page
 
 ---
 

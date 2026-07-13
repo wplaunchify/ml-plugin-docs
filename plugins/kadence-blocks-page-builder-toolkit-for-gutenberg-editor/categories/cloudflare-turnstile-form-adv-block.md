@@ -4,59 +4,58 @@
 
 ---
 
-## Cloudflare Turnstile
+## How to Integrate Kadence Forms with Cloudflare Turnstile
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/cloudflare-turnstile-form-adv-block/](https://www.kadencewp.com/help-center/docs/kadence-blocks/cloudflare-turnstile-form-adv-block/)
 
-## Introducing GiveWP’s first captcha integration
+When posting forms on your website, it is ideal to use some form of **spam** **prevention** to prevent malicious actors. A popular option is Cloudflare Turnstile, an effective, trusted form of spam prevention. The [Kadence Form (Adv) Block](https://docs.nexcess.com/software/kadence/advanced-form-block/) specifically supports Turnstile integrations. This guide will overview how to set up Cloudflare Turnstile and use it with your Kadence Forms.
 
-The GiveWP Cloudflare Turnstile add-on protects your donation forms from spam donations and bots by verifying that form submissions come from humans. It employs a frictionless checkbox field on your form to ensure security and build trust with your donors.
+Want to add Turnstile protection to other forms on your website, such as the login form? Check out the premium Kadence CAPTCHA plugin [here](https://docs.nexcess.com/software/kadence/blocks/captcha/).
 
-### Installing the GiveWP Cloudflare Turnstile Add-on
+Setting up CloudFlare Turnstile
 
-To install this add-on, you must either download the file or search for the plugin inside your WordPress admin. Choose whichever method works best for you.
+To use the Kadence Forms with Cloudflare Turnstile, a Cloudflare account must be created, and the website should be added to the Cloudflare Turnstile list of sites. A Cloudflare account can be created [here](https://dash.cloudflare.com/sign-up).
 
-**Download and Install the Add-on File**
+From the Cloudflare Dashboard, find the Turnstile Tab. Click on it and click on the Add Site button
 
-1. [Download the plugin zip file](https://wordpress.org/plugins/give-cloudflare-turnstile/) for the GiveWP Cloudflare Turnstile add-on.
-2. Log into your website’s WordPress admin area.
-3. Go to **Plugins > Add New Plugin** in the left side menu.
-4. Use the **Upload Plugin** option at the top of the page.
-5. Upload the plugin zip file and choose **Install**.
-6. Wait for the message saying the plugin was installed successfully, and choose **Activate**.
+![Cloudlfare Turnstile add a site](https://docs.nexcess.com/wp-content/uploads/2026/06/Turnstile-Step-1-scaled-1.jpg)
 
-**Install and Activate from inside WordPress**
+This will require some website details to be filled out.
 
-1. Log into your website’s WordPress admin area.
-2. Go to **Plugins > Add New Plugin** in the left side menu.
-3. Search for “GiveWP Cloudflare Turnstile.”
-4. Identify the correct plugin by the title, “Give – Cloudflare Turnstile” and the author, “GiveWP.”
-5. Choose **Install** on the plugin card.
-6. Wait for the message saying the plugin was installed successfully, and choose **Activate**.
+Set the Site Name to a preferred name for the website. This name serves as a unique identifier within Cloudflare Turnstile.
 
-### Setting up the Cloudflare Turnstile Add-on
+The Domain setting specifies the domain where the Turnstile Keys will be applied. This domain should match the one where the Kadence Forms are implemented. You can manually enter a custom domain or select from existing connected websites in the Cloudflare account.
 
-Once the add-on is installed, some setup is required. You will need a free Cloudflare account and a Turnstile widget for your website. If you don’t have a Cloudflare account, you must [sign up on the Cloudflare website](https://www.cloudflare.com/). Once you have an account, you can go to Turnstile inside your [Cloudflare dashboard](https://dash.cloudflare.com/) and [follow Cloudflare’s instructions](https://developers.cloudflare.com/turnstile/get-started/) to create a widget. This will give you the API keys to connect GiveWP with Cloudflare Turnstile.
+Choose between Managed, Non-interactive, or Invisible for the Widget Mode. Managed provides a straightforward Turnstile widget with minimal setup, while Non-interactive operates discreetly in the background. Invisible hides the widget entirely from users.
 
-**Steps to Connect**
+Decide if you want to opt for pre-clearance for this site. Pre-clearance simplifies access for verified users by automatically recognizing them based on previous verifications. This means that once users are verified through an initial process, they won’t need to go through additional verification steps each time they access your site.
 
-1. Select **Settings** under the plugin title in the Plugins list or navigate to **GiveWP > Settings > Security > Cloudflare Turnstile**.
-2. Enable Cloudflare Turnstile, and two key fields will appear.
-3. Add the Site Key and Secret Key provided by Cloudflare when you created a Turnstile widget for your site.
-4. Save your changes.
+![Tunrstile Adding a Website](https://docs.nexcess.com/wp-content/uploads/2026/06/Tunrstile-Step-2-scaled-e1720544907452.jpg)
 
-![](https://res.cloudinary.com/lwcom/images/w_1024,h_414,c_scale/f_auto,q_auto/v1778561608/prod/Cloudflare-Turnstile-settings/Cloudflare-Turnstile-settings.png?_i=AA)
-## Understanding How The Cloudflare Turnstile Add-on Works
+Ensure all details are accurate before completing the registration process for the site with Cloudflare Turnstile. Then click the Create button.
 
-When Cloudflare Turnstile is enabled on your site with valid API keys, a Cloudflare Turnstile checkbox will appear at the bottom of your donation forms, just above the Donate button.
+Once the website is added, a pop-up will display presenting the **Site** **Key** and **Secret** **Key**. These two keys are required for Kadence to integrate with Turnstile. It is important to save this page and key details for future reference. *(These keys can also be accessed later in the Cloudflare Dashboard)*
 
-![](https://res.cloudinary.com/lwcom/images/w_578,h_280,c_scale/f_auto,q_auto/v1778561603/prod/Cloudflare-Turnstile-checkbox/Cloudflare-Turnstile-checkbox.png?_i=AA)In some scenarios (such as a logged-in user), the box may be checked automatically, and the user doesn’t have to do anything. In most cases, this is a required field that the user must check before submitting the form.
+![Turnstile Site Keys](https://docs.nexcess.com/wp-content/uploads/2026/06/Turnstile-Step-3.jpg)
 
-This adds a layer of protection to your donation forms, reducing spam donations by adding a step that can only be completed by a real person.
+Adding Tunrstile Keys to Form (Adv) Blocks
 
-## FAQ
+The [Form (Adv) Block](https://docs.nexcess.com/software/kadence/advanced-form-block/) supports the use of Cloudflare Turnstile. This is done by clicking on the blue plus icon to add a new block inside the Form (Adv) Block. Then, navigate to the [Misc tab](https://docs.nexcess.com/software/kadence/advanced-form-block/#misc-fields) and add the CAPTCHA block to the form.
 
-**Does the Cloudflare Turnstile add-on protect all of my forms?**GiveWP’s Cloudflare Turnstile add-on only protects GiveWP donation forms, not other forms on your website. Also, it will only protect forms created using the Visual Donation Form Builder. It does not protect Legacy forms and other forms created with the older donation form editor.**Can I add captcha to some forms and not others?**No. Once configured, the captcha is automatically added to all GiveWP donation forms created using the Visual Builder. There are no options to configure this on a per-form basis.Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Adding a Captcha Block](https://docs.nexcess.com/wp-content/uploads/2026/06/Adding-a-Captcha-Block-1024x1024-1.jpg)
+
+Afterward, select the CAPTCHA block and use the **General** **Block** **Settings** to set up Cloudflare Turnstile.
+
+Under **CAPTCHA TYPE**, select the **Turnstile** option. Then, you can fill out your **Site** **Key** and **Secret** **Keys** accordingly. 
+*(Don’t forget to press Save after entering your keys)*
+
+You can also use the **Style** **Block** **Settings** to specify a **Color** **Theme** of **Light** or **Dark** and a **Size** of **Normal** or **Compact**.
+
+![reCAPTCHA Style](https://docs.nexcess.com/wp-content/uploads/2026/06/reCAPTCHA-Style.jpg)
+
+![Turnstile Block Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Turnstile-Block-Settings.jpg)
+
+Once everything is set up, the Form (Adv) Block will validate users through Cloudflare Turnstile.
 
 ---
 

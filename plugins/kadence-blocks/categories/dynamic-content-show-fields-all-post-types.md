@@ -12,19 +12,23 @@ Dynamic content is a helpful function that allows you to access various post fie
 
 Generally, the custom fields are found in the dynamic content custom field selector, as pictured here. However, there are cases in which the fields aren’t listed. In those cases, there is an option to enter a custom input manually.
 
-![custom field select](https://www.liquidweb.com/wp-content/uploads/2023/09/custom-field-select.jpeg)
-## Custom Input Example
+![custom field select](https://docs.nexcess.com/wp-content/uploads/2026/06/custom-field-select.jpeg)
 
-There are cases when custom fields aren’t listed in the custom field selector. For example, The Events Calander is a plugin that lets you create event posts. The posts have custom fields that are listed [here](https://www.liquidweb.com/help-docs/software/events-calendar/events-calendar-pro-wordpress-post-meta-data/). However, the fields aren’t available to select because a third-party plugin provides them. Nonetheless, you can source an event post and access the **_EventCost**by choosing “**Custom Input**” for the “**Custom Field**” option. Here is a screenshot that shows the event cost of an event from The Events Calendar plugin added to the content of a post dynamically.
+Custom Input Example
 
-![custom meta key example](https://www.liquidweb.com/wp-content/uploads/2023/09/custom-meta-key-example-1024x731.jpeg)
-## Show fields from all post types
+There are cases when custom fields aren’t listed in the custom field selector. For example, The Events Calander is a plugin that lets you create event posts. The posts have custom fields that are listed [here](https://docs.nexcess.com/software/the-events-calendar/wordpress-post-meta/). However, the fields aren’t available to select because a third-party plugin provides them. Nonetheless, you can source an event post and access the **_EventCost**by choosing “**Custom Input**” for the “**Custom Field**” option. Here is a screenshot that shows the event cost of an event from The Events Calendar plugin added to the content of a post dynamically.
+
+![custom meta key example](https://docs.nexcess.com/wp-content/uploads/2026/06/custom-meta-key-example-1024x731-1.jpeg)
+
+Show fields from all post types
 
 A helpful way to use dynamic content is to display fields from all post types. This feature is handy when working with Kadence Elements, which enables you to create templates for posts and custom post types. However, when editing these templates, you may encounter cases where you want to add dynamic content from a post type whose custom fields are not listed. In these cases, the option to show fields from all post types helps you locate custom fields from all custom post types. While custom fields from all post types are visible, they will not all be accessible if the content source is not the correct post type.
 
-![show fields from all post types](https://www.liquidweb.com/wp-content/uploads/2023/09/show-fields-from-all-post-types.jpeg)The option to show the fields from all post types is also available globally. Enable the setting globally by clicking the Kadence Blocks Controls icon in the top right of the editor. Access the Dynamic Content Settings and enable the “Always show all fields” setting.
+![show fields from all post types](https://docs.nexcess.com/wp-content/uploads/2026/06/show-fields-from-all-post-types.jpeg)
 
-![kadence blocks controls dynamic content settings](https://www.liquidweb.com/wp-content/uploads/2023/09/kadence-blocks-controls-dynamic-content-settings.jpeg)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+The option to show the fields from all post types is also available globally. Enable the setting globally by clicking the Kadence Blocks Controls icon in the top right of the editor. Access the Dynamic Content Settings and enable the “Always show all fields” setting.
+
+![kadence blocks controls dynamic content settings](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-blocks-controls-dynamic-content-settings.jpeg)
 
 ---
 

@@ -33,9 +33,9 @@ functions.php
 
  file if you are using a child theme. If you are not using a child theme, you should use a plugin such as **Code Snippets** to add custom code safely without editing theme files directly.
 
-## Examples
+Examples
 
-### Example 1: Remove Year and Month folder
+Example 1: Remove Year and Month folder
 
 This example saves all Kadence Form uploads in /wp-content/uploads/kadence_form/ without adding the /year/month subfolders.
 
@@ -64,7 +64,7 @@ Instead of
 /wp-content/uploads/kadence_form/2025/10/file.pdf
 ```
 
-### Example 2: Save uploads outside of the default uploads folder
+Example 2: Save uploads outside of the default uploads folder
 
 This example saves Kadence Form uploads in a custom folder called /form_uploads located at the root of your WordPress site (same level as wp-config.php).
 
@@ -95,8 +95,6 @@ and can be accessed at:
 ```
 https://example.com/form_uploads/file.pdf
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

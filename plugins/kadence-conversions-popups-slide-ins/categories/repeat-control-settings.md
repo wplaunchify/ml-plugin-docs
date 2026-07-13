@@ -14,9 +14,9 @@ A toggle allows you to enable (or disable) repeat controls. Repeat Control uses 
 
 You can set repeat controls based on closed conversion element vs. goals achieved, and set how many days you would like that conversion item to not be shown to that user. If you’d like to track this by a campaign ID, you can do that as well.
 
-![Kadence Conversions repeat control](https://www.liquidweb.com/wp-content/uploads/2021/12/kadence-conversions-repeat-control.png)Be aware that repeat control settings are set individually for each Kadence Conversion item. If you want to set repeat controls similarly for each conversion item, you’ll need to copy settings to each conversion item.
+![Kadence Conversions repeat control](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-conversions-repeat-control.png)
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+Be aware that repeat control settings are set individually for each Kadence Conversion item. If you want to set repeat controls similarly for each conversion item, you’ll need to copy settings to each conversion item.
 
 ---
 

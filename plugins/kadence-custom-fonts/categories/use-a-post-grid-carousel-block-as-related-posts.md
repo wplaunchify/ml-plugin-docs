@@ -14,46 +14,65 @@ This method allows you to fully customize how related posts appear, using Kadenc
 
 This is a premium guide that requires both Kadence Blocks Pro and Theme Kit Pro, which are [available in the Plus Plan and greater](https://kadencewp.com/pricing).
 
-![Finished Result](https://www.liquidweb.com/wp-content/uploads/2025/10/Finished-Result-scaled.jpg)**Requirements:**
+![Finished Result](https://docs.nexcess.com/wp-content/uploads/2026/06/Finished-Result-scaled-1.jpg)
 
-- [Kadence Blocks Pro](https://www.liquidweb.com/docs/kadence-blocks/kadence-blocks-pro-plugin/) – For the Post Grid/Carousel Block.
-- [Kadence Theme Kit Pro](https://www.liquidweb.com/docs/kadence-theme/kadence-theme-pro-addon/) – For Hooked Elements.
-- A method to implement **custom** **code** **snippets**. This can be done typically with a plugin ([Learn more](https://www.liquidweb.com/docs/kadence-theme/how-to-add-a-custom-filter-or-function-with-code-snippets/)) or by modifying the 
+**Requirements:**
+
+- [Kadence Blocks Pro](https://docs.nexcess.com/software/kadence/kadence-blocks-pro-plugin/) – For the Post Grid/Carousel Block.
+- [Kadence Theme Kit Pro](https://docs.nexcess.com/software/kadence/theme/theme-kit-pro-plugin/) – For Hooked Elements.
+- A method to implement **custom** **code** **snippets**. This can be done typically with a plugin ([Learn more](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/)) or by modifying the 
 ```
 functions.php
 ```
 
  file in child themes.
 
-## Hiding the Default Related Posts Section
+Hiding the Default Related Posts Section
 
 The first step is to hide the default Related Posts Section from the website. This can be done by going to the **Appearance → Customize → Post/Pages Layout → Single Post Layout** settings. Find the setting named **Show Related Posts** and disable the toggle.
 
-![Hide Related Posts](https://www.liquidweb.com/wp-content/uploads/2025/10/Hide-Related-Posts-scaled.jpg)Now, the default Related Posts are hidden.
+![Hide Related Posts](https://docs.nexcess.com/wp-content/uploads/2026/06/Hide-Related-Posts-scaled-1.jpg)
 
-## Adding a Post Grid/Carousel Block to a Hooked Element
+Now, the default Related Posts are hidden.
 
-To get started, you must have [Theme Kit Pro](https://www.liquidweb.com/docs/kadence-theme/kadence-theme-pro-addon/) along with [Hooked Elements](https://www.liquidweb.com/docs/kadence-theme/installing-kadence-elements/) enabled. Hooked Elements can be enabled from the **Dashboard → Appearance → Kadence** page.
+Adding a Post Grid/Carousel Block to a Hooked Element
 
-![Enabled Hooked Elements](https://www.liquidweb.com/wp-content/uploads/2025/05/Enabled-Hooked-Elements-scaled.jpg)With Hooked Elements enabled, go to the **Dashboard → Appearance → Kadence → Elements** page and create a new [Content Section Element](https://www.liquidweb.com/docs/kadence-theme/kadence-content-section-hooked-elements/).
+To get started, you must have [Theme Kit Pro](https://docs.nexcess.com/software/kadence/theme/theme-kit-pro-plugin/) along with [Hooked Elements](https://docs.nexcess.com/software/kadence/theme/installing-creating-elements/) enabled. Hooked Elements can be enabled from the **Dashboard → Appearance → Kadence** page.
 
-![Add New Element](https://res.cloudinary.com/lwcom/images/w_1024,h_753,c_scale/f_auto,q_auto/v1780352985/prod/Add-New-Element/Add-New-Element.jpg?_i=AA)![](https://res.cloudinary.com/lwcom/images/w_1024,h_473,c_scale/f_auto,q_auto/v1780352724/prod/Zight-Recording-2025-06-26-at-03.56.52-PM/Zight-Recording-2025-06-26-at-03.56.52-PM.gif?_i=AA)Inside the Hooked Element, add a **Post Grid/Carousel Block**. You can place it inside a **Row Layout Block**to control the background contents. You can modify the [Post Grid/Carousel Block Settings](https://www.liquidweb.com/docs/kadence-blocks/kadence-blocks-post-grid-carousel-block/#general-settings) to meet your styling needs.
+![Enabled Hooked Elements](https://docs.nexcess.com/wp-content/uploads/2026/06/Enabled-Hooked-Elements-scaled-1.jpg)
+
+With Hooked Elements enabled, go to the **Dashboard → Appearance → Kadence → Elements** page and create a new [Content Section Element](https://docs.nexcess.com/software/kadence/theme/content-section-hooked-elements/).
+
+![Add New Element](https://docs.nexcess.com/wp-content/uploads/2026/06/Add-New-Element.jpg)
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Zight-Recording-2025-06-26-at-03.56.52-PM.gif)
+
+Inside the Hooked Element, add a **Post Grid/Carousel Block**. You can place it inside a **Row Layout Block**to control the background contents. You can modify the [Post Grid/Carousel Block Settings](https://docs.nexcess.com/software/kadence/post-grid-carousel-block/#general-settings) to meet your styling needs.
 
 Afterward, select the Post Grid/Carousel Block, go to the **Block Settings → Advanced Tab → Advanced**, and add a **Custom** **CSS** **Class** to the block. This will be a unique identifier, so the modifications only apply specifically to the *current Post Grid/Carousel Block*.
 
-![Custom CSS Class](https://www.liquidweb.com/wp-content/uploads/2025/10/Custom-CSS-Class-scaled.jpg)Once finished, use the [Element Settings](https://www.liquidweb.com/docs/kadence-theme/showing-hiding-kadence-elements-settings/)to hook in the Post Grid/Carousel Block accordingly.
+![Custom CSS Class](https://docs.nexcess.com/wp-content/uploads/2026/06/Custom-CSS-Class-scaled-1.jpg)
 
-![Kadence Element Settings Icon](https://www.liquidweb.com/wp-content/uploads/2025/06/Screenshot-2025-06-27-at-3.38.19 PM.png)There are many Theme Hooks available for the **Placement** settings. For this use case, the **Before** **Comments** hook is great for hooking where needed. However, any single post relative hook will work. 
+Once finished, use the [Element Settings](https://docs.nexcess.com/software/kadence/theme/element-settings/)to hook in the Post Grid/Carousel Block accordingly.
+
+![Kadence Element Settings Icon](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-27-at-3.38.19-PM.png)
+
+There are many Theme Hooks available for the **Placement** settings. For this use case, the **Before** **Comments** hook is great for hooking where needed. However, any single post relative hook will work. 
 
 Then, expand the **Display** **Settings** tab and set the **Show** **On** setting to apply to **Single** **Posts**.
 
-![Placement Settings](https://res.cloudinary.com/lwcom/images/w_407,h_1024,c_scale/f_auto,q_auto/v1780351693/prod/Placement-Settings/Placement-Settings.jpg?_i=AA)![Hooked Element Result](https://www.liquidweb.com/wp-content/uploads/2025/10/Hooked-Element-Result-scaled.jpg)In return, the Post Grid/Carousel will be placed accordingly. Now, the custom code snippet mentioned in the next step is needed to complete this feature.
+![Placement Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Placement-Settings.jpg)
 
-## Modifying the Post Grid/Carousel Query
+![Hooked Element Result](https://docs.nexcess.com/wp-content/uploads/2026/06/Hooked-Element-Result-scaled-1.jpg)
 
-The Post Grid/Carousel Block offers [a built-in filter](https://www.liquidweb.com/docs/kadence-blocks/custom-queries-for-the-post-grid-carousel-block-filter/) to customize the query results. You can use a plugin like the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) to modify and use the following custom code. ([Learn more](https://www.liquidweb.com/docs/kadence-theme/how-to-add-a-custom-filter-or-function-with-code-snippets/).)
+In return, the Post Grid/Carousel will be placed accordingly. Now, the custom code snippet mentioned in the next step is needed to complete this feature.
 
-- This custom code uses the same logic that the Kadence Theme Related Posts query uses. Therefore, it will successfully filter the Post Grid/Carousel Block to use this functionality.- Out of the box, the **Kadence Related Posts** feature automatically queries posts that share the same **categories or tags** as the current post. It uses a randomized order and excludes the current post, ensuring each visit displays a fresh mix of similar content.
+Modifying the Post Grid/Carousel Query
+
+The Post Grid/Carousel Block offers [a built-in filter](https://docs.nexcess.com/software/kadence/custom-queries-post-grid-carousel-block/) to customize the query results. You can use a plugin like the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) to modify and use the following custom code. ([Learn more](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/).)
+
+- This custom code uses the same logic that the Kadence Theme Related Posts query uses. Therefore, it will successfully filter the Post Grid/Carousel Block to use this functionality.
+- Out of the box, the **Kadence Related Posts** feature automatically queries posts that share the same **categories or tags** as the current post. It uses a randomized order and excludes the current post, ensuring each visit displays a fresh mix of similar content.
 - In this code, you must replace 
 ```
 YOUR-CUSTOM-CLASS
@@ -116,9 +135,9 @@ add_filter( 'kadence_blocks_pro_posts_grid_query_args', function( $args, $attrib
 
 Afterward, your Post Grid/Carousel Block will work the same way the Related Posts feature does, grabbing relevant related posts.
 
-![Finished Result](https://www.liquidweb.com/wp-content/uploads/2025/10/Finished-Result-scaled.jpg)Want more control over the Post Grid/Carousel Block to extend this feature? Consider checking out the [How to Design a Post Grid/Carousel using a Kadence Element document](https://www.liquidweb.com/docs/kadence-theme/how-to-design-a-post-grid-carousel-using-a-kadence-element/).
+![Finished Result](https://docs.nexcess.com/wp-content/uploads/2026/06/Finished-Result-scaled-1.jpg)
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+Want more control over the Post Grid/Carousel Block to extend this feature? Consider checking out the [How to Design a Post Grid/Carousel using a Kadence Element document](https://docs.nexcess.com/software/kadence/theme/post-grid-carousel-using-kadence-element/).
 
 ---
 

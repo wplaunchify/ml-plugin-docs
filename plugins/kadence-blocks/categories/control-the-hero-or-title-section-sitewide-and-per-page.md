@@ -33,8 +33,8 @@ These changes apply globally, so all pages or posts of that type will follow the
 
 **Helpful guides:**
 
-- [Customizing the Theme’s built-in Post Title](https://www.liquidweb.com/docs/kadence-theme/single-post-layout-customizer-settings)
-- [Customizing the Theme’s built-in Page Title](https://www.liquidweb.com/docs/kadence-theme/page-layout-customizer-settings)
+- [Customizing the Theme’s built-in Post Title](https://docs.nexcess.com/software/kadence/theme/single-post-layout-customizer-settings/)
+- [Customizing the Theme’s built-in Page Title](https://docs.nexcess.com/software/kadence/theme/page-layout-customizer-settings/)
 
 ---
 
@@ -47,12 +47,17 @@ If you want to create unique Hero Sections for specific pages or posts, you can 
 In the WordPress editor, open the **Page Settings** or **Post Settings** panel (usually on the right side).
 Then set **“Show Page Title”** or **“Show Post Title”** to **Disable**.
 
-*This removes the default title section so you can design your own.*![](https://res.cloudinary.com/lwcom/images/w_433,h_573,c_scale/f_auto,q_auto/v1780352856/prod/disable-title/disable-title.jpg?_i=AA)
+*This removes the default title section so you can design your own.*
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/disable-title.jpg)
+
 ### Step 2: Create Your Custom Hero Section
 
 Use **Kadence Blocks** directly in the content editor to build your section.
 
-![Custom Title Demo](https://res.cloudinary.com/lwcom/images/w_1024,h_436,c_scale/f_auto,q_auto/v1780352817/prod/Custom-Title-Demo/Custom-Title-Demo.gif?_i=AA)Recommended blocks:
+![Custom Title Demo](https://docs.nexcess.com/wp-content/uploads/2026/06/Custom-Title-Demo.gif)
+
+Recommended blocks:
 
 - **Row Layout** – for flexible layouts and background options (images, colors, overlays)
 - **Advanced Text** – for styled titles, subtitles, and headings
@@ -67,6 +72,7 @@ You can customize:
 This method gives you complete control over the look and feel of the section on a page-by-page basis.
 
 > ⚠️ Note: This method only works for individual posts, pages, or custom post types. It does not apply to archive pages like categories or blog listings.
+
 ---
 
 ## 3. Creating Dynamic or Sitewide Hero Sections with Hooked Elements (Kadence Pro)
@@ -85,18 +91,20 @@ Hooked Elements let you insert custom content in specific areas of your site by 
 
 - Replace the default Title Section with your own custom design
 - Add additional content (like a subtitle or banner) above or below the default title
-- Use [dynamic content](https://www.liquidweb.com/docs/kadence-blocks/dynamic-content/) like post titles or featured images
+- Use [dynamic content](https://docs.nexcess.com/software/kadence/dynamic-content/) like post titles or featured images
 
 ### How to Create a Hooked Element
 
-![Creating an Element](https://res.cloudinary.com/lwcom/images/w_1024,h_596,c_scale/f_auto,q_auto/v1780352804/prod/Creating-an-Element/Creating-an-Element.gif?_i=AA)
+![Creating an Element](https://docs.nexcess.com/wp-content/uploads/2026/06/Creating-an-Element.gif)
 
 1. **Go to**: **Appearance → Kadence → Elements → Add New**
 2. Choose **Content Section**
 3. Add your design using Kadence Blocks
-4. Under **Placement**, choose where it should appear:- Use **“Replace Above Content Hero”** to fully replace the default title section
+4. Under **Placement**, choose where it should appear:
+- Use **“Replace Above Content Hero”** to fully replace the default title section
 - Or use **insert options** to place content above/below the existing title
-5. Set **Display Settings**:- Choose where it shows (e.g., single post, all pages, archive)
+5. Set **Display Settings**:
+- Choose where it shows (e.g., single post, all pages, archive)
 - Optionally limit by device or user role
 
 If you’re using **Kadence Blocks Pro**, you can also pull in **Dynamic Content**, such as:
@@ -109,11 +117,9 @@ This method is ideal for consistent and dynamic layouts across your site.
 
 **References:**
 
-- [Using Dynamic Content](https://www.liquidweb.com/docs/kadence-blocks/dynamic-content)
-- [How to Use Element Hooks](https://www.liquidweb.com/docs/kadence-theme/how-to-use-element-hooks)
-- [Creating Content Elements](https://www.liquidweb.com/docs/kadence-theme/how-to-create-a-kadence-elements-content-section)
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+- [Using Dynamic Content](https://docs.nexcess.com/software/kadence/dynamic-content/)
+- [How to Use Element Hooks](https://docs.nexcess.com/software/kadence/theme/use-element-hooks/)
+- [Creating Content Elements](https://docs.nexcess.com/software/kadence/theme/content-section-hooked-elements/)
 
 ---
 

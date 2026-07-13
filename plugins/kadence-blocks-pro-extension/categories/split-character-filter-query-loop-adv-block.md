@@ -65,7 +65,5 @@ Here’s our guide: **How to add a custom filter or function with Code Snippets*
 
 Now, Query Loop (Adv) filters will treat each custom field text as a full value and query the posts correctly.
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
-
 ---
 

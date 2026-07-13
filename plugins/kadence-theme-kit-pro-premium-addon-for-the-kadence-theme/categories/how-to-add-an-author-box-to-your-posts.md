@@ -10,7 +10,7 @@
 
 Adding an author box is a great way to display information about the post’s author. The Kadence Theme offers a simple, built-in way to show an author box at the end of your blog posts.
 
-## How to Enable the Kadence Author Box
+How to Enable the Kadence Author Box
 
 You can enable the Kadence Author Box feature in the Customizer.
 
@@ -22,8 +22,13 @@ You can enable the Kadence Author Box feature in the Customizer.
 6. To link to the author archive, turn on **Use Author Archive Link**.
 7. Click **Publish** to save your changes.
 
-**Note:** The author box will only appear on single post pages — not on archives, categories, or other listings.![Kadence Customizer Settings - Enable Author Box](https://www.liquidweb.com/wp-content/uploads/2025/07/Screenshot-2025-07-28-at-12.24.37 PM.png)![Kadence Author Box - Normal or Center](https://www.liquidweb.com/wp-content/uploads/2025/07/Zight-Recording-2025-07-28-at-01.35.31-PM.gif)
-## How to Edit Author Bio Info and Image
+**Note:** The author box will only appear on single post pages — not on archives, categories, or other listings.
+
+![Kadence Customizer Settings - Enable Author Box](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-07-28-at-12.24.37-PM.png)
+
+![Kadence Author Box - Normal or Center](https://docs.nexcess.com/wp-content/uploads/2026/06/Zight-Recording-2025-07-28-at-01.35.31-PM.gif)
+
+How to Edit Author Bio Info and Image
 
 The content of the author box comes from the user profile of the post author.  To update the author info:
 
@@ -37,14 +42,17 @@ The content of the author box comes from the user profile of the post author.  T
 
 Once saved, the author box will automatically display the updated info after the content of each post written by that user.
 
-The Kadence Author Box can further be customized using custom CSS.  If you’re not familiar with adding custom CSS to your site, please see [this document](https://www.liquidweb.com/docs/kadence-theme/how-do-i-add-custom-css/).
+The Kadence Author Box can further be customized using custom CSS.  If you’re not familiar with adding custom CSS to your site, please see [this document](https://docs.nexcess.com/software/kadence/theme/add-custom-css-and-scripts-using-kadence/).
 
-## How to Change a Post’s Author
+How to Change a Post’s Author
 
 To change the post author, edit the post and click the author name in the post settings sidebar. Select the new author from the dropdown menu and save the post.
 
-You can also use the Quick Edit feature from your post listing to change the author on single or bulk update multiple posts.![Post Settings - Author](https://www.liquidweb.com/wp-content/uploads/2025/07/Screenshot-2025-07-28-at-12.52.42 PM-1024x801.png)
-## Alternate Solutions
+You can also use the Quick Edit feature from your post listing to change the author on single or bulk update multiple posts.
+
+![Post Settings - Author](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-07-28-at-12.52.42-PM-1024x801-1.png)
+
+Alternate Solutions
 
 If you prefer more control over the Author Box, there are several plugins available that can help. Here are a few that you might want to check into:
 
@@ -53,9 +61,7 @@ If you prefer more control over the Author Box, there are several plugins availa
 - [PublishPress Authors](https://wordpress.org/plugins/publishpress-authors/)
 - [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/)
 
-Be sure to check out our [Replace Author HTML](https://www.liquidweb.com/docs/kadence-theme/replace-author-html-multiple-author-support/) document for guidance on how to use Kadence filters for even greater control over your Author Box placement.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+Be sure to check out our [Replace Author HTML](https://docs.nexcess.com/software/kadence/theme/author-link-settings/) document for guidance on how to use Kadence filters for even greater control over your Author Box placement.
 
 ---
 

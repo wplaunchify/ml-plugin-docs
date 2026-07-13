@@ -16,7 +16,7 @@ For example, you might want to do the following:
 - Trigger an animation or send the data to another application
 - Hide or show HTML elements
 
-## Form (Adv) Block Submission Event
+Form (Adv) Block Submission Event
 
 **Event name:** *kb-advanced-form-success*
 
@@ -29,7 +29,7 @@ document.body.addEventListener('kb-advanced-form-success', function (event) {
 });
 ```
 
-#### Targeting a Specific Advanced Form
+**Targeting a Specific Advanced Form**
 
 You can make your script run only for one specific form by using the **HTML Anchor** setting in the block.
 
@@ -39,7 +39,9 @@ Example:
 myContact
 ```
 
-![](https://res.cloudinary.com/lwcom/images/w_462,h_897,c_scale/f_auto,q_auto/v1780352363/prod/my-contact/my-contact.jpg?_i=AA)1. **JavaScript Example:**
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/my-contact.jpg)
+
+1. **JavaScript Example:**
 
 ```
 document.body.addEventListener('kb-advanced-form-success', function(event) {
@@ -56,7 +58,7 @@ document.body.addEventListener('kb-advanced-form-success', function(event) {
 - The HTML Anchor you set (e.g., myContact) becomes the form’s ID in the page HTML.
 - The script checks if the submitted form’s unique ID matches that element before running your custom code.
 
-## Form Block Submission Event
+**Form Block** Submission Event
 
 **Event name:** *kb-form-success*
 
@@ -93,8 +95,6 @@ document.body.addEventListener('kb-form-success', function (event) {
 
 - The HTML Anchor you set becomes the ID of the form element.
 - The script checks if the submitted form’s ID matches before running your code.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

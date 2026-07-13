@@ -12,7 +12,7 @@ You may see the following error when opening the Kadence Design Library: **“Er
 
 This indicates that your site is unable to connect to Kadence’s Design Library API or is unable to store the library data locally. In most cases, this is caused by a server, security, or connection-related issue rather than a bug in Kadence.
 
-## Why This Happens
+**Why This Happens**
 
 The Kadence Design Library relies on:
 
@@ -21,20 +21,22 @@ The Kadence Design Library relies on:
 
 If any of these are blocked or misconfigured, the library cannot sync and show items properly.
 
-## Step-by-Step Solutions
+**Step-by-Step Solutions**
 
 Below are some common solutions that can help resolve the error entirely.
 
-### Step 1: Re-sync the Design Library
+**Step 1: Re-sync the Design Library**
 
 This should always be the first troubleshooting step.
 
 1. Open the **Kadence Design Library**.
 2. In the Design Library modal, click the *Sync with cloud* **refresh** **icon** in the **top-right corner**.
 
-![Re-sync the design library](https://res.cloudinary.com/lwcom/images/w_1024,h_138,c_scale/f_auto,q_auto/v1780350928/prod/image-7_46076942996/image-7_46076942996.jpeg?_i=AA)If the error persists, continue with the steps below.
+![Re-sync the design library](https://docs.nexcess.com/wp-content/uploads/2026/06/image-7-1.jpeg)
 
-### Step 2: Check Whether the REST API Is Blocked
+If the error persists, continue with the steps below.
+
+**Step 2: Check Whether the REST API Is Blocked**
 
 Kadence uses the WordPress REST API to sync and download Design Library items. If REST API requests are blocked, the library cannot connect. 
 
@@ -50,7 +52,7 @@ Kadence uses the WordPress REST API to sync and download Design Library items. I
 - Re-sync the Design Library.
 - If the issue resolves, adjust your security plugin or firewall rules to allow REST API requests.
 
-### Step 3: Confirm Your Server Allows Outbound HTTPS Requests
+**Step 3: Confirm Your Server Allows Outbound HTTPS Requests**
 
 Your server must be able to make outbound HTTPS connections to Kadence’s servers.
 
@@ -66,14 +68,17 @@ Your server must be able to make outbound HTTPS connections to Kadence’s serve
 2. Open the **Server** tab.
 3. Confirm that **cURL** is listed and enabled.
 
-![cURL version](https://res.cloudinary.com/lwcom/images/w_1013,h_1024,c_scale/f_auto,q_auto/v1780350933/prod/image-8_4607701c9a2/image-8_4607701c9a2.jpeg?_i=AA)If cURL is missing or errors are reported:
+![cURL version](https://docs.nexcess.com/wp-content/uploads/2026/06/image-8-1.jpeg)
 
-- Contact your hosting provider and ask them to:- Enable or install cURL
+If cURL is missing or errors are reported:
+
+- Contact your hosting provider and ask them to:
+- Enable or install cURL
 - Allow outbound HTTPS requests from your server
 
 Most hosts can confirm or adjust these settings quickly.
 
-## Next Steps
+**Next Steps**
 
 If you have completed all steps above and the error still appears:
 
@@ -81,8 +86,6 @@ If you have completed all steps above and the error still appears:
 - Ask them to check for blocked REST API or outbound HTTPS requests
 
 Once server-level restrictions are resolved, the Kadence Design Library should sync and work without errors.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

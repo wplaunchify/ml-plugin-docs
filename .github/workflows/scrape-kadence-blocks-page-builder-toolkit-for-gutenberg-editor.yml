@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Blocks Page Builder Toolkit For Gutenberg Editor scraper
-        run: node scraper.js --slug=kadence-blocks-page-builder-toolkit-for-gutenberg-editor --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-blocks/ --selector=.entry-content --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Blocks — Page Builder Toolkit for Gutenberg Editor"
+        run: node scraper.js --slug=kadence-blocks-page-builder-toolkit-for-gutenberg-editor --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-blocks/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Blocks — Page Builder Toolkit for Gutenberg Editor"
 
       - name: Check for changes
         id: changes

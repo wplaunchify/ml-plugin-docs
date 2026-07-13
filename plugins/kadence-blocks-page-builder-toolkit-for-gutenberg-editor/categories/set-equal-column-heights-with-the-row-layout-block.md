@@ -10,7 +10,7 @@
 
 Within the settings for the row layout block you can make each column have an equal height. To do this create a row layout with 2 or more columns and click on the “structure settings” in the row layout block settings.
 
-![](https://res.cloudinary.com/lwcom/images/w_320,h_320,c_fill,g_auto/f_auto,q_auto/v1778708252/prod/Rhonda-Capone/Rhonda-Capone.webp?_i=AA)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/inner_column_height-485x1024-1.jpg)
 
 ---
 

@@ -14,7 +14,8 @@ Duplicating a block is a powerful feature that allows you to replicate the style
 - In the Block Toolbar, click on the 3 dots (more options).
 - Select the Duplicate option from the dropdown menu.
 
-![](https://www.liquidweb.com/wp-content/uploads/2019/03/duplicte.gif)
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/duplicte.gif)
+
 ### Copy/Pasting Styles
 
 You can Copy the styles of a current block and Paste them into a different block. For example, the text alignment, color, and typography are Styles that can be Copied from the Advanced Text Block and Pasted onto another Advanced Text Block. Follow the instructions below to learn how you can Copy and Paste styles from one block to another block.
@@ -25,7 +26,7 @@ You can Copy the styles of a current block and Paste them into a different block
 - Then select the block you wish to Paste the styles onto.
 - Click on the Copy/Paste Styles Icon and select Paste Styles.
 
-![Copy/Paste Video](https://www.liquidweb.com/wp-content/uploads/2019/03/Copy-Paste.gif)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Copy/Paste Video](https://docs.nexcess.com/wp-content/uploads/2026/06/Copy-Paste.gif)
 
 ---
 

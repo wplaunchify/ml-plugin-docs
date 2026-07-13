@@ -12,15 +12,23 @@ This article explains how Contact Information can be added in the Kadence themeâ
 
 To get started, make sure you have entered your license details at Appearance > Kadence first and then enableÂ **Header Addons**.
 
-![Header Addons in Kadence Pro](https://www.liquidweb.com/wp-content/uploads/2020/09/header-addons-kadence-pro-1024x576.png)Click on Customize link under Header Addons or visit the WordPress Customizer via the admin menu link under Appearance or via the WP toolbar link if on the front end.
+![Header Addons in Kadence Pro](https://docs.nexcess.com/wp-content/uploads/2026/06/header-addons-kadence-pro-1024x576-1.png)
+
+Click on Customize link under Header Addons or visit the WordPress Customizer via the admin menu link under Appearance or via the WP toolbar link if on the front end.
 
 Go to the **Header** section.
 
 Drag Social item into your desired location.
 
-![Adding Contact header item in the header builder](https://www.liquidweb.com/wp-content/uploads/2020/09/contact-header-item-kadence-1024x545.jpg)To edit the default contact info content, click on the pencil icon in the header or the gear icon in the header builder.
+![Adding Contact header item in the header builder](https://docs.nexcess.com/wp-content/uploads/2026/06/contact-header-item-kadence-1024x545-1.jpg)
 
-![Editing the default Contact header item content](https://kadence-theme.com/wp-content/uploads/2020/09/editing-contact-header-kadence-1024x545.jpg)![Contact header item general settings](https://res.cloudinary.com/lwcom/images/w_267,h_413,c_scale/f_auto,q_auto/v1778709879/prod/five-hosting-questions-cover_5829e498/five-hosting-questions-cover_5829e498.webp?_i=AA)General settings![Contact header item design settings](https://www.liquidweb.com/wp-content/uploads/2020/09/contact-header-item-design-settings.png)Design settingsWas this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+To edit the default contact info content, click on the pencil icon in the header or the gear icon in the header builder.
+
+![Editing the default Contact header item content](https://docs.nexcess.com/wp-content/uploads/2026/07/editing-contact-header-kadence-1024x545-1.jpg)
+
+![Contact header item general settings](https://docs.nexcess.com/wp-content/uploads/2026/06/contact-header-item-general-settings.png)General settings
+
+![Contact header item design settings](https://docs.nexcess.com/wp-content/uploads/2026/06/contact-header-item-design-settings.png)Design settings
 
 ---
 

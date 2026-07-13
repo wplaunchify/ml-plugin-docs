@@ -12,11 +12,15 @@ One of the features of Kadence Pro is providing fields in the Customizer where y
 
 To get started, make sure you have entered your license details at Appearance > Kadence first and then enable **Header/Footer Scripts**.
 
-![Enabling Header/Footer Scripts in Kadence](https://www.liquidweb.com/wp-content/uploads/2020/09/header-footer-scripts-kadence.png)Click on Customize link to be taken to the **Custom Scripts** section in the WordPress Customizer. Scripts added through the customizer are global and will appear on all pages.
+![Enabling Header/Footer Scripts in Kadence](https://docs.nexcess.com/wp-content/uploads/2026/06/header-footer-scripts-kadence.png)
 
-![Custom Scripts fields in Kadence](https://www.liquidweb.com/wp-content/uploads/2020/09/custom-scripts-kadence-settings.png)The screenshot shows Google Tag Manager codes added via the Kadence’ Header/Footer Scripts addon:
+Click on Customize link to be taken to the **Custom Scripts** section in the WordPress Customizer. Scripts added through the customizer are global and will appear on all pages.
 
-![](https://www.liquidweb.com/wp-content/uploads/2020/09/kadence-google-tag-manager.png)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Custom Scripts fields in Kadence](https://docs.nexcess.com/wp-content/uploads/2026/06/custom-scripts-kadence-settings.png)
+
+The screenshot shows Google Tag Manager codes added via the Kadence’ Header/Footer Scripts addon:
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-google-tag-manager.png)
 
 ---
 

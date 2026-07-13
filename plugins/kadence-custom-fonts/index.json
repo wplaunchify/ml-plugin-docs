@@ -2,9 +2,9 @@
   "plugin_slug": "kadence-custom-fonts",
   "plugin_name": "Kadence Custom Fonts",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-  "last_scraped": "2026-07-05T17:19:01.350Z",
-  "total_pages": 121,
-  "failed_urls_count": 0,
+  "last_scraped": "2026-07-13T14:19:35.858Z",
+  "total_pages": 120,
+  "failed_urls_count": 1,
   "sections": [
     {
       "title": "Add A Login And Account Menu",
@@ -183,7 +183,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Integrate Google Analytics with Kadence Forms",
+          "title": "Google Analytics",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/adding-google-analytics/"
         }
       ]
@@ -250,19 +250,6 @@
         {
           "title": "Archive Custom Page Title Backgrounds (Kadence Theme Kit Pro)",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/archive-custom-settings/"
-        }
-      ]
-    },
-    {
-      "title": "Broken Styles After Version 1 1 15",
-      "slug": "broken-styles-after-version-1-1-15",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/broken-styles-after-version-1-1-15/",
-      "file": "categories/broken-styles-after-version-1-1-15.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Kadence Theme",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/broken-styles-after-version-1-1-15/"
         }
       ]
     },
@@ -993,7 +980,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Kadence Starter Templates",
+          "title": "Installing Kadence Starter Templates (Unlock AI and Pre-Designed Templates)",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/kadence-starter-templates/"
         }
       ]
@@ -1491,7 +1478,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Using the WordPress Dashboard",
+          "title": "Exploring the WordPress Dashboard",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/using-the-wordpress-dashboard/"
         }
       ]

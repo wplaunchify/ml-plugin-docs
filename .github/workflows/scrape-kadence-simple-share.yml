@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Simple Share scraper
-        run: node scraper.js --slug=kadence-simple-share --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-general/ --selector=.entry-content --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Simple Share"
+        run: node scraper.js --slug=kadence-simple-share --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-general/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Simple Share"
 
       - name: Check for changes
         id: changes

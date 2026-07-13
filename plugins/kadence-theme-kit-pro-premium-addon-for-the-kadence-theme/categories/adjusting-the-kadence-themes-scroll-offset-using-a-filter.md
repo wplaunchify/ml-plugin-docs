@@ -41,7 +41,5 @@ add_filter('kadence_scroll_to_id_additional_offset', function($offset){
 
 Add the PHP code snippets using a plugin. Refer to our guide here: **How to add a custom filter or function with Code Snippets**
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
-
 ---
 

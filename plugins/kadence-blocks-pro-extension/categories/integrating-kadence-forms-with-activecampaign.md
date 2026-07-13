@@ -4,22 +4,32 @@
 
 ---
 
-## ActiveCampaign
+## Classic Themes – Install Demo Content With the Kadence Importer
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-activecampaign/](https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-activecampaign/)
 
-This extension integrates Restrict Content Pro with [ActiveCampaign](http://www.activecampaign.com/) by letting you subscribe members to forms and courses when they purchase a subscription on your site.
+### Quickly Launch Your Site With Demo Content
 
-ActiveCampaign is an all-in-one email marketing platform. It’s simple to use yet exceptionally powerful. When combined with Restrict Content Pro, you can step up your marketing efforts, resulting in more sales and happier customers.
+The Kadence Importer allows you to easily import all on the content, including images, from any of our Kadence themes demos. When you install a Kadence theme, the importer will automatically see what theme you are using and give you options to import anyone of that themes demo sites with all the demo content. One-click and you have all the content from any one of the demos. This is for both free and premium users. You can download the plugin by clicking the button below.
 
-The RCP ActiveCampaign extension provides the following functionality:
+[Kadence Importer](https://kernl.us/api/v1/archive/67ca1580ca9ba3ab0fd4d9f6)
 
-- Global and subscription-level mailing list management
-- Auto-updates when users update their profile (email syncing)
-- Opt-in and auto-register functionality (note that auto-registered users will still have to confirm their subscription)
+### Video Tutorial for the Classic Themes Kadence Importer
 
-- ![ActiveCampaign add-on settings](https://res.cloudinary.com/lwcom/images/w_838,h_470,c_scale/f_auto,q_auto/v1778569946/prod/rcp-activecampaign-settings/rcp-activecampaign-settings.png?_i=AA)
-- ![](https://res.cloudinary.com/lwcom/images/w_891,h_388,c_scale/f_auto,q_auto/v1778569940/prod/rcp-your-membership/rcp-your-membership.png?_i=AA)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+### Tutorial for the Kadence Importer
+
+- **Step 1** – Download the plugin from above.
+- **Step 2** – Navigate to your site, in the admin click on Plugins > Add New. Then click the “Upload Plugin” Button.
+![](https://docs.nexcess.com/wp-content/uploads/2026/07/kt_upload_plugins-1.jpg)
+- **Step 3** – Navigate to the zip file you just download from above and upload it.
+![kt_upload_plugins_b](https://docs.nexcess.com/wp-content/uploads/2026/06/kt_upload_plugins_b.jpg)
+- **Step 4** – Activate the plugin. *You should also have the theme recommended plugins activated at this time and if you want the shop items you need WooCommerce activated.![kt_upload_plugins_c](https://docs.nexcess.com/wp-content/uploads/2026/06/kt_upload_plugins_c.jpg)
+- **Step 5** – From the WordPress admin navigate to Tools > Kadence Importer.
+![kt_upload_plugins_d](https://docs.nexcess.com/wp-content/uploads/2026/06/kt_upload_plugins_d.jpg)
+- **Step 6** – Choose the demo style you want to install and click the Import Demo Content.
+![kt_upload_plugins_e](https://docs.nexcess.com/wp-content/uploads/2026/06/kt_upload_plugins_e.jpg)
+- **Step 7** – Wait… it takes a few minutes to download all the content.
+- **Step 8** – Once it is finished, navigate to the front end of the site. You should have all the demo content installed just like the demo site.
 
 ---
 

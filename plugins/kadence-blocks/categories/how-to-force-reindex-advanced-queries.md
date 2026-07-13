@@ -12,7 +12,7 @@ Sometimes when you’re using an **Advanced Query Block**, things like taxonomie
 
 To do that, head to your **WordPress Dashboard → Kadence → Queries**, then click **Force Reindex** at the top of the page.
 
-![Force Reindex](https://res.cloudinary.com/lwcom/images/w_1024,h_665,c_scale/f_auto,q_auto/v1780352630/prod/Force-Reindex/Force-Reindex.jpg?_i=AA)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Force Reindex](https://docs.nexcess.com/wp-content/uploads/2026/06/Force-Reindex.jpg)
 
 ---
 

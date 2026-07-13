@@ -12,13 +12,19 @@ Advanced Header Blocks provide the flexibility to add any Block within them, off
 
 For instance, utilizing complex Queries from blocks such as the Post Grid/Carousel Block and the Advanced Query Loop Block can burden the Header and negatively impact performance. Additionally, while you may consider using an Info Box to display information alongside media, the Navigation Link Block already supports media, title text, and description text while requiring less code and nesting. By adopting these best practices, you can enhance your website’s efficiency and user experience.
 
-![Advanced Header](https://www.liquidweb.com/wp-content/uploads/2024/09/Advanced-Header-1024x138.jpg)Example of an Advanced Header.**Tip:***Sub Menus are a great way to organize content efficiently, helping to reduce the number of links displayed upfront and improving the overall user experience during the initial page load.*
+![Advanced Header](https://docs.nexcess.com/wp-content/uploads/2026/06/Advanced-Header-1024x138-1.jpg)Example of an Advanced Header.
 
-![Example Sub Menus](https://www.liquidweb.com/wp-content/uploads/2024/09/Example-Sub-Menus.gif)**Tip:***Mega Menus (Pro) are an excellent way to display additional header content. By placing extra items within a Mega Menu, you can streamline the main header and reduce clutter, offering a cleaner navigation experience.*
+**Tip:***Sub Menus are a great way to organize content efficiently, helping to reduce the number of links displayed upfront and improving the overall user experience during the initial page load.*
 
-![Example Mega Menu](https://www.liquidweb.com/wp-content/uploads/2024/09/Example-Mega-Menu.gif)Learn more about using Sub Menus and Mega Menus (Pro) by [clicking here](https://www.liquidweb.com/docs/kadence-blocks/advanced-navigation-sub-menus-and-mega-menus/).
+![Example Sub Menus](https://docs.nexcess.com/wp-content/uploads/2026/06/Example-Sub-Menus.gif)
 
-## Understanding Dom Size
+**Tip:***Mega Menus (Pro) are an excellent way to display additional header content. By placing extra items within a Mega Menu, you can streamline the main header and reduce clutter, offering a cleaner navigation experience.*
+
+![Example Mega Menu](https://docs.nexcess.com/wp-content/uploads/2026/06/Example-Mega-Menu.gif)
+
+Learn more about using Sub Menus and Mega Menus (Pro) by [clicking here](https://docs.nexcess.com/software/kadence/blocks/advanced-navigation-sub-menus-mega-menus/).
+
+Understanding Dom Size
 
 The **Document Object Model (DOM)** represents the structure of a webpage as a tree of objects. Each element, including headers, images, paragraphs, and other content, corresponds to a node in this tree. When a webpage has an excessive DOM size, it can lead to several performance issues like slower page loading times.
 
@@ -32,10 +38,17 @@ When creating new Advanced Headers, it’s crucial to implement strategies that 
 
 - **Choose Blocks Wisely:** Be mindful of the blocks you use inside Advanced Headers. For example, instead of using the Info Box Block, which can add unnecessary bulk, consider using the Navigation Link Block. It provides similar functionality with less impact on the DOM.
 - **Avoid Heavy Scripts in Headers:** Advanced blocks that require significant scripts can lead to performance issues. For instance, placing the Advanced Query Loop Block with Filtering Block options inside a Mega Menu may not be ideal, as it could slow down your site. Consider simpler layouts with more basic blocks, these will reduce scripts, and also keep your nav cleaner and more focused.
-- **Utilize the Navigation Link Block:** The Navigation Link Block is specifically designed for Navigation/Header Items and offers the ability to display a title, icon, and description text while allowing for customization of their placement. This can help avoid adding extra blocks that aren’t optimized for header use. Learn about all of the features of the Navigation Link Block [here](https://www.liquidweb.com/docs/kadence-blocks/the-kadence-navigation-link-block/).
+- **Utilize the Navigation Link Block:** The Navigation Link Block is specifically designed for Navigation/Header Items and offers the ability to display a title, icon, and description text while allowing for customization of their placement. This can help avoid adding extra blocks that aren’t optimized for header use. Learn about all of the features of the Navigation Link Block [here](https://docs.nexcess.com/software/kadence/kadence-navigation-link-block/).
 
-![Crossed Out Info Box](https://www.liquidweb.com/wp-content/uploads/2024/08/Crossed-Out-Info-Box-1024x599.jpg)*Info Box Blocks are not recommended inside of Advanced Headers. This is for inside and outside of Mega Menus.*![Navigation Link](https://www.liquidweb.com/wp-content/uploads/2024/08/Navigation-Link.jpg)*The Navigation Link Block can be used to create the same structures that Info Boxes provide. It is also more efficient and specifically designed for Advanced Headers.*
-## Importance of Above the Fold Content
+![Crossed Out Info Box](https://docs.nexcess.com/wp-content/uploads/2026/06/Crossed-Out-Info-Box-1024x599-1.jpg)
+
+*Info Box Blocks are not recommended inside of Advanced Headers. This is for inside and outside of Mega Menus.*
+
+![Navigation Link](https://docs.nexcess.com/wp-content/uploads/2026/06/Navigation-Link.jpg)
+
+*The Navigation Link Block can be used to create the same structures that Info Boxes provide. It is also more efficient and specifically designed for Advanced Headers.*
+
+Importance of Above the Fold Content
 
 The term **Above the Fold** refers to the portion of a webpage that is visible on the initial page load without scrolling. This area is crucial for user engagement, as it’s the first impression visitors have of your site. The content displayed here can significantly influence user behavior, including whether they choose to stay on the page or leave.
 
@@ -54,14 +67,12 @@ it’s essential to ensure that the content above the fold is optimized for perf
 - **Focus your header**: Only include the most important links and content in your header. Headers with lots of content take up a lot of above-the-fold space. You can often reduce a two or three row header to one by moving less critical links to a sub menu, footer, or landing page. Doing so creates more space to highlight main page content above the fold.
 - **Build for desktop and mobile:** The Header Builder provides block areas to build unique headers for desktop headers, tablet/mobile headers, and the off canvas area. Take advantage of this to build a header that takes advantage of the extra real estate on desktop, then make a simpler layout on mobile with an off canvas navigation.
 
-## Implementing Advanced Headers
+Implementing Advanced Headers
 
 For Full Site Editing websites, it is recommended to use the Header Block as the primary block in your header template. For classic sites, utilizing Kadence Elements to replace the header and incorporating the Header Block within the element is advisable.
 
-[Click here to learn more about adding Advanced Headers to Full Site Editing websites.](https://www.liquidweb.com/docs/kadence-blocks/building-headers-and-footers-in-full-site-editing-with-kadence-blocks/)
-[Click here to learn more about how to implement Advanced Headers to Classic WordPress Themes.](https://www.liquidweb.com/docs/kadence-blocks/getting-started-with-advanced-header-navigations/#adding-advanced-headers-sitewide)
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+[Click here to learn more about adding Advanced Headers to Full Site Editing websites.](https://docs.nexcess.com/software/kadence/blocks/headers-footers-full-site-editing/)
+[Click here to learn more about how to implement Advanced Headers to Classic WordPress Themes.](https://docs.nexcess.com/software/kadence/blocks/advanced-header-navigations/#adding-advanced-headers-sitewide)
 
 ---
 

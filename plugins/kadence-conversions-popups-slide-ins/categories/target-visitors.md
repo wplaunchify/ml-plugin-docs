@@ -22,7 +22,7 @@ Any plugin that adds a user role will have that role available to you for user t
 
 In the example below, the conversion item is shown to all users except Administrators, Shop Managers, and Authors.
 
-![](https://www.liquidweb.com/wp-content/uploads/2021/12/target-visitors-501x1024.png)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/target-visitors-501x1024-1.png)
 
 ---
 

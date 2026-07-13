@@ -8,7 +8,7 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-theme/add-google-tag-manager-with-a-child-theme/](https://www.kadencewp.com/help-center/docs/kadence-theme/add-google-tag-manager-with-a-child-theme/)
 
-There are a number of ways to add Google Tag Manager code to your WordPress website. If you are using Kadence Pro, you can easily add your Google Tag Manager code snippets to your WordPress site using the WordPress Customizer. We’ve got a [blog post](https://www.liquidweb.com/wordpress/seo/how-to-install-google-analytics/) overview of how to do that available. It’s just one of many reasons that you might consider getting a Kadence Plan.
+There are a number of ways to add Google Tag Manager code to your WordPress website. If you are using Kadence Pro, you can easily add your Google Tag Manager code snippets to your WordPress site using the WordPress Customizer. We’ve got a [blog post](https://www.kadencewp.com/blog/how-to-add-google-analytics-to-your-wordpress-site-with-kadence/) overview of how to do that available. It’s just one of many reasons that you might consider getting a Kadence Plan.
 
 If you don’t have Kadence Pro, however, it’s still easy to add Google Tag Manager code snippets to your WordPress site. These methods include using a Child Theme and editing the theme files or using a plugin.
 
@@ -58,8 +58,6 @@ function custom_add_gtm_code_noscript() {
 }
 add_action( 'wp_body_open', 'custom_add_gtm_code_noscript' );
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

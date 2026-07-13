@@ -8,11 +8,11 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-change-the-query-loop-adv-all-button-text/](https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-change-the-query-loop-adv-all-button-text/)
 
-While working with the [Advanced Query Loop](https://www.liquidweb.com/docs/kadence-blocks/advanced-query-loop-block/), you may need to change the “All” text found in the **Button Filters**.  This guide will show two possible methods for changing this text.
+While working with the [Advanced Query Loop](https://docs.nexcess.com/software/kadence/blocks/advanced-query-loop-block/), you may need to change the “All” text found in the **Button Filters**.  This guide will show two possible methods for changing this text.
 
-The *Query Loop (Adv) Block* is available in Kadence Blocks Pro. *Kadence Blocks Pro* can be purchased as a stand-alone product or in the *Plus Plan* or greater. [Click here](https://www.liquidweb.com/software/kadence/) to view our pricing.
+The *Query Loop (Adv) Block* is available in Kadence Blocks Pro. *Kadence Blocks Pro* can be purchased as a stand-alone product or in the *Plus Plan* or greater. [Click here](https://www.kadencewp.com/kadence-blocks/pro/) to view our pricing.
 
-## Plugin Method
+Plugin Method
 
 There are several good plugins available for changing the theme and/or plugin text. One such plugin is [Say What?](https://wordpress.org/plugins/say-what/) This simple plugin allows you to make changes to your theme or plugin text without adding or modifying code. To install the plugin, go to **Plugins** → **Add New** and search for **Say What**. Install and activate the plugin.
 
@@ -24,11 +24,15 @@ Next, go to **Tools** → **Change text** and click **Add New**.  Here you’ll 
 
 **Text context:** Leave this blank.
 
-**Replacement string:** This is the new text you would like to use.![Say What? plugin - add new text change](https://www.liquidweb.com/wp-content/uploads/2025/07/Screenshot-2025-07-01-at-12.51.54 PM-1024x427.png)Click Add (or Update) and test your changes on the front-end of your site.
+**Replacement string:** This is the new text you would like to use.
 
-## PHP Snippet Method
+![Say What? plugin - add new text change](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-07-01-at-12.51.54-PM-1024x427-1.png)
 
-If you prefer not to use a plugin, you can add a custom PHP snippet to change the text.  If you’re not familiar with adding PHP snippets, please see [this document](https://www.liquidweb.com/docs/kadence-theme/how-to-add-a-custom-filter-or-function-with-code-snippets/).
+Click Add (or Update) and test your changes on the front-end of your site.
+
+PHP Snippet Method
+
+If you prefer not to use a plugin, you can add a custom PHP snippet to change the text.  If you’re not familiar with adding PHP snippets, please see [this document](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/).
 
 The following snippet follows a similar format to the above plugin’s settings.
 
@@ -42,8 +46,6 @@ add_filter( 'gettext', function( $translation, $text, $domain ){
 ```
 
 Be sure to change ‘All items’ to your desired text.  Save and activate the snippet and test your changes on the front-end of your site.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

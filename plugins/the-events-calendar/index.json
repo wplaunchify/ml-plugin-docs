@@ -1,151 +1,4714 @@
 {
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
-  "documentation_url": "https://www.liquidweb.com/help-docs/software/events-calendar/",
-  "last_scraped": "2026-07-05T17:27:10.468Z",
-  "total_pages": 11,
-  "failed_urls_count": 0,
+  "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
+  "last_scraped": "2026-07-13T14:27:13.944Z",
+  "total_pages": 362,
+  "failed_urls_count": 1,
   "sections": [
     {
-      "title": "Assigned Seating",
-      "slug": "assigned-seating",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/assigned-seating/",
-      "file": "categories/assigned-seating.md",
+      "title": "Accessibility",
+      "slug": "accessibility",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/accessibility/",
+      "file": "categories/accessibility.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "The Events Calendar Assigned Seating",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/assigned-seating/"
+          "title": "Accessibility and ADA/WCAG Compliance in The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/accessibility/"
         }
       ]
     },
     {
-      "title": "Automation",
-      "slug": "automation",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/automation/",
-      "file": "categories/automation.md",
+      "title": "Accessing Older Plugin Versions",
+      "slug": "accessing-older-plugin-versions",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/accessing-older-plugin-versions/",
+      "file": "categories/accessing-older-plugin-versions.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "The Events Calendar Automation",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/automation/"
+          "title": "Accessing and Installing Older Plugin Versions",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/accessing-older-plugin-versions/"
         }
       ]
     },
     {
-      "title": "Compliance",
-      "slug": "compliance",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/compliance/",
-      "file": "categories/compliance.md",
+      "title": "Accessing Support",
+      "slug": "accessing-support",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/accessing-support/",
+      "file": "categories/accessing-support.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "The Events Calendar Compliance",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/compliance/"
+          "title": "Accessing Support",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/accessing-support/"
         }
       ]
     },
     {
-      "title": "Elementor",
-      "slug": "elementor",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/elementor/",
-      "file": "categories/elementor.md",
+      "title": "Account Support For The Events Calendar On Wordpress Com",
+      "slug": "account-support-for-the-events-calendar-on-wordpress-com",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/account-support-for-the-events-calendar-on-wordpress-com/",
+      "file": "categories/account-support-for-the-events-calendar-on-wordpress-com.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "The Events Calendar Elementor",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/elementor/"
+          "title": "Account Support for The Events Calendar on WordPress.com",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/account-support-for-the-events-calendar-on-wordpress-com/"
+        }
+      ]
+    },
+    {
+      "title": "Add Subscribers",
+      "slug": "add-subscribers",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/add-subscribers/",
+      "file": "categories/add-subscribers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Managing Attendees and Subscribers in Promoter",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/add-subscribers/"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Custom Fields",
+      "slug": "advanced-custom-fields",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/advanced-custom-fields/",
+      "file": "categories/advanced-custom-fields.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Advanced Custom Fields with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/advanced-custom-fields/"
+        }
+      ]
+    },
+    {
+      "title": "All About The Events Calendar 6 0",
+      "slug": "all-about-the-events-calendar-6-0",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/all-about-the-events-calendar-6-0/",
+      "file": "categories/all-about-the-events-calendar-6-0.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "All About The Events Calendar 6.0",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/all-about-the-events-calendar-6-0/"
+        }
+      ]
+    },
+    {
+      "title": "Assigned Seating Tickets",
+      "slug": "assigned-seating-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/",
+      "file": "categories/assigned-seating-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Tickets with Assigned Seating",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Attendee Lists",
+      "slug": "attendee-lists",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/attendee-lists/",
+      "file": "categories/attendee-lists.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Promoter Attendee Lists",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/attendee-lists/"
+        }
+      ]
+    },
+    {
+      "title": "Attendee Registration",
+      "slug": "attendee-registration",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/attendee-registration/",
+      "file": "categories/attendee-registration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Attendee Registration Forms with Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/attendee-registration/"
+        }
+      ]
+    },
+    {
+      "title": "Attendee Waitlist",
+      "slug": "attendee-waitlist",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/attendee-waitlist/",
+      "file": "categories/attendee-waitlist.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Waitlists for Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/attendee-waitlist/"
+        }
+      ]
+    },
+    {
+      "title": "Automatic Updates",
+      "slug": "automatic-updates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/automatic-updates/",
+      "file": "categories/automatic-updates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Automatic Plugin Updates",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/automatic-updates/"
+        }
+      ]
+    },
+    {
+      "title": "Automatic Updates 2",
+      "slug": "automatic-updates-2",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/automatic-updates-2/",
+      "file": "categories/automatic-updates-2.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Plugin Update Notifications",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/automatic-updates-2/"
+        }
+      ]
+    },
+    {
+      "title": "Avada Theme",
+      "slug": "avada-theme",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/avada-theme/",
+      "file": "categories/avada-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Avada Theme with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/avada-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Basel Theme",
+      "slug": "basel-theme",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/basel-theme/",
+      "file": "categories/basel-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Basel Theme with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/basel-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Beaver Builder Theme",
+      "slug": "beaver-builder-theme",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/beaver-builder-theme/",
+      "file": "categories/beaver-builder-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Beaver Builder with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/beaver-builder-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Buddyboss",
+      "slug": "buddyboss",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/buddyboss/",
+      "file": "categories/buddyboss.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using BuddyBoss with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/buddyboss/"
+        }
+      ]
+    },
+    {
+      "title": "Bundle Discounts",
+      "slug": "bundle-discounts",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/bundle-discounts/",
+      "file": "categories/bundle-discounts.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Do You Provide Discounts if I Purchase Multiple Products?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/bundle-discounts/"
+        }
+      ]
+    },
+    {
+      "title": "Bundle Discounts Legacy",
+      "slug": "bundle-discounts-legacy",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/bundle-discounts-legacy/",
+      "file": "categories/bundle-discounts-legacy.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Do You Provide Discounts if I Purchase Multiple Products?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/bundle-discounts-legacy/"
+        }
+      ]
+    },
+    {
+      "title": "Caching With The Events Calendar",
+      "slug": "caching-with-the-events-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/caching-with-the-events-calendar/",
+      "file": "categories/caching-with-the-events-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Caching with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/caching-with-the-events-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Caching",
+      "slug": "calendar-caching",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-caching/",
+      "file": "categories/calendar-caching.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding Caching with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-caching/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Embed Block",
+      "slug": "calendar-embed-block",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-embed-block/",
+      "file": "categories/calendar-embed-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Use the Calendar Embed Block",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-embed-block/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Embed Shortcodes",
+      "slug": "calendar-embed-shortcodes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-embed-shortcodes/",
+      "file": "categories/calendar-embed-shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Add the Events Calendar to Pages with Shortcodes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-embed-shortcodes/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Language",
+      "slug": "calendar-language",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-language/",
+      "file": "categories/calendar-language.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Change the Language of Your Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-language/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Links",
+      "slug": "calendar-links",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-links/",
+      "file": "categories/calendar-links.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Finding and Linking to Your Calendar Pages",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-links/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Location Search",
+      "slug": "calendar-location-search",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-location-search/",
+      "file": "categories/calendar-location-search.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using The Events Calendar Location Search",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-location-search/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Performance",
+      "slug": "calendar-performance",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-performance/",
+      "file": "categories/calendar-performance.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Scaling and Performance for The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-performance/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Settings",
+      "slug": "calendar-settings",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-settings/",
+      "file": "categories/calendar-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring The Events Calendar Settings",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Template Settings",
+      "slug": "calendar-template-settings",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-template-settings/",
+      "file": "categories/calendar-template-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Template Settings",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-template-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Templates",
+      "slug": "calendar-templates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-templates/",
+      "file": "categories/calendar-templates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Template Files",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Calendar Timezone",
+      "slug": "calendar-timezone",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-timezone/",
+      "file": "categories/calendar-timezone.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Timezones and Daylight Saving Time with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-timezone/"
+        }
+      ]
+    },
+    {
+      "title": "Canceling A Subscription",
+      "slug": "canceling-a-subscription",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/canceling-a-subscription/",
+      "file": "categories/canceling-a-subscription.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Canceling a subscription",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/canceling-a-subscription/"
+        }
+      ]
+    },
+    {
+      "title": "Change Management Version Rollback",
+      "slug": "change-management-version-rollback",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/change-management-version-rollback/",
+      "file": "categories/change-management-version-rollback.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Change Management / Version Rollback",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/change-management-version-rollback/"
+        }
+      ]
+    },
+    {
+      "title": "Changing Email Address And Other User Account Related Data",
+      "slug": "changing-email-address-and-other-user-account-related-data",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/changing-email-address-and-other-user-account-related-data/",
+      "file": "categories/changing-email-address-and-other-user-account-related-data.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Updating Your Account Information",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/changing-email-address-and-other-user-account-related-data/"
+        }
+      ]
+    },
+    {
+      "title": "Church Event Website Guide",
+      "slug": "church-event-website-guide",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/church-event-website-guide/",
+      "file": "categories/church-event-website-guide.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Church Event Website Guide",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/church-event-website-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Code Snippets",
+      "slug": "code-snippets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/code-snippets/",
+      "file": "categories/code-snippets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Code Snippets to Customize The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/code-snippets/"
+        }
+      ]
+    },
+    {
+      "title": "Common Wordpress Plugin Installation Errors And How To Fix Them",
+      "slug": "common-wordpress-plugin-installation-errors-and-how-to-fix-them",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/common-wordpress-plugin-installation-errors-and-how-to-fix-them/",
+      "file": "categories/common-wordpress-plugin-installation-errors-and-how-to-fix-them.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Common WordPress Plugin Installation Errors and How to Fix Them",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/common-wordpress-plugin-installation-errors-and-how-to-fix-them/"
+        }
+      ]
+    },
+    {
+      "title": "Community Events",
+      "slug": "community-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/community-events/",
+      "file": "categories/community-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Community Events and Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/community-events/"
+        }
+      ]
+    },
+    {
+      "title": "Community Events 2",
+      "slug": "community-events-2",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/community-events-2/",
+      "file": "categories/community-events-2.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Community",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/community-events-2/"
+        }
+      ]
+    },
+    {
+      "title": "Community Forums",
+      "slug": "community-forums",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/community-forums/",
+      "file": "categories/community-forums.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "WordPress.org Support Forums",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/community-forums/"
+        }
+      ]
+    },
+    {
+      "title": "Community Settings",
+      "slug": "community-settings",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/community-settings/",
+      "file": "categories/community-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring Community Events and Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/community-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Community Shortcodes",
+      "slug": "community-shortcodes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/community-shortcodes/",
+      "file": "categories/community-shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Use Community Events Shortcodes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/community-shortcodes/"
+        }
+      ]
+    },
+    {
+      "title": "Community Templates",
+      "slug": "community-templates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/community-templates/",
+      "file": "categories/community-templates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Community Events Template Files",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/community-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Community Tickets",
+      "slug": "community-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/community-tickets/",
+      "file": "categories/community-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Selling Tickets for Submitted Community Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/community-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Composer",
+      "slug": "composer",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/composer/",
+      "file": "categories/composer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Composer with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/composer/"
+        }
+      ]
+    },
+    {
+      "title": "Conference Website Setup Guide",
+      "slug": "conference-website-setup-guide",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/conference-website-setup-guide/",
+      "file": "categories/conference-website-setup-guide.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Conference Website Setup Guide",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/conference-website-setup-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Configure Filters",
+      "slug": "configure-filters",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/configure-filters/",
+      "file": "categories/configure-filters.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring Filter Bar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/configure-filters/"
+        }
+      ]
+    },
+    {
+      "title": "Configure Promoter",
+      "slug": "configure-promoter",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/configure-promoter/",
+      "file": "categories/configure-promoter.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Promoter",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/configure-promoter/"
+        }
+      ]
+    },
+    {
+      "title": "Conflict Testing With The Health Check Plugin",
+      "slug": "conflict-testing-with-the-health-check-plugin",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/conflict-testing-with-the-health-check-plugin/",
+      "file": "categories/conflict-testing-with-the-health-check-plugin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Conflict Testing With the Health Check Plugin",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/conflict-testing-with-the-health-check-plugin/"
+        }
+      ]
+    },
+    {
+      "title": "Constants",
+      "slug": "constants",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/constants/",
+      "file": "categories/constants.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring The Events Calendar With Constants",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/constants/"
+        }
+      ]
+    },
+    {
+      "title": "Create Event",
+      "slug": "create-event",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/create-event/",
+      "file": "categories/create-event.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/create-event/"
+        }
+      ]
+    },
+    {
+      "title": "Create Sessions",
+      "slug": "create-sessions",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/create-sessions/",
+      "file": "categories/create-sessions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Sessions in Event Schedule Manager",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/create-sessions/"
+        }
+      ]
+    },
+    {
+      "title": "Create Speakers",
+      "slug": "create-speakers",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/create-speakers/",
+      "file": "categories/create-speakers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Speakers in Event Schedule Manager",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/create-speakers/"
+        }
+      ]
+    },
+    {
+      "title": "Create Sponsors",
+      "slug": "create-sponsors",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/create-sponsors/",
+      "file": "categories/create-sponsors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Sponsors in Event Schedule Manager",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/create-sponsors/"
+        }
+      ]
+    },
+    {
+      "title": "Create Tickets",
+      "slug": "create-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/create-tickets/",
+      "file": "categories/create-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/create-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Create Virtual Event",
+      "slug": "create-virtual-event",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/create-virtual-event/",
+      "file": "categories/create-virtual-event.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Virtual and Hybrid Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/create-virtual-event/"
+        }
+      ]
+    },
+    {
+      "title": "Create Zap",
+      "slug": "create-zap",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/create-zap/",
+      "file": "categories/create-zap.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating a Zap with The Events Calendar and Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/create-zap/"
+        }
+      ]
+    },
+    {
+      "title": "Creating And Using A Wordpress Staging Site",
+      "slug": "creating-and-using-a-wordpress-staging-site",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/creating-and-using-a-wordpress-staging-site/",
+      "file": "categories/creating-and-using-a-wordpress-staging-site.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Testing Updates in a Staging Environment",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/creating-and-using-a-wordpress-staging-site/"
+        }
+      ]
+    },
+    {
+      "title": "Creating Site Backups",
+      "slug": "creating-site-backups",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/creating-site-backups/",
+      "file": "categories/creating-site-backups.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Site Backups",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/creating-site-backups/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Development",
+      "slug": "custom-development",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/custom-development/",
+      "file": "categories/custom-development.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Can I Hire Your Team to Customize My Calendar?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/custom-development/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Event Status",
+      "slug": "custom-event-status",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/custom-event-status/",
+      "file": "categories/custom-event-status.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding a Custom Event Status",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/custom-event-status/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Fields",
+      "slug": "custom-fields",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/custom-fields/",
+      "file": "categories/custom-fields.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Adding Custom Fields to Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/custom-fields/"
+        }
+      ]
+    },
+    {
+      "title": "Custom Wording",
+      "slug": "custom-wording",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/custom-wording/",
+      "file": "categories/custom-wording.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Change Wording in The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/custom-wording/"
+        }
+      ]
+    },
+    {
+      "title": "Customization",
+      "slug": "customization",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customization/",
+      "file": "categories/customization.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customization/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Attendee List",
+      "slug": "customize-attendee-list",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-attendee-list/",
+      "file": "categories/customize-attendee-list.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Event Attendee List",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-attendee-list/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Attendee Registration",
+      "slug": "customize-attendee-registration",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-attendee-registration/",
+      "file": "categories/customize-attendee-registration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Attendee Registration",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-attendee-registration/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Calendar",
+      "slug": "customize-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-calendar/",
+      "file": "categories/customize-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Ways to Customize The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Calendar Views",
+      "slug": "customize-calendar-views",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-calendar-views/",
+      "file": "categories/customize-calendar-views.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing The Events Calendar Views",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-calendar-views/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Community Pages",
+      "slug": "customize-community-pages",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-community-pages/",
+      "file": "categories/customize-community-pages.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Community Events Pages",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-community-pages/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Css",
+      "slug": "customize-css",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-css/",
+      "file": "categories/customize-css.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing The Events Calendar with CSS",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-css/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Day View",
+      "slug": "customize-day-view",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-day-view/",
+      "file": "categories/customize-day-view.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Day View",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-day-view/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Elementor Data",
+      "slug": "customize-elementor-data",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-elementor-data/",
+      "file": "categories/customize-elementor-data.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Event Data in Elementor",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-elementor-data/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Event Admin",
+      "slug": "customize-event-admin",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-admin/",
+      "file": "categories/customize-event-admin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Event Admin",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-admin/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Event Cost",
+      "slug": "customize-event-cost",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-cost/",
+      "file": "categories/customize-event-cost.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Event Cost Display",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-cost/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Event Filters",
+      "slug": "customize-event-filters",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-filters/",
+      "file": "categories/customize-event-filters.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Event Filter Bar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-filters/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Event Imports",
+      "slug": "customize-event-imports",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-imports/",
+      "file": "categories/customize-event-imports.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Event Imports",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-imports/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Event Submission Form",
+      "slug": "customize-event-submission-form",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-submission-form/",
+      "file": "categories/customize-event-submission-form.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Community Event Submission Form",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-submission-form/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Event Submissions",
+      "slug": "customize-event-submissions",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-submissions/",
+      "file": "categories/customize-event-submissions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Community Events Submissions",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-submissions/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Event Tickets",
+      "slug": "customize-event-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-tickets/",
+      "file": "categories/customize-event-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-event-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Eventbrite Tickets",
+      "slug": "customize-eventbrite-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-eventbrite-tickets/",
+      "file": "categories/customize-eventbrite-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Eventbrite Tickets Display",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-eventbrite-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Export Function",
+      "slug": "customize-export-function",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-export-function/",
+      "file": "categories/customize-export-function.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Calendar Export Functionality",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-export-function/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Fonts",
+      "slug": "customize-fonts",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-fonts/",
+      "file": "categories/customize-fonts.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Fonts for The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-fonts/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Google Maps",
+      "slug": "customize-google-maps",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-google-maps/",
+      "file": "categories/customize-google-maps.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Google Maps",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-google-maps/"
+        }
+      ]
+    },
+    {
+      "title": "Customize List View",
+      "slug": "customize-list-view",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-list-view/",
+      "file": "categories/customize-list-view.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing List View",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-list-view/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Map View",
+      "slug": "customize-map-view",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-map-view/",
+      "file": "categories/customize-map-view.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Map View",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-map-view/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Month View",
+      "slug": "customize-month-view",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-month-view/",
+      "file": "categories/customize-month-view.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Month View",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-month-view/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Past Events",
+      "slug": "customize-past-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-past-events/",
+      "file": "categories/customize-past-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Past Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-past-events/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Pdf Tickets",
+      "slug": "customize-pdf-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-pdf-tickets/",
+      "file": "categories/customize-pdf-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing PDF Ticket Content & Styles",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-pdf-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Photo View",
+      "slug": "customize-photo-view",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-photo-view/",
+      "file": "categories/customize-photo-view.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Photo View",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-photo-view/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Related Events",
+      "slug": "customize-related-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-related-events/",
+      "file": "categories/customize-related-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Related Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-related-events/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Rsvp",
+      "slug": "customize-rsvp",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-rsvp/",
+      "file": "categories/customize-rsvp.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Event RSVPs",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-rsvp/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Search",
+      "slug": "customize-search",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-search/",
+      "file": "categories/customize-search.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Search for Events and Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-search/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Seating",
+      "slug": "customize-seating",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-seating/",
+      "file": "categories/customize-seating.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Assigned Seat Selection Modal",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-seating/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Series",
+      "slug": "customize-series",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-series/",
+      "file": "categories/customize-series.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Event Series",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-series/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Single Event",
+      "slug": "customize-single-event",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-single-event/",
+      "file": "categories/customize-single-event.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Single Event Page",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-single-event/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Subscribe Export",
+      "slug": "customize-subscribe-export",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-subscribe-export/",
+      "file": "categories/customize-subscribe-export.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Subscribe and Export Options",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-subscribe-export/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Template Files",
+      "slug": "customize-template-files",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-template-files/",
+      "file": "categories/customize-template-files.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing The Events Calendar Templates",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-template-files/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Ticket Emails",
+      "slug": "customize-ticket-emails",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-ticket-emails/",
+      "file": "categories/customize-ticket-emails.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Ticket Emails",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-ticket-emails/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Ticket File",
+      "slug": "customize-ticket-file",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-ticket-file/",
+      "file": "categories/customize-ticket-file.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the PDF Ticket File Name",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-ticket-file/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Tickets App",
+      "slug": "customize-tickets-app",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-tickets-app/",
+      "file": "categories/customize-tickets-app.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing the Event Tickets Plus App",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-tickets-app/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Tickets Commerce",
+      "slug": "customize-tickets-commerce",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-tickets-commerce/",
+      "file": "categories/customize-tickets-commerce.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Tickets Commerce Purchases",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-tickets-commerce/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Venues Organizers",
+      "slug": "customize-venues-organizers",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-venues-organizers/",
+      "file": "categories/customize-venues-organizers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Venues and Organizers",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-venues-organizers/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Virtual Events",
+      "slug": "customize-virtual-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-virtual-events/",
+      "file": "categories/customize-virtual-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Virtual Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-virtual-events/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Week View",
+      "slug": "customize-week-view",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-week-view/",
+      "file": "categories/customize-week-view.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Week View",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-week-view/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Woocommerce Checkout",
+      "slug": "customize-woocommerce-checkout",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-woocommerce-checkout/",
+      "file": "categories/customize-woocommerce-checkout.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing WooCommerce Tickets Checkout",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-woocommerce-checkout/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Woocommerce Products",
+      "slug": "customize-woocommerce-products",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-woocommerce-products/",
+      "file": "categories/customize-woocommerce-products.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing WooCommerce Ticket Products",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-woocommerce-products/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Woocommerce Settings",
+      "slug": "customize-woocommerce-settings",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-woocommerce-settings/",
+      "file": "categories/customize-woocommerce-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing WooCommerce Settings",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-woocommerce-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Customize Zaps",
+      "slug": "customize-zaps",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-zaps/",
+      "file": "categories/customize-zaps.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customizing Zaps with The Events Calendar and Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-zaps/"
+        }
+      ]
+    },
+    {
+      "title": "Data Privacy",
+      "slug": "data-privacy",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/data-privacy/",
+      "file": "categories/data-privacy.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Handling Data Privacy for Events and Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/data-privacy/"
+        }
+      ]
+    },
+    {
+      "title": "Default Event Content",
+      "slug": "default-event-content",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/default-event-content/",
+      "file": "categories/default-event-content.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Default Content on Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/default-event-content/"
+        }
+      ]
+    },
+    {
+      "title": "Delete Events",
+      "slug": "delete-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/delete-events/",
+      "file": "categories/delete-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Deleting Events from the Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/delete-events/"
+        }
+      ]
+    },
+    {
+      "title": "Destination Folder Already Exists Resolved",
+      "slug": "destination-folder-already-exists-resolved",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/destination-folder-already-exists-resolved/",
+      "file": "categories/destination-folder-already-exists-resolved.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Why the ‘Destination Folder Already Exists’ Error Happens in WordPress and How to Fix It",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/destination-folder-already-exists-resolved/"
+        }
+      ]
+    },
+    {
+      "title": "Divi Theme",
+      "slug": "divi-theme",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/divi-theme/",
+      "file": "categories/divi-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Divi Theme with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/divi-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Do You Have A Demo Examples I Can See Or Trial Licenses",
+      "slug": "do-you-have-a-demo-examples-i-can-see-or-trial-licenses",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/do-you-have-a-demo-examples-i-can-see-or-trial-licenses/",
+      "file": "categories/do-you-have-a-demo-examples-i-can-see-or-trial-licenses.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Can I Try the Plugins Before Buying Them?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/do-you-have-a-demo-examples-i-can-see-or-trial-licenses/"
+        }
+      ]
+    },
+    {
+      "title": "Downgrading Wordpress",
+      "slug": "downgrading-wordpress",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/downgrading-wordpress/",
+      "file": "categories/downgrading-wordpress.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Downgrading WordPress",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/downgrading-wordpress/"
+        }
+      ]
+    },
+    {
+      "title": "Downloading And Installing The Plugin",
+      "slug": "downloading-and-installing-the-plugin",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/downloading-and-installing-the-plugin/",
+      "file": "categories/downloading-and-installing-the-plugin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Installing a WordPress Plugin",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/downloading-and-installing-the-plugin/"
+        }
+      ]
+    },
+    {
+      "title": "Duplicate Events",
+      "slug": "duplicate-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/duplicate-events/",
+      "file": "categories/duplicate-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Duplicate Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/duplicate-events/"
+        }
+      ]
+    },
+    {
+      "title": "Ecommerce",
+      "slug": "ecommerce",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/ecommerce/",
+      "file": "categories/ecommerce.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Choosing an Ecommerce Solution for Events Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/ecommerce/"
+        }
+      ]
+    },
+    {
+      "title": "Elementor Compatibility Handbook",
+      "slug": "elementor-compatibility-handbook",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-compatibility-handbook/",
+      "file": "categories/elementor-compatibility-handbook.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Elementor Compatibility Handbook",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-compatibility-handbook/"
         }
       ]
     },
     {
       "title": "Elementor Csv Import",
       "slug": "elementor-csv-import",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/elementor-csv-import/",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-csv-import/",
       "file": "categories/elementor-csv-import.md",
       "page_count": 1,
       "pages": [
         {
           "title": "Elementor Compatibility Handbook",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/elementor-csv-import/"
+          "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-csv-import/"
         }
       ]
     },
     {
-      "title": "Errors",
-      "slug": "errors",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/errors/",
-      "file": "categories/errors.md",
+      "title": "Elementor Templates",
+      "slug": "elementor-templates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-templates/",
+      "file": "categories/elementor-templates.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "The Events Calendar Errors",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/errors/"
+          "title": "Using Elementor Templates with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Elementor Widgets",
+      "slug": "elementor-widgets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-widgets/",
+      "file": "categories/elementor-widgets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Elementor Widgets with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-widgets/"
+        }
+      ]
+    },
+    {
+      "title": "Embed Calendar",
+      "slug": "embed-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/embed-calendar/",
+      "file": "categories/embed-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Embed Your Calendar on Another Site",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/embed-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Enfold Theme",
+      "slug": "enfold-theme",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/enfold-theme/",
+      "file": "categories/enfold-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Enfold Theme with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/enfold-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Event And Tickets Mcp",
+      "slug": "event-and-tickets-mcp",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-and-tickets-mcp/",
+      "file": "categories/event-and-tickets-mcp.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Automating Events and Tickets with AI and MCP",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-and-tickets-mcp/"
         }
       ]
     },
     {
       "title": "Event Attendees",
       "slug": "event-attendees",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-attendees/",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-attendees/",
       "file": "categories/event-attendees.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "The Events Calendar Event Attendees",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-attendees/"
+          "title": "Managing Event Attendees",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-attendees/"
         }
       ]
     },
     {
-      "title": "Event Display",
-      "slug": "event-display",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-display/",
-      "file": "categories/event-display.md",
+      "title": "Event Booking",
+      "slug": "event-booking",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-booking/",
+      "file": "categories/event-booking.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "The Events Calendar Event Display",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-display/"
+          "title": "Adding Appointment Booking to Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-booking/"
         }
       ]
     },
     {
-      "title": "Event Management",
-      "slug": "event-management",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-management/",
-      "file": "categories/event-management.md",
+      "title": "Event Categories Tags",
+      "slug": "event-categories-tags",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-categories-tags/",
+      "file": "categories/event-categories-tags.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Event Categories and Tags",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-categories-tags/"
+        }
+      ]
+    },
+    {
+      "title": "Event Category Colors",
+      "slug": "event-category-colors",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-category-colors/",
+      "file": "categories/event-category-colors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Color Code Events by Category",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-category-colors/"
+        }
+      ]
+    },
+    {
+      "title": "Event Dates Times",
+      "slug": "event-dates-times",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-dates-times/",
+      "file": "categories/event-dates-times.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring Event Date and Time Formats",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-dates-times/"
+        }
+      ]
+    },
+    {
+      "title": "Event Filter Templates",
+      "slug": "event-filter-templates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-filter-templates/",
+      "file": "categories/event-filter-templates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Filter Bar Template Files",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-filter-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Event Import Settings",
+      "slug": "event-import-settings",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-import-settings/",
+      "file": "categories/event-import-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring Event Imports",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-import-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Event Imports",
+      "slug": "event-imports",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-imports/",
+      "file": "categories/event-imports.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Event Imports",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-imports/"
+        }
+      ]
+    },
+    {
+      "title": "Event List Widget",
+      "slug": "event-list-widget",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-list-widget/",
+      "file": "categories/event-list-widget.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Events List Widget",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-list-widget/"
+        }
+      ]
+    },
+    {
+      "title": "Event Permalinks",
+      "slug": "event-permalinks",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-permalinks/",
+      "file": "categories/event-permalinks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Event Permalinks",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-permalinks/"
+        }
+      ]
+    },
+    {
+      "title": "Event Rss Feed",
+      "slug": "event-rss-feed",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-rss-feed/",
+      "file": "categories/event-rss-feed.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using The Events Calendar RSS Feed",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-rss-feed/"
+        }
+      ]
+    },
+    {
+      "title": "Event Rsvps",
+      "slug": "event-rsvps",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-rsvps/",
+      "file": "categories/event-rsvps.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating RSVPs with Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-rsvps/"
+        }
+      ]
+    },
+    {
+      "title": "Event Schedule Manager",
+      "slug": "event-schedule-manager",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-schedule-manager/",
+      "file": "categories/event-schedule-manager.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Event Schedule Manager",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-schedule-manager/"
+        }
+      ]
+    },
+    {
+      "title": "Event Series",
+      "slug": "event-series",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-series/",
+      "file": "categories/event-series.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Use Event Series",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-series/"
+        }
+      ]
+    },
+    {
+      "title": "Event Submissions",
+      "slug": "event-submissions",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-submissions/",
+      "file": "categories/event-submissions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Let Users Submit and Manage Events with Community Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-submissions/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tickets",
+      "slug": "event-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets/",
+      "file": "categories/event-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tickets 2",
+      "slug": "event-tickets-2",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-2/",
+      "file": "categories/event-tickets-2.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-2/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tickets Availability",
+      "slug": "event-tickets-availability",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/",
+      "file": "categories/event-tickets-availability.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding How Event Tickets Calculates Availability",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tickets Coupons",
+      "slug": "event-tickets-coupons",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-coupons/",
+      "file": "categories/event-tickets-coupons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Coupons for Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-coupons/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tickets Emails",
+      "slug": "event-tickets-emails",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-emails/",
+      "file": "categories/event-tickets-emails.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring Event Tickets Emails",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-emails/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tickets Fees",
+      "slug": "event-tickets-fees",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-fees/",
+      "file": "categories/event-tickets-fees.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Charging Fees with Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-fees/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tickets Rest Api",
+      "slug": "event-tickets-rest-api",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-rest-api/",
+      "file": "categories/event-tickets-rest-api.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using The Events Calendar REST API",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-rest-api/"
+        }
+      ]
+    },
+    {
+      "title": "Event Tickets Settings",
+      "slug": "event-tickets-settings",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-settings/",
+      "file": "categories/event-tickets-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring Event Tickets Settings",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Eventbrite Tickets",
+      "slug": "eventbrite-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/eventbrite-tickets/",
+      "file": "categories/eventbrite-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Eventbrite Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/eventbrite-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Eventbrite Tickets Settings",
+      "slug": "eventbrite-tickets-settings",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/eventbrite-tickets-settings/",
+      "file": "categories/eventbrite-tickets-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring Eventbrite Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/eventbrite-tickets-settings/"
+        }
+      ]
+    },
+    {
+      "title": "Eventbrite Tickets Templates",
+      "slug": "eventbrite-tickets-templates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/eventbrite-tickets-templates/",
+      "file": "categories/eventbrite-tickets-templates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Eventbrite Tickets Template Files",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/eventbrite-tickets-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Events Block Editor",
+      "slug": "events-block-editor",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-block-editor/",
+      "file": "categories/events-block-editor.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Block Editor with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-block-editor/"
+        }
+      ]
+    },
+    {
+      "title": "Events Calendar",
+      "slug": "events-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-calendar/",
+      "file": "categories/events-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Events Calendar Widget",
+      "slug": "events-calendar-widget",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-calendar-widget/",
+      "file": "categories/events-calendar-widget.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Events Calendar Widget",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-calendar-widget/"
+        }
+      ]
+    },
+    {
+      "title": "Events Calendar Widgets",
+      "slug": "events-calendar-widgets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-calendar-widgets/",
+      "file": "categories/events-calendar-widgets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Calendar and Event Widgets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-calendar-widgets/"
+        }
+      ]
+    },
+    {
+      "title": "Events Countdown Widget",
+      "slug": "events-countdown-widget",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-countdown-widget/",
+      "file": "categories/events-countdown-widget.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Events Countdown Widget",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-countdown-widget/"
+        }
+      ]
+    },
+    {
+      "title": "Events Filter Bar",
+      "slug": "events-filter-bar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-filter-bar/",
+      "file": "categories/events-filter-bar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Events Filter Bar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-filter-bar/"
+        }
+      ]
+    },
+    {
+      "title": "Events Gdpr",
+      "slug": "events-gdpr",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-gdpr/",
+      "file": "categories/events-gdpr.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar, GDPR & CCPA",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-gdpr/"
+        }
+      ]
+    },
+    {
+      "title": "Events Optimizer",
+      "slug": "events-optimizer",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-optimizer/",
+      "file": "categories/events-optimizer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Events Optimizer with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-optimizer/"
+        }
+      ]
+    },
+    {
+      "title": "Events Qr Code",
+      "slug": "events-qr-code",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-qr-code/",
+      "file": "categories/events-qr-code.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Event QR Code",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-qr-code/"
+        }
+      ]
+    },
+    {
+      "title": "Events Seo",
+      "slug": "events-seo",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-seo/",
+      "file": "categories/events-seo.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "SEO and Search Engine Indexing in The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-seo/"
+        }
+      ]
+    },
+    {
+      "title": "Events Site Editor",
+      "slug": "events-site-editor",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-site-editor/",
+      "file": "categories/events-site-editor.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using WordPress Site Editor with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-site-editor/"
+        }
+      ]
+    },
+    {
+      "title": "Events Week Widget",
+      "slug": "events-week-widget",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/events-week-widget/",
+      "file": "categories/events-week-widget.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Events By Week Widget",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/events-week-widget/"
+        }
+      ]
+    },
+    {
+      "title": "Featured Events",
+      "slug": "featured-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/featured-events/",
+      "file": "categories/featured-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Featured Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/featured-events/"
+        }
+      ]
+    },
+    {
+      "title": "Featured Images",
+      "slug": "featured-images",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/featured-images/",
+      "file": "categories/featured-images.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Featured Images with Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/featured-images/"
+        }
+      ]
+    },
+    {
+      "title": "Featured Venue Widget",
+      "slug": "featured-venue-widget",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/featured-venue-widget/",
+      "file": "categories/featured-venue-widget.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Featured Venue Widget",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/featured-venue-widget/"
+        }
+      ]
+    },
+    {
+      "title": "Finding And Inputting Your License Key",
+      "slug": "finding-and-inputting-your-license-key",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/finding-and-inputting-your-license-key/",
+      "file": "categories/finding-and-inputting-your-license-key.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Finding and Inputting Your License Key",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/finding-and-inputting-your-license-key/"
+        }
+      ]
+    },
+    {
+      "title": "Fix 404 Errors",
+      "slug": "fix-404-errors",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/fix-404-errors/",
+      "file": "categories/fix-404-errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Fixing HTTP 404 Errors",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/fix-404-errors/"
+        }
+      ]
+    },
+    {
+      "title": "Fix Content Errors",
+      "slug": "fix-content-errors",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/fix-content-errors/",
+      "file": "categories/fix-content-errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting CORS and Mixed Content Errors with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/fix-content-errors/"
+        }
+      ]
+    },
+    {
+      "title": "Fixing The Please Install Or Upgrade Warning For Events Calendar Pro Or Event Tickets Plus",
+      "slug": "fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus/",
+      "file": "categories/fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Fixing the “Please Install or Upgrade” Warning for Events Calendar Pro or Event Tickets Plus",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus/"
+        }
+      ]
+    },
+    {
+      "title": "Free Support Resources",
+      "slug": "free-support-resources",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/free-support-resources/",
+      "file": "categories/free-support-resources.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Free Support Resources",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/free-support-resources/"
+        }
+      ]
+    },
+    {
+      "title": "Genesis Theme",
+      "slug": "genesis-theme",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/genesis-theme/",
+      "file": "categories/genesis-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the Genesis Theme Framework with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/genesis-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Event Aggregator",
+      "slug": "getting-started-with-event-aggregator",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-event-aggregator/",
+      "file": "categories/getting-started-with-event-aggregator.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Event Aggregator",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-event-aggregator/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Event Automator",
+      "slug": "getting-started-with-event-automator",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-event-automator/",
+      "file": "categories/getting-started-with-event-automator.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Event Automator",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-event-automator/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Event Schedule Manager",
+      "slug": "getting-started-with-event-schedule-manager",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-event-schedule-manager/",
+      "file": "categories/getting-started-with-event-schedule-manager.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Event Schedule Manager",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-event-schedule-manager/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Eventbrite Tickets",
+      "slug": "getting-started-with-eventbrite-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-eventbrite-tickets/",
+      "file": "categories/getting-started-with-eventbrite-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Eventbrite Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-eventbrite-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Filter Bar",
+      "slug": "getting-started-with-filter-bar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-filter-bar/",
+      "file": "categories/getting-started-with-filter-bar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Filter Bar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-filter-bar/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Seating",
+      "slug": "getting-started-with-seating",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-seating/",
+      "file": "categories/getting-started-with-seating.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting started with Seating",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-seating/"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started With Wordpress",
+      "slug": "getting-started-with-wordpress",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-wordpress/",
+      "file": "categories/getting-started-with-wordpress.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with WordPress",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-wordpress/"
+        }
+      ]
+    },
+    {
+      "title": "Givewp Events",
+      "slug": "givewp-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/givewp-events/",
+      "file": "categories/givewp-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Give with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/givewp-events/"
+        }
+      ]
+    },
+    {
+      "title": "Google Maps Api",
+      "slug": "google-maps-api",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/google-maps-api/",
+      "file": "categories/google-maps-api.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating a Google Maps API Key for The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/google-maps-api/"
+        }
+      ]
+    },
+    {
+      "title": "Google Maps Handbook",
+      "slug": "google-maps-handbook",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/google-maps-handbook/",
+      "file": "categories/google-maps-handbook.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Google Maps Handbook",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/google-maps-handbook/"
+        }
+      ]
+    },
+    {
+      "title": "Google Meet",
+      "slug": "google-meet",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/google-meet/",
+      "file": "categories/google-meet.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Virtual Events with Google Meet",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/google-meet/"
+        }
+      ]
+    },
+    {
+      "title": "How Do I Update My Promoter Payment Information",
+      "slug": "how-do-i-update-my-promoter-payment-information",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-do-i-update-my-promoter-payment-information/",
+      "file": "categories/how-do-i-update-my-promoter-payment-information.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Updating Payment Information",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-do-i-update-my-promoter-payment-information/"
+        }
+      ]
+    },
+    {
+      "title": "How To Add A Shortcode In Wordpress",
+      "slug": "how-to-add-a-shortcode-in-wordpress",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-add-a-shortcode-in-wordpress/",
+      "file": "categories/how-to-add-a-shortcode-in-wordpress.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add a Shortcode in WordPress",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-add-a-shortcode-in-wordpress/"
+        }
+      ]
+    },
+    {
+      "title": "How To Block A Wordpress User",
+      "slug": "how-to-block-a-wordpress-user",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-block-a-wordpress-user/",
+      "file": "categories/how-to-block-a-wordpress-user.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Block a WordPress User",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-block-a-wordpress-user/"
+        }
+      ]
+    },
+    {
+      "title": "How To Clear Your Site And Browser Cache Properly",
+      "slug": "how-to-clear-your-site-and-browser-cache-properly",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-clear-your-site-and-browser-cache-properly/",
+      "file": "categories/how-to-clear-your-site-and-browser-cache-properly.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Clear Your Site and Browser Cache Properly",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-clear-your-site-and-browser-cache-properly/"
+        }
+      ]
+    },
+    {
+      "title": "How To Create A Child Theme And Why",
+      "slug": "how-to-create-a-child-theme-and-why",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-create-a-child-theme-and-why/",
+      "file": "categories/how-to-create-a-child-theme-and-why.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How To Create a Child Theme (and Why)",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-create-a-child-theme-and-why/"
+        }
+      ]
+    },
+    {
+      "title": "How To Disable Auto Updates For All Wordpress Plugins",
+      "slug": "how-to-disable-auto-updates-for-all-wordpress-plugins",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-disable-auto-updates-for-all-wordpress-plugins/",
+      "file": "categories/how-to-disable-auto-updates-for-all-wordpress-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Disable Auto-updates for All WordPress Plugins",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-disable-auto-updates-for-all-wordpress-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "How To Disable Wp Cron And Set Up A Real Cron Job",
+      "slug": "how-to-disable-wp-cron-and-set-up-a-real-cron-job",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-disable-wp-cron-and-set-up-a-real-cron-job/",
+      "file": "categories/how-to-disable-wp-cron-and-set-up-a-real-cron-job.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Disable WP-Cron and Set up a Real Cron Job",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-disable-wp-cron-and-set-up-a-real-cron-job/"
+        }
+      ]
+    },
+    {
+      "title": "How To Enable Debugging In Wordpress",
+      "slug": "how-to-enable-debugging-in-wordpress",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-enable-debugging-in-wordpress/",
+      "file": "categories/how-to-enable-debugging-in-wordpress.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Enable Debugging in WordPress",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-enable-debugging-in-wordpress/"
+        }
+      ]
+    },
+    {
+      "title": "How To Find And Share Slow Database Queries In Wordpress",
+      "slug": "how-to-find-and-share-slow-database-queries-in-wordpress",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-find-and-share-slow-database-queries-in-wordpress/",
+      "file": "categories/how-to-find-and-share-slow-database-queries-in-wordpress.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to find and share slow database queries in WordPress",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-find-and-share-slow-database-queries-in-wordpress/"
+        }
+      ]
+    },
+    {
+      "title": "How To Fix Common Wordpress Database Connection Errors",
+      "slug": "how-to-fix-common-wordpress-database-connection-errors",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-fix-common-wordpress-database-connection-errors/",
+      "file": "categories/how-to-fix-common-wordpress-database-connection-errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Fix Common WordPress Database Connection Errors",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-fix-common-wordpress-database-connection-errors/"
+        }
+      ]
+    },
+    {
+      "title": "How To Fix The Wordpress White Screen Of Death Wsod",
+      "slug": "how-to-fix-the-wordpress-white-screen-of-death-wsod",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-fix-the-wordpress-white-screen-of-death-wsod/",
+      "file": "categories/how-to-fix-the-wordpress-white-screen-of-death-wsod.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Fix the WordPress White Screen of Death (WSOD)",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-fix-the-wordpress-white-screen-of-death-wsod/"
+        }
+      ]
+    },
+    {
+      "title": "How To Get The Fastest Support",
+      "slug": "how-to-get-the-fastest-support",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-get-the-fastest-support/",
+      "file": "categories/how-to-get-the-fastest-support.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Get the Fastest Support",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-get-the-fastest-support/"
+        }
+      ]
+    },
+    {
+      "title": "How To Install An Extension",
+      "slug": "how-to-install-an-extension",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-install-an-extension/",
+      "file": "categories/how-to-install-an-extension.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Plugin Extensions",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-install-an-extension/"
+        }
+      ]
+    },
+    {
+      "title": "How To Put A Subscription On Hold",
+      "slug": "how-to-put-a-subscription-on-hold",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-put-a-subscription-on-hold/",
+      "file": "categories/how-to-put-a-subscription-on-hold.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Putting a Subscription on Hold",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-put-a-subscription-on-hold/"
+        }
+      ]
+    },
+    {
+      "title": "How To See A Javascript Console Error On Your Site",
+      "slug": "how-to-see-a-javascript-console-error-on-your-site",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-see-a-javascript-console-error-on-your-site/",
+      "file": "categories/how-to-see-a-javascript-console-error-on-your-site.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Capture JavaScript Errors Using Your Browser’s Developer Tools",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-see-a-javascript-console-error-on-your-site/"
+        }
+      ]
+    },
+    {
+      "title": "How To Set Up A Staging Site For Your Wordpress Website",
+      "slug": "how-to-set-up-a-staging-site-for-your-wordpress-website",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-set-up-a-staging-site-for-your-wordpress-website/",
+      "file": "categories/how-to-set-up-a-staging-site-for-your-wordpress-website.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Set Up a Staging Site for your WordPress Website with WP Staging Plugin",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-set-up-a-staging-site-for-your-wordpress-website/"
+        }
+      ]
+    },
+    {
+      "title": "How To Solve Warning On Google Search",
+      "slug": "how-to-solve-warning-on-google-search",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-solve-warning-on-google-search/",
+      "file": "categories/how-to-solve-warning-on-google-search.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Solving the “Discovered – currently not indexed” Notice on Google Search Console with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-solve-warning-on-google-search/"
+        }
+      ]
+    },
+    {
+      "title": "How To Uninstall A Wordpress Plugin",
+      "slug": "how-to-uninstall-a-wordpress-plugin",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-uninstall-a-wordpress-plugin/",
+      "file": "categories/how-to-uninstall-a-wordpress-plugin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Uninstall a WordPress Plugin",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-uninstall-a-wordpress-plugin/"
+        }
+      ]
+    },
+    {
+      "title": "How We Handle Bugs Tracking And Resolving Issues Explained",
+      "slug": "how-we-handle-bugs-tracking-and-resolving-issues-explained",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/how-we-handle-bugs-tracking-and-resolving-issues-explained/",
+      "file": "categories/how-we-handle-bugs-tracking-and-resolving-issues-explained.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How We Handle Bugs: Tracking and Resolving Issues Explained",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/how-we-handle-bugs-tracking-and-resolving-issues-explained/"
+        }
+      ]
+    },
+    {
+      "title": "Import Event Schedules",
+      "slug": "import-event-schedules",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/import-event-schedules/",
+      "file": "categories/import-event-schedules.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Transfer Event Schedule Manager Data to Another Site",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/import-event-schedules/"
+        }
+      ]
+    },
+    {
+      "title": "Import Events",
+      "slug": "import-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/import-events/",
+      "file": "categories/import-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Importing Events from Another Calendar Feed or URL",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/import-events/"
+        }
+      ]
+    },
+    {
+      "title": "Import Events Csv",
+      "slug": "import-events-csv",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/import-events-csv/",
+      "file": "categories/import-events-csv.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Importing Calendar Data From a CSV File",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/import-events-csv/"
+        }
+      ]
+    },
+    {
+      "title": "Imported Events",
+      "slug": "imported-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/imported-events/",
+      "file": "categories/imported-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Managing Imported Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/imported-events/"
+        }
+      ]
+    },
+    {
+      "title": "Install A Wordpress Theme",
+      "slug": "install-a-wordpress-theme",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/install-a-wordpress-theme/",
+      "file": "categories/install-a-wordpress-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Install a WordPress Theme",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/install-a-wordpress-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Integrations",
+      "slug": "integrations",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/integrations/",
+      "file": "categories/integrations.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar Integrations",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/integrations/"
+        }
+      ]
+    },
+    {
+      "title": "Jetpack Events",
+      "slug": "jetpack-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/jetpack-events/",
+      "file": "categories/jetpack-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Jetpack with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/jetpack-events/"
+        }
+      ]
+    },
+    {
+      "title": "Kadence Theme",
+      "slug": "kadence-theme",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/kadence-theme/",
+      "file": "categories/kadence-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Kadence Theme with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/kadence-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Key Validation Server Is Not Available",
+      "slug": "key-validation-server-is-not-available",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/key-validation-server-is-not-available/",
+      "file": "categories/key-validation-server-is-not-available.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Solved: Key Validation Server is not Available",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/key-validation-server-is-not-available/"
+        }
+      ]
+    },
+    {
+      "title": "Learndash Integration",
+      "slug": "learndash-integration",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/learndash-integration/",
+      "file": "categories/learndash-integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating LearnDash with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/learndash-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Legacy Category Colors",
+      "slug": "legacy-category-colors",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/legacy-category-colors/",
+      "file": "categories/legacy-category-colors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Migrating from the Legacy Category Colors Plugin",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/legacy-category-colors/"
+        }
+      ]
+    },
+    {
+      "title": "Licenses For Multisites",
+      "slug": "licenses-for-multisites",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/licenses-for-multisites/",
+      "file": "categories/licenses-for-multisites.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Multisite Licenses",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/licenses-for-multisites/"
+        }
+      ]
+    },
+    {
+      "title": "Loco Translate",
+      "slug": "loco-translate",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/loco-translate/",
+      "file": "categories/loco-translate.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Loco Translate with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/loco-translate/"
+        }
+      ]
+    },
+    {
+      "title": "Manual Updates",
+      "slug": "manual-updates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/manual-updates/",
+      "file": "categories/manual-updates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Manual Plugin Updates",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/manual-updates/"
+        }
+      ]
+    },
+    {
+      "title": "Members Only Calendar",
+      "slug": "members-only-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/members-only-calendar/",
+      "file": "categories/members-only-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Making a Members-Only Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/members-only-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Membership Plugin Integration",
+      "slug": "membership-plugin-integration",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/membership-plugin-integration/",
+      "file": "categories/membership-plugin-integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating Membership Plugins with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/membership-plugin-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft Teams",
+      "slug": "microsoft-teams",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/microsoft-teams/",
+      "file": "categories/microsoft-teams.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Virtual Events with Microsoft Teams",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/microsoft-teams/"
+        }
+      ]
+    },
+    {
+      "title": "Move Tickets Attendees",
+      "slug": "move-tickets-attendees",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/move-tickets-attendees/",
+      "file": "categories/move-tickets-attendees.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Moving Event Tickets and Attendees",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/move-tickets-attendees/"
+        }
+      ]
+    },
+    {
+      "title": "Moving Your License Key",
+      "slug": "moving-your-license-key",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/moving-your-license-key/",
+      "file": "categories/moving-your-license-key.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Moving a License Key From One Site to Another",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/moving-your-license-key/"
+        }
+      ]
+    },
+    {
+      "title": "Multi Day Events",
+      "slug": "multi-day-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/multi-day-events/",
+      "file": "categories/multi-day-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Multi-Day Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/multi-day-events/"
+        }
+      ]
+    },
+    {
+      "title": "Multiple Calendars",
+      "slug": "multiple-calendars",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/multiple-calendars/",
+      "file": "categories/multiple-calendars.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Displaying Multiple Calendars by Category",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/multiple-calendars/"
+        }
+      ]
+    },
+    {
+      "title": "Museum Event Website Guide",
+      "slug": "museum-event-website-guide",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/museum-event-website-guide/",
+      "file": "categories/museum-event-website-guide.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Museum Event Website Guide",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/museum-event-website-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Order Invoices",
+      "slug": "order-invoices",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/order-invoices/",
+      "file": "categories/order-invoices.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Finding Order Invoices",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/order-invoices/"
+        }
+      ]
+    },
+    {
+      "title": "Oxygen Theme",
+      "slug": "oxygen-theme",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/oxygen-theme/",
+      "file": "categories/oxygen-theme.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Oxygen Page Builder with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/oxygen-theme/"
+        }
+      ]
+    },
+    {
+      "title": "Past Events",
+      "slug": "past-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/past-events/",
+      "file": "categories/past-events.md",
       "page_count": 1,
       "pages": [
         {
           "title": "Working with Past Events",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/event-management/past-events/"
+          "url": "https://docs.nexcess.com/software/the-events-calendar/past-events/"
         }
       ]
     },
     {
-      "title": "Overview",
-      "slug": "overview",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/overview/",
-      "file": "categories/overview.md",
+      "title": "Paystack Tickets",
+      "slug": "paystack-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/paystack-tickets/",
+      "file": "categories/paystack-tickets.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "The Events Calendar",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/"
+          "title": "Using Event Tickets with Paystack",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/paystack-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Pci Compliance",
+      "slug": "pci-compliance",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/pci-compliance/",
+      "file": "categories/pci-compliance.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding PCI Compliance with Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/pci-compliance/"
+        }
+      ]
+    },
+    {
+      "title": "Php Version Requirements",
+      "slug": "php-version-requirements",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/php-version-requirements/",
+      "file": "categories/php-version-requirements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "PHP Requirements",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/php-version-requirements/"
+        }
+      ]
+    },
+    {
+      "title": "Plugin Installed But Features Are Missing",
+      "slug": "plugin-installed-but-features-are-missing",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/plugin-installed-but-features-are-missing/",
+      "file": "categories/plugin-installed-but-features-are-missing.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Plugin Installed but Features Are Missing",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/plugin-installed-but-features-are-missing/"
+        }
+      ]
+    },
+    {
+      "title": "Power Automate",
+      "slug": "power-automate",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/power-automate/",
+      "file": "categories/power-automate.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Automating Events and Tickets with Microsoft Power Automate",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/power-automate/"
+        }
+      ]
+    },
+    {
+      "title": "Power Automate Endpoints",
+      "slug": "power-automate-endpoints",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/power-automate-endpoints/",
+      "file": "categories/power-automate-endpoints.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Managing Your Power Automate Endpoints",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/power-automate-endpoints/"
+        }
+      ]
+    },
+    {
+      "title": "Power Automate Triggers",
+      "slug": "power-automate-triggers",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/power-automate-triggers/",
+      "file": "categories/power-automate-triggers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Triggers, Actions & Data Fields for Power Automate with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/power-automate-triggers/"
+        }
+      ]
+    },
+    {
+      "title": "Pre Sales Questions",
+      "slug": "pre-sales-questions",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/pre-sales-questions/",
+      "file": "categories/pre-sales-questions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How Can I Ask a Question Before Making a Purchase?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/pre-sales-questions/"
+        }
+      ]
+    },
+    {
+      "title": "Priority Support Through The Tec Support Hub",
+      "slug": "priority-support-through-the-tec-support-hub",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/priority-support-through-the-tec-support-hub/",
+      "file": "categories/priority-support-through-the-tec-support-hub.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Priority support through the TEC Help Hub",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/priority-support-through-the-tec-support-hub/"
+        }
+      ]
+    },
+    {
+      "title": "Promoter",
+      "slug": "promoter",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/promoter/",
+      "file": "categories/promoter.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with Promoter",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/promoter/"
+        }
+      ]
+    },
+    {
+      "title": "Promoter Account",
+      "slug": "promoter-account",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-account/",
+      "file": "categories/promoter-account.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Managing Your Promoter Account and Data",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-account/"
+        }
+      ]
+    },
+    {
+      "title": "Promoter Email",
+      "slug": "promoter-email",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-email/",
+      "file": "categories/promoter-email.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Verifying and Changing Your Send-From Email Address in Promoter",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-email/"
+        }
+      ]
+    },
+    {
+      "title": "Promoter Email Template",
+      "slug": "promoter-email-template",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-email-template/",
+      "file": "categories/promoter-email-template.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Promoter Email Templates",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-email-template/"
+        }
+      ]
+    },
+    {
+      "title": "Promoter License Key Is Invalid",
+      "slug": "promoter-license-key-is-invalid",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-license-key-is-invalid/",
+      "file": "categories/promoter-license-key-is-invalid.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Promoter License Key is Invalid",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-license-key-is-invalid/"
+        }
+      ]
+    },
+    {
+      "title": "Promoter Messages",
+      "slug": "promoter-messages",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-messages/",
+      "file": "categories/promoter-messages.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Scheduled and Triggered Messages in Promoter",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-messages/"
+        }
+      ]
+    },
+    {
+      "title": "Promoter Shortcuts Campaigns",
+      "slug": "promoter-shortcuts-campaigns",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-shortcuts-campaigns/",
+      "file": "categories/promoter-shortcuts-campaigns.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Promoter Shortcuts and Campaigns",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-shortcuts-campaigns/"
+        }
+      ]
+    },
+    {
+      "title": "Promoter Tracking Links",
+      "slug": "promoter-tracking-links",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-tracking-links/",
+      "file": "categories/promoter-tracking-links.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding Link Tracking in Promoter Emails",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-tracking-links/"
+        }
+      ]
+    },
+    {
+      "title": "Protected Content",
+      "slug": "protected-content",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/protected-content/",
+      "file": "categories/protected-content.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Show Event Content Only to Attendees",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/protected-content/"
+        }
+      ]
+    },
+    {
+      "title": "Provisional Event Ids",
+      "slug": "provisional-event-ids",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/provisional-event-ids/",
+      "file": "categories/provisional-event-ids.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding Provisional Event IDs in The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/provisional-event-ids/"
+        }
+      ]
+    },
+    {
+      "title": "Public Attendee List",
+      "slug": "public-attendee-list",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/public-attendee-list/",
+      "file": "categories/public-attendee-list.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Displaying and Managing the Public Attendee List",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/public-attendee-list/"
+        }
+      ]
+    },
+    {
+      "title": "Publish Eventbrite",
+      "slug": "publish-eventbrite",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/publish-eventbrite/",
+      "file": "categories/publish-eventbrite.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Publishing Events From WordPress to Eventbrite",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/publish-eventbrite/"
+        }
+      ]
+    },
+    {
+      "title": "Purchase Rules",
+      "slug": "purchase-rules",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/purchase-rules/",
+      "file": "categories/purchase-rules.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Purchase Rules for Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/purchase-rules/"
+        }
+      ]
+    },
+    {
+      "title": "Query Events",
+      "slug": "query-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/query-events/",
+      "file": "categories/query-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Querying Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/query-events/"
+        }
+      ]
+    },
+    {
+      "title": "Recurring Events",
+      "slug": "recurring-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/recurring-events/",
+      "file": "categories/recurring-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Recurring Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/recurring-events/"
+        }
+      ]
+    },
+    {
+      "title": "Refund Policy",
+      "slug": "refund-policy",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/refund-policy/",
+      "file": "categories/refund-policy.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Refund Policy",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/refund-policy/"
+        }
+      ]
+    },
+    {
+      "title": "Renewing An Expired License Subscription",
+      "slug": "renewing-an-expired-license-subscription",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/renewing-an-expired-license-subscription/",
+      "file": "categories/renewing-an-expired-license-subscription.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Renewing a License or Subscription",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/renewing-an-expired-license-subscription/"
+        }
+      ]
+    },
+    {
+      "title": "Resolved Allowed Memory Size Exhausted",
+      "slug": "resolved-allowed-memory-size-exhausted",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-allowed-memory-size-exhausted/",
+      "file": "categories/resolved-allowed-memory-size-exhausted.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Resolving the “Allowed memory size exhausted” notice in WordPress",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-allowed-memory-size-exhausted/"
+        }
+      ]
+    },
+    {
+      "title": "Resolved Managed By Host Error Prevents Plugin Update",
+      "slug": "resolved-managed-by-host-error-prevents-plugin-update",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-managed-by-host-error-prevents-plugin-update/",
+      "file": "categories/resolved-managed-by-host-error-prevents-plugin-update.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Resolved: “Managed By Host” Error Prevents Plugin Update",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-managed-by-host-error-prevents-plugin-update/"
+        }
+      ]
+    },
+    {
+      "title": "Resolved Sorry You Are Not Allowed To Upload This File Type",
+      "slug": "resolved-sorry-you-are-not-allowed-to-upload-this-file-type",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-sorry-you-are-not-allowed-to-upload-this-file-type/",
+      "file": "categories/resolved-sorry-you-are-not-allowed-to-upload-this-file-type.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Uploading Unsupported File Types",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-sorry-you-are-not-allowed-to-upload-this-file-type/"
+        }
+      ]
+    },
+    {
+      "title": "Resolved Your License Validation Request Is Missing A Valid Domain",
+      "slug": "resolved-your-license-validation-request-is-missing-a-valid-domain",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-your-license-validation-request-is-missing-a-valid-domain/",
+      "file": "categories/resolved-your-license-validation-request-is-missing-a-valid-domain.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Resolved: Your license validation request is missing a valid domain",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-your-license-validation-request-is-missing-a-valid-domain/"
+        }
+      ]
+    },
+    {
+      "title": "Responsive Templates",
+      "slug": "responsive-templates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/responsive-templates/",
+      "file": "categories/responsive-templates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Responsive Templates with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/responsive-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Rsvp Event Website Setup Guide",
+      "slug": "rsvp-event-website-setup-guide",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-event-website-setup-guide/",
+      "file": "categories/rsvp-event-website-setup-guide.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "RSVP Event Website Setup Guide",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-event-website-setup-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Schedule Shortcodes",
+      "slug": "schedule-shortcodes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/schedule-shortcodes/",
+      "file": "categories/schedule-shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Event Schedule Manager Shortcodes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/schedule-shortcodes/"
+        }
+      ]
+    },
+    {
+      "title": "Schedule Templates",
+      "slug": "schedule-templates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/schedule-templates/",
+      "file": "categories/schedule-templates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Template Overrides for Event Schedule Manager",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/schedule-templates/"
+        }
+      ]
+    },
+    {
+      "title": "School Calendar Website Guide",
+      "slug": "school-calendar-website-guide",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/school-calendar-website-guide/",
+      "file": "categories/school-calendar-website-guide.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "School Calendar Website Guide",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/school-calendar-website-guide/"
+        }
+      ]
+    },
+    {
+      "title": "Seating Builder",
+      "slug": "seating-builder",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/seating-builder/",
+      "file": "categories/seating-builder.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Connecting Event Tickets to the Seating Builder",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/seating-builder/"
+        }
+      ]
+    },
+    {
+      "title": "Seating Maps Layouts",
+      "slug": "seating-maps-layouts",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/seating-maps-layouts/",
+      "file": "categories/seating-maps-layouts.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Seating Maps and Layouts",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/seating-maps-layouts/"
+        }
+      ]
+    },
+    {
+      "title": "Seo Plugin Integration",
+      "slug": "seo-plugin-integration",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/seo-plugin-integration/",
+      "file": "categories/seo-plugin-integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating SEO, Caching, and Performance Plugins with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/seo-plugin-integration/"
+        }
+      ]
+    },
+    {
+      "title": "Series Passes",
+      "slug": "series-passes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/series-passes/",
+      "file": "categories/series-passes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Series Pass Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/series-passes/"
+        }
+      ]
+    },
+    {
+      "title": "Share Calendar",
+      "slug": "share-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/share-calendar/",
+      "file": "categories/share-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sharing and Migrating Events Between Calendars",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/share-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Sharing Your System Information",
+      "slug": "sharing-your-system-information",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/sharing-your-system-information/",
+      "file": "categories/sharing-your-system-information.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sharing Your System Information",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/sharing-your-system-information/"
         }
       ]
     },
     {
       "title": "Shortcodes",
       "slug": "shortcodes",
-      "url": "https://www.liquidweb.com/help-docs/software/events-calendar/shortcodes/",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/shortcodes/",
       "file": "categories/shortcodes.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Add the Events Calendar to Pages with Shortcodes",
-          "url": "https://www.liquidweb.com/help-docs/software/events-calendar/shortcodes/calendar-embed-shortcodes/"
+          "title": "Using The Events Calendar Shortcodes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/shortcodes/"
+        }
+      ]
+    },
+    {
+      "title": "Shortcodes 2",
+      "slug": "shortcodes-2",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/shortcodes-2/",
+      "file": "categories/shortcodes-2.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Calendar and Ticket Shortcodes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/shortcodes-2/"
+        }
+      ]
+    },
+    {
+      "title": "Single Event Shortcode",
+      "slug": "single-event-shortcode",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/single-event-shortcode/",
+      "file": "categories/single-event-shortcode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Add Event Content to Event Pages with Shortcodes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/single-event-shortcode/"
+        }
+      ]
+    },
+    {
+      "title": "Site Monitoring",
+      "slug": "site-monitoring",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/site-monitoring/",
+      "file": "categories/site-monitoring.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Site Health and Uptime Monitoring for The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/site-monitoring/"
+        }
+      ]
+    },
+    {
+      "title": "Sort Events Admin",
+      "slug": "sort-events-admin",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/sort-events-admin/",
+      "file": "categories/sort-events-admin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Filter and Sort Events in the WordPress Admin",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/sort-events-admin/"
+        }
+      ]
+    },
+    {
+      "title": "Square Pos",
+      "slug": "square-pos",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/square-pos/",
+      "file": "categories/square-pos.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Square Point of Sale for In-Person Ticket Sales",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/square-pos/"
+        }
+      ]
+    },
+    {
+      "title": "Styling Month View",
+      "slug": "styling-month-view",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/styling-month-view/",
+      "file": "categories/styling-month-view.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Styling the Month View Calendar with CSS",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/styling-month-view/"
+        }
+      ]
+    },
+    {
+      "title": "Subscribe Export Events",
+      "slug": "subscribe-export-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/subscribe-export-events/",
+      "file": "categories/subscribe-export-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Subscribing to and Exporting Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/subscribe-export-events/"
+        }
+      ]
+    },
+    {
+      "title": "Suretriggers Integration",
+      "slug": "suretriggers-integration",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/suretriggers-integration/",
+      "file": "categories/suretriggers-integration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Integrating SureTriggers with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/suretriggers-integration/"
+        }
+      ]
+    },
+    {
+      "title": "System Requirements",
+      "slug": "system-requirements",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/system-requirements/",
+      "file": "categories/system-requirements.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar System Requirements",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/system-requirements/"
+        }
+      ]
+    },
+    {
+      "title": "System Requirements Csv Import",
+      "slug": "system-requirements-csv-import",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/system-requirements-csv-import/",
+      "file": "categories/system-requirements-csv-import.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "System Requirements",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/system-requirements-csv-import/"
+        }
+      ]
+    },
+    {
+      "title": "Tax Laws",
+      "slug": "tax-laws",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/tax-laws/",
+      "file": "categories/tax-laws.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sales Tax and Marketplace Facilitator Laws for Community Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/tax-laws/"
+        }
+      ]
+    },
+    {
+      "title": "Template Filters Hooks Actions",
+      "slug": "template-filters-hooks-actions",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/template-filters-hooks-actions/",
+      "file": "categories/template-filters-hooks-actions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Template Filters, Hooks, and Actions with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/template-filters-hooks-actions/"
+        }
+      ]
+    },
+    {
+      "title": "Test Purchases",
+      "slug": "test-purchases",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/test-purchases/",
+      "file": "categories/test-purchases.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Testing Tickets Commerce Purchases",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/test-purchases/"
+        }
+      ]
+    },
+    {
+      "title": "Testing For Conflicts",
+      "slug": "testing-for-conflicts",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/testing-for-conflicts/",
+      "file": "categories/testing-for-conflicts.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Testing Conflicts With Themes and Other Plugins",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/testing-for-conflicts/"
+        }
+      ]
+    },
+    {
+      "title": "The Events Calendar",
+      "slug": "the-events-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/the-events-calendar/",
+      "file": "categories/the-events-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Getting Started with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/the-events-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "The Events Calendar Membership Plugins",
+      "slug": "the-events-calendar-membership-plugins",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/the-events-calendar-membership-plugins/",
+      "file": "categories/the-events-calendar-membership-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar & Membership Plugins",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/the-events-calendar-membership-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "Ticket Addons",
+      "slug": "ticket-addons",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-addons/",
+      "file": "categories/ticket-addons.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Selling Add-Ons with Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-addons/"
+        }
+      ]
+    },
+    {
+      "title": "Ticket Coupons Woocommerce",
+      "slug": "ticket-coupons-woocommerce",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-coupons-woocommerce/",
+      "file": "categories/ticket-coupons-woocommerce.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Ticket Coupons with WooCommerce",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-coupons-woocommerce/"
+        }
+      ]
+    },
+    {
+      "title": "Ticket Orders",
+      "slug": "ticket-orders",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-orders/",
+      "file": "categories/ticket-orders.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Managing Event Tickets Orders",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-orders/"
+        }
+      ]
+    },
+    {
+      "title": "Ticket Presets",
+      "slug": "ticket-presets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-presets/",
+      "file": "categories/ticket-presets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Saving Time with Ticket Presets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-presets/"
+        }
+      ]
+    },
+    {
+      "title": "Ticket Qr Codes",
+      "slug": "ticket-qr-codes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-qr-codes/",
+      "file": "categories/ticket-qr-codes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Check In Attendees with QR Codes and the Event Tickets Plus App",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-qr-codes/"
+        }
+      ]
+    },
+    {
+      "title": "Ticket Refunds",
+      "slug": "ticket-refunds",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-refunds/",
+      "file": "categories/ticket-refunds.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Refund Ticket Purchases",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-refunds/"
+        }
+      ]
+    },
+    {
+      "title": "Ticket Taxes",
+      "slug": "ticket-taxes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-taxes/",
+      "file": "categories/ticket-taxes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding Sales Tax for Ticket Sellers",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/ticket-taxes/"
+        }
+      ]
+    },
+    {
+      "title": "Tickets Commerce",
+      "slug": "tickets-commerce",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/",
+      "file": "categories/tickets-commerce.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sell Event Tickets with Tickets Commerce",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/"
+        }
+      ]
+    },
+    {
+      "title": "Tickets Hubspot",
+      "slug": "tickets-hubspot",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-hubspot/",
+      "file": "categories/tickets-hubspot.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Hubspot with Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-hubspot/"
+        }
+      ]
+    },
+    {
+      "title": "Tickets Shortcodes",
+      "slug": "tickets-shortcodes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-shortcodes/",
+      "file": "categories/tickets-shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Embedding Tickets, RSVPs, and Attendees with Shortcodes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-shortcodes/"
+        }
+      ]
+    },
+    {
+      "title": "Tickets Templates",
+      "slug": "tickets-templates",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-templates/",
+      "file": "categories/tickets-templates.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Event Tickets Template Files",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Translate Events Calendar",
+      "slug": "translate-events-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/translate-events-calendar/",
+      "file": "categories/translate-events-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Translating The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/translate-events-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Translating The Events Calendar",
+      "slug": "translating-the-events-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/translating-the-events-calendar/",
+      "file": "categories/translating-the-events-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Translating The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/translating-the-events-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Tribe Settings Api",
+      "slug": "tribe-settings-api",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/tribe-settings-api/",
+      "file": "categories/tribe-settings-api.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Customize The Events Calendar Settings with the Tribe Settings API",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/tribe-settings-api/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot 502 Errors",
+      "slug": "troubleshoot-502-errors",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-502-errors/",
+      "file": "categories/troubleshoot-502-errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting 502 and 503 Errors with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-502-errors/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Assigned Seating",
+      "slug": "troubleshoot-assigned-seating",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-assigned-seating/",
+      "file": "categories/troubleshoot-assigned-seating.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Assigned Seating for Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-assigned-seating/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Calendar Views",
+      "slug": "troubleshoot-calendar-views",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-calendar-views/",
+      "file": "categories/troubleshoot-calendar-views.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting The Events Calendar Views",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-calendar-views/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Community",
+      "slug": "troubleshoot-community",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-community/",
+      "file": "categories/troubleshoot-community.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Community Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-community/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Date Error",
+      "slug": "troubleshoot-date-error",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-date-error/",
+      "file": "categories/troubleshoot-date-error.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Fixing Events That Show the Date January 1, 1970",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-date-error/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Empty Calendar",
+      "slug": "troubleshoot-empty-calendar",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-empty-calendar/",
+      "file": "categories/troubleshoot-empty-calendar.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Fixing an Empty Events Calendar After Switching Hosts",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-empty-calendar/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Event Admin",
+      "slug": "troubleshoot-event-admin",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-event-admin/",
+      "file": "categories/troubleshoot-event-admin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting the Events Admin",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-event-admin/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Event Tickets",
+      "slug": "troubleshoot-event-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-event-tickets/",
+      "file": "categories/troubleshoot-event-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-event-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Eventbrite",
+      "slug": "troubleshoot-eventbrite",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-eventbrite/",
+      "file": "categories/troubleshoot-eventbrite.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Eventbrite Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-eventbrite/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Google Maps",
+      "slug": "troubleshoot-google-maps",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-google-maps/",
+      "file": "categories/troubleshoot-google-maps.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Google Maps",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-google-maps/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Imports",
+      "slug": "troubleshoot-imports",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-imports/",
+      "file": "categories/troubleshoot-imports.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Event Imports",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-imports/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Missing Events",
+      "slug": "troubleshoot-missing-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-missing-events/",
+      "file": "categories/troubleshoot-missing-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Fixing Missing Events on the Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-missing-events/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Permalinks",
+      "slug": "troubleshoot-permalinks",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-permalinks/",
+      "file": "categories/troubleshoot-permalinks.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Permalinks and Slugs",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-permalinks/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Promoter",
+      "slug": "troubleshoot-promoter",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-promoter/",
+      "file": "categories/troubleshoot-promoter.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Promoter",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-promoter/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Shortcodes",
+      "slug": "troubleshoot-shortcodes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-shortcodes/",
+      "file": "categories/troubleshoot-shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Events Shortcodes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-shortcodes/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Subscribe Export",
+      "slug": "troubleshoot-subscribe-export",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-subscribe-export/",
+      "file": "categories/troubleshoot-subscribe-export.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Subscribe and Export on The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-subscribe-export/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Template Overrides",
+      "slug": "troubleshoot-template-overrides",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-template-overrides/",
+      "file": "categories/troubleshoot-template-overrides.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Events Template Overrides",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-template-overrides/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Ticket Emails",
+      "slug": "troubleshoot-ticket-emails",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-ticket-emails/",
+      "file": "categories/troubleshoot-ticket-emails.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Ticket Emails Issues",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-ticket-emails/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Tickets App",
+      "slug": "troubleshoot-tickets-app",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-tickets-app/",
+      "file": "categories/troubleshoot-tickets-app.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting the Event Tickets Plus App",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-tickets-app/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Tickets Purchases",
+      "slug": "troubleshoot-tickets-purchases",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-tickets-purchases/",
+      "file": "categories/troubleshoot-tickets-purchases.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Payments and Checkout with Tickets Commerce",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-tickets-purchases/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Tickets Qr Codes",
+      "slug": "troubleshoot-tickets-qr-codes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-tickets-qr-codes/",
+      "file": "categories/troubleshoot-tickets-qr-codes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting PDF Tickets and Ticket QR Codes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-tickets-qr-codes/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot With Wordpress Admin Ajax Php Requests And Responses",
+      "slug": "troubleshoot-with-wordpress-admin-ajax-php-requests-and-responses",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-with-wordpress-admin-ajax-php-requests-and-responses/",
+      "file": "categories/troubleshoot-with-wordpress-admin-ajax-php-requests-and-responses.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshoot with WordPress admin-ajax.php Requests and Responses",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-with-wordpress-admin-ajax-php-requests-and-responses/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Woocommerce",
+      "slug": "troubleshoot-woocommerce",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-woocommerce/",
+      "file": "categories/troubleshoot-woocommerce.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Event Tickets with WooCommerce",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-woocommerce/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshoot Wordpress Errors",
+      "slug": "troubleshoot-wordpress-errors",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-wordpress-errors/",
+      "file": "categories/troubleshoot-wordpress-errors.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting WordPress Errors on Events",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-wordpress-errors/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting Our Premium Plugins Not Automatically Activated After An Update",
+      "slug": "troubleshooting-our-premium-plugins-not-automatically-activated-after-an-update",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshooting-our-premium-plugins-not-automatically-activated-after-an-update/",
+      "file": "categories/troubleshooting-our-premium-plugins-not-automatically-activated-after-an-update.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting: Our Premium plugins not automatically activated after an update",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshooting-our-premium-plugins-not-automatically-activated-after-an-update/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting The Events Calendar Plugins",
+      "slug": "troubleshooting-the-events-calendar-plugins",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshooting-the-events-calendar-plugins/",
+      "file": "categories/troubleshooting-the-events-calendar-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting The Events Calendar Plugins",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshooting-the-events-calendar-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting The Most Common Installation Issues",
+      "slug": "troubleshooting-the-most-common-installation-issues",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshooting-the-most-common-installation-issues/",
+      "file": "categories/troubleshooting-the-most-common-installation-issues.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Common Installation Issues",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshooting-the-most-common-installation-issues/"
+        }
+      ]
+    },
+    {
+      "title": "Trustedlogin",
+      "slug": "trustedlogin",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/trustedlogin/",
+      "file": "categories/trustedlogin.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Share site access with support through TrustedLogin",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/trustedlogin/"
+        }
+      ]
+    },
+    {
+      "title": "Upgrade To Pro Message Appears Despite Having A Valid License",
+      "slug": "upgrade-to-pro-message-appears-despite-having-a-valid-license",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/upgrade-to-pro-message-appears-despite-having-a-valid-license/",
+      "file": "categories/upgrade-to-pro-message-appears-despite-having-a-valid-license.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The Events Calendar “Upgrade to Pro” Message Appears Despite Having a Valid License",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/upgrade-to-pro-message-appears-despite-having-a-valid-license/"
+        }
+      ]
+    },
+    {
+      "title": "Upgrading A Subscription",
+      "slug": "upgrading-a-subscription",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/upgrading-a-subscription/",
+      "file": "categories/upgrading-a-subscription.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Upgrading a Subscription",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/upgrading-a-subscription/"
+        }
+      ]
+    },
+    {
+      "title": "User Roles Events",
+      "slug": "user-roles-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/user-roles-events/",
+      "file": "categories/user-roles-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Configuring User Roles and Permissions with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/user-roles-events/"
+        }
+      ]
+    },
+    {
+      "title": "Using Ftp",
+      "slug": "using-ftp",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/using-ftp/",
+      "file": "categories/using-ftp.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using FTP",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/using-ftp/"
+        }
+      ]
+    },
+    {
+      "title": "Using Google Chrome Developer Tools",
+      "slug": "using-google-chrome-developer-tools",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/using-google-chrome-developer-tools/",
+      "file": "categories/using-google-chrome-developer-tools.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Google Chrome Developer Tools",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/using-google-chrome-developer-tools/"
+        }
+      ]
+    },
+    {
+      "title": "Using One License For Live And Dev Sites",
+      "slug": "using-one-license-for-live-and-dev-sites",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/using-one-license-for-live-and-dev-sites/",
+      "file": "categories/using-one-license-for-live-and-dev-sites.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using One License for Both a Live and Local Development Site",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/using-one-license-for-live-and-dev-sites/"
+        }
+      ]
+    },
+    {
+      "title": "Venues Organizers",
+      "slug": "venues-organizers",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/venues-organizers/",
+      "file": "categories/venues-organizers.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Working with Venues and Organizers",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/venues-organizers/"
+        }
+      ]
+    },
+    {
+      "title": "Version Compatibility",
+      "slug": "version-compatibility",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/version-compatibility/",
+      "file": "categories/version-compatibility.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Version Compatibility",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/version-compatibility/"
+        }
+      ]
+    },
+    {
+      "title": "Wallets Tickets",
+      "slug": "wallets-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/wallets-tickets/",
+      "file": "categories/wallets-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using Digital Wallets and PDF Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/wallets-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Webex",
+      "slug": "webex",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/webex/",
+      "file": "categories/webex.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Virtual Events with Webex",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/webex/"
+        }
+      ]
+    },
+    {
+      "title": "What Are The System Requirements For Your Plugins",
+      "slug": "what-are-the-system-requirements-for-your-plugins",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/what-are-the-system-requirements-for-your-plugins/",
+      "file": "categories/what-are-the-system-requirements-for-your-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "System Requirements",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/what-are-the-system-requirements-for-your-plugins/"
+        }
+      ]
+    },
+    {
+      "title": "What Browsers Do You Support",
+      "slug": "what-browsers-do-you-support",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/what-browsers-do-you-support/",
+      "file": "categories/what-browsers-do-you-support.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Browser Support",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/what-browsers-do-you-support/"
+        }
+      ]
+    },
+    {
+      "title": "What Does Each License Type Include",
+      "slug": "what-does-each-license-type-include",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/what-does-each-license-type-include/",
+      "file": "categories/what-does-each-license-type-include.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What’s Included in Each License",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/what-does-each-license-type-include/"
+        }
+      ]
+    },
+    {
+      "title": "What Happens If I Cancel My Promoter Subscription",
+      "slug": "what-happens-if-i-cancel-my-promoter-subscription",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/what-happens-if-i-cancel-my-promoter-subscription/",
+      "file": "categories/what-happens-if-i-cancel-my-promoter-subscription.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What Happens if I Cancel My Promoter Subscription?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/what-happens-if-i-cancel-my-promoter-subscription/"
+        }
+      ]
+    },
+    {
+      "title": "What Is This Promoter Charge On My Credit Card",
+      "slug": "what-is-this-promoter-charge-on-my-credit-card",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/what-is-this-promoter-charge-on-my-credit-card/",
+      "file": "categories/what-is-this-promoter-charge-on-my-credit-card.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What is This Charge on My Credit Card or PayPal account?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/what-is-this-promoter-charge-on-my-credit-card/"
+        }
+      ]
+    },
+    {
+      "title": "What Kind Of Payments Do You Accept",
+      "slug": "what-kind-of-payments-do-you-accept",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/what-kind-of-payments-do-you-accept/",
+      "file": "categories/what-kind-of-payments-do-you-accept.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What Kind of Payments Do You Accept?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/what-kind-of-payments-do-you-accept/"
+        }
+      ]
+    },
+    {
+      "title": "What Support Is Provided For License Holders",
+      "slug": "what-support-is-provided-for-license-holders",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/",
+      "file": "categories/what-support-is-provided-for-license-holders.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What Kind of Support Do You Provide for Paid Plugins?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/"
+        }
+      ]
+    },
+    {
+      "title": "What To Do If Wordpress Is Stuck In Maintenance Mode After Update",
+      "slug": "what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update/",
+      "file": "categories/what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What to Do if WordPress Is Stuck in “Maintenance Mode” After Update",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update/"
+        }
+      ]
+    },
+    {
+      "title": "When Add On Features Of Tec Dont Work",
+      "slug": "when-add-on-features-of-tec-dont-work",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/when-add-on-features-of-tec-dont-work/",
+      "file": "categories/when-add-on-features-of-tec-dont-work.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "When Add-On Features of The Events Calendar Don’t Work",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/when-add-on-features-of-tec-dont-work/"
+        }
+      ]
+    },
+    {
+      "title": "Who Should Buy The Subscription The Client Or The Developer",
+      "slug": "who-should-buy-the-subscription-the-client-or-the-developer",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/who-should-buy-the-subscription-the-client-or-the-developer/",
+      "file": "categories/who-should-buy-the-subscription-the-client-or-the-developer.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Who Should Buy the Subscription, the Client or the Developer?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/who-should-buy-the-subscription-the-client-or-the-developer/"
+        }
+      ]
+    },
+    {
+      "title": "Why Am I Being Told My License Key Is Out Of Installs",
+      "slug": "why-am-i-being-told-my-license-key-is-out-of-installs",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/why-am-i-being-told-my-license-key-is-out-of-installs/",
+      "file": "categories/why-am-i-being-told-my-license-key-is-out-of-installs.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Why Am I Being Told My License Key is Out of Installs?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/why-am-i-being-told-my-license-key-is-out-of-installs/"
+        }
+      ]
+    },
+    {
+      "title": "Why We Dont Offer Phone Support",
+      "slug": "why-we-dont-offer-phone-support",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/why-we-dont-offer-phone-support/",
+      "file": "categories/why-we-dont-offer-phone-support.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Do You Offer Phone Support?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/why-we-dont-offer-phone-support/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Extensions",
+      "slug": "woocommerce-extensions",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/woocommerce-extensions/",
+      "file": "categories/woocommerce-extensions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using WooCommerce Extensions with Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/woocommerce-extensions/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Shortcodes",
+      "slug": "woocommerce-shortcodes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/woocommerce-shortcodes/",
+      "file": "categories/woocommerce-shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Embedding Tickets and Products with WooCommerce Shortcodes",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/woocommerce-shortcodes/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Tickets",
+      "slug": "woocommerce-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/woocommerce-tickets/",
+      "file": "categories/woocommerce-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Sell Event Tickets with WooCommerce",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/woocommerce-tickets/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Tickets Taxes",
+      "slug": "woocommerce-tickets-taxes",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/woocommerce-tickets-taxes/",
+      "file": "categories/woocommerce-tickets-taxes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Handling VAT Taxes with WooCommerce and Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/woocommerce-tickets-taxes/"
+        }
+      ]
+    },
+    {
+      "title": "Wordpress Customizer Events",
+      "slug": "wordpress-customizer-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/wordpress-customizer-events/",
+      "file": "categories/wordpress-customizer-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using the WordPress Customizer with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/wordpress-customizer-events/"
+        }
+      ]
+    },
+    {
+      "title": "Wordpress Multisite",
+      "slug": "wordpress-multisite",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/wordpress-multisite/",
+      "file": "categories/wordpress-multisite.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using The Events Calendar on WordPress Multisite",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/wordpress-multisite/"
+        }
+      ]
+    },
+    {
+      "title": "Wordpress Post Meta",
+      "slug": "wordpress-post-meta",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/wordpress-post-meta/",
+      "file": "categories/wordpress-post-meta.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Events Calendar Post Meta Keys",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/wordpress-post-meta/"
+        }
+      ]
+    },
+    {
+      "title": "Wp Cli",
+      "slug": "wp-cli",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/wp-cli/",
+      "file": "categories/wp-cli.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using WP-CLI with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/wp-cli/"
+        }
+      ]
+    },
+    {
+      "title": "Wp Fusion Events",
+      "slug": "wp-fusion-events",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/wp-fusion-events/",
+      "file": "categories/wp-fusion-events.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using WP Fusion with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/wp-fusion-events/"
+        }
+      ]
+    },
+    {
+      "title": "Wpml",
+      "slug": "wpml",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/wpml/",
+      "file": "categories/wpml.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Using WPML with The Events Calendar",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/wpml/"
+        }
+      ]
+    },
+    {
+      "title": "Youtube",
+      "slug": "youtube",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/youtube/",
+      "file": "categories/youtube.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Virtual Events with YouTube Live",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/youtube/"
+        }
+      ]
+    },
+    {
+      "title": "Zapier Endpoints",
+      "slug": "zapier-endpoints",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/zapier-endpoints/",
+      "file": "categories/zapier-endpoints.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Managing Your Zapier Endpoints",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/zapier-endpoints/"
+        }
+      ]
+    },
+    {
+      "title": "Zoom",
+      "slug": "zoom",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/zoom/",
+      "file": "categories/zoom.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Creating Virtual Events with Zoom",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/zoom/"
         }
       ]
     }

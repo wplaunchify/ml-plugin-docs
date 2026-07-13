@@ -2,7 +2,7 @@
   "plugin_slug": "kadence-blocks",
   "plugin_name": "Kadence Blocks",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-  "last_scraped": "2026-07-05T17:11:42.111Z",
+  "last_scraped": "2026-07-13T14:21:29.248Z",
   "total_pages": 153,
   "failed_urls_count": 0,
   "sections": [
@@ -27,7 +27,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "ActiveCampaign",
+          "title": "Integrating Kadence Forms with ActiveCampaign",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/activecampaign-form-adv-block/"
         }
       ]
@@ -209,7 +209,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Kadence",
+          "title": "How To Add Animate on Scroll Effects To Your Page",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/animate-on-scroll-effects/"
         }
       ]
@@ -326,7 +326,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Cloudflare Turnstile",
+          "title": "How to Integrate Kadence Forms with Cloudflare Turnstile",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/cloudflare-turnstile-form-adv-block/"
         }
       ]
@@ -820,7 +820,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Integrate Google Analytics with Kadence Forms",
+          "title": "Google Analytics",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/google-analytics-form-adv-block/"
         }
       ]
@@ -833,7 +833,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Google reCaptcha",
+          "title": "How to Integrate Google reCAPTCHA with Kadence Forms",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/google-recaptcha-form-adv-block/"
         }
       ]
@@ -1041,7 +1041,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Integrate Google Analytics with Kadence Forms",
+          "title": "Google Analytics",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/how-to-integrate-google-analytics-with-kadence-forms/"
         }
       ]
@@ -1145,7 +1145,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "ActiveCampaign",
+          "title": "Classic Themes – Install Demo Content With the Kadence Importer",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-activecampaign/"
         }
       ]
@@ -1561,7 +1561,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Kadence Blocks",
+          "title": "Search (Adv) Block",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/search-advanced-block/"
         }
       ]

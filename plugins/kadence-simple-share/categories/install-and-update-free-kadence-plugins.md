@@ -12,7 +12,9 @@ If you find that you are not able to update your free WordPress.org hosted plugi
 
 This is an example of a WordPress.org timeout error:
 
-![](https://res.cloudinary.com/lwcom/images/w_1023,h_218,c_scale/f_auto,q_auto/v1780354037/prod/image_460397e4148/image_460397e4148.png?_i=AA)In cases like this, you’ll need this guide to update your free plugins manually.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-1024x218-1.png)
+
+In cases like this, you’ll need this guide to update your free plugins manually.
 
 ## Step 1: Download the ZIP file from WordPress.org
 
@@ -24,7 +26,9 @@ The first step is to download the latest version of the appropriate Kadence plug
 
 Once you are there, you’ll see a “Download” button towards the upper right of the page, below the plugin banner. Click on that to Download the latest version of the plugin.
 
-![](https://res.cloudinary.com/lwcom/images/w_1024,h_561,c_scale/f_auto,q_auto/v1780354010/prod/CleanShot-2024-09-26-at-09.17.39-1/CleanShot-2024-09-26-at-09.17.39-1.png?_i=AA)Now you should have a ZIP file in your Downloads folder for the plugin.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/CleanShot-2024-09-26-at-09.17.39-1.png)
+
+Now you should have a ZIP file in your Downloads folder for the plugin.
 
 **NOTE**: Some browsers (specifically Safari) automatically unzip ZIP files upon download. If you see a folder instead of a ZIP file, you’ll need to ZIP that folder before proceeding.
 
@@ -34,11 +38,13 @@ Next you need to upload this ZIP file to your WordPress website. The WordPress p
 
 To do this, navigate in your WordPress admin to “Plugins > Add New Plugin”. From there click on “Choose File”. That will open your computer’s file system for you to find the ZIP file you previously downloaded. Choose that and submit.
 
-![](https://res.cloudinary.com/lwcom/images/w_1024,h_368,c_scale/f_auto,q_auto/v1780354030/prod/image-2_460398a6686/image-2_460398a6686.png?_i=AA)Once the file is fully uploaded, you should see a message that WordPress has detected that you already have this plugin installed. It will ask you whether you want to “Replace current with uploaded” or “Cancel and go back”. Click “Replace current with uploaded” to update your plugin.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-2-1024x368-1.png)
 
-![](https://res.cloudinary.com/lwcom/images/w_1023,h_580,c_scale/f_auto,q_auto/v1780354021/prod/image-3_4603993df3a/image-3_4603993df3a.png?_i=AA)The system will now update your plugin to the latest version. That’s it!
+Once the file is fully uploaded, you should see a message that WordPress has detected that you already have this plugin installed. It will ask you whether you want to “Replace current with uploaded” or “Cancel and go back”. Click “Replace current with uploaded” to update your plugin.
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-3-1024x580-1.png)
+
+The system will now update your plugin to the latest version. That’s it!
 
 ---
 

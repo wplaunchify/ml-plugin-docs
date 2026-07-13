@@ -12,24 +12,35 @@ Kadence Blocks Pro is a premium plugin that extends the functionality of the fre
 
 To use **Kadence Blocks Pro** on your website, the **free Kadence Blocks** plugin must also be **installed** and **activated**, as *Kadence Blocks Pro* is an *extension* of the **free** **plugin**, not a replacement.
 
-The Kadence Blocks Pro plugin is available in both the [Kadence Plus and Kadence Ultimate Plans](https://www.liquidweb.com/pricing/). You can also purchase the Kadence Blocks Pro plugin [individually](https://www.liquidweb.com/software/kadence/). Not sure if you want Kadence Blocks Pro? [Click here](https://www.liquidweb.com/software/kadence/) to try a live demo of Kadence Blocks Pro.
+The Kadence Blocks Pro plugin is available in both the [Kadence Plus and Kadence Ultimate Plans](https://www.kadencewp.com/pricing/). You can also purchase the Kadence Blocks Pro plugin [individually](https://www.kadencewp.com/kadence-blocks/pro/). Not sure if you want Kadence Blocks Pro? [Click here](https://www.kadencewp.com/kadence-blocks/try/) to try a live demo of Kadence Blocks Pro.
 
 This video is hidden as it needs to be updated
+
 ## Installing Kadence Blocks Pro
 
 Installing the Kadence Blocks Pro plugin is easy. Just follow the steps below to get started.
 
-Once you have access to the Kadence Blocks Pro Plugin, you can download it from your Kadence [Downloads & License](https://software.liquidweb.com/) page.
+Once you have access to the Kadence Blocks Pro Plugin, you can download it from your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page.
 
-![Downloads and licenses](https://www.liquidweb.com/wp-content/uploads/2021/05/Downloads-and-licenses-1024x601.jpg)You will see Kadence Blocks Pro listed in your Products list. You can click on the Download button to download the Kadence Blocks Pro Zip. Be sure to leave the file compressed and don’t unzip it.
+![Downloads and licenses](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-1.jpg)
 
-![Download Kadence blocks pro](https://res.cloudinary.com/lwcom/images/w_1024,h_691,c_scale/f_auto,q_auto/v1780354974/prod/Download-Kadence-blocks-Pro-1/Download-Kadence-blocks-Pro-1.jpg?_i=AA)Next, navigate to your WordPress Dashboard and go to Plugins -> Add New Plugin. At the top of the Add New Plugin page, click on the **Upload** **Plugin** button.
+You will see Kadence Blocks Pro listed in your Products list. You can click on the Download button to download the Kadence Blocks Pro Zip. Be sure to leave the file compressed and don’t unzip it.
 
-![Upload Kadence Blocks Pro](https://www.liquidweb.com/wp-content/uploads/2022/07/Upload-Kadence-Blocks-Pro-scaled.jpg)Then, click on the **Choose** **File** button and select your Kadence Blocks Pro zip file. Once you have selected the file, click the **Install** **Now** button.
+![Download Kadence blocks pro](https://docs.nexcess.com/wp-content/uploads/2026/06/Download-Kadence-blocks-Pro-1.jpg)
 
-![Install Blocks Pro](https://www.liquidweb.com/wp-content/uploads/2022/07/Install-Blocks-Pro.jpg)Once the plugin is installed, click the blue **Activate** **Plugin** button to activate your plugin.
+Next, navigate to your WordPress Dashboard and go to Plugins -> Add New Plugin. At the top of the Add New Plugin page, click on the **Upload** **Plugin** button.
 
-![Activate Kadence Blocks Pro](https://res.cloudinary.com/lwcom/images/w_1024,h_491,c_scale/f_auto,q_auto/v1780355164/prod/Activate-Blocks-Pro/Activate-Blocks-Pro.jpg?_i=AA)Now your Kadence Blocks Pro plugin is Activated on your website.
+![Upload Kadence Blocks Pro](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Kadence-Blocks-Pro-scaled-1.jpg)
+
+Then, click on the **Choose** **File** button and select your Kadence Blocks Pro zip file. Once you have selected the file, click the **Install** **Now** button.
+
+![Install Blocks Pro](https://docs.nexcess.com/wp-content/uploads/2026/06/Install-Blocks-Pro.jpg)
+
+Once the plugin is installed, click the blue **Activate** **Plugin** button to activate your plugin.
+
+![Activate Kadence Blocks Pro](https://docs.nexcess.com/wp-content/uploads/2026/06/Activate-Blocks-Pro-1024x491-1.jpg)
+
+Now your Kadence Blocks Pro plugin is Activated on your website.
 
 ## Licensing Kadence Blocks Pro
 
@@ -57,8 +68,6 @@ Once you have the Kadence Blocks Pro plugin activated, you have unlocked all of 
 - **Split Content** – Create a two column row using an image or video in one column with adjustable width.
 - **Advanced Slider** – Create beautiful sliders in the block editor.
 - **User Info** – Display information about the current logged in user including gravatar, name, and join date.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

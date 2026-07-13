@@ -8,11 +8,12 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/add-modify-row-layout-svg-dividers/](https://www.kadencewp.com/help-center/docs/kadence-blocks/add-modify-row-layout-svg-dividers/)
 
-The Kadence [Row Layout Block](https://www.liquidweb.com/docs/kadence-blocks/row-layout-block/) includes the ability to use Top and Bottom Dividers that make it easy to visually separate sections of a page.
+The Kadence [Row Layout Block](https://docs.nexcess.com/software/kadence/row-layout-block/) includes the ability to use Top and Bottom Dividers that make it easy to visually separate sections of a page.
 
 For users who want more control over the divider shapes, Kadence Blocks provides a way for **advanced** **users** to add **custom** **SVG** **dividers** by **modifying** **existing** **ones** via a custom PHP snippet using a WordPress filter. This method is update-safe and allows custom dividers to appear and behave just like the built-in divider options within the Row Layout Block.
 
-![Dividers Demonstration](https://res.cloudinary.com/lwcom/images/w_1024,h_591,c_scale/f_auto,q_auto/v1780351000/prod/Dividers_460777b5530/Dividers_460777b5530.gif?_i=AA)
+![Dividers Demonstration](https://docs.nexcess.com/wp-content/uploads/2026/06/Dividers.gif)
+
 ## The Filter
 
 Custom dividers can be added or modified using the 
@@ -37,7 +38,7 @@ Custom Codes can be added to one of the following locations:
 - A code snippets plugin.
 - A custom plugin.
 
-**Tip:**Do not edit the Kadence Blocks plugin files directly. Changes made to plugin files will be overwritten during updates.  For more information on how to safely add code snippets, please refer to:  [How to Add Custom Snippets](https://www.liquidweb.com/docs/kadence-theme/how-to-add-a-custom-filter-or-function-with-code-snippets/).
+**Tip:**Do not edit the Kadence Blocks plugin files directly. Changes made to plugin files will be overwritten during updates.  For more information on how to safely add code snippets, please refer to:  [How to Add Custom Snippets](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/).
 
 ### Divider Path Structure
 
@@ -75,9 +76,11 @@ When creating or exporting SVGs for use as Row Layout dividers, the following re
 
 ### SVG Requirements
 
-- Each divider must be defined as a **single string of <path> elements**.- Some dividers may include multiple <path> elements in one string (for layered effects).
+- Each divider must be defined as a **single string of <path> elements**.
+- Some dividers may include multiple <path> elements in one string (for layered effects).
 - **Do not include <svg> wrappers** – Kadence Blocks automatically adds the <svg> wrapper with the correct viewBox attributes.
-- Avoid SVG features that are not supported:- Gradients
+- Avoid SVG features that are not supported:
+- Gradients
 - Masks
 - <defs> or external references
 - The SVG should be **horizontally oriented**, meaning it spans left to right across the row.
@@ -110,7 +113,7 @@ $paths['threelevels'] = '<path style="opacity: 0.33" d="M0 95L1000 0v100H0v-5z">
 
 The **kadence_blocks_row_divider_paths** filter provides a supported way to extend or customize Row Layout dividers. This approach maintains editor compatibility and ensures custom dividers remain update-safe.
 
-## Kadence Built-in Divider Shape Reference
+**Kadence Built-in Divider Shape Reference**
 
 The following divider shapes are included with Kadence Blocks and are available in the Row Layout Block. The internal key for each shape is provided in parentheses. These keys can be used with the 
 ```
@@ -142,8 +145,6 @@ kadence_blocks_row_divider_paths
 - **Small Triangle Inverted** (littrii)
 - **Three Layer Steps** (threelevels)
 - **Three Layer Steps Inverted** (threelevelsi)
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

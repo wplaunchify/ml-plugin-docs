@@ -8,15 +8,15 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-fluentcrm/](https://www.kadencewp.com/help-center/docs/kadence-blocks/integrating-kadence-forms-with-fluentcrm/)
 
-The [Kadence Form](https://www.liquidweb.com/docs/kadence-blocks/form-block/) and [Form (Adv)](https://www.liquidweb.com/docs/kadence-blocks/advanced-form-block/) blocks both support integration with **FluentCRM**. This guide will show you how you can start using Kadence Forms with FluentCRM.
+The [Kadence Form](https://docs.nexcess.com/software/kadence/form-block/) and [Form (Adv)](https://docs.nexcess.com/software/kadence/advanced-form-block/) blocks both support integration with **FluentCRM**. This guide will show you how you can start using Kadence Forms with FluentCRM.
 
-**NOTE:** FluentCRM integrations are available using [Kadence Theme](https://wordpress.org/themes/kadence/) (FREE) and [Kadence Blocks](https://wordpress.org/plugins/kadence-blocks/) (also FREE).
+**NOTE:**  FluentCRM integrations are available using [Kadence Theme](https://wordpress.org/themes/kadence/) (FREE) and [Kadence Blocks](https://wordpress.org/plugins/kadence-blocks/) (also FREE).
 
-## FluentCRM Setup
+FluentCRM Setup
 
-FluentCRM is available in two versions: **Free** and **Pro**.  Which one you use will depend on your needs and budget.  For a comparison of the two, please see the [FluentCRM Free vs. Pro Comparison](https://fluentcrm.com/free-vs-pro/).
+FluentCRM is available in two versions:  **Free** and **Pro**.  Which one you use will depend on your needs and budget.  For a comparison of the two, please see the [FluentCRM Free vs. Pro Comparison](https://fluentcrm.com/free-vs-pro/).
 
-### Installing FluentCRM
+Installing FluentCRM
 
 Installing FluentCRM will vary depending on which version you are using.  For the **Free** version, you can install it directly in WordPress by going to **Plugins** → **Add Plugin**.  Search for **FluentCRM** and click **Install** then **Activate**.
 
@@ -26,7 +26,7 @@ After activation, you should now see a **FluentCRM** menu item in your WordPress
 
 For additional assistance installing and configuring **FluentCRM**, please check the [FluentCRM documentation](https://fluentcrm.com/docs/).
 
-## Using FluentCRM with the Kadence Form Block
+Using FluentCRM with the Kadence Form Block
 
 Using **FluentCRM** with the **Kadence** **Form** **Block** is easy. 
 
@@ -34,7 +34,11 @@ Get started by adding a **Form** **Block** to a new or existing page.
 
 Then, navigate to the **Block Settings → General**tab****and expand the **Actions** **After** **Submit** tab. 
 
-Click on the checkbox next to **FluentCRM**.![Kadence Form - Actions After Submit - Enable FluentCRM integration](https://www.liquidweb.com/wp-content/uploads/2025/06/Screenshot-2025-06-30-at-1.36.44 PM.png)Once **FluentCRM** is enabled, there will be a new tab in the **Form** block settings titled **FluentCRM** **Settings**.  Expand this tab to configure your FluentCRM integration.
+Click on the checkbox next to **FluentCRM**.
+
+![Kadence Form - Actions After Submit - Enable FluentCRM integration](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-30-at-1.36.44-PM.png)
+
+Once **FluentCRM** is enabled, there will be a new tab in the **Form** block settings titled **FluentCRM** **Settings**.  Expand this tab to configure your FluentCRM integration.
 
 **Select List** – During the FluentCRM setup, you should have created one or more Lists.  Select your desired **List**.
 
@@ -42,14 +46,21 @@ Click on the checkbox next to **FluentCRM**.![Kadence Form - Actions After Submi
 
 **Map Fields** – Each form field needs to be **mapped** to a corresponding FluentCRM field.
 
-Optionally require Double Opt In.![Kadence Form - FluentCRM Settings](https://www.liquidweb.com/wp-content/uploads/2025/06/Screenshot-2025-06-30-at-1.39.09 PM.png)
-## Using FluentCRM with the Kadence Form (Adv) Block
+Optionally require Double Opt In.
+
+![Kadence Form - FluentCRM Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-30-at-1.39.09-PM.png)
+
+Using FluentCRM with the Kadence Form (Adv) Block
 
 Get started by adding a **Form (Adv) Block** to a new or existing page. 
 
 Then, navigate to the **Block Settings → General**tab and expand the **Actions After Submit**tab. 
 
-Click on the dropdown toggle and select **FluentCRM** from the list of selectable options.![Kadence Form Adv - adding FluentCRM integration](https://www.liquidweb.com/wp-content/uploads/2025/06/Zight-Recording-2025-06-30-at-01.48.58-PM.gif)Once **FluentCRM** is enabled, there will be a new tab in the **Form** block settings named **FluentCRM** **Settings**. Expand this tab to configure your FluentCRM integration.
+Click on the dropdown toggle and select **FluentCRM** from the list of selectable options.
+
+![Kadence Form Adv - adding FluentCRM integration](https://docs.nexcess.com/wp-content/uploads/2026/06/Zight-Recording-2025-06-30-at-01.48.58-PM.gif)
+
+Once **FluentCRM** is enabled, there will be a new tab in the **Form** block settings named **FluentCRM** **Settings**. Expand this tab to configure your FluentCRM integration.
 
 **Select List** – During the FluentCRM setup, you should have created one or more Lists. Select your desired **List**.
 
@@ -57,14 +68,17 @@ Click on the dropdown toggle and select **FluentCRM** from the list of selectabl
 
 **Map Fields** – Each form field should be **mapped** to a corresponding FluentCRM field.
 
-Optionally require Double Opt In.![Kadence Forms - FluentCRM settings](https://www.liquidweb.com/wp-content/uploads/2025/06/Screenshot-2025-06-30-at-1.39.09 PM.png)
-## FluentCRM Dashboard
+Optionally require Double Opt In.
+
+![Kadence Forms - FluentCRM settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-30-at-1.39.09-PM.png)
+
+FluentCRM Dashboard
 
 Once users have subscribed to a **Form**, you can control the rest of the process through the **FluentCRM** **Dashboard**. Navigate to **FluentCRM → Dashboard** to access FluentCRM.
 
-![FluentCRM Dashboard](https://www.liquidweb.com/wp-content/uploads/2025/06/Screenshot-2025-06-30-at-1.54.24 PM-scaled.png)That’s all you need to get started using **Kadence Forms** with **FluentCRM**.
+![FluentCRM Dashboard](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-30-at-1.54.24-PM-scaled-1.png)
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+That’s all you need to get started using **Kadence Forms** with **FluentCRM**.
 
 ---
 

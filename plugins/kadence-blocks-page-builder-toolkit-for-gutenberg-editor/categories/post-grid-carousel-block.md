@@ -10,9 +10,13 @@
 
 The Post Grid/Carousel Block will give you all the flexibility you could ever need when it comes to beautifully displaying your blog posts. It allows you to customize everything from the layout design to the excerpt title and footer. You can even create a custom-designed blog grid by individually selecting specific posts.
 
-![](https://res.cloudinary.com/lwcom/images/w_532,h_1023,c_scale/f_auto,q_auto/v1778554134/prod/Post-GridCarousel-Selection-1/Post-GridCarousel-Selection-1.jpg?_i=AA)Post Grid/Carousel Example (Carousel Layout)
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Post-GridCarousel-Selection-1-532x1024-1.jpg)
 
-![Post Grid:Carousel Sample](https://www.liquidweb.com/wp-content/uploads/2019/02/Post-GridCarousel-Sample-1024x522.jpg)## General Settings
+Post Grid/Carousel Example (Carousel Layout)
+
+![Post Grid:Carousel Sample](https://docs.nexcess.com/wp-content/uploads/2026/06/Post-GridCarousel-Sample-1024x522-1.jpg)
+
+General Settings
 
 The **Post Type** setting allows you to specify which *Post Type* you would like to show on your Post Grid/Carousel Block. 
 
@@ -28,7 +32,13 @@ You can adjust the **Number of items** displayed and set an **Offset Starting Po
 
 You can also enable Pagination using the toggle.
 
-![Enable Pagination](https://www.liquidweb.com/wp-content/uploads/2019/01/Enable-Pagination.jpg)*Note: Enabling the pagination option will deactivate the filters configured in the Display Filter setting under the Advanced tab.*![Post Grid General Settings](https://www.liquidweb.com/wp-content/uploads/2019/02/General-Settings.gif)You can also use the **Filter by Category** and **Filter By Tag**settings to filter which posts are shown. You can either include or exclude the selected taxonomies.
+![Enable Pagination](https://docs.nexcess.com/wp-content/uploads/2026/06/Enable-Pagination.jpg)
+
+*Note: Enabling the pagination option will deactivate the filters configured in the Display Filter setting under the Advanced tab.*
+
+![Post Grid General Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/General-Settings.gif)
+
+You can also use the **Filter by Category** and **Filter By Tag**settings to filter which posts are shown. You can either include or exclude the selected taxonomies.
 
 The **Select the post Taxonomy** setting allows you to use a different taxonomy.
 
@@ -36,13 +46,17 @@ You can enable the **Exclude Current**setting to exclude the current post/page f
 
 The **Show Unique** setting allows you to exclude posts in the block from showing in others on the same page.
 
-The**Allow Sticky Posts**? setting allows you to enable sticky posts on your post grid/carousel block.![](https://www.liquidweb.com/wp-content/uploads/2023/05/more-general-settings.jpg)### Layout Settings
+The**Allow Sticky Posts**? setting allows you to enable sticky posts on your post grid/carousel block.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/more-general-settings.jpg)
+
+Layout Settings
 
 The **Layout Settings** allow you to customize the layout of your *Post Grid/Carousel Block*. 
 
 The **Layout** setting allows you to choose a *Grid, Masonry Grid, or a Carousel Layout*. Depending on which layout you use will depend on which Block Settings are shown.
 
-#### Carousel Layout Settings
+Carousel Layout Settings
 
 You can enable **Auto Play** and **Auto Scroll**. You can adjust the **Scroll Speed** and**Slide Transition Speed**.
 
@@ -54,7 +68,11 @@ You can also adjust the **Dot Style**. You can choose between *Dark, Light, Outl
 
 You can adjust the number of **Columns** displayed. You can control these **Linked** to all screen sizes, or you can select a different number for different screen sizes using the **Individual** option.
 
-You can also adjust the **Column Gap** for *desktop, tablet, and mobile devices*.![](https://www.liquidweb.com/wp-content/uploads/2023/05/Layout-Settings-344x1024.jpg)#### Grid and Masonry Layout Settings
+You can also adjust the **Column Gap** for *desktop, tablet, and mobile devices*.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Layout-Settings-344x1024-1.jpg)
+
+Grid and Masonry Layout Settings
 
 Whenever you select the **Grid Layout** or the **Masonry Layout**, the block settings will differ.
 
@@ -62,7 +80,11 @@ You can adjust the number of **Columns** by **Linked** or **Individual**.
 
 You can set the **Column** **Gap** for *desktop, tablet, and mobile devices.*
 
-You can also set the **Row Gap** for *desktop, tablet, and mobile devices.*![](https://www.liquidweb.com/wp-content/uploads/2023/05/Grid-Layout-Settings.jpg)### Image Settings
+You can also set the **Row Gap** for *desktop, tablet, and mobile devices.*
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Grid-Layout-Settings.jpg)
+
+Image Settings
 
 The **Image Settings**allow you to customize the images on your *Post Grid/Carousel Block*.
 
@@ -76,11 +98,25 @@ You can enable or disable the option to use the **Image** as a **link** **to the
 
 Use the **Image Padding** settings to set an *Image Padding* for desktop, tablet, and mobile devices.
 
-Use the **Border** **Radius** settings to add a border radius to the Post Grid/Carousel Image.![](https://www.liquidweb.com/wp-content/uploads/2023/05/Image-Settings.jpg)![Border Radius](https://www.liquidweb.com/wp-content/uploads/2019/01/Border-Radius.jpg)#### Respecting Aspect Ratios in Side Image Layouts
+Use the **Border** **Radius** settings to add a border radius to the Post Grid/Carousel Image.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Image-Settings.jpg)
+
+![Border Radius](https://docs.nexcess.com/wp-content/uploads/2026/06/Border-Radius.jpg)
+
+Respecting Aspect Ratios in Side Image Layouts
 
 When using a **Post Grid/Carousel** with a layout where the image is **on the side of the content**, you may notice the **aspect ratio** isn’t always respected when the **Force Image to Height of Container** setting is enabled. This is because the image in this design is intended to cover the available space rather than use an aspect ratio.
 
-![Side Image Layout Selection](https://www.liquidweb.com/wp-content/uploads/2019/01/Side-Image-Layout-Selection-1024x344.jpg)Use the **Respect Aspect Ratio** setting to ensure all *Post Grid/Carousel* images respect the current image ratio when set to full height. *(See the GIF below for reference.)*![Image Ratio Block Settings](https://www.liquidweb.com/wp-content/uploads/2019/01/Image-Ratio-Block-Settings.gif)![Image Ratio](https://www.liquidweb.com/wp-content/uploads/2019/01/Image-Ratio.gif)## Style Settings
+![Side Image Layout Selection](https://docs.nexcess.com/wp-content/uploads/2026/06/Side-Image-Layout-Selection-1024x344-1.jpg)
+
+Use the **Respect Aspect Ratio** setting to ensure all *Post Grid/Carousel* images respect the current image ratio when set to full height. *(See the GIF below for reference.)*
+
+![Image Ratio Block Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Image-Ratio-Block-Settings.gif)
+
+![Image Ratio](https://docs.nexcess.com/wp-content/uploads/2026/06/Image-Ratio.gif)
+
+Style Settings
 
 The **Style Settings** allow you to adjust the styling of your block.
 
@@ -94,23 +130,43 @@ You can use the **Border** setting to add a border. You can also set the **Borde
 
 You can also enable and use a **Box Shadow**.
 
-![Box Shadow](https://www.liquidweb.com/wp-content/uploads/2024/09/Box-Shadow.jpg)![](https://www.liquidweb.com/wp-content/uploads/2023/05/Style-Settings-436x1024.jpg)#### Header Settings
+![Box Shadow](https://docs.nexcess.com/wp-content/uploads/2026/06/Box-Shadow.jpg)
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Style-Settings-436x1024-1.jpg)
+
+Header Settings
 
 The **Header Settings**allow you to adjust the header section of each post.
 
-You can adjust the **Header Background** color. You can also adjust the **Header Padding** and **Header Margin** for *desktop, tablet, and mobile devices.*![](https://www.liquidweb.com/wp-content/uploads/2023/05/header-settings.jpg)#### Content Settings
+You can adjust the **Header Background** color. You can also adjust the **Header Padding** and **Header Margin** for *desktop, tablet, and mobile devices.*
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/header-settings-1.jpg)
+
+Content Settings
 
 The **Content Settings**allow you to adjust the content section of each post.
 
-You can adjust the **Content Background** color. You can also adjust the**Padding** and **Margin**.![](https://www.liquidweb.com/wp-content/uploads/2023/05/content-settings.jpg)#### Footer Settings
+You can adjust the **Content Background** color. You can also adjust the**Padding** and **Margin**.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/content-settings-1.jpg)
+
+Footer Settings
 
 The **Footer Settings**allow you to adjust the footer section of each post.
 
 You can adjust the **Footer Background** color. You can also adjust the**Padding** and**Margin**.
 
-You can use the **Footer Border Color** and **Footer Border Width** settings to add a border.![](https://www.liquidweb.com/wp-content/uploads/2023/05/Footer-Settings.jpg)## Advanced Settings
+You can use the **Footer Border Color** and **Footer Border Width** settings to add a border.
 
-You can use the **Advanced Settings** to adjust the more advanced settings on your block. There are multiple tabs that you can expand and adjust. We will go over each advanced setting.![](https://www.liquidweb.com/wp-content/uploads/2023/05/Advanced-Settings-1.jpg)#### Display Filter Settings
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Footer-Settings-1.jpg)
+
+Advanced Settings
+
+You can use the **Advanced Settings** to adjust the more advanced settings on your block. There are multiple tabs that you can expand and adjust. We will go over each advanced setting.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Advanced-Settings-1-1.jpg)
+
+Display Filter Settings
 
 The **Display Filter**settings allow you to display and customize a filter.
 
@@ -122,15 +178,27 @@ You can use **Horizontal Alignment** setting to set a left, center, or right ali
 
 You can add a **Filter Border Width** and a**Filter Border Radius** to your filter.
 
-You can also adjust the **Filter Item Padding** and **Filter Item Margin**on your filter.![](https://www.liquidweb.com/wp-content/uploads/2023/05/Display-Filter-Settings-345x1024.jpg)Filter ColorsYou can expand the **Filter Colors** setting to adjust the colors of your filter.
+You can also adjust the **Filter Item Padding** and **Filter Item Margin**on your filter.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Display-Filter-Settings-345x1024-1.jpg)
+
+Filter Colors
+
+You can expand the **Filter Colors** setting to adjust the colors of your filter.
 
 You can set a **Filter** **Color**,**Filter Background**, and **Filter Border** for **Normal**, **Hovered**, or **Active**filters.
 
-Filter Typography SettingsYou can set a Font Size for **desktop, tablet, and mobile devices.**
+Filter Typography Settings
+
+You can set a Font Size for **desktop, tablet, and mobile devices.**
 
 You can also set a **Line Height** and **Letter Case**.
 
-The **Font Family** setting allows you to change the filter font. You can also change the **Font** **Weight** and **Letter** **Spacing**.![](https://www.liquidweb.com/wp-content/uploads/2023/05/Filter-Colors-and-Typography-Settings-372x1024.jpg)#### Above Title Categories Settings
+The **Font Family** setting allows you to change the filter font. You can also change the **Font** **Weight** and **Letter** **Spacing**.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Filter-Colors-and-Typography-Settings-372x1024-1.jpg)
+
+Above Title Categories Settings
 
 You can enable and **Show Categories Above the Title**.
 
@@ -144,7 +212,11 @@ You can adjust the **Font Size** for *desktop, tablet, and mobile devices.*
 
 You can also set a **Line Height** and **Letter Case**.
 
-The **Font Family** setting allows you to change the filter font. You can also change the **Font** **Weight** and **Letter** **Spacing**![](https://www.liquidweb.com/wp-content/uploads/2023/05/Above-Title-Categories-Settings-329x1024.jpg)#### Title Settings
+The **Font Family** setting allows you to change the filter font. You can also change the **Font** **Weight** and **Letter** **Spacing**
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Above-Title-Categories-Settings-329x1024-1.jpg)
+
+Title Settings
 
 The **Title Settings** allow you to **Show the Title** and set the **Title** as a **Link to post**.
 
@@ -158,7 +230,11 @@ You can adjust the **Font Size** for *desktop, tablet, and mobile devices.*
 
 You can also set a **Line Height** and **Letter Case**.
 
-The **Font Family** setting allows you to change the filter font. You can also change the **Font Weight** and **LetterSpacing**![](https://www.liquidweb.com/wp-content/uploads/2023/05/Title-Settings-358x1024.jpg)#### Below Title Meta
+The **Font Family** setting allows you to change the filter font. You can also change the **Font Weight** and **LetterSpacing**
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Title-Settings-358x1024-1.jpg)
+
+Below Title Meta
 
 You can enable different **Below Title Meta Elements**.
 
@@ -168,7 +244,13 @@ You can enable/disable the **Show Modified Date** setting and you can set a **Mo
 
 You can enable/disable the **Show**Author setting and you can set an**Author Pre-Text**.
 
-You can enable/disable the **Show** **Category** setting and you can set a **Category Pre-Text**.![](https://www.liquidweb.com/wp-content/uploads/2023/05/Below-Title-Meta-361x1024.jpg)Meta DividerThe **Meta** **Divider** setting allows you to select a **Meta** **Divider** style. You can also adjust the **Meta** **Colors** and **Meta** **Typography** **Settings**.
+You can enable/disable the **Show** **Category** setting and you can set a **Category Pre-Text**.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Below-Title-Meta-361x1024-1.jpg)
+
+Meta Divider
+
+The **Meta** **Divider** setting allows you to select a **Meta** **Divider** style. You can also adjust the **Meta** **Colors** and **Meta** **Typography** **Settings**.
 
 The **Meta Colors** allow you to set the normal **Color**, **Link Color**, and **Link Hover Color**.
 
@@ -178,7 +260,11 @@ You can adjust the **Font Size** for *desktop, tablet, and mobile devices.*
 
 You can also set a **Line Height** and **Letter Case**.
 
-The **Font Family** setting allows you to change the filter font. You can also change the **Font Weight** and **LetterSpacing**![](https://www.liquidweb.com/wp-content/uploads/2023/05/meta-divider-settings-364x1024.jpg)#### Excerpt
+The **Font Family** setting allows you to change the filter font. You can also change the **Font Weight** and **LetterSpacing**
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/meta-divider-settings-364x1024-1.jpg)
+
+Excerpt
 
 You can enable and customize the **Excerpt**. You can use the **Excerpt Color** setting to set a color for the excerpt text.
 
@@ -186,7 +272,11 @@ You can set a**Font Size** for *desktop, tablet, and mobile devices.*
 
 You can also set a **Line Heigh** The **Font Family** setting allows you to change the filter font. You can also change the **Font Weight** and **LetterSpacing**.
 
-You can use the **Enable Custom Excerpt Length** and **Max number of words in excerpt** settings to customize the excerpt length.![](https://www.liquidweb.com/wp-content/uploads/2023/05/Excerpt-Settings-424x1024.jpg)#### Read More
+You can use the **Enable Custom Excerpt Length** and **Max number of words in excerpt** settings to customize the excerpt length.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Excerpt-Settings-424x1024-1.jpg)
+
+Read More
 
 You can enable the option to **Show Read More**.
 
@@ -198,7 +288,11 @@ You can set a **Read More Border Width** and a **Read More Border Radius**.
 
 You can set the **Read More** colors for the **Normal** and **Hover** state.
 
-You can set the **Text Color**, **Background Color**, and **Border Color**.![Post Grid/Carousel - Read More settings - Part 1](https://www.liquidweb.com/wp-content/uploads/2019/01/Screenshot-2025-06-04-at-1.48.19 PM.png)You can adjust the **Font Size** for *desktop, tablet, and mobile devices.*
+You can set the **Text Color**, **Background Color**, and **Border Color**.
+
+![Post Grid/Carousel - Read More settings - Part 1](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-04-at-1.48.19-PM.png)
+
+You can adjust the **Font Size** for *desktop, tablet, and mobile devices.*
 
 You can also set a **Line Height**
 
@@ -206,7 +300,11 @@ The **Font Family** setting allows you to change the filter font.
 
 You can also change the **Font Weight** and **LetterSpacing**
 
-You can add **Padding** or **Margin** to the read more text.![Post Grid/Carousel - Read More settings - Part 2](https://www.liquidweb.com/wp-content/uploads/2019/01/Screenshot-2025-06-04-at-1.48.48 PM-531x1024.png)#### Footer Meta
+You can add **Padding** or **Margin** to the read more text.
+
+![Post Grid/Carousel - Read More settings - Part 2](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-04-at-1.48.48-PM-531x1024-1.png)
+
+Footer Meta
 
 You can force the footer to align to the bottom of the post container.
 
@@ -214,7 +312,11 @@ You can enable the option to S**how Date, Show Categories, Show Tags, Show Autho
 
 You can also set the **Text Color**, **Link Color**, and **Link Hover Color**.
 
-You will also be able to adjust the standard typography settings for the **Footer** **Meta**.![Post Grid/Carousel - Footer Meta settings](https://www.liquidweb.com/wp-content/uploads/2019/01/Screenshot-2025-06-04-at-1.55.17 PM-336x1024.png)#### Block Defaults
+You will also be able to adjust the standard typography settings for the **Footer** **Meta**.
+
+![Post Grid/Carousel - Footer Meta settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-04-at-1.55.17-PM-336x1024-1.png)
+
+Block Defaults
 
 Kadence blocks have a **Block Defaults**section under the Advanced tab in the block settings. After you adjust the settings to the desired defaults, find the **Block Defaults** section and click the button that reads **Save as Default**.
 
@@ -222,14 +324,21 @@ After clicking the button, you will find two new links in the section to **Modif
 
 Remember, the default settings only apply to newly added blocks, not existing blocks.
 
-![block defaults](https://www.liquidweb.com/wp-content/uploads/2019/01/block-defaults.jpeg)![Modify block defaults](https://www.liquidweb.com/wp-content/uploads/2019/01/Modify-block-defaults.jpeg)Modify block defaults#### Advanced Settings
+![block defaults](https://docs.nexcess.com/wp-content/uploads/2026/06/block-defaults.jpeg)
+
+![Modify block defaults](https://docs.nexcess.com/wp-content/uploads/2026/06/Modify-block-defaults.jpeg)Modify block defaults
+
+Advanced Settings
 
 The **Advanced Settings**allow you to enable the option to **Open Post Links in new Tab.**
 
-You can also add **Additional CSS class(es)** to your block.![](https://www.liquidweb.com/wp-content/uploads/2023/05/advanced-settings-2.jpg)
-## Customizations
+You can also add **Additional CSS class(es)** to your block.
 
-### Pagination button colors
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/advanced-settings-2-1.jpg)
+
+Customizations
+
+Pagination button colors
 
 The pagination buttons inherit colors from the *Kadence Theme’s color palette*:
 
@@ -256,8 +365,6 @@ Should you want to change these values, *add a CSS code* like this:
     color: var(--global-palette9, #fff);
 }
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

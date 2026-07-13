@@ -12,9 +12,9 @@ The **kadence_pagination_args** filter allows developers to **customize the pagi
 
 This filter modifies the arguments passed to the native WordPress function [the_posts_pagination()](https://developer.wordpress.org/reference/functions/the_posts_pagination/), giving you full control over pagination appearance and behavior.
 
-## Examples
+Examples
 
-### Add Next and Previous Text
+Add Next and Previous Text
 
 ```
 add_filter( 'kadence_pagination_args', function( $args ) {
@@ -24,7 +24,7 @@ add_filter( 'kadence_pagination_args', function( $args ) {
 });
 ```
 
-### Adjust Number of Page Links
+Adjust Number of Page Links
 
 ```
 add_filter( 'kadence_pagination_args', function( $args ) {
@@ -33,7 +33,7 @@ add_filter( 'kadence_pagination_args', function( $args ) {
 });
 ```
 
-### Change Screen Reader Text
+Change Screen Reader Text
 
 ```
 add_filter( 'kadence_pagination_args', function( $args ) {
@@ -43,8 +43,6 @@ add_filter( 'kadence_pagination_args', function( $args ) {
 ```
 
 Add the PHP code snippets using a plugin. Refer to our guide here: **How to add a custom filter or function with Code Snippets**
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

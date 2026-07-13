@@ -4,44 +4,130 @@
 
 ---
 
-## Kadence
+## How To Add Animate on Scroll Effects To Your Page
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/animate-on-scroll-effects/](https://www.kadencewp.com/help-center/docs/kadence-blocks/animate-on-scroll-effects/)
 
-Kadence provides a suite of powerful tools for WordPress that allow you to build beautiful, high-performance websites without writing a single line of code. By using the Kadence Theme and Kadence Blocks, you can create custom layouts and sophisticated designs that are both fast and mobile-responsive. This flexibility ensures your site looks professional and functions perfectly on any device, giving your visitors the best possible experience.
+Want to make your WordPress site feel more modern and engaging? Adding animations that trigger as you scroll down the page is a simple way to bring your content to life. Whether it’s images fading in or text sliding up, these subtle effects can make a big impact.
 
-Whether you are using pre-built starter templates to launch a site quickly or utilizing the advanced block library to design unique pages, Kadence empowers you with total creative control. You can easily adjust typography, color palettes, and header layouts directly within the WordPress customizer. These tools are designed to work together seamlessly, reducing the need for multiple heavy plugins and helping your site maintain peak performance.
+In this guide, we’ll show you how to easily add scroll animations to your WordPress site using Kadence blocks.
 
----
+**NOTE:**  This feature requires the **Kadence Express Plan** or higher. Please see [our Pricing page](https://www.kadencewp.com/pricing/) to view your purchase options. This feature can be unlocked either through the [Kadence Creative Kit](https://docs.nexcess.com/software/kadence/kadence-creative-kit/) or the [Kadence Blocks Pro](https://docs.nexcess.com/software/kadence/kadence-blocks-pro-plugin/) plugins.
 
-## Kadence topics
+What is Animate on Scroll?
 
-58 resultsThis collection provides guides and tutorials for using Kadence themes and blocks to design fast, professional, and highly customizable WordPress sites.
+Animate on scroll is a feature that adds motion to your page, making it feel more interactive and interesting.  Instead of everything appearing all at once, content is revealed gradually, guiding the visitor’s attention and making the experience more engaging.  Animations can include effects like:
 
-- ## Accordion Block
+- Fade
+- Flip
+- Slide
+- Zoom
+- Cover
 
-The Accordion Block allows you to add custom content to an accordion-style layout. Add whatever block content you like within the Accordion Block and customize the appearance to meet your needs! Sample Accordion Adding an Accordion Block You can add an Accordion Block by adding a new block to the page and locating the Accordion…[Read more: Accordion Block](https://www.liquidweb.com/help-docs/software/kadence/accordion-block/)
-- ## Blocks Advanced
+![Kadence home page animation](https://docs.nexcess.com/wp-content/uploads/2026/06/Zight-Recording-2025-07-08-at-09.51.16-AM.gif)
 
-Troubleshoot advanced Kadence Blocks features. Learn to fix form email delivery, resolve slider autoplay issues, and manage custom icon sets for your WordPress site.[Read more: Blocks Advanced](https://www.liquidweb.com/help-docs/software/kadence/advanced/)
-- ## Buttons (Adv) Block
+What Blocks Can Be Animated?
 
-With the Advanced Buttons block, you can create custom buttons that stand out from the rest. This block offers a wide range of customization options, allowing you to choose from various styles, colors, and designs. You can add single or multiple buttons to your page or post, and each button can have its own unique…[Read more: Buttons (Adv) Block](https://www.liquidweb.com/help-docs/software/kadence/advanced-buttons/)
-- ## Count Up Block
+Kadence blocks that can be animated include:
 
-The Count Up Block allows you to include an animated number counter to pages and posts. This has the potential to add interest to what would otherwise be boring numbers on a screen. 71 nothing exciting over here Wah wah. Just numbers. Whoohoo!Cool, exciting numbers with a real zest for life! Have some statistics that…[Read more: Count Up Block](https://www.liquidweb.com/help-docs/software/kadence/count-up-block/)
-- ## Countdown Block
+- Section
+- Buttons (Adv) – Single Button
+- Text (Adv)
+- Form
 
-Kadence Gutenberg Blocks provides the Countdown block to display countdowns in your content. You can use a countdown to tell your customers how much time they have to take advantage of a sale. A countdown may be helpful to draw attention to an upcoming event. There are plenty of use cases for Kadence’s Countdown block…[Read more: Countdown Block](https://www.liquidweb.com/help-docs/software/kadence/countdown-block/)
-- ## Dynamic HTML Block
+- Image (Adv)
+- Video Popup
+- Image Overlay
+- Split Content
 
-Kadence offers the Dynamic HTML Block. This block allows you to display Content Dynamically. You can use default content, such as the Post Title and Post Content, or you can use Custom Field Content from ACF (advanced custom fields) or MetaBox. Below we will go over how you can use the Dynamic HTML Block to…[Read more: Dynamic HTML Block](https://www.liquidweb.com/help-docs/software/kadence/dynamic-html-block/)
-- ## Form (Adv) Block
+**Pro Tip:**  You can animate any content by including it inside an animated Section block.
 
-Kadence Blocks v3.1 introduced the Advanced Form Block. The Advanced Form Block has different useful field types and many ways to customize and design a form on your website. In order for Form Submissions to properly deliver, ensure your SMTP configuration is properly set up and working. Learn more below. Getting Started You can add…[Read more: Form (Adv) Block](https://www.liquidweb.com/help-docs/software/kadence/advanced-form-block/)
-- ## Form Block
+How To Animate A Block
 
-The Form block allows you to not only create custom forms, but style them however you want! With the Form block, you can add unlimited custom fields, and it also includes Google ReCaptcha support! Alert: The Kadence Form Block is being sunset. The Classic Form Block is no longer available in the block inserter. For…[Read more: Form Block](https://www.liquidweb.com/help-docs/software/kadence/form-block/)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+**Step 1:**  Insert one of the blocks listed above.
+
+**Step 2:**  Click the **Advanced** settings tab and open the **Animate on Scroll** section
+
+**Step 3:**  Select an **Animation** and adjust your settings
+
+![AOS Gif](https://docs.nexcess.com/wp-content/uploads/2026/06/AOS-Gif.gif)
+
+Animation Settings
+
+**Animation:**  Select an animation from the dropdown.  Selecting an animation will reveal the additional settings.
+
+**Animation Duration:**  Choose how long the animation will last, start to finish.  Use the slider to select 50 – 3000ms (0.05 – 3 seconds).  Default/empty is 400ms (0.4 seconds).
+
+**Animation Ease:**  Select one of several easing functions or leave blank for no easing.
+
+**Start Delay:**  Select the time delay for the animation to start as the element scrolls into view.  Select 50 – 3000ms (0.05 – 3 seconds) delay.  Default/empty is 0 seconds.
+
+**Only Show Once Per Page Load:**  Default/False will show every time the user scrolls down.  True will only show once per page load.
+
+**Pixel offset for when animation triggers:**  Slide to adjust from -300 – 300 pixels.  Default/empty is 0.
+
+To preview your animation in the editor, click the play ▶ button.
+
+![Animate on Scroll settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-07-08-at-10.03.50-AM-512x1024-1.png)
+
+Default Settings
+
+You can set default settings by going to **Kadence Blocks Control > Block Visibility > Animate on Scroll**
+
+![Block Controls](https://docs.nexcess.com/wp-content/uploads/2026/06/Block-Controls.jpg)
+
+From here, you can configure the **Default Animation Settings**:
+
+- **Animation Duration**
+- **Animation Ease**
+- **Start Delay**
+- **Only show once per page load**
+- **Pixel Offset for When Animation Triggers**
+
+After making changes, click **Save/Close** to apply your default settings.
+
+**Note:** These defaults will only apply to *newly added blocks*. Existing blocks will keep their current animation settings.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/aos-default-settings-771x1024-1.png)
+
+Animate on Scroll Tips
+
+When using scroll animations, less is more. Animations should enhance the user experience, not distract from it.  A good rule of thumb: if an animation helps draw attention or guide the visitor’s eyes, it’s likely worth including. If it’s just for decoration, consider leaving it static.
+
+Here are a few tips for deciding how many and which elements to animate on a WordPress page:
+
+Focus on Key Content
+
+Animate the most important elements you want visitors to notice, such as:
+
+- Headings or section titles
+- Feature images or product highlights
+- Call-to-action buttons (e.g., “Contact Us” or “Buy Now”)
+- Testimonials or statistics
+
+Avoid Overuse
+
+Too many animations can feel overwhelming or slow down your site. Avoid animating:
+
+- Every paragraph of text
+- Small icons or decorative elements
+- Navigation items (unless it’s intentional and subtle)
+- Nesting animations (i.e., animating a block inside another animated block)
+
+Animate on scroll can impact performance, especially on slower computers or mobile devices.  Some performance tips include:
+
+- Animate fewer elements (i.e., less is more)
+- Use lightweight effects (i.e,. use fade or slide versus zoom or flip)
+- Stagger animations (i.e., delay animations to avoid multiple simultaneous animations)
+- Limit animation duration (i.e,. 600ms or less)
+
+Keep It Consistent
+
+Stick to one or two animation styles across the page to maintain a clean, professional look. For example, use a fade-up for content sections and a slide-in for images.
+
+Test Responsiveness
+
+Kadence Animate on Scroll settings apply to all screen sizes. Be sure to test your animations on tablets and mobile devices. What looks great on a desktop might feel too busy or confusing on smaller screens.
 
 ---
 

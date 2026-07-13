@@ -10,9 +10,9 @@
 
 Are you a Kadence theme user looking to enhance your WordPress site with powerful customizations? Look no further! In this article, we’ve compiled a collection of essential code snippets tailored specifically for Kadence users. Whether you want to customize your admin experience, optimize site performance, or add new functionality without relying on additional plugins, these snippets will help you unlock new possibilities and streamline your workflow. Dive in to discover how you can easily implement these snippets to make the most out of your Kadence-powered website.
 
-You can add PHP code to your site using a plugin like [Code Snippets](https://www.liquidweb.com/help-docs/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/) or your functions.php file (in a [child theme](https://www.liquidweb.com/help-docs/software/kadence/resources/what-is-child-theme/)).
+You can add PHP code to your site using a plugin like [Code Snippets](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/) or your functions.php file (in a [child theme](https://docs.nexcess.com/software/kadence/what-is-child-theme-do-i-need-one/)).
 
-## Disable the WordPress Admin Bar for All Users Except Administrators
+**Disable the WordPress Admin Bar for All Users Except Administrators:**
 
 ```
 if (!current_user_can('administrator')) {
@@ -20,7 +20,7 @@ if (!current_user_can('administrator')) {
 }
 ```
 
-## Add Google Analytics
+**Add Google Analytics:**
 
 ```
 function add_google_analytics() {
@@ -35,7 +35,7 @@ function add_google_analytics() {
 add_action('wp_head', 'add_google_analytics');
 ```
 
-## Change the Excerpt Length
+**Change the Excerpt Length:**
 
 ```
 function custom_excerpt_length($length) {
@@ -44,7 +44,7 @@ function custom_excerpt_length($length) {
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 ```
 
-## Redirect Users After Login
+**Redirect Users After Login:**
 
 ```
 function custom_login_redirect($redirect_to, $request, $user) {
@@ -60,7 +60,7 @@ function custom_login_redirect($redirect_to, $request, $user) {
 add_filter('login_redirect', 'custom_login_redirect', 10, 3);
 ```
 
-## Customize Kadence Logo Redirect Link
+**Customize Kadence Logo Redirect Link**
 
 ```
 function custom_kadence_logo_url() {
@@ -69,7 +69,7 @@ function custom_kadence_logo_url() {
 add_filter( 'kadence_logo_url', 'custom_kadence_logo_url' );
 ```
 
-## Customize the Login Page Logo URL
+**Customize the Login Page Logo URL:**
 
 ```
 function custom_login_logo_url() {
@@ -78,7 +78,7 @@ function custom_login_logo_url() {
 add_filter('login_headerurl', 'custom_login_logo_url');
 ```
 
-## Custom Login Logo
+**Custom Login Logo:**
 
 ```
 function custom_login_logo() {
@@ -94,7 +94,7 @@ function custom_login_logo() {
 add_action('login_head', 'custom_login_logo');
 ```
 
-## Add Custom Image Sizes
+**Add Custom Image Sizes:**
 
 ```
 function custom_image_sizes() {
@@ -103,7 +103,7 @@ function custom_image_sizes() {
 add_action('after_setup_theme', 'custom_image_sizes');
 ```
 
-## Allow SVG Uploads
+**Allow SVG Uploads:**
 
 ```
 function custom_mime_types($mimes) {
@@ -113,7 +113,7 @@ function custom_mime_types($mimes) {
 add_filter('upload_mimes', 'custom_mime_types');
 ```
 
-## Add a Custom User Role
+**Add a Custom User Role:**
 
 ```
 function add_custom_user_role() {
@@ -125,7 +125,7 @@ function add_custom_user_role() {
 add_action('init', 'add_custom_user_role');
 ```
 
-## Add Custom Dashboard Message
+**Add Custom Dashboard Message:**
 
 ```
 function custom_dashboard_message() {
@@ -136,7 +136,7 @@ function custom_dashboard_message() {
 add_action('admin_notices', 'custom_dashboard_message');
 ```
 
-## Customize Footer Text in WordPress Admin
+**Customize Footer Text in WordPress Admin:**
 
 ```
 function custom_admin_footer() {
@@ -145,7 +145,7 @@ function custom_admin_footer() {
 add_filter('admin_footer_text', 'custom_admin_footer');
 ```
 
-## Changes the Kadence theme Next/Previous buttons to only show posts in the same category as the current post
+**Changes the Kadence theme Next/Previous buttons to only show posts in the same category as the current post:**
 
 ```
 // Add a filter to modify the arguments for post navigation
@@ -158,7 +158,7 @@ add_filter('kadence_post_navigation_args', function($args) {
 });
 ```
 
-## Changes the number of posts per page for the blog archive
+**Changes the number of posts per page for the blog archive:**
 
 ```
 // Hook into the 'pre_get_posts' action
@@ -176,7 +176,7 @@ function modify_blog_loop_query($query) {
 }
 ```
 
-## Creates a custom placeholder for the Kadence WooCommerce Email Designer
+**Creates a custom placeholder for the Kadence WooCommerce Email Designer:**
 
 ```
 // Add a filter to modify the WooCommerce email order body text in Kadence
@@ -189,7 +189,7 @@ add_filter('kadence_woomail_order_body_text', function($body, $order) {
 }, 15, 2);
 ```
 
-## Redirect Old URL to New URL
+**Redirect Old URL to New URL:**
 
 ```
 function custom_redirect_old_to_new() {
@@ -201,7 +201,7 @@ function custom_redirect_old_to_new() {
 add_action('template_redirect', 'custom_redirect_old_to_new');
 ```
 
-## Add Custom Body Class
+**Add Custom Body Class:**
 
 ```
 function custom_body_class($classes) {
@@ -213,7 +213,7 @@ function custom_body_class($classes) {
 add_filter('body_class', 'custom_body_class');
 ```
 
-## Add Categories to Pages
+**Add Categories to Pages:**
 
 ```
 function add_categories_to_pages() {
@@ -222,7 +222,7 @@ function add_categories_to_pages() {
 add_action( 'init', 'add_categories_to_pages' );
 ```
 
-## Add Tags to Pages
+**Add Tags to Pages:**
 
 ```
 function add_tags_to_pages() {
@@ -231,7 +231,7 @@ function add_tags_to_pages() {
 add_action( 'init', 'add_tags_to_pages');
 ```
 
-## Disable Related Posts for specified posts
+**Disable Related Posts for specified posts:**
 
 ```
 function kt_disable_post_related( $value ) {
@@ -247,13 +247,13 @@ function kt_disable_post_related( $value ) {
 add_filter( 'theme_mod_post_related', 'kt_disable_post_related');
 ```
 
-## Show Related Posts Based Only on Categories Instead of Both Categories and Tags
+Show Related Posts Based Only on Categories Instead of Both Categories and Tags
 
 ```
 add_filter( 'kadence_related_posts_use_tags', '__return_false' );
 ```
 
-## Change Breadcrumbs Delimiter
+Change Breadcrumbs delimiter
 
 ```
 add_filter( 'kadence_breadcrumb_delimiter', function( $delimiter ){
@@ -261,8 +261,6 @@ $delimiter = '-';
 return $delimiter;
 });
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

@@ -16,9 +16,12 @@ This guide explains how to copy and override the form-email.php template so it c
 
 **Custom Form Styles:**
 
-![Custom Email Styles](https://res.cloudinary.com/lwcom/images/w_976,h_708,c_scale/f_auto,q_auto/v1780350974/prod/Custom-Email-Styles_4607803cfc6/Custom-Email-Styles_4607803cfc6.jpg?_i=AA)**Default Kadence Form Styles:**
+![Custom Email Styles](https://docs.nexcess.com/wp-content/uploads/2026/06/Custom-Email-Styles.jpg)
 
-![Default Form Styles](https://res.cloudinary.com/lwcom/images/w_1024,h_675,c_scale/f_auto,q_auto/v1780350974/prod/Default-Form-Styles/Default-Form-Styles.jpg?_i=AA)
+**Default Kadence Form Styles:**
+
+![Default Form Styles](https://docs.nexcess.com/wp-content/uploads/2026/06/Default-Form-Styles-1024x675-1.jpg)
+
 ## Before You Begin
 
 Before starting, make sure the following are in place:
@@ -28,9 +31,9 @@ Before starting, make sure the following are in place:
 - Kadence Blocks installed and activated.
 - A backup of the site files
 
-⚠️ **Important:** Changes should always be made in a theme or child theme. Editing plugin files directly will be overwritten during updates. Learn more about Child Themes and download an example from [here](https://www.liquidweb.com/docs/kadence-theme/what-is-a-child-theme-should-i-install-one-if-so-how/).
+⚠️ **Important:** Changes should always be made in a theme or child theme. Editing plugin files directly will be overwritten during updates. Learn more about Child Themes and download an example from [here](https://docs.nexcess.com/software/kadence/what-is-child-theme-do-i-need-one/).
 
-## Where the Default Template Lives
+**Where the Default Template Lives**
 
 The default Kadence Forms email template is included with the Kadence Blocks plugin.
 
@@ -40,7 +43,9 @@ The default Kadence Forms email template is included with the Kadence Blocks plu
 /wp-content/plugins/kadence-blocks/includes/templates/form-email.php
 ```
 
-![Form Email Template](https://res.cloudinary.com/lwcom/images/w_1024,h_773,c_scale/f_auto,q_auto/v1780351026/prod/Form-Email-Template_46077690a8a/Form-Email-Template_46077690a8a.jpg?_i=AA)This file includes a header comment similar to the following:
+![Form Email Template](https://docs.nexcess.com/wp-content/uploads/2026/06/Form-Email-Template.jpg)
+
+This file includes a header comment similar to the following:
 
 ```
 /**
@@ -54,11 +59,11 @@ The default Kadence Forms email template is included with the Kadence Blocks plu
 
 This comment confirms that the template is designed to be overridden from a child theme.
 
-## How to Override the Email Template
+**How to Override the Email Template**
 
 Follow these steps to create a custom version of the email template.
 
-### Step 1. Locate the Plugin Template File
+**Step 1. Locate the Plugin Template File**
 
 Using FTP or a file manager, navigate to:
 
@@ -68,11 +73,11 @@ Using FTP or a file manager, navigate to:
 
 Find the file named **form-email.php**.
 
-### Step 2. Copy the Template File
+**Step 2. Copy the Template File**
 
 Copy the **form-email.php** file to a safe location on the local computer. This copy will be used as the starting point for customization.
 
-### Step 3. Create the Override Folder in the Theme
+**Step 3. Create the Override Folder in the Theme**
 
 Inside the active child theme directory, create the following folder path if it does not already exist:
 
@@ -82,7 +87,7 @@ Inside the active child theme directory, create the following folder path if it 
 
 ⚠️ **Important:** The folder name must be exactly kadence-blocks for the override to work.
 
-### Step 4. Add the Template to the Theme
+**Step 4. Add the Template to the Theme**
 
 Paste the copied **form-email.php** file into the new folder:
 
@@ -92,8 +97,9 @@ Paste the copied **form-email.php** file into the new folder:
 
 Once this file exists, Kadence Blocks will automatically load it instead of the default plugin version.
 
-![Folder Structure](https://res.cloudinary.com/lwcom/images/w_458,h_316,c_scale/f_auto,q_auto/v1780350982/prod/folder-structures_4607783689d/folder-structures_4607783689d.jpg?_i=AA)
-## Editing the Email Styles
+![Folder Structure](https://docs.nexcess.com/wp-content/uploads/2026/06/folder-structures.jpg)
+
+**Editing the Email Styles**
 
 The email template is a PHP file that outputs HTML markup and inline styles. Most email clients rely on inline CSS, so styles are usually applied directly within HTML attributes.
 
@@ -110,7 +116,7 @@ When editing the template, it is recommended to only adjust HTML markup and inli
 
 **Important:** Email clients have limited CSS support. Complex layouts or advanced CSS features may not render consistently.
 
-## Testing Changes
+**Testing Changes**
 
 After saving changes, submit a test form on the site to confirm the email output.
 
@@ -122,7 +128,7 @@ Recommended checks include:
 
 If emails do not appear as expected, revert recent changes and test again. On some hosting environments, server-side or plugin caching may delay template changes. Therefore, clearing the cache before testing is recommended.
 
-## Troubleshooting
+**Troubleshooting**
 
 If the custom template does not appear to load:
 
@@ -141,7 +147,7 @@ form-email.php
 - Clear any server or plugin caching.
 - Make sure the correct theme or child theme is active.
 
-## Next Steps
+**Next Steps**
 
 For additional customization options:
 
@@ -150,8 +156,6 @@ For additional customization options:
 - Test changes in a staging environment before applying them to a live site.
 
 Custom email templates offer flexibility while keeping updates safe. With the override in place, styles and markup can be adjusted as needed without relying on plugin edits.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

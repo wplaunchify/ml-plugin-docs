@@ -18,7 +18,9 @@ Click the Export button to download a file (kadence-theme-export.dat). You can i
 
 ## Reset
 
-If you want to reset all theme settings to default values, press the Reset button. This will restore all of the theme settings to their original values.![Import / Export Customizer settings](https://www.liquidweb.com/wp-content/uploads/2023/04/ImportExport-Customizer-settings.jpeg)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+If you want to reset all theme settings to default values, press the Reset button. This will restore all of the theme settings to their original values.
+
+![Import / Export Customizer settings](https://docs.nexcess.com/wp-content/uploads/2026/06/ImportExport-Customizer-settings.jpeg)
 
 ---
 

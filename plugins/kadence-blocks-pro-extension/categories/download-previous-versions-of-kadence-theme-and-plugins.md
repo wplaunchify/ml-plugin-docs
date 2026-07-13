@@ -24,7 +24,8 @@ For example: [https://wordpress.org/plugins/kadence-blocks](https://wordpress.or
 3. Scroll down to the **“Previous Versions”** section.
 4. Select the version number you want, then click **Download**.
 
-![Downgrade Blocks](https://www.liquidweb.com/wp-content/uploads/2025/05/Downgrade-Blocks.gif)
+![Downgrade Blocks](https://docs.nexcess.com/wp-content/uploads/2026/06/Downgrade-Blocks.gif)
+
 ---
 
 ## Kadence Theme (Free Version)
@@ -51,11 +52,11 @@ For premium products such as **Kadence Blocks Pro** and **Kadence Theme Pro**, p
 ### Steps:
 
 1. Log in to your Kadence account:
-[https://software.liquidweb.com/downloads](https://software.liquidweb.com/downloads)
+[https://www.kadencewp.com/my-account/downloads](https://www.kadencewp.com/my-account/downloads)
 2. Scroll to the plugin you want to download.
 3. Use the dropdown menu to select an older version, then click **Download**.
 
-![Downgrade Pro Items](https://www.liquidweb.com/wp-content/uploads/2025/05/Downgrade-Pro-Items.gif)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Downgrade Pro Items](https://docs.nexcess.com/wp-content/uploads/2026/06/Downgrade-Pro-Items.gif)
 
 ---
 

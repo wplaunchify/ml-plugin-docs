@@ -14,10 +14,13 @@ You can either add the TOC block after you’ve created your content, or you can
 
 To add the block, click one of the “+” signs in the editor, or search for it using the “/” function:
 
-![](https://res.cloudinary.com/lwcom/images/w_1024,h_592,c_scale/f_auto,q_auto/v1778567310/prod/image_43995969ca6/image_43995969ca6.gif?_i=AA)Once the block has been added, take some time to customize it to suit your needs:
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image.gif)
 
-![](https://res.cloudinary.com/lwcom/images/w_334,h_684,c_scale/f_auto,q_auto/v1778559480/prod/TOCblock/TOCblock.gif?_i=AA)
-## General Settings
+Once the block has been added, take some time to customize it to suit your needs:
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/TOCblock.gif)
+
+General Settings
 
 This is the tab setting the “**Allowed Headers**” and “**Collapsible Settings**” of the Table of Contents (**TOC**) block.
 
@@ -25,10 +28,14 @@ The *Allowed Headers* option is for setting which HTML heading tags (H1, H2, H3,
 
 The **Collapsible Settings** have multiple options:
 
-- *Enable Collapsible Content*: Determines whether the TOC block title is collapsible.- *Start Collapse*: If collapsible content is enabled, this option will show. Once turned on, the TOC block will show as collapsed on page load.
+- *Enable Collapsible Content*: Determines whether the TOC block title is collapsible.
+- *Start Collapse*: If collapsible content is enabled, this option will show. Once turned on, the TOC block will show as collapsed on page load.
 - *Icon Style*: Sets the icons that will be shown beside the TOC block title.
-- *Enable title to toggle as well as icon*: If this is turned on, a user can collapse the TOC block by clicking on the title.![](https://res.cloudinary.com/lwcom/images/w_396,h_1024,c_scale/f_auto,q_auto/v1778552235/prod/Edit-Page-About-‹-Lala-—-WordPress-2025-07-18-at-9.35.45-AM/Edit-Page-About-‹-Lala-—-WordPress-2025-07-18-at-9.35.45-AM.jpg?_i=AA)
-## Style Settings
+- *Enable title to toggle as well as icon*: If this is turned on, a user can collapse the TOC block by clicking on the title.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Edit-Page-About-‹-Lala-—-WordPress-2025-07-18-at-9.35.45-AM-396x1024-1.jpg)
+
+Style Settings
 
 This tab setting lets you customize the TOC block’s Title, List, and Container.
 
@@ -36,10 +43,17 @@ The **Title Settings** are for the TOC title with the default value of “Table 
 
 The **List Settings** are for the links below the titles. Those have links to their respective headings/titles on the page.
 
-The **Container Settings** are for customizing the whole TOC block container.![](https://res.cloudinary.com/lwcom/images/w_426,h_494,c_scale/f_auto,q_auto/v1778552230/prod/Edit-Page-About-‹-Lala-—-WordPress-2025-07-18-at-9.40.07-AM/Edit-Page-About-‹-Lala-—-WordPress-2025-07-18-at-9.40.07-AM.jpg?_i=AA)![](https://www.liquidweb.com/wp-content/uploads/2022/07/Zight-Recording-2025-07-18-at-09.43.13-AM.gif)When you’ve achieved your design goals for the TOC block, view it on the front end to ensure it’s working as expected.
+The **Container Settings** are for customizing the whole TOC block container.
 
-![](https://res.cloudinary.com/lwcom/images/w_1024,h_551,c_scale/f_auto,q_auto/v1778567293/prod/image-2_43996317e4d/image-2_43996317e4d.gif?_i=AA)
-## Advanced Settings
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Edit-Page-About-‹-Lala-—-WordPress-2025-07-18-at-9.40.07-AM.jpg)
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Zight-Recording-2025-07-18-at-09.43.13-AM.gif)
+
+When you’ve achieved your design goals for the TOC block, view it on the front end to ensure it’s working as expected.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-2.gif)
+
+Advanced Settings
 
 Spacing settings (**Padding** and **Margin**) of the TOC block itself can be changed here. There are default margins set by our block CSS files, like the bottom margin of 30px.
 
@@ -48,10 +62,14 @@ If this disrupts your layout, you can override that by setting the bottom margin
 The **Scroll Settings** will give you 2 options:
 
 - *Enable Smooth Scroll to ID*: Makes the scroll to the headings/titles smoother.
-- *Enable Highlighting Heading when scrolling in active area*: Makes the current heading show as active. This is useful for layouts where the TOC block is shown inside a sticky section.- This will give you another option to set the “Active” list item color to a different one.![](https://res.cloudinary.com/lwcom/images/w_403,h_1023,c_scale/f_auto,q_auto/v1778552226/prod/Add-Page-‹-Lala-—-WordPress-2025-07-18-at-9.48.56-AM/Add-Page-‹-Lala-—-WordPress-2025-07-18-at-9.48.56-AM.jpg?_i=AA)
+- *Enable Highlighting Heading when scrolling in active area*: Makes the current heading show as active. This is useful for layouts where the TOC block is shown inside a sticky section.
+- This will give you another option to set the “Active” list item color to a different one.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Add-Page-‹-Lala-—-WordPress-2025-07-18-at-9.48.56-AM-403x1024-1.jpg)
+
 ### Advanced Usage of the Table of Contents Block
 
-The TOC block is designed to pull headings from the “current” post or page. **It’s not designed to pull headings from outside content**, for example, headings that are in your footer, sidebar, or headings added by a hooked element. Headings that are not part of the page or post content are not going to show in your TOC block. Its purpose is to find the headings inside of a page or post.
+The TOC block is designed to pull headings from the “current” post or page. **It’s not designed to pull headings from outside content**, for example, headings that are in your footer, sidebar, or headings added by a hooked element. Headings that are not part of the page or post content are not going to show in your TOC block. It’s purpose is to find the headings inside of a page or post.
 
 You add the TOC block in a sidebar or in an element that is hooked into a page; however the TOC block will not create navigation for an element or sidebar.  It’s always looking at the current page content and not any other outside source.
 
@@ -63,7 +81,7 @@ Your post content by default, is static and saved in the database as HTML with t
 
 In Kadence Pro you can use hooked elements to create pages or post templates. The “search for headings in template” attempts to find the current custom page or post template you’ve created using Kadence Pro Elements. If found, any headings in those templates are added to the TOC block. If you are not using a custom template form Kadence Pro Elements this setting will not do anything.
 
-### Exclude Specific Headings
+Exclude Specific Headings
 
 By default, the Kadence Table of Contents block will skip certain headings such as Kadence Testimonial Titles and Image Overlay Titles.  In addition, you can manually exclude a heading by simply adding the class **toc-ignore** to the block.  This is typically done by going to the Advanced tab for the block, scrolling down to the Advanced section, and adding the class to the **Additional CSS class(es)** field.
 
@@ -76,8 +94,6 @@ add_filter('kadence_toc_exclude_classes_array', function($classes){
   return $classes;
 },10, 1);
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

@@ -15,7 +15,7 @@ By default, WordPress is designed to distinguish between posts and pages:
 
 However, you might have use cases where it makes sense to assign categories or tags to pages. In that case, you can enable them with a small tweak.
 
-For example, you might want to create a [Query Loop Adv](https://www.liquidweb.com/docs/kadence-blocks/advanced-query-loop-block/) block that displays Pages filtered by category.
+For example, you might want to create a [Query Loop Adv](https://docs.nexcess.com/software/kadence/blocks/advanced-query-loop-block/) block that displays Pages filtered by category.
 
 ### Option 1: Add Custom Code to Your Theme
 
@@ -41,8 +41,6 @@ You can also look for plugins that enable categories and tags for pages. One exa
 The functionality will be added without custom coding after installing and activating the plugin.
 
 *Note: There are various plugins that offer similar functionality. The one listed above is just an example. You are welcome to search the WordPress.org plugin repository or other trusted sources to find a plugin that best fits your needs.*
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

@@ -15,12 +15,15 @@ In Kadence Blocks 3.1.16 a new feature was added that allows you to easily searc
 3. Images sized for web
 4. Images downloaded with better file names for SEO
 
-![](https://www.liquidweb.com/wp-content/uploads/2023/09/kadence-blocks-pexels-search-1024x395.png)
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-blocks-pexels-search-1024x395-1.png)
+
 ## How to disable Pexels Integration
 
 You can choose to disable the Pexels integration by going to the Kadence Blocks settings in your editor and toggling the disabled option.
 
-![](https://www.liquidweb.com/wp-content/uploads/2023/09/disable-pexels-kadence-blocks.png)Or you can add this snippet in a code snippet plugin:
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/disable-pexels-kadence-blocks.png)
+
+Or you can add this snippet in a code snippet plugin:
 
 ```
 add_filter('kadence_blocks_show_image_picker', '__return_false' );
@@ -31,8 +34,6 @@ Or you can disable by adding this define in your WordPress config file:
 ```
 define( 'KADENCE_BLOCKS_DISABLE_IMAGE_SEARCH', true );
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

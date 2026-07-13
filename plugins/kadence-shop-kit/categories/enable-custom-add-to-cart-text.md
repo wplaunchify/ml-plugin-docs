@@ -10,7 +10,9 @@
 
 Shop Kit has a feature to enable custom “Add to Cart” text for your products. Enable the feature in the Shop Kit settings through the admin dashboard. In the settings panel, edit the text you want for each product type. Your text will appear on your shop pages on the button users press to add the product to their cart.
 
-![Shop Kit - Add to Cart Text options](https://res.cloudinary.com/lwcom/images/w_870,h_1024,c_scale/f_auto,q_auto/v1779998176/prod/Screenshot-2026-05-28-at-2.55.31-PM/Screenshot-2026-05-28-at-2.55.31-PM.png?_i=AA)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Shop Kit Add to Cart Text feature settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Shop-Kit-Add-to-Cart-Text-feature-settings-1024x736-1.jpeg)Shop Kit Add to Cart Text feature settings
+
+![Shop Kit Custom Add to Cart examples](https://docs.nexcess.com/wp-content/uploads/2026/06/Shop-Kit-Custom-Add-to-Cart-examples.gif)Shop Kit Custom Add to Cart examples
 
 ---
 
@@ -20,7 +22,9 @@ Shop Kit has a feature to enable custom “Add to Cart” text for your products
 
 Shop Kit has a feature to enable custom “Add to Cart” text for your products. Enable the feature in the Shop Kit settings through the admin dashboard. In the settings panel, edit the text you want for each product type. Your text will appear on your shop pages on the button users press to add the product to their cart.
 
-![Shop Kit - Add to Cart Text options](https://res.cloudinary.com/lwcom/images/w_870,h_1024,c_scale/f_auto,q_auto/v1779998176/prod/Screenshot-2026-05-28-at-2.55.31-PM/Screenshot-2026-05-28-at-2.55.31-PM.png?_i=AA)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Shop Kit Add to Cart Text feature settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Shop-Kit-Add-to-Cart-Text-feature-settings-1024x736-1.jpeg)Shop Kit Add to Cart Text feature settings
+
+![Shop Kit Custom Add to Cart examples](https://docs.nexcess.com/wp-content/uploads/2026/06/Shop-Kit-Custom-Add-to-Cart-examples.gif)Shop Kit Custom Add to Cart examples
 
 ---
 

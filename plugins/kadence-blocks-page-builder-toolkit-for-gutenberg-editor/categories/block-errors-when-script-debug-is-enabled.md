@@ -25,7 +25,8 @@ SCRIPT_DEBUG
  is enabled:
 
 - **Blocks fail to render** or display as generic “HTML” blocks.
-- **JavaScript errors** appear in the browser console (*check our guide on how to see the console errors here)*, such as:- ```
+- **JavaScript errors** appear in the browser console (*check our guide on how to see the console errors here)*, such as:
+- ```
 Uncaught TypeError
 ```
 - ```
@@ -75,11 +76,10 @@ Since this requires access to site files, it is recommended to contact your host
 
 - **Kadence Troubleshooting Guide**– This guide goes over general troubleshooting steps.
 - **How to view Console Logged Errors** – Console errors in your browser can help identify what’s causing the white screen or failed editor load.
-- [How to enable the WordPress Error Logs](https://www.liquidweb.com/docs/kadence-theme/how-to-enable-the-wordpress-error-logs/) – WordPress error logs can reveal PHP errors or warnings that may be causing issues behind the scenes.
-- **Support** – Feel free to contact our support team for further assistance.- **Free Support**
+- [How to enable the WordPress Error Logs](https://docs.nexcess.com/software/kadence/enable-wordpress-error-logs/) – WordPress error logs can reveal PHP errors or warnings that may be causing issues behind the scenes.
+- **Support** – Feel free to contact our support team for further assistance.
+- **Free Support**
 - **Premium Support**
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

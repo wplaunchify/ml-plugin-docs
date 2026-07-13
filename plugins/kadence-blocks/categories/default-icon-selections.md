@@ -304,7 +304,12 @@ The **Line Icons** set consists of clean, outlined icons perfect for minimalist 
 - ‘kb_steam-outline’
 - ‘kb_strava-outline’
 - ‘kb_twitch-outline’
-- ‘kb_vero-outline’Show MoreShow Less
+- ‘kb_vero-outline’
+
+Show More
+
+Show Less
+
 ### Solid Icons
 
 The **Solid Icons** set features filled, bold icons designed to stand out more prominently in your designs. These are great for buttons, highlights, and areas where a strong visual presence is needed. style and cover a wide range of common interface elements and symbols.
@@ -1697,14 +1702,17 @@ The **Solid Icons** set features filled, bold icons designed to stand out more p
 - ‘kb_twitch-solid’
 - ‘kb_twitch-solid-round’
 - ‘kb_vero-solid’
-- ‘kb_vero-solid-round’Show MoreShow Less
+- ‘kb_vero-solid-round’
+
+Show More
+
+Show Less
+
 ### Custom Icons
 
 **Kadence** **Blocks** **Pro** offers the ability to upload and use your own **Custom SVG Icons** across your Kadence website. You can also search for and directly import Icons to *Kadence Blocks.*
 
 Learn more about it here: **Using Custom SVG Icons with Kadence Blocks Pro**
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

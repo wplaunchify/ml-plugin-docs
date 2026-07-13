@@ -12,43 +12,52 @@ The **free Kadence Blocks** plugin includes the **Google Maps Block**, which all
 
 This is an advanced guide that walks you through the process. Some technical skills are required, including the ability to modify JavaScript code.
 
-![Google Maps block result](https://www.liquidweb.com/wp-content/uploads/2025/09/Google-Maps-block-result-scaled.jpg)
-## Obtaining an API Key
+![Google Maps block result](https://docs.nexcess.com/wp-content/uploads/2026/06/Google-Maps-block-result-scaled-1.jpg)
+
+Obtaining an API Key
 
 Our block automatically includes an API key. However, to use the JavaScript API for this method, you must use a **Custom API Key**.
 
 To get started, head over to the [Google Cloud Console](https://console.cloud.google.com/) and create a New Project.
 
-![Create a new Project](https://www.liquidweb.com/wp-content/uploads/2025/09/Create-aa-new-Project-scaled.jpg)Afterward, head over to the **APIs & Services / API Library** page. This can be found from the **API & Services -> Library** page within the Google Cloud Console main navigation.
+![Create a new Project](https://docs.nexcess.com/wp-content/uploads/2026/06/Create-aa-new-Project-scaled-1.jpg)
+
+Afterward, head over to the **APIs & Services / API Library** page. This can be found from the **API & Services -> Library** page within the Google Cloud Console main navigation.
 
 From here, you must enable the following API options:
 
 - Maps JavaScript API
 - Maps Embed API
 
-![Enabling APIs](https://res.cloudinary.com/lwcom/images/w_1024,h_547,c_scale/f_auto,q_auto/v1780352058/prod/Enabling-APIs/Enabling-APIs.gif?_i=AA)Once the proper APIs are enabled, navigate to the **Google Maps Platform -> Keys & Credentials** page.
+![Enabling APIs](https://docs.nexcess.com/wp-content/uploads/2026/06/Enabling-APIs.gif)
 
-![API Key](https://res.cloudinary.com/lwcom/images/w_888,h_1024,c_scale/f_auto,q_auto/v1780352045/prod/API-Key/API-Key.jpg?_i=AA)This will bring you to your **Google Map API Keys**. You can create one if you haven’t already. Then, you should save your API key for later use in this guide.
+Once the proper APIs are enabled, navigate to the **Google Maps Platform -> Keys & Credentials** page.
+
+![API Key](https://docs.nexcess.com/wp-content/uploads/2026/06/API-Key.jpg)
+
+This will bring you to your **Google Map API Keys**. You can create one if you haven’t already. Then, you should save your API key for later use in this guide.
 
 You can also refer to **This Guide** by Google on creating an API key.
 
 The next step is to obtain a Google Map ID, which you can learn about in the next section of this guide.
 
-## Creating a Google Map in Google
+Creating a Google Map in Google
 
 From the [Google Cloud Console Maps API](https://console.cloud.google.com/google/maps-apis/) page, locate **Map** **Management**. Then, click on **Create** **map**. This will allow you to create a new map instance, where you will be given a unique Map ID. Create a new map and save the Map ID for the next step of this guide.
 
-![Map Management](https://www.liquidweb.com/wp-content/uploads/2025/09/Map-Management-scaled.jpg)
-## Customizing your Google Maps Block
+![Map Management](https://docs.nexcess.com/wp-content/uploads/2026/06/Map-Management-scaled-1.jpg)
+
+Customizing your Google Maps Block
 
 Begin by adding a Google Maps Block to the page. You must **set an initial location through the Google Maps block**. You also do not need to fill out the API settings when using this method of implementation. 
 
 Your Block Settings should look similar to the image below.
 
-![Google Maps Block Settings](https://res.cloudinary.com/lwcom/images/w_1024,h_701,c_scale/f_auto,q_auto/v1780352034/prod/Google-Maps-Block-Settings/Google-Maps-Block-Settings.jpg?_i=AA)
-### Custom Code Snippet
+![Google Maps Block Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Google-Maps-Block-Settings.jpg)
 
-To add multiple markers, we will use **Custom JavaScript**. Kadence provides a few ways to add JavaScript, but for this guide, we will use **Page Scripts**, so the JavaScript only runs on the specific page. You can learn about how to add Custom JavaScript to Kadence [here](https://www.liquidweb.com/docs/kadence-guides/how-to-use-custom-css-and-scripts-using-kadence/).
+Custom Code Snippet
+
+To add multiple markers, we will use **Custom JavaScript**. Kadence provides a few ways to add JavaScript, but for this guide, we will use **Page Scripts**, so the JavaScript only runs on the specific page. You can learn about how to add Custom JavaScript to Kadence [here](https://docs.nexcess.com/software/kadence/theme/add-custom-css-and-scripts-using-kadence/).
 
 Earlier, you grabbed an **API** **Key** and a **Google** **Map** **ID**. This is where they become useful. Below is a Custom Code where you can implement both of these values.
 
@@ -152,17 +161,21 @@ markerLocations
 
 Once you have coded in your locations, you can apply this code to the page where the Google Map runs.
 
-### Adding the Custom Code
+Adding the Custom Code
 
-Kadence offers the **Page** **Scripts** feature for adding code to specific pages. You can learn about adding Custom Code to Kadence [here](https://www.liquidweb.com/docs/kadence-guides/how-to-use-custom-css-and-scripts-using-kadence/). 
+Kadence offers the **Page** **Scripts** feature for adding code to specific pages. You can learn about adding Custom Code to Kadence [here](https://docs.nexcess.com/software/kadence/theme/add-custom-css-and-scripts-using-kadence/). 
 
 For **Page** **Scripts**, add the **JavaScript** in the **Footer** section so it loads after the Kadence Google Maps block. This ensures the map element exists before the script runs.
 
-![Adding Page Scripts](https://www.liquidweb.com/wp-content/uploads/2025/09/Adding-Page-Scripts-scaled.jpg)Additionally, if you do not have access to [Kadence Blocks Pro](https://www.liquidweb.com/docs/kadence-blocks/kadence-blocks-pro-plugin/) or [Kadence Theme Kit Pro](https://www.liquidweb.com/docs/kadence-theme/kadence-theme-pro-addon/) to enable **Custom** **Scripts**, consider using a **Custom HTML Block** on the same page as the Google Maps block. This is a good workaround for free users.
+![Adding Page Scripts](https://docs.nexcess.com/wp-content/uploads/2026/06/Adding-Page-Scripts-scaled-1.jpg)
 
-![Custom HTML Block](https://www.liquidweb.com/wp-content/uploads/2025/09/Custom-HTML-Block-scaled.jpg)In return, if the code is modified properly, you should see multiple markers on the Google Maps block.
+Additionally, if you do not have access to [Kadence Blocks Pro](https://docs.nexcess.com/software/kadence/kadence-blocks-pro-plugin/) or [Kadence Theme Kit Pro](https://docs.nexcess.com/software/kadence/theme/theme-kit-pro-plugin/) to enable **Custom** **Scripts**, consider using a **Custom HTML Block** on the same page as the Google Maps block. This is a good workaround for free users.
 
-![Google Maps block result](https://www.liquidweb.com/wp-content/uploads/2025/09/Google-Maps-block-result-scaled.jpg)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Custom HTML Block](https://docs.nexcess.com/wp-content/uploads/2026/06/Custom-HTML-Block-scaled-1.jpg)
+
+In return, if the code is modified properly, you should see multiple markers on the Google Maps block.
+
+![Google Maps block result](https://docs.nexcess.com/wp-content/uploads/2026/06/Google-Maps-block-result-scaled-1.jpg)
 
 ---
 

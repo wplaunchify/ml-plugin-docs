@@ -133,7 +133,5 @@ function custom_widget_title_args( $args ) {
 add_filter( 'kadence_widget_area_args', 'custom_widget_title_args' );
 ```
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
-
 ---
 

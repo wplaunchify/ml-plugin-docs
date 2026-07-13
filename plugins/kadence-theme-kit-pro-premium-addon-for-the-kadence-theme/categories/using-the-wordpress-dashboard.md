@@ -4,36 +4,48 @@
 
 ---
 
-## Using the WordPress Dashboard
+## Exploring the WordPress Dashboard
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-theme/using-the-wordpress-dashboard/](https://www.kadencewp.com/help-center/docs/kadence-theme/using-the-wordpress-dashboard/)
 
-When using WordPress, it is important to understand the Dashboard. This is an admin area where you can modify and control your website. From within the WordPress Dashboard, you can add plugins, access plugin settings, other important website settings, and much more. This guide provides a basic overview on accessing and using the WordPress Dashboard.
+To access the WordPress dashboard, you’ll need to first [log in to your WordPress site](https://solidwp.com/tutorials/wordpress-login/). Once you’ve logged in to your WordPress site, you’ll land here, the WordPress Dashboard.
 
-![WPadmin](https://www.liquidweb.com/wp-content/uploads/2025/06/WPadmin-scaled.jpg)
-## Accessing the WP Admin
+## Exploring the WordPress Dashboard
 
-The Dashboard can typically be accessed by going to https://yourwebsite.com/wp-admin. You will be presented with a login screen, where you can log in to your administrator account.
+The WordPress Dashboard allows you to control all of the behind-the-scene details of managing your site. Once you find your way around the dashboard, you’ll realize it’s really easy to use and navigate.
 
-![Login](https://www.liquidweb.com/wp-content/uploads/2025/06/Login.jpg)Once logged in, from within the admin, you can access various things. Such as posts,  post categories, pages, themes, plugins, and more. Use the navigation menu in the left sidebar to navigate to and adjust various aspects of your website.
+First, we’ll take a look at the dashboard home screen. After you first log in, you’ll see a top welcome box from WordPress with some quick links to help you get started.
 
-![Admin Menu](https://www.liquidweb.com/wp-content/uploads/2025/06/Admin-Menu.jpg)As you activate more plugins, the admin menu will add new items, allowing you to manage those plugins.. This can be nested within an existing menu, like tools, or as an entirely new menu item. When activating Kadence plugins, you will notice additional menu items appear.
+The next section is the **Right Now** section. Here, you’ll see the number of posts, pages, categories, and tags for your site’s content. You’ll also see discussion information for comments, like the total number of comments and numbers for those approved, pending, or marked as spam.
 
-![Menu Gif](https://www.liquidweb.com/wp-content/uploads/2025/06/Menu-Gif.gif)Use each menu item to manage different features of your WordPress website.
+In the Right Now section, you’ll also see what WordPress theme you’re currently running on this site, plus the number of widgets and your current version of WordPress.
 
-### Admin Bar
+The **Recent Comments** section shows you just that: recent comments. Here, you can quickly unapprove or approve comments, reply, edit, mark as spam, or send to trash, too.
 
-At the top of posts, pages, and across your website, you may notice the admin bar. This bar can be used to add new posts, pages, users, and more. It also simplifies navigating from and to your website homepage and the wp admin page.
+The**Incoming Links** section shows incoming links to your website or blog found by [Google Blog Search](https://www.google.com/blogsearch). Incoming links are when another blog links back to your site. If you have a brand new WordPress site, you probably won’t have any incoming links.
 
-![Admin Bar Sample](https://www.liquidweb.com/wp-content/uploads/2025/06/Admin-Bar-Sample-scaled.jpg)![Menu Items](https://www.liquidweb.com/wp-content/uploads/2025/06/Menu-Items.gif)![Admin Menu 2](https://www.liquidweb.com/wp-content/uploads/2025/06/Admin-Menu-2.gif)Caching plugins and security plugins tend to add additional related features to the admin bar.
+In the **Plugins** section, you’ll find information on the most popular, newest plugins, and recently updated plugins from the [WordPress.org Plugin Directory](http://wordpress.org/plugins/).
 
-#### Enabling/Disabling the Admin Bar
+If you scroll back up to the second column, you’ll find the **Quick Press** section of the WordPress Dashboard. QuickPress will allow you to publish or save a draft of a post straight from this screen, which is great for quickly publishing content. You just won’t have all of the formatting options like you do in the WordPress post editor.
 
-You can enable or disable the Admin Bar on a user-to-user basis. This can be done by going to the Dashboard -> Users -> All Users and editing a user. Locate the setting named *Show Toolbar when viewing site*. Here, you can enable or disable the Admin Bar for that user.
+## Get our security insights in your inbox!
 
-![Enabling The Admin Bar](https://www.liquidweb.com/wp-content/uploads/2025/06/Enabling-The-Admin-Bar.jpg)Some plugins allow you to disable the Admin Bar sitewide. However, doing so isn’t a core feature of WordPress.
+Placeholder textPlaceholder textThanksOops something went wrong, please try submitting again
+Subscribe now, your email is safe with us. Unsubscribe at any time.
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+The **Next** section is for recent drafts of posts. Once you start creating posts and if they’re saved as drafts, the five most recent drafts you’ve started be visible here.
+
+The last two sections are the **WordPress Blog** and other **WordPress News**. These are Updates from the official WordPress project and the [WordPress Planet](http://planet.wordpress.org/) feed.
+
+If you’d like to customize what sections you see from the WordPress dashboard, visit the**Screen Options** tab on the top right side of your screen. Click the arrow to expand this section, and you’ll see checkboxes for each of the sections usually included in the WordPress Dashboard. To remove any of the sections, just unclick the checkbox beside the section you’d like to hide. You can also choose the number of columns for the screen layout, too.
+
+If we return to the Dashboard **Home**, you can also expand each of the sections by clicking the arrow to the right. You can also drag and drop the boxes to change the order.
+
+In addition to the WordPress Dashboard Home screen, the other major component of the WordPress Dashboard is the**left-hand navigation menu**. This navigation menu provides links to all of the WordPress administration screens for posts, the media library, pages, comments, appearance options, plugins, users, tools, and settings. We’ll explore the rest of these menu items in more detail in the upcoming videos.
+
+If you ever find yourself needing help, just click the **Help** tab in the upper corner. Click the arrow to expand, and you’ll now see helpful information that walks through the overview, navigation, layout, and content of the WordPress Dashboard. From here, you can also find a link to the [WordPress.org Codex documentation on the Dashboard](https://wordpress.org/documentation/article/dashboard-screen/) and to the support forums.
+
+Back to What is WordPress?
 
 ---
 

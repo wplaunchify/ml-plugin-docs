@@ -10,29 +10,19 @@
 
 Kadence Conversion items can be sized in a variety of ways dependent on your marketing goals and the needs of your site visitors.
 
-## Popups
+### Popups
 
-For Popups, you can set the **Height** to:  Auto, Set Minimum Height, or Full Screen Height.
+For popups, you can set an auto height. Then, set the maximum width. The maximum width can be set based on the type of device: desktop, tablet, or mobile device.
 
-When **Auto** is selected, you can also set a **Maximum Width** for desktop, tablet, and/or mobile.
+If you set the minimum height, you will also need to set the inner vertical alignment for your popup and the maximum width, also set by the type of device: desktop, tablet, or mobile device.
 
-When **Set Minimum Height** is selected, you can set the **Minimum Height** and unit (px, em, rem, vh) for desktop, tablet, and/or mobile.
+If you do not want your conversion item to be shown on smaller devices, you can set that under Target Device Settings.
 
-When **Full Screen Height** is selected, you can set the **Inner Vertical Alignment** (top, middle, bottom) as well as the **Maximum Width** (px or vw) for desktop, tablet, and/or mobile.![Kadence Conversions - Size Settings - Popup](https://www.liquidweb.com/wp-content/uploads/2021/12/popups-settings-size.png)
-## Slide-Ins
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/popups-settings-size.png)
 
-For Slide-Ins, you can set the **Height** to: Auto, or Set Minimum Height
+### Slide-ins and Banners
 
-**Inner Vertical Alignment** can be set to: top, middle, or bottom
-
-**Maximum Width** can be specified (px or vw) for desktop, tablet, and/or mobile.![Kadence Conversions - Size Settings - Slide-in](https://res.cloudinary.com/lwcom/images/w_558,h_540,c_scale/f_auto,q_auto/v1779385413/prod/Screenshot-2026-05-21-at-12.43.15-PM/Screenshot-2026-05-21-at-12.43.15-PM.png?_i=AA)
-## Banners
-
-For Banners, you can set the **Height** to: Auto, or Set Minimum Height
-
-**Inner Vertical Alignment** can be set to: top, middle, or bottom
-
-**Inner Content Max Width** can be specified (px or vw) for desktop, tablet, and/or mobile.![Kadence Conversions - Size Settings - Banners](https://res.cloudinary.com/lwcom/images/w_558,h_542,c_scale/f_auto,q_auto/v1779385631/prod/Screenshot-2026-05-21-at-12.46.54-PM/Screenshot-2026-05-21-at-12.46.54-PM.png?_i=AA)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+For slide-ins and banners, let the height of the banner or slide-in be set automatically, or you can manually set the minimum desired height.
 
 ---
 

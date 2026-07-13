@@ -8,18 +8,27 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-brands/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-brands/)
 
-When managing a WooCommerce store with multiple suppliers, you may want to group and showcase products by brand. **Kadence Shop Kit** includes a **Product Brands** feature that allows you to display branded products and create dedicated **Brand** **Archive** **Pages** for customers to explore.
+When managing a WooCommerce store with multiple suppliers, you may want to group and showcase products by brand. **Kadence Shop Kit** (formerly *WooExtras*) includes a **Product Brands** feature that allows you to display branded products and create dedicated **Brand** **Archive** **Pages** for customers to explore.
 
-![Product Brand Text](https://res.cloudinary.com/lwcom/images/w_778,h_474,c_scale/f_auto,q_auto/v1780351676/prod/Product-Brands-Text/Product-Brands-Text.jpg?_i=AA)![Product Brand Image](https://res.cloudinary.com/lwcom/images/w_842,h_514,c_scale/f_auto,q_auto/v1780351683/prod/Product-Brand-Logo/Product-Brand-Logo.jpg?_i=AA)![Brands Archive](https://res.cloudinary.com/lwcom/images/w_1024,h_476,c_scale/f_auto,q_auto/v1780351670/prod/Brands-Archive/Brands-Archive.jpg?_i=AA)
-## Getting Started
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Product-Brands-Text.jpg)
 
-To get started with brands in Kadence Shop Kit, first make sure the [Kadence Shop Kit plugin](https://www.liquidweb.com/help-docs/software/kadence/shop-kit/install-activate-kadence-shop-kit/) is installed and active. Once installed and activated, navigate to **Kadence Shop Kit -> Product Brands**page.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Product-Brand-Logo.jpg)
 
-Note*WooCommerce introduced its own built-in Brands taxonomy* in **WooCommerce 9.4 (October 21, 2024)**.
+![Brands Archive](https://docs.nexcess.com/wp-content/uploads/2026/06/Brands-Archive.jpg)
 
-The Kadence Shop Kit **Product Brands** feature is a **separate and independent taxonomy**. By default, you’ll see our brand’s taxonomy name as “**Product Brands**“, while WooCommerce’s is named “**Brands**“.
+Getting Started
 
-To avoid confusion, it’s best to choose one system for managing brands in your store.![Activate Shop Kit Product Brands](https://res.cloudinary.com/lwcom/images/w_1024,h_557,c_scale/f_auto,q_auto/v1780609558/prod/Kadence-Shop-Kit-‹-Kids-activites-—-WordPress-2025-07-11-at-2.29.51-PM/Kadence-Shop-Kit-‹-Kids-activites-—-WordPress-2025-07-11-at-2.29.51-PM.jpg?_i=AA)In your Kadence Shop Kit settings, you can activate the product brand options and set up the options for your custom brands.
+To get started with brands in Kadence Shop Kit, first make sure the [Kadence Shop Kit plugin is installed and active](https://docs.nexcess.com/software/kadence/install-activate-kadence-shop-kit/). Once installed and activated, navigate to **Kadence Shop Kit -> Product Brands**page.
+
+**Note:** *WooCommerce introduced its own built-in Brands taxonomy* in **WooCommerce 9.4 (October 21, 2024)**.
+
+The Kadence Shop Kit **Product Brands** feature is a **separate and independent taxonomy**. By default, you’ll see our brand’s taxonomy name as “Product Brands“, while WooCommerce’s is named “Brands“.
+
+To avoid confusion, it’s best to choose one system for managing brands in your store.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Shop-Kit-‹-Kids-activites-—-WordPress-2025-07-11-at-2.29.51-PM.jpg)
+
+In your Kadence Shop Kit settings, you can activate the product brand options and set up the options for your custom brands.
 
 **Enable Product Brands Options:** Toggle this on to enable Product Brands.
 
@@ -32,7 +41,11 @@ To avoid confusion, it’s best to choose one system for managing brands in your
 /product-brands/
 ```
 
-: You can customize this as needed.![Shop Kit Brands Options](https://res.cloudinary.com/lwcom/images/w_1024,h_791,c_scale/f_auto,q_auto/v1780609949/prod/Kadence-Shop-Kit-‹-Kids-activites-—-WordPress-2025-07-11-at-2.06.08-PM/Kadence-Shop-Kit-‹-Kids-activites-—-WordPress-2025-07-11-at-2.06.08-PM.jpg?_i=AA)**Single Product Page Output:** Set the output where the brand’s image or text will show on the single product page. 
+: You can customize this as needed.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Shop-Kit-‹-Kids-activites-—-WordPress-2025-07-11-at-2.06.08-PM.jpg)
+
+**Single Product Page Output:** Set the output where the brand’s image or text will show on the single product page. 
 *Available options include:*
 
 - Above Title,
@@ -48,9 +61,17 @@ To avoid confusion, it’s best to choose one system for managing brands in your
 
 **Enable to Hard Crop Image:** If enabled, you can force a specific height for a hard crop.
 
-**Link Image to Brand Page:** Links the Product Brand Image to the Product Brand Archive.![Shop Kit Brands Single Output Settings](https://res.cloudinary.com/lwcom/images/w_1024,h_894,c_scale/f_auto,q_auto/v1780609997/prod/Brands-Single-output-settings-1/Brands-Single-output-settings-1.jpg?_i=AA)Depending on your settings, the product brand should appear on your single product like this (for this example, the brand is the Kadence Logo):
+**Link Image to Brand Page:** Links the Product Brand Image to the Product Brand Archive.
 
-![Shop Kit Brands front-end](https://res.cloudinary.com/lwcom/images/w_1024,h_529,c_scale/f_auto,q_auto/v1780610067/prod/Screenshot-2025-07-11-at-3.07.54-PM/Screenshot-2025-07-11-at-3.07.54-PM.png?_i=AA)ImportantAfter enabling and configuring Product Brands, you should go to **Settings → Permalinks** and click **Save Changes** to refresh your permalinks.The next step is to configure the **product** **brand** **archive** **settings** for your store.
+![Brands-Single-output-settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Brands-Single-output-settings.jpg)
+
+Depending on your settings, the product brand should appear on your single product like this (for this example, the brand is the Kadence Logo):
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-07-11-at-3.07.54-PM.png)
+
+**Important:** After enabling and configuring Product Brands, you should go to **Settings > Permalinks** and click **Save Changes** to refresh your permalinks.
+
+The next step is to configure the **product** **brand** **archive** **settings** for your store.
 
 **Archive Page Output:** Set the output where the brand’s image or text will show on archive pages. *Available options include:*
 
@@ -67,15 +88,23 @@ To avoid confusion, it’s best to choose one system for managing brands in your
 
 **Enable to Hard Crop Image:**If enabled, you can force a specific height for a hard crop.
 
-**Link Image to Brand Page:** Links the Product Brand Image to the Product Brand Archive.![Shop Kit Brands Archive Settings](https://res.cloudinary.com/lwcom/images/w_1024,h_961,c_scale/f_auto,q_auto/v1780610135/prod/Screenshot-2025-07-11-at-3.13.00-PM/Screenshot-2025-07-11-at-3.13.00-PM.png?_i=AA)Setting the brand logo to appear in your archive will add the logo or text to products in your archive, differentiating them from your other products:
+**Link Image to Brand Page:** Links the Product Brand Image to the Product Brand Archive.
 
-![Shop Kit Archive Brands front-end](https://res.cloudinary.com/lwcom/images/w_1024,h_530,c_scale/f_auto,q_auto/v1780610192/prod/Screenshot-2025-07-11-at-3.14.20-PM/Screenshot-2025-07-11-at-3.14.20-PM.png?_i=AA)**Important:** After enabling and configuring Product Brands, you should go to **Settings > Permalinks** and click **Save Changes** to refresh your permalinks.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-07-11-at-3.13.00-PM.png)
 
-## Creating and Using Product Brands
+Setting the brand logo to appear in your archive will add the logo or text to products in your archive, differentiating them from your other products:
 
-Once you’ve configured your overall brand settings, you can begin setting up your individual product brands. To do this, navigate to **Products → Product Brands** in your WordPress dashboard.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-07-11-at-3.14.20-PM.png)
 
-![Products → Product Brands menu item](https://res.cloudinary.com/lwcom/images/w_546,h_563,c_scale/f_auto,q_auto/v1780610402/prod/Screenshot-2025-07-11-at-3.23.27-PM/Screenshot-2025-07-11-at-3.23.27-PM.png?_i=AA)The **Product Brands** feature functions like any other taxonomy in WooCommerce, such as **Product Categories**.
+**Important:** After enabling and configuring Product Brands, you should go to **Settings > Permalinks** and click **Save Changes** to refresh your permalinks.
+
+Creating and Using Product Brands
+
+Once you’ve configured your overall brand settings, you can begin setting up your individual product brands. To do this, navigate to **Products > Product Brands** in your WordPress dashboard.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-07-11-at-3.23.27-PM.png)
+
+The **Product Brands** feature functions like any other taxonomy in WooCommerce, such as **Product Categories**.
 
 When creating or editing a brand, you can:
 
@@ -87,19 +116,25 @@ When creating or editing a brand, you can:
 
 Each brand automatically generates its own **Brand Archive Page**, which displays a loop of all products assigned to that brand.
 
-This makes it easy for customers to browse products by their favorite brands directly from your store.![Add New Product Brand](https://res.cloudinary.com/lwcom/images/w_825,h_1024,c_scale/f_auto,q_auto/v1780610479/prod/Product-Brands-‹-Kids-activites-—-WordPress-2025-07-11-at-3.28.39-PM/Product-Brands-‹-Kids-activites-—-WordPress-2025-07-11-at-3.28.39-PM.jpg?_i=AA)To assign a product brand to an individual product, edit the product, locate the **Product Brands** box in the sidebar, and select the appropriate brand or brands for that product.
+This makes it easy for customers to browse products by their favorite brands directly from your store.
 
-![Assign Product Brand](https://res.cloudinary.com/lwcom/images/w_429,h_383,c_scale/f_auto,q_auto/v1780610590/prod/AssignBrand-min-1/AssignBrand-min-1.gif?_i=AA)If you don’t see the product brand selection box, be sure that it is enabled at the top of the page under **Screen** **Options**.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Product-Brands-‹-Kids-activites-—-WordPress-2025-07-11-at-3.28.39-PM-825x1024-1.jpg)
+
+To assign a product brand to an individual product, edit the product, locate the **Product Brands** box in the sidebar, and select the appropriate brand or brands for that product.
+
+![Assign Product Brand](https://docs.nexcess.com/wp-content/uploads/2026/06/AssignBrand-min-1.gif)
+
+If you don’t see the product brand selection box, be sure that it is enabled at the top of the page under **Screen** **Options**.
 
 Once you have assigned all of your products to their brand, you should now be able to see them in the product brand archive.
 
-![](https://res.cloudinary.com/lwcom/images/w_1024,h_537,c_scale/f_auto,q_auto/v1780352659/prod/Zight-Recording-2025-07-11-at-03.29.57-PM/Zight-Recording-2025-07-11-at-03.29.57-PM.gif?_i=AA)You can view any of your Brand Archive Pages by navigating to **Products → Product Brands** in your WordPress dashboard. Hover over a brand name, then click **View** to open its Brand Archive Page.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Zight-Recording-2025-07-11-at-03.29.57-PM-1024x537-1.gif)
 
-## Product Brand Block
+You can view any of your Brand Archive Pages by navigating to **Products > Product Brands** in your WordPress dashboard. Hover over a brand name, then click **View** to open its Brand Archive Page.
 
-Kadence includes a **Product Brand Block** that allows you to display product brand information within **WooTemplates** and **Advanced** **Query Loop Cards**. [You can learn more about using this block here](https://www.liquidweb.com/help-docs/software/kadence/shop-kit/product-brand-block/).
+Product Brand Block
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+Kadence includes a **Product Brand Block** that allows you to display product brand information within **WooTemplates** and **Advanced** **Query Loop Cards**. [You can learn more about using this block here](https://docs.nexcess.com/software/kadence/product-brand-block/).
 
 ---
 

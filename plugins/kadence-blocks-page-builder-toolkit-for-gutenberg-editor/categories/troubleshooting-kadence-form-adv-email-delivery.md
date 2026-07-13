@@ -14,10 +14,13 @@ For more advanced email routing options, this guide also covers setting up WordP
 
 Let’s explore these steps in more detail.
 
-## Kadence Form (Adv) Email Submit Action
+Kadence Form (Adv) Email Submit Action
 
-First, check the **Submit Actions** parameters in the **Form (Adv) block** settings. The option, **Email**, should be selected, as shown in the following screenshot.![advanced form submit actions email](https://www.liquidweb.com/wp-content/uploads/2024/09/advanced-form-submit-actions-email.jpeg)
-## Kadence Form (Adv) Email Settings
+First, check the **Submit Actions** parameters in the **Form (Adv) block** settings. The option, **Email**, should be selected, as shown in the following screenshot.
+
+![advanced form submit actions email](https://docs.nexcess.com/wp-content/uploads/2026/06/advanced-form-submit-actions-email.jpeg)
+
+Kadence Form (Adv) Email Settings
 
 Next, review the Email Settings in the back end of the Form Block. Pay special attention to the “From” Email and “Reply-To” fields, as these are critical for successful email delivery.
 
@@ -30,15 +33,19 @@ If your form submission emails aren’t reaching the recipient’s inbox, they m
 - The “Email Subject” line is left blank.
 - The “Cc” or “Bcc” fields are used excessively, or multiple recipients are added.
 
-Email providers like Gmail and Outlook often reject messages with no subject line or content, and short, test messages can also appear suspicious and get filtered out as spam.![Kadence Form (Adv) Email Settings](https://www.liquidweb.com/wp-content/uploads/2024/09/Kadence-Form-Adv-Email-Settings-1.jpeg)
-## Ensuring Email Deliverability: Keep Addresses Consistent
+Email providers like Gmail and Outlook often reject messages with no subject line or content, and short, test messages can also appear suspicious and get filtered out as spam.
+
+![Kadence Form (Adv) Email Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Form-Adv-Email-Settings-1.jpeg)
+
+Ensuring Email Deliverability: Keep Addresses Consistent
 
 Using different domains in the “From” and “Reply-To” fields can negatively affect email deliverability. Many email providers flag such inconsistencies as potential spam or phishing attempts.
 
 To improve the chances of successful email delivery, it’s essential to maintain consistency between these fields. The simplest and most effective way to ensure your Kadence Form (Adv) block emails are delivered is to use the same address for both the “From” and “Reply-To” fields. Additionally, this address should match the default Administrative Email Address in WordPress’s General Settings. Consistency establishes trust and minimizes the risk of your emails being marked as spam.
 
-![Wordpress General Settings](https://www.liquidweb.com/wp-content/uploads/2024/09/Wordpress-General-Settings--1024x829.jpeg)
-### Setting Up WordPress to Send Legitimate Emails
+![Wordpress General Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Wordpress-General-Settings-1024x829-1.jpeg)
+
+Setting Up WordPress to Send Legitimate Emails
 
 By default, WordPress uses the 
 ```
@@ -54,7 +61,7 @@ mail()
 
 For security purposes, many email hosts view PHP-generated messages with suspicion. Emails sent through PHP scripts are more likely to be blocked by spam filters. To improve email deliverability, you must authenticate the domain used for sending these emails.
 
-## DKIM, SPF, and DMARC: Essential Email Authentication
+DKIM, SPF, and DMARC: Essential Email Authentication
 
 DKIM, SPF, and DMARC are essential DNS records that validate different aspects of an email’s authenticity:
 
@@ -66,7 +73,7 @@ Each domain sending or attributing emails through WordPress (or any other platfo
 
 DNS records should be set by qualified administrators. If you need help with DNS and email, ask your host provider.
 
-## Using SMTP for Better Email Deliverability
+Using SMTP for Better Email Deliverability
 
 A more reliable solution for improving WordPress email deliverability is setting it up to use **SMTP (Simple Mail Transfer Protocol)** instead of PHP.
 
@@ -74,8 +81,9 @@ Some managed WordPress hosting services offer built-in or third-party SMTP servi
 
 Switching to SMTP ensures that your emails are authenticated and more likely to be delivered successfully, avoiding the pitfalls of using PHP mail functions. If you need to set up your own SMTP, we generally recommend using the [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) plugin. The WP Mail SMTP plugin lets you easily connect to popular mailers and other SMTP providers.
 
-![WP Mail SMTP setup](https://www.liquidweb.com/wp-content/uploads/2024/09/WP-Mail-SMTP.jpeg)
-## Troubleshooting Email Delivery Issues
+![WP Mail SMTP setup](https://docs.nexcess.com/wp-content/uploads/2026/06/WP-Mail-SMTP.jpeg)
+
+Troubleshooting Email Delivery Issues
 
 If you’re having trouble with email delivery from the Kadence Form Block, there are several troubleshooting steps you can follow. While most issues are not directly related to Kadence itself, they can be resolved by examining and adjusting your WordPress and DNS settings.
 
@@ -83,12 +91,10 @@ If you’re having trouble with email delivery from the Kadence Form Block, ther
 2. **Verify Email Sending**: Confirm that your site is actually sending emails by using an [email logging plugin](https://wordpress.org/plugins/wp-mail-logging/). This helps you determine if emails are being generated and sent properly.
 3. **Review Kadence Form Block Settings**: If you’ve confirmed that your domain isn’t blacklisted and emails are being sent, check the Kadence Form Block settings. Specifically, look at the “Actions After Submit” parameters and ensure the “Email” option is enabled. Make sure that the “From Email” and “Reply-To” fields are correctly set. The “From” email address should match the domain of the website and be a valid email account using the same domain.
 4. **Ensure Address Consistency**: For better email deliverability, keep the “From” and “Reply-To” addresses consistent and use the default Administration Email Address from WordPress’s General Settings. Consistency helps build trust and reduces the likelihood of emails being flagged as spam.
-5. **Properly Configure Your DNS:** Create proper SPF, DKIM, and DMARC DNS records for your domain.  For assistance with this, check with your hosting provider.
+5. **Properly Configure Your DNS:**  Create proper SPF, DKIM, and DMARC DNS records for your domain.  For assistance with this, check with your hosting provider.
 6. **Advanced Email Routing Solutions**: If you need a more robust email routing solution, consider adding an SMTP plugin such as [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/).  Sending properly authenticated email via SMTP can vastly improve deliverability.
 
 By following these steps, you can address most email delivery issues and ensure that your Kadence Form emails are sent and received as intended.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

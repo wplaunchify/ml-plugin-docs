@@ -19,7 +19,7 @@ Each option must be returned as an array with two keys:
 
 Want to see this functionality built-in without the need of custom code? Then, consider [voting on this Feature Request](https://feedback.kadencewp.com/p/adv-form-select-dynamic-options) to show your support. We often implement popular requests into our products.
 
-## Example 1: Static Options (Array)
+Example 1: Static Options (Array)
 
 Use this approach when you want a predefined set of options, such as countries, departments, or product categories.
 
@@ -51,13 +51,13 @@ function get_dynamic_options(): array {
 }
 ```
 
-### Usage
+**Usage**
 
 1. In your **Form (Adv) block**, select the field.
 2. Go to **Advanced > Extra Settings > Field Name**.
-3. Enter **my-dynamic-field** ([view screenshot](https://www.liquidweb.com/wp-content/uploads/2025/09/Edit-Page-Test1234-‹-Bonn-Joel-—-WordPress-2025-09-25-at-3.55.08-PM-373x1024.jpg))
+3. Enter **my-dynamic-field** ([view screenshot](https://docs.nexcess.com/wp-content/uploads/2026/06/Edit-Page-Test1234-‹-Bonn-Joel-—-WordPress-2025-09-25-at-3.55.08-PM-373x1024-1.jpg))
 
-## Example 2: Dynamic Options from Posts (Using WP_Query)
+Example 2: Dynamic Options from Posts (Using WP_Query)
 
 ```
 add_filter('render_block_data', function ($parsed_block, $block, $parent_block ) {
@@ -103,8 +103,6 @@ function get_dynamic_post_options(): array {
 3. The field will now display the latest 10 posts as selectable options.
 
 With these approaches, you can programmatically populate **Select**, **Checkbox**, and **Radio** fields in Form (Advanced), pulling from either static data or dynamic WordPress content.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

@@ -16,7 +16,7 @@ Did You Know?: The connection that lets WordPress save content is called the RES
 
 The most common fixes happen on the hosting company’s side. A site manager should plan to contact their hosting provider as part of this process.
 
-## Step-by-Step Troubleshooting
+Step-by-Step Troubleshooting
 
 Here are the most common things to check to solve this error.
 
@@ -45,7 +45,7 @@ Sometimes a plugin or theme can interfere with how WordPress communicates with t
 - Next, deactivate all plugins on the site.
 - Try updating the page or post again.
 - If the update now works, reactivate the plugins one by one, testing the update after each one, until the problem plugin is found.
-- *Refer to this guide for a detailed process:* Temporarily Deactivating Plugins. [Temporarily Deactivating Plugins](https://www.liquidweb.com/docs/kadence-theme/temporarily-deactivating-plugins/)
+- *Refer to this guide for a detailed process:* Temporarily Deactivating Plugins. [Temporarily Deactivating Plugins](https://docs.nexcess.com/software/kadence/temporarily-deactivate-plugins/)
 
 ## 4. Clear Caching and Security Layers
 
@@ -53,7 +53,7 @@ Caching layers sometimes prevent WordPress from seeing the most up-to-date infor
 
 - Temporarily disable any caching or firewall plugins on the site.
 - If using an outside service like Cloudflare, pause it to test the site.
-- It may also help to [clear the browser’s cache and data](https://www.liquidweb.com/docs/kadence-theme/clearing-your-website-cache/).
+- It may also help to [clear the browser’s cache and data](https://docs.nexcess.com/software/kadence/clear-website-cache/).
 
 ## 5. Confirm Secure SSL/HTTPS Settings
 
@@ -66,19 +66,17 @@ https://
 
  (the secure version).
 - The SSL certificate (the thing that makes the site secure) must be valid and up to date. The hosting provider can confirm this.
-- If SSL/HTTPS issues appear, you may also see **Mixed Content Errors**. In that case, [refer to this guide](https://www.liquidweb.com/docs/kadence-theme/fixing-mixed-content-errors-in-wordpress/).
+- If SSL/HTTPS issues appear, you may also see **Mixed Content Errors**. In that case, [refer to this guide](https://docs.nexcess.com/software/kadence/fix-mixed-content-errors/).
 
 ## Related Resources
 
-- [Temporarily Deactivating Plugins](https://www.liquidweb.com/docs/kadence-theme/temporarily-deactivating-plugins/)
-- [Clearing Your Website Cache](https://www.liquidweb.com/docs/kadence-theme/clearing-your-website-cache/).
-- [Clearing Your Browser Data](https://www.liquidweb.com/docs/kadence-general/clearing-your-browser-data/)
+- [Temporarily Deactivating Plugins](https://docs.nexcess.com/software/kadence/temporarily-deactivate-plugins/)
+- [Clearing Your Website Cache](https://docs.nexcess.com/software/kadence/clear-website-cache/).
+- [Clearing Your Browser Data](https://www.kadencewp.com/help-center/docs/kadence-general/clearing-your-browser-data/)
 
 ## Additional Support
 
 If the error persists after following these steps, reach out to us by submitting a *free or* **premium support ticket**.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

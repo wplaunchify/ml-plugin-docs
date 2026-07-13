@@ -12,10 +12,10 @@ To set a gradient border using CSS in WordPress, you can employ the **border-ima
 
 **Helpful resources:**
 
-- [Learn how to add Custom CSS Classes and/or Anchor IDs to Kadence Blocks.](https://www.liquidweb.com/docs/kadence-blocks/how-to-add-custom-css-classes-and-html-ids-to-kadence-blocks/)
-- [Learn about Applying Block-Level Custom CSS in Kadence Blocks](https://www.liquidweb.com/docs/kadence-blocks/applying-block-level-custom-css-in-kadence-blocks/).
+- [Learn how to add Custom CSS Classes and/or Anchor IDs to Kadence Blocks.](https://docs.nexcess.com/software/kadence/add-classes-and-ids-to-blocks/)
+- [Learn about Applying Block-Level Custom CSS in Kadence Blocks](https://docs.nexcess.com/software/kadence/blocks/block-level-custom-css/).
 
-## Using the border-image property (Simpler, but no border-radius):
+Using the border-image property (*Simpler, but no border-radius*):
 
 This approach is quick to set up and creates a clean gradient border. However, it does not support rounded corners (
 ```
@@ -24,7 +24,8 @@ border-radius
 
 ).
 
-![](https://res.cloudinary.com/lwcom/images/w_1023,h_165,c_scale/f_auto,q_auto/v1780351799/prod/Gradient-rectangle-with-text/Gradient-rectangle-with-text.png?_i=AA)
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Gradient-rectangle-with-text-1024x165-1.png)
+
 ```
 .your-element-class {
   border-width: 20px; /* Adjust border thickness */
@@ -80,7 +81,7 @@ border-image-slice
 
  value, indicating a single border region.
 
-## Using background-clip (Compatible with border-radius):
+Using background-clip (**Compatible with border-radius**):
 
 This method provides more flexibility. It allows you to use rounded corners (
 ```
@@ -89,7 +90,8 @@ border-radius
 
 ) while keeping the gradient border effect.
 
-![](https://res.cloudinary.com/lwcom/images/w_1022,h_156,c_scale/f_auto,q_auto/v1780351792/prod/Background-Clip-Graphic/Background-Clip-Graphic.png?_i=AA)
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Background-Clip-Graphic-1024x156-1.png)
+
 ```
 .your-element-class {
   background: linear-gradient(white, white) padding-box,
@@ -129,8 +131,6 @@ border
 ```
 
  to a transparent solid border with the desired thickness.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

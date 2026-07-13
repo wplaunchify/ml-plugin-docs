@@ -10,7 +10,7 @@
 
 By default, the Kadence Theme post navigation shows only the post titles with arrows. With this code snippet, you can enhance it by displaying the featured image (thumbnail) of the next and previous posts.
 
-## PHP Snippet
+PHP Snippet
 
 ```
 add_filter( 'kadence_post_navigation_args', function( $args ) {
@@ -50,7 +50,7 @@ add_filter( 'next_post_link', function( $output, $format, $link, $post, $adjacen
 
 Add the PHP code snippets using a plugin. Refer to our guide here: **How to add a custom filter or function with Code Snippets**
 
-## CSS Styling
+CSS Styling
 
 Add this custom CSS in **Customizer > Additional CSS** or your child theme stylesheet:
 
@@ -70,7 +70,9 @@ Add this custom CSS in **Customizer > Additional CSS** or your child theme style
 
 This will display the post thumbnail alongside the **Next** and **Previous** navigation arrows at the bottom of each single post.
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+Example:
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-1024x231-1.png)
 
 ---
 

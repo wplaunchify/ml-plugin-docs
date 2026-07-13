@@ -12,7 +12,7 @@ To ensure you can see all of the settings available to your Kadence Conversion I
 
 Then click the “Conversion Item” list item. This will unfurl the settings in the right sidebar so that you can access the Kadence Conversion settings.
 
-![](https://www.liquidweb.com/wp-content/uploads/2021/12/list-view-conversion-settings.png)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/list-view-conversion-settings.png)
 
 ---
 

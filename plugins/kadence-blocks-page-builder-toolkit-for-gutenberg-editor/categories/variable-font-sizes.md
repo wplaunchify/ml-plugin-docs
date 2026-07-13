@@ -10,11 +10,13 @@
 
 With Kadence Blocks 3.0, Kadence Blocks moved many of our default size settings to use custom variables so you can set small, medium, and large sizes for standard element size settings and let us handle the rest.
 
-![](https://res.cloudinary.com/lwcom/images/w_1024,h_332,c_scale/f_auto,q_auto/v1776902093/prod/image_37381999204/image_37381999204.png?_i=AA)It is easy to still set your own custom sizes using pixels, or any other unit you want, in the font size block setting. However, sticking with the default variable options will help you keep consistency in your designs and limit the need for responsive overrides. Plus, your design is easier to manage in the long term. For those times when precise controls are required, Kadence Blocks puts that power in your hands as well.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-42.png)
+
+It is easy to still set your own custom sizes using pixels, or any other unit you want, in the font size block setting. However, sticking with the default variable options will help you keep consistency in your designs and limit the need for responsive overrides. Plus, your design is easier to manage in the long term. For those times when precise controls are required, Kadence Blocks puts that power in your hands as well.
 
 **Note:**Kadence Blocks uses its own fluid “clamp” font size system, which does not sync with the WordPress Core variable font sizes used in blocks like Paragraph and Heading. Adjusting Kadence font sizes will not affect the WordPress Core font size presets.
 
-## The default font size values
+The default font size values
 
 Here are the default font size values for each variable size:
 
@@ -24,9 +26,9 @@ Here are the default font size values for each variable size:
 
 If you’re interested in the technology behind CSS clamp, you can [read more about it here](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp).  Essentially, CSS Clamp establishes the high-end viewport size (for example, a desktop browser) and a low-end viewport size (for example, a mobile phone). And no matter how the site is loaded or how a user resizes their browser window, your site will flexibly change the sizes of these elements based on the detected browser window size.
 
-## How to set your own clamp values
+How to set your own clamp values
 
-We have a filter so users can set their font size variable values. [Add this PHP code snippet](https://www.liquidweb.com/docs/kadence-theme/how-to-add-a-custom-filter-or-function-with-code-snippets/) and edit the values appropriately:
+We have a filter so users can set their font size variable values. [Add this PHP code snippet](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/) and edit the values appropriately:
 
 ```
 /**
@@ -92,7 +94,7 @@ add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_style( 'wp-core-fluid-fonts' );
     wp_add_inline_style( 'wp-core-fluid-fonts', $css );
 });
-```Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+```
 
 ---
 

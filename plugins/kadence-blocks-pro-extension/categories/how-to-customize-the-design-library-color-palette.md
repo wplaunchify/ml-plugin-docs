@@ -16,7 +16,10 @@ The **Light Color** is defined by the ninth color,**var(–global-palette9)**
 The**Dark Color**is determined by the third color, **var(–global-palette3)**
 The **Highlight Color**is determined by the first color, **var(–global-palette1)**
 
-![colorsa-updated](https://www.liquidweb.com/wp-content/uploads/2023/04/colorsa-updated.jpeg)![Design Libary style palette updated](https://www.liquidweb.com/wp-content/uploads/2023/04/Design-Libary-style-palette-updated.jpeg)
+![colorsa-updated](https://docs.nexcess.com/wp-content/uploads/2026/06/colorsa-updated.jpeg)
+
+![Design Libary style palette updated](https://docs.nexcess.com/wp-content/uploads/2026/06/Design-Libary-style-palette-updated.jpeg)
+
 ### Other Theme Instructions
 
 If you use a different theme, you will not have a built-in way to pre-define these colors. However, you can use custom code to insert these values manually onto your website. You can use the Code Snippets plugin to add code snippets to your website. You can add this code to the functions.php file using a child theme.
@@ -40,8 +43,6 @@ function custom_global_colors_kadence( $global_colors ) {
 }
 add_filter( 'kadence_blocks_pattern_global_colors', 'custom_global_colors_kadence' );
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

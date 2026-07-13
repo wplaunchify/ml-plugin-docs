@@ -12,9 +12,9 @@ If you start building a Kadence Element and discover it doesn’t work quite the
 
 Doing so is simple. Click the “Element Type” and you will see an option to change to another element type.
 
-![switch between different elements types](https://www.liquidweb.com/wp-content/uploads/2022/04/image-3-501x1024.png)Make sure you review all of the various settings from Placement Settings, Display Settings, etc. to ensure that the new settings are set to your desired configuration.
+![switch between different elements types](https://docs.nexcess.com/wp-content/uploads/2026/06/image-3-501x1024-1.png)
 
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+Make sure you review all of the various settings from Placement Settings, Display Settings, etc. to ensure that the new settings are set to your desired configuration.
 
 ---
 

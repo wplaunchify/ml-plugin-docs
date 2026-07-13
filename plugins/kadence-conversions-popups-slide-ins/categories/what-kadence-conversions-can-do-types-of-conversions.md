@@ -16,19 +16,21 @@ Popups are attention grabbing elements that pop up in the foreground of a visual
 
 Kadence Conversions contains a number of starter popups to help you envision how a popup might work on your site. Feel free to take one of these starter popups and customize it for your own unique attention grabbing conversion.
 
-![Kadence Popup Starters Conversions](https://www.liquidweb.com/wp-content/uploads/2021/12/kadence-popup-starters.png)
+![Kadence Popup Starters Conversions](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-popup-starters.png)
+
 #### How Slide-ins Work
 
 A slide-in appears to come in from either left or right and is positioned either at the top or bottom of your visible, on-screen area, often called the viewport.
 
 Kadence Conversions contains a number of starter slide-ins to help you envision how a slide-in might work on your site. You can easily customize one of these starter slide-ins for your site.
 
-![Kadence Conversions Slide-in Starters](https://www.liquidweb.com/wp-content/uploads/2021/12/kadence-slide-in-starters.png)
+![Kadence Conversions Slide-in Starters](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-slide-in-starters.png)
+
 #### How Banners Work
 
 Banners can be positioned at either the top or bottom of your visible screen. Often used as either cookie notices, sales notices, or other attention-grabbing elements, they’re often used as unobstructing elements that inform users of something important while not obscuring content on the page.
 
-![Kadence Conversion Banner Starters ](https://www.liquidweb.com/wp-content/uploads/2021/12/kadence-banner-starters-1.png)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![Kadence Conversion Banner Starters ](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-banner-starters-1.png)
 
 ---
 

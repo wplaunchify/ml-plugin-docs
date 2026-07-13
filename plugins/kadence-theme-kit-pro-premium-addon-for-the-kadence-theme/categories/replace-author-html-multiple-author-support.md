@@ -25,7 +25,8 @@ The author link can be configured in two ways:
 Users → Profile → Contact Info → Website
 ```
 
-).- If the **Website** field in the user’s profile is **not set**, the author link will automatically redirect to the **author archive page** by default.
+).
+- If the **Website** field in the user’s profile is **not set**, the author link will automatically redirect to the **author archive page** by default.
 
 If you notice that the author link redirects to the **homepage** instead of the expected author archive or website:
 
@@ -34,7 +35,7 @@ If you notice that the author link redirects to the **homepage** instead of the 
 3. If you prefer the author link to go to the **author archive page**, leave this field **empty**.
 4. Save changes and test again.
 
-![](https://www.liquidweb.com/wp-content/uploads/2025/10/Profile-‹-teejay-—-WordPress-2025-10-24-at-11.51.10-AM-1024x389.jpg)Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Profile-‹-teejay-—-WordPress-2025-10-24-at-11.51.10-AM-1024x389-1.jpg)
 
 ---
 

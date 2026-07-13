@@ -12,13 +12,11 @@ By default, the transparent header is not applied to the 404 page. This is becau
 
 However, for more advanced setups, you can create a custom template for the 404 page. This allows you to design the layout in a way that accommodates the transparent header more effectively.
 
-If you prefer to apply the transparent header directly to the default 404 page, you can use this [code snippet](https://www.liquidweb.com/docs/kadence-theme/how-to-add-a-custom-filter-or-function-with-code-snippets/) to enable it:
+If you prefer to apply the transparent header directly to the default 404 page, you can use this [code snippet](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/) to enable it:
 
 ```
 add_filter( 'kadence_post_layout', function( $value ) {    if ( is_404() ) {        $value['transparent'] = 'enable';    }    return $value;});
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

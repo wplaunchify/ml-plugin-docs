@@ -8,11 +8,13 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/showing-events-using-the-kadence-post-grid-carousel-block/](https://www.kadencewp.com/help-center/docs/kadence-blocks/showing-events-using-the-kadence-post-grid-carousel-block/)
 
-The Kadence [Post Grid/Carousel block](https://www.liquidweb.com/docs/kadence-blocks/configure-a-blog-list-with-post-grid-carousel-block/) has filters and hooks that allow you to customize the output of the block. In this guide, we’ll create a carousel showing **upcoming** **events** that are sorted by date and also customize the block output to show the event date and time. This example uses [The Events Calendar](https://www.liquidweb.com/software/the-events-calendar/) plugin.
+The Kadence [Post Grid/Carousel block](https://docs.nexcess.com/software/kadence/post-grid-carousel-block/) has filters and hooks that allow you to customize the output of the block. In this guide, we’ll create a carousel showing **upcoming** **events** that are sorted by date and also customize the block output to show the event date and time. This example uses [The Events Calendar](https://theeventscalendar.com/) plugin.
 
-![Post Grid/Carousel showing upcoming events](https://www.liquidweb.com/wp-content/uploads/2025/06/Screenshot-2025-06-16-at-3.41.36 PM-1024x390.png)**Note:** If you’re not familiar with adding custom PHP snippets to your site, please see [this document](https://www.liquidweb.com/docs/kadence-theme/how-to-add-a-custom-filter-or-function-with-code-snippets/).
+![Post Grid/Carousel showing upcoming events](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-16-at-3.41.36-PM-1024x390-1.png)
 
-## Creating a Post Grid/Carousel for Events
+**Note:**  If you’re not familiar with adding custom PHP snippets to your site, please see [this document](https://docs.nexcess.com/software/kadence/blocks/add-custom-filter-or-function-with-code-snippets/).
+
+Creating a Post Grid/Carousel for Events
 
 Select your settings to show Events:
 
@@ -22,8 +24,13 @@ Select your settings to show Events:
 4. **Number of Items** – Select the number of events to display.
 5. **Offset Starting Post** – Leave at “0” to start with the most recent event.
 6. **Select Taxonomy** – Choose an event taxonomy or leave blank for all events.
-7. **Layout Settings** – Choose Grid, Carousel, or Masonry layout. Then, configure the relevant settings for further layout control.![Post Grid/Carousel settings](https://www.liquidweb.com/wp-content/uploads/2025/06/Screenshot-2025-06-16-at-3.49.18 PM-426x1024.png)![Post Grid/Carousel - Layout Settings](https://www.liquidweb.com/wp-content/uploads/2025/06/Screenshot-2025-06-16-at-3.59.18 PM.png)
-## Sort Events and Only Show Future Events
+7. **Layout Settings** – Choose Grid, Carousel, or Masonry layout. Then, configure the relevant settings for further layout control.
+
+![Post Grid/Carousel settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-16-at-3.49.18-PM-426x1024-1.png)
+
+![Post Grid/Carousel - Layout Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-16-at-3.59.18-PM.png)
+
+Sort Events and Only Show Future Events
 
 The following PHP snippet accomplishes two key functions. First, we’ll make sure we only show future events by comparing the event start date with today’s date. Second, we’ll order the events by start date in ascending order.
 
@@ -48,9 +55,9 @@ add_filter('kadence_blocks_pro_posts_grid_query_args', function( $args, $atts ){
 }, 10, 2 );
 ```
 
-## Adding an Event Date to Each Event
+Adding an Event Date to Each Event
 
-To ensure we only add dates to Post Grid/Carousel blocks that are showing events, we’ll add a class to the block.  In the block settings, click on the **Advanced** tab and scroll down to the **Advanced** section.  Under **Additional CSS class(es)**, add the class: **event-dates**
+To ensure we only add dates to Post Grid/Carousel blocks that are showing events, we’ll add a class to the block.  In the block settings, click on the **Advanced** tab and scroll down to the **Advanced** section.  Under **Additional CSS class(es)**, add the class:  **event-dates**
 
 Next, we’ll add the following PHP snippet. This snippet will check for the **event-dates** class and add the event date, if applicable. Setting the action priority to **25** will output the date immediately following the event title.
 
@@ -62,8 +69,6 @@ add_action('kadence_blocks_post_loop_header', function( $atts ) {
 	}
 }, 25 );
 ```
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 

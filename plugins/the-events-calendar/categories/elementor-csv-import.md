@@ -6,11 +6,11 @@
 
 ## Elementor Compatibility Handbook
 
-**Source:** [https://www.liquidweb.com/help-docs/software/events-calendar/elementor-csv-import/](https://www.liquidweb.com/help-docs/software/events-calendar/elementor-csv-import/)
+**Source:** [https://docs.nexcess.com/software/the-events-calendar/elementor-csv-import/](https://docs.nexcess.com/software/the-events-calendar/elementor-csv-import/)
 
 In this guide, we’ll discover how you can harness the power of Elementor to enhance your experience with The Events Calendar. Whether you’re looking to create stunning event pages, customize your calendar, or enhance your website’s design with event-related widgets, our products integrate with Elementor to offer endless possibilities for creativity and functionality.
 
-Starting from version 6.4.0, The Events Calendar introduces support for Elementor single event templates, providing native Elementor widgets for crafting your single event layouts. However, it’s important to note that while Elementor Free allows you to [create static templates](https://www.liquidweb.com/elementor-single-event-template/), Elementor Pro unlocks the full potential of [dynamic templates for your events](https://www.liquidweb.com/event-single-template-with-elementor-theme-builder/).
+Starting from version 6.4.0, The Events Calendar introduces support for Elementor single event templates, providing native Elementor widgets for crafting your single event layouts. However, it’s important to note that while Elementor Free allows you to [create static templates](https://docs.nexcess.com/software/the-events-calendar/customize-single-event/), Elementor Pro unlocks the full potential of [dynamic templates for your events](https://docs.nexcess.com/software/the-events-calendar/elementor-templates/).
 
 With our premium plugins, you’ll not only gain access to additional native Elementor widgets but also the capability to utilize our shortcodes with Elementor shortcode widget.
 
@@ -22,9 +22,11 @@ Explore the available features across the different setups.
 | Dynamic Templates |  | ✓ |  | ✓ |
 | Bulk Template Assignment |  | ✓ |  | ✓ |
 | TEC Pro / ET Plus widgets on Elementor pages |  |  | ✓ | ✓ |
-| TEC Pro / ET Plus shortcodes to use on Elementor pages |  |  | ✓ | ✓ |Let’s summarize the relevant knowledgebase articles.
+| TEC Pro / ET Plus shortcodes to use on Elementor pages |  |  | ✓ | ✓ |
 
-## Native Elementor widgets and shortcodes
+Let’s summarize the relevant knowledgebase articles.
+
+**Native Elementor widgets and shortcodes**
 
 **Elementor Widgets for Events Calendar Pro**
 
@@ -32,7 +34,7 @@ Explore the available features across the different setups.
 
 **Using Shortcodes with Elementor Page Builder**
 
-## Event Templates with Elementor
+**Event Templates with Elementor**
 
 **Elementor Single Event Template**: Create static single event template with Elementor free.
 
@@ -40,11 +42,9 @@ Explore the available features across the different setups.
 
 **Elementor Template for the Event Series Page**: Create a template for the Event Series page.
 
-## Using our plugins with the Hello Elementor theme
+**Using our plugins with the Hello Elementor theme**
 
 **Hello Elementor theme**: Learn how to combine The Events Calendar with Elementor’s native theme.
-
-Was this article helpful?Yes NoThank you for your input.Thank you for your feedback.
 
 ---
 
