@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T14:39:04.290Z",
+  "last_updated": "2026-07-13T14:40:34.263Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2841,7 +2841,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-      "last_scraped": "2026-07-13T14:27:13.944Z",
+      "last_scraped": "2026-07-13T14:40:32.503Z",
       "page_count": 362,
       "categories": [
         "accessibility",
