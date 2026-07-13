@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T14:37:36.268Z",
+  "last_updated": "2026-07-13T14:39:04.290Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -232,7 +232,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-07-12T23:16:49.168Z",
+      "last_scraped": "2026-07-12T23:16:49.166Z",
       "page_count": 78,
       "categories": [
         "uncategorized"
@@ -1227,7 +1227,7 @@
       "slug": "kadence-blocks",
       "name": "Kadence Blocks",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-07-13T14:21:29.366Z",
+      "last_scraped": "2026-07-13T14:21:29.248Z",
       "page_count": 153,
       "categories": [
         "access-the-design-library",
@@ -1389,7 +1389,7 @@
       "slug": "kadence-blocks-page-builder-toolkit-for-gutenberg-editor",
       "name": "Kadence Blocks — Page Builder Toolkit for Gutenberg Editor",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-07-13T14:32:39.392Z",
+      "last_scraped": "2026-07-13T14:32:39.313Z",
       "page_count": 153,
       "categories": [
         "access-the-design-library",
@@ -1551,7 +1551,7 @@
       "slug": "kadence-blocks-pro-extension",
       "name": "Kadence Blocks - PRO Extension",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-07-13T14:30:51.038Z",
+      "last_scraped": "2026-07-13T14:30:50.976Z",
       "page_count": 153,
       "categories": [
         "access-the-design-library",
@@ -1713,7 +1713,7 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/",
-      "last_scraped": "2026-07-13T14:21:56.842Z",
+      "last_scraped": "2026-07-13T14:21:56.830Z",
       "page_count": 16,
       "categories": [
         "container-styling-settings",
@@ -1738,7 +1738,7 @@
       "slug": "kadence-custom-fonts",
       "name": "Kadence Custom Fonts",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-07-13T14:19:35.906Z",
+      "last_scraped": "2026-07-13T14:39:02.989Z",
       "page_count": 120,
       "categories": [
         "add-a-login-and-account-menu",
@@ -1865,7 +1865,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-insights/",
-      "last_scraped": "2026-07-13T14:37:36.268Z",
+      "last_scraped": "2026-07-13T14:37:36.266Z",
       "page_count": 7,
       "categories": [
         "a-b-testing-101",
@@ -1881,7 +1881,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/",
-      "last_scraped": "2026-07-13T14:22:33.962Z",
+      "last_scraped": "2026-07-13T14:22:33.934Z",
       "page_count": 52,
       "categories": [
         "add-gutenberg-editor-to-woocommerce",
@@ -1940,7 +1940,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-      "last_scraped": "2026-07-13T14:22:55.962Z",
+      "last_scraped": "2026-07-13T14:22:55.945Z",
       "page_count": 31,
       "categories": [
         "captcha",
@@ -1978,7 +1978,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-07-13T14:28:54.313Z",
+      "last_scraped": "2026-07-13T14:28:54.249Z",
       "page_count": 120,
       "categories": [
         "add-a-login-and-account-menu",
@@ -2105,7 +2105,7 @@
       "slug": "kadence-theme-kit-pro-premium-addon-for-the-kadence-theme",
       "name": "Kadence Theme Kit Pro - Premium addon for the Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-07-13T14:34:00.704Z",
+      "last_scraped": "2026-07-13T14:34:00.638Z",
       "page_count": 120,
       "categories": [
         "add-a-login-and-account-menu",
@@ -2673,7 +2673,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-07-13T14:35:21.251Z",
+      "last_scraped": "2026-07-13T14:35:21.188Z",
       "page_count": 120,
       "categories": [
         "add-a-login-and-account-menu",
@@ -2841,7 +2841,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-      "last_scraped": "2026-07-13T14:27:14.125Z",
+      "last_scraped": "2026-07-13T14:27:13.944Z",
       "page_count": 362,
       "categories": [
         "accessibility",
@@ -4029,6 +4029,5 @@
         "webhooks-zapier"
       ]
     }
-  ],
-  "updated": "2026-07-13T14:36:41.140Z"
+  ]
 }
