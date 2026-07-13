@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-12T23:16:49.168Z",
+  "last_updated": "2026-07-13T14:37:36.268Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1865,7 +1865,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-insights/",
-      "last_scraped": "2026-07-13T14:17:18.754Z",
+      "last_scraped": "2026-07-13T14:37:36.268Z",
       "page_count": 7,
       "categories": [
         "a-b-testing-101",
