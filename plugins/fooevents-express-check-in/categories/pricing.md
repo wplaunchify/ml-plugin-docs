@@ -265,7 +265,7 @@ We don’t offer a free trial, but we do offer a 14-Day No Quibble Money-Back Gu
 ---
 
 Is FooEvents a once-off purchase?
-A subscription entitles you to 12 months of support and updates from the date of purchase. You may cancel your subscription at any time by logging into your FooEvents Account, however, you must have a valid subscription or purchase a new one in order to download the latest plugin updates and receive technical support.
+A FooEvents license entitles you to 12 months of support and updates from the date of purchase. You may cancel your subscription at any time by logging into your FooEvents Account, however, you must have a valid subscription or purchase a new one in order to download the latest plugin updates and receive technical support. Note: each domain requires its own license.
 
 ---
 
@@ -310,8 +310,8 @@ Yes, our support agents are distributed across different time zones and are read
 
 ---
 
-Can I use FooEvents for client websites?
-Yes, we have created different licensing options which include multiple and unlimited domains that web agencies and freelancers can purchase in order to implement FooEvents across multiple client sites.
+I’m a freelancer/agency. Can I use FooEvents for client websites?
+Yes, you can purchase a license on a client’s behalf and update the billing details later if needed. You can also purchase additional single domain licenses from the same FooEvents account for each new project, keeping everything organized and centralized. Note: each domain requires its own license.
 
 ---
 
