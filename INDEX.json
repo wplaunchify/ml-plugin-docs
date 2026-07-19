@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T07:43:14.743Z",
+  "last_updated": "2026-07-19T07:43:24.875Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1088,7 +1088,7 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-12T07:44:40.553Z",
+      "last_scraped": "2026-07-19T07:43:14.992Z",
       "page_count": 60,
       "categories": [
         "about-us",
@@ -3523,7 +3523,7 @@
       "slug": "wp-file-manager",
       "name": "WP File Manager",
       "documentation_url": "https://filemanagerpro.io/article/",
-      "last_scraped": "2026-07-19T07:43:14.743Z",
+      "last_scraped": "2026-07-19T07:43:14.739Z",
       "page_count": 39,
       "categories": [
         "aws-s3-integration",
