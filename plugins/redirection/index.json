@@ -2,7 +2,7 @@
   "plugin_slug": "redirection",
   "plugin_name": "Redirection",
   "documentation_url": "https://redirection.me/support/",
-  "last_scraped": "2026-07-12T15:22:11.859Z",
+  "last_scraped": "2026-07-19T15:21:02.547Z",
   "total_pages": 25,
   "failed_urls_count": 0,
   "sections": [
@@ -98,15 +98,15 @@
       ]
     },
     {
-      "title": "Import Export Redirects",
-      "slug": "import-export-redirects",
-      "url": "https://redirection.me/support/import-export-redirects/",
-      "file": "categories/import-export-redirects.md",
+      "title": "Import Export",
+      "slug": "import-export",
+      "url": "https://redirection.me/support/import-export/",
+      "file": "categories/import-export.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Import and Export",
-          "url": "https://redirection.me/support/import-export-redirects/"
+          "title": "Import and export",
+          "url": "https://redirection.me/support/import-export/"
         }
       ]
     },
