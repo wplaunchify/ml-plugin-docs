@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T05:05:42.948Z",
+  "last_updated": "2026-07-19T05:06:16.328Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -358,7 +358,7 @@
       "slug": "fluent-community-manager",
       "name": "Fluent Community Manager",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-07-19T05:05:42.948Z",
+      "last_scraped": "2026-07-19T05:05:42.944Z",
       "page_count": 80,
       "categories": [
         "administration",
@@ -986,7 +986,7 @@
       "slug": "fooevents-bookings",
       "name": "FooEvents Bookings",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-12T05:07:20.551Z",
+      "last_scraped": "2026-07-19T05:06:13.635Z",
       "page_count": 60,
       "categories": [
         "about-us",
@@ -2556,7 +2556,7 @@
       "slug": "prime-mover",
       "name": "Prime Mover",
       "documentation_url": "https://codexonics.com/prime_mover/",
-      "last_scraped": "2026-07-19T05:04:51.880Z",
+      "last_scraped": "2026-07-19T05:04:51.877Z",
       "page_count": 115,
       "categories": [
         "prime-mover"

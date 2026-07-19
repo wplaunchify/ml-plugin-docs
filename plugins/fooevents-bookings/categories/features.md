@@ -86,7 +86,7 @@ No more clumsy clipboards! Streamline your check-in process and ensure critical 
 
 Download Android App](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 
-23,477,438
+23,485,851
 
 Attendees Checked In and Counting
 
@@ -987,6 +987,8 @@ Customize ticket designs with your logo, colors, header images, event details, a
 [Features](#features)
 
 [FAQs](#faqs)
+
+[Ticket Themes](https://www.fooevents.com/products/ticket-themes/)
 
 ![tickets](https://www.fooevents.com/wp-content/uploads/2026/07/tickets.png)Tickets 2
 
