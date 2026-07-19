@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T20:21:17.304Z",
+  "last_updated": "2026-07-19T20:21:36.660Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1865,7 +1865,7 @@
       "slug": "kadence-insights-a-b-testing",
       "name": "Kadence Insights - A/B Testing",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-insights/",
-      "last_scraped": "2026-07-13T14:37:36.266Z",
+      "last_scraped": "2026-07-19T20:21:34.817Z",
       "page_count": 7,
       "categories": [
         "a-b-testing-101",
@@ -1940,7 +1940,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-      "last_scraped": "2026-07-19T20:21:17.304Z",
+      "last_scraped": "2026-07-19T20:21:17.300Z",
       "page_count": 31,
       "categories": [
         "captcha",
@@ -3483,7 +3483,7 @@
       "slug": "wp-all-import-acf-add-on-free",
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-19T20:18:11.503Z",
+      "last_scraped": "2026-07-19T20:18:11.497Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
