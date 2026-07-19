@@ -2,8 +2,8 @@
   "plugin_slug": "affiliatewp-custom-affiliate-slugs",
   "plugin_name": "AffiliateWP - Custom Affiliate Slugs",
   "documentation_url": "https://affiliatewp.com/docs/documentation/",
-  "last_scraped": "2026-07-12T16:20:16.722Z",
-  "total_pages": 220,
+  "last_scraped": "2026-07-19T16:19:49.624Z",
+  "total_pages": 221,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,12 @@
       "slug": "uncategorized",
       "url": "https://affiliatewp.com/docs/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 220,
+      "page_count": 221,
       "pages": [
+        {
+          "title": "Paying Affiliates Automatically",
+          "url": "https://affiliatewp.com/docs/automatic-payouts/"
+        },
         {
           "title": "Paying Affiliates Internationally with Stripe",
           "url": "https://affiliatewp.com/docs/international-affiliate-payouts/"
