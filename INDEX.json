@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T04:12:59.652Z",
+  "last_updated": "2026-07-19T04:13:44.220Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1122,7 +1122,7 @@
       "slug": "fooevents-multi-day",
       "name": "FooEvents Multi-Day",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-12T04:16:51.632Z",
+      "last_scraped": "2026-07-19T04:13:42.714Z",
       "page_count": 60,
       "categories": [
         "about-us",
@@ -3463,7 +3463,7 @@
       "slug": "wp-all-export-pro",
       "name": "WP All Export Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-19T04:12:59.652Z",
+      "last_scraped": "2026-07-19T04:12:59.647Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
