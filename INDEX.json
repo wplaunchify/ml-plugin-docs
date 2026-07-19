@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T10:31:10.423Z",
+  "last_updated": "2026-07-19T10:32:03.833Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3868,7 +3868,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-07-12T10:32:03.414Z",
+      "last_scraped": "2026-07-19T10:32:02.728Z",
       "page_count": 5,
       "categories": [
         "bulk-increase-woocommerce-prices-percentage",
