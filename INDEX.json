@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T22:17:53.061Z",
+  "last_updated": "2026-07-19T23:17:27.736Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -232,7 +232,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-07-12T23:16:49.166Z",
+      "last_scraped": "2026-07-19T23:17:27.736Z",
       "page_count": 78,
       "categories": [
         "uncategorized"
