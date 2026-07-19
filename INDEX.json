@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T20:21:36.660Z",
+  "last_updated": "2026-07-19T21:17:35.764Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2631,7 +2631,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-07-12T21:17:22.004Z",
+      "last_scraped": "2026-07-19T21:17:35.764Z",
       "page_count": 11,
       "categories": [
         "detective-mode",
