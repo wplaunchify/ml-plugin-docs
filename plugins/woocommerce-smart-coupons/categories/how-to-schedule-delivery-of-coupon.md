@@ -25,7 +25,7 @@ This documentation explains how you can allow your customers to delay or schedul
 
 ## Steps to schedule coupon
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 1. Go to **WooCommerce > Settings > Smart Coupons**.
 2. Look for the setting “**Allow schedule sending of coupons?**“. **Enable** it and **save** your changes. ![Smart Coupons schedule coupons settings](https://woocommerce.com/wp-content/uploads/2019/10/smart-coupons-schedule-coupons-settings.png?strip=all&w=704)

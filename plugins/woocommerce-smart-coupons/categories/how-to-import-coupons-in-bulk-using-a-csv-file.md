@@ -25,7 +25,7 @@ discount_type
 
 ## Steps to Import Coupons
 
-[↑ Volver al principio](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. Go to your WordPress Admin dashboard. Under **Marketing > Coupons**, click on the ‘**Import Coupons**‘ tab.
 2. Click the **‘Choose a CSV file’** button and upload your file.![](https://woocommerce.com/wp-content/uploads/2019/10/woocommerce-smart-coupons-import-page-one.png?strip=all&w=704)
@@ -35,7 +35,7 @@ discount_type
 
 ## How to Import Coupons with Categories
 
-[↑ Volver al principio](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Smart Coupons provides a feature using which you can set a category or multiple categories to a coupon or multiple coupons.
 
@@ -43,7 +43,7 @@ Categories help you identify a group of coupons based on certain requirements an
 
 ### Steps to import coupons with categories
 
-[↑ Volver al principio](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. Go to your WordPress Admin dashboard. Under **Marketing > Coupons**, click on the ‘**Import Coupons**‘ tab.
 2. Download the 

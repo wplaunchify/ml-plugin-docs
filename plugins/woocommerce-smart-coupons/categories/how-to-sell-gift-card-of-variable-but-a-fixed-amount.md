@@ -20,13 +20,13 @@ Smart Coupons does not introduce a dedicated product type for gift cards/gift ce
 
 ## Steps to create fixed gift card denominations
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To allow customers to purchase fixed gift card denominations of their choice in quantities, you need to first create a coupon and then a product.
 
 ### Creating a gift card coupon
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. Go to your **WordPress Admin panel > Marketing > Coupons > Add new coupon**.
 2. Click on **Generate coupon code** or enter your own code.
@@ -38,7 +38,7 @@ To allow customers to purchase fixed gift card denominations of their choice in 
 
 ### Creating a product
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. Add a new **Variable product** or edit an existing Variable product.
 2. Associate the above-created coupon with this product under **General > Coupons**.![](https://woocommerce.com/wp-content/uploads/2019/10/woocommerce-sc-variable-gift-card.png?strip=all&w=704)
@@ -54,7 +54,7 @@ That’s it.
 
 ## How can customers purchase gift card denominations?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 When a customer purchases any product variation, a coupon with the same price as the variation will be created and emailed to them.
 
@@ -72,7 +72,7 @@ The sender is also informed by an acknowledgment email.
 
 ## Other WooCommerce gift card types
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 With Smart Coupons, you can also create other gift card types:
 

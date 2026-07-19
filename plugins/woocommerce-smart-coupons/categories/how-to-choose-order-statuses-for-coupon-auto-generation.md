@@ -18,7 +18,7 @@ By default, Smart Coupons plugin auto-generates coupons when the **order status*
 
 ## How to set up
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ![](https://woocommerce.com/wp-content/uploads/2019/10/Smart-coupons-auto-generate-coupons-order-status.png?strip=all&w=704)
 

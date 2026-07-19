@@ -16,7 +16,7 @@ This doc explains how to create a flash sale coupon and display it on the websit
 
 ## Steps to create a flash sale coupon
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Go to your WordPress Admin panel. Click on Marketing > Coupons > Add coupon.
 2. Select the Discount type and the desired value of the flash sale discount.

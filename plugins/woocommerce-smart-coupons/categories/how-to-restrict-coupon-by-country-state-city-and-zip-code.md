@@ -20,7 +20,7 @@ Restricting coupons based on location can increase sales as you target your prom
 
 ## How to configure location-based coupons
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 1. Navigate to *Marketing > Coupons* in your store’s WP Admin dashboard.
 2. Create a coupon or edit an existing coupon.
@@ -37,7 +37,7 @@ That’s it. Now, your coupon will only be valid for customers whose addresses m
 
 ## What if the country, state, city, and ZIP code is not available?
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 By default, in the *Locations* field, you’ll be able to search and select a country. If you don’t find a country, state, city, and ZIP code, type the exact values and hit the ‘Enter’ button from the keyboard. It will be added to the **Locations** field and database as well.
 

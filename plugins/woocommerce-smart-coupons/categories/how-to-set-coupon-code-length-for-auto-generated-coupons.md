@@ -18,7 +18,7 @@ You can restrict the number of characters in the auto-generated coupon code. It 
 
 ## Steps to set coupon length
 
-[↑ Revenir en haut](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. Go to **WooCommerce > Settings > Smart Coupons**.
 2. Look for “**Number of characters in auto-generated coupon code**”.![](https://woocommerce.com/wp-content/uploads/2019/10/smart-coupons-coupon-code-length.png?strip=all&w=704)

@@ -27,7 +27,7 @@ There are three ways to print coupons/physical vouchers/gift cards/store credits
 
 ## 1. Smart Coupons Dashboard
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 ![](https://woocommerce.com/wp-content/uploads/2022/10/woocommerce-smart-coupons-print-admin.png?strip=all&w=704)
 
@@ -44,7 +44,7 @@ You can also apply the discount type filter to get all the gift certificate coup
 
 ## 2. My Account
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 ![](https://woocommerce.com/wp-content/uploads/2022/10/woocommerce-smart-coupons-print-my-account.png?strip=all&w=704)
 
@@ -55,7 +55,7 @@ This is for your customers who want to print all their valid coupons.
 
 ## 3. Email
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 ![](https://woocommerce.com/wp-content/uploads/2022/10/woocommerce-smart-coupons-email-print-single.png?strip=all&w=704)With single coupon
 
@@ -67,7 +67,7 @@ When you send a coupon via email using Smart Coupons (‘Bulk Generate’ or ‘
 
 ## Enable/Disable the ‘Print coupons’ option
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 ![](https://woocommerce.com/wp-content/uploads/2020/03/smart-coupons-print-settings.png?strip=all&w=704)
 
@@ -79,7 +79,7 @@ By default, the feature to print coupons will be enabled on your store. If you w
 
 ## Add coupon usage terms & conditions for printed coupons
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 This is an optional feature (by default disabled) provided by Smart Coupons. Here, the plugin automatically adds one empty page – ‘Smart Coupons Terms’.
 
