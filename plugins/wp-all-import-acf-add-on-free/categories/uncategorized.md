@@ -3723,9 +3723,9 @@ All code examples shared here can be added to your child's theme functions.php f
 
 ## Step 1: Define the New Class Required
 
-You first define the class to use for your new field type. The code requires that you have a class defined with the expected methods and properties. It must extend the Field class defined in wpai_acf_add_on\fields\Field.
+You first define the class to use for your new field type. The code requires that you have a class defined with the expected methods and properties. It must extend the Field class defined in pmai_acf_add_on\fields\Field.
 
-As a starting point, we used the existing FieldText class as a template (found in wpai-acf-add-on/src/fields/acf/FieldText.php).
+As a starting point, we used the existing FieldText class as a template (found in the ACF Import Add-On Free plugin in csv-xml-import-for-acf/src/fields/acf/FieldText.php).
 
 The class should have, at a minimum:
 
@@ -3736,14 +3736,14 @@ The class should have, at a minimum:
 Here's our new class to import the new 'soflyy_field' type.
 
 ```
-namespace wpai_acf_add_on\fields\acf;
+namespace wpai_acf_add_on_pro\fields\acf;
 
-use wpai_acf_add_on\ACFService;
-use wpai_acf_add_on\fields\Field;
+use pmai_acf_add_on\ACFService;
+use pmai_acf_add_on\fields\Field;
 
 /**
  * Class FieldSoflyyField
- * @package wpai_acf_add_on\fields\acf
+ * @package wpai_acf_add_on_pro\fields\acf
  */
 class FieldSoflyyField extends Field {
 
@@ -3793,11 +3793,11 @@ Use the filter '[wp_all_import_acf_field_class](https://www.wpallimport.com/docu
 function my_soflyy_field( $class , $fieldData, $post, $fieldName, $fieldParent ) {
 	if ($fieldData['type'] == 'soflyy_field'){
 		// Check if the class is not already defined
-        if (!class_exists('\wpai_acf_add_on\fields\acf\FieldSoflyyField')) {
+        if (!class_exists('\wpai_acf_add_on_pro\fields\acf\FieldSoflyyField')) {
             // Include the file containing the FieldSoflyyField class from our custom plugin
             require_once MY_CUSTOM_PLUGIN_ROOT_DIR . '/classes/FieldSoflyyField.php';
         }
-		return '\wpai_acf_add_on\fields\acf\FieldSoflyyField';
+		return '\wpai_acf_add_on_pro\fields\acf\FieldSoflyyField';
 	} else {
 		return $class;
 	}
@@ -3875,10 +3875,14 @@ Used for the footer that appears after the version-specific footer used above. O
 
 ### wp_all_import_acf_field_field
 
-Use the $fieldData['type'] value to determine if you should override the default.
-This is used to return your custom field object if you don't want to use the default class loading behavior from the hook [wp_all_import_acf_field_class](https://www.wpallimport.com/documentation/action-reference/#wp_all_import_acf_field_class) shown above.
+Use the $fieldData['type'] value to determine if you should override the default. This is used to return your custom field object if you don't want to use the default class loading behavior from the hook [wp_all_import_acf_field_class](https://www.wpallimport.com/documentation/action-reference/#wp_all_import_acf_field_class) shown above.
 
-Either approach (class or field) requires that you have a class defined with the expected methods and properties, which extends from the Field class defined in the ACF Import Add-On.
+Either approach (class or field) requires that you have a class defined with the expected methods and properties, which extends from the 
+```
+pmai_acf_add_on\fields\Field
+```
+
+ class defined in the ACF Import Add-On Free plugin.
 
 ## Related Docs
 
@@ -3897,6 +3901,12 @@ Shows you how to use PHP functions or custom PHP functions during import.
 You can configure filters in the **Manage Filtering Options** section, available in Step 2 when creating an import, or in the **Edit Template** page when editing an existing import. Filters allow you to define which records to import.
 
 WP All Import filters data using XPath. The visual filter designer lets you visually construct an XPath expression. In this article, we'll describe how to use this designer.
+
+## What is XPath?
+
+[Officially](https://www.w3.org/TR/1999/REC-xpath-19991116/), "XPath is a language for addressing parts of an XML document...". Simply put, XPath is a way to locate specific pieces of data inside your import file. Think of your data as a tree of labeled boxes: XPath provides directions to the exact box you want WP All Import to look at.
+
+When filtering an import, those directions tell WP All Import which records to include. For example, only products with a price above a certain amount. You usually won’t need to write XPath yourself, since the visual filter designer creates it for you.
 
 ## Step 1: Select an Import Element to Filter Import Data
 
@@ -4338,7 +4348,7 @@ This will let you input a URL to download the file from. This URL should point d
 
 You'll know it's working when you're prompted to download/save the file as soon as the URL is opened in a browser.
 
-If your file is protected by HTTP protection, you can follow this guide: [Password Protected Files](https://www.wpallimport.com/documentation/password-protected-files/). If you run into timeouts when downloading a file, see [File Download Time Limit](#file-download-time-limit) below.
+If your file is protected by HTTP protection, you can follow this guide: [Password Protected Files](https://www.wpallimport.com/documentation/password-protected-files/). If you run into timeouts when downloading a file, see [File Download Time Limit](#file-download-time-limit) below. If you need to pass custom headers, a bearer token or an auth token, see [examples using http_api_curl](https://www.wpallimport.com/documentation/code-snippets/#examples-using-http_api_curl).
 
 ### From FTP/SFTP
 
@@ -22437,6 +22447,7 @@ Here are the different ways to use PHP in WP All Export:
 - [Using Custom PHP Functions on Export Fields](#custom-php-functions)
 - [Using PHP functions in a Custom XML Feed](#php-in-custom-xml-feed)
 - [Using PHP Functions In a Google Merchant Center Export](#php-in-gmc)
+- [Store Code Snippets in WPCodeBox](#send-to-codebox)
 
 ## Use PHP to Process WordPress Data While it's Exported
 
@@ -22635,6 +22646,24 @@ This is used like so:
 ![WordPress Export with PHP Using Google Merchant Center](https://www.wpallimport.com/wp-content/uploads/2023/08/WordPress-Export-with-PHP-Using-Google-Merchant-Center-1024x616.jpg)
 
 You can apply the same logic to any other field found in the Google Merchant Center Product Feed.
+
+## Store Code Snippets in WPCodeBox
+
+WP All Export integrates seamlessly with [WPCodeBox](https://wpcodebox.com/) to save your code snippets instead of using the **Function Editor**.
+
+To use the WPCodeBox integration with WP All Export, navigate to **All Export › Settings**, locate the **Function Editor** and click on **Send to CodeBox**.
+
+![Send WP All Export Snippet to WPCodeBox](https://www.wpallimport.com/wp-content/uploads/2026/07/Send-WP-All-Export-Snippet-to-WPCodeBox-1024x398.png)
+
+The code found inside the **Function Editor** will be copied over to a new snippet in WPCodeBox and the **Function Editor**input area will be hidden. Instead, you will see a **Manage Functions in WPCodeBox** button.
+
+![Manage WP All Export Functions in WPCodeBox](https://www.wpallimport.com/wp-content/uploads/2026/07/Manage-WP-All-Export-Functions-in-WPCodeBox-1024x309.png)
+
+WPCodeBox will show the snippet with your functions / code, where you can make changes, add new code, etc. You would save changes via WPCodeBox itself.
+
+![WP All Export Function Editor from WPCodeBox](https://www.wpallimport.com/wp-content/uploads/2026/07/WP-All-Export-Function-Editor-from-WPCodeBox-1024x661.png)
+
+If you need to revert back to using the Function Editor from WP All Export, disable WPCodeBox, go to **All Export › Settings** and under**Function Editor**, there will be a button to **Revert to Functions File**.
 
 ## Related Docs
 
@@ -23183,6 +23212,7 @@ These snippets cover the more common cases where custom code is necessary during
 - [Import Multisite Users to Multiple Subsites](#import-multisite-users)
 - [Add Entry to the Import Log](#add-a-custom-message-to-the-history-log)
 - [Import Users With The Same Email](#import-users-with-the-same-email)
+- [Examples using http_api_curl with WP All Import](#examples-using-http_api_curl)
 
 **Theme and Plugin Integrations:**
 
@@ -23222,6 +23252,7 @@ These snippets cover the more common cases where custom code is necessary during
 - [Limit the Depth of Categories](#limit-depth-of-categories)
 - [Prevent Certain Records from Being Updated](#update-only-selected-records)
 - [How to Import JetEngine Relations](#how-to-import-jetengine-relations)
+- [Control cron jobs via code](#control-cron-jobs-via-code)
 
 **Data Manipulation for Exports:**
 
@@ -28622,6 +28653,222 @@ SEO Description:
 ```
 
 ![Export SEO Description Example](https://www.wpallimport.com/wp-content/uploads/2024/12/Export-SEO-Description-Example-986x1024.png)
+            ![](https://www.wpallimport.com/wp-content/plugins/dc-nav/views/../static/icons/doc-icon-developers.svg)
+            
+
+            [Examples using http_api_curl with WP All Import](#examples-using-http_api_curl)
+            You can use the http_api_curl hook to change timeout settings, headers, etc, when downloading a feed via URL with WP All Import.
+
+There are example snippets below that you can modify for your use case. This code needs to be saved in your child theme's functions.php file, or in a plugin like [WPCodeBox](https://wpcodebox.com/).
+
+You can learn more about http_api_curl in the WordPress documentation [here](https://developer.wordpress.org/reference/hooks/http_api_curl/).
+
+### Basic Authentication (base64_encode)
+
+```
+add_action( 'http_api_curl', 'example_set_curl_auth', 10, 3 );
+function example_set_curl_auth( $handle, $r, $url ) {
+	if ( strpos( $url, 'api.example.com/feed' ) !== false ) {
+		$user = 'yourusername';
+		$pass = 'yourpassword';
+		curl_setopt( $handle, CURLOPT_USERPWD, $user . ':' . $pass );
+		curl_setopt( $handle, CURLOPT_TIMEOUT, 180 );
+		curl_setopt( $handle, CURLOPT_CONNECTTIMEOUT, 180 );
+		
+	}
+}
+```
+
+### Change timeout settings and follow redirect for Google Sheets
+
+```
+add_action( 'http_api_curl', 'example_set_curl_for_gdocs', 10, 3 );
+function example_set_curl_for_gdocs( $handle, $r, $url ) {
+	if ( strpos( $url, 'docs.google.com' ) !== false ) {
+		curl_setopt( $handle, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36" );
+		curl_setopt( $handle, CURLOPT_FOLLOWLOCATION, true );
+		curl_setopt( $handle, CURLOPT_TIMEOUT, 180 );
+		curl_setopt( $handle, CURLOPT_CONNECTTIMEOUT, 180 );
+	}
+}
+```
+
+### Fetch token to use in API request
+
+```
+function get_feed_token() {
+	
+	$ch = curl_init();
+
+	curl_setopt($ch, CURLOPT_URL, 'https://api.example.com/api/auth/token/obtain/');
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"username\":\" yourusername \",\"password\":\"yourpassword\"}");
+
+	$headers = array();
+	$headers[] = 'Content-Type: application/json';
+	curl_setopt( $ch, CURLOPT_HTTPHEADER, $headers );
+
+	$result = curl_exec( $ch );
+	if ( curl_errno( $ch ) ) {
+		return false;
+	}
+	curl_close( $ch );
+	
+	$response = json_decode( $result, true );
+	
+	return empty( $response['access'] ) ? '' : $response['access'];
+}
+
+function my_curl_header( $handle, $r, $url ) {
+    if ( strpos( $url, 'myfeed.url.com' ) !== false ) {
+        $token = get_feed_token();
+		$headers = array();
+		$headers[] = 'Authorization: Bearer ' . $token;
+		$headers[] = 'Content-Type: application/json';
+		curl_setopt( $handle, CURLOPT_HTTPHEADER, $headers );    				
+	}
+}
+
+add_action( 'http_api_curl', 'my_curl_header', 10, 3 );
+```
+
+### Bearer Token
+
+```
+add_action( 'http_api_curl', 'my_curl_header', 10, 3 );
+
+function my_curl_header( $handle, $r, $url ) {
+    if (strpos($url, 'http://example.com') !== false) {
+        curl_setopt( $handle, CURLOPT_HTTPHEADER, array(
+            'authorization: mytoken',
+            'Content-Type: application/json'
+        ) );
+    }
+}
+```
+
+### Auth Token Example 1
+
+```
+add_action( 'http_api_curl', 'my_custom_modify_curl', 10, 3 );
+function my_custom_modify_curl( $ch, $r, $url ) {
+    if(strpos($url, 'TARGET API URL') !== false){
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: jwt '.my_get_key(), 'Content-Type' => 'application/json'));
+	}
+}
+
+function my_get_key(){
+	$response = wp_remote_post("TOKEN URL", array("body" => '{"email": "YOUR EMAIL","password":"YOUR PASSWORD"}'), 'headers' => array( 'Content-Type' => 'application/json') ));
+	
+	$data = json_decode($response['body'], true);
+	
+	return $data["token"];
+}
+```
+            ![](https://www.wpallimport.com/wp-content/plugins/dc-nav/views/../static/icons/doc-icon-developers.svg)
+            
+
+            [Control cron jobs via code](#control-cron-jobs-via-code)
+            This code allows controlling cron jobs via a code snippet. Here's what the code does:
+
+- It tracks the start time of each WP All Import job when it begins and clears that time when the job finishes.
+- It sets up an hourly cron job to review the status of all imports in the system.
+- The cron checks for imports that are stuck, running too long, or triggered but not started.
+- If problems are found, it sends an alert email (to **youremailaddresshere@test.com**) and logs the issue; if no problems are found, it logs that no stuck imports were detected.
+
+**Important:** For this to work, you need to start a first import run after adding the code to your 
+```
+functions.php
+```
+
+ so it can properly track the start time (
+```
+pmxi_before_xml_import
+```
+
+ ) and then clear the timestamp when it finishes (
+```
+pmxi_after_xml_import
+```
+
+ ). We can also adjust the threshold values and the destination email address.
+
+```
+// 1. Track import start time
+add_action('pmxi_before_xml_import', function($import_id) {
+	update_option("wpai_import_start_time_{$import_id}", current_time('timestamp'));
+}, 10, 1);
+
+// 2. Clear import start time on completion
+add_action('pmxi_after_xml_import', function($import_id) {
+	delete_option("wpai_import_start_time_{$import_id}");
+}, 10, 1);
+
+// 3. Schedule the recurring cron event
+add_action('wp_loaded', function() {
+	if (!wp_next_scheduled('check_wpai_import_status')) {
+		wp_schedule_event(time(), 'hourly', 'check_wpai_import_status'); // Change to 'two_hours' if using custom interval
+	}
+});
+
+// 4. Define what happens when the cron runs
+add_action('check_wpai_import_status', function() {
+	global $wpdb;
+
+	$stale_threshold_minutes = 150; // No activity update in 150+ min → alert
+	$max_execution_minutes = 180; // Running over 3 hours → alert
+
+	$now = current_time('timestamp');
+	$issues = [];
+
+	$imports = $wpdb->get_results("SELECT id, name, triggered, executing, last_activity FROM {$wpdb->prefix}pmxi_imports");
+
+	foreach ($imports as $import) {
+		$import_id = $import->id;
+		$last_activity = strtotime($import->last_activity);
+		$minutes_since_last_activity = max(0, ($now - $last_activity) / 60);
+
+		// Retrieve tracked start time
+		$start_time = get_option("wpai_import_start_time_{$import_id}", null);
+		$minutes_since_start = $start_time ? max(0, ($now - $start_time) / 60) : 0;
+
+		error_log("WP All Import check: {$import->name}, triggered={$import->triggered}, executing={$import->executing}, minutes_since_last_activity={$minutes_since_last_activity}, minutes_since_start={$minutes_since_start}");
+
+		// Case 1: executing, but stale activity
+		if ($import->executing && $minutes_since_last_activity > $stale_threshold_minutes) {
+			$issues[] = "Import \"{$import->name}\" is executing but last activity was {$minutes_since_last_activity} minutes ago.";
+		}
+
+		// Case 2: executing for unusually long time (based on tracked start time)
+		if ($import->executing && $start_time && $minutes_since_start > $max_execution_minutes) {
+			$issues[] = "Import \"{$import->name}\" has been executing for over {$minutes_since_start} minutes (possible overrun).";
+		}
+
+		// Case 3: triggered but never started executing (using last activity as fallback)
+		if ($import->triggered && !$import->executing && $minutes_since_last_activity > $stale_threshold_minutes) {
+			$issues[] = "Import \"{$import->name}\" was triggered but has not started executing for over {$minutes_since_last_activity} minutes.";
+		}
+	}
+
+	if (!empty($issues)) {
+		$mail_sent = wp_mail(
+			'youremailaddresshere@test.com',
+			'WP All Import Alert: Possible Import Issue Detected',
+			implode("\n", $issues),
+			['Content-Type: text/plain; charset=UTF-8']
+		);
+
+		if ($mail_sent) {
+			error_log('WP All Import alert email sent successfully.');
+		} else {
+			error_log('WP All Import alert email failed to send.');
+		}
+	} else {
+		error_log('WP All Import cron ran — no stuck imports detected.');
+	}
+});
+```
 
 ## Related Docs
 
@@ -30475,6 +30722,24 @@ This way, a product with a price of $55 will be imported with a price of $79.99.
 
 You can set the parameters however you wish or modify the code itself to do something else. Writing code in the **Function Editor** is easy, fast, and infinitely customizable. Once you click **Save Functions**, you can click the **Preview** button to see the results and then modify as needed.
 
+## Store Code Snippets in WPCodeBox
+
+WP All Import integrates with [WPCodeBox](https://wpcodebox.com/) to save your code snippets instead of using our **Function Editor**.
+
+To use the WPCodeBox integration, navigate to **All Import › Settings**, locate the **Function Editor** and click on **Send to CodeBox**.
+
+![Send WP All Import Snippet to WPCodeBox](https://www.wpallimport.com/wp-content/uploads/2026/07/Send-WP-All-Import-Snippet-to-WPCodeBox-1024x524.png)
+
+The code found inside the **Function Editor** will be copied over to a new snippet in WPCodeBox and the **Function Editor**input area will be replaced with a **Manage Functions in WPCodeBox** button.
+
+![Manage Functions in WPCodeBox](https://www.wpallimport.com/wp-content/uploads/2026/07/Manage-Functions-in-WPCodeBox-1024x376.png)
+
+In WPCodeBox, you'll see a snippet with your functions / code where you can add, edit or replace your code and then save it via the WPCodeBox interface:
+
+![Function Editor from WPCodeBox](https://www.wpallimport.com/wp-content/uploads/2026/07/Function-Editor-from-WPCodeBox-1024x596.png)
+
+If you need to revert back to using the Function Editor from WP All Import, disable WPCodeBox, go to **All Import › Settings** and under**Function Editor** you'll see a button to **Revert to Functions File**.
+
 ## Related Docs
 
 Code snippets and examples that are available for WP All Import.
@@ -30609,6 +30874,9 @@ Our Action Reference provides hooks that allow you to change how WP All Import a
 - [wpallimport_xml_row](#wpallimport_xml_row)
 - [is_xml_preprocess_enabled](#is_xml_preprocess_enabled)
 - [import_functions_file_path](#import_functions_file_path)
+- [wp_all_import_get_page_by_title](#wp_all_import_get_page_by_title)
+- [wp_all_import_image_mime_type](https://www.wpallimport.com/documentation/action-reference/#wp_all_import_image_mime_type)
+- [wp_all_import_parsed_product_attributes](#wp_all_import_parsed_product_attributes)
 
 **WP All Export**
 
@@ -30699,6 +30967,8 @@ Our Action Reference provides hooks that allow you to change how WP All Import a
 - [wp_all_export_add_before_node](#wp_all_export_add_before_node)
 - [wp_all_export_add_after_node](#wp_all_export_add_after_node)
 - [wpallexport_custom_types](#wpallexport_custom_types)
+- [wp_all_export_functions_file_path](#wp_all_export_functions_file_path)
+- [wp_all_export_meta_query_limit](#wp_all_export_meta_query_limit)
 
 ---
 
@@ -34591,6 +34861,8 @@ wp_all_import_default_options
             **Description**
 This filter allows overriding the URL provided with the **Download a file › From URL** option.
 
+You cannot call this hook from WP All Import's Function Editor. It must be saved in a plugin or in your theme.
+
 **Parameters**
 
 | Param | Type | Description |
@@ -36860,6 +37132,232 @@ This function can be used to cloak a link programmatically. It can be used simpl
 ```
 
 This function is enabled once you install the Link Cloaking Add-On.
+            ![](https://www.wpallimport.com/wp-content/plugins/dc-nav/views/../static/icons/doc-icon-developers.svg)
+            
+
+            [wp_all_import_get_page_by_title](#wp_all_import_get_page_by_title)
+            **Description**
+Retrieves a single post object by its exact title. This is a WP All Import helper that replaces WordPress' native 
+```
+get_page_by_title()
+```
+
+ function (deprecated in WordPress 6.2). It runs a 
+```
+get_posts()
+```
+
+ query matching the given title within the specified post type, across all post statuses, and returns the oldest matching post (ordered by date, then ID, ascending). Returns the 
+```
+WP_Post
+```
+
+ object if a match is found, or 
+```
+null
+```
+
+ if no post with that title exists. It's useful during an import for looking up an existing post, for example, to resolve a parent post, a related item, or to link records together by title.
+
+**Parameters**
+
+| Param | Type | Description |
+| --- | --- | --- |
+| $title | string | The exact post title to search for. |
+| $post_type | string | (Optional) The post type to search within. Defaults to 'page'. |
+
+**Usage**
+
+```
+function my_saved_post( $post_id, $xml_node, $is_update ) {
+    // Convert the current record to an array for easier use.
+    $record = json_decode( json_encode( (array) $xml_node ), 1 );
+    // Look up an existing "product" post by its title from the import file.
+    $parent = wp_all_import_get_page_by_title( $record['parent_title'], 'product' );
+    if ( $parent && ! is_wp_error( $parent ) ) {
+        // Set the imported post's parent to the matched product.
+        wp_update_post( array(
+            'ID'          => $post_id,
+            'post_parent' => $parent->ID,
+        ) );
+    }
+}
+add_action( 'pmxi_saved_post', 'my_saved_post', 10, 3 );
+```
+
+Search the docs for 
+```
+wp_all_import_get_page_by_title
+```
+
+ to see real-world code snippets that use this hook.
+            ![](https://www.wpallimport.com/wp-content/plugins/dc-nav/views/../static/icons/doc-icon-developers.svg)
+            
+
+            [wp_all_import_image_mime_type](#wp_all_import_image_mime_type)
+            **Description**
+Called when WP All Import creates an attachment for an image (or file) that it has downloaded or located during an import—for example featured images, gallery images, and other media specified in the "Images" section of the import template. It fires after WP All Import has detected the file's MIME type (via PHP's 
+```
+getimagesize()
+```
+
+/
+```
+image_type_to_mime_type()
+```
+
+, or the file extension) but before the attachment record is created in the Media Library.
+
+The filter allows you to inspect or override the MIME type that will be stored as the attachment's 
+```
+post_mime_type
+```
+
+. This is useful when WP All Import cannot detect the type on its own (the detected value may be an empty string in that case), or when imported files have missing/incorrect extensions—e.g. image URLs without extensions, WebP/AVIF files served with generic types, or SVG files.
+
+Note: the value returned by this filter only affects the MIME type recorded for the attachment; it does not convert or modify the file itself.
+
+**Parameters**
+
+| Param | Type | Description |
+| --- | --- | --- |
+| $file_mime_type | string | The MIME type detected by WP All Import (e.g. image/jpeg). May be an empty string if the type could not be determined. |
+| $image_filepath | string | The absolute path to the image/file on the server (inside the WordPress uploads folder) that the attachment is being created for. |
+
+**Usage**
+
+```
+add_filter('wp_all_import_image_mime_type', 'wpai_image_mime_type', 10, 2);
+
+function wpai_image_mime_type($file_mime_type, $image_filepath) {
+  if (empty($file_mime_type) and preg_match('%\W(svg)$%i', basename($image_filepath))) {
+    return 'image/svg+xml';
+  }
+  return $file_mime_type;
+}
+```
+
+Search the docs for 
+```
+wp_all_import_image_mime_type
+```
+
+ to see real-world code snippets that use this hook.
+            ![](https://www.wpallimport.com/wp-content/plugins/dc-nav/views/../static/icons/doc-icon-developers.svg)
+            
+
+            [wp_all_export_functions_file_path](#wp_all_export_functions_file_path)
+            **Description**
+This filter lets you modify where the functions.php file for WP All Export's Function Editor is stored.
+
+**Parameters**
+
+| Param | Type | Description |
+| --- | --- | --- |
+| $functions_path | string | Current functions.php file directory path. |
+
+**Usage**
+
+```
+function wpae_functions_file_path( $functions_path ) {
+         //Example to store functions.php in the root of your WP install in a folder "my-functions-folder"
+         //$new_functions_directory = get_home_path() . DIRECTORY_SEPARATOR . 'my-functions-folder';
+         //return $new_functions_directory . DIRECTORY_SEPARATOR . 'functions.php';
+         return $functions_path;
+}
+add_filter( 'wp_all_export_functions_file_path', 'wpae_functions_file_path', 10, 1 );
+```
+
+Search the docs for 
+```
+wp_all_export_functions_file_path
+```
+
+ to see real-world code snippets that use this hook.
+            ![](https://www.wpallimport.com/wp-content/plugins/dc-nav/views/../static/icons/doc-icon-developers.svg)
+            
+
+            [wp_all_import_parsed_product_attributes](#wp_all_import_parsed_product_attributes)
+            **Description**
+This filter is called by the WooCommerce Import Add-On while each product is being imported, after the attribute data has been parsed from the import template but before any attribute taxonomies or terms are created and before the attributes are saved to the product. It allows you to inspect and modify the complete list of product attributes—add new attributes, remove attributes, or change their names, values, and settings—on a per-product basis.
+
+Any changes made here affect everything that happens downstream: taxonomy term creation, visibility on the product page, and availability for variations.
+
+**Parameters**
+
+| Param | Type | Description |
+| --- | --- | --- |
+| $attributes | array | A numerically indexed array of the attributes parsed for the current product. Each attribute is an associative array with the following keys: name (string), value (string), in_taxonomy (string|int), is_create_taxonomy_terms (string|int), is_visible (string|int) , in_variation (string|int) |
+| $post_id | int | The ID of the product being imported. |
+| $import_id | int | The ID of the import being processed. |
+
+**Usage**
+
+```
+add_filter( 'wp_all_import_parsed_product_attributes', function( $attributes, $post_id, $import_id ) {
+	// $attributes contains an array of the attributes being imported to $post_id
+	return $attributes;
+}, 10, 3 );
+```
+
+Search the docs for 
+```
+wp_all_import_parsed_product_attributes
+```
+
+ to see real-world code snippets that use this hook.
+            ![](https://www.wpallimport.com/wp-content/plugins/dc-nav/views/../static/icons/doc-icon-developers.svg)
+            
+
+            [wp_all_export_meta_query_limit](#wp_all_export_meta_query_limit)
+            **Description**
+When WP All Export builds the list of available custom fields shown in the export editor (the "Available Data" → "Custom Fields" section in the Drag & Drop interface), it queries the database for distinct meta keys belonging to the post type being exported. To keep this query fast on sites with very large postmeta tables, the number of meta keys retrieved is capped with a SQL 
+```
+LIMIT
+```
+
+ clause. By default, only the first 1,000 distinct meta keys are retrieved.
+
+This filter lets you change that limit. Raise it if your site has more than 1,000 distinct custom field keys and some fields are missing from the available fields list in the export editor; lower it to speed up the export screen on sites with huge postmeta tables.
+
+The filter is applied everywhere WP All Export discovers meta keys, including:
+
+- Custom field discovery for post/custom post type exports (
+```
+wp_postmeta
+```
+
+)
+- Custom field discovery for "Custom Query" (advanced) exports
+- Order meta discovery for WooCommerce order exports when High-Performance Order Storage (HPOS) is enabled (
+```
+wp_wc_orders_meta
+```
+
+)
+
+Note that this filter only affects which fields are *listed as available* in the export editor—it does not limit the data written to the export file for fields you've already added to your export template.
+
+**Parameters**
+
+| Param | Type | Description |
+| --- | --- | --- |
+| $meta_query_limit | int | The maximum number of distinct meta keys retrieved from the database. Default: 1000. |
+
+**Usage**
+
+```
+add_filter( 'wp_all_export_meta_query_limit', function( $meta_query_limit ) {
+	return $meta_query_limit; //Change the return amount to retrieve more custom fields
+}, 10, 1 );
+```
+
+Search the docs for 
+```
+wp_all_export_meta_query_limit
+```
+
+ to see real-world code snippets that use this hook.
 
 ## Related Docs
 
