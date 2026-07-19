@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-19T05:08:31.274Z",
+  "last_updated": "2026-07-19T05:09:00.380Z",
   "total_plugins": 131,
   "plugins": [
     {
       "slug": "add-anchor-links",
       "name": "Add Anchor Links",
       "documentation_url": "https://wordpress.org/plugins/add-anchor-links/",
-      "last_scraped": "2026-07-12T05:09:26.782Z",
+      "last_scraped": "2026-07-19T05:08:58.119Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2459,7 +2459,7 @@
       "slug": "login-me-now",
       "name": "Login Me Now",
       "documentation_url": "https://wordpress.org/plugins/login-me-now/",
-      "last_scraped": "2026-07-19T05:08:31.274Z",
+      "last_scraped": "2026-07-19T05:08:31.271Z",
       "page_count": 2,
       "categories": [
         "advanced",
