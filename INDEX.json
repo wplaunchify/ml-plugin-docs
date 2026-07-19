@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T20:14:37.384Z",
+  "last_updated": "2026-07-19T20:15:07.901Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -149,7 +149,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com/documentation/",
-      "last_scraped": "2026-07-19T18:24:47.521Z",
+      "last_scraped": "2026-07-19T18:24:47.517Z",
       "page_count": 13,
       "categories": [
         "changelog",
@@ -653,7 +653,7 @@
       "slug": "fluentaffiliate-pro",
       "name": "FluentAffiliate Pro",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-07-19T19:25:30.431Z",
+      "last_scraped": "2026-07-19T19:25:30.428Z",
       "page_count": 53,
       "categories": [
         "admin-portal",
@@ -1713,7 +1713,7 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/",
-      "last_scraped": "2026-07-19T20:14:37.384Z",
+      "last_scraped": "2026-07-19T20:14:37.381Z",
       "page_count": 16,
       "categories": [
         "container-styling-settings",
@@ -1881,7 +1881,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/",
-      "last_scraped": "2026-07-13T14:22:33.934Z",
+      "last_scraped": "2026-07-19T20:15:05.347Z",
       "page_count": 52,
       "categories": [
         "add-gutenberg-editor-to-woocommerce",
@@ -2800,7 +2800,7 @@
       "slug": "store-credit-for-woocommerce",
       "name": "Store Credit for WooCommerce",
       "documentation_url": "https://woocommerce.com/document/woocommerce-store-credit/",
-      "last_scraped": "2026-07-19T19:28:34.407Z",
+      "last_scraped": "2026-07-19T19:28:34.405Z",
       "page_count": 1,
       "categories": [
         "overview"
