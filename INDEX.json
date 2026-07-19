@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T18:22:58.960Z",
+  "last_updated": "2026-07-19T18:23:10.989Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -197,7 +197,7 @@
       "slug": "block-specific-spam-woo-orders",
       "name": "Block Specific Spam Woo Orders",
       "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
-      "last_scraped": "2026-07-19T18:19:07.629Z",
+      "last_scraped": "2026-07-19T18:19:07.627Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2492,7 +2492,7 @@
       "slug": "menu-image",
       "name": "Menu Image",
       "documentation_url": "https://wordpress.org/plugins/menu-image/",
-      "last_scraped": "2026-07-19T18:21:35.134Z",
+      "last_scraped": "2026-07-19T18:21:35.132Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -3378,7 +3378,7 @@
       "slug": "woocommerce-stripe-gateway",
       "name": "WooCommerce Stripe Gateway",
       "documentation_url": "https://woocommerce.com/document/stripe/",
-      "last_scraped": "2026-07-19T18:19:59.718Z",
+      "last_scraped": "2026-07-19T18:19:59.715Z",
       "page_count": 37,
       "categories": [
         "admin-experience",
@@ -3903,7 +3903,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://docs.wpsocialninja.com/guide/",
-      "last_scraped": "2026-07-12T18:23:15.311Z",
+      "last_scraped": "2026-07-19T18:23:08.829Z",
       "page_count": 92,
       "categories": [
         "advanced-features",
@@ -3964,7 +3964,7 @@
       "slug": "wpcodebox-2",
       "name": "WPCodeBox 2",
       "documentation_url": "https://docs.wpcodebox.com/",
-      "last_scraped": "2026-07-19T18:22:58.960Z",
+      "last_scraped": "2026-07-19T18:22:58.952Z",
       "page_count": 42,
       "categories": [
         "acf_options_pages",
