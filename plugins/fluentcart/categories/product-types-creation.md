@@ -328,10 +328,10 @@ You can convert a product that currently uses **Simple** or **Simple Variations*
 
 WARNING
 
-Switching to Advanced Variations permanently deletes all current variations for the product. This cannot be undone, and you cannot switch back to Simple Variations afterward.To switch an existing product, follow these steps:
+Switching to Advanced Variations permanently deletes the product's current pricing setup, whether that is a plain **Simple** price or a set of **Simple Variations**. This cannot be undone, and you cannot switch back afterward.To switch an existing product, follow these steps:
 
 1. Open the product on its edit screen and scroll to the **Pricing** panel.
-2. Click the variation type dropdown at the top right of the panel. It currently shows your active type, such as "Simple Variations".
+2. Click the variation type dropdown at the top right of the panel. It currently shows your active type, such as "Simple" or "Simple Variations".
 3. Select **Advanced Variations** from the dropdown.
 4. A **Confirm Delete!** dialog appears. Read the warning carefully.
 5. Type 
@@ -656,7 +656,7 @@ x1
 3
 ```
 
- for a three-month payment plan)
+ for a three-month payment plan). This must be **2 or more**. A single installment is just a one-time payment, so if that's what you want, set the payment type to one-time instead
 - **Total Price** — Auto-calculated by multiplying **Installment Price** by **Installment Count**
 
 > 💡 Pro Tip: Installment plans are ideal for online courses, coaching programs, or any product where you want customers to pay over time with a clear end date — no cancellation anxiety for them, guaranteed revenue for you.
@@ -828,7 +828,7 @@ All the same subscription fields are available here as in Simple pricing:
 
 **Enable installment payment** *(Checkbox — Optional)* Limit this variation's subscription to a fixed number of payments. When checked:
 
-- **Installment Count** — Total number of billing cycles before the subscription ends automatically
+- **Installment Count** — Total number of billing cycles before the subscription ends automatically. Must be **2 or more**
 - **Total Price** — Auto-calculated total (Installment Price × Count)
 
 **Setup fee** *(Toggle — Optional)* Charge a one-time fee at signup for this variation. When toggled on:

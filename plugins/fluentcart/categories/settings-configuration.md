@@ -700,6 +700,20 @@ FluentCart will fetch the addon directly from the licensed update server, instal
 
 This makes the addon ecosystem feel like a first-class part of FluentCart — installing a premium addon now takes the same amount of effort as flipping a feature toggle.
 
+### FluentCart Bricks Blocks ​
+
+If you build your site with the **Bricks** theme, the **FluentCart Bricks Blocks** addon adds fifteen more FluentCart elements to the Bricks editor, covering the cart, checkout, product search, categories, and the customer dashboard.
+
+The card appears in the **Plugin Addons** section like any other addon, and installs with the same single click:
+
+1. Navigate to **FluentCart Pro > Settings > Features & addon**.
+2. Scroll to the **Plugin Addons** section and find the **FluentCart Bricks Blocks** card.
+3. Click the **Install & Activate** button on the card.
+
+INFO
+
+This addon requires the **Bricks** theme to be installed and active. Without it, the elements have no editor to load into. See [FluentCart Bricks Blocks](/guide/customization-and-themes/fluentcart-bricks-blocks) for the full block list and workflow.
+
 ---
 
 ## Managing Global Integrations ​
@@ -1180,6 +1194,7 @@ These are read-only. Ask in plain language and the assistant pulls the answer fr
 - **Payment ledger:** pull every transaction — charges, refunds, disputes, and signup fees — across all orders and subscriptions, filterable by type, status, gateway, customer, or date, with totals kept separate per currency.
 - **Product profitability:** open a single product's full financial picture — gross and net revenue, refunds, average order value, and recurring run-rate (**MRR/ARR**) with a forward payment schedule. It also surfaces discount-driven **margin leakage** (list price versus what actually sold), so you can see where discounts are eroding revenue. *(This "profitability" is revenue- and discount-based; it does not include cost-of-goods.)*
 - **Reports & analytics:** sales summaries with period-over-period comparison, revenue trends over time, best-selling products, refund metrics, and flexible breakdowns by order, product, variation, customer, or marketing source (UTM attribution). Reports accept flexible time windows — relative ranges like "last quarter," explicit start/end dates, even hour-precise custom windows — and can be scoped to **live**, **test**, or all orders, so a figure is never quietly skewed by test data.
+- **Precise, filtered searches:** assistants can build the same multi-condition searches your admin **advanced filter** offers, rather than guessing at field names. Ask something like "unfulfilled orders over $200 from Germany last month" and the assistant looks up the available filters for that record type first, then runs the search. This keeps answers accurate on narrow questions. *(Requires FluentCart Pro.)*
 
 ### Actions an assistant can take ​
 
