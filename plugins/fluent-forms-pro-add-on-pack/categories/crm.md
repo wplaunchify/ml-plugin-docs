@@ -682,7 +682,7 @@ Use all the fields under this option to properly link your **Pipedrive Fields**w
 
 ![](https://fluentforms.com/wp-content/uploads/2025/01/add-new-integration-feed-08-scaled.webp)
 
-**C. Conditional Logic:**If you want to allow **Pipedrive**integration conditionally based on your  submission values,**Enable Conditional Logic**options. To learn more about conditional logic, read the[article](https://fluentforms.com/docs/set-up-forms-with-conditional-logic-in-fluent-forms/).
+**C. Conditional Logic:**If you want to allow **Pipedrive**integration conditionally based on your  submission values,**Enable Conditional Logic**options. To learn more about conditional logic, read the [article](https://fluentforms.com/docs/set-up-forms-with-conditional-logic-in-fluent-forms/).
 
 **D. Status:**Enable this feed option to activate the integration.
 
