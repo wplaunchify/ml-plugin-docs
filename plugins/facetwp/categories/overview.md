@@ -66,7 +66,7 @@ Still no luck? Try [searching](javascript:void(0);), and also check out our [tro
 	### Requirements
 
 		What are the system requirements?
-	        FacetWP requires PHP 7.0+ (since [FacetWP v4.0](/whats-new-in-facetwp-4-0/)) and WordPress 5.0+ (fully compatible with WordPress 7.0.1).
+	        FacetWP requires PHP 7.0+ (since [FacetWP v4.0](/whats-new-in-facetwp-4-0/)) and WordPress 5.0+ (fully compatible with WordPress 7.0.2).
 		Does FacetWP work on WordPress.com?
 	        No, FacetWP is a plugin for [self-hosted](https://wordpress.org/download/) WordPress installs.
 		Does FacetWP support PHP8?
@@ -569,25 +569,23 @@ FacetWP only [indexes](/help-center/indexing/) and displays facet choices that h
 
 For example, if your facet uses a taxonomy as data source, make sure there is at least one post in the listing that has the missing term selected for the taxonomy used. If your facet uses a custom field, make sure the field is populated for at least one of the posts.
 
-## The facet’s Count setting is too low
+## The facet’s Limit setting is too low
 
 If your facet is missing some choices despite posts in the listing using them (as explained above), or if the 
 ```
 [+]
 ```
 
- icon(s) don’t show up in a [hierarchical Checkboxes facet](/help-center/facets/facet-types/checkboxes/#hierarchical), make sure the facet’s [“Count” setting](/help-center/facets/facet-types/checkboxes/#count) is high enoug
+ icon(s) don’t show up in a hierarchical [Checkboxes facet](/help-center/facets/facet-types/checkboxes/#hierarchical) or [Exclude facet](/help-center/facets/facet-types/exclude/#hierarchical), make sure the facet’s [“Limit” setting](/help-center/facets/facet-types/checkboxes/#limit) is high enough, or disable the “[Limit choices](/help-center/facets/facet-types/checkboxes/#limit-choices)” setting entirely.
 
-In facets with a hierarchical taxonomy as data source, **the count includes child terms/categories**. If the count is set too low, (some) child options will not show up.
-
-To fix this, either set a count high enough to include all choices (including child terms/categories), or set it to 
+In facets with a hierarchical taxonomy as data source, **the limit includes child terms/categories**. If the limit is set too low, (some) child options will not show up. To fix this, the same applies: either set a count high enough to include all child terms/categories, or set it to 
 ```
 -1
 ```
 
- to show *all* choices.
+ to show *all* choices, or disable the “[Limit choices](/help-center/facets/facet-types/checkboxes/#limit-choices)” setting entirely.
 
-Note that not all facet types have a Count setting.
+Note that not all facet types have “Limit choices” and “Limit” settings. In FacetWP versions older than v4.5.1, the “Limit” setting was called “Count”. The “[Limit choices](/help-center/facets/facet-types/checkboxes/#limit-choices)” setting is available in FacetWP v4.5.1+.
 
 ## Multiple facet choices sharing a truncated facet_value of 50 characters long
 

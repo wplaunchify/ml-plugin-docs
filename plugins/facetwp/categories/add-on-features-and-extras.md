@@ -47,12 +47,12 @@ These aria labels can be translated with the internationalization function
 __()
 ```
 
-, or with the WordPress 
+, or with the 
 ```
-gettext
+gettext_{$domain}
 ```
 
- filter, as demonstrated in [this code example](/help-center/facets/facet-types/pager/#translate-the-aria-labels).
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/), as demonstrated in [this code example](/help-center/facets/facet-types/pager/#translate-the-aria-labels).
 
 ## Enable accessibility support programmatically
 
@@ -164,7 +164,7 @@ How to use custom JavaScript code?JavaScript code can be placed in your (child) 
 - [The facetwp_shortcode_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/)
 - [The facetwp-loaded event](https://facetwp.com/help-center/developers/javascript-reference/facetwp-loaded/)
 
-                    Last updated: May 20, 2024
+                    Last updated: July 17, 2026
 
 ---
 

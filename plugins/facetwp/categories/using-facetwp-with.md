@@ -3400,19 +3400,17 @@ The default “Nothing found” message is a translatable string that can be tra
 __()
 ```
 
- (e.g. with a translation plugin), or with the WordPress 
+ (e.g. with a translation plugin like [Loco Translate](https://wordpress.org/plugins/loco-translate/)), or with the 
 ```
-gettext
+gettext_{$domain}
 ```
 
- filter:
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/):
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'Nothing found.' == $translated_text ) {
-      $translated_text = 'Niets gevonden.';
-    }
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'Nothing found.' == $text ) {
+    $translated_text = 'Niets gevonden.';
   }
   return $translated_text;
 }, 10, 3 );
@@ -4177,7 +4175,7 @@ WP_Query
 - [Using FacetWP with Advanced Custom Fields](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
 - [The Conditional Logic add-on](https://facetwp.com/help-center/add-on-features-and-extras/conditional-logic/)
 
-                Last updated: April 20, 2026
+                Last updated: July 17, 2026
 
 ---
 
@@ -13560,10 +13558,10 @@ Without doing anything specific, WP Rocket should work with FacetWP without issu
 
 ## How FacetWP script exclusions work
 
-![Add FacetWP scripts to 'Delay Javascript Execution' exclusions. This can't hurt, but is not needed.](https://facetwp.com/wp-content/uploads/2026/04/wprocket-delay-js-exclusion-facetwp-settings.png)Add FacetWP scripts to “Delay Javascript Execution” exclusions. This can’t hurt, but is not needed: FacetWP already does this by itself.
+![Add FacetWP scripts to 'Delay Javascript Execution' exclusions. This can't hurt, but is not needed, but is not needed when using FacetWP v4.5.1+.](https://facetwp.com/wp-content/uploads/2026/04/wprocket-delay-js-exclusion-facetwp-settings.png)Add FacetWP scripts to “Delay Javascript Execution” exclusions. This can’t hurt, but is **not** needed when using FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+. FacetWP already does this by itself.
 FacetWP version 4.0+ itself excludes its own core- and add-on scripts from WP Rocket’s JavaScript defer and delay features, and from CDN caching. This is needed to prevent a range of issues and possible JavaScript errors.
 
-WP Rocket itself also has a setting to exclude plugin scripts from delaying and deferring, in the File Optimization > Delay JavaScript Execution > One-click exclusions section. This setting will also show two FacetWP options, as shown in the image on the right. Enabling “FacetWP” and “FacetWP – Flyout menu” here is **not** needed. It can’t hurt to do so, but FacetWP’s own exclusion function casts a much wider net and excludes **all** FacetWP-related scripts, not just the small selection that WP Rocket excludes with this setting.
+WP Rocket itself also has a setting to exclude plugin scripts from delaying and deferring, in the File Optimization > Delay JavaScript Execution > One-click exclusions section. This setting will also show two FacetWP options, as shown in the image on the right. Enabling “FacetWP” and “FacetWP – Flyout menu” here is **not** needed anymore when using FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+. It can’t hurt to do so, but FacetWP’s own integration casts a much wider net and excludes **all** of FacetWP’s and all add-on scripts, not just the small selection that WP Rocket excludes with its FacetWP settings enabled.
 
 ## Tested WP Rocket settings
 
@@ -13796,7 +13794,7 @@ The results should look like this:
 - [The facetwp_scripts hook](https://facetwp.com/help-center/developers/hooks/advanced-hooks/facetwp_scripts/)
 - [How to use custom code?](https://facetwp.com/how-to-use-custom-code/)
 
-                    Last updated: June 9, 2026
+                    Last updated: July 17, 2026
 
 ---
 

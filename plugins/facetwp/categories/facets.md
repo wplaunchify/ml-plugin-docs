@@ -1202,31 +1202,29 @@ __()
 
  translatable strings which can be changed or translated with a translation plugin. For WPML, use [WPML String translation](https://wpml.org/documentation/getting-started-guide/string-translation/). Another useful plugin for string translations is [Loco Translate](https://wordpress.org/plugins/loco-translate/). If needed, you can use it together with a tool like [PoEdit](https://poedit.net/download) to handle or create the language pot/po/mo files.
 
-Translatable strings can also be translated with a 
+Translatable strings can also be translated with the 
 ```
-gettext
+gettext_{$domain}
 ```
 
- filter. To do so, add the following code to your (child) theme’s functions.php and adapt the translations:
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/). To do so, add the following code to your (child) theme’s functions.php and adapt the translations:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'Start typing' == $text ) {
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'Start typing' == $text ) {
       $translated_text = 'Start met typen';
-    }
-    if ( 'Enter {n} or more characters' == $text ) {
-      $translated_text = 'Vul {n} of meer characters in';
-    }
-    if ( 'Loading' == $text ) {
+  }
+  if ( 'Enter {n} or more characters' == $text ) {
+      $translated_text = 'Vul {n} of meer tekens in';
+  }
+  if ( 'Loading' == $text ) {
       $translated_text = 'Zoeken';
-    }
-    if ( 'No results' == $text ) {
+  }
+  if ( 'No results' == $text ) {
       $translated_text = 'Niets gevonden';
-    }
-    if ( 'Go' == $text ) {
+  }
+  if ( 'Go' == $text ) {
       $translated_text = 'Zoek';
-    }
   }
   return $translated_text;
 }, 10, 3 );
@@ -1467,7 +1465,7 @@ If you want to add a clear button/icon to an Autocomplete facet’s input box, c
 - [How to add a “Clear” button to a Search or Autocomplete facet](https://facetwp.com/how-to-add-a-clear-button-to-a-search-or-autocomplete-facet/)
 - [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
 
-                    Last updated: March 4, 2026
+                    Last updated: July 17, 2026
 
 ---
 
@@ -1491,8 +1489,8 @@ In hierarchical facets, if you use “Show only these values”, if you want onl
 For an example, see the explanation below. If your value modifiers don’t work, see this page for more info. |
 | Hierarchical | Whether to display the facet choices visually as a hierarchy, by ordering the child terms below their parent term, indenting the child terms, and by showing [+] / [-] icons to toggle the child levels. This setting only appears if Data Source is set to a taxonomy, and it will only have an effect if the chosen taxonomy is actually a hierarchical taxonomy. Notes:
 
-If some (child) choices or the [+] icon(s) don’t show up, make sure the “Count” setting is high enough, or set it to -1 to show all choices.
-The “Soft limit” setting is not available in combination with the “Hierarchical” setting enabled. |
+If some (child) choices or the [+] icon(s) don’t show up, make sure the “Limit” setting is high enough, or set it to -1 to show all choices, or disable the “Limit choices” setting entirely.
+The “Enable soft limit” and “Soft limit” settings are not available in combination with the “Hierarchical” setting enabled. |
 | Show expanded | This option only appears if the Hierarchical setting is enabled. By default, all child levels will be in the collapsed state and can be expanded with the [+] icons. With this setting enabled, child levels will be expanded all the time. If you want to hide the expand/collapse icons in this case, see the solution below. |
 | Show ghosts | Show choices that would return zero results? See the explanation below. |
 | Preserve ghost order | This option only appears if the Show ghosts setting is enabled. By default, ghost choices will appear at the bottom. With this setting enabled, ghost choices are kept in the same order (mixed with valid choices).
@@ -1529,11 +1527,21 @@ For term_order to work with these plugins, make sure to use an actual taxonomy a
 Note that choosing “Term order” will also preserve the order of ACF custom fields that have a user-defined list of choices in a specific order, like Select, Checkbox, and Radio Button field types. If this order is not retained after filtering, and you are using Elementor, see this issue and fix.
 
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
-| Count | The maximum number of choices to display. Default: 10. Be aware that if your Data source is a hierarchical taxonomy, the count includes the child terms/categories. If the count is too low, some (child) choices, or the [+] icon(s) will not show up.
-If you leave this field empty, the default of 10 will be used. You can set the count as high as you like, but be aware that very high counts can lead to issues with page load performance or usability. If you use -1, FacetWP will load all choices but will limit the maximum count at 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead. |
-| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1 or leave empty to display all options. The “Soft limit” setting is not available in combination with the “Hierarchical” setting. 
+|  |
+| Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
+If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
+Note: this setting is available in FacetWP v4.5.1+. |
+| Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, some (child) choices, or the [+] icon(s) will not show up.
+If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a safety limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
+This setting is only available if the “Limit choices” setting is enabled. 
+Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+| Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
+This setting is only available if the “Hierarchical” setting is disabled.
+Note: this setting is available in FacetWP v4.5.1+. |
+| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
 When a facet choice is selected within the initially hidden part, the hidden part will automatically be toggled open on refresh. If you want this to happen when any facet choice is selected, see the example below.
-Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter. |
+Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
+This setting is only available if the “Enable soft limit” setting is enabled and the “Hierarchical” setting is disabled. |
 
 Important: If you are using a hierarchical taxonomy as Data source, and have the [Parent term](#parent-term) or [Hierarchical](#hierarchical) options set, remember to [re-index](/help-center/indexing/#when-to-run-the-indexer) each time after a term’s hierarchy changes, e.g. changing to a new parent term.
 
@@ -2177,17 +2185,20 @@ __()
 
  strings, or you can [use the facetwp_i18n hook](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/).
 
-Another way is using a [gettext filter hook](https://developer.wordpress.org/reference/hooks/gettext/). Add the following code to your (child) theme’s functions.php:
+Another way is using a 
+```
+gettext_{$domain}
+```
+
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/). Add the following code to your (child) theme’s functions.php:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'See {num} more' == $text ) {
-      $translated_text = 'Show {num} more';
-    }
-    elseif ( 'See less' == $text ) {
-      $translated_text = 'Show less';
-    }
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'See {num} more' == $text ) {
+    $translated_text = 'Show {num} more';
+  }
+  elseif ( 'See less' == $text ) {
+    $translated_text = 'Show less';
   }
   return $translated_text;
 }, 10, 3 );
@@ -2422,7 +2433,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                    Last updated: June 30, 2026
+                    Last updated: July 17, 2026
 
 ---
 
@@ -2446,8 +2457,8 @@ In hierarchical facets, if you use “Show only these values”, if you want onl
 For an example, see the explanation below. If your value modifiers don’t work, see this page for more info. |
 | Hierarchical | Whether to display the facet choices visually as a hierarchy, by ordering the child terms below their parent term, indenting the child terms, and by showing [+] / [-] icons to toggle the child levels. This setting only appears if Data Source is set to a taxonomy, and it will only have an effect if the chosen taxonomy is actually a hierarchical taxonomy. Notes:
 
-If some (child) choices or the [+] icon(s) don’t show up, make sure the “Count” setting is high enough, or set it to -1 to show all choices.
-The “Soft limit” setting is not available in combination with the “Hierarchical” setting enabled. |
+If some (child) choices or the [+] icon(s) don’t show up, make sure the “Limit” setting is high enough, or set it to -1 to show all choices, or disable the “Limit choices” setting entirely.
+The “Enable soft limit” and “Soft limit” settings are not available in combination with the “Hierarchical” setting enabled. |
 | Show expanded | This option only appears if the Hierarchical setting is enabled. By default, all child levels will be in the collapsed state and can be expanded with the [+] icons. With this setting enabled, child levels will be expanded all the time. If you want to hide the expand/collapse icons in this case, see the solution below. |
 | Show ghosts | Show choices that would return zero results? See the explanation below. |
 | Preserve ghost order | This option only appears if the Show ghosts setting is enabled. By default, ghost choices will appear at the bottom. With this setting enabled, ghost choices are kept in the same order (mixed with valid choices).
@@ -2484,11 +2495,21 @@ For term_order to work with these plugins, make sure to use an actual taxonomy a
 Note that choosing “Term order” will also preserve the order of ACF custom fields that have a user-defined list of choices in a specific order, like Select, Checkbox, and Radio Button field types. If this order is not retained after filtering, and you are using Elementor, see this issue and fix.
 
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
-| Count | The maximum number of choices to display. Default: 10. Be aware that if your Data source is a hierarchical taxonomy, the count includes the child terms/categories. If the count is too low, some (child) choices, or the [+] icon(s) will not show up.
-If you leave this field empty, the default of 10 will be used. You can set the count as high as you like, but be aware that very high counts can lead to issues with page load performance or usability. If you use -1, FacetWP will load all choices but will limit the maximum count at 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead. |
-| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1 or leave empty to display all options. The “Soft limit” setting is not available in combination with the “Hierarchical” setting. 
+|  |
+| Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
+If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
+Note: this setting is available in FacetWP v4.5.1+. |
+| Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, some (child) choices, or the [+] icon(s) will not show up.
+If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a safety limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
+This setting is only available if the “Limit choices” setting is enabled. 
+Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+| Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
+This setting is only available if the “Hierarchical” setting is disabled.
+Note: this setting is available in FacetWP v4.5.1+. |
+| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
 When a facet choice is selected within the initially hidden part, the hidden part will automatically be toggled open on refresh. If you want this to happen when any facet choice is selected, see the example below.
-Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter. |
+Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
+This setting is only available if the “Enable soft limit” setting is enabled and the “Hierarchical” setting is disabled. |
 
 Important: If you are using a hierarchical taxonomy as Data source, and have the [Parent term](#parent-term) or [Hierarchical](#hierarchical) options set, remember to [re-index](/help-center/indexing/#when-to-run-the-indexer) each time after a term’s hierarchy changes, e.g. changing to a new parent term.
 
@@ -3132,17 +3153,20 @@ __()
 
  strings, or you can [use the facetwp_i18n hook](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/).
 
-Another way is using a [gettext filter hook](https://developer.wordpress.org/reference/hooks/gettext/). Add the following code to your (child) theme’s functions.php:
+Another way is using a 
+```
+gettext_{$domain}
+```
+
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/). Add the following code to your (child) theme’s functions.php:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'See {num} more' == $text ) {
-      $translated_text = 'Show {num} more';
-    }
-    elseif ( 'See less' == $text ) {
-      $translated_text = 'Show less';
-    }
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'See {num} more' == $text ) {
+    $translated_text = 'Show {num} more';
+  }
+  elseif ( 'See less' == $text ) {
+    $translated_text = 'Show less';
   }
   return $translated_text;
 }, 10, 3 );
@@ -3377,7 +3401,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                    Last updated: June 30, 2026
+                    Last updated: July 17, 2026
 
 ---
 
@@ -3421,9 +3445,6 @@ Notes:
 
 To change the “Facet logic” setting for a certain facet with PHP, you can use the facetwp_facet_filter_posts hook.
 To let the user change the “Facet logic” for individual facets on the front-end, see this tutorial. |
-| Count | The maximum number of choices to display. Default: 10. 
-If you leave this field empty, the default of 10 will be used. You can set the count as high as you like, but be aware that very high counts can lead to issues with page load performance or usability. If you use -1, FacetWP will load all choices but will limit the maximum count at 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead. |
-| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. link. Set to -1 or leave empty to display all options. Note: this label is translatable with the facetwp_i18n hook, with __(), or with the gettext filter. |
 | Sort by | Sort facet choices by:
 
 Highest count – sorts by the total number of results with that value.
@@ -3447,6 +3468,18 @@ For term_order to work with the above plugins, make sure to use an actual taxono
 Note that choosing “Term order” will also preserve the order of ACF custom fields that have a user-defined list of choices in a specific order, like Select, Checkbox, and Radio Button field types. If this order is not retained after filtering, and you are using Elementor, see this issue and fix.
 
 To customize the sort order, for example switch the ASC/DESC order, or to sort by arbitrary values, you can use the facetwp_facet_orderby hook. |
+| Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
+If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
+Note: this setting is available in FacetWP v4.5.1+ and the Color add-on v1.7.2+. |
+| Limit | The maximum number of choices to display. Default: 50. 
+If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
+This setting is only available if the “Limit choices” setting is enabled. 
+Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+| Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
+Note: this setting is available in FacetWP v4.5.1+ and the Color add-on v1.7.2+. |
+| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
+Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
+This setting is only available if the “Enable soft limit” setting is enabled. |
 
 Important: If you are using a hierarchical taxonomy as Data source, and have the [Parent term](#parent-term) option set, remember to [re-index](/help-center/indexing/#when-to-run-the-indexer) each time after a term’s hierarchy changes, e.g. changing to a new parent term.
 
@@ -3791,14 +3824,12 @@ __()
 Another way is using a [gettext filter hook](https://developer.wordpress.org/reference/hooks/gettext/). Add the following code to your (child) theme’s functions.php:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'See {num} more' == $text ) {
-      $translated_text = 'Show {num} more';
-    }
-    elseif ( 'See less' == $text ) {
-      $translated_text = 'Show less';
-    }
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'See {num} more' == $text ) {
+    $translated_text = 'Show {num} more';
+  }
+  elseif ( 'See less' == $text ) {
+    $translated_text = 'Show less';
   }
   return $translated_text;
 }, 10, 3 );
@@ -3988,7 +4019,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [How to switch the facet logic on the front-end](https://facetwp.com/how-to-switch-the-facet-logic-on-the-front-end/)
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 
-                Last updated: April 30, 2026
+                Last updated: July 17, 2026
 
 ---
 
@@ -4301,31 +4332,29 @@ Depending on the [settings](#available-options), the Date Range input fields can
 
 These placeholder texts are all translatable strings. To translate them, you can use a translation plugin like [Loco Translate](https://wordpress.org/plugins/loco-translate/), or use the 
 ```
-gettext
+gettext_{$domain}
 ```
 
- WordPress filter, by adding the following code to your (child) theme’s functions.php:
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/), by adding the following code to your (child) theme’s functions.php:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    
-    // Date(s) placeholder texts
-    if ( 'Date' == $translated_text ) {
-      $translated_text = 'Event date';
-    } elseif ( 'Start date' == $translated_text ) {
-      $translated_text = 'Start event date';
-    } elseif ( 'End date' == $translated_text ) {
-      $translated_text = 'End event date';
-   
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+
+  // Date(s) placeholder texts
+  if ( 'Date' == $text ) {
+    $translated_text = 'Event date';
+  } elseif ( 'Start date' == $text ) {
+    $translated_text = 'Start event date';
+  } elseif ( 'End date' == $text ) {
+    $translated_text = 'End event date';
+
     // No dates placeholder texts
-    } elseif ( 'No dates' == $translated_text ) {
-      $translated_text = 'No event dates';
-    } elseif ( 'No start dates' == $translated_text ) {
-      $translated_text = 'No start event dates';
-    } elseif ( 'No end dates' == $translated_text ) {
-      $translated_text = 'No end event dates';
-    }
+  } elseif ( 'No dates' == $text ) {
+    $translated_text = 'No event dates';
+  } elseif ( 'No start dates' == $text ) {
+    $translated_text = 'No start event dates';
+  } elseif ( 'No end dates' == $text ) {
+    $translated_text = 'No end event dates';
   }
 
   return $translated_text;
@@ -4747,29 +4776,25 @@ To guide the user to input the date in the correct format, it is a good idea to 
 The following snippet shows how to do this in both formatting situations:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-
-  if ( 'fwp-front' == $domain ) {
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
 
     // Use with monthfirst = false
-    if ( 'Date' == $translated_text ) {
+    if ( 'Date' == $text ) {
       $translated_text = 'Date (dd-mm-yyyy)';
-    } elseif ( 'Start date' == $translated_text ) {
+    } elseif ( 'Start date' == $text ) {
       $translated_text = 'Start date (dd-mm-yyyy)';
-    } elseif ( 'End date' == $translated_text ) {
+    } elseif ( 'End date' == $text ) {
       $translated_text = 'End date (dd-mm-yyyy)';
     }
 
     // Use with monthfirst = true
-//  if ( 'Date' == $translated_text ) {
-//    $translated_text = 'Date (mm-dd-yyyy)';
-//  } elseif ( 'Start date' == $translated_text ) {
-//    $translated_text = 'Start date (mm-dd-yyyy)';
-//  } elseif ( 'End date' == $translated_text ) {
-//    $translated_text = 'End date (mm-dd-yyyy)';
-//  }
-
-  }
+    //  if ( 'Date' == $text ) {
+    //    $translated_text = 'Date (mm-dd-yyyy)';
+    //  } elseif ( 'Start date' == $text ) {
+    //    $translated_text = 'Start date (mm-dd-yyyy)';
+    //  } elseif ( 'End date' == $text ) {
+    //    $translated_text = 'End date (mm-dd-yyyy)';
+    //  }
 
   return $translated_text;
 }, 10, 3 );
@@ -4871,7 +4896,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [How to disable facet auto-refresh and add an apply button](https://facetwp.com/how-to-disable-facet-auto-refresh-and-add-an-apply-button/)
 - [The User Selections facet type](https://facetwp.com/help-center/facets/facet-types/user-selections/)
 
-                    Last updated: May 8, 2026
+                    Last updated: July 17, 2026
 
 ---
 
@@ -4894,7 +4919,8 @@ Note: in a multilingual setup, setting a parent term will not work, because the 
 | Value modifiers | Enter a list of facet values (one per line, without commas) to include or exclude. The values need to match the label (not the slug) of the facet choice exactly, including spaces and capitalization. 
 In hierarchical facets, if you use “Show only these values”, if you want only specific child terms to show up, you need to include their parent terms (on all levels) too. Or you need to set their parent term ID in the “Parent term” setting. If you use “Exclude these values”, you can directly exclude child terms, without excluding their parent terms.
 For an example, see the explanation below. If your value modifiers don’t work, see this page for more info. |
-| Hierarchical | Whether to display the facet choices visually as a hierarchy, by ordering the child terms below their parent term and by indenting the child terms. This setting only appears if Data Source is set to a taxonomy, and it will only have an effect if the chosen taxonomy is actually a hierarchical taxonomy. Note: if child options don’t show up, make sure the “Count” setting is high enough. |
+| Hierarchical | Whether to display the facet choices visually as a hierarchy, by ordering the child terms below their parent term and by indenting the child terms. This setting only appears if Data Source is set to a taxonomy, and it will only have an effect if the chosen taxonomy is actually a hierarchical taxonomy. 
+Note: if (some) child options don’t show up, make sure the “Limit” setting is high enough, or set it to -1 to show all choices, or disable the “Limit choices” setting entirely. |
 | Show ghosts | Show choices that would return zero results? See the explanation below. |
 | Preserve ghost order | This option only appears if the Show ghosts setting is enabled. By default, ghost choices will appear at the bottom. With this setting enabled, ghost choices are kept in the same order (mixed with valid choices).
 This setting is not available when the “Sort by” setting is set to “Highest count”, in which case the ghost order is ignored. |
@@ -4920,8 +4946,13 @@ For term_order to work with these plugins, make sure to use an actual taxonomy a
 Note that choosing “Term order” will also preserve the order of ACF custom fields that have a user-defined list of choices in a specific order, like Select, Checkbox, and Radio Button field types. If this order is not retained after filtering, and you are using Elementor, see this issue and fix.
 
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
-| Count | The maximum number of choices to display. Default: 10. Be aware that if your Data source is a hierarchical taxonomy, the count includes the child terms/categories. If the count is too low, (some) child options will not show up.
-If you leave this field empty, the default of 10 will be used. You can set the count as high as you like, but be aware that very high counts can lead to issues with page load performance or usability. If you use -1, FacetWP will load all choices but will limit the maximum count at 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead. |
+| Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
+If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
+Note: this setting is available in FacetWP v4.5.1+. |
+| Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, (some) child choices will not show up.
+If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
+This setting is only available if the “Limit choices” setting is enabled. 
+Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
 
 Important: If you are using a hierarchical taxonomy as Data source, and have the [Parent term](#parent-term) or [Hierarchical](#hierarchical) options set, remember to [re-index](/help-center/indexing/#when-to-run-the-indexer) each time after a term’s hierarchy changes, e.g. changing to a new parent term.
 
@@ -5222,7 +5253,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Category Order and Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/category-order-and-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: April 23, 2026
+                    Last updated: July 15, 2026
 
 ---
 
@@ -5272,8 +5303,8 @@ In hierarchical facets, if you use “Show only these values”, if you want onl
 For an example, see the explanation below. If your value modifiers don’t work, see this page for more info. |
 | Hierarchical | This setting is only visible for UI types “Checkboxes”, “Dropdown” and “fSelect”. If enabled, the facet choices are displayed as a hierarchy, by ordering the child terms below their parent term, indenting the child terms, and by showing [+] / [-] icons to toggle the child levels. This setting only appears if Data Source is set to a taxonomy, and it will only have an effect if the chosen taxonomy is actually a hierarchical taxonomy. Notes:
 
-the “Soft limit” setting is not available in combination with the “Hierarchical” setting enabled.
-If child options don’t show up, make sure the “Count” setting is high enough. |
+If some (child) choices or the [+] icon(s) don’t show up, make sure the “Limit” setting is high enough, or set it to -1 to show all choices, or disable the “Limit choices” setting entirely.
+The “Enable soft limit” and “Soft limit” settings are not available in combination with the “Hierarchical” setting enabled. |
 | Show expanded | This option only appears if the Hierarchical setting is enabled. By default, all child levels will be in the collapsed state and can be expanded with the [+] icons. With this setting enabled, child levels will be expanded all the time. If you want to hide the expand/collapse icons in this case, see the solution below. |
 | Show ghosts | Show choices that would return zero results? See the explanation below. |
 | Preserve ghost order | This option only appears if the Show ghosts setting is enabled. By default, ghost choices will appear at the bottom. With this setting enabled, ghost choices are kept in the same order (mixed with valid choices).
@@ -5290,7 +5321,7 @@ Note: this label is translatable with the facetwp_i18n hook. |
 | Sort by | Sort facet choices by:
 
 Highest count – sorts by the total number of results with that value. Note that even when reverse counts is enabled, the results will still be ordered from the highest to the lowest count.
-Keep in mind that if your “Sort by” setting is set to “Highest count” and “Reverse counts” is disabled, any choice that is selected gets a count of 0 and will move to the bottom of the facet. If your “Count” setting (or “Soft limit”) setting is too low, the choice will disappear. To prevent this from happening, make sure the Count setting is high enough to show all choices, and consider setting “Sort by” to something other than “Highest count”.
+Keep in mind that if your “Sort by” setting is set to “Highest count” and “Reverse counts” is disabled, any choice that is selected gets a count of 0 and will move to the bottom of the facet. If your “Limit” or “Soft limit” setting is too low, the choice will disappear. To prevent this from happening, make sure the “Limit” setting is high enough to show all choices, or disable the “Limit choices” setting (and the Enable soft limit setting) entirely. Or, consider setting “Sort by” to something other than “Highest count”.
 
 Display value – sorts alphabetically according to the label you see on the facet choices.
 Raw value – sorts by the value that tracks the facet choices. For example, in a dropdown, this is the option value rather than the option label. You can see the raw values in the URL after making facet selections.
@@ -5311,10 +5342,19 @@ For term_order to work with these plugins, make sure to use an actual taxonomy a
 Note that choosing “Term order” will also preserve the order of ACF custom fields that have a user-defined list of choices in a specific order, like Select, Checkbox, and Radio Button field types. If this order is not retained after filtering, and you are using Elementor, see this issue and fix.
 
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
-| Count | The maximum number of choices to display. Default: 10. Be aware that if your Data source is a hierarchical taxonomy, the count includes the child terms/categories. If the count is too low, (some) child options will not show up.
-If you leave this field empty, the default of 10 will be used. You can set the count as high as you like, but be aware that very high counts can lead to issues with page load performance or usability. If you use -1, FacetWP will load all choices but will limit the maximum count at 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead. |
-|  |
-| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. link. Set to -1 or leave empty to display all options. The “Soft limit” option is only available for the “Checkboxes” UI type, and is not available in combination with the “Hierarchical” setting. Note: this label is translatable with the facetwp_i18n hook, with __(), or with the gettext filter. |
+| Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
+If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
+Note: this setting is available in FacetWP v4.5.1+ and the Exclude add-on v0.1.1+. |
+| Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, some (child) choices, or the [+] icon(s) will not show up.
+If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a safety limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
+This setting is only available if the “Limit choices” setting is enabled. 
+Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+| Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
+This setting is only available for the “Checkboxes” UI type, if the “Hierarchical” setting is disabled.
+Note: this setting is available in FacetWP v4.5.1+ and the Exclude add-on v0.1.1+. |
+| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
+Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
+This setting is only available for the “Checkboxes” UI type, if the “Enable soft limit” setting is enabled and the “Hierarchical” setting is disabled. |
 | Reverse counts | If enabled, the facet choice counts represent the number or posts without that choice. When using this setting, it’s recommended to use a prefix or suffix to create negative choice labels. For example, “no gluten” or “gluten-free”. |
 | Prefix | Text that appears before each facet choice label. For example, “no ” (including the space) to let the facet choice “gluten” show up as “no gluten”. It’s recommended to use reverse counts when using negative choice labels. Note: the prefix text can be translated with the facetwp_i18n hook.
 Note: this field accepts HTML, so you could wrap the prefix text in a <strong> or <em> tag, for example. |
@@ -5496,7 +5536,7 @@ Alternatively, you could [choose “fSelect” as UI type](#ui-type), which is e
 - [FacetWP and taxonomies](https://facetwp.com/help-center/developers/facetwp-and-taxonomies/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                Last updated: June 30, 2026
+                Last updated: July 15, 2026
 
 ---
 
@@ -5519,7 +5559,8 @@ Note: in a multilingual setup, setting a parent term will not work, because the 
 | Value modifiers | Enter a list of facet values (one per line, without commas) to include or exclude. The values need to match the label (not the slug) of the facet choice exactly, including spaces and capitalization. 
 In hierarchical facets, if you use “Show only these values”, if you want only specific child terms to show up, you need to include their parent terms (on all levels) too. Or you need to set their parent term ID in the “Parent term” setting. If you use “Exclude these values”, you can directly exclude child terms, without excluding their parent terms.
 For an example, see the explanation below. If your value modifiers don’t work, see this page for more info. |
-| Hierarchical | Whether to display the facet choices visually as a hierarchy, by ordering the child terms below their parent term and by indenting the child terms. This setting only appears if Data Source is set to a taxonomy, and it will only have an effect if the chosen taxonomy is actually a hierarchical taxonomy. Note: if child options don’t show up, make sure the “Count” setting is high enough. |
+| Hierarchical | Whether to display the facet choices visually as a hierarchy, by ordering the child terms below their parent term and by indenting the child terms. This setting only appears if Data Source is set to a taxonomy, and it will only have an effect if the chosen taxonomy is actually a hierarchical taxonomy. 
+Note: if (some) child options don’t show up, make sure the “Limit” setting is high enough, or set it to -1 to show all choices, or disable the “Limit choices” setting entirely. |
 | Multi-select | If enabled, this facet type will accept multiple selections, and will display a checkbox-style UI. |
 | Show ghosts | Show choices that would return zero results? See the explanation below. |
 | Preserve ghost order | This option only appears if the Show ghosts setting is enabled. By default, ghost choices will appear at the bottom. With this setting enabled, ghost choices are kept in the same order (mixed with valid choices).
@@ -5556,8 +5597,13 @@ For term_order to work with these plugins, make sure to use an actual taxonomy a
 Note that choosing “Term order” will also preserve the order of ACF custom fields that have a user-defined list of choices in a specific order, like Select, Checkbox, and Radio Button field types. If this order is not retained after filtering, and you are using Elementor, see this issue and fix.
 
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
-| Count | The maximum number of choices to display. Default: 10. Be aware that if your Data source is a hierarchical taxonomy, the count includes the child terms/categories. If the count is too low, (some) child options will not show up.
-If you leave this field empty, the default of 10 will be used. You can set the count as high as you like, but be aware that very high counts can lead to issues with page load performance or usability. If you use -1, FacetWP will load all choices but will limit the maximum count at 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead. |
+| Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
+If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
+Note: this setting is available in FacetWP v4.5.1+. |
+| Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, (some) child choices will not show up.
+If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
+This setting is only available if the “Limit choices” setting is enabled. 
+Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
 
 Important: If you are using a hierarchical taxonomy as Data source, and have the [Parent term](#parent-term) or [Hierarchical](#hierarchical) options set, remember to [re-index](/help-center/indexing/#when-to-run-the-indexer) each time after a term’s hierarchy changes, e.g. changing to a new parent term.
 
@@ -6543,7 +6589,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                    Last updated: June 30, 2026
+                    Last updated: July 15, 2026
 
 ---
 
@@ -7046,10 +7092,18 @@ For term_order to work with these plugins, make sure to use an actual taxonomy a
 Note that choosing “Term order” will also preserve the order of ACF custom fields that have a user-defined list of choices in a specific order, like Select, Checkbox, and Radio Button field types. If this order is not retained after filtering, and you are using Elementor, see this issue and fix.
 
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
-| Count | The maximum number of choices to display. Default: 10.
-If you leave this field empty, the default of 10 will be used. You can set the count as high as you like, but be aware that very high counts can lead to issues with page load performance or usability. If you use -1, FacetWP will load all choices but will limit the maximum count at 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead. |
-|  |
-| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. link. Set to -1 or leave empty to display all options. Note: this label is translatable with the facetwp_i18n hook, with __(), or with the gettext filter. |
+| Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
+If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
+Note: this setting is available in FacetWP v4.5.1+. |
+| Limit | The maximum number of choices to display. Default: 50. 
+If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
+This setting is only available if the “Limit choices” setting is enabled. 
+Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+| Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
+Note: this setting is available in FacetWP v4.5.1+. |
+| Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
+Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
+This setting is only available if the “Enable soft limit” setting is enabled. |
 
 Important: Remember to [re-index](/help-center/indexing/#when-to-run-the-indexer) each time after a term’s hierarchy changes, e.g. changing to a new parent term.
 
@@ -7270,7 +7324,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Category Order and Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/category-order-and-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: April 30, 2026
+                    Last updated: July 15, 2026
 
 ---
 
@@ -19922,21 +19976,19 @@ What happens if a Number Range facet uses two data sources, and a user does not 
 
 The Number Range facet type currently does not yet have a setting to change the placeholder texts. You can translate the placeholder texts with a translation plugin like [Loco Translate](https://wordpress.org/plugins/loco-translate/), or with the 
 ```
-gettext
+gettext_{$domain}
 ```
 
- WordPress filter by adding the following code to your (child) theme’s functions.php:
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/) by adding the following code to your (child) theme’s functions.php:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'Number' == $translated_text ) {
-      $translated_text = 'Enter a number';
-    } elseif ( 'Min' == $translated_text ) {
-      $translated_text = 'Minimum';
-    } elseif ( 'Max' == $translated_text ) {
-      $translated_text = 'Maximum';
-    }
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'Number' == $text ) {
+    $translated_text = 'Enter a number';
+  } elseif ( 'Min' == $text ) {
+    $translated_text = 'Minimum';
+  } elseif ( 'Max' == $text ) {
+    $translated_text = 'Maximum';
   }
   return $translated_text;
 }, 10, 3 );
@@ -19988,14 +20040,17 @@ The “Go” input button text is a
 __()
 ```
 
- translatable string that will appear in e.g. [WPML string translations](https://wpml.org/documentation/getting-started-guide/string-translation/) or any other translation plugin. This string can also be translated with WP’s [gettext filter](https://developer.wordpress.org/reference/hooks/gettext/), like this:
+ translatable string that will appear in e.g. [WPML string translations](https://wpml.org/documentation/getting-started-guide/string-translation/) or any other translation plugin. This string can also be translated with the 
+```
+gettext_{$domain}
+```
+
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/), like this:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'Go' == $translated_text ) {
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'Go' == $text ) {
       $translated_text = 'Apply';
-    }
   }
   return $translated_text;
 }, 10, 3 );
@@ -20044,7 +20099,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Date Range facet type](https://facetwp.com/help-center/facets/facet-types/date-range/)
 - [The Range List facet type](https://facetwp.com/help-center/facets/facet-types/range-list/)
 
-                    Last updated: September 9, 2025
+                    Last updated: July 17, 2026
 
 ---
 
@@ -20389,25 +20444,23 @@ __()
 
  translatable strings, which can be translated with a string translation plugin. For WPML, use [WPML String translation](https://wpml.org/documentation/getting-started-guide/string-translation/). Another useful plugin for string translations is [Loco Translate](https://wordpress.org/plugins/loco-translate/).
 
-You can also use the WordPress 
+You can also use the 
 ```
-gettext
+gettext_{$domain}
 ```
 
- filter. The following example translates them to Dutch:
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/). The following example translates them to Dutch:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'Go to page' == $text ) {
-      $translated_text = 'Ga naar pagina';
-    }
-    if ( 'Go to next page' == $text ) {
-      $translated_text = 'Ga naar volgende pagina';
-    }
-    if ( 'Go to previous page' == $text ) {
-      $translated_text = 'Ga naar vorige pagina';
-    }
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'Go to page' == $text ) {
+    $translated_text = 'Ga naar pagina';
+  }
+  if ( 'Go to next page' == $text ) {
+    $translated_text = 'Ga naar volgende pagina';
+  }
+  if ( 'Go to previous page' == $text ) {
+    $translated_text = 'Ga naar vorige pagina';
   }
   return $translated_text;
 }, 10, 3 );
@@ -20607,7 +20660,7 @@ This is possible, but not trivial: WordPress calculates which posts to show on a
 - [How to use a different post per page on the first page](https://facetwp.com/how-to-use-a-different-post-per-page-on-the-first-page/)
 - [How to use get_query_var(‘paged’) with FacetWP](https://facetwp.com/how-to-use-get_query_varpaged-with-facetwp/)
 
-                    Last updated: April 29, 2026
+                    Last updated: July 17, 2026
 
 ---
 
@@ -22753,6 +22806,40 @@ add_filter( 'facetwp_assets', function( $assets ) {
 } );
 ```
 
+## Customize or translate the “Clear location” text in the User Selections facet
+
+If you are using a Proximity facet on a page that has a [User Selections facet](/help-center/facets/facet-types/user-selections/), a location selection in the Proximity facet will display in the User Selections facet as “Clear location”.
+
+To change this text, you can use the following snippet:
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_assets', function( $assets ) {
+  FWP()->display->json['proximity']['clearText'] = __( 'Remove location', 'fwp-front' ); // default = "Clear location"
+  return $assets;
+} );
+```
+
+Note that this text is also a translatable string. To translate it, you can use a translation plugin like [Loco Translate](https://wordpress.org/plugins/loco-translate/), or use the 
+```
+gettext_{$domain}
+```
+
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/). The following example translates the string after a customization with the 
+```
+facetwp_assets
+```
+
+ hook as shown [in the snippet above](#customize-clear-text):
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'Remove location' == $text ) {
+    $translated_text = 'Verwijder locatie';
+  }
+  return $translated_text;
+}, 10, 3 );
+```
+
 ## Display the post distance
 
 If you are using a Proximity facet, you can use the 
@@ -23335,8 +23422,9 @@ You can use [this CSS](/help-center/facets/facet-types/dropdown/#style-select-dr
 - [The Proximity facet type (legacy)](https://facetwp.com/help-center/facets/facet-types/proximity-legacy/)
 - [Introducing the new Proximity and Map facets in FacetWP v4.4](https://facetwp.com/introducing-the-new-proximity-and-map-facets-in-facetwp-v4-4/)
 - [Using FacetWP with Post Types Order](https://facetwp.com/help-center/using-facetwp-with/post-types-order/)
+- [The User Selections facet type](https://facetwp.com/help-center/facets/facet-types/user-selections/)
 
-                    Last updated: July 3, 2026
+                    Last updated: July 17, 2026
 
 ---
 
@@ -23382,8 +23470,13 @@ For term_order to work with these plugins, make sure to use an actual taxonomy a
 Note that choosing “Term order” will also preserve the order of ACF custom fields that have a user-defined list of choices in a specific order, like Select, Checkbox, and Radio Button field types. If this order is not retained after filtering, and you are using Elementor, see this issue and fix.
 
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
-| Count | The maximum number of choices to display. Default: 10. 
-If you leave this field empty, the default of 10 will be used. You can set the count as high as you like, but be aware that very high counts can lead to issues with page load performance or usability. If you use -1, FacetWP will load all choices but will limit the maximum count at 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead. |
+| Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
+If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
+Note: this setting is available in FacetWP v4.5.1+. |
+| Limit | The maximum number of choices to display. Default: 50. 
+If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
+This setting is only available if the “Limit choices” setting is enabled. 
+Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
 
 ## What are value modifiers?
 
@@ -23758,7 +23851,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Advanced Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/advanced-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: March 30, 2026
+                    Last updated: July 15, 2026
 
 ---
 
@@ -23804,8 +23897,13 @@ For term_order to work with these plugins, make sure to use an actual taxonomy a
 Note that choosing “Term order” will also preserve the order of ACF custom fields that have a user-defined list of choices in a specific order, like Select, Checkbox, and Radio Button field types. If this order is not retained after filtering, and you are using Elementor, see this issue and fix.
 
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
-| Count | The maximum number of choices to display. Default: 10. 
-If you leave this field empty, the default of 10 will be used. You can set the count as high as you like, but be aware that very high counts can lead to issues with page load performance or usability. If you use -1, FacetWP will load all choices but will limit the maximum count at 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead. |
+| Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
+If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
+Note: this setting is available in FacetWP v4.5.1+. |
+| Limit | The maximum number of choices to display. Default: 50. 
+If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
+This setting is only available if the “Limit choices” setting is enabled. 
+Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
 
 ## What are value modifiers?
 
@@ -24180,7 +24278,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Advanced Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/advanced-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: March 30, 2026
+                    Last updated: July 15, 2026
 
 ---
 
@@ -24902,14 +25000,12 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 The text of the “& up” and “Undo” links can be changed or translated with a translation plugin, with the [facetwp_i18n hook](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/), or with a WordPress [gettext filter](https://developer.wordpress.org/reference/hooks/gettext/):
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $untranslated_text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( $translated_text == '& up' ) {
-      $translated_text = 'And higher';
-    }
-    if ( $translated_text == 'Undo' ) {
-      $translated_text = 'Reset';
-    }
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( $text == '& up' ) {
+    $translated_text = 'And higher';
+  }
+  if ( $text == 'Undo' ) {
+    $translated_text = 'Reset';
   }
   return $translated_text;
 }, 10, 3 );
@@ -24922,7 +25018,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with WooCommerce](https://facetwp.com/help-center/using-facetwp-with/woocommerce/)
 - [Using FacetWP with Advanced Custom Fields](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
 
-                    Last updated: July 22, 2025
+                    Last updated: July 17, 2026
 
 ---
 
@@ -28133,6 +28229,40 @@ If you have a [Date Range facet](/help-center/facets/facet-types/date-range/)  a
 
 We may be adding a fix in a future update. Until then, you can add [this snippet](/help-center/facets/facet-types/date-range/#format-date-range-facet-selections-in-the-user-selections-facet) to your (child) theme’s functions.php to let the date format also work for User Selections.
 
+## Customize or translate the “Clear location” text for Proximity facets
+
+If you are using a User Selections facet on a page that has a [Proximity facet](/help-center/facets/facet-types/proximity/), a location selection in the Proximity facet will display in the User Selections facet as “Clear location”.
+
+To change this text, you can use the following snippet:
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_assets', function( $assets ) {
+  FWP()->display->json['proximity']['clearText'] = __( 'Remove location', 'fwp-front' ); // default = "Clear location"
+  return $assets;
+} );
+```
+
+Note that this text is also a translatable string. To translate it, you can use a translation plugin like [Loco Translate](https://wordpress.org/plugins/loco-translate/), or use the 
+```
+gettext_{$domain}
+```
+
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/). The following example translates the string after a customization with the 
+```
+facetwp_assets
+```
+
+ hook as shown [in the snippet above](#customize-clear-text):
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'Remove location' == $text ) {
+    $translated_text = 'Verwijder locatie';
+  }
+  return $translated_text;
+}, 10, 3 );
+```
+
     
 ## See also
 
@@ -28147,8 +28277,9 @@ We may be adding a fix in a future update. Until then, you can add [this snippet
 - [The Pager + Load more facet type](https://facetwp.com/help-center/facets/facet-types/pager/)
 - [The Sort facet type](https://facetwp.com/help-center/facets/facet-types/sort/)
 - [The Date Range facet type](https://facetwp.com/help-center/facets/facet-types/date-range/)
+- [The Proximity facet type](https://facetwp.com/help-center/facets/facet-types/proximity/)
 
-                    Last updated: May 7, 2026
+                    Last updated: July 17, 2026
 
 ---
 

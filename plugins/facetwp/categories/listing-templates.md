@@ -3811,19 +3811,17 @@ The default “Nothing found” message is a translatable string that can be tra
 __()
 ```
 
- (e.g. with a translation plugin), or with the WordPress 
+ (e.g. with a translation plugin like [Loco Translate](https://wordpress.org/plugins/loco-translate/)), or with the 
 ```
-gettext
+gettext_{$domain}
 ```
 
- filter:
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/):
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'Nothing found.' == $translated_text ) {
-      $translated_text = 'Niets gevonden.';
-    }
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'Nothing found.' == $text ) {
+    $translated_text = 'Niets gevonden.';
   }
   return $translated_text;
 }, 10, 3 );
@@ -4588,7 +4586,7 @@ WP_Query
 - [Using FacetWP with Advanced Custom Fields](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
 - [The Conditional Logic add-on](https://facetwp.com/help-center/add-on-features-and-extras/conditional-logic/)
 
-                Last updated: April 20, 2026
+                Last updated: July 17, 2026
 
 ---
 

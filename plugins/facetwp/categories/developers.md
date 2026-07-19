@@ -1172,7 +1172,7 @@ wp_facetwp_index
 | facet_value | 50 characters | The facet choice’s technical value, see explanation below. |
 | facet_display_value | 200 characters | The facet choice’s display value, see explanation below. |
 | post_id | 4294967295 | The maximum post ID. See below for an explanation, and how to increase this number. |
-| facet choices | unlimited or 1000 | The maximum number of facet choices in facets with a “Count” setting is as high as you set it. If your page/server can handle it, you can set it as high as you like. However, very high counts can kill the loading of the page just from all the HTML this produces. For this reason, if the “Count” is set to -1, the number of choices is limited to 1000. This applies to the following facet types: Checkboxes, Dropdown, Radio, fSelect, Hierarchy, and Color facets. |
+| facet choices | unlimited or 1000 | The maximum number of facet choices in facets with a “Limit” setting is as high as you set it. If your page/server can handle it, you can set it as high as you like. However, very high counts can kill the loading of the page just from all the HTML this produces. For this reason, if the “Limit” is set to -1, or if the “Limit choices” setting is disabled, the number of choices is limited to 1000. This applies to the following facet types: Checkboxes, Dropdown, Radio, fSelect, Hierarchy, Color, and Exclude facets. |
 | term depth | 50 levels | The maximum number of term levels indexed when a facet uses a hierarchical taxonomy as data source. |
 
 #### The indexing of facetwp_value and facetwp_display_value
@@ -1394,7 +1394,7 @@ term_order
 ```
 
  is much less efficient, and thus will take much longer than ordering by one of the other options like “Display value”.
-- Don’t use a (very) high number in the facet’s [“Count” setting](/help-center/facets/facet-types/checkboxes/#count). Reducing the count will reduce the query time needed to calculate all choice values.
+- Don’t use a (very) high number in the facet’s [“Limit” setting](/help-center/facets/facet-types/checkboxes/#limit). Reducing the limit will reduce the query time needed to calculate all choice values.
 - To reduce the number of choices to be retrieved in a facet, you could also use its [“Value modifiers” setting](/help-center/facets/facet-types/checkboxes/#value-modifiers) and make a distinct selection.
 - If your facet’s data source is a [hierarchical taxonomy](/help-center/developers/facetwp-and-taxonomies/#what-is-a-hierarchical-taxonomy), you could reduce the number of choices by only showing choices at a certain hierarchical level. For deeper levels, you could use the facet’s [“Parent term” setting](/help-center/facets/facet-types/checkboxes/#parent-term). Or you could [use the facetwp_index_row hook to let the facet index and display only a specific term level](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/#index-only-specific-term-levels), for example, [only the top parent level](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/#index-only-top-level).
 
@@ -1515,8 +1515,15 @@ Algolia DocSearch is *very* fast, mainly because all of its databases are in-mem
 - [Using FacetWP with WP Engine](https://facetwp.com/help-center/using-facetwp-with/wp-engine/)
 - [Troubleshooting guide](https://facetwp.com/help-center/troubleshooting/)
 - [FacetWP and taxonomies](https://facetwp.com/help-center/developers/facetwp-and-taxonomies/)
+- [The Checkboxes facet type](https://facetwp.com/help-center/facets/facet-types/checkboxes/)
+- [The Dropdown facet type](https://facetwp.com/help-center/facets/facet-types/dropdown/)
+- [The Radio facet type](https://facetwp.com/help-center/facets/facet-types/radio/)
+- [The fSelect facet type](https://facetwp.com/help-center/facets/facet-types/fselect/)
+- [The Hierarchy facet type](https://facetwp.com/help-center/facets/facet-types/hierarchy/)
+- [The Color facet type](https://facetwp.com/help-center/facets/facet-types/color/)
+- [The Exclude facet type](https://facetwp.com/help-center/facets/facet-types/exclude/)
 
-                    Last updated: June 18, 2026
+                    Last updated: July 15, 2026
 
 ---
 
@@ -8459,25 +8466,23 @@ fwp-front
 
 Another useful plugin for string translations is [Loco Translate](https://wordpress.org/plugins/loco-translate/). If needed, you can use it together with a tool like [PoEdit](https://poedit.net/download) to handle or create the language pot/po/mo files.
 
-Translatable strings can also be translated with a 
+Translatable strings can also be translated with the 
 ```
-gettext
+gettext_{$domain}
 ```
 
- filter, as shown in the following example:
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/), as shown in the following example:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext', function( $translated_text, $text, $domain ) {
-  if ( 'fwp-front' == $domain ) {
-    if ( 'Spain' == $text ) {
-      $translated_text = 'Spanje';
-    }
-    if ( 'United States' == $text ) {
-      $translated_text = 'Verenigde Staen';
-    }
-    if ( 'France' == $text ) {
-      $translated_text = 'Frankrijk';
-    }
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'Spain' == $text ) {
+    $translated_text = 'Spanje';
+  }
+  if ( 'United States' == $text ) {
+    $translated_text = 'Verenigde Staen';
+  }
+  if ( 'France' == $text ) {
+    $translated_text = 'Frankrijk';
   }
   return $translated_text;
 }, 10, 3 );
@@ -8508,7 +8513,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Hierarchy Select facet type](https://facetwp.com/help-center/facets/facet-types/hierarchy-select/)
 - [The Exclude facet type](https://facetwp.com/help-center/facets/facet-types/exclude/)
 
-                    Last updated: March 30, 2026
+                    Last updated: July 17, 2026
 
 ---
 
