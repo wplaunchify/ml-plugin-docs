@@ -213,7 +213,11 @@ Go to the tools page for the Disable Comments plugin and utlize the Delete Comme
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/cbf651e14f0c4e169762d09b30524f067f8dd2cfb1b5b1967a74254a9c34eaa9?s=60&d=retro&r=g)### Simple and Helpful
+	![](https://secure.gravatar.com/avatar/da1844de47919ff7ecfd97eecd0b93b3b7ad45b1bd3d328b6b2a5f52bec71418?s=60&d=retro&r=g)### Really love this plugin
+							[piercand](https://profiles.wordpress.org/piercand/)
+								July 13, 2026
+						It does exactly what it’s needed, easy, affordable and lightweight. A must-use in all my websites.
+							![](https://secure.gravatar.com/avatar/cbf651e14f0c4e169762d09b30524f067f8dd2cfb1b5b1967a74254a9c34eaa9?s=60&d=retro&r=g)### Simple and Helpful
 							[lanalina](https://profiles.wordpress.org/lanalina/)
 								April 8, 2026
 																1 reply
@@ -236,21 +240,8 @@ Go to the tools page for the Disable Comments plugin and utlize the Delete Comme
 							[Robert](https://profiles.wordpress.org/rwldz/)
 								October 2, 2025
 						For me it’s more of a one-use-thing, hopefully I’ll avoid homepages with a gazillion spam comments going forward. Very clear and easy to understand plugin. Great choices for what and where to turn off or remove comments. I’ll recommend this plugin to anyone working with wordpress. Also, developer seem to listen to critique as I was reading the previous reviews.
-							![](https://secure.gravatar.com/avatar/cd5fa6088bbd51f9c258504d5ae416f69ed5e245bfb02cb5e0c693abcc4be83d?s=60&d=retro&r=g)### * Swiftly resolved! * Added advertising into the post editor.
-							[tumshie](https://profiles.wordpress.org/tumshie/)
-								May 30, 2025
-																3 replies
-						Plugin functions well. But. Added intrusive advertising for another plugin into the post editor. That is a hard no from me – so removing the plugin from my client’s websites.
 
--=-=-=Update=-=-=- 
-
-Super pleased to say the plugin author has resolved the issue quickly, removing the advertising. 
-
-Edited to a 5 star from me! 
-
-Plugin functions well and the developers are friendly and responsive.
-
-		[Read all 278 reviews](https://wordpress.org/support/plugin/disable-comments/reviews/)
+		[Read all 279 reviews](https://wordpress.org/support/plugin/disable-comments/reviews/)
 
 ## Contributors & Developers
 
