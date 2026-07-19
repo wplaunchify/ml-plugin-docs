@@ -36,7 +36,7 @@ This section is intended for advanced users and developers only. They are presen
 
 Previous versions of plugins may not be secure or stable. They are not recommended for use on production websites.Please select a specific version to download.
 
-Development Version1.0.41.0.31.0.21.0.11.0.0 [Download](https://downloads.wordpress.org/plugin/featured-image-with-url.zip)
+Development Version1.0.51.0.41.0.31.0.21.0.11.0.0 [Download](https://downloads.wordpress.org/plugin/featured-image-with-url.zip)
 
 ---
 

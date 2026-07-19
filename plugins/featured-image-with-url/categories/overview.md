@@ -33,6 +33,10 @@ This plugin based on the initial fork of [Featured Image by URL](https://wordpre
 - If you have found a bug/issue or have a feature request, then create issue on [Github](https://github.com/harikrut/featured-image-with-url/).
 - Want to add a new language to Featured Image with URL? Swell! You can contribute via [translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/featured-image-with-url).
 
+### 1.0.6 – 2026-07-14
+
+- **IMPROVEMENTS** Enhanced XSS Protection
+
 ### 1.0.5 – 2026-06-22
 
 - **Changed:** Bump WordPress “tested up to” version 7.0
