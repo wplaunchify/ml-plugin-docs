@@ -105,7 +105,7 @@ Thanks for its development.
 	“Manage Notification E-mails” is open source software. The following people have contributed to this plugin.
 
 Contributors
-		- ![](https://secure.gravatar.com/avatar/9afb9d144b82a5bcc6cf0378efaacea46e068d163b4ce067dba2af2e282389dd?s=32&d=mm&r=g)				[3D Virge](https://profiles.wordpress.org/virgial/)“Manage Notification E-mails” has been translated into 12 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/manage-notification-emails/contributors) for their contributions.
+		- ![](https://secure.gravatar.com/avatar/9afb9d144b82a5bcc6cf0378efaacea46e068d163b4ce067dba2af2e282389dd?s=32&d=mm&r=g)				[3D Virge](https://profiles.wordpress.org/virgial/)“Manage Notification E-mails” has been translated into 13 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/manage-notification-emails/contributors) for their contributions.
 
 [Translate “Manage Notification E-mails” into your language.](https://translate.wordpress.org/projects/wp-plugins/manage-notification-emails)
 
