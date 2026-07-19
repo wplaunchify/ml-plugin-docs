@@ -71,7 +71,12 @@ duplicate-page
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/1ce400aa627b98b2c0159548a336e66fb831d2be57f173e88ab29954d372f581?s=60&d=retro&r=g)### Recommended Must-Have WordPress Plugin
+	![](https://secure.gravatar.com/avatar/7d33550df58ff981903e2c4a20100ce62f2f1709e4f37ac142758788d5aebc2f?s=60&d=retro&r=g)### Läuft prima!
+							[werbewahn](https://profiles.wordpress.org/werbewahn/)
+								July 12, 2026
+																1 reply
+						Alles ist, wie wir es brauchten. Wir sind zufrieden.
+							![](https://secure.gravatar.com/avatar/1ce400aa627b98b2c0159548a336e66fb831d2be57f173e88ab29954d372f581?s=60&d=retro&r=g)### Recommended Must-Have WordPress Plugin
 							[Das Capitolin](https://profiles.wordpress.org/das-capitolin/)
 								June 10, 2026
 																1 reply
@@ -96,13 +101,8 @@ duplicate-page
 								May 26, 2026
 																1 reply
 						Makes copying posts way easier. One click n done. Wish it had bulk duplicate but for single pages its perfect. Use it all the time tbh
-							![](https://secure.gravatar.com/avatar/20c16060fb89721c0a745bfd50cac931edd6275cde536d9116834938243b8b5a?s=60&d=retro&r=g)### super handy imo
-							[kayla2](https://profiles.wordpress.org/kayla2/)
-								May 25, 2026
-																1 reply
-						legit making new pages is so fast now. Instead of building the whole layout from scratch, I just clone an old one w/ 1 click. saves a ton of time fr. works perfect with no errors. Absolutely a 5 star tool
 
-		[Read all 467 reviews](https://wordpress.org/support/plugin/duplicate-page/reviews/)
+		[Read all 468 reviews](https://wordpress.org/support/plugin/duplicate-page/reviews/)
 
 ## Contributors & Developers
 
