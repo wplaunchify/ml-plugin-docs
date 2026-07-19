@@ -18,7 +18,7 @@ When a customer purchases a subscription with a defined length, it will [renew]
 
 ## Resubscribe to the Subscription after expiration
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 After their subscription expires, customers can login to your store and [create a new subscription](https://woocommerce.com/document/subscriptions/customers-view/#subscription-management) to that exact product by **resubscribing** from their **My Account** page. This is the simplest way for a customer to extend a subscription with an expiration. After clicking to resubscribe the customer is taken directly to checkout to purchase a new subscription that matches the one that had expired.
 
@@ -54,7 +54,7 @@ Customers can then use the [upgrade process](https://woocommerce.com/document/su
 
 ## What About Altering the Expiration Date?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Although the two other methods mentioned allow your customers to extend their subscriptions, they both create a *new* subscription with the extended expiration date rather than changing the expiration date of the *existing* subscription.
 
@@ -66,7 +66,7 @@ That said, if your payment gateway supports changing payment dates on existing s
 
 ## Questions and support
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 **Something missing from this documentation? Still have questions and need assistance?**
 

@@ -901,7 +901,7 @@ This guide is designed for developers looking for a technical understanding of t
 
 ## Subscription Related Order Cache
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 A subscription can have a variety of [related orders](https://woocommerce.com/document/subscriptions/orders/), including:
 
@@ -976,7 +976,7 @@ get_post_meta()
 
 ### Subscription Related Order Cache Meta Keys
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The meta keys use for each related order cache are:
 
@@ -995,7 +995,7 @@ _subscription_resubscribe_order_ids_cache
 
 ## Customer’s Subscription Cache
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 A subscription’s data is a [superset of a WooCommerce order’s data](https://woocommerce.com/document/subscriptions/orders/). As a result, the way a subscription is linked to a customer is the same as the way an order is linked to a customer, where the 
 ```
@@ -1069,7 +1069,7 @@ get_user_meta()
 
 ## Subscription Cache Management Tools
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 To use the subscription cache management tool to create and delete the subscription caches:
 
@@ -1086,7 +1086,7 @@ To use the subscription cache management tool to create and delete the subscript
 
 ### Subscription Cache Generation via the Generator Tools
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Cache generation will normally happen just-in-time, meaning the first time it’s required, the data will be pulled from the source and then cached for future use. However, each cache can also be generated via the cache Generate Tools mentioned above.
 
@@ -1096,7 +1096,7 @@ That’s because the cache tools are designed to generate the cache without inte
 
 ## Cache Data Stores
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 To abstract the caching layer, and incorporate it in a way that can easily be extended, swapped or removed, the caching logic is implemented within data store classes for each type of data being cached.
 
@@ -1127,7 +1127,7 @@ Each of these classes are used as the data stores for accessing respective data,
 
 ### Using a Custom Related Order Data Store
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The 
 ```
@@ -1162,7 +1162,7 @@ function wcs_bypass_related_order_cache_layer( $class ) {
 
 ### Using a Custom Customer Subscription Data Store
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 The 
 ```
@@ -1197,11 +1197,11 @@ function wcs_bypass_customer_subscriptions_cache_layer( $class ) {
 
 ## FAQs
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Why does subscription data need to be cached?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 WooCommerce Subscriptions builds on [WordPress custom post types](https://wordpress.org/documentation/article/what-is-post-type/) to [store subscription data](https://woocommerce.com/document/subscriptions/develop/data-structure/#subscription-product-data-structure-and-storage). As a result, much of its data is stored in the same database tables as other content types, like blog posts, website pages, WooCommerce orders, and data from other plugins.
 
@@ -1218,7 +1218,7 @@ To address this, many items of known subscription data will be migrated to separ
 
 ### How does the subscription cache work?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Normally, to find a piece of data, like the IDs of orders related to a subscription, a database query is run against the source of that data.
 
@@ -1242,7 +1242,7 @@ After updating to Subscriptions 2.3, known slow queries will run just once. From
 
 ### How long does the subscription cache last?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 In some systems, like [WordPress’ transient system](https://developer.wordpress.org/apis/transients/), cached data will expired after a pre-defined period of time.
 
@@ -1252,7 +1252,7 @@ It is possible to maintain the cache indefinitely by keeping it up-to-date whene
 
 ### Why isn’t the Parent Order in the related order cache?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Parent Orders are linked to a subscription using the 
 ```

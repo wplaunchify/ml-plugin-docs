@@ -329,13 +329,13 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 ## Overview of Minimum Periods
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 [Minimum Periods for WooCommerce Subscriptions](https://woocommerce.com/products/minimum-periods-for-woocommerce-subscriptions) is an extension for WooCommerce that allows shop owners & administrators to restrict the display of the “Cancel” button for active subscriptions on the customer’s account page. Shop owners & administrators can provide access to that button by configuring the number of minimum payments/renewals that should be made before the “Cancel” button is available.
 
 ## Installation
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 Once you’ve [purchased Minimum Periods for WooCommerce Subscriptions](https://woocommerce.com/products/minimum-periods-for-woocommerce-subscriptions), you can download the plugin from your confirmation email or [WooCommerce account](https://woocommerce.com/my-account/downloads/). To install it, follow these steps:
 
@@ -351,11 +351,11 @@ More information at: [Installing and Managing Plugins](https://wordpress.org/sup
 
 ## Setup and Configuration
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Storewide Settings
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 ![](https://woocommerce.com/wp-content/uploads/2023/11/mpws-ss1.png?strip=all&w=704)
 
@@ -383,7 +383,7 @@ Setting the number of **Minimum Period(s)** to
 
 ### Per Subscription Settings
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 ![Minimum period settings on a per-subscription product basis.](https://woocommerce.com/wp-content/uploads/2020/08/mp-screenshot-2.png?strip=all&w=704)
 
@@ -394,7 +394,7 @@ To configure minimum periods on a *per-product* basis, navigate to **Products > 
 
 ### Per Variable Subscription Settings
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 ![](https://woocommerce.com/wp-content/uploads/2020/08/mp-screenshot-3-1.png?strip=all&w=704)
 
@@ -407,7 +407,7 @@ Since version 1.1, minimum periods can also be configured on a per variable subs
 
 ## Usage
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 On the customer’s account page under **My-Account > Subscriptions**, the customer will see the “Cancel” button if any of the following conditions are met:
 
@@ -424,13 +424,13 @@ In instances where the **Allow Cancelling** checkbox is *not* selected or the **
 
 ## Shortcodes
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 **Minimum Periods for WooCommerce Subscriptions** provides two powerful shortcodes that allow you to display minimum period information anywhere on your website. Below are the details and usage instructions for each shortcode.
 
 ### 1. [mpws_minimum_period]
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 This shortcode displays the minimum number of periods/terms that need to be completed before a customer can cancel their subscription. This shortcode is versatile and can be used on any page or post to inform customers about the cancellation policy.
 
@@ -475,7 +475,7 @@ id
 
 ### 2. [mpws_minimum_period_table]
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 This shortcode displays a table of subscription variations along with their respective minimum periods. This is especially useful for variable subscription products where each variation may have different minimum period requirements
 
@@ -523,7 +523,7 @@ id
 
 ## Frequently Asked Questions
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 #### Will the cancel button be hidden immediately upon activation of the extension?
 
