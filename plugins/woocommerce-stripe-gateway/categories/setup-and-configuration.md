@@ -65,22 +65,22 @@ However, there are also a number of options available that can help customize th
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -188,22 +188,22 @@ Some payment methods have limitations in their functionality. These are listed b
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -327,22 +327,22 @@ As a next step, we recommend [configuring test mode](https://woocommerce.com/doc
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -365,7 +365,7 @@ This guide will cover the requirements for offering express payment methods and 
 
 ## Site requirements
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 To properly display express payment methods via the Stripe extension:
 
@@ -374,7 +374,7 @@ To properly display express payment methods via the Stripe extension:
 
 ### Additional Apple Pay requirements
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 In addition to the site requirements above, Apple Pay also requires that:
 
@@ -391,7 +391,7 @@ In addition to the site requirements above, Apple Pay also requires that:
 
 ### Additional Google Pay requirements
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 In addition to the site requirements above, Google Pay also requires that:
 
@@ -399,7 +399,7 @@ In addition to the site requirements above, Google Pay also requires that:
 
 ### Additional Link by Stripe requirements
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 In addition to the site requirements above, Link by Stripe also requires that:
 
@@ -407,7 +407,7 @@ In addition to the site requirements above, Link by Stripe also requires that:
 
 ### Additional Amazon Pay requirements
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 In addition to the site requirements above, Amazon Pay also requires that:
 
@@ -416,7 +416,7 @@ In addition to the site requirements above, Amazon Pay also requires that:
 
 ## Enabling express checkouts
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 To enable express payment methods in the Stripe extension:
 
@@ -429,7 +429,7 @@ To enable express payment methods in the Stripe extension:
 
 ## Customizing Apple Pay and Google Pay
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 After saving your payment method settings, you can customize how Apple Pay and Google Pay buttons appear on your site by selecting the **Customize**button.
 
@@ -452,7 +452,7 @@ A preview of the buttons is also shown so that you can see how these customizati
 
 ## Compatibility
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 Express checkout methods are very similar to card payments. As a result, they work well with most features, such as [test mode](https://woocommerce.com/document/stripe/customer-experience/testing/) and [separate authorize/capture](https://woocommerce.com/document/stripe/admin-experience/authorize-and-capture/).
 
@@ -479,7 +479,7 @@ woocommerce_register_additional_checkout_field
 
 ## Can I use only the express checkout methods and not take card payments?
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 Generally not. The credit card/ debit card payment method must be enabled in order to use express checkout methods.
 
@@ -487,7 +487,7 @@ There is one exception: if you are using the [Optimized Checkout Suite](https://
 
 ## Show Express Checkout Buttons for Virtual Products
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 **NOTE**: Enabling Express Checkout for digital products may result in inaccurate tax calculation if the store’s tax settings depend on the customer’s billing address—which is not made available to the Express method before they are selected.
 
@@ -512,22 +512,22 @@ add_filter( 'wc_stripe_should_hide_express_checkout_button_based_on_tax_setup', 
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -577,22 +577,22 @@ If you’ve determined that the Stripe extension is *not* already installed on y
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -741,22 +741,22 @@ The **Layout** option controls how various payment methods are shown in the Opti
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -825,22 +825,22 @@ Any other endpoints you see [in the Stripe dashboard](https://dashboard.stripe.c
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 

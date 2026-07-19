@@ -48,22 +48,22 @@ You can also find the Stripe extension source code [on GitHub](https://github.co
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -83,7 +83,7 @@ Before proceeding with the cleanup, however, please [contact Stripe](https://sup
 
 ## Cleaning up the database on a single site
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 This is an example SQL query you might run on a single site installation of WordPress. Replace the 
 ```
@@ -114,7 +114,7 @@ WHERE
 
 ## Cleaning up the database on a multisite
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 This is an example SQL query you might run on a single site installation of WordPress. Replace the 
 ```
@@ -161,22 +161,22 @@ WHERE
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -213,22 +213,22 @@ function ah_change_stripe_icons( $icons ) {
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -289,22 +289,22 @@ Here’s how the metadata from that snippet appears in the Stripe dashboard:
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -613,22 +613,22 @@ iframe
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Product Add-Ons
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
+### WooCommerce Tax
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna)
+
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
