@@ -4,6 +4,316 @@
 
 ---
 
+## Run Cohort-Based Courses & Group Coaching Programs
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/run-cohort-based-courses-group-coaching-programs/](https://www.uncannyowl.com/knowledge-base/run-cohort-based-courses-group-coaching-programs/)
+
+Cohort-based courses and group coaching are some of the most profitable formats in online education — learners pay a premium to move through material *together* with guidance. Uncanny Groups gives you the structure to run them: organize each intake as a group, give coaches their own dashboard, and track the whole cohort as one.
+
+### Why cohorts need more than a course
+
+A self-paced course sells once. A cohort program sells an *experience* — a defined start, a shared group, and a coach who keeps people on track. To deliver that without drowning in spreadsheets, you need to:
+
+- Group each intake separately so cohorts don’t blur together.
+- Give coaches visibility into their cohort’s progress.
+- Add and remove participants as enrollments open and close.
+
+That’s exactly what Groups provides.
+
+### One group per cohort
+
+Spin up a group for each intake — “Spring 2026 Cohort”, “March Coaching Circle” — and enroll the program’s courses into it. Each cohort stays neatly separated, with its own members, its own progress, and its own reports. When the next intake opens, create a new group and you’re ready to go.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/07/2-cohorts-1030x372.png)
+
+### Give every coach their own command center
+
+Assign each coach as a **Group Leader** for their cohort. From a single front-end page — no WordPress login needed — they can:
+
+- See who has started, who’s mid-way, and who’s stalled.
+- Re-send invitations and trigger password-reset emails.
+- Welcome late joiners and remove drop-outs.
+
+This lets coaches focus on coaching, while you stay out of the day-to-day. See [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/).
+
+### Keep the whole cohort moving
+
+Group reports show the cohort’s progress side by side, so coaches can spot who’s falling behind and reach out before they drop. Quiz reports surface where the group is struggling, so you can adjust a live session or follow-up. See [Using the Group Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/).
+
+For programs with essays or assignments, coaches can review and grade submissions right from the front end:
+
+- [Front End Essay Question Management](https://www.uncannyowl.com/knowledge-base/front-end-essay-question-management/)
+- [Front End LearnDash Assignment Management](https://www.uncannyowl.com/knowledge-base/front-end-learndash-assignment-management/)
+
+### Sell seats to each intake
+
+Pair Groups with WooCommerce and you can sell a fixed number of seats per cohort — creating natural scarcity (“only 20 spots”) that drives signups. When a cohort sells out, close it and open the next. See [Sell LearnDash Group Access to Learners](https://www.uncannyowl.com/knowledge-base/sell-learndash-group-access-to-learners/).
+
+### Why this wins
+
+- **Premium pricing** — cohorts and coaching command higher prices than self-paced courses.
+- **Clean separation** — every intake is its own group, with its own reports.
+- **Coaches stay empowered** — front-end management, no admin access.
+- **Built-in scarcity** — seat-limited cohorts create urgency that sells.
+
+### How to set it up
+
+1. Install Uncanny Groups — see [Getting Started](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/).
+2. Create a group for your first cohort and enroll its courses.
+3. Assign the coach as the cohort’s [Group Leader](https://www.uncannyowl.com/knowledge-base/group-management-page/).
+4. (Optional) [Sell seats](https://www.uncannyowl.com/knowledge-base/sell-learndash-group-access-to-learners/) to fill the cohort.
+5. Use [reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) to keep the cohort on track.
+
+### Related Articles
+
+- [Front End LearnDash Group Creation](https://www.uncannyowl.com/knowledge-base/front-end-learndash-group-creation/)
+- [Pooled Seats](https://www.uncannyowl.com/knowledge-base/pooled-seats/)
+- [Onboard & Train Your Team with LearnDash Groups](https://www.uncannyowl.com/knowledge-base/onboard-train-your-team-with-learndash-groups/)
+
+---
+
+## Onboard & Train Your Team with LearnDash Groups
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/onboard-train-your-team-with-learndash-groups/](https://www.uncannyowl.com/knowledge-base/onboard-train-your-team-with-learndash-groups/)
+
+Whether you’re onboarding new hires, rolling out annual compliance training, or upskilling a department, Uncanny Groups gives you a structured way to organize learners, hand day-to-day management to the right people, and prove who completed what.
+
+### The challenge with team training
+
+Training a team in plain LearnDash quickly gets messy. You end up managing every enrollment yourself, you can’t easily see who’s behind, and there’s no clean way to let a department head run their own group. For onboarding and compliance, you also need **evidence of completion** you can stand behind.
+
+Uncanny Groups solves all of this by mapping naturally onto how organizations already work: teams, managers, and reporting lines.
+
+### Organize learners the way your org actually works
+
+Create a group for each team, cohort, department, or location — “Sales Onboarding”, “2026 Compliance”, “Warehouse – Safety”. Each group has its own courses, its own members, and its own leader. Parent and child groups let you mirror a larger structure (e.g. a regional group containing several store-level groups) and **roll child-group progress up into the parent’s reports**.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/07/group-hierarchy.png)
+
+### Delegate management to team leads
+
+You don’t have to be the bottleneck. Assign a **Group Leader** — a manager, team lead, or HR coordinator — and they get a front-end page to:
+
+- Add new hires and remove people who leave.
+- Send invitations and password-reset emails.
+- See exactly who has and hasn’t finished.
+
+All of this happens **without WordPress admin access**, so you keep your dashboard locked down while still empowering managers. See [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/).
+
+### Prove completion for compliance and audits
+
+For mandatory training, “I think they did it” isn’t good enough. Group Leaders and admins can pull **course and quiz reports** showing each learner’s status and scores, and export them to CSV for HR records or audits. See [Using the Group Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/).
+
+**Tip:** Pair Groups with [Uncanny Continuing Education Credits](https://www.uncannyowl.com/article-categories/uncanny-ceus-learndash/) when you need to award and track formal credits, or with [Tin Canny Reporting](https://www.uncannyowl.com/article-categories/tin-canny-learndash-reporting/) for deeper, site-wide analytics.
+
+### Onboard new hires on autopilot
+
+New people join all year round. Instead of manually enrolling each one, a manager simply adds them to the onboarding group — they’re enrolled in the right courses instantly and receive a welcome email with their login. As they finish, the manager watches progress fill in on the same page.
+
+### Why this wins
+
+- **Less admin for you** — managers run their own teams.
+
+- **Clear accountability** — every learner’s status is visible to the right leader.
+
+- **Exportable completion records** — pull status, scores, and completion dates to CSV for your HR or compliance files.
+
+- **Scales cleanly** — parent/child groups handle multi-team and multi-location structures.
+
+### How to set it up
+
+1. Install Uncanny Groups — see [Getting Started](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/).
+2. Create a group per team and enroll the relevant courses.
+3. Assign each team’s manager as the [Group Leader](https://www.uncannyowl.com/knowledge-base/group-management-page/).
+4. Have managers [add their team members](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/) by invite or CSV.
+5. Use [reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) to track completion and export records.
+
+### Related Articles
+
+- [Manage Learner Progress](https://www.uncannyowl.com/knowledge-base/manage-learner-progress/)
+- [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/)
+- [Sell Online Courses to Businesses & Teams](https://www.uncannyowl.com/knowledge-base/sell-online-courses-to-businesses-teams-with-learndash/)
+
+---
+
+## Sell Online Courses to Businesses & Teams with LearnDash
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/sell-online-courses-to-businesses-teams-with-learndash/](https://www.uncannyowl.com/knowledge-base/sell-online-courses-to-businesses-teams-with-learndash/)
+
+Selling a course one seat at a time leaves money on the table. The biggest orders come from organizations that need to train **whole teams** — and they expect to buy in bulk and manage their own people. Uncanny Groups makes that possible, turning your LearnDash site into a B2B course storefront.
+
+### The opportunity
+
+A single corporate sale can be worth dozens or hundreds of individual enrollments. But businesses won’t buy if it means emailing you a spreadsheet of names every time someone joins or leaves. They want to:
+
+- Buy a block of seats in one transaction.
+- Add and remove their own employees on demand.
+- See who has finished training — without asking you.
+
+Uncanny Groups delivers exactly this experience, so you can close bigger deals and spend less time on manual account admin.
+
+### What the buyer experience looks like
+
+1. **A company finds your course** and chooses how many seats it needs.
+2. **They check out through WooCommerce** like any other product — including volume discounts you set.
+3. **They instantly become a Group Leader** with a front-end management page.
+4. **They invite their team** by email, enrollment key, or CSV upload — no help from you.
+5. **They track completion** in built-in reports and add more seats whenever they grow.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/07/group-management-page-852x1030.png)
+
+### Two ways to sell
+
+You can offer either model — or both — depending on how much choice you want buyers to have.
+
+| Model | Best for | How it works |
+| --- | --- | --- |
+| Pre-configured licenses | A fixed catalog of team packages (e.g. “Compliance Training – 50 seats”) | You define the course bundle and seat count; the buyer simply purchases it. |
+| Custom licenses | Buyers who want to pick their own courses and seat counts | The buyer builds their own package on a Buy Courses page and checks out. |
+
+See [Create Pre-configured LearnDash Group Licenses](https://www.uncannyowl.com/knowledge-base/creating-pre-configured-learndash-group-licenses/) and [Enable Users to Build Custom Group Licenses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/).
+
+### Close bigger deals with volume pricing
+
+Businesses expect a better per-seat price as the order grows. With Uncanny Groups you can set **bulk discount tiers** — for example, 10% off at 25 seats and 20% off at 100 — to nudge buyers toward larger purchases. See [Configure Bulk Discounts](https://www.uncannyowl.com/knowledge-base/configure-bulk-discounts/).
+
+### Let accounts grow without friction
+
+Organizations rarely buy the perfect number of seats up front. When they need more, Group Leaders can **add seats and courses** to an existing license themselves, so expansion revenue flows in without a support ticket. Please note that additional courses cannot be added to subscription-based group licenses. See [Add Seats and Courses after Group Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/).
+
+### Why this wins
+
+- **Bigger average order value** — sell 50 seats, not 1.
+- **Near-zero admin overhead** — customers manage their own people.
+- **Recurring revenue** — pair licenses with WooCommerce Subscriptions for renewing seats.
+- **A professional buyer experience** that competes with dedicated corporate-LMS platforms, on your own site.
+
+### How to set it up
+
+1. Install Uncanny Groups and the official LearnDash WooCommerce integration — see [Getting Started](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/).
+2. [Set up your LearnDash Group Course products](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/).
+3. Choose your selling model: [pre-configured](https://www.uncannyowl.com/knowledge-base/creating-pre-configured-learndash-group-licenses/) or [custom licenses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/).
+4. [Configure bulk discounts](https://www.uncannyowl.com/knowledge-base/configure-bulk-discounts/) to reward larger orders.
+5. Point buyers to a Buy Courses page and start selling.
+
+### Related Articles
+
+- [Sell LearnDash Group Access to Learners](https://www.uncannyowl.com/knowledge-base/sell-learndash-group-access-to-learners/)
+- [Adding Seats after Subscription-based Group Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-after-subscription-based-group-purchase/)
+- **Onboard & Train Your Team with LearnDash Groups**
+
+---
+
+## Getting Started with Uncanny Groups for LearnDash
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/)
+
+New to Uncanny Groups? This guide takes you from a fresh install to a fully working group — with learners enrolled and progress reports running — in about 15 minutes. No coding, and no need to give anyone access to your WordPress dashboard.
+
+**Looking for the bigger picture first?** The [Uncanny Groups – START HERE!](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/) article explains the three ways to use Groups (manual, selling custom licenses, and selling pre-configured licenses). This guide walks through the **manual** path — the fastest way to see Groups in action.
+
+### What Uncanny Groups does
+
+LearnDash includes a basic “Groups” feature, but it lives entirely in the WordPress admin and offers little more than bulk enrollment. Uncanny Groups turns that into a complete team-training toolkit:
+
+- **Group Leaders manage their own people** from a clean front-end page — no WordPress admin access required.
+- **Seats and enrollment keys** let leaders add, invite, and remove learners without your involvement.
+- **Built-in reports** show course and quiz progress for the whole group at a glance.
+- **WooCommerce integration** (optional) lets you *sell* group licenses, so organizations buy seats and self-manage from there.
+
+This guide covers the essentials so you can see the value immediately. Links throughout point to deeper articles when you’re ready.
+
+### Key terms (read this first)
+
+A few words appear constantly in Groups. Here’s what they mean:
+
+| Term | Plain-English meaning |
+| --- | --- |
+| Group | A set of learners enrolled in the same course(s) — e.g. “Acme Corp – Onboarding 2026”. |
+| Group Leader | A person who manages a group from the front end (adds learners, views reports). Usually a manager, trainer, or client contact. |
+| Seat | One spot in a group. A 25-seat group can hold 25 learners. |
+| Enrollment key | A code that enrolls one learner into a group. Leaders hand these out or send invites; keys are used as learners join. |
+| License | A purchasable bundle of seats + course(s), used when you sell group access through WooCommerce. |
+
+### What you’ll need
+
+- A working WordPress site with **LearnDash**and at least one published course.
+- The **Uncanny Groups** plugin file and your license key (both are in your purchase email and your [Uncanny Owl account](https://www.uncannyowl.com/account/)).
+
+#### Step 1 — Install and activate
+
+1. In your WordPress dashboard, go to **Plugins > Add New > Upload Plugin**.
+2. Upload the Uncanny Groups ZIP file and click **Install Now**, then **Activate**.
+3. When prompted, open the **License Activation** screen and paste your license key. Activation enables automatic updates.
+
+On activation, the plugin automatically creates the front-end pages it needs (Group Management, registration, and reports) and sets up default email templates — so you’re ready to go without building anything by hand.
+
+For the full install walkthrough, see [Install and Set Up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/).
+
+#### Step 2 — Create your first group
+
+You can create a group in two ways, with the Uncanny Group Creation Wizard or by creating and upgrading an LearnDash group. For your first time, the Uncanny Group Creation Wizard is fatsest:
+
+1. Go to **Uncanny Groups > Create Group** to launch the Uncanny Group Creation Wizard.
+2. Fill out the **Group details** section by adding a **Group name**, the **Total seats** you want the group to have (each seat can be assigned to a single user), **Group Courses** and if desired a **Group image**. If group hierarchy is enabled in LearnDash group options, then you can also assign a **Parent group**.
+3. You can also assign an existing user as the Group Leader or create a new Group Leader user by filling out the **First name**, **Last name**and**E-mail**fields under the **Group leader details** section.
+4. Click****the**Create group** button to create a new upgraded group.
+
+**Already have native LearnDash groups?** You can *upgrade*existing or new LearnDash groups to unlock the Uncanny front-end features. See [Upgrade Existing LearnDash Groups](https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/).
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/07/create-group-wizard-1030x634.png)
+
+#### Step 3 — Add and invite learners
+
+This is where Group Leaders do most of their work. From the front-end **Group Management** page, a leader can:
+
+- **Add and invite a user** — creates the account and emails them an invitation.
+- **Send an enrollment key** — emails a code an existing user can redeem.
+- **Bulk add** multiple users at once, or **upload a CSV** for large groups.
+- 
+
+The CSV format is simple: user_email,user_pass,first_name,last_name.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/07/add-a-user-group-management-1030x672.png)
+
+As learners join, **seats fill up** and **enrollment keys are marked used**. Leaders always see how many seats remain at the top of the page. Full details: [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/).
+
+#### Step 4 — Watch progress with reports
+
+Once learners start, Group Leaders can track everyone from the same front-end page.
+
+1. Review each learner’s group progress status — **Not started**, **In progress**, or **Completed**.
+2. To view group reports, click the **Reports** button. A dropdown list of all enabled reports will appear (reports are enabled on the page Uncanny Groups > Settings under the heading **Page Setup** – follow details on that page for setting up report pages) .
+- Click the **Course** option to view the **Course Report** where you can view group members course progress by selecting a group (if your the leader of more than one group) and course assigned to the selected group.
+- Click the **Quiz** option to view the **Quiz Report** for scores, and export any report to CSV.
+- Click the **Progress** option to view the **Progress Report**for individual user progress in all group courses.
+- Click the **Assignments** option to view the **Assignment Report**to manage uploaded LearnDash assignments in the front end.
+- Click the **Essays** option to view the **Essay Report t**o manage essay question answers from LearnDash quizzes in the front end.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/07/group-course-report-1030x664.png)
+
+That’s it — you now have a working group, enrolled learners, and live reporting that your Group Leaders can run on their own. See [Using the Group Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) for everything reports can do.
+
+**Note:** Non-upgraded LearnDash groups can still be viewed on the Group Management page by Group Leaders. Just enable the option”Show “basic” (non-upgraded) groups in front end with access to reports only” on the Uncanny Groups > Settings page (found under the heading “General”. These groups will only have reporting functions, Group Leaders cannot add/remove members of “Basic” groups.
+
+### Where to go next
+
+Pick the path that matches your goal:
+
+- **Want to sell course access to organizations?** Start with [Sell LearnDash Group Access to Learners](https://www.uncannyowl.com/knowledge-base/sell-learndash-group-access-to-learners/) and [Set up LearnDash Group Course Products](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/).
+- **Want leaders to buy and build their own licenses?** See [Enable Users to Build Custom Group Licenses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/).
+- **Training your own team?** Read **Onboard & Train Your Team with LearnDash Groups**.
+- **Customizing emails or behavior?** See [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/) and [Actions/Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/).
+
+### Related Articles
+
+- [Uncanny Groups – START HERE!](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/) — choose the right setup for your goal
+- [Install and Set Up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/) — full installation and settings reference
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — the Group Leader’s command center
+- [Frequently Asked Questions](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/) — quick answers to common setup questions
+
+---
+
 ## Use Case: Selling Accredited & Continuing Education Courses
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/use-case-selling-accredited-continuing-education-courses/](https://www.uncannyowl.com/knowledge-base/use-case-selling-accredited-continuing-education-courses/)
@@ -3053,8 +3363,8 @@ Once your codes are in use, you’ll want to monitor and manage them:
 ### Related Articles
 
 - [Set up Uncanny Redemption Codes for WordPress](https://www.uncannyowl.com/knowledge-base/set-up-uncanny-codes-for-wordpress/) — Installation, settings, and configuration
-- [Troubleshooting & FAQ](KB_LINK) — Common issues and solutions
-- [Developer Hooks & Filters Reference](KB_LINK) — Extensibility points for developers
+- [Troubleshooting & FAQ](https://www.uncannyowl.com/knowledge-base/troubleshooting-faq/) — Common issues and solutions
+- [Developer Hooks & Filters Reference](https://www.uncannyowl.com/knowledge-base/developer-hooks-filters-reference/) — Extensibility points for developers
 
 ---
 
@@ -3355,68 +3665,84 @@ If you need to access the account of someone who previously purchased a plugin b
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/translating-uncanny-owl-groups-plugin-using-wpml/](https://www.uncannyowl.com/knowledge-base/translating-uncanny-owl-groups-plugin-using-wpml/)
 
-[Uncanny Groups](https://www.uncannyowl.com/downloads/uncanny-learndash-groups/) plugin fully supports translations for multi-language sites using the [WPML plugin](/share/wpml). Once you have [purchased a WPML license](/share/wpml), the first step is to install and set up the WPML plugin on your site by following these instructions from WPML: [Installing & Configuring WPML](https://wpml.org/documentation/getting-started-guide/#installing-and-configuring-wpml).
+### Overview
 
-After installing WPML Multilingual CMS and WPML String Translation plugins and adding your additional language(s), there are 2 options for adding your [Uncanny Groups](https://www.uncannyowl.com/downloads/uncanny-learndash-groups/) translations:
+Uncanny Groups for LearnDash is fully compatible with WPML. You can translate all plugin strings — labels, buttons, messages, and form text — using WPML’s built-in String Translation interface.
 
-- Create and upload a PO file, or
-- Add translations for each text string
+### Prerequisites
 
-Both options must be set up and managed by a WordPress administrator.
+Before translating, ensure the following plugins are installed and active:
 
-There is not a “preferred” method to choose, as both will require adding translations manually. However, the method of adding translations via a PO file does allow for strings to be edited in a PO document offline, making it possible for non-admin users to collaborate on translations before they are added to WordPress.
+- **WPML Multilingual CMS**
+- **WPML String Translation**
 
-In the next 2 sections, we’ll cover how to translate Uncanny Groups with each option.
+You will also need at least one secondary language configured in **WPML > Languages**.
 
-## Option 1 – Adding translations via PO file
+### Choosing a Translation Method
 
-**Step 1 – Exporting a PO File**
+WPML offers two ways to translate plugin strings. You can use either method independently or combine them.
 
-1. Log in as an Admin user and visit /wp-admin/.
-2. Navigate to **WPML > String Translation**.
-3. Scroll down to the “Import / export .po” section.
-4. In the *Select domain* drop-down, choose **uncanny-learndash-groups**.
-5. Check the box labelled **Also include translations** and then select the language for the PO file.
-6. Click **Submit** and the language specific PO file will download to your computer.
-![Exporting text strings for Uncanny Groups plugin using WPML](https://www.uncannyowl.com/wp-content/uploads/2023/06/steps-1-5-1030x450.png)Export Uncanny Groups text strings as a PO file (this example shows including translations for German).
+| Method | Best for |
+| --- | --- |
+| PO file export/import | Translating many strings at once, or collaborating with a translator outside WordPress |
+| Manual string translation | Translating a small number of strings, or making quick edits to existing translations |
 
-**Step 2 – Importing a PO File**
+### Method 1: PO File Export and Import
 
-1. Add you language specific translations to the PO file using any advanced text editor (e.g. [POEDIT](https://poedit.net/)).
-2. When the PO file is ready for upload, return **WPML > String Translation** in /wp-admin/ and scroll to the *Import / export .po* section.
-3. Under *Import,* find the field labelled “.po file”.
-4. Click the **Choose File** button and select the PO file from your computer.
-5. Check **Also create translations according to the .po file** and then select the language related to the string translations in the PO file.
-6. Under the header *Select what the strings are for,*select **uncanny-learndash-groups** from the drop-down menu.
-7. Click **Submit**.
+This method lets you export all translatable strings to a .po file, edit translations offline using a tool like [Poedit](https://poedit.net/), and then re-import the file into WPML.
 
-![](https://www.uncannyowl.com/wp-content/uploads/2023/06/steps-8-13-1030x446.png)Import Uncanny Groups text strings from language specific PO file (this example shows importing translations for German).
-**Step 3 – Confirm the PO File and String Translations were added**
+#### Export the PO file
 
-1. After clicking **Submit** in the previous section, a page will load that allows you to review/select/deselect strings from the PO file. After you have reviewed the strings (or just wish to proceed), click the **Add selected strings** button.
-2. You will return to the **WPML > String Translation** page. All translations can be edited by first selecting **uncanny-learndash-groups** from the *In domain* drop-down, then clicking “Search”. When the Uncanny Groups strings load, you can edit language specific string translations by clicking the pencil icon (under the column associated with the language’s country flag). If the a text string does not contain a translation, then a plus “+” icon will show rather than a pencil.
+1. In the WordPress admin, go to **WPML > String Translation**.
+2. In the **Domain** dropdown, select uncanny-learndash-groups.
+3. Check **Also include translations** to include any strings already translated.
+4. Click **Download** to save the .po file to your computer.
 
-![Confirmation of the PO file import](https://www.uncannyowl.com/wp-content/uploads/2023/06/step-14-1030x449.png)Step 1 – After confirming all text strings are good, click **Add selected strings** to complete the import process
+![](https://www.uncannyowl.com/wp-content/uploads/2023/06/steps-1-5-1030x450.png)
 
-![](https://www.uncannyowl.com/wp-content/uploads/2023/06/step-3-2-1030x652.png)Step 2 – You can now review/edit/add text strings for Uncanny Groups.
+#### Add translations offline
 
-## Option 2 – Manual String Translations
+1. Open the .po file in Poedit or another .po editor.
+2. Add or update translations for each string.
+3. Save the file.
 
-1. As an Admin user, visit /wp-admin/.
-2. Navigate **WPML > String Translation**.
-3. Select **uncanny-learndash-groups** from the*In domain* drop-down and a list of all text strings related to Uncanny Groups will appear.
-4. When Uncanny Group strings load, add your language specific translation by clicking the plus “+” icon (under the column associated with the country flag).
-5. Add the string translation to the box on the right side of the modal box (under the text *Translation to:*).
-6. Click anywhere outside the modal to close the edit feature and the string will save (you will see confirmation of the successful save via an alert).
+#### Import the translated PO file
 
-![Manually translate text strings on the String Translator page](https://www.uncannyowl.com/wp-content/uploads/2023/06/manual-string-translation-steps-1-3-1030x664.png)Steps 2 – Start adding individual string translations by navigating to **WPML > String Translation**.  Step 3 –  Select **uncanny-learndash-groups** from the *In domain* field.
-![Add language specific text string by clicking the plus icon and add text to Translation field.](https://www.uncannyowl.com/wp-content/uploads/2023/06/add-translation.png)Steps 4 – Add a new string translation by clicking the plus “+” icon. S tep 5 – Add the language specific text into the translation field.
+1. Return to **WPML > String Translation**.
+2. Click **Import** and select your edited .po file.
+3. When prompted, select **Also create translations according to the .po file** to apply all translated strings automatically.
+4. Click **Import**. A review page will appear.
+5. Review the strings to be added and click **Add selected strings** to finalize the import.
 
-## Using Both Options Together
+![](https://www.uncannyowl.com/wp-content/uploads/2023/06/steps-8-13-1030x446.png)
 
-If you upload a PO file, all translations will appear in **WPML > String Translation** for the Uncanny Groups plugin. You can then make edits to individual text strings by clicking the plus “+” icon beside the string in the associated language column. This method is recommended when editing a few text strings as opposed to having to update the PO file and re-upload your edits.
+### Method 2: Manual String Translation
 
-Furthermore, you can download a language specific PO file after manually adding (or editing) string translations. This PO file will contain all the translations that appear in the String Translation editor for Uncanny Groups.
+This method lets you translate individual strings directly inside the WordPress admin without any file downloads.
+
+1. In the WordPress admin, go to **WPML > String Translation**.
+2. In the **Domain** dropdown, select uncanny-learndash-groups.
+3. Browse the list of strings or use the search field to find the string you want to translate.
+4. Click the **+** (plus) icon next to a string to open the translation field.
+5. Enter your translation and click **Save**.
+
+Repeat process for each string you want to translate.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2023/06/manual-string-translation-steps-1-3-1030x664.png)
+
+![](https://www.uncannyowl.com/wp-content/uploads/2023/06/add-translation.png)
+
+### Combining Both Methods
+
+We recommend using the PO file method for your initial translation, then using manual string translation for minor corrections or additions. After a successful PO file import, all imported strings remain individually editable in the String Translation interface — there is no need to re-upload the entire file for small updates.
+
+### Related Articles
+
+- [Uncanny Groups Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/)
+- [Getting Started with Uncanny Groups](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/)
+- [Template Overrides](https://www.uncannyowl.com/knowledge-base/extending-uncanny-learndash-groups/)
+- [Actions and Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/)
+- [Shortcode Quick Reference](https://www.uncannyowl.com/knowledge-base/shortcode-quick-reference/)
 
 ---
 
@@ -3563,35 +3889,87 @@ uo_file_expiry_time
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/pooled-seats/](https://www.uncannyowl.com/knowledge-base/pooled-seats/)
 
-“Pooled seats” are a feature [introduced in Uncanny Groups for LearnDash 5.0](https://www.uncannyowl.com/uncanny-groups-for-learndash-5-0/) that allows groups connected together in a hierarchy to share their seats from a single pool. In other words, if the entire organization representing the group is allocated 500 seats, then any child group of that top-level parent will see 500 total seats. If a seat is used by a student in a child group, the seat is no longer available to the other groups in the hierarchy. Where groups normally have a set number of seats allocated to each one, the pooled seats option allows them to be shared.
+### Overview
 
-Here’s an example of pooled seats in action:
+Pooled Seats lets a parent group and all of its child groups share a single seat count, so you can allocate capacity flexibly across an organisation rather than locking a fixed number of seats into each group.
 
-Suppose you sell course access to a school and grant that school 500 seats to use at their discretion. They’re going to want to divide students up into classes for reporting purposes as well as to manage course enrollment. Instead of having to figure out how to assign 20 seats to one group and 30 to another, now the entire set of classrooms (the LearnDash groups) shares from a total pool of 500 seats. If a Grade 9 math class uses up 20 seats, then a grade 10 music class uses 30, other groups now have a pool of 450 available seats.
+### What Is a Pooled Seat?
 
-### Setting up pooled seats
+Normally each LearnDash group has its own seat limit — a child group’s seats are entirely separate from its parent group’s seats.
 
-Using pooled seats requires that LearnDash Group Hierarchies be enabled. For more information about this setting, there’s a helpful [LearnDash support article](https://www.learndash.com/support/docs/users-groups/groups/global-group-settings/#global_course_management_display_settings).
+With **Pooled Seats** enabled, the seat counts for a parent group and all of its child groups are combined into one shared pool. Any child group can draw from that pool when enrolling users. When a seat is used in any group in the hierarchy, the available total decreases for all groups in that hierarchy.
 
-Once hierarchies are enabled, visit **Uncanny Groups > Settings**in /wp-admin/ and turn on the appropriate setting for your site:
+**Example:** A parent group has 100 seats and one child group has 50 seats. With pooling enabled, the combined pool is **150 seats**. If 30 users enrol through the child group, 120 seats remain available across the entire hierarchy.
 
-![LearnDash Pooled Seats Settings](https://www.uncannyowl.com/wp-content/uploads/2022/10/LearnDash-Pooled-Seats-Settings.png)The first option, “Allow Group Leaders to enable seat pooling from the Group Management page”, allows pooled seats to be managed independently for each hierarchy on the site. On the Group Management page, the Group Leader will see a checkbox to turn pooled seats on or off. When this is toggled, Uncanny Groups will calculate total and available seats across all groups in the hierarchy (in the case of enabling it) or it will restore individual seat counts for each group (if it’s disabled).
+### Prerequisites
 
-![Top Level LearnDash Group Hierarchy](https://www.uncannyowl.com/wp-content/uploads/2022/10/Top-Level-LearnDash-Group-Hierarchy.png)
+- **Uncanny Groups for LearnDash** v5.0 or later
+- **LearnDash Group Hierarchies** enabled (see below)
+- At least one parent group with one or more child groups configured
 
-The second checkbox, “Enable pooled seats for all groups in hierarchies”, turns on pooled seats across *all*group hierarchies. They can no longer be managed by Group Leaders when this setting is enabled.
+#### Enable LearnDash Group Hierarchies
 
-### Usage examples
+Pooled Seats requires group hierarchies to be active. To enable them:
 
-Suppose you start with a parent group with 100 seats assigned, and that parent group has a child group that has 50 seats. If pooled seats are enabled for the hierarchy, both parent and child groups would immediately see that the *hierarchy* now has 150 seats. (And if you disabled the pool again, the seats would return to 100 and 50 respectively.) When viewing the parent or child groups in this situation, all would show the same number of total and available seats. So, when pooled seats are enabled, the parent group would show 150 total seats and the child group would show 150 total seats.
+1. Go to **LearnDash LMS > Groups > Settings (tab)**.
+2. Enable **LearnDash Group Hierarchies**.
+3. Click **Save Settings**.
 
-In cases where enabling seat pooling results in no available seats, perhaps because of admin overrides when adding students to groups, Uncanny Groups calculates the total pooled seats as the current number of users across all groups in the hierarchy and adds 10, but this default value can be overridden with a filter:
+**Important:** Only administrators can create group hierarchies. Group Leaders cannot link groups into parent-child relationships unless the front end “Edit Group” option is enabled. See [New Edit Group Wizard](https://www.uncannyowl.com/uncanny-groups-new-edit-group-wizard/) for more info.
 
-```
-apply_filters( 'ulgm_pool_seats_add_extra_seats_in_parent', absint( 10 + $diff ), $diff, $group_id )
-```
+![](https://www.uncannyowl.com/wp-content/uploads/2022/10/group-hierarchy-enabled-1030x397.png)
 
-Groups can only be added to hierarchies by administrators, not Group Leaders. So, for pooled seats to work, an administrator must edit groups to connect them to appropriate parent groups to create the hierarchy for a group.
+### Configuring Pooled Seats
+
+There are two ways to enable Pooled Seats, depending on how much control you want to give Group Leaders.
+
+#### Option 1: Let Group Leaders Manage Pooled Seats per Hierarchy
+
+Use this approach when you want Group Leaders to decide whether pooling is active for their own hierarchy.
+
+1. Go to **Uncanny Groups > Settings**.
+
+1. In the **Pooled Seats** section, enable **Allow Group Leaders to enable seat pooling from the Group Management page**.
+
+1. Click **Save Settings**.
+
+Once enabled, Group Leaders will see a **Pooled Seats** toggle on the Group Management page for any hierarchy they manage. They can turn pooling on or off independently for each hierarchy.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2022/10/Allow-group-leaders-to-enable-pooled-settng.png)
+
+#### Option 2: Enable Pooled Seats Globally for All Hierarchies
+
+Use this approach when you want pooling active across every hierarchy on your site without requiring Group Leaders to configure it.
+
+1. Go to **Uncanny Groups > Settings**.
+
+1. In the **Pooled Seats** section, enable **Enable pooled seats for all groups in hierarchies**.
+
+1. Click **Save Settings**.
+
+When this option is active, Group Leaders do **not** see a toggle on the Group Management page — pooling is always on for every hierarchy.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2022/10/enable-pooled-seats-for-all-setting.png)
+
+### How Seat Counts Are Displayed
+
+When Pooled Seats is active for a hierarchy, the seat count shown on the Group Management page reflects the **combined pool** across the parent and all child groups — not just the seats for the individual group being viewed.
+
+Group Leaders can see at a glance how many seats remain across the entire hierarchy.
+
+### Important Limitations
+
+- **Hierarchies are admin-only.** Group Leaders can use an existing hierarchy but cannot create one. An administrator must set up the parent-child group structure.
+- **Pooling is per-hierarchy.** If you have multiple independent hierarchies, each one has its own pool — seats do not flow between unrelated hierarchies.
+- **Enrollment keys and child groups.** When a user redeems an enrollment key for a child group, they are enrolled in that child group (not the parent). This behaviour was corrected in v6.1.2/6.1.3 — if you were seeing users land in the wrong group after key redemption, updating to the current version resolves this.
+
+### Related Articles
+
+- [Uncanny Groups Plugin Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/)
+- [Manage Groups as Administrator](https://www.uncannyowl.com/knowledge-base/set-up-a-learndash-group/)
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/)
+- [Create Pre-configured Licenses](https://www.uncannyowl.com/knowledge-base/creating-pre-configured-learndash-group-licenses/)
+- [Adding Seats and Courses after Group Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/)
 
 ---
 
@@ -3627,33 +4005,82 @@ Codes that have been cancelled can no longer be redeemed by users.  Upon redemp
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/adding-seats-after-subscription-based-group-purchase/](https://www.uncannyowl.com/knowledge-base/adding-seats-after-subscription-based-group-purchase/)
 
-### Enabling the Add Seats option
+### Overview
 
-To allow seats to be added to groups that are associated with a WooCommerce subscription, the site administrator must enable the option under the *WooCommerce Subscriptions* head in **Uncanny Groups > Settings** in /wp-admin/. See screenshot below.
+When group purchases are tied to WooCommerce Subscriptions, you can let customers buy additional seats without disrupting their existing subscription — each seat block gets its own subscription for clean renewal management.
 
-![Add seats to WooCommerce subscriptions](https://www.uncannyowl.com/wp-content/uploads/2017/09/Add_seats_to_Groups_with_Woo_Subscriptions.png)
+### Prerequisites
 
-When seats are added to a group with an existing subscription, a new subscription will be created for the additional seats. It is possible to synchronize future subscription renewal dates for a customer and group by turning on synchronization under **WooCommerce > Settings > Subscriptions** in /wp-admin/.
+- **Uncanny Groups for LearnDash** installed and active
+- **WooCommerce** and **WooCommerce Subscriptions** installed and active
+- At least one LearnDash group product set up as a subscription in WooCommerce
 
-The WooCommerce Subscriptions settings for Uncanny Groups also allows an optional “Learn more” link on the Group Management page for users interested in buying more seats. If the field is populated with a URL, it should link to a page that explains the purchase process and how subscription renewals will work (e.g. if synchronization is enabled, this should be explained to the user).
+### Enabling the Feature
 
-When it comes to user cancellations of a group, we modified normal subscription behaviour so that *all* subscriptions associated with a group are cancelled. Uncanny Groups makes this obvious for users from the WooCommerce subscription management page, which looks like this:
+This is a global setting — once enabled it applies to every subscription-based group on your site.
 
-![](https://www.uncannyowl.com/wp-content/uploads/2022/04/Woo-Subscription-Changes.jpg)
+1. Go to **Uncanny Groups > Settings** in your WordPress admin.
+2. Locate the **WooCommerce Subscriptions** section.
+3. Enable the **Enable “Add seats” option for subscription-based groups** option.
+4. Click **Save Changes**.
 
-Note the button text for cancelling the subscription as well as the new records for *Linked group* and *Parent subscription* that make reconciling the subscription associations easier.
+![](https://www.uncannyowl.com/wp-content/uploads/2022/04/Woo-Add-Seats-Subscription.png)
 
-When purchasers reactivate a subscription, the behaviour is a bit different depending on whether the user has cancelled but the subscription is still pending cancellation and whether the subscription has fully expired. If the group is pending cancellation and reactivated, all subscriptions for the group are also reactivated.
+#### Optional: Synchronise Renewal Dates
 
-If the subscription has fully expired and the purchaser reactivates it, on the other hand, they will be prompted to create a *single* new subscription that matches what is needed for the group. This is what the messaging will look like to end users on the checkout page:
+When a customer adds seats, a new subscription is created for those additional seats. If you want all of a customer’s seat subscriptions to renew on the same date, enable renewal date synchronisation in WooCommerce:
 
-![](https://www.uncannyowl.com/wp-content/uploads/2022/04/Checkout_–_Saad_s_Owl.jpg)
+1. Go to **WooCommerce > Settings > Subscriptions**.
+2. Enable subscription renewal synchronization.
 
-### Additional considerations
+We recommend enabling this — it simplifies billing for your customers and reduces support queries about multiple renewal dates.
 
-- The option to add seats to subscription-based groups is a global setting, it cannot be enabled and disabled for certain groups only.
-- It is *not* possible to add courses to subscription-based groups. That’s a different and more significant level of complexity that we may or may not be able to support in future.
-- The new functionality works with existing subscription-based groups, not only new groups.
+#### Optional: Add a “Learn More” Link
+
+You can add an optional **Learn more** link that appears on the **Group Management page** for users interested in buying more seats. Use it to point customers to a page explaining how additional seats are billed and renewed.
+
+Configure this link using the **Learn more URL** field in the same **WooCommerce Subscriptions** section of Uncanny Groups settings.
+
+### What Happens When Seats Are Added
+
+When a Group Leader or customer purchases additional seats for an existing subscription-based group:
+
+- A **new subscription** is created in WooCommerce for the additional seats.
+- The original group subscription remains unchanged.
+- The new seats are immediately added to the group.
+
+### Cancellation and Reactivation Behaviour
+
+Uncanny Groups modifies the default WooCommerce Subscriptions cancellation behaviour so that all subscriptions tied to a group are managed together.
+
+#### Cancellations
+
+Cancelling a group membership cancels **all** associated subscriptions for that group simultaneously — the original subscription and any additional-seat subscriptions.
+
+#### Reactivations
+
+Reactivation behaviour depends on the subscription status at the time of reactivation:
+
+| Situation | What happens |
+| --- | --- |
+| Subscription is pending cancellation (not yet expired) | All group subscriptions reactivate together |
+| Subscription has fully expired | The user creates a single new subscription sized to match their current group needs |
+
+### Important Limitations
+
+Before enabling this feature, be aware of the following constraints:
+
+- **Global setting only.** This cannot be enabled for individual groups — it applies to all subscription-based groups on your site.
+- **Courses cannot be added.** It is not possible to add courses to subscription-based groups. If you need to add courses after purchase, use a standard (non-subscription) group product instead.
+- **One-time purchase groups are unaffected.** The **Add Seats** button for non-subscription groups works independently and is documented separately (see [Adding Seats and Courses after Group Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/)).
+
+### Related Articles
+
+- [Uncanny Groups Plugin Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/)
+- [Adding Seats and Courses after Group Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/)
+- [Set Up User Enrollment](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/)
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/)
+- [Frequently Asked Questions](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/)
 
 ---
 
@@ -4013,18 +4440,75 @@ While the code sale process is straightforward, keeping a few best practices in 
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/buddyboss-group-sync/](https://www.uncannyowl.com/knowledge-base/buddyboss-group-sync/)
 
-The [Uncanny Groups 3.9](https://www.uncannyowl.com/downloads/uncanny-learndash-groups/) release added the ability to sync changes made to LearnDash groups using this plugin to be synced with [BuddyBoss social groups](/share/buddyboss/). This means that when users are added or removed from groups using our Group Management page, or LearnDash groups are created by our plugin, these changes can be reflected on the BuddyBoss side too.
+### Overview
 
-For this to work, the **LearnDash Group Sync** and **Auto Create Social Group** settings must be enabled under *BuddyBoss > Integrations > LearnDash* on a BuddyBoss site. This is not set up or managed in Uncanny Groups, we detect the settings for BuddyBoss and use those. Please see the screenshot below for reference.
+If your site uses BuddyBoss alongside LearnDash, Uncanny Groups can keep the two systems in sync — so adding or removing users in a LearnDash group automatically updates the corresponding BuddyBoss social group, without any manual duplication.
+
+### Prerequisites
+
+The following must all be in place before sync will work:
+
+- **Uncanny Groups for LearnDash** v3.9 or later installed and active
+- **BuddyBoss Platform** installed and active
+- **LearnDash** installed and active
+- Two specific settings enabled in BuddyBoss (see below)
+
+#### Required BuddyBoss Settings
+
+These settings are in BuddyBoss, not in Uncanny Groups. Both must be enabled:
+
+1. Go to **BuddyBoss > Integrations > LearnDash**.
+2. Enable **LearnDash Group Sync**.
+3. Enable **Auto Create Social Group**.
+4. Save your changes.
 
 ![BuddyBoss Groups Sync with LearnDash Groups](https://www.uncannyowl.com/wp-content/uploads/2021/02/BuddyBoss_Groups_Sync_with_LearnDash_Groups.png)
 
-When these settings are enabled, the following things will happen on the Uncanny Groups side:
+If either setting is disabled, group sync will not function — no error will be shown, actions simply will not carry over to BuddyBoss.
 
-1. When a LearnDash group is created by the Uncanny Groups plugin, an associated BuddyBoss social group is created.
-2. When a user is added to a group from the Group Management page in our plugin, the user is added to the associated BuddyBoss group. If the user is a student they are added as a “Member”. If the user is a Group Leader they are added as an “Organizer”. This works for **adding single users**, **adding multiple users** *and* **adding users via CSV import**.
-3. When users are removed from a group from the Group Management page, they are removed from the associated BuddyBoss social group.
-4. When users are added or removed by an administrator from the LearnDash edit group page, we sync the change to the associated BuddyBoss group.
+### What Gets Synced
+
+Once the prerequisites are met, the following actions in Uncanny Groups automatically sync to BuddyBoss:
+
+| Action in Uncanny Groups / LearnDash | Result in BuddyBoss |
+| --- | --- |
+| New LearnDash group created via the plugin | A matching BuddyBoss social group is created automatically |
+| User added as a student via the Group Management page (single, bulk, or CSV import) | User added to the BuddyBoss group as a Member |
+| User added as a Group Leader via the Group Management page | User added to the BuddyBoss group as an Organizer |
+| User removed from a group via the Group Management page | User removed from the corresponding BuddyBoss group |
+| Administrator modifies group membership via the LearnDash edit group interface | Changes sync to the associated BuddyBoss group |
+
+#### User Role Mapping
+
+Uncanny Groups maps LearnDash roles to BuddyBoss roles as follows:
+
+- **Students** in the LearnDash group → **Members** in the BuddyBoss group
+- **Group Leaders** in the LearnDash group → **Organizers** in the BuddyBoss group
+
+This means Group Leaders retain elevated access in the BuddyBoss social group, consistent with their LearnDash role.
+
+### What Does Not Sync
+
+To set accurate expectations:
+
+- Changes made **directly inside BuddyBoss** (e.g., adding a user to a BuddyBoss group manually) do **not** sync back to the LearnDash group. Sync is one-directional: LearnDash/Uncanny Groups → BuddyBoss.
+- Course progress, quiz results, and LearnDash activity are not affected by group sync — this feature covers group membership only.
+
+### Troubleshooting
+
+If users are not appearing in BuddyBoss groups after being added in Uncanny Groups:
+
+1. Confirm both required BuddyBoss settings (**LearnDash Group Sync** and **Auto Create Social Group**) are enabled under **BuddyBoss > Integrations > LearnDash**.
+2. Confirm the LearnDash group was created after those settings were enabled. Groups created before the settings were turned on may not have a corresponding BuddyBoss group — try creating a new test group to verify.
+3. Check that the user addition was made via the **Group Management page** or the **LearnDash edit group interface**, not through another enrollment method that bypasses the sync hooks.
+
+### Related Articles
+
+- [Uncanny Groups Plugin Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/)
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/)
+- [Set Up User Enrollment](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/)
+- [Manage Groups as Administrator](https://www.uncannyowl.com/knowledge-base/set-up-a-learndash-group/)
+- [Frequently Asked Questions](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/)
 
 ---
 
@@ -4571,74 +5055,142 @@ wp_mail()
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/configuring-group-emails/](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/)
 
-### Email Settings
+### Overview
 
-From the Email Settings tab you can set the **From Email**, **From Name**, and the **Reply To**  for *all* group email communication, using the email templates provided by the plugin.  You can also disable any emails that you don’t want sent by unchecking the associated box.
+Uncanny Groups for LearnDash sends automated emails at key moments in the group lifecycle — when users are invited, enrollment keys are distributed, and group leaders are assigned. This article explains how to customize those email templates, personalize messages with dynamic variables, and make sure your emails actually reach learners.
 
-There are 5 built in email templates to set up and automate communications when users are added to groups. Note that all email templates are global; there is currently no way to send different communications to different groups, or to allow Group Leaders to add their own personal messages.
+### Before you start
 
-The variables associated with each template allow you to include personalized information (such as #FirstName, #LastName) for each user. Please take note of the variables for each template and their description below:
+- You need **Administrator** access to your WordPress site.
+- Navigate to **Uncanny Groups > Settings > Email Settings** to access all the options below.
+- If you have high learner volumes, set up a transactional email service **before** testing (see [Deliverability](https://docs.google.com/document/d/1Vd8crBY_Szkd04wjFzY-2rr08pmUcO2Vvm1dhd1pFBY/edit#deliverability) below).
 
-| Variable | Description |
+### Global sender settings
+
+At the top of the **Email Settings** tab, configure the details that appear on every group email sent by the plugin:
+
+| Setting | What it does |
 | --- | --- |
-| #SiteUrl | Outputs the website address for the site the user is being invited to join. |
-| #loginUrl | Outputs the address of the user log-in page of the site the user is being invited to join. |
-| #RedemptionKey | Outputs a custom redemption key to be used for site registration and group enrolment by each user. |
-| #Email | Outputs the users email address as saved in their user profile on the site. |
-| #EmailEncoded | Outputs the users email address encoded properly for use in a URL.  For example: mysite.org?email=#EmailEncoded |
-| #Username | Outputs the username saved in their user profile on the site. |
-| #FirstName | Outputs the user's first name as saved in their user profile on the site. |
-| #LastName | Outputs the user's last name as saved in their user profile on the site. |
-| #DisplayName | Outputs what is saved in their user profile on the site and used as the name displayed across the site. |
-| #Password | Outputs the password generated by the site for new user log-in. |
-| #SiteName | Outputs the name for the site the user is being invited to join. |
-| #GroupName | Outputs the group name for the group the user is being invited to join. |
-| #Courses | Outputs the list of courses assigned to the group. |
-| #GroupLeaderInfo | Outputs a list of the group leaders assigned to the group - names and email addresses. |
+| From Email | The email address that appears in the “From” field |
+| From Name | The display name shown alongside the From address |
+| Reply To | Where replies are directed (can differ from From Email) |
 
-### Add and invite (new user)
+These settings apply globally to all group email templates. To change the underlying WordPress sender defaults, use a plugin such as **Change Mail Sender**.
 
-The **Add and invite (new user)**email is sent when a Group Leader selects the *Add and invite* option in the *Add user* dialog, and the user is not already registered on the site.  When this email is sent, the user is automatically registered as a new WordPress user and added to the LearnDash Group.  This template includes the #Password variable because passwords are randomly generated for new users.  If you would prefer to have users select their own password, you can include a link to your site’s password reset page along with instructions to reset their password.
+You can also **disable any template** by unchecking the checkbox next to it. Disabling a template suppresses that email entirely and, in some cases, removes the related action from the Group Management interface (see template details below).
 
-![](https://www.uncannyowl.com/wp-content/uploads/2019/10/learndash-group-add-invite-user-email.png)
+Group Specific Emails
 
-### Add and invite (existing user)
+While there are 5 global email templates, there are also 3 email templates available for individual groups. Admins can enable and edit individual group emails for **Add and invite (new user)**, **Add and invite (existing user)**and**Send enrollment key.**********When any of these 3 emails are enabled on the group edit page (found in the Uncanny Groups tab), they will override the email sent to users for the group they are associated with.
 
-The **Add and invite (existing user)**email is sent when a Group Leader selects the *Add and invite* option in the *Add user* dialog, and the user is already registered on the site but is not a member of the current group.
+### Email variables
 
-![](https://www.uncannyowl.com/wp-content/uploads/2019/10/learndash-group-add-invite-existing-user-email.png)Note: If both of the emails above are disabled, the text in the Add User dialog changes from *Add and Invite User* to simply *Add User,*since no invitation email is sent.
+All templates support dynamic variables that pull data from the user’s profile, the group, and your site. Insert any of the following tokens directly into the subject line or body of a template:
 
-### Send enrollment key
+| Variable | Inserts |
+| --- | --- |
+| #SiteUrl | Your website address |
+| #LoginUrl | Your site’s login page URL |
+| #RedemptionKey | The enrollment key for group registration |
+| #Email | The user’s email address |
+| #EmailEncoded | The user’s email address, URL-encoded |
+| #Username | The user’s WordPress username |
+| #FirstName | The user’s first name |
+| #LastName | The user’s last name |
+| #DisplayName | The user’s display name |
+| #Password | The auto-generated password for new user registrations |
+| #SiteName | Your site name |
+| #GroupName | The name of the group the user is being added to |
+| #Courses | The list of courses assigned to the group |
+| #GroupLeaderInfo | The names and email addresses of the group’s leaders |
 
-The **Send enrollment key**email is sent to new users when a Group Leader selects the *Send enrollment key* option in the *Add User* dialog.  Unlike the *Add and invite* option, when this email is sent, users are **not**automatically registered on the site.  So this email must contain clear instructions for registration. In this email template, make sure you include the #SiteUrl or #LoginUrl variable (so users can find their way to the registration form), and the #RedemptionKey variable which is the key for group enrollment.
+### Email templates
 
-**Note**: If this email is disabled, the*Send Enrollment Key* option in the Add User dialog is removed.
+The plugin includes six built-in templates. Each fires at a specific point in the group workflow.
 
-![](https://www.uncannyowl.com/wp-content/uploads/2019/10/learndash-group-send-enrollment-key-email.png)
+#### Add and Invite (New User)
 
-### Add group leader/Create group (new user)
+**When it sends:** A Group Leader uses **Add and Invite** for an email address not yet registered on your site.
 
-The **Add group leader/Create group (new user)**email is sent when a Group Leaders clicks *Add Group Leader*, or when an admin creates a new group using *Uncanny Groups > Create Group,*and the specified email address is not yet registered on the site. When this email is sent, the user is automatically registered as a new WordPress user and added to the LearnDash Group as a Group Leader.  This template includes the #Password variable because passwords are randomly generated for new users.  If you would prefer to have users select their own password, you can include a link to your site’s password reset page along with instructions to reset their password.
+The plugin automatically creates a WordPress account for the user and adds them to the LearnDash group. Because the password is system-generated, include #Password in this template — or replace it with a password-reset link — so the new user can log in.
 
-![](https://www.uncannyowl.com/wp-content/uploads/2019/10/learndash-group-add-group-leader-email.png)
+#### Add and Invite (Existing User)
 
-### Add group leader/Create group (existing user)
+**When it sends:** A Group Leader invites a user who already has a WordPress account but is not yet a member of the current group.
 
-The **Add group leader/Create group (existing user)**email is sent when a Group Leaders clicks *Add Group Leader*, or when an admin creates a new group using *Uncanny Groups > Create Group,*and the specified email address is already registered as a user on the site.
+**Tip:** If you disable both invitation emails (new and existing user), the **Add and Invite User** button label in the Group Management interface changes to **Add User**.
 
-### 
+#### Send Enrollment Key
 
-### New group purchase
+**When it sends:** A Group Leader selects **Send Enrollment Key** for one or more users.
 
-The **New group purchase**email is sent when a user completes a group license purchase via Woocommerce. Use this email to thank them for their purchase, confirm their group was created and provide a link to the Group Management page.
+Unlike the invitation emails, this template does **not** register the user automatically. The user must visit your registration page and enter their key. Your template must include clear instructions plus the 
+```
+#RedemptionKey
+```
 
-![](https://www.uncannyowl.com/wp-content/uploads/2019/10/learndash-group-license-purchase-email.png)
+ variable — and either 
+```
+#SiteUrl
+```
 
-*Be very careful with your email templates, because in most cases you can’t trigger them to be sent again. Set up all of your variables and test them before they are sent to learners.*
+ or 
+```
+#LoginUrl
+```
 
-**Important**: The Uncanny LearnDash Groups plugin can generate a lot of emails when you have a lot of groups and learners. We *highly*recommend using a third party transactional email service like [SparkPost](https://www.sparkpost.com/). This will improve email deliverability from WordPress and make sure that there are no issues sending high volumes of emails as your Group Leaders invite users, especially as part of uploads.
+ so users know where to go.
 
-Also note that emails generated by the plugin use the default sender *name* and *email address* for your WordPress site. If you want to change that, consider using a plugin to modify them, like [Change Mail Sender](https://en-ca.wordpress.org/plugins/cb-change-mail-sender/)  to change basic sender details.
+**Note:** Disabling this template removes the **Send Enrollment Key** option from the Add User dialog entirely.
+
+#### Add Group Leader / Create Group (New User)
+
+**When it sends:** An admin clicks **Add Group Leader** for an unregistered email, or uses **Uncanny Groups > Create Group** with an email address not yet on the site.
+
+The plugin registers the new user and assigns them the Group Leader role. Include 
+```
+#Password
+```
+
+ or a reset link in this template.
+
+#### Add Group Leader / Create Group (Existing User)
+
+**When it sends:** Adding a Group Leader or creating a group when the email address is already registered on the site.
+
+#### New Group Purchase
+
+**When it sends:** A user completes a group license purchase through WooCommerce.
+
+Use this template to confirm the purchase, summarize what was purchased, and link to the **Group Management** page. Including 
+```
+#GroupName
+```
+
+ and 
+```
+#Courses
+```
+
+ gives buyers an immediate overview of what they have access to.
+
+### Deliverability
+
+The plugin can send a large number of emails as your learner base grows. To protect deliverability and avoid messages being flagged as spam, we recommend routing all plugin email through a **transactional email service** such as SparkPost, SendGrid, or Postmark. Configure your chosen service at the WordPress level (via its plugin or SMTP settings) and all group emails will route through it automatically.
+
+### Critical: test before you launch
+
+**Important:** In most cases, a group email cannot be re-triggered once it has been sent. Build your templates carefully, insert all required variables, and **send test messages before adding real learners** to any group.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2019/10/group-email-templates.png)
+
+### Related Articles
+
+- [Install and Set Up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/) — complete first-time configuration guide
+- [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/) — configure the front-end pages Group Leaders use
+- [Manage LearnDash Groups as a WordPress Administrator](https://www.uncannyowl.com/knowledge-base/set-up-a-learndash-group/) — create groups, assign seats, and manage enrollment
+- [Set Up User Enrollment](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/) — enrollment key and invitation options in detail
+- [Frequently Asked Questions](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/) — common setup and troubleshooting answers
 
 ---
 
@@ -4646,51 +5198,105 @@ Also note that emails generated by the plugin use the default sender *name* and
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/manage-learner-progress/](https://www.uncannyowl.com/knowledge-base/manage-learner-progress/)
 
-### View and Manage Learner Progress
+### Overview
 
-The Progress Report included in [Uncanny LearnDash Groups](https://www.uncannyowl.com/downloads/uncanny-learndash-groups/) enables Group Leaders and Administrators to view and (optionally) manage the progress of users in the front end. It’s a very powerful tool that makes it possible for Group Leaders to have even more oversight over their groups; the video below highlights the benefits.
+The Manage Learner Progress page lets Group Leaders and Administrators view — and optionally mark complete or incomplete — individual learners’ progress through courses, all from the front end of your site.
 
-This hierarchy view of courses, lessons, topics and quizzes allows all of them be reviewed and marked complete or incomplete. For course and lesson completions, everything below those elements will also be marked completed.
+When Uncanny Groups for LearnDash is activated, it automatically creates a **Manage Progress** page containing the [uo_groups_manage_progress] shortcode. This gives Group Leaders a hierarchical view of every course, lesson, topic, and quiz assigned to their groups, with checkboxes to mark items complete or incomplete without touching the WordPress back end.
 
-![Manage LearnDash Progress](https://www.uncannyowl.com/wp-content/uploads/2019/07/manage-learndash-progress.gif)
+Whether Group Leaders can *edit* progress (or only view it) is controlled by the plugin’s admin settings. Administrators always have full edit access.
 
-A *Progress Report* page is created automatically on first activation of the Uncanny LearnDash Groups plugin, but to create one manually, simply create a new WordPress page and add this shortcode:
+**Important:** Progress changes are applied **instantly and cannot be undone.** Marking a course complete triggers any associated certificates and LearnDash notifications immediately. We recommend confirming with the learner before making changes on their behalf.
+
+### Setup
+
+The Manage Progress page is created automatically on plugin activation. If you need to add it to a different page, add the **Progress Report** block (search **Uncanny Groups** in the inserter), or use the 
+```
+[uo_groups_manage_progress]
+```
+
+ shortcode:
 
 ```
 [uo_groups_manage_progress]
 ```
 
-The shortcode supports the following attributes:
+#### Block Settings / Shortcode Attributes
 
-| Attribute Name | Description | Attribute Values | Default Value |
+| Settings / Attribute | Values | Default | Description |
 | --- | --- | --- | --- |
-| orderby | Sets whether courses should be ordered by post ID, title, date, or menu order. | "title", "date", or "menu_order" | "ID" |
-| order | Controls whether courses should be listed in ascending or descending order based on what's set in the order_by attribute. | "asc" or "desc" | "asc" |
-| expand_by_default | Determines whether the dashboard will be expanded by default to show all lessons and topics | "yes" or "no" | "no" |
+| orderby | "title", "date", "menu_order", "ID" | "ID" | How courses are sorted in the progress view |
+| order | "asc" / "desc" | "desc" | Sort direction for courses |
+| expand_by_default | "yes" /  "no" | "no" | Whether all lessons and topics are expanded when the page loads |
 
-Whether admins and Group Leaders are given access to an editable or read-only view is controlled by the *Allow Group Leaders to Manage Progress* checkbox on the Uncanny LearnDash Groups settings page.![Allow LearnDash Progress Management](https://www.uncannyowl.com/wp-content/uploads/2019/07/allow-learndash-progress-management.png)
+**Example — sorted alphabetically with all items expanded:**
 
-Once the page is set up, you can optionally add a link to it from the Group Management page. To do this, look for the *Progress Report Page*drop-down on the Settings page and choose the page you created that contains the [uo_groups_manage_progress] shortcode.
+```
+[uo_groups_manage_progress orderby="title" order="asc" expand_by_default="yes"]
+```
 
-The scope of the user search is limited to the selected group in version 4.0 of the plugin and later. To search for users within a group, make sure to choose the group first (or click into the user’s progress from the Group Management page and the group and user information will be populated automatically).
+### Finding a learner
 
-### Update Learner Progress
+Use the **search bar** at the top of the page to locate a learner by first name, last name, or email address. Partial matches are supported — entering “smi” will match “Smith,” “Smithson,” and so on.
 
-To manage progress in the front end as a Group Leader or administrator, visit the page that includes the [uo_groups_manage_progress] shortcode.
+**Scope of search results:**
 
-Once on the page, use the Search field to search for a user by first name, last name or email address. Partial matches are accepted. Please note that Group Leaders can only see users associated with the groups they manage, and can only see and manage progress for courses associated with those groups. Administrators have access to everything.
+- **Group Leaders** see only users enrolled in their managed groups. The search is further scoped to the **currently selected group** (available since v4.0), so selecting a group first narrows results to that group’s members.
+- **Administrators** can search across all users on the site.
 
-Click the checkboxes next to course, lesson, topic and quiz names to mark the associated item as complete or incomplete. When completing courses that include lessons, or lessons that include topics, you will be prompted to confirm the request and mark all items under it as complete or incomplete as well.
+![Manage LearnDash Progress](https://www.uncannyowl.com/wp-content/uploads/2019/07/manage-learndash-progress.gif)
 
-**Please note that progress changes are made instantly. If you mark a course as complete, for example, and the course has a certificate and notifications, those will generated and cannot be reversed. Make sure you want to apply the change before confirming it.**
+### Viewing progress
 
-### Download or Print Learner Certificates
+After selecting a learner, the page displays a collapsible tree of all courses they are enrolled in through the group:
 
-From the Manage Progress page, Group Leaders can download or print any certificates the learner has earned.  These include both certificates attached to courses and certificates attached to quizzes.  Once the learner has completed a course or a quiz with a certificate attached, a *Certificate* button will appear in the corresponding row:
+- **Courses** — top-level items, each expandable to show lessons
+- **Lessons** — expandable to show topics (when applicable)
+- **Topics** — individual content items
+- **Quizzes** — shown inline at the course, lesson, or topic level
+
+Completed items are checked. Items not yet started or in progress are unchecked.
+
+Set 
+```
+expand_by_default="yes"
+```
+
+ on the shortcode to open the full tree automatically, which is helpful for shorter courses or when you need a complete overview at a glance.
+
+### Editing progress
+
+When the plugin settings allow Group Leaders to edit progress (or for Administrators), a **checkbox** appears next to each item in the tree.
+
+#### Marking an item complete
+
+1. Locate the course, lesson, topic, or quiz in the progress tree.
+2. Check the checkbox next to the item.
+3. If the item has children (e.g., you are completing a lesson that contains topics), a confirmation dialog appears asking whether to mark all child items complete as well. Confirm to proceed.
+
+#### Marking an item incomplete
+
+1. Uncheck the checkbox next to a completed item.
+2. Confirm the dialog if prompted. Unchecking a parent item can also mark child items incomplete.
+
+**Reminder:** These changes are instant. Completing a course that has a certificate assigned will generate and send that certificate immediately — this cannot be reversed.
 
 ![](https://www.uncannyowl.com/wp-content/uploads/2019/08/group-leader-certificate-download.png)
 
-**Note:** If quizzes are completed by an Administrator or Group Leader, certificates are not available for those quizzes.  Only learner-completed quizzes will display certificates in the Progress Report.
+### Certificates
+
+Group Leaders can download or print certificates directly from the progress view:
+
+- A **Certificate** button appears next to a course or quiz that has a certificate assigned and that the **learner** has completed.
+- For **quizzes**, certificates are only available for completions made by the learner themselves — quizzes marked complete by a Group Leader or Administrator using this tool do **not** display a downloadable certificate button in this view, though the completion is still recorded.
+
+### Related Articles
+
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — The main front-end hub for managing group members
+- [Using the Group Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) — Course and quiz completion reports for Group Leaders
+- [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/) — Configure and customize the Manage Progress page
+- [Front End Assignment Management](https://www.uncannyowl.com/knowledge-base/front-end-learndash-assignment-management/) — Review and approve learner assignment submissions from the front end
+- [Front End Essay Question Management](https://www.uncannyowl.com/knowledge-base/front-end-essay-question-management/) — Grade learner essay responses from the front end
 
 ---
 
@@ -4851,21 +5457,104 @@ Customizations should only be attempted by experienced developers, as we cannot 
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/extending-uncanny-learndash-groups/](https://www.uncannyowl.com/knowledge-base/extending-uncanny-learndash-groups/)
 
-As of Uncanny LearnDash Groups version 3.0.4, developers can edit template files in an upgrade-safe way using overrides.   Copy the template file into a directory within your theme named /uncanny-groups/, keeping the same file and folder structure but removing the /templates/ subdirectory.
+### Overview
 
-For example, to override the controls above the users table, copy:
+Uncanny Groups for LearnDash allows developers to customize front-end templates without editing plugin files directly. By placing override files in your theme, your customizations survive plugin updates.
 
+**Developer feature:** Template overrides require PHP development experience. We cannot provide support for custom code. Only attempt customizations if you are comfortable working with PHP templates.
+
+### How Template Overrides Work
+
+Template overrides were introduced in Uncanny Groups version 3.0.4. The plugin checks your active theme for a matching template file before falling back to its own. If a match is found in your theme, the theme file is used instead.
+
+This means you can safely modify the plugin’s output and your changes will not be overwritten when the plugin updates.
+
+### Override Directory Structure
+
+Template files live inside the plugin at:
+
+```
+wp-content/plugins/uncanny-learndash-groups/src/templates/
+```
+
+To override a file, copy it into your theme using the same folder structure, but **omit the /src/templates/ prefix**. Place overrides inside a folder named 
+```
+uncanny-groups/
+```
+
+ at the root of your theme.
+
+```
+wp-content/themes/your-theme/uncanny-groups/
+```
+
+### Step-by-Step: Creating a Template Override
+
+1. **Locate the template file** you want to customize inside the plugin:
+
+```
+wp-content/plugins/uncanny-learndash-groups/src/templates/
+```
+
+1. **Copy the file** to your theme, replicating the subfolder path and omitting 
+```
+/src/templates/
+```
+
+:
+
+```
+wp-content/themes/your-theme/uncanny-groups/
+```
+
+1. **Edit the copy** in your theme. The plugin will now load your version instead of its own.
+
+1. **Test your changes** on the front end to confirm the override is working correctly.
+
+**Important:** Never edit files inside 
+```
+wp-content/plugins/uncanny-learndash-groups/
+```
+
+ directly. Plugin updates will overwrite any changes you make there.
+
+### Worked Example
+
+Suppose you want to customize the users table actions in the Group Management page.
+
+**Source file (plugin — do not edit):**
+
+```
 wp-content/plugins/uncanny-learndash-groups/src/templates/frontend-uo_groups/users-table-actions.php
+```
 
-to
+**Override file (your theme — edit this):**
 
-wp-content/themes/yourtheme/uncanny-groups/frontend-uo_groups/users-table-actions.php
+```
+wp-content/themes/your-theme/uncanny-groups/frontend-uo_groups/users-table-actions.php
+```
 
-The copied file will now override the default.
+The plugin detects the file in your theme and loads it instead of the default.
 
-**Warning**: Do not edit these files within the the Uncanny Groups plugin itself, as they are overwritten during the upgrade process and any customizations will be lost.
+### Child Themes
 
-Uncanny LearnDash Groups is a complex plugin with integrations into LearnDash, WooCommerce, Gravity Forms and Theme My Login.  Customizations should only be attempted by experienced developers, as we cannot provide support for custom code.
+If you are using a child theme, place override files in the child theme’s directory rather than the parent theme. WordPress loads child theme files first, so the override will still be detected correctly.
+
+```
+wp-content/themes/your-child-theme/uncanny-groups/
+```
+
+### Compatibility Note
+
+Uncanny Groups integrates with LearnDash, WooCommerce, Gravity Forms, and Theme My Login. Some templates interact with these plugins. We recommend reviewing integration-specific templates carefully before modifying them, and thoroughly testing any overrides in a staging environment before deploying to production.
+
+### Related Articles
+
+- [Uncanny Groups Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/)
+- [Actions and Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/)
+- [Shortcode Quick Reference](https://www.uncannyowl.com/knowledge-base/shortcode-quick-reference/)
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/)
+- [Getting Started with Uncanny Groups](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/)
 
 ---
 
@@ -4902,125 +5591,106 @@ Both pieces need to be in place before the column appears. There’s nothing to 
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/)
 
-Uncanny Groups for LearnDash provides the hooks below for advanced developers to use when developing custom functionality that integrates with the plugin.  No support is provided for the use of these filters.
----
-**Outputting the list of courses on the Group Management page**
+### Overview
+
+Uncanny Groups exposes a number of actions and filters for advanced developers building custom functionality on top of the plugin.
+
+**Please note:** No support is provided for the use of these hooks. They’re intended for developers comfortable working with WordPress actions and filters.
+
+### Group Management & report customization
+
+| Hook | Type | What it does |
+| --- | --- | --- |
+| uo_report_menu_items | Filter | (New in 6.1.2) Adds or modifies items in the Group Management page’s user dropdown menu, so you can surface custom actions to Group Leaders. |
+| ulgm_group_course_report_columns | Filter | (6.1.4) Adds, removes, or reorders columns in the Group Course Report. |
+| ulgm_group_courses_list_get_posts_vars | Filter | Filters the query variables used to retrieve courses on the Group Management page (receives post vars and group ID). |
+| ulgm_group_courses_list_courses | Filter | Filters the retrieved courses list before it’s displayed. |
+| ulgmGroupLeaderData | Filter | Filters all data sent to the Group Management page tables (enrolled users, leader data, management features). |
+
+#### Example: add a custom item to the user dropdown
 
 ```
-$post_vars = array(
- 	'post_type'     => 'sfwd-courses',
- 	'meta_key'      => 'learndash_group_enrolled_' . $group_id,
- 	'post_per_page' => - 1,
- 	'numberposts'   => - 1
-);
-$post_vars = apply_filters( 'ulgm_group_courses_list_get_posts_vars', $post_vars, $group_id);
-$courses = get_posts( $post_vars );
-$courses = apply_filters( 'ulgm_group_courses_list_courses', $courses, $post_vars, $group_id);
+add_filter( 'uo_report_menu_items', function ( $items, $buttons ) {
+    // Each item is an HTML string (typically a <button>). Add your own:
+    $items['view_profile'] = '<button class="uo-btn uo-right" type="button">'
+        . esc_html__( 'View Profile', 'your-textdomain' )
+        . '</button>';
+    return $items;
+}, 10, 2 );
 ```
 
-**Filter all the data being sent to the Group Management page tables**
-```
-// API data
-$group_data = array(
-   'enrolled_user_data'           => self::$ulgm_enrolled_users_data_dt,
-   'enrolled_leader_data'         => self::$ulgm_group_leaders_data_dt,
-   'check_all'                    => $this->table_checkbox( 'all' ),
-   'populate_management_features' => json_encode( self::$populate_management_features ),
-);
+Illustrative only. In v6.1.7 the filter receives the menu items as an associative array of **HTML strings** (keyed by button name, e.g. quiz_report_button), and a second argument that is an **array of boolean flags** indicating which built-in buttons are enabled — not a group ID. Inspect the incoming values before modifying them, as the shape may change between versions.
 
-$group_data = apply_filters('ulgmGroupLeaderData', $group_data );
-```
-**After the tables are loaded on the front end**
-```
-$(document).trigger('enrolledUsersTableDataTableCreated', {userTableVars: userTableVars, userTable: userTable, ulgmGroupLeaderData:ulgmGroupLeaderData} );
+### Front-end table events (JavaScript)
 
-$(document).trigger('enrolledLeaderTableDataTableCreated', {leaderTableVars: leaderTableVars, leaderTable: leaderTable, ulgmGroupLeaderData:ulgmGroupLeaderData} );
-```
-**When an existing user is added on front end**
+These jQuery events fire after the front-end tables finish loading, so you can hook in with custom scripts:
 
+- ```
+enrolledUsersTableDataTableCreated
 ```
-do_action( 'ulgm_existing_group_user_added', $user_data, $group_id, $order_id );
-$do_not_send_emails = apply_filters( 'ulgm_do_not_send_existing_user_email', $do_not_send_emails, $user_data, $group_id, $order_id );
+- ```
+enrolledLeaderTableDataTableCreated
 ```
 
-**Before user is added on front end**
-```
-//returns true or false if group leader allowed to add user
-//wp_get_current_user() = (object) of current logged in user details 
-//$group_email_data['group_id'] = (int) LD Group ID 
-//$user_data = (object) user data, user_email is part of the array and recommended method to verify user v/s group leader
-$ulgm_gdpr_compliance = apply_filters( 'ulgm_gdpr_is_group_leader_allowed', true, wp_get_current_user(), (int) $group_email_data['group_id'], $user_data );
-```
-**After user is added on front end**
+### User management
 
-```
-do_action( 'ulgm_group_user_invited', $user_data, $group_id, $order_id );
-$do_not_send_emails = apply_filters( 'ulgm_do_not_send_new_user_email', $do_not_send_emails, $user_data, $group_id, $order_id );
-```
+| Hook | Type | What it does |
+| --- | --- | --- |
+| ulgm_existing_group_user_added | Action | Fires when an existing user is added to a group. |
+| ulgm_group_user_invited | Action | Fires when a new user is invited. |
+| ulgm_group_user_removed | Action | Fires when a user is removed. |
+| ulgm_do_not_send_existing_user_email | Filter | Controls whether the email is sent for existing users. |
+| ulgm_do_not_send_new_user_email | Filter | Controls whether the email is sent for newly invited users. |
+| ulgm_gdpr_is_group_leader_allowed | Filter | Validates group leader permissions before a user is added. |
 
-**When redemption email is sent out**
+### Leader management
 
-```
-do_action( 'ulgm_redemption_email_sent', $user_data, $group_id );
-$do_not_send_emails = apply_filters( 'ulgm_do_not_send_redemption_email', $do_not_send_emails, $user_data, $group_id );
-```
+| Hook | Type | What it does |
+| --- | --- | --- |
+| ulgm_group_leader_added | Action | Fires when a group leader is added. |
+| ulgm_group_leader_removed | Action | Fires when a group leader is removed. |
 
-**When group leader is added on front end**
+### Email customization
 
-```
-do_action( 'ulgm_group_leader_added', $user_data, (int) $_POST['group-id'], $order_id );
-```
+| Hook | What it controls |
+| --- | --- |
+| ulgm_redemption_email_to / ulgm_redemption_email_subject / ulgm_redemption_email_body | Redemption email recipient, subject, and body |
+| ulgm_welcome_email_to / ulgm_welcome_email_subject / ulgm_welcome_email_body | Welcome email recipient, subject, and body |
+| ld_group_email_users_personalize_subject / ld_group_email_users_personalize_message | Personalization of bulk “Email Users” campaigns |
+| ulgm_redemption_email_sent | Action fired when a redemption email is sent |
+| ulgm_do_not_send_redemption_email | Controls whether the redemption email is sent |
 
-**When group leader is removed on front end**
+### Other hooks
 
-```
-do_action( 'ulgm_group_leader_removed', $user_id, (int) $group_id );
-```
+| Hook | Type | What it does |
+| --- | --- | --- |
+| uo_redirect_after_group_created | Filter | Filters the redirect URL after a group is created. |
 
-**When user is removed on front end**
+### REST API filters
 
-```
-do_action( 'ulgm_group_user_removed', $user_id, (int) $group_id );
-```
+These filter the data returned by the plugin’s REST API endpoints:
 
-**Email filters**
-
+- ```
+ulgm_rest_api_get_user_course_data
 ```
-$to      = apply_filters( 'ulgm_redemption_email_to', $user_email, $user_data, $group_id );
-$subject = apply_filters( 'ulgm_redemption_email_subject', $redemption_template_subject, $user_data, $group_id );
-$body    = apply_filters( 'ulgm_redemption_email_body', $redemption_template_body, $user_data, $group_id );
+- ```
+ulgm_rest_api_get_group_courses
 ```
-
+- ```
+ulgm_rest_api_get_essays_data
 ```
-$to      = apply_filters( 'ulgm_welcome_email_to', $user_email, $user_data, $group_name );
-$subject = apply_filters( 'ulgm_welcome_email_subject', $welcome_template_subject, $user_data, $group_name );
-$body    = apply_filters( 'ulgm_welcome_email_body', $welcome_template_body
+- ```
+ulgm_rest_api_get_quiz_data
 ```
-
-```
-//For emails sent with "Email Users" button
-$mail_args['subject'] = apply_filters( 'ld_group_email_users_personalize_subject', $mail_args['subject'], $user_data, $group_email_data );
-$mail_args['message'] = apply_filters( 'ld_group_email_users_personalize_message', $mail_args['message'], $user_data, $group_email_data );
+- ```
+ulgm_rest_api_get_assignments_data
 ```
 
-**Redirect after Create Group**
+### Related Articles
 
-```
-apply_filters( 'uo_redirect_after_group_created', $redirect_url, $group_id );
-```
-**REST API endpoints**
-
-```
-apply_filters( 'ulgm_rest_api_get_user_course_data', $data, $_POST );
-
-apply_filters( 'ulgm_rest_api_get_group_courses', $data, $_POST );
-
-apply_filters( 'ulgm_rest_api_get_essays_data', $essays_table, $_POST );
-
-apply_filters( 'ulgm_rest_api_get_quiz_data', $quiz_table, $_POST );
-
-apply_filters( 'ulgm_rest_api_get_assignments_data', $assignments_table, $_POST );
-```
+- [Template Overrides](https://www.uncannyowl.com/knowledge-base/extending-uncanny-learndash-groups/)
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/)
+- [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/)
 
 ---
 
@@ -5176,57 +5846,64 @@ Remove a module entirely with **Delete**. Use this only when you no longer need 
 
 ### How does Uncanny LearnDash Groups manage user roles?
 
-When you add Group Leaders using this plugin (by ecommerce, from the Group Management page or as an admin), the system *adds* the Group Leader role to any roles the user may already have. Some sites do not natively look for users to have multiple roles though, and what can happen is that if you edit a Group Leader from the user’s profile page in the back end then the Group Leader role can be *removed*. This will revoke access to things that normally require Group Leader permissions. If you do plan to update Group Leader profiles manually, we strongly recommend adding a plugin that supports multiple roles for a user, like the widely used [User Role Editor](https://en-ca.wordpress.org/plugins/user-role-editor/). This will allow you to make profile updates and retain all assigned roles for your users.
+Uncanny Groups *adds* the Group Leader role on top of a user’s existing roles rather than replacing them. Some sites don’t natively support users having multiple roles, so editing a Group Leader’s profile in the WordPress backend can strip the Group Leader role. If you manage roles manually, install a plugin like **User Role Editor** that supports multiple roles, so all permissions are preserved when profiles are updated.
 
 ### Can I show content to specific groups?
 
-An added benefit of the Uncanny LearnDash Groups plugin is you can now create targeted messages to members of specific groups on any page or post using a shortcode:
+Yes. Use the restrict-content shortcode:
 
 ```
 [uo_groups_restrict_content user_groups="123"]Welcome![/uo_groups_restrict_content]
 ```
 
-In the example above, content wrapped in the shortcodes will be seen by everyone who is part of the group whose ID is 123.
-
-You can also display content to multiple groups by specifying two or more group IDs separated by commas. For example:
-
+Target multiple groups by separating IDs with commas. To find a group’s ID, edit the group as an administrator and read the number in the URL’s 
 ```
-[uo_groups_restrict_content user_groups="123,456"]Welcome![/uo_groups_restrict_content]
+?post=
 ```
 
-This plugin is an extremely useful way to show conditional course content to learners. To get the ID of a LearnDash Group, edit the group as an administrator and look at the address bar of your browser. In the URL you’ll see a string that looks like, “?post=1169”. The number after the equals sign is the ID of that LearnDash Group.
+ parameter.
 
 ### Why are users randomly being added to my groups?
 
-LearnDash provides a setting to enable automatic group enrollment when a user enrolls in any course assigned to the group.  We find this setting is rarely useful and for most users we recommend that you leave this setting disabled when using Uncanny LearnDash Groups.
+LearnDash has an automatic group-enrollment setting that’s rarely useful with Uncanny Groups. Keep it disabled so group membership stays under your control.
 
-![Enable Auto-enrollment Setting](https://www.uncannyowl.com/wp-content/uploads/2017/09/Enable-auto-setting.png)Fig. 4. We recommend leaving the Enable Automatic Group Enrollment Setting on the *Group Edit* page disabled when group management is shared using the Groups Plugin.
+![Enable Auto-enrollment Setting](https://www.uncannyowl.com/wp-content/uploads/2017/09/Enable-auto-setting.png)
 
-### What if I want to sell courses to individuals as well as groups?
+### Can I sell courses to individuals as well as groups?
 
-If your site will be selling courses to individuals as well as groups, we recommend that you use the install the official LearnDash WooCommerce integration plugin, and set up “Course”-type products in WooCommerce.  LearnDash Group Course products can also be sold to end users though to enroll students in the associated course.
+Yes. Install the official LearnDash WooCommerce integration and create **Course**-type products for individual sales. Group Course products can also be sold to individuals for single-seat enrollment.
 
 ### Do Group Leaders have access to courses?
 
-In version 1.3 of the plugin we added a setting that determines whether group leaders will also be enrolled as group members, taking up a license seat and gaining access to course materials.  If you are primarily selling to organizations where the group leader will administer the group but not need access to course materials, you can check this setting:
+You decide. A setting controls whether group leaders are also enrolled as group members — useful when a leader manages a group but doesn’t need to take the course themselves.
 
 ![](https://www.uncannyowl.com/wp-content/uploads/2018/01/Settings_‹_Uncanny_LearnDash_Groups_—_WordPress.png)
 
 ### Why can’t my Group Leaders add courses to their group?
 
-The Add Courses button is only available if the group was created through the Custom Group License process.  It is not available for pre-configured licenses or for groups manually created by an administrator.
+The **Add Courses** button only appears for groups created through the **Custom Group License** process. It isn’t available for pre-configured licenses (including subscription licenses), or manually created groups.
 
 ### Why can’t my Group Leaders add seats to their group?
 
-The Add Seats button is only available if the group was created through the Custom Group License process or through the purchase of a pre-configured, non-subscription license.  It is not available for subscription licenses or groups manually created by an administrator.
+The **Add Seats** button is available only for groups created through a Custom Group License or a pre-configured license. It isn’t shown for manually created groups.
 
-Why can’t a Group Leader see their group on the Group Management page?
+### Why can’t a Group Leader see their group on the Group Management page?
 
-If a group was created through the interface in LearnDash (not the interface in Uncanny LearnDash Groups), it must first be “[upgraded](https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/)” to be available on the front-end Group Management page.
+Groups created in LearnDash’s native interface must be **upgraded** before they appear on the front-end Group Management page. See [Upgrade Existing LearnDash Groups](https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/).
 
-### Why are purchases not creating groups?
+### Why can’t I find my group options after updating WordPress?
 
-Purchases of WooCommerce products associated with the Uncanny Groups plugin will only do what they’re supposed to do (e.g. create a group, assign the Group Leader role and add a user to a group) if the status of the order is “Completed”. If orders are in “Processing” status, purchases will not work. Normally virtual product purchases should be autocompleted, but sometimes plugins will prevent that from happening. One option for resolution is tracing which plugin is causing it, another is using an autocompletion plugin like [Autocomplete WooCommerce Orders](https://wordpress.org/plugins/autocomplete-woocommerce-orders/) to override the status and ensure orders are Completed automatically.
+WordPress 7.0 redesigned the block editor and, by default, hides classic plugin metaboxes behind a collapsed **“Meta Boxes”** pane. After upgrading, some group options could appear to be missing for that reason.
+
+As of **Uncanny Groups 6.1.8**, every Uncanny Groups setting for a group is grouped under a dedicated **Uncanny Groups** tab at the top of the group’s edit page — so they’re always easy to find. Open a group under **LearnDash LMS > Groups** and click the **Uncanny Groups** tab. If you’re on a version older than 6.1.8, update to 6.1.8 or later, or open the **Meta Boxes** pane in the editor to reveal the options.
+
+WooCommerce orders must reach **Completed** status to trigger group creation and enrollment. Orders stuck in **Processing** won’t create a group. An autocompletion plugin (such as Autocomplete WooCommerce Orders), or the plugin’s auto-complete setting for virtual products, resolves this.
+
+### Related Articles
+
+- [Install and Set Up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/)
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/)
+- [Groups Shortcode/Gutenberg Quick Reference](https://www.uncannyowl.com/knowledge-base/shortcode-quick-reference/)
 
 ---
 
@@ -7640,31 +8317,909 @@ Example (disabling emails):
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-technical-requirements/](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-technical-requirements/)
 
-### End-user requirements
+### Overview
 
-An up-to-date, modern browser such as:
+Uncanny Groups for LearnDash is designed to work on any modern WordPress installation that meets the requirements below. Review these before installing the plugin or upgrading an existing setup.
 
-- Google Chrome
-- Mozilla Firefox
-- Microsoft Edge
-- MacOS Safari
+### End-User Requirements
 
-### WordPress requirements
+Learners and Group Leaders accessing the front-end Group Management page need a modern browser. The following are supported:
 
-Minimum requirements are:
+- Google Chrome (latest)
+- Mozilla Firefox (latest)
+- Microsoft Edge (latest)
+- macOS Safari (latest)
 
-- PHP 7.2
-- WordPress 5.5
-- LearnDash 3.4
-- 256MB of memory allocated to WordPress
-- WooCommerce 4.5 (if using WooCommerce functionality)
-- WooCommerce Subscriptions (if using subscription functionality)
-- Permalinks set to Post Name
+### WordPress and Server Requirements
 
-We recommend the following for optimal performance:
+#### Minimum Requirements
 
-- PHP 7.4+
-- A WordPress-optimized host such as [WP Engine](https://www.uncannyowl.com/share/wpengine) or [Pressidium](https://www.uncannyowl.com/share/pressidium)
+| Component | Minimum version |
+| --- | --- |
+| PHP | 7.4 |
+| WordPress | 5.8 |
+| LearnDash | 4.2 |
+| WordPress memory limit | 256 MB |
+| WooCommerce | 4.5 (only required if using WooCommerce-based group sales) |
+| WooCommerce Subscriptions | Any compatible version (only required for subscription-based group licensing) |
+| Permalink structure | Post Name |
+
+**Important:** Permalinks must be set to **Post Name** (
+```
+/%postname%/
+```
+
+). Go to **Settings > Permalinks** in your WordPress admin and confirm this is selected. Other permalink structures will cause the front-end Group Management pages to function incorrectly.
+
+#### Recommended for Optimal Performance
+
+- **PHP 7.4 or higher** — this is also the minimum, so any supported version is fine; newer PHP releases deliver better performance.
+- A **WordPress-optimised host** such as WP Engine or Pressidium for the best page-load times on front-end group pages.
+
+### WooCommerce
+
+WooCommerce integration is **optional**. You only need WooCommerce if you plan to sell group licenses through your site’s store. For sites that manage groups without ecommerce (for example, manual group creation or Uncanny Automator-powered enrollment), WooCommerce does not need to be installed.
+
+WooCommerce Subscriptions is additionally required only if you want group licenses sold as recurring subscriptions.
+
+### Installing on an Existing LearnDash Site
+
+Uncanny Groups installs alongside your existing LearnDash setup — you do not need to reinstall or reconfigure LearnDash. Any existing LearnDash groups on your site can be [upgraded to Uncanny Groups](https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/) after installation.
+
+### Performance Note
+
+Since version 6.1.2, Uncanny Groups stores certain plugin data outside the WordPress autoload cache. This reduces the amount of data loaded on every page request across your site, which can improve overall site performance — particularly on larger installations with many groups.
+
+### Related Articles
+
+- [Install and Set Up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/) — Step-by-step installation and initial configuration.
+- [Uncanny Groups for LearnDash – Plugin Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/) — What Uncanny Groups does and how it fits into a LearnDash site.
+- [Upgrade Existing LearnDash Groups](https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/) — Convert pre-existing LearnDash groups to fully managed Uncanny Groups.
+- [Frequently Asked Questions](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/) — Common compatibility and configuration questions.
+
+---
+
+## Groups Block and Shortcode Quick Reference
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/shortcode-quick-reference/](https://www.uncannyowl.com/knowledge-base/shortcode-quick-reference/)
+
+### Overview
+
+Uncanny Groups for LearnDash adds its features to the WordPress editor in two ways: as **Gutenberg blocks** and as **shortcodes**. Most features offer both — use whichever you prefer:
+
+- **Blocks** are the easiest option in the block editor. Click the **+** inserter and search for the feature name, or browse the **Uncanny Groups for LearnDash** block category.
+- **Shortcodes** work anywhere shortcodes are supported — the Classic editor, widgets, page-builder text modules, and template files.
+
+A handful of utility features (links, buttons, content restriction, and seat counts) are **shortcode-only** and have no block; these are marked accordingly below.
+
+Use this page as a lookup reference. For full setup instructions, follow the links in each section and in **Related Articles** below.
+
+### Group management & registration
+
+The core front-end experience for Group Leaders and the forms members use to join a group.
+
+| Block | Shortcode | What it does | Key attributes |
+| --- | --- | --- | --- |
+| Group Management | [uo_groups] | The full Group Management page, where Group Leaders add/remove members, manage seats, and open reports. Place on a dedicated page. | None required |
+| Create Group | [uo_groups_create_group] | Front-end form that lets eligible users create a new group. | See Front End Group Creation |
+| Enrollment Key Registration | [uo_groups_registration_form] | Combined registration + enrollment-key form, for inviting new users to register and join a group in one step. | None required |
+| Enrollment Key Redemption | [uo_groups_redemption_form] | Single-field form for existing, logged-in users to redeem an enrollment key and join a group. | None required |
+| Shortcode only — no block | [uo_groups_link text="Link Text"] | A text link to the Group Management page, shown only to logged-in Group Leaders. | text — link label |
+| Group Management Link | [uo_groups_button text="Button Text"] | A button linking to the Group Management page, shown only to logged-in Group Leaders. | text — button label |
+
+### Reports & learner management
+
+Front-end access to progress, quiz data, and grading — no WordPress admin access required for Group Leaders.
+
+| Block | Shortcode | What it does | Key attributes |
+| --- | --- | --- | --- |
+| Course Report | [uo_groups_course_report] | Each member’s progress through assigned courses. Also reachable from the Group Management page. | See Using the Group Reports |
+| Quiz Report | [uo_groups_quiz_report] | Quiz attempts and scores for group members. | See Using the Group Reports |
+| Essay Report | [uo_groups_essays] | Lets Group Leaders review and grade submitted essay responses on the front end. | See Front End Essay Question Management |
+| Assignment Report | [uo_groups_assignments] | Lets Group Leaders review and grade submitted assignment files on the front end. | See Front End Assignment Management |
+| Progress Report | [uo_groups_manage_progress] | Lets Group Leaders and admins edit course/lesson completion for learners on the front end. | See Manage Learner Progress |
+
+[Screenshot: The Course Report block rendered on the front end, showing member progress rows]
+
+### Selling courses
+
+The purchase workflow that lets Group Leaders and new customers buy seats and create groups directly. Requires WooCommerce.
+
+| Block | Shortcode | What it does | Key attributes |
+| --- | --- | --- | --- |
+| Buy Courses | [uo_groups_buy_courses] | A purchase page for buying course seats and creating a new group. Auto-generated only if WooCommerce was active when the plugin was activated; otherwise add the block/shortcode to a page yourself. | product_cat, product_tag, min_qty, max_qty — see Enable Custom Group Licenses |
+
+[Screenshot: The Buy Courses block showing course selection and seat-quantity options]
+
+### Content restriction (shortcode only)
+
+Show or hide content based on group membership or Group Leader role. **These are shortcodes only — there are no matching blocks.**Show or hide content based on group membership or Group Leader role. **These are shortcodes only — there are no matching blocks.**
+
+| Shortcode | What it does | Key attributes |
+| --- | --- | --- |
+| [uo_groups_restrict_content user_groups="123,456"] | Wraps content visible only to logged-in members of the listed groups. Admins always see it. | user_groups — comma-separated group IDs (omit for members of any group) |
+| [uo_groupleader_restrict_content user_groups="123,456"] | Wraps content visible only to logged-in Group Leaders of the listed groups. Admins always see it. | user_groups — comma-separated group IDs (optional) |
+
+**Example — member-only content:**
+
+```
+[uo_groups_restrict_content user_groups="42"]
+```
+
+ This message is only visible to members of group 42.
+
+```
+[/uo_groups_restrict_content]
+```
+
+### Seat displays (shortcode only)
+
+Output dynamic seat counts for a specific group — handy on landing pages, confirmations, or dashboards. **These are shortcodes only — there are no matching blocks.**
+
+| Shortcode | What it does | Key attributes |
+| --- | --- | --- |
+| [uo_group_seats_total id="123"] | Outputs the total number of seats assigned to the group. | id — group post ID (required) |
+| [uo_group_seats_remaining id="123"] | Outputs the number of seats still available in the group. | id — group post ID (required) |
+
+To find a group’s ID, open it under **LearnDash LMS > Groups** — the ID appears in the page URL.
+
+**Example:**
+
+Your group has 
+```
+[uo_group_seats_total id="123"]
+```
+
+ total seats,
+with 
+```
+[uo_group_seats_remaining id="123"]
+```
+
+still available.
+
+### Related Articles
+
+- [Uncanny Groups Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/)
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/)
+- [Using the Group Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/)
+- [Enable Custom Group Licenses / Buy Courses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/)
+- [Actions and Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/)
+
+---
+
+## Front End Essay Question Management
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/front-end-essay-question-management/](https://www.uncannyowl.com/knowledge-base/front-end-essay-question-management/)
+
+### Overview
+
+Group Leaders can review, grade, and manage LearnDash essay submissions directly on the front end — no WordPress admin access required. This keeps instructors in their learner-facing environment and simplifies delegation to non-admin Group Leaders.
+
+### Prerequisites
+
+- Uncanny Groups for LearnDash installed and activated
+- At least one LearnDash quiz with essay questions configured
+- A WordPress page where you can place the shortcode
+- We recommend a full-width page layout — the essay table is wide and sidebars will crowd the interface
+
+### Adding the Essay Management Page
+
+Add the **Essay Report** block to any WordPress page (search **Uncanny Groups** in the block inserter), or place the [uo_groups_essays] shortcode there. That page instantly becomes an essay management dashboard for Group Leaders assigned to that site.
+
+```
+[uo_groups_essays]
+```
+
+### Block Settings / Shortcode Attributes
+
+Both attributes below are optional. When omitted, the defaults shown apply. All values added must be comma separated.
+
+| Setting / Attribute | Description | Accepted Values | Default |
+| --- | --- | --- | --- |
+| columns | Columns visible on first load | Title, Student, Status, Points, Question, Content, Course, Lesson, Quiz, Comments, Date (comma-separated) | All columns |
+| status | Which submissions load by default | all, graded, ungraded | ungraded |
+
+**Example — show only the most relevant columns and default to ungraded submissions:**
+
+```
+[uo_groups_essays status="ungraded" columns="Title, Student, Status, Points, Course, Quiz, Date"]
+```
+
+Hidden columns remain accessible — Group Leaders can toggle them on or off at any time using the column visibility controls in the table header.
+
+### What Group Leaders Can Do
+
+Once on the essay management page, Group Leaders can:
+
+- **Filter** submissions by group, course, lesson, quiz, and status
+- **Search** across any visible column
+- **Sort** by any column (click the column header)
+- **Toggle column visibility** and reorder columns via drag-and-drop
+- **Resize columns** to fit their screen
+- **Click an essay title** to open the grading panel, assign a point value, and mark the submission as graded
+- **Hover over a title** to reveal a delete option for removing a submission
+
+Group Leaders only see submissions from learners in their assigned groups. They cannot access submissions outside their groups.
+
+### Exporting Submissions
+
+Add the 
+```
+excel_export_button
+```
+
+ and/or 
+```
+csv_export_button
+```
+
+ attributes to display export controls above the table:
+
+```
+[uo_groups_essays excel_export_button="show" csv_export_button="show"]
+```
+
+Exports respect the current filter state — if a Group Leader has filtered to a specific course or status, only those results are exported.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/group-essay-report-with-CSV-Excel-export-1030x622.png)
+
+### Related Articles
+
+- [Uncanny Groups for LearnDash — Plugin Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/) — start here if you’re new to the plugin
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — how Group Leaders manage learners and groups
+- [Front End LearnDash Assignment Management](https://www.uncannyowl.com/knowledge-base/front-end-learndash-assignment-management/) — similar front-end interface for file assignments
+- [Group Leader Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) — progress and completion reporting for Group Leaders
+- [Shortcode Quick Reference](https://www.uncannyowl.com/knowledge-base/shortcode-quick-reference/) — all Uncanny Groups shortcodes in one place
+
+---
+
+## Front End LearnDash Assignment Management
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/front-end-learndash-assignment-management/](https://www.uncannyowl.com/knowledge-base/front-end-learndash-assignment-management/)
+
+### Overview
+
+Group Leaders can download, review, and grade LearnDash file assignments directly on the front end — no WordPress admin access required. This makes it practical to delegate assignment review to instructors or managers without granting them backend access.
+
+### Prerequisites
+
+- Uncanny Groups for LearnDash
+- LearnDash configured with at least one assignment-enabled lesson
+- A WordPress page where you can place the block or shortcode
+- We recommend a full-width page layout — the assignment table is wide and sidebars will crowd the interface
+
+### Adding the Assignment Management Page
+
+Add the **Assignment Report** block to any WordPress page (search **Uncanny Groups** in the block inserter), or place the 
+```
+[uo_groups_assignments]
+```
+
+ shortcode there. Group Leaders assigned to your site will see a dashboard showing submissions from learners in their groups.
+
+```
+[uo_groups_assignments]
+```
+
+### Block Settings / Shortcode Attributes
+
+Both attributes are optional. When omitted, the defaults shown apply.
+
+| Setting / Attribute | Description | Accepted Values | Default |
+| --- | --- | --- | --- |
+| status | Which assignments load by default | all, graded, ungraded | ungraded |
+| columns | Columns visible on first load | Title, Student, Status, Points, Assigned Course, Assigned Lesson, Comments, Date (comma-separated) | All columns |
+
+**Example — show only core columns and default to ungraded:**
+
+```
+[uo_groups_assignments status="ungraded" columns="Title, Student, Status, Points, Assigned Course, Date"]
+```
+
+Hidden columns remain accessible — Group Leaders can toggle them using the column visibility controls in the table header at any time.
+
+### What Group Leaders Can Do
+
+Once on the assignment management page, Group Leaders can:
+
+- **Filter** assignments by group, course, lesson, and status
+- **Search** across any visible column
+- **Sort** by any column (click the column header)
+- **Toggle column visibility** and reorder columns via drag-and-drop
+- **Resize columns** to fit their screen
+- **Hover over an assignment title** to reveal download and delete options
+- **Select checkboxes** to perform bulk actions across multiple submissions
+- **Click an assignment title** to open the grading panel, assign a point value, and approve the submission
+
+Group Leaders only see submissions from learners in their assigned groups. Submissions from other groups are not visible.
+
+### Exporting Submissions
+
+Add the 
+```
+excel_export_button
+```
+
+ and/or 
+```
+csv_export_button
+```
+
+ attributes (or enable the block settings) to display export controls above the table:
+
+```
+[uo_groups_assignments excel_export_button="show" csv_export_button="show"]
+```
+
+Exports reflect the current filter state — if a Group Leader has filtered to a specific course or status, only matching records are included in the export.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/group-assignment-report-1030x571.png)
+
+### Related Articles
+
+- [Uncanny Groups for LearnDash — Plugin Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/) — start here if you’re new to the plugin
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — how Group Leaders manage learners and groups
+- [Front End Essay Question Management](https://www.uncannyowl.com/knowledge-base/front-end-essay-question-management/) — similar front-end interface for essay questions
+- [Group Leader Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) — progress and completion reporting for Group Leaders
+- [Shortcode Quick Reference](https://www.uncannyowl.com/knowledge-base/shortcode-quick-reference/) — all Uncanny Groups shortcodes in one place
+
+---
+
+## Using The Group Management Page
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/group-management-page/](https://www.uncannyowl.com/knowledge-base/group-management-page/)
+
+### Overview
+
+The Group Management page is the front-end hub where Group Leaders manage their groups — adding and removing users, distributing enrollment keys, resetting passwords, and emailing members — without needing WordPress admin access.
+
+When the Uncanny Groups for LearnDash plugin is activated, it automatically creates a Group Management page built with the **Group Management** block (equivalently, the 
+```
+[uo_groups]
+```
+
+ shortcode). Group Leaders are redirected to this page after login and can also reach it via any 
+```
+[uo_groups_link]
+```
+
+ or 
+```
+[uo_groups_button]
+```
+
+ shortcode you place in your theme navigation.
+
+Access is restricted to users with the **Group Leader** role. While Administrators can also view and edit groups via the Group Management page, the Group Management page was designed for Group Leaders to use.
+
+**Tip:** Before customizing the page, review [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/) for instructions on renaming, configuring shortcode attributes, and adding pages to your site menu.
+
+![Group Management page showing a Sales Training group with four courses, enrolled users, and group leaders in a dashboard layout.](https://www.uncannyowl.com/wp-content/uploads/2026/07/group-management-page-852x1030.png)
+
+### Group information
+
+At the top of the page, Group Leaders see a summary of the selected group:
+
+- **Group name selector** — a dropdown listing every group the leader manages. If they manage only one group, the dropdown is hidden and the single group name is displayed.
+- **Seats remaining / Total seats** — displays available seats alongside the total seat allocation for the group. Seats are consumed the moment a user is enrolled (not on invitation), and remain occupied regardless of course completion status.
+- **Associated courses** — links to each course assigned to the group, so leaders can quickly navigate to course content.
+
+When **child group reporting** is enabled in the plugin settings, parent groups display combined seat and user data rolled up from all child groups.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/Group-Information.png)
+
+### Enrolled users
+
+The **Enrolled Users** table lists every user currently associated with the group. For each user you can see:
+
+- Display name (linked to the user edit dialog when **Allow group leaders to edit users** is enabled in settings)
+- Email address
+- Enrollment status (see [User status reference](https://docs.google.com/document/d/12AWkcxVwE4W4QkPjDywjz4iT-OKelHjQ_b-6k9Kas9s/edit#user-status-reference) below)
+- Enrollment key used (if applicable), controlled by the 
+```
+key_column
+```
+
+ shortcode attribute
+
+#### User status reference
+
+| Status | Meaning | Enrollment key status |
+| --- | --- | --- |
+| Not Enrolled | User received an invitation or key but has not yet redeemed it | Available |
+| Not Started | User is enrolled in the group but has not begun any course | Available |
+| In Progress | User has started at least one course | Used |
+| Completed | User has completed all courses assigned to the group | Used |
+
+### Adding users
+
+Group Leaders can add users to a group in three ways, depending on which buttons are enabled via shortcode attributes:
+
+#### Invite a single user
+
+1. Click the **Users** button.
+2. Select **Add one**. A  form appears with two options, **Add and invite user** and **Send enrollment key** (see Send enrollment keys section below). Check **Add and invite user.**
+3. Enter the user’s first name, last name, email address and optional password.
+4. Click **Add User**. An email is sent to the user based on the [email message settings](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/) set up by your Administrator. The user is added to the list of users in the group and they take up a seat in your group, and their status is set to *Not Started*.  If you add a user that already exists on the site, the system will automatically assign a key, add them to the group and send the *Add and invite (existing user)* email.  They then occupy a seat in the group just like a new user.
+
+#### Invite Multiple users
+
+1. Click the **Users** button
+2. Select the **Add multiple** option. The Bulk Add & Invite Users form appears.
+3. Enter the user’s first name, last name, email address and optional password.
+4. Click the **Add & Invite Users** button. The same process will occur as outlined in step 4 of **Invite a single user** (see above)
+
+#### Send enrollment keys
+
+Group Leaders can add users to their group by sending them an enrollment key which requires the user redeem the key to be added to the group. If the user is not registered on the site, then they would need to redeem the enrollment key via registration (see [Set Up User Enrollment](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/) for more info) .
+
+1. Click the **Users** button
+2. Select **Add one**. Select the option **Send enrollment key**
+3. Enter the user’s first name, last name, email address (there is no password field when **Send enrollment key** is selected
+4. Click **Add User.**
+5. Users will receive the Send enrollment key email. Once that user registers and redeems that key, they take up a seat in the group, are enrolled in the group and can begin group courses.
+
+#### Bulk upload via CSV
+
+To add many users at once, upload a CSV file:
+
+1. Click **Upload Users**.
+2. Prepare your CSV file using the following column format (the first row is a header row of column names):
+
+```
+user_email,user_pass,first_name,last_name
+```
+
+1. Select the file and click **Upload**. The plugin creates new WordPress user accounts for any email addresses not already in the system, enrolls all users in the group, and sends invitation emails.
+
+**Note:** For the bulk upload to work properly, a CSV file formatted with the following column order and headings must be used: user_email; user_pass; first_name; last_name.  CSV files that have incorrect formatting of email addresses, column names, etc will not be uploaded. You can download a sample file from the **Upload Users** modal box. If the user_pass cells are blank, a random password will be used, but the column heading should still be included. A column for “username” can optionally be included as the first column but is not required; if it exists but is left blank, username will default to the email address.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/CSV-Add-Users-Group-Management.png)
+
+### Removing users
+
+To remove users from a group, select the users you would like to remove from the Enrolled User list, and a Remove User(s)  button will appear. Click on the Remove User(s) button. You will be prompted to confirm your action.
+
+Whether or not a Group Leader can remove users from the group, depends on the users group status:
+
+- **Always** — Group Leaders can remove users at any stage.
+- **Before course enrollment begins** — Leaders can only remove users who have not yet started any course.
+- **Before course completion** — Leaders can remove users until they complete all group courses.
+
+Depending on the options set by your site administrator, you may only be able to remove group members before they have enrolled and begun their courses.  Once a learner has begun completing the courses that are available in the group, or if they have completed all of the courses and their status is set to Completed, it may no longer be possible to remove them from the group.
+
+**Note:**Removing a user from a group un-enrolls them from the group’s courses. The seat they occupied becomes available again.
+
+### Password resets
+
+If a user has forgotten their password, a Group Leader can trigger a reset without accessing the WordPress back end:
+
+1. Locate and select the user in the **Enrolled Users** table. A **Send password reset** button will appear.
+2. Click the **Send password reset**
+3. The user will be emailed a link to reset their password.
+
+### Downloading enrollment keys
+
+Group Leaders can download a CSV of all unassigned enrollment keys for the group — useful for distributing keys manually or tracking redemptions in a spreadsheet.
+
+Click Users > **Download Keys** to export a CSV file containing each unused key and its status.
+
+This button is shown or hidden via the 
+```
+download_keys_button
+```
+
+ shortcode or block settings attribute.
+
+### Emailing group members
+
+Group Leaders can easily email all members of their group based on their course status (Not enrolled, Not started, In progress and/or Completed). Clicking Users > Email Users brings up the email group members interface.
+
+Emails sent via this interface use the Group Leader’s name as the From Name, the Group Leader’s email address as the Reply-to Email, and the From Email address in Uncanny Groups > Settings as the From Email.  This is to reduce the likelihood that the emails are flagged as spam.  Members are sent the email via BCC, so group members will not see each others’ email addresses.
+
+Note that this feature is not available by default. On your Group Management page, you must add the group_email_button=”show” attribute to your 
+```
+[uo_groups]
+```
+
+ shortcode to display the button to Group Leaders.
+
+For full details on composing and customizing group emails, see [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/).
+
+**Note:** The group_email_button attribute defaults to 
+```
+"hide"
+```
+
+. You must explicitly set it to 
+```
+"show"
+```
+
+ to expose this feature to Group Leaders.
+
+### Group Leader management
+
+The **Group Leaders** section (shown when 
+```
+group_leader_section="show"
+```
+
+) lets an existing Group Leader:
+
+- **Add a Group Leader** — enter a user’s email address to grant them Group Leader status for this group. The button is controlled by 
+```
+add_group_leader_button
+```
+
+.
+- **Remove a Group Leader** — click the remove icon next to any leader’s name. Group Leaders cannot remove themselves from the list.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/GM-Group-Leaders-section-with-remove-button.png)
+
+### Adding seats and courses
+
+If the group was purchased through WooCommerce (as a subscription or group license), Group Leaders may see **Add Seats** and **Add Courses** buttons, depending on the purchase model:
+
+- **Add Seats** — increases the seat count for the group (only appears for groups created via the purchase of a [Custom Group License](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/).
+- **Add Courses** — adds additional courses to the group’s curriculum.
+
+Individual seats that have already been used cannot be refunded or removed. For full details on expanding groups after purchase, see [Add Seats and Courses after Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/).
+
+These buttons are controlled by the 
+```
+add_seats_button
+```
+
+ and 
+```
+add_courses_button
+```
+
+ shortcode attributes.
+
+### Shortcode reference
+
+The **Group Management** block and 
+```
+[uo_groups]
+```
+
+ shortcode have the following settings / attributes to control which features are visible on the page:
+
+| Setting / Attribute | Values | Default | Controls |
+| --- | --- | --- | --- |
+| group_name_selector | "show" / "hide" | "show" | Group name dropdown |
+| seats_quantity | "show" / "hide" | "show" | Seat count display |
+| add_seats_button | "show" / "hide" | "show" | Add Seats button |
+| add_courses_button | "show" / "hide" | "show" | Add Courses button |
+| add_user_button | "show" / "hide" | "show" | Add User / invite button |
+| remove_user_button | "show" / "hide" | "show" | Remove User button |
+| first_last_name_required | "yes" / "no" | "no" | Makes first/last name mandatory when adding a user |
+| group_email_button | "show" / "hide" | "hide" | Send Email button |
+| upload_users_button | "show" / "hide" | "show" | Bulk CSV upload button |
+| download_keys_button | "show" / "hide" | "show" | Download Keys button |
+| key_options | "show" / "hide" | "show" | Enrollment key options in the Add User dialog |
+| key_column | "show" / "hide" | "show" | Key column in the Enrolled Users table |
+| group_courses_section | "show" / "hide" | "show" | Associated courses list |
+| group_leader_section | "show" / "hide" | "show" | Group Leaders section |
+| add_group_leader_button | "show" / "hide" | "show" | Add Group Leader button |
+| quiz_report_button | "show" / "hide" | "show" | Quiz Report button |
+| assignments_button | "show" / "hide" | "show" | Assignments button |
+| essays_button | "show" / "hide" | "show" | Essays button |
+| progress_report_button | "show" / "hide" | "show" | Progress Report button |
+| progress_management_report_button | "show" / "hide" | "show" | Manage Progress button |
+| csv_export_button | "show" / "hide" | "show" | CSV export of enrolled users |
+| excel_export_button | "show" / "hide" | "hide" | Excel export of enrolled users |
+| enrolled_users_page_length | numeric | 50 | Default rows per page in the Enrolled Users table |
+| enrolled_users_length_menu | comma-separated list | 25,50,100,-1 : All | Row-count options in the Enrolled Users table |
+| group_leaders_page_length | numeric | 50 | Default rows per page in the Group Leaders table |
+| group_leaders_length_menu | comma-separated list | 25,50,100,-1 : All | Row-count options in the Group Leaders table |
+| enrolled_users_orderby_column | column name | First name | Column used to sort the Enrolled Users table |
+| enrolled_users_order_column | "asc" / "desc" | "asc" | Sort direction for the Enrolled Users table |
+| group_leaders_orderby_column | column name | First name | Column used to sort the Group Leaders table |
+| group_leaders_order_column | "asc" / "desc" | "asc" | Sort direction for the Group Leaders table |
+| edit_page_id | page ID | (none) | ID of a custom user-edit page |
+| edit_url | relative URL | (none) | URL of a custom user-edit page (alternative to edit_page_id) |
+
+**Example — showing the email button and hiding key management:**
+
+```
+[uo_groups group_email_button="show" key_column="hide" key_options="hide"]
+```
+
+### Related Articles
+
+- [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/) — Configure which pages the plugin creates and customize their shortcode attributes
+- [Using the Group Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) — Course and quiz reporting available from the front-end Reports menu
+- [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/) — Customize invitation, key, and leader email templates
+- [Set Up User Enrollment](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/) — Control how users are enrolled in groups and courses
+- [Add Seats and Courses after Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/) — Expand existing groups created through WooCommerce purchases
+
+---
+
+## Using the Group Reports
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/group-leader-reports/](https://www.uncannyowl.com/knowledge-base/group-leader-reports/)
+
+### Overview
+
+Uncanny Groups for LearnDash automatically creates front-end report pages that Group Leaders can use to track learner progress — no WordPress admin access required. This article covers the Course Report, Quiz Report, and the individual progress view accessible from the Group Management page.
+
+When the plugin is activated, it creates two report pages:
+
+- **Course Report** — the **Course Report** block, or the 
+```
+[uo_groups_course_report]
+```
+
+shortcode
+- **Quiz Report** — the **Quiz Report** block, or the 
+```
+[uo_groups_quiz_report]
+```
+
+ shortcode
+
+Group Leaders access these pages via the **Reports** menu on the Group Management page, or you can add them directly to your site navigation. Administrators can also access both pages.
+
+**Before you start:** The report pages are created automatically on activation. If you need to recreate or reconfigure them, see [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/).
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/reports-tab.png)
+
+### Course Report
+
+The Course Report gives Group Leaders a completion overview for any group-and-course combination they manage.
+
+#### Using the Course Report
+
+1. Navigate to the **Course Report** page directly or via the Group Management page by clicking Reports > Course.
+2. Use the **Group** dropdown to select the group you want to report on.
+3. Use the **Course** dropdown to select the course.
+4. The report table loads automatically. The default columns include:
+
+| Column | Description |
+| --- | --- |
+| User | Learner’s display name |
+| Email | Learner’s email address |
+| Completion % | Percentage of course content completed |
+| Completion Date | Date the learner completed the course (blank if not yet complete) |
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/course-report-1030x734.png)
+
+#### Exporting the Course Report
+
+If export buttons are enabled via shortcode attributes (see [Shortcode reference](https://docs.google.com/document/d/1WamS8Tx-cvhbsULoYn3h1wLuGWuvswTIvi_nyJtK_AY/edit#course-report-shortcode-reference) below), Group Leaders can download the report as a **CSV** or **Excel** file.
+
+#### Transcript integration
+
+If you are using the Uncanny Toolkit Pro transcript feature, you can link to a transcript page from within the Course Report. Add the transcript-page-id attribute to the 
+```
+[uo_groups_course_report]
+```
+
+ shortcode with the ID of your transcript page. A **Transcript** column will appear in the report table, allowing Group Leaders to view a learner’s full course transcript.
+
+#### Customizing report columns (developers)
+
+Developers can add, remove, or reorder Course Report columns using the ulgm_group_course_report_columns filter, introduced in **Uncanny Groups v6.1.4**. This allows teams with custom reporting requirements to tailor the table without modifying plugin files. See [Actions/Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/) for implementation details.
+
+#### Course Report shortcode reference
+
+Add the **Course Report** block, or place the 
+```
+[uo_groups_course_report]
+```
+
+ shortcode, on any WordPress page to create a Course Report page:
+
+```
+[uo_groups_course_report]
+```
+
+| Setting / Attribute | Values | Default | Description |
+| --- | --- | --- | --- |
+| course-order | “ID“, “title“, “date“, “menu_order“ | (empty) | Sort order for the Course dropdown |
+| columns | comma-separated column keys | user_name, first_name, last_name, user_email, percent_completed, date_completed, date_enrolled, course_name, group_name, transcript_page_url, course_time | Which columns appear in the report table |
+| orderby_column | column name | Date Completed | Column used to sort the report table |
+| order_column | “asc” / “desc“ | “desc” | Sort direction for the report table |
+| csv_export_button | “show” / “hide“ | “show” | Show or hide the CSV export button |
+| excel_export_button | “show” / “hide“ | “show” | Show or hide the Excel export button |
+| transcript-page-id | page ID | 0 | Enables the Transcript column when set to a valid transcript page ID |
+
+### Quiz Report
+
+The Quiz Report lets Group Leaders drill into quiz results for any combination of group, course, and quiz — including individual question-by-question breakdowns.
+
+#### Using the Quiz Report
+
+1. Navigate to the **Quiz Report** page directly or via the Group Management page by clicking Reports > Quiz.
+2. Select a **Group** from the first dropdown.
+3. Select a **Course** from the second dropdown. The quiz list updates to show all quizzes within that course, including course-level quizzes.
+4. Select a **Quiz** from the third dropdown.
+5. The results table loads, showing every enrolled user’s score for that quiz.
+
+**Note:** As of v6.1.5, the quiz dropdown correctly includes course-level quizzes alongside lesson and topic quizzes.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/quiz-report-1030x713.png)
+
+#### Detailed per-attempt report
+
+If LearnDash **quiz statistics** are enabled for a quiz, a detail icon appears next to each user’s result. Clicking it opens a per-attempt breakdown showing:
+
+- Each question in the quiz
+- The answer the learner selected
+- Whether the answer was correct
+
+This view is read-only — it cannot be used to change quiz scores.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/detailed-report-David2-1030x385-1.png)
+
+#### Exporting the Quiz Report
+
+If export buttons are enabled via shortcode attributes, Group Leaders can download results as a **CSV** or **Excel** file.
+
+#### Quiz Report shortcode reference
+
+Place the **Quiz Report**block or the following shortcode on any WordPress page to create a Quiz Report page:
+
+```
+[uo_groups_quiz_report]
+```
+
+| Setting / Attribute | Values | Default | Description |
+| --- | --- | --- | --- |
+| course-orderby | “ID“, “title“, “date“, “menu_order“ | “title“ | Sort field for the Course dropdown |
+| course-order | “ASC” / “DESC“ | “ASC“ | Sort direction for the Course dropdown |
+| quiz-orderby | “ID“, “title“, “date“, “menu_order“ | “title“ | Sort field for the Quiz dropdown |
+| quiz-order | “ASC” / “DESC“ | “ASC“ | Sort direction for the Quiz dropdown |
+| columns | comma-separated column keys | user_name, first_name, last_name, user_email, quiz_score, quiz_modal, quiz_date | Which columns appear in the report table |
+| score-type | “percent” / “points“ | “percent“ | Whether quiz scores display as a percentage or points |
+| orderby_column | column name | Date | Column used to sort the report table |
+| order_column | “asc” / “desc“ | “desc“ | Sort direction for the report table |
+| csv_export_button | “show” / “hide“ | “show“ | Show or hide the CSV export button |
+| excel_export_button | “show” / “hide“ | “show“ | Show or hide the Excel export button |
+
+### Individual progress view
+
+For a quick look at a single learner’s progress across all their enrolled courses, Group Leaders can use the individual progress view without leaving the Group Management page:
+
+1. Go to the **Group Management** page.
+2. Find the user in the **Enrolled Users** table.
+3. Click the **In Progress** status link next to their name.
+
+A panel opens showing that learner’s progress across every course they are enrolled in through the group. This view is read-only — to mark items complete or incomplete, use the [Manage Learner Progress](https://www.uncannyowl.com/knowledge-base/manage-learner-progress/) page instead.
+
+## Related Articles
+
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — The main front-end hub for Group Leaders
+- [Manage Learner Progress](https://www.uncannyowl.com/knowledge-base/manage-learner-progress/) — View and edit individual learner progress from the front end
+- [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/) — Configure and customize the report pages
+- [Actions/Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/) — Hooks available for customizing Group Leader reports
+- [Front End Essay Question Management](https://www.uncannyowl.com/knowledge-base/front-end-essay-question-management/) — Review and grade essay submissions from the front end
+
+---
+
+## Reset Progress Button
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-reset/](https://www.uncannyowl.com/knowledge-base/learndash-reset/)
+
+### Overview
+
+Let learners reset their own progress in a course with a single button — useful for retaking a course, clearing a failed attempt, or starting over. You can add the button anywhere with a shortcode or block, or trigger a reset programmatically with a developer function.
+
+The Reset Progress Button clears a user’s progress in a specified LearnDash course. You can place it on any post type — including the course itself — using either a shortcode or the **Reset Button** block.
+
+The button is context-aware: it only shows to users who have recorded progress in the course. Learners who haven’t started the course won’t see it.
+
+If your courses have shared quizzes, clicking the Reset Button will reset the quiz attempts in all courses where the user has completed the quiz.
+
+For example, a quiz is assigned to “Course 1” and “Course 2”. A course user completes both courses and passed the quiz in each course. The user then clicks the Reset Button for “Course 2”, resulting in all progress resetting for “Course 2”. When the user views “Course 1”, the course will still have a status of completed, however the shared quiz progress will show as reset.
+
+For shared essay quizzes that have been graded and points awarded, only the points will reset, the graded essay remains submitted.
+
+If a shared quiz awards the user a certificate, clicking the reset button will also clear awarded certificates in all courses that share the same quiz.
+
+To ensure users receive awarded certificates after passing a quiz, you can use the Toolkit Pro module [Email Quiz Certificates](https://www.uncannyowl.com/knowledge-base/send-quiz-certificates-by-email/).
+
+### Configure It
+
+You can customize the button in the Toolkit module settings:
+
+- **Button text** — Set the label that appears on the button.
+- **Append course name** — Optionally add the course name to the button text. We recommend enabling this when you display multiple reset buttons on a single page, so learners can tell them apart.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/10/reset-course-progress-settings.png)
+
+### Usage
+
+Add the button with the shortcode or the **Reset Button** block.
+
+```
+[uo_reset_course_progress course_id="x"]
+```
+
+Replace x with the course ID. You can find the ID in the admin URL when editing the course — it’s the 
+```
+post=x
+```
+
+ value.
+
+Decisions to make when placing the button:
+
+- **On the course page** — The 
+```
+course_id
+```
+
+ attribute is optional; the button targets the current course automatically.
+- **On any other page** — Set 
+```
+course_id
+```
+
+ so the button knows which course to reset.
+- **Show only after completion** — Wrap the shortcode in LearnDash’s 
+```
+course_complete
+```
+
+ shortcode so the button appears only to learners who have finished the course.
+
+### Resetting Tin Canny data
+
+If you also use Tin Canny LearnDash Reporting, you can clear its tracking data at the same time:
+
+```
+[uo_reset_course_progress reset_tincanny="yes"]
+```
+
+Setting 
+```
+reset_tincanny="yes"
+```
+
+ deletes the user’s Tin Canny tracking data for that course.
+
+**Note:** In the current version, both the reporting (results) and resume (bookmark) tracking records for the course are cleared. Earlier versions did not delete resume/bookmark data due to technical constraints.
+
+### Shortcode Reference
+
+| Attribute | Values | Description |
+| --- | --- | --- |
+| course_id | Course ID (e.g. 100) | The course to reset. Optional when the button is placed on the course page itself. |
+| reset_tincanny | yes / no (default no) | Also deletes the user’s Tin Canny tracking records for the course. |
+| redirect | URL | Optional. Sends the learner to this URL after the reset is processed. |
+
+### Developer Function
+
+For custom implementations, reset a user’s progress directly:
+
+```
+$user_id   = 10;
+$course_id = 100;
+\uncanny_pro_toolkit\LearnDashReset::reset_course_progress( $user_id, $course_id );
+```
+
+The method signature is 
+```
+reset_course_progress( $user_id, $course_id, $reset_tincanny_data = 'no', $redirect_url = null )
+```
+
+. Pass 
+```
+'yes'
+```
+
+ as the third argument to also clear Tin Canny tracking data.
+
+### Related Articles
+
+- [Duplicate Pages & Posts](https://www.uncannyowl.com/knowledge-base/duplicate-pages-posts/)
+- [Restrict Page Access](https://www.uncannyowl.com/knowledge-base/restrict-page-access/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
 
 ---
 

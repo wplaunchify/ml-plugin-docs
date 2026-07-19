@@ -2,8 +2,8 @@
   "plugin_slug": "uncanny-groups-for-learndash",
   "plugin_name": "Uncanny Groups for LearnDash",
   "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-  "last_scraped": "2026-07-12T13:30:13.439Z",
-  "total_pages": 80,
+  "last_scraped": "2026-07-19T13:30:05.151Z",
+  "total_pages": 90,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,24 @@
       "slug": "uncategorized",
       "url": "https://www.uncannyowl.com/knowledge-base/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 80,
+      "page_count": 90,
       "pages": [
+        {
+          "title": "Run Cohort-Based Courses & Group Coaching Programs",
+          "url": "https://www.uncannyowl.com/knowledge-base/run-cohort-based-courses-group-coaching-programs/"
+        },
+        {
+          "title": "Onboard & Train Your Team with LearnDash Groups",
+          "url": "https://www.uncannyowl.com/knowledge-base/onboard-train-your-team-with-learndash-groups/"
+        },
+        {
+          "title": "Sell Online Courses to Businesses & Teams with LearnDash",
+          "url": "https://www.uncannyowl.com/knowledge-base/sell-online-courses-to-businesses-teams-with-learndash/"
+        },
+        {
+          "title": "Getting Started with Uncanny Groups for LearnDash",
+          "url": "https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/"
+        },
         {
           "title": "Use Case: Selling Accredited & Continuing Education Courses",
           "url": "https://www.uncannyowl.com/knowledge-base/use-case-selling-accredited-continuing-education-courses/"
@@ -332,6 +348,30 @@
         {
           "title": "Uncanny Groups for LearnDash – Technical Requirements",
           "url": "https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-technical-requirements/"
+        },
+        {
+          "title": "Groups Block and Shortcode Quick Reference",
+          "url": "https://www.uncannyowl.com/knowledge-base/shortcode-quick-reference/"
+        },
+        {
+          "title": "Front End Essay Question Management",
+          "url": "https://www.uncannyowl.com/knowledge-base/front-end-essay-question-management/"
+        },
+        {
+          "title": "Front End LearnDash Assignment Management",
+          "url": "https://www.uncannyowl.com/knowledge-base/front-end-learndash-assignment-management/"
+        },
+        {
+          "title": "Using The Group Management Page",
+          "url": "https://www.uncannyowl.com/knowledge-base/group-management-page/"
+        },
+        {
+          "title": "Using the Group Reports",
+          "url": "https://www.uncannyowl.com/knowledge-base/group-leader-reports/"
+        },
+        {
+          "title": "Reset Progress Button",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-reset/"
         }
       ]
     }
