@@ -9987,8 +9987,6 @@ In This Article
 - [Viewing and Adjusting Store Credit](#viewing-and-adjusting-store-credit)
 - [Frequently Asked Questions](#frequently-asked-questions)
 
-The Store Credit is available with all the [license levels of AffiliateWP](https://affiliatewp.com/pricing/).
-
 ## Enabling Store Credit
 
 Before we get started, be sure to [install and activate AffiliateWP](https://affiliatewp.com/docs/how-to-install-the-affiliatewp-plugin/) on your WordPress site.
