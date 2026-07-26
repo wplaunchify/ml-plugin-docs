@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T09:40:31.853Z",
+  "last_updated": "2026-07-26T09:40:54.469Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2513,7 +2513,7 @@
       "slug": "ninja-tables-pro",
       "name": "Ninja Tables Pro",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-07-19T09:34:54.547Z",
+      "last_scraped": "2026-07-26T09:40:52.746Z",
       "page_count": 443,
       "categories": [
         "uncategorized"
@@ -2651,7 +2651,7 @@
       "slug": "simple-post-redirect",
       "name": "Simple Post Redirect",
       "documentation_url": "https://wordpress.org/plugins/simple-post-redirect/",
-      "last_scraped": "2026-07-26T09:40:31.853Z",
+      "last_scraped": "2026-07-26T09:40:31.850Z",
       "page_count": 2,
       "categories": [
         "advanced",
