@@ -16,7 +16,7 @@ This documentation explains how you can set a maximum discount limit for a perce
 
 ## Why limit a percentage discount coupon?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 You might offer a 70% discount to attract more customers, but this could result in an overall loss. By setting a maximum discount limit, you control the maximum amount a customer can save.
 
@@ -26,7 +26,7 @@ This approach ensures you can afford the discount while still providing a compel
 
 ## Steps to limit percentage discount coupon
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 ![](https://woocommerce.com/wp-content/uploads/2019/10/Max-discount.png?w=980)
 
@@ -43,7 +43,7 @@ That’s it.
 
 ## Will the maximum discount limit be displayed on the coupon?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Under **Marketing > Coupons > General** tab, if you have enabled the ‘**Show on cart, checkout and My Account**’ option, the coupon will display the maximum discount limit.
 
@@ -63,14 +63,14 @@ Under **Marketing > Coupons > General** tab, if you have enabled the ‘**Show o
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
 
-### WooCommerce Memberships
+### Conditional Shipping and Payments
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Use conditional logic to restrict the shipping and payment options available on your store.
 
 ---
 

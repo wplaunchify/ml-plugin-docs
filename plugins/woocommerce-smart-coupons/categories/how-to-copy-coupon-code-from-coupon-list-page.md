@@ -18,7 +18,7 @@ This doc article explains how you can copy the coupon code from the coupons list
 
 ## How to copy the coupon code
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. Navigate to **WordPress Admin panel** -> **Marketing -> Coupons**.
 2. Hover over the coupon you would like to share.
@@ -42,14 +42,14 @@ This doc article explains how you can copy the coupon code from the coupons list
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
 
-### WooCommerce Memberships
+### Conditional Shipping and Payments
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Use conditional logic to restrict the shipping and payment options available on your store.
 
 ---
 

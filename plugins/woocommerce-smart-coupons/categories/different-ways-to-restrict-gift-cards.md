@@ -16,7 +16,7 @@ This document explains the different ways a gift card can be restricted.
 
 ## Create gift cards for order status
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 Imagine you want to generate the gift card only when the order status has been completed. Then you can achieve this by navigating to your **WordPress Dashboard > WooCommerce > Settings > Smart Coupons** tab: “**Valid order status for auto-generating coupon**”. Add your valid order status on which you want the gift card to be generated and emailed to the customer.
 
@@ -24,7 +24,7 @@ Imagine you want to generate the gift card only when the order status has been c
 
 ## Calculate the tax before or after applying the Gift Card
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 By default, the WooCommerce core coupons will be applied only to the cart subtotal, whereas the discount type ‘**Store Credit / Gift Certificate**‘ (which is added by Smart Coupons) will be applied to the order total (cart subtotal + tax + shipping). If you want to apply the store credit before applying tax, you can use the ‘Apply before tax’ setting. To enable this setting, you can follow [this article](https://woocommerce.com/document/smart-coupons/using-apply-before-tax/#section-1).
 
@@ -32,7 +32,7 @@ By default, the WooCommerce core coupons will be applied only to the cart subtot
 
 ## Disable Gift Cards from being used with other discount coupons
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 To create a gift card, you would have to follow the following documentation and its steps:
 
@@ -48,7 +48,7 @@ When following the above steps, you would have created a coupon and assigned thi
 
 ## Adding an expiration date to the Gift Card
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 To add an expiry date to the auto-generated Gift Card, you need to navigate to the parent coupon that is assigned to the product, and in the General tab, make sure you select the “**Valid for**” field and the appropriate drop down.
 
@@ -56,7 +56,7 @@ To add an expiry date to the auto-generated Gift Card, you need to navigate to t
 
 ## Enable users to schedule sending Gift Cards
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 To allow users to schedule Gift Cards for Birthdays/Anniversaries or any special occasions, you need to enable the settings under **WordPress Dashboard > WooCommerce > Settings > Smart Coupons** tab: “**Allow schedule sending of coupons?**”
 
@@ -64,7 +64,7 @@ To allow users to schedule Gift Cards for Birthdays/Anniversaries or any special
 
 ## Conditions when Gift Cards can be used
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 You can limit the auto-generated Gift Card coupon to users based on the Minimum/Maximum spend amounts, Product and Product category restrictions, location, payment gateway, and product attributes. For this, you need to make sure you add the restrictions in the Usage restriction tab of the Parent coupon that has been assigned to the Gift Card Product.
 
@@ -72,7 +72,7 @@ You can limit the auto-generated Gift Card coupon to users based on the Minimum/
 
 ## Winding up
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 The above restrictions are examples of how a Gift Card or Gift Certificate product can be restricted based on your day-to-day life and would make life easier for store owners while limiting accessibility to customers.
 
@@ -92,14 +92,14 @@ The above restrictions are examples of how a Gift Card or Gift Certificate produ
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
 
-### WooCommerce Memberships
+### Conditional Shipping and Payments
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Use conditional logic to restrict the shipping and payment options available on your store.
 
 ---
 

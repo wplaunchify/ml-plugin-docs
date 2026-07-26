@@ -20,7 +20,7 @@ Restricting coupons based on location can increase sales as you target your prom
 
 ## How to configure location-based coupons
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Navigate to *Marketing > Coupons* in your store’s WP Admin dashboard.
 2. Create a coupon or edit an existing coupon.
@@ -37,7 +37,7 @@ That’s it. Now, your coupon will only be valid for customers whose addresses m
 
 ## What if the country, state, city, and ZIP code is not available?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 By default, in the *Locations* field, you’ll be able to search and select a country. If you don’t find a country, state, city, and ZIP code, type the exact values and hit the ‘Enter’ button from the keyboard. It will be added to the **Locations** field and database as well.
 
@@ -75,14 +75,14 @@ Once you add these custom values, you can search and select them from the next t
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
 
-### WooCommerce Memberships
+### Conditional Shipping and Payments
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Use conditional logic to restrict the shipping and payment options available on your store.
 
 ---
 
