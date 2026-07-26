@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T21:51:41.092Z",
+  "last_updated": "2026-07-26T21:55:14.555Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1008,7 +1008,7 @@
       "slug": "fooevents-express-check-in",
       "name": "FooEvents Express Check-in",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-07-26T21:37:03.305Z",
+      "last_scraped": "2026-07-26T21:55:14.555Z",
       "page_count": 319,
       "categories": [
         "frequently-asked-questions",
