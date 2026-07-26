@@ -23,11 +23,11 @@ Cookies store authentication tokens that save your login info, keep the items th
 ## Clearing the Browser Cache and Cookies
 
 Table of Contents
-[How To Clear Cache and Cookies On Google Chrome](https://cloudfront.liquidweb.com/kb/how-to-clear-browser-cache-and-cookies/#a1)
-[How To Clear Cache and Cookies On Mozilla Firefox](https://cloudfront.liquidweb.com/kb/how-to-clear-browser-cache-and-cookies/#a2)
-[How To Clear Cache and Cookies On Opera](https://cloudfront.liquidweb.com/kb/how-to-clear-browser-cache-and-cookies/#a3)
-[How To Clear Cache and Cookies On macOS Safari](https://cloudfront.liquidweb.com/kb/how-to-clear-browser-cache-and-cookies/#a4)
-[How To Clear Cache and Cookies On Microsoft Edge](https://cloudfront.liquidweb.com/kb/how-to-clear-browser-cache-and-cookies/#a5)
+[How To Clear Cache and Cookies On Google Chrome](https://docs.nexcess.com/hosting/performance/how-to-clear-browser-cache-and-cookies/)
+[How To Clear Cache and Cookies On Mozilla Firefox](https://docs.nexcess.com/hosting/performance/how-to-clear-browser-cache-and-cookies/)
+[How To Clear Cache and Cookies On Opera](https://docs.nexcess.com/hosting/performance/how-to-clear-browser-cache-and-cookies/)
+[How To Clear Cache and Cookies On macOS Safari](https://docs.nexcess.com/hosting/performance/how-to-clear-browser-cache-and-cookies/)
+[How To Clear Cache and Cookies On Microsoft Edge](https://docs.nexcess.com/hosting/performance/how-to-clear-browser-cache-and-cookies/)
 
 ### How To Clear Cache and Cookies On Google Chrome
 
@@ -57,7 +57,7 @@ Step 6: Select “Cookies and other site data” to delete your browser cookies.
 
 Step 7: Click on “Delete data” button to clear your cache and/or cookies.
 
-[Top](https://cloudfront.liquidweb.com/kb/how-to-clear-browser-cache-and-cookies/#a)
+[Top](https://docs.nexcess.com/hosting/performance/how-to-clear-browser-cache-and-cookies/)
 
 ### How To Clear Cache and Cookies On Mozilla Firefox
 
@@ -82,7 +82,7 @@ Step 5: Select “Cookies and Site Data” and/or “Cached Web Content” to cl
 
 Step 7: Click “Clear” to clear your cache and/or cookies.
 
-[Top](https://cloudfront.liquidweb.com/kb/how-to-clear-browser-cache-and-cookies/#a)
+[Top](https://docs.nexcess.com/hosting/performance/how-to-clear-browser-cache-and-cookies/)
 
 ### How To Clear Cache and Cookies On Opera
 
@@ -104,7 +104,7 @@ Step 4: Select “Cookies and other site data” to clear your browser cookies.
 
 Step 5: Click on “Clear data” button to clear your browser cache and/or cookies.
 
-[Top](https://cloudfront.liquidweb.com/kb/how-to-clear-browser-cache-and-cookies/#a)
+[Top](https://docs.nexcess.com/hosting/performance/how-to-clear-browser-cache-and-cookies/)
 
 ### How To Clear Cache and Cookies On macOS Safari
 
@@ -128,7 +128,7 @@ Step 5. Click on “Remove Now” to clear your browser cache and cookies.
 
 ![safari071020 (5)](https://docs.nexcess.com/wp-content/uploads/2026/06/safari071020-5.jpg)
 
-[Top](https://cloudfront.liquidweb.com/kb/how-to-clear-browser-cache-and-cookies/#a)
+[Top](https://docs.nexcess.com/hosting/performance/how-to-clear-browser-cache-and-cookies/)
 
 ### How To Clear Cache and Cookies On Microsoft Edge
 
