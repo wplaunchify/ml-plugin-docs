@@ -143,14 +143,68 @@ This is the first message a visitor sees inside the chat window.
 
 ## Channel Buttons ​
 
-These are the settings for the buttons and text box inside the chat window, which users click to start talking to you.
+The **Channel Buttons** section allows you to customize the call-to-action options and prefilled message settings for your chat widget.
 
-- **Display Chat Icon:** Toggle this on or off to show or hide the small icon located next to the "Chat Button Text."
-- **Chat Button Text:** Customize the text that appears on the main action button (e.g., "Start Chat with").
-- **Prefilled Message:** Toggle this on to automatically populate the text area with a message, which the user can send immediately or edit.
-- **Prefilled Input Placeholder Text:** Set the placeholder text that appears in the message input field before the user starts typing (e.g., "Type a message...").
+- **Display Chat Icon:** A main toggle switch to turn the display of the channel chat icon on or off.
+- **Chat Button Text:** Enter call-to-action text that appears alongside your channel button (e.g., "Start Chat with:").
 
-![Configuring the Channel Button](https://docs.wpsocialninja.com/assets/channel-buttons.Dj3REo_H.webp)
+![Configuring the Channel Button](https://docs.wpsocialninja.com/assets/channel-buttons.Bkw8QiV3.webp)
+
+### Prefilled Message ​
+
+When a visitor initiates a conversation from a specific page or product listing, enabling the **Prefilled Message** feature automatically attaches context to the chat so your team gets all the details right away.
+
+- **Prefilled Message Toggle:** Switch this feature **ON** or **OFF** to control whether contextual information is automatically added to the chat.
+- **Prefilled Input Placeholder Text:** Customize the placeholder text shown inside the input box before a user sends a message (e.g., "Type a message").
+- **WhatsApp Message Context:** Choose a preset context template from the dropdown menu:
+
+- **None:** Disables automated context.
+- **Page title and link:** Attaches the current page's title and URL.
+- **WooCommerce product details:** Automatically pulls and inserts details from the active WooCommerce product page.
+- **FluentCart product details:** Automatically pulls and inserts details from the active FluentCart product page.
+- **Custom format:** Enables a custom text template using dynamic placeholders.
+
+### Using Custom Format ​
+
+When **Custom format** is selected, a **Custom Format** input field appears. You can build your own personalized message template using any of the following supported placeholders:
+
+- ```
+{page_title}
+```
+
+ — Inserts the title of the current page.
+- ```
+{page_url}
+```
+
+ — Inserts the direct URL of the current page.
+- ```
+{product_title}
+```
+
+ — Inserts the product name.
+- ```
+{product_price}
+```
+
+ — Inserts the product price.
+- ```
+{product_sku}
+```
+
+ — Inserts the product SKU.
+- ```
+{product_stock}
+```
+
+ — Inserts the current product stock status.
+- ```
+{product_url}
+```
+
+ — Inserts the direct product URL.
+
+![Configuring the Channel Button](https://docs.wpsocialninja.com/assets/channel-buttons-1.CzGnKNa3.webp)
 
 ## Chat Bubble Button ​
 
@@ -315,6 +369,38 @@ When visitors click the icon, they will be redirected straight to a WhatsApp cha
 
 ![WhatsApp channel successfully added](https://docs.wpsocialninja.com/assets/whatsapp-message%20preview%2010.BQMd70fv.webp)
 
+#### Prefilled Message & Context (Pro) ​
+
+Picture this: a visitor messages you on WhatsApp from a product page, and all you see is a blank chat. You don't know which product they're looking at or what they need. The **Prefilled Message** feature fixes that by automatically starting the conversation with the right context.
+
+In your WhatsApp channel settings, turn on the **Prefilled Message** toggle. This adds a small "type a message" input to the button and lets you choose what context is added automatically.
+
+Next, choose a **Message context** format from the dropdown:
+
+- **None** – A plain message with no extra context.
+- **Page title and link** – Adds the title and URL of the page the visitor is on.
+- **WooCommerce product details** – Adds the current WooCommerce product's details (title, price, SKU, stock, and link).
+- **FluentCart product details** – Adds the current FluentCart product's details.
+
+So a shopper browsing a $49 hoodie opens WhatsApp with a message that already says exactly that — instead of a blank box.
+
+Want to write your own template? Choose the **Custom format** option and build the message yourself using these placeholders:
+
+| Placeholder | What it inserts |
+| --- | --- |
+| {page_title} | The current page's title |
+| {page_url} | The current page's URL |
+| {product_title} | The product name |
+| {product_price} | The product price |
+| {product_sku} | The product SKU |
+| {product_stock} | The product's stock status |
+| {product_url} | The product's URL |
+
+You can also customize the **placeholder text** shown inside the message input (for example, "Type a message"). When you're happy with your settings, click **Save**.
+
+NOTE
+
+Prefilled message context is a **Pro** feature — on the free version, the context stays set to **None**. The **WooCommerce** and **FluentCart** product options require the matching plugin to be active. This same feature is also available on the [SMS](#sms-pro-configuration) channel.
 ### Telegram Configuration ​
 
 If you want to communicate through Telegram, you can easily add it to your chat widget. First, click **Add New Channel** and select the **Telegram** icon.
@@ -425,7 +511,9 @@ In the pop-up, enter the phone number where you want to receive messages, includ
 
 Once connected, an SMS icon will appear on your website. When visitors click the icon, it will open their phone's default messaging app, ready to send you a text. You can edit or delete it at any time by clicking the **Edit or Delete** icon.
 
-![SMS channel successfully added](https://docs.wpsocialninja.com/assets/edit-sms%2034.BBBFMRW4.webp)
+TIP
+
+Just like WhatsApp, the SMS channel supports the **Prefilled Message & Context** options (Pro), so texts can open pre-filled with the current page or product details. See [Prefilled Message & Context](#prefilled-message-context-pro) above for the full list of formats and placeholders.![SMS channel successfully added](https://docs.wpsocialninja.com/assets/edit-sms%2034.BBBFMRW4.webp)
 
 ### Email Configuration ​
 

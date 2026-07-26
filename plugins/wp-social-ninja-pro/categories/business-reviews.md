@@ -763,7 +763,7 @@ Your next steps are:
 
 This guide will show you how to easily connect your Facebook Page to WP Social Ninja's **Business Reviews** feature. Once connected, you can pull in all your customer reviews to display on your website, building trust and social proof.
 
-This process is very simple and uses the recommended "OAuth" method, which means you just need to log in to your Facebook account and give permission. There are no complicated developer keys needed.
+This process is very simple and uses the recommended "OAuth" method through WP Social Ninja's [secure connection bridge](../getting-started/connecting-your-accounts) — you just log in to your Facebook account and give permission. There are no complicated developer keys or apps to create.
 
 > Use Case: This is the first and most important step for displaying your Facebook Reviews. Once you connect your page, you can create a beautiful Business Reviews template to show off your 5-star ratings, helping to convince new customers that your business is trusted and legitimate.
 
@@ -792,9 +792,9 @@ For the easiest and fastest setup, select the first option: **OAuth 2.0 (Recomme
 After you select the recommended method, a new Facebook pop-up window will open. This is a secure window directly from Facebook.
 
 - If you are not already logged in, Facebook will ask you to log in.
-- Next, it will ask you to grant permission for "WP Social Ninja" to access your information. Click the **"Continue as..."** button to proceed. This is a standard and safe process.
+- Next, it will ask you to grant permission for "WP Social Ninja" to access your information. Click the **"Continue with..."** button to proceed. This is a standard and safe process.
 
-![Facebook Page Review](https://docs.wpsocialninja.com/assets/fb-business-review-3.fM1jz_yu.webp)
+![Facebook Page Review](https://docs.wpsocialninja.com/assets/fb-business-review-3.CIhTAwPM.webp)
 
 ### Step 4: Select Your Facebook Page(s) ​
 
@@ -1022,6 +1022,19 @@ Now, all new submissions will go to the **Reviews** tab in WP Social Ninja, wher
 
 WP Social Ninja serves as the primary review hub for FluentCart, providing a seamless way to collect, manage, and display professional product reviews. This integration replaces the standard review system with a feature-rich experience that includes detailed moderation, custom styling, and an interactive review drawer.
 
+## Quick Setup: One-Click Review Hub (Pro) ​
+
+Setting up FluentCart reviews used to take four separate steps — and it was easy to miss one. Now, a single click does it all.
+
+**Previously**, to make WP Social Ninja your FluentCart review hub, you had to:
+
+1. Create a review form
+2. Build a display template
+3. Connect the template's **Write a Review** button to that form
+4. Turn on **Main Review Hub**
+
+**Now**, the **Set Up Review Hub** button handles every one of those steps for you.
+
 ## Connecting FluentCart to WP Social Ninja ​
 
 To use WP Social Ninja as the main review source for FluentCart, you first need to connect the two platforms.
@@ -1034,13 +1047,27 @@ Alternatively, go to **WP Social Ninja → Settings → Reviews Platforms → Fl
 
 ![Configure Connection](https://docs.wpsocialninja.com/assets/configure-connection-2.CVZUNeJc.webp)
 
-In the **Fluent Cart Configuration** pop-up, use the search bar to find and select the specific products you want to fetch reviews for. Click **Save** to confirm your selection.
+In the **Fluent Cart Configuration** pop-up, use the search bar to find and select the specific products you want to fetch reviews for, also if you want to connect all of your FluentCart product simply click on the **Connect all Product** here. Click **Save** to confirm your selection.
 
 ![Select Product](https://docs.wpsocialninja.com/assets/select-product-3.Y_ZAln7k.webp)
 
-Once products are added, you can click **Add New Template** directly from the configuration pop-up to start designing your review layout.
+Once connected, your products appear under **Your Connected FluentCart Products**, each with its own refresh icon so you can re-sync that product's reviews at any time. Click **Add More Product** whenever you want to connect additional products to WP Social Ninja.
 
-![Add New Template](https://docs.wpsocialninja.com/assets/add-new-template-4.DHsOzq_r.webp)
+TIP
+
+If a product already has its own WP Social Ninja integration set up directly in FluentCart, you'll see an **Overridden In FluentCart** badge with a **Review** link next to it in this list — see [Per-Product Override Indicator](#product-level-integration-settings) below for what that means.**Then,** in the **Make WP Social Ninja your FluentCart review hub** card, click the **Set Up Review Hub** button.
+
+That's it. In one click, WP Social Ninja will:
+
+- Create a [Native Review Form](./native-review-forms) automatically
+- Build a matching display [template](./create-template) with the **Write a Review** button already connected to that form
+- Turn on **Make WP Social Ninja Your Main Review Hub**
+
+There's nothing else to configure — your store is ready to collect and display reviews right away.
+
+NOTE
+
+**Prefer full control?** Choose **Start from a blank template → Add New Template** instead. This creates an empty template only, leaving you to create the review form, connect the **Write a Review** button, and turn on **Main Review Hub** yourself (the manual steps are covered below). Quick Setup is a **Pro** feature.![The FluentCart Configuration pop-up showing the connected products list with an override badge, and the Set Up Review Hub button](https://docs.wpsocialninja.com/assets/fluentcart-quick-setup.OBHg_yjd.webp)
 
 ## Customizing the FluentCart Reviews Layout ​
 
@@ -1084,6 +1111,9 @@ NOTE
 
 When selecting a **Native Template** for your review collection, ensure that the **Review Target** is specifically set to FluentCart. For a deeper understanding of custom source templates, please refer to the detailed [documentation](/guide/custom-source/custom-source-overview).![Create WP Social Ninja Feed](https://docs.wpsocialninja.com/assets/create-wpsocialninja-feed-7.DnJUYpFw.webp)
 
+Per-Product Override Indicator (Pro)
+
+A product-level integration configured here in FluentCart takes precedence over your global review settings for that product. So you always know when this is happening, WP Social Ninja shows an **override badge** next to that product in the connected-products list, along with a direct link to the product's FluentCart **Integrations** screen — making it easy to review or resolve the conflicting setting.
 ## Managing FluentCart Integrations ​
 
 Once you have added an integration for a specific product, you can manage it directly from the **Product Integrations** list within the FluentCart dashboard.
@@ -1216,6 +1246,26 @@ After setting up all the configurations to your preference, click on the **"Save
 
 ![AI Review Settings](https://docs.wpsocialninja.com/assets/ai-review-settings-3.BEpvu-wl.webp)
 
+## FluentCRM Review Tagging ​
+
+If you use **FluentCRM**, this section lets you turn approved product reviews into marketing automations. When a **WooCommerce** or **FluentCart** review is approved, WP Social Ninja can automatically tag the reviewer's FluentCRM contact — so you can branch an automation on it (for example, a thank-you coupon vs. a reminder).
+
+- **Enable Review Tagging**: Turn this toggle on so that approved reviews will tag the matching FluentCRM contact.
+- **Tag Name**: Choose the FluentCRM tag applied to the contact. The dropdown lists your existing FluentCRM tags and defaults to 
+```
+review_submitted
+```
+
+. Reference this exact tag name in your FluentCRM automation condition.
+
+After making your selection, click **Save Settings** to apply the changes.
+
+![The FluentCRM Review Tagging settings card with the Enable Review Tagging toggle and Tag Name dropdown](https://docs.wpsocialninja.com/assets/fluentcrm-review-tagging.4Tf4Mj8R.webp)
+
+NOTE
+
+This is a **Pro** feature and only appears when the FluentCRM plugin is active.For the full walkthrough — including how to build a FluentCRM automation around the tag — see the [FluentCRM Review Tagging](../integrations/fluentcrm-review-tagging) guide.
+
 ---
 
 ## Google Business Profile Reviews ​
@@ -1224,57 +1274,31 @@ After setting up all the configurations to your preference, click on the **"Save
 
 # Google Business Profile Reviews ​
 
-Do you wish to display all your scattered reviews in one place on your website? **WP Social Ninja** will exactly do that, all you need is to grab the plugin.
+Do you wish to display all your scattered reviews in one place on your website? **WP Social Ninja** does exactly that — and connecting your Google Business Profile takes just one click.
 
-## Google Business Profile Configuration ​
+Google Reviews connect through WP Social Ninja's [secure connection bridge](../getting-started/connecting-your-accounts), which keeps your connection reliable and refreshes it in the background. Let's walk through it.
 
-To add Google Reviews to your site, you need to connect with the Google server to collect the reviews from their server; and WP Social Ninja has made it easy for you.
+## Connect Your Google Business Profile ​
 
-## Google reviews ​
+**First,** from your WordPress dashboard, go to **WP Social Ninja → Platforms** and select **Google** from the list of platforms.
 
-We have created the simplest way to get the reviews just with a few clicks.
+![Selecting Google from the Platforms list in WP Social Ninja](https://docs.wpsocialninja.com/assets/google-business-review-1.Dn3kTyQP.webp)
 
-In order to obtain Google Reviews successfully, select **Google** from All Platforms.
+**Then,** in the **Google Business Profile Configuration** pop-up, click the **Sign in And Get Google Access Code** button. As the pop-up says, it only takes one click.
 
-![Business Reviews | Google](https://docs.wpsocialninja.com/assets/google-business-review-1.Dn3kTyQP.webp)
+![The Google Business Profile Configuration pop-up with the Sign in And Get Google Access Code button](https://docs.wpsocialninja.com/assets/google-business-connect.DvBsxMN0.webp)
 
-Now, let’s see how you can add reviews to your website. Firstly, you need to obtain **Google Access Code**.
+**Next,** choose the email account associated with your Google Business Profile.
 
-![Google Configuration](https://docs.wpsocialninja.com/assets/google-business-review-2.DrM5xYBG.webp)
+![Choosing your Google account](https://docs.wpsocialninja.com/assets/google-business-review-3.C-sN1W1Z.webp)
 
-### Google Configuration ​
+**Finally,** click **Continue** to grant permission. WP Social Ninja takes care of the rest and brings you right back, with your Google Business Profile connected — no code to copy or paste.
 
-Click on the **Sign In And Get Google Access Code** to get the Access Code. Clicking this button will open a new window. Here, you must select the Email associated with your Google Business Profile account.
+![Granting permission to WP Social Ninja](https://docs.wpsocialninja.com/assets/google-business-review-4.D_7cfYX6.webp)
 
-#### Step 1 ​
+TIP
 
-Continue with your business account. Choose your e-mail account to continue with WP Social Ninja.
-
-![Choose an account](https://docs.wpsocialninja.com/assets/google-business-review-3.C-sN1W1Z.webp)
-
-#### Step 2 ​
-
-Click on the **Continue** to grant access permission.
-
-![Allow to Continue](https://docs.wpsocialninja.com/assets/google-business-review-4.D_7cfYX6.webp)
-
-#### Step 3 ​
-
-Now copy the Access Code from here.
-
-![Copy Access Code](https://docs.wpsocialninja.com/assets/google-business-review-5.BdZlTaLO.webp)
-
-### Step 4 ​
-
-Then paste the copied **Access Code** into the Google Configuration page to Configure Google Business Profile. Click on the **Verify Code** button to get the Google Reviews.
-
-![Verify Code ](https://docs.wpsocialninja.com/assets/google-business-review-6.DuP0p-0n.webp)
-
-### Step 5 ​
-
-You can also click on **Connect New Account** to get your reviews from multiple Business Accounts.
-
-You have successfully managed to get your **Google Business Profile Reviews**. Now click to [Create a Template](./create-template) to display reviews on your website.
+Manage reviews for more than one location? Click **+ Add Business** to bring in reviews from multiple Business Profiles. And because Google Reviews connect through the secure bridge, WP Social Ninja refreshes the connection automatically in the background — so your reviews keep syncing without you having to reconnect.You've successfully connected your **Google Business Profile Reviews**! Now head over to [Create a Template](./create-template) to display these reviews on your website.
 
 ---
 
@@ -1810,25 +1834,51 @@ Now that your account is connected, you're ready for the fun part:
 
 WP Social Ninja simplifies the process of displaying WooCommerce product reviews on your website. You have to follow some easy steps to do this.
 
-## WooCommerce Reviews Settings ​
+## Connecting WooCommerce Reviews ​
 
-Go to your WP Social Ninja plugins [Platforms](../getting-started/all-platforms-of-wp-social-ninja) section and enable the **WooCommerce** module. Then click on the **Settings** icon in the right corner.
+Go to your WP Social Ninja plugin's [Platforms](../getting-started/all-platforms-of-wp-social-ninja) section, enable the **WooCommerce** module, and click the **Settings** icon in the right corner.
 
-![enable woocommerce review 1](https://docs.wpsocialninja.com/assets/woocommerce-review-1.uF7yOYsm.webp)
-
-After clicking on the settings icon, a pop-up will appear. Now select your **WooCommerce products** from here to show their reviews on your site.
+![Enabling the WooCommerce module and opening its settings](https://docs.wpsocialninja.com/assets/woocommerce-review-1.uF7yOYsm.webp)
 
 INFO
 
-Make sure that you have installed the WooCommerce plugin on your site and that you have at least one product with a review.![woocommerce configuration](https://docs.wpsocialninja.com/assets/woocommerce-review-2.DMrhII-3.webp)
+Make sure the WooCommerce plugin is installed on your site and that you have at least one product with a review.The **WooCommerce Configuration** pop-up opens. This is your one screen for connecting products and choosing how their reviews are displayed.
 
-Click the **Add More Product** button to include multiple product reviews. From the **Select a product to fetch reviews** dropdown menu, choose the specific product whose reviews you want to display in a template.
+### Connect Your Products ​
 
-After selecting a product, click the **Save** button to confirm your choice.
+Click the **Add More Product** button and choose the product (or products) whose reviews you want to display. Then click **Save** to confirm your selection.
 
-Once you have saved your product selection, click the **Add New Template** button. This will take you to the [template editor](./create-template), where you can design the layout and style for displaying the fetched reviews on your website.
+TIP
 
-![select a product](https://docs.wpsocialninja.com/assets/woocommerce-review-3.B05iWE-f.webp)
+Already have plenty of reviews in WooCommerce? Click **Sync All Reviews** at the top of the pop-up to bulk-import every existing product review at once. When it finishes, the confirmation tells you exactly how many *new* reviews were imported.
+### Choose How Reviews Are Displayed ​
+
+Once your products are connected, decide how WP Social Ninja should display their reviews. You have two options.
+
+#### Option A: Quick Setup — One-Click Review Hub (Pro) ​
+
+Setting up a review hub used to take four separate steps — and it was easy to miss one. Now, a single click does it all.
+
+**Previously**, to make WP Social Ninja your WooCommerce review hub, you had to:
+
+1. Create a review form
+2. Build a display template
+3. Connect the template's **Write a Review** button to that form
+4. Turn on **Main Review Hub**
+
+**Now**, in the **Make WP Social Ninja your WooCommerce review hub** card, just click the **Set Up Review Hub** button. In one click, WP Social Ninja will:
+
+- Create a [Native Review Form](./native-review-forms) automatically
+- Build a matching display [template](./create-template) with the **Write a Review** button already connected to that form
+- Turn on **Make WP Social Ninja Your Main Review Hub**
+
+There's nothing else to configure — your store is ready to collect and display reviews right away.
+
+#### Option B: Start from a Blank Template ​
+
+Prefer full control over each step? Under **Start from a blank template**, click **Add New Template**. This creates an empty template only, so you'll manually create the review form, connect the **Write a Review** button, and turn on **Main Review Hub** yourself. It takes you to the [template editor](./create-template), where you can design the layout and style for your reviews.
+
+![Selecting a WooCommerce product to fetch reviews for](https://docs.wpsocialninja.com/assets/woocommerce-review-3.B05iWE-f.webp)
 
 ## Global WooCommerce Review Settings ​
 
@@ -1875,6 +1925,9 @@ These settings on the WooCommerce product page let you control how reviews are d
 
 ![social ninja review settings in woocommerce products](https://docs.wpsocialninja.com/assets/woocommerce-review-5.DB3noGXw.webp)
 
+Per-Product Override Indicator (Pro)
+
+When a product has its **own** template selected here, that choice takes precedence over your global **Main Review Hub** template. To help you spot this, WP Social Ninja shows a **"Has Product-Level Override"** badge next to that product in the connected-products list. The badge includes a direct link to the product's **Product Data → WP Social Ninja** tab, so you can review or resolve the conflicting setting in one click.
 ## Reviews Notification Popup ​
 
 You can also set a pop-up notification of WooCommerce product reviews on your site. The pop-up review notification will show up on your font end site like this.
