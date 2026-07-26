@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T07:49:18.339Z",
+  "last_updated": "2026-07-26T07:50:10.215Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -740,7 +740,7 @@
       "slug": "fluentcart",
       "name": "FluentCart",
       "documentation_url": "https://docs.fluentcart.com/guide/",
-      "last_scraped": "2026-07-26T07:03:57.578Z",
+      "last_scraped": "2026-07-26T07:03:57.572Z",
       "page_count": 142,
       "categories": [
         "browsing-history",
@@ -1088,7 +1088,7 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-26T07:49:18.339Z",
+      "last_scraped": "2026-07-26T07:49:18.336Z",
       "page_count": 61,
       "categories": [
         "about-us",
@@ -3500,7 +3500,7 @@
       "slug": "wp-file-manager",
       "name": "WP File Manager",
       "documentation_url": "https://filemanagerpro.io/article/",
-      "last_scraped": "2026-07-19T07:43:14.739Z",
+      "last_scraped": "2026-07-26T07:50:07.547Z",
       "page_count": 39,
       "categories": [
         "aws-s3-integration",
