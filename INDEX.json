@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T17:23:53.727Z",
+  "last_updated": "2026-07-26T17:24:03.161Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -689,7 +689,7 @@
       "slug": "fluentbooking",
       "name": "FluentBooking",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-07-19T17:23:51.457Z",
+      "last_scraped": "2026-07-26T17:24:01.606Z",
       "page_count": 57,
       "categories": [
         "availability",
