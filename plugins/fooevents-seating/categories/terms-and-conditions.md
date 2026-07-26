@@ -8,7 +8,7 @@
 
 **Source:** [https://www.fooevents.com/terms-and-conditions/](https://www.fooevents.com/terms-and-conditions/)
 
-*The Terms and Conditions were last updated on September 16, 2024*
+*The Terms and Conditions were last updated on July 21, 2026*
 
 ## 1. Introduction
 
