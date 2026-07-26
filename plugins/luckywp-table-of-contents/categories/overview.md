@@ -220,7 +220,11 @@ Intl
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/cc1cb212b65ae5031c45cfdd1b1f3bfc80a498d4ac226046d7175a1a982c82a3?s=60&d=retro&r=g)### Works good
+	![](https://secure.gravatar.com/avatar/4f2bf7aeee30cbaf5ed6b52a3f1657fa8909384eb73d2973dec82faff08d9d07?s=60&d=retro&r=g)### Great Plugin. Works well.
+							[keithwin](https://profiles.wordpress.org/keithwin/)
+								July 22, 2026
+						Works very well. Lightweight and easy to setup. I’ve been using it for several weeks and had no problems with it so far.
+							![](https://secure.gravatar.com/avatar/cc1cb212b65ae5031c45cfdd1b1f3bfc80a498d4ac226046d7175a1a982c82a3?s=60&d=retro&r=g)### Works good
 							[PrestaSite](https://profiles.wordpress.org/polosatest/)
 								June 30, 2026
 						Works good
@@ -239,12 +243,8 @@ Intl
 							[vladimirwillis](https://profiles.wordpress.org/vladimirwillis/)
 								May 7, 2026
 						Работает без конфликтов. Спасибо! Гибкие настройки плагина.
-							![](https://secure.gravatar.com/avatar/22346d56781c67c401c5e9bf85bb26ace5405fe5a28d83ef1317a88e4b5bb4c6?s=60&d=retro&r=g)### Good plugin
-							[Mr waghela](https://profiles.wordpress.org/mrwaghela/)
-								April 16, 2026
-						good plugin
 
-		[Read all 884 reviews](https://wordpress.org/support/plugin/luckywp-table-of-contents/reviews/)
+		[Read all 885 reviews](https://wordpress.org/support/plugin/luckywp-table-of-contents/reviews/)
 
 ## Contributors & Developers
 
