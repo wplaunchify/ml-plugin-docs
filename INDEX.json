@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T07:00:41.159Z",
+  "last_updated": "2026-07-26T07:00:50.824Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -59,7 +59,7 @@
       "slug": "affiliatewp",
       "name": "AffiliateWP",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-26T07:00:41.159Z",
+      "last_scraped": "2026-07-26T07:00:41.155Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
@@ -574,7 +574,7 @@
       "slug": "fluent-snippet-version-control",
       "name": "Fluent Snippet Version Control",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-07-26T06:57:43.047Z",
+      "last_scraped": "2026-07-26T06:57:43.046Z",
       "page_count": 2,
       "categories": [
         "create-snippet",
@@ -788,7 +788,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-07-19T06:57:59.184Z",
+      "last_scraped": "2026-07-26T07:00:47.941Z",
       "page_count": 80,
       "categories": [
         "administration",

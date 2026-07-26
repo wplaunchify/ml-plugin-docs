@@ -8,6 +8,42 @@
 
 **Source:** [https://fluentcommunity.co/docs/changelog/](https://fluentcommunity.co/docs/changelog/)
 
+= 2.7.5 (Date: Jul 24, 2026) =- Introduced: Audio Uploads and Audio Media Gallery
+- Added: Details and LaTeX (Math) Blocks in Lesson Editor
+- Added: Password Change Option on Profile Edit
+- Added: Default Theme Mode Customization
+- Added: Rename Documents in Space Documents Section
+- Added: Open Profile Comments in Feed Modal
+- Added: Message Field Support in Lesson PATCH Endpoint
+- Improved: Activity Feed and Ticker Query Performance
+- Improved: New Posts Notification Preferences as a Table
+- Improved: Sidebar Membership Preloading and Per-User Permission Caching
+- Improved: Database Indexes on Notifications, Comments and Space Members
+- Improved: Space Feature Access Nested Under Toggles
+- Improved: Primary Menu Default Items Support Visibility Controls
+- Improved: Best-Quality WebP Thumbnails for YouTube Feed Previews
+- Improved: Cached Sitemap Index and Moderator Recipient Lists
+- Security: Access Control on Comments, Lockscreens and Documents
+- Security: Escaping, Input Sanitization and API Key Masking
+- Fixed: Fatal Error on WordPress 6.0 from Unguarded Core Calls
+- Fixed: Mobile Menu and Sidebar Feed Link Ignoring Menu Settings
+- Fixed: Duplicate and Missing Mention Notifications
+- Fixed: Notification Highlight Targeting the Wrong Comment
+- Fixed: Markdown Tables Stripped on Feed Render
+- Fixed: Cross-Space Post View via Space Permalink
+- Fixed: Photos Uploaded Sideways From Unhandled EXIF Orientations
+- Fixed: Moderation Actions for Course and Sticky Posts
+- Fixed: Comment Toolbox Overlapping Delete Dialog
+- Fixed: Space Lock and Unread Badge Visible in Collapsed Sidebar
+- Fixed: Space Sub-Header Overflow With Collapsible Sidebar
+- Fixed: Sidebar Toggle Missing on Fcom Frame Templates
+- Fixed: Empty Space Groups Skipped in FluentCRM Tagging
+- Fixed: Followers and Following Alphabetical Sort
+- Fixed: Corrected Comment Author Profile Links in SEO
+- Fixed: Course Lesson Comment Approval Feed Lookup
+- Fixed: Early Text Domain Translation Loading Notice
+- Fixed: Duplicate Auto-Flag Reports on Content Edit
+
 = 2.7.0 (Date: Jul 8, 2026) =- Introduced: Space Media Gallery
 - Added: Sidebar Collapse Toggle with Persistence
 - Added: Invite Members by Email and Name

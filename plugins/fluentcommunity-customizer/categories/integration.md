@@ -290,13 +290,17 @@ Once enabled, your community posts will start using Fluent Player, and you will 
 
 ### Step 2: Customizing Player Appearance
 
-You can ensure your videos perfectly match your community’s aesthetic by adjusting the player’s look and feel.
+You can ensure your videos perfectly match your community’s aesthetic by adjusting the player’s look and feel. A live preview at the top of the panel updates as you adjust these settings.
 
-- **Select a Player Skin:** Choose from multiple layouts (Modern, Classic, Simple, Floating, or Minimal).
-- *Tip: Use ‘Modern’ for a feature-rich look, or ‘Minimal’ for a distraction-free learning environment.*
-- **Set Brand Color:** Define your community’s primary hex color. This will instantly apply to the player’s progress bar, button highlights, and active controls.
+- Select a Player Skin: Choose a layout from the Skin dropdown (Modern, Classic, Simple, Floating, or Minimal).
+- Tip: Use ‘Modern’ for a feature-rich look, or ‘Minimal’ for a distraction-free learning environment.
+- Set Brand Color: Define your community’s primary hex color. This applies to key highlights like the progress bar and play button.
+- Set Control Bar Color: Customize the background color of the control bar independently of your brand color.
+- Set Audio Background Color: With FluentPlayer Audio enabled, choose the background color shown behind uploaded audio tracks.
+- Set Audio Title Color: Set the text color used for the audio track’s title.
+- Upload an Audio Logo: Add a custom logo to display on the audio player.
 
-![](https://fluentcommunity.co/wp-content/uploads/2026/02/fluent-player-integration-3-scaled.webp)
+![](https://fluentcommunity.co/wp-content/uploads/2026/02/fluentplayer-1-scaled.webp)
 
 ### Configuring Player Controls
 
