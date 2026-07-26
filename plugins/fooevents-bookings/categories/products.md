@@ -70,17 +70,23 @@ Sell access to bookable events, venues, classes and services. Let your customers
 
 [View Details](https://www.fooevents.com/products/fooevents-bookings/)
 
-### Free Check-ins App
+### FooEvents Check-ins App
 
 Create single-day conferences, virtual conferences and webinars, conferences that span over multiple days, and conferences that repeat on specified dates.
 
 [View Details](https://www.fooevents.com/products/apps/)
 
-### Free Ticket Themes
+### FooEvents Ticket Themes
 
 Transform your ticket designs with our free Ticket Themes. Choose from a catalog of polished, ready-to-use themes, then customize them with your own branding, event details, colors, and style to create tickets that feel unique to your event.
 
 [View Details](https://www.fooevents.com/products/ticket-themes/)
+
+### FooEmail
+
+FooEmail is a lightweight WordPress email logging and delivery plugin. Track every email sent from your website, quickly diagnose sending issues, and improve delivery reliability using authenticated SMTP or Brevo.
+
+[View Details](https://www.fooevents.com/products/fooemail/)
 
 ---
 
@@ -100,7 +106,7 @@ No more clumsy clipboards! Streamline your check-in process and ensure critical 
 
 Download Android App](https://play.google.com/store/apps/details?id=com.fooevents.EventCheckins)
 
-23,485,851
+23,494,012
 
 Attendees Checked In and Counting
 
@@ -211,6 +217,120 @@ Pair your device with a handheld Bluetooth barcode scanner for faster, hardware-
 ### Multi-language Support
 
 The FooEvents Check-ins app supports 18 languages, including English, Afrikaans, Arabic, Chinese (Simplified), Czech, Dutch, French, German, Greek, Hebrew, Hindi, Hungarian, Italian, Malay, Portuguese, Russian, Spanish, and Swedish.
+
+---
+
+## FooEmail
+
+**Source:** [https://www.fooevents.com/products/fooemail/](https://www.fooevents.com/products/fooemail/)
+
+Free Plugin
+
+# FooEmail
+
+FooEmail is a lightweight WordPress email logging and delivery plugin. Track every email sent from your website, quickly diagnose sending issues, and improve delivery reliability using authenticated SMTP or Brevo.
+
+[Download FooEmail Plugin](https://downloads.fooevents.com/fooemail/)
+
+FooEmail Features
+
+## Everything you need to track, troubleshoot and resend WordPress emails
+
+FooEmail gives you a clear record of outgoing email attempts handled through WordPress, including FooEvents ticket emails. See which attempts succeeded or failed, diagnose sending errors, resend missing messages, and improve delivery reliability using authenticated SMTP or Brevo.
+
+[View Documentation](https://help.fooevents.com/docs/topics/fooevents-plugins/fooemail/)
+
+### WordPress and FooEvents email logging
+
+Record outgoing emails sent through WordPress, including FooEvents tickets, WooCommerce notifications and messages from compatible plugins and themes.
+
+### Authenticated SMTP delivery
+
+Replace default WordPress mail delivery with an authenticated SMTP server using your host, port, username and password.
+
+### Brevo transactional delivery
+
+Send WordPress and FooEvents emails through Brevo’s transactional HTTP API using a configured API key.
+
+### Sent and failed email tracking
+
+See whether each email attempt was accepted or rejected by WordPress or the configured delivery provider. A sent status confirms acceptance, not inbox delivery.
+
+### Detailed failure diagnostics
+
+View WordPress and provider error messages together with supporting transport details that help explain why an email could not be sent.
+
+### Searchable email log
+
+Search by recipient or subject and switch between All, Sent and Failed views to locate customer and ticket emails quickly.
+
+### Source and transport detection
+
+See which plugin, theme or MU plugin initiated an email, where detectable, and whether it used WordPress mail, SMTP or Brevo.
+
+### Complete email details
+
+Inspect recipients, sender information, subject lines, timestamps, headers, request IP, originating plugin and delivery transport for each attempt.
+
+### Email content previews
+
+Preview stored email content from the WordPress dashboard in a sandboxed frame. Email-content logging must be enabled.
+
+### Individual email resending
+
+Resend a logged email directly after correcting a configuration issue or changing the selected delivery method.
+
+### Bulk email resending
+
+Select and resend multiple logged emails together, making it easier to recover from a temporary sending failure.
+
+### Original message preservation
+
+Reuse available recipients, subject, stored body, From and Reply-To details, CC and BCC headers, original headers and attachment paths when resending.
+
+### Linked resend history
+
+Each resend creates a new log entry linked to the original message, giving support teams a clear record of every attempt.
+
+### Email activity timeline
+
+Follow created, sent, failed, resent and failed-resend events in a newest-first history from the email detail panel.
+
+### Filterable and sortable dashboard
+
+Filter by the originating plugin or theme and sort by subject, recipient, sender, error, status or sending date.
+
+### Default sender replacement
+
+When SMTP or Brevo is selected, automatically replace WordPress’s generic wordpress@domain sender address with the configured sender identity.
+
+### Test email sending
+
+Send a custom test message using the currently selected delivery method and see the result in both the notice and email log.
+
+### Automatic log retention
+
+Delete old records automatically using a configurable retention period measured in days, weeks, months or years.
+
+### Maximum log limits
+
+Set a maximum total number of records to prevent the email log from growing without control.
+
+### Retention notifications
+
+Receive an email notice after automated retention removes records, when a notification recipient has been configured.
+
+### Log-size threshold alerts
+
+Receive a warning when the log exceeds a configured size, limited to one notice per day while it remains over the threshold.
+
+### WordPress Multisite support
+
+Maintain separate email-log tables for each site, support network activation and clean up records when a site is deleted.
+
+### Localization-ready interface
+
+User-facing FooEmail strings use standard WordPress localization functions in preparation for translated interfaces.
 
 ---
 
