@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T21:55:14.555Z",
+  "last_updated": "2026-07-26T21:55:35.151Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -986,7 +986,7 @@
       "slug": "fooevents-bookings",
       "name": "FooEvents Bookings",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-07-26T21:42:38.674Z",
+      "last_scraped": "2026-07-26T21:42:38.664Z",
       "page_count": 319,
       "categories": [
         "frequently-asked-questions",
@@ -997,7 +997,7 @@
       "slug": "fooevents-custom-attendee-fields",
       "name": "FooEvents Custom Attendee Fields",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-07-26T21:50:54.232Z",
+      "last_scraped": "2026-07-26T21:50:54.221Z",
       "page_count": 319,
       "categories": [
         "frequently-asked-questions",
@@ -1008,7 +1008,7 @@
       "slug": "fooevents-express-check-in",
       "name": "FooEvents Express Check-in",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-07-26T21:55:14.555Z",
+      "last_scraped": "2026-07-26T21:55:14.551Z",
       "page_count": 319,
       "categories": [
         "frequently-asked-questions",
@@ -1019,7 +1019,7 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-07-26T21:39:54.764Z",
+      "last_scraped": "2026-07-26T21:39:54.755Z",
       "page_count": 319,
       "categories": [
         "frequently-asked-questions",
@@ -1030,7 +1030,7 @@
       "slug": "fooevents-multi-day",
       "name": "FooEvents Multi-Day",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-07-26T21:48:09.879Z",
+      "last_scraped": "2026-07-26T21:48:09.875Z",
       "page_count": 319,
       "categories": [
         "frequently-asked-questions",
@@ -1041,7 +1041,7 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-07-26T21:45:22.660Z",
+      "last_scraped": "2026-07-26T21:45:22.648Z",
       "page_count": 319,
       "categories": [
         "frequently-asked-questions",
@@ -2407,7 +2407,7 @@
       "slug": "preview-e-mails-for-woocommerce",
       "name": "Preview E-mails for WooCommerce",
       "documentation_url": "https://wordpress.org/plugins/woo-preview-emails/",
-      "last_scraped": "2026-07-26T21:35:22.915Z",
+      "last_scraped": "2026-07-26T21:35:22.913Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2472,7 +2472,7 @@
       "slug": "resizable-sidebar-for-the-gutenberg-block-editor",
       "name": "Resizable Sidebar for the Gutenberg Block Editor",
       "documentation_url": "https://wordpress.org/plugins/resizable-editor-sidebar/",
-      "last_scraped": "2026-07-26T21:38:17.113Z",
+      "last_scraped": "2026-07-26T21:38:17.112Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2513,7 +2513,7 @@
       "slug": "simple-post-redirect",
       "name": "Simple Post Redirect",
       "documentation_url": "https://wordpress.org/plugins/simple-post-redirect/",
-      "last_scraped": "2026-07-26T21:46:12.571Z",
+      "last_scraped": "2026-07-26T21:46:12.504Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2703,7 +2703,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-      "last_scraped": "2026-07-26T16:20:50.010Z",
+      "last_scraped": "2026-07-26T21:55:32.998Z",
       "page_count": 362,
       "categories": [
         "accessibility",
