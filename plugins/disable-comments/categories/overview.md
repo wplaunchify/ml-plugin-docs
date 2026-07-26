@@ -13,7 +13,7 @@
 	
 #### Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]
 
-Disable comments on WordPress posts, pages, and media in one click. Stop spam, remove existing comments, and turn off comments site-wide or per post type. Multisite, WP-CLI, REST API, and XML-RPC supported
+Enable/Disable comments on any WordPress content (Pages, Posts, or Media) to stop spammers. WP-CLI, XML-RPC & REST-API support to stop spam comments.
 
 [More About Plugin](https://wpdeveloper.com/plugins/disable-comments/) ◼️ [Documentation](https://wpdeveloper.com/docs-category/disable-comments/) ◼️ [Support Forum](https://wordpress.org/support/plugin/disable-comments/)
 
@@ -39,14 +39,11 @@ Have multiple websites? Get rid of irrelevant comments on the entire network usi
 - The X-Pingback HTTP header is removed from all pages.
 - Outgoing pingbacks are disabled.
 - Stop spam comments entirely from the site with one click.
-- Delete comments by type.
-- Disable comments via [XML-RPC](https://wpdeveloper.com/docs/how-to-disable-comments-made-via-xml-rpc/) & [REST-API](https://wpdeveloper.com/docs/how-to-disable-comments-made-via-rest-api/)
-- Fully Multi-site Network supported.
-- Manage multiple website network-specific subsites or entire network comments in advance.
+- **[New]** Delete comments by type.
+- **[New]** Disable comments via [XML-RPC](https://wpdeveloper.com/docs/how-to-disable-comments-made-via-xml-rpc/) & [REST-API](https://wpdeveloper.com/docs/how-to-disable-comments-made-via-rest-api/)
+- **[New]** Fully Multi-site Network supported.
+- **[New]** Manage multiple website network-specific subsites or entire network comments in advance.
 - **[New]** Exclude Disable Comments Settings based on user roles.
-- **[New]** Disable Gravatar
-- **[New]** Enable Certain Comment Types
-- **[New]** Show Existing Comments
 
 Please delete any existing comments on your site **before applying this setting**, otherwise (depending on your theme) those comments may still be displayed to visitors. You can use the **Delete Comments tool** to delete any existing comments on your site.
 
@@ -145,7 +142,7 @@ Consider checking out our other WordPress solutions & boost your WordPress websi
 
 📄 [EmbedPress](https://wordpress.org/plugins/embedpress/): EmbedPress lets you embed anything including videos, images, posts, audio, maps and upload PDF, DOC, PPT etc.
 
-☁ [Templately](https://wordpress.org/plugins/templately/): 6500+ Free templates library for Elementor & Gutenberg along with the cloud collaboration for WordPress.
+☁ [Templately](https://wordpress.org/plugins/templately/): 6000+ Free templates library for Elementor & Gutenberg along with the cloud collaboration for WordPress.
 
 📚 [BetterDocs](https://wordpress.org/plugins/betterdocs/): Best Documentation & Knowledge Base Plugin for WordPress reduce manual support tickets & improve user experience.
 
@@ -213,7 +210,11 @@ Go to the tools page for the Disable Comments plugin and utlize the Delete Comme
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/da1844de47919ff7ecfd97eecd0b93b3b7ad45b1bd3d328b6b2a5f52bec71418?s=60&d=retro&r=g)### Really love this plugin
+	![](https://secure.gravatar.com/avatar/c717edc6315622ec9c362d4393638a683293bd90c1289a41b1d0aba8e6cb0615?s=60&d=retro&r=g)### Awsome
+							[checmark](https://profiles.wordpress.org/checmark/)
+								July 21, 2026
+						One of my many websites has been getting hacked by numerous Russian comments, as many as twenty a day! I spent hours online with my hosting company, InMotion Hosting, trying to block this, but they suggested using their CloudFlare feature, which was a total pain! I then researched how to block comments on a WordPress site and this was just as much of a pain, with no way to block comments on all posts and pages. Then I discovered this plugin and it worked in about two minutes to block comments everywhere on the site. Thank you!
+							![](https://secure.gravatar.com/avatar/da1844de47919ff7ecfd97eecd0b93b3b7ad45b1bd3d328b6b2a5f52bec71418?s=60&d=retro&r=g)### Really love this plugin
 							[piercand](https://profiles.wordpress.org/piercand/)
 								July 13, 2026
 						It does exactly what it’s needed, easy, affordable and lightweight. A must-use in all my websites.
@@ -236,12 +237,8 @@ Go to the tools page for the Disable Comments plugin and utlize the Delete Comme
 							[isolshell1](https://profiles.wordpress.org/isolshell1/)
 								November 9, 2025
 						I had a daunting task of first moving 500+ the Pending Comments that I have identified as all SPAM to the Trash folder, page by fricken page, then having to go into the Trash folder to permentantly delete them, page by painstaking page.Then I said there must be a plugin for this. Lo & Behold there was.  It was yours.  Task finished in less than 3 minute and that included installing and activating the plugin and figuring out which choice I had within the plugin that would accomplish the task.  BAM! IT WAS DONE.Bravo!!
-							![](https://secure.gravatar.com/avatar/42be1d9318a73aa28c2b2a06bb420e00cb0e1a0ad894769f3edc899484ba6060?s=60&d=retro&r=g)### Timesaver!
-							[Robert](https://profiles.wordpress.org/rwldz/)
-								October 2, 2025
-						For me it’s more of a one-use-thing, hopefully I’ll avoid homepages with a gazillion spam comments going forward. Very clear and easy to understand plugin. Great choices for what and where to turn off or remove comments. I’ll recommend this plugin to anyone working with wordpress. Also, developer seem to listen to critique as I was reading the previous reviews.
 
-		[Read all 279 reviews](https://wordpress.org/support/plugin/disable-comments/reviews/)
+		[Read all 280 reviews](https://wordpress.org/support/plugin/disable-comments/reviews/)
 
 ## Contributors & Developers
 
@@ -269,6 +266,10 @@ Contributors
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 This will be maintained from August 19, 2020 – @asif2bd
+
+#### [2.7.1] – 2026-07-22
+
+- Improvement: General improvements
 
 #### [2.7.0] – 2026-04-05
 
