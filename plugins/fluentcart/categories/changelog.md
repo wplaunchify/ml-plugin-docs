@@ -12,6 +12,14 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCart.
 
+## FluentCart v1.5.5 ​
+
+*Released on Jul 17, 2026*
+
+✨ Newly Addedmarkdown
+```
+• Improves PayPal payment and subscription confirmation flow against unverified payment states
+```
 ## FluentCart v1.5.4 ​
 
 *Released on Jul 17, 2026*
