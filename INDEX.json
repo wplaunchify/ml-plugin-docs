@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T16:20:44.309Z",
+  "last_updated": "2026-07-26T16:20:51.930Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -182,7 +182,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/",
-      "last_scraped": "2026-07-26T16:20:44.309Z",
+      "last_scraped": "2026-07-26T16:20:44.308Z",
       "page_count": 6,
       "categories": [
         "activation",
@@ -263,7 +263,7 @@
       "slug": "disable-comments",
       "name": "Disable Comments",
       "documentation_url": "https://wordpress.org/plugins/disable-comments/",
-      "last_scraped": "2026-07-26T15:27:31.598Z",
+      "last_scraped": "2026-07-26T15:27:31.597Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -585,7 +585,7 @@
       "slug": "fluent-snippets",
       "name": "Fluent Snippets",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-07-26T16:17:50.321Z",
+      "last_scraped": "2026-07-26T16:17:50.319Z",
       "page_count": 2,
       "categories": [
         "create-snippet",
@@ -2841,7 +2841,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-      "last_scraped": "2026-07-19T16:19:30.479Z",
+      "last_scraped": "2026-07-26T16:20:50.010Z",
       "page_count": 362,
       "categories": [
         "accessibility",
