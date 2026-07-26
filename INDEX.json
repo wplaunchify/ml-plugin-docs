@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T15:23:07.446Z",
+  "last_updated": "2026-07-26T15:23:34.593Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -79,7 +79,7 @@
       "slug": "affiliatewp-affiliate-portal",
       "name": "AffiliateWP - Affiliate Portal",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-26T15:23:07.446Z",
+      "last_scraped": "2026-07-26T15:23:07.441Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
@@ -274,7 +274,7 @@
       "slug": "duplicate-page",
       "name": "Duplicate Page",
       "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
-      "last_scraped": "2026-07-19T15:20:23.052Z",
+      "last_scraped": "2026-07-26T15:23:32.795Z",
       "page_count": 2,
       "categories": [
         "advanced",
