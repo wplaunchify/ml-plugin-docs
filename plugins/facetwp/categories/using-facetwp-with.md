@@ -8957,7 +8957,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 
 ## Debug SearchWP
 
-[SearchWP has its own](/wp-content/uploads/2023/03/searchwp-attached-pdf-content.png)[debugging feature](https://searchwp.com/documentation/debugging/), which can be helpful to gain insight into exactly what SearchWP is doing. The “Debugging enabled” setting can be enable in: Settings > SearchWP > Advanced > Actions & Settings.
+SearchWP has its own [debugging feature](https://searchwp.com/documentation/debugging/), which can be helpful to gain insight into exactly what SearchWP is doing. The “Debugging enabled” setting can be enabled in: [SearchWP > Settings > Misc & Debugging](https://searchwp.com/documentation/setup/settings/#misc).
 
 When debugging is enabled, a log file is created (one per day) in 
 ```
@@ -8991,7 +8991,7 @@ With SearchWP installed, you can have a [SearchWP-enabled Search facet](#setup) 
 - [Using the Listing Builder](https://facetwp.com/help-center/listing-templates/listing-builder/)
 - [The facetwp_render_output hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_render_output/)
 
-                    Last updated: May 19, 2026
+                    Last updated: July 24, 2026
 
 ---
 
