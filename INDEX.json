@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T14:37:29.576Z",
+  "last_updated": "2026-07-26T15:23:07.446Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -79,7 +79,7 @@
       "slug": "affiliatewp-affiliate-portal",
       "name": "AffiliateWP - Affiliate Portal",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-19T15:20:06.193Z",
+      "last_scraped": "2026-07-26T15:23:07.446Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
