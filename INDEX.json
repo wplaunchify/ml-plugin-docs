@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T04:12:58.782Z",
+  "last_updated": "2026-07-26T04:15:41.025Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1122,8 +1122,8 @@
       "slug": "fooevents-multi-day",
       "name": "FooEvents Multi-Day",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-19T04:13:42.714Z",
-      "page_count": 60,
+      "last_scraped": "2026-07-26T04:15:41.025Z",
+      "page_count": 61,
       "categories": [
         "about-us",
         "bundles",
