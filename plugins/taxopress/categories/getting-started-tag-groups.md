@@ -12,6 +12,11 @@ You can find the changelog for the free version [by clicking this link to WordPr
 
 You can find the changelog for the Pro version below:
 
+[2.2.1] - 22 July, 2026 
+- Fixed: Missing Gutenberg build assets cause editor 404s, #291 
+- Fixed: Stored Shortcode Attribute at include/shortcodes/class.shortcode_info, #289 
+- Fixed: Missing Nonce State Change in class.admin, #287
+
 [2.2.0] - 23 June, 2026 
 - Update: Free / Pro plugin structure to match PublishPress, #247 
 - Update translations: Added more languages to make up the 25 popular languages

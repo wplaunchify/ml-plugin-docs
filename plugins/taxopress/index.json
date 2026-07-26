@@ -2,35 +2,10 @@
   "plugin_slug": "taxopress",
   "plugin_name": "TaxoPress",
   "documentation_url": "https://taxopress.com/docs/documentation/",
-  "last_scraped": "2026-07-19T01:33:13.408Z",
+  "last_scraped": "2026-07-26T01:33:17.460Z",
   "total_pages": 232,
   "failed_urls_count": 0,
   "sections": [
-    {
-      "title": "Accordion Tag Cloud",
-      "slug": "accordion-tag-cloud",
-      "url": "https://taxopress.com/docs/documentation/accordion-tag-cloud/",
-      "file": "categories/accordion-tag-cloud.md",
-      "page_count": 4,
-      "pages": [
-        {
-          "title": "Accordion Tag Cloud – Themes",
-          "url": "https://taxopress.com/docs/accordion-tag-cloud-themes/"
-        },
-        {
-          "title": "Accordion Tag Cloud – Gutenberg Block",
-          "url": "https://taxopress.com/docs/accordion-tag-cloud-gutenberg-block/"
-        },
-        {
-          "title": "Accordion Tag Cloud – Overview",
-          "url": "https://taxopress.com/docs/accordion-tag-cloud/"
-        },
-        {
-          "title": "Accordion Tag Cloud – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/accordion-tag-cloud-parameters/"
-        }
-      ]
-    },
     {
       "title": "Accounts",
       "slug": "accounts",
@@ -65,81 +40,6 @@
         {
           "title": "TaxoPress License Keys and Multisite Networks",
           "url": "https://taxopress.com/docs/multisite-license/"
-        }
-      ]
-    },
-    {
-      "title": "Alphabetical Tag Cloud",
-      "slug": "alphabetical-tag-cloud",
-      "url": "https://taxopress.com/docs/documentation/alphabetical-tag-cloud/",
-      "file": "categories/alphabetical-tag-cloud.md",
-      "page_count": 4,
-      "pages": [
-        {
-          "title": "Alphabetical Tag Cloud – Themes",
-          "url": "https://taxopress.com/docs/alphabetical-tag-cloud-themes/"
-        },
-        {
-          "title": "Alphabetical Tag Cloud – Overview",
-          "url": "https://taxopress.com/docs/alphabetical-tag-cloud-overview/"
-        },
-        {
-          "title": "Alphabetical Tag Cloud – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/alphabetical-tag-cloud-shortcode-parameters/"
-        },
-        {
-          "title": "Alphabetical Tag Cloud – Gutenberg Block",
-          "url": "https://taxopress.com/docs/alphabetical-tag-cloud-gutenberg-block/"
-        }
-      ]
-    },
-    {
-      "title": "Alphabetical Tag Index",
-      "slug": "alphabetical-tag-index",
-      "url": "https://taxopress.com/docs/documentation/alphabetical-tag-index/",
-      "file": "categories/alphabetical-tag-index.md",
-      "page_count": 4,
-      "pages": [
-        {
-          "title": "How to Make the Alphabetical Tag Index or the Tag List Responsive?",
-          "url": "https://taxopress.com/docs/alphabetical-tag-index-tag-list-responsive/"
-        },
-        {
-          "title": "Alphabetical Tag Index – Gutenberg Block",
-          "url": "https://taxopress.com/docs/alphabetical-tag-index-gutenberg-block/"
-        },
-        {
-          "title": "Alphabetical Tag Index – Overview",
-          "url": "https://taxopress.com/docs/alphabetical-tag-index/"
-        },
-        {
-          "title": "Alphabetical Tag Index – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/alphabetical-tag-index-parameters/"
-        }
-      ]
-    },
-    {
-      "title": "Auto Links",
-      "slug": "auto-links",
-      "url": "https://taxopress.com/docs/documentation/auto-links/",
-      "file": "categories/auto-links.md",
-      "page_count": 4,
-      "pages": [
-        {
-          "title": "Custom URLs in Auto Links",
-          "url": "https://taxopress.com/docs/custom-urls-in-auto-links/"
-        },
-        {
-          "title": "Allow Auto Links to Skip Content Areas",
-          "url": "https://taxopress.com/docs/avoid-elements/"
-        },
-        {
-          "title": "Auto Links Options",
-          "url": "https://taxopress.com/docs/auto-links-options/"
-        },
-        {
-          "title": "Introduction to Auto Links",
-          "url": "https://taxopress.com/docs/introduction-to-auto-links/"
         }
       ]
     },
@@ -193,52 +93,6 @@
         {
           "title": "Introduction to Auto Terms",
           "url": "https://taxopress.com/docs/introduction-to-auto-terms/"
-        }
-      ]
-    },
-    {
-      "title": "Combined Tag Cloud",
-      "slug": "combined-tag-cloud",
-      "url": "https://taxopress.com/docs/documentation/combined-tag-cloud/",
-      "file": "categories/combined-tag-cloud.md",
-      "page_count": 3,
-      "pages": [
-        {
-          "title": "Simple Tag Cloud – Gutenberg Block",
-          "url": "https://taxopress.com/docs/combined-tag-cloud-gutenberg-block/"
-        },
-        {
-          "title": "Simple Tag Cloud – Overview",
-          "url": "https://taxopress.com/docs/combined-tag-cloud/"
-        },
-        {
-          "title": "Simple Tag Cloud – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/combined-tag-cloud-parameters/"
-        }
-      ]
-    },
-    {
-      "title": "Dynamic Post Filter",
-      "slug": "dynamic-post-filter",
-      "url": "https://taxopress.com/docs/documentation/dynamic-post-filter/",
-      "file": "categories/dynamic-post-filter.md",
-      "page_count": 4,
-      "pages": [
-        {
-          "title": "Dynamic Post Filter – Gutenberg Block",
-          "url": "https://taxopress.com/docs/dynamic-post-filter-gutenberg-block/"
-        },
-        {
-          "title": "I Don’t See Posts In the Dynamic Post Filter",
-          "url": "https://taxopress.com/docs/i-dont-see-any-or-all-posts/"
-        },
-        {
-          "title": "Dynamic Post Filter – Overview",
-          "url": "https://taxopress.com/docs/the-dynamic-post-filter/"
-        },
-        {
-          "title": "Dynamic Post Filter – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/dynamic-post-filter-parameters/"
         }
       ]
     },
@@ -345,11 +199,15 @@
       "slug": "frequently-asked-questions",
       "url": "https://taxopress.com/docs/documentation/frequently-asked-questions/",
       "file": "categories/frequently-asked-questions.md",
-      "page_count": 9,
+      "page_count": 10,
       "pages": [
         {
           "title": "How to Display Tags in a Custom Sort Order?",
           "url": "https://taxopress.com/docs/how-to-display-tags-in-a-custom-sort-order/"
+        },
+        {
+          "title": "How to Make the Alphabetical Tag Index or the Tag List Responsive?",
+          "url": "https://taxopress.com/docs/alphabetical-tag-index-tag-list-responsive/"
         },
         {
           "title": "Can I Use Tag Groups with Custom Taxonomies?",
@@ -423,7 +281,7 @@
       "slug": "getting-started",
       "url": "https://taxopress.com/docs/documentation/getting-started/",
       "file": "categories/getting-started.md",
-      "page_count": 9,
+      "page_count": 10,
       "pages": [
         {
           "title": "Changelog for TaxoPress Free and Pro",
@@ -448,6 +306,10 @@
         {
           "title": "How to Install TaxoPress Free",
           "url": "https://taxopress.com/docs/install-taxopress/"
+        },
+        {
+          "title": "Capabilities / Permissions in TaxoPress",
+          "url": "https://taxopress.com/docs/permissions-taxopress/"
         },
         {
           "title": "Feature Overview (Pro Version)",
@@ -497,19 +359,6 @@
         {
           "title": "How to Install Tag Groups Free",
           "url": "https://taxopress.com/docs/installation/"
-        }
-      ]
-    },
-    {
-      "title": "Hidden Terms",
-      "slug": "hidden-terms",
-      "url": "https://taxopress.com/docs/documentation/hidden-terms/",
-      "file": "categories/hidden-terms.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Introduction to Hidden Terms",
-          "url": "https://taxopress.com/docs/introduction-to-hidden-terms/"
         }
       ]
     },
@@ -658,44 +507,6 @@
       ]
     },
     {
-      "title": "Mass Edit Terms",
-      "slug": "mass-edit-terms",
-      "url": "https://taxopress.com/docs/documentation/mass-edit-terms/",
-      "file": "categories/mass-edit-terms.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Introduction to the Mass Edit Terms Screen",
-          "url": "https://taxopress.com/docs/mass-edit-terms/"
-        }
-      ]
-    },
-    {
-      "title": "Metaboxes",
-      "slug": "metaboxes",
-      "url": "https://taxopress.com/docs/documentation/metaboxes/",
-      "file": "categories/metaboxes.md",
-      "page_count": 4,
-      "pages": [
-        {
-          "title": "Metabox Access",
-          "url": "https://taxopress.com/docs/metabox-access/"
-        },
-        {
-          "title": "Metabox Settings",
-          "url": "https://taxopress.com/docs/metabox-settings/"
-        },
-        {
-          "title": "The Metaboxes Screen",
-          "url": "https://taxopress.com/docs/metaboxes-screen/"
-        },
-        {
-          "title": "Introduction to TaxoPress Metaboxes",
-          "url": "https://taxopress.com/docs/introduction-taxopress-ai/"
-        }
-      ]
-    },
-    {
       "title": "Post Filters",
       "slug": "post-filters",
       "url": "https://taxopress.com/docs/documentation/post-filters/",
@@ -721,27 +532,6 @@
         {
           "title": "Using the Post Filter on Frontend URLs",
           "url": "https://taxopress.com/docs/using-the-post-filter-on-the-front-end/"
-        }
-      ]
-    },
-    {
-      "title": "Post List",
-      "slug": "post-list",
-      "url": "https://taxopress.com/docs/documentation/post-list/",
-      "file": "categories/post-list.md",
-      "page_count": 3,
-      "pages": [
-        {
-          "title": "Post List – Gutenberg Block",
-          "url": "https://taxopress.com/docs/post-list-gutenberg-block/"
-        },
-        {
-          "title": "Post List – Overview",
-          "url": "https://taxopress.com/docs/the-post-list/"
-        },
-        {
-          "title": "Post List – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/post-list-parameters/"
         }
       ]
     },
@@ -845,73 +635,6 @@
       ]
     },
     {
-      "title": "Tabbed Tag Cloud",
-      "slug": "tabbed-tag-cloud",
-      "url": "https://taxopress.com/docs/documentation/tabbed-tag-cloud/",
-      "file": "categories/tabbed-tag-cloud.md",
-      "page_count": 4,
-      "pages": [
-        {
-          "title": "Tabbed Tag Cloud – Themes",
-          "url": "https://taxopress.com/docs/tabbed-tag-cloud-themes/"
-        },
-        {
-          "title": "Tabbed Tag Cloud – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/tabbed-tag-cloud-shortcode-parameters/"
-        },
-        {
-          "title": "Tabbed Tag Cloud – Gutenberg Block",
-          "url": "https://taxopress.com/docs/tabbed-tag-cloud-gutenberg-block/"
-        },
-        {
-          "title": "Tabbed Tag Cloud – Overview",
-          "url": "https://taxopress.com/docs/tabbed-tag-cloud/"
-        }
-      ]
-    },
-    {
-      "title": "Table Tag Cloud",
-      "slug": "table-tag-cloud",
-      "url": "https://taxopress.com/docs/documentation/table-tag-cloud/",
-      "file": "categories/table-tag-cloud.md",
-      "page_count": 3,
-      "pages": [
-        {
-          "title": "Table Tag Cloud – Gutenberg Block",
-          "url": "https://taxopress.com/docs/table-tag-cloud-gutenberg-block/"
-        },
-        {
-          "title": "Table Tag Cloud – Overview",
-          "url": "https://taxopress.com/docs/table-tag-cloud/"
-        },
-        {
-          "title": "Table Tag Cloud – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/table-tag-cloud-parameters/"
-        }
-      ]
-    },
-    {
-      "title": "Tag Cloud Search",
-      "slug": "tag-cloud-search",
-      "url": "https://taxopress.com/docs/documentation/tag-cloud-search/",
-      "file": "categories/tag-cloud-search.md",
-      "page_count": 3,
-      "pages": [
-        {
-          "title": "Tag Cloud Search – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/tag-cloud-search-shortcode-parameters/"
-        },
-        {
-          "title": "Tag Cloud Search – Gutenberg Block",
-          "url": "https://taxopress.com/docs/tag-cloud-search-gutenberg-block/"
-        },
-        {
-          "title": "Tag Cloud Search – Overview",
-          "url": "https://taxopress.com/docs/tag-cloud-search-overview/"
-        }
-      ]
-    },
-    {
       "title": "Tag Clouds",
       "slug": "tag-clouds",
       "url": "https://taxopress.com/docs/documentation/tag-clouds/",
@@ -949,82 +672,6 @@
       ]
     },
     {
-      "title": "Tag Groups Info",
-      "slug": "tag-groups-info",
-      "url": "https://taxopress.com/docs/documentation/tag-groups-info/",
-      "file": "categories/tag-groups-info.md",
-      "page_count": 2,
-      "pages": [
-        {
-          "title": "Tag Groups Info – Overview",
-          "url": "https://taxopress.com/docs/tag-groups-info-overview/"
-        },
-        {
-          "title": "Tag Groups Info – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/tag-groups-info-shortcode-parameters/"
-        }
-      ]
-    },
-    {
-      "title": "Tag Groups Integrations",
-      "slug": "tag-groups-integrations",
-      "url": "https://taxopress.com/docs/documentation/tag-groups-integrations/",
-      "file": "categories/tag-groups-integrations.md",
-      "page_count": 3,
-      "pages": [
-        {
-          "title": "Integration with WooCommerce Attributes",
-          "url": "https://taxopress.com/docs/integration-with-woocommerce/"
-        },
-        {
-          "title": "Does Tag Groups Work with the Polylang Plugin?",
-          "url": "https://taxopress.com/docs/does-tag-groups-premium-work-with-the-polylang-plugin/"
-        },
-        {
-          "title": "Translating Tag Group Names With WPML",
-          "url": "https://taxopress.com/docs/wpml/"
-        }
-      ]
-    },
-    {
-      "title": "Tag Groups Menu",
-      "slug": "tag-groups-menu",
-      "url": "https://taxopress.com/docs/documentation/tag-groups-menu/",
-      "file": "categories/tag-groups-menu.md",
-      "page_count": 2,
-      "pages": [
-        {
-          "title": "Tag Groups Menu – Overview",
-          "url": "https://taxopress.com/docs/tag-groups-menu/"
-        },
-        {
-          "title": "Tag Groups Menu – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/tag-groups-menu-parameters/"
-        }
-      ]
-    },
-    {
-      "title": "Tag List",
-      "slug": "tag-list",
-      "url": "https://taxopress.com/docs/documentation/tag-list/",
-      "file": "categories/tag-list.md",
-      "page_count": 3,
-      "pages": [
-        {
-          "title": "Tag List – Gutenberg Block",
-          "url": "https://taxopress.com/docs/tag-list-gutenberg-block/"
-        },
-        {
-          "title": "Tag List – Overview",
-          "url": "https://taxopress.com/docs/tag-list/"
-        },
-        {
-          "title": "Tag List – Shortcode Parameters",
-          "url": "https://taxopress.com/docs/tag-list-parameters/"
-        }
-      ]
-    },
-    {
       "title": "Tags For Current Post",
       "slug": "tags-for-current-post",
       "url": "https://taxopress.com/docs/documentation/tags-for-current-post/",
@@ -1054,23 +701,6 @@
         {
           "title": "Introduction to Terms for Current Post",
           "url": "https://taxopress.com/docs/introduction-to-tags-for-current-post/"
-        }
-      ]
-    },
-    {
-      "title": "Tags Under Posts",
-      "slug": "tags-under-posts",
-      "url": "https://taxopress.com/docs/documentation/tags-under-posts/",
-      "file": "categories/tags-under-posts.md",
-      "page_count": 2,
-      "pages": [
-        {
-          "title": "Change the Icons on Tags Under Posts",
-          "url": "https://taxopress.com/docs/how-do-i-change-the-styling-of-the-post-tags-under-the-posts/"
-        },
-        {
-          "title": "How to Show Tag Groups on Posts",
-          "url": "https://taxopress.com/docs/post-tags/"
         }
       ]
     },
@@ -1120,124 +750,6 @@
         {
           "title": "Introduction to the Taxonomies Screen",
           "url": "https://taxopress.com/docs/introduction-taxonomies-screen/"
-        }
-      ]
-    },
-    {
-      "title": "Taxopress Capabilities",
-      "slug": "taxopress-capabilities",
-      "url": "https://taxopress.com/docs/documentation/taxopress-capabilities/",
-      "file": "categories/taxopress-capabilities.md",
-      "page_count": 2,
-      "pages": [
-        {
-          "title": "Who Can Create and Add Terms in TaxoPress?",
-          "url": "https://taxopress.com/docs/add-terms-capabilities/"
-        },
-        {
-          "title": "Capabilities / Permissions in TaxoPress",
-          "url": "https://taxopress.com/docs/permissions-taxopress/"
-        }
-      ]
-    },
-    {
-      "title": "Taxopress Posts",
-      "slug": "taxopress-posts",
-      "url": "https://taxopress.com/docs/documentation/taxopress-posts/",
-      "file": "categories/taxopress-posts.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Introduction to the Posts Screen",
-          "url": "https://taxopress.com/docs/posts-screen/"
-        }
-      ]
-    },
-    {
-      "title": "Taxopress Security",
-      "slug": "taxopress-security",
-      "url": "https://taxopress.com/docs/documentation/taxopress-security/",
-      "file": "categories/taxopress-security.md",
-      "page_count": 2,
-      "pages": [
-        {
-          "title": "Automated Security Checks, including Checkmarx",
-          "url": "https://taxopress.com/docs/automated-security-checks/"
-        },
-        {
-          "title": "Security Issues and How to Report Them",
-          "url": "https://taxopress.com/docs/security-issues/"
-        }
-      ]
-    },
-    {
-      "title": "Technical",
-      "slug": "technical",
-      "url": "https://taxopress.com/docs/documentation/technical/",
-      "file": "categories/technical.md",
-      "page_count": 3,
-      "pages": [
-        {
-          "title": "Can I Modify the TaxoPress Plugin Code?",
-          "url": "https://taxopress.com/docs/modify-code/"
-        },
-        {
-          "title": "TaxoPress and GPDR / Privacy Laws",
-          "url": "https://taxopress.com/docs/privacy-compliance/"
-        },
-        {
-          "title": "Technical Requirements for TaxoPress Plugins",
-          "url": "https://taxopress.com/docs/technical-requirements/"
-        }
-      ]
-    },
-    {
-      "title": "Term Synonyms",
-      "slug": "term-synonyms",
-      "url": "https://taxopress.com/docs/documentation/term-synonyms/",
-      "file": "categories/term-synonyms.md",
-      "page_count": 4,
-      "pages": [
-        {
-          "title": "Synonyms and Linked Terms in the Database (Pro)",
-          "url": "https://taxopress.com/docs/synonyms-linked-terms-data/"
-        },
-        {
-          "title": "What’s the Difference Between Linked Terms and Synonyms? (Pro)",
-          "url": "https://taxopress.com/docs/difference-linked-terms-synonyms/"
-        },
-        {
-          "title": "Introduction to Linked Terms (Pro)",
-          "url": "https://taxopress.com/docs/linked-terms/"
-        },
-        {
-          "title": "Introduction to Term Synonyms (Pro)",
-          "url": "https://taxopress.com/docs/synonyms/"
-        }
-      ]
-    },
-    {
-      "title": "Terms",
-      "slug": "terms",
-      "url": "https://taxopress.com/docs/documentation/terms/",
-      "file": "categories/terms.md",
-      "page_count": 4,
-      "pages": [
-        {
-          "title": "Copy Terms",
-          "url": "https://taxopress.com/docs/copy-terms/"
-        },
-        {
-          "title": "Introduction to the Terms Screen",
-          "url": "https://taxopress.com/docs/terms-screen/"
-        },
-        {
-          "title": "Remove Terms From All Posts",
-          "url": "https://taxopress.com/docs/remove-terms/"
-        },
-        {
-          "title": "Delete Terms",
-          "url": "https://taxopress.com/docs/delete-terms/"
         }
       ]
     },
@@ -1307,6 +819,287 @@
         {
           "title": "The Tag Groups Administration Page Doesn’t Load",
           "url": "https://taxopress.com/docs/list-not-loading-tag-groups/"
+        }
+      ]
+    },
+    {
+      "title": "Uncategorized",
+      "slug": "uncategorized",
+      "url": "https://taxopress.com/docs/documentation/uncategorized/",
+      "file": "categories/uncategorized.md",
+      "page_count": 68,
+      "pages": [
+        {
+          "title": "Custom URLs in Auto Links",
+          "url": "https://taxopress.com/docs/custom-urls-in-auto-links/"
+        },
+        {
+          "title": "Metabox Access",
+          "url": "https://taxopress.com/docs/metabox-access/"
+        },
+        {
+          "title": "Metabox Settings",
+          "url": "https://taxopress.com/docs/metabox-settings/"
+        },
+        {
+          "title": "Who Can Create and Add Terms in TaxoPress?",
+          "url": "https://taxopress.com/docs/add-terms-capabilities/"
+        },
+        {
+          "title": "Introduction to Hidden Terms",
+          "url": "https://taxopress.com/docs/introduction-to-hidden-terms/"
+        },
+        {
+          "title": "The Metaboxes Screen",
+          "url": "https://taxopress.com/docs/metaboxes-screen/"
+        },
+        {
+          "title": "Copy Terms",
+          "url": "https://taxopress.com/docs/copy-terms/"
+        },
+        {
+          "title": "Synonyms and Linked Terms in the Database (Pro)",
+          "url": "https://taxopress.com/docs/synonyms-linked-terms-data/"
+        },
+        {
+          "title": "Allow Auto Links to Skip Content Areas",
+          "url": "https://taxopress.com/docs/avoid-elements/"
+        },
+        {
+          "title": "Can I Modify the TaxoPress Plugin Code?",
+          "url": "https://taxopress.com/docs/modify-code/"
+        },
+        {
+          "title": "TaxoPress and GPDR / Privacy Laws",
+          "url": "https://taxopress.com/docs/privacy-compliance/"
+        },
+        {
+          "title": "Introduction to the Posts Screen",
+          "url": "https://taxopress.com/docs/posts-screen/"
+        },
+        {
+          "title": "What’s the Difference Between Linked Terms and Synonyms? (Pro)",
+          "url": "https://taxopress.com/docs/difference-linked-terms-synonyms/"
+        },
+        {
+          "title": "Introduction to Linked Terms (Pro)",
+          "url": "https://taxopress.com/docs/linked-terms/"
+        },
+        {
+          "title": "Introduction to Term Synonyms (Pro)",
+          "url": "https://taxopress.com/docs/synonyms/"
+        },
+        {
+          "title": "Accordion Tag Cloud – Themes",
+          "url": "https://taxopress.com/docs/accordion-tag-cloud-themes/"
+        },
+        {
+          "title": "Alphabetical Tag Cloud – Themes",
+          "url": "https://taxopress.com/docs/alphabetical-tag-cloud-themes/"
+        },
+        {
+          "title": "Tabbed Tag Cloud – Themes",
+          "url": "https://taxopress.com/docs/tabbed-tag-cloud-themes/"
+        },
+        {
+          "title": "Introduction to the Terms Screen",
+          "url": "https://taxopress.com/docs/terms-screen/"
+        },
+        {
+          "title": "Technical Requirements for TaxoPress Plugins",
+          "url": "https://taxopress.com/docs/technical-requirements/"
+        },
+        {
+          "title": "Automated Security Checks, including Checkmarx",
+          "url": "https://taxopress.com/docs/automated-security-checks/"
+        },
+        {
+          "title": "Security Issues and How to Report Them",
+          "url": "https://taxopress.com/docs/security-issues/"
+        },
+        {
+          "title": "Introduction to the Mass Edit Terms Screen",
+          "url": "https://taxopress.com/docs/mass-edit-terms/"
+        },
+        {
+          "title": "Remove Terms From All Posts",
+          "url": "https://taxopress.com/docs/remove-terms/"
+        },
+        {
+          "title": "Auto Links Options",
+          "url": "https://taxopress.com/docs/auto-links-options/"
+        },
+        {
+          "title": "Delete Terms",
+          "url": "https://taxopress.com/docs/delete-terms/"
+        },
+        {
+          "title": "Introduction to TaxoPress Metaboxes",
+          "url": "https://taxopress.com/docs/introduction-taxopress-ai/"
+        },
+        {
+          "title": "Introduction to Auto Links",
+          "url": "https://taxopress.com/docs/introduction-to-auto-links/"
+        },
+        {
+          "title": "Tag Cloud Search – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/tag-cloud-search-shortcode-parameters/"
+        },
+        {
+          "title": "Tag Cloud Search – Gutenberg Block",
+          "url": "https://taxopress.com/docs/tag-cloud-search-gutenberg-block/"
+        },
+        {
+          "title": "Tag Cloud Search – Overview",
+          "url": "https://taxopress.com/docs/tag-cloud-search-overview/"
+        },
+        {
+          "title": "Tag Groups Info – Overview",
+          "url": "https://taxopress.com/docs/tag-groups-info-overview/"
+        },
+        {
+          "title": "Tag Groups Info – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/tag-groups-info-shortcode-parameters/"
+        },
+        {
+          "title": "Tabbed Tag Cloud – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/tabbed-tag-cloud-shortcode-parameters/"
+        },
+        {
+          "title": "Alphabetical Tag Cloud – Overview",
+          "url": "https://taxopress.com/docs/alphabetical-tag-cloud-overview/"
+        },
+        {
+          "title": "Alphabetical Tag Cloud – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/alphabetical-tag-cloud-shortcode-parameters/"
+        },
+        {
+          "title": "Alphabetical Tag Cloud – Gutenberg Block",
+          "url": "https://taxopress.com/docs/alphabetical-tag-cloud-gutenberg-block/"
+        },
+        {
+          "title": "Alphabetical Tag Index – Gutenberg Block",
+          "url": "https://taxopress.com/docs/alphabetical-tag-index-gutenberg-block/"
+        },
+        {
+          "title": "Tag List – Gutenberg Block",
+          "url": "https://taxopress.com/docs/tag-list-gutenberg-block/"
+        },
+        {
+          "title": "Accordion Tag Cloud – Gutenberg Block",
+          "url": "https://taxopress.com/docs/accordion-tag-cloud-gutenberg-block/"
+        },
+        {
+          "title": "Tabbed Tag Cloud – Gutenberg Block",
+          "url": "https://taxopress.com/docs/tabbed-tag-cloud-gutenberg-block/"
+        },
+        {
+          "title": "Post List – Gutenberg Block",
+          "url": "https://taxopress.com/docs/post-list-gutenberg-block/"
+        },
+        {
+          "title": "Dynamic Post Filter – Gutenberg Block",
+          "url": "https://taxopress.com/docs/dynamic-post-filter-gutenberg-block/"
+        },
+        {
+          "title": "Simple Tag Cloud – Gutenberg Block",
+          "url": "https://taxopress.com/docs/combined-tag-cloud-gutenberg-block/"
+        },
+        {
+          "title": "Table Tag Cloud – Gutenberg Block",
+          "url": "https://taxopress.com/docs/table-tag-cloud-gutenberg-block/"
+        },
+        {
+          "title": "Tag List – Overview",
+          "url": "https://taxopress.com/docs/tag-list/"
+        },
+        {
+          "title": "Alphabetical Tag Index – Overview",
+          "url": "https://taxopress.com/docs/alphabetical-tag-index/"
+        },
+        {
+          "title": "Alphabetical Tag Index – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/alphabetical-tag-index-parameters/"
+        },
+        {
+          "title": "Tag List – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/tag-list-parameters/"
+        },
+        {
+          "title": "Change the Icons on Tags Under Posts",
+          "url": "https://taxopress.com/docs/how-do-i-change-the-styling-of-the-post-tags-under-the-posts/"
+        },
+        {
+          "title": "Integration with WooCommerce Attributes",
+          "url": "https://taxopress.com/docs/integration-with-woocommerce/"
+        },
+        {
+          "title": "How to Show Tag Groups on Posts",
+          "url": "https://taxopress.com/docs/post-tags/"
+        },
+        {
+          "title": "Post List – Overview",
+          "url": "https://taxopress.com/docs/the-post-list/"
+        },
+        {
+          "title": "Post List – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/post-list-parameters/"
+        },
+        {
+          "title": "Does Tag Groups Work with the Polylang Plugin?",
+          "url": "https://taxopress.com/docs/does-tag-groups-premium-work-with-the-polylang-plugin/"
+        },
+        {
+          "title": "I Don’t See Posts In the Dynamic Post Filter",
+          "url": "https://taxopress.com/docs/i-dont-see-any-or-all-posts/"
+        },
+        {
+          "title": "Translating Tag Group Names With WPML",
+          "url": "https://taxopress.com/docs/wpml/"
+        },
+        {
+          "title": "Tag Groups Menu – Overview",
+          "url": "https://taxopress.com/docs/tag-groups-menu/"
+        },
+        {
+          "title": "Tag Groups Menu – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/tag-groups-menu-parameters/"
+        },
+        {
+          "title": "Simple Tag Cloud – Overview",
+          "url": "https://taxopress.com/docs/combined-tag-cloud/"
+        },
+        {
+          "title": "Table Tag Cloud – Overview",
+          "url": "https://taxopress.com/docs/table-tag-cloud/"
+        },
+        {
+          "title": "Accordion Tag Cloud – Overview",
+          "url": "https://taxopress.com/docs/accordion-tag-cloud/"
+        },
+        {
+          "title": "Tabbed Tag Cloud – Overview",
+          "url": "https://taxopress.com/docs/tabbed-tag-cloud/"
+        },
+        {
+          "title": "Dynamic Post Filter – Overview",
+          "url": "https://taxopress.com/docs/the-dynamic-post-filter/"
+        },
+        {
+          "title": "Dynamic Post Filter – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/dynamic-post-filter-parameters/"
+        },
+        {
+          "title": "Accordion Tag Cloud – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/accordion-tag-cloud-parameters/"
+        },
+        {
+          "title": "Simple Tag Cloud – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/combined-tag-cloud-parameters/"
+        },
+        {
+          "title": "Table Tag Cloud – Shortcode Parameters",
+          "url": "https://taxopress.com/docs/table-tag-cloud-parameters/"
         }
       ]
     },
