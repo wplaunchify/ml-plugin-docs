@@ -20,14 +20,14 @@ Customers can even make purchases worth more than the remaining credit and just 
 
 ## Requirements
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 - WooCommerce 3.7+
 - PHP 5.6+
 
 ## Installation
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. **Download** the .zip file from your [WooCommerce account](https://woocommerce.com/my-account/downloads/).
 2. Go to “**WordPress Admin > Plugins > Add New”** and “**Upload Plugin”** with the file you downloaded with “**Choose File”**.
@@ -37,7 +37,7 @@ More information at: [Installing and Managing Plugins](http://codex.wordpress.or
 
 ## Migration
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If you already have installed a previous version of Store Credit, the extension will request you to execute a migration process to update the database to the latest version.
 
@@ -53,7 +53,7 @@ Once the migration has finished, you are ready to use the Store Credit extension
 
 ## Setup and Configuration
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Before starting, be sure you have enabled the WooCommerce setting “**Enable coupons**“.
 
@@ -65,7 +65,7 @@ Most of the settings are self-explained by their descriptions, but let’s take 
 
 ### Include tax
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 By default, the credit amount of a store credit coupon is entered with tax excluded and it works like a “[fixed cart discount](https://woocommerce.com/document/coupon-management/#section-2)” coupon. That means it applies a discount to the whole cart (subtotal) and this discount also decreases the cart taxes.
 
@@ -89,7 +89,7 @@ Besides, it’s also recommended to update WooCommerce to the latest version.
 
 ### Apply to shipping
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 As its name indicates, enabling this setting allows the possibility of applying the remaining credit to the shipping costs.
 
@@ -97,7 +97,7 @@ For example: If we have a cart with a subtotal of $50 + shipping of $10 and we a
 
 ### Coupon code format
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 This setting allows you to customize the coupon code format.
 
@@ -113,7 +113,7 @@ The portion “**{coupon_code}**” will be replaced by the generated code. If t
 
 ## Create a coupon
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To create a Store Credit coupon manually:
 
@@ -140,7 +140,7 @@ Keep in mind that a Store Credit coupon shouldn’t be shared by multiple custom
 
 ## Send Store Credit
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 The easiest way to create a Store Credit coupon and send it to a specific customer is by doing the following:
 
@@ -163,7 +163,7 @@ Besides, you can define an expiration time for the credit, and restrict the usag
 
 ## Sell Store Credit
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 You can also sell Store Credit coupons like any other product in your store. To create a Store Credit product, follow these steps:
 
@@ -175,7 +175,7 @@ You can also sell Store Credit coupons like any other product in your store. To 
 
 ### Pricing and credit amount
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 First, we have to enter the pricing options for the product.
 
@@ -193,7 +193,7 @@ Finally, If you don’t want to apply taxes to this product, set the option “*
 
 ### Preset amounts
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 This option allows defining a list of predefined credit amounts separated with “|”. For example: **10 | 20 | 30**.
 
@@ -205,7 +205,7 @@ The customer can select any of these amounts quickly and add the product to the 
 
 ### Custom credit amount
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 In addition to the predefined credit amount, you can also enable the option of allowing customers to choose a custom credit amount.
 
@@ -219,7 +219,7 @@ When a customer enters a custom credit amount, the product price is set to this 
 
 ### Coupon options
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 In the “**Store Credit**” tab, you can configure many aspects of the coupon, like who will receive it, the expiration time, if it’s applicable to the shipping costs, etc.
 
@@ -231,7 +231,7 @@ When someone purchases a Store Credit product, the generated coupon has its usag
 
 ### Gift cards
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To sell Store Credit coupons as gift cards, enable the option “**Store Credit >** **Send to someone**” in the product data meta box. Once active, the Store Credit product page will display a form with the receiver data.
 
@@ -241,7 +241,7 @@ The customer will be able to choose the email of the person who will receive the
 
 ### Purchase
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 After adding a Store Credit product to the cart, it’s time to complete the purchase. The checkout process it’s the same as purchasing any other product, but with one exception, **no Store Credit coupons can be used when there is a Store Credit product in the cart**.
 
@@ -255,7 +255,7 @@ Finally, if the item quantity is higher than one, the same number of coupons wil
 
 ## Emails
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 The email the customer receives looks similar to:
 
@@ -263,7 +263,7 @@ The email the customer receives looks similar to:
 
 ### Customize the email
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 You can customize the email texts, including the subject and heading. Just follow these steps.
 
@@ -275,7 +275,7 @@ You can customize the email texts, including the subject and heading. Just follo
 
 ### Override the email template
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If the customization options offered in the email settings form are not enough, you can opt to override the email template in your active theme and apply all the changes you need.
 
@@ -283,7 +283,7 @@ To accomplish this, please, take a look at [this article](https://woocommerce.co
 
 ## My Account
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If the customer is logged in, he can check his available coupons by visiting the “**My Account**” page. If there are available coupons, a new section will be added to the dashboard.
 
@@ -299,7 +299,7 @@ The templates used to display these views can also be customized in the same way
 
 ## Applying a coupon
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 As we mentioned before, each Store Credit coupon stores its own configuration, which means the way a coupon is applied may vary depending on its configuration (The credit includes tax, it can be applied to the shipping costs, etc).
 
@@ -307,7 +307,7 @@ You can combine multiple Store Credit coupons in the same cart/order if their [u
 
 ### Cart & Checkout
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 You can apply a Store Credit coupon on the Cart and Checkout pages like any other coupon. Just paste the code into the coupon form and click on the button “**Apply coupon**“.
 
@@ -327,7 +327,7 @@ In our case, the Store Credit coupons are applied last. Besides, if multiple Sto
 
 ### Order
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If we are editing an order, we can also apply coupons to it. Just click on the button “**Apply coupon**” and enter the coupon code. On the same page, you can remove a coupon by clicking on the “cross” located on the right side of the coupon code.
 
@@ -341,7 +341,7 @@ Please, pay attention to the order’s prices. They are always displayed with ta
 
 ### Shipping discount
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 As we mentioned before, Store Credit coupons can apply a discount to the shipping costs if there is remaining credit after applying a discount to the cart items. The way this discount appears reflected in the order balance is with a negative shipping item.
 
@@ -351,7 +351,7 @@ This way, applying a discount to the shipping costs doesn’t break the order ba
 
 ## Order details
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 After making a purchase, the store credit used appears in the order details.
 
@@ -363,13 +363,13 @@ Additionally, if an order is paid exclusively with Store Credit, then its paymen
 
 ## Coupons management
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Here is a list of the most common tasks that, as a merchant, you can perform over the Store Credit coupons:
 
 ### List all coupons
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To list all Store Credit coupons created in your store, go to “**Marketing > Coupons**” and filter the coupon type by “**Store Credit**“.
 
@@ -377,7 +377,7 @@ To list all Store Credit coupons created in your store, go to “**Marketing > C
 
 ### Searching for a coupon
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To make things even easier, we have added a new filter to the coupon list. Use it to filter the coupons which belong to a specific customer or email.
 
@@ -393,7 +393,7 @@ For a more specific search, use the “**Search coupons**” form in the top-rig
 
 ### Tracking the coupon usage
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 The extension tracks the usage of the Store Credit coupons. If you want to know the Orders where a specific coupon has been used, just go to the edit-coupon screen and take a look at the meta box “**Store credit usage**“.
 
@@ -403,7 +403,7 @@ The extension tracks the usage of the Store Credit coupons. If you want to know 
 
 ### Restoring the credit of a coupon
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 The credit of the Store Credit coupons is handled by the extension, and you don’t need to worry about restoring the credit of a coupon manually.
 
@@ -421,7 +421,7 @@ The credit of an order is not automatically restored when its status changes to 
 
 ### Removing exhausted coupons
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 We consider a Store Credit coupon to be exhausted once its credit is zero. These coupons will be kept in the coupon list until they are no longer necessary.
 
@@ -431,13 +431,13 @@ If you want to preserve exhausted coupons in the coupon list, you can disable th
 
 ## Subscriptions
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Store Credit also works with subscription products. That means customers can use their Store Credit coupons as a discount off the order total to **purchase a subscription**, and continue to use them on order **manual** **renewals**.
 
 ### Purchase with coupons
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 The process for purchasing a subscription is the same as purchasing an Order. The credit amount is applied to the initial order total and will require a payment gateway compatible with subscriptions for renewals.
 
@@ -447,7 +447,7 @@ The process for purchasing a subscription is the same as purchasing an Order. Th
 
 ### Renewals
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Customers can use their Store Credit coupons to pay for manual renewals. The process is the same as when placing an order, if the coupon covers the entire order, no payment platform will be needed.
 
@@ -459,13 +459,13 @@ Customers can use their Store Credit coupons to pay for manual renewals. The pro
 
 ## Privacy
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Following the WooCommerce guidelines for treating the customers’ data, we have updated our processes to export and erase the Store Credit coupons’ data.
 
 ### Export personal data
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 When a customer requests all the personal data collected in the store. The generated file will also include his active Store Credit coupons.
 
@@ -473,7 +473,7 @@ When a customer requests all the personal data collected in the store. The gener
 
 ### Erase personal data
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 On the other hand, if a customer requests to delete all his personal data from the store, all Store Credit coupons associated with the customer’s email will be removed if the option ‘**Remove personal data from orders**‘ is enabled. Otherwise, the coupon deletion will be skipped.
 
@@ -483,11 +483,11 @@ On the other hand, if a customer requests to delete all his personal data from t
 
 ## FAQ
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 ### Can I apply multiple store credit coupons to an order?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Yes, you can apply multiple “Store Credit” coupons in the cart or to an Order and combine them with other native coupons.
 
@@ -495,19 +495,19 @@ In the cart, the “Store Credit” coupons will be applied after the WooCommerc
 
 ### How to do bulk/import store credit coupons?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If you want to import a huge amount of store credit coupons at once, you can use the extension [Customer/Order/Coupon CSV Import Suite](https://woocommerce.com/products/customerorder-csv-import-suite/) and this [sample file](https://woocommerce.com/wp-content/uploads/2019/09/Sample-WooCommerce-Store-Credit-Coupons-CSV-Import.csv) as a reference.
 
 ### Can I apply a discount to the cart fees?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 No. Customers can only use their Store Credit to apply a discount to the cart products and (optionally) the shipping costs.
 
 ### Can a store credit coupon be canceled or revoked?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Yes, Store Credit coupons can be managed in the WooCommerce coupons section (**Marketing** > **Coupons**). You can filter by email and type. From there, you can edit them or send them to the trash to delete them.
 
@@ -515,17 +515,17 @@ Note that if the coupon has been used, you can see it in the orders. But if the 
 
 ### Can I use Store Credit in the subscription renewals?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Store credit doesn’t work as a payment gateway, so it cannot be used as a payment method in automatic subscription renewals, but in manual renewals. For this purpose, we recommend our [Account Funds](https://woocommerce.com/products/account-funds/) extension.
 
 ## Troubleshooting
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 ### Emails are not emailed/received when sending Store Credit coupons
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If after creating a coupon, you are not receiving an email. Follow these steps:
 
@@ -536,7 +536,7 @@ If after creating a coupon, you are not receiving an email. Follow these steps:
 
 ### Coupons with tax included are applying a wrong discount
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If after applying a coupon with tax included, the order total has a discrepancy to the expected value. Follow these steps:
 
@@ -546,25 +546,25 @@ If after applying a coupon with tax included, the order total has a discrepancy 
 
 ### Coupons are not restricted by email
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 WooCommerce checks the coupon restrictions, including the allowed emails, when the customer clicks on the button “Place Order”, not when he applies the coupon. So if the customer is not the owner of the introduced coupon code, the coupon will be removed automatically from the order, and an error message will appear.
 
 ### Wrong order balance after removing an item
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 When you remove an item (product, shipping, etc) from an order in the edit order screen, the order balance (total, taxes, etc.) might not match the new order state. In this case, it’s recommended to click on the “Recalculate” button to force a new calculation of the order totals and taxes.
 
 ### The store Credit section doesn’t appear on the My Account page
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 This section only appears to customers that have active Store Credit coupons. When clicking on the link, you receive a “**Page not found**” error, go to “**Settings > Permalinks**” and click on the “**Save Changes**” button.
 
 ## Questions and Feedback
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Have a question before you buy it? [Please fill out this pre-sales form.](https://woocommerce.com/contact-us/#sales-form)
 
@@ -584,14 +584,14 @@ Already purchased and need some assistance? [Get in touch with the developer](ht
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
 
-### Table Rate Shipping
+### Conditional Shipping and Payments
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
+Use conditional logic to restrict the shipping and payment options available on your store.
 
 ---
 
