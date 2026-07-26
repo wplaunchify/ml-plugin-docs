@@ -4,6 +4,128 @@
 
 ---
 
+## Paying Affiliates Automatically
+
+**Source:** [https://affiliatewp.com/docs/automatic-payouts/](https://affiliatewp.com/docs/automatic-payouts/)
+
+Automatic payouts pay your affiliates on a schedule you set, so you don’t have to run each payout by hand. This guide covers how to create a payout schedule, how affiliates get paid, and how to manage and monitor your schedules once they’re running.
+
+**In This Article**
+
+- [What you need first](#prerequisites)
+- [What automatic payouts do](#overview)
+- [How to set up a payout schedule](#set-up)
+- [How affiliates get paid on a schedule](#how-paid)
+- [How to manage a schedule](#manage)
+- [How to see what each run paid](#run-history)
+- [Turning a one-off payout into a schedule](#aioseo-turning-a-one-off-payout-into-a-schedule-37)
+- [What happens if a payout fails](#failures)
+- [Frequently asked questions](#faq)- [How often can automatic payouts run?](#aioseo-how-often-can-automatic-payouts-run)
+- [Which payout methods are paid automatically?](#aioseo-which-payout-methods-are-paid-automatically)
+- [Do my affiliates need to do anything?](#aioseo-do-my-affiliates-need-to-do-anything)
+- [Can I still pay affiliates manually?](#aioseo-can-i-still-pay-affiliates-manually)
+- [What happens to a schedule if my Pro license lapses?](#aioseo-what-happens-to-a-schedule-if-my-pro-license-lapses)
+- [Will a schedule ever pay someone twice?](#aioseo-will-a-schedule-ever-pay-someone-twice)
+- [Related guides](#related-guides)
+
+## What you need first
+
+- **AffiliateWP Pro.** Automatic payouts are part of the Pro plan.
+- **At least one automatic-capable payout method set up.** Affiliates are paid through the method configured for them, so connect the method(s) you use under **AffiliateWP » Settings » Payouts** first. See [paying your affiliates](https://affiliatewp.com/docs/paying-your-affiliates/) and the method guides for [Stripe](https://affiliatewp.com/docs/stripe-payouts/), [PayPal](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/), and [store credit](https://affiliatewp.com/docs/store-credit-installation-and-usage/).
+
+**Pro feature:** Automatic payouts require an AffiliateWP Pro license. [Compare plans →](https://affiliatewp.com/pricing/)
+
+## What automatic payouts do
+
+A payout schedule runs on its own on the cadence you choose and pays every eligible affiliate in one run, each through their configured method. It uses the same per-affiliate routing as the manual **Pay Affiliates** screen, so you can pay affiliates on PayPal, Stripe, and store credit together in a single scheduled run, rather than running one payout per method.
+
+You stay in control the whole time: you can pause, resume, edit, run early, or delete any schedule, and every run is recorded so you can see what it paid.
+
+## How to set up a payout schedule
+
+Go to **AffiliateWP » Payouts** and open the **Schedules** tab, then select **Add Schedule**. The setup form asks for a few things:
+
+- **Affiliates.** Pay everyone eligible, or narrow the schedule to specific affiliates and/or affiliate groups. Leave the selection empty to include every eligible affiliate.
+- **Frequency.** Choose **Weekly** or **Monthly**, then the day it runs (a day of the week for weekly, or a day of the month for monthly, including the last day).
+- **Minimum earnings.** Optionally set a threshold so small balances aren’t paid out. Affiliates below it roll over to a future run.
+- **Holding period.** If you use a commission holding period, choose whether the schedule includes commissions still inside it.
+- **Name.** Give the schedule a name, or let AffiliateWP name it for you.
+
+Save the schedule and it’s live. From then on it runs on its chosen day without any further action from you.
+
+![](https://affiliatewp.com/wp-content/uploads/2026/07/affiliatewp-new-payout-schedule-1232x840.png)
+
+## How affiliates get paid on a schedule
+
+Each affiliate is paid through the method set on their profile (or the site default). A single run can pay PayPal, Stripe, and store-credit affiliates together, grouped into one payout batch you can review afterward.
+
+Affiliates set to be paid **manually** are skipped by an automatic run, because a manual payout is one you make deliberately by hand. Everyone who can be paid automatically is included; you continue to pay manual-only affiliates yourself from the **Pay Affiliates** screen. To control how each affiliate is paid, see [per-affiliate payout methods](https://affiliatewp.com/docs/per-affiliate-payout-methods/).
+
+## How to manage a schedule
+
+From the **Schedules** tab you can act on any schedule without leaving the page:
+
+- **Pause** a schedule to stop it running (for example, before a slow month), then **Resume** it later.
+- **Edit** who it pays, how often, or any other setting at any time.
+- **Run now** to run a schedule immediately instead of waiting for its next date.
+- **Delete** a schedule you no longer need.
+
+Each schedule shows its status (active or paused), when it last ran, and when it runs next, so you can see the state of every schedule at a glance.
+
+## How to see what each run paid
+
+Every scheduled run is recorded. The schedule’s **Last run** shows the outcome and date, and links through to the payout batch it produced, where you can see exactly which affiliates were paid and how much. A scheduled run creates a real payout batch like any other, so it appears alongside your manual payouts on the **Batches** tab.
+
+![](https://affiliatewp.com/wp-content/uploads/2026/07/affiliatewp-payout-schedules-1232x498.png)
+
+## Turning a one-off payout into a schedule
+
+If you already run a payout by hand, you don’t have to rebuild it. Set up a payout as usual on the **Pay Affiliates** screen, and on the preview choose **Save as schedule**. Your filters, the affiliates included, the minimum, and the holding-period choice carry over into a new schedule, so the payout you run every month can start running itself.
+
+![](https://affiliatewp.com/wp-content/uploads/2026/07/payout-preview-save-schedule-1232x749.png)
+
+## What happens if a payout fails
+
+A scheduled run still pays everyone it can, and any failures are recorded against that run’s batch. If a run finishes with failures, or a scheduled run can’t start at all, AffiliateWP emails your affiliate manager so nothing fails silently in the background. You can then review the batch and retry the affected payouts. Fund and account problems (for example, a disconnected Stripe account) are the usual causes; the batch shows the reason per affiliate.
+
+## Frequently asked questions
+
+### How often can automatic payouts run?
+
+Weekly or monthly, on the day you choose. For a slower cadence than weekly without waiting a whole month, set a weekly schedule with a minimum-earnings threshold, so affiliates are only paid once they’ve earned enough.
+
+### Which payout methods are paid automatically?
+
+PayPal, Stripe, and store credit are all paid in a scheduled run, each affiliate through their own method. Affiliates set to be paid manually are skipped and are paid by hand from the Pay Affiliates screen.
+
+### Do my affiliates need to do anything?
+
+No. Automatic payouts are managed entirely by you. As long as an affiliate has a payout method set up, they’re paid on the schedule like everyone else, through the method they’d be paid by normally.
+
+### Can I still pay affiliates manually?
+
+Yes. Automatic payouts sit alongside paying by hand, they don’t replace it. You can run a one-off payout any time on the Pay Affiliates screen, and you can turn one into a schedule with Save as schedule.
+
+### What happens to a schedule if my Pro license lapses?
+
+Automatic payouts require Pro, so schedules stop running if a Pro license lapses. Your schedules and their settings are kept, and you can still pay affiliates manually; resume automatic runs by renewing.
+
+### Will a schedule ever pay someone twice?
+
+Runs are processed one at a time, so a schedule can’t overlap with another run and pay an affiliate twice. If a run has failures, retrying only affects the payouts that didn’t succeed.
+
+## Related guides
+
+- [Paying your affiliates](https://affiliatewp.com/docs/paying-your-affiliates/)
+- [Per-affiliate payout methods](https://affiliatewp.com/docs/per-affiliate-payout-methods/)
+- [Stripe payouts](https://affiliatewp.com/docs/stripe-payouts/) and [international affiliate payouts](https://affiliatewp.com/docs/international-affiliate-payouts/)
+
+---
+
+That’s it. Set a schedule once and your affiliates are paid on time, each through their own method. If you have any questions, please don’t hesitate to [contact our support team](https://affiliatewp.com/contact/).
+
+---
+
 ## Paying Affiliates Internationally with Stripe
 
 **Source:** [https://affiliatewp.com/docs/international-affiliate-payouts/](https://affiliatewp.com/docs/international-affiliate-payouts/)
@@ -1344,17 +1466,33 @@ New to Stripe? [Learn how to create your Stripe account here](https://stripe.com
 
 To get started, navigate to **AffiliateWP » Settings » Payouts**, then click on Stripe Payouts from the list of available payout methods. You can either click the Configure button or click anywhere on the Stripe Payouts row to expand the settings panel.
 
-![Configure Stripe payouts](https://affiliatewp.com/wp-content/uploads/2025/08/affiliatewp-stripe-payouts-767x334.jpg)
+![Stripe payout method](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-payout-method-767x346.png)
 
-When opened, the Stripe payouts panel displays three main sections: Live Credentials, Sandbox Mode, and Webhook Configuration.
+When opened, the Stripe payouts panel displays four main sections: International Affiliate Payouts, Live Mode, Sandbox Mode, and Webhook Configuration.
 
-![Setup Stripe payouts](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-payouts-setup-767x755.png)
+**International Affiliate Payouts**: Enables paying affiliates in other countries in their local currency. Requires a US- or UK-based Stripe account.
 
-- **Live Credentials** is where you connect your live Stripe account to send real payouts.
-- **Sandbox Mode** A test environment where you can simulate payouts without real transactions.
-- **Webhook Configuration** — Optional settings to allow AffiliateWP to receive real-time updates from Stripe about account status and transfers.
+![](https://affiliatewp.com/wp-content/uploads/2025/08/International-Affiliate-Payouts-767x185.png)
+
+**Live Mode**: Where you connect your live Stripe account to send real payouts.
+
+![](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-live-mode-767x219.png)
+
+**Sandbox Mode**: A test environment where you can simulate payouts without real transactions.
+
+![](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-sandbox-mode-767x442.png)
+
+**Webhook Configuration**: Settings to allow AffiliateWP to receive real-time updates from Stripe about account status and transfers.
+
+![](https://affiliatewp.com/wp-content/uploads/2025/08/Webhook-Configuration-767x329.png)
 
 Let’s walk through each section.
+
+### International Affiliate Payouts
+
+This section lets you pay affiliates in other countries in their local currency, straight from your Stripe account. It requires your Stripe platform account to be based in the US or UK.
+
+Enable the **Enable international affiliate payouts** toggle to turn this on. For the full guide, see [Paying Affiliates Internationally](https://affiliatewp.com/docs/international-affiliate-payouts/) below.
 
 ### Live Credentials
 
@@ -1544,15 +1682,19 @@ To receive payouts via Stripe, affiliates must connect their own Stripe account.
 If your site uses the Affiliate Area, affiliates can connect to Stripe by following these steps:
 
 1. Log in to the Affiliate Area on your site
-2. Go to **Settings » Stripe Payouts,** and click **Set Up Stripe Payouts** button.
+2. Go to **Settings » Payout Method** dropdown**,** and select **Paid via Stripe**.
+3. Select the country they receive payouts in from the dropdown.
+4. Click **Set Up Stripe**.
 
-![Setup Stripe payouts](https://affiliatewp.com/wp-content/uploads/2025/08/setup-stripe-payouts-affiliates-767x591.png)
+![](https://affiliatewp.com/wp-content/uploads/2025/08/payout-method-dropdown-767x473.png)
 
 #### Affiliate Portal
 
 If your site uses the Affiliate Portal, once an affiliate is logged in, they can click the profile icon in the top-right corner and click **Settings**.
 
-In the Settings screen, locate the **Stripe Payouts** section and click **Set Up Stripe Payouts**.
+In the Settings screen, locate the **Payout method** dropdown and select Stripe. Select the payout country, then click **Set Up Stripe**.
+
+![](https://affiliatewp.com/wp-content/uploads/2025/08/affiliate-portal-stripe-767x323.png)
 
 #### Stripe onboarding process
 
@@ -1625,9 +1767,7 @@ Once your Stripe account is connected and affiliates have linked their accounts,
 
 ### Option 1: Pay from the Referrals screen
 
-Go to **AffiliateWP » Referrals**. Next to each unpaid referral, you’ll see a **Pay via Stripe** link.
-
-![Pay via Stripe](https://affiliatewp.com/wp-content/uploads/2025/08/pay-via-stripe-767x165.png)
+Go to **AffiliateWP » Referrals**. Next to each unpaid referral, you’ll see a **Pay** link.
 
 Clicking the Pay via Stripe link will display a confirmation lightbox, allowing you to review the payout details before sending. This lightbox shows the affiliate’s name, the payout amount, and confirms the payment will be sent to the affiliate’s connected Stripe account.
 
@@ -1643,7 +1783,7 @@ To pay multiple referrals at once:
 
 ### Option 2: Use the Payouts Screen
 
-Navigate to **AffiliateWP » Payouts » Pay Affiliates**. Here you can filter payouts by affiliate, date range, or minimum earnings. Choose **Stripe** as the **Payout Method**, then click to process the batch payout.
+Navigate to **AffiliateWP » Payouts » Pay Affiliates**. On the **Configure** step, set your date range, optional minimum earnings threshold, and any affiliate filters. Under payout routing, you can pay each affiliate via their configured method — which will route Stripe-connected affiliates through Stripe automatically — or choose to pay everyone in this batch via Stripe specifically. Click **Preview payout** to review the grouped summary, then confirm to process.
 
 Once a referral is marked as paid, you cannot pay it again. If an admin marks a referral as unpaid after paying, the payout will not be duplicated — this is a built-in Stripe security rule in AffiliateWP.
 
@@ -9834,63 +9974,76 @@ That’s it! By using the WooCommerce Redirect Affiliates addon, you can simplif
 
 **Source:** [https://affiliatewp.com/docs/store-credit-installation-and-usage/](https://affiliatewp.com/docs/store-credit-installation-and-usage/)
 
-Would you like to offer your affiliates an additional benefit by giving them the option to earn store credit for their referrals? The Store Credit for AffiliateWP allows affiliates to use their earnings as store credit when making purchases on your website.
+Would you like to offer your affiliates an additional benefit by giving them the option to earn store credit for their referrals? Store Credit for AffiliateWP allows affiliates to use their earnings as store credit when making purchases on your website.
 
 This guide will walk you through enabling, configuring, and managing store credit for your affiliates.
 
 In This Article
 
 - [Enabling Store Credit](#enabling-store-credit)
-- [Allowing Affiliates to Opt-In for Store Credit](#allowing-affiliates-to-opt-in-for-store-credit)
-- [Using Store Credit](#using-store-credit)
+- [Configuring Affiliate Access to Store Credit](#configuring-affiliate-access-to-store-credit)- [Setting the Default Payout Method](#setting-the-default-payout-method)
+- [Allowing Affiliates to Choose Their Payout Method](#allowing-affiliates-to-choose-their-payout-method)
+- [Using Store Credit](#allowing-affiliates-to-opt-in-for-store-credit)
 - [Viewing and Adjusting Store Credit](#viewing-and-adjusting-store-credit)
 - [Frequently Asked Questions](#frequently-asked-questions)
-
-The Store Credit is available with all the [license levels of AffiliateWP](https://affiliatewp.com/pricing/).
 
 ## Enabling Store Credit
 
 Before we get started, be sure to [install and activate AffiliateWP](https://affiliatewp.com/docs/how-to-install-the-affiliatewp-plugin/) on your WordPress site.
 
-After installing AffiliateWP, the next step is to enable the **Store Credit** feature. To do this, go to **AffiliateWP » Settings » Payouts**, and scroll to the **Store Credit**.
+After installing AffiliateWP, the next step is to enable the **Store Credit** feature. To do this, go to **AffiliateWP » Settings » Payouts**, and locate the **Store Credit**card.
 
-![Enable Store Credit](https://affiliatewp.com/wp-content/uploads/2021/11/affiliatewp-store-credit.jpg)
+![Enable Store credit](https://affiliatewp.com/wp-content/uploads/2021/11/store-credit-payput-method-1.png)
 
-Here, you can choose to:
+Click the toggle to enable Store Credit, then click **Configure** to open the Store Credit settings panel.
 
-- **Enable Store Credit**: You can click on the toggle button to enable Store Credit.
-- **Enable For All Affiliates:** Check this option to automatically allow all affiliates to earn and use store credit. You can also leave it unchecked and enable on a per-affiliate basis from **AffiliateWP » Affiliates**, and clicking on the affiliate’s name you’d like to edit.
-- **Allow Affiliate Opt-In**: Select this option to allow affiliates to choose whether they want to receive payouts via store credit from their affiliate dashboard.
+![Store credit options](https://affiliatewp.com/wp-content/uploads/2021/11/store-credit-settings-767x385.png)
 
-Additionally, if you’re using **WooCommerce Subscriptions**, you’ll also see an option to apply store credit toward **renewal orders**. Enable **“Apply Store Credit to WooCommerce Subscriptions Renewal Orders”** to allow affiliates to use their credit for future subscription charges.
+Additionally, if you’re using **WooCommerce Subscriptions**, you’ll also see an option to apply store credit toward **renewal orders**. Enable **Apply Store Credit to WooCommerce Subscriptions Renewal Orders** to allow affiliates to use their credit for future subscription charges.
 
-![Store Credit for WooCommerce Subscription Renewal](https://affiliatewp.com/wp-content/uploads/2021/11/store-credit-subscription-767x430.png)
+Once you’ve selected your preferred options, click **Save Changes**.
 
-Once you’ve selected your preferred options, click **Save Changes**.
+## Configuring Affiliate Access to Store Credit
 
-## Allowing Affiliates to Opt-In for Store Credit
+There are two settings at the top of the **Payouts** tab that control which affiliates can earn and use store credit.
 
-If you want to give affiliates the ability to opt-in for store credit, make sure to enable the **Store Credit Opt-In** setting under **AffiliateWP » Settings » Store Credit**.
+### Setting the Default Payout Method
 
-This will add an option in the affiliate’s dashboard where they can choose whether or not to receive store credit for their commissions.
+The **Default Payout Method** dropdown, found at the top of **AffiliateWP » Settings » Payouts**, controls which payout method is used for any affiliate who hasn’t been assigned a specific method. Set this to **Store Credit** to make store credit the default across your affiliate program. Affiliates will continue using their individual payout method if one has been set for them directly, or if they’ve chosen one themselves.
 
-![Enable payout via Store Credit](https://affiliatewp.com/wp-content/uploads/2021/11/store-credit-affiiliate-account-1024x478.png)
+![Default payout method](https://affiliatewp.com/wp-content/uploads/2021/11/default-payout-method-1-767x537.png)
 
-If **Enable For All Affiliates?** is selected, the opt-in option will not appear in affiliate account, as store credit will automatically be applied to all affiliates.
+### Allowing Affiliates to Choose Their Payout Method
+
+If you want affiliates to be able to select store credit themselves, enable the **Allow affiliates to choose their payout method** toggle near the top of the Payouts tab.
+
+![Allow affiliates to choose their payout method](https://affiliatewp.com/wp-content/uploads/2021/11/Allow-affiliates-to-choose-their-payout-method-767x537.png)
+
+When this is on, affiliates will see a **Payout Method** dropdown on the **Settings** tab of their Affiliate Area. They can select **Store Credit** as their preferred payout method directly from their dashboard.
+
+![Affiliate payout method dropdown](https://affiliatewp.com/wp-content/uploads/2021/11/affiliate-select-store-credit-payout-method-767x340.png)
+
+**Note:** If **Allow affiliates to choose their payout method** is turned off, affiliates will not see the payout method selector in their dashboard. Their payout method will be set by the Default Payout Method setting or by an admin directly from their affiliate profile.
 
 ## Using Store Credit
 
-Store credit is automatically added to an affiliate’s account when you mark their referral as paid. To apply store credit, go to **AffiliateWP » Referrals** in your WordPress admin. Find the referral you want to mark as paid, and click **Mark as Paid**. This will automatically update the affiliate’s store credit balance.
+Store credit is automatically added to an affiliate’s account when their referral is marked as paid. There are two ways to do this: paying individual referrals or running a payout batch.
 
-![Mark as Paid](https://affiliatewp.com/wp-content/uploads/2021/11/entry-1024x177.png)
+### Paying Individual Referrals
 
-Once the referral is marked, the corresponding amount will be credited to the affiliate’s store credit balance. Affiliates can then use this balance during checkout.
+To pay an individual referral, go to **AffiliateWP » Referrals** in your WordPress admin. Find the unpaid referral you want to pay, hover over the row, and click **Pay**. The store credit balance is updated automatically.
 
-![Avalible Store Credit](https://affiliatewp.com/wp-content/uploads/2021/11/avalible-store-credit-1024x361.png)
+Once the referral is paid, the corresponding amount will be credited to the affiliate’s store credit balance. Affiliates can then use this balance during checkout.
 
-In **WooCommerce**, store credit will appear as an option at checkout. Affiliates can apply their available store credit balance directly to their purchase during checkout.
+### Running a Payout Batch
 
-![Store Credit balance checkout page](https://affiliatewp.com/wp-content/uploads/2021/11/woocommerce-checkout-1024x140.png)
+Store Credit also works with AffiliateWP’s bulk payout flow. Any affiliate with Store Credit as their payout method will have their credit applied automatically when the batch runs — no extra steps needed.
+
+For full instructions on running a payout batch, see [Paying Your Affiliates — Running a Payout Batch](https://affiliatewp.com/docs/paying-your-affiliates/#running-a-payout-batch).
+
+In **WooCommerce**, store credit will appear as an option at checkout. Affiliates can apply their available store credit balance directly to their purchase during checkout.
+
+![](https://affiliatewp.com/wp-content/uploads/2021/11/apply-store-credit-767x95.png)
 
 For **Easy Digital Downloads (EDD)**, store credit will be shown as a payment option at checkout, provided you have the **EDD Wallet** extension enabled. Affiliates can apply their store credit just like any other payment method.
 
@@ -9898,7 +10051,7 @@ The [EDD Wallet extension](https://easydigitaldownloads.com/downloads/wallet/) i
 
 ## Viewing and Adjusting Store Credit
 
-Affiliates can view their store credit balance under the **Statistics** tab of the Affiliate account. The balance is updated automatically each time a referral is marked as paid.
+Affiliates can view their store credit balance under the **Settings** tab of the Affiliate account. The balance is updated automatically each time a referral is marked as paid.
 
 The store credit can be managed through the Edit affiliate screen. To access this, navigate to **AffiliateWP » Affiliates**, then click on the affiliate’s name you’d like to edit. Once in the affiliate’s profile, scroll down to the **Store Credit** section, where you can view the affiliate’s current store credit balance and a log of any changes made to the affiliate’s store credit balance. The log shows details such as the referral date, adjustment type, and amount.
 
@@ -9924,31 +10077,31 @@ To decrease the store credit, select the **Decrease Store Credit** option. Enter
 
 ### How do I enable store credit for only specific affiliates?
 
-You can enable store credit on a per-affiliate basis by editing an affiliate’s profile. Simply navigate to the affiliate’s account settings and enable store credit.
+You can set the payout method on a per-affiliate basis by editing an affiliate’s profile. Navigate to **AffiliateWP » Affiliates**, click on the affiliate’s name, scroll to the **Payout Method** field, and set it to **Store Credit**.
 
 ### Where affiliates see their store credit balance?
 
-The affiliates can view their store credit balance under the **Statistics** tab in the Affiliate account.
+Affiliates can view their store credit balance under the **Settings** tab of their Affiliate Area. The balance updates automatically each time a referral is marked as paid.
 
 ### Is store credit available for subscription renewals?
 
-Yes, if you are using WooCommerce Subscriptions, you can configure store credit to be applied to subscription renewals.
+Yes, if you are using WooCommerce Subscriptions, you can configure store credit to be applied to subscription renewals. Enable the option in the Store Credit settings panel under **AffiliateWP » Settings » Payouts**.
 
 ### Can I manually adjust store credit?
 
-Yes, admins can manually adjust store credit from the **Edit Affiliate** screen under **AffiliateWP » Affiliates**. The **Adjust** button allows you to increase or reduce store credit as needed.
+Yes, admins can manually adjust store credit from the **Edit Affiliate** screen under **AffiliateWP » Affiliates**. The **Adjust** button allows you to increase or reduce store credit as needed.
 
 ### What happens if an affiliate doesn’t use their store credit at checkout?
 
 The store credit balance remains available until the affiliate decides to use it. It does not expire unless manually adjusted by the admin.
 
-### Why is the “Enable payout via store credit” checkbox missing from the affiliate dashboard?
+### Why isn’t the payout method option showing in the affiliate’s dashboard?
 
-If you have Enable For All Affiliates turned on (under **AffiliateWP » Settings » Payouts » Store Credit**), the opt-in checkbox will not appear in the affiliate’s account. This is expected behavior as store credit will be automatically applied to all affiliates, and the opt-in option is disabled. To allow affiliates to opt in manually, make sure **Enable For All Affiliates** is **turned off** and that **Allow Affiliate Opt-In** is enabled.
+Affiliates can only see the payout method selector if the **Allow affiliates to choose their payout method** toggle is enabled in **AffiliateWP » Settings » Payouts**. If the toggle is off, affiliates will be assigned the default payout method automatically and the selector won’t appear in their dashboard.
 
 ---
 
-That’s it! The Store Credit for AffiliateWP provides a flexible and user-friendly option for rewarding affiliates. By enabling store credit, affiliates can apply their earnings directly toward purchases on your site, simplifying the payout process. With the ability to manually adjust and track credit, both admins and affiliates benefit from greater control and transparency.
+That’s it! Store Credit for AffiliateWP provides a flexible and user-friendly option for rewarding affiliates. By enabling store credit, affiliates can apply their earnings directly toward purchases on your site, simplifying the payout process. With the ability to manually adjust and track credit, both admins and affiliates benefit from greater control and transparency.
 
 ---
 
@@ -12679,16 +12832,18 @@ This article will guide you through the process of configuring your PayPal Busin
 - [Create the PayPal API Application](#creating-the-paypal-api-app)
 - [Enter the PayPal API Credentials](#enter-the-paypal-api-credentials)- [Live Credentials](#aioseo-live-credentials)
 - [Sandbox Mode (Optional)](#aioseo-sandbox-mode-optional)
-- [Processing Payouts with PayPal Payouts](#processing-payouts-with-paypal-payouts)
+- [Processing Payouts with PayPal Payouts](#processing-payouts-with-paypal-payouts)- [Paying Individual Referrals](#paying-individual-referrals)
+- [Running a Payout Batch](#running-a-payout-batch)
 - [Understanding PayPal API Error Codes](#understanding-paypal-api-error-codes)- [Error: 403 Forbidden](#aioseo-error-403-forbidden)
 - [Error: 422 Unprocessable Entity](#aioseo-error-422-unprocessable-entity)
+- [Affiliate Payout Settings](#aioseo-affiliate-payout-settings-42)
 - [Frequently Asked Questions](#aioseo-frequently-asked-questions)
 
 ## Accessing PayPal Payouts
 
-To get started, go to **AffiliateWP » Settings » Payouts**. From here, select **PayPal** as your preferred payout method. Click the **Configure** button to open the settings panel where you’ll enter your PayPal API credentials.
+To get started, go to **AffiliateWP » Settings » Payouts**. From here, locate the **PayPal** card and click the toggle to enable it. Then click the **Configure** button to open the settings panel where you’ll enter your PayPal API credentials.
 
-![Configure PayPal payouts](https://affiliatewp.com/wp-content/uploads/2021/11/affiliatewp-enable-paypal-payouts-1.jpg)
+![](https://affiliatewp.com/wp-content/uploads/2021/11/paypal-payouts.png)
 
 These credentials are necessary to securely authorize and send payouts through PayPal.
 
@@ -12730,7 +12885,7 @@ That is it, you have created your new PayPal API app!
 
 ![PayPal API Credentials dashboard showing the new app created with Client ID and Secret API codes](https://affiliatewp.com/wp-content/uploads/2024/04/API-Credentials-dashboard-1-1024x515.png)
 
-Next, you’ll click on the copy icon for your **Client ID** and **Secret API** credentials to enter in your **PayPal API Application Credentials** section you’ll find by navigating to **AffiliateWP » Settings » Payouts »** **PayPal Payouts**.
+Next, you’ll click on the copy icon for your **Client ID** and **Secret API** credentials to enter in your **PayPal API Application Credentials** section you’ll find by navigating to **AffiliateWP » Settings » Payouts »** **PayPal**.
 
 **Important:** Payouts are not enabled for PayPal Business accounts by default. New accounts and those with limited transaction history will need approval by PayPal merchant support. Please contact [PayPal developer support](https://developer.paypal.com/support/) if you do not currently have access to Payouts.
 
@@ -12742,38 +12897,47 @@ This is where you’ll paste your live PayPal Client ID and Secret from the deve
 
 You can use the **Test Live Connection** button to verify your integration. A success message will appear if the connection is working correctly.
 
+![](https://affiliatewp.com/wp-content/uploads/2021/11/Live-Credentials-paypal-payouts-767x544.png)
+
 #### Sandbox Mode (Optional)
 
 Toggle on the Sandbox Mode option to test payouts without real funds. Enter your Sandbox Client ID and Sandbox Secret, then click Test Sandbox Connection to confirm it’s working.
+
+![](https://affiliatewp.com/wp-content/uploads/2021/11/sandbox-mode-paypal-payouts-767x345.png)
 
 This mode is ideal for safely testing the payout flow before going live.
 
 Click to **Save Changes** at the bottom of the screen, and now you are ready to process payouts with PayPal Payouts!
 
+## Affiliate Payout Settings
+
+Affiliates can review and update their payout preferences from the **Settings** tab of their Affiliate Area, under the **How you’ll be paid** section.
+
+![](https://affiliatewp.com/wp-content/uploads/2021/11/paypal-payout-method-767x396.png)
+
+- **Payout method dropdown**: affiliates will only see a **Payout method** dropdown if you have the **Allow affiliates to choose their payout method** toggle enabled in **AffiliateWP » Settings » Payouts**. When this is on, affiliates can select PayPal as their preferred method directly from their accounts area.
+- **Payment email**: whenever an affiliate’s payout method is PayPal (whether set by an admin or chosen by the affiliate themselves), they will see a **Payment email** field. This should be the email address linked to their PayPal account. Affiliates can update it and click **Save payout settings** to apply the change.
+
 ## Processing Payouts with PayPal Payouts
 
-Once you have entered your API credentials, all Unpaid referral commission entries will have a **Pay Now****action link available:
+### Paying Individual Referrals
 
-![Referral showing the new Pay Now via PayPal link in the Actions column](https://affiliatewp.com/wp-content/uploads/2024/04/Referrals-showing-payout-paypal-link-1024x176.png)
+Once you have entered your API credentials, all unpaid referral commission entries will have a **Pay** action link available.
 
-You can click **Pay Now****to process a payout for individual referral records. AffiliateWP will inform you whether the payout was successful, or if there was an issue.
+You can click **Pay** to process a payout for individual referral records. AffiliateWP will inform you whether the payout was successful, or if there was an issue.
 
-![referrals screen showing the paypal payouts process was successful](https://affiliatewp.com/wp-content/uploads/2024/04/referral-paypal-payouts-successful-1024x286.png)
+**Note:** The affiliate must have a valid PayPal account tied to their email address to receive the payout. If the affiliate does not have a PayPal account, they will receive a PayPal invitation to create an account. If the affiliate does not accept the invitation within 30 days, the funds will be returned to your PayPal account.
 
-**Note:** The affiliate must have a valid PayPal account tied to their email address to receive the payout. If the affiliate does not have a PayPal account, they will receive a PayPal invitation to create an account. If the affiliate does not accept the invitation, the funds will be returned to your PayPal account.
+### Running a Payout Batch
 
 If you prefer, you can also process payouts in bulk in one of two ways:
 
-- Check the box on the left side of the screen for each referral you wish to pay and then choose **Pay Now****from the **Bulk Actions****menu. This will process a payment for each referral selected.
-- Generating a bulk payment beginning with the blue **Pay Affiliates** button. This brings you to a separate screen that allows you to specify a date range and a minimum amount that affiliates need to have accumulated in order to be paid. AffiliateWP will calculate the amount due to each affiliate and then send the amount as a single payment, marking each of the included referrals as **Paid****in the process.
+- Check the box on the left side of the screen for each referral you wish to pay and then choose **Pay** from the **Bulk Actions** menu. This will process a payment for each referral selected.
+- Generating a bulk payment beginning with the blue **Pay Affiliates** button. This brings you to a separate screen that allows you to specify a date range and a **Minimum earnings** threshold that affiliates need to have accumulated in order to be paid. AffiliateWP will calculate the amount due to each affiliate and then send the amount as a single payment, marking each of the included referrals as **Paid** in the process.
 
-To begin, enter your filtering criteria, then click **PayPal** for the **Payout Method**, next click **Preview Payout**to see a list of all referrals that have been selected to payout.
+To begin, enter your filtering criteria, then click **PayPal** for the **Payout Method**, next click **Preview Payout** to see a list of all referrals that have been selected to payout.
 
-![PayPal Payouts pay affiliates filter to preview](https://affiliatewp.com/wp-content/uploads/2021/11/paypal-payout-preview-767x567.png)
-
-If everything appears as expected, the final step is to click the **Submit Payout** button at the bottom of the screen.
-
-![PayPal Payouts preview payout request final screen before clicking Submit Payout button](https://affiliatewp.com/wp-content/uploads/2021/11/submit-paypal-payout-767x618.png)
+If everything appears as expected, the final step is to click the **Submit Payout** button at the bottom of the screen.
 
 ## Understanding PayPal API Error Codes
 
