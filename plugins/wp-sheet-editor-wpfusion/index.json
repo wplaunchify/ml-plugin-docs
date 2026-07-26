@@ -2,10 +2,23 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-07-19T10:32:02.728Z",
+  "last_scraped": "2026-07-26T10:33:56.548Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
+    {
+      "title": "Bulk Edit Prices Woocommerce Pending Orders",
+      "slug": "bulk-edit-prices-woocommerce-pending-orders",
+      "url": "https://wpsheeteditor.combulk-edit-prices-woocommerce-pending-orders/",
+      "file": "categories/bulk-edit-prices-woocommerce-pending-orders.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Bulk Increase or Decrease Prices in WooCommerce Pending Orders",
+          "url": "https://wpsheeteditor.com/bulk-edit-prices-woocommerce-pending-orders/"
+        }
+      ]
+    },
     {
       "title": "Bulk Increase Woocommerce Prices Percentage",
       "slug": "bulk-increase-woocommerce-prices-percentage",
@@ -16,19 +29,6 @@
         {
           "title": "How to Bulk Increase WooCommerce Prices by a Percentage",
           "url": "https://wpsheeteditor.com/bulk-increase-woocommerce-prices-percentage/"
-        }
-      ]
-    },
-    {
-      "title": "Export Tutor Lms Courses Google Sheets",
-      "slug": "export-tutor-lms-courses-google-sheets",
-      "url": "https://wpsheeteditor.comexport-tutor-lms-courses-google-sheets/",
-      "file": "categories/export-tutor-lms-courses-google-sheets.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Export Tutor LMS Courses to Google Sheets",
-          "url": "https://wpsheeteditor.com/export-tutor-lms-courses-google-sheets/"
         }
       ]
     },
