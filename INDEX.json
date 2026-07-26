@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T09:44:54.601Z",
+  "last_updated": "2026-07-26T09:58:52.417Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1190,7 +1190,7 @@
       "slug": "hide-from-search",
       "name": "Hide from Search",
       "documentation_url": "https://wordpress.org/plugins/mpress-hide-from-search/",
-      "last_scraped": "2026-07-26T09:42:20.394Z",
+      "last_scraped": "2026-07-26T09:42:20.392Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2566,7 +2566,7 @@
       "slug": "product-filters-for-woocommerce",
       "name": "Product Filters for WooCommerce",
       "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
-      "last_scraped": "2026-07-26T09:44:54.601Z",
+      "last_scraped": "2026-07-26T09:44:54.598Z",
       "page_count": 179,
       "categories": [
         "uncategorized"
@@ -3222,8 +3222,8 @@
       "slug": "woocommerce",
       "name": "WooCommerce",
       "documentation_url": "https://woocommerce.com/documentation/",
-      "last_scraped": "2026-07-19T09:52:03.976Z",
-      "page_count": 3653,
+      "last_scraped": "2026-07-26T09:58:47.458Z",
+      "page_count": 3647,
       "categories": [
         "uncategorized"
       ]
