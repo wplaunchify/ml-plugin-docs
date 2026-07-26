@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fooevents Seating scraper
-        run: bash scripts/run-scrape.sh --slug=fooevents-seating --mode=html-scrape --url=https://www.fooevents.com --name="FooEvents Seating"
+        run: bash scripts/run-scrape.sh --slug=fooevents-seating --mode=sitemap --url=https://help.fooevents.com/docs/ --sitemap-index=https://help.fooevents.com/sitemap_index.xml --selector=.foodocs-content --name="FooEvents Seating"
 
       - name: Check for changes
         id: changes

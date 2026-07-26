@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fooevents Express Check In scraper
-        run: bash scripts/run-scrape.sh --slug=fooevents-express-check-in --mode=html-scrape --url=https://www.fooevents.com --name="FooEvents Express Check-in"
+        run: bash scripts/run-scrape.sh --slug=fooevents-express-check-in --mode=sitemap --url=https://help.fooevents.com/docs/ --sitemap-index=https://help.fooevents.com/sitemap_index.xml --selector=.foodocs-content --name="FooEvents Express Check-in"
 
       - name: Check for changes
         id: changes

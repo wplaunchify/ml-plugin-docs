@@ -36,12 +36,21 @@ otherwise sibling scrapes hit the same vendor at once and get rate-limited.
 1. Reproduce locally: `npm ci`, then run the exact `node scraper.js ...` line from the workflow file.
 2. "EMPTY" on every page = the content selector no longer matches. `curl -L` one doc page, look at the final URL (redirects reveal site migrations) and find the new content container class.
 3. Zero URLs found = sitemap or index URL moved. Probe `wp-sitemap.xml`, `sitemap_index.xml`, `sitemap.xml` at the new origin.
+3b. A scrape that "succeeds" is not automatically correct. Check `plugins/<slug>/categories/`
+   for names like `cart`, `pricing`, `checkout` or bare language codes (`de`, `fr`, `pt`) —
+   those mean the config is pointed at a marketing site rather than the docs.
+   Category files from earlier scrapes are deleted on each successful run, so the directory
+   always reflects the current source.
 4. Verify the fix locally (real page counts, not just exit 0) before pushing.
 5. Trigger a live test: POST to `https://api.github.com/repos/wplaunchify/ml-plugin-docs/actions/workflows/<file>.yml/dispatches` with `{"ref":"main"}`. A token is available via `git credential fill` (no `gh` CLI on this machine).
 
 ## Known site-specific selectors
 
 - Kadence (all 11 workflows) and The Events Calendar: docs migrated to `docs.nexcess.com` (July 2026). Selector is `.nx-prose`. Kadence workflows still use `kadencewp.com/help-center/` URLs, which redirect there and work.
+- FooEvents (all 6 workflows): docs are at `help.fooevents.com/docs/` via `sitemap_index.xml`,
+  selector `.foodocs-content`. Do not point these at `www.fooevents.com` — that is the
+  marketing site and it silently yields cart/pricing/language pages instead of docs. It also
+  refuses connections from GitHub runners fairly often.
 - WooCommerce products: `.wccom-single-doc-content`
 - WP File Manager (`filemanagerpro.io/article/`): `.article_container`
 - WPCodeBox 2 (`docs.wpcodebox.com`): `.nextra-content`

@@ -1,477 +1,1302 @@
 {
   "plugin_slug": "fooevents-seating",
   "plugin_name": "FooEvents Seating",
-  "documentation_url": "https://www.fooevents.com",
-  "last_scraped": "2026-07-26T10:35:25.874Z",
-  "total_pages": 61,
-  "failed_urls_count": 1,
+  "documentation_url": "https://help.fooevents.com/docs/",
+  "last_scraped": "2026-07-26T21:45:22.648Z",
+  "total_pages": 319,
+  "failed_urls_count": 0,
   "sections": [
     {
-      "title": "About Us",
-      "slug": "about-us",
-      "url": "https://www.fooevents.comabout-us/",
-      "file": "categories/about-us.md",
-      "page_count": 1,
+      "title": "Frequently Asked Questions",
+      "slug": "frequently-asked-questions",
+      "url": "https://help.fooevents.com/docs/frequently-asked-questions/",
+      "file": "categories/frequently-asked-questions.md",
+      "page_count": 142,
       "pages": [
         {
-          "title": "The story behind FooEvents",
-          "url": "https://www.fooevents.com/about-us/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/attendees/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/attendees/can-i-add-custom-attendee-fields/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/attendees/do-attendees-have-to-print-out-their-tickets-for-my-event/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/attendees/how-do-i-add-a-custom-waiver-or-disclaimer-to-the-ticket-checkout-process/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/attendees/how-do-i-export-a-csv-list-of-attendees/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/attendees/how-do-i-include-custom-attendee-fields-in-the-woocommerce-order-emails/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/attendees/how-do-i-send-reminders-and-follow-ups-to-attendees/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/attendees/how-do-i-track-when-an-attendee-arrives-and-leaves-my-event/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/check-ins-app/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/check-ins-app/can-i-purchase-the-source-code-for-the-ios-or-android-app/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/check-ins-app/how-does-the-app-connect-to-my-website/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/check-ins-app/i-cant-login-to-the-app/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/check-ins-app/the-app-stops-working/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/check-ins-app/what-languages-does-the-fooevents-check-ins-app-support/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/check-ins-app/where-can-i-download-the-fooevents-check-ins-app/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/check-ins-app/which-mobile-phones-work-best-with-the-fooevents-check-ins-app/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/can-i-use-the-fooevents-calendar-standalone/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/does-fooevents-allow-users-to-submit-their-own-events-through-my-site/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/does-fooevents-work-with-a-free-zoom-account/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/how-can-attendees-add-my-event-information-to-their-calendar/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/how-do-i-add-a-calendar-date-picker-to-my-bookable-event/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/how-do-i-display-the-event-date-in-a-specific-place-on-my-website/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/how-do-i-embed-a-live-stream-for-a-zoom-meeting-or-webinar/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/how-do-i-modify-the-event-details-tab/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/how-do-i-order-events-by-date/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/how-do-i-prevent-unauthorized-access-to-my-virtual-event/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/how-do-i-restrict-access-to-website-content-for-each-event/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/is-there-a-way-to-expire-events-that-have-already-past/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/whats-the-difference-between-zoom-meetings-and-webinars/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/events/why-does-my-calendar-display-correctly-in-elementor-but-breaks-on-my-site/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/can-a-ticket-be-checked-in-automatically-after-being-purchased-through-fooevents-pos/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/can-i-run-fooevents-pos-on-any-computer/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/can-i-use-fooevents-pos-on-multiple-stores/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/can-i-use-fooevents-pos-without-woocommerce/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/do-i-need-to-install-other-fooevents-plugins-to-use-fooevents-pos/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/does-fooevents-pos-have-any-analytics-or-reporting-tools/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/does-fooevents-pos-integrate-with-any-payment-service-providers/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/does-fooevents-pos-integrate-with-third-party-plugins/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/does-fooevents-pos-store-my-customer-data-or-transmit-it-to-any-third-parties/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/does-fooevents-pos-support-products-that-are-sold-in-decimal-quantities-units-of-measurement/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/does-fooevents-pos-work-anywhere-in-the-world/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/does-fooevents-pos-work-with-coupons/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/how-do-i-customize-the-fooevents-pos-interface-colors-and-logo/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/how-do-i-manage-backorders-in-fooevents-pos/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/how-do-i-show-or-hide-certain-products-or-variations-in-the-pos/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/how-does-fooevents-pos-manage-taxes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/how-long-does-the-fooevents-pos-setup-process-take/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/what-is-fooevents-pos/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/what-languages-does-fooevents-pos-support/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/where-can-i-buy-square-and-stripe-readers/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/why-do-product-images-seem-low-resolution/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/why-does-the-fooevents-pos-app-not-cache-store-data-or-remember-my-settings/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/are-fooevents-and-fooplugins-the-same-company/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/can-i-upgrade-or-downgrade-my-fooevents-license/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/can-i-use-fooevents-for-client-websites/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/can-the-fooevents-plugins-be-purchased-separately/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/do-you-offer-a-free-trial/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/do-you-support-translations-into-other-languages/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/how-does-the-npo-discount-work/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/i-previously-purchased-using-the-npo-discount-will-the-discount-apply-to-my-renewal/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/is-fooevents-a-once-off-purchase/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/what-is-your-refund-policy/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/what-payment-gateways-does-fooevents-support/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/what-payment-methods-do-you-accept/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/what-user-roles-does-fooevents-support/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/where-can-i-find-a-demo-of-fooevents/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/where-can-i-find-my-fooevents-invoice/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/where-do-i-get-a-website-status-report/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/which-fooevents-product-is-the-best-fit-for-me/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/general/why-isnt-the-fooevents-bookings-plugin-included-in-the-premium-bundle/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/installation-setup/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/installation-setup/can-i-install-fooevents-on-a-multisite-multi-vendor-network/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/installation-setup/can-i-install-fooevents-on-a-staging-site/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/installation-setup/does-fooevents-work-with-hpos/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/installation-setup/does-fooevents-work-with-the-woocommerce-checkout-and-cart-blocks/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/installation-setup/fooevents-stripe-apple-pay-google-pay-support/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/installation-setup/how-do-i-create-a-license-key-and-setup-automatic-plugin-updates/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/installation-setup/how-do-i-setup-fooevents-license-keys-for-a-multiple-or-unlimited-domain-license/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/installation-setup/which-date-formats-does-fooevents-support/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/does-fooevents-support-wp-engine-hosting/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/does-fooevents-work-with-a-cdn/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/does-fooevents-work-with-automatewoo/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/does-fooevents-work-with-learndash/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/does-fooevents-work-with-mailchimp/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/does-fooevents-work-with-translatepress/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/does-fooevents-work-with-woocommerce-follow-ups/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/does-fooevents-work-with-woocommerce-memberships/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/does-fooevents-work-with-woocommerce-subscriptions/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/is-fooevents-wpml-compatible/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/integrations/is-there-an-api-or-any-hooks-for-fooevents/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/themes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/themes/is-divi-compatible-with-fooevents/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/themes/is-the-elementor-pro-compatible-with-fooevents/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/ticket-themes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/ticket-themes/how-do-i-add-support-for-daily-start-and-end-times-to-my-ticket-themes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/ticket-themes/how-do-i-modify-an-existing-fooevents-ticket-theme-or-create-my-own-pdf-ticket-theme/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/ticket-themes/why-do-some-ticket-images-say-they-are-hot-linked-when-displayed-in-an-email-client/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/are-tickets-still-valid-if-the-order-was-deleted/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/blank-pdf-ticket/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/can-i-show-tickets-on-the-thank-you-page-after-checkout/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/can-tickets-be-set-to-automatically-expire/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/does-fooevents-pdf-tickets-support-asian-characters/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-can-i-complete-orders-automatically-so-that-tickets-are-emailed/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-can-i-resend-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-change-the-attendees-details-on-a-ticket/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-change-the-ticket-date-format/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-create-different-ticket-types/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-delete-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-limit-the-number-of-tickets-or-spaces-available-for-my-event/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-manage-ticket-availability/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-manually-create-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-remove-barcodes-qr-codes-from-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-send-pdf-tickets-by-themselves-or-attached-to-an-email/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-setup-blocks-groups-of-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-transfer-or-import-tickets-from-a-different-system/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/is-it-safe-to-delete-the-pdf-tickets-that-are-stored-on-my-server/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/tickets-are-not-being-generated-for-large-orders/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/what-size-should-i-use-for-the-ticket-logo-and-ticket-header-image/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/tickets/why-are-my-tickets-not-appearing-or-downloadable-from-my-account/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/how-to-force-refresh-your-web-browser/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/no-valid-plugins-were-found/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/what-can-i-do-if-my-site-times-out-when-a-lot-of-tickets-are-being-purchased-at-once/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-attendee-seat-numbers-not-displayed-on-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-barcodes-not-being-generated-and-displayed-in-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-my-automatic-plugin-updates-not-working/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-my-events-displaying-the-wrong-date-in-the-calendar/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-my-tickets-not-being-received/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-the-fooevents-pos-payment-methods-not-displaying/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-do-i-receive-an-error-when-i-try-activate-the-fooevents-plugin/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-do-my-pdf-tickets-still-look-the-same-after-ive-made-changes-to-settings-or-details/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-does-my-calendar-not-display-correctly-when-i-use-a-shortcode/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-is-my-event-map-displaying-with-a-watermark-or-other-message-on-top/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-is-the-fooevents-description-and-google-map-not-displaying/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-is-the-selected-booking-slot-not-displaying-on-the-checkout-page/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-isnt-custom-fields-displayed-under-screen-options/"
         }
       ]
     },
     {
-      "title": "Bundles",
-      "slug": "bundles",
-      "url": "https://www.fooevents.combundles/",
-      "file": "categories/bundles.md",
-      "page_count": 1,
+      "title": "Topics",
+      "slug": "topics",
+      "url": "https://help.fooevents.com/docs/topics/",
+      "file": "categories/topics.md",
+      "page_count": 177,
       "pages": [
         {
-          "title": "Everything you need to run a professional event",
-          "url": "https://www.fooevents.com/bundles/"
-        }
-      ]
-    },
-    {
-      "title": "Cart",
-      "slug": "cart",
-      "url": "https://www.fooevents.comcart/",
-      "file": "categories/cart.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Cart - FooEvents",
-          "url": "https://www.fooevents.com/cart/"
-        }
-      ]
-    },
-    {
-      "title": "Checkout",
-      "slug": "checkout",
-      "url": "https://www.fooevents.comcheckout/",
-      "file": "categories/checkout.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Cart - FooEvents",
-          "url": "https://www.fooevents.com/checkout/"
-        }
-      ]
-    },
-    {
-      "title": "De",
-      "slug": "de",
-      "url": "https://www.fooevents.comde/",
-      "file": "categories/de.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "WooCommerce Ticketsystem für Veranstaltungen, Veranstaltungsorte und Buchungen",
-          "url": "https://www.fooevents.com/de/"
-        }
-      ]
-    },
-    {
-      "title": "Disclaimer",
-      "slug": "disclaimer",
-      "url": "https://www.fooevents.comdisclaimer/",
-      "file": "categories/disclaimer.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Disclaimer",
-          "url": "https://www.fooevents.com/disclaimer/"
-        }
-      ]
-    },
-    {
-      "title": "El",
-      "slug": "el",
-      "url": "https://www.fooevents.comel/",
-      "file": "categories/el.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "WooCommerce πρόσθετο έκδοσης εισιτηρίων για εκδηλώσεις, χώρους και κρατήσεις",
-          "url": "https://www.fooevents.com/el/"
-        }
-      ]
-    },
-    {
-      "title": "Es",
-      "slug": "es",
-      "url": "https://www.fooevents.comes/",
-      "file": "categories/es.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "WooCommerce plugin de venta de entradas para eventos, recintos y reservas",
-          "url": "https://www.fooevents.com/es/"
-        }
-      ]
-    },
-    {
-      "title": "Features",
-      "slug": "features",
-      "url": "https://www.fooevents.comfeatures/",
-      "file": "categories/features.md",
-      "page_count": 10,
-      "pages": [
-        {
-          "title": "The Swiss Army Knife for your event or bookable service",
-          "url": "https://www.fooevents.com/features/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/"
         },
         {
-          "title": "Hold the door with the free FooEvents Check-ins app",
-          "url": "https://www.fooevents.com/features/apps/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/attendees/"
         },
         {
-          "title": "Capture, manage and export your attendee information",
-          "url": "https://www.fooevents.com/features/attendees/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/attendees/attendee-check-ins/"
         },
         {
-          "title": "Fast, Reliable Check-ins for Every Event",
-          "url": "https://www.fooevents.com/features/check-ins/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/attendees/editing-attendee-details/"
         },
         {
-          "title": "Turn your events into products that sell",
-          "url": "https://www.fooevents.com/features/events/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/attendees/export-attendee-information/"
         },
         {
-          "title": "Download the FooEvents Features Fact Sheet",
-          "url": "https://www.fooevents.com/features/fact-sheet/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/blocks/"
         },
         {
-          "title": "Make informed decisions based on event and ticket reports",
-          "url": "https://www.fooevents.com/features/insights/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/blocks/embeding-the-fooevents-attendee-listing-block-as-html/"
         },
         {
-          "title": "We play nicely with others!",
-          "url": "https://www.fooevents.com/features/integrations/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/blocks/fooevents-attendee-listing-block/"
         },
         {
-          "title": "Send and manage tickets directly from your WordPress website",
-          "url": "https://www.fooevents.com/features/tickets/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/blocks/fooevents-calendar-block/"
         },
         {
-          "title": "You can’t go wrong with the world’s most popular eCommerce platform",
-          "url": "https://www.fooevents.com/features/woocommerce/"
-        }
-      ]
-    },
-    {
-      "title": "Fr",
-      "slug": "fr",
-      "url": "https://www.fooevents.comfr/",
-      "file": "categories/fr.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "WooCommerce Plugin de billetterie pour événements, lieux et réservations",
-          "url": "https://www.fooevents.com/fr/"
-        }
-      ]
-    },
-    {
-      "title": "It",
-      "slug": "it",
-      "url": "https://www.fooevents.comit/",
-      "file": "categories/it.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "WooCommerce plugin di ticketing per eventi, location e prenotazioni",
-          "url": "https://www.fooevents.com/it/"
-        }
-      ]
-    },
-    {
-      "title": "My Account",
-      "slug": "my-account",
-      "url": "https://www.fooevents.commy-account/",
-      "file": "categories/my-account.md",
-      "page_count": 10,
-      "pages": [
-        {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/blocks/fooevents-event-listing-block/"
         },
         {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/add-payment-method/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/"
         },
         {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/communication-preferences/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/check-ins-app-android/"
         },
         {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/downloads/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/check-ins-app-ios/"
         },
         {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/edit-account/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/fooevents-bookings/"
         },
         {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/edit-address/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/fooevents-calendar/"
         },
         {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/license/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/fooevents-custom-attendee-fields/"
         },
         {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/orders/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/fooevents-express-check-in/"
         },
         {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/sites/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/"
         },
         {
-          "title": "My Account - FooEvents",
-          "url": "https://www.fooevents.com/my-account/subscriptions/"
-        }
-      ]
-    },
-    {
-      "title": "Nl",
-      "slug": "nl",
-      "url": "https://www.fooevents.comnl/",
-      "file": "categories/nl.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "WooCommerce ticketingplugin voor evenementen, locaties en boekingen",
-          "url": "https://www.fooevents.com/nl/"
-        }
-      ]
-    },
-    {
-      "title": "Overview",
-      "slug": "overview",
-      "url": "https://www.fooevents.comoverview/",
-      "file": "categories/overview.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "WooCommerce ticketing plugin for events, venues, and bookings",
-          "url": "https://www.fooevents.com"
-        }
-      ]
-    },
-    {
-      "title": "Pl",
-      "slug": "pl",
-      "url": "https://www.fooevents.compl/",
-      "file": "categories/pl.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "WooCommerce ticketing plugin for events, venues, and bookings",
-          "url": "https://www.fooevents.com/pl/"
-        }
-      ]
-    },
-    {
-      "title": "Pricing",
-      "slug": "pricing",
-      "url": "https://www.fooevents.compricing/",
-      "file": "categories/pricing.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "FooEvents Pricing",
-          "url": "https://www.fooevents.com/pricing/"
-        }
-      ]
-    },
-    {
-      "title": "Privacy Statement Us",
-      "slug": "privacy-statement-us",
-      "url": "https://www.fooevents.comprivacy-statement-us/",
-      "file": "categories/privacy-statement-us.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Privacy Statement (US)",
-          "url": "https://www.fooevents.com/privacy-statement-us"
-        }
-      ]
-    },
-    {
-      "title": "Products",
-      "slug": "products",
-      "url": "https://www.fooevents.comproducts/",
-      "file": "categories/products.md",
-      "page_count": 13,
-      "pages": [
-        {
-          "title": "Sell tickets, take bookings, and manage attendees your way",
-          "url": "https://www.fooevents.com/products/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/fooevents-multi-day/"
         },
         {
-          "title": "Hold the door with the free FooEvents Check-ins app",
-          "url": "https://www.fooevents.com/products/apps/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/fooevents-pdf-tickets/"
         },
         {
-          "title": "FooEmail",
-          "url": "https://www.fooevents.com/products/fooemail/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/"
         },
         {
-          "title": "FooEvents Bookings",
-          "url": "https://www.fooevents.com/products/fooevents-bookings/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/fooevents-seating/"
         },
         {
-          "title": "FooEvents Calendar",
-          "url": "https://www.fooevents.com/products/fooevents-calendar/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/changelogs/ticket-themes/"
         },
         {
-          "title": "FooEvents Custom Attendee Fields",
-          "url": "https://www.fooevents.com/products/fooevents-custom-attendee-fields/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/"
         },
         {
-          "title": "FooEventsExpress Check-in",
-          "url": "https://www.fooevents.com/products/fooevents-express-check-in/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/app-branding/"
         },
         {
-          "title": "FooEvents for WooCommerce",
-          "url": "https://www.fooevents.com/products/fooevents-for-woocommerce/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/auto-check-ins/"
         },
         {
-          "title": "FooEvents Multi-Day",
-          "url": "https://www.fooevents.com/products/fooevents-multi-day/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/bulk-check-ins/"
         },
         {
-          "title": "FooEvents PDF Tickets",
-          "url": "https://www.fooevents.com/products/fooevents-pdf-tickets/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/check-in-all-tickets-for-the-same-order/"
         },
         {
-          "title": "FooEvents Point of Sale (POS)",
-          "url": "https://www.fooevents.com/products/fooevents-pos/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/connecting-to-your-store/"
         },
         {
-          "title": "FooEvents Seating",
-          "url": "https://www.fooevents.com/products/fooevents-seating/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/connection-issues/"
         },
         {
-          "title": "FooEvents Ticket Themes",
-          "url": "https://www.fooevents.com/products/ticket-themes/"
-        }
-      ]
-    },
-    {
-      "title": "Promo",
-      "slug": "promo",
-      "url": "https://www.fooevents.compromo/",
-      "file": "categories/promo.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Download Event Checklist",
-          "url": "https://www.fooevents.com/promo/fooevents-ultimate-event-checklist/"
-        }
-      ]
-    },
-    {
-      "title": "Pt",
-      "slug": "pt",
-      "url": "https://www.fooevents.compt/",
-      "file": "categories/pt.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "WooCommerce ticketing plugin for events, venues, and bookings",
-          "url": "https://www.fooevents.com/pt/"
-        }
-      ]
-    },
-    {
-      "title": "Reviews",
-      "slug": "reviews",
-      "url": "https://www.fooevents.comreviews/",
-      "file": "categories/reviews.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "What our customers say",
-          "url": "https://www.fooevents.com/reviews/"
-        }
-      ]
-    },
-    {
-      "title": "Shapes",
-      "slug": "shapes",
-      "url": "https://www.fooevents.comshapes/",
-      "file": "categories/shapes.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Events come in all shapes and sizes",
-          "url": "https://www.fooevents.com/shapes/"
-        }
-      ]
-    },
-    {
-      "title": "Shop",
-      "slug": "shop",
-      "url": "https://www.fooevents.comshop/",
-      "file": "categories/shop.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "FooEvents Pricing",
-          "url": "https://www.fooevents.com/shop/"
-        }
-      ]
-    },
-    {
-      "title": "Terms And Conditions",
-      "slug": "terms-and-conditions",
-      "url": "https://www.fooevents.comterms-and-conditions/",
-      "file": "categories/terms-and-conditions.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Terms and Conditions",
-          "url": "https://www.fooevents.com/terms-and-conditions/"
-        }
-      ]
-    },
-    {
-      "title": "Use Cases",
-      "slug": "use-cases",
-      "url": "https://www.fooevents.comuse-cases/",
-      "file": "categories/use-cases.md",
-      "page_count": 7,
-      "pages": [
-        {
-          "title": "Event Ticketing for Real-world Use Cases",
-          "url": "https://www.fooevents.com/use-cases/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/event-filters/"
         },
         {
-          "title": "Sell tickets and manage conference attendees",
-          "url": "https://www.fooevents.com/use-cases/conferences/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/installing-the-app/"
         },
         {
-          "title": "Sell registrations and manage class attendance",
-          "url": "https://www.fooevents.com/use-cases/courses-classes-training/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/loading-tickets-in-batches/"
         },
         {
-          "title": "Bookings for activities and general admission",
-          "url": "https://www.fooevents.com/use-cases/general-admission/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/offline-mode/"
         },
         {
-          "title": "Ticketing for concerts and live performances",
-          "url": "https://www.fooevents.com/use-cases/shows/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/restrict-attendee-check-ins-to-the-current-day/"
         },
         {
-          "title": "Sell participant entries, and spectator tickets",
-          "url": "https://www.fooevents.com/use-cases/sports-events/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/ticket-filters/"
         },
         {
-          "title": "Virtual event ticketing with Zoom",
-          "url": "https://www.fooevents.com/use-cases/virtual-events/"
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/check-ins-app/ticket-scanning-with-the-app/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/code-snippets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/code-snippets/fooevents-bookings-timestamp-updater/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/calendar/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/custom-attendee-fields/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/event-expiration/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/event-reports/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/event-setup/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/fooevents-stationery-builder/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/global-settings/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/google-maps/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/multi-day-events/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/order-events-by-date/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/password-protected-pages/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/product-and-shop-pages/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/product-variations/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/seating-charts/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/shortcodes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/stock-management/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/user-roles-capabilities-and-permissions/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/wordpress-multisite/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/events/zoom-meetings-and-webinars/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooemail/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-bookings/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-calendar/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-custom-attendee-fields/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-express-check-in/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-for-woocommerce/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-multi-day/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-pdf-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-plugin-privacy-policy/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-pos/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/seating-selection-and-checkout-workflow/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-ticket-themes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/getting-started/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/installation/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/installation/installing-fooevents-plugins/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/installation/installing-fooevents-pos/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/installation/installing-woocommerce/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/installation/installing-wordpress/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/installation/minimum-requirements/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/account-details/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/automatic-updates/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/cancellations/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/change-payment-method/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/download-plugins/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/login-and-password-reset/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/orders-and-subscription/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/payment-methods/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/pricing-and-licenses/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/refunds/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/my-account/upgrades-and-downgrades/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/background-data-refresh/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/barcodes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/cart/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/checkout/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/customers/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/decimal-quantities/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/offline-mode/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/orders/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/payments/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/payments/split-payments/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/payments/square-payment-integration/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/payments/stripe-payment-integration/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/plugin-settings/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/pos-reports/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/products/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/supported-hardware/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/tax/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/point-of-sale/tickets-and-receipts/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/product-roadmap/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/addtowallet/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/automatewoo/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/barcode-scanners/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/cdn/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/custom-development/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/hardware/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/higher-education/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/hooks/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/hosting/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/incompatible-plugins/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/mailchimp/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/multi-vendor-sites/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/now2wallet-integration/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/payment-gateway-integration/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/recommended-wordpress-themes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/suggested-plugins/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/third-party-integration-recommended-wordpress-web-hosting/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/translatepress-integration/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/woocommerce-follow-ups/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/woocommerce-product-add-ons/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/third-party-integration/wpml/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/delete-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/import-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/incrementing-ticket-numbers/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/manually-create-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/pdf-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/pdf-tickets/pdf-ticket-folder-protection/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/performance/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/resend-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/scanning-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/spam-issues/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/thank-you-page-tickets/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/ticket-barcodes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/ticket-configuration/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/ticket-qr-codes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/ticket-sending/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/ticket-themes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/ticket-themes/custom-ticket-themes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/ticket-themes/fooevents-pdf-tickets-dompdf-update-9-march-2026/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/ticket-themes/retired-ticket-themes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/ticket-themes/updating-ticket-themes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/tickets/tickets-expiration/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/translations/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/translations/language-files/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/translations/supported-languages/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/translations/translatepress/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/translations/wpml/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/bookable-and-virtual-pilates-classes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/bookable-conference-with-workshops/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/bookable-party-venue-booking/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/concert-tour/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/conference/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/esports-live-streaming/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/manually-releasing-tickets-using-an-approval-workflow/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/outdoor-adventures/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/rsvp-waitlist-free-event/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/selling-a-large-number-of-tickets-in-one-order/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/standard-multi-day-conference/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/virtual-art-classes/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/virtual-conference/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/virtual-yoga-class/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/use-cases/yoga-fitness-classes/"
         }
       ]
     }

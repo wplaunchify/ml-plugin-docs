@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fooevents Custom Attendee Fields scraper
-        run: bash scripts/run-scrape.sh --slug=fooevents-custom-attendee-fields --mode=html-scrape --url=https://www.fooevents.com --name="FooEvents Custom Attendee Fields"
+        run: bash scripts/run-scrape.sh --slug=fooevents-custom-attendee-fields --mode=sitemap --url=https://help.fooevents.com/docs/ --sitemap-index=https://help.fooevents.com/sitemap_index.xml --selector=.foodocs-content --name="FooEvents Custom Attendee Fields"
 
       - name: Check for changes
         id: changes

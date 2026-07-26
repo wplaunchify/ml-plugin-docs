@@ -366,6 +366,14 @@ function writePluginData(slug, pluginName, baseUrl, pages, failedUrls) {
 
   fs.mkdirSync(categoriesDir, { recursive: true });
 
+  // Drop category files from previous scrapes. We only get here after the
+  // fail-fast check, so this run's pages are authoritative and any leftover
+  // file describes a category the source no longer has. Without this, a
+  // corrected config leaves the old (often wrong) pages behind forever.
+  for (const existing of fs.readdirSync(categoriesDir)) {
+    if (existing.endsWith('.md')) fs.unlinkSync(path.join(categoriesDir, existing));
+  }
+
   const categoryMap = {};
   pages.forEach(page => {
     const cat = page.category;
