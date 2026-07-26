@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T11:28:10.683Z",
+  "last_updated": "2026-07-26T11:28:37.387Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1551,7 +1551,7 @@
       "slug": "kadence-blocks-pro-extension",
       "name": "Kadence Blocks - PRO Extension",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-07-19T11:24:33.885Z",
+      "last_scraped": "2026-07-26T11:28:35.922Z",
       "page_count": 153,
       "categories": [
         "access-the-design-library",
