@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T04:12:19.273Z",
+  "last_updated": "2026-07-26T04:12:52.925Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -252,7 +252,7 @@
       "slug": "debug-log-manager-tool",
       "name": "Debug Log Manager Tool",
       "documentation_url": "https://wordpress.org/plugins/debug-log-manager/",
-      "last_scraped": "2026-07-26T03:00:11.943Z",
+      "last_scraped": "2026-07-26T03:00:11.941Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -723,7 +723,7 @@
       "slug": "fluentbooking-pro",
       "name": "FluentBooking Pro",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-07-26T01:37:32.456Z",
+      "last_scraped": "2026-07-26T01:37:32.454Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -2232,7 +2232,7 @@
       "slug": "launchflows",
       "name": "LaunchFlows",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-07-26T03:06:48.216Z",
+      "last_scraped": "2026-07-26T03:06:48.214Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
@@ -3480,7 +3480,7 @@
       "slug": "wp-all-import-pro",
       "name": "WP All Import Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-19T04:09:58.307Z",
+      "last_scraped": "2026-07-26T04:12:50.790Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
@@ -3589,7 +3589,7 @@
       "slug": "wp-fusion-abandoned-cart-addon",
       "name": "WP Fusion - Abandoned Cart Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-26T01:40:53.096Z",
+      "last_scraped": "2026-07-26T01:40:53.085Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
@@ -3712,7 +3712,7 @@
       "slug": "wp-fusion-event-tracking-addon",
       "name": "WP Fusion - Event Tracking Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-26T04:12:19.273Z",
+      "last_scraped": "2026-07-26T04:12:19.260Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
