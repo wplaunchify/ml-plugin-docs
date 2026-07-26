@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T17:21:56.916Z",
+  "last_updated": "2026-07-26T17:22:08.689Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -27,7 +27,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com/documentation/",
-      "last_scraped": "2026-07-26T17:21:56.916Z",
+      "last_scraped": "2026-07-26T17:21:56.912Z",
       "page_count": 13,
       "categories": [
         "changelog",
@@ -909,7 +909,7 @@
       "slug": "fluentforms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/documentation/",
-      "last_scraped": "2026-07-19T17:21:55.730Z",
+      "last_scraped": "2026-07-26T17:21:53.903Z",
       "page_count": 457,
       "categories": [
         "account-management",
@@ -2481,7 +2481,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-07-26T17:20:01.588Z",
+      "last_scraped": "2026-07-26T17:20:01.586Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2673,7 +2673,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-07-26T16:26:52.429Z",
+      "last_scraped": "2026-07-26T16:26:52.413Z",
       "page_count": 120,
       "categories": [
         "add-a-login-and-account-menu",
@@ -3671,7 +3671,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-26T16:24:43.385Z",
+      "last_scraped": "2026-07-26T16:24:43.373Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
@@ -3901,7 +3901,7 @@
       "slug": "wpc-product-bundles-for-woocommerce-premium",
       "name": "WPC Product Bundles for WooCommerce (Premium)",
       "documentation_url": "https://doc.wpclever.net/woosb/",
-      "last_scraped": "2026-07-26T16:23:29.813Z",
+      "last_scraped": "2026-07-26T16:23:29.809Z",
       "page_count": 76,
       "categories": [
         "basic-installations",
