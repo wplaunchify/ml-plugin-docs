@@ -8,7 +8,7 @@
 
 **Source:** [https://www.fooevents.com/privacy-statement-us](https://www.fooevents.com/privacy-statement-us)
 
-*This privacy statement was last changed on July 16, 2026, last checked on July 16, 2026, and applies to citizens and legal permanent residents of the United States.*
+*This privacy statement was last changed on July 21, 2026, last checked on July 21, 2026, and applies to citizens and legal permanent residents of the United States.*
 
 In this privacy statement, we explain what we do with the data we obtain about you via [https://www.fooevents.com](https://www.fooevents.com). We recommend you carefully read this statement. In our processing we comply with the requirements of privacy legislation. That means, among other things, that:
 
