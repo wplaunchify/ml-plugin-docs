@@ -2,7 +2,7 @@ name: Scrape Learndash Lms Woocommerce Integration Documentation
 
 on:
   schedule:
-    - cron: '0 5 * * 0'
+    - cron: '0 9 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Learndash Lms Woocommerce Integration scraper
-        run: node scraper.js --slug=learndash-lms-woocommerce-integration --mode=wp-api --url=https://learndash.com/support --post-type=docs --taxonomy=doc_category --name="LearnDash LMS - WooCommerce Integration"
+        run: bash scripts/run-scrape.sh --slug=learndash-lms-woocommerce-integration --mode=wp-api --url=https://learndash.com/support --post-type=docs --taxonomy=doc_category --name="LearnDash LMS - WooCommerce Integration"
 
       - name: Check for changes
         id: changes

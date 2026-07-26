@@ -2,7 +2,7 @@ name: Scrape Facetwp Documentation
 
 on:
   schedule:
-    - cron: '0 3 * * 0'
+    - cron: '30 4 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Facetwp scraper
-        run: node scraper.js --slug=facetwp --mode=html-scrape --url=https://facetwp.com/help-center/ --selector=.main-content --name="FacetWP"
+        run: bash scripts/run-scrape.sh --slug=facetwp --mode=html-scrape --url=https://facetwp.com/help-center/ --selector=.main-content --name="FacetWP"
 
       - name: Check for changes
         id: changes

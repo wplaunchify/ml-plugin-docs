@@ -2,7 +2,7 @@ name: Scrape Wpc Product Bundles For Woocommerce Premium Documentation
 
 on:
   schedule:
-    - cron: '0 16 * * 0'
+    - cron: '30 3 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wpc Product Bundles For Woocommerce Premium scraper
-        run: node scraper.js --slug=wpc-product-bundles-for-woocommerce-premium --mode=html-scrape --url=https://doc.wpclever.net/woosb/ --name="WPC Product Bundles for WooCommerce (Premium)"
+        run: bash scripts/run-scrape.sh --slug=wpc-product-bundles-for-woocommerce-premium --mode=html-scrape --url=https://doc.wpclever.net/woosb/ --name="WPC Product Bundles for WooCommerce (Premium)"
 
       - name: Check for changes
         id: changes

@@ -2,7 +2,7 @@ name: Scrape Add Anchor Links Documentation
 
 on:
   schedule:
-    - cron: '0 4 * * 0'
+    - cron: '0 0 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Add Anchor Links scraper
-        run: node scraper.js --slug=add-anchor-links --mode=html-scrape --url=https://wordpress.org/plugins/add-anchor-links/ --name="Add Anchor Links"
+        run: bash scripts/run-scrape.sh --slug=add-anchor-links --mode=html-scrape --url=https://wordpress.org/plugins/add-anchor-links/ --name="Add Anchor Links"
 
       - name: Check for changes
         id: changes

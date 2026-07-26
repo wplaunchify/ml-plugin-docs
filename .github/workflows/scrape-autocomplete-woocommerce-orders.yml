@@ -2,7 +2,7 @@ name: Scrape Autocomplete Woocommerce Orders Documentation
 
 on:
   schedule:
-    - cron: '0 16 * * 0'
+    - cron: '30 2 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Autocomplete Woocommerce Orders scraper
-        run: node scraper.js --slug=autocomplete-woocommerce-orders --mode=html-scrape --url=https://quadlayers.com/documentation/woocommerce-autocomplete-orders/ --selector=.doc-main__content --name="Autocomplete WooCommerce Orders"
+        run: bash scripts/run-scrape.sh --slug=autocomplete-woocommerce-orders --mode=html-scrape --url=https://quadlayers.com/documentation/woocommerce-autocomplete-orders/ --selector=.doc-main__content --name="Autocomplete WooCommerce Orders"
 
       - name: Check for changes
         id: changes

@@ -2,7 +2,7 @@ name: Scrape Fluent Snippets Documentation
 
 on:
   schedule:
-    - cron: '0 16 * * 0'
+    - cron: '0 10 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluent Snippets scraper
-        run: node scraper.js --slug=fluent-snippets --mode=html-scrape --url=https://fluentsnippets.com/docs/ --name="Fluent Snippets"
+        run: bash scripts/run-scrape.sh --slug=fluent-snippets --mode=html-scrape --url=https://fluentsnippets.com/docs/ --name="Fluent Snippets"
 
       - name: Check for changes
         id: changes

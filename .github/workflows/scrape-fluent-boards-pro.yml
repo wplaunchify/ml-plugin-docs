@@ -2,7 +2,7 @@ name: Scrape Fluent Boards Pro Documentation
 
 on:
   schedule:
-    - cron: '0 8 * * 0'
+    - cron: '50 1 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluent Boards Pro scraper
-        run: node scraper.js --slug=fluent-boards-pro --mode=wp-api --url=https://fluentboards.com/docs/ --post-type=docs --taxonomy=doc_category --name="Fluent Boards Pro"
+        run: bash scripts/run-scrape.sh --slug=fluent-boards-pro --mode=wp-api --url=https://fluentboards.com/docs/ --post-type=docs --taxonomy=doc_category --name="Fluent Boards Pro"
 
       - name: Check for changes
         id: changes

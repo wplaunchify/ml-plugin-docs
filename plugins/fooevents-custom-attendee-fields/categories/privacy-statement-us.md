@@ -8,7 +8,7 @@
 
 **Source:** [https://www.fooevents.com/privacy-statement-us](https://www.fooevents.com/privacy-statement-us)
 
-*This privacy statement was last changed on July 7, 2026, last checked on July 7, 2026, and applies to citizens and legal permanent residents of the United States.*
+*This privacy statement was last changed on July 21, 2026, last checked on July 21, 2026, and applies to citizens and legal permanent residents of the United States.*
 
 In this privacy statement, we explain what we do with the data we obtain about you via [https://www.fooevents.com](https://www.fooevents.com). We recommend you carefully read this statement. In our processing we comply with the requirements of privacy legislation. That means, among other things, that:
 
@@ -154,15 +154,6 @@ The inclusion of full IP addresses is blocked by us.
 
 We are committed to the security of personal data. We take appropriate security measures to limit abuse of and unauthorized access to personal data. This ensures that only the necessary persons have access to your data, that access to the data is protected, and that our security measures are regularly reviewed.
 
-The security measures we use consist of:
-
-- Login Security
-- DKIM, SPF, DMARC and other specific DNS settings
-- (START)TLS / SSL / DANE Encryption
-- HTTP Strict Transport Security and related Security Headers and Browser Policies
-- Website Hardening/Security Features
-- Vulnerability Detection
-
 ## 7. Third-party websites
 
 This privacy statement does not apply to third-party websites connected by links on our website. We cannot guarantee that these third parties handle your personal data in a reliable or secure manner. We recommend you read the privacy statements of these websites prior to making use of these websites.
@@ -185,7 +176,7 @@ If you have any questions or want to know which personal data we have about you,
 
 ### 9.2 Supplements
 
-This section, which supplements the rest of this Privacy Statement, applies to citizens and legal permanent residents of California (CPRA), Colorado (CPA), Nevada (NRS 603A), Utah (UCPA), Virginia (CDPA), Connecticut (CTDPA), Montana (MCDPA), Oregon (OCPA), Texas (TDPSA), Delaware (PDPA), Iowa (CDPA), Nebraska (DPA), New Hampshire (DPA) and New Jersey (DPL)
+This section, which supplements the rest of this Privacy Statement, applies to citizens and legal permanent residents of California (CPRA), Colorado (CPA), Nevada (NRS 603A), Utah (UCPA), Virginia (CDPA), Connecticut (CTDPA), Montana (MCDPA), Oregon (OCPA), Texas (TDPSA), Delaware (PDPA), Iowa (CDPA), Nebraska (DPA), New Hampshire (DPA), New Jersey (DPL), Indiana (ICDPA), Kentucky (KCDPA), Maryland (MODPA), Minnesota (MCDPA), Tennessee (TIPA) and Rhode Island (DTPPA)
 
 ### California
       
@@ -312,7 +303,24 @@ We have not disclosed consumers’ personal information for a business purpose i
               For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.
 
               
-#### Right to obtain a list of third parties to whom the controller has disclosed the consumer’s personal data.### Iowa
+#### Right to obtain a list of third parties to whom the controller has disclosed the consumer’s personal data.### Indiana
+#### Right to Data Portability
+
+              When exercising the right to Access personal data , you have the right to obtain the personal data in a portable and, to the extent technically feasible, readily usable format that allows you to transmit the data to another entity without hindrance. You may exercise this right no more than two times per calendar year.
+
+              
+#### Right to opt-out
+
+              You may submit a request directing us not to make certain disclosures of personal information we maintain about you.
+
+              Under the ICDPA this concerns the following purposes:
+
+              1. targeted advertising;
+2. the sale of personal data; or
+3. profiling in furtherance of decisions that produce legal or similarly significant effects concerning a consumer; or
+4. the processing of sensitive data.
+
+              For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.### Iowa
 #### Right to Data Portability
 
   					  When exercising the right to Access personal data, you have the right to obtain the personal data in a portable and, to the extent technically practicable, readily usable format that allows you to transmit the data to another entity without hindrance. You may exercise this right for free no more than two times per calendar year.
@@ -327,6 +335,65 @@ We have not disclosed consumers’ personal information for a business purpose i
               1. targeted advertising;
 2. the sale of personal data; or
 3. the processing of sensitive data.
+
+              For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.### Kentucky
+#### Right to Data Portability
+
+              When exercising the right to Access personal data , you have the right to obtain the personal data in a portable and, to the extent technically feasible, readily usable format that allows you to transmit the data to another entity without hindrance. You may exercise this right no more than two times per calendar year.
+
+              
+#### Right to opt-out
+
+              You may submit a request directing us not to make certain disclosures of personal information we maintain about you.
+
+              Under the KCDPA this concerns the following purposes:
+
+              1. targeted advertising;
+2. the sale of personal data; or
+3. profiling in furtherance of decisions that produce legal or similarly significant effects concerning a consumer; or
+4. the processing of sensitive data.
+
+              For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.### Maryland
+#### Right to Data Portability
+
+              When exercising the right to Access personal data , you have the right to obtain the personal data in a portable and, to the extent technically feasible, readily usable format that allows you to transmit the data to another entity without hindrance. You may exercise this right no more than two times per calendar year.
+
+              
+#### Right to opt-out
+
+              You may submit a request directing us not to make certain disclosures of personal information we maintain about you.
+
+              Under the MODPA this concerns the following purposes:
+
+              1. targeted advertising;
+2. the sale of personal data; or
+3. profiling in furtherance of decisions that produce legal or similarly significant effects concerning a consumer; or
+4. the processing of sensitive data.
+
+              For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.### Minnesota
+#### Right to Data Portability
+
+              When exercising the right to Access personal data , you have the right to obtain the personal data in a portable and, to the extent technically feasible, readily usable format that allows you to transmit the data to another entity without hindrance. You may exercise this right no more than two times per calendar year.
+
+              
+#### Right to opt-out
+
+              You may submit a request directing us not to make certain disclosures of personal information we maintain about you.
+
+              Under the MCDPA this concerns the following purposes:
+
+              1. targeted advertising;
+2. the sale of personal data; or
+3. profiling in furtherance of decisions that produce legal or similarly significant effects concerning a consumer; or
+4. the processing of sensitive data.
+
+			  You have the following specific rights related to profiling:
+
+			  - The right to challenge the outcome of the profiling.
+- The right to be informed, where feasible, of the reasons behind the decision resulting from the profiling.
+- The right to know what actions you could have taken to obtain a different outcome, and what actions you can take in the future to do so.
+- The right to review the personal data used in the profiling process.
+- The right to have any inaccurate data corrected and the profiling decision reassessed based on the updated information.
 
               For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.### Montana
 #### Right to Data Portability
@@ -419,7 +486,41 @@ We have not disclosed consumers’ personal information for a business purpose i
 2. the sale of personal data; or
 3. profiling in furtherance of decisions that produce legal or similarly significant effects concerning a consumer.
 
-						For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.### Texas
+						For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.### Rhode Island
+#### Right to Data Portability
+
+              When exercising the right to Access personal data , you have the right to obtain the personal data in a portable and, to the extent technically feasible, readily usable format that allows you to transmit the data to another entity without hindrance. You may exercise this right no more than two times per calendar year.
+
+              
+#### Right to opt-out
+
+              You may submit a request directing us not to make certain disclosures of personal information we maintain about you.
+
+              Under the DTPPA this concerns the following purposes:
+
+              1. targeted advertising;
+2. the sale of personal data; or
+3. profiling in furtherance of decisions that produce legal or similarly significant effects concerning a consumer; or
+4. the processing of sensitive data.
+
+              For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.### Tennessee
+#### Right to Data Portability
+
+              When exercising the right to Access personal data , you have the right to obtain the personal data in a portable and, to the extent technically feasible, readily usable format that allows you to transmit the data to another entity without hindrance. You may exercise this right no more than two times per calendar year.
+
+              
+#### Right to opt-out
+
+              You may submit a request directing us not to make certain disclosures of personal information we maintain about you.
+
+              Under the TIPA this concerns the following purposes:
+
+              1. targeted advertising;
+2. the sale of personal data; or
+3. profiling in furtherance of decisions that produce legal or similarly significant effects concerning a consumer; or
+4. the processing of sensitive data.
+
+              For more information about the possibility of submitting an opt-out request, please refer to our Opt-out preferences page.### Texas
 #### Right to Data Portability
 
 						When exercising the right to Access personal data , you have the right to obtain the personal data in a portable and, to the extent technically feasible, readily usable format that allows you to transmit the data to another entity without hindrance.

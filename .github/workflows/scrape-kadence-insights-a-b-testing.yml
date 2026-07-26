@@ -2,7 +2,7 @@ name: Scrape Kadence Insights A B Testing Documentation
 
 on:
   schedule:
-    - cron: '0 20 * * 0'
+    - cron: '40 16 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Insights A B Testing scraper
-        run: node scraper.js --slug=kadence-insights-a-b-testing --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-insights/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Insights - A/B Testing"
+        run: bash scripts/run-scrape.sh --slug=kadence-insights-a-b-testing --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-insights/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Insights - A/B Testing"
 
       - name: Check for changes
         id: changes

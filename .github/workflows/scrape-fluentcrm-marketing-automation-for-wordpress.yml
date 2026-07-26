@@ -2,7 +2,7 @@ name: Scrape Fluentcrm Marketing Automation For Wordpress Documentation
 
 on:
   schedule:
-    - cron: '0 17 * * 0'
+    - cron: '50 8 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluentcrm Marketing Automation For Wordpress scraper
-        run: node scraper.js --slug=fluentcrm-marketing-automation-for-wordpress --mode=wp-api --url=https://fluentcrm.com/docs/ --post-type=docs --taxonomy=doc_category --name="FluentCRM - Marketing Automation For WordPress"
+        run: bash scripts/run-scrape.sh --slug=fluentcrm-marketing-automation-for-wordpress --mode=wp-api --url=https://fluentcrm.com/docs/ --post-type=docs --taxonomy=doc_category --name="FluentCRM - Marketing Automation For WordPress"
 
       - name: Check for changes
         id: changes

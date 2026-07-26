@@ -2,7 +2,7 @@ name: Scrape Wp Fusion Enhanced Ecommerce Addon Documentation
 
 on:
   schedule:
-    - cron: '0 16 * * 0'
+    - cron: '30 11 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wp Fusion Enhanced Ecommerce Addon scraper
-        run: node scraper.js --slug=wp-fusion-enhanced-ecommerce-addon --mode=wp-api --url=https://wpfusion.com --post-type=documentation --taxonomy=documentation-categories --name="WP Fusion - Enhanced Ecommerce Addon"
+        run: bash scripts/run-scrape.sh --slug=wp-fusion-enhanced-ecommerce-addon --mode=wp-api --url=https://wpfusion.com --post-type=documentation --taxonomy=documentation-categories --name="WP Fusion - Enhanced Ecommerce Addon"
 
       - name: Check for changes
         id: changes

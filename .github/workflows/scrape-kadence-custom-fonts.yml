@@ -2,7 +2,7 @@ name: Scrape Kadence Custom Fonts Documentation
 
 on:
   schedule:
-    - cron: '0 14 * * 0'
+    - cron: '20 15 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Custom Fonts scraper
-        run: node scraper.js --slug=kadence-custom-fonts --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-theme/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Custom Fonts"
+        run: bash scripts/run-scrape.sh --slug=kadence-custom-fonts --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-theme/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Custom Fonts"
 
       - name: Check for changes
         id: changes

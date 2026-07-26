@@ -2,7 +2,7 @@ name: Scrape Featured Image With Url Documentation
 
 on:
   schedule:
-    - cron: '0 13 * * 0'
+    - cron: '40 17 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Featured Image With Url scraper
-        run: node scraper.js --slug=featured-image-with-url --mode=html-scrape --url=https://wordpress.org/plugins/featured-image-with-url/ --name="Featured Image with URL"
+        run: bash scripts/run-scrape.sh --slug=featured-image-with-url --mode=html-scrape --url=https://wordpress.org/plugins/featured-image-with-url/ --name="Featured Image with URL"
 
       - name: Check for changes
         id: changes

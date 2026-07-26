@@ -102,7 +102,7 @@ Sell tickets online, offer reserved seating, manage check-ins with our free mobi
 
 [Saiba mais](https://www.fooevents.com/pt/use-cases/espectaculos/)
 
-### Activities & Admissions
+### Atividades e Admissões
 
 Let customers book spots, slots, tours, or general admission tickets while you manage capacity, attendance, availability, and access control from your website.
 
@@ -168,7 +168,7 @@ New York’s Premier Jazzy R&B Duo
 
 ## Ready to start selling?
 
-Turn your WooCommerce website into a complete event ticketing platform with FooEvents. Sell tickets directly from your site, manage bookings and attendees, send branded tickets, and check people in with everything you need to run successful events.
+Transforme o seu site WooCommerce numa plataforma completa de venda de bilhetes para eventos com o FooEvents. Venda bilhetes diretamente a partir do seu site, faça a gestão de reservas e participantes, envie bilhetes com a sua marca e faça o check-in dos participantes, com tudo o que precisa para organizar eventos de sucesso.
 
 [Get started with FooEvents now!](https://www.fooevents.com/pt/fixacao-de-precos/)
 

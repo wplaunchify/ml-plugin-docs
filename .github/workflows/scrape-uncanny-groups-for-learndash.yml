@@ -2,7 +2,7 @@ name: Scrape Uncanny Groups For Learndash Documentation
 
 on:
   schedule:
-    - cron: '0 13 * * 0'
+    - cron: '20 6 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Uncanny Groups For Learndash scraper
-        run: node scraper.js --slug=uncanny-groups-for-learndash --mode=wp-api --url=https://www.uncannyowl.com/knowledge-base/ --post-type=ht_kb --name="Uncanny Groups for LearnDash"
+        run: bash scripts/run-scrape.sh --slug=uncanny-groups-for-learndash --mode=wp-api --url=https://www.uncannyowl.com/knowledge-base/ --post-type=ht_kb --name="Uncanny Groups for LearnDash"
 
       - name: Check for changes
         id: changes

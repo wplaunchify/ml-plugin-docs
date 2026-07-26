@@ -2,7 +2,7 @@ name: Scrape Woocommerce Checkout Manager Documentation
 
 on:
   schedule:
-    - cron: '0 22 * * 0'
+    - cron: '50 9 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Woocommerce Checkout Manager scraper
-        run: node scraper.js --slug=woocommerce-checkout-manager --mode=html-scrape --url=https://quadlayers.com/documentation/woocommerce-checkout-manager/ --selector=.doc-main__content --name="WooCommerce Checkout Manager"
+        run: bash scripts/run-scrape.sh --slug=woocommerce-checkout-manager --mode=html-scrape --url=https://quadlayers.com/documentation/woocommerce-checkout-manager/ --selector=.doc-main__content --name="WooCommerce Checkout Manager"
 
       - name: Check for changes
         id: changes

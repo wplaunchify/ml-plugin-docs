@@ -2,7 +2,7 @@ name: Scrape Launchflows Customer Dashboardboards For Woocommerce Documentation
 
 on:
   schedule:
-    - cron: '0 14 * * 0'
+    - cron: '0 3 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Launchflows Customer Dashboardboards For Woocommerce scraper
-        run: node scraper.js --slug=launchflows-customer-dashboardboards-for-woocommerce --mode=wp-api --url=https://launchflows.com --post-type=documentation --name="LaunchFlows Customer Dashboardboards For WooCommerce"
+        run: bash scripts/run-scrape.sh --slug=launchflows-customer-dashboardboards-for-woocommerce --mode=wp-api --url=https://launchflows.com --post-type=documentation --name="LaunchFlows Customer Dashboardboards For WooCommerce"
 
       - name: Check for changes
         id: changes

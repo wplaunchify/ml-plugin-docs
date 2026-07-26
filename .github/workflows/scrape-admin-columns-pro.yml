@@ -2,7 +2,7 @@ name: Scrape Admin Columns Pro Documentation
 
 on:
   schedule:
-    - cron: '0 8 * * 0'
+    - cron: '40 3 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Admin Columns Pro scraper
-        run: node scraper.js --slug=admin-columns-pro --mode=sitemap --url=https://docs.admincolumns.com/ --selector=#fullArticle --name="Admin Columns Pro"
+        run: bash scripts/run-scrape.sh --slug=admin-columns-pro --mode=sitemap --url=https://docs.admincolumns.com/ --selector=#fullArticle --name="Admin Columns Pro"
 
       - name: Check for changes
         id: changes

@@ -2,7 +2,7 @@ name: Scrape Simple History Documentation
 
 on:
   schedule:
-    - cron: '0 21 * * 0'
+    - cron: '50 5 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Simple History scraper
-        run: node scraper.js --slug=simple-history --mode=html-scrape --url=https://simple-history.com/support/ --name="Simple History"
+        run: bash scripts/run-scrape.sh --slug=simple-history --mode=html-scrape --url=https://simple-history.com/support/ --name="Simple History"
 
       - name: Check for changes
         id: changes

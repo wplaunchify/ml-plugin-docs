@@ -2,7 +2,7 @@ name: Scrape Page Links To Documentation
 
 on:
   schedule:
-    - cron: '0 12 * * 0'
+    - cron: '0 21 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Page Links To scraper
-        run: node scraper.js --slug=page-links-to --mode=html-scrape --url=https://wordpress.org/plugins/page-links-to/ --name="Page Links To"
+        run: bash scripts/run-scrape.sh --slug=page-links-to --mode=html-scrape --url=https://wordpress.org/plugins/page-links-to/ --name="Page Links To"
 
       - name: Check for changes
         id: changes

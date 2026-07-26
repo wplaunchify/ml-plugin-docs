@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T20:25:55.424Z",
+  "last_updated": "2026-07-26T21:08:21.203Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -99,7 +99,7 @@
       "slug": "affiliatewp-direct-link-tracking",
       "name": "AffiliateWP - Direct Link Tracking",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-26T05:04:43.866Z",
+      "last_scraped": "2026-07-26T20:54:36.358Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
@@ -1020,8 +1020,8 @@
       "slug": "fooevents-custom-attendee-fields",
       "name": "FooEvents Custom Attendee Fields",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-12T22:17:45.330Z",
-      "page_count": 60,
+      "last_scraped": "2026-07-26T21:06:59.618Z",
+      "page_count": 61,
       "categories": [
         "about-us",
         "bundles",
@@ -1054,8 +1054,8 @@
       "slug": "fooevents-express-check-in",
       "name": "FooEvents Express Check-in",
       "documentation_url": "https://www.fooevents.com",
-      "last_scraped": "2026-07-19T12:18:51.196Z",
-      "page_count": 60,
+      "last_scraped": "2026-07-26T20:58:31.615Z",
+      "page_count": 61,
       "categories": [
         "about-us",
         "bundles",
@@ -3450,7 +3450,7 @@
       "slug": "wp-all-export-user-export-add-on-pro",
       "name": "WP All Export - User Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-12T21:16:29.738Z",
+      "last_scraped": "2026-07-26T21:08:21.203Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
@@ -3470,7 +3470,7 @@
       "slug": "wp-all-import-acf-add-on-pro",
       "name": "WP All Import - ACF Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-19T09:36:51.777Z",
+      "last_scraped": "2026-07-26T20:57:29.069Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
@@ -3490,7 +3490,7 @@
       "slug": "wp-all-import-user-import-add-on-pro",
       "name": "WP All Import - User Import Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-12T22:16:01.962Z",
+      "last_scraped": "2026-07-26T21:07:45.132Z",
       "page_count": 199,
       "categories": [
         "uncategorized"

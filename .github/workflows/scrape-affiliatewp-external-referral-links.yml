@@ -2,7 +2,7 @@ name: Scrape Affiliatewp External Referral Links Documentation
 
 on:
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '30 15 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Affiliatewp External Referral Links scraper
-        run: node scraper.js --slug=affiliatewp-external-referral-links --mode=wp-api --url=https://affiliatewp.com/docs/ --post-type=documentation --name="AffiliateWP - External Referral Links"
+        run: bash scripts/run-scrape.sh --slug=affiliatewp-external-referral-links --mode=wp-api --url=https://affiliatewp.com/docs/ --post-type=documentation --name="AffiliateWP - External Referral Links"
 
       - name: Check for changes
         id: changes

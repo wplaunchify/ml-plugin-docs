@@ -2,7 +2,7 @@ name: Scrape Admin Menu Editor Pro Documentation
 
 on:
   schedule:
-    - cron: '0 17 * * 0'
+    - cron: '20 2 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Admin Menu Editor Pro scraper
-        run: node scraper.js --slug=admin-menu-editor-pro --mode=html-scrape --url=https://adminmenueditor.com/documentation/ --selector=#main --name="Admin Menu Editor Pro"
+        run: bash scripts/run-scrape.sh --slug=admin-menu-editor-pro --mode=html-scrape --url=https://adminmenueditor.com/documentation/ --selector=#main --name="Admin Menu Editor Pro"
 
       - name: Check for changes
         id: changes

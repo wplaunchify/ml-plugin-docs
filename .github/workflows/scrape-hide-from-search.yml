@@ -2,7 +2,7 @@ name: Scrape Hide From Search Documentation
 
 on:
   schedule:
-    - cron: '0 9 * * 0'
+    - cron: '40 18 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Hide From Search scraper
-        run: node scraper.js --slug=hide-from-search --mode=html-scrape --url=https://wordpress.org/plugins/mpress-hide-from-search/ --name="Hide from Search"
+        run: bash scripts/run-scrape.sh --slug=hide-from-search --mode=html-scrape --url=https://wordpress.org/plugins/mpress-hide-from-search/ --name="Hide from Search"
 
       - name: Check for changes
         id: changes

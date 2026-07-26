@@ -2,7 +2,7 @@ name: Scrape Prime Mover Documentation
 
 on:
   schedule:
-    - cron: '0 4 * * 0'
+    - cron: '10 5 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Prime Mover scraper
-        run: node scraper.js --slug=prime-mover --mode=sitemap --url=https://codexonics.com/prime_mover/ --name="Prime Mover"
+        run: bash scripts/run-scrape.sh --slug=prime-mover --mode=sitemap --url=https://codexonics.com/prime_mover/ --name="Prime Mover"
 
       - name: Check for changes
         id: changes

@@ -2,7 +2,7 @@ name: Scrape Kadence Shop Kit Documentation
 
 on:
   schedule:
-    - cron: '0 20 * * 0'
+    - cron: '50 17 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Shop Kit scraper
-        run: node scraper.js --slug=kadence-shop-kit --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-shop-kit/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Shop Kit"
+        run: bash scripts/run-scrape.sh --slug=kadence-shop-kit --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-shop-kit/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Shop Kit"
 
       - name: Check for changes
         id: changes

@@ -2,7 +2,7 @@ name: Scrape Fluentcommunity Pro Documentation
 
 on:
   schedule:
-    - cron: '0 8 * * 0'
+    - cron: '20 12 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluentcommunity Pro scraper
-        run: node scraper.js --slug=fluentcommunity-pro --mode=wp-api --url=https://fluentcommunity.co/docs/ --post-type=docs --taxonomy=doc_category --name="FluentCommunity Pro"
+        run: bash scripts/run-scrape.sh --slug=fluentcommunity-pro --mode=wp-api --url=https://fluentcommunity.co/docs/ --post-type=docs --taxonomy=doc_category --name="FluentCommunity Pro"
 
       - name: Check for changes
         id: changes

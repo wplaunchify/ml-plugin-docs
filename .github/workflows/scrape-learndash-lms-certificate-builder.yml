@@ -2,7 +2,7 @@ name: Scrape Learndash Lms Certificate Builder Documentation
 
 on:
   schedule:
-    - cron: '0 8 * * 0'
+    - cron: '40 1 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Learndash Lms Certificate Builder scraper
-        run: node scraper.js --slug=learndash-lms-certificate-builder --mode=wp-api --url=https://learndash.com/support --post-type=docs --taxonomy=doc_category --name="LearnDash LMS - Certificate Builder"
+        run: bash scripts/run-scrape.sh --slug=learndash-lms-certificate-builder --mode=wp-api --url=https://learndash.com/support --post-type=docs --taxonomy=doc_category --name="LearnDash LMS - Certificate Builder"
 
       - name: Check for changes
         id: changes

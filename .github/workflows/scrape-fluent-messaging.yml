@@ -2,7 +2,7 @@ name: Scrape Fluent Messaging Documentation
 
 on:
   schedule:
-    - cron: '0 12 * * 0'
+    - cron: '30 1 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluent Messaging scraper
-        run: node scraper.js --slug=fluent-messaging --mode=wp-api --url=https://fluentcrm.com/docs/ --post-type=docs --taxonomy=doc_category --name="Fluent Messaging"
+        run: bash scripts/run-scrape.sh --slug=fluent-messaging --mode=wp-api --url=https://fluentcrm.com/docs/ --post-type=docs --taxonomy=doc_category --name="Fluent Messaging"
 
       - name: Check for changes
         id: changes

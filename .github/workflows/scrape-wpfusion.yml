@@ -2,7 +2,7 @@ name: Scrape WP Fusion Documentation
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Weekly on Sunday at midnight UTC
+    - cron: '10 19 * * 0'  # Weekly on Sunday at midnight UTC
   workflow_dispatch:       # Manual trigger from GitHub UI or API
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run WP Fusion scraper
-        run: node scraper.js --slug=wpfusion --mode=wp-api --url=https://wpfusion.com --post-type=documentation --taxonomy=documentation-categories --name="WP Fusion"
+        run: bash scripts/run-scrape.sh --slug=wpfusion --mode=wp-api --url=https://wpfusion.com --post-type=documentation --taxonomy=documentation-categories --name="WP Fusion"
 
       - name: Check for changes
         id: changes

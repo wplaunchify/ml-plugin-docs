@@ -2,7 +2,7 @@ name: Scrape Starter Templates By Kadence Wp Documentation
 
 on:
   schedule:
-    - cron: '0 16 * * 0'
+    - cron: '20 20 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Starter Templates By Kadence Wp scraper
-        run: node scraper.js --slug=starter-templates-by-kadence-wp --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-theme/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Starter Templates by Kadence WP"
+        run: bash scripts/run-scrape.sh --slug=starter-templates-by-kadence-wp --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-theme/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Starter Templates by Kadence WP"
 
       - name: Check for changes
         id: changes

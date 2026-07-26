@@ -2,7 +2,7 @@ name: Scrape Wpcodebox 2 Documentation
 
 on:
   schedule:
-    - cron: '0 18 * * 0'
+    - cron: '10 7 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wpcodebox 2 scraper
-        run: node scraper.js --slug=wpcodebox-2 --mode=html-scrape --url=https://docs.wpcodebox.com/ --selector=.nextra-content --name="WPCodeBox 2"
+        run: bash scripts/run-scrape.sh --slug=wpcodebox-2 --mode=html-scrape --url=https://docs.wpcodebox.com/ --selector=.nextra-content --name="WPCodeBox 2"
 
       - name: Check for changes
         id: changes

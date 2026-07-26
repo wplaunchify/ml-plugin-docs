@@ -2,7 +2,7 @@ name: Scrape LearnDash Documentation
 
 on:
   schedule:
-    - cron: '0 8 * * 0'
+    - cron: '0 15 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run LearnDash scraper
-        run: node scraper.js --slug=learndash --mode=wp-api --url=https://learndash.com/support --post-type=docs --taxonomy=doc_category --name="LearnDash"
+        run: bash scripts/run-scrape.sh --slug=learndash --mode=wp-api --url=https://learndash.com/support --post-type=docs --taxonomy=doc_category --name="LearnDash"
 
       - name: Check for changes
         id: changes

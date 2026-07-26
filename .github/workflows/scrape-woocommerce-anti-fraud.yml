@@ -2,7 +2,7 @@ name: Scrape Woocommerce Anti Fraud Documentation
 
 on:
   schedule:
-    - cron: '0 10 * * 0'
+    - cron: '40 11 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Woocommerce Anti Fraud scraper
-        run: node scraper.js --slug=woocommerce-anti-fraud --mode=html-scrape --url=https://woocommerce.com/document/woocommerce-anti-fraud/ --selector=.wccom-single-doc-content --name="WooCommerce Anti Fraud"
+        run: bash scripts/run-scrape.sh --slug=woocommerce-anti-fraud --mode=html-scrape --url=https://woocommerce.com/document/woocommerce-anti-fraud/ --selector=.wccom-single-doc-content --name="WooCommerce Anti Fraud"
 
       - name: Check for changes
         id: changes

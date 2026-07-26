@@ -2,7 +2,7 @@ name: Scrape Redirection Documentation
 
 on:
   schedule:
-    - cron: '0 15 * * 0'
+    - cron: '30 5 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Redirection scraper
-        run: node scraper.js --slug=redirection --mode=html-scrape --url=https://redirection.me/support/ --name="Redirection"
+        run: bash scripts/run-scrape.sh --slug=redirection --mode=html-scrape --url=https://redirection.me/support/ --name="Redirection"
 
       - name: Check for changes
         id: changes

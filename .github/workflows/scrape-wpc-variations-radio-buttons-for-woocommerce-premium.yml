@@ -2,7 +2,7 @@ name: Scrape Wpc Variations Radio Buttons For Woocommerce Premium Documentation
 
 on:
   schedule:
-    - cron: '0 4 * * 0'
+    - cron: '50 10 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wpc Variations Radio Buttons For Woocommerce Premium scraper
-        run: node scraper.js --slug=wpc-variations-radio-buttons-for-woocommerce-premium --mode=html-scrape --url=https://doc.wpclever.net/woovr/ --name="WPC Variations Radio Buttons for WooCommerce (Premium)"
+        run: bash scripts/run-scrape.sh --slug=wpc-variations-radio-buttons-for-woocommerce-premium --mode=html-scrape --url=https://doc.wpclever.net/woovr/ --name="WPC Variations Radio Buttons for WooCommerce (Premium)"
 
       - name: Check for changes
         id: changes

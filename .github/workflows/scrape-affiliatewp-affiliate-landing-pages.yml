@@ -2,7 +2,7 @@ name: Scrape Affiliatewp Affiliate Landing Pages Documentation
 
 on:
   schedule:
-    - cron: '0 11 * * 0'
+    - cron: '20 0 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Affiliatewp Affiliate Landing Pages scraper
-        run: node scraper.js --slug=affiliatewp-affiliate-landing-pages --mode=wp-api --url=https://affiliatewp.com/docs/ --post-type=documentation --name="AffiliateWP - Affiliate Landing Pages"
+        run: bash scripts/run-scrape.sh --slug=affiliatewp-affiliate-landing-pages --mode=wp-api --url=https://affiliatewp.com/docs/ --post-type=documentation --name="AffiliateWP - Affiliate Landing Pages"
 
       - name: Check for changes
         id: changes

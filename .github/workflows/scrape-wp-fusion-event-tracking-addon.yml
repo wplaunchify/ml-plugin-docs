@@ -2,7 +2,7 @@ name: Scrape Wp Fusion Event Tracking Addon Documentation
 
 on:
   schedule:
-    - cron: '0 3 * * 0'
+    - cron: '50 13 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wp Fusion Event Tracking Addon scraper
-        run: node scraper.js --slug=wp-fusion-event-tracking-addon --mode=wp-api --url=https://wpfusion.com --post-type=documentation --taxonomy=documentation-categories --name="WP Fusion - Event Tracking Addon"
+        run: bash scripts/run-scrape.sh --slug=wp-fusion-event-tracking-addon --mode=wp-api --url=https://wpfusion.com --post-type=documentation --taxonomy=documentation-categories --name="WP Fusion - Event Tracking Addon"
 
       - name: Check for changes
         id: changes

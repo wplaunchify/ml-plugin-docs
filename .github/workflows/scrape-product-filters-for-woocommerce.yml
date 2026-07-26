@@ -2,7 +2,7 @@ name: Scrape Product Filters For Woocommerce Documentation
 
 on:
   schedule:
-    - cron: '0 9 * * 0'
+    - cron: '20 5 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Product Filters For Woocommerce scraper
-        run: node scraper.js --slug=product-filters-for-woocommerce --mode=wp-api --url=https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/ --post-type=documentation --name="Product Filters for WooCommerce"
+        run: bash scripts/run-scrape.sh --slug=product-filters-for-woocommerce --mode=wp-api --url=https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/ --post-type=documentation --name="Product Filters for WooCommerce"
 
       - name: Check for changes
         id: changes

@@ -14,6 +14,23 @@ Three modes:
 
 Fail-fast: if zero pages scrape, `scraper.js` exits 1 and writes nothing. This is deliberate — it turns silent data loss (committing empty docs over good ones) into a visible red run. A red run means the vendor's site changed, not that the pipeline is broken.
 
+## Two kinds of failure — check which one before digging in
+
+The scraper labels every fatal error, and the exit code drives whether it gets retried:
+
+- `CAUSE: TRANSIENT` (exit 2) — the vendor host refused, timed out, or served an empty
+  200 even after retries with backoff. The config is fine. `scripts/run-scrape.sh`
+  retries the whole scrape up to 3 times (3 min, then 6 min apart) before the job goes red.
+- `CAUSE: CONFIG` (exit 1) — the host answered normally but produced nothing usable.
+  The docs moved or the mode/url/post-type/selector is wrong. Not retried; needs a human.
+
+Workflows call `bash scripts/run-scrape.sh <args>`, never `node scraper.js` directly.
+`scripts/use-run-scrape-wrapper.js` rewires any workflow that still calls the scraper directly.
+
+Crons are staggered by `scripts/stagger-crons.js`: one workflow every 10 minutes across
+Sunday, with same-host workflows spread hours apart. Re-run it after adding workflows —
+otherwise sibling scrapes hit the same vendor at once and get rate-limited.
+
 ## Debugging a failed run
 
 1. Reproduce locally: `npm ci`, then run the exact `node scraper.js ...` line from the workflow file.
@@ -41,3 +58,4 @@ Fail-fast: if zero pages scrape, `scraper.js` exits 1 and writes nothing. This i
 - June 2026: core `wp-api` bug built API URLs off doc sub-paths instead of the origin; ~40 plugins silently scraped zero pages. Fixed in `scraper.js`, plus fail-fast added.
 - Early July 2026: 64 workflows reconfigured with correct URLs/modes/selectors after research; WPCodeBox docs moved.
 - Mid July 2026: Nexcess/Liquid Web migrated the Kadence help center and Events Calendar docs to `docs.nexcess.com` with a new theme; 12 workflows failed until the selector was updated to `.nx-prose`.
+- Late July 2026: FooEvents, WP All Import and AffiliateWP runs failed with no config problem at all — every one of them scraped fine on retry, and sibling workflows against the same host succeeded the same day. Root cause was all 131 workflows firing on the hour, so vendors saw bursts and dropped connections, and the scraper only retried 3 times over ~6 seconds. Fixed by staggering crons, adding exponential backoff with jitter and Retry-After support, re-checking empty WP API responses before trusting them, and retrying transient failures at the job level.

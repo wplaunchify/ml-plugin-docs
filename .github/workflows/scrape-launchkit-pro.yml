@@ -2,7 +2,7 @@ name: Scrape Launchkit Pro Documentation
 
 on:
   schedule:
-    - cron: '0 17 * * 0'
+    - cron: '20 19 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Launchkit Pro scraper
-        run: node scraper.js --slug=launchkit-pro --mode=html-scrape --url=https://wordpress.org/plugins/launchkit/ --selector=.entry-content --name="LaunchKit Pro"
+        run: bash scripts/run-scrape.sh --slug=launchkit-pro --mode=html-scrape --url=https://wordpress.org/plugins/launchkit/ --selector=.entry-content --name="LaunchKit Pro"
 
       - name: Check for changes
         id: changes

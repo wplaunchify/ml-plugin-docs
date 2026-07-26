@@ -2,7 +2,7 @@ name: Scrape Affiliatewp Multi Tier Commissions Documentation
 
 on:
   schedule:
-    - cron: '0 11 * * 0'
+    - cron: '0 18 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Affiliatewp Multi Tier Commissions scraper
-        run: node scraper.js --slug=affiliatewp-multi-tier-commissions --mode=wp-api --url=https://affiliatewp.com/docs/ --post-type=documentation --name="AffiliateWP - Multi-Tier Commissions"
+        run: bash scripts/run-scrape.sh --slug=affiliatewp-multi-tier-commissions --mode=wp-api --url=https://affiliatewp.com/docs/ --post-type=documentation --name="AffiliateWP - Multi-Tier Commissions"
 
       - name: Check for changes
         id: changes

@@ -2,7 +2,7 @@ name: Scrape Wp Sheet Editor Wpfusion Documentation
 
 on:
   schedule:
-    - cron: '0 10 * * 0'
+    - cron: '0 7 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wp Sheet Editor Wpfusion scraper
-        run: node scraper.js --slug=wp-sheet-editor-wpfusion --mode=html-scrape --url=https://wpsheeteditor.com --name="WP Sheet Editor - WPFusion"
+        run: bash scripts/run-scrape.sh --slug=wp-sheet-editor-wpfusion --mode=html-scrape --url=https://wpsheeteditor.com --name="WP Sheet Editor - WPFusion"
 
       - name: Check for changes
         id: changes

@@ -2,7 +2,7 @@ name: Scrape FluentCart Documentation
 
 on:
   schedule:
-    - cron: '0 6 * * 0'
+    - cron: '40 4 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run FluentCart scraper
-        run: node scraper.js --slug=fluentcart --mode=sitemap --url=https://docs.fluentcart.com/guide/ --selector=.vp-doc --name="FluentCart"
+        run: bash scripts/run-scrape.sh --slug=fluentcart --mode=sitemap --url=https://docs.fluentcart.com/guide/ --selector=.vp-doc --name="FluentCart"
 
       - name: Check for changes
         id: changes

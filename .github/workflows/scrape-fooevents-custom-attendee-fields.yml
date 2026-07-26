@@ -2,7 +2,7 @@ name: Scrape Fooevents Custom Attendee Fields Documentation
 
 on:
   schedule:
-    - cron: '0 22 * * 0'
+    - cron: '20 8 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fooevents Custom Attendee Fields scraper
-        run: node scraper.js --slug=fooevents-custom-attendee-fields --mode=html-scrape --url=https://www.fooevents.com --name="FooEvents Custom Attendee Fields"
+        run: bash scripts/run-scrape.sh --slug=fooevents-custom-attendee-fields --mode=html-scrape --url=https://www.fooevents.com --name="FooEvents Custom Attendee Fields"
 
       - name: Check for changes
         id: changes

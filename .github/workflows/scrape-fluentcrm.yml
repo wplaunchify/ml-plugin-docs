@@ -2,7 +2,7 @@ name: Scrape FluentCRM Documentation
 
 on:
   schedule:
-    - cron: '0 4 * * 0'  # Weekly on Sunday at 4am UTC
+    - cron: '50 14 * * 0'  # Weekly on Sunday at 4am UTC
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run FluentCRM scraper
-        run: node scraper.js --slug=fluentcrm --mode=wp-api --url=https://fluentcrm.com --post-type=docs --taxonomy=doc_category --name="FluentCRM"
+        run: bash scripts/run-scrape.sh --slug=fluentcrm --mode=wp-api --url=https://fluentcrm.com --post-type=docs --taxonomy=doc_category --name="FluentCRM"
 
       - name: Check for changes
         id: changes

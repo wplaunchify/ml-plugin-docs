@@ -2,7 +2,7 @@ name: Scrape Attributes For Blocks Documentation
 
 on:
   schedule:
-    - cron: '0 13 * * 0'
+    - cron: '20 7 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Attributes For Blocks scraper
-        run: node scraper.js --slug=attributes-for-blocks --mode=html-scrape --url=https://wordpress.org/plugins/attributes-for-blocks/ --name="Attributes for Blocks"
+        run: bash scripts/run-scrape.sh --slug=attributes-for-blocks --mode=html-scrape --url=https://wordpress.org/plugins/attributes-for-blocks/ --name="Attributes for Blocks"
 
       - name: Check for changes
         id: changes

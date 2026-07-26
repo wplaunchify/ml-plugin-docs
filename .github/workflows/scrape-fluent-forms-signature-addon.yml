@@ -2,7 +2,7 @@ name: Scrape Fluent Forms Signature Addon Documentation
 
 on:
   schedule:
-    - cron: '0 12 * * 0'
+    - cron: '30 8 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluent Forms Signature Addon scraper
-        run: node scraper.js --slug=fluent-forms-signature-addon --mode=wp-api --url=https://fluentforms.com/docs/ --post-type=docs --taxonomy=doc_category --name="Fluent Forms Signature Addon"
+        run: bash scripts/run-scrape.sh --slug=fluent-forms-signature-addon --mode=wp-api --url=https://fluentforms.com/docs/ --post-type=docs --taxonomy=doc_category --name="Fluent Forms Signature Addon"
 
       - name: Check for changes
         id: changes

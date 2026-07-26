@@ -2,7 +2,7 @@ name: Scrape Fooevents Bookings Documentation
 
 on:
   schedule:
-    - cron: '0 4 * * 0'
+    - cron: '0 1 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fooevents Bookings scraper
-        run: node scraper.js --slug=fooevents-bookings --mode=html-scrape --url=https://www.fooevents.com --name="FooEvents Bookings"
+        run: bash scripts/run-scrape.sh --slug=fooevents-bookings --mode=html-scrape --url=https://www.fooevents.com --name="FooEvents Bookings"
 
       - name: Check for changes
         id: changes

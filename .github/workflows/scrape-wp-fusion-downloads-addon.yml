@@ -2,7 +2,7 @@ name: Scrape Wp Fusion Downloads Addon Documentation
 
 on:
   schedule:
-    - cron: '0 17 * * 0'
+    - cron: '50 7 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wp Fusion Downloads Addon scraper
-        run: node scraper.js --slug=wp-fusion-downloads-addon --mode=wp-api --url=https://wpfusion.com --post-type=documentation --taxonomy=documentation-categories --name="WP Fusion - Downloads Addon"
+        run: bash scripts/run-scrape.sh --slug=wp-fusion-downloads-addon --mode=wp-api --url=https://wpfusion.com --post-type=documentation --taxonomy=documentation-categories --name="WP Fusion - Downloads Addon"
 
       - name: Check for changes
         id: changes

@@ -10,10 +10,16 @@ const path = require('path');
 // ---------------------------------------------------------------------------
 
 const RATE_LIMIT_MS = 500;
-const MAX_RETRIES = 3;
-const RETRY_DELAY_MS = 2000;
-const REQUEST_TIMEOUT_MS = 15000;
+const MAX_RETRIES = 5;
+const RETRY_DELAY_MS = 3000;
+const RETRY_MAX_DELAY_MS = 45000;
+const REQUEST_TIMEOUT_MS = 30000;
 const WP_API_PER_PAGE = 10;
+
+// Statuses worth retrying: rate limiting, upstream/proxy hiccups, and the
+// Cloudflare-ish 520-527 range. A 404 means the URL is simply wrong, so retrying
+// it only burns time.
+const RETRYABLE_STATUSES = new Set([408, 425, 429, 500, 502, 503, 504, 520, 521, 522, 523, 524, 525, 527]);
 
 const USER_AGENT = 'ML-Plugin-Docs-Scraper/1.0 (+https://github.com/wplaunchify/ml-plugin-docs)';
 
@@ -46,9 +52,30 @@ function parseArgs() {
 
 let lastRequestTime = 0;
 
-async function fetchPage(url, retries = MAX_RETRIES) {
-  const now = Date.now();
-  const elapsed = now - lastRequestTime;
+// Set when a request ultimately fails for a reason that looks like vendor-side
+// flakiness rather than a wrong config. Used to label the final error message so
+// a red run tells you whether you actually need to change anything.
+let sawTransientFailure = false;
+
+function isTransient(err) {
+  if (!err.response) return true; // timeout, DNS, socket reset
+  return RETRYABLE_STATUSES.has(err.response.status);
+}
+
+function retryDelay(attempt, err) {
+  const retryAfter = err.response && err.response.headers && err.response.headers['retry-after'];
+  if (retryAfter) {
+    const seconds = /^\d+$/.test(String(retryAfter).trim())
+      ? parseInt(retryAfter, 10)
+      : Math.round((new Date(retryAfter).getTime() - Date.now()) / 1000);
+    if (seconds > 0) return Math.min(seconds * 1000, RETRY_MAX_DELAY_MS);
+  }
+  const backoff = Math.min(RETRY_DELAY_MS * Math.pow(2, attempt - 1), RETRY_MAX_DELAY_MS);
+  return backoff + Math.floor(Math.random() * 1000); // jitter so sibling runs desync
+}
+
+async function fetchWithRetry(url, axiosOptions, retries, describe) {
+  const elapsed = Date.now() - lastRequestTime;
   if (elapsed < RATE_LIMIT_MS) {
     await sleep(RATE_LIMIT_MS - elapsed);
   }
@@ -56,55 +83,57 @@ async function fetchPage(url, retries = MAX_RETRIES) {
 
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const response = await axios.get(url, {
-        timeout: REQUEST_TIMEOUT_MS,
-        headers: { 'User-Agent': USER_AGENT },
-        maxRedirects: 5
-      });
-      return response.data;
+      const response = await axios.get(url, axiosOptions);
+      return describe(response);
     } catch (err) {
       const status = err.response ? err.response.status : 'NETWORK';
+      const transient = isTransient(err);
       console.error(`  [attempt ${attempt}/${retries}] Failed ${url} (${status})`);
-      if (attempt < retries) {
-        await sleep(RETRY_DELAY_MS * attempt);
-      } else {
+
+      if (!transient || attempt >= retries) {
+        if (transient) {
+          sawTransientFailure = true;
+          console.error(`  Gave up on ${url} after ${retries} attempts (${status} looks transient).`);
+        }
         return null;
       }
+
+      const wait = retryDelay(attempt, err);
+      console.error(`  Retrying in ${Math.round(wait / 1000)}s...`);
+      await sleep(wait);
+      lastRequestTime = Date.now();
     }
   }
   return null;
 }
 
-async function fetchJson(url, retries = MAX_RETRIES) {
-  const now = Date.now();
-  const elapsed = now - lastRequestTime;
-  if (elapsed < RATE_LIMIT_MS) {
-    await sleep(RATE_LIMIT_MS - elapsed);
-  }
-  lastRequestTime = Date.now();
+async function fetchPage(url, retries = MAX_RETRIES) {
+  return fetchWithRetry(
+    url,
+    {
+      timeout: REQUEST_TIMEOUT_MS,
+      headers: { 'User-Agent': USER_AGENT },
+      maxRedirects: 5
+    },
+    retries,
+    response => response.data
+  );
+}
 
-  for (let attempt = 1; attempt <= retries; attempt++) {
-    try {
-      const response = await axios.get(url, {
-        timeout: REQUEST_TIMEOUT_MS,
-        headers: {
-          'User-Agent': USER_AGENT,
-          'Accept': 'application/json'
-        },
-        maxRedirects: 5
-      });
-      return { data: response.data, headers: response.headers };
-    } catch (err) {
-      const status = err.response ? err.response.status : 'NETWORK';
-      console.error(`  [attempt ${attempt}/${retries}] Failed ${url} (${status})`);
-      if (attempt < retries) {
-        await sleep(RETRY_DELAY_MS * attempt);
-      } else {
-        return null;
-      }
-    }
-  }
-  return null;
+async function fetchJson(url, retries = MAX_RETRIES) {
+  return fetchWithRetry(
+    url,
+    {
+      timeout: REQUEST_TIMEOUT_MS,
+      headers: {
+        'User-Agent': USER_AGENT,
+        'Accept': 'application/json'
+      },
+      maxRedirects: 5
+    },
+    retries,
+    response => ({ data: response.data, headers: response.headers })
+  );
 }
 
 function sleep(ms) {
@@ -301,15 +330,34 @@ function extractCategoryFromUrl(pageUrl, baseUrl) {
  * site moved. Exit non-zero BEFORE writing anything so the GitHub Action fails
  * loudly and existing good data is never overwritten with empty output.
  */
+/**
+ * Exit codes are meaningful to scripts/run-scrape.sh:
+ *   1 = config is wrong, a human must fix it (do not retry)
+ *   2 = vendor-side flakiness, worth retrying the whole run later
+ */
+const EXIT_CONFIG = 1;
+const EXIT_TRANSIENT = 2;
+
+function failScrape(message) {
+  console.error(`\nFATAL: ${message}`);
+  if (sawTransientFailure) {
+    console.error('CAUSE: TRANSIENT - the source host refused, timed out, or served empty');
+    console.error('responses even after retries with backoff. The config is probably fine.');
+    console.error('This run will be retried automatically before the job is marked failed.');
+    process.exit(EXIT_TRANSIENT);
+  }
+  console.error('CAUSE: CONFIG - the host answered normally but produced nothing usable.');
+  console.error('The docs source has likely moved or the scrape config (mode/url/post-type/selector) is wrong.');
+  process.exit(EXIT_CONFIG);
+}
+
 function assertPagesScraped(pages, failedUrls) {
   if (pages.length > 0) return;
-  console.error('\nFATAL: 0 pages scraped. Refusing to write empty output.');
-  console.error('The docs source has likely moved or the scrape config (mode/url/post-type/selector) is wrong.');
   if (failedUrls.length > 0) {
-    console.error(`${failedUrls.length} URL(s) were found but failed to scrape:`);
+    console.error(`\n${failedUrls.length} URL(s) were found but failed to scrape:`);
     failedUrls.slice(0, 20).forEach(u => console.error(`  - ${u}`));
   }
-  process.exit(1);
+  failScrape('0 pages scraped. Refusing to write empty output.');
 }
 
 function writePluginData(slug, pluginName, baseUrl, pages, failedUrls) {
@@ -517,8 +565,27 @@ async function runWpApi(args) {
 
     if (page === 1) {
       totalPages = parseInt(result.headers['x-wp-totalpages'] || '1', 10);
-      const totalPosts = parseInt(result.headers['x-wp-total'] || '0', 10);
+      let totalPosts = parseInt(result.headers['x-wp-total'] || '0', 10);
       console.log(`OK (${totalPosts} total posts across ${totalPages} pages)`);
+
+      // A 200 carrying an empty array is ambiguous: either the post type really
+      // is empty (config wrong) or the site served a cold/broken cache. Vendors
+      // do the latter often enough that believing it immediately causes false
+      // alarms, so re-ask a few times before trusting a zero.
+      for (let recheck = 1; recheck <= 3 && totalPosts === 0 && Array.isArray(result.data) && result.data.length === 0; recheck++) {
+        const wait = RETRY_DELAY_MS * Math.pow(2, recheck - 1);
+        console.log(`  Empty result set - re-checking in ${Math.round(wait / 1000)}s (${recheck}/3)...`);
+        await sleep(wait);
+        const retryResult = await fetchJson(pageUrl);
+        if (!retryResult) break;
+        result = retryResult;
+        totalPages = parseInt(result.headers['x-wp-totalpages'] || '1', 10);
+        totalPosts = parseInt(result.headers['x-wp-total'] || '0', 10);
+        console.log(`  Re-check ${recheck}: ${totalPosts} total posts`);
+      }
+      if (totalPosts === 0) {
+        sawTransientFailure = true;
+      }
     } else {
       console.log(`OK (${result.data.length} posts)`);
     }
@@ -669,8 +736,7 @@ async function runSitemap(args) {
   console.log(`  Found ${docLinks.length} documentation URLs in sitemap\n`);
 
   if (docLinks.length === 0) {
-    console.error('FATAL: No documentation URLs found in any sitemap');
-    process.exit(1);
+    failScrape('No documentation URLs found in any sitemap');
   }
 
   // Step 2: Scrape each page
@@ -815,8 +881,7 @@ async function runHtmlScrape(args) {
   console.log('[1/4] Fetching documentation index page...');
   const indexHtml = await fetchPage(baseUrl);
   if (!indexHtml) {
-    console.error('FATAL: Could not fetch index page');
-    process.exit(1);
+    failScrape('Could not fetch index page');
   }
 
   // Include the index page itself: for single-page docs it may be the only

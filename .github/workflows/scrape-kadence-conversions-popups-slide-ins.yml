@@ -2,7 +2,7 @@ name: Scrape Kadence Conversions Popups Slide Ins Documentation
 
 on:
   schedule:
-    - cron: '0 20 * * 0'
+    - cron: '30 13 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Kadence Conversions Popups Slide Ins scraper
-        run: node scraper.js --slug=kadence-conversions-popups-slide-ins --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-conversions/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Conversions - Popups, slide-ins"
+        run: bash scripts/run-scrape.sh --slug=kadence-conversions-popups-slide-ins --mode=sitemap --url=https://www.kadencewp.com/help-center/docs/kadence-conversions/ --selector=.nx-prose --sitemap-index=https://www.kadencewp.com/help-center/sitemap_index.xml --name="Kadence Conversions - Popups, slide-ins"
 
       - name: Check for changes
         id: changes

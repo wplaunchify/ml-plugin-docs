@@ -2,7 +2,7 @@ name: Scrape Custom Post Type Ui Documentation
 
 on:
   schedule:
-    - cron: '0 23 * * 0'
+    - cron: '20 4 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Custom Post Type Ui scraper
-        run: node scraper.js --slug=custom-post-type-ui --mode=wp-api --url=https://docs.pluginize.com/collection/81-custom-post-type-ui --post-type=article --name="Custom Post Type UI"
+        run: bash scripts/run-scrape.sh --slug=custom-post-type-ui --mode=wp-api --url=https://docs.pluginize.com/collection/81-custom-post-type-ui --post-type=article --name="Custom Post Type UI"
 
       - name: Check for changes
         id: changes

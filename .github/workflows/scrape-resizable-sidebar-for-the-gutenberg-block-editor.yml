@@ -2,7 +2,7 @@ name: Scrape Resizable Sidebar For The Gutenberg Block Editor Documentation
 
 on:
   schedule:
-    - cron: '0 12 * * 0'
+    - cron: '20 21 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Resizable Sidebar For The Gutenberg Block Editor scraper
-        run: node scraper.js --slug=resizable-sidebar-for-the-gutenberg-block-editor --mode=html-scrape --url=https://wordpress.org/plugins/resizable-editor-sidebar/ --name="Resizable Sidebar for the Gutenberg Block Editor"
+        run: bash scripts/run-scrape.sh --slug=resizable-sidebar-for-the-gutenberg-block-editor --mode=html-scrape --url=https://wordpress.org/plugins/resizable-editor-sidebar/ --name="Resizable Sidebar for the Gutenberg Block Editor"
 
       - name: Check for changes
         id: changes

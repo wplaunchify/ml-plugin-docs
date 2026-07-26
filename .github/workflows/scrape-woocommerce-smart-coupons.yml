@@ -2,7 +2,7 @@ name: Scrape Woocommerce Smart Coupons Documentation
 
 on:
   schedule:
-    - cron: '0 6 * * 0'
+    - cron: '0 14 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Woocommerce Smart Coupons scraper
-        run: node scraper.js --slug=woocommerce-smart-coupons --mode=html-scrape --url=https://woocommerce.com/document/smart-coupons/ --selector=.wccom-single-doc-content --name="WooCommerce Smart Coupons"
+        run: bash scripts/run-scrape.sh --slug=woocommerce-smart-coupons --mode=html-scrape --url=https://woocommerce.com/document/smart-coupons/ --selector=.wccom-single-doc-content --name="WooCommerce Smart Coupons"
 
       - name: Check for changes
         id: changes

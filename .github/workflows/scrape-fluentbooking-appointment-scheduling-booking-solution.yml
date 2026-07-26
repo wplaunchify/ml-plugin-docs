@@ -2,7 +2,7 @@ name: Scrape Fluentbooking Appointment Scheduling Booking Solution Documentation
 
 on:
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '10 2 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluentbooking Appointment Scheduling Booking Solution scraper
-        run: node scraper.js --slug=fluentbooking-appointment-scheduling-booking-solution --mode=wp-api --url=https://fluentbooking.com --post-type=docs --taxonomy=doc_category --name="FluentBooking - Appointment Scheduling & Booking Solution"
+        run: bash scripts/run-scrape.sh --slug=fluentbooking-appointment-scheduling-booking-solution --mode=wp-api --url=https://fluentbooking.com --post-type=docs --taxonomy=doc_category --name="FluentBooking - Appointment Scheduling & Booking Solution"
 
       - name: Check for changes
         id: changes

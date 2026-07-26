@@ -2,7 +2,7 @@ name: Scrape Simple Post Redirect Documentation
 
 on:
   schedule:
-    - cron: '0 9 * * 0'
+    - cron: '30 21 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Simple Post Redirect scraper
-        run: node scraper.js --slug=simple-post-redirect --mode=html-scrape --url=https://wordpress.org/plugins/simple-post-redirect/ --name="Simple Post Redirect"
+        run: bash scripts/run-scrape.sh --slug=simple-post-redirect --mode=html-scrape --url=https://wordpress.org/plugins/simple-post-redirect/ --name="Simple Post Redirect"
 
       - name: Check for changes
         id: changes

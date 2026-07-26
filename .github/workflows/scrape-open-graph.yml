@@ -2,7 +2,7 @@ name: Scrape Open Graph Documentation
 
 on:
   schedule:
-    - cron: '0 16 * * 0'
+    - cron: '50 20 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Open Graph scraper
-        run: node scraper.js --slug=open-graph --mode=html-scrape --url=https://wordpress.org/plugins/opengraph/ --name="Open Graph"
+        run: bash scripts/run-scrape.sh --slug=open-graph --mode=html-scrape --url=https://wordpress.org/plugins/opengraph/ --name="Open Graph"
 
       - name: Check for changes
         id: changes

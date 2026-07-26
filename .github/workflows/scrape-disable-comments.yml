@@ -2,7 +2,7 @@ name: Scrape Disable Comments Documentation
 
 on:
   schedule:
-    - cron: '0 15 * * 0'
+    - cron: '10 15 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Disable Comments scraper
-        run: node scraper.js --slug=disable-comments --mode=html-scrape --url=https://wordpress.org/plugins/disable-comments/ --name="Disable Comments"
+        run: bash scripts/run-scrape.sh --slug=disable-comments --mode=html-scrape --url=https://wordpress.org/plugins/disable-comments/ --name="Disable Comments"
 
       - name: Check for changes
         id: changes

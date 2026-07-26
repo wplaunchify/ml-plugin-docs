@@ -2,7 +2,7 @@ name: Scrape Ninja Tables Easy Data Table Builder Documentation
 
 on:
   schedule:
-    - cron: '0 17 * * 0'
+    - cron: '10 3 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Ninja Tables Easy Data Table Builder scraper
-        run: node scraper.js --slug=ninja-tables-easy-data-table-builder --mode=wp-api --url=https://wpmanageninja.com/docs/ninja-tables/ --post-type=docs --name="Ninja Tables – Easy Data Table Builder"
+        run: bash scripts/run-scrape.sh --slug=ninja-tables-easy-data-table-builder --mode=wp-api --url=https://wpmanageninja.com/docs/ninja-tables/ --post-type=docs --name="Ninja Tables – Easy Data Table Builder"
 
       - name: Check for changes
         id: changes

@@ -2,7 +2,7 @@ name: Scrape Searchwp Documentation
 
 on:
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '40 5 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Searchwp scraper
-        run: node scraper.js --slug=searchwp --mode=wp-api --url=https://searchwp.com --post-type=kb4 --name="SearchWP"
+        run: bash scripts/run-scrape.sh --slug=searchwp --mode=wp-api --url=https://searchwp.com --post-type=kb4 --name="SearchWP"
 
       - name: Check for changes
         id: changes

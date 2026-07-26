@@ -2,7 +2,7 @@ name: Scrape Fooevents Multi Day Documentation
 
 on:
   schedule:
-    - cron: '0 3 * * 0'
+    - cron: '10 16 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fooevents Multi Day scraper
-        run: node scraper.js --slug=fooevents-multi-day --mode=html-scrape --url=https://www.fooevents.com --name="FooEvents Multi-Day"
+        run: bash scripts/run-scrape.sh --slug=fooevents-multi-day --mode=html-scrape --url=https://www.fooevents.com --name="FooEvents Multi-Day"
 
       - name: Check for changes
         id: changes

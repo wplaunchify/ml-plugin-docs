@@ -2,7 +2,7 @@ name: Scrape Fluent Support Pro Documentation
 
 on:
   schedule:
-    - cron: '0 17 * * 0'
+    - cron: '0 2 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluent Support Pro scraper
-        run: node scraper.js --slug=fluent-support-pro --mode=wp-api --url=https://fluentsupport.com --post-type=docs --taxonomy=doc_category --name="Fluent Support Pro"
+        run: bash scripts/run-scrape.sh --slug=fluent-support-pro --mode=wp-api --url=https://fluentsupport.com --post-type=docs --taxonomy=doc_category --name="Fluent Support Pro"
 
       - name: Check for changes
         id: changes

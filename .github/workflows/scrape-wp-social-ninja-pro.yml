@@ -2,7 +2,7 @@ name: Scrape Wp Social Ninja Pro Documentation
 
 on:
   schedule:
-    - cron: '0 18 * * 0'
+    - cron: '20 3 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Wp Social Ninja Pro scraper
-        run: node scraper.js --slug=wp-social-ninja-pro --mode=sitemap --url=https://docs.wpsocialninja.com/guide/ --selector=.vp-doc --name="WP Social Ninja Pro"
+        run: bash scripts/run-scrape.sh --slug=wp-social-ninja-pro --mode=sitemap --url=https://docs.wpsocialninja.com/guide/ --selector=.vp-doc --name="WP Social Ninja Pro"
 
       - name: Check for changes
         id: changes

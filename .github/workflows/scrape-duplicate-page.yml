@@ -2,7 +2,7 @@ name: Scrape Duplicate Page Documentation
 
 on:
   schedule:
-    - cron: '0 15 * * 0'
+    - cron: '30 16 * * 0'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Duplicate Page scraper
-        run: node scraper.js --slug=duplicate-page --mode=html-scrape --url=https://wordpress.org/plugins/duplicate-page/ --name="Duplicate Page"
+        run: bash scripts/run-scrape.sh --slug=duplicate-page --mode=html-scrape --url=https://wordpress.org/plugins/duplicate-page/ --name="Duplicate Page"
 
       - name: Check for changes
         id: changes
