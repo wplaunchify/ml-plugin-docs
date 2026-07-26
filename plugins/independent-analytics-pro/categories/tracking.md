@@ -16,7 +16,7 @@ If you would prefer to require your visitors to give consent before the Independ
 
 After setting up your consent banner with Complianz, all you have to do is visit the **Integrations** menu, click on the **Plugins** menu in the left sidebar, and then enable the Independent Analytics integration there.
 
-![Complianze integration](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:513/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/complianze-integration.png)
+![Complianze integration](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:513/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/complianze-integration.png)
 
 Once you save your changes, the Independent Analytics plugin will not run its tracking script until your visitors have explicitly agreed to your policy in the consent pop-up.
 
@@ -47,7 +47,7 @@ If your ISP rotates your IP address every day, then that might not be the best s
 
 All organic traffic from Facebook will show up as the **Facebook** referrer with a **Social** referrer type. Traffic from visitors clicking on paid ads will be listed as **Facebook Ads** with an **Ad** referrer type.
 
-![Facebook Ads referrer](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:646/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/05/facebook-ads-referrer.png)
+![Facebook Ads referrer](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:646/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/05/facebook-ads-referrer.png)
 
 This lets you easily compare how much traffic you get from your regular posts versus your paid ads. With Independent Analytics Pro, you can also compare [form submissions](https://independentwp.com/features/form-tracking/) and [eCommerce sales](https://independentwp.com/features/ecommerce-analytics) from free vs. paid Facebook traffic.
 
@@ -64,7 +64,7 @@ If you’d like to see how much traffic you get from individual ads, this can be
 
 Independent Analytics Pro includes a dedicated campaign builder for creating these URLs and a [Campaigns report](https://independentwp.com/features/campaigns/) where you can review stats for each ad.
 
-![WooCommerce sales data in the Campaigns report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:461/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/campaigns-woocommerce-data.png)
+![WooCommerce sales data in the Campaigns report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:461/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/campaigns-woocommerce-data.png)
 
 ---
 
@@ -80,7 +80,7 @@ However, there is a way to win back most of this data with the [Campaigns](https
 
 When sending an email to your list, you can include [campaign parameters](https://independentwp.com/knowledgebase/campaigns/campaign-builder/) in each URL linking to your website. When a visitor clicks on one of these links, IA Pro will be able to record their visit in the Campaigns report. Using the UTM parameters, you can then see exactly how many visitors you’ve gotten from each individual email you’ve sent.
 
-![Email campaign traffic](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/12/email-campaigns.png)
+![Email campaign traffic](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/12/email-campaigns.png)
 
 These visitors will still be reported as coming from the **Direct** referrer in the Referrers report, but this way, you’ll be able to get accurate visitor counts for your email broadcasts in the [Campaigns](https://independentwp.com/features/campaigns/) report.
 
@@ -92,7 +92,7 @@ These visitors will still be reported as coming from the **Direct** referrer in 
 
 If a visitor clicks on your ad in a Google results page, the referrer will be recorded as **Google Ads**. If they click on an ad displayed on another site through Google’s ad network, the visit will be recorded as **Google Display Network**.
 
-![Google ad traffic](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:537/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/06/google-ad-traffic.png)
+![Google ad traffic](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:537/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/06/google-ad-traffic.png)
 
 This makes it easy to separate your paid Google traffic from your organic Google traffic.
 
@@ -104,7 +104,7 @@ If you’d like to see the performance of individual ads, you can do that with t
 
 The [Campaign Builder](https://independentwp.com/knowledgebase/campaigns/campaign-builder/) allows you to create links with UTM parameters and use them in your ads. When someone clicks on one of these links, you’ll see the visit appear in the Campaigns report.
 
-![WooCommerce sales data in the Campaigns report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:461/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/campaigns-woocommerce-data.png)
+![WooCommerce sales data in the Campaigns report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:461/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/campaigns-woocommerce-data.png)
 
 The benefit is that you can see exactly how many visitors you get from each link. Even better, if you are [using WooCommerce](https://independentwp.com/features/ecommerce-analytics) or if you’re [tracking form submissions](https://independentwp.com/features/form-tracking/), you can see how many conversions you get from each ad.
 
@@ -136,13 +136,13 @@ This is simple to configure with the user role blocking feature in the settings 
 
 Start by visiting the **Settings** menu and locating the **Ignore by User Role** section.
 
-![Block by User Role form](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:529/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/block-by-user-role.png)
+![Block by User Role form](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:529/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/block-by-user-role.png)
 
 You will see the Administrator role blocked by default. If you’d like to track visits from administrators, click the **Remove** button and then click **Save User Roles**.
 
 To ignore activity from additional user roles, use the dropdown to select a user role and then click the **Add** button.
 
-![Blocking a new user role](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:592/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/blocked-user-role.png)
+![Blocking a new user role](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:592/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/blocked-user-role.png)
 
 Lastly, click the **Save User Roles** button to finalize your changes.
 
@@ -182,7 +182,7 @@ First, you can install a plugin like [Disable REST API](https://wordpress.org/pl
 
 Once you activate the Disable REST API plugin, you’ll find a new menu at **Settings >** **Disable REST API**. In this menu, you can click on the **/iawp** route to enable it, and then save your changes.
 
-![Enable rest route](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:672/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/enable-rest-route.png)“iawp” stands for “Independent Analytics WordPress”
+![Enable rest route](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:672/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/enable-rest-route.png)“iawp” stands for “Independent Analytics WordPress”
 
 This will ensure that the **/iawp** route can be triggered by your visitors while locking down all other routes.
 
@@ -218,17 +218,17 @@ Devices with IP addresses that have been blocked can still access the site and u
 
 To block an IP address from being recorded, start by visiting your settings page and locate the **Ignore IP Addresses** section.
 
-![Block IP address form](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:591/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/block-ips-form.png)
+![Block IP address form](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:591/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/block-ips-form.png)
 
 Right away, you’ll notice the form is showing you that your current IP address is not blocked. It’s always a good idea to block your own IP so that your activity on the site doesn’t show up in your analytics.
 
 To add your IP, simply click the **Block this IP** button next to the IP address, and it will be added to the list of ignored IPs.
 
-![Unsaved IP address](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:666/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/blocked-ips.png)
+![Unsaved IP address](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:666/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/blocked-ips.png)
 
 Lastly, click the **Save IP Addresses** button to finalize your changes. The notice will now confirm that your IP address is blocked.
 
-![IP blocking form](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:609/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/block-ip.png)
+![IP blocking form](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:609/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/block-ip.png)
 
 It’s worth noting that the IP address comes from your router and not your device, so blocking your IP while at home will prevent traffic from all of your devices from being recorded in your analytics. Likewise, it is a good idea to also block your IP at the office or other places you frequently work from.
 
@@ -240,7 +240,7 @@ IP address blocking works for both IPv4 and IPv6.
 
 Independent Analytics also supports blocking dynamic IP addresses using wildcards.
 
-![Blocking IP addresses with wildcards](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:619/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/11/blocking-ip-addresses-wildcards.png)
+![Blocking IP addresses with wildcards](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:619/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/11/blocking-ip-addresses-wildcards.png)
 
 A wildcard (*) will allow any number to take its place. For example, the IP address 
 ```
@@ -267,7 +267,7 @@ Please use wildcards carefully, as they have the power to unintentionally block 
 
 Independent Analytics also supports CIDR notation for blocking ranges of IP addresses, which may be preferable to using the wildcard syntax.
 
-![Example of an ignored IP address using CIDR notation](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:615/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/ip-address-cidr-notation.png)
+![Example of an ignored IP address using CIDR notation](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:615/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/ip-address-cidr-notation.png)
 
 ---
 
@@ -299,7 +299,7 @@ This is the right setting for most sites, but if you are using WooCommerce or a 
 
 To enable tracking for logged-in visitors, check the **Track logged-in users**box in the **Settings** menu and click the **Save Settings** button.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:877/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/track-logged-in-users.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:877/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/track-logged-in-users.png)
 
 Once you’ve enabled this setting, all activity from logged-in visitors will be counted.
 

@@ -10,19 +10,19 @@
 
 The Independent Analytics for [MainWP extension](https://independentwp.com/features/mainwp-extension/) adds a new widget to the Overview menu where you can quickly toggle between stats for each of your websites.
 
-![MainWP extension widget](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:584/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/mainwp-extension.png)Use the dropdown to view stats for any of your connected sites
+![MainWP extension widget](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:584/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/mainwp-extension.png)Use the dropdown to view stats for any of your connected sites
 
 The first step is to install the extension on your MainWP dashboard site. You can search for it by name (“Independent Analytics for MainWP”) in the **Plugins > Add New** menu or download it from the [wordpress.org page here](https://wordpress.org/plugins/independent-analytics-for-mainwp/).
 
 Once installed and activated, the next step is to visit the Overview menu and click the **Sync Sites** button in the toolbar.
 
-![Sync sites button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:625/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/sync-sites.png)
+![Sync sites button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:625/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/sync-sites.png)
 
 Once this is done, refresh the page, and you will see the Independent Analytics widget.
 
 If you visit a child site in the MainWP dashboard, you will see a nearly identical widget there as well:
 
-![MainWP extension for single site](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:654/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/mainwp-extension-single-site.png)
+![MainWP extension for single site](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:654/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/mainwp-extension-single-site.png)
 
 The only difference is that it doesn’t include the dropdown to view stats for other websites.
 
@@ -66,7 +66,7 @@ If you have guest authors or columnists on your site, you may want to let them s
 
 Visit the **Analytics > Settings** menu and locate the **User Permissions** section. For any user role you want to give analytics access to, you can select the **View analytics for authored content** option.
 
-![Author analytics access](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:786/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/author-analytics-access.png)Giving contributors access to their post analytics
+![Author analytics access](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:786/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/author-analytics-access.png)Giving contributors access to their post analytics
 
 As an example, if you give Contributors the ability to view analytics for their authored content, they can log into the site and see the stats for their posts only. You may see all 1,000 published posts as the admin, but they would only see the 5 articles they’ve published.
 
@@ -84,17 +84,17 @@ The chart plots your metrics over time, allowing you to quickly spot trends.
 
 By default, it will display your [Visitors](https://independentwp.com/knowledgebase/data/what-is-a-visitor/) and [Views](https://independentwp.com/knowledgebase/data/what-is-a-view/):
 
-![Chart traffic cycles](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:356/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/chart-traffic-cycles.png)
+![Chart traffic cycles](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:356/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/chart-traffic-cycles.png)
 
 If you click on the first dropdown, you’ll see that you can display any of your site’s metrics:
 
-![Selecting a chart metric](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:611/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/06/chart-selecting-metric.png)
+![Selecting a chart metric](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:611/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/06/chart-selecting-metric.png)
 
 Pro users can also select metrics from WooCommerce and forms.
 
 If you select the second dropdown, you’ll have access to all the same metrics, plus the option to display nothing at all, allowing you to view just one metric in the chart.
 
-![Bounce Rate displayed in the chart](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:357/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/06/chart-bounce-rate.png)The axis on the left corresponds to the first metric and the axis on the right to the second.
+![Bounce Rate displayed in the chart](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:357/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/06/chart-bounce-rate.png)The axis on the left corresponds to the first metric and the axis on the right to the second.
 
 Lastly, if you [save the report](https://independentwp.com/knowledgebase/dashboard/save-reports-revisit-later/), your changes to the chart will be saved as well.
 
@@ -104,15 +104,15 @@ When you first view the analytics dashboard, it displays data from the last 30 d
 
 However, if you change the date range, the chart interval will automatically adapt. For instance, if you change the date range to Today, the chart will switch to an hourly interval:
 
-![Hourly chart data](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:494/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/07/hourly-chart-data.png)
+![Hourly chart data](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:494/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/07/hourly-chart-data.png)
 
 If you switch to a date range with more than 90 days, the chart will switch to a monthly interval:
 
-![Monthly chart data](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:489/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/07/monthly-chart-data.png)
+![Monthly chart data](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:489/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/07/monthly-chart-data.png)
 
 While the chart changes its interval automatically, you can also edit it manually with the interval select:
 
-![Chart interval select](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:768/h:626/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/07/chart-interval-select.png)
+![Chart interval select](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:768/h:626/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/07/chart-interval-select.png)
 
 You can select between the following four intervals:
 
@@ -131,7 +131,7 @@ You can choose any of these intervals manually, regardless of the current date r
 
 When you install Independent Analytics, you’ll find a new column added to the Posts menu called “Views,” and it looks like this:
 
-![Views column in Posts menu](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:496/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/posts-menu-views-column.png)
+![Views column in Posts menu](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:496/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/posts-menu-views-column.png)
 
 The Views column also appears in the Pages menu and custom post type menus.
 
@@ -139,19 +139,19 @@ This gives you a convenient way of checking on the popularity of your latest pos
 
 If you click on the **Views** column, you can also sort the posts by most-to-least views and least-to-most views.
 
-![Posts sorted by views](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:569/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/posts-sorted-by-views.png)
+![Posts sorted by views](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:569/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/posts-sorted-by-views.png)
 
 ## How to remove the Views column
 
 If you’d like to hide the Views column in one of your menus, you can click on the **Screen Options** tab at the top of the page and then uncheck the **Views (Independent Analytics)** checkbox.
 
-![Hide Views column](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:553/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/hide-views-column.png)
+![Hide Views column](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:553/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/hide-views-column.png)
 
 If you’d prefer to remove the Views column from all menus, there’s a better way. Visit the **Analytics > Settings** menu and locate the setting called **Views column**.
 
 Then, check the box to disable the column and click the **Save settings** button to save your changes.
 
-![Disable Views column in Posts menu](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:496/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/disable-views-column.png)
+![Disable Views column in Posts menu](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:496/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/disable-views-column.png)
 
 ## A note about duplicating posts
 
@@ -174,7 +174,7 @@ Any report in Independent Analytics can be exported to PDF in a few clicks.
 
 Start by clicking on the **Download Report** link in the toolbar. Then, click on the **Download PDF** button to begin the download. It will take a few seconds, and then the PDF will be generated and downloaded.
 
-![Download options](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:679/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/02/download-options.png)
+![Download options](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:679/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/02/download-options.png)
 
 The PDF will include the exact same information that is visible in the report. For instance, if you enable a new table column or change the date, that will be reflected in the PDF report.
 
@@ -190,19 +190,19 @@ You can upload PDFs to your Media Library to make them accessible on your site. 
 
 To record analytics for PDF visits, you can install the [PDF Viewer plugin](https://wordpress.org/plugins/pdf-viewer-by-themencode/) by ThemeNcode.
 
-![Pdf viewer plugin](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:546/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/pdf-viewer-plugin.png)
+![Pdf viewer plugin](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:546/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/pdf-viewer-plugin.png)
 
 PDF tracking also works with the paid version of this plugin, called [TNC Flipbook](https://codecanyon.net/item/pdf-viewer-for-wordpress/8182815).
 
 Instead of relying on the browser’s PDF viewer, this plugin creates its own viewer that runs in WordPress.
 
-![Pdf viewer example](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:736/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/pdf-viewer-example.png)
+![Pdf viewer example](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:736/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/pdf-viewer-example.png)
 
 Since WordPress gets loaded, this enables Independent Analytics to track the views.
 
 Using this plugin, visits to your PDFs will show up automatically in the Pages report.
 
-![Pdf viewer data row](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:194/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/pdf-viewer-data-row.png)
+![Pdf viewer data row](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:194/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/pdf-viewer-data-row.png)
 
 If there is another PDF WordPress plugin you’d prefer to use, please [let us know about it](https://independentwp.com/contact/) so we can add an integration.
 
@@ -216,7 +216,7 @@ If you have multiple websites, you may want to reuse some of the same custom rep
 
 To begin, visit the Settings menu and locate the **Export Reports** section.
 
-![Export reports](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:790/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/export-reports.png)
+![Export reports](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:790/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/export-reports.png)
 
 From here, you can select any reports you want to export or click the **Select all reports** checkbox at the top to choose all of them. Once you’re happy with your selection, click the **Export Reports** button.
 
@@ -224,7 +224,7 @@ You’ll get a JSON file you can import into any other site.
 
 In the site where you’d like to import the reports, navigate to the Settings menu and locate the **Import Reports** section.
 
-![Import reports](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:233/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/import-reports.png)
+![Import reports](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:233/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/import-reports.png)
 
 Use the **Choose File** button to select the JSON file you downloaded, and then click **Import Reports**. The reports will be added to your site immediately.
 
@@ -240,11 +240,11 @@ Setting a default report is now easy in Independent Analytics version 2.0.
 
 Start by navigating to the report you’d like to make your default. Then, in the report title bar, click on the **Make default** button on the right side.
 
-![Make default button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/make-default-button.png)
+![Make default button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/make-default-button.png)
 
 The button will collapse, and then you’ll see a star icon show up next to the report in the sidebar.
 
-![Favorite report with star icon next to it](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/favorite-report.png)
+![Favorite report with star icon next to it](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/favorite-report.png)
 
 Now, whenever you click on the Analytics menu item in the WP admin, you’ll be redirected to this report by default.
 
@@ -262,17 +262,17 @@ There are two ways to create more space to view your analytics.
 
 For starters, you can click the **Collapse sidebar** button at the top of the sidebar.
 
-![Collapse sidebar](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/collapse-sidebar.png)
+![Collapse sidebar](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/collapse-sidebar.png)
 
 This will provide a lot more room for you to view your data.
 
-![Sidebar collapsed](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:619/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/sidebar-collapsed.png)
+![Sidebar collapsed](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:619/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/sidebar-collapsed.png)
 
 The sidebar’s collapsed state is saved, so you don’t have to collapse it again. This is also saved per user, so different people on your site can maintain their own sidebar preferences.
 
 Secondly, WordPress includes a **Collapse menu** button that works the same way.
 
-![Collapse menu button in WP sidebar](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/collapse-wp-menu.png)
+![Collapse menu button in WP sidebar](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/collapse-wp-menu.png)
 
 Collapsing either sidebar (or both) will create much more room for you to view your data.
 
@@ -288,11 +288,11 @@ And in case you’re new to web analytics, a [referrer](https://independentwp.co
 
 You can access the Referrers report via the **Referrers** report link in the sidebar.
 
-![Referrers menu item](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/11/referrers-menu-item.png)
+![Referrers menu item](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/11/referrers-menu-item.png)
 
 Inside, you’ll find a report similar to the other ones in Independent Analytics, but with a list of your referrers in the data table.
 
-![Referrers report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:590/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/referrer-dashboard-1800.png)
+![Referrers report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:590/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/referrer-dashboard-1800.png)
 
 At a glance, you can see which sites are sending you the most visitors.
 
@@ -312,7 +312,7 @@ For instance, you can sort them by bounce rate to find those with the best and w
 
 To sort the referrers, simply click on any table heading.
 
-![Sort your data by any column](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:573/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/sort-data.png)
+![Sort your data by any column](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:573/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/sort-data.png)
 
 ## Filter for more insights
 
@@ -320,7 +320,7 @@ One more way to get the most out of the Referrers report is to use the filtering
 
 You can filter the report by any of the data table columns. For instance, you might want to filter the referrer name by “google” to see your search traffic trend in the chart. Or, you can filter by the Social [referrer type](https://independentwp.com/knowledgebase/data/what-is-a-referrer/) so you can compare traffic between social networks.
 
-![Filtering by referrer type](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:419/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/filter-referrers.png)
+![Filtering by referrer type](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:419/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/filter-referrers.png)
 
 Filters are a powerful tool for more in-depth analysis, so make sure to try it out.
 
@@ -330,11 +330,11 @@ You can [learn more about filtering here.](https://independentwp.com/knowledgeba
 
 One more way to customize this report is by changing the table grouping from **Referrer** to **Referrer Type**. You can do this with the dropdown option located above the table.
 
-![Referrer grouping option](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:456/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/referrer-grouping-option.png)
+![Referrer grouping option](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:456/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/referrer-grouping-option.png)
 
 Now, instead of seeing every referrer listed in the table, you will see their traffic consolidated into each of the referrer types.
 
-![Referrer type grouping](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:448/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/referrer-type-grouping.png)
+![Referrer type grouping](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:448/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/referrer-type-grouping.png)
 
 This is great for getting a high-level view of your site’s traffic. For instance, you can quickly tell if you are over-invested in one channel, like search engine traffic. Or, maybe you’ll be surprised by how much social traffic you get when all of it is combined into one table item.
 
@@ -346,29 +346,29 @@ This is great for getting a high-level view of your site’s traffic. For instan
 
 When you visit the Analytics dashboard, the Pages report will load by default.
 
-![Independent Analytics dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:780/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/free-cropped.png)
+![Independent Analytics dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:780/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/free-cropped.png)
 
 Like all other reports in Independent Analytics, the Pages report includes a toolbar, [Quick Stats](https://independentwp.com/knowledgebase/dashboard/quick-stats/), a chart, and a data table listing all your top pages.
 
 As you might expect from the Pages report, it lists every page on your site that’s received as list one view in the data table.
 
-![Pages report data table](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:437/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/pages-report-data-table.png)
+![Pages report data table](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:437/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/pages-report-data-table.png)
 
 The table includes a few metrics, like Visitors, Views, and Bounce Rate, and these columns are totally customizable.
 
 If you click on the **Edit Columns** button in the toolbar, you’ll see that there are many available metrics and properties to display.
 
-![Toggling the visibility of data columns](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:770/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/columns.png)
+![Toggling the visibility of data columns](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:770/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/columns.png)
 
 All you have to do is check (or uncheck) a box, and the table will update immediately. This allows you to view all sorts of data, like the authors and publication dates of your pages.
 
-![WordPress analytics](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:640/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/wordpress-integration-table.png)The table with author and post category columns enabled
+![WordPress analytics](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:640/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/wordpress-integration-table.png)The table with author and post category columns enabled
 
 ## Sort your data
 
 Another handy tool in the report is the ability to sort the data table. Simply click on any heading in the table to sort and reverse-sort by that column.
 
-![Sort your data by any column](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:573/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/sort-data.png)
+![Sort your data by any column](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:573/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/sort-data.png)
 
 Sorting makes it easy to find your pages with the highest bounce rates, organize pages by author, and more.
 
@@ -376,7 +376,7 @@ Sorting makes it easy to find your pages with the highest bounce rates, organize
 
 If you want to dig deeper into your data, you can also make use of the filters. The filtering system allows you to narrow down the results to match specific criteria, like only pages published by a certain author.
 
-![Multiple filters in use](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:436/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/filters.png)
+![Multiple filters in use](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:436/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/filters.png)
 
 You can also enter multiple filters at once for more specific insights.
 
@@ -409,15 +409,15 @@ The Devices report will show you the device types, browsers, and OSes used by yo
 
 To access the Devices report, start by clicking the **Devices** menu item.
 
-![Devices menu item](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/devices-menu-item.png)
+![Devices menu item](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/devices-menu-item.png)
 
 In this report, you’ll find the familiar [Quick Stats](https://independentwp.com/knowledgebase/dashboard/quick-stats/) featured in all the other reports, followed by the chart and data table.
 
-![Device data report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:692/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/device-data-report.png)
+![Device data report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:692/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/device-data-report.png)
 
 In the data table, you’ll see a list of the device types used to access your website, including metrics like the number of views and visitors.
 
-![Devices table](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/devices-table.png)
+![Devices table](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/devices-table.png)
 
 The main device types are desktop, mobile, and tablet, but there is also support for recognizing visitors using wearables, smart TVs, gaming consoles, and even cars.
 
@@ -431,11 +431,11 @@ The Device report can also show you data for browsers and OSes.
 
 In the toolbar, click the **Group by Device Type** button, and you’ll see other ways to display the report.
 
-![Changing the device grouping to Browser](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:736/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/change-device-grouping-1024x736.png)
+![Changing the device grouping to Browser](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:736/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/change-device-grouping-1024x736.png)
 
 If you select **Browser** and click **Apply**, the data table will update to display metrics for browsers instead of device types.
 
-![Browser data in Devices report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/browsers.png)
+![Browser data in Devices report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/browsers.png)
 
 This works the same way when grouping by OS.
 
@@ -467,13 +467,13 @@ To access your analytics on mobile, just login to your site and visit the Analyt
 
 Here’s what it will look like:
 
-![Mobile display](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:648/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/mobile-display.png)
+![Mobile display](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:648/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/mobile-display.png)
 
 For the most part, every feature works the same, but there are a couple of minor differences.
 
 The data table will only fit 2-3 columns on the screen at once, but you can scroll both horizontally and vertically to navigate through the table. The left-most column will stay fixed in place so you always know which page the metrics are for.
 
-![Mobile data table](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:628/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/mobile-data-table.png)
+![Mobile data table](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:628/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/mobile-data-table.png)
 
 The one other difference is that the campaign builder in the Pro version is not currently accessible on mobile. This is something we would like to change in a future update.
 
@@ -487,13 +487,13 @@ We don’t have plans to create an iPhone or Android app at this time, but that 
 
 When viewing a post or a page on your site, you’ll see a view count in the Admin Bar.
 
-![Admin bar stats](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:542/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/admin-bar-stats.png)
+![Admin bar stats](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:542/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/admin-bar-stats.png)
 
 This tells you the number of views the current page has had, and if you hover your cursor over it, you’ll see the number of views from yesterday and the last thirty days as well.
 
 The Admin Bar stats also appear in the post editor:
 
-![Admin bar stats editor](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:351/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/admin-bar-stats-editor.png)
+![Admin bar stats editor](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:351/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/admin-bar-stats-editor.png)
 
 ## I don’t see the admin bar in the post editor
 
@@ -501,7 +501,7 @@ If you don’t see the admin bar in the post editor, this means your editor is i
 
 You can turn off Fullscreen mode by clicking the three dots icon in the top-right of the editor and then clicking on the **Fullscreen mode** option.
 
-![Disable fullscreen mode](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:858/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/disable-fullscreen-mode.png)
+![Disable fullscreen mode](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:858/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/disable-fullscreen-mode.png)
 
 The admin bar will appear instantly after making this change.
 
@@ -509,7 +509,7 @@ The admin bar will appear instantly after making this change.
 
 If you’d prefer not to see the Admin Bar stats, you can disable them via the Settings menu.
 
-![Disable admin bar stats](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:875/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/disable-admin-bar-stats.png)
+![Disable admin bar stats](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:875/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/disable-admin-bar-stats.png)
 
 Check the box and click the **Save Settings** button to disable the stats from appearing.
 
@@ -533,7 +533,7 @@ You can allow other user roles to view the analytics and edit the settings by fo
 
 Visit the **Settings** menu and locate the **User Permissions** section.
 
-![User permissions form](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:795/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/user-permissions.png)
+![User permissions form](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:795/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/user-permissions.png)
 
 Here, you’ll see all of the site’s user roles, each with a dropdown set to **No access** by default. If you want to give a user role access to the analytics, you can click on the dropdown and select one of the other available permissions.
 
@@ -554,11 +554,11 @@ Admins always have the ability to view the analytics and edit the settings, and 
 
 You also have the option to enable white-labeling for any non-admins that view the analytics.
 
-![White-labeling the analytics dashboard for non-admins](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:791/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/white-label-analytics.png)
+![White-labeling the analytics dashboard for non-admins](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:791/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/white-label-analytics.png)
 
 This will hide all Independent Analytics branding as well as links to the knowledge base, support forum, and PRO version upgrade.
 
-![White labeled dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:762/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/white-labeled-dashboard.png)
+![White labeled dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:762/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/white-labeled-dashboard.png)
 
 ---
 
@@ -570,13 +570,13 @@ Version 2.0 of Independent Analytics introduces a way to create and save your ow
 
 In the sidebar, you’ll see a few **parent reports**, such as Pages and Referrers.
 
-![Parent reports](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:985/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/parent-reports.png)
+![Parent reports](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:985/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/parent-reports.png)
 
 These reports cannot be renamed, and changes to them cannot be saved.
 
 Below the parent reports are the **custom reports**, highlighted here:
 
-![Custom reports](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:985/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/custom-reports.png)
+![Custom reports](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:985/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/custom-reports.png)
 
 These reports can be renamed, edited, and deleted. You can also create as many new custom reports as you want.
 
@@ -586,27 +586,27 @@ Let’s start by looking at how you can create a new report from scratch.
 
 Each parent report includes a plus button next to it that you can click to create a new report.
 
-![Add new report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/add-new-report.png)
+![Add new report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/add-new-report.png)
 
 Let’s say you want to save a new report that always displays country stats for today. You would start by clicking the plus button next to the **Geographic** report.
 
 This will create and redirect you to a custom report called “New Report.”
 
-![New report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/new-report.png)
+![New report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/new-report.png)
 
 To rename the report, click on its title at the top of the page. This will reveal a small popup where you can enter a new title and save it.
 
-![Renaming a report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:592/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/renaming-report.png)
+![Renaming a report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:592/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/renaming-report.png)
 
 Next, since you want to see data from today, you would open up the date picker and click the Today button.
 
-![Change date](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:783/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/change-date.png)
+![Change date](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:783/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/change-date.png)
 
 When saving reports, it’s recommended that you always use one of the ten buttons in the date picker, such as **Today** and **Last 7 Days**. These apply a relative date so that no matter when you view this report, it always displays recent data, such as from today. If you click on specific days in the calendar, those same days will be reported in the future.
 
 Once you apply your date, you’ll see a warning icon at the top of the page.
 
-![Unsaved changes warning](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:495/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/unsaved-changes-warning.png)
+![Unsaved changes warning](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:495/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/unsaved-changes-warning.png)
 
 This lets you know that you have unsaved changes, which will be lost if you leave the page. You can click the **Save** button to finalize your changes.
 
@@ -622,11 +622,11 @@ For instance, imagine you’re viewing the Blog Posts report when you decide to 
 
 You can accomplish this with the **Save As** button. All you have to do is click the button, enter a title for the new report, and then click the **Save as** button in the popup.
 
-![Save as report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:530/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/save-as-report.png)
+![Save as report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:530/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/save-as-report.png)
 
 The original report will be left unedited, and you’ll find your new report listed in the sidebar.
 
-![Save As results](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/save-as-results.png)
+![Save As results](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/save-as-results.png)
 
 To summarize, if you want to create a new report from scratch, use one of the plus buttons in the sidebar. If you are editing a report and realize it’d make a good new report, use the **Save As** button.
 
@@ -648,17 +648,17 @@ Reordering your custom reports is simple.
 
 All you have to do is click on a report title and drag and drop it into its new location.
 
-![Reorder custom reports](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/reorder-custom-reports.gif)
+![Reorder custom reports](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/reorder-custom-reports.gif)
 
 ## How to set a default report
 
 When you visit the Analytics menu, you’ll be taken to the Pages report by default. If you want to change this, start by navigating to the report you want to make the default. Then, click the **Make default** button in the report header.
 
-![Make default button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/make-default-button.png)
+![Make default button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/make-default-button.png)
 
 You’ll see a star show up in the sidebar next to the report’s name like this:
 
-![Favorite report with star icon next to it](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/favorite-report.png)
+![Favorite report with star icon next to it](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/favorite-report.png)
 
 Now, whenever you visit the Analytics menu, you’ll be redirected to this default report.
 
@@ -668,11 +668,11 @@ If you’d like to delete a report, start by navigating to it via the sidebar.
 
 Once viewing the report, click on the trashcan button at the top right of the page.
 
-![Delete button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/delete-button.png)
+![Delete button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/delete-button.png)
 
 This will reveal a small popup asking for you to confirm the deletion. Click the **Delete report** button and the report will be removed from your site.
 
-![Delete report modal](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/delete-report-modal.png)
+![Delete report modal](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/delete-report-modal.png)
 
 ---
 
@@ -682,7 +682,7 @@ This will reveal a small popup asking for you to confirm the deletion. Click the
 
 Independent Analytics adds a widget to your admin dashboard with a small chart and your total views and visitors from the last 30 days.
 
-![Analytics dashboard widget](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:915/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/dashboard-widget.png)You can click the chart labels to toggle the visibility of their lines
+![Analytics dashboard widget](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:915/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/10/dashboard-widget.png)You can click the chart labels to toggle the visibility of their lines
 
 Exactly where it displays in your dashboard depends on how much you’ve customized your widgets already and what widgets other plugins have added.
 
@@ -692,7 +692,7 @@ However, it is simple to reposition it in your dashboard or hide it entirely.
 
 If you hover your cursor over the heading of the widget, you’ll see it change into the drag-and-drop icon. Then you can click and drag to move it into a new position.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:507/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/drag-drop-widget.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:507/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/drag-drop-widget.png)
 
 You’ll see 1-4 columns depending on the width of your screen, and you can drop it above/below any widget in each column.
 
@@ -706,7 +706,7 @@ If you’d prefer not to display the dashboard widget, you can hide it.
 
 Visit the Settings, and near the top, locate the **Dashboard widget** setting.
 
-![Disable dashboard widget](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/disable-dashboard-widget.png)
+![Disable dashboard widget](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/disable-dashboard-widget.png)
 
 Click the **Disable dashboard widget** checkbox and then click the **Save Settings** button.
 
@@ -718,7 +718,7 @@ Click the **Disable dashboard widget** checkbox and then click the **Save Settin
 
 When enabled, the view counter will show up after the content of your posts. It looks like this:
 
-![View counter example](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/view-counter-example.png)
+![View counter example](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/view-counter-example.png)
 
 This serves as a form of social proof to let visitors know how many others are reading your content. It can also be helpful if you sell advertising services and want potential clients to see what kind of reach they can expect.
 
@@ -730,11 +730,11 @@ Enabling the view counter is very easy.
 
 Start by visiting the **Settings** menu and scroll down to the **Public View Counter** section.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:581/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/public-view-counter-settings.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:581/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/public-view-counter-settings.png)
 
 To enable the counter, all you have to do is check the first box and click the **Save settings** button.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:331/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/enable-view-counter.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:331/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/enable-view-counter.png)
 
 Once this is complete, the view counter will show up after the content of all your posts, styled the same way as pictured in the screenshot at the beginning of this tutorial.
 
@@ -742,7 +742,7 @@ Once this is complete, the view counter will show up after the content of all yo
 
 By default, the view counter only displays on your posts, but you can quickly enable it on any of your page types.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:192/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/view-counter-post-types.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:192/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/view-counter-post-types.png)
 
 For example, if you check the Pages box, it will show up after the content of every page on your site. If you have any custom post types, they’ll display here as well.
 
@@ -750,19 +750,19 @@ For example, if you check the Pages box, it will show up after the content of ev
 
 The view counter displays after the content, but you can also display it before the content or both before and after.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/counter-location.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/counter-location.png)
 
 ### Choose the date range
 
 By default, the view counter shows the total number of views the page has gotten. However, you can limit this to a shorter range so that it will only count views from today, the last 30 days, last month, etc.
 
-![Date range count views](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/date-range-count-views.png)
+![Date range count views](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/date-range-count-views.png)
 
 ### Exclude individual pages
 
 You can remove the counter from an individual post/page by entering its ID into this input:
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:182/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/counter-exlude-pages.png)This would hide the counter on a page with the ID 258
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:182/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/counter-exlude-pages.png)This would hide the counter on a page with the ID 258
 
 For example, you could show the view counter on all of your pages except for your homepage by enabling the Pages post type and then entering the homepage’s ID here.
 
@@ -774,7 +774,7 @@ If you have an established site and switch to using Independent Analytics for yo
 
 In this case, you can make use of the **Minimum views required** setting.
 
-![Minimum views required setting](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/minimum-views-required.png)
+![Minimum views required setting](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/minimum-views-required.png)
 
 With this option, you can choose the minimum number of views a post needs to have to show the view counter. For instance, let’s say you have a post with only 12 views, and you don’t want the view counter to show up until it has at least 100. You would set the **Minimum views required** field to “100,” and the view counter would immediately disappear on that post and only reappear once it’s been viewed 100 times.
 
@@ -782,23 +782,23 @@ With this option, you can choose the minimum number of views a post needs to hav
 
 If you want to change the text that appears before the count (Views:), you can do so via the label input. If you’d prefer not to show the small chart icon, that can be removed by unchecking the **Show the icon** box. You also have the option to hide the label completely by unchecking the **Show the label** checkbox.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:400/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/view-counter-label-icon.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:400/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/view-counter-label-icon.png)
 
 ## Make it private
 
 If you only want the view counter to show up for logged-in visitors of the site, you can make it private.
 
-![Make view counter private](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:230/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/make-view-counter-private.png)
+![Make view counter private](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:230/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/make-view-counter-private.png)
 
 ## Allow manual adjustment
 
 If you switched from another view counter plugin, you may want to make a manual adjustment to get credit for previous post views. To do that, you can enable this option.
 
-![Allow manual view counter adjustment](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:223/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/allow-manual-view-counter-adjustment.png)
+![Allow manual view counter adjustment](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:223/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/allow-manual-view-counter-adjustment.png)
 
 Then, in the post editor, you’ll see this new box where you can enter a manual adjustment.
 
-![View counter adjustment metabox](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/view-counter-adjustment-metabox.png)
+![View counter adjustment metabox](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/view-counter-adjustment-metabox.png)
 
 The value entered here will be added to whatever view count is recorded by Independent Analytics.
 
@@ -879,11 +879,11 @@ Independent Analytics includes a **Geographic** menu that shows which countries 
 
 You can reach this dashboard via the **Geographic** report link in the sidebar.
 
-![Geographic menu item](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/geographic-menu-item.png)
+![Geographic menu item](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/geographic-menu-item.png)
 
 In place of the regular chart, you’ll find a world map. It’s color-coded so that countries with more visitors are a darker shade of purple. You can hover your cursor over any country to see the number of visitors, views, and sessions.
 
-![World map interaction](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/geo-map-stats.png)
+![World map interaction](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/geo-map-stats.png)
 
 ## How to use the data table
 
@@ -891,11 +891,11 @@ Like other dashboards, the Geographic report also includes a data table with a r
 
 By default, the table groups data by country, so you can see a list of every country that sent you a visitor.
 
-![Grouped by country](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:373/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/grouped-by-country.png)The national flag is displayed to the left of each country too
+![Grouped by country](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:373/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/grouped-by-country.png)The national flag is displayed to the left of each country too
 
 If you want to see city-level data, you can do so by changing the grouping:
 
-![Grouping button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:565/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/grouping-button.png)
+![Grouping button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:565/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/06/grouping-button.png)
 
 This will update the table to list every city that sent you a visitor, including the subdivision/state it’s in.
 
@@ -911,7 +911,7 @@ However, you may want to view the cities from just one country, subdivision, or 
 
 Start by clicking the **Filter Rows** button in the toolbar. Next, select an operand, like **Country** or **City**, and then type in the name of the location you want to filter by.
 
-![Geo data filtered by country](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/filter-geo-data.png)
+![Geo data filtered by country](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/filter-geo-data.png)
 
 In my example, I’ve filtered the table so that only cities in Spain are displayed. With this filter applied, the Quick Stats, chart, and data table will all update to match the filtered data.
 
@@ -941,11 +941,11 @@ If you’d prefer the calendar to start on Monday or any other day, you can chan
 
 Start by clicking the **Settings** menu link in the header.
 
-![Settings menu item](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/settings-menu-item.png)
+![Settings menu item](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/settings-menu-item.png)
 
 Then, locate the **First day of week** setting and use the dropdown to select a new day.
 
-![Changing the calendar's first day of the week](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:884/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/change-first-day-of-week.png)
+![Changing the calendar's first day of the week](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:884/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/change-first-day-of-week.png)
 
 Once you’re happy with your changes, click the **Save settings** button to apply your new selection.
 
@@ -961,17 +961,17 @@ Independent Analytics displays in light mode by default, but can be switched to 
 
 To change the color scheme, start by visiting the **Settings** menu.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/settings-menu-item.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/settings-menu-item.png)
 
 In the Settings menu, the first option there is called **Color scheme** and set to **Light** by default. Use the dropdown to select between Light, Dark, or System.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:884/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/enable-dark-mode.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:884/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/enable-dark-mode.png)
 
 The **System** option syncs the color scheme with your computer. For example, if your OS is set to change between light and dark mode depending on the time of day, this setting will make Independent Analytics automatically match the OS.
 
 Here is a preview of how the analytics look using dark mode:
 
-![Dark Mode](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/dark-mode-dashboard.png)
+![Dark Mode](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/dark-mode-dashboard.png)
 
 ---
 
@@ -981,7 +981,7 @@ Here is a preview of how the analytics look using dark mode:
 
 The Quick Stats give you an overview of your site’s performance, and you can find them at the top of every report.
 
-![Quick Stats](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:723/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/quick-stats-1-e1700004281492.png)
+![Quick Stats](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:723/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/quick-stats-1-e1700004281492.png)
 
 By default, the Quick Stats display the following metrics:
 
@@ -1000,11 +1000,11 @@ When you first install Independent Analytics, there won’t be any data old enou
 
 If you’d like to change which stats are visible, you can click on the **Toggle Stats** button above the Quick Stats.
 
-![Toggle stats button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:645/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/05/toggle-stats-button.png)
+![Toggle stats button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:645/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/05/toggle-stats-button.png)
 
 In the modal, there is a checkbox for each of the stats. You can use these to hide/show whichever stats you’d like.
 
-![Quick Stats modal](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:628/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/05/quick-stats-modal.png)
+![Quick Stats modal](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:628/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/05/quick-stats-modal.png)
 
 If you [save the report](https://independentwp.com/knowledgebase/dashboard/save-reports-revisit-later/), your selections here will also be saved.
 
@@ -1012,7 +1012,7 @@ For Independent Analytics Pro users, there are also sections for eCommerce and F
 
 If you add a filter to the report, you’ll notice that the Quick Stats show two numbers each.
 
-![Page type filter applied](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:656/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/page-type-filter-applied.png)
+![Page type filter applied](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:656/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/page-type-filter-applied.png)
 
 The first number is for the filtered result. For instance, in the screenshot above, it’s showing that Post pages have gotten 1,814 visitors and 2,161 views in the last 30 days.
 
@@ -1028,31 +1028,31 @@ If you don’t have the zip file already, you can [click here to download it](ja
 
 If you downloaded the plugin from our site or WordPress.org, you can start the installation by visiting the **Plugins > Add New** menu.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/plugins-add-new.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/plugins-add-new.png)
 
 Then, click the **Upload plugin** button to reveal the upload form.
 
-![Upload Plugin button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:799/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/add-new-plugin.png)
+![Upload Plugin button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:799/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/add-new-plugin.png)
 
 In the upload form, use the **Choose file** button to select the **independent-analytics.zip** file and click the **Install Now** button.
 
 *If you only see an “independent-analytics” folder, then most likely Safari auto-unzipped the file. Alt-click the folder and select the “Compress” option to recreate the zip file.*
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:454/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/choose-install-plugin.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:454/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/choose-install-plugin.png)
 
 On the next screen, click the **Activate Plugin** button to activate it.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:540/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/activate-plugin.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:540/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/activate-plugin.png)
 
 You will be redirected to the dashboard page where you’ll see a data-sharing optin form.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:417/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/freemius-optin.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:417/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/freemius-optin.png)
 
 This shares anonymous data that helps us understand our users, but it’s entirely optional. You can read more about that here: [Why we use Freemius](/knowledgebase/your-data/why-we-use-freemius/).
 
 After choosing to opt-in to data sharing or not, you’ll be redirected to your analytics dashboard.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:756/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/dashboard.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:756/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/dashboard.png)
 
 You can logout of your site or open a private browser window and visit your site to record your first view.
 
@@ -1070,29 +1070,29 @@ Since Independent Analytics is available on the WordPress repository, the easies
 
 Start by visiting the **Plugins > Add New** menu.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/plugins-add-new.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/plugins-add-new.png)
 
 Then use the search bar at the right side of the screen to search for “Independent Analytics”:
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:432/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/plugins-search-bar.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:432/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/plugins-search-bar.png)
 
 It should be the first result that shows up. Click the **Install** button to begin the installation.
 
-![Install Now button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:476/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/install-now.png)
+![Install Now button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:476/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/install-now.png)
 
 The installation will take a few seconds, and then the button will change to read **Activate**. Click the **Activate** button to complete the installation.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:527/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/activate.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:527/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/activate.png)
 
 Once the installation is complete, you’ll see this opt-in form about data sharing:
 
-![Freemius optin](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:417/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/freemius-optin.png)
+![Freemius optin](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:417/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/freemius-optin.png)
 
 This is entirely optional and shares diagnostic data with us that helps us better understand our users ([learn more about this](/knowledgebase/your-data/why-we-use-freemius/)).
 
 After you select an option in the opt-in form, you’ll be redirected to your analytics dashboard.
 
-![New analytics dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:756/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/dashboard.png)
+![New analytics dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:756/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/dashboard.png)
 
 You’ll see a notice at the bottom requesting you clear your cache. This will ensure that Independent Analytics can track new visits and only needs to be completed once.
 
@@ -1112,11 +1112,11 @@ The data table includes a variety of columns with data for each page.
 
 To customize which columns are visible, scroll down to the table and then click the **Toggle Columns** button above it.
 
-![Edit Columns button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:449/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/edit-columns-button.png)
+![Edit Columns button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:449/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/edit-columns-button.png)
 
 Inside the modal, use the checkboxes to select which columns you want to show and hide.
 
-![Toggling the visibility of data columns](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:807/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/columns.png)
+![Toggling the visibility of data columns](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:807/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/columns.png)
 
 The data table updates instantly, so when you’re finished, just click on our outside of the **Toggle Columns** button again to hide the modal.
 
@@ -1130,11 +1130,11 @@ When you visit the analytics dashboard, it will show you data from the past 30 d
 
 To change the date range, start by clicking the date picker button in the toolbar.
 
-![Date picker button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/date-picker-button-1.png)
+![Date picker button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/date-picker-button-1.png)
 
 This will open up a calendar where you can select any two days to choose a date range. Additionally, there are buttons for pre-defined ranges, such as Today, Last 7 Days, and This Month. Clicking any of these buttons will automatically select the appropriate dates in the calendar.
 
-![Custom date picker](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:733/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/date-picker.png)
+![Custom date picker](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:733/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/date-picker.png)
 
 Once you’ve selected the dates you want, click the **Apply** button and the dashboard will reload with the new data. The Quick Stats, chart, and data table will all update to use data from this new range.
 
@@ -1148,7 +1148,7 @@ The **All Time** button will select a date range between the first day a view wa
 
 Each report sorts the table rows by the most-to-least [visitors](https://independentwp.com/knowledgebase/data/what-is-a-visitor/). You can click on any column heading to re-sort the table by that property.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:768/h:452/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/sort-by-views.png)Clicking Visitors will toggle the order from most to least visitors
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:768/h:452/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/sort-by-views.png)Clicking Visitors will toggle the order from most to least visitors
 
 On the first click, your data will be sorted by ascending values. For instance, the Title column will sort alphabetically (A-Z). The second click will sort the data by descending values (Z-A). Subsequent clicks will toggle between ascending and descending sorts.
 
@@ -1164,29 +1164,29 @@ The filtering system is an invaluable tool for digging deeper into your data.
 
 To filter your data, start by clicking the **Add Filter** button.
 
-![Filter rows button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:768/h:334/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/filter-rows-button-1.png)
+![Filter rows button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:768/h:334/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/filter-rows-button-1.png)
 
 This will open a modal that looks like this:
 
-![Filters modal](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:454/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/10/filters-modal.png)
+![Filters modal](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:454/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/10/filters-modal.png)
 
 In the modal, you’ll see an option to **Choose a column**. These columns correspond to the same ones available in the data table below. To continue, select the column you want to filter the report by.
 
-![Choose filter column](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:629/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/choose-filter-column.png)The filter includes all of the columns you see in the data table below.
+![Choose filter column](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:629/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/choose-filter-column.png)The filter includes all of the columns you see in the data table below.
 
 Once you’ve selected a column, you can choose an **operator** and an **operand**.
 
 For example, let’s say you want to filter the Pages report so that it only shows stats for your blog posts. You would choose the **Page Type** column, then select the **Is** operator and the **Post** operand.
 
-![Page type filter selected](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:397/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/page-type-filter-selected.png)
+![Page type filter selected](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:397/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/page-type-filter-selected.png)
 
 On the left side of the form, there is also an option to include or exclude pages that match your criteria. By default, it’s set to **Include**, but you could flip it to **Exclude** if you wanted to see the stats for all pages that aren’t blog posts.
 
-![Inclusive filter option](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/include-filter-option.png)
+![Inclusive filter option](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/include-filter-option.png)
 
 Once you’re happy with your changes, you can click the **Apply** button. The Quick Stats, chart, and data table will update to reflect the new filters.
 
-![Page type filter applied](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:656/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/page-type-filter-applied.png)
+![Page type filter applied](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:656/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/page-type-filter-applied.png)
 
 In the toolbar, you’ll see a label for the filter you have applied. You’ll also notice that the stats each show two values. The first is the filtered value, and the second is the unfiltered value. For example, you can see that the blog posts on the site have had 1,814 visitors, whereas the site as a whole has had 5,225 visitors.
 
@@ -1194,15 +1194,15 @@ In the toolbar, you’ll see a label for the filter you have applied. You’ll a
 
 The previous example included one condition that required all rows to belong to Posts. You can add more conditions to your filter by clicking the **Add another condition** button.
 
-![Add new filter condition](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/add-new-filter-condition.png)
+![Add new filter condition](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/add-new-filter-condition.png)
 
 By default, all of the conditions will be required. For example, if you add a filter saying that the page type is “post” and the number of views has to be greater than 400, then only posts with more than 400 views will be included.
 
-![Filtering by page type and views](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:459/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/filtering-posts-and-views.png)
+![Filtering by page type and views](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:459/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/filtering-posts-and-views.png)
 
 However, if you want to include pages that meet either of these conditions, you can switch the option at the top of the modal to **any**.
 
-![Filter by any matching conditions](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:764/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/filter-any-conditions.png)
+![Filter by any matching conditions](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:764/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/filter-any-conditions.png)
 
 Now, a page only has to match one of these conditions to be included. This can be useful in many ways, such as creating a report for a handful of pages matched by their title or URL.
 
@@ -1214,11 +1214,11 @@ And remember, the filters are available in every report, so you can use them to 
 
 If you want to undo the changes added by a filter, you can open it and click the **Reset** button at the bottom.
 
-![Reset filters button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:462/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/reset-filters-button.png)
+![Reset filters button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:462/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/reset-filters-button.png)
 
 If you’ve added multiple conditions and only want to remove one, you can click the delete button found to the right of the condition.
 
-![Remove filter](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/remove-filter.png)
+![Remove filter](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/remove-filter.png)
 
 If the condition has already been applied, the dashboard will refresh automatically to match your new filter settings.
 

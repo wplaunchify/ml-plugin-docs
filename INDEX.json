@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T08:49:27.844Z",
+  "last_updated": "2026-07-26T08:49:51.624Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -320,7 +320,7 @@
       "slug": "fluent-boards-pro",
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-07-26T08:47:51.524Z",
+      "last_scraped": "2026-07-26T08:47:51.521Z",
       "page_count": 42,
       "categories": [
         "boards",
@@ -1201,8 +1201,8 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-07-19T08:49:14.569Z",
-      "page_count": 190,
+      "last_scraped": "2026-07-26T08:49:49.610Z",
+      "page_count": 194,
       "categories": [
         "campaigns",
         "click-tracking",
@@ -2361,7 +2361,7 @@
       "slug": "learndash-lms-certificate-builder",
       "name": "LearnDash LMS - Certificate Builder",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-07-26T08:46:47.799Z",
+      "last_scraped": "2026-07-26T08:46:47.788Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
@@ -3753,7 +3753,7 @@
       "slug": "wp-fusion-logins-addon",
       "name": "WP Fusion - Logins Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-26T08:49:27.844Z",
+      "last_scraped": "2026-07-26T08:49:27.832Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",

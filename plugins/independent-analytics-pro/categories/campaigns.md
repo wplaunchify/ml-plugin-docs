@@ -167,7 +167,7 @@ With all the tracking tools available in Independent Analytics Pro, it can be tr
 
 Generally speaking, if you need to track clicks on a link on your website, you’ll want to use the [click-tracking](https://independentwp.com/knowledgebase/click-tracking/click-tracking/) feature. Alternatively, if you need to track clicks on a link on someone else’s website, you’ll want to use a [campaign URL](https://independentwp.com/knowledgebase/campaigns/campaigns-dashboard/).
 
-![Click tracking vs campaign tracking](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:805/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/click-tracking-vs-campaign-tracking.png)
+![Click tracking vs campaign tracking](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:805/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/click-tracking-vs-campaign-tracking.png)
 
 If you have a landing page on your site with a “Signup” button, you can track clicks on it by adding a new link pattern in the [Click Tracking Menu](https://independentwp.com/knowledgebase/click-tracking/click-tracking/). This will work whether the “Signup” button takes visitors to another page on your website or an external website.
 
@@ -185,13 +185,13 @@ Let’s imagine you share a campaign URL in a Facebook post. Someone clicks on t
 
 Here’s what that would look like in the Campaigns menu.
 
-![Campaign with one view](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:92/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/campaign-with-one-view.png)
+![Campaign with one view](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:92/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/campaign-with-one-view.png)
 
 Now, let’s imagine that instead of leaving your site, they browse a few products, add one to their cart, and complete a purchase before leaving.
 
 That same campaign would look like this instead:
 
-![Campaign with sale](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:93/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/campaign-with-sale.png)
+![Campaign with sale](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:93/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/campaign-with-sale.png)
 
 As you can see, this campaign is now responsible for 8 views and $99 in sales.
 
@@ -249,7 +249,7 @@ This URL tells us that the source is Twitter, the medium is social media, and th
 
 In the Campaigns dashboard, you’ll be able to see how many visitors click on this link:
 
-![Campaigns dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:765/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-table.png)
+![Campaigns dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:765/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-table.png)
 
 As you can see, Campaign URLs are extremely useful for tracking precisely where your traffic comes from, so you can evaluate the effectiveness of your marketing efforts.
 
@@ -281,7 +281,7 @@ For this reason, it’s easier and more reliable to use the Campaign Builder.
 
 To access the Campaign URL builder, hover your cursor over the Campaigns menu item and click the **Campaign Builder** link.
 
-![Campaign URL builder menu item](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:768/h:708/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-builder-link.png)
+![Campaign URL builder menu item](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:768/h:708/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-builder-link.png)
 
 You don’t have to create your campaign URLs with the Campaign Builder for them to be tracked. Campaign URLs that are created dynamically by email and ad platforms will be tracked too.
 
@@ -289,7 +289,7 @@ You don’t have to create your campaign URLs with the Campaign Builder for them
 
 Here’s what the Campaign Builder looks like:
 
-![Campaign URL Builder](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:718/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/campaign-url-builder.png)
+![Campaign URL Builder](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:718/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/campaign-url-builder.png)
 
 There are full descriptions of each field/parameter below.
 
@@ -297,7 +297,7 @@ To create a campaign, you’ll fill out the **Source**, **Medium**, and **Campai
 
 Once you’re ready, click the **Create Campaign URL** button, and you’ll see your new campaign show up immediately in the list of created campaigns below.
 
-![Recent campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:607/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/recent-campaigns.png)
+![Recent campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:607/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/recent-campaigns.png)
 
 ## Tip: keep your spelling the same
 
@@ -305,7 +305,7 @@ If you create a campaign link for Facebook and you enter “Social” into the M
 
 For instance, if you group your links by Medium, you will see a separate row for “Social” vs. “Social Media.” To help you avoid this, each campaign link has a **Copy to Form** button.
 
-![Copy to Form button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/copy-to-form-button.png)
+![Copy to Form button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/copy-to-form-button.png)
 
 If you click this button, it will refill the form with the same text you used for this campaign. Then you can make any necessary modifications and create a new link.
 
@@ -397,7 +397,7 @@ In order to use the Campaigns dashboard, you’ll want to start by creating camp
 
 The links you create will show up in the Campaigns dashboard once they’ve received at least one click. In the Campaigns dashboard, you’ll see every view and visitor that came from a click on a campaign URL.
 
-![Campaigns dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:765/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-table.png)
+![Campaigns dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:765/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-table.png)
 
 With this dashboard, you can see exactly how many views and visitors you’ve received from each campaign URL.
 
@@ -405,7 +405,7 @@ The **Terms** and **Content** columns are hidden by default but can be shown by 
 
 Like other dashboards in Independent Analytics, the table rows can be filtered by any of the columns.
 
-![Filtering campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:421/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/filter-campaigns.png)
+![Filtering campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:421/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/filter-campaigns.png)
 
 You can follow the [filters tutorial](https://independentwp.com/knowledgebase/dashboard/how-to-filter-your-data/) to learn how this works.
 
@@ -419,17 +419,17 @@ By default, the table will show you every unique campaign. This is very useful, 
 
 For this reason, you will find a dropdown option above the table that lets you switch the row grouping from Unique to Landing Page, Source, Medium, or Campaign.
 
-![Campaign grouping option](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:515/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-grouping-option.png)
+![Campaign grouping option](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:515/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-grouping-option.png)
 
 For example, if you group the table rows by Source, it will look like this:
 
-![Campaigns grouped by source](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:657/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-grouped-by-source.png)
+![Campaigns grouped by source](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:657/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-grouped-by-source.png)
 
 This lets you see exactly how many campaign visitors you’ve gotten from individual sources, like Facebook or your Mailchimp emails.
 
 Likewise, you can group the rows by the Campaign field.
 
-![Campaigns grouped by campaign](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:610/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-grouped-by-campaign.png)
+![Campaigns grouped by campaign](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:610/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-grouped-by-campaign.png)
 
 This reveals the performance of each campaign, regardless of the landing page, source, or medium. This makes it much easier to evaluate and compare your marketing campaigns to find out which ones are working best.
 

@@ -16,7 +16,7 @@ In other words, this feature does not add any new privacy implications on its ow
 
 This is easier to understand with an example, so take a look at this session shown in the User Journeys report:
 
-![User Journeys eCommerce sale](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:631/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-ecommerce-sale.png)
+![User Journeys eCommerce sale](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:631/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-ecommerce-sale.png)
 
 You could not know who this customer is based on what is shown here (or stored in the database tables).
 
@@ -62,7 +62,7 @@ When someone visits your site, they eventually leave. Everything they do while o
 
 With the User Journeys report, you can view every single one of these sessions:
 
-![User Journeys report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:676/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys.png)
+![User Journeys report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:676/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys.png)
 
 When you visit the User Journeys report, you’ll see the most recent session at the top. Each session includes essential data so you can analyze it at a glance.
 
@@ -89,7 +89,7 @@ The Pages Viewed and Duration values are color-coded, so sessions with higher en
 
 When a session is clicked on, it reveals a complete timeline of the visitor’s experience on your website.
 
-![User Journeys timeline](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:676/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-timeline.png)
+![User Journeys timeline](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:676/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-timeline.png)
 
 It begins with the date of their arrival and the site they came from, followed by each of their views. Every view includes a timestamp, the page they viewed, and how long they viewed that page.
 
@@ -103,7 +103,7 @@ Above the icons, you may see a link that says “View all X sessions for this vi
 
 Here is an example of a visitor page accessed in this way:
 
-![User Journeys individual visitor page](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:535/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-visitor-page.png)
+![User Journeys individual visitor page](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:535/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-visitor-page.png)
 
 This can be helpful to understand the actions a user took leading up to a conversion event. For instance, in the example above, you can see a visitor who first reached the site via a MailChimp email, and then purchased a product the following day.
 
@@ -119,7 +119,7 @@ With filters, you can quickly find sessions that match certain criteria. For ins
 
 Here’s a look at all the available filters:
 
-![User Journeys filters](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:686/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journey-filters.png)
+![User Journeys filters](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:686/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journey-filters.png)
 
 The **Landing Page** filter will find sessions with a matching landing page, whereas the **Page** filter will find sessions where the matching page was viewed at any point during the session.
 
@@ -127,15 +127,15 @@ The Conversion filters are especially useful and a bit more advanced than the ot
 
 For example, if you select the **Form Submissions** filter, you can choose to display sessions with any form submission, or only include sessions with a submission for a specific form.
 
-![User Journeys form filter](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:408/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-form-filter.png)
+![User Journeys form filter](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:408/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-form-filter.png)
 
 The **Clicked Link** filter works the same way, in that you can filter by any clicks or clicks that match a specific link pattern.
 
-![User Journeys Clicked Link filter](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:435/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-clicked-link-filter.png)
+![User Journeys Clicked Link filter](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:435/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-clicked-link-filter.png)
 
 To find eCommerce orders, you can use the **Gross sales** filter, which works a bit differently from the other ones. With this filter, you can simply search for sessions with gross sales greater than zero, and that will eliminate any sessions without an order.
 
-![User Journeys Gross Sales filter](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:437/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-gross-sales-filter.png)
+![User Journeys Gross Sales filter](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:437/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/01/user-journeys-gross-sales-filter.png)
 
 You have the flexibility to increase the value beyond zero if you only want to see sales with a certain value.
 

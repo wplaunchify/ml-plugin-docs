@@ -50,17 +50,17 @@ There are a few reasons why you could see missing sales in the analytics.
 
 ## Track logged-in visitors
 
-First, make sure that you are [tracking logged-in visitors](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/track-logged-in-users.png). Otherwise, the activity of your logged-in customers will go untracked, leading to unrecorded sales.
+First, make sure that you are [tracking logged-in visitors](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/track-logged-in-users.png). Otherwise, the activity of your logged-in customers will go untracked, leading to unrecorded sales.
 
-![Tracking logged-in visitors](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:877/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/track-logged-in-users.png)
+![Tracking logged-in visitors](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:877/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/track-logged-in-users.png)
 
 ## Check the order statuses
 
 Independent Analytics only reports orders with certain statuses, including Processing, Refunded, and Completed. If your store has custom order statuses added by a plugin, those won’t be tracked by default.
 
-You can [choose which order statuses](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/08/woocommerce-order-statuses.png) should be counted via the **Analytics > Settings** menu. You can update these at any time to change which orders are shown in the analytics.
+You can [choose which order statuses](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/08/woocommerce-order-statuses.png) should be counted via the **Analytics > Settings** menu. You can update these at any time to change which orders are shown in the analytics.
 
-![WooCommerce order statuses](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:468/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/08/woocommerce-order-statuses.png)
+![WooCommerce order statuses](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:468/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/08/woocommerce-order-statuses.png)
 
 ## Check your error log
 
@@ -119,7 +119,7 @@ If you have a plugin that adds more statuses, or if you’ve created your own cu
 
 To choose which order statuses get counted, visit the **Analytics > Settings** menu and then scroll down to the **WooCommerce Order Statuses** section.
 
-![WooCommerce order statuses](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:468/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/08/woocommerce-order-statuses.png)
+![WooCommerce order statuses](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:468/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/08/woocommerce-order-statuses.png)
 
 To include an additional status in the analytics, all you have to do is check the box next to it, and then click the **Save** button.
 
@@ -165,7 +165,7 @@ To help you track the source of individual sales, Independent Analytics Pro adds
 
 To find this info, start by visiting the **WooCommerce > Orders** menu and then select an Order from the menu. In the Order details page, you’ll find the **Customer Journey** box in the right sidebar below the **Order Notes** box.
 
-![Order referrer box](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:817/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/order-referrer-box.png)You can move it higher up in the sidebar by clicking the up arrow button
+![Order referrer box](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:817/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/order-referrer-box.png)You can move it higher up in the sidebar by clicking the up arrow button
 
 This data is only available for orders completed after the installation of Independent Analytics (free version).
 
@@ -185,7 +185,7 @@ There is also a button at the bottom linking to the full [user journey](https://
 
 If the sale was referred via a campaign URL, you’ll also see the campaign parameters included.
 
-![Order referrer box with campaign data](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:774/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/order-referrer-box-campaign-data.png)
+![Order referrer box with campaign data](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:774/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/order-referrer-box-campaign-data.png)
 
 Sales are always attributed to the last referrer. You can learn more about how our attribution model works here:
 
@@ -269,11 +269,11 @@ Independent Analytics Pro integrates with the following eCommerce plugins:
 
 After installing Independent Analytics Pro, you’ll see the Orders and Total Sales metrics appear in the Quick Stats like this:
 
-![WooCommerce Quick Stats](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:674/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/woocommerce-quick-stats.png)
+![WooCommerce Quick Stats](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:674/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/woocommerce-quick-stats.png)
 
 If you click the **Toggle Stats** button and then select the **eCommerce** section, you’ll see that there are 8 different metrics you can enable in the Quick Stats.
 
-![WooCommerce toggle Quick Stats](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:664/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/05/woocommerce-toggle-quick-stats.png)The eCommerce section will be by the eCommerce plugin you’re using
+![WooCommerce toggle Quick Stats](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:664/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/05/woocommerce-toggle-quick-stats.png)The eCommerce section will be by the eCommerce plugin you’re using
 
 While you may find similar stats in the analytics reports provided by your eCommerce plugin, these stats become especially powerful when combined with a filter. For example, you can filter a report to show only blog posts or social media sites and see how the metrics compare to the global averages.
 
@@ -283,13 +283,13 @@ One unique stat is the Conversion Rate, which lets you see the global conversion
 
 You’ll see all the same metrics from the Quick Stats available as new data columns.
 
-![New WooCommerce data columns](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:604/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/new-woocommerce-columns-1.png)
+![New WooCommerce data columns](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:604/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/new-woocommerce-columns-1.png)
 
 Enabling these columns will let you evaluate the performance of specific pages, referrers, locations, devices, and campaigns.
 
 For instance, here’s an example showing the orders and net sales for each referrer:
 
-![Woocommerce sales data](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:546/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/woocommerce-sales-data-1.png)
+![Woocommerce sales data](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:546/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/woocommerce-sales-data-1.png)
 
 You can find definitions for each eCommerce metric here: [The eCommerce Metrics Explained](https://independentwp.com/knowledgebase/woocommerce/woocommerce-metrics/)
 

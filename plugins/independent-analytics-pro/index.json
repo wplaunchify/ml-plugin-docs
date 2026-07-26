@@ -2,8 +2,8 @@
   "plugin_slug": "independent-analytics-pro",
   "plugin_name": "Independent Analytics Pro",
   "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-  "last_scraped": "2026-07-19T08:49:14.569Z",
-  "total_pages": 190,
+  "last_scraped": "2026-07-26T08:49:49.610Z",
+  "total_pages": 194,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -472,8 +472,16 @@
       "slug": "developer",
       "url": "https://independentwp.com/knowledge-base/documentation/developer/",
       "file": "categories/developer.md",
-      "page_count": 7,
+      "page_count": 9,
       "pages": [
+        {
+          "title": "How to Programmatically Output the Analytics Script",
+          "url": "https://independentwp.com/knowledgebase/developer/programmatically-output-analytics-script/"
+        },
+        {
+          "title": "How to Exclude the Analytics Script From a Page",
+          "url": "https://independentwp.com/knowledgebase/developer/exclude-analytics-script-page/"
+        },
         {
           "title": "Programmatically Editing User Role Capabilities for Analytics Access",
           "url": "https://independentwp.com/knowledgebase/developer/edit-user-roles-programmatically/"
@@ -526,8 +534,16 @@
       "slug": "form-tracking",
       "url": "https://independentwp.com/knowledge-base/documentation/form-tracking/",
       "file": "categories/form-tracking.md",
-      "page_count": 5,
+      "page_count": 7,
       "pages": [
+        {
+          "title": "How to Track Superb Addons Forms",
+          "url": "https://independentwp.com/knowledgebase/form-tracking/track-superb-addons-forms/"
+        },
+        {
+          "title": "How to Track Breakdance Forms",
+          "url": "https://independentwp.com/knowledgebase/form-tracking/breakdance-form-submissions/"
+        },
         {
           "title": "Why Aren’t My Forms Showing Up?",
           "url": "https://independentwp.com/knowledgebase/form-tracking/why-arent-forms-showing/"
@@ -541,7 +557,7 @@
           "url": "https://independentwp.com/knowledgebase/form-tracking/bricks-builder-forms/"
         },
         {
-          "title": "What Form Plugins Does it Integrate With?",
+          "title": "What Form Plugins Does It Integrate With?",
           "url": "https://independentwp.com/knowledgebase/form-tracking/form-plugin-integrations/"
         },
         {

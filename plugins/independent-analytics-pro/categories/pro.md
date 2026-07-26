@@ -12,7 +12,7 @@ When you purchase Independent Analytics Pro, you will receive an email containin
 
 If you have lost the email with your password or need to reset it for another reason, you can visit the [Account page](https://independentwp.com/account) and click the **Forgot your password** link there. This will take you to a form where you can enter your email address to get a password reset link.
 
-![Forgot password link](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1017/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/forgot-password-link.png)
+![Forgot password link](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1017/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/forgot-password-link.png)
 
 Alternatively, if you still have access to your account, you can change your password by logging into your account, then opening the **My Profile** menu and clicking the **Change Password** button there.
 
@@ -44,13 +44,13 @@ You can review the full list of recognized patterns here:
 
 If you push your live site to a staging site, you’ll see this notice at the top of the admin dashboard when you login to the staging site:
 
-![Freemius clone resolution](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:374/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/02/freemius-clone-resolution.webp)
+![Freemius clone resolution](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:374/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/02/freemius-clone-resolution.webp)
 
 You can click the **Duplicate Website** button to identify this site as a duplicate version of the live website. If you click this button or ignore the notice and don’t click any of the buttons, the Pro version will stay activated for two weeks without counting towards your license activation limit.
 
 After that two-week period, you’ll see a similar set of options, but the first button will now say **Long-term Duplicate**.
 
-![Freemius long term duplicate](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:334/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/02/freemius-long-term-duplicate.webp)
+![Freemius long term duplicate](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:334/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/02/freemius-long-term-duplicate.webp)
 
 If you mark this site as a long-term duplicate, it will activate the license key, counting towards your total activation limit. If you ignore it, Independent Analytics Pro will revert to the free feature set only, and won’t count as a license activation.
 
@@ -64,7 +64,7 @@ There are times when you have a license activation on a site you can no longer a
 
 You can resolve this by logging into [your account](https://independentwp.com/account/) and navigating to the Websites menu. From there, select the site that no longer exists and click the **Deactivate** button in the **License** section.
 
-![Remove license from site](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:680/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/02/remove-license-from-site.png)
+![Remove license from site](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:680/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/02/remove-license-from-site.png)
 
 That will immediately free up the activation that the site was previously using.
 
@@ -84,7 +84,7 @@ There is an [unofficial Freemius plugin](https://github.com/squarecandy/freemius
 
 Start by downloading the plugin from its [GitHub page](https://github.com/squarecandy/freemius-auto-activation).
 
-![Download freemius auto activation plugin](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:627/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/10/download-freemius-auto-activation.png)
+![Download freemius auto activation plugin](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:627/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/10/download-freemius-auto-activation.png)
 
 Next, install this plugin on the sites where you want to activate IA Pro.
 
@@ -122,7 +122,7 @@ Start by logging into [your account here](https://independentwp.com/account).
 
 Next, click on the **My Profile** menu in the left sidebar. You can enter your billing info on this page.
 
-![Freemius profile page](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:527/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/freemius-my-profile.png)
+![Freemius profile page](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:527/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/freemius-my-profile.png)
 
 Once your profile has been updated, visit the **Orders History** menu. You’ll see each of your purchases listed, and there will be a link on the right side to download an invoice. The new invoice will include all of the details entered into the **My Profile** page
 
@@ -138,7 +138,7 @@ As an Independent Analytics Pro customer, you have access to the customer accoun
 
 In the account portal, you can manage your license key, download new copies of Independent Analytics Pro, and manage your subscription.
 
-![Account home](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:456/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/04/account-home.png)
+![Account home](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:456/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/04/account-home.png)
 
 ---
 
@@ -213,7 +213,7 @@ To deactivate the license, start by logging into your account here: [Login to ac
 
 Once logged in, you’ll find yourself in the **Websites** menu. From here, click on the website where you want to deactivate the license key. A menu will appear on the right side of the screen where you can click the red **Deactivate** link to disable the license key.
 
-![Deactivate license key](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:553/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/08/deactivate-license-key.png)
+![Deactivate license key](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:553/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/08/deactivate-license-key.png)
 
 The site will continue running the Pro plugin but will revert to the features available in the free version. You can then use the license on another domain instead.
 
@@ -231,7 +231,7 @@ Your password was sent to you in the purchase receipt email, but if you have los
 
 Once logged in, click on **Renewals & Billing** in the sidebar. Then click on your subscription, and in the overlay menu, click the **Cancel Auto-Renew** link.
 
-![Cancel auto renew](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:570/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/06/cancel-auto-renew.png)
+![Cancel auto renew](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:570/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/06/cancel-auto-renew.png)
 
 When your license expires, Independent Analytics Pro will be downgraded to the free version. This means your stats will continue tracking, but you will lose access to all Pro features and new updates.
 
@@ -251,7 +251,7 @@ There are two different ways to white-label your license key.
 
 First, if you are logged into a client’s website and visit the **Analytics > Account** page, you’ll see a notice at the top of the page about hiding your account info. Click on the “Click here” link and your license will be white-labeled.
 
-![White label license key](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:385/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/white-label-license-key.png)
+![White label license key](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:385/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/white-label-license-key.png)
 
 This setting will sync with every other site using your license key within the next 24 hours. If you need the white-labeling to take effect immediately on another website, you can click the “Sync” link in the Account menu (pictured above).
 
@@ -267,7 +267,7 @@ You can find your account credentials in the email you received from us when you
 
 Once logged in, visit the **Licenses** menu and then click on the license key you’d like to white-label. A menu will slide in on the right side, where you can check a box labeled **“This license is activated on my client’s site.”**
 
-![White-labeling a license key](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:631/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/12/license-management.png)
+![White-labeling a license key](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:631/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/12/license-management.png)
 
 After checking this box, your account info will no longer display anywhere inside the WP dashboard.
 
@@ -295,7 +295,7 @@ In order to upgrade, start by visiting the [Pricing page](https://independentwp.
 
 Inside the checkout modal, click the link at the top-right labeled “Enter license key,” and paste your license key into the field there.
 
-![Upgrade license](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:628/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/upgrade-license.png)
+![Upgrade license](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:628/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/upgrade-license.png)
 
 Once your license key has been entered, you’ll see a pro-rated discount based on your prior purchase(s). You’ll also be able to continue using the same license key for all your existing sites.
 
@@ -347,15 +347,15 @@ If you did not receive this email, please [contact us](https://independentwp.com
 
 Next, login to your site, visit the **Plugins > Add New** menu, and click the **Upload Plugin** button at the top of the page.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:799/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/add-new-plugin.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:799/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/add-new-plugin.png)
 
 In the uploader form that appears on the same page, choose the **independent-analytics-pro.zip** file and then click the **Install Now** button.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:490/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/upload-plugin.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:490/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/upload-plugin.png)
 
 Once the installation is complete, you’ll see a page like this:
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:521/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/activate-plugin.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:521/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/activate-plugin.png)
 
 Click the **Activate Plugin** button to complete the activation.
 
@@ -367,7 +367,7 @@ The free Independent Analytics plugin will be deactivated automatically when you
 
 After clicking the **Activate Plugin** button in the previous step, you should now see this page requesting a license key:
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:733/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/license-activation-form.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:733/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/license-activation-form.png)
 
 You can find your license key in the same email that included your download link. Copy and paste it into the license key field and click the **Agree & Activate License** button.
 
@@ -379,11 +379,11 @@ If, for some reason, you don’t see the license activation form when you visit 
 
 Please visit the **Plugins** menu and scroll down to the **Independent Analytics Pro** plugin. Next, click on the **Activate License** link.
 
-![Activate license link](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/activate-license.png)
+![Activate license link](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/activate-license.png)
 
 This will open a modal where you can then enter your license key.
 
-![License activation form](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:617/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/license-activation-form-1.png)
+![License activation form](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:617/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/license-activation-form-1.png)
 
 Once you’ve entered your license key, all features will be unlocked, and Independent Analytics Pro will be fully activated on your website.
 

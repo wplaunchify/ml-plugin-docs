@@ -24,7 +24,7 @@ The salt is never refreshed after installing Independent Analytics, but you can 
 
 Start by visiting the **Settings** menu and locate the **Salt refresh rate** setting. Then, check the box labeled, “Refresh the visitor salt every day.”
 
-![Daily salt refresh setting](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:507/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/daily-salt-refresh-setting.png)
+![Daily salt refresh setting](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:507/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/01/daily-salt-refresh-setting.png)
 
 Once this box is checked, click the **Save Settings** button to complete your changes.
 
@@ -157,7 +157,7 @@ What’s more instructive is the total number of views (three), so that’s why 
 
 **Bounce rate is the percentage of visitors who viewed one page and left.**
 
-![Bounce rate stat](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/bounce-rate-stat.png)
+![Bounce rate stat](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/bounce-rate-stat.png)
 
 Imagine a visitor lands on your homepage and reads two articles before leaving. This visitor did not “bounce” because they viewed multiple pages. This would make your bounce rate 0%.
 
@@ -197,7 +197,7 @@ If you’re wondering if your site’s bounce rate is healthy, we have a blog po
 
 **View Duration is a measure of how long visitors spend on a specific page, on average.** You’ll see the View Duration appear in the data table of the Pages menu.
 
-![View Duration column in Pages menu](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:375/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/view-duration-annotated.png)
+![View Duration column in Pages menu](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:375/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/view-duration-annotated.png)
 
 View Duration is measured in a similar way as [Session Duration](https://independentwp.com/knowledgebase/data/what-is-session-duration/). We take the time that visitors land on a page and subtract it from the previous page. For instance, the following session would tell us that the visitor spent two minutes on Page 1:
 
@@ -218,7 +218,7 @@ This is the same way that Google Analytics calculates *Time on Page*, but with o
 
 You’ll see Session Duration show up in the Quick Stats of every page as well as in the table of the Referrer, Geographic, and Campaigns menus.
 
-![Session Duration in Referrers table](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:228/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/referrer-session-duration-annotated.png)
+![Session Duration in Referrers table](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:228/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/referrer-session-duration-annotated.png)
 
 When someone arrives on your site, a new session is created, and each page they view is included in this session. The session concludes when there is a thirty-minute period of inactivity.
 
@@ -315,7 +315,7 @@ For example, if someone visits a blog post, clicks to the homepage, and then cli
 
 When viewing the dashboard, the [Quick Stats](https://independentwp.com/knowledgebase/dashboard/quick-stats/) above the chart will tell you how many unique visitors were found in the given time period. When you hover over a day in the chart, you’ll see the number of visitors that are unique to that day.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:634/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/visitor-data.png)
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:634/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/visitor-data.png)
 
 Because the chart shows the number of visitors that are unique to each day, the total will be higher than what you see in the Quick Stat above.
 

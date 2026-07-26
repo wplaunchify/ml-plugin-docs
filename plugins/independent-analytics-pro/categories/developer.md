@@ -4,6 +4,58 @@
 
 ---
 
+## How to Programmatically Output the Analytics Script
+
+**Source:** [https://independentwp.com/knowledgebase/developer/programmatically-output-analytics-script/](https://independentwp.com/knowledgebase/developer/programmatically-output-analytics-script/)
+
+Independent Analytics watches the 
+```
+iawp_output_tracking_script
+```
+
+ hook, which you can use to output the script wherever you want.
+
+Here is how you can use this hook:
+
+```
+do_action('iawp_output_tracking_script');
+```
+
+The script will be output on the page wherever you call that action hook.
+
+Independent Analytics outputs the script via 
+```
+wp_footer
+```
+
+ already, so make sure you aren’t adding it a second time by accident. Additionally, the script is only going to function on pages where WP is loaded, so this method cannot be used to output the script on non-WP pages.
+
+---
+
+## How to Exclude the Analytics Script From a Page
+
+**Source:** [https://independentwp.com/knowledgebase/developer/exclude-analytics-script-page/](https://independentwp.com/knowledgebase/developer/exclude-analytics-script-page/)
+
+Independent Analytics includes a filter called 
+```
+iawp_user_excluded_posts
+```
+
+ you can use to exclude the analytics script from specific pages.
+
+Here is an example of how the filter can be used:
+
+```
+add_filter( 'iawp_user_excluded_posts', function ( $ids ) {
+  $ids[] = 1;
+  return $ids;
+});
+```
+
+It takes a single argument, which is an array of integers. Each integer is the ID of a page you want to exclude the tracking script on. In the example above, this would prevent Independent Analytics from tracking a page with an ID of 1.
+
+---
+
 ## Programmatically Editing User Role Capabilities for Analytics Access
 
 **Source:** [https://independentwp.com/knowledgebase/developer/edit-user-roles-programmatically/](https://independentwp.com/knowledgebase/developer/edit-user-roles-programmatically/)

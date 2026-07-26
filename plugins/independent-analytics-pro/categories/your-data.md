@@ -12,21 +12,21 @@ If you’re worried about how much analytics data may be stored in your database
 
 To enable this feature, visit the **Analytics > Settings** menu and scroll down until you see the **Automatically Delete Old Data** section.
 
-![Automatic data deletion](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:323/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/automatic-data-deletion.png)
+![Automatic data deletion](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:323/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/automatic-data-deletion.png)
 
 To enable this feature, click on the dropdown that says, “Keep data forever,” and choose how long you’d like to store data.
 
-![Automatic data deletion time period](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:672/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/automatic-data-deletion-time-period.png)
+![Automatic data deletion time period](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:672/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/automatic-data-deletion-time-period.png)
 
 Once you’ve selected how long you want to store data, click the **Save** button. You’ll see this popup appear asking you to confirm your selection:
 
-![Confirm automatic data deletion](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:628/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/confirm-automatic-data-deletion.png)
+![Confirm automatic data deletion](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:628/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/confirm-automatic-data-deletion.png)
 
 **Data older than the time period you selected will be deleted immediately**. This process may take a few seconds or even as long as a minute or two, depending on how much data is being deleted.
 
 Once the deletion is finished, you’ll see this notice informing you that old data will now be deleted routinely at midnight every day. This ensures that you only retain data for the specified time period.
 
-![Automatic data deletion scheduled](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:397/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/automatic-data-deletion-scheduled.png)
+![Automatic data deletion scheduled](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:397/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/automatic-data-deletion-scheduled.png)
 
 The available time periods are:
 
@@ -78,7 +78,7 @@ Independent Analytics runs entirely on your website, which means the data it cre
 
 The data stored by Independent Analytics is in tables prefixed with “_independent_analytics,” as pictured below.
 
-![Our database tables](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:594/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/our-database-tables.png)
+![Our database tables](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:594/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/our-database-tables.png)
 
 The names and number of tables is subject to change, but they will always begin with the same independent_analytics_ prefix.
 
@@ -106,17 +106,17 @@ One change they’ve made is the ability to completely opt out of tracking even 
 
 If you are using the free version of Independent Analytics, then you were presented with this screen upon activating the plugin:
 
-![Freemius optin](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/freemius-optin.png)
+![Freemius optin](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/freemius-optin.png)
 
 If you chose to **Skip** this step, then your site has never shared data with Freemius.
 
 If you agreed to data sharing by accident or you changed your mind, you can visit the **Plugins** menu, locate our plugin, and click the blue **Opt Out** link pictured here:
 
-![Freemius Opt Out link](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/freemius-opt-out-link.png)
+![Freemius Opt Out link](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/freemius-opt-out-link.png)
 
 You’ll see a popup allowing you to opt out of sharing your basic profile info, site info, and themes/plugins installed.
 
-![Freemius Opt Out screen](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:952/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/freemius-opt-out-screen.png)
+![Freemius Opt Out screen](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:952/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/freemius-opt-out-screen.png)
 
 Opting out of these data sharing options won’t have any impact on Independent Analytics ability to run. We use this data primarily in aggregate to see things like the PHP versions that are most popular among our users, and the languages being used.
 
@@ -124,13 +124,13 @@ Opting out of these data sharing options won’t have any impact on Independent 
 
 If you are using Independent Analytics Pro, the steps are almost identical. You will still click the **Opt Out** link in the Plugins menu, but the popup is different in two ways.
 
-![Freemius Pro plugin Opt Out](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:977/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/freemius-pro-opt-out.png)
+![Freemius Pro plugin Opt Out](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:977/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/freemius-pro-opt-out.png)
 
 The first difference is that you’ll notice there is no option to opt out of basic profile info. This is because this data was collected at checkout and was required to facilitate the sale.
 
 The other difference is the **Required** section at the top, which shows that your site shares data about the license key and the plugin’s state. If you click on the **Opt Out** link there, you’ll see the following warning:
 
-![Freemius Pro licence opt out confirmation](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:648/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/freemius-pro-opt-out-confirm.png)
+![Freemius Pro licence opt out confirmation](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:648/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/freemius-pro-opt-out-confirm.png)
 
 This is letting you know that opting out of sharing licensing data means that your site will no longer receive automatic updates.
 
@@ -148,11 +148,11 @@ If you want to reset your analytics or delete your data before uninstalling the 
 
 Start by visiting your Analytics and clicking on the Settings menu item.
 
-![Settings menu item](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/settings-menu-item.png)
+![Settings menu item](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/settings-menu-item.png)
 
 Next, scroll to the bottom of the page and locate the **Danger zone** section. You’ll see two options.
 
-![Delete all data](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:285/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/delete-all-data.png)
+![Delete all data](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:285/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/delete-all-data.png)
 
 First, you can click the **Reset analytics** button if you want to delete all of your analytics data but continue using the plugin.
 
@@ -165,7 +165,7 @@ If you plan on no longer using Independent Analytics, you should click the **Del
 
 When you click the button, you’ll see a prompt like this clarifying that you want to delete your data:
 
-![Delete data prompt](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:686/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/delete-data-prompt.png)
+![Delete data prompt](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:686/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/delete-data-prompt.png)
 
 Once you confirm, please wait a few seconds for the deletion process to complete before leaving the page.
 
@@ -193,7 +193,7 @@ Since your analytics data is stored in your WordPress database, it’s easy to m
 
 Independent Analytics adds numerous tables to your database, all beginning with your database prefix followed by “independent_analytics.”
 
-![Independent analytics db tables old](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/independent_analytics_db_tables_old.png)These tables are subject to change, but will always include the _independent_analytics_ prefix
+![Independent analytics db tables old](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/independent_analytics_db_tables_old.png)These tables are subject to change, but will always include the _independent_analytics_ prefix
 
 Since your analytics data is stored in the WordPress database, it will be transferred by any plugin that migrates data between local/staging/production sites. This makes things easy except for when transferring from a staging site back to production.
 
@@ -239,15 +239,15 @@ Using one of the recommended plugins to transfer the analytics tables is the eas
 
 To manually transfer your analytics tables, start by logging into your hosting dashboard and finding the link to phpMyAdmin. Once inside phpMyAdmin, click on your site’s database in the left sidebar. Then, locate the Independent Analytics tables and select them all.
 
-![Select tables](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/select-tables.png)
+![Select tables](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/select-tables.png)
 
 Next, scroll to the bottom of the page and use the **With selected** dropdown to choose the **Export** option.
 
-![Export tables](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/export-tables.png)
+![Export tables](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/export-tables.png)
 
 This will immediately redirect you to the Export menu, where you can click the **Go** button to export the selected tables.
 
-![Complete data export](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:480/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/complete-data-export.png)
+![Complete data export](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:480/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/complete-data-export.png)
 
 An SQL file containing the selected tables will begin downloading right away.
 
@@ -257,7 +257,7 @@ To import the data, you will have to delete all of the analytics tables in the d
 
 Next, visit the Import menu, click the Choose file button, select the SQL file you downloaded, and click the **Go** button to import the tables.
 
-![Import tables](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:972/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/import-tables.png)
+![Import tables](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:972/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/import-tables.png)
 
 If your SQL file is large, it may help to compress the file before uploading. You can zip an SQL file like any other file type to compress it.
 
@@ -291,7 +291,7 @@ There are two different ways you can export your data to CSV.
 
 First, click the **Download Report** button in the toolbar, and you’ll see these options:
 
-![Download options](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:679/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/02/download-options.png)
+![Download options](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:679/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/02/download-options.png)
 
 If you click the **Download Table CSV** button, you’ll receive a CSV that includes the same data currently displayed in the data table. Any changes you make to the table, such as changing the sorting or hiding a column, will be matched in the CSV ([Example CSV](https://independentwp.com/wp-content/uploads/2025/01/table-data.csv)).
 
@@ -317,7 +317,7 @@ There are some additional steps you’ll want to take when pushing data from a s
 
 When you first install Independent Analytics, you will see this optin form powered by [Freemius](https://freemius.com/) asking if you’d like to share non-sensitive diagnostic data with us:
 
-![Freemius optin](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:417/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/freemius-optin.png)
+![Freemius optin](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:417/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/05/freemius-optin.png)
 
 This data helps us to better understand our users. It is entirely optional, so you don’t have to opt-in if you don’t want to.
 

@@ -196,7 +196,7 @@ To track clicks on a link pointing to one of these file types:
 4. Select the file extension you want to track
 5. Save the new link pattern
 
-![Track clicks by file extension](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:544/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/track-clicks-by-file-extension.png)
+![Track clicks by file extension](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:544/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/track-clicks-by-file-extension.png)
 
 ## Tracking clicks on images
 
@@ -296,7 +296,7 @@ wp-block-surecart-product-buy-button
 
 You may see more total clicks show up in the table as compared to the [Quick Stats](https://independentwp.com/knowledgebase/dashboard/quick-stats/), like in the example below:
 
-![More clicks in table](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:327/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/more-clicks-in-table.png)
+![More clicks in table](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:327/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/more-clicks-in-table.png)
 
 This is not an error in the calculations. It is due to a difference in context between the Quick Stats and the table.
 
@@ -314,7 +314,7 @@ download-file
 
 .
 
-![Link patterns](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:370/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/link-patterns.png)
+![Link patterns](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:370/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/link-patterns.png)
 
 In this example, there is a link with the 
 ```
@@ -342,7 +342,7 @@ mywebsite.com/?invoice=123 → **301 redirect** → mywebsite.com/invoice-123.pd
 
 Now, imagine you have your link patterns configured like this, to track clicks on PDF files:
 
-![Tracking PDF clicks](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:537/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/02/tracking-pdf-clicks.png)
+![Tracking PDF clicks](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:537/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/02/tracking-pdf-clicks.png)
 
 Clicks on the invoice link would not get tracked because the URL the link points to does not end in .pdf. Instead, it redirects to a PDF file. There is no way the tracking script can know there will be a redirect, let alone where that redirect will lead.
 
@@ -366,7 +366,7 @@ A click is recorded when a link matching one of the Link Patterns defined in the
 
 For example, let’s say you are tracking clicks on email links and PDF files only. When you display the Clicks metric in the Pages report table, it will show a count of how many times a link matching one of those two patterns was clicked on that page.
 
-![Clicks metric table column](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/04/clicks-table-column.png)In this example, there were 41 tracked clicks on the Homepage
+![Clicks metric table column](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/04/clicks-table-column.png)In this example, there were 41 tracked clicks on the Homepage
 
 It’s also helpful to know that both left and right mouse button clicks are tracked. Visitors often right-click links to open them in a new tab or download the resource as a file, so it’s important to include these clicks too.
 
@@ -410,7 +410,7 @@ If you are using the Solid Security plugin, you will need to disable the option 
 
 To do so, visit the **Security > Settings** menu. Then, click on the **Advanced** section and open the **System Tweaks Settings**. Lastly, uncheck the **Disable PHP in Plugins** box and save your settings.
 
-![Solid Security PHP execution setting](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:608/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/solid-security-php-execution.png)
+![Solid Security PHP execution setting](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:608/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/solid-security-php-execution.png)
 
 Once saved, the notice warning you about this setting will disappear, and click tracking will resume. You can continue to block PHP execution in both the uploads and themes folders.
 
@@ -420,7 +420,7 @@ If you’re using Cloudways, it disables all PHP execution by default, so this n
 
 In order to enable PHP execution, start by clicking on your server and choosing the site application in Cloudways. Next, click on **Application Settings** and then open the **WordPress Settings** menu. Lastly, enable the **Direct PHP Files Access** option and save your changes.
 
-![Cloudways enable PHP execution](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:719/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/cloudways-enable-php-execution.png)
+![Cloudways enable PHP execution](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:719/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/cloudways-enable-php-execution.png)
 
 If you want to limit PHP execution in other folders, you could use Solid Security to lock down the themes folder and uploads folder.
 
@@ -432,7 +432,7 @@ If you’re using the Security Optimizer plugin, there is an option called “Lo
 
 In order to get click tracking to work, please toggle that option off and then back on.
 
-![Security Optimizer options](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:610/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/security-optimizer-options.png)
+![Security Optimizer options](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:610/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/security-optimizer-options.png)
 
 Independent Analytics Pro includes a filter that whitelists the PHP endpoint used for click-tracking. The option in Security Optimizer just needs to be toggled off and on so that it can recreate the .htaccess file, including the whitelist rule defined by IA Pro. Then, your clicks on your site will be tracked.
 
@@ -534,7 +534,7 @@ If you want to track clicks on a Button block, start by selecting the button in 
 
 In the right-sidebar, click on the Advanced section, and then enter the class name into the **Additional CSS Class(es)** field.
 
-![Ading class to button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:591/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/ading-class-to-button.png)
+![Ading class to button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:591/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/ading-class-to-button.png)
 
 Save your post, and then all clicks on this button will be tracked.
 
@@ -544,11 +544,11 @@ If you have multiple links within a paragraph and you want to track just one, th
 
 To do this, you would start by selecting the paragraph block. Then, click the **Options** icon in the toolbar and choose the **Edit as HTML** option.
 
-![Editing block html](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:709/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/editing-block-html.png)
+![Editing block html](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:709/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/editing-block-html.png)
 
 Once you’re editing the HTML, you can manually add the class to the link like this:
 
-![Adding class to link](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:291/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/adding-class-to-link.png)
+![Adding class to link](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:291/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/adding-class-to-link.png)
 
 After adding the class, click the **Edit visually** button to return the paragraph to its normal state.
 
@@ -558,11 +558,11 @@ This will allow you to add different classes to links within the same paragraph 
 
 If you’re using the Classic Editor plugin, then the first step is to click on the **Text** tab at the top-right of the editor.
 
-![Classic Editor "Text" tab](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:524/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/classic-editor-text-tab.png)
+![Classic Editor "Text" tab](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:524/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/classic-editor-text-tab.png)
 
 Once you’re viewing the plain text of the article, you can add the class attribute and value into the link element like this:
 
-![Adding a class with the Classic Editor](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:323/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/adding-class-classic-editor.png)
+![Adding a class with the Classic Editor](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:323/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/adding-class-classic-editor.png)
 
 You can use this same technique to add a class to any link when using the Classic Editor. You can also add the class to a parent element, but we recommend adding the class to the link element whenever possible.
 
@@ -574,11 +574,11 @@ It’s easy to track clicks on menu items, whether you’re using a classic them
 
 For classic theme users, start by visiting the **Appearance > Menus** page. Once there, click on the **Screen Options** tab at the top-right of the screen, and then check the **CSS Classes** box.
 
-![Enable menu classes](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:688/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/enable-menu-classes.png)
+![Enable menu classes](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:688/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/enable-menu-classes.png)
 
 Once this field is enabled, you can click on any menu item to open its options and enter the class into the **CSS Classes** field.
 
-![Track menu item clicks](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:596/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/track-menu-item-clicks.png)
+![Track menu item clicks](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:596/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/track-menu-item-clicks.png)
 
 ### Block themes
 
@@ -586,11 +586,11 @@ If you’re using a block theme, start by clicking on the **Appearance > Editor*
 
 In the next screen, click on the **Navigation** item. Then, click on the three dots icon to the right of the menu name and click the **Edit** link in the small popup.
 
-![Edit menu link](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:612/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/edit-menu-link.png)
+![Edit menu link](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:612/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/edit-menu-link.png)
 
 On the next page, click on the menu item you want to edit. Then, in the right-sidebar, click the **Advanced** section and add the class name to the **Additional CSS Classes** section.
 
-![Menu item classes](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/menu-item-classes.png)
+![Menu item classes](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/menu-item-classes.png)
 
 ## Elementor
 
@@ -598,7 +598,7 @@ If you’re editing your site with Elementor, adding a class to a widget is very
 
 Start by selecting the widget, click the **Advanced** tab at the top, and then add the class into the **CSS Classes** field.
 
-![Elementor add css class](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:530/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/elementor-add-css-class.png)
+![Elementor add css class](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:530/h:1024/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/elementor-add-css-class.png)
 
 Please note that any links within the widget will be tracked. For most widgets, this won’t be an issue, but if you do end up with a widget that includes multiple links, try splitting the widget into multiple widgets. For example, a toggle widget that includes two buttons could be split into two separate button widgets.
 
@@ -671,7 +671,7 @@ Please make sure that you are tracking one of these elements, as clicks on other
 
 The Click Tracking menu is where you’ll [configure which links](https://independentwp.com/knowledgebase/click-tracking/click-tracking/) you want to track. The Clicks report is where you’ll find the click data for those links.
 
-![Clicks report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:783/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/clicks-report.png)
+![Clicks report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:783/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/clicks-report.png)
 
 Like the other reports, the Clicks report includes the Quick Stats, chart, and data table. At this time, there is only one metric available (Clicks), so there isn’t an option to toggle the Quick Stats like in other reports.
 
@@ -681,7 +681,7 @@ In the data table, you’ll find three columns. The Link Name comes from the Cli
 
 There are several pre-made reports in the sidebar that take advantage of the filtering system. For example, if you click on the PDFs report, you’ll see that it has one filter applied that only includes links that match the PDF pattern created in the Click Tracking menu.
 
-![Pdf clicks report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:731/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/pdf-clicks-report.png)
+![Pdf clicks report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:731/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/pdf-clicks-report.png)
 
 The filters are the key to getting the most out of the Clicks report, so let’s look more closely at them.
 
@@ -697,27 +697,27 @@ Filtering by Link Name is extremely useful because it allows you to generate a r
 
 For example, let’s say you have the following set of link rules:
 
-![Click Tracking menu](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:826/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/click-tracking-menu.png)
+![Click Tracking menu](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:826/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/click-tracking-menu.png)
 
 You’ll see each of them available when filtering by Link Name:
 
-![Link name filters](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:527/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/link-name-filters.png)
+![Link name filters](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:527/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/link-name-filters.png)
 
 This makes it very easy to see the clicks for one of your link patterns.
 
 Filtering by the link Target is very useful as well. For example, let’s say you are tracking clicks on PDFs and you have multiple links in your data table, like this:
 
-![PDF links click data](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:484/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/pdf-links-click-data.png)
+![PDF links click data](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:484/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/pdf-links-click-data.png)
 
 This makes it easy to compare clicks between your PDFs, but what if you want to see click data for just one of them?
 
 If you want to see clicks only on the daily meal plan PDF, for instance, you can add a second condition that says to only include links whose target contains “daily-meal-plan.”
 
-![Filtering PDF links](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:677/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/filtering-pdf-links.png)
+![Filtering PDF links](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:677/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/filtering-pdf-links.png)
 
 With this filter applied, you’ll only see clicks for the PDF file specified.
 
-![Filtering by link target](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:773/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/filtering-by-link-target.png)
+![Filtering by link target](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:773/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/filtering-by-link-target.png)
 
 After generating a report like this, you can [save it as a custom report](https://independentwp.com/knowledgebase/dashboard/save-reports-revisit-later/) to revisit again in the future.
 
@@ -727,11 +727,11 @@ By default, the data table in the Clicks report will show all of the links that 
 
 Alternatively, you can update the table to group link patterns together. You can do this by clicking on the **Links** dropdown above the table and changing the value to **Link Patterns**.
 
-![Click grouping button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:541/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/click-grouping-button.png)
+![Click grouping button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:541/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/click-grouping-button.png)
 
 This lets you see the total number of clicks for each link pattern.
 
-![Grouped by link patterns](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:506/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/grouped-by-link-patterns.png)
+![Grouped by link patterns](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:506/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/grouped-by-link-patterns.png)
 
 This can be useful for seeing the total number of clicks for each link pattern and comparing clicks between link patterns.
 
@@ -753,7 +753,7 @@ Please keep this in mind when choosing the method you prefer to track outbound c
 
 Let’s say you have an Etsy shop, and you link to your store frequently. If you want to track how many times visitors click on links pointing to your Etsy store, you could do so by adding a new Domain link pattern like this:
 
-![Domain link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:531/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/domain-link-pattern.png)
+![Domain link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:531/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/domain-link-pattern.png)
 
 The domain link pattern will record every click on links pointing to the specified domain, and you can create as many of these patterns as you need.
 
@@ -765,17 +765,17 @@ To create the outbound clicks report, we’ll apply a couple of filters.
 
 Visit the Clicks report, and then add a filter that excludes all links that contain your own domain in the Target URL.
 
-![Exclude domain clicks report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:424/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/exclude-domain-clicks-report.png)Replace mywebsite.com with your own site’s domain
+![Exclude domain clicks report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:424/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/exclude-domain-clicks-report.png)Replace mywebsite.com with your own site’s domain
 
 This condition alone should work well, but you might still see links for email addresses and phone numbers. To exclude them, add two new conditions, each excluding the email and phone number links by name.
 
-![Exclude filters for outbound report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:614/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/exclude-filters-for-outbound-report.png)
+![Exclude filters for outbound report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:614/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/exclude-filters-for-outbound-report.png)
 
 With all three conditions added, apply the filter, and you’ll be left with only clicks on external links.
 
 Lastly, click the **Save As** button to save your customizations as a new report you can revisit in the future.
 
-![Save outbound report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:692/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/save-outbound-report.png)
+![Save outbound report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:692/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/save-outbound-report.png)
 
 Now, you have a report showing only clicks on outbound links that you can customize further whenever needed.
 
@@ -785,7 +785,7 @@ If you’d prefer to track all external clicks, that can be done very easily wit
 
 Click the **Add Link Pattern** button to add a new pattern, name it “External” or “Outbound,” and choose the **External** type. Then, click **Save** to begin tracking.
 
-![Adding External link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:530/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/adding-external-link-pattern.png)The External link pattern doesn’t require a value
+![Adding External link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:530/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/adding-external-link-pattern.png)The External link pattern doesn’t require a value
 
 With this link pattern added, clicks on every link pointing to another website will be tracked.
 
@@ -793,7 +793,7 @@ With this link pattern added, clicks on every link pointing to another website w
 
 Creating a report with this data is simple. All you have to do is add a filter to show only clicks that match the **External** link pattern, like this:
 
-![External link pattern filter](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:411/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/external-link-pattern-filter.png)
+![External link pattern filter](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:411/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/external-link-pattern-filter.png)
 
 After applying this filter, the data table will only show links that point to external domains.
 
@@ -813,7 +813,7 @@ Click tracking in Independent Analytics Pro is controlled via the Click Tracking
 
 The Click Tracking menu displays a list of “link patterns.” Whenever a visitor clicks on a link that matches one of these patterns, the click will be tracked.
 
-![Click Tracking menu](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:826/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/click-tracking-menu.png)
+![Click Tracking menu](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:826/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/click-tracking-menu.png)
 
 For example, the first link pattern is named “Buy Now,” and it will be triggered whenever a link with the class “buy-now” is clicked.
 
@@ -835,7 +835,7 @@ Tracking links by class is the best strategy if you want to measure clicks on a 
 
 You can track clicks on the signup button by adding a new Class pattern, like the example below:
 
-![New link tracked by class](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:548/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/new-link-tracked-by-class.png)
+![New link tracked by class](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:548/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/new-link-tracked-by-class.png)
 
 The pattern is named “Landing Page Signup Button,” the Class type is selected, and in the value field, the class name given is “track-signup-button.”
 
@@ -853,7 +853,7 @@ While classes are the recommended way to track clicks on specific buttons and li
 
 For example, imagine you add a chat plugin to your site, and it adds a button to the bottom of each page. The button doesn’t have a unique class you can add or a way to edit the HTML, but it does have an ID. In this scenario, you can track the button by using the ID.
 
-![ID link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:475/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/click-tracking-id-link-pattern.png)
+![ID link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:475/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/click-tracking-id-link-pattern.png)
 
 If you’d like to manually add an ID to an element by editing the HTML, here’s how you can do that:
 
@@ -865,7 +865,7 @@ If you’d like to manually add an ID to an element by editing the HTML, here’
 
 The extension pattern tracks clicks on links pointing to files. For example, if your site has downloadable CSV files and you want to see how often they’re clicked, you could do so like this:
 
-![Track clicks by file extension](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:544/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/track-clicks-by-file-extension.png)
+![Track clicks by file extension](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:544/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/track-clicks-by-file-extension.png)
 
 As long as the links point directly to a CSV file, their clicks will be tracked. This works whether the file is hosted on your website or if you’re linking to a file hosted elsewhere.
 
@@ -881,11 +881,11 @@ For example, imagine you’re linking to a product through this URL: https://you
 
 You could track these clicks by adding a subdirectory link pattern like this:
 
-![Subdirectory click tracking](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:494/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/subdirectory-click-tracking.png)
+![Subdirectory click tracking](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:494/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/subdirectory-click-tracking.png)
 
 Now, every time a visitor clicks on a link that goes through your **/go/** subdirectory, it will show up in the Clicks report like this:
 
-![Affiliate link clicks](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:769/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/affiliate-link-clicks.png)This report is filtered to only show the Affiliate Link clicks
+![Affiliate link clicks](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:769/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/affiliate-link-clicks.png)This report is filtered to only show the Affiliate Link clicks
 
 The Target URL column in the table lets you distinguish between your links. Using the example above, you could filter the Target URL by links that contain “green-tea,” and then you’d only see stats for the second link in the table.
 
@@ -897,7 +897,7 @@ In our experience, tracking all outbound clicks creates a lot of clutter. It’s
 
 By using the domain pattern, you can track clicks that point to specific domains only. For example, let’s say you have an Etsy shop, and you frequently link to your store. You could quickly track clicks on all links pointing to Etsy like this:
 
-![Domain link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:531/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/domain-link-pattern.png)
+![Domain link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:531/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/domain-link-pattern.png)
 
 If there are any links to your store that you want to track separately, you could add a tracked class to those links instead.
 
@@ -909,7 +909,7 @@ While most sites can stick to tracking a few individual domains, there are times
 
 Tracking all outbound links is easy with the External link pattern.
 
-![Adding External link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:530/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/adding-external-link-pattern.png)
+![Adding External link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:530/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/adding-external-link-pattern.png)
 
 This link pattern doesn’t require a value to be configured. Just add it to your list of patterns, and all clicks on outbound links will be tracked.
 
@@ -917,7 +917,7 @@ This link pattern doesn’t require a value to be configured. Just add it to you
 
 The protocol link pattern lets you track clicks on links with specific protocols. Links to webpages use the “https” protocol, but there are also protocols for links that send emails, make phone calls, and send text messages.
 
-![SMS protocol link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:644/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/sms-protocol-link-pattern.png)
+![SMS protocol link pattern](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:644/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/sms-protocol-link-pattern.png)
 
 Tracking for phone and email links is enabled by default, but you can easily [archive and delete](https://independentwp.com/knowledgebase/click-tracking/archive-delete-link-patterns/) these link patterns if you don’t need them. There is also an option to track SMS links that open text messaging when clicked.
 
@@ -969,13 +969,13 @@ Archiving is particularly useful if you make changes to your site that render so
 
 To archive a link pattern, simply click the **Archive** link on the right side.
 
-![Archive link](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:356/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/archive-link.png)
+![Archive link](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:356/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/archive-link.png)
 
 Once archived, the link pattern will be moved to the list below.
 
 You can click on the **Show Archived Links** button to open the full list of archived links.
 
-![Archived links](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:387/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/archived-links.png)
+![Archived links](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:387/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/archived-links.png)
 
 If you change your mind, you can always click the **Resume Tracking** button to start tracking clicks for this link pattern again.
 
@@ -1075,7 +1075,7 @@ iawp_click_processing
 
 . Hover your cursor over it and click the **Run now** link to execute it immediately.
 
-![Run click cron event now](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:626/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/run-click-cron-event-now.png)
+![Run click cron event now](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:626/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/run-click-cron-event-now.png)
 
 This will update the Clicks report immediately so you can make sure your new link pattern is getting tracked as expected.
 

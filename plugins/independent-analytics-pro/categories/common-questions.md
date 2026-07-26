@@ -20,7 +20,7 @@ If your site doesn’t use any caching via a plugin, your host, or a CDN, then t
 
 The vast majority of WordPress sites have caching enabled through a plugin like WP Super Cache, LiteSpeed Cache, WP Fastest Cache, etc.
 
-![Caching plugins](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:752/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/04/caching-plugins.png)You probably have one of these plugins installed
+![Caching plugins](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:752/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/04/caching-plugins.png)You probably have one of these plugins installed
 
 While the exact location of this option changes from one plugin to the next, they all include a one-click option to clear the cache. It may say “clear cache,” “empty cache,” or use similar language.
 
@@ -64,15 +64,15 @@ If your site is displaying a custom page on the homepage, then the Pages report 
 
 Alternatively, you may be displaying your latest posts on the homepage instead of a custom page, like this:
 
-![Blog set to homepage](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:768/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/blog-set-to-homepage.png)
+![Blog set to homepage](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:768/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/blog-set-to-homepage.png)
 
 If that’s the case for your website, then the homepage doesn’t have a title defined anywhere, so Independent Analytics gives it the title **Blog**, gives it the **Page Type** of **Blog**, and displays a home icon next to the page type.
 
-![Blog page type](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/blog-page-type.png)
+![Blog page type](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/blog-page-type.png)
 
 If you are displaying a custom page on your homepage and you’ve selected a different page to display your blog, Independent Analytics will use the blog page’s title and will use **Blog** as its **Page Type**, but showing a pencil icon instead.
 
-![Blog page type icon for non-homepage](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/blog-page-type-pencil.png)
+![Blog page type icon for non-homepage](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/03/blog-page-type-pencil.png)
 
 ---
 
@@ -94,7 +94,7 @@ Independent Analytics is designed as a privacy-friendly analytics tool, so it do
 
 If you look at your [Referrers report](https://independentwp.com/knowledgebase/dashboard/how-to-referrers-report/), the **Direct** referrer is most likely the top result in the data table.
 
-![Referrers table example](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:473/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/11/referrers-table-example.png)
+![Referrers table example](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:473/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/11/referrers-table-example.png)
 
 There are a few reasons why a visitor can be attributed to the **Direct** referrer.
 
@@ -224,7 +224,7 @@ Instead of figuring out where to implement a JavaScript code snippet yourself, I
 
 Unlike simple goal tracking, which can only record one goal value, this integration tracks eight different eCommerce metrics, like gross sales, refunds, and conversion rate. This data can be found in the Quick Stats, chart, and data table of every report.
 
-![WooCommerce sales data](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:546/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/woocommerce-sales-data-1.png)Here, you can see orders and net sales in the Referrers report
+![WooCommerce sales data](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:546/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/woocommerce-sales-data-1.png)Here, you can see orders and net sales in the Referrers report
 
 [Learn more about eCommerce analytics](https://independentwp.com/features/ecommerce-analytics).
 
@@ -236,7 +236,7 @@ There are over [20+ supported plugins](https://independentwp.com/knowledgebase/f
 
 You can then find the submission and conversion rate of every form, plus an aggregated value for all forms.
 
-![Mutiple forms available](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:697/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/mutiple-forms-available.png)Stats can be shown for all forms or any individual form
+![Mutiple forms available](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:697/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/11/mutiple-forms-available.png)Stats can be shown for all forms or any individual form
 
 This makes it simple to find out where your leads are coming from and which pages are converting visitors into leads most effectively.
 
@@ -248,11 +248,11 @@ Independent Analytics Pro uses an innovative “link pattern” system for simpl
 
 From the Click Tracking menu, you can choose exactly which links should be tracked. In a few clicks, you can track all clicks on PDF files or email links on your website. You can also track clicks to external domains and subdirectories or [track individual links with classes](https://independentwp.com/knowledgebase/click-tracking/add-class-editor/).
 
-![Click Tracking menu](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:826/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/click-tracking-menu.png)
+![Click Tracking menu](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:826/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/click-tracking-menu.png)
 
 You can then see how many clicks your tracked links are getting in the Clicks report.
 
-![Clicks report](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:783/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/clicks-report.png)
+![Clicks report](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:783/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/10/clicks-report.png)
 
 [Learn more about click tracking](https://independentwp.com/features/click-tracking/).
 
@@ -329,7 +329,7 @@ You will then see Independent Analytics in your Plugins menu, where you can acti
 
 If you install Independent Analytics and see the message below, it means your database prefix is longer than 25 characters.
 
-![Database prefix length warning](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:568/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/database-prefix-length-warning.png)
+![Database prefix length warning](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:568/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/database-prefix-length-warning.png)
 
 This can cause the tables created by Independent Analytics to exceed the 64-character limit enforced by MySQL. For that reason, it is required to shorten the DB prefix to less than 25 characters before using Independent Analytics.
 
@@ -337,7 +337,7 @@ The good news is that changing your DB prefix doesn’t require any technical sk
 
 Once you install this free plugin, you’ll find a new settings menu like this:
 
-![Brozzme plugin settings](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/brozzme-settings.png)
+![Brozzme plugin settings](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/07/brozzme-settings.png)
 
 All you have to do is enter a new prefix into the **New Prefix** field and click the **Change DB Prefix** button.
 
@@ -432,7 +432,7 @@ When Independent Analytics is installed, it adds a few tables to your database t
 
 If these tables are deleted, you will see the following error screen:
 
-![Missing db tables error](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:675/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/missing-db-tables-error.png)
+![Missing db tables error](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:675/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/missing-db-tables-error.png)
 
 When this occurs, it is usually because Independent Analytics was deleted, the tables were deleted manually or with a database cleaning plugin, and then Independent Analytics was reactivated.
 
@@ -490,19 +490,19 @@ The first step is to access your site’s database. If you login to your hosting
 
 Inside phpMyAdmin, start by selecting your site’s database in the left sidebar, and then click on the **Privileges** tab at the top of the screen.
 
-![Privileges tab](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:489/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/privileges-tab.png)
+![Privileges tab](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:489/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/privileges-tab.png)
 
 If your sidebar has numerous databases and you’re not sure which one is for your site, check your site’s wp-config.php file. It will include the database name (DB_NAME) at the top of the file. You’ll find the database username right below it, which you’ll need in the next step.
 
-![Db credentials](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:351/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/db-credentials.png)
+![Db credentials](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:351/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/db-credentials.png)
 
 In the Privileges menu, locate your site’s database user and click the **Edit privileges** link.
 
-![Edit privileges](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:619/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/edit-privileges.png)
+![Edit privileges](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:619/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/edit-privileges.png)
 
 Lastly, check the box next to each privilege Independent Analytics needs, and then press the **Go** button at the bottom to save your changes.
 
-![Required permissions](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:948/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/required-permissions.png)
+![Required permissions](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:948/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/03/required-permissions.png)
 
 Most likely, you only need to check the box next to ALTER and/or INDEX and then click the **Go** button to save. However, the full required permissions are SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, and DROP.
 
@@ -532,7 +532,7 @@ Yes, Independent Analytics is fully compatible with right-to-left languages like
 
 Here’s a preview of the dashboard in RTL display:
 
-![RTL interface](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:773/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/02/rtl-interface.png)
+![RTL interface](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:773/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/02/rtl-interface.png)
 
 ---
 
@@ -556,13 +556,13 @@ It is also compatible with the Polylang translation plugin.
 
 Independent Analytics uses the same timezone set here in the **General Settings** menu:
 
-![Timezone setting](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:408/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/timezone-setting.png)
+![Timezone setting](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:408/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/timezone-setting.png)
 
 If you haven’t configured a timezone there already, make sure to do that now. This will ensure that your analytics match your local time. It’s also important to set your timezone here because it’s used by other plugins and WP features, such as scheduling posts.
 
 While editing the timezone, you can also edit the date and time formats:
 
-![Date and time format settings](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:753/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/date-time-format.png)
+![Date and time format settings](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:753/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/date-time-format.png)
 
 These formats are both used by Independent Analytics when displaying dates and times.
 
@@ -574,7 +574,7 @@ These formats are both used by Independent Analytics when displaying dates and t
 
 When Independent Analytics updates, it is normal to see the following screen immediately following the update:
 
-![Update is running](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:706/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/update-is-running.png)
+![Update is running](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:706/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/update-is-running.png)
 
 In some updates, we need to make large changes to the structure of the database tables. For small sites, this takes seconds, but for sites with hundreds of thousands of visitors, it can take a couple of minutes.
 
@@ -606,11 +606,11 @@ If you’re experiencing an error on your site, a great first step is to enable 
 
 The easiest way to enable debugging is to install and activate the [Debug Log Manager](https://wordpress.org/plugins/debug-log-manager/) plugin.
 
-![Debug log manager](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:461/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/debug-log-manager.png)
+![Debug log manager](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:461/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/debug-log-manager.png)
 
 After installing and activating this plugin, visit the **Tools > Debug Log Manager** menu. Then, enable the **Error Logging** option at the top of the page.
 
-![Enable error logging](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/enable-error-logging.png)
+![Enable error logging](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/enable-error-logging.png)
 
 Any error messages that get triggered will now be captured here in the log. Each error will only show up once, which makes the log much easier to read. You can see how many times each error occurred on the right side of the page.
 
@@ -648,13 +648,13 @@ After the error is resolved, you can delete the three lines of code added to you
 
 If you install Independent Analytics and see the message below, it means your site doesn’t have the PDO PHP extension installed:
 
-![Missing pdo extension](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:525/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/missing-pdo-extension.png)
+![Missing pdo extension](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:525/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/missing-pdo-extension.png)
 
 While that may sound very technical, correcting this issue is easy.
 
 Start by logging into your hosting account. If your host is using cPanel (most do), locate the “Select PHP version” tool and click on it. You’ll be taken to this page, where you can enable PHP extensions.
 
-![Php extensions cpanel](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:480/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/php-extensions-cpanel.png)
+![Php extensions cpanel](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:480/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/08/php-extensions-cpanel.png)
 
 All you have to do is check the 
 ```
@@ -721,17 +721,17 @@ You can Network Activate it to enable it for all sites on your network, and they
 
 If you are using Independent Analytics Pro, you can Network Activate it just like the free version. Then, you can visit the **Plugins** menu, scroll to the Independent Analytics Pro, and click on the **Activate License** link. You’ll see a pop-up where you can enter your license key, and there is a box checked by default to activate the license for all sub-sites.
 
-![Activate license multisite](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:678/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/activate-license-multisite.png)
+![Activate license multisite](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:678/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/activate-license-multisite.png)
 
 **Please note that each subsite counts as a full website, so this will only be possible if your license key has enough activations for all sites in the network.**
 
 If you uncheck the box, you’ll have the option to choose which sub-sites you want to activate the license key on.
 
-![Activate license choose subsites](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:924/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/activate-license-choose-subsites.png)
+![Activate license choose subsites](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:924/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/activate-license-choose-subsites.png)
 
 If you want to make a change to which sub-sites are activated in the future, you can visit the **Network Admin > Independent Analytics > Account** menu. You will find a **Sites** section there where you can activate/deactivate the license key on individual sub-sites.
 
-![Manually activate license subsites](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:386/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/manually-activate-license-subsites.png)
+![Manually activate license subsites](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:386/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/05/manually-activate-license-subsites.png)
 
 ---
 
@@ -787,17 +787,17 @@ Other analytics programs, like Google Analytics, only know about the front end o
 
 That’s why a typical URL-based analytics dashboard gives you a list of URLs along with their metrics:
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:576/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/google-analytics-example.png)A list of URLs with only metrics in the other columns
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:576/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/google-analytics-example.png)A list of URLs with only metrics in the other columns
 
 Independent Analytics is different because it is integrated with WordPress and tracks your pages, not your URLs.
 
 It reports additional information about your pages, like the author, page type, and post category.
 
-![](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:639/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/wordpress-integration-1800.png)A list of pages with both metrics and properties included
+![](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:639/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/06/wordpress-integration-1800.png)A list of pages with both metrics and properties included
 
 Since every column is filterable, you can use the additional properties to find things like podcast episodes published this month or blog posts that have more than 400 views.
 
-![Filtered and unfiltered Quick Stats](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:594/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/unfiltered-quick-stats-1024x594.png)
+![Filtered and unfiltered Quick Stats](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:594/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/12/unfiltered-quick-stats-1024x594.png)
 
 Another major benefit is that you can make changes to your pages and those changes show up retroactively. For instance, you can change the URL of a page or even migrate to a new domain, and the URLs will already be updated when you next view the dashboard.
 
@@ -933,7 +933,7 @@ The tracking script uses the WordPress REST API to asynchronously record page vi
 
 If you measure your performance before and after installing Independent Analytics, you should see no difference, like on the Compete Themes website, which scored 100% on GTMetrix both before and after adding the Independent Analytics plugin.
 
-![GT Metrix](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:387/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/gt-metrix.png)
+![GT Metrix](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:387/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/08/gt-metrix.png)
 
 ---
 

@@ -96,7 +96,7 @@ With real cron events configured, the email report will be delivered precisely a
 
 Independent Analytics Pro can send an automated HTML email report to numerous recipients.
 
-Here’s what the email report looks like: [View full preview](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/07/html-email-report.png)
+Here’s what the email report looks like: [View full preview](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/07/html-email-report.png)
 
 As you can see, it includes the Quick Stats, a chart of your daily views, and Top 10 lists for your:
 
@@ -118,17 +118,17 @@ First, visit the **Settings** menu and locate the **Email Report** section.
 
 In the **Email Report** section, start by choosing the interval you want the email to be delivered. You can choose between daily, weekly, or monthly delivery.
 
-![Email delivery interval](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:547/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/email-delivery-interval.png)
+![Email delivery interval](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:547/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/email-delivery-interval.png)
 
 If you choose **Daily**, you’ll receive an email every day showing yesterday’s stats. If you choose **Weekly**, the email will be sent once a week and include the prior week’s data. It will be delivered on the [first day of the week](https://independentwp.com/knowledgebase/dashboard/change-starting-day-week/) as selected in the settings. Lastly, if you choose **Monthly**, you’ll receive an email on the 1st of the month with data from the last month.
 
 Next, you can choose the time of day you want the email to be delivered using the **Delivery Time** setting.
 
-![Email report delivery time](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:768/h:549/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/email-report-delivery-time.png)
+![Email report delivery time](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:768/h:549/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/email-report-delivery-time.png)
 
 To add a recipient, enter your email address into the **Add new email address** input, then click the **Add email** button. Repeat this for as many email addresses as you want, then click the **Save settings** button.
 
-![Email report add email](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:510/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/email-report-add-email.png)
+![Email report add email](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:510/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/email-report-add-email.png)
 
 If you enter more than one email address, the additional addresses will be BCC’d, so they’ll see the email as being delivered to the first recipient only.
 
@@ -136,13 +136,13 @@ Once your email address is entered, you can click the **Send test email** button
 
 You’ll also see a notice at the top of the settings confirming the time and date of your next scheduled email.
 
-![Next email notice](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:547/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/next-email-notice.png)
+![Next email notice](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:547/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/next-email-notice.png)
 
 ### Changing the From address
 
 By default, the email report will use the site’s admin email address configured in the main Settings menu as the From address. However, you can change it to another address if you’d like.
 
-![From email address](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:590/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/from-email-address.png)
+![From email address](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:590/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/from-email-address.png)
 
 If you change the email address, please make sure the email is coming from the same domain as your website. For example, if your website is example.com, you could send the email from hello@example.com. If you use an email address like example@gmail.com, it is likely to get marked as spam and not arrive in your inbox.
 
@@ -150,7 +150,7 @@ If you change the email address, please make sure the email is coming from the s
 
 You can also set a custom reply-to email address. For most users, this won’t be necessary, but if you’re sending the email report to clients who might respond with questions, you can customize this field with the best email address for them to respond to.
 
-![Reply-To email address](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:590/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/reply-to-email-address.png)
+![Reply-To email address](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:590/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/reply-to-email-address.png)
 
 ### Customizing the footer text
 
@@ -158,7 +158,7 @@ There is a sentence that appears in the footer of the email, which by default re
 
 You can customize this text to say whatever you would like by updating the **Email footer text** field.
 
-![Email footer text setting](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:528/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/email-footer-text-setting.png)
+![Email footer text setting](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:528/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/email-footer-text-setting.png)
 
 Only plain text is allowed at this time (no HTML).
 
@@ -166,11 +166,11 @@ Only plain text is allowed at this time (no HTML).
 
 If you are sending daily email reports to your team, you may want to pause delivery around the holidays. To do so, you can click the **Pause Emails** button inside the notice with the next scheduled delivery date.
 
-![Pause emails](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:456/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/pause-emails.png)
+![Pause emails](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:456/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/pause-emails.png)
 
 The notice will update to let you know that email delivery has been paused.
 
-![Resume emails](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:449/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/resume-emails.png)
+![Resume emails](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:449/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/resume-emails.png)
 
 Emails will not begin sending again until the **Resume Emails** button is clicked.
 
@@ -178,21 +178,21 @@ Emails will not begin sending again until the **Resume Emails** button is clicke
 
 There are also ten settings available to customize the colors of the email.
 
-![Customize email colors](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/customize-email-colors.png)
+![Customize email colors](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/09/customize-email-colors.png)
 
 We recommend using a primary color along with a brighter and darker variation of that color. For the text, use a very light or dark color that will have ample contrast with the background color.
 
 For example, here’s a look at what the email would look like with the purple header and sub-header backgrounds replaced with complementary shades of blue.
 
-![Email with custom colors](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:528/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/email-custom-colored.png)
+![Email with custom colors](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:528/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/01/email-custom-colored.png)
 
 When customizing the colors, you can click the **Preview email** button to see how the email looks.
 
-![Preview email button](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:565/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/preview-email-button.png)
+![Preview email button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:565/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/preview-email-button.png)
 
 The preview will show up in a pop-up like this:
 
-![Email preview](https://mlqmtwka8c9g.i.optimole.com/cb:_IbR.2056f/w:1024/h:584/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/email-preview.png)
+![Email preview](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:584/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2024/04/email-preview.png)
 
 This is faster and easier than sending a test email every time you want to preview your color changes.
 
