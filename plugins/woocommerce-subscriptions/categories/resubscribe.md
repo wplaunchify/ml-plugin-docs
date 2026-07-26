@@ -14,7 +14,7 @@
 
 ## How Resubscribes Work
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Resubscribing allows a customer to extend their old subscription’s terms into a new subscription right from their [“My Account” page](https://woocommerce.com/document/subscriptions/customers-view/#my-account-pages).
 
@@ -24,13 +24,13 @@ Resubscribing to a subscription that ended will create a new subscription for th
 
 ### Free Trials on Resubscribe
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If the subscription has a free trial, the **customer will not receive the free trial again** when resubscribing. If you want to offer your customer’s a second free trial, you could provide them with a [limited payments coupon](https://woocommerce.com/document/subscriptions/subscriptions-coupons/limited-payment-coupon-guide/) to discount the price instead.
 
 ### Product Price Changes
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If the prices for any product line items on the subscription have changed, the **customer’s new subscription will continue to have the original, older prices**.
 
@@ -42,7 +42,7 @@ You can manually modify the prices of existing subscriptions through the [Edit S
 
 ### Resubscribing with Coupons
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If the original subscription has coupons applied to discount the recurring cost, those coupons won’t apply automatically upon resubscribing. You can manually apply either the existing coupons or other coupons during the resubscribe process using the normal [Cart -> Checkout process](https://woocommerce.com/document/subscriptions/customers-view/subscribers-resubscribe-guide/).
 
@@ -57,7 +57,7 @@ If you want to provide coupons automatically to users when they resubscribe, [Au
 
 ### Sign-up Fees on Resubscribe
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If the subscription has a sign-up fee, the customer doesn’t pay the sign-up fee again to resubscribe.
 
@@ -65,7 +65,7 @@ The exception to this is when the subscription has a **$0 recurring total**. Sub
 
 ### Billing Schedule after Resubscribing
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If a subscription is *cancelled* or *expired*, the **billing schedule for the new subscription is the date the customer resubscribes**.
 
@@ -73,7 +73,7 @@ For example, a customer has a $10/month subscription renewing on the 1st of the 
 
 ### Billing Schedule for Subscriptions Pending Cancellation
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If the subscription’s status is *pending cancellation*, the **billing schedule for the new subscription is based on the pre-paid term of the existing subscription**.
 

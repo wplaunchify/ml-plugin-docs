@@ -16,7 +16,7 @@ To prevent processing duplicate payments on a clone of your site, WooCommerce Su
 
 ## What is Considered a Staging Site?
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 WooCommerce Subscriptions will keep a record of the URL of the site where it is first activated. It considers this to be the *live site* and will run in live mode. If the site’s URL then changes, it considers the new site to be a *staging site* and it will run in staging mode.
 
@@ -43,7 +43,7 @@ siteurl
 
 ## Duplicate Site Warning
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 You will know when the site is in staging mode because Subscriptions will display a warning in the administration area of your site. This notice also shows which URL Subscriptions considers to be the live site.
 
@@ -74,7 +74,7 @@ You will find a row labeled Subscriptions Live URL below this section. This show
 
 ## Manual Renewals in Staging Mode
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 In order to prevent collecting duplicate payments from your customers on a staging site, all subscriptions on the staging site will use the[manual renewal process](https://woocommerce.com/document/subscriptions/renewal-process/#manual-recurring-payments). Your live site will continue to take payments as normal. When this occurs, all the subscriptions listed in the **WooCommerce > Subscriptions** admin table will be *Manual Renewal*. To view the “live” payment method, you can hover over the 
 ```
@@ -93,7 +93,7 @@ If you want to take automatic payments on your staging site site, it is possible
 
 ## Enabling Automatic Payments on a Staging Site
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 To switch your site from *Staging Mode* to *Live Mode*:
 
@@ -150,7 +150,7 @@ You can also use the [WooCommerce Subscriptions Upstage plugin](https://github.c
 
 ## Email Behavior in Staging Mode
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 Subscriptions in staging modewill not send any[subscription-related emails](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscription-emails). **Any emails sent or managed by WordPress, WooCommerce, or another plugin may still be sent from your staging site.** To block all emails from your site, install a plugin like [Disable Emails](https://wordpress.org/plugins/disable-emails/).
 
@@ -158,7 +158,7 @@ If you want to send subscription-related emails on your staging site, it is poss
 
 ### Enabling Subscriptions Emails on a Staging Site
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 If you would like to enable subscription-related emails on a staging site, you can define the 
 ```
@@ -190,7 +190,7 @@ define( 'WCS_FORCE_EMAIL', true );
 
 ## Enable Staging Mode for WooCommerce Subscriptions
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 It is possible to switch a live site to staging by editing the 
 ```
@@ -225,7 +225,7 @@ wc_subscriptions_siteurl
 
 ## Database Migration
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 When migrating your site’s database from one server to another server, there are additional considerations.
 
@@ -236,7 +236,7 @@ If you have migrated your site’s database and kept the same domain name, the n
 
 ## Decommission Your Old Site
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 To decommission the old site and avoid any issues with duplicate payments or emails, you must do at least one of the following:
 
@@ -252,7 +252,7 @@ Without completing one of these steps, your old site will continue to process re
 
 ## Disabling All Scheduled Events
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 When Subscriptions is in staging mode, it still triggers [scheduled renewals](https://woocommerce.com/document/subscriptions/renewal-process/) and other scheduled events, like expiration, by default. It won’t attempt any payments or send emails for these events, but it will initiate the event as it would on the live site.
 
@@ -266,7 +266,7 @@ The [Action Scheduler – Disable Default Runner](http://github.com/prospress/ac
 
 ## Why Renewal Payments May Not Process on Live Sites
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 When Subscriptions processes a renewal in Staging mode, it adds the following note to the order notes:
 
@@ -303,7 +303,7 @@ Serving your site under a single URL is good practice as it has other benefits, 
 
 ## Questions and support
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 **Something missing from this documentation? Still have questions and need assistance?**
 
