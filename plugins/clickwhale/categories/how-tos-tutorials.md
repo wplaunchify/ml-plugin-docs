@@ -693,6 +693,14 @@ QR codes offer a fast and user-friendly way to:
 
 📈 Track and manage all your traffic through ClickWhale analytics
 
+## QR Codes and the ClickWhale Link Manager
+
+ClickWhale generates a QR code for links saved in the Link Manager. Before creating a QR code, you need to create or import the link you want to share.
+
+If you have not created a link yet, follow our guide on [how to shorten links and create redirects](https://clickwhale.pro/docs/article/how-to-shorten-links-and-create-redirects/).
+
+Once your link is available in ClickWhale, you can generate and download its QR code from the link editor. The QR code directs visitors to your ClickWhale short link, allowing you to update the target URL later without replacing the printed QR code.
+
 ## How to Generate a QR Code in ClickWhale
 
 It only takes a few clicks:
@@ -727,42 +735,184 @@ You can now use your QR code anywhere you’d like to share that link visually�
 
 **Source:** [https://clickwhale.pro/docs/article/how-to-use-the-keyword-auto-linker/](https://clickwhale.pro/docs/article/how-to-use-the-keyword-auto-linker/)
 
-The Keyword Auto Linker feature allows you to create links within ClickWhale and define keywords that will be automatically replaced with those links throughout posts, pages, and custom post types, if preferred.
+**Automatically convert keywords into ClickWhale links across your website.**
+
+The **Keyword Auto Linker** lets you assign keywords to your ClickWhale links and automatically converts matching words or phrases into clickable links on supported areas of your website.
+
+With the Keyword Auto Linker, you can:
+
+- Automatically link keywords in posts, pages, and custom post types.
+- Control where keywords are processed, including archive pages and other supported content areas.
+- Manage keyword linking without editing your original WordPress content.
+
+**Note:** The Keyword Auto Linker is available with **ClickWhale Pro**.
 
 🎥 **Prefer to watch instead?**
-Here’s a quick video tutorial showing how to use ClickWhale’s Keyword Auto Linker — from setup to seeing it in action:
+Watch the video tutorial below to learn how to assign keywords, configure the global settings, and see how the Keyword Auto Linker works on your website.
 
 Whether you prefer watching or reading, here’s a complete guide to help you use ClickWhale’s Keyword Auto Linker. 👇
 
-## Setup Keywords for Links
+## How the Keyword Auto Linker Works
 
-Add the keywords by navigating to **ClickWhale > Links**. Once you created a link, go to the ‘**Keyword Auto Linker**’ tab and proceed adding the keywords. Make sure to click the ‘Save link’ button once you are done.
+The **Keyword Auto Linker** works with ClickWhale’s **Link Manager** to automatically convert assigned keywords into clickable links across your website. After you assign keywords to a ClickWhale link, the plugin scans supported content and generates links dynamically when visitors view the page.
 
-![How To Use Keyword Auto linker 1st set up](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-use-keyword-autolinker-1-1024x497.png)
+The process is simple:
 
-You may add up to 10 keywords. Click ‘**Add More**’ to add more keywords.
+1. Create a ClickWhale link and set its destination URL.
+2. Assign one or more keywords to the link.
+3. Choose where the Keyword Auto Linker should process those keywords.
+4. Visit your website to see the assigned keywords automatically converted into clickable links.
 
-## Quick view of Keywords Linked
+**Note:** The Keyword Auto Linker does not permanently modify your posts or pages. Links are generated dynamically on the frontend, so your original WordPress content remains unchanged.
 
-The **Links Overview Page** will show you the set-up keywords for every link. To go there, hover to **ClickWhale** and click **Links**. You will be redirected to the link overview page.
+If you haven’t created a ClickWhale link yet, see our [How-to Shorten Links and Create Redirects](https://clickwhale.pro/docs/article/how-to-shorten-links-and-create-redirects/) guide before continuing.
 
-![How To Use Keyword Auto linker 2nd set up](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-use-keyword-autolinker-2-1024x257.png)
+## Assign Keywords to a Link
 
-## How it goes
+Once you’ve created a ClickWhale link, you can assign one or more keywords that will automatically be converted into clickable links across supported areas of your website.
 
-Below is the sample article that has the keyword auto linker.
+To assign keywords:
 
-![How To Use Keyword Auto linker 3rd set up](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-use-keyword-autolinker-3-1024x933.png)
+1. From your WordPress dashboard, go to **ClickWhale → Links**.
+2. Create a new link or edit an existing one.
+3. Open the **Keyword Auto Linker** tab.
+4. Enter the word or phrase you want ClickWhale to automatically link.
+5. Select **Add More** to assign additional keywords, if needed.
+6. Click **Save Link** to apply your changes.
 
-## Global settings for the Keyword Auto Linker
+**Note:** You can assign up to **10 keywords** to a single ClickWhale link.
+**Tip:** Choose keywords that are relevant to your destination page and review the affected content after saving to ensure links appear in the intended locations.
 
-Adjust the keyword auto linker based on your requirements.
+![Image](https://clickwhale.pro/wp-content/uploads/2024/10/image-23-1024x801.png)
 
-Navigate to ClickWhale > Settings >> Keyword Auto Linker tab.
+## View Assigned Keywords
 
-Configure the settings according to your requirements, such as disabling the auto linker, setting the replacement limit, choosing the link target, and specifying whether to replace keywords in HTML Headings, Archive pages, Front page, blog page, post types and ACF fields. Once done, click ‘Save changes’.
+After assigning keywords to a ClickWhale link, you can quickly review them from the **Links** overview page.
 
-![Configure Keyword Auto Linker](https://clickwhale.pro/wp-content/uploads/2024/10/CW-KW-Autolinker-settings-998x1024.png)
+To view the assigned keywords:
+
+1. From your WordPress dashboard, go to **ClickWhale → Links**.
+2. Locate the link you want to review.
+3. Check the **Keywords** column to see the keywords currently assigned to that link.
+
+If you need to update the assigned keywords, edit the link, open the **Keyword Auto Linker** tab, make your changes, and click **Save Link**.
+
+![Image](https://clickwhale.pro/wp-content/uploads/2024/10/image-21-1024x221.png)
+
+## Configure the Global Keyword Auto Linker Settings
+
+The global Keyword Auto Linker settings let you control how and where ClickWhale automatically converts assigned keywords into links across your website.
+
+To access these settings:
+
+![Image](https://clickwhale.pro/wp-content/uploads/2024/10/image-20-999x1024.png)
+
+### Available Settings
+
+#### Disable Keyword Auto Linker
+
+Enable or disable the Keyword Auto Linker without removing your assigned keywords. When disabled, ClickWhale will stop automatically converting keywords into links until the feature is enabled again.
+
+#### Replacement Limit
+
+Set the maximum number of keyword replacements allowed on a single page. This helps prevent the same keyword from being linked too many times within the same piece of content.
+
+#### Link Target
+
+Choose whether automatically generated links open in the **same browser tab** or a **new tab**.
+
+#### HTML Headings
+
+Enable or disable keyword replacements within HTML heading tags (H1–H6). Disable this option if you don’t want keywords in headings to become clickable links.
+
+#### Archive Pages
+
+Choose whether the Keyword Auto Linker should process keywords on archive pages, such as category or tag archives.
+
+#### Front Page
+
+Enable keyword linking on your website’s front page.
+
+#### Blog Page
+
+Enable keyword linking on the page assigned to display your latest blog posts.
+
+#### Post Type
+
+Select which post types the Keyword Auto Linker should scan for assigned keywords, including posts, pages, and supported custom post types.
+
+#### ACF Fields
+
+Enable keyword linking within supported content stored in **Advanced Custom Fields (ACF)**.
+
+**Tip:** After saving your settings, visit a page containing one of your assigned keywords to verify that the links appear as expected. If you don’t see the changes immediately, clear your website, server, or CDN cache.
+
+## See the Keyword Auto Linker in Action
+
+Once you’ve assigned keywords and configured the global settings, ClickWhale will automatically convert matching keywords into clickable links when visitors view your website.
+
+For example, if you assign the keyword **“ClickWhale”** to one of your ClickWhale links, any matching occurrences of that keyword within supported content areas can automatically become clickable links on the frontend.
+
+![Image](https://clickwhale.pro/wp-content/uploads/2024/10/image-22.png)
+
+**Note:** The Keyword Auto Linker generates links dynamically when the page is displayed. It does not permanently insert links into the content stored in the WordPress editor or database.
+
+Because these links are generated on the frontend, they won’t appear in your saved post or page content. As a result, the **Link Scanner** cannot detect automatically linked keywords.
+
+If you’d like to learn more, see our guide on [Understanding Link Scanner Results.](https://clickwhale.pro/docs/article/understanding-link-scanner-results/)
+
+## FAQ’s
+
+**What is the Keyword Auto Linker?**
+
+The Keyword Auto Linker automatically converts assigned words or phrases into ClickWhale links when visitors view your website. The links are generated dynamically on the frontend, so your original WordPress content remains unchanged.
+
+**Do I need to create a ClickWhale link first?**
+
+Yes. Before assigning keywords, you’ll need to create a new ClickWhale link or edit an existing one through the **Link Manager**.
+
+**Does the Keyword Auto Linker modify my content?**
+
+No. The Keyword Auto Linker does not change the content stored in your WordPress editor or database. Instead, it generates links dynamically when the page is displayed to visitors.
+
+**How many keywords can I assign to a single link?**
+
+You can assign up to **10 keywords** to a single ClickWhale link. To add more than one keyword, use the **Add More** option in the Keyword Auto Linker tab.
+
+**Can I limit how many times a keyword is linked?**
+
+Yes. Use the **Replacement Limit** setting to control the maximum number of times assigned keywords are automatically linked on a page
+
+**Can I choose where keywords are automatically linked?**
+
+Yes. The global Keyword Auto Linker settings allow you to choose where keywords are processed, including supported post types, archive pages, the front page, the blog page, HTML headings, and supported ACF fields.
+
+**Can I prevent keywords from being linked inside headings?**
+
+Yes. Disable the **HTML Headings** option in the Keyword Auto Linker settings if you don’t want keywords inside heading tags to be converted into links.
+
+**Can automatically generated links open in a new tab?**
+
+Yes. Configure the **Link Target** setting to choose whether automatically generated links open in the current tab or a new browser tab.
+
+**Why isn’t my keyword being converted into a link?**
+
+If a keyword isn’t being linked, check the following:
+
+- The keyword has been assigned to the correct ClickWhale link.
+- You clicked **Save Link** after adding or updating the keyword.
+- The Keyword Auto Linker is enabled in the global settings.
+- The appropriate post type or content area is enabled.
+- The replacement limit has not been reached.
+- Your website, server, or CDN cache has been cleared.
+
+**Why doesn’t the Link Scanner detect auto-linked keywords?**
+
+The Link Scanner only checks links stored in your WordPress database. Since the Keyword Auto Linker generates links dynamically on the frontend, those links don’t exist in the saved content and therefore aren’t detected by the scanner.
+
+**Can I temporarily disable the Keyword Auto Linker?**
+
+Yes. Go to **ClickWhale → Settings → Keyword Auto Linker**, disable the feature, and save your changes. Your assigned keywords will remain attached to their ClickWhale links and can be re-enabled at any time.
 
 ---
 
@@ -929,6 +1079,40 @@ Upon completing all customizations and selections, click the **Run Importer** bu
 A list of the successfully uploaded links will be displayed.
 
 And you’re done. You may return to the Links tab and review all the uploaded links. Just click the ‘**Go To Links**’ button.
+
+## FAQ’s
+
+**What file format is required to import links?**
+
+ClickWhale imports links using a **CSV file**. Before importing, make sure your links are saved in CSV format.
+
+**Can I customize how my CSV columns are imported?**
+
+Yes. During the **Column Mapping** step, you can choose which columns from your CSV file correspond to the available ClickWhale link fields.
+
+**Can I edit imported links before completing the import?**
+
+Yes. The **Edit Fields** step lets you review your imported links and modify settings before running the importer. For example, you can enable attributes such as **nofollow** or **sponsored** for your links.
+
+**What happens after the import is complete?**
+
+After the importer finishes, ClickWhale displays a list of the successfully imported links. You can then select **Go To Links** to review and manage them in the **Links** section.
+
+**Will importing links overwrite my existing ClickWhale links?**
+
+No. The import process adds the links from your CSV file. If you need to modify existing links, review them after the import is complete.
+
+**Can I change the column mapping for different CSV files?**
+
+Yes. Each time you import a CSV file, you can configure the column mapping to match the structure of that file before continuing with the import.
+
+**What should I do if some imported data doesn’t appear correctly?**
+
+Check that your CSV file is formatted correctly and verify the column mapping before running the importer. Incorrect column mapping may cause data to be assigned to the wrong fields.
+
+**Can I edit imported links after the import is complete?**
+
+Yes. Once the import is finished, you can edit any imported link from **ClickWhale > Links**, just like links created manually.
 
 ---
 

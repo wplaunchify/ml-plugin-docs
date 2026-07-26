@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T12:26:43.431Z",
+  "last_updated": "2026-07-26T12:27:18.035Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -218,7 +218,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-07-19T12:21:43.966Z",
+      "last_scraped": "2026-07-26T12:27:15.994Z",
       "page_count": 19,
       "categories": [
         "account-licenses",
@@ -3548,7 +3548,7 @@
       "slug": "wp-fusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-26T12:26:43.431Z",
+      "last_scraped": "2026-07-26T12:26:43.419Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
