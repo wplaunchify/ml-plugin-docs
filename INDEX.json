@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T01:36:14.749Z",
+  "last_updated": "2026-07-26T01:36:22.960Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -109,7 +109,7 @@
       "slug": "affiliatewp-external-referral-links",
       "name": "AffiliateWP - External Referral Links",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-26T00:41:44.346Z",
+      "last_scraped": "2026-07-26T00:41:44.342Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
@@ -119,7 +119,7 @@
       "slug": "affiliatewp-lifetime-commissions",
       "name": "AffiliateWP - Lifetime Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-07-19T22:17:53.061Z",
+      "last_scraped": "2026-07-19T22:17:53.056Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
@@ -208,7 +208,7 @@
       "slug": "block-visibility",
       "name": "Block Visibility",
       "documentation_url": "https://www.blockvisibilitywp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-07-26T01:36:14.749Z",
+      "last_scraped": "2026-07-26T01:36:14.747Z",
       "page_count": 26,
       "categories": [
         "uncategorized"
@@ -232,7 +232,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-07-19T23:17:27.736Z",
+      "last_scraped": "2026-07-19T23:17:27.734Z",
       "page_count": 78,
       "categories": [
         "uncategorized"
@@ -596,7 +596,7 @@
       "slug": "fluent-support",
       "name": "Fluent Support",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-07-19T21:18:50.675Z",
+      "last_scraped": "2026-07-19T21:18:50.672Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -706,7 +706,7 @@
       "slug": "fluentbooking-appointment-scheduling-booking-solution",
       "name": "FluentBooking - Appointment Scheduling & Booking Solution",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-07-26T00:32:02.406Z",
+      "last_scraped": "2026-07-26T00:32:02.397Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -2545,7 +2545,7 @@
       "slug": "preview-e-mails-for-woocommerce",
       "name": "Preview E-mails for WooCommerce",
       "documentation_url": "https://wordpress.org/plugins/woo-preview-emails/",
-      "last_scraped": "2026-07-26T01:34:18.373Z",
+      "last_scraped": "2026-07-26T01:34:18.371Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2621,7 +2621,7 @@
       "slug": "searchwp",
       "name": "SearchWP",
       "documentation_url": "https://searchwp.com/documentation/",
-      "last_scraped": "2026-07-26T00:21:47.399Z",
+      "last_scraped": "2026-07-26T00:21:47.397Z",
       "page_count": 57,
       "categories": [
         "uncategorized"
@@ -2631,7 +2631,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-07-19T21:17:35.764Z",
+      "last_scraped": "2026-07-19T21:17:35.761Z",
       "page_count": 11,
       "categories": [
         "detective-mode",
@@ -2810,7 +2810,7 @@
       "slug": "taxopress",
       "name": "TaxoPress",
       "documentation_url": "https://taxopress.com/docs/documentation/",
-      "last_scraped": "2026-07-26T01:33:17.466Z",
+      "last_scraped": "2026-07-26T01:33:17.460Z",
       "page_count": 232,
       "categories": [
         "accounts",
@@ -3242,7 +3242,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/",
-      "last_scraped": "2026-07-19T22:16:08.265Z",
+      "last_scraped": "2026-07-19T22:16:08.260Z",
       "page_count": 13,
       "categories": [
         "activation",
@@ -3859,8 +3859,8 @@
       "slug": "wp-social-ninja",
       "name": "WP Social Ninja",
       "documentation_url": "https://docs.wpsocialninja.com/guide/",
-      "last_scraped": "2026-07-19T01:36:46.028Z",
-      "page_count": 92,
+      "last_scraped": "2026-07-26T01:36:21.289Z",
+      "page_count": 94,
       "categories": [
         "advanced-features",
         "ai-integration",
@@ -3992,7 +3992,7 @@
       "slug": "wpfusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-26T00:38:58.894Z",
+      "last_scraped": "2026-07-26T00:38:58.882Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",

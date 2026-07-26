@@ -492,7 +492,7 @@ If you have any questions or need further assistance, feel free to reach out to 
 
 # Facebook Feed Configuration ​
 
-WP Social Ninja easily connects with your Facebook account, letting you display your Facebook Page activity on your website. This article will guide you on how to connect your Facebook Page events to your site.
+WP Social Ninja easily connects with your Facebook account, letting you display your Facebook Page activity on your website. Facebook connects through WP Social Ninja's [secure connection bridge](../getting-started/connecting-your-accounts), so all it takes is logging in and granting permission — no developer app required. This article will guide you on how to connect your Facebook Page events to your site.
 
 ## Enable Facebook Feed ​
 
@@ -508,7 +508,7 @@ A pop-up will appear to configure your Facebook account. Click **Continue with F
 
 Click on the Continue button here to give access to your WP Social Ninja.
 
-![Wp Social Ninja Facebook Permission Access](https://docs.wpsocialninja.com/assets/facebook-feed-3.D-NvEQCB.webp)
+![Wp Social Ninja Facebook Permission Access](https://docs.wpsocialninja.com/assets/facebook-feed-3.CiYP7wcu.webp)
 
 You will be redirected to the WP Social Ninja Platform Page, where a pop-up will prompt you to select one or more Facebook Pages to display events on your website.
 
@@ -903,7 +903,7 @@ To learn the detailed process of how to convert a Personal Instagram Account int
 
 Show your Instagram Business Account feeds on your website with WP Social Ninja. Keep your audience engaged and grow your business by showcasing social media updates. Connecting your Instagram Business Account is quick and easy, requiring just a few clicks.
 
-In this guide, we'll walk you through the steps to connect both your Instagram Business Basic and Advanced accounts with WP Social Ninja.
+Instagram connects through WP Social Ninja's [secure connection bridge](../getting-started/connecting-your-accounts), so you can link your account in just a few clicks — no developer app to create. In this guide, we'll walk you through connecting both your Instagram Business Basic and Advanced accounts, plus a manual option for advanced users.
 
 ## Instagram Configuration ​
 
@@ -956,7 +956,9 @@ After that, your Business Advanced Account will be added.
 
 ![configure instagram 6](https://docs.wpsocialninja.com/assets/instagram-configuration-7.BUHoODdx.webp)
 
-## Connect Your Account Manually ​
+## Connect Your Account Manually (Advanced) ​
+
+Prefer to manage your own credentials? You can still connect Instagram with a manually generated access token. Most users won't need this — the one-click **Business Basic** or **Business Advanced** methods above are simpler — but it remains available for advanced setups.
 
 To manually connect your **Business Account**, select the **Account Manually** option from the dropdown menu. You'll then need to enter your **Access Token** and **Instagram User ID**.
 
@@ -1570,9 +1572,9 @@ If your site doesn’t contain the **Custom Feed for TikTok** Plugin then here a
 
 ![Custom Feed for TikTok](https://docs.wpsocialninja.com/assets/active-tiktok-2.Bv2pSEQl.webp)
 
-After installing the **Custom Feed for Tiktok** plugin, your TikTok platform in WP Social Ninja will be enabled. Now you will get another notification Pop-up for connecting your TikTok account.
+After installing the **Custom Feed for Tiktok** plugin, your TikTok platform in WP Social Ninja will be enabled. Now you will get another pop-up for connecting your TikTok account — just click **Continue with TikTok** to authorize the connection.
 
-![TikTok Configuration](https://docs.wpsocialninja.com/assets/active-tiktok-3.gXgHo9B2.webp)
+![The TikTok Configuration pop-up with the Continue with TikTok button](https://docs.wpsocialninja.com/assets/tiktok-configuration-modal.2drFIZ5S.webp)
 
 That's it! Your TikTok Platform is activated now just configure the TikTok platform and you're ready to set the template for your TikTok Feed.
 
@@ -1584,43 +1586,39 @@ That's it! Your TikTok Platform is activated now just configure the TikTok platf
 
 # TikTok Feed Configuration ​
 
-To grow your business Social Media Platforms play a vital role. If you wish to connect your **TikTok Feed** to your Business Website then WP Social Ninja allows connecting your **TikTok Feed** to your Website. Follow this guideline to add your TikTok Feed to your website.
+Social media plays a vital role in growing your business, and TikTok is one of the most engaging platforms out there. If you'd like to showcase your **TikTok Feed** on your website, WP Social Ninja makes connecting quick and simple. Follow this guide to add your TikTok Feed to your site.
 
-## Enable TikTok Platform ​
+TikTok connects through WP Social Ninja's [secure connection bridge](../getting-started/connecting-your-accounts), so there's no access code to copy and paste — just log in, approve, and you're connected.
 
-First, you need to go to the [Platform](../getting-started/all-platforms-of-wp-social-ninja) from the **WP Social Ninja Plugin** dashboard. Then you will see the option to enable the TikTok feed, now connect with your TikTok account to enable the TikTok Feed.
+## Connect Your TikTok Account ​
+
+**First,** go to **WP Social Ninja → Platforms** from your plugin dashboard, find **TikTok**, and click to connect your TikTok account.
 
 ![Enable TikTok Feed](https://docs.wpsocialninja.com/assets/active-tiktok-1.Czcd9MsU.webp)
 
-## Get the Access Code from TikTok ​
+**Then,** in the **TikTok Configuration** pop-up, click the **Continue with TikTok** button. As the pop-up says, you'll be securely redirected to authorize the connection.
 
-A pop-up will come to configure your TikTok account feed. Here you have to give an **Access Code** to configure your **TikTok** feed. Click on the **Continue with TikTok** button.
+![The TikTok Configuration pop-up with the Continue with TikTok button](https://docs.wpsocialninja.com/assets/tiktok-configuration-modal.2drFIZ5S.webp)
 
-![TikTok Configure Access Code](https://docs.wpsocialninja.com/assets/active-tiktok-3.gXgHo9B2.webp)
-
-You will be redirected to the TikTok account login page, login into your account from here.
+**Next,** you'll be redirected to the TikTok login page. Log in to your account.
 
 ![TikTok Login](https://docs.wpsocialninja.com/assets/tiktok-feed-connect-3.BDBf3NDW.webp)
 
-Then you will be asked to access permissions for WP Social Ninja app, select the permissions and click on the continue button.
+**Then,** review the requested permissions for the WP Social Ninja app and click **Continue** to approve them.
 
-The next page will give you the **Access Code**, now copy the Access Code and Paste it into your TikTok configuration Access Code field.
+**Finally,** you'll be brought right back to WP Social Ninja with your TikTok account connected. Now add and customize your [template](../getting-started/templates-overview) by clicking the **Add New Template** button.
 
-![Access Code TikTok ](https://docs.wpsocialninja.com/assets/tiktok-feed-connect-4.e02ziD08.webp)
-
-Your TikTok account is now connected.
-
-Now add and customize your [template](../getting-started/templates-overview) as you want by simply clicking on the **Add New Template** button.
-
-![TikTok Connected Account ](https://docs.wpsocialninja.com/assets/tiktok-feed-connect-6.uH4jVLuB.webp)
+![TikTok Connected Account](https://docs.wpsocialninja.com/assets/tiktok-feed-connect-6.uH4jVLuB.webp)
 
 ## TikTok Feed Error ​
 
-If the TikTok Feed source is not reconnected within 7 days, you'll receive a **TikTok Feed Error Notification**, and all TikTok Feed data for your connected account will be automatically deleted from your website due to TikTok's data privacy rules. To avoid automatic data deletion, make sure to reconnect your account within the 7-day period.
+TikTok's data privacy rules require your feed source to stay connected. If a TikTok Feed source is not reconnected within **7 days**, you'll receive a **TikTok Feed Error Notification**, and all TikTok Feed data for that connected account will be automatically deleted from your website.
+
+The good news: because TikTok now connects through the secure bridge, WP Social Ninja refreshes your connection automatically in the background, which greatly reduces the chance of hitting this limit. If you ever do see the error, simply reconnect your account to restore your feed.
 
 ![Tiktok Feed Error](https://docs.wpsocialninja.com/assets/WP-Social-Ninja-Platforms-3-scaled.BeZxeo9C.webp)
 
-If you have any further queries about TikTok configuration then contact us to know about all your queries.
+If you have any further questions about TikTok configuration, feel free to [contact us](https://wpmanageninja.com/support-tickets) — we're happy to help.
 
 ---
 
@@ -2287,32 +2285,49 @@ When you are finished, click the **Save Template** button at the bottom.
 
 # YouTube Configuration ​
 
-The YouTube Feed feature in WP Social Ninja allows you to easily connect your YouTube channel and display your videos, playlists, and channel details directly on your WordPress website. Once connected, your YouTube content updates automatically, keeping your site fresh and engaging.
+The YouTube Feed feature in WP Social Ninja lets you connect your YouTube channel and display your videos, playlists, and channel details directly on your WordPress website. Once connected, your YouTube content updates automatically, keeping your site fresh and engaging.
 
-In this guide, you’ll learn how to configure the YouTube platform and connect your channel using either of two methods: the **API Key (recommended for stability)** or **OAuth 2.0 (Connect via Google)**. Follow the steps below to complete the setup and start displaying your YouTube content on your site.
+There are two ways to connect: the quick **Connect via Google** method, or the **API Key** method (recommended for long-term stability). Both are covered below, and both are secured through WP Social Ninja's [connection bridge](../getting-started/connecting-your-accounts), which keeps your connection reliable and refreshing in the background.
 
 ## Configure the YouTube Platform ​
 
-To get started, you’ll first need to configure the YouTube platform.
+To get started, you'll first configure the YouTube platform.
 
-From your WordPress dashboard, navigate to **WP Social Ninja → Platforms**. Click the **Social Feeds** tab. Find **YouTube** in the list and click the **Connect** button.
+From your WordPress dashboard, navigate to **WP Social Ninja → Platforms**. Click the **Social Feeds** tab, find **YouTube** in the list, and click the **Connect** button.
 
 A pop-up will appear with two connection types:
 
-- API Key (Recommended)
-- OAuth 2.0 (Connect Via Google)
+- **API Key (Recommended)** — Connect via Token
+- **OAuth 2.0 (Deprecated Soon)** — Connect via Google
 
-This guide will explain both methods.
+This guide explains both.
 
 ![Connecting the YouTube platform in WP Social Ninja](https://docs.wpsocialninja.com/assets/access-youtube-feed.9IgtCk42.webp)
 
-## Method 1: API Key (Recommended) ​
+## Connect via Google (Quickest) ​
 
-This is the most stable and recommended method. It requires you to create a free API Key from the Google Cloud Console.
+This is the fastest way to get connected — just sign in with Google, and WP Social Ninja links your channel automatically.
+
+NOTE
+
+In the latest version this option is labeled **"OAuth 2.0 (Deprecated Soon)"**. It still works today, but it will be phased out — so if you want the most future-proof setup, use the **API Key** method further below.**First,** in the **YouTube Configuration** pop-up, select the **OAuth 2.0 (Deprecated Soon)** tab — labeled **Connect via Google**. Then click the **Sign In And Get Google Access Code** button and approve access. As the pop-up notes, it only takes one click.
+
+![The YouTube Configuration pop-up with the OAuth 2.0 (Connect via Google) tab and Sign In And Get Google Access Code button](https://docs.wpsocialninja.com/assets/youtube-configuration-modal.BLBqqCx3.webp)
+
+TIP
+
+**No access codes to copy or paste.** Once you sign in and approve, WP Social Ninja receives everything it needs and connects your YouTube channel automatically.
+## API Key (Recommended for Stability) ​
+
+For the most stable, long-term connection, use a free API Key from the Google Cloud Console. It takes a few more steps to set up, but it's the method we recommend keeping in place.
+
+In the **YouTube Configuration** pop-up, select the **API Key (Recommended)** tab — labeled **Connect via Token**. This is where you'll paste your key into the **API Key** field once it's ready. First, let's create that key over in Google.
+
+![The YouTube Configuration pop-up with the API Key (Recommended) tab selected](https://docs.wpsocialninja.com/assets/youtube-api-key-tab.Cx8ubVlX.webp)
 
 ### Get Your API Key from Google ​
 
-Go to the [Google Cloud Console](https://console.cloud.google.com/) and log in with your Google account. In the top menu, click the **Select a Project** dropdown. Here, a pop-up appears; click **New Project**.
+Go to the [Google Cloud Console](https://console.cloud.google.com/) and log in with your Google account. In the top menu, click the **Select a Project** dropdown. When the pop-up appears, click **New Project**.
 
 ![Creating a new project in Google Cloud Console](https://docs.wpsocialninja.com/assets/google-search-console.DkMe53c1.webp)
 
@@ -2324,61 +2339,39 @@ Once the project is created, go to **APIs & Services → Credentials** from the 
 
 ![Navigating to Credentials in Google Cloud Console](https://docs.wpsocialninja.com/assets/api-service.C133eYvQ.webp)
 
-Now, click the **+ Create Credentials** button at the top, and you will see an **API key** option.
+Now, click the **+ Create Credentials** button at the top, and select the **API key** option.
 
 ![Creating a new API Key](https://docs.wpsocialninja.com/assets/api-keys.ClhgDFrb.webp)
 
-Here, a new pop-up arrives. Enter the name of your API key and click on the **Create** button.
+Enter a name for your API key and click **Create**.
 
 ![Create API Key](https://docs.wpsocialninja.com/assets/create-api-key.BH5ErlKT.webp)
 
-After that, a new pop-up will appear with your new key. Click the **Copy** icon.
+A pop-up will appear with your new key. Click the **Copy** icon.
 
 ![Copying the newly created API Key](https://docs.wpsocialninja.com/assets/copy-api-key.BT8WYoKs.webp)
 
-In order to configure the YouTube Feed, you need to enable the **YouTube Data API v3** button; otherwise, the API Key will not work. Now, click on the **API Library** from the **APIs & Services** to enable the YouTube Data API v3.
+To make the key work, you must enable the **YouTube Data API v3** — otherwise the API Key won't function. Click **API Library** from **APIs & Services**.
 
 ![YouTube Data API v3 Library](https://docs.wpsocialninja.com/assets/api-library-new.BPh0q66Z.webp)
 
-From the API Library, scroll down and select the **YouTube Data API v3**.
+From the API Library, scroll down and select the **YouTube Data API v3**, then enable it.
 
 ![Selecting the YouTube Data API v3 from the API Library](https://docs.wpsocialninja.com/assets/youtube-data-api-v3.D9P3CtNB.webp)
 
 ### Add the API Key to WP Social Ninja ​
 
-Now, return to your WordPress dashboard and open the YouTube configuration pop-up. Select the **API Key (Recommended)** option. **Paste** your key into the **YouTube API Key** field. Click the **Save** button. Your YouTube account is now connected.
+Return to your WordPress dashboard and open the YouTube configuration pop-up. Select the **API Key (Recommended)** option, **paste** your key into the **YouTube API Key** field, and click **Save**. Your YouTube account is now connected.
 
 ![Pasting the API Key into WP Social Ninja settings](https://docs.wpsocialninja.com/assets/save-api-key.qAN2F6gZ.webp)
 
-You will get a successful message like the screenshot below:
+You'll see a success message like the one below:
 
 ![YouTube connection success message](https://docs.wpsocialninja.com/assets/youtube-successful.BJtW3Fai.webp)
 
-## Method 2: OAuth 2.0 (Connect Via Google) ​
+TIP
 
-This is a fast method that uses a temporary access code.
-
-First, select **OAuth 2.0 (Connect Via Google)** from the pop-up. Click the **Sign In and Get Google Access Code** button.
-
-![Selecting the OAuth 2.0 connection method](https://docs.wpsocialninja.com/assets/0auth2.eRSGD4_g.webp)
-
-A new Google pop-up window will appear. Choose the Google Account that manages your YouTube channel.
-
-![Google account selection pop-up](https://docs.wpsocialninja.com/assets/choose-google-account.AV66vW-C.webp)
-
-Next, click the **Continue** button to permit WP Social Ninja.
-
-![Granting Google permissions to WP Social Ninja](https://docs.wpsocialninja.com/assets/sign-in-google-accounts.BpXLabEX.webp)
-
-Google will give you an **Access Code**. **Copy** this code.
-
-![Copying the Google Access Code](https://docs.wpsocialninja.com/assets/copy-access-key.kbcTjUlq.webp)
-
-Return to the WP Social Ninja dashboard, paste the code into the **Access Code** field, and click **Save**.
-
-![Pasting the Access Code into WP Social Ninja](https://docs.wpsocialninja.com/assets/save-api-key1.WX7dMpp0.webp)
-
-Now that your YouTube account is connected, that’s it.
+For your security, WP Social Ninja now encrypts stored YouTube API keys at rest, so your credentials stay protected.However you choose to connect, your YouTube content is now ready to display — next, design how it looks with a [YouTube feed template](./youtube-feed-template-general-settings).
 
 ---
 

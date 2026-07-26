@@ -2,8 +2,8 @@
   "plugin_slug": "wp-social-ninja",
   "plugin_name": "WP Social Ninja",
   "documentation_url": "https://docs.wpsocialninja.com/guide/",
-  "last_scraped": "2026-07-19T01:36:46.028Z",
-  "total_pages": 92,
+  "last_scraped": "2026-07-26T01:36:21.289Z",
+  "total_pages": 94,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -176,11 +176,15 @@
       "slug": "getting-started",
       "url": "https://docs.wpsocialninja.com/guide/getting-started/",
       "file": "categories/getting-started.md",
-      "page_count": 8,
+      "page_count": 9,
       "pages": [
         {
           "title": "Platforms Overview ​",
           "url": "https://docs.wpsocialninja.com/guide/getting-started/all-platforms-of-wp-social-ninja.html"
+        },
+        {
+          "title": "Connecting Your Accounts ​",
+          "url": "https://docs.wpsocialninja.com/guide/getting-started/connecting-your-accounts.html"
         },
         {
           "title": "User Interface ​",
@@ -234,7 +238,7 @@
       "slug": "integrations",
       "url": "https://docs.wpsocialninja.com/guide/integrations/",
       "file": "categories/integrations.md",
-      "page_count": 5,
+      "page_count": 6,
       "pages": [
         {
           "title": "How to Embed Templates with Beaver Builder ​",
@@ -243,6 +247,10 @@
         {
           "title": "How to Embed Templates with Elementor ​",
           "url": "https://docs.wpsocialninja.com/guide/integrations/elementor-integration.html"
+        },
+        {
+          "title": "FluentCRM Review Tagging ​",
+          "url": "https://docs.wpsocialninja.com/guide/integrations/fluentcrm-review-tagging.html"
         },
         {
           "title": "Integrations Overview ​",

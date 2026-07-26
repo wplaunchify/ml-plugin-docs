@@ -12,6 +12,60 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in WP Social Ninja.
 
+## WP Social Ninja v4.3.1 ​
+
+*Released on July 21, 2026*
+
+🔧 Improvements🔒 Security🐛 Bug fixesmd
+```
+• Improved OAuth connect button labels and auth bridge redirect messaging for clearer platform connection steps
+```md
+```
+• Ongoing security audits and hardening
+• Template and chat widget settings saving now validates the target post, so settings can no longer be written to arbitrary post IDs
+```md
+```
+• Fixed Airbnb business URL validation and Airbnb reviews showing a generic location label instead of the actual listing title
+• Fixed a PHP notice when a feed header renders before its image decoration data is available
+• Fixed the "preserve plugin data" setting being ignored on uninstall, so plugin data is now kept when the option is enabled
+```
+## WP Social Ninja v4.3.0 ​
+
+*Released on July 20, 2026*
+
+🆕 New Features🔧 Improvements🔒 Security🐛 Bug fixesmd
+```
+• Centralized connection bridge for Google Reviews, YouTube, Instagram, Facebook, and TikTok — connections now route through one hardened service with automatic token refresh (Google Reviews, Instagram, Facebook, and TikTok connect in one click; YouTube uses an access code or API key)
+• WhatsApp & SMS prefilled message context modes for chat widgets (page, WooCommerce product, FluentCart product, or a custom format)
+• FluentCRM Review Tagging — tag a customer's contact when their WooCommerce or FluentCart review is approved (Pro)
+• Quick Setup for WooCommerce and FluentCart — create a review form, display template, and main review hub in a single step (Pro)
+• Resizable, collapsible settings sidebar with a keyboard-accessible drag handle in the Reviews, Chats, and Feed template editors
+• "Sync All Reviews" button in the WooCommerce connect modal
+• Scroll-based pagination for the WooCommerce/FluentCart connected-products list
+• Block API v3 support for the Social Ninja block, enabling the Gutenberg iframe editor
+• Per-product override indicator for FluentCart and WooCommerce products, with a direct link to resolve conflicts (Pro)
+• PHP 8.4 compatibility
+• Generic affiliate-link filter for partner attribution on Pro upgrade links
+```md
+```
+• Optimized WooCommerce and FluentCart connected-product loading for large catalogs (Pro)
+• WooCommerce review sync now reports accurate cumulative totals across multi-batch imports (Pro)
+• Clearer FluentCart/WooCommerce "not connected" alert — distinguishes an inactive plugin from a store with no products
+• Updated the core WPFluent framework to v2.12.3 and added a hard limit to Facebook Graph pagination requests
+```md
+```
+• Added encryption at rest for stored YouTube API keys
+```md
+```
+• Fixed custom source review imports across different target sources (Pro)
+• Fixed the reviews connection modal reopening unexpectedly when switching admin tabs
+• Fixed relative date-range Facebook feeds freezing instead of tracking the current time
+• Fixed future events appearing in past date-range Facebook event feeds
+• Fixed the frontend review script failing to load on page builders with late script loading (e.g. Elementor, Oxygen)
+• Fixed the WooCommerce bulk-sync completion message showing the wrong review count
+• Fixed YouTube video durations displaying without a leading zero
+• Added plain-PHP fallbacks so the plugin no longer fatals on hosts missing the mbstring extension
+```
 ## WP Social Ninja v4.2.2 ​
 
 *Released on May 22, 2026*
