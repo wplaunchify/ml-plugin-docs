@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T17:24:38.096Z",
+  "last_updated": "2026-07-26T17:25:19.596Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2252,7 +2252,7 @@
       "slug": "launchkit-pro",
       "name": "LaunchKit Pro",
       "documentation_url": "https://wordpress.org/plugins/launchkit/",
-      "last_scraped": "2026-07-19T17:25:07.246Z",
+      "last_scraped": "2026-07-26T17:25:19.596Z",
       "page_count": 2,
       "categories": [
         "advanced",
