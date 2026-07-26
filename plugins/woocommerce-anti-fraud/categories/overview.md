@@ -355,15 +355,7 @@ The Antifraud Analytics Dashboard provides a clear high-level overview of orders
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2020/02/recaptcha.jpg)
-
-### reCaptcha Integration
-
-	
-			by [I13 Web Solution](https://woocommerce.com/vendor/i13-web-solution)
-
-Protect your eCommerce store from malicious and automated attacks by using reCaptcha/Cloudflare Turnstile/hCaptcha for WooCommerce.
-				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
 
 ### WooCommerce Subscriptions
 
@@ -371,6 +363,14 @@ Protect your eCommerce store from malicious and automated attacks by using reCap
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+				![](https://woocommerce.com/wp-content/uploads/2020/02/recaptcha.jpg)
+
+### reCaptcha Integration
+
+	
+			by [I13 Web Solution](https://woocommerce.com/vendor/i13-web-solution)
+
+Protect your eCommerce store from malicious and automated attacks by using reCaptcha/Cloudflare Turnstile/hCaptcha for WooCommerce.
 
 ---
 

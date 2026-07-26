@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T10:34:57.864Z",
+  "last_updated": "2026-07-26T10:35:05.380Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -242,7 +242,7 @@
       "slug": "customize-my-account-page-for-woocommerce",
       "name": "Customize My Account Page For Woocommerce",
       "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/",
-      "last_scraped": "2026-07-26T10:34:57.864Z",
+      "last_scraped": "2026-07-26T10:34:57.863Z",
       "page_count": 1,
       "categories": [
         "overview"
@@ -3232,7 +3232,7 @@
       "slug": "woocommerce-anti-fraud",
       "name": "WooCommerce Anti Fraud",
       "documentation_url": "https://woocommerce.com/document/woocommerce-anti-fraud/",
-      "last_scraped": "2026-07-19T10:33:04.815Z",
+      "last_scraped": "2026-07-26T10:34:59.033Z",
       "page_count": 1,
       "categories": [
         "overview"
@@ -3845,7 +3845,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-07-26T10:33:56.551Z",
+      "last_scraped": "2026-07-26T10:33:56.548Z",
       "page_count": 5,
       "categories": [
         "bulk-edit-prices-woocommerce-pending-orders",
