@@ -3678,6 +3678,14 @@ Before translating, ensure the following plugins are installed and active:
 
 You will also need at least one secondary language configured in **WPML > Languages**.
 
+### Setting up WPML Language URL Format
+
+Uncanny Groups requires the WPML Language URL format to be set to **Different languages in directories.** With this option select for Language URL format, groups will be able to display language specific group user records in Group Management and Report pages.
+
+After selecting the option **Different languages in directories**, check the option **Use directory for default language** and then check the option **A page** (see image below for reference).
+
+![](https://www.uncannyowl.com/wp-content/uploads/2023/06/WPML-set-up-for-Groups-1.png)
+
 ### Choosing a Translation Method
 
 WPML offers two ways to translate plugin strings. You can use either method independently or combine them.
