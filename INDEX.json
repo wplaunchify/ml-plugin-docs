@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T12:29:29.209Z",
+  "last_updated": "2026-07-26T12:29:53.726Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -465,7 +465,7 @@
       "slug": "fluent-forms-signature-addon",
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-07-19T12:24:00.435Z",
+      "last_scraped": "2026-07-26T12:29:50.634Z",
       "page_count": 457,
       "categories": [
         "account-management",
@@ -507,7 +507,7 @@
       "slug": "fluent-messaging",
       "name": "Fluent Messaging",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-07-26T12:29:29.209Z",
+      "last_scraped": "2026-07-26T12:29:29.204Z",
       "page_count": 137,
       "categories": [
         "advanced-reports",
