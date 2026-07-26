@@ -20,7 +20,7 @@ We recommend enabling **Log error messages** in the extension’s [Advanced sett
 
 ## Common issues
 
-[↑ Nach oben](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 - [Why was a charge successful despite an AVS or CVC mismatch?](https://woocommerce.com/document/stripe/troubleshooting/avs-or-cvc-mismatch/)
 - [Is the Stripe extension PCI compliant?](https://woocommerce.com/document/stripe/troubleshooting/pci-compliance/)
@@ -33,7 +33,7 @@ We recommend enabling **Log error messages** in the extension’s [Advanced sett
 
 ## Stripe API outages
 
-[↑ Nach oben](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 Sometimes your store may be unable to reach the Stripe API, perhaps due to a Stripe outage or a network glitch. When this happens, you’ll see a notice at the top of your WordPress dashboard letting you know the connection to Stripe is unavailable.
 
@@ -43,7 +43,7 @@ If the notice is displayed for an extended time, that could indicate that [Strip
 
 ## Reviewing Stripe Logs
 
-[↑ Nach oben](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 Often troubleshooting an issue with Stripe payments means reviewing the Stripe logs. With [logging enabled](https://woocommerce.com/document/stripe/setup-and-configuration/settings-guide/#advanced-settings), you’ll find Stripe logs in [the WooCommerce logger](https://woocommerce.com/document/finding-php-error-logs/).
 

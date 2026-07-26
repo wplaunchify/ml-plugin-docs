@@ -20,7 +20,7 @@ We are unable to provide support for customizations under our**Support Policy**.
 
 ## Common customization topics
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 We have individual pages that answer some of these common questions:
 
@@ -34,7 +34,7 @@ We have individual pages that answer some of these common questions:
 
 ## Customization resources
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 If you want to see all of the actions and filters that are available in the Stripe extension, you can find them listed [here](https://woocommerce.com/document/stripe/customization/hooks-and-filters/).
 

@@ -365,7 +365,7 @@ This guide will cover the requirements for offering express payment methods and 
 
 ## Site requirements
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 To properly display express payment methods via the Stripe extension:
 
@@ -374,7 +374,7 @@ To properly display express payment methods via the Stripe extension:
 
 ### Additional Apple Pay requirements
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 In addition to the site requirements above, Apple Pay also requires that:
 
@@ -391,7 +391,7 @@ In addition to the site requirements above, Apple Pay also requires that:
 
 ### Additional Google Pay requirements
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 In addition to the site requirements above, Google Pay also requires that:
 
@@ -399,7 +399,7 @@ In addition to the site requirements above, Google Pay also requires that:
 
 ### Additional Link by Stripe requirements
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 In addition to the site requirements above, Link by Stripe also requires that:
 
@@ -407,7 +407,7 @@ In addition to the site requirements above, Link by Stripe also requires that:
 
 ### Additional Amazon Pay requirements
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 In addition to the site requirements above, Amazon Pay also requires that:
 
@@ -416,7 +416,7 @@ In addition to the site requirements above, Amazon Pay also requires that:
 
 ## Enabling express checkouts
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 To enable express payment methods in the Stripe extension:
 
@@ -429,7 +429,7 @@ To enable express payment methods in the Stripe extension:
 
 ## Customizing Apple Pay and Google Pay
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 After saving your payment method settings, you can customize how Apple Pay and Google Pay buttons appear on your site by selecting the **Customize**button.
 
@@ -452,7 +452,7 @@ A preview of the buttons is also shown so that you can see how these customizati
 
 ## Compatibility
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 Express checkout methods are very similar to card payments. As a result, they work well with most features, such as [test mode](https://woocommerce.com/document/stripe/customer-experience/testing/) and [separate authorize/capture](https://woocommerce.com/document/stripe/admin-experience/authorize-and-capture/).
 
@@ -479,7 +479,7 @@ woocommerce_register_additional_checkout_field
 
 ## Can I use only the express checkout methods and not take card payments?
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 Generally not. The credit card/ debit card payment method must be enabled in order to use express checkout methods.
 
@@ -487,7 +487,7 @@ There is one exception: if you are using the [Optimized Checkout Suite](https://
 
 ## Show Express Checkout Buttons for Virtual Products
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 **NOTE**: Enabling Express Checkout for digital products may result in inaccurate tax calculation if the store’s tax settings depend on the customer’s billing address—which is not made available to the Express method before they are selected.
 
