@@ -8,7 +8,7 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/import-events-csv/](https://docs.nexcess.com/software/the-events-calendar/import-events-csv/)
 
-The Events Calendar includes a CSV importer that lets you import events, venues, organizers, RSVPs, and tickets into your site’s calendar in bulk. The importer is part of the [Event Aggregator](https://theeventscalendar.com/product/event-aggregator/) plugin, but the CSV import tool itself is **free and included when you install The Events Calendar** — you don’t need an Event Aggregator license to use it.
+The Events Calendar includes a CSV importer that lets you import events, venues, organizers, RSVPs, and tickets into your site’s calendar in bulk. The importer requires a license for [The Events Calendar](https://www.liquidweb.com/software/the-events-calendar/), but the CSV import tool itself is **free and included when you install The Events Calendar** — you don’t need an Event Aggregator license to use it.
 
 This article covers both the step-by-step import flow and the full field reference for each content type you can import. Use the table of contents to jump straight to the field reference if you already know the import flow.
 
