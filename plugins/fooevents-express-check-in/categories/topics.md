@@ -7394,33 +7394,6 @@ Click the **+****Add Scopes** button to add the following scopes to your OAuth a
 | Add a registrant to a meeting | meeting:write:registrant:master |
 - **Webinar**
 - Expand **View all user Webinars** and select the following scopes for webinars on your own Zoom account:
-
-| Scope Description | Scope Value |
-| --- | --- |
-| View a webinar’s registrants | webinar:read:list_registrants:admin |
-| View a user’s webinars | webinar:read:list_webinars:admin |
-| View a webinar | webinar:read:webinar:admin |
-
-- Expand **View and manage all user webinars** and select the following scopes for webinars on your own Zoom account:
-
-| Scope Description | Scope Value |
-| --- | --- |
-| Update a webinar registrant’s registration status | webinar:update:registrant_status:admin |
-| Update a webinar | webinar:update:webinar:admin |
-| Add a registrant to a webinar | webinar:write:registrant:admin |
-| Create a webinar for a user | webinar:write:webinar:admin |
-
-- If you have **sub accounts** on your Zoom account, expand **View and manage sub account’s user webinars** and select the following scopes for webinars on the sub accounts:
-
-| Scope Description | Scope Value |
-| --- | --- |
-| View a webinar’s registrants | webinar:read:list_registrants:master |
-| View a user’s webinars | webinar:read:list_webinars:master |
-| View a webinar | webinar:read:webinar:master |
-| Update a webinar registrant’s registration status | webinar:update:registrant_status:master |
-| Update a webinar | webinar:update:webinar:master |
-| Add a registrant to a webinar | webinar:write:registrant:master |
-| Create a webinar for a user | webinar:write:webinar:master |
 - **User**
 - Expand **View all user information** and select the following scopes:
 
@@ -9568,7 +9541,7 @@ Once modified, your changes will display in the FooEvents POS app the next time 
 
 **FooEvents POS**also offers a direct integration with[Square Terminal](https://amzn.to/3G0hgB3),[Stripe BBPOS WisePOS™ E](https://stripe.com/docs/terminal/readers/bbpos-wisepos-e),[Verifone P400](https://stripe.com/docs/terminal/readers/verifone-p400)smart readers and supports manual card entries for both Square and Stripe.
 
-Visit the[Square Payment Integration](https://help.fooevents.com/docs/topics/point-of-sale/square-payment-integration/)and[Stripe Payment Integration](https://help.fooevents.com/docs/topics/point-of-sale/stripe-payment-integration/)help documents to find out more.
+Visit the[Square Payment Integration](https://help.fooevents.com/docs/topics/point-of-sale/payments/square-payment-integration/)and[Stripe Payment Integration](https://help.fooevents.com/docs/topics/point-of-sale/payments/stripe-payment-integration/)help documents to find out more.
 
 ## Other Payments
 
