@@ -44,6 +44,7 @@ Have multiple websites? Get rid of irrelevant comments on the entire network usi
 - **[New]** Fully Multi-site Network supported.
 - **[New]** Manage multiple website network-specific subsites or entire network comments in advance.
 - **[New]** Exclude Disable Comments Settings based on user roles.
+- **[New]** AI-agent ready: supports the WordPress Abilities API (WP 6.9+), so AI assistants and MCP clients can read your comment settings.
 
 Please delete any existing comments on your site **before applying this setting**, otherwise (depending on your theme) those comments may still be displayed to visitors. You can use the **Delete Comments tool** to delete any existing comments on your site.
 
@@ -266,6 +267,17 @@ Contributors
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 This will be maintained from August 19, 2020 – @asif2bd
+
+#### [2.8.0] – 2026-07-27
+
+- New Feature: WordPress Abilities API support (WordPress 6.9+) — AI assistants, the command palette and MCP clients can now ask the site where comments are disabled, via the read-only 
+```
+disable-comments/get-status
+```
+
+ ability
+- Fixed: Page caches are now purged when settings are saved or comments are deleted — previously a cached page kept serving the comment form after comments were disabled
+- Compatible with WordPress 7.0
 
 #### [2.7.1] – 2026-07-22
 
