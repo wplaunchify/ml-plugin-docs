@@ -16,13 +16,13 @@ Tiered discounts provide a huge range of benefits for users as well as store own
 
 ## How do I provide a tiered discount?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To provide tiered or stackable discounts, you would need to create multiple coupons. For instance, we are going to provide a 5%, 10%, and 15% discount when a customer purchases T-shirts in ranges of 2–5, 6–10, and 11–15. Following are the steps:
 
 ### Creating Coupons
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Navigate to your WordPress admin panel. Then go to **Marketing > Coupons**.
 2. Auto generate or add your own coupon code.
@@ -60,14 +60,14 @@ Here are two documents that make the above possible:
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### Conditional Shipping and Payments
+### Table Rate Shipping
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Use conditional logic to restrict the shipping and payment options available on your store.
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 

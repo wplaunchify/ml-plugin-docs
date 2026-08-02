@@ -69,14 +69,14 @@ That’s it!
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### Conditional Shipping and Payments
+### Table Rate Shipping
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Use conditional logic to restrict the shipping and payment options available on your store.
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 

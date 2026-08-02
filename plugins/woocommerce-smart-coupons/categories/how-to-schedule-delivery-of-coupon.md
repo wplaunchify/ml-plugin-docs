@@ -25,7 +25,7 @@ This documentation explains how you can allow your customers to delay or schedul
 
 ## Steps to schedule coupon
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Go to **WooCommerce > Settings > Smart Coupons**.
 2. Look for the setting “**Allow schedule sending of coupons?**“. **Enable** it and **save** your changes. ![Smart Coupons schedule coupons settings](https://woocommerce.com/wp-content/uploads/2019/10/smart-coupons-schedule-coupons-settings.png?strip=all&w=704)
@@ -63,14 +63,14 @@ All those people whose email addresses were entered will get the gift cards/cred
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### Conditional Shipping and Payments
+### Table Rate Shipping
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Use conditional logic to restrict the shipping and payment options available on your store.
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 

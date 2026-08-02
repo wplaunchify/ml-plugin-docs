@@ -16,7 +16,7 @@ This documentation explains how you can set up a WooCommerce BOGO (buy one get o
 
 ## How to set up a buy one get one free offer coupon?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 Here, we’ll consider offering the same/exact product for a BOGO offer. Buy one red-colored large-sized T-shirt and get the same red-colored large-sized T-shirt for free.
 
@@ -49,7 +49,7 @@ You can also **offer a different product or related product as a BOGO offer** us
 
 ## How to set up a buy one get more offer (frequently bought together)?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 If you want to set up Amazon-like frequently bought together items, you can use the above steps. For example, on purchase of a high-end cellphone, you want to give a Bluetooth headset and a protective case together. A solid tactic to increase sales via cross-selling.
 
@@ -63,7 +63,7 @@ If you want to set up Amazon-like frequently bought together items, you can use 
 
 ## Setting up quantity-based discount coupon
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 You can also apply a coupon based on the product quantity in the cart (buy more get more).
 
@@ -75,7 +75,7 @@ Refer to [quantity discount doc](https://woocommerce.com/document/smart-coupons/
 
 ## Gift a product via coupon
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 Run giveaways or issue free gifts by linking products to a coupon. When the coupon is applied, the products are automatically added to the cart. Refer to this [doc](https://woocommerce.com/document/smart-coupons/how-to-gift-a-product-via-coupon/).
 
@@ -95,14 +95,14 @@ Run giveaways or issue free gifts by linking products to a coupon. When the coup
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### Conditional Shipping and Payments
+### Table Rate Shipping
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Use conditional logic to restrict the shipping and payment options available on your store.
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 

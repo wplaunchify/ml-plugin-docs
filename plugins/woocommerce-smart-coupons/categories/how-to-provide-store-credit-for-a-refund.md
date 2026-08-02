@@ -18,7 +18,7 @@ To offer a refund, you should follow the documentation of the WooCommerce plugin
 
 ## Steps to send store credits
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Navigate to **Marketing > Coupons**.
 2. Select the “**Send Store Credit**” tab.
@@ -32,7 +32,7 @@ Thats it!
 
 ## Preview email
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To check the email preview, click on the Preview Email button:
 
@@ -54,14 +54,14 @@ To check the email preview, click on the Preview Email button:
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### Conditional Shipping and Payments
+### Table Rate Shipping
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Use conditional logic to restrict the shipping and payment options available on your store.
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 

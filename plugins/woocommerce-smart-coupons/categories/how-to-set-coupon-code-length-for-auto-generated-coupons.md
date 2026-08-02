@@ -18,7 +18,7 @@ You can restrict the number of characters in the auto-generated coupon code. It 
 
 ## Steps to set coupon length
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Go to **WooCommerce > Settings > Smart Coupons**.
 2. Look for “**Number of characters in auto-generated coupon code**”.![](https://woocommerce.com/wp-content/uploads/2019/10/smart-coupons-coupon-code-length.png?strip=all&w=704)
@@ -43,14 +43,14 @@ That’s it.
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### Conditional Shipping and Payments
+### Table Rate Shipping
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Use conditional logic to restrict the shipping and payment options available on your store.
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 

@@ -18,7 +18,7 @@ If you do not want to allow customers to buy gift cards for any amount from your
 
 ## Creating fixed-amount gift cards
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 To allow customers to purchase a fixed-amount gift card/store credit, you need to first create a coupon and then a product.
 
@@ -28,7 +28,7 @@ For a more detailed explanation, refer to these steps:
 
 ### Creating a gift card coupon
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. From your store’s WP Admin dashboard, navigate to *Marketing > Coupons > Add new coupon*.
 2. Click **Generate coupon code** or enter your own code.
@@ -42,7 +42,7 @@ For a more detailed explanation, refer to these steps:
 
 ### Creating a product
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Add or edit an existing simple product.
 2. Name the product, e.g. Store Credit/Gift Certificate.
@@ -63,7 +63,7 @@ Your customers can also send the gift card(s) to another person(s) and also [sch
 
 ## Other WooCommerce gift card types
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. [Create physical gift cards](https://woocommerce.com/document/smart-coupons/how-to-print-coupons/)
 2. [Create gift card at a discount](https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-at-less-price/)
@@ -86,14 +86,14 @@ Your customers can also send the gift card(s) to another person(s) and also [sch
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
-				![](https://woocommerce.com/wp-content/uploads/2015/03/Conditional_Shipping_Payments_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### Conditional Shipping and Payments
+### Table Rate Shipping
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Use conditional logic to restrict the shipping and payment options available on your store.
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 
