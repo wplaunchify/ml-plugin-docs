@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T14:34:18.369Z",
+  "last_updated": "2026-08-02T14:50:18.173Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1019,7 +1019,7 @@
       "slug": "fooevents-for-woocommerce",
       "name": "FooEvents for WooCommerce",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-07-26T21:39:54.755Z",
+      "last_scraped": "2026-08-02T14:50:18.173Z",
       "page_count": 319,
       "categories": [
         "frequently-asked-questions",
