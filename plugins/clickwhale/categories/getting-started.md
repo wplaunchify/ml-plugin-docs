@@ -47,7 +47,7 @@ When the scanner runs, it searches your saved posts and pages for ClickWhale lin
 
 Because the scanner only analyzes stored content, it cannot detect links that are generated dynamically after the page has loaded.
 
-### Understanding the Difference
+**Understanding the Difference**
 
 | Feature | Manually Inserted Link | Auto-Linked Keyword |
 | --- | --- | --- |
@@ -56,9 +56,9 @@ Because the scanner only analyzes stored content, it cannot detect links that ar
 | Detected by Link Scanner | ✅ Yes | ❌ No |
 | Works for visitors | ✅ Yes | ✅ Yes |
 
-#### Example
+Example
 
-Example 1: Manually Inserted Link
+**Example 1: Manually Inserted Link**
 
 A manually inserted ClickWhale link is saved directly inside the post content.
 
@@ -68,7 +68,7 @@ Because the link exists in the database, the Link Scanner can detect it and disp
 
 ![Link Scanner showing the detected post](https://clickwhale.pro/wp-content/uploads/2026/06/Link-Scanner-showing-the-detected-post-1024x598.png)Link Scanner showing the detected post]
 
-Example 2: Automatic Keyword Linker
+**Example 2: Automatic Keyword Linker**
 
 The same article may contain additional occurrences of the keyword “clickwhale”.
 
@@ -115,6 +115,200 @@ Currently, dynamically generated links created by the Automatic Keyword Linker a
 **How can I make sure a link is detected by the Link Scanner?**
 
 Insert the link directly into the post or page content and save the changes. Since the link is stored in the database, the Link Scanner will be able to detect it.
+
+---
+
+## How to Install and Activate ClickWhale Pro
+
+**Source:** [https://clickwhale.pro/docs/article/how-to-install-activate-clickwhale-pro/](https://clickwhale.pro/docs/article/how-to-install-activate-clickwhale-pro/)
+
+*This feature is only available in the Pro version of ClickWhale.*
+
+In this article, we will provide a straightforward guide on how to install and activate the premium version of ClickWhale.
+
+## Download the plugin
+
+After checking out, you will receive a purchase receipt email with your download link, license key, license usage and guides to get started.
+
+![How To Install Clickwhale Pro 1st instruction](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-install-clickwhale-pro-Final-Image-1-1024x655.png)
+
+## Upload the plugin to your site
+
+It’s time to upload the ClickWhale Pro plugin to your site. To do this, follow these steps:
+
+Login to your site, navigate to **Plugins**, and select **Add New Plugin**.
+
+It will then prompt you to the **Add Plugin** page, and from there, click the **Upload Plugin**button at the top of the page (next to “Add Plugin”).
+
+On the uploader form that appears on the same page, choose the **clickwhale-pro.zip** file and click the **Install Now** button.
+
+![How To Install Clickwhale Pro 2nd instruction](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-install-ClickWhale-Pro-Final-Image-2-1024x289.png)
+
+Once the installation is complete, you’ll see this page, click the **Activate Plugin** button to proceed with the activation.
+
+After installing and activating the plugin, the final step is to activate your license key.
+
+## Enter your license key
+
+After you click the Activate Plugin button in the previous step, you will see a page requesting your license key.
+
+![How To Install Clickwhale Pro 4th instruction](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-insrall-clickwhale-pro-4.png)
+
+Copy your license key from the purchase receipt email.
+
+![How To Install Clickwhale Pro 5th instruction](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-install-clickwhale-pro-final-image-5-1024x655.png)
+
+Return to the ClickWhale license form, key in your license key and click the **Activate License** button.
+
+You will then be redirected to your ClickWhale dashboard indicating that the plugin activation is completed.
+
+## FAQs
+
+**Where can I download the ClickWhale Pro plugin?**
+
+After completing your purchase, you’ll receive a purchase receipt email containing your download link, license key, license usage information, and getting started guides.
+
+**How do I activate my ClickWhale Pro license?**
+
+After installing and activating the plugin, copy the license key from your purchase receipt email, paste it into the ClickWhale license activation page, and click **Activate License**. You’ll then be redirected to the ClickWhale dashboard once activation is complete.
+
+**Where can I find my license key?**
+
+Your license key is included in the purchase receipt email you receive after purchasing ClickWhale Pro.
+
+**Do I need to install the free version of ClickWhale first?**
+
+No. The installation guide instructs you to upload the **clickwhale-pro.zip** file directly through **Plugins > Add New Plugin > Upload Plugin**, then activate the plugin and enter your license key.
+
+**What should I do if my license doesn’t activate?**
+
+First, verify that you’re entering the correct license key from your purchase receipt email. If you’re still unable to activate your license, contact the ClickWhale support team for assistance.
+
+---
+
+## How to Install ClickWhale
+
+**Source:** [https://clickwhale.pro/docs/article/how-to-install-clickwhale/](https://clickwhale.pro/docs/article/how-to-install-clickwhale/)
+
+It is simple to install ClickWhale on your site. This article will serve as your guide on how to install it.
+
+The easiest way to install ClickWhale is via the *Plugins* menu in your site’s admin dashboard.
+
+Start by hovering over **Plugins** > **Add New** Plugin.
+
+![How To Install Clickwhale Image - 1](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-Image-1.png)
+
+Search “ClickWhale” in the search bar on the upper right side.
+
+You should see **ClickWhale** appear at the top of the search result. Then click the “**Install Now**” button to begin the installation.
+
+![How To Install Clickwhale Image - 2](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-Image-2-1024x578.png)
+
+The button will change to **Activate**after a few seconds. Click the **Activate** button to finish the installation.
+
+![How To Install Clickwhale Image - 3](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-Image-3-1024x685.png)
+
+Once the activation is complete, you’ll see ClickWhale on the left side navigation of your site’s dashboard. Click **ClickWhale** and a prompt will appear with an “**Allow & Continue**” and “**Skip**” buttons. Click your preference button to start using the ClickWhale.
+
+![How To Install Clickwhale New Image - 4](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-New-Image-4-1024x486.png)
+
+And you’re done! You may now start adding links, categories, link pages and more.
+
+![How To Install Clickwhale New Image - 5](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-New-Image-5-1024x486.png)
+
+FAQs
+
+**Where can I install ClickWhale?**
+
+You can install ClickWhale directly from your WordPress dashboard by going to **Plugins > Add New Plugin**, searching for **ClickWhale**, and clicking **Install Now**. After the installation is complete, click **Activate**.
+
+**Do I need a ClickWhale Pro license to install ClickWhale?**
+
+No. The installation process described in this guide is for the free version of ClickWhale, which can be installed directly from the WordPress Plugin Directory.
+
+**What should I do after activating ClickWhale?**
+
+After activation, click **ClickWhale** in your WordPress dashboard. You’ll be prompted to choose **Allow & Continue** or **Skip** before accessing the plugin and creating your first links.
+
+**Where can I find ClickWhale after installation?**
+
+Once ClickWhale is activated, it appears in the left-hand navigation menu of your WordPress dashboard. From there, you can access its features and settings.
+
+**Can I start creating links immediately after installation?**
+
+Yes. Once ClickWhale is installed and activated, you can immediately start creating shortened links, organizing them into categories, creating Link Pages, and using other available features.
+
+---
+
+## How to Import Links
+
+**Source:** [https://clickwhale.pro/docs/article/how-to-import-links/](https://clickwhale.pro/docs/article/how-to-import-links/)
+
+Got a bunch of links to track? No problem — import them with ease!
+
+Here’s how:  Locate **ClickWhale** in the sidebar navigation and open the **‘Tools’**admin pageand select the **‘Import’** from the Tab-Navigation.
+
+## Upload CSV file
+
+Choose the CSV file to import and proceed by clicking the **‘Upload Import File**‘ button.
+
+![Upload Csv File](https://clickwhale.pro/wp-content/uploads/2024/06/Upload-CSV-file-1024x387.png)
+
+## Column mapping
+
+Once your file is uploaded, you will be taken to the **Column Mapping.** Here, you can customize which columns should be mapped to which fields. When you’re satisfied with your customization, click Continue.
+
+![Column Mapping](https://clickwhale.pro/wp-content/uploads/2024/06/Column-mapping-1024x598.png)
+
+## Edit fields
+
+You will then be taken to the **Edit Fields**. From there, you can edit or delete the links
+
+For instance, you need to set the link to nofollow and sponsored. You can do so by ticking the checkbox.
+
+Upon completing all customizations and selections, click the **Run Importer** button.
+
+![Edit Fields](https://clickwhale.pro/wp-content/uploads/2024/06/Edit-fields-1024x454.png)
+
+## Import
+
+A list of the successfully uploaded links will be displayed.
+
+And you’re done. You may return to the Links tab and review all the uploaded links. Just click the ‘**Go To Links**’ button.
+
+## FAQs
+
+**What file format is required to import links?**
+
+ClickWhale imports links using a **CSV file**. Before importing, make sure your links are saved in CSV format.
+
+**Can I customize how my CSV columns are imported?**
+
+Yes. During the **Column Mapping** step, you can choose which columns from your CSV file correspond to the available ClickWhale link fields.
+
+**Can I edit imported links before completing the import?**
+
+Yes. The **Edit Fields** step lets you review your imported links and modify settings before running the importer. For example, you can enable attributes such as **nofollow** or **sponsored** for your links.
+
+**What happens after the import is complete?**
+
+After the importer finishes, ClickWhale displays a list of the successfully imported links. You can then select **Go To Links** to review and manage them in the **Links** section.
+
+**Will importing links overwrite my existing ClickWhale links?**
+
+No. The import process adds the links from your CSV file. If you need to modify existing links, review them after the import is complete.
+
+**Can I change the column mapping for different CSV files?**
+
+Yes. Each time you import a CSV file, you can configure the column mapping to match the structure of that file before continuing with the import.
+
+**What should I do if some imported data doesn’t appear correctly?**
+
+Check that your CSV file is formatted correctly and verify the column mapping before running the importer. Incorrect column mapping may cause data to be assigned to the wrong fields.
+
+**Can I edit imported links after the import is complete?**
+
+Yes. Once the import is finished, you can edit any imported link from **ClickWhale > Links**, just like links created manually.
 
 ---
 

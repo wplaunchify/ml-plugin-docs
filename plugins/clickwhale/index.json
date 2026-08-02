@@ -2,8 +2,8 @@
   "plugin_slug": "clickwhale",
   "plugin_name": "ClickWhale",
   "documentation_url": "https://clickwhale.pro/docs/documentation/",
-  "last_scraped": "2026-07-26T12:27:15.994Z",
-  "total_pages": 19,
+  "last_scraped": "2026-08-02T05:18:25.564Z",
+  "total_pages": 21,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,18 +11,22 @@
       "slug": "account-licenses",
       "url": "https://clickwhale.pro/docs/documentation/account-licenses/",
       "file": "categories/account-licenses.md",
-      "page_count": 3,
+      "page_count": 4,
       "pages": [
         {
-          "title": "How-To Cancel your Subscription (Auto-renewal)",
+          "title": "Cancel your Subscription (Auto-renewal)",
           "url": "https://clickwhale.pro/docs/article/how-to-cancel-your-subscription-auto-renewal/"
         },
         {
-          "title": "How-To Delete My Account",
+          "title": "Delete My Account",
           "url": "https://clickwhale.pro/docs/article/how-to-delete-my-account/"
         },
         {
-          "title": "How-To Upgrade your License",
+          "title": "Renew your License",
+          "url": "https://clickwhale.pro/docs/article/how-to-renew-your-license/"
+        },
+        {
+          "title": "Upgrade your License",
           "url": "https://clickwhale.pro/docs/article/how-to-upgrade-your-license/"
         }
       ]
@@ -49,11 +53,23 @@
       "slug": "getting-started",
       "url": "https://clickwhale.pro/docs/documentation/getting-started/",
       "file": "categories/getting-started.md",
-      "page_count": 1,
+      "page_count": 4,
       "pages": [
         {
           "title": "Understanding Link Scanner Results",
           "url": "https://clickwhale.pro/docs/article/understanding-link-scanner-results/"
+        },
+        {
+          "title": "How to Install and Activate ClickWhale Pro",
+          "url": "https://clickwhale.pro/docs/article/how-to-install-activate-clickwhale-pro/"
+        },
+        {
+          "title": "How to Install ClickWhale",
+          "url": "https://clickwhale.pro/docs/article/how-to-install-clickwhale/"
+        },
+        {
+          "title": "How to Import Links",
+          "url": "https://clickwhale.pro/docs/article/how-to-import-links/"
         }
       ]
     },
@@ -62,54 +78,42 @@
       "slug": "how-tos-tutorials",
       "url": "https://clickwhale.pro/docs/documentation/how-tos-tutorials/",
       "file": "categories/how-tos-tutorials.md",
-      "page_count": 12,
+      "page_count": 9,
       "pages": [
         {
-          "title": "How-To Use AMZ Connect with Smart Displays",
+          "title": "How to Add UTM Parameters to ClickWhale Links",
+          "url": "https://clickwhale.pro/docs/article/how-to-add-utm-parameters-to-clickwhale-links/"
+        },
+        {
+          "title": "How to Use AMZ Connect with Smart Displays",
           "url": "https://clickwhale.pro/docs/article/how-to-use-amz-connect-with-smart-displays/"
         },
         {
-          "title": "How-To Create and Use Smart Displays",
+          "title": "How to Create and Use Smart Displays",
           "url": "https://clickwhale.pro/docs/article/how-to-create-and-use-smart-displays/"
         },
         {
-          "title": "How-To Bulk Update Target URLs",
+          "title": "How to Bulk Update Target URLs",
           "url": "https://clickwhale.pro/docs/article/how-to-bulk-update-target-url/"
         },
         {
-          "title": "How-To Enable or Disable Link Tracking",
+          "title": "How to Enable or Disable Link Tracking",
           "url": "https://clickwhale.pro/docs/article/how-to-enable-or-disable-link-tracking/"
         },
         {
-          "title": "How-To Create QR codes for Links",
+          "title": "How to Create QR codes for Links",
           "url": "https://clickwhale.pro/docs/article/how-to-create-qr-codes-for-links/"
         },
         {
-          "title": "How-to Use the Keyword Auto Linker",
+          "title": "How to Use the Keyword Auto Linker",
           "url": "https://clickwhale.pro/docs/article/how-to-use-the-keyword-auto-linker/"
         },
         {
-          "title": "How-To Renew your License",
-          "url": "https://clickwhale.pro/docs/article/how-to-renew-your-license/"
-        },
-        {
-          "title": "How-To Install and Activate ClickWhale Pro",
-          "url": "https://clickwhale.pro/docs/article/how-to-install-activate-clickwhale-pro/"
-        },
-        {
-          "title": "How-To Install ClickWhale",
-          "url": "https://clickwhale.pro/docs/article/how-to-install-clickwhale/"
-        },
-        {
-          "title": "How-To Import Links",
-          "url": "https://clickwhale.pro/docs/article/how-to-import-links/"
-        },
-        {
-          "title": "How-To Add Google Tag Manager To WordPress with ClickWhale",
+          "title": "How to Add Google Tag Manager To WordPress with ClickWhale",
           "url": "https://clickwhale.pro/docs/article/add-google-tag-manager-to-wordpress/"
         },
         {
-          "title": "How-To Shorten Links & Create Redirects",
+          "title": "How to Shorten Links & Create Redirects",
           "url": "https://clickwhale.pro/docs/article/how-to-shorten-links-and-create-redirects/"
         }
       ]
@@ -119,8 +123,12 @@
       "slug": "miscellaneous",
       "url": "https://clickwhale.pro/docs/documentation/miscellaneous/",
       "file": "categories/miscellaneous.md",
-      "page_count": 1,
+      "page_count": 2,
       "pages": [
+        {
+          "title": "Generate a WordPress Debug Log for ClickWhale Support",
+          "url": "https://clickwhale.pro/docs/article/how-to-generate-a-wordpress-debug-log-for-clickwhale-support/"
+        },
         {
           "title": "Provide Temporary Dashboard Access to Our Support Team",
           "url": "https://clickwhale.pro/docs/article/provide-temporary-dashboard-access-to-our-support-team/"

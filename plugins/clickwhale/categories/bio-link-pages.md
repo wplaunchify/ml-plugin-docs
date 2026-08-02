@@ -156,5 +156,27 @@ Learn more about link pages here:
 
 If you have any questions or need anything, you can always **reach us**[at our website](https://clickwhale.pro/contact/)**, where we are always happy to help!**
 
+## FAQs
+
+**Can I create more than one Link Page?**
+
+Yes. You can create multiple Link Pages to organize and share different sets of links for different purposes, campaigns, or audiences. Create a new Link Page by going to **ClickWhale > Link Pages** and selecting **Add New**.
+
+**Can I customize the appearance of my Link Page?**
+
+Yes. ClickWhale lets you customize various design elements, including the site background, page text, link text, button colors, and hover colors, so you can match your brand’s style.
+
+**Can I preview my Link Page before sharing it?**
+
+Yes. After creating and customizing your Link Page, click **View Page** to preview it and confirm that everything looks and works as expected before sharing it with your audience.
+
+**Does ClickWhale track Link Page performance?**
+
+Yes. ClickWhale automatically tracks Link Page views and link clicks, allowing you to monitor your page’s performance without any additional setup.
+
+**Can I improve the SEO of my Link Page?**
+
+Yes. Since your Link Page is part of your WordPress website, you can optimize its title, meta description, and slug to help search engines understand and index the page more effectively.
+
 ---
 

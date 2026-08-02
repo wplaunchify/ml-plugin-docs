@@ -4,7 +4,194 @@
 
 ---
 
-## How-To Use AMZ Connect with Smart Displays
+## How to Add UTM Parameters to ClickWhale Links
+
+**Source:** [https://clickwhale.pro/docs/article/how-to-add-utm-parameters-to-clickwhale-links/](https://clickwhale.pro/docs/article/how-to-add-utm-parameters-to-clickwhale-links/)
+
+UTM parameters help you identify where your website traffic comes from and measure the performance of your marketing campaigns across different platforms, channels, and content.
+
+With ClickWhale, you can add UTM parameters directly to your managed links through the **Link Manager** without manually editing the Target URL. This makes it easier to organize, manage, and track your campaigns while keeping your links centralized.
+
+**Note:** The UTM Parameters feature is available with **ClickWhale Pro**.
+
+## Before You Begin
+
+Before adding UTM parameters to your ClickWhale links, make sure the following requirements are met:
+
+- **ClickWhale Pro** is installed and activated.
+- You have **administrator access** to your WordPress dashboard.
+- You have an existing ClickWhale link or are ready to create a new one.
+
+If you haven’t created a ClickWhale link yet, see [How-to Shorten Links and Create Redirects](https://clickwhale.pro/docs/article/how-to-shorten-links-and-create-redirects/) before continuing.
+
+## What Are UTM Parameters?
+
+UTM parameters identify campaign traffic, but they do not collect or display analytics by themselves. The destination website must use an analytics platform, such as Google Analytics, to record and report the campaign data.
+
+By using UTM parameters, you can compare the effectiveness of different traffic sources, marketing channels, campaigns, keywords, and content variations. This helps you understand which strategies drive the most visitors and conversions.
+
+Adding UTM parameters does **not** change the content or functionality of the destination page. They simply append tracking information to the Target URL, allowing you to collect campaign data without affecting the visitor’s experience.
+
+## How UTM Parameters Work with the Link Manager
+
+The ClickWhale Link Manager connects your shared ClickWhale link, the Target URL, and the configured UTM parameters. When someone clicks your ClickWhale link, they are redirected to the Target URL with any configured UTM parameters automatically appended.
+
+It’s important to understand how these components work together:
+
+- **ClickWhale Link** – The shortened or branded URL that you share with your audience.
+- **Target URL** – The destination webpage where visitors are redirected after clicking the ClickWhale link.
+- **UTM Parameters** – Additional tracking values that ClickWhale appends to the Target URL to help analytics tools identify the source and performance of your campaigns.
+
+For example, when someone clicks your ClickWhale link, they are first redirected through ClickWhale and then sent to the Target URL with the configured UTM parameters attached. This allows you to track campaign performance while continuing to share the same ClickWhale link.
+
+## UTM Parameters Available in ClickWhale
+
+The **UTM Parameters** tab contains five optional fields that let you configure campaign tracking for your Target URL. Complete only the fields that apply to your campaign and analytics setup.
+
+![ClickWhale UTM parameters](https://clickwhale.pro/wp-content/uploads/2026/07/ClickWhale-UTM-parameters-1024x382.png)
+
+**UTM Campaign (utm_campaign)**
+
+The **UTM Campaign** field identifies the specific marketing campaign associated with your link. Use a clear and descriptive campaign name so you can easily recognize it in your analytics reports.
+
+**Example:** summer_sale_2026
+
+**UTM Medium (utm_medium)**
+
+The **UTM Medium** field identifies the marketing channel used to share your link. This helps distinguish traffic from different types of campaigns.
+
+**Example:** social
+
+**UTM Source (utm_source)**
+
+The **UTM Source** field identifies where your visitors come from, such as a website, platform, or service.
+
+**Example:** facebook
+
+**UTM Term (utm_term)**
+
+The **UTM Term** field is commonly used to track paid keywords or search terms. You can also use it to organize campaigns based on your own tracking strategy.
+
+**Example:** wordpress_plugins
+
+**UTM Content (utm_content)**
+
+The **UTM Content** field helps differentiate similar links within the same campaign, such as different banners, buttons, or advertisements.
+
+**Example:** blue_banner
+
+## How to Add UTM Parameters to a ClickWhale Link
+
+You can add UTM parameters when creating a new ClickWhale link or editing an existing one. ClickWhale will add the campaign information to the Target URL when someone opens the managed link.
+
+1. Log in to your WordPress dashboard.
+2.  Go to **ClickWhale > Links**.
+3. Create a new link or select an existing link to edit.
+
+![ClickWhale link manager keywords](https://clickwhale.pro/wp-content/uploads/2026/07/ClickWhale-link-manager-keywords-1024x348.png)
+
+4. Enter or confirm the **Target URL** for the page where you want to send visitors.
+5. Open the **UTM Parameters** tab.
+6. Enter the campaign values that apply to your link:
+– **UTM Campaign**, such as summer_sale_2026
+– **UTM Medium**, such as social
+– **UTM Source**, such as facebook
+– **UTM Term**, such as wordpress_plugins
+– **UTM Content**, such as blue_banner
+
+![ClickWhale UTM parameters with values](https://clickwhale.pro/wp-content/uploads/2026/07/ClickWhale-UTM-parameters-with-values-1024x386.png)
+
+7. Save or update the link to apply the UTM parameters.
+8. Copy the ClickWhale link and open it in a browser to confirm that it redirects to the correct destination with the UTM parameters included.
+
+## Example UTM Campaign
+
+The following example shows how UTM parameters can be used to track traffic from a Facebook post promoting a product.
+
+**Original Target URL**
+
+```
+https://example.com/products/wordpress-plugin
+```
+
+**ClickWhale Link:**
+
+```
+https://example.com/go/wordpress-plugin
+```
+
+**Resulting Destination URL:******
+
+Using the example UTM values above, the resulting destination URL will be:
+
+```
+https://example.com/products/wordpress-plugin?utm_campaign=summer_sale_2026&utm_medium=social&utm_source=facebook&utm_term=wordpress_plugins&utm_content=blue_banner
+```
+
+When someone clicks your ClickWhale link, they are redirected to the Target URL with the configured UTM parameters appended. Analytics tools can then use these values to attribute traffic to the correct campaign, channel, and content variation.
+
+## How to Test the Link
+
+After adding UTM parameters to your ClickWhale link, it’s important to verify that the link redirects correctly and includes the expected campaign information before sharing it with your audience.
+
+1. Copy your ClickWhale link after saving your changes.
+2. Open the link in a new browser tab or window.
+3. Confirm that the link redirects to the correct **Target URL**.
+4. Check the browser’s address bar to verify that the UTM parameters appear in the destination URL.
+5. Review each UTM value to ensure the spelling, capitalization, and naming match your campaign plan.
+6. If you find any errors, return to the **UTM Parameters** tab, update the values, save the link, and test it again.
+
+**Tip:** Always test your campaign links before publishing them to ensure the destination URL contains the correct UTM values before sharing the link.
+
+## Best Practices
+
+Follow these best practices to keep your UTM parameters consistent and make your campaign reports easier to understand and analyze.
+
+- Use **lowercase** values for all UTM parameters to maintain consistent reporting across analytics tools.
+- Avoid spaces in UTM values. Use **underscores (****_****)** or **hyphens (****–****)** instead to improve readability and prevent inconsistencies.
+- Create clear and descriptive campaign names that make it easy to identify the purpose of each campaign.
+- Use different UTM values for each marketing channel or content placement to accurately compare campaign performance.
+- Maintain a consistent naming convention across your team to keep reports organized and easier to interpret.
+- Avoid including sensitive or confidential information in UTM parameter values, as they become part of the destination URL.
+- Test every campaign link before publishing or sharing it to ensure the destination URL and UTM parameters are configured correctly.
+
+## FAQs
+
+**What are UTM parameters used for?**
+
+UTM parameters are used to track the performance of your marketing campaigns by identifying where your website traffic comes from. They help analytics tools measure traffic from different sources, mediums, campaigns, keywords, and content variations.
+
+**Do UTM parameters change my ClickWhale link?**
+
+No. UTM parameters do not change your ClickWhale link. They are appended to the **Target URL** during the redirect, while the ClickWhale link itself remains the same.
+
+**Can I add UTM parameters to an existing link?**
+
+Yes. You can edit an existing ClickWhale link, open the **UTM Parameters** tab, update the campaign values, and save your changes.
+
+**Which UTM fields are required?**
+
+The current ClickWhale Pro interface does not indicate that any of the UTM fields are required. You can complete the fields that are relevant to your campaign tracking needs.
+
+**Can I edit the UTM parameters later?**
+
+Yes. You can modify the UTM parameters at any time by editing the ClickWhale link and updating the values in the **UTM Parameters** tab.
+
+**Will editing the UTM parameters change the ClickWhale short URL?**
+
+No. Editing the UTM parameters only changes the tracking information added to the **Target URL**. Your ClickWhale short URL remains the same.
+
+**Where can I view the results of my UTM campaign?**
+
+You can view your campaign results in the analytics platform connected to the destination website, such as Google Analytics. The website must have analytics tracking configured, and you must have access to its reports. ClickWhale does not collect or display UTM campaign reports inside the plugin.
+
+**Is the UTM Parameters feature available in the free version of ClickWhale?**
+
+No. The **UTM Parameters** feature is available exclusively with **ClickWhale Pro**.
+
+---
+
+## How to Use AMZ Connect with Smart Displays
 
 **Source:** [https://clickwhale.pro/docs/article/how-to-use-amz-connect-with-smart-displays/](https://clickwhale.pro/docs/article/how-to-use-amz-connect-with-smart-displays/)
 
@@ -196,7 +383,7 @@ Yes. The Description Bullets setting allows you to choose how many bullet points
 
 ---
 
-## How-To Create and Use Smart Displays
+## How to Create and Use Smart Displays
 
 **Source:** [https://clickwhale.pro/docs/article/how-to-create-and-use-smart-displays/](https://clickwhale.pro/docs/article/how-to-create-and-use-smart-displays/)
 
@@ -457,7 +644,7 @@ Yes. Enable the **Title and Image as Link** option when creating the Smart Displ
 
 ---
 
-## How-To Bulk Update Target URLs
+## How to Bulk Update Target URLs
 
 **Source:** [https://clickwhale.pro/docs/article/how-to-bulk-update-target-url/](https://clickwhale.pro/docs/article/how-to-bulk-update-target-url/)
 
@@ -595,7 +782,7 @@ wp_clickwhale_links
 
 ---
 
-## How-To Enable or Disable Link Tracking
+## How to Enable or Disable Link Tracking
 
 **Source:** [https://clickwhale.pro/docs/article/how-to-enable-or-disable-link-tracking/](https://clickwhale.pro/docs/article/how-to-enable-or-disable-link-tracking/)
 
@@ -671,9 +858,31 @@ Using the statistics, you can:
 
 This information helps you evaluate campaigns and improve your link strategy.
 
+## FAQs
+
+**Is link tracking enabled by default?**
+
+Yes. ClickWhale enables link tracking by default to record clicks on your links and display the data in the **Statistics** tab.
+
+**What happens if I disable link tracking?**
+
+When link tracking is disabled, ClickWhale stops recording new clicks for your links. As a result, no new click activity will appear in the **Statistics** tab while tracking is disabled.
+
+**Can I enable link tracking again later?**
+
+Yes. You can re-enable link tracking at any time by going to **ClickWhale > Settings > Tracking**, disabling the **Disable Tracking** option, and saving your changes.
+
+**Where can I view my link click statistics?**
+
+You can view recorded click data by going to **ClickWhale > Statistics** in your WordPress dashboard.
+
+**Will disabling link tracking affect my existing ClickWhale links?**
+
+No. Disabling link tracking only stops ClickWhale from recording click activity. Your existing ClickWhale links continue to function and redirect visitors as normal.
+
 ---
 
-## How-To Create QR codes for Links
+## How to Create QR codes for Links
 
 **Source:** [https://clickwhale.pro/docs/article/how-to-create-qr-codes-for-links/](https://clickwhale.pro/docs/article/how-to-create-qr-codes-for-links/)
 
@@ -729,9 +938,44 @@ You can now use your QR code anywhere you’d like to share that link visually�
 
 🖨️ **Print on non-reflective surfaces****** For best results, avoid glossy paper or reflective materials which may interfere with scanning.
 
+## FAQs
+
+**Do I need to create a ClickWhale link before generating a QR code?**
+
+Yes. QR codes are generated from links stored in the **ClickWhale Link Manager**. Create a new link or import an existing one before generating a QR code.
+
+**Can I generate a QR code for an imported link?**
+
+Yes. As long as the link is available in the ClickWhale Link Manager, you can generate and download its QR code.
+
+**What happens if I change the destination URL of my link?**
+
+The QR code continues to work because it points to your ClickWhale short link. If you update the destination URL, visitors scanning the QR code will automatically be redirected to the new destination without needing a new QR code.
+
+**Can I download the QR code again later?**
+
+Yes. Open the link in the **Link Editor** and download the QR code again whenever you need it.
+
+**Where can I use my QR code?**
+
+You can use your QR code on business cards, flyers, posters, brochures, product packaging, menus, presentations, email signatures, and other printed or digital materials.
+
+**Why isn’t my QR code working?**
+
+If your QR code isn’t working as expected, check the following:
+
+- The ClickWhale link has been created or imported successfully.
+- The destination URL is valid.
+- The QR code wasn’t altered or damaged after downloading.
+- You’re scanning the QR code with a compatible QR code reader or mobile device.
+
+**Do I need to generate a new QR code after updating my link?**
+
+No. Because the QR code points to your ClickWhale short link, it will continue to work even if you update the destination URL later. This allows you to reuse the same QR code without reprinting or redistributing it.
+
 ---
 
-## How-to Use the Keyword Auto Linker
+## How to Use the Keyword Auto Linker
 
 **Source:** [https://clickwhale.pro/docs/article/how-to-use-the-keyword-auto-linker/](https://clickwhale.pro/docs/article/how-to-use-the-keyword-auto-linker/)
 
@@ -783,7 +1027,7 @@ To assign keywords:
 **Note:** You can assign up to **10 keywords** to a single ClickWhale link.
 **Tip:** Choose keywords that are relevant to your destination page and review the affected content after saving to ensure links appear in the intended locations.
 
-![Image](https://clickwhale.pro/wp-content/uploads/2024/10/image-23-1024x801.png)
+![ClickWhale Keyword Auto Linker Keywords](https://clickwhale.pro/wp-content/uploads/2024/10/ClickWhale-Keyword-Auto-Linker-Keywords-1024x322.png)
 
 ## View Assigned Keywords
 
@@ -797,7 +1041,7 @@ To view the assigned keywords:
 
 If you need to update the assigned keywords, edit the link, open the **Keyword Auto Linker** tab, make your changes, and click **Save Link**.
 
-![Image](https://clickwhale.pro/wp-content/uploads/2024/10/image-21-1024x221.png)
+![ClickWhale links with KW auto linker](https://clickwhale.pro/wp-content/uploads/2024/10/ClickWhale-links-with-KW-auto-linker-1024x156.png)
 
 ## Configure the Global Keyword Auto Linker Settings
 
@@ -853,7 +1097,7 @@ Once you’ve assigned keywords and configured the global settings, ClickWhale w
 
 For example, if you assign the keyword **“ClickWhale”** to one of your ClickWhale links, any matching occurrences of that keyword within supported content areas can automatically become clickable links on the frontend.
 
-![Image](https://clickwhale.pro/wp-content/uploads/2024/10/image-22.png)
+![ClickWhale KW in action](https://clickwhale.pro/wp-content/uploads/2024/10/ClickWhale-KW-in-action.png)
 
 **Note:** The Keyword Auto Linker generates links dynamically when the page is displayed. It does not permanently insert links into the content stored in the WordPress editor or database.
 
@@ -861,7 +1105,7 @@ Because these links are generated on the frontend, they won’t appear in your s
 
 If you’d like to learn more, see our guide on [Understanding Link Scanner Results.](https://clickwhale.pro/docs/article/understanding-link-scanner-results/)
 
-## FAQ’s
+## FAQs
 
 **What is the Keyword Auto Linker?**
 
@@ -916,207 +1160,7 @@ Yes. Go to **ClickWhale → Settings → Keyword Auto Linker**, disable the feat
 
 ---
 
-## How-To Renew your License
-
-**Source:** [https://clickwhale.pro/docs/article/how-to-renew-your-license/](https://clickwhale.pro/docs/article/how-to-renew-your-license/)
-
-When you purchase a **ClickWhale Pro license**, you’ll receive a **license key valid for one year** from the date of purchase. ClickWhale Pro operates on an **annual subscription model**, similar to many popular premium WordPress plugins. Even if your license expires, **your data remains fully accessible**, ensuring uninterrupted access to your existing links, stats, and settings
-
-You can **renew your ClickWhale Pro license** at any time after it expires to regain access to updates and priority support.
-
-## How to renew my license?
-
-If your **ClickWhale Pro license key** is nearing its expiration date, you’ll receive an **email reminder** with a direct link and step-by-step **instructions on how to renew your license**.
-
-If you don’t receive the renewal email or accidentally delete it, you can still **renew your ClickWhale Pro license** by logging into your [Freemius account](https://clickwhale.pro/account/).
-
-![Freemius login page](https://clickwhale.pro/wp-content/uploads/2024/07/freemius-login-page.png)
-
-Once logged in, click on **“Licenses”** in the sidebar menu. Locate the subscription you want to renew, then click the **“Renew”** button in the subscription details on the right side of the screen.
-
-![License tab](https://clickwhale.pro/wp-content/uploads/2024/07/license-tab-1024x464.png)
-
-Complete the renewal process by entering your billing information, review your order, and complete the checkout process.
-
-![Checkout tab](https://clickwhale.pro/wp-content/uploads/2024/07/checkout-tab-1024x518.png)
-
-## What happens if my license expires?
-
-Once your **ClickWhale Pro license** expires, the plugin will continue to function with its existing features. However, you will **no longer receive plugin updates** or have access to **priority email support** until the license is renewed.
-
-For example, if you’re using the **latest version of ClickWhale Pro** and your premium subscription expires today, you’ll still retain access to all current features. However, if a new version is released next month with enhancements or features you’d like to use, you’ll need to **renew your license** to update the plugin. Renewing your license grants you access to **all future updates**, **new features**, and continued **priority email support** for the next year.
-
-## What are the auto-renewal benefits?
-
-#### Benefits of Enabling Automatic License Renewal for ClickWhale Pro
-
-By choosing to **automatically renew your ClickWhale Pro license**, you gain the following benefits:
-
-- **Price Lock Guarantee**: Secure the original price of your ClickWhale Pro plan—even if future prices increase.
-- **Hassle-Free Renewal**: No need to worry about missing renewal deadlines—your license renews automatically each year.
-- **Continuous Access to Updates**: Stay up to date with the **latest ClickWhale Pro features, improvements, and security updates** without interruption.
-
-## Does ClickWhale offer a lifetime license?
-
-Yes, ClickWhale offers a lifetime license. To purchase or upgrade your license to a lifetime license, follow our guide on [how-to upgrade your license here](https://clickwhale.pro/docs/article/how-to-upgrade-your-license/).
-
-A lifetime license works exactly the way it sounds; you only need to pay once and get ClickWhale Pro and all future updates for life. There are no subscription or hidden costs.
-
----
-
-## How-To Install and Activate ClickWhale Pro
-
-**Source:** [https://clickwhale.pro/docs/article/how-to-install-activate-clickwhale-pro/](https://clickwhale.pro/docs/article/how-to-install-activate-clickwhale-pro/)
-
-*This feature is only available in the Pro version of ClickWhale.*
-
-In this article, we will provide a straightforward guide on how to install and activate the premium version of ClickWhale.
-
-## Download the plugin
-
-After checking out, you will receive a purchase receipt email with your download link, license key, license usage and guides to get started.
-
-![How To Install Clickwhale Pro 1st instruction](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-install-clickwhale-pro-Final-Image-1-1024x655.png)
-
-## Upload the plugin to your site
-
-It’s time to upload the ClickWhale Pro plugin to your site. To do this, follow these steps:
-
-Login to your site, navigate to **Plugins**, and select **Add New Plugin**.
-
-It will then prompt you to the **Add Plugin** page, and from there, click the **Upload Plugin**button at the top of the page (next to “Add Plugin”).
-
-On the uploader form that appears on the same page, choose the **clickwhale-pro.zip** file and click the **Install Now** button.
-
-![How To Install Clickwhale Pro 2nd instruction](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-install-ClickWhale-Pro-Final-Image-2-1024x289.png)
-
-Once the installation is complete, you’ll see this page, click the **Activate Plugin** button to proceed with the activation.
-
-After installing and activating the plugin, the final step is to activate your license key.
-
-## Enter your license key
-
-After you click the Activate Plugin button in the previous step, you will see a page requesting your license key.
-
-![How To Install Clickwhale Pro 4th instruction](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-insrall-clickwhale-pro-4.png)
-
-Copy your license key from the purchase receipt email.
-
-![How To Install Clickwhale Pro 5th instruction](https://clickwhale.pro/wp-content/uploads/2024/07/How-to-install-clickwhale-pro-final-image-5-1024x655.png)
-
-Return to the ClickWhale license form, key in your license key and click the **Activate License** button.
-
-You will then be redirected to your ClickWhale dashboard indicating that the plugin activation is completed.
-
----
-
-## How-To Install ClickWhale
-
-**Source:** [https://clickwhale.pro/docs/article/how-to-install-clickwhale/](https://clickwhale.pro/docs/article/how-to-install-clickwhale/)
-
-It is simple to install ClickWhale on your site. This article will serve as your guide on how to install it.
-
-The easiest way to install ClickWhale is via the *Plugins* menu in your site’s admin dashboard.
-
-Start by hovering over **Plugins** > **Add New** Plugin.
-
-![How To Install Clickwhale Image - 1](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-Image-1.png)
-
-Search “ClickWhale” in the search bar on the upper right side.
-
-You should see **ClickWhale** appear at the top of the search result. Then click the “**Install Now**” button to begin the installation.
-
-![How To Install Clickwhale Image - 2](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-Image-2-1024x578.png)
-
-The button will change to **Activate**after a few seconds. Click the **Activate** button to finish the installation.
-
-![How To Install Clickwhale Image - 3](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-Image-3-1024x685.png)
-
-Once the activation is complete, you’ll see ClickWhale on the left side navigation of your site’s dashboard. Click **ClickWhale** and a prompt will appear with an “**Allow & Continue**” and “**Skip**” buttons. Click your preference button to start using the ClickWhale.
-
-![How To Install Clickwhale New Image - 4](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-New-Image-4-1024x486.png)
-
-And you’re done! You may now start adding links, categories, link pages and more.
-
-![How To Install Clickwhale New Image - 5](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-New-Image-5-1024x486.png)
-
----
-
-## How-To Import Links
-
-**Source:** [https://clickwhale.pro/docs/article/how-to-import-links/](https://clickwhale.pro/docs/article/how-to-import-links/)
-
-Got a bunch of links to track? No problem — import them with ease!
-
-Here’s how.
-
-Locate **ClickWhale** in the sidebar navigation and open the **‘Tools’**admin pageand select the **‘Import’** from the Tab-Navigation.
-
-## Upload CSV file
-
-Choose the CSV file to import and proceed by clicking the **‘Upload Import File**‘ button.
-
-![Upload Csv File](https://clickwhale.pro/wp-content/uploads/2024/06/Upload-CSV-file-1024x387.png)
-
-## Column mapping
-
-Once your file is uploaded, you will be taken to the **Column Mapping.** Here, you can customize which columns should be mapped to which fields. When you’re satisfied with your customization, click Continue.
-
-![Column Mapping](https://clickwhale.pro/wp-content/uploads/2024/06/Column-mapping-1024x598.png)
-
-## Edit fields
-
-You will then be taken to the **Edit Fields**. From there, you can edit or delete the links
-
-For instance, you need to set the link to nofollow and sponsored. You can do so by ticking the checkbox.
-
-Upon completing all customizations and selections, click the **Run Importer** button.
-
-![Edit Fields](https://clickwhale.pro/wp-content/uploads/2024/06/Edit-fields-1024x454.png)
-
-## Import
-
-A list of the successfully uploaded links will be displayed.
-
-And you’re done. You may return to the Links tab and review all the uploaded links. Just click the ‘**Go To Links**’ button.
-
-## FAQ’s
-
-**What file format is required to import links?**
-
-ClickWhale imports links using a **CSV file**. Before importing, make sure your links are saved in CSV format.
-
-**Can I customize how my CSV columns are imported?**
-
-Yes. During the **Column Mapping** step, you can choose which columns from your CSV file correspond to the available ClickWhale link fields.
-
-**Can I edit imported links before completing the import?**
-
-Yes. The **Edit Fields** step lets you review your imported links and modify settings before running the importer. For example, you can enable attributes such as **nofollow** or **sponsored** for your links.
-
-**What happens after the import is complete?**
-
-After the importer finishes, ClickWhale displays a list of the successfully imported links. You can then select **Go To Links** to review and manage them in the **Links** section.
-
-**Will importing links overwrite my existing ClickWhale links?**
-
-No. The import process adds the links from your CSV file. If you need to modify existing links, review them after the import is complete.
-
-**Can I change the column mapping for different CSV files?**
-
-Yes. Each time you import a CSV file, you can configure the column mapping to match the structure of that file before continuing with the import.
-
-**What should I do if some imported data doesn’t appear correctly?**
-
-Check that your CSV file is formatted correctly and verify the column mapping before running the importer. Incorrect column mapping may cause data to be assigned to the wrong fields.
-
-**Can I edit imported links after the import is complete?**
-
-Yes. Once the import is finished, you can edit any imported link from **ClickWhale > Links**, just like links created manually.
-
----
-
-## How-To Add Google Tag Manager To WordPress with ClickWhale
+## How to Add Google Tag Manager To WordPress with ClickWhale
 
 **Source:** [https://clickwhale.pro/docs/article/add-google-tag-manager-to-wordpress/](https://clickwhale.pro/docs/article/add-google-tag-manager-to-wordpress/)
 
@@ -1268,94 +1312,273 @@ Here are a few **additional resources you might find super helpful.**
 
 If you have any questions or need anything, you can always **reach us**[at our website](https://clickwhale.pro/contact/)**, where we are always happy to help!**
 
+## FAQs
+
+**Do I need to edit my website’s code to add Google Tag Manager with ClickWhale?**
+
+No. ClickWhale lets you add the Google Tag Manager code through its **Tracking Codes** feature, so you don’t need to edit your website’s theme files or source code manually.
+
+**Why do I need to add two Google Tag Manager codes?**
+
+Google Tag Manager provides two code snippets during setup. The first should be added **before </head>**, and the second **after <body>**. Adding both ensures Google Tag Manager works correctly, including in cases where JavaScript is unavailable.
+
+**Can I choose which pages use Google Tag Manager?**
+
+Yes. When creating a tracking code in ClickWhale, you can choose whether to run it on your entire website or only on specific pages by selecting the appropriate page settings.
+
+**Can I exclude certain users from being tracked?**
+
+Yes. ClickWhale lets you exclude specific WordPress user roles, such as administrators or editors, from being tracked by Google Tag Manager.
+
+**Can I use ClickWhale without Google Tag Manager?**
+
+Yes. If you only need basic click tracking for your links, ClickWhale includes built-in click tracking, so Google Tag Manager may not be necessary.
+
 ---
 
-## How-To Shorten Links & Create Redirects
+## How to Shorten Links & Create Redirects
 
 **Source:** [https://clickwhale.pro/docs/article/how-to-shorten-links-and-create-redirects/](https://clickwhale.pro/docs/article/how-to-shorten-links-and-create-redirects/)
 
-**Super-complex, overwhelming links aren’t a good look.**
+ClickWhale lets you create shortened links using your website’s domain and redirect visitors to any destination URL.
+
+For example:
+
+**Original URL**
 
 ![long link example from Amazon](https://clickwhale.pro/wp-content/uploads/2023/10/long-link-example-from-Amazon-1024x183.png)
 
-Using such long links will only make your website look unprofessional and unorganized. Fortunately, we have the perfect tool to let you solve this issue, which will also indirectly help you:
+**ClickWhale Link**
 
-- **Increase trust.** People don’t trust long URLs since they look suspicious.
-- **Improve engagement.** On most social media sites, adding long URLs is not possible.
+```
+https://yourwebsite.com/summer-sale
+```
 
-Here’s how you can achieve such benefits in less than five minutes.
+When someone visits the shortened link, ClickWhale automatically redirects them to the destination URL.
 
-**Note:**If you haven’t already, install & activate the [ClickWhale plugin](https://wordpress.org/plugins/clickwhale/).
+This guide explains how to create a shortened link, configure its settings, choose a redirection type, and verify that the redirect works correctly.
 
-## 2. Add Your Long Link
+## Before You Begin
 
-Now it’s time to **choose a link you want to shorten and customize.**
+Before you begin, make sure:
 
-We highly recommend shortening and customizing every link you share with your audience, whether on social media or anywhere else.
+- ClickWhale is installed and activated on your WordPress website.
+- You have permission to manage ClickWhale links from the WordPress dashboard.
+- **Note:**If you haven’t already, install & activate the [ClickWhale plugin.](https://clickwhale.pro/pricing/)
 
-After you choose a link you want to shorten, **head over to your WordPress dashboard, select the ClickWhale plugin, and click on ‘Add New’.**
+## Create and Configure a Shortened Link
 
-![](https://clickwhale.pro/wp-content/uploads/2023/10/adding-links-into-ClickWhale-screenshot-1024x279.png)
+1. Log in to your WordPress dashboard.
+2. Navigate to ClickWhale → Links.
+3. Click Add New.
 
-## 3. Create a Redirect
+![ClickWhale Import Links](https://clickwhale.pro/wp-content/uploads/2023/10/ClickWhale-Import-Links-1024x579.png)
 
-You will see a **menu for customizing and shortening your links:**
+The Add New Link screen opens, where you can configure the shortened link.
 
-![](https://clickwhale.pro/wp-content/uploads/2023/10/adding-a-link-into-ClickWhale-screenshot-1024x485.png)
+![ClickWhale Link Settings](https://clickwhale.pro/wp-content/uploads/2023/10/ClickWhale-Link-Settings-1-1024x639.png)
 
-In case you’re unfamiliar with some of these fields, here is a bit more information about them.
+**Title (Required**)
 
-- **Title.**The name of your link (just for your own use, but really helpful for finding it inside ClickWhale).
-- **Slug.**The custom URL to your link. The slug is the end part of a URL after the backslash (“/”).
-- **Target URL.**The URL you want to shorten and customize.
-- **Nofollow.**The nofollow tag tells search engines to ignore that link.
-- **Sponsored.**Indicates links that result from advertisements or paid placements.
-- **Description.**A small description of your link (only visible to you, not your audience).
-- **Category.**A category of your link for better organization in ClickWhale
+Enter a descriptive name to help identify the link in your ClickWhale dashboard.
 
-Of course, **some of these fields are just for organizational purposes** inside ClickWhale. If you’re looking to keep it as simple as possible, all you need is to fill in the **title, slug, target URL, and redirection type.**
+The title is used only for internal organization and does not appear in the shortened URL.
 
-![](https://clickwhale.pro/wp-content/uploads/2023/10/adding-links-necessary-info-ClickWhale-screenshot-1024x486.png)
+******Slug (Optional)**
 
-### The Redirection Type
+Enter the text you want to appear after your website’s domain.
 
-There are several redirection types we allow you to use with your links.
+**For example:** summer-sale
 
-![](https://clickwhale.pro/wp-content/uploads/2023/10/redirection-types-screenshot.png)
+**creates:** https://yourwebsite.com/summer-sale
 
-It’s important to **choose the right one for the best user experience and SEO.** We’ll now go briefly over each of the redirection types.
+If the field is left blank, ClickWhale may automatically generate a unique slug.
 
-- **301 redirect: Moved Permanently.**The URL has been permanently moved to a new URL where a user is automatically redirected.
-- **302 redirect: Found / Move Temporarily.**The URL has been temporarily moved to a different URL where a user is automatically redirected.
-- **303 redirect: See Other.**The redirects don’t link to the URL itself but to another page (such as a confirmation page).
-- **307 redirect: Temporarily Redirect.**The URL has been temporarily moved to another location. If accurate click tracking is more important than SEO, and you expect to change your URL periodically, 307 temporary redirects are the way to go.
-- **308 redirect: Permanent Redirect.**The URL you are trying to access has been permanently moved to a new URL. If it is permanent and you are sending data using a POST request, then use this.
+**Target URL (Required)**
 
-After you **choose the redirection type and fill in all details, click the ‘Save link’ button.**
+Enter the complete destination URL where visitors should be redirected.
 
-![](https://clickwhale.pro/wp-content/uploads/2023/10/saving-links-inside-ClickWhale-screenshot-1024x478.png)
+Include the full address, including https://.
 
-## 4. Test & Preview the Link
+**Redirection Type (Required)**
 
-You will now see your newly added link in your ClickWhale Links menu.
+Select the HTTP redirection type for the shortened link.
 
-![](https://clickwhale.pro/wp-content/uploads/2023/10/shortened-link-in-ClickWhale-screenshot-1024x196.png)
+The available redirect types are explained in the next section.
 
-It’s important you **preview a link and test it before you share it with your audience.** We’ve never experienced any problems with our custom links but, just to be sure everything works fine, it’s **always a good idea to double-check it**.
+**Link Target (Optional)**
 
-## You Can Now Shorten Links & Improve Engagement!
+Choose how the link opens when ClickWhale displays it through supported content or features.
 
-Creating custom links will **elevate your site and allow you to stand out** from competitors.
+This setting does not change the redirect destination itself. The reviewer specifically recommends clarifying this behavior so readers don’t assume it affects every shortened URL.
 
-But there are a lot of **additional things you can do to thrive and get ahead even faster.** Here are some of our resources you should definitely check.
+**Nofollow (Optional)**
 
-- [How To Use ClickWhale in WordPress to Add Affiliate Links](https://clickwhale.pro/blog/how-to-use-clickwhale-in-wordpress-to-add-affiliate-links/)
-- [ClickWhale Analytics Data: How to Use It To Make A Profit](https://clickwhale.pro/blog/clickwhale-analytics-data-how-to-use-it-to-make-a-profit/)
-- [5 Reasons Why You Need to be Using ClickWhale](https://clickwhale.pro/blog/5-reasons-why-you-need-to-be-using-clickwhale/)
+Enable Nofollow to add the **rel=”nofollow”** attribute to the shortened link.
 
-Custom links combined with the tips you find in the links above will make your website look more professional, while also helping you capture more potential customers and drive higher engagement.
+This signals that search engines should not treat the link as a standard editorial endorsement, rather than stating they simply “do not follow” the link.
 
-If you have any questions or need anything, you can always **reach us**[at our website](https://clickwhale.pro/contact/)**, where we are always happy to help!**
+**Sponsored (Optional)**
+
+Enable Sponsored for affiliate, sponsored, or paid links.
+
+This adds the**rel=”sponsored”** attribute to the link.
+
+**Description (Optional)**
+
+Add an internal description to help identify the purpose of the shortened link.
+
+Visitors cannot see this information.
+
+**Category (Optional)**
+
+Assign the link to one or more categories to organize related links.
+
+Categories help you manage links but do not affect how redirects work.
+
+## Choose a Redirection Type
+
+Now that the user has reached the **Redirection Type** field, this section explains **which option to choose**, rather than repeating what the field is.
+
+ClickWhale supports several HTTP redirection types to accommodate different use cases. Select the option that best matches how you want the shortened link to behave.
+
+![ClickWhale Redirect Type](https://clickwhale.pro/wp-content/uploads/2023/10/ClickWhale-Redirect-Type.png)
+
+**301 – Moved Permanently**
+
+Use a **301** redirect when the destination URL is permanent.
+
+This is the most common option for shortened links that will continue pointing to the same destination.
+
+**302 – Found (Temporary Redirect)**
+
+Use a **302** redirect when the destination is temporary and may change later.
+
+**303 – See Other**
+
+Use a **303** redirect when visitors should be redirected to another page after completing an action, such as submitting a form.
+
+**307 – Temporary Redirect**
+
+Use a **307** redirect when the redirect is temporary and the original request method should be preserved.
+
+**308 – Permanent Redirect**
+
+Use a **308** redirect when the redirect is permanent and the original request method should also be preserved.
+
+## Configure Additional Link Features
+
+After configuring the basic link settings, you can use ClickWhale’s additional features to extend how your shortened link is managed and shared.
+
+Some features are available directly from the link editor, while others become available after the link has been saved.
+
+### QR Codes
+
+Generate a QR code for your shortened link to make it easy to share in printed materials, presentations, product packaging, or other offline content.
+
+After saving your link, open the **QR Code** section to generate and download the QR code.
+
+For detailed instructions, see [How to Create QR Codes for Links](https://clickwhale.pro/docs/article/how-to-create-qr-codes-for-links/).
+
+![Qrcode feature](https://clickwhale.pro/wp-content/uploads/2025/09/qrcode-feature.png)
+
+### Keyword Auto Linker
+
+Use the **Keyword Auto Linker** to automatically connect selected keywords in your WordPress content to this ClickWhale link.
+
+This feature can automatically link keywords to internal, external, or affiliate destinations without manually editing each post.
+
+For complete setup instructions, see [How to Use the Keyword Auto Linker](https://clickwhale.pro/docs/article/how-to-use-the-keyword-auto-linker/).
+
+![ClickWhale Keyword Auto Linker](https://clickwhale.pro/wp-content/uploads/2023/10/ClickWhale-Keyword-Auto-Linker-1024x384.png)
+
+### UTM Parameters
+
+The **UTM Parameters** feature lets you append campaign tracking parameters to your destination URL.
+
+This helps you identify traffic sources and marketing campaigns in analytics platforms.
+
+For more information, see [Create UTM Links with the ClickWhale Link Builder.](https://clickwhale.pro/blog/create-utm-links-with-the-newest-link-builder-from-clickwhale/))
+
+![ClickWhale UTM parameters with values](https://clickwhale.pro/wp-content/uploads/2026/07/ClickWhale-UTM-parameters-with-values-1024x386.png)
+
+### Link Scanner
+
+Use **Link Scanner** to find where manually inserted ClickWhale links appear throughout your WordPress content.
+
+This makes it easier to review, update, or manage existing links across your website.
+
+For more information, see **Understanding Link Scanner Results**.
+
+![ClickWhale Link Scanner](https://clickwhale.pro/wp-content/uploads/2023/10/ClickWhale-Link-Scanner-1024x338.png)
+
+## Save and Test the Link
+
+After reviewing your settings, click **Save Link** to create the shortened link.
+
+![ClickWhale General Save Link](https://clickwhale.pro/wp-content/uploads/2023/10/ClickWhale-General-Save-Link-1024x630.png)
+
+## FAQs
+
+**What is the difference between the slug and the target URL?**
+
+The **slug** is the custom text that appears after your website’s domain in the shortened URL.
+
+For example:
+
+**Slug**: summer-sale
+
+**Shortened URL**: https://yourwebsite.com/summer-sale
+
+The **target URL** is the destination where visitors are redirected after opening the shortened link.
+
+**Which redirection type should I use?**
+
+Choose the redirection type based on how long you expect the destination URL to remain the same.
+
+- **301** – Use for permanent redirects.
+- **302** – Use for temporary redirects.
+- **303** – Use after actions such as form submissions.
+- **307** – Use for temporary redirects that preserve the original request method.
+- **308** – Use for permanent redirects that preserve the original request method.
+
+For most shortened links, **301** and **302** are the most commonly used options.
+
+**Can I change the target URL later?**
+
+Yes. You can edit an existing ClickWhale link at any time and update its destination URL.
+
+After making your changes, save the link to apply the updated destination.
+
+**Will changing the target URL affect the shortened link?**
+
+No. Updating the target URL changes only where the shortened link redirects visitors.
+
+The shortened URL remains the same unless you also modify its slug.
+
+**How can I confirm that the redirect works?**
+
+After saving your link:
+
+1. Copy the shortened URL.
+2. Open it in a new browser tab or an incognito window.
+3. Verify that it redirects to the correct destination page.
+
+If the redirect does not work as expected, review the **Target URL** and **Redirection Type** settings before saving the link again.
+
+**Can I disable click tracking for one specific link?**
+
+Click tracking is currently managed through the global ClickWhale tracking settings rather than individual links.
+
+To change your tracking preferences, navigate to: **ClickWhale → Settings → Tracking**
+
+For more information, see [How to Enable or Disable Link Tracking.](https://clickwhale.pro/docs/article/how-to-enable-or-disable-link-tracking/)
+
+**Can I edit or delete a shortened link?**
+
+Yes. Go to **ClickWhale → Links**, locate the shortened link, and select **Edit** to update its settings or **Delete** to remove it.
+
+Deleting a link permanently removes the redirect, so any existing shortened URLs pointing to that link will no longer work.
 
 ---
 
