@@ -21,7 +21,7 @@ The types of logs you’ll find for WooCommerce Subscriptions are
 
 ## Where to find WooCommerce Subscriptions error logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 You can find the subscription logs on the WP Admin dashboard of a site. To view the WooCommerce Subscriptions (and other WooCommerce-related) logs:
 
@@ -41,13 +41,13 @@ wcs-
 
 ## Subscription Error Logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 The following sections explain the different types of Subscriptions error logs you’ll find in **WooCommerce > Status Logs**.
 
 ### Failed Status Change Logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 This log is labeled 
 ```
@@ -62,7 +62,7 @@ Example log entry:
 
 ### Failed Scheduled Action Logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 This log has a failed-scheduled-actions label. Failed scheduled actions are recorded here along with information such as the scheduled action’s name and ID, how long it was attempted, and the arguments.
 
@@ -72,7 +72,7 @@ Example log entry:
 
 ## Upgrade Logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 When WooCommerce Subscriptions updgrades to a new version, for example, from version 6.4.1 to 6.5.0, the logs record various bits of information about the upgrade. The information is stored in a log named 
 ```
@@ -85,7 +85,7 @@ wcs-upgrade
 
 ### General Upgrade Notes Logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 This log records deatils about which other plugins and extensions, and their versions, were active at the time of the update. Each log can contain the following:
 
@@ -109,7 +109,7 @@ Example log entry:
 
 ## Subscription Switch Logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 The Subscription Switch Log records events related to when a customer upgrades, downgrades, or changes their subscriptions. This is a primarily a source of information for store managers to refer back to if an error occurs or they need to track down information about the switch.
 
@@ -137,13 +137,13 @@ Example entry log:
 
 ## PayPal Standard Logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 Support for PayPal Standard is **very limited** and you might be asked to switch to PayPal Payments if troubleshooting cannot fix reported issues. Since WooCommerce version 5.5.0, [PayPal Standard is hidden for new installations](https://developer.woocommerce.com/2021/07/12/developer-advisory-paypal-standard-will-be-hidden-on-new-installs/). We strongly encourage everyone using PayPal Standard to use the recommended **PayPal Payments extension instead**, which is our full-stack solution (credit card processing, PayPal checkout, subscriptions, pay later options, etc).
 
 ### PayPal Logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 This log is labeled 
 ```
@@ -158,7 +158,7 @@ Example log entry:
 
 ### Failed PayPal Standard IPN Logs
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 This labeled 
 ```
