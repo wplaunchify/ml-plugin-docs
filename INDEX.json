@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T00:51:27.880Z",
+  "last_updated": "2026-08-02T00:57:54.066Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1251,7 +1251,7 @@
       "slug": "kadence-blocks-page-builder-toolkit-for-gutenberg-editor",
       "name": "Kadence Blocks — Page Builder Toolkit for Gutenberg Editor",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-07-26T18:19:12.742Z",
+      "last_scraped": "2026-08-02T00:57:54.066Z",
       "page_count": 153,
       "categories": [
         "access-the-design-library",
