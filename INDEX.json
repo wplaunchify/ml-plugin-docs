@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T09:06:52.439Z",
+  "last_updated": "2026-08-02T09:20:29.693Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -465,7 +465,7 @@
       "slug": "fluent-forms-signature-addon",
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-07-26T12:29:50.634Z",
+      "last_scraped": "2026-08-02T09:20:29.693Z",
       "page_count": 457,
       "categories": [
         "account-management",
