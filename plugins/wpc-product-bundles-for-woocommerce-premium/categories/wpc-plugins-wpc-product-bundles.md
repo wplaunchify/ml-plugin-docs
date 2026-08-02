@@ -290,7 +290,7 @@ Or both can have the same color but they need a second common attribute where th
 ![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2021/04/Linked-Variation-Quick-VIew.gif)Open linked variation in a Quick View popup
 
 Then you’re good to go. Good luck and enjoy our plugin.
-                        
+                    
 #### KEY FEATURES
 
 - Configure a position to display the linked variations on each single product page.
