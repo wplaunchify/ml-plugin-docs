@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T07:40:55.939Z",
+  "last_updated": "2026-08-02T07:45:25.918Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3707,7 +3707,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-07-26T10:33:56.548Z",
+      "last_scraped": "2026-08-02T07:45:25.918Z",
       "page_count": 5,
       "categories": [
         "bulk-edit-prices-woocommerce-pending-orders",
