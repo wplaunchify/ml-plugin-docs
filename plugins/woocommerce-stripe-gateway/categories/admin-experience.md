@@ -53,14 +53,14 @@ As a site administrator, you have access to modify [settings in the Stripe exten
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Tax
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
@@ -200,14 +200,14 @@ The only difference between an expired authorization and a cancelled authorizati
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Tax
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
@@ -610,14 +610,14 @@ wc_stripe_payment_request_level3_data
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Tax
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
@@ -953,14 +953,14 @@ Adaptive Pricing does **not** work with:
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Tax
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
@@ -1066,14 +1066,14 @@ Note that identifiers appearing in the order notes depends on having [webhooks s
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Tax
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
@@ -1159,14 +1159,14 @@ If you use [the Subscriptions extension](https://woocommerce.com/products/woocom
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Tax
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
@@ -1224,14 +1224,14 @@ Radar rules can be configured directly from [your Stripe account dashboard](http
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Tax
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
@@ -1257,7 +1257,7 @@ Please see the [WooCommerce refunds](https://woocommerce.com/document/woocommer
 
 ## Can I refund authorized payments that haven’t been captured?
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 No. This is because, if a payment has only been *authorized* but not *captured*, then no money has been exchanged yet. Thus, there is no money to refund.
 
@@ -1265,7 +1265,7 @@ Please see the [authorize and capture documentation](https://woocommerce.com/doc
 
 ## How long do refunds take to process?
 
-[↑ Revenir en haut](#doc-title)
+[↑ Back to top](#doc-title)
 
 A refund will typically take 5 to 10 business days to appear on your customer’s bank statement. This is standard for most payment processors.
 
@@ -1281,14 +1281,14 @@ Here’s what a reversal looks like in the Stripe dashboard:
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Tax
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
@@ -1318,14 +1318,14 @@ For this reason, you will not see subscriptions paid for via the Stripe extensio
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Tax
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
