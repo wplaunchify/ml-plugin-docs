@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T16:38:54.880Z",
+  "last_updated": "2026-08-02T16:45:56.279Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -274,7 +274,7 @@
       "slug": "duplicate-page",
       "name": "Duplicate Page",
       "documentation_url": "https://wordpress.org/plugins/duplicate-page/",
-      "last_scraped": "2026-07-26T15:23:32.795Z",
+      "last_scraped": "2026-08-02T16:45:56.279Z",
       "page_count": 2,
       "categories": [
         "advanced",
