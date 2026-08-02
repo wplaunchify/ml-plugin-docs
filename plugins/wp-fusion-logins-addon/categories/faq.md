@@ -971,7 +971,25 @@ The version numbers are broken into three, and sometimes four parts. For example
 			top: 5px;
 			word-spacing: 2px;
 			color: #fff;
-		}#### #3.47.13 - 6/17/2026
+		}#### #3.47.14 - 7/30/2026
+
+- ✨ New Added a FluentAffiliate integration that applies and removes configurable tags as an affiliate's status changes through the full lifecycle (pending, active, inactive, cancelled, rejected, and deleted)
+- ✨ New Added FluentCommunity badge sync — map each badge to one or more tags so badges are assigned when a user has any linked tag and removed when none remain
+- ⚡️ Improved Easy Digital Downloads integration now uses EDD's modern order meta APIs when available, with legacy payment meta fallbacks for older EDD versions
+- ⚡️ Improved MemberPress "Process Actions" button now appears for all transaction statuses, so admins can manually retry pending, failed, and refunded syncs
+- ⚡️ Improved Only the active CRM is bootstrapped at load time instead of instantiating every CRM class, and MailPoet's translated name is deferred until init to avoid WordPress 6.7 textdomain notices
+- 🔧 Fixed Fixed a ThriveCart privilege escalation (CVE-2026-14444) where an authenticated subscriber could escalate via the Auto Login success URL role parameter — the request role is now ignored, new users get a safe server-side role only, and privileged roles are rejected on webhook import paths
+- 🔧 Fixed Fixed ThriveCart / webhook import hardening follow-ups: webhook-safe import rollback for HubSpot, MailerLite, and Salesforce batch queues; tag-driven privilege rollback on update / update_tags webhooks; and safer access-key validation
+- 🔧 Fixed Fixed Drip failing to reactivate inactive contacts (including Gravity Forms submissions) by keying updates off email and sending built-in fields like status as top-level API parameters
+- 🔧 Fixed Fixed Kit (ConvertKit) v4 webhook imports failing after contact ID parsing, including missing-email and missing-name edge cases
+- 🔧 Fixed Fixed SureCart stripping the first character from HighLevel-style tags (e.g. tier:pro) because ltrim() treated "tag_" as a character mask instead of a prefix
+- 🔧 Fixed Fixed Tickera integration not loading after Tickera renamed its main class from TC to Tickera\TC
+- 🔧 Fixed Fixed WP E-Signature document tag settings not saving after the 2.x setup UI update
+- 🔧 Fixed Fixed WooCommerce Last Order Shipping Method not syncing to the CRM due to a field key mismatch (order_shipping_method vs order_shipping)
+- 🔧 Fixed Fixed Brevo phone formatting for non-US numbers, including expanded E.164 country coverage and prevention of double-prefixing
+- 🔧 Fixed Fixed multiline CRM field values (e.g. HubSpot textareas) being flattened to a single line when synced into WordPress user meta
+
+#### #3.47.13 - 6/17/2026
 
 - ✨ New Added a [Sublium Subscriptions integration](https://wpfusion.com/documentation/ecommerce/sublium-subscriptions/) with per-product subscription tagging, CRM field syncing, and support for the full subscription lifecycle — including free trials, renewal deduplication, and a sandbox-mode safeguard
 - ✨ New Added a native [Academy LMS integration](https://wpfusion.com/documentation/learning-management/academy-lms/) that applies tags when a user is enrolled in or completes a course or lesson, with a linked tag for automatic enrollment and un-enrollment from the CRM
