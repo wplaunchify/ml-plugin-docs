@@ -17865,6 +17865,10 @@ For more information, see [Migrate WooCommerce Customers](https://www.wpallimpo
 
 First, migrate your customers as per the instructions from the preceding question. Then, migrate your orders. When migrating your orders, WP All Import will help you link each order to its corresponding customer. To learn more, see [How to Migrate WooCommerce Orders](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-orders/).
 
+### What About Other Customer Import and Export Scenarios?
+
+For instructions on how to handle other customer import and export scenarios, see our guide at [How to Export and Import WooCommerce Customers](https://www.wpallimport.com/woocommerce-export-import-customers/).
+
 ### How Do I Import WordPress Users?
 
 1. Navigate to **All Import › New Import** in the WordPress main menu.
@@ -18172,6 +18176,10 @@ To learn more, see [Migrate WooCommerce Customers](https://www.wpallimport.com/m
 
 To migrate customers and their orders in WooCommerce, migrate the customers first. When you migrate the orders, be sure to include customer information from **Available Data > Customer**. WP All Import will then automatically match the orders to the correct customers.
 
+### What About Other Customer Import and Export Scenarios?
+
+For other scenarios, see our complete guide at [How to Export and Import WooCommerce Customers](https://www.wpallimport.com/woocommerce-export-import-customers/).
+
 ### How Do I Export WordPress Users?
 
 1. Go to **All Export > New Export**.
@@ -18399,6 +18407,10 @@ For additional information, see [How to Export WooCommerce Customers to CSV, Exc
 5. Complete the import.
 
 To learn more, see [How to Import WooCommerce Customers](https://www.wpallimport.com/documentation/how-to-import-woocommerce-customers/). You can import from CSV, XML, Excel, or Google Sheets.
+
+### What About More Complex Customer Import and Export Scenarios?
+
+To handle more complex scenarios, see our complete guide at [How to Export and Import WooCommerce Customers](https://www.wpallimport.com/woocommerce-export-import-customers/).
 
 ### How Do I Bulk Edit WooCommerce Customers?
 
