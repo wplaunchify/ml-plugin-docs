@@ -8,6 +8,33 @@
 
 **Source:** [https://fluentboards.com/docs/changelog/](https://fluentboards.com/docs/changelog/)
 
+## 2.0 (Date: July 30, 2026)
+
+- **New:** Completely new UI/UX synced with Fluent System
+- **New:** Featured dashboard with recently opened boards and notifications
+- **New:** Dark Mode with Light / Dark / System theme switching
+- **New:** Newly designed task details modal with next and previous task navigation
+- **New:** AI Writing Assistant in task descriptions
+- **New:** AI-powered subtask generation, summary, labels, and priority suggestions
+- **New:** Markdown editor for task descriptions
+- **New:** Rebuilt and redesigned Reports with Overview, Tasks, Activity, Timesheet, and Roadmap screens
+- **New:** Board template management with editable templates, covers, and categories
+- **New:** Automated board creation from FluentCRM automation actions
+- **New:** Task priority enhanced with No Priority state and Urgent level
+- **New:** MCP tools expanded from 18 to 21 with label, stage, and task query tools
+- **New:** Redesigned member profile with stats widget, recent-tasks widget, and activity
+- **New:** New Boards tab and task view added to the CRM contact profile
+- **New:** Board-specific watch and notification preferences
+- **New:** Inline label editing directly on task cards
+- **Improvement:** Fully responsive admin including mobile
+- **Improvement:** Improved label management experience
+- **Improvement:** Improved change stage and move task to other boards experience
+- **Improvement:** Attachment preview UX improved
+- **Improvement:** Redesigned Kanban, List, Table, Calendar, and Gantt views
+- **Improvement:** Redesigned comments, activity feed, and notifications
+- **Improvement:** Redesigned attachments with per-file upload progress
+- Other improvements and bug fixes
+
 ## 1.95 (Date: May 21, 2026)
 
 - **New:** Gantt Chart View
