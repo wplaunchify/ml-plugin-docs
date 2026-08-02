@@ -33,8 +33,6 @@ This section at the top of your dashboard displays four key metrics to give you 
 - **Total Referrals:** The total number of successful sales you have generated.
 - **Conversion Rate:** The percentage of clicks on your links that have turned into successful sales.
 
-![Affiliate Dashboard Overview](https://docs.fluentaffiliate.com/images/affiliate-portal/dashboard/affiliate-dashboard-overview.webp)
-
 ### Your Affiliate Link ​
 
 This section is front and center, making it easy to grab your primary affiliate link at any time.
@@ -74,8 +72,6 @@ This table provides a clean, simple log of the unique clicks your affiliate link
 - **URL:** The specific affiliate link that was clicked.
 - **Refer:** This shows where the click came from.
 
-![Visits User Portal](https://docs.fluentaffiliate.com/images/affiliate-portal/visits/visits-tracking-overview.webp)
-
 This section gives affiliates a complete overview of their link activity and helps them understand which channels or content are performing best.
 
 ---
@@ -88,6 +84,8 @@ This section gives affiliates a complete overview of their link activity and hel
 
 As an affiliate, you can create and share referral links in just a few clicks from your portal. You can also use a QR code version of your link for faster sharing on mobile, printed materials, or offline campaigns.
 
+See the whole process step by step in this video:
+
 ## Generate a Link for Any Page ​
 
 Use this option when you want to promote a specific page, product, service, or blog post.
@@ -97,8 +95,6 @@ Use this option when you want to promote a specific page, product, service, or b
 3. Click **Generate**.
 
 Your unique referral URL will appear in the **Generated Affiliate Link** area. Click **Copy** to use it in your campaigns.
-
-![Generated Referral Link](https://docs.fluentaffiliate.com/images/affiliate-portal/generating-links/qr-link-3.webp)
 
 ## Your Default Affiliate Link and QR Code ​
 
@@ -120,8 +116,6 @@ Under **Advanced Features**, find **Affiliate QR Code** and click **Settings**.
 
 Then enable the option **Enable QR Code on Affiliate Portal** and save the settings.
 
-![Affiliate QR Code settings](https://docs.fluentaffiliate.com/images/affiliate-portal/generating-links/qr-link-1.webp)
-
 ### Step 2: Customize QR Code Appearance ​
 
 Inside the Affiliate QR Code settings screen, you can customize:
@@ -131,8 +125,6 @@ Inside the Affiliate QR Code settings screen, you can customize:
 - **Live Preview:** See the final look before saving.
 
 After saving, affiliates will see the updated QR code style in their **Links** section.
-
-![Affiliate QR Code appearance settings](https://docs.fluentaffiliate.com/images/affiliate-portal/generating-links/qr-link-2.webp)
 
 ## Customize the Default Affiliate Link Pattern ​
 
@@ -214,8 +206,7 @@ Click the **Register Now** button to start the sign-up process.
 
 NOTE
 
-Only the site admin can decide where the **Affiliate Page** appears on the site. To learn how to set this up, check out this [article](/guide/settings-and-customization/referral-settings).![Affiliate Registration Page](https://docs.fluentaffiliate.com/images/affiliate-portal/registration/registration-page.webp)
-
+Only the site admin can decide where the **Affiliate Page** appears on the site. To learn how to set this up, check out this [article](/guide/settings-and-customization/referral-settings).
 ## Step 2: Fill Out the Registration Form ​
 
 After clicking **Register Now**, users will land on the Affiliate Registration page. Here, they'll be asked to provide the necessary details to create their affiliate account. It is divided into clear sections for ease of use.
@@ -244,8 +235,6 @@ To complete the process, the user must:
 1. Check the box to confirm they "**I agree to the terms and conditions.**"
 2. Click the **Register** button to submit their application for review.
 
-![Registration Form](https://docs.fluentaffiliate.com/images/affiliate-portal/registration/registration-form.webp)
-
 ## Step 3: Welcome to the Affiliate Dashboard ​
 
 After the user submits the form and their application is approved by the **site admin**, they can log in. Upon logging in, they will be directed to their personal **Affiliate Dashboard**.
@@ -258,8 +247,6 @@ This dashboard is their central hub to:
 - Update their account settings.
 
 To learn more about the Affiliate Dashboard, check out this [article](/guide/affiliate-portal/affiliate-dashboard-overview).
-
-![Affiliate Dashboard](https://docs.fluentaffiliate.com/images/affiliate-portal/registration/registration-success.webp)
 
 And that's it! In just a few simple steps, a new user can join the affiliate program and get everything they need to start promoting and earning.
 
@@ -281,8 +268,6 @@ This section shows the list of all payouts that have been made to your account. 
 - **Amount** – The total amount you received in that payout.
 - **Status** – Whether the payout is Paid, Unpaid, or Pending.
 - **Descrption** – This provides details about the payouts.
-
-![Payout Affiliate User Portal](https://docs.fluentaffiliate.com/images/affiliate-portal/payouts/payout-history-view.webp)
 
 All of this helps you quickly understand how much you've earned, what's been paid out, and what's still pending.
 
@@ -309,8 +294,6 @@ Here is a breakdown of the information in each column:
 - **Status:** This tells you the current payment status of your commission. It will show as Paid for commissions you have received, and Unpaid for commissions that are approved but have not yet been sent.
 - **Description:** This provides details about the product that was purchased.
 
-![Referrals User Portal](https://docs.fluentaffiliate.com/images/affiliate-portal/referrals/referrals-list-view.webp)
-
 So, now you can easily track your successful promotions and see which products are generating the most income for you.
 
 ---
@@ -333,8 +316,6 @@ On this page, you will find the following options:
 - **Enable Referral Email Notification:** Check this box if you want to receive an email alert every time you generate a successful referral. If you prefer not to receive these notifications, simply uncheck the box.
 
 After making any changes, be sure to click the **Save Settings** button to apply your updates.
-
-![User Portal Settings](https://docs.fluentaffiliate.com/images/affiliate-portal/profile-settings/profile-settings-page.webp)
 
 ---
 

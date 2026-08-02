@@ -174,6 +174,8 @@ A log of every click an affiliate receives on their affiliate links. This allows
 
 Installing and activating FluentAffiliate is a quick and easy process. This guide will walk you through the steps to install, upgrade, and activate your FluentAffiliate license so you can start managing your affiliate program right away.
 
+Prefer to follow along visually? Watch the full installation and setup walkthrough:
+
 ## Step 1. Install FluentAffiliate (Free Version) ​
 
 This is the standard method for installing the core FluentAffiliate plugin, which is free and available from the WordPress Plugin Directory. After downloading the plugin, follow the steps below:
@@ -231,8 +233,6 @@ The first step helps FluentAffiliate understand which platforms you use to sell 
 
 Click the **Next** button to proceed.
 
-![Connecting integration plugins during FluentAffiliate onboarding](https://docs.fluentaffiliate.com/images/getting-started/onboarding-setup/onboarding-fluentaffiliate-1.webp)
-
 ## Step 2: Set Your Default Commission ​
 
 In this step, you'll set the default referral and commission structure for your entire affiliate program. These are the global settings that will apply unless you create custom rates for specific products.
@@ -256,8 +256,6 @@ yoursite.com/?ref=username
 
 Once you've configured these settings, click **Next**.
 
-![Commission Setup in FluentAffiliate](https://docs.fluentaffiliate.com/images/getting-started/onboarding-setup/onboarding-fluentaffiliate-2.webp)
-
 ## Step 3: Create Your Affiliate Portal ​
 
 The final step is to create a dedicated page for your affiliates. This "Affiliate Portal" is where they will log in, track their performance, and generate their unique promotional links.
@@ -271,8 +269,6 @@ FluentAffiliate will automatically place the
 ```
 
  shortcode on the page you select. This shortcode is what makes the affiliate dashboard appear.
-
-![Creating the Affiliate Portal page during onboarding](https://docs.fluentaffiliate.com/images/getting-started/onboarding-setup/onboarding-fluentaffiliate-3.webp)
 
 When you're ready, click the **Finish** button to save your settings and complete the setup.
 
@@ -289,6 +285,8 @@ That's it, you're all set with the onboarding setup for Fluent Affiliate!
 Welcome to **FluentAffiliate** your all-in-one solution for building, managing, and growing a powerful affiliate program right inside your WordPress site.
 
 Whether you're a solo creator, eCommerce store owner, or a membership site admin, FluentAffiliate gives you the tools to turn your customers and followers into revenue-driving affiliates, with **zero technical headache**. Ready to get started? Check out our [installation and activation guide](/guide/getting-started/installation-activation-licensing).
+
+Here's a quick introduction to FluentAffiliate and what it can do for you:
 
 ## Why Use FluentAffiliate? ​
 
