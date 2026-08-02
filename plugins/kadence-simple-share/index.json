@@ -2,7 +2,7 @@
   "plugin_slug": "kadence-simple-share",
   "plugin_name": "Kadence Simple Share",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-  "last_scraped": "2026-07-26T20:25:00.823Z",
+  "last_scraped": "2026-08-02T19:17:38.703Z",
   "total_pages": 31,
   "failed_urls_count": 0,
   "sections": [
@@ -265,7 +265,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Getting Started with the Kadence Plus Plan",
+          "title": "Getting Started with Kadence Ultimate & Lifetime Plans",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-general/quick-start-guide-for-plus-and-ultimate-plan-members/"
         }
       ]
