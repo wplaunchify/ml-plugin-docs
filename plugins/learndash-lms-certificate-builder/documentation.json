@@ -1,7 +1,7 @@
 {
   "plugin_slug": "learndash-lms-certificate-builder",
   "plugin_name": "LearnDash LMS - Certificate Builder",
-  "last_scraped": "2026-07-26T08:46:47.771Z",
+  "last_scraped": "2026-08-02T02:32:07.926Z",
   "total_pages": 320,
   "failed_urls": [
     "https://learndash.com/support/kb/core/styling/styling-overview/",
