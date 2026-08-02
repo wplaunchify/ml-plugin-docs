@@ -38,9 +38,11 @@ This guide will show you how to connect your Airbnb reviews to WP Social Ninja.
 
 Unlike other platforms, Airbnb does not offer a public API that allows plugins like WP Social Ninja to easily fetch reviews. The standard connection method may not work reliably.
 
-To solve this, we will use a manual workaround. This process involves finding a unique **API Key** and **Secret Key** from your Airbnb listing page. By adding these keys to your WordPress site, you give WP Social Ninja the credentials it needs to securely and successfully fetch your reviews.
+To solve this, we will use a manual workaround with two parts: finding a unique **API Key** and **Secret Key** to fetch your **reviews**, and copying a full request URL to fetch your listing's **name and star rating** ("Business Info"). By adding these to your WordPress site, you give WP Social Ninja the credentials it needs to securely and successfully fetch your data.
 
-**Disclaimer**: This method uses Airbnb's internal development tools. Because it is not an official public solution, Airbnb may change these keys in the future, which could cause the connection to break. If this happens, you will need to repeat this process to get the new keys.
+TIP
+
+Only the **API Key** and **Room Reviews Secret Key** are required to display reviews and the review count. The **Business Info** step is recommended — skip it and your reviews will still show, just without the listing's name and star rating.**Disclaimer**: This method uses Airbnb's internal development tools. Because it is not an official public solution, Airbnb may change these values in the future, which could cause the connection to break. If this happens, you will need to repeat this process to get fresh values.
 
 ### Step 1: Find Your API Key and Secret Key ​
 
@@ -71,17 +73,17 @@ After typing the correct term, refresh the page and click on the request that ap
 
 TIP
 
-You must find the secret keys from two different network requests: 
+The **Room Reviews** secret key (from 
 ```
 StaysPdpReviewsQuery
 ```
 
- and 
+) is required for reviews and the review count to work. The **Business Info** request (
 ```
 StaysPdpSections
 ```
 
- . Both are mandatory for the connection to work correctly.
+, below) is recommended in addition, so your listing's name and star rating display correctly — this matters most if you're adding several listings, since without it they can appear unlabeled.
 ### For Room Reviews (Required) ​
 
 - In the **Filter** box at the top of the Network tab, type StaysPdpReviewsQuery and press Enter.
@@ -106,61 +108,114 @@ You will need to find and copy three pieces of information from this file:
 
 ![airbnb api 2](https://docs.wpsocialninja.com/assets/reviewsquery-2.C1I82bDM.webp)
 
-### Find the Keys for a Room's Business Info (Required) ​
+### Find the Business Info Payload (Recommended) ​
+
+Unlike the Reviews keys above, for Business Info you don't need to open the request and dig for one specific field — you'll copy the **entire request URL** instead. Copying the whole request guarantees everything in it always matches, which is what makes this method reliable.
 
 - In the **Filter** box at the top of the Network tab, type **StaysPdpSections** and press Enter.
-- Refresh your Airbnb listing page. You should see a file with the name **StaysPdpSections** appear in the network requests list.
-- Click on the StaysPdpSections file name to open its details.
+- Refresh your Airbnb listing page. You should see a request named **StaysPdpSections** appear in the network requests list.
 
-![api 1](https://docs.wpsocialninja.com/assets/sections-1.CzPqdIid.webp)
+NEEDS SCREENSHOT
 
-- **The Secret Key:**
+- **What to capture:** The Network tab with 
+```
+StaysPdpSections
+```
 
-Now, click on the Payload tab (it might also be called "Request"). - Navigate through extensions → persistedQuery.
-- You will see a sha256Hash. Copy the long string of characters next to it. This is your Secret Key.![api 2](https://docs.wpsocialninja.com/assets/sections-2.CEXeE4ZT.webp)
+ typed in the **Filter** box and the matching request visible in the list below it.
+- **Where from:** Browser DevTools → **Network** tab, on an Airbnb room listing page, right after filtering and reloading.
+- **Suggested filename:** 
+```
+business-info-request-list.webp
+```- **Right-click** on the **StaysPdpSections** request in the list (no need to open it).
+- From the context menu, hover over **Copy**, then click **Copy URL**.
 
+NEEDS SCREENSHOT
+
+- **What to capture:** The right-click context menu open on the 
+```
+StaysPdpSections
+```
+
+ request row, with **Copy → Copy URL** visible/highlighted.
+- **Where from:** Same Network tab — right-click directly on the 
+```
+StaysPdpSections
+```
+
+ row itself (not inside its details panel).
+- **Suggested filename:** 
+```
+business-info-copy-url.webp
+```That copied URL is your Business Info payload — you'll paste the whole thing in Step 2.
+
+TIP
+
+Because the payload is copied as one complete request, it never gets out of sync — and the same payload works for **every listing** on your site. You only need to capture it once.
 ### Step 2: Add the Keys to Your WordPress Site ​
 
 To make these keys work, you need to add a small code snippet to your WordPress site. The safest and easiest way to do this is by using a **Code Snippets** plugin. We recommend [FluentSnippets](https://fluentsnippets.com/).
 
 #### Create a New Snippet ​
 
-Go to **FleuntSnippets → Add NewSnippet**.
+Go to **FluentSnippets → Add New Snippet**.
 
 - Give your snippet a title, like "Airbnb API Keys for WP Social Ninja".
 - **Paste the Code**
 
 Copy the code block below and paste it into the "Code" area of your new snippet.
 
-**Add Your Keys**
+**Add Your Values**
 
-Replace API Key you copied in Step 1. - Replace with the Secret Key you copied in Step 1.php
+- Replace 
+```
+paste_the_key_here
+```
+
+ in the first two filters with the **API Key** and **Room Reviews Secret Key** you copied in Step 1.
+- Replace 
+```
+paste_the_copied_url_here
+```
+
+ in the Business Info filter with the **full URL** you copied in the Business Info step above.
+- If you're also fetching Experience/Service reviews, replace the last filter's 
+```
+paste_the_key_here
+```
+
+ with that Secret Key too.
+
+php
 ```
 add_filter('wpsocialreviews/airbnb_api_key', function(){
     return 'paste_the_key_here';
 });
 
-// for rooms 
+// for room reviews
 add_filter('wpsocialreviews/airbnb_rooms_api_secret_key', function(){
     return 'paste_the_key_here';
 });
 
-// for rooms business info 
-add_filter('wpsocialreviews/airbnb_rooms_business_info_api_secret_key', function(){
-    return 'paste_the_key_here';
-}); 
+// for room business info (name & star rating) — paste the whole copied URL
+add_filter('wpsocialreviews/airbnb_rooms_business_info_payload', function(){
+    return 'paste_the_copied_url_here';
+});
 
-// for experiences or services 
+// for experiences or services
 add_filter('wpsocialreviews/airbnb_experiences_api_secret_key', function(){
     return 'paste_the_key_here';
 });
-```**Important: First Three Keys Are Required**
+```**Important: Two Values Are Required, One Is Recommended**
 
-To ensure a complete and successful connection for your Airbnb, you **must** provide first three of the following keys in your code snippet. The integration will not work correctly without them.
+To fetch reviews (and the review count), you **must** provide:
 
 - **The Main API Key:** This is the master key for the connection.
-- **The Room Reviews Key:** This key specifically fetches the customer reviews.
-- **The Room Business Info Key:** This key fetches essential listing details.Click the **Save Snippets and Activate** button at the top of the page.
+- **The Room Reviews Key:** This key fetches the customer reviews.
+
+Additionally **recommended**:
+
+- **The Business Info Payload:** Without this, reviews still display, but the listing's name and star rating won't — this matters most if you're adding several listings, since they can otherwise look identical.Click the **Save Snippets and Activate** button at the top of the page.
 
 ## Airbnb Configuration ​
 
@@ -189,6 +244,10 @@ INFO
 You can fetch up to **100 reviews** for each business on your site. If you're using the **free version of WP Social Ninja**, you can fetch a maximum of **5 Airbnb reviews**.However, downloading reviews sometimes might take some time. If you want, you can delete this account by clicking on the **Cross** icon.
 
 You can even include additional business accounts when clicking the **Add More Business** button. Just enter the business name the same way as before & click the **Save** button.
+
+TIP
+
+If you save and see a message that reviews were fetched but the business information couldn't be retrieved, your Business Info payload has likely expired — Airbnb periodically rotates these values. Just repeat the [Business Info step](#find-the-business-info-payload-recommended) above to re-copy a fresh request URL. Reviews and the review count aren't affected by this rotation.
 
 ---
 
