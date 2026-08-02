@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T11:44:22.488Z",
+  "last_updated": "2026-08-02T11:51:50.586Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3533,7 +3533,7 @@
       "slug": "wp-fusion-enhanced-ecommerce-addon",
       "name": "WP Fusion - Enhanced Ecommerce Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-07-26T16:24:43.373Z",
+      "last_scraped": "2026-08-02T11:51:50.586Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
