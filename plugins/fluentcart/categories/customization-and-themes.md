@@ -538,6 +538,70 @@ $data['item']['line_meta']
 
  when you need to show per-item details such as gift messages, engraving text, license information, booking dates, or other custom options stored with the line item.
 
+### Hide Billing Fields for Zero-Total Checkouts ​
+
+For a free webinar or another checkout where no payment is required, you can hide the billing-address fields when the cart total is zero. The second filter removes validation errors for the same fields so customers can complete checkout without entering a billing address.
+
+php
+```
+<?php
+
+/**
+ * Hide billing-address fields for zero-payment checkouts.
+ */
+add_filter(
+    'fluent_cart/checkout_renderer/billing_fields',
+    function ($fields, $data) {
+        $cart = $data['cart'] ?? null;
+
+        if ($cart && $cart->isZeroPayment()) {
+            return [];
+        }
+
+        return $fields;
+    },
+    10,
+    2
+);
+
+/**
+ * Remove billing-address validation errors for zero-payment checkouts.
+ */
+add_filter(
+    'fluent_cart/checkout/validate_data',
+    function ($errors, $data) {
+        $cart = $data['cart'] ?? null;
+
+        if (!$cart || !$cart->isZeroPayment()) {
+            return $errors;
+        }
+
+        $addressFields = [
+            'billing_country',
+            'billing_state',
+            'billing_address_1',
+            'billing_address_2',
+            'billing_city',
+            'billing_postcode',
+            'billing_phone',
+        ];
+
+        foreach ($addressFields as $field) {
+            unset($errors[$field]);
+        }
+
+        return $errors;
+    },
+    10,
+    2
+);
+```Both filters check 
+```
+$cart->isZeroPayment()
+```
+
+, so billing fields and their validation remain unchanged for checkouts that require payment.
+
 ## Customer Profile ​
 
 ### Add a Custom Menu Item to the Customer Profile ​
@@ -1156,7 +1220,7 @@ These blocks are the ones that actually take the money:
 
 These blocks help customers find their way around your catalog:
 
-- **Products:** A grid of your products, the quickest way to build a shop page.
+- **Products:** A grid of your products, the quickest way to build a shop page. It carries the richest control set of any block, covered in [Products Block Controls](#products-block-controls) below.
 - **Product Carousel:** Products in a sliding carousel. Set **Slides to Show**, **Space Between**, and **Autoplay** with its **Autoplay Speed**, then choose whether **Infinite Loop**, **Show Arrows**, and **Show Pagination** are on.
 - **Product Categories:** A list of your product categories. **Display Style** sets the look, while **Show Product Count**, **Show Hierarchy**, and **Show Empty Categories** control what is listed.
 - **Related Products:** Products related to the one being viewed. **Related By** matches on **Categories** or **Brands**, and you can set the **Heading Text**, **Order By**, **Columns**, and **Products Per Page**.
@@ -1173,6 +1237,42 @@ These blocks cover the rest of the storefront:
 INFO
 
 A handful of these elements, including **Products**, **Product Title**, **Product Gallery**, and **Buy Section**, are built into FluentCart and appear in Bricks even without the addon. Installing the addon adds the other fifteen and completes the set, so you can build a whole store page without leaving the builder.
+## Products Block Controls ​
+
+The **Products** block is the one you will reach for most, so it is worth knowing what it can do. Its controls are split across three groups in the Bricks panel.
+
+### Query ​
+
+These controls decide which products appear and how the grid is arranged.
+
+- **View Mode:** Whether the products render as a grid or a list.
+- **Show View Switcher:** Lets visitors flip between the view modes themselves.
+- **Pagination Type:** How customers move through long result sets.
+- **Columns** and **Gap:** The grid layout and the spacing between items.
+- **Products per page:** How many products to load at a time.
+- **Is main query:** Ties the block to the page's main query, which is what you want on a shop or archive template.
+- **Order by** and **Order:** The sort field and direction.
+- **Product type:** Narrows the grid to a single product type.
+- **Include** and **Exclude:** Hand-pick individual products to force in or leave out.
+- **Product categories:** Restricts the grid to the categories you select.
+- **On sale Products only:** Shows only products currently on sale.
+- **Allow Out Of Stock:** Keeps out-of-stock products in the grid instead of hiding them.
+
+### Filter ​
+
+Turn on **Enable Filter** to give customers a filter panel alongside the grid. The rest of the controls in this group only appear once it is enabled.
+
+- **Enable Sort By:** Adds a sort control to the filter panel. On by default.
+- **Live Filter:** Updates results as the customer changes a filter, with no page reload.
+- **Wildcard Filter:** Broadens text matching so partial terms still return results.
+- **Taxonomy toggles:** FluentCart lists a checkbox for each product taxonomy, such as **Categories** and **Brands**. Tick one to offer it as a filter, leave it unticked to keep it out of the panel. This is how you control which taxonomies customers can filter by.
+- **Show empty:** Appears beneath each taxonomy you enable and displays that taxonomy's terms even when they have no products in them. Leave it off to keep empty categories and tags out of the filter panel.
+- **Price Range:** Adds a price filter, with **Display Name** to override its label.
+
+### Fields ​
+
+- **Link entire product:** Makes the whole product card clickable. It only takes effect if none of your product fields already contain a link.
+
 ## Building a Single Product Template ​
 
 The product blocks come into their own when you pair them with a Bricks template, which lets you design the layout once and have every product follow it. FluentCart registers a dedicated **FluentCart - Product** template type in Bricks for exactly this. See [Customize Store with Bricks](/guide/customization-and-themes/customize-store-with-bricks) for the full walkthrough.
@@ -1855,7 +1955,7 @@ Se renueva automáticamente el %s
 
 Making a successful online store needs two things: a great look and the right tools. If you use Elementor to build your website, FluentCart gives you a set of built-in widgets that fit perfectly with your designs.
 
-With these widgets, you can drag and drop product lists, checkout forms, single-product layouts, search bars, and more anywhere on your site — without writing any code.
+With these widgets, you can drag and drop product lists, checkout forms, single-product layouts, search bars, and more anywhere on your site, without writing any code.
 
 ## Turn on the Elementor Widgets ​
 
@@ -1866,7 +1966,9 @@ FluentCart starts with only the basics to keep your site fast. To use the Elemen
 3. **Find Plugin Addons:** Scroll to the bottom of the page to find the **Plugin Addons** section.
 4. **Turn it On:** Find the **Elementor Blocks** card and click **Install & Activate**.
 
-Once activated, two new categories appear inside the Elementor editor: **FluentCart** for store-wide widgets and **FluentCart Product** for single-product Theme Builder widgets.
+INFO
+
+The Elementor Blocks add-on is available on **FluentCart Free** as well as Pro, and it installs in one click from the Plugin Addons section. It requires **Elementor 3.34 or later**.Once activated, two new categories appear inside the Elementor editor: **FluentCart** for store-wide widgets and **FluentCart Product** for single-product Theme Builder widgets.
 
 ## How to Find Your Widgets in the Editor ​
 

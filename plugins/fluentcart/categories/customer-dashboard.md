@@ -302,6 +302,9 @@ The installment plan must be **Active** for this early payment option to be avai
 - **View Order:** This takes you directly to the original transaction in your **Purchase History**.
 - **Connected License:** If your subscription includes software or access keys, you can view and copy your active license key right here.
 
+INFO
+
+Some subscriptions are billed manually by the store rather than charged automatically by the gateway. If yours is, you pay each renewal yourself using the **Pay Now** link sent with your renewal email, and you can use any available payment method. To understand how store billing works, see [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions).
 #### Related Transactions ​
 
 At the bottom of the page, you'll find a complete financial audit trail for your subscription. This table lists every transaction from your very first purchase to the most recent renewal. You can track the Date, Amount, and Status of each payment, and even download a **Receipt** for your records whenever you need one.

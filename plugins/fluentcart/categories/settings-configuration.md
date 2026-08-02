@@ -217,15 +217,56 @@ On this screen, you will see a list of all available email notifications. For ea
 
 #### Available Notifications: ​
 
+The notifications are grouped below by what they cover.
+
+**Orders and refunds**
+
 - **Send mail to admin after New Order Paid:** Notifies the store admin when a new order has been successfully paid for.
 - **Purchase receipt to customer:** Sends a receipt to the customer immediately after their order is placed.
-- **Send mail to customer after a subscription renewed:** Confirms to the customer that their subscription renewal payment was successful.
-- **Send mail to admin after a subscription renewed:** Alerts the admin that a subscription renewal payment has been made.
+- **Send mail to admin after New Order Placed (Offline Payment):** Alerts the admin when an order arrives through an offline payment method.
+- **Order confirmation to customer (Offline Payment):** Confirms an offline-payment order to the customer.
 - **Send mail to admin after a refund:** Informs the admin that a full or partial refund has been processed.
 - **Send mail to customer after a refund:** Notifies the customer that a refund has been issued for their order.
+
+**Shipping**
+
 - **Send mail to customer when shipping status changed to shipped:** Informs the customer that their physical order has been shipped.
 - **Send mail to customer when shipping status changed to delivered:** Confirms to the customer that their order has been marked as delivered.
-- **Send mail to customer after a subscription is cancelled:** Notifies the customer that their subscription has been cancelled and includes the **access end date** so they know exactly when their access ends. This is especially important for stores running courses, memberships, or licensed products where billing and access are tied together.
+
+**Subscription renewals**
+
+- **Send mail to customer after a subscription renewed:** Confirms to the customer that their subscription renewal payment was successful.
+- **Send mail to admin after a subscription renewed:** Alerts the admin that a subscription renewal payment has been made.
+- **Send the renewal order to the customer when a renewal order is created:** Delivers the renewal order to the customer when FluentCart generates one for a store-billed subscription. This is the email carrying the **Pay Now** link.
+- **Notify admin when a renewal order is created:** The admin-side copy of the same event.
+
+**Automatic renewal charges**
+
+These apply when your store charges saved payment methods automatically. See [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions) for how that mode works.
+
+- **Notify customer before an automatic renewal charge:** Tells the customer the amount and date of the upcoming automatic charge to their saved payment method, sent when the renewal order is created ahead of the due date.
+- **Notify customer when an automatic renewal charge fails:** Sent when the saved payment method could not be charged. It includes the failure reason and a **Pay Now** link so the customer can settle it manually.
+- **Notify admin when an automatic renewal charge fails:** The admin-side copy of the failed charge notice.
+
+**Reminders and overdue notices**
+
+- **Renewal due reminder to customer:** Sent before or on the renewal due date while payment is still pending.
+- **Renewal due reminder copy to admin:** The admin-side copy of the due reminder.
+- **Payment reminder to customer:** A general reminder about a pending payment.
+- **Upcoming renewal reminder to customer:** Sent ahead of a subscription's auto-renewal date.
+- **Upcoming renewal reminder copy to admin:** The admin-side copy of the upcoming renewal reminder.
+- **Trial ending soon reminder to customer:** Sent before a trial period ends and converts to a paid subscription.
+- **Trial ending soon reminder copy to admin:** The admin-side copy of the trial ending reminder.
+- **Notify customer when subscription is past due:** Sent when a subscription is marked past due.
+- **Notify admin when a subscription is past due:** The admin-side copy of the past due notice.
+
+Reminder timing is configured separately. See [Reminders](/guide/settings-configuration/email-configuration/reminders) for the schedule controls.
+
+**Subscription changes**
+
+- **Send mail to customer when a subscription is canceled:** Notifies the customer that their subscription has been cancelled and includes the **access end date** so they know exactly when their access ends. This is especially important for stores running courses, memberships, or licensed products where billing and access are tied together.
+- **Send mail to admin when a subscription is canceled:** The admin-side copy of the cancellation notice.
+- **Notify customer when a billing period is skipped:** Sent when an admin skips the customer's next billing period. The internal reason and the name of the admin who skipped it are never included. This one is **off by default**.
 
 NOTE
 
@@ -519,6 +560,8 @@ This reminder notifies customers before an upcoming subscription renewal charge.
 - **Monthly:** Check to send a renewal reminder for monthly subscriptions.
 
 You can enable reminders for one or more billing frequencies at the same time, each with its own lead time.
+
+Reminders are especially useful for store-billed subscriptions, where the customer pays each renewal by hand rather than being charged automatically. To learn how those renewals are generated and billed, see [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions).
 
 ### Saving Your Changes ​
 

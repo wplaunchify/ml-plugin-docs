@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-07-26T07:03:57.572Z",
-  "total_pages": 142,
+  "last_scraped": "2026-08-02T05:44:17.182Z",
+  "total_pages": 143,
   "failed_urls_count": 8,
   "sections": [
     {
@@ -336,7 +336,7 @@
       "slug": "product-types-creation",
       "url": "https://docs.fluentcart.com/guide/product-types-creation/",
       "file": "categories/product-types-creation.md",
-      "page_count": 17,
+      "page_count": 18,
       "pages": [
         {
           "title": "Product Types & Creation ​",
@@ -405,6 +405,10 @@
         {
           "title": "Product List Overview ​",
           "url": "https://docs.fluentcart.com/guide/product-types-creation/product-list-overview"
+        },
+        {
+          "title": "Store Billing for Subscriptions ​",
+          "url": "https://docs.fluentcart.com/guide/product-types-creation/store-managed-subscriptions"
         }
       ]
     },
