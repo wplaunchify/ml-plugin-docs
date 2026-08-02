@@ -2,8 +2,8 @@
   "plugin_slug": "advanced-custom-fields-pro",
   "plugin_name": "Advanced Custom Fields PRO",
   "documentation_url": "https://www.advancedcustomfields.com/documentation/",
-  "last_scraped": "2026-07-26T14:29:01.608Z",
-  "total_pages": 271,
+  "last_scraped": "2026-08-02T04:58:50.472Z",
+  "total_pages": 272,
   "failed_urls_count": 2,
   "sections": [
     {
@@ -11,8 +11,12 @@
       "slug": "uncategorized",
       "url": "https://www.advancedcustomfields.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 271,
+      "page_count": 272,
       "pages": [
+        {
+          "title": "How to set placeholder content in custom ACF Blocks",
+          "url": "https://www.advancedcustomfields.com/resources/set-placeholder-content-in-custom-acf-blocks/"
+        },
         {
           "title": "How to Make WordPress® Content Machine Readable with ACF, MCP, and Schema.org",
           "url": "https://www.advancedcustomfields.com/resources/acf-machine-readable-content/"

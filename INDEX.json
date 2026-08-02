@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T04:49:01.184Z",
+  "last_updated": "2026-08-02T04:58:50.476Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -49,8 +49,8 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/documentation/",
-      "last_scraped": "2026-07-26T14:29:01.608Z",
-      "page_count": 271,
+      "last_scraped": "2026-08-02T04:58:50.476Z",
+      "page_count": 272,
       "categories": [
         "uncategorized"
       ]
