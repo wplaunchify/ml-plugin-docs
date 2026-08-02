@@ -14,6 +14,8 @@ FluentAffiliate makes it easy to manage all your affiliate activity right from y
 
 From this dashboard, you'll see key stats like [payouts](/guide/admin-portal/payout-management), earnings, [referrals](/guide/admin-portal/managing-referrals), visits, and more, all in one place. It helps you stay on top of what your [affiliates](/guide/admin-portal/managing-affiliates) are doing and how they're performing.
 
+Take a guided tour of the dashboard in this video:
+
 ## What You'll See on the Dashboard ​
 
 Let's take a look at the different sections of the dashboard and what they tell you.
@@ -48,8 +50,6 @@ The sidebar on the right gives you a real-time snapshot of recent activity.
 
 - **Recent Referrals:** This list shows the most recent sales made through your affiliate links. You can quickly see the product, the commission amount, the affiliate responsible, and the referral's status (e.g., Unpaid, Pending, or Paid). For detailed referral tracking and management, visit the [Managing Referrals](/guide/admin-portal/managing-referrals) section.
 - **Top Affiliates:** This is your affiliate leaderboard. It highlights your top-performing affiliates, showing their total number of referrals and their total earnings, making it easy to see who your most valuable partners are. You can click on any affiliate to view their detailed [profile](/guide/miscellaneous/affiliate-profile).
-
-![Admin Dashboard Overview in FluentAffiliate](https://docs.fluentaffiliate.com/images/admin-portal/dashboard/admin-dashboard-overview.webp)
 
 That's a quick overview of your Admin Dashboard in FluentAffiliate.
 
@@ -98,8 +98,6 @@ This is the heart of the page, where every affiliate is listed with their key pe
 - **Registered at:** The date they joined your affiliate program.
 - **Status:** Their current account status (e.g., Active, Pending, Inactive).
 
-![Affiliate Management Dashboard](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/affiliate-list-overview.webp)
-
 ### Managing Individual Affiliates ​
 
 At the end of each affiliate's row, you'll see a three-dot menu. Clicking this opens a list of actions you can take for that specific affiliate:
@@ -119,15 +117,11 @@ To the top-right of the table, you'll find icons to help you organize your view:
 - **Column Selector:** Customize your table view using the **Columns** button. Check or uncheck columns based on what info you want to display.
 - **Sort Options:** Sort affiliates by **ID**, **Total Earnings**, **Unpaid Earnings**, **Referrals**, **Visits**, or **Registration Date**. You can also choose between ascending or descending order, then click **Apply** to update.
 
-![Affiliate Search and Sort Tools](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/search-and-sort-tools.webp)
-
 ## Add a New Affiliate ​
 
 Want to manually add an affiliate to your site? Here's how:
 
 Click the **+ New Affiliate** button. A form will slide in from the right side of your screen.
-
-![Add New Affiliate Button](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/add-new-affiliate-button.webp)
 
 Fill in the following fields:
 
@@ -138,8 +132,6 @@ Fill in the following fields:
 - **Additional Note:** (Optional) Add any notes for internal admin use.
 
 Hit the **Create Affiliate** button at the bottom to save.
-
-![Add Affiliate Form](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/add-affiliate-form.webp)
 
 That's it! Your new affiliate will now appear in your main list.
 
@@ -160,16 +152,12 @@ The Customers table keeps things structured by outlining the buyer's **Name**, *
 - **Status Filtering:** You can easily segment this list by clicking the filter buttons just above the data table to display **All**, **Active**, or **Expired** relationships.
 - **Quick Search:** Need to find a single person out of a large customer base? Use the search icon to type in a customer's details and find them instantly.
 
-![Customers Tab](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/customer-tab.webp)
-
 ### Linking, Transferring, or Unlinking Customers ​
 
 As an admin, you retain full operational control over these long-term customer assignments:
 
 - **Link a New Customer:** To manually connect an existing buyer to this affiliate, click the **Link Customer** button. A modal window will appear allowing you to select a buyer profile from your database and attach them to the affiliate for automated lifetime commission tracking.
 - **Transfer or Unlink a Connection:** If a customer relationship changes or needs adjusting, you can click the **Unlink** button located at the end of that customer's data row.
-
-![Link Customer](https://docs.fluentaffiliate.com/images/admin-portal/managing-affiliates/link-customer.webp)
 
 NOTE
 
@@ -218,8 +206,6 @@ The main table lists every referral with all the important details, giving you a
 - **Type:** The source of the commission, such as a product sale or a form submission.
 - **Date:** The exact date the referral was created.
 
-![Referral Dashboard Overview](https://docs.fluentaffiliate.com/images/admin-portal/managing-referrals/referrals-list-overview.webp)
-
 ### Managing Individual Referrals ​
 
 At the end of each referral's row is a three-dot menu that contains key actions:
@@ -233,15 +219,11 @@ At the end of each referral's row is a three-dot menu that contains key actions:
 - **Column Selection**: Choose which columns you want to display in the referral table.
 - **Sort**: Sort your referrals by Amount, ID, or Reference in ascending or descending order. Don't forget to hit **Apply** after sorting.
 
-![Affiliate Search and Sort Tools](https://docs.fluentaffiliate.com/images/admin-portal/managing-referrals/search-and-sort-tools.webp)
-
 ### Add a New Referral ​
 
 Want to manually add an referral to your site?
 
 First, click the **New Referral** button.
-
-![Add New Referral Button](https://docs.fluentaffiliate.com/images/admin-portal/managing-referrals/add-new-referral-button.webp)
 
 After clicking the button, a form will slide in from the right side of your screen. Here, you'll need to fill in the details for the new referral.
 
@@ -256,8 +238,6 @@ After clicking the button, a form will slide in from the right side of your scre
 Once you have filled in all the necessary details, click the **Create Manual Referral** button at the bottom of the form.
 
 The new referral will be instantly created and will appear in your main referrals list, assigned to the affiliate you selected.
-
-![Create Manual Referral](https://docs.fluentaffiliate.com/images/admin-portal/managing-referrals/create-manual-referral.webp)
 
 That's it! Your new referral will now appear in the list.
 
@@ -278,8 +258,6 @@ To access this section, navigate from your WordPress dashboard to **FluentAffili
 ### Features of the Visits Page ​
 
 The main Visits page is composed of powerful filtering tools and a detailed data table to give you a complete picture of your affiliate traffic.
-
-![Visit Dashboard](https://docs.fluentaffiliate.com/images/admin-portal/visits/visits-dashboard.png)
 
 #### Filtering Your Traffic Data ​
 
@@ -325,13 +303,13 @@ FluentAffiliate provides a Payout option to manage affiliate payments, but all p
 
 To pay an affiliate, you can use the PayPal email listed in their profile. In this guide, we'll walk you through the steps to complete manual payouts.
 
+Watch the payout process in action:
+
 ## Payout ​
 
 Navigate to the **Payout** tab from the FluentAffiliate menu to view your list of previous payouts or to create new payouts. You'll also find filter and search options to help you quickly locate specific records.
 
 To create a new payout, simply click the **Pay Affiliate** button.
-
-![Payout Dashboard](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/payout-dashboard-overview.webp)
 
 You'll now land on the payout creation page. This page only appears if there are unpaid affiliates available for payment.
 
@@ -345,21 +323,13 @@ Here's what to fill out:
 
 Once everything is filled out, click the **Next (Review Payout)** button to proceed.
 
-![Payout Creation Form](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/create-new-payout.webp)
-
 Now, on the Payout dashboard, you'll see your newly created payout listed.
-
-![Payout List](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/payout-list-view.webp)
 
 Now, click on the **Payout Name** to view its payment details. Here, you can see the total amount paid to your affiliates, along with which affiliates received commissions, the dates, and other important info.
 
 The right sidebar will show you additional payout details.
 
-![Payout Details](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/payout-details-view.webp)
-
 In the Transactions tab, you can generate a report for your transactions. Simply click the **Export** button to download a CSV file with your payout details.
-
-![Transaction Export](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/export-transaction-button.webp)
 
 The **CSV** file will include the following details:
 
@@ -369,8 +339,6 @@ The **CSV** file will include the following details:
 - payout_email
 - amount
 - currency
-
-![CSV Export Example](https://docs.fluentaffiliate.com/images/admin-portal/payout-management/csv-export-example.webp)
 
 ---
 
