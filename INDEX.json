@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T01:11:43.005Z",
+  "last_updated": "2026-08-02T01:23:25.765Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3292,7 +3292,7 @@
       "slug": "wp-all-export-acf-export-add-on-pro",
       "name": "WP All Export - ACF Export Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-07-26T12:28:03.926Z",
+      "last_scraped": "2026-08-02T01:23:25.765Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
