@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T03:43:50.196Z",
+  "last_updated": "2026-08-02T03:52:57.381Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -574,7 +574,7 @@
       "slug": "fluent-snippet-version-control",
       "name": "Fluent Snippet Version Control",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-07-26T06:57:43.046Z",
+      "last_scraped": "2026-08-02T03:52:57.381Z",
       "page_count": 2,
       "categories": [
         "create-snippet",
