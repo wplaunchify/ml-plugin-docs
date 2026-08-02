@@ -12,6 +12,14 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in WP Social Ninja.
 
+## WP Social Ninja v4.3.2 ​
+
+*Released on July 26, 2026*
+
+🐛 Bug fixesmd
+```
+• Fixed Airbnb business URL validation and Airbnb reviews showing a generic location label instead of the actual listing title
+```
 ## WP Social Ninja v4.3.1 ​
 
 *Released on July 21, 2026*
