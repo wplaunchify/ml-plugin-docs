@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T07:45:25.918Z",
+  "last_updated": "2026-08-02T07:54:04.560Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3803,7 +3803,7 @@
       "slug": "wpcodebox-2",
       "name": "WPCodeBox 2",
       "documentation_url": "https://docs.wpcodebox.com/",
-      "last_scraped": "2026-07-26T18:25:53.708Z",
+      "last_scraped": "2026-08-02T07:54:04.560Z",
       "page_count": 42,
       "categories": [
         "acf_options_pages",
