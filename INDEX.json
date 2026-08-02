@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T13:54:55.508Z",
+  "last_updated": "2026-08-02T14:04:24.408Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1575,7 +1575,7 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/",
-      "last_scraped": "2026-07-26T20:18:27.705Z",
+      "last_scraped": "2026-08-02T14:04:24.408Z",
       "page_count": 16,
       "categories": [
         "container-styling-settings",
