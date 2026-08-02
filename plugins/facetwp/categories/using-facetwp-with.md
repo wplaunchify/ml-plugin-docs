@@ -116,7 +116,23 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 **Source:** [https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
 
 ![ACF logo](https://facetwp.com/wp-content/uploads/2025/04/acf-logo.png)
-FacetWP includes built-in support for [Advanced Custom Fields](http://www.advancedcustomfields.com/) (ACF). It supports basic field types (Text, Select, [Checkbox](#using-an-acf-checkbox-field-as-meta_query-filter), etc.), Relationship fields and even Repeater sub-fields.
+FacetWP includes built-in support for [Advanced Custom Fields](http://www.advancedcustomfields.com/) (ACF). It supports basic field types (Text, Select, [Checkbox](#using-an-acf-checkbox-field-as-meta_query-filter), etc.), Relationship fields, and even Repeater sub-fields.
+
+See the sections below for specific instructions for the usage of the different field types.
+
+## Choose the correct field
+
+![Always choose the ACF field that has its field group in square brackets in its name, under the blue ACF heading in the facet data source or builder item dropdown.](https://facetwp.com/wp-content/uploads/2026/07/acf-choose-correct-field.png)Always choose the ACF field that has its field group in square brackets in its name, under the blue ACF heading in the facet data source or builder item dropdown.
+ACF fields can be used as [facet data source](#create-a-facet-with-an-acf-field-as-data-source), in [Listing Builder](/help-center/listing-templates/listing-builder/) listing items, and in [Listing Builder listing query filters](/help-center/listing-templates/listing-builder/#add-query-filtering-rules).
+
+Because of how ACF stores custom field data, ACF fields in most cases are given special treatment for [indexing](/help-center/indexing/) and for display.
+
+Both in facet data source dropdowns and listing builder item dropdowns, ACF fields appear twice, under different names: with their display **label**, and with their **technical name**. In most cases, it is important to **choose the one with the label, prepended with the field group in square brackets** (e.g. 
+```
+[Field group name] Field label
+```
+
+), which is the one that is located under the blue “ACF” heading in the dropdown. If you use the dropdown’s search box, make sure to search for the field’s **label**, and **not** the field’s **technical name**.
 
 ## Create your field group
 
@@ -130,20 +146,20 @@ After you’ve added your field group, the next step would be to add some conten
 
 ![post edit screen](https://facetwp.com/wp-content/uploads/2016/09/acf-edit-screen.png)
 
-## Create your facet
+## Create a facet with an ACF field as data source
 
-After you’ve added some content using your new custom fields, go to Settings > FacetWP, click the Facets tab, then click the Add New button.
+After you’ve added some content using your new custom fields, go to Settings > FacetWP, click the Facets tab, then click the Add New button.
 
-For the facet’s Data source, scroll down until you see the **ACF** heading, then select the appropriate choice.
+For the facet’s Data source, scroll down until you see the blue **ACF** heading, then select your field.
 
-ACF fields will appear in the Data source dropdown under the “ACF” heading, with their Field Group name between brackets, and their ACF Field **label**, like this: 
+Note that ACF fields will appear in the Data source dropdown twice, under different names: with their display label, and with their technical name. Make sure to always [choose the correct field](#choose-the-correct-field), which is the one under the “ACF” heading, with its Field Group name between brackets, and its ACF field **label**, like this: 
 ```
 [Field group name] Field label
 ```
 
-. So if you use the search box, make sure to use the ACF field **label**, and **not** the ACF Field **name**.
+. If you use the dropdown’s search box, make sure to search for the field’s **label**, and **not** the field’s **technical name**.
 
-Important:Your ACF fields will be in the Data source dropdown twice: once under the “ACF” heading and once under the “Custom Fields heading”. It’s important to **choose the one under the ACF heading** for facets to work. Note: in the screencasts below, the heading is called “Advanced Custom Fields”, in newer FacetWP versions, it’s called “ACF”.
+Note:in the screencasts below, the dropdown heading is called “Advanced Custom Fields”, in newer FacetWP versions, it’s called “ACF”.
 ![FacetWP data source dropdown](https://i.imgur.com/nCgfQAr.gif)
 
 Alternatively, use the **built-in search box** for quickly finding the desired field.
@@ -299,13 +315,55 @@ LIKE
 ```
 
 .
-2. Remove the array brackets surrounding the value.
-3. Wrap the double-quoted value with single quotes.
+2. Remove the array brackets surrounding the value. Because 
+```
+LIKE
+```
+
+ is a so-called scalar ("single value") comparison, the value needs to be a single string, not an array.
+3. [Wrap the double-quoted value with extra single quotes](#checkbox-query-args-right-L15) if you want the 
+```
+LIKE
+```
+
+ comparison to make an **exact match**. If you also want **partial matches**, [don't wrap it in single quotes](#checkbox-query-args-right-L16). 
+For example, 
+```
+"value" => '"amsterdam"'
+```
+
+ ([line 15](#checkbox-query-args-right-L15)) will match an ACF Checkbox field value of 
+```
+amsterdam
+```
+
+, but not 
+```
+amsterdam-south
+```
+
+. If you use 
+```
+"value" => "amsterdam"
+```
+
+ ([line 16](#checkbox-query-args-right-L16)) instead, both 
+```
+amsterdam
+```
+
+ and 
+```
+amsterdam-south
+```
+
+ will match.
 
 The result should look like this:
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info<?php
+
 return [
   "post_type" => [
     "product"
@@ -315,10 +373,11 @@ return [
   ],
   "meta_query" => [
     [
-      "key" => "my_acf_checkbox_field",
+      "key"     => "my_acf_checkbox_field",
       "compare" => "LIKE", // Changed to "LIKE"
-      "type" => "CHAR",
-      "value" => '"my_value"' // Removed the array brackets. And wrapped the double quotes with single quotes.
+      "type"    => "CHAR",
+      "value"   => '"my_value"' // Removed the array brackets. And wrapped the double quotes with single quotes to get exact matches.
+   // "value"   => "my_value" // Or, use the value without the single quotes, to get partial matches.
     ]
   ],
   "orderby" => [
@@ -338,10 +397,21 @@ meta_query
 relation
 ```
 
- argument:
+ [argument](#checkbox-query-args-right-multiple-L11) to determine the 
+```
+OR
+```
+
+ or 
+```
+AND
+```
+
+ logic used between them:
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info<?php
+
 return [
   "post_type" => [
     "product"
@@ -352,16 +422,18 @@ return [
   "meta_query" => [
     'relation' => 'OR', // Needed for multiple values
     [
-      "key" => "my_acf_checkbox_field",
+      "key"     => "my_acf_checkbox_field",
       "compare" => "LIKE",
-      "type" => "CHAR",
-      "value" => '"my_value"'
+      "type"    => "CHAR",
+      "value"   => '"my_value"' // Wrap the double quotes with single quotes to get exact matches.
+   // "value"   => "my_value" // Or, use the value without the single quotes, to get partial matches.
     ],
     [
-      "key" => "my_acf_checkbox_field",
+      "key"     => "my_acf_checkbox_field",
       "compare" => "LIKE",
-      "type" => "CHAR",
-      "value" => '"my_other_value"'
+      "type"    => "CHAR",
+      "value"   => '"my_other_value"' // Wrap the double quotes with single quotes to get exact matches.
+   // "value"   => "my_other_value" // Or, use the value without the single quotes, to get partial matches.
     ]
   ],
   "orderby" => [
@@ -1892,7 +1964,7 @@ block.json
 - [Using FacetWP with Intuitive Custom Post Order](https://facetwp.com/help-center/using-facetwp-with/intuitive-custom-post-order/)
 - [FacetWP and taxonomies](https://facetwp.com/help-center/developers/facetwp-and-taxonomies/)
 
-                    Last updated: June 18, 2026
+                    Last updated: July 31, 2026
 
 ---
 
@@ -13558,10 +13630,10 @@ Without doing anything specific, WP Rocket should work with FacetWP without issu
 
 ## How FacetWP script exclusions work
 
-![Add FacetWP scripts to 'Delay Javascript Execution' exclusions. This can't hurt, but is not needed, but is not needed when using FacetWP v4.5.1+.](https://facetwp.com/wp-content/uploads/2026/04/wprocket-delay-js-exclusion-facetwp-settings.png)Add FacetWP scripts to “Delay Javascript Execution” exclusions. This can’t hurt, but is **not** needed when using FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+. FacetWP already does this by itself.
+![Add FacetWP scripts to 'Delay Javascript Execution' exclusions. This can't hurt, but is not needed, but is not needed when using FacetWP v4.6+.](https://facetwp.com/wp-content/uploads/2026/04/wprocket-delay-js-exclusion-facetwp-settings.png)Add FacetWP scripts to “Delay Javascript Execution” exclusions. This can’t hurt, but is **not** needed when using FacetWP [v4.6](/help-center/changelog/#4-6)+. FacetWP already does this by itself.
 FacetWP version 4.0+ itself excludes its own core- and add-on scripts from WP Rocket’s JavaScript defer and delay features, and from CDN caching. This is needed to prevent a range of issues and possible JavaScript errors.
 
-WP Rocket itself also has a setting to exclude plugin scripts from delaying and deferring, in the File Optimization > Delay JavaScript Execution > One-click exclusions section. This setting will also show two FacetWP options, as shown in the image on the right. Enabling “FacetWP” and “FacetWP – Flyout menu” here is **not** needed anymore when using FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+. It can’t hurt to do so, but FacetWP’s own integration casts a much wider net and excludes **all** of FacetWP’s and all add-on scripts, not just the small selection that WP Rocket excludes with its FacetWP settings enabled.
+WP Rocket itself also has a setting to exclude plugin scripts from delaying and deferring, in the File Optimization > Delay JavaScript Execution > One-click exclusions section. This setting will also show two FacetWP options, as shown in the image on the right. Enabling “FacetWP” and “FacetWP – Flyout menu” here is **not** needed anymore when using FacetWP [v4.6](/help-center/changelog/#4-6)+. It can’t hurt to do so, but FacetWP’s own integration casts a much wider net and excludes **all** of FacetWP’s and all add-on scripts, not just the small selection that WP Rocket excludes with its FacetWP settings enabled.
 
 ## Tested WP Rocket settings
 
@@ -13794,7 +13866,7 @@ The results should look like this:
 - [The facetwp_scripts hook](https://facetwp.com/help-center/developers/hooks/advanced-hooks/facetwp_scripts/)
 - [How to use custom code?](https://facetwp.com/how-to-use-custom-code/)
 
-                    Last updated: July 17, 2026
+                    Last updated: July 30, 2026
 
 ---
 

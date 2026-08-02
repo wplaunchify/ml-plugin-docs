@@ -702,11 +702,346 @@ YYYY-MM-DD
 
 ![Listing builder - Query tab - query filter - valid date values.](https://facetwp.com/wp-content/uploads/2023/03/listing-builder-query-filter-valid-dates.png)Valid date values for a query filter in the Query tab of the Listing Builder.
 
+#### Using dynamic URL tags
+
+In the value field of a listing’s query filtering rule, you can use so-called “dynamic URL tags”. Dynamic URL tags can pull query filter values from the current page URL and pass them to the listing’s query parameters. There are two types of URL tags:
+
+1. ```
+http:uri
+```
+
+ – resolves to one or more segments of the page URI (e.g. 
+```
+city/amsterdam
+```
+
+). The 
+```
+http:uri
+```
+
+ tag makes it possible to [use the same listing on different pages](#the-httpuri-tag), with its query adapting itself automatically to the page URI.
+2. ```
+http:get
+```
+
+ – resolves to one or more of the 
+```
+GET
+```
+
+ variables in the URL (e.g. 
+```
+?city=amsterdam
+```
+
+). The 
+```
+http:get
+```
+
+ tag can  automatically pre-filter the base query of the listing on a page [based on the GET variables added to the (incoming) URL](#the-httpget-tag).
+
+Below is a compact explanation of these tags, with a basic example for each. Check out [our extensive tutorial on using dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/) for all applications, more examples, how to use taxonomy-based fields, serialized fields, multiple tags, and how to use URL tags in Dev mode and on archive templates.
+
+The http:uri tag
+The 
+```
+http:uri
+```
+
+ URL tag gives access to the “URI” of the page. The URI is the part of the URL after the domain name, and without the beginning and ending slashes.
+
+Say you have this URL:
+
+```
+https://facetwp.com/demo/state-parks/
+```
+
+Then the URI is: 
+```
+demo/state-parks
+```
+
+. This URI has two “segments”: 
+```
+demo
+```
+
+ and 
+```
+state-parks
+```
+
+, separated by a 
+```
+/
+```
+
+.
+
+The whole URI, and each of its segments, can be accessed with the 
+```
+http:uri
+```
+
+ URL tag:
+
+| Tag | Resolves to | Example |
+| --- | --- | --- |
+| http:uri | The full URI. | demo/state-parks |
+| http:uri:N | The N-th path segment, split on /, starting at 0. | http:uri:0 → demohttp:uri:1 → state-parks |
+| http:uri:-N | Same, but the segment counted from the end (negative index); -1 is the last segment of the URI. Generally safer than using a positive number (see the banner below). | http:uri:-1 → state-parks |
+
+For example, say you have a directory site with a 
+```
+venue
+```
+
+ post type containing venues in The Netherlands. Each city has its own page, with URLs like 
+```
+/guides/amsterdam/
+```
+
+, 
+```
+/guides/utrecht/
+```
+
+, and 
+```
+/guides/the-hague/
+```
+
+. Each of these is a real WordPress **page**, with its own intro copy, images, and specific layout. Below the editorial content, every page has a Listing Builder listing of venues in that city.
+
+If there are a lot of city pages, it would be impractical to create a separate listing for each. Using a dynamic URL tag, you can create **one** listing and re-use it on each city page. The listing retrieves all 
+```
+venue
+```
+
+ posts, pre-filtered by city, by the URL tag that pulls the city name from the URI.
+
+To link the city in the page URI to the 
+```
+venue
+```
+
+ posts, these posts need a custom field 
+```
+city
+```
+
+, set to the venue’s city. Then you can create a query filter rule based on that custom field. In the filter rule, you can use the 
+```
+http:uri:-1
+```
+
+ tag to dynamically filter the listing query to the **last** item in the URI, which is the name of the city.
+
+On the page with the URI 
+```
+guides/amsterdam
+```
+
+, the tag 
+```
+http:uri:-1
+```
+
+ will resolve to 
+```
+amsterdam
+```
+
+, and on 
+```
+guides/utrecht
+```
+
+, it will resolve to 
+```
+utrecht
+```
+
+:
+
+![Example of using a http:uri:-1 dynamic URL tag in a custom-field-based listing query filter.](https://facetwp.com/wp-content/uploads/2026/07/dynamic-url-tag-uri-single.png)Example of using a 
+```
+http:uri:-1
+```
+
+ dynamic URL tag in a custom-field-based listing query filter.
+So with this URL tag in place, a listing retrieving 
+```
+venue
+```
+
+ posts will show venues in Amsterdam on the 
+```
+/guides/amsterdam/
+```
+
+ page, and venues in Utrecht on the 
+```
+/guides/utrecht/
+```
+
+ page, etc. Any facets on these pages can be used on top of this “base” query.
+
+See [our extensive tutorial on using dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/) for all applications, more examples, how to use taxonomy-based fields, serialized fields, multiple tags, and how to use URL tags in Dev mode and on archive templates.
+
+The http:get tag
+The 
+```
+http:get
+```
+
+ URL tag gives access to the 
+```
+GET
+```
+
+ variables in the  URL. The 
+```
+GET
+```
+
+ or query variables are parts of the URL after the 
+```
+?
+```
+
+. For example, this URL has one 
+```
+GET
+```
+
+ variable:
+
+```
+https://facetwp.com/demo/state-parks/?type=reserve
+```
+
+Each 
+```
+GET
+```
+
+ variable has a name (in this example 
+```
+type
+```
+
+) and a value (in this example 
+```
+reserve
+```
+
+).
+
+The 
+```
+http:get
+```
+
+ tag can be used as follows:
+
+| Tag | Resolves to | Example |
+| --- | --- | --- |
+| http:get:name | The name of a query variable in the URL. | http:get:state → oregonhttp:get:type → reserve |
+
+For example, say you have a 
+```
+/guides/
+```
+
+ page with all venues in The Netherlands. On the site’s front page, you have a section with buttons for each city: Amsterdam, The Hague, Utrecht, etc. Each of the buttons links to the same 
+```
+/guides/
+```
+
+ page with a 
+```
+GET
+```
+
+ variable: 
+```
+/guides/?city=amsterdam
+```
+
+.
+
+To get the listing on this 
+```
+/guides/
+```
+
+ to only show venues in the city in the incoming link, each 
+```
+venue
+```
+
+ post needs a custom field 
+```
+city
+```
+
+ set to the venue’s city. Then you can create a query filter rule that uses a 
+```
+http:get:city
+```
+
+ URL tag to resolve to the 
+```
+city
+```
+
+ 
+```
+GET
+```
+
+ variable in the URL:
+
+![Example of using a http:get dynamic URL tag in a custom-field-based listing query filter.](https://facetwp.com/wp-content/uploads/2026/07/dynamic-url-tag-get-single.png)Example of using a 
+```
+http:get
+```
+
+ dynamic URL tag in a custom-field-based listing query filter.
+So with this URL tag in place, a listing retrieving 
+```
+venue
+```
+
+ posts on the 
+```
+/guides/
+```
+
+ page will show venues in Amsterdam when the clicked front-page button linked to 
+```
+/guides/?city=amsterdam
+```
+
+, and venues in Utrecht when the clicked button linked to 
+```
+/guides/?city=utrecht
+```
+
+, etc. Any facets on the page can be used on top of this “base” query.
+
+See [our extensive tutorial on using dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/) for all applications, more examples, how to use taxonomy-based fields, serialized fields, multiple tags, and how to use URL tags in Dev mode and on archive templates.
+
 #### Fix issues with (ACF) serialized field values
 
 For certain types of custom fields, the options in the query filter interface are not enough. If your chosen field stores its values as a serialized string, the compare operators will not work.
 
 One example of such a field is Advanced Custom Fields’ [Checkbox field](https://www.advancedcustomfields.com/resources/checkbox/). See the ACF page for instructions on [how to get a serialized field working with the Listing Builder’s query settings](/help-center/using-facetwp-with/advanced-custom-fields/#using-an-acf-checkbox-field-as-meta_query-filter). The described solution will work for Checkbox fields as well as other fields with serialized values.
+
+For [using dynamic URL tags](#using-dynamic-url-tags) with serialized fields, see [this section of the URL tag tutorial](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#using-dynamic-url-tags-with-serialized-custom-fields).
 
 ### Convert to query arguments
 
@@ -964,7 +1299,19 @@ search.php
 
 , selecting facet choices will generate results from *all products*, including those that do not contain the search term ‘hoodies’. With this hook in place, the results will be pre-filtered with that search term, so users can use the facets on the page to further ‘drill down’ into those results.
 
-Option 3: Use the archive query itself
+Option 3: Pre-filter results based on the page URI
+Instead of pre-filtering the listing based on the archive query that the listing is on, with the 
+```
+facetwp_template_use_archive
+```
+
+ hook ([option 2 above](#option-2-pre-filter-results-based-on-the-archive-query)), you can also pre-filter the listing query based on the page URI of the archive page.
+
+This can be done with a so-called dynamic URL tag. See [this section in our tutorial on dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#using-dynamic-url-tags-on-archive-templates) for how to do this exactly.
+
+In general, for Listing Builder listings placed on archives, we recommend [using the facetwp_template_use_archive hook](/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/), because it is only one line in your functions.php and works for all types of archives. Using a dynamic URL tag can be useful if you want to build complex queries in the Listing Builder, instead of [customizing the native archive query with a pre_get_posts hook](/how-to-customize-wp-archive-queries/).
+
+Option 4: Use the archive query itself
 Last but not least, if you are deliberately placing facets on a WP archive page, instead of using a Listing Builder listing template, you could consider using the native WP archive query and loop instead.
 
 On a WP archive [FacetWP will auto-detect and use the archive’s native query](/help-center/listing-templates/wp-archive-page/). Just place some facets on the page and they will work. And if you need to customize the native archive query, you can easily [adapt it with WP’s pre_get_posts filter](/how-to-customize-wp-archive-queries/).
@@ -1757,6 +2104,7 @@ facetwp_facets
 - [Using a custom WP_Query](https://facetwp.com/help-center/listing-templates/custom-wp-query/)
 - [The facetwp_is_main_query hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_is_main_query/)
 - [The facetwp_template_use_archive hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/)
+- [How to pre-filter Listing Builder listing queries with dynamic URL tags](https://facetwp.com/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/)
 - [How to pre-select facet choices](https://facetwp.com/how-to-pre-select-facet-choices/)
 - [How to prevent duplicate results](https://facetwp.com/how-to-prevent-duplicate-results/)
 - [The facetwp_template_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_template_html/)
@@ -1767,7 +2115,7 @@ facetwp_facets
 - [Using FacetWP with WordPress multi-site](https://facetwp.com/help-center/using-facetwp-with/wordpress-multi-site/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 
-                    Last updated: January 29, 2026
+                    Last updated: July 31, 2026
 
 ---
 
@@ -2067,11 +2415,346 @@ YYYY-MM-DD
 
 ![Listing builder - Query tab - query filter - valid date values.](https://facetwp.com/wp-content/uploads/2023/03/listing-builder-query-filter-valid-dates.png)Valid date values for a query filter in the Query tab of the Listing Builder.
 
+#### Using dynamic URL tags
+
+In the value field of a listing’s query filtering rule, you can use so-called “dynamic URL tags”. Dynamic URL tags can pull query filter values from the current page URL and pass them to the listing’s query parameters. There are two types of URL tags:
+
+1. ```
+http:uri
+```
+
+ – resolves to one or more segments of the page URI (e.g. 
+```
+city/amsterdam
+```
+
+). The 
+```
+http:uri
+```
+
+ tag makes it possible to [use the same listing on different pages](#the-httpuri-tag), with its query adapting itself automatically to the page URI.
+2. ```
+http:get
+```
+
+ – resolves to one or more of the 
+```
+GET
+```
+
+ variables in the URL (e.g. 
+```
+?city=amsterdam
+```
+
+). The 
+```
+http:get
+```
+
+ tag can  automatically pre-filter the base query of the listing on a page [based on the GET variables added to the (incoming) URL](#the-httpget-tag).
+
+Below is a compact explanation of these tags, with a basic example for each. Check out [our extensive tutorial on using dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/) for all applications, more examples, how to use taxonomy-based fields, serialized fields, multiple tags, and how to use URL tags in Dev mode and on archive templates.
+
+The http:uri tag
+The 
+```
+http:uri
+```
+
+ URL tag gives access to the “URI” of the page. The URI is the part of the URL after the domain name, and without the beginning and ending slashes.
+
+Say you have this URL:
+
+```
+https://facetwp.com/demo/state-parks/
+```
+
+Then the URI is: 
+```
+demo/state-parks
+```
+
+. This URI has two “segments”: 
+```
+demo
+```
+
+ and 
+```
+state-parks
+```
+
+, separated by a 
+```
+/
+```
+
+.
+
+The whole URI, and each of its segments, can be accessed with the 
+```
+http:uri
+```
+
+ URL tag:
+
+| Tag | Resolves to | Example |
+| --- | --- | --- |
+| http:uri | The full URI. | demo/state-parks |
+| http:uri:N | The N-th path segment, split on /, starting at 0. | http:uri:0 → demohttp:uri:1 → state-parks |
+| http:uri:-N | Same, but the segment counted from the end (negative index); -1 is the last segment of the URI. Generally safer than using a positive number (see the banner below). | http:uri:-1 → state-parks |
+
+For example, say you have a directory site with a 
+```
+venue
+```
+
+ post type containing venues in The Netherlands. Each city has its own page, with URLs like 
+```
+/guides/amsterdam/
+```
+
+, 
+```
+/guides/utrecht/
+```
+
+, and 
+```
+/guides/the-hague/
+```
+
+. Each of these is a real WordPress **page**, with its own intro copy, images, and specific layout. Below the editorial content, every page has a Listing Builder listing of venues in that city.
+
+If there are a lot of city pages, it would be impractical to create a separate listing for each. Using a dynamic URL tag, you can create **one** listing and re-use it on each city page. The listing retrieves all 
+```
+venue
+```
+
+ posts, pre-filtered by city, by the URL tag that pulls the city name from the URI.
+
+To link the city in the page URI to the 
+```
+venue
+```
+
+ posts, these posts need a custom field 
+```
+city
+```
+
+, set to the venue’s city. Then you can create a query filter rule based on that custom field. In the filter rule, you can use the 
+```
+http:uri:-1
+```
+
+ tag to dynamically filter the listing query to the **last** item in the URI, which is the name of the city.
+
+On the page with the URI 
+```
+guides/amsterdam
+```
+
+, the tag 
+```
+http:uri:-1
+```
+
+ will resolve to 
+```
+amsterdam
+```
+
+, and on 
+```
+guides/utrecht
+```
+
+, it will resolve to 
+```
+utrecht
+```
+
+:
+
+![Example of using a http:uri:-1 dynamic URL tag in a custom-field-based listing query filter.](https://facetwp.com/wp-content/uploads/2026/07/dynamic-url-tag-uri-single.png)Example of using a 
+```
+http:uri:-1
+```
+
+ dynamic URL tag in a custom-field-based listing query filter.
+So with this URL tag in place, a listing retrieving 
+```
+venue
+```
+
+ posts will show venues in Amsterdam on the 
+```
+/guides/amsterdam/
+```
+
+ page, and venues in Utrecht on the 
+```
+/guides/utrecht/
+```
+
+ page, etc. Any facets on these pages can be used on top of this “base” query.
+
+See [our extensive tutorial on using dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/) for all applications, more examples, how to use taxonomy-based fields, serialized fields, multiple tags, and how to use URL tags in Dev mode and on archive templates.
+
+The http:get tag
+The 
+```
+http:get
+```
+
+ URL tag gives access to the 
+```
+GET
+```
+
+ variables in the  URL. The 
+```
+GET
+```
+
+ or query variables are parts of the URL after the 
+```
+?
+```
+
+. For example, this URL has one 
+```
+GET
+```
+
+ variable:
+
+```
+https://facetwp.com/demo/state-parks/?type=reserve
+```
+
+Each 
+```
+GET
+```
+
+ variable has a name (in this example 
+```
+type
+```
+
+) and a value (in this example 
+```
+reserve
+```
+
+).
+
+The 
+```
+http:get
+```
+
+ tag can be used as follows:
+
+| Tag | Resolves to | Example |
+| --- | --- | --- |
+| http:get:name | The name of a query variable in the URL. | http:get:state → oregonhttp:get:type → reserve |
+
+For example, say you have a 
+```
+/guides/
+```
+
+ page with all venues in The Netherlands. On the site’s front page, you have a section with buttons for each city: Amsterdam, The Hague, Utrecht, etc. Each of the buttons links to the same 
+```
+/guides/
+```
+
+ page with a 
+```
+GET
+```
+
+ variable: 
+```
+/guides/?city=amsterdam
+```
+
+.
+
+To get the listing on this 
+```
+/guides/
+```
+
+ to only show venues in the city in the incoming link, each 
+```
+venue
+```
+
+ post needs a custom field 
+```
+city
+```
+
+ set to the venue’s city. Then you can create a query filter rule that uses a 
+```
+http:get:city
+```
+
+ URL tag to resolve to the 
+```
+city
+```
+
+ 
+```
+GET
+```
+
+ variable in the URL:
+
+![Example of using a http:get dynamic URL tag in a custom-field-based listing query filter.](https://facetwp.com/wp-content/uploads/2026/07/dynamic-url-tag-get-single.png)Example of using a 
+```
+http:get
+```
+
+ dynamic URL tag in a custom-field-based listing query filter.
+So with this URL tag in place, a listing retrieving 
+```
+venue
+```
+
+ posts on the 
+```
+/guides/
+```
+
+ page will show venues in Amsterdam when the clicked front-page button linked to 
+```
+/guides/?city=amsterdam
+```
+
+, and venues in Utrecht when the clicked button linked to 
+```
+/guides/?city=utrecht
+```
+
+, etc. Any facets on the page can be used on top of this “base” query.
+
+See [our extensive tutorial on using dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/) for all applications, more examples, how to use taxonomy-based fields, serialized fields, multiple tags, and how to use URL tags in Dev mode and on archive templates.
+
 #### Fix issues with (ACF) serialized field values
 
 For certain types of custom fields, the options in the query filter interface are not enough. If your chosen field stores its values as a serialized string, the compare operators will not work.
 
 One example of such a field is Advanced Custom Fields’ [Checkbox field](https://www.advancedcustomfields.com/resources/checkbox/). See the ACF page for instructions on [how to get a serialized field working with the Listing Builder’s query settings](/help-center/using-facetwp-with/advanced-custom-fields/#using-an-acf-checkbox-field-as-meta_query-filter). The described solution will work for Checkbox fields as well as other fields with serialized values.
+
+For [using dynamic URL tags](#using-dynamic-url-tags) with serialized fields, see [this section of the URL tag tutorial](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#using-dynamic-url-tags-with-serialized-custom-fields).
 
 ### Convert to query arguments
 
@@ -2329,7 +3012,19 @@ search.php
 
 , selecting facet choices will generate results from *all products*, including those that do not contain the search term ‘hoodies’. With this hook in place, the results will be pre-filtered with that search term, so users can use the facets on the page to further ‘drill down’ into those results.
 
-Option 3: Use the archive query itself
+Option 3: Pre-filter results based on the page URI
+Instead of pre-filtering the listing based on the archive query that the listing is on, with the 
+```
+facetwp_template_use_archive
+```
+
+ hook ([option 2 above](#option-2-pre-filter-results-based-on-the-archive-query)), you can also pre-filter the listing query based on the page URI of the archive page.
+
+This can be done with a so-called dynamic URL tag. See [this section in our tutorial on dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#using-dynamic-url-tags-on-archive-templates) for how to do this exactly.
+
+In general, for Listing Builder listings placed on archives, we recommend [using the facetwp_template_use_archive hook](/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/), because it is only one line in your functions.php and works for all types of archives. Using a dynamic URL tag can be useful if you want to build complex queries in the Listing Builder, instead of [customizing the native archive query with a pre_get_posts hook](/how-to-customize-wp-archive-queries/).
+
+Option 4: Use the archive query itself
 Last but not least, if you are deliberately placing facets on a WP archive page, instead of using a Listing Builder listing template, you could consider using the native WP archive query and loop instead.
 
 On a WP archive [FacetWP will auto-detect and use the archive’s native query](/help-center/listing-templates/wp-archive-page/). Just place some facets on the page and they will work. And if you need to customize the native archive query, you can easily [adapt it with WP’s pre_get_posts filter](/how-to-customize-wp-archive-queries/).
@@ -3122,6 +3817,7 @@ facetwp_facets
 - [Using a custom WP_Query](https://facetwp.com/help-center/listing-templates/custom-wp-query/)
 - [The facetwp_is_main_query hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_is_main_query/)
 - [The facetwp_template_use_archive hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/)
+- [How to pre-filter Listing Builder listing queries with dynamic URL tags](https://facetwp.com/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/)
 - [How to pre-select facet choices](https://facetwp.com/how-to-pre-select-facet-choices/)
 - [How to prevent duplicate results](https://facetwp.com/how-to-prevent-duplicate-results/)
 - [The facetwp_template_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_template_html/)
@@ -3132,7 +3828,7 @@ facetwp_facets
 - [Using FacetWP with WordPress multi-site](https://facetwp.com/help-center/using-facetwp-with/wordpress-multi-site/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 
-                    Last updated: January 29, 2026
+                    Last updated: July 31, 2026
 
 ---
 
@@ -3297,6 +3993,55 @@ pre_get_posts()
 
  hook, or better, [the facetwp_query_args hook](/help-center/developers/hooks/querying-hooks/facetwp_query_args/#using-the-current-post-or-page-id-or-queried-object).
 
+### Using dynamic URL tags in Dev mode
+
+In the “visual” Listing Builder, you can [use so-called “dynamic URL tags”](/help-center/listing-templates/listing-builder/#using-dynamic-url-tags) to pull query filter values from the current page URL and pass them to the listing’s query parameters.
+
+There are two types of URL tags:
+
+1. ```
+http:uri
+```
+
+ – resolves to one or more segments of the page URI (e.g. 
+```
+city/amsterdam
+```
+
+). The 
+```
+http:uri
+```
+
+ tag makes it possible to [use the same listing on different pages](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#the-httpuri-url-tag), with its query adapting itself automatically to the page URI.
+2. ```
+http:get
+```
+
+ – resolves to one or more of the 
+```
+GET
+```
+
+ variables in the URL (e.g. 
+```
+?city=amsterdam
+```
+
+). The 
+```
+http:get
+```
+
+ tag can  automatically pre-filter the base query of the listing on a page [based on the GET variables added to the (incoming) URL](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#the-httpget-url-tag).
+
+See [this tutorial section on how to use these dynamic URL tags in Dev mode](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#using-dynamic-url-tags-in-dev-mode), using the underlying 
+```
+FWP()->builder->parse_uri_tags()
+```
+
+ function.
+
 ## Customize Listing Builder listing queries
 
 If you need to override the query arguments that you have set in the Query tab (for example only on certain pages), you can [use the facetwp_query_args hook](/help-center/developers/hooks/querying-hooks/facetwp_query_args/).
@@ -3359,8 +4104,9 @@ var_dump()
 - [The facetwp_query_args hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_query_args/)
 - [The facetwp_templates hook](https://facetwp.com/help-center/developers/hooks/advanced-hooks/facetwp_templates/)
 - [The facetwp_template_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_template_html/)
+- [How to pre-filter Listing Builder listing queries with dynamic URL tags](https://facetwp.com/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/)
 
-                    Last updated: June 18, 2026
+                    Last updated: July 28, 2026
 
 ---
 

@@ -1530,14 +1530,14 @@ To customize the sort order, for example switch the ASC/DESC order, or to sort n
 |  |
 | Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
 If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, some (child) choices, or the [+] icon(s) will not show up.
 If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a safety limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
 This setting is only available if the “Limit choices” setting is enabled. 
-Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+Note: in FacetWP versions older than v4.6, this setting was called “Count”. |
 | Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
 This setting is only available if the “Hierarchical” setting is disabled.
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
 When a facet choice is selected within the initially hidden part, the hidden part will automatically be toggled open on refresh. If you want this to happen when any facet choice is selected, see the example below.
 Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
@@ -2433,7 +2433,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                    Last updated: July 17, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -2498,14 +2498,14 @@ To customize the sort order, for example switch the ASC/DESC order, or to sort n
 |  |
 | Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
 If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, some (child) choices, or the [+] icon(s) will not show up.
 If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a safety limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
 This setting is only available if the “Limit choices” setting is enabled. 
-Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+Note: in FacetWP versions older than v4.6, this setting was called “Count”. |
 | Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
 This setting is only available if the “Hierarchical” setting is disabled.
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
 When a facet choice is selected within the initially hidden part, the hidden part will automatically be toggled open on refresh. If you want this to happen when any facet choice is selected, see the example below.
 Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
@@ -3401,7 +3401,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                    Last updated: July 17, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -3470,13 +3470,13 @@ Note that choosing “Term order” will also preserve the order of ACF custom f
 To customize the sort order, for example switch the ASC/DESC order, or to sort by arbitrary values, you can use the facetwp_facet_orderby hook. |
 | Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
 If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
-Note: this setting is available in FacetWP v4.5.1+ and the Color add-on v1.7.2+. |
+Note: this setting is available in FacetWP v4.6+ and the Color add-on v1.7.2+. |
 | Limit | The maximum number of choices to display. Default: 50. 
 If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
 This setting is only available if the “Limit choices” setting is enabled. 
-Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+Note: in FacetWP versions older than v4.6, this setting was called “Count”. |
 | Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
-Note: this setting is available in FacetWP v4.5.1+ and the Color add-on v1.7.2+. |
+Note: this setting is available in FacetWP v4.6+ and the Color add-on v1.7.2+. |
 | Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
 Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
 This setting is only available if the “Enable soft limit” setting is enabled. |
@@ -4019,7 +4019,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [How to switch the facet logic on the front-end](https://facetwp.com/how-to-switch-the-facet-logic-on-the-front-end/)
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 
-                Last updated: July 17, 2026
+                Last updated: July 30, 2026
 
 ---
 
@@ -4948,11 +4948,11 @@ Note that choosing “Term order” will also preserve the order of ACF custom f
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
 | Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
 If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, (some) child choices will not show up.
 If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
 This setting is only available if the “Limit choices” setting is enabled. 
-Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+Note: in FacetWP versions older than v4.6, this setting was called “Count”. |
 
 Important: If you are using a hierarchical taxonomy as Data source, and have the [Parent term](#parent-term) or [Hierarchical](#hierarchical) options set, remember to [re-index](/help-center/indexing/#when-to-run-the-indexer) each time after a term’s hierarchy changes, e.g. changing to a new parent term.
 
@@ -5253,7 +5253,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Category Order and Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/category-order-and-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: July 15, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -5344,14 +5344,14 @@ Note that choosing “Term order” will also preserve the order of ACF custom f
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
 | Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
 If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
-Note: this setting is available in FacetWP v4.5.1+ and the Exclude add-on v0.1.1+. |
+Note: this setting is available in FacetWP v4.6+ and the Exclude add-on v0.1.1+. |
 | Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, some (child) choices, or the [+] icon(s) will not show up.
 If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a safety limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
 This setting is only available if the “Limit choices” setting is enabled. 
-Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+Note: in FacetWP versions older than v4.6, this setting was called “Count”. |
 | Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
 This setting is only available for the “Checkboxes” UI type, if the “Hierarchical” setting is disabled.
-Note: this setting is available in FacetWP v4.5.1+ and the Exclude add-on v0.1.1+. |
+Note: this setting is available in FacetWP v4.6+ and the Exclude add-on v0.1.1+. |
 | Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
 Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
 This setting is only available for the “Checkboxes” UI type, if the “Enable soft limit” setting is enabled and the “Hierarchical” setting is disabled. |
@@ -5536,7 +5536,7 @@ Alternatively, you could [choose “fSelect” as UI type](#ui-type), which is e
 - [FacetWP and taxonomies](https://facetwp.com/help-center/developers/facetwp-and-taxonomies/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                Last updated: July 15, 2026
+                Last updated: July 30, 2026
 
 ---
 
@@ -5599,11 +5599,11 @@ Note that choosing “Term order” will also preserve the order of ACF custom f
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
 | Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
 If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Limit | The maximum number of choices to display. Default: 50. Be aware that if your Data source is a hierarchical taxonomy, the limit includes the child terms/categories. If the limit is set too low, (some) child choices will not show up.
 If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
 This setting is only available if the “Limit choices” setting is enabled. 
-Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+Note: in FacetWP versions older than v4.6, this setting was called “Count”. |
 
 Important: If you are using a hierarchical taxonomy as Data source, and have the [Parent term](#parent-term) or [Hierarchical](#hierarchical) options set, remember to [re-index](/help-center/indexing/#when-to-run-the-indexer) each time after a term’s hierarchy changes, e.g. changing to a new parent term.
 
@@ -6589,7 +6589,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                    Last updated: July 15, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -7094,13 +7094,13 @@ Note that choosing “Term order” will also preserve the order of ACF custom f
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
 | Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
 If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Limit | The maximum number of choices to display. Default: 50. 
 If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
 This setting is only available if the “Limit choices” setting is enabled. 
-Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+Note: in FacetWP versions older than v4.6, this setting was called “Count”. |
 | Enable soft limit | Display a “See {num} more” / “See less” toggle link after this many choices? Default: disabled. The soft limit can be set in the “Soft limit” setting. 
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Soft limit | The number of choices before showing a “See {num} more” / “See less” link. Set to -1, leave empty, or disable the “Enable soft limit” setting to display all options. 
 Note: the text is translatable with the facetwp_i18n hook. It is also a __() translatable string that can be translated with e.g. WPML String Translation (with the WPML String Translation plugin installed), or Loco Translate, or with the gettext filter.
 This setting is only available if the “Enable soft limit” setting is enabled. |
@@ -7324,7 +7324,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Category Order and Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/category-order-and-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: July 15, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -7970,8 +7970,8 @@ $args['infoWindowContent']
 $args['content']
 ```
 
- is still backward compatible, but **deprecated**. See the [new snippet](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#custom-marker-info-window-content-alt). Also, in FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+, you can [use the new `facetwp_map_marker_content` hook to set the marker info window content](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#customize-or-overwrite-the-marker-info-window-content-with-a-hook).
-One use case for this is if you [use ACF Repeater fields to support multiple locations per post](#using-multiple-data-sources-locations-per-post). With the “Marker content” field you can only get post data, but not the data for the separate locations within the repeater. [This snippet](#add-marker-content-from-acf-repeater-fields) shows how to get and output the repeater field data with the 
+ is still backward compatible, but **deprecated**. See the [new snippet](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#custom-marker-info-window-content-alt). Also, in FacetWP [v4.6](/help-center/changelog/#4-6)+, you can [use the new `facetwp_map_marker_content` hook to set the marker info window content](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#customize-or-overwrite-the-marker-info-window-content-with-a-hook).
+One use case for this is if you [use ACF Repeater fields to support multiple locations per post](#using-multiple-data-sources-locations-per-post). With the “Marker content” field, you can only get post data, but not the data for the separate locations within the repeater. [This snippet](#add-marker-content-from-acf-repeater-fields) shows how to get and output the repeater field data with the 
 ```
 facetwp_map_marker_args
 ```
@@ -8072,7 +8072,7 @@ add_filter( 'facetwp_map_marker_args', function( $args, $post_id ){
 }, 10, 2 );
 ```
 
-Migration info:In the new Map facet (**without** the Map facet add-on installed), with FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+, you can also [use the new `facetwp_map_marker_content` hook to set the repeater content in the marker info window](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#add-content-from-acf-repeater-fields-to-the-info-window-content).
+Migration info:In the new Map facet (**without** the Map facet add-on installed), with FacetWP [v4.6](/help-center/changelog/#4-6)+, you can also [use the new `facetwp_map_marker_content` hook to set the repeater content in the marker info window](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#add-content-from-acf-repeater-fields-to-the-info-window-content).
 
 ### Display the post distance in the marker content
 
@@ -8096,7 +8096,7 @@ if ( false !== $distance ) {
 
 Note that the post distance will only display when it is available: when the Proximity facet is in use and has a location entered.
 
-Note:In the legacy Map facet, this does **not** work when the Map facet’s [Ajax marker content setting](#ajax-marker-content) is enabled. To fix this, [migrate to the new Map facet](#how-to-migrate-to-the-new-map-facet) and [new Proximity facet](/help-center/facets/facet-types/proximity-legacy/#how-to-migrate-to-the-new-proximity-facet), and update to FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+. See [this section on the “Customize marker info windows” page for more info](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#display-the-post-distance-in-the-marker-info-window-content).
+Note:In the legacy Map facet, this does **not** work when the Map facet’s [Ajax marker content setting](#ajax-marker-content) is enabled. To fix this, [migrate to the new Map facet](#how-to-migrate-to-the-new-map-facet) and [new Proximity facet](/help-center/facets/facet-types/proximity-legacy/#how-to-migrate-to-the-new-proximity-facet), and update to FacetWP [v4.6](/help-center/changelog/#4-6)+. See [this section on the “Customize marker info windows” page for more info](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#display-the-post-distance-in-the-marker-info-window-content).
 
 ## The “Enable map filtering” button
 
@@ -8281,7 +8281,7 @@ To customize the behavior and icons of the built-in **(legacy) marker clusterer*
 - [Customize Overlapping Marker Spiderfier](https://facetwp.com/help-center/facets/facet-types/map/advanced-map-customizations/customize-overlapping-marker-spiderfier/)
 - [The Proximity facet type](https://facetwp.com/help-center/facets/facet-types/proximity/)
 
-                Last updated: July 3, 2026
+                Last updated: July 30, 2026
 
 ---
 
@@ -11846,7 +11846,7 @@ Next, [associate your Map Style with your Map ID(s)](https://developers.google.
 Marker info windows have two types of content. To the left of the close (“X”) icon is the info window **header content**. And below it is its **“regular” content**. If there is no header content, the space to the left of the close icon will remain empty: the regular content will always appear below the close icon. You can add and customize both the info window header content and the regular content.
 
 ![The marker info window header content.](https://facetwp.com/wp-content/uploads/2026/07/marker-info-window-header-content.png)The marker info window header content.
-The info window **header** content can only be added [with a hook](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#add-or-customize-marker-info-window-header-content), which is available since FacetWP [v4.5.1](/help-center/changelog/#4-5-1).
+The info window **header** content can only be added [with a hook](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#add-or-customize-marker-info-window-header-content), which is available since FacetWP [v4.6](/help-center/changelog/#4-6).
 
 The “regular” marker info window content can be added [with the Map facet’s “Info window content” setting](#add-or-customize-marker-info-window-content-with-the-info-window-content-setting), or – for more flexibility – [with a hook](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#customize-or-overwrite-the-marker-info-window-content-with-a-hook).
 
@@ -12166,7 +12166,7 @@ To customize the behavior and icons of the built-in **marker clusterer** and **O
 - [The Proximity facet type (legacy)](https://facetwp.com/help-center/facets/facet-types/proximity-legacy/)
 - [Introducing the new Proximity and Map facets in FacetWP v4.4](https://facetwp.com/introducing-the-new-proximity-and-map-facets-in-facetwp-v4-4/)
 
-                    Last updated: July 3, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -13121,7 +13121,7 @@ markerHtml
 
 , [see this section](#create-an-html-marker-with-the-facetwp_map_marker_args-php-hook).
 
-Note:In FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+ the 
+Note:In FacetWP [v4.6](/help-center/changelog/#4-6)+ the 
 ```
 facetwp_map_marker_args
 ```
@@ -15192,7 +15192,7 @@ return $args;
 }, 10, 2 );
 ```
 
-Note:In FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+ the 
+Note:In FacetWP [v4.6](/help-center/changelog/#4-6)+ the 
 ```
 facetwp_map_marker_args
 ```
@@ -16872,7 +16872,7 @@ mouseover
 mouseout
 ```
 
- events is only available since FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+.
+ events is only available since FacetWP [v4.6](/help-center/changelog/#4-6)+.
 This makes it possible to do something with **specific** markers, if any of these marker event hooks are triggered. You could do something based on:
 
 - the marker’s 
@@ -17078,7 +17078,7 @@ facetwp_map/marker/added
 - [The Proximity facet type (legacy)](https://facetwp.com/help-center/facets/facet-types/proximity-legacy/)
 - [Introducing the new Proximity and Map facets in FacetWP v4.4](https://facetwp.com/introducing-the-new-proximity-and-map-facets-in-facetwp-v4-4/)
 
-                    Last updated: July 3, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -18529,7 +18529,7 @@ Info windows have two types of content. To the left of the close (“X”) icon 
 
 ## Add or customize marker info window content
 
-The info window **header** content can only be added [with a hook](#add-or-customize-marker-info-window-header-content), which is available since FacetWP [v4.5.1](/help-center/changelog/#4-5-1).
+The info window **header** content can only be added [with a hook](#add-or-customize-marker-info-window-header-content), which is available since FacetWP [v4.6](/help-center/changelog/#4-6).
 
 The “regular” marker info window content can be added [with the Map facet’s “Info window content” setting](#add-or-customize-marker-info-window-content-with-the-info-window-content-setting), or – for more flexibility – [with a hook](#customize-or-overwrite-the-marker-info-window-content-with-a-hook).
 
@@ -18541,7 +18541,7 @@ There is currently no setting for the info window **header content**, [like ther
 facetwp_map_marker_header_content
 ```
 
- hook, as shown in the following snippet. This hook is available in FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+.
+ hook, as shown in the following snippet. This hook is available in FacetWP [v4.6](/help-center/changelog/#4-6)+.
 
 As the 
 ```
@@ -18693,7 +18693,7 @@ If this field is too limiting, or if you can’t reach certain data with it, you
 facetwp_map_marker_content
 ```
 
- hook to customize the info window content. This hook is available in FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+. Note that this will overwrite anything you have in the “Info window content” setting field.
+ hook to customize the info window content. This hook is available in FacetWP [v4.6](/help-center/changelog/#4-6)+. Note that this will overwrite anything you have in the “Info window content” setting field.
 
 As the 
 ```
@@ -18771,7 +18771,7 @@ Note that the above-used
 facetwp_map_marker_content
 ```
 
- hook is only available in FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+. For older versions, you can use the [facetwp_map_marker_args hook](/help-center/facets/facet-types/map/advanced-map-customizations/customize-advanced-markers/#the-facetwp_map_marker_args-php-hook) to output the info window content to the 
+ hook is only available in FacetWP [v4.6](/help-center/changelog/#4-6)+. For older versions, you can use the [facetwp_map_marker_args hook](/help-center/facets/facet-types/map/advanced-map-customizations/customize-advanced-markers/#the-facetwp_map_marker_args-php-hook) to output the info window content to the 
 ```
 args['infoWindowContent']
 ```
@@ -18815,7 +18815,7 @@ facetwp_map_marker_content
 
  hook.
 
-Note:In FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+ the above-used 
+Note:In FacetWP [v4.6](/help-center/changelog/#4-6)+ the above-used 
 ```
 facetwp_map_marker_args
 ```
@@ -18846,7 +18846,7 @@ Note:Be aware that if you have the Map facet’s [“Info window ajax loading”
 facetwp_map_marker_args
 ```
 
- filter, as used in above snippet, will silently bypass AJAX loading. For most sites this is harmless, but on maps with a large number of markers where you specifically enabled AJAX loading for performance reasons, using this filter will negate that benefit. The recommendation is to update to FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+ and migrate this code to [using the facetwp_map_marker_content hook](#custom-marker-info-window-content) instead.
+ filter, as used in above snippet, will silently bypass AJAX loading. For most sites this is harmless, but on maps with a large number of markers where you specifically enabled AJAX loading for performance reasons, using this filter will negate that benefit. The recommendation is to update to FacetWP [v4.6](/help-center/changelog/#4-6)+ and migrate this code to [using the facetwp_map_marker_content hook](#custom-marker-info-window-content) instead.
 
 ### Add marker info window content from ACF custom fields
 
@@ -18945,7 +18945,7 @@ Note that the above-used
 facetwp_map_marker_content
 ```
 
- hook is only available in FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+. For older versions, you can use the [facetwp_map_marker_args hook](/help-center/facets/facet-types/map/advanced-map-customizations/customize-advanced-markers/#the-facetwp_map_marker_args-php-hook) to output the info window content to the 
+ hook is only available in FacetWP [v4.6](/help-center/changelog/#4-6)+. For older versions, you can use the [facetwp_map_marker_args hook](/help-center/facets/facet-types/map/advanced-map-customizations/customize-advanced-markers/#the-facetwp_map_marker_args-php-hook) to output the info window content to the 
 ```
 args['infoWindowContent']
 ```
@@ -19051,7 +19051,7 @@ if ( false !== $distance ) {
 
 Note that the post distance will only display when it is available: when a [Proximity facet](/help-center/facets/facet-types/proximity/) is in use on the page, and has a location entered.
 
-Note:In FacetWP versions **older** than [v4.5.1](/help-center/changelog/#4-5-1)+, the above snippet does **not** work when the Map facet’s [“Info window ajax loading” setting](/help-center/facets/facet-types/map/#info-window-ajax-loading) is enabled.
+Note:In FacetWP versions **older** than [v4.6](/help-center/changelog/#4-6)+, the above snippet does **not** work when the Map facet’s [“Info window ajax loading” setting](/help-center/facets/facet-types/map/#info-window-ajax-loading) is enabled.
 If you want to combine this with other customized info window content, [using the facetwp_map_marker_content hook](#customize-or-overwrite-the-marker-info-window-content-with-a-hook), you can also add the post distance like this:
 
 ```
@@ -19152,7 +19152,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 }, 10, 2 );
 ```
 
-Note:In FacetWP versions **older** than [v4.5.1](/help-center/changelog/#4-5-1)+, the 
+Note:In FacetWP versions **older** than [v4.6](/help-center/changelog/#4-6)+, the 
 ```
 facetwp_map_marker_args
 ```
@@ -19203,7 +19203,7 @@ facetwp_map_marker_args
 
 ## Customize marker info window options
 
-Since FacetWP [v4.5.1](/help-center/changelog/#4-5-1), the 
+Since FacetWP [v4.6](/help-center/changelog/#4-6), the 
 ```
 facetwp_map_marker_args
 ```
@@ -19255,7 +19255,7 @@ add_filter( 'facetwp_map_marker_args', function( $args, $post_id ){
 }, 10, 2 );
 ```
 
-Note:In FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+ the above-used 
+Note:In FacetWP [v4.6](/help-center/changelog/#4-6)+ the above-used 
 ```
 facetwp_map_marker_args
 ```
@@ -19522,7 +19522,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Proximity facet type (legacy)](https://facetwp.com/help-center/facets/facet-types/proximity-legacy/)
 - [Introducing the new Proximity and Map facets in FacetWP v4.4](https://facetwp.com/introducing-the-new-proximity-and-map-facets-in-facetwp-v4-4/)
 
-                    Last updated: July 6, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -21631,7 +21631,7 @@ if ( false !== $distance ) {
 
 Note that the post distance will only display when it is available: when the Proximity facet is in use and has a location entered.
 
-Note:In the legacy Map facet, this does **not** work when the Map facet’s [Ajax marker content setting](/help-center/facets/facet-types/map-legacy/#ajax-marker-content) is enabled. To fix this, [migrate to the new Map facet](/help-center/facets/facet-types/map-legacy/#how-to-migrate-to-the-new-map-facet) and [new Proximity facet](#how-to-migrate-to-the-new-proximity-facet), and update to FacetWP [v4.5.1](/help-center/changelog/#4-5-1)+. See [this section on the “Customize marker info windows” page for more info](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#display-the-post-distance-in-the-marker-info-window-content).
+Note:In the legacy Map facet, this does **not** work when the Map facet’s [Ajax marker content setting](/help-center/facets/facet-types/map-legacy/#ajax-marker-content) is enabled. To fix this, [migrate to the new Map facet](/help-center/facets/facet-types/map-legacy/#how-to-migrate-to-the-new-map-facet) and [new Proximity facet](#how-to-migrate-to-the-new-proximity-facet), and update to FacetWP [v4.6](/help-center/changelog/#4-6)+. See [this section on the “Customize marker info windows” page for more info](/help-center/facets/facet-types/map/advanced-map-customizations/customize-marker-info-windows/#display-the-post-distance-in-the-marker-info-window-content).
 
 ### Customize the post distance output
 
@@ -22067,7 +22067,7 @@ You can use [this CSS](/help-center/facets/facet-types/dropdown/#style-select-dr
 - [Customize Overlapping Marker Spiderfier](https://facetwp.com/help-center/facets/facet-types/map/advanced-map-customizations/customize-overlapping-marker-spiderfier/)
 - [The Proximity facet type](https://facetwp.com/help-center/facets/facet-types/proximity/)
 
-                    Last updated: July 3, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -22181,6 +22181,20 @@ Important:For the Proximity (and [Map](/help-center/facets/facet-types/map/)) fa
 | Range (max) | The maximum value for the radius slider. This setting is only available if the “Radius UI” setting is set to “Slider”. |
 | Default radius | The default radius to be shown in the radius selector. If left empty, the first radius option will be the default if the “Radius UI” setting is set to “Dropdown”, and the middle of the range will be the default if the “Radius UI” setting is set to “Slider”. The default radius can be customized programmatically if needed. |
 | Placeholder text | The placeholder text that appears within the input box (default: “Enter location”). Note: this text is translatable/customizable with the facetwp_i18n hook. The default text is also translatable with a translation plugin or a WordPress gettext filter (see this example). |
+| Display errors as | How to show “Locate me” geolocation errors to the user. 
+When using the Proximity facet’s “Locate me” feature, there is a range of possible geolocation errors that can happen, triggered by the browser or the Google Geocoding API. For example, if a user clicks the “Locate me” button and, in the subsequent pop-up, denies the browser’s request to allow access to their location, the error message “You denied the request for geolocation” informs the user that the Proximity facet’s “Locate me” button does not work.
+Available display options:
+
+Icon + inline message – If there is a geolocation error, the “Locate me” icon will be replaced with a red “blocked” icon. The input field itself will have a red border, and the error message will be displayed above the facet in red. See below for a screenshot of how this looks.
+
+JS alerts – If there is a geolocation error, there will be a JS popup alert that the user has to click away.
+Console errors only – If there is a geolocation error, there will be no visual cues. The error will be displayed in the browser console only.
+
+Notes:
+
+Errors are always logged to the browser console, regardless of this setting.
+The user-facing error messages can be customized or translated.
+This setting is available in FacetWP v4.6+. |
 
 ## Choose a Data source
 
@@ -22450,11 +22464,21 @@ When the user clicks the “Locate me” button, the Proximity facet tries to de
 
 Important:For “Locate me” to work, your site needs to be [HTTPS-enabled](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only).
 
+### Geolocation error display
+
+When using the “Locate me” button, there is a range of [possible geolocation errors](#customize-or-translate-the-geolocation-error-messages) that can happen, triggered by the browser or the Google Geocoding API.
+
+For example, if a user clicks the “Locate me” button and, in the subsequent pop-up, denies the browser’s request to allow access to their location, the error message “You denied the request for geolocation” informs the user that the Proximity facet’s “Locate me” button does not work.
+
+How these errors are displayed depends on the [“Display errors as” setting](#display-errors-as). All error message strings [can be customized an/or translated](#customize-or-translate-the-geolocation-error-messages).
+
 ### Accuracy of the “Locate me” button
 
 When the “Locate me” button is clicked, FacetWP attempts to determine the user’s location. FacetWP first makes a browser [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) request, which returns an **approximate** latitude/longitude based on the user’s IP address.
 
 Then FacetWP performs a reverse lookup to determine the human-friendly physical address. This is **not an exact science**, and occasionally the location can be off by several kilometers.
+
+If the address lookup fails, the facet will still work, but will show “Your location” as value instead of an address. This fallback label and its accompanying error message [can be customized and/or translated](/help-center/facets/facet-types/proximity/#customize-geolocation-error-messages-L7-L10).
 
 ### Click the “Locate me” button automatically on the first map load
 
@@ -22810,7 +22834,7 @@ add_filter( 'facetwp_assets', function( $assets ) {
 
 If you are using a Proximity facet on a page that has a [User Selections facet](/help-center/facets/facet-types/user-selections/), a location selection in the Proximity facet will display in the User Selections facet as “Clear location”.
 
-To change this text, you can use the following snippet:
+To change this text, you can use the following snippet in your (child) theme’s functions.php:
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_assets', function( $assets ) {
@@ -22824,17 +22848,76 @@ Note that this text is also a translatable string. To translate it, you can use 
 gettext_{$domain}
 ```
 
- [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/). The following example translates the string after a customization with the 
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/).
+
+The following example translates the string to Dutch. Note that this hook runs after a customization with the 
 ```
 facetwp_assets
 ```
 
- hook as shown [in the snippet above](#customize-clear-text):
+ hook as shown [in the snippet above](#customize-clear-text), so if you customized the text there, the same customized text must be used in [the condition](#translate-clear-text-L2) in the snippet below:
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
   if ( 'Remove location' == $text ) {
     $translated_text = 'Verwijder locatie';
+  }
+  return $translated_text;
+}, 10, 3 );
+```
+
+## Customize or translate the geolocation error messages
+
+When using the Proximity facet’s [“Locate me” feature](#the-locate-me-button), there is a range of possible geolocation errors that can happen, triggered by the browser or the Google Geocoding API.
+
+For example, if a user clicks the “Locate me” button and, in the subsequent pop-up, denies the browser’s request to allow access to their location, the error message “You denied the request for geolocation” informs the user that the Proximity facet’s “Locate me” button does not work.
+
+![A Proximity facet with an inline geolocation error message.](https://facetwp.com/wp-content/uploads/2026/07/proximity-geolocation-errors.png)A Proximity facet with an inline geolocation error message.
+Depending on the chosen [“Display errors as” setting](#display-errors-as), the error message will be displayed inline as red text above the facet, or in a JS pop-up alert that the user has to click away, or only as console error.
+
+All possible default error messages and fallback labels are listed below. Each message can be customized by adding the snippet to your (child) theme’s functions.php and changing the message text(s):
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_assets', function( $assets ) {
+
+  FWP()->display->json['proximity']['autocomplete_error'] = __( 'Error fetching results.', 'fwp-front' );
+  // Note that this is the only message that allows HTML. E.g.:
+  FWP()->display->json['proximity']['autocomplete_error'] = __( '<strong>Error:</strong> could not fetch results.', 'fwp-front' );
+
+  // The only "non-fatal" error: the location works, but the address lookup failed. The Proximity facet will still function if this error occurs.
+  FWP()->display->json['proximity']['geolocation_error_address'] = __( 'Could not determine your address.', 'fwp-front' );
+  // The fallback input field value when address lookup failed.
+  FWP()->display->json['proximity']['geolocation_input_fallback'] = __( 'Your location', 'fwp-front' );
+  
+  FWP()->display->json['proximity']['geolocation_error_default'] = __( 'Could not get your location.', 'fwp-front' );
+  FWP()->display->json['proximity']['geolocation_error_permission'] = __( 'You denied the request for geolocation.', 'fwp-front' );
+  FWP()->display->json['proximity']['geolocation_error_unavailable'] = __( 'Location information is unavailable.', 'fwp-front' );
+  FWP()->display->json['proximity']['geolocation_error_timeout'] = __( 'The request to get your location timed out.', 'fwp-front' );
+  FWP()->display->json['proximity']['geolocation_error_unknown'] = __( 'An unknown error occurred.', 'fwp-front' );
+  FWP()->display->json['proximity']['geolocation_error_unsupported'] = __( 'Your browser does not support geolocation.', 'fwp-front' );
+
+  return $assets;
+} );
+```
+
+All of the above error messages are also translatable strings. To translate them, you can use a translation plugin like [Loco Translate](https://wordpress.org/plugins/loco-translate/), or use the 
+```
+gettext_{$domain}
+```
+
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/).
+
+The following example translates one of the message strings. Note that this hook runs after a customization with the 
+```
+facetwp_assets
+```
+
+ hook as shown [in the snippet above](#customize-geolocation-error-messages), so if you customized the text there, the same customized text must be used in [the condition](#translate-geolocation-error-messages-L2) in the snippet below.
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'gettext_fwp-front', function( $translated_text, $text, $domain ) {
+  if ( 'You denied the request for geolocation.' == $text ) {
+    $translated_text = 'U heeft het verzoek om uw locatie te gebruiken geweigerd.';
   }
   return $translated_text;
 }, 10, 3 );
@@ -23424,7 +23507,7 @@ You can use [this CSS](/help-center/facets/facet-types/dropdown/#style-select-dr
 - [Using FacetWP with Post Types Order](https://facetwp.com/help-center/using-facetwp-with/post-types-order/)
 - [The User Selections facet type](https://facetwp.com/help-center/facets/facet-types/user-selections/)
 
-                    Last updated: July 17, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -23472,11 +23555,11 @@ Note that choosing “Term order” will also preserve the order of ACF custom f
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
 | Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
 If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Limit | The maximum number of choices to display. Default: 50. 
 If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
 This setting is only available if the “Limit choices” setting is enabled. 
-Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+Note: in FacetWP versions older than v4.6, this setting was called “Count”. |
 
 ## What are value modifiers?
 
@@ -23851,7 +23934,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Advanced Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/advanced-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: July 15, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -23899,11 +23982,11 @@ Note that choosing “Term order” will also preserve the order of ACF custom f
 To customize the sort order, for example switch the ASC/DESC order, or to sort numerically, you can use the facetwp_facet_orderby hook. |
 | Limit choices | Limit the number of facet choices? Default: enabled. The limit can be set in the “Limit” setting. 
 If this setting is disabled, FacetWP will load all choices but will use a safety limit of 1000 for performance reasons. To override this safety limit, enable this setting and set your desired limit in the “Limit” setting. If you need that many choices, consider using a Search facet or Autocomplete facet instead. 
-Note: this setting is available in FacetWP v4.5.1+. |
+Note: this setting is available in FacetWP v4.6+. |
 | Limit | The maximum number of choices to display. Default: 50. 
 If you leave this field empty, the default of 50 will be used. You can set the limit as high as you like, but be aware that very high limits can lead to issues with page load performance or usability. If you use -1 (or disable the “Limit choices” setting), FacetWP will load all choices but will use a limit of 1000 for this reason. If you need that many choices, consider using a Search facet or Autocomplete facet instead.
 This setting is only available if the “Limit choices” setting is enabled. 
-Note: in FacetWP versions older than v4.5.1, this setting was called “Count”. |
+Note: in FacetWP versions older than v4.6, this setting was called “Count”. |
 
 ## What are value modifiers?
 
@@ -24278,7 +24361,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Advanced Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/advanced-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: July 15, 2026
+                    Last updated: July 30, 2026
 
 ---
 

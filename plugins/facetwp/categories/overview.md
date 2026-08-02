@@ -585,7 +585,7 @@ In facets with a hierarchical taxonomy as data source, **the limit includes chil
 
  to show *all* choices, or disable the “[Limit choices](/help-center/facets/facet-types/checkboxes/#limit-choices)” setting entirely.
 
-Note that not all facet types have “Limit choices” and “Limit” settings. In FacetWP versions older than v4.5.1, the “Limit” setting was called “Count”. The “[Limit choices](/help-center/facets/facet-types/checkboxes/#limit-choices)” setting is available in FacetWP v4.5.1+.
+Note that not all facet types have “Limit choices” and “Limit” settings. In FacetWP versions older than v4.6, the “Limit” setting was called “Count”. The “[Limit choices](/help-center/facets/facet-types/checkboxes/#limit-choices)” setting is available in FacetWP v4.6+.
 
 ## Multiple facet choices sharing a truncated facet_value of 50 characters long
 
@@ -856,7 +856,11 @@ On category/term/tag, author, and search archive pages, FacetWP will automatical
 
 If you do add a Listing Builder listing on a WP archive, what happens is that before filtering, FacetWP uses the native query. And to generate the filtered results, it will use the Listing Builder listing query, which will get **all** posts/products.
 
-To fix this difference, you can [use the facetwp_template_use_archive filter](/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/). With this hook in place, FacetWP will automatically **pre-filter** the Listing Builder query based on the current category/tag/term, author, or search term(s), by injecting them into the query arguments during filtering.
+To fix this difference, you have two options:
+
+## Option 1: Pre-filter Listing Builder listing templates for the query
+
+The recommended way to solve this is to [use the facetwp_template_use_archive filter](/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/). With this hook in place, FacetWP will automatically **pre-filter** the Listing Builder query based on the current category/tag/term, author, or search term(s), by injecting them into the query arguments during filtering.
 
 Note that even with this hook in place the native archive query will still be used **before** filtering. This may [lead to differences before and after filtering](/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/#fixing-query-differences-before-and-after-filtering), caused by query arguments *other* than the current category/tag/term, author or search term(s), like 
 ```
@@ -874,6 +878,19 @@ orderby
 ```
 
 . These differences can be fixed by manually bringing the native archive/search query arguments in line with the Listing Builder listing’s query arguments [with a pre_get_posts filter](/how-to-customize-wp-archive-queries/). Or by [forcing FacetWP to entirely ignore the archive query](/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/#ignore-the-archive-search-query-entirely).
+
+## Option 2: Pre-filter results based on the archive page URI
+
+Instead of pre-filtering the listing based on the archive query that the listing is on, with the 
+```
+facetwp_template_use_archive
+```
+
+ hook ([option 1 above](#option-1-pre-filter-listing-builder-listing-templates-for-the-query)), you can also pre-filter the listing query based on the page URI of the archive page.
+
+This can be done with a so-called dynamic URL tag. See [this section in our tutorial on dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#using-dynamic-url-tags-on-archive-templates) for how to do this exactly.
+
+In general, for Listing Builder listings placed on archives, we recommend [using the facetwp_template_use_archive hook](/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/), because it is only one line in your functions.php and works for all types of archives. Using a dynamic URL tag can be useful if you want to build complex queries in the Listing Builder, instead of [customizing the native archive query with a pre_get_posts hook](/how-to-customize-wp-archive-queries/).
 		Why am I missing exactly one post in my listing/query?
 	        If you are unexpectedly missing one (and only one) post in a listing that uses a WP archive or custom 
 ```

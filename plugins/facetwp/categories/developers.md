@@ -653,9 +653,9 @@ You may be tempted to [place a Listing Builder listing shortcode](/help-center/l
 
 Generally, on WP archive pages, it would be better to **not** use shortcode templates but to [use the WP archive template query itself](/help-center/listing-templates/wp-archive-page/) (and if necessary, [customize the archive query](/how-to-customize-wp-archive-queries/)). Shortcode templates [can best be placed on single pages or posts](/help-center/listing-templates/listing-builder/#where-to-place-the-shortcode).
 
-But if you want to keep using a Listing Builder listing shortcode on a taxonomy term archive, keep the following in mind.
+But if you want to keep using a Listing Builder listing shortcode on a taxonomy term archive, you have two options to make this work:
 
-#### Pre-filter Listing Builder listing templates for the current term
+#### Option 1: Pre-filter Listing Builder listing templates for the current term
 
 For each (custom or built-in) taxonomy, a term archive page exists for each term in the taxonomy. But your Listing Builder query will not automatically pre-filter for posts that use the current term archive page’s term; it will just return **all posts** of the post type(s) you have set in its query settings. In theory, you could create a separate Listing Builder template for each term archive, but that would be very impractical, as you will often have many terms in each taxonomy, and you’d have to make a new listing template each time you add a term.
 
@@ -709,6 +709,19 @@ orderby
  query arguments not being the same.
 
 See the hook’s documentation page for [two ways of fixing this](/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/#fixing-query-differences-before-and-after-filtering).
+
+#### Option 2: Pre-filter results based on the term archive page URI
+
+Instead of pre-filtering the listing based on the term archive query that the listing is on, with the 
+```
+facetwp_template_use_archive
+```
+
+ hook ([option 1 above](#option-1-pre-filter-listing-builder-listing-templates-for-the-current-term)), you can also pre-filter the listing query based on the page URI of the term archive page.
+
+This can be done with a so-called dynamic URL tag. See [this section in our tutorial on dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#using-dynamic-url-tags-on-taxonomy-term-archives) for how to do this exactly.
+
+In general, for Listing Builder listings placed on (term) archives, we recommend [using the facetwp_template_use_archive hook](/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/), because it is only one line in your functions.php and works for all types of archives. Using a dynamic URL tag can be useful if you want to build complex queries in the Listing Builder, instead of [customizing the native archive query with a pre_get_posts hook](/how-to-customize-wp-archive-queries/).
 
 ### Using a (hierarchical) taxonomy facet on a term archive page
 
@@ -1041,6 +1054,7 @@ WP_Query
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 - [Using the Listing Builder](https://facetwp.com/help-center/listing-templates/listing-builder/)
 - [The facetwp_template_use_archive hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/)
+- [How to pre-filter Listing Builder listing queries with dynamic URL tags](https://facetwp.com/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/)
 - [The facetwp_preload_url_vars hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_preload_url_vars/)
 - [How to pre-select facet choices](https://facetwp.com/how-to-pre-select-facet-choices/)
 - [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
@@ -1053,7 +1067,7 @@ WP_Query
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 - [How to order a WP_Query by terms or categories](https://facetwp.com/how-to-order-a-wp_query-by-terms-or-categories/)
 
-                    Last updated: March 30, 2026
+                    Last updated: July 28, 2026
 
 ---
 
@@ -11835,6 +11849,24 @@ facetwp_template_use_archive
 
  hook does not **pre-select** any facet choices. In the above category archive example, it is possible to pre-select the ‘events’ option in a facet that uses categories as its source. See [this example](/how-to-pre-select-facet-choices/#pre-select-a-facet-choice-for-a-category-tag-or-taxonomy-term-archive) to learn how to pre-select a facet choice for a category, tag or taxonomy term archive.
 
+### Alternative
+
+Instead of pre-filtering the listing based on the archive query that the listing is on, with the 
+```
+facetwp_template_use_archive
+```
+
+ hook described on this page, you can also pre-filter the listing query based on the page URI of the archive.
+
+This can be done with a so-called dynamic URL tag. See [this section in our tutorial on dynamic URL tags](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#using-dynamic-url-tags-on-archive-templates) for how to do this exactly.
+
+In general, for Listing Builder listings placed on archives, we recommend using the 
+```
+facetwp_template_use_archive hook
+```
+
+, because it is only one line in your functions.php and works for all types of archives. Using a dynamic URL tag can be useful if you want to build complex queries in the Listing Builder, instead of [customizing the native archive query with a pre_get_posts hook](/how-to-customize-wp-archive-queries/).
+
 ## Parameters
 
 - **$use_archive** | boolean | Should FacetWP pre-filter?
@@ -11932,12 +11964,13 @@ true
 
     - [FacetWP and taxonomies](https://facetwp.com/help-center/developers/facetwp-and-taxonomies/)
 - [Using the Listing Builder](https://facetwp.com/help-center/listing-templates/listing-builder/)
+- [How to pre-filter Listing Builder listing queries with dynamic URL tags](https://facetwp.com/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/)
+- [How to customize WordPress archive queries](https://facetwp.com/how-to-customize-wp-archive-queries/)
 - [Using a WP archive page](https://facetwp.com/help-center/listing-templates/wp-archive-page/)
 - [How to pre-select facet choices](https://facetwp.com/how-to-pre-select-facet-choices/)
-- [How to customize WordPress archive queries](https://facetwp.com/how-to-customize-wp-archive-queries/)
 - [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
 
-                    Last updated: March 31, 2026
+                    Last updated: July 28, 2026
 
 ---
 
@@ -13025,7 +13058,7 @@ FWP.refresh()
 
 ### Selectively ignore facets when refreshing with the `facetwp/refresh/ignore` filter hook
 
-Since FacetWP [v4.5.1](/help-center/changelog/#4-5-1), it is also possible to **selectively** disable auto-refresh for certain facets, using the 
+Since FacetWP [v4.6](/help-center/changelog/#4-6), it is also possible to **selectively** disable auto-refresh for certain facets, using the 
 ```
 facetwp/refresh/ignore
 ```
@@ -13105,7 +13138,7 @@ This would have to be used within the [facetwp-refresh event](/help-center/devel
 - [How to disable facet auto-refresh and add an apply button](https://facetwp.com/how-to-disable-facet-auto-refresh-and-add-an-apply-button/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                    Last updated: June 30, 2026
+                    Last updated: July 30, 2026
 
 ---
 
@@ -13645,7 +13678,12 @@ https://facetwp.com/demo/recipes-demo/
 
 When a user starts interacting with facets on that page, FacetWP adds variables to the page’s URL. Everything added after the base URL is called the “query string”.
 
-Directly upon clicking a choice in a facet, a “query variable” representing that choice is added to the query string. Each additional facet interaction will update that facet’s query variable, or it will add a new one if it’s the first interaction with that facet. The whole set of query variables is preceded by a question mark.
+Directly upon clicking a choice in a facet, a 
+```
+GET
+```
+
+ variable, or “query variable” representing that choice, is added to the query string. Each additional facet interaction will update that facet’s query variable, or it will add a new one if it’s the first interaction with that facet. The whole set of query variables is preceded by a question mark.
 
 For example, selecting “Cake” in the Recipes demo’s “Categories” facet adds the following to the base URL:
 
@@ -13734,6 +13772,20 @@ almond%2Clemon
 ```
 
 .
+
+### Non-FacetWP query variables
+
+FacetWP’s ([prefixed](#facetwps-url-prefix)) query variables that appear in the URL when using facets will function “on top of” any other query variables in the URL that determine the “base” query of the listing. An example would be a [Listing Builder listing](/help-center/listing-templates/listing-builder/) that is using a 
+```
+http:get
+```
+
+ [dynamic URL tag to pre-filter a listing](/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/#the-httpget-url-tag) based on existing 
+```
+GET
+```
+
+ variables in the page URL.
 
 ## FacetWP’s URL prefix
 
@@ -14050,7 +14102,7 @@ We are occasionally asked if FacetWP supports “pretty” URLs, for example
 
 .
 
-The answer is no, FacetWP only supports permalinks with URL parameters. “Pretty” permalinks quickly lose their appeal when multiple facet selections are made and/or multiple facets are combined. In which case there is no parent-child relationship between the subsequent sections of the URL and pretty permalinks would not make sense anymore.
+The answer is no, FacetWP only supports permalinks with query variables. “Pretty” permalinks quickly lose their appeal when multiple facet selections are made and/or multiple facets are combined. In which case there is no parent-child relationship between the subsequent sections of the URL and pretty permalinks would not make sense anymore.
 
 Pretty permalinks would also be [bad for SEO](#facetwps-url-and-seo), since search engines would see many different URLs with the same content.
 
@@ -14525,8 +14577,10 @@ FWP.loadFromHash(); // Populates facet data from URL data (happens on page load)
 - [How to pre-select facet choices](https://facetwp.com/how-to-pre-select-facet-choices/)
 - [How to hide the listing template until facets are selected](https://facetwp.com/how-to-hide-the-listing-template-until-facets-are-selected/)
 - [How to track facet pages with Google Analytics 4](https://facetwp.com/help-center/using-facetwp-with/google-analytics-4/)
+- [Using the Listing Builder](https://facetwp.com/help-center/listing-templates/listing-builder/)
+- [How to pre-filter Listing Builder listing queries with dynamic URL tags](https://facetwp.com/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/)
 
-                    Last updated: November 3, 2025
+                    Last updated: July 28, 2026
 
 ---
 
