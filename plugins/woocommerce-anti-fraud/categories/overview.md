@@ -362,7 +362,7 @@ The Antifraud Analytics Dashboard provides a clear high-level overview of orders
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
 				![](https://woocommerce.com/wp-content/uploads/2020/02/recaptcha.jpg)
 
 ### reCaptcha Integration
