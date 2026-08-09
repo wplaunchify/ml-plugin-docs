@@ -2149,7 +2149,7 @@ We suggest backing up these ticket files before deleting them just in case there
 
 **Source:** [https://help.fooevents.com/docs/frequently-asked-questions/tickets/tickets-are-not-being-generated-for-large-orders/](https://help.fooevents.com/docs/frequently-asked-questions/tickets/tickets-are-not-being-generated-for-large-orders/)
 
-This is most likely caused by a data type limitation in your sites database. FooEvents stores ticket data for an order in a single serialized **meta_value**. On large orders (roughly 30+ tickets in one order, depending on how much data each ticket stores), that serialized value can exceed the maximum size allowed for a **TEXT** field. When that happens:
+This is most likely caused by a data type limitation in your site’s database. FooEvents stores ticket data for an order in a single serialized **meta_value**. On large orders (roughly 30+ tickets in one order, depending on how much data each ticket stores), that serialized value can exceed the maximum size allowed for a **TEXT** field. When that happens:
 
 - The order meta is **truncated or not fully saved**.
 - FooEvents doesn’t have all the data it expects.
@@ -2157,7 +2157,7 @@ This is most likely caused by a data type limitation in your sites database. Fo
 
 ### Who is affected?
 
-This should only affects stores that:
+This should only affect stores that:
 
 - Have **HPOS** (WooCommerce High-Performance Order Storage) enabled.
 - Expect to process **large ticket orders** (around 30 or more tickets in a single order).
@@ -2166,13 +2166,13 @@ If you are **not** using **HPOS**, you should not be affected by this issue.
 
 ### Why doesn’t this affect non-HPOS sites?
 
-On non-HPOS sites, WooCommerce uses the standard WordPress **postmeta** table (for example wp_postmeta) for order meta.
+On non-HPOS sites, WooCommerce uses the standard WordPress **postmeta** table (e.g. wp_postmeta) for order meta.
 
 In **postmeta**, the **meta_value** column is already defined as **LONGTEXT**, which can store much larger values than **TEXT**.
 
 Because of that, non-HPOS sites can safely store large FooEvents ticket meta values without any changes.
 
-If you do experiance this issue on a non-HPOS site,  you or your developer may gave changed the data type of the **meta_value** field in the WordPress **postmeta** table.
+If you do experience this issue on a non-HPOS site,  you or your developer may have changed the data type of the **meta_value** field in the WordPress **postmeta** table.
 
 ### Technical details
 
@@ -2196,7 +2196,7 @@ If you’re using HPOS and expect large ticket orders, change the **meta_value**
 
 1. **Confirm the table name**
 
-Most installs will use: wp_wc_orders_meta
+Most installs will use **wp_wc_orders_meta**.
 
 If you’re using a custom prefix, adjust accordingly (for example 
 ```
