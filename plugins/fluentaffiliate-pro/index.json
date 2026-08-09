@@ -2,8 +2,8 @@
   "plugin_slug": "fluentaffiliate-pro",
   "plugin_name": "FluentAffiliate Pro",
   "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-  "last_scraped": "2026-08-02T04:02:23.474Z",
-  "total_pages": 53,
+  "last_scraped": "2026-08-09T03:21:43.021Z",
+  "total_pages": 55,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -115,7 +115,7 @@
       "slug": "integrations",
       "url": "https://docs.fluentaffiliate.com/guide/integrations/",
       "file": "categories/integrations.md",
-      "page_count": 18,
+      "page_count": 19,
       "pages": [
         {
           "title": "Easy Digital Downloads Integration with FluentAffiliate ​",
@@ -148,6 +148,10 @@
         {
           "title": "GiveWP Integration with FluentAffiliate ​",
           "url": "https://docs.fluentaffiliate.com/guide/integrations/givewp-integration-with-fluentaffiliate"
+        },
+        {
+          "title": "Google reCAPTCHA Integration ​",
+          "url": "https://docs.fluentaffiliate.com/guide/integrations/google-recaptcha-integration-with-fluentaffiliate"
         },
         {
           "title": "Integrations ​",
@@ -225,7 +229,7 @@
       "slug": "settings-and-customization",
       "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/",
       "file": "categories/settings-and-customization.md",
-      "page_count": 12,
+      "page_count": 13,
       "pages": [
         {
           "title": "Affiliate Manager Migration ​",
@@ -234,6 +238,10 @@
         {
           "title": "AffiliateWP Migration ​",
           "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/affiliatewp-migration"
+        },
+        {
+          "title": "Captcha Settings ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/captcha-settings"
         },
         {
           "title": "Email Settings ​",

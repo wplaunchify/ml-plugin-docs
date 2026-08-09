@@ -154,6 +154,32 @@ Here are solutions to common issues you might encounter during migration:
 
 ---
 
+## Captcha Settings ​
+
+**Source:** [https://docs.fluentaffiliate.com/guide/settings-and-customization/captcha-settings](https://docs.fluentaffiliate.com/guide/settings-and-customization/captcha-settings)
+
+# Captcha Settings ​
+
+Are fake bot accounts cluttering your affiliate program? Dealing with spam sign-ups is a huge pain for any site owner. FluentAffiliate gives you a simple way to protect your affiliate registration form from spam and bot sign-ups by using a captcha challenge. This keeps the bots out and ensures only real people join your team.
+
+## Accessing Captcha Settings ​
+
+To find these security options, go to your WordPress dashboard. From the FluentAffiliate menu, click on **Settings**, open the **Registration Settings** dropdown on the left sidebar, and select **Captcha**.
+
+## How to Configure Your Captcha ​
+
+Setting up your captcha only takes a few minutes. Here is a breakdown of exactly what you need to fill out on this page:
+
+- **Enable captcha on registration:** Check this box to turn on the security challenge for your sign-up form.
+- **reCAPTCHA Version:** Choose the type of challenge you want your users to experience. You can pick the **v2 Checkbox** (the classic "I'm not a robot" box) or **v3** (which works invisibly in the background based on a score).
+- **Site Key & Secret Key:** Paste your specific Google reCAPTCHA keys into these two fields. If you do not have these keys yet, you can easily generate them from the Google reCAPTCHA admin console by visiting [google.com/recaptcha/admin](https://google.com/recaptcha/admin). See the [Google reCAPTCHA Integration](/guide/integrations/google-recaptcha-integration-with-fluentaffiliate) guide for step-by-step instructions.
+- **Validate Keys:** Click this handy button to double-check that the Site Key and Secret Key you just entered are correct and working properly.
+- **Failure Message:** Type in the text you want users to see if they fail the security check. By default, it will say "Security check failed. Please try again.".
+
+Once you have entered your keys and chosen your settings, make sure to click the **Save Settings** button at the very bottom to apply your changes.
+
+---
+
 ## Email Settings ​
 
 **Source:** [https://docs.fluentaffiliate.com/guide/settings-and-customization/email-settings](https://docs.fluentaffiliate.com/guide/settings-and-customization/email-settings)
@@ -564,7 +590,7 @@ The Registration Settings section gives you complete control over your affiliate
 
 ## Accessing Registration Settings ​
 
-To configure these options, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Registration Settings**.
+To configure these options, navigate from your WordPress dashboard to **FluentAffiliate → Settings → Registration Settings → Registration Fields**.
 
 ### General Registration Options ​
 
@@ -579,7 +605,7 @@ At the top of the page, you will find the two primary settings that control your
 - **When Enabled (Manual Approval):** If you check this box, you have full control over who joins your program. New applicants will have their status set to "pending." You will then need to navigate to their individual affiliate profile to manually review their application and approve them. This is the recommended setting if you want to screen your affiliates before they can start promoting your site.
 - **When Disabled (Automatic Approval):** If you leave this box unchecked, the approval process is hands-off. Any user who successfully completes the registration form will instantly become an active affiliate and can begin generating referral links immediately.
 
-### Managing Registration Fields ​
+## Managing Registration Fields ​
 
 This section allows you to customize the registration form that potential affiliates will fill out. You can enable, disable, and edit the fields as needed.
 
@@ -598,9 +624,33 @@ In this pop-up, you can modify the following options:
 - **Required:** Choose whether the field is mandatory for the user to fill out.
 - **Status:** Use this toggle to enable or disable the field on the form.
 
-As noted in the pop-up, some system-defined fields may have limitations, such as only allowing label edits.
+NOTE
 
-After making your customizations, remember to click the **Save Settings** button at the bottom of the page to apply all changes.
+As noted in the pop-up, some system-defined fields have strict rules and might only allow you to edit their labels or placeholders. Other fields, like the Terms and Conditions agreement, give you a full visual text editor to perfectly format your text.
+## Adding Custom Fields (Pro) ​
+
+Every affiliate program asks for something different. Maybe you need a tax ID, a payout preference, an audience size, or the main social channel someone promotes on. Instead of chasing down this information over email after you approve an affiliate, FluentAffiliate allows you to collect it right up front!
+
+You can add your own custom fields directly to the registration form so you get all the details you need immediately.
+
+Here is how to build your custom fields:
+
+1. Scroll to the bottom of the Registration Fields list and click the **+ Add Custom Field** button.
+
+1. A form called **"Add Custom Registration Field"** will slide in from the right side of your screen.
+2. First, choose your **Field Type** from the dropdown menu. You have eight options to build the perfect form: - Use **Text**, **Textarea**, **Number**, **Date**, and **URL** for open-ended answers.
+- Use **Dropdown**, **Radio**, and **Multi Select** when you want to provide specific choices and keep answers tidy. (These choice fields include an options editor so you control exactly what applicants can pick).
+3. Fill in the **Label** (which is required) to name your field.
+4. Add a **Placeholder** text and a **Help Message** to guide your affiliates on what they need to enter.
+5. Choose if the field is **Required** by selecting the "Yes" or "No" radio button.
+6. Ensure the **Status** is checked to "Enable this field".
+7. Click the **Save** button.
+
+Whatever an affiliate submits through these custom fields will show up right on their profile in your admin dashboard, inside the **Affiliate Info** panel. This means all their answers live right next to the person they belong to!
+
+> For Developers: New filters allow an add-on to validate submitted values, enrich the admin detail view, and extend the portal settings form. This means custom fields can be wired directly into your own custom workflow!
+
+After making any customizations, remember to click the **Save Settings** button at the bottom of the main page to apply all your changes.
 
 ---
 
@@ -665,9 +715,11 @@ This section also includes a **Wipe Data** tool to clean up your FluentAffiliate
 
 # Solid Affiliate Migration ​
 
-The Solid Affiliate Migration tool in FluentAffiliate helps you move your existing affiliate data from Solid Affiliate into FluentAffiliate. It also allows you to clean up old or unnecessary data during the process.
+The **Solid Affiliate Migration** feature in FluentAffiliate helps you migrate your existing affiliate data from **Solid Affiliate** to **FluentAffiliate**. If needed, you can also remove your existing FluentAffiliate data before starting a new migration to avoid conflicts.
 
-FluentAffiliate includes a built-in migration option for Solid Affiliate. This guide will walk you through the available options and the migration process.
+The migration supports **affiliates, referrals, customers, payouts, visits, affiliate groups, commission rate types**, and **referral product names**. If you're using **FluentAffiliate Pro**, your **marketing creatives** are migrated as well, allowing your affiliates to continue using their existing promotional materials after the migration.
+
+This guide walks you through the available migration options and shows you how to migrate your Solid Affiliate data using either the **Web UI** or **WP-CLI**.
 
 ## Accessing Migrator Settings ​
 
