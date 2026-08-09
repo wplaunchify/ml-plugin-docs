@@ -75,6 +75,8 @@ To safely add any code snippets to your website, you can follow the documentatio
 
 ### What can’t auto apply
 
+[↑ Back to top](#doc-title)
+
 1. Gift cards and store credits **cannot** be auto applied.
 2. Auto apply will not be enabled for coupons that are linked to a product. This means that when you issue any coupon with a product purchase, that coupon will need to be manually applied by the users on their next purchase.
 
@@ -93,7 +95,7 @@ To safely add any code snippets to your website, you can follow the documentatio
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
 ### Table Rate Shipping

@@ -96,7 +96,7 @@ With Smart Coupons, you can also create other gift card types:
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
 ### Table Rate Shipping

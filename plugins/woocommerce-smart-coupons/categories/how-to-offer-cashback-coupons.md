@@ -19,11 +19,11 @@ This doc explains how to offer store credit as cashback to your users.
 3. Enter coupon description for reference – Say, “Cashback offer”.
 4. Select ‘Store Credit / Gift Certificate’ as the Discount type from the drop-down.
 5. Optionally, you can also set an expiration date. Under Valid for, select 15 days. It will automatically generate the expiration date based on the purchase date.
-6. Publish the coupon. ![Smart Coupons Cashback](https://woocommerce.com/wp-content/uploads/2023/10/smart-coupons-cashback.png?strip=all&w=704)
+6. Publish the coupon. ![](https://woocommerce.com/wp-content/uploads/2023/10/Cashback.png?strip=all&w=704)
 7. Now, go to the WordPress Admin panel > Products. Edit the product for which you want to provide the Cashback offer.
 8. Look for ‘Coupons’ under the General tab.
 9. Search and select the cashback coupon created above.
-Note – You can add as many coupons as you like here. ![](https://woocommerce.com/wp-content/uploads/2023/10/smart-coupons-product-general-tab.png?strip=all&w=704)
+Note – You can add as many coupons as you like here. ![](https://woocommerce.com/wp-content/uploads/2019/10/Product-page-Cashback.png?strip=all&w=704)
 10. Click Update to save changes.
 
 Thats it!
@@ -43,7 +43,7 @@ Thats it!
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
 ### Table Rate Shipping

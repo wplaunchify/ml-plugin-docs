@@ -16,7 +16,7 @@ This documentation explains how using Smart Coupons, you can generate coupon cod
 
 ## Steps to bulk generate coupons
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. Go to your WordPress Admin dashboard. Under **Marketing > Coupons**, click on the ‘**Bulk Generate**‘ tab.
 2. Enter how many coupons you want to generate in bulk.
@@ -35,7 +35,7 @@ That’s it. You can share the coupon codes with deal sites, affiliates, deliver
 
 ## How to bulk generate coupons with categories
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 1. Go to your WordPress Admin dashboard. Under **Marketing > Coupons**, click on the ‘**Bulk Generate**‘ tab.
 2. You’ll find three ways to generate coupons in bulk: Add to store, Export to CSV & Email to recipients. Select the one as per your requirements.
@@ -60,7 +60,7 @@ That’s it. All your unique coupons will be generated with the category you hav
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
 ### Table Rate Shipping

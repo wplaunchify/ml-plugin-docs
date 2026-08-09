@@ -20,8 +20,8 @@ This documentation explains how you can create a coupon that only new users can 
 
 1. Go to your **WordPress Admin panel > Marketing > Coupons > Add coupon**.
 2. Click on the ‘**Generate coupon code**’ button or enter your own promo code.
-3. Under the “**General**” tab, select the **discount type, coupon amount**, coupon expiry date and time.
-4. Enable the “**For new user only?**“ checkbox ![Smart coupons new user coupon](https://woocommerce.com/wp-content/uploads/2019/10/smart-coupons-new-user-coupon-2.png?strip=all&w=704)
+3. Under the “**General**” tab, select the **Discount type**and set the**Coupon amount**.
+4. Enable the “**For new customers?**“ checkbox.![](https://woocommerce.com/wp-content/uploads/2019/10/New-users-2.png?strip=all&w=704)
 5. Set this coupon to [auto-apply](https://woocommerce.com/document/smart-coupons/how-to-auto-apply-coupon/) if desired.
 6. Set other restrictions and limits for the coupon as per your requirements.
 7. **Publish** the coupon.
@@ -53,7 +53,7 @@ In case of a guest checkout, the previous orders will be checked based on the bi
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Let customers subscribe to your products or services and pay on a weekly, monthly or annual basis.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
 ### Table Rate Shipping
