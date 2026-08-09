@@ -66,7 +66,7 @@ Still no luck? Try [searching](javascript:void(0);), and also check out our [tro
 	### Requirements
 
 		What are the system requirements?
-	        FacetWP requires PHP 7.0+ (since [FacetWP v4.0](/whats-new-in-facetwp-4-0/)) and WordPress 5.0+ (fully compatible with WordPress 7.0.2).
+	        FacetWP requires PHP 7.0+ (since [FacetWP v4.0](/whats-new-in-facetwp-4-0/)) and WordPress 5.0+ (fully compatible with WordPress 7.0.3).
 		Does FacetWP work on WordPress.com?
 	        No, FacetWP is a plugin for [self-hosted](https://wordpress.org/download/) WordPress installs.
 		Does FacetWP support PHP8?

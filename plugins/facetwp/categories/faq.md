@@ -1407,7 +1407,7 @@ Check out [our performance article](/help-center/developers/facetwp-performance-
 
 **Source:** [https://facetwp.com/help-center/faq/what-are-the-system-requirements/](https://facetwp.com/help-center/faq/what-are-the-system-requirements/)
 
-FacetWP requires PHP 7.0+ (since [FacetWP v4.0](/whats-new-in-facetwp-4-0/)) and WordPress 5.0+ (fully compatible with WordPress 7.0.2).
+FacetWP requires PHP 7.0+ (since [FacetWP v4.0](/whats-new-in-facetwp-4-0/)) and WordPress 5.0+ (fully compatible with WordPress 7.0.3).
 
     
 ## See also

@@ -5781,7 +5781,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 
 ## Fix the 10.000 result limit
 
-Be aware that Elasticpress [limits results to 10.000](https://www.elastic.co/guide/en/elasticsearch/reference/7.9/search-your-data.html#track-total-hits) for performance reasons, so FacetWP will also not index or show more than 10.000 results.
+Be aware that Elasticpress [limits results to 10.000](https://www.elastic.co/guide/en/elasticsearch/reference/7.9/search-your-data.html#track-total-hits) for performance reasons, so FacetWP will also not show more than 10.000 results.
 
 You can have the actual total number being returned by adding the following snippet to your (child) theme’s functions.php:
 
@@ -5801,7 +5801,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
     - [The Search facet type](https://facetwp.com/help-center/facets/facet-types/search/)
 - [How to customize WordPress archive queries](https://facetwp.com/how-to-customize-wp-archive-queries/)
 
-                    Last updated: June 16, 2026
+                    Last updated: August 7, 2026
 
 ---
 
@@ -7556,7 +7556,7 @@ There is a known issue when using FacetWP with WPML and the [Post Types Order pl
 
 This issue only happens when the “Auto Sort” setting in Post Types Order is enabled. We are working on a fix.  In the meantime, disable “Auto Sort” to fix the issue:
 
-![Disable 'Auto Sort' to prevent cron indexing issues when using WPML.](https://facetwp.com/wp-content/uploads/2024/11/pto-autosort.png)Disable “Auto Sort” to prevent cron indexing issues when using WPML.
+![Disable 'Auto Sort' to prevent cron indexing issues when using WPML.](https://facetwp.com/wp-content/uploads/2025/05/pto-auto-apply-sort.png)Disable “Auto Sort” to prevent cron indexing issues when using WPML.
 If needed, manually add 
 ```
 'orderby' => 'menu_order'
@@ -7628,7 +7628,7 @@ Note that the “Parent term” setting is only available in [Checkboxes](/help
 - [The Schedule Indexer add-on](https://facetwp.com/help-center/add-on-features-and-extras/schedule-indexer/)
 - [Using FacetWP with Weglot](https://facetwp.com/help-center/using-facetwp-with/weglot/)
 
-                Last updated: May 11, 2026
+                Last updated: August 6, 2026
 
 ---
 

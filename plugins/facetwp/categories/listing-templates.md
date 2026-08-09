@@ -1866,7 +1866,7 @@ j M Y
 
  – 18 Jan 2025
 
-If the builder item is based on a custom field containing a date, and the “Field type” setting is set to “Date”, you can also set an “Input format”. This format should match the format in which the date is stored in the database. In most cases dates are stored as 
+If the builder item is based on a custom field containing a date, and the “Field type” setting is set to “Date”, you can also set an “Input format”. This format should match the format in which the date is stored in the database. In most cases, dates are stored as 
 ```
 YYYY-MM-DD
 ```
@@ -1877,6 +1877,81 @@ Y-m-d
 ```
 
  (which is the default). If your custom field stores the date differently, you need to adapt the “Input format” accordingly, using [PHP datetime formats](https://www.php.net/manual/en/datetime.format.php).
+
+Tip:If your date field is stored as an **array** (e.g. an [ACF Checkbox field](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/#using-an-acf-checkbox-field)), the date values will be output as a comma-separated string in the front-end. To customize this array output, for example, to convert the array output to a string with 
+```
+<br/>
+```
+
+ tags, so that each date item displays on its own line, you can [use the facetwp_builder_item_value hook](/help-center/developers/hooks/output-hooks/facetwp_builder_item_value/#using-array-fields-output-a-comma-separated-string-with-line-breaks-instead).
+
+## Using builder items with numbers
+
+![A Listing Builder custom field item set as 'Number' field type, with its 'Number format' setting.](https://facetwp.com/wp-content/uploads/2026/08/listing_builder_number_field.png)A Listing Builder custom field item set as “Number” field type, with its “Number format” setting.
+If you create a builder item based on a numerical custom field (with the “Field type” setting set to “Number”), you’ll see a “Number format” setting. This setting determines the way number values are output in the front-end.
+
+The “Number format” setting will show separators in its options in line with the main decimal and thousands separators as set in FacetWP > Settings > Separators. You can also choose “None”, which will output the values as-is, without any interpretation/formatting.
+
+The field’s front-end output will also use the main separator setting to interpret any dots and commas in the field’s values. This means you can use both comma-separated and dot-separated values in number fields and output them with these separators. For example, a 
+```
+6000,24
+```
+
+ value with a comma decimal setting will be output as 
+```
+6000,24
+```
+
+, and with a dot decimal setting as 
+```
+600024.00
+```
+
+.
+
+In case your number field values have different decimal/thousands separators than in your main separator setting, and you want to output these values in this deviating format, you can use the 
+```
+facetwp_builder_number_separators
+```
+
+ hook to customize/override the decimal/thousands separators used to interpret the field values:
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_builder_number_separators', function( $separators, $item ) {
+
+  // Optionally limit these custom separators to a specific builder item
+  if ( $item['settings']['name'] == 'el-0us6ce' ) {
+    $separators['thousands'] = ',';
+    $separators['decimal'] = '.';
+  }
+
+  return $separators;
+}, 10, 2 );
+```
+
+This hook (available in FacetWP [v4.6](/help-center/changelog/#4-6)+) has access to the 
+```
+$item
+```
+
+ array, which contains the item’s source field name in 
+```
+$item['source']
+```
+
+, and the item’s name in 
+```
+$item['settings']['name']
+```
+
+. You can use this to customize/override the separators only for specific builder items, [as shown in line 4 of the example above](#facetwp-builder-number-separators-L4).
+
+Tip:If your number field is stored as an **array** (e.g. an [ACF Checkbox field](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/#using-an-acf-checkbox-field)), the number values will be output as a comma-separated string in the front-end. To customize this array output, for example, to convert the array output to a string with 
+```
+<br/>
+```
+
+ tags, so that each number item displays on its own line, you can [use the facetwp_builder_item_value hook](/help-center/developers/hooks/output-hooks/facetwp_builder_item_value/#using-array-fields-output-a-comma-separated-string-with-line-breaks-instead).
 
 ## Limit the number of characters or words of a “Post Excerpt” builder item
 
@@ -2115,7 +2190,7 @@ facetwp_facets
 - [Using FacetWP with WordPress multi-site](https://facetwp.com/help-center/using-facetwp-with/wordpress-multi-site/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 
-                    Last updated: July 31, 2026
+                    Last updated: August 4, 2026
 
 ---
 
@@ -3579,7 +3654,7 @@ j M Y
 
  – 18 Jan 2025
 
-If the builder item is based on a custom field containing a date, and the “Field type” setting is set to “Date”, you can also set an “Input format”. This format should match the format in which the date is stored in the database. In most cases dates are stored as 
+If the builder item is based on a custom field containing a date, and the “Field type” setting is set to “Date”, you can also set an “Input format”. This format should match the format in which the date is stored in the database. In most cases, dates are stored as 
 ```
 YYYY-MM-DD
 ```
@@ -3590,6 +3665,81 @@ Y-m-d
 ```
 
  (which is the default). If your custom field stores the date differently, you need to adapt the “Input format” accordingly, using [PHP datetime formats](https://www.php.net/manual/en/datetime.format.php).
+
+Tip:If your date field is stored as an **array** (e.g. an [ACF Checkbox field](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/#using-an-acf-checkbox-field)), the date values will be output as a comma-separated string in the front-end. To customize this array output, for example, to convert the array output to a string with 
+```
+<br/>
+```
+
+ tags, so that each date item displays on its own line, you can [use the facetwp_builder_item_value hook](/help-center/developers/hooks/output-hooks/facetwp_builder_item_value/#using-array-fields-output-a-comma-separated-string-with-line-breaks-instead).
+
+## Using builder items with numbers
+
+![A Listing Builder custom field item set as 'Number' field type, with its 'Number format' setting.](https://facetwp.com/wp-content/uploads/2026/08/listing_builder_number_field.png)A Listing Builder custom field item set as “Number” field type, with its “Number format” setting.
+If you create a builder item based on a numerical custom field (with the “Field type” setting set to “Number”), you’ll see a “Number format” setting. This setting determines the way number values are output in the front-end.
+
+The “Number format” setting will show separators in its options in line with the main decimal and thousands separators as set in FacetWP > Settings > Separators. You can also choose “None”, which will output the values as-is, without any interpretation/formatting.
+
+The field’s front-end output will also use the main separator setting to interpret any dots and commas in the field’s values. This means you can use both comma-separated and dot-separated values in number fields and output them with these separators. For example, a 
+```
+6000,24
+```
+
+ value with a comma decimal setting will be output as 
+```
+6000,24
+```
+
+, and with a dot decimal setting as 
+```
+600024.00
+```
+
+.
+
+In case your number field values have different decimal/thousands separators than in your main separator setting, and you want to output these values in this deviating format, you can use the 
+```
+facetwp_builder_number_separators
+```
+
+ hook to customize/override the decimal/thousands separators used to interpret the field values:
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_builder_number_separators', function( $separators, $item ) {
+
+  // Optionally limit these custom separators to a specific builder item
+  if ( $item['settings']['name'] == 'el-0us6ce' ) {
+    $separators['thousands'] = ',';
+    $separators['decimal'] = '.';
+  }
+
+  return $separators;
+}, 10, 2 );
+```
+
+This hook (available in FacetWP [v4.6](/help-center/changelog/#4-6)+) has access to the 
+```
+$item
+```
+
+ array, which contains the item’s source field name in 
+```
+$item['source']
+```
+
+, and the item’s name in 
+```
+$item['settings']['name']
+```
+
+. You can use this to customize/override the separators only for specific builder items, [as shown in line 4 of the example above](#facetwp-builder-number-separators-L4).
+
+Tip:If your number field is stored as an **array** (e.g. an [ACF Checkbox field](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/#using-an-acf-checkbox-field)), the number values will be output as a comma-separated string in the front-end. To customize this array output, for example, to convert the array output to a string with 
+```
+<br/>
+```
+
+ tags, so that each number item displays on its own line, you can [use the facetwp_builder_item_value hook](/help-center/developers/hooks/output-hooks/facetwp_builder_item_value/#using-array-fields-output-a-comma-separated-string-with-line-breaks-instead).
 
 ## Limit the number of characters or words of a “Post Excerpt” builder item
 
@@ -3828,7 +3978,7 @@ facetwp_facets
 - [Using FacetWP with WordPress multi-site](https://facetwp.com/help-center/using-facetwp-with/wordpress-multi-site/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 
-                    Last updated: July 31, 2026
+                    Last updated: August 4, 2026
 
 ---
 
