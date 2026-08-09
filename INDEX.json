@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-09T14:34:06.775Z",
+  "last_updated": "2026-08-09T14:44:59.706Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -532,7 +532,7 @@
       "slug": "fluent-pdf-generator",
       "name": "Fluent PDF Generator",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-08-02T14:52:00.353Z",
+      "last_scraped": "2026-08-09T14:44:59.706Z",
       "page_count": 457,
       "categories": [
         "account-management",
