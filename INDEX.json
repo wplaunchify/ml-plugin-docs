@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-09T08:58:26.553Z",
+  "last_updated": "2026-08-09T09:05:59.858Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -859,7 +859,7 @@
       "slug": "fluentcrm-marketing-automation-for-wordpress",
       "name": "FluentCRM - Marketing Automation For WordPress",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-08-02T09:31:58.378Z",
+      "last_scraped": "2026-08-09T09:05:59.858Z",
       "page_count": 137,
       "categories": [
         "advanced-reports",
