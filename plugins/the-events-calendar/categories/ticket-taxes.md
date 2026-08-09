@@ -41,7 +41,7 @@ The best thing you can do is find out what states you currently do business in, 
 - If you happen to be selling tickets via Eventbrite, it’s good practice to [make sure your tax collection is correctly configured](https://www.eventbrite.com/support/articles/en_US/How_To/how-to-charge-sales-tax-on-tickets?lg=en_US) on those events.
 - Consult with a sales tax expert
 
-And, while you’re at it, it would be a good idea to check out our [article on marketplace facilitators](/marketplace-facilitator-laws) if you are using our Community add-on. There are additional things to take into consideration when your site is being used as a marketplace where other people sell things and this article will give you a few tips.
+And, while you’re at it, it would be a good idea to check out our [article on marketplace facilitators](/software/the-events-calendar/tax-laws/) if you are using our Community add-on. There are additional things to take into consideration when your site is being used as a marketplace where other people sell things and this article will give you a few tips.
 
 ---
 

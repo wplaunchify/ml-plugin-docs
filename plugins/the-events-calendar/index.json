@@ -2,8 +2,8 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-08-02T07:06:52.660Z",
-  "total_pages": 362,
+  "last_scraped": "2026-08-09T06:28:14.579Z",
+  "total_pages": 356,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -449,19 +449,6 @@
       ]
     },
     {
-      "title": "Church Event Website Guide",
-      "slug": "church-event-website-guide",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/church-event-website-guide/",
-      "file": "categories/church-event-website-guide.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Church Event Website Guide",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/church-event-website-guide/"
-        }
-      ]
-    },
-    {
       "title": "Code Snippets",
       "slug": "code-snippets",
       "url": "https://docs.nexcess.com/software/the-events-calendar/code-snippets/",
@@ -588,19 +575,6 @@
         {
           "title": "Using Composer with The Events Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/composer/"
-        }
-      ]
-    },
-    {
-      "title": "Conference Website Setup Guide",
-      "slug": "conference-website-setup-guide",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/conference-website-setup-guide/",
-      "file": "categories/conference-website-setup-guide.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Conference Website Setup Guide",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/conference-website-setup-guide/"
         }
       ]
     },
@@ -1840,19 +1814,6 @@
       ]
     },
     {
-      "title": "Event Tickets 2",
-      "slug": "event-tickets-2",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-2/",
-      "file": "categories/event-tickets-2.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Getting Started with Event Tickets",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-2/"
-        }
-      ]
-    },
-    {
       "title": "Event Tickets Availability",
       "slug": "event-tickets-availability",
       "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/",
@@ -2906,19 +2867,6 @@
       ]
     },
     {
-      "title": "Museum Event Website Guide",
-      "slug": "museum-event-website-guide",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/museum-event-website-guide/",
-      "file": "categories/museum-event-website-guide.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Museum Event Website Guide",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/museum-event-website-guide/"
-        }
-      ]
-    },
-    {
       "title": "Order Invoices",
       "slug": "order-invoices",
       "url": "https://docs.nexcess.com/software/the-events-calendar/order-invoices/",
@@ -3361,19 +3309,6 @@
       ]
     },
     {
-      "title": "Rsvp Event Website Setup Guide",
-      "slug": "rsvp-event-website-setup-guide",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-event-website-setup-guide/",
-      "file": "categories/rsvp-event-website-setup-guide.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "RSVP Event Website Setup Guide",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-event-website-setup-guide/"
-        }
-      ]
-    },
-    {
       "title": "Schedule Shortcodes",
       "slug": "schedule-shortcodes",
       "url": "https://docs.nexcess.com/software/the-events-calendar/schedule-shortcodes/",
@@ -3396,19 +3331,6 @@
         {
           "title": "Template Overrides for Event Schedule Manager",
           "url": "https://docs.nexcess.com/software/the-events-calendar/schedule-templates/"
-        }
-      ]
-    },
-    {
-      "title": "School Calendar Website Guide",
-      "slug": "school-calendar-website-guide",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/school-calendar-website-guide/",
-      "file": "categories/school-calendar-website-guide.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "School Calendar Website Guide",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/school-calendar-website-guide/"
         }
       ]
     },
