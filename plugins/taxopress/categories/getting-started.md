@@ -1416,57 +1416,6 @@ You will now see TaxoPress on the “Plugins” screen, and there will be a Taxo
 
 ---
 
-## Capabilities / Permissions in TaxoPress
-
-**Source:** [https://taxopress.com/docs/permissions-taxopress/](https://taxopress.com/docs/permissions-taxopress/)
-
-## Capabilities for the TaxoPress Metabox
-
-If you want to control who has access to the TaxoPress metabox underneath each post, you can do with the manage_categories capability. We recommend using the [PublishPress Capabilities](https://wordpress.org/plugins/capability-manager-enhanced/) plugin to assign this permissions.
-
-- Go to the “Capabilities” screen.
-- Choose the user role you want to edit in the top-left corner.
-- In the “Taxomomies” area, you can see the “manage_categories” option.
-
----
-
-## Capabilities for the TaxoPress Admin Area
-
-There are two permissions that can give users access to the TaxoPress admin area:
-
-- ```
-simple_tags
-```
-
-: this will give access to the “Settings” screen.
-- ```
-admin_simple_tags
-```
-
-: this will give access to the screens such as “Taxonomies”, “Related Posts”, “Mass Edit Terms”, “Manage Terms”, and more.
-
-You can use these to customize user access to the TaxoPress plugin screens with the PublishPress Capabilities plugin.
-
-- Go to the “Capabilities” screen.
-- Choose the user role you want to edit in the top-left corner.
-- In the “TaxoPress” area, you can see the two TaxoPress permissions:
-
-If you give both these permissions to a user in [the Subscriber role](https://publishpress.com/knowledge-base/subscriber/), this next screenshot shows what they will see after logging in.
-
-These permissions are automatically added to your site by the 
-```
-/inc/class.admin.php
-```
-
- file. These permissions are automatically removed when you uninstall the plugin. This is done by the 
-```
-uninstall.php
-```
-
- file.
-
----
-
 ## Feature Overview (Pro Version)
 
 **Source:** [https://taxopress.com/docs/feature-overview/](https://taxopress.com/docs/feature-overview/)

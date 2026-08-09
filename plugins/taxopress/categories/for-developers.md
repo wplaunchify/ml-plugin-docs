@@ -239,7 +239,29 @@ This guide has advice on how to use the Tag Groups plugin inside the PHP templat
 You can use the native WordPress function [do_shortcode](https://developer.wordpress.org/reference/functions/do_shortcode/) to execute a shortcode in your plugin or theme. Please note that this doesn’t automatically load the scripts that are needed for some features. Make sure that you activate “Always load scripts” in the Tag Groups settings.
 
 ```
-echo do_shortcode('[tag_groups_cloud include="6"]');
+echo do_shortcode('
+
+  (function tagGroupsInitTabs(retries) {
+    if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a781c4126579', {"active":false}, true);
+      return;
+    }
+
+    if (retries > 0) {
+      setTimeout(function() {
+        tagGroupsInitTabs(retries - 1);
+      }, 100);
+      return;
+    }
+
+    var element = document.getElementById('tag-groups-cloud-tabs-6a781c4126579');
+    if (element) {
+      element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
+    }
+    console.log('[Tag Groups] Error: jQuery UI Tabs is missing!');
+  })(50);
+
+');
 ```
 
 ---

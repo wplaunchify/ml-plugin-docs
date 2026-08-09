@@ -15,7 +15,11 @@ This input field can be used for text search. This guide shows you how to use an
 ## Shortcode
 
 ```
-[tag_groups_tpf_text_search]
+if ( typeof tagGroupsSeparateTextSearch === 'undefined' ) {
+  var tagGroupsSeparateTextSearch = 2;
+} else {
+  tagGroupsSeparateTextSearch = Math.max( 2, tagGroupsSeparateTextSearch );
+}
 ```
 
 ---
@@ -23,7 +27,11 @@ This input field can be used for text search. This guide shows you how to use an
 ## Example
 
 ```
-[tag_groups_tpf_text_search placeholder="Type here"]
+if ( typeof tagGroupsSeparateTextSearch === 'undefined' ) {
+  var tagGroupsSeparateTextSearch = 2;
+} else {
+  tagGroupsSeparateTextSearch = Math.max( 2, tagGroupsSeparateTextSearch );
+}
 ```
 
 ---
@@ -87,7 +95,7 @@ This button resets the menu of the Toggle Post Filter.
 ## Shortcode
 
 ```
-[tag_groups_tpf_reset]
+Reset filter
 ```
 
 ---
@@ -95,7 +103,7 @@ This button resets the menu of the Toggle Post Filter.
 ## Example
 
 ```
-[tag_groups_tpf_reset theme="light"]
+Reset filter
 ```
 
 ---
@@ -906,7 +914,38 @@ This menu allows your visitors to change the sort order of posts that are displa
 ## Shortcode
 
 ```
-[tag_groups_tpf_order_menu]
+Order by:
+  
+      
+        date    
+            
+        author    
+            
+        title    
+          
+
+  Order:
+  
+      
+            ↓    
+                        
+            ↑    
+                      
+
+      
+      if (typeof jQuery !== 'undefined' && typeof SumoSelect !== 'undefined') {
+        jQuery('.tg_tpf_orderby_select,.tg_tpf_order_select').SumoSelect();
+      } else {
+        jQuery(document).ready(function(){
+          setTimeout(function(){jQuery('.tg_tpf_orderby_select,.tg_tpf_order_select').SumoSelect();}, 500);
+        });
+      }
+    
+        
+  
+    .SumoSelect {
+      width: auto;
+    }
 ```
 
 ---
@@ -914,7 +953,38 @@ This menu allows your visitors to change the sort order of posts that are displa
 ## Example
 
 ```
-[tag_groups_tpf_order_menu orderby_text="Sort order" order_text="Up or down"]
+Sort order
+  
+      
+        date    
+            
+        author    
+            
+        title    
+          
+
+  Up or down
+  
+      
+            ↓    
+                        
+            ↑    
+                      
+
+      
+      if (typeof jQuery !== 'undefined' && typeof SumoSelect !== 'undefined') {
+        jQuery('.tg_tpf_orderby_select,.tg_tpf_order_select').SumoSelect();
+      } else {
+        jQuery(document).ready(function(){
+          setTimeout(function(){jQuery('.tg_tpf_orderby_select,.tg_tpf_order_select').SumoSelect();}, 500);
+        });
+      }
+    
+        
+  
+    .SumoSelect {
+      width: auto;
+    }
 ```
 
 ---
@@ -1042,7 +1112,7 @@ This button opens the menu of the Toggle Post Filter, if you you selected the le
 ## Shortcode
 
 ```
-[tag_groups_tpf_slider_button]
+Filter
 ```
 
 ---
@@ -1050,7 +1120,7 @@ This button opens the menu of the Toggle Post Filter, if you you selected the le
 ## Example
 
 ```
-[tag_groups_tpf_slider_button theme="light"]
+Filter
 ```
 
 ---
@@ -1385,7 +1455,7 @@ In the Gutenberg block you select the tags in “Preset tags”.
 In the shortcode for the menu part you enter:
 
 ```
-[[tag_groups_dpf_toggle_menu preset_tags="tag-slug-1,tag-slug-2"]]
+[tag_groups_dpf_toggle_menu preset_tags="tag-slug-1,tag-slug-2"]
 ```
 
 Or you add the URL-Parameter to the URL of the page where you show the Toggle Post Filter:
@@ -1439,45 +1509,836 @@ This guide shows you how to use and customize all the shortcodes for the Toggle 
 This feature consists of several shortcodes that you can place at different locations of the page, including widgets. The main parts create the menu and the body (for the posts). [Click here for more on the menu shortcode](https://taxopress.com/docs/toggle-post-filter-menu-shortcode-parameters/) and [click here for more on the posts shortcode](https://taxopress.com/docs/toggle-post-filter-posts-body-shortcode-parameters/).
 
 ```
-[tag_groups_tpf_menu]
+function tagGroupsTPFInit(){
+    if ( tagGroupsTPFInitDone ) {
+      return;
+    }
+
+    const options = {
+      accordion: 0,
+      ajaxLink: 'https://taxopress.com/wp-admin/admin-ajax.php',
+      cacheKey: 'feec22e63d00be48f7b634d25ffea738',
+      cachingTime: 10,
+      debug: false,
+      defaultShowPosts: false,
+      displayAmount: 2,
+      divId: 'tg_filter_box_toggle',
+      groupIds: [0],
+      isSlider: false,
+      legacyMenu: false,
+      messageAmountPl: '{count} posts found.',
+      messageAmountSg: '1 post found.',
+      messageGoBack: 'Go back',
+      messageLoadMore: 'Load more',
+      messageNothingFound: 'Nothing found.',
+      operator: 'IN',
+      order: 'DESC',
+      orderBy: '',
+      pager: 0,
+      persistentFilter: 30,
+      postsPerPage: 5,
+      postsPlaceholder: 'Please select a tag.',
+      presetTermSlugs: [],
+      staticTaxonomy: '',
+      staticTerms: '',
+      taxonomy: 'post_tag',
+      template: ``,
+      textSearch: 0,
+      timeout: 1000,
+      transition: 'fade',
+    };
+
+    if (
+      typeof TagGroupsTogglePostFilter !== 'undefined'
+      && jQuery !== 'undefined'
+      && (!options.accordion || typeof jQuery.ui.accordion !== 'undefined')
+      && (typeof tagGroupsTPFBodyOptions !== 'undefined' &&typeof tagGroupsTPFBodyOptions.layout !== 'undefined' && !(tagGroupsTPFBodyOptions.layout === 'masonry' || tagGroupsTPFBodyOptions.layout === 'masonry-small' || tagGroupsTPFBodyOptions.layout === 'masonry-large') || typeof jQuery.fn.masonry !== 'undefined' && typeof jQuery.fn.imagesLoaded !== 'undefined')
+      && (options.displayAmount < 2 || typeof jQuery.fn.jnoty !== 'undefined')
+    ) {
+      TagGroupsTogglePostFilter.load(options);
+    } else {
+      jQuery(document).ready(function(){
+        setTimeout(function(){TagGroupsTogglePostFilter.load(options)}, 500);
+      });
+    }
+    tagGroupsTPFInitDone = true;
+  }
+
+  
+                  
+        not assigned
+        
+                      
+              
+                WordPress Search
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                WordPress Categories
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                WordPress API
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                WooCommerce Product Tags
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                WooCommerce Product Categories
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                WooCommerce
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Understanding Content
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Uncategorized category
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Terms Screen
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Terms for Current Post
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Terms Display
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Term Slugs
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Term Order
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Term Meta
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Term Description
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                TaxoPress Pro
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                TaxoPress
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Taxonomy Archives
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Tags
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Tag Groups
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Tag Cloud
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Synonyms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Suggest Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Simple Tags
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Schedule Auto Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Rename Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Remove Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Related Posts
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Private Taxonomies
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Posts Screen
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Post List
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Post Filter
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Parent Categories
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                OpenAI
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Open Calais
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Merge Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Media Tags
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Manage Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Linked Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                IBM Watson
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Hidden Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Gutenberg
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Display
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Delete Unused Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Delete Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                default category
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Dandelion API
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Custom URL
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Custom Taxonomies
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Current Post
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Create Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Categories
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                bbPress Topics
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Auto Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Auto Links
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Artificial Intelligence
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Alphabetical Tag Index
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Alphabetical Tag Cloud
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Alphabetical List
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Add Terms
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                            
+              
+                Accordion Tag Cloud
+              
+              
+                
+                  
+                  
+                
+              
+            
+                                        
+      
+          
+
+    var tagGroupsTPFInitDone = false;
+
+    jQuery(document).ready(function() {
+        tagGroupsTPFInit();
+        jQuery('.tag_groups_dpf_toggle_body').css('min-height', jQuery('#tg_filter_box_toggle').height());
+    });
+
+    window.addEventListener( 'pageshow', tagGroupsTPFInit, false );
 ```
 
 ```
-[tag_groups_tpf_body]
+var tagGroupsTPFBodyOptions = {
+    defaultImageSrc: '',
+    defaultShowPosts: false,
+    displayAmount: 2,
+    layout: 'classic',
+    legacyBody: false,
+    messageAmountPl: '{count} posts found.',
+    messageAmountSg: '1 post found.',
+    messageGoBack: 'Go back',
+    messageLoadMore: 'Load more',
+    messageNothingFound: 'Nothing found.',
+    order: 'DESC',
+    orderBy: '',
+    pager: 0,
+    pagerPosition: 'bottom',
+    postsPerPage: 5,
+    postsPlaceholder: 'Please select a tag.',
+    template: ``,
+    transition: 'fade',
+  }
 ```
 
 There are also optional shortcodes:
 
 1. A field for messages that tell you how many posts were found. You can omit it and use only the notes that appear for some seconds in the top right corner.
 
-```
-[tag_groups_tpf_messages]
-```
-
 This shortcode doesn’t have any parameters.
 
 2. [A reset button](https://taxopress.com/docs/toggle-post-filter-reset-button-shortcode-parameters/):
 
 ```
-[tag_groups_tpf_reset]
+Reset filter
 ```
 
 3. [A menu to select the sort order](https://taxopress.com/docs/toggle-post-filter-order-menu-shortcode-parameters/):
 
 ```
-[tag_groups_tpf_order_menu]
+Order by:
+  
+      
+        date    
+            
+        author    
+            
+        title    
+          
+
+  Order:
+  
+      
+            ↓    
+                        
+            ↑    
+                      
+
+      
+      if (typeof jQuery !== 'undefined' && typeof SumoSelect !== 'undefined') {
+        jQuery('.tg_tpf_orderby_select,.tg_tpf_order_select').SumoSelect();
+      } else {
+        jQuery(document).ready(function(){
+          setTimeout(function(){jQuery('.tg_tpf_orderby_select,.tg_tpf_order_select').SumoSelect();}, 500);
+        });
+      }
+    
+        
+  
+    .SumoSelect {
+      width: auto;
+    }
 ```
 
 4. [A button to open the slider menu](https://taxopress.com/docs/toggle-post-filter-slider-button-shortcode-parameters/):
 
 ```
-[tag_groups_tpf_slider_button]
+Filter
 ```
 
 5. [An additional text search field](https://taxopress.com/docs/toggle-post-filter-text-search-shortcode-parameters/).
 
 ```
-[tag_groups_tpf_text_search]
+if ( typeof tagGroupsSeparateTextSearch === 'undefined' ) {
+  var tagGroupsSeparateTextSearch = 2;
+} else {
+  tagGroupsSeparateTextSearch = Math.max( 2, tagGroupsSeparateTextSearch );
+}
 ```
 
 Note: Old shortcodes with the pattern tg_dpf_toggle_… still remain functional.
@@ -1489,15 +2350,461 @@ Note: Old shortcodes with the pattern tg_dpf_toggle_… still remain functional.
 ```
 Here comes the filter part:
 
-[tag_groups_tpf_menu caching_time=60 display_amount=2 pager=1 persistent_filter=60 theme="dark" transition=fade operator="IN AND" layout="wide_tags"]
+  function tagGroupsTPFInit(){
+    if ( tagGroupsTPFInitDone ) {
+      return;
+    }
+
+    const options = {
+      accordion: 0,
+      ajaxLink: 'https://taxopress.com/wp-admin/admin-ajax.php',
+      cacheKey: '69929e51aed6b7ec97492d6e7fea0299',
+      cachingTime: 60,
+      debug: false,
+      defaultShowPosts: false,
+      displayAmount: 2,
+      divId: 'tg_filter_box_toggle',
+      groupIds: [0],
+      isSlider: false,
+      legacyMenu: false,
+      messageAmountPl: '{count} posts found.',
+      messageAmountSg: '1 post found.',
+      messageGoBack: 'Go back',
+      messageLoadMore: 'Load more',
+      messageNothingFound: 'Nothing found.',
+      operator: 'IN AND',
+      order: 'DESC',
+      orderBy: '',
+      pager: 1,
+      persistentFilter: 60,
+      postsPerPage: 5,
+      postsPlaceholder: 'Please select a tag.',
+      presetTermSlugs: [],
+      staticTaxonomy: '',
+      staticTerms: '',
+      taxonomy: 'post_tag',
+      template: ``,
+      textSearch: 0,
+      timeout: 1000,
+      transition: 'fade',
+    };
+
+    if (
+      typeof TagGroupsTogglePostFilter !== 'undefined'
+      && jQuery !== 'undefined'
+      && (!options.accordion || typeof jQuery.ui.accordion !== 'undefined')
+      && (typeof tagGroupsTPFBodyOptions !== 'undefined' &&typeof tagGroupsTPFBodyOptions.layout !== 'undefined' && !(tagGroupsTPFBodyOptions.layout === 'masonry' || tagGroupsTPFBodyOptions.layout === 'masonry-small' || tagGroupsTPFBodyOptions.layout === 'masonry-large') || typeof jQuery.fn.masonry !== 'undefined' && typeof jQuery.fn.imagesLoaded !== 'undefined')
+      && (options.displayAmount < 2 || typeof jQuery.fn.jnoty !== 'undefined')
+    ) {
+      TagGroupsTogglePostFilter.load(options);
+    } else {
+      jQuery(document).ready(function(){
+        setTimeout(function(){TagGroupsTogglePostFilter.load(options)}, 500);
+      });
+    }
+    tagGroupsTPFInitDone = true;
+  }
+
+  
+                  
+        not assigned
+        
+        
+                      
+            
+                WordPress Search            
+            
+            
+                                            
+            
+                WordPress Categories            
+            
+            
+                                            
+            
+                WordPress API            
+            
+            
+                                            
+            
+                WooCommerce Product Tags            
+            
+            
+                                            
+            
+                WooCommerce Product Categories            
+            
+            
+                                            
+            
+                WooCommerce            
+            
+            
+                                            
+            
+                Understanding Content            
+            
+            
+                                            
+            
+                Uncategorized category            
+            
+            
+                                            
+            
+                Terms Screen            
+            
+            
+                                            
+            
+                Terms for Current Post            
+            
+            
+                                            
+            
+                Terms Display            
+            
+            
+                                            
+            
+                Term Slugs            
+            
+            
+                                            
+            
+                Term Order            
+            
+            
+                                            
+            
+                Term Meta            
+            
+            
+                                            
+            
+                Term Description            
+            
+            
+                                            
+            
+                TaxoPress Pro            
+            
+            
+                                            
+            
+                TaxoPress            
+            
+            
+                                            
+            
+                Taxonomy Archives            
+            
+            
+                                            
+            
+                Tags            
+            
+            
+                                            
+            
+                Tag Groups            
+            
+            
+                                            
+            
+                Tag Cloud            
+            
+            
+                                            
+            
+                Synonyms            
+            
+            
+                                            
+            
+                Suggest Terms            
+            
+            
+                                            
+            
+                Simple Tags            
+            
+            
+                                            
+            
+                Schedule Auto Terms            
+            
+            
+                                            
+            
+                Rename Terms            
+            
+            
+                                            
+            
+                Remove Terms            
+            
+            
+                                            
+            
+                Related Posts            
+            
+            
+                                            
+            
+                Private Taxonomies            
+            
+            
+                                            
+            
+                Posts Screen            
+            
+            
+                                            
+            
+                Post List            
+            
+            
+                                            
+            
+                Post Filter            
+            
+            
+                                            
+            
+                Parent Categories            
+            
+            
+                                            
+            
+                OpenAI            
+            
+            
+                                            
+            
+                Open Calais            
+            
+            
+                                            
+            
+                Merge Terms            
+            
+            
+                                            
+            
+                Media Tags            
+            
+            
+                                            
+            
+                Manage Terms            
+            
+            
+                                            
+            
+                Linked Terms            
+            
+            
+                                            
+            
+                IBM Watson            
+            
+            
+                                            
+            
+                Hidden Terms            
+            
+            
+                                            
+            
+                Gutenberg            
+            
+            
+                                            
+            
+                Display            
+            
+            
+                                            
+            
+                Delete Unused Terms            
+            
+            
+                                            
+            
+                Delete Terms            
+            
+            
+                                            
+            
+                default category            
+            
+            
+                                            
+            
+                Dandelion API            
+            
+            
+                                            
+            
+                Custom URL            
+            
+            
+                                            
+            
+                Custom Taxonomies            
+            
+            
+                                            
+            
+                Current Post            
+            
+            
+                                            
+            
+                Create Terms            
+            
+            
+                                            
+            
+                Categories            
+            
+            
+                                            
+            
+                bbPress Topics            
+            
+            
+                                            
+            
+                Auto Terms            
+            
+            
+                                            
+            
+                Auto Links            
+            
+            
+                                            
+            
+                Artificial Intelligence            
+            
+            
+                                            
+            
+                Alphabetical Tag Index            
+            
+            
+                                            
+            
+                Alphabetical Tag Cloud            
+            
+            
+                                            
+            
+                Alphabetical List            
+            
+            
+                                            
+            
+                Add Terms            
+            
+            
+                                            
+            
+                Accordion Tag Cloud            
+            
+            
+                                          
+        
+      
+            
+  
+
+  jQuery('.tg_group_dpf_toggle_term').on('change', function(){
+      tagGroupsTPFSetTagState(this);
+      return false;
+    });
+
+    function tagGroupsTPFAllTagsSetTagState() {
+      jQuery('.tg_group_dpf_toggle_term').each(function(){
+        tagGroupsTPFSetTagState(this);
+    });
+    }
+
+  function tagGroupsTPFSetTagState(element) {
+    var termId = jQuery(element).attr('data-termid');
+    var groupId = jQuery(element).attr('data-groupid');
+    if (jQuery(element).prop('checked')) {
+        jQuery('.tag_groups_tpf_tag[data-termid="'+termId+'"][data-groupid="'+groupId+'"]').addClass('tag_groups_tpf_tag_selected');
+      } else {
+        jQuery('.tag_groups_tpf_tag[data-termid="'+termId+'"][data-groupid="'+groupId+'"]').removeClass('tag_groups_tpf_tag_selected');
+      }
+  }
+
+  // window.addEventListener('pageshow', tagGroupsTPFAllTagsSetTagState, false); // for Firefox when returning to a page
+
+.tag_groups_tpf_tag {
+  background: #ddd;
+}
+.tag_groups_tpf_tag:before {
+  border-color: transparent #ddd transparent transparent;
+}
+.tag_groups_tpf_tag_selected {
+  background: #e05500;
+  color: #fff;
+}
+.tag_groups_tpf_tag_selected:before {
+  border-color: transparent #e05500 transparent transparent;
+}
+.tag_groups_tpf_tag_selected:after {
+  -moz-box-shadow: -1px -1px 2px #333;
+  -webkit-box-shadow: -1px -1px 2px #333;
+  box-shadow: -1px -1px 2px #333;
+}
+
+    var tagGroupsTPFInitDone = false;
+
+    jQuery(document).ready( tagGroupsTPFInit );
+
+    window.addEventListener( 'pageshow', tagGroupsTPFInit, false );
 
 How many posts we found:
 
-[tag_groups_tpf_messages]
+  
+    
+    
 
 And the posts go to a place that is sufficiently large:
 
-[tag_groups_tpf_body theme="dark" layout="masonry"]
+  
+  
+  
+  
+  
+  
+  
+
+  var tagGroupsTPFBodyOptions = {
+    defaultImageSrc: '',
+    defaultShowPosts: false,
+    displayAmount: 2,
+    layout: 'masonry',
+    legacyBody: false,
+    messageAmountPl: '{count} posts found.',
+    messageAmountSg: '1 post found.',
+    messageGoBack: 'Go back',
+    messageLoadMore: 'Load more',
+    messageNothingFound: 'Nothing found.',
+    order: 'DESC',
+    orderBy: '',
+    pager: 0,
+    pagerPosition: 'bottom',
+    postsPerPage: 5,
+    postsPlaceholder: 'Please select a tag.',
+    template: ``,
+    transition: 'fade',
+  }
 ```
 
 ---

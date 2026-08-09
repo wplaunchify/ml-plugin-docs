@@ -110,7 +110,25 @@ Tag Groups Pro comes with a few standard themes that you can use to give some sh
 Example of a shortcode:
 
 ```
-[tag_groups_cloud div_class="tag-groups-theme-green"]
+(function tagGroupsInitTabs(retries) {
+    if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a781c3e7c576', {"active":false}, true);
+      return;
+    }
+
+    if (retries > 0) {
+      setTimeout(function() {
+        tagGroupsInitTabs(retries - 1);
+      }, 100);
+      return;
+    }
+
+    var element = document.getElementById('tag-groups-cloud-tabs-6a781c3e7c576');
+    if (element) {
+      element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
+    }
+    console.log('[Tag Groups] Error: jQuery UI Tabs is missing!');
+  })(50);
 ```
 
 The corresponding parameter is also available in the Gutenberg blocks.
@@ -154,7 +172,91 @@ cm-shuffle-box-theme-blue
 Here’s an example of this theme with shortcode:
 
 ```
-[tag_groups_shuffle_box div_class="cm-shuffle-box-theme-blue"]
+all groups
+not assigned  
+    Accordion Tag Cloud
+Add Terms
+Alphabetical List
+Alphabetical Tag Cloud
+Alphabetical Tag Index
+Artificial Intelligence
+Auto Links
+Auto Terms
+bbPress Topics
+Categories
+Create Terms
+Current Post
+Custom Taxonomies
+Custom URL
+Dandelion API
+default category
+Delete Terms
+Delete Unused Terms
+Display
+Gutenberg
+Hidden Terms
+IBM Watson
+Linked Terms
+Manage Terms
+Media Tags
+Merge Terms
+Open Calais
+OpenAI
+Parent Categories
+Post Filter
+Post List
+Posts Screen
+Private Taxonomies
+Related Posts
+Remove Terms
+Rename Terms
+Schedule Auto Terms
+Simple Tags
+Suggest Terms
+Synonyms
+Tag Cloud
+Tag Groups
+Tags
+Taxonomy Archives
+TaxoPress
+TaxoPress Pro
+Term Description
+Term Meta
+Term Order
+Term Slugs
+Terms Display
+Terms for Current Post
+Terms Screen
+Uncategorized category
+Understanding Content
+WooCommerce
+WooCommerce Product Categories
+WooCommerce Product Tags
+WordPress API
+WordPress Categories
+WordPress Search  
+
+  (function(){
+    const options = {
+      divIdInner: 'tag-groups-shuffle-box-6a781c3e7d2f7_inner',
+      addPremiumFilter: false,
+      timeoutMilliSecs: 100,
+      initialGroup: -1,
+      layoutMode: 'fitRows'
+    };
+
+    if (typeof TagGroupsShuffleBox !== 'undefined' && jQuery !== 'undefined') {
+            const obj = Object.create( TagGroupsShuffleBox );
+      obj.init(options);
+    } else {
+      jQuery(document).ready(function(){
+        setTimeout(function(){
+          const obj = Object.create( TagGroupsShuffleBox );
+          obj.init(options);
+        }, 500);
+      });
+    }
+})()
 ```
 
 [Click here for more details on Shuffle Box themes](https://taxopress.com/docs/custom-color-scheme-shuffle-box/).

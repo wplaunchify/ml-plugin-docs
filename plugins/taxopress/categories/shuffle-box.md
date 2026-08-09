@@ -322,7 +322,91 @@ This guide shows you how to use and customize the shortcode for the Shuffle Box 
 ## Shortcode
 
 ```
-[tag_groups_shuffle_box]
+all groups
+not assigned  
+    Accordion Tag Cloud
+Add Terms
+Alphabetical List
+Alphabetical Tag Cloud
+Alphabetical Tag Index
+Artificial Intelligence
+Auto Links
+Auto Terms
+bbPress Topics
+Categories
+Create Terms
+Current Post
+Custom Taxonomies
+Custom URL
+Dandelion API
+default category
+Delete Terms
+Delete Unused Terms
+Display
+Gutenberg
+Hidden Terms
+IBM Watson
+Linked Terms
+Manage Terms
+Media Tags
+Merge Terms
+Open Calais
+OpenAI
+Parent Categories
+Post Filter
+Post List
+Posts Screen
+Private Taxonomies
+Related Posts
+Remove Terms
+Rename Terms
+Schedule Auto Terms
+Simple Tags
+Suggest Terms
+Synonyms
+Tag Cloud
+Tag Groups
+Tags
+Taxonomy Archives
+TaxoPress
+TaxoPress Pro
+Term Description
+Term Meta
+Term Order
+Term Slugs
+Terms Display
+Terms for Current Post
+Terms Screen
+Uncategorized category
+Understanding Content
+WooCommerce
+WooCommerce Product Categories
+WooCommerce Product Tags
+WordPress API
+WordPress Categories
+WordPress Search  
+
+  (function(){
+    const options = {
+      divIdInner: 'tag-groups-shuffle-box-6a781c3e5c245_inner',
+      addPremiumFilter: false,
+      timeoutMilliSecs: 100,
+      initialGroup: -1,
+      layoutMode: 'fitRows'
+    };
+
+    if (typeof TagGroupsShuffleBox !== 'undefined' && jQuery !== 'undefined') {
+            const obj = Object.create( TagGroupsShuffleBox );
+      obj.init(options);
+    } else {
+      jQuery(document).ready(function(){
+        setTimeout(function(){
+          const obj = Object.create( TagGroupsShuffleBox );
+          obj.init(options);
+        }, 500);
+      });
+    }
+})()
 ```
 
 ---
@@ -330,7 +414,31 @@ This guide shows you how to use and customize the shortcode for the Shuffle Box 
 ## Example
 
 ```
-[tag_groups_shuffle_box taxonomy=product_tag smallest=16 largest=16 placeholder="type here"]
+all groups
+not assigned  
+      
+
+  (function(){
+    const options = {
+      divIdInner: 'tag-groups-shuffle-box-6a781c3e62003_inner',
+      addPremiumFilter: false,
+      timeoutMilliSecs: 100,
+      initialGroup: -1,
+      layoutMode: 'fitRows'
+    };
+
+    if (typeof TagGroupsShuffleBox !== 'undefined' && jQuery !== 'undefined') {
+            const obj = Object.create( TagGroupsShuffleBox );
+      obj.init(options);
+    } else {
+      jQuery(document).ready(function(){
+        setTimeout(function(){
+          const obj = Object.create( TagGroupsShuffleBox );
+          obj.init(options);
+        }, 500);
+      });
+    }
+})()
 ```
 
 ---

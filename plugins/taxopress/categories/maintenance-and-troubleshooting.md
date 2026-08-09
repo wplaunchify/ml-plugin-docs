@@ -118,7 +118,25 @@ Try first if it helps to turn off the delay for revealing the tag cloud. In the 
 Example for a shortcode
 
 ```
-[tag_groups_cloud ... delay=0]
+(function tagGroupsInitTabs(retries) {
+    if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a781c38442b3', {"active":false}, false);
+      return;
+    }
+
+    if (retries > 0) {
+      setTimeout(function() {
+        tagGroupsInitTabs(retries - 1);
+      }, 100);
+      return;
+    }
+
+    var element = document.getElementById('tag-groups-cloud-tabs-6a781c38442b3');
+    if (element) {
+      element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
+    }
+    console.log('[Tag Groups] Error: jQuery UI Tabs is missing!');
+  })(50);
 ```
 
 ## Find out what causes the error

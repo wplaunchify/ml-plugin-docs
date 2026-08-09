@@ -42,7 +42,25 @@ Then you only need to use **orderby=term_order** (or **term_orderby=term_order**
 Example:
 
 ```
-[tag_groups_cloud orderby=term_order]
+(function tagGroupsInitTabs(retries) {
+    if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a781c374f44d', {"active":false}, true);
+      return;
+    }
+
+    if (retries > 0) {
+      setTimeout(function() {
+        tagGroupsInitTabs(retries - 1);
+      }, 100);
+      return;
+    }
+
+    var element = document.getElementById('tag-groups-cloud-tabs-6a781c374f44d');
+    if (element) {
+      element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
+    }
+    console.log('[Tag Groups] Error: jQuery UI Tabs is missing!');
+  })(50);
 ```
 
 In the Gutenberg block go to “Order tags by” and select “Term Order”:
@@ -53,53 +71,6 @@ In the Gutenberg block go to “Order tags by” and select “Term Order”:
 
 - Tag Groups can use the *term_order* even after the 3rd-party plugin has been deactivated. Just make sure it doesn’t remove its data when you uninstall it. It depends on the particular plugin how they handle that.
 - If for some reason you cannot use a 3rd-party plugin or it cannot extend the database tables, there is a fallback solution: Write the custom order as numbers into the description field of the tags. Then order them by description. Don’t forget to use custom_title=”” in the tag clouds to hide the description, which by default is displayed as “tooltip”.
-
----
-
-## How to Make the Alphabetical Tag Index or the Tag List Responsive?
-
-**Source:** [https://taxopress.com/docs/alphabetical-tag-index-tag-list-responsive/](https://taxopress.com/docs/alphabetical-tag-index-tag-list-responsive/)
-
-The Alphabetical Tag Index and Tag List features in the Tag Group plugin will create lists in columns. You can use the shortcode parameter column_count or the corresponding block option to set the number of columns.
-
-It is also possible to make these displays responsive, that means that the number of columns adjusts to the screen size of the viewer.
-
-You can achieve this with a few steps.
-
-1. In the shortcode set the column count to zero: column_count=0
-
-2. Use div_class to set the class name to “responsive-tag-groups-list”. Now the shortcode looks like that:
-
-```
-[ ... column_count=0 div_class="responsive-tag-groups-list"]
-```
-
-3. Add to the CSS, for example in the WordPress customizer (We use the colored text only for the explanations below):
-
-```
-@media only screen and (max-width: 700px) {
-  .responsive-tag-groups-list {
-    column-count: 1;
-    /** text-align: center; **/ /** optionally uncomment the code on the left to align tags to the center **/
-  }
-}
-@media only screen and (min-width: 701px) and (max-width: 1000px) {
-  .responsive-tag-groups-list {
-    column-count: 2;
-    column-gap: 10px;
-  }
-}
-@media only screen and (min-width: 1001px) {
-  .responsive-tag-groups-list {
-    column-count: 3;
-    column-gap: 10px;
-  }
-}
-```
-
-This CSS creates three different styles: one column for screen (viewport) sizesup to 700px, two columns for screen sizes from 701 to 1000px and three columns for screen sizes above 1000px.
-
-Feel free to use your own values.
 
 ---
 

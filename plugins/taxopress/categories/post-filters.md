@@ -12,7 +12,29 @@ If you are using the Post Filter option in the Tag Groups plugin, it is possible
 
 Install the plugin [Simple Custom Post Order](https://wordpress.org/plugins/simple-custom-post-order/) and use it sort your posts.
 
-You will need to use the shortcode of the body (posts) part of the Toggle Post Filter which is [tag_groups_tpf_body].
+You will need to use the shortcode of the body (posts) part of the Toggle Post Filter which is
+
+var tagGroupsTPFBodyOptions = {
+    defaultImageSrc: '',
+    defaultShowPosts: false,
+    displayAmount: 2,
+    layout: 'classic',
+    legacyBody: false,
+    messageAmountPl: '{count} posts found.',
+    messageAmountSg: '1 post found.',
+    messageGoBack: 'Go back',
+    messageLoadMore: 'Load more',
+    messageNothingFound: 'Nothing found.',
+    order: 'DESC',
+    orderBy: '',
+    pager: 0,
+    pagerPosition: 'bottom',
+    postsPerPage: 5,
+    postsPlaceholder: 'Please select a tag.',
+    template: ``,
+    transition: 'fade',
+  }
+. 
 
 If you are using a Gutenberg block, simply [transform it to a shortcode](https://taxopress.com/docs/how-can-i-customize-a-gutenberg-block-beyond-the-given-options/).
 
