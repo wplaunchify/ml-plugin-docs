@@ -70,7 +70,11 @@ Some other plugins also use their custom notifications which overwrite the core 
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/b8a00dbec193eb6c474fa1dfbaf460977ffa713ed1ce1473326a2f0e4d1daf7a?s=60&d=retro&r=g)### Perfect
+	![](https://secure.gravatar.com/avatar/e0538d7815e60c23f2fbd751a23f3fa98e3aeb727eccbefc58d25d646cb03b07?s=60&d=retro&r=g)### Useful plugin
+							[matthew](https://profiles.wordpress.org/zonetuke/)
+								August 6, 2026
+						Just what I needed. Thank you
+							![](https://secure.gravatar.com/avatar/b8a00dbec193eb6c474fa1dfbaf460977ffa713ed1ce1473326a2f0e4d1daf7a?s=60&d=retro&r=g)### Perfect
 							[thomasobrien](https://profiles.wordpress.org/thomasobrien/)
 								October 24, 2024
 						thanks a lot
@@ -93,10 +97,6 @@ Thanks for its development.
 								June 23, 2023
 																1 reply
 						This plugin no longer works and seems to have been abandoned. Within the past half year, users were complaining they weren’t receiving the password reset emails. Sure enough, we found it was this plugin preventing password reset emails from going out. Disabled it and all is working as should now.
-							![](https://secure.gravatar.com/avatar/58f21f24bac3a93827752d959c7e0540626c39a48890678826419d27362c2878?s=60&d=retro&r=g)### Works without any problem
-							[samtr](https://profiles.wordpress.org/samtr/)
-								May 23, 2023
-						Works without any problem
 
 		[Read all 54 reviews](https://wordpress.org/support/plugin/manage-notification-emails/reviews/)
 
