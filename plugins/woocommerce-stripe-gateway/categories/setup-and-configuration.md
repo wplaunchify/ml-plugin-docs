@@ -741,7 +741,15 @@ The **Layout** option controls how various payment methods are shown in the Opti
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
+
+### Stripe Tax
+
+	
+			by [Stripe](https://woocommerce.com/vendor/stripe)
+
+Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
 ### Klarna
 
@@ -749,14 +757,6 @@ The **Layout** option controls how various payment methods are shown in the Opti
 			by [Klarna](https://woocommerce.com/vendor/klarna)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
-
-### WooCommerce Tax
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
 
 ---
 
