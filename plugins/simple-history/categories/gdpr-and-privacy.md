@@ -35,43 +35,17 @@ Some key GDPR-related points about Simple History:
 - The plugin uses no [local storage](https://en.wikipedia.org/wiki/Web_storage)
 - The plugin can store anonymized [IP addresses](https://en.wikipedia.org/wiki/IP_address)
 
-### What Data is Stored
+### What is logged, and where it lives
 
-Simple History logs and stores the following types of information:
+Simple History logs user actions such as logins, post edits and settings changes, along with timestamps, user IDs, usernames, email addresses, IP addresses and browser information. Under the GDPR some of this counts as personal data, meaning information relating to an identified or identifiable person.
 
-- User actions (logins, post edits, setting changes, etc.)
-- Timestamps of actions
-- User IDs and usernames
-- User emails
-- IP addresses (can be anonymized – see below)
-- Browser and device information
+All of it is stored directly in your own WordPress database, in two custom tables. It is not sent to us, and we have no access to it — which means you keep complete control over it, and you are the data controller for it.
 
-It’s important to note that the plugin logs information that can be considered “personal data” under GDPR, meaning information relating to an identified or identifiable natural person. This includes usernames and email addresses in addition to other logged actions.
-
-### Where the Data is Stored
-
-All logged information is stored directly in your WordPress database, specifically in these custom tables:
-
-- ```
-{$wpdb->prefix}simple_history
-```
-
- – Stores the main log entries
-- ```
-{$wpdb->prefix}simple_history_contexts
-```
-
- – Stores additional context information
-
-This means:
-
-- The data never leaves your server
-- No data is sent to external services
-- You maintain complete control over the stored information
+**For the full detail** — the exact table names, the default retention period, every connection the plugin can make to a third party, and what data we hold about you as a customer — see our [privacy policy](https://simple-history.com/privacy/). We keep those facts in one place so they can’t drift out of date.
 
 ### Data Retention
 
-By default, Simple History keeps log entries for 60 days, after which they are automatically deleted. You can [adjust this retention period](https://simple-history.com/support/change-number-of-days-to-keep-log/) to set it to any number of days.
+Log entries are deleted automatically after a set number of days. Keeping logs only as long as you actually need them is good practice under the GDPR’s data minimisation principle, so it’s worth reviewing this setting — you can [adjust the retention period](https://simple-history.com/support/change-number-of-days-to-keep-log/) to any number of days.
 
 ### IP Address Anonymization
 
