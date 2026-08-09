@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-09T21:41:47.400Z",
+  "last_updated": "2026-08-09T21:52:45.912Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2524,7 +2524,7 @@
       "slug": "simple-seo",
       "name": "Simple SEO",
       "documentation_url": "https://wordpress.org/plugins/simple-seo/",
-      "last_scraped": "2026-08-02T22:01:53.390Z",
+      "last_scraped": "2026-08-09T21:52:45.912Z",
       "page_count": 2,
       "categories": [
         "advanced",
