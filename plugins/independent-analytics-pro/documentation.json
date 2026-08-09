@@ -1,7 +1,7 @@
 {
   "plugin_slug": "independent-analytics-pro",
   "plugin_name": "Independent Analytics Pro",
-  "last_scraped": "2026-08-02T06:00:44.547Z",
+  "last_scraped": "2026-08-09T05:21:32.852Z",
   "total_pages": 194,
   "failed_urls": [],
   "pages": [
@@ -1078,17 +1078,17 @@
       ]
     },
     {
-      "title": "Pantheon Compatibility Fix for BladeOne Error (moving the temp folder)",
+      "title": "Fix for BladeOne Error (moving the temp folder)",
       "url": "https://independentwp.com/knowledgebase/developer/pantheon-compatibility-fix-bladeone-error/",
       "category": "Developer",
-      "content": "If you’re using Pantheon, you’ll see an error message like this when you first install Independent Analytics:\n\n```\nBladeOne Error [Compiling]:\nUnable to save the file [/code/wp-content/plugins/independent-analytics-pro/temp/template-cache/partials.report-header_4f3062d1c7ff949f2bb7ee5fc8c000f4f591cf45.bladec].\n```\n\nThis error occurs because Independent Analytics creates a handful of files for caching purposes inside a folder called “temp” in the plugin folder, and this directory is not writable in Pantheon environments.\n\nFor this reason, we have provided a filter that will let you modify where the caching files are written. Here’s how it is used:\n\n```\nadd_filter('iawp_temp_directory_path', function ($value) {\n  return '/code/wp-content/uploads/iawp/';\n});\n```\n\nAlternatively, you can define the path using the IAWP_TEMP_DIR constant in your wp-config.php file, like this:\n\n```\ndefine('IAWP_TEMP_DIR', '/code/wp-content/uploads/iawp/');\n```\n\nIndependent Analytics will create two folders named **template-cache** and **device-data-cache** inside the target path you provide.\n\nThe example above uses the **uploads** folder because this is writable in Pantheon, but you can choose any directory path you want.\n\nThe nature of these cache files is to speed up the analytics dashboard and user device recognition on the front end.",
+      "content": "If your server doesn’t allow writes to the /wp-content/plugins/ folder, you’ll see an error message like this when you first install Independent Analytics:\n\n```\nBladeOne Error [Compiling]:\nUnable to save the file [/code/wp-content/plugins/independent-analytics-pro/temp/template-cache/partials.report-header_4f3062d1c7ff949f2bb7ee5fc8c000f4f591cf45.bladec].\n```\n\nThis error occurs because Independent Analytics creates a handful of files for caching purposes inside a folder called “temp” in the plugin folder, and this directory is not writable in the environment.\n\nFor this reason, we have provided a filter that will let you modify where the caching files are written. Here’s how it is used:\n\n```\nadd_filter('iawp_temp_directory_path', function ($value) {  return '/your-path/wp-content/uploads/iawp/';});\n```\n\nThis example would place the “iawp” folder inside the uploads folder instead. Replace “your-path” with the path on your server that points to wp-content.\n\nAlternatively, you can define the path using the IAWP_TEMP_DIR constant in your wp-config.php file, like this:\n\n```\ndefine('IAWP_TEMP_DIR', '/your-path/wp-content/uploads/iawp/');\n```\n\nIndependent Analytics will create a “temp” folder that contains two folders named **template-cache** and **device-data-cache** at the target path you provide.\n\nThe examples above use the **uploads** folder, but you can choose any directory path you want.\n\nThe nature of these cache files is to speed up the analytics dashboard and user device recognition on the front end.",
       "headings": [],
       "code_blocks": [
         "BladeOne Error [Compiling]:\nUnable to save the file [/code/wp-content/plugins/independent-analytics-pro/temp/template-cache/partials.report-header_4f3062d1c7ff949f2bb7ee5fc8c000f4f591cf45.bladec].",
         "BladeOne Error [Compiling]:\nUnable to save the file [/code/wp-content/plugins/independent-analytics-pro/temp/template-cache/partials.report-header_4f3062d1c7ff949f2bb7ee5fc8c000f4f591cf45.bladec].",
-        "add_filter('iawp_temp_directory_path', function ($value) {\n  return '/code/wp-content/uploads/iawp/';\n});",
-        "define('IAWP_TEMP_DIR', '/code/wp-content/uploads/iawp/');",
-        "define('IAWP_TEMP_DIR', '/code/wp-content/uploads/iawp/');"
+        "add_filter('iawp_temp_directory_path', function ($value) {  return '/your-path/wp-content/uploads/iawp/';});",
+        "define('IAWP_TEMP_DIR', '/your-path/wp-content/uploads/iawp/');",
+        "define('IAWP_TEMP_DIR', '/your-path/wp-content/uploads/iawp/');"
       ]
     },
     {

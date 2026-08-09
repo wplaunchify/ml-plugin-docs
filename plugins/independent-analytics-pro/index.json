@@ -2,7 +2,7 @@
   "plugin_slug": "independent-analytics-pro",
   "plugin_name": "Independent Analytics Pro",
   "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-  "last_scraped": "2026-08-02T06:00:44.555Z",
+  "last_scraped": "2026-08-09T05:21:32.860Z",
   "total_pages": 194,
   "failed_urls_count": 0,
   "sections": [
@@ -507,7 +507,7 @@
           "url": "https://independentwp.com/knowledgebase/developer/developer-api/"
         },
         {
-          "title": "Pantheon Compatibility Fix for BladeOne Error (moving the temp folder)",
+          "title": "Fix for BladeOne Error (moving the temp folder)",
           "url": "https://independentwp.com/knowledgebase/developer/pantheon-compatibility-fix-bladeone-error/"
         }
       ]

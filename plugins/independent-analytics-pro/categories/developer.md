@@ -514,36 +514,36 @@ $posts = iawp_top_posts([
 
 ---
 
-## Pantheon Compatibility Fix for BladeOne Error (moving the temp folder)
+## Fix for BladeOne Error (moving the temp folder)
 
 **Source:** [https://independentwp.com/knowledgebase/developer/pantheon-compatibility-fix-bladeone-error/](https://independentwp.com/knowledgebase/developer/pantheon-compatibility-fix-bladeone-error/)
 
-If you’re using Pantheon, you’ll see an error message like this when you first install Independent Analytics:
+If your server doesn’t allow writes to the /wp-content/plugins/ folder, you’ll see an error message like this when you first install Independent Analytics:
 
 ```
 BladeOne Error [Compiling]:
 Unable to save the file [/code/wp-content/plugins/independent-analytics-pro/temp/template-cache/partials.report-header_4f3062d1c7ff949f2bb7ee5fc8c000f4f591cf45.bladec].
 ```
 
-This error occurs because Independent Analytics creates a handful of files for caching purposes inside a folder called “temp” in the plugin folder, and this directory is not writable in Pantheon environments.
+This error occurs because Independent Analytics creates a handful of files for caching purposes inside a folder called “temp” in the plugin folder, and this directory is not writable in the environment.
 
 For this reason, we have provided a filter that will let you modify where the caching files are written. Here’s how it is used:
 
 ```
-add_filter('iawp_temp_directory_path', function ($value) {
-  return '/code/wp-content/uploads/iawp/';
-});
+add_filter('iawp_temp_directory_path', function ($value) {  return '/your-path/wp-content/uploads/iawp/';});
 ```
+
+This example would place the “iawp” folder inside the uploads folder instead. Replace “your-path” with the path on your server that points to wp-content.
 
 Alternatively, you can define the path using the IAWP_TEMP_DIR constant in your wp-config.php file, like this:
 
 ```
-define('IAWP_TEMP_DIR', '/code/wp-content/uploads/iawp/');
+define('IAWP_TEMP_DIR', '/your-path/wp-content/uploads/iawp/');
 ```
 
-Independent Analytics will create two folders named **template-cache** and **device-data-cache** inside the target path you provide.
+Independent Analytics will create a “temp” folder that contains two folders named **template-cache** and **device-data-cache** at the target path you provide.
 
-The example above uses the **uploads** folder because this is writable in Pantheon, but you can choose any directory path you want.
+The examples above use the **uploads** folder, but you can choose any directory path you want.
 
 The nature of these cache files is to speed up the analytics dashboard and user device recognition on the front end.
 
