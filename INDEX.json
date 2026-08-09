@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-08-09T00:34:30.062Z",
+  "last_updated": "2026-08-09T00:35:23.170Z",
   "total_plugins": 131,
   "plugins": [
     {
       "slug": "add-anchor-links",
       "name": "Add Anchor Links",
       "documentation_url": "https://wordpress.org/plugins/add-anchor-links/",
-      "last_scraped": "2026-08-09T00:28:40.746Z",
+      "last_scraped": "2026-08-09T00:28:40.745Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -59,7 +59,7 @@
       "slug": "affiliatewp",
       "name": "AffiliateWP",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-08-02T20:03:19.465Z",
+      "last_scraped": "2026-08-02T20:03:19.461Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
@@ -69,7 +69,7 @@
       "slug": "affiliatewp-affiliate-landing-pages",
       "name": "AffiliateWP - Affiliate Landing Pages",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-08-02T00:59:33.753Z",
+      "last_scraped": "2026-08-09T00:35:21.093Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
@@ -139,7 +139,7 @@
       "slug": "affiliatewp-recurring-referrals",
       "name": "AffiliateWP - Recurring Referrals",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-08-02T19:25:59.353Z",
+      "last_scraped": "2026-08-02T19:25:59.348Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
@@ -1251,7 +1251,7 @@
       "slug": "kadence-blocks-page-builder-toolkit-for-gutenberg-editor",
       "name": "Kadence Blocks — Page Builder Toolkit for Gutenberg Editor",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-08-09T00:34:30.062Z",
+      "last_scraped": "2026-08-09T00:34:30.052Z",
       "page_count": 153,
       "categories": [
         "access-the-design-library",
@@ -1802,7 +1802,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-      "last_scraped": "2026-08-02T19:17:38.707Z",
+      "last_scraped": "2026-08-02T19:17:38.703Z",
       "page_count": 31,
       "categories": [
         "captcha",
@@ -1840,7 +1840,7 @@
       "slug": "kadence-theme",
       "name": "Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-08-02T20:20:09.323Z",
+      "last_scraped": "2026-08-02T20:20:09.314Z",
       "page_count": 120,
       "categories": [
         "add-a-login-and-account-menu",
@@ -1967,7 +1967,7 @@
       "slug": "kadence-theme-kit-pro-premium-addon-for-the-kadence-theme",
       "name": "Kadence Theme Kit Pro - Premium addon for the Kadence Theme",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-08-02T19:56:42.335Z",
+      "last_scraped": "2026-08-02T19:56:42.327Z",
       "page_count": 120,
       "categories": [
         "add-a-login-and-account-menu",
@@ -2114,7 +2114,7 @@
       "slug": "launchkit-pro",
       "name": "LaunchKit Pro",
       "documentation_url": "https://wordpress.org/plugins/launchkit/",
-      "last_scraped": "2026-08-02T19:43:53.870Z",
+      "last_scraped": "2026-08-02T19:43:53.869Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2321,7 +2321,7 @@
       "slug": "login-me-now",
       "name": "Login Me Now",
       "documentation_url": "https://wordpress.org/plugins/login-me-now/",
-      "last_scraped": "2026-08-02T20:15:15.992Z",
+      "last_scraped": "2026-08-02T20:15:15.989Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2332,7 +2332,7 @@
       "slug": "luckywp-table-of-contents",
       "name": "LuckyWP Table of Contents",
       "documentation_url": "https://wordpress.org/plugins/luckywp-table-of-contents/",
-      "last_scraped": "2026-08-02T20:28:50.883Z",
+      "last_scraped": "2026-08-02T20:28:50.881Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2343,7 +2343,7 @@
       "slug": "manage-notification-e-mails",
       "name": "Manage Notification E-mails",
       "documentation_url": "https://wordpress.org/plugins/manage-notification-emails/",
-      "last_scraped": "2026-08-02T20:48:15.189Z",
+      "last_scraped": "2026-08-02T20:48:15.187Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2354,7 +2354,7 @@
       "slug": "menu-image",
       "name": "Menu Image",
       "documentation_url": "https://wordpress.org/plugins/menu-image/",
-      "last_scraped": "2026-08-02T21:03:15.050Z",
+      "last_scraped": "2026-08-02T21:03:15.048Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2385,7 +2385,7 @@
       "slug": "open-graph",
       "name": "Open Graph",
       "documentation_url": "https://wordpress.org/plugins/opengraph/",
-      "last_scraped": "2026-08-02T21:08:55.534Z",
+      "last_scraped": "2026-08-02T21:08:55.532Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2396,7 +2396,7 @@
       "slug": "page-links-to",
       "name": "Page Links To",
       "documentation_url": "https://wordpress.org/plugins/page-links-to/",
-      "last_scraped": "2026-08-02T21:16:19.218Z",
+      "last_scraped": "2026-08-02T21:16:19.216Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2407,7 +2407,7 @@
       "slug": "preview-e-mails-for-woocommerce",
       "name": "Preview E-mails for WooCommerce",
       "documentation_url": "https://wordpress.org/plugins/woo-preview-emails/",
-      "last_scraped": "2026-08-02T21:30:23.233Z",
+      "last_scraped": "2026-08-02T21:30:23.232Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2472,7 +2472,7 @@
       "slug": "resizable-sidebar-for-the-gutenberg-block-editor",
       "name": "Resizable Sidebar for the Gutenberg Block Editor",
       "documentation_url": "https://wordpress.org/plugins/resizable-editor-sidebar/",
-      "last_scraped": "2026-08-02T21:37:29.415Z",
+      "last_scraped": "2026-08-02T21:37:29.413Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2513,7 +2513,7 @@
       "slug": "simple-post-redirect",
       "name": "Simple Post Redirect",
       "documentation_url": "https://wordpress.org/plugins/simple-post-redirect/",
-      "last_scraped": "2026-08-02T21:45:33.446Z",
+      "last_scraped": "2026-08-02T21:45:33.445Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2524,7 +2524,7 @@
       "slug": "simple-seo",
       "name": "Simple SEO",
       "documentation_url": "https://wordpress.org/plugins/simple-seo/",
-      "last_scraped": "2026-08-02T22:01:53.391Z",
+      "last_scraped": "2026-08-02T22:01:53.390Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -2535,7 +2535,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-08-02T20:39:38.495Z",
+      "last_scraped": "2026-08-02T20:39:38.488Z",
       "page_count": 120,
       "categories": [
         "add-a-login-and-account-menu",
@@ -3854,7 +3854,7 @@
       "slug": "wpfusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-08-02T19:39:46.033Z",
+      "last_scraped": "2026-08-02T19:39:46.023Z",
       "page_count": 484,
       "categories": [
         "abandoned-cart-tracking",
