@@ -4,7 +4,7 @@
 
 ---
 
-## Search code, repositories, users, issues, pull requests...
+## WooCommerce Subscriptions - Custom Price String
 
 **Source:** [https://github.com/woocommerce/woocommerce-subscriptions-custom-price-string](https://github.com/woocommerce/woocommerce-subscriptions-custom-price-string)
 
