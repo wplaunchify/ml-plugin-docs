@@ -18549,6 +18549,7 @@ AffiliateWP seamlessly integrates with WooCommerce to empower your affiliate mar
 
 - [Enable WooCommerce integration](#aioseo-configuration)
 - [Affiliate Coupon Tracking](#affiliate-coupon-tracking)
+- [Affiliate Link Discounts](#affiliate-link-discounts)
 - [Product Specific Rates](#aioseo-product-specific-rates)
 - [Disabling Referrals For Specific Products](#aioseo-disabling-referrals-for-specific-products)
 - [Subscription Rates](#aioseo-subscription-rates)
@@ -18591,6 +18592,22 @@ Simply begin typing the name of the affiliate you wish to connect the discount c
 ![displaying add new coupon screen showing where and affiliate was already selected in the Affiliate discount? field](https://affiliatewp.com/wp-content/uploads/2024/05/affiliatewp-coupon-woocommerce-assign.png)
 
 Any time this discount code is redeemed, and a purchase or conversion is completed, the connected affiliate will be awarded a referral.
+
+Want the discount applied automatically when a customer clicks an affiliate link, with no code to type? See [Affiliate Link Discounts](https://affiliatewp.com/docs/woocommerce/#affiliate-link-discounts) below.
+
+## Affiliate Link Discounts
+
+Affiliate Link Discounts automatically applies an affiliate’s coupon when a customer visits your store through that affiliate’s link. The customer sees a notification confirming their discount and checks out without typing a code, and the affiliate still gets credit for the sale.
+
+![Affiliate link discount notification applied](https://affiliatewp.com/wp-content/uploads/2021/11/affiliate-link-discounts-notification-light-767x173.png)
+
+To use the Affiliate Link Discounts, you will need a [Pro license](https://affiliatewp.com/pricing/).
+
+To use it, each affiliate needs a dynamic coupon, so you’ll first select a coupon template and generate dynamic coupons for your affiliates. Then enable the feature under **AffiliateWP » Settings » Coupons** by checking **Enable Affiliate Link Discounts**.
+
+![Admin setting affiliate link discounts](https://affiliatewp.com/wp-content/uploads/2024/02/admin-settings-coupons-affiliate-link-discounts-option-767x392.png)
+
+You can also choose how the discount notification looks with the **Discount Notification Theme** setting (Automatic, Light, or Dark). For setup details, see the full [Affiliate Link Discounts guide](https://affiliatewp.com/docs/affiliate-link-discounts/).
 
 ## Product Specific Rates
 
@@ -18731,6 +18748,10 @@ To activate the Affiliate Signup Widget, navigate to **AffiliateWP » Settings �
 ### How can I manually assign an order to an affiliate?
 
 To manually assign or reassign orders to an affiliate, go to **WooCommerce » Orders** and select the order. In the **Affiliate Commission** field, choose the affiliate to whom you want to assign the order, and click to **Update**.
+
+### Can an affiliate link automatically apply a discount in WooCommerce?
+
+Yes. With Affiliate Link Discounts enabled (a Pro feature), clicking an affiliate’s link automatically applies that affiliate’s dynamic coupon at checkout and shows the customer a confirmation notification. See the [Affiliate Link Discounts guide](https://affiliatewp.com/docs/affiliate-link-discounts/) for setup.
 
 ---
 
