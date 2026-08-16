@@ -2,8 +2,8 @@
   "plugin_slug": "prime-mover",
   "plugin_name": "Prime Mover",
   "documentation_url": "https://codexonics.com/prime_mover/",
-  "last_scraped": "2026-08-02T06:11:11.798Z",
-  "total_pages": 115,
+  "last_scraped": "2026-08-16T05:39:23.419Z",
+  "total_pages": 116,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,7 +11,7 @@
       "slug": "prime-mover",
       "url": "https://codexonics.com/prime_mover/prime-mover/",
       "file": "categories/prime-mover.md",
-      "page_count": 115,
+      "page_count": 116,
       "pages": [
         {
           "title": "Prime Mover – WordPress Single-Site / Multisite Migration Plugin",
@@ -416,6 +416,10 @@
         {
           "title": "Troubleshooting permission issues with Prime Mover plugin",
           "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/troubleshooting-permission-issues-with-prime-mover-plugin/"
+        },
+        {
+          "title": "Troubleshooting: Unable to resume package downloads using Firefox + Apache server + PHP-fpm",
+          "url": "https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/troubleshooting-unable-to-resume-package-downloads-using-firefox-apache-server-php-fpm/"
         },
         {
           "title": "Troubleshooting: I have not received account-related emails since the purchase.",

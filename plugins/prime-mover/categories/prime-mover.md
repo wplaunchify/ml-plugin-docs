@@ -25,7 +25,7 @@ This can also be used to migrate a single-site installation to another single-si
 [Buy and Download](https://codexonics.com/prime_mover/prime-mover/pricing/)
 # News and Updates
 
-> Prime Mover 2.1.6 – Better Parallel Export and Import support
+> Prime Mover 2.2.0 – Major update on localization, security, and performance
 # Official Documentation
 
 [GENERAL DOCUMENTATION](https://codexonics.com/prime_mover/prime-mover/general-documentation/)[PRO VERSION DOCUMENTATION](https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/)[TROUBLESHOOTING GUIDE](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/)[FREQUENTLY ASKED QUESTIONS](https://codexonics.com/prime_mover/prime-mover/faq/)
@@ -5685,7 +5685,7 @@ Was this article helpful?YesNo
 
 **Source:** [https://codexonics.com/prime_mover/prime-mover/pricing/](https://codexonics.com/prime_mover/prime-mover/pricing/)
 
-FreeStarts at$0Free versionThis plan is suitable for students and hobbyists of WordPress website development.Restore backup within siteMigrate single-site to single siteMigrate single-site to multisiteMigrate multisite to multisiteMigrate multisite to single-siteMigrate within WordPress adminMigrate from and to localhostExport as WordPress debug packageExport database onlyExport database + media files onlyComplete export mode (db + media + plugins/themes)No package size restrictionsResponsive / Mobile CompatibleBackup package management screen[Free download](https://downloads.wordpress.org/plugin/prime-mover.2.1.6.zip)ProfessionalStarts at$59Pro version (annual single-site or one subsite in multisite)This plan suits professional website designers, developers, and system administrators.**ALL FREE FEATURES +**Backup/migrate multisite main siteAutomatic/scheduled backupsMigrate faster using remote URL APIFree localhost licenseEncrypt databaseEncrypt media files and plugins/themesMigrate non-UTF8 charset to default utf8mb4 charsetOption to move backup packages outside WordPress rootExport package to Dropbox or Google DriveExclude plugins and media upload filesAssign specific blog ID for new subsiteOption to delete backups and enable migration logsComplete restoration options[Start free trial](https://checkout.freemius.com/mode/dialog/plugin/3826/plan/6162/?trial=paid)
+FreeStarts at$0Free versionThis plan is suitable for students and hobbyists of WordPress website development.Restore backup within siteMigrate single-site to single siteMigrate single-site to multisiteMigrate multisite to multisiteMigrate multisite to single-siteMigrate within WordPress adminMigrate from and to localhostExport as WordPress debug packageExport database onlyExport database + media files onlyComplete export mode (db + media + plugins/themes)No package size restrictionsResponsive / Mobile CompatibleBackup package management screen[Free download](https://downloads.wordpress.org/plugin/prime-mover.2.2.0.zip)PROStarts at$59Pro version (annual single-site or one subsite in multisite)This plan suits professional website designers, developers, and system administrators.**ALL FREE FEATURES +**Backup/migrate multisite main siteAutomatic/scheduled backupsMigrate faster using remote URL APIFree localhost licenseEncrypt databaseEncrypt media files and plugins/themesMigrate non-UTF8 charset to default utf8mb4 charsetOption to move backup packages outside WordPress rootExport package to Dropbox or Google DriveExclude plugins and media upload filesAssign specific blog ID for new subsiteOption to delete backups and enable migration logsComplete restoration options[Start free trial](#)
 Buy now
 ### Trusted by More than 100,000 Blogs, Online Shops & Websites!
 
@@ -5770,7 +5770,7 @@ You can find the [list of frequently asked questions here](https://codexonics.c
 
 The plugin [includes complete documentation](https://codexonics.com/prime_mover/prime-mover/).
 
-*Last updated:  February 10, 2026*
+*Last updated: August 13, 2026*
 
 ---
 
@@ -6264,9 +6264,9 @@ Was this article helpful?YesNo
 
 ## Overview
 
-The Prime Mover plugin includes a built-in dependency requisite checker. When the plugin is activated, it will perform automated checks to determine whether your site or server meets Prime Mover requirements.
+The Prime Mover plugin includes a built-in dependency requirement checker. When the plugin is activated, it will perform automated checks to determine whether your site or server meets Prime Mover requirements.
 
-How it works is that when Prime Mover is activated,it checks all its needed requirements, such as WordPress and PHP versions. When some requirements are missing during these checks, Prime Mover is auto-deactivated and outputs a user-friendly message about**the missing dependencies**.
+When Prime Mover is activated, it checks all required requirements, such as WordPress and PHP versions. When some requirements are missing during these checks, Prime Mover is auto-deactivated and outputs a user-friendly message about**the missing dependencies**.
 
 This allows the user to adjust the server to ensure it is compatible with Prime Mover. This check also prevents running Prime Mover in incompatible environments, which can cause many unnecessary issues.
 
@@ -6274,9 +6274,11 @@ Below are details of Prime Mover technical requirements that the plugin will che
 
 ## WordPress version
 
-The Minimum WordPress-supported version is 4.9.8. Prime Mover support cannot be lower than this version because some functions are needed but do not exist below it.
+The current minimum WordPress-supported version is 5.2. Before Prime Mover 2.2, the minimum supported WordPress version was 4.9.8. The reason for this change is that from Prime Mover 2.2+, it will now use the core WordPress shipped clipboard JS library instead of its own. The benefit is for maximum compatibility and performance (resulting in lower overall plugin size) with WordPress.
 
-You should always use the latest WordPress version for the best migration and backup stability compatibility.
+If you have a website from WordPress 4.9.8 to before WordPress 5.2, you cannot use Prime Mover 2.2+ and will need to use Prime Mover 2.1.6. This is the last supported version for these WordPress versions. If you want to use the latest Prime Mover version, you really need to upgrade your WordPress version to at least 5.2 (if you still cannot use the latest version of WordPress due to compatibility issues).
+
+Prime Mover support cannot be lower than this version because some functions are needed but do not exist below it. You should always use the latest WordPress version for the best migration and backup stability compatibility.
 
 ## PHP version
 
@@ -6286,33 +6288,33 @@ The minimum PHP-supported version is 5.6. The recommended version is the same as
 
 Prime Mover has no specific minimum MySQL version as long as the current WordPress installation is compatible with Prime Mover (>= 4.9.8). This means it can work with legacy MySQL 5.0+, but these versions have reached official End-of-Life and may expose your site to security vulnerabilities.
 
-For best results with migration and backup – it is always recommended to use MySQL version 5.7 or greater OR MariaDB version 10.3 or greater. These are the identical database versions currently recommended by WordPress Core.
+For best results with migration and backup, it is always recommended to use MySQL version 5.7 or greater OR MariaDB version 10.3 or greater. These are the identical database versions currently recommended by WordPress Core.
 
 ## Supported Servers
 
-Prime Mover is tested to work with Apache, Nginx, Microsoft IIS, Litespeed servers, etc. As long as your server meets dependencies and runs a supported version of WordPress (along with supported PHP and MySQL versions, etc.), you should be able to use this plugin on any server.
+Prime Mover is tested to work with Apache, Nginx, Microsoft IIS, LiteSpeed servers, etc. As long as your server meets dependencies and runs a supported version of WordPress (along with supported PHP and MySQL versions, etc.), you should be able to use this plugin on any server.
 
 ## FAQ
 
-- *Do server PHP/MySQL/WordPress version differences between source and target site can result in migration glitches?*
+- *Can server PHP/MySQL/WordPress version differences between source and target site result in migration glitches?*
 
-Yes, typically, if you have a big, complicated site, there might be little difference between the source site and the target site. This is due to the fact that you are using third-party plugins (not only Prime Mover) and themes, which, of course, react to differing versions.
+Yes, typically, if you have a big, complicated site, there might be little difference between the source site and the target site. This is because you are using third-party plugins (not only Prime Mover) and themes, which, of course, react to differing versions.
 
-For example, your original site uses PHP 5.6 and legacy/outdated plugins. However, when you migrate to a new PHP 7.4 server, some of your plugins might not work perfectly and need tuning up/updating, which can cause differences in how your site behaves.
+For example, your original site uses PHP 5.6 and legacy/outdated plugins. However, when you migrate to a new PHP 8.5 server, some of your plugins might stop working (return a fatal error) and need tuning up/updating, which can cause differences in how your site behaves.
 
-The same is true when you migrate from PHP 7.4 to PHP 5.6—your plugins or themes might not work correctly because of the outdated PHP version.
+The same is true when you migrate from PHP 8.2 to PHP7.4—your plugins or themes might not work correctly because of the outdated PHP version.
 
-It is always recommended to migrate to a target site with the **same server specs as your source site.** This will eliminate issues caused by server technical differences.
+It is always recommended to migrate to a target site with the **same server specs as your source site.** This will eliminate issues caused by server technical differences. Always check that your plugins/themes are compatible with your target versions.
 
 - **I find it weird that multisite migration sometimes has glitches. What would have caused this?**
 
-Take note, for example, that these are significant changes if you move your site from a multisite to a single site or vice versa. This is because the site used to work with multisite, along with its multisite plugins, multisite-related settings, and all network-related stuff/customization. Prime Mover does its best to make this migration as smooth as possible, but there are times when differences and glitches are bound to happen.
+Take note that these are significant changes if you move your site from a multisite to a single site or vice versa. This is because the site used to work with multisite, along with its multisite plugins, multisite-related settings, and all network-related stuff/customization. Prime Mover does its best to make this migration as smooth as possible, but there are times when differences and glitches are bound to happen.
 
-The most contributing factor to these differences is the plugins and themes you are using. For example – say you have a *multisite-only plugin* and are migrating to a single site. These multisite plugins do not work anymore on a single site. Thus, one reason for the differences in your site behavior is that.
+The most contributing factor to these differences is the plugins and themes you are using. For example, say you have a multisite-only plugin and are migrating to a single site. These multisite plugins no longer work on a single site. That’s one reason for the differences in your site behavior.
 
-Or if your site is using multisite-related settings for a plugin that are no longer applicable when being migrated to a single site, Prime Mover cannot adjust this because migration simply replaces paths, domain names, or hostnames as well as URLs to the target site. *Changing detailed plugin settings is beyond the scope of the migration*.
+Or, if your site is using multisite-related plugin settings that are no longer applicable when migrating to a single site, Prime Mover cannot adjust them because migration replaces paths, domain names, hostnames, and URLs to the target site. *Changing detailed plugin settings is beyond the scope of the migration*.
 
-As usual,if you see some strange behavior after migration, it is suggested that you do a [post-migration troubleshooting](https://codexonics.com/prime_mover/prime-mover/post-migration-troubleshooting-tips-and-advices/)to check and review the site plugins’ settings after migration (and to sort out possible issues).
+As usual,if you see strange behavior after migration, we suggest[post-migration troubleshooting](https://codexonics.com/prime_mover/prime-mover/post-migration-troubleshooting-tips-and-advices/)to check and review the site plugins’ settings (and sort out possible issues).
 
 Prime Mover PRO also has a [feature that excludes plugins](https://codexonics.com/prime_mover/prime-mover/how-to-exclude-plugins-in-prime-mover-pro/). Using this feature, you can exclude problematic or multisite-only plugins from your package.
 
@@ -6325,11 +6327,11 @@ If you think the issues could be Prime Mover-related, [please get in touch with
 WPRIME
 ```
 
- package for troubleshooting. You can upload this to Google Drive or DropBox and share the link to download it. Please describe the differences between the source site and the target site. Show expected and actual behavior screenshots so the tech support knows where to find the problem.
+ package for troubleshooting. You can upload it to Google Drive or Dropbox and share the download link. Please describe the differences between the source site and the target site. Please share screenshots of the expected and actual behavior so the tech support team knows where to find the problem.
 
-It would be helpful to [provide us](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/)[with as much debug data as possible,](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/) such as your site info, so we can mimic your server environment in our test servers.
+It would be helpful to [provide us](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/)[with as much debug data as possible,](https://codexonics.com/prime_mover/prime-mover/how-to-submit-debug-data-to-support/) such as your site info, so that we can mimic your server environment on our test servers.
 
-*Last updated: November 11, 2024*
+*Last updated: August 2, 2026*
 
 Was this article helpful?YesNo
 
@@ -7965,6 +7967,8 @@ Search
 
 [Import / Restoration Hang or Freeze Issue Troubleshooting](https://codexonics.com/prime_mover/prime-mover/import-restoration-hang-or-freeze-issue/)
 
+[Troubleshooting: Unable to resume package downloads using Firefox + Apache server + PHP-fpm](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/troubleshooting-unable-to-resume-package-downloads-using-firefox-apache-server-php-fpm/)
+
 [I got an “Export fails” or “Import Fails” Error – Can you try increasing the web server timeout?](https://codexonics.com/prime_mover/prime-mover/i-got-export-fails-or-import-fails-error-can-you-try-increasing-web-server-timeout/)
 
 [cURL error 28: Connection timed out after 10001 milliseconds](https://codexonics.com/prime_mover/prime-mover/curl-error-28-connection-timed-out-after-10001-milliseconds-when-importing-prime-mover-package/)
@@ -8121,6 +8125,101 @@ You will know that the issues are fixed when:
 1. Export and import/restore buttons appear and are usable(or clickable).
 2. You will see the package listed in the package manager.
 3. Prime Mover plugin is fully activated without errors.
+
+Was this article helpful?YesNo
+
+---
+
+## Troubleshooting: Unable to resume package downloads using Firefox + Apache server + PHP-fpm
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/troubleshooting-unable-to-resume-package-downloads-using-firefox-apache-server-php-fpm/](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/troubleshooting-unable-to-resume-package-downloads-using-firefox-apache-server-php-fpm/)
+
+## Symptoms
+
+Your site is hosted on an Apache server, and you are downloading the Prime Mover package using Firefox. For some reason, you paused the download, and when you resume it, it can no longer be resumed. The only way to fix it is to repeat the download process from scratch.
+
+## Affected environment
+
+This issue is only reproducible if all of the conditions below are true:
+
+- Apache server.
+- PHP-fpm.
+- Firefox
+
+## Cause of issue
+
+**The Root Cause (CVE-2024-24795)**
+
+- **The Vulnerability:** Apache introduced a security patch to fix **CVE-2024-24795**. This vulnerability allowed malicious actors to perform **HTTP Response Smuggling** and **Response Splitting** attacks by manipulating headers sent from backend scripts.
+- **Apache’s Solution:** To block this attack vector, newer Apache updates automatically **strip or ignore** the 
+```
+Content-Length
+```
+
+ header generated by backend scripts running through FastCGI/PHP-FPM.
+- **The Side Effect:** While this protects the server, it breaks custom PHP download classes. Because Apache drops the 
+```
+Content-Length
+```
+
+ header your script calculates, **Firefox** (which strictly enforces HTTP specifications) sees a corrupted payload structure during pause/resume requests and refuses to resume the download.
+
+## Does it affect other browsers?
+
+No, only Firefox.
+
+**Why Chrome works:** When Chrome pauses and resumes a download, if it receives a 
+```
+200 OK
+```
+
+ or missing length metadata, it is highly permissive and tries to guess the boundaries or read the stream anyway.
+
+**Why Firefox fails:** Firefox is incredibly strict about HTTP specifications. When you try to resume, Firefox expects a rock-solid matching 
+```
+Content-Length
+```
+
+ and a proper 
+```
+206 Partial Content
+```
+
+ response metadata bundle. Because Apache strips the 
+```
+Content-Length
+```
+
+ passed by your PHP class, Firefox sees a corrupted or missing payload structure, panics, and refuses to resume.
+
+## The Fix
+
+Add this to the top of your WordPress .htaccess:
+
+```
+# --- START RESUMABLE DOWNLOAD FIX FOR FIREFOX ---
+<IfModule mod_env.c>
+    # Try setting the standard variable
+    SetEnv ap_trust_cgilike_cl 1
+    # Try setting the prefixed version to guarantee PHP-FPM reads it correctly
+    SetEnv REDIRECT_ap_trust_cgilike_cl 1
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    <IfModule !mod_env.c>
+        RewriteEngine On
+        # Fallback using mod_rewrite flags if mod_env is disabled
+        RewriteRule .* - [E=ap_trust_cgilike_cl:1,E=REDIRECT_ap_trust_cgilike_cl:1]
+    </IfModule>
+</IfModule>
+# --- END RESUMABLE DOWNLOAD FIX FOR FIREFOX ---
+```
+
+Once the .htaccess is updated, clear your browser cache and re-test. When you resume it, it will work.
+
+## Still cannot download?
+
+You can always download the WPRIME package created by Prime Mover in several ways. Feel free to check this tutorial on [alternative methods to download the package](https://codexonics.com/prime_mover/prime-mover/faq-how-to-download-wprime-package-via-other-methods/).
 
 Was this article helpful?YesNo
 
