@@ -33,12 +33,16 @@ If you’ve ever [created an order manually](https://woocommerce.com/document/ma
 7. **Recalculate** totals for the line items and taxes, following the process described in the [Calculate Recurring Totals](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/#calculate-recurring-totals) section below.
 8. **Set** the subscription status, following the process described in the [Set Subscription Status](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/#set-subscription-status) section below.
 9. Under Subscription actions, click **Update**to start the Subscription.
-10. Under Subscription actions, select “Create pending parent order”. This will create a pending parent order associated with the subscription.
-11. Go to the pending parent order, from there you can email the customer an invoice with a payment link by selecting “Send order details to customer” in the Order actions dropdown menu.
+10. Under Subscription actions, select “**Create pending parent order**“. This will create a pending parent order associated with the subscription.
+11. Go to the pending parent order. From there you can email the customer an invoice with a payment link by selecting “**Send order details to customer**” in the Order actions dropdown menu.
 
 This creates a subscription that customers can pay by either making [manual renewal payments](https://woocommerce.com/document/subscriptions/renewal-process/#section-4) or using supported [automatic renewal payment gateways](https://woocommerce.com/document/subscriptions/payment-gateways/#extensions-for-automatic-payments) for each billing cycle.
 
 Once a parent order exists, customers can make payment either by following the payment link in the order details email, or log into their account and visit the “My Account” area to pay for the order from the “Orders” or the “Subscriptions” tab.
+
+**Important**!
+
+When a customer pays for a pending parent order, the subscription product is re-added to checkout at its **current catalog price**. Any custom pricing or billing changes made on the subscription or parent order are not carried over. To offer a customer-specific price, use a coupon or create a separate product with the desired price.
 
 Once the customer pays the pending parent order, the subscription status switches to “Active,” and the system creates a new renewal order when the next payment is due based on the billing schedule you set in step 4.
 
@@ -46,7 +50,7 @@ Depending on whether the payment gateway extension supports it or not, you can a
 
 ![](https://woocommerce.com/wp-content/uploads/2022/01/Manually-Create-a-Subscription-WooCommerce-Subscriptions.png?strip=all&w=704)Manually Add a Subscription
 
-Manually adding a subscription does not send out order emails; those need to be sent manually also.
+**Note:**Manually adding a subscription does not send out order emails; those need to be sent manually also.
 
 ### Add a subscriber
 
@@ -292,6 +296,10 @@ To import a subscription created with another subscription management system, [
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+	**Excellence verified**
+		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
+					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
+			Excellence verified
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -456,6 +464,10 @@ If you would like a native feature to be able to bulk edit recurring totals for 
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+	**Excellence verified**
+		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
+					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
+			Excellence verified
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)

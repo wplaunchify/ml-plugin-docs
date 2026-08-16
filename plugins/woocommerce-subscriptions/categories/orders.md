@@ -65,13 +65,17 @@ Each of these order types are the same as an [order](https://woocommerce.com/doc
 
 [↑ Back to top](#doc-title)
 
-The **parent order** for a subscription records the creation of the subscription or, the first payment for the subscription. Typically, customers purchase a [subscription product](https://woocommerce.com/document/subscriptions/subscription-product-vs-subscription/)via the WooCommerce checkout process, creating the subscription agreement simultaneously with the parent order. The parent order becomes the first order listed in the subscription’s “related orders” (transaction history).
+The **parent order** for a subscription records the creation of the subscription or, the first payment for the subscription. Typically, customers purchase a [subscription product](https://woocommerce.com/document/subscriptions/subscription-product-vs-subscription/) via the WooCommerce checkout process, creating the subscription agreement simultaneously with the parent order. The parent order becomes the first order listed in the subscription’s “related orders” (transaction history).
 
 While checkout usually automatically creates Parent Orders, you can also [add them manually](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/#manually-add-a-subscription) or via import tools when [migrating subscriptions to WooCommerce](https://woocommerce.com/document/migrating-subscribers-woocommerce-subscriptions/).
 
 **A subscription can have only one Parent Order**. Since you can only create. a subscription once, it requires only one Parent Order. However, a single Parent Order can link to multiple subscriptions if the customer purchases [different subscription products in the same transaction](https://woocommerce.com/document/subscriptions/multiple-subscriptions/).
 
 [Manually creating a subscription](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/) does not automatically generate a parent order. You’ll need to use the “Create pending parent order” option under “Subscription Actions” to create one. Then, use the “email order invoice” action in the order actions for the parent order, to send an invoice to the customer to pay for the transaction.
+
+**Important**!
+
+When a customer pays for a pending parent order, the subscription product is re-added to checkout at its **current catalog price**. Any custom pricing or billing changes made on the subscription or parent order are not carried over. To offer a customer-specific price, use a coupon or create a separate product with the desired price.
 
 ### Renewal Orders
 
@@ -159,6 +163,10 @@ A related order’s entire entry will be deleted from the subscription’s Relat
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+	**Excellence verified**
+		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
+					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
+			Excellence verified
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)

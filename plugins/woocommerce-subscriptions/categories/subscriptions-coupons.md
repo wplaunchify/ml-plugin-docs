@@ -86,6 +86,10 @@ discount_initial
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+	**Excellence verified**
+		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
+					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
+			Excellence verified
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -318,6 +322,10 @@ If an order is refunded by the store manager, then any limited use coupons appli
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+	**Excellence verified**
+		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
+					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
+			Excellence verified
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
