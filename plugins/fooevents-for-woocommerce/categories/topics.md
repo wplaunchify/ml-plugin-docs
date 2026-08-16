@@ -6537,6 +6537,25 @@ The drag & drop interface lets you insert standard event and attendee details as
 - Attendee Seat
 - **Custom Attendee Fields**
 
+If you’ve added a “Custom Text” widget then you can use the following variables to display information in a more customizable way:
+
+```
+{attendeeName}{attendeeFirstName}{attendeeLastName}{ticketID}{barcode}
+```
+
+This is useful to display e.g.
+
+```
+Mr. {attendeeLastName}
+```
+
+ or 
+```
+#{ticketID}
+```
+
+ without the word “Ticket”.
+
 Based on your design, the FooEvents Stationery Builder will generate a print-friendly, PDF file that can be printed on standard paper or cardboard, so that you can cut them out with scissors or a guillotine using the handy print cut line feature, or on popular label and badge stationery from [Avery](https://amzn.to/2qNH23i) and [Microsoft](https://amzn.to/2DHbaG4). The exported file will contain stationery for all the event attendees or you can insert specific order or ticket numbers which is useful for walk-ins.
 
 ## Requirements
@@ -10543,7 +10562,6 @@ Please Note: The items below are not listed in any particular order and not all 
 | Add support for Event schema | FooEvents |
 | Add Google Event markup | FooEvents |
 | Order events/products by date in WordPress admin area | FooEvents |
-| Add option to download PDF ticket on checkout thank you page | PDF Tickets |
 | Add column support to event list shortcode | Calendar |
 | Sortable columns | Express Check-ins |
 | Improved display of variations | Check-ins Apps |
@@ -10556,7 +10574,7 @@ Please Note: The items below are not listed in any particular order and not all 
 | --- | --- |
 | Change booking slot quantity in Cart (20 April 2026) | FooEvents |
 | Full WooCommerce Cart and Checkout block compatibility (9 March 2026) | FooEvents |
-| Add option to download PDF ticket on checkout thank you page (20 April 2026) | FooEvents PDF Tickets |
+| Add option to download PDF ticket on checkout thank you page (20 April 2026) | PDF Tickets |
 | Display ticket details on order complete (20 April 2026) | FooEvents |
 | Attendees shortcode (blocks) | FooEvents |
 | Enhanced attendee fields display | FooEvents |
