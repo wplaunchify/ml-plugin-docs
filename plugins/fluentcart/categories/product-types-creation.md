@@ -372,10 +372,13 @@ With your variants selected, fill in only the fields you want to change. The gro
 - **Inventory:** Stock management fields for the selected variants.
 - **Shipping:** Shipping settings that apply per variant.
 - **Tax Class:** Visible only when tax is enabled for your store.
+- **Payment type and billing:** Switch the selected variants between one-time pricing and subscription pricing, along with the billing details that go with it.
 
 When everything looks right, click **Update X variants** at the bottom of the form. The button always shows how many variants are about to change, and fields you leave untouched keep each variant's existing value.
 
 > 📝 Note: The update needs at least one selected variant and at least one filled-in field. If either is missing, FluentCart shows an error instead of saving, so you cannot accidentally blank out a whole group.
+
+> 📝 Note: Switching the selected variants to subscription pricing requires a valid billing interval in the same update. Without one, FluentCart rejects the whole operation with "A valid billing interval is required for subscription variants." and no variant in the group is changed.
 
 Clicking **Cancel** leaves group-edit mode and returns you to the regular single-variant view without applying anything.
 
@@ -2310,6 +2313,9 @@ The **Related Orders** section on the Subscription Details page is the financial
 
 For each entry you can see the date, the total amount, the payment status, and the order type, which makes it straightforward to spot a renewal that was never paid. When an automatic charge attempt fails or a renewal is waiting on the customer, FluentCart also surfaces an alert at the top of the Subscription Details card explaining the current charge state.
 
+INFO
+
+If your store has **Saved Payment Methods** enabled, the card a customer marks as their default is what renewals draw on. When a renewal keeps failing, the quickest fix is often for the customer to add a fresh card and set it as their default from [Payment Methods](/guide/customer-dashboard/payment-methods) in their dashboard. A card that is actively paying for a subscription cannot be removed until that subscription is moved to another card, so renewals do not break silently.
 ### Subscription Cart Rules ​
 
 To keep recurring billing predictable, FluentCart enforces two rules at the cart level whenever a customer tries to purchase a subscription:

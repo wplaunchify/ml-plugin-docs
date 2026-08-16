@@ -603,6 +603,16 @@ Please note that you must have a PayPal Business or Merchant account to accept p
 3. **Payment Activation:** In the top right corner of this page, ensure the PayPal **Payment Activation** option is "Active".
 4. Click the **"Save Settings"** button to apply your changes.
 
+## Letting Customers Save Their PayPal Account ​
+
+PayPal is also a supported gateway for FluentCart's **Saved Payment Methods** feature, alongside Stripe. It lets logged-in customers keep a PayPal account on file and pay with it in a single step next time, without being redirected to PayPal again.
+
+Your store never stores PayPal login details. PayPal keeps the account and returns a token, which is charged only for an order the customer places or a subscription they already signed up for. Customers opt in with an unticked checkbox at checkout and can remove a saved PayPal account whenever they want, just like a saved card.
+
+INFO
+
+Saving a PayPal account requires your PayPal business account to be approved for vaulting. If it is not, FluentCart automatically stops offering the save option to customers at checkout and shows an admin notice explaining why.See [Payment Methods](/guide/customer-dashboard/payment-methods) for what your customers see once this is enabled, and [Cart & Checkout Settings](/guide/settings-configuration/cart-checkout-settings) to turn the feature on.
+
 ---
 
 ## Paystack Settings ​
@@ -1074,6 +1084,14 @@ Next, type a destination name, **paste** the **webhook URL** you copied earlier 
 Your store is now configured to securely accept payments through Stripe.
 
 > Note You can also connect your Stripe account by adding your API keys directly to your site's wp-config.php file for more secure setup. For detailed instructions on this advanced method, please see our guide on Configuring Stripe via wp-config.php.
+
+## Letting Customers Save Their Card ​
+
+Stripe is the gateway behind FluentCart's **Saved Payment Methods** feature, which lets logged-in customers keep a card on file and pay with it in a single step next time.
+
+Your store never stores the card itself. Stripe keeps it and returns a token, which is charged only for an order the customer places or a subscription they already signed up for. Customers opt in with an unticked checkbox at checkout and can remove a saved card whenever they want.
+
+The feature is turned off until you enable it in [Cart & Checkout Settings](/guide/settings-configuration/cart-checkout-settings). Once it is on, the card a customer marks as their default is also used for their subscription renewals, so updating it in one place keeps their recurring payments running.
 
 ---
 

@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-08-09T05:03:36.465Z",
-  "total_pages": 143,
+  "last_scraped": "2026-08-16T05:05:19.198Z",
+  "total_pages": 145,
   "failed_urls_count": 8,
   "sections": [
     {
@@ -37,7 +37,7 @@
       "slug": "customer-dashboard",
       "url": "https://docs.fluentcart.com/guide/customer-dashboard/",
       "file": "categories/customer-dashboard.md",
-      "page_count": 7,
+      "page_count": 8,
       "pages": [
         {
           "title": "Customer Dashboard ​",
@@ -50,6 +50,10 @@
         {
           "title": "Licenses ​",
           "url": "https://docs.fluentcart.com/guide/customer-dashboard/licenses"
+        },
+        {
+          "title": "Payment Methods ​",
+          "url": "https://docs.fluentcart.com/guide/customer-dashboard/payment-methods"
         },
         {
           "title": "Profile Management ​",
@@ -74,7 +78,7 @@
       "slug": "customization-and-themes",
       "url": "https://docs.fluentcart.com/guide/customization-and-themes/",
       "file": "categories/customization-and-themes.md",
-      "page_count": 12,
+      "page_count": 13,
       "pages": [
         {
           "title": "Advanced Customization with CSS Variables ​",
@@ -99,6 +103,10 @@
         {
           "title": "FluentCart Bricks Blocks ​",
           "url": "https://docs.fluentcart.com/guide/customization-and-themes/fluentcart-bricks-blocks"
+        },
+        {
+          "title": "FluentCart Divi Modules ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/fluentcart-divi-modules"
         },
         {
           "title": "FluentCart Shortcodes ​",
