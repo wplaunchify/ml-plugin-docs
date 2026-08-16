@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-08-09T19:02:50.541Z",
-  "total_pages": 3706,
+  "last_scraped": "2026-08-16T19:22:02.239Z",
+  "total_pages": 3727,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,92 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3706,
+      "page_count": 3727,
       "pages": [
+        {
+          "title": "LWN Multi-Step Checkout",
+          "url": "https://woocommerce.com/document/lwn-ms-checkout/"
+        },
+        {
+          "title": "Shared Space Booking",
+          "url": "https://woocommerce.com/document/shared-space-booking/"
+        },
+        {
+          "title": "B2B Quick Order Grid: Bulk Purchase, CSV Import, Barcode",
+          "url": "https://woocommerce.com/document/b2b-quick-order-grid/"
+        },
+        {
+          "title": "NetSuite Integration by SoftXone",
+          "url": "https://woocommerce.com/document/netsuite-integration-2/"
+        },
+        {
+          "title": "QR Payments NBU",
+          "url": "https://woocommerce.com/document/nbu-qr-pay/"
+        },
+        {
+          "title": "Shipping Calculator on Product Page",
+          "url": "https://woocommerce.com/document/shipping-calculator-on-product-page/"
+        },
+        {
+          "title": "Troubleshooting",
+          "url": "https://woocommerce.com/document/saai-ten4wc/troubleshooting/"
+        },
+        {
+          "title": "Token Expiry Notifier — Developer Reference",
+          "url": "https://woocommerce.com/document/saai-ten4wc/token-expiry-notifier-developer-reference/"
+        },
+        {
+          "title": "Email Templates",
+          "url": "https://woocommerce.com/document/saai-ten4wc/email-templates/"
+        },
+        {
+          "title": "Token Expiry Notifier",
+          "url": "https://woocommerce.com/document/saai-ten4wc/"
+        },
+        {
+          "title": "Pickscan",
+          "url": "https://woocommerce.com/document/pickscan/"
+        },
+        {
+          "title": "Use stable encryption keys for Xero credentials",
+          "url": "https://woocommerce.com/document/xero/use-stable-encryption-keys-for-xero-credentials/"
+        },
+        {
+          "title": "Customize Xero invoices with code",
+          "url": "https://woocommerce.com/document/xero/customize-xero-invoices-with-code/"
+        },
+        {
+          "title": "Essential Trust Badges & Icons",
+          "url": "https://woocommerce.com/document/trust-badges-and-icons/"
+        },
+        {
+          "title": "Multicurrency Switcher and Converter",
+          "url": "https://woocommerce.com/document/multicurrency-switcher-and-converter/"
+        },
+        {
+          "title": "Multilingual and Multi-Currency Product Feeds",
+          "url": "https://woocommerce.com/document/multilingual-and-multi-currency-product-feeds/"
+        },
+        {
+          "title": "Connect Booking & Appointment Plugin to AI Assistants Using MCP",
+          "url": "https://woocommerce.com/document/connect-booking-appointment-plugin-to-ai-assistants-using-mcp/"
+        },
+        {
+          "title": "Connect Abandoned Cart Pro to AI Assistants Using MCP",
+          "url": "https://woocommerce.com/document/connect-abandoned-cart-pro-to-ai-assistants-using-mcp/"
+        },
+        {
+          "title": "Connect Order Delivery Date Pro to AI Assistants Using MCP",
+          "url": "https://woocommerce.com/document/connect-order-delivery-date-pro-to-ai-assistants-using-mcp/"
+        },
+        {
+          "title": "Understanding the Excellence Verified badge on the Woo Marketplace",
+          "url": "https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/"
+        },
+        {
+          "title": "Remove USPS Flat Rate envelopes with a code snippet",
+          "url": "https://woocommerce.com/document/remove-usps-flat-rate-envelopes-code-snippet/"
+        },
         {
           "title": "Shopify Data Migrator To WooCommerce",
           "url": "https://woocommerce.com/document/shopify-data-migrator-to-woocommerce/"
@@ -170,7 +254,7 @@
           "url": "https://woocommerce.com/document/cart-free-gift/"
         },
         {
-          "title": "Minimum/Maximum Order Amount",
+          "title": "Minimum and Maximum Order Amount",
           "url": "https://woocommerce.com/document/minimum-maximum-order-amount/"
         },
         {
@@ -4210,8 +4294,8 @@
           "url": "https://woocommerce.com/document/dakota-next/"
         },
         {
-          "title": "QODE Variation Swatches for WooCommerce Pro",
-          "url": "https://woocommerce.com/document/qode-variation-swatches-for-woocommerce-pro/"
+          "title": "How to Hide Sites from the Store Picker",
+          "url": "https://woocommerce.com/document/how-to-hide-sites-from-store-picker/"
         },
         {
           "title": "Troubleshooting WooCommerce Bookings",
@@ -5806,8 +5890,8 @@
           "url": "https://woocommerce.com/document/woocommerce-shortcodes/troubleshooting-shortcodes/"
         },
         {
-          "title": "Product Category Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/product-category/"
+          "title": "Troubleshooting Orders",
+          "url": "https://woocommerce.com/document/managing-orders/troubleshooting-orders/"
         },
         {
           "title": "Feature, Filter, and Sort Products",
@@ -9886,8 +9970,8 @@
           "url": "https://woocommerce.com/document/customer-support-for-woocommerce/"
         },
         {
-          "title": "How to set specific commission rates for product/product category",
-          "url": "https://woocommerce.com/document/affiliate-for-woocommerce/how-to-set-different-affiliate-commission-rates-for-product-or-product-category/"
+          "title": "WooCommerce SEO by WordLift",
+          "url": "https://woocommerce.com/document/e-commerce-seo-by-wordlift/"
         },
         {
           "title": "Merge Orders",
@@ -10318,7 +10402,7 @@
           "url": "https://woocommerce.com/document/wholesale/wholesale-for-woocommerce/"
         },
         {
-          "title": "Odoo Integration for WooCommerce",
+          "title": "Odoo for WooCommerce",
           "url": "https://woocommerce.com/document/odoo-for-woocommerce-configuration/"
         },
         {
@@ -11966,8 +12050,8 @@
           "url": "https://woocommerce.com/document/subscriptions/resubscribe/"
         },
         {
-          "title": "Filters",
-          "url": "https://woocommerce.com/document/groups-woocommerce/api/filters/"
+          "title": "Selling Unlimited Memberships",
+          "url": "https://woocommerce.com/document/groups-woocommerce/memberships/selling-unlimited-memberships/"
         },
         {
           "title": "Selling Time-limited Memberships",
@@ -12086,8 +12170,8 @@
           "url": "https://woocommerce.com/document/google-product-feed-product-review-feeds/"
         },
         {
-          "title": "Mailchimp for WooCommerce Memberships",
-          "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
+          "title": "[woocommerce_product_filter_tag]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_tag/"
         },
         {
           "title": "[woocommerce_product_filter_category]",
@@ -13418,7 +13502,7 @@
           "url": "https://woocommerce.com/document/woocommerce-ninjaforms-product-addons/"
         },
         {
-          "title": "WooCommerce Anti-Fraud",
+          "title": "Anti-Fraud for WooCommerce",
           "url": "https://woocommerce.com/document/woocommerce-anti-fraud/"
         },
         {
