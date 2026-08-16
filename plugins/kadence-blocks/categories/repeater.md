@@ -99,7 +99,7 @@ For a sponsors section we can use the following blocks to display our content:
 
 Sponsor Description -> Dynamic HTML
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/07/kSz1qkTRVId8EF_8P07VJLLO3Q5utrev55TD0kco2opf6gpoGJyju_9Hf3BIhyiRaN3WFzlYICAyn199dWTDnHajf_KkLY4BbK_tAnVUlopwf3Gzep-frxoF3gghthCJxuHlOjqpLIDHuv5TmXPhVBg.png)
+![](https://docs.nexcess.com/wp-content/uploads/2023/08/repeater-2.webp)
 
 Finally, we need to link our repeater sub field data to the blocks that will display them. This will work just like the Kadence Blocks Pro Dynamic Content system. When editing a block that supports dynamic content you’ll see this icon:
 
@@ -115,7 +115,7 @@ Enable the “Use Repeater Context” option to load data from our containing Re
 
 Repeat this process with dynamic fields for the link, title, and description.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/07/h-Y5cbkRtIvQA88AjctRaTAgNV5YmPuewypc5NhyhvQu03TYXhzP_h4q-8-bWPg6G19j-Zwt1lqK6IxIxXUao2yUQzrJXFx-Hsy1eTtr-epauijd26qAzF9vVPFpLZokJJVQc97cTQow0Qt7vAXEAoE.png)
+![](https://docs.nexcess.com/wp-content/uploads/2023/08/repeater.webp)
 
 Now that your data is hooked up you can continue to refine the design of the sponsors section using any block or design options you choose.
 
