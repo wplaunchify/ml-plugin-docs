@@ -8,17 +8,11 @@
 
 **Source:** [https://wpsheeteditor.com/bulk-increase-woocommerce-prices-percentage/](https://wpsheeteditor.com/bulk-increase-woocommerce-prices-percentage/)
 
-This tutorial explains how to bulk increase WooCommerce product prices by a percentage using the **WP Sheet Editor** plugin, overcoming the limitations of WooCommerce’s native pricing tools. It covers multiple use cases — adjusting prices for simple products, product variations, specific categories or attributes, and products within a certain price range. Each section provides step-by-step instructions with screenshots, guiding users through filtering the exact products they want to edit and applying a percentage-based price increase in seconds. The post is designed for store owners who need to quickly respond to inflation, supplier cost hikes, or seasonal demand surges while maintaining profit margins.
+This tutorial explains how to bulk increase WooCommerce product prices by a percentage using the **WP Sheet Editor** plugin. It covers multiple use cases: adjusting prices for simple products, product variations, specific categories or attributes, and products within a certain price range.
 
-## Quick Summary
+The native “increase existing price by fixed amount or percentage” option in WooCommerce is insufficient for stores that want to filter products based on various advanced criteria: *category, attribute, simple product, variable product, current price range, etc.*
 
-This guide shows you how to bulk increase WooCommerce product prices by a percentage using WP Sheet Editor. Here are the four methods covered:
-
-- **Simple products:** Filter by Product Type = Simple, then apply a percentage increase to parent products.
-- **Product variations:** Apply a percentage increase directly to variation rows without modifying parent products.
-- **Categories or attributes:** Filter by taxonomy (such as Clothing or Brand) before applying the price hike.
-- **Specific price ranges:** Filter products by current Regular Price (e.g., under $20) and update only those items.
-The native “increase existing price by fixed amount or percentage” option in WooCommerce is insufficient for stores that want to filter products based on various advanced criteria: *category, attribute, simple product, variable product, current price range, etc.* If you need a comprehensive overview of general price editing options, see our guide on how to [bulk edit product prices in WooCommerce](https://wpsheeteditor.com/woocommerce-bulk-edit-product-prices/). In this tutorial, we will show you how to bulk increase WooCommerce prices by a percentage with **WP Sheet Editor**. This plugin allows you to view and manage your WooCommerce products in an intuitive spreadsheet interface right on the WordPress admin dashboard.
+If you need a comprehensive overview of general price editing options, see our guide on how to [bulk edit product prices in WooCommerce](https://wpsheeteditor.com/woocommerce-bulk-edit-product-prices/).
 
 There are several reasons that may prompt you to raise prices of your WooCommerce products by a specific percentage:
 
@@ -36,15 +30,6 @@ After installing and activating the plugin, go to **WP Sheet Editor > Edit produ
 ![WooCommerce product catalog displayed in the WP Sheet Editor spreadsheet interface](https://media.wpsheeteditor.com/wp-content/uploads/2026/06/10202749/woocommerce-bulk-increase-prices-by-a-percentage.jpg)
 
 Table of Contents
-
-Let’s consider 4 methods to bulk increase WooCommerce prices.
-
-| Method | Filter Products By | Bulk Edit Field | Edit Type | Apply To |
-| --- | --- | --- | --- | --- |
-| 1. Simple Products | Type = Simple | Regular Price | Increase by percentage | Parent products only |
-| 2. Product Variations | No filter needed (all variations) | Regular Price | Increase by percentage | Variations only |
-| 3. Category or Attribute | Enter category/attribute in taxonomy search | Regular Price | Increase by percentage | Parent products or variations |
-| 4. Specific Price Range | Regular Price < 20 (or custom range) | Regular Price | Increase by percentage | Parent products or variations |
 
 ## Increase prices by percentage for simple products
 
@@ -114,7 +99,7 @@ The **Edit only variations** option is key as it ensures only product variation 
 
 ## Increase prices by percentage for specific product category or attribute
 
-We’ve seen how to increase the prices of all products or variations across the board. But if you want to edit only the products or variations that belong to a specific category or have a specific attribute, you can easily target them with **WP Sheet Editor**. Just filter the products by category or attribute and edit them in bulk.
+If you want to edit only the products or variations that belong to a specific category or have a specific attribute, you can easily target them with **WP Sheet Editor**. Just filter the products by category or attribute and edit them in bulk.
 
 ### Step 1. Open the “Search” tool
 
@@ -163,7 +148,7 @@ Once you have selected the values, click on **Run search**.
 
 ![Configuring advanced filters to find products with a regular price less than twenty dollars](https://media.wpsheeteditor.com/wp-content/uploads/2026/06/10210220/search-product-by-price-range.png)
 
-> Note: You can use multiple advanced filters and operators simultaneously to target a highly specific price range—for example, filtering for products with a regular price greater than $10 but less than $20.
+**Note:** You can use multiple advanced filters and operators simultaneously to target a highly specific price range—for example, filtering for products with a regular price greater than $10 but less than $20.
 
 ### Step 3. Open the “Bulk Edit” tool
 
@@ -182,8 +167,6 @@ Once you open the bulk editor, select these values to run the price modification
 
 ![Final bulk edit settings to execute percentage increase on products matching specific price filters](https://media.wpsheeteditor.com/wp-content/uploads/2026/06/10210606/increase-prices-by-price-range.png)
 
-Managing price adjustments in a WooCommerce store doesn’t have to be a tedious, manual chore. Whether you need to counter inflation, adapt to supplier cost hikes, or capitalize on high-demand seasons, the ability to quickly apply percentage-based price increases is critical for protecting your profit margins. While the native WooCommerce tools limit how you filter and select the products you want to update, **WP Sheet Editor** gives you total control. By combining advanced search filters with the spreadsheet interface, you can isolate exactly what you need—whether it’s simple products, specific variations, targeted categories, or precise price ranges—and safely bulk update thousands of prices in seconds.
-
 ## Frequently Asked Questions
 
 ### Can I bulk increase sale prices instead of regular prices?
@@ -196,11 +179,7 @@ No. WooCommerce treats variation prices independently from parent product prices
 
 ### Can I round updated prices to end in .99 or whole numbers after applying a percentage increase?
 
-Yes. WP Sheet Editor includes built-in formatting options in the bulk editor to round calculated prices to two decimal places, whole numbers, or specific pricing patterns like .99.
-
-### Can I undo a bulk price update if I enter the wrong percentage?
-
-Yes. You can use the WP Sheet Editor rollback feature or restore a database backup created prior to running the bulk edit operation.
+Yes. Follow [this tutorial](https://wpsheeteditor.com/woocommerce-add-99-cents-decimal-prices/).
 
 You can download the plugin here:
 

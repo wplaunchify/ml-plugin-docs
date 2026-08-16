@@ -124,10 +124,6 @@ Once applied, the product prices on every order included in your search are incr
 
 Yes. The Search tool filters by any order status, including processing, on-hold, completed, or cancelled. Change the Value field in the search filter from “Pending payment” to the status you need, then run the same Bulk Edit steps.
 
-### Can I undo a bulk price change after running it?
-
-The plugin does not include a built-in bulk undo for price edits. Before running a large bulk edit, it’s a good practice to export the affected orders to CSV first, so you have a backup of the original prices in case you need to restore them.
-
 ### What’s the difference between decreasing by percentage and decreasing by number?
 
 Decreasing by percentage reduces each product’s price proportionally, so a product priced at $100 with a 10% decrease becomes $90, while a product priced at $50 becomes $45. Decreasing by number subtracts a fixed amount from every product price regardless of its original price, so a $5 decrease makes a $100 product $95 and a $50 product $45. The same logic applies to increases.
