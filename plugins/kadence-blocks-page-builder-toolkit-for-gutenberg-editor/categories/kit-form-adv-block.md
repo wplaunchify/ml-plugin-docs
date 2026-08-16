@@ -18,7 +18,7 @@ To integrate **Kit** with **Kadence Forms**, you must set up a **Kit** accou
 
 Get started by heading over to [Kit](https://kit.com/). You can create a new account by signing up for a free trial or logging into an existing account.
 
-![Kit home page screenshot](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-04-at-2.25.05-PM-scaled.png)
+![](https://docs.nexcess.com/wp-content/uploads/2025/06/kit-form-adv-block.webp)
 
 Creating a Form
 
