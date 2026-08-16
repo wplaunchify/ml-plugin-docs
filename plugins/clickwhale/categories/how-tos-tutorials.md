@@ -1204,9 +1204,9 @@ You don’t need to access your site’s code, nor have any technical knowledge.
 
 ### #1: Install ClickWhale
 
-**Head over to your**[WordPress Plugin](https://ppopotamus-haka.instawp.xyz/wp-admin/plugin-install.php?s=clickwhale&tab=search&type=term)**menu or**[https://clickwhale.pro/](https://clickwhale.pro/), download and install the ClickWhale plugin, and then activate it.
+Download the free ClickWhale plugin from the ClickWhale website. After confirming your email address, download the plugin as a ZIP file and upload it through **Plugins > Add New Plugin > Upload Plugin** in your WordPress dashboard. **Install and activate**the plugin, then complete the initial setup.
 
-![ClickWhale plugin](https://clickwhale.pro/wp-content/uploads/2023/10/ClickWhale-plugin-1024x408.png)
+For complete instructions, see our [How to Install ClickWhale](https://clickwhale.pro/docs/article/how-to-install-clickwhale) guide.
 
 ### #2: Create a New Google Tag Manager Account / Log In
 

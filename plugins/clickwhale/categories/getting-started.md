@@ -190,53 +190,115 @@ First, verify that you’re entering the correct license key from your purchase 
 
 **Source:** [https://clickwhale.pro/docs/article/how-to-install-clickwhale/](https://clickwhale.pro/docs/article/how-to-install-clickwhale/)
 
-It is simple to install ClickWhale on your site. This article will serve as your guide on how to install it.
+Installing ClickWhale is quick and easy. Follow the steps below to download the ClickWhale plugin, install it on your WordPress website, and complete the initial setup.
 
-The easiest way to install ClickWhale is via the *Plugins* menu in your site’s admin dashboard.
+## Step 1: Visit the Download Page
 
-Start by hovering over **Plugins** > **Add New** Plugin.
+Go to the [Pricing](https://clickwhale.pro/pricing/) page on the ClickWhale website and click **Download Now** under the Free plan.
 
-![How To Install Clickwhale Image - 1](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-Image-1.png)
+![ClickWhale Free Download](https://clickwhale.pro/wp-content/uploads/2026/08/ClickWhale-Free-Download.png)
 
-Search “ClickWhale” in the search bar on the upper right side.
+This will take you to the ClickWhale download page.
 
-You should see **ClickWhale** appear at the top of the search result. Then click the “**Install Now**” button to begin the installation.
+![ClickWhale Free Download Hero](https://clickwhale.pro/wp-content/uploads/2026/08/ClickWhale-Free-Download-Hero.png)
 
-![How To Install Clickwhale Image - 2](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-Image-2-1024x578.png)
+## Step 2: Request the Download
 
-The button will change to **Activate**after a few seconds. Click the **Activate** button to finish the installation.
+Scroll to the bottom of the download page.
 
-![How To Install Clickwhale Image - 3](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-Image-3-1024x685.png)
+Enter your email address and click **Download For FREE**.
 
-Once the activation is complete, you’ll see ClickWhale on the left side navigation of your site’s dashboard. Click **ClickWhale** and a prompt will appear with an “**Allow & Continue**” and “**Skip**” buttons. Click your preference button to start using the ClickWhale.
+We’ll send you a confirmation email. Click the confirmation link in the email to open the ClickWhale download page.
 
-![How To Install Clickwhale New Image - 4](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-New-Image-4-1024x486.png)
+![ClickWhale Download Confirmation](https://clickwhale.pro/wp-content/uploads/2026/08/ClickWhale-Download-Confirmation-1024x550.png)
 
-And you’re done! You may now start adding links, categories, link pages and more.
+## Step 3: Confirm Your Email Address
 
-![How To Install Clickwhale New Image - 5](https://clickwhale.pro/wp-content/uploads/2024/06/How-to-install-ClickWhale-New-Image-5-1024x486.png)
+Open the confirmation email from the ClickWhale Team and click **Click to Confirm Your Email Address**.
 
-FAQs
+![ClickWhale Confirm Email](https://clickwhale.pro/wp-content/uploads/2026/08/ClickWhale-Confirm-Email.png)
 
-**Where can I install ClickWhale?**
+You’ll be redirected to the ClickWhale download page.
 
-You can install ClickWhale directly from your WordPress dashboard by going to **Plugins > Add New Plugin**, searching for **ClickWhale**, and clicking **Install Now**. After the installation is complete, click **Activate**.
+![ClickWhale Your Download](https://clickwhale.pro/wp-content/uploads/2026/08/ClickWhale-Your-Download.png)
 
-**Do I need a ClickWhale Pro license to install ClickWhale?**
+## Step 4: Download the Plugin
 
-No. The installation process described in this guide is for the free version of ClickWhale, which can be installed directly from the WordPress Plugin Directory.
+On the download page, click **Start Download Now**.
 
-**What should I do after activating ClickWhale?**
+Your browser will download the ClickWhale plugin as a ZIP file. Keep the ZIP file for the next step.
 
-After activation, click **ClickWhale** in your WordPress dashboard. You’ll be prompted to choose **Allow & Continue** or **Skip** before accessing the plugin and creating your first links.
+**Note:**You don’t have to extract the ZIP file.
 
-**Where can I find ClickWhale after installation?**
+## Step 5: Upload the Plugin to WordPress
 
-Once ClickWhale is activated, it appears in the left-hand navigation menu of your WordPress dashboard. From there, you can access its features and settings.
+Log in to your WordPress admin dashboard.
 
-**Can I start creating links immediately after installation?**
+Navigate to **Plugins** and click **Add New Plugin**.
 
-Yes. Once ClickWhale is installed and activated, you can immediately start creating shortened links, organizing them into categories, creating Link Pages, and using other available features.
+Then click **Upload Plugin**
+
+![ClickWhale Upload Plugin](https://clickwhale.pro/wp-content/uploads/2026/08/ClickWhale-Upload-Plugin.png)
+
+Click **Choose File**, select the downloaded ClickWhale ZIP file, and click **Install Now**.
+
+![ClickWhale Install](https://clickwhale.pro/wp-content/uploads/2026/08/ClickWhale-Install.png)
+
+## Step 6: Activate ClickWhale
+
+Once the installation is complete, click **Activate Plugin**.
+
+![ClickWhale Activate Plugin](https://clickwhale.pro/wp-content/uploads/2026/08/ClickWhale-Activate-Plugin.png)
+
+ClickWhale has been successfully installed.
+
+## Step 7: Complete the Initial Setup
+
+After activation, click **ClickWhale** in the WordPress dashboard menu.
+
+Click **Allow & Continue** to receive important updates and share basic WordPress environment information, or click **Skip** to continue without sharing this information.
+
+![ClickWhale Accept and Continue](https://clickwhale.pro/wp-content/uploads/2026/08/ClickWhale-Accept-and-Continue.png)
+
+*You’re All Set!*
+
+ClickWhale is now installed and ready to use.
+
+You can now create and manage **Links, Smart Displays, Link Pages, Tracking Codes**, and other ClickWhale features from your WordPress dashboard.
+
+## FAQs
+
+**I didn’t receive the confirmation email. What should I do?**
+
+First, check your Spam or Junk folder. If you still can’t find the email, wait a few minutes and request the download again using the same email address. Make sure the email address was entered correctly.
+
+**The confirmation link doesn’t work.**
+
+If the confirmation link has expired or is no longer valid, simply request a new download from the ClickWhale download page to receive a new confirmation email.
+
+**Where is the plugin downloaded?**
+
+After clicking **Start Download Now**, your browser will download the ClickWhale plugin as a ZIP file. You can usually find it in your browser’s default **Downloads** folder.
+
+**Should I extract the ZIP file before uploading it to WordPress?**
+
+No. Upload the ZIP file exactly as it was downloaded. WordPress will extract and install the plugin automatically.
+
+**Why can’t I upload the plugin to WordPress?**
+
+Make sure you are uploading the original ClickWhale ZIP file and that your WordPress account has permission to install plugins. If you use WordPress.com, your current plan must support plugin installation. If the upload still fails, contact your hosting provider or our support team.
+
+**Can I install ClickWhale on multiple websites?**
+
+Yes. You can install the free version of ClickWhale on unlimited websites. ClickWhale Pro licenses have separate website activation limits based on the selected plan.
+
+**How do I update ClickWhale?**
+
+When a new version is available, you can update ClickWhale directly from your WordPress dashboard, just like any other plugin.
+
+**Where can I get help?**
+
+If you have any questions or need assistance with the installation, feel free to contact [our support team](https://clickwhale.pro/contact/). We’re happy to help.
 
 ---
 
