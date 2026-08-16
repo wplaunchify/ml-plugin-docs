@@ -8,6 +8,8 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-theme/using-the-wordpress-dashboard/](https://www.kadencewp.com/help-center/docs/kadence-theme/using-the-wordpress-dashboard/)
 
+**Coming soon:** SolidWP is becoming Kadence. You may see both names used while we update the product, documentation, and customer experience.
+
 To access the WordPress dashboard, you’ll need to first [log in to your WordPress site](https://solidwp.com/tutorials/wordpress-login/). Once you’ve logged in to your WordPress site, you’ll land here, the WordPress Dashboard.
 
 ## Exploring the WordPress Dashboard

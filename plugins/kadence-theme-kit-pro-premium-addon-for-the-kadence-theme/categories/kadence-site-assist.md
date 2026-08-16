@@ -56,7 +56,7 @@ Import Starter Site
 
 The next step consists of importing a **Starter Site**. When clicking on the Setup button, you will be brought to the AI Starter Template Library. Here you can pick and import your preferred AI-Powered Starter Template.
 
-![Classic Templates](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-04-10-at-12.32.02-PM-scaled.png)
+![](https://docs.nexcess.com/wp-content/uploads/2025/04/Screenshot-2025-04-10-at-12.32.02-PM-scaled-1.webp)
 
 If you are not using Kadence AI, and wish to use a **Pre-Designed Template**, you can navigate to the **Dashboard -> Site Assist -> Starter Templates** page and select the *Use a Classic Template* option. Then, you can import the Starter Template following the wizard.
 
