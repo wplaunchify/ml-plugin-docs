@@ -202,7 +202,6 @@ add_action( 'wp_footer', function() {
 jQuery(document).ready(function($) {
   // Replace 'https://example.com/new-page/' with your desired custom URL
   var customCalendarUrl = 'https://example.com/new-page/';
-
   // Target the 'View All Events' link in the Events List widget
   $('.tribe-events-widget-events-list__view-more a')
     .attr('href', customCalendarUrl);
@@ -301,79 +300,60 @@ Check out the snippet below to implement this feature!
 
 ```
 <?php //Do not copy this line
-
 class EventsListWidget_NewlyAddedEvents {
 	protected $constraints = array(
 		'sidebar_id'   => null,
 		'widget_id'    => null,
 		'widget_title' => null
 	);
-
 	public function __construct( array $constraints = array() ) {
 		$this->constraints = array_merge( $this->constraints, $constraints );
 		add_filter( 'widget_display_callback', array( $this, 'setup' ), 10, 3 );
 	}
-
 	public function setup( $instance, $widget, $args ) {
 		// We're interested only in the (advanced or regular) events list widgets
 		$targets = array( 'tribe-events-adv-list-widget', 'tribe-widget-events-list' );
 		if ( ! in_array( $widget->id_base, $targets ) ) {
 			return $instance;
 		}
-
 		// Check for constraints
 		if ( ! $this->constraints_met( $instance, $args ) ) {
 			return $instance;
 		}
-
 		// Modify behavior
 		add_filter( 'tribe_events_views_v2_widget_repository_args', array( $this, 'order_by_latest' ) );
-
 		return $instance;
 	}
-
 	protected function constraints_met( $instance, $args ) {
 		$fail = false;
-
 		// Should only run within a specific sidebar?
 		if ( ! is_null( $this->constraints['sidebar_id'] ) && $this->constraints['sidebar_id'] !== $args['id'] ) {
 			$fail = true;
 		}
-
 		// Should only run in relation to a specific instance of the widget?
 		if ( ! is_null( $this->constraints['widget_id'] ) && $this->constraints['widget_id'] !== $args['widget_id'] ) {
 			$fail = true;
 		}
-
 		// Should only run when the widget title is set to something specific?
 		if ( ! is_null( $this->constraints['widget_title'] ) && $this->constraints['widget_title'] !== $instance['title'] ) {
 			$fail = true;
 		}
-
 		return ! $fail;
 	}
-
 	public function order_by_latest( $args ) {
-
 		// Don't interfere in other queries
 		remove_filter( 'tribe_events_views_v2_widget_repository_args', array( $this, 'order_by_latest' ) );
-
 		// Tweak the actual orderby clause
 		add_filter( 'posts_orderby', array( $this, 'override_orderby' ), 100 );
-
 		return $args;
 	}
-
 	public function override_orderby( $orderby_sql ) {
 		global $wpdb;
-
 		// Don't interfere in other queries
 		remove_filter( 'posts_orderby', array( $this, 'override_orderby' ) );
-
 		return "$wpdb->posts.post_date DESC, $orderby_sql";
 	}
 }
-
 new EventsListWidget_NewlyAddedEvents();
 ```
 
@@ -412,18 +392,15 @@ add_action(
   15,
   3
 );
-
 // Here we utilize the hook variables to get our event, find the image, and echo the thumbnail.
 function my_action_add_event_featured_image( $file, $name, $template ) {
   // Get the event for reference - we'll need it.
   $event = $template->get('event');
-
   $link = sprintf(
     '<a href="%1$s">%2$s</a>',
     get_the_post_thumbnail_url( $event ),
     get_the_post_thumbnail( $event, 'thumbnail', array( 'class' => 'alignleft' ) )
   );
-
   echo $link;
 }
 ```
@@ -480,7 +457,6 @@ functions.php
 function my_action_add_event_featured_image( $file, $name, $template ) {
 	// Get the event for reference - we'll need it.
 	$event = $template->get('event');
-
 	// Here's where we get and display our image.
 }
 ```
@@ -538,7 +514,7 @@ $template->get_values()
 
 Here’s what we get:
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/List_Widget_Images_Template_1-1.png)This is a good start, but it still needs a little CSS to to style things, just like the first approach.
+![](https://docs.nexcess.com/wp-content/uploads/2019/10/List_Widget_Images_Template_1-1.webp)This is a good start, but it still needs a little CSS to to style things, just like the first approach.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/List_Widget_Images_Template_5-734x1024-1.png)A little CSS goes a long way!
 

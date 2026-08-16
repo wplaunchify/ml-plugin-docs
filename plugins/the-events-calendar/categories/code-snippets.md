@@ -95,9 +95,9 @@ style.css
 
  file.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/customizer-custom-css-tab-1024x647-1.png)The “Custom CSS” tab
+![](https://docs.nexcess.com/wp-content/uploads/2019/10/customizer-custom-css-tab-1024x647.webp)The “Custom CSS” tab
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/customizer-custom-css-panel-1024x651-1.png)The “Custom CSS” panel
+![](https://docs.nexcess.com/wp-content/uploads/2019/10/customizer-custom-css-panel-1024x651.webp)The “Custom CSS” panel
 
 Using the WordPress Customizer for CSS snippets is a super safe way to go, especially if you are uncomfortable or unable to access your theme’s files.
 

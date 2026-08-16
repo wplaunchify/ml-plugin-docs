@@ -10,7 +10,7 @@
 
 We have a [dedicated help desk](https://theeventscalendar.com/support/) where we provide support services for our premium plugins. **Please note that it may be 24-48 hours before we respond to new tickets** and we do not generally provide support over weekends. While we aim to be as fast as we can, we ask for your patience during periods of peak support activity.
 
-You must have an active subscription to receive support for our premium plugins and services. We [encourage you to log in](/my-account/) before [submitting a new ticket](https://theeventscalendar.com/support/) – that way, we’ll be able to connect you with the right team members a whole lot faster.
+You must have an active subscription to receive support for our premium plugins and services. We [encourage you to log in](/software/kadence/my-account-page/) before [submitting a new ticket](https://theeventscalendar.com/support/) – that way, we’ll be able to connect you with the right team members a whole lot faster.
 
 Alternatively, if you are looking for free support (for The Events Calendar, Event Tickets, or another free plugin) you can head over to the relevant WordPress.org forum and post your question there. These forums are not monitored daily and are primarily a place for community members to help one another … but we do check in and try to assist whenever possible:
 

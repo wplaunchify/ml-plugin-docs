@@ -36,7 +36,7 @@ Do you want to rearrange and customize the look of each event listing? For that,
 
 The Event Calendar widgets (in Appearance **→** Widgets) can be added within single event layouts.  Use the Beaver Builder’s **WordPress Widgets** group to drag and drop widgets such as the **Events Countdown** to your event.
 
-![Beaver Builder using WordPress Widgets](https://docs.nexcess.com/wp-content/uploads/2026/06/add-WordPress-widget-to-single-event-layout-scaled.png)
+![](https://docs.nexcess.com/wp-content/uploads/2020/06/add-WordPress-widget-to-single-event-layout-scaled-1.webp)
 
 ### Themer Events Modules
 

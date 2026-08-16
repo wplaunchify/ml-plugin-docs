@@ -92,20 +92,16 @@ To match the Latest Past Events count to your main list view setting:
 add_filter( 'tribe_context_latest_past_per_page', function( $value ) {
     return tribe_get_option( 'postsPerPage', 3 );
 } );
-
 add_filter(
     'tribe_events_views_v2_view_prev_url',
     function( $url, $canonical, $view ) {
         $parsed_url = wp_parse_url( $url );
-
         if ( empty( $parsed_url['query'] ) || false === strpos( 'eventDisplay=past', $parsed_url['query'] ) ) {
             return $url;
         }
-
         if ( ! empty( $parsed_url['path'] ) && false !== strpos( 'page', $parsed_url['path'] ) ) {
             return $url;
         }
-
         return add_query_arg( 'paged', '2', $url );
     },
     10,
@@ -179,18 +175,15 @@ functions.php
 
 ```
 <?php //Do not copy this line
-
 add_action( 'tribe_repository_events_pre_get_posts', function ( $query ) {
 	// Only modify the main frontend query
 	if ( is_admin() || ! $query->is_main_query() ) {
 		return;
 	}
-
 	// Use site's timezone safely
 	$timezone = wp_timezone();
 	$now      = new DateTime( 'now', $timezone );
 	$today    = $now->format( 'Y-m-d H:i:s' );
-
 	// Exclude events that have already started
 	$meta_query   = (array) $query->get( 'meta_query', [] );
 	$meta_query[] = [
@@ -199,7 +192,6 @@ add_action( 'tribe_repository_events_pre_get_posts', function ( $query ) {
 		'compare' => '>=',
 		'type'    => 'DATETIME',
 	];
-
 	$query->set( 'meta_query', $meta_query );
 }, 10 );
 ```
@@ -218,25 +210,20 @@ This snippet will hide the events in all main calendar views. Note that this als
 
 ```
 add_filter( 'tribe_events_views_v2_view_repository_args', 'tec_exclude_events_category', 10, 3 );
-
 function tec_exclude_events_category( $repository_args, $context, $view ) {
 	// Get the category we are looking at.
 	$context_category  = $context->get( 'event_category' );
-
 	// List of category slugs to be excluded
 	$excluded_categories = [
 		'my-category-slug',
 		'my-other-category-slug',
 	];
-
 	// Bail if we are looking at a category archive.
 	if ( in_array( $context_category, $excluded_categories, true ) ) {
 		return $repository_args;
 	}
-
 	// Otherwise exclude events in the given categories.
 	$repository_args['category_not_in'] = $excluded_categories;
-
 	return $repository_args;
 }
 ```
@@ -247,33 +234,27 @@ If you don’t want to hide the events in a given category in all views, you c
 
 ```
 add_filter( 'tribe_events_views_v2_view_repository_args', 'tec_exclude_events_category', 10, 3 );
-
 function tec_exclude_events_category( $repository_args, $context, $view ) {
 	// Get the category we are looking at.
 	$context_category  = $context->get( 'event_category' );
-
 	// List of views where the category should be hidden
 	$hide_in_views = [
 		'month',
 		'list',
 	];
-
 	// List of category slugs to be excluded
 	$excluded_categories = [
 		'my-category-slug',
 		'my-other-category-slug',
 	];
-
 	// Bail if we are looking at a category archive.
 	if ( in_array( $context_category, $excluded_categories, true ) ) {
 		return $repository_args;
 	}
-
 	// If on a given view, exclude events in the given categories.
 	if ( in_array( $view->get_slug(), $hide_in_views, true ) ) {
 		$repository_args['category_not_in'] = $excluded_categories;
 	}
-
 	return $repository_args;
 }
 ```
@@ -289,7 +270,6 @@ add_filter( 'tribe_events_views_v2_view_day_repository_args', 'tec_exclude_event
 add_filter( 'tribe_events_views_v2_view_photo_repository_args', 'tec_exclude_events_category', 10, 3 );
 add_filter( 'tribe_events_views_v2_view_week_repository_args', 'tec_exclude_events_category', 10, 3 );
 add_filter( 'tribe_events_views_v2_view_map_repository_args', 'tec_exclude_events_category', 10, 3 );
-
 function tec_exclude_events_category( $repository_args, $context, $view ) {
 	// List of category slugs to be excluded
 	$excluded_categories = [
@@ -297,7 +277,6 @@ function tec_exclude_events_category( $repository_args, $context, $view ) {
 		'my-other-category-slug',
 	];
 	$repository_args['category_not_in'] = $excluded_categories;
-
 	return $repository_args;
 }
 ```
@@ -315,7 +294,6 @@ The above snippets will run on both the main calendar pages and the ones created
 
 ```
 add_filter( 'tribe_events_views_v2_view_repository_args', 'tec_exclude_events_category', 10, 3 );
-
 function tec_exclude_events_category( $repository_args, $context, $view ) {
 	// If not shortcode calendar then bail and show everything
 	if ( ! $context->is('shortcode') ) {
@@ -328,7 +306,6 @@ function tec_exclude_events_category( $repository_args, $context, $view ) {
 		'my-other-category-slug',
 	];
 	$repository_args['category_not_in'] = $excluded_categories;
-
 	return $repository_args;
 }
 ```
@@ -348,7 +325,6 @@ While the filters you need to use remain the same (choose the appropriate filter
 ```
 // Hide in All Views
 add_filter( 'tribe_events_views_v2_view_repository_args', 'tec_exclude_events_category', 10, 3 );
-
 //Hide in One Specific View Only
 add_filter( 'tribe_events_views_v2_view_month_repository_args', 'tec_exclude_events_category', 10, 3 );
 add_filter( 'tribe_events_views_v2_view_list_repository_args', 'tec_exclude_events_category', 10, 3 );
@@ -356,14 +332,12 @@ add_filter( 'tribe_events_views_v2_view_day_repository_args', 'tec_exclude_event
 add_filter( 'tribe_events_views_v2_view_photo_repository_args', 'tec_exclude_events_category', 10, 3 );
 add_filter( 'tribe_events_views_v2_view_week_repository_args', 'tec_exclude_events_category', 10, 3 );
 add_filter( 'tribe_events_views_v2_view_map_repository_args', 'tec_exclude_events_category', 10, 3 );
-
 function tec_exclude_events_category( $repository_args, $context, $view ) {
     // Get all terms in the 'tribe_events_cat' taxonomy
     $terms = get_terms([
         'taxonomy'   => 'tribe_events_cat',
         'hide_empty' => false, // Set to true if you want to exclude empty terms
     ]);
-
     // Check for errors or empty result
     if ( ! is_wp_error( $terms ) && ! empty( $terms ) ) {
         // Convert terms to an array of term slugs
@@ -372,16 +346,13 @@ function tec_exclude_events_category( $repository_args, $context, $view ) {
         // Handle case where no terms are found or there's an error
         $term_slugs = [];
     }
-
     // List of category slugs to be excluded
     $excluded_categories = [
 		'my-category-slug',
 		'my-other-category-slug',
     ];
-
     // Remove the excluded categories from the full list.
     $show_categories = array_diff( $term_slugs, $excluded_categories );
-
     // Build the tax_query argument to strictly include only events in $show_categories
     $repository_args['category'] = $show_categories;
     return $repository_args;
@@ -439,18 +410,15 @@ To exclude one or more specific events from calendar views without affecting the
 
 ```
 add_filter( 'tribe_events_views_v2_view_repository_args', 'tec_exclude_specific_event_ids', 10, 3 );
-
 function tec_exclude_specific_event_ids( $repository_args, $context, $view ) {
     // List of event post IDs to exclude
     $excluded_event_ids = [ 1234, 2222 ]; // Replace with your actual event post IDs
-
     // Merge with existing 'post__not_in' if set
     if ( isset( $repository_args['post__not_in'] ) && is_array( $repository_args['post__not_in'] ) ) {
         $repository_args['post__not_in'] = array_merge( $repository_args['post__not_in'], $excluded_event_ids );
     } else {
         $repository_args['post__not_in'] = $excluded_event_ids;
     }
-
     return $repository_args;
 }
 ```
@@ -485,14 +453,11 @@ hidden
 
 ```
 add_filter( 'tribe_events_views_v2_view_repository_args', 'tec_exclude_events_by_tag', 10, 3 );
-
 function tec_exclude_events_by_tag( $repository_args, $context, $view ) {
     // List of tag slugs to exclude
     $excluded_tags = [ 'hidden' ]; // Replace with your actual tag slugs
-
     // Use 'tag_not_in' to exclude events with these tags
     $repository_args['tag_not_in'] = $excluded_tags;
-
     return $repository_args;
 }
 ```
@@ -501,7 +466,7 @@ function tec_exclude_events_by_tag( $repository_args, $context, $view ) {
 
 By default, TEC displays both the start and end time for events across all views.
 
-![An event showing both start time and end time](https://docs.nexcess.com/wp-content/uploads/2026/06/single-start-end-time.png)
+![](https://docs.nexcess.com/wp-content/uploads/2020/02/single-start-end-time-1024x890.webp)
 
 #### Using Settings (Easiest)
 
@@ -526,7 +491,7 @@ function tribe_remove_end_date( $settings ) {
 }
 ```
 
-![An event showing only the start time after the end time has been removed](https://docs.nexcess.com/wp-content/uploads/2026/06/single-start-time.png)
+![](https://docs.nexcess.com/wp-content/uploads/2020/02/single-start-time-1024x890.webp)
 
 To remove all times entirely (start and end):
 
@@ -659,7 +624,6 @@ add_filter( 'tribe_events_title_tag', function ( $title ) {
 	} elseif ( tribe_context()->get( 'view_request' ) === 'map' ) {
 		$title = 'Map event page';
 	}
-
 	return $title;
 } );
 ```
@@ -1039,19 +1003,15 @@ event-sold-out
  * Add an 'event-sold-out' class to the post class of events that are sold out.
  */
 add_filter( 'post_class', function( $classes, $class, $post_id ) {
-
     // Only apply this to event post types
     if ( get_post_type( $post_id ) !== 'tribe_events' ) {
         return $classes;
     }
-
     // Check if the event has sold out tickets
     if ( function_exists( 'tribe_events_has_soldout' ) && tribe_events_has_soldout( $post_id ) ) {
         $classes[] = 'event-sold-out';
     }
-
     return $classes;
-
 }, 10, 3 );
 ```
 
@@ -1077,24 +1037,19 @@ To fade out sold-out events in Photo View, you can use CSS like this:
     filter: grayscale(100%);
     pointer-events: none; /* Optional: prevents clicks */
 }
-
 /* Add a custom label or ribbon if desired */
 .tribe-events-pro-photo__event.event-sold-out::after {
     content: "SOLD OUT";
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     background: rgba(200, 0, 0, 0.9);
     color: #fff;
-
     padding: 12px 30px;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 2px;
-
     text-align: center;
     z-index: 20;
 }

@@ -79,7 +79,7 @@ plugins
 
  folder.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/ftp-tec-ecp-complete.png)The decompressed plugin folders have been added to the 
+![](https://docs.nexcess.com/wp-content/uploads/2019/10/ftp-tec-ecp-complete-1.webp)The decompressed plugin folders have been added to the 
 ```
 wp-content/plugins
 ```
