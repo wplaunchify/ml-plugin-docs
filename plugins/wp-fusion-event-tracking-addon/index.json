@@ -2,8 +2,8 @@
   "plugin_slug": "wp-fusion-event-tracking-addon",
   "plugin_name": "WP Fusion - Event Tracking Addon",
   "documentation_url": "https://wpfusion.com/documentation/",
-  "last_scraped": "2026-08-09T14:04:41.910Z",
-  "total_pages": 484,
+  "last_scraped": "2026-08-16T14:02:44.668Z",
+  "total_pages": 485,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -1531,8 +1531,12 @@
       "slug": "learning-management",
       "url": "https://wpfusion.com/documentation/learning-management/",
       "file": "categories/learning-management.md",
-      "page_count": 19,
+      "page_count": 20,
       "pages": [
+        {
+          "title": "PressPrimer Quiz",
+          "url": "https://wpfusion.com/documentation/learning-management/pressprimer-quiz/"
+        },
         {
           "title": "Academy LMS",
           "url": "https://wpfusion.com/documentation/learning-management/academy-lms/"
