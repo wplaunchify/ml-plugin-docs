@@ -298,6 +298,10 @@ WooCommerce Subscriptions is a WooCommerce extension that lets customers subscri
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+	**Excellence verified**
+		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
+					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
+			Excellence verified
 
 Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
 
