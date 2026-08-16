@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16T08:55:46.734Z",
+  "last_updated": "2026-08-16T09:01:21.652Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -788,7 +788,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-08-09T08:58:26.550Z",
+      "last_scraped": "2026-08-16T09:01:21.652Z",
       "page_count": 80,
       "categories": [
         "administration",
