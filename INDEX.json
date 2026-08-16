@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16T20:10:53.746Z",
+  "last_updated": "2026-08-16T20:33:18.368Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2332,7 +2332,7 @@
       "slug": "luckywp-table-of-contents",
       "name": "LuckyWP Table of Contents",
       "documentation_url": "https://wordpress.org/plugins/luckywp-table-of-contents/",
-      "last_scraped": "2026-08-09T20:16:45.089Z",
+      "last_scraped": "2026-08-16T20:33:18.368Z",
       "page_count": 2,
       "categories": [
         "advanced",
