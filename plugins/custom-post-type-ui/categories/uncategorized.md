@@ -299,6 +299,18 @@ Individual sites can have their index rebuilt within the network index by visiti
 
 Available for purchase at [WP Search with Algolia Pro on Pluginize.com](https://pluginize.com/plugins/wp-search-with-algolia-pro/)
 
+## 1.7.0 – 2026-08-11
+
+- Updated: Minimum required PHP version is now 8.0.
+- Added: Implemented a Re-index button on the post edit screen.
+- Added: Added index status display on the post edit screen.
+- Added: First pass at “index health” panel and admin dashboard widget.
+- Added: UI settings page as a method to include custom fields metadata, including Advanced Custom Fields, CMB2, Meta Box plugins support.
+- Added: Ability to exclude specific sites in network from inclusion in network-wide indexing.
+- Added: Network table list column for indexing status with network-wide indexing.
+- Added: Algolia event tracking for completed orders.
+- Fixed: Show admin notice on successful save of SEO settings page.
+
 ## 1.6.1 – 2025-09-25
 
 - Fixed: PHP compatibility issue for PHP7.4
