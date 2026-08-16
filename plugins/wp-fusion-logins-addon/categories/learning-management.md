@@ -4,6 +4,62 @@
 
 ---
 
+## PressPrimer Quiz
+
+**Source:** [https://wpfusion.com/documentation/learning-management/pressprimer-quiz/](https://wpfusion.com/documentation/learning-management/pressprimer-quiz/)
+
+### Overview
+
+PressPrimer Quiz is a quiz plugin for WordPress. The WP Fusion integration is included in the PressPrimer Quiz School add-on and supports both WP Fusion and WP Fusion Lite.
+
+Using WP Fusion and [PressPrimer Quiz](https://wpfusion.com/go/pressprimerquiz), you can:
+
+- Apply tags in your CRM when someone signs up for, completes, passes, or fails a quiz
+- Add new contacts to lists in your CRM when they enter their email address to take a quiz
+- Apply different tags for each quiz
+
+### Setup
+
+After installing the PressPrimer Quiz School add-on, navigate to **PressPrimer Quiz → Settings → Integrations** and scroll down to the **WP Fusion** section. Turn on **Enable WP Fusion tagging**.
+
+Once enabled, you can select the default tags to apply to all quizzes globally. The tag pickers list tags from the CRM you connected to WP Fusion.
+
+![PressPrimer Quiz WP Fusion global settings showing Enable WP Fusion tagging and default tag pickers](https://wpfusion.com/wp-content/uploads/2026/08/PressPrimer_Quiz_-_Global_Settings.png)
+
+### Applying Global Tags and Lists
+
+Tags can be applied based on four events related to quizzes:
+
+- **Sign-up** — Applied when a quiz attempt begins and the person’s email address is known.
+- **Completion** — Applied when a quiz attempt is completed.
+- **Pass** — Applied when someone achieves a passing score.
+- **Fail** — Applied when someone falls short of the passing score.
+
+If your connected CRM supports lists, you can add contacts to one or more lists when they enter an email address to take a quiz.
+
+### Per-Quiz Tags
+
+The tags configured in PressPrimer Quiz settings are defaults for all quizzes. Individual quizzes can have their own tags for the same four events, and these are set from the **Premium Settings** tab in the quiz editor.
+
+Per-quiz tags are applied in addition to any site-wide defaults.
+
+![PressPrimer Quiz Premium Settings tab with per-quiz WP Fusion tags](https://wpfusion.com/wp-content/uploads/2026/08/PressPrimer_Quiz_-_Quiz_Settings.png)
+
+### Guests and Marketing Consent
+
+PressPrimer Quiz allows guests to take quizzes by entering an email address before they begin. Logged-in users always have any tags or list settings applied, but guests are only synced if they checked the marketing consent checkbox when entering their email address. Guests who decline are never added to your CRM.
+
+The consent checkbox is managed under **PressPrimer Quiz → Settings → General**, and must be enabled if you plan to tag guest quiz takers.
+
+![PressPrimer Quiz guest email capture form with marketing consent checkbox](https://wpfusion.com/wp-content/uploads/2026/08/PressPrimer_Quiz_-_Guest_Email_Consent.png)
+
+### Notes
+
+- Spaced repetition review quizzes never trigger tagging. Only regular quizzes sync records to your CRM.
+- CRM problems never affect quiz taking. If a tag cannot be applied, the attempt still completes and the user receives a score. The error is recorded in WP Fusion logs.
+
+---
+
 ## Academy LMS
 
 **Source:** [https://wpfusion.com/documentation/learning-management/academy-lms/](https://wpfusion.com/documentation/learning-management/academy-lms/)
