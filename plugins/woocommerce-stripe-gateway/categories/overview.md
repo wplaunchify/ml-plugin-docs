@@ -122,14 +122,18 @@ While we are unable to assist with Stripe account issues (including but not limi
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
 Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Klarna
+### WooCommerce Tax
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+	**Excellence verified**
+		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
+					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
+			Excellence verified
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
 
 ---
 
