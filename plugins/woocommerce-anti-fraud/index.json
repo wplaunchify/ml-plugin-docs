@@ -2,7 +2,7 @@
   "plugin_slug": "woocommerce-anti-fraud",
   "plugin_name": "WooCommerce Anti Fraud",
   "documentation_url": "https://woocommerce.com/document/woocommerce-anti-fraud/",
-  "last_scraped": "2026-08-09T11:50:38.665Z",
+  "last_scraped": "2026-08-16T11:53:46.175Z",
   "total_pages": 1,
   "failed_urls_count": 0,
   "sections": [
@@ -14,7 +14,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "WooCommerce Anti-Fraud",
+          "title": "Anti-Fraud for WooCommerce",
           "url": "https://woocommerce.com/document/woocommerce-anti-fraud/"
         }
       ]
