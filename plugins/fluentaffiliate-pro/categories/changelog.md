@@ -12,6 +12,15 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentAffiliate.
 
+## FluentAffiliate v1.6.01 ​
+
+*Released on Aug 10, 2026*
+
+🐞 Bug fixesmarkdown
+```
+• Fixes Affiliate Registration and Login Forms
+• Fixes Affiliate Portal Not Loading With Cookie Consent Blockers
+```
 ## FluentAffiliate v1.6.0 ​
 
 *Released on Aug 03, 2026*
