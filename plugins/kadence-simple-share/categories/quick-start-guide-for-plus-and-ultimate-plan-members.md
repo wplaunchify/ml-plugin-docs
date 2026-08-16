@@ -166,8 +166,7 @@ Using Premium Starter Templates
 Once the Kadence Blocks Pro and Theme Kit Pro plugins are installed and activated, you can import a premium starter template directly from the WordPress Dashboard.
 
 1. Navigate to **Site Assist → Starter Templates**. You can either use AI-Powered Starter Templates or a Pre-Designed Starter Template.
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-05-09-at-9.56.49-AM-scaled.png)
-
+![](https://docs.nexcess.com/wp-content/uploads/2024/01/kadence-ai-powered-starter-templates-1.webp)
 - For a full overview of how AI-Powered Starter Templates work, refer to the official document: [Kadence AI-Powered Starter Templates ⧉](https://docs.nexcess.com/software/kadence/kadence-ai-powered-starter-templates/).
 - To learn more about using the Classic/Pre-Designed Starter Templates, refer to the official document: [Getting Started with a Pre-Designed Starter Template ⧉](https://docs.nexcess.com/software/kadence/pre-designed-starter-templates/).
 2. Browse the template library. Premium templates are marked with a “Premium” label. The Plus Plan unlocks premium templates for both AI-Powered and Pre-Designed Starter Templates.
@@ -176,6 +175,7 @@ Once the Kadence Blocks Pro and Theme Kit Pro plugins are installed and activate
 ![Style Starter](https://docs.nexcess.com/wp-content/uploads/2026/06/Style-Starter-scaled-1.jpg)
 
 Show More
+
 Show Less
 
 ---

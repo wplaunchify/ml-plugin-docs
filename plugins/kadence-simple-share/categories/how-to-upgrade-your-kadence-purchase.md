@@ -8,6 +8,8 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/how-to-upgrade-your-kadence-purchase/](https://www.kadencewp.com/help-center/docs/kadence-general/how-to-upgrade-your-kadence-purchase/)
 
+**Coming soon:** Iconic is becoming part of Kadence Shop Kit. You may see both names used while we update the product, documentation, and customer experience.
+
 This article will walk you through the steps involved in upgrading your license.
 
 **To upgrade your license, follow these steps:**

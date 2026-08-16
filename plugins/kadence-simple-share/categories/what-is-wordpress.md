@@ -8,6 +8,8 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/](https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/)
 
+**Coming soon:** SolidWP is becoming Kadence. You may see both names used while we update the product, documentation, and customer experience.
+
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/WordPress-6-3-Lionel-–-WordPress-News.png)
 
 WordPress is a free, open-source website creation platform. On a more technical level, WordPress is a content management system (CMS) written in PHP that uses a MySQL database. In non-geek speak, WordPress is the easiest and most powerful blogging and website builder in existence today.
@@ -222,6 +224,8 @@ Check out the entire series of free [WordPress tutorials](https://solidwp.com/tu
 ## What Is WordPress?
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/](https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/)
+
+**Coming soon:** SolidWP is becoming Kadence. You may see both names used while we update the product, documentation, and customer experience.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/WordPress-6-3-Lionel-–-WordPress-News.png)
 
