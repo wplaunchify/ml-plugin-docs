@@ -20341,29 +20341,6 @@ $('html, body').animate({
 
 See [our tutorial about page scrolling](/how-to-scroll-the-page-on-facet-interaction/) for more code examples of how and when to scroll the page, and ways to customize the scroll [offset](/how-to-scroll-the-page-on-facet-interaction/#customize-the-scroll-offset), [duration](/how-to-scroll-the-page-on-facet-interaction/#customize-the-scroll-duration) and [easing](/how-to-scroll-the-page-on-facet-interaction/#customize-the-scroll-easing).
 
-## FacetWP and infinite scroll
-
-We often get the question if FacetWP supports infinite scroll, added by for example WooCommerce or [Elementor](/help-center/using-facetwp-with/elementor/) infinite scroll plugins.
-
-FacetWP does **not** support infinite scroll, which is [intentional](https://hackernoon.com/stop-infinite-scrolling-on-your-website-now-ie6rg31eu).
-
-This means that plugins that add any form of infinity load / infinite scroll **will not work** as expected.
-
-The closest thing is the [“load more” pager type](#load-more-pager-type) of the Pager facet, which generates a “load more” button, working similar to infinite scroll.
-
-## The load more button and URL vars
-
-The [“load more” pager type](#load-more-pager-type) of the Pager facet does not update URL vars. This means that if a user clicks the Back button to go back to the listing, the position in the pagination and the previously loaded items are lost.
-
-This behaviour is intentional. Let’s say there are 20 items per page and the user click the “load more” button 5 times, this results in 100 total results on the page. They click to go to a result, then click the Back button. When that Back button is clicked, FacetWP would have to load all 100 items at once, straining the server.
-
-We recommend sticking with the “normal” numbers-based pager type (or use 
-```
-target="_blank"
-```
-
- to open results) unless you absolutely need a “load more” button.
-
 ## Pagination and WooCommerce
 
 FacetWP has [built-in support for WooCommerce pagination](/help-center/using-facetwp-with/woocommerce/#using-woocommerce-pagination), so generally there is no need to use a Pager facet on shop pages.
@@ -20497,30 +20474,6 @@ Note:To add a class to, or modify the HTML of the Pager facet’s **container**
 
 , you can use [the facetwp_shortcode_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/). See the [code example in this section](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/#set-a-custom-facet-class).
 
-## Display a “No more results” message below the Load More button
-
-By default, when the Pager facet’s [Load More button](#load-more-pager-type) runs out of results to show, it is hidden. If you want to show a message to users when that happens, add the following HTML to your page, wherever you want. A logical place would be directly below the Load More Pager facet. You can customize the text, or add HTML within it, but the classes must remain the same:
-
-```
-<div class="facetwp-load-more-complete facetwp-hidden">That's all!</div>
-```
-
-Next, add the following snippet to your (child) theme’s functions.php. This will show the above message element as soon as the Load More button runs out of posts to load, and is hidden itself.
-
-```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_action('facetwp_scripts', function () { ?>
-  <script>
-    (function($) {
-      $().on('facetwp-loaded', function() {
-        var is_visible = ( FWP.settings.pager.page < FWP.settings.pager.total_pages );
-        var method = is_visible ? 'addClass' : 'removeClass';
-        $('.facetwp-load-more-complete')[method]('facetwp-hidden');
-      });
-    })(fUtil);
-  </script>
-<?php }, 100);
-```
-
 ## Display an “x results found for [keywords]” message
 
 If you are using a [Search facet](/help-center/facets/facet-types/search/) on a page that also has a [Result counts](#result-counts-pager-type) Pager facet type, it is possible to extend the Pager facet’s text to display: “x results found for [keywords]”, when the Search facet is in use. See [this section on the Search facet page](/help-center/facets/facet-types/search/#display-an-x-results-found-for-keywords-message) for instructions.
@@ -20638,6 +20591,53 @@ This is possible, but not trivial: WordPress calculates which posts to show on a
 
 [This tutorial](/how-to-use-a-different-post-per-page-on-the-first-page/) shows how to accomplish this, by letting WordPress recalculate the pagination parameters dynamically.
 
+## FacetWP and infinite scroll
+
+We often get the question if FacetWP supports infinite scroll, added by for example WooCommerce or [Elementor](/help-center/using-facetwp-with/elementor/) infinite scroll plugins.
+
+FacetWP does **not** support infinite scroll, which is [intentional](https://hackernoon.com/stop-infinite-scrolling-on-your-website-now-ie6rg31eu).
+
+This means that plugins that add any form of infinity load / infinite scroll **will not work** as expected.
+
+The closest thing is the [“load more” pager type](#load-more-pager-type) of the Pager facet, which generates a “load more” button, working similar to infinite scroll.
+
+## Display a “No more results” message below the Load More button
+
+By default, when the Pager facet’s [Load More button](#load-more-pager-type) runs out of results to show, it is hidden. If you want to show a message to users when that happens, add the following HTML to your page, wherever you want. A logical place would be directly below the Load More Pager facet. You can customize the text, or add HTML within it, but the classes must remain the same:
+
+```
+<div class="facetwp-load-more-complete facetwp-hidden">That's all!</div>
+```
+
+Next, add the following snippet to your (child) theme’s functions.php. This will show the above message element as soon as the Load More button runs out of posts to load, and is hidden itself.
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_action('facetwp_scripts', function () { ?>
+  <script>
+    (function($) {
+      $().on('facetwp-loaded', function() {
+        var is_visible = ( FWP.settings.pager.page < FWP.settings.pager.total_pages );
+        var method = is_visible ? 'addClass' : 'removeClass';
+        $('.facetwp-load-more-complete')[method]('facetwp-hidden');
+      });
+    })(fUtil);
+  </script>
+<?php }, 100);
+```
+
+## The load more button and URL vars
+
+The [“load more” pager type](#load-more-pager-type) of the Pager facet does not update URL vars. This means that if a user clicks the Back button to go back to the listing, the position in the pagination and the previously loaded items are lost.
+
+This behaviour is intentional. Let’s say there are 30 items per page and the user click the “load more” button 20 times, this results in 600 total results on the page. They click to go to a result, then click the Back button. When that Back button is clicked, FacetWP would have to load all 600 items at once, straining the server.
+
+We recommend sticking with the “normal” numbers-based pager type (or use 
+```
+target="_blank"
+```
+
+ to open results) unless you absolutely need a “load more” button.
+
     
 ## See also
 
@@ -20659,8 +20659,9 @@ This is possible, but not trivial: WordPress calculates which posts to show on a
 - [The facetwp_pager_args hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_pager_args/)
 - [How to use a different post per page on the first page](https://facetwp.com/how-to-use-a-different-post-per-page-on-the-first-page/)
 - [How to use get_query_var(‘paged’) with FacetWP](https://facetwp.com/how-to-use-get_query_varpaged-with-facetwp/)
+- [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 
-                    Last updated: July 17, 2026
+                    Last updated: August 12, 2026
 
 ---
 
