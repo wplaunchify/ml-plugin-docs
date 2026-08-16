@@ -10,7 +10,7 @@
 
 The Archive: Main Query block allows you to display the main query of products on your shop archive pages.
 
-![Archive Main Query](https://docs.nexcess.com/wp-content/uploads/2026/06/archivemainquery-scaled.png)
+![](https://docs.nexcess.com/wp-content/uploads/2023/02/archivemainquery-scaled-1.webp)
 
 You can use the Archive: Main Query block on your Product Archive Woo Templates.
 
@@ -24,7 +24,7 @@ Archive: Main Query Block Settings
 
 You can customize your Archive: Main Query by accessing the Block Settings.
 
-![Main Query Block Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Main-Query-Block-Settings-scaled.png)
+![](https://docs.nexcess.com/wp-content/uploads/2023/02/Main-Query-Block-Settings-scaled-1.webp)
 
 **General Settings**
 The General Settings allow you to adjust the Columns of Products shown for different devices. You can set your Archive: Main Query to display 1-6 columns for mobile, tablet, and desktop devices.
