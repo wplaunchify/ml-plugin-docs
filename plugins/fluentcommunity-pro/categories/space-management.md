@@ -154,6 +154,12 @@ To sort posts, go to any community**feed**or**space**. In the top-right corner o
 
 ![](https://fluentcommunity.co/wp-content/uploads/2025/06/sort-by-02.webp)
 
+#### Reviewing Unlisted Posts (Pro)
+
+Moderators and admins get one more option in the same **Sort by** dropdown: **Unlisted**. Selecting it filters the feed down to only unlisted posts the ones hidden from regular feeds and listings.
+
+So, you can review them all in one place. The active sort shows an “(Unlisted)” tag next to the field name (for example, “Latest (Unlisted)”), and FluentCommunity remembers this choice for the next time you open that feed. See [Content Moderation](https://fluentcommunity.co/docs/content-moderation-settings/) for the full moderator workflow.
+
 That’s it. If you have any questions, feel free to reach out to our [support team](https://wpmanageninja.com/support-tickets/). Thank you.
 
 ---
@@ -446,6 +452,12 @@ To start managing your community, you first need to access the dedicated member 
 
 Here, you will see a list of everyone currently in the Space. You can use the search bar to quickly find existing members, and you can easily see each person’s role (like Admin or Moderator) displayed directly under their name.
 
+Use the sort dropdown above the list to choose a field **Joining Date**, **Last Activity**, or **Name**. Then click the direction arrow next to it to flip between ascending and descending. For example, switch **Joining Date** to ascending to surface your longest-standing members first. Your choice is saved and restored the next time you open this list.
+
+> For a course-type Space, this same tab is labeled Students and offers the identical sort-and-direction control.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/image-2-scaled.png)
+
 ### Step 2: Adding New Members to Your Space
 
 Growing your community is easier than ever! FluentCommunity gives you four powerful ways to bring people into your Space.
@@ -602,6 +614,18 @@ In FluentCommunity, creating and managing posts lets members easily share update
 - You can also share the post with the link. To get the post link click on the **three-dot** button and you will find the link.
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/Copy-link.webp)
+
+#### Making a Post Unlisted (Pro)
+
+Some posts aren’t meant for the main feed: meeting notes for one team, an early draft you want feedback on, or a resource you only hand out when someone asks. Check the **Unlisted** box in the editor before publishing to keep the post out of every feed and listing. Anyone with the direct link can still open it normally.
+
+You can flip an existing post to **Unlisted** or back to listed from its **Edit** screen at any time.
+
+Unlisted posts carry a clear **Unlisted** badge, so there’s never confusion about what’s visible where. You’ll still see your own unlisted posts on your profile timeline; nobody else will.
+
+> Moderators can review every unlisted post in one place using the visibility filter in the feed’s sort dropdown. See Content Moderation.
+
+![](https://fluentcommunity.co/wp-content/uploads/2024/11/image-3-scaled.png)
 
 ## Managing Posts
 
