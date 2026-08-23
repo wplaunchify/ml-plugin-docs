@@ -4277,12 +4277,13 @@ There are a few things to keep in mind in this situation:
 
 To prevent the above situations, make sure that if you use two data source fields, all posts actually have two dates set.
 
-## Emtpy Start Date or End Date fields
+## Emtpy “Start Date” or “End Date” fields
 
 What happens if a Date Range facet uses two data sources, and a user does not enter a date into the “Start Date” or “End Date” field? It depends on the “[Compare type](#compare-type)” you have set:
 
 - If the facet’s “Compare type” is set to “Basic”, only the field which has a date entered is used in the comparison.
-- If the facet’s “Compare type” is set to “Enclose” or “Intersect”, an empty “Start Date” field will be compared as 
+- If the facet’s “Compare type” is set to “Enclose”, an empty “Start Date” or “End Date” field will automatically gain the “opposite” date field’s value in the comparison.
+- If the facet’s “Compare type” is set to “Intersect”, an empty “Start Date” field will be compared as 
 ```
 0000-00-00
 ```
@@ -4292,7 +4293,7 @@ What happens if a Date Range facet uses two data sources, and a user does not en
 3000-12-31
 ```
 
-. Note that in this case, setting “Enclose” as “Compare type” will lead to 0 results, as the post’s range will never surround these user range dates.
+.
 
 ## Translate the calendar and dates
 
@@ -4896,7 +4897,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [How to disable facet auto-refresh and add an apply button](https://facetwp.com/how-to-disable-facet-auto-refresh-and-add-an-apply-button/)
 - [The User Selections facet type](https://facetwp.com/help-center/facets/facet-types/user-selections/)
 
-                    Last updated: July 17, 2026
+                    Last updated: August 20, 2026
 
 ---
 
@@ -19955,12 +19956,13 @@ There are a few things to keep in mind in this situation:
 
 To prevent the above situations, make sure that if you use two data source fields, all posts actually have two values set.
 
-## Empty Min or Max fields
+## Empty “Min” or “Max” fields
 
 What happens if a Number Range facet uses two data sources, and a user does not enter a value into the “Min” or “Max” field? It depends on the “[Compare type](#compare-type)” you have set:
 
 - If the facet’s “Compare type” is set to “Basic”, only the field which has a value entered is used in the comparison.
-- If the facet’s “Compare type” is set to “Enclose” or “Intersect”, an empty “Min” field will be compared as 
+- If the facet’s “Compare type” is set to “Enclose”, an empty “Min” or “Max” field will automatically gain the “opposite” number field’s value in the comparison.
+- If the facet’s “Compare type” is set to “Intersect”, an empty “Min” field will be compared as 
 ```
 -999999999999
 ```
@@ -19970,7 +19972,7 @@ What happens if a Number Range facet uses two data sources, and a user does not 
 999999999999
 ```
 
-. Note that in this case, setting “Enclose” as “Compare type” will lead to 0 results, as the post’s range will never surround these user range values.
+.
 
 ## Translate the placeholder texts
 
@@ -20099,7 +20101,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Date Range facet type](https://facetwp.com/help-center/facets/facet-types/date-range/)
 - [The Range List facet type](https://facetwp.com/help-center/facets/facet-types/range-list/)
 
-                    Last updated: July 17, 2026
+                    Last updated: August 20, 2026
 
 ---
 

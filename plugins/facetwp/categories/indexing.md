@@ -534,7 +534,12 @@ If you are hosting your website on [WP Engine](/help-center/using-facetwp-with/w
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infodefine( 'WPE_GOVERNOR', false );
 ```
 
-WP Engine [limits long queries](https://wpengine.com/support/platform-settings/#Long_Query_Governor) (longer than 1024 characters) for performance reasons. The above line in wp-config.php prevents that.
+WP Engine’s 
+```
+WPE_GOVERNOR
+```
+
+ [limits long queries](https://wpengine.com/support/platform-settings/#toc-long-query-governor) (longer than 1024 characters) for performance reasons. The above line in wp-config.php prevents this.
 
 ## Fix indexing issues with importing posts/products
 
@@ -636,7 +641,7 @@ One simple way of speeding things up is to [use the facetwp_indexer_query_args h
 - [The facetwp_index_row hook](https://facetwp.com/help-center/developers/hooks/indexing-hooks/facetwp_index_row/)
 - [The Schedule Indexer add-on](https://facetwp.com/help-center/add-on-features-and-extras/schedule-indexer/)
 
-                    Last updated: February 26, 2026
+                    Last updated: August 20, 2026
 
 ---
 

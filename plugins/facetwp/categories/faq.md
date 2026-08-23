@@ -1539,7 +1539,12 @@ If you are hosting your website on [WP Engine](/help-center/using-facetwp-with/w
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infodefine( 'WPE_GOVERNOR', false );
 ```
 
-WP Engine [limits long queries](https://wpengine.com/support/platform-settings/#Long_Query_Governor) (longer than 1024 characters) for performance reasons. The above line in wp-config.php prevents that.
+WP Engine’s 
+```
+WPE_GOVERNOR
+```
+
+ [limits long queries](https://wpengine.com/support/platform-settings/#toc-long-query-governor) (longer than 1024 characters) for performance reasons. The above line in wp-config.php prevents this.
 
 ## Other possible reasons
 
@@ -1556,7 +1561,7 @@ See [this list of other common reasons for a stuck indexer](/help-center/indexin
 - [How to make your website load faster](https://facetwp.com/how-to-make-your-website-load-faster/)
 - [Troubleshooting guide](https://facetwp.com/help-center/troubleshooting/)
 
-                    Last updated: February 2, 2026
+                    Last updated: August 20, 2026
 
 ---
 
@@ -2474,7 +2479,12 @@ ob_
 ```
 
  strings with your editor or the [String Locator plugin](https://wordpress.org/plugins/string-locator/). Another possible cause of JSON errors is a plugin or even the server incorrectly filtering the return data as if it were HTML, even though it is not. That is an even more difficult issue to diagnose. [Contact support](/help-center/get-support/) if you need help with this.
-- Is your site hosted on WP Engine? Try [disabling WPE_Governor](/help-center/using-facetwp-with/wp-engine/#disable-wpe_governor), which is a WP Engine feature that limits long queries for performance reasons. WPE_Governor can also cause the indexer to stall or not index all your posts. See [our WP Engine page](/help-center/using-facetwp-with/wp-engine/) for other WP Engine issues and solutions.
+- Is your site hosted on WP Engine? Try [disabling WPE_GOVERNOR](/help-center/using-facetwp-with/wp-engine/#disable-wpe_governor), which is a WP Engine feature that limits long queries for performance reasons. The 
+```
+WPE_GOVERNOR
+```
+
+ limit can also cause the indexer to stall or not index all your posts. See [our WP Engine page](/help-center/using-facetwp-with/wp-engine/) for other WP Engine issues and solutions.
 
 If you see “**FacetWP was unable to auto-detect the post listing**” instead of no results, [this FAQ answer lists common causes](/help-center/faq/why-am-i-seeing-facetwp-was-unable-to-auto-detect-the-post-listing/).
 
@@ -2503,7 +2513,7 @@ If you are seeing no results on your search results page (the page with
 - [How to pass authentication data through REST API requests](https://facetwp.com/how-to-pass-authentication-data-through-rest-api-requests/)
 - [Why am I seeing no results on my search results page?](https://facetwp.com/help-center/faq/why-am-i-seeing-no-results-on-my-search-results-page/)
 
-                    Last updated: January 30, 2026
+                    Last updated: August 20, 2026
 
 ---
 
@@ -2624,7 +2634,12 @@ ob_
 ```
 
  strings with your editor or the [String Locator plugin](https://wordpress.org/plugins/string-locator/). Another possible cause of JSON errors is a plugin or even the server incorrectly filtering the return data as if it were HTML, even though it is not. That is an even more difficult issue to diagnose. [Contact support](/help-center/get-support/) if you need help with this.
-- Is your site hosted on WP Engine? Try [disabling WPE_Governor](/help-center/using-facetwp-with/wp-engine/#disable-wpe_governor), which is a WP Engine feature that limits long queries for performance reasons. WPE_Governor can also cause the indexer to stall or not index all your posts. See [our WP Engine page](/help-center/using-facetwp-with/wp-engine/) for other WP Engine issues and solutions.
+- Is your site hosted on WP Engine? Try [disabling WPE_GOVERNOR](/help-center/using-facetwp-with/wp-engine/#disable-wpe_governor), which is a WP Engine feature that limits long queries for performance reasons. The 
+```
+WPE_GOVERNOR
+```
+
+ limit can also cause the indexer to stall or not index all your posts. See [our WP Engine page](/help-center/using-facetwp-with/wp-engine/) for other WP Engine issues and solutions.
 
 If you see “**FacetWP was unable to auto-detect the post listing**” instead of no results, [this FAQ answer lists common causes](/help-center/faq/why-am-i-seeing-facetwp-was-unable-to-auto-detect-the-post-listing/).
 
@@ -2653,7 +2668,7 @@ If you are seeing no results on your search results page (the page with
 - [How to pass authentication data through REST API requests](https://facetwp.com/how-to-pass-authentication-data-through-rest-api-requests/)
 - [Why am I seeing no results on my search results page?](https://facetwp.com/help-center/faq/why-am-i-seeing-no-results-on-my-search-results-page/)
 
-                    Last updated: January 30, 2026
+                    Last updated: August 20, 2026
 
 ---
 
@@ -2777,7 +2792,12 @@ false
 - FacetWP could be detecting the wrong query to use for filtering. Make sure that [the “Advanced query detection” setting](/help-center/faq/what-is-advanced-strict-query-detection/) (called “**Strict query detection**” in FacetWP versions older than [v4.5](/help-center/changelog/#4-5)) is enabled. It prevents FacetWP’s automatic query detection from incorrectly choosing (invisible) archive queries on the page to filter.
 - For some specific types of custom fields — like [serialized data](/help-center/indexing/#how-to-index-serialized-data) or relationship fields — you may need to [tell FacetWP’s indexer how to properly index the data](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/).
 - Are you [using Elementor](/help-center/using-facetwp-with/elementor/), with the [Element Caching](https://elementor.com/help/element-caching-help/) feature enabled? Element Caching is incompatible with FacetWP. If you see a [“FacetWP was unable to auto-detect the post listing” error](/help-center/faq/why-am-i-seeing-facetwp-was-unable-to-auto-detect-the-post-listing/), or if your facets are not showing (or disappearing after use), make sure to [disable Element Caching globally or in every FacetWP-related widget](/help-center/using-facetwp-with/elementor/#fix-issues-caused-by-elementors-element-caching-feature).
-- Is your site hosted on WP Engine, and are your facets empty after filtering? Try [disabling WPE_Governor](/help-center/using-facetwp-with/wp-engine/#disable-wpe_governor), which is a WP Engine feature that limits long queries for performance reasons. WPE_Governor can also cause the indexer to stall or not index all your posts. See [our WP Engine page](/help-center/using-facetwp-with/wp-engine/) for other WP Engine issues and solutions.
+- Is your site hosted on WP Engine, and are your facets empty after filtering? Try [disabling WPE_GOVERNOR](/help-center/using-facetwp-with/wp-engine/#disable-wpe_governor), which is a WP Engine feature that limits long queries for performance reasons. The 
+```
+WPE_GOVERNOR
+```
+
+ limit can also cause the indexer to stall or not index all your posts. See [our WP Engine page](/help-center/using-facetwp-with/wp-engine/) for other WP Engine issues and solutions.
 - If you are using WPML or Polylang, [with the Multilingual add-on](/help-center/using-facetwp-with/multilingual/), FacetWP expects posts to have a language. [Set up translations as instructed](/help-center/using-facetwp-with/multilingual/), and make sure your page and the posts in the listing all have a language set. To filter posts without a language you can [tell FacetWP to ignore the language](/help-center/using-facetwp-with/multilingual/#fix-issues-with-filtering-posts-with-no-language-set).
 - Are there any JavaScript errors in your browser’s Console that can be fixed or give a clue?
 - Turn on [Debug Mode](/help-center/troubleshooting/#enabling-debug-mode) and make sure that [FacetWP is using the right query](/help-center/troubleshooting/using-the-right-query/).
@@ -2853,7 +2873,7 @@ tribe_events
 - [Why is my facet missing some choices?](https://facetwp.com/help-center/faq/why-is-my-facet-missing-some-choices/)
 - [Why are my facets not showing choices for all my products?](https://facetwp.com/help-center/faq/why-are-my-facets-not-showing-choices-for-all-my-products/)
 
-                    Last updated: July 15, 2026
+                    Last updated: August 20, 2026
 
 ---
 

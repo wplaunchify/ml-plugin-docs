@@ -1228,7 +1228,7 @@ If you have a very large site and the indexer is stalling, make sure to check yo
 
 #### Indexing and WP Engine
 
-If you are hosting your website on the [WP Engine](https://wpengine.com) platform and you are experience problems with the indexer stalling or not indexing all your posts, be aware that WP Engine is [limiting long queries](https://wpengine.com/support/platform-settings/#Long_Query_Governor) (longer than 1024 characters) for performance reasons. The following line in **wp-config.php** will prevent that:
+If you are hosting your website on the [WP Engine](https://wpengine.com) platform and you are experience problems with the indexer stalling or not indexing all your posts, be aware that WP Engine is [limiting long queries](https://wpengine.com/support/platform-settings/#toc-long-query-governor) (longer than 1024 characters) for performance reasons. The following line in **wp-config.php** will prevent that:
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infodefine( 'WPE_GOVERNOR', false );
@@ -1537,7 +1537,7 @@ Algolia DocSearch is *very* fast, mainly because all of its databases are in-mem
 - [The Color facet type](https://facetwp.com/help-center/facets/facet-types/color/)
 - [The Exclude facet type](https://facetwp.com/help-center/facets/facet-types/exclude/)
 
-                    Last updated: July 15, 2026
+                    Last updated: August 20, 2026
 
 ---
 

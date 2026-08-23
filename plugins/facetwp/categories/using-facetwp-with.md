@@ -13419,15 +13419,52 @@ This command was derived from the examples on [this page](https://danielbachhube
 
 If you are hosting your website on [WP Engine](https://wpengine.com), it is possible you run into several issues with indexing, filtering and showing results. The following are known fixes for specific issues:
 
-## Disable WPE_Governor
+## Disable WPE_GOVERNOR
 
-If you experience problems with FacetWP’s [indexer](/help-center/indexing/) stalling or not indexing all your posts, facets not functioning correctly (e.g. becoming empty after filtering), or no search results after using a Search facet, try disabling WP Engine’s “WPE_Governor” by adding the following line to **wp-config.php** (**not** to functions.php):
+If you experience problems with [FacetWP’s indexer stalling](/help-center/faq/what-should-i-do-if-indexing-stalls/) or not indexing all posts, facets not functioning correctly (e.g. [becoming empty after filtering](/help-center/faq/why-is-my-facet-empty/)), or [no search results after using a Search facet](/help-center/faq/why-do-i-see-no-results-after-using-facets/), try disabling WP Engine’s 
+```
+WPE_GOVERNOR
+```
+
+, by adding the following line to **wp-config.php** (**not** to functions.php):
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infodefine( 'WPE_GOVERNOR', false );
 ```
 
-WP Engine [limits long queries](https://wpengine.com/support/platform-settings/#Long_Query_Governor) (longer than 1024 characters) for performance reasons. The above line in wp-config.php prevents this. At the time of writing this feature is undocumented in their support site.
+WP Engine’s 
+```
+WPE_GOVERNOR
+```
+
+ [limits long queries](https://wpengine.com/support/platform-settings/#toc-long-query-governor) (longer than 1024 characters) for performance reasons. The above line in wp-config.php prevents this.
+
+In FacetWP [v4.6](/help-center/changelog/#4-6)+, you can also check in [Debug Mode](/help-center/troubleshooting/#enable-debug-mode) if 
+```
+WPE_GOVERNOR
+```
+
+ is enabled. In the browser console, the use of WP Engine can be checked by typing 
+```
+FWP.settings.debug.wp_engine
+```
+
+, and if 
+```
+true
+```
+
+, the state of 
+```
+WPE_GOVERNOR
+```
+
+ can be checked by typing 
+```
+FWP.settings.debug.wpe_governor_disabled
+```
+
+.
 
 ## Add FacetWP’s API URL to WP Engine’s cache exclusions
 
@@ -13492,10 +13529,13 @@ debug.log
 - [Troubleshooting guide](https://facetwp.com/help-center/troubleshooting/)
 - [Using FacetWP with object caching](https://facetwp.com/help-center/using-facetwp-with/object-caching/)
 - [Why am I seeing “FacetWP was unable to auto-detect the post listing”?](https://facetwp.com/help-center/faq/why-am-i-seeing-facetwp-was-unable-to-auto-detect-the-post-listing/)
+- [What should I do if indexing stalls?](https://facetwp.com/help-center/faq/what-should-i-do-if-indexing-stalls/)
+- [Why is my facet empty?](https://facetwp.com/help-center/faq/why-is-my-facet-empty/)
+- [Why do I have missing posts or no results at all after using facets?](https://facetwp.com/help-center/faq/why-do-i-see-no-results-after-using-facets/)
 - [Using FacetWP with Pressable](https://facetwp.com/help-center/using-facetwp-with/pressable/)
 - [Using FacetWP with Timber](https://facetwp.com/help-center/using-facetwp-with/timber/)
 
-                    Last updated: June 8, 2026
+                    Last updated: August 21, 2026
 
 ---
 

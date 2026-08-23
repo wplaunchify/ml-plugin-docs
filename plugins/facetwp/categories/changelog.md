@@ -15,9 +15,13 @@
 
 ## 4.4.1
 
+- April 24, 2025
+- Fixedfixed a `gmaps_api_key` upgrade error for some sites
+
+## 4.4
+
 - April 23, 2025
 - Newsee the [FacetWP 4.4 release post](https://facetwp.com/whats-new-in-facetwp-4-4/)
-- Fixed4.4.1 fixed a gmaps_api_key upgrade error for some sites
 
 ## 4.3.6
 
