@@ -6905,7 +6905,7 @@ That’s it! You now have a way to harness the power of Elementor forms, allowin
 
 **Source:** [https://affiliatewp.com/docs/affiliate-signup-widget/](https://affiliatewp.com/docs/affiliate-signup-widget/)
 
-We often receive the question “How do I get affiliates?” If you’re integrating with WooCommerce and are an Pro license holder, we’ve made the recruitment process a little easier with the Affiliate Signup Widget. This feature will display a signup widget to encourage your existing customers to register as an affiliate, so they can begin promoting your website and earning referral commissions.
+We often receive the question “How do I get affiliates?” If you’re integrating with WooCommerce, we’ve made the recruitment process a little easier with the Affiliate Signup Widget. This feature will display a signup widget to encourage your existing customers to register as an affiliate, so they can begin promoting your website and earning referral commissions.
 
 In this tutorial, we’ll show you how to enable, and configure the Affiliate Signup Widget, as well as list the different areas where it will appear for your customers to take action.
 
@@ -6974,7 +6974,6 @@ The widget will display in these three WooCommerce  – My account sections
 - The customer viewing the site must be logged in, and not already an affiliate, or, the customer is logged out, and has made a guest purchase
 - The **Allow Affiliate Registration** checkbox must be enabled
 - The user making the purchase has at least one previous order with a status of **Completed**
-- The widget is available exclusively to Pro license holders
 
 ## Frequently Asked Questions
 
