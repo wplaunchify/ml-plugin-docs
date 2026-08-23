@@ -259,6 +259,10 @@ Contributors
 ## Changelog
 
 	
+#### 1.0.15
+
+- Tweaked UI for WordPress 7.1.
+
 #### 1.0.14
 
 - Tweaked UI for WordPress 7.0.
