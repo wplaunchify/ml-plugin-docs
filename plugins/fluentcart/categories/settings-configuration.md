@@ -1082,7 +1082,7 @@ The feature ships **turned off**. You enable it, connect a client with a WordPre
 Before you start, make sure you have the following in place:
 
 - **WordPress 6.9 or newer.** MCP is built on the WordPress core **Abilities API**, which arrived in 6.9.
-- **An MCP adapter.** FluentCart doesn't bundle one, so it uses whichever adapter is installed: - **FluentHub** *(recommended)*. The MCP card can install it for you, or you can download it manually.
+- **An MCP adapter.** FluentCart doesn't bundle one, so it uses whichever adapter is installed: - **FluentHub** *(recommended)*. The MCP card can install it for you, or you can [download it manually](https://static.wpmanageninja.com/fluent-toolkit.zip).
 - The standalone **MCP Adapter** plugin works too.
 - **A WordPress application password** for the account the assistant will sign in as.
 - **An MCP-capable client** on your computer, such as Cursor, Claude Desktop, Claude Code, or Codex.
@@ -1102,6 +1102,7 @@ When MCP hasn't been set up yet, the card shows a **Setup Required** badge.
 If no adapter is active yet, the **MCP Connection** panel asks you to install one before the endpoint can respond.
 
 - Click **Download FluentHub** to install the recommended adapter, then activate it and reload the page.
+- Prefer to do it yourself? Download the ZIP from [https://static.wpmanageninja.com/fluent-toolkit.zip](https://static.wpmanageninja.com/fluent-toolkit.zip) and upload it via **Plugins → Add New → Upload Plugin**, then activate it.
 - If you already have FluentHub or the standalone MCP Adapter active, FluentCart skips this step and you can move straight to enabling MCP.
 
 TIP
@@ -1511,6 +1512,23 @@ You can assign existing WordPress users to predefined **FluentCart** roles direc
 
 - To add a new role, click the **"+ Add Role"** button at the top right of the screen. This will open a modal to [add a new role](/guide/settings-configuration/roles-permissions/adding-new-roles/index).
 
+## Export Permissions ​
+
+Exporting data is controlled separately from viewing it, so a staff member who can read your customer list cannot necessarily download a copy of it.
+
+Four permissions govern this:
+
+- **Export Orders**
+- **Export Customers**
+- **Export Subscriptions**
+- **Export Licenses**
+
+Grant them per role like any other permission. When a role lacks the matching permission, the **Export** button doesn't appear on that screen, and the export request is refused even if it's issued directly — so removing the permission removes the capability, not just the button.
+
+Worth withholding by default
+
+An order or customer export is a complete copy of your customer records — names, emails, billing addresses. Grant export permissions only to the roles that genuinely need them, even when those roles can already view the data on screen. Viewing a record at a time and downloading the entire database are very different levels of exposure.See [Exporting Your Store Data](/guide/store-management/exporting-data) for how the export itself works.
+
 Managing roles and permissions this way helps make sure every team member has the right access to your FluentCart store.
 
 ---
@@ -1555,8 +1573,8 @@ This page has moved
 Storage configuration now lives under its own dedicated **Storage** menu in FluentCart, with a sub-menu for each cloud provider.
 
 - [Storage Overview](/guide/storage/)
-- [Amazon S3 setup guide](/guide/storage/s3)
-- [Cloudflare R2 setup guide](/guide/storage/r2)Please head to the new pages above for the current documentation. The old location is kept here only so existing bookmarks and links keep working.
+- [Amazon S3 setup guide](/guide/storage/aws-s3)
+- [Cloudflare R2 setup guide](/guide/storage/cloudflare-r2)Please head to the new pages above for the current documentation. The old location is kept here only so existing bookmarks and links keep working.
 
 ---
 

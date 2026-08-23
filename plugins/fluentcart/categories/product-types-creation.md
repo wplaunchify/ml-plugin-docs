@@ -126,6 +126,12 @@ Use the checkboxes at the start of each row (or the master checkbox in the heade
 
 Click **Expand All** at the top right to reveal every variation under every variable product at once — useful before exporting or bulk editing a large catalog.
 
+### Products with many variants ​
+
+A product with a large number of variants doesn't load all of them at once. FluentCart shows the first batch and adds a **Load More** control beneath them; click it to pull in the next batch.
+
+This keeps the Inventory screen responsive on catalogs where a single product might carry hundreds of variants — the screen no longer has to build every row before it can show you anything. Bulk selection still applies to the variants currently loaded, so expand what you need before selecting.
+
 ---
 
 ## Step 3: Updating Stock ​
@@ -480,6 +486,8 @@ Think of this as a final rehearsal. You can use this table to quickly review and
 
 Take your time reviewing the staging table. Check that your prices are accurate, your SKUs are in place, and your product types (Physical vs. Digital) are correct.
 
+> Note on price formats: Prices in your CSV are read using the decimal separator your store is configured for. If your store uses the European convention, a value like 1.299,50 imports correctly — you don't need to reformat your spreadsheet first. Just keep one convention throughout the file.
+
 Once you are 100% satisfied that your data is perfect:
 
 1. Click the dark **Save All Products** button located at the top right of the screen.
@@ -530,7 +538,21 @@ When the **Subscription** toggle is off, you're setting up a standard single-pay
 
 **Price** *(Required)* The selling price your customers will pay. This is the number that shows up on your store page, in the cart, and at checkout. Always set this before publishing.
 
-**Additional display prices** *(Collapsible section)* Click the chevron to expand this section and access the optional display price settings:
+Typing prices with a comma decimal separator
+
+Price fields follow the decimal separator configured in your store settings. If your store uses the European convention — 
+```
+10.000,59
+```
+
+ rather than 
+```
+10,000.59
+```
+
+ — you can type prices that way and FluentCart reads them correctly. The same applies to prices in a CSV you import.
+
+Enter the number the way your store displays it, and don't mix conventions within one value.**Additional display prices** *(Collapsible section)* Click the chevron to expand this section and access the optional display price settings:
 
 - **Compare at price** *(Optional)* — Enter a higher "original" price here and FluentCart will display it with a strikethrough next to your actual selling price. For example, setting **Price** to 
 ```
@@ -1401,6 +1423,18 @@ Once the add-on is enabled, you can configure the license settings for each prod
 - **Icon URL:** Provide a link to an icon image for your plugin.
 - **Required PHP Version (optional):** If your plugin needs a minimum version of PHP to work, you can specify it here.
 - **Required WP Version (optional):** Similarly, if your plugin requires a minimum WordPress version, enter it here.
+6. **Signed Releases (optional):** If you sign your releases, you can publish a signature alongside each version so customer sites can verify a package before installing it.
+
+- **Release Manifest:** The signed manifest for the current release, as a base64 value.
+- **Release Signature:** The detached signature for that manifest, also base64.
+
+Both values are stored and served exactly as you enter them. Paste each one as a single unbroken line — a value that gets line-wrapped, re-encoded, or URL-decoded on the way in is still a valid-looking string that will no longer verify, and FluentCart rejects a malformed value rather than silently repairing it.
+
+Off unless you sign your releases
+
+Signed releases are optional and disabled by default. Most vendors don't sign, and nothing about licensing or updates depends on this — leave the fields empty if signing isn't part of your release process.
+
+FluentCart never generates, verifies, or parses these values. The signing key belongs to your release pipeline and should never be stored on your store's server.
 
 After you've configured these settings, just click the **Update Settings** button to save your changes.
 
@@ -2291,8 +2325,19 @@ Every subscription carries a badge next to the **Subscription Details** heading 
 - **Create Renewal Now:** Generates the next renewal order ahead of schedule and emails it to the customer with a **Pay Now** link. On a subscription that charges saved payment methods automatically, this item instead reads **Charge Next Renewal Now** and creates the renewal *and* charges it in one step.
 - **Skip Next Period:** Pushes the next billing date forward by one full cycle without charging the customer. FluentCart records who skipped it and shows "Billing resumes on the date shown" on the subscription.
 - **Charge Now:** Immediately attempts to charge an open renewal against the saved payment method, rather than waiting for the scheduled attempt.
+- **Edit Vendor IDs:** Corrects the gateway identifiers stored against the subscription. This one is off by default — see below.
 
-INFO
+#### Editing Vendor IDs ​
+
+A subscription stores the gateway's own identifiers for itself and for the customer. FluentCart uses them to match renewals, webhooks, and payment methods to the right record.
+
+Occasionally those identifiers need correcting by hand — most often after migrating a store, or when a subscription was rebuilt at the gateway and the stored ID no longer points anywhere. **Edit Vendor IDs** lets an administrator set them directly.
+
+This is an opt-in repair tool, not a routine action
+
+The menu item is hidden unless it has been deliberately enabled, because a wrong vendor ID silently breaks renewals: FluentCart charges or matches against something that isn't your customer's subscription. Nothing warns you — renewals simply stop working, or attach to the wrong record.
+
+Only use it when you know the correct identifier from the gateway's own dashboard, and verify the subscription's next renewal afterwards.INFO
 
 Menu items appear only when they apply. A gateway-billed subscription hides the store-owned actions such as **Skip Next Period** and **Charge Now**, because the gateway owns that schedule rather than your store. To understand which mode a subscription is in, see [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions).
 #### Editing Subscription Terms ​

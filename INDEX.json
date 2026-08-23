@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T05:05:56.375Z",
+  "last_updated": "2026-08-23T05:06:41.803Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -17,7 +17,7 @@
       "slug": "admin-columns-pro",
       "name": "Admin Columns Pro",
       "documentation_url": "https://docs.admincolumns.com/",
-      "last_scraped": "2026-08-23T04:20:23.211Z",
+      "last_scraped": "2026-08-23T04:20:23.209Z",
       "page_count": 77,
       "categories": [
         "article"
@@ -27,7 +27,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com/documentation/",
-      "last_scraped": "2026-08-23T03:18:13.979Z",
+      "last_scraped": "2026-08-23T03:18:13.976Z",
       "page_count": 13,
       "categories": [
         "changelog",
@@ -49,7 +49,7 @@
       "slug": "advanced-custom-fields-pro",
       "name": "Advanced Custom Fields PRO",
       "documentation_url": "https://www.advancedcustomfields.com/documentation/",
-      "last_scraped": "2026-08-23T04:23:45.436Z",
+      "last_scraped": "2026-08-23T04:23:45.432Z",
       "page_count": 272,
       "categories": [
         "uncategorized"
@@ -182,7 +182,7 @@
       "slug": "autocomplete-woocommerce-orders",
       "name": "Autocomplete WooCommerce Orders",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-autocomplete-orders/",
-      "last_scraped": "2026-08-23T03:29:14.452Z",
+      "last_scraped": "2026-08-23T03:29:14.451Z",
       "page_count": 6,
       "categories": [
         "activation",
@@ -208,7 +208,7 @@
       "slug": "block-visibility",
       "name": "Block Visibility",
       "documentation_url": "https://www.blockvisibilitywp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-08-23T04:35:29.232Z",
+      "last_scraped": "2026-08-23T04:35:29.231Z",
       "page_count": 26,
       "categories": [
         "uncategorized"
@@ -218,7 +218,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-08-23T04:49:00.180Z",
+      "last_scraped": "2026-08-23T04:49:00.178Z",
       "page_count": 21,
       "categories": [
         "account-licenses",
@@ -232,7 +232,7 @@
       "slug": "custom-post-type-ui",
       "name": "Custom Post Type UI",
       "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-      "last_scraped": "2026-08-23T04:54:08.815Z",
+      "last_scraped": "2026-08-23T04:54:08.813Z",
       "page_count": 78,
       "categories": [
         "uncategorized"
@@ -285,7 +285,7 @@
       "slug": "facetwp",
       "name": "FacetWP",
       "documentation_url": "https://facetwp.com/help-center/",
-      "last_scraped": "2026-08-23T05:05:56.375Z",
+      "last_scraped": "2026-08-23T05:05:56.363Z",
       "page_count": 295,
       "categories": [
         "add-on-features-and-extras",
@@ -320,7 +320,7 @@
       "slug": "fluent-boards-pro",
       "name": "Fluent Boards Pro",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-08-23T02:51:10.090Z",
+      "last_scraped": "2026-08-23T02:51:10.088Z",
       "page_count": 42,
       "categories": [
         "boards",
@@ -507,7 +507,7 @@
       "slug": "fluent-messaging",
       "name": "Fluent Messaging",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-08-23T02:45:12.375Z",
+      "last_scraped": "2026-08-23T02:45:12.371Z",
       "page_count": 137,
       "categories": [
         "advanced-reports",
@@ -616,7 +616,7 @@
       "slug": "fluent-support-pro",
       "name": "Fluent Support Pro",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-08-23T03:09:20.590Z",
+      "last_scraped": "2026-08-23T03:09:20.587Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -653,7 +653,7 @@
       "slug": "fluentaffiliate-pro",
       "name": "FluentAffiliate Pro",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-08-23T03:36:51.932Z",
+      "last_scraped": "2026-08-23T03:36:51.930Z",
       "page_count": 55,
       "categories": [
         "admin-portal",
@@ -706,7 +706,7 @@
       "slug": "fluentbooking-appointment-scheduling-booking-solution",
       "name": "FluentBooking - Appointment Scheduling & Booking Solution",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-08-23T03:13:20.446Z",
+      "last_scraped": "2026-08-23T03:13:20.443Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -740,8 +740,8 @@
       "slug": "fluentcart",
       "name": "FluentCart",
       "documentation_url": "https://docs.fluentcart.com/guide/",
-      "last_scraped": "2026-08-16T05:05:19.198Z",
-      "page_count": 145,
+      "last_scraped": "2026-08-23T05:06:40.729Z",
+      "page_count": 154,
       "categories": [
         "browsing-history",
         "changelog",
@@ -2104,7 +2104,7 @@
       "slug": "launchflows-customer-dashboardboards-for-woocommerce",
       "name": "LaunchFlows Customer Dashboardboards For WooCommerce",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-08-23T03:50:38.219Z",
+      "last_scraped": "2026-08-23T03:50:38.217Z",
       "page_count": 43,
       "categories": [
         "uncategorized"
@@ -2223,7 +2223,7 @@
       "slug": "learndash-lms-certificate-builder",
       "name": "LearnDash LMS - Certificate Builder",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-08-23T02:49:17.240Z",
+      "last_scraped": "2026-08-23T02:49:17.228Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
@@ -2365,7 +2365,7 @@
       "slug": "ninja-tables-easy-data-table-builder",
       "name": "Ninja Tables – Easy Data Table Builder",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-08-23T03:59:17.366Z",
+      "last_scraped": "2026-08-23T03:59:17.361Z",
       "page_count": 443,
       "categories": [
         "uncategorized"
@@ -3736,7 +3736,7 @@
       "slug": "wp-social-ninja-pro",
       "name": "WP Social Ninja Pro",
       "documentation_url": "https://docs.wpsocialninja.com/guide/",
-      "last_scraped": "2026-08-23T04:07:03.966Z",
+      "last_scraped": "2026-08-23T04:07:03.962Z",
       "page_count": 94,
       "categories": [
         "advanced-features",
@@ -3757,7 +3757,7 @@
       "slug": "wpc-product-bundles-for-woocommerce-premium",
       "name": "WPC Product Bundles for WooCommerce (Premium)",
       "documentation_url": "https://doc.wpclever.net/woosb/",
-      "last_scraped": "2026-08-23T04:09:10.642Z",
+      "last_scraped": "2026-08-23T04:09:10.638Z",
       "page_count": 76,
       "categories": [
         "basic-installations",

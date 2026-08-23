@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-08-16T05:05:19.198Z",
-  "total_pages": 145,
+  "last_scraped": "2026-08-23T05:06:40.729Z",
+  "total_pages": 154,
   "failed_urls_count": 8,
   "sections": [
     {
@@ -242,7 +242,7 @@
       "slug": "migration",
       "url": "https://docs.fluentcart.com/guide/migration/",
       "file": "categories/migration.md",
-      "page_count": 7,
+      "page_count": 14,
       "pages": [
         {
           "title": "Migrating from Easy Digital Downloads ​",
@@ -271,6 +271,34 @@
         {
           "title": "What Gets Migrated ​",
           "url": "https://docs.fluentcart.com/guide/migration/edd/what-is-migrated"
+        },
+        {
+          "title": "Migrating from WooCommerce ​",
+          "url": "https://docs.fluentcart.com/guide/migration/woocommerce/"
+        },
+        {
+          "title": "Subscriptions & Renewals ​",
+          "url": "https://docs.fluentcart.com/guide/migration/woocommerce/subscription-renewals"
+        },
+        {
+          "title": "WP-CLI Reference ​",
+          "url": "https://docs.fluentcart.com/guide/migration/woocommerce/woocommerce-cli"
+        },
+        {
+          "title": "Developer Mode ​",
+          "url": "https://docs.fluentcart.com/guide/migration/woocommerce/woocommerce-developer-mode"
+        },
+        {
+          "title": "Migrating to FluentCart from WooCommerce ​",
+          "url": "https://docs.fluentcart.com/guide/migration/woocommerce/woocommerce-migration"
+        },
+        {
+          "title": "Troubleshooting ​",
+          "url": "https://docs.fluentcart.com/guide/migration/woocommerce/woocommerce-troubleshooting"
+        },
+        {
+          "title": "What Gets Migrated ​",
+          "url": "https://docs.fluentcart.com/guide/migration/woocommerce/woocommerce-what-is-migrated"
         }
       ]
     },
@@ -425,7 +453,7 @@
       "slug": "reporting-analytics",
       "url": "https://docs.fluentcart.com/guide/reporting-analytics/",
       "file": "categories/reporting-analytics.md",
-      "page_count": 12,
+      "page_count": 13,
       "pages": [
         {
           "title": "Reporting & Analytics ​",
@@ -442,6 +470,10 @@
         {
           "title": "Subscription Future Renewals Report ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/future-renewals"
+        },
+        {
+          "title": "Order Sources Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/order-sources-report"
         },
         {
           "title": "Orders Report ​",
@@ -637,7 +669,7 @@
       "slug": "store-management",
       "url": "https://docs.fluentcart.com/guide/store-management/",
       "file": "categories/store-management.md",
-      "page_count": 16,
+      "page_count": 17,
       "pages": [
         {
           "title": "Store Management ​",
@@ -658,6 +690,10 @@
         {
           "title": "Viewing & Searching Customers ​",
           "url": "https://docs.fluentcart.com/guide/store-management/customers-management/viewing-searching-customers"
+        },
+        {
+          "title": "Exporting Your Store Data ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/exporting-data"
         },
         {
           "title": "Orders Management ​",
