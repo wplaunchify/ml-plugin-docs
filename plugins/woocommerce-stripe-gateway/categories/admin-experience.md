@@ -67,12 +67,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -111,6 +107,8 @@ If you wish to enable this feature, follow these steps:
 Cards (including [express checkout methods](https://woocommerce.com/document/stripe/setup-and-configuration/express-checkouts/)), Affirm, Afterpay, and Klarna are the only payment methods that support manual capture. Other payment methods will be hidden if manual capture is enabled.
 
 ![](https://woocommerce.com/wp-content/uploads/2024/01/Screenshot-taken-on-2026-03-09-at-15.11.23-UTC@2x.png?strip=all&w=704)
+
+Furthermore, agentic commerce purchases require that manual capture be [enabled in the Stripe dashboard](https://dashboard.stripe.com/settings/agentic-commerce). If it is not, agentic orders will still be captured automatically even if the capture later setting is enabled in the Stripe plugin settings.
 
 ## Viewing authorized orders
 
@@ -218,12 +216,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -632,12 +626,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -911,7 +901,7 @@ In **WooCommerce > Orders**, any order placed using Adaptive Pricing shows the o
 $25.00 (€ 22.19 EUR)
 ```
 
-### Order notes in the order itself
+### In the order itself
 
 [↑ Back to top](#doc-title)
 
@@ -919,7 +909,9 @@ Any order placed using Adaptive Pricing also gets an order note recording the lo
 
 > Local currency purchase via Adaptive Pricing. Amount paid was: EUR 22.19
 
-The note appears in the **Order notes** panel on the order edit page.
+This is also recorded in the order totals table:
+
+![](https://woocommerce.com/wp-content/uploads/2026/08/Screenshot-taken-on-2026-08-11-at-14.25.33-UTC@2x.png?strip=all&w=704)
 
 ## Refunds
 
@@ -938,13 +930,14 @@ Adaptive Pricing works with:
 - The Optimized Checkout Suite (required)
 - One-time purchases
 - Pre-orders that charge upfront
+- Saved payment methods
+- Some payment methods cannot be saved with Adaptive Pricing enabled, but all of the *previously saved* methods can all be used.
 
 Adaptive Pricing does **not** work with:
 
 - Subscriptions
 - Pre-orders that charge upon release
 - Other recurring or scheduled payment flows
-- Saved payment methods
 - Express checkouts (Apple Pay, Google Pay)
 - Manual auth and capture
 
@@ -968,12 +961,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -1065,6 +1054,27 @@ When a payment is processed via the Stripe extension, an identifier will appear 
 
 Note that identifiers appearing in the order notes depends on having [webhooks set up](https://woocommerce.com/document/stripe/setup-and-configuration/stripe-webhooks/).
 
+## Notes about unexpected charges
+
+[↑ Back to top](#doc-title)
+
+Some payment methods only get confirmation of payment after the customer leaves the checkout (e.g. Stripe Link, cards that require [3DS](https://woocommerce.com/document/stripe/customer-experience/3d-secure/), and a few others).
+
+If a customer abandons their checkout with one of those methods and then pays for the order *with a different method*, Stripe may still complete the first charge. However, since order was already paid for via the second method, the original charge is a duplicate.
+
+When this happens, the Stripe extension adds an order note like so:
+
+> Stripe captured a charge of $25.00 (PaymentIntent pi_XXXXXXXXXX, charge ch_XXXXXXXXXX) after this order was already paid by another gateway. This unexpected charge needs to be refunded manually from the Stripe dashboard.
+
+**Merchants should refund such charges using the Stripe dashboard rather than with WooCommerce.** This is because the order records the *other* payment method as the one that paid for it, so the WooCommerce refund tools act on that payment instead of the duplicated Stripe charge.
+
+The extension never refunds an unexpected charge for you. Stripe does not return processing fees when you issue a refund, so that decision is left to you. However, we do fire an action: 
+```
+wc_stripe_unexpected_charge_detected
+```
+
+, which you can use in some custom code to trigger an email, an auto-refund, etc.
+
 					
 		
 ## Related Products
@@ -1085,12 +1095,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -1133,6 +1139,20 @@ Cancelled
 ```
 
  will **not** automatically refund a payment to the customer!
+
+There is one case in which the extension will automatically refund an order: if a shopper makes a purchase requiring 3DS, but they cancel the order *before* the 3DS confirmation is sent back to your site. Stripe still capture the charge, but because that happens *after* the customer indicated they wanted to cancel, the order will be auto-refunded.
+
+You can return 
+```
+false
+```
+
+ to the 
+```
+wc_stripe_auto_refund_cancelled_order
+```
+
+ filter if you do not want automatic refunds to be sent in such cases.
 
 ## “On Hold” status
 
@@ -1182,12 +1202,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -1251,12 +1267,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -1312,12 +1324,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -1353,12 +1361,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 

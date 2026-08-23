@@ -34,12 +34,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -77,12 +73,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -125,12 +117,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -191,12 +179,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -326,12 +310,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -524,12 +504,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 

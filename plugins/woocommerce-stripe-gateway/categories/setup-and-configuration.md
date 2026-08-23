@@ -79,12 +79,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -206,12 +202,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -349,12 +341,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -439,13 +427,13 @@ To enable express payment methods in the Stripe extension:
 
 **NOTE:** Apple Pay and Google Pay cannot be enabled separately.
 
-## Customizing Apple Pay and Google Pay
+## Customizing express checkouts
 
 [↑ Back to top](#doc-title)
 
-After saving your payment method settings, you can customize how Apple Pay and Google Pay buttons appear on your site by selecting the **Customize**button.
+After saving your payment method settings, you can customize how each set of express checkout method buttons appear on your site by selecting the **Customize**links.
 
-![](https://woocommerce.com/wp-content/uploads/2026/02/Screenshot-taken-on-2026-02-09-at-15.44.54-UTC@2x.png?strip=all&w=704)
+![](https://woocommerce.com/wp-content/uploads/2026/08/Screenshot-taken-on-2026-08-14-at-15.27.44-UTC@2x.png?strip=all&w=704)
 
 When customizing Apple Pay and Google Pay, you can change:
 
@@ -458,7 +446,7 @@ When customizing Apple Pay and Google Pay, you can change:
 - The size of the buttons.
 - The color theme of the buttons.
 
-Amazon Pay only allows you to customize the button locations and button size.
+Amazon Pay and Link only allow you to customize the button locations and button size. (Note that the change payment method location is not available for Amazon Pay.)
 
 A preview of the buttons is also shown so that you can see how these customizations will appear before saving your changes.
 
@@ -479,15 +467,14 @@ But there are some cases in which express checkout methods won’t be shown:
 - Products that don’t require shipping, but only if the “[Calculate tax based on](https://woocommerce.com/document/setting-up-taxes-in-woocommerce/#calculate-tax-based-on)” setting is set to the customer billing address. 
 - [Learn how to override this behavior.](#Show-Express-Checkout-Buttons-for-Virtual-Products)
 
-Additionally, some extensions add custom fields to the checkout page(s). These extra fields are ignored if:
-
-- They are present on the shortcode checkout page, or..
-- They are present on the blocks checkout page, and **not** added using the 
+Additionally, some extensions add custom fields to the checkout page(s). These extra fields are ignored if they are present on the **blocks** checkout page and are **not** added using the 
 ```
 woocommerce_register_additional_checkout_field
 ```
 
- hook
+ hook.
+
+Custom fields on the **shortcode** checkout page will be added to the order as normal if an express method is used to pay. If those fields are required, shoppers are shown a warning about filling them in before the express methods allow payment.
 
 ## Can I use only the express checkout methods and not take card payments?
 
@@ -538,12 +525,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -607,12 +590,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -712,11 +691,14 @@ Lastly, if you’d like to disconnect the Stripe extension from your Stripe acco
 
 This section contains settings related to how transactions function on your site, and how they appear to customers in emails, receipts, and bank statements.
 
-![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2026-04-24-at-18.33.24-UTC@2x.png?strip=all&w=704)
+![](https://woocommerce.com/wp-content/uploads/2026/08/Screenshot-taken-on-2026-08-13-at-16.09.51-UTC@2x.png?w=980)
 
-**Enable saved payment methods**, if checked, allows your customers to securely save their payment information. This lets them check out much faster in the future.
+**Enable saved card payment methods**, if checked, allows your customers to securely save their payment information. This lets them check out much faster in the future.
 
-Keep in mind that your site must be configured to [allow for account creation](https://woocommerce.com/document/configuring-woocommerce-settings/accounts-and-privacy/#guest-checkout-and-accounts) in order for this to work. Guest checkouts cannot save their payment information, since of course they do not have an account to save it to.
+A couple things to note with regard to this setting:
+
+- Your site must be configured to [allow for account creation](https://woocommerce.com/document/configuring-woocommerce-settings/accounts-and-privacy/#guest-checkout-and-accounts) in order for this to work. Guest checkouts cannot save their payment information, since of course they do not have an account to save it to.
+- If the [Link](https://woocommerce.com/document/woopayments/payment-methods/link-by-stripe/) payment method is enabled, Stripe will collect and save cards within their payment form, so the usual store checkbox will be hidden for customers.
 
 **NOTE:** The **Enable saved payment methods** setting does *not* need to be enabled to process subscriptions via [the Subscriptions extension](https://woocommerce.com/products/woocommerce-subscriptions/).
 
@@ -775,12 +757,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -863,12 +841,8 @@ Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution
 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or state — at checkout.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
