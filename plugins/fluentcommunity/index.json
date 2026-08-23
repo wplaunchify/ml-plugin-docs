@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcommunity",
   "plugin_name": "FluentCommunity",
   "documentation_url": "https://fluentcommunity.co/documentation/",
-  "last_scraped": "2026-08-16T14:56:05.393Z",
-  "total_pages": 80,
+  "last_scraped": "2026-08-23T14:56:51.993Z",
+  "total_pages": 81,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,12 @@
       "slug": "administration",
       "url": "https://fluentcommunity.co/documentation/administration/",
       "file": "categories/administration.md",
-      "page_count": 15,
+      "page_count": 16,
       "pages": [
+        {
+          "title": "Progressive Web App (PWA) (Pro)",
+          "url": "https://fluentcommunity.co/docs/progressive-web-app-pwa/"
+        },
         {
           "title": "Generating a Sitemap",
           "url": "https://fluentcommunity.co/docs/generating-a-sitemap/"

@@ -163,6 +163,8 @@ It is very easy to organize your quiz layout directly from the editor.
 
 When students take the quiz, they will see their results right away after submitting their answers. Always remember to click the dark **Save** button in the top-right corner to keep everything updated.
 
+> If a student is not enrolled in the course, the Submit button will be disabled. A short message will explain why they cannot submit the form.
+
 > Before students can see or take the quiz, make sure you publish your quiz questions!
 
 ![](https://fluentcommunity.co/wp-content/uploads/2025/06/save-and-preview-10-scaled.webp)

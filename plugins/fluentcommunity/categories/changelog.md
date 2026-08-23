@@ -8,6 +8,37 @@
 
 **Source:** [https://fluentcommunity.co/docs/changelog/](https://fluentcommunity.co/docs/changelog/)
 
+= 2.8.0 (Date: Aug 19, 2026) =- Introduced: Progressive Web App (PWA) Module
+- Added: Unlisted Post Visibility with Feed Status Filter
+- Added: Sort Direction Control on Member and Student Lists
+- Added: FluentCRM Bounce Suppression with Email Re-Confirm Flow
+- Improved: Customizer Back Button Keyboard Accessibility
+- Improved: WordPress 7.1 Compatibility
+- Improved: Quiz Submit Disabled for Non-Enrolled Members
+- Improved: Onboarding License Management Experience
+- Security: Plugin-Wide Access Control and Data Protection Hardening
+- Fixed: Full Legal Name Exposed in Notifications and Emails
+- Fixed: Lesson Duplication Copying Deleted Documents
+- Fixed: Member Join Time Off by Site Timezone
+- Fixed: Profile Dropdown Links Not Redirecting on iOS
+- Fixed: Missing Padding on Loading Skeletons
+- Fixed: Unstyled Logo Picker Buttons in Input Group
+- Fixed: Untranslated Password-Change and Slash-Menu Labels
+- Fixed: YouTube Playlist Links Spinning Forever in Feed
+- Fixed: Feed Edit Deleting Media from Remote Storage
+- Fixed: Replacing Native Video with Image on Post Edit
+- Fixed: Feed Videos Forcing Fullscreen on Android
+- Fixed: Unsupported HTML Embed Rendering Broken Output
+- Fixed: Emoji Picker Hidden Inside Popovers
+- Fixed: Social Login Buttons Missing on Signup
+- Fixed: Media Insert Failing Under Strict SQL Mode
+- Fixed: Link Fields Rejecting Valid Paths and Placeholders
+- Fixed: Misleading Lock Icon on Public-View Lessons
+- Fixed: Self-Reaction Block Hooks Not Working
+- Fixed: Members Denied Access to Own Scheduled Posts
+- Fixed: Popular Spaces Report Ranking Oldest Spaces
+- Fixed: Cloud Storage URLs for Keys with Special Characters
+
 = 2.7.7 (Date: Aug 10, 2026) =- Security: Restricted HTML Embed for media (props to patchstack. CVE-2026-66467)
 - Added: Privacy Control for Profile Password Changes
 - Added: Divider Option in the Editor Slash Menu
