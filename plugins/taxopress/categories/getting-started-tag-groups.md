@@ -12,6 +12,10 @@ You can find the changelog for the free version [by clicking this link to WordPr
 
 You can find the changelog for the Pro version below:
 
+[2.2.2] - 17 August, 2026 
+- Fixed: Gutenberg block is broken, #313 
+- Fixed: Gutenberg settings have broken formatting, #308
+
 [2.2.1] - 22 July, 2026 
 - Fixed: Missing Gutenberg build assets cause editor 404s, #291 
 - Fixed: Stored Shortcode Attribute at include/shortcodes/class.shortcode_info, #289 

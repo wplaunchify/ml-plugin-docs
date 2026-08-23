@@ -866,7 +866,7 @@ This guide shows you how to use and customize the shortcode for the Tag Cloud Se
 ```
 jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.tag-groups-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a815c7d5cc9a');
+        const cmInput = document.getElementById('cloud_search_6a8a977a13b0c');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.tag-groups-cloud', tags, searchTitle);});
@@ -882,7 +882,7 @@ Looking for a name?
 
     jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.my-tag-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a815c7d5cd2c');
+        const cmInput = document.getElementById('cloud_search_6a8a977a13b6f');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.my-tag-cloud', tags, searchTitle);});
@@ -902,7 +902,7 @@ Enter the same class name that you use in the tag cloud as “div_class” (or �
 ```
 jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.searchable-tag-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a815c7d5cd65');
+        const cmInput = document.getElementById('cloud_search_6a8a977a13ba5');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.searchable-tag-cloud', tags, searchTitle);});
@@ -910,7 +910,7 @@ jQuery(document).ready(function() {
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a815c7d5cda7', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a8a977a13beb', {"active":false}, true);
       return;
     }
 
@@ -921,7 +921,7 @@ jQuery(document).ready(function() {
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6a815c7d5cda7');
+    var element = document.getElementById('tag-groups-cloud-tabs-6a8a977a13beb');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -934,7 +934,7 @@ If you also need other class names in the tag cloud, you simply enter all of the
 ```
 jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.searchable-tag-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a815c7d5d715');
+        const cmInput = document.getElementById('cloud_search_6a8a977a141bf');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.searchable-tag-cloud', tags, searchTitle);});
@@ -942,7 +942,7 @@ jQuery(document).ready(function() {
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a815c7d5d743', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a8a977a141e8', {"active":false}, true);
       return;
     }
 
@@ -953,7 +953,7 @@ jQuery(document).ready(function() {
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6a815c7d5d743');
+    var element = document.getElementById('tag-groups-cloud-tabs-6a8a977a141e8');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -1116,7 +1116,7 @@ Example for shortcodes:
 ```
 jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.tag-groups-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a815c7d68c25');
+        const cmInput = document.getElementById('cloud_search_6a8a977a1fc14');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.tag-groups-cloud', tags, searchTitle);});
@@ -1128,7 +1128,7 @@ On the same page you use a tag cloud with the same class name “tag-groups-clou
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a815c7d68c7f', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a8a977a1fc5d', {"active":false}, true);
       return;
     }
 
@@ -1139,7 +1139,7 @@ On the same page you use a tag cloud with the same class name “tag-groups-clou
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6a815c7d68c7f');
+    var element = document.getElementById('tag-groups-cloud-tabs-6a8a977a1fc5d');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -1278,7 +1278,7 @@ This guide shows you how to use and customize the shortcode for the Tabbed Tag C
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a815c7e215ba', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a8a977aead3b', {"active":false}, true);
       return;
     }
 
@@ -1289,7 +1289,7 @@ This guide shows you how to use and customize the shortcode for the Tabbed Tag C
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6a815c7e215ba');
+    var element = document.getElementById('tag-groups-cloud-tabs-6a8a977aead3b');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -1304,7 +1304,7 @@ This guide shows you how to use and customize the shortcode for the Tabbed Tag C
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a815c7e228f7', {"collapsible":true,"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a8a977aebeae', {"collapsible":true,"active":false}, true);
       return;
     }
 
@@ -1315,7 +1315,7 @@ This guide shows you how to use and customize the shortcode for the Tabbed Tag C
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6a815c7e228f7');
+    var element = document.getElementById('tag-groups-cloud-tabs-6a8a977aebeae');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -1745,7 +1745,7 @@ WooCommerce WooCommerce Product Categories WooCommerce Product Tags WordPress AP
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-alphabet-tabs-6a815c7e3165f', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-alphabet-tabs-6a8a977b0ad19', {"active":false}, true);
       return;
     }
 
@@ -1756,7 +1756,7 @@ WooCommerce WooCommerce Product Categories WooCommerce Product Tags WordPress AP
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-alphabet-tabs-6a815c7e3165f');
+    var element = document.getElementById('tag-groups-cloud-alphabet-tabs-6a8a977b0ad19');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -1803,7 +1803,7 @@ WooCommerce WooCommerce Product Categories WooCommerce Product Tags WordPress AP
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-alphabet-tabs-6a815c7e38d4c', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-alphabet-tabs-6a8a977b13046', {"active":false}, true);
       return;
     }
 
@@ -1814,7 +1814,7 @@ WooCommerce WooCommerce Product Categories WooCommerce Product Tags WordPress AP
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-alphabet-tabs-6a815c7e38d4c');
+    var element = document.getElementById('tag-groups-cloud-alphabet-tabs-6a8a977b13046');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -4390,7 +4390,40 @@ This is a guide to using shortcodes to display the “[Post List](https://taxopr
 ## Shortcode
 
 ```
-What's New at TaxoPress to Start 2026?
+How to Add Categories and Tags to Existing WordPress Posts with TaxoPress
+  Posted on August 19, 2026 by steveburgerv.  The TaxoPress Blog
+ 
+ 
+  If you already have a library of published posts, TaxoPress can help you add Categories and Tags to them without reopening every post by hand. This tutorial uses a realistic cleanup example: a batch of older tutorials that were imported before the team settled on a consistent taxonomy structure. Use the TaxoPress metabox to work...
+ 
+
+        
+                    
+            
+ 
+  How to Schedule Auto Terms for Imported WordPress Posts
+  Posted on August 19, 2026 by steveburgerv.  The TaxoPress Blog
+ 
+ 
+  Imported posts often need taxonomy cleanup after they land in WordPress. TaxoPress can help by running Auto Terms on a schedule, which lets you import content first and assign the right terms afterward. Schedule Auto Terms so imported posts are processed after import finishes. Example import batch Imagine you import a set of tutorial posts...
+ 
+
+        
+                    
+            
+ 
+  How to Merge Duplicate Tags and Categories in WordPress
+  Posted on August 19, 2026 by steveburgerv.  The TaxoPress Blog
+ 
+ 
+  Duplicate terms usually appear after a site has been running for a while. One editor adds a plural form, another uses a synonym, and suddenly the same topic is split across several Tags or Categories. TaxoPress gives you a practical way to merge those terms and keep the content structure clean. Use the merge workflow...
+ 
+
+        
+                    
+            
+ 
+  What's New at TaxoPress to Start 2026?
   Posted on January 18, 2026 by steveburgerv.  Releases
  
  
@@ -4406,39 +4439,6 @@ What's New at TaxoPress to Start 2026?
  
  
   TaxoPress 3.37 is available now. The Free version is available from the WordPress plugin directory and TaxoPress members can download the Pro version from this website. There is one major new feature, but several helpful improvements in this release. Let me introduce you to the big new feature which allows to choose any order you...
- 
-
-        
-                    
-            
- 
-  How to Copy WordPress Tags and Categories
-  Posted on September 3, 2025 by steveburgerv.  Tutorials
- 
- 
-  WordPress does not have the ability to copy Tags and Categories. However, that is possible with the TaxoPress plugin. In this guide, I'll show you a basic and and advanced way to copy terms. Basic copying of Tags and Categories After installing the TaxoPress plugin, go to the "Terms" screen. You can click the "Copy"...
- 
-
-        
-                    
-            
- 
-  What's new at TaxoPress in June?
-  Posted on June 3, 2025 by steveburgerv.  Releases
- 
- 
-  TaxoPress 3.36 is available now. The Free version is available from the WordPress plugin directory and TaxoPress members can download the Pro version from this website. There are several helpful improvements in this release. All of these features were suggested by TaxoPress users like you. The main feature in this release is live previews of...
- 
-
-        
-                    
-            
- 
-  TaxoPress Cleans Up Your Rarely-Used Tags and Categories
-  Posted on April 9, 2025 by steveburgerv.  Releases
- 
- 
-  TaxoPress 3.33 is available now. The Free version is available from the WordPress plugin directory and TaxoPress members can download the Pro version from this website. The major new feature in this release is called “Hidden Terms". This will clean up terms that are infrequently used. This feature removes low-value terms that are not attached...
 ```
 
 ---
@@ -4854,8 +4854,8 @@ not assigned
 ```
 not assigned
 jQuery(document).ready(function(){
-  jQuery("#tag-groups-menu-6a815c824054f select").on( "change", function(){
-    var a = jQuery("#tag-groups-menu-6a815c824054f_form").submit();
+  jQuery("#tag-groups-menu-6a8a977f1c1cd select").on( "change", function(){
+    var a = jQuery("#tag-groups-menu-6a8a977f1c1cd_form").submit();
   });
 });
 ```
@@ -5590,7 +5590,7 @@ This guide shows you how to use and customize the shortcode for the Accordion Ta
 ```
 (function tagGroupsInitAccordion(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.accordion !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.accordion('tag-groups-cloud-accordion-6a815c85e05b1', {"heightStyle":"content","active":false}, true);
+      TagGroupsBase.accordion('tag-groups-cloud-accordion-6a8a9782ac2ba', {"heightStyle":"content","active":false}, true);
       return;
     }
 
@@ -5601,7 +5601,7 @@ This guide shows you how to use and customize the shortcode for the Accordion Ta
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-accordion-6a815c85e05b1');
+    var element = document.getElementById('tag-groups-cloud-accordion-6a8a9782ac2ba');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -5616,7 +5616,7 @@ This guide shows you how to use and customize the shortcode for the Accordion Ta
 ```
 (function tagGroupsInitAccordion(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.accordion !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.accordion('tag-groups-cloud-accordion-6a815c85e0d68', {"heightStyle":"content","active":false}, true);
+      TagGroupsBase.accordion('tag-groups-cloud-accordion-6a8a9782ac9a9', {"heightStyle":"content","active":false}, true);
       return;
     }
 
@@ -5627,7 +5627,7 @@ This guide shows you how to use and customize the shortcode for the Accordion Ta
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-accordion-6a815c85e0d68');
+    var element = document.getElementById('tag-groups-cloud-accordion-6a8a9782ac9a9');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -6299,10 +6299,10 @@ if (typeof tagGroupsMakeTableResponsive === 'undefined') {
     }
   }
   if (typeof TagGroupsDynamicPostFilter !== 'undefined' && jQuery !== 'undefined' && jQuery.basictable !== 'undefined') {
-          tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a815c8611b87','800');
+          tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a8a9782ccb03','800');
     } else {
       jQuery(document).ready(function(){
-        setTimeout(function(){tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a815c8611b87','800');}, 500);
+        setTimeout(function(){tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a8a9782ccb03','800');}, 500);
       });
     }
 ```
@@ -6321,10 +6321,10 @@ if (typeof tagGroupsMakeTableResponsive === 'undefined') {
     }
   }
   if (typeof TagGroupsDynamicPostFilter !== 'undefined' && jQuery !== 'undefined' && jQuery.basictable !== 'undefined') {
-          tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a815c86122e2','800');
+          tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a8a9782cd198','800');
     } else {
       jQuery(document).ready(function(){
-        setTimeout(function(){tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a815c86122e2','800');}, 500);
+        setTimeout(function(){tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a8a9782cd198','800');}, 500);
       });
     }
 ```
