@@ -169,8 +169,10 @@ Then select Tag Type as Custom HTML and put the Custom Code provided below i
 | Tag Type | Custom HTML |
 
 📄
-                
-                                    Custom HTML Tag.js
+                    
+                                            Custom HTML Tag.js
+
+        Copy
     
     ```
 <script>
