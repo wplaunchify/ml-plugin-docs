@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T13:11:25.984Z",
+  "last_updated": "2026-08-23T13:18:50.623Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2174,7 +2174,7 @@
       "slug": "learndash-lms",
       "name": "LearnDash LMS",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-08-16T13:18:03.348Z",
+      "last_scraped": "2026-08-23T13:18:50.623Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
