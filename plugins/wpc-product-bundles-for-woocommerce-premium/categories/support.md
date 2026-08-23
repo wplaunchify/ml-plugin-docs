@@ -8,7 +8,7 @@
 
 **Source:** [https://doc.wpclever.net/woosb/support/](https://doc.wpclever.net/woosb/support/)
 
-In order to contact our support team on WPClever Support Forum, feel free to submit a new ticket on [https://wpc.ticksy.com/](https://wpc.ticksy.com/).
+In order to contact our support team on WPClever Support Forum, feel free to submit a new ticket on [https://wpclever.net/support/](https://wpclever.net/support/).
 
 - Please be as specific as possible (attach screenshots, links, etc.)
 - Fill in with your *PayPal transaction ID* and/or **email address used to purchase** our plugin.

@@ -343,7 +343,7 @@ If you want to customize how it displays, please choose “Yes, custom selector�
 
 #### Question 7: Prices on my site are not changing when customers change the product choice or quantity, how to fix that?
 
-**Answer:** First, please check **WPClever >> Product Bundles >> Change price** if the chosen option is “Yes”. If this still doesn’t work, please contact our [WPClever Support Forum](https://wpc.ticksy.com/) for help.
+**Answer:** First, please check **WPClever >> Product Bundles >> Change price** if the chosen option is “Yes”. If this still doesn’t work, please contact our [WPClever Support Forum](https://wpclever.net/support/) for help.
 
 ![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-7.png)
 

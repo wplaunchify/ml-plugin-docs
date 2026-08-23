@@ -1,7 +1,7 @@
 {
   "plugin_slug": "wpc-product-bundles-for-woocommerce-premium",
   "plugin_name": "WPC Product Bundles for WooCommerce (Premium)",
-  "last_scraped": "2026-08-16T04:08:10.627Z",
+  "last_scraped": "2026-08-23T04:09:10.636Z",
   "total_pages": 76,
   "failed_urls": [],
   "pages": [
@@ -38,7 +38,7 @@
       "title": "Premium version",
       "url": "https://doc.wpclever.net/woosb/basic-installations/premium-version/",
       "category": "Basic Installations",
-      "content": "![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_772x250_2021.png)\n\nAfter successfully purchased the Premium license, users will receive a confirmation email sent to their inbox with the installation *.zip* file attachment.\n\n- Download the Premium *.zip* format file.\n- Deactivate the free version, then delete it from your site.\n- Click **Upload New >> Choose file**.\n- Locate the Premium file then press **Install Now >> Activate**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-basic-installation.png)\n\nNow you can access the plugin settings from the admin dashboard under the **WPClever** section.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpclever.png)\n\n### VERIFY LICENSE KEYS\n\nIn order to verify your identity as a Premium user of our plugin, whom has purchased a license from our website at wpclever.net, please go to **WPClever >> License Keys** to enter your key there.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/license-keys.png)\n\nVerified users will enjoy:\n\n- Premium support from our professional Support Team at [wpc.ticksy.com](http://wpc.ticksy.com) for FREE.\n- Unlimited Premium plugin update with notification in the Plugins section. Users who have got their Premium plugins from other sources, **not** our official website, won’t be able to update to higher versions.\n- Direct access to Downloads to get the .zip file of the latest version on **Membership** page. (You must use your *License Email* to register for an account on our website first if you haven’t done so before).",
+      "content": "![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb_772x250_2021.png)\n\nAfter successfully purchased the Premium license, users will receive a confirmation email sent to their inbox with the installation *.zip* file attachment.\n\n- Download the Premium *.zip* format file.\n- Deactivate the free version, then delete it from your site.\n- Click **Upload New >> Choose file**.\n- Locate the Premium file then press **Install Now >> Activate**.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-basic-installation.png)\n\nNow you can access the plugin settings from the admin dashboard under the **WPClever** section.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-wpclever.png)\n\n### VERIFY LICENSE KEYS\n\nIn order to verify your identity as a Premium user of our plugin, whom has purchased a license from our website at wpclever.net, please go to **WPClever >> License Keys** to enter your key there.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/license-keys.png)\n\nVerified users will enjoy:\n\n- Premium support from our professional Support Team at [wpclever.net/support](http://wpclever.net/support) for FREE.\n- Unlimited Premium plugin update with notification in the Plugins section. Users who have got their Premium plugins from other sources, **not** our official website, won’t be able to update to higher versions.\n- Direct access to Downloads to get the .zip file of the latest version on **Membership** page. (You must use your *License Email* to register for an account on our website first if you haven’t done so before).",
       "headings": [
         "VERIFY LICENSE KEYS"
       ],
@@ -329,7 +329,7 @@
       "title": "7. How to fix not changing prices?",
       "url": "https://doc.wpclever.net/woosb/faqs/7-how-to-fix-not-changing-prices/",
       "category": "Faqs",
-      "content": "#### Question 7: Prices on my site are not changing when customers change the product choice or quantity, how to fix that?\n\n**Answer:** First, please check **WPClever >> Product Bundles >> Change price** if the chosen option is “Yes”. If this still doesn’t work, please contact our [WPClever Support Forum](https://wpc.ticksy.com/) for help.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-7.png)",
+      "content": "#### Question 7: Prices on my site are not changing when customers change the product choice or quantity, how to fix that?\n\n**Answer:** First, please check **WPClever >> Product Bundles >> Change price** if the chosen option is “Yes”. If this still doesn’t work, please contact our [WPClever Support Forum](https://wpclever.net/support/) for help.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-faq-7.png)",
       "headings": [
         "Question 7: Prices on my site are not changing when customers change the product choice or quantity, how to fix that?"
       ],
@@ -662,7 +662,7 @@
       "title": "Support",
       "url": "https://doc.wpclever.net/woosb/support/",
       "category": "Support",
-      "content": "In order to contact our support team on WPClever Support Forum, feel free to submit a new ticket on [https://wpc.ticksy.com/](https://wpc.ticksy.com/).\n\n- Please be as specific as possible (attach screenshots, links, etc.)\n- Fill in with your *PayPal transaction ID* and/or **email address used to purchase** our plugin.\n\nOur staff will respond to your ticket within *24-48 hours.* Support might not be available at the weekends.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-support.png)",
+      "content": "In order to contact our support team on WPClever Support Forum, feel free to submit a new ticket on [https://wpclever.net/support/](https://wpclever.net/support/).\n\n- Please be as specific as possible (attach screenshots, links, etc.)\n- Fill in with your *PayPal transaction ID* and/or **email address used to purchase** our plugin.\n\nOur staff will respond to your ticket within *24-48 hours.* Support might not be available at the weekends.\n\n![](https://doc-14bd3.kxcdn.com/wp-content/uploads/2020/06/woosb-support.png)",
       "headings": [],
       "code_blocks": []
     },
