@@ -2,8 +2,8 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-08-16T06:56:52.551Z",
-  "total_pages": 356,
+  "last_scraped": "2026-08-23T06:58:39.508Z",
+  "total_pages": 349,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -410,19 +410,6 @@
       ]
     },
     {
-      "title": "Canceling A Subscription",
-      "slug": "canceling-a-subscription",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/canceling-a-subscription/",
-      "file": "categories/canceling-a-subscription.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Canceling a subscription",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/canceling-a-subscription/"
-        }
-      ]
-    },
-    {
       "title": "Change Management Version Rollback",
       "slug": "change-management-version-rollback",
       "url": "https://docs.nexcess.com/software/the-events-calendar/change-management-version-rollback/",
@@ -432,19 +419,6 @@
         {
           "title": "The Events Calendar Change Management / Version Rollback",
           "url": "https://docs.nexcess.com/software/the-events-calendar/change-management-version-rollback/"
-        }
-      ]
-    },
-    {
-      "title": "Changing Email Address And Other User Account Related Data",
-      "slug": "changing-email-address-and-other-user-account-related-data",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/changing-email-address-and-other-user-account-related-data/",
-      "file": "categories/changing-email-address-and-other-user-account-related-data.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Updating Your Account Information",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/changing-email-address-and-other-user-account-related-data/"
         }
       ]
     },
@@ -2347,19 +2321,6 @@
       ]
     },
     {
-      "title": "How Do I Update My Promoter Payment Information",
-      "slug": "how-do-i-update-my-promoter-payment-information",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-do-i-update-my-promoter-payment-information/",
-      "file": "categories/how-do-i-update-my-promoter-payment-information.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Updating Payment Information",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-do-i-update-my-promoter-payment-information/"
-        }
-      ]
-    },
-    {
       "title": "How To Add A Shortcode In Wordpress",
       "slug": "how-to-add-a-shortcode-in-wordpress",
       "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-add-a-shortcode-in-wordpress/",
@@ -2512,19 +2473,6 @@
         {
           "title": "Using Plugin Extensions",
           "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-install-an-extension/"
-        }
-      ]
-    },
-    {
-      "title": "How To Put A Subscription On Hold",
-      "slug": "how-to-put-a-subscription-on-hold",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-put-a-subscription-on-hold/",
-      "file": "categories/how-to-put-a-subscription-on-hold.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Putting a Subscription on Hold",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-put-a-subscription-on-hold/"
         }
       ]
     },
@@ -2867,19 +2815,6 @@
       ]
     },
     {
-      "title": "Order Invoices",
-      "slug": "order-invoices",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/order-invoices/",
-      "file": "categories/order-invoices.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Finding Order Invoices",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/order-invoices/"
-        }
-      ]
-    },
-    {
       "title": "Oxygen Theme",
       "slug": "oxygen-theme",
       "url": "https://docs.nexcess.com/software/the-events-calendar/oxygen-theme/",
@@ -3214,19 +3149,6 @@
         {
           "title": "Creating Recurring Events",
           "url": "https://docs.nexcess.com/software/the-events-calendar/recurring-events/"
-        }
-      ]
-    },
-    {
-      "title": "Refund Policy",
-      "slug": "refund-policy",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/refund-policy/",
-      "file": "categories/refund-policy.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Refund Policy",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/refund-policy/"
         }
       ]
     },
@@ -4358,19 +4280,6 @@
         {
           "title": "What Happens if I Cancel My Promoter Subscription?",
           "url": "https://docs.nexcess.com/software/the-events-calendar/what-happens-if-i-cancel-my-promoter-subscription/"
-        }
-      ]
-    },
-    {
-      "title": "What Is This Promoter Charge On My Credit Card",
-      "slug": "what-is-this-promoter-charge-on-my-credit-card",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/what-is-this-promoter-charge-on-my-credit-card/",
-      "file": "categories/what-is-this-promoter-charge-on-my-credit-card.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "What is This Charge on My Credit Card or PayPal account?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/what-is-this-promoter-charge-on-my-credit-card/"
         }
       ]
     },
