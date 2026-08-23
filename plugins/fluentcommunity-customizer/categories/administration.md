@@ -4,6 +4,66 @@
 
 ---
 
+## Progressive Web App (PWA) (Pro)
+
+**Source:** [https://fluentcommunity.co/docs/progressive-web-app-pwa/](https://fluentcommunity.co/docs/progressive-web-app-pwa/)
+
+The **Progressive Web App (PWA)** module lets members install your community on their phones or desktops as a native app. Once enabled, an **Install App** button appears in the portal sidebar with one tap, and your community sits on the member’s home screen with your icon, your name, and no browser bar around the content.
+
+You control exactly how that installed app presents itself: its name, its home-screen label, the color of its loading screen, its icon, and where the install button appears.
+
+> Use Case: Your members open your community from a browser tab every day and it never quite feels like “their” app. You enable the PWA module, upload your icon, set the app name to your community’s name, and now one tap from the sidebar puts a branded app icon on their home screen no App Store submission required.
+
+## Enabling the PWA Module
+
+1. Open your community portal and click **Settings** at the bottom of the left sidebar.
+2. In **Portal Settings**, click **Features & Addons**, then open **Advanced Features & Addons**.
+3. Scroll down to **Progressive Web App (PWA)** and click its **Settings** button.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/08/image-2-scaled.png)
+
+1. Check the box to **Enable Progressive Web App (PWA)** at the top of the configuration drawer.
+
+## Configure Your App Branding
+
+Once enabled, the module’s status on the Advanced Features & Addons list changes to **Enabled**, and the install button becomes available to members.
+
+- **App Name:** Enter the full name displayed on the installation popup and the loading screen. This defaults to your portal’s community name.
+- **Short Name:** Enter a brief label (capped at 12 characters) that appears directly under the app icon on a member’s home screen. If you leave this blank, it automatically reuses your App Name.
+- **Splash Screen Color:** Choose the solid background color that displays while your app is loading. If left blank, it automatically matches your default portal background.
+- **App Icon:** Choose **Default (Community Logo**) to reuse your existing site logo, or select **Custom** to upload a dedicated app icon.
+
+> If you upload a custom icon, it must be a perfectly square image and no larger than 512×512 pixels. Mobile browsers automatically reject oversized images, which will cause the install button to break and disappear for your members.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/08/image-3-scaled.png)
+
+## Configure the Install Button
+
+Below the branding settings, you can control exactly where and how your members see the installation prompt inside your community.
+
+- **Show Install App in portal menu (mobile only):** Turn this on to add a convenient “Install App” button directly into your sidebar.
+- **Allow members to hide the install button:** Check this box to let members manually dismiss the install prompt. If a member closes it, the button will stay hidden for 7 days before returning.
+- **Install Button Position:** Choose whether the install button sits at the Sidebar Top or Sidebar Bottom of your main portal menu.
+
+Click the **Save Settings** button at the bottom of the drawer to lock in your configuration!
+
+## How Members Install Your App
+
+Once everything is saved, members can easily install your branded community to their personal devices. The app will even automatically sync with their device’s light or dark mode preferences.
+
+- **For Android & Desktop Users:** Members simply tap the “Install App” button in your sidebar. With one tap, your community is added to their home screen.
+- **For Apple iOS Users (iPhone/iPad):** Apple’s Safari browser does not support one-tap install buttons. To install the app on an iPhone, members must tap their browser’s native **Share** menu icon and select **Add to Home Screen**.
+
+![](https://fluentcommunity.co/wp-content/uploads/2026/08/image-4.png)
+
+## For Developers
+
+Several filters are available for finer control over the install experience, including the install button’s text, the app’s theme color, and its screen orientation, so agencies can tailor the PWA behavior for a client without adding extra settings screens.
+
+For the on-site sidebar links that surround the Install App entry, see [Menu Settings](https://fluentcommunity.co/docs/menu-settings/).
+
+---
+
 ## Generating a Sitemap
 
 **Source:** [https://fluentcommunity.co/docs/generating-a-sitemap/](https://fluentcommunity.co/docs/generating-a-sitemap/)
@@ -140,7 +200,15 @@ Now, open the Three-dot Icon in the right side, and you will get the following o
 
 ![](https://fluentcommunity.co/wp-content/uploads/2025/03/6.-ReviewIgnoreUnpublishelete-any-Post-or-Comment-scaled.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).
+#### Reviewing Unlisted Posts (Pro)
+
+[Unlisted posts](https://fluentcommunity.co/docs/creating-managing-posts/#1-toc-title) stay off every feed and listing by design, but moderators still need a way to see them all in one place.
+
+Open any feed’s **Sort by** dropdown and switch on the **Unlisted** visibility filter to list every unlisted post together. FluentCommunity marks the active sort with an “(Unlisted)” tag next to the field name (for example, “Latest (Unlisted)”) so it’s obvious the filter is on.
+
+![](https://fluentcommunity.co/wp-content/uploads/2025/03/image-scaled.png)
+
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/).
 
 ---
 
@@ -992,6 +1060,8 @@ If you want to add another group click on the **Add Another Group** button place
 You can arrange items in each section by dragging and dropping them into the desired order.
 
 This flexibility helps ensure that your community’s menus are tailored to your preferences, making navigation intuitive for members.
+
+To add an installable app shortcut to the sidebar, see [Progressive Web App (PWA) (Pro)](https://fluentcommunity.co/docs/progressive-web-app-pwa/).
 
 If you have any further questions about this guide, please don’t hesitate to[contact us](https://wpmanageninja.com/support-tickets/).
 
