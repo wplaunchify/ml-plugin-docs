@@ -158,12 +158,8 @@ The Switch button is displayed in your customer’s detailed view of their subsc
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -228,12 +224,8 @@ To maintain the discount on the new subscription, the customer needs to apply th
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -438,12 +430,8 @@ To change this text, either to remove it completely or make it display something
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -517,12 +505,8 @@ After completing [steps 1 and 2 of the switch process](https://woocommerce.com/d
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -605,12 +589,8 @@ The screenshot below highlights the **Related Orders** meta box on the **Edit Su
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons

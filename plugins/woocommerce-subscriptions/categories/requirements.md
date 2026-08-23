@@ -10,28 +10,53 @@
 
 # How to test if WP-Cron is working
 
-			Having a working cron system is important for running WooCommerce Subscriptions. Recurring automatic payments and other functions are dependent on timing-sensitive actions; to implement those actions, cron must be working.
+			WooCommerce Subscriptions uses scheduled events to process renewals and other time-sensitive tasks. A working WordPress cron system helps those events run when they are due.
 
-## Instructions
-
-[↑ Back to top](#doc-title)
-
-To test whether WP-Cron is working:
-
-1. In your site’s WP Admin dashboard, navigate to*Posts > Add New*.
-2. In the **Publish** meta box, next to the text that says *“Publish immediately,”* click the **Edit** link.
-![](https://woocommerce.com/wp-content/uploads/2018/10/schedule_post_edit.png?strip=all&w=704)
-3. Select a date and time from the fields that appear, then click **OK**.
-![](https://woocommerce.com/wp-content/uploads/2018/10/schedule_post_date.png?strip=all&w=704)
-4. Once complete, click the **Schedule** button.
-![](https://woocommerce.com/wp-content/uploads/2018/10/schedule_post_submit.png?strip=all&w=704)
-5. Check to see whether the post was published at (or near) the scheduled time.
-
-## Further reading
+## Check WordPress cron status
 
 [↑ Back to top](#doc-title)
 
-Learn more about [selling subscriptions online with WooCommerce Subscriptions](https://woocommerce.com/posts/succeed-with-woocommerce-subscriptions-technical-tips/).
+Use WooCommerce System Status to confirm whether WordPress cron is enabled on the site.
+
+1. Go to **WooCommerce > Status > System status**.
+2. Find the **WordPress cron** row in the **WordPress environment** section.
+3. Confirm that the row shows WordPress cron is enabled.
+
+![WooCommerce System Status screen showing WordPress environment rows with WordPress cron enabled.](https://woocommerce.com/wp-content/uploads/2026/08/woocommerce-system-status-wordpress-cron-context.png?strip=all&w=704)The WordPress environment section in WooCommerce System Status shows whether WordPress cron is enabled.
+
+## What the result means
+
+[↑ Back to top](#doc-title)
+
+If WordPress cron is enabled, WordPress can trigger scheduled events when the site receives traffic. This does not guarantee that every scheduled subscription action will complete successfully, but it confirms that cron has not been disabled in WordPress configuration.
+
+If WordPress cron is disabled, check the site’s 
+```
+wp-config.php
+```
+
+ file or ask the host whether 
+```
+DISABLE_WP_CRON
+```
+
+ is set to 
+```
+true
+```
+
+. Some hosts disable the built-in visitor-triggered cron and replace it with a server-level cron job. In that setup, confirm with the host that the server cron is configured and running often enough for subscription renewals.
+
+## If subscription events still do not run
+
+[↑ Back to top](#doc-title)
+
+After confirming WordPress cron is enabled, check scheduled subscription events directly.
+
+- Go to **WooCommerce > Status > Scheduled Actions** and look for pending or failed subscription actions.
+- Use the [Testing Subscription Renewal Payments](https://woocommerce.com/document/subscriptions/testing-subscription-renewal-payments/) guide to run a controlled test renewal on a staging site.
+- Use the [Subscriptions Scheduled Action Errors](https://woocommerce.com/document/subscriptions/scheduled-action-errors/) guide if subscription actions are failing or remaining pending.
+- For developer-level troubleshooting, see the [Complete Guide to Scheduled Events with Subscriptions](https://woocommerce.com/document/subscriptions/develop/complete-guide-to-scheduled-events-with-subscriptions/#debugging-wp-cron).
 
 					
 		
@@ -45,12 +70,8 @@ Learn more about [selling subscriptions online with WooCommerce Subscriptions](h
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons

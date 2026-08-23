@@ -144,12 +144,8 @@ Yes, it is possible for customers to renew early and then renew early again to e
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons

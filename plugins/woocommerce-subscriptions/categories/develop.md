@@ -233,12 +233,8 @@ These reference guides should not be considered instructive for specific problem
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -875,12 +871,8 @@ $order
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -1288,12 +1280,8 @@ As a result, it is not necessary cache the parent orders for a subscription.
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -1417,12 +1405,8 @@ true
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -1931,12 +1915,8 @@ More information about using these commands can be found on the Action Scheduler
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -2047,12 +2027,8 @@ With that in place, your customers should see this notice confirming they do wan
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -2579,12 +2555,8 @@ wcs_get_subscription()
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -2685,12 +2657,8 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -3550,12 +3518,8 @@ payment_retry
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -4367,12 +4331,8 @@ woocommerce_update_options()
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -5285,12 +5245,8 @@ Get the total sign-up fee amount charged at the outset of the subscription, if a
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -5656,12 +5612,8 @@ $user_id
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -5891,12 +5843,8 @@ false
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -6141,12 +6089,8 @@ $order_date
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -6295,12 +6239,8 @@ As a result, the **Recurring Totals** section was chosen as it was the most conc
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -6464,12 +6404,8 @@ For example, the 3 screenshots below show:
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -7440,12 +7376,8 @@ PHP Fatal error
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -7873,12 +7805,8 @@ add_action( 'wcs_save_other_payment_meta', 'save_meta_in_comments', 10, 4 );
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -7937,12 +7865,8 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -8154,12 +8078,8 @@ function apply_recurring_fees( $is_recurring, $fee, $cart ) {
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -8255,12 +8175,8 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
@@ -8394,12 +8310,8 @@ add_filter( 'wcs_upgrade_subscription_meta_to_copy', 'eg_do_not_copy_tracking_co
 
 	
 			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Power your membership association, online magazine, elearning sites, and more with access control to content/products and member discounts.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
