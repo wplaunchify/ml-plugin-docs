@@ -1360,7 +1360,13 @@ You can add more filters by clicking the **+Add** button, add filters against th
 
 ![](https://fluentcommunity.co/wp-content/uploads/2024/11/12.-Selecting-Email-Campaigns-Recipients-by-Advanced-Filter.webp)
 
-If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [@support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
+#### Suppressing Emails to Bounced or Complained Contacts
+
+If a member’s FluentCRM contact is marked **Bounced**, **Complained**, or **Spammed**, FluentCommunity automatically stops sending that member community notification emails, protecting your sender reputation instead of repeatedly emailing an address that can no longer receive mail.
+
+This is controlled by a [privacy setting](https://fluentcommunity.co/docs/privacy-settings/): **Do not send emails to contacts marked as Bounced, Complained, or Spammed in FluentCRM**.
+
+If you have any further questions, concerns, or suggestions, please do not hesitate to contact our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpmn&utm_medium=home&utm_campaign=site#/). Thank you.
 
 ---
 
