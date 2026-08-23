@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-08-16T19:22:02.239Z",
-  "total_pages": 3727,
+  "last_scraped": "2026-08-23T19:23:05.970Z",
+  "total_pages": 3765,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,11 +11,87 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3727,
+      "page_count": 3765,
       "pages": [
         {
-          "title": "LWN Multi-Step Checkout",
-          "url": "https://woocommerce.com/document/lwn-ms-checkout/"
+          "title": "Anti-Fraud Protection for WooCommerce",
+          "url": "https://woocommerce.com/document/anti-fraud-protection-for-woocommerce/"
+        },
+        {
+          "title": "How to Connect B2B for WooCommerce to Claude and Codex with MCP",
+          "url": "https://woocommerce.com/document/how-to-connect-b2b-for-woocommerce-to-claude-and-codex-with-mcp/"
+        },
+        {
+          "title": "Cart Goals",
+          "url": "https://woocommerce.com/document/cart-goals/"
+        },
+        {
+          "title": "Customize Distance Rate Shipping rule costs with code",
+          "url": "https://woocommerce.com/document/woocommerce-distance-rate-shipping/customize-distance-rate-shipping-rule-costs/"
+        },
+        {
+          "title": "Offer free local delivery and charge for longer distances with Distance Rate Shipping",
+          "url": "https://woocommerce.com/document/woocommerce-distance-rate-shipping/offer-free-local-delivery-with-distance-rate-shipping/"
+        },
+        {
+          "title": "Only offer Distance Rate Shipping below a maximum distance",
+          "url": "https://woocommerce.com/document/woocommerce-distance-rate-shipping/limit-distance-rate-shipping-by-maximum-distance/"
+        },
+        {
+          "title": "Disable Florida shipping tax in WooCommerce Tax",
+          "url": "https://woocommerce.com/document/woocommerce-shipping-and-tax/woocommerce-tax/disable-florida-shipping-tax-in-woocommerce-tax/"
+        },
+        {
+          "title": "Customize the WooCommerce Tax nexus address",
+          "url": "https://woocommerce.com/document/woocommerce-shipping-and-tax/woocommerce-tax/customize-the-woocommerce-tax-nexus-address/"
+        },
+        {
+          "title": "FMA Gift Card and Voucher",
+          "url": "https://woocommerce.com/document/gift-card-and-voucher/"
+        },
+        {
+          "title": "TIV Switcher",
+          "url": "https://woocommerce.com/document/tiv-switcher/"
+        },
+        {
+          "title": "Extendons Multi Locations Inventory Management",
+          "url": "https://woocommerce.com/document/multi-location-inventory-management/"
+        },
+        {
+          "title": "FMA Custom Order Status & Automation",
+          "url": "https://woocommerce.com/document/custom-order-status-and-automation/"
+        },
+        {
+          "title": "PricePulse FAQ",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/pricepulse-faq/"
+        },
+        {
+          "title": "Offer Message Tokens",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/pricepulse-offer-message-tokens/"
+        },
+        {
+          "title": "PricePulse Offers Page Shortcode",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/pricepulse-offers-page-shortcode/"
+        },
+        {
+          "title": "How to Show Offers on Your Store",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-show-offers-on-your-store/"
+        },
+        {
+          "title": "How to Reward Repeat Customers",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-reward-repeat-customers/"
+        },
+        {
+          "title": "How to Discount by Payment or Shipping Method",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-discount-by-payment-or-shipping-method/"
+        },
+        {
+          "title": "How to Set Up Cart and Cheapest Item Discounts",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-discount-the-whole-cart/"
+        },
+        {
+          "title": "How to Set Up a Buy One Get One Free (BOGO) Offer",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-set-up-buy-one-get-one-free-bogo/"
         },
         {
           "title": "Shared Space Booking",
@@ -3058,10 +3134,6 @@
           "url": "https://woocommerce.com/document/woocommerce-paypal-payments/fraud-and-disputes/"
         },
         {
-          "title": "PayPal Fees and Debits",
-          "url": "https://woocommerce.com/document/woocommerce-paypal-payments/paypal-fees-and-debits/"
-        },
-        {
           "title": "Smart Variations & Attributes Display",
           "url": "https://woocommerce.com/document/smart-variations-and-attributes-display-for-woocommerce/"
         },
@@ -3434,7 +3506,7 @@
           "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-setup-bogo-for-woocommerce/"
         },
         {
-          "title": "PricePulse Discounts and Coupons",
+          "title": "PricePulse: Dynamic Pricing and Discount Rules",
           "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/"
         },
         {
@@ -4292,6 +4364,46 @@
         {
           "title": "Dakota Next",
           "url": "https://woocommerce.com/document/dakota-next/"
+        },
+        {
+          "title": "QODE Variation Swatches for WooCommerce Pro",
+          "url": "https://woocommerce.com/document/qode-variation-swatches-for-woocommerce-pro/"
+        },
+        {
+          "title": "Bundle Products for WooCommerce",
+          "url": "https://woocommerce.com/document/bundle-products-for-woocommerce-documentation/"
+        },
+        {
+          "title": "How to Customize the Side Cart and Checkout in WooCommerce",
+          "url": "https://woocommerce.com/document/side-cart-checkout/"
+        },
+        {
+          "title": "Shortcodes included with WooCommerce",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/"
+        },
+        {
+          "title": "Phone Number Validation for WooCommerce",
+          "url": "https://woocommerce.com/document/phone-number-validation/"
+        },
+        {
+          "title": "Cart to Quote & Social Share",
+          "url": "https://woocommerce.com/document/cart-to-quote-and-social-share/"
+        },
+        {
+          "title": "Order Discounts & Conditional Fee",
+          "url": "https://woocommerce.com/document/order-discounts-and-fee-for-woocommerce/"
+        },
+        {
+          "title": "Archiva",
+          "url": "https://woocommerce.com/document/smart-archive-wc/"
+        },
+        {
+          "title": "Testing tips for Refer A Friend",
+          "url": "https://woocommerce.com/document/automatewoo/refer-a-friend/testing-tips/"
+        },
+        {
+          "title": "Regenerate AutomateWoo database tables",
+          "url": "https://woocommerce.com/document/automatewoo/regenerate-automatewoo-database-tables/"
         },
         {
           "title": "How to Hide Sites from the Store Picker",
@@ -5858,36 +5970,36 @@
           "url": "https://woocommerce.com/document/configuring-woocommerce-settings/products/"
         },
         {
-          "title": "Email Settings",
-          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/emails/"
+          "title": "Page Shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/page-shortcodes/"
         },
         {
-          "title": "Advanced Settings",
-          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/advanced/"
+          "title": "B2B Invoice Payment Method",
+          "url": "https://woocommerce.com/document/b2b-invoice-payment-method/"
         },
         {
-          "title": "Advanced Order Notes for WooCommerce",
-          "url": "https://woocommerce.com/document/advanced-order-notes-for-woocommerce/"
+          "title": "Order Statuses",
+          "url": "https://woocommerce.com/document/managing-orders/order-statuses/"
         },
         {
-          "title": "Consent Mode Banner PRO",
-          "url": "https://woocommerce.com/document/gtm-consent-mode-banner-woo/"
+          "title": "Orders Overview and Bulk Order Management",
+          "url": "https://woocommerce.com/document/managing-orders/overview-and-bulk-management/"
         },
         {
-          "title": "AnySell",
-          "url": "https://woocommerce.com/document/anysell/"
+          "title": "Single Order Page and Manually Adding an Order",
+          "url": "https://woocommerce.com/document/managing-orders/view-edit-or-add-an-order/"
         },
         {
-          "title": "Sportiq",
-          "url": "https://woocommerce.com/document/sportiq/"
+          "title": "Paying for Orders",
+          "url": "https://woocommerce.com/document/managing-orders/paying-for-orders/"
         },
         {
-          "title": "Related Products, Add-to-Cart, and Notification Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes/"
+          "title": "Removing personal data from orders",
+          "url": "https://woocommerce.com/document/managing-orders/removing-personal-data-from-orders/"
         },
         {
-          "title": "Troubleshooting shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/troubleshooting-shortcodes/"
+          "title": "Testing orders",
+          "url": "https://woocommerce.com/document/managing-orders/testing-orders/"
         },
         {
           "title": "Troubleshooting Orders",
@@ -8078,7 +8190,7 @@
           "url": "https://woocommerce.com/document/woocommerce-mix-and-match-products/"
         },
         {
-          "title": "PayPal Zettle POS for WooCommerce",
+          "title": "PayPal POS for WooCommerce",
           "url": "https://woocommerce.com/document/paypal-zettle-pos-for-woocommerce/"
         },
         {
@@ -9970,12 +10082,12 @@
           "url": "https://woocommerce.com/document/customer-support-for-woocommerce/"
         },
         {
-          "title": "WooCommerce SEO by WordLift",
-          "url": "https://woocommerce.com/document/e-commerce-seo-by-wordlift/"
+          "title": "How to set specific commission rates for product/product category",
+          "url": "https://woocommerce.com/document/affiliate-for-woocommerce/how-to-set-different-affiliate-commission-rates-for-product-or-product-category/"
         },
         {
-          "title": "Merge Orders",
-          "url": "https://woocommerce.com/document/merge-orders/"
+          "title": "Back In Stock Notifications",
+          "url": "https://woocommerce.com/document/back-in-stock-notifications/"
         },
         {
           "title": "WooCommerce Box Office",
@@ -12050,6 +12162,46 @@
           "url": "https://woocommerce.com/document/subscriptions/resubscribe/"
         },
         {
+          "title": "Filters",
+          "url": "https://woocommerce.com/document/groups-woocommerce/api/filters/"
+        },
+        {
+          "title": "Actions",
+          "url": "https://woocommerce.com/document/groups-woocommerce/api/actions/"
+        },
+        {
+          "title": "Functions",
+          "url": "https://woocommerce.com/document/groups-woocommerce/api/functions/"
+        },
+        {
+          "title": "API",
+          "url": "https://woocommerce.com/document/groups-woocommerce/api/"
+        },
+        {
+          "title": "[woocommerce_product_filter_reset]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_reset/"
+        },
+        {
+          "title": "Product Filter – Reset",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/widgets/product-filter-reset/"
+        },
+        {
+          "title": "Sending SMS from a workflow",
+          "url": "https://woocommerce.com/document/automatewoo/twilio/sending-sms-from-a-workflow/"
+        },
+        {
+          "title": "Twilio SMS",
+          "url": "https://woocommerce.com/document/automatewoo/twilio/"
+        },
+        {
+          "title": "Setting up the Twilio integration",
+          "url": "https://woocommerce.com/document/automatewoo/twilio/setup-2/"
+        },
+        {
+          "title": "FAQ",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/faq/"
+        },
+        {
           "title": "Selling Unlimited Memberships",
           "url": "https://woocommerce.com/document/groups-woocommerce/memberships/selling-unlimited-memberships/"
         },
@@ -12170,12 +12322,12 @@
           "url": "https://woocommerce.com/document/google-product-feed-product-review-feeds/"
         },
         {
-          "title": "[woocommerce_product_filter_tag]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_tag/"
+          "title": "Mailchimp for WooCommerce Memberships",
+          "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
         },
         {
-          "title": "[woocommerce_product_filter_category]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_category/"
+          "title": "Add to Cart Redirect",
+          "url": "https://woocommerce.com/document/add-to-cart-redirect/"
         },
         {
           "title": "[woocommerce_product_filter_attribute]",
@@ -14118,7 +14270,7 @@
           "url": "https://woocommerce.com/document/address-validation/"
         },
         {
-          "title": "New Zealand Post Shipping",
+          "title": "New Zealand Post for WooCommerce",
           "url": "https://woocommerce.com/document/new-zealand-post-shipping/"
         },
         {
