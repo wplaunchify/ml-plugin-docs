@@ -18,7 +18,7 @@ This is one of the best tricks to encourage your customers to spend some money o
 
 ## Creating and selling gift cards
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 For creating gift cards with Smart Coupons, there are two parts:
 
@@ -40,7 +40,7 @@ Once you create a gift card, follow the below steps:
 
 ## How to configure lower-priced gift cards
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Go to your WordPress Admin panel. Click on WooCommerce > Settings > Smart Coupons.
 2. Look for the setting ‘**Sell store credit at less price?**’. Enable it. ![](https://woocommerce.com/wp-content/uploads/2019/10/smart-coupons-store-credit-at-less-price-setting.png?strip=all&w=704)
