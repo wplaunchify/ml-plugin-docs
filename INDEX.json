@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T15:31:24.929Z",
+  "last_updated": "2026-08-23T15:42:44.344Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1600,7 +1600,7 @@
       "slug": "kadence-custom-fonts",
       "name": "Kadence Custom Fonts",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-08-16T15:41:40.944Z",
+      "last_scraped": "2026-08-23T15:42:44.344Z",
       "page_count": 120,
       "categories": [
         "add-a-login-and-account-menu",
