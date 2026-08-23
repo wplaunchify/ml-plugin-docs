@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T02:15:47.030Z",
+  "last_updated": "2026-08-23T02:28:35.794Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -986,8 +986,8 @@
       "slug": "fooevents-bookings",
       "name": "FooEvents Bookings",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-08-16T02:24:55.370Z",
-      "page_count": 319,
+      "last_scraped": "2026-08-23T02:28:35.794Z",
+      "page_count": 321,
       "categories": [
         "frequently-asked-questions",
         "topics"
