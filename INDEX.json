@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T16:59:35.899Z",
+  "last_updated": "2026-08-23T17:04:18.563Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -119,7 +119,7 @@
       "slug": "affiliatewp-lifetime-commissions",
       "name": "AffiliateWP - Lifetime Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-08-16T17:03:25.085Z",
+      "last_scraped": "2026-08-23T17:04:18.563Z",
       "page_count": 221,
       "categories": [
         "uncategorized"
