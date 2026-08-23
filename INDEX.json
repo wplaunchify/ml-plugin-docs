@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T05:21:09.174Z",
+  "last_updated": "2026-08-23T05:40:12.541Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2418,7 +2418,7 @@
       "slug": "prime-mover",
       "name": "Prime Mover",
       "documentation_url": "https://codexonics.com/prime_mover/",
-      "last_scraped": "2026-08-16T05:39:23.419Z",
+      "last_scraped": "2026-08-23T05:40:12.541Z",
       "page_count": 116,
       "categories": [
         "prime-mover"
