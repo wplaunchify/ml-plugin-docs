@@ -1736,7 +1736,8 @@ Please contact your web host or CDN service provider for more assistance if you 
 
 ## Articles
 
-	- [Why are my PDF tickets blank?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/blank-pdf-ticket/)
+	- [I purchased a ticket and would like a refund. Can FooEvents help?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/i-purchased-a-ticket-and-would-like-a-refund-can-fooevents-help/)
+- [Why are my PDF tickets blank?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/blank-pdf-ticket/)
 - [How do I create different ticket types?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-create-different-ticket-types/)
 - [Why are my tickets not appearing or downloadable from My Account?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/why-are-my-tickets-not-appearing-or-downloadable-from-my-account/)
 - [How do I manually create tickets individually or in bulk?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-manually-create-tickets/)
@@ -2132,6 +2133,18 @@ You can view a demo of a block/grouped tickets [here](https://demo.fooevents.com
 FooEvents has a built-in ticket [CSV import tool](https://help.fooevents.com/docs/topics/tickets/import-tickets/) that can be used to import a large number of tickets for an event that has been generated in a third-party system. In order to import tickets from a different system, you will first need to export the ticket information from the other system as a CSV file. You can then use the CSV file to import the tickets into FooEvents and link them to an [existing event](https://help.fooevents.com/docs/topics/events/event-setup/).
 
 For detailed information on how to do this, please refer to the [Import Tickets](https://help.fooevents.com/docs/topics/tickets/import-tickets/) help guide.
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/frequently-asked-questions/tickets/i-purchased-a-ticket-and-would-like-a-refund-can-fooevents-help/](https://help.fooevents.com/docs/frequently-asked-questions/tickets/i-purchased-a-ticket-and-would-like-a-refund-can-fooevents-help/)
+
+FooEvents is a software provider and is not directly involved in the sale or fulfillment of tickets by event organizers. We do not have access to event organizers’ websites, customer orders, payment information, or ticket records, and are therefore unable to process refunds or make changes to bookings.
+
+If a ticket you purchased mentions that it is **“Powered by FooEvents,”** this simply means the event organizer uses FooEvents software to sell and manage tickets on their own website. Unlike a hosted SaaS ticketing platform, FooEvents runs independently on the organizers own website and servers, and we do not have access to their sales or ticketing systems.
+
+For refund requests, cancellations, or assistance with a ticket purchase, please contact the event organizer directly. Their contact details can usually be found on the event website or in your order confirmation email.
 
 ---
 
