@@ -11,7 +11,20 @@
 # Changelog
 
                     
-                    #### 2.33.4 (2026-05-22)
+                    #### 2.34 (2026-08-17)
+
+Added
+- Quick Search: Added search by post ID.
+
+Fixed
+- Fixed a conflict with Flatsome 3.20.8 where Flatsome UX Builder would get stuck on the "Loading UX Builder" screen if the "Content Permissions" module was enabled.
+- Fixed "Hide Sidebars" and "Hide Sidebar Widgets" panels missing from the "Tweaks" tab.
+
+Changed
+- Various internal changes in the "Tweaks" tab that shouldn’t affect functionality.
+- Tested up to WP 7.1-RC3.
+
+#### 2.33.4 (2026-05-22)
 
 Fixed
 - Fixed a bug in “Settings -> Easy Hide” where checking and then unchecking an admin menu item could cause it to become  visible even if it’s normally hidden by default. Now unchecking a menu item should either reset it to its default permissions (which depend on the role), or leave it as-is (if it was already explicitly enabled in the menu editor).
