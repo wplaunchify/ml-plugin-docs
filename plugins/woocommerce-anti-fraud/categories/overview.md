@@ -679,12 +679,8 @@ WooCommerce Subscriptions is a WooCommerce extension that lets customers subscri
 
 	
 			by [I13 Web Solution](https://woocommerce.com/vendor/i13-web-solution)
-	**Excellence verified**
-		Meets elevated standards for security, compatibility, maintenance, and customer satisfaction.
-					[Learn more](https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/)
-			Excellence verified
 
-Protect your eCommerce store from malicious and automated attacks by using reCaptcha/Cloudflare Turnstile/hCaptcha for WooCommerce.
+Protect your eCommerce store from malicious and automated attacks by using reCaptcha/Cloudflare...
 
 ---
 
