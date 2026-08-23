@@ -1736,7 +1736,8 @@ Please contact your web host or CDN service provider for more assistance if you 
 
 ## Articles
 
-	- [Why are my PDF tickets blank?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/blank-pdf-ticket/)
+	- [I purchased a ticket and would like a refund. Can FooEvents help?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/i-purchased-a-ticket-and-would-like-a-refund-can-fooevents-help/)
+- [Why are my PDF tickets blank?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/blank-pdf-ticket/)
 - [How do I create different ticket types?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-create-different-ticket-types/)
 - [Why are my tickets not appearing or downloadable from My Account?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/why-are-my-tickets-not-appearing-or-downloadable-from-my-account/)
 - [How do I manually create tickets individually or in bulk?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-manually-create-tickets/)
@@ -2137,6 +2138,18 @@ For detailed information on how to do this, please refer to the [Import Tickets]
 
 ## FooEvents Help Center
 
+**Source:** [https://help.fooevents.com/docs/frequently-asked-questions/tickets/i-purchased-a-ticket-and-would-like-a-refund-can-fooevents-help/](https://help.fooevents.com/docs/frequently-asked-questions/tickets/i-purchased-a-ticket-and-would-like-a-refund-can-fooevents-help/)
+
+FooEvents is a software provider and is not directly involved in the sale or fulfillment of tickets by event organizers. We do not have access to event organizers’ websites, customer orders, payment information, or ticket records, and are therefore unable to process refunds or make changes to bookings.
+
+If a ticket you purchased mentions that it is **“Powered by FooEvents,”** this simply means the event organizer uses FooEvents software to sell and manage tickets on their own website. Unlike a hosted SaaS ticketing platform, FooEvents runs independently on the organizers own website and servers, and we do not have access to their sales or ticketing systems.
+
+For refund requests, cancellations, or assistance with a ticket purchase, please contact the event organizer directly. Their contact details can usually be found on the event website or in your order confirmation email.
+
+---
+
+## FooEvents Help Center
+
 **Source:** [https://help.fooevents.com/docs/frequently-asked-questions/tickets/is-it-safe-to-delete-the-pdf-tickets-that-are-stored-on-my-server/](https://help.fooevents.com/docs/frequently-asked-questions/tickets/is-it-safe-to-delete-the-pdf-tickets-that-are-stored-on-my-server/)
 
 PDF Tickets are attached to the ticket emails that are sent to attendees and/or ticket purchasers. If the ticket files do not exist on your server, the FooEvents plugin will automatically recreate them so it’s safe to delete any old ticket files that are located at *wp-content/uploads/fooevents/pdftickets* on your server.
@@ -2149,7 +2162,7 @@ We suggest backing up these ticket files before deleting them just in case there
 
 **Source:** [https://help.fooevents.com/docs/frequently-asked-questions/tickets/tickets-are-not-being-generated-for-large-orders/](https://help.fooevents.com/docs/frequently-asked-questions/tickets/tickets-are-not-being-generated-for-large-orders/)
 
-This is most likely caused by a data type limitation in your sites database. FooEvents stores ticket data for an order in a single serialized **meta_value**. On large orders (roughly 30+ tickets in one order, depending on how much data each ticket stores), that serialized value can exceed the maximum size allowed for a **TEXT** field. When that happens:
+This is most likely caused by a data type limitation in your site’s database. FooEvents stores ticket data for an order in a single serialized **meta_value**. On large orders (roughly 30+ tickets in one order, depending on how much data each ticket stores), that serialized value can exceed the maximum size allowed for a **TEXT** field. When that happens:
 
 - The order meta is **truncated or not fully saved**.
 - FooEvents doesn’t have all the data it expects.
@@ -2157,7 +2170,7 @@ This is most likely caused by a data type limitation in your sites database. Fo
 
 ### Who is affected?
 
-This should only affects stores that:
+This should only affect stores that:
 
 - Have **HPOS** (WooCommerce High-Performance Order Storage) enabled.
 - Expect to process **large ticket orders** (around 30 or more tickets in a single order).
@@ -2166,13 +2179,13 @@ If you are **not** using **HPOS**, you should not be affected by this issue.
 
 ### Why doesn’t this affect non-HPOS sites?
 
-On non-HPOS sites, WooCommerce uses the standard WordPress **postmeta** table (for example wp_postmeta) for order meta.
+On non-HPOS sites, WooCommerce uses the standard WordPress **postmeta** table (e.g. wp_postmeta) for order meta.
 
 In **postmeta**, the **meta_value** column is already defined as **LONGTEXT**, which can store much larger values than **TEXT**.
 
 Because of that, non-HPOS sites can safely store large FooEvents ticket meta values without any changes.
 
-If you do experiance this issue on a non-HPOS site,  you or your developer may gave changed the data type of the **meta_value** field in the WordPress **postmeta** table.
+If you do experience this issue on a non-HPOS site,  you or your developer may have changed the data type of the **meta_value** field in the WordPress **postmeta** table.
 
 ### Technical details
 
@@ -2196,7 +2209,7 @@ If you’re using HPOS and expect large ticket orders, change the **meta_value**
 
 1. **Confirm the table name**
 
-Most installs will use: wp_wc_orders_meta
+Most installs will use **wp_wc_orders_meta**.
 
 If you’re using a custom prefix, adjust accordingly (for example 
 ```

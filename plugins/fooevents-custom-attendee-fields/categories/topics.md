@@ -1034,6 +1034,14 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-bookings/](https://help.fooevents.com/docs/topics/changelogs/fooevents-bookings/)
 
+## 2.0.14 (18 August 2026)
+
+- FIXED: Add to cart validation for exceeding the number of available stock.
+- FIXED: Add to cart validation for one slot one date selection.
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.0.4 and WooCommerce 11.0.1.
+
 ## 2.0.12 (14 July 2026)
 
 - FIXED: Date->slot on product page validation.
@@ -1921,6 +1929,13 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-custom-attendee-fields/](https://help.fooevents.com/docs/topics/changelogs/fooevents-custom-attendee-fields/)
 
+## 2.0.4 (18 August 2026)
+
+- FIXED: Required checkbox on new attendee page bug.
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.0.4 and WooCommerce 11.0.1.
+
 ## 2.0.2 (14 July 2026)
 
 - FIXED: Various template improvements.
@@ -2264,6 +2279,13 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-express-check-in/](https://help.fooevents.com/docs/topics/changelogs/fooevents-express-check-in/)
 
+## 2.0.4 (18 August 2026)
+
+- FIXED: load_text_domain() warning
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.0.4 and WooCommerce 11.0.1.
+
 ## 2.0.2 (14 July 2026)
 
 - FIXED: Check event Number of Days so that tickets can’t be checked in for a day that doesn’t exist.
@@ -2510,6 +2532,19 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/](https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/)
+
+## 2.0.16 (18 August 2026)
+
+- NEW: Attendee Page is now default for all new installs.
+- NEW: Check-ins App ticket creation date filter.
+- FIXED: Order Received page, ‘Thank you’ text display bug.
+- FIXED: Various Stationery Builder updates.
+- FIXED: Various security updates.
+- FIXED: Cater for event default check-in day when purchasing a ticket through FooSales / FooEvents POS.
+- FIXED: Event listing layout bug.
+- FIXED: Capture attendee details option select bug when WooCommerce Checkout Block is active.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.0.4 and WooCommerce 11.0.1.
 
 ## 2.0.15 (20 July 2026)
 
@@ -3756,6 +3791,13 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-multi-day/](https://help.fooevents.com/docs/topics/changelogs/fooevents-multi-day/)
 
+## 2.0.4 (18 August 2026)
+
+- FIXED: Warning if FooEvents for WooCommerce is not active.
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.0.4 and WooCommerce 11.0.1.
+
 ## 2.0.2 (14 July 2026)
 
 - FIXED: Various template improvements.
@@ -4088,6 +4130,13 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-pdf-tickets/](https://help.fooevents.com/docs/topics/changelogs/fooevents-pdf-tickets/)
+
+## 2.0.15 (18 August 2026)
+
+- ADDED: Thai character support.
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.0.4 and WooCommerce 11.0.1.
 
 ## 2.0.12 (14 July 2026)
 
@@ -5099,6 +5148,7 @@ Visit the [Check-ins App Settings](https://help.fooevents.com/docs/topics/events
 ## Articles
 
 	- [Installing the app](https://help.fooevents.com/docs/topics/check-ins-app/installing-the-app/)
+- [Limit the Tickets Loaded in the FooEvents Check-ins App](https://help.fooevents.com/docs/topics/check-ins-app/limit-the-tickets-loaded-in-the-fooevents-check-ins-app/)
 - [Connecting to your store](https://help.fooevents.com/docs/topics/check-ins-app/connecting-to-your-store/)
 - [Scanning tickets with the app](https://help.fooevents.com/docs/topics/check-ins-app/ticket-scanning-with-the-app/)
 - [Auto check-ins](https://help.fooevents.com/docs/topics/check-ins-app/auto-check-ins/)
@@ -5358,6 +5408,132 @@ Enter the following details on the login screen:
 2. **Username & Password** – The access details of one of your WordPress users (e.g. ‘admin’)
 
 **Please Note:** By default, access to the FooEvents Check-ins app is restricted to users with the role of “Administrator”. If you require additional users to have access to the FooEvents Check-ins app but don’t necessarily want to give them Administrator access to your site, please read this article: [User Roles, Capabilities and Permissions](https://help.fooevents.com/docs/topics/events/user-roles-capabilities-and-permissions/)
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/topics/check-ins-app/limit-the-tickets-loaded-in-the-fooevents-check-ins-app/](https://help.fooevents.com/docs/topics/check-ins-app/limit-the-tickets-loaded-in-the-fooevents-check-ins-app/)
+
+If your site contains a large number of events or has accumulated many tickets over time, you can control which events and tickets are made available to the [FooEvents Check-ins app](https://www.fooevents.com/products/apps/).
+
+These settings can help keep the app focused on relevant events, reduce the amount of data that needs to be loaded, and improve loading times and overall performance.
+
+In your WordPress admin area, go to:
+
+**FooEvents > Settings > Check-ins App**
+
+There are two settings that can be used to control what is available in the app:
+
+- **Event listing options** controls which events users can see in the Check-ins app.
+- **Tickets loaded** controls which tickets are returned to the app based on when the tickets were generated.
+
+## Event listing options
+
+The **Event listing options** setting lets you control which events are displayed to users in the Check-ins app.
+
+You can choose from the following options:
+
+### Show all events
+
+All FooEvents events will be available to the signed-in user. Default option provides the Check-in app with access to all events on your website.
+
+### Only show events created by the signed-in user
+
+Users will only see events that were created by their WordPress user account.
+
+This is useful when different users or event organizers manage their own events on the same website and should only have access to the events they are responsible for.
+
+For example, if several organizers use the same WordPress installation, each organizer can sign in to the Check-ins app using their own WordPress account and only see the events they created.
+
+### Only show the following events
+
+![Screenshot 2026 08 18 at 10.36.52](https://help.fooevents.com/wp-content/uploads/2026/08/Screenshot-2026-08-18-at-10.36.52.png)
+
+This option lets you explicitly choose which events should be available in the Check-ins app.
+
+A multi-select event list will be displayed where you can select one or more events.
+
+This is useful when Check-ins app users should only have access to a specific group of events, regardless of who created them.
+
+For example, you could give check-in staff access only to the events they are working on while keeping other events on the website hidden from them.
+
+### Show all events for Administrator users
+
+Enable **Show all events for Administrator users** if users with the WordPress Administrator role should always have access to all events in the Check-ins app.
+
+When enabled, the selected event listing restrictions will continue to apply to other users, while Administrators will be able to see all events.
+
+This is useful when event staff should have restricted access but site administrators still need full access for management, testing, or troubleshooting.
+
+## Tickets loaded
+
+The **Tickets loaded** setting controls how many historical tickets are returned to the FooEvents Check-ins app.
+
+Over time, a site can accumulate thousands of tickets from previous events. Loading all of these tickets into the app may be unnecessary and can increase the amount of data that needs to be transferred and processed.
+
+By limiting tickets according to when they were generated, you can prevent older tickets from being returned to the app while continuing to load tickets for current events. This can reduce loading times and improve overall Check-ins app performance, particularly on sites with a long event history.
+
+**Important:** This setting uses the **ticket creation date**, not the event date. This allows FooEvents to use built-in WordPress queries and database indexes, ensuring tickets are filtered efficiently with minimal impact on your server’s resources.
+
+### Selecting how far back tickets should be loaded
+
+![Screenshot 2026 08 18 at 10.35.29](https://help.fooevents.com/wp-content/uploads/2026/08/Screenshot-2026-08-18-at-10.35.29.png)
+
+You can choose from the following options:
+
+- All tickets
+- Tickets generated in the last 30 days
+- Tickets generated in the last 90 days
+- Tickets generated in the last 180 days
+- Tickets generated in the last 12 months
+- Tickets generated in the last 18 months
+- Tickets generated in the last 24 months
+
+The selected option limits the tickets returned to the Check-ins app based on the date each ticket was generated.
+
+For example, if you select **Tickets generated in the last 90 days**, tickets generated more than 90 days ago will normally not be returned to the Check-ins app.
+
+### Choosing the correct time period
+
+It is important to select a period that covers any tickets that could still be valid for your current or upcoming events.
+
+Because this setting uses the **ticket creation date rather than the event date**, you should take into account how far in advance customers are able to purchase tickets.
+
+For example, if customers can purchase tickets six months before an event takes place, selecting **Tickets generated in the last 90 days** could exclude valid tickets that were purchased earlier.
+
+When in doubt, choose a longer period.
+
+### Include older tickets that have not been checked in
+
+As an additional safeguard, you can enable **Include older tickets that have not been checked in**.
+
+When enabled, tickets that fall outside the selected time period will still be returned to the app if they have not yet been checked in.
+
+For example, if the app is configured to load tickets generated in the last 90 days but a valid ticket for an upcoming event was generated four months ago, the ticket will still be loaded provided it has not already been checked in.
+
+This fallback helps ensure that valid tickets generated before the selected cutoff are not accidentally excluded.
+
+Keep in mind that **unchecked tickets from older events will also be included**. If your site contains a large number of historical tickets that were never checked in, these tickets may still be returned to the app.
+
+## Recommended approach for repeat events
+
+The best way to ensure that only relevant tickets need to be loaded is to create a **new WooCommerce event product for each event**, rather than continually changing the date and reusing an existing event product.
+
+For example, if you run the same event every month, create a separate event product for each occurrence instead of updating the date on the previous event.
+
+This helps:
+
+- Keep tickets associated with the correct event.
+- Prevent large numbers of historical tickets from accumulating against a single event.
+- Make it easier to restrict Check-ins app users to relevant events.
+- Keep event management and reporting properly separated.
+
+If your events are very similar, you do not need to configure each new event from scratch.
+
+When creating the new event, use the **Copy settings from another event** option in the **Event Details** tab, to copy the FooEvents configuration from your previous event. You can then simply update the relevant event date and time settings.
+
+Using separate event products together with the **Event listing options** and **Tickets loaded** settings provides the cleanest way to keep the Check-ins app focused on the events and tickets your team actually needs.
 
 ---
 
@@ -6537,6 +6713,25 @@ The drag & drop interface lets you insert standard event and attendee details as
 - Attendee Seat
 - **Custom Attendee Fields**
 
+If you’ve added a “Custom Text” widget then you can use the following variables to display information in a more customizable way:
+
+```
+{attendeeName}{attendeeFirstName}{attendeeLastName}{ticketID}{barcode}
+```
+
+This is useful to display e.g.
+
+```
+Mr. {attendeeLastName}
+```
+
+ or 
+```
+#{ticketID}
+```
+
+ without the word “Ticket”.
+
 Based on your design, the FooEvents Stationery Builder will generate a print-friendly, PDF file that can be printed on standard paper or cardboard, so that you can cut them out with scissors or a guillotine using the handy print cut line feature, or on popular label and badge stationery from [Avery](https://amzn.to/2qNH23i) and [Microsoft](https://amzn.to/2DHbaG4). The exported file will contain stationery for all the event attendees or you can insert specific order or ticket numbers which is useful for walk-ins.
 
 ## Requirements
@@ -6666,7 +6861,7 @@ This replaces the default add-to-cart behavior and may not be compatible with th
 
 ## Attendee
 
-![FooEvents Global Options > Attendee](https://help.fooevents.com/wp-content/uploads/2019/11/attendee-1024x473.png)
+![Attendee Settings](https://help.fooevents.com/wp-content/uploads/2019/11/Screenshot-2026-08-18-at-12.27.31.png)
 
 | Enable Attendee Details page? | Adds a dedicated step for collecting attendee information before checkout. |
 | --- | --- |
@@ -8339,6 +8534,7 @@ The FooEvents Seating plugin is an extension for FooEvents that allows your gues
 ## Articles
 
 	- [Seating Selection and Checkout Workflow](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/seating-selection-and-checkout-workflow/)
+- [Protected: New FooEvents Seating (Beta)](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/)
 
 ---
 
@@ -10543,7 +10739,6 @@ Please Note: The items below are not listed in any particular order and not all 
 | Add support for Event schema | FooEvents |
 | Add Google Event markup | FooEvents |
 | Order events/products by date in WordPress admin area | FooEvents |
-| Add option to download PDF ticket on checkout thank you page | PDF Tickets |
 | Add column support to event list shortcode | Calendar |
 | Sortable columns | Express Check-ins |
 | Improved display of variations | Check-ins Apps |
@@ -10556,7 +10751,7 @@ Please Note: The items below are not listed in any particular order and not all 
 | --- | --- |
 | Change booking slot quantity in Cart (20 April 2026) | FooEvents |
 | Full WooCommerce Cart and Checkout block compatibility (9 March 2026) | FooEvents |
-| Add option to download PDF ticket on checkout thank you page (20 April 2026) | FooEvents PDF Tickets |
+| Add option to download PDF ticket on checkout thank you page (20 April 2026) | PDF Tickets |
 | Display ticket details on order complete (20 April 2026) | FooEvents |
 | Attendees shortcode (blocks) | FooEvents |
 | Enhanced attendee fields display | FooEvents |
