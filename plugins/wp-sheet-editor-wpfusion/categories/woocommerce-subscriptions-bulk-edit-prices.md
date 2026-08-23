@@ -8,15 +8,13 @@
 
 **Source:** [https://wpsheeteditor.com/woocommerce-subscriptions-bulk-edit-prices/](https://wpsheeteditor.com/woocommerce-subscriptions-bulk-edit-prices/)
 
-*Last updated: August 15, 2026.*
+With **WooCommerce Subscriptions**, you can create recurring billing plans for your customers. Managing recurring orders across hundreds of active subscribers presents distinct administrative challenges.
 
-With **WooCommerce Subscriptions**, you can easily create subscriptions with recurring payments. Unfortunately, managing those subscriptions as your business grows is not nearly as easy.
+**Note:** This tutorial focuses on WooCommerce subscriptions, so if you want to work on products, read this [guide](https://wpsheeteditor.com/woocommerce-bulk-edit-product-prices/).
 
-**Note:** If you need to update regular catalog product prices instead of recurring subscription orders, check our complete guide on [how to bulk edit WooCommerce product prices](https://wpsheeteditor.com/woocommerce-bulk-edit-product-prices/).
+The native WooCommerce order search and editing options are limited. For example, if you want to find all active subscriptions billed at exactly $9.00, or you need to raise recurring rates across specific customer plans, you must open and update each subscription order individually. This manual process takes significant time and increases the risk of input errors.
 
-The native WooCommerce search and editing options are extremely limited. For example, if you want to find all active subscriptions priced at exactly $9.00, or you need to bulk raise prices to keep up with inflation, you usually have to open and edit each order one by one. This manual process is tedious, time-consuming, and prone to errors.
-
-In this tutorial, we will show you how to take full control of your recurring revenue. Using the **WP Sheet Editor – WooCommerce Orders** plugin, you will learn how to filter active subscriptions by total price and bulk increase (or decrease) those prices in a matter of minutes.
+In this tutorial, you will learn how to manage recurring orders directly. Using the **WP Sheet Editor – WooCommerce Orders** plugin, you can filter active subscription orders by total amount and adjust those recurring rates across multiple accounts simultaneously.
 
 You can download the plugin here:
 
@@ -24,45 +22,45 @@ You can download the plugin here:
 
 ## Step 1: Set Up WooCommerce Subscriptions Spreadsheet
 
-Once you have installed and activated the plugin, the first step is to configure your workspace.
+Once you have installed and activated the plugin, configure your workspace:
 
 Navigate to **WP Sheet Editor > Setup Spreadsheet** in your WordPress dashboard.
 
 ![Selecting data columns in the WP Sheet Editor setup screen](https://media.wpsheeteditor.com/wp-content/uploads/2020/05/15001216/13-4.png)
 
-Here, you can select exactly which columns you want to display in your spreadsheet. If there are data points you don’t need (like shipping dimensions or billing company), simply move them to the **Disabled** side. Click **Save** to generate your custom workspace.
+Select the columns you want to display in your spreadsheet. If there are data points you do not need (such as shipping dimensions or billing company), move them to the **Disabled** side. Click **Save** to load your spreadsheet view.
 
 ![Saving column preferences for WooCommerce Subscriptions](https://media.wpsheeteditor.com/wp-content/uploads/2020/05/15001237/14-4.png)
 
-You will now see all your WooCommerce subscriptions beautifully organized, with each subscription as a row and its details as columns.
+The spreadsheet will display your WooCommerce subscriptions, with each active subscription order represented as a row and its metadata organized into columns.
 
 ![WooCommerce subscriptions displayed in a spreadsheet format](https://media.wpsheeteditor.com/wp-content/uploads/2020/05/15223835/1-7.png)
 
-## Step 2: Search and Filter Active Subscriptions by Price
+## Step 2: Search and Filter Active Subscriptions by Recurring Rate
 
-Before making any bulk edits, you need to isolate the exact subscriptions you want to target. Click the **Search** tool on the top toolbar to open the advanced filtering options.
+Before running a bulk update, isolate the specific subscription orders you need to adjust. Click the **Search** tool on the top toolbar to open the filtering settings.
 
 ![Clicking the Search tool on the WP Sheet Editor toolbar](https://media.wpsheeteditor.com/wp-content/uploads/2020/05/15223901/2-5.png)
 
-You can filter by exact price, find a range of prices, or locate subscriptions above/below a specific threshold. Let’s look at three common scenarios:
+You can filter by exact billing amounts, search a range of values, or target orders above or below a specific threshold:
 
-### Option A: Search for an Exact Price
+### Option A: Search for an Exact Subscription Amount
 
-Let’s say you want to find all active subscriptions currently priced at exactly $9.00. Tick the **Enable advanced filters** checkbox and apply these parameters:
+To isolate all active subscription orders billed at $9.00, check the **Enable advanced filters** box and set these parameters:
 
 - **Field:** Subscription Status **| Operator:** = **| Value:** Active
 
-Click **Add New** to enter a second rule:
+Click **Add New** to add the second condition:
 
 - **Field:** Order Total **| Operator:** = **| Value:** 9.00
 
-Click **Run Search**. The spreadsheet will refresh to show only active subscriptions totaling $9.00.
+Click **Run Search**. The spreadsheet will update to show only active subscriptions totaling $9.00.
 
 ![Configuring advanced filters for exact WooCommerce subscription price](https://media.wpsheeteditor.com/wp-content/uploads/2020/05/15235725/13-5.png)
 
-### Option B: Search for Prices Equal To or Greater Than
+### Option B: Search for Recurring Rates Equal To or Greater Than
 
-If you want to target premium subscribers (e.g., anyone paying $5.00 or more), use the “Greater Than or Equal To” operator:
+To target plans billed at $5.00 or higher:
 
 - **Field:** Subscription Status **| Operator:** = **| Value:** Active
 
@@ -72,9 +70,9 @@ Click **Add New**:
 
 ![Filtering WooCommerce subscriptions by greater than or equal to a price](https://media.wpsheeteditor.com/wp-content/uploads/2020/05/15235744/15-5.png)
 
-### Option C: Search for Prices Equal To or Less Than
+### Option C: Search for Recurring Rates Equal To or Less Than
 
-If you need to find lower-tier plans to issue a price increase (e.g., recurring orders under $10.00), use the “Less Than or Equal To” operator:
+To find lower-tier subscription orders billed at $10.00 or less:
 
 - **Field:** Subscription Status **| Operator:** = **| Value:** Active
 
@@ -84,35 +82,35 @@ Click **Add New**:
 
 ![Filtering WooCommerce subscriptions by less than or equal to a price](https://media.wpsheeteditor.com/wp-content/uploads/2020/05/15235804/17-4.png)
 
-## Step 3: Bulk Increase or Decrease Subscription Prices
+## Step 3: Bulk Update Subscription Order Rates
 
-Now that you have isolated the specific group of active subscriptions using the search tool, you can easily modify their pricing in bulk.
+After filtering your target subscription orders, you can update their values using the bulk editor.
 
-Hover over the **Bulk Edit** tool in the top toolbar to reveal your editing options. Whether you need to run a temporary discount to reduce churn or raise prices to match inflation, you can adjust the values dynamically:
+Click the **Bulk Edit** tool in the top toolbar to access the modification settings:
 
-- **Increase subscription prices by percentage** (e.g., +10%)
-- **Increase recurring order prices by number** (e.g., +$5.00)
-- **Decrease subscription prices by percentage** (e.g., -15%)
-- **Decrease subscription prices by number** (e.g., -$10.00)
+- **Increase subscription rates by percentage** (e.g., +10%)
+- **Increase recurring totals by flat amount** (e.g., +$5.00)
+- **Decrease subscription rates by percentage** (e.g., -15%)
+- **Decrease recurring totals by flat amount** (e.g., -$10.00)
 
 ![Opening the bulk edit tool to adjust subscription prices](https://media.wpsheeteditor.com/wp-content/uploads/2023/02/17213457/Woocommerce-subscriptions-bulk-increase-product-price.jpg)
 
-In the **Bulk Edit** popup window, configure the tool as follows:
+Configure the fields in the **Bulk Edit** window:
 
 - **Select the rows that you want to update:** Choose *Edit all the rows from my current search*.
-- **Select type of edit:** Pick your desired action (e.g., Increase subscriptions by percentage).
-- **Increase/Decrease by:** Enter your exact percentage or flat numerical value.
+- **Select type of edit:** Select your update rule (e.g., Increase subscriptions by percentage).
+- **Increase/Decrease by:** Enter the percentage or numerical amount.
 - Click **Execute Now**.
 
 ![Configuring bulk edit rules to increase subscription prices](https://media.wpsheeteditor.com/wp-content/uploads/2023/02/17213651/Woocommerce-subscriptions-bulk-increase-product-price-percentage-for-active-subscriptions.jpg)
 
-Once the bulk edit is complete, your spreadsheet will instantly refresh. You can verify the adjustments by looking at the updated totals in the **Line items** column.
+When the process completes, the spreadsheet will refresh with the updated values. You can review the changes in the **Line items** column.
 
 ## Bonus: Exporting Your Subscription Data
 
-Need to run a report on these pricing changes? If you want to download a list of these updated customers or recurring orders for your accounting team, simply click the **Export** option in the top toolbar to generate a clean CSV file of your filtered data.
+To review these changes externally or share updated totals with your accounting team, click **Export** in the top toolbar to download a CSV file of your filtered subscription orders.
 
-By bringing the speed and flexibility of spreadsheets into WordPress, the **WP Sheet Editor – WooCommerce Orders** plugin transforms subscription management from an impossible chore into a two-minute task.
+The **WP Sheet Editor – WooCommerce Orders** spreadsheet lets you manage subscription billing updates in bulk directly from WordPress.
 
 You can download the plugin here:
 

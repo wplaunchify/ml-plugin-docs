@@ -2,7 +2,7 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-08-16T07:22:51.742Z",
+  "last_scraped": "2026-08-23T07:24:40.338Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
@@ -14,7 +14,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Bulk Increase or Decrease Prices in WooCommerce Pending Orders",
+          "title": "WooCommerce Pending Orders: How to Bulk Increase or Decrease Prices in Line-Items",
           "url": "https://wpsheeteditor.com/bulk-edit-prices-woocommerce-pending-orders/"
         }
       ]
