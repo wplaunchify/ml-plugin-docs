@@ -58,7 +58,7 @@ In order to verify your identity as a Premium user of our plugin, whom has purch
 
 Verified users will enjoy:
 
-- Premium support from our professional Support Team at [wpc.ticksy.com](http://wpc.ticksy.com) for FREE.
+- Premium support from our professional Support Team at [wpclever.net/support](http://wpclever.net/support) for FREE.
 - Unlimited Premium plugin update with notification in the Plugins section. Users who have got their Premium plugins from other sources, **not** our official website, won’t be able to update to higher versions.
 - Direct access to Downloads to get the .zip file of the latest version on **Membership** page. (You must use your *License Email* to register for an account on our website first if you haven’t done so before).
 
