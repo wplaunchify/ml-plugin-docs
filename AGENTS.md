@@ -53,6 +53,9 @@ otherwise sibling scrapes hit the same vendor at once and get rate-limited.
   refuses connections from GitHub runners fairly often.
 - WooCommerce products: `.wccom-single-doc-content`
 - WP File Manager (`filemanagerpro.io/article/`): `.article_container`
+- Fluent Snippets (`fluentsnippets.com/docs/`, 2 workflows): `.docs__main`. The site was
+  redesigned in August 2026; the `/docs/` index itself has no article body and always
+  reports as the one failed URL, which is expected.
 - WPCodeBox 2 (`docs.wpcodebox.com`): `.nextra-content`
 - QuadLayers (`quadlayers.com/documentation/`): `.doc-main__content`
 - Default when nothing else is specified: `.entry-content`
@@ -67,4 +70,8 @@ otherwise sibling scrapes hit the same vendor at once and get rate-limited.
 - June 2026: core `wp-api` bug built API URLs off doc sub-paths instead of the origin; ~40 plugins silently scraped zero pages. Fixed in `scraper.js`, plus fail-fast added.
 - Early July 2026: 64 workflows reconfigured with correct URLs/modes/selectors after research; WPCodeBox docs moved.
 - Mid July 2026: Nexcess/Liquid Web migrated the Kadence help center and Events Calendar docs to `docs.nexcess.com` with a new theme; 12 workflows failed until the selector was updated to `.nx-prose`.
+- Aug 30 2026: `launchflows.com` (our own site) started returning HTTP 500 on every
+  uncached request — a WordPress fatal, "Composer dependencies require a PHP version
+  >= 8.1.0". The scrape config was fine (43 pages on Aug 23); the site needs its PHP
+  version raised. Nothing to fix in this repo. Worth re-checking whether it recovered.
 - Late July 2026: FooEvents, WP All Import and AffiliateWP runs failed with no config problem at all — every one of them scraped fine on retry, and sibling workflows against the same host succeeded the same day. Root cause was all 131 workflows firing on the hour, so vendors saw bursts and dropped connections, and the scraper only retried 3 times over ~6 seconds. Fixed by staggering crons, adding exponential backoff with jitter and Retry-After support, re-checking empty WP API responses before trusting them, and retrying transient failures at the job level.
