@@ -8,6 +8,17 @@
 
 **Source:** [https://fluentcommunity.co/docs/changelog/](https://fluentcommunity.co/docs/changelog/)
 
+= 2.8.1 (Date: Aug 20, 2026) =- Added: Verified Members Only Posting Option for Spaces
+- Added: PWA Install Instructions for Non-Chromium Android and iOS
+- Improved: Sidebar Link Row Layout and Truncated Title
+- Improved: Feed Customizer Mobile Responsiveness
+- Improved: Translator Context for Placeholder Strings
+- Fixed: MemberPress Blocking Portal Signup
+- Fixed: English Source Strings Reported by Translators
+- Fixed: Card Action Popover Menu Rendered Sideways
+- Fixed: Stuck Popover on Space Member Actions
+- Fixed: Sidebar Gap With PWA Install Button at Top
+
 = 2.8.0 (Date: Aug 19, 2026) =- Introduced: Progressive Web App (PWA) Module
 - Added: Unlisted Post Visibility with Feed Status Filter
 - Added: Sort Direction Control on Member and Student Lists
