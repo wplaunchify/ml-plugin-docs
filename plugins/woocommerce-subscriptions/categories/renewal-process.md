@@ -678,28 +678,5 @@ Yes – Version 2.2 declares compatibility with HPOS.
 
 Yes – Version 2.3 adds support for both the new cart / checkout block experience in WooCommerce while maintaining support for the traditional shortcode method.
 
-					
-		
-## Related Products
-
-	
-	
-	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
-				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-
 ---
 
