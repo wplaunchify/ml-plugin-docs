@@ -1467,7 +1467,7 @@ The most important thing to remember when dealing with a problem like a broken w
 
 **Source:** [https://woobewoo.com/documentation/floating-mode/](https://woobewoo.com/documentation/floating-mode/)
 
-The WooBeWoo Product Filter plugin comes with everything you need to organize filtering for any purpose. For example, you can enable the Floating mod and your filter will appear in the popup. And this tutorial will help you enable and configure the floating mod.
+The WooBeWoo [Product Filter plugin](https://woobewoo.com/product/woocommerce-filter/) comes with everything you need to organize filtering for any purpose. For example, you can enable the Floating mod and your filter will appear in the popup. And this tutorial will help you enable and configure the floating mod.
 
 ### How to enable floating mod?
 
@@ -6186,7 +6186,7 @@ Add products to the table:
 
 Select the necessary items and add them to Manage Table Content.
 
-You can select all the products at once or filter them by:
+You can select all the products at once or [filter them](https://woobewoo.com/product/woocommerce-filter/) by:
 
 - **category**
 - **attribute**
@@ -8950,7 +8950,7 @@ Here you can:
 - Enable **Show count.**
 - **Hide categories without products.**Do not show filter option if there are no products with such category.
 - **Product categories.** Here you may select product categories to be displayed on your site from the list. If you want to select several categories, hold the “Shift” button and click on category names. Or you can hold “Ctrl” and click on category names. Press “Ctrl” + “a” for checking all categories.
-- **Clear filter only to selected categories.**When the filter is clear, he will be filtered only by selected items. Be careful when using two or more category filters!
+- **Clear filter only to selected categories.**When the filter is clear, he will be filtered only by selected items. Be careful when using two or more [category filter](https://woobewoo.com/blog/how-to-set-up-category-filtering-in-woocommerce-a-complete-guide-2025/)s!
 - **Exclude terms ids.** Here you may exclude category terms from the filter by ids. Example input: 1,2,3
 - **Show search –**enable if you need to add a field for searching  by categories ****
 - **Maximum height.**Set maximum displayed height on front-end.
@@ -9893,7 +9893,7 @@ Just one click – and all your products uploaded into the table content.
 
 Select the necessary items and add them to Manage Table Content.
 
-You can select all the products at once or filter them by:
+You can select all the products at once or [filter them](https://woobewoo.com/product/woocommerce-filter/) by:
 
 - category
 - attribute
@@ -10836,7 +10836,7 @@ When you\’ve finished customizing, the last step is to add a filter to the pa
 
 - #### Input shortcode
 
-Copy **Shortcode** under the main tabs and paste it to the website content. Product Filter plugin will display the filter on appropriate post/page using settings tuned in this filter.
+Copy **Shortcode** under the main tabs and paste it to the website content. [Product Filter plugin](https://woobewoo.com/product/woocommerce-filter/) will display the filter on appropriate post/page using settings tuned in this filter.
 
 **Filter PHP code** can be inserted at any place of the page code – to display exactly in this place, for example in the header or footer of the page.
 
@@ -11070,7 +11070,9 @@ Also, you can save your table as **PDF**file by choosing to save as pdf at the n
 
 **Use as main filter.**Turn on if you want the category filter to dynamically affect the content of attribute filters.**
 
-Also, WooCommerce Product Table plugin will display the hierarchy of categories in the dropdown list.
+Our [WooCommerce Product Filter](https://woobewoo.com/product/woocommerce-filter/) plugin can help with this.
+
+Also, [WooCommerce Product Table plugin](https://woobewoo.com/blog/creating-an-event-sale-page/) will display the hierarchy of categories in the dropdown list.
 
 ![Category](https://woobewoo.com/wp-content/uploads/2018/09/Category-filter-hierarchy-1.png)
 
