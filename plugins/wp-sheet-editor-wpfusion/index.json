@@ -2,7 +2,7 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-08-23T07:24:40.338Z",
+  "last_scraped": "2026-08-30T07:03:23.666Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
@@ -33,19 +33,6 @@
       ]
     },
     {
-      "title": "Import Tutor Lms Courses Google Sheets",
-      "slug": "import-tutor-lms-courses-google-sheets",
-      "url": "https://wpsheeteditor.comimport-tutor-lms-courses-google-sheets/",
-      "file": "categories/import-tutor-lms-courses-google-sheets.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Import Tutor LMS Courses from Google Sheets",
-          "url": "https://wpsheeteditor.com/import-tutor-lms-courses-google-sheets/"
-        }
-      ]
-    },
-    {
       "title": "Manage Tutor Lms Content Google Sheets",
       "slug": "manage-tutor-lms-content-google-sheets",
       "url": "https://wpsheeteditor.commanage-tutor-lms-content-google-sheets/",
@@ -55,6 +42,19 @@
         {
           "title": "How to Manage Tutor LMS Content in Google Sheets (Real-Time Sync)",
           "url": "https://wpsheeteditor.com/manage-tutor-lms-content-google-sheets/"
+        }
+      ]
+    },
+    {
+      "title": "Woocommerce Bulk Edit Product Attributes",
+      "slug": "woocommerce-bulk-edit-product-attributes",
+      "url": "https://wpsheeteditor.comwoocommerce-bulk-edit-product-attributes/",
+      "file": "categories/woocommerce-bulk-edit-product-attributes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Bulk Edit WooCommerce Attributes in a Spreadsheet",
+          "url": "https://wpsheeteditor.com/woocommerce-bulk-edit-product-attributes/"
         }
       ]
     },
