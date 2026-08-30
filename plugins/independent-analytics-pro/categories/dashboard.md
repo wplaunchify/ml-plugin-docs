@@ -34,6 +34,8 @@ The only difference is that it doesn’t include the dropdown to view stats for 
 
 The Getting Started video will teach you everything you need to use Independent Analytics proficiently on your website.
 
+If you have any trouble, please [post on our support forum](https://wordpress.org/support/plugin/independent-analytics/), and we’ll be happy to help you.
+
 ## Covered in this video tutorial
 
 - How to configure the analytics
