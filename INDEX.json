@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T10:19:08.180Z",
+  "last_updated": "2026-08-30T10:32:48.731Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2368,7 +2368,7 @@
       "slug": "ninja-tables-pro",
       "name": "Ninja Tables Pro",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-08-23T10:48:23.939Z",
+      "last_scraped": "2026-08-30T10:32:48.731Z",
       "page_count": 443,
       "categories": [
         "uncategorized"
