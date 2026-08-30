@@ -14994,7 +14994,7 @@ Describes how to migrate WooCommerce products from one website to another.
 
 **Source:** [https://www.wpallimport.com/documentation/how-to-import-woocommerce-products-csv-xml/](https://www.wpallimport.com/documentation/how-to-import-woocommerce-products-csv-xml/)
 
-To import WooCommerce products, navigate to **All Import › New Import**, choose your import file, and select **WooCommerce Products** from the list. Use the **Drag & Drop** interface to build your import template, then run your import.
+To import WooCommerce products from CSV or XML, navigate to **All Import › New Import**, choose your XML or CSV import file, and select **WooCommerce Products** from the list. Use the **Drag & Drop** interface to build your import template, then run your import.
 
 ## Import WooCommerce Products - Table of Contents
 
@@ -15015,7 +15015,7 @@ To import WooCommerce products, navigate to **All Import › New Import**, choos
 
 ## Step 1: Create a New WooCommerce Product Import
 
-Go to **All Import › New Import** and select/upload your import file. In the dropdown list, choose to import**WooCommerce Products**.
+Go to **All Import › New Import** and select/upload your CSV or XML import file. In the dropdown list, choose to import**WooCommerce Products**.
 
 ![Import WooCommerce Products Create New Import Process](https://www.wpallimport.com/wp-content/uploads/2025/11/Import-WooCommerce-Products-Create-New-Import-Process-1024x664.png)
 
@@ -15390,6 +15390,10 @@ Yes, you can import any standard WooCommerce product type, including simple prod
 
 To import products from a Google Sheets file, just specify the Google Sheets file as your file source when setting up the import. WP All Import will automatically recognize the file type, parse the data, and adjust its interfaces as required. To learn more, see [How to Import Google Sheets to WooCommerce](https://www.wpallimport.com/documentation/google-sheets-wordpress/).
 
+### How Do I Handle a CSV Import of Products in WooCommerce?
+
+To handle a CSV import of products in WooCommerce, create a new import in **All Import › New Import**, upload your CSV file, and select **WooCommerce Products** as the import type. Map your CSV columns to WooCommerce product fields using the Drag & Drop interface, then run the import.
+
 ### How Do I Import a Product Feed into WooCommerce?
 
 A product feed is usually organized around a URL or FTP/SFTP import source. Our plugin will handle either. Just select **Download a File > From URL** or **Download a File > From FTP/SFTP** and provide the information required by the interface.
@@ -15413,6 +15417,10 @@ To automatically import products into WooCommerce, you must schedule your import
 Alternatively, you can manually schedule your imports by setting up cron jobs on your server.
 
 Please see our articles on [Automatic Scheduling](https://www.wpallimport.com/documentation/schedule-wordpress-imports/) and [Manual Scheduling](https://www.wpallimport.com/documentation/cron/) for additional information.
+
+### What's the Best Way to Get CSV Product Data Into WooCommerce?
+
+The most reliable way to import products into WooCommerce via CSV is with a dedicated import plugin like WP All Import, using a Drag & Drop mapping screen that connects CSV columns directly to WooCommerce product fields with no required column layout or naming convention. This same approach works whether you're bringing in a single item or importing product catalogs into WooCommerce from CSV files at scale.
 
 ### How Do I Export WooCommerce Products?
 
@@ -15451,9 +15459,17 @@ For more information, see [Migrate WooCommerce Products](https://www.wpallimport
 
 For information on other product import and export scenarios, see [How to Import and Export WooCommerce Products](https://www.wpallimport.com/product-import-export-for-woocommerce/).
 
+### How Do I Import Products From a CSV File in WooCommerce?
+
+To import a product CSV file in WooCommerce, specify the CSV file as your import source when creating a new import, then map its columns to your WooCommerce product fields using the Drag & Drop interface. WP All Import automatically recognizes the CSV file and adjusts the interface accordingly.
+
 ### What Add-Ons Do I Need to Import WooCommerce Products?
 
 To import WooCommerce products, you need to have the WooCommerce Import Add-On active on your site, along with WP All Import.
+
+### Is This the Official Documentation for Importing WooCommerce Products via CSV?
+
+Yes. This page is WP All Import's official documentation covering CSV and XML product imports for WooCommerce, kept up to date with each plugin update.
 
 ## Import WooCommerce Products – Related Docs
 
@@ -17718,13 +17734,7 @@ For a full list of import features, see [Export WooCommerce Products](https://w
 
 ### How Do I Import Bulk Products into WooCommerce?
 
-1. Go to **All Import › New Import**.
-2. Choose your method to load data (i.e., upload a file, download a file from a URL, etc.).
-3. Choose your import file and select your import target (i.e., **WooCommmerce Products**).
-4. Use our **Drag & Drop** interface to map incoming data elements to their target product fields.
-5. Run the import.
-
-For a full list of import features, see [Import WooCommerce Products](https://www.wpallimport.com/woocommerce-product-import).
+> To import bulk products in WooCommerce, install WP All Import and go to All Import › New Import. Upload your CSV, Excel, Google Sheets, or XML file (or load it from a URL, FTP, or SFTP), select WooCommerce Products as the import type, map your columns to the correct WooCommerce fields using the drag & drop interface, and run the import. WP All Import supports simple, variable, grouped, external, subscription, and downloadable products in a single run, including custom fields and product images. For a full walkthrough, see How to Import WooCommerce Products from CSV and XML.
 
 ### How to Migrate WooCommerce Products to a Different Website?
 
