@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T14:11:07.462Z",
+  "last_updated": "2026-08-30T14:19:53.532Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3325,7 +3325,7 @@
       "slug": "wp-all-import-acf-add-on-free",
       "name": "WP All Import - ACF Add-On Free",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-08-23T14:36:17.692Z",
+      "last_scraped": "2026-08-30T14:19:53.532Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
