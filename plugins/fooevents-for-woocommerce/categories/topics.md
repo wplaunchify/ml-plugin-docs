@@ -1034,6 +1034,12 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-bookings/](https://help.fooevents.com/docs/topics/changelogs/fooevents-bookings/)
 
+## 2.0.16 (24 August 2026)
+
+- FIXED: PHP class typo.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.0 and WooCommerce 11.0.1.
+
 ## 2.0.14 (18 August 2026)
 
 - FIXED: Add to cart validation for exceeding the number of available stock.
@@ -4595,6 +4601,37 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/](https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/)
+
+## 1.12.7 (24 Aug 2026)
+
+- New: Added a setting to show pinned products in a separate list with its own list / grid mode settings
+- New: Added a setting to disable scanner sounds
+- Update: Cash orders now store values entered for cash received and change
+- Update: Made all pickers with dynamic content searchable
+- Update: Cash drawer can always be opened now, not just when cash is the payment method
+- Update: Significant improvements to scanning barcodes using an external barcode scanner
+- Fix: Disable auto fill for inputs
+- Fix: Triggering a Stripe payment sometimes displays an outdated total after canceling
+- Fix: Cater for WordPress installed in a subfolder
+- TESTED ON: WordPress 7.1 and WooCommerce 11.0.1
+
+## 1.12.5 (10 Aug 2026)
+
+- Update: Cater for background data fetch for new and updated orders that still use legacy WordPress post storage as opposed to High-performance Order Storage (HPOS)
+- Update: Minor updates to cater for upcoming FooEvents plugin refactoring
+- Update: Added logic to prevent accidental duplicate orders
+- Update: Cater for some scenarios that still use legacy WordPress post storage as opposed to High-performance Order Storage (HPOS)
+- Update: Improved number pad input focusing
+- Update: Improvements to scanning when using a barcode scanner
+- Update: Stripe Internet readers now use server requests for improved connectivity
+- Update: Various interface improvements
+- Fix: Cart product discounts resetting after closing the checkout panel
+- Fix: File includes for bundled web app
+- Fix: Minor PHP notices and warnings
+- Fix: Menu navigation when not using English
+- Fix: Order submission and sync inconsistencies
+- Fix: Various bug fixes and performance improvements
+- TESTED ON: WordPress 7.0.3 and WooCommerce 11.0.0
 
 ## 1.11.13 (2 Feb 2026)
 
@@ -9825,21 +9862,7 @@ Orders that were placed before **FooEvents POS version 1.8.0** will automaticall
 
 [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) integrates directly with [Square Terminal](https://amzn.to/3G0hgB3) devices and supports manual card entries to capture in-person card payments.
 
-## Sections
-
-- [Requirements](#requirements)
-- [Setup](#setup)
-- [Create New Square Application](#create-new-square-application)
-- [Square Sandbox](#square-sandbox)
-- [Square Terminal Integration](#square-terminal-integration)
-- [Plugin Settings](#plugin-settings)
-- [Pairing a Square Terminal](#pairing-a-square-terminal)
-- [Unpairing a Square Terminal](#unpairing-a-square-terminal)
-- [Processing Payments at Checkout Using Square Terminal](#processing-payments-at-checkout-using-square-terminal)
-- [Manual Card Processing at Checkout](#manual-card-processing-at-checkout)
-- [Refunding an Order](#refunding-an-order)
-
-### Requirements
+## Requirements
 
 The following are required for the Square payment integration:
 
@@ -9848,11 +9871,11 @@ The following are required for the Square payment integration:
 - [Square Terminal](https://amzn.to/3G0hgB3)
 - **Note:** Square hardware is currently available to customers in the **US**, **Canada**, **Australia**, **Japan**, the **United Kingdom**, **Republic of Ireland**, **France** and **Spain**, however, you do not need a reader for [manual card entries](#manual-card-processing-at-checkout).
 
-### Setup
+## Setup
 
 In order for **FooEvents POS** and **Square** to be able to communicate with each other, you will need to **create a new** or **update an existing** Square application in your **Square Developer Dashboard**.
 
-### Create New Square Application
+## Create New Square Application
 
 Open your [Square Developer Dashboard](https://developer.squareup.com/apps) and choose **New Application**, **Create Your First Application** if it is a new account OR **Open** a previously created application if one already exists in your account.
 
@@ -9872,7 +9895,7 @@ By clicking on the **Production** tab, you will see your unique **Application ID
 
 Next, select the **Point of Sale API** menu option and ensure that you still have the **Production** tab selected.
 
-### Square Sandbox
+## Square Sandbox
 
 **FooEvents POS** makes use of the **Square Point of Sale API** in order to send payment requests to your Square account.
 
@@ -9880,7 +9903,7 @@ Next, select the **Point of Sale API** menu option and ensure that you still hav
 
 ![](https://help.fooevents.com/wp-content/uploads/2022/10/square_sandbox_pos_unavailable.png)
 
-### Square Terminal Integration
+## Square Terminal Integration
 
 If you plan on integrating **FooEvents POS** with a [Square Terminal](https://amzn.to/3G0hgB3), you will need to add the **FooEvents POS** webhook to your Square application. From the **Production** tab, click on the “Webhooks” menu item to expand its submenu. Select the “Subscriptions” submenu item to view the **Webhook subscriptions** section.
 
@@ -9906,13 +9929,13 @@ Next, you will need to let Square know which events it needs to send to **FooEve
 
 ![square webhook created](https://help.fooevents.com/wp-content/uploads/2022/10/square_webhook_created-1024x480.png)
 
-### Plugin Settings
+## Plugin Settings
 
 After copying your production **Application ID** and **Access Token**, navigate to your **WordPress dashboard** and open the **plugin settings**. Under **Square Integration**, paste your **Application ID** and **Access Token**, then **save your settings** and you’re good to go!
 
 ![square integration settings](https://help.fooevents.com/wp-content/uploads/2022/10/square_integration_settings-1024x388.png)
 
-### Pairing a Square Terminal
+## Pairing a Square Terminal
 
 In order to process a payment at checkout using a [Square Terminal](https://amzn.to/3G0hgB3), you will need to pair a Terminal device with **FooEvents POS**.
 
@@ -9932,11 +9955,11 @@ After successfully pairing a device, **FooEvents POS** will remember the unique
 
 In order to enter a new device code on the Square Terminal which was generated by a different **FooEvents POS****app**, you must sign-out of the paired device while leaving the **FooEvents POS****app** in its **paired** state. To **sign-out** of the paired **Square Terminal**, swipe on the device from the far left side of the screen to display the slide-out menu, tap **Settings** and then tap the **Sign Out** button which will return the device to the login screen. You can then choose to sign-in again using the new device code.
 
-### Unpairing a Square Terminal
+## Unpairing a Square Terminal
 
 If **FooEvents POS** is paired with a specific **Square Terminal** and you would like to pair it with a different device or change the Square location that **FooEvents POS** is associating with the paired device, you will first need to tap the **Unpair** button to unpair the device in order to choose a different location and generate a new device code. To **sign-out** of the paired **Square Terminal**, swipe on the device from the far left side of the screen to show the slide-out menu, tap **Settings** and then tap the **Sign Out** button which will return the device to the login screen. You can then sign-in again using a newly generated device code.
 
-### Processing Payments at Checkout Using Square Terminal
+## Processing Payments at Checkout Using Square Terminal
 
 When you’re ready to complete an order on the **Checkout**screen in **FooEvents POS** using a paired **Square Terminal**, select **Square Terminal Payment** as the payment method.
 
@@ -9952,7 +9975,7 @@ If you navigate to the **WooCommerce Order** in your **WordPress dashboard**, yo
 
 ![square wc order](https://help.fooevents.com/wp-content/uploads/2022/10/square_wc_order-1024x496.png)
 
-### Manual Card Processing at Checkout
+## Manual Card Processing at Checkout
 
 If you do not have a **Square Terminal** or in an emergency, you can still enter the customer’s card details manually at checkout in order to process an order payment. Select **Square Manual Payment** as the payment method.
 
@@ -9962,7 +9985,7 @@ When you click the **Pay button**, a form will appear that allows you to enter t
 
 ![square manual form](https://help.fooevents.com/wp-content/uploads/2022/10/square_manual_form-1024x660.png)
 
-### Refunding an Order
+## Refunding an Order
 
 If you entered your **Square Access Token** in the [FooEvents POS plugin settings](https://help.fooevents.com/docs/topics/point-of-sale/plugin-settings/) and you refund an order in the **FooEvents POS app**, the Square transaction will be automatically refunded to the card that originally made the payment. If the transaction contained **split tenders** or the **refund failed** for some unknown reason, the order status is changed to **Refunded** in WooCommerce and an **error message** is displayed that allows you to view the transaction and refund the payment manually through your Square account.
 
@@ -9984,35 +10007,22 @@ If you originally processed the payment on a paired **Square Terminal** and the 
 
 [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) integrates directly with the [Stripe Reader S700](https://docs.stripe.com/terminal/payments/setup-reader/stripe-reader-s700), [Stripe Terminal BBPOS WisePOS™ E](https://stripe.com/docs/terminal/readers/bbpos-wisepos-e) and [Verifone P400](https://stripe.com/docs/terminal/readers/verifone-p400) smart readers and supports manual card entries to capture in-person card payments.
 
-## Sections
-
-- [Requirements](#requirements)
-- [Setup](#setup)
-- [Stripe Reader Locations](#stripe-reader-locations)
-- [Stripe API Keys](#stripe-api-keys)
-- [Plugin Settings](#plugin-settings)
-- [Stripe Reader Registration and Pairing](#stripe-reader-registration-and-pairing)
-- [Processing Payments](#processing-payments)
-- [Processing Payments Manually](#processing-payments-manually)
-- [Refunding an Order](#refunding-an-order)
-- [Troubleshooting](#troubleshooting)
-
-### Requirements
+## Requirements
 
 The following are required for the Square payment integration:
 
-- - [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) plugin activated and installed on your website
+- [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) plugin activated and installed on your website
 - Stripe [account](https://stripe.com/global) where the currency matches the currency of your WooCommerce store
 - [Stripe Reader S700](https://docs.stripe.com/terminal/payments/setup-reader/stripe-reader-s700), [Stripe Terminal BBPOS WisePOS™ E](https://stripe.com/docs/terminal/readers/bbpos-wisepos-e) or [Verifone P400](https://stripe.com/docs/terminal/readers/verifone-p400) smart reader
 - **Note: Readers can be ordered directly from Stripe through your Stripe Dashboard**
 
 Readers are currently available only to Stripe customers in **Australia**, **Austria** (beta), **Belgium**, **Canada**, **Czech Republic** (beta), **Denmark**, **Finland** (beta), **France**, **Germany**, **Ireland**, **Italy**, **Luxembourg** (beta), **Malaysia** (beta), **Netherlands**, **New Zealand** (beta), **Norway** (beta), **Portugal** (beta), **Singapore**, **Spain**, **Sweden**, **Switzerland** (beta), **United Kingdom** and the **United States**, however, you do not need a smart reader for[manual card payments](#processing-payments-manually)
 
-### Setup
+## Setup
 
 In order for **FooEvents POS** and **Stripe** to be able to communicate with each other, you will need to create at least one **Stripe Reader location** and also obtain your **Publishable key** and **Secret key** from your **Stripe Dashboard**.
 
-### Stripe Reader Locations
+## Stripe Reader Locations
 
 In order to register and use a **Stripe Reader S700**, **BBPOS WisePOS™ E** or **Verifone P400** smart reader or the **Stripe Manual Payment** option to process payments at checkout, you will need to add at least one location to your **Stripe Dashboard**. To add a Stripe location, login to your [Stripe Dashboard](https://dashboard.stripe.com/login) and navigate to **Payments**>**Readers**>**Locations**
 
@@ -10034,7 +10044,7 @@ Once you have uploaded your custom image, you can adjust its size to your liking
 
 ![stripe reader settings image](https://help.fooevents.com/wp-content/uploads/2022/10/stripe_reader_settings_image-1024x719.png)
 
-### Stripe API Keys
+## Stripe API Keys
 
 You can view your Stripe API keys by logging in to your **Stripe Dashboard** and navigating to **Developers**>**API keys**. Note: For more detailed instructions and information, please refer to [Stripe’s API keys documentation](https://stripe.com/docs/keys).
 
@@ -10052,13 +10062,13 @@ If you haven’t verified your Stripe account yet and would like to use a test c
 
 You will then be able to use one of [Stripe’s test card numbers](https://stripe.com/docs/testing#cards) at checkout in **FooEvents POS** (note: real cards don’t work while in test mode).
 
-### Plugin Settings
+## Plugin Settings
 
 After copying your live **Publishable key** and **Secret key**, navigate to your **WordPress dashboard** and open the [FooEvents POS plugin settings](https://help.fooevents.com/docs/topics/point-of-sale/plugin-settings/). On the **Integration** tab under **Stripe Payments**, paste your live **Publishable key** and **Secret key**, then **save** your settings and you’re good to go!
 
 ![stripe integration settings](https://help.fooevents.com/wp-content/uploads/2022/10/stripe_integration_settings-1024x353.png)
 
-### Stripe Reader Registration and Pairing
+## Stripe Reader Registration and Pairing
 
 In order to process a payment at checkout using either the Stripe Reader S700, BBPOS WisePOS™ E or Verifone P400 smart reader, you will need to register or pair the reader device with the **FooEvents POS app**. Open the **FooEvents POS****Settings** screen in the app and scroll down to **Stripe Settings**. Here you will be able to choose which Stripe location should be associated with the device that you would like to use with the **FooEvents POS app**.
 
@@ -10085,7 +10095,7 @@ Once the reader has been successfully registered, **FooEvents POS** will automa
 
 ![stripe reader connected](https://help.fooevents.com/wp-content/uploads/2022/10/stripe_reader_connected-1024x380.png)
 
-### Processing Payments
+## Processing Payments
 
 When you’re ready to complete an order in the **FooEvents POS****app** using a registered **BBPOS WisePOS™ E** or **Verifone P400** smart reader, select **Stripe Reader** as the payment method.
 
@@ -10113,7 +10123,7 @@ If you navigate to the**WooCommerce order** in your **WordPress dashboard**, you
 
 ![stripe wc order](https://help.fooevents.com/wp-content/uploads/2022/10/stripe_wc_order-1024x498.png)
 
-### Processing Payments Manually
+## Processing Payments Manually
 
 If you do not have a **Stripe Reader S700**, **BBPOS WisePOS™ E** or **Verifone P400** smart reader, you can still capture card details manually at checkout in order to process a payment for an order. Set up at least one [Stripe Reader Location](#stripe-reader-locations), and then select **Stripe Manual Payment** as the payment method.
 
@@ -10123,7 +10133,7 @@ When you click the **Pay** button, a form will appear that allows you to enter t
 
 ![stripe manual](https://help.fooevents.com/wp-content/uploads/2022/10/stripe_manual-1024x705.png)
 
-### Refunding an Order
+## Refunding an Order
 
 If you refund an order in **FooEvents POS**, the Stripe payment will be automatically refunded to the card that was originally used. If the **refund fails** for some reason, the order status will be changed to **Refunded in WooCommerce** and an **error message** will be displayed that allows you to view the transaction and refund the payment manually through the **Stripe Dashboard**. **Please note:** Refunding an order manually through **WooCommerce** will not automatically refund the **Stripe payment**. If you would like to refund an order from your **WordPress dashboard** instead of **FooEvents POS**, you will need to click on the **View transaction**link in the **order view** to open and manually refund the payment through your **Stripe Dashboard** and then set the **WooCommerce order status** to **Refunded**.
 
@@ -11720,92 +11730,387 @@ Here is some more information: [https://help.fooevents.com/docs/frequently-asked
 
 **Source:** [https://help.fooevents.com/docs/topics/tickets/import-tickets/](https://help.fooevents.com/docs/topics/tickets/import-tickets/)
 
-FooEvents has a built-in ticket CSV import tool that can be used to import a large number of tickets for an event. It can also be used to migrate ticket data from a third-party system into FooEvents.
+FooEvents includes a built-in CSV importer that can create a large number of tickets from attendee-level data. It can be used to move active registrations from another ticketing platform, generate FooEvents tickets for existing WooCommerce orders or import tickets that were issued through a legacy or offline registration process.
 
-To import tickets, you will first need to [install the FooEvents plugin](https://help.fooevents.com/docs/topics/getting-started/#install-the-fooevents-plugins) and [create an event](https://help.fooevents.com/docs/topics/getting-started/#creating-an-event).
+The source data must first be exported and prepared as a CSV file containing one row for every ticket. During the import, each CSV column is mapped to a FooEvents ticket field and every valid row is used to create a new ticket for an existing FooEvents event.
 
-## Summary
+This guide explains how to:
 
-Here is a brief summary of how the import feature works. Once you understand the process, please proceed to the next section for more detailed instructions.
+- Plan a ticket migration and understand what the importer creates
+- Prepare the required and optional CSV fields
+- Move ticket data from Event Tickets, Eventbrite or WooCommerce Box Office
+- Prepare an export from another ticketing or registration system
+- Map and import tickets in controlled batches
+- Verify ticket data, capacity, delivery and check-ins after the migration
 
-1. First, you will need to extract ticket information from your existing system or database and save it as a CSV file. At the very minimum, the CSV will need to include the **Attendee First Name**, **Attendee Last Name**, **Attendee Email** and the **ID** of the event you would like the tickets to be linked to.
-2. When your CSV file is ready, you will then need to upload the CSV file using the import tool.
-3. The import tool will prompt you to ‘map’ the column names in the CSV file to the correct ticket field names.
-4. Lastly, you will start the import and the tickets will be generated in FooEvents.
+Before importing tickets, [install the required FooEvents plugins](https://help.fooevents.com/docs/topics/getting-started/#install-the-fooevents-plugins) and [create and configure the destination event](https://help.fooevents.com/docs/topics/getting-started/#creating-an-event).
 
-## Create your tickets
+## Plan your ticket import
 
-Export your ticket information from your current system or database and create a CSV file that reflects the required information. It is important to ensure that your CSV file is properly formatted and contains all the necessary information. To help you with this, we’ve created a CSV file that you can use as a template, which can be downloaded by clicking on the following link:
+### How the importer works
+
+1. Create and configure the destination event products in FooEvents.
+2. Export attendee-level ticket information from the existing system and prepare it as a CSV file.
+3. Upload the CSV file under **FooEvents > Import Tickets**.
+4. Map the CSV columns to the corresponding FooEvents ticket fields.
+5. Review the validation screen and correct any errors in the CSV.
+6. Confirm the import and repeat the process for any remaining batches.
+7. Verify the imported tickets before issuing them to attendees or using them for check-ins.
+
+Each CSV row creates one FooEvents ticket. If one purchaser registered four attendees in a single order, the file must contain four rows—one for each attendee and ticket.
+
+### What the importer creates
+
+FooEvents creates a new ticket record for every imported row. Each ticket receives a new FooEvents ticket ID, ticket number, security hash and barcode or QR code. The ticket is linked to the destination FooEvents event specified in the CSV and begins with a **Not Checked In** status.
+
+Optional attendee details, variations, booking selections, custom attendee fields and references to existing WooCommerce orders can also be added when the correct destination IDs are supplied.
+
+### What is not migrated automatically
+
+The ticket importer creates FooEvents ticket and attendee records. It does not reproduce the complete commercial history or internal data model of the previous platform.
+
+- WooCommerce orders, customers, payments, taxes and refunds are not created.
+- Historical revenue is not added to WooCommerce sales reports.
+- Existing check-in statuses and check-in history are not transferred.
+- Original ticket IDs, security codes and barcodes do not become FooEvents ticket identifiers.
+- WooCommerce product stock and FooEvents Bookings availability are not reduced automatically.
+- Imported tickets are not automatically emailed to attendees.
+- The importer does not check whether a source ticket has already been imported.
+- Reserved seating assignments are not available as a standard CSV mapping.
+
+**New tickets and barcodes:** Tickets imported from another platform receive new FooEvents barcodes and QR codes. If the tickets will be used for admission, issue the new FooEvents tickets and tell attendees that their old tickets will no longer be accepted.
+
+### Prepare the destination events first
+
+Every imported ticket must be linked to an existing FooEvents event product. Before preparing the CSV:
+
+- Create the required FooEvents event products.
+- Configure event dates, venue details, ticket themes and ticket email settings.
+- Create any WooCommerce variations used for General Admission, VIP, package or access options.
+- Create the required booking dates and slots when using FooEvents Bookings.
+- Create the destination FooEvents Custom Attendee Fields before importing responses.
+- Record the destination Event, Variation, Booking Date and Booking Slot IDs.
+
+Do not use IDs from the previous ticketing system in FooEvents ID fields. Source IDs can be retained separately as Meta fields for reference.
+
+**Back up and test:** Create a complete backup of the website files and database, then test the migration on a staging site before importing tickets into the live site. The importer does not provide an automatic rollback or duplicate-removal process.
+
+## Prepare your CSV file
+
+### Download the example file
+
+Export the attendee information from the current system and save it as a standard comma-separated CSV file. The first row should contain the column headings and every following row should represent one ticket.
 
 [Download the CSV template file (ticket-import-example.csv)](https://help.fooevents.com/wp-content/uploads/2024/11/ticket-import-example.zip)
 
-Each record will be imported as one ticket. If a customer purchased more than one ticket in the same order then there will need to be a record for each ticket.
+The example includes a custom attendee field and FooEvents Bookings fields. Remove these columns if the destination event does not use [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/) or [FooEvents Bookings](https://www.fooevents.com/products/fooevents-bookings/).
 
-Please note, the template includes a custom attendee field (*fooevents_custom_vdofravyxwjrtvkaqukh*) and booking fields (*BookingDateID*, *BookingSlotID*) which are only necessary if you use the [FooEvents Custom Attendee Fields plugin](https://www.fooevents.com/products/fooevents-custom-attendee-fields/) and [FooEvents Bookings plugin](https://www.fooevents.com/products/fooevents-bookings/). If you do not use these plugins, you can simply remove the columns and data values from the template file.
+CSV headings can differ from the FooEvents field names because they can be mapped manually during the import. Using the standard headings shown below allows FooEvents to select many mappings automatically.
 
-Here is an overview of the various field types that can be included in the CSV file:
+### Required fields
 
-| Field Name | CSV column name | Description |
+| Field | Recommended CSV heading | Description |
 | --- | --- | --- |
-| Attendee First Name * | Attendee First Name | This is a required field. If you do not have an attendee name, please provide placeholder text such as ‘Guest’ or ‘NA’. |
-| Attendee Last Name * | Attendee Last Name | This is a required field. If you do not have an attendee name, please provide placeholder text such as ‘Guest’ or ‘NA’. |
-| Attendee Email * | Attendee Email | This is a required field. Please ensure the supplied email address is a valid email address. When running the import, FooEvents will validate each email address and will only proceed if all provided email addresses are formatted correctly. |
-| Event ID * | Event ID | This is a required field. This is the ID of the FooEvents product/event. When importing the ticket, the ID will determine which event the ticket is linked to.
-You can find the ID of an event/product by following these instructions:
+| Attendee First Name * | Attendee First Name | Required for every row. If the source does not contain an attendee name, use appropriate placeholder text such as Guest or NA. |
+| Attendee Last Name * | Attendee Last Name | Required for every row. Split a combined full-name column before importing. |
+| Attendee Email * | Attendee Email | Must contain a valid email address. Use the attendee email where possible or the purchaser email when the original system did not collect individual attendee addresses. |
+| Event ID * | Event ID | The WordPress product ID of the destination FooEvents event. This is not the event ID from the source platform. |
 
-In your WordPress Admin, go to Products and choose All Products from the submenu options.
-Hover over the product you need to know the ID.
-The product ID will be shown up under the product name. |
-| Variation ID | Variation ID | If your product is a variable product, you will need to specify the relevant variation ID for each ticket. The Variation ID can be seen when viewing the variations in the Product Data Variations tab. |
-| Attendee Telephone | Phone | Optional attendee phone number. |
-| Attendee Company | Company | Optional attendee company name. |
-| Attendee Designation | Designation | Optional attendee designation. |
-| Meta field | (your custom field name) | You can import additional custom post meta by adding the fields to your CSV file using a unique plain text field name. When importing, a custom field will be created using the supplied field name and attendee value. Please note, this is a standard WordPress custom fields and not a FooEvents Custom Attendee Field, which is outlined next. |
-| Custom Attendee Field | (your custom field name/ID) | When importing Custom Attendee Fields, please ensure the CSV column name matches the ID of the attendee field, not the Label. The easiest way to find the ID, is to open an existing ticket in FooEvents and check the Name of the custom attendee field in the ‘Custom Fields’ section with the same Value.
-In the following example, the ID of the T-Shirt size custom attendee field is fooevents_custom_yzctqvmoowymnisozwhg. This is the ID that should be used as the column name in the CSV. |
-| Booking Date and Slot ID | BookingDateID
-BookingSlotID | When using the FooEvents Bookings plugin, the date and slot of the booking are stored as unique ID values. To link a ticket to a specific booking date and slot, you will need to specify the ID’s of both the booking date and slot.
-The easiest way to determine the booking date and slot for a ticket is to open an existing ticket in FooEvents and check the values saved in the WooCommerceEventsBookingDateID and WooCommerceEventsBookingSlotID fields. These values are the booking date and slot IDs.
+To find the destination Event ID:
 
-Alternatively, you can find a full list of the booking date and slot ID’s for an event as a serialized array. Go to the bookable event in the WordPress admin area and scroll down to the Custom Fields section. The serialized array is saved as the value of the fooevents_bookings_options_serialized custom field. When generating the CSV, you can either manually copy the date and slot ID’s from the serialized array or you could write a custom script to do so. |
-| Order ID | Order ID | You can map new tickets to existing orders by including the relevant order ID in the CSV export.
-Tip: If you previously sold access to an event without using FooEvents, you can use the Order ID mapping to generate tickets for those past orders. Simply export your order and attendee information as a CSV file. You can then import the CSV file using the FooEvents Tickets Importer and map the generated tickets to the existing orders. This feature is ideal for retrofitting installations set up with standard WooCommerce or for migrating from another ticketing system. |
+1. In the WordPress admin area, go to **Products > All Products**.
+2. Find the FooEvents event product.
+3. Hover over the product name. The product ID is displayed beneath it.
+
+![The WooCommerce product ID displayed below an event product](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-18-at-16.15.15.png)
+
+### Optional fields
+
+| Field | Recommended CSV heading | Description |
+| --- | --- | --- |
+| Variation ID | Variation ID | The destination WooCommerce variation ID. Use this when the destination event uses variations for ticket types, packages or access levels. |
+| Attendee Telephone | Attendee Telephone | Optional attendee telephone number. |
+| Attendee Company | Attendee Company | Optional attendee company or organization. |
+| Attendee Designation | Attendee Designation | Optional job title or designation. Values must contain only letters, numbers, spaces, periods and hyphens. |
+| Order ID | Order ID | Links the imported ticket to an existing WooCommerce order on the destination site. Do not use an Eventbrite or unrelated source-platform order number. |
+| Booking Date ID | Booking Date ID | The destination FooEvents Booking Date ID. It must be supplied together with a Booking Slot ID. |
+| Booking Slot ID | Booking Slot ID | The destination FooEvents Booking Slot ID. It must be supplied together with a Booking Date ID. |
+| Custom Attendee Field | Destination field ID | Stores the value in an existing FooEvents Custom Attendee Field. The heading must use the internal field ID rather than the customer-facing label. |
+| Meta field | Your reference heading | Stores additional reference information as WordPress ticket meta. Suitable for source system, source ticket ID, source order ID or migration batch. |
+
+#### Variation IDs
+
+When the destination event is a variable product, edit the product and open **Product Data > Variations** to find the ID of each destination variation. A source ticket type such as VIP does not automatically identify the correct WooCommerce variation; add the corresponding destination Variation ID to every applicable row.
+
+#### Custom attendee fields
+
+When importing [FooEvents Custom Attendee Fields](https://help.fooevents.com/docs/topics/events/custom-attendee-fields/), the CSV column heading must match the internal ID of the destination attendee field, not its label. Open an existing ticket for the destination event and find the field under **Custom Fields**. The name will use a format similar to **fooevents_custom_yzctqvmoowymnisozwhg**.
+
+![The internal ID of a FooEvents Custom Attendee Field](https://help.fooevents.com/wp-content/uploads/2023/01/map-custom-fields.png)
+
+#### Booking Date and Slot IDs
+
+FooEvents Bookings stores the selected date and slot as internal destination IDs. A date, time or occurrence ID from the previous system cannot be imported directly.
+
+To identify the correct IDs, create or open an existing ticket for the required destination booking and check the **WooCommerceEventsBookingDateID** and **WooCommerceEventsBookingSlotID** values under **Custom Fields**. Both IDs must be included for each bookable ticket.
+
+![FooEvents Booking Date and Slot IDs stored on a ticket](https://help.fooevents.com/wp-content/uploads/2023/01/booking-id.png)
+
+A complete list of booking IDs is also stored on the bookable event in the **fooevents_bookings_options_serialized** custom field. Manually interpreting serialized data can be error-prone, so test every date and slot mapping before importing the complete file. See the [FooEvents Bookings guide](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-bookings/) for more information.
+
+#### Existing WooCommerce Order IDs
+
+Use the Order ID mapping only when the referenced WooCommerce order already exists on the destination website. This is useful when standard WooCommerce products or another WooCommerce ticket extension were previously used on the same site and the original orders are being retained.
+
+Do not map an Eventbrite order number, an Event Tickets Tickets Commerce order number or an ID from another WordPress installation to this field. Preserve it as **Source Order ID** metadata instead.
+
+### Create a destination mapping table
+
+Before editing a large export, create a lookup table that translates each source event, ticket type or occurrence into its FooEvents destination. For example:
+
+| Source event | Source ticket type | Event ID | Variation ID | Booking Date ID | Booking Slot ID |
+| --- | --- | --- | --- | --- | --- |
+| Annual Conference | General Admission | 1250 | 1261 |  |  |
+| Annual Conference | VIP | 1250 | 1262 |  |  |
+| Training Series | 5 September, Morning | 1400 |  | date_5_sep | morning_slot |
+
+Use the actual IDs from your site. The example IDs above are illustrative and will not work on another installation.
+
+### Clean and protect the source data
+
+- Include only valid tickets that should remain active after the migration.
+- Remove refunded, canceled, deleted, unpaid or non-attending records unless there is a specific reason to retain them.
+- Remove blank rows, summary rows and order totals.
+- Split combined attendee names into separate first- and last-name columns.
+- Confirm that every row contains a valid email address.
+- Remove payment details, old ticket-edit links, access tokens, security codes and personal information that FooEvents does not need.
+- Keep the original export and working migration files in a secure location with access limited to authorized staff.
+
+Useful audit columns can be retained as Meta fields, for example **Source System**, **Source Ticket ID**, **Source Order ID**, **Source Ticket Type** and **Migration Batch**. Review every column during mapping because columns that are not mapped to a standard FooEvents field can default to Meta field.
+
+## Move tickets from another platform
+
+Exports differ between platforms and configurations. Use the following methods as a starting point, then review the downloaded CSV before preparing it for FooEvents.
+
+### Event Tickets and The Events Calendar
+
+The ticketing solution commonly used with The Events Calendar is called **Event Tickets** or **Event Tickets Plus**.
+
+#### Export the attendees
+
+1. In the WordPress admin area, open the event’s **Attendees** screen.
+2. Use **Screen Options** to include the ticket and attendee columns required for the migration.
+3. Select **Export** to download the attendee CSV.
+4. Repeat the export for each event that will be migrated.
+
+Exporting one event at a time is recommended because every file can be assigned to a specific destination FooEvents Event ID. Event Tickets can export ticket type, check-in information, custom attendee responses, order information, ticket ID, ticket-holder details and purchaser details depending on the installed extensions and screen configuration. See the [Event Tickets attendee management guide](https://theeventscalendar.com/knowledgebase/event-attendees/).
+
+#### Prepare the Event Tickets export
+
+- Split **Ticket Holder Name** into Attendee First Name and Attendee Last Name.
+- Use **Ticket Holder Email Address** as Attendee Email.
+- Use purchaser details as a fallback only when individual ticket-holder information is unavailable.
+- Translate each Event Tickets ticket type into the correct destination Event ID and optional Variation ID.
+- Filter out canceled, refunded, unpaid and non-going attendees.
+- Preserve the original Ticket ID as Source Ticket ID metadata if it is needed for support or reconciliation.
+- Rename attendee-response columns to the destination FooEvents Custom Attendee Field IDs.
+
+If Individual Attendee Collection was not enabled, multiple tickets may contain the purchaser’s details rather than the name and email address of each attendee. This missing information cannot be reconstructed by the importer. Review the [Event Tickets attendee registration settings](https://theeventscalendar.com/knowledgebase/attendee-registration-settings/) to understand how the source data was collected.
+
+**Event Tickets Order IDs:** Map an exported Order ID to FooEvents Order ID only when Event Tickets used WooCommerce on the same website and the WooCommerce order is still present. Tickets Commerce, RSVP and external-site order IDs should be retained only as source metadata.
+
+### Eventbrite
+
+#### Export the attendees
+
+1. Open the Eventbrite event dashboard.
+2. Go to **Reporting > Event reports**.
+3. Select **Attendees**.
+4. Select CSV as the file type and export the report.
+
+To export attendees from several events, open the organization-level **Reporting > Attendees** report, select the required events, run the report and export it as CSV. For recurring events, exporting each occurrence separately can make the destination event or booking mapping easier. See Eventbrite’s [Download an Attendees report](https://www.eventbrite.com/help/en-us/articles/496608/download-an-attendees-report/) instructions.
+
+#### Export custom question responses
+
+Eventbrite provides a separate **Custom questions responses** report under **Reporting > Event reports**. Export this report when custom attendee responses need to be retained, then combine the required columns with the attendee export using a reliable common attendee or order reference.
+
+Eventbrite states that custom-question responses older than two years are not available in this report. See [How to access responses to custom questions](https://www.eventbrite.com/help/en-us/articles/588323/).
+
+#### Prepare the Eventbrite export
+
+- Map the Eventbrite attendee first name, last name and email to the required FooEvents fields.
+- Translate every Eventbrite ticket type into the destination Event ID and optional Variation ID.
+- Map recurring occurrences or entry times to the appropriate destination event or FooEvents Booking Date and Slot IDs.
+- Exclude refunded, canceled, deleted, unpaid and non-attending tickets.
+- Retain Eventbrite ticket, attendee and order references as Meta fields if they are required for reconciliation.
+- Do not map an Eventbrite order number to FooEvents Order ID.
+- Rename required custom responses to the appropriate destination FooEvents Custom Attendee Field IDs.
+
+Review the Eventbrite attendee and order statuses before filtering the export. Eventbrite distinguishes valid attendees from checked-in, refunded, canceled, deleted and unpaid records. See the [Eventbrite order and attendee status glossary](https://www.eventbrite.com/help/en-us/articles/291888/).
+
+If the original Eventbrite order form collected information from only the ticket buyer, several ticket rows may contain the buyer’s information rather than the details of each attendee. Use the available buyer details or obtain the missing attendee information before importing. See Eventbrite’s [order form and attendee collection guide](https://www.eventbrite.com/help/en-gb/articles/246376/how-to-collect-information-from-all-event-attendees/).
+
+### WooCommerce Box Office
+
+#### Export the tickets
+
+1. In the WordPress admin area, go to **Tickets > Tools**.
+2. Open the **Export** tab.
+3. Select the ticket products that should be included.
+4. Select **Download Export File**.
+
+The Box Office CSV contains the configured ticket-holder fields and can also include Ticket ID, ticket status, ticket name, ticket edit URL, purchase date, Order ID and purchaser User ID. See the [WooCommerce Box Office export documentation](https://woocommerce.com/document/woocommerce-box-office/#exporting-tickets).
+
+#### Prepare the Box Office export
+
+- Map the configured First Name, Last Name and Email ticket fields to the FooEvents attendee fields.
+- Translate each Box Office ticket product or ticket name into the destination FooEvents Event ID and optional Variation ID.
+- Filter out canceled, refunded, pending-payment or otherwise invalid tickets.
+- Preserve the Box Office Ticket ID and purchase date as source metadata if required.
+- Remove old ticket edit URLs and access tokens from the migration file.
+- Rename custom ticket-holder fields to the corresponding destination FooEvents Custom Attendee Field IDs.
+
+When Box Office and FooEvents are on the same WooCommerce website and the original orders are retained, the exported Order ID can be mapped to FooEvents Order ID. When migrating to another website, preserve it as Source Order ID metadata instead.
+
+**Same-site migration:** Test the complete migration on staging before disabling Box Office or converting existing products into FooEvents events. Avoid accepting live registrations through both ticketing workflows during the final migration.
+
+### Other ticketing and registration systems
+
+If the source platform is not covered above, export or request an attendee-level CSV containing as many of the following values as possible:
+
+- Source event name or ID
+- Source ticket type, package or access level
+- Attendee first name, last name and email
+- Ticket, attendee and payment status
+- Source ticket and order references
+- Occurrence, booking date or entry time
+- Custom attendee responses
+- Seat information, if the source event uses assigned seating
+
+If the platform cannot produce a suitable attendee-level CSV, its API or database export may need to be used to prepare one. A custom migration may be required when the source uses complex bookings, seating assignments, linked passes, memberships or ticket relationships that cannot be represented by the standard FooEvents fields.
 
 ## Import the CSV file
 
-**NB: We highly recommend that you first create a back-up of your current website files and database before proceeding beyond this point and make use of a staging site if possible**
+### Test a small sample first
 
-Prepare the CSV file similar to the following example.
+Create a test file containing a small but representative selection of tickets before importing the full attendee list. Include:
 
-![Screenshot 2023 01 16 at 13.26.56](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.26.56.png)
+- Every destination event and ticket type
+- Each WooCommerce variation
+- Different booking dates and slots
+- Tickets containing custom attendee fields
+- A ticket linked to an existing WooCommerce order, if that feature will be used
 
-Please note, this example includes [custom attendee fields](https://help.fooevents.com/docs/topics/events/custom-attendee-fields/) and [booking details,](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-bookings/) which require additional plugins.
+Prepare the CSV file in the same format that will be used for the complete migration.
 
-Login to the **WordPress admin area**and go to **Fooevents** > **Import tickets**. Upload the CSV file and press the **Continue** button and proceed.
+![An example FooEvents ticket import CSV](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.26.56.png)
 
-![Screenshot 2023 01 16 at 13.24.28](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.24.28.png)
+The example file includes [custom attendee fields](https://help.fooevents.com/docs/topics/events/custom-attendee-fields/) and [booking details](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-bookings/), which require the corresponding FooEvents extensions.
 
-In order to determine which CSV column names need to be used for specific ticket fields, you will need to map the fields before proceeding with the import. To do so, simply assign the appropriate field type in the right-hand column to the CSV field name on the left.
+### Upload and map the CSV
 
-If the column name in the CSV matches a ticket field name (e.g ‘Attendee First Name’ = ‘Attendee First Name’), FooEvents will automatically map the field for you. You can however change the mapping if you need to do so. In our example, the ‘Email’ field was manually mapped to ‘Attendee Field’ while ‘Event ID’, ‘Attendee First Name’ and ‘Attendee Last Name’ were automatically mapped as they matched the ticket fields.
+1. Log in to the WordPress admin area.
+2. Go to **FooEvents > Import Tickets**.
+3. Select the CSV file and press **Continue**.
 
-Map the tickets included in your CSV file to the relevant ticket fields and press the **Run the importer** button.
+![The FooEvents Import Tickets upload screen](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.24.28.png)
 
-![Screenshot 2023 01 16 at 13.24.48](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.24.48.png)
+On the mapping screen, assign each CSV column to the appropriate FooEvents ticket field. Standard headings such as **Event ID**, **Attendee First Name**, **Attendee Last Name** and **Attendee Email** are selected automatically when they match exactly, but every mapping should still be reviewed.
 
-Confirm that all the fields are correct. If any issues are identified when validating the data, please correct the issues in your CSV file and start over the process. Once all fields validate, press the **Confirm Import** button.
+- Map destination IDs to Event ID, Variation ID, Booking Date ID and Booking Slot ID.
+- Map source references that should be retained to Meta field.
+- Map destination custom field IDs to Custom Attendee Field.
+- Do not retain unnecessary or sensitive source columns as ticket metadata.
 
-![Screenshot 2023 01 16 at 13.25.00](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.25.00.png)
+Press **Run the importer** after reviewing every column.
 
-By default, the FooEvents Ticket Importer processes tickets in batches of 100 tickets in order to ensure reliable results. If your CSV file includes more than 100 entries, once you have completed importing the first batch, please repeat the process until all tickets have been imported.
+![Mapping CSV columns to FooEvents ticket fields](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.24.48.png)
 
-You can increase the batch limit from 100 to 500 by navigating to **FooEvents** > **Settings** > **General** where to you can adjust the **Import batch size** setting. Depending on your server’s configuration and capabilities, setting a large batch size may cause issues due to server timeouts or memory exhaustion. Adjust this value accordingly to avoid performance issues.
+### Validate and confirm the import
 
-**It is very important that you do not alter or rename the import file until this process is completed as this will result in duplication.**
+FooEvents displays the prepared ticket data before creating the tickets. The importer checks that the Event ID refers to a valid FooEvents event and that attendee email addresses use a valid format. It also checks the permitted format of Attendee Designation values.
 
-Once all of the fields have been imported, you can view the in the **FooEvents** > **Tickets** section.
+Check the complete preview, not only the highlighted errors. Confirm that:
 
-![Screenshot 2023 01 16 at 13.25.09](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.25.09.png)
+- Every row is linked to the intended destination event.
+- First name, last name and email are in the correct columns.
+- Variations correspond to the correct ticket types.
+- Booking Date and Slot IDs match the intended occurrence.
+- Custom attendee values appear under the correct fields.
+- Order IDs refer to existing WooCommerce orders on this website.
+
+If any values are incorrect, update the CSV and begin the import again. Once the preview is correct, press **Confirm Import**.
+
+![The FooEvents ticket import confirmation screen](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.25.00.png)
+
+### Import large files in batches
+
+By default, FooEvents processes tickets in batches of 100 to reduce the risk of server timeouts and memory exhaustion. When the CSV contains more tickets than the configured batch size, complete the current batch and repeat the import process until every batch has been processed.
+
+The batch size can be adjusted under **FooEvents > Settings > General > Import batch size**. Use a value appropriate for the website’s hosting resources. A smaller batch is safer when the file includes many custom fields or the server has limited memory and execution time.
+
+**Do not rename or modify a multi-batch CSV while it is being processed.** Upload the same unchanged file for every batch. Changing the file during the process can restart or disrupt the batch sequence and create duplicate tickets.
+
+### Avoid duplicate tickets during cutover
+
+The importer creates a ticket for every submitted row and does not compare source ticket IDs with previous imports. Use a controlled migration process:
+
+1. Record the source ticket IDs included in every migration batch.
+2. Pause ticket sales in the old system or record the exact export cutoff time.
+3. Import the prepared ticket file once.
+4. Export only registrations created or changed after the cutoff.
+5. Remove any source ticket IDs already imported before processing the final file.
+6. Open sales through FooEvents only after the imported totals and remaining capacity have been verified.
+
+## Verify and complete the migration
+
+### Verify the imported tickets
+
+After each test or production batch, go to **FooEvents > Tickets** and review the imported records.
+
+![Imported tickets displayed under FooEvents Tickets](https://help.fooevents.com/wp-content/uploads/2023/01/Screenshot-2023-01-16-at-13.25.09.png)
+
+- Compare the number of valid source tickets with the number of imported FooEvents tickets.
+- Compare totals by event, source ticket type, destination variation, booking date and slot.
+- Open representative tickets and inspect the attendee, variation, booking and custom field data.
+- Confirm that imported Order IDs open the intended WooCommerce orders.
+- Use the [FooEvents attendee export](https://help.fooevents.com/docs/topics/attendees/export-attendee-information/) to compare the resulting data with the cleaned migration file.
+
+### Update capacity and availability
+
+Imported tickets do not automatically reduce WooCommerce product stock or FooEvents Bookings availability. Before reopening sales, calculate the remaining capacity for every event, variation, booking date and time slot.
+
+For example, if an event has a capacity of 500 and 320 valid tickets were migrated, configure the destination sales capacity so that no more than the remaining 180 places can be sold. Account for any additional tickets that were already created directly in FooEvents.
+
+**Bookable events:** Check every date and slot separately. Importing Booking Date and Slot IDs associates the ticket with that occurrence, but the importer does not automatically subtract the ticket from the occurrence’s available booking stock.
+
+### Test ticket delivery and check-ins
+
+- Open an imported ticket and confirm that the HTML ticket displays correctly.
+- Generate and review a PDF ticket if FooEvents PDF Tickets is enabled.
+- Resend one test ticket and confirm that it reaches the intended attendee.
+- Load the destination event in the FooEvents Check-ins app.
+- Scan the new barcode or QR code and verify that the correct attendee and event details appear.
+- Test variations, booking filters and multi-day check-ins where applicable.
+
+The importer does not send ticket emails automatically. Once the migration has been verified, tickets can be selected under **FooEvents > Tickets** and resent in bulk. Review the event’s ticket theme, recipient and email settings first. See the [Resend tickets guide](https://help.fooevents.com/docs/topics/tickets/resend-tickets/).
+
+If attendees previously received tickets from another platform, explain that FooEvents has issued replacement tickets and that only the new FooEvents barcode or QR code should be used at the event.
+
+### Final migration checklist
+
+- The original website and database have been backed up.
+- The migration was tested on staging with representative tickets.
+- Only valid, paid and active source tickets were imported.
+- Every source event and ticket type is mapped to the correct destination event and variation.
+- Required attendee fields contain valid data.
+- Custom attendee and booking fields were tested.
+- Source identifiers were retained only where necessary.
+- Imported counts match the cleaned source export.
+- Product, variation and booking availability was adjusted manually.
+- Ticket delivery and the FooEvents Check-ins app were tested.
+- The old ticketing system is no longer accepting registrations for the migrated inventory.
+- Attendees were told how and when they will receive their replacement FooEvents tickets.
 
 ---
 
@@ -13615,9 +13920,13 @@ FooEvents is suitable for a variety of different use cases. We have put together
 
 ## Articles
 
-	- [RSVP/Pre-booking/Waitlist/Free Event](https://help.fooevents.com/docs/topics/use-cases/rsvp-waitlist-free-event/)
-- [Standard: Conference](https://help.fooevents.com/docs/topics/use-cases/conference/)
-- [Standard: Multi-day Conference](https://help.fooevents.com/docs/topics/use-cases/standard-multi-day-conference/)
+	- [Bookable Workshops](https://help.fooevents.com/docs/topics/use-cases/bookable-workshops/)
+- [Check-in Setup for Multi-Gate Events With Unreliable Connectivity](https://help.fooevents.com/docs/topics/use-cases/check-in-setup-for-multi-gate-events-with-unreliable-connectivity/)
+- [General Admission Ticketing](https://help.fooevents.com/docs/topics/use-cases/general-admission-ticketing/)
+- [Multi-day Festival Ticketing](https://help.fooevents.com/docs/topics/use-cases/multi-day-festival-ticketing/)
+- [RSVP/Pre-booking/Waitlist/Free Event](https://help.fooevents.com/docs/topics/use-cases/rsvp-waitlist-free-event/)
+- [Conference Ticketing](https://help.fooevents.com/docs/topics/use-cases/conference/)
+- [Multi-day Conference Ticketing](https://help.fooevents.com/docs/topics/use-cases/standard-multi-day-conference/)
 - [Bookable: Conference with Workshops](https://help.fooevents.com/docs/topics/use-cases/bookable-conference-with-workshops/)
 - [Bookable: Yoga / Fitness Classes](https://help.fooevents.com/docs/topics/use-cases/yoga-fitness-classes/)
 - [Bookable: Outdoor Adventures](https://help.fooevents.com/docs/topics/use-cases/outdoor-adventures/)
@@ -14137,6 +14446,557 @@ Already purchased and need assistance? [Contact our support team](https://www.f
 
 ## FooEvents Help Center
 
+**Source:** [https://help.fooevents.com/docs/topics/use-cases/bookable-workshops/](https://help.fooevents.com/docs/topics/use-cases/bookable-workshops/)
+
+In this guide, we outline how to use FooEvents to manage a recurring series of workshops. Customers can choose an available date and time, select a package, provide details for each participant, pay online and receive confirmation of their booking.
+
+This guide outlines a recommended setup for a bookable workshop series with the following requirements:
+
+- Selectable workshop dates and morning or afternoon time slots, with a maximum of 12 attendees per occurrence
+- Standard and Accelerator package options with different prices and inclusions
+- Group bookings with information captured for each participant
+- A confirmation email and ticket showing the attendee’s package, date and time
+- Automated preparation information and reminders before the workshop
+- Bookings, attendee information and attendance managed by workshop date and time slot
+- Optional on-site sales of remaining places and workshop materials
+
+Here is an example of this type of setup: [Training / Workshop](https://demo.fooevents.com/product/training/)
+
+The example uses one variable bookable event product. FooEvents Bookings manages the workshop dates, time slots and capacity, while WooCommerce variations manage the package options and pricing.
+
+The same approach can be used for creative classes, corporate training, sports or specialist skills clinics, cooking courses, first-aid or certification sessions, maker-space inductions, coaching and other instructor-led sessions where customers choose from scheduled dates or time slots with limited capacity.
+
+If you are new to FooEvents, we recommend reading the [Getting Started guide](https://help.fooevents.com/docs/topics/getting-started/) before continuing.
+
+## Plan your workshop booking setup
+
+### Products used
+
+The following products and extensions are used in this workshop booking setup:
+
+- [WooCommerce](https://woocommerce.com/)
+- [FooEvents for WooCommerce](https://www.fooevents.com/products/fooevents-for-woocommerce/)
+- [FooEvents Bookings](https://www.fooevents.com/products/fooevents-bookings/)
+- [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/)
+- [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/), if downloadable or printable confirmations are required
+- [FooEvents Ticket Themes](https://www.fooevents.com/products/ticket-themes/)
+- [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/)
+- [FooEvents Calendar](https://www.fooevents.com/products/fooevents-calendar/), if upcoming workshop dates should be displayed in a calendar
+- [AutomateWoo](https://help.fooevents.com/docs/topics/third-party-integration/automatewoo/), if automated reminders and follow-up messages are required
+- [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/), if workshop bookings or products will be sold in person
+
+### Recommended workshop product structure
+
+The most important decision is how the workshop offering should be divided into WooCommerce products, variations and optional add-ons.
+
+| Offering | Event configuration | Options | Capacity and access |
+| --- | --- | --- | --- |
+| Recurring workshop with selectable dates and times | One Bookable event product | Workshop dates and time slots | Stock is managed separately for each date and time slot |
+| Standard, premium or accelerator packages | Variations on the Bookable event product | Package attributes and prices | Packages draw from the selected workshop’s booking capacity |
+| Optional materials or merchandise | Separate WooCommerce products | Size, color or kit options as required | Uses separate product stock and does not create another workshop booking |
+| Private or corporate workshop | Separate Bookable event product | Private dates, packages and attendee fields | Keeps pricing, capacity and reporting separate from public workshops |
+| Course where one ticket covers several required dates | Multi-day event product | Sequential or specific course days | One ticket covers every configured day and supports a separate check-in for each day |
+| Single workshop with no customer date choice | Single event product | Variations if required | Standard event or variation stock can be used without FooEvents Bookings |
+
+Use one Bookable event product when the workshop content, venue and packages remain substantially the same and customers simply choose an occurrence. Create a separate product when a workshop has different content, instructors, policies, attendee questions or reporting requirements.
+
+A booking ticket covers one selected date and time slot. If a customer is purchasing a course that requires attendance on several dates, use a multi-day workflow instead of expecting one booking to represent the complete course. See the [Standard: Multi-day Conference](https://help.fooevents.com/docs/topics/use-cases/standard-multi-day-conference/) guide for an example of a ticket with daily attendance.
+
+The paid FooEvents plugins used in this example can be purchased individually. The [FooEvents Bookings Bundle](https://www.fooevents.com/bundles/bookings-bundle/) includes FooEvents for WooCommerce, FooEvents Bookings, FooEvents Custom Attendee Fields, FooEvents PDF Tickets and FooEvents Calendar. The Check-ins apps and ticket themes are also included. AutomateWoo and FooEvents POS are optional and are not included in the Bookings Bundle.
+
+## Configure packages, capacity and attendee data
+
+### Setting up the workshop product
+
+Create the recurring workshop as a variable Bookable event product:
+
+1. Go to **Products > Add Product** and enter the workshop title, full description, short description, featured image, gallery, categories and tags.
+2. In the **Product Data** panel, select **Variable product**.
+3. Set the product and its variations to **Virtual** so WooCommerce does not request shipping for the workshop.
+4. Set them to **Downloadable** if paid workshop orders should be able to move to the completed status without manual fulfillment, depending on the payment and order configuration.
+5. Go to **Product Data > Event Settings**, set **Is this product an event?** to **Yes** and select **Bookable** as the **Event type**.
+6. Complete the venue, organizer, contact and directions fields, then save the product.
+
+The product page should answer the practical questions a customer needs to resolve before booking:
+
+- Who the workshop is designed for and the experience level required
+- What attendees will learn or produce
+- The workshop duration, venue and accessibility information
+- What is included in each package and what attendees must bring
+- Age limits, prerequisites, safety requirements or clothing guidance
+- The cancellation, transfer, late-arrival and minimum-attendance policies
+
+The main event date is less important than the selectable booking dates, but the product and ticket information should still describe the overall workshop series accurately.
+
+### Creating package options
+
+Use WooCommerce variations when a customer must choose a package that changes the price or what is included. Go to **Product Data > Attributes**, add an attribute called **Package**, enter the available options, enable **Used for variations** and save the attribute. Then go to **Variations** and use **Generate variations**.
+
+| Package | Example price | Example inclusions |
+| --- | --- | --- |
+| Standard | $90 | Workshop admission, use of shared equipment and basic consumable materials |
+| Accelerator | $290 | Workshop admission, complete materials kit, take-home resources and a follow-up group coaching session |
+
+Set the price, Virtual and Downloadable options for each variation. Describe the package differences clearly on the product page and in the variation description so customers do not need to infer what the higher price includes.
+
+In this setup, capacity is managed by the selected booking date and slot. Both packages draw from the same 12 workshop places. Only enable variation stock if a package also needs its own sales limit; variation stock then acts as an additional restriction and does not replace the slot-and-date capacity.
+
+### Materials and add-ons
+
+Use a separate WooCommerce product for a physical item that can be purchased without changing workshop admission, such as an apron, tool set or additional materials pack. WooCommerce coupons can be used for corporate partners, returning attendees or promotional campaigns without creating another package.
+
+### Creating workshop dates and time slots
+
+Go to **Product Data > Bookings Settings** and select **+ New Slot**. A slot usually represents a repeatable workshop time or format, for example **Morning Workshop** or **Afternoon Workshop**. Enable the time fields and enter the starting time for each slot.
+
+| Slot | Dates | Start time | Stock per date |
+| --- | --- | --- | --- |
+| Morning Workshop | 5, 12 and 19 September | 10:00 | 12 |
+| Afternoon Workshop | 5, 12 and 19 September | 14:30 | 12 |
+
+Select **Add Dates** to open the Booking Wizard. Use the start date, end date and days-of-the-week options to generate repeating workshop dates, or add individual dates manually. Each generation range should cover no more than six months. If another slot uses the same dates, copy the first slot and adjust its name and time.
+
+### Managing workshop capacity
+
+Set stock for every slot and date combination:
+
+- Leave stock empty for unlimited availability.
+- Enter **0** when the occurrence has no availability.
+- Enter a positive number, such as **12**, to limit that date and slot to a fixed number of attendees.
+
+Booking stock is reduced for each attendee ticket, not only once per WooCommerce order. If the room holds 12 people but the instructor and assistant also require working space, set public stock to the actual number of customer places rather than the room’s theoretical maximum.
+
+**Important:** Use booking stock when capacity differs by workshop date or time. If booking slots are set to unlimited and capacity is managed only through product or variation stock, all occurrences draw from the same WooCommerce stock pool and are not limited independently.
+
+Review every generated date before saving. Avoid deleting, reordering or repurposing dates that already have bookings. If the schedule must change after sales begin, update the affected tickets carefully and communicate the change directly to those attendees.
+
+For a complete description of the slot builder and stock behavior, see the [FooEvents Bookings guide](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-bookings/).
+
+### Configuring booking selection and terminology
+
+Go to **Product Data > Event Terminology** and select the Bookable event type. Replace generic booking terms with language that fits the customer journey. For example:
+
+| Default term | Workshop term |
+| --- | --- |
+| Slot | Workshop time |
+| Date | Workshop date |
+| Booking Details | Workshop selection |
+
+Return to **Event Settings > Display Options**. For the Attendee Details Page workflow, use **Date → Slot** as the **Bookings selection order**, since this is the supported order on the attendee page.
+
+Display the booking fields on the product page when customers should see and choose availability before adding the workshop to their cart. Display them on both the product and Attendee Details pages when purchasers booking for several people should be able to review the selection for each attendee before checkout.
+
+- Keep the slot time visible when more than one time is offered.
+- Show stock in the date and slot selectors if remaining availability will help customers choose.
+- Leave **Show out of stock booking dates** disabled if sold-out dates should disappear from the selector.
+- Hide the general stock notice only when it is unnecessary or potentially confusing.
+
+**Booking confirmation:** Choosing a date or adding the product to the cart is not a completed booking. Treat the place as confirmed only after checkout succeeds, the order reaches a configured ticket-generating status and the attendee’s booking ticket is created.
+
+### Setting a booking cutoff
+
+Go to **Product Data > Event Expiration** and find **Bookings Expiration**. Enable **Expire bookings** and choose how long before the scheduled workshop a date and slot should stop accepting new bookings.
+
+For example, an artist who must prepare materials the previous afternoon might close bookings 24 hours before each workshop. A corporate trainer might close registrations several days earlier to prepare access cards, catering and printed materials. The cutoff hides the occurrence from customers; it does not cancel existing bookings.
+
+Confirm the WordPress timezone under **Settings > General** before relying on date-based expiration or automated reminders. See the [event expiration guide](https://help.fooevents.com/docs/topics/events/event-expiration/) for related settings.
+
+### Capturing attendee information
+
+Use the Attendee Details Page to collect participant information before WooCommerce checkout. This provides a dedicated step where the purchaser can complete the fields and confirm the workshop selection for every attendee in the order.
+
+**Important:** FooEvents for WooCommerce 2.0.16 and newer enables the Attendee Details Page by default on new installations. Existing installations should confirm that it is enabled. Update FooEvents for WooCommerce and all installed FooEvents extensions, then test any change to an established checkout process on a staging site first.
+
+Go to **FooEvents > Settings > Attendee** and enable **Enable Attendee Details page**. FooEvents can create the page automatically. If you use a custom page, include the following shortcode:
+
+```
+[fooevents_attendee_form]
+```
+
+Select the page under **Attendee Details page** and save the settings. If one purchaser commonly books for a team or family, consider enabling the option that lets them copy basic attendee details before completing the unique information for each participant.
+
+In **Product Data > Event Settings > Attendee Details**, enable the standard fields needed for each participant. First name, last name and email address are usually sufficient for a small workshop. Add telephone, company and designation only when they support the actual workshop workflow.
+
+See the [Attendee Details Page guide](https://help.fooevents.com/docs/topics/attendees/attendee-page/) for setup and page-flow details.
+
+#### Workshop-specific attendee fields
+
+Requires the [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/) plugin.
+
+Go to **Product Data > Custom Attendee Fields** and create only the fields the instructor will use. Suitable examples include:
+
+- **Experience level** — use a select field with consistent values such as Beginner, Intermediate and Advanced.
+- **What would you like to learn?** — use a short text field or textarea for goals that will help the instructor prepare.
+- **Accessibility requirements** — collect this only when the information is needed to make practical arrangements.
+- **Company or team** — useful for corporate training and private group workshops.
+- **Certification or membership number** — useful for accredited training or specialist clinics.
+- **Terms, waiver or safety acknowledgment** — use a checkbox with clear wording when explicit confirmation is required.
+
+Use fixed options for information that will be grouped or reported later. Mark fields as required only when an answer is necessary to accept or deliver the booking. Avoid collecting dietary, health, identity or emergency information unless it is genuinely relevant, and restrict access to exports containing sensitive attendee data.
+
+Custom attendee fields can be displayed on the ticket and in the Check-ins app, but operationally sensitive responses should not be placed on a customer-facing ticket unless the attendee needs to see them. See the [custom attendee fields guide](https://help.fooevents.com/docs/topics/events/custom-attendee-fields/).
+
+### Ticket generation and delivery
+
+The FooEvents ticket is the attendee’s workshop booking confirmation. Go to **Product Data > Ticket Settings** and select a suitable HTML ticket theme. Confirm that the ticket displays the workshop name, attendee, package variation, booking date, booking time or slot, venue and barcode or QR code.
+
+Use a clear ticket email subject such as **Your workshop booking is confirmed**. Add stable information to the ticket email body, including arrival time, venue access, parking, what to wear, what to bring and a link to the cancellation or transfer policy. Keep details that might change at short notice in a managed reminder workflow rather than hard-coding them into every ticket.
+
+Enable the option to email the ticket directly to the attendee when each participant should receive their own confirmation. If the purchaser is responsible for the whole group, test whether your preferred combination of purchaser and attendee ticket emails sends the right information to the right people.
+
+FooEvents generates the booking and ticket when the WooCommerce order reaches one of the statuses selected under **FooEvents > Settings > General > Send on order status**. **Completed** is the default. Select only statuses that represent an approved or intentionally accepted booking so confirmations are not issued for orders that are still awaiting payment or review.
+
+**Important:** A WooCommerce order email confirms the commercial transaction, while the FooEvents ticket confirms the attendee’s workshop booking. Make sure your email wording does not tell a customer that their place is confirmed before the booking ticket has been generated.
+
+#### Optional PDF and calendar confirmation
+
+If FooEvents PDF Tickets is installed, go to **FooEvents > Settings > PDF Tickets** and enable PDF tickets. Choose whether the PDF should be attached to the HTML ticket email and made available as a download. Then return to the product and select the appropriate PDF ticket theme.
+
+Enable the ticket’s **Add to calendar** option and calendar attachment when appropriate. Calendar entries reduce date and time mistakes, but attendees should still be directed to the latest operational information if arrangements change.
+
+Use a current ticket theme so the selected booking date, slot and time display correctly. See the [ticket configuration guide](https://help.fooevents.com/docs/topics/tickets/ticket-configuration/) and [FooEvents PDF Tickets guide](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-pdf-tickets/).
+
+FooEvents can also display generated tickets on the WooCommerce Thank You page. If the order has not yet reached a ticket-generating status, the customer will see the configured pending message. Review the [Thank You Page Tickets guide](https://help.fooevents.com/docs/topics/tickets/thank-you-page-tickets/) and make sure the pending message explains what happens next.
+
+### Workshop confirmations and communications
+
+#### Separate confirmation from preparation messages
+
+The confirmation ticket should be sent as soon as the booking is accepted and should contain the information required to identify the reservation. Preparation and reminder messages can then be sent relative to the selected booking date.
+
+| Timing | Purpose | Recommended method |
+| --- | --- | --- |
+| Immediately after approval | Confirm the package, attendee, date, time and venue | FooEvents HTML ticket and optional PDF |
+| Seven days before | Provide preparation work, materials, directions and cancellation reminders | AutomateWoo email |
+| One day before | Send a concise arrival reminder and last-minute operational information | AutomateWoo email or optional SMS |
+| Immediately after a schedule change | Explain the change and the attendee’s options | Direct targeted email, followed by an updated ticket when applicable |
+| One day after attendance | Share resources, feedback form, certificate information or the next workshop | AutomateWoo follow-up |
+
+Avoid duplicating long instructions across several messages. Keep the confirmation concise, use reminders for time-sensitive preparation and link to one maintained information page when details may change.
+
+#### Automate reminders with AutomateWoo
+
+**Optional:** Automated booking reminders require a supported automation solution. FooEvents integrates with [AutomateWoo](https://help.fooevents.com/docs/topics/third-party-integration/automatewoo/), which is purchased and installed separately.
+
+Create an AutomateWoo workflow using the FooEvents **After create ticket** trigger. Schedule the action relative to the selected booking date using the FooEvents booking variable. For example, a reminder two days before the workshop can use:
+
+```
+{{ fooevents.bookings_mysql | format: 'mysql', modify: '-2 days' }}
+```
+
+Create separate workflows for preparation, reminders and follow-up so each can be tested, paused and edited independently. Useful FooEvents variables include attendee first and last name, attendee email, ticket ID, event name, event venue, booking date and booking slot.
+
+- Send a preparation guide seven days before the selected workshop.
+- Send directions and an arrival reminder one day before the selected workshop.
+- Send resources or a feedback request after the workshop date.
+- Use the FooEvents check-in trigger when a follow-up should only be sent after an attendee is marked as present.
+
+**Timezone:** AutomateWoo uses the date and time provided by the FooEvents variable but does not adjust it for a different event timezone. If the workshop timezone differs from the WordPress site timezone, calculate and test the workflow timing carefully.
+
+After generating a test ticket, go to **AutomateWoo > Queue** and confirm that every message is scheduled for the correct date, time, attendee and workflow. Repeat the test for more than one workshop date and for bookings created close to a reminder cutoff.
+
+#### Distinguish operational and marketing messages
+
+Directions, preparation requirements, safety information and a booking change are operational messages needed to deliver the workshop. Promotions for unrelated workshops are marketing messages and should follow the consent and unsubscribe requirements that apply to your audience.
+
+AutomateWoo treats workflows as marketing by default. Enable **Is transactional?** only for genuinely operational messages. Do not use that option to bypass marketing consent. If attendees opt in to ongoing communications, FooEvents can also add them to a tagged Mailchimp audience. See the [Mailchimp integration guide](https://help.fooevents.com/docs/topics/third-party-integration/mailchimp/).
+
+A CRM integration such as [WP Fusion](https://wpfusion.com/documentation/events/fooevents/) can add attendees as contacts and apply event or package tags. Test consent, field mapping and duplicate-contact behavior before using attendee data in an automated campaign.
+
+#### Communicate schedule changes and cancellations
+
+Automated reminders are not a substitute for direct communication when a workshop is canceled, moved or materially changed. Filter the affected bookings by event, date and slot, confirm the recipient list, then send a clear message that explains:
+
+- What changed and why
+- The original and replacement date, time or venue
+- Whether the attendee must take any action
+- The transfer, credit or refund options available
+- How and when the updated confirmation will be delivered
+
+Update each affected booking, confirm the new slot has capacity and resend the ticket so the attendee has the current date and time. Pause or update scheduled AutomateWoo messages before they send outdated information.
+
+## Prepare and manage workshop attendance
+
+### Preparing for check-ins
+
+Go to **FooEvents > Bookings** to view the booking list. Filter by event, slot and date to prepare the attendee list for a specific workshop occurrence.
+
+Before each workshop, confirm:
+
+- The number of confirmed attendees and remaining places
+- The package quantities and materials required
+- Relevant experience levels, goals or prerequisites
+- Accessibility arrangements that have been agreed with attendees
+- Unpaid, canceled, transferred or manually added bookings that require attention
+- Whether reminder messages were sent successfully
+
+Prepare materials from the filtered booking list rather than from the total number of orders. One order can contain several attendees, and each ticket represents one participant and one place in the selected workshop.
+
+### Managing bookings before each workshop
+
+From **FooEvents > Bookings**, select the booking title or ticket ID to edit the attendee information, booking slot or booking date. Confirm that the replacement occurrence has space before moving the attendee.
+
+1. Verify the attendee and original booking.
+2. Check availability for the requested replacement date and slot.
+3. Update the booking and attendee information.
+4. Confirm that the old and new slot stock values are correct.
+5. Resend the ticket and verify any scheduled reminders now use the updated booking date.
+6. Record any fee, credit or exception according to the published workshop policy.
+
+For cancellations and refunds, use the established WooCommerce order workflow and update the ticket status when necessary. Confirm that the workshop place becomes available again before accepting another customer. Do not manually increase booking stock until you have checked whether the cancellation or refund has already returned it.
+
+Define how late transfers, no-shows and credits are handled before opening bookings. Publishing a concise policy on the product page reduces disputes and gives staff a consistent basis for making exceptions.
+
+### Preparing check-in devices
+
+Install the latest version of the free [FooEvents Check-ins app](https://www.fooevents.com/products/apps/) on the devices used at the workshop. Connect each device to the website, open the Bookable event and select the relevant booking date and slot. Bookable events use dedicated screens that make it easier to filter attendees for the occurrence being managed.
+
+Review the app-related settings under **FooEvents > Settings > Check-ins**:
+
+- Limit the event list to the workshops the signed-in staff member should manage.
+- Choose a ticket loading period that includes bookings made well in advance.
+- Enable **Include older tickets that have not been checked in** when valid workshop tickets might fall outside the selected loading period.
+- Enable **Hide personal information** if check-in staff only need the attendee name, package and ticket status.
+- Use a smaller **Tickets to load per request** value if the website struggles to load a large ticket history.
+
+Load the attendee data before opening the registration area. Test the built-in camera and any Bluetooth scanner using a real ticket from a completed test order. Confirm that the correct attendee, package, booking date and slot display and that the check-in update appears in WordPress.
+
+If staff must not admit attendees on the wrong date, enable **Restrict attendee check-ins to the current day** in the app. The app can warn when the booking date does not match the device date while still allowing an authorized staff member to handle a legitimate exception. See the [current-day check-in guide](https://help.fooevents.com/docs/topics/check-ins-app/restrict-attendee-check-ins-to-the-current-day/).
+
+### Checking in attendees
+
+#### Workshop check-in workflow
+
+1. Confirm the workshop event, date and time slot selected in the app.
+2. Scan the ticket barcode or QR code, or search by attendee name or ticket number.
+3. Verify the attendee, package and booking details before admitting the participant.
+4. Confirm that the ticket changes to **Checked In**.
+5. Escalate duplicate, unpaid, canceled, wrong-date or unrecognized tickets to the workshop supervisor.
+
+The **Check-in Same Order Tickets** option can speed up group arrivals, but only use it when every person from the same order and booking slot is physically present. Test the setting with a group booking before making it part of the arrival workflow. See [check in all tickets for the same order](https://help.fooevents.com/docs/topics/check-ins-app/check-in-all-tickets-for-the-same-order/).
+
+### Handling unreliable connectivity
+
+For a small workshop, one connected check-in device and a printed emergency attendee list are often sufficient. If several devices are used, keep them online so check-in changes synchronize through the WordPress website. Offline devices do not synchronize directly with one another, which can allow the same ticket to be accepted on more than one device.
+
+For more information, see the [FooEvents Check-ins app guide](https://help.fooevents.com/docs/topics/check-ins-app/) and [attendee check-ins guide](https://help.fooevents.com/docs/topics/attendees/attendee-check-ins/).
+
+## Sell workshop places and materials on-site
+
+### Selling bookings and products with FooEvents POS
+
+**Optional:** This workflow requires [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) and any FooEvents extensions needed by the products being sold.
+
+FooEvents POS supports Bookable event products, variations and custom attendee fields. Staff can select the workshop date, slot and package, capture the participant information, complete payment and print or email the ticket. Standard WooCommerce products such as materials kits or tools can be added to the same order.
+
+Before accepting walk-ins, check the live availability for the intended workshop occurrence and account for attendees who have booked but not yet arrived. Complete a test POS booking and confirm that booking stock is reduced, the attendee appears under **FooEvents > Bookings**, the ticket is generated and the Check-ins app can find it.
+
+#### POS connectivity limitation
+
+**Connectivity:** FooEvents POS can capture orders while offline, but event tickets are generated and printed after the device reconnects and the order synchronizes with the website. Offline devices might not have current slot availability, so a connected sales point is strongly recommended for capacity-limited walk-in bookings. See the [FooEvents POS offline mode guide](https://help.fooevents.com/docs/topics/point-of-sale/offline-mode/).
+
+## Reporting and final checks
+
+### Reporting and attendee exports
+
+After each workshop, compare the filtered booking list with the check-in results. Resolve any check-ins that were recorded on a backup list or offline device before using attendance data for certificates, follow-up or reporting.
+
+Use the [FooEvents event reports](https://help.fooevents.com/docs/topics/events/event-reports/) to review sales and attendance. You can also [export attendee information](https://help.fooevents.com/docs/topics/attendees/export-attendee-information/) from the event product, including attendee details, ticket information, custom fields, booking details and check-in data.
+
+Use the verified attendance list to send resources, feedback requests, certificate information or details about the next suitable workshop. The [FooEvents Stationery Builder](https://help.fooevents.com/docs/topics/events/fooevents-stationery-builder/) can prepare printable name tags, badges and personalized labels using ticket data.
+
+Restrict exports to staff who need them, avoid emailing unprotected files containing sensitive attendee information and delete temporary working copies when they are no longer required.
+
+### Final checks before bookings open
+
+Complete the following checks using real test orders and tickets:
+
+#### Online bookings
+
+- Confirm that the product page explains the audience, outcomes, duration, venue, package inclusions, prerequisites and booking policies.
+- Verify that the product is a Bookable event and that every variation has the intended price and Virtual and Downloadable settings.
+- Review every workshop date, time and slot label, and confirm that the WordPress timezone is correct.
+- Check the stock for every date and slot combination, including any places retained for instructors, assistants or operational needs.
+- Confirm that package variations draw from the intended booking capacity and that any additional variation stock limits are deliberate.
+- Test the Date → Slot selection order on both the product and Attendee Details pages.
+- Confirm that available, sold-out and expired workshop occurrences display as intended.
+- Book several tickets in one order and verify that each attendee’s details, package, date and time are saved correctly.
+- Test every payment and order-status path, including a slot with only one place remaining and any free or fully discounted bookings that will be offered.
+
+#### Ticket delivery and communications
+
+- Confirm that tickets are generated only when an order reaches an approved status.
+- Verify that HTML and PDF tickets show the correct attendee, package, booking date, slot, venue and scannable barcode or QR code.
+- Test purchaser and attendee email delivery, calendar information, Thank You page messaging and My Account downloads.
+- Check every AutomateWoo workflow in the queue and verify the recipient, booking-relative timing, timezone and transactional or marketing classification.
+- Test a schedule change and make sure the attendee receives an updated ticket while outdated reminders are paused or corrected.
+
+#### Workshop operations
+
+- Move and cancel test bookings, confirm that slot stock remains accurate and resend the updated ticket.
+- Filter the booking list by event, date and slot, then generate the attendee list or export used by the instructor.
+- Load the event on every check-in device and test successful, duplicate, canceled, unpaid and wrong-date scans using tickets from completed test orders.
+- Confirm the backup process for poor connectivity and reconcile any check-ins recorded outside the main online workflow.
+- Document how staff will handle transfers, cancellations, no-shows, lost tickets, schedule changes and refunds.
+
+#### Point of sale
+
+- Complete a test POS booking and confirm the selected workshop date, time, package and attendee fields are recorded correctly.
+- Verify that booking stock is reduced, the ticket is generated and the attendee is visible in the Check-ins app.
+- Confirm that staff understand the connectivity limitation before accepting capacity-limited walk-ins in offline mode.
+
+Run the complete process as a rehearsal: place an online booking, receive the ticket and reminder, move the booking, scan the updated ticket, sell a remaining place through FooEvents POS and review the resulting attendee and check-in records. This exposes most configuration and staff-process issues before customers are affected.
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/topics/use-cases/check-in-setup-for-multi-gate-events-with-unreliable-connectivity/](https://help.fooevents.com/docs/topics/use-cases/check-in-setup-for-multi-gate-events-with-unreliable-connectivity/)
+
+When an event has multiple entrances, check-in devices should normally remain online so that every gate has access to the latest ticket status. If connectivity is unreliable, the [FooEvents Check-ins app](https://www.fooevents.com/products/apps/) can continue processing check-ins in Offline Mode, but additional planning is required to reduce the risk of the same ticket being accepted at different gates.
+
+**Recommended approach:** Use a dedicated staff network as the primary connection and prepare Offline Mode as a fallback. Do not rely on multiple offline devices sharing check-in information in real time.
+
+## How check-in synchronization works
+
+When connected, the FooEvents Check-ins app communicates with your WordPress website using the REST API. Each check-in is recorded against the ticket in your WooCommerce database, allowing other connected devices to retrieve the updated ticket status. Refer to [Connecting to your store](https://help.fooevents.com/docs/topics/check-ins-app/connecting-to-your-store/) for more information.
+
+When a device is placed in Offline Mode:
+
+- Check-ins are stored locally on that device.
+- The device does not receive check-ins performed on other devices.
+- Changes are uploaded to your WooCommerce database when the device reconnects.
+- Devices operating offline will not synchronize with one another until they are back online.
+
+As a result, the same ticket could be accepted by two different offline devices because neither device knows that the other has already checked it in. **Offline Mode is therefore best treated as an emergency fallback**, particularly when using multiple devices. Learn more about this limitation in the [Offline Mode documentation](https://help.fooevents.com/docs/topics/check-ins-app/offline-mode/).
+
+## Recommended network setup
+
+Provide a dedicated network for check-in staff rather than relying on public or guest Wi-Fi.
+
+Where possible, your setup should include:
+
+- A dedicated staff Wi-Fi network covering every entrance.
+- A primary internet connection, such as venue broadband.
+- A secondary connection, such as a cellular router or mobile hotspot.
+- Portable power banks or continuous power for check-in devices and networking equipment.
+- A connected support desk for ticket searches, duplicate-ticket queries, and newly purchased tickets.
+
+Test both the primary and backup connections from every gate before the event. A connection that works inside the venue office may not work reliably at an outside entrance or in an area with large crowds.
+
+A local Wi-Fi network without internet access is not sufficient if your WooCommerce website is hosted elsewhere. Devices must be able to reach the website for check-ins to synchronize.
+
+## Prepare your website
+
+Complete the following checks several days before the event:
+
+1. Install the latest versions of [FooEvents for WooCommerce](https://www.fooevents.com/products/fooevents-for-woocommerce/) and the [FooEvents Check-ins app](https://www.fooevents.com/products/apps/).
+2. Confirm that the FooEvents REST API is accessible by visiting:
+```
+https://www.yourwebsite.com/wp-json/fooevents/v1
+```
+3. Confirm that security, CAPTCHA, or privacy plugins are not blocking the REST API.
+4. Check that your hosting environment can handle simultaneous requests from all check-in devices.
+5. Create suitable WordPress accounts for check-in staff. Where practical, avoid sharing a full Administrator account across every device.
+
+See [Connection issues](https://help.fooevents.com/docs/topics/check-ins-app/connection-issues/) for API, permissions, security plugin, and login troubleshooting.
+
+### Limit unnecessary ticket data
+
+If your website contains many past events or tickets, configure the Check-ins app to load only the data needed for the event. This reduces initial loading times and makes it easier for staff to find the correct event.
+
+Go to **FooEvents > Settings > Check-ins App** and review:
+
+- **Event listing options**
+- **Tickets loaded**
+- **Include older tickets that have not been checked in**
+
+Ensure that the selected ticket period includes tickets purchased far in advance. These settings use the ticket creation date rather than the event date. Refer to [Limit the tickets loaded in the FooEvents Check-ins app](https://help.fooevents.com/docs/topics/check-ins-app/limit-the-tickets-loaded-in-the-fooevents-check-ins-app/) for configuration guidance.
+
+If the server struggles to load a large event in a single request, tickets can also be [loaded in smaller batches](https://help.fooevents.com/docs/topics/check-ins-app/loading-tickets-in-batches/).
+
+## Prepare every check-in device
+
+Each device must complete its initial data download while it still has a reliable internet connection. Offline Mode cannot be prepared correctly if the relevant event and attendee data have not already been downloaded.
+
+On every device:
+
+1. Install or update the [FooEvents Check-ins app](https://www.fooevents.com/products/apps/).
+2. Sign in using the correct WordPress account.
+3. Open the event and allow all relevant tickets to finish loading.
+4. Confirm that recent test or attendee tickets are visible.
+5. Enable **Auto Check-in** if attendees should be checked in immediately after scanning.
+6. Test the camera or connected Bluetooth barcode scanner.
+7. Confirm that a test check-in performed on one device appears as checked in on the other devices.
+8. Test Offline Mode, reconnect the device, and confirm that the offline check-in synchronizes successfully.
+
+[Auto Check-in](https://help.fooevents.com/docs/topics/check-ins-app/auto-check-ins/) avoids returning to and refreshing the ticket list after every scan, which can make high-volume admission faster. A Bluetooth barcode scanner can also improve scanning speed and accuracy, particularly in low-light conditions. See [Scanning tickets with the app](https://help.fooevents.com/docs/topics/check-ins-app/ticket-scanning-with-the-app/).
+
+After testing, reset the test tickets to their intended status.
+
+## Assign tickets to specific gates
+
+If all devices remain online, attendees can generally use any entrance because check-in statuses are recorded centrally.
+
+If several gates may need to operate offline, divide attendees into non-overlapping groups before the event. **This will reduce the possibility of the same ticket being used at multiple entrances.** Assign gates according to ticket type, seating area, membership category, booking slot, or another value that staff can verify before scanning.
+
+**Use clear signage and include the assigned entrance in pre-event communication** where possible. Staff should redirect attendees to the correct gate before scanning their tickets.
+
+Each offline device should remain assigned to its designated gate or ticket group until its check-ins have synchronized. Do not move an unsynchronized device between gates.
+
+> If tickets cannot be divided into exclusive groups and preventing duplicate entry is essential, multiple fully offline scanners are not recommended. Restore connectivity, route attendees through a connected gate, or temporarily use a single offline validation point.
+
+Ticket filters can help staff focus the attendee list by ticket status or product variation, but operational gate assignment and signage are still important. See [Ticket filters](https://help.fooevents.com/docs/topics/check-ins-app/ticket-filters/).
+
+## Event-day procedure
+
+### Before opening the gates
+
+- Connect every device to the primary network.
+- Open the correct event and refresh its ticket data.
+- Confirm that each device has completed loading.
+- Perform a test scan at every gate.
+- Confirm that the test status appears on another device.
+- Check the backup network and power supplies.
+- Brief staff on the offline procedure and assigned ticket groups.
+
+Complete this process as close to opening time as practical so that devices contain recently sold, canceled, or updated tickets.
+
+### While connectivity is available
+
+Keep all devices online and process check-ins normally. A supervisor should periodically confirm that devices are connected and that ticket statuses are updating.
+
+### If a gate loses connectivity
+
+1. Attempt to connect the device to the backup network.
+2. If the connection cannot be restored, pause briefly and note the time of the outage.
+3. Enable Offline Mode.
+4. Continue scanning only the tickets assigned to that gate or device.
+5. Send exceptions, newly purchased tickets, and attendees at the wrong gate to the connected support desk.
+
+Tickets sold, canceled, or updated after a device goes offline will not be reflected on that device until it reconnects. If you continue selling tickets during an outage, route those customers through a connected entrance or support desk.
+
+## Reconnect and synchronize devices
+
+When connectivity returns:
+
+1. Temporarily stop scanning on the affected device.
+2. **Export its offline changes as a backup.**
+3. Disable Offline Mode or select **Reconnect**.
+4. Allow the device to upload its changes.
+5. Confirm that its check-ins appear in WooCommerce or on another connected device.
+6. Resume scanning only after synchronization is complete.
+
+For easier reconciliation, record the device name, gate, operator, and offline period for each exported file.
+
+If automatic synchronization fails, the app can export its offline changes as an XML file. Import this file using the FooEvents import tool in the WordPress admin area. Unique offline changes are imported only once, so previously imported changes are skipped if the same file is processed again. Follow the steps under [Import/Export offline changes](https://help.fooevents.com/docs/topics/check-ins-app/offline-mode/#import-export-offline-changes).
+
+Do not sign out, uninstall the app, clear its data, or reset a device until all offline check-ins have been successfully synchronized or exported.
+
+---
+
+## FooEvents Help Center
+
 **Source:** [https://help.fooevents.com/docs/topics/use-cases/concert-tour/](https://help.fooevents.com/docs/topics/use-cases/concert-tour/)
 
 ## Scenario
@@ -14283,9 +15143,11 @@ Already purchased and need assistance? [Contact our support team](https://www.f
 
 **Source:** [https://help.fooevents.com/docs/topics/use-cases/conference/](https://help.fooevents.com/docs/topics/use-cases/conference/)
 
-## Scenario
+Conferences involve more than selling registrations. Organizers need to offer different ticket types, manage venue capacity, collect information for every attendee, deliver clear and professional tickets, and keep registration moving efficiently on the day.
 
-An event company is planning a single-day conference that has the following requirements:
+FooEvents brings this workflow into WooCommerce, allowing you to sell conference registrations directly from your WordPress website using your preferred WooCommerce payment gateways. Each attendee receives an individual ticket that can be used to manage attendee records, generate printed badges and support fast check-ins with the FooEvents Check-ins app.
+
+In this guide, we will walk through a recommended configuration for a single-day conference. It covers ticket types, capacity, attendee registration, ticket delivery, badge printing and event-day check-ins based on the following requirements:
 
 - 450 tickets must be sold via the event company’s existing WordPress website using WooCommerce.
 - The purchaser must select a ticket type, such as Delegate, Standard, Student or VIP, which determines the ticket price.
@@ -14304,25 +15166,47 @@ An event company is planning a single-day conference that has the following requ
 
 Here is an example of such an event: [Conference](https://demo.fooevents.com/product/conference/)
 
-In this help document, we will outline the configuration needed to achieve the above requirements.
+The configuration below uses one variable event product for the main conference registration. Ticket types are managed as WooCommerce variations so that each option can have its own price and stock allocation.
 
 *This help document assumes that you already have FooEvents and WooCommerce installed on a WordPress website and have a basic understanding of how FooEvents works. If you are new to FooEvents, you should read our Getting Started guide before continuing.*
 
-## Products Used
+## Plan your conference ticket setup
 
+### Products used
+
+- [WooCommerce](https://woocommerce.com/)
 - [FooEvents for WooCommerce](https://www.fooevents.com/products/fooevents-for-woocommerce/)
 - [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/)
 - [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/)
 - [FooEvents Ticket Themes](https://www.fooevents.com/products/ticket-themes/)
-- [FooEvents Check-ins apps](https://www.fooevents.com/features/apps/)
+- [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/)
+- [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/), if conference tickets or merchandise will be sold on-site
 
-## Recommended Bundle
+### Recommended conference structure
 
-All plugins required to set up a conference can be purchased individually. They are also included in the [FooEvents Premium Bundle](https://www.fooevents.com/bundles/premium-bundle/), which includes FooEvents for WooCommerce, FooEvents Custom Attendee Fields and FooEvents PDF Tickets.
+The most important planning decision is whether access can be managed through one conference product or whether part of the program needs its own product, capacity or check-in workflow.
+
+| Offering | Recommended configuration | Capacity and access |
+| --- | --- | --- |
+| Main conference registration | One variable Single event product with Delegate, Standard, Student and VIP variations | One conference date, with independent price and stock for each ticket type |
+| Merchandise or optional add-ons | Standard WooCommerce products added to the same store or order | Standard WooCommerce stock; no conference access unless the item is configured as its own event |
+| Capacity-limited workshops | Use a Bookable conference workflow | Workshop availability is managed separately from conference ticket stock |
+| Conference spanning multiple days | Use a Multi-day event product | The ticket can maintain attendance for each configured conference day |
+| Virtual or hybrid access | Use the relevant virtual conference workflow | Online access and integration settings are configured separately |
+
+Use one variable event product when all attendees enter the same conference on the same day and the ticket type only changes the price or level of access. Create a separate event product when an activity needs an independent ticket, capacity limit or check-in record.
+
+If attendees must select a capacity-limited session, follow the [Bookable: Conference with Workshops](https://help.fooevents.com/docs/topics/use-cases/bookable-conference-with-workshops/) guide. For conferences that span more than one day, see the [Standard: Multi-day Conference](https://help.fooevents.com/docs/topics/use-cases/standard-multi-day-conference/) guide. Virtual conferences should use the [Virtual Event: Conference](https://help.fooevents.com/docs/topics/use-cases/virtual-conference/) workflow.
+
+The paid plugins required for this conference setup can be purchased individually. [FooEvents for WooCommerce](https://www.fooevents.com/products/fooevents-for-woocommerce/), [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/) and [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/) are all included in the [FooEvents Premium Bundle](https://www.fooevents.com/bundles/premium-bundle/). The bundle also includes additional FooEvents extensions, but they are not required for this single-day setup.
 
 If your conference runs across multiple days, you may also need [FooEvents Multi-day](https://www.fooevents.com/products/fooevents-multi-day/). This specific use case covers a single-day conference, so the event type will be set to **Single**.
 
-## Setup
+The [FooEvents Ticket Themes](https://www.fooevents.com/products/ticket-themes/) and [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/) used in this guide are available free of charge.
+
+FooEvents POS is optional and is not included in the Premium Bundle. Add it separately or use the appropriate POS bundle if you plan to sell registrations or merchandise at the venue.
+
+## Configure tickets, capacity and attendee data
 
 ### Create an event product
 
@@ -14332,28 +15216,44 @@ Use a clear conference name and include the most important event information in 
 
 Proceed to the **Product Data** panel and select **Variable product** from the product type dropdown. This allows you to create the different conference ticket types as WooCommerce variations.
 
-### Attributes and variations
+### Configure ticket types, pricing and capacity
 
 Next, create product variations that will allow purchasers to choose between different ticket types. Purchasers will be charged different amounts depending on their selection, and each ticket type can have its own stock quantity.
 
-| Variation | Price | Stock Availability |
+| Ticket type | Price | Stock allocation |
 | --- | --- | --- |
 | Delegate | $499 | 50 |
 | Standard | $299 | 250 |
 | Student | $0 (free) | 100 |
 | VIP | $599 | 50 |
+| Total conference capacity |  | 450 |
+
+The combined variation stock should not exceed the number of people the venue can accommodate. In this example, the four allocations total 450. Disable backorders unless your team has a deliberate oversell or waiting-list process.
+
+Describe what each ticket type includes on the product page. For example, a VIP ticket might include priority registration, a reserved networking area or a merchandise pack, while a Student ticket might require a student number or other eligibility information to be captured as a custom attendee field.
 
 Go to **Product Data > Attributes** and create an attribute called **Ticket Type**. In the **Values** field, specify the different ticket options. Be sure to check the **Used for variations** option and then click **Save attributes**.
 
 ![Screenshot 2021 07 19 at 14.53.11](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-19-at-14.53.11.png)
 
-Go to **Product Data > Variations**. Use the **Create variations from all attributes** option to generate the variations.
+Go to **Product Data > Variations** and select **Generate variations**. WooCommerce will create a variation for each ticket type in the **Ticket Type** attribute.
 
 ![Screenshot 2021 07 19 at 14.54.20](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-19-at-14.54.20.png)
 
 Set each variation to **Virtual** and set the relevant price. If you want to manage capacity per ticket type, enable **Manage stock** for each variation and set the number of tickets available using the **Stock quantity** field.
 
+A free or complimentary ticket should still have managed stock. Enter a price of **0** and assign it a fixed allocation so that free registrations continue to consume conference capacity.
+
 You can also set each variation to **Downloadable** if that matches your store configuration, but this is not required for FooEvents to generate and send tickets.
+
+#### Early-bird and other pricing phases
+
+Early-bird, standard and late pricing often draw from the same physical conference capacity. Avoid creating several unrestricted variations for pricing phases if each variation would create another stock pool for the same seats.
+
+- Use a scheduled WooCommerce sale price or update the variation price when the next phase begins; or
+- Allocate a fixed portion of capacity to each phase and only release the phases sequentially.
+
+WooCommerce coupons can be used for speakers, sponsors, partners or promotional campaigns without creating another ticket type. Test coupons against the intended ticket variations and confirm that discounted registrations still reduce the correct stock allocation.
 
 ![Screenshot 2021 07 19 at 14.58.09](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-19-at-14.58.09.png)
 
@@ -14361,7 +15261,9 @@ You can also set each variation to **Downloadable** if that matches your store c
 
 For this conference setup, attendee details should be collected before checkout using the Attendee Details Page. This provides a dedicated step where purchasers can enter attendee information for each ticket before continuing to WooCommerce checkout.
 
-Go to **FooEvents > Settings > Attendee** and enable **Enable Attendee Details page**. FooEvents can automatically create the Attendee Details page, but if you use your own page, make sure it includes the following shortcode:
+**Important:** FooEvents for WooCommerce 2.0.16 and newer enables the Attendee Details Page by default on new installations. Existing installations should confirm that it is enabled. Update FooEvents for WooCommerce and all installed FooEvents extensions before using this workflow, and test any change to an established checkout process on a staging site first.
+
+Go to **FooEvents > Settings**, open the **Attendee** tab and enable **Enable Attendee Details page?**. FooEvents can automatically create the Attendee Details page, but if you use your own page, make sure it includes the following shortcode:
 
 ```
 [fooevents_attendee_form]
@@ -14369,11 +15271,13 @@ Go to **FooEvents > Settings > Attendee** and enable **Enable Attendee Details p
 
 Select the page in the **Attendee Details page** setting and save your changes.
 
-You can also enable the copy attendee details option if you want purchasers to copy details from the first attendee to the remaining attendees. This can be useful when one person registers a group of attendees from the same company.
+You can also enable **Copy Attendee Details** if you want purchasers to copy details from the first attendee to the remaining attendees. This can save time when a group shares details such as company information, but the purchaser should still update each attendee’s name, email address and other personal fields before continuing.
+
+The Attendee Details Page works with both the classic WooCommerce checkout and the WooCommerce Checkout Block. If you use the WooCommerce Stripe Payment Gateway, disable express payment buttons on product and cart pages for FooEvents products because these buttons can bypass the Attendee Details Page. Express payments displayed on the checkout page are not affected.
 
 For more information, see the [Attendee Details Page guide](https://help.fooevents.com/docs/topics/attendees/attendee-page/).
 
-### Event Settings
+### Event settings
 
 Go to **Product Data > Event Settings**.
 
@@ -14387,11 +15291,13 @@ Complete the venue details, organizer contact details and any custom messages th
 
 In the **Attendee Details** section, enable the attendee fields that should be captured for each ticket. For this conference setup, enable attendee full name, attendee email address, attendee phone number, company name and designation.
 
+If every attendee must use a different email address, enable **Validate unique attendee email addresses at checkout?**. This prevents the same email address from being used more than once for the same event product in an order.
+
 These fields ensure that each ticket is linked to the correct attendee rather than only the purchaser. Attendee information will be captured on the Attendee Details Page before checkout.
 
 Options relating to bookings can be ignored for this single-day conference setup. The remaining event options can be configured based on your preferences.
 
-### Ticket Settings
+### Configure ticket generation and delivery
 
 Go to **Product Data > Ticket Settings**.
 
@@ -14401,7 +15307,22 @@ Set the ticket logo and header image if your selected ticket theme supports thes
 
 If you would like to convey information that only attendees should receive, use the **Ticket email body** field. This is useful for arrival times, registration desk location, parking details, event rules or what attendees should bring.
 
-Enable the ticket settings that match your conference workflow. In most cases, you should display attendee details, date and time, barcode or QR code, and custom attendee details on the ticket. You should also enable ticket emails and, if you want each attendee to receive their own ticket directly, enable the option to email the ticket to the attendee rather than the purchaser.
+Enable the ticket settings that match your conference workflow. In most cases, you should display attendee details, date and time, barcode or QR code, and custom attendee details on the ticket. Enable **Email tickets?** and, if each attendee should receive their own ticket directly, enable **Email ticket to attendee rather than purchaser?**.
+
+FooEvents generates tickets when a WooCommerce order reaches one of the statuses selected under **FooEvents > Settings > General > Send on order status**. **Completed** is the default. Select only statuses that represent an approved or intentionally accepted registration in your store so that tickets are not sent for orders that are still awaiting payment or review.
+
+Depending on the options you enable, attendees can receive or access tickets in several ways:
+
+- An HTML ticket displayed in the ticket email
+- A PDF ticket attached to the HTML ticket email
+- A PDF download from the WooCommerce Thank You or My Account pages when PDF downloads are enabled
+- Ticket details in the WordPress admin area under **FooEvents > Tickets**
+
+Send a ticket theme preview to confirm the branding, but use a ticket generated from a real test order when testing barcode or QR code scanning. Preview tickets contain sample information and are not valid for check-in. See the [ticket themes guide](https://help.fooevents.com/docs/topics/tickets/ticket-themes/) for preview instructions.
+
+Test delivery to more than one email provider and use an authenticated SMTP service to improve deliverability, especially when PDF attachments are enabled. If an attendee’s email address is corrected later, update the ticket and use the resend option so the attendee receives the current ticket. See the [ticket help section](https://help.fooevents.com/docs/topics/tickets/) for sending, resending and spam troubleshooting.
+
+FooEvents can also display generated tickets on the WooCommerce Thank You page. If the order has not yet reached a ticket-generating status, the customer will see the configured pending message instead. Review the [Thank You Page Tickets guide](https://help.fooevents.com/docs/topics/tickets/thank-you-page-tickets/) if you want to change this behavior or message.
 
 For more information, see the [ticket configuration guide](https://help.fooevents.com/docs/topics/tickets/ticket-configuration/).
 
@@ -14409,7 +15330,7 @@ For more information, see the [ticket configuration guide](https://help.fooevent
 
 Requires the [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/) plugin.
 
-Go to **FooEvents > Settings > PDF Tickets** and enable PDF tickets. You can also choose whether PDF tickets should be downloadable and whether they should be attached to the HTML ticket email.
+Go to **FooEvents > Settings > PDF Tickets** and enable **Enable PDF tickets**. You can also enable **Enable PDF ticket downloads** and **Attach PDF ticket to HTML ticket email** to match your preferred delivery workflow.
 
 After enabling PDF tickets globally, return to the conference product and confirm that the correct PDF ticket theme is selected under **Product Data > Ticket Settings**.
 
@@ -14417,23 +15338,25 @@ PDF tickets are useful for conferences because attendees often expect a printabl
 
 For more information, see the [FooEvents PDF Tickets guide](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-pdf-tickets/).
 
-### Custom Attendee Fields
+### Custom attendee fields
 
 Requires the [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/) plugin.
 
 Go to **Product Data > Custom Attendee Fields**.
 
-Create the custom attendee fields that are specific to your conference registration process. These fields will be captured for each individual attendee and can be viewed in the WordPress admin area, included in exports, displayed on tickets where enabled, and viewed in the [FooEvents Check-ins apps](https://www.fooevents.com/features/apps/).
+Create the custom attendee fields that are specific to your conference registration process. These fields will be captured for each individual attendee and can be viewed in the WordPress admin area, included in exports, displayed on tickets where enabled, and viewed in the [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/).
 
 For this conference setup, useful custom attendee fields include **T-shirt size** and **Dietary requirements**. If you did not use the standard attendee fields for company and designation, you can also create custom fields for **Company** and **Job title**.
 
 For dietary requirements, use a text field or textarea so attendees can provide allergies or special requests. For T-shirt size, use a select field so attendees choose from fixed options such as Small, Medium, Large, XL and XXL.
 
-Mark important fields as required where needed. Required fields must be completed on the Attendee Details Page before the customer can continue to checkout.
+Use fixed options where the information will be counted or grouped later. A select field makes T-shirt quantities easier to summarize than free-form answers such as “medium”, “M” and “med”. Use free-text fields only when attendees need to explain information that cannot be represented reliably by a short list.
+
+Mark fields as required only when the information is necessary for registration, ticket delivery or event operations. Required fields must be completed on the Attendee Details Page before the customer can continue to checkout. Avoid collecting personal information that your team does not need, and decide who will be allowed to access exported attendee and dietary data.
 
 ![Screenshot 2021 07 20 at 10.22.28](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-10.22.28-1024x207.png)
 
-Once you have reviewed all settings, click **Save** or **Publish**. Your event should then be visible on the front-end of your website.
+Once you have reviewed all settings, click **Publish** for a new event or **Update** for an existing event. Your event should then be visible on the front-end of your website.
 
 ### Variation table layout
 
@@ -14441,7 +15364,7 @@ By default, WooCommerce displays variations in a dropdown field on the product p
 
 ![Screenshot 2021 07 20 at 10.25.20](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-10.25.20.png)
 
-FooEvents now includes a built-in option to display supported event variations in a table layout. This is useful for conference registration sites because it allows customers to view ticket types, prices and availability in a clearer format.
+FooEvents includes a built-in option to display supported event variations in a table layout. This is useful for conference registration sites because it allows customers to view ticket types, prices and availability in a clearer format.
 
 You can enable the variation table globally by going to **FooEvents > Settings > General** and enabling **Display event variations as a table**.
 
@@ -14449,63 +15372,120 @@ You can also control this per event by going to **Product Data > Event Settings 
 
 ![Screenshot 2026 06 02 at 13.46.40](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2026-06-02-at-13.46.40-1024x530.png)
 
+The variation table replaces WooCommerce’s default add-to-cart behavior for supported event products. Test it with your theme and any third-party plugin that customizes WooCommerce product variations or add-to-cart controls before opening registration.
+
 **Important:** The variation table display depends on the WooCommerce product and variation configuration. Avoid using blank or “Any” variation values for ticket types, as these can prevent the table layout from being used correctly.
 
-## Usage
+### Test the registration workflow
 
-Similar to [this demo example](https://demo.fooevents.com/product/conference/), your customers should now be able to select one or more ticket types and add them to their cart.
+Similar to [this demo example](https://demo.fooevents.com/product/conference/), customers should be able to select one or more ticket types and add them to the cart. They will then complete the required information for every ticket on the Attendee Details Page before continuing to WooCommerce checkout.
 
-They will then be directed to the Attendee Details Page, where they must complete the required attendee fields for each ticket before continuing to checkout. After attendee details are saved, the customer can complete payment through the standard WooCommerce checkout process.
+Place a test order containing multiple ticket types. Confirm that variation stock is reduced correctly, required attendee fields cannot be skipped, unique attendee email validation behaves as expected, and the order reaches the intended ticket-generating status.
 
-### Tickets
-
-Once payment has been completed and the order reaches the configured ticket generation status, FooEvents will generate a ticket for each attendee. This status is controlled by the **Send on order status** setting under **FooEvents > Settings > General**.
-
-If the option to email tickets to attendees is enabled, each attendee will receive their own ticket email. Based on the ticket settings that were enabled, the ticket can include the attendee information, custom attendee fields, conference details, barcode or QR code, and PDF ticket attachment or download link.
+When tickets are configured to be emailed to attendees, each attendee should receive their own ticket with the correct ticket type, attendee information, custom fields and conference details.
 
 ![Screenshot 2021 07 20 at 10.35.21](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-10.35.21-556x1024.png)
 
-The ticket can also be viewed in the WordPress admin area. Go to **FooEvents > Tickets** and select the relevant ticket:
+Generated tickets can be reviewed in the WordPress admin area under **FooEvents > Tickets**. Open the test tickets and verify their attendee details before testing check-ins.
 
 ![Screenshot 2021 07 20 at 10.42.53](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-10.42.53-1024x584.png)
 
-### Exporting Attendees
+## Prepare and manage conference entry
 
-You can [export a CSV file](https://help.fooevents.com/docs/topics/attendees/export-event-and-attendee-information/) for each event which includes ticket numbers, custom attendee fields, check-in data, purchaser details and attendee details. The CSV can then be imported into your CRM system or used to prepare registration lists, badge data, dietary requirement summaries or event reports.
+### Prepare the Check-ins app
 
-To export attendees for the conference, edit the event product and go to **Product Data > Event Export**. Configure the export options and download the attendee CSV.
+Install the latest [FooEvents Check-ins app](https://www.fooevents.com/products/apps/) on every device that will be used at registration. Create appropriate WordPress user accounts for the check-in team and confirm that each account can connect to the site and access the conference.
 
-Alternatively, you can use a solution such as [WP Fusion](https://wpfusion.com/documentation/events/fooevents/), which offers an integration with FooEvents that allows you to dynamically add event attendees as contacts to your CRM of choice. You can also optionally apply tags based on the event ticket purchased.
+- Update FooEvents for WooCommerce and the Check-ins app before the event.
+- Under **FooEvents > Settings > Check-ins App**, use **Event listing options** to limit staff to the events they need where appropriate.
+- Review **Tickets loaded** if the website contains a long ticket history. If you apply a date range, enable **Include older tickets that have not been checked in** so valid advance registrations remain available.
+- Enable **Hide personal information** if registration staff only need attendee names and should not see other attendee or purchaser details in the app.
+- Open the conference on every device and allow its tickets to finish loading before registration opens.
+- Enable **Auto Check-ins** for scanning stations that should check in a valid ticket and immediately return to the scanner.
+- Charge the devices, test the venue network and keep charging cables or battery packs available.
 
-### Attendee Check-ins
+If a large attendee list cannot load reliably in one request, configure a smaller ticket batch size under the Check-ins App settings. Smaller batches can reduce server timeouts, although the complete attendee list may take longer to load. See the [Check-ins app help guide](https://help.fooevents.com/docs/topics/check-ins-app/) for setup, scanning, filtering, offline mode and connection guidance.
 
-The status of a ticket can be changed from **Not Checked In** to **Checked In**, **Canceled** or **Unpaid**. This can be done by editing the ticket in the WordPress admin area or by using the free [FooEvents Check-ins app](https://www.fooevents.com/features/apps/).
+### Scan and register attendees
 
-The FooEvents Check-ins app is available for iOS and Android. It can be used to search for attendees, scan the barcode or QR code on a ticket, and update the attendee’s check-in status.
+The app can scan the barcode or QR code on a digital or printed ticket. It can also search for an attendee by name or ticket number when the ticket cannot be scanned.
+
+1. Open the conference in the Check-ins app and launch the scanner.
+2. Scan the attendee’s ticket and review the result shown by the app.
+3. Confirm the attendee name and ticket type where the registration workflow requires it.
+4. If scanning fails, search for the attendee or ticket and update the status manually.
+5. Escalate duplicate, canceled or unpaid tickets to a supervisor instead of admitting the attendee without recording the resolution.
 
 ![app conf](https://help.fooevents.com/wp-content/uploads/2021/07/app-conf.png)
 
-Before the conference, complete at least one test check-in using a real test ticket. Confirm that the attendee can be found, the barcode or QR code scans correctly, and the check-in status updates in WordPress.
+Before the conference, complete a test check-in using a real ticket. Confirm that the ticket scans, the correct attendee and variation are displayed, the status updates in WordPress, and the same ticket produces the expected duplicate-scan response when scanned again.
 
-For more information, see the [FooEvents Check-ins app help guide](https://help.fooevents.com/docs/topics/check-ins-app/) and the [attendee check-ins guide](https://help.fooevents.com/docs/topics/attendees/attendee-check-ins/).
+### Manage multiple desks and group arrivals
 
-### Printing name tags
+For a busy conference, divide registration into clearly marked desks such as General Admission, VIP and Help Desk. When devices are online, check-in updates are sent back to the WordPress site so that other connected devices can work from the latest attendee status.
 
-The built-in [FooEvents Stationery Builder](https://help.fooevents.com/docs/topics/events/fooevents-stationery-builder/) can be used to design and print custom name tags, wristbands, tickets, badges and personalized labels.
+If groups frequently arrive together, the app’s [Check-in Same Order Tickets](https://help.fooevents.com/docs/topics/check-ins-app/check-in-all-tickets-for-the-same-order/) setting can check in tickets from the same WooCommerce order for the same event. Only use it when the complete group is present; otherwise scan each attendee separately so that absent group members remain available for later check-in.
 
-For a conference, a basic name tag could include the attendee name, company, designation, ticket type and barcode or QR code. If you captured a custom badge name field, you can use that field as the main name displayed on the badge.
+Offline devices cannot exchange updates in real time, which increases the risk of the same ticket being accepted at more than one entrance. If the conference has multiple gates or unreliable connectivity, follow the [multi-gate event setup guide](https://help.fooevents.com/docs/topics/use-cases/check-in-setup-for-multi-gate-events-with-unreliable-connectivity/) and assign clear operating rules before doors open.
 
-Before printing the full attendee list, generate a test output and confirm that the layout, field mapping and print size are correct.
+### Define re-entry and exception rules
+
+Decide whether a conference ticket allows re-entry and train every registration and security team member on the same rule. For no re-entry, a ticket that is already checked in should be referred to the Help Desk. If re-entry is allowed, check the attendee out when they leave and check the same ticket in again when they return.
+
+The ticket status can be changed between **Not Checked In**, **Checked In**, **Canceled** and **Unpaid**. Restrict manual status changes to trusted staff and record how canceled, unpaid, duplicate or identity-related exceptions should be handled.
+
+## Manage attendees, reporting and on-site operations
+
+### Review reports and export attendees
+
+Go to **FooEvents > Reports** to review event revenue, tickets sold, available tickets and attendee check-ins. These reports provide a current event summary, while the event export provides the detailed attendee-level data needed for operational lists and CRM imports. See the [Event Reports guide](https://help.fooevents.com/docs/topics/events/event-reports/) for more information.
+
+To [export the conference attendees](https://help.fooevents.com/docs/topics/attendees/export-attendee-information/), edit the event product and go to **Product Data > Event Export**. The CSV can include ticket numbers, variations, custom attendee fields, check-in data, purchaser information and attendee details.
+
+- Generate an early working export to test CRM field mapping and prepare badge or catering workflows.
+- Generate a fresh export shortly before the conference so that late registrations, cancellations and attendee edits are included.
+- Use fixed-option custom fields to prepare totals such as T-shirt sizes and use restricted attendee data for dietary planning.
+- Limit access to exported files and remove working copies when they are no longer needed.
+
+Alternatively, [WP Fusion](https://wpfusion.com/documentation/events/fooevents/) can add FooEvents attendees to a supported CRM and apply tags based on the event ticket purchased.
+
+### Prepare and print name tags
+
+The built-in [FooEvents Stationery Builder](https://help.fooevents.com/docs/topics/events/fooevents-stationery-builder/) can create print-ready name tags, badges, wristbands, tickets and labels. A conference badge could include the attendee name, company, designation, ticket type and barcode or QR code.
+
+Select a format that matches the badge stock and printer, then confirm the row and column layout, margins, field mapping and text size using a small test batch. Print the main attendee list close enough to the conference to include recent registrations.
+
+For late registrations or corrections, deselect **Include all attendees** and generate stationery for specific ticket or order numbers. This avoids reprinting the entire badge run.
+
+### Optional on-site registration with FooEvents POS
+
+Requires [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/).
+
+FooEvents POS can be used to sell walk-in conference registrations and merchandise from the same WooCommerce store. Configure the event’s **POS Settings** to control which attendee fields are shown or required, select the POS ticket theme and decide whether tickets purchased through POS should be emailed.
+
+Complete an online test sale before the event and confirm that the order reduces the correct variation stock, creates the attendee ticket, prints or emails as expected, and becomes available in the Check-ins app.
+
+FooEvents POS supports offline order capture, but ticket generation and printing require an active internet connection. Offline ticket orders will only generate tickets after the POS changes are synchronized. Keep the registration station online when attendees need an immediately scannable or printable ticket. See the [FooEvents POS offline mode guide](https://help.fooevents.com/docs/topics/point-of-sale/offline-mode/) for limitations and synchronization guidance.
 
 ## Final checks before opening registration
 
 Before opening ticket sales to the public, complete a full test registration from start to finish.
 
-Confirm that the product page displays the correct conference information, ticket types, prices and stock quantities. Add multiple ticket types to the cart, complete the Attendee Details Page, confirm that required fields cannot be skipped, and complete checkout using a test payment method.
+- Confirm that the conference date, time zone, venue, organizer details and customer instructions are correct.
+- Confirm that ticket types, prices and variation stock are correct and that the total allocation does not exceed conference capacity.
+- Test the variation table with the active theme and any plugin that changes WooCommerce variations or add-to-cart controls.
+- Add multiple ticket types to the cart and complete the Attendee Details Page using the same checkout and payment flow that customers will use.
+- Confirm that required and unique attendee fields validate correctly and that copied attendee information can be corrected for every individual.
+- If using the WooCommerce Stripe Payment Gateway, confirm that express buttons on product and cart pages cannot bypass attendee capture.
+- Confirm that tickets are generated only at the intended order statuses and sent to the correct attendee or purchaser.
+- Review the HTML ticket, PDF attachment, PDF download and Thank You page behavior that you have enabled.
+- Test email delivery and ticket resending using real test orders and more than one email provider.
+- Open the test tickets under **FooEvents > Tickets**, export the attendee CSV and generate a sample badge.
+- Load the conference on every Check-ins app device and test scanning, attendee search, duplicate scans, group arrivals and status synchronization.
+- Brief registration staff on re-entry, canceled or unpaid tickets, Help Desk escalation and connectivity procedures.
+- If using FooEvents POS, complete a test on-site sale and confirm stock, attendee capture, ticket generation, printing and email delivery.
 
-After checkout, confirm that tickets are generated at the expected order status, ticket emails are sent correctly, PDF tickets are available, attendee details are visible in **FooEvents > Tickets**, attendee data can be exported, badges can be generated, and check-ins work as expected.
-
-## Questions and Feedback
+### Questions and feedback
 
 Have a question before you buy? Please [get in touch](https://www.fooevents.com/contact-us/). If you are ready to get started, you can purchase a license [here](https://www.fooevents.com/pricing/).
 
@@ -14659,6 +15639,357 @@ Already purchased and need assistance? [Contact our support team](https://www.f
 
 ## FooEvents Help Center
 
+**Source:** [https://help.fooevents.com/docs/topics/use-cases/general-admission-ticketing/](https://help.fooevents.com/docs/topics/use-cases/general-admission-ticketing/)
+
+General admission venues need to do more than sell entrance tickets. Museums, attractions, theme parks and other visitor destinations must manage admission across multiple dates, control daily or timed-entry capacity, accommodate different visitor types and process arrivals efficiently.
+
+FooEvents brings this workflow into WooCommerce, allowing admission tickets to be sold directly from your WordPress website. FooEvents Bookings adds selectable visit dates and entry times, with separate availability for each date and time combination. Each visitor receives an individual ticket that can be presented for scanning at the entrance.
+
+In this guide, we will walk through a recommended configuration for a general admission venue. It covers admission types, daily capacity, timed entry, visitor information, ticket delivery, entrance scanning and on-site sales based on the following requirements:
+
+- Admission tickets for multiple operating dates
+- Daily capacity limits
+- Optional timed-entry windows
+- Adult, child, senior and free infant ticket types
+- Individual tickets for families and groups
+- Ticket scanning at one or more entrances
+- Clearly defined repeat-entry rules
+- Optional on-site ticket and merchandise sales
+
+If you are new to FooEvents, we recommend reading the [Getting Started guide](https://help.fooevents.com/docs/topics/getting-started/) before continuing.
+
+## Plan your general admission setup
+
+### Products used
+
+The following products and extensions can be used for this setup:
+
+- [WooCommerce](https://woocommerce.com/)
+- [FooEvents for WooCommerce](https://www.fooevents.com/products/fooevents-for-woocommerce/)
+- [FooEvents Bookings](https://www.fooevents.com/products/fooevents-bookings/)
+- [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/), if additional visitor information is required
+- [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/), if PDF tickets are required
+- [FooEvents Ticket Themes](https://www.fooevents.com/products/ticket-themes/)
+- Free [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/) for iOS and Android
+- [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/), if admission tickets or physical products will be sold on-site
+
+### Recommended admission structure
+
+FooEvents Bookings manages availability for each booking slot and date combination. This makes it suitable for venues that operate repeatedly and need to control capacity for each visit date or entry time. [Learn more about FooEvents Bookings](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-bookings/).
+
+| Admission model | Product configuration | Booking configuration | Capacity |
+| --- | --- | --- | --- |
+| Open entry on a selected day | One variable Bookable event product | One General Admission slot with all available visit dates | Stock set for each date |
+| Timed entry | One variable Bookable event product | A separate slot for each entry time, with dates assigned to every slot | Stock set for each time and date combination |
+| Special tour or premium experience | A separate Bookable event product | Tour times and dates configured as booking slots | Separate capacity from general admission |
+| Gift shop merchandise | Standard WooCommerce product | Not applicable | Standard WooCommerce stock |
+
+Use ticket variations for pricing categories such as Adult, Child and Senior. Use booking stock—not variation stock—as the primary control for daily or timed-entry capacity.
+
+If a tour, animal encounter or other experience has its own schedule and capacity, create it as a separate Bookable event product. This keeps its tickets, availability and check-ins separate from standard admission.
+
+## Configure tickets, bookings and capacity
+
+### Create the admission product
+
+Create the venue admission product as a Bookable event:
+
+1. Go to **Products > Add New** in the WordPress dashboard.
+2. Enter the venue name, visitor information, opening hours, admission rules and customer-facing imagery.
+3. Select **Variable product** in the Product Data panel if you will offer Adult, Child, Senior or other ticket types.
+4. Open the **Event Settings** tab and enable the option that identifies the product as an event.
+5. Select the **Bookable** event type.
+6. Enter the venue, organizer and contact information.
+7. Configure the required attendee information and ticket settings.
+8. Open the **Bookings Settings** tab and create the required admission slot or timed-entry slots.
+9. Save or publish the product after configuring the booking dates and capacity.
+
+The booking terminology can be customized under **Product Data > Event Terminology**. For a visitor attraction, useful alternatives include:
+
+- **Slot** → Entry time
+- **Date** → Visit date
+- **Booking Details** → Admission details
+
+For most admission products, displaying the booking selection on the product page gives customers a clear opportunity to choose their visit date before adding tickets to the cart. If you use the FooEvents Attendee Details Page, configure the booking selection order as **Date → Slot**.
+
+### Configure daily admission
+
+Use this model when a ticket is valid at any time during the selected day and visitors do not need to choose an arrival time.
+
+1. Create one booking slot called **General Admission** or **Open Entry**.
+2. Leave the slot time disabled if a specific entry time is not required.
+3. Select **Add Dates** to open the Booking Wizard.
+4. Select the start date, end date and days of the week on which the venue is open.
+5. Set the default stock to the maximum number of visitors allowed on each day.
+6. Generate the dates, review them and remove any closed dates or holidays.
+7. Adjust the stock for dates with a different capacity.
+
+For example, if the venue may admit 800 visitors on a Saturday, set the booking stock for that Saturday to **800**. Each ticket purchased for that date reduces the remaining booking availability.
+
+The Booking Wizard can generate recurring dates in batches. The end date should be no more than six months after the selected start date for each batch. Additional dates can be added later.
+
+Enable booking expiration under **Product Data > Event Expiration** to hide visit dates after their booking deadline or once the visit time has passed.
+
+### Configure timed entry
+
+Timed entry is useful when visitor arrivals need to be spread throughout the day. Instead of one open-entry slot, create a separate booking slot for each arrival window.
+
+For example:
+
+| Entry slot | Stock per date |
+| --- | --- |
+| 09:00–10:00 | 100 |
+| 10:00–11:00 | 100 |
+| 11:00–12:00 | 100 |
+| 12:00–13:00 | 100 |
+| 13:00–14:00 | 100 |
+| 14:00–15:00 | 100 |
+| 15:00–16:00 | 100 |
+| 16:00–17:00 | 100 |
+| Maximum admissions for the day | 800 |
+
+Create the first slot and its dates, then use the copy option to duplicate the slot and update its label and time. Set the booking stock independently for every slot and date combination.
+
+The sum of the timed-entry allocations should remain within the venue’s planned daily admissions. If visitors stay for several hours, also consider how entry windows overlap. Booking stock controls arrivals for each window; it does not calculate how many visitors remain inside the venue at a particular moment.
+
+Clearly state the arrival window, grace period, last-entry time and policy for early or late visitors on the product page and ticket. The selected booking date and slot are included on FooEvents tickets and are available in the Check-ins app.
+
+### Create Adult, Child and family ticket options
+
+WooCommerce attributes and variations can be used to offer different admission prices through the same Bookable event product. [Learn more about event product variations](https://help.fooevents.com/docs/topics/events/product-variations/).
+
+Create an attribute called **Admission Type** with values such as:
+
+- Adult
+- Child
+- Senior
+- Student
+- Infant
+
+Generate the variations and assign the appropriate price and SKU to each ticket type. Define the applicable age ranges and any identification requirements in the product description.
+
+Each person who counts toward venue capacity should receive an individual ticket, including children or infants who enter free of charge. A free ticket can have a zero price while still consuming one booking space.
+
+Avoid selling a single “Family of Four” variation as one ticket when capacity is based on individual visitors. A quantity of one would create one ticket and consume one booking space, even though four people arrive.
+
+For accurate capacity, ask the purchaser to add the required number of Adult and Child tickets. A family discount can be applied through a suitable WooCommerce coupon or pricing workflow, while FooEvents still creates one ticket and reserves one booking space for each person.
+
+Use booking stock as the shared capacity across all admission types. Variation stock can impose an additional overall limit on a particular ticket type, but it does not provide a separate allowance for every visit date.
+
+### Capture visitor information
+
+Decide whether tickets need to identify every visitor or whether purchaser information is sufficient for the venue’s operating model.
+
+Useful attendee information could include:
+
+- Visitor first and last name
+- Accessibility requirements
+- Age confirmation for concession tickets
+- Parent or guardian details
+- Acceptance of admission terms
+- Optional marketing consent
+
+FooEvents Custom Attendee Fields can capture additional information separately for each visitor. Fields may be optional or required. [Learn more about Custom Attendee Fields](https://help.fooevents.com/docs/topics/events/custom-attendee-fields/).
+
+Avoid requiring a separate email address for every child. Unless individual ticket delivery is necessary, send the family’s tickets to the purchaser and only collect the visitor information required for admission.
+
+Collect the minimum personal information needed and keep optional marketing consent separate from mandatory venue terms.
+
+### Configure ticket generation and delivery
+
+By default, FooEvents generates and sends tickets when a WooCommerce order reaches **Completed** status. The required status can be changed under **FooEvents > Settings > General > Send on order status**. [Learn more about ticket sending](https://help.fooevents.com/docs/topics/tickets/ticket-sending/).
+
+For ticket-only admission products, setting the product as **Virtual** and **Downloadable** can allow WooCommerce to complete the order after successful payment.
+
+If tickets and physical gift shop products can be purchased in the same order, test the order-status workflow carefully. Physical products may leave the order in **Processing**, which can delay ticket generation when FooEvents is configured to send only on **Completed**.
+
+Only configure ticket generation for order statuses that reliably indicate successful payment. Use authenticated SMTP to improve email delivery and test HTML and PDF tickets with several email providers.
+
+The admission ticket should clearly display:
+
+- Venue name and location
+- Visit date
+- Entry time when timed entry is used
+- Admission type
+- Barcode or QR code
+- Opening hours and last-entry time
+- Late-arrival, cancellation and re-entry rules
+
+## Prepare and manage visitor entry
+
+### Prepare the Check-ins app
+
+The free FooEvents Check-ins app can scan ticket barcodes or QR codes, search for visitors manually and update ticket check-in statuses. Bookable events use dedicated screens that allow staff to work with the relevant booking dates and slots. [View the Check-ins app guide](https://help.fooevents.com/docs/topics/check-ins-app/).
+
+Before opening admission:
+
+- Update FooEvents and the Check-ins apps to the latest live versions.
+- Create dedicated WordPress accounts for entrance staff with only the permissions they require.
+- Sign in on every device and load the admission event and tickets.
+- Confirm that the relevant booking dates and entry slots appear.
+- Test Adult, Child, free, canceled, unpaid and already checked-in tickets.
+- Enable **Restrict attendee check-ins to the current day** where appropriate.
+- Enable **Auto Check-in** when staff should return directly to the scanner after a successful scan.
+- Fully charge all devices and provide chargers or power banks.
+- Test the entrance Wi-Fi, cellular connection and backup connection.
+
+The current-day restriction displays an alert when the ticket’s booking date does not match the date on the check-in device. Staff may cancel or override the check-in, so the venue should define when an override is allowed. [Learn more about current-day restrictions](https://help.fooevents.com/docs/topics/check-ins-app/restrict-attendee-check-ins-to-the-current-day/).
+
+For high-volume entrances or difficult lighting conditions, a compatible Bluetooth barcode scanner can improve scan speed and accuracy. [View ticket scanning recommendations](https://help.fooevents.com/docs/topics/check-ins-app/ticket-scanning-with-the-app/).
+
+### Scan admission tickets
+
+Each visitor should present their individual ticket at the entrance. A successful scan changes the ticket status to **Checked In** and records the time of admission.
+
+1. Open the Bookable admission event in the Check-ins app.
+2. Select the relevant booking date and slot where required.
+3. Scan the ticket’s barcode or QR code.
+4. Confirm the booking date, entry slot and ticket variation.
+5. Check identification or proof of age when required by the admission type.
+6. Resolve invalid, canceled, unpaid or already checked-in tickets at a separate customer service point.
+
+Families should normally have one ticket per person. If everyone in a family arrives together, the Check-ins app can check in tickets from the same WooCommerce order simultaneously. This applies only to tickets for the same event and booking slot. [Learn more about checking in tickets from the same order](https://help.fooevents.com/docs/topics/check-ins-app/check-in-all-tickets-for-the-same-order/).
+
+Only enable group check-in when the venue is comfortable admitting every applicable person in the order at the same time.
+
+#### Open-entry admission
+
+For open-entry admission, the visit date is the main validation requirement. Staff should confirm that the ticket is valid for the current day and then check in the visitor.
+
+#### Timed admission
+
+For timed admission, staff should also verify the selected booking slot. Decide in advance whether visitors may enter early, how long the grace period lasts and what should happen when a visitor misses their slot.
+
+The Check-ins app displays the selected booking information, but entrance staff are responsible for applying the venue’s early- and late-arrival policy.
+
+### Manage multiple entrances and exceptions
+
+Where possible, keep all entrance devices online. This allows one entrance to see check-in status changes made at another entrance and helps prevent the same ticket from being admitted twice.
+
+A practical entrance layout could include:
+
+- Pre-purchased ticket scanning lanes
+- A family or group lane where appropriate
+- A customer service lane for incorrect dates, missing tickets or visitor-detail changes
+- A separate admissions desk for on-site purchases
+
+Bookings can be viewed and edited under **FooEvents > Bookings**. If a visitor needs to move to another date or time, first confirm that the alternative slot has capacity, then update the booking and resend the ticket if necessary.
+
+Offline Mode can be used as an emergency backup after the device has downloaded the required attendee data. Multiple offline devices operate independently and cannot see each other’s check-ins until they reconnect, which increases the risk of duplicate admission. [Learn more about Check-ins app Offline Mode](https://help.fooevents.com/docs/topics/check-ins-app/offline-mode/).
+
+### Define repeat-entry rules
+
+Choose and publish a repeat-entry policy before admission tickets go on sale.
+
+#### No repeat entry
+
+Leave the ticket marked as **Checked In** after the visitor enters. If the same ticket is presented again, the previous check-in status allows entrance staff to identify that it has already been used.
+
+#### Same-day repeat entry
+
+If visitors may leave and return, check the visitor out when they exit and check them in again when they return. FooEvents records check-in and check-out times, which can be included in attendee exports. [Learn more about tracking arrivals and departures](https://help.fooevents.com/docs/frequently-asked-questions/attendees/how-do-i-track-when-an-attendee-arrives-and-leaves-my-event/).
+
+All entrances and exits should remain connected so that the latest ticket status is shared. For very high-volume venues, a dated wristband, hand stamp or other physical credential can supplement the electronic ticket after the first successful scan.
+
+State whether repeat entry ends at closing time and whether a ticket may be reused on another date. A standard date-specific booking should not be treated as valid on a different day.
+
+## Sell admission and merchandise on-site
+
+### Configure FooEvents POS
+
+FooEvents POS can sell Bookable event products and standard WooCommerce products through the same interface. When a Bookable event is added to a POS order, the booking date and slot must be selected for each attendee before checkout can be completed. [Learn more about FooEvents POS](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-pos/).
+
+A venue can use FooEvents POS to:
+
+- Sell admission tickets to walk-in visitors
+- Select an available visit date and entry time
+- Sell Adult, Child, Senior and free ticket variations
+- Capture attendee information
+- Print tickets and receipts
+- Sell gift shop merchandise, guidebooks or other products
+- Keep online and on-site orders in the same WooCommerce store
+
+Keep walk-in sales separate from the scanning lanes so payment, ticket selection and attendee data entry do not delay visitors who already have tickets.
+
+Configure the event’s **POS Settings** to determine which attendee fields are required and whether tickets should be emailed. Organize products into clear categories and pin commonly sold admission products for quick access.
+
+If a ticket sold at the entrance should immediately admit the visitor, FooEvents POS can automatically set the new ticket to **Checked In** after the order is completed. [Learn how to enable automatic POS check-ins](https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/can-a-ticket-be-checked-in-automatically-after-being-purchased-through-fooevents-pos/).
+
+#### POS connectivity limitation
+
+Keep the admissions desk online wherever possible. FooEvents POS supports most sales functions in Offline Mode, but ticket generation and printing are not available while offline. Offline ticket orders are only generated and sent after the POS reconnects and synchronizes. [Learn more about FooEvents POS Offline Mode](https://help.fooevents.com/docs/topics/point-of-sale/offline-mode/).
+
+An offline device may also be working with booking availability that is no longer current. For capacity-controlled admissions, provide a reliable primary connection, a backup connection and a documented process for connectivity failures.
+
+## Manage bookings, reporting and final checks
+
+### Manage and export admission bookings
+
+Go to **FooEvents > Bookings** to view and filter bookings by event, booking slot and date. A booking can be opened to update the visitor information or move the ticket to another available date and slot.
+
+FooEvents Reports provides a summary of revenue, tickets sold, available tickets and attendee check-ins for the admission event. Reports are available under **FooEvents > Reports**. [Learn more about Event Reports](https://help.fooevents.com/docs/topics/events/event-reports/).
+
+A CSV attendee export can be downloaded from the **Event Export** tab of the event product. The export can include:
+
+- Ticket numbers
+- Purchaser and attendee details
+- Admission variations
+- Booking dates and slots
+- Custom attendee fields
+- Check-in and check-out information
+
+Keep exported attendee data secure and only provide staff with the information they require. [Learn how to export attendee information](https://help.fooevents.com/docs/topics/attendees/export-attendee-information/).
+
+### Final checks before opening sales
+
+Complete a full booking, payment and admission test before opening the product to customers.
+
+#### Online booking
+
+- Confirm all open dates, closed dates, time slots and time zones.
+- Confirm the capacity for every booking date and timed-entry slot.
+- Confirm that the total timed-entry allocation matches the venue’s capacity plan.
+- Test Adult, Child, Senior and free ticket variations.
+- Confirm that every person in a family booking receives an individual ticket and consumes one booking space.
+- Confirm required attendee fields cannot be skipped.
+- Test ticket-only and ticket-plus-merchandise orders.
+- Test every supported payment gateway.
+- Confirm booking availability is reduced correctly.
+- Confirm tickets are generated at the intended order status.
+- Confirm the visit date, entry slot and ticket type appear correctly on the ticket.
+- Confirm ticket emails and PDF attachments are delivered.
+
+#### Entrance operations
+
+- Scan each admission variation.
+- Test tickets for the correct and incorrect visit dates.
+- Test early, late and correct timed-entry arrivals.
+- Test canceled, unpaid and already checked-in tickets.
+- Test family or same-order group check-in if it will be enabled.
+- Test check-out and re-entry if repeat entry is permitted.
+- Test multiple entrance devices simultaneously.
+- Test manual visitor search.
+- Test Offline Mode and reconnection as an emergency exercise.
+- Confirm staff understand date, time, concession and repeat-entry rules.
+
+#### On-site sales
+
+- Sell a walk-in ticket for an available date and time.
+- Sell several admission variations in one family order.
+- Confirm booking availability is reduced.
+- Print the ticket and receipt.
+- Confirm the ticket appears in the Check-ins app.
+- Test automatic check-in if enabled.
+- Sell and refund a physical product.
+- Test payment terminals and printers.
+- Confirm the connectivity-failure procedure.
+
+A complete rehearsal using the same devices, network, printers and payment hardware that will be used at the venue is the best way to identify operational problems before visitors arrive.
+
+---
+
+## FooEvents Help Center
+
 **Source:** [https://help.fooevents.com/docs/topics/use-cases/manually-releasing-tickets-using-an-approval-workflow/](https://help.fooevents.com/docs/topics/use-cases/manually-releasing-tickets-using-an-approval-workflow/)
 
 If you need more control over when FooEvents generates and [sends tickets](https://help.fooevents.com/docs/topics/tickets/ticket-sending/), you can configure an approval workflow using a custom WooCommerce order status. This allows administrators to review orders first and then manually release tickets when ready.
@@ -14719,6 +16050,427 @@ FooEvents will then generate and send the tickets.
 If you are using this workflow to manage technical issues, allow orders to continue as normal and hold back ticket generation until the issue is resolved or under control.
 
 Once stable, approve valid orders manually in a controlled sequence or in batches. This helps reduce server pressure and lowers the risk of duplicate or unwanted ticket generation.
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/topics/use-cases/multi-day-festival-ticketing/](https://help.fooevents.com/docs/topics/use-cases/multi-day-festival-ticketing/)
+
+Festival ticketing involves more than selling admission. Organizers need to manage multiple event days, ticket types, access levels and capacity limits while coordinating attendee information, merchandise, on-site sales and efficient entry across multiple entrances.
+
+FooEvents brings this workflow into WooCommerce, allowing tickets, merchandise and other products to be sold directly from your WordPress website using your preferred WooCommerce payment gateways. At the venue, the FooEvents Check-ins app can be used to validate tickets and manage attendee access.
+
+In this guide, we will walk through a recommended configuration for a three-day festival. It covers ticket structure, weekend and day passes, General Admission and VIP access, capacity, attendee information, merchandise, multi-entrance check-ins and on-site sales based on the following requirements:
+
+- General Admission and VIP tickets
+- Weekend and single-day passes
+- Limited daily and VIP capacity
+- Individual attendee information
+- Check-ins at multiple entrances
+- Merchandise, parking and other add-ons
+- On-site ticket and merchandise sales
+
+If you are new to FooEvents, we recommend reading the [Getting Started guide](https://help.fooevents.com/docs/topics/getting-started/) before continuing.
+
+## Plan your festival ticket setup
+
+### Products used
+
+The following products and extensions can be used for this setup:
+
+- [WooCommerce](https://woocommerce.com/)
+- [FooEvents for WooCommerce](https://www.fooevents.com/products/fooevents-for-woocommerce/)
+- [FooEvents Multi-day](https://www.fooevents.com/products/fooevents-multi-day/)
+- [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/)
+- [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/), if PDF tickets are required
+- [FooEvents Ticket Themes](https://www.fooevents.com/products/ticket-themes/)
+- Free [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/) for iOS and Android
+- [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/), if tickets or merchandise will be sold at the venue
+
+### Recommended festival product structure
+
+The most important decision is how the festival’s tickets should be divided into WooCommerce products.
+
+A Multi-day event ticket gives an attendee access to every configured event day. It does not allow the purchaser to select only some of those days. Therefore, weekend passes and individual day passes should be created as separate event products. [Learn more about Multi-day events](https://help.fooevents.com/docs/topics/events/multi-day-events/).
+
+| Product | Event configuration | Ticket variations | Access |
+| --- | --- | --- | --- |
+| Weekend Pass | Multi-day: Sequential days or Specific Days | General Admission, VIP | Friday, Saturday and Sunday |
+| Friday Pass | Single-day event | General Admission, VIP | Friday only |
+| Saturday Pass | Single-day event | General Admission, VIP | Saturday only |
+| Sunday Pass | Single-day event | General Admission, VIP | Sunday only |
+| Festival T-shirt | Standard WooCommerce product | Size and color | Merchandise |
+| Parking or camping pass | Standard product, or a separate event product if it requires its own ticket | As required | Add-on |
+
+Do not create Friday, Saturday and Sunday as variations of the Weekend Pass. Event dates and Multi-day behavior are configured at product level, so a day-specific variation would still inherit the full event schedule.
+
+## Configure tickets, capacity and attendee data
+
+### Setting up the Weekend Pass
+
+Create the Weekend Pass as a Multi-day event product:
+
+1. Go to **Products > Add New** in the WordPress dashboard.
+2. Enter the festival name, description, imagery and other customer-facing information.
+3. Select **Variable product** in the Product Data panel if you will offer General Admission and VIP options.
+4. Open the **Event Settings** tab.
+5. Enable the option that identifies the product as an event.
+6. Select the appropriate Multi-day configuration:
+- Use **Sequential days** when the festival takes place on consecutive days.
+- Use **Specific Days** when the festival dates are not consecutive.
+7. Set the number of days and configure the date and time for each day.
+8. Enter the venue, organizer, contact and event information.
+9. Configure the attendee fields, ticket appearance and ticket email settings.
+10. Publish the event.
+
+A single Weekend Pass ticket will be valid for all configured days. FooEvents stores a separate check-in status for each day, allowing the same ticket to be checked in on Friday, Saturday and Sunday.
+
+### Creating General Admission and VIP tickets
+
+WooCommerce attributes and variations can be used to offer different ticket types for the same event.
+
+For example, create an attribute called **Ticket Type** with the following values:
+
+- General Admission
+- VIP
+
+Use the attribute to generate product variations, then configure a price, SKU and stock quantity for each variation. This allows the General Admission and VIP allocations to be managed independently. [Learn more about event product variations](https://help.fooevents.com/docs/topics/events/product-variations/).
+
+VIP benefits could include:
+
+- Access to a dedicated entrance
+- Access to a VIP viewing area or lounge
+- Premium parking
+- A merchandise pack
+- Complimentary food or drink vouchers
+- Priority entry
+
+Clearly describe these benefits on the product page and ticket.
+
+If many ticket variations are offered, you can display them in a table to make comparison and selection easier. This can be enabled globally under **FooEvents > Settings > General** or for an individual event under its display settings.
+
+#### Early Bird and other pricing phases
+
+Early Bird, Standard and Last Chance pricing can also be handled using WooCommerce pricing and variations.
+
+Take care not to create multiple unrestricted stock pools for pricing phases that consume the same festival capacity. Either:
+
+- Allocate a fixed portion of capacity to each pricing phase and release the phases sequentially; or
+- Change the variation price or scheduled sale price when the next phase begins.
+
+The total stock across all pricing phases must remain within the relevant General Admission or VIP allocation.
+
+### Creating the day passes
+
+Create a separate Single-day event product for each day of the festival.
+
+A quick way to do this is to duplicate a completed day-pass product and update:
+
+- Product name and permalink
+- SKU
+- Event date and time
+- General Admission and VIP prices
+- Variation stock
+- Product description
+- Ticket text
+- Event expiration settings
+
+Each day pass should use the same General Admission and VIP variation structure where applicable.
+
+Using separate products ensures that each ticket has the correct event date and can be validated against that date at the entrance.
+
+### Managing festival capacity
+
+FooEvents uses WooCommerce stock management to determine how many tickets are available. Each stock item represents one ticket, and stock can be managed at product or variation level. [Learn more about stock management](https://help.fooevents.com/docs/topics/events/stock-management/).
+
+When Weekend Passes and day passes are separate products, their stock quantities are also separate. They do not automatically draw from a shared daily capacity.
+
+For example, consider a festival with a total capacity of 10,000 people per day, including a VIP capacity of 500:
+
+| Access allocation | Weekend Pass stock | Each day’s pass stock | Daily total |
+| --- | --- | --- | --- |
+| General Admission | 5,500 | 4,000 | 9,500 |
+| VIP | 300 | 200 | 500 |
+| Total | 5,800 | 4,200 | 10,000 |
+
+In this example, the same Weekend Pass allocation consumes capacity on all three days. The Friday, Saturday and Sunday products each receive their own day-pass allocation.
+
+Use the following calculation for every festival day:
+
+```
+Weekend passes sold + day passes sold for that day ≤ daily venue capacity
+```
+
+The same calculation should be performed separately for areas with their own capacity, such as a VIP enclosure.
+
+Because these products do not use a single shared stock pool, the organizer should:
+
+- Decide how much capacity to reserve for Weekend Passes and day passes before opening sales.
+- Monitor sales across all festival products.
+- Reduce or increase remaining allocations carefully.
+- Only release unused Weekend Pass capacity to day tickets when it is safe to do so.
+- Disable backorders unless overselling is intentionally permitted.
+
+### Capturing attendee information
+
+FooEvents can capture information for each attendee rather than only collecting the purchaser’s billing details.
+
+The standard attendee fields can include:
+
+- First and last name
+- Email address
+- Phone number
+- Company
+- Designation
+
+FooEvents Custom Attendee Fields can be used to collect festival-specific information. Fields are configured per event, can be required or optional and are recorded separately for each attendee. [Learn more about Custom Attendee Fields](https://help.fooevents.com/docs/topics/events/custom-attendee-fields/).
+
+Useful festival fields might include:
+
+- Emergency contact name
+- Emergency contact phone number
+- Accessibility requirements
+- Dietary requirements
+- Age confirmation
+- Parent or guardian information
+- T-shirt size when merchandise is included with the ticket
+- Acceptance of event terms or a waiver
+- Optional marketing consent
+
+Only collect information that is genuinely required. Keep optional marketing consent separate from required event terms, and restrict access to sensitive attendee information.
+
+If **Email attendee rather than purchaser** is enabled, make the attendee email address required. Otherwise, the purchaser can receive and distribute all tickets in the order.
+
+### Merchandise and add-ons
+
+Since FooEvents runs on WooCommerce, festival tickets and standard products can be sold through the same online store.
+
+Typical products could include:
+
+- T-shirts and hoodies
+- Festival merchandise bundles
+- Parking passes
+- Camping passes
+- Locker rental
+- Meal or drink vouchers
+- Shuttle tickets
+- Souvenir programs
+
+Use standard WooCommerce products when the item is fulfilled or collected like merchandise. Use variable products for options such as size or color and manage stock for each variation.
+
+Custom attendee fields should not be used for paid or stock-controlled merchandise. A T-shirt size field is suitable when a shirt is included with every VIP ticket, but a separately purchased T-shirt should be created as a WooCommerce product so that its price and inventory can be managed correctly.
+
+If an add-on requires its own scannable ticket—for example, a separately controlled camping area—it can be configured as its own event product. It will then have a separate ticket and check-in record.
+
+### Ticket generation and delivery
+
+By default, FooEvents generates and sends tickets when the WooCommerce order reaches **Completed** status. This can be changed using **FooEvents > Settings > General > Send on order status**. [Learn more about ticket sending and order statuses](https://help.fooevents.com/docs/topics/tickets/ticket-sending/).
+
+For ticket-only products, setting the product as **Virtual** and **Downloadable** can allow WooCommerce to complete the order after successful payment.
+
+Special consideration is required when tickets and physical merchandise are purchased in the same order. WooCommerce may leave an order containing physical products in **Processing** until the merchandise is fulfilled, which can delay ticket generation.
+
+If mixed orders are allowed:
+
+- Configure the **Send on order status** setting to match your paid-order workflow.
+- Only select statuses that reliably indicate successful payment.
+- Never generate valid tickets for unpaid or failed orders.
+- Test ticket-only, merchandise-only and mixed orders using every supported payment method.
+
+Use an [authenticated SMTP](https://help.fooevents.com/docs/topics/fooevents-plugins/fooemail/) email service to improve ticket email delivery. Complete delivery tests to several email providers before ticket sales open.
+
+[PDF tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/) can be enabled when attendees need a downloadable attachment, while the HTML ticket can still be viewed directly in the email or on the website.
+
+## Prepare and manage festival entry
+
+### Preparing for check-ins
+
+The free [FooEvents Check-ins app](https://www.fooevents.com/products/apps/) can scan ticket barcodes or QR codes and update attendee check-in statuses. It can also search for attendees manually when a ticket cannot be scanned. [View the Check-ins app guide](https://help.fooevents.com/docs/topics/check-ins-app/).
+
+Before the festival:
+
+- Update FooEvents and the Check-ins apps to the latest live versions.
+- Create dedicated WordPress accounts for check-in staff with only the permissions they require.
+- Restrict the events shown in the app to the current festival products where appropriate.
+- Sign in on every device and load the festival events and tickets.
+- Test Weekend, day, VIP, canceled, unpaid and already checked-in tickets.
+- Fully charge every device and provide power banks or charging stations.
+- Test scanning under the actual lighting conditions expected at the entrances.
+- Consider Bluetooth barcode scanners for high-volume or low-light entrances. [View ticket scanning recommendations](https://help.fooevents.com/docs/topics/check-ins-app/ticket-scanning-with-the-app/).
+
+For large ticket databases, the events and historical tickets made available to app users can be limited under **FooEvents > Settings > Check-ins App**. Ensure the selected ticket date range still includes customers who purchased far in advance. [Learn how to limit tickets loaded in the app](https://help.fooevents.com/docs/topics/check-ins-app/limit-the-tickets-loaded-in-the-fooevents-check-ins-app/).
+
+### Check-ins across multiple entrances
+
+All entrance devices should remain online wherever possible. This allows check-in updates to be sent to the WooCommerce store so that other devices can see the latest ticket status.
+
+A recommended entrance configuration might include:
+
+- General Admission lanes
+- VIP or priority lanes
+- A customer service lane for missing, invalid or transferred tickets
+- A box office for new ticket purchases
+- A separate merchandise collection or sales area
+
+The current Check-ins app can scan tickets from the event listing, which is useful when an entrance accepts both Weekend Passes and that day’s passes. Alternatively, devices or lanes can be assigned to a specific event product.
+
+Enable **Auto Check-in** to return directly to the scanner after a successful scan and increase throughput. By default, the app refreshes ticket information after scans to keep multiple entrances up to date; Auto Check-in reduces this extra navigation while retaining the server-side check-in. [Learn more about Auto Check-ins](https://help.fooevents.com/docs/topics/check-ins-app/auto-check-ins/).
+
+#### Checking in Weekend Passes
+
+Weekend Passes have a separate check-in status for each configured event day.
+
+At the start of each day:
+
+- Confirm that the correct Multi-day check-in day is selected.
+- Use the automatic current-date option where appropriate.
+- Scan a real test ticket.
+- Confirm that the correct day was updated.
+- Confirm that the ticket remains available for later festival days.
+
+#### Checking in day passes
+
+Enable **Restrict attendee check-ins to the current day** in the Check-ins app settings. If a ticket’s valid date does not match the date on the check-in device, the app displays a warning and allows the operator to cancel or override the check-in. [Learn more about current-day restrictions](https://help.fooevents.com/docs/topics/check-ins-app/restrict-attendee-check-ins-to-the-current-day/).
+
+This is an operational safeguard rather than a completely automatic hard lock, so entrance staff should be trained when an override is permitted.
+
+#### Managing VIP access
+
+The General Admission or VIP variation is available as part of the ticket information and can be used to confirm the attendee’s access level.
+
+For a practical festival workflow:
+
+1. Scan the VIP ticket at the main entrance.
+2. Confirm that it is valid for the current day.
+3. Issue a clearly identifiable VIP wristband or credential.
+4. Use the wristband for repeated access to VIP areas.
+
+A ticket has one check-in state per event day. Using a wristband after the initial validation avoids repeatedly changing the same ticket’s check-in state when the attendee moves between the main festival and VIP areas.
+
+#### Group arrivals
+
+FooEvents normally creates and checks in an individual ticket for each attendee. If groups commonly arrive together, the Check-ins app can be configured to check in tickets from the same order simultaneously.
+
+This option only applies to tickets from the same order and the same event product. It will not combine Weekend Pass and day-pass products from the same order. [Learn more about checking in tickets from the same order](https://help.fooevents.com/docs/topics/check-ins-app/check-in-all-tickets-for-the-same-order/).
+
+#### Re-entry
+
+Decide on a re-entry policy before the festival and communicate it to attendees and entrance staff.
+
+For festivals that allow attendees to leave and return on the same day, a wristband or another physical credential is generally easier to operate after the ticket’s first successful scan. This keeps the electronic check-in record focused on initial admission and avoids confusion at different entrances.
+
+### Handling unreliable connectivity
+
+Offline Mode in the FooEvents Check-ins app can process check-ins without an active internet connection, but it should be treated as an emergency fallback rather than the primary multi-gate setup.
+
+Before Offline Mode can be used, the device must first sign in and download the relevant event and attendee data. Offline changes are stored on the device and synchronized when it reconnects. [Learn more about Check-ins app Offline Mode](https://help.fooevents.com/docs/topics/check-ins-app/offline-mode/).
+
+The main limitation is that offline devices operate independently. If the same ticket is presented at two entrances while both devices are offline, neither device will know that the other has accepted it.
+
+Recommended precautions include:
+
+- Provide dedicated event Wi-Fi with coverage at every entrance.
+- Use a secondary internet connection or cellular failover.
+- Provide backup power for networking equipment.
+- Download all required attendee data before gates open.
+- Keep Offline Mode for connectivity failures.
+- If several devices must operate offline, divide attendees or ticket types between entrances where practical.
+- Reconnect and synchronize devices as soon as connectivity returns.
+- Export offline changes before clearing local data if a device experiences synchronization problems.
+
+## Sell tickets and merchandise on-site
+
+### Selling tickets and merchandise with FooEvents POS
+
+[FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) can be used at a festival box office, merchandise stand or customer service desk. It connects to the same WooCommerce store and supports both event and non-event products, including variable products with their own prices, SKUs and stock levels. [Learn more about managing products in FooEvents POS](https://help.fooevents.com/docs/topics/point-of-sale/products/).
+
+A festival POS setup can be used to:
+
+- Sell day passes at the entrance
+- Sell ticket upgrades where capacity permits
+- Capture attendee information
+- Print tickets and receipts
+- Sell merchandise
+- Sell parking, camping or meal products
+- Apply coupons
+- Keep online and on-site sales in the same WooCommerce order system
+
+Create clear product categories, hide products that should not appear in the POS and pin frequently sold products for faster access.
+
+If tickets sold at the entrance should immediately admit the customer, FooEvents POS can automatically set the new ticket’s status to **Checked In** after the order is completed. [Learn how to enable automatic POS check-ins](https://help.fooevents.com/docs/frequently-asked-questions/fooevents-pos/can-a-ticket-be-checked-in-automatically-after-being-purchased-through-fooevents-pos/).
+
+Keep the box office separate from the scanning lanes so payment problems and attendee data entry do not slow down pre-purchased ticket holders.
+
+#### POS connectivity limitation
+
+FooEvents POS supports most sales functions in Offline Mode, but event ticket generation and ticket printing are not available while offline. Offline ticket orders are stored on the device, and tickets are only generated and sent after the POS reconnects and synchronizes. Stock values also cannot be modified while offline. [Learn more about FooEvents POS Offline Mode](https://help.fooevents.com/docs/topics/point-of-sale/offline-mode/).
+
+For this reason, on-site ticket sales should remain online wherever possible. Prepare a documented contingency process if connectivity at the box office fails.
+
+## Reporting and final checks
+
+### Reporting and attendee exports
+
+FooEvents Reports provides a summary of revenue, tickets sold, available tickets and attendee check-ins for each event product. Reports are available under **FooEvents > Reports**. [Learn more about Event Reports](https://help.fooevents.com/docs/topics/events/event-reports/).
+
+Because Weekend and day passes are separate event products, their FooEvents reports are also separate. WooCommerce reporting can be used for wider store-level sales analysis.
+
+A CSV attendee export can be downloaded from the **Event Export** tab of each event product. The export can include:
+
+- Ticket numbers
+- Purchaser and attendee details
+- Ticket variations
+- Custom attendee fields
+- Check-in information
+- Billing details, when selected
+
+Export each festival product separately and combine the files if a single festival-wide attendee list is required. Store attendee exports securely because they may contain personal information. [Learn how to export attendee information](https://help.fooevents.com/docs/topics/attendees/export-attendee-information/).
+
+### Final checks before ticket sales open
+
+Complete a full purchase and check-in test before opening ticket sales.
+
+#### Online sales
+
+- Confirm all festival dates, times and time zones.
+- Confirm General Admission and VIP prices.
+- Confirm Weekend and day-pass stock allocations.
+- Confirm backorders are disabled.
+- Purchase more than one ticket in a test order.
+- Confirm attendee fields repeat correctly for each attendee.
+- Confirm required fields cannot be skipped.
+- Test discount codes and each payment gateway.
+- Test ticket-only and ticket-plus-merchandise orders.
+- Confirm tickets are generated at the intended order status.
+- Confirm ticket emails and PDF attachments are delivered.
+- Confirm ticket information is readable on a mobile device.
+
+#### Entrance operations
+
+- Scan every ticket and pass type.
+- Scan a Weekend Pass for each event day.
+- Confirm day-pass date warnings.
+- Test VIP identification.
+- Test canceled, unpaid and already checked-in tickets.
+- Test scanning from the event listing where multiple pass products are accepted.
+- Test manual attendee search.
+- Test multiple entrance devices simultaneously.
+- Test Offline Mode and reconnection.
+- Confirm staff know when overrides are permitted.
+
+#### Point of sale
+
+- Sell a ticket and capture attendee information.
+- Print the ticket and receipt.
+- Confirm stock is reduced.
+- Confirm the ticket appears in the Check-ins app.
+- Test automatic check-in if enabled.
+- Sell and refund merchandise.
+- Test payment terminals and printers.
+- Confirm the offline contingency process.
+
+A complete rehearsal using the same devices, network, printers and payment hardware that will be used at the festival is the best way to identify operational problems before attendees arrive.
 
 ---
 
@@ -15090,9 +16842,11 @@ Please note that generating and emailing hundreds of individual ticket emails du
 
 **Source:** [https://help.fooevents.com/docs/topics/use-cases/standard-multi-day-conference/](https://help.fooevents.com/docs/topics/use-cases/standard-multi-day-conference/)
 
-## Scenario
+Multi-day conferences involve more than selling registrations. Organizers need to define which conference dates each ticket covers, manage overall capacity, collect information for every attendee, communicate the schedule clearly and track attendance separately on each day.
 
-An event company is planning a conference that takes place over multiple days, for example 24 Nov to 01 Dec. It has the following requirements:
+FooEvents brings this workflow into WooCommerce, allowing you to sell conference registrations directly from your WordPress website using your preferred WooCommerce payment gateways. FooEvents Multi-day enables a single ticket to provide access across multiple consecutive or selected calendar days, with an independent check-in status for each day.
+
+In this guide, we will walk through a recommended configuration for a multi-day conference running from 24 November to 1 December. It covers ticket structure, capacity, attendee registration, ticket delivery and daily check-ins based on the following requirements:
 
 - 350 tickets must be sold via the event company’s existing WordPress website using WooCommerce.
 - The purchaser must select a ticket type, such as Delegate, Standard or Student, which determines the ticket price.
@@ -15112,26 +16866,46 @@ An event company is planning a conference that takes place over multiple days, f
 
 Here is an example of such an event: [Multi-day Conference](https://demo.fooevents.com/product/multi-day-conference/)
 
-In this help document, we will outline the configuration needed to achieve the above requirements.
+The configuration below uses one variable multi-day event product for the main conference pass. Ticket types are managed as WooCommerce variations, while FooEvents Multi-day controls the conference dates and daily check-in records.
 
 *This help document assumes that you already have FooEvents and WooCommerce installed on a WordPress website and have a basic understanding of how FooEvents works. If you are new to FooEvents, you should read our Getting Started guide before continuing.*
 
-## Products Used
+## Plan your multi-day conference ticket setup
 
+### Products used
+
+- [WooCommerce](https://woocommerce.com/)
 - [FooEvents for WooCommerce](https://www.fooevents.com/products/fooevents-for-woocommerce/)
 - [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/)
 - [FooEvents Multi-day](https://www.fooevents.com/products/fooevents-multi-day/)
 - [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/)
 - [FooEvents Ticket Themes](https://www.fooevents.com/products/ticket-themes/)
-- [FooEvents Check-ins apps](https://www.fooevents.com/features/apps/)
+- [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/)
+- [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/), if conference tickets or merchandise will be sold on-site
 
-## Recommended Bundle
+### Recommended conference structure
+
+Before configuring the product, decide whether every ticket grants access to the complete conference or whether attendees need to purchase individual days, workshops or sessions. This determines whether the conference can use one multi-day event product or needs additional products.
+
+| Offering | Recommended configuration | Capacity and access |
+| --- | --- | --- |
+| Full conference pass | One variable multi-day event product with Delegate, Standard and Student variations | Each ticket is valid for every configured conference day and has a separate check-in status for each day |
+| Single-day passes | Create a separate Single event product for each day | Each product has independent stock and a ticket that is valid only for that date |
+| Capacity-limited workshops or sessions | Use a separate Bookable product | Availability is managed per workshop date and time slot |
+| Merchandise or optional add-ons | Use standard WooCommerce products | Standard WooCommerce stock; no conference access unless the product is configured as an event |
+| Virtual or hybrid conference access | Use the relevant multi-day virtual event workflow | Online access and integrations are configured separately |
+
+A FooEvents Multi-day ticket provides access to all the calendar days configured on that event; the purchaser does not choose a subset of those days. Use separate event products if you need to sell standalone day passes. If full conference passes and day passes share the same venue capacity, plan their stock allocations together because stock is managed independently for each product.
+
+If attendees must choose a capacity-limited workshop or session, follow the [Bookable: Conference with Workshops](https://help.fooevents.com/docs/topics/use-cases/bookable-conference-with-workshops/) guide. For an event that only runs on one day, use the [Standard: Conference](https://help.fooevents.com/docs/topics/use-cases/conference/) guide. For online access, see the [Virtual Event: Conference](https://help.fooevents.com/docs/topics/use-cases/virtual-conference/) guide, which uses FooEvents Multi-day for a multi-day online program.
 
 All plugins required to set up a multi-day conference can be purchased individually. They are also included in the [FooEvents Premium Bundle](https://www.fooevents.com/bundles/premium-bundle/), which includes FooEvents for WooCommerce, FooEvents Multi-day, FooEvents Custom Attendee Fields and FooEvents PDF Tickets.
 
 This use case uses FooEvents Multi-day because the conference takes place across multiple calendar days. It also uses Custom Attendee Fields to capture additional attendee information and PDF Tickets to provide attendees with downloadable or printable tickets.
 
-## Setup
+FooEvents POS is optional and is not included in the Premium Bundle. Add it separately or use the appropriate POS bundle if you plan to sell registrations or merchandise at the venue.
+
+## Configure tickets, conference days and attendee data
 
 ### Create an event product
 
@@ -15141,33 +16915,51 @@ Use a clear conference name and include the most important event information in 
 
 Proceed to the **Product Data** panel and select **Variable product** from the product type dropdown. This allows you to create the different conference ticket types as WooCommerce variations.
 
-### Attributes and Variations
+### Configure ticket types, pricing and capacity
 
 Next, create product variations that will allow purchasers to choose between different ticket types. Purchasers will be charged different amounts depending on their selection, and each ticket type can have its own stock quantity.
 
-| Variation | Price | Stock Availability |
+| Ticket type | Price | Stock allocation |
 | --- | --- | --- |
 | Delegate | $499 | 100 |
 | Standard | $299 | 200 |
 | Student | $0 (free) | 50 |
+| Total conference capacity |  | 350 |
+
+Because each ticket is valid on every configured conference day, the combined variation stock represents the maximum number of full-conference attendees. In this example, the three allocations total 350. Disable backorders unless your team has a deliberate oversell or waiting-list process.
+
+Describe what each ticket type includes on the product page. For example, a Delegate ticket might include an exhibitor package, while a Student ticket might require a student number or other eligibility information to be captured as a custom attendee field.
 
 Go to **Product Data > Attributes** and create an attribute called **Ticket Type**. In the **Values** field, specify the different ticket options. Be sure to check the **Used for variations** option and then click **Save attributes**.
 
 ![Screenshot 2021 07 20 at 12.10.46](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-12.10.46.png)
 
-Go to **Product Data > Variations**. Use the **Create variations from all attributes** option to generate the variations.
+Go to **Product Data > Variations**. Use the **Generate variations** option to create a variation for each ticket type.
 
 ![Screenshot 2021 07 20 at 12.11.50](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-12.11.50-1024x725.png)
 
 Set each variation to **Virtual** and set the relevant price. If you want to manage capacity per ticket type, enable **Manage stock** for each variation and set the number of tickets available using the **Stock quantity** field.
 
+A free or complimentary ticket should still have managed stock. Enter a price of **0** and assign it a fixed allocation so that free registrations continue to consume conference capacity.
+
 You can also set each variation to **Downloadable** if that matches your store configuration, but this is not required for FooEvents to generate and send tickets.
+
+#### Early-bird and other pricing phases
+
+Early-bird, standard and late pricing usually draw from the same physical conference capacity. Avoid creating several unrestricted variations for pricing phases if each variation would create another stock pool for the same places.
+
+- Use a scheduled WooCommerce sale price or update the variation price when the next phase begins; or
+- Allocate a fixed portion of capacity to each phase and only release the phases sequentially.
+
+WooCommerce coupons can be used for speakers, sponsors, partners or promotional campaigns without creating another ticket type. Test coupons against the intended variations and confirm that discounted registrations still reduce the correct stock allocation.
 
 ![Screenshot 2021 07 20 at 12.12.56](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-12.12.56.png)
 
 ### Enable the Attendee Details Page
 
 For this multi-day conference setup, attendee details should be collected before checkout using the Attendee Details Page. This provides a dedicated step where purchasers can enter attendee information for each ticket before continuing to WooCommerce checkout.
+
+**Important:** FooEvents for WooCommerce 2.0.16 and newer enables the Attendee Details Page by default on new installations. Existing installations should confirm that it is enabled. Update FooEvents for WooCommerce and all installed FooEvents extensions before using this workflow, and test any change to an established checkout process on a staging site first.
 
 Go to **FooEvents > Settings > Attendee** and enable **Enable Attendee Details page**. FooEvents can automatically create the Attendee Details page, but if you use your own page, make sure it includes the following shortcode:
 
@@ -15181,7 +16973,7 @@ You can also enable the copy attendee details option if you want purchasers to c
 
 For more information, see the [Attendee Details Page guide](https://help.fooevents.com/docs/topics/attendees/attendee-page/).
 
-### Event Settings
+### Configure conference days and times
 
 Go to **Product Data > Event Settings**.
 
@@ -15189,14 +16981,18 @@ To activate event functionality, set **Is this product an event?** to **Yes**.
 
 The following multi-day options are provided by the [FooEvents Multi-day](https://www.fooevents.com/products/fooevents-multi-day/) plugin.
 
-For multi-day events, you can set the event type to either **Sequential days** or **Specific days**.
+For multi-day events, set **Event type** to either **Sequential days** or **Select days**. The latter may be labeled **Specific days** in your version of the product settings.
 
 - **Sequential days** should be used when the event runs over a fixed number of consecutive days.
-- **Specific days** should be used when the event takes place on selected calendar dates that are not necessarily consecutive.
+- **Select days** or **Specific days** should be used when the event takes place on selected calendar dates that are not necessarily consecutive.
 
-For this example, use the **Specific days** option. Once selected, choose the number of days over which the conference will take place and set the date for each day.
+For this example, use **Select days** or **Specific days**. Set the **Number of days**, then enter the date for each conference day. Use **Sequential days** instead when the program runs on consecutive dates and can be described using a start date and a fixed number of days.
 
-If your conference runs on consecutive dates, you can use **Sequential days** instead and set the number of days. Choose the option that best matches the event schedule.
+For selected dates, enable **Set start/end times globally?** when every day follows the same schedule. Leave it disabled if the opening and closing times differ by day, then configure each day’s times individually. Confirm the WordPress timezone under **Settings > General** before publishing because event dates, ticket information and current-day check-in behavior depend on the site’s date and time configuration.
+
+Review the dates in chronological order and make sure the number of configured days matches the schedule. Each generated ticket receives a separate status for Day 1, Day 2 and so on, so changing the number or order of days after ticket sales have started can confuse check-in records and attendee communications.
+
+**Important:** Multi-day dates define when the same event repeats and which daily check-in records are available. They do not let the customer choose which conference days to attend. A ticket for this product is valid across all configured days.
 
 Complete the venue details, organizer contact details and any custom messages that should display on the thank-you page or event details tab. For a conference, this could include registration desk opening times, parking information, daily arrival instructions or a reminder to bring a digital or printed ticket.
 
@@ -15206,13 +17002,20 @@ These fields ensure that each ticket is linked to the correct attendee rather th
 
 Options related to bookings can be ignored for this multi-day conference setup. The remaining event options can be configured based on your preferences.
 
-### Default Check-in Day
+### Choose the default check-in day
 
-For multi-day events, it is important that staff check attendees in against the correct event day. If your team uses the FooEvents Check-ins app, configure the default check-in day where needed so the app opens on the most relevant day for the check-in team.
+For multi-day events, staff must check attendees in against the correct conference day. Use **Default Check-in Day** in the event settings to control which day the FooEvents Check-ins app selects when the event is loaded.
 
-This is useful when different staff members are responsible for different registration desks, event days or session entrances. It reduces the chance of staff accidentally checking attendees in against the wrong day during busy registration periods.
+The available options are:
 
-### Ticket Settings
+- **Automatically based on current date** selects the corresponding conference day when the device date matches a configured event date. This is generally the safest choice for a day-by-day registration workflow.
+- **Manually select a day** allows the app user to decide which day is being managed.
+- **All Days** applies a status change to every conference day. Only use this when one scan or status update should intentionally check the ticket in for the complete event.
+- A numbered day opens the app on that specific day. This can be useful for a desk or device dedicated to one conference day.
+
+Staff can still change the selected day in the app after the event loads. Include this step in staff training and label dedicated devices or desks clearly so a busy registration team does not update the wrong daily status.
+
+### Configure ticket generation and delivery
 
 Go to **Product Data > Ticket Settings**.
 
@@ -15224,9 +17027,24 @@ If you would like to convey information that only attendees should receive, use 
 
 Enable the ticket settings that match your conference workflow. In most cases, you should display attendee details, date and time, barcode or QR code, multi-day details and custom attendee details on the ticket. You should also enable ticket emails and, if you want each attendee to receive their own ticket directly, enable the option to email the ticket to the attendee rather than the purchaser.
 
+FooEvents generates tickets when a WooCommerce order reaches one of the statuses selected under **FooEvents > Settings > General > Send on order status**. **Completed** is the default. Select only statuses that represent an approved or intentionally accepted registration in your store so that tickets are not sent for orders that are still awaiting payment or review.
+
+Depending on the options you enable, attendees can receive or access tickets in several ways:
+
+- An HTML ticket displayed in the ticket email
+- A PDF ticket attached to the HTML ticket email
+- A PDF download from the WooCommerce Thank You or My Account pages when PDF downloads are enabled
+- Ticket details in the WordPress admin area under **FooEvents > Tickets**
+
+Send a ticket theme preview to confirm the branding, but use a ticket generated from a real test order when testing barcode or QR code scanning. Preview tickets contain sample information and are not valid for check-in. See the [ticket themes guide](https://help.fooevents.com/docs/topics/tickets/ticket-themes/) for preview instructions.
+
+Test delivery to more than one email provider and use an authenticated SMTP service to improve deliverability, especially when PDF attachments are enabled. If an attendee’s email address is corrected later, update the ticket and use the resend option so the attendee receives the current ticket. See the [ticket help section](https://help.fooevents.com/docs/topics/tickets/) for sending, resending and spam troubleshooting.
+
+FooEvents can also display generated tickets on the WooCommerce Thank You page. If the order has not yet reached a ticket-generating status, the customer will see the configured pending message instead. Review the [Thank You Page Tickets guide](https://help.fooevents.com/docs/topics/tickets/thank-you-page-tickets/) if you want to change this behavior or message.
+
 For more information, see the [ticket configuration guide](https://help.fooevents.com/docs/topics/tickets/ticket-configuration/).
 
-### Enable PDF tickets
+#### Enable PDF tickets
 
 Requires the [FooEvents PDF Tickets](https://www.fooevents.com/products/fooevents-pdf-tickets/) plugin.
 
@@ -15238,19 +17056,21 @@ PDF tickets are useful for conferences because attendees often expect a printabl
 
 For more information, see the [FooEvents PDF Tickets guide](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-pdf-tickets/).
 
-### Custom Attendee Fields
+### Custom attendee fields
 
 Requires the [FooEvents Custom Attendee Fields](https://www.fooevents.com/products/fooevents-custom-attendee-fields/) plugin.
 
 Go to **Product Data > Custom Attendee Fields**.
 
-Create the custom attendee fields that are specific to your conference registration process. These fields will be captured for each individual attendee and can be viewed in the WordPress admin area, included in exports, displayed on tickets where enabled, and viewed in the [FooEvents Check-ins apps](https://www.fooevents.com/features/apps/).
+Create the custom attendee fields that are specific to your conference registration process. These fields will be captured for each individual attendee and can be viewed in the WordPress admin area, included in exports, displayed on tickets where enabled, and viewed in the [FooEvents Check-ins apps](https://www.fooevents.com/products/apps/).
 
 For this conference setup, useful custom attendee fields include **T-shirt size** and **Dietary requirements**. If you did not use the standard attendee fields for company and designation, you can also create custom fields for **Company** and **Job title**.
 
 For dietary requirements, use a text field or textarea so attendees can provide allergies or special requests. For T-shirt size, use a select field so attendees choose from fixed options such as Small, Medium, Large, XL and XXL.
 
-Mark important fields as required where needed. Required fields must be completed on the Attendee Details Page before the customer can continue to checkout.
+Use fixed options where the information will be counted or grouped later. A select field makes T-shirt quantities easier to summarize than free-form answers such as “medium”, “M” and “med”. Use free-text fields only when attendees need to explain information that cannot be represented reliably by a short list.
+
+Mark fields as required only when the information is necessary for registration, ticket delivery or conference operations. Required fields must be completed on the Attendee Details Page before the customer can continue to checkout. Avoid collecting personal information that your team does not need, and decide who will be allowed to access exported attendee and dietary data.
 
 ![Screenshot 2021 07 20 at 10.22.28](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-10.22.28-1024x207.png)
 
@@ -15272,61 +17092,123 @@ You can also control this per event by going to **Product Data > Event Settings 
 
 **Important:** The variation table display depends on the WooCommerce product and variation configuration. Avoid using blank or “Any” variation values for ticket types, as these can prevent the table layout from being used correctly.
 
-## Usage
+### Test the registration workflow
 
-Similar to [this demo example](https://demo.fooevents.com/product/multi-day-conference/), your customers should now be able to select one or more ticket types and add them to their cart.
+Similar to [this demo example](https://demo.fooevents.com/product/multi-day-conference/), customers should be able to select one or more ticket types and add them to the cart. They will then complete the required information for every ticket on the Attendee Details Page before continuing to WooCommerce checkout.
 
-They will then be directed to the Attendee Details Page, where they must complete the required attendee fields for each ticket before continuing to checkout. After attendee details are saved, the customer can complete payment through the standard WooCommerce checkout process.
+Place a test order containing multiple ticket types. Confirm that variation stock is reduced correctly, required attendee fields cannot be skipped, unique attendee email validation behaves as expected, and the order reaches the intended ticket-generating status.
 
-### Tickets
-
-Once payment has been completed and the order reaches the configured ticket generation status, FooEvents will generate a ticket for each attendee. This status is controlled by the **Send on order status** setting under **FooEvents > Settings > General**.
-
-If the option to email tickets to attendees is enabled, each attendee will receive their own ticket email. Based on the ticket settings that were enabled, the ticket can include attendee information, custom attendee fields, conference details, the dates of each day of the conference, barcode or QR code, and PDF ticket attachment or download link.
+When tickets are configured to be emailed to attendees, each attendee should receive their own ticket with the correct ticket type, attendee information, custom fields, conference details and every configured conference date.
 
 ![Screenshot 2021 07 20 at 12.22.28](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-12.22.28-491x1024.png)
 
-The ticket can also be viewed in the WordPress admin area. Go to **FooEvents > Tickets** and select the relevant ticket:
+The ticket can also be reviewed in the WordPress admin area. Go to **FooEvents > Tickets**, open the test ticket and confirm that the daily check-in statuses correspond to the configured number of conference days.
 
 ![Screenshot 2021 07 20 at 12.24.46](https://help.fooevents.com/wp-content/uploads/2021/07/Screenshot-2021-07-20-at-12.24.46-1024x518.png)
 
-### Exporting Attendees
+## Prepare and manage daily conference entry
 
-You can [export a CSV file](https://help.fooevents.com/docs/topics/attendees/export-event-and-attendee-information/) for each event which includes ticket numbers, custom attendee fields, check-in data, purchaser details and attendee details. The CSV can then be imported into your CRM system or used to prepare registration lists, badge data, dietary requirement summaries or event reports.
+### Prepare the Check-ins app and devices
 
-To export attendees for the conference, edit the event product and go to **Product Data > Event Export**. Configure the export options and download the attendee CSV.
+Install the latest version of the free [FooEvents Check-ins app](https://www.fooevents.com/products/apps/) on every device that will be used at registration. Connect each device to the website, open the conference event and confirm that the ticket list loads successfully.
 
-Alternatively, you can use a solution such as [WP Fusion](https://wpfusion.com/documentation/events/fooevents/), which offers an integration with FooEvents that allows you to dynamically add event attendees as contacts to your CRM of choice. You can also optionally apply tags based on the event ticket purchased.
+Review the Check-ins app options under **FooEvents > Settings > Check-ins** before devices are distributed:
 
-### Attendee Check-ins
+- Use **Event listing options** to keep staff focused on the conference events they are authorized to manage.
+- Review **Tickets loaded** and enable **Include older tickets that have not been checked in** if the conference product or test tickets were created outside the normal loading period.
+- Reduce **Tickets to load per request** if the server struggles to load the complete attendee list in one request.
+- Enable **Hide personal information** when check-in staff only need attendee names and ticket status.
 
-The status of a ticket can be changed from **Not Checked In** to **Checked In**, **Canceled** or **Unpaid**. For multi-day events, check-ins are applied separately for each day of the event.
+Load and synchronize all devices before the registration desks open. Test the built-in camera and any Bluetooth scanners, confirm that auto check-in behaves as expected, provide chargers or power banks, and keep a secure backup device ready.
 
-This can be done by editing the ticket in the WordPress admin area or by using the free [FooEvents Check-ins app](https://www.fooevents.com/features/apps/). The app can be used to search for attendees, scan the barcode or QR code on a ticket, select the relevant event day, and update the attendee’s check-in status.
+If the venue has several entrances or unreliable connectivity, plan device ownership and synchronization before the event. Follow the [multi-gate events with unreliable connectivity](https://help.fooevents.com/docs/topics/use-cases/check-in-setup-for-multi-gate-events-with-unreliable-connectivity/) guide rather than improvising an offline workflow on the day.
+
+### Check attendees in on the correct day
+
+A multi-day ticket has an independent check-in status for each configured day. At the start of every shift, staff should open the event and confirm the selected conference day before scanning any tickets.
+
+1. Confirm the conference name and selected day shown in the app.
+2. Scan the barcode or QR code, or search for the attendee by name or ticket number when scanning is not possible.
+3. Review the result before admitting the attendee. A successful result should update only the intended day unless the event is deliberately set to **All Days**.
+4. Escalate canceled, unpaid, duplicate or unrecognized tickets to a supervisor instead of overriding the result without verification.
 
 ![13 app](https://help.fooevents.com/wp-content/uploads/2021/07/13-app.png)
 
-Before the conference, complete at least one test check-in for each event day using a real test ticket. Confirm that the attendee can be found, the barcode or QR code scans correctly, the correct day is selected, and the check-in status updates in WordPress.
+Before the conference, use a real test ticket to complete a check-in for every event day. Confirm that the barcode or QR code scans correctly, the expected day changes to **Checked In**, the other days remain unchanged, and the update appears in WordPress. Then reset the test ticket if it will be used again.
 
-For more information, see the [FooEvents Check-ins app help guide](https://help.fooevents.com/docs/topics/check-ins-app/) and the [attendee check-ins guide](https://help.fooevents.com/docs/topics/attendees/attendee-check-ins/).
+The app can also warn staff when a ticket date does not match the device’s current date. Enable **Restrict attendee check-ins to the current day** in the app settings if this warning is appropriate for your workflow. Authorized staff can still choose whether to proceed when an exception is legitimate. See the [current-day check-in guide](https://help.fooevents.com/docs/topics/check-ins-app/restrict-attendee-check-ins-to-the-current-day/).
 
-### Printing name tags
+For more information, see the [FooEvents Check-ins app help guide](https://help.fooevents.com/docs/topics/check-ins-app/), the [FooEvents Multi-day help section](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-multi-day/) and the [attendee check-ins guide](https://help.fooevents.com/docs/topics/attendees/attendee-check-ins/).
+
+### Manage multiple desks and group arrivals
+
+When devices are online, check-in changes are synchronized through the WordPress website. Keep devices connected and refresh or synchronize them according to the app settings so every desk works from current ticket data.
+
+The **Check-in Same Order Tickets** option can speed up group arrivals by updating other tickets from the same WooCommerce order and event. Use it only when the complete group is physically present, confirm that the correct conference day is selected, and test the behavior with a group order before enabling it for staff. See [check in all tickets for the same order](https://help.fooevents.com/docs/topics/check-ins-app/check-in-all-tickets-for-the-same-order/).
+
+**Offline warning:** Devices operating offline do not synchronize check-ins directly with one another. If the same attendee can reach more than one offline device, duplicate admission is possible. Assign devices to distinct attendee groups or entrance lanes and synchronize them as soon as connectivity is available.
+
+### Define re-entry and exception rules
+
+Daily check-in records show whether a ticket has already been used on a particular conference day. Decide whether same-day re-entry is permitted and document the process before training staff.
+
+- If re-entry is allowed, use check-out and check-in consistently, or issue a visible credential such as a badge or wristband and keep the digital status checked in.
+- If re-entry is not allowed, treat an already checked-in result as an exception that requires supervisor approval.
+- Define how staff should verify identity when an attendee has lost their ticket or their phone is unavailable.
+- Decide who can resolve unpaid, canceled, refunded or transferred registrations and how those decisions will be recorded.
+
+A conference-day check-in confirms admission to the overall event for that day. It does not manage capacity or attendance for individual workshops. Use separate Bookable event products when sessions require their own availability and check-in records.
+
+## Manage attendees, reporting and on-site operations
+
+### Review attendance and export attendee data
+
+Use the [FooEvents event reports](https://help.fooevents.com/docs/topics/events/event-reports/) to review ticket sales and attendance. For a multi-day event, daily check-in information helps the operations team compare registrations with actual attendance and identify unresolved check-in or synchronization issues before the next conference day begins.
+
+You can [export a CSV file](https://help.fooevents.com/docs/topics/attendees/export-attendee-information/) for the event that includes ticket numbers, custom attendee fields, purchaser details, attendee details and multi-day check-in information. Edit the conference product, go to **Product Data > Event Export**, configure the export options and download the attendee CSV.
+
+Generate operational exports close enough to the event that recent registrations and attendee changes are included. Restrict access to files containing personal or dietary information, share them only with staff who need them and delete working copies when they are no longer required.
+
+Alternatively, a solution such as [WP Fusion](https://wpfusion.com/documentation/events/fooevents/) can add FooEvents attendees to a supported CRM and apply tags based on the ticket purchased. Test the field mapping and consent workflow before opening registration.
+
+### Print badges and registration materials
 
 The built-in [FooEvents Stationery Builder](https://help.fooevents.com/docs/topics/events/fooevents-stationery-builder/) can be used to design and print custom name tags, wristbands, tickets, badges and personalized labels.
 
-For a conference, a basic name tag could include the attendee name, company, designation, ticket type and barcode or QR code. If you captured a custom badge name field, you can use that field as the main name displayed on the badge.
+For a conference, a basic badge could include the attendee name, company, designation, ticket type and barcode or QR code. If you captured a custom badge name field, use that field as the main display name. Do not place private information such as dietary or accessibility requirements on a public-facing badge.
 
-Before printing the full attendee list, generate a test output and confirm that the layout, field mapping and print size are correct.
+Generate a test sheet before printing the full attendee list and confirm the layout, field mapping, print size and scanner readability. Keep a process for printing individual replacements and badges for late registrations without reprinting the complete batch.
+
+### Sell tickets and merchandise on-site
+
+**Optional:** This workflow requires [FooEvents POS](https://www.fooevents.com/products/fooevents-pos/) in addition to the plugins used for online conference registration.
+
+FooEvents POS can be used to sell remaining conference tickets and merchandise at the venue. When selling an event product, staff can capture the required attendee details and print or email the generated ticket, subject to the order and ticket settings used by the store.
+
+Before the event, complete an on-site test sale for every ticket type that staff will offer. Confirm that the correct variation stock is reduced, attendee details are captured, the multi-day ticket contains all dates, the intended default check-in day is applied and the ticket becomes available in the Check-ins app.
+
+**Connectivity:** FooEvents POS can capture orders while offline, but event tickets can only be generated and printed once the device has an active connection and the order has synchronized with the website. Plan a connected ticket-collection or registration point if you expect unreliable connectivity. See the [FooEvents POS offline mode guide](https://help.fooevents.com/docs/topics/point-of-sale/offline-mode/).
 
 ## Final checks before opening registration
 
-Before opening ticket sales to the public, complete a full test registration from start to finish.
+Before opening ticket sales to the public, complete the following checks using a real test order and ticket:
 
-Confirm that the product page displays the correct conference information, ticket types, prices and stock quantities. Add multiple ticket types to the cart, complete the Attendee Details Page, confirm that required fields cannot be skipped, and complete checkout using a test payment method.
+1. Confirm that the WordPress timezone and every conference date, day order, start time and end time are correct.
+2. Verify that the product is a multi-day event and that the number of configured days matches the published conference schedule.
+3. Confirm that customers understand a multi-day pass covers every configured day and that any separately sold day passes use the intended products and stock allocations.
+4. Check ticket types, prices, coupons, sale periods and variation stock. Confirm that combined full-pass stock does not exceed conference capacity and that backorders are configured intentionally.
+5. Add multiple ticket types to the cart and complete the Attendee Details Page. Confirm that required fields cannot be skipped and that details are stored against the correct attendee.
+6. Complete checkout using every payment method and order-status path that customers will use. Confirm that tickets are generated only at the intended status.
+7. Verify that HTML and PDF tickets display the correct attendee, ticket type, venue, complete date schedule and scannable barcode or QR code.
+8. Test ticket email delivery to the purchaser and attendee according to your settings, as well as any Thank You or My Account ticket downloads.
+9. Open the test ticket under **FooEvents > Tickets** and confirm that it has a separate status for every conference day.
+10. Load the event and attendee list on every check-in device, confirm the default check-in day and complete a test scan for each conference day.
+11. Test duplicate scans, group arrivals, re-entry, canceled or unpaid tickets and the escalation process staff will follow.
+12. If multiple entrances or offline mode will be used, rehearse device assignment, synchronization and recovery before attendees arrive.
+13. Generate an attendee export and event report, then confirm that the required custom fields and daily check-in information are present and protected appropriately.
+14. Generate and scan a sample badge, and document how late registrations, badge replacements and on-site sales will be handled.
 
-After checkout, confirm that tickets are generated at the expected order status, ticket emails are sent correctly, PDF tickets are available, multi-day details display correctly on the ticket, attendee details are visible in **FooEvents > Tickets**, attendee data can be exported, badges can be generated, and check-ins work correctly for each day of the event.
-
-## Questions and Feedback
+### Questions and feedback
 
 Have a question before you buy? Please [get in touch](https://www.fooevents.com/contact-us/). If you are ready to get started, you can purchase a license [here](https://www.fooevents.com/pricing/).
 
