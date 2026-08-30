@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-08-23T19:23:05.970Z",
-  "total_pages": 3765,
+  "last_scraped": "2026-08-30T18:54:57.534Z",
+  "total_pages": 3806,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,136 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3765,
+      "page_count": 3806,
       "pages": [
+        {
+          "title": "Affiliate Reports and CSV Exports",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/affiliate-reports-and-exports/"
+        },
+        {
+          "title": "Switching from Another Affiliate Plugin",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/switching-from-another-affiliate-plugin/"
+        },
+        {
+          "title": "How to Create Affiliate Banners and Creatives",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-create-affiliate-banners/"
+        },
+        {
+          "title": "Affiliate Bonuses and Incentives",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-affiliate-bonuses/"
+        },
+        {
+          "title": "MLM Plan Types: Binary, Unilevel and Forced Matrix",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/mlm-plan-types/"
+        },
+        {
+          "title": "Troubleshooting: Referrals Not Tracking",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/troubleshooting-referral-tracking/"
+        },
+        {
+          "title": "Approve, Reject and Manage Referrals",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-manage-and-approve-referrals/"
+        },
+        {
+          "title": "How Referral Tracking and Attribution Work",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/referral-tracking-and-attribution/"
+        },
+        {
+          "title": "How to Create and Share Referral Links",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-create-and-share-referral-links/"
+        },
+        {
+          "title": "Affiliate Levels with Auto Upgrades",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-affiliate-levels/"
+        },
+        {
+          "title": "How to Approve and Manage Your Affiliates",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-approve-and-manage-affiliates/"
+        },
+        {
+          "title": "Affiliate and Referral Program: FAQ",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/affiliate-and-referral-faq/"
+        },
+        {
+          "title": "How to Track Affiliate Sales with Coupon Codes",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-track-affiliate-sales-with-coupons/"
+        },
+        {
+          "title": "Recurring Commissions on Subscription Renewals",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-recurring-commissions/"
+        },
+        {
+          "title": "How to Set Up Lifetime Commissions for Affiliates",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-lifetime-commissions/"
+        },
+        {
+          "title": "Affiliate Dashboard and Affiliate Area Guide",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/affiliate-dashboard-guide/"
+        },
+        {
+          "title": "Affiliate Registration Form Setup in WooCommerce",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-the-affiliate-registration-form/"
+        },
+        {
+          "title": "The Real Difference Between Bulk Editing and Bulk Generating WooCommerce Variations",
+          "url": "https://woocommerce.com/document/the-real-difference-between-bulk-editing-and-bulk-generating-woocommerce-variations/"
+        },
+        {
+          "title": "How to Bulk Generate Missing Variations After a WooCommerce CSV Import",
+          "url": "https://woocommerce.com/document/how-to-bulk-generate-missing-variations-after-a-woocommerce-csv-import/"
+        },
+        {
+          "title": "Why Is a WooCommerce Variation Missing? (It’s Not Always a Bug)",
+          "url": "https://woocommerce.com/document/why-is-a-woocommerce-variation-missing-its-not-always-a-bug/"
+        },
+        {
+          "title": "Pay Affiliates with Store Credit and Wallets",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-pay-affiliates-with-store-credit/"
+        },
+        {
+          "title": "Pay Affiliates via PayPal, Stripe and Bank",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-pay-affiliates/"
+        },
+        {
+          "title": "Set Up a Refer a Friend Program in WooCommerce",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-a-refer-a-friend-program/"
+        },
+        {
+          "title": "Getting Started with Affiliate and Referral Program",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/affiliate-and-referral-getting-started/"
+        },
+        {
+          "title": "Hide Products for WooCommerce",
+          "url": "https://woocommerce.com/document/hide-products/"
+        },
+        {
+          "title": "Provar",
+          "url": "https://woocommerce.com/document/provar/"
+        },
+        {
+          "title": "AutomateWoo: Use the customer.email variable",
+          "url": "https://woocommerce.com/document/automatewoo-use-the-customer-email-variable/"
+        },
+        {
+          "title": "AutomateWoo: Use the customer.generate_coupon variable",
+          "url": "https://woocommerce.com/document/automatewoo-use-the-customer-generate_coupon-variable/"
+        },
+        {
+          "title": "Data Cleaner",
+          "url": "https://woocommerce.com/document/data-cleaner/"
+        },
+        {
+          "title": "NexByte",
+          "url": "https://woocommerce.com/document/nexbyte/"
+        },
+        {
+          "title": "Payfast source IP validation filter",
+          "url": "https://woocommerce.com/document/payfast-source-ip-validation-filter/"
+        },
+        {
+          "title": "EU VAT Number developer snippets",
+          "url": "https://woocommerce.com/document/eu-vat-number-developer-snippets/"
+        },
         {
           "title": "Anti-Fraud Protection for WooCommerce",
           "url": "https://woocommerce.com/document/anti-fraud-protection-for-woocommerce/"
@@ -90,8 +218,44 @@
           "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-discount-the-whole-cart/"
         },
         {
-          "title": "How to Set Up a Buy One Get One Free (BOGO) Offer",
-          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-set-up-buy-one-get-one-free-bogo/"
+          "title": "How to Set Up Bulk and Tiered Quantity Discounts",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-set-up-bulk-and-tiered-quantity-discounts/"
+        },
+        {
+          "title": "How to Discount Multiple Products or Your Whole Store",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-discount-multiple-products-and-categories/"
+        },
+        {
+          "title": "How to Discount Products, Categories and Tags",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-discount-products-categories-and-tags/"
+        },
+        {
+          "title": "PricePulse General Settings",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/pricepulse-general-settings/"
+        },
+        {
+          "title": "Discount Rule Fields",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/discount-rule-fields/"
+        },
+        {
+          "title": "How to Create Your First Discount Rule",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-create-your-first-discount-rule/"
+        },
+        {
+          "title": "Stylezen",
+          "url": "https://woocommerce.com/document/stylezen/"
+        },
+        {
+          "title": "Outlet Pro",
+          "url": "https://woocommerce.com/document/outletpro/"
+        },
+        {
+          "title": "Product Manuals and Flip Book",
+          "url": "https://woocommerce.com/document/product-manuals-pro/"
+        },
+        {
+          "title": "LWN Multi-Step Checkout",
+          "url": "https://woocommerce.com/document/lwn-ms-checkout/"
         },
         {
           "title": "Shared Space Booking",
@@ -4018,8 +4182,8 @@
           "url": "https://woocommerce.com/document/save-share-cart-get-discount/"
         },
         {
-          "title": "Past Order Based Discount for WooCommerce",
-          "url": "https://woocommerce.com/document/past-order-based-discounts-for-woocommerce/"
+          "title": "Smart Loyalty Discounts for WooCommerce",
+          "url": "https://woocommerce.com/document/smart-loyalty-discounts/"
         },
         {
           "title": "Customer Info",
@@ -4926,27 +5090,27 @@
           "url": "https://woocommerce.com/document/advanced-order-approval-for-woocommerce/"
         },
         {
-          "title": "How to Customize Affiliate and Referral Emails",
+          "title": "Customize Affiliate and Referral Emails",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-customize-affiliate-and-referral-emails/"
         },
         {
-          "title": "How to Implement Rank Feature in Affiliate Plugin",
+          "title": "Affiliate Ranks and Rank Bonuses",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-implement-rank-feature-in-affiliate-plugin/"
         },
         {
-          "title": "How to Enable and Use the QR Code in Affiliate Plugin",
+          "title": "QR Codes for Referral Links",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-enable-and-use-the-qr-code-in-affiliate-plugin/"
         },
         {
-          "title": "How to Set Up MLM in WooCommerce Affiliate Program",
+          "title": "How to Set Up MLM in Your Affiliate Program",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-mlm-in-affiliate-program/"
         },
         {
-          "title": "How to Enable Two-Way Commission in Affiliate Program",
+          "title": "Two-Way Commission and Referral Discounts",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-enable-two-way-commission-in-affiliate-program/"
         },
         {
-          "title": "How to Set Affiliate Commission Per Product",
+          "title": "Commission per Product or Category",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-affiliate-commission-per-product/"
         },
         {
@@ -4970,7 +5134,7 @@
           "url": "https://woocommerce.com/document/bulk-variation-and-swatches/"
         },
         {
-          "title": "How to Setup Referral Commission in WooCommerce Affiliate Plugin",
+          "title": "How to Set Up Referral Commission Rules",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-setup-referral-commission-in-woocommerce-affiliate-plugin/"
         },
         {
@@ -5970,40 +6134,40 @@
           "url": "https://woocommerce.com/document/configuring-woocommerce-settings/products/"
         },
         {
-          "title": "Page Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/page-shortcodes/"
+          "title": "Email Settings",
+          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/emails/"
         },
         {
-          "title": "B2B Invoice Payment Method",
-          "url": "https://woocommerce.com/document/b2b-invoice-payment-method/"
+          "title": "Advanced Settings",
+          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/advanced/"
         },
         {
-          "title": "Order Statuses",
-          "url": "https://woocommerce.com/document/managing-orders/order-statuses/"
+          "title": "Advanced Order Notes for WooCommerce",
+          "url": "https://woocommerce.com/document/advanced-order-notes-for-woocommerce/"
         },
         {
-          "title": "Orders Overview and Bulk Order Management",
-          "url": "https://woocommerce.com/document/managing-orders/overview-and-bulk-management/"
+          "title": "Consent Mode Banner PRO",
+          "url": "https://woocommerce.com/document/gtm-consent-mode-banner-woo/"
         },
         {
-          "title": "Single Order Page and Manually Adding an Order",
-          "url": "https://woocommerce.com/document/managing-orders/view-edit-or-add-an-order/"
+          "title": "AnySell",
+          "url": "https://woocommerce.com/document/anysell/"
         },
         {
-          "title": "Paying for Orders",
-          "url": "https://woocommerce.com/document/managing-orders/paying-for-orders/"
+          "title": "Sportiq",
+          "url": "https://woocommerce.com/document/sportiq/"
         },
         {
-          "title": "Removing personal data from orders",
-          "url": "https://woocommerce.com/document/managing-orders/removing-personal-data-from-orders/"
+          "title": "Related Products, Add-to-Cart, and Notification Shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes/"
         },
         {
-          "title": "Testing orders",
-          "url": "https://woocommerce.com/document/managing-orders/testing-orders/"
+          "title": "Troubleshooting shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/troubleshooting-shortcodes/"
         },
         {
-          "title": "Troubleshooting Orders",
-          "url": "https://woocommerce.com/document/managing-orders/troubleshooting-orders/"
+          "title": "Product Category Shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/product-category/"
         },
         {
           "title": "Feature, Filter, and Sort Products",
@@ -10086,8 +10250,8 @@
           "url": "https://woocommerce.com/document/affiliate-for-woocommerce/how-to-set-different-affiliate-commission-rates-for-product-or-product-category/"
         },
         {
-          "title": "Back In Stock Notifications",
-          "url": "https://woocommerce.com/document/back-in-stock-notifications/"
+          "title": "Merge Orders",
+          "url": "https://woocommerce.com/document/merge-orders/"
         },
         {
           "title": "WooCommerce Box Office",
@@ -12326,8 +12490,8 @@
           "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
         },
         {
-          "title": "Add to Cart Redirect",
-          "url": "https://woocommerce.com/document/add-to-cart-redirect/"
+          "title": "[woocommerce_product_filter_category]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_category/"
         },
         {
           "title": "[woocommerce_product_filter_attribute]",
