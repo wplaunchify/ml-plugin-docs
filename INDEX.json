@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T21:18:45.650Z",
+  "last_updated": "2026-08-30T21:23:20.529Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2503,7 +2503,7 @@
       "slug": "resizable-sidebar-for-the-gutenberg-block-editor",
       "name": "Resizable Sidebar for the Gutenberg Block Editor",
       "documentation_url": "https://wordpress.org/plugins/resizable-editor-sidebar/",
-      "last_scraped": "2026-08-23T21:36:28.705Z",
+      "last_scraped": "2026-08-30T21:23:20.529Z",
       "page_count": 2,
       "categories": [
         "advanced",
