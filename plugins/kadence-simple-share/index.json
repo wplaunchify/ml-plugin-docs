@@ -2,9 +2,9 @@
   "plugin_slug": "kadence-simple-share",
   "plugin_name": "Kadence Simple Share",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-  "last_scraped": "2026-08-23T19:10:41.500Z",
-  "total_pages": 23,
-  "failed_urls_count": 8,
+  "last_scraped": "2026-08-30T18:54:00.482Z",
+  "total_pages": 25,
+  "failed_urls_count": 6,
   "sections": [
     {
       "title": "Captcha",
@@ -237,6 +237,32 @@
         {
           "title": "Kadence Simple Share (Add Social Share Icons to Posts)",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-general/simple-share/"
+        }
+      ]
+    },
+    {
+      "title": "Site Limits And License Usage",
+      "slug": "site-limits-and-license-usage",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/site-limits-and-license-usage/",
+      "file": "categories/site-limits-and-license-usage.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding Site Limits and License Usage Guidelines",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/site-limits-and-license-usage/"
+        }
+      ]
+    },
+    {
+      "title": "Understanding Site Limits And License Usage Guidelines",
+      "slug": "understanding-site-limits-and-license-usage-guidelines",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/understanding-site-limits-and-license-usage-guidelines/",
+      "file": "categories/understanding-site-limits-and-license-usage-guidelines.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Understanding Site Limits and License Usage Guidelines",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/understanding-site-limits-and-license-usage-guidelines/"
         }
       ]
     },
