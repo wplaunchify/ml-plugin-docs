@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T21:02:11.617Z",
+  "last_updated": "2026-08-30T21:16:44.487Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -574,22 +574,58 @@
       "slug": "fluent-snippet-version-control",
       "name": "Fluent Snippet Version Control",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-08-09T03:15:30.140Z",
-      "page_count": 2,
+      "last_scraped": "2026-08-30T21:16:44.487Z",
+      "page_count": 20,
       "categories": [
-        "create-snippet",
-        "getting-started"
+        "conditional-logic",
+        "constants-and-hooks",
+        "content-snippets",
+        "css-snippets",
+        "error-handling",
+        "file-format",
+        "first-snippet",
+        "functions-snippets",
+        "how-it-works",
+        "import-export",
+        "installation",
+        "introduction",
+        "js-snippets",
+        "organising-snippets",
+        "permissions",
+        "safe-mode",
+        "shortcodes",
+        "snippet-types",
+        "standalone-mode",
+        "troubleshooting"
       ]
     },
     {
       "slug": "fluent-snippets",
       "name": "Fluent Snippets",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-08-09T10:08:53.539Z",
-      "page_count": 2,
+      "last_scraped": "2026-08-30T21:16:10.213Z",
+      "page_count": 20,
       "categories": [
-        "create-snippet",
-        "getting-started"
+        "conditional-logic",
+        "constants-and-hooks",
+        "content-snippets",
+        "css-snippets",
+        "error-handling",
+        "file-format",
+        "first-snippet",
+        "functions-snippets",
+        "how-it-works",
+        "import-export",
+        "installation",
+        "introduction",
+        "js-snippets",
+        "organising-snippets",
+        "permissions",
+        "safe-mode",
+        "shortcodes",
+        "snippet-types",
+        "standalone-mode",
+        "troubleshooting"
       ]
     },
     {

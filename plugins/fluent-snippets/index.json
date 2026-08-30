@@ -2,33 +2,267 @@
   "plugin_slug": "fluent-snippets",
   "plugin_name": "Fluent Snippets",
   "documentation_url": "https://fluentsnippets.com/docs/",
-  "last_scraped": "2026-08-09T10:08:53.539Z",
-  "total_pages": 2,
+  "last_scraped": "2026-08-30T21:16:10.187Z",
+  "total_pages": 20,
   "failed_urls_count": 1,
   "sections": [
     {
-      "title": "Create Snippet",
-      "slug": "create-snippet",
-      "url": "https://fluentsnippets.com/docs/create-snippet/",
-      "file": "categories/create-snippet.md",
+      "title": "Conditional Logic",
+      "slug": "conditional-logic",
+      "url": "https://fluentsnippets.com/docs/conditional-logic/",
+      "file": "categories/conditional-logic.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Create Your First Snippet",
-          "url": "https://fluentsnippets.com/docs/create-snippet/"
+          "title": "Conditional logic",
+          "url": "https://fluentsnippets.com/docs/conditional-logic"
         }
       ]
     },
     {
-      "title": "Getting Started",
-      "slug": "getting-started",
-      "url": "https://fluentsnippets.com/docs/getting-started/",
-      "file": "categories/getting-started.md",
+      "title": "Constants And Hooks",
+      "slug": "constants-and-hooks",
+      "url": "https://fluentsnippets.com/docs/constants-and-hooks/",
+      "file": "categories/constants-and-hooks.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Getting Started with FluentSnippets",
-          "url": "https://fluentsnippets.com/docs/getting-started/"
+          "title": "Constants and hooks",
+          "url": "https://fluentsnippets.com/docs/constants-and-hooks"
+        }
+      ]
+    },
+    {
+      "title": "Content Snippets",
+      "slug": "content-snippets",
+      "url": "https://fluentsnippets.com/docs/content-snippets/",
+      "file": "categories/content-snippets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Content (PHP + HTML) snippets",
+          "url": "https://fluentsnippets.com/docs/content-snippets"
+        }
+      ]
+    },
+    {
+      "title": "Css Snippets",
+      "slug": "css-snippets",
+      "url": "https://fluentsnippets.com/docs/css-snippets/",
+      "file": "categories/css-snippets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Styles (CSS) snippets",
+          "url": "https://fluentsnippets.com/docs/css-snippets"
+        }
+      ]
+    },
+    {
+      "title": "Error Handling",
+      "slug": "error-handling",
+      "url": "https://fluentsnippets.com/docs/error-handling/",
+      "file": "categories/error-handling.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Error handling",
+          "url": "https://fluentsnippets.com/docs/error-handling"
+        }
+      ]
+    },
+    {
+      "title": "File Format",
+      "slug": "file-format",
+      "url": "https://fluentsnippets.com/docs/file-format/",
+      "file": "categories/file-format.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "File format and headers",
+          "url": "https://fluentsnippets.com/docs/file-format"
+        }
+      ]
+    },
+    {
+      "title": "First Snippet",
+      "slug": "first-snippet",
+      "url": "https://fluentsnippets.com/docs/first-snippet/",
+      "file": "categories/first-snippet.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Your first snippet",
+          "url": "https://fluentsnippets.com/docs/first-snippet"
+        }
+      ]
+    },
+    {
+      "title": "Functions Snippets",
+      "slug": "functions-snippets",
+      "url": "https://fluentsnippets.com/docs/functions-snippets/",
+      "file": "categories/functions-snippets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Functions (PHP) snippets",
+          "url": "https://fluentsnippets.com/docs/functions-snippets"
+        }
+      ]
+    },
+    {
+      "title": "How It Works",
+      "slug": "how-it-works",
+      "url": "https://fluentsnippets.com/docs/how-it-works/",
+      "file": "categories/how-it-works.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How it works",
+          "url": "https://fluentsnippets.com/docs/how-it-works"
+        }
+      ]
+    },
+    {
+      "title": "Import Export",
+      "slug": "import-export",
+      "url": "https://fluentsnippets.com/docs/import-export/",
+      "file": "categories/import-export.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Import and export",
+          "url": "https://fluentsnippets.com/docs/import-export"
+        }
+      ]
+    },
+    {
+      "title": "Installation",
+      "slug": "installation",
+      "url": "https://fluentsnippets.com/docs/installation/",
+      "file": "categories/installation.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Installation",
+          "url": "https://fluentsnippets.com/docs/installation"
+        }
+      ]
+    },
+    {
+      "title": "Introduction",
+      "slug": "introduction",
+      "url": "https://fluentsnippets.com/docs/introduction/",
+      "file": "categories/introduction.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Introduction",
+          "url": "https://fluentsnippets.com/docs/introduction"
+        }
+      ]
+    },
+    {
+      "title": "Js Snippets",
+      "slug": "js-snippets",
+      "url": "https://fluentsnippets.com/docs/js-snippets/",
+      "file": "categories/js-snippets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Scripts (JS) snippets",
+          "url": "https://fluentsnippets.com/docs/js-snippets"
+        }
+      ]
+    },
+    {
+      "title": "Organising Snippets",
+      "slug": "organising-snippets",
+      "url": "https://fluentsnippets.com/docs/organising-snippets/",
+      "file": "categories/organising-snippets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Organising snippets",
+          "url": "https://fluentsnippets.com/docs/organising-snippets"
+        }
+      ]
+    },
+    {
+      "title": "Permissions",
+      "slug": "permissions",
+      "url": "https://fluentsnippets.com/docs/permissions/",
+      "file": "categories/permissions.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Permissions and security",
+          "url": "https://fluentsnippets.com/docs/permissions"
+        }
+      ]
+    },
+    {
+      "title": "Safe Mode",
+      "slug": "safe-mode",
+      "url": "https://fluentsnippets.com/docs/safe-mode/",
+      "file": "categories/safe-mode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Safe Mode",
+          "url": "https://fluentsnippets.com/docs/safe-mode"
+        }
+      ]
+    },
+    {
+      "title": "Shortcodes",
+      "slug": "shortcodes",
+      "url": "https://fluentsnippets.com/docs/shortcodes/",
+      "file": "categories/shortcodes.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Shortcodes",
+          "url": "https://fluentsnippets.com/docs/shortcodes"
+        }
+      ]
+    },
+    {
+      "title": "Snippet Types",
+      "slug": "snippet-types",
+      "url": "https://fluentsnippets.com/docs/snippet-types/",
+      "file": "categories/snippet-types.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Snippet types and run locations",
+          "url": "https://fluentsnippets.com/docs/snippet-types"
+        }
+      ]
+    },
+    {
+      "title": "Standalone Mode",
+      "slug": "standalone-mode",
+      "url": "https://fluentsnippets.com/docs/standalone-mode/",
+      "file": "categories/standalone-mode.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Standalone mode",
+          "url": "https://fluentsnippets.com/docs/standalone-mode"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "slug": "troubleshooting",
+      "url": "https://fluentsnippets.com/docs/troubleshooting/",
+      "file": "categories/troubleshooting.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting",
+          "url": "https://fluentsnippets.com/docs/troubleshooting"
         }
       ]
     }

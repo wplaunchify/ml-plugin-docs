@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run Fluent Snippet Version Control scraper
-        run: bash scripts/run-scrape.sh --slug=fluent-snippet-version-control --mode=html-scrape --url=https://fluentsnippets.com/docs/ --name="Fluent Snippet Version Control"
+        run: bash scripts/run-scrape.sh --slug=fluent-snippet-version-control --mode=html-scrape --url=https://fluentsnippets.com/docs/ --selector=.docs__main --name="Fluent Snippet Version Control"
 
       - name: Check for changes
         id: changes
