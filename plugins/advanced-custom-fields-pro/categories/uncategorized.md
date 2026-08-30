@@ -10725,6 +10725,7 @@ block.json
 The ACF key supports the following properties:
 
 - **renderTemplate**
+
 (String) The path to a template file used to render the block HTML. This can either be a relative path from the 
 ```
 block.json
@@ -10739,6 +10740,7 @@ block.json
 }
 ```
 - **renderCallback**
+
 (Callable) (Optional) Instead of providing a render template, a callback function name may be specified to output the block’s HTML.
 
 ```
@@ -10748,6 +10750,7 @@ block.json
 }
 ```
 - **mode**
+
 (String) (Optional) The display mode for your block. Available settings are “auto”, “preview” and “edit”. Defaults to “preview”.
 
 - **auto**: Preview is shown by default, but changes to edit form when block is selected.
@@ -10761,7 +10764,30 @@ Note: When in “preview” or “edit” modes, an icon will appear in the bloc
 "mode": "auto"
 }
 ```
+
+Note (v3 blocks):** Setting 
+```
+"mode": "edit"
+```
+
+ combined with 
+```
+"supports": { "mode": false }
+```
+
+ is the legacy v2 way to disable the editor preview. When ACF detects both settings on a v3 block, it automatically treats them as 
+```
+renderPreview: false
+```
+
+. The recommended approach for new v3 blocks is to use 
+```
+acf.renderPreview: false
+```
+
+ directly.
 - **blockVersion**
+
 (Integer) The version of ACF Blocks to use. Version 1 of ACF Blocks is deprecated and not recommended for use with 
 ```
 block.json
@@ -10774,6 +10800,7 @@ block.json
 
 .
 - **postTypes**
+
 (Array) (Optional) An array of post types to which this block type is restricted.
 
 ```
@@ -10833,58 +10860,23 @@ false
 "autoInlineEditing": true
 }
 ```
-- **expandedEditorButtonText**
-(String) (Since 6.8) Customize the text displayed on the “Open in Expanded Editor” button for this block (v3 blocks only). Default is “Open in Expanded Editor”.
 
-```
-"acf": {
-"expandedEditorButtonText": "Edit Fields"
-}
-```
-- **expandedEditorButtons**
-(Object) (Since 6.8) Control the visibility of the Expanded Editor buttons for this block (v3 blocks only). You can hide the sidebar button, the toolbar pencil icon, or both.
-
-```
-"acf": {
-"expandedEditorButtons": {
-  "sidebar": false,
-  "toolbar": false
-}
-}
-```
-
-- **sidebar**: (Boolean) Show the “Open in Expanded Editor” button in the sidebar. Default is 
-```
-true
-```
-
-.
-- **toolbar**: (Boolean) Show the pencil icon in the block toolbar. Default is 
-```
-true
-```
-
-.
-- **autoJsonLd**
-(Boolean) (Since 6.8) Enable automatic JSON-LD structured data output for this block. When enabled, ACF will generate Schema.org structured data from the block’s field values (v3 blocks only). Requires the Schema feature to be enabled. Default is 
+**renderPreview**
+(Boolean) (Since 6.x) Whether to render a live preview of the block in the editor. When set to 
 ```
 false
 ```
 
-.
+, a placeholder showing the block icon, title, and an **Edit Block** button is shown instead. The block’s render template continues to run normally on the front-end. Default is 
+```
+true
+```
+
+ (v3 blocks only).
 
 ```
 "acf": {
-"autoJsonLd": true
-}
-```
-- **schemaType**
-(String) (Since 6.8) The Schema.org type for this block’s JSON-LD output (e.g., “Recipe”, “Product”, “Event”). If not specified, ACF will attempt to infer the type from field mappings.
-
-```
-"acf": {
-"autoJsonLd": true,
-"schemaType": "Recipe"
+"renderPreview": false
 }
 ```
 
@@ -10902,9 +10894,7 @@ false
     "acf": {
         "mode": "preview",
         "renderTemplate": "testimonial.php",
-        "validate": false,
-        "autoInlineEditing": true,
-        "expandedEditorButtonText": "Edit Testimonial"
+        "validate": "false"
     },
     "supports": {
         "anchor": true
