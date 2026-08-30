@@ -1737,6 +1737,7 @@ Please contact your web host or CDN service provider for more assistance if you 
 ## Articles
 
 	- [I purchased a ticket and would like a refund. Can FooEvents help?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/i-purchased-a-ticket-and-would-like-a-refund-can-fooevents-help/)
+- [Information for Event Ticket Holders](https://help.fooevents.com/docs/frequently-asked-questions/tickets/information-for-event-ticket-holders/)
 - [Why are my PDF tickets blank?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/blank-pdf-ticket/)
 - [How do I create different ticket types?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-create-different-ticket-types/)
 - [Why are my tickets not appearing or downloadable from My Account?](https://help.fooevents.com/docs/frequently-asked-questions/tickets/why-are-my-tickets-not-appearing-or-downloadable-from-my-account/)
@@ -2140,11 +2141,64 @@ For detailed information on how to do this, please refer to the [Import Tickets]
 
 **Source:** [https://help.fooevents.com/docs/frequently-asked-questions/tickets/i-purchased-a-ticket-and-would-like-a-refund-can-fooevents-help/](https://help.fooevents.com/docs/frequently-asked-questions/tickets/i-purchased-a-ticket-and-would-like-a-refund-can-fooevents-help/)
 
-FooEvents is a software provider and is not directly involved in the sale or fulfillment of tickets by event organizers. We do not have access to event organizers’ websites, customer orders, payment information, or ticket records, and are therefore unable to process refunds or make changes to bookings.
+FooEvents is a software provider and is not directly involved in the sale or fulfillment of tickets by event organizers. We do not have access to event organizers’ websites, customer orders, payment information, or ticket records and are therefore unable to process refunds or make changes to bookings.
 
-If a ticket you purchased mentions that it is **“Powered by FooEvents,”** this simply means the event organizer uses FooEvents software to sell and manage tickets on their own website. Unlike a hosted SaaS ticketing platform, FooEvents runs independently on the organizers own website and servers, and we do not have access to their sales or ticketing systems.
+If a ticket you purchased mentions that it is **“Powered by FooEvents,”** this simply means the event organizer uses FooEvents software to sell and manage tickets on their own website. Unlike a hosted SaaS ticketing platform, FooEvents runs independently on the organizer’s own website and servers, and we do not have access to their sales or ticketing systems.
 
 For refund requests, cancellations, or assistance with a ticket purchase, please contact the event organizer directly. Their contact details can usually be found on the event website or in your order confirmation email.
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/frequently-asked-questions/tickets/information-for-event-ticket-holders/](https://help.fooevents.com/docs/frequently-asked-questions/tickets/information-for-event-ticket-holders/)
+
+**IMPORTANT: FooEvents is ticketing software used by event organizers. FooEvents is not an event organizer and is NOT involved in organizing, promoting, or operating events.**
+
+Event organizers independently install FooEvents on their own websites to sell tickets, manage attendees, and handle event check-ins. If you are an event organizer interested in selling tickets directly from your own website, you can learn more about FooEvents [here](https://www.fooevents.com/).
+
+If you purchased a ticket for an event and need assistance with a refund, booking, ticket, or event-related issue, please review the FAQs below for guidance on who to contact.
+
+## Need help with a ticket refund?
+
+FooEvents is a ticketing software company and is not involved in organizing, promoting, or operating events. FooEvents software is installed independently on an event organizer’s website. As such, we do not have access to the organizer’s website, orders, payments, bookings, or ticket records, so unfortunately we’re unable to assist with refunds, booking changes, or other event-related matters.
+
+Please contact the event organizer directly using the details on their website or in your order confirmation email.
+
+## Can FooEvents issue a refund for my event ticket?
+
+No. FooEvents did not sell your ticket or receive your payment. We do not have access to the event organizer’s systems and are not involved in operating the event, so we cannot issue refunds or cancel orders. Please contact the event organizer directly to request a refund.
+
+## Can FooEvents cancel, change, or resend my ticket?
+
+No. We do not have access to the event organizer’s website, orders, bookings, or ticket records. Only the event organizer can change a booking, cancel an order, or resend a ticket.
+
+## How can I contact the event organizer?
+
+Contact details can usually be found on:
+
+- The website where you purchased your ticket
+- Your order confirmation email
+
+If you received your ticket by email, you can also try replying to that email.
+
+## Is FooEvents involved in running the event?
+
+No. Event organizers use FooEvents independently on their own websites. We do not have access to their systems.
+
+FooEvents develops and sells the software they use, but we are not involved in organizing, promoting, selling tickets for, or operating their events.
+
+## I have a complaint about an event. Can FooEvents help?
+
+FooEvents is not involved in operating events and cannot resolve complaints on behalf of an event organizer. Please contact the event organizer directly regarding your experience.
+
+## What should I do if I believe an event may be fraudulent?
+
+First, try to contact the event organizer directly.
+
+If you are unable to resolve the matter, you can contact the payment provider or card issuer you used to make the purchase. You may also wish to report the matter to the appropriate consumer protection or law enforcement authority in your country.
+
+FooEvents cannot investigate transactions, access booking information, or process refunds because the organizer operates their ticketing system independently on their own website.
 
 ---
 

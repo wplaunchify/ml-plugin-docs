@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T17:24:54.438Z",
+  "last_updated": "2026-08-30T17:34:13.777Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1041,8 +1041,8 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-08-23T17:46:30.024Z",
-      "page_count": 321,
+      "last_scraped": "2026-08-30T17:34:13.777Z",
+      "page_count": 326,
       "categories": [
         "frequently-asked-questions",
         "topics"
