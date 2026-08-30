@@ -54,8 +54,6 @@ This section contains a powerful tool for managing your plugin's data.
 - All optimized images that are stored on your server.
 - **Use Case:** You should only use this button if you are experiencing a major, unfixable problem and have been instructed by support to "start fresh," or if you are permanently uninstalling the plugin and want to make sure all its data is removed from your database.
 
-![Advance Settings in General Settings](https://docs.wpsocialninja.com/assets/advance-settings-1.CXZG-ATN.webp)
-
 ---
 
 ## Configure Cloudflare Turnstile ​
@@ -75,8 +73,6 @@ Before configuring the plugin, you must obtain your unique API keys from your Cl
 1. Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/login) and navigate to the **Turnstile** section under **Application Security**.
 2. Click **+ Add Widget**.
 
-![Add Widget](https://docs.wpsocialninja.com/assets/add-widget-1.CNm8w4HH.webp)
-
 1. Enter a **Widget Name** to identify it in the future.
 2. Click **+ Add Hostnames** and enter your website’s domain (e.g., 
 ```
@@ -85,18 +81,12 @@ crm-test-march08.wp1.site
 
 ).
 
-![Hostnames](https://docs.wpsocialninja.com/assets/add-hostanme-2.UzIFFkSC.webp)
-
 1. Click **Add** and then **Add** again to confirm.
-
-![Add](https://docs.wpsocialninja.com/assets/add-3.CzIA2nk2.webp)
 
 1. Select your preferred **Widget Mode**: - **Managed (Recommended):** Cloudflare decides the best verification method based on traffic risk.
 - **Non-interactive:** Shows a loading spinner; no user interaction is required.
 - **Invisible:** Verification happens silently without any visual indication on the screen.
 2. Click **Create** to generate your **Site Key** and **Secret Key** and **Copy** these key.
-
-![Create](https://docs.wpsocialninja.com/assets/create-4.BbHEZL9T.webp)
 
 ## Step 2: Configure Turnstile in WP Social Ninja ​
 
@@ -109,8 +99,6 @@ Once you have your keys, you need to validate them within the plugin's global se
 5. Complete the **Validation Preview** challenge to verify the keys are working.
 6. Once the status shows **"Turnstile settings validated and saved successfully,"** click **Validate & Save**.
 
-![Configure Turnstile in WP Social Ninja](https://docs.wpsocialninja.com/assets/native-form-capcha-settings-5.AVN9v-6i.webp)
-
 ## Step 3: Enable Turnstile on Your Review Form ​
 
 After the global configuration is complete, you must enable the protection on your individual forms.
@@ -120,8 +108,6 @@ After the global configuration is complete, you must enable the protection on yo
 3. Select **Turnstile** from the **CAPTCHA** dropdown menu.
 4. You will see a note confirming that **"Turnstile keys are managed from Global Review Settings"**.
 5. Click the **Save** button at the top right of the form builder to apply the changes.
-
-![Review Form](https://docs.wpsocialninja.com/assets/turnstile-6.CQSEQuUv.webp)
 
 NOTE
 
@@ -151,19 +137,17 @@ Follow these simple steps to add a new manager and set their permissions.
 
 First, go to your WordPress dashboard. In the left-hand menu, click on **WP Social Ninja**, and then select the **Settings** sub-menu.
 
-On the Settings page, click on the **Manager** tab at the top. This will take you to the main "Managers List" page.
+In the Settings sidebar, expand **General Settings** and click **Managers**. This will take you to the main "Managers" page.
 
 ### Step 2: Click "New Manager" ​
 
-To add a new person, click the blue **+ New Manager** button located in the top-right corner of the page.
-
-![Managers Settings](https://docs.wpsocialninja.com/assets/managers-1.DhH0F3eC.webp)
+To add a new person, click the **+ New Manager** button located in the top-right corner of the page.
 
 ### Step 3: Enter the Manager's Email ​
 
-A pop-up window titled "New Manager" will appear.
+A pop-up window titled **"Add New Manager"** will appear.
 
-In the first field, enter the email address of the person you want to add.
+In the **User Email** field, enter the email address of the person you want to add.
 
 > Important Note: The email address you enter must be registered as a user on your WordPress website (e.g., as an "Editor," "Author," or "Subscriber"). You cannot add an email for someone who does not have an existing user account on your site.
 
@@ -175,8 +159,32 @@ Click the checkbox next to each permission you want to grant.
 
 You can choose any combination. For example, you can give a user permission to "Manage Templates" but not "Manage Platforms" or "Manage Settings."
 
-![Managers Settings](https://docs.wpsocialninja.com/assets/managers-2.DGCRUtca.webp)
+#### What Each Permission Grants ​
 
+- **Full Access:** Everything below. Use sparingly.
+- **Manage Platforms:** Connect, disconnect and sync your social and review accounts.
+- **Manage Reviews:** View, edit, approve and delete reviews.
+- **Manage Testimonials:** View, edit and delete testimonials.
+- **Manage Templates:** Create and edit feed and review templates.
+- **Manage Notification Popup:** Create and edit notification popups.
+- **Manage Chat Widgets:** Create and edit social chat widgets.
+- **Manage QR Codes:** Create QR codes and open the QR code section of Advanced Settings.
+- **Manage Feeds Platforms Settings:** Change the global settings for your social feeds.
+- **Manage Reviews Platforms Settings:** Change the global settings for your review platforms.
+- **Manage Shoppable Settings:** Change your shoppable feed settings.
+- **Manage Translation Settings:** Edit the plugin's front-end wording.
+- **Manage License Settings:** View and change your licence key.
+- **Manage Advanced Settings:** Change advanced options, including the option to delete all plugin data.
+
+Each permission gives access only to its assigned screen
+
+Each permission allows access only to the screen it is assigned to. For example, **Manage Translation Settings** gives access to the Translation screen only. It does not provide access to the License Key, Advanced Settings, or other platform settings.
+
+The **Settings** sidebar also shows only the screens available to the user based on their permissions.WARNING
+
+**Manage Advanced Settings** includes the option that deletes all plugin data. Grant it only to people you would trust with that.TIP
+
+Reviews and Testimonials have separate permissions. If a user needs access to both, or needs to manage the shared [Categories](/guide/business-reviews/organize-reviews-with-categories), make sure you grant both permissions.
 ### Step 5: Confirm and Add the Manager ​
 
 After you have selected the permissions, click the **Confirm** button.
@@ -187,13 +195,13 @@ The pop-up will close, and you will see your new manager has been added to the *
 
 Once a manager is added, you can easily change their permissions or remove them at any time.
 
-1. Go to the **WP Social Ninja → Settings → Manager** tab.
-2. Find the manager you want to edit or delete in the **Managers List**.
-3. On the right side of their name, click the **three-dot menu (...)** button.
-4. A small dropdown menu will appear with two options: **Edit** and **Delete**. - If you click **"Edit"**: The pop-up will re-open, allowing you to add or remove permissions by checking/unchecking the boxes. Click **Confirm** to save your changes.
-- If you click **"Delete"**: The manager will be instantly removed from the list, and they will no longer have any special access to the WP Social Ninja plugin.
+Each manager's row shows their granted permissions as small tags, with a **+N** tag if there are more than fit on the row.
 
-![Managers Settings](https://docs.wpsocialninja.com/assets/managers-3.BnLMnLEG.webp)
+1. Go to **WP Social Ninja → Settings**, expand **General Settings**, and click **Managers**.
+2. Find the manager you want to edit or delete in the **Managers** list.
+3. On the right side of their row, click the **three-dot menu (...)** button.
+4. A small dropdown menu will appear with two options: **Edit Manager** and **Delete Manager**. - If you click **"Edit Manager"**: The pop-up will re-open, allowing you to add or remove permissions by checking/unchecking the boxes. Click **Confirm** to save your changes.
+- If you click **"Delete Manager"**: The manager will be instantly removed from the list, and they will no longer have any special access to the WP Social Ninja plugin.
 
 ---
 
@@ -213,22 +221,16 @@ Let’s look at how we can use shortcodes to display reviews on the website.
 
 - To use your Shortcode, first, go to [Templates](../getting-started/templates-overview).
 
-![List of shortcode](https://docs.wpsocialninja.com/assets/WP-Social-Ninja-Templates-2-1-1.snqNBF5Y.png)
-
 *List of Shortcode*
 
 - Here, you can see all the **Shortcodes**.
 - You can **Click** to copy the shortcode or **Edit** your previous Templates. The best part is you don't have to create a new **Shortcode** again.
-
-![Edit button](https://docs.wpsocialninja.com/assets/WP-Social-Ninja-Templates-3-1.B04kXKkV.png)
 
 *Edit button*
 
 ## Where to put Shortcodes ​
 
 - You can keep your **Shortcode** anywhere, like any page, page builder, post, or maybe on the sidebar.
-
-![how to use a shortcode | where to put shortcodes](https://docs.wpsocialninja.com/assets/Shortcodes.Wx5f5fTw.png)
 
 *Place Shortcode*
 
@@ -275,8 +277,6 @@ On the right side of each string is an empty text field. Simply type your new, t
 - Next to the **See More** string, you could type "Mehr sehen" (for German).
 
 You only need to fill in the fields you want to change. You can leave any others blank, and they will keep their default English text.
-
-![Translation settings with WP Social Ninja](https://docs.wpsocialninja.com/assets/translation-1.BgtHIC6w.webp)
 
 ### Step 4: Save Your Settings ​
 

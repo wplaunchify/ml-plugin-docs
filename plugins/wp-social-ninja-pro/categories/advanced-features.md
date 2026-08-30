@@ -16,6 +16,9 @@ Unlike the [Business reviews](../business-reviews/) (like [Google](../business-r
 
 This guide will walk you through the entire process, from adding your first testimonial to designing a beautiful template to display it.
 
+NOTE
+
+You do not have to type every testimonial in by hand. A [native review form](/guide/business-reviews/native-review-forms) can be set to collect testimonials directly from your customers, including their job title, company and company logo.
 ## Part 1: How to Add a New Testimonial ​
 
 Before you can create a template, you need to add some testimonials to the plugin.
@@ -27,8 +30,6 @@ From your WordPress dashboard, go to **WP Social Ninja → All Testimonials**. T
 ### Step 2: Add Your First Testimonial ​
 
 Click the **+ Add New Testimonial** button in the top-right corner to get started.
-
-![Testimonials](https://docs.wpsocialninja.com/assets/testimonials-1.DNao6rin.webp)
 
 ### Step 3: Fill in the Testimonial Details ​
 
@@ -45,11 +46,32 @@ Here is a breakdown of each field:
 - **Rating:** Click the stars to set a rating from 1 to 5. This is crucial for filtering your templates later.
 - **Testimonial Title:** Add a short, powerful "headline" for the review (e.g., "The Best Plugin I've Ever Used!").
 - **Testimonial Text:** This is the most important part. Paste the full text of the review here.
+- **Video:** Add a video testimonial — see [Adding a Video Testimonial](#adding-a-video-testimonial) below.
+- **Video Thumbnail:** The image shown before an uploaded video plays.
 - **Date:** Select the date you received the testimonial.
-- **Category:** This is a very useful organizing tool. You can create categories (like "Service Reviews," "Product Feedback," etc.) to group your testimonials. This allows you to create templates that only show testimonials from a specific category.
+- **Category:** This is a very useful organizing tool. You can create categories (like "Service Reviews," "Product Feedback," etc.) to group your testimonials. This allows you to create templates that only show testimonials from a specific category. See [Organize Reviews with Categories](/guide/business-reviews/organize-reviews-with-categories) for bulk tagging.
 
-![Testimonials](https://docs.wpsocialninja.com/assets/testimonials-2.BxrGYaHH.webp)
+### Adding a Video Testimonial ​
 
+A written testimonial is good social proof. A customer saying the same thing on camera is better, and you can attach a video to any testimonial.
+
+In the **Video** field you can either:
+
+- **Paste a link** to a YouTube or Vimeo video, or a direct link to a video file.
+- **Upload a video** from your WordPress media library using the **Upload** button. It accepts **MP4**, **WebM**, or **MOV** files.
+
+**About the Video Thumbnail.** If you uploaded a video file, also set a **Video Thumbnail** — this is the image visitors see before they press play. Without one, an uploaded video appears as a black box on your page.
+
+You will only see the Video Thumbnail field when it is needed. YouTube and Vimeo links already carry their own thumbnail, so the field is hidden for those.
+
+NOTE
+
+Paste the full address including 
+```
+https://
+```
+
+. A link without it is rejected when you save.
 ### Step 4: Save and Manage Your Testimonials ​
 
 Click the **Save Testimonial** button. Your testimonial is now saved!
@@ -62,8 +84,6 @@ Now that you have some testimonials, it's time to create a template to display t
 
 Go to **WP Social Ninja → Templates** and click **"Add New Template"**. Select **Testimonials** as your platform. This will take you to the template editor. The **General** tab controls *what* your template shows and *how* it functions.
 
-![Testimonials](https://docs.wpsocialninja.com/assets/testimonials-3.5gm4stuK.webp)
-
 ### 1. Template ​
 
 This section controls the visual structure and arrangement of your testimonials.
@@ -73,8 +93,6 @@ This section controls the visual structure and arrangement of your testimonials.
 - **Masonry:** A "Pinterest-style" grid where boxes have different heights to fit together.
 - **Select a Template:** These are pre-designed visual "skins" (e.g., Testimonial 1, Testimonial 2) that change the look of your testimonial boxes.
 - **Number of Columns:** Set the number of columns to show on **Desktop**, **Tablet**, and **Mobile**.
-
-![Testimonials](https://docs.wpsocialninja.com/assets/testimonials-template-4.DIwWn6Ag.webp)
 
 ### 2. Filters ​
 
@@ -89,8 +107,6 @@ This section is how you refine your feed to only show the specific testimonials 
 - **Hide reviews containing these words:** A moderation tool to hide testimonials that mention certain words (e.g., "bug," "problem").
 - **Filter by Business/Product:** (If applicable) Show testimonials associated with a specific WooCommerce product.
 - **Filter by Category:** This is very powerful. It lets you create a template that only shows testimonials from a specific category you created in Part 1 (e.g., "Service Reviews").
-
-![Testimonials](https://docs.wpsocialninja.com/assets/testimonials-template-5.CcA5Ioyb.webp)
 
 ### 3. Settings (Content Display) ​
 
@@ -111,10 +127,23 @@ This section controls which pieces of information you want to display on each te
 - **Content Type:** Choose to show the **Full Content** or a short **Excerpt**.
 - **Trim Excerpt Words:** If you chose "Excerpt," set the maximum number of words (e.g., 25) to show. This is key for creating a clean, uniform look.
 - **Enable External Links:** A toggle to make any links in the text clickable.
+- **Display Video:** Show or hide video testimonials in this template. This is **on** by default. A testimonial without a video is unaffected either way.
 - **Equal Height:** Essential for the **Grid** layout. Turn this **On** to force all boxes to the same height. Turn it **Off** for the **Masonry** layout.
 
-![Testimonials](https://docs.wpsocialninja.com/assets/testimonials-template-6.C0S3RksV.webp)
+#### Choosing How Videos Play ​
 
+By default, WP Social Ninja uses the most sensible player for each video: an uploaded file plays in your visitor's browser player, and a YouTube or Vimeo link plays in that provider's embedded player.
+
+If you also use **Fluent Player**, two extra options appear:
+
+- **Play with Fluent Player:** Turn this on to play your testimonial videos in Fluent Player instead of the default player.
+- **Player Design:** Pick one of your existing Fluent Player videos, and these testimonials reuse its design and its layers — such as a title banner, a call to action, or an email capture form.
+
+INFO
+
+The template editor preview never shows Fluent Player. Check the real page on your site to see the finished result.WARNING
+
+If you have turned on GDPR mode, YouTube and Vimeo videos are not embedded, since that setting exists to keep third-party embeds off your pages. Videos you uploaded yourself still play normally, because your own site serves them.
 ### 4. Pagination ​
 
 This controls how visitors load more testimonials.
@@ -123,13 +152,9 @@ This controls how visitors load more testimonials.
 - **Load More Button Text:** Customize the text (e.g., "Show More Stories").
 - **Reviews Per Page:** Set how many new testimonials load each time the "Load More" button is clicked.
 
-![Testimonials](https://docs.wpsocialninja.com/assets/testimonials-template-7.MWI_meH3.webp)
-
 ## Part 3: Customizing Your Testimonial Template (Style Settings) ​
 
 Now that you've set up the content, click on the **Style** tab to control the visual design. This is where you match your template to your brand's colors and fonts.
-
-![Testimonials](https://docs.wpsocialninja.com/assets/testimonials-style-8.BHHa3lHg.webp)
 
 ---
 
@@ -149,8 +174,6 @@ First, go to **Integrations** from the **Fluent Forms** Navbar. Search for **WP 
 
 This action connects Fluent Forms with WP Social Ninja, allowing them to share data.
 
-![enable testinmonial template](https://docs.wpsocialninja.com/assets/enable-wp-social-ninja-in-fluentforms.D7IgjKuB.webp)
-
 ### Create Your Testimonial Collection Form ​
 
 Next, you need to configure the specific form you want to use for collecting reviews.
@@ -167,13 +190,9 @@ Recommended fields include:
 - **Testimonial Text** (Text Area Field)
 - **Ratings** (Ratings Field)
 
-![form 2](https://docs.wpsocialninja.com/assets/Form-2.B9qkFy9c.webp)
-
 ### Configure the WP Social Ninja Integration Feed ​
 
 Once your form is ready, go to the **Settings & Integrations** section, navigate to the **Configuration Integrations** tab. Click the **Add New Integration** button, and select the **WP Social Ninja Integration** feed from the dropdown list.
-
-![add new integration 03](https://docs.wpsocialninja.com/assets/add-new-integration.BcfgFXj5.webp)
 
 After you select the WP Social Ninja integration, a configuration panel will appear. Then, you will find the configuration panel where you must map your form fields to the corresponding testimonial fields in WP Social Ninja.
 
@@ -189,23 +208,15 @@ Here is a breakdown of the fields you need to configure:
 
 After mapping the fields, click the **Save Feed** button. Your integration is now active and will appear in the list, where you can edit or delete it later.
 
-![add new wp social ninja integration feed fluent forms 04](https://docs.wpsocialninja.com/assets/configure-wp-social-ninja-integration-feed.DUtMtKYa.webp)
-
 The form has been integrated successfully. You can modify or remove the feed by selecting the **Settings** or **Delete** icon. After that, you can **copy** the Form's **shortcode** and paste it into any **page/post**.
-
-![form integration successful ](https://docs.wpsocialninja.com/assets/settings.CwyCENZJ.webp)
 
 ### Add a Custom Testimonial ​
 
 First, go to your WP Social Ninja dashboard. From the top menu bar, click on the **Testimonials** tab. This will take you to the "All Testimonials" page. To add a new entry, click the **Add Testimonial** button located in the top-right corner. Learn more about [adding testimonials](./add-testimonials).
 
-![add custom testimonial ](https://docs.wpsocialninja.com/assets/add-testimonial.BGpXZME3.webp)
-
 ### Enter the Testimonial Details ​
 
 After clicking the button, a pop-up form will appear. Here, you can fill in all the details for the testimonial. Once you have entered all the information, click the **Save Testimonial** button at the bottom of the form to add it to your collection. After saving, your new testimonial will appear in the "**All Testimonials**" list.
-
-![add testimonial ](https://docs.wpsocialninja.com/assets/enter-testimonial-details.DMAvfeVt.webp)
 
 ### Display Your Testimonials on Your Website ​
 
@@ -215,11 +226,7 @@ Finally, to display the testimonials collected through your form, you need to cr
 - Click the **Add New Template** button and select **Add Testimonial Template**.
 - Customize the layout and style of your template in the editor. The testimonials submitted through Fluent Forms will automatically be pulled into this template.
 
-![add new testimonial 08](https://docs.wpsocialninja.com/assets/add-testimonial-template-2.BKQ3sjhm.webp)
-
 After clicking on the **Add Testimonial Template**, let’s look at how it looks on the frontend.
-
-![Displaying Collection of Testimonial](https://docs.wpsocialninja.com/assets/WP-Social-Ninja-Edit-Review-Template-3-1.CWFVfz0R.png)
 
 Collecting Testimonials in Fluent Forms is as simple as a slice of pie!
 
@@ -243,25 +250,17 @@ To get started, you first need to create a pop-up template.
 
 From your WordPress dashboard, navigate to **WP Social Ninja → Notification Popups**. Click the "**Add New Popup**" button in the top-right corner to open the editor.
 
-![Notification Popup Section](https://docs.wpsocialninja.com/assets/add-new-popup-1.uGHZTmWA.webp)
-
 ## Configuring Your Popup (General Tab) ​
 
 The **General** tab is where you select which reviews to display and set the **basic style**.
 
 **Select Platforms:** First, you need to select your source. Click on the **Platforms** section and check the box for where you want to pull reviews from, like [Testimonial](../advanced-features/add-testimonials), [Fluent Forms](../business-reviews/fluent-forms-review), [Google My Business](../business-reviews/google-configuration), [Booking.com](../business-reviews/booking-com-configuration), **Amazon**, [Tripadvisor](../business-reviews/tripadvisor-configuration), or [WooCommerce](../business-reviews/woocommerce-reviews) etc.
 
-![Select the Platforms](https://docs.wpsocialninja.com/assets/select-platforms-2.CVjaBDjz.webp)
-
 **Select a Template:** Next, click on the **Template** section. This allows you to choose the visual style for your pop-up. Select a design you like, such as **Vega, Spica, or Sirius**. You can click the **see all** button to find all the available template.
-
-![Template Select Option](https://docs.wpsocialninja.com/assets/select-template-3.CjaR15fK.webp)
 
 ## Customize Your Notification Settings ​
 
 This is the most important section for controlling how, where, and when your pop-ups appear. Click on the **Notification** tab to see all the options.
-
-![Custom Notification Title](https://docs.wpsocialninja.com/assets/notification-4.CNEtLMhi.webp)
 
 Here’s what each setting does:
 

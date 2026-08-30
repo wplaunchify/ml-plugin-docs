@@ -43,15 +43,11 @@ In the Beaver Builder panel on the right side, click the plus icon (**+**) and s
 
 Drag the "**Facebook Feeds**" module from the panel and drop it into a row on your Beaver Builder layout.
 
-![Finding the Social Ninja modules in the Beaver Builder panel](https://docs.wpsocialninja.com/assets/add-template.BaJmQqPL.webp)
-
 #### Step 4: Select Your Template ​
 
 A settings pop-up will appear. On the **General** tab, you will see a "**Select a template**" dropdown.
 
 Click the dropdown and choose the Facebook feed template you have already created. Your pre-styled feed will instantly load in the layout.
-
-![Selecting a template from the module's settings pop-up in Beaver Builder](https://docs.wpsocialninja.com/assets/select-a-template.CURHDC2v.webp)
 
 ## Customizing Your Widget in Beaver Builder ​
 
@@ -60,8 +56,6 @@ After you've selected your template, Beaver Builder gives you powerful options t
 ### The Style Tab ​
 
 The **Style** tab is created by WP Social Ninja and allows you to change the specific colors and typography of the feed content itself. This is perfect if you want the feed on this one page to look different from your main template.
-
-![The 'Style' tab options in the Beaver Builder module](https://docs.wpsocialninja.com/assets/style.BUSDPp_e.webp)
 
 The settings here are organized to match the parts of your feed:
 
@@ -75,8 +69,6 @@ The settings here are organized to match the parts of your feed:
 The **Advanced** tab is a standard Beaver Builder feature that is available for all modules. These settings control the module container—the "box" that your entire social feed sits inside.
 
 This tab is not for styling the feed content (like post colors), but rather for positioning the module on your page.
-
-![The 'Advanced' tab options in Beaver Builder](https://docs.wpsocialninja.com/assets/advanced.BiNVgUga.webp)
 
 Common settings you'll use here include:
 
@@ -127,8 +119,6 @@ In the Elementor widget panel on the left side, use the search bar to type "**So
 
 Drag the "**Social Ninja Instagram**" widget from the panel and drop it into any section on your Elementor page.
 
-![Finding the Social Ninja widgets in the Elementor panel](https://docs.wpsocialninja.com/assets/embeded-instagram-template.B1QWB1vm.webp)
-
 #### Step 4: Select Your Template ​
 
 As soon as you drop the widget, the left panel will update to show the widget's settings.
@@ -136,8 +126,6 @@ As soon as you drop the widget, the left panel will update to show the widget's 
 Click the "**Select a Template**" dropdown menu. This will show you a list of all the Instagram feed templates you have already created. Choose the one you want to display.
 
 Your pre-styled Instagram feed will instantly load in the Elementor preview, exactly as you designed it!
-
-![Selecting a template from the widget's dropdown menu in Elementor](https://docs.wpsocialninja.com/assets/select-a-template.DbTCl7S0.webp)
 
 ## Customizing Your Widget in Elementor ​
 
@@ -157,8 +145,6 @@ The settings here are organized to match the parts of your feed:
 - **Pagination:** Gives you control over the "Load More" button's appearance (if you have it enabled).
 - **Item Box:** Controls the styling for the container of each post or photo in your feed.
 
-![The 'Style' tab options in the Elementor widget](https://docs.wpsocialninja.com/assets/customize-template.BetLOuQ8.webp)
-
 ### The Advanced Tab ​
 
 The **Advanced** tab is a standard Elementor feature that is available for all widgets. These settings control the widget container—the "box" that your entire social feed sits inside.
@@ -171,8 +157,6 @@ Common settings you'll use here include:
 - **Motion Effects:** Use this to add animations, like making your feed **Fade In** as the user scrolls down the page.
 - **Border:** Lets you add a solid or dashed border around the entire widget box.
 - **Responsive:** A very powerful feature. This lets you hide the entire widget on certain devices. For example, you can choose to show your feed on desktops but hide it on mobile.
-
-![The 'Advanced' tab options like Layout, Motion Effects, etc.](https://docs.wpsocialninja.com/assets/advanced.Tw_xROMT.webp)
 
 When you are finished, just click the "**Publish**" (or "**Update**") button at the top corner of the Elementor panel. That's it! Your live page will now display your social feed.
 
@@ -207,8 +191,6 @@ The flow is simple and completely automatic once set up:
 **Then,** from your WordPress dashboard, go to **WP Social Ninja → Settings**. In the left sidebar, click **Reviews Platforms**, then select **Global Review Settings**.
 
 **Next,** find the **FluentCRM Review Tagging** card and turn on the **Enable Review Tagging** toggle.
-
-![The FluentCRM Review Tagging card with the Enable Review Tagging toggle and Tag Name dropdown](https://docs.wpsocialninja.com/assets/fluentcrm-review-tagging.4Tf4Mj8R.webp)
 
 **Then,** choose a **Tag Name** from the dropdown. The list pulls in your existing FluentCRM tags, so there's no risk of a typo. It defaults to 
 ```
@@ -320,8 +302,6 @@ First, go to the WordPress page where you want to add your feed and click the "*
 
 In the Oxygen panel on the left side, click the **+ Add** button to open the components list. Scroll down and click on the **WP Social Ninja** section to expand it. You will see the list of all available widgets.
 
-![Selecting a template from the widget's dropdown menu in Oxygen](https://docs.wpsocialninja.com/assets/add-template.CTGrj9XQ.webp)
-
 #### Step 3: Add the Widget to Your Page ​
 
 Click the "**Twitter Feeds**" widget from the panel, and it will show on your Oxygen page.
@@ -342,8 +322,6 @@ After you've selected your template, Oxygen gives you powerful options to make f
 
 The **Primary** tab (after selecting a template) is created by WP Social Ninja and allows you to change the specific colors and typography of the feed content itself. This is perfect if you want the feed on this one page to look different from your main template.
 
-![The 'Primary' tab options in the Oxygen widget](https://docs.wpsocialninja.com/assets/primary-tab.C978GCki.webp)
-
 The settings here are organized to match the parts of your feed:
 
 - **Header:** Controls the appearance of your feed's header.
@@ -356,8 +334,6 @@ The settings here are organized to match the parts of your feed:
 The **Advanced** tab is a standard Oxygen feature that is available for all components. These settings control the widget container the "box" that your entire social feed sits inside.
 
 This tab is not for styling the feed content (like post colors), but rather for positioning the widget on your page.
-
-![The 'Advanced' tab options in Oxygen](https://docs.wpsocialninja.com/assets/advanced.CEz-gtpm.webp)
 
 Common settings you'll use here include:
 
@@ -392,8 +368,6 @@ Now, look for the template you want to display on your site. In the "**ShortCode
 
 ). After that, click the **shortcode** in the list to **copy** it directly to your clipboard. It's that easy!
 
-![Finding and copying a shortcode from the Templates page](https://docs.wpsocialninja.com/assets/copy-shortcode.lHJmaO6Y.webp)
-
 ## How to Add the Shortcode to a Page or Post ​
 
 Once you've copied your shortcode, you can place it anywhere on your site. The most common way is to add it directly to a page or post.
@@ -401,8 +375,6 @@ Once you've copied your shortcode, you can place it anywhere on your site. The m
 Go to any **Page** or **Post** you want to edit, or create a new one. In the WordPress block editor, click the plus icon (**+**) to add a new block.
 
 Next, type "**Shortcode**" and select the **Shortcode** block. **Paste** the shortcode you copied from the Templates page into the block. Once all done, click to the **Publish** or **Update** button.
-
-![Pasting a shortcode into the WordPress block editor](https://docs.wpsocialninja.com/assets/copy-shortcode.lHJmaO6Y.webp)
 
 That's it! When you view the live page, WordPress will replace that one line of code with your fully-styled WP Social Ninja template.
 

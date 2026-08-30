@@ -12,8 +12,6 @@
 
 The **Platforms** page is the central hub for connecting all your social media and business accounts to WP Social Ninja. You must connect a platform here before you can create a template to display its content.
 
-![The Platforms overview screen in WP Social Ninja](https://docs.wpsocialninja.com/assets/WP-Social-Ninja-Platforms.NC2BUbTs.webp)
-
 ## How to Connect a Platform ​
 
 To connect an account, select the platform you want from the list and click **Connect**. A pop-up will appear asking you to log in and authorize the connection. Once approved, your account will be successfully linked.
@@ -123,13 +121,9 @@ As shown in the image, this page is organized into tabs:
 - **Notification Popup:** Your templates for [review notification popups](../advanced-features/notification-popup).
 - **Testimonials:** All your templates for [manually added testimonials](../advanced-features/add-testimonials).
 
-![The main Templates management screen in WP Social Ninja](https://docs.wpsocialninja.com/assets/user-interface.B-VxH08M.webp)
-
 ## Quick Builder ​
 
 On the **WordPress Dashboard → Wp Social Ninja**, you will see a **Quick Builder** button. This button launches a simple, 3-step pop-up wizard to help you create a new template for reviews or feeds very quickly, without going through the full, advanced editor.
-
-![The Quick Builder button on the dashboard](https://docs.wpsocialninja.com/assets/quick-builder.OHAwuFen.webp)
 
 ## Testimonials ​
 
@@ -207,8 +201,6 @@ WP Social Ninja also includes powerful marketing and SEO tools.
 - **Improve SEO (Schema Support):** The plugin has built-in [Schema Snippet](../business-reviews/configure-schema) support. This adds special code that helps Google understand your review data and display your star ratings in search results.
 - **Generate QR Codes:** Create simple [QR codes](../business-reviews/generate-qr-code-for-reviews) that link directly to your review platforms (like Google or Yelp). This makes it easy for your customers to leave you new reviews.
 
-![WP Social Ninja Platforms](https://docs.wpsocialninja.com/assets/WP-Social-Ninja-Platforms.DHO3Jqcx.webp)
-
 ## Getting Started ​
 
 If you are new to WP Social Ninja, we recommend starting with the [Business Reviews](../business-reviews/) or [Social Feeds](../social-feeds/) guides to learn how to connect your first platform. From there, you can explore [Social Chat](../social-chat/) and [Template Settings](../getting-started/templates-overview) to customize the appearance and engage with your visitors.
@@ -238,8 +230,6 @@ You can install the free version directly from your WordPress dashboard.
 2. **Step 2: Search for a Plugin:** In the search box in the top-right corner, type "WP Social Ninja".
 3. **Step 3: Install and Activate:** The plugin will appear in the search results. Click the **Install Now** button, and then click **Activate**.
 
-![Installing the free WP Social Ninja plugin from the WordPress repository](https://docs.wpsocialninja.com/assets/install-wp-social-ninja.StKt8kv4.webp)
-
 ## How to Install WP Social Ninja Pro ​
 
 After you purchase the Pro version, you must upload it to your website.
@@ -253,8 +243,6 @@ You must have the free (core) version of WP Social Ninja (from the steps above) 
 
  file from your purchase history.
 
-![Activate license](https://docs.wpsocialninja.com/assets/download-wpsocialninja.tW7xDdmn.webp)
-
 1. **Step 2: Upload Plugin:** From your WordPress dashboard, go to **Plugins > Add New**. At the top of the page, click the **Upload Plugin** button.
 2. **Step 3: Install and Activate:** Click **Choose File** and select the 
 ```
@@ -263,8 +251,6 @@ You must have the free (core) version of WP Social Ninja (from the steps above) 
 
  file you just downloaded. Click **Install Now**. After the plugin finishes installing, click the **Activate Plugin** button.
 
-![Uploading the WP Social Ninja Pro zip file](https://docs.wpsocialninja.com/assets/upload-plugin.BIO8Cacy.webp)
-
 ## How to Activate the License ​
 
 To unlock all pro features and receive automatic updates, you must activate your license key.
@@ -272,8 +258,6 @@ To unlock all pro features and receive automatic updates, you must activate your
 1. **Step 1: Go to License Settings:** From your WordPress dashboard, navigate to **WP Social Ninja** and click on **Settings**. Select the **Others** tab, and then click the **License Settings** sub-tab.
 2. **Step 2: Enter Your License Key:** Find your license key in your **WPManageNinja Account**. Copy the key and paste it into the **License Key** field.
 3. **Step 3: Verify License:** Click the **Verify License** button. If the key is valid, you will see a success message. Your Pro plugin is now active.
-
-![Activating the license key in the WP Social Ninja settings](https://docs.wpsocialninja.com/assets/activate-license.DkOASSDQ.webp)
 
 ## How to Update WP Social Ninja ​
 
@@ -291,8 +275,6 @@ To update the Pro version, you must have an active license key. If your license 
 WP Social Ninja Pro comes with a licensing option to renew your license. Follow these simple steps to renew the license:
 
 You can start by going to the purchase history from **WPManageNinja Account**. Then you’ll see the ‘**Renewing a license key?**’ link on the checkout cart, and click on that. After entering the license key, click the **Apply License Renewal** button.
-
-![License Renewing](https://docs.wpsocialninja.com/assets/license-renewing.DCc2cvPY.webp)
 
 Lastly, your license will be activated automatically. Your license key activation process is complete.
 
@@ -321,8 +303,6 @@ The first step asks you to choose which **Category** of features you want to sta
 - **Social Chat:** To add a chat widget to your website.
 - **Notification Popup:** To display notification popups on your website.
 
-![Selecting a category in the WP Social Ninja onboarding wizard](https://docs.wpsocialninja.com/assets/select-category.DDLR0VXf.webp)
-
 Select one and click the "**Continue**" button to proceed to the next step.
 
 NOTE
@@ -334,51 +314,45 @@ Here, you will select the specific social platform you want to connect.
 
 The list of platforms shown (like Instagram, YouTube, TikTok, Twitter, Google My Business, Yelp, or Facebook Feed) will depend on the category you just selected.
 
-![Selecting a platform in the onboarding wizard](https://docs.wpsocialninja.com/assets/social-platform.CA7LOcKr.webp)
-
 Click on your desired platform and press the **Continue** button for the next step.
 
 ## Step 3: Select the Post Type ​
 
-This step is to decide the type of content you want to display.
+Define the specific type of content you want to display from your chosen platform. For example, if you selected Instagram, your options will include:
 
 - **Timeline Feed:** Embed photos and videos from any Instagram account directly.
 - **Hashtag Feed:** Showcase public Instagram posts if they use specific hashtags in their caption.
 - **Shoppable Feed:** Connect the shoppable feed to convert visitors from the Instagram feed to websites.
 
-![Selecting the post type in the onboarding wizard](https://docs.wpsocialninja.com/assets/select-post-type.CSOevVmf.webp)
-
 Make your selections and click the **Continue** button.
 
 ## Step 4: Choose a Template ​
 
-This step is for choosing the visual style of your feed or reviews. You have two settings to configure:
+This step allows you to define the visual style of your feed or reviews before entering the main editor. Every template available for your chosen platform is listed here. You will configure two main settings:
 
 - **Layout Type:** This is the structure (e.g., Grid, Slider, Carousel, or Masonry).
-- **Template:** This is the design skin (e.g., Vega, Sirius, or Polaris).
+- **Template:** This is the design skin. Review templates carry names like Vega, Sirius and Polaris, while feed templates are named after the layout they draw **Classic Grid**, **Caption Card**, **Overlay Card**, and so on.
 
-![Choosing a layout and template in the onboarding wizard](https://docs.wpsocialninja.com/assets/template-style.CufGzeAJ.webp)
+Every template available for your chosen platform is listed here, so you can pick your final design in the wizard rather than switching it later in the editor.
 
 ## Step 5: Configure Your Template ​
 
 In this final step, you will connect your account and apply basic filters.
 
 - **Configuration:** Click the **Connect...** button (for example, **Connect with Instagram**) to authorize your account. A pop-up will guide you through the login and permission process.
-- **Filters:** After connecting, you can use the **Filters** dropdown. For example, you can use **Filter by Rating** to only show 5 Star reviews.
+- **Filters:** Once connected, you can apply initial rules using the **Filters** dropdown. For example, if setting up reviews, you can use **Filter by Rating** to ensure only 5-star reviews are displayed.
 
-Click the **Save** button to finish.
-
-![Configuring the template by connecting an account and setting filters](https://docs.wpsocialninja.com/assets/template-style.CufGzeAJ.webp)
-
-After clicking **Save**, you have successfully created your first template. You will be taken to the full template editor, where you can copy the **Shortcode** to embed on your site or continue to customize its advanced settings.
+Click **Save** to complete the wizard. You will then be redirected to the full template editor, where you can further customize your settings or copy the generated **Shortcode** to embed the template on your site.
 
 ## Quick Builder ​
 
-If you skipped the initial setup wizard (onboarding), you can easily access it again at any time using the **Quick Builder** feature.This feature is perfect for quickly creating a new template without going through the full, advanced editor.To Access the wizard:
+If you skipped the initial onboarding wizard, you can easily access a streamlined setup process at any time using the **Quick Builder**. This tool is perfect for rapidly creating a new template without navigating the advanced editor.
 
-From your WordPress dashboard, navigate to **WP Social Ninja dasborads** from the leftsidebar.Click the **Quick Builder** button.This will open the 3-step pop-up wizard, allowing you to select a category, platform, and template to instantly create and save a new feed or review display.
+To access the Quick Builder:
 
-![Configuring the template by Quick Builder](https://docs.wpsocialninja.com/assets/quick-builder.CXppIUkE.webp)
+1. Navigate to the **WP Social Ninja dashboard** from your WordPress left sidebar.
+2. Click the **Quick Builder** menu option.
+3. This launches a simplified 3-step pop-up wizard, allowing you to quickly select a category, platform, and template to instantly generate and save a new feed or review display.
 
 ---
 
@@ -420,11 +394,33 @@ Instead of managing reviews one by one, you can use **Bulk Actions** to save tim
 - **Mark as Spam:** Move unwanted reviews to the **Spam** folder. This is useful for cleaning up your list without permanently deleting entries.
 - **Not Spam:** If a review was accidentally flagged, use this to move it back to your main list.
 - **Duplicate:** Create copies of selected reviews (primarily used for Custom reviews).
+- **Assign Category / Remove Category:** Apply or remove a review category across every selected review in one action.
 - **Delete:** Permanently remove the selected reviews from your database.
 
 Click **Apply** after selecting your desired action to execute the changes.
 
-![The main Reviews dashboard in WP Social Ninja](https://docs.wpsocialninja.com/assets/all-reviews-1.C57nBMyF.webp)
+## Organizing Reviews with Categories ​
+
+Once your review list grows, finding a specific set of reviews gets harder. **Review Categories** give you a reusable label you can apply to any review, from any connected platform, so you can group your reviews the way you actually think about your business — by product line, by service, by location, or by campaign.
+
+### Managing Your Categories ​
+
+Click the **Manage Categories** button located above your review list to launch the category management panel. From this modal, you can perform the following actions:
+
+- **Create New Categories:** Type in a custom name to add a new category label.
+- **Rename Categories:** Edit existing category names to keep your organization up to date.
+- **Delete Categories:** Remove categories you no longer require. Deleting a category removes the tag from all assigned reviews without deleting the reviews themselves.
+
+Each category displays an active review count directly within the list, giving you immediate visibility into which areas have strong social proof and which need more feedback.
+
+NOTE
+
+The **Manage Categories** button is visible only to users with appropriate permission levels. If the button is missing, contact your site administrator to adjust your account permissions.
+### Assigning Categories to Reviews ​
+
+Select one or more reviews and use **Assign Category** / **Remove Category** from the **Bulk Actions** dropdown to tag or untag them.
+
+Once your reviews are categorized, use **Filter by Category** in your [review template](../business-reviews/create-template#4-filters) settings to display only the reviews from a specific category.
 
 ## Managing Individual Reviews ​
 
@@ -446,15 +442,12 @@ Click the **three-dot (⋮)** menu on the far right of any review to access spec
 
 NOTE
 
-Your moderation workflow is heavily influenced by your Global Review Settings. If you have enabled "Require Approval" or set "[Conditional Publishing Rules](/guide/business-reviews/global-review-settings)," new reviews will automatically land in the Pending or Spam tabs based on your criteria.![Individual Reviews](https://docs.wpsocialninja.com/assets/individualy-review-action-2.BjacZRh-.webp)
-
+Your moderation workflow is heavily influenced by your Global Review Settings. If you have enabled "Require Approval" or set "[Conditional Publishing Rules](/guide/business-reviews/global-review-settings)," new reviews will automatically land in the Pending or Spam tabs based on your criteria.
 ## Add Custom Source Review ​
 
 You will also see an **Add Custom Source** button. This feature is for manually adding reviews to your site.
 
 > Use Case: If a customer emails you a positive review or gives you feedback in person, you can use this button to create a Custom Review. You can add the reviewer's name, their text, and a star rating. These custom reviews can then be displayed in your templates alongside your fetched reviews.
-
-![The "Add Custom Source" button](https://docs.wpsocialninja.com/assets/add-custom-source.DKRVHsmL.webp)
 
 After you have fetched and managed your reviews, your next step is to go to the **Templates** section. From there, you can create a new **Business Reviews** template to display them on your website.
 
@@ -482,12 +475,9 @@ As shown in the image, this page is organized into tabs for each feature:
 
 To start a new design, click the "**+ Create Template**" button in the top-right corner. This will open the advanced template editor, where you can select your platform, choose a layout, and customize every visual detail to match your brand.
 
-[!Tip]
+TIP
 
-> If you want a faster setup, you can also use the Quick Builder feature to open a simple 3-step wizard that helps you create a professional-looking template in seconds.
-
-![The main Templates overview screen in WP Social Ninja](https://docs.wpsocialninja.com/assets/template.B5QjOh7v.webp)
-
+If you want a faster setup, you can also use the **Quick Builder** feature to open a simple 3-step wizard that helps you create a professional-looking template in seconds.
 ### Resizing the Editor Sidebar ​
 
 Inside the template editor, all your settings live in a sidebar next to the live preview. To give yourself the perfect amount of working space, that sidebar is now **resizable and collapsible** across the Reviews, Chats, and Feed editors:
@@ -524,8 +514,6 @@ If you have many templates, you can use the organization tools at the top of the
 - **Platform Filter:** Use the All Platforms dropdown to view only templates from a specific source, such as Instagram, Facebook, or YouTube.
 - **Search Bar:** Quickly find a template by typing its name in the search box.
 - **Bulk Actions:** Select multiple templates using the checkboxes on the left and use the Bulk Action menu to delete them all at once.
-
-![Copying a shortcode from the Templates list](https://docs.wpsocialninja.com/assets/manage-existing-template.DTOaAGPa.webp)
 
 ---
 

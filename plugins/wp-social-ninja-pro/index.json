@@ -2,8 +2,8 @@
   "plugin_slug": "wp-social-ninja-pro",
   "plugin_name": "WP Social Ninja Pro",
   "documentation_url": "https://docs.wpsocialninja.com/guide/",
-  "last_scraped": "2026-08-23T04:07:03.962Z",
-  "total_pages": 94,
+  "last_scraped": "2026-08-30T03:33:45.919Z",
+  "total_pages": 96,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -49,7 +49,7 @@
       "slug": "business-reviews",
       "url": "https://docs.wpsocialninja.com/guide/business-reviews/",
       "file": "categories/business-reviews.md",
-      "page_count": 20,
+      "page_count": 22,
       "pages": [
         {
           "title": "Business Reviews ​",
@@ -112,6 +112,10 @@
           "url": "https://docs.wpsocialninja.com/guide/business-reviews/native-review-forms.html"
         },
         {
+          "title": "Organize Reviews with Categories ​",
+          "url": "https://docs.wpsocialninja.com/guide/business-reviews/organize-reviews-with-categories.html"
+        },
+        {
           "title": "Template Styling & Connection ​",
           "url": "https://docs.wpsocialninja.com/guide/business-reviews/template-style-connection.html"
         },
@@ -122,6 +126,10 @@
         {
           "title": "Trustpilot Reviews ​",
           "url": "https://docs.wpsocialninja.com/guide/business-reviews/trustpilot-configuration.html"
+        },
+        {
+          "title": "Let Visitors Search, Sort & Filter Reviews ​",
+          "url": "https://docs.wpsocialninja.com/guide/business-reviews/visitor-search-sort-filter.html"
         },
         {
           "title": "WooCommerce Reviews ​",

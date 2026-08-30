@@ -14,8 +14,6 @@ Your business receives valuable **Business Reviews** on multiple social networki
 
 **WP Social Ninja** will let you add different Reviews on your site in just a few clicks. For instance, Social Platforms like Google My Business and Facebook. WP Social Ninja will help you to add all those sites with zero hassle.
 
-![social review platform](https://docs.wpsocialninja.com/assets/business-reviews-1.gg9EKVaj.webp)
-
 Our Plugin has the power to engage with your customers by gathering reviews and recommendations in your business like never before.
 
 We have nine platforms to offer at the moment. More platforms will come soon!
@@ -67,9 +65,7 @@ To find
 ReviewsModalContentQuery
 ```
 
-, you must click on the **Show all reviews** button on the Airbnb page; only then will this request appear in the list.![airbnb review](https://docs.wpsocialninja.com/assets/show-all-review._gt24TUJ.webp)
-
-After typing the correct term, refresh the page and click on the request that appears in the list to open its details.
+, you must click on the **Show all reviews** button on the Airbnb page; only then will this request appear in the list.After typing the correct term, refresh the page and click on the request that appears in the list to open its details.
 
 TIP
 
@@ -98,15 +94,11 @@ You will need to find and copy three pieces of information from this file:
 - Scroll down until you find the **x-airbnb-api-key**.
 - Copy the long string of characters next to it. This is your API Key.
 
-![airbnb api 1](https://docs.wpsocialninja.com/assets/reviewsquery-1.68K8WfWg.webp)
-
 **The Secret Key:**
 
 - Now, click on the **Payload** tab (it might also be called "Request").
 - Navigate through extensions → persistedQuery.
 - You will see a **sha256Hash**. Copy the long string of characters next to it. This is your Secret Key.
-
-![airbnb api 2](https://docs.wpsocialninja.com/assets/reviewsquery-2.C1I82bDM.webp)
 
 ### Find the Business Info Payload (Recommended) ​
 
@@ -115,39 +107,10 @@ Unlike the Reviews keys above, for Business Info you don't need to open the requ
 - In the **Filter** box at the top of the Network tab, type **StaysPdpSections** and press Enter.
 - Refresh your Airbnb listing page. You should see a request named **StaysPdpSections** appear in the network requests list.
 
-NEEDS SCREENSHOT
-
-- **What to capture:** The Network tab with 
-```
-StaysPdpSections
-```
-
- typed in the **Filter** box and the matching request visible in the list below it.
-- **Where from:** Browser DevTools → **Network** tab, on an Airbnb room listing page, right after filtering and reloading.
-- **Suggested filename:** 
-```
-business-info-request-list.webp
-```- **Right-click** on the **StaysPdpSections** request in the list (no need to open it).
+- **Right-click** on the **StaysPdpSections** request in the list (no need to open it).
 - From the context menu, hover over **Copy**, then click **Copy URL**.
 
-NEEDS SCREENSHOT
-
-- **What to capture:** The right-click context menu open on the 
-```
-StaysPdpSections
-```
-
- request row, with **Copy → Copy URL** visible/highlighted.
-- **Where from:** Same Network tab — right-click directly on the 
-```
-StaysPdpSections
-```
-
- row itself (not inside its details panel).
-- **Suggested filename:** 
-```
-business-info-copy-url.webp
-```That copied URL is your Business Info payload — you'll paste the whole thing in Step 2.
+That copied URL is your Business Info payload — you'll paste the whole thing in Step 2.
 
 TIP
 
@@ -223,19 +186,11 @@ To add **Airbnb Reviews** on your site, it is obvious that you need somehow to c
 
 To add Airbnb Reviews to your site, first, click on Airbnb.
 
-![airbnb platform 1](https://docs.wpsocialninja.com/assets/airbnb-config-1.BoKXXGjt.webp)
-
 Now paste your room, experience or business URL here.
-
-![airbnb platform 2](https://docs.wpsocialninja.com/assets/airbnb-config-2.BXVcBBlc.webp)
 
 You can find the URL in the address bar of your Airbnb room, experience, or business page, just like in the screenshot below.
 
-![airbnb platform 3](https://docs.wpsocialninja.com/assets/room-url.kMU0CPvm.webp)
-
 Paste the URL into the field and hit **Save**. Once connected, you’ll see your Airbnb account linked with Social Ninja. Next, click **Create a Template** to start displaying your Airbnb reviews.
-
-![airbnb platform 4](https://docs.wpsocialninja.com/assets/airbnb-config-3.Ze5NFWWt.webp)
 
 Your template is now ready! From here, you can customize it the way you like. For more details, check out this [documentation](./template-style-connection) on template customization.
 
@@ -279,15 +234,11 @@ On the main menu on the left-hand side, find the **WP Social Ninja**. Click on i
 
 Find the **AliExpress** row. On the right side of that row, click the **Settings icon** button.
 
-![AliExpress Review](https://docs.wpsocialninja.com/assets/aliexpress-review-1.DyIWo5I3.webp)
-
 ### Step 3: Find the "Product URL" Field ​
 
 A pop-up window will appear on your screen with the title "Connect Your AliExpress Account."
 
 Inside this pop-up, you will see fields labeled **Add you Product ID here** and **Add your Product Name here**. This is the spot where you will paste the link to your AliExpress product.
-
-![AliExpress Review](https://docs.wpsocialninja.com/assets/aliexpress-review-2.CRX3GpQi.webp)
 
 ### Step 4: Find and Copy Your AliExpress Product URL ​
 
@@ -303,8 +254,6 @@ This is the only piece of information you need to find, and it's very easy.
 https://www.aliexpress.com/item/1234567890.html
 ```
 
-![AliExpress Review](https://docs.wpsocialninja.com/assets/aliexpress-review-3.DXktLBMk.webp)
-
 ### Step 5: Connect Your Product in WP Social Ninja ​
 
 Now, go back to your WordPress dashboard browser tab (where the pop-up is still open from Step 3).
@@ -313,15 +262,11 @@ Now, go back to your WordPress dashboard browser tab (where the pop-up is still 
 2. Paste the **full URL** you just copied from AliExpress into the “Product ID” field.
 3. Click the **Save** button.
 
-![AliExpress Review](https://docs.wpsocialninja.com/assets/aliexpress-review-4.NiQyoPzl.webp)
-
 ### Step 6: You're Connected! ​
 
 The pop-up window will close, and the page will refresh.
 
 You will be returned to the main **Platforms** page. You will now see that the **AliExpress** row has a green "Connected" status and lists the product you just added. This confirms that WP Social Ninja can now communicate with that product page to fetch its reviews.
-
-![AliExpress Review](https://docs.wpsocialninja.com/assets/aliexpress-review-5.NuYT2rlX.webp)
 
 ## Next Steps ​
 
@@ -351,8 +296,6 @@ You’ll need WP Social Ninja Pro to access and display Booking.com reviews on y
 
 Navigate to your **WP Social Ninja** dashboard and select [Platform](../getting-started/all-platforms-of-wp-social-ninja) from the navigation bar. Locate the **Booking Platform** and click on the **Settings** icon to configure it.
 
-![booking review 1](https://docs.wpsocialninja.com/assets/booking-review-1.D_QmDkBz.webp)
-
 ## Steps to Configure Booking.com Reviews ​
 
 Before fetching reviews from Booking.com using your Business Profile URL, you need to complete three additional steps:
@@ -371,8 +314,6 @@ Access your browser's **Inspect** mode (usually by right-clicking on the page an
 In the Inspect mode, go to the **Application** tab and select **Cookies**.
 
 Search for the **AWS-WAF-Token** in the cookies list then copy the value of the AWS-WAF-Token cookie and save it for later use.
-
-![booking review 4](https://docs.wpsocialninja.com/assets/booking-review-2.mhFZVfE4.webp)
 
 ## Add the AWS-WAF-Token in a Snippet ​
 
@@ -395,23 +336,15 @@ add_filter('wpsocialreviews/booking_header_request_cookie_set', function($header
 - Replace **Cookie value goes here** with the **AWS-WAF-Token** value you copied earlier.
 - Save the snippet to apply the changes.
 
-![booking review 5](https://docs.wpsocialninja.com/assets/booking-review-3.CYifDbsm.webp)
-
 ## Business URL from Booking ​
 
 Navigate to your business profile on Booking.com and copy the **Business URL** directly from the address bar of your browser.
 
-![booking review 6](https://docs.wpsocialninja.com/assets/booking-review-4.C3qT7xuT.webp)
-
 Next, return to your **WP Social Ninja Booking Configuration** and paste the **Booking.com Business Profile URL** you copied earlier. Click on the **Save** button, and you’ll see that your business has been successfully added.
-
-![booking review 2](https://docs.wpsocialninja.com/assets/booking-review-5.2EUWhCWM.webp)
 
 If you wish to add another business profile, simply click on the **Add More Business** button and repeat the same steps.
 
 To customize your **Booking.com Reviews Template**, click on the **Create a Template** button and start personalizing your [template](./create-template). Keep in mind, if you don't create a template, your reviews won't be displayed, as the template won't be created automatically.
-
-![booking review 7](https://docs.wpsocialninja.com/assets/booking-review-6.CNOVzlJL.webp)
 
 That's how you can easily fetch your **Booking.com** business profile reviews on your site using **WP Social Ninja**.
 
@@ -461,19 +394,13 @@ First, you need a form where users can submit their reviews. For this, go to **F
 
 After that, **Save** the form and **Copy** the **Form Shortcode ID** — you’ll need it later to connect with WP Social Ninja.
 
-![Create a Review Form ](https://docs.wpsocialninja.com/assets/review-form.C7RmEbW7.webp)
-
 ## Step 2: Connect Fluent Forms with WP Social Ninja ​
 
 Next, you’ll link Fluent Forms to WP Social Ninja so that submitted reviews can be displayed in templates. Then, go to **Fluent Forms → Forms → Settings & Integrations**. Now, click on **Configure Integration → Add New Integration** and click to **WP Social Ninja Integration**.
 
-![Connect Fluent Forms with WP Social Ninja ](https://docs.wpsocialninja.com/assets/connect-form-with-wpsocial-ninja.B1GQzWXT.webp)
-
 While setting up the integration, you’ll be asked to choose a **Source**. This is important because it tells WP Social Ninja where the reviews belong.
 
 For a complete guide on Fluent Forms integration with WP Social Ninja, see this [Documentation](./fluent-forms-review).
-
-![update wp social ninja integration feed fluent forms](https://docs.wpsocialninja.com/assets/add-new-integration-feed.BX0AyKHk.webp)
 
 ## Step 3: Create a Review Template in WP Social Ninja ​
 
@@ -496,8 +423,6 @@ Scroll to the **Header section**:
 At this point, your **Write a Review** button is ready. When users click it, your Fluent Form will open for them to submit reviews.
 
 Read the [documentation](./template-style-connection) to understand fully how [review templates](./create-template) work.
-
-![edit review template](https://docs.wpsocialninja.com/assets/fluent-forms-review.yK476k4h.webp)
 
 ## Step 4: Apply Your Setup ​
 
@@ -526,8 +451,6 @@ Go to **WP Social Ninja → Settings → Reviews Platform → WooCommerce Settin
 Now, on that product page, the review section will display your Fluent Form instead of the default WooCommerce form.
 
 Check out the [Documentation](./woocommerce-reviews) for a full guide on integrating WooCommerce with Fluent Forms.
-
-![edit product woocommerce](https://docs.wpsocialninja.com/assets/Edit-product-woocommerce.TMBn_hxd.webp)
 
 ### Collect Custom Reviews with Fluent Forms (Pro Only) ​
 
@@ -591,13 +514,9 @@ Now let’s go to the WP Social Ninja dashboard to adjust the Schema Snippet.
 
 Now let’s go to the WP Social Ninja dashboard to learn how to adjust the Schema Snippet. First of all, enable the Schema Snippet button to adjust the settings.
 
-![Enable Schema Snippet](https://docs.wpsocialninja.com/assets/enable-schema-snippet.DYHe32ee.png)
-
 *Enable Schema Snippet*
 
 Now a settings panel will appear on your screen.
-
-![Schema Snippet Settings](https://docs.wpsocialninja.com/assets/image-4.BzMveM84.png)
 
 *Schema Snippet Settings*
 
@@ -647,8 +566,6 @@ First, let's create the template itself.
 4. Give your template a name you'll remember (e.g., "Main Website Reviews" or "5-Star Homepage Slider").
 5. Click **Create Template**.
 
-![Create Review Template](https://docs.wpsocialninja.com/assets/create-review-template-1.geypTnWX.webp)
-
 You will now be taken to the main **Template Editor**. This is where you will set up every detail of your new review feed. The editor is organized into two main tabs: **General** and **Style**.
 
 This guide covers every setting in the **General** tab.
@@ -667,8 +584,6 @@ This is the most important step. It controls which reviews you want to display i
 
 > Use Case: This is what makes WP Social Ninja so powerful. You can check the box for Google, Facebook, and Yelp all at the same time to create a single, unified feed of all your best reviews from every platform.
 
-![Create Review Template](https://docs.wpsocialninja.com/assets/create-review-template-2.SF6uHTSg.webp)
-
 ### 2. Template ​
 
 This section controls the visual structure and arrangement of your reviews.
@@ -679,8 +594,6 @@ This section controls the visual structure and arrangement of your reviews.
 - **Badge:** A small, compact layout that is often used to show a summary of your rating (e.Example, "4.9 out of 5 stars").
 - **Select a Template:** These are pre-designed visual "skins" for your feed (e.g., Vega, Spica, Sirius). Each one changes the styling of the review boxes, fonts, and layout.
 - **Number of Columns:** This is a crucial responsive setting. You can set the number of columns you want to show on **Desktops**, **Tablets**, and **Mobile** phones.
-
-![Create Review Template](https://docs.wpsocialninja.com/assets/create-review-template-3.uNairmFk.webp)
 
 ### 3. Filters ​
 
@@ -695,8 +608,7 @@ Filters are how you refine your feed to only show the specific reviews you want.
 - **Show/Hide reviews containing these words:** These are moderation tools. > Use Case: You could use "Show" to create a feed that only mentions "customer service." Or, you could use "Hide" to filter out any reviews that mention a "bug" or "shipping problem."
 - **Filter by Business/Product:** (For WooCommerce/Custom Reviews) This lets you show reviews associated with only one specific product.
 - **Filter by Category:** (For WooCommerce/Custom Reviews) This lets you show reviews only from a specific product category (e.g., "Shoes").
-
-![Create Review Template](https://docs.wpsocialninja.com/assets/create-review-template-4.Z69xsoGF.webp)
+- **Let Visitors Search, Sort & Filter:** *(Pro)* Adds a search box and sort and rating dropdowns above your feed, so visitors can narrow it down themselves. See [Let Visitors Search, Sort & Filter Reviews](/guide/business-reviews/visitor-search-sort-filter).
 
 ### 4. Settings (Content Display) ​
 
@@ -716,10 +628,20 @@ This section controls which pieces of information you want to display inside eac
 - **Excerpt:** Lets you show a short "snippet" of the text.
 - **Trim Excerpt Words:** This setting only appears if you select "Excerpt." It lets you set the exact number of words (e.g., 25) to show before the text is cut off. This is the key to creating a clean, uniform look for your grid or slider.
 - **Enable External Links:** A toggle to allow any links in the review text to be clickable.
+- **Show Review Images:** A toggle to show or hide photos that reviewers attached to their reviews.
 - **Equal Height:** This toggle is essential for the **Grid** layout. When toggled **on**, all review boxes are forced to the same height (based on the tallest one), creating a perfect, uniform grid. You should turn this **Off** if you are using the **Masonry** layout.
 
-![Create Review Template](https://docs.wpsocialninja.com/assets/create-review-template-5.BZNQx4Di.webp)
+Why you might not see "Show Review Images"
 
+This toggle only appears when your template includes a platform that can actually collect photos with a review:
+
+- [Native review forms](/guide/business-reviews/native-review-forms)
+- [WooCommerce](/guide/business-reviews/woocommerce-reviews)
+- [FluentCart](/guide/business-reviews/fluentcart-product-review)
+- [Fluent Forms](/guide/business-reviews/fluent-forms-review)
+- [Testimonials](/guide/advanced-features/add-testimonials)
+
+Google, Facebook, Yelp, Airbnb, Trustpilot, Tripadvisor, Booking.com, AliExpress, Amazon and manually added custom reviews don't come with reviewer photos, so on a template built only from those the toggle is hidden rather than shown as a switch that would do nothing.
 ### 5. Header ​
 
 This section controls the large box that appears at the top of your entire feed, summarizing your reviews.
@@ -740,8 +662,6 @@ This section controls the large box that appears at the top of your entire feed,
 - **Button Source Type:** This lets you decide what the button does. - **Custom URL:** The most common option. You can paste a link directly to your Google, Facebook, or Yelp review page, making it easy for customers.
 - **Open in new window:** (Recommended) Check this to open the review link in a new browser tab.
 
-![Create Review Template](https://docs.wpsocialninja.com/assets/create-review-template-6.BkG-dYrw.webp)
-
 ### 6. Pagination ​
 
 This controls what happens when a visitor gets to the bottom of the initial set of reviews.
@@ -753,8 +673,6 @@ This controls what happens when a visitor gets to the bottom of the initial set 
 
 > Example: You might set your feed to show 10 reviews at first, and then set 5 "Reviews Per Page." When a user clicks "Load More," 5 new reviews will appear (for a total of 15).
 
-![Create Review Template](https://docs.wpsocialninja.com/assets/create-review-template-7.C05O7nQE.webp)
-
 ### 7. AI Summarizer ​
 
 This is a powerful "New" feature that uses AI to analyze your reviews and provide a summary for your visitors.
@@ -765,8 +683,6 @@ This is a powerful "New" feature that uses AI to analyze your reviews and provid
 - **Text Typing Animation:** A toggle to enable a "typing" effect for the summary text, which makes it very eye-catching.
 - **Display AI Summary Icon:** A toggle to show or hide a small AI icon.
 - **Regenerate AI Summary:** This is a key button. If you don't like the summary the AI generated, or if you have a lot of new reviews, you can click this to force the AI to write a new one.
-
-![Create Review Template](https://docs.wpsocialninja.com/assets/create-review-template-8.iQjD3ZZ7.webp)
 
 ### 8. Schema.org Markup ​
 
@@ -800,8 +716,7 @@ This is a crucial and highly technical feature for SEO (Search Engine Optimizati
 
 TIP
 
-You can verify that your configuration is working correctly by using [Google's Rich Results Test](https://search.google.com/test/rich-results) tool. Simply paste your page URL to see if your review stars are ready for search results.![Create Review Template](https://docs.wpsocialninja.com/assets/create-review-template-9.FyeIALDE.webp)
-
+You can verify that your configuration is working correctly by using [Google's Rich Results Test](https://search.google.com/test/rich-results) tool. Simply paste your page URL to see if your review stars are ready for search results.
 ## Part 3: Next Steps ​
 
 Congratulations! You have now configured every single content and function setting for your review template.
@@ -838,13 +753,9 @@ First, go to your WordPress dashboard. In the left-hand menu, click on **WP Soci
 
 On the "Platforms" page, find the **Facebook** row. On the right side, click the **Settings icon** button.
 
-![Facebook Page Review](https://docs.wpsocialninja.com/assets/fb-business-review-1.CxBNlMo6.webp)
-
 A pop-up window will appear asking you to "Select Credential Type." You have two choices **OAuth 2.0** and **Manually Connect a Page**. In this guide we will show you the OAuth 2.0 connection process. To manually connect your Facebook Page follow this [Documentation](./facebook-reviews-access-token).
 
 For the easiest and fastest setup, select the first option: **OAuth 2.0 (Recommended)**.
-
-![Facebook Page Review](https://docs.wpsocialninja.com/assets/fb-business-review-2.55jyszDs.webp)
 
 ### Step 3: Authorize Your Facebook Account ​
 
@@ -852,8 +763,6 @@ After you select the recommended method, a new Facebook pop-up window will open.
 
 - If you are not already logged in, Facebook will ask you to log in.
 - Next, it will ask you to grant permission for "WP Social Ninja" to access your information. Click the **"Continue with..."** button to proceed. This is a standard and safe process.
-
-![Facebook Page Review](https://docs.wpsocialninja.com/assets/fb-business-review-3.CIhTAwPM.webp)
 
 ### Step 4: Select Your Facebook Page(s) ​
 
@@ -864,15 +773,11 @@ After you grant permission, you will be brought back to a WP Social Ninja pop-up
 - Click the checkbox next to each Page you want to connect.
 - Once you have selected your Page(s), click the blue **Connect Pages** button.
 
-![Facebook Page Review](https://docs.wpsocialninja.com/assets/fb-business-review-4.qwfeFtqK.webp)
-
 ### Step 5: You're Connected! ​
 
 The pop-up will close, and you will be returned to the main **Platforms** page.
 
 You will now see that the **Facebook** row has a green "Connected" status and lists the Page(s) you just added.
-
-![Facebook Page Review](https://docs.wpsocialninja.com/assets/fb-business-review-5.pjfBm3RH.webp)
 
 ### Next Steps ​
 
@@ -909,11 +814,7 @@ First, go to your WordPress dashboard. In the left-hand menu, click on **WP Soci
 
 On the "Platforms" page, find the **Facebook** row and click the **Connect** button.
 
-![Facebook reviews manual process](https://docs.wpsocialninja.com/assets/fb-business-review-manual-1.BhygwzWa.webp)
-
 A pop-up window will appear asking you to "Select Credential Type." The first option is the default login. For this method, select the second option: **Manually Connect a Page**.
-
-![Facebook reviews manual process](https://docs.wpsocialninja.com/assets/fb-business-review-manual-2.DhIRgQ4t.webp)
 
 ### Step 3: Find the Required Fields ​
 
@@ -931,20 +832,14 @@ On this page, find the **Facebook Reviews** section.
 
 1. On the Token Generator page, click the blue **Continue with Facebook** button.
 
-![Facebook reviews manual process](https://docs.wpsocialninja.com/assets/fb-business-review-manual-3.Ad9_bMz1.webp)
-
 1. A secure Facebook pop-up window will open. Log in to your Facebook account (the one that manages your Business Page).
 2. Follow the prompts. Facebook will ask you to "Continue as..." and then to select which of your pages you want to grant access to. Make sure you select the correct page.
-
-![Facebook reviews manual process](https://docs.wpsocialninja.com/assets/fb-business-review-manual-4.D2Vjv76S.webp)
 
 ### Step 6: Copy Your Page ID and Access Token ​
 
 After you grant permission, the generator page will refresh and display your unique **Page ID** and **Access Token**.
 
 Click the **Copy** button for each of these keys.
-
-![Facebook reviews manual process](https://docs.wpsocialninja.com/assets/fb-business-review-manual-5.DzSsb5yj.webp)
 
 ### Step L: Connect Your Page ​
 
@@ -954,15 +849,11 @@ Now, go back to your WordPress dashboard (where you still have the pop-up from S
 2. Paste the **Access Token** you just copied into the "Access Token" field.
 3. Click the **Save** button.
 
-![Facebook reviews manual process](https://docs.wpsocialninja.com/assets/fb-business-review-manual-6.DeR03a_y.webp)
-
 ### Step 8: You're Connected! ​
 
 The pop-up will close, and you will be returned to the main **Platforms** page.
 
 You will now see that the **Facebook** row has a green "Connected" status and lists the Page you just added manually.
-
-![Facebook reviews manual process](https://docs.wpsocialninja.com/assets/fb-business-review-manual-7.gqMyWUXx.webp)
 
 ## Next Steps ​
 
@@ -995,23 +886,18 @@ From your WordPress dashboard, go to **Fluent Forms → Integrations**. Search f
 
 This action connects Fluent Forms with WP Social Ninja, allowing them to share data.
 
-![enable wp social ninja 1](https://docs.wpsocialninja.com/assets/enable-wp-social-ninja-module.R_bVXH8l.webp)
-
 ### Step 2: Create Your Review Form in Fluent Forms ​
 
 Next, you need to configure the specific form you want to use for collecting reviews. Go to your Fluent Forms dashboard. You can either **Add a New Form** or edit an existing one.
 
 Ensure your form includes the necessary input fields, such as **Name**, **Email Address**, **Text**, and a **Ratings** field.
 
-**Note:** The Ratings field in Social Ninja is now available within Fluent Forms.![fluentforms input field](https://docs.wpsocialninja.com/assets/create-forms-2.Bntq-nyo.webp)
-
+**Note:** The Ratings field in Social Ninja is now available within Fluent Forms.
 ### Step 3: Configure the WP Social Ninja Integration Feed ​
 
 After you select the WP Social Ninja integration, a configuration panel will appear. You must tell this specific form to send its data to WP Social Ninja.
 
 Inside your form editor, go to the **Settings & Integrations** tab. Select **Configure Integration** from the left-hand menu. Click the "**Add New Integration**" button and select "**WPSocial Ninja Integration**" from the dropdown list.
-
-![configure integration 03](https://docs.wpsocialninja.com/assets/add-new-integration-3.DUzcgvfx.webp)
 
 ## Step 4: Map Your Form Fields ​
 
@@ -1031,27 +917,17 @@ A new configuration panel will appear. This is the most important step. You must
 
 After you have mapped all the necessary fields, click the **Save Feed** button to finalize the integration setup.
 
-![Add new WP social ninja integration feed](https://docs.wpsocialninja.com/assets/Add-New-WP-Social-Ninja-Integration-Feed-Fluent-Forms-4.VUusGvM7.webp)
-
 The form has been integrated successfully. You can modify or remove the feed by selecting the **Settings** or **Delete** icon.
 
-![edit or delete wp social feed 05](https://docs.wpsocialninja.com/assets/edit-or-delete-5.BIRpcCpg.webp)
-
 After that, click the **Save Form** button. Then you can **copy** the Form's **shortcode** and paste it into any **page/post**.
-
-![review form 06](https://docs.wpsocialninja.com/assets/Review-Form-06.BGAhcFPn.webp)
 
 ### Step 5: Create a Fluent Forms Review Template ​
 
 After setting up your form, create a template in WP Social Ninja to display the submitted reviews. Go to your **WP Social Ninja** dashboard. Click **Templates → Add New Template** and choose **Add Review Template**.
 
-![Add Review Template](https://docs.wpsocialninja.com/assets/add-review-template-6.CHv8U6_u.webp)
-
 In the template editor, go to **General → Platforms**. Select **Fluent Forms** from the list of **platforms**. Style your template (layout, colors, etc.) and click the **Save** button.
 
 Now, any reviews submitted through your configured form will automatically be fetched and displayed using this template.
-
-![Select Fluent Forms Template](https://docs.wpsocialninja.com/assets/select-fluent-forms-7.B_PeaWeU.webp)
 
 ## Step 6: Display Your Form and Reviews ​
 
@@ -1066,8 +942,6 @@ By default, reviews might appear instantly. If you want to approve each review b
 
 - Go to **WP Social Ninja → Settings → Reviews Platform → Fluent Form Settings**.
 - **Enable the Review/Testimonial** must be manually approved option. After that, click the **Save Settings** button.
-
-![fluent form settings 09](https://docs.wpsocialninja.com/assets/fluent-forms-settings-8.BOPpUQSz.webp)
 
 Now, all new submissions will go to the **Reviews** tab in WP Social Ninja, where you can manually approve or disapprove them before they appear on your site. You can check out the - **How to add Custom Reviews** documentation.
 
@@ -1100,15 +974,9 @@ To use WP Social Ninja as the main review source for FluentCart, you first need 
 
 Navigate to **WP Social Ninja → Platforms** from your WordPress dashboard. Locate **FluentCart** under the **Business Reviews** section and click on the **Settings** icon.
 
-![Fluentcart](https://docs.wpsocialninja.com/assets/fluentcart-settings-1.BomboOS5.webp)
-
 Alternatively, go to **WP Social Ninja → Settings → Reviews Platforms → Fluent Cart Settings** and click the **Configure Connection** button.
 
-![Configure Connection](https://docs.wpsocialninja.com/assets/configure-connection-2.CVZUNeJc.webp)
-
 In the **Fluent Cart Configuration** pop-up, use the search bar to find and select the specific products you want to fetch reviews for, also if you want to connect all of your FluentCart product simply click on the **Connect all Product** here. Click **Save** to confirm your selection.
-
-![Select Product](https://docs.wpsocialninja.com/assets/select-product-3.Y_ZAln7k.webp)
 
 Once connected, your products appear under **Your Connected FluentCart Products**, each with its own refresh icon so you can re-sync that product's reviews at any time. Click **Add More Product** whenever you want to connect additional products to WP Social Ninja.
 
@@ -1126,8 +994,7 @@ There's nothing else to configure — your store is ready to collect and display
 
 NOTE
 
-**Prefer full control?** Choose **Start from a blank template → Add New Template** instead. This creates an empty template only, leaving you to create the review form, connect the **Write a Review** button, and turn on **Main Review Hub** yourself (the manual steps are covered below). Quick Setup is a **Pro** feature.![The FluentCart Configuration pop-up showing the connected products list with an override badge, and the Set Up Review Hub button](https://docs.wpsocialninja.com/assets/fluentcart-quick-setup.OBHg_yjd.webp)
-
+**Prefer full control?** Choose **Start from a blank template → Add New Template** instead. This creates an empty template only, leaving you to create the review form, connect the **Write a Review** button, and turn on **Main Review Hub** yourself (the manual steps are covered below). Quick Setup is a **Pro** feature.
 ## Customizing the FluentCart Reviews Layout ​
 
 After establishing the connection, you can fine-tune how reviews appear on your storefront to match your site's branding and user experience.
@@ -1154,23 +1021,17 @@ If you select the drawer behavior, you can choose between two visual styles:
 - **Modern:** A sleek, wide-panel layout that supports outside-click-to-close behavior.
 - **Default:** A standard slide-in panel style.
 
-![Fluentcart Settings](https://docs.wpsocialninja.com/assets/fluentcart-settings-5.DHr2ijjY.webp)
-
 ## Product-Level Integration Settings ​
 
 You can manage the WP Social Ninja integration directly from within the FluentCart product editor.
 
 Go to **FluentCart Pro → Products** and select a product to edit. Navigate to the **Integrations** tab for that product. Click the **Add Integration** dropdown and select **WP Social Ninja**.
 
-![Add Integration](https://docs.wpsocialninja.com/assets/add-integration-6.yDwh77xf.webp)
-
 Configure the integration by providing a **Title**, selecting your desired WP Social Ninja **Template**, and choosing if the feed should run on specific variations. Toggle the **Enable this Integration** switch and click **Create WP Social Ninja Feed**.
 
 NOTE
 
-When selecting a **Native Template** for your review collection, ensure that the **Review Target** is specifically set to FluentCart. For a deeper understanding of custom source templates, please refer to the detailed [documentation](/guide/custom-source/custom-source-overview).![Create WP Social Ninja Feed](https://docs.wpsocialninja.com/assets/create-wpsocialninja-feed-7.DnJUYpFw.webp)
-
-Per-Product Override Indicator (Pro)
+When selecting a **Native Template** for your review collection, ensure that the **Review Target** is specifically set to FluentCart. For a deeper understanding of custom source templates, please refer to the detailed [documentation](/guide/custom-source/custom-source-overview).Per-Product Override Indicator (Pro)
 
 A product-level integration configured here in FluentCart takes precedence over your global review settings for that product. So you always know when this is happening, WP Social Ninja shows an **override badge** next to that product in the connected-products list, along with a direct link to the product's FluentCart **Integrations** screen — making it easy to review or resolve the conflicting setting.
 ## Managing FluentCart Integrations ​
@@ -1181,11 +1042,7 @@ Once you have added an integration for a specific product, you can manage it dir
 - **Edit (Pencil Icon):** Click the edit icon to re-open the configuration settings and modify the template selection or change the integration title.
 - **Delete (Trash Icon):** Permanently remove the WP Social Ninja integration from that specific product.
 
-![Managing FluentCart](https://docs.wpsocialninja.com/assets/edit-or-delete-8.qazfYuFv.webp)
-
 Once your WP Social Ninja template is connected to FluentCart, the review display is designed to build trust by showing detailed customer feedback directly on the product page.
-
-![FluentCart Review](https://docs.wpsocialninja.com/assets/fluentcart-review-9.C9Fg7lr2.webp)
 
 ---
 
@@ -1208,8 +1065,6 @@ Before you begin, ensure you have already connected your business [platforms](..
 - From your WordPress dashboard, go to **WPSocialNinja** > **Settings**.
 - Click on the **Get Reviews via QR Code** submenu item. This will take you to the QR code dashboard.
 
-![get reviews via qr code 1](https://docs.wpsocialninja.com/assets/qr-code-review-1.B6o-psrY.webp)
-
 #### Create a New QR Code ​
 
 - Click the **+ Add New QR code** button to open the configuration popup.
@@ -1217,22 +1072,16 @@ Before you begin, ensure you have already connected your business [platforms](..
 - Under **Business URL**, select the specific platform URL you want the QR code to link to.
 - Click the **Generate** button.
 
-![get reviews via qr code 2](https://docs.wpsocialninja.com/assets/qr-code-review-2.rYHpI44P.webp)
-
 #### Download Your QR Code ​
 
 - After generation, the QR code will be displayed.
 - Click the **PNG** or **SVG** button to download the QR code image file to your computer.
-
-![get reviews via qr code 3](https://docs.wpsocialninja.com/assets/qr-code-review-3.CJ8ncAL8.webp)
 
 #### Manage Your QR Codes ​
 
 - After creation, your QR code will be added to the list on the main dashboard where you can see details for each code, including its **Name**, **QR Code** image, and the **Total Scans** count.
 - To edit or delete a QR code, use the icons at the end of its row: - Click the **pencil icon** to edit the code's details.
 - Click the **delete icon** to permanently remove the code.
-
-![get reviews via qr code 4](https://docs.wpsocialninja.com/assets/qr-code-review-4.CB1MjQFI.webp)
 
 #### Using Your QR Code ​
 
@@ -1270,8 +1119,6 @@ This section is dedicated to improving your website's performance by managing ho
 - **Optimize Images**: Enabling this toggle allows the plugin to generate and store optimized versions of review images in multiple sizes using your local WordPress storage. This significantly improves loading speeds for your review templates.
 - **Reset Local Images**: Clicking the **Reset Image Storage** button will clear all locally stored images for the Reviews platform. Use this if your images are not appearing correctly or if you wish to refresh your local storage.
 
-![Access Global Review Settings](https://docs.wpsocialninja.com/assets/access-global-review-settings.BTkAC0k-.webp)
-
 ## Review Publishing Settings ​
 
 Control how and when new reviews go live on your website with the **Review Publishing Mode**. There are three distinct modes available:
@@ -1291,8 +1138,6 @@ When using the filtered publishing mode, you can define the following criteria:
 - **Blocked/Spam Words**: Enter specific keywords (separated by commas) that will trigger spam detection. Any review containing these words will be sent to moderation automatically.
 - **Minimum Review Length**: Set a character limit. Shorter, low-effort reviews will be held for moderation rather than being published instantly.
 
-![Review Publishing Settings](https://docs.wpsocialninja.com/assets/review-publishing-settings-2.BNkqUznf.webp)
-
 ## AI Review Summarizer API Settings ​
 
 WP Social Ninja integrates with AI platforms to provide summarized versions of your reviews.
@@ -1302,8 +1147,6 @@ WP Social Ninja integrates with AI platforms to provide summarized versions of y
 - **API Key**: Enter the unique API key provided by your selected AI platform to securely connect the service.
 
 After setting up all the configurations to your preference, click on the **"Save Settings"** button located at the top right corner to apply the changes.
-
-![AI Review Settings](https://docs.wpsocialninja.com/assets/ai-review-settings-3.BEpvu-wl.webp)
 
 ## FluentCRM Review Tagging ​
 
@@ -1318,8 +1161,6 @@ review_submitted
 . Reference this exact tag name in your FluentCRM automation condition.
 
 After making your selection, click **Save Settings** to apply the changes.
-
-![The FluentCRM Review Tagging settings card with the Enable Review Tagging toggle and Tag Name dropdown](https://docs.wpsocialninja.com/assets/fluentcrm-review-tagging.4Tf4Mj8R.webp)
 
 NOTE
 
@@ -1341,19 +1182,11 @@ Google Reviews connect through WP Social Ninja's [secure connection bridge](../g
 
 **First,** from your WordPress dashboard, go to **WP Social Ninja → Platforms** and select **Google** from the list of platforms.
 
-![Selecting Google from the Platforms list in WP Social Ninja](https://docs.wpsocialninja.com/assets/google-business-review-1.Dn3kTyQP.webp)
-
 **Then,** in the **Google Business Profile Configuration** pop-up, click the **Sign in And Get Google Access Code** button. As the pop-up says, it only takes one click.
-
-![The Google Business Profile Configuration pop-up with the Sign in And Get Google Access Code button](https://docs.wpsocialninja.com/assets/google-business-connect.DvBsxMN0.webp)
 
 **Next,** choose the email account associated with your Google Business Profile.
 
-![Choosing your Google account](https://docs.wpsocialninja.com/assets/google-business-review-3.C-sN1W1Z.webp)
-
 **Finally,** click **Continue** to grant permission. WP Social Ninja takes care of the rest and brings you right back, with your Google Business Profile connected — no code to copy or paste.
-
-![Granting permission to WP Social Ninja](https://docs.wpsocialninja.com/assets/google-business-review-4.D_7cfYX6.webp)
 
 TIP
 
@@ -1377,16 +1210,12 @@ To begin, you need to generate a form dedicated to your feedback collection.
 
 From your WordPress dashboard, navigate to **WP Social Ninja → Review Forms**. If you have no forms yet, click the **+ Create Form** button in the center of the page.
 
-![Create a REview Form](https://docs.wpsocialninja.com/assets/create-form-1.B_eZUh_1.webp)
-
 ## Step 2: Customize Form Display ​
 
 Once the editor opens, the **Form Display** tab allows you to control the initial look and feel of the form.
 
 - **Form Title & Subtitle:** Toggle these on to add a heading (e.g., "Leave a Review") and a short description to guide your users.
 - **Rating Style:** Choose the visual icon for your ratings. Options include **Star**, **Heart**, **Emoji**, and **Number**.
-
-![Create a REview Form](https://docs.wpsocialninja.com/assets/form-display-2.DI6Fs0W1.webp)
 
 ## Step 3: Configure Form Fields ​
 
@@ -1402,6 +1231,18 @@ The **Form Fields** tab is where you determine what information you want to coll
 - **Upload Photos:** Enable this toggle to allow customers to upload images along with their reviews, providing valuable visual social proof.
 - **Privacy Policy Agreement:** You can add required checkboxes for **Privacy Policy** (with a custom URL) and a **Permission** statement to ensure you have the right to display the review publicly.
 
+#### Testimonial fields ​
+
+Four more fields become available when your form's target is set to **Testimonial**. (see [Step 4](#step-4-configure-general-settings-targets)):
+
+- **Your Position:** The submitter's job title, e.g. "Marketing Manager".
+- **Company:** The name of their company.
+- **Company Website:** A link to their company's website.
+- **Company Logo:** A single image upload for their company logo, up to 2 MB.
+
+NOTE
+
+These are hidden on forms with any other target, since they only make sense on a testimonial.
 ### Field Controls ​
 
 For each field, you can:
@@ -1414,8 +1255,6 @@ For each field, you can:
 
 These options help you fully customize your review form to match your requirements and collect the information you need.
 
-![Create a REview Form](https://docs.wpsocialninja.com/assets/form-field-3.lPVO6pzh.webp)
-
 ## Step 4: Configure General Settings & Targets ​
 
 In the **General Settings** tab, you manage the form's behavior and determine where the submitted data is sent.
@@ -1427,19 +1266,31 @@ In the **General Settings** tab, you manage the form's behavior and determine wh
 - **Require Login:** Toggle this on if you only want registered site users to leave reviews.
 - **One Per Email:** Enable this to prevent multiple submissions from the same email address.
 
-**Review Target:** This is a crucial setting. It tells WP Social Ninja which category or product these reviews belong to. You can select:
+**Review Target:** This is a crucial setting. It tells WP Social Ninja where the submitted reviews should go. You can select:
 
-- **Native Form (Generic):** For general site testimonials.
+- **Native Form (Generic):** For general site reviews.
+- **Testimonial:** Collect testimonials from your customers. Submissions appear under **All Testimonials** instead of your reviews list, and the form gains the author position, company, website and logo fields described above.
 - **FluentCart Product:** To link reviews directly to items in your [FluentCart](/guide/business-reviews/fluentcart-product-review) store.
 - **WooCommerce Product:** To link reviews to specific [WooCommerce](/guide/business-reviews/woocommerce-reviews) products.
 
-![Create a REview Form](https://docs.wpsocialninja.com/assets/general-settings-4.DsxUmXqK.webp)
+### Collecting Testimonials with a Form ​
 
+Choosing **Testimonial** as your target turns the form into a testimonial collector, which saves you copying feedback in by hand.
+
+1. Set the **Review Target** to **Testimonial**.
+
+1. Go back to the **Form Fields** tab, where the four author fields are now listed.
+2. **Enable** the ones you want to ask for, and adjust their labels to suit your audience.
+3. **Save** the form and place it on your site as usual.
+
+Everything submitted through this form now appears under **WP Social Ninja → All Testimonials**, ready to display with a [testimonial template](/guide/advanced-features/add-testimonials).
+
+WARNING
+
+Changing the target on an existing form only affects future submissions. Reviews the form has already collected stay where they were originally saved.
 ## Step 5: Enable Spam Protection ​
 
 To keep your reviews clean, use the **Spam Protection** tab. For stronger protection, select **Turnstile**. You will need to provide your **Site Key** and **Secret Key** from the respective provider. If you want to know more about cloudflare turnstile, read this [Documentation](/guide/management-settings/configure-cloudflare-turnstile)
-
-![Create a Review Form](https://docs.wpsocialninja.com/assets/spam-protection-5.bEjDYn76.webp)
 
 ## Step 6: Display the Form on Your Site ​
 
@@ -1471,7 +1322,103 @@ Once you have created your Native Review Forms, you can manage them from the mai
 
 NOTE
 
-All reviews submitted through this form will appear in your **WP Social Ninja → Reviews** dashboard. Depending on your **Global Review Settings**, they will land in either the **Approved** or **Pending** tabs for moderation.![Create a REview Form](https://docs.wpsocialninja.com/assets/edit-delete-6.B2P6ke6i.webp)
+All reviews submitted through this form will appear in your **WP Social Ninja → Reviews** dashboard. Depending on your **Global Review Settings**, they will land in either the **Approved** or **Pending** tabs for moderation.
+
+---
+
+## Organize Reviews with Categories ​
+
+**Source:** [https://docs.wpsocialninja.com/guide/business-reviews/organize-reviews-with-categories.html](https://docs.wpsocialninja.com/guide/business-reviews/organize-reviews-with-categories.html)
+
+# Organize Reviews with Categories ​
+
+Categories are labels you attach to your reviews so you can find and display them in groups. You might tag reviews by the page you want them on (**Home**, **About**), by what they talk about (**Support**, **Delivery**), or by product line whatever suits your site.
+
+Once your reviews are categorized, you can build a template that shows only one category, so each page of your website displays the reviews that actually belong there.
+
+A review can belong to **more than one** category at the same time. A review that works well on both your home page and your about page can simply be tagged with both.
+
+Categories work the same way for [Testimonials](../advanced-features/add-testimonials) as they do for reviews, and both share the same set of categories.
+
+## Add Categories to a Single Review ​
+
+When you add or edit a review, you'll find the **Category** field in the form.
+
+1. Go to **WP Social Ninja → Reviews** from your WordPress dashboard.
+2. Click the **three-dot (⋮)** menu on the review you want to categorize, then select **Edit**.
+
+1. In the **Edit Review** window, click the **Review Category** field and pick any categories you'd like from the list.
+2. To make a brand-new category, type its name and press **Enter**.
+3. Click **Update** to save your changes. (When you're adding a brand-new review, this button reads **Save**.)
+
+Your categories then appear as small tags in the **Categories** column of the reviews table. To remove one, click the **×** on the tag this only unassigns it from that review, and the category itself stays available for others.
+
+## Bulk Tagging & Category Management ​
+
+If you're organizing an existing collection of reviews, tagging them one at a time is slow. Use the bulk action instead.
+
+1. Tick the checkbox next to each review you want to tag. Tick the box in the table header to select everything on the page.
+2. Choose **Assign Category** from the **Bulk Action** dropdown.
+3. Click **Apply**.
+
+1. In the **Assign Category** window that opens, either keep **Existing category** selected and choose one from the **Category** dropdown, or switch to **New category** and type a name to create it on the spot.
+
+1. Click **Assign Category** to add it to every selected review.
+
+The same window can also take a category away. Select your reviews, choose the category, and click **Remove Category** instead. This only unassigns it from the reviews you selected, it doesn't delete the category.
+
+You'll find these same options on your individual custom source pages and on the **Testimonials** screen, so you can organize each collection without leaving it.
+
+## Rename and Delete Categories ​
+
+Over time you may end up with a typo, or a category you no longer use. Click the **Manage Categories** button above the reviews table to tidy them up.
+
+The window lists every category you've created, each with a **pencil** (edit) and a **trash** (delete) icon next to it.
+
+- To fix a name, click the **pencil** icon, type the new name, and save. Every review keeps its tag, so nothing needs re-tagging.
+- To remove a category entirely, click the **trash** icon and confirm.
+
+NOTE
+
+Deleting a category removes it from every review that uses it, across your whole site, and this can't be undone. The reviews themselves are never deleted only the tag. If you just want to untag a few reviews, use **Remove Category** from the bulk action instead.
+### Who Can Manage Categories ​
+
+Because categories are shared between reviews and testimonials, renaming or deleting one changes both screens at once. For that reason, the **Manage Categories** button only appears for people who can manage **both** reviews and testimonials.
+
+A [manager](/guide/management-settings/manager) with permission for only one of the two can still tag and untag on their own screen, they just cannot rename or delete a category that the other screen also relies on.
+
+## Show Only One Category in a Template ​
+
+This is where categories pay off. When you build or edit a review template, open the **Filter** settings and use **Filter by Category** to choose which categories that template should display.
+
+For example, tag your strongest reviews as **Home** and set your home page template to filter by that category. The template will then show only those reviews, and any review you tag **Home** later will appear automatically.
+
+You can read more about building templates in [Create Templates](./create-template). **Filter by Category** is a Pro feature, as are adding and editing custom reviews and testimonials. You'll need WP Social Ninja Pro to use categories to their full extent.
+
+## Categories in CSV Files ​
+
+Categories travel directly with your reviews when you [export and import](../import-export-migration/export-import-custom-reviews) them, making spreadsheets the fastest way to organize massive collections.
+
+- **Formatting Multiple Categories:** Your CSV features a dedicated category column. To assign several categories to one review, list them in that single cell separated by a **vertical bar**.
+
+```
+Home|About
+```- **Single Categories:** A review with only one category just needs the name with no bar.
+- **Auto-Creation:** Any category listed in your file that doesn't exist on your site yet is automatically created for you during the **import**.
+
+NOTE
+
+Use the vertical bar 
+```
+|
+```
+
+ rather than a comma. A comma would be read as part of the category name, so 
+```
+Home, About
+```
+
+ would create one category actually called "Home, About".
 
 ---
 
@@ -1500,8 +1447,6 @@ This section styles the (★) star ratings that appear on your reviews and in th
 #### Empty Star ​
 
 - **Empty Star Color:** This sets the color of the "empty" or "unfilled" stars (e.g., the 1 gray star in a 4-star review).
-
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-1.o33OTgyI.webp)
 
 ### 2. Header ​
 
@@ -1552,8 +1497,6 @@ This controls the overall container or "box" that holds all the header elements.
 - **Background Color:** Sets a background color for the entire header area.
 - **Border Type:** Lets you choose the style of the border for the header box (e.g., **Solid**, **Dotted**, **Dashed**, or **None**).
 
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-2.CLfiU4u5.webp)
-
 ### 3. Reviewer Name ​
 
 This section styles the author's name on each individual review card.
@@ -1561,8 +1504,6 @@ This section styles the author's name on each individual review card.
 - **Text Color:** Sets the color of the reviewer's name.
 - **Typography:** Opens the full set of font controls for the name.
 - **Spacing Top:** This adds a bit of empty space (in pixels) above the name, pushing it away from the element above it (like the star rating).
-
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-3.CJY5DqZ_.webp)
 
 ### 4. Verified Badge ​
 
@@ -1576,8 +1517,6 @@ This section styles the "Verified" badge that can appear on reviews.
 
 - **Checkmark Color:** Sets the color of the checkmark icon inside the badge.
 
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-4.BgtS8Z3m.webp)
-
 ### 5. Author Position ​
 
 This section styles the author's job title (e.g., "Marketing Manager"), which you can add to Testimonials.
@@ -1585,8 +1524,6 @@ This section styles the author's job title (e.g., "Marketing Manager"), which yo
 - **Text Color:** Sets the color of the author's position text.
 - **Typography:** Opens the full set of font controls for this text.
 - **Spacing Top:** This adds empty space (in pixels) above the author's position.
-
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-5.Ha_esB-A.webp)
 
 ### 6. Review Date ​
 
@@ -1596,8 +1533,6 @@ This section styles the date (e.g., "October 30, 2025") on each individual revie
 - **Typography:** Opens the full set of font controls for the date.
 - **Spacing Top:** This adds empty space (in pixels) above the date.
 
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-6.B8AOjUOU.webp)
-
 ### 7. Title ​
 
 This section styles the main "headline" or "title" of each individual review (e.g., "The Best Plugin Ever!").
@@ -1605,8 +1540,6 @@ This section styles the main "headline" or "title" of each individual review (e.
 - **Text Color:** Sets the color of the review title text.
 - **Typography:** Opens the full set of font controls for the review title.
 - **Spacing Bottom:** This adds empty space (in pixels) below the title, pushing it away from the main review text.
-
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-7.CwTTkMjn.webp)
 
 ### 8. Content ​
 
@@ -1616,16 +1549,12 @@ This section styles the main body text (the full review) on each individual revi
 - **Typography:** Opens the full set of font controls for the review text.
 - **Spacing Top:** This adds empty space (in pixels) above the review text.
 
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-8.DxIgJyXv.webp)
-
 ### 9. Read More/Less ​
 
 This section styles the "Read More" or "Read Less" link that appears on long reviews.
 
 - **Text Color:** Sets the color of the "Read More/Less" link, making it stand out.
 - **Typography:** Opens the full set of font controls for this link.
-
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-9.C_SINosa.webp)
 
 ### 10. Platform Name ​
 
@@ -1634,8 +1563,6 @@ This section styles the platform label (e.g., "Google," "Facebook") that can app
 - **Text Color:** Sets the color of the text inside the platform badge.
 - **Background Color:** Sets the background color of the platform badge itself.
 - **Typography:** Opens the full set of font controls for the platform name.
-
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-10.DRVHnC1u.webp)
 
 ### 11. Badge ​
 
@@ -1661,8 +1588,6 @@ This section styles your template only if you selected the "Badge" layout type i
 - **Background Color:** Sets the background color of the entire badge.
 - **Typography:** (This likely refers to a global font setting for the badge if other typography is not set).
 - **Border Type:** Lets you choose the style of the border for the badge (e.g., **Solid**, **Dotted**, **Dashed**, or **None**).
-
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-11.4orMShYi.webp)
 
 ### 12. Notification ​
 
@@ -1693,8 +1618,6 @@ This section styles your reviews only if you are using them in a Notification Po
 - **Typography:** (This likely refers to a global font setting for the popup).
 - **Border Type:** Lets you choose the style of the border for the popup.
 
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-12.Bo3tYPH8.webp)
-
 ### 13. Pagination ​
 
 This section styles the "Load More" button at the bottom of your feed (if you enabled it in the General tab).
@@ -1703,8 +1626,6 @@ This section styles the "Load More" button at the bottom of your feed (if you en
 - **Background Color:** Sets the main background color of the button.
 - **Typography:** Opens the full set of font controls for the button's text.
 - **Border Type:** Lets you choose the style of the border for the button (e.g., **Solid**, **Dotted**, **Dashed**, or **None**).
-
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-13.HiKImfSP.webp)
 
 ### 14. Review Box ​
 
@@ -1716,8 +1637,6 @@ This is a very important section. The **Review Box** is the entire container or 
 - **Width:** This setting (which appears if you select a Border Type) lets you control the thickness of the border. You can set the thickness (in pixels) for the **Top**, **Right**, **Bottom**, and **Left** sides individually.
 - **Color:** This opens a color picker to set the color of the border itself.
 
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-style-14.DPjpjD63.webp)
-
 ---
 
 ## Connection Settings ​
@@ -1727,8 +1646,6 @@ The **Connection** tab is a simple shortcut. It allows you to connect a new revi
 This is very useful if you are building a template and realize you want to include a platform you haven't connected yet, or if you want to add multiple accounts from the same platform.
 
 **Please Note:** The steps to connect an account here are identical to the main platform connection process.
-
-![Template style and connection](https://docs.wpsocialninja.com/assets/review-template-connection.DcyTOAil.webp)
 
 For a complete, step-by-step guide on how to connect each platform, please see our main Configuration guides:
 
@@ -1746,55 +1663,117 @@ For a complete, step-by-step guide on how to connect each platform, please see o
 
 # Tripadvisor Reviews ​
 
-WP Social Ninja integrates with TripAdvisor, allowing you to collect and display reviews from the platform to enhance your business's credibility.
+WP Social Ninja integrates with Tripadvisor so you can collect reviews from your listing and display them anywhere on your website.
 
-It offers two methods for gathering TripAdvisor reviews: using a **Business URL** or through an **API key**. We recommend using the API method, as it allows for a more comprehensive and reliable data transfer. With the API, you can control the frequency and volume of data requests, ensuring a seamless and customizable review collection process.
+Tripadvisor connections use an **API key** together with your listing's **Place ID**. Both come from Tripadvisor, and this guide walks you through getting each one and saving them in WP Social Ninja.
 
-In this article, we will guide you through the steps to obtain the TripAdvisor API from your TripAdvisor account and how to connect it to WP Social Ninja.
+Tripadvisor is retiring its old developer platform
 
-## Get Tripadvisor Credentials ​
+Tripadvisor is switching off its old Content API on **31 August 2026**. If you connected Tripadvisor before this, your existing key keeps working right up until that date nothing breaks today and you are not forced to reconnect.
 
-To obtain your TripAdvisor credentials, log in to your TripAdvisor [developer account](https://www.tripadvisor.com/developers). From the navigation bar, select **My API** and then click the **Create API Key** button.
+To stay connected after that date, create a new key on the current Tripadvisor developer platform and save it over the old one.
 
-![Tripadvisor API Configuration 1](https://docs.wpsocialninja.com/assets/Tripadvisor-1-scaled.Dl47VThK.webp)
+WP Social Ninja detects which platform your key belongs to automatically, so there is no setting to change and no need to remove and re-add your business. See [Moving an Older Connection](#moving-an-older-connection) below.
+## Get Your Tripadvisor API Key ​
+
+Log in to your Tripadvisor [developer account](https://www.tripadvisor.com/developers) and sign up for API access. From the navigation bar, select **My API** and then click the **Create API Key** button.
+
+To generate your key, Tripadvisor asks for some information about your business.
+
+Verifying your website is required. Enter your website address and register it under your business so the connection works.
+
+In the API Key restriction section, enter your domain name and click **Save**.
+
+Once the form is complete your API key is generated, along with the domain you registered for it. Click **Copy to Clipboard** to copy the key.
 
 TIP
 
-TripAdvisor offers a free API key that allows up to 5,000 requests for local details, photos, or reviews but you have to provide billing details to get this free API. To access additional requests and features, you will need to upgrade to their paid plans. For more information, refer to their [API documentation](https://tripadvisor-content-api.readme.io/reference/overview)*.*To generate your API key, you will need to provide TripAdvisor with some information about your business.
-
-![Tripadvisor API Configuration 2](https://docs.wpsocialninja.com/assets/Tripadvisor-2.DAM01Odv.webp)
-
-Verifying your website is necessary for creating the API. Enter your website address and register it under your business to ensure a smooth API transfer.
-
-In the API Key restriction section, input your domain name and click the **Save** button.
-
-![Tripadvisor API Configuration 3](https://docs.wpsocialninja.com/assets/Tripadvisor-3.B_JFZEfU.webp)
-
-Once you’ve completed the form, your API key will be generated and you will see the domain name you have registered for this API. Just click the **Copy to Clipboard** button to copy the API key.
-
-![Tripadvisor API Configuration 4](https://docs.wpsocialninja.com/assets/image.CnX5yYHd.png)
-
+Tripadvisor's free plan requires billing details before it will issue a key. Check their current pricing page for what the free allowance covers, since Tripadvisor changes these limits from time to time.
 ## Get the Place ID ​
 
-To set up TripAdvisor with WP Social Ninja, you'll need the **Place ID** from your TripAdvisor business profile. You can find it in the URL of your Business profile.
+Your **Place ID** is the number that identifies your listing, and you can read it straight out of your Tripadvisor page URL.
 
-Look for an ID in the URL that starts with the letter 'd'—this is your Place ID. In this case, the actual Place ID is '752551,' excluding the 'd' prefix. Copy the code from the URL.
+Look for the number that comes after **-d** in the URL. In an address like:
 
-![Tripadvisor API Configuration 5](https://docs.wpsocialninja.com/assets/Tripadvisor-ID-scaled.DrODOZFp.webp)
+```
+…-g60724-d8725965-Reviews-…
+```
 
+the Place ID is 
+```
+8725965
+```
+
+.
+
+WARNING
+
+Take the number after **-d**, not the one after **-g**. The 
+```
+-g
+```
+
+ number identifies the *city*, not your business, and a connection saved with it will not find your reviews.Which businesses can connect
+
+Tripadvisor shares reviews for **hotels, restaurants and attractions**. It does not share reviews for tours or vacation rentals, so those listings cannot be connected.
 ## Configuring Tripadvisor with WP Social Ninja ​
 
-After receiving your TripAdvisor credentials, navigate to your WP Social Ninja dashboard and select [Platform](../getting-started/all-platforms-of-wp-social-ninja) from the navigation bar. Search for TripAdvisor and click on the **Settings** icon button.
+Once you have both your API key and your Place ID, go to your WP Social Ninja dashboard and select [Platform](/guide/getting-started/all-platforms-of-wp-social-ninja) from the navigation bar. Find Tripadvisor and click its **Settings** icon.
 
-![Tripadvisor API Configuration 6](https://docs.wpsocialninja.com/assets/tripadvisor-review-1.DplNadw7.webp)
+The Tripadvisor configuration popup appears.
 
-A TripAdvisor configuration popup will appear. Select Credential Type: **API Key**, then paste your **API Key** and **ID** into the appropriate fields. Finally, click the **Save** button.
+1. Paste your **API Key** into the API Key field.
+2. Paste your **Place ID** into the ID field.
+3. Choose the review **language** you want to collect.
+4. Click **Save**.
 
-![Tripadvisor API Configuration 7](https://docs.wpsocialninja.com/assets/tripadvisor-review-2.rbZiG9Jx.webp)
+Your business appears under **Your Connected Business Accounts** once the key is verified, and WP Social Ninja starts pulling in reviews.
+
+## How Your Reviews Build Up ​
+
+Tripadvisor's free plan sends the **3 most recent reviews** on each sync, rather than your whole review history at once.
+
+That is not a limit on how many reviews you can display. Every sync adds any new reviews it finds and keeps everything already saved on your site, so your collection grows over time. Tripadvisor's free plan also allows 1,000 items in total before charges apply.
+
+## Sync Frequency ​
+
+Tripadvisor counts every sync against your plan's allowance, so WP Social Ninja limits how often it will check for new reviews.
+
+The shortest interval available for Tripadvisor is **1 Week**. More frequent options are offered for other platforms but are hidden here, because anything more frequent would burn through your Tripadvisor allowance quickly.
+
+You can change this under **Settings → Reviews Settings**, and you can always pull new reviews immediately with the manual sync button on the platform screen.
 
 TIP
 
-WP Social Ninja will initially show the 5 most recent reviews from TripAdvisor, which will be stored locally on your site. The plugin will regularly check for new reviews and update your feed as they become available.
+If you connected Tripadvisor a while ago on a daily or three-day schedule, opening and saving the settings screen moves that connection onto the weekly schedule shown in the selector.
+## Moving an Older Connection ​
+
+If you connected Tripadvisor before their platform change, you will see a note above **Your Connected Business Accounts** reminding you about the 31 August 2026 cutoff. Moving across takes one step:
+
+1. Create a new API key on the [Tripadvisor developer platform](https://www.tripadvisor.com/developers).
+2. Open your Tripadvisor settings in WP Social Ninja.
+3. Paste the new key over the old one and click **Save**.
+
+That is the whole migration. Keep the same Place ID, keep the same connection, and keep every review already saved on your site. WP Social Ninja works out which Tripadvisor platform the new key belongs to on its own.
+
+The reminder disappears once all your Tripadvisor connections are on the new platform.
+
+WARNING
+
+Keys do not transfer between the old and new Tripadvisor platforms. A key from the old developer screen will not work on the new one, and vice versa — you need to create a fresh key rather than reuse your existing one.
+## Troubleshooting ​
+
+**"Invalid API key" after pasting a new key.** Check that the domain restriction on the key matches the site you are saving it on. Tripadvisor rejects keys used from a domain they were not registered for.
+
+**No reviews arriving.** Confirm your Place ID is the number after **-d** and not after **-g**, and that your listing is a hotel, restaurant or attraction.
+
+**"Too many requests".** You have hit Tripadvisor's rate limit. WP Social Ninja pauses calls for a short while and resumes on its own — no action needed. If it keeps happening, lengthen your sync frequency.
+
+## Displaying Your Reviews ​
+
+With Tripadvisor connected, [create a review template](/guide/business-reviews/create-template) to choose which reviews appear and how they look, then place it on any page with a shortcode or block.
+
+You can also let visitors search and filter your reviews themselves — see [Visitor Search, Sort & Filter](/guide/business-reviews/visitor-search-sort-filter).
 
 ---
 
@@ -1826,15 +1805,11 @@ In the main menu on the left-hand side, find the **WP Social Ninja** icon. Click
 
 Find the **Trustpilot** row, and click the **Settings icon** button on the right side.
 
-![Trustpilot Review](https://docs.wpsocialninja.com/assets/trustpilot-review-1.Bz8YhSS9.webp)
-
 ### Step 3: Find the "Business Domain" Field ​
 
 A pop-up window will appear titled "Trustpilot Configuration."
 
 You will see it has a single empty text box labeled **Enter your business URL to get your reviews**. This is the only piece of information we need to find!
-
-![Trustpilot Review](https://docs.wpsocialninja.com/assets/trustpilot-review-2.btyjcqnl.webp)
 
 Keep this pop-up window open in your browser tab. We are now going to find your Business Domain.
 
@@ -1851,8 +1826,6 @@ This is the most important step, but don't worry, it's very easy.
 
 Carefully **Copy** the URL.
 
-![Trustpilot Review](https://docs.wpsocialninja.com/assets/trustpilot-review-3.C-ZOfsW1.webp)
-
 ### Step 5: Connect Your Business in WP Social Ninja ​
 
 Now, go back to your WordPress dashboard browser tab (where the pop-up is still open from Step 3).
@@ -1866,13 +1839,9 @@ https://www.trustpilot.com/review/davidsw.com
 ).
 3. Click the **Save** button.
 
-![Trustpilot Review](https://docs.wpsocialninja.com/assets/trustpilot-review-4.DivRrcSl.webp)
-
 ### Step 6: You're Connected! ​
 
 You will now see that the **Trustpilot** row has a green "Connected" status and lists your business domain. This confirms that WP Social Ninja is successfully connected to your Trustpilot page and is ready to start syncing your reviews.
-
-![Trustpilot Review](https://docs.wpsocialninja.com/assets/trustpilot-review-5.CMyJw1rG.webp)
 
 ## Next Steps ​
 
@@ -1882,6 +1851,96 @@ Now that your account is connected, you're ready for the fun part:
 
 - Click the **Add New Template** button to go to the [template editor](./create-template) and start designing your **Business Reviews** template for Trustpilot.
 - You can click the **Add More Business** button if you run another company and want to connect its Trustpilot page as well.
+
+---
+
+## Let Visitors Search, Sort & Filter Reviews ​
+
+**Source:** [https://docs.wpsocialninja.com/guide/business-reviews/visitor-search-sort-filter.html](https://docs.wpsocialninja.com/guide/business-reviews/visitor-search-sort-filter.html)
+
+# Let Visitors Search, Sort & Filter Reviews ​
+
+Normally you decide the order your reviews appear in, and every visitor sees that same order. That works well for a short feed, but once you have collected dozens or hundreds of reviews, a visitor looking for something specific has to scroll and hope.
+
+This feature adds a small toolbar directly above your reviews with a **search box**, a **sort dropdown**, and a **rating dropdown**. Visitors can then narrow the feed themselves searching for a product they are considering, jumping straight to your 5-star reviews, or reading the oldest ones first.
+
+NOTE
+
+The visitor toolbar is available in **WP Social Ninja Pro**. The switch appears in the free version with a crown icon, but cannot be turned on without a Pro licence.
+## Enable Let Visitors Search, Sort & Filter ​
+
+The toolbar is off by default, and you turn it on per template — so you can offer it on your main reviews page while keeping a homepage slider clean and simple.
+
+1. From your WordPress dashboard, go to **WP Social Ninja → Templates**.
+2. Open the review template you want to add the toolbar to.
+3. On the **General** tab, scroll to the **Filters** section.
+4. Turn on **Let Visitors Search, Sort & Filter**.
+5. Click **Save**.
+
+The editor shows you a preview of the bar as it will appear on your site. The preview is there to show placement and styling the controls in it are not clickable.
+
+## What Your Visitors See ​
+
+The toolbar sits above your reviews and holds up to three controls.
+
+### Search Box ​
+
+Visitors type a word or phrase and press Enter to narrow the feed to matching reviews.
+
+Search looks at:
+
+- The **review text**
+- The **review title**, when your template displays it
+- The **reviewer's name**, but only when your Name Format is set to show full names
+
+If your template hides all three no review text, no title, and no full names there is nothing left to search, so the search box is left out rather than shown as a control that finds nothing.
+
+### Sort Dropdown ​
+
+Lets visitors reorder the feed:
+
+- **Newest first**
+- **Oldest first**
+- **Highest rated**
+- **Lowest rated**
+
+If your template's own Order is set to **Random**, an extra **Featured** option appears at the top so visitors can return to the order you chose.
+
+### Rating Dropdown ​
+
+Lets visitors show reviews of one specific star rating, plus an **All ratings** option to clear the choice.
+
+NOTE
+
+Choosing **4 Stars** shows reviews rated exactly four stars — not "four and above". This is deliberate: a visitor picking a rating usually wants to read that rating specifically.
+## How It Works With Your Own Filters ​
+
+The toolbar lets visitors narrow what you have already chosen to show. It never widens it.
+
+Your **Filters by Minimum Rating** setting still applies. If you set your template to 4 stars and above, the rating dropdown offers only **4 Stars** and **5 Stars**, a visitor cannot reach the 2-star reviews you excluded. Likewise, reviews you removed with **Filter by Include/Exclude** or your word filters stay hidden no matter what a visitor searches for.
+
+If your minimum rating leaves only a single option, the rating dropdown is hidden, since it and **All ratings** would return the same reviews.
+
+For a feed scoped to one product, sorting or filtering keeps that product's scope visitors never see another product's reviews by changing the sort order.
+
+## Where the Toolbar Can Appear ​
+
+The toolbar needs a feed of review cards it can rebuild, so it is offered on:
+
+- **Grid**, **Masonry** and **Slider** layouts
+- **Badge** and **Notification Popup** templates, but only when their display mode is set to **Popup**
+
+It is not offered on:
+
+- **Booking.com** feeds, because Booking.com uses a 1–10 rating scale that a 1–5 star dropdown cannot describe
+- Badge or notification templates that are not in popup mode, since there is no feed to browse
+- Feeds showing an AI-generated review summary
+
+When a template does not support the toolbar, the switch simply does not appear in the editor.
+
+NOTE
+
+Turning on the review title and using the full-name format gives visitors more to search against, which makes the search box noticeably more useful.
 
 ---
 
@@ -1896,8 +1955,6 @@ WP Social Ninja simplifies the process of displaying WooCommerce product reviews
 ## Connecting WooCommerce Reviews ​
 
 Go to your WP Social Ninja plugin's [Platforms](../getting-started/all-platforms-of-wp-social-ninja) section, enable the **WooCommerce** module, and click the **Settings** icon in the right corner.
-
-![Enabling the WooCommerce module and opening its settings](https://docs.wpsocialninja.com/assets/woocommerce-review-1.uF7yOYsm.webp)
 
 INFO
 
@@ -1937,8 +1994,6 @@ There's nothing else to configure — your store is ready to collect and display
 
 Prefer full control over each step? Under **Start from a blank template**, click **Add New Template**. This creates an empty template only, so you'll manually create the review form, connect the **Write a Review** button, and turn on **Main Review Hub** yourself. It takes you to the [template editor](./create-template), where you can design the layout and style for your reviews.
 
-![Selecting a WooCommerce product to fetch reviews for](https://docs.wpsocialninja.com/assets/woocommerce-review-3.B05iWE-f.webp)
-
 ## Global WooCommerce Review Settings ​
 
 Manage performance and layout rules across your entire store from **WP Social Ninja → Settings → Reviews Platform → WooCommerce Settings**. These apply to all products connected to a WooCommerce Review Template.
@@ -1968,8 +2023,6 @@ Manage performance and layout rules across your entire store from **WP Social Ni
 
 After configuring these options, always click the **Save Settings** button to apply your changes.
 
-![wp social ninja woocommerce settings](https://docs.wpsocialninja.com/assets/woocommerce-review-4.CwbSICtb.webp)
-
 ## Enabling Template from WooCommerce product ​
 
 To customize your product reviews in WooCommerce, go to the specific product you want to edit. Click on **Edit** then go to the **Product Data** section and select **WP Social Ninja**.
@@ -1982,8 +2035,6 @@ These settings on the WooCommerce product page let you control how reviews are d
 - **Template placement**: Select where the review template will appear. The default is typically within the WooCommerce "Reviews" tab.
 - **Reviews Form**: Choose which review submission form to use. You can select the form from your global WP Social Ninja settings, use the default WooCommerce form, or use [Native Review Form](/guide/business-reviews/native-review-forms).
 
-![social ninja review settings in woocommerce products](https://docs.wpsocialninja.com/assets/woocommerce-review-5.DB3noGXw.webp)
-
 Per-Product Override Indicator (Pro)
 
 When a product has its **own** template selected here, that choice takes precedence over your global **Main Review Hub** template. To help you spot this, WP Social Ninja shows a **"Has Product-Level Override"** badge next to that product in the connected-products list. The badge includes a direct link to the product's **Product Data → WP Social Ninja** tab, so you can review or resolve the conflicting setting in one click.
@@ -1992,8 +2043,6 @@ When a product has its **own** template selected here, that choice takes precede
 You can also set a pop-up notification of WooCommerce product reviews on your site. The pop-up review notification will show up on your font end site like this.
 
 Go to your Notification pop-settings from WP Social Ninja Dashboard and select [Notification Popups](../advanced-features/notification-popup) then select the **WooCommerce** platform from the **General** tab platform option.
-
-![Notification Popup](https://docs.wpsocialninja.com/assets/woocommerce-review-6.BTf1ZKQE.webp)
 
 By following these steps, you can integrate WooCommerce product reviews into your website using WP Social Ninja, enhancing your user experience and showcasing valuable customer feedback.
 
@@ -2018,11 +2067,7 @@ First, let's start inside your WordPress dashboard to see what you need.
 1. From your WordPress dashboard, navigate to **WP Social Ninja** in the left-hand menu, and then click on [Platforms](../getting-started/all-platforms-of-wp-social-ninja).
 2. On the "Platforms" page, find the **Yelp** row in the Business Review section then click the **Settings icon** button with it.
 
-![Yelp Configuration for Review](https://docs.wpsocialninja.com/assets/yelp-business-review-1.CC-pC9SK.webp)
-
 A pop-up window will appear with fields labeled **API Key** & **Place ID**. This is the things you need to get from Yelp.
-
-![Yelp Configuration for Review](https://docs.wpsocialninja.com/assets/yelp-business-review-2.DyAk7yTH.webp)
 
 ## Part 2: Yelp API Key ​
 
@@ -2052,8 +2097,7 @@ Yelp’s Fusion API no longer provides reviews for free. To fetch Yelp reviews i
 - **Pro Enhanced** → Up to **3 review excerpts per business**.
 - **Pro Premium** → Up to **7 review excerpts per business**.
 
-These limits are controlled by Yelp, not WP Social Ninja. [Check Yelp Plan and Pricing](https://business.yelp.com/data/products/fusion/).![Yelp Configuration for Review](https://docs.wpsocialninja.com/assets/yelp-business-review-3.F1l6XhLi.webp)
-
+These limits are controlled by Yelp, not WP Social Ninja. [Check Yelp Plan and Pricing](https://business.yelp.com/data/products/fusion/).
 ## Part 3: Get Your Place ID (Add Your Business) ​
 
 Now you must add your specific business. To do this, you need your business's **Place ID**.
@@ -2076,8 +2120,6 @@ https://www.yelp.com/biz/
 
 Carefully copy this **Place ID**.
 
-![Yelp Configuration for Review](https://docs.wpsocialninja.com/assets/yelp-business-review-4.BGn4wbPW.webp)
-
 ## Part 4: Connect Your Yelp Account ​
 
 Now for the final, easy step.
@@ -2094,13 +2136,9 @@ bocconcino-san-francisco
 ) into the field.
 4. Now click on the **Save** button.
 
-![Yelp Configuration for Review](https://docs.wpsocialninja.com/assets/yelp-business-review-5.BVe1cKcZ.webp)
-
 Your business is now fully connected and will begin to sync reviews.
 
 The **Yelp** row will now show a green "Connected" status.
-
-![Yelp Configuration for Review](https://docs.wpsocialninja.com/assets/yelp-business-review-6.CsoraOSO.webp)
 
 ## Next Steps ​
 
