@@ -209,6 +209,10 @@ After installing the Pro, you will need to activate your license key. This is es
 5. In the "**License Key**" field, enter the unique license key you received upon purchasing **FluentAffiliate Pro** from **WPManageNinja**.
 6. Click the "**Verify License**" button.
 
+Once your license is verified, the **License Management** tab shows your current **plan** and **expiry date**. You will also receive a renewal reminder when your license is close to expiring.
+
+Each plugin update is verified before installation to make sure the update comes from [WPManageNinja](https://wpmanageninja.com/account/) and that the files have not been changed or tampered with.
+
 That's it! You've successfully installed, activated, and licensed FluentAffiliate.
 
 ---
