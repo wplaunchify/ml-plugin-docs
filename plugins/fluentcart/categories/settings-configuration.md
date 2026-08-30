@@ -16,12 +16,12 @@ Properly configuring these settings ensures your store operates efficiently, sec
 
 This section covers the following critical areas:
 
-- **General Settings (Store Setup):** Configure your basic store information, including name, logo, address, and currency settings.
+- **Store Settings:** Configure your basic store information, including name, logo, address, and currency settings.
 - **Pages Setup:** Assign essential FluentCart functionalities (like shop, cart, and checkout) to specific WordPress pages using shortcodes.
-- **Single Product & Order Setup:** Customize how individual products are displayed and manage general order-related settings.
-- **Additional Info Settings:** Configure various optional settings related to cart display, checkout requirements, and address fields.
+- **Product Page Settings:** Customize how individual products are displayed on your storefront.
+- **Cart & Checkout Settings:** Configure optional settings related to cart display, checkout requirements, and address fields.
 - **Payment Settings Overview:** A general overview of available payment gateways and links to their detailed setup guides.
-- **Email Notifications:** Manage and customize automated email communications sent to both administrators and customers.
+- **Email Configuration:** Manage and customize automated email communications sent to both administrators and customers.
 - **Roles & Permissions:** Define and assign different user roles with specific access levels within your FluentCart store.
 - **Storage Settings:** Configure where your digital product files and other assets are stored, including local and cloud (S3) options.
 - **Licensing Settings (FluentCart Product License):** Activate your FluentCart plugin license key to ensure regular updates and access to premium features.

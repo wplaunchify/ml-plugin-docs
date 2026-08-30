@@ -1386,7 +1386,7 @@ This section is where you manage the digital files associated with your licensed
 
 - Click **"+ Add Asset"** to upload or link your software package, documentation, or other digital content.
 - You can choose to link assets to **specific variants** (e.g., a "pro" version download for a higher-tier license) or leave it empty for all variants.
-- See [Adding & Managing Downloadable Assets](/guide/product-types-creation/creating-digital-products#5-downloadable-assets) for detailed steps.
+- See [Adding & Managing Downloadable Assets](/guide/product-types-creation/creating-digital-products#_5-downloadable-asset-s) for detailed steps.
 
 ### 7. Product-Specific License Settings ​
 
@@ -1868,7 +1868,7 @@ The **Tax Class** allows you to apply specific tax rules to your product.
 To assign a tax class:
 
 1. Locate the **Tax Class** section on the right side of the screen.
-2. Select a pre-configured tax class from the dropdown menu, or click **+ Add** to create a new one. The corresponding tax rate will then be automatically applied to this product during checkout. To learn more about Tax, read this [Documentation](/guide/tax-&-duties/configuration-and-classes/).
+2. Select a pre-configured tax class from the dropdown menu, or click **+ Add** to create a new one. The corresponding tax rate will then be automatically applied to this product during checkout. Learn more about [tax configuration and classes](/guide/tax-&-duties/configuration-and-classes).
 
 ## Publishing Settings ​
 
@@ -2131,7 +2131,7 @@ The table can display various configured paths, showing the flexibility of the s
 - **Yearly to Lifetime:** Upgrade from a "Single Site Yearly License" to a "Single Site Lifetime License" (often with prorated options).
 - **Tier-to-Tier:** Moving from a lower tier to a higher tier within the same license type (e.g., 5 Sites Yearly to 50 Sites Yearly).
 
-# How Customers Upgrade Their Products ​
+## How Customers Upgrade Their Products ​
 
 Once your upgrade paths are set up in the backend, the actual upgrade process is entirely self-serve and effortless for your customers. Here is exactly what they will see:
 

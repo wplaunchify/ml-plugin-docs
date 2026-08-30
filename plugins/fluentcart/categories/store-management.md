@@ -93,7 +93,7 @@ This table lists all orders placed by this specific customer.
 For customers who have purchased digital products with licenses, this section displays their associated license keys.
 
 - **License Details:** Includes columns for License Key, Product name, Order ID, and Activations.
-- **Clickable License Keys:** Each license key is clickable, allowing you to navigate to the [License Details screen](/guide/product-types-creation/creating-digital-products-with-licenses#product-specific-license-settings) for that specific license.
+- **Clickable License Keys:** Each license key is clickable, allowing you to navigate to the [License Details screen](/guide/product-types-creation/creating-digital-products-with-licenses#_7-product-specific-license-settings) for that specific license.
 
 The Customer Details page is an invaluable tool for understanding your customers' interactions with your store and providing personalized support.
 
@@ -974,7 +974,7 @@ Displays key details about the customer who placed the order.
 - **Shipping Address:** The address provided for shipping, if applicable.
 - **Billing Address:** The address provided for billing.
 - **Labels:** Any custom labels assigned to the customer.
-- This panel also offers quick links to [edit customer information](/guide/store-management/customers-management/customer-details-overview#editing-customer-information), [manage shipping address](/guide/store-management/customers-management/customer-details-overview#managing-customer-addresses), and [manage billing address](/guide/store-management/customers-management/customer-details-overview#managing-customer-addresses).
+- This panel also offers quick links to [edit customer information](/guide/store-management/customers-management/customer-details-overview#_2-customer-information-panel), [manage shipping address](/guide/store-management/customers-management/customer-details-overview#_2-customer-information-panel), and [manage billing address](/guide/store-management/customers-management/customer-details-overview#_2-customer-information-panel).
 
 ### 6. Notes ​
 
@@ -1073,7 +1073,7 @@ For campaign-level totals across all orders, see the [Order Sources Report](/gui
 
 This section on the sidebar shows the tax details the customer provided during checkout.
 
-- **Tax ID:** Displays the customer's **Tax Identification** Number. This is especially useful for B2B (business-to-business) sales or for complying with regional tax regulations that require collecting this information. To learn more about Tax, read the [Documentation](/guide/tax-&-duties/configuration-and-classes/).
+- **Tax ID:** Displays the customer's **Tax Identification** Number. This is especially useful for B2B (business-to-business) sales or for complying with regional tax regulations that require collecting this information. Learn more about [tax configuration and classes](/guide/tax-&-duties/configuration-and-classes).
 
 ---
 
