@@ -176,11 +176,11 @@ is_email
 
 ## Generating coupon codes
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 ### Case 1: Generate a unique code for each logged-in user
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Here, you want your registered customer to see a new unique code for coupon / credit, which will be used by this customer only.
 
@@ -190,7 +190,7 @@ Here, you want your registered customer to see a new unique code for coupon / cr
 
 ### Case 2: Display the same coupon code for all logged-in users
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Here, you want all your registered users to see the same coupon code and it should not be valid for a guest user or visitor. By default, limiting coupons to registered users only is not an option, but it is possible with Smart Coupons.
 

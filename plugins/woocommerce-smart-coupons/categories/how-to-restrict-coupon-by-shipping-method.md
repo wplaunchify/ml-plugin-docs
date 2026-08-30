@@ -20,7 +20,7 @@ Restricting coupons by shipping methods is one of the best tricks to encourage y
 
 ## How to setup shipping-based coupons?
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 1. Navigate to **WordPress Admin panel** > **Marketing > Coupons**.
 2. Create a new coupon or open an existing one. Enter the required details.

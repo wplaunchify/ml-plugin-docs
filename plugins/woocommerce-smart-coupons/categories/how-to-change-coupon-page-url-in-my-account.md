@@ -16,7 +16,7 @@ This doc article explains how using Smart Coupons you can change the URL of the 
 
 ## Changing coupon page URL in My Account
 
-[↑ Back to top](#doc-title)
+[↑ Torna in cima](#doc-title)
 
 By default, the Smart Coupons plugin sets the coupon page URL as 
 ```
