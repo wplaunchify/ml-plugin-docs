@@ -243,7 +243,7 @@ echo do_shortcode('
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a8a9782854d0', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a93ccb790dad', {"active":false}, true);
       return;
     }
 
@@ -254,7 +254,7 @@ echo do_shortcode('
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6a8a9782854d0');
+    var element = document.getElementById('tag-groups-cloud-tabs-6a93ccb790dad');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
