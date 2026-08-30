@@ -22,8 +22,6 @@ This will open a panel with all the customization settings. You can change every
 
 When you are styling a social feed, the **Style (Pro)** tab organizes the settings into logical sections. You can customize every part of it simply and easily.
 
-![Styling options for a social feed template](https://docs.wpsocialninja.com/assets/style-1.T-dgXZPb.webp)
-
 - **Header:** This allows you to style the main header block at the top of your feed. You can customize the "Follow" button, the profile name, bio text, and the follower/following counts.
 - **Name:** This controls the appearance of the author's name (e.g., "Josep Peter") on each post or tweet.
 - **Meta:** This allows you to style the metadata associated with each post, such as the @username and the date it was posted.
@@ -36,8 +34,6 @@ When you are styling a social feed, the **Style (Pro)** tab organizes the settin
 Customizing your review templates helps you create a polished, on-brand display that builds trust with your audience.
 
 When editing a review template, go to the **Style** tab to access all the available customization options. Each section gives you full control over how your review cards look and feel.
-
-![Styling options for a business review template](https://docs.wpsocialninja.com/assets/style-review-template.BkuJ9727.webp)
 
 Here’s what you can customize:
 
@@ -66,9 +62,7 @@ Want to make sure your feeds look perfect on any device? You can! WP Social Ninj
 
 TIP
 
-Responsive Device options are also available for the **Review Template**.![Responsive device icons for Desktop, Tablet, and Mobile](https://docs.wpsocialninja.com/assets/responsive-styling-3.BNwmGLnh.webp)
-
-Simply click an icon (like **Tablet**), and any style changes you make (like a smaller font size or a different layout) will only apply to that view. This gives you complete control over the responsive design.
+Responsive Device options are also available for the **Review Template**.Simply click an icon (like **Tablet**), and any style changes you make (like a smaller font size or a different layout) will only apply to that view. This gives you complete control over the responsive design.
 
 When you're finished styling, don't forget to click the **Save Templates** button to make your changes live!
 

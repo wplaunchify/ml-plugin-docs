@@ -12,6 +12,41 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in WP Social Ninja.
 
+## WP Social Ninja v4.4.0 ​
+
+*Released on August 26, 2026*
+
+🆕 New Features🔧 Improvements🐛 Bug fixesmd
+```
+• Added a new frontend visitor toolbar for review feeds, allowing visitors to search, sort, and filter reviews by rating (Pro)
+• Added reusable review categories with bulk assign/remove, category management, and category counts
+• Added video support for testimonials with video URL/upload, poster images, player selection, and Fluent Player playback (Pro)
+• Added Instagram Templates 3 and 4, plus a new Highlights layout (Pro)
+• Added Facebook Templates 3 and 4, including a Mosaic layout that reveals post text on hover (Pro)
+• Added TikTok Templates 3 and 4, including the Spotlight Hero layout (Pro)
+• Added YouTube Templates 4 and 5
+• Added Fluent Player support for YouTube feed videos with a new "Show Layers at Video End" option
+• Added testimonial support to native review forms with author fields and logo upload (Pro)
+• Added Tripadvisor Terra API support with automatic detection of legacy API connections, so existing connections continue working without reconnecting
+• Added a Minimal header layout for YouTube, Instagram, Facebook, and TikTok feeds
+• Added support for multiple review categories in CSV import and export (Pro)
+```md
+```
+• Improved feed template names to clearly describe each layout instead of using generic names like "Template 1–5"
+• Improved keyboard accessibility across feed cards, popups, album and video controls, and shoppable actions
+• Improved editor previews to display video posts in Instagram Templates 2, 3, and 4, and support more than 6 reviews in slider, badge, and notification layouts
+```md
+```
+• Fixed TikTok word and hashtag filters not matching video captions
+• Fixed Airbnb business information retrieval and rating parsing
+• Fixed Facebook warnings caused by malformed identifiers and incorrect start-date handling
+• Fixed CSV imports clearing author website fields (Pro)
+• Fixed long words overflowing review cards and masonry layouts not updating correctly when videos change card height
+• Fixed the Review Images option appearing for platforms that do not support review images
+• Fixed image optimization incorrectly treating the same image from different platforms as one image
+• Fixed the review cache cursor advancing before a refresh was attempted
+• Fixed remaining Vue 3 lifecycle issues in the Facebook popup
+```
 ## WP Social Ninja v4.3.2 ​
 
 *Released on July 26, 2026*
@@ -671,13 +706,9 @@ If certain posts are missing, it could be due to filtering settings in WPSocialN
 
 Go to WPSocialNinja and then select [Templates](../getting-started/templates-overview) from the navbar. Now, find the [Facebook Feed Template](../social-feeds/facebook-customization) where you're facing the issue. Click on the **Edit** button of that feed to open its settings options.
 
-![image](https://docs.wpsocialninja.com/assets/facebook-feed-1.BgNi6jA0.webp)
-
 Filters: Under the **General** section, you'll find the **Filter** option for your posts. Check the filter settings for Post Types under the **Display Posts With** dropdown menu.
 
 Below this, you'll also see some additional settings, make sure to check if you've applied any filters that exclude posts with specific words or phrases.
-
-![image](https://docs.wpsocialninja.com/assets/facebook-feed-2.Xy-T7c3o.webp)
 
 ## 3. Missing Posts Have Audience Restrictions ​
 

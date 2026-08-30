@@ -36,15 +36,9 @@ To activate this feature, you’ll need an API key from OpenAI. Here's how to ge
 
 Go to[OpenAI](https://platform.openai.com/api-keys) and sign in to your account (or create one if you're new). From the left sidebar, click on **API Keys**, then select **Create new secret key** to generate a new key.
 
-![openai 1](https://docs.wpsocialninja.com/assets/OpenAI-1-scaled.DR4FHMJx.webp)
-
 A popup will appear prompting you to enter a name for your API key. Simply type in a name that helps you identify it later.
 
-![openai 2](https://docs.wpsocialninja.com/assets/OpenAI-2-scaled.BfwONXMi.webp)
-
 Your new API key will be displayed—copy and save it securely. You'll need it shortly.
-
-![openai 3](https://docs.wpsocialninja.com/assets/OpenAI-3-scaled.CHVc_GoQ.webp)
 
 ## Connect OpenAI to WP Social Ninja ​
 
@@ -62,8 +56,6 @@ Now configure the settings:
 
 Click **Save Settings** to apply your changes.
 
-![openai 4](https://docs.wpsocialninja.com/assets/OpenAI-4-scaled.Bx3tz3a7.webp)
-
 ## Enable AI-Generated Summary in Your Review Template ​
 
 With the setup complete, you can now choose where to display the AI summary.
@@ -78,8 +70,6 @@ Once enabled, you’ll unlock a few customization options to make your summary s
 - **Display Read More:** Adds a “Read More” link for longer summaries.
 - **Text Typing Animation:** Adds a typing animation effect for dynamic display.
 - **Regenerate AI Summary:** Refresh the summary based on newly collected reviews.
-
-![preview 4](https://docs.wpsocialninja.com/assets/Preview-4-1-1024x552.CVz1gk8L.webp)
 
 If you have any further questions about this guideline or need assistance setting things up, feel free to reach out to our [support team](https://wpmanageninja.com/support-tickets)—we’re always here to help.
 
@@ -117,15 +107,9 @@ To activate this feature, you need an API key from OpenRouter. Here’s how to g
 
 Click on the Profile icon and select **Keys**. You’ll be taken to the API Key page. From there, click the **Create API Key** button to start generating your key.
 
-![openrouter ai](https://docs.wpsocialninja.com/assets/OpenRouter-AI-scaled.QNt0O9Gv.webp)
-
 A popup will appear, enter a name for your key and click the **Create** button.
 
-![openrouter ai 1](https://docs.wpsocialninja.com/assets/OpenRouter-AI-1-scaled.B8bWwX0H.webp)
-
 Your API key will now be displayed — go ahead and copy it for later use.
-
-![openrouter ai 2](https://docs.wpsocialninja.com/assets/OpenRouter-AI-2-scaled.DuuR4P2U.webp)
 
 ## Connect OpenRouter to WP Social Ninja ​
 
@@ -142,8 +126,6 @@ Here’s how to configure it:
 
 Finally, click the **Save Settings** button to apply the changes.
 
-![advance settings wpsn 3](https://docs.wpsocialninja.com/assets/Advance-Settings-WPSN-3-scaled._Wmm4S0N.webp)
-
 ## Enable AI-Generated Review in Template ​
 
 Once the integration is configured, head over to the **Review Template** where you want to display the AI-generated summary. On the right sidebar, you’ll see a toggle labeled **Display AI Summary**—switch it on to enable the feature.
@@ -155,8 +137,6 @@ After enabling, you’ll have several customization options to enhance your revi
 - **Display Read More:** Enable a "Read More" link for longer summaries.
 - **Text Typing Animation:** Add a typing effect to make the summary more dynamic.
 - **Regenerate AI Summary:** Refresh the summary content based on the latest reviews.
-
-![preview 4](https://docs.wpsocialninja.com/assets/Preview-4-scaled.DeTXRog0.webp)
 
 If you have any further questions about this guideline, feel free to reach out to our [support team](https://wpmanageninja.com/support-tickets)—we’re always here to help!
 

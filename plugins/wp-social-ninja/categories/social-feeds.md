@@ -69,19 +69,13 @@ Let's go through the article to learn how to accomplish it.
 
 - Go to the [Platforms](../getting-started/all-platforms-of-wp-social-ninja) → choose **Facebook Feeds & Reviews**.
 
-![Facebook Feeds & Reviews](https://docs.wpsocialninja.com/assets/platforms.DYTN3oyf.webp)
-
 - A popup will appear where you need to click on the **Add New Template.**
-
-![Add New Template](https://docs.wpsocialninja.com/assets/add-new-template.kZSEbvML.webp)
 
 **Note that, You must create a particular Page Events Access Token, for which we have outlined instructions here.**
 
 - Now, Select your **Feed Type (Events)** from the dropdown.
 - Choose which specific Page’s Events you want to display and for which you have created an Event Access Token.
 - After that, click on the **Fetch Feeds**.
-
-![Displaying Facebook Event](https://docs.wpsocialninja.com/assets/fetch-feeds.B61gPA2E.webp)
 
 - After fetching, all of the Events of that specific page will be shown.
 - You can also change your [Facebook Feed Settings](./facebook-customization) & [Facebook Layout Settings](./facebook-layout-styling).
@@ -120,8 +114,6 @@ This guide will provide a detailed, in-depth look at every single setting in the
 
 .
 
-![Facebook Feed Template](https://docs.wpsocialninja.com/assets/fb-template-general-1.CX_hAbfF.webp)
-
 ## General Settings ​
 
 Here is a breakdown of each section within the **General** tab.
@@ -140,25 +132,34 @@ This is the most important step. The Source settings determine which Facebook Pa
 - **Total Feed:** This number tells WP Social Ninja the maximum number of posts to fetch (or pull) from Facebook. It's best to set this to a high number, like 50 or 100. (Note: This is different from the number of posts that load on the page initially, which is controlled by **Pagination**.)
 - **Select Page(s):** If you have connected multiple Facebook Pages to WP Social Ninja, this dropdown is where you will select which Page you want to display in this specific template.
 
-![Facebook Feed Template](https://docs.wpsocialninja.com/assets/fb-template-general-2.B9H46-U2.webp)
-
 ### 2. Template ​
 
 This section controls the visual structure and arrangement of your posts.
 
-- **Layout Type:** This is the foundational structure of your feed. - **Timeline:** A classic, single-column feed that looks similar to the Facebook wall.
+- **Layout Type:** This is the foundational structure of your feed.
+
+- **Timeline:** A classic, single-column feed that looks similar to the Facebook wall.
 - **Grid:** A clean, organized, multi-column grid. All post boxes are forced to be the same height, which creates a very neat and symmetrical look.
 - **Masonry:** A modern, "Pinterest-style" multi-column grid. Posts have variable heights based on their content (e.g., a long post will be taller, a short one will be shorter) and fit together like bricks.
 - **Carousel:** A horizontal slider that lets you show many posts in a small amount of space. Visitors can click or swipe through your posts.
-- **Template:** These are pre-designed visual "skins" for your feed. Each template (like Template 1, and Template 2.) changes the styling of the post boxes, fonts, and layout.
+- **Template:** These are pre-designed visual "skins" for your feed. Each one changes the styling of the post boxes, fonts, and layout:
+
+- **Classic Post:** The familiar layout — post text, then media, then the engagement counts underneath.
+- **Media First:** Puts the photo or video at the top of the card with the text below it, so image-heavy pages lead with the visual.
+- **Profile Card:** *(Pro)* Adds a summary card with your page details and statistics above the posts.
+- **Overlay Card:** *(Pro)* A mosaic layout of media tiles. The post text appears over the tile when a visitor hovers or tabs onto it, which keeps the grid clean.
 - **Number of Columns:** This is a crucial responsive setting. You can set the number of columns to show on **Desktop**, **Tablet**, and **Mobile** devices.
 - **Columns Gap:** This controls the amount of "gutter" or empty space (in pixels) between each post in your feed. Increase this for a more spaced-out, airy look, or decrease it to make the posts tighter.
+
+#### What the Pro Layouts Look Like ​
+
+**Profile Card** puts a summary of your Page profile picture, name and statistics in a card above the posts.
+
+**Overlay Card** arranges your media into a mosaic of tiles of varying sizes, and reveals each post's text over the tile on hover.
 
 #### Sorting and Order ​
 
 Use the Order dropdown to control how your posts are displayed. Along with standard options like **Newest**, **Oldest**, and **Random**. You can also choose **Facebook Event Default** to prioritize posts using Facebook’s native event-ordering logic.
-
-![Facebook Feed Template](https://docs.wpsocialninja.com/assets/fb-template-general-3.ByyNkqy2.webp)
 
 ### 3. Filters ​
 
@@ -201,8 +202,6 @@ This option is incredibly powerful because it is dynamic and automatic. When you
 - **How it works:** Unlike a Specific Date Range, a Relative one updates itself. If you set it to "Past 30 Days," you can leave it forever. Tomorrow, it will automatically include any posts from today and drop off any posts that are now 31 days old.
 - **Use Case:** This is the best way to create a "Recent News" or "What's New" feed on your website. It ensures your feed is always fresh and relevant, showing only the most recent content without you ever having to manually update the filter.
 
-![Facebook Feed Template](https://docs.wpsocialninja.com/assets/fb-template-general-4.CWvBVSGN.webp)
-
 ### 4. Feed ​
 
 This section controls the content and links inside each individual post card.
@@ -227,21 +226,20 @@ mm/dd/yyyy
 - **Display Likes Count:** A toggle to show or hide the number of likes and reactions for each individual post.
 - **Display Comments Count:** A toggle to show or hide the number of comments for each individual post.
 
-![Facebook Feed Template](https://docs.wpsocialninja.com/assets/fb-template-general-5.CeF9rrdj.webp)
-
 ### 5. Header ​
 
 This section controls the large banner at the top of your entire feed, which displays your main Page information.
 
-- **Display Header:** This is the master on/off switch for the entire header section. Toggle it off if you want a minimal feed with no title.
+- **Display Header:** This is the master on/off switch for the entire header section. Toggle it off if you want a bare feed with no title.
 - **Account to Display:** If your feed is set up to show posts from multiple Pages at once, this setting lets you choose which one Page's info (cover photo, name, etc.) to show in the header.
+- **Header Layout:** Choose how much of your Page information the header shows. - **Classic:** The full banner — cover photo, profile picture, page name, description and follower count.
+- **Minimal:** A compact single row with just your profile photo and page name. Good when the feed sits inside a sidebar or a narrow column, or when a large banner would compete with the rest of your page.
 - **Display Toggles:** These let you show or hide the different parts of the header: - Display Cover Photo (Your Page's large banner image)
 - Display Profile Photo (Your Page's square logo/picture)
 - Display Page Name
 - Display Description (Your Page's "About" info)
 - Display Likes Counter (The total number of likes your Page has)
-
-![Facebook Feed Template](https://docs.wpsocialninja.com/assets/fb-template-general-6.BqkOWKvX.webp)
+- Display Followers Counter (The total number of followers your Page has)
 
 ### 6. Like Button ​
 
@@ -251,8 +249,6 @@ This adds a "Like Page" call-to-action button to your feed, helping you get more
 - **Like Button Position:** You can place the button in the **Header** (at the top of the feed) or the **Footer** (at the bottom).
 - **Button Text:** You can customize the text on the button. For example, instead of "Like Page," you could change it to "Follow Us on Facebook."
 
-![Facebook Feed Template](https://docs.wpsocialninja.com/assets/fb-template-general-7.BvweDSWh.webp)
-
 ### 7. Share Button ​
 
 This adds a button that allows your website visitors to easily share your feed with their friends.
@@ -260,8 +256,6 @@ This adds a button that allows your website visitors to easily share your feed w
 - **Display Share Button:** Toggles the button on or off.
 - **Share Button Position:** Place it in the **Header** or **Footer**.
 - **Button Text:** Customize the call-to-action text, such as "Share This Feed."
-
-![Facebook Feed Template](https://docs.wpsocialninja.com/assets/fb-template-general-8.l6SDOtX5.webp)
 
 ### 8. Pagination ​
 
@@ -273,8 +267,6 @@ Pagination controls what happens when a visitor scrolls to the bottom of the ini
 - **Feeds Per Page:** This is very important. This number controls how many *new* posts are loaded each time the "Load More" button is clicked.
 
 > Example: You set Number of Feeds to Display (in Filters) to 8. You set Feeds Per Page (here) to 4.Your page loads, and visitors see 8 posts.They click "Load More."4 new posts appear (total of 12).They click "Load More" again.4 more posts appear (total of 16).
-
-![Facebook Feed Template](https://docs.wpsocialninja.com/assets/fb-template-general-9.Ca--Cv3j.webp)
 
 ## Next Steps ​
 
@@ -298,11 +290,7 @@ With WP Social Ninja, adding your Facebook Page events to your WordPress site is
 
 To access the Facebook Event Access settings in WP Social Ninja, navigate to the **Platform** tab from the top menu, then click the **Settings** icon.
 
-![wpsn 1](https://docs.wpsocialninja.com/assets/event-access-token-1.DJeqRdGb.webp)
-
 A pop-up for Facebook Configuration will now appear. From the dropdown, select **Connect Event Access Token**. You’ll see that both your **Facebook Page ID** and **Event Access Token** are required to connect your Facebook Events.
-
-![wpsn 2](https://docs.wpsocialninja.com/assets/event-access-token-2.Brb6mPUp.webp)
 
 Now, we'll walk you through how to connect your **Facebook Page Events** with **WP Social Ninja**. To get started, you'll first need to **create a Facebook App** to collect the required credentials.
 
@@ -312,37 +300,23 @@ To create a Facebook App, visit the [Facebook Developer](https://developers.face
 
 TIP
 
-Note that, You must log in with your personal Facebook profile’s username and password. Businesses cannot register as developers on Facebook; only individuals may do so.![fb event app 1](https://docs.wpsocialninja.com/assets/event-access-token-3.DrbWoapA.webp)
-
-Now you’ll see the app creation page. Just click on the **Create App** button to get started.
-
-![fb event app 2](https://docs.wpsocialninja.com/assets/event-access-token-4.T1XMLnCx.webp)
+Note that, You must log in with your personal Facebook profile’s username and password. Businesses cannot register as developers on Facebook; only individuals may do so.Now you’ll see the app creation page. Just click on the **Create App** button to get started.
 
 Give your app a name and enter a contact email. Once you’ve filled those in, click the **Next** button.
 
-![fb event app 3](https://docs.wpsocialninja.com/assets/event-access-token-5.CBBzGAV8.webp)
-
 In the **Use Cases** section, select **Others**, then proceed to the next step.
 
-![fb event app 4](https://docs.wpsocialninja.com/assets/event-access-token-6.C9KZcssB.webp)
-
 Next, select **Business** as your **App Type** and click on the **Next** button to proceed to the next page.
-
-![fb event app 5](https://docs.wpsocialninja.com/assets/event-access-token-7.B8i3XrW7.webp)
 
 You’ll now see the App details page. Here, you can make any changes if needed, or simply leave the information as it is. Once you're ready, click the **Create App** button to finalize.
 
 A popup will appear asking you to re-enter your Facebook password for security. Type in your password and click the **Submit** button.
-
-![fb event app 6](https://docs.wpsocialninja.com/assets/event-access-token-8.C8eRI2_C.webp)
 
 ## Get the Credentials ​
 
 Go to your[Meta App Developer Account](https://developers.facebook.com/apps/)and click on the App that you have created now.
 
 Now the App development page will appear. From the left sidebar, go to **App Settings** and select **Basic**.
-
-![fb event extra 2](https://docs.wpsocialninja.com/assets/event-access-token-9.CxCfyN_j.webp)
 
 Next, go to the [API Explorer page](https://developers.facebook.com/tools/explorer/). First, choose the Meta **App** you created earlier. Then, in the **User or Page** dropdown, select **User Token** and enable the following permissions:
 
@@ -352,8 +326,6 @@ Next, go to the [API Explorer page](https://developers.facebook.com/tools/explor
 - pages_show_list
 
 After setting the permissions, click on the **Generate Access Token** button. Once the token is created, copy it and save it for later use.
-
-![fb event extra 3](https://docs.wpsocialninja.com/assets/event-access-token-10.vskvb8cw.webp)
 
 ## Long Lived Access Token ​
 
@@ -368,15 +340,9 @@ Follow these steps to generate your token.
 
 - Paste your existing **User Access Token** into the input field and click the **Debug** button.
 
-![access token debugger 1](https://docs.wpsocialninja.com/assets/event-access-token-15.CHb0Sapp.webp)
-
 - **Extend the Token**- On the results page, scroll to the bottom and click the **Extend Access Token** button.
 
-![access token debugger 2](https://docs.wpsocialninja.com/assets/event-access-token-16.82kCqPV4.webp)
-
 - **Copy the New Token**- A new, long-lived token will be generated. Copy this new token to use in WP Social Ninja.
-
-![access token debugger 3](https://docs.wpsocialninja.com/assets/event-access-token-17.0HoCTGIj.webp)
 
 - This is your **Event Access Token**, paste it to the required field of the WP Social Ninja dashboard. And to get the **Page ID**, you need to go to the [link](https://wpsocialninja.com/access-token-generator/?id=facebook-feed).
 - Now, go to the **Facebook Feed** → click on the **Continue with Facebook** button & then a popup will appear.
@@ -387,8 +353,6 @@ Follow these steps to generate your token.
 Go back to your WP Social Ninja and open the **Facebook Event Access Configuration** settings. Paste the **Page ID and Long Lived Access Token** you copied earlier into the respective fields and click on the **Connect** button.
 
 Next, click on the **Add New Template** button to set up and customize the template as per your preferences.
-
-![fb event app 14](https://docs.wpsocialninja.com/assets/WPSN-18.DSY7i_7Z.webp)
 
 INFO
 
@@ -420,24 +384,14 @@ In the configuration part, if you want to work on only your Facebook feed, selec
 
 - For beginning the Manual process, select the **Account Manually**.
 
-![Connecting a Facebook page using access token- Choose the Credential type](https://docs.wpsocialninja.com/assets/access-token-1.C978XQT4.webp)
-
 - Now, for connecting your Facebook Feed with a Facebook Feed access token, go to WP Social Ninja’s own access token generator page [access token generator](https://wpsocialninja.com/access-token-generator/).
 - For generating access token code, start it with selecting **Continue with Facebook** under the Facebook Feed. After that you will asked for the permisson in FaceBook.
 
-![Facebook Feed Access token generator](https://docs.wpsocialninja.com/assets/access-token-2.DrbBaq7L.webp)
-
 - This will take you to the page where you can get the access **Page ID** and **Access Token**. Copy the **Access Token** from here.
-
-![Get Page ID & Access Token](https://docs.wpsocialninja.com/assets/access-token-3.YfTmE6j1.webp)
 
 - Lastly, paste the code in the **Access Token** box and finally complete the configuration done with clicking the button **Connect**.
 
-![Enter the Facebook Access token code & Connect](https://docs.wpsocialninja.com/assets/access-token-4.BHgT4L85.webp)
-
 And that’s all! You’re done with connecting a Facebook feed access token.
-
-![Connecting a Facebook page using access token- Facebook page successfully connected](https://docs.wpsocialninja.com/assets/access-token-5.3YH_L_d6.webp)
 
 Your Facebook page is now ready to unbox the WP Social Ninja feed features.
 
@@ -454,8 +408,6 @@ The Facebook Global Settings feature enables you to manage the default caching a
 ## Access the Feed Settings ​
 
 To find these settings, navigate to **WP Social Ninja → Settings** from your WordPress dashboard. Click on the **Feed Platforms** tab. Then, select **Facebook Settings**. Here, you will find the Feed Settings.
-
-![Enabling Facebook Feed Settings](https://docs.wpsocialninja.com/assets/facebook-feed-settings.CmWqgjyI.webp)
 
 Here is a breakdown of each setting available in this panel.
 
@@ -500,27 +452,17 @@ First, go to WP Social Ninja and select the [Platform](../getting-started/all-pl
 
 Click on the **Settings** icon next to the **Facebook** in your **Platform** section.
 
-![Wp Social Ninja Facebook Module](https://docs.wpsocialninja.com/assets/facebook-feed-1.B1azizdO.webp)
-
 A pop-up will appear to configure your Facebook account. Click **Continue with Facebook**. Log in to your Facebook account and give permission to WP Social Ninja to connect with your Facebook account.
 
-![WP Social Ninja Facebook Configuration](https://docs.wpsocialninja.com/assets/facebook-feed-2.Chn2BcAS.webp)
-
 Click on the Continue button here to give access to your WP Social Ninja.
-
-![Wp Social Ninja Facebook Permission Access](https://docs.wpsocialninja.com/assets/facebook-feed-3.CiYP7wcu.webp)
 
 You will be redirected to the WP Social Ninja Platform Page, where a pop-up will prompt you to select one or more Facebook Pages to display events on your website.
 
 After selecting the pages, click the **Connect Pages** button.
 
-![Wp Social Ninja Facebook Page Select](https://docs.wpsocialninja.com/assets/facebook-feed-4.BEoaYR-B.webp)
-
 In the next pop-up, you'll see your Facebook Page has been added. To remove it, simply click the **Remove** icon button next to your Page Name. To connect another account, click the **AddMore Account** button.
 
 To display your Facebook events on your website you can choose some awesome [templates](../social-feeds/facebook-customization) from WP Social Ninja, to do so click the **Add New Template** button and choose a template.
-
-![Wp Social Ninja Facebook ](https://docs.wpsocialninja.com/assets/facebook-feed-5.C56SeUDs.webp)
 
 ## Facebook Feed Settings ​
 
@@ -533,8 +475,6 @@ Here’s a breakdown of the available Facebook Feed settings:
 **Clear Cache:** If your latest content isn't appearing in your Facebook Feed, use this option to clear the cache. This action will refresh the feed and display the most recent data.
 
 **Optimize Image:** This feature allows you to optimize Facebook images for your Social Ninja Feed, ensuring faster load times on your website. You can Reset your image optimization anytime by clicking on the Reset button.
-
-![](https://docs.wpsocialninja.com/assets/facebook-feed-6.Bep3e89g.webp)
 
 TIP
 
@@ -606,8 +546,6 @@ These settings control the overall container or "box" that holds all the header 
 - **Width:** This setting (which appears if you select a Border Type) lets you control the thickness of the border. You can set the thickness (in pixels) for the **Top**, **Right**, **Bottom**, and **Left** sides individually.
 - **Color:** This opens a color picker to set the color of the border itself.
 
-![Facebook Template Styling](https://docs.wpsocialninja.com/assets/fb-style-connection-1.Gv0IhHya.webp)
-
 ## 2. Content ​
 
 This section of the Style tab controls the appearance of all the text inside each individual post card. This includes who posted it, when it was posted, and the post's main text.
@@ -658,8 +596,6 @@ This section styles the "link preview" box that appears when your Facebook post 
 - **Description Color:** This sets the color of the small snippet of text (the description) in the summary card.
 - **Typography (for Description):** This controls the font settings for the description text.
 
-![Facebook Template Styling](https://docs.wpsocialninja.com/assets/fb-style-connection-2.BBlNxcsc.webp)
-
 ## 3. Like & Share Button ​
 
 This section styles the main "Like Page" and "Share" buttons, which you can enable in the General tab. These are the buttons that usually appear in the Header or Footer of your entire feed.
@@ -668,8 +604,6 @@ This section styles the main "Like Page" and "Share" buttons, which you can enab
 - **Background Color:** This sets the main background color of the buttons themselves.
 - **Typography:** This opens the full set of font controls (Font Family, Size, Weight, etc.) for the button text.
 - **Padding:** This is the "breathing room" *inside* the button. It is the empty space between the button's text and its border. Increasing the padding makes the button look larger and easier to click.
-
-![Facebook Template Styling](https://docs.wpsocialninja.com/assets/fb-style-connection-3.UDhzFe5q.webp)
 
 ## 4. Item Box ​
 
@@ -685,13 +619,9 @@ This is a very important section. The **Item Box** is the entire container or "c
 - **Width:** This setting (which appears if you select a Border Type) lets you control the thickness of the border. You can set the thickness (in pixels) for the **Top**, **Right**, **Bottom**, and **Left** sides individually.
 - **Color:** This opens a color picker to set the color of the border itself.
 
-![Facebook Template Styling](https://docs.wpsocialninja.com/assets/fb-style-connection-4.fNZjd7p3.webp)
-
 ## Connection Settings ​
 
 The **Connection** tab is a simple shortcut. It allows you to connect a new Facebook Page or manually add one using a Page ID and Access Token, right from within the template editor.
-
-![Facebook Template Styling](https://docs.wpsocialninja.com/assets/fb-style-connection-5.BsE1M2Lp.webp)
 
 > Please Note: The steps to connect a page here are identical to the main Facebook connection process.
 
@@ -725,8 +655,6 @@ To learn how to connect your Facebook Page, follow the step-by-step instructions
 
 Now, click the **Fetch Feeds** button, and your Single Album will be loaded into the template.
 
-![facebook single event 1](https://docs.wpsocialninja.com/assets/single-album-feed.CypqGvkC.webp)
-
 You’ll also find additional settings and styling options to customize your Single Album template. Once you're done, click the **Save Template** button to save your changes.
 
 ---
@@ -742,8 +670,6 @@ If you want to display a Specific Video Playlist on your website, WP Social Ninj
 ## Get the Playlist ID ​
 
 To display a specific video playlist from Facebook on your site using WP Social Ninja, you'll need the playlist's ID or URL. First, go to your Facebook Page's video playlist section and open the playlist you want to add. Once it's open, copy the URL or Playlist ID from the address bar for later use.
-
-![video playlist id 1](https://docs.wpsocialninja.com/assets/Video-Playlist-ID-1-scaled.C01Vq8LQ.webp)
 
 ## Add Specific Video Playlist ​
 
@@ -763,11 +689,17 @@ From the template settings, go to the **General** section of the Facebook Templa
 
 Now, click the **Fetch Feeds** button, and your Playlist will be loaded into the template.
 
-![facebook template](https://docs.wpsocialninja.com/assets/specific-video-playlist.Bzp-E2bb.webp)
-
 You’ll also find additional settings and styling options to customize your Specific Video Playlist template. Once you're done, click the **Save Template** button to save your changes.
 
-If you have any further questions or need assistance, please don’t hesitate to contact [us](https://wpmanageninja.com/support-tickets/).
+## Videos That Can't Be Played on Your Site ​
+
+Facebook does not allow every video to be embedded on another website. Reels, videos with certain privacy or rights settings, and some live recordings are marked as non-embeddable.
+
+When WP Social Ninja meets one of these, it shows the video's thumbnail with a **View on Facebook** link instead of an empty player. Visitors can still get to the video in one click, and your feed does not show a broken box.
+
+TIP
+
+You can change the wording of that link under **Settings → Translation**, if "View on Facebook" doesn't suit your site's tone.If you have any further questions or need assistance, please don’t hesitate to contact [us](https://wpmanageninja.com/support-tickets/).
 
 ---
 
@@ -859,8 +791,6 @@ To keep your **Instagram Feed** working on your **WordPress site**, **WP Social 
 - **Business Basic Account**: Choosing this connection is ideal for a simple setup that shows posts from a single Instagram account.
 - **Business Advanced Account**: Choosing this connection is ideal if you want additional features like hashtags and mention feeds or if you manage multiple Instagram accounts.
 
-![](https://docs.wpsocialninja.com/assets/WP-Social-Ninja-Platforms-INSta-scaled.jbQwEMpI.webp)
-
 ### Key Differences of Business Basic and Advanced ​
 
 Now, to avoid confusion in choosing the right connection type that suits your needs and keep the service running smoothly, learn the key differences between **Business Basic** and **Business Advanced** accounts.
@@ -909,8 +839,6 @@ Instagram connects through WP Social Ninja's [secure connection bridge](../getti
 
 From your WordPress dashboard, navigate to **WP Social Ninja** and click on [Platforms](../getting-started/all-platforms-of-wp-social-ninja) in the navbar. Here, you'll find **Instagram** click on the **Settings** icon to access the configuration settings.
 
-![configure instagram 1](https://docs.wpsocialninja.com/assets/instagram-configuration-1.DdzlbiNJ.webp)
-
 A popup will appear, prompting you to select your Instagram **Account Type**. In the **Account Types** dropdown section, you’ll see three options:
 
 - **Business Basic**
@@ -921,24 +849,16 @@ TIP
 
 To understand the differences between a **Business Basic Account** and a **Business Advanced Account**, read [this article](./instagram-business-basic) for more details.The **Account Manually** option allows you to generate an API token from your Instagram business account and use it to connect your business account with WP Social Ninja.
 
-![configure instagram 0](https://docs.wpsocialninja.com/assets/instagram-configuration-2.DBKQ5zwB.webp)
-
 ## Connect Your Business Basic Account ​
 
 To connect your **Business Basic Account** with WP Social Ninja, select the **Business Basic** option and click the **Connect with Instagram** button.
 
-![configure instagram 2](https://docs.wpsocialninja.com/assets/instagram-configuration-3.CcXEartE.webp)
-
 You’ll be redirected to **Instagram**, where you’ll first need to log in to your **Business Account**. After logging in, you’ll see the **Access and Permissions** screen for connecting your account with **WP Social Ninja**. Click the **Allow** button to grant the necessary permissions.
-
-![configure instagram 3](https://docs.wpsocialninja.com/assets/instagram-configuration-4.lRBWKwZ2.webp)
 
 Once connected, your **Instagram Business Account** will be added to **WP Social Ninja**.
 
 - To add another account, click the **Connect More Account** button.
 - To create or modify your **Instagram Platform Template**, click the **Add New Template** button. Learn more about [Instagram feed template styling](./instagram-feed-template-styling-connection).
-
-![configure instagram 4](https://docs.wpsocialninja.com/assets/instagram-configuration-5.D4gwu47B.webp)
 
 ## Connect Your Business Advanced Account ​
 
@@ -946,15 +866,11 @@ To connect your **Instagram Business Account** with **WP Social Ninja**, follow 
 
 Then, click on the **Connect with Facebook** button.
 
-![configure instagram 5](https://docs.wpsocialninja.com/assets/instagram-configuration-6.CG61ois9.webp)
-
 You will be redirected to **Facebook**, where you'll first need to log in to your **Facebook Account**. After logging in, you'll be prompted with the **Access and Permissions** screen to connect your account with **WP Social Ninja**.
 
 Then, click the **Continue as** button to grant the necessary permissions.
 
 After that, your Business Advanced Account will be added.
-
-![configure instagram 6](https://docs.wpsocialninja.com/assets/instagram-configuration-7.BUHoODdx.webp)
 
 ## Connect Your Account Manually (Advanced) ​
 
@@ -964,25 +880,15 @@ To manually connect your **Business Account**, select the **Account Manually** o
 
 To obtain these credentials, click on the **Access Token Generator**.
 
-![configure instagram 7](https://docs.wpsocialninja.com/assets/instagram-configuration-8.DQILd7wB.webp)
-
 You will be redirected to the **Access Token Generator** page. From there, select **Instagram Feed** and choose your **Account Type** (Business Basic or Advanced).
-
-![configure instagram 8](https://docs.wpsocialninja.com/assets/instagram-configuration-12.j8bpZALV.webp)
 
 Next, you'll be asked to grant the necessary permissions. Click the **Allow** button to proceed.
 
-![configure instagram 9](https://docs.wpsocialninja.com/assets/instagram-configuration-4.lRBWKwZ2.webp)
-
 Once you've granted the permissions, you'll receive your **Access Token** and **User ID**. Be sure to copy them for later use.
-
-![configure instagram 10](https://docs.wpsocialninja.com/assets/instagram-configuration-13.CPGgx_-5.webp)
 
 Paste the **Access Token** and **User ID** into the respective fields in the WP Social Ninja configuration popup, then click on the **Connect This Account** button.
 
 Your account will now be successfully connected to **WP Social Ninja**. If you want to create or modify your **Instagram Platform Template**, click the **Add New Template** button.
-
-![configure instagram 11](https://docs.wpsocialninja.com/assets/instagram-configuration-11.BWbUF02c.webp)
 
 ### Troubleshooting: Instagram Accounts Not Appearing? ​
 
@@ -1022,8 +928,6 @@ Provide Email Address: Enter the email address where you want to receive the iss
 
 After setting up the email day and providing your email address, don't forget to click on the "**Save Settings**" button to ensure your preferences are saved.
 
-![](https://docs.wpsocialninja.com/assets/feed-issue.CXJIhD4y.webp)
-
 *Feed Issue Email Report*
 
 ## SMTP Plugin Configuration ​
@@ -1033,8 +937,6 @@ To ensure that the email notifications reach your inbox successfully, it's impor
 ## Dashboard Notifications ​
 
 You will also receive a notification on your **WP Social Ninja** dashboard if any issues arise in your **Instagram Feed**. This provides you with an easy way to stay informed about the status of your feed at a glance.
-
-![Dashboard Notifications](https://docs.wpsocialninja.com/assets/feed-issue-notification.uQe2NHJi.webp)
 
 ### Dashboard Notifications ​
 
@@ -1053,8 +955,6 @@ The Instagram Global Settings feature allows you to control the default caching 
 ## Access the Feed Settings ​
 
 To find these settings, from your WordPress dashboard, navigate to **WP Social Ninja → Settings**. Click on the **Feed Platforms** tab. Then, select **Instagram Settings**. Here, you will find the Feed Settings.
-
-![Enabling Feed Settings](https://docs.wpsocialninja.com/assets/instagram-feed-settings.BuPCH57J.webp)
 
 Here is a breakdown of each setting available in this panel.
 
@@ -1156,8 +1056,6 @@ These settings control the overall container or "box" that holds all the header 
 - **Padding:** This is the "breathing room" *inside* the header box. It's the empty space between the border of the box and the content. You can set the padding (in pixels) for the **Top**, **Right**, **Bottom**, and **Left** sides individually.
 - **Border Type:** This lets you choose the style of the border for the header box (e.g., **Solid**, **Dotted**, **Dashed**, or **None**).
 
-![Instagram Styling & Connection](https://docs.wpsocialninja.com/assets/instagram-template-styling-1.Cc9nC5pX.webp)
-
 ### 2. Content ​
 
 This section styles the text caption (the description) that appears with each individual post in your feed.
@@ -1172,8 +1070,6 @@ This section styles the text caption (the description) that appears with each in
 - **Typography:** This opens the full set of font controls for the caption text, allowing you to make it larger, smaller, or easier to read.
 - **Padding:** This controls the padding around the text caption only, letting you adjust the space between the caption and the photo above it or the statistics below it.
 
-![Instagram Styling & Connection](https://docs.wpsocialninja.com/assets/instagram-template-styling-2.DDF21QWa.webp)
-
 ### 3. Statistics ​
 
 This section styles the **Likes** and **Comments** counts that appear on each individual post (not the header). You must have these enabled in the General tab to see them.
@@ -1182,8 +1078,6 @@ This section styles the **Likes** and **Comments** counts that appear on each in
 - **Text Color:** This sets the color of the numbers next to the icons (e.g., the "150" in "150 Likes").
 - **Typography:** This opens the full set of font controls (Font Family, Size, Weight, etc.) for the statistics text.
 - **Padding:** This controls the padding around the statistics block, letting you adjust the space between it and the content above or the edge of the post.
-
-![Instagram Styling & Connection](https://docs.wpsocialninja.com/assets/instagram-template-styling-3.DIVEoNnv.webp)
 
 ### 4. Item Box ​
 
@@ -1195,8 +1089,6 @@ This is a very important section. The **Item Box** is the entire container or "c
 - **Width:** This setting (which appears if you select a Border Type) lets you control the thickness of the border. You can set the thickness (in pixels) for the **Top**, **Right**, **Bottom**, and **Left** sides individually.
 - **Color:** This opens a color picker to set the color of the border itself.
 
-![Instagram Styling & Connection](https://docs.wpsocialninja.com/assets/instagram-template-styling-4.CdVdpB2c.webp)
-
 ## Connection Settings ​
 
 The **Connection** tab is a simple shortcut. It allows you to connect a new Instagram Account right from within the template editor.
@@ -1204,8 +1096,6 @@ The **Connection** tab is a simple shortcut. It allows you to connect a new Inst
 This is very useful if you are building a template and realize you want to include an account you haven't connected yet, or if you want to add multiple accounts to a single feed.
 
 > Please Note: The steps to connect an account here are identical to the main Instagram connection process.
-
-![Instagram Styling & Connection](https://docs.wpsocialninja.com/assets/instagram-template-styling-5.BCEbX8UU.webp)
 
 For a complete, step-by-step guide on how to use these settings, please see our main [Instagram Configuration](/guide/social-feeds/instagram-configuration) documentation.
 
@@ -1223,15 +1113,11 @@ WP Social Ninja Instagram Feed allows you to fetch data from your Instagram acco
 
 To enable the **GDPR** settings, go to **WP Social Ninja** dashboard then click on "**Settings**" icon button from the navbar. Select "**Advance Settings**" and you will find out the **GDPR Compliance** settings. From here enable the GDPR settings, select **Yes** from the dropdown menu.
 
-![GDPR Settings for Instagram feed | WP Social Ninja](https://docs.wpsocialninja.com/assets/instagram-gdpr-settings-1.M1uIxOeT.webp)
-
 ### Instagram GDPR Compliance ​
 
 Additionally, please activate **Optimize Images** for GDPR compliance. GDPR compliance is not friendly with third-party media sources. Enabling this feature will store your images locally which will be GDPR friendly.
 
 To activate go to **Settings > Feeds Platforms > Instagram Settings** here you will find out the optimize images enable option like the below screenshot.
-
-![Instagram settings optimize Images](https://docs.wpsocialninja.com/assets/instagram-gdpr-settings-2.BKmz76md.webp)
 
 ### Optimize Images ​
 
@@ -1295,8 +1181,6 @@ This is the most important step. The Accounts settings tell WP Social Ninja from
 - **Select Account(s):** If you've connected more than one Instagram account to WP Social Ninja, this dropdown is where you'll pick the one you want to use for this template.
 - **Fetch Feeds:** This is a refresh button. If you've just made a new post on Instagram and want to see it in the preview right away, click this button to force the plugin to check for new content.
 
-![Instagram Feed Template Settings](https://docs.wpsocialninja.com/assets/instagram-template-1.D8S1a3F5.webp)
-
 ### 2. Layout ​
 
 This section controls the visual structure and arrangement of your posts.
@@ -1304,17 +1188,31 @@ This section controls the visual structure and arrangement of your posts.
 - **Layout Type:** This is the foundational structure of your feed. - **Grid:** This creates a clean, organized, multi-column grid (like the standard Instagram profile). All post boxes are forced to be the same height, which creates a very neat and symmetrical look.
 - **Carousel:** This displays your posts in a horizontal slider. Visitors can click or swipe through your posts one by one. This is perfect for saving space on a homepage.
 - **Masonry:** This is a "Pinterest-style" multi-column grid. Posts will have different heights based on their content (e.g., if you show the text caption). This creates a modern, stylish look that fits posts together like bricks.
-- **Template:** These are pre-designed visual "skins" for your feed. Each template changes the styling of the post boxes, fonts, and layout. Try clicking through them to see which one you like best!
+- **Highlights:** A compact row of circular thumbnails, styled after Instagram's own story highlights. Good for a slim strip of recent posts near the top of a page.
+- **Template:** These are pre-designed visual "skins" for your feed. Each one changes the styling of the post boxes, fonts, and layout: - **Classic Grid:** Clean image tiles, closest to how your profile looks on Instagram.
+- **Caption Card:** Each post sits in a card with its caption printed underneath the image.
+- **Overlay Card:** *(Pro)* The caption and engagement counts appear over the image when a visitor hovers or tabs onto it, so the grid stays purely visual until they interact.
+- **Pin Card:** *(Pro)* A Pinterest-style card treatment that works especially well with the Masonry layout.
 - **Number of Columns:** This is a crucial setting for making your feed look good on all devices. You can set the number of columns you want to show on **Desktops**, **Tablets**, and **Mobile** phones. - *Example: You might choose 4 columns for Desktop, 3 for Tablet, and 2 for Mobile. This ensures your feed always looks great and is easy to read.*
-- **Columns Gap:** This controls the amount of empty space (in pixels) between each post. Increase this number to give your posts more "breathing room," or set it to 
-```
-0
-```
+- **Columns Gap:** Pick how much space appears between each post from the dropdown, or leave it at **Default**.
 
- to have them all touch.
+Only three template skins show at first (with a **See All** link for the rest); expand it to see all four, including **Pin Card**.
 
-![Instagram Feed Template Settings](https://docs.wpsocialninja.com/assets/instagram-template-2.DXnuAT8g.webp)
+#### What the Pro Layouts Look Like ​
 
+- **Overlay Card:** The **Overlay Card** layout keeps the focus on your images by displaying posts in a clean visual grid. The caption and engagement information remain hidden until a visitor hovers over an image. When the visitor moves the cursor over a post, the additional information appears as an overlay.
+
+This layout is a good choice when you want your feed to look simple and image focused.
+
+- **Pin Card:** The **Pin Card** layout displays each social media post inside an individual card. The image appears at the top, while the post caption is shown below it. The card automatically adjusts its height based on the amount of content in the caption.
+
+This layout works especially well with the Masonry layout, where cards can have different heights while maintaining an organized appearance.
+
+- **Highlights:** The **Highlights** layout displays your social media posts as a horizontal row of circular thumbnails instead of the standard grid. This layout is useful when you want to show multiple posts in a compact space without taking up much room on the page.
+
+NOTE
+
+The **Highlights** layout does not appear correctly in the editor preview. The preview will continue to show the regular grid layout. After saving your template, open the page on your website to see the actual circular thumbnail layout.
 ### 3. Filters ​
 
 Filters are how you refine your feed to exclude content you don't want or only show content you do.
@@ -1325,8 +1223,6 @@ Filters are how you refine your feed to exclude content you don't want or only s
 - **Random:** Shuffles the posts in a new order every time the page loads.
 - **Show/Hide Posts with Keywords/Hashtags:** This is a very powerful filter. You can enter a comma-separated list of words or hashtags to either **only show** posts with those words, or **hide** posts with those words. - *Example (Hide): You run a lot of giveaways. You could enter #giveaway, #contest, #ad into the "Hide" field to automatically hide all those posts from your website feed.*
 - **Hide Specific Feeds:** This allows you to manually hide one or more specific posts by pasting in their unique Post ID (a long string of numbers you can get from the post's URL).
-
-![Instagram Feed Template Settings](https://docs.wpsocialninja.com/assets/instagram-template-3.CYyWD-TV.webp)
 
 ### 4. Post ​
 
@@ -1340,8 +1236,6 @@ This section controls the content and links inside each individual post card.
 - **Trim Caption Words:** This feature lets you set a maximum word count for your post captions. If a caption is longer than the number you set (e.g., 30 words), it will be automatically shortened and a "Read More..." link will appear.
 - **Display Likes Count:** This is an On/Off toggle to show or hide the total number of "likes" for each post.
 - **Display Comments Count:** This is an On/Off toggle to show or hide the total number of comments for each post.
-
-![Instagram Feed Template Settings](https://docs.wpsocialninja.com/assets/instagram-template-4.BQ3pKAzZ.webp)
 
 ### 5. Shoppable Feed Settings ​
 
@@ -1376,24 +1270,22 @@ yourstore.com/products/red-hat
 - Once you set this up, the "Include Shoppable by Hashtags" toggle will use these rules to automatically create your links.
 - **Display Shoppable Icon:** This is a simple visual toggle. When turned **On**, a small "shopping bag" icon will appear over any post in your feed that has a shoppable link attached to it.
 
-![Instagram Feed Template Settings](https://docs.wpsocialninja.com/assets/instagram-template-5.DujtLC63.webp)
-
 ### 6. Header ​
 
 This section controls the large banner at the top of your entire feed, which displays your main Instagram profile information.
 
 - **Display Header:** This is the master on/off switch for the entire header section. Toggle it off if you just want to show the posts and nothing else.
 - **Account to Display:** If your feed is showing posts from multiple accounts, this lets you choose which one account's info to show in the header.
+- **Header Layout:** Choose how much profile information the header shows. - **Classic:** The full profile block: photo, username, bio, and your post and follower counts.
+- **Minimal:** A compact single row with just your profile photo and username. Useful in a sidebar or anywhere a full profile block would take up too much room.
 - **Display Toggles:** These let you show or hide the different parts of your profile. This is great for creating a "mini-profile" on your website. - **Display Profile Photo:** Display your profile photo in the feed
-- **Display User Name** (Your @username)
+- **Display Username** (Your @username)
 - **Display Full Name:** Show your full name in the field
 - **Display Bio Text** (Your Instagram profile biography)
 - **Display Posts Count** (Total posts you've made)
 - **Display Followers Count** (How many followers you have)
 - **Custom Profile Photo:** Upload a custom image to use as your profile photo in the feed header.
 - **Custom Bio Text:** Write custom text to use as your bio in the feed header.
-
-![Instagram Feed Template Settings](https://docs.wpsocialninja.com/assets/instagram-template-6.YjGOP6R3.webp)
 
 ### 7. Follow Button ​
 
@@ -1402,8 +1294,6 @@ This adds a "Follow" call-to-action button to your feed, helping you get more In
 - **Display Follow Button:** Toggles the button on or off.
 - **Follow Button Position:** You can place the button in the **Header** (at the top of the feed) or the **Footer** (at the bottom, after all the posts).
 - **Button Text:** You can customize the text on the button. For example, instead of "Follow," you could change it to "Follow Us on Instagram."
-
-![Instagram Feed Template Settings](https://docs.wpsocialninja.com/assets/instagram-template-7.euVBvICQ.webp)
 
 ### 8. Pagination ​
 
@@ -1417,14 +1307,6 @@ Pagination controls what happens when a visitor gets to the bottom of the initia
 - You set **Feeds Per Page** (here) to **3**.
 - Your page loads, and visitors see **9** posts.
 - They click "Load More."
-
-![Instagram Feed Template Settings](https://docs.wpsocialninja.com/assets/instagram-template-8.Dbx_MaaG.webp)
-
-## Next Steps ​
-
-Now that you have configured all the General settings for what your feed shows, your next step is to make it beautiful!
-
-Click on the **Style** tab to customize all the colors, fonts, and borders.
 
 ---
 
@@ -1455,8 +1337,6 @@ First, you must turn on the main **Enable Shoppable Feed** toggle. This activate
 
 Once you turn this on, you will see a new **Add** button appear on every post in your feed preview. This button is how you'll add links manually.
 
-![Instagram Shoppable Feed](https://docs.wpsocialninja.com/assets/shoppable-1.BPcVScwq.webp)
-
 ### Step 2. Add Links Manually (Method 1) ​
 
 This is the best method for adding a specific link to a specific post.
@@ -1469,8 +1349,6 @@ This is the best method for adding a specific link to a specific post.
 - **Custom URL:** Paste any external link — like an affiliate product, Etsy listing, or landing page.
 4. In the **Button text** field, type what you want the button to say (e.g., "Buy Now," "Shop This Look," or "Learn More").
 5. Click **Apply**. Your post is now shoppable.
-
-![Instagram Shoppable Feed](https://docs.wpsocialninja.com/assets/shoppable-2.CcrPpLVK.webp)
 
 ### Step 3. Add Links Automatically (Method 2) ​
 
@@ -1490,8 +1368,6 @@ This method saves you a ton of time by using hashtags to create links.
 ```
 yourstore.com/products/blue-hat
 ```
-
-![Instagram Shoppable Feed](https://docs.wpsocialninja.com/assets/shoppable-3.CAYHsA_R.webp)
 
 1. Now, whenever you publish a post on Instagram with the 
 ```
@@ -1539,8 +1415,6 @@ You will now see a list of all the apps and services connected to your Facebook 
 
 Find "**WP Social Ninja**" (it may also be listed as just "**Social Ninja**") in the list. Click the "**Remove**" button next to it. Facebook will show a pop-up to confirm. Click "**Remove**" again.
 
-![Removing the WP Social Ninja app from Facebook Business Integrations](https://docs.wpsocialninja.com/assets/remove-button.C6TA8Hfj.webp)
-
 ## Step 4: Reconnect the App in WP Social Ninja ​
 
 Now that the old, broken connection is gone, you can make a fresh one.
@@ -1566,15 +1440,9 @@ To activate the TikTok field you need to install and activate **Custom Feed for 
 
 Go to the **Platforms** from the WP Social Ninja and here you will find the TikTok. Click on the Setting icon button of the TikTok Feeds.
 
-![Installing TikTok Feed](https://docs.wpsocialninja.com/assets/active-tiktok-1.Czcd9MsU.webp)
-
 If your site doesn’t contain the **Custom Feed for TikTok** Plugin then here a pop-up will come with the message and a call to action button to install the **Custom Feed for TikTok**. From here you can install the Plugin in *one click*.
 
-![Custom Feed for TikTok](https://docs.wpsocialninja.com/assets/active-tiktok-2.Bv2pSEQl.webp)
-
 After installing the **Custom Feed for Tiktok** plugin, your TikTok platform in WP Social Ninja will be enabled. Now you will get another pop-up for connecting your TikTok account — just click **Continue with TikTok** to authorize the connection.
-
-![The TikTok Configuration pop-up with the Continue with TikTok button](https://docs.wpsocialninja.com/assets/tiktok-configuration-modal.2drFIZ5S.webp)
 
 That's it! Your TikTok Platform is activated now just configure the TikTok platform and you're ready to set the template for your TikTok Feed.
 
@@ -1594,29 +1462,19 @@ TikTok connects through WP Social Ninja's [secure connection bridge](../getting-
 
 **First,** go to **WP Social Ninja → Platforms** from your plugin dashboard, find **TikTok**, and click to connect your TikTok account.
 
-![Enable TikTok Feed](https://docs.wpsocialninja.com/assets/active-tiktok-1.Czcd9MsU.webp)
-
 **Then,** in the **TikTok Configuration** pop-up, click the **Continue with TikTok** button. As the pop-up says, you'll be securely redirected to authorize the connection.
 
-![The TikTok Configuration pop-up with the Continue with TikTok button](https://docs.wpsocialninja.com/assets/tiktok-configuration-modal.2drFIZ5S.webp)
-
 **Next,** you'll be redirected to the TikTok login page. Log in to your account.
-
-![TikTok Login](https://docs.wpsocialninja.com/assets/tiktok-feed-connect-3.BDBf3NDW.webp)
 
 **Then,** review the requested permissions for the WP Social Ninja app and click **Continue** to approve them.
 
 **Finally,** you'll be brought right back to WP Social Ninja with your TikTok account connected. Now add and customize your [template](../getting-started/templates-overview) by clicking the **Add New Template** button.
-
-![TikTok Connected Account](https://docs.wpsocialninja.com/assets/tiktok-feed-connect-6.uH4jVLuB.webp)
 
 ## TikTok Feed Error ​
 
 TikTok's data privacy rules require your feed source to stay connected. If a TikTok Feed source is not reconnected within **7 days**, you'll receive a **TikTok Feed Error Notification**, and all TikTok Feed data for that connected account will be automatically deleted from your website.
 
 The good news: because TikTok now connects through the secure bridge, WP Social Ninja refreshes your connection automatically in the background, which greatly reduces the chance of hitting this limit. If you ever do see the error, simply reconnect your account to restore your feed.
-
-![Tiktok Feed Error](https://docs.wpsocialninja.com/assets/WP-Social-Ninja-Platforms-3-scaled.BeZxeo9C.webp)
 
 If you have any further questions about TikTok configuration, feel free to [contact us](https://wpmanageninja.com/support-tickets) — we're happy to help.
 
@@ -1645,7 +1503,7 @@ Here is a detailed breakdown of each feature on this page:
 
 INFO
 
-To configure settings for **GDPR Compliance** and **Image Format**, please navigate to the main **Advanced Settings** tab.![TikTok Feed Settings ](https://docs.wpsocialninja.com/assets/tiktok-settings-1.Cl2tTG8O.webp)
+To configure settings for **GDPR Compliance** and **Image Format**, please navigate to the main **Advanced Settings** tab.
 
 ---
 
@@ -1670,8 +1528,6 @@ This guide will walk you through every single setting in the **General** tab in 
 - **A "Latest Videos" Slider:** Use the **Carousel** layout and set the **Post Order** to "Newest" to show your newest videos on your homepage.
 - **A Clean "Portfolio" Gallery:** Use the **Grid** layout, turn on **Equal Height**, and hide the **Description**, **Views**, and **Likes** to create a clean, professional-looking gallery of your work.
 
-![Template Template](https://docs.wpsocialninja.com/assets/tiktok-template.BOWcbC93.webp)
-
 ## General Settings ​
 
 Here is a detailed breakdown of each section within the **General** tab.
@@ -1684,17 +1540,24 @@ This is the very first and most important step. The Source settings tell WP Soci
 - **Select Account(s):** If you've connected more than one TikTok account to WP Social Ninja, this dropdown is where you'll pick the one you want to use for this template.
 - **Fetch Feeds:** This is your manual "Refresh" button. If you've just posted a new video on TikTok and want to see it in your website preview right now, just click this button. It forces the plugin to check for new content immediately.
 
-![Template Template](https://docs.wpsocialninja.com/assets/tiktok-template-2.BMMERawN.webp)
-
 ### 2. Template ​
 
 This section controls the visual structure and arrangement of your videos.
 
-- **Layout Type:** This is the foundational structure of your feed. - **Grid:** This creates a clean, organized, multi-column grid. All video thumbnails are forced to be the same height, which creates a very neat and symmetrical look.
+- **Layout Type:** This is the foundational structure of your feed.
+
+- **Grid:** This creates a clean, organized, multi-column grid. All video thumbnails are forced to be the same height, which creates a very neat and symmetrical look.
 - **Carousel:** This displays your videos in a horizontal slider. Visitors can click or swipe through your posts. This is perfect for saving space on a homepage.
 - **Masonry:** This is a "Pinterest-style" multi-column grid. Videos will have different heights (especially if you show the text caption), and the plugin will intelligently fit them together like bricks in a wall.
-- **Template:** These are pre-designed visual "skins" for your feed. Each template changes the styling of the video boxes, fonts, and layout. Click through them to see which one best matches your brand.
-- **Number of Columns:** This is a crucial setting for making your feed look good on all devices. You can set the number of columns you want to show on **Desktops**, **Tablets**, and **Mobile** phones. - *Example: You might choose 4 columns for Desktop, 2 for Tablet, and 1 for Mobile. This ensures your feed is always easy to see and interact with, no matter the screen size.*
+- **Template:** These are pre-designed visual "skins" for your feed:
+
+- **Classic Tile:** Clean video thumbnails in even tiles.
+- **Caption Card:** *(Pro)* Each video sits in a card with its caption printed below the thumbnail.
+- **Overlay Card:** *(Pro)* The caption and view counts appear over the thumbnail when a visitor hovers or tabs onto it, keeping the grid purely visual until then.
+- **Spotlight Hero:** *(Pro)* Features your most recent video in a large hero tile with the rest arranged around it. Good for drawing attention to new content.
+- **Number of Columns:** This is a crucial setting for making your feed look good on all devices. You can set the number of columns you want to show on **Desktops**, **Tablets**, and **Mobile** phones.
+
+- *Example: You might choose 4 columns for Desktop, 2 for Tablet, and 1 for Mobile. This ensures your feed is always easy to see and interact with, no matter the screen size.*
 - **Columns Gap:** This controls the amount of empty space (in pixels) between each video in your feed. Increase this number to give your videos more "breathing room," or set it to 
 ```
 0
@@ -1702,7 +1565,11 @@ This section controls the visual structure and arrangement of your videos.
 
  to have them all touch.
 
-![Template Template](https://docs.wpsocialninja.com/assets/tiktok-template-3.C5kIO4fs.webp)
+#### What the Pro Layouts Look Like ​
+
+**Overlay Card**: Keeps your grid clean and visual. The text and view count only appear when a visitor hovers their mouse over the video.
+
+**Spotlight Hero**: Makes your newest video much larger to grab attention, with the rest of your videos arranged neatly around it.
 
 ### 3. Filters ​
 
@@ -1714,11 +1581,12 @@ Filters are how you refine your feed to exclude content you don't want or only s
 - **Most Viewed:** Shows most viewed video.
 - **Most Likes:** Shows most liked video.
 - **Random:** Shuffles the videos in a new order every time the page loads.
-- **Show/Hide Posts with Keywords/Hashtags:** This is a very powerful filter. You can enter a comma-separated list of words or hashtags to either **only show** videos with those words, or **hide** videos with those words. - *Example: If you want to hide all videos that mention a certain competitor, you could add their name to the "Hide" box.*
+- **Show/Hide Posts with Keywords/Hashtags:** This is a very powerful filter. You can enter a comma-separated list of words or hashtags to either **only show** videos with those words, or **hide** videos with those words. The filter searches each video's caption as well as its title. - *Example: If you want to hide all videos that mention a certain competitor, you could add their name to the "Hide" box.*
 - **Hide Specific Feeds:** This allows you to manually hide one or more specific videos. To get a video's ID, open that video on TikTok, and copy the long string of numbers in the URL.
 
-![Template Template](https://docs.wpsocialninja.com/assets/tiktok-template-4.DgvIFtSD.webp)
+WARNING
 
+TikTok only shares the first **150 characters** of a video caption. A word or hashtag that appears later in a long caption is not visible to the filter, so it will not match.
 ### 4. Feed ​
 
 This section controls the content and links inside each individual video card.
@@ -1743,13 +1611,13 @@ This section lets you show or hide the social proof associated with each individ
 - **Display Likes Count:** A simple On/Off toggle to show or hide how many likes each video has. - *Use Case: For a business, showing high view and like counts is great social proof. For a cleaner, more professional portfolio, you might turn these off.*
 - **Display Comment Count:** A simple On/Off toggle to show the comment count in the template feed.
 
-![Template Template](https://docs.wpsocialninja.com/assets/tiktok-template-5.U2EL_AWk.webp)
-
 ### 5. Header ​
 
 This section controls the large banner at the top of your entire feed, which displays your main TikTok profile information.
 
 - **Display Header:** This is the master On/Off switch for the entire header section. Turn it off if you just want to show the videos.
+- **Header Layout:** Choose how much profile information the header shows. - **Classic:** The full profile block — photo, name, description, website link and all your counters.
+- **Minimal:** A compact single row with just your profile photo and account name. You can also style a border around the profile photo in this layout.
 - **Account to Display:** If your feed is showing videos from multiple accounts, this lets you choose which one account's info to show in the header.
 - **Display Toggles (On/Off Switches):** These let you build a "mini-profile" on your website. - **Display Profile Photo** (Your main profile picture)
 - **Display Account Name** (Your @username)
@@ -1759,8 +1627,6 @@ This section controls the large banner at the top of your entire feed, which dis
 - **Display Following Count** (How many people you are following)
 - **Display Likes Count:** This is a key TikTok metric. It shows the TOTAL number of likes your entire profile has ever received.
 
-![Template Template](https://docs.wpsocialninja.com/assets/tiktok-template-6.DpKJ8hbs.webp)
-
 ### 6. Follow Button ​
 
 This adds a "Follow" call-to-action button to your feed, helping you get more TikTok followers directly from your website visitors.
@@ -1769,16 +1635,12 @@ This adds a "Follow" call-to-action button to your feed, helping you get more Ti
 - **Follow Button Position:** You can place the button in the **Header** (at the top of the feed) or the **Footer** (at the bottom, after all the videos).
 - **Button Text:** You can customize the text on the button (e.g., "Follow Us on TikTok" or "See More on TikTok").
 
-![Template Template](https://docs.wpsocialninja.com/assets/tiktok-template-7.BVuDpY0O.webp)
-
 ### 7. Pagination ​
 
 This is the new section you asked about. Pagination controls what happens when a visitor gets to the bottom of the initial set of videos.
 
 - **Pagination Type:** This lets you choose how users load more videos. - **None:** The feed will only show the "Number of Feeds to Display" (from the **Filters** section) and that's it. There will be no way to load more videos.
 - **Load More:** This will add a button at the bottom of your feed. When clicked, it will load the next set of videos. This is the most popular and user-friendly option.
-
-![Template Template](https://docs.wpsocialninja.com/assets/tiktok-template-8.CkzpOzCa.webp)
 
 ## Next Steps ​
 
@@ -1810,16 +1672,12 @@ First, go to your WordPress dashboard. In the left-hand menu, click on **WP Soci
 
 On the "Platforms" page, you will see a list of all available social networks. Find the **X (Twitter)** row and click the **Connect** button (or Settings icon) on the right side.
 
-![Twitter Configuration](https://docs.wpsocialninja.com/assets/twitter-config-1.DepqEoO1.webp)
-
 ### See the Connection Methods ​
 
 A pop-up window will appear. This is where you will paste your credentials after you get them. You will see two methods:
 
 - **API V2 (Recommended):** This is the modern, simple method. It only requires a Username and a Bearer Token.
 - **API V1 (Advanced):** This is the older method. It is more complex and requires four different keys: API Key, API Key Secret, Access Token, and Access Token Secret.
-
-![Twitter Configuration](https://docs.wpsocialninja.com/assets/twitter-config-V2-2.BnAFmHLw.webp)
 
 Now that you know what you need, let's go get those keys! Keep this browser tab open.
 
@@ -1842,13 +1700,9 @@ Log in to your X (Twitter) Developer account. In the dashboard, look for the **P
 
 Inside your Project, you will see a list of your existing apps. At the bottom of this list, click the **+ Create App** button to start making a new one.
 
-![Twitter Configuration](https://docs.wpsocialninja.com/assets/x-app-v2-1.DQVRT4o_.webp)
-
 A pop-up will appear asking you to give your app a name. Choose a name you will recognize, for example, "My Website Feed" or "WP Social Ninja Connection."
 
 Click **Next**.
-
-![Twitter Configuration](https://docs.wpsocialninja.com/assets/x-app-v2-2.CL9vVpFw.webp)
 
 After this step, your app is created! The next page will show you your new keys.
 
@@ -1864,8 +1718,6 @@ This is the fastest and easiest way.
 - Find the **Bearer Token** field.
 - Click to copy the long string of characters and save it in a safe place (like a text file). This is the only key you need for this method.
 
-![Twitter Configuration](https://docs.wpsocialninja.com/assets/x-app-v2-3.ByViNZHZ.webp)
-
 ### Method B: Get Credentials for API V1 (Advanced) ​
 
 Use this method if you need to use the older API V1 connection. This requires four separate keys.
@@ -1873,16 +1725,12 @@ Use this method if you need to use the older API V1 connection. This requires fo
 - From your new app's dashboard in the X (Twitter) Developer portal, click on the **Keys and Tokens** tab.
 - In this page you will find the **Access Token and Secret** section.
 
-![Twitter Configuration](https://docs.wpsocialninja.com/assets/x-app-v1-4.DkBYMR6X.webp)
-
 - Click the **Regenerate** button.
 - A pop-up will appear showing your keys, you will see these keys.
 - Copy the **API Key** ( "Consumer Key").
 - Copy the **API Key Secret** (or "Consumer Secret").
 - Copy the **Access Token**.
 - Copy the **Access Token Secret**.
-
-![Twitter Configuration](https://docs.wpsocialninja.com/assets/x-app-v2-4.Ds6FhpDS.webp)
 
 You should now have all four keys for the API V1 method saved in your text file.
 
@@ -1898,8 +1746,6 @@ The pop-up from Part 1 should still be open.
 The pop-up will close, and you will be returned to the Platforms page.
 
 You will now see the X (Twitter) row shows a "Connected" status.
-
-![Twitter Configuration](https://docs.wpsocialninja.com/assets/twitter-connected.CPPRjXBn.webp)
 
 ## Next Steps ​
 
@@ -1921,8 +1767,6 @@ The X (Twitter) Global Settings feature enables you to manage the default cachin
 ## Access the Feed Settings ​
 
 To find these settings, navigate to **WP Social Ninja → Settings** from your WordPress dashboard. Click on the **Feed Platforms** tab. Then, select **X (Twitter) Settings**. Here, you will find the Feed Settings.
-
-![Enabling X (Twitter) Feed Settings](https://docs.wpsocialninja.com/assets/twitter-feed-settings.qkTfjjW_.webp)
 
 Here is a breakdown of each setting available in this panel.
 
@@ -2022,8 +1866,6 @@ This controls the overall container or "box" that holds all the header elements.
 - **Padding:** This is the "breathing room" *inside* the header box, between the border and the content. You can set the padding (in pixels) for the **Top**, **Right**, **Bottom**, and **Left** sides individually.
 - **Border Type:** Lets you choose the style of the border for the header box (e.g., **Solid**, **Dotted**, **Dashed**, or **None**).
 
-![X template styling connection](https://docs.wpsocialninja.com/assets/x-template-styling-1.ChmLE2g2.webp)
-
 ### 2. Name ​
 
 This section styles the Author's Name that appears on each individual tweet.
@@ -2032,8 +1874,6 @@ This section styles the Author's Name that appears on each individual tweet.
 
 - **Text Color:** Sets the color of the Author's name on the tweet.
 - **Typography:** Opens the full set of font controls (Font Family, Size, Weight, etc.) for the Author's name.
-
-![X template styling connection](https://docs.wpsocialninja.com/assets/x-template-styling-2.De9Krk_r.webp)
 
 ### 3. Meta ​
 
@@ -2052,8 +1892,6 @@ This styles the Date (e.g., "Nov 7, 2025") on the tweet.
 
 - **Text Color:** Sets the color of the date text.
 - **Typography:** Opens the full set of font controls for the date.
-
-![X template styling connection](https://docs.wpsocialninja.com/assets/x-template-styling-3.DOj4aYT_.webp)
 
 ### 4. Content ​
 
@@ -2076,8 +1914,6 @@ This styles the main text content of the tweet.
 
  inside the tweet. This helps them stand out from the rest of the text.
 
-![X template styling connection](https://docs.wpsocialninja.com/assets/x-template-styling-4.TaPB_SsE.webp)
-
 ### 5. Action ​
 
 This section styles the "action bar" at the bottom of each tweet, which includes the Reply, Retweet, and Like icons and counts.
@@ -2095,8 +1931,6 @@ This styles the icons themselves (the reply, retweet, and like/heart icons).
 
 - **Icon Color:** Sets the color of all three icons.
 
-![X template styling connection](https://docs.wpsocialninja.com/assets/x-template-styling-5.DY1yA-ys.webp)
-
 ### 6. Item Box ​
 
 This is a very important section. The **Item Box** is the entire container or "card" that holds each individual tweet. These settings control the design of that main box.
@@ -2107,8 +1941,6 @@ This is a very important section. The **Item Box** is the entire container or "c
 - **Width:** This setting (which appears if you select a Border Type) lets you control the thickness of the border. You can set the thickness (in pixels) for the **Top**, **Right**, **Bottom**, and **Left** sides individually.
 - **Color:** This opens a color picker to set the color of the border itself.
 
-![X template styling connection](https://docs.wpsocialninja.com/assets/x-template-styling-6.SiMy74W_.webp)
-
 ---
 
 ## Connection Settings ​
@@ -2118,8 +1950,6 @@ The **Connection** tab is a simple shortcut. It allows you to connect a new X (T
 This is very useful if you are building a template and realize you want to include an account you haven't connected yet, or if you want to add multiple accounts to a single feed.
 
 **Please Note:** The steps to connect an account here are identical to the main X (Twitter) connection process.
-
-![X template styling connection](https://docs.wpsocialninja.com/assets/x-template-styling-7.D8kHYO4F.webp)
 
 For a complete, step-by-step guide on how to use these settings, please see our main [X (Twitter) Configuration](./twitter-configuration) documentation.
 
@@ -2152,8 +1982,6 @@ This guide will walk you through every single setting in the **General** tab in 
 
 .
 
-![Twitter Settings](https://docs.wpsocialninja.com/assets/twitter-template-1.CQ8LB_k1.webp)
-
 ## General Settings ​
 
 Here is a detailed breakdown of each section within the **General** tab.
@@ -2175,8 +2003,6 @@ This is the very first and most important step. The Source settings tell WP Soci
 - **Total Feed:** This number tells WP Social Ninja the maximum number of tweets to fetch (or pull) from X (Twitter) when it checks for new content. It's best to set this to a high number, like 50 or 100, to make sure the plugin has plenty of tweets to work with. (This is not the number of tweets that show up on your page at first; that's controlled by **Pagination**).
 - **Fetch Feeds:** This is your manual "Refresh" button. If you've just posted a new tweet on X (Twitter) and want to see it in your website preview right now, just click this button. It forces the plugin to check for new content immediately instead of waiting for the next scheduled update.
 
-![Twitter Settings](https://docs.wpsocialninja.com/assets/twitter-template-2.CsiZMpwF.webp)
-
 ### 2. Template ​
 
 This section controls the visual structure and arrangement of your tweets.
@@ -2185,11 +2011,9 @@ This section controls the visual structure and arrangement of your tweets.
 - **Grid:** This creates a clean, organized, multi-column grid. All tweet boxes are forced to be the same height, which creates a very neat and symmetrical look.
 - **Carousel:** This displays your tweets in a horizontal slider. Visitors can click or swipe through your posts. This is perfect for saving space.
 - **Masonry:** This is a "Pinterest-style" multi-column grid. Tweets will have different heights (based on their text length and images), and the plugin will intelligently fit them together like bricks in a wall.
-- **Template:** These are pre-designed visual "skins" for your feed. Each template (like Polaris, Deneb, etc.) changes the styling of the tweet boxes, fonts, and layout. Click through them to see which one best matches your brand.
+- **Template:** The visual "skin" for your feed. X (Twitter) feeds use the **Classic Tweet** template, which styles each post to look close to a tweet as it appears on X.
 - **Number of Columns:** This is a crucial setting for making your feed look good on all devices. You can set the number of columns you want to show on **Desktops**, **Tablets**, and **Mobile** phones.
 - **Columns Gap:** This controls the amount of empty space (in pixels) between each tweet in your feed.
-
-![Twitter Settings](https://docs.wpsocialninja.com/assets/twitter-template-3.BcwwpGlX.webp)
 
 ### 3. Filters ​
 
@@ -2201,8 +2025,6 @@ Filters are how you refine your feed to exclude content you don't want or only s
 - **Random:** Shuffles the tweets in a new order every time the page loads.
 - **Show/Hide Posts with Keywords/Hashtags:** This is a very powerful filter. You can enter a comma-separated list of words or hashtags to either **only show** tweets with those words, or **hide** tweets with those words. - *Example: If you want to hide all replies from your feed, you could add the @ symbol to the "Hide" box.*
 - **Hide Specific Feeds:** This allows you to manually hide one or more specific tweets by pasting in their unique Tweet ID (a long string of numbers you can get from the tweet's URL).
-
-![Twitter Settings](https://docs.wpsocialninja.com/assets/twitter-template-4.D70vXc8-.webp)
 
 ### 4. Feed ​
 
@@ -2228,8 +2050,6 @@ This section controls the content and links inside each individual tweet card.
 - **Equal Height:** This toggle is very important for the **Grid** layout. When toggled **on**, all tweet boxes are forced to the same height, creating a uniform grid. You should turn this **Off** if you are using the **Masonry** layout.
 - **Display Media:** This is the main switch for showing any images or videos attached to the tweet. You will almost always want to keep this on.
 
-![Twitter Settings](https://docs.wpsocialninja.com/assets/twitter-template-5.CbPrcaW0.webp)
-
 ### 5. Header ​
 
 This section controls the large banner at the top of your entire feed, which displays your main profile information.
@@ -2246,8 +2066,6 @@ This section controls the large banner at the top of your entire feed, which dis
 - **Display Followers Count** (How many followers you have)
 - **Display Following Count** (How many people you are following)
 
-![Twitter Settings](https://docs.wpsocialninja.com/assets/twitter-template-6.TVxUI9gN.webp)
-
 ### 6. Follow Button ​
 
 This adds a "Follow" call-to-action button to your feed, helping you get more followers directly from your website visitors.
@@ -2255,8 +2073,6 @@ This adds a "Follow" call-to-action button to your feed, helping you get more fo
 - **Display Follow Button:** Toggles the button on or off.
 - **Follow Button Position:** You can place the button in the **Header** (at the top of the feed) or the **Footer** (at the bottom, after all the tweets).
 - **Button Text:** You can customize the text on the button (e.g., "Follow Us on X" or "See More on X").
-
-![Twitter Settings](https://docs.wpsocialninja.com/assets/twitter-template-7.DGczF-0R.webp)
 
 ### 7. Pagination ​
 
@@ -2266,8 +2082,6 @@ Pagination controls what happens when a visitor gets to the bottom of the initia
 - **Load More:** This will add a button at the bottom of your feed. When clicked, it will load the next set of tweets. This is the most popular and user-friendly option.
 - **Load More Button Text:** You can change the text from "Load More" to something like "Show More Tweets" or "See More."
 - **Feeds Per Page:** This is very important. This number controls how many *new* tweets are loaded *each time* the "Load More" button is clicked.
-
-![Twitter Settings](https://docs.wpsocialninja.com/assets/twitter-template-8.CHaFx9df.webp)
 
 ## Next Steps ​
 
@@ -2302,8 +2116,6 @@ A pop-up will appear with two connection types:
 
 This guide explains both.
 
-![Connecting the YouTube platform in WP Social Ninja](https://docs.wpsocialninja.com/assets/access-youtube-feed.9IgtCk42.webp)
-
 ## Connect via Google (Quickest) ​
 
 This is the fastest way to get connected — just sign in with Google, and WP Social Ninja links your channel automatically.
@@ -2311,8 +2123,6 @@ This is the fastest way to get connected — just sign in with Google, and WP So
 NOTE
 
 In the latest version this option is labeled **"OAuth 2.0 (Deprecated Soon)"**. It still works today, but it will be phased out — so if you want the most future-proof setup, use the **API Key** method further below.**First,** in the **YouTube Configuration** pop-up, select the **OAuth 2.0 (Deprecated Soon)** tab — labeled **Connect via Google**. Then click the **Sign In And Get Google Access Code** button and approve access. As the pop-up notes, it only takes one click.
-
-![The YouTube Configuration pop-up with the OAuth 2.0 (Connect via Google) tab and Sign In And Get Google Access Code button](https://docs.wpsocialninja.com/assets/youtube-configuration-modal.BLBqqCx3.webp)
 
 TIP
 
@@ -2323,51 +2133,29 @@ For the most stable, long-term connection, use a free API Key from the Google Cl
 
 In the **YouTube Configuration** pop-up, select the **API Key (Recommended)** tab — labeled **Connect via Token**. This is where you'll paste your key into the **API Key** field once it's ready. First, let's create that key over in Google.
 
-![The YouTube Configuration pop-up with the API Key (Recommended) tab selected](https://docs.wpsocialninja.com/assets/youtube-api-key-tab.Cx8ubVlX.webp)
-
 ### Get Your API Key from Google ​
 
 Go to the [Google Cloud Console](https://console.cloud.google.com/) and log in with your Google account. In the top menu, click the **Select a Project** dropdown. When the pop-up appears, click **New Project**.
 
-![Creating a new project in Google Cloud Console](https://docs.wpsocialninja.com/assets/google-search-console.DkMe53c1.webp)
-
 Enter a **Project name** (e.g., "WP Social Ninja") and click **Create**.
-
-![Create Project Name](https://docs.wpsocialninja.com/assets/new-project.CERjuliO.webp)
 
 Once the project is created, go to **APIs & Services → Credentials** from the main menu.
 
-![Navigating to Credentials in Google Cloud Console](https://docs.wpsocialninja.com/assets/api-service.C133eYvQ.webp)
-
 Now, click the **+ Create Credentials** button at the top, and select the **API key** option.
-
-![Creating a new API Key](https://docs.wpsocialninja.com/assets/api-keys.ClhgDFrb.webp)
 
 Enter a name for your API key and click **Create**.
 
-![Create API Key](https://docs.wpsocialninja.com/assets/create-api-key.BH5ErlKT.webp)
-
 A pop-up will appear with your new key. Click the **Copy** icon.
-
-![Copying the newly created API Key](https://docs.wpsocialninja.com/assets/copy-api-key.BT8WYoKs.webp)
 
 To make the key work, you must enable the **YouTube Data API v3** — otherwise the API Key won't function. Click **API Library** from **APIs & Services**.
 
-![YouTube Data API v3 Library](https://docs.wpsocialninja.com/assets/api-library-new.BPh0q66Z.webp)
-
 From the API Library, scroll down and select the **YouTube Data API v3**, then enable it.
-
-![Selecting the YouTube Data API v3 from the API Library](https://docs.wpsocialninja.com/assets/youtube-data-api-v3.D9P3CtNB.webp)
 
 ### Add the API Key to WP Social Ninja ​
 
 Return to your WordPress dashboard and open the YouTube configuration pop-up. Select the **API Key (Recommended)** option, **paste** your key into the **YouTube API Key** field, and click **Save**. Your YouTube account is now connected.
 
-![Pasting the API Key into WP Social Ninja settings](https://docs.wpsocialninja.com/assets/save-api-key.qAN2F6gZ.webp)
-
 You'll see a success message like the one below:
-
-![YouTube connection success message](https://docs.wpsocialninja.com/assets/youtube-successful.BJtW3Fai.webp)
 
 TIP
 
@@ -2390,8 +2178,6 @@ The editor is divided into three tabs:
 - **Connection:** This tab manages the API connection for this template. You can use this to re-authenticate your account or connect a new source if needed.
 
 This guide will walk through every option in the **General** tab. So, let’s get started.
-
-![Youtube Template General Settings](https://docs.wpsocialninja.com/assets/youtube-template.CsourJLK.webp)
 
 > Use Case: You can use these settings to create powerful, specific feeds.A vlogger can show their Channel feed, use the Template settings to create a Masonry grid, and use the Filters to show only their 5 most recent videos.A musician can create a feed showing only a specific Playlist of their new album.A brand can use the Search type to create a feed of all videos that mention their product's name.
 
@@ -2420,9 +2206,7 @@ https://www.youtube.com/channel/UC...
 ```
 https://www.youtube.com/user/yourname
 ```
-- **Total Feed:** Set the maximum number of videos to fetch from YouTube. The maximum is 200. (Note: This is different from the number of videos shown on first load, which is controlled by Pagination).
-
-![Source settings for the YouTube feed](https://docs.wpsocialninja.com/assets/source.B5emRD_7.webp)
+- **Total Feed:** Set the maximum number of videos to fetch from YouTube. The maximum is 200. (Note: This is different from the number of videos shown on first load, which is controlled by the **Number of Videos to Display** setting in the Filters section).
 
 ### 2. Template ​
 
@@ -2432,17 +2216,28 @@ This section controls the foundational layout and visual structure of your YouTu
 
 - **Grid:** A clean, multi-column grid where all video boxes are the same height.
 - **Carousel:** A horizontal slider.
-- **Template:** These are pre-designed visual "skins" (e.g., Vega, Sirius, Polaris, Rigel).
-- **Number of Columns:** Set the number of columns for Desktop, Tablet, and Mobile.
-- **Columns Gap:** This controls the space (in pixels) between each video.
+- **Template:** These are pre-designed visual "skins" for your feed:
 
-![Template layout settings for the YouTube feed](https://docs.wpsocialninja.com/assets/template.Bux6OaBU.webp)
+- **Video Grid:** Clean thumbnail tiles with the video title underneath.
+- **Hover Overlay:** *(Pro)* The title and video details appear over the thumbnail when a visitor hovers or tabs onto it.
+- **List View:** *(Pro)* A single-column list with each thumbnail beside its title and description. Good for a page where visitors are choosing what to watch.
+- **Text-Top Card:** *(Pro)* Puts the video title above the thumbnail rather than below it.
+- **Player & Playlist:** *(Pro)* A large player with a scrollable playlist of your other videos beside it, so visitors can watch without leaving the page.
+- **Number of Columns:** Set the number of columns for Desktop, Tablet, and Mobile.
+- **Columns Gap:** Choose a preset spacing amount from the dropdown to control the space between each video.
+
+INFO
+
+**Player & Playlist** builds its own layout, so the Number of Columns and column gap settings do not apply when you choose it.
+#### Pro Layouts ​
+
+**Text-Top Card:** Puts the video title above the image instead of underneath it.
+
+**Player & Playlist:** Shows one big video player alongside a scrolling list of your other videos, letting visitors watch everything right on your website.
 
 #### Carousel Settings ​
 
 When you set your Layout Type to **Carousel** in the **Template** section, this new panel appears. It allows you to customize the behavior and controls of the carousel slider.
-
-![carousel Template](https://docs.wpsocialninja.com/assets/select-carousel.DZWoaxNL.webp)
 
 - **Autoplay:** This toggle enables or disables the automatic sliding of the carousel. Turn it **ON** if you want the carousel to slide automatically.
 - **Autoplay Speed:** This field sets the time (in milliseconds) between each automatic slide. For example, 3000 equals 3 seconds.
@@ -2454,8 +2249,6 @@ When you set your Layout Type to **Carousel** in the **Template** section, this 
 - **Arrows and Dots:** Displays both.
 - **None:** Hides all navigation controls.
 - **Space Between:** This slider controls the amount of empty space (in px) between each video slide in the carousel.
-
-![carousel Template Settings](https://docs.wpsocialninja.com/assets/carousel-settings.C1RBInA4.webp)
 
 ### 3. Filters ​
 
@@ -2472,8 +2265,6 @@ The Filters section helps you control which videos appear in your YouTube feed a
 - **Hide Specific Videos:** Enter the YouTube video IDs of any videos you don’t want displayed in your feed. This gives you precise control over what appears publicly.
 - **Cache Settings (Optional):** Set how often the plugin refreshes data from YouTube. You can choose time intervals like 6 hours, 12 hours, or 1 day to balance performance and freshness.
 
-![Filter settings](https://docs.wpsocialninja.com/assets/filter.dgYVivXP.webp)
-
 ### 4. Video ​
 
 This section controls how individual video posts appear in your YouTube feed. It allows you to customize which video elements are shown and how the videos play when clicked.
@@ -2484,6 +2275,10 @@ This section controls how individual video posts appear in your YouTube feed. It
 - **In-line:** Plays the video directly inside the feed layout.
 - **YouTube Player:** Redirects the visitor to watch the video on YouTube.
 - *(Gallery mode available in Pro version)*
+- **Play with Fluent Player:** *(Appears if you also use Fluent Player)* Turn this on to play your feed's videos in Fluent Player instead of the default YouTube player.
+- **Player Design:** *(Appears if Play with Fluent Player is enabled)* Pick one of your existing Fluent Player designs, and your feed's videos reuse its design and its layers, such as a [call to action](https://docs.fluentplayer.com/cta-and-action-bar) or an [email capture](https://docs.fluentplayer.com/email-capture) form. Defaults to **Default player design**.
+- **Show Layers at Video End:** *(Appears if Play with Fluent Player is enabled)* Turn this on to display your chosen Player Design's layers once a video finishes playing.
+
 - **Display Title:** Toggles the visibility of each video’s title.
 - **Trim Title Words:** Allows you to limit how many words appear in the video title (helpful for keeping your layout neat).
 - **Display Play Icon:** Enables or disables the play button overlay on the video thumbnail.
@@ -2496,13 +2291,16 @@ This section controls how individual video posts appear in your YouTube feed. It
 - **Display Channel Name:** Toggles the visibility of the YouTube channel name under each video.
 - **Display Call To Action Button:** Adds a “Watch Now” button below the video, encouraging viewers to engage.
 
-![Video content display settings](https://docs.wpsocialninja.com/assets/video.CqayQGgs.webp)
+INFO
 
+The template editor preview never shows Fluent Player. Check the real page on your site to see the finished result.
 ### 5. Header ​
 
 This section controls the main banner area that appears at the top of your entire YouTube feed. It allows you to customize how the channel header looks and what information is displayed.
 
 - **Show Header:** This is the main toggle that enables or disables the entire header section. Turn it off to hide the banner, logo, and all channel info.
+- **Header Layout:** Choose how much channel information the header shows. - **Classic:** The full header — banner image, logo, channel name, description and all your counters.
+- **Minimal:** A compact single row with just your channel logo and name, for when a full banner would dominate the page.
 - **Display Banner:** Toggles the large channel banner image at the top of the header. You can also upload a custom banner image if desired.
 - **Display Logo:** Enables or disables the channel’s profile image (logo) within the header section.
 - **Display Name:** Shows or hides the YouTube channel’s name under the logo.
@@ -2513,8 +2311,6 @@ This section controls the main banner area that appears at the top of your entir
 - **Display Subscribe Button:** Shows or hides a “Subscribe” button within the header, allowing users to subscribe directly from the feed.
 - **Upload Custom Banner:** Allows you to manually upload your own banner image to replace the default YouTube channel banner.
 
-![Header settings for the YouTube feed](https://docs.wpsocialninja.com/assets/header.Bacvvcsv.webp)
-
 ### 6. Subscribe Button ​
 
 This adds a "Follow" button at the top or bottom of your feed.
@@ -2522,20 +2318,6 @@ This adds a "Follow" button at the top or bottom of your feed.
 - **Display Subscribe button:** click to the toogle button to show the subscribe button.
 - **Subscribe Button Position:** Choose where the button appears from the dropdown options: **Header** **Footer** or **Both**.
 - **Button Text:** Customize the text on the button (e.g., "Follow Us on YouTube").
-
-![Subscribe Button settings for the YouTube feed](https://docs.wpsocialninja.com/assets/subscribe-button.CWu8AAFh.webp)
-
-### 7. Pagination ​
-
-Pagination controls what happens when a visitor reaches the end of the first set of videos.
-
-- **Pagination Type:**- **None:** The feed will only show the "Number of Feeds to Display." No more videos can be loaded.
-- **Load More:** This adds a button at the bottom of your feed.
-- **Prev Next:** This button allows the user to move forward or backward to the immediately following page in the sequence.
-
-> Example:You set Number of Feeds to Display (in Filters) to 8.You set Videos Per Page (in Pagination) to 4.When your page loads, visitors will see 8 videos.When they click "Load More," 4 new videos will appear (for a total of 12).
-
-![Pagination settings for the YouTube feed](https://docs.wpsocialninja.com/assets/pagination.CSAlwzUI.webp)
 
 ## Next Steps ​
 
@@ -2574,11 +2356,7 @@ To find a Channel Handle:
 - **URL:** [https://www.youtube.com/@yourchannel](https://www.youtube.com/@yourchannel)
 - **Copy and paste:** @yourchannel
 
-![Channel Handle](https://docs.wpsocialninja.com/assets/channel-handle.BoCbmHqL.webp)
-
 After copying the channel handle, go to your **YouTube Template Source** options and paste the **Channel Handle** that you copied before. Then, click the **Save** button.
-
-![Paste Channel Handle](https://docs.wpsocialninja.com/assets/paste-channel-handle.rZYjWzaR.webp)
 
 ### Channel ID ​
 
@@ -2591,11 +2369,7 @@ Go to any YouTube channel page. Look at the **URL** in your browser. The **ID** 
 
 Example: [https://www.youtube.com/channel/UCiyeXfnGx9e06hXWf0Hz7ow](https://www.youtube.com/channel/UCiyeXfnGx9e06hXWf0Hz7ow). **Copy** this ID.
 
-![Channel ID](https://docs.wpsocialninja.com/assets/channel-id.WegyCi7u.webp)
-
 Now, **paste** it to insert the **Channel URL** and click on the Fetch Videos to fetch the Channel Videos. Then, click the **Save** button. Note that you are to select the URL after the channel, and the ID will look like “**UCiyeXfnGx9e06hXWf0Hz7ow”**.
-
-![Youtube Channel ID](https://docs.wpsocialninja.com/assets/paste-channel-id.DIDHtt8y.webp)
 
 ### Channel Username ​
 
@@ -2618,35 +2392,23 @@ Similar to Channel, to fetch the Playlist, you need the Playlist ID. You can do 
 
 To add **Playlist ID** from your Channel, click on your Channel and then click on the **YouTube Studio**.
 
-![Youtube Studio](https://docs.wpsocialninja.com/assets/yotube-studio.KAKRh-vU.webp)
-
 This will take you to the **Channel Dashboard**. From the left side, click on the **Playlists** to collect the **URL**.
 
-![Copy URL](https://docs.wpsocialninja.com/assets/yotube-studio.KAKRh-vU.webp)
-
 This will take you straight to the **WPManageNinja Channel Playlists**. Next, click the Playlist that you want to display on your website.
-
-![Playlist URL](https://docs.wpsocialninja.com/assets/youtube-playlist-url.BW40Pb0g.webp)
 
 Now copy the selected **URL** and insert it on the **Playlist ID**. Next, click on the **Fetch Videos** button.
 
 Make sure you select the URL after the list= and the ID will look like “PLXpD0vT4thWEu4gAkLE0Eq7PRCFp_8j2z”. After you have completed it, don’t forget to click on the **Save** button.
 
-![Paste the Playlist ID](https://docs.wpsocialninja.com/assets/paste-playlist-id.hnQ9omgy.webp)
-
 #### Step 2 ​
 
 Go to the YouTube channel and click on the **Playlists** to obtain the **Playlist ID**.
-
-![Playlist ID](https://docs.wpsocialninja.com/assets/playlist.Dv726z7-.webp)
 
 This will take you straight to the **WPManageNinja Channel Playlists**. Next, click the **Playlist** that you want to display on your website.
 
 In the screenshot, you can see the **URL**. Now copy the selected URL and insert it on the **Playlist ID**. Make sure you click on the **Fetch Videos**.
 
-![Playlist URL](https://docs.wpsocialninja.com/assets/playlist-url1.BQD85zEa.webp)
-
-Remember, select the URL after the list= and the ID will look like “**PLXpD0vT4thWF0mLcvKKSbt281wt1bMcfP**”. After that, click to the **Save** button. ![Playlist URL](https://docs.wpsocialninja.com/assets/save-playlist.Caxw_GKr.webp)
+Remember, select the URL after the list= and the ID will look like “**PLXpD0vT4thWF0mLcvKKSbt281wt1bMcfP**”. After that, click to the **Save** button.
 
 ### 3. Search Term ​
 
@@ -2658,8 +2420,6 @@ This feed type displays videos that match a specific search keyword.
 Once you select the **Search Feed, Search Term** will automatically appear. In this field, you need to fill up with the search term in order to fetch the videos to your YouTube feed.
 
 For example, if you put **NinjaTables** on the Search Term and click on the **Fetch Videos**. The search result will display all the Ninjatables related videos. After that, click to the **Save** button.
-
-![Search Term](https://docs.wpsocialninja.com/assets/search-term.DA0iFyJ_.webp)
 
 ### 4. Specific Videos ​
 
@@ -2678,16 +2438,13 @@ However, you can also add multiple videos to your Feed. To do that, add more vid
 
 For demonstration purposes, we will go with a single **Video ID**.
 
-![Obtain Video ID](https://docs.wpsocialninja.com/assets/obtain-video-id.T_mgFTSf.webp)
-
 From the **Video URL,** copy the selected **URL** and paste it to insert it on the **video ID**. After you have pasted the Video ID, click on the **Fetch Videos** to display the videos on the YouTube Feed.
 
 Keep in mind, only select the ID after the **v=** and the Video ID looks like “**nn0q2FOPfUA**”. Click to the **Save** button.
 
 NOTE
 
-To add multiple videos, paste in multiple Video IDs separated by a comma (e.g., nn0q2FOPfUA,rE8j6zFjKac).![youtube video id](https://docs.wpsocialninja.com/assets/video-id1.BYNR1ZgA.webp)
-
+To add multiple videos, paste in multiple Video IDs separated by a comma (e.g., nn0q2FOPfUA,rE8j6zFjKac).
 ### 5. Live Streams ​
 
 This feed type allows you to display upcoming, live, or completed live streams from a specific channel.
@@ -2700,8 +2457,6 @@ This feed type allows you to display upcoming, live, or completed live streams f
 - **None:** Will not filter by event type.
 
 After you have configured your feed type, you can continue to the **Filters** and **Settings** tabs to customize the layout. Click the **Save** button when you are finished.
-
-![youtube live streams](https://docs.wpsocialninja.com/assets/youtube-live-streams.BOFUM3Ge.webp)
 
 ---
 
@@ -2718,8 +2473,6 @@ The **YouTube Global Settings** panel allows you to control the default caching 
 To find these settings, from your WordPress dashboard, navigate to **WP Social Ninja**→**Settings**. Click on the **Feed Platforms** tab. Then, select **YouTube Settings**. Here, you will find the **Feed Settings**.
 
 Here is a breakdown of each setting available in this panel.
-
-![Channel Handle](https://docs.wpsocialninja.com/assets/youtube-global-settings.DVK9pajO.webp)
 
 ## YouTube Settings ​
 
