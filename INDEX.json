@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T07:43:38.875Z",
+  "last_updated": "2026-08-30T07:52:51.503Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3495,7 +3495,7 @@
       "slug": "wp-fusion-downloads-addon",
       "name": "WP Fusion - Downloads Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-08-23T08:03:48.507Z",
+      "last_scraped": "2026-08-30T07:52:51.503Z",
       "page_count": 485,
       "categories": [
         "abandoned-cart-tracking",
