@@ -4,7 +4,121 @@
 
 ---
 
-## Paying Affiliates Automatically
+## Paying affiliates manually
+
+**Source:** [https://affiliatewp.com/docs/paying-affiliates-manually/](https://affiliatewp.com/docs/paying-affiliates-manually/)
+
+You pay some affiliates yourself: by bank transfer, through a service that suits your country, or by hand for a single affiliate. A manual payout is how you tell AffiliateWP you have done it, so your records stay straight.
+
+**A manual payout records a payment. It does not make one.** AffiliateWP marks the referrals paid and files a payout in your history. You send the money yourself, outside AffiliateWP.
+
+Manual is also the one method that needs no setup. There is no payment provider to connect, and no limit on which countries it reaches.
+
+**In This Article**
+
+- [What "paid" means on a manual payout](#what-paid-means)
+- [When an affiliate is paid manually](#when-an-affiliate-is-paid-manually)
+- [Recording a manual payout](#recording-a-manual-payout)
+- [The CSV of who to pay](#the-csv-of-who-to-pay)
+- [Sending the money](#sending-the-money)
+- [What a manual payout will not tell you](#what-a-manual-payout-will-not-tell-you)
+- [Next steps](#next-steps)
+
+## What “paid” means on a manual payout
+
+On Stripe or PayPal, **Paid** means AffiliateWP asked the provider to send the money and the provider accepted it. On store credit it means the balance really was added to the affiliate’s account in your shop. On a manual payout it means **you told AffiliateWP you had paid**.
+
+The record looks identical either way. Same status, same payout in your history, same figures in your reports. So a manual payout is only as accurate as the payment you actually made.
+
+Two consequences are worth knowing before you rely on it:
+
+- **There are no failure states.** A manual payout cannot fail, because nothing was attempted. You will not get an email, a flagged row, or a retry, because there is nothing for AffiliateWP to observe.
+- **Only you can undo it.** If you record a payout and then do not send the money, nothing in the product will notice. Delete the payout to set its referrals back to unpaid and make them payable again.
+
+## When an affiliate is paid manually
+
+There are two ways an affiliate ends up here, and they look the same on screen.
+
+**You chose it.** Manual is your site default, or you set it on that affiliate’s **Edit Affiliate** screen. Affiliates never pick manual themselves: it means you pay them outside AffiliateWP, so only you can assign it.
+
+**Nothing else could reach them.** When the method an affiliate is on cannot pay them, because their country is outside what Stripe covers or because you switched that method off, AffiliateWP tries your other automatic methods first: PayPal, then store credit. An affiliate lands on manual when none of those can reach them either, or when manual is your site default.
+
+**Check who is on manual before a large payout.** The Payout Method column at **AffiliateWP » Affiliates** names each affiliate’s method. A run of manual rows you did not expect is the signal that affiliates are falling back rather than being paid deliberately. Everyone in that run is marked paid when you record the payout, whether or not you send them anything.
+
+## Recording a manual payout
+
+### One referral
+
+1. Go to **AffiliateWP » Referrals**.
+2. Find the unpaid referral and click **Record as paid** on its row.
+3. Check the affiliate and the amount in the confirmation.
+4. Confirm.
+
+**The button says what happens on that row.** On a manual affiliate it reads **Record as paid**, because nothing is sent. In the same position on a Stripe or PayPal affiliate it reads **Pay** and moves real money. The confirmation that follows matches the button, so the wording never claims a payment that is not being made.
+
+### Recording a payment you made outside AffiliateWP
+
+On an affiliate who is **not** on manual, **Record as paid** sits in the row’s overflow menu, beside the **Pay** button. Use it when you have already paid someone by other means and want the referral to stop showing as owed.
+
+It creates a manual payout whatever the affiliate’s own method is, so the referral goes paid and no money moves. A manual affiliate’s row does not list it, because that row’s button is already this action, and one action offered twice on a row invites a double payment.
+
+### Several affiliates at once
+
+1. Go to **AffiliateWP » Payouts** and click **Pay Affiliates**.
+2. Set the date range, any minimum earnings, and any affiliate filters.
+3. Preview the payout and check who is included.
+4. Confirm.
+
+Every affiliate whose method resolves to manual is recorded as paid in that run. Affiliates on other methods are paid through those methods in the same run, so a single payout can move real money and write manual records at the same time.
+
+A payout that runs on a schedule works differently: it skips affiliates set to be paid manually, because there is nothing to automate when you are the one sending the money. You pay them yourself, from the Payouts screen.
+
+## The CSV of who to pay
+
+You do not have to generate the CSV, or go looking for it. Running the payout writes the file, and **your browser downloads it as soon as the run finishes**. The preview step tells you to expect it before you confirm.
+
+You only get that download if the run actually contained manual payouts. If every affiliate in it was paid by Stripe or PayPal, there is no file, because there is nobody left for you to pay by hand.
+
+**You can get the file again later.** Open the payout batch and use **Download CSV** on its summary panel. That rebuilds the file from the payout records, so it works on any later visit, and it is the way back if you lost the first download or ran the payout on another computer.
+
+**The CSV contains the manual payouts only**, which is exactly what you want: it is the list of affiliates AffiliateWP did not pay, so it is the list you owe. Three columns, one row per affiliate: the affiliate’s email, the amount, and the currency.
+
+**Never upload a payout file to a payment service without checking what is in it.** The CSV excludes Stripe and PayPal payouts on purpose. A file that included them would pay those affiliates a second time, on top of the payment the provider already made.
+
+The file uses each affiliate’s **Payment Email**, falling back to their account email when that field is blank.
+
+**A wrong address is fixable after the payout.** Update it on that affiliate’s **Edit Affiliate** screen, then download the CSV again: AffiliateWP reads the address fresh each time it builds the file, so the new download carries the new address. The amounts come from the payout itself, so they do not change.
+
+## Sending the money
+
+AffiliateWP takes no part in this, so anything works. The three that come up most:
+
+- **Bank transfer.** You make the transfers through your bank. If your bank accepts a bulk upload, the CSV is usually close to the shape it wants.
+- **A bulk payment service.** Services that take a list of email addresses and amounts can often read the CSV directly, sometimes after you re-order the columns.
+- **A service specific to your country.** If the way affiliates expect to be paid where you are is neither PayPal nor Stripe, use it. Manual exists so your records do not depend on which providers we support.
+
+## What a manual payout will not tell you
+
+These are the questions a payout normally answers, and a manual one cannot.
+
+| Question | Why AffiliateWP cannot answer it |
+| --- | --- |
+| Did the money arrive? | No provider was involved, so nothing reported back. |
+| Did it fail? | Nothing was attempted, so nothing can fail. |
+| Was it reversed? | Only if you delete the payout yourself. |
+| What did it cost? | Whatever your bank or service charged. AffiliateWP never sees it. |
+
+If you want those answers, pay through Stripe or PayPal instead, where the provider reports back and AffiliateWP records what it says.
+
+## Next steps
+
+- [How to pay your affiliates](/docs/paying-your-affiliates/): choosing a method, and how AffiliateWP decides who is paid how.
+- [Paying affiliates with Stripe](/docs/stripe-payouts/): pay from the Stripe account you already use.
+- [Paying affiliates internationally](/docs/international-affiliate-payouts/): which methods reach which countries.
+
+---
+
+## Paying affiliates automatically
 
 **Source:** [https://affiliatewp.com/docs/automatic-payouts/](https://affiliatewp.com/docs/automatic-payouts/)
 
@@ -59,7 +173,7 @@ Save the schedule and it’s live. From then on it runs on its chosen day withou
 
 Each affiliate is paid through the method set on their profile (or the site default). A single run can pay PayPal, Stripe, and store-credit affiliates together, grouped into one payout batch you can review afterward.
 
-Affiliates set to be paid **manually** are skipped by an automatic run, because a manual payout is one you make deliberately by hand. Everyone who can be paid automatically is included; you continue to pay manual-only affiliates yourself from the **Pay Affiliates** screen. To control how each affiliate is paid, see [per-affiliate payout methods](https://affiliatewp.com/docs/per-affiliate-payout-methods/).
+Affiliates set to be paid **manually** are skipped by an automatic run, because a manual payout is one you make deliberately by hand. Everyone who can be paid automatically is included; you continue to pay manual-only affiliates yourself from the **Pay Affiliates** screen. To control how each affiliate is paid, see [how to pay your affiliates](https://affiliatewp.com/docs/paying-your-affiliates/).
 
 ## How to manage a schedule
 
@@ -117,7 +231,6 @@ Runs are processed one at a time, so a schedule can’t overlap with another run
 ## Related guides
 
 - [Paying your affiliates](https://affiliatewp.com/docs/paying-your-affiliates/)
-- [Per-affiliate payout methods](https://affiliatewp.com/docs/per-affiliate-payout-methods/)
 - [Stripe payouts](https://affiliatewp.com/docs/stripe-payouts/) and [international affiliate payouts](https://affiliatewp.com/docs/international-affiliate-payouts/)
 
 ---
@@ -126,154 +239,374 @@ That’s it. Set a schedule once and your affiliates are paid on time, each thro
 
 ---
 
-## Paying Affiliates Internationally with Stripe
+## Paying affiliates internationally
 
 **Source:** [https://affiliatewp.com/docs/international-affiliate-payouts/](https://affiliatewp.com/docs/international-affiliate-payouts/)
 
-International affiliate payouts let you pay affiliates who live in other supported countries, in their local currency, straight from your store’s own Stripe account. There’s nothing extra to install or set up. Stripe calls this capability cross-border payouts; in AffiliateWP, and throughout this guide, it’s called international affiliate payouts. This guide covers which countries you can pay, how to turn the feature on, what it costs, what your affiliates see, and what happens to affiliates Stripe can’t reach.
+Paying an affiliate in another country comes down to which payout method reaches them. **Stripe reaches the most countries, and pays each affiliate in their own local currency**, from the Stripe account you already use, so it is where most stores start and it is most of this article. PayPal reaches several countries Stripe does not. Store credit and a manual payout cover the rest.
 
-**In This Article**
+One Stripe payout run can settle in multiple currencies at once. AffiliateWP gives you two Stripe options for other countries, both in the **International Affiliate Payouts** group at **AffiliateWP » Settings » Payouts**: **Via their Stripe account**, which uses Stripe’s cross-border payouts, and **Straight to their bank account**, which uses Stripe Global Payouts. You can run either one or both, and AffiliateWP picks the right one for each affiliate from the country they get paid in.
 
-- [What you need before you start](#what-you-need-before-you-start)
-- [Which countries can I pay affiliates in?](#which-countries-can-i-pay-affiliates-in)
-- [What currency do affiliates get paid in?](#what-currency-do-affiliates-get-paid-in)
-- [Turning on international payouts](#turning-on-international-payouts)
-- [What it costs](#what-it-costs)
-- [What your affiliates see](#what-your-affiliates-see)
-- [What happens to affiliates Stripe can't reach](#what-happens-to-affiliates-stripe-cant-reach)
-- [What turning it off does (and doesn't do)](#what-turning-it-off-does-and-doesnt-do)
-- [Tax forms for US affiliates](#tax-forms-for-us-affiliates)
+In This Article
+
+- [Which method reaches which countries](#which-method-reaches-which-countries)
+- [Paying affiliates with Stripe](#paying-with-stripe)
+- [Setting up and running Stripe payouts abroad](#setting-up-stripe-international-payouts)
+- [When Stripe cannot reach an affiliate](#when-stripe-cannot-reach-an-affiliate)
 - [Frequently asked questions](#frequently-asked-questions)
 - [Next steps](#next-steps)
 
-## What you need before you start
+## Which method reaches which countries
 
-International payouts work with your existing Stripe account. You don’t need a special account, anything extra to install, or any extra monthly fee. You do need two things:
+Four methods can pay an affiliate in another country, and they differ in two ways that matter: which countries they reach, and what currency the affiliate ends up with.
 
-- **A US- or UK-based Stripe account connected to AffiliateWP.** International payouts are available only from US- and UK-based Stripe accounts. If your connected account is based anywhere else, the option is unavailable.
-- **Stripe enabled as a payout method** at **AffiliateWP » Settings » Payouts**.
+| Method | Reaches | The affiliate receives | You need |
+| --- | --- | --- | --- |
+| Stripe, via their Stripe account | The US, the UK, Canada, Switzerland and most of Europe | Their own local currency, in their own bank account | A Stripe account based in the US, the UK, the EEA, Canada, or Switzerland |
+| Stripe, straight to their bank account | Far wider, including much of Asia, Africa and Latin America | Their own local currency, in their own bank account | A Stripe account based in the US or the UK |
+| PayPal | Almost anywhere PayPal operates, including countries neither Stripe option covers | Your store’s currency, in their PayPal balance. PayPal converts it if they move it out | PayPal set up as a payout method |
+| Store credit | Anywhere. No money crosses a border | Credit to spend on your store. Nothing reaches a bank | WooCommerce or Easy Digital Downloads |
+| Manual | Anywhere you can send money yourself | Whatever you send, however you send it | Nothing. You pay them outside AffiliateWP |
 
-Eligibility follows the country of your **connected Stripe account, not your store’s address**. If your store is set to one country but your Stripe account is based in another, the Stripe account is what decides whether international payouts are available.
+Stripe is the only one of these with real machinery behind it, so most of this article is about Stripe. Both Stripe options end up in the affiliate’s own bank account. They differ in the route: the first pays a Stripe account created for the affiliate, which then pays their bank on Stripe’s schedule, and the second pays the bank directly. See [how the money reaches the affiliate](#how-the-money-reaches-the-affiliate) for what that extra step means for timing. The exact country lists are in [countries Stripe reaches](#which-countries-can-i-pay-affiliates-in), and you don’t have to choose just one method: AffiliateWP pays each affiliate through whichever one can actually reach them.
 
-## Which countries can I pay affiliates in?
+## Paying affiliates with Stripe
 
-You can pay affiliates across the United States, the United Kingdom, Canada, Switzerland, and most of Europe (the 27 EU countries plus Norway and Liechtenstein). Each affiliate is paid in their **local currency**, and Stripe handles the currency conversion automatically, so there’s no manual exchange-rate work on your side.
+### Via their Stripe account
+
+Stripe cross-border payouts pay an affiliate in another country through a Stripe Express account, funded from the payments balance already in your Stripe account. In AffiliateWP this is the **Via their Stripe account** option.
+
+![The Via their Stripe account row in AffiliateWP settings, turned on, describing cross-border payouts that reach the affiliate's own bank in their local currency](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-via-their-stripe-account-1232x180.png)
+
+**AffiliateWP creates the Express account for the affiliate.** They never sign up for Stripe or fill in an application. When they pick Stripe in their payout settings, AffiliateWP sets the account up in their name, with their country and email address already filled in, and sends them to a Stripe page to confirm their identity and add their bank details. An Express account is a lightweight account for receiving money, not a full Stripe merchant account, and it is the only Stripe account on their side.
+
+#### How the money reaches the affiliate
+
+It arrives in two hops, and the timing of each is worth knowing:
+
+1. **You run a payout.** AffiliateWP moves the money out of your Stripe payments balance and into the affiliate’s Express account. This happens straight away.
+2. **Stripe moves it out of the Express account and into the affiliate’s own bank**, in their local currency. This happens automatically, on Stripe’s own payout schedule for their country, so the affiliate never has to request it.
+
+That means a payout can show as paid on your side before the money reaches their bank. The gap is normal, and it is the most common reason an affiliate says a payout has not arrived. They see the expected arrival date in their payout settings, and every step in Stripe’s Express dashboard, where they can also update their bank details.
+
+This option reaches 30+ countries: the US, the UK, Canada, Switzerland, and most of Europe. Your own Stripe account has to be based in one of eight sender countries, listed in the [comparison table](#whats-the-difference-between-stripe-cross-border-payouts-and-global-payouts) below.
+
+The same Stripe Express setup also handles US tax forms. When you and the affiliate are both in the US, AffiliateWP pays them through an Express account so Stripe can collect a W-9 and file the 1099. A payout inside your own country works this way whether or not you turn this option on, because the option only governs affiliates in other countries.
+
+This option is off until you switch it on. Look for the **Via their Stripe account** row in the **International Affiliate Payouts** group and turn on the toggle beside it. See [Turning on international payouts](#turning-on-international-payouts) for the steps.
+
+### Straight to their bank account
+
+Stripe Global Payouts pay an affiliate’s bank account directly, with no Stripe account for them to create. In AffiliateWP this is the **Straight to their bank account** option.
+
+![The Straight to their bank account row in AffiliateWP settings, turned on, with a US and UK badge and a green Connected badge showing the Stripe Financial Account was found](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-straight-to-their-bank-account-1232x183.png)
+
+This option reaches 90+ countries, and that is the reason to turn it on: it pays places the other option cannot reach at all, such as Mexico, India, Australia, Japan, Iceland, Indonesia, the United Arab Emirates, and South Africa. Your own Stripe account has to be based in the US or the UK.
+
+#### What the affiliate does
+
+**You do not have to collect anything from the affiliate to get started.** AffiliateWP needs only their email address, which it already has from their account, and the payout country they pick themselves. Their bank details never pass through you or your site.
+
+From their payout settings the affiliate chooses Stripe and clicks **Set up payouts**, which takes them straight to a secure Stripe-hosted page.
+
+On that page they answer whether they are an individual or a business, give their legal name and address, and enter their bank details. Some countries ask for more, such as a date of birth or a government ID. Stripe decides what to collect from the affiliate’s country.
+
+The affiliate’s home base stays your affiliate area, where AffiliateWP shows their payout status and the last four digits of the account on file. There is no separate Stripe dashboard to log into, as there is with cross-border payouts, and they return to Stripe only to update their bank details.
+
+This is still a bank transfer, though, so the affiliate has to supply bank details. If you have affiliates who would rather not, PayPal needs only their email address.
+
+#### How the money reaches the affiliate’s bank
+
+The payment leaves your Stripe Financial Account and lands in the affiliate’s bank, converted into their local currency. That is a single hop, rather than the two that cross-border payouts take, so nothing waits in an intermediate Stripe balance along the way.
+
+### Which of the two to use
+
+The affiliate needs a Stripe Express account for cross-border payouts and needs nothing for Global Payouts. Cross-border payouts reach 30+ countries and spend your existing payments balance. Global Payouts reach 90+ countries and spend a Financial Account you fund first.
+
+|  | Via their Stripe account | Straight to their bank account |
+| --- | --- | --- |
+| Stripe product | Cross-border payouts | Global Payouts |
+| What the affiliate does | Confirms their identity and bank details on a Stripe page. AffiliateWP creates the Express account itself | Enters bank details on a Stripe page. No Stripe account needed |
+| Where the money comes from | The payments balance already in your Stripe account | A Stripe Financial Account you add money to first |
+| How the money reaches the affiliate | Your payments balance, then their Express account, then their bank | Your Financial Account, then their bank |
+| Country reach | 30+ countries: the US, the UK, Canada, Switzerland, and most of Europe | 90+ countries, including many the other option cannot pay |
+| Your Stripe account must be in | The US, the UK, the EEA, Canada, or Switzerland | The US or the UK only |
+| Who pays the currency conversion fee | The affiliate. Stripe deducts it from what they receive | You. Stripe collects it from your Financial Account |
+| Where the affiliate manages it | Your affiliate area, plus their own Stripe Express dashboard linked from it | Your affiliate area, which mints a fresh Stripe link when they change bank details |
+
+Your own Stripe account can be based in any of these.
+
+| Region | Supported countries |
+| --- | --- |
+| North America | Canada, United States |
+| United Kingdom | United Kingdom |
+| European Union | France, Germany, Netherlands, Sweden |
+| Other Europe | Switzerland |
+
+If your own Stripe account is based outside those regions, Stripe offers neither option, so you pay affiliates with PayPal, store credit, or by hand.
+
+If you only pay affiliates in the US, the UK, Canada, Switzerland, and Europe, **Via their Stripe account** on its own is enough. Turn on **Straight to their bank account** as well the moment you have an affiliate outside that set. Neither toggle changes anything for affiliates in your own country: those payouts always run through a Stripe Express account, which is what keeps US 1099s working.
+
+### Countries Stripe reaches
+
+**Via their Stripe account** uses Stripe’s cross-border payouts, which reach affiliates in the US, the UK, Canada, Switzerland, and most of Europe.
 
 | Region | Supported countries |
 | --- | --- |
 | North America | United States, Canada |
+| European Union | Austria, Belgium, Bulgaria, Cyprus, Czechia, Germany, Denmark, Estonia, Spain, Finland, France, Greece, Croatia, Hungary, Ireland, Italy, Lithuania, Luxembourg, Latvia, Malta, Netherlands, Poland, Portugal, Romania, Sweden, Slovenia, Slovakia |
+| Other Europe | Switzerland, Liechtenstein, Norway |
 | United Kingdom | United Kingdom |
-| European Union | Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden |
-| Other Europe | Switzerland, Norway, Liechtenstein |
 
-Iceland isn’t currently supported. Affiliates outside these supported countries can’t be paid through Stripe and will use another payout method instead (see [What happens to affiliates Stripe can’t reach](#what-happens-to-affiliates-stripe-cant-reach)).
+**Straight to their bank account** uses Stripe Global Payouts, which reach 90+ countries. That option covers every country in the list above, plus a long tail cross-border payouts cannot reach. Stripe splits those into two groups, and you can include or exclude each group.
 
-## What currency do affiliates get paid in?
+#### Local bank countries
 
-Each affiliate is paid in their own local currency. Stripe converts automatically from your Stripe account’s currency, so you can pay affiliates in multiple currencies with no manual exchange-rate work on your side. Stripe charges a currency conversion fee on each converted payout, deducted from what the affiliate receives; see [What it costs](#what-it-costs) for details.
+Stripe pays these over the country’s ordinary bank network, and AffiliateWP labels the delivery **Standard**. This is the larger group, at 50+ countries.
 
-## Turning on international payouts
+| Region | Supported countries |
+| --- | --- |
+| Americas | Canada, Costa Rica, Dominican Republic, Jamaica, Mexico, Peru, Trinidad and Tobago, United States |
+| Europe | Austria, Belgium, Bulgaria, Croatia/Hrvatska, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, San Marino, Slovak Republic, Slovenia, Spain, Sweden, Switzerland, United Kingdom |
+| Asia-Pacific | Australia, India, Indonesia, New Zealand, Singapore |
+| Middle East | Israel |
+| Africa | Benin, Cote d'Ivoire, Morocco, Senegal, Tunisia |
 
-International payouts are **off by default**. You opt in from your Stripe payout settings:
+#### Wire-only countries
 
-1. Go to **AffiliateWP » Settings » Payouts** and make sure Stripe is connected.
-2. In the Stripe settings, find **International Affiliate Payouts** and switch on **Enable international affiliate payouts**.
+Stripe can only reach these by wire transfer, at 40+ countries. You do not choose the delivery method: Stripe decides it from the affiliate’s country.
 
-That’s it. From now on, when an affiliate sets up payouts, they choose the country where they receive money, and they’re paid there in their local currency.
+| Region | Supported countries |
+| --- | --- |
+| Americas | Antigua and Barbuda, Bahamas, Ecuador, El Salvador, Guatemala, Guyana, Panama, Saint Lucia |
+| Europe | Albania, Bosnia and Herzegovina, Macedonia, Moldova, Republic of, Serbia, Turkey |
+| Asia-Pacific | Bhutan, Brunei Darrussalam, Hong Kong, Japan, Malaysia, Mongolia, Philippines, Sri Lanka, Taiwan, Thailand, Vietnam |
+| Middle East | Armenia, Bahrain, Jordan, Kuwait, Oman, Qatar, United Arab Emirates |
+| Africa | Algeria, Botswana, Ethiopia, Gambia, Kenya, Madagascar, Mauritius, Mozambique, Namibia, Rwanda, South Africa, Tanzania |
 
-![AffiliateWP Stripe payout settings with the Enable international affiliate payouts toggle switched on](https://affiliatewp.com/wp-content/uploads/2026/06/settings-stripe-international-affiliate-payouts-1232x752.png)
+If an affiliate’s country is in neither option you have turned on, they will not see Stripe at all. See [how to pay affiliates in countries Stripe does not cover](#how-do-i-pay-affiliates-in-countries-stripe-does-not-cover).
 
-If the toggle is greyed out, your connected Stripe account isn’t based in the US or UK. Stripe supports cross-border payouts only from US- and UK-based accounts.
+### What currency affiliates receive
 
-## What it costs
+Each affiliate is paid in their own local currency. Stripe converts from your store’s currency for you, so you can pay affiliates in many currencies at once with no exchange-rate work on your side. Which option pays them decides who covers the conversion fee, so see [what it costs](#what-does-it-cost-to-pay-affiliates-internationally).
 
-There are two separate Stripe fees on an international payout, and they’re paid by different people. Neither is an AffiliateWP charge, and AffiliateWP adds no markup on either.
+On **Straight to their bank account**, AffiliateWP records exactly what the affiliate’s bank was credited, in their currency, and the rate Stripe used. See [how to check that a payout arrived](#checking-that-a-payout-arrived).
 
-**The cross-border fee, which you pay.** Stripe charges a cross-border fee (currently **0.25%**) on each payout that goes to a different country. This is Stripe’s fee, billed to your Stripe account: it isn’t an AffiliateWP charge, and there’s no AffiliateWP markup on top of it. For the current fee and the routes where it’s waived, see [Stripe’s cross-border payouts pricing](https://docs.stripe.com/connect/cross-border-payouts#pricing).
+### What Stripe charges
 
-Two cases are free:
+AffiliateWP adds no fee of its own to either option. Every charge below is Stripe’s, so treat its own pages as the source of truth: [cross-border payouts pricing](https://docs.stripe.com/connect/cross-border-payouts#pricing) and [Global Payouts pricing](https://docs.stripe.com/global-payouts/pricing).
 
-- Payouts to an affiliate in **your own country** (for example, a US store paying a US affiliate) have **no** cross-border fee.
-- Payouts **within the EEA**, and **between the UK and the EEA**, are free.
+**Via their Stripe account.** Two separate fees apply.
 
-For example:
+- **A cross-border fee, paid by you.** Stripe currently charges 0.25% on each payout that crosses a border. It is waived for payouts to an affiliate in your own country, for payouts within the EEA, and for payouts between the UK and the EEA. So a UK store paying a German affiliate pays nothing extra, while a US store paying a UK affiliate pays the fee.
+- **A currency conversion fee, paid by the affiliate.** When Stripe converts the payout into the affiliate’s currency it deducts a conversion fee from the amount they receive. The rate depends on the currency pair and on your Stripe account’s country. The affiliate sees the deduction in their Stripe Express dashboard, not in AffiliateWP.
 
-- A **UK** store paying an affiliate in **Germany**: free (UK to EEA is waived).
-- A **US** store paying an affiliate in the **UK**: 0.25% of the payout, billed by Stripe.
+**Straight to their bank account.** Stripe collects all of these from your Financial Account, so the affiliate is not charged a conversion fee out of their payment. There are three parts:
 
-**The currency conversion fee, which the affiliate pays.** When an affiliate is paid in a different currency than your store’s, Stripe converts the funds and charges a currency conversion fee. That fee is deducted from the amount the affiliate receives, so they get their commission converted to their local currency, minus Stripe’s conversion fee. Stripe sets this rate, so see [Stripe’s pricing](https://stripe.com/pricing) for the current amount. Affiliates can see the converted amount and the fee for each payment in their Stripe Express dashboard.
+- A fixed fee for each payout. AffiliateWP sends one payout per affiliate per run, not one per referral.
+- A cross-border percentage that varies by destination country.
+- A currency conversion percentage when the affiliate’s bank uses a different currency.
 
-## What your affiliates see
+Stripe does not report these fees against an individual payment through its API, so AffiliateWP does not print a total. Open the payout at **AffiliateWP » Payouts** and follow its link to the payment in your Stripe Dashboard, where Stripe itemises the standard, cross-border, and conversion parts.
 
-Affiliates handle their own setup, so you don’t have to walk them through it. Here’s the flow, so you know what to expect and what to point them to if they ask:
+Add money to your Stripe Financial Account before you pay affiliates this way. Before a run, the Pay Affiliates preview compares your balance against the bank-transfer total and tells you the exact shortfall to transfer. If you pay anyway and the balance falls short, those payouts fail with an insufficient-funds message and their commissions go back to unpaid. Add the money, then pay those affiliates again.
 
-1. When an affiliate goes to set up payouts, they first answer **“Which country do you receive payouts in?”** This is the country of the bank account where they get paid.
-2. If that country is supported, a **Set Up Stripe Payouts** button appears. They click it, Stripe runs a short verification, and their payouts then arrive in their local currency.
-3. If an affiliate picked the wrong country and **hasn’t finished** Stripe setup, they can click **Choose a different country** to clear the unfinished account and start over. An affiliate who’s already verified and getting paid doesn’t need to do anything.
-4. If an affiliate connected but didn’t finish, they’ll see a **Complete Setup** button to pick up where they left off.
+## Setting up and running Stripe payouts abroad
 
-This same guidance appears in the affiliate’s payout settings, next to the country selector, which is where affiliates actually read it.
+### What you need first
 
-![An affiliate's payout settings showing the country selector and international payout guidance](https://affiliatewp.com/wp-content/uploads/2026/06/affiliate-portal-setting-up-stripe-payouts-1232x603.png)
+You need one Stripe account, based in a country Stripe can pay out from, connected to AffiliateWP. [Stripe payouts](https://affiliatewp.com/docs/stripe-payouts/) covers connecting it. Then turn Stripe on at **AffiliateWP » Settings » Payouts**.
 
-## What happens to affiliates Stripe can’t reach
+What you can use depends on the country of your connected Stripe account, not your store’s address.
 
-Affiliates outside the supported countries can still be paid, just not through Stripe. AffiliateWP routes them to another payout method automatically, before they ever try to connect, so no one is left stuck on a method that can’t pay them.
+**Via their Stripe account** needs:
 
-**Enable PayPal too if you have affiliates outside the supported countries.** PayPal can pay affiliates anywhere, so turning it on covers the affiliates Stripe can’t reach. Without another method enabled, you’d have to pay those affiliates manually.
+- Stripe set up for the mode you are using, Live or Sandbox
+- A Stripe account based in one of the eight sender countries in the [comparison table](#whats-the-difference-between-stripe-cross-border-payouts-and-global-payouts) above
 
-## What turning it off does (and doesn’t do)
+**Straight to their bank account** needs the same, with a tighter country list:
 
-Turning the **International Affiliate Payouts** setting off only affects affiliates who **haven’t connected yet**. It never strands anyone who is already getting paid.
+- A Stripe account based in the US or the UK, which is a subset of those eight sender countries
+- Global Payouts active on that same account, so a Stripe Financial Account exists for AffiliateWP to find
+- Money in that Financial Account before you pay. Bank transfers into it can take a few days, so top it up ahead of time
 
-- Affiliates who are **already connected keep getting paid**, no matter where they are.
-- Affiliates outside your own country who **haven’t connected yet** can no longer connect Stripe; they’ll use another enabled payout method instead.
-- Affiliates in your own country can always use Stripe, whether the setting is on or off.
+Until AffiliateWP finds a Financial Account, the bank-account toggle stays locked. Activate Global Payouts in your [Stripe Dashboard](https://dashboard.stripe.com/balances/financial-accounts). AffiliateWP looks again each time you open the settings page, and **Check now** makes it look immediately.
 
-In other words, the toggle gates **onboarding, not payouts**. Switching it off later won’t interrupt a single affiliate who’s already set up.
+If you cannot find Global Payouts on a US or UK Stripe account, Stripe controls eligibility, so ask Stripe. AffiliateWP cannot enable it for you.
 
-## Tax forms for US affiliates
+### Turning the options on
 
-When you pay US affiliates through Stripe, Stripe collects the tax information it needs (such as a W-9) during the affiliate’s onboarding and can handle 1099 reporting for you. This is separate from the international payouts setting and applies whenever a US Stripe account pays US affiliates.
+Turn either option on from the **International Affiliate Payouts** group at **AffiliateWP » Settings » Payouts**. Neither is on by default, and you can use one or both.
 
-For the full walkthrough of how Stripe handles W-9 collection and 1099 filing, see [1099 tax forms for US affiliates](https://affiliatewp.com/docs/1099-tax-forms-for-affiliates/).
+![The International Affiliate Payouts group in AffiliateWP settings, with both options on and the Local bank countries and Wire-only countries toggles showing](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-settings-both-options-1232x942.png)
+
+1. Go to **AffiliateWP » Settings » Payouts** and open the Stripe card. Confirm Stripe is set up for the mode you are using, Live or Sandbox.
+2. Find the **International Affiliate Payouts** group.
+3. To pay through a Stripe Express account that AffiliateWP creates for each affiliate, turn on the toggle on the **Via their Stripe account** row.
+4. To pay their bank directly, first activate Global Payouts in your Stripe Dashboard so a Financial Account exists. Back in AffiliateWP, click **Check now** if it has not been found yet, then turn on the toggle on the **Straight to their bank account** row.
+5. Turning that row on reveals two more toggles beneath it, **Local bank countries** and **Wire-only countries**. Leave both on, unless you want those affiliates to use the other option or a different payout method instead.
+
+Set up the webhook so Stripe can tell AffiliateWP when an account finishes setup or a payout fails. Global Payouts registers its own Stripe events automatically. For **Via their Stripe account**, copy the endpoint and signing secret from the **Webhook Configuration** block further down the Stripe card into your Stripe Dashboard.
+
+Payouts still run without it, because AffiliateWP asks Stripe about each account when it needs to. What you lose is the notifications: nobody is emailed when an affiliate finishes setup, when Stripe needs more information from them, or when a payout fails.
+
+If a toggle is greyed out, one of these applies:
+
+- Your Stripe account’s country cannot use that option
+- Stripe is not set up yet, or the mode you are using is missing its Stripe keys
+- On the bank option only, AffiliateWP has not found a Financial Account yet
+
+A German, Canadian, Swiss, French, Dutch, or Swedish Stripe account can use **Via their Stripe account** and still see the bank option locked. Global Payouts is US and UK only.
+
+### Testing before you pay anyone real
+
+Both options work in Stripe’s sandbox, so you can run the whole flow before any real money moves.
+
+Switch on **Sandbox Mode** in the Stripe card and add your test secret key. The card then shows two balances, each with its own **Add Funds** control: **Payments balance** funds **Via their Stripe account**, and **Financial Account balance** funds **Straight to their bank account**. Test funds are spendable straight away. Topping up the Financial Account from AffiliateWP works for USD and GBP stores only, and other currencies top up in the Stripe Dashboard instead.
+
+![The Sandbox Mode card in AffiliateWP's Stripe payout settings, showing the Payments balance and the Financial Account balance, each with its own amount field and Add Funds control](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-sandbox-mode-balances-1232x1186.png)
+
+Your keys and your Financial Account are stored separately for each mode, so a sandbox setup never touches your live one. The on and off choices work differently: both modes share one setting. If the mode you switch to is not ready yet, the toggles lock but still show what you chose, and saving the page does not clear it.
+
+### Which option pays a given affiliate
+
+AffiliateWP picks the option from the payout country each affiliate declares. Affiliates only ever see one method called Stripe, and never choose between the two themselves. The order is:
+
+1. An affiliate in the same country as your Stripe account, always: a **Stripe Express account**, whether or not you turn either option on. That payout does not cross a border, so Stripe charges no cross-border fee. For a US store paying a US affiliate, it is also what lets Stripe collect a W-9 and file the 1099.
+2. An affiliate abroad, in a country the bank option covers, with that option on: **Straight to their bank account**. When both options cover the country a new affiliate goes here, because the setup is shorter for them.
+3. An affiliate abroad, in a country only the other option covers, with that option on: **Via their Stripe account**.
+4. An affiliate in a country neither option reaches: another payout method you have turned on, such as PayPal, so they never start a Stripe setup that cannot finish.
+
+Two rules keep affiliates who are already set up where they are:
+
+- An affiliate who finished **Via their Stripe account** stays on it, even if their country would now go to the bank option.
+- An affiliate who shows **Ready to receive payouts** on the bank option stays there until you turn that option off, or turn off the country group that covers them.
+
+To see which option an affiliate is on, open their Edit Affiliate screen from **AffiliateWP » Affiliates**. The payout country field names the option above its description, for example **Paid through Stripe Global Payouts** or **Stripe Connect (cross-border payouts)**.
+
+![The Payout country row on an affiliate's Edit Affiliate screen in AffiliateWP, showing New Zealand with the line Paid through Stripe Global Payouts beneath it](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-edit-affiliate-payout-country-1232x161.png)
+
+### Checking that a payout arrived
+
+Open the payout at **AffiliateWP » Payouts**. On the bank option the payout records what actually happened at the bank, which answers most “where is my money” questions without leaving WordPress:
+
+- **What the affiliate’s bank was credited**, in their currency, alongside the amount debited in your store currency, and the exchange rate Stripe used.
+- **How it was sent**, shown as **Standard** for a local bank transfer or **Wire**.
+- **A timeline**: **Payout sent**, then **Payout paid**. While it is still in flight the timeline ends with **Expected arrival**, and a payout that fails, returns, or is cancelled is stamped too.
+- **A Stripe receipt** you can forward to an affiliate who asks for proof of payment.
+- **A link to the payment in Stripe**, where the fees for that payout are itemised.
+
+![The payout drawer in AffiliateWP for a Global Payouts payout to Kenji Sato, showing 10,847 JPY credited, the exchange rate, a Payout sent and Payout paid timeline, and Wire delivery](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-payout-drawer-global-1232x1023.png)
+
+### Why a payout can be too small to send
+
+Stripe sets a minimum amount for each payout, in the destination currency, and it differs by country. Before AffiliateWP sends a payment it asks Stripe to price it, so the amount is checked against the current minimum for that affiliate’s bank country rather than a list that could go stale. If the payout is under the floor, AffiliateWP stops and tells you the minimum and its currency instead of sending something Stripe will reject.
+
+![The Pay referral dialog blocked, headed "Can't pay this referral yet", showing a .00 payout to a Japanese bank account and a Below Stripe's minimum notice stating Stripe requires at least 1,000.00 JPY](https://affiliatewp.com/wp-content/uploads/2026/08/below-stripes-minimum-japan-1232x941.png)
+
+If you hit this, either let that affiliate’s commissions build up, or raise the minimum earnings filter on the Pay Affiliates screen so small balances are not included in a run.
+
+### Changing an affiliate’s payout country
+
+On the bank option, Stripe writes the country into the record it creates and never changes it. AffiliateWP therefore locks the payout country field once bank details exist, so WordPress and Stripe cannot end up disagreeing about where the affiliate banks.
+
+To change it, open their Edit Affiliate screen from **AffiliateWP » Affiliates** and use **Remove affiliate from Global Payouts**. That clears the bank details on file, unlocks the country field, and lets the affiliate set up again with the right country. Nothing else about the affiliate or their earnings changes.
+
+![The Payout country and Payout setup rows on an affiliate's Edit Affiliate screen in AffiliateWP, showing a Ready badge, the bank ending 0010, and the Remove affiliate from Global Payouts control](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-remove-from-global-payouts-1232x291.png)
+
+The lock also lifts on its own if the affiliate’s country stops being covered. That happens when you turn off one of the two country groups under the **Straight to their bank account** row, **Local bank countries** or **Wire-only countries**, and the affiliate is in the group you turned off. Their details stay on file, but they cannot be paid that way until you turn that group back on.
+
+On the Stripe-account option, an affiliate who has not finished setup can fix this themselves with **Choose a different country**.
+
+### Turning an option back off
+
+The two options do not behave the same way when you switch them off, so the detail matters.
+
+**Via their Stripe account.** Turning this off only stops new international affiliates from setting it up. Affiliates who already finished keep getting paid, wherever they are. Affiliates in your own country can use Stripe whether this is on or off.
+
+**Straight to their bank account.** Turning that row’s toggle off, or turning off either of the country groups beneath it, **Local bank countries** or **Wire-only countries**, means those affiliates can no longer be paid that way. AffiliateWP moves them to **Via their Stripe account** if it can pay their country, or to another payout method you have turned on. Until then they cannot be paid through Stripe, and the affiliate list and the pay-referral screen say so and link you back to the setting.
+
+Turning either option off never deletes an affiliate’s Stripe account or bank details. It only changes who can use which option next.
+
+## When Stripe cannot reach an affiliate
+
+Neither Stripe option covers every country. When an affiliate picks a country that neither one reaches, AffiliateWP does not offer them Stripe at all, and they need one of the methods below instead. Turning on a second method is what keeps those affiliates payable.
+
+### How AffiliateWP picks another method
+
+If the country an affiliate chose is not covered by either option you have turned on, they do not see Stripe. AffiliateWP offers them another payout method you have enabled before they try to set Stripe up.
+
+That other method is your site’s default payout method, as long as the default is not Stripe. Otherwise it is the first other method you have turned on, such as PayPal or store credit. Manual is always there as the last resort: the affiliate sees no payout option to fill in, and you pay them outside AffiliateWP and record it.
+
+Turn on PayPal if you have affiliates outside Stripe’s reach. PayPal reaches countries neither Stripe option covers. Without a second method you would have to pay those affiliates by hand.
+
+### PayPal
+
+PayPal reaches countries neither Stripe option covers, which is why it is worth turning on alongside Stripe rather than instead of it. Brazil, Nigeria, Argentina, Colombia and Ukraine are all outside Stripe’s reach and inside PayPal’s.
+
+The important difference is the currency. Stripe pays an affiliate in *their* currency. PayPal sends *your store’s* currency, and PayPal converts it on their side at their own rate. So an affiliate in Brazil paid through PayPal receives your currency into their PayPal account, not Brazilian reais into their bank.
+
+There is nothing country-specific to configure. PayPal has no coverage setting and no per-country toggles, so once it’s set up it is simply available to any affiliate who picks it. See [paying affiliates with PayPal](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/) for the setup.
+
+### Store credit
+
+Store credit sidesteps the problem rather than solving it. Nothing crosses a border, no currency is converted, and no bank details are needed, because the affiliate spends their commission on your store instead of receiving money.
+
+That makes it the simplest option for an affiliate in a country neither Stripe nor PayPal can reach, as long as buying from you is worth something to them. It needs WooCommerce or Easy Digital Downloads. See [paying affiliates with store credit](https://affiliatewp.com/docs/store-credit-installation-and-usage/).
+
+### A manual payout
+
+Manual Payout is the last resort, and it always works, because it isn’t really a payment method: you send the money yourself by bank transfer, wire, or whatever your affiliate’s country supports, and AffiliateWP records that you did. Their payout appears in your history like any other, and the amounts you owe are in the CSV you can download from the batch. For the whole flow, see [paying affiliates manually](/docs/paying-affiliates-manually/).
+
+Because it always works, it is also where an affiliate quietly ends up when nothing else can reach them. That is worth knowing before you run a payout: a Manual payout is marked as paid whether or not you have actually sent anything.
 
 ## Frequently asked questions
 
 ### Do I need a special Stripe account to pay affiliates internationally?
 
-No. International payouts work with your existing Stripe account, as long as it’s based in the US or UK. There’s nothing extra to install or sign up for, and no extra monthly fee.
+No. Both options run on the Stripe account you already have. **Via their Stripe account** works from any of the eight sender countries listed in the comparison table. **Straight to their bank account** narrows that to the US and the UK, and needs Global Payouts active on the account so a Stripe Financial Account exists.
 
-### An affiliate’s country isn’t in the list. What do I do?
+### An affiliate’s country is not supported. Can they still use Stripe?
 
-Stripe can’t pay affiliates outside the supported countries. Enable [PayPal](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/) so they can set up their own payout method, or pay them with another method you’ve enabled, such as store credit or a manual payment.
+Yes, if **Straight to their bank account** is on and their country appears in the local bank or wire-only lists under [Which countries can I pay affiliates in?](#which-countries-can-i-pay-affiliates-in). If neither option covers the country, turn on PayPal or another payout method, or pay them by hand.
 
-### The International Affiliate Payouts toggle is greyed out. Why?
+### I don’t see Global Payouts in my US or UK Stripe account. What do I do?
 
-Your connected Stripe account isn’t based in the US or UK. International payouts are only available from US- and UK-based Stripe accounts. This depends on your Stripe account’s country, not your store’s address.
+Activate it from your Stripe Dashboard. Stripe controls who is eligible, so if you cannot find it there, ask Stripe. AffiliateWP cannot enable it for you. Once it is active, return to **AffiliateWP » Settings » Payouts** and click **Check now**.
 
-### I see the option even though my store isn’t in the US or UK. Is that right?
+### A toggle is greyed out. Why?
 
-Yes. Availability follows your connected Stripe account’s country, not your store’s address. If your Stripe account is US- or UK-based, international payouts are available even when your store is set to another country.
+Usually your Stripe account is in a country that cannot use that option, or Stripe is not set up for the mode you are in. On the bank option, the toggle also stays locked until AffiliateWP finds a Financial Account.
 
-### Will turning this on change anything for affiliates I already pay?
+### I see the options even though my store isn’t in the US or UK. Is that right?
 
-No. The setting only affects new connections. Everyone already connected keeps getting paid exactly as before.
+Yes. Eligibility follows your connected Stripe account’s country, not your store’s address.
+
+### Which option will a given affiliate use?
+
+Open their Edit Affiliate screen from **AffiliateWP » Affiliates**. The payout country field names the option that will pay them. Change the country and the label updates before you save.
+
+### An affiliate says they received less than their commission. Why?
+
+On **Via their Stripe account**, Stripe deducts its currency conversion fee from the amount the affiliate receives, and they only see it in their Stripe Express dashboard. On **Straight to their bank account**, open the payout at **AffiliateWP » Payouts** to see exactly what their bank was credited and the exchange rate used, and forward them the Stripe receipt.
 
 ### An affiliate isn’t getting paid. What should I check?
 
-Their Stripe onboarding may be unfinished. Ask them to open their payout settings and click **Complete Setup**, or **Choose a different country** if their account was set up in the wrong country.
+Ask them to open their payout settings and click **Continue setup** or **Fix your setup** on the bank option, or **Complete Setup** on the Stripe-account option. You can email them that link with the reminder button on their Edit Affiliate screen. If you are paying through the bank option, also check that the Financial Account has enough money. AffiliateWP tells you the shortfall before a run.
+
+### Can I change an affiliate’s payout country after they’ve added bank details?
+
+Not directly, because Stripe fixes the country when it creates the record. Open their Edit Affiliate screen from **AffiliateWP » Affiliates**, use **Remove affiliate from Global Payouts**, then have them set up again.
 
 ## Next steps
 
-- [Stripe Payouts](https://affiliatewp.com/docs/stripe-payouts/) – Connect Stripe and pay affiliates by direct transfer.
-- [Paying your affiliates](https://affiliatewp.com/docs/paying-your-affiliates/) – Compare every payout method and learn how payouts work.
-- [PayPal Payouts](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/) – Add PayPal so affiliates anywhere can set up their own payout method.
-- [1099 tax forms for US affiliates](https://affiliatewp.com/docs/1099-tax-forms-for-affiliates/) – How Stripe handles W-9 collection and 1099 reporting.
+- [Stripe Payouts](https://affiliatewp.com/docs/stripe-payouts/) sets up Stripe and pays affiliates by direct transfer.
+- [A complete guide to paying your affiliates](https://affiliatewp.com/docs/paying-your-affiliates/) compares every payout method and explains how payouts work.
+- [PayPal Payouts](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/) covers affiliates neither Stripe option can reach.
+- [1099 tax forms for affiliates](https://affiliatewp.com/docs/1099-tax-forms-for-affiliates/) explains the W-9 and 1099 flow for US affiliates paid through a Stripe Express account.
+- [Automatic Payouts](https://affiliatewp.com/docs/automatic-payouts/) pays everyone on a schedule, each through their own method.
 
----
-
-That’s it! Your affiliates around the world can now be paid in their own currency, straight from your Stripe account. If you have any questions, please don’t hesitate to [contact our support team](https://affiliatewp.com/contact/).
+That’s it! Your affiliates can be paid in their own currency through Stripe, either through a Stripe Express account or straight to their bank. If you have any questions, please don’t hesitate to [contact our support team](https://affiliatewp.com/contact/).
 
 ---
 
@@ -302,7 +635,7 @@ This article explains how AffiliateWP and Stripe handle 1099 tax forms. It isn�
 - **Your connected Stripe account is based in the US.** Eligibility follows the country of your connected Stripe account, not your store’s address.
 - **The affiliate is in the US.** Stripe collects their tax details and can produce a 1099 for them.
 
-It does **not** apply to affiliates outside the US, or to stores whose Stripe account is based outside the US. A US 1099 doesn’t apply in those cases, so nothing is collected or filed. Your international affiliates are paid normally; they just don’t receive a US tax form. For how international payouts work, see [Paying affiliates internationally with Stripe](https://affiliatewp.com/docs/international-affiliate-payouts/).
+It does **not** apply to affiliates outside the US, or to stores whose Stripe account is based outside the US. A US 1099 doesn’t apply in those cases, so nothing is collected or filed. Your international affiliates are paid normally; they just don’t receive a US tax form. For how international payouts work, see [Paying affiliates internationally](https://affiliatewp.com/docs/international-affiliate-payouts/).
 
 ## What’s automatic, and what you do
 
@@ -363,176 +696,13 @@ Yes. Stripe collects their W-9 / taxpayer ID so their 1099 can be filed. They pr
 
 ## Next steps
 
-- [Paying affiliates internationally with Stripe](https://affiliatewp.com/docs/international-affiliate-payouts/) – Pay affiliates in their local currency from your own Stripe account.
+- [Paying affiliates internationally](https://affiliatewp.com/docs/international-affiliate-payouts/) – Pay affiliates in their local currency from your own Stripe account.
 - [Stripe Payouts](https://affiliatewp.com/docs/stripe-payouts/) – Connect Stripe and pay affiliates by direct transfer.
 - [Paying your affiliates](https://affiliatewp.com/docs/paying-your-affiliates/) – Compare every payout method and learn how payouts work.
 
 ---
 
 That’s it! When you pay US affiliates through Stripe, their tax forms are handled for you: Stripe collects the details at onboarding, and you file with a click at tax time. If you have any questions, please don’t hesitate to [contact our support team](https://affiliatewp.com/contact/).
-
----
-
-## Setting Up Affiliate Payout Methods
-
-**Source:** [https://affiliatewp.com/docs/per-affiliate-payout-methods/](https://affiliatewp.com/docs/per-affiliate-payout-methods/)
-
-AffiliateWP lets each affiliate choose how they receive their commissions via PayPal, Stripe, Store Credit, or manual payment. This guide explains how to set your program’s default payout method, how to give affiliates the ability to choose their own method, and how AffiliateWP determines which method routes each payout.
-
-In This Article
-
-- [Set the default payout method](#set-the-default-payout-method)
-- [Let affiliates choose their payout method](#let-affiliates-choose-their-payout-method)
-- [What affiliates see](#what-affiliates-see)
-- [Setting up each payout method](#setting-up-each-payout-method)
-- [Override an affiliate's payout method](#override-an-affiliates-payout-method)
-- [Send payouts](#send-payouts)
-- [Auto-email and auto-retry for failed payouts](#auto-email-and-auto-retry-for-failed-payouts)
-- [How AffiliateWP assigns payout methods](#how-affiliatewp-assigns-payout-methods)
-- [Frequently Asked Questions](#frequently-asked-questions)
-
-## Set the default payout method
-
-The default payout method applies to every affiliate who has not selected their own. Configure it from the Payouts settings page.
-
-1. Navigate to **AffiliateWP » Settings » Payouts**.
-2. In the **Payout Settings** card, open the **Default Payout Method** dropdown.
-3. Select your preferred method.
-4. Click **Save Changes**.
-
-![](https://affiliatewp.com/wp-content/uploads/2026/05/select-default-payout-767x493.png)
-
-The dropdown shows only methods that are currently enabled. If you add or remove a method later, the list updates automatically.
-
-## Let affiliates choose their payout method
-
-By default on upgraded sites, all affiliates use the site default method, and affiliates cannot change their method. You can enable self-selection so each affiliate can pick their preferred method.
-
-1. Navigate to **AffiliateWP » Settings » Payouts**.
-2. In the **Payout Settings** card, enable **Allow affiliates to choose their payout method**.
-3. Click **Save Changes**.
-
-![allow affiliates to choose their payout method](https://affiliatewp.com/wp-content/uploads/2026/05/allow-affiliates-to-choose-their-payout-method-1779914417659.png)
-
-Once enabled, affiliates will see a payout method dropdown on the **Settings** tab of their Affiliate Area, but only when at least two selectable methods are available.
-
-![how affiliates will get paid](https://affiliatewp.com/wp-content/uploads/2026/06/how-affiliates-will-get-paid-1780936158073-scaled.png)
-
-If only one method is enabled, there is nothing to choose between, so the dropdown is replaced with a plain status line (for example, “Paid via Stripe”).
-
-**Note:** On fresh installations, this toggle is on by default. On sites upgrading from a previous version, it defaults to off to preserve your existing payout flow. You can enable it at any time.
-
-## What affiliates see
-
-When self-selection is enabled, and at least two methods are available, affiliates will see the **How you’ll be paid** section on the **Settings** tab of their Affiliate Area with a **Payout Method** dropdown.
-
-The dropdown includes:
-
-- A **site default** option for affiliates who want to use whatever method the admin has configured
-- Each selectable method the affiliate is eligible to use
-
-When an affiliate picks a method and saves, that choice is stored on their account and used for all future payouts.
-
-When self-selection is off, or when fewer than two methods are available, affiliates see a static status line (for example, “Paid via PayPal”) instead of the dropdown.
-
-## Setting up each payout method
-
-Depending on the payout method, affiliates may need to complete additional setup before receiving payouts.
-
-### PayPal
-
-Affiliates paid via PayPal need to enter a **payment email** (the email address on their PayPal account). This field appears in the **How you’ll be paid** section of their Affiliate Area settings and only shows when PayPal (or Manual) is their active method.
-
-For full setup instructions, see [PayPal Payouts](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/).
-
-### Stripe
-
-Affiliates paid via Stripe must complete Stripe Connect onboarding. A **Set Up Stripe Payouts** button appears in the **How you’ll be paid** section. Once the affiliate completes Stripe’s verification process, Stripe is automatically saved as their payout method, with no extra save step needed.
-
-For full setup instructions, see [Stripe Payouts](https://affiliatewp.com/docs/stripe-payouts/).
-
-### Store Credit
-
-Affiliates paid via Store Credit receive commissions as credit they can spend in your store. Their available balance is displayed in the **How you’ll be paid** section of their Affiliate Area settings.
-
-For full setup instructions, see [Store Credit](https://affiliatewp.com/docs/store-credit-installation-and-usage/).
-
-### Manual Payout
-
-Manual Payout is an admin-only method. It never appears in the affiliate-facing picker. Affiliates whose effective method is Manual see “Paid directly” as a status line in their Affiliate Area, and an admin handles the actual payment outside AffiliateWP.
-
-## Override an affiliate’s payout method
-
-Admins can set a payout method for a specific affiliate directly from the Edit Affiliate screen, regardless of the affiliate’s own preference or the site default.
-
-1. Navigate to **AffiliateWP » Affiliates**.
-2. Click the affiliate’s name or anywhere on their row.
-3. Scroll to the **Payout Method** field.
-4. Open the **Override** dropdown and select a method.
-5. Click **Update**.
-
-While an override is set, the affiliate cannot change their own payout method. To restore affiliate self-selection, set the override back to **No override** and save.
-
-## Send payouts
-
-Payouts are sent from **AffiliateWP » Payouts** using the **Pay Affiliates** button. Per-affiliate method preferences are applied automatically during the batch, you don’t need to configure each affiliate’s method at the time of payment.
-
-In the **Payout method** section of the batch configuration, you have two options:
-
-![pyout method](https://affiliatewp.com/wp-content/uploads/2026/06/Payout-method-1780629993929.png)
-
-- **Use each affiliate’s configured method**: Each affiliate in the batch is paid via their effective method. You can optionally filter to specific methods if you want to run, for example, only PayPal affiliates in this batch.
-- **Pay everyone this batch via**: Choose a single method to override all per-affiliate preferences for this batch only. Their saved method preferences are not changed.
-
-Before the money moves, the preview screen shows the batch grouped by method. You can see exactly how many affiliates are assigned to each method and the total amount per method. Review the breakdown, then click **Process payout** to submit.
-
-For a full walkthrough of the Pay Affiliates flow, see [Paying your affiliates](https://affiliatewp.com/docs/paying-your-affiliates/).
-
-After submitting, track each payout’s status from **AffiliateWP » Payouts**. You can also check the **Payout Method** column on **AffiliateWP » Referrals** at any time: unpaid referrals show the method that will be used on the next batch run, and paid referrals show the method that was used at the time of payment.
-
-## Auto-email and auto-retry for failed payouts
-
-When a payout fails because the affiliate needs to take action (for example, their PayPal email is unverified or their Stripe account is not connected), AffiliateWP can notify them automatically and retry the payout once they resolve the issue.
-
-Navigate to **AffiliateWP » Settings » Payouts** and find these toggles in the **Payout Settings** card:
-
-- **Auto-email affiliates about failed payouts**: sends the affiliate an email explaining what they need to do to receive their payout.
-- **Auto-retry failed payouts**: automatically retries the payout after the affiliate has completed the required action.
-
-![auto email auto-retry](https://affiliatewp.com/wp-content/uploads/2026/05/auto-email-auto-retry-1779915475746-767x184.png)
-
-Both settings are **on** by default for new installations. On sites upgraded from a previous version, both default to **off** to avoid unexpectedly emailing affiliates about historical payout failures. You can enable either or both at any time.
-
-## How AffiliateWP assigns payout methods
-
-Every affiliate in AffiliateWP has a single **effective method** — the method that will actually be used when they are paid. AffiliateWP determines this in order:
-
-1. **The affiliate’s saved choice**: if the affiliate has selected a method in their Affiliate Area settings and that method is currently enabled, it is used.
-2. **The site default**: if the affiliate has no saved choice, or if their saved method is no longer enabled, the **Default Payout Method** from your settings is used.
-3. **Manual fallback**: if the site default is also disabled, AffiliateWP falls back to Manual Payout so no affiliate is silently skipped.
-
-You can see each affiliate’s effective method in the **Payout Method** column on the **Referrals** list:
-
-- **Unpaid referrals** show the method that will be used when the referral is paid (this updates live as the affiliate or admin changes the method).
-- **Paid referrals** show the method that was used at the time of payment. This is a permanent historical record.
-
-## Frequently Asked Questions
-
-### What happens if I disable a payout method that some affiliates have already chosen?
-
-Their effective method automatically falls back to the site default. Their payouts will process using that default until the method is re-enabled. Their saved preference is not deleted: if you re-enable the method later, they’ll return to using their saved choice automatically, with no action required from them.
-
-### Why isn’t the payout method dropdown showing in the Affiliate Area?
-
-Two conditions must be met: the **Allow affiliates to choose their payout method** toggle must be on in **AffiliateWP » Settings » Payouts**, and at least two selectable methods must be enabled. If only one method is enabled, there is nothing to choose from, so the dropdown is not shown.
-
-### Can I pay all affiliates via one method for a specific batch, regardless of their individual settings?
-
-Yes. In the Pay Affiliates batch configuration, select **Pay everyone this batch via** and choose a method. This overrides per-affiliate preferences for that batch only and does not change their saved method.
-
----
-
-That’s everything you need to configure affiliate payout methods in AffiliateWP. If you have any questions, please don’t hesitate to [contact our support team](https://affiliatewp.com/contact/).
 
 ---
 
@@ -1430,11 +1600,11 @@ That’s it! Integrating Charitable with AffiliateWP allows you to reward affili
 
 ---
 
-## Paying Affiliates with Stripe
+## Paying affiliates with Stripe
 
 **Source:** [https://affiliatewp.com/docs/stripe-payouts/](https://affiliatewp.com/docs/stripe-payouts/)
 
-Looking for a fast, secure, and seamless way to payout your affiliates directly to their bank accounts? Paying affiliates with Stripe makes that possible. With a one-time setup, you can send affiliate earnings directly through Stripe, without ever needing spreadsheets or manual processing.
+Looking for a fast, secure, and seamless way to pay your affiliates directly into their bank accounts? Paying affiliates with Stripe makes that possible. With a one-time setup, you can send affiliate earnings directly through Stripe, without ever needing spreadsheets or manual processing.
 
 In this guide, we’ll walk you through how Stripe payouts work, how to set them up, and how to send them.
 
@@ -1442,35 +1612,31 @@ In This Article
 
 - [Overview of Stripe](#overview-of-stripe-payouts)
 - [Setting up Stripe payouts](#setting-up-stripe-payouts)
-- [Email Notifications](#email-notifications)
-- [Connecting as an Affiliate](#connecting-as-an-affiliate)- [Affiliate Area](#affiliate-area)
-- [Affiliate Portal](#affiliate-portal)
-- [Customizing the Affiliate Onboarding Page](#customizing-the-affiliate-onboarding-page)
-- [Managing Affiliate Connections](#managing-affiliate-connections)
-- [Sending Payouts](#aioseo-sending-payouts)
-- [Supported Countries](#supported-countries)
-- [Paying Affiliates Internationally](#aioseo-paying-affiliates-internationally-198)
-- [Frequently Asked Questions](#frequently-asked-questions)
+- [Email notifications](#email-notifications)
+- [How affiliates set up their payouts](#connecting-as-an-affiliate)
+- [Customizing the affiliate onboarding page](#customizing-the-affiliate-onboarding-page)
+- [Checking an affiliate's setup](#managing-affiliate-connections)
+- [Getting an affiliate to finish setup](#getting-an-affiliate-to-finish-setup)
+- [Sending payouts](#aioseo-sending-payouts)
+- [Frequently asked questions](#frequently-asked-questions)
 
 ## Overview of Stripe
 
 AffiliateWP includes a built-in Stripe integration that lets you pay your affiliates using [Stripe](https://stripe.com/connect).
 
-You’ll connect your Stripe account in AffiliateWP, which is installed on your site, and your affiliates will connect via your Stripe account from their Affiliate Area. Once both are connected, you can initiate payouts with a single click.
+You connect Stripe by entering your secret key in AffiliateWP’s payout settings. Affiliates then set up payouts from their affiliate area, and AffiliateWP creates a Stripe Express account for each of them, connected to your own Stripe account. Once your key is in place and an affiliate has finished their setup, you can pay them in one click.
 
-When you send a payout, funds move from your Stripe account to your affiliate’s connected Stripe account, and Stripe then deposits those funds into the affiliate’s bank account.
+When you send a payout, funds move from your Stripe account to your affiliate’s connected Stripe account. Stripe then sends them on to the affiliate’s own bank.
 
 New to Stripe? [Learn how to create your Stripe account here](https://stripe.com/docs/account).
 
 ## Setting up Stripe payouts
 
-To get started, navigate to **AffiliateWP » Settings » Payouts**, then click on Stripe Payouts from the list of available payout methods. You can either click the Configure button or click anywhere on the Stripe Payouts row to expand the settings panel.
+To get started, go to **AffiliateWP » Settings » Payouts** and click **Configure** on the Stripe row.
 
-![Stripe payout method](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-payout-method-767x346.png)
+![The Payout Methods card on the AffiliateWP Payouts settings screen with nothing enabled yet, noting that payouts can still be processed manually, and an arrow pointing at the Configure button on the Stripe row](https://affiliatewp.com/wp-content/uploads/2026/08/payout-methods-card-empty-1232x590.png)
 
-When opened, the Stripe payouts panel displays four main sections: International Affiliate Payouts, Live Mode, Sandbox Mode, and Webhook Configuration.
-
-**International Affiliate Payouts**: Enables paying affiliates in other countries in their local currency. Requires a US- or UK-based Stripe account.
+**International Affiliate Payouts**: Two options for paying affiliates in other countries in their local currency. **Via their Stripe account** pays through a Stripe Express account. **Straight to their bank account** reaches more countries and pays the bank directly, and needs a US- or UK-based Stripe account.
 
 ![](https://affiliatewp.com/wp-content/uploads/2025/08/International-Affiliate-Payouts-767x185.png)
 
@@ -1478,11 +1644,11 @@ When opened, the Stripe payouts panel displays four main sections: International
 
 ![](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-live-mode-767x219.png)
 
-**Sandbox Mode**: A test environment where you can simulate payouts without real transactions.
+**Sandbox Mode**: A test environment where you can run payouts without real money. It shows a test payments balance, and a test Financial Account balance once the bank option is on, each with its own control for adding funds.
 
 ![](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-sandbox-mode-767x442.png)
 
-**Webhook Configuration**: Settings to allow AffiliateWP to receive real-time updates from Stripe about account status and transfers.
+**Webhook Configuration**: The endpoint and signing secret that let Stripe tell AffiliateWP when an affiliate finishes setup, when Stripe needs more information from them, or when a payout fails. Payouts still run without it, but nobody is emailed about those events.
 
 ![](https://affiliatewp.com/wp-content/uploads/2025/08/Webhook-Configuration-767x329.png)
 
@@ -1490,9 +1656,9 @@ Let’s walk through each section.
 
 ### International Affiliate Payouts
 
-This section lets you pay affiliates in other countries in their local currency, straight from your Stripe account. It requires your Stripe platform account to be based in the US or UK.
+Two options here pay affiliates in other countries in their local currency, straight from your Stripe account. Which one pays a given affiliate depends on the country they declare, and AffiliateWP picks it for them.
 
-Enable the **Enable international affiliate payouts** toggle to turn this on. For the full guide, see [Paying Affiliates Internationally](https://affiliatewp.com/docs/international-affiliate-payouts/) below.
+Turning them on, the countries each one reaches, what Stripe charges, and what your affiliates see are all covered in [paying affiliates internationally](https://affiliatewp.com/docs/international-affiliate-payouts/).
 
 ### Live Credentials
 
@@ -1511,12 +1677,16 @@ To enable Sandbox Mode:
 1. Enable Sandbox Mode by toggling it on.
 2. Enter your **Test Secret Key** found in your Stripe Test Dashboard under**Developers » API Keys**.
 
-![Stripe payouts sandbox mode](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-payouts-sandbox-767x434.png)
+New to Stripe? [Learn how to create your Stripe account here](https://stripe.com/docs/account).
 
-The panel also shows:
+The card then shows **two** test balances, because the two Stripe options are funded from different places. Each has its own **Add Funds** control and its own **Refresh**.
 
-1. **Available Test Balance**: Displays the current sandbox funds available in your Stripe test account.
-2. **Add Test Funds**: Enter an amount (e.g., $500) and click **Add Funds** to simulate having a balance. These test funds allow you to initiate payout actions without real money.
+- **Payments balance** pays affiliates through their own Stripe accounts. Topping it up puts a test card charge through, the same way a real sale would.
+- **Financial Account balance** pays affiliates straight to their bank. Test funds here land immediately, so you can pay a bank transfer as soon as you add them.
+
+Fund the one you are testing. A healthy payments balance does nothing for a bank transfer, and an affiliate paid that way fails for insufficient funds while the other balance sits full.
+
+![The Sandbox Mode card with the toggle on, a Test Secret Key field, and two test balances: a payments balance that funds payouts through affiliates' Stripe accounts, and a Financial Account balance that funds payouts straight to their banks, each with its own Add Funds control](https://affiliatewp.com/wp-content/uploads/2026/08/sandbox-mode-two-balances-1232x1189.png)
 
 Test funds do not involve real money. They’re only used in Stripe’s test environment for simulating payouts.
 
@@ -1524,16 +1694,16 @@ Test funds do not involve real money. They’re only used in Stripe’s test env
 
 Webhooks keep AffiliateWP in sync with Stripe by providing real-time updates when an affiliate’s account changes status or when a payout is sent.
 
-![Stripe payouts webhook](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-payouts-webhooks-767x258.png)
-
-This section includes:
+Once it is set up the card tells you whether events are actually arriving, so you can see it is working rather than assume it. This section includes:
 
 - A **Webhook Endpoint URL** that you can copy into Stripe
 - A field to paste the **Webhook Signing Secret** from Stripe
 
 These steps are optional but highly recommended for better reliability and debugging.
 
-#### Setting Up Webhook Events
+![The Webhook Configuration card marked Recommended, confirming the last event was received 9 minutes ago, with the webhook endpoint URL and a Copy button above the signing secret field](https://affiliatewp.com/wp-content/uploads/2026/08/webhook-configuration-1232x635.png)
+
+#### Setting up webhook events
 
 To make sure Stripe can send real-time updates back to AffiliateWP, we recommend configuring the following events when setting up your webhook:
 
@@ -1561,7 +1731,7 @@ Then, select the following events to ensure AffiliateWP receives the necessary u
 payout.paid
 ```
 
- – Notifies when a payout is successfully deposited into the affiliate’s bank account
+ – Notifies when Stripe has sent a payout on to the affiliate’s bank. This is the last step Stripe can report: no bank tells it the money arrived
 - ```
 payout.failed
 ```
@@ -1626,13 +1796,13 @@ Next, return to your WordPress admin and paste the copied key into the **Webhook
 
 If you’re working in **test mode**, use the test Webhook URL and test Signing Secret. For live payouts, use your **live credentials**. Each mode has its own unique keys and webhook settings.
 
-## Email Notifications
+## Email notifications
 
 AffiliateWP’s Stripe payouts include built-in email notifications that keep both site admins and affiliates informed of key payout events.
 
-To configure these notifications, navigate to **AffiliateWP » Settings » Emails**, and then open the **Stripe Payout Emails** tab.
+To configure these notifications, go to **AffiliateWP » Settings » Emails** and expand the **Stripe Payout Emails** card. Every email in it has its own on/off switch and a **Configure** button for the wording.
 
-![Stripe payouts emails](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-payouts-email-767x310.png)
+![The Emails tab of AffiliateWP settings with the Stripe Payout Emails card expanded, showing Affiliate Manager Emails and a Transfer Created row with a Configure button and an on/off switch](https://affiliatewp.com/wp-content/uploads/2026/08/stripe-payout-emails-card-1232x703.png)
 
 The interface is divided into two sections: **Affiliate Manager Emails** and **Affiliate Emails**.
 
@@ -1642,8 +1812,6 @@ Stripe payout email notifications require webhooks to be configured in your Stri
 
 These notifications are sent to the site admin (or whoever manages affiliate payouts) when Stripe reports a change in payout or account status.
 
-![AffiliateWP Stripe payouts affiliate manager emails](https://affiliatewp.com/wp-content/uploads/2025/08/affiliate-manager-emails-2-767x625.png)
-
 Each notification has a **Configure** button that lets you customize the subject line, body content, and add dynamic tags. You can also **preview** or **send a test email** from this screen.
 
 Here are the available notifications:
@@ -1651,21 +1819,20 @@ Here are the available notifications:
 - **Transfer Created** Notifies admins when a transfer is successfully initiated to an affiliate’s Stripe account.
 - **Transfer Failed** Alerts admins when a transfer attempt to Stripe fails.
 - **Transfer Reversed** Critical notification when Stripe reverses a previously successful transfer.
-- **Payout Completed** Sent when Stripe confirms that funds have successfully reached the affiliate’s bank account.
+- **Payout Completed** Sent when Stripe has sent the money to the affiliate’s bank. Nothing confirms that it arrived, so this is the last step anyone is told about.
 - **Payout Failed** Sent when a payout fails to reach the affiliate’s bank due to an issue (e.g., invalid bank account).
 - **Account Verification Required** Alerts you when an affiliate needs to complete additional verification steps to be eligible for payouts.
 - **Account Connected** Notifies you when an affiliate successfully connects their Stripe account.
+
+![The seven Affiliate Manager Emails in the Stripe Payout Emails card, from Transfer Created to Account Connected, each with a Configure button and an on/off switch, all switched on](https://affiliatewp.com/wp-content/uploads/2026/08/affiliate-manager-emails-1232x1083.png)
 
 ### Affiliate Emails
 
 These are sent directly to affiliates, helping them stay updated on their account and payout statuses.
 
-![AffiliateWP Stripe payouts affiliate emails](https://affiliatewp.com/wp-content/uploads/2025/08/affiliate-emails-1-767x554.png)
-
 Available notifications include:
 
 - **Transfer Created** Informs affiliates that a transfer has been initiated to their Stripe account.
-- **Transfer Failed** Notifies them if the transfer failed.
 - **Payout Completed** Lets affiliates know the funds have reached their bank account.
 - **Payout Failed** Alerts the affiliate that the payout could not be completed by their bank.
 - **Account Verification Required** Notifies the affiliate if Stripe requires additional identity or bank information to enable payouts.
@@ -1673,164 +1840,174 @@ Available notifications include:
 
 Each email can be customized with its own subject, message, and template tags. These are accessed by clicking the **Configure** button next to each notification
 
-## Connecting as an Affiliate
+**The email an affiliate gets when a payout fails is not in this card.** It is **Payout Failed — Action Required**, under **AffiliateWP Emails** on the same screen, because it covers every payout method rather than Stripe alone. One subject is shared, and the body has a separate version per method, so you can word the Stripe one differently from PayPal. Only the methods you have turned on appear there. Its switch follows your failed-payout email setting under **AffiliateWP » Settings » Payouts**, so turning it off there turns it off here too.
 
-To receive payouts via Stripe, affiliates must connect their own Stripe account. This is a self-service process and can be completed either from the **Affiliate Area** or from the **Affiliate Portal**, depending on which interface your site uses. Once connected, payouts can be sent automatically to the affiliate’s bank account through Stripe.
+![The five Affiliate Emails in the Stripe Payout Emails card: Transfer Created, Payout Completed, Payout Failed, Account Verification Required and Account Connected, each with a Configure button and an on/off switch](https://affiliatewp.com/wp-content/uploads/2026/08/affiliate-emails-1232x752.png)
 
-#### Affiliate Area
+## How affiliates set up their payouts
 
-If your site uses the Affiliate Area, affiliates can connect to Stripe by following these steps:
+Your affiliates do the setup themselves, on one screen. They pick Stripe as their payout method and answer which country they receive payouts in, meaning the country of the bank account where the money lands. AffiliateWP then shows the setup for whichever Stripe option covers that country. The country list deliberately includes every country, so an affiliate gets a clear answer instead of starting a setup that cannot finish.
 
-1. Log in to the Affiliate Area on your site
-2. Go to **Settings » Payout Method** dropdown**,** and select **Paid via Stripe**.
-3. Select the country they receive payouts in from the dropdown.
-4. Click **Set Up Stripe**.
+### Where affiliates find the setting
 
-![](https://affiliatewp.com/wp-content/uploads/2025/08/payout-method-dropdown-767x473.png)
+The panel is the same on both affiliate interfaces, reached a different way.
 
-#### Affiliate Portal
+1. The affiliate opens **Settings**. In the Affiliate Area that is the **Settings** tab; in the Affiliate Portal it is **Settings** in the sidebar.
+2. Under **Payout method**, they choose **Stripe**.
+3. They answer the payout country question below it. This is the country of the bank account the money lands in, not where they live.
+4. They click **Set up payouts**.
 
-If your site uses the Affiliate Portal, once an affiliate is logged in, they can click the profile icon in the top-right corner and click **Settings**.
+**They do not need to save first.** Set up payouts carries the country they chose with it, so they can go straight from the dropdown to Stripe.
 
-In the Settings screen, locate the **Payout method** dropdown and select Stripe. Select the payout country, then click **Set Up Stripe**.
+An affiliate with only one method available never sees the dropdown. In its place is a line reading **Paid via Stripe**, and they start at the country question.
 
-![](https://affiliatewp.com/wp-content/uploads/2025/08/affiliate-portal-stripe-767x323.png)
+![The How you'll be paid panel in the Affiliate Area, with Stripe chosen as the payout method and United States as the payout country, explaining that a secure Stripe account will be set up for the affiliate, above a Set up payouts button](https://affiliatewp.com/wp-content/uploads/2026/08/affiliate-area-payout-settings-us-1232x609.png)
 
-#### Stripe onboarding process
+### What the affiliate sees at each stage
 
-After clicking Set Up Stripe Payouts, affiliates will be redirected to Stripe’s secure onboarding flow. This is where they’ll be prompted to provide identity verification, banking information, and accept Stripe’s terms.
+The screen changes as an affiliate progresses, so what they see is also how you tell how far they have got.
 
-![Stripe onboarding for Affiliates](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-onboarding-767x622.png)
+#### Setting up for the first time
 
-Once completed, the affiliate’s Stripe account is linked to your site.
+If their country can be paid, they see **Set up payouts**.
 
-In the Affiliate Area, the affiliate will then see their connected **Account ID**, along with options to access their Stripe Dashboard.
+On the bank option, the page tells them they will finish on a secure Stripe page, that no Stripe account is needed, and that payouts go straight to their bank in their local currency.
 
-![Affiliate area Stripe account ID](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-account-id-767x515.png)
+On the Stripe-account option, Stripe walks them through its own checks. They confirm their identity, give their banking details, and accept Stripe’s terms, and Stripe creates a Stripe Express account that pays out to their bank. Only this option involves a Stripe account, so only this option asks them to accept anything from Stripe.
 
-## Customizing the Affiliate Onboarding Page
+#### Part-way through setup
+
+If they started and did not finish, they see **Continue setup** on the bank option, or **Complete Setup** on the Stripe-account option.
+
+On the Stripe-account option, an affiliate who has not finished can use **Choose a different country** to start over.
+
+#### Set up and getting paid
+
+Once the bank option is ready they see **Ready to receive payouts**, the last four digits of the bank account, and **Update bank details**.
+
+Affiliates who are already set up and getting paid do not need to do anything when you turn these options on.
+
+#### When something blocks setup
+
+If Stripe needs more information, they see **Fix your setup**.
+
+If Stripe cannot reach their country, they see that Stripe is not available for payouts there, with a **Switch to** action for another method you have turned on. See [paying affiliates internationally](https://affiliatewp.com/docs/international-affiliate-payouts/) for which countries each option reaches.
+
+## Customizing the affiliate onboarding page
 
 As the site admin, you can customize the Stripe-hosted onboarding experience that affiliates see when connecting their account. To set your brand color for the Stripe onboarding page:
 
 1. Log in to your Stripe Dashboard
 2. Go to **Settings » Connect »** **Onboarding interface**, and click Customize
 3. Set your logo, brand color, and accent options
-4. Save changes — they’ll reflect on the hosted onboarding pages
+4. Save changes, which then apply to the hosted onboarding pages
 
 ![Affiliate onboarding page](https://affiliatewp.com/wp-content/uploads/2025/08/affiliate-onboarding-page-767x586.png)
 
 Stripe allows you to customize only the onboarding page that affiliates see while connecting their Stripe account. These settings do not affect your Affiliate Area or other Stripe pages. For a full guide on customizing the onboarding page, refer to [Stripe’s Hosted Onboarding documentation](https://docs.stripe.com/connect/hosted-onboarding).
 
-## Managing Affiliate Connections
+## Checking an affiliate’s setup
 
-As the site admin, you can view and manage each affiliate’s connection status from the **AffiliateWP » Affiliates** screen. Here you’ll see a Stripe Status column, which lets you quickly check the connection status of each affiliate at a glance, without needing to open their individual profile.
+There are two places to look. The Affiliates list tells you where everyone stands at a glance. An affiliate’s own **Edit Affiliate** screen tells you which Stripe option pays them, and what is blocking it if anything is.
 
-![Stripe status column](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-status-column-767x286.png)
+### On the Affiliates list
 
-Hovering over any status badge will display a tooltip with more details about the connection.
+Go to **AffiliateWP » Affiliates**. The **Payout Method** column names each affiliate’s method, and flags the ones you cannot pay. It reports on Stripe and on PayPal, from the same check the Pay Affiliates preview runs, so the list and the preview cannot disagree.
 
-- If the affiliate hasn’t connected their account, you’ll see an **em dash (—)**. Hovering over it will reveal a tooltip that says, “Affiliate has not connected their Stripe account.”
-- If the connection is successful, you’ll see **Enabled**, along with the affiliate’s account ID, connection status (e.g., “Payouts: active, Payments: active”), and a **View Details** link.
-- If something’s wrong with the connection (e.g., incorrect keys or revoked access), you’ll see **Error**, along with the specific error message.
-- A **Restricted** status means the affiliate’s account is connected, but something is preventing payouts — often due to missing verification or country restrictions.
+**A coloured dot means that affiliate needs attention.** Everyone else shows the bare method name, so the few you cannot pay are the only marked rows on the screen. Hover any cell, marked or not, to see where the money goes: the masked bank account and how it is delivered, the payment email, or when Stripe last confirmed the account.
 
-You can click the **View Details** link (only available when the status is “Enabled”) to open the full Stripe Connection panel within the affiliate’s profile.
+![The Payout Method column on the Affiliates list, where a ready affiliate shows only the method name and hovering it opens a tooltip headed Stripe Global Payouts: Ready with the masked bank account beneath](https://affiliatewp.com/wp-content/uploads/2026/08/payout-method-column-tooltip-1232x792.png)
 
-Clicking on any affiliate’s name will take you to their profile. Here, you’ll find a **Stripe Payouts** section that shows more detailed information based on their connection status.
+| Flagged as | What it means |
+| --- | --- |
+| Not set up | They have not started, so Stripe has nowhere to send the money. |
+| Awaiting setup | They were invited or started on the bank option and have not finished. |
+| Pending | Stripe is still verifying their Stripe account. Payouts are paused until it finishes. |
+| Action required | Stripe has asked them for something. They cannot be paid until they provide it. |
+| Restricted | Their Stripe account cannot receive payouts. |
+| Suspended | Their Stripe account is suspended. |
+| No valid email | A PayPal affiliate with no usable payment email and no valid account email, so the payout has nowhere to land. |
 
-What you see here depends on the affiliate’s connection:
+Each flag is a link to the field that clears it, so you land on the payout country, the payment email, or that affiliate’s Stripe section rather than the top of their screen.
 
-#### If the affiliate is not connected:
+Two of these are worth knowing about in advance. **Awaiting setup**, **Pending**, **Restricted** and **Suspended** only apply to one Stripe option each, because the two work differently: an affiliate can be waiting to finish on the bank option, while only the Stripe-account option has an account for Stripe to verify or restrict. And a PayPal affiliate with no payment email is *not* flagged, because PayPal pays their account email instead and the payout still goes through.
 
-If the affiliate is not connected to Stripe, their profile will display their name, a status badge labeled Not Connected, and a message stating: “Stripe account not connected. This affiliate will receive payouts via your default method.”
+An affiliate no method can reach at all reads **Unavailable**.
 
-![Stripe payouts affiliate not connected](https://affiliatewp.com/wp-content/uploads/2025/08/stripe-payouts-affiliates-1-767x191.png)
+### On the Edit Affiliate screen
 
-#### If the affiliate is connected:
+Open an affiliate from **AffiliateWP » Affiliates** with the **Edit Affiliate** row action. A **Stripe** section holds three things.
 
-Their connection details will display, including:
+- **The payout country**, which decides which Stripe option pays the affiliate. It is editable until they set up. After that Stripe owns it: the country came from the account Stripe created, and the screen tells you to disconnect that account before the affiliate can be paid in a different one. See [changing an affiliate’s payout country](https://affiliatewp.com/docs/international-affiliate-payouts/#changing-an-affiliates-payout-country) for what that costs an affiliate who is already set up.
+- **The option that will pay them**, as a read-only line, worked out from the country rather than stored, so it changes when you save a different country. There is no separate control for it. Once an affiliate has connected a Stripe account of their own the line reads **Paid through Stripe Connect** whatever country they are in, because that account is what pays them. The other values describe an affiliate who has not set up yet: **Stripe Connect (cross-border payouts)** or **Stripe Global Payouts**, naming the option their country will route them to.
+- **A Payout setup card for that option, and only that one.** It leads with a status badge, and **Details** expands the rest: the connected account with its type, country and connection date, what Stripe currently reports about payouts and payments, and the controls for it. An affiliate paid through the Stripe-account option does not also show a bank-option card.
 
-- Name and Stripe Account ID
-- Connection status (Enabled)
-- Account details (always “Express”), country, and connection date
-- Payouts and Payments status
-- A View in Stripe button to open their profile in your Stripe Dashboard
-- A Disconnect button to reset their connection
+Two messages appear in place of an option name. **No payout country set** means the affiliate has not answered the country question yet. **Not available in this country** means neither Stripe option reaches the country they chose, so they need one of your other payout methods instead.
 
-![Stripe payout connected](https://affiliatewp.com/wp-content/uploads/2025/08/connected-stripe-payouts-1-767x368.png)
+![The Stripe section of the Edit Affiliate screen for an Austrian affiliate, showing the payout country with a note that Stripe set it at account creation, and a Payout setup card marked Ready with the connected Express account, View in Stripe and Disconnect](https://affiliatewp.com/wp-content/uploads/2026/08/edit-affiliate-stripe-section-1232x511.png)
 
-This view is helpful for troubleshooting, managing affiliate connections, and ensuring everyone is properly set up to receive payouts.
+#### If they have not finished setup
 
-## Sending Payouts
+The section says so, and states what happens instead: the affiliate is paid by your site’s default payout method until they finish. That is worth reading carefully if your default is **Manual Payout**, because a manual payout is recorded as paid whether or not you have actually sent the money.
+
+#### If they are set up
+
+On the Stripe-account option you get the account’s own details, what Stripe currently reports about it, a **View in Stripe** button that opens it in your Stripe dashboard, and a **Disconnect** button.
+
+**Disconnecting cannot be undone.** The affiliate cannot reconnect the same Stripe Express account afterwards. To be paid through Stripe again they have to go through setup and let Stripe create a new one, so treat it as removing the account rather than resetting it.
+
+## Getting an affiliate to finish setup
+
+To nudge someone who has not finished, open their **Edit Affiliate** screen from **AffiliateWP » Affiliates**. The reminder button there emails them a link to their own payout settings. Its label changes to reflect how far the affiliate has got and whether you have sent one already, so it is the same button either way.
+
+Once the bank option is on, a **Payout Setup Reminder** email appears at **AffiliateWP » Settings » Emails**. Edit the wording there, or switch the email off. Turn it off and the reminder button is replaced by a note saying so, with a **Copy link** action so you can send the affiliate their payout settings link yourself.
+
+## Sending payouts
 
 Once your Stripe account is connected and affiliates have linked their accounts, payouts can be sent directly from your WordPress admin.
 
-### Option 1: Pay from the Referrals screen
+### Pay a batch from the Payouts screen
+
+Navigate to **AffiliateWP » Payouts » Pay Affiliates**. On the **Configure** step, set your date range, optional minimum earnings threshold, and any affiliate filters. Under **Payout method**, either use each affiliate’s configured method, which sends Stripe affiliates through Stripe automatically and lets you restrict the batch to chosen methods, or pay everyone in the batch through one method regardless of what each affiliate picked. A **Holding period** toggle decides whether commissions still inside the holding period are included. The footer keeps a running count of eligible affiliates and the total, and **Preview payout** takes you to the grouped summary to confirm.
+
+![The Configure step of Pay Affiliates, with the date range set to all unpaid referrals through today, a Payout method choice between each affiliate's configured method and one method for the whole batch, and 99 affiliates eligible totalling ,422.74](https://affiliatewp.com/wp-content/uploads/2026/08/pay-affiliates-configure-1232x987.png)
+
+A referral that is already paid cannot be paid again. AffiliateWP refuses the second attempt, not Stripe, so this holds for every payout method rather than Stripe alone.
+
+When a payout is initiated, Stripe performs two actions:
+
+1. The funds are **transferred from your Stripe account to the affiliate’s connected Stripe account**.
+2. From there, Stripe sends the funds on to the affiliate’s linked **bank account**.
+
+### Pay specific referrals from the Referrals screen
 
 Go to **AffiliateWP » Referrals**. Next to each unpaid referral, you’ll see a **Pay** link.
 
-Clicking the Pay via Stripe link will display a confirmation lightbox, allowing you to review the payout details before sending. This lightbox shows the affiliate’s name, the payout amount, and confirms the payment will be sent to the affiliate’s connected Stripe account.
+Clicking **Pay** opens a popup so you can check the payout before it goes. It names the affiliate, the amount, the method, and where the money is going, and it blocks the send if anything is wrong, such as an amount below Stripe’s minimum for that country.
 
-![Confirm payment](https://affiliatewp.com/wp-content/uploads/2025/08/confirm-payment-767x593.png)
+![The Pay referral popup on the Referrals screen, showing a .00 Stripe payout to Carlos Rivera and a confirm button reading Pay .00](https://affiliatewp.com/wp-content/uploads/2026/08/pay-referral-popup-1232x969.png)
 
-To complete the payout, click **Pay Now**. To cancel, simply close the popup or click **Cancel**.
+The confirm button names the amount you are about to send. To stop, click **Cancel** or close the popup.
 
 To pay multiple referrals at once:
 
 1. Select the referrals using the checkboxes.
 2. Open the **Bulk Actions** dropdown.
-3. Choose **Pay Now via Stripe**, then click **Apply**.
+3. Choose **Pay**, then click **Apply**.
 
-### Option 2: Use the Payouts Screen
-
-Navigate to **AffiliateWP » Payouts » Pay Affiliates**. On the **Configure** step, set your date range, optional minimum earnings threshold, and any affiliate filters. Under payout routing, you can pay each affiliate via their configured method — which will route Stripe-connected affiliates through Stripe automatically — or choose to pay everyone in this batch via Stripe specifically. Click **Preview payout** to review the grouped summary, then confirm to process.
-
-Once a referral is marked as paid, you cannot pay it again. If an admin marks a referral as unpaid after paying, the payout will not be duplicated — this is a built-in Stripe security rule in AffiliateWP.
-
-When a payout is initiated, Stripe performs two actions:
-
-1. The funds are **transferred from your Stripe account to the affiliate’s connected Stripe account**.
-2. From there, Stripe deposits the funds directly into the affiliate’s linked **bank account**.
-
-## Supported Countries
-
-Stripe payouts in AffiliateWP work in any country where **Stripe Express** is available. 
-To view the full list of supported countries and their payout requirements, visit [Stripe’s supported countries page](https://docs.stripe.com/connect/express-accounts).
-
-Keep in mind:
-
-- Affiliates must be located in a supported country to connect their Stripe account.
-- Some countries may require additional verification steps (e.g., government-issued ID, proof of address).
-
-## Paying Affiliates Internationally
-
-From a US- or UK-based Stripe account, you can pay affiliates across the US, UK, Canada, Switzerland, and most of Europe in their local currency, straight from your own Stripe account, with nothing extra to install. Stripe charges a 0.25% cross-border fee (waived within the EEA and between the UK and the EEA); AffiliateWP adds nothing on top. International payouts are off by default; you opt in from **AffiliateWP » Settings » Payouts**.
-
-For setup, the full country list, costs, and what affiliates see, see [Paying affiliates internationally with Stripe](https://affiliatewp.com/docs/international-affiliate-payouts/)*.*
-
-If you pay US affiliates, Stripe also collects their W-9 at onboarding and can prepare their 1099 for you to file. [See 1099 tax forms for US affiliates](/docs/1099-tax-forms-for-affiliates/)*.*
-
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### Can I pay international affiliates with Stripe?
 
-Yes. From a US- or UK-based Stripe account, you can pay affiliates across the US, UK, Canada, Switzerland, and most of Europe, each in their own local currency, straight from your Stripe account.
-
-For the full guide, see [Paying affiliates internationally with Stripe](https://affiliatewp.com/docs/international-affiliate-payouts/). Not based in the US or UK? See *What if my Stripe account isn’t based in the US or UK?* below.
-
-### What if my Stripe account isn’t based in the US or UK?
-
-Cross-border payouts need a US- or UK-based Stripe account. If your Stripe account is based elsewhere, Stripe payouts stay domestic: affiliates must be in the same country as your account and are paid in your account’s default currency.
-
-To pay affiliates in other countries, enable [PayPal](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/) as a payout method so affiliates can set themselves up, where PayPal is available in their country, or pay them manually and record the payment in AffiliateWP. For a side-by-side of every payout method, see [Affiliate Payout Methods](https://affiliatewp.com/docs/per-affiliate-payout-methods/).
+Yes. Affiliates in other countries can be paid in their own local currency, straight from your Stripe account. Which countries you can reach depends on where your own Stripe account is based. See [paying affiliates internationally](https://affiliatewp.com/docs/international-affiliate-payouts/) for the current list and the setup.
 
 ### Can I test Stripe payouts before going live?
 
-Yes. Enable **Sandbox Mode** in your settings and use Stripe’s test credentials. You can also simulate transactions using the **Create Test Charge** tool.
+Yes. Enable **Sandbox Mode** in your settings and use Stripe’s test credentials. Top the test balances up from the same card, and note there are two of them, one per Stripe option. If a payout is blocked because its balance is short, an **Add test funds** button appears on the payout itself so you can fix it without leaving the screen.
 
 ### What happens if a payout fails?
 
-You’ll be notified via the configured email alerts (if webhooks are set up), and you can take action accordingly — such as asking the affiliate to update their bank details or reinitiate the payout.
+The payout itself shows the failure and what to do about it, so you see it whether or not webhooks are set up. Webhooks add the email alerts on top. From there you can ask the affiliate to update their bank details, or run the payout again.
 
 ### Can I customize the look of the onboarding experience for affiliates?
 
@@ -1842,11 +2019,11 @@ Yes! Stripe lets you brand the onboarding pages your affiliates see. To do this:
 
 3. Set your logo, colors, and accent styling
 
-4. Save — changes will reflect automatically on the hosted onboarding page
+4. Save. The changes then apply automatically on the hosted onboarding page
 
 ### Can I use a different currency in AffiliateWP than what’s set in my Stripe account?
 
-AffiliateWP sends every payout in your store currency (set in AffiliateWP’s settings), not your Stripe account’s currency, and doesn’t check the two against each other. Your Stripe account does need to be able to pay out in that store currency, so set your store currency to one your account supports. What each affiliate receives is separate: with international payouts from a US- or UK-based Stripe account, Stripe converts the payout into the affiliate’s own local currency automatically.
+AffiliateWP sends every payout in your store currency (set in AffiliateWP’s settings), not your Stripe account’s currency, and doesn’t check the two against each other. Your Stripe account does need to be able to pay out in that store currency, so set your store currency to one your account supports. What each affiliate receives is separate: when you pay an affiliate in another country, Stripe converts the payout into their own local currency automatically.
 
 ### Where can I view connected affiliates in my Stripe dashboard?
 
@@ -1858,15 +2035,17 @@ Stripe Connect charges standard transaction fees for each payout, but AffiliateW
 
 ### Does the Affiliate Portal addon support Stripe payouts?
 
-Yes. If your site is using the Affiliate Portal addon, Stripe payouts are fully supported. Affiliates can connect their Stripe account, view connection status, and access their Stripe dashboard — all from within the Affiliate Portal interface.
+Yes. If your site is using the Affiliate Portal addon, Stripe payouts are fully supported. Affiliates can connect their Stripe account, view connection status, and access their Stripe dashboard, all from within the Affiliate Portal.
 
 ### What happens if I change my Stripe API key?
 
-If you generate a new API key within the same Stripe account, no action is needed — all affiliates remain connected. However, if you switch to a different Stripe account, all affiliates must reconnect using the new onboarding flow.
+Generate the new key in Stripe, then paste it into the Stripe card at **AffiliateWP » Settings » Payouts** and save, or AffiliateWP keeps using the old one. If the new key belongs to the same Stripe account, that is all there is to it and every affiliate stays connected. However, if you switch to a different Stripe account, all affiliates must reconnect using the new onboarding flow.
 
 ### What if I reverse a payout in Stripe?
 
-If you reverse a transfer via Stripe, the funds are returned to your Stripe account, and the referral in AffiliateWP will be marked as Unpaid again.
+If you reverse a transfer in Stripe, the funds return to your Stripe account and AffiliateWP marks the referral Unpaid again.
+
+**Timing matters.** Stripe only allows the reversal while the money is still in the affiliate’s Stripe balance. Once Stripe has paid it on to their bank, that balance is gone and the reversal has nothing to take back, so recovering it becomes a conversation with the affiliate rather than something you can do in Stripe.
 
 ### What can affiliates do in their Stripe Dashboard?
 
@@ -8276,58 +8455,17 @@ That’s it! The AffiliateWP Terms of Use Generator makes it easy to create a pr
 
 ---
 
-## Minimum Requirements Roadmap
+## Minimum requirements
 
-**Source:** [https://affiliatewp.com/docs/minimum-requirements-roadmap/](https://affiliatewp.com/docs/minimum-requirements-roadmap/)
+**Source:** [https://affiliatewp.com/docs/minimum-requirements/](https://affiliatewp.com/docs/minimum-requirements/)
 
-In the past, enforcing minimum requirements for AffiliateWP and its add-ons has always been a loose concept, but as our codebase has matured, so has our approach to pushing our minimum requirements – and by extension our ability to innovate – forward.
+AffiliateWP supports the same environment [WordPress itself recommends](https://wordpress.org/about/requirements/): the **latest version of WordPress**, and **PHP 8 or newer**. Every official addon has the same requirements.
 
-Ultimately, this means we’re taking a more proactive approach to sharing our plans for what’s changing and *when* so everyone can plan accordingly.
+AffiliateWP may still run on older versions, but new releases are built and tested against the versions WordPress recommends, so an out-of-date stack is the first thing to rule out when something misbehaves.
 
-*Note: All of the roadmaps outlined below are date-based rather than milestone-based for the very specific reason of setting expectations for everyone involved. Releases get delayed, features postponed, dates are constant.*
+An individual addon release may also need a recent version of AffiliateWP itself, so keep AffiliateWP up to date alongside its addons.
 
-### AffiliateWP Core
-
-| Software / Minimum Version | Effective Date |
-| --- | --- |
-| WordPress 5.0 | Current |
-| WordPress 5.2 | Sept 2021 |
-| PHP 5.6 | Not supported |
-| PHP 7.0 – 7.3 | Not supported |
-| PHP 7.4 | Current |
-
-### Affiliate Portal Pro Add-on
-
-| Software / Minimum Version | Effective Date |
-| --- | --- |
-| AffiliateWP 2.6.7 | Current |
-| AffiliateWP 2.7 | Sept 2021 |
-| WordPress 5.0 | Current |
-| WordPress 5.2 | Sept 2021 |
-| PHP 5.6 | Not supported |
-| PHP 7.0 – 7.3 | Not supported |
-| PHP 7.4 | Current |
-
-### External Referral Links Free Add-on
-
-| Software / Minimum Version | Effective Date |
-| --- | --- |
-| WordPress 5.0 | Current |
-| WordPress 5.2 | Sept 2021 |
-| PHP 5.6 | Not supported |
-| PHP 7.0 – 7.3 | Not supported |
-| PHP 7.4 | Current |
-
-### All Other Official Free & Pro Add-ons
-
-| Software / Minimum Version | Effective Date |
-| --- | --- |
-| AffiliateWP 2.6 | Current |
-| WordPress 5.0 | Current |
-| WordPress 5.2 | Sept 2021 |
-| PHP 5.6 | Not supported |
-| PHP 7.0 – 7.3 | Not supported |
-| PHP 7.4 | Current |
+To see the versions your site runs, go to **AffiliateWP » Tools » System Info**, or WordPress’s own report at **Tools » Site Health » Info**.
 
 ---
 
@@ -9969,7 +10107,7 @@ That’s it! By using the WooCommerce Redirect Affiliates addon, you can simplif
 
 ---
 
-## Paying Affiliates with Store Credit
+## Paying affiliates with store credit
 
 **Source:** [https://affiliatewp.com/docs/store-credit-installation-and-usage/](https://affiliatewp.com/docs/store-credit-installation-and-usage/)
 
@@ -12816,7 +12954,7 @@ That’s it! The Pushover Notifications addon for AffiliateWP is a simple yet ef
 
 ---
 
-## Paying Affiliates with PayPal
+## Paying affiliates with PayPal
 
 **Source:** [https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/)
 
@@ -12968,7 +13106,7 @@ This error means one of two things:
 This error means one of two things:
 
 - Your PayPal account **must** have an adequate balance to cover the payouts it is attempting to process.  Unlike personal PayPal accounts that withdraw from a bank or credit card source, you must have a sufficient **existing** PayPal balance to cover the referrals you are attempting to pay out, or you will receive this error.  Also, know that your PayPal sandbox account has a separate balance than your live account, so make sure it is adequately funded as well prior to testing with a sandbox account.
-- The currency code the funds are being sent in cannot be received by the recipient due to country or account regulations.
+- The currency code the funds are being sent in cannot be received by the recipient due to country or account regulations. If PayPal cannot reach an affiliate’s country or currency, you can pay them with Stripe instead, in their own local currency. See [paying affiliates internationally](/docs/international-affiliate-payouts/).
 
 ### Error: 429 Too Many Requests
 
@@ -15270,60 +15408,6 @@ That’s it! By understanding and correctly configuring the hierarchy of referra
 
 ---
 
-## How do I pay affiliates if I have a Personal or Plus license?
-
-**Source:** [https://affiliatewp.com/docs/how-do-i-pay-affiliates-if-i-have-a-personal-plus-license/](https://affiliatewp.com/docs/how-do-i-pay-affiliates-if-i-have-a-personal-plus-license/)
-
-If you have a Personal or Plus AffiliateWP license, you can choose to pay your affiliates through PayPal, other popular online payment systems, via bank transfer, or even through payment services only available in your country. See below for several different methods of paying your affiliates with a Personal or Plus license:.
-
-1. You can pay your affiliates via PayPal, Skrill or other online mass payment service. You can choose to create mass payments with AffiliateWP’s **Generate CSV File** to pay multiple affiliates at once, or you can pay your affiliates individually – this is entirely up to you. These payments take place through PayPal or the online payment service you wish to use.
-2. You can choose to pay your affiliates via bank transfer. Bank transfer payments are manually created by you or your business through your bank (this doesn’t take place through AffiliateWP). If your bank supports mass payments, you may be able to use AffiliateWP’s **Generate CSV File** option to generate a CSV file which can be uploaded to your bank’s online banking portal. Alternatively you can make manual individual payments to your affiliates’ bank accounts via bank transfer.
-3. If your country has another payment service or method which you would prefer to use to pay your affiliates, you can use that system to manually process individual (or bulk payments if possible) for your affiliates.
-
-The [Paying your affiliates](/docs/paying-your-affiliates/) article goes into further detail on the above payment methods.
-
----
-
-## How do I pay affiliates without using PayPal?
-
-**Source:** [https://affiliatewp.com/docs/how-do-i-pay-affiliates-without-using-paypal/](https://affiliatewp.com/docs/how-do-i-pay-affiliates-without-using-paypal/)
-
-When it comes time to pay your affiliates their referral earnings, there are several ways you can go about it if you aren’t able to use PayPal, or would prefer not to use PayPal. Find out how to pay your affiliates without using PayPal below.
-
-### Paying your affiliates via our Stripe Payouts
-
-AffiliateWP allows you to process affiliate payments through Stripe.
-
-You connect your Stripe account within AffiliateWP on your site, and your affiliates link their own accounts through the Affiliate Area. Once everything is set up, you can send payouts with just one click.
-
-When a payout is made, the funds are transferred from your Stripe account to the affiliate’s connected Stripe account, and Stripe then deposits the money into the affiliate’s bank account.
-
-Learn more about using the [Stripe Payouts here](https://affiliatewp.com/docs/stripe-payouts/).
-
-### Paying your affiliates via an online mass payment system
-
-On the **AffiliateWP » Referrals** page is a blue **Pay Affiliates** button you can use to select and generate a CSV file of affiliates and their collective totals.
-
-The CSV file generated will consist of the email addresses, the collective amounts, and the currency for all affiliates that have unpaid earnings for the date range specified.
-
-This file has been specifically formatted for the Mass Payment option provided by Skrill, as well as other similar systems. If you are using a mass payment system other than PayPal, the email address associated with an affiliate’s payment account can be set from their **Edit** screen.
-
-When you upload this CSV file, the online payment service will take the amounts and email addresses stored in the file and create a mass payment.
-
-**Note**: When using the **Generate CSV File** button, all referrals that appear in the preview will be automatically marked with a **Paid** status.
-
-### Paying your affiliates via bank transfer
-
-If you wish to pay your affiliates directly into their bank account via Bank Transfer, this will need to be done manually by you through your bank (this process doesn’t take place through AffiliateWP). You simply need to communicate to your affiliates that they will be paid via bank transfer, and they will need to provide you with their bank account details so you can transfer money to their account.
-
-If your bank supports mass payments, you can export the CSV payout file (as mentioned above) and upload it to your bank’s online banking portal. Exporting this file will automatically set all **Unpaid** referrals to a **Paid** status.
-
-If your bank doesn’t support mass payments, you can make individual payments to your affiliates through your bank. You could set each affiliate up as a saved payee to help streamline this process for when you need to pay your affiliates.
-
-When you have made these payments to your affiliates, you can then manually set the referrals which have been paid to a **Paid** status on the **AffiliateWP » Referrals** page.
-
----
-
 ## Payouts
 
 **Source:** [https://affiliatewp.com/docs/payouts/](https://affiliatewp.com/docs/payouts/)
@@ -15335,7 +15419,7 @@ On the **Payouts** screen, you can view detailed information about each payout. 
 1. Marking referrals as **P****aid** with bulk actions (which will generate a payout for each affiliate individually).
 2. Marking a single referral as **Paid** using the **Mark as Paid**link in the **Actions** column on the **AffiliateWP » Referrals** screen.
 3. [Generating a payout file](/docs/paying-your-affiliates/).
-4. [Generating a payout for a single affiliate](/docs/paying-your-affiliates/#single-affiliate).
+4. [Generating a payout for a single affiliate](/docs/paying-your-affiliates/#pay-one-referral-or-a-few).
 
 For configuration, help, and documentation regarding paying your affiliates, please visit the [Paying your Affiliates](/docs/paying-your-affiliates/) article.
 
@@ -15648,6 +15732,8 @@ To configure the currency used in your affiliate program:
 3. Choose your preferred currency from the list of supported currencies.
 
 The selected currency will be used to display referral amounts, affiliate earnings, and other monetary values across the system.
+
+This is the currency AffiliateWP displays. Paying affiliates is separate: with Stripe you can pay affiliates in other countries in their own local currency, whichever single currency you display here. See [paying affiliates internationally](/docs/international-affiliate-payouts/).
 
 ## Full List of Supported Currencies
 
@@ -19649,7 +19735,7 @@ Log into your account
 
 ---
 
-## A complete guide to paying your affiliates
+## How to pay your affiliates
 
 **Source:** [https://affiliatewp.com/docs/paying-your-affiliates/](https://affiliatewp.com/docs/paying-your-affiliates/)
 
@@ -19659,115 +19745,95 @@ Whether you prefer automatic payments or manual options, this guide walks you th
 
 In This Article
 
-- [How payout method routing works](#how-payout-method-routing-works)
-- [Paying affiliates via Stripe Connect](#paying-affiliates-via-stripe-connect)
-- [Paying affiliates via PayPal](#paying-affiliates-via-paypal)
-- [Paying affiliates via Store Credit](#paying-affiliates-via-store-credit)
-- [Paying affiliates via the Payouts Service (Retiring September 30, 2026)](#paying-affiliates-via-the-payouts-service)
-- [Manual Payout](#manual-payout)
-- [Configuring your payout settings](#configuring-your-payout-settings)
-- [Letting affiliates choose their payout method](#letting-affiliates-choose-their-payout-method)
-- [Overriding an affiliate's payout method](#overriding-an-affiliates-payout-method)
-- [Running a payout batch](#running-a-payout-batch)
-- [Payout Batches](#payout-batches)
-- [When a payout fails](#when-a-payout-fails)
-- [Commission holding period](#commission-holding-period)
-- [Frequently Asked Questions](#paying-affiliates-via-stripe)
+- [Choose your payout methods](#choose-your-payout-methods)
+- [Control which method pays each affiliate](#which-method-pays-each-affiliate)
+- [Run a payout](#running-a-payout-batch)
+- [If a payout fails](#when-a-payout-fails)
+- [Frequently Asked Questions](#frequently-asked-questions)
 
-## How payout method routing works
+## Choose your payout methods
 
-Every affiliate has one effective payout method, the one the system uses when paying their referrals. The system resolves it in this order:
+AffiliateWP pays affiliates through one of these methods. Turn on the ones you want to offer at **AffiliateWP » Settings » Payouts**, then decide who gets paid how in the next section.
 
-1. **Admin override:** if you’ve set a specific method on the Edit Affiliate screen, that takes priority over everything else.
-2. **Affiliate’s own choice:** if the affiliate has selected a method themselves (or connected Stripe), that’s their method, as long as it’s still enabled on your site.
-3. **Default Payout Method:** if neither of the above applies, the affiliate falls back to your site-wide default. There’s always a fallback. The default can’t be left empty.
+### Stripe
 
-This means you can run one batch and the system handles routing automatically, without you needing to track who’s on which method.
+AffiliateWP has a built-in Stripe integration that pays commissions into your affiliates’ own bank accounts. You add one Stripe secret key. Each affiliate sets themselves up once from their Affiliate Area, and every payout after that reaches their bank on its own.
 
-Paying an affiliate through Stripe also depends on their country. Each affiliate sets the
-country they’re paid in, and if Stripe can’t pay out to that country, AffiliateWP
-routes them to another method before they connect, so no one is left without a way
-to get paid.
+Affiliates never sign up for Stripe themselves. They click a button in their Affiliate Area and finish on a secure Stripe page, where they add the bank account they want to be paid into.
 
-To cover the countries Stripe can’t reach, enable PayPal alongside Stripe.
-Affiliates who can’t use Stripe can then set themselves up with PayPal where it’s
-available.
+You can also pay affiliates in other countries, in their own local currency, straight from your Stripe account. Which countries you can reach depends on where your own Stripe account is based. See [paying affiliates internationally](/docs/international-affiliate-payouts/).
 
-## Paying affiliates via Stripe Connect
+![The Payout Methods list on the AffiliateWP Payouts settings screen, with the Stripe toggle switched on](https://affiliatewp.com/wp-content/uploads/2021/11/stripe-payout-767x433.png)
 
-Stripe Connect is a built-in integration that transfers commissions directly to affiliates’ bank accounts. Affiliates connect their Stripe account once from their Affiliate Area, and all future payouts go straight to their bank.
-
-If your Stripe account is based in the US or UK, you can also pay affiliates in
-other countries, in their own local currency, straight from your Stripe account.
-See [Paying Affiliates Internationally with Stripe](https://affiliatewp.com/docs/international-affiliate-payouts/).
-
-![Paying affiliates via Stripe Connect](https://affiliatewp.com/wp-content/uploads/2021/11/stripe-payout-767x433.png)
-
-**To set up Stripe Connect:**
+**To set up Stripe:**
 
 1. Go to **AffiliateWP » Settings » Payouts**.
-2. Click the **Stripe Payouts** card to expand it.
-3. Enter your Stripe API keys and save.
+2. Click the **Stripe** card to expand it.
+3. Add your Stripe secret key and save.
+4. Turn on the toggle on the **Stripe** card.
 
-For full setup instructions, see [Setting up Stripe Connect](https://affiliatewp.com/docs/stripe-payouts/).
+Both steps are needed. A saved key with the toggle off, or the toggle on with no key, leaves Stripe unable to pay anyone. For full setup instructions, see [paying affiliates with Stripe](https://affiliatewp.com/docs/stripe-payouts/).
 
-## Paying affiliates via PayPal
+### PayPal
 
-PayPal sends commissions directly to affiliates’ PayPal accounts. Payouts are processed in bulk and run in the background, so you don’t need to stay on the page while they process.
+PayPal sends commissions to affiliates’ PayPal accounts. Payouts run in the background, so you can leave the page once a batch is submitted. Affiliates are paid in your store’s currency, and PayPal converts it on their side if their account uses another one.
 
-![Paying affiliates via PayPal](https://affiliatewp.com/wp-content/uploads/2021/11/paypal-767x430.png)
+![The Payout Methods list with the PayPal toggle switched on](https://affiliatewp.com/wp-content/uploads/2021/11/paypal-767x430.png)
 
 **To set up PayPal:**
 
 1. Go to **AffiliateWP » Settings » Payouts**.
 2. Click the **PayPal** card to expand it.
 3. Enter your PayPal API credentials and save.
+4. Turn on the toggle on the **PayPal** card.
 
-For full setup instructions, see [Setting up PayPal](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/).
+For full setup instructions, see [paying affiliates with PayPal](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/).
 
 Affiliates don’t need an existing PayPal account before running a payout. If the recipient’s email isn’t linked to a PayPal account, PayPal sends them a signup invitation and holds the funds for 30 days. Once they create an account using that email, the funds land automatically.
 
-> 
+### Store Credit
 
-## Paying affiliates via Store Credit
+Store Credit adds the commission to an affiliate’s balance on your store as spendable credit, instead of sending money to an external account. They spend it on your site. Affiliates on Store Credit are paid in the same batch as everyone else, so there is no separate step at payout time.
 
-Store Credit adds commission amounts to affiliates’ store balance as spendable credit, rather than sending money to an external account. Affiliates can use that balance toward purchases on your site. Store Credit is a first-class payout method just like Stripe and PayPal. Affiliates on Store Credit are paid in the same batch as everyone else, with no separate steps needed.
+![The Payout Methods list with the Store Credit toggle switched on](https://affiliatewp.com/wp-content/uploads/2021/11/store-credit-3-767x428.png)
 
-![Paying affiliates via Store Credit](https://affiliatewp.com/wp-content/uploads/2021/11/store-credit-3-767x428.png)
-
-**Requirements**: WooCommerce or Easy Digital Downloads must be installed and active on your site.
+**Requirements**: WooCommerce or Easy Digital Downloads must be active on your site, and enabled as an integration at **AffiliateWP » Settings » Integrations**. Store Credit cannot be turned on until both are true.
 
 **To set up Store Credit:**
 
 1. Go to **AffiliateWP » Settings » Payouts**.
 2. Click the **Store Credit** card to expand it.
-3. Enable Store Credit and save.
+3. Turn on the toggle on the **Store Credit** card.
 
-For full setup instructions, see [Setting up Store Credit payouts](https://affiliatewp.com/docs/store-credit-installation-and-usage/).
+For full setup instructions, see [paying affiliates with store credit](https://affiliatewp.com/docs/store-credit-installation-and-usage/).
 
-## Paying affiliates via the Payouts Service (Retiring September 30, 2026)
+### Manual Payout
 
-The Payouts Service is being retired on September 30, 2026. If you’re currently using it, your payouts will continue to work normally until that date. We recommend switching to one of the built-in payout methods above — Stripe Payouts, PayPal Payouts, or Store Credit — which offer better reliability and direct integration with your payment provider.
+Manual Payout means AffiliateWP records that a payout occurred, but no money moves through the plugin. You pay the affiliate outside AffiliateWP by bank transfer, check, wire, or any other method, and AffiliateWP keeps a record. See [paying affiliates manually](/docs/paying-affiliates-manually/) for how to record one, what the CSV holds, and what a manual payout cannot tell you.
 
-## Manual Payout
-
-Manual Payout means AffiliateWP records that a payout occurred, but no money moves through the plugin. You pay the affiliate outside AffiliateWP by bank transfer, check, wire, or any other method, and the system keeps a record.
+Manual Payout is admin-only and never appears in the affiliate-facing payout method picker. An affiliate paid this way sees **Paid directly** as a status line in their Affiliate Area, in place of the setup fields the other methods show.
 
 Manual affiliates are included when you run a payout batch. After the batch completes, a **Download CSV** link appears in the Summary card inside the batch drawer. The CSV contains the payment details for each Manual affiliate so you have everything you need to complete those payments offline.
 
-Manual Payout is admin-only and never appears in the affiliate-facing payout method picker.
+An affiliate can end up on Manual Payout without you choosing it. Manual is the last resort when no other method can pay them, and their payout is still marked as paid even though no money moved. Check the per-method breakdown in the payout preview before you process a batch, then use the CSV to pay everyone in the Manual group.
 
-## Configuring your payout settings
+### Payouts Service (retiring September 30, 2026)
 
-Once you’ve enabled at least one payout method, go to **AffiliateWP » Settings » Payouts**. The **Payout Settings** card at the top of the page holds the controls that govern routing and failure recovery across your entire program.
+The Payouts Service is being retired. It no longer accepts new connections, and it stops paying affiliates on **September 30, 2026**. You’ll only see it in your settings if your site was already connected to it, so if it isn’t there, this doesn’t apply to you.
 
-![Configuring your payout settings](https://affiliatewp.com/wp-content/uploads/2021/11/payouts-settings-control-767x542.png)
+If you are on it, your payouts keep working until that date. Move your affiliates to Stripe, PayPal or store credit before then, and change your default payout method too, so nobody is left on a method that can no longer pay them.
 
-### Default Payout Method
+## Control which method pays each affiliate
 
-The fallback method used for every affiliate who hasn’t configured their own. The dropdown only shows currently enabled methods plus Manual Payout, so enable your methods before setting the default.
+Two controls in the **Payout Settings** card, on the same settings page, decide this: the default payout method, and whether affiliates may choose their own. Overriding a single affiliate happens on their **Edit Affiliate** screen instead. The card’s other two toggles deal with failed payouts, covered further down.
 
-![Default payout method](https://affiliatewp.com/wp-content/uploads/2021/11/default-payout-method-767x542.png)
+![The Payout Settings card, holding the default payout method and the three toggles that govern affiliate choice and failed-payout recovery](https://affiliatewp.com/wp-content/uploads/2021/11/payouts-settings-control-767x542.png)
+
+### Set your default payout method
+
+The method used for every affiliate who hasn’t chosen their own. The dropdown only shows currently enabled methods plus Manual Payout, so enable your methods before setting the default.
+
+![The Payout Settings card with the Default Payout Method dropdown highlighted, set to Stripe](https://affiliatewp.com/wp-content/uploads/2021/11/default-payout-method-767x542.png)
 
 **To set your default:**
 
@@ -19776,75 +19842,75 @@ The fallback method used for every affiliate who hasn’t configured their own. 
 3. Select the method most of your affiliates will use.
 4. Click **Save Changes**.
 
-If you later disable a method that’s set as the default, the resolver falls back to Manual Payout until you set a new default.
+If you later disable the method you chose here, AffiliateWP uses Manual Payout instead until you pick a new default.
 
-### Allow affiliates to choose their payout method
+### Let affiliates choose their own
 
 When this toggle is on, a Payout Method dropdown appears on the affiliate’s Settings page in the Affiliate Area whenever two or more methods are enabled. Affiliates can switch between available methods at any time.
 
-![Allow affiliates to choose their payout method](https://affiliatewp.com/wp-content/uploads/2021/11/allow-affiliates-to-choose-payout-method-767x542.png)
+![The Payout Settings card with the Allow affiliates to choose their payout method toggle highlighted and switched on](https://affiliatewp.com/wp-content/uploads/2021/11/allow-affiliates-to-choose-payout-method-767x542.png)
 
-When the toggle is off, affiliates are paid via the site default and see a static “Paid via [Method]” status on their Settings page. No dropdown appears.
+When the toggle is off, affiliates are paid via the site default and see a plain status line naming it, such as **Paid via Stripe**. No dropdown appears.
 
-- **Fresh installations:** on by default.
-- **Upgraded sites:** off by default, preserving your existing routing workflow.
+When **Allow affiliates to choose their payout method** is on and at least two methods are enabled, affiliates see a **Payout Method** dropdown in the **How you’ll be paid** section of their settings. This is the same in the Affiliate Area and in the Affiliate Portal.
 
-### Auto-email affiliates about failed payouts
+![The How you'll be paid section of an affiliate's Settings tab, with the Payout Method dropdown set to Store Credit and the balance shown beneath it](https://affiliatewp.com/wp-content/uploads/2021/11/payout-method-affiliate-area-767x498.png)
 
-When a payout fails because the affiliate needs to take action (for example, their PayPal account isn’t set up or they haven’t completed Stripe Connect), AffiliateWP can automatically send them a method-specific email explaining what to do and where to do it.
+The dropdown lists the enabled methods an affiliate is allowed to pick. Manual Payout is admin-only, so it never appears there. When your default method is not one an affiliate can pick, the dropdown carries an extra row for that default, so they can stay on it rather than being pushed onto something else.
 
-![Auto-email affiliates about failed payouts](https://affiliatewp.com/wp-content/uploads/2021/11/Auto-email-affiliates-about-failed-payouts-767x542.png)
-
-The email includes a direct link to the affiliate’s Settings page. A 7-day cooldown per affiliate prevents repeated emails if the same issue persists.
-
-- **Fresh installations:** on by default.
-- **Upgraded sites:** off by default. This prevents existing failed payouts from generating unexpected emails on upgrade day.
-
-### Auto-retry failed payouts
-
-When on, a background job runs daily and checks every failed payout that’s waiting on the affiliate to resolve a blocker.
-
-![Auto-retry failed payouts](https://affiliatewp.com/wp-content/uploads/2021/11/Auto-retry-failed-payouts-767x563.png)
-
-Once the affiliate is ready (their PayPal email is verified or Stripe Connect is complete), the payout retries automatically without any admin involvement.
-
-- **Fresh installations:** on by default.
-- **Upgraded sites:** off by default.
-
-## Letting affiliates choose their payout method
-
-When **Allow affiliates to choose their payout method** is on and at least two methods are enabled, affiliates see a **Payout Method** dropdown on their Settings page inside the Affiliate account.
-
-![payout method affiliate area](https://affiliatewp.com/wp-content/uploads/2021/11/payout-method-affiliate-area-767x498.png)
-
-The dropdown shows every enabled method available to affiliates. Manual Payout is always admin-only and never appears in the dropdown.
-
-When affiliates save their choice, it becomes their configured method and overrides the site default going forward. Their effective method is visible in the Affiliates admin list and on the Edit Affiliate screen.
+When affiliates save their choice, it becomes their configured method and overrides the site default going forward. The method they will be paid through is shown in the Affiliates list and on their Edit Affiliate screen.
 
 **What affiliates see after selecting each method:**
 
 - **PayPal:** a Payment Email field to enter the address they want payouts sent to.
-- **Stripe:** a Stripe Connect section with their connection status, or a “Set Up Stripe Payouts” button if not yet connected.
+- **Stripe:** a **Set up payouts** button, or their current status once they have finished setting up.
 - **Store Credit:** their current available store credit balance.
 
 The Affiliate Area updates the visible fields immediately when the dropdown changes, without a page reload.
 
-## Overriding an affiliate’s payout method
+### Override one affiliate
 
 If you need to route a specific affiliate through a different method regardless of what they’ve chosen, set an override on their profile.
 
-1. Go to **AffiliateWP » Affiliates** and click the affiliate’s name.
-2. Locate the **Payout Method** field.
-3. Select the method you want to use for this affiliate.
+1. Go to **AffiliateWP » Affiliates** and click the affiliate’s name to open the **Edit Affiliate** screen.
+2. Find the **Payout Method** row.
+3. Open the dropdown, which reads **No override** until you set one, and pick the method you want to use for this affiliate.
 4. Click **Update**.
 
-![edit affiliate payout method](https://affiliatewp.com/wp-content/uploads/2021/11/edit-affiliate-payout-method-767x220.png)
+![The Payout Method row on the Edit Affiliate screen, showing how this affiliate's method was decided above the override dropdown](https://affiliatewp.com/wp-content/uploads/2021/11/edit-affiliate-payout-method-767x220.png)
 
-The override takes priority over the affiliate’s own selection and the site default. It stays in place until you clear it.
+The override takes priority over the affiliate’s own selection and the site default. While it is set, the affiliate cannot change their own payout method. To hand the choice back to them, set the dropdown to **No override** and save.
 
-## Running a payout batch
+The line above the dropdown tells you how this affiliate’s method was decided: as an override you set, as the affiliate’s own choice, or as your site default. If that method is no longer enabled, the line names both the method paying them now, which is your site default, and the disabled one it replaced.
 
-Navigate to **AffiliateWP » Payouts** and click **Pay Affiliates**.
+### How AffiliateWP chooses the payout method
+
+Every affiliate is paid through one method, and AffiliateWP works out which one in this order:
+
+1. **Admin override:** if you’ve set a specific method on the Edit Affiliate screen, that takes priority over everything else.
+2. **Affiliate’s own choice:** if the affiliate has selected a method themselves (or connected Stripe), that’s their method, as long as it’s still enabled on your site.
+3. **Default Payout Method:** if neither of the above applies, the affiliate falls back to your site-wide default.
+
+Your default is always a method that is actually enabled. If you later disable the method you set as your default, AffiliateWP uses Manual Payout instead, or the first other enabled method when Manual is off too. No affiliate is silently skipped.
+
+Run one batch and AffiliateWP pays each affiliate through their own method. You never have to group them by method yourself.
+
+Paying an affiliate through Stripe also depends on their country. Each affiliate sets the country they’re paid in, and if Stripe can’t pay out to that country, AffiliateWP routes them to another method before they connect, so no one is left without a way to get paid.
+
+To cover the countries Stripe can’t reach, enable PayPal alongside Stripe. Affiliates who can’t use Stripe can then set themselves up with PayPal where it’s available. If you have no other method enabled, those affiliates fall back to Manual Payout, so you pay them outside AffiliateWP and the payout is still recorded.
+
+### The Payout Method column
+
+Two admin lists carry a **Payout Method** column, and it answers a different question in each one.
+
+- On **AffiliateWP » Referrals**, an unpaid referral shows the method that will pay it on the next run, and it changes as you or the affiliate change that method. A paid referral shows the method that actually paid it, and that never changes.
+- On **AffiliateWP » Affiliates**, the column sits next to Rate and shows each affiliate’s current method.
+
+## Run a payout
+
+### Pay all your affiliates at once
+
+Navigate to **AffiliateWP » Payouts** and click **Pay Affiliates**. The same button sits on **AffiliateWP » Referrals** and opens the same screen, so it doesn’t matter which one you use.
 
 **Set your filters:**
 
@@ -19852,9 +19918,9 @@ Navigate to **AffiliateWP » Payouts** and click **Pay Affiliates**.
 - **Minimum earnings:** Skip affiliates who have earned less than this amount.
 - **Ignore commission holding period:** Bypass the configured holding window for this batch only.
 - **Include:** Pay all affiliates, or narrow to specific affiliates and/or affiliate groups.
-- **Payout method:** Only include affiliates whose effective method matches one of the selected methods. Useful when you want to process one method at a time.
+- **Payout method:** choose **Use each affiliate’s configured method** to pay everyone through the method that already applies to them. You can narrow that to specific methods when you want to process one at a time. Choose **Pay everyone this batch via** instead to send the whole batch through one method, whatever each affiliate is set to. That applies to this batch only and does not change anyone’s saved method.
 
-![pay affiliates form](https://affiliatewp.com/wp-content/uploads/2021/11/pay-affiliates-form-2-767x607.png)
+![The Pay affiliates configure step, with the Payout method control set to use each affiliate's own method and Pay everyone this batch via beneath it](https://affiliatewp.com/wp-content/uploads/2021/11/pay-affiliates-form-2-767x607.png)
 
 **Preview before sending:**
 
@@ -19862,9 +19928,9 @@ Click **Preview Payout** to see exactly who will be paid and how, before any m
 
 - Total amount and affiliate count
 - A per-method breakdown showing exactly where funds are directed
-- Pre-flight issues, including affiliates whose setup would cause a failure (for example, a PayPal affiliate with no email address on file)
+- Affiliates who can’t be paid yet, and the amount they hold. A Stripe affiliate who hasn’t finished connecting is the usual case, because only they can complete that step. Their total is kept separate from the headline figure, so the amount you see leaving is the amount that actually leaves
 
-![preview payout](https://affiliatewp.com/wp-content/uploads/2021/11/preview-payout-767x552.png)
+![The payout preview step, with the batch total split into a Store Credit group and a Stripe group, each listing the affiliates it will pay above the Pay affiliates button](https://affiliatewp.com/wp-content/uploads/2021/11/preview-payout-767x552.png)
 
 Referrals do not show as “Paid” until the payout actually settles. The preview is a safe step to verify before committing.
 
@@ -19879,24 +19945,67 @@ When the batch completes, results are visible under **AffiliateWP » Payouts**�
 
 **If your batch included Manual affiliates:** open the batch from the Batches tab and look for the **Download CSV** link in the Summary card inside the batch drawer. The CSV contains the payment details for each Manual affiliate.
 
-## Payout Batches
+### Pay one referral, or a few
+
+You don’t have to run a full batch to pay someone. Go to **AffiliateWP » Referrals**.
+
+Every row has one payment action, named for what it does. For Stripe and PayPal it reads **Pay** and sends the transfer. For Store Credit it also reads **Pay** and credits their balance. For a Manual affiliate it reads **Record as paid**, because nothing is sent.
+
+- To pay a single referral, find it in the list and click that button on its row.
+- To pay several at once, tick them, choose **Pay** from the bulk actions dropdown, then apply.
+
+Either way AffiliateWP creates a payout record, so the referral appears in your history exactly as one paid in a batch does.
+
+### Record a payment you made yourself
+
+**Record as paid** marks an unpaid referral as paid. Use it when the money moved outside AffiliateWP, or to reconcile a referral a batch couldn’t pay. What it does next depends on the affiliate’s payout method.
+
+- **Store Credit:** their balance really is credited, exactly as it would be from **Pay**. So this is not a records-only note for them. Your history will also file that payout as manual rather than store credit, so use **Pay** unless you have a reason not to.
+- **Manual:** the payout is recorded and no money moves, which is exactly what Manual Payout means.
+- **Stripe or PayPal:** the referral is marked paid and no transfer is sent.
+
+On a Stripe or PayPal row, **Record as paid** is the first item in the row’s actions menu. It is easy to reach and it sends nothing, so only use it when you have already paid that affiliate another way.
+
+### Pay on a schedule
+
+You don’t have to start every payout yourself. A schedule pays your affiliates on a set day, each through their own method, and produces the same batch you would get from **Pay Affiliates**. Schedules live on the **Schedules** tab at **AffiliateWP » Payouts**, and need a Pro licence or higher.
+
+Affiliates set to Manual Payout are skipped by a scheduled run, because a manual payout is one you make deliberately. You keep paying those yourself. See [paying affiliates automatically](/docs/automatic-payouts/) for how to set a schedule up.
+
+### Commission holding period
+
+The **Commission Holding Period** is a feature that allows you to delay paying affiliate commissions for a set number of days after a referral is made. This helps protect your business from issues like refunds, chargebacks, or fraud, ensuring that affiliates are only paid for finalized sales.
+
+To set up the Commission Holding Period:
+
+- Navigate to **AffiliateWP » Settings** **»** **Commissions** and look for the **Commission Holding Period** field.
+- Enter the number of days you wish to delay commission payouts. For example, if your refund period is 30 days, it’s recommended to set the holding period to **37 days** (refund period + 7 days).
+
+![The Commission Holding Period setting, a number of days typed into a small field](https://affiliatewp.com/wp-content/uploads/2021/11/commission-holding-period-1024x214.png)
+
+The extra 7 days help account for potential payment processing delays or disputes, ensuring commissions are only paid out once the sale is fully finalized.
+
+By delaying payouts, you can ensure that any refunds or disputes are resolved before commissions are paid, protecting your business from paying out on sales that don’t ultimately complete.
+
+### See what a batch paid
 
 The **Batches** tab at **AffiliateWP » Payouts** shows one row per “Pay Affiliates” run, giving you an aggregate view of every batch you’ve run.
 
-![payout-batches](https://affiliatewp.com/wp-content/uploads/2021/11/payout-batches-767x258.png)
+![The Payout Batches tab with a batch drawer open, showing the batch summary and each individual payout inside it](https://affiliatewp.com/wp-content/uploads/2021/11/payout-batches-767x258.png)
 
 Click a batch row to open the Batch drawer, an inline panel that shows the full per-affiliate breakdown and lets you drill into individual payouts without leaving the list.
 
-**Retrying a failed batch:** when a batch has failures, an inline “Retry N failed” action appears on the row. Clicking it creates a new batch containing only the failed payouts and runs them through their effective methods again. The new batch shows “Retry of Batch #N” so the audit trail stays intact.
+**Retrying a failed batch:** a batch with failures gets a retry action on its row and in its actions menu, labelled with the count, such as **Retry 3 failed payouts**. Confirm it and AffiliateWP creates a new batch holding only those payouts, then runs them through each affiliate’s own method again. The original batch is left as it was. The new one is marked **↳ retry of #12** and links back to it, so you can follow the whole chain.
 
-## When a payout fails
+## If a payout fails
 
 AffiliateWP categorizes every payout failure into one of these classes, which determines what happens next:
 
-- **Affiliate action required:** the affiliate needs to do something, such as verify their PayPal email or complete Stripe Connect. An auto-email is sent to them (if enabled) and the daily auto-retry sweep retries the payout once they’re ready.
-- **Admin action required:** you need to fix something, such as topping up your account balance or updating API credentials. No auto-retry. The payout drawer surfaces the specific issue.
-- **Transient:** a temporary error such as a rate limit, network timeout, or provider outage. No auto-retry. You can retry manually from the payout drawer.
-- **Data error:** the affiliate’s profile has an issue, such as an invalid email format or currency mismatch. No auto-retry. Edit the affiliate to fix the data, then retry.
+- **Affiliate action required:** the affiliate needs to do something, such as confirm their PayPal email or finish setting up Stripe. An auto-email goes out if you have that on, and the daily sweep retries the payout once they’re ready. Retry stays disabled until then.
+- **Admin action required:** you need to fix something, such as topping up your account balance or updating API credentials. Retry stays disabled until you do, and the drawer names the problem.
+- **Temporary error:** a rate limit, a network timeout, or a provider outage. Nothing retries it for you, but Retry stays enabled so you can run it again yourself.
+- **Data error:** the affiliate’s profile has a problem, such as an email in the wrong format or a currency mismatch. Retry stays disabled. Fix the data on their profile, then retry.
+- **Unable to classify:** AffiliateWP couldn’t work out which of the above it is. The drawer shows the provider’s own error message and links to their dashboard, and Retry stays enabled so the judgement is yours.
 
 ### Viewing and resolving a failed payout
 
@@ -19914,9 +20023,27 @@ If a payout is stuck and you want to reroute the affiliate through a different m
 2. Select an alternative method from the list.
 3. Click **Switch and retry**.
 
-This updates the affiliate’s configured method, creates a new payout under the new method, and links it to the original failed payout for audit trail purposes. You don’t need to leave the drawer or run a new batch.
+This changes this payout only. AffiliateWP creates a new payout under the method you picked and links it back to the failed one. The affiliate’s own payout method is left alone, so their next payout uses it again. You don’t need to leave the drawer or run a new batch.
 
-**Example:** an affiliate’s PayPal account is on hold. Open their failed payout drawer, switch to Store Credit, click “Switch and retry.” The affiliate is paid via Store Credit immediately and the original failed payout is marked as superseded.
+If you want the change to stick, set an override on their **Edit Affiliate** screen as well.
+
+**Example:** an affiliate’s PayPal account is on hold. Open their failed payout drawer, switch to Store Credit, then click **Switch and retry**. They’re paid in store credit straight away, and the failed payout is closed out pointing at the one that replaced it. Their payout method is still PayPal, so change that separately if the hold isn’t temporary.
+
+### Auto-email affiliates about failed payouts
+
+When a payout fails because the affiliate needs to take action (for example, their PayPal account isn’t set up or they haven’t finished setting up Stripe), AffiliateWP can automatically send them a method-specific email explaining what to do and where to do it.
+
+![The Payout Settings card with the Auto-email affiliates about failed payouts toggle highlighted and switched on](https://affiliatewp.com/wp-content/uploads/2021/11/Auto-email-affiliates-about-failed-payouts-767x542.png)
+
+The email includes a direct link to the affiliate’s Settings page. A 7-day cooldown per affiliate prevents repeated emails if the same issue persists.
+
+### Auto-retry failed payouts
+
+When on, a background job runs daily and checks every failed payout that’s waiting for the affiliate to fix something.
+
+![The Payout Settings card with the Auto-retry failed payouts toggle highlighted and switched on](https://affiliatewp.com/wp-content/uploads/2021/11/Auto-retry-failed-payouts-767x563.png)
+
+Once the affiliate is ready (their PayPal email is verified or their Stripe setup is finished), the payout retries automatically without any admin involvement.
 
 ### PayPal-specific failure statuses
 
@@ -19924,44 +20051,40 @@ PayPal returns three distinct statuses that all fall under “affiliate action r
 
 - **Unclaimed:** the recipient email isn’t linked to a verified PayPal account. PayPal has sent them a signup invitation and is holding the funds for 30 days. If the affiliate creates a PayPal account on that email within 30 days, the funds land automatically. The auto-retry sweep picks this up once they’re set up.
 - **Returned:** the 30-day claim window expired, or the affiliate explicitly refused the payment. Contact the affiliate and consider switching their payout method.
-- **Blocked:** PayPal blocked the transaction due to compliance, fraud, or an account hold on their PayPal account. Switch the affiliate’s payout method. They’ll need to resolve the block directly with PayPal before switching back.
-
-## Commission holding period
-
-The **Commission Holding Period** is a feature that allows you to delay paying affiliate commissions for a set number of days after a referral is made. This helps protect your business from issues like refunds, chargebacks, or fraud, ensuring that affiliates are only paid for finalized sales.
-
-To set up the Commission Holding Period:
-
-- Navigate to **AffiliateWP » Settings** **»** **Commissions** and look for the **Commission Holding Period** field.
-- Enter the number of days you wish to delay commission payouts. For example, if your refund period is 30 days, it’s recommended to set the holding period to **37 days** (refund period + 7 days).
-
-![Commission holding period](https://affiliatewp.com/wp-content/uploads/2021/11/commission-holding-period-1024x214.png)
-
-The extra 7 days help account for potential payment processing delays or disputes, ensuring commissions are only paid out once the sale is fully finalized.
-
-By delaying payouts, you can ensure that any refunds or disputes are resolved before commissions are paid, protecting your business from paying out on sales that don’t ultimately complete.
+- **Blocked:** PayPal blocked the transaction due to compliance, fraud, or an account hold on their PayPal account. Switch the affiliate’s payout method. They need to sort it out with PayPal before switching back.
 
 ## Frequently Asked Questions
 
 ### Do I need to run a separate batch for each payout method?
 
-No. One batch handles all methods. The system reads each affiliate’s effective method and routes them through the right processor automatically. If you want to process one method at a time, use the Method filter on the Pay Affiliates form.
+No. One batch handles all methods. AffiliateWP pays each affiliate through the method that applies to them. If you want to process one method at a time, use the Method filter on the Pay Affiliates form.
 
 ### Can affiliates choose their own payout method?
 
 Yes, if you enable “Allow affiliates to choose their payout method” in Settings » Payouts. When enabled, affiliates see a Payout Method dropdown on their Settings page in the Affiliate Area or Affiliate Portal. When disabled, all affiliates use your site’s Default Payout Method unless you’ve set an override on their profile.
 
+### Why isn’t the payout method dropdown showing in the Affiliate Area?
+
+Two things have to be true. **Allow affiliates to choose their payout method** must be on in **AffiliateWP » Settings » Payouts**, and at least two methods an affiliate can pick must be enabled. With only one there is nothing to choose between, so affiliates see a plain status line naming their method instead of a dropdown. Manual Payout doesn’t count towards the two, because affiliates can never pick it.
+
 ### What happens if I disable a method that some affiliates are already on?
 
-Their saved preference is kept on file but they fall back to the site default for routing until the method is re-enabled. If you re-enable the method later, those affiliates automatically revert to their saved preference without any action needed.
+Their saved preference is kept on file but they are paid via the site default until you turn that method back on. If you re-enable the method later, those affiliates automatically revert to their saved preference without any action needed.
 
 ### What does the “Paid” status on a referral actually mean?
 
-It means the money has settled. Referrals submitted to PayPal or Stripe start in a “processing” state and only move to “paid” when the provider confirms the transfer completed. A referral marked “paid” reflects actual delivery, not just submission.
+It means one of two things, and which one depends on how the referral got there.
+
+- Paid by a batch or a **Pay** action through Stripe or PayPal: the provider confirmed the transfer. Until it does, the referral stays **Unpaid** and its payout sits at **Processing**, so a referral only turns **Paid** once the money is on its way.
+- Paid by **Record as paid**, or paid through Manual Payout: nothing was sent, and **Paid** means somebody recorded it.
+
+Store credit sits between the two: the balance really is credited, so the affiliate has the money to spend on your store.
+
+One thing **Paid** never means is that the money has reached the affiliate’s bank. A Stripe payout lands in the account Stripe set up for them first, and Stripe pays it on to their bank on its own schedule. See [paying affiliates internationally](/docs/international-affiliate-payouts/) for how that second step works.
 
 ### Can I pay a single referral without running a full batch?
 
-Yes. On the Referrals admin list, hover over any unpaid referral row and click the **Pay** quick action. This pays that single referral through its affiliate’s effective method immediately.
+Yes. On the Referrals admin list, hover over any unpaid referral row and click the **Pay** quick action. This pays that single referral straight away, through the method that applies to its affiliate.
 
 ### Can I pay affiliates who don’t have a PayPal account yet?
 
@@ -19969,7 +20092,7 @@ Yes. PayPal lets you send money to any email address. If the recipient doesn’t
 
 ### What does “Manual Payout” mean?
 
-Manual Payout means AffiliateWP records that a payout occurred, but no money moves through the plugin. You pay the affiliate outside AffiliateWP by bank transfer, check, or any other method, and the system keeps a record. After the batch completes, open it from the Batches tab and use the **Download CSV** link in the Summary card to get the payment details for each Manual affiliate.
+Manual Payout means AffiliateWP records that a payout occurred, but no money moves through the plugin. You pay the affiliate outside AffiliateWP by bank transfer, check, or any other method, and AffiliateWP keeps a record. After the batch completes, open it from the Batches tab and use the **Download CSV** link in the Summary card to get the payment details for each Manual affiliate.
 
 ### Does the commission holding period apply to all payout methods?
 

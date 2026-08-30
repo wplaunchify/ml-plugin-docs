@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T17:54:18.633Z",
+  "last_updated": "2026-08-30T18:05:39.861Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -129,8 +129,8 @@
       "slug": "affiliatewp-multi-tier-commissions",
       "name": "AffiliateWP - Multi-Tier Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-08-23T18:16:43.451Z",
-      "page_count": 221,
+      "last_scraped": "2026-08-30T18:05:39.861Z",
+      "page_count": 219,
       "categories": [
         "uncategorized"
       ]
