@@ -8,22 +8,20 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/](https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/)
 
-We have a [dedicated help desk](https://theeventscalendar.com/support/) where we provide support services for our premium plugins. **Please note that it may be 24-48 hours before we respond to new tickets** and we do not generally provide support over weekends. While we aim to be as fast as we can, we ask for your patience during periods of peak support activity.
+We have a [dedicated help desk](https://software.liquidweb.com/support/) where we provide support services for our premium plugins. **Please note that it may be 24-48 hours before we respond to new tickets** and we do not generally provide support over weekends. While we aim to be as fast as we can, we ask for your patience during periods of peak support activity.
 
-You must have an active subscription to receive support for our premium plugins and services. We [encourage you to log in](/software/kadence/my-account-page/) before [submitting a new ticket](https://theeventscalendar.com/support/) – that way, we’ll be able to connect you with the right team members a whole lot faster.
+You must have an active subscription to receive support for our premium plugins and services. We [encourage you to log in](https://software.liquidweb.com/support/) before submitting a new ticket – that way, we’ll be able to connect you with the right team members a whole lot faster.
 
 Alternatively, if you are looking for free support (for The Events Calendar, Event Tickets, or another free plugin) you can head over to the relevant WordPress.org forum and post your question there. These forums are not monitored daily and are primarily a place for community members to help one another … but we do check in and try to assist whenever possible:
 
 - [The Events Calendar forum for free users](https://wordpress.org/support/plugin/the-events-calendar)
 - [Event Tickets forum for free users](https://wordpress.org/support/plugin/event-tickets)
 
-We do not currently provide [phone-based support](https://docs.nexcess.com/software/the-events-calendar/why-we-dont-offer-phone-support/). If you need assistance, our [Help Desk](https://theeventscalendar.com/support/) is the best and fastest place to seek help. We also provide [live chat](https://theeventscalendar.com/products/wordpress-events-calendar/) support.
+We do not currently provide [phone-based support](https://docs.nexcess.com/software/the-events-calendar/why-we-dont-offer-phone-support/). If you need assistance, our Help Desk is the best and fastest place to seek help.
 
 **The Events Calendar plugin support covers help with setting up the latest version of the product and direction on how to use the latest version of the product as advertised.** Our support service does not cover help with theme or plugin customization beyond the advertised features (see examples of support vs. customization below), nor does it cover help on sites that are heavily customized or in situations where the core plugin files have been modified. **Please note that we cannot provide support to users who refuse to follow our troubleshooting steps.**
 
 It is also worth noting that we cannot assist with the setup and installation of both staging and live sites. We can help you set up The Events Calendar plugins but cannot provide services for general website setup.
-
-To get you started, we’ve put together guides for each of our plugins, which you can find [here](https://docs.nexcess.com/software/kadence/installation-guide/).
 
 If a user finds a bug in our code, we will ticket it to be fixed in an upcoming maintenance release. We have a regular release cycle for bug fixes, but we can not guarantee nor can we commit to a timeframe for a specific fix. We do our best to update support tickets when a fix is coming soon.
 

@@ -2,7 +2,7 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-08-23T06:58:39.508Z",
+  "last_scraped": "2026-08-30T06:35:06.879Z",
   "total_pages": 349,
   "failed_urls_count": 1,
   "sections": [
@@ -4115,19 +4115,6 @@
       ]
     },
     {
-      "title": "Upgrading A Subscription",
-      "slug": "upgrading-a-subscription",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/upgrading-a-subscription/",
-      "file": "categories/upgrading-a-subscription.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Upgrading a Subscription",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/upgrading-a-subscription/"
-        }
-      ]
-    },
-    {
       "title": "User Roles Events",
       "slug": "user-roles-events",
       "url": "https://docs.nexcess.com/software/the-events-calendar/user-roles-events/",
@@ -4280,6 +4267,19 @@
         {
           "title": "What Happens if I Cancel My Promoter Subscription?",
           "url": "https://docs.nexcess.com/software/the-events-calendar/what-happens-if-i-cancel-my-promoter-subscription/"
+        }
+      ]
+    },
+    {
+      "title": "What Is This Promoter Charge On My Credit Card",
+      "slug": "what-is-this-promoter-charge-on-my-credit-card",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/what-is-this-promoter-charge-on-my-credit-card/",
+      "file": "categories/what-is-this-promoter-charge-on-my-credit-card.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What is This Charge on My Credit Card or PayPal account?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/what-is-this-promoter-charge-on-my-credit-card/"
         }
       ]
     },

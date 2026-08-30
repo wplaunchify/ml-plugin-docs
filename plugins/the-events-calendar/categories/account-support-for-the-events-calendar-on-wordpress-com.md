@@ -8,9 +8,9 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/account-support-for-the-events-calendar-on-wordpress-com/](https://docs.nexcess.com/software/the-events-calendar/account-support-for-the-events-calendar-on-wordpress-com/)
 
-Before continuing, please make sure that you have visited [theeventscalendar.com/support/](http://theeventscalendar.com/support/) before contacting support, as it contains an assortment of links to guides, customizations, and The Events Calendar Knowledgebase. It’s likely that your problem has already been documented, and a fix has been added to one of the many KB articles.
+Before continuing, please make sure that you have visited [Events Calendar Knowledgebase](/software/the-events-calendar/) before [contacting support](https://software.liquidweb.com/support/), as it contains an assortment of links to guides, customizations, and The Events Calendar Knowledgebase. It’s likely that your problem has already been documented, and a fix has been added to one of the many KB articles.
 
-Our plugins are only officially available for purchase on our site, [theeventscalendar.com](https://theeventscalendar.com/), except for Events Calendar Pro, which can also be purchased on WordPress.com.
+All of our plugins are officially available for purchase on our [brand website](https://www.liquidweb.com/software/the-events-calendar/). Additionally, Events Calendar Pro can be purchased on WordPress.com.
 
 ![A screen on WordPress.com that allows people to upgrade to The Events Calendar Pro](https://docs.nexcess.com/wp-content/uploads/2026/06/TECProWPComUpgrade.jpg)
 
@@ -23,7 +23,7 @@ For licenses purchased through the WordPress.com dashboard, there will be no use
 
 Only the WordPress.com team will be able to assist with these issues.
 
-The level of technical support that we provide is the same whether the license was purchased on our site or WordPress.com. To create a support ticket, please visit [my.theeventscalendar.com/get-help/](https://my.theeventscalendar.com/get-help/)
+The level of technical support that we provide is the same whether the license was purchased on our site or WordPress.com. To create a support ticket, please visit [Software Support](https://software.liquidweb.com/support/) page.
 
 ---
 

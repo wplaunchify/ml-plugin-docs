@@ -8,22 +8,23 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/automatic-updates/](https://docs.nexcess.com/software/the-events-calendar/automatic-updates/)
 
-You will be automatically alerted any time there is an updated version available for The Events Calendar or any of our other add-ons. These updates will be listed in your WordPress admin screen under **Dashboard** > **Updates** when they are ready for you.
+Automatic update notifications for The Events Calendar and related add-ons appear in the WordPress admin dashboard under **Dashboard > Updates**.
 
 ![Display on WordPress admin when an update is available to install](https://docs.nexcess.com/wp-content/uploads/2026/06/Automatic-Updates-665x178-1.jpg)
 
-To install any available updates, simply check the box next to each plugin you’d like to update, then click the **Update Plugins** button to start the process. WordPress will begin the download and installation process, and your plugin(s) will be automatically reactivated once the update has been installed.
+To install updates, select the checkbox next to each plugin and click **Update Plugins**. WordPress downloads and installs the updates, then automatically reactivates the plugins upon completion.
 
 ### Hey, I’m not seeing any available updates!
 
-If you’re not seeing any available updates on your WordPress dashboard and you’re sure that an update is available for a premium plugin, it’s worth double-checking to ensure that a) your subscription is still active and b) your license key or keys have been entered properly. Here’s how to check:
+If plugin updates do not appear in the WordPress dashboard when an update is available, verify that your subscription is active and that your license keys are configured properly.
 
-- **Check your licensing.** You can find a complete list of your account’s license keys by logging into this site and heading to [My Account → License Keys](https://theeventscalendar.com/license-keys/). If one or more of your license keys are currently expired, now would be a good time to [reactivate those subscriptions](https://docs.nexcess.com/software/the-events-calendar/renewing-an-expired-license-subscription/).
-- **Copy your license key.** Once you’ve located the license key for your product and confirmed that it’s active and ready to use, copy the full text of that key to your clipboard.
-- **Log into WordPress.** Head over to your site, log into your WordPress dashboard, and enter the license key into the correct text field under **Events** > **Settings** → **Licenses**.
-- **Save your settings.** This will save your work.
+- **Check your subscriptions**: Log into the [Liquid Web Software](https://software.liquidweb.com) portal and navigate to **Dashboard > Subscriptions** to view your account’s active subscriptions. If a subscription has expired, reactivate it to resume updates.
+- **Copy your license key**: Navigate to **Dashboard > Licenses** (within the portal) to access your Unified License or Legacy License.
+- **Log into WordPress**: Log into your WordPress dashboard to connect the license key:
+- **Legacy Subscribers**: Enter the license key in the designated field for your plugin (e.g., **Events > Settings > Licenses for The Events Calendar**) and save your changes.
+- **Unified License Subscribers**: Navigate to **Settings > Liquid Web Products** to manage licenses centrally. Refer to the “[Activating License Keys for Automatic Updates](https://docs.nexcess.com/software/troubleshooting/how-to-install-and-update-your-wordpress-plugins-and-themes/#h-activating-license-keys-for-software-updates)” section for additional details.
 
-*Voila!* You are now all set to start receiving automatic notifications when a new version for your plugin is available. Keep in mind that you may need to refresh your **Updates** page a few times after inputting a license key.
+Once configured, automatic update notifications will appear as plugin updates are released. You may need to refresh the WordPress **Updates** page after entering a license key.
 
 ---
 

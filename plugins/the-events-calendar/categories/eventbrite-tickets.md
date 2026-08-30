@@ -30,8 +30,6 @@ Hooray! You are now set up with Eventbrite Tickets! You can also further tailo
 - [Change the height of the Eventbrite Tickets iFrame](https://theeventscalendar.com/extensions/eventbrite-additional-options/)
 - [Configure Eventbrite Tickets to use Eventbrite.co.uk](https://theeventscalendar.com/extensions/eventbrite-additional-options/) or another international branch
 
-If you run into trouble or need help, you can head to our [troubleshooting page](https://theeventscalendar.com/knowledgebase/category/errors/) or post to our [help desk](https://support.theeventscalendar.com/submit_ticket). You can also explore our [Knowledgebase](https://theeventscalendar.com/knowledgebase/) for tutorials, tips, walkthroughs, and more.
-
 💡**Note**: As of March 1st, 2021, Eventbrite is deprecating the description field. Importing new events from Eventbrite will work as expected, however we do recommend that you publish new events and make changes to your existing events through Eventbrite for now, which will allow you to take advantage of the structured content available there.
 
 ---

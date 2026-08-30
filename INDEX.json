@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T06:24:56.704Z",
+  "last_updated": "2026-08-30T06:35:06.904Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2719,7 +2719,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-      "last_scraped": "2026-08-23T06:58:39.508Z",
+      "last_scraped": "2026-08-30T06:35:06.904Z",
       "page_count": 349,
       "categories": [
         "accessibility",
@@ -3038,7 +3038,6 @@
         "troubleshooting-the-most-common-installation-issues",
         "trustedlogin",
         "upgrade-to-pro-message-appears-despite-having-a-valid-license",
-        "upgrading-a-subscription",
         "user-roles-events",
         "using-ftp",
         "using-google-chrome-developer-tools",
@@ -3051,6 +3050,7 @@
         "what-browsers-do-you-support",
         "what-does-each-license-type-include",
         "what-happens-if-i-cancel-my-promoter-subscription",
+        "what-is-this-promoter-charge-on-my-credit-card",
         "what-kind-of-payments-do-you-accept",
         "what-support-is-provided-for-license-holders",
         "what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update",
