@@ -105,7 +105,7 @@ $ 79
 
 ---
 
-| Version: | 1.14.0 |
+| Version: | 1.15.0 |
 | --- | --- |
 | Last update: | August 2026 |
 

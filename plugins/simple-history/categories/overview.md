@@ -29,6 +29,7 @@ There is also support articles and developer documentation available:
 
 ## Developer documentation
 
+- #### How to send WordPress activity logs to Splunk
 - #### How Simple History detects AI agents
 - #### REST API endpoints
 - #### How do I get a Google Maps API key to use in the Premium Add-On?
@@ -38,7 +39,6 @@ There is also support articles and developer documentation available:
 - #### Logger example
 - #### Log Levels
 - #### Actions and filters (hooks)
-- #### Query API
 
 ---
 
