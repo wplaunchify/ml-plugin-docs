@@ -120,6 +120,35 @@ async function fetchPage(url, retries = MAX_RETRIES) {
   );
 }
 
+/**
+ * WordPress sites leak PHP notices and plugin output into REST responses more
+ * often than you would hope (a stray WooCommerce admin notice, a deprecation
+ * warning). The body is still valid JSON with junk glued to the front or back,
+ * but axios hands it back as a string because the parse failed. Salvage the
+ * JSON rather than dropping a whole page of docs.
+ */
+function salvageJson(raw, url) {
+  if (typeof raw !== 'string') return raw;
+
+  const firstBracket = raw.search(/[[{]/);
+  if (firstBracket === -1) return raw;
+
+  const opener = raw[firstBracket];
+  const closer = opener === '[' ? ']' : '}';
+  const lastCloser = raw.lastIndexOf(closer);
+  if (lastCloser <= firstBracket) return raw;
+
+  try {
+    const parsed = JSON.parse(raw.slice(firstBracket, lastCloser + 1));
+    const junk = raw.slice(0, firstBracket).replace(/\s+/g, ' ').trim();
+    console.error(`  WARNING: ${url} returned JSON wrapped in ${raw.length - (lastCloser + 1 - firstBracket)} chars of non-JSON output; recovered it.`);
+    if (junk) console.error(`  The source site is printing this into its REST response: ${junk.slice(0, 200)}`);
+    return parsed;
+  } catch (err) {
+    return raw;
+  }
+}
+
 async function fetchJson(url, retries = MAX_RETRIES) {
   return fetchWithRetry(
     url,
@@ -132,7 +161,7 @@ async function fetchJson(url, retries = MAX_RETRIES) {
       maxRedirects: 5
     },
     retries,
-    response => ({ data: response.data, headers: response.headers })
+    response => ({ data: salvageJson(response.data, url), headers: response.headers })
   );
 }
 
@@ -595,10 +624,19 @@ async function runWpApi(args) {
         sawTransientFailure = true;
       }
     } else {
-      console.log(`OK (${result.data.length} posts)`);
+      console.log(`OK (${Array.isArray(result.data) ? result.data.length + ' posts' : 'unparseable response'})`);
     }
 
-    if (!Array.isArray(result.data)) break;
+    // Abandoning the loop silently here used to hide real losses: one bad page
+    // in the middle of pagination dropped every post from it onwards while the
+    // run still reported success.
+    if (!Array.isArray(result.data)) {
+      console.error(`  WARNING: page ${page} of ${totalPages} did not return a JSON array, so its posts were skipped.`);
+      failedUrls.push(pageUrl);
+      sawTransientFailure = true;
+      page++;
+      continue;
+    }
 
     for (const post of result.data) {
       const title = post.title && post.title.rendered

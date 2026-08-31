@@ -2,8 +2,8 @@
   "plugin_slug": "launchflows",
   "plugin_name": "LaunchFlows",
   "documentation_url": "https://launchflows.com/documentation/",
-  "last_scraped": "2026-08-31T00:16:14.259Z",
-  "total_pages": 43,
+  "last_scraped": "2026-08-31T00:20:42.232Z",
+  "total_pages": 52,
   "failed_urls_count": 7,
   "sections": [
     {
@@ -11,7 +11,7 @@
       "slug": "uncategorized",
       "url": "https://launchflows.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 43,
+      "page_count": 52,
       "pages": [
         {
           "title": "Hide Out Of Stock & Back Ordered Products",
@@ -184,6 +184,42 @@
         {
           "title": "Remove Products From Cart",
           "url": "https://launchflows.com/documentation/remove-products-from-cart/"
+        },
+        {
+          "title": "Solo Checkout",
+          "url": "https://launchflows.com/documentation/solo-checkout/"
+        },
+        {
+          "title": "Thank You & Next Step",
+          "url": "https://launchflows.com/documentation/thank-you-next-step/"
+        },
+        {
+          "title": "Conditional Blocks Plugin",
+          "url": "https://launchflows.com/documentation/conditional-blocks-plugin/"
+        },
+        {
+          "title": "Teams For WooCommerce Memberships",
+          "url": "https://launchflows.com/documentation/teams-for-woocommerce-memberships/"
+        },
+        {
+          "title": "WP Fusion",
+          "url": "https://launchflows.com/documentation/wp-fusion/"
+        },
+        {
+          "title": "WPForms",
+          "url": "https://launchflows.com/documentation/wpforms/"
+        },
+        {
+          "title": "Force Display Of Payment Fields",
+          "url": "https://launchflows.com/documentation/force-display-payment-fields/"
+        },
+        {
+          "title": "Target Triggers (lf-target)",
+          "url": "https://launchflows.com/documentation/target-triggers-lf-target/"
+        },
+        {
+          "title": "Discount Coupons",
+          "url": "https://launchflows.com/documentation/apply-woocommerce-coupon-discount/"
         }
       ]
     }

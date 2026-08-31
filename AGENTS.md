@@ -36,6 +36,12 @@ otherwise sibling scrapes hit the same vendor at once and get rate-limited.
 1. Reproduce locally: `npm ci`, then run the exact `node scraper.js ...` line from the workflow file.
 2. "EMPTY" on every page = the content selector no longer matches. `curl -L` one doc page, look at the final URL (redirects reveal site migrations) and find the new content container class.
 3. Zero URLs found = sitemap or index URL moved. Probe `wp-sitemap.xml`, `sitemap_index.xml`, `sitemap.xml` at the new origin.
+3a. Watch for `WARNING: ... returned JSON wrapped in N chars of non-JSON output`. That
+   means the vendor site is printing a PHP notice or plugin output into its REST
+   response. The scraper recovers the JSON, but the message names the offending text —
+   if it is one of our own sites, fix it there. Before this was handled, one corrupt
+   page in the middle of pagination silently dropped every post from it onward while
+   the run still reported success.
 3b. A scrape that "succeeds" is not automatically correct. Check `plugins/<slug>/categories/`
    for names like `cart`, `pricing`, `checkout` or bare language codes (`de`, `fr`, `pt`) —
    those mean the config is pointed at a marketing site rather than the docs.
