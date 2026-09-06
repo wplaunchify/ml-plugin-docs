@@ -1,7 +1,7 @@
 {
   "plugin_slug": "simple-history",
   "plugin_name": "Simple History",
-  "last_scraped": "2026-08-30T05:52:20.241Z",
+  "last_scraped": "2026-09-06T05:52:27.317Z",
   "total_pages": 11,
   "failed_urls": [],
   "pages": [
@@ -9,9 +9,10 @@
       "title": "Support",
       "url": "https://simple-history.com/support/",
       "category": "Overview",
-      "content": "**For the free version** of Simple History you can use the [support forum](https://wordpress.org/support/plugin/simple-history/) to ask questions.\n\n**For questions about paid add-ons** (like [Premium](https://simple-history.com/add-ons/premium/) or [WooCommerce logger](https://simple-history.com/add-ons/woocommerce/)) you can email us at [support@simple-history.com](mailto:support@simple-history.com).\n\nThere is also support articles and developer documentation available:\n\n## Support\n\n- #### How do I manage my add-on subscriptions\n- #### What is an initiator\n- #### Weekly email reports\n- #### GDPR and Privacy: How Your Data is Stored in Simple History\n- #### Got a charge from “LEMSQZY* SIMPLE-HISTORY”?\n- #### Troubleshooting errors when loading events\n- #### ⏰ Why is the time of my events wrong?\n- #### Third party plugins with support for Simple History\n- #### Does it work with SQLite? (Yes it does!)\n- #### Detective mode\n\n## Developer documentation\n\n- #### How to send WordPress activity logs to Splunk\n- #### How Simple History detects AI agents\n- #### REST API endpoints\n- #### How do I get a Google Maps API key to use in the Premium Add-On?\n- #### Feeds\n- #### FAQ (Frequently Asked Questions)\n- #### Add or update translations of the plugin\n- #### Logger example\n- #### Log Levels\n- #### Actions and filters (hooks)",
+      "content": "**For the free version** of Simple History you can use the [support forum](https://wordpress.org/support/plugin/simple-history/) to ask questions.\n\n**For questions about paid add-ons** (like [Premium](https://simple-history.com/add-ons/premium/) or [WooCommerce logger](https://simple-history.com/add-ons/woocommerce/)) you can email us at [support@simple-history.com](mailto:support@simple-history.com).\n\nThere is also support articles and developer documentation available:\n\n## Support\n\n- #### Fix: license key has reached the activation limit\n- #### How do I manage my add-on subscriptions\n- #### What is an initiator\n- #### Weekly email reports\n- #### GDPR and Privacy: How Your Data is Stored in Simple History\n- #### Got a charge from “LEMSQZY* SIMPLE-HISTORY”?\n- #### Troubleshooting errors when loading events\n- #### ⏰ Why is the time of my events wrong?\n- #### Third party plugins with support for Simple History\n- #### Does it work with SQLite? (Yes it does!)\n\n## Developer documentation\n\n- #### How to send WordPress activity logs to Splunk\n- #### How Simple History detects AI agents\n- #### REST API endpoints\n- #### How do I get a Google Maps API key to use in the Premium Add-On?\n- #### Feeds\n- #### FAQ (Frequently Asked Questions)\n- #### Add or update translations of the plugin\n- #### Logger example\n- #### Log Levels\n- #### Actions and filters (hooks)",
       "headings": [
         "Support",
+        "Fix: license key has reached the activation limit",
         "How do I manage my add-on subscriptions",
         "What is an initiator",
         "Weekly email reports",
@@ -21,7 +22,6 @@
         "⏰ Why is the time of my events wrong?",
         "Third party plugins with support for Simple History",
         "Does it work with SQLite? (Yes it does!)",
-        "Detective mode",
         "Developer documentation",
         "How to send WordPress activity logs to Splunk",
         "How Simple History detects AI agents",
@@ -35,20 +35,6 @@
         "Actions and filters (hooks)"
       ],
       "code_blocks": []
-    },
-    {
-      "title": "Detective mode",
-      "url": "https://simple-history.com/support/detective-mode/",
-      "category": "Detective Mode",
-      "content": "**Detective Mode** is a setting in Simple History that when enabled adds **detailed debug information** to each logged event.\n\nThe Detective mode is enabled under the general settings in *Settings » Simple History*.\n\n![](https://simple-history.com/wp/wp-content/uploads/2024/03/detective-mode-settings-1024x206.png)Screenshot: Settings for Detective mode is available in Settings » Simple History » General.\n\nNormally each logged event stores only the right amount of information needed to show a useful message for that specific event. This changes when Detective mode is enabled: each event will now store way more information. This information includes:\n\n- PHP file executed, i.e. \n```\nmy-file.php\n```\n- Request URI used\n- Debug backtrace summary\n- User browser agent\n- Current \n```\n$_GET\n```\n\n and\n```\n$_POST\n```\n\n payload\n- An array with all [WordPress filters](https://developer.wordpress.org/plugins/hooks/filters/) fired until the event was logged\n- The name of any cron job running\n- Result from [php_sapi_name()](https://www.php.net/manual/en/function.php-sapi-name.php), i.e. information about where request was made from: the cli or the web. The result can be many vales, including “apache2handler”, “fpm-fcgi”, “cli-server”, “litespeed”, “cli”.\n- WP-CLI command/parameters used\n\nAll this information makes it more easy for a developer or security expert to track down exactly where, how, and why something was logged.\n\nPlease note that enabling Detective Mode means that all $_GET and $_POST data is logged and that this data can contain sensitive information. The plugin tries to remove common password related data but with the wide range of different plugins and code implementations we can not make sure all is removed.\n\n### Example\n\nHere is a simple example that shows how this information can be useful. Below is a simple message saying that the translations for WooCommerce was updated. A curious person may start to wonder: but how and why was is updated by WP-CLI? With Detective mode enabled a lot of more information that this message has been stored. Let’s klick the date and time of the event to bring up the *context data table view*.\n\n![](https://simple-history.com/wp/wp-content/uploads/2024/03/wp-cli-updated-translations-for-woocommerce.png)\n\nHere in the context data table we have access to *a lot of more information*.\n\nWe can now see that WP-CLI was used to run WP-cron from the command line using this command\n```\nwp cron event run --due-now\n```\n\nand in the backtrace info we can follow the progress in details and see all function called, from initiating WP-CLI to running command on the \n```\nLanguage_Pack_Upgrader\n```\n\n class.\n\n![](https://simple-history.com/wp/wp-content/uploads/2024/03/wp-cli-updated-translations-for-woocommerce-context-with-detective-data-1-545x1024.png)",
-      "headings": [
-        "Example"
-      ],
-      "code_blocks": [
-        "my-file.php",
-        "wp cron event run --due-now",
-        "Language_Pack_Upgrader"
-      ]
     },
     {
       "title": "Does it work with SQLite? (Yes it does!)",
@@ -93,6 +79,20 @@
       "category": "How Do I Manage My Add On Subscriptions",
       "content": "You can [manage your subscription and billing settings](https://simple-history.lemonsqueezy.com/billing) using the [customer portal](https://simple-history.lemonsqueezy.com/billing).\n\nOn this customer portal you can:\n\n- View payment history\n- Download invoices\n- Manage subscriptions and payment methods.",
       "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "Fix: license key has reached the activation limit",
+      "url": "https://simple-history.com/support/license-activation-limit/",
+      "category": "License Activation Limit",
+      "content": "The message **“This license key has reached the activation limit”** means your [Simple History Premium](https://simple-history.com/add-ons/premium/) license key is already active on another site. Each license covers a set number of sites, and every activation uses one of them until you deactivate it.\n\n![The activation limit error shown under Simple History Settings, Licences.](https://simple-history.com/wp/wp-content/uploads/2026/09/license-key-already-active-1024x751.png)\n\n## Why this happens\n\nThe “other site” is almost always an earlier copy of the same site. The activation stays with that copy even if it no longer exists. Common causes:\n\n- You restored a backup taken before the license was activated.\n- You moved the site to a new host or domain.\n- You activated the key on a staging or local copy first, then on the live site.\n- You reinstalled WordPress or the plugin without deactivating the license first.\n\n## Fix it yourself\n\n### Deactivate the old activation\n\n1. Go to [app.lemonsqueezy.com/my-orders](https://app.lemonsqueezy.com/my-orders/) and enter the email address you used when buying. You will get a login link by email, no password needed.\n2. Open your Simple History Premium order and find the license key.\n3. Deactivate the site that should no longer use the license.\n4. Back in WordPress, go to Simple History » Settings » Licences and click **Activate** again.\n\n### Or deactivate from the other site\n\nIf that site still exists and you can log in to it, go to Simple History » Settings » Licences there and click **Deactivate**. Then activate the key on the site where you want it.\n\n## Still stuck?\n\n[Contact us](https://simple-history.com/contact/) with your order number and license key, or if you cannot get into the account you bought with. The order number is in your receipt email and on your My Orders page. We will free up the activation for you.",
+      "headings": [
+        "Why this happens",
+        "Fix it yourself",
+        "Deactivate the old activation",
+        "Or deactivate from the other site",
+        "Still stuck?"
+      ],
       "code_blocks": []
     },
     {

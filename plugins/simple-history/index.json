@@ -2,23 +2,10 @@
   "plugin_slug": "simple-history",
   "plugin_name": "Simple History",
   "documentation_url": "https://simple-history.com/support/",
-  "last_scraped": "2026-08-30T05:52:20.242Z",
+  "last_scraped": "2026-09-06T05:52:27.318Z",
   "total_pages": 11,
   "failed_urls_count": 0,
   "sections": [
-    {
-      "title": "Detective Mode",
-      "slug": "detective-mode",
-      "url": "https://simple-history.com/support/detective-mode/",
-      "file": "categories/detective-mode.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Detective mode",
-          "url": "https://simple-history.com/support/detective-mode/"
-        }
-      ]
-    },
     {
       "title": "Does It Work With Sqlite Yes It Does",
       "slug": "does-it-work-with-sqlite-yes-it-does",
@@ -68,6 +55,19 @@
         {
           "title": "How do I manage my add-on subscriptions",
           "url": "https://simple-history.com/support/how-do-i-manage-my-add-on-subscriptions/"
+        }
+      ]
+    },
+    {
+      "title": "License Activation Limit",
+      "slug": "license-activation-limit",
+      "url": "https://simple-history.com/support/license-activation-limit/",
+      "file": "categories/license-activation-limit.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Fix: license key has reached the activation limit",
+          "url": "https://simple-history.com/support/license-activation-limit/"
         }
       ]
     },
