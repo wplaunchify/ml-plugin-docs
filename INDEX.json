@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T08:52:26.517Z",
+  "last_updated": "2026-09-06T09:13:36.787Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2303,7 +2303,7 @@
       "slug": "learndash-lms-woocommerce-integration",
       "name": "LearnDash LMS - WooCommerce Integration",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-08-30T09:13:25.452Z",
+      "last_scraped": "2026-09-06T09:13:36.787Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
