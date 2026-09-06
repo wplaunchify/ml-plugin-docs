@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T02:30:37.868Z",
+  "last_updated": "2026-09-06T02:36:00.254Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -27,7 +27,7 @@
       "slug": "admin-menu-editor-pro",
       "name": "Admin Menu Editor Pro",
       "documentation_url": "https://adminmenueditor.com/documentation/",
-      "last_scraped": "2026-08-30T02:35:47.409Z",
+      "last_scraped": "2026-09-06T02:36:00.254Z",
       "page_count": 13,
       "categories": [
         "changelog",
