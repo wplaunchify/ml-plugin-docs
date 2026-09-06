@@ -3436,38 +3436,69 @@ With this CSS the red “locked” banner will look like this:
 
 ## Overview
 
-Generally, text strings that appear in the UI of your site and in FacetWP will be translatable using 
+With this hook you can manually translate all of FacetWP’s [dynamic strings](#translate-dynamic-strings), and some of its [static strings](#translate-static-strings). It can also be used to [translate facet labels](#translate-facet-labels).
+
+Generally, there two types of strings that can appear in your site: **static strings** and **dynamic strings**:
+
+### Translate static strings
+
+**Static** strings are the strings that appear in plugin/theme code surrounded by 
 ```
 __()
 ```
 
- or 
+, and have a “language domain”. For example: 
 ```
-_e()
+__( 'No results', 'fwp-front' )
 ```
 
-. You’d use a translation plugin, or a WordPress [gettext filter](https://developer.wordpress.org/reference/hooks/gettext/) (see [this example](/help-center/facets/facet-types/autocomplete/#translate-the-ui-texts)).
+. FacetWP uses two language domains: 
+```
+fwp
+```
 
-However, some of the UI strings that appear in various [facet types](/help-center/facets/facet-types/) are *dynamic*, “in-database” strings, which means that [WPML or Polylang](/help-center/using-facetwp-with/multilingual/) for example cannot see them directly. The 
+ for internal/admin strings, and 
+```
+fwp-front
+```
+
+ for front-end strings.
+
+To translate these kinds of strings, you need to use the .po/.mo language files of the theme/plugin. In practice, the best way to handle this is to install the [Loco Translate plugin](https://wordpress.org/plugins/loco-translate/). If you are [using WPML](/help-center/using-facetwp-with/multilingual/), the recommended way is to [use the WPML String Translation add-on](/help-center/using-facetwp-with/multilingual/#translate-static-strings-with-wpml) instead, as it handles both static and dynamic string translation. For Polylang, [Loco Translate is the recommended way](https://facetwp.com/help-center/using-facetwp-with/multilingual/#translate-static-strings-with-polylang), because [it does not handle static string translation](https://polylang.pro/loco-translate-the-right-complement-to-polylang/).
+
+Alternatively, or additionally, if you prefer to translate (certain) static strings in code, you can also use the 
+```
+gettext_{$domain}
+```
+
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/), as shown in [this example](/help-center/facets/facet-types/autocomplete/#translate-the-ui-texts).
+
+### Translate dynamic strings
+
+**Dynamic** strings come from plugin/theme settings and are stored in the database. An example would be a facet’s “Default label” (e.g. “Any”), as set in, for example, a [Dropdown facet’s settings](/help-center/facets/facet-types/dropdown/#default-label).
+
+When using WPML or Polylang, with the [Multilingual add-on](/help-center/using-facetwp-with/multilingual/), some of FacetWP’s dynamic strings are automatically registered, so they can be translated in WMPL’s String Translation section, or Polylang’s Languages > Translations section. At the time of writing, not all of FacetWP’s strings are registered that way though. In a future update, we will add all of them.
+
+The 
 ```
 facetwp_i18n
 ```
 
- filter allows [these strings](#translatable-strings) to be translated.
+ hook can be used to translate all of FacetWP’s dynamic strings, [as listed below](#translatable-strings).
 
-An alternative to using the 
+This hook also runs for some static strings, which makes them translatable in both ways.
+
+It is also possible to [convert dynamic strings to static strings using the facetwp_facet_render_args hook](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#convert-pager-facet-labels-to-translatable-strings), so that they can be translated with Loco Translate or 
+```
+gettext()
+```
+
+, as well as with the 
 ```
 facetwp_i18n
 ```
 
- hook would be to transform these UI strings to 
-```
-__()
-```
-
- translatable strings, [with the facetwp_facet_render_args hook](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#convert-pager-facet-labels-to-translatable-strings).
-
-This filter can also be used to [translate facet labels](#translate-facet-labels).
+ hook.
 
 ## Translatable strings
 
@@ -3663,7 +3694,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
 - [Using FacetWP with WordPress multi-site](https://facetwp.com/help-center/using-facetwp-with/wordpress-multi-site/)
 
-                    Last updated: March 26, 2026
+                    Last updated: September 3, 2026
 
 ---
 
@@ -8364,7 +8395,7 @@ Or, you could change facet choices into
 __()
 ```
 
- translatable strings:
+ translatable static strings:
 
 #### Convert facet choices to translatable strings
 
@@ -8378,7 +8409,7 @@ country
 __()
 ```
 
- translatable strings:
+ translatable static strings:
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_render_args', function( $args ) {
@@ -8412,7 +8443,7 @@ country
 __()
 ```
 
- translatable strings:
+ translatable static strings:
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_render_args', function( $args ) {
@@ -8428,7 +8459,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 });
 ```
 
-These dynamically added strings can now be [translated wi#translate-facet-choicesth a string translation plugin](#how-to-translate-dynamically-added-strings).
+These new static strings can now be [translated with a string translation plugin](#how-to-translate-dynamically-added-strings).
 
 #### Convert Pager facet labels to translatable strings
 
@@ -8437,7 +8468,7 @@ The following example changes all labels that [Pager facets](/help-center/facets
 __()
 ```
 
- translatable strings:
+ translatable static strings:
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_render_args', function( $args ) {
@@ -8457,28 +8488,28 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 });
 ```
 
-These dynamically added strings can now be [translated with a string translation plugin](#how-to-translate-dynamically-added-strings).
+These new static strings can now be [translated with a string translation plugin](#how-to-translate-dynamically-added-strings).
 
 Note that these Pager facet labels can also be translated [with the facetwp_i18n hook](/help-center/facets/facet-types/pager/#translate-the-pager-texts-and-labels). And the Pager facet links’ HTML can be customized [with the facetwp_facet_pager_link hook](/help-center/developers/hooks/output-hooks/facetwp_facet_pager_link/).
 
 #### How to translate dynamically added strings
 
-With the above snippets in your (child) theme’s functions.php, these dynamically added 
+With the above snippets in your (child) theme’s functions.php, these “dynamically added” 
 ```
 __()
 ```
 
- strings for [facet choices](#convert-facet-choices-to-translatable-strings) and [facet setting labels](#convert-pager-facet-labels-to-translatable-strings) can now be translated with a string translation plugin.
+ static strings for [facet choices](#convert-facet-choices-to-translatable-strings) and [facet setting labels](#convert-pager-facet-labels-to-translatable-strings) can now be translated with a string translation plugin.
 
 ![How to auto-register dynamically added translatable strings with WPML String Translation.](https://facetwp.com/wp-content/uploads/2024/07/wpml-auto-register-strings.png)How to auto-register dynamically added translatable strings with WPML String Translation. Visit the facet page with this setting enabled.
-For WPML, use [WPML String translation](https://wpml.org/documentation/getting-started-guide/string-translation/). To let WPML auto-detect these new strings, go to: WPML > String Translation > Auto register strings for translation. Enable the “Look for strings while pages are rendered”, and (within the time frame the setting is active), visit the page where the facets are. The new facet choice strings will then be detected and added to the 
+To [translate strings in WPML](/help-center/using-facetwp-with/multilingual/#translating-strings-when-using-wpml), you need to use the [WPML String translation](https://wpml.org/documentation/getting-started-guide/string-translation/) add-on. To let WPML auto-detect these new strings, go to: WPML > String Translation > Auto register strings for translation. Enable the “Look for strings while pages are rendered”, and (within the time frame the setting is active), visit the page where the facets are. The new facet choice strings will then be detected and added to the 
 ```
 fwp-front
 ```
 
  domain. Disable the setting again when all strings have been detected.
 
-Another useful plugin for string translations is [Loco Translate](https://wordpress.org/plugins/loco-translate/). If needed, you can use it together with a tool like [PoEdit](https://poedit.net/download) to handle or create the language pot/po/mo files.
+Another useful plugin for string translations, which is needed for [static string translation in Polylang](/help-center/using-facetwp-with/multilingual/#translating-strings-when-using-polylang), is [Loco Translate](https://wordpress.org/plugins/loco-translate/). The pot/po/mo files that this plugin uses can also be created or handled with a tool like [PoEdit](https://poedit.net/download).
 
 Translatable strings can also be translated with the 
 ```
@@ -8527,7 +8558,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Hierarchy Select facet type](https://facetwp.com/help-center/facets/facet-types/hierarchy-select/)
 - [The Exclude facet type](https://facetwp.com/help-center/facets/facet-types/exclude/)
 
-                    Last updated: July 17, 2026
+                    Last updated: September 4, 2026
 
 ---
 
@@ -9677,7 +9708,7 @@ term_order
 
 ## Sort numerically
 
-If your facet’s data source is a custom field or taxonomy containing numbers, and you want to sort the facet choices numerically, you can use the following code to sort by 
+If your facet’s data source is a custom field or taxonomy containing ([only](#sort-numerically-for-mixed-values)) numbers, and you want to sort the facet choices numerically, you can use the following code to sort by 
 ```
 facet_value
 ```
@@ -9763,6 +9794,134 @@ DESC
 ```
 
 .
+
+### Sort numerically for mixed values
+
+![Order facet values correctly in a facet with mixed numerical and alphabetical values.](https://facetwp.com/wp-content/uploads/2026/09/widthdiameter.png)Order facet values correctly in a facet with mixed numerical and alphabetical values.
+What if your facet has numbers in its choices, but the choice values are not purely numerical? Say you have a “Width x Diameter” facet, like in the image on the right, with choices like 
+```
+11.75 x 22.4
+```
+
+. If you’d use [the above snippet](#sortby-numerically) to sort numerically, it will only sort by the first “width” number, and stop sorting when it encounters a non-numerical value. So choices with the same width but a different diameter will not be sorted by diameter.
+
+To fix this, you can use the [SUBSTRING_INDEX() MySQL function](https://www.w3schools.com/sql/func_mysql_substring_index.asp), as shown in the following snippet that sorts a facet named 
+```
+size
+```
+
+. In this example, the 
+```
+facet_display_value
+```
+
+ (which is the visible label, e.g. 
+```
+11.75 x 22.4
+```
+
+) is split by the 
+```
+x
+```
+
+ character (plus surrounding spaces). It then first sorts numerically by the first token in the split value (the width), which is the 
+```
+1
+```
+
+ in the last part of 
+```
+( f.facet_display_value, ' x ', 1 )
+```
+
+. Then it sorts numerically by the last token, which is the 
+```
+-1
+```
+
+ in the last part of 
+```
+( f.facet_display_value, ' x ', -1 )
+```
+
+:
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_orderby', function( $orderby, $facet ) {
+  if ( in_array( $facet['name'], [ 'size' ] ) ) { // Change 'size' to the name(s) of your facet(s).
+    // Sort numerically by both parts of a "Width x Diameter" display value (e.g. "11.75 x 22.4"): first by width (the first token: 1), then by diameter (the last token: -1).
+    // The display value must contain (only) one ' x ' character, surrounded by spaces.
+    $orderby = "SUBSTRING_INDEX( f.facet_display_value, ' x ', 1 )+0 ASC, SUBSTRING_INDEX( f.facet_display_value, ' x ', -1 )+0 ASC";
+  }
+  return $orderby;
+}, 10, 2 );
+```
+
+![Order facet values correctly in a facet with mixed alphabetical and numerical values.](https://facetwp.com/wp-content/uploads/2026/09/size-facet.png)Order facet values correctly in a facet with mixed alphabetical and numerical values.
+If the facet choices do **not start with a number**, the above snippets to sort numerically will do nothing.
+
+Say you have a “Size” facet, like in the image on the right, with choices like 
+```
+Size 11
+```
+
+. To sort these choices correctly, you need to split the 
+```
+facet_display_value
+```
+
+ string on the space character, and then sort only by the numerical last token, as shown in the following snippet.
+
+Note that in this example, the first part of the choice, 
+```
+Size
+```
+
+, is entirely skipped when sorting, so this example only works if that first part is the same for all choices.
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_orderby', function( $orderby, $facet ) {
+  if ( in_array( $facet['name'], [ 'size' ] ) ) { // Change 'size' to the name(s) of your facet(s).
+    // Sort numerically by the trailing number of a "Size N" display value (e.g. "Size 11").
+    // The display value must contain (only) one space character.
+    $orderby = "SUBSTRING_INDEX( f.facet_display_value, ' ', -1 )+0 ASC";
+  }
+  return $orderby;
+}, 10, 2 );
+```
+
+If the first (alphabetical) part is **not** the same for all choices, and you want to first sort by that alphabetical part, then by the second numerical part, you can use the following snippet.
+
+In the first 
+```
+SUBSTRING_INDEX()
+```
+
+, just set the desired alphabetical (or other) order. See [the sort options overview above](#default-orderby-sql).
+
+The following example first orders the first alphabetical part by 
+```
+facet_display_value
+```
+
+, in 
+```
+ASC
+```
+
+ (A-Z) order, then orders numerically by the second numerical part:
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_orderby', function( $orderby, $facet ) {
+  if ( in_array( $facet['name'], [ 'size' ] ) ) { // Change 'size' to the name(s) of your facet(s).
+    // Sort the display value alphabetically by the first part, and numerically by the second part.
+    // The display value must contain (only) one space character.
+    $orderby = "SUBSTRING_INDEX( f.facet_display_value, ' ', 1 ) ASC, SUBSTRING_INDEX( f.facet_display_value, ' ', -1 )+0 ASC";
+  }
+  return $orderby;
+}, 10, 2 );
+```
 
 ## Sort by arbitrary values
 
@@ -9968,7 +10127,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Color facet type](https://facetwp.com/help-center/facets/facet-types/color/)
 - [Using FacetWP with Advanced Custom Fields](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
 
-                    Last updated: February 11, 2026
+                    Last updated: September 2, 2026
 
 ---
 
@@ -10783,6 +10942,8 @@ posts_per_page
 
  on the fly. In these types of scenarios, this hook can be used to correct the values displayed in the Pager.
 
+Tip:You can [retrieve, use, or display pager data with PHP and with JavaScript](/help-center/facets/facet-types/pager/#use-or-display-raw-pager-data).
+
 ## Parameters
 
 - **$pager_args** | array | An associative array of pager data (see below)
@@ -10790,10 +10951,11 @@ posts_per_page
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info<?php
 $pager_args = [
-  'page' => 1, // The page link number (integer) - Starts at 1, not 0
-  'per_page' => 6, // Number of posts per page (integer)
-  'total_rows' => 30, // Total number of posts (integer)
-  'total_pages' => 5 // Total number of pages (float)
+  'page' => 1, // The current page number (integer) - Starts at 1, not 0
+  'per_page' => 6, // The number of posts per page (integer)
+  'total_rows' => 30, // The total number of filtered posts (integer)
+  'total_rows_unfiltered' => 30, // Total number of unfiltered posts (integer)
+  'total_pages' => 5 // The total number of pages (float)
 ];
 ```
 
@@ -10840,7 +11002,7 @@ Note that this snippet by itself does not accomplish anything useful. This examp
 - [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
 - [How to use a different post per page on the first page](https://facetwp.com/how-to-use-a-different-post-per-page-on-the-first-page/)
 
-                    Last updated: July 3, 2024
+                    Last updated: September 1, 2026
 
 ---
 
@@ -13691,19 +13853,19 @@ For example, selecting “Cake” in the Recipes demo’s “Categories” facet
 ?_recipe_categories=cake
 ```
 
-Even [Pager facets](/help-center/facets/facet-types/pager/) and [Sort facets](/help-center/facets/facet-types/sort/) append their current selection to the URL. For example, this is page 2 of a listing:
-
-```
-?_paged=2
-```
-
-And this is the URL after sorting by “Title a-z” with a Sort facet with the name “sortby”:
+Even [Sort facets](/help-center/facets/facet-types/sort/) and [Pager facets](/help-center/facets/facet-types/pager/) append their current selection to the URL. For example, this is the URL after sorting by “Title a-z” with a Sort facet with the name “sortby”:
 
 ```
 ?_sortby=title_a_z
 ```
 
-The only exception is the “load more” pager type of the Pager facet, which [intentionally does not update its URL variables](/help-center/facets/facet-types/pager/#the-load-more-button-and-url-vars).
+And this is page 2 of a listing:
+
+```
+?_paged=2
+```
+
+The only exception is the “Load more” type Pager facet, which [intentionally does not update its URL variables](/help-center/facets/facet-types/pager/#the-load-more-button-and-url-variables).
 
 ### Multiple facets used
 
@@ -14580,7 +14742,7 @@ FWP.loadFromHash(); // Populates facet data from URL data (happens on page load)
 - [Using the Listing Builder](https://facetwp.com/help-center/listing-templates/listing-builder/)
 - [How to pre-filter Listing Builder listing queries with dynamic URL tags](https://facetwp.com/how-to-pre-filter-listing-builder-queries-with-dynamic-url-tags/)
 
-                    Last updated: July 28, 2026
+                    Last updated: August 13, 2026
 
 ---
 

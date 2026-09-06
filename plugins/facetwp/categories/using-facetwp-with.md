@@ -7416,13 +7416,70 @@ Keep in mind that when FacetWP indexes a post, it determines that post’s langu
 
 If you are using (ACF) custom fields as data source for your facet, make sure that those fields are set to be translatable, and [are translated for each post in each language](https://wpml.org/documentation/getting-started-guide/translating-custom-fields/).
 
-Note:As described above, when the Multilingual add-on is active, FacetWP expects posts to have a language. If you have facets on a listing with posts that have **no language** set, filtering will lead to no results. Depending on your setup, you may be able to solve this [by preventing FacetWP from from using the current language when filtering](#fix-issues-with-filtering-posts-with-no-language-set).
+Note:As described above, when the Multilingual add-on is active, FacetWP expects posts to have a language. If you have facets on a listing with posts that have **no language** set, filtering will lead to no results. Depending on your setup, you may be able to solve this [by preventing FacetWP from using the current language when filtering](#fix-issues-with-filtering-posts-with-no-language-set).
+
+### Translating strings when using WPML
+
+To understand how string translation works when using WPML, it is important to distinguish two types of strings: **static strings** and **dynamic strings**. When using WPML, both of them can be handled in the [WPML String Translation add-on](https://wpml.org/documentation/getting-started-guide/string-translation/).
+
+#### Translate static strings with WPML
+
+**Static** strings are the strings that appear in plugin/theme code surrounded by 
+```
+__()
+```
+
+, and have a “language domain”. For example: 
+```
+__( 'No results', 'fwp-front' )
+```
+
+. FacetWP uses two language domains: 
+```
+fwp
+```
+
+ for internal/admin strings, and 
+```
+fwp-front
+```
+
+ for front-end strings.
+
+To translate these kinds of strings, the recommended way is to use the WPML String Translation add-on, and let it scan for strings in FacetWP.
+
+Theoretically, you could also translate the static strings with the [Loco Translate plugin](https://wordpress.org/plugins/loco-translate/), which uses the .po/.mo files where plugin/theme translations normally live.
+
+Alternatively, or additionally, if you prefer to translate (certain) static strings in code, you can also use the 
+```
+gettext_{$domain}
+```
+
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/), as shown in [this example](/help-center/facets/facet-types/autocomplete/#translate-the-ui-texts).
+
+#### Translate dynamic strings with WPML
+
+**Dynamic** strings come from plugin/theme settings and are stored in the database. An example would be a facet’s “Default label” (e.g. “Any”), as set in, for example, a [Dropdown facet’s settings](/help-center/facets/facet-types/dropdown/#default-label). For these kinds of strings to appear in the WPML String Translation UI, in WPML > String Translation, they need to be registered with WPML’s 
+```
+wpml_register_single_string()
+```
+
+ function.
+
+At the time of writing, only a small selection of FacetWP’s dynamic strings are registered this way in the Multilingual add-on. We intend to add them all in a future update. This does not mean that the missing ones cannot be translated. [All of FacetWP’s dynamic strings](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/#translatable-strings) can be translated [with the facetwp_i18n hook](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/).
+
+If you want specific missing strings to appear in the WPML String Translation UI right now, you could register them yourself with [the wpml_register_single_string function](https://wpml.org/wpml-hook/wpml_register_single_string/), which needs to run on the 
+```
+admin_init
+```
+
+ hook, just like the Multilingual addon does itself.
 
 ### Solving issues with WPML
 
 If you encounter any issues with WPML, like posts, terms or other data not appearing, make sure your WordPress install has enough memory. WPML’s [minimum requirements are 128M, and 256M is recommended](https://wpml.org/home/minimum-requirements/).
 
-In our performance tuturial you can read [how to give WordPress more memory](/how-to-make-your-website-load-faster/#set-wordpress-and-server-memory-limits).
+In our performance tutorial, you can read [how to give WordPress more memory](/how-to-make-your-website-load-faster/#set-wordpress-and-server-memory-limits).
 
 You can see how much memory is currently set by going to WPML > Support. In the WordPress section, you’ll see what is set as WordPress’ memory limit. This has to be lower or equal to what is available on the server, which you can see in the PHP section under “Memory limit”.
 
@@ -7459,6 +7516,61 @@ WP_Query
 
 The solution for now is to use unique slugs across translations.
 
+### Translating strings when using Polylang
+
+To understand how string translation works when using Polylang, it is important to distinguish two types of strings: **static strings** and **dynamic strings**. Both are handled differently by Polylang and FacetWP:
+
+#### Translate static strings with Polylang
+
+**Static** strings are the strings that appear in plugin/theme code surrounded by 
+```
+__()
+```
+
+, and have a “language domain”. For example: 
+```
+__( 'No results', 'fwp-front' )
+```
+
+. FacetWP uses two language domains: 
+```
+fwp
+```
+
+ for internal/admin strings, and 
+```
+fwp-front
+```
+
+ for front-end strings.
+
+Polylang **does not handle static string translation**. Static strings will **not** appear in Polylang’s Languages > Translations UI. To translate these kinds of strings, you need to use the .po/.mo language files of the theme/plugin. In practice, the best way to handle this is to install the [Loco Translate plugin](https://wordpress.org/plugins/loco-translate/). See [this Polylang documentation page](https://polylang.pro/loco-translate-the-right-complement-to-polylang/) for more info on how to use Loco Translate.
+
+Alternatively, or additionally, if you prefer to translate (certain) static strings in code, you can also use the 
+```
+gettext_{$domain}
+```
+
+ [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/), as shown in [this example](/help-center/facets/facet-types/autocomplete/#translate-the-ui-texts).
+
+#### Translate dynamic strings with Polylang
+
+**Dynamic** strings come from plugin/theme settings and are stored in the database. An example would be a facet’s “Default label” (e.g. “Any”), as set in, for example, a [Dropdown facet’s settings](/help-center/facets/facet-types/dropdown/#default-label). For these kinds of strings to appear in the Polylang UI, in Languages > Translations, they need to be registered with Polylang’s 
+```
+register_strings()
+```
+
+ function.
+
+At the time of writing, only a small selection of FacetWP’s dynamic strings are registered this way in the Multilingual add-on. We intend to add them all in a future update. This does not mean that the missing ones cannot be translated. [All of FacetWP’s dynamic strings](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/#translatable-strings) can be translated [with the facetwp_i18n hook](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/).
+
+If you want specific missing strings to appear in the Polylang UI right now, you could register them yourself with [the register_strings() function](https://polylang.pro/documentation/support/developers/function-reference/#pll_register_string), which needs to run on the 
+```
+admin_init
+```
+
+ hook, just like the Multilingual addon does itself.
+
 ## Using WPML or Polylang with SearchWP
 
 If you are using [SearchWP](/help-center/using-facetwp-with/searchwp/) on a multilingual site with WPML or Polylang, make sure to install the appropriate SearchWP integration extension:
@@ -7468,21 +7580,13 @@ If you are using [SearchWP](/help-center/using-facetwp-with/searchwp/) on a mult
 
 These extensions will limit search results to the active language of the page. Without them, there will be a disconnect between the facets, their counts and the post listing.
 
-## Translate UI strings and facet labels with the facetwp_i18n filter hook
+## Translate dynamic strings and facet labels with the facetwp_i18n filter hook
 
-Generally, text strings that appear in the UI of your site and in FacetWP will be translatable using 
-```
-__()
-```
+In the above sections on translating strings [in WPML](#translating-strings-when-using-wpml) and [in Polylang](#translating-strings-when-using-polylang), you can read about the difference between “static” and “dynamic” strings, and how to translate them in each situation.
 
- or 
-```
-_e()
-```
+Dynamic strings come from plugin/theme settings and are stored in the database. An example would be a facet’s “Default label” (e.g. “Any”), as set in, for example, a [Dropdown facet’s settings](/help-center/facets/facet-types/dropdown/#default-label).
 
-. You’d use your translation plugin, or a WordPress [gettext filter](https://developer.wordpress.org/reference/hooks/gettext/) (see [this example](/help-center/facets/facet-types/autocomplete/#translate-the-ui-texts)).
-
-However, some of the UI strings that appear in various [facet types](/help-center/facets/facet-types/) are *dynamic*, “in-database” strings, which means that WPML or Polylang cannot see them. Fortunately, there is a way to translate these strings: [with the facetwp_i18n filter hook](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/).
+WPML and Polylang both have a mechanism to register and translate these dynamic strings in their UI, as described above. Some of FacetWP’s dynamic strings are registered and can be translated that way, but (at the time of writing) not all of them. Fortunately, FacetWP has its own hook that allows you to translate all of them: [the facetwp_i18n filter hook](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/).
 
 This filter hook can also be used to [translate facet labels](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/#translate-facet-labels). Note that facet labels [are something different than facet names](https://facetwp.com/help-center/facets/#the-facet-label). Facet labels appear as facet heading in the [Mobile Flyout](/help-center/add-on-features-and-extras/mobile-flyout/#facet-headings-labels) and as label in the [User Selections facet](/help-center/facets/facet-types/user-selections/)). Also don’t confuse facet labels or names with facet choices:
 
@@ -7628,7 +7732,7 @@ Note that the “Parent term” setting is only available in [Checkboxes](/help
 - [The Schedule Indexer add-on](https://facetwp.com/help-center/add-on-features-and-extras/schedule-indexer/)
 - [Using FacetWP with Weglot](https://facetwp.com/help-center/using-facetwp-with/weglot/)
 
-                Last updated: August 6, 2026
+                Last updated: September 3, 2026
 
 ---
 

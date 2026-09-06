@@ -4143,10 +4143,12 @@ Basic – the post’s range is inside the user-selected range:
 
 Enclose – the post’s range surrounds the user-selected range:
 
-Intersect – the post’s range intersects at least partially with the the user-selected range: |
+Intersect – the post’s range intersects at least partially with the the user-selected range:
+
+Note: See the section below for a description of the comparison if only one of two date fields has a value entered. |
 | Fields to show | The date input fields to show in the facet:
 
-Start + End Dates– When using only one Data source: filter posts with a date between (or on) these two entered dates.– When the Other data source setting is in use: filter posts with a date range between, or overlapping/intersecting with these two entered dates (depending on the Compare type set).
+Start + End Dates– When using only one Data source: filter posts with a date between (or on) these two entered dates.– When the Other data source setting is in use: filter posts with a date range between, or overlapping/intersecting with these two entered dates (depending on the Compare type set). – See the section below for a description of the comparison if only one of two date fields has a value entered.
 
 Exact DateFilter posts with a date that is exactly the entered date.
 Start DateFilter posts with a date after (or on) the entered date.
@@ -4897,7 +4899,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [How to disable facet auto-refresh and add an apply button](https://facetwp.com/how-to-disable-facet-auto-refresh-and-add-an-apply-button/)
 - [The User Selections facet type](https://facetwp.com/help-center/facets/facet-types/user-selections/)
 
-                    Last updated: August 20, 2026
+                    Last updated: September 1, 2026
 
 ---
 
@@ -5254,7 +5256,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Category Order and Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/category-order-and-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: July 30, 2026
+                    Last updated: September 3, 2026
 
 ---
 
@@ -19924,9 +19926,16 @@ Basic – the post’s range is inside the user-selected range:
 
 Enclose – the post’s range surrounds the user-selected range:
 
-Intersect – the post’s range intersects at least partially with the the user-selected range: |
-| Fields to show | “Min + Max”, “Exact”, “Min”, or “Max”.
-If you use two data sources, it is recommended to set this setting to “Min + Max”. If you choose “Min” or “Max”, only that value is compared. If you choose “Exact”, the comparison will use that value for both the upper and the lower limit of the user range. |
+Intersect – the post’s range intersects at least partially with the the user-selected range:
+
+Note: See the section below for a description of the comparison if only one of two number fields has a value entered. |
+| Fields to show | Min + Max– When using only one Data source: filter posts with a number between (or on) these two entered numbers.– When the Other data source setting is in use: filter posts with a number range between, or overlapping/intersecting with these two entered numbers (depending on the Compare type set). – See the section below for a description of the comparison if only one of two number fields has a value entered.
+
+ExactFilter posts with a number that is exactly the entered number.
+MinFilter posts with a number larger than (or the same as) the entered number.
+MaxFilter posts with a number smaller than (or the same as) the entered number.
+
+Note: if you use a second data source, it is recommended to set this setting to “Min + Max”. If you choose “Min” or “Max”, only that value is compared. If you choose “Exact”, the comparison will use that value for both the upper and the lower limit of the user range. |
 
 Note: FacetWP expects a raw, **unformatted** number (and automatically converts the value if needed).
 
@@ -20101,7 +20110,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Date Range facet type](https://facetwp.com/help-center/facets/facet-types/date-range/)
 - [The Range List facet type](https://facetwp.com/help-center/facets/facet-types/range-list/)
 
-                    Last updated: August 20, 2026
+                    Last updated: September 1, 2026
 
 ---
 
@@ -20113,7 +20122,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 
 ![](https://facetwp.com/wp-content/uploads/2019/11/facet-type-pager.png)The Pager facet type can be used to add several types of pagination.
 
-It might seem a bit counter-intuitive that pagination can be added as a facet type, but just like any other facet type, a Pager facet can be added by making a new facet in the FacetWP admin interface.
+It might seem a bit counterintuitive that pagination can be added as a facet type, but just like any other facet type, a Pager facet can be added by making a new facet in the FacetWP admin interface.
 
 Go to the Facets tab, click “add new”, choose “Pager” as Facet type, choose a [pager type](#choose-a-pager-type), set its [options](#available-options), and place it on your page [with a shortcode](https://facetwp.com/help-center/facets/#displaying-a-facet).
 
@@ -20205,9 +20214,9 @@ Note: this text is translatable with the facetwp_i18n hook. |
 
 | Name | Description |
 | --- | --- |
-| Load more text | The button text. 
+| Load more text | The “Load more” button text. 
 Note: this text is translatable with the facetwp_i18n hook. |
-| Loading text | The button loading text. 
+| Loading text | The “Load more” button text while new posts are being loaded.
 Note: this text is translatable with the facetwp_i18n hook. |
 
 ### “Per page” pager type
@@ -20217,8 +20226,8 @@ Note: this text is translatable with the facetwp_i18n hook. |
 | Default label | Set the default dropdown label, or leave blank. 
 Note: this label is translatable with the facetwp_i18n hook. |
 | Per page options | A comma-separated list of choices.
-Optionally add a non-numeric choice, for example “Show all”, to be used to show all results.
-Warning:Be very careful with offering your users a “Show all” option. When you have a large number of results, retrieving them all at the same time can be very detrimental to your server. Unless you have a limited number of posts, we do not recommend using this feature.
+Optionally add a non-numeric choice (for example, “Show all”) to be used to show all results.
+Warning:Use a “Show all” option with caution. If you have a large number of results, retrieving them all at the same time can put a heavy load on your server and can make the page unresponsive. Unless you have a limited number of posts, we do not recommend using this feature.
 Note: this “Show all” label text (or the label you give it) is translatable with the facetwp_i18n hook. |
 
 To style the “Per page” dropdown 
@@ -20500,7 +20509,7 @@ If you are concerned about the implications for SEO or accessibility of using th
 
 ## Use or display raw pager data
 
-### Use or display raw pager data with PHP
+### Use, display, or filter raw pager data with PHP
 
 You can use/display raw pager data using PHP within your template files as follows:
 
@@ -20512,15 +20521,22 @@ echo FWP()->facet->pager_args['page'];
 // Display the number of posts per page
 echo FWP()->facet->pager_args['per_page'];
 
-// Display the total number of pages
-echo FWP()->facet->pager_args['total_pages'];
-
 // Display the total number of filtered posts
 echo FWP()->facet->pager_args['total_rows'];
 
 // Display the total number of unfiltered posts
 echo FWP()->facet->pager_args['total_rows_unfiltered'];
+
+// Display the total number of pages
+echo FWP()->facet->pager_args['total_pages'];
 ```
+
+Tip:The above 
+```
+pager_args
+```
+
+ are also filterable/customizable [using the facetwp_pager_args hook](/help-center/developers/hooks/querying-hooks/facetwp_pager_args/).
 
 ### Use or display raw pager data with JavaScript
 
@@ -20533,17 +20549,17 @@ FWP.settings.pager
 // Get the current page number
 FWP.settings.pager.page
 
-// Get the posts per page
+// Get the number of posts per page
 FWP.settings.pager.per_page
-
-// Get the total number of pages
-FWP.settings.pager.total_pages
 
 // Get the total number of filtered posts
 FWP.settings.pager.total_rows
 
 // Get the total number of unfiltered posts
 FWP.settings.pager.total_rows_unfiltered
+
+// Get the total number of pages
+FWP.settings.pager.total_pages
 ```
 
 ## Programmatically paginate with JavaScript
@@ -20627,7 +20643,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 <?php }, 100);
 ```
 
-## The load more button and URL vars
+## The load more button and URL variables
 
 The [“load more” pager type](#load-more-pager-type) of the Pager facet does not update URL vars. This means that if a user clicks the Back button to go back to the listing, the position in the pagination and the previously loaded items are lost.
 
@@ -20663,7 +20679,7 @@ target="_blank"
 - [How to use get_query_var(‘paged’) with FacetWP](https://facetwp.com/how-to-use-get_query_varpaged-with-facetwp/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 
-                    Last updated: August 12, 2026
+                    Last updated: September 1, 2026
 
 ---
 
