@@ -2179,3 +2179,325 @@ Simply drop the block or widget called “LaunchFlows Remove Product” into any
 
 ---
 
+## Solo Checkout
+
+**Source:** [https://launchflows.com/documentation/solo-checkout/](https://launchflows.com/documentation/solo-checkout/)
+
+### What Does This Do?
+
+Solo Checkout is an option you can apply on a per-product basis, or globally to all products.
+
+This automatically empties the WooCommerce cart before the new product (or products) are added, ensuring that only the new product will be in the cart ready to checkout.
+
+### When To Use?
+
+Use this whenever you want to remove any previous products that have been added by a buyer from either browsing or earlier steps in your sales funnel.
+
+This is typically used when you have an upsell product being offered that should replace the main product previously added to cart by the buyer.
+
+### How To Use?
+
+Most people use this on a per product basis for maximum control, but if you wish to create a super-efficient sales funnel process for low cost items, especially when using our auto click checkout feature, then use the global option instead of per-product.
+
+### Where To Setup?
+
+Either go into the LaunchFlows global settings and choose “Solo Checkout For All Product” checkbox
+
+![solo-checkout-global](https://launchflows.com/wp-content/uploads/2022/03/solo-checkout-global.jpg)
+
+Or, go into any individual Product Data tab, under LaunchFlows and check the box for “Solo Checkout”.
+
+![solo-checkout-per-product](https://launchflows.com/wp-content/uploads/2022/03/solo-checkout-per-product.png)
+
+### Resources
+
+[How To Use Solo Checkout For Bump Or Upsell](https://launchflows.com/how-to-use-the-solo-checkout-feature-of-launchflows-to-bump-or-upsell)
+
+---
+
+## Thank You & Next Step
+
+**Source:** [https://launchflows.com/documentation/thank-you-next-step/](https://launchflows.com/documentation/thank-you-next-step/)
+
+### Global Thank You Or Custom Thank You Page?
+
+LaunchFlows allows you to set one page as your Global Thank You or you can have an unlimited number of sales funnel specific thank you pages.
+
+If you elect to use a Global Thank You Page, you have the benefit of using our dynamic “per product” details output for any product purchased (see below). This eliminates a ton of setup time, but can also be used in conjunction with custom thank you pages. You don’t have to use one or the other.
+
+Either way, be sure to setup your Global Thank You Page by using the setup link button in the LaunchFlows main dashboard as shown below.
+
+![launchflows-set-global-thank-you-page](https://launchflows.com/wp-content/uploads/2020/12/launchflows-set-global-thank-you-page.png)
+
+### What are Thank You & Next Step?
+
+These components increase buyer satisfaction following any checkout. They provide information about what was just purchased as well as guidance on where to obtain the purchased content, goods or services
+
+![](https://launchflows.com/wp-content/uploads/2020/12/thank-you-output-1.png)
+
+### When to use
+
+Use on any page or post, a LaunchFlows checkout template is not required.
+
+You may also daisy-chain multiple components together to create powerful sales funnels with conditional outcomes based on what was just purchased.
+
+*For example:*
+
+Checkout **⇛** Upsell Offer (Course) **⇛** Thank You + Next Step Link **⇛** Course Start Page
+
+### Why to use
+
+1. To display a personalized message following any purchase
+2. To show the details of the buyer’s last order
+3. To dynamically link to the product(s) that were just purchased
+
+### Setup: Thank You
+
+1. Select a new or existing page or post. You do **not** need to select the LaunchFlows template.
+2. Add The **LaunchFlows Thank You** component via shortcode, widget or block.
+3. Select the widget display and style options such as details, divider, image, item, price, order total![](https://launchflows.com/wp-content/uploads/2020/12/thankyou-widget-1.png)
+
+![](https://launchflows.com/wp-content/uploads/2020/12/thank-you-widget-setup-1.png)
+
+### Setup: Next Step
+
+1. Choose a destination page/post for the “Select Next Step Link” option within the Product data setup area for any product offered for sale.
+2. Copy the  shortcode
+3. Create a button or clickable element in your Thank You Page, then choose the Dynamic link / Site / Shortcode option and paste the shortcut.
+4. ![Next Step Link](https://launchflows.com/wp-content/uploads/2020/12/next-step-link.png)
+
+![](https://launchflows.com/wp-content/uploads/2020/12/next-step-dynamic-link-shortcode-1.png)
+
+![](https://launchflows.com/wp-content/uploads/2020/12/next-step-setup-link-1.png)
+
+### Shortcodes
+
+**Thank You Fields**
+
+(**only [lf-thank-you] is required to output all fields.*)
+
+```
+[lf-thank-you details=no imagesize=100 image=no name=no quantity=no price=no desc=no shortdesc=no total=no dividers=no note=no ]
+```
+
+Next Step Link
+
+```
+[lf-next-step-link]
+```
+
+### Watch Video
+
+---
+
+## Conditional Blocks Plugin
+
+**Source:** [https://launchflows.com/documentation/conditional-blocks-plugin/](https://launchflows.com/documentation/conditional-blocks-plugin/)
+
+### What Is It?
+
+The [Conditional Blocks Plugin](https://conditionalblocks.com) allows you to declare any number of rules for when and where a LaunchFlows sales component should appear, based upon dynamic conditions.
+
+For example, based on whether certain [products are in the cart](https://launchflows.com/dynamic-offers-for-woocommerce-order-bumps-with-launchflows/) or how much the [total order value](https://launchflows.com/dynamic-offers-for-woocommerce-based-on-cart-total) may be.
+
+---
+
+## Teams For WooCommerce Memberships
+
+**Source:** [https://launchflows.com/documentation/teams-for-woocommerce-memberships/](https://launchflows.com/documentation/teams-for-woocommerce-memberships/)
+
+The Teams For WooCommerce Memberships plugin is a powerful way to sell multiple membership “seats” to a group of people with one transaction.
+
+In order to create a team, the plugin requires the team owner to enter the new team name at the time of adding product to the cart.
+
+If you want to sell a Teams Product in your sales funnel, use the following techniques for Primary Product or Upsell.
+
+### Create The Team Product
+
+Create the product using the admin Products/Add New tab, and be sure to configure LaunchFlows in the Product Data / LaunchFlows tab for the Checkout Page where you want it to be purchased.
+
+It is also recommended that you configure the product with the “Instant Sales Page” option enabled, so that you hide all distractions from the regular product page layout, such as upsells or recommended products.
+
+![](https://launchflows.com/wp-content/uploads/2020/12/teams-product-options.png)
+
+If you intend to offer the Teams Product as your Primary Offer, simply use the product page itself as the destination for your Sales Page call to action.
+
+This will allow a buyer to input the name of their team as well as selecting the quantity of seats and if the owner uses one of the seats.
+
+### For Upsell Offers
+
+![](https://launchflows.com/wp-content/uploads/2020/12/teams-hybrid-page-1.png)
+
+If you wish to offer the team product as an Upsell Offer, the easiest way is to create a “hybrid” page to hold the Team Product as well as a Call To Action Headline and the LaunchFlows Upsell Offer Widget.
+
+Simple create a new page, and preferably with Elementor, add a Headline widget to create and style your call to action (ie: “But Wait…Before You Go!”).
+
+Next, with Elementor Pro, use the Pages Widget to add the Single Product Page you just created for the Teams Product. If you don’t have Elementor Pro, simply use the following syntax with the ID of the Teams Product you just created.
+
+```
+[product_page id="xxx"]
+```
+
+Finally, add the LaunchFlows Upsell Widget below the product page widget, and configure it with the ID of the page where you would like to send visitors if they decline your offer, as well as any tags you would like to assign if the Decline Offer link is clicked.
+
+You should then slide the switches to hide all the other components of the LaunchFlows Upsell Widget except for the Decline Offer link.
+
+**For Example:** If you wish to send visitors who decline to another offer, such as a Downsell, you would use the page ID of that offer.
+
+![](https://launchflows.com/wp-content/uploads/2020/12/teams-hybrid-page-setup.png)
+
+### ShortCode Method
+
+Although you have far greater control over the layout with Elementor, you may also create a pleasing result in the default WordPress editor by using Shortcodes.
+
+Change the parameters below as required (yes/no) to hide the various components, adjust the text, etc.
+
+**Upsell Product** (**only product is required*)
+
+```
+[lf-upsell product="1234" next="5678" accept="Yes, I Want It!" accept_tags="123,456" decline="No Thanks..." image="yes" title="yes" price="yes"]
+```
+
+### Video
+
+[View Popup Video](https://www.youtube.com/watch?v=2EBRPgb-htc)
+
+---
+
+## WP Fusion
+
+**Source:** [https://launchflows.com/documentation/wp-fusion/](https://launchflows.com/documentation/wp-fusion/)
+
+[WP Fusion](https://wpfusion.com) fully supports LaunchFlows for adding new customers to your CRM and tagging them based on Sales Funnel choices viewed, clicked, or purchased.
+
+Because LaunchFlows uses WooCommerce for checkout, all of [WP Fusion’s WooCommerce features](https://wpfusion.com/documentation/ecommerce/woocommerce/) work seamlessly with LaunchFlows.
+
+You can also use [WP Fusion’s Abandoned Cart addon](https://wpfusion.com/documentation/abandoned-cart-tracking/abandoned-cart-overview/) to track and recover abandoned carts in LaunchFlows.
+
+### Upsells
+
+WP Fusion allows you to apply tags in your CRM when an upsell is either accepted or rejected by a customer.
+
+These settings can be found in the **LaunchFlows Upsell Widget** while editing any offer.
+
+![](https://launchflows.com/wp-content/uploads/2020/12/wpfusion-upsell.png)
+
+### Custom Fields
+
+WP Fusion will automatically detect any custom fields added to the LaunchFlows checkout. These will appear under the WooCommerce header in Settings » WP Fusion » Contact Fields. You can enable any LaunchFlows custom field for sync to a custom field in your CRM or add additional custom fields with the free [Checkout Field Editor](https://wordpress.org/plugins/woo-checkout-field-editor-pro/) plugin.
+
+### Apply Tags When Viewing
+
+WP Fusion will automatically apply tags whenever a logged-in visitor views a specific Section or Column containing the **LaunchFlows Apply Tags Widget** versus an entire page or post.
+
+This is most useful with a **LaunchFlows Dynamic Backup Offer**, where the primary offer product is replaced if it has already been purchased or is already in the cart.
+
+In the example below, LaunchFlows will display either the Upsell product or the Upsell Backup product, but not both. WP Fusion will then apply the tag for whichever product was actually viewed.
+
+![](https://launchflows.com/wp-content/uploads/2020/12/wpfusion-apply-tags.png)
+
+### Remove Tags
+
+Similarly, WP Fusion will automatically remove tags whenever a logged-in visitor views a Section or Column containing the **LaunchFlows Remove Tags Widget** versus an entire page or post.
+
+In the example below, LaunchFlows will display either the Upsell Product or the Upsell Backup Product, but not both. WP Fusion will then remove the tag for whichever was viewed.
+
+![](https://launchflows.com/wp-content/uploads/2020/12/wpfusion-remove-tags-setup.png)
+
+### Debug Mode
+
+LaunchFlows provides a convenient way to verify which tags will be applied or removed by WP Fusion. Slide the Debug Mode switch of either Widget to “on” and a convenient notice will be displayed on the front end of your site.
+
+![](https://launchflows.com/wp-content/uploads/2020/12/wpfusion-debug-mode-setup.png)
+
+****
+
+---
+
+## WPForms
+
+**Source:** [https://launchflows.com/documentation/wpforms/](https://launchflows.com/documentation/wpforms/)
+
+### Why Use WPForms
+
+Although it is recommended to use our [Instant Registration](https://launchflows.com/documentation/instant-registration/) method for onboarding most new users to your Sales Funnel, there may be some cases where the extra features of WPForms (or other Form plugins) can provide a benefit.
+
+**For example:**
+
+- Adding Extra Fields During Registration
+- Automatically adding user-provided data from the URL string
+- Integrating with post-registration feeds such as WPFusion or your favorite CRM
+- Greater control over redirection after registration
+
+### How To Setup
+
+Using the WPForms “Pro” plugin, one may create a User Registration Form by adding the User Registration feature from the “Add Ons” section of WPForms in your admin dashboard.
+
+Full details for configuring the setup can be viewed [here](https://wpforms.com/docs/how-to-install-and-use-user-registration-addon-with-wpforms/).
+
+### Specific Tips
+
+When creating a user registration form, we recommend the following:
+
+- Remove all fields other than Email, First Name, Last Name
+- Add the [Auto Login Snippet](https://wpforms.com/developers/automatically-log-in-users-after-registration/) to ensure that users are not only registered, but immediately logged-in
+- Configure username as “none” so that it sets user’s email as username
+- Configure email notice of login credentials to be sent to user
+- Redirect after registration to the WooCommerce “My Account” page or to a custom sales page for instant upsell offer
+
+### View Popup Video
+
+---
+
+## Force Display Of Payment Fields
+
+**Source:** [https://launchflows.com/documentation/force-display-payment-fields/](https://launchflows.com/documentation/force-display-payment-fields/)
+
+### Description
+
+Force the display of payment methods in a zero cost checkout layout using the Payment Fields Component
+
+### ShortCode
+
+[lf-payment-methods]
+
+### Use Case
+
+Useful if you have a zero cost checkout but wish to force the display of WooCommerce payment methods such as Stripe, Paypal, etc., where otherwise only the checkout button would appear.
+
+---
+
+## Target Triggers (lf-target)
+
+**Source:** [https://launchflows.com/documentation/target-triggers-lf-target/](https://launchflows.com/documentation/target-triggers-lf-target/)
+
+Identify Unique #Id Of Target Tab#1
+
+![](https://launchflows.com/wp-content/uploads/2020/03/lf-target-identify-uniqueid@2x-1.png)
+
+Setup Button To Address Unique #Id Of Target Tab#1a
+
+![](https://launchflows.com/wp-content/uploads/2020/03/lf-target@2x-1.png)
+
+Setup Advanced Tab CSS ID To Use One Of The Five (5) Available “Targets” Per Layout (lf-target1, lf-target2, lf-target3, lf-target4, lf-target5)
+
+![](https://launchflows.com/wp-content/uploads/2020/03/lf-target-advanced@2x-1.png)
+
+---
+
+## Discount Coupons
+
+**Source:** [https://launchflows.com/documentation/apply-woocommerce-coupon-discount/](https://launchflows.com/documentation/apply-woocommerce-coupon-discount/)
+
+?lfcoupon=
+
+Add this string to the end of any checkout page url or add-to-cart product string to apply the relevant coupon discount. ***Note** change of prefix from “?” to “&” if it is not the primary url parameter.
+
+### Example
+
+https://yourdomain.com/custom-checkout/?lfcoupon=xyzcoupon  (For Checkout Page)
+
+https://yourdomain.com/custom-checkout/?add-to-cart=1234&lfcoupon=xyzcoupon (For Any Product Link)
+
+---
+
