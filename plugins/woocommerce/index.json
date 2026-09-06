@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-08-30T18:54:57.534Z",
-  "total_pages": 3806,
+  "last_scraped": "2026-09-06T18:54:25.192Z",
+  "total_pages": 3817,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,60 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3806,
+      "page_count": 3817,
       "pages": [
+        {
+          "title": "payabl. Checkout",
+          "url": "https://woocommerce.com/document/payabl-checkout/"
+        },
+        {
+          "title": "Customizing the customer email-verification prompt",
+          "url": "https://woocommerce.com/document/customizing-the-customer-email-verification-prompt/"
+        },
+        {
+          "title": "Customizing the Cart Page",
+          "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-the-cart-page/"
+        },
+        {
+          "title": "Performance-Based Direct Commission with Affiliate Levels",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/performance-based-affiliate-commission/"
+        },
+        {
+          "title": "Early fraud warnings",
+          "url": "https://woocommerce.com/document/woopayments/fraud-and-disputes/early-fraud-warnings/"
+        },
+        {
+          "title": "Customize product Weight and Dimensions rows",
+          "url": "https://woocommerce.com/document/customize-product-weight-dimensions-rows/"
+        },
+        {
+          "title": "Adding Shipping Dimensions to Products",
+          "url": "https://woocommerce.com/document/adding-dimensions-and-weights-to-products-for-shipping/adding-shipping-dimensions-to-products/"
+        },
+        {
+          "title": "The Complete Guide to Product Personalization in WooCommerce (2026)",
+          "url": "https://woocommerce.com/document/the-complete-guide-to-product-personalization-in-woocommerce-2026/"
+        },
+        {
+          "title": "Biometric Passkey Login",
+          "url": "https://woocommerce.com/document/biometric-passkey-login/"
+        },
+        {
+          "title": "EU AI Label App",
+          "url": "https://woocommerce.com/document/eu-ai-label-app/"
+        },
+        {
+          "title": "Customer Order Withdrawal",
+          "url": "https://woocommerce.com/document/customer-order-withdrawal/"
+        },
+        {
+          "title": "Order Workflows",
+          "url": "https://woocommerce.com/document/order-workflows/"
+        },
+        {
+          "title": "How Real-Time Product Previews Increase WooCommerce Conversions",
+          "url": "https://woocommerce.com/document/how-real-time-product-previews-increase-woocommerce-conversions/"
+        },
         {
           "title": "Affiliate Reports and CSV Exports",
           "url": "https://woocommerce.com/document/affiliate-and-referral/affiliate-reports-and-exports/"
@@ -50,12 +102,12 @@
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-create-and-share-referral-links/"
         },
         {
-          "title": "Affiliate Levels with Auto Upgrades",
-          "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-affiliate-levels/"
-        },
-        {
           "title": "How to Approve and Manage Your Affiliates",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-approve-and-manage-affiliates/"
+        },
+        {
+          "title": "Mix and Match Bundle Builder with Tiered Discounts",
+          "url": "https://woocommerce.com/document/mix-match-bundle-builder/"
         },
         {
           "title": "Affiliate and Referral Program: FAQ",
@@ -1234,10 +1286,6 @@
           "url": "https://woocommerce.com/document/how-variation-quick-cart-carousel-works/"
         },
         {
-          "title": "Customizing the Cart Page",
-          "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-the-cart-page/"
-        },
-        {
           "title": "Customizing the Checkout Page",
           "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-the-checkout-page/"
         },
@@ -1786,7 +1834,7 @@
           "url": "https://woocommerce.com/document/quick-product-variations-stock-manager/"
         },
         {
-          "title": "Adjust ‘Read More’ button text for sold-out products",
+          "title": "Change ‘Read More’ button text to ‘Sold Out’ for out of stock products",
           "url": "https://woocommerce.com/document/adjust-read-more-button-text-for-sold-out-products/"
         },
         {
@@ -5726,7 +5774,7 @@
           "url": "https://woocommerce.com/document/google-for-woocommerce/get-started/product-feed-information-and-free-listings/"
         },
         {
-          "title": "Setup and Configuration",
+          "title": "Setup and configuration",
           "url": "https://woocommerce.com/document/google-for-woocommerce/get-started/setup-and-configuration/"
         },
         {
@@ -6162,12 +6210,12 @@
           "url": "https://woocommerce.com/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes/"
         },
         {
-          "title": "Troubleshooting shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/troubleshooting-shortcodes/"
+          "title": "Testing orders",
+          "url": "https://woocommerce.com/document/managing-orders/testing-orders/"
         },
         {
-          "title": "Product Category Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/product-category/"
+          "title": "Troubleshooting Orders",
+          "url": "https://woocommerce.com/document/managing-orders/troubleshooting-orders/"
         },
         {
           "title": "Feature, Filter, and Sort Products",
@@ -8355,7 +8403,7 @@
         },
         {
           "title": "PayPal POS for WooCommerce",
-          "url": "https://woocommerce.com/document/paypal-zettle-pos-for-woocommerce/"
+          "url": "https://woocommerce.com/document/paypal-pos-for-woocommerce/"
         },
         {
           "title": "Mix and Match Version 2.0.0 – What’s New",
@@ -10242,12 +10290,12 @@
           "url": "https://woocommerce.com/document/back-in-stock-notifications/feedback-and-suggestions/"
         },
         {
-          "title": "Customer Support for WooCommerce",
-          "url": "https://woocommerce.com/document/customer-support-for-woocommerce/"
+          "title": "Live Sales Notification for WooCommerce",
+          "url": "https://woocommerce.com/document/live-sales-notification-for-woocommerce/"
         },
         {
-          "title": "How to set specific commission rates for product/product category",
-          "url": "https://woocommerce.com/document/affiliate-for-woocommerce/how-to-set-different-affiliate-commission-rates-for-product-or-product-category/"
+          "title": "WooCommerce SEO by WordLift",
+          "url": "https://woocommerce.com/document/e-commerce-seo-by-wordlift/"
         },
         {
           "title": "Merge Orders",
@@ -12482,12 +12530,12 @@
           "url": "https://woocommerce.com/document/subscriptions-gifting/"
         },
         {
-          "title": "Google Product Feed – Product Review Feeds",
-          "url": "https://woocommerce.com/document/google-product-feed-product-review-feeds/"
+          "title": "[woocommerce_product_filter_products]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_products/"
         },
         {
-          "title": "Mailchimp for WooCommerce Memberships",
-          "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
+          "title": "[woocommerce_product_filter_tag]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_tag/"
         },
         {
           "title": "[woocommerce_product_filter_category]",
@@ -14660,10 +14708,6 @@
         {
           "title": "PayLeap",
           "url": "https://woocommerce.com/document/payleap-payment-gateway/"
-        },
-        {
-          "title": "WooCommerce Brands",
-          "url": "https://woocommerce.com/document/woocommerce-brands/"
         },
         {
           "title": "WooCommerce Twilio SMS Notifications",
