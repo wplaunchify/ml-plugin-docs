@@ -2,8 +2,8 @@
   "plugin_slug": "fooevents-express-check-in",
   "plugin_name": "FooEvents Express Check-in",
   "documentation_url": "https://help.fooevents.com/docs/",
-  "last_scraped": "2026-08-30T12:09:54.114Z",
-  "total_pages": 326,
+  "last_scraped": "2026-09-06T12:11:01.494Z",
+  "total_pages": 327,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -596,7 +596,7 @@
       "slug": "topics",
       "url": "https://help.fooevents.com/docs/topics/",
       "file": "categories/topics.md",
-      "page_count": 182,
+      "page_count": 183,
       "pages": [
         {
           "title": "FooEvents Help Center",
@@ -885,6 +885,10 @@
         {
           "title": "FooEvents Help Center",
           "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/"
         },
         {
           "title": "FooEvents Help Center",
