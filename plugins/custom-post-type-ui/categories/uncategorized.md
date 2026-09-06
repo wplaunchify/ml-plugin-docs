@@ -299,6 +299,12 @@ Individual sites can have their index rebuilt within the network index by visiti
 
 Available for purchase at [WP Search with Algolia Pro on Pluginize.com](https://pluginize.com/plugins/wp-search-with-algolia-pro/)
 
+## 1.7.1 – 2026-09-02
+
+- Fixed: Settings, Autocomplete, Search Page, License, WooCommerce, SEO, and Meta Fields admin notices no longer appear on unrelated wp-admin screens.
+- Fixed: Network settings notices now also display on network admin screens.
+- Fixed: WooCommerce settings push no longer warns when the page query argument is missing.
+
 ## 1.7.0 – 2026-08-11
 
 - Updated: Minimum required PHP version is now 8.0.
