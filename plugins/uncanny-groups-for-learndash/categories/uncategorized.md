@@ -4,6 +4,587 @@
 
 ---
 
+## Tin Canny xAPI/SCORM for WordPress – Overview
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/tin-canny-xapi-scorm-for-wordpress-overview/](https://www.uncannyowl.com/knowledge-base/tin-canny-xapi-scorm-for-wordpress-overview/)
+
+The Tin Canny for WordPress plugin adds new xAPI/SCORM capabilities to WordPress sites. A unique feature of the plugin is the Tin Can Report that helps you track the progress and completion of Articulate Storyline/Rise, Adobe Captivate, and iSpring modules published to Tin Can/xAPI or SCORM, as well as H5P content*. The custom plugin also adds an Uploader to the WordPress Editor.
+
+Here are the key features of the plugin:
+
+1. [Tin Canny Elearning Content Uploader](https://www.uncannyowl.com/knowledge-base/storyline-captivate-uploader/)
+2. Tin Can/xAPI reports
+3. Storage of Tin Can/xAPI data in a local LRS inside WordPress (for [supported content types](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/))
+4. Automatic conversion of SCORM statements to Tin Can/xAPI (for [supported content types](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/))
+5. Targeted reports for site administrators
+
+* See [a list of authoring tools and elearning standards supported by Tin Canny](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/)
+
+### Tin Canny Elearning Content Uploader
+
+The Uploader is integrated with the WordPress Classic Editor and the Gutenberg block editor, so you can quickly add a Rise, Storyline, Captivate, or iSpring module to a page, post, or a course, topic or lesson in a WordPress LMS plugin (if you’re using LearnDash, take a look at our [Tin Canny Reporting for LearnDash](https://www.uncannyowl.com/downloads/tin-canny-reporting/) plugin).
+
+### Tin Can Reports
+
+All Tin Can data are displayed in two reports: Tin Can Report and xAPI Quiz Report. All reports are inside WordPress but you can export all table data to CSV or Excel (.xls) files. We support instant sorting, filtering and searching inside JavaScript data tables too.
+
+### Storing Tin Can/xAPI Data in a Local LRS
+
+Up until now, every Tin Can solution developed for WordPress relied on a Learning Record Store (LRS) outside of WordPress. It meant segregating reporting and figuring out how to send Tin Can/xAPI statements externally. Many LRS solutions obfuscated code and prevented customization, so making improvements was impossible. With this plugin we offer the option to have a basic LRS entirely native to WordPress. It captures Tin Can/xAPI statements with little configuration. Just upload Storyline, Captivate, or iSpring zip files, or add H5P modules, and statements are automatically captured right inside your WordPress site.
+
+### Converting SCORM statements to xAPI (Tin Can)
+
+The plugin has been optimized for Tin Can/xAPI, but it also supports Rise, Storyline, Captivate, H5P and iSpring modules published to SCORM 1.2 or SCORM 2004. SCORM statements from these modules are converted to xAPI statements using the official ADL SCORM to xAPI bridge adapter and made available in the Tin Can Report.
+
+### Targeted Reports for Site Administrators
+
+The[Tin Can](https://www.uncannyowl.com/knowledge-base/tin-can-report/) and [xAPI Quiz](https://www.uncannyowl.com/knowledge-base/xapi-quiz-report/) reports will provide administrators insights into the overall performance of their elearning program and activities of their learners. Some of the metrics you’ll be able to see include:
+
+- Tin Can statements by verb, module, user, or almost any other combination you can think of
+- Tin Can statement trends
+- Individual response data from xAPI quiz content
+
+---
+
+## Install the Tin Canny for WordPress Plugin
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/install-the-tin-canny-for-wordpress-plugin/](https://www.uncannyowl.com/knowledge-base/install-the-tin-canny-for-wordpress-plugin/)
+
+### Installation
+
+Installing the plugin can’t be more straightforward. After you purchase and download the plugin, you can simply sign into your WordPress site as an admin and navigate to **Plugins > Add New**. To install the plugin, click**Upload Plugin** to start the process. After installation, you will be directed to the License Activation page to enter your license key and activate the plugin.
+
+### Setup
+
+The plugin has two reports (for Tin Can and xAPI Quiz Report) and a **Settings** tab.
+
+![Tin Canny Settings page](https://www.uncannyowl.com/wp-content/uploads/2025/09/Tin-Can-and-SCORM-settings.png)
+
+There are three optional controls on the Settings page under the heading Tin Can/SCORM:
+
+- Capture Tin Can and SCORM data: Keep the default setting Yes unless you are certain you won’t incorporate H5P, Storyline, Captivate, or iSpring content in any of your courses. If you select No (to not capture Tin Can data), the Tin Can Report tab will be removed and so will the Tin Can activity menu on the User Report. In addition, no Tin Can data will be reported on the Dashboard or Course Report.
+- [Protect SCORM/Tin Can modules:](https://www.uncannyowl.com/knowledge-base/protecting-sharing-content-tin-canny/) This option can prevent modules from being viewed by users who are not signed to your site. You can set protection at a global level (as shown above) and also override the global setting at a lesson or topic level.
+- SCORM Driver Compatibility: Depending on the authoring tool used, you may be required to change the default “Async” SCORM Driver compatibility to “Sync”. For most scenarios, this option will stay on the default “Async” setting.
+
+The Reset Tin Can Data button allows you to clear all existing Tin Can statements in the Tin Can Report. This feature would be helpful if you need to reset test data. Note all historical data will be removed; this action cannot be undone.
+
+---
+
+## Frequently Asked Questions
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-3/](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-3/)
+
+### What are the minimum requirements for running Tin Canny for WordPress?
+
+Tin Canny requires PHP 7.4 or higher. It is a heavier plugin and with large records sets you may require more than 256 MB of memory be allocated to WordPress.
+
+### On the Tin Canny Reporting page, I see a loading icon but nothing loads.
+
+First, turn off debug in **wp-config.php** by changing:
+
+```
+define('WP_DEBUG', true);
+```
+
+To:
+
+```
+define('WP_DEBUG', false);
+```
+
+If the report page still doesn’t load after turning off debug, add the following to wp-config.php:
+
+```
+ini_set('log_errors','On');
+ini_set('display_errors','Off');
+ini_set('error_reporting', E_ALL );
+define('WP_DEBUG', false);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
+```
+
+### Can I track eLearning content hosted on Amazon S3 or other offsite storage?
+
+The LRS installed with the Tin Canny Reporting plugin is local to your WordPress site. It cannot store statements sent from eLearning modules hosted externally or offloaded to another service, including Amazon S3. You need to upload Tin Can modules directly to your WordPresssite and modules must be stored on the WordPress install.
+
+### Why do I see a blank screen where my module should be?
+
+We usually see this happen when SSL is configured incorrectly. If your site is secure, and all of your URLs in the front end begin with https://, make sure that the URLs for the site under **Settings > General** in /wp-admin/ also have https:// at the beginning. If they don’t, the URLs must be corrected.
+
+It can also help to check the javascript console (**View > Developer > Javascript Console** in Chrome) to look for errors.
+
+### Why aren’t statements in the Tin Can report tracked?
+
+There are a number of things that could cause this. No data will be tracked if the site is protected with an .htaccess (sitewide) password or if the user completing activities is not signed in. Anything that globally restricts access in some way or disables the REST API could also prevent proper use of Tin Canny.
+
+If you’re using H5P modules, make sure you don’t have the H5P xAPI plugin installed. It will block communications with our Tin Canny endpoint. Also note that not every H5P module type sends xAPI/Tin Can statements; if you’re unsure, try visiting [https://h5p.org/content-types-and-applications](https://h5p.org/content-types-and-applications), go into the content type you’re using, and click the xAPI Coverage tab at the top. If there’s nothing there, the module may not send statements.
+
+### Why do I see 403 errors?
+
+Similar to the tracking issues above, anything that could disrupt communications with the virtual Tin Canny LRS endpoint that we create can result in 403 errors. If you use Sucuri or another security/firewall plugin, you will need to whitelist the plugin in its settings. Maintenance plugins or anything else that restricts or redirects access on a sitewide basis is also likely to cause problems.
+
+### Does Tin Canny LearnDash Reporting work with all SCORM and xAPI content?
+
+The plugin has been written for and tested extensively with the authoring software listed on [https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/). Although SCORM and xAPI are eLearning standards, different authoring applications do work a little differently in terms of when they send statements and how progress and completion are tracked. Our support is limited to authoring software that we know for certain would work.
+
+### I cloned my site and now users can’t access Tin Canny content. What happened?
+
+This can happen in some situations where .htaccess files are included in a clone.  To restore access to Tin Canny content, follow these steps:
+
+1. Turn the setting *Protect SCORM/Tin Can modules* off
+2. Click *Save Changes*
+3. Turn the setting *Protect SCORM/Tin Can modules* on
+4. Click *Save Changes*
+
+This will regenerate .htaccess files that are configured for the cloned site.
+
+---
+
+## Authoring Tools Supported by Tin Canny
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/authoring-tools-supported-by-tin-canny/](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported-by-tin-canny/)
+
+### Tin Canny Reporting – Version 4.0 and up
+
+Starting with Tin Canny 4.0, we will provide support for **almost all standards-compliant SCORM and xAPI/Tin Can modules**. This includes dispatch files, but not all authoring tools that publish dispatch have full support for resume (and in some cases tracking) behaviours in Tin Canny. Multi-SCO modules are currently not supported. A good test for compatibility is trying the module on [SCORM Cloud](https://cloud.scorm.com/sc/guest/SignInForm), but in some cases, due to WordPress architecture and behaviour, we cannot guarantee support for all authoring tools. Tin Canny testing is done primarily against Storyline, iSpring, Rise, Captivate and H5P.
+
+### Tin Canny Reporting – Versions earlier than 4.0
+
+Earlier versions of Tin Canny only support **tr****acking of Tin Can (xAPI) and SCORM statements from e-learning modules authored with Storyline 2/3/360, Articulate Rise, Adobe Captivate 9/2017/2019, iSpring 8/9, and H5P.** See the following support matrix for details about pre-4.0 authoring tool support:
+
+|  | Tin Can / xAPI | SCORM 1.2 | SCORM 2004 |
+| --- | --- | --- | --- |
+| Articulate Storyline 2 | Yes | Yes | Yes |
+| Articulate Storyline 360 | Yes | Yes | Yes |
+| Articulate Storyline 3 | Yes | Yes | Yes |
+| Articulate Rise1 | Yes | Yes | Yes |
+| Articulate Presenter 360 | Yes | Yes | Yes |
+| Adobe Captivate 9 | Yes | Yes | Yes |
+| Adobe Captivate 2017 | Yes | Yes | Yes |
+| Adobe Captivate 2019 | Yes | Yes | Yes |
+| iSpring 82 | No | No | No |
+| iSpring 93 | Yes | Yes | Yes |
+| iSpring Quizmaker | Yes | No | No |
+| Lectora Inspire 18 | Yes | Yes | No |
+| H5P | Yes | N/A | N/A |
+
+Note if you try to upload a zip file created by a tool **not** SCORM or xAPI compliant, you’ll see a warning that xAPI/SCORM statements sent by the module will not be recorded and you’ll be prompted to select the .html file in the zip that will launch the content.
+
+1 Articulate Rise modules will only send a Completed or Passed/Failed verb if they are displayed via Lightbox or a new window and upon closing the lightbox/window. When adding Rise modules, you should avoid using iFrame as the display method (at least if SCORM is being used; xAPI modules from recent Rise versions may work). Alternatively, you can override Completion Condition on the lesson or topic edit page by specifying other verbs such as “attempted” or “experienced” to trigger the Mark Complete button.
+
+2 iSpring 8 modules will unfortunately fail in Chrome with versions 80 and higher. iSpring cannot patch older modules and is therefore requiring the course authors republish them with iSpring 9 for proper tracking with Chrome 80 and higher.
+
+3 iSpring modules whose completion is based on viewing of slides will only send a Passed verb if the module is displayed via Lightbox or a new window and upon closing the lightbox/window. When adding iSpring modules, you should avoid using iFrame as the display method. Alternatively, you can override Completion Condition on the lesson or topic edit page by specifying other verbs such as “attempted” or “experienced” to trigger the Mark Complete button.
+
+---
+
+## Tin Can Report
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/tin-can-report-2/](https://www.uncannyowl.com/knowledge-base/tin-can-report-2/)
+
+### Overview
+
+In this report, you will see  the learning records resulting from users’ interactions with Articulate Storyline/Rise, Captivate, iSpring, H5P*, or any other supported content. These records are stored in a Learning Record Store (LRS) entirely native to your WordPress site. All you need to do is publish your file using the xAPI or SCORM 1.2/2004 standard, and use the Tin Canny Uploader to add it to a lesson or topic associated with a course.
+
+* See the full list of authoring tools supported by Tin Canny
+
+### Report Filters
+
+Let’s take a look at the Tin Can Report view.
+
+![tin can report](https://www.uncannyowl.com/wp-content/uploads/2019/05/tin-can-report-back-end-no-tabs.png)
+
+The report view includes many filtering options for you to narrow in on data you are interested to see. For example, you may want to view all the learning records related to a particular Storyline module. You may want to check all the activities that took place within a certain time period. Or you may want to find out whether or when a particular user completed the module.
+
+Note: Some modules send duplicate *passed* statements when users successfully complete quiz interactions.  Tin Canny automatically filters out any *passed* statements sent from the same module and user within 10 seconds of each other to reduce clutter and confusion in the reports.  The statements are still collected and stored, but the duplicates are omitted from the report.
+
+### Export to CSV
+
+For a large course, you can potentially be looking at hundreds of thousands of records. The Export to CSV button lets you download the filtered result as a CSV file so you can do further analysis in Microsoft Excel or statistical programs.
+
+---
+
+## xAPI Quiz Report
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/xapi-quiz-report-2/](https://www.uncannyowl.com/knowledge-base/xapi-quiz-report-2/)
+
+### Overview
+
+The xAPI Quiz Report captures individual quiz question responses from xAPI content.  It is part of the Tin Canny for WordPress plugin that we developed to support the use of eLearning authoring tools like Articulate Storyline and Rise, Adobe Captivate, and iSpring with WordPress.  In this report, you will see the learning records resulting from users’ interactions this support xAPI content created with these tools. These records are stored in a Learning Record Store (LRS) entirely native to your WordPress site. All you need to do is publish your file using the xAPI standard, and use the [Tin Canny Uploader](https://www.uncannyowl.com/knowledge-base/storyline-captivate-uploader/) to add it to a lesson or topic associated with a course.
+
+**Important**: Tin Canny only tracks and reports on the data you see in the xAPI Quiz Report columns.
+
+* See [the full list of authoring tools supported by Tin Canny](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/)
+
+### Report Filters
+
+Let’s take a look at the xAPI Quiz Report view.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2019/05/LearnDash_xAPI_Quiz_Report.png)
+
+The report view includes many filtering options for you to narrow in on data you are interested to see. For example, you may want to view all the learning records related to a particular Storyline module. You may want to check all the activities that took place within a certain time period. Or you may want to find out whether or when a particular user completed the module.
+
+### Column Selection
+
+Use the Screen Options button in the top right corner of the screen to show or hide additional columns from the table.
+
+### Export to CSV
+
+For a large course, you can potentially be looking at hundreds of thousands of records. The Export to CSV button lets you download the filtered result as a CSV file so you can do further analysis in Microsoft Excel or statistical programs.
+
+---
+
+## Tin Canny Uploader
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/tin-canny-uploader/](https://www.uncannyowl.com/knowledge-base/tin-canny-uploader/)
+
+### Overview
+
+The Tin Canny Uploader is the tool that will allow you to upload your xAPI and SCORM modules to your WordPress site. The Uploader is integrated with the both the Classic Editor and Gutenberg so you can quickly attach an e-learning module as part of your content creation workflow.
+
+### Tin Canny Uploader and Gutenberg Block Editor
+
+To upload and embed your module using Gutenberg block editor, follow these steps:
+
+1. On your page or post, click the “+” icon to add a new block.
+2. When the block selector appears, search and select the Tin Canny Content block.
+3. After the block is added, you have 2 options*:
+- “Upload”
+1. Click Upload.
+2. Find and select your module ZIP file from your computer and click “Open”.
+3. The module will upload, register and the content block will embed on your page.
+- “Select from Library”
+1. Search and/or select a module that has already been uploaded to your site.
+2. The content block will embed on your page.
+4. After you embed the content block, you will be able to select your display option from the side menu**.
+- You have 3 options:
+1. iFrame
+2. Lightbox
+3. New tab
+5. After selecting your display option, save your page and the module will display in the front end.
+
+*In step 3, if you are selecting the “Upload” option, depending on the size of your ZIP file, you can check the option “Upload entire zip file” in the side menu. This option provide a must faster upload experience.
+
+** When using the block editor, you can change your display option at any time without needing to re-upload your module.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Select-Tin-Canny-Block.png)Add the Tin Canny Content block
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Upload-or-Select-from-library.png)Choose either “Upload” or “Select from Library”
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/use-zip-uploader.png)Use the ZIP uploader for faster upload times (if applicable)”
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Select-from-Library.png)Find and select your module from the Manage Content library”
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Tin-Canny-Content-Block.png)A module embedded via Tin Canny Content block
+
+### Tin Canny Uploader and the Classic Editor
+
+To upload and embed your module using the Classic editor, follow these steps:
+
+1. On your page or post, click the “Add Tin Canny Media” button.
+2. A modal box will open and give you 2 options:
+- “Upload File”
+1. Click the button labelled “Click to Upload” (before you click this button, you can also enable the option “Upload entire zip file” below).
+2. Find and select your module ZIP file from your computer and click “Open”.
+3. When the module finished uploading, you will have to select a display option. You have 3 options:
+1. iFrame
+2. Lightbox
+3. New tab
+4. After you select the display option, click “Insert Into Post”.
+5. The module be added as a shortcode in the Classic Editor
+- “Content Library”
+1. Search and/or select a module that has already been uploaded to your site and click the “Show” button.
+2. You will have to select a display option. You have 3 options:
+1. iFrame
+2. Lightbox
+3. New tab
+3. After you select the display option, click “Insert Into Post”.
+4. The module be added as a shortcode in the Classic Editor
+3. After selecting your display option, save your page and the module will display in the front end.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/add-tin-canny-media-button.png)Click the “Add Tin Canny Media” button
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/upload-file-zip-option.png)Choose “Upload File” or “Content Library” and don’t forget the ZIP upload option
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/select-file-from-content-library.png)Select an uploaded module from your Manage Content library
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/embed-options-after-uploading-or-selecting-module.png)After you upload your module or select it from the library, you will need to select the display option
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/tin-canny-content-embedded-as-shortcode.png)Your module will display as shortcode
+
+### Elementor/WP Bakery Page Builder/Other Editors
+
+If you are using a pagebuilder such as Elementor or WP Bakery Page Builder, look for a “text” module and add that to the page.  The editor in the text module should display the Add Tin Canny Media button (see above), which you can use to insert your content.
+
+**Important:** Upload zip files published directly from your authoring tool only. All modules must be uploaded through our upload tool, as it modifies some javascript files in the modules to ensure that statements are tracked properly.
+
+Please note that file names must contain fewer than 100 characters and should not contain any special characters.
+
+### Tin Can/xAPI Data
+
+In order to capture Tin Can data, your Storyline/Rise, Captivate, or iSpring module must have been published to xAPI or SCORM (1.2 or 2004). The module will still work if it was published to web but you won’t be able to capture Tin Can data. We recommend publishing to xAPI if the option is available, as in some situations it offers performance advantages over SCORM tracking.
+
+### Very large files
+
+If for any reason the zip file is too big to upload inside WordPress (this would typically include files over 100 MB), this workaround is available but should *only* be performed for large files:
+
+1. Publish the zip file as you normally would.
+2. Extract the contents of the zip file. (Don’t use a Mac for this, as it can add hidden files that break the upload process.)
+3. Move the big media files elsewhere and remember the folder they were in.
+4. Zip the files back up so the structure is the same (minus the large files; just make sure the XML file is still in the root).
+5. Upload the zip file through the Tin Canny uploader as before. if there’s an error, maybe it wasn’t zipped back up again properly.
+6. On the lesson/topic edit page, note the identifier in the shortcode. You’ll see an snc one.
+7. Connect to the site by FTP. Navigate to /wp-content/uploads/uncanny-snc/.
+8. Find the # corresponding with the shortcode in step 6 and go into it.
+9. Upload the large files to wherever they’re supposed to be.
+
+### Multisite
+
+If you use Tin Canny in a multisite network, it is possible to broadcast Tin Canny modules to other network sites using the Broadcast plugin from Plainview Plugins. See [https://broadcast.plainviewplugins.com](https://broadcast.plainviewplugins.com) for more information.
+
+---
+
+## Making eLearning Modules Responsive in iFrame
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/making-elearning-modules-responsive-in-iframe/](https://www.uncannyowl.com/knowledge-base/making-elearning-modules-responsive-in-iframe/)
+
+When you choose to embed your eLearning module in an iFrame, you have the option to set its width and height in the upload dialogue. The default width is 100%, and default height is 600px.
+
+![tincanny_uploader_iframe_size](https://www.uncannyowl.com/wp-content/uploads/2017/05/tincanny_uploader_iframe_size.png)
+
+Since the size of your learner’s browser window varies, your eLearning module should resize accordingly to take up 100% width of available space. However, the height remains fixed and content will be vertically centered in the iFrame. As a result, you may see additional space above and below the module on smaller screens or mobile devices.
+
+Because each authoring tool (Storyline, Captivate, and iSpring) supported by Tin Canny has its unique way of defining layout elements in the published module, at this time there isn’t a workable solution we can implement that will work consistently with all authoring tools. The following CSS fixes can be added manually to your site to address the layout issue you may experience when trying to display eLearning modules in iFrame.
+
+### Custom CSS for Storyline 2 and Storyline 360 Modules
+
+Before you publish your Storyline module, in Browser Settings make sure the Player size is set to “Scale player to fill browser window”.
+
+![tincanny_storyline_player_properties](https://www.uncannyowl.com/wp-content/uploads/2017/05/tincanny_storyline_player_properties.png)
+
+After you upload and choose to insert your module in an iFrame, you should see a shortcode similar to the following:
+
+```
+[vc_snc embed_type="iframe" item_id="1" item_name="Lesson 1" width="100%" height="600px" frameborder="0" src="https://yourdomain.com/wp-content/uploads/uncanny-snc/1/story.html"]
+```
+
+Remove the width and height attributes, and wrap the shortcode in a <div> like the following:
+
+```
+<div class="iframe-ratio" style="padding-bottom: 75.7%;">[vc_snc embed_type="iframe" item_id="1" item_name="Lesson 1" frameborder="0" src="https://yourdomain.com/wp-content/uploads/uncanny-snc/1/story.html"]</div>
+```
+
+Note that the value of padding-bottom should be equal to your module’s **(height/width)*100**
+
+To calculate the aspect ratio of your published module, you need to know your story size, plus [any additional width and height added to the player features](https://community.articulate.com/series/4/articles/choosing-a-story-size-in-articulate-storyline-2#player).
+
+For example, a chromeless player that is 720 pixels x 540 pixels will have 20 pixels added to the player frame. So the value of padding-bottom will be (560/740) * 100 = 75.7
+
+You also need to add the following CSS for the div and iframe:
+
+```
+.iframe-ratio {
+width: 100%;
+height: 0;
+position: relative; }
+```
+
+```
+.iframe-ratio iframe {
+width: 100%;
+height: 100%;
+position: absolute; }
+```
+
+With these changes, your published Storyline module should scale proportionally in different browser sizes.
+
+### Custom CSS for Captivate 9 Modules
+
+The above guidelines for Storyline also work for Captivate. The key is to find out the width and height of your published Captivate module, taking into consideration any additional pixels added by the player features.
+
+### Custom CSS for iSpring 8 Modules
+
+The above guidelines for Storyline also work for iSpring. The key is to find out the width and height of your published iSpring module, taking into consideration any additional pixels added by the player features.
+
+---
+
+## Setting up Tin Canny for WordPress
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/setting-up-tin-canny-for-wordpress/](https://www.uncannyowl.com/knowledge-base/setting-up-tin-canny-for-wordpress/)
+
+Tin Canny for WordPress includes a settings page that lets you configure how various aspects of the plugin function.  The page can be found at **Tin Canny Reporting > Settings**.
+
+### General Settings
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/image-1-663x1030.png)Tin Canny for WordPress settings
+
+### Enabling/Disabling Tin Can/SCORM Data Capture
+
+If you don’t want to capture Tin Can/SCORM statements sent by uploaded modules, you can set this to “No”.  This option will also remove the *Tin Can* and *xAPI Quiz Report* tabs from the reporting page.
+
+### Protecting SCORM/Tin Can Modules
+
+When uploading Storyline/Rise, Captivate and iSpring content to your courses, you can enable basic protection of your content that restricts viewing of the content to signed-in users only.  Anonymous users who navigate to the URL where that module is available will not be able to see it or use it.  This basic protection makes it difficult for your users to share the content with anonymous users.
+
+**Note: Tin Can data from an anonymous user session is not stored or available via your reports.**
+
+There are also cases where a site owner might want to turn off content protection. For example, publishing an open course where there may be anonymous users allowed, or where you may want to feature course content to outside users.
+
+#### Setting protection at the page or post level
+
+If content protection is enabled globally (in Tin Canny settings), it can be disabled in specific pages and posts from the *Edit Page*or *Edit Post*screen:
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/10/lesson-topic-level-settings.png)Fig. 2. At the page/post level, you have three options to override the global protection setting.
+
+Due to the way the content protection works, if it is disabled globally, protection cannot be enabled at the page/post level and this option is not available.
+
+### Enable Sorting by % Complete
+
+The ability to sort by % Complete requires a very large amount of data be requested from the server, which will fail or cause poor performance on sites with many users. Disable this setting to improve the responsiveness of the reports.
+
+## Lightbox Settings
+
+These settings enable you to set the default values when embedding content in a lightbox.  These can be overridden at the lesson/topic level.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/image-2.png)xAPI/SCORM lightbox settings
+
+## Resetting Data
+
+Tin Canny LearnDash Reporting comes with several functions to reset data.  Use these functions with caution, as the operations are irreversible.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/image-3.png)Data reset options
+
+---
+
+## Tin Canny Reporting – Technical Requirements
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/tin-canny-reporting-technical-requirements-2/](https://www.uncannyowl.com/knowledge-base/tin-canny-reporting-technical-requirements-2/)
+
+### End-user requirements
+
+An up-to-date, modern browser such as:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- MacOS Safari
+
+Internet Explorer is not supported.
+
+### Permalinks
+
+For Tin Canny to work properly the Permalink settings on your site (under Settings > Permalinks as an admin) cannot be set to Plain. Any other setting should work, but if you’re having trouble capturing data and errors are reported, double-check your permalink settings.
+
+### Hosting requirements
+
+Minimum requirements are:
+
+- PHP 7.4+
+- WordPress 5.4
+- 256MB of memory allocated to WordPress
+
+We recommend the following for optimal performance:
+
+- PHP 8.0+
+- A WordPress-optimized host such as [WP Engine](https://www.uncannyowl.com/share/wpengine) or [Pressidium](https://www.uncannyowl.com/share/pressidium)
+- Additional WordPress memory (some times may require 512 MB or more to report on large data sets)
+
+---
+
+## Managing Elearning Content
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/managing-elearning-content-2/](https://www.uncannyowl.com/knowledge-base/managing-elearning-content-2/)
+
+Tin Canny for WordPress provides an easy-to-use interface for managing uploaded content.
+
+Access the page at Tin Canny Reporting > Manage Content to:
+
+- Upload new content
+- Search uploaded content by title
+- Sort uploaded content by upload date
+- Preview uploaded content (note that xAPI statements **will** be tracked when you preview content)
+- Replace content
+- Delete uploaded content
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/image-1030x687.png)Manage xAPI/SCORM content in WordPress
+
+### Replacing Content
+
+Previously, to replace content meant:
+
+1. Uploading the updated content as a new module
+2. Replacing all existing shortcodes/blocks to point to the new module
+3. Deleting the previous content
+
+This process also meant that any completion records tied to the previous module would be lost, since the module’s ID would have changed.
+
+However, on the Manage Content page, replacing an existing module is easy. Simply click Replace from the Actions menu:
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/10/manage-content-replace.png)
+
+This launches a dialog that asks what you want to do with data recorded for the existing module.  There are two options:
+
+- **Delete bookmark (resume) data only**:  This option deletes stored the bookmark data that prompts users to resume from where they left off in the module the next time they visit it.  This data must be deleted whenever content is replaced as internal bookmark IDs may have changed, resulting in the existing bookmark data preventing the module from loading properly.
+- **Delete all data**: This option deletes both stored bookmark data and stored xAPI statements (the data shown in the Tin Can and xAPI Quiz reports).
+
+Note that the data is deleted immediately after selecting one of the above two options, even if the actual replacement is cancelled in the following steps.  (This workflow provides a roundabout way to delete all data for a module even if you don’t want to replace it; simply select one of the above options, then cancel the replacement in the following step).
+
+Once the replacement module has been uploaded, the updated content will appear wherever the previous module had been embedded.
+
+---
+
+## Site Check
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/site-check-2/](https://www.uncannyowl.com/knowledge-base/site-check-2/)
+
+Having some trouble with Tin Canny? Before you file a support ticket, use the **Site Check**tool to quickly diagnose common problems. If you experience issues related to modules not loading, the Mark Complete button not unlocking, or xAPI not being tracked, start with this.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2019/05/site-check-3-steps.png)
+
+Using the check is as easy as visiting the **Site Check** tab in the Tin Canny section of /wp-admin/. If you’ve made changes, click the **Re-check** button to validate the new settings.
+
+Anything that doesn’t pass suggests that you will have problems with Tin Canny operations and the system will suggest possible causes. If you can’t resolve them on your own, reach out to Uncanny Owl support and we can lend a hand.
+
+---
+
+## Actions/Filters for Developers
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers-3/](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers-3/)
+
+Tin Canny for WordPress provides the hooks below for advanced developers to use when developing custom functionality that integrates with the plugin.  No support is provided for the use of these filters.
+
+```
+/**
+ * Minimum capability required for a logged-in user to view Tin Canny and User reports. Default: manage_options
+ */
+add_filter( 'uo_tincanny_reporting_capability', function( $capability ){
+    $capability = 'group_leader';
+   return $capability;
+} );
+```
+
+```
+/**
+ * Minimum capability required for a logged-in user to view Tin Canny and User reports. Default: manage_options
+ */
+add_filter( 'tincanny_view_all_reports_permission', function( $capability ){
+   $capability = 'group_leader';
+   return $capability;
+} );
+```
+
+```
+/**
+* Minimum capability required for a logged-in user to view Tin Canny and User reports. Default: manage_options
+*/
+add_filter( 'tincanny_can_get_data', function( $capability ){
+   $capability = 'group_leader';
+   return $capability;
+} );
+```
+
+---
+
 ## Run Cohort-Based Courses & Group Coaching Programs
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/run-cohort-based-courses-group-coaching-programs/](https://www.uncannyowl.com/knowledge-base/run-cohort-based-courses-group-coaching-programs/)
@@ -8674,560 +9255,11143 @@ Exports reflect the current filter state — if a Group Leader has filtered to a
 
 ---
 
-## Using The Group Management Page
+## Sell LearnDash Group Access to Learners
 
-**Source:** [https://www.uncannyowl.com/knowledge-base/group-management-page/](https://www.uncannyowl.com/knowledge-base/group-management-page/)
+**Source:** [https://www.uncannyowl.com/knowledge-base/sell-learndash-group-access-to-learners/](https://www.uncannyowl.com/knowledge-base/sell-learndash-group-access-to-learners/)
 
 ### Overview
 
-The Group Management page is the front-end hub where Group Leaders manage their groups — adding and removing users, distributing enrollment keys, resetting passwords, and emailing members — without needing WordPress admin access.
+Instead of selling entire groups to customers, you sell membership to a specific LearnDash group — automatically adding each purchaser to the group  and granting them course access the moment their order completes.
 
-When the Uncanny Groups for LearnDash plugin is activated, it automatically creates a Group Management page built with the **Group Management** block (equivalently, the 
-```
-[uo_groups]
-```
+### How It Works
 
- shortcode). Group Leaders are redirected to this page after login and can also reach it via any 
-```
-[uo_groups_link]
-```
+When you associate a WooCommerce product with a LearnDash Group, every customer who completes a purchase of that product is automatically enrolled as a **member** of the mapped group. They gain access to all courses assigned to that group, without any manual admin action.
 
- or 
-```
-[uo_groups_button]
-```
+This feature is distinct from the Group Leader purchasing workflow, where an organization creates and manages a group of learners. Here, each buyer simply joins a group as a learner.
 
- shortcode you place in your theme navigation.
+### Prerequisites
 
-Access is restricted to users with the **Group Leader** role. While Administrators can also view and edit groups via the Group Management page, the Group Management page was designed for Group Leaders to use.
+- **WooCommerce** installed and active
+- **Uncanny Groups for LearnDash** installed and active
+- At least one published LearnDash Group to associate with a product
 
-**Tip:** Before customizing the page, review [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/) for instructions on renaming, configuring shortcode attributes, and adding pages to your site menu.
+### Enable Product–Group Associations
 
-![Group Management page showing a Sales Training group with four courses, enrolled users, and group leaders in a dashboard layout.](https://www.uncannyowl.com/wp-content/uploads/2026/07/group-management-page-852x1030.png)
+Before you can link products to groups, you must turn on the feature:
 
-### Group information
+1. Navigate to **Uncanny Groups > Settings**.
+2. Enable **Enable association of products and groups**.
+3. Click **Save Changes**.
 
-At the top of the page, Group Leaders see a summary of the selected group:
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Groups-enable-association-checked.png)
 
-- **Group name selector** — a dropdown listing every group the leader manages. If they manage only one group, the dropdown is hidden and the single group name is displayed.
-- **Seats remaining / Total seats** — displays available seats alongside the total seat allocation for the group. Seats are consumed the moment a user is enrolled (not on invitation), and remain occupied regardless of course completion status.
-- **Associated courses** — links to each course assigned to the group, so leaders can quickly navigate to course content.
+Once enabled, a **Related Groups** field appears on the **General** tab of supported WooCommerce product types.
 
-When **child group reporting** is enabled in the plugin settings, parent groups display combined seat and user data rolled up from all child groups.
+### Supported Product Types
 
-![](https://www.uncannyowl.com/wp-content/uploads/2018/10/Group-Information.png)
+Three WooCommerce product types support group associations:
 
-### Enrolled users
-
-The **Enrolled Users** table lists every user currently associated with the group. For each user you can see:
-
-- Display name (linked to the user edit dialog when **Allow group leaders to edit users** is enabled in settings)
-- Email address
-- Enrollment status (see [User status reference](https://docs.google.com/document/d/12AWkcxVwE4W4QkPjDywjz4iT-OKelHjQ_b-6k9Kas9s/edit#user-status-reference) below)
-- Enrollment key used (if applicable), controlled by the 
-```
-key_column
-```
-
- shortcode attribute
-
-#### User status reference
-
-| Status | Meaning | Enrollment key status |
+| Product Type | Best for | Notes |
 | --- | --- | --- |
-| Not Enrolled | User received an invitation or key but has not yet redeemed it | Available |
-| Not Started | User is enrolled in the group but has not begun any course | Available |
-| In Progress | User has started at least one course | Used |
-| Completed | User has completed all courses assigned to the group | Used |
+| Group | Products whose sole purpose is granting group access | Added by Uncanny Groups when the association feature is enabled; keeps the product simple and purpose-built |
+| Simple Product | Complex purchase rules | Use when the product also grants independent course access, has physical components, or needs custom purchase logic |
+| Simple Subscription | Recurring group access | Requires WooCommerce Subscriptions; group membership is revoked when the subscription lapses or is cancelled |
 
-### Adding users
+For most straightforward group-access sales, **Group** is the right product type — it is the cleanest option and signals intent clearly to both admins and customers.
 
-Group Leaders can add users to a group in three ways, depending on which buttons are enabled via shortcode attributes:
+### Map a Group to a Product
 
-#### Invite a single user
+1. Create a new product (or edit an existing one) and set its **product type** to one of the supported types above.
+2. Open the **General** tab in the **Product Data** panel.
+3. In the **Related Groups** field, search for and select the LearnDash Group you want buyers to join.
+4. Set your price, configure any other product settings, and click **Publish** (or **Update**).
 
-1. Click the **Users** button.
-2. Select **Add one**. A  form appears with two options, **Add and invite user** and **Send enrollment key** (see Send enrollment keys section below). Check **Add and invite user.**
-3. Enter the user’s first name, last name, email address and optional password.
-4. Click **Add User**. An email is sent to the user based on the [email message settings](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/) set up by your Administrator. The user is added to the list of users in the group and they take up a seat in your group, and their status is set to *Not Started*.  If you add a user that already exists on the site, the system will automatically assign a key, add them to the group and send the *Add and invite (existing user)* email.  They then occupy a seat in the group just like a new user.
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/related-group-panel.png)
 
-#### Invite Multiple users
+You can map a single product to multiple groups if a purchase should enroll the buyer in more than one group simultaneously.
 
-1. Click the **Users** button
-2. Select the **Add multiple** option. The Bulk Add & Invite Users form appears.
-3. Enter the user’s first name, last name, email address and optional password.
-4. Click the **Add & Invite Users** button. The same process will occur as outlined in step 4 of **Invite a single user** (see above)
+### Important Notes
 
-#### Send enrollment keys
+**Order status must reach Completed.** Group enrollment is triggered when a WooCommerce order reaches **Completed** status. If your payment gateway leaves orders in **Processing** by default, we recommend enabling automatic order completion for virtual/downloadable products in **WooCommerce > Settings > Products** — otherwise learners will not receive access until you manually complete the order.
 
-Group Leaders can add users to their group by sending them an enrollment key which requires the user redeem the key to be added to the group. If the user is not registered on the site, then they would need to redeem the enrollment key via registration (see [Set Up User Enrollment](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/) for more info) .
+**Purchases do not change user roles.** Buyers are added to the group as members with the standard **Customer** role. They are not made Group Leaders and cannot manage the group.
 
-1. Click the **Users** button
-2. Select **Add one**. Select the option **Send enrollment key**
-3. Enter the user’s first name, last name, email address (there is no password field when **Send enrollment key** is selected
-4. Click **Add User.**
-5. Users will receive the Send enrollment key email. Once that user registers and redeems that key, they take up a seat in the group, are enrolled in the group and can begin group courses.
+**Subscription expiry removes access.** For **Simple Subscription** products, group membership is automatically revoked when the subscription is cancelled, expires, or lapses. No manual action is required.
 
-#### Bulk upload via CSV
+**Do not delete products or orders tied to active groups.** If you delete a WooCommerce product or order associated with an active group, users may encounter errors and the group may lose its associated data. Unpublish products rather than deleting them, and archive orders rather than trashing them.
 
-To add many users at once, upload a CSV file:
+### Related Articles
 
-1. Click **Upload Users**.
-2. Prepare your CSV file using the following column format (the first row is a header row of column names):
+- [Uncanny Groups Plugin Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/) — understand how groups, leaders, and members fit together
+- [Install and Set Up Uncanny Groups for LearnDash](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/) — install the plugin and activate your license
+- [Enable Custom Group Licenses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/) — sell group licenses to organizations instead of individual learners
+- [Add Seats after Subscription Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-after-subscription-based-group-purchase/) — manage seat counts for subscription-based groups
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — what Group Leaders can do once a group is created
+
+---
+
+## Add Seats and Courses after Group Purchase
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/)
+
+### Overview
+
+After a group has been purchased, Group Leaders can expand it on their own — adding more seats to bring in new learners, or adding courses to give the group access to new content — all without contacting an admin.
+
+### Which Groups Support This Feature
+
+The **Add Seats** and **Add Courses** buttons appear on the Group Management page only for groups that were created through a WooCommerce purchase. Specifically:
+
+| Group type | Add Seats Button | Add Courses Button |
+| --- | --- | --- |
+| Created via Custom Group License (Buy Courses/Group page) | Yes | Yes |
+| Created via pre-configured license (non-subscription) | Yes | No |
+| Created via subscription-based license | Yes — see Adding Seats after Subscription Purchase | No |
+| Manually created (admin-created, no purchase) | No | No |
+
+**Note:** If a Group Leader does not see these buttons, confirm that their group was created through a qualifying purchase and that the buttons have not been hidden using the Group Management page attributes.
+
+### Adding Seats
+
+Group Leaders use **Add Seats** to increase the maximum number of learners their group can hold.
+
+1. The Group Leader navigates to their **Group Management page** (the frontend page configured under **Uncanny Groups > Settings**).
+2. They click the **Add Seats** button for the relevant group.
+3. They are redirected to a Woo cart where they can enter the number of **additional seats** they want to purchase.
+4. They review the price — bulk discounts are applied automatically based on the group’s *total* seat count after the purchase, not just the seats being added. (See the example below.)
+5. They complete the checkout. Once the order reaches **Completed** status, the new seats are added to the group.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Add-Seats-button.png)
+
+#### How Bulk Discounts Apply to Seat Additions
+
+Bulk discounts are calculated against the group’s total seat count after the addition, which means adding seats can reduce the per-seat price retroactively for the whole group.
+
+**Illustrative example (numbers are for explanation only, not actual product pricing):** Suppose a group has 10 seats and the Group Leader adds 2 more, bringing the total to 12. If a bulk discount tier applies to groups of 10 or more, that tier is evaluated against the new total of 12 seats.  Under that tier, the discount applies to all 12 seats.
+
+See [Configure Bulk Discounts](https://www.uncannyowl.com/knowledge-base/configure-bulk-discounts/) for instructions on setting up discount tiers.
+
+### Adding Courses
+
+If a group is created by the purchase of a **Custom Group Licenses** on the Buy Courses/Group page, then Group Leaders will see the **Add Courses** button on the **Group Management page**.
+
+Group Leaders use **Add Courses** to give their group access to additional LearnDash courses. Only courses with a corresponding **LearnDash Group Course** WooCommerce product are available to add.
+
+1. The Group Leader navigates to their **Group Management page**.
+2. They click the **Add Courses** button for the relevant group.
+3. They are redirected to the assigned **Buy Courses page** where they see a list of available **LearnDash Group Course** products with individual prices. Bulk discounts apply if configured.
+4. They select the course(s) to add and proceed to checkout.
+5. Once the order reaches **Completed** status, the selected courses are added to the group and all current group members gain access.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Add-Courses-button.png)
+
+**Note:** The **Add Courses** button is not available for subscription-based groups. If your Group Leaders need to manage courses on a subscription group, contact your site admin.
+
+### Order Status and Access Activation
+
+Seat and course additions are activated when the WooCommerce order reaches **Completed** status. If your payment gateway leaves orders in **Processing** by default, we recommend enabling automatic order completion for virtual/downloadable products in **WooCommerce > Settings > Products**. Until the order completes, the new seats or courses will not be active.
+
+### Important: Do Not Delete Associated Products or Orders
+
+The WooCommerce products and orders tied to a group’s purchase history must remain intact. Deleting or trashing them can cause errors when Group Leaders attempt to add users, seats, or courses.
+
+If a product or order has been accidentally deleted and a group is now broken, the group can be downgraded to a Basic LearnDash Group from the **Edit Group** page in the WordPress admin. This removes the WooCommerce association and restores basic functionality, but the Group Leader will no longer be able to use the Add Seats or Add Courses buttons.
+
+### Subscription-Based Groups
+
+Adding seats to a subscription-based group follows a different process. See [Add Seats after Subscription Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-after-subscription-based-group-purchase/) for full instructions.
+
+### Related Articles
+
+- [Enable Custom Group Licenses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/) — set up the Group License product and Buy Courses page that enables this workflow
+- [Set up LearnDash Group Course Products](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/) — create the course products that appear in the Add Courses list
+- [Configure Bulk Discounts](https://www.uncannyowl.com/knowledge-base/configure-bulk-discounts/) — set up volume pricing for seats and courses
+- [Add Seats after Subscription Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-after-subscription-based-group-purchase/) — the parallel workflow for subscription-based groups
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — full reference for the Group Leader’s frontend management interface
+
+---
+
+## Create Pre-configured LearnDash Group Licenses
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/creating-pre-configured-learndash-group-licenses/](https://www.uncannyowl.com/knowledge-base/creating-pre-configured-learndash-group-licenses/)
+
+### Overview
+
+Pre-configured licenses are ready-made group packages you define in advance — a fixed course bundle at a set per-seat price, like “Compliance Training – 25 seats.” Buyers simply pick a quantity and check out; the group is created and they become its Group Leader automatically. It’s the simplest way to sell predictable team packages.
+
+When Uncanny Groups and WooCommerce are both active, you get two product types:
+
+- **LearnDash Group Course** — the individual course(s) that can be sold into groups.
+- **LearnDash Group License** — the purchasable package that bundles seats with one or more Group Courses.
+
+A *pre-configured* license is a Group License **Admins** build, so the courses and pricing are fixed before the buyer arrives. (Prefer to let buyers choose their own courses? Use [custom group licenses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/) instead.)
+
+### Prerequisites
+
+- Uncanny Groups installed — see **Getting Started**.
+- Your [LearnDash Group Course products](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/) created first.
+
+### Choose a license type
+
+|  | One-time payment | Subscription |
+| --- | --- | --- |
+| Product type | LearnDash Group License | Simple Subscription |
+| Requires | WooCommerce | WooCommerce + WooCommerce Subscriptions |
+| Best for | One-off team purchases | Recurring/renewing team access |
+
+### Create a one-time payment license
+
+1. Make sure your [Group Course products](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/) exist.
+2. Create a new WooCommerce product (**Products > Add New**).
+3. Set the product type to **LearnDash Group License**.
+4. Set a **per-seat price**. Leave it blank to auto-calculate from the linked courses.
+5. Open the **Licensed Course(s)** tab and select the courses this license includes.
+6. Set **catalog visibility** so the product shows where you want it.
+7. **Publish.**
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Group-License-Product-info.png)
+
+### Create a subscription license
+
+Follow the same steps, but at step 3 choose **Simple Subscription** as the product type and configure the subscription billing interval.
+
+**Note:** With subscription licenses, only administrators can change the included courses after purchase — Group Leaders cannot.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Simple-Subscription.png)
+
+### Pricing and quantity controls
+
+After the Group License product has been published, additional options will appear in the General tab that allow you to set fixed pricing as well as minimum and/or maximum quantities.
+
+| Control | What it does |
+| --- | --- |
+| Fixed price | Overrides the auto-calculated per-seat price with a price you set |
+| Minimum quantity | The fewest seats a buyer must purchase |
+| Maximum quantity | The most seats a buyer can purchase |
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/min-max-fixed.png)
+
+### At checkout
+
+Buyers see a **Group Name** field during checkout — this names their group. The order must reach **Completed** status before group access is granted, so enable order auto-completion if needed (see the [FAQ](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/)).
+
+Admins have the option to hide the Group Name field on checkout and or product pages. They can also make the “Group Name” field non-editable on cart page. These options can be enabled/disabled on the Groups > Settings page.
+
+### Group Product Swap
+
+A single product can serve double duty: bought at **quantity 1** it grants individual course access, and at **quantity 2 or more** it creates a group. This lets you sell to individuals and teams from the same product.
+
+### Things to know
+
+- **Orders must be Completed** to create the group — use auto-completion to avoid stuck “Processing” orders.
+- **Don’t delete products or orders** tied to active groups; it can break group functionality.
+- A group can be **downgraded** to a basic LearnDash group if you ever need to.
+
+### Related Articles
+
+- [Set up LearnDash Group Course Products](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/)
+- [Enable Users to Build Custom Group Licenses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/)
+- [Configure Bulk Discounts](https://www.uncannyowl.com/knowledge-base/configure-bulk-discounts/)
+- [Add Seats and Courses after Group Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/)
+
+---
+
+## Enable Users to Build Custom Group Licenses
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/)
+
+### Overview
+
+Let buyers build and purchase their own group license — picking the courses they want and the number of seats they need — all from a single page on your site. They check out through WooCommerce and instantly become a Group Leader who can manage their own team. It’s the most flexible way to sell to organizations, with zero manual setup on your end per sale.
+
+A *custom* group license lets the customer decide what they’re buying: they name their group, choose how many seats they need, and select from your available courses. Pricing and any bulk discounts are calculated automatically before checkout. Once the order completes, the group is created and the buyer becomes its Group Leader.
+
+This is ideal when you want to offer choice — for example, a training provider whose clients each need a different mix of courses and team sizes.
+
+### Prerequisites
+
+- Uncanny Groups installed and activated — see **Getting Started**.
+- At least one [LearnDash Group Course product](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/) set up.
+
+### Set up a Buy Courses page
+
+When Uncanny Groups is installed alongside WooCommerce, a **Buy Courses** page is created for you automatically. To build one manually:
+
+1. Create a new page.
+2. Add the **Buy Courses** block, or insert the shortcode 
+```
+[uo_groups_buy_courses]
+```
+
+.
+3. Publish the page.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Buy-Courses-Page-3-1030x612.png)
+
+### Buy Courses page options
+
+The 
+```
+[uo_groups_buy_courses]
+```
+
+ shortcode and block accept optional attributes to control which courses appear and how many seats buyers can purchase:
+
+| Attribute | What it does | Example |
+| --- | --- | --- |
+| product_cat | Shows only courses in the given product category IDs — useful for multi-organization or multi-catalog sites | product_cat="193,203" |
+| product_tag | Shows only courses with the given product tag IDs | product_tag="179,398" |
+| min_qty | Sets the minimum number of seats a buyer must purchase | min_qty="5" |
+| max_qty | Sets the maximum number of seats a buyer can purchase | max_qty="10" |
+
+**Combined example:**
+
+```
+[uo_groups_buy_courses product_cat="193,203" product_tag="179,398" min_qty="5" max_qty="10"]
+```
+
+### What the buyer does
+
+From the Buy Courses page, the customer:
+
+1. **Names their group** — this becomes the license/group name.
+2. **Chooses a seat count.**
+3. **Selects one or more courses** from your available Group Course products.
+4. **Reviews the auto-calculated price** (including any bulk discounts) and checks out.
+
+After checkout, they land in their front-end [Group Management page](https://www.uncannyowl.com/knowledge-base/group-management-page/), ready to invite their team.
+
+### Things to know
+
+- **Orders must reach “Completed” status** before the group is created. If orders sit in “Processing,” install an autocompletion plugin or enable the auto-complete setting for virtual products. See the [FAQ](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/).
+- **Abandoned licenses are cleaned up automatically** — a license tied to an incomplete purchase is removed after 24 hours.
+- **Don’t delete the products or orders** tied to active groups — doing so can break group functionality.
+- **Linking from a WooCommerce shop:** to surface the Buy Courses page in your shop, create an **External/Affiliate** product that links to it.
+
+### Related Articles
+
+- [Set up LearnDash Group Course Products](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/)
+- [Create Pre-configured LearnDash Group Licenses](https://www.uncannyowl.com/knowledge-base/creating-pre-configured-learndash-group-licenses/)
+- [Configure Bulk Discounts](https://www.uncannyowl.com/knowledge-base/configure-bulk-discounts/)
+- [Sell Online Courses to Businesses & Teams](https://www.uncannyowl.com/knowledge-base/sell-online-courses-to-businesses-teams-with-learndash/)
+
+---
+
+## Set up LearnDash Group Course Products
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/)
+
+### Overview
+
+Installing WooCommerce alongside Uncanny Groups for LearnDash unlocks two new product types that power your group-selling workflow. Setting these up correctly is the foundation for everything from simple corporate seat sales to fully self-serve group licensing.
+
+### How the Two Product Types Work Together
+
+When WooCommerce is active, Uncanny Groups for LearnDash adds two product types to WooCommerce:
+
+| Product Type | Role | Sold to customers? |
+| --- | --- | --- |
+| LearnDash Group Course | Represents an individual course that can be bundled into a group license | Rarely — usually only as a standalone fallback |
+| LearnDash Group License | The purchasable product that creates a group and grants course access to its members | Yes — this is what Group Leaders and learners buy |
+
+**LearnDash Group Course** products are the building blocks. Each one maps to a single LearnDash course. On their own they behave like a standard LearnDash–WooCommerce product (purchase = course enrollment), but their real purpose is to be bundled into a **LearnDash Group License** product so that a single purchase grants group access to one or more courses.
+
+### Prerequisites
+
+- **WooCommerce** installed and active
+- **LearnDash LMS** installed and active
+- **Uncanny Groups for LearnDash** installed and active
+- At least one published LearnDash course to associate with the product
+
+### Create a LearnDash Group Course Product
+
+You need one **LearnDash Group Course** product for each course you want to include in group licenses. Create as many as you need — one per course.
+
+1. In your WordPress admin, navigate to **Products > Add New**.
+2. Enter a **Product Name** (e.g., “Introduction to Safety Procedures”).
+3. Optionally add a product description and featured image.
+4. In the **Product Data** panel, open the product type dropdown and select **LearnDash Group Course**.
+5. In the **General** tab, set the **Regular Price** (and optionally a **Sale Price**). This price is used as the per-seat license for this course when customers purchase a group license through the Buy Courses page..
+6. In the **Courses** tab, select the **LearnDash course** this product represents.
+7. Click **Publish**.
+8. Repeat for each additional course you want to make available in group licenses.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Group-Course-Product-data-1030x306.png)
+
+**Note:** The price you set here appears to Group Leaders when they use the **Add Courses** feature on the Group Management page. We recommend keeping it consistent with how the course is priced in your Group License products.
+
+### What Happens After You Create Group Course Products
+
+Once published, your **LearnDash Group Course** products become available in two places:
+
+- **Backend (admin):** When you create a **LearnDash Group License** product, you can bundle any number of Group Course products into it. The license product is what customers purchase.
+- **Frontend (Group Leaders):** Group Leaders who created their group through a Custom Group License can visit their Group Management page and use the **Add Courses** button to purchase additional courses for their group. Only Group Course products appear in that list.
+
+**Important:** Do not delete or trash a Group Course product that is referenced by an active Group License product or an existing group. Doing so can cause errors when Group Leaders try to manage their groups. If you need to retire a course product, unpublish it rather than deleting it.
+
+### Product Settings Reference
+
+| Setting | Location | Description |
+| --- | --- | --- |
+| Product Name | Title field | Displayed to Group Leaders on the Add Courses page |
+| Regular Price | General tab | Per-course price charged when adding courses to an existing group |
+| Sale Price | General tab | Optional discounted price |
+| Course | Courses tab | The LearnDash course this product grants access to |
+
+### Related Articles
+
+- [Install and Set Up Uncanny Groups for LearnDash](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/) — install the plugin and activate your license
+- [Enable Custom Group Licenses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/) — set up the Group License product type and the Buy Courses page
+- [Create Pre-configured Licenses](https://www.uncannyowl.com/knowledge-base/creating-pre-configured-learndash-group-licenses/) — bundle Group Course products into a Group License for sale
+- [Add Seats and Courses after Group Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/) — how Group Leaders use the Add Courses feature
+- [Configure Bulk Discounts](https://www.uncannyowl.com/knowledge-base/configure-bulk-discounts/) — apply volume pricing to course and seat purchases
+
+---
+
+## Upgrade Existing LearnDash Groups
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/](https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/)
+
+### Overview
+
+If you installed Uncanny Groups on a site that already has LearnDash groups, you can convert those existing groups into fully managed Uncanny Groups — giving Group Leaders front-end access to enroll users, track progress, and manage seats.
+
+### Understanding Group Types
+
+Uncanny Groups recognises two kinds of groups on your site:
+
+| Type | How it was created | Front-end management |
+| --- | --- | --- |
+| Basic group | Created via LearnDash LMS > Groups > New Group, or created before Uncanny Groups was installed | Not visible on the front end by default |
+| Uncanny Group | Created via Uncanny Groups > Create Group, or upgraded from a basic LeaenDash group | Full front-end management for Group Leaders |
+
+Basic groups are not visible on the front-end Group Management page unless you enable the **Show “basic” (non-upgraded) groups in front end with access to reports only** setting. When that setting is enabled, basic groups appear on the front end with access to reporting functions only — Group Leaders cannot add or remove members from them. Upgrading a basic group converts it to an Uncanny Group and makes it fully manageable.
+
+### Before You Start
+
+- Uncanny Groups must be installed and activated.
+- You need WordPress administrator access to run the bulk upgrade.
+- We recommend reviewing your existing groups first so you understand which ones will be affected.
+
+### Bulk Upgrade All Basic Groups
+
+When you first set up Uncanny Groups, the plugin’s settings page includes a one-time option to upgrade all basic groups at once. This is the fastest way to bring every pre-existing LearnDash group under Uncanny Groups management.
+
+1. Navigate to **Uncanny Groups > Settings** in your WordPress admin.
+2. Locate the **Upgrade LearnDash Groups** section.
+3. Click **Start Process**.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/bulk-upgrade-button.png)
+
+**Warning:** As noted in this section of the plugin, groups upgraded in bulk cannot be reverted to basic groups via a bulk option (each individual group needs to be downgraded independently). To enable seat management on only some groups, use the **Upgrade Group** button on each group’s Edit page instead.
+
+Once the process runs, every LearnDash group that was created through the standard interface — including any groups created before Uncanny Groups was installed — becomes an Uncanny Group. Group Leaders for those groups will then be able to manage them from the front-end Group Management page.
+
+#### How Seats Are Calculated on Upgrade
+
+The upgrade automatically sets the seat count for each converted group. The calculation is:
+
+**Seats = number of existing group members + number of Group Leaders**
+
+Because all current members are set as enrolled users, the remaining seats after upgrade will be **0**. If you need additional seats, you can edit the group after the upgrade to increase the total.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/upgrade-individual-group.png)
+
+### Upgrade an Individual Group
+
+If you only want to convert a single group — for example, to test the process before running it in bulk — you can upgrade groups one at a time.
+
+1. In your WordPress admin, navigate to **LearnDash LMS > Groups**.
+2. Open the group you want to convert by clicking its title to go to the **Edit** page.
+3. Select the **Uncanny Groups** tab (Uncanny Groups 6.1.8+), then click **Upgrade Group** in the **Uncanny Group Management** box.
+
+**Tip:** That same box notes that you can bulk-upgrade every group from the link to **Uncanny Groups > Settings**.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/upgrade-individual-group-button.png)
+
+The group is immediately converted and will appear on the front-end Group Management page for its Group Leader.
+
+### Can you downgrade a group?
+
+Any upgraded group can be downgraded. However, downgrading a group permanently deletes all enrollment keys (these are assigned to users to provide seat access).
+
+When a WooCommerce-created group is downgraded, it returns to basic group status, no longer appears on the front-end Group Management page (unless **Show “basic” (non-upgraded) groups in front end with access to reports only** is enabled), and its Group Leaders lose front-end management access for that group.
+
+### What Happens to Basic Groups You Don’t Upgrade
+
+Basic groups remain fully functional in the LearnDash admin. However, they are hidden from the front-end Group Management page unless you enable **Show “basic” (non-upgraded) groups in front end with access to reports only** in **Uncanny Groups > Settings**. Enabling that setting lets Group Leaders see their basic groups on the front end with access to reporting functions only — they cannot add or remove members from these groups without fully converting them to Uncanny Groups.
+
+### Related Articles
+
+- [Uncanny Groups for LearnDash – Plugin Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/) — Start here if you’re new to Uncanny Groups.
+- [Install and Set Up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/) — How to install the plugin and complete initial configuration.
+- [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/) — Create the front-end pages that Group Leaders use to manage their groups.
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — A walkthrough of everything a Group Leader can do from the front end.
+- [Manage Groups as Administrator](https://www.uncannyowl.com/knowledge-base/set-up-a-learndash-group/) — How administrators create and configure Uncanny Groups from the WordPress admin.
+
+---
+
+## Tin Canny Reporting for LearnDash – Changelog
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-reporting-changelog/](https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-reporting-changelog/)
+
+### 5.1.3.3 [2026-05-29]
+
+**Update:**
+
+- SCORM Modules – Added WordPress filter 
+```
+uo_tincanny_actor_name
+```
+
+ to allow overriding the learner name passed to modules via 
+```
+cmi.learner_name
+```
+
+, following the existing 
+```
+uo_tincanny_actor_mbox
+```
+
+ filter pattern #1051
+
+**Fixed:**
+
+- Course Report – Fixed incorrect % Complete values on load and after resetting the search #1084
+- Lesson and Topic Reports – Restricted report results to learners and courses within a group leader’s assigned scope when the group filter is left blank, preventing visibility of learners outside their managed groups #1080
+- Manage Content – Replaced cache-busting for module JS/CSS assets to ensure updated SCORM and Captivate packages load correctly after a module is replaced or re-uploaded without requiring a hard refresh #1090
+- Module Protection – Resolved an undefined array key notice for 
+```
+protect-scorm-tin-can-modules
+```
+
+ under specific theme and course page configurations #1000
+- Tin Canny Modules – Prevented duplicate completion check AJAX requests for the same module and lesson, reducing unnecessary server load during xAPI activity #1066
+- WordPress Compatibility – Settings now appear in a dedicated “Tin Canny” tab on the edit page for LearnDash post types #1086
+- iSpring Modules – Fixed an issue where xAPI state requests used an incorrect agent identity, causing users to share the same state data and affecting individual progress tracking #1058
+
+---
+
+### 5.1.3.2 [2026-05-13]
+
+**Added:**
+
+- xAPI Quiz Report – Added empty labels for Storyline matching and Likert questions when und is missing #1047
+
+**Fixed:**
+
+- Captivate – Added support for registration when the package contains 
+```
+tincan.xml
+```
+
+ but does not include 
+```
+captivate.css
+```
+
+ #1007
+- Rise/SCORM – Resolved a 403 error for guests on inner pages when global “protect modules” is enabled, but the lesson is configured not to be protected #1049
+- Fixed resume state corruption caused by 
+```
+parse_str
+```
+
+ converting dots to underscores #1062
+- Corrected 
+```
+suspend_data
+```
+
+ corruption when the course name contains 
+```
+&
+```
+
+ #1065
+- Fixed an undefined array key warning for 
+```
+protect-scorm-tin-can-modules
+```
+
+ on PHP 8+ #1018
+
+---
+
+### 5.1.3.1 [2026-01-30]
+
+**Fixed:**
+
+- Rise Module Resume – Resolved an issue that prevented modules from resuming correctly by improving how activity URLs are detected and handled using a prioritized resolver across multiple sources #994
+
+---
+
+### 5.1.3 [2026-12-23]
+
+**Added:**
+
+- Reporting – Enhanced 
+```
+tincanny_module_allow_db_capture
+```
+
+ and 
+```
+tincanny_process_content
+```
+
+ filters to support skipping specific xAPI events and reduce database bloat #983
+
+**Fixed:**
+
+- Excel/CSV Export – Resolved an issue where exporting data for individual courses would get stuck on a loading spinner #978
+- Quiz Question Analysis Report – Restored missing search field and CSV export option that were previously available in the report interface #987
+- Rise Module Resume – Resolved an issue that prevented modules from resuming correctly by improving how activity URLs are detected and handled using a prioritized resolver across multiple sources #964
+- SCORM Modules – Resolved an issue where modules failed to load for specific users when 
+```
+module_id
+```
+
+ was 0 by adding a guard check for invalid IDs #981
+- SCORM Uploads – Resolved an issue where certain SCORM packages were misclassified as Articulate Rise, preventing SCORM API injection and causing “Unable to acquire LMS API” errors #976
+- xAPI Reports – Resolved an issue where activity names were blank for statements missing a description by adding a fallback to use the activity’s name #974
+
+---
+
+### 5.1.2 [2025-12-10]
+
+**Fixed:**
+
+- Mark Complete Button – Resolved an issue where the button was not rendered on Single Page Courses due to late hook registration #959
+- Tin Canny – Resolved an issue where iSpring FlipBook modules displayed a blank page after upload #961
+- Tin Canny Uploader – Resolved a JS crash during ZIP uploads on Windows caused by a missing 
+```
+invalid_file_type
+```
+
+ i18n string when certain MIME types are detected #970
+
+---
+
+### 5.1.1 [2025-10-24]
+
+**Updated:**
+
+- Added a new filter 
+```
+uo_tincan_ld_admin_capability_check
+```
+
+ to allow site owners to define which roles can access Tin Canny reporting features, replacing the previous administrator-only restriction #923
+
+**Fixed:**
+
+- Adjusted loading order to require Composer autoload before 
+```
+init.php
+```
+
+ for proper initialization #954
+- Removed unintended space from the option name to ensure consistent option handling #954
+- Tin Canny User Report – Text strings now support translations #937
+- Frontend User Report – Made the % Complete and Avg Quiz columns sortable #908
+- Prevented the 
+```
+run_activity_name_hash_migration_event
+```
+
+ cron job from being repeatedly re-scheduled when Tin Canny Reporting is active #935
+- Protection setting not applying correctly when set on a lesson or topic #943
+- Resolved autoload conflict with the “Insert or Embed Articulate Content into WordPress” plugin #920
+- Standardized progress calculation using LearnDash to resolve data inconsistencies between the single Course table and course summary table #944
+- Resolved issues with xAPI state requests not loading correctly and added optional debug logging support for troubleshooting #952
+
+**Internal:**
+
+- Hide unnecessary notices on Tin Canny Reports #933
+- Updated uploader node dependencies #931
+
+**Performance:**
+
+- Optimized reporting queries by splitting large 
+```
+INNER JOIN
+```
+
+ operations into indexed subqueries, reducing scanned rows from millions to thousands and significantly improving execution time #925
+
+---
+
+**Important:**
+
+- **Tin Canny Reporting for LearnDash v5.0+ is a major update,**with many improvements across reporting, and updates to the library used to display modules in a lightbox.**We recommend testing this update on a staging site prior to deploying it to your live site.**
+
+### 5.1.0.3 [2025-07-31]
+
+**Updated:**
+
+- Tin Can – Added WP filter 
+```
+tincanny_result_override
+```
+
+ to override results value #894
+
+**Fixed:**
+
+- Course Reports – Adjusted when exclude role and user ID filters are applied to ensure they run at the correct point during initialization #916
+- Quiz Module Report (frontend) – Fixed uncaught ReferenceError when 
+```
+sfwd_data
+```
+
+ is not defined #896
+- Quiz Report – Fixed incorrect user display by syncing group user IDs with actual group members #902
+- SCORM driver – Improved 404 handling to ensure redirects work properly without affecting other 404 pages #906
+- Tin Canny Reports (frontend) – Fixed User Report redirecting to Course Report due to Group filter #900
+- User Report – Resolved issue showing double enrolment counts on some sites #891
+
+**Under the Hood:**
+
+- Restored missing 
+```
+scormdriver-sync.js
+```
+
+ to support SCORM sync #917
+
+---
+
+### 5.1.0.2 [2025-06-27]
+
+**Fixed:**
+
+- Licensing – Plugin license key was being automatically reactivated immediately after deactivation #887
+- SCORM modules – Updated legacy file paths to 
+```
+scormdriver.js
+```
+
+ and 
+```
+scormdriver-sync.js
+```
+
+ for older uploaded modules #886
+- Storyline modules – Resolved an issue where questions were not captured for reporting under specific conditions #885
+- Tin Can Report & xAPI Quiz Report – Some group leaders were prevented from using group filters #879
+- Site Check – Removed obsolete PHP file check #882
+
+---
+
+### 5.1.0.1 [2025-06-20]
+
+**Updated:**
+
+- Tin Canny Module Modal – Added 
+```
+closeOnOutsideClick
+```
+
+ to the JS config, configurable via WordPress filter 
+```
+uo_tincanny_glightbox_config
+```
+
+ #871
+
+**Fixed:**
+
+- LearnDash Lessons – Mark Complete and Completion Condition were not migrating to new meta when upgrading from v4 to v5 for some users #876
+- LearnDash Lessons – “Always enabled” setting for the Mark Complete button was not functioning as expected #874
+
+---
+
+### 5.1 [2025-06-05]
+
+**Added:**
+
+- Manage Content – Visual overhaul with a modernized design
+- Manage Content – Added columns to show uploaded date and filesize of each module #867
+
+**Fixed:**
+
+- Caching condition dropdown not showing options #854
+- Course Report and User Report tabs were being removed when “Capture Tin Can and SCORM data” setting was set to “No” #858
+- Tin Can Reports – User Search was not working due to SQL WHERE clause issue #864
+- User Report – Enrolled group courses were not included in report #862
+- Settings – Deleting Tin Canny Data or Bookmarks with a selected course caused a PHP error #851
+
+**Under the Hood:**
+
+- Ensure 
+```
+/wp-json/uncanny_reporting/v1/courses_overview/
+```
+
+ runs when needed #860
+
+---
+
+### 5.0.2 [2025-05-22]
+
+**Fixed:**
+
+- Course & User Report – Now displays only relevant data to group leaders #849
+
+---
+
+### 5.0.1 [2025-05-14]
+
+**Updated:**
+
+- Tin Canny Group Quiz Report – Added caching to improve report load times and a loading animation to enhance UX #846
+
+**Fixed:**
+
+- Individual Quiz Report – PHP error when loading the Gutenberg block on the front end #840
+- Tin Can Statement – PHP error when actor data is received as an array instead of a string from some modules #837
+- Tin Canny Course/User Report – Fixed an issue preventing the Gutenberg block from loading on the front end #838
+- Tin Canny Group Quiz Report – Shortcode not rendering on the frontend #844
+- Tin Canny Lesson/Topic Reports – Improved Gutenberg block UI and fixed a JavaScript issue #843
+- Tin Canny Reports – Fixed broken “See details” links in front end user reports #842
+
+---
+
+### 5.0 [2025-05-08]
+
+**Added:**
+
+- Quiz Report – Shortcode parameter 
+```
+exclude_non_course_quizzes
+```
+
+ to exclude non-course quizzes. #821
+- Quiz Report – WordPress filter 
+```
+uo_tincanny_quiz_report_user_report_url
+```
+
+ to override the ‘userReportUrl’ parameter. #753
+- Settings – Option to remove all Tin Canny data on plugin deletion. #794
+- Settings – Site Check now confirms the plugin has direct access to PHP files. #141
+- Settings – Course and User Report – Option to select a default group and page length when loading reports. #398
+- Settings – Reset Data: “Purge statements” setting now supports purging specific statement types. #721
+- Tin Can Report – WordPress filter 
+```
+uo_tincanny_data_consider_scaled_score
+```
+
+ to consider scaled scores in reporting. #802
+- User Report – “Completion date” for Lessons/Topics. #494
+- User Report – “Start date” for Courses. #493
+
+**Updated:**
+
+- Course Report – Refactored and improved performance. #398
+- User Report – Refactored and improved performance. #398
+- Tin Can Report – Refactored and improved performance. #398
+- xAPI Quiz Report – Refactored and improved performance. #398
+- Tin Can – Statement capture now falls back to user ID when email is unavailable. #810
+
+**Fixed:**
+
+- Course Report – 0% completion shown even when users completed the course. #767
+- Manage Content – Button/field misalignment when no modules are present. #589
+- PHP Warning – Undefined variable in 
+```
+Slides.php
+```
+
+ on some sites. #812
+- Module Uploader – Error messages sometimes not shown to users when module registration fails. #808
+- PHP Notice – Function 
+```
+_load_textdomain_just_in_time
+```
+
+ called incorrectly. #825
+- ScormDriver – Incorrect if condition causing a JavaScript error in some modules. #799
+- Tin Canny Module Uploader – Rise SCORM modules now correctly identified. #770
+- ```
+tincanny_reporting
+```
+
+ custom capability not applied on network-installed multisite. #748
+
+**Under the hood:**
+
+- Major internal rework – Core architecture and systems overhauled for improved stability and extensibility. #398
+- Updated libraries – All major libraries updated to latest versions including charting, DataTables, lightbox, and module search components. #398
+- “Try Automator” menu entry renamed to “Automation”. #517
+- Suppressed admin notices to reduce noise on Tin Canny pages. #722
+- Frontend module modal pop-up switched to 
+```
+glightbox
+```
+
+. #674
+
+---
+
+### 4.4.1 [2025-01-27]
+
+**Added:**
+
+- Added Time column to Lesson & Topic Reports to show how long the user spent in each lesson/topic (requires Simple Course Timer from the Uncanny Toolkit Pro for LearnDash) #701
+- Added a setting to select SCORM driver type (Async/Sync) for newly uploaded modules #771
+
+**Fixed:**
+
+- AR2017 Issues with results scoring 65387 #729
+- Divi Theme – Frontend editing is throwing PHP warnings in preview mode 69621 #783
+- PHP Notices and some faulty SQL Queries 67024 #758
+- ```
+ultc_current_request_type
+```
+
+ header returning NULL in some situations #776
+
+---
+
+### 4.4.0.4 [2024-09-26]
+
+**Fix:**
+
+- Restrict “Mark Complete” behavior – “Disabled until complete” activation changes detailed in the last release were omitted and are now included #750
+
+---
+
+### 4.4.0.3 [2024-09-12]
+
+**Fixed:**
+
+- Tin Canny Course Report – Percentage column displaying 0% on some sites #746
+- Quiz Report 
+```
+[uo_individual_quiz_report]
+```
+
+ – PHP warnings resolved #742
+- Restrict “Mark Complete” behavior – “Disabled until complete” now activates the button in the latest Chrome release #750
+- Tin Canny User Report – Course progress incorrectly showing “Not started” in some cases #734
+
+**Internal:**
+
+- ```
+[uotc_ld_quiz_report]
+```
+
+ – Added WP filters to override the “Not attempted” string #725
+
+---
+
+### 4.4.0.2 [2024-07-18]
+
+**Updated:**
+
+- Lesson Report 
+```
+[uotc_lesson_report]
+```
+
+ – WP filter 
+```
+uo_tincanny_uotc_lesson_report_page_length
+```
+
+ to configure DataTable page length on page load #697
+- SCORM launcher – WP filter 
+```
+uo_tincanny_reporting_scorm_launch_url
+```
+
+ to modify the launch URL #699
+
+**Fixed:**
+
+- Tin Canny Reporting – Child groups not available in dropdown for group leader #695
+- Quiz Reports – Custom query LD table names #715
+- Rise Module – Custom HTTP Header #704
+
+---
+
+### 4.4.0.1 [2024-03-18]
+
+**Updated:**
+
+- Front End Quiz Reports – Added “Detailed Report” column as a default column #665
+- Tin Canny Uploader – Use 
+```
+wp_max_upload_size
+```
+
+ value if it’s greater than 2 GB for larger file uploads #681
+
+**Fixed:**
+
+- Front End Quiz Reports – Group leaders see all groups in some instances #667
+- Tin Can Report – Tab not hiding in front end when “Enable Tin Can Report on front end” is set to No #672
+- Tin Canny Uploader – Improved support of a module in a subfolder when full zip option is selected #655
+- Tin Canny Uploader – Max upload file size error message displays Bytes but shows in MB #679
+- iSpring 11 module not sending anything but “Experienced” statements #654
+
+**Under the hood:**
+
+- Licensing endpoint update #685
+- PHP notice when 
+```
+$_SERVER[HTTP_REFERER]
+```
+
+ is not set #657
+- Quiz Report – Incorrect namespace format issue of the REST call #661
+- Tin Canny Reporting – Added WP Action 
+```
+tincanny_reporting_before_courses_overview_report
+```
+
+ #670
+
+---
+
+### 4.4 [2024-02-08]
+
+**New Feature:**
+
+- New report – Quiz Report 
+```
+[uotc_ld_quiz_report]
+```
+
+ #487
+
+**Addition:**
+
+- Tin Canny Uploader – Show maximum upload size limit by host when full zip option checkbox is selected #649
+
+**Update:**
+
+- Tin Canny Uploader – Removed cancel button for full zip uploads #644
+
+**Fixed:**
+
+- Tin Canny Uploader – File by File method – Update Error handling of 403 and 503 #643
+- Tin Canny Uploader – Replace module functionality with full zip creating new module #645
+
+---
+
+### 4.3.1 [2024-01-25]
+
+**Addition:**
+
+- Added WP Filter 
+```
+uo_tincanny_reporting_ispring_11_include_tin_can_support
+```
+
+ to optionally disable iSpring 11 support #634
+
+**Updated:**
+
+- Tin Canny Blocks – Strings are translatable now #632
+- Tin Canny Uploader – Checkbox added to upload full zips instead of file-by-file upload #590
+
+**Fixed:**
+
+- Quiz Question Analysis Report – PHP Error in a specific situation #635
+- LearnDash – Admin Pages – Action dropdown formatting broken when Tin Canny is active #639
+
+**Under the hood:**
+
+- Added 
+```
+$force
+```
+
+ param for 
+```
+learndash_process_mark_complete
+```
+
+ function for a future LearnDash update #630
+- Additional validations before deleting module directories #641
+
+---
+
+### 4.3.0.11 [2024-01-12]
+
+**Fixed:**
+
+- H5P statements are not recording #628
+
+---
+
+### 4.3.0.10 [2024-01-11]
+
+**Update:**
+
+- Course Report – Ability to allow viewing all data based on WP filter `tincanny_view_all_reports_permission` #620
+
+**Fixed:**
+
+- Ensure Multiple cross-site scripting (XSS) functions are loaded in uploaded SCORM or xAPI module #618
+- Front End User Quiz Report is not displaying SCORM/xAPI scores #617
+- Course Report – PHP notice when lesson no longer exists #626
+
+---
+
+### 4.3.0.9 [2024-01-02]
+
+**Fixed:**
+
+- Security update checks on reporting table row data #615
+- Folder permissions update for new uploads #608
+- Front End Quiz Report displaying HTML code #606
+- Uploader Module incorrectly identifying some authoring tools #611
+- Tin Canny Manage Content page – Stop deregistering scripts #614
+- ucTinCan endpoint 404 in some environments #610
+
+---
+
+### 4.3.0.8 [2023-12-14]
+
+**Updated:**
+
+- Manage Content Page – WP filter `
+```
+uo_tincanny_uploader_manage_content_deregister_scripts
+```
+
+` to handle issues with `
+```
+wp_deregister_script
+```
+
+` on some sites #596
+- Course report – Database query to fetch user’s meta improved to decrease load time #598
+- Code quality updated for improved security #600
+
+**Fixed:**
+
+- Course Report – Corrected an issue with In Progress data when a group filter is used #591
+- PHP 7.2 – PHP Error fix #594
+
+---
+
+### 4.3.0.7 [2023-11-09]
+
+**Updated:**
+
+- Individual Quiz Report – WP filter 
+```
+uo_tincanny_quiz_report_show_multiple_attempts
+```
+
+ to show multiple quiz attempts in report #585
+- Content Protection – WP filters 
+```
+uo_tincanny_protection_headers
+```
+
+ & 
+```
+uo_tincanny_file_motified_http_status_code
+```
+
+ to modify Content Header attributes #581
+
+**Fixed:**
+
+- Blocks – Removed 
+```
+lodash
+```
+
+ dependency for WordPress v6.4+ #587
+
+---
+
+### 4.3.0.6 [2023-10-18]
+
+**Fixed:**
+
+- Course and User reports – Improved groups query #573
+- Course and User reports – Reports showing 0 values in a specific scenario on some sites #573
+- Improved PHP 8.2 compatibility #578
+
+---
+
+### 4.3.0.5 [2023-10-13]
+
+**Fixed:**
+
+- xAPI Quiz Report – Module not sending Question text #566
+- Course and User reports – Stuck in an infinite loop when a group leader has several hundred groups #563
+- Improved LearnDash active check #561
+- iSpring Module not loading after first launch #558
+- Module table column update – PHP Error in a specific situation #556
+- Course overview – Dividing by Zero PHP Error #568
+
+---
+
+### 4.3.0.4 [2023-08-31]
+
+**Fixed:**
+
+- Removed unnecessary htaccess changes #554
+
+---
+
+### 4.3.0.3 [2023-08-29]
+
+**Fixed:**
+
+- Tin Canny Uploader – Custom Image option #550
+- Tin Canny Uploader – Increased allowed module title length #548
+- AJAX call running on xAPI events when “Capture Tin Can and SCORM data” is disabled #546
+- htaccess changes to support encoded spaces #544
+- Tin Canny Uploader – Module sub-type detection changes #541
+- Default module dimension settings #540
+- Dispatch open & close events to document when the lightbox is opened and closed #537
+- Tin Canny Uploader – REST API permissions #533
+
+**Updated:**
+
+- WordPress Filter: tincan_xapi_table_columns for Tin Can report #538
+
+---
+
+### 4.3.0.2 [2023-08-01]
+
+**Fixed:**
+
+- Tin Canny Uploader – Replace content functionality creating new module for uploads #529
+
+---
+
+### 4.3.0.1 [2023-07-31]
+
+**Fixed:**
+
+- Iframe settings not appearing in Gutenberg Tin Canny Content #525
+- Articulate Rise 360 modules not showing correct format and do not track statements correctly #523
+- Tin Canny uploader incorrectly identifying some Articulate modules #527
+
+---
+
+### 4.3 [2023-07-24]
+
+**New Feature:**
+
+- Tin Canny Uploader #505
+
+**Updated:**
+
+- Tin Canny Content Gutenberg block ignores the global lightbox size setting #448
+- Tin Canny Reports – Separate tabs into different pages #516
+
+**Fixed:**
+
+- do_action 
+```
+tincanny_module_result_processed
+```
+
+ not firing due to missing ‘completion’ parameter #508
+- WP install in a subfolder breaks the site check #506
+
+---
+
+### 4.2.0.4 [2023-06-01]
+
+**Fixed:**
+
+- Course report – PHP Error with 15000+ users when All groups option is selected #500
+- User Reports – Front End not loading complete data for Group Leaders #496
+- Replace quotes in display_name that is used while setting ‘actor’ parameter #491
+
+---
+
+### 4.2.0.3 [2023-05-15]
+
+**Fixed:**
+
+- Course report – Incomplete report data issue effecting in a specific situation #488
+- PHP warning of Undefined array key #486
+
+---
+
+### 4.2.0.2 [2023-05-08]
+
+**Updated:**
+
+- Lesson/Topics Reports – LearnDash Custom Labels support added #481
+- Course Report – Removed data upgrade instructions #479
+
+**Fixed:**
+
+- User Reports – Count columns not reflecting correct data #483
+- WP Dashboard – Most Completed Courses Widget – Course progress not showing #478
+
+---
+
+### 4.2.0.1 [2023-04-25]
+
+**Added:**
+
+- Beaver Builder – Tin Can Media button added #472
+
+**Fixed:**
+
+- Course report – Missing some data when “All users” is selected #475
+- Course report – PHP error if user roles are not defined #470
+
+---
+
+### 4.2 [2023-04-19]
+
+**Added:**
+
+- Lesson completion report #458
+- Topic completion report #458
+
+**Updated:**
+
+- Completion condition – Add support for target & verb #456
+- Course and Tin Can reports – Improved loading performance #450
+
+**Fixed:**
+
+- xAPI/H5P now uses AJAX instead of 
+```
+wp-load.php
+```
+
+ dependency #468
+- Fix 
+```
+phpinfo()
+```
+
+ issue by adding condition and only execute if it exists #459
+- User Report – User course filter not working #415
+- Group filter for Course/User Reports limited to 500 results #466
+
+---
+
+### 4.1.5.1 [2023-03-22]
+
+- Course Report – Data missing when a specific group is selected #454
+
+---
+
+### 4.1.5 [2023-03-20]
+
+**Fixed:**
+
+- iSpring 11 xAPI modules statements not tracking #441
+- Course reports never load because of insufficient site resources #450
+- Lightbox – All effects other than fade make the content load off-screen #442
+- PHP Error during sanity check in a certain situation #432
+- “Add Tin Canny Media” button missing from Divi Visual Builder #424
+- User report tab, TinCan page – Page title not showing correctly #420
+- User report tab, TinCan page – Course title showing up as ‘Not Found’ and Page title #417
+
+**Updated:**
+
+- Tin Canny Reporting – Improved translation strings #412
+
+**Internal:**
+
+- Added WordPress filter 
+```
+uo_tincanny_reporting_get_state_fallback_query
+```
+
+ to enable/disable fallback #427
+- Applied branding changes for branding changes #391
+- Security hardening for Uncanny Automator installer #431
+
+---
+
+### 4.1.4 [2022-12-01]
+
+**Updated:**
+
+- Tin Canny – Remove 
+```
+shell_exec
+```
+
+ dependancy and use WordPress FileSystem for various file management tasks #399
+
+**Fixed:**
+
+- Fix Leading space in translation #402
+
+**Developer**:
+
+- New do_action call to allow early exit #404
+- ```
+do_action( 'tincanny_before_process_request' );
+```
+
+---
+
+### 4.1.3.1 [2022-11-23]
+
+**Updated**:
+
+- Removed 
+```
+shell_exec
+```
+
+ admin notice
+
+---
+
+### 4.1.3 [2022-11-22]
+
+**Updated**:
+
+- Admin Reporting – Sort module name drop-down list in ascending order #374
+- Trigger custom JS event (
+```
+tincanny-learndash-statistics-contentchanged
+```
+
+) when LearnDash’s statistics content changes #354
+- Added X-Robots header #345
+
+**Fixed**:
+
+- Fix path issue during module upload if WordPress is installed in a subfolder #372
+- Course Report and User Report – PHP error with PHP 8.x+ in a certain situation #369
+- Uploading process – Fixed removal of a new line character in the asset title #364
+- Tin Canny Reporting – Fixed PHP Error if user data is not available #347
+- User Report – First & Last name not appearing on Multisite #395
+
+**Internal**:
+
+- Improved PHP 8+ compatibility #385
+- Dependency check 
+```
+shell_exec
+```
+
+ function #378
+- ```
+register_rest_route
+```
+
+ was called incorrectly #367
+- Added in-plugin notifications #381
+
+**Developers**:
+
+- Reporting – Added filters to add the ability to exclude user roles and user ids from a report #376
+- ```
+apply_filters( 'uo_tincanny_reporting_exclude_roles', array() );
+```
+- ```
+apply_filters( 'uo_tincanny_reporting_exclude_user_ids', array() );
+```
+- Question Analysis Report – Added do_action to append content #357
+- ```
+do_action( 'uo_tincanny_reporting_questions_no_quiz_selected' );
+```
+- ```
+do_action( 'uo_tincanny_reporting_questions_no_multiple_choice' );
+```
+- ```
+do_action( 'uo_tincanny_reporting_questions_table_beforebegin' );
+```
+- ```
+do_action( 'uo_tincanny_reporting_questions_table_thead_afterbegin' );
+```
+- ```
+do_action( 'uo_tincanny_reporting_questions_table_thead_beforeend' );
+```
+- ```
+do_action( 'uo_tincanny_reporting_questions_table_tbody_afterbegin' );
+```
+- ```
+do_action( 'uo_tincanny_reporting_questions_table_tbody_beforeend' );
+```
+- ```
+do_action( 'uo_tincanny_reporting_questions_table_afterend' );
+```
+- Reporting API – Added new filters #352
+- ```
+apply_filters( 'uo_tincanny_reporting_restrict_group_leader_post', $restrict_group_leader_post, $group_id);
+```
+- ```
+apply_filters( 'uo_tincanny_reporting_restrict_group_leader_postmeta', $restrict_group_leader_postmeta, $group_id);
+```
+- ```
+apply_filters( 'uo_tincanny_reporting_restrict_group_leader_associated_posts', $restrict_group_leader_associated_posts, $group_id);
+```
+- ```
+apply_filters( 'uo_tincanny_reporting_course_groups_enrolled', $results, $group_ids );
+```
+
+---
+
+### 4.1.2.2 [2022-06-30]
+
+**Fixed:**
+
+- CSS snippet hiding other admin notices #343
+
+---
+
+### 4.1.2.1 [2022-06-28]
+
+**Fixed:**
+
+- Tin Canny Reports – Export buttons now work as expected #340
+
+---
+
+### 4.1.2 [2022-06-21]
+
+**Added:**
+
+- Quiz Question Analysis – Add date range #334
+- Quiz Question Analysis Report – Excel export option #330
+- Uncanny Automator 1-click installer #84
+
+**Updated:**
+
+- Tin Can & xAPI reports CSV export – Add user ID column #324
+- Tin Can Course Report – Group names in the group drop down now appears alphabetically #318
+- Ticket submission from inside plugin now includes site URL and license details #205
+
+**Fixed:**
+
+- Quiz Question Report – Limit results to a specific quiz when share questions setting is enabled #328
+- Course Report – Data visualization #326
+- Function 
+```
+get_magic_quotes_gpc()
+```
+
+ deprecated since PHP 7.4 #317
+
+### 4.1.1 [2022-05-18]
+
+**Added:**
+
+- Quiz Question Analysis Report – 
+```
+uo_tincanny_reporting_questions_quiz_dropdown_title
+```
+
+ filter added #313
+
+**Updated:**
+
+- Quiz Question Analysis Report – “LearnDash” word dropped from quiz dropdown #312
+- Quiz Question Analysis Report – Additional CSS classes added #304
+
+**Fixed:**
+
+- Core – 
+```
+WP_Filesystem_Direct
+```
+
+ fallback added when shell_exec not available #301
+- Quiz Question Analysis Report – PHP error when the site is < PHP 7.3 #296
+- Tin Canny Report – hidden page field accidentally breaking frontend reports on some sites #282
+
+---
+
+### 4.1 [2022-03-31]
+
+**Added:**
+
+- New Report: [Quiz question analysis](https://www.uncannyowl.com/knowledge-base/learndash-quiz-question-analysis-report/) 
+```
+[uo_question_report]
+```
+
+ #269
+
+**Updated:**
+
+- Tin Canny shortcode – New 
+```
+do_action()
+```
+
+hooks for developers #277
+- ```
+tincanny_reporting_wrapper_before_begin
+```
+- ```
+tincanny_reporting_wrapper_after_begin
+```
+
+- ```
+tincanny_reporting_course_report_after_end
+```
+- ```
+tincanny_reporting_course_report_before_end
+```
+- ```
+tincanny_reporting_user_report_after_begin
+```
+- ```
+tincanny_reporting_user_report_before_end
+```
+- ```
+tincanny_reporting_tin_can_after_begin
+```
+- ```
+tincanny_reporting_tin_can_before_end
+```
+- ```
+tincanny_reporting_xtin_quiz_after_begin
+```
+- ```
+tincanny_reporting_xtin_quiz_before_end
+```
+- ```
+tincanny_reporting_wrapper_before_end
+```
+- ```
+tincanny_reporting_wrapper_after_end
+```
+- Tin Canny Reporting – Cache is now disabled by default #292
+
+**Fixed:**
+
+- LearnDash forced timer no longer unlocks the Mark Complete button if Tin Canny completion conditions have not been met #288
+- Tin Canny Report – Hidden page field breaking front end reports on some sites #282
+
+---
+
+### 4.0.7.2 [2022-03-15]
+
+**Added:**
+
+- Tin Canny module – Added options for width in vw and height in vh #271
+
+**Fixed:**
+
+- Tin Can Report – Group dropdown not appearing on some sites #274
+
+---
+
+### 4.0.7.1 [2022-03-03]
+
+**Fixed:**
+
+- Course Report – PHP error on some environments
+
+---
+
+### 4.0.7 [2022-03-03]
+
+**Updated:**
+
+- Added 
+```
+launched_lesson
+```
+
+ attribute to shortcode to support jumping to a specific Articulate Rise lesson by URL parameter #247
+- Disabled scrolling on the body element when the lightbox is open #246
+- Removed irrelevant “Success” column from Tin Can report #117
+- Group quiz report now supports negative scores #222
+- Improved PHP 8+ support #227
+
+**Fixed:**
+
+- Conflict with “Admin Menu Editor Pro” causes Tin Canny to erroneously list all groups on reports #258
+- H5P results are now correctly mapped to courses when basic HTTP authentication is enabled #241
+- Front End Quiz Report now includes line breaks in essay question responses #240
+- xAPI Quiz Report now displays accurate results for multiple attempts on the same question #234
+- PHP error if a module sends a non-standard SCORM value #236
+- PHP warning – Use of undefined constant in admin-send-ticket.php #143
+
+---
+
+### 4.0.6 [2021-12-14]
+
+**Added:**
+
+- Support for negative scores in the Individual Quiz Report #217
+- Support for some non-standard SCORM modules missing required title element #213
+- Improved PHP 8 compatibility #209
+
+**Fixed:**
+
+- Some SCORM statements not being recorded when the user’s email was included in statement data #202
+- Course ID is now recorded properly in some Lectora content #202
+- PHP notice causing an issue with Tin Canny data loading in the User Report #200
+
+---
+
+### 4.0.5 [2021-11-11]
+
+**Added:**
+
+- Fallback option for enrollment lookup due to Course Access List upgrade removal in LearnDash 3.5 #177
+
+**Updated:**
+
+- Improved translation support in Tin Canny xAPI Quiz Report / Tin Can Report #151
+- Changed permissions from update_plugins to manage_options for deleting an Individual User’s Tin Can Data #125
+
+**Fixed:**
+
+- Remote cURL calls causing an error on some servers #159 #170
+- MySQL query syntax fix of Tin Canny resume table #198
+
+---
+
+### 4.0.4 [2021-10-04]
+
+**Added:**
+
+- Support for BuddyBoss H5P blocks #137
+- Added primary key support in resume (bookmarks) database table #149
+- Internal PHP filters for developers #167
+- Updated JS filters for activity graphs #148
+
+**Updated:**
+
+- Improved translation support in reports #151
+- scormdriver.js file for Articulate Rise content #132
+- Changed permissions from update_plugins to manage_options for deleting an individual user’s Tin Canny Data #125
+- When the selected group is changed from the user report tab, the user is no longer sent back to the course report tab #134
+
+**Fixed:**
+
+- PHP warning – block_categories deprecated #153
+
+---
+
+### 4.0.3 [2021-08-20]
+
+**Updated:**
+
+- Improved compatibility with SCORM 2004 #94
+- Tin Canny Reporting – Improved compatibility when Redis object caching is enabled #93
+
+License updates #83
+
+**Fixed:**
+
+- Directory constants causing issues when 
+```
+UO_ABS_PATH
+```
+
+ is not writeable #90
+- Incorrect function return parameter types for 
+```
+get_data
+```
+
+ and 
+```
+get_xapi_data
+```
+
+ #88
+- Database error when previewing content from the Manage Content page #80
+- Some users missing from report when they are not assigned to a LearnDash Group #85
+- Tin Canny Reporting – Fixed multiple JS notices due to missing dependencies #102
+
+**For Developers:**
+
+- Tin Canny Reporting – 
+```
+uo_tincanny_reporting_disable_cache
+```
+
+ filter to disable Object caching #93
+
+---
+
+### 4.0.2 [2021-07-05]
+
+**Fixed:**
+
+- Data not displaying in reports when no groups exist
+- Data not displaying in reports for users not in a group
+
+---
+
+### 4.0.1 [2021-06-25]
+
+**Fixed:**
+
+- Fixed: First and last names not appearing in reports on some sites
+
+---
+
+### 4.0 [2021-06-24]
+
+**Added:**
+
+- Support for any xAPI or SCORM compatible content #37
+- Support for results from quizzes not associated with a course on the individual quiz report. #64
+- Improved compatibility of Tin Canny content with Bootstrap #55
+- Support for “Add Tin Canny Media” button in WP Bakery Page Builder #50
+
+**Updated:**
+
+- Improved performance of reports #63
+
+**Fixed:**
+
+- When “Capture Tin Can and SCORM data” is set to No, Mark Complete behaviours are now hidden #43
+- Experience API Package Error #75
+- Various database errors on some sites #74
+- Conflict with Gravity Forms on some sites #66
+- User reports not showing data on some sites #57
+- “View” link for certificates on reports is now translatable #52
+- Elementor no longer causes console errors on Tin Canny pages in /wp-admin #46
+- Tin Canny Group Quiz Report Gutenberg block now saves User Quiz Report URL parameter value #34
+- PHP notices when uploaded file name contains certain characters #31
+- LearnDash message “Please go back and complete the previous .” no longer missing text in some situations #27
+- Lesson list no longer truncated on user report #23
+- PHP warning in Tin Can driver #10
+- xAPI Report column labels are now translatable #3
+
+---
+
+### 3.6.2 [2021-03-19]
+
+**Added:**
+
+- Support for negative Tin Can scores
+
+**Fixed:**
+
+- When a non-default setting is chosen for User identifier(s), some columns may appear blank
+- Total users enrolled in a course reported incorrectly in some instances
+- PHP Warning: Fixed default value for active classes option
+
+---
+
+### 3.6.1 [2021-02-19]
+
+**Fixed**:
+
+- Database prefix issue on some sites
+
+---
+
+### 3.6 [2021-02-16]
+
+**Added**:
+
+- Support for embedding Tin Canny modules with Mark Complete integration in a [Single Page Course](https://www.uncannyowl.com/knowledge-base/single-page-courses/) (requires the [Uncanny Toolkit Pro for LearnDash](https://www.uncannyowl.com/downloads/uncanny-learndash-toolkit-pro/))
+- Slower compatibility mode for xAPI statement capture for compatibility with modules that send statements on module closure
+- Setting to select what user data columns are displayed on the User Course and User Overview reports
+- Ability to sort on all columns of the User Report
+- Module ID now displayed in Gutenberg block for Tin Canny content
+- More descriptive error messages when an error is encountered while uploading Tin Canny modules
+
+**Updated**:
+
+- Reorganized settings page
+- Course and lesson IDs are now saved with bookmark data
+- uo_group_quiz_report shortcode now accepts relative URL for user_report_url parameter
+
+**Fixed**:
+
+- Close lightbox icon difficult to see on some sites
+- Incorrect permission_callback was preventing group leaders from viewing some quiz results
+- See details link in reports would not work when collapsed (narrow window or mobile view)
+- Required LearnDash version message updated to version 3.1
+- Group Leaders not assigned to a group now see an error message instead of a blank screen
+- Various PHP notices that appear in some situations
+
+---
+
+### 3.5.3 [2020-12-04]
+
+**Added**:
+
+- Ability to specify a verb and a result in a completion condition with “&&” operator. Example: result > 80 && completed
+
+**Fixed**:
+
+- Hidden and Autoadvance setting not automatically advancing the user on some modules
+
+---
+
+### 3.5.2 [2020-11-26]
+
+**Fixed**:
+
+- Hidden and Autoadvance setting was redirecting to /undefined in the last lesson of a course
+- Mark Complete integrations “Hidden until complete” and “Disabled until complete” not working for some modules
+
+---
+
+### 3.5.1 [2020-11-16]
+
+**Fixed**:
+
+- Captivate files no longer throw a JavaScript error on load
+
+---
+
+### 3.5 [2020-11-12]
+
+**Added**:
+
+- Support for Tin Canny Gutenberg block embedded inside another block
+
+**Updated**:
+
+- Improved performance and stability of Mark Complete options with reduced delay before action
+- Improved consistency of user segmenting by groups on newer versions of LearnDash
+- Allowed YouTube, Wistia and blob data type in content security policy for improved compatibility with additional content types
+- Added filters to make it easier for developers to customize access to reports
+
+**Fixed**:
+
+- Database::create_table_snc_post_relationship no longer throws an error on WordPress multisite
+- Quiz reports no longer throws a database error when no courses are selected
+- Sorting by date is now correct on individual quiz report
+- Some SCORM-based Storyline modules no longer display the error “Unsupported file type detected”
+
+---
+
+### 3.4.4 [2020-08-19]
+
+- Updated: Content protection now supported on additional server configurations
+- Updated: Detailed quiz reports on [uo_individual_quiz_report] now work on LearnDash 3.2+
+- Updated: Added permission_callback to all Rest API calls for WordPress v5.5 compatibility
+- Updated: Lightbox no longer limited to 90vh x 90vw
+- Updated: Security improvements (CVE-2020-9439)
+- Fixed: When “Enable sorting by % complete” is set to “No”, the enrolled course count is now accurate on the individual user report
+- Fixed: Hidden and Autoadvance now consistently marks the associated lesson/topic complete
+- Fixed: PHP warning: Illegal string offset ‘restrict-mark-complete’
+
+---
+
+### 3.4.3 [2020-07-20]
+
+- Added: Support for updated Storyline 1.2, Storyline 360 and Presenter 360 SCORM launch files
+- Updated: Lightbox JS to version 1.3.1 and added tweaks to support jQuery 3.x
+- Fixed: Missing translations in reporting-admin-menu.php
+- Fixed: Typo in “Certificate Link” text
+
+---
+
+### 3.4.2 [2020-06-30]
+
+- Added: Support for updated Storyline/Presenter xAPI launch files
+
+---
+
+### 3.4.1 [2020-06-25]
+
+- Added: Search field on Tin Canny uploader
+- Added: Dropdown to select rows displayed per page on Course and User reports
+- Updated: register_rest_route path no longer contains trailing slash
+- Updated: “Data not right? Try running the LearnDash data upgrades” message no longer shown to Group Leaders viewing reports in /wp-admin
+- Updated: Duplicate uo_enable_h5P_admin_ajax filter removed from classes/init.php
+- Updated: Changed “TinCanny Settings” to “Tin Canny Settings”
+- Updated: Content protection metabox now displayed only on public post types
+- Fixed: JavaScript conflict with Elementor
+- Fixed: Single course completion graphs now show accurate counts
+- Fixed: Hidden and Autoadvance setting not working for some modules
+- Fixed: Column filters now working on xAPI Quiz Report
+- Fixed: PHP notice: Undefined index on upload when using Tin Canny Gutenberg block
+- Fixed: PHP warning: Invalid argument supplied foreach() in reporting-api.php for courses with no users
+- Fixed: SQL error on some H5P statements that do not correctly include user details
+- Fixed: Database error trying to save resume progress for a lesson when viewed by an anonymous user
+- Fixed: Added default values for all plugin settings
+
+---
+
+### 3.4 [2020-04-03]
+
+- Added: Support for Lectora Inspire SCORM 1.2 and xAPI content
+- Added: Tin Can and xAPI Quiz reports now available on the front end; settings to enable/disable added to Settings page (default is disabled)
+- Added: Tin Canny protection settings on non-LearnDash post types
+- Added: Manage Content Page preview URL filter for sites using non-standard WordPress configurations: apply_filters( ‘tincanny_module_url_preview’, $src, $post );
+- Updated: Performance of Hidden and Autoadvance option improved
+- Updated: Added message to run Learndash data upgrades to improve reporting accuracy
+- Updated: Added support for Add Tin Canny Media button in Text element of Divi Builder
+- Fixed: All records now included if “Excel Export” is clicked on initial load of the Course Report
+- Fixed: Reports not loading when LD settings returning as array instead of string
+- Fixed: Tin Canny no longer attempts to save resume data for anonymous users
+- Fixed: Database error when H5P modules don’t pass correct user details in API call
+- Fixed: PHP Notice: Undefined offset: 0 when LearnDash post settings are uninitialized
+
+---
+
+### 3.3.8
+
+- Added: Setting to enable the Uncanny Toolkit Pro Autocomplete Lessons and Topics module to autocomplete lessons and topics even when a Tin Canny module is present on the page
+- Updated: When using Hidden and Autocomplete setting, the associated lesson/topic is now marked complete immediately when the completion verb is received
+- Fixed: Database error – Unknown column ‘stored’ on plugin activation on some server configurations
+- Fixed: Warnings in browser console on Tin Canny report pages
+- Fixed: xAPI Quiz and Tin Can reports no longer both return results when a query is performed on either report
+- Fixed: Detailed Report icon now displayed on Tin Canny reports in /wp-admin when LearnDash legacy theme is selected
+- Fixed: PHP notice if LearnDash settings have not yet been saved
+- Fixed: PHP warning – Illegal string offset ‘restrict mark complete’ if there is no postmeta available for the current post
+- Fixed: PHP notice – Undefined property: stdClass::$enrolled on dashboard widget when there are no users enrolled in a course
+- Fixed: PHP error – Class stdClass not found on some server configurations
+
+---
+
+### 3.3.7
+
+- Updated: Tin Canny Mark Complete integration setting now overrides the [Autocomplete Lessons and Topics module](https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics/) of the [Uncanny Toolkit Pro](https://www.uncannyowl.com/downloads/uncanny-learndash-toolkit-pro/) on all lesson and topic pages containing a Tin Canny module
+- Updated: Removed Foreign Key Check from Site Check page as errors reported were typically not related to foreign keys
+- Updated: All relevant database tables now set to use INNODB engine for improved support for foreign keys
+- Fixed: JavaScript error preventing some modules uploaded since version 3.3.6 to not load correctly
+- Fixed: PHP warning: Illegal character causing Mark Complete button to not be displayed on sites running PHP 7.3 if the post-level Mark Complete option was not set
+
+---
+
+### 3.3.6
+
+- Updated: Improved z-index compatibility of statistics container overlay with other document elements
+- Updated: Removed deprecated JavaScript content protection code from uploaded files
+- Fixed: PHP warnings and incorrect priority settings when Tin Canny settings metabox options were translated. Options are no longer translatable.
+- Fixed: The Mark Complete button was no longer appearing below Tin Canny content when Focus Mode was enabled
+- Fixed: SQL syntax error when a course had zero enrollments
+- Fixed: Average quiz scores inconsistent between course and user reports. User reports now include all attempts in the average
+
+---
+
+### 3.3.5
+
+- Added: Support for renamed quiz tables
+- Added: Additional checks to Site Check page for issues caused by mod_security PHP module or invalid foreign keys
+- Added: Filters tc_manage_content_cap and tincanny_can_get_data for managing access to reports for users with custom roles/capabilities
+- Updated: Improved support for converted Course Access Lists (LearnDash Data Upgrades)
+- Updated: Added additional check for whether the posts table is using the INNODB engine before converting
+- Updated: Removed references to deprecated uotincan_log table
+- Fixed: Duplicating a post that contains a Tin Canny Gutenberg block may result in an uneditable copy of the post
+- Fixed: PHP fatal error on Help/Submit Ticket tab in wp-admin
+
+---
+
+### 3.3.4
+
+- Added: Support for renamed LearnDash quiz database tables (wp_learndash_pro_quiz_)
+- Added: Action ‘tincanny_additional_user_profile’ for inserting additional custom functionality on user profile page
+- Added: Ability to customize text on Launch button in Classic editor uploader
+- Added: readme.txt file
+- Updated: Improved consistency of bookmarking and resume in Captivate files
+- Updated: Added additional checks for valid user information in reports to avoid JavaScript errors
+- Updated: Added fall back for missing pro_quizid activity meta if not stored by LearnDash, resulting in empty detailed quiz reports
+- Updated: Improved handling of content that attempts to detect Flash player by delaying window binding calls from JavaScript
+- Updated: Removed deprecated reference to activitystream.ms/schema/1.0/page
+- Updated: Removed option to launch Tin Canny content in same tab
+- Updated: Changed “Display Name” to just “Name” on reports
+- Updated: Added note about using Screen Options tab for customizing columns on xAPI report
+- Updated: Replaced references to test.com in placeholder file with current site’s URL
+- Updated: Report now filters out duplicate “passed” statements (identical “passed” statements submitted within 10 seconds of each other)
+- Updated: All related Tin Canny data now deleted when user deleted
+- Updated: Clearing a user’s LearnDash data now clears all Tin Canny data for that user
+- Updated: Quiz name now displayed properly in individual Tin Can report when Tin Canny module embedded in LearnDash quiz page
+- Updated: Mark Complete button now enclosed in separate div to streamline code to hide/show the button
+- Fixed: Mark Complete button no longer appears momentarily on page load when “Hidden and _______” option is selected
+- Fixed: Reports now inheriting LearnDash labels for lesson and topic on all pages
+- Fixed: PHP warning in init.php on some servers
+- Fixed: PHP fatal error if Rise submits results without a score
+- Fixed: Summary user counts on multisite sub-sites showing user totals across site network
+- Fixed: Plugin sending extraneous data in unrelated AJAX responses in some situations
+- Fixed: JavaScript error if less than 30 days of LearnDash course completion data is available
+- Workaround: When a Gutenberg post is cloned with the Duplicate Posts module of the Uncanny LearnDash Toolkit Pro, Tin Canny Gutenberg blocks in the cloned post now function correctly
+
+---
+
+### 3.3.3
+
+- Fixed: JavaScript error causing Mark Complete button integration to fail in some instances when a module is opened in a new window
+- Fixed: PHP Fatal Error when Rise courses don’t return a score value on quiz questions
+- Fixed: xAPI Quiz Report – Filters for Correct/Incorrect returned the opposite of what was selected
+- Fixed: PHP Notice: Undefined Index: nonceProtection
+
+---
+
+### 3.3.2
+
+- Updated: Improved Mark Complete button handling for Storyline content
+- Fixed: Course enrollment numbers for some courses showing zero
+
+---
+
+### 3.3.1
+
+- Fixed: Unsupported mySQL command causing reports to not load on some servers
+- Fixed: Endpoint unreachable error in iSpring on multisite
+- Fixed: PHP Notice: Undefined index: disablePerformanceEnhancments
+- Fixed: Removed foreign key change for multisite introduced in 3.3
+
+---
+
+### 3.3
+
+- Added: Support for Articulate Presenter 360 files
+- Added: Compatibility with LearnDash 3.1
+- Updated: Improved report performance
+- Updated: Removed beta label from Replace Content function
+- Updated: Removed beta label from xAPI Quiz Report
+- Updated: Improved Mark Complete button integration compatibility with Firefox
+- Updated: H5P scripts no longer loaded when doing WP cron
+- Updated: Removed redundant add_action that was adding an empty div to wp-admin dashboard
+- Fixed: Autoadvance not working in last topic of lesson
+- Fixed: Lesson/topic-level content protection setting now works when the global protection setting is set to “Yes”. Lesson/topic-level content protection setting is now unavailable and hidden when global protection setting is set to “No”
+- Fixed: xAPI statement conflict when multiple browser tabs are open at the same time
+- Fixed: Layout of Replace Content modal dialog
+- Fixed: Detailed quiz reports not working on some sites
+- Fixed: Topic and Lesson names not displaying correctly in Tin Can tab of User report
+- Fixed: Reports not displaying names when column names were translated
+- Fixed: Date sorting in front-end reports when WordPress date format was set to d/m/Y
+- Fixed: Time on front-end individual quiz report now adjusted correctly for WordPress time zone
+- Fixed: Foreign key SQL error on WordPress multisite
+- Fixed: Illegal string offset ‘restrict-mark-complete’ PHP warning
+- Fixed: Datatables warning: Requested unknown parameter ’email’ if user_email is empty
+
+---
+
+### 3.2.2
+
+- Added: Three new Mark Complete button options: Hidden until complete, Hidden and autocomplete, Hidden and autoadvance. [Learn more](https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-mark-complete/)
+- Added: Ability to change the label on the Mark Complete button in lessons that contain a Tin Canny module
+- Added: Setting to enable sorting by % Complete; disable to improve report performance
+- Updated: If the site’s database prefix changes, foreign key constraints are now updated
+- Updated: Quiz table now shows all quiz attempts
+- Updated: Quiz averages now include failed attempts
+- Updated: Made it easier to reset the Question field on the xAPI Quiz Report (beta)
+- Updated: Lesson listings no longer constrained by post limits
+- Fixed: Issue with Group Quiz Report not displaying properly when a Course or Group name contains a double space
+- Fixed: Completed courses count was inflated on some views
+- Fixed: Open courses not included in the single course overview table
+- Fixed: Passing xAPI quiz scores were being recorded as 100% instead of the actual scores in some situations
+
+---
+
+### 3.2.1
+
+- Added: Additional filters for developers
+- Added: Reset xAPI Data button to erase all saved quiz data
+- Updated: Changed question dropdown on xAPI report (beta) to select2 to make it easier to select a question when the dropdown contains many entries
+- Updated: Module dropdown populates via AJAX when Course is selected, instead of requiring a page refresh
+- Fixed: Delete button that appears after upload now associated with correct content ID (affects Classic Editor only)
+- Fixed: Sorting on Completion Date not working on some sites
+- Fixed: Bug with Tin Can completion dates due to daylight savings time
+
+---
+
+### 3.2
+
+- Added: Compatibility with LearnDash 3.0
+- Added (beta): New xAPI Quiz Report – See what responses users selected on quiz questions. Supports Tin Can (xAPI) content only
+- Added (beta): Replace content – Ability to replace existing content from Manage Content page without having to delete, re-upload, and update existing shortcodes (or Gutenberg blocks)
+- Added: Numerous report filters for developers
+- Added: Site Check page to check for common configuration issues
+- Added: Total Courses / Total Learners stats to front end reports
+- Updated: Hard-coded plugin settings page URLs to avoid issues with translation
+- Fixed: Mark Complete button not disabled when using LearnDash 3.0 with LearnDash 3.0 theme enabled
+- Fixed: Bug with Tin Can completion dates due to daylight savings time
+
+---
+
+### 3.1.1
+
+- Fixed: Issue with Tin Can Report not displaying data on some sites
+- Fixed: Issue with content protection causing 404 errors on some sites
+- Fixed: Module links in Tin Can Report now work properly for sites in a subfolder
+
+---
+
+### 3.1
+
+- Updated: Improved H5P xAPI performance
+- Updated: Improved compatibility with jQuery 3.x (including FoundationPress theme)
+- Updated: Delete Tin Canny data profile options now only shown to Administrator users
+- Updated: Clicking Reset on Tin Can Report now keeps the user on the Tin Can Report tab
+- Updated: Restored assignment links in assignments table
+- Updated: .csv exports now include course slug / user email where applicable
+- Updated: Re-implemented sorting on Completion Date column in Course Report
+- Updated: Added Courses Enrolled, Not Started, In Progress, Completed columns to User Report
+- Updated: Tin Can endpoint URL in iSpring uploads now saved as relative instead of absolute URL
+- Updated: Improved module protection function (requires mod_rewrite support at the host level)
+- Fixed: Issue that would cause 403 errors in some content when viewed while logged out
+- Fixed: Previewing modules from the Manage Content page now works on sites installed in a subfolder
+- Fixed: User search in course report now displays data for all matching users
+- Fixed: Users showing as enrolled in all group courses for administrators when group filter is not selected
+- Fixed: Simple Course Timer module (Uncanny LearnDash Toolkit Pro) idle dialog now appears in front of Tin Canny content
+
+---
+
+### 3.0.2
+
+- Updated: Total Users and Total Courses statistics reinstated on main courses report page
+- Updated: Group filtering improved for admin-level users
+- Fixed: Summary numbers on user course report when the user is enrolled in more than 10 courses
+- Fixed: CSV export now includes all records
+
+---
+
+### 3.0.1
+
+- Updated: Plugin can no longer be activated unless LearnDash is already activated
+- Updated: Improved translation support
+- Updated: Improved wording of Tin Canny data management options on Edit User page
+- Fixed: Issue where group leaders could sometimes see users in other groups
+- Fixed: Data inconsistency when users with progress in Open courses were deleted
+- Fixed: Manage Content page was blank on some non-English sites
+- Fixed: Error when course progress is 100% or greater but no course completion date is stored (now displays “In Progress” instead of [object Object])
+
+---
+
+### 3.0
+
+*Important Note*: The columns that display data from the Simple Course Timer module of the Uncanny LearnDash Toolkit Pro were moved from this plugin to the Toolkit Pro plugin. The columns will not appear until Toolkit Pro version 3.0.3 (to be released imminently). If you require the use of these columns immediately, wait until the Toolkit Pro update is available before updating this plugin.
+3.0 brings a complete overhaul of reporting! Design and user experience have been streamlined and performance has been significantly improved for very large sites.
+- Added: Uncanny 3.0 plugin architecture (tabs for Help, License Activation, etc.)
+- Added: Setting to disable Tin Canny wp-admin dashboard widget
+- Added: Basic Gutenberg block support for individual and group quiz reports
+- Added: Filter for $item[‘url’] to help with troubleshooting issues on some sites
+- Added: User’s avatar now displayed on all individual user reports
+- Added: Breadcrumb navigation within reports
+- Added: Unique CSS class to dashboard, back end reports and front end reports
+- Added: Support for Captivate 2019
+- Added: Ability to purge Tin Can records and/or bookmark data for individual users
+- Added: Average quiz score column on course report
+- Updated: Improved performance on large sites
+- Updated: Improved consistency of data across courses and groups
+- Updated: Improved handling of deleted users
+- Updated: Improved accuracy and reliability of all charts
+- Updated: Charts now display clear notices if no data is available for the specified view
+- Updated: Replaced number of courses/users with buttons to jump quickly to specific reports
+- Updated: Improved responsiveness (mobile support) of all reports
+- Updated: Export CSV button and search fields are hidden on tables with only one row of data
+- Updated: Improved drill-down behavior: Course > User > Course report for user instead of Course > User > Course list > Course report for user
+- Updated: Removed some redundant console messages
+- Updated: Improved compatibility with newer MySQL versions
+- Updated: Improved translation support in reports and plugin settings page
+- Updated: Added support for additional H5P module types
+- Fixed: Essay question submissions can now be viewed in the Quiz Report
+- Fixed: Mark Complete button integration when module embedded with a Gutenberg block
+- Fixed: Manage Content page – Page navigation button size
+- Fixed: Typo – “Select a content”
+- Fixed: Error when Tin Can verb is not set
+
+Known Issues:
+- The Course Report uses a custom Uncanny Owl query that shows “In Progress” for users that have completed any activity in a course, such as a quiz. The User Report uses LearnDash functions that only return “In Progress” if the user has completed a lesson or topic. This means that “In Progress” vs. “Not Started” numbers may be inconsistent between the Course Report and User Report in the rare instance that a user has completed a quiz or other course activity but not completed any lessons or topics.
+
+---
+
+### 2.9.9.2
+
+- Added: Check for matching protocols (http/https) in WordPress general settings
+- Updated: Improved handling of duplicate URL issue in some edge cases
+- Fixed: Mark Complete button now disabled when module added with Gutenberg block and Mark Complete button integration is enabled
+- Fixed: Content now displayed to logged-out users on non-LearnDash post types when content protection is disabled
+- Fixed: Removed log file
+
+---
+
+### 2.9.9.1
+
+- Updated: Inconsistent text on Manage Content page
+- Fixed: Replaced Lorem Ipsum text in Gutenberg block
+
+---
+
+### 2.9.9
+
+- Added: Gutenberg modules for uploading Tin Canny content and embedding the front end course/user report
+- Added: “Manage Modules” page to enable module management outside of a WordPress post
+- Added: Buttons to purge “Answered” and “Experienced” statements from the database
+- Added: Support for “+” characters in user emails
+- Added: Support for H5P “Course Presentation” content type
+- Added: button_text attribute for setting text on the launch button
+- Added: width and height parameters now accept vw and vh CSS units
+- Updated: “Add Tin Canny Media” button in Classic Editor now uses standard button design
+- Updated: Tin Can (xAPI) data is no longer stored when “Capture Tin Can Data” is set to “No”
+- Updated: Improved time zone support in front end quiz report
+- Fixed: Typo in “Comma separated Tin Canny verb(s).”
+
+---
+
+### 2.9.8
+
+- Added: Compatibility with “A Tin Can verb is recorded from a Tin Can module” trigger in Uncanny Automator (https://automatorplugin.com)
+- Fixed: Missing records in some reports for users added to groups using non-standard methods
+- Fixed: Date search in Tin Can report
+- Fixed: Module not selected in Tin Can report drop down
+
+---
+
+### 2.9.7
+
+- Updated: Made export file names easier to read
+- Updated: Tin Can timestamps are now stored in the site’s time zone
+- Fixed: Duplicate URL issue in embedded modules on some sites with SSL enabled
+- Fixed: Data not loading in front-end quiz reports
+
+---
+
+### 2.9.6
+
+- Added: Title identifying user to the front end individual activity report
+- Updated: Replaced display names with first and last name (if available) in front end reports
+- Fixed: Restored missing data from new front end activity reports when there were multiple attempts
+- Fixed: Some files missing on upload of new modules
+- Fixed: DOCTYPE tag position in Rise files causing layout issues
+
+---
+
+### 2.9.5
+
+- Added: [user_quiz_report] shortcode to show a user his or her consolidated quiz and xAPI scores in a single report
+- Added: [group_quiz_report] shortcode to show Group Leaders and admins LearnDash quiz and xAPI scores of students by group and course
+- Fixed: SQL issue in reporting on multisite installations
+- Fixed: Donut charts did not render in some situations
+- Fixed: Global setting for “Disable Mark Complete button” now correctly labeled on settings page
+- Fixed: Stopped WordPress from automatically translating Tin Can report headings that caused columns to hide data
+
+---
+
+### 2.9.3
+
+- Fixed: Articulate Rise Mark Complete button integration
+- Fixed: Completion date now appears in reports on multisite installations
+
+---
+
+### 2.9.2
+
+- Fixed: Incorrect file versions in 2.9.1 release
+
+---
+
+### 2.9.1
+
+- Updated: Improved compatibility with Rise modules published as SCORM 1.2
+- Fixed: Issue loading Captivate modules (introduced in version 2.9)
+
+---
+
+### 2.9
+
+- Added: Beta support for modules from ANY authoring tool, provided the content launches with an .html file. Note that files embedded using this method will not have xAPI/SCORM statements recorded, and may display errors stating that they cannot communicate with an LMS/LRS
+- Updated: Improved tracking of xAPI statements from Articulate Rise modules
+- Updated: Improved Mark Complete button activation with Storyline 3/360 files when embedded using lightbox
+- Updated: Tweaked design of header on setting and back-end reporting pages
+- Fixed: Plugin license could not be deactivated on some sites
+- Fixed: SQL statement bugs in reporting-api.php
+- Fixed: Number of entries per page dropdown on Tin Can Report now functions as expected
+- Known Issue: Rise modules published as SCORM 1.2 may display an error when viewed
+
+---
+
+### 2.8.2
+
+- NOTE: If you are seeing your domain name duplicated in module embed shortcodes, deactivate and reactivate the plugin, then try embedding the module again.
+- Added: Option to allow Group Leaders to delete members to free up seats even after they’ve started or completed courses
+- Added: Option to prevent Group Leaders from taking up a seat when added to the Enrolled Users table
+- Added: [uo_groups] parameter add_group_leader_button to show/hide the Add Group Leader button
+- Added: Additional string localizations
+- Added: course-order parameter to sort the course drop-down on [uo_groups_course_report] and [uo_groups_quiz_report]. Possible values include ‘ID’,’title’,’date’,’menu_order’
+- Updated: Group Leaders can now be removed from the Enrolled Users table
+
+---
+
+### 2.8.1
+
+- Updated: Time Spent columns no longer require course completion to show data
+- Fixed: Broken SQL query in 2.8
+- Fixed: Site URL no longer duplicated in shortcode when embedding content
+- Fixed: PHP Notice when protection setting not explicitly set
+
+---
+
+### 2.8
+
+- Added: Beta support for Rise xAPI content
+- Updated: Tin Can report CSV export now considers applied report filters
+- Fixed: Site URL no longer duplicated in shortcode when embedding content
+
+---
+
+### 2.7
+
+- Added: Filter for header Content-Security-Policy (‘tincanny_content_security_policy’)
+- Updated: Course Summary button now translatable
+- Updated: Improved Tin Can/”Mark Complete” compatibility in Microsoft Edge and Internet Explorer
+- Fixed: Content protection no longer forced on non-LearnDash post types for logged-out users
+- Fixed: Empty columns in some reports
+- Fixed: Settings link on Plugins page
+
+---
+
+### 2.6.1
+
+- Updated: Tin Canny reporting capability now added to group_leader role on plugin activation only
+- Fixed: Plugin shows update available even after updating
+
+---
+
+### 2.6
+
+- Updated: All strings in front end reports are now translatable
+- Fixed: Typo on settings page
+
+---
+
+### 2.5
+
+- Updated: Tin Canny reports now appear on the WordPress dashboard for group leaders
+- Updated: Settings page layout
+- Updated: Removed Uncanny Owl branding from tincanny shortcode
+- Fixed: Tin Can tab no longer displays for group leaders when Tin Can data is disabled in settings
+- Fixed: Group Leaders could not see quiz data in reports
+- Fixed: Added message to Tin Canny front-end reports for users without access
+
+---
+
+### 2.4
+
+- Updated: Settings have now been consolidated under Tin Canny Reporting > Settings
+- Updated: Going forward, newly added modules will not have full URLs saved in the wp_snc_file table to make it easier to migrate the site to a new URL (Modules uploaded prior to version 2.5 will need to have their URLs updated in the database manaully if the site URL is changed)
+- Fixed: Issue with H5P module completion not enabling the Mark Complete button
+- Fixed: Issue with Free courses not displaying correctly in reports
+- Fixed: Issue with quiz averages displaying extremely large numbers under rare circumstances
+
+---
+
+### 2.3
+
+- Fixed: Mark complete functionality when multiple Tin Can/SCORM modules are on a single lesson/topic page
+- Fixed: Usage of wp_postmeta instead of $wpdb->postmeta, resulting in lesson, topic and quiz list not showing up in user course table
+- Fixed: Uncaught exceptions in when user has no data yet, a course has no users assigned, or a group is not fully set up
+- Fixed: JavaScript error that appeared in some situations when a quiz was deleted after having been completed by a user in a specific course
+
+---
+
+### 2.2.2
+
+- Updated: Removed admin message “An update is required for your Tin Can modules…” Message is now output to the browser console if present.
+- Updated: Removed redundant buttons in frontend report that linked to admin panel
+- Fixed: Group dropdown now filters report data correctly
+- Fixed: Group dropdown no longer appears for leaders of a single group
+
+---
+
+### 2.2.1
+
+- Updated: Improved reporting compatibility with LearnDash 2.5+ when Shared Course Steps is enabled
+- Updated: Default font color for table headings in front end reports
+- Fixed: Duplication of users and lessons in reports in some situations
+- Fixed: PHP Notice when viewing [tincanny] shortcode as a logged-out user
+
+---
+
+### 2.2
+
+- Added: Shortcode to display Tin Canny reports in the front end
+- Added: Dropdown to display data for a specific group
+- Updated: scormdriver.js to improve compatibility with Microsoft Edge
+
+---
+
+### 2.1.1.5
+
+- Updated: Reporting compatibility with LearnDash 2.5+
+- Updated: Tin Canny reports now use LearnDash custom labels for Courses, Lessons and Topics
+- Updated: JavaScript debugging code removed
+- Fixed: Error in some environments in Shortcode.php and RestEndpoint.php
+
+---
+
+### 2.1.4
+
+- Fixed: Convert wp_posts table to InnoDB mySQL engine to support foreign key mapping
+- Fixed: “An update is required for your Tin Canny modules. Refresh the page to complete the update.” message is now displayed using standard admin panel messaging functions
+
+---
+
+### 2.1.3
+
+- Updated: Deleting a user’s LearnDash course data also deletes any resume points for that user in Tin Can modules
+- Fixed: Required update error message temporarily removed to address acute issues on some sites
+
+---
+
+### 2.1.2
+
+- Added: options to unprotect uploaded modules
+- Fixed: H5P statement tracking
+
+### 2.1.1
+
+- Fixed: Issue with Mark Complete disabled in topics that did not contain Tin Canny content
+
+### 2.1
+
+- Fixed: Illegal String Offset issue on some server configurations
+
+### 2.0
+
+- Added: Hyperlinked user’s name to user’s profile page in user report
+- Added: Hyperlinked assignment name to assignment page in users’ assignment reports
+- Added: Support for Adobe Captivate 2017 modules
+- Added: Protection for Tin Can and SCORM modules based on user session
+- Updated: Changed the way modules communicate with WordPress to enable the Mark Complete button
+- Fixed: Illegal String Offset error in some situations
+- Fixed: User assignment reports now list only the selected user’s assignments
+- Fixed: Reporting errors if WP Debug is on
+
+---
+
+### 1.3.9.1
+
+- Improved H5P statement tracking
+
+---
+
+### 1.3.9
+
+- Added ability to use Tin Canny modules on any post types
+- Fixed inconsistency of user progress between Course Summary and Course Detail reports
+
+---
+
+### 1.3.8
+
+- Added Reset Bookmark Data button in Tin Canny Settings to manually clear resume data errors
+- Fixed 404 errors when resuming Articulate Rise modules
+- Fixed Tin Can statement tracking of Rise and iSpring modules using Request Payload
+- KNOWN ISSUE: Changing site URLs can cause Tin Can data to be omitted from reporting and will be addressed in the next release.
+
+---
+
+### 1.3.7
+
+- Added Tin Can statement tracking for Storyline 2 and Storyline 360 modules in Articulate Mobile Player
+- Updated EDD updater class
+- Fixed user counts to consider all group enrolment options
+- Fixed upload issue of iSpring modules published to web
+- Fixed Mark Complete issue of Captivate modules published to web
+- Fixed completion rate issues caused by group enrolment
+- Fixed Mixed Content errors caused by hard coded URLs
+
+---
+
+### 1.3.6
+
+- Added resume capability for Storyline, Captivate, and iSpring
+- Fixed custom image button in Tin Canny Uploader
+- Changed settings menu page title to Tin Canny Settings
+
+---
+
+### 1.3.5
+
+- Fixed upload issue introduced in 1.3.4
+
+---
+
+### 1.3.4
+
+- Added more error checking to Tin Canny Uploader
+
+---
+
+### 1.3.3
+
+- Added support for permalink containing index.php
+- Added error message when detecting unsupported zip file
+
+---
+
+### 1.3.2
+
+- Fixed errors when deleting Tin Can modules
+
+### 1.3.1
+
+- Fixed Mark Complete control for modules displayed in a new window on mobile
+
+---
+
+### 1.3
+
+- Added Group Leader access to reports
+- Fixed Mark Complete visibility for modules displayed in a new window
+
+---
+
+### 1.2
+
+- Added preliminary SCORM support
+- Added iSpring support
+- Added Articulate Storyline 360 support
+- Added Articulate Rise support (SCORM only)
+- Added admin setting to clear all Tin Can data
+- Added validation for average quiz score number
+- Changed minimum capability from ‘activate_plugins’ to ‘manage_options’
+- Removed View Report links on the Course Report page
+
+---
+
+### 1.1.6
+
+- Added: Beta Tin Can/xAPI support for iSpring content
+- Fixed: Notice of undefined variable”s”
+- Fixed: Paths to wp-h5p-xapi.js and wp-h5p-xapi.css files causing 404 error
+
+---
+
+### 1.1.5
+
+- Added Captivate/Storyline uploader to all regular post types
+- Updated Result column to show percentage of total score
+- Fixed issue of Captivate quiz scores not showing in Tin Can Report
+- Removed dependency on H5P xAPI plugin
+
+---
+
+### 1.1.4
+
+- Updated amCharts libraries to version 3.20.17
+- Fixed Tin Can report jQuery selector for empty charts
+
+---
+
+### 1.1.3
+
+- Added a number of under-the-hood architecture tweaks (Thanks, Mark!)
+- Fixed sorting by percentage complete
+- Fixed negative number showing on Y-Axis in Recent Activities chart
+- Fixed reports not displaying in subdirectory install
+
+---
+
+### 1.1.2
+
+- Fixed Storyline upload issue introduced in 1.1
+- Fixed a LearnDash condition that prevented the reports page from loading
+
+---
+
+### 1.1.1
+
+- Added all quiz attempts in user activities table
+
+---
+
+### 1.1
+
+- Added new performance metric “Least Completed Courses”
+- Added stats on total time spent in course
+- Added CSV export to all tables
+- Added option in Settings to control whether LearnDash Mark Complete button should be disabled until the learner completes all Tin Can modules in the lesson/topic
+- Added message to Course Overview Report when there is no data to display
+- Added message to User Progress Report when there are no activities to report
+- Added deletion of Tin Can data when a user’s LearnDash data is deleted
+- Fixed Javascript error when accessing H5P content in admin area
+- Fixed Javascript error with H5P Interactive Video
+- Fixed Javascript error caused by an undefined LearnDash group parameter
+
+---
+
+### 1.0.3
+
+- Fixed 502 Gateway error caused by groups with no assigned courses
+- Fixed rounding of timer seconds
+
+---
+
+### 1.0.2
+
+- Fixed padding for Storyline & Captivate lightbox
+- Fixed zip file upload issue
+
+---
+
+### 1.0.1
+
+- Fixed option to hide Tin Can data from reports
+- Changed table column heading from “Completion Time” to “Time to Complete”
+- Fixed Storyline/Captivate file upload issue when the ZipArchive module was not available on the web server
+- Fixed several TypeErrors
+
+---
+
+### 1.0
+
+- Initial release
+
+---
+
+### .toc_widget {display:none;}
+
+---
+
+## Set Up User Enrollment
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/set-user-enrollment/](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/)
+
+### Overview
+
+Uncanny Groups supports several ways to enroll learners into groups — from manually distributed enrollment keys to self-service registration forms and third-party form integrations. This article covers the available enrollment methods and how to configure each one.
+
+### How Enrollment Keys Work
+
+Each group can have a pool of enrollment keys. Group Leaders distribute these keys to invited learners, who redeem them to join the group and access the associated courses.
+
+Key lifecycle:
+
+- **Available** — the key has not yet been redeemed
+- **Used** — a learner has redeemed the key and is enrolled in the group
+
+Keys are tied to the group they were generated for. If a child group has its own keys, redeeming one of those keys places the learner in the child group (not the parent group). This behaviour was corrected in Uncanny Groups v6.1.2 and v6.1.3.
+
+For details on generating and managing keys, see [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/).
+
+### Registration Page
+
+A registration page lets new users create an account and redeem an enrollment key in a single step. This page is optional — it’s only needed when you’re distributing keys to users who don’t yet have a WordPress account.
+
+Because email templates do not include a registration page variable, we recommend adding the page URL manually to your email templates or linking to it from the site menu.
+
+See [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/) for guidance on editing email templates.
+
+### Built-In Registration Form
+
+The plugin includes a lightweight registration form by adding the **Enrollment Key Registration** block or shortcode for new user sign-up and key redemption:
+
+```
+[uo_groups_registration_form]
+```
+
+Add the **Enrollment Key Registration** block, or place the 
+```
+[uo_groups_registration_form]
+```
+
+ shortcode, on any WordPress page to create the registration page.
+
+#### Registration Form Settings / Attributes
+
+| Setting / Attribute | Description | Accepted Values | Default |
+| --- | --- | --- | --- |
+| redirect | Page to redirect the user to after successful registration | Relative or absolute URL | None (user stays on the same page) |
+| code_optional | Whether the enrollment key field is required | yes, no | no |
+| auto_login | Whether the user is automatically logged in after registering | yes, no | yes |
+| role | WordPress role assigned to newly registered users | Any valid WordPress role slug (e.g., subscriber, group_leader) | subscriber |
+
+**Example:**
+
+```
+[uo_groups_registration_form redirect="/dashboard" auto_login="yes" code_optional="no"]
+```
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/groups-front-end-registration-form.png)
+
+#### Terms & Conditions
+
+Administrators can define a custom Terms & Conditions statement in the plugin settings. When enabled, a checkbox is automatically added to the registration form requiring acceptance before submission.
+
+This setting does not apply when using Gravity Forms for group registration.
+
+### Enrollment Form for Existing Users
+
+For learners who already have a WordPress account, add the **Enrollment Key Redemption** block or use the redemption form shortcode. Logged-in users enter their enrollment key to join the associated group:
+
+```
+[uo_groups_redemption_form]
+```
+
+This shortcode supports the redirect and role attributes described in the registration form table above.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/groups-redemption-key-form.png)
+
+### CSV Enrollment
+
+Administrators can bulk-enroll users by uploading a CSV file from the Group Management page. Each row represents one user.
+
+**Required CSV format:**
 
 ```
 user_email,user_pass,first_name,last_name
 ```
 
-1. Select the file and click **Upload**. The plugin creates new WordPress user accounts for any email addresses not already in the system, enrolls all users in the group, and sends invitation emails.
-
-**Note:** For the bulk upload to work properly, a CSV file formatted with the following column order and headings must be used: user_email; user_pass; first_name; last_name.  CSV files that have incorrect formatting of email addresses, column names, etc will not be uploaded. You can download a sample file from the **Upload Users** modal box. If the user_pass cells are blank, a random password will be used, but the column heading should still be included. A column for “username” can optionally be included as the first column but is not required; if it exists but is left blank, username will default to the email address.
-
-![](https://www.uncannyowl.com/wp-content/uploads/2018/10/CSV-Add-Users-Group-Management.png)
-
-### Removing users
-
-To remove users from a group, select the users you would like to remove from the Enrolled User list, and a Remove User(s)  button will appear. Click on the Remove User(s) button. You will be prompted to confirm your action.
-
-Whether or not a Group Leader can remove users from the group, depends on the users group status:
-
-- **Always** — Group Leaders can remove users at any stage.
-- **Before course enrollment begins** — Leaders can only remove users who have not yet started any course.
-- **Before course completion** — Leaders can remove users until they complete all group courses.
-
-Depending on the options set by your site administrator, you may only be able to remove group members before they have enrolled and begun their courses.  Once a learner has begun completing the courses that are available in the group, or if they have completed all of the courses and their status is set to Completed, it may no longer be possible to remove them from the group.
-
-**Note:**Removing a user from a group un-enrolls them from the group’s courses. The seat they occupied becomes available again.
-
-### Password resets
-
-If a user has forgotten their password, a Group Leader can trigger a reset without accessing the WordPress back end:
-
-1. Locate and select the user in the **Enrolled Users** table. A **Send password reset** button will appear.
-2. Click the **Send password reset**
-3. The user will be emailed a link to reset their password.
-
-### Downloading enrollment keys
-
-Group Leaders can download a CSV of all unassigned enrollment keys for the group — useful for distributing keys manually or tracking redemptions in a spreadsheet.
-
-Click Users > **Download Keys** to export a CSV file containing each unused key and its status.
-
-This button is shown or hidden via the 
+- Columns are **comma-separated** (the importer also auto-detects semicolons)
+- Include a header row matching the format above
+- For new users, 
 ```
-download_keys_button
+user_pass
 ```
 
- shortcode or block settings attribute.
+ sets the initial password; if the user already exists, the account is reused
+- Users who don’t yet have an account are created automatically and enrolled
 
-### Emailing group members
+![Modal to upload a CSV and add users; shows 7 seats remaining and options to send enrollment keys or suppress emails; Add users button at bottom.](https://www.uncannyowl.com/wp-content/uploads/2018/10/CSV-Add-Users-Group-Management.png)
 
-Group Leaders can easily email all members of their group based on their course status (Not enrolled, Not started, In progress and/or Completed). Clicking Users > Email Users brings up the email group members interface.
+### Gravity Forms Integration
 
-Emails sent via this interface use the Group Leader’s name as the From Name, the Group Leader’s email address as the Reply-to Email, and the From Email address in Uncanny Groups > Settings as the From Email.  This is to reduce the likelihood that the emails are flagged as spam.  Members are sent the email via BCC, so group members will not see each others’ email addresses.
+Uncanny Groups v4.0 and later support enrollment key redemption through Gravity Forms.
 
-Note that this feature is not available by default. On your Group Management page, you must add the group_email_button=”show” attribute to your 
+**Requirements:**
+
+- Gravity Forms installed and active
+- Gravity Forms User Registration add-on (required when registering new users during key redemption)
+
+**Setup:**
+
+1. Edit your Gravity Forms form
+2. Add the **Uncanny Key** field from the **Advanced Fields** section
+3. Save the form
+
+**Behaviour:**
+
+- A signed-in user submitting a valid key is added to the associated group
+- A new user submitting a registration form with a valid key is created and added to the group
+
+Gravity Forms User Verification is supported for users who register and redeem a key in the same submission.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Gravity-Forms-Uncanny-Key.png)
+
+### WPForms Integration
+
+Uncanny Groups v4.0 and later support enrollment key redemption through WPForms.
+
+**Requirements:**
+
+- WPForms Pro or higher (required for registering new users directly into groups)
+
+**Setup:**
+
+1. Edit your WPForms form
+2. Add the **Uncanny Key** field type from the “Standard Fields” picker
+3. Save the form
+
+When a user submits a valid key, they are added to the associated group and the key is marked as redeemed.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/WP-Forms-Uncanny-Key.png)
+
+### Formidable Forms Integration
+
+Uncanny Groups v4.0 and later support enrollment key redemption through Formidable Forms.
+
+**Setup:**
+
+1. Edit your Formidable Forms form
+2. Add the **Uncanny Key** field type
+3. Save the form
+
+When a user submits a valid key, they are added to the associated group and the key is marked as redeemed.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Formidable-Forms-Uncanny-Key.png)
+
+### Theme My Login Integration
+
+Uncanny Groups v2.6 and later support enrollment via Theme My Login registration forms.
+
+**Setup:**
+
+1. Create a Theme My Login registration form on a new page and confirm it works correctly
+
+1. Navigate to **Uncanny Groups > Theme My Login** in the WordPress admin
+
+1. Check **Custom Theme My Login registration form including registration code field**
+
+1. An enrollment key field is automatically appended to the registration form
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Theme-My-Login-Uncanny-Key.png)
+
+### Related Articles
+
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — generate and manage enrollment keys, view key status
+- [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/) — set up invitation emails that include enrollment key links
+- [Uncanny Groups for LearnDash — Plugin Overview](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/) — feature overview and getting started
+- [Manage Learner Progress](https://www.uncannyowl.com/knowledge-base/manage-learner-progress/) — track and update learner course progress after enrollment
+- [Group Leader Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) — reporting tools available to Group Leaders
+
+---
+
+## Setting up Tin Canny Reporting for LearnDash
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/protecting-sharing-content-tin-canny/](https://www.uncannyowl.com/knowledge-base/protecting-sharing-content-tin-canny/)
+
+### Overview
+
+The **Tin Canny Reporting > Settings** page is where you decide how learner data is captured and shown, how the Mark Complete button behaves, how modules appear on the page, and how data is cleared when you need a fresh start. This article walks through every setting in the order it appears on the page.
+
+### Reports
+
+- **Disable wp-admin dashboard widget** — *Yes / No.* Tin Canny adds a small reporting summary to your WordPress admin home screen. If you’d rather keep that dashboard uncluttered, set this to **Yes** to hide the widget.
+- **Enable sorting by % complete** — *Yes / No.* Lets you sort report tables by each learner’s completion percentage. Sorting that column pulls a large amount of data at once, which can slow the reports down — or time out — on sites with a lot of users, so it’s best left off unless your user base is small and you want the convenience.
+- **Enable Tin Can Report on front end** — *Yes / No.* Adds the **Tin Can Report** as a tab inside the front-end reporting interface created by the [tincanny] shortcode, so admins and Group Leaders can reach it from a page instead of the dashboard.
+- **Enable xAPI Quiz Report on front end** — *Yes / No.* Does the same for the **xAPI Quiz Report**, adding it as a tab in the [tincanny] front-end interface.
+- **User identifier(s)** — *Display Name / First Name / Last Name / Username / Email Address.* Choose which identifying columns appear in the user list of the Course Report and User Report. Pick whatever combination makes it easiest to recognize your learners at a glance.
+
+### Course/User Report Settings
+
+- **Default group for Reports** — *All Users, or any of your groups.* Pre-selects a group so the Course and User reports open already filtered to it. On a large site this is a real time-saver, since the report isn’t loading every learner each time. You can still switch to a different group (or back to All Users) from within the reports whenever you like.
+- **Default page length** — *10 / 25 / 50 / 100 / 200.* Sets how many rows load per page in the reports. Smaller numbers load faster; larger numbers mean less paging back and forth. Choose what fits your data and your patience.
+
+### Tin Can/SCORM
+
+- **Capture Tin Can and SCORM data** — *Yes / No.* Controls whether Tin Canny records the Tin Can/SCORM statements your uploaded modules send. If you’re using modules from a supported authoring tool (Storyline, Rise, Captivate, iSpring) and want their results in your reports, turn this on. Set it to **No** to stop capturing — and note that when data capture is off, the **Tin Can Report** and **xAPI Quiz Report** tabs disappear from the reporting interface.
+- **Protect SCORM/Tin Can modules** — *Yes / No.* Turns on basic protection that limits viewing of your uploaded modules (Storyline, Rise, Captivate, iSpring) to signed-in users, so anonymous visitors can’t open the module files directly from outside your site. Two things worth knowing: the protection does **not** cover modules you place on standalone pages or posts (anyone can view those), and while you can set protection globally here and fine-tune it per lesson/topic, **if it’s switched off globally you can’t turn it back on for an individual lesson or topic**. If modules are having trouble loading, try disabling this. It also relies on hosts that support mod_rewrite.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/10/lesson-topic-level-settings.png)
+
+- **SCORM Driver Compatibility** — *Async (default) / Sync.* Determines how newly uploaded modules communicate with your site. **Async** is the default and performs best in most environments; switch to **Sync** only if SCORM/xAPI results aren’t being tracked the way you expect. Because the mode is set at upload time, changing this setting affects future uploads — to apply it to an existing module, upload that module again.
+
+### Mark Complete button
+
+- **Behavior** — Sets what the LearnDash **Mark Complete** button does on lessons and topics that contain an embedded Tin Canny module. Choose a site-wide default here; you can override it on any individual lesson or topic. The options are:
+- **Always Enabled** — the button works normally, whether or not the learner has finished the module.
+- **Disabled until complete** — the button stays greyed out until the learner completes the embedded module.
+- **Hidden until complete** — the button is hidden and only appears once the module is finished.
+- **Hidden and autocomplete** — there’s no button at all; the lesson or topic marks itself complete as soon as the learner finishes the module. (Be sure to give learners another way to move on, since there’s no button to click.)
+- **Hidden and autoadvance** — the same as autocomplete, but it also sends the learner straight on to the next lesson or topic the moment they finish.
+- **Enable compatibility mode** — *Yes / No.* A more dependable (if slightly slower) method of recording xAPI statements and unlocking the Mark Complete behaviors. Switch it on if completion isn’t unlocking reliably — for instance, when a module sends its final statement at the same moment it closes.
+- **Custom label** — Replace the default Mark Complete button text with wording of your own whenever a Tin Canny module is embedded in the lesson or topic — for example, “Finish module” or “I’m done.”
+- **Autocomplete Lessons and Topics even if Tin Canny content on page (Uncanny Toolkit Pro)** — *Yes / No.* Works hand-in-hand with the **Autocomplete Lessons & Topics** feature in Uncanny LearnDash Toolkit Pro. Normally, when a lesson or topic holds a Tin Canny module, completion is decided by the **Mark Complete button** behavior above. With this turned on, the lesson or topic is instead marked complete automatically on page load, even though a module is present. Without Toolkit Pro (and its Autocomplete Lessons and Topics module) active, completion simply continues to follow the Mark Complete behavior.
+
+### Lightbox
+
+- **Transition** — *Fade / Zoom / None.* The visual effect used when a module opens in a lightbox. Choose **Fade** or **Zoom** for a little motion, or **None** for an instant open.
+- **Default lightbox size** — Sets the default dimensions of modules shown in a lightbox. Enter a **Width** (px / % / vw) and **Height** (px / % / vh) and pick the units that suit you — fixed pixels, or percentage/viewport units that scale with the screen. These defaults can be overridden on an individual lesson or topic.
+
+### Reset data
+
+**These actions are permanent and can’t be undone — export anything you need first.**
+
+- **Reset Tin Can data** — the **Reset data** button permanently deletes all captured Tin Can data. Useful when you’re testing or starting over, but there’s no way back.
+- **Reset xAPI Quiz data** — the **Reset Quiz Data** button permanently deletes all xAPI Quiz data.
+- **Reset bookmark data** — the **Reset bookmark data** button clears the saved resume positions for uploaded modules, so every learner starts their modules from the beginning again.
+- **Purge statements** — pick a verb (**Answered**, **Attempted**, or **Passed**) and click **Purge statements** to delete only the SCORM/xAPI statements that use that verb. This is a more surgical cleanup than wiping everything at once.
+- **Purge Answered statements** — a one-click shortcut (the **Purge Answered statements** button) that removes every stored xAPI statement with the “Answered” verb.
+
+### Delete Tin Canny Data
+
+- **Delete all Tin Canny data on uninstall** — By default, your data is kept even if you remove the plugin. Enable this option only if you want a completely clean removal: with **Delete all data on uninstall** turned on, uninstalling Tin Canny permanently erases **all** of its data — SCORM/xAPI statements, quiz data, uploaded modules, module bookmarks, plugin settings, and everything related. There is no undo, so switch it on deliberately.
+
+---
+
+## Tin Can Lesson/Topic Completion Tracking
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-mark-complete/](https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-mark-complete/)
+
+### Integration with LearnDash Mark Complete
+
+The [Tin Canny LearnDash Reporting](/tin-can-lrs-learndash-report-toolkit) plugin offers 5 options for integration with the LearnDash Mark Complete button that appears in Lessons and Topics:
+
+- **Always Enabled:** Mark Complete button is always enabled.  The learner can click the button to complete the lesson or topic at any time.
+- **Disabled until complete:** Mark Complete button is disabled until the completion condition has been satisfied.  The button is visible, but not clickable until the module has been completed.  Most themes will show the disabled button in a different color (typically grey), but on some themes, the disabled button will look exactly like the enabled button.  On these themes, CSS can be used to style the disabled button, or one of the other options can be used (e.g. hidden until complete).
+- **Hidden until complete:** Mark Complete button is hidden until the completion condition has been met.  Once the completion condition has been met, the button becomes visible.
+- **Hidden and autocomplete:** Mark Complete button is hidden and the lesson/topic is automatically marked complete when the completion condition has been met. With this option, you will need to provide a way for the user to progress to the next lesson or topic when the module has been completed, as there is no button for them to click.
+- **Hidden and autoadvance:** Mark Complete button is hidden, the lesson/topic is automatically marked complete and the learner is automatically advanced to the next lesson or topic when the completion condition has been met.  **Notes**: If LearnDash cannot identify a “next” lesson or topic, the current page will be reloaded.  If the lesson/topic is already complete, the user will not be autoadvanced.
+
+The global setting that controls the Mark Complete button can be overridden at the lesson or topic level by changing the value of Restrict Mark Complete from “Use Global Setting” to a specific option.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/04/tinCanny_restrict_mark_complete.png)
+
+If you use Toolkit Pro with the [Single Page Courses module](https://www.uncannyowl.com/knowledge-base/single-page-courses/) active, please note that these options are also available at the course level. See [this article](https://www.uncannyowl.com/knowledge-base/storyline-captivate-uploader/#Single_Page_Courses) for more information.
+
+### Completion Condition
+
+The default completion condition is “completed”, “passed”, or “answered”.  You can further control when the Mark Complete button is enabled by specifying a different completion condition on individual lesson or topic pages. For example, for a Tin Can module that contains a quiz at the end, you may want to limit the Completion Condition to just “passed”.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2018/04/tinCanny_completion.png)
+
+The Completion Condition field accepts 3 types of values:
+
+1. A verb, like “completed” or “passed”.
+2. A score, captured in this format: “result > 60”. In that example, the Mark Complete button/behaviour will be unlocked when a score of over 60 is recorded.
+3. A combination of target (a.k.a slide in your uploaded module) and verb, in this format: uotarget TARGET_NAME::VERB. If a slide name is “Slide 2” and the expected verb for that slide is “Experienced”, and you want the combination to satisfy the Completion Condition, enter “uotarget Slide 2::experienced”.
+
+What’s most important is that the Completion Condition match whatever you see in the Tin Can report when you want completion to be available for the LearnDash lesson or topic. If you see a “Completed” verb in the Tin Can report and that’s the completion indicator, enter “Completed” in the Completion Condition field.
+
+If there are multiple Tin Can modules on a lesson/topic page, the Mark Complete button condition is satisfied when any modules have been completed. For H5P modules, the Mark Complete button gets enabled when *any*module on the page has been completed (the H5P module must pass xAPI statements for this functionality to work; not all H5P content types do this).
+
+**Note:**
+
+- The completion of a LearnDash lesson/topic and that of a Tin Can module are independent of each other. How completion should be triggered in an e-learning module published from Storyline, Captivate, and iSpring is configured in the Publish settings in those programs. (The following example is from Storyline.) Articulate Rise and H5P don’t give the user these tracking options.
+
+![storyline_publish_tracking](https://www.uncannyowl.com/wp-content/uploads/2017/01/storyline_publish_tracking.png)
+
+### Troubleshooting Mark Complete Issues
+
+It’s unfortunately common for many of our users to experience issues with control over the Mark Complete button. Problems tend to occur in at least one of these areas:
+
+1. **Access to the Tin Canny endpoint**. H5P and uploaded modules must have unrestricted access to send anonymous communications to our the virtual endpoint that Tin Canny creates on your site. Maintenance plugins (and other plugins that redirect users across the site), security plugins, proxies (like Cloudflare) and similar tools can block the access that’s needed for your modules to pass data to Tin Canny.
+2. **Stored verbs and other data are different than expected**. Different authoring tools send different statements. If you set up a Mark Complete restriction on a “Completed” verb, but your module doesn’t send that verb, the Mark Complete button will never unlock.
+3. **Javascript conflicts**. These are less common, but in some cases other plugins may interfere and prevent the Mark Complete button from unlocking.
+
+Here are some important steps to try when investigating Mark Complete unlock errors:
+
+1. Understand your data. Open 2 windows, one showing the *Tin Can* report and the other your module. As you go through the module, continually refresh the Tin Can report to see understand what statements are triggered when. Also make sure the completion condition you want to use is actually recorded properly.
+2. Start with simple conditions. Don’t jump right into something like “result>80”. Start with a single verb that you know is being passed.
+3. Make sure you test with a regular user, not an admin or someone that completed the module previously, and that the user is signed in and enrolled in the course.
+4. Clone to a Staging environment and disable other plugins (except LearnDash and Tin Canny). This can help to rule out a conflict. Try to see if things work as expected in that environment.
+5. Check the browser console on the module page by choosing **View > Developer > Javascript Console** in Chrome. Is anything in red? Are the warnings anything that can be resolved or things that might indicate a probably that would affect Tin Canny? Note here that if you see 403 errors it indicates a permissioning issue, and 500 errors often have associated entries in the web server error log that should be investigated.
+
+If you continue experiencing issues that can’t be resolved, reach out to our support team for assistance.
+
+---
+
+## Making eLearning Modules Responsive in iFrame
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/responsive-modules-iframe/](https://www.uncannyowl.com/knowledge-base/responsive-modules-iframe/)
+
+When you choose to embed your eLearning module in an iFrame, you have the option to set its width and height in the upload dialogue. The default width is 100%, and default height is 600px.
+
+![tincanny_uploader_iframe_size](https://www.uncannyowl.com/wp-content/uploads/2017/05/tincanny_uploader_iframe_size.png)
+
+Since the size of your learner’s browser window varies, your eLearning module should resize accordingly to take up 100% width of available space. However, the height remains fixed and content will be vertically centered in the iFrame. As a result, you may see additional space above and below the module on smaller screens or mobile devices.
+
+Because each authoring tool (Storyline, Captivate, and iSpring) supported by Tin Canny has its unique way of defining layout elements in the published module, at this time there isn’t a workable solution we can implement that will work consistently with all authoring tools. The following CSS fixes can be added manually to your site to address the layout issue you may experience when trying to display eLearning modules in iFrame.
+
+### Custom CSS for Storyline 2 and Storyline 360 Modules
+
+Before you publish your Storyline module, in Browser Settings make sure the Player size is set to “Scale player to fill browser window”.
+
+![tincanny_storyline_player_properties](https://www.uncannyowl.com/wp-content/uploads/2017/05/tincanny_storyline_player_properties.png)
+
+After you upload and choose to insert your module in an iFrame, you should see a shortcode similar to the following:
+
 ```
-[uo_groups]
+[vc_snc embed_type="iframe" item_id="1" item_name="Lesson 1" width="100%" height="600px" frameborder="0" src="https://yourdomain.com/wp-content/uploads/uncanny-snc/1/story.html"]
 ```
 
- shortcode to display the button to Group Leaders.
+Remove the width and height attributes, and wrap the shortcode in a <div> like the following:
 
-For full details on composing and customizing group emails, see [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/).
-
-**Note:** The group_email_button attribute defaults to 
 ```
-"hide"
+<div class="iframe-ratio" style="padding-bottom: 75.7%;">[vc_snc embed_type="iframe" item_id="1" item_name="Lesson 1" frameborder="0" src="https://yourdomain.com/wp-content/uploads/uncanny-snc/1/story.html"]</div>
 ```
 
-. You must explicitly set it to 
-```
-"show"
-```
+Note that the value of padding-bottom should be equal to your module’s **(height/width)*100**
 
- to expose this feature to Group Leaders.
+To calculate the aspect ratio of your published module, you need to know your story size, plus [any additional width and height added to the player features](https://community.articulate.com/series/4/articles/choosing-a-story-size-in-articulate-storyline-2#player).
 
-### Group Leader management
+For example, a chromeless player that is 720 pixels x 540 pixels will have 20 pixels added to the player frame. So the value of padding-bottom will be (560/740) * 100 = 75.7
 
-The **Group Leaders** section (shown when 
+You also need to add the following CSS for the div and iframe:
+
 ```
-group_leader_section="show"
-```
-
-) lets an existing Group Leader:
-
-- **Add a Group Leader** — enter a user’s email address to grant them Group Leader status for this group. The button is controlled by 
-```
-add_group_leader_button
+.iframe-ratio {
+width: 100%;
+height: 0;
+position: relative; }
 ```
 
-.
-- **Remove a Group Leader** — click the remove icon next to any leader’s name. Group Leaders cannot remove themselves from the list.
-
-![](https://www.uncannyowl.com/wp-content/uploads/2018/10/GM-Group-Leaders-section-with-remove-button.png)
-
-### Adding seats and courses
-
-If the group was purchased through WooCommerce (as a subscription or group license), Group Leaders may see **Add Seats** and **Add Courses** buttons, depending on the purchase model:
-
-- **Add Seats** — increases the seat count for the group (only appears for groups created via the purchase of a [Custom Group License](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/).
-- **Add Courses** — adds additional courses to the group’s curriculum.
-
-Individual seats that have already been used cannot be refunded or removed. For full details on expanding groups after purchase, see [Add Seats and Courses after Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/).
-
-These buttons are controlled by the 
 ```
-add_seats_button
+.iframe-ratio iframe {
+width: 100%;
+height: 100%;
+position: absolute; }
+```
+
+With these changes, your published Storyline module should scale proportionally in different browser sizes.
+
+### Custom CSS for Captivate 9 Modules
+
+The above guidelines for Storyline also work for Captivate. The key is to find out the width and height of your published Captivate module, taking into consideration any additional pixels added by the player features.
+
+### Custom CSS for iSpring 8 Modules
+
+The above guidelines for Storyline also work for iSpring. The key is to find out the width and height of your published iSpring module, taking into consideration any additional pixels added by the player features.
+
+---
+
+## Tin Canny Uploader
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/storyline-captivate-uploader/](https://www.uncannyowl.com/knowledge-base/storyline-captivate-uploader/)
+
+### Overview
+
+The Tin Canny Uploader is the tool that will allow you to upload your xAPI and SCORM modules to your LearnDash lesson or topic page. The Uploader is integrated with the both the Classic Editor and Gutenberg so you can quickly attach an e-learning module as part of your content creation workflow.
+
+### Tin Canny Uploader and Gutenberg Block Editor
+
+To upload and embed your module using Gutenberg block editor, follow these steps:
+
+1. On your LearnDash lesson or topic edit page, click the “+” icon to add a new block.
+2. When the block selector appears, search and select the Tin Canny Content block.
+3. After the block is added, you have 2 options*:
+- “Upload”
+1. Click Upload.
+2. Find and select your module ZIP file from your computer and click “Open”.
+3. The module will upload, register and the content block will embed on your page.
+- “Select from Library”
+1. Search and/or select a module that has already been uploaded to your site.
+2. The content block will embed on your page.
+4. After you embed the content block, you will be able to select your display option from the side menu**.
+- You have 3 options:
+1. iFrame
+2. Lightbox
+3. New tab
+5. After selecting your display option, save your page and the module will display in the front end.
+
+*In step 3, if you are selecting the “Upload” option, depending on the size of your ZIP file, you can check the option “Upload entire zip file” in the side menu. This option provide a must faster upload experience.
+
+** When using the block editor, you can change your display option at any time without needing to re-upload your module.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Select-Tin-Canny-Block.png)Add the Tin Canny Content block
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Upload-or-Select-from-library.png)Choose either “Upload” or “Select from Library”
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/use-zip-uploader.png)Use the ZIP uploader for faster upload times (if applicable)”
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Select-from-Library.png)Find and select your module from the Manage Content library”
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Tin-Canny-Content-Block.png)A module embedded via Tin Canny Content block
+
+### Tin Canny Uploader and the Classic Editor
+
+To upload and embed your module using the Classic editor, follow these steps:
+
+1. On your LearnDash lesson or topic edit page, click the “Add Tin Canny Media” button.
+2. A modal box will open and give you 2 options:
+- “Upload File”
+1. Click the button labelled “Click to Upload” (before you click this button, you can also enable the option “Upload entire zip file” below).
+2. Find and select your module ZIP file from your computer and click “Open”.
+3. When the module finished uploading, you will have to select a display option. You have 3 options:
+1. iFrame
+2. Lightbox
+3. New tab
+4. After you select the display option, click “Insert Into Post”.
+5. The module be added as a shortcode in the Classic Editor
+- “Content Library”
+1. Search and/or select a module that has already been uploaded to your site and click the “Show” button.
+2. You will have to select a display option. You have 3 options:
+1. iFrame
+2. Lightbox
+3. New tab
+3. After you select the display option, click “Insert Into Post”.
+4. The module be added as a shortcode in the Classic Editor
+3. After selecting your display option, save your page and the module will display in the front end.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/add-tin-canny-media-button.png)Click the “Add Tin Canny Media” button
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/upload-file-zip-option.png)Choose “Upload File” or “Content Library” and don’t forget the ZIP upload option
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/select-file-from-content-library.png)Select an uploaded module from your Manage Content library
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/embed-options-after-uploading-or-selecting-module.png)After you upload your module or select it from the library, you will need to select the display option
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/tin-canny-content-embedded-as-shortcode.png)Your module will display as shortcode
+
+### Elementor/WP Bakery Page Builder/Other Editors
+
+If you are using a pagebuilder such as Elementor or WP Bakery Page Builder, look for a “text” module and add that to the page.  The editor in the text module should display the Add Tin Canny Media button (see above), which you can use to insert your content.
+
+**Important:** Upload zip files published directly from your authoring tool only. All modules must be uploaded through our upload tool, as it modifies some javascript files in the modules to ensure that statements are tracked properly.
+
+Please note that file names must contain fewer than 100 characters and should not contain any special characters.
+
+### Tin Can/xAPI Data
+
+In order to capture Tin Can data, your Storyline/Rise, Captivate, or iSpring module must have been published to xAPI or SCORM (1.2 or 2004). The module will still work if it was published to web but you won’t be able to capture Tin Can data. We recommend publishing to xAPI if the option is available, as in some situations it offers performance advantages over SCORM tracking.
+
+### Very large files
+
+If for any reason the zip file is too big to upload inside WordPress (this would typically include files over 100 MB), this workaround is available but should *only* be performed for large files:
+
+1. Publish the zip file as you normally would.
+2. Extract the contents of the zip file. (Don’t use a Mac for this, as it can add hidden files that break the upload process.)
+3. Move the big media files elsewhere and remember the folder they were in.
+4. Zip the files back up so the structure is the same (minus the large files; just make sure the XML file is still in the root).
+5. Upload the zip file through the Tin Canny uploader as before. if there’s an error, maybe it wasn’t zipped back up again properly.
+6. On the lesson/topic edit page, note the identifier in the shortcode. You’ll see an snc one.
+7. Connect to the site by FTP. Navigate to /wp-content/uploads/uncanny-snc/.
+8. Find the # corresponding with the shortcode in step 6 and go into it.
+9. Upload the large files to wherever they’re supposed to be.
+
+### Single Page Courses
+
+Out of the box, Tin Canny modules should not be use on LearnDash course post types, especially if there are no lessons attached to the course. LearnDash relies on lesson completions to track progress and trigger course completion. If you also have [Toolkit Pro](https://www.uncannyowl.com/downloads/uncanny-learndash-toolkit-pro/) and the [Single Page Courses module](https://www.uncannyowl.com/knowledge-base/single-page-courses/) is enabled, versions 3.6 of Tin Canny and later do offer support and make uploading modules at the course level for microlearning possible. Make sure you follow the same [Mark Complete](https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-mark-complete/) rules as you do for lessons and topics, and to protect content we suggest hiding the module to non-students with the [LearnDash student shortcode](https://www.learndash.com/support/docs/core/shortcodes-blocks/#learndash_student_student).
+
+### Multisite
+
+If you use Tin Canny in a multisite network, it is possible to broadcast Tin Canny modules to other network sites using the Broadcast plugin from Plainview Plugins along with their LearnDash addon. See [https://broadcast.plainviewplugins.com/addon/learndash/](https://broadcast.plainviewplugins.com/addon/learndash/) for more information.
+
+---
+
+## Front End Quiz Reports
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/front-end-quiz-reports/](https://www.uncannyowl.com/knowledge-base/front-end-quiz-reports/)
+
+### Overview
+
+Tin Canny includes three **front-end** quiz reports that consolidate LearnDash quiz scores and SCORM/xAPI (Tin Canny) scores, so administrators, Group Leaders, and learners can see results without logging into the WordPress dashboard. Each report can be placed on any page with a **block** or its matching **shortcode**.
+
+These are **front-end** reports for placing on a page. For the back-end admin report of question-by-question xAPI responses, see [xAPI Quiz Report](https://www.uncannyowl.com/knowledge-base/xapi-quiz-report/).
+
+### Before you start
+
+- The easiest way to add a report is with a **block** — when editing a page, click **+**, search **Tin Canny**, and choose the report. Each block has a matching shortcode if you’d rather paste one in (use a **Shortcode block** in the editor).
+- Quiz reports render wide tables, so use a **full-width page template** with no sidebar for the best layout.
+- Reports inherit your theme’s styles; on some themes you may want light CSS adjustments for spacing or table width.
+
+### Group Leader Quiz Report
+
+Add the **Tin Canny Group Quiz Report** block, or use the **[uo_group_quiz_report]** shortcode.
+
+Shows consolidated quiz data and Tin Canny scores (H5P, iSpring, Storyline, etc.) **by group and by course**. It reports the highest score from multiple attempts, and — when statistics are enabled — can link through to detailed results.
+
+- **Who can view:** Administrators and Group Leaders (Group Leaders see only their own groups).
+- **Attribute:** user_report_url=”%URL%” — turns each learner’s name into a link to their individual user report. Replace %URL% with the page that holds the **User Quiz Report** ([uo_individual_quiz_report]), enabling drill-down from the group report to a single learner.
+
+**Developers:** the userReportUrl value can also be set globally with the uo_tincanny_quiz_report_user_report_url filter. See [Actions/Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers-2/).
+
+![Tin Canny Group Quiz Report](https://www.uncannyowl.com/wp-content/uploads/2018/07/tincanny-group-quiz-report-1030x384.png)
+
+### User Quiz Report
+
+Shows the **viewing learner’s own** LearnDash quiz scores plus SCORM/xAPI scores across all of their courses. Because it’s scoped to the current user, this is the report you place on a learner-facing “My Results” page.
+
+Add the **Tin Canny Individual Quiz Report** block, or use the **[uo_individual_quiz_report]** shortcode.
+
+- **Who can view:** Students, Group Leaders, and Administrators (each sees their own scores).
+- **Attribute:** exclude_non_course_quizzes=”yes” — *added in v5.0.* Hides quizzes that aren’t mapped to a course, so the report shows only course-based quizzes. Default is no.
+
+![Tin Canny User Quiz Report](https://www.uncannyowl.com/wp-content/uploads/2018/07/tincanny-user-quiz-report-1030x408.png)
+
+#### Linking Group Quiz Report with the User Quiz Report
+
+What’s especially powerful with the 2 new reports is that they can be linked, so users listed in the Group Leader report are hyperlinked to the user report. Administrators and Group Leaders can then drill down into a user to see their results across everything.
+
+Use the “user_report_url” attribute with the uo_group_quiz_report shortcode to link them:
+
+```
+[uo_group_quiz_report user_report_url="%URL%"]
+```
+
+Replace 
+```
+%URL%
+```
+
+ in the example above with the URL of the user report on your website (the page that contains the 
+```
+[uo_individual_quiz_report]
+```
+
+ shortcode). You can use a static or relative URL, and as long as it’s populated correctly, the Group Report will now link to individual score reports.
+
+### Detailed Quiz Report
+
+Use the 
+```
+[uotc_ld_quiz_report]
+```
+
+shortcode. *(This report is shortcode-only — there is no block for it.)*
+
+The most comprehensive view: it shows **all attempts for all users**, including learners who have access but **haven’t attempted** a quiz, and it lists **all records regardless of course mapping** (no course-selection filter). Columns are customizable.
+
+- **Who can view:** Administrators and Group Leaders. By default an administrator sees all users (not only group-linked users); visibility is customizable via filter.
+- **How it differs from the other two:** all attempts rather than highest-score-only, includes records for users that have not attempted the quiz yet (this can be disabled using the following filter: 
+```
+add_filter( ‘uotc_quiz_report_hide_unattempted_users’, ‘__return_true’ );
+```
+
+), ignores course mapping, and offers customizable columns.
+
+![LearnDash Detailed Quiz Report](https://www.uncannyowl.com/wp-content/uploads/2024/02/LearnDash-Detailed-Quiz-Report-1030x452.png)
+
+This report can also be used by additional custom roles. Here’s a code example:
+
+```
+<?php 
+/**
+ * Allow my_custom_role to access the LearnDash reports.
+ * 
+ * @param array $allowed_roles - Default is array( 'administrator', 'group_leader' )
+ * 
+ * @return array
+ */
+add_filter( 'uotc_ld_allowed_roles', 'my_uotc_ld_allowed_roles' );
+function my_uotc_ld_allowed_roles( $allowed_roles ) {
+	$allowed_roles[] = 'my_custom_role';
+	return $allowed_roles;
+} ?>
+```
+
+And for even more control over outputting users that have attempted vs. not attempted a quiz, here’s an example of isolating results based on group ID or quiz ID:
+
+```
+<?php 
+/**
+ * Hide unattempted users from the quiz report
+ * 
+ * @param bool $hide_unattempted_users - Default is false
+ * @param int $quiz_id - The ID of the quiz
+ * @param int $group_id - The ID of the user group
+ */
+add_filter( 'uotc_quiz_report_hide_unattempted_users', 'my_uotc_quiz_report_hide_unattempted_users', 10, 3 );
+function my_uotc_quiz_report_hide_unattempted_users( $hide_unattempted_users, $quiz_id, $group_id ) {
+	// Only hide unattempted users for quiz ID 123
+	if ( $quiz_id === 123 ) {
+		return true;
+	}
+
+	// Only hide unattempted users for user group ID 456
+	if ( $group_id === 456 ) {
+		return true;
+	}
+
+	return $hide_unattempted_users;
+} ?>
+```
+
+### Related Articles
+
+- [xAPI Quiz Report](https://www.uncannyowl.com/knowledge-base/xapi-quiz-report/) — the back-end, question-by-question xAPI report
+- [Front End LearnDash Reports](https://www.uncannyowl.com/knowledge-base/front-end-reports/) — the combined [tincanny] reporting interface
+- [Tin Canny Blocks & Shortcodes Quick Reference](http://tin-canny-shortcodes-blocks-reference.md) — every report block and shortcode
+- [Give Managers Their Own Reports](http://use-case-self-serve-manager-reporting.md) — the self-serve reporting use case
+
+---
+
+## Front End LearnDash Reports
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/front-end-reports/](https://www.uncannyowl.com/knowledge-base/front-end-reports/)
+
+### Overview
+
+Front-end reports put Tin Canny’s reporting on a WordPress page, so administrators and Group Leaders can review course and learner data without logging into the WordPress admin dashboard. It’s the foundation for letting client managers run their own reports.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Course-Report-461x500.png)
+
+### What they are
+
+The **Tin Canny Course/User Report** block or 
+```
+[tincanny]
+```
+
+ shortcode renders the full reporting interface on the front end — **Course Report, User Report**, and (if enabled) **Tin Can and xAPI Quiz reports** — in one tabbed view. Add it to any page:
+
+```
+[tincanny]
+```
+
+**Tip:** Reports are wide tables. Use a **full-width page template with no sidebar** so the columns aren’t squeezed.
+
+**Note: The Tin Can and xAPI Quiz reports are not enabled by default**.  To turn these reports on, go to Tin Canny Reporting > Settings in your admin panel and enable the appropriate options:
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/enable-front-end-reports.png)
+
+### Who can view them
+
+Tin Canny checks each viewer’s role and group membership:
+
+- **Administrators** see all data.
+- **Group Leaders** see only their assigned groups. Leaders of multiple groups get a **group-selector dropdown** to switch between teams.
+- Learners do not see these admin reports (the learner-facing quiz report is separate — see [Front End Quiz Reports](https://www.uncannyowl.com/knowledge-base/front-end-quiz-reports/)).
+
+### Sorting and defaults
+
+- **Sortable columns:** as of **v5.1.1**, the front-end User Report’s **% Complete** and **Avg Quiz** columns are sortable, so managers can rank learners by progress or performance with a click.
+- **Defaults carry over:** the **default group** and **default page length** set under **Tin Canny Reporting > Settings** also apply to the front-end reports, so a leader’s page opens already filtered and paginated.
+
+### Enabling Tin Can / Quiz reports
+
+The **Tin Can** and **xAPI Quiz** reports only appear in the front-end interface if the option **Enable Tin Can Report on front end**and**Enable xAPI Quiz Report on front end**are enabled under **Tin Canny Reporting > Settings**under the **Reports** heading.
+
+### Styling
+
+Front-end reports intentionally inherit your theme’s styles so they blend in. On some themes you may want light CSS adjustments for table width or spacing.
+
+### Related Articles
+
+- [Front End Quiz Reports](https://www.uncannyowl.com/knowledge-base/front-end-quiz-reports/) — learner- and group-facing quiz reports
+- [Tin Canny Shortcodes & Blocks Quick Reference](http://tin-canny-shortcodes-blocks-reference.md) — every report shortcode and block
+- [Give Managers Their Own Reports](http://use-case-self-serve-manager-reporting.md) — the self-serve reporting use case
+- [Setting up Tin Canny Reporting](https://www.uncannyowl.com/knowledge-base/protecting-sharing-content-tin-canny/) — enabling data capture and setting defaults
+
+---
+
+## Set up Group Management Pages
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/set-group-management-pages/](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/)
+
+### Overview
+
+When you activate Uncanny Groups for LearnDash, the plugin automatically creates a set of pages on your site — each pre-loaded with the shortcode its feature needs. This article explains what those pages do, how to customize them with shortcode attributes, and how to surface them to Group Leaders through your site menu. Each page can be built with its matching **Uncanny Groups block** (search the block inserter) or the equivalent shortcode shown below.
+
+### Before you start
+
+- You need **Administrator** access to your WordPress site.
+- The plugin must be activated. If the pages below are missing, you can regenerate them (see [Regenerating pages](https://docs.google.com/document/d/171KSmkdresh4cK30Gmj6l4NpzllWRqxfFw67z2mLL5k/edit#regenerating-pages) below).
+- Avoid using 
+```
+/groups/
+```
+
+ in any of these page URLs — LearnDash reserves that path and duplicate routes will cause conflicts.
+
+### Auto-generated pages
+
+On first activation, the plugin creates the following pages. You can rename them, customize their slugs, and add them to your navigation at any time. Also, while shortcodes are used for auto-generated pages, blocks are available.
+
+| Page | What it does | Shortcode / Block | Default slug |
+| --- | --- | --- | --- |
+| Group Management | Core hub where Group Leaders manage members, seats, keys, and courses | [uo_groups]Course Report | group-management |
+| Course Report | Lets leaders view member progress by course | [uo_groups_course_report]Course Report | group-management-report |
+| Quiz Report | Lets leaders view quiz results for their members | [uo_groups_quiz_report]Quiz Report | group-quiz-report |
+| Buy Courses | Lets users purchase courses and create groups (requires WooCommerce) | [uo_groups_buy_courses]Buy Courses | group-management-buy-courses |
+| Manage Assignments | Front-end assignment review and grading for leaders | [uo_groups_assignments]Assignment Management | assignment-management-page |
+| Manage Essays | Front-end essay review for leaders | [uo_groups_essays]Essay Management | essay-management-page |
+| Manage Learner Progress | View and edit individual learner progress | [uo_groups_manage_progress]Progress Report | group-progress-report |
+
+**URL warning:** Do not use /groups/ as any part of these page slugs. LearnDash uses this route internally, and duplicating it will break navigation.
+
+### Regenerating pages
+
+If a page is accidentally deleted or you need to reassign which page the plugin points to, you have two options:
+
+1. **Regenerate automatically** — go to **Uncanny Groups > Settings** and use the **Regenerate Pages** option. The plugin recreates any missing pages with the correct shortcodes.
+2. **Re-select an existing page** — if you have already created a replacement page manually, go to **Uncanny Groups > Settings** and select that page from the appropriate dropdown. The plugin will use your custom page going forward.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/regenerate-pages-button.png)
+
+### Configuring the Group Management page
+
+The **Group Management** page is the most customizable. Use block settings or shortcode attributes to show or hide specific features for your Group Leaders. All attributes accept “show” or “hide” unless noted otherwise.
+
+#### Feature visibility settings / attributes
+
+| Setting / Attribute | What it controls | Default |
+| --- | --- | --- |
+| group_name_selector | Group selection dropdown | show |
+| seats_quantity | Seat count display | show |
+| add_seats_button | Button to purchase additional seats | show |
+| add_courses_button | Button to purchase additional courses | show |
+| add_user_button | Add user options in the Users panel | show |
+| remove_user_button | Remove user capability | show |
+| upload_users_button | Bulk user upload option | show |
+| download_keys_button | Download enrollment keys option | show |
+| key_column | Enrollment keys column in the user table | show |
+| key_options | Key distribution options | show |
+| group_leader_section | Group Leaders listing section | show |
+| add_group_leader_button | Add Group Leader capability | show |
+| group_courses_section | Group courses listing section | show |
+| csv_export_button | CSV export option | show |
+| excel_export_button | Excel export option | hide |
+| group_email_button | Email users functionality | hide |
+| first_last_name_required | Require first and last name in the bulk add tool | no (values: yes / no) |
+
+#### Pagination settings / attributes
+
+| Setting / Attribute | What it controls | Default |
+| --- | --- | --- |
+| enrolled_users_page_length | Members shown per page (numeric) | 50 |
+| enrolled_users_length_menu | Page-length dropdown options | 25,50,100,All |
+| group_leaders_page_length | Leaders shown per page (numeric) | 50 |
+| group_leaders_length_menu | Leaders page-length dropdown options | 25,50,100,All |
+
+#### Edit Group Wizard redirect settings / attributes
+
+| Setting / Attribute | What it controls | Example value |
+| --- | --- | --- |
+| edit_page_id | ID of the page containing the Edit Group Wizard | 142 |
+| edit_url | Relative URL of the page containing the Edit Group Wizard | /edit-group/ |
+
+Use either 
+```
+edit_page_id
+```
+
+ or 
+```
+edit_url
+```
+
+ — not both.
+
+#### Example: hide all optional features
+
+```
+[uo_groups group_name_selector="hide" add_courses_button="hide" seats_quantity="hide" add_seats_button="hide" add_user_button="hide" remove_user_button="hide" upload_users_button="hide" download_keys_button="hide" group_leader_section="hide" add_group_leader_button="hide" key_options="hide" csv_export_button="hide"]
+```
+
+To fully lock down the interface, also set all report pages to **None** in **Uncanny Groups > Settings**.
+
+![Group Management page showing a Sales Training group with four courses, enrolled users, and group leaders in a dashboard layout.](https://www.uncannyowl.com/wp-content/uploads/2026/07/group-management-page-852x1030.png)
+
+### Configuring the Course Report page
+
+Control how courses and exports appear in the Course Report. The Course Report can be added via the **Course Report** block or the following shortcode
+
+```
+[uo_groups_course_report course-order="title" csv_export_button="show"]
+```
+
+| Setting / Attribute | Values | Default |
+| --- | --- | --- |
+| course-order | ID, title, date, menu_order | (empty — uses LearnDash default order) |
+| csv_export_button | show, hide | show |
+| excel_export_button | show, hide | show |
+
+### Configuring the Quiz Report page
+
+Control how quizzes and courses are ordered in the Quiz Report. The Quiz Report can be added via the **Quiz Report** block or the following shortcode
+
+```
+[uo_groups_quiz_report course-orderby="title" course-order="ASC" quiz-orderby="title" quiz-order="ASC"]
+```
+
+| Attribute | Values | Default |
+| --- | --- | --- |
+| course-orderby | ID, title, date, menu_order | title |
+| course-order | ASC, DESC | ASC |
+| quiz-orderby | ID, title, date, menu_order | title |
+| quiz-order | ASC, DESC | ASC |
+| csv_export_button | show, hide | show |
+| excel_export_button | show, hide | show |
+
+### Adding pages to your site menu
+
+The auto-generated pages are not added to your navigation automatically. To surface them for Group Leaders:
+
+1. Go to **Appearance > Menus** in your WordPress admin.
+2. Find the **Group Management** section in the page list on the left, and check the pages you want to add.
+3. Click **Add to Menu**, then drag items into the position you want.
+4. If you have the **Nav Menu Roles** plugin installed, set the visibility of each item to **Group Leader** so the links only appear to the right users.
+5. Click **Save Menu**.
+
+**Note:** Without Nav Menu Roles, menu links are visible to all logged-in users — but non-Group Leaders who click through will see a message indicating they don’t have access.
+
+### Adding a Group Management button or link
+
+To place a contextual button or link anywhere on your site — visible only to logged-in Group Leaders — use one of these shortcodes:
+
+**Button:**
+
+```
+[uo_groups_button text="Group Management"]
+```
+
+**Text link:**
+
+```
+[uo_groups_link text="Group Management"]
+```
+
+Both shortcodes hide themselves from users who are not Group Leaders. Customize the label with the 
+```
+text
+```
+
+ attribute.
+
+### Controlling the Reports menu
+
+The **Course Report**, **Quiz Report**, **Manage Progress**, **Assignments**, and **Essays** entries in the Group Leader navigation are controlled from **Uncanny Groups > Settings**. To hide any of these from the menu, set the corresponding page to **None** in Settings.
+
+### Related Articles
+
+- [Install and Set Up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/) — first-time activation and settings
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — a Group Leader’s guide to day-to-day management
+- [Using Group Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) — understanding course, quiz, and progress reports
+- [Manage LearnDash Groups as a WordPress Administrator](https://www.uncannyowl.com/knowledge-base/set-up-a-learndash-group/) — create groups, manage seats, and handle enrollment
+- [Front-End Group Creation](https://www.uncannyowl.com/knowledge-base/front-end-learndash-group-creation/) — let Group Leaders create their own groups from the front end
+
+---
+
+## Install and Set Up Uncanny Groups for LearnDash
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/)
+
+### Overview
+
+This article walks you through installing Uncanny Groups, activating your license, and configuring the settings that control how groups behave on your site.
+
+### Before you start
+
+- Confirm your site meets the [Technical Requirements](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-technical-requirements/).
+- Have your plugin ZIP file and license key ready. Both are in your purchase email and your [Uncanny Owl account](https://www.uncannyowl.com/account/).
+
+### Install the plugin
+
+1. In WordPress, go to **Plugins > Add New > Upload Plugin**.
+2. Upload the Uncanny Groups ZIP file and click **Install Now**.
+3. Click **Activate**.
+4. On the **Uncanny Groups > Settings** page, paste your license key and activate. This enables automatic updates.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Group-license-registration-1030x397.png)
+
+On activation, Uncanny Groups automatically creates the front-end pages it needs and sets up default email templates. You’ll find everything under **Uncanny Groups > Settings**.
+
+### Group Management pages
+
+The **Settings** page tells the plugin which front-end pages handle group management, registration, and reports. These are created for you on install, but you can swap in your own pages here. Setting a dropdown to **None** hides its associated button from the interface.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/Group-Management-page-settings-1030x708.png)
+
+### Settings reference
+
+#### General Options
+
+| Setting | What it does | When to use it |
+| --- | --- | --- |
+| Per Seat Text | Renames the “Seat” label (e.g. “License” or “User”) throughout the interface | Match your audience’s vocabulary |
+| Allow Group Leaders to remove students at any time | Lets leaders remove members even after they’ve started a course | Turn off to protect in-progress enrollments |
+| Do not free up a seat when a student with “Completed” status is removed | Keeps the seat consumed when a finished learner is removed | Use when completions should permanently count against seats |
+| Group Leaders don’t use seats | Excludes leaders from the seat count | Use when leaders manage but don’t take the course |
+| Do not automatically add Group Leaders as Group Members | Prevents leaders from also being enrolled as learners | Use for manager-only leaders |
+| Allow Group Leaders to edit users | Lets leaders edit member profile details from the front end | Use when leaders own account management |
+| Allow Group Leaders to change email | Lets leaders update a member’s email address | Useful when leaders correct sign-up typos or manage logins on members’ behalf |
+| Allow Group Leaders to change username | Lets leaders change member usernames | Enable only if usernames need to be editable |
+| Use Progress Report instead of Course Report for individual users | Swaps the default report style | Choose the view your leaders prefer |
+| Show “basic” (non-upgraded) groups in front end with access to reports only | Shows non-upgraded native groups in the interface (reports only) | Use during migration from native groups |
+
+#### LearnDash Options
+
+| Setting | What it does |
+| --- | --- |
+| Use LearnDash’s “legacy” course progress data | Reports from older progress data for backward compatibility |
+| Hide the Courses / Users column in the list of LearnDash groups | Removes a heavy column to speed up report loading on large groups |
+| Include data from child groups in reports | Rolls child-group progress up into the parent group’s reports |
+
+#### eCommerce Options (WooCommerce)
+
+| Setting | What it does |
+| --- | --- |
+| Automatically include Group Course products in Group License purchases | Bundles the course product into license sales |
+| Enable association of products and groups | Maps products to groups for automatic enrollment on purchase |
+| Autocomplete Uncanny Groups orders | Marks qualifying orders complete so groups are created without manual steps |
+| Default License Product category | Assigns a category to licenses created on the fly |
+| Adding Seats Message | Customizes the text shown when leaders add seats |
+
+#### Group Registration Form – Terms & Conditions
+
+Add text here to display a **terms acceptance checkbox** on the built-in group registration form. Leave it blank to hide the checkbox.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/terms-and-conditions-1030x377.png)
+
+### Where a group’s settings appear on the edit page
+
+As of **Uncanny Groups 6.1.8**, every Uncanny Groups setting for a group lives under a dedicated **Uncanny Groups** tab at the top of the group’s edit page. Open a group under **LearnDash LMS > Groups** and click the **Uncanny Groups** tab to find **Total seats**, **Remaining seats**, the **Reconcile seat count** and **Downgrade this group** controls, and the group-specific email overrides.
+
+This also resolves a WordPress 7.0 change: the redesigned block editor tucks classic plugin metaboxes behind a collapsed **“Meta Boxes”** pane, so group options could seem to disappear after upgrading. The dedicated **Uncanny Groups** tab gives those settings a permanent, visible home. If you’re on a version older than 6.1.8 and can’t find a group option, update to 6.1.8 or later — or open the **Meta Boxes** pane in the editor.
+
+![Navigation bar showing tabs: Group page, Extend Access, Settings, Courses, Users, Uncanny Groups (selected)](https://www.uncannyowl.com/wp-content/uploads/2017/09/Uncanny-Groups-tab.png)
+
+### Next steps
+
+- New here? Follow the [Getting Started walkthrough](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/).
+- [Set up your Group Management pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/).
+- [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/).
+
+### Related Articles
+
+- [Uncanny Groups – START HERE!](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/)
+- [Upgrade Existing LearnDash Groups](https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/)
+- [Frequently Asked Questions](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/)
+
+---
+
+## xAPI Quiz Report
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/xapi-quiz-report/](https://www.uncannyowl.com/knowledge-base/xapi-quiz-report/)
+
+### Overview
+
+The xAPI Quiz Report captures individual quiz question responses from xAPI content.  It is part of the [Tin Canny LearnDash Reporting](/tin-can-lrs-learndash-report-toolkit) plugin that we developed to support the use of eLearning authoring tools like Articulate Storyline and Rise, Adobe Captivate, and iSpring with LearnDash.  In this report, you will see the learning records resulting from users’ interactions this support xAPI content created with these tools. These records are stored in a Learning Record Store (LRS) entirely native to your WordPress site. All you need to do is publish your file using the xAPI standard, and use the [Tin Canny Uploader](https://www.uncannyowl.com/knowledge-base/storyline-captivate-uploader/) to add it to a lesson or topic associated with a course.
+
+**Important**: Tin Canny only tracks and reports on the data you see in the xAPI Quiz Report columns.
+
+* See [the full list of authoring tools supported by Tin Canny](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/)
+
+### Report Filters
+
+Let’s take a look at the xAPI Quiz Report view.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2019/05/LearnDash_xAPI_Quiz_Report.png)
+
+The report view includes many filtering options* for you to narrow in on data you are interested to see. For example, you may want to view all the learning records related to a particular Storyline module. You may want to check all the activities that took place within a certain time period. Or you may want to find out whether or when a particular user completed the module.
+
+Please note that to use the Module filter, you must filter by Course first. In other words, choose a course from the drop-down, run the search again, and then the Module selections will be available.
+
+* Note that group leaders will only see data of their assigned groups.
+
+### Column Selection
+
+Use the Screen Options button in the top right corner of the screen to show or hide additional columns from the table.
+
+### Export to CSV
+
+For a large course, you can potentially be looking at hundreds of thousands of records. The Export to CSV button lets you download the filtered result as a CSV file so you can do further analysis in Microsoft Excel or statistical programs.
+
+---
+
+## Tin Can Report
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/tin-can-report/](https://www.uncannyowl.com/knowledge-base/tin-can-report/)
+
+### Overview
+
+The Tin Can Report is the raw activity stream from your eLearning modules. Every interaction a learner has with SCORM or xAPI content — built in Storyline, Captivate, iSpring, H5P, and more — is recorded here as an individual statement.
+
+The Tin Can Report captures learning interactions from modules uploaded with the Tin Canny Uploader and published as **xAPI** or **SCORM 1.2 / 2004**. Statements are stored in a Learning Record Store native to WordPress — no external LRS required. Each record includes the user, module, activity, result, and a timestamp.
+
+Use this report when you need the underlying detail: the full sequence of what a learner did inside a module.
+
+### Report Filters
+
+The Tin Can Report opens with a filter panel — set your criteria and click **Search** (or **Reset** to clear). Filters are grouped:
+
+- **User & Group**
+- **Groups** — scope the report to a specific group. Group Leaders are automatically limited to their assigned groups.
+- **User** — narrow to a single learner.
+- **Content**
+- **Course** — filter to one course.
+- **Module** — filter to one module.
+- **Activity**
+- **Action** — filter by the Tin Can verb/action (e.g. a specific statement type), or leave on **All actions**.
+- **View** — choose a preset range (**Last 30 Days**) or select **From** and enter a custom **Start Date** / **End Date**.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/09/tin-can-report-1030x595.png)
+
+### Results
+
+After you search, the **Tin Can Data** table lists each matching statement. Default columns:
+
+| Column | Shows |
+| --- | --- |
+| Group | The learner’s group (or n/a) |
+| User | The learner |
+| Course / Module | Where the statement came from |
+| Target | What was acted on (e.g. the question or object) |
+| Action | The Tin Can verb (e.g. Answered, Passed) |
+| Result | The reported result, if any |
+| Success | Whether the interaction was successful |
+| Date Time | When it occurred |
+
+Set **Show [n] entries** for page size, and use **Screen Options** (top right) to choose which columns appear.
+
+### Scoring
+
+By default the report uses the raw score reported by a module. For finer control, two developer filters are available:
+
+- **uo_tincanny_data_consider_scaled_score** — **added in v5.0.** When enabled, reporting considers the module’s *scaled* score (0–1) rather than the raw value. Useful when modules report scores on different scales.
+- **tincanny_result_override** — **added in v5.1.0.3.** Overrides the stored result value of a statement before it’s reported.
+
+See [Actions/Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers-2/) for usage details.
+
+### Performance
+
+The Tin Can Report was **refactored in v5.0** for faster loading, which is especially noticeable on sites with hundreds of thousands of statements.
+
+### Export to CSV
+
+Export the filtered results to CSV for deeper analysis — valuable when working with very large datasets.
+
+### Related Articles
+
+- [xAPI Quiz Report](https://www.uncannyowl.com/knowledge-base/xapi-quiz-report/) — question-level quiz responses
+- [Actions/Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers-2/) — the scoring and result-override filters
+- [See How Learners Actually Engage with Your Content](https://www.uncannyowl.com/knowledge-base/see-how-learners-actually-engage-with-your-content/) — reading the activity stream to improve content
+
+---
+
+## Uncanny Groups for LearnDash – START HERE!
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/)
+
+Uncanny Groups turns LearnDash’s basic group feature into a complete team-training and course-selling toolkit. It lets **Group Leaders manage their own members from the front end** — adding learners, sending invitations, and tracking progress — without ever logging into WordPress. You can use it to sell course access to organizations, train your own team, or run cohort programs.
+
+This article helps you choose the right setup for your goal. If you’d rather just dive in, jump to the **Getting Started walkthrough**.
+
+![Group Management page showing a Sales Training group with four courses, enrolled users, and group leaders in a dashboard layout.](https://www.uncannyowl.com/wp-content/uploads/2026/07/group-management-page-852x1030.png)
+
+### New to Groups? Start here
+
+If this is your first time, the fastest way to understand Uncanny Groups is to build one working group end to end. Our **Getting Started with Uncanny Groups** guide walks you from install to enrolled learners and live reports in about 15 minutes.
+
+When you’re ready to choose a long-term setup, use the decision guide below.
+
+### Choose how you’ll use Uncanny Groups
+
+There are three ways to run Groups. You can use one, or combine several on the same site.
+
+| Approach | Best for | What happens |
+| --- | --- | --- |
+| Manual group management | Training your own team; running a course where you control enrollment | You create groups in the admin and assign Group Leaders. Leaders manage members from the front end. |
+| Sell custom licenses | Letting buyers choose their own courses and seat counts | Visitors build their own license on a Buy Courses page and check out via WooCommerce, becoming Group Leaders automatically. |
+| Sell pre-configured licenses | Offering fixed team packages (e.g. “50 seats – Compliance”) | You define the course bundle and seat count; buyers simply purchase it. |
+
+**Selling through WooCommerce?** Disable guest checkout in WooCommerce so buyers have an account to manage their group from.
+
+#### Manual group management — setup steps
+
+1. [Install and set up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/).
+2. Create a group and enroll your course(s) — see [Manage LearnDash Groups as a WordPress Administrator](https://www.uncannyowl.com/knowledge-base/set-up-a-learndash-group/).
+3. (Upgrading old groups?) [Upgrade existing LearnDash groups](https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/).
+4. [Set up your Group Management pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/).
+5. Assign Group Leaders and [add users](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/).
+
+#### Sell custom licenses — setup steps
+
+1. [Install and set up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/).
+2. [Set up your LearnDash Group Course products](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/).
+3. [Enable users to build custom group licenses](https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/).
+4. [Set up your Group Management pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/).
+5. Place a Buy Courses page so visitors can purchase.
+6. *(Optional)* [Configure bulk discounts](https://www.uncannyowl.com/knowledge-base/configure-bulk-discounts/).
+7. *(Optional)* [Sell group access directly to learners](https://www.uncannyowl.com/knowledge-base/sell-learndash-group-access-to-learners/).
+
+#### Sell pre-configured licenses — setup steps
+
+1. [Install and set up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/).
+2. [Set up your LearnDash Group Course products](https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/).
+3. [Create pre-configured group licenses](https://www.uncannyowl.com/knowledge-base/creating-pre-configured-learndash-group-licenses/).
+4. [Set up your Group Management pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/).
+5. Add the products to your store.
+6. *(Optional)* [Configure bulk discounts](https://www.uncannyowl.com/knowledge-base/configure-bulk-discounts/).
+7. *(Optional)* [Add seats and courses after purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/).
+
+### See Groups in action
+
+Not sure which fits your business? These usage scenarios show what’s possible:
+
+- **Sell Online Courses to Businesses & Teams**
+- **Onboard & Train Your Team with LearnDash Groups**
+- **Run Cohort-Based Courses & Group Coaching Programs**
+
+### How users manage their own groups
+
+Once a group exists, Group Leaders take over the day-to-day work from the front end:
+
+- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — add, invite, and remove members.
+- [Using the Group Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) — track course and quiz progress.
+
+### Related Articles
+
+- [Getting Started with Uncanny Groups](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-groups-for-learndash/)
+- [Install and Set Up Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/)
+- [Frequently Asked Questions](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-2/)
+- [Technical Requirements](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-technical-requirements/)
+
+---
+
+## User Report
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/user-report/](https://www.uncannyowl.com/knowledge-base/user-report/)
+
+### Overview
+
+The User Report in the [Tin Canny LearnDash Reporting](/tin-can-lrs-learndash-report-toolkit) plugin lets you monitor the progress that your learners make in courses they are enrolled in.
+
+When the User Report first loads, it shows you a list of all users in the system*. You can search for a particular individual by his/her name or email address. You can also sort the list by a column heading (for example, the Display Name as in the image shown).
+
+* Group Leaders will see consolidated user data of their assigned groups. If a Group Leader is assigned to multiple groups, they will see all data together in the User Report.
+
+![user report](https://www.uncannyowl.com/wp-content/uploads/2019/05/user-report.png)
+
+### Drill-Down User Report
+
+Clicking on the name or email address of a user will take you to a list of courses that the user is enrolled in as well as their overall progress in those courses.
+
+![Drill down user report](https://www.uncannyowl.com/wp-content/uploads/2019/05/drill-down-user-report3.png)
+
+You can click anywhere in a row in the course list table to see the user’s progress in that particular course, including their overall performance and detailed activities of lessons, topics, quizzes, assignments, and Tin Can.
+
+![user progress report](https://www.uncannyowl.com/wp-content/uploads/2019/05/user-progress.png)
+
+### User details
+
+To change the user columns that are shown in the User reports, visit the **Tin Canny > Settings** page and look for the *User identifier(s)* section. Check or uncheck the columns you want displayed in User reports.
+
+![User settings in Tin Canny reports](https://www.uncannyowl.com/wp-content/uploads/2021/02/User_settings_in_Tin_Canny_Reports.png)
+
+### Sort options
+
+Sorting is available for all columns but is turned off by default. To enable sorting, visit **Tin Canny > Settings** and turn on the *Enable Sorting by % Complete* option.
+
+---
+
+## Course Report
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/course-report/](https://www.uncannyowl.com/knowledge-base/course-report/)
+
+### Overview
+
+The Course Report is the bird’s-eye view of training on your site: how many learners and courses you have, what’s being completed, and how each course is performing — with the ability to drill into any course for the detail.
+
+This report is for LearnDash data and progress completion across lessons and topics in LearnDash courses. Data for SCORM/xAPI modules is included in the [Tin Can report](https://www.uncannyowl.com/knowledge-base/tin-can-report/).
+
+Above the course table you’ll see:
+
+- A **Reports** panel with the total number of **Users** and **Courses** in scope.
+- A **Recent Activities** chart plotting **Course Completions** and **Tin Can Statements** over time, with a date-range slider to zoom the timeframe.
+
+A condensed version of this overview also appears on your WordPress Dashboard for an at-a-glance pulse.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2025/09/Course-Report-top-bar-1030x209.png)
+
+#### Group Filter
+
+At the top of the report is a **Group** filter. Choose a group from the dropdown and click **Filter** to scope the entire report — the activity chart, the totals, and the course table — to just that group’s learners.
+
+- **Administrators** can filter by any group, or choose **All Users** to see everyone.
+- **Group Leaders** are automatically limited to their assigned groups, and use the same dropdown to switch between the groups they lead.
+
+You can set a **default group** under **Tin Canny Reporting > Settings** (v5.0) so the report opens already filtered to it. See [Report defaults](https://docs.google.com/document/d/1ENYYiR4aY7VpJVhhpy1coEUge4HQenMLLn081DTrIo4/edit#report-defaults).
+
+### Course Table
+
+Below the overview, the Course Table lists every course in scope. Columns include:
+
+| Column | Shows |
+| --- | --- |
+| ID / Course | Course ID and title |
+| Enrolled | Number of enrolled learners |
+| Not Started / In Progress / Completed | Learner counts by status |
+| Avg Quiz Score | Average quiz score for the course |
+| % Complete | Overall completion percentage |
+| Details | A See details link to the drill-down report |
+| Avg Time To Complete / Avg Time Spent | Time columns shown when the Simple Course Timer module (Uncanny Toolkit Pro) is enabled |
+
+You can **search** for a course by name and **sort** by any column heading. Note that these progress metrics track **LearnDash lessons and topics** — not the internal steps of an uploaded module.
+
+#### Exporting
+
+Use the **Excel Export** and **CSV Export** buttons above the table to download the current (filtered) course data for analysis or record-keeping.
+
+### Report defaults
+
+Under **Tin Canny Reporting > Settings** you can set a **default group** and **default page length** so the report opens already filtered and sized to your needs (added in v5.0). This is a time-saver when you regularly report on the same group or work with many courses.
+
+### Drill-Down Course Report
+
+Click a course’s **See details** link to open its detail report: overall performance for that course plus a list of enrolled users and their individual progress.
+
+### Related Articles
+
+- [User Report](https://www.uncannyowl.com/knowledge-base/user-report/) — the learner-centric companion view
+- [Front End LearnDash Reports](https://www.uncannyowl.com/knowledge-base/front-end-reports/) — display this report on the front end
+- [Lesson and Topic Completion Reports](https://www.uncannyowl.com/knowledge-base/lesson-and-topic-completion-reports/) — completion at the lesson/topic level
+
+---
+
+## Authoring Tools Supported by Tin Canny
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/)
+
+### Tin Canny Reporting – Version 4.0 and up
+
+Starting with Tin Canny 4.0, we will provide support for **almost all standards-compliant SCORM and xAPI/Tin Can modules**. This includes dispatch files, but not all authoring tools that publish dispatch have full support for resume (and in some cases tracking) behaviours in Tin Canny. Multi-SCO modules are currently not supported. A good test for compatibility is trying the module on [SCORM Cloud](https://cloud.scorm.com/sc/guest/SignInForm), but in some cases, due to WordPress architecture and behaviour, we cannot guarantee support for all authoring tools. Tin Canny testing is done primarily against Storyline, iSpring, Rise, Captivate and H5P.
+
+### Tin Canny Reporting – Versions earlier than 4.0
+
+Earlier versions of Tin Canny only support **tr****acking of Tin Can (xAPI) and SCORM statements from e-learning modules authored with Storyline 2/3/360, Articulate Rise, Adobe Captivate 9/2017/2019, iSpring 8/9, and H5P.** See the following support matrix for details about pre-4.0 authoring tool support:
+
+|  | Tin Can / xAPI | SCORM 1.2 | SCORM 2004 |
+| --- | --- | --- | --- |
+| Articulate Storyline 2 | Yes | Yes | Yes |
+| Articulate Storyline 360 | Yes | Yes | Yes |
+| Articulate Storyline 3 | Yes | Yes | Yes |
+| Articulate Rise1 | Yes | Yes | Yes |
+| Articulate Presenter 360 | Yes | Yes | Yes |
+| Adobe Captivate 9 | Yes | Yes | Yes |
+| Adobe Captivate 2017 | Yes | Yes | Yes |
+| Adobe Captivate 2019 | Yes | Yes | Yes |
+| iSpring 82 | No | No | No |
+| iSpring 93 | Yes | Yes | Yes |
+| iSpring Quizmaker | Yes | No | No |
+| Lectora Inspire 18 | Yes | Yes | No |
+| H5P | Yes | N/A | N/A |
+
+Note if you try to upload a zip file created by a tool **not** SCORM or xAPI compliant, you’ll see a warning that xAPI/SCORM statements sent by the module will not be recorded and you’ll be prompted to select the .html file in the zip that will launch the content.
+
+1 Articulate Rise modules will only send a Completed or Passed/Failed verb if they are displayed via Lightbox or a new window and upon closing the lightbox/window. When adding Rise modules, you should avoid using iFrame as the display method (at least if SCORM is being used; xAPI modules from recent Rise versions may work). Alternatively, you can override Completion Condition on the lesson or topic edit page by specifying other verbs such as “attempted” or “experienced” to trigger the Mark Complete button.
+
+2 iSpring 8 modules will unfortunately fail in Chrome with versions 80 and higher. iSpring cannot patch older modules and is therefore requiring the course authors republish them with iSpring 9 for proper tracking with Chrome 80 and higher.
+
+3 iSpring modules whose completion is based on viewing of slides will only send a Passed verb if the module is displayed via Lightbox or a new window and upon closing the lightbox/window. When adding iSpring modules, you should avoid using iFrame as the display method. Alternatively, you can override Completion Condition on the lesson or topic edit page by specifying other verbs such as “attempted” or “experienced” to trigger the Mark Complete button.
+
+---
+
+## Frequently Asked Questions
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/frequently-asked-questions/](https://www.uncannyowl.com/knowledge-base/frequently-asked-questions/)
+
+### What are the minimum requirements for running Tin Canny LearnDash Reporting?
+
+Tin Canny requires PHP 7.4 or higher as well as the latest version of LearnDash. It is a heavier plugin and with large records sets you may require more than 256 MB of memory be allocated to WordPress.
+
+### On the Tin Canny Reporting page, I see a loading icon but nothing loads.
+
+First, turn off debug in **wp-config.php** by changing:
+
+```
+define('WP_DEBUG', true);
+```
+
+To:
+
+```
+define('WP_DEBUG', false);
+```
+
+If the report page still doesn’t load after turning off debug, add the following to wp-config.php:
+
+```
+ini_set('log_errors','On');
+ini_set('display_errors','Off');
+ini_set('error_reporting', E_ALL );
+define('WP_DEBUG', false);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
+```
+
+### Can I track eLearning content hosted on Amazon S3 or other offsite storage?
+
+The LRS installed with the Tin Canny Reporting plugin is local to your WordPress site. It cannot store statements sent from eLearning modules hosted externally or offloaded to another service, including Amazon S3. You need to upload Tin Can modules directly to your WordPress/LearnDash site and modules must be stored on the WordPress install.
+
+### Why do I see a blank screen where my module should be?
+
+We usually see this happen when SSL is configured incorrectly. If your site is secure, and all of your URLs in the front end begin with https://, make sure that the URLs for the site under **Settings > General** in /wp-admin/ also have https:// at the beginning. If they don’t, the URLs must be corrected.
+
+It can also help to check the javascript console (**View > Developer > Javascript Console** in Chrome) to look for errors.
+
+### Why aren’t statements in the Tin Can report tracked?
+
+There are a number of things that could cause this. No data will be tracked if the site is protected with an .htaccess (sitewide) password or if the user completing activities is not signed in. Anything that globally restricts access in some way or disables the REST API could also prevent proper use of Tin Canny.
+
+If you’re using H5P modules, make sure you don’t have the H5P xAPI plugin installed. It will block communications with our Tin Canny endpoint. Also note that not every H5P module type sends xAPI/Tin Can statements; if you’re unsure, try visiting [https://h5p.org/content-types-and-applications](https://h5p.org/content-types-and-applications), go into the content type you’re using, and click the xAPI Coverage tab at the top. If there’s nothing there, the module may not send statements.
+
+### Why do I see 403 errors?
+
+Similar to the tracking issues above, anything that could disrupt communications with the virtual Tin Canny LRS endpoint that we create can result in 403 errors. If you use Sucuri or another security/firewall plugin, you will need to whitelist the plugin in its settings. Maintenance plugins or anything else that restricts or redirects access on a sitewide basis is also likely to cause problems.
+
+### Does Tin Canny LearnDash Reporting work with all SCORM and xAPI content?
+
+The plugin has been written for and tested extensively with the authoring software listed on [https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/). Although SCORM and xAPI are eLearning standards, different authoring applications do work a little differently in terms of when they send statements and how progress and completion are tracked. Our support is limited to authoring software that we know for certain would work.
+
+### Why are the time columns blank in my Course report?
+
+Tin Canny cannot track course time on its own; we rely on the [Simple Course Timer](https://www.uncannyowl.com/knowledge-base/simple-course-timer/) module in the [Pro addon](https://www.uncannyowl.com/downloads/uncanny-learndash-toolkit-pro/) for the Uncanny LearnDash Toolkit. We include those columns to make it easier to see data collected with that plugin. Also note that time will only be tracked from the time the module is enabled.
+
+### I cloned my site and now users can’t access Tin Canny content. What happened?
+
+This can happen in some situations where .htaccess files are included in a clone.  To restore access to Tin Canny content, follow these steps:
+
+1. Turn the setting *Protect SCORM/Tin Can modules* off
+2. Click *Save Changes*
+3. Turn the setting *Protect SCORM/Tin Can modules* on
+4. Click *Save Changes*
+
+This will regenerate .htaccess files that are configured for the cloned site.
+
+---
+
+## Install the Tin Canny Reporting Plugin
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/tincanny-installation-setup/](https://www.uncannyowl.com/knowledge-base/tincanny-installation-setup/)
+
+### Installation
+
+Installing the plugin can’t be more straightforward. After you purchase and download the plugin, you can simply sign into your WordPress site as an admin and navigate to **Plugins > Add New**. To install the plugin, click**Upload Plugin** to start the process. After installation, you will be directed to the License Activation page to enter your license key and activate the plugin.
+
+### Setup
+
+The plugin has four report views (for Course, User, Tin Can and xAPI Quiz Report) and a **Settings** tab.
+
+![Tin Canny Settings page](https://www.uncannyowl.com/wp-content/uploads/2025/09/Tin-Can-and-SCORM-settings.png)
+
+There are three optional controls on the Settings page under the heading Tin Can/SCORM:
+
+- Capture Tin Can and SCORM data: Keep the default setting Yes unless you are certain you won’t incorporate H5P, Storyline, Captivate, or iSpring content in any of your courses. If you select No (to not capture Tin Can data), the Tin Can Report tab will be removed and so will the Tin Can activity menu on the User Report. In addition, no Tin Can data will be reported on the Dashboard or Course Report. All other LearnDash reporting will still be available and functioning as expected.
+- [Protect SCORM/Tin Can modules:](https://www.uncannyowl.com/knowledge-base/protecting-sharing-content-tin-canny/) This option can prevent modules from being viewed by users who are not signed to your site. You can set protection at a global level (as shown above) and also override the global setting at a lesson or topic level.
+- SCORM Driver Compatibility: Depending on the authoring tool used, you may be required to change the default “Async” SCORM Driver compatibility to “Sync”. For most scenarios, this option will stay on the default “Async” setting.
+
+You can also set global options for the Mark Complete button behaviour. The options include:
+
+- Always Enabled
+- Disabled until complete
+- Hidden until complete
+- Hidden and autocomplete
+- Hidden and autoadvance
+
+The Reset Tin Can Data button allows you to clear all existing Tin Can statements in the Tin Can Report. This feature would be helpful if you need to reset test data. Note all historical data will be removed; this action cannot be undone.
+
+---
+
+## Tin Canny Reporting for LearnDash – Overview
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-reporting-overview/](https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-reporting-overview/)
+
+Tin Canny Reporting turns LearnDash into a complete reporting platform for interactive eLearning.
+
+LearnDash does not natively support uploading or embedding interactive SCORM or xAPI (Tin Can) eLearning content into your course, however, this is possible using Tin Canny Reporting for LearnDash.
+
+Upload your Articulate, Captivate, iSpring, or H5P content, embed it in your courses, and capture detailed completion, score, and engagement data — all stored on your own site, with no external Learning Record Store to run.
+
+**New here?** Jump straight to [Getting Started with Tin Canny Reporting](https://www.uncannyowl.com/knowledge-base/getting-started-with-tin-canny-reporting-for-learndash/) for a 20-minute install-to-first-report walkthrough.
+
+### What Tin Canny does
+
+LearnDash tracks whether a lesson is complete. Tin Canny adds everything that happens *inside* your interactive content:
+
+1. **Upload eLearning content** — embed SCORM and xAPI/Tin Can modules in lessons and topics with the Tin Canny Uploader.
+2. **Capture detailed data** — every interaction, score, and answer is recorded automatically.
+3. **Store it locally** — a Learning Record Store built into WordPress means no third-party LRS subscription and no data leaving your server.
+4. **Convert SCORM to Tin Can** — SCORM 1.2/2004 statements are converted to xAPI automatically, so all content reports together.
+5. **Report for admins and Group Leaders** — four back-end reports plus front-end reports your managers can run themselves.
+6. **Gate completion and track time** — integrate with the LearnDash Mark Complete button and the Uncanny Simple Course Timer.
+
+### The Tin Canny eLearning content uploader
+
+The uploader integrates with both the block and classic editors so you can embed modules directly into LearnDash lessons, topics, and courses. Uploaded modules are managed from the **Manage Content** page — redesigned in v5.1 with a cleaner layout and new upload-date and filesize columns. See [Managing eLearning Content](https://www.uncannyowl.com/knowledge-base/managing-elearning-content/).
+
+### LearnDash and Tin Can reports
+
+Tin Canny provides four core report views, each with sortable tables, search, drill-down, and CSV/Excel export:
+
+| Report | What it answers |
+| --- | --- |
+| Course Report | How is each course performing across all learners? |
+| User Report | How is one learner doing — with course start and lesson/topic completion dates? |
+| Tin Can Report | What exactly did learners do inside each module? |
+| xAPI Quiz Report | How did learners answer each question? |
+
+### A local LRS — nothing external to run
+
+Tin Canny stores all Tin Can/xAPI statements in a Learning Record Store native to WordPress. You get full statement capture without the cost or complexity of an external LRS, and your learning data stays on your own server.
+
+### Reports for site administrators and Group Leaders
+
+Reports surface completion times, activity trends, and individual quiz responses. Administrators see the whole site; Group Leaders see only their assigned groups. With the **front-end reports**, Group Leaders and client managers can review (and, as of v5.1.1, **sort** by % Complete and Avg Quiz) their teams’ progress without a dashboard login. See [Front End LearnDash Reports](https://www.uncannyowl.com/knowledge-base/front-end-reports/).
+
+### Integrations
+
+- **LearnDash Mark Complete button** — require a module to be finished before a lesson/topic can be completed, so completion means engagement. Configure this per lesson/topic in the **Tin Canny** tab on the edit screen (added in v5.1.3.3).
+- **Uncanny Simple Course Timer** (Toolkit Pro) — add time-spent columns to your reports for seat-time tracking.
+
+### Where to go next
+
+- [Getting Started with Tin Canny Reporting](https://www.uncannyowl.com/knowledge-base/getting-started-with-tin-canny-reporting-for-learndash/) — install to first report
+- [Authoring Tools Supported by Tin Canny](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/) — supported tools and formats
+- [From Articulate & Captivate to LearnDash](https://www.uncannyowl.com/knowledge-base/from-articulate-captivate-to-learndash-with-real-reporting/) — bringing authored content into LearnDash
+- [Prove Training Compliance with Tin Canny](https://www.uncannyowl.com/knowledge-base/prove-training-compliance-with-tin-canny/) — using reports as audit evidence
+
+---
+
+## Uncanny Codes – Changelog
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/uncanny-learndash-codes-changelog/](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-codes-changelog/)
+
+### 5.0 [2025-11-13]
+
+**New Feature:**
+
+- Added an option to modify the date for each individual code #240
+
+**Updated:**
+
+- Implemented new, standardized Uncanny Owl admin UI theme
+- Updated pages with redesigned layouts and improved Codes tables
+- Gravity Forms – Moved code redemption to the 
+```
+gf_pre_handle_confirmation
+```
+
+ hook for improved reliability #278
+- LearnDash Code Redemption – Added validation to check if the user redeeming a code is already enrolled in the course or a member of a group #292
+
+**Fixed:**
+
+- Uncanny Codes – Resolved text domain warning on WordPress 6.7+ websites #298
+- Woo – Edit Product – Fixed an issue where the Automator codes product type broke the layout in specific cases #275
+- Fixed text domain path for WordPress 6.7+ compatibility #322
+
+**Internal:**
+
+- Added 
+```
+code_id
+```
+
+ index to the usage table to optimize database operations on large datasets #290
+- Updated Uncanny Owl logo
+
+---
+
+### 4.4.0.1 [2024-10-02]
+
+**Fix:**
+
+- Woo & Automator Codes – Additional validation to avoid PHP Error when order is not valid #265
+
+---
+
+### 4.4 [2024-05-17]
+
+**Addition:**
+
+- Woo – Edit order page – Show order codes in a side metabox #250
+
+**Updated:**
+
+- Automator Codes & Woo – Allow Tax Status and Classes for the product type #245
+- Download Codes – Added Status, Issue Date, Order ID, Linked Product & Redeemed Times columns #253
+- View/Download Codes – Show “Deleted User” if the user no longer exists #242
+
+**Fixed:**
+
+- Automator Codes & Woo – Blank CSV file is erroneously attaching to Woo order emails #231
+- Automator Codes & Woo – PHP error related when an invalid product ID is passed #229
+- User Registration – Remove extra white spaces in the registration fields #234
+- View Codes – Improved redemption count #262
+
+**Under the hood:**
+
+- Licensing – Allow plugin to be pre-activated by defining 
+```
+UNCANNY_CODES_LICENSE_KEY
+```
+
+ in 
+```
+wp-config.php
+```
+
+ #256
+- Licensing endpoint updated #255
+- License moved under Settings #255
+
+### 4.3.0.1 [2023-11-09]
+
+**Fixed:**
+
+- Gravity Forms – Code field showing incorrect error message #222
+- Blocks – Removed 
+```
+lodash
+```
+
+ dependency for WordPress v6.4+ #224
+
+---
+
+### 4.3 [2023-10-19]
+
+**New Feature:**
+
+- Replace, Cancel and Delete individual codes #213
+
+**Updated:**
+
+- Uncanny Automator – Creating an order via an Uncanny Automator action now correctly assigns relevant codes #212
+- Improved PHP 8.2 compatibility #210
+
+**Fixed:**
+
+- Fluent Forms with Codes field – Not mapping a user to the group on registration #206
+- Theme My Login – Settings not working #200
+
+**Developers:**
+
+- Registration Form – Added WP Filter 
+```
+ulc_registration_min_password_length
+```
+
+ to set minlegth to a larger number #198
+- Added WP filter 
+```
+uncanny_codes_htaccess_folder_protection
+```
+
+ to disable .htaccess protection for codes folder #196
+
+---
+
+### 4.2.1 [2023-04-14]
+
+**Added:**
+
+- View codes – add “Order ID” column and show the associated Woo order for Automator codes that were sold #183
+- Purchased Codes – WordPress filter 
+```
+ulc_wc_email_codes_table_position_order_table
+```
+
+ added to either show purchased codes before or after order details #179
+- Added 
+```
+ulc_codes_csv_filename
+```
+
+ filter to change Codes CSV file name #168
+
+**Updated:**
+
+- Change logic to load static assets on fewer pages #171
+
+**Fixed:**
+
+- WooCommerce – Edit Product – jQuery Dependency issue #176
+- Codes – Invalid Code not showing custom message #165
+- Gravity Forms – Code redemption field not working when create a new user feed is added #187
+- Automator 1-click installer nonce validation #173
+
+---
+
+### 4.2.0.1 [2022-11-17]
+
+**Fixed:**
+
+- CSV filename sanitization #152
+- Fix DB query issue related to unique code process #149
+
+**Internal:**
+
+- Add in plugin notifications #154
+
+---
+
+### 4.2 [2022-09-01]
+
+**Added:**
+
+- Ability to cancel codes: Upload and cancel codes via CSV #109
+
+**Fixed:**
+
+- Added SQL condition to filter out non-zero user ids #145
+
+---
+
+### 4.1.1 [2022-08-11]
+
+**Added:**
+
+- Gravity Forms – Code field can now be populated dynamically with a parameter in query string #140
+
+**Developers:**
+
+- New filter: 
+```
+ulc_capability
+```
+
+ to override Codes menu permission in /wp-admin #142
+- New action: 
+```
+ulc_codes_group_generated
+```
+
+ when a new code batch is created #135
+
+---
+
+### 4.1 [2022-07-05]
+
+**Added:**
+
+- Allow users to redeem the same code multiple times #104
+- Fluent Forms – Add support for code redemption #123
+- Forminator – Add support for code redemption #122
+
+**Updated:**
+
+- Automator type codes – 
+```
+ulc_code_max_usage
+```
+
+ filter added to override coupon max usage #126
+- Gravity Forms – 
+```
+ulc_redeem_code_for_current_logged_in_user
+```
+
+  filter added to optionally not redeem code when Uncanny Code field is in registration form #114
+- Code redemption shortcode – Hook switched from 
+```
+init
+```
+
+ to 
+```
+wp_loaded
+```
+
+  #110
+- Improved PHP 8.1+ compatibility #103
+
+**Fixed:**
+
+- Uncanny Codes Woo product – 2x quantity of codes issued on order with multiple payment attempts #128
+- View Codes – Total codes are now listed reliably #112
+
+---
+
+### 4.0.4 [2021-11-19]
+
+**Updated:**
+
+- Changes/fixes to ticket submission data
+
+**Fixed:**
+
+- Fatal error on failed remote get #95
+- Gravity Forms – Code redemption for existing users now works more reliably #96
+- Divi – Add to Cart button is no longer shown above the product when using the Divi Woo Add to Cart component #92
+- WooCommerce – Uncanny Codes are only sent when the associated order is Processing or Completed, not On Hold #90
+- PHP notice: 
+```
+block_categories
+```
+
+ deprecated
+
+---
+
+### 4.0.3 [2021-10-04]
+
+**Fixed:**
+
+- “To use this code, enter it on the checkout page and complete your purchase.” message showing up incorrectly on code redemption in some situations #85
+- Codes for Uncanny Automator product type now respects “Never show quantity remaining in stock” setting at Settings > Product > Inventory #83
+- Code redemption appearing multiple times on some sites #80
+
+---
+
+### 4.0.2 [2021-04-07]
+
+**Updated:**
+
+- Code group names can now be longer than 30 characters #59
+
+**Fixed:**
+
+- Email: Uncanny Codes table is no longer added for all orders #58
+
+---
+
+### 4.0.1 [2021-03-22]
+
+**Added:**
+
+- Cancel codes when related order is refunded
+
+**Updated:**
+
+- date() changed to date_i18n() to accommodate translated dates
+- Styling updates
+- Migration of users now handled by cron
+- Code quality improvements
+
+**Fixed:**
+
+- PHP Warning: register_rest_route cannot have a slash in namespace
+- Paged query string when viewing code group causing unexpected issue
+- Unexpected code redemption data loss
+- select2 JavaScript conflict on some wp-admin pages
+- Invalid default value for ‘Date and time’ CURRENT_TIMESTAMP mySQL error in some environments
+
+---
+
+### 4.0 [2021-03-16]
+
+**Added:**
+
+- Support for redeeming specific code batches using Uncanny Automator (Requires  Automator 2.11.1 or later)
+- Support for selling codes via WooCommerce – New product type “Codes for Uncanny Automator”
+- Support for tracking available code inventory in WooCommerce
+- Support for code redemption via WP Forms
+- Support for code redemption via Formidable Forms
+- Names for code batches for easier assignments in WooCommerce and Automator
+- A shortcode attribute to check whether or not a code is valid before redeeming it
+
+**Updated:**
+
+- Code generation interface completely redesigned to be more intuitive
+- View codes page columns updated and layout streamlined
+- LearnDash plugin no longer required
+
+---
+
+### 3.2 [2020-07-29]
+
+- Added: Ability to specify character types to be included in code (lowercase letters, uppercase letters, numbers)
+- Updated: Code generation form reorganized to improve UX
+- Updated: Leading/trailing spaces are now removed from codes entered on the native registration form and manually entered codes
+- Updated: Added redirect attribute to [uo_user_redeem_code]
+- Updated: Set list-style-type:none on [uo_user_redeem_code] form field
+
+---
+
+### 3.1.2 [2020-05-08]
+
+- Fixed: Field labels missing on registration form
+
+---
+
+### 3.1.1
+
+- Added: Filter to increase/decrease maximum character length for manually generated codes: ulc_manual_code_length
+- Added: Action after a code is redeemed: ulc_user_redeemed_code
+- Updated: Converted code field in database to text from varchar(30) to support longer codes
+- Updated: Improved string localization
+- Updated: Reordered wp-admin menu entries
+- Updated: Replaced “No coupon found” with “No codes found” on View codes page
+- Fixed: Removed “Dash Separation” field from Modify Codes screen
+
+---
+
+### 3.1
+
+- Added: Ability to manually enter custom codes
+- Added: Ability to edit associated course(s)/groups(s), expiration date and uses per code of previously created codes
+- Added: Visual editor for “Successfully redeemed” message, to make it easier to provide users with next steps after successful code redemption
+- Added: Terms and conditions checkbox option for built-in registration form
+- Added: Filter for characters included in auto-generated codes: ulc_code_characters
+- Updated: Randomly generated codes now include lowercase letters
+- Updated: Clicking “Generate Codes” with no course or group selected now shows an error message
+- Updated: Tweaked some default error messages for grammar/style
+- Fixed: “Enter Coupon Code” placeholder and Redeem button strings are now translatable
+- Fixed: SQL warning on installation on some sites
+
+---
+
+### 3.0.4
+
+- Updated: EDD updater class
+- Fixed: Issue introduced in 3.0.3 where codes were not being processed on checkout
+- Fixed: PHP Warning when LearnDash is not active
+
+---
+
+### 3.0.3
+
+- Added: Automatic template overrides! Override any file in the /src/templates folder by copying it into /uncanny-codes/ in your child theme
+- Updated: Improved performance
+- Updated: No longer loading MooTools and SimpleModal frameworks when not necessary (improves compatibility with other plugins and themes)
+- Fixed: Field labels on WooCommerce checkout not appearing
+
+---
+
+### 3.0.2
+
+- Fixed: Class name conflict with Uncanny LearnDash Groups plugin
+
+---
+
+### 3.0.1
+
+- Added: Redeemed date column to CSV export of enrollment codes
+- Added: Enrollment Code field type for Gravity Forms – field can now be placed anywhere in the form
+- Added: Confirmation dialog when deleting codes
+- Added: Duplicate checking when generating codes
+- Updated: Search for a specific enrollment code now returns the group the code is in if the search is done from the code group page
+- Fixed: Support for Theme My Login 6.x restored
+- Fixed: Link to submit support ticket added when active license detected
+- Fixed: Undefined index notice on View Codes page
+
+---
+
+### 3.0
+
+- Added: Support for code expiry dates
+- Added: Ability to search by code text
+- Added: Basic Gutenberg block support
+- Added: Support for Theme My Login 7.x
+- Added: Support for Gravity Forms User Verification feature
+- Added: Uncanny 3.0 plugin architecture (tabs for Help, License Activation, etc.)
+- Updated: Improved translation support
+- Updated: Improved multisite compatibility
+- Fixed: Typo in registration form success message
+- Fixed: “Require LearnDash Code” checkbox not showing up on WooCommerce products
+
+---
+
+### 2.0
+
+- Added: .pot file for translations
+- Updated: Design of back-end pages
+- Updated: Styling of the included registration form
+- Fixed: Error on save of Gravity Forms settings if fields are empty
+
+---
+
+### 1.0.5
+
+- Updated: Generated codes no longer include similar characters (e.g. i,l,0,o, etc.)
+
+---
+
+### 1.0.4
+
+- Added: [uo_code_registration] now accepts the following parameters: redirect, code_optional, auto_login, role. Visit the knowledge base for details: [https://www.uncannyowl.com/knowledge-base/using-codes-custom-registration-form/](https://www.uncannyowl.com/knowledge-base/using-codes-custom-registration-form/)
+- Updated: Registration form shortcode [uo_code_registration] now ignores “Anyone can register” setting in WordPress general settings
+
+---
+
+### 1.0.3
+
+- Updated: Added support for Theme My Login registration forms with option to make Registration Code a required field
+
+---
+
+### 1.0.2
+
+- Fixed: Settings page not saving when GravityForms User Add On is not active
+- Fixed: Database query for potential failure on some servers
+
+---
+
+### 1.0.1
+
+- Fixed: switch_to_locale() 500 server error on stock user registration form
+- Fixed: Settings page if Gravity Forms User Registration Add-on is not active
+- Removed: Default button CSS on stock user registration form
+
+---
+
+### 1.0
+
+- Initial release
+
+---
+
+## Continuing Education Credits – Changelog
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/continuing-education-credits-changelog/](https://www.uncannyowl.com/knowledge-base/continuing-education-credits-changelog/)
+
+### 5.0 [2024-10-28]
+
+**New Feature:**
+
+- CEUs / credits editable now #174
+
+**Updated:**
+
+- Continuing Education Report – New enhanced front-end report #242
+- Continuing Education Report – Added Excel Export option #218
+- Continuing Education Report – Configuration settings for Gutenberg Block #241
+- Continuing Education Report – New filters for columns and data #243
+- Continuing Education Report – New setting to include data from child groups in a group hierarchy #240
+
+---
+
+### 4.2.0.2 [2024-09-25]
+
+**Fixed:**
+
+- Fixed an issue where course data was not displayed when the “Enable Custom CEUs Rows” setting was enabled in Toolkit Pro under rare circumstances #235
+- Licensing – Added an additional validation to ensure licensing calls only run when explicitly requested #229
+
+---
+
+### 4.2.0.1 [2024-09-11]
+
+**Update:**
+
+- Archived quiz results – Incorrect question count and percentages with third-party plugin overrides in a specific situation #219
+
+**Fixed:**
+
+- Archived transcript – Status column incorrectly displays date, causing archived courses to be excluded from filter #212
+- Toolkit transcript – Use unique timestamp and course ID keys to prevent duplicate CEU data with archived records #214
+- Licensing call – Creating a loop in a specific scenario #223
+
+---
+
+### 4.2 [2024-07-11]
+
+**Addition:**
+
+- Licensing – Allow plugin to be pre-activated by defining 
+```
+UNCANNY_CEUS_LICENSE_KEY
+```
+
+ in 
+```
+wp-config.php
+```
+
+ #205
+
+**Updated:**
+
+- Optionally show archive CEU course data in Uncanny Toolkit Pro’s User Transcript #200
+- Quiz Question Analysis report – WP filters 
+```
+uo_tincanny_reporting_do_ceu_override
+```
+
+ & 
+```
+uo_tincanny_reporting_skip_ceu_override_quiz_ids
+```
+
+ #198
+
+**Fix:**
+
+- CEU Earned Shortcode – Returning empty string if the CEUs earned is 0 #195
+
+**Internal:**
+
+- Hide other plugin notices on CEU pages #202
+- Move license to Settings page #205
+
+---
+
+### 4.1.0.1 [2023-11-09]
+
+**Fixed:**
+
+- Credit Report – Ludicrous mode – PHP notice when no records are generated #190
+- Blocks – Removed 
+```
+lodash
+```
+
+ dependency for WordPress v6.4+ #190
+- Blocks – Available Credits & Credits Remaining – PHP Error when LearnDash is not active #d083
+
+---
+
+### 4.1 [2023-11-08]
+
+**Updated:**
+
+- Credit Report – New performance options for better experience #122
+- Credit Report – New Settings section to set report defaults #122
+- Credit Report – Add “Reset” button to reset dropdown values #185
+
+**Fixed:**
+
+- Course records not migrating properly for Historical Records #182
+- Credit Report – Dates are now displayed using LearnDash date/time display function #172
+- Credit Report – CSV Export – Some uppercase email addresses are broken #168
+- Credit Report – Multisite not showing users specific to the current site #163
+- Deficiency Report – Required CEUs column displays no value when LearnDash is not activated #157
+- User profile – Hide “Archived quiz results” if it’s empty #150
+- Credit Report – Report showing UTC timestamp #147
+
+**Internal:**
+
+- Improved PHP 8.2 compatibility #184
+- “Try Automator” menu entry renamed to “Automation” #175
+- Fix vulnerability in Automator’s 1-click installer #153
+- Database upgrades  #122
+- Award Certificate – WordPress filters 
+```
+uo_group_leader_mail_headers
+```
+
+, 
+```
+uo_admin_mail_headers
+```
+
+ and 
+```
+uo_user_mail_headers
+```
+
+ to allow mail header overrides (BCC etc) #158
+
+---
+
+### 4.0 [2022-11-17]
+
+**New Feature:**
+
+- Historical data – CEU now keep historical records even if a course is reset  #101
+- Tin Canny Reporting – Quiz Question Analysis Report – Support for historical quiz completions
+
+**Updated:**
+
+- ```
+[uo_ceu_available]
+```
+
+ shortcode – Course ID validation added #120
+- Multi-Course certificate: Certificate link are now stored in the database #91
+
+**Fixed:**
+
+- Course Report – CSV export not populating columns #124
+- Course Report – Incorrect time being displayed #116
+- PHP 8.1 Deprecation: 
+```
+preg_split()
+```
+
+ : Passing null to parameter #3 ($limit) of type int is deprecated #127
+
+**Under the hood:**
+
+- Historical data – Record new quiz results in archive #101
+- Historical Data – Copy existing records in historical tables #105
+- Historical Data – Add “Generate historical quiz records” section under Generate Records tab #104
+- Edit profile – Show historical quiz completion records #102
+- In-plugin notifications system #129
+- Uncanny Automator 1-click installer #39
+- Multiple do_action hooks #114
+- Fix core-js preventing webpack from generating the bundles #106
+- CEU licensing – Licensing page updated #38
+
+---
+
+### 3.3.4 [2022-03-23]
+
+**Fixed:**
+
+- Credit report – CSV export exposes hidden timestamp #85
+- View Certificate – PHP error on some environments #87
+
+---
+
+### 3.3.3 [2022-03-03]
+
+**Updated:**
+
+- Improved appearance of deficiency report when no rollover date is set
+- Improved PHP 8 compatibility #57
+
+**Fixed:**
+
+- Front-end assets sassdash and sass-svg cause core-js to freeze during compilation #73, #65
+- ```
+PHP error: Uncaught Error: Call to a member function exists()
+```
+
+ in 
+```
+award-certificate.php #70
+```
+- ```
+PHP notice: Undefined index: highest_group_credit_required #64
+```
+- ```
+PHP notice: add_submenu_page was called incorrectly #35
+```
+
+---
+
+### 3.3.2 [2021-11-19]
+
+**Updated:**
+
+- Changes/fixes to ticket submission data
+
+**Fixed:**
+
+- Fatal error on remote get #58
+
+---
+
+### 3.3.1 [2021-10-04]
+
+**Updated:**
+
+- Optimized query performance #47
+
+**Fixed:**
+
+- PHP warning – block_categories deprecated #55
+- PHP error on quiz completion in some situations #43
+- Multi-course CEU certificate not sent in some situations #36
+- Certificates awarded by Uncanny CEUs now linked properly in Uncanny Toolkit for LearnDash certificate widget module #33
+- PHP error – Class ‘uncanny_ceu\stdClass’ not found on some sites #21
+
+---
+
+### 3.3 [2021-04-01]
+
+**Updated:**
+
+- Added compatibility with LearnDash Certificate Builder plugin #13
+- Credit report now loads all records by default #9
+
+**Fixed:**
+
+- PHP notice: Deprecated: Non-static method ceu_value_meta_box_callback() should not be called statically #19
+- Credit display issue on Learner Transcript (Uncanny Toolkit Pro) when the user has no LearnDash course completions #1
+
+---
+
+### 3.2.1 [2021-02-10]
+
+**Added:**
+
+- Support for manual entries where credit value = 0
+- Support for display of custom CEUs in Learner Transcript module of Uncanny Toolkit Pro (requires Uncanny Toolkit Pro 3.7 or later)
+
+**Fixed:**
+
+- PHP Fatal error: Uncaught Error: Call to undefined function uncanny_ceu\learndash_get_users_group_ids() when LearnDash is not active
+- PHP Notice: missing required permission_callback argument
+
+---
+
+### 3.2 [2021-01-13]
+
+**Added:**
+
+- New system to generate credit and completion records for historical LearnDash course completions
+
+**Updated:**
+
+- Removed hyperlinks from custom titles in Credit Report
+- Only show courses that have assigned credits when adding manual credits
+
+**Fixed:**
+
+- Allow support for decimals when adding custom credits
+- Times in Credit Report match WordPress time instead of server time
+- Several text domains corrected for translatable strings
+- Last names incorrectly truncated in Credit Report export
+- Replace some references to “CEUs” with the plural CEU label from the plugin Settings page
+
+---
+
+### 3.1 [2020-12-17]
+
+**Added:**
+
+- Ability to add custom credits for users from the Credit Report
+- Ability to delete credits from the Credit Report
+- Ability to trigger multi-course and multi-credit certificates from custom credits
+
+**Updated:**
+
+- Improved performance of user selection in Credit and Deficiency Reports
+- Text domain of internal string
+
+**Fixed:**
+
+- Better support for PDF rendering on sites with LearnDash 3.2.0+
+- WordPress 5.5+ compatibility related to REST API routes without a permission_callback
+- Earned credits showing properly in the Dashboard module of Toolkit Pro
+
+---
+
+### 3.0.7 [2020-10-28]
+
+- Added: Hook for Uncanny Automator integration
+
+---
+
+### 3.0.6 [2020-07-27]
+
+- Fixed: PHP Notice: register_rest_route was called incorrectly in WordPress 5.4.2 and newer
+
+---
+
+### 3.0.5 [2020-03-19]
+
+- Updated: EDD updater class
+- Updated: Reduced the delay before CEUs are awarded after course completion to 10 seconds
+- Updated: Courses completed by an admin via the edit user page now awards CEUs
+- Fixed: CEU certificates not being emailed due to TCPDF folder location change in LearnDash
+- Fixed: WordPress Notice – add_submenu_page was called incorrectly
+- Fixed: PHP notices and warnings displayed in Query Monitor plugin
+
+---
+
+### 3.0.4
+
+- Added: Support for LearnDash 3.1
+
+---
+
+### 3.0.3
+
+- Fixed: Name appearing twice in CSV exported from course and deficiency reports
+
+---
+
+### 3.0.2
+
+- Updated: Added email column to Course and Deficiency Report CSV export
+- Fixed: Date column in CSV export now formatted correctly
+- Fixed: Credit values are no longer rounded on Learner Transcript (Learner Transcript requires Uncanny LearnDash Toolkit Pro)
+
+---
+
+### 3.0.1
+
+- Added: Total row for CEUs column in Learner Transcript (Uncanny Toolkit Pro)
+- Fixed: Credit Rollover Date no longer accepts invalid date values
+- Fixed: Date filters on reports now properly sync’d with stored completion dates
+
+---
+
+### 3.0
+
+- Added: Basic Gutenberg block support
+- Added: Uncanny 3.0 plugin architecture (tabs for Help, License Activation, etc.)
+- Updated: Visual design and filters of all admin reports
+- Updated: Visual design of front-end report ([uo_ceu_report])
+- Updated: Course completion time is now recorded from learndash_course_completed action
+- Updated: Support for optional CEU column in Learner Transcript module of Uncanny LearnDash Toolkit Pro
+- Updated: Improved support for differences between WordPress and server timezones
+- Updated: Improved support for plugin translation
+- Fixed: Visibility of __sleep method for PHP 7 compatibility
+- Fixed: CEUs not properly included in “CEUs Earned Since Rollover” section on user profile page
+- Fixed: Logic for calculating credits in current rollover period
+
+---
+
+### 2.0
+
+- Added: Utilized uo_course_completion_time from Pro toolkit to save same time across multiple modules
+- Added: Column for course CEUs earned in the Learner Transcript module of Uncanny LearnDash Toolkit Pro (requires Uncanny LearnDash Toolkit Pro plugin)
+- Updated: Settings page design
+- Updated: Moved Certificate Email Settings to Settings page
+- Updated: Changed from current_time(‘timestamp’) to time() for consistency
+- Fixed: CSS conflict with Events Calendar Tickets
+- Fixed: CEU certificate rendering issues
+
+---
+
+### 1.1.1
+
+- Update: Plugin now reports dates and times exclusively in the WordPress site time zone
+
+---
+
+### 1.1
+
+- New Feature: Added Required Credits for users and groups
+- New Feature: Added Required Credit shortcodes: [uo_ceu_days_remaining] and [uo_ceu_credits_remaining]
+- New Feature: Added Required Credit Deficiency Report
+- New Feature: Added Required Credit email reminders
+
+#### 1.0
+
+- Initial Release
+
+---
+
+## Uncanny Toolkit Pro for LearnDash – Changelog
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-toolkit-pro-change-log/](https://www.uncannyowl.com/knowledge-base/learndash-toolkit-pro-change-log/)
+
+### 4.4.1[2026-05-29]
+
+**Addition:**
+
+- Group Sign Up – Added support for Forminator forms as registration forms on group sign-up pages #901
+
+**Updated:**
+
+- Course Timer – Added WordPress filters 
+```
+uo_course_timer_time_display
 ```
 
  and 
 ```
-add_courses_button
+uo_course_timer_time_display_completion
 ```
 
- shortcode attributes.
+ to allow customizing the time display for [uo_time] and [uo_time_course_completed] #883
+- Group Signup – Moved user authentication before group assignment so hooks triggered during registration have access to the correct current user context, improving compatibility with Automator and other integrations #902
 
-### Shortcode reference
+**Fixed:**
 
-The **Group Management** block and 
+- Resolved COOKIEHASH mismatch that caused timer authentication failure when 
 ```
-[uo_groups]
+get_site_option
 ```
 
- shortcode have the following settings / attributes to control which features are visible on the page:
+ returned the wrong 
+```
+siteurl
+```
 
-| Setting / Attribute | Values | Default | Controls |
-| --- | --- | --- | --- |
-| group_name_selector | "show" / "hide" | "show" | Group name dropdown |
-| seats_quantity | "show" / "hide" | "show" | Seat count display |
-| add_seats_button | "show" / "hide" | "show" | Add Seats button |
-| add_courses_button | "show" / "hide" | "show" | Add Courses button |
-| add_user_button | "show" / "hide" | "show" | Add User / invite button |
-| remove_user_button | "show" / "hide" | "show" | Remove User button |
-| first_last_name_required | "yes" / "no" | "no" | Makes first/last name mandatory when adding a user |
-| group_email_button | "show" / "hide" | "hide" | Send Email button |
-| upload_users_button | "show" / "hide" | "show" | Bulk CSV upload button |
-| download_keys_button | "show" / "hide" | "show" | Download Keys button |
-| key_options | "show" / "hide" | "show" | Enrollment key options in the Add User dialog |
-| key_column | "show" / "hide" | "show" | Key column in the Enrolled Users table |
-| group_courses_section | "show" / "hide" | "show" | Associated courses list |
-| group_leader_section | "show" / "hide" | "show" | Group Leaders section |
-| add_group_leader_button | "show" / "hide" | "show" | Add Group Leader button |
-| quiz_report_button | "show" / "hide" | "show" | Quiz Report button |
-| assignments_button | "show" / "hide" | "show" | Assignments button |
-| essays_button | "show" / "hide" | "show" | Essays button |
-| progress_report_button | "show" / "hide" | "show" | Progress Report button |
-| progress_management_report_button | "show" / "hide" | "show" | Manage Progress button |
-| csv_export_button | "show" / "hide" | "show" | CSV export of enrolled users |
-| excel_export_button | "show" / "hide" | "hide" | Excel export of enrolled users |
-| enrolled_users_page_length | numeric | 50 | Default rows per page in the Enrolled Users table |
-| enrolled_users_length_menu | comma-separated list | 25,50,100,-1 : All | Row-count options in the Enrolled Users table |
-| group_leaders_page_length | numeric | 50 | Default rows per page in the Group Leaders table |
-| group_leaders_length_menu | comma-separated list | 25,50,100,-1 : All | Row-count options in the Group Leaders table |
-| enrolled_users_orderby_column | column name | First name | Column used to sort the Enrolled Users table |
-| enrolled_users_order_column | "asc" / "desc" | "asc" | Sort direction for the Enrolled Users table |
-| group_leaders_orderby_column | column name | First name | Column used to sort the Group Leaders table |
-| group_leaders_order_column | "asc" / "desc" | "asc" | Sort direction for the Group Leaders table |
-| edit_page_id | page ID | (none) | ID of a custom user-edit page |
-| edit_url | relative URL | (none) | URL of a custom user-edit page (alternative to edit_page_id) |
+ #895
+- Fluent Forms Autocomplete – Resolved a PHP warning on lesson and topic pages when the module is active #885
+- Group Notifications – Ensured edited LearnDash notifications are scheduled for groups created after the notification was originally created #867
+- Group Registration – Recognized Forminator forms on group edit pages so the built-in registration form is removed and users are added to the group after submitting the Forminator form #872 #874
+- WordPress Compatibility – Settings now appear in a dedicated “Uncanny Toolkit” tab on the edit page for LearnDash post types #896
 
-**Example — showing the email button and hiding key management:**
+---
+
+### 4.4[2025-11-13]
+
+**Added:**
+
+- Learner Transcript – Added an option to allow public transcript access with a shareable link and copy-to-clipboard feature for easier viewing and sharing of transcript records #773
+
+**Updated:**
+
+- Implemented new, standardized Uncanny Owl admin UI theme
+- Import Users – Enhanced CSV import functionality to support multiple delimiters (comma, semicolon, tab, pipe) with automatic detection #855
+
+**Fixed:**
+
+- Autocomplete Lessons & Topics – Set 
+```
+$force
+```
+
+ to true when calling 
+```
+learndash_process_mark_complete
+```
+
+ #817
+- Course Dashboard – PHP warning Undefined array key “has_graded” #858
+- Duplicate Pages & Posts module – Duplicating a course no longer enables nested URLs #836
+- Email Course Certificates – Refactored hardcoded certificate paths to dynamic upload directory with fallbacks #842
+- Import Users – Fixed password reset token regeneration issue in CSV #845
+
+---
+
+### 4.3.2 [2025-05-13]
+
+**Added:**
+
+- Simple Course Timer – Added option to enable logout and redirect after timer expires #169
+
+**Developers:**
+
+- Transcript – Introduced WP filter 
+```
+uo_pro_transcript_cell_$key
+```
+
+ (e.g., 
+```
+title
+```
+
+) to make course title linkable #820
+- Group Registration Form – Added WP action hooks 
+```
+uo_group_signup_before_table
+```
+
+, 
+```
+uo_group_signup_after_table
+```
+
+ to add custom group signup form fields #809
+
+**Fixed:**
+
+- Autocomplete Lessons & Topics – Resolved PHP warnings when a lesson is not found #805
+- Autocomplete Lessons & Topics – Fixed issue preventing user redirection to the “Course Completion Page” #822
+- Bulk Certificate Email – Corrected HTML tag escaping issue #815
+- Course Dashboard – Fixed issue where category IDs did not work in the Gutenberg block category field #130
+- Gravity Forms Autocomplete Lessons & Topics – Resolved hook priority conflict #823
+- PHP Notice related to 
+```
+load_text_domain
+```
+
+ resolved #826
+- Simple Course Timer – Fixed WP 6.8+ 
+```
+wp_validate_auth_cookie
+```
+
+ and password hashing compatibility #829
+- Simple Course Timer – Ensured compatibility with Tin Canny v5.0 #831
+
+---
+
+### 4.3.1 [2024-10-29]
+
+**Updated:**
+
+- Learner Transcript – Table Course Sorting – Added “Course completion date ascending” and “Course completion date descending” options #796
+- Learner Transcript – Table Course Sorting – Renamed “Date ascending” to “Course publish date ascending” #796
+- Learner Transcript – Table Course Sorting – Renamed “Date descending” to “Course publish date descending” #796
+- Learner Transcript – 
+```
+all
+```
+
+ option added for 
+```
+category
+```
+
+ and 
+```
+ld_category
+```
+
+ attributes #525
+- Group Registration – New WP Action 
+```
+uo_group_signup_before_submission
+```
+
+ and Filter 
+```
+uo_group_signup_errors
+```
+
+ to allow custom validation #801
+
+**Fixed:**
+
+- Import Users – Fix message when email is not sent #786
+- Learner Transcript – Additional validation for post variables before attempting to retrieve properties #798
+- Learner Transcript – Fixed deprecated notice related to 
+```
+usort()
+```
+
+ #791
+
+---
+
+### 4.3 [2024-07-11]
+
+**New Feature:**
+
+- Learner Transcript – Optionally show historical course completion records (Requires Uncanny CEUs) #767
+
+**Fixed:**
+
+- Autocomplete Lessons & Topics on Fluent Forms submission – Updated deprecated action hooks #724
+- Course Timer – Fixed PHP notice in a specific case #775
+- Download Certificates In Bulk – Set current user for LD access checks #765
+- Drip Lessons by LearnDash Group – Filter to override LearnDash Lesson Access setting no longer working #762
+- Import Users – Populate course and group IDs from default options for hooks #771
+
+**Internal:**
+
+- License activation moved to modules menu (Requires Toolkit v3.7+) #777
+- License endpoint updates #777
+- Download Certificate modules – New filters 
+```
+uo_learndash_certificate_font
+```
+
+ & 
+```
+uo_learndash_certificate_font_size
+```
+
+ for custom fonts #778
+
+---
+
+### 4.2.1 [2024-05-09]
+
+**Addition:**
+
+- Download Certificates in Bulk – “Clear previous runs” front end checkbox #755
+
+**Updated:**
+
+- Course Dashboard – Course Start button – Course status CSS class added for custom CSS rules #743
+- Download Certificates In Bulk – Translatable Email Body #733
+- Group Logo/List – New attribute 
+```
+hide_logo_admin
+```
+
+ to hide group images for admins #753
+- Import Users – New filter 
+```
+uo_toolkit_csv_import_wp_user_by_field
+```
+
+ to optionally look up user by login instead of email #740
+- Reset Progress Button – Make default button label translatable #745
+
+**Fixed:**
+
+- Download Certificates In Bulk – Improved count and messaging of dropdown options #735
+- Download Certificates In Bulk – Now displays a message if PHP 
+```
+ZipArchive
+```
+
+ module is not active #670
+- Download Certificates and Certificates running with cron are not rendering LearnDash’s usermeta shortcodes #700
+- Drip Lessons by Topic/Group – LearnDash notifications are not firing when module is enabled #737
+- Group Logo/List – All group logos are appearing for admins #749
+
+**Under the hood:**
+
+- Licensing – Allow plugin to be pre-activated by defining 
+```
+UNCANNY_TOOLKIT_PRO_LICENSE_KEY
+```
+
+ in 
+```
+wp-config.php
+```
+
+ #761
+- Licensing endpoint updated #757
+
+---
+
+### 4.2 [2024-02-07]
+
+**New Features:**
+
+- Simple Course Timer – Timer that counts up 
+```
+[uo_time_live]
+```
+
+ #721
+- Enhanced Lessons/Topics Grid – Show quizzes #605
+- Transcript Report 
+```
+[uo_transcript]
+```
+
+ – 
+```
+user-id
+```
+
+ attribute to support Transcript page ID attribute in Uncanny Groups v6.0 #726
+
+**Updated:**
+
+- Duplicate Pages & Posts – Minimum role changed from 
+```
+manage_options
+```
+
+ to 
+```
+edit_published_posts
+```
+
+ #711
+- Enhanced Course Grid – Added 
+```
+taxonomy_relation
+```
+
+ attribute to set 
+```
+OR
+```
+
+ or 
+```
+AND
+```
+
+ values #713
+- Import Users – 
+```
+%Password Reset URL%
+```
+
+ token #715
+- Import Users – Upload error message made clearer #717
+- Group Registration – New WordPress
+- Filters 
+```
+uo_ld_group_signup_registered_message
+```
+
+, 
+```
+uo_ld_group_signup_joined_remove_previous_group_message
+```
+
+ & 
+```
+uo_ld_group_signup_joined_message
+```
+
+ to override Group Signup Messages #709
+
+---
+
+### 4.1.4.2 [2023-12-14]
+
+**Update:**
+
+- Download Certificates In Bulk – WP Filters 
+```
+uo_bulk_downlad_cert_capability
+```
+
+ & 
+```
+uo_bulk_downlad_cert_allowed_roles
+```
+
+ for Permission Handling #702
+
+**Fixed:**
+
+- Autocomplete Lessons & Topics enabled causes additional “Next Lesson” / “Next Topic” button to appear #699
+- Restrict Page Access reseting on page save/update #704
+- Transcript module – Not showing completion date for custom CEU records #693
+
+---
+
+### 4.1.4.1 [2023-12-04]
+
+**Updated:**
+
+- Group Leader Access – WP Filter 
+```
+uo_groupleaderaccess_add_to_group_on_login
+```
+
+ to optionally skip adding Group leader to courses on login #682
+- Learner Transcript – Optimize printing of transcript by loading only the main CSS file #684
+- Learner Transcript – WP Filters 
+```
+uo_transcript_print_styles
+```
+
+, 
+```
+uo_transcript_print_elements
+```
+
+ #684
+- Download Certificates In Bulk – WP filters 
+```
+uo_download_certificates_in_bulk_group_data
+```
+
+, 
+```
+uo_download_certificates_in_bulk_course_data
+```
+
+ & 
+```
+uo_download_certificates_in_bulk_quiz_data
+```
+
+ to manipulate the respective data #696
+
+**Fixed:**
+
+- Email certificate modules – Improved reliability of Certificate Builder check #686
+- Download Certificates In Bulk – Not using LearnDash labels in form #694
+- Restrict page access – Added WP filter 
+```
+uncanny_toolkit_restricted_content_filter
+```
+
+ to avoid conflict with Avada header and footer #676
+- Simple Timer Script & FlyWheel – Load 
+```
+wp-load.php
+```
+
+ from a specific folder #680
+
+**Internal:**
+
+- Additional validation on Ajax calls by adding nonce and admin check #688
+
+---
+
+### 4.1.4 [2023-11-23]
+
+**Add:**
+
+- Course & Lesson/Topic Grids – Support for Alt tags for images #663
+
+**Fix:**
+
+- Download Certificates In Bulk – Not generating email when certificate builder is used #671
+
+**Internal:**
+
+- License check – Switched to Item ID instead of Item name #678
+
+---
+
+### 4.1.3.1 [2023-11-09]
+
+**Updated:**
+
+- Group Registration – WP filter 
+```
+uo_show_groups_login_form
+```
+
+ to allow hiding the login form #664
+
+**Fixed:**
+
+- Blocks – Removed 
+```
+lodash
+```
+
+ dependency for WordPress v6.4+ #667
+
+---
+
+### 4.1.3 [2023-10-31]
+
+**Fixed:**
+
+- Download Certificates In Bulk – Course/Quiz dropdown not working when a group leader does not have any groups #660
+- Download Certificates In Bulk – Use LearnDash Labels for Groups, Courses and Quizzes #654
+- Download Certificates In Bulk – CEU shortcode not rendering in Certificates #648
+- Download Certificates In Bulk – Module settings – “Clear previous runs” to clear rogue runs interfering with newer requests on some sites  #645
+- Drip Lessons by Group – LearnDash notifications not triggering as expected #643
+- Group Registration – 
+```
+emailto
+```
+
+ link typo #650
+- Improved PHP 8.2 compatibility #656
+
+---
+
+### 4.1.2 [2023-09-14]
+
+**Fixed:**
+
+- Group Registration – Single Group Query Improved #641
+- Autocomplete Lessons & Topics on Fluent Forms Submission – Cannot activate module when Fluent Forms is activated #639
+- Course Dashboard is showing quiz “Statistics” button when statistics is not enabled on the quiz #636
+- Course Certificate – Non-default language – Email is not working #634
+- Email Quiz Certificates – Correctly assign course-id when course is passed an object #632
+- [TinCanny] – Course Timer JS error #628
+
+---
+
+### 4.1.1 [2023-08-03]
+
+**Updated:**
+
+- Download Certificates in Bulk – WordPress filter to optionally modify certificate types drop-down list #625
+- User Imports – Confirmation message shown after import completion #622
+- Group Expiration – Allow resetting the expiration date field using backspace or delete key #598
+- Email certificate modules – Continuing Education Units (CEUs) shortcodes now render the values properly #627
+
+**Fixed:**
+
+- Group Registration – Users not being added to group when registered via Gravity Forms with recent Gravity Forms versions #616
+- Email Quiz Certificate – Not sending email when quizzes are graded manually #611
+- Download Certificates in Bulk – 
+```
+[quizinfo show="percentage"]
+```
+
+ shortcode not rendering #606
+- Days Until Course Expiry – Incorrect expiry days #602
+- Download Certificates in Bulk – Drop-down lists not working when select2 library is missing #600
+- Download Certificates in Bulk – LeranDash usermeta shortcode not displaying anything #596
+
+---
+
+### 4.1 [2023-06-01]
+
+**New Modules:**
+
+- Drip Topics by Group #524
+- Autocomplete Lessons & Topics on Fluent Forms Submission #573
+- Autocomplete Lessons & Topics on Formidable Forms Submission #572
+
+**Updated:**
+
+- Restrict Page Access – Add Course Completion selection #584
+- Simple Course Timer – Increase default polling interval and text #574
+- Enhanced CSV Reports – Course Start Date column added #583
+
+**Fixed:**
+
+- Download Certificates In Bulk – Date conflict with ProPanel filter widget shortcode #594
+- Download Certificates In Bulk – Quiz drop-down issue if the course has only quizzes and no other steps #592
+- Certificate Preview – 
+```
+date_i18n
+```
+
+ hooking too early #587
+- Email Quiz Certificate – Not rendering shortcode 
+```
+[quizinfo show="percentage"]
+```
+
+ #577
+- Learner Transcript – Only displaying courses assigned to a category #576
+- Group Expiration Module – Timestamp using wrong time #570
+
+---
+
+### 4.0.0.1 [2023-04-26]
+
+**Fixed:**
+
+- Bulk certificates – Groups dropdown now hides “Any group” or “All groups” option if the user has access to one group only #564
+- Bulk certificates – 
+```
+disk_free_space
+```
+
+ not returning available space on some servers #560
+- Import Users – Importing CSV with empty data in a column clearing data for existing users #563
+- Import Users – Importing CSV not working in certain conditions, showing “No rows were found in the file that could be imported” #557
+
+---
+
+### 4.0 [2023-04-11]
+
+**New module:**
+
+- Download certificates in bulk #473
+
+**Added:**
+
+- Group Expiration – WordPress filters for email overrides #548
+- Transcript module – Course category attributes added #525
+
+**Updated:**
+
+- Import Users – Ignore blank rows #528
+- Reset Progress Button – Now supports time data reset by course id #518
+- Learner Transcript – Now supports RTL in PDF version #507
+- Group Registration – noindex and nofollow robot tags added #505
+- Group Expiration – Description added to group expiration date field #504
+- Course grid – Replace deprecated 
+```
+learndash_30_get_currency_symbol
+```
+
+ with 
+```
+learndash_get_currency_symbol
+```
+
+ #498
+- Import Users & Multisite – Add user to the current subsite  #493
+
+**Fixed:**
+
+- Group Registration – Logging in from the page not adding user to the group #531
+- Improved Group Leader Interface – PHP Warning fixed #526
+- Reset Progress Button – Tin Canny attribute reset_tincanny=”yes” now resets course progress properly #510
+- Group Registration – PHP warning fix #495
+- Lesson Topic Auto Complete – PHP Error fixed #491
+- Course Dashboard – Hide Resume, Start or Certificate button when a user_id attribute is used in the shortcode and a different user views the page #394
+- Email Group Certificates – Not sending to Group Leaders #550
+- Enhanced Course Grid – Allow HTML in short course description field #546
+- Restrict Page Access – Line Breaks being stripped from editor #538
+
+**Internal:**
+
+- Email Course Certificates – Addition WordPress filters to modify subject, body and certificate attached message #533
+- Group Registration – Additional WordPress action and filter to allow signup URL multi-language support #520
+- Group Registration – Improved WPML support #535
+- Improved Group Leader Interface – Module text updated and deprecated #497
+- Restrict Page Access – Replace select2 library with tom-select #516
+- Restrict Page Access – WordPress filter to exclude post types from page dropdown #514
+
+---
+
+### 3.10 [2022-11-22]
+
+**New Module**:
+
+- Email Group Certificates #468
+
+**Updated**:
+
+- Group Logo – Added new attributes to the shortcode #470 #484
+- ```
+group_id
+```
+
+ (To limit to a specific group ID)
+- ```
+limit
+```
+
+ (To limit number of logos)
+- ```
+only_user_groups
+```
+
+ (To limit to groups the user is enrolled in [*applies to Group Leaders and administrators*])
+- Single Page Courses – Add bailout condition for prerequisites course setting #476
+- Simple Course Timer – Filter added to not run timer on courses optionally #474
+- ```
+apply_filters( 'uo_course_timer_enabled', true, $course_id );
+```
+
+**Internal**:
+
+- In-plugin notifications #478
+
+---
+
+### 3.9.1 [2022-09-19]
+
+**Updated:**
+
+- Reset Progress Button – Now deletes any Resume Button data for the reset course #461
+
+**Fixed:**
+
+- Icon fonts missing #465
+
+---
+
+### 3.9 [2022-09-15]
+
+**Added:**
+
+- Group Expiration – Delete Expired Groups #435
+
+**Updated:**
+
+- Course Dashboard – Updated template override instructions in files #451
+- Course Dashboard – Added new value “free” for the attribute ‘show’ 
+```
+[uo_dashboard show="free"]
+```
+
+ #424
+- Course Dashboard – Added new attribute 
+```
+"not_enrolled"
+```
+
+ with value “yes” (default: blank)
+- Course Dashboard – Now triggers custom JS event 
+```
+(uncanny-toolkit-pro-learndash-statistics-contentchanged)
+```
+
+ when the content of the LearnDash statistics box changes #421
+- Enhanced LearnDash CSV Reports – Added assignment tracking #437
+- Group Logo/List – Now displays group logos to group leaders #433
+- Import Users – Now adds the user to the correct subsite on multisites #7
+
+**Fixed:**
+
+- Import Users – Imported users now properly assigned group seats when Uncanny Groups is active and seat management is enabled #452
+- Enhanced Course Grid – Resume button no longer displays title of course/lesson/topic in the grid #445
+- Enhanced Course Grid – View More button does not load more courses when more than 1 category or LD category assigned #456
+- Course Dashboard – LearnDash category and tag attributes are getting ignored when “open” or “free” course type is selected #450
+- Enhanced Lessons/Topics Grid – Now displays date in format specified in WordPress settings #442
+- Days until Course Expiry – PHP warning in uo_expiration_in shortcode #428
+- Group Registration – Removed ‘gid’ to allow setting body CSS class #426
+- Reset Progress Button – PHP notices/warning on reset #422
+- Group Drip – Conflict with LearnDash – Elementor Pro integration #420
+- Email Course/Quiz Certificate – User information in certificates created by Certificate Builder are now displayed reliably #417
+
+---
+
+### 3.8.3 [2022-06-22]
+
+**Added:**
+
+- Simple Course Timer – Function to delete course timer records for individual users #402
+
+**Updated:**
+
+- Group Registration – Now compatible with public group pages #391
+- Improved PHP 8.1+ compatibility #302
+
+**Fixed:**
+
+- Group Expiration – PHP Notice for empty condition #406
+
+---
+
+### 3.8.2 [2022-05-18]
+
+**Fixed:**
+
+- Course Dashboard – Block displays ‘no’ when ‘No courses message’ is blank  #399
+- Group Expiration – Group expiry date returns empty #396
+- Restrict Page Access – PHP Error fixed for > PHP 8.x+ sites #392
+
+---
+
+### 3.8.1 [2022-04-27]
+
+**Added:**
+
+- Email Course Certificates and Email Quiz Certificates – New filter to optionally disable sending email to the user #383
+- ```
+uo_enable_mail_user_quiz_certificates
+```
+- ```
+uo_enable_mail_user_course_certificates
+```
+- Course Dashboard: 
+```
+no_courses_message
+```
+
+ attribute added to shortcode and block #371
+
+**Fixed:**
+
+- Days Until Course Expiry – Shortcodes now render more reliably #382
+- Course and Quiz Certificates – Now renders LD Shortcodes with cron when certificate builder is used #377
+- LearnDash Group Registration – Conflict resolved with Tin Canny Reports #375
+- Group Registration – Malformed group signup URL when WPML ?lang parameter is present #373
+- Single Page Courses – Improved course completion logic #369
+
+---
+
+### 3.8 [2022-03-30]
+
+**New Module:**
+
+- Autocomplete Lessons and Topics on WPForms submission #187
+
+**Added:**
+
+- Group Registration – Added filter 
+```
+uo_group_signup_notification_type
+```
+
+ to set 
+```
+wp_new_user_notification
+```
+
+ type #345
+- Enhanced Course Grid – Now supports WordPress’s Reusable blocks #344
+- Simple Course Timer – New Shortcodes #340
+- ```
+[uo_time_topic topic-id=""]
+```
+
+ – Return time for the associated topic (and quiz, if there’s a quiz associated with the topic).
+- ```
+[uo_time_lesson lesson-id=""]
+```
+
+ – Return time spent in the lesson AND any associated topics and quizzes.
+- ```
+[uo_time_quiz quiz-id=""]
+```
+
+ – Return time spent in a quiz.
+- ```
+[uo_time_total user-id=""]
+```
+
+ – Return total time the user has spent across ALL courses on the site.
+- Group Expiration – Added 
+```
+pre-text=""
+```
+
+ attribute for all shortcodes #330
+- Enhanced Learndash CSV Reports – Now supports CEU and Course Meta columns #300
+
+**Fixed:**
+
+- Autocomplete Lessons & Topics on Quiz Results Page – Learn More link fixed #358
+- Enhanced Lesson & Topics Grid – Now displays quizzes when using LD 3.0 template #364
+- Autocomplete Lessons & Topics – Topic Timer setting now works reliably when module is active #356
+- Course Dashboard – Now uses LearnDash Custom Labels #353
+- Import Users – Improved translation support #351
+- Import Users – Roles not applied to imported users in some situations #342
+- Enhanced Course Grid – “Start course” button disappears in some situations #335
+- Enhanced Lessons/Topics Grid – Lessons table no longer displayed in Single Page Courses if module is globally enabled #328
+- Enhanced Lessons/Topics Grid – Quiz table now displayed on course pages when module enabled globally
+- Group Registration – No longer fails due to legacy Uncanny Groups seat management code #326
+
+---
+
+### 3.7.12 [2022-02-17]
+
+**Updated:**
+
+- Autocomplete Lessons and Topics – New filter to override button link #296
+- Import Users – Added several 
+```
+do_actions
+```
+
+ for external action, like adding user to a subsite #315
+- Import Users – Email functionality updates to enable developers to build custom email workflows #292
+- Lazy Load Navigation – Output now shows heading #298
+
+**Fixed:**
+
+- Email Quiz Certificates – Emails not being sent on some server configurations #322
+- Email Quiz Certificates – Last name variable now renders consistently #294
+- Enhanced Course Grid – No longer resets course settings in “Preview changes” mode #306
+- Days until LearnDash Course Expiry – PHP error – Incorrect return value for 
+```
+ld_course_access_expires_on
+```
+
+ filter #309
+- LearnDash Group Expiration – – PHP error – Incorrect return value for 
+```
+ld_course_access_expires_on
+```
+
+ filter #309
+- Drip Lessons by Group – Drip date appearing offset by 1 hour on some site configurations #305
+- Resume Button – Button now appears consistently below course in Enhanced Course Grid #301
+
+---
+
+### 3.7.11 [2021-12-14]
+
+**Added:**
+
+- Enhanced LearnDash CSV Reports: Added more usermeta columns #278
+- Enhanced Course Grid – Added attribute 
+```
+hide_title
+```
+
+ to turn off course titles #258
+- Enhanced Course Grid – Now supports multiple category slugs, separated by commas #235
+- Enhanced Course Grid – 
+```
+uo_course_after_short_description
+```
+
+ action hook #276
+- Enhanced Course Grid – 
+```
+uo_course_before_short_description
+```
+
+ action hook #275
+- Enhanced Course Grid – 
+```
+uo_course_before_course_title
+```
+
+ action hook #274
+- Enhanced Course Grid – 
+```
+uo_course_after_course_title
+```
+
+ action hook #273
+- Enhanced Course Grid – 
+```
+uo_course_after_featured_image
+```
+
+ action hook #272
+- Enhanced Course Grid – 
+```
+uo_course_after_grid_ribbon_price
+```
+
+ action hook #271
+- Enhanced Course Grid – 
+```
+uo_course_after_grid_ribbon_text
+```
+
+ action hook #270
+
+**Updated:**
+
+- Added categories for sorting/filtering to newer toolkit modules #247
+- Import Users – No longer requires LearnDash #255
+- Import Users – 
+```
+toolkit_learndash_user_import_capability
+```
+
+ filter now allows non-admin users to import users #239
+
+**Fixed:**
+
+- PHP notices on PHP 8.0.x #283
+- Duplicate Pages & Posts – Now properly clones courses when shared course steps are enabled on LearnDash 3.6+ #282
+- LearnDash course expiration date overrides Toolkits Group Expiration Date #263
+- Group Registration – PHP notices/warnings preventing submission on some sites #260
+- Enhanced Lessons and Topics Grid – Filter by category/tags now works reliably with LearnDash 3.5+ #250
+- Enhanced Lessons and Topics Grid – Updated deprecated LearnDash transient function to newer version #243
+- Group Registration – Built-in registration form now displays submission errors in a more user-friendly way #246
+- Group registration – Improved compatibility with WPML #223
+- Email Course Certificates – Emails now support additional HTML tags #213
+- Simple Course Timer – Additional sanitization of variables in performance mode #211
+
+---
+
+### 3.7.10 [2021-09-01]
+
+**Added:**
+
+- Enhanced Course Grid – 
+```
+uo_course_category_cats
+```
+
+ filter to modify course categories #195
+- Course dashboard: 
+```
+uo_dashboard_user_courses
+```
+
+ filter to modify user courses #182
+
+**Fixed:**
+
+- Group Expiration – Shortcode compatibility with PHP strict standards improved #200
+- Group Expiration – Added 
+```
+group_id
+```
+
+ attribute variation #200
+- Course Dashboard – Manually completed quiz no longer shows as “failed” in some instances #194
+- Duplicate Pages & Posts – Cloning course with “Shared Steps” enabled/disabled now duplicates contents reliably with newer versions of LearnDash #186
+- Autocomplete Lessons and Topics on Gravity Form Submission – PHP notices #148
+- Group Registration – PHP warnings #191
+- Some modules updated to use LearnDash’s standard function args #36
+
+---
+
+### 3.7.9 [2021-08-20]
+
+**Added:**
+
+- ```
+uo_csv_report_column_value
+```
+
+ filter to modify Enhanced CSV module value #175
+- ```
+uo_course_cert_img_path
+```
+
+ filter to allow both url/path option #170
+- Enhanced LearnDash CSV Reports – Added two additional usermeta fields #165
+- Simple Course Timer – Added wrapper around the message that blocks quiz access to allow styling #162
+
+**Fixed:**
+
+- Learner Transcript – CSS now loads if the shortcode is embedded inside other elements  #152
+- Simple Course Timer – Now consistently adds time columns to [Tin Canny](https://www.uncannyowl.com/downloads/tin-canny-reporting/) Course Report #178
+- Autocomplete Lessons & Topics on Gravity Form Submission – Now reliably redirects users to next step on submission #166
+- Enhanced Lesson/Topic Grid – Lesson Materials now appears on lesson page with LearnDash’s legacy template enabled #158
+- Drip Lessons by Group – Drip date no longer displays “1970” in year field when no date has been assigned #154
+
+---
+
+### 3.7.8 [2021-06-09]
+
+**Fixed:**
+
+- Enhanced lesson/topic grid – CSS issue when grids enabled globally
+
+---
+
+### 3.7.7 [2021-06-08]
+
+**Added:**
+
+- Reset Progress Button – Added redirect attribute to redirect to a different URL when clicked
+- Import Users – Added support for group_leader column to assign users as group leaders on import
+
+**Updated:**
+
+- Group Logo/List – uo_group_leaders now outputs Group Leader email addresses as mailto links
+
+**Fixed:**
+
+- Drip Lessons by Group – Lesson available notifications now sent consistently (from LearnDash Notifications plugin)
+- Drip Lessons by Group – Time no longer shifts after save based on WordPress time zone
+- Group Expiration – Expiration emails are now sent when the group was created programmatically and not edited and saved
+- Group Registration – Gravity Form registration form now recognized when page is created with the block editor
+- Gutenberg blocks now load consistently when a block is embedded inside another block
+
+---
+
+### 3.7.6 [2021-04-22]
+
+**Fixed:**
+
+- Updated: Lazy Loading Course Navigation: Now respects Course Content visibility setting #115
+- Updated: Duplicate Pages and Posts: Cloning courses retains course structure on newer versions of LearnDash (when Shared Course Steps is enabled) #112
+- Fixed: Group Expiry: PHP Notice that was preventing emails from being saved #97
+
+---
+
+### 3.7.5 [2021-04-12]
+
+**Fixed:**
+
+- Enhanced Lessons and Topics Grid – Added compatibility with LearnDash 3.4.0.4 #92
+- Autocomplete Lessons and Topics on Quiz Results Page – Added compatibility with LearnDash 3.4.0.4 #25
+- Autocomplete Lessons and Topics when Quiz is Graded – Added compatibility with LearnDash 3.4.0.4 #24
+- Relative path causes fatal error on some servers #95
+
+---
+
+### 3.7.4 [2021-03-31]
+
+**Updated:**
+
+- Additional string localizations #55
+
+**Fixed:**
+
+- Added compatibility with LearnDash > 3.4 for various Toolkit modules #71, #72, #81
+- Learner Transcript: Sorting on columns now works consistently #75
+- Group Registration: Gravity Forms block is now detected on group page #54
+- Course Timer: Fixed compatibility with Tin Canny #65
+- Course Timer: Catch errors reliably when accessing iframe content #43
+- Various PHP notices #67, #69, #79, #85
+
+---
+
+### 3.7.3 [2021-03-23]
+
+**Updated:**
+
+- Email Course Certificates: Added ‘uo_course_completion_add_certificate_attached’ filter to optionally remove “Your certificate is attached with this email” from course completion certificate email
+- Email Quiz Certificates: Added ‘uo_quiz_completion_certificate_email_args’ filter to optionally return email params back to LearnDash quiz email filter
+
+**Fixed:**
+
+- Certificate Preview: Fixed type E_ERROR when LearnDash Certificate Builder is not active
+
+---
+
+### 3.7.2 [2021-03-19]
+
+**Fixed:**
+
+- Simple Course Timer: JavaScript conflict with Tin Canny reports
+
+---
+
+### 3.7.1 [2021-03-18]
+
+**Added:**
+
+- Import Users: Added filter uo_toolkit_csv_import_map to remap column names
+- Import Users: Added filter uo_csv_overwrite_existing_roles to allow adding roles instead of replacing roles on import
+- Drip Lessons by Group: Added filter uo_drip_ignore_learndash_release_date to ignore LearnDash drip settings when access is granted by Uncanny Drip Lessons by Group
+- Email certificates and Certificate preview: Compatibility with new LearnDash Certificate Builder plugin
+
+**Updated:**
+
+- Restrict Page Access: Group Leaders now have access to pages restricted to groups they are the leader of
+- Replaced deprecated function call leardash_min_assets with learndash_min_assets
+
+**Fixed:**
+
+- Drip Lessons by Group: JavaScript error preventing drip dates from being saved on some non-English sites
+- Group Login: PHP warnings/error
+- Group Logo: PHP warnings/error
+- Simple Course Timer: When the latest version of Tin Canny Reporting for LearnDash is also installed, completion columns may appear blank
+- Autocomplete Lessons and Topics: PHP error: Object of class WP_Post could not be converted to string on some sites
+
+---
+
+### 3.7 [2021-02-12]
+
+**Added:**
+
+- Course Dashboard: Quizzes are now displayed even if they have not yet been attempted
+- Enhanced LearnDash CSV Reports: Ability to add custom user meta columns to the reports
+- Learner Transcript: New certificate column with link to associated certificate (if any)
+- Learner Transcript: Display of custom credits added via the [Uncanny Continuing Education Credits plugin](https://www.uncannyowl.com/downloads/uncanny-continuing-education-credits/)
+- Group Expiration: New shortcode to show expiry date in a countdown format
 
 ```
-[uo_groups group_email_button="show" key_column="hide" key_options="hide"]
+[uo_group_expiration_in]
 ```
+- Drip Lessons by Group: New notification type “A scheduled lesson is available to user with Uncanny Drip by Group”
+
+**Updated:**
+
+- Group Forums with bbPress: Moderators are now able to see all group forums on the front end
+- Course Dashboard: Multiple results for the same quiz are now sorted with the most recent attempts listed first
+- Course & Quiz certificates: Additional parameters for save_path action hooks
+- Drip Lessons by Group: Compatibility with LearnDash Notifications v1.5+
+
+**Fixed:**
+
+- Drip Lessons by Group: LearnDash notifications are now set only for the selected lessons
+- Single Page Course: Can now be created by all users with the edit_page capability
+- Course Dashboard: View link on essay submissions now works more consistently
+- Group Login Redirect: Icon path now relative instead of absolute
+- Group Logo/List: PHP Notice: Undefined variable: custom_labels
+
+---
+
+### 3.6.2 [2021-01-08]
+
+**Fixed:**
+
+- Course Dashboard – No longer showing only the last lesson of each course in some situations
+- Front End Login – Fixed incorrect textdomain on reset password link text
+- Autocomplete Lessons and Topics – Done button in last topic no longer completes the lesson and advances to the next lesson if there’s an incomplete lesson-level quiz
+
+---
+
+### 3.6.3 [2021-01-19]
+
+**Fixed:**
+
+- Group Logo/List – No longer displays a comma between the group leader’s first and last name
+- Autocomplete Lessons and Topics – Now autocompletes the associated lesson when all associated topics are completed
+- Restrict Page Access – Admins are now exempt from page access restrictions
+- Restrict Page Access – PHP notices if LearnDash is not active
+- Enhanced Course Grid – Start Course button now uses LearnDash label for “course”
+
+---
+
+### 3.6.2 [2021-01-08]
+
+**Fixed:**
+
+- Course Dashboard – No longer showing only the last lesson of each course in some situations
+- Front End Login – Fixed incorrect textdomain on reset password link text
+- Autocomplete Lessons and Topics – Done button in last topic no longer completes the lesson and advances to the next lesson if there’s an incomplete lesson-level quiz
+
+---
+
+### 3.6.1 [2021-01-06]
+
+**Fixed:**
+
+- Single Page Courses – The LearnDash status bar is no longer hidden on pages of Single Page Courses
+- Single Page Courses – Page builders (including Elementor) no longer reset the Single Page Course checkbox when posts are saved inside builders
+- Learner Transcript – The Accent UI Color setting includes a default colour so the button doesn’t appear hidden on some sites
+
+---
+
+### 3.6 [2021-01-04]
+
+**New Module:**
+
+- Single Page Course – Create courses that consist of a single course page with no lessons or topics. Learn More
+
+**Added:**
+
+- Course Dashboard – Support for course sections
+- Certificate preview, Email Course/Quiz Certificates – Added compatibility with Certificate Tracker for LearnDash
+
+**Fixed:**
+
+- Autocomplete Lessons and Topics on Gravity Form submission – Users no longer redirected to blank screen on the last topic of a lesson or last lesson of a course
+- Simple Course Timer – PHP notice – Trying to get property ‘post_type’ of non-object
+- Import Users – Fixed conflict with Easy Digital Downloads and KB Support plugins
+- Group Forums with bbPress – PHP warning – Warning: call_user_func_array() expects parameter 1 to be a valid callback
+
+---
+
+### 3.5.9 [2020-11-11]
+
+**Added:**
+
+- Learner Transcript – Setting to show courses the user is no longer enrolled in
+
+**Updated:**
+
+- Drip Lessons by Group – Improved compatibility with LearnDash Notifications
+- Enhanced Lessons/Topics Grid – Updated LearnDash template base
+- Autocomplete Lessons and Topics on Gravity Form Submission – Improved AJAX support
+- Quiz Certificate – Added filter uo_quiz_completion_add_certificate_attached to let user skip Your certificate is attached with this email line at the end of email.
+
+**Fixed:**
+
+- Drip Lessons by Group – PHP Warning: Trying to get property ‘post type’ of non-object in uncanny-drip-lessons-by-group.php
+- Group Registration – Gravity Forms shortcode not detected on some sites
+- Autocomplete Lessons and Topics – Do not autocomplete lesson when all topics are marked completed if there’s a lesson-level quiz as last step
+- Simple Course timer – Now listens for activity inside iframes that are created on page load
+
+---
+
+### 3.5.8 [2020-10-08]
+
+- Updated: Improved reliability of detection of the Uncanny Continuing Education Credits plugin
+- Updated: Added lang query string support to Certificate Preview module for WPML compatibility
+- Fixed: Autocomplete Lessons and Topics: Automatic completion of lessons/topics with a timer set is more consistent
+- Fixed: Autocomplete Lessons and Topics: No longer autocompletes lessons with a future drip or group drip date set
+- Fixed: Autocomplete Lessons and Topics: Now consistently marks the correct lesson/topic complete when the same lesson/topic appears in multiple courses
+- Fixed: Autocomplete Lessons and Topics: Various PHP notices when debug is enabled
+- Fixed: Import Users: Selected group now displayed on confirmation screen on sites with > 100 groups
+- Fixed: Course Dashboard: Drip dates no longer appearing with HTML code
+
+---
+
+### 3.5.7 [2020-09-30]
+
+- Updated: Autocomplete Lessons and Topics – Refactored for improved readability
+- Updated: Autocomplete Lessons and Topics – No longer autocompletes on page load if a lesson/topic timer is set; lesson/topic is autocompleted after the timer elapses
+- Updated: Import Users – Changed course and group selectors to select2 pillboxes; now supports > 100 courses/groups
+- Updated: Restrict Page Access – Changed redirect priority from 20 to 0
+- Fixed: Import Users – When updating existing users an empty or missing display_name column no longer replaces existing display name with username
+- Fixed: Import Users – Reset password token now renders a reset password link
+- Fixed: Simple Course Timer – Now detects activity within iFrames, including in Tin Canny content (Storyline, Rise, iSpring, Captivate, etc.)
+- Fixed: Certificate Preview – Fatal error when previewing a certificate containing certain shortcodes in newer versions of LearnDash
+- Fixed: Group Drip – Drip dates not appearing on lessons when lesson list is paginated via AJAX
+- Fixed: Autocomplete Lessons and Topics – No longer autocompletes on page load if a supported Gravity Form is on the page and the Autocomplete Lessons and Topics on Gravity Forms Submission module is active
+- Fixed: Autocomplete Lessons and Topics – No longer autocompletes when editing a page using Beaver Builder
+
+---
+
+### 3.5.6 [2020-08-19]
+
+- Fixed: Email Course, Quiz and Preview Certificate modules – Removed merge conflicts
+
+---
+
+### 3.5.5 [2020-08-19]
+
+- Updated: Added permission_callback to all Rest API calls for WordPress v5.5 compatibility
+- Updated: Changed __(), _e(), _x() to attr_esc__(), attr_esc_e(), attr_esc_x()
+- Fixed: Simple Course Timer – Performance mode now compatible with more site configurations (incl. multisite)
+- Fixed: Duplicate Pages and Posts – Fixed SQL error when duplicating quizzes
+- Fixed: Autocomplete Lessons and Topics when Quiz is Graded – Now working consistently for all user roles
+- Fixed: $from_email typo in Course Completion Certificate
+
+---
+
+### 3.5.4 [2020-07-29]
+
+- Added: Option to dismiss “Try Automator” menu entry
+- Updated: Reset Progress Button – Calling reset function directly on older PHP versions no longer throws a fatal error
+- Fixed: Course Dashboard – Order attribute no longer throwing error on some sites
+- Fixed: Enhanced Course Grid – Start Course button no longer appearing for courses in which the user is not enrolled
+- Fixed: Group Registration – Hide native LearnDash content option no longer hides custom content or Gravity Form/Theme My Login registration forms
+
+---
+
+### 3.5.3 [2020-07-21]
+
+- Added: Group Logo/List – New shortcode [uo_group_leaders] outputs a list of group leader names and email addresses for the current user
+- Updated: Email Course/Quiz Certificates – Added Sender Name and Sender Email fields to module settings
+- Updated: Group Registration – Added setting to hide native LearnDash group info in LearnDash 3.2.2 and later
+- Updated: Import Users – Empty cells in the learndash_courses or learndash_groups columns no longer throw errors
+- Updated: Group Registration – Added sanitization on text fields
+- Updated: Email Course/Quiz Certificates, Certificate Preview – Supports updated certificate rendering in LearnDash 3.2.2 and later; if you are on LearnDash 3.2.0 or 3.2.1, please update to 3.2.2
+- Fixed: Restrict Page Access – Settings now save on media post type
+- Fixed: Import Users – Now uses email address as username when user_login column is left empty
+- Fixed: Autocomplete Lessons and Topics – PHP notice: DateTime::__construct
+- Fixed: Group Logo/List – PHP Fatal error Cannot use object of type stdClass as array
+
+---
+
+### 3.5.2 [2020-07-03]
+
+- Added: Autocomplete Lessons and Topics on Gravity Form Submission – Filter to prevent redirection on submit (uo_gf_maybe_autocomplete_redirect)
+- Updated: Email Course/Quiz Certificates – Updated to improve consistency of emailed certificates in LD 3.2.0. Submitted pull (change) request to LearnDash to further improve support in LD 3.2.1
+- Fixed: Enhanced Course Grid – Now properly supports 1, 2, 3, 4, 5 columns
+- Fixed: Enhanced Course Grid – Removed extraneous string (“;) from previous refactor
+- Fixed: Restrict Page Access – Restrictions no longer apply to archive pages when the previously viewed page was restricte
+
+---
+
+### 3.5.1 [2020-06-22]
+
+- Updated: Enhanced Course Grid – Improved support for multiple grids on a page
+- Updated: Restrict Page Access – Additional content hidden on LearnDash post types (course, lesson, topic, quiz) for users that are denied access
+- Updated: Email Quiz Certificates – Added option “Use Cron to send certificate” if shortcodes not rendering as expected
+- Updated: Replaced learndash_post_args_groups with register_post_type_args for upcoming LearnDash 3.2 compatibility
+- Fixed: Import Users – Existing users are no longer skipped if only the email column is included in the uploaded CSV file
+- Fixed: Duplicate Pages and Posts – When duplicating quiz questions the answer field is now correctly duplicated
+- Fixed: Autocomplete Lessons and Topics – PHP Error: Object of class WP_Post could not be converted to string
+- Fixed: Autocomplete Lessons and Topics – Lessons and topics added after a user has completed the course are now autocompleted
+
+---
+
+### 3.5
+
+- New Module: Enhanced LearnDash CSV Reports – Optionally add columns to the native LearnDash .csv reports including: Username, First Name, Last Name, Nickname, Display Name, Role(s), Group(s), Language, Website, Biographical info. Learn more
+- Added: Enhanced Course/Lesson/Topic grid – Support for 1 column layouts
+- Added: Duplicate Pages and Posts – Ability to select the post types that can be duplicated; now defaults to supported types only
+- Updated: Duplicate Pages and Posts – Improved compatibility with Elementor
+- Updated: Autocomplete Lessons and Topics – Done button no longer displays in the last topic of a lesson or last lesson of a course after the course is completed
+- Updated: Simple Course Timer – Improved time tracking in Internet Explorer 11
+- Updated: Group Registration – Now creates users with default new user role set in WordPress settings instead of subscriber role
+- Updated: Drip Lessons by Group – Improved lesson appearance when using LearnDash 3.0 template
+- Updated: Improved translation support across multiple modules
+- Updated: Import Users – Added support for Mac/Linux line breaks (CR, LF)
+- Updated: Import Users – Added support for apostrophes in email addresses
+- Updated: Plugin name changed from Uncanny LearnDash Toolkit Pro to Uncanny Toolkit Pro for LearnDash
+- Fixed: Import Users – Commas enclosed in double quotes are now ignored
+- Fixed: Drip Lessons by Group – Improved compatibility with LearnDash native lesson drip
+- Fixed: Drip Lessons by Group – Force page reload on Save date button due to Custom Meta metabox resaving old dates on lesson update
+- Fixed: Drip Lessons by Group – Topics within a dripped lesson were still accessible via direct links
+- Fixed: Autocomplete Lessons and Topics – Topics within dripped lessons are no longer autocompleted when accessed via direct link
+- Fixed: Enhanced Course Grid – Localization of “Start Course” string was using incorrect function
+- Fixed: Course Dashboard – show=”all” attribute now shows all courses in the system to logged in users
+- Fixed: Course Dashboard – PHP warning key_exists() expects parameter 2 to be array
+
+---
+
+### 3.4.4
+
+- Fixed: Course Dashboard – Course IDs being output after course titles
+
+---
+
+### 3.4.3
+
+- Added: Course Dashboard – Support for Internet Explorer 11
+- Added: Group Expiration – Option to send group expiration email to group leaders only, instead of all group members
+- Added: Enhanced Course Grid – Setting for custom message displayed to users when no courses match the grid criteria
+- Added: Enhanced Course Grid – Filters for ribbon text: uo_course_grid_ribbon_text, uo_course_grid_ribbon_price
+- Updated: Course Dashboard – Results of topic-level quizzes now displayed
+- Updated: Autocomplete Lessons and Topics – Lessons/Topics are no longer autocompleted if the lesson/topic contains an assignment
+- Updated: Autocomplete Lessons and Topics on Quiz Results Page – Completing a course-level quiz will now mark the course complete on the quiz results page
+- Fixed: Certificate Preview – courseinfo shortcode now renders date formats correctly
+- Fixed: Certificate Preview – PHP Notices – Undefined variable
+- Fixed: Simple Course Timer – Typo in error message “You must be logged in.”
+- Fixed: Gutenberg blocks were unavailable unless at least one module from the Uncanny Toolkit (free version) that contained a Gutenberg block was active
+- Fixed: Course Dashboard/Lazy Loading Course Navigation – jQuery issue with some minification plugins
+
+---
+
+### 3.4.2
+
+- Updated: Enhanced Course Grid – Now renders HTML in Short Description field (Note: the LearnDash Course Grid plugin removes HTML from this field and should be disabled if using HTML with the Uncanny Course Grid)
+- Updated: Drip Lessons by Group – Implemented via filter; no longer uses a template file override
+- Updated: Import Users – Blank rows in the uploaded .csv file are now ignored
+- Fixed: Drip Lessons by Group – Drip times were shifting by one hour across Daylight Savings Time changes
+- Fixed: Certificate Preview: PHP fatal error when including files in tcpdf/config/lang folder on some versions of LearnDash
+- Fixed: Learner Transcript – Dates are now displayed in the WordPress site language
+- Fixed: Learner Transcript – Completion dates are now displayed in the WordPress time zone
+- Fixed: Course Timer – PHP notice: “Trying to get property ID of non-object” on non-post pages (e.g. archives)
+- Fixed: Autocomplete Lessons and Topics when Gravity Form is Submitted – Mark Complete button no longer appears when Autocomplete Lessons and Topics is enabled
+- Fixed: Email Course Certificates – PHP notices due to uninitialized variables
+- Fixed: Enhanced Course Grid – Courses no longer disappear from grid when completed when not using attribute limit=”all”
+
+---
+
+### 3.4.1
+
+- Fixed – Restrict Page Access – select2 JavaScript library conflict with LearnDash ProPanel
+- Fixed – Enhanced Course Grid – Courses with a non-numeric value in the course price field were showing as “Closed”
+
+---
+
+### 3.4
+
+- New Module: Group Forums with bbPress – Create group-specific discussion forums with bbPress. Only group members will have access to group-specific forums. Includes a handy widget. Learn more
+- New Module: Restrict Page Access – Restrict access to any page by role, logged in/out status, course enrollment or group membership. Display a message or automatically redirect users that are denied access
+- Added: Duplicate Pages and Posts – Support for renamed quiz tables
+- Added: Reset Button – Support for renamed quiz tables
+- Updated: Import Users – UI text is now translatable
+- Updated: EDD updater class
+- Fixed: Reset Progress Button – Some users losing access to courses when progress reset
+- Fixed: Enhanced Lesson/Topic Grid – PHP warning count(): Parameter must be an array or object that implements Countable
+- Fixed: Simple Course Timer – PHP notice on 404 pages Trying to get property of non-object
+- Fixed: Simple Course Timer – Idle dialog button text wrapping with longer strings
+- Fixed: Enhanced Course Grid – Closed courses showed as “Free” on older versions of LearnDash
+- Fixed: Enhanced Course Grid – Some course type strings were not translatable
+- Fixed: Group Registration – PHP notice Undefined index: gid
+
+---
+
+### 3.3.2
+
+- Added: Course Dashboard – Now shows available CEUs for each course if set with the Uncanny Continuing Education Credits plugin
+- Fixed: Learner Transcript – HTML bugs
+
+---
+
+### 3.3.1
+
+- Added: readme.txt file
+- Added: Enhanced Course Grid – Filters for developers (uo_courses_shortcode_args, uo_courses_shortcode_get_posts)
+- Updated: Group Drip – Completely rewritten and updated user interface to make it much easier to view and manage Group Drip dates
+- Updated: Import Users – Username is now optional in uploaded .csv files, making it easier to mass update users
+- Updated: Import Users – Whitespace before/after email addresses is now ignored instead of throwing an error
+- Updated: Autocomplete Lessons and Topics when Quiz is Graded – Now supports multiple essays per quiz
+- Updated: Simple Course Timer – Label on Disable Performance Mode checkbox reworded for clarity
+- Updated: Autocomplete Lessons and Topics on Gravity Form Submission – Next Lesson/Topic button is no longer visible unless Lesson/Topic is completed
+- Fixed: Import Users – Link to sample .csv file
+- Fixed: Enhanced Lesson/Topic Grid – Now properly handles sample lessons
+- Fixed: Simple Course Timer – Conflict with randomize quiz questions setting
+- Fixed: Simple Course Timer – Cookie hash issue causing time tracking issues on some site configurations
+- Fixed: Autocomplete Lessons and Topics on Gravity Form Submission – PHP Notice: Undefined variable
+- Fixed: .pot file errors preventing Loco Translate and other plugins from properly translating strings
+- Fixed: Reference to empty CSS file in /wp-admin
+
+---
+
+### 3.3
+
+- Added: Support for LearnDash 3.1
+- Added: Group Expiration – Setting to specify the number of days before expiration to send reminder email
+- Added: Lesson/Topic Grid – Support for sections in LearnDash 3.x
+- Added: Email Quiz Certificates – Filters to change save path (uo_quiz_certificate_save_path, uo_quiz_certificate_http_url), change file name (uo_quiz_completion_certificate_filename) and additional advanced filters ([see KB](https://www.uncannyowl.com/knowledge-base/send-quiz-certificates-by-email/#Overriding_the_certificate_save_location))
+- Updated: Lesson/Topic Grid – Improved compatibility with Astra and GeneratePress themes
+- Updated: Group Expiration – Expiry date displayed to group members only, even when group_id attribute specified
+- Updated: Duplicate Pages and Posts – Improved compatibility with Uncanny LearnDash Groups (cloning a group now retains group leaders and seats)
+- Updated: Group Registration – Removed check for “Anyone can register” setting
+- Updated: Group Registration – Added redirect exclusion for Gravity registration forms to allow Gravity Forms post-submission filters/actions to execute
+- Updated: Simple Course Timer – Removed filters causing long Quiz save times on some systems
+- Updated: Simple Course Timer – Improved CSS in “Still working?” dialog
+- Updated: Simple Course Timer – Performance mode is now the default setting
+- Updated: Improved translation support
+- Updated: Group Registration – Registration form now ignores “Anyone can register” option in WordPress settings
+- Fixed: Group Registration – Gravity Forms integration preventing Gravity Forms’ post-registration hooks from running
+- Fixed: Simple Course Timer – Time columns restored to front-end reports in Tin Canny LearnDash Reporting plugin
+- Fixed: uncanny-learndash-toolkit textdomain references updated to uncanny-pro-toolkit
+- Fixed: Autocomplete Lesson/Topic when Gravity Form is submitted – Users not automatically advanced to the next topic/lesson
+- Fixed: Autocomplete Lesson/Topic when Gravity Form is submitted – 500 error on WordPress < 5.0
+- Fixed: Autocomplete Lessons and Topics – Done button not showing up in last topic of lesson when LearnDash 3.0 template is selected
+- Fixed: Autocomplete Lessons and Topics – Topic-level override of Global Setting not working
+- Fixed: Autocomplete Lessons and Topics – Default setting on new topics and lessons was *Disabled* instead of *Use Global Setting*
+- Fixed: Course Dashboard – user_id attribute ignored for [uo_dashboard] in legacy mode, defaulted to current_user
+- Fixed: Import LearnDash Users – Progress bar image URL on WordPress subfolder installs
+- Fixed: Autocomplete Lesson/Topic when Quiz is Graded – Added support for shared course steps
+- Fixed: Enhanced Course Grid – Issue with completed courses showing as in-progress on sites that have been translated
+- Fixed: Course Dashboard – Added additional quiz completion checks
+- Fixed: Improved Group Leader Interface – Group Leaders no longer trigger “Added to group” notifications (in the LearnDash Notifications plugin) on each login
+- Fixed: Error in .pot file that prevented translation into some languages
+
+---
+
+### 3.2.9
+
+- Added: Group Expiration – New shortcode uo_group_expiration_date that displays the current user’s group expiration date. Learn more
+- Added: Reset Progress Button – New attribute reset_tincanny=”yes|no” enables the reset of Tin Canny data for modules in the course being reset. Note: Due to technical constraints, bookmark (resume) data for the modules is not reset.
+- Updated: Simple Course Timer – Removed “beta” label from performance mode
+- Updated: Simple Course Timer – Changed console.table to console.log for improved IE11 support when debugging is enabled
+- Updated: Enhanced Lesson/Topic Grid – When the grid is displayed, the Expand All button for the native LearnDash lesson/topic list is now hidden
+- Updated: Course Dashboard – Improved performance of Expand All/Collapse All
+- Updated: Import Users – Empty columns no longer required to use course and group enrollment options
+- Updated: Autocomplete Lessons and Topics – Next Lesson link now appears in autocompleted lessons/topics when using the LearnDash 3.0 template
+
+---
+
+### 3.2.8
+
+- Fixed: Drip Lessons by Group – Calendar icon was sometimes displayed next to available lessons on course page
+- Fixed: Drip Lessons by Group – Some users seeing incorrect drip dates for their group on course page
+
+---
+
+### 3.2.7
+
+- Fixed: Issue with “All Other Users” drip date not allowing access to lesson content for users not in groups with drip dates set
+
+---
+
+### 3.2.6
+
+- Added: Group Registration and [Uncanny LearnDash Groups](https://www.uncannyowl.com/downloads/uncanny-learndash-groups/) integration – When Uncanny LearnDash Groups is installed, users that register through a group’s unique registration URL are automatically assigned a seat in that group. With this module, distribution of registration keys is no longer required for self-registration. [Details](https://www.uncannyowl.com/knowledge-base/group-sign-up/#Integration_with_Uncanny_LearnDash_Groups)
+- Added: Import Users and [Uncanny LearnDash Groups](https://www.uncannyowl.com/downloads/uncanny-learndash-groups/) integration – When Uncanny LearnDash Groups is installed, users imported to a group are now assigned seats in the group.
+- Added: Group Drip and LearnDash Notifications integration – Users in groups can now receive “A scheduled lesson is available to user” notifications generated by the LearnDash Notifications plugin. [Details](https://www.uncannyowl.com/knowledge-base/drip-lessons-by-ldgroup/#Integration_with_LearnDash_Notifications_Plugin)
+- Fixed: Email Course/Quiz Certificates – Line breaks were being removed from email content
+- Fixed: Autocomplete Lessons and Topics – Override setting was not available on edit topic page
+- Fixed: Lazy Loading Course Navigation – When in a quiz, the course hierarchy did not expand
+- Fixed: Clone Pages and Posts – Cloning a page with Beaver Builder active caused a 500 error
+- Fixed: Clone Pages and Posts – Cloned quiz questions had meta values linked to the original question
+
+---
+
+### 3.2.5
+
+- Updated: Sample Lesson Label – Now identified as a legacy module
+- Updated: Autocomplete Lesson/Topic on Gravity Form Submission – Mark Complete button now hidden in LearnDash 3.0 “Focus Mode”
+- Fixed: Drip Lessons by Group – CSS was not being loaded on lesson pages in LearnDash 3.0 theme
+- Fixed: Enhanced Course Grid – Fatal Error when viewing the grid on some sites
+- Fixed: Removed errant references to Uncanny Automator plugin
+
+---
+
+### 3.2.4
+
+- Updated: Simple Course Timer – Improved translation support when used with Tin Canny LearnDash Reporting
+- Updated: Lazy Loading Course Navigation – Added nonce verification to REST API call
+- Fixed: Lazy Loading Course Navigation not loading properly on some lesson and topic pages
+- Fixed: Enhanced Lesson/Topic Grid – Quizzes are now displayed below lesson/topic grid when using LD 3.0 theme
+- Fixed: Import Users – Link to sample .csv file fixed
+- Fixed: Course Dashboard – 3.0 template incorrectly associating shared lessons/topics
+- Fixed: Course Dashboard – Category dropdown reported maximum 5 courses per category
+
+---
+
+### 3.2.3
+
+- Updated: Course Dashboard – Automatically switch to 3.0 theme when LearnDash 3.0 on LearnDash 3.0 theme is detected
+
+---
+
+### 3.2.2
+
+- Fixed: Drip Lessons by Group – Drip dates were not being displayed in group dropdown
+- Fixed: Course Dashboard – CSS for Legacy theme not loading if Legacy theme not explicitly selected in module settings
+
+---
+
+### 3.2.1
+
+- Fixed: Enhanced Lessons/Topics Grid – Removed debug output
+
+---
+
+### 3.2
+
+IMPORTANT: If you have overridden the Course Dashboard template using a filter, note that the template file name and location has changed; you will need to update your filter function.
+- Added: Compatibility with LearnDash 3.0
+- Added: Course Dashboard – Ability to switch themes
+- Added: New Course Dashboard theme “3.0”. Modern and responsive HTML and CSS code. Fully independent of LearnDash CSS, the new theme will greatly reduce WordPress theme conflicts, especially when the theme includes LearnDash-specific styling
+- Added: New Module: Lazy Loading Course Navigation – Loads the LearnDash Course Navigation widget via AJAX (after initial page load) to speed up page load times on sites with many courses, lessons, topics and/or quizzes
+- Added: New Module: Preview Certificate – Enables previewing of LearnDash certificates right from the Edit Certificate page
+- Added: Enhanced Lesson/Topic Grid – Added category and tag attributes
+- Updated: Email Course Certificates – %Group Name% token now works in email subject field
+- Updated: Drip Lessons by Group – Drip date/time now shown beside “All other users” in group selection dropdown (if set)
+- Updated: Enhanced Course Grid – Added CSS to prevent conflict with Social Learner theme
+- Fixed: Textdomain inconsistencies – replaced a few instances of uncanny-toolkit-pro with uncanny-pro-toolkit
+- Fixed: Drip Lessons by Group – Drip access not working when user is enrolled directly in a course with dripped lessons and is also a member of a group that does not have access to the course
+- Fixed: Autocomplete Lessons & Topics on Gravity Form Submission: Submitting the form now automatically advances the user to the next lesson/topic
+- Fixed: Drip Lessons by Group – Fixed PHP notice in uncanny-drip-lessons-by-group.php
+- Fixed: Gutenberg dependency reported by Query Monitor
+
+---
+
+### 3.1
+
+- Added: Automatic template overrides! Override any file in the /src/templates folder by copying it into /uncanny-toolkit/ in your child theme (Requires Uncanny LearnDash Toolkit (free) version 3.1)
+- Updated: Improved Group Leader Interface: Added settings for Group Leader login redirect
+- Updated: Email Quiz Certificates: Added tokens for user’s first and last name to admin/group leader email
+- Updated: Enhanced Lesson/Topic Grid: Moved grid element HTML to template file
+- Updated: Group Registration: Moved registration form HTML to template file
+- Updated: Group Registration: Added confirmation message when a user clicks the Join Group button
+- Updated: Group Registration: Improved translation support
+- Updated: Course Dashboard: Added localization support for drip dates
+- Updated: Email Quiz Certificates: Added localization support for quiz completion date
+- Fixed: Simple Course Timer: Course Completion Time and Course Total Time columns now added properly to course and user reports (requires Tin Canny LearnDash Reporting plugin)
+
+---
+
+### 3.0.4
+
+- Added: Email Course Certificates – Option to send email via cron – may resolve issues on very large sites
+- Updated: Simple Course Timer – Increased z-index of idle alert dialog
+- Updated: Group Registration – CSS tweaked for improved theme compatibility
+- Updated: Course Dashboard / Enhanced Course Grid – Empty categories are no longer listed in category selector dropdowns
+- Updated: Days until Course Expiry – Sentence is now fully translatable in module settings
+- Updated: Days until Course Expiry – Removed deprecated “Pre-text” attribute from Gutenberg block
+- Fixed: Days until Course Expiry – When one day is remaining, the correct (singular) text is now displayed
+
+---
+
+### 3.0.3
+
+- Added: Simple Course Timer – Adds course time data to Tin Canny reports when Tin Canny LearnDash Reporting plugin is installed
+- Added: Email Course Certificates – Filters for saving/modifying data before pdf generation
+- Updated: Email Course Certificates – Added 20 second delay to email generation to ensure LearnDash completes course completion process
+- Fixed: Email Quiz Certificates – PHP class name for module
+
+---
+
+### 3.0.2
+
+- Added: Learner Transcript: Option to display only completed courses
+- Added: Learner Transcript: Filter to add total rows to custom columns
+- Added: Enhanced Course Grid: Filter on grid element buttons
+- Added: Show course Start button attribute in Gutenburg block
+- Updated: Enhanced Course Grid: Improved WPML support
+- Fixed: Log In Redirect not working with Group Login Redirect module enabled
+- Fixed: Done button not appearing in last topic of lessons
+
+---
+
+### 3.0.1
+
+- Added: Group Login Redirect – Shortcodes to output group login link and URLs ([uo_group_login_redirect_url] and [uo_group_login_redirect_link])
+- Updated: Learner Transcript – Improved performance on sites with many courses
+- Fixed: Import Users – display_name column now correctly populates users’ display names
+- Fixed: Enhanced Course Grid – Added additional grid container to fix width issues on some sites
+- Fixed: Learner Transcript – Restored integration with CEU plugin and added module setting to toggle column on/off
+
+---
+
+### 3.0
+
+- This release features a completely overhauled Learner Transcript module, including:
+- A new modern, clean, responsive and mobile-friendly design
+- A customizable header including a logo, heading and organization name
+- Ability to hide or show columns and specify a sort order for courses
+- A customizable footer including a logo and footer text
+- Improved printing support
+- Added: New module: Autocomplete Lesson/Topic when Quiz is Graded
+- Added: New module: Group Login Redirect
+- Added: Support page for submitting a ticket directly from your site when a valid license key is detected
+- Added: Simple Course Timer – Setting to toggle debug info on/off
+- Added: Basic Gutenberg block support
+- Added: Course Dashboard – Ability to display a Category or Course Category dropdown menu filter
+- Added: Filter to override wp_mail_content_type for email certificate pdf modules (uo_apply_wp_mail_content_type)
+- Updated: Module names changed for consistency:
+- Drip Lessons by LearnDash Group > Drip Lessons by Group
+- LearnDash Course Dashboard > Course Dashboard
+- LearnDash Group Expiration > Group Expiration
+- LearnDash Group Logo/List > Group Logo/List
+- LearnDash Group Registration > Group Registration
+- Import LearnDash Users > Import Users
+- LearnDash Reset Button > Reset Button
+- LearnDash Table Colors > Lesson/Topic/Quiz Table Colors
+- Updated: Reset Button – A course_id attribute is no longer necessary if the shortcode is placed on a course page
+- Updated: Duplicate Pages and Posts – Duplicating a quiz in LearnDash 2.6+ has two modes depending on whether Shared Quiz Questions is enabled ([see KB for details](https://www.uncannyowl.com/knowledge-base/duplicate-pages-posts/))
+- Updated: License activation page design
+- Updated: Autocomplete Lessons and Topics, Learner Transcript and Autocomplete Lessons and Topics on Quiz Results Page modules now use LearnDash API functions
+- Updated: Email Quiz Certificates – Subject and Body field labels in settings to make it clearer they apply to emails sent to the Administrator/Group Leader only
+- Updated: Course Dashboard – CSS no longer loads when the shortcode/block is not on the page
+- Fixed: Enhanced Course Grid – Text no longer wraps around the grid on some themes
+- Fixed: Enhanced Course Grid – link_to_course attribute now works for all course types
+- Fixed: Lesson/Topic Grid – Enabling the grid on a page no longer forces the “Course Materials” heading to be visible
+- Fixed: Reset Button – Fatal error on PHP 7+ when module was activated
+- Fixed: Duplicate Pages and Posts – Error when cloning posts on LD 2.6+
+- Fixed: “Import Users” menu link did not appear on some sites
+- Fixed: Course Dashboard – “Registered Courses” was not showing “Courses”
+- Fixed: Drip Lessons by LearnDash Group – Date is no longer shifted and drip icon (calendar) is no longer affected when module is enabled
+- Fixed: Autocomplete Lessons and Topics – Dripped lessons could be completed before they were dripped if the Drip Lessons by Group module was not enabled
+
+---
+
+### 2.5.1
+
+- Fixed: Autocomplete Lessons and Topics – Save error on lessons and topics when Gutenberg is enabled
+- Fixed: Autocomplete Lessons and Topics – Done button redirect now follows LearnDash logic
+- Fixed: Autocomplete Lessons and Topics – Done button now shows up if there’s only one topic in a lesson
+- Fixed: Autocomplete Lessons and Topics – Done button is no longer clickable when Video Progression is enabled
+
+---
+
+### 2.5
+
+- Added: New Module – Course Progress Reset button – Give users a button that resets their progress in a course. Also provides a PHP function to reset course progress for a user
+- Added: Import LearnDash Users – Ability to set users’ display name in imported spreadsheet
+- Added: Enhanced Course Grid – Optional Start Course and Resume buttons with the attributes start_course_button=”show|hide”, resume_course_button=”show|hide” (Resume button module must be active)
+- Added: Enhanced Course Grid – Optional category/course category filters with the attributes categoryselector=”show|hide”, course_categoryselector=”show|hide”
+- Updated: Enhanced Course Grid – HTML output moved to template file
+- Fixed: Duplicate quiz links in Course Dashboard module
+
+---
+
+### 2.4.2
+
+- Added: New attribute to the Course Dashboard shortcode: expand_by_default=”yes|no” to show the dashboard expanded by default on load
+- Updated: “Your certificate is attached with this email” text in email certificate modules is now translatable
+- Updated: Improved time zone support across all modules
+- Fixed: Fatal error in email course certificates module
+- Fixed: Quiz associations in the Course Dashboard module when Shared Course Steps is enabled
+- Fixed: Enhanced Lessons/Topics Grid now behaves as expected when “Hide Course Materials Table” is checked in course settings
+
+---
+
+### 2.4.1
+
+- Updated: Course Status label no longer displays on Enhanced Course Grid if hide_progress=”yes”
+- Fixed: Autocomplete Lessons & Topics on Gravity Form Submission caused a 500 error when using an older version of Gravity Forms
+
+---
+
+### 2.4
+
+- Added: hide_progress=”yes|no” attribute in Enhanced Course Grid module to enabling hiding the course progress bar to reduce overhead and speed up grid load times
+- Added: Option to ignore previous entries in Autocomplete Lessons and Topics on Gravity Forms Submission module
+- Updated: Learner Transcript module now shows all courses that the user has recorded progress for, whether or not they are current enrolled
+- Updated: Improved multisite compatibility of Import LearnDash Users module
+- Updated: Improved code accessibility of Enhanced Course Grid
+- Updated: [uo_group_organization] shortcode now accepts group_id=”##” attribute
+- Fixed: Group Drip times saved incorrectly in some time zones
+- Fixed: lesson_id attribute now works in Enhanced Lesson/Topic Grid shortcode
+- Fixed: Email Course Certificate module sometimes sent two emails on course completion
+- Fixed: Timestamp in emailed certificate sometimes offset by several hours
+- Fixed: Typo on Import LearnDash Users interface
+- Fixed: Template override instructions for Course Dashboard module
+
+---
+
+### 2.3.1
+
+- Fixed: Autocomplete Lessons & Topics: Done button no longer shows up in all lessons. Done button now shows up only when there is no obvious user action to take, e.g. in the last topic of a lesson and the last lesson of a course (provided there are no topics or quizzes attached to that lesson)
+
+---
+
+### 2.3
+
+- Added: .po file now included for translation
+- Added: do_action “uo_course_completion_time” in Course completion certificate that passes completion time
+- Added: do_action “uo_quiz_completion_time” in Quiz completion certificate that passes completion time
+- Added: Additional string localizations
+- Updated: Send Course Certificates by Email and Send Quiz Certificates by Email now support rich text formatting
+- Updated: Send Course Certificates by Email now supports sending different emails to the user and Group Leader/Site Admin
+- Fixed: %Group Name% variable now populates correctly in Send Course Certificates by Email
+- Fixed: “Done” button in “Autocomplete Lessons and Topics” module works more consistently
+- Fixed: License key could not be deactivated on some sites
+- Fixed: Fatal error for Course Completion Certificate module when assumed array is declared as a string
+- Fixed: TCPDF Image error in course completion certificate
+- Fixed: Undefined variable notices in Lesson/Topic Grid when course contains no lessons
+
+---
+
+### 2.2
+
+- Updated: Simple Course Timer with local data validation to prevent timer loop
+- Updated: Confirmation message on group registration page after the registration form is submitted and the user is logged in changed from: “Congratulations! You are now registered on this site. You will receive an email shortly with login details.” to: “Congratulations! You are now registered on this site.”
+- Updated: Improved time zone handling of group drip dates/times
+- Fixed: Sample label no longer appears on quizzes in sample lessons
+- Fixed: Issue where UNIX timestamps were output along with group drip dates
+- Fixed: Issue where “Course Materials” and “Course Content” were both output when group drip dates are used
+
+---
+
+### 2.1.13
+
+- Fixed: LearnDash Course Dashboard [uo_dashboard] compatibility issue with LearnDash versions earlier than 2.5
+
+---
+
+### 2.1.12
+
+- Updated: Group Drip dates are now stored in UNIX timestamp format for compatibility with non-English sites
+- Updated: LearnDash Course Dashboard supports proper permalinks in LearnDash 2.5+ with Shared Course Steps enabled
+- Updated: In the Enhanced Course Grid module, the “Course Status” text for in-progress courses is now translatable
+- Fixed: In the Import LearnDash Users module, First Name and Last Name email tokens now work correctly
+
+---
+
+### 2.1.11
+
+- Updated: “Done” button text in Autocomplete Lessons and Topics module is now translatable
+- Fixed: Simple Course Timer Quiz lockout feature now correctly blocks access to quiz on newer versions of LearnDash
+
+---
+
+### 2.1.10
+
+- Updated: Autocomplete Lessons & Topics on Gravity Form Submission now supports Gravity Forms “Save and Continue” function
+- Updated: LearnDash Course Dashboard shortcode now supports HTML in course titles
+- Fixed: Improved Group Leader Interface now checks a Group Leader’s assigned courses when determining whether they should have access to dripped lessons prior to their “Available On” date
+- Fixed: Import LearnDash Users filter ‘csv_wp_update_user’ restored
+- Fixed: Group registration page layout issues on some themes
+- Fixed: False-positive PHP 7 compatibility issue fixed in Simple Course Timer module
+
+---
+
+### 2.1.9
+
+- Updated: Duplicate Pages and Posts clones courses properly in LearnDash 2.5+ with Shared Course Steps enabled
+- Fixed: Objects cloned by the Duplicate Pages and Posts module do not lose their category
+
+---
+
+### 2.1.8
+
+- Added: Shortcodes are now rendered in Enhanced Course Grid short descriptions
+- Added: New (beta) Course Timer polling method to reduce server overhead
+- Updated: Default Course Timer polling interval increased to 15 seconds from 10 seconds
+- Updated: Minimum Course Timer polling interval reduced to 5 seconds
+- Updated: Course Timer now tracks time consistently with “Shared Course Steps” enabled (LearnDash 2.5+)
+- Updated: Days until Course Expiry now works consistently with “Shared Course Steps” enabled (LearnDash 2.5+)
+- Fixed: Autocomplete Lessons and Topics module no longer autocompletes lessons that are not yet available (dripped)
+- Fixed: Group Drip module: “All other users” drip date no longer takes precedence over group drip dates
+
+Known Issue: “Done” button in last topic of lesson may not forward the user to the appropriate page with “Shared Course Steps” enabled (LearnDash 2.5+)
+
+---
+
+### 2.1.7
+
+- Updated: Group Drip module now properly records drip time in addition to drip date
+
+---
+
+### 2.1.6
+
+- Updated: Improved theme compatibility of simple timer quiz lockout function
+- Updated: Course and Quiz Certificate emails now support post meta shortcodes
+- Updated: Error message when an imported user has a matching email but mismatched username
+- Fixed: Added missing namespace on some strings
+- Fixed: Row numbers reported in .csv upload errors
+- Fixed: Missing ” in learn-dash-group-sign-up.php
+- Fixed: Import users settings page now populates default values on first run if settings have not yet been saved
+
+---
+
+### 2.1.5
+
+- Added: Course credit value from the Uncanny LearnDash Continuing Education Credits plugin is now displayed in the Enhanced Course Grid.
+- Fixed: Having Drip Lessons by Group module enabled no longer causes Hide Course Content Table setting to be ignored
+
+---
+
+### 2.1.4
+
+- Fixed: When Autocomplete Lessons and Topics is enabled, Done button in last topic of last lesson now returns the user to the course page
+- Fixed: Bug in multiple modules that triggered the course complete action on page load
+- Fixed: Send Course Certificates by email no longer emails certificates repeatedly on course, lesson and topic page load when certain other modules are enabled
+- Fixed: When Send Course Certificates by Email is enabled, an email is no longer sent when a completed course does not have an associated certificate
+- Fixed: Enhanced Lessons/Topics Grid now works with Hide Course Content Table setting
+
+---
+
+### 2.1.3
+
+- Added: Support for the new Uncanny Continuing Education Credits plugin
+- Updated: Removed Save Changes button on license activation page
+- Updated: Adding the Enhanced Lessons/Topics Grid shortcode to a course or lesson page suppresses the LearnDash lesson/topic table
+- Updated: Adding the Enhanced Lessons/Topics Grid shortcode to a course or lesson page while the module is enabled globally suppresses the global grid on that page
+- Updated: The Enhanced Lessons/Topics Grid elements are forced to 100% width within the grid
+- Updated: The Enhanced Lessons/Topics Grid displays lesson and group lesson drip dates
+- Fixed: View More button on Enhanced Course Grid
+- Fixed: Knowledge Base link for Enhanced Lessons/Topics Grid module
+- Fixed: Autocomplete Lesson/Topic on Quiz Results Page without clicking “Click here to continue” button
+
+### 2.1.2
+
+- Fixed: Removed extraneous text from Autocomplete Lessons and Topics module
+
+### 2.1.1
+
+- Fixed: Removed extraneous text from Autocomplete Lessons and Topics module
+- Fixed: Remove sample tag on topics
+
+### 2.1
+
+- New module: Enhanced Lessons/Topics Grid
+- New module: Send Course Certificates by Email
+- Added: New attribute “show” for uo_dashboard shortcode (enrolled, open, all)
+- Updated: Autocomplete Lessons and Topics now allows autocompletion of topics in any order
+- Updated: When Autocomplete Lessons and Topics is enabled, the Done button on the last topic in a lesson goes to next lesson if the lesson is complete
+- Updated: LearnDash Table Colors module now makes color !important to work in more situations
+
+### 2.0.5
+
+- Added actions and filters to Import Users module to allow more flexible profile data
+- Added filters to Transcript to change default number of rows
+- Fixed course timer loop when user was not logged in
+- Fixed typos in Transcript and Import Users modules
+- Fixed View More button in the course grid when the number of columns equaled the number of courses
+- Fixed 404 console error in wp-admin when Drip Lessons by Group was enabled
+
+### 2.0.4
+
+- Added: Currency attribute to Enhanced Course Grid shortcode
+- Added: Preliminary support for upcoming Group Management plugin
+- Fixed: Modules not saving when slashes are removed during wp_options save
+- Fixed: Statistics popup in uo_dashboard shortcode
+- Fixed: Link to certificate in uo_dashboard shortcode covered link to course
+- Fixed: Alignment of course name and certificate icon in uo_dashboard shortcode
+- Fixed: Display Mark Complete button when gravity form setting is unchecked
+
+### 2.0.3
+
+- Added ld_category attribute in Enhanced Course Grid shortcode to support LearnDash course categories
+- Updated Drip Lessons by LearnDash Group module for new drip date format
+- Fixed missing CSS class when ignore_default_sorting attribute is added to Enhanced Course Grid shortcode
+
+### 2.0.2
+
+- Added: Error checking for blank rows in Import LearnDash Users CSV files
+- Added: More variables for new user email templates for Import LearnDash Users
+- Added: Mark Complete button when a Gravity Form is on a lesson with completed topics
+- Updated: Use LearnDash custom course, lesson, topic, and quiz labels in Transcript
+- Fixed: generate PDF quiz id failing on some servers
+
+### 2.0.1
+
+- Fixed: New user upload stall
+
+### 2.0
+
+- Added: New module, Import LearnDash Users
+- Added: Course description to Enhanced Course Grid
+- Updated: Group Leader Access to view dashboard & added ability to view ProPanel widget
+- Updated: Course Timer inline-css for settings panel
+- Updated: Group Drip to let user view lessons on earliest date if in multiple groups
+- Updated: UI tweaks
+- Updated: Plugin licensing and updating
+- Fixed: PDF certificate orientation & size
+- Fixed: PDF certificate online view more consistent with email output
+- Fixed: timestamp handling
+- Fixed: Course Grid hide View More when limit is set to all
+- Fixed: Course Grid added (int) to limit grids
+- Fixed: Group Registration redirect to avoid cached page
+- Fixed: Group Registration permalink
+- Fixed: Redirect_to on wp_login filter to improve login process for Group Leader module
+- Fixed: Group Drip to let admin view contents
+- Fixed: Group Sign up login form 502 gateway error on WP Engine
+- Fixed: Simple timer missing data in LearnDash 2.3 CSV report
+
+### 1.4
+
+- Added: New module, Group Leader Experience
+- Added: New module, Send Certificates by Email
+- Added: New module, Autocomplete Lesson, Topic on Quiz Completion
+- Updated: Made Group Registration sign up lines translatable
+- Updated: Course Grid to truly ignore default sorting for enrolled courses
+- Updated: Course Grid to be flex for consistent heights
+- Updated: Sort-able Expiry Date column for Group Expiration Module
+- Fixed: Done button behavior inconsistent if lesson contains quiz
+
+### 1.3.2
+
+- Added: Course sorting in course dashboard shortcode
+- Fixed: Missing Mark Complete button when global Autocomplete is disabled
+
+### 1.3.1
+
+- Added: Show post navigation links if autocomplete is enabled
+- Updated: Repositioned sample lesson tag to be more mobile friendly
+- Updated: Made transcript fully translatable
+- Fixed: Typo in learner transcript column headers
+- Fixed: Enable Quizzes after X time not removed in certain themes
+- Fixed: Random redirect on quiz completion in Safari/Firefox
+- Fixed: Group signup URL registration link key causing URL error
+
+### 1.3
+
+- Added: Course Timer feature – Only allow access to a quiz when time spent in the course EQUALS OR EXCEEDS a specified number of minutes
+- Added: “Done” button in last topic within a lesson when Autocomplete Lessons & Topics is enabled
+- Updated: Made fonts consistent across transcript PDF
+- Fixed: Topics with quizzes are not autocompleted
+
+### 1.2.1
+
+- Fixed: Autocompletion issue
+
+### 1.2
+
+- Added: Sample Lesson Label module
+- Added: Deactivate Pro version if Free version is not activated, link to Free download
+- Added: Ctrl+P print function on transcript
+- Updated: Transcript print styles
+- Updated: Course dashboard HTML and CSS to better support long course names
+- Updated: Allow timer to resume after it has been paused for up to 48 hours
+- Updated: Group registration provides immediate access to courses
+- Fixed: Enhanced Course Grid CSS override theme path (/wp-content/themes/your-theme/uncanny-toolkit-pro/css/course-grid-view.css)
+- Fixed: Do not autocomplete lesson if previous lesson is not completed and lesson progression is enabled
+
+### 1.1.0
+
+- Added new sorting and ordering options to course grid
+- Added logo option for LearnDash Groups
+- Added shortcode that lists LearnDash Groups for user
+
+### 1.0.3
+
+- Fixed a conflict with Duplicate Posts & Pages and WooCommerce products.
+
+### 1.0.2
+
+- Added improved support for alternative slugs for LearnDash post types.
+
+### 1.0.1
+
+- Initial Release.
+
+---
+
+## User Switching
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/user-switching-module/](https://www.uncannyowl.com/knowledge-base/user-switching-module/)
+
+### Overview
+
+Troubleshoot learner issues by stepping directly into a user’s account to see your site exactly as they do, then switch back to your own account instantly. It is the fastest way to confirm what a student is (or isn’t) seeing without ever asking for their password.
+
+### What the Module Does
+
+The **User Switching** module lets administrators log in as another user, view the site from that person’s perspective, and return to their own account with a single click. It is built on John Blackbourn’s well-established [User Switching](https://wordpress.org/plugins/user-switching/) plugin.
+
+This is invaluable for LearnDash support and troubleshooting. When a learner reports that a lesson won’t unlock, a quiz won’t submit, or content appears to be missing, you can switch into their account and see precisely what they see, instead of guessing from screenshots or descriptions.
+
+**Note:** Any action you take while switched is recorded as if that user performed it. Completing a lesson, submitting a quiz, or posting a comment will be attributed to them. We recommend creating a dedicated test account for trying out site behavior, and reserving live learner accounts for cases where you specifically need to inspect that user’s real progress and data.
+
+### Enabling the Module
+
+1. Go to **Uncanny Toolkit** in your WordPress admin menu.
+2. Locate the **User Switching** module and toggle it on.
+
+Once enabled, the module automatically gives administrators the ability to switch between user accounts. No further configuration is required.
+
+### Who Can Switch Users
+
+Switching is available to administrators and any user who has the capability to edit users. Because this capability grants full access to other accounts, it should remain limited to trusted, high-level roles.
+
+### How to Switch to Another User
+
+1. Go to **Users > All Users**.
+2. Find the user you want to view the site as.
+3. Hover over their username and click the **Switch To** link beneath it.
+
+You are now logged in as that user and will see the site exactly as they do.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/11/User-Switching.png)
+
+### How to Switch Back
+
+While you are switched into another account, a link to return to your own account appears in the **admin bar** at the top of the screen, and/or at the **bottom of the page**. Click it to instantly switch back to your original administrator account.
+
+### Security Considerations
+
+**Note:** User Switching never reveals passwords. It uses WordPress’s own secure cookie authentication to move between accounts, so you can view a user’s experience without ever knowing or changing their credentials.
+
+If you also use the **Hide Admin Bar** module, be aware that hiding the admin bar can hide the switch-back link along with it. We recommend confirming the switch-back link remains accessible at the bottom of the page so you are never stranded in another user’s account. Some themes can also affect where the switch-back link appears, so it is worth verifying its placement before relying on the module in production.
 
 ### Related Articles
 
-- [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/) — Configure which pages the plugin creates and customize their shortcode attributes
-- [Using the Group Reports](https://www.uncannyowl.com/knowledge-base/group-leader-reports/) — Course and quiz reporting available from the front-end Reports menu
-- [Configure Group Emails](https://www.uncannyowl.com/knowledge-base/configuring-group-emails/) — Customize invitation, key, and leader email templates
-- [Set Up User Enrollment](https://www.uncannyowl.com/knowledge-base/set-user-enrollment/) — Control how users are enrolled in groups and courses
-- [Add Seats and Courses after Purchase](https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/) — Expand existing groups created through WooCommerce purchases
+- [Introduction to the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/)
+- [Disable Emails](https://www.uncannyowl.com/knowledge-base/disable-emails/)
+- [Groups in User Profiles](https://www.uncannyowl.com/knowledge-base/learndash-groups-user-profiles/)
 
 ---
 
-## Using the Group Reports
+## Continuing Education Shortcodes
 
-**Source:** [https://www.uncannyowl.com/knowledge-base/group-leader-reports/](https://www.uncannyowl.com/knowledge-base/group-leader-reports/)
+**Source:** [https://www.uncannyowl.com/knowledge-base/continuing-education-shortcodes/](https://www.uncannyowl.com/knowledge-base/continuing-education-shortcodes/)
 
 ### Overview
 
-Uncanny Groups for LearnDash automatically creates front-end report pages that Group Leaders can use to track learner progress — no WordPress admin access required. This article covers the Course Report, Quiz Report, and the individual progress view accessible from the Group Management page.
+Uncanny CEUs includes a set of shortcodes — each with a matching Gutenberg block — for displaying credit information anywhere on your site. Use them to show learners their earned credits, how many credits remain before a rollover date, certificate descriptions, and more.
 
-When the plugin is activated, it creates two report pages:
+Every shortcode below has an equivalent block in the **Uncanny Continuing Education Credits** block category. Shortcodes are ideal for page builders, widgets, and templates; blocks offer the same output with a visual settings panel in the WordPress editor. Both produce identical results, so use whichever fits your workflow.
 
-- **Course Report** — the **Course Report** block, or the 
+Wherever a shortcode references “credits,” the output uses the credit label you set under **Uncanny CEUs > Settings** (for example, CEUs, CPDs, or PDUs)
+
+### Shortcodes/Blocks
+
+Here’s a list of shortcodes and blocks and how to use them:
+
+### Available Course Credits
+
 ```
-[uo_groups_course_report]
+[uo_ceu_available course-id="id"]
 ```
 
-shortcode
-- **Quiz Report** — the **Quiz Report** block, or the 
+Block Name: **Available Credits**
+
+This shortcode displays the number of credits available for the course (as set in the Edit page for that course). The course-id attribute is optional and is used to associated the shortcode with a particular course. If the shortcode is used on a course page, no ID is required. On other pages it should be added. If you are using blocks, the optional *Course ID* will appear in the block side menu, under *Available Credits Settings*.
+
+### Earned Course Credits
+
 ```
-[uo_groups_quiz_report]
+[uo_ceu_earned course-id="id" since-rollover="yes"]
 ```
 
- shortcode
+Block Name: **Earned Credits**
 
-Group Leaders access these pages via the **Reports** menu on the Group Management page, or you can add them directly to your site navigation. Administrators can also access both pages.
+This shortcode shows the number of credits earned by the learner for the associated course. Once again, course-id is optional and not required on a course page. If the user has not earned any credits for the course, the system will display a value of 0.  If*since_rollover* is set to *yes*, it shows the number of credits earned since the rollover date. If credits were earned before the date, a value of 0 is shown. If you are using blocks, the options *Course ID* and *Since Rollover* will appear in the block side menu, under *Earned Credits Settings*.
 
-**Before you start:** The report pages are created automatically on activation. If you need to recreate or reconfigure them, see [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/).
+### Total Credits Earned
 
-![](https://www.uncannyowl.com/wp-content/uploads/2018/10/reports-tab.png)
+```
+[uo_ceu_total user-id=""]
+```
 
-### Course Report
+Block Name: **Total Credits**
 
-The Course Report gives Group Leaders a completion overview for any group-and-course combination they manage.
+This shortcode shows the total number of credits (regardless of rollover date) for the associated user. If the user_id attribute is not included, the value is shown for the current user. If you are using blocks, the option *User ID* will appear in the block side menu, under *Total Credits Settings*.
 
-#### Using the Course Report
+### Total Credits Earned since Rollover Date
 
-1. Navigate to the **Course Report** page directly or via the Group Management page by clicking Reports > Course.
-2. Use the **Group** dropdown to select the group you want to report on.
-3. Use the **Course** dropdown to select the course.
-4. The report table loads automatically. The default columns include:
+```
+[uo_ceu_total_rollover user-id=""]
+```
 
-| Column | Description |
+Block Name: **Total Rollover Credits**
+
+This shortcode is much like the total one except that it only sums credits earned on or after the rollover date. If you are using blocks, the options *User ID* and *On or After Rollover* will appear in the block side menu.
+
+### Days Remaining until Rollover Date
+
+```
+[uo_ceu_days_remaining]
+```
+
+Block Name: **Days Remaining**
+
+This shortcode/block outputs the number of days that remain until the rollover date. Learners can reference this value so they know how much time they have until all of their credits must be earned.
+
+### Credits Remaining before Rollover Date
+
+```
+[uo_ceu_credits_remaining user_id="id"]
+```
+
+Block Name: **Credits Remaining**
+
+This shortcode/block shows users how many credits they need to earn before the rollover date. If no user_id is specified, the shortcode/block will show the value for the current user. As a reminder, the number of credits shown is the *highest* of a user’s associated individual and group credit requirements.
+
+### Certificate Trigger Description
+
+```
+[uo_ceu_certificate_description certificate-id="678"]
+```
+
+Block Name: **Certificate Trigger Description**
+
+This shortcode/block displays the description text configured on a CEU certificate trigger. Useful for showing learners what a certificate represents on a course or profile page. The LearnDash certificate ID is optional. If no ID is used, it defaults to the current certificate/post.
+
+See [Continuing Education Certificates](https://www.uncannyowl.com/knowledge-base/continuing-education-certificates/) for how to configure the description.
+
+### Continuing Education Report
+
+```
+[uo_ceu_report]
+```
+
+Block Name: **Continuing Education Report**
+
+This shortcode/block displays a front-end credit report. By default it shows a learner-facing search report; with the enhanced attribute enabled it becomes a full report for administrators and group leaders, with column customization, filtering, export, and inline credit editing.
+
+| Attribute | Description |
 | --- | --- |
-| User | Learner’s display name |
-| Email | Learner’s email address |
-| Completion % | Percentage of course content completed |
-| Completion Date | Date the learner completed the course (blank if not yet complete) |
+| enhanced | off (default) shows the standard learner search report; on loads the enhanced report (admins and group leaders only). |
+| columns | A comma-separated list of columns to show, each as `key |
+| mode | The data source used to build the report: meta (recommended), json (fastest), legacy, or tables. |
+| add | on enables the “Add credits” action in the enhanced report. |
+| edit | on enables inline editing of existing credit records. |
+| delete | on enables deleting credit records. |
 
-![](https://www.uncannyowl.com/wp-content/uploads/2018/10/course-report-1030x734.png)
+Because the enhanced report and its add/edit/delete actions are powerful, they are only available to administrators and group leaders. For a full walkthrough, see [Continuing Education Report](https://www.uncannyowl.com/knowledge-base/continuing-education-report/) and [Add and Remove Credits](https://www.uncannyowl.com/knowledge-base/add-and-remove-credits/).
 
-#### Exporting the Course Report
+### Using the Blocks
 
-If export buttons are enabled via shortcode attributes (see [Shortcode reference](https://docs.google.com/document/d/1WamS8Tx-cvhbsULoYn3h1wLuGWuvswTIvi_nyJtK_AY/edit#course-report-shortcode-reference) below), Group Leaders can download the report as a **CSV** or **Excel** file.
+To add any of these as a block, edit a page or post, click the **+** (Add Block) button, and search for the block name from the Quick Reference table above — or browse the **Uncanny Continuing Education Credits** block category. Each block exposes the same options as its shortcode in the block’s sidebar settings panel.
 
-#### Transcript integration
+### Related Articles
 
-If you are using the Uncanny Toolkit Pro transcript feature, you can link to a transcript page from within the Course Report. Add the transcript-page-id attribute to the 
-```
-[uo_groups_course_report]
-```
-
- shortcode with the ID of your transcript page. A **Transcript** column will appear in the report table, allowing Group Leaders to view a learner’s full course transcript.
-
-#### Customizing report columns (developers)
-
-Developers can add, remove, or reorder Course Report columns using the ulgm_group_course_report_columns filter, introduced in **Uncanny Groups v6.1.4**. This allows teams with custom reporting requirements to tailor the table without modifying plugin files. See [Actions/Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/) for implementation details.
-
-#### Course Report shortcode reference
-
-Add the **Course Report** block, or place the 
-```
-[uo_groups_course_report]
-```
-
- shortcode, on any WordPress page to create a Course Report page:
-
-```
-[uo_groups_course_report]
-```
-
-| Setting / Attribute | Values | Default | Description |
-| --- | --- | --- | --- |
-| course-order | “ID“, “title“, “date“, “menu_order“ | (empty) | Sort order for the Course dropdown |
-| columns | comma-separated column keys | user_name, first_name, last_name, user_email, percent_completed, date_completed, date_enrolled, course_name, group_name, transcript_page_url, course_time | Which columns appear in the report table |
-| orderby_column | column name | Date Completed | Column used to sort the report table |
-| order_column | “asc” / “desc“ | “desc” | Sort direction for the report table |
-| csv_export_button | “show” / “hide“ | “show” | Show or hide the CSV export button |
-| excel_export_button | “show” / “hide“ | “show” | Show or hide the Excel export button |
-| transcript-page-id | page ID | 0 | Enables the Transcript column when set to a valid transcript page ID |
-
-### Quiz Report
-
-The Quiz Report lets Group Leaders drill into quiz results for any combination of group, course, and quiz — including individual question-by-question breakdowns.
-
-#### Using the Quiz Report
-
-1. Navigate to the **Quiz Report** page directly or via the Group Management page by clicking Reports > Quiz.
-2. Select a **Group** from the first dropdown.
-3. Select a **Course** from the second dropdown. The quiz list updates to show all quizzes within that course, including course-level quizzes.
-4. Select a **Quiz** from the third dropdown.
-5. The results table loads, showing every enrolled user’s score for that quiz.
-
-**Note:** As of v6.1.5, the quiz dropdown correctly includes course-level quizzes alongside lesson and topic quizzes.
-
-![](https://www.uncannyowl.com/wp-content/uploads/2018/10/quiz-report-1030x713.png)
-
-#### Detailed per-attempt report
-
-If LearnDash **quiz statistics** are enabled for a quiz, a detail icon appears next to each user’s result. Clicking it opens a per-attempt breakdown showing:
-
-- Each question in the quiz
-- The answer the learner selected
-- Whether the answer was correct
-
-This view is read-only — it cannot be used to change quiz scores.
-
-![](https://www.uncannyowl.com/wp-content/uploads/2018/10/detailed-report-David2-1030x385-1.png)
-
-#### Exporting the Quiz Report
-
-If export buttons are enabled via shortcode attributes, Group Leaders can download results as a **CSV** or **Excel** file.
-
-#### Quiz Report shortcode reference
-
-Place the **Quiz Report**block or the following shortcode on any WordPress page to create a Quiz Report page:
-
-```
-[uo_groups_quiz_report]
-```
-
-| Setting / Attribute | Values | Default | Description |
-| --- | --- | --- | --- |
-| course-orderby | “ID“, “title“, “date“, “menu_order“ | “title“ | Sort field for the Course dropdown |
-| course-order | “ASC” / “DESC“ | “ASC“ | Sort direction for the Course dropdown |
-| quiz-orderby | “ID“, “title“, “date“, “menu_order“ | “title“ | Sort field for the Quiz dropdown |
-| quiz-order | “ASC” / “DESC“ | “ASC“ | Sort direction for the Quiz dropdown |
-| columns | comma-separated column keys | user_name, first_name, last_name, user_email, quiz_score, quiz_modal, quiz_date | Which columns appear in the report table |
-| score-type | “percent” / “points“ | “percent“ | Whether quiz scores display as a percentage or points |
-| orderby_column | column name | Date | Column used to sort the report table |
-| order_column | “asc” / “desc“ | “desc“ | Sort direction for the report table |
-| csv_export_button | “show” / “hide“ | “show“ | Show or hide the CSV export button |
-| excel_export_button | “show” / “hide“ | “show“ | Show or hide the Excel export button |
-
-### Individual progress view
-
-For a quick look at a single learner’s progress across all their enrolled courses, Group Leaders can use the individual progress view without leaving the Group Management page:
-
-1. Go to the **Group Management** page.
-2. Find the user in the **Enrolled Users** table.
-3. Click the **In Progress** status link next to their name.
-
-A panel opens showing that learner’s progress across every course they are enrolled in through the group. This view is read-only — to mark items complete or incomplete, use the [Manage Learner Progress](https://www.uncannyowl.com/knowledge-base/manage-learner-progress/) page instead.
-
-## Related Articles
-
-- [Using the Group Management Page](https://www.uncannyowl.com/knowledge-base/group-management-page/) — The main front-end hub for Group Leaders
-- [Manage Learner Progress](https://www.uncannyowl.com/knowledge-base/manage-learner-progress/) — View and edit individual learner progress from the front end
-- [Set Up Group Management Pages](https://www.uncannyowl.com/knowledge-base/set-group-management-pages/) — Configure and customize the report pages
-- [Actions/Filters for Developers](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers/) — Hooks available for customizing Group Leader reports
-- [Front End Essay Question Management](https://www.uncannyowl.com/knowledge-base/front-end-essay-question-management/) — Review and grade essay submissions from the front end
+- [Required Credits](https://www.uncannyowl.com/knowledge-base/required-credits/)
+- [Continuing Education Report](https://www.uncannyowl.com/knowledge-base/continuing-education-report/)
+- [Continuing Education Certificates](https://www.uncannyowl.com/knowledge-base/continuing-education-certificates/)
 
 ---
 
-## Reset Progress Button
+## Required Credits
 
-**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-reset/](https://www.uncannyowl.com/knowledge-base/learndash-reset/)
+**Source:** [https://www.uncannyowl.com/knowledge-base/required-credits/](https://www.uncannyowl.com/knowledge-base/required-credits/)
 
 ### Overview
 
-Let learners reset their own progress in a course with a single button — useful for retaking a course, clearing a failed attempt, or starting over. You can add the button anywhere with a shortcode or block, or trigger a reset programmatically with a developer function.
+In version 1.1 of the [Uncanny Continuing Education Credits plugin](https://www.uncannyowl.com/downloads/uncanny-continuing-education-credits/) we introduced the concept of “required credits”. Building on the rollover date that’s in the plugin, new functionality offers a way to set targets for learners that have annual training requirements. Credit thresholds can be set for both individual users and groups, and we added a simple way to handle multiple credit thresholds for users.
 
-The Reset Progress Button clears a user’s progress in a specified LearnDash course. You can place it on any post type — including the course itself — using either a shortcode or the **Reset Button** block.
+For example, let’s suppose that John Smith has an individual requirement of 50 course credits in a year. John is also a member of Group A, which has a credit requirement of 40, and Group B, which has a credit requirement of 75.  Of the 3, Group B requires the most credits, so that’s how many John must earn for the year.
 
-The button is context-aware: it only shows to users who have recorded progress in the course. Learners who haven’t started the course won’t see it.
+Tracking users against continuing education credit requirements is easy. Several shortcodes/blocks are included to make it easy for learners to plan their training in the front end; email reminders can be sent out reminding users of their credit requirements; and a deficiency report has been added to the plugin so administrators can see at a glance who has not yet fulfilled their training requirements.
 
-If your courses have shared quizzes, clicking the Reset Button will reset the quiz attempts in all courses where the user has completed the quiz.
+### Setting Credit Requirements
 
-For example, a quiz is assigned to “Course 1” and “Course 2”. A course user completes both courses and passed the quiz in each course. The user then clicks the Reset Button for “Course 2”, resulting in all progress resetting for “Course 2”. When the user views “Course 1”, the course will still have a status of completed, however the shared quiz progress will show as reset.
+![](https://www.uncannyowl.com/wp-content/uploads/2017/08/individual_required_credits.png)Before this functionality can be used, a rollover date must be set in the plugin settings and required credits at the user and/or group level must be set. *Please note that required credits can only be set if a rollover date is set first.*
 
-For shared essay quizzes that have been graded and points awarded, only the points will reset, the graded essay remains submitted.
+To set an individual requirement, simply edit the user’s profile. Look for the Required field as shown on the right (“CEUs” would be replaced by your plural credit label). Enter a number in the field and save the user’s profile to set the annual required credit threshold. (The Group field to the right is read-only in the user’s profile because it simply looks up the user’s highest required credits based on his or her group membership).
 
-If a shared quiz awards the user a certificate, clicking the reset button will also clear awarded certificates in all courses that share the same quiz.
+![](https://www.uncannyowl.com/wp-content/uploads/2017/08/required_ceus_group.png)To set group requirements, edit the LearnDash Group for which you want to set a required number of credits. In the top right area of the edit page, you should see a field where you can set the required credit value. Enter a number and save the group to set the threshold for all users in that group.
 
-To ensure users receive awarded certificates after passing a quiz, you can use the Toolkit Pro module [Email Quiz Certificates](https://www.uncannyowl.com/knowledge-base/send-quiz-certificates-by-email/).
+### Shortcodes/Blocks
+
+Two shortcodes/blocks are included in the Uncanny Continuing Education Credits plugin for LearnDash to specifically to help with tracking training requirements.
+
+```
+[uo_ceu_days_remaining]
+```
+
+Block Name: **Days Remaining**
+
+This shortcode/block outputs the number of days that remain until the rollover date. Learners can reference this value so they know how much time they have until all of their credits must be earned.
+
+```
+[uo_ceu_credits_remaining user_id="id"]
+```
+
+Block Name: **Credits Remaining**
+
+This shortcode/block shows users how many credits they need to earn before the rollover date. If no user_id is specified, the shortcode/block will show the value for the current user. As a reminder, the number of credits shown is the *highest* of a user’s associated individual and group credit requirements.
+
+Note that neither shortcode/block can return a negative value. On the rollover date, the number of days remaining always resets. And if a user has earned more than his or her required credits, they have 0 credits remaining. A credit excess is not shown to users.
+
+### Email Reminders
+
+Included in the Continuing Education Credits plugin is an easy way to remind users about their outstanding credit requirements. By turning on email reminders, users will automatically receive an email X days before the rollover date to remind them about what they’ve earned and what they still need to earn. The number of days before the rollover date, the email subject line and the email body can all be customized.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2019/01/learndash-ceu-reminder-email-446x500.png)
+
+The screenshot to the right lists all available fields that can be used in the email subject and body. Here’s a summary:
+
+| Variable | Description |
+| --- | --- |
+| #user_email | The user's email address |
+| #first_name | The user's first name |
+| #last_name | The user's last name |
+| #credits_required | The number of credits the user must earn (the highest of individual and group credits) |
+| #ceu_earned | The number of credits the user has earned in total |
+| #earned_since_rollover | The number of credits earned since the rollover date |
+| #rollover_date | The rollover date set in the plugin settings |
+| #ceu_plural | The plural label for continuing education credits |
+| #ceu_single | The singular label for credits |
+
+**Very Important**
+
+Setting an email reminder will *send all emails at the same time*. That means that if 1,000 users in your system have outstanding credit requirements, 1,000 emails will go out. This level of email volume can significantly impact sites on less robust hosting (potentially even taking them down) and really isn’t recommended on any host. Instead, please consider using a third party transaction email service if you want to send out email reminders. SparkPost, SendGrid, Mandrill and Amazon SES are all popular options. We strongly recommend you check the number of emails that will go out before they are sent (so check the deficiency report a few days before the notification date) and have something in place to ensure the emails will be delivered reliably.
+
+### Deficiency Report
+
+To make monitoring progress against required credits easier for administrators, the [Uncanny Continuing Education Credits](https://www.uncannyowl.com/downloads/uncanny-continuing-education-credits/) plugin includes a Deficiency Report. In it, you can search by user, group or against all users to list who hasn’t yet completed their training requirements. Note that users who have completed their required credits (or have no required credits) *will not be listed*. Anyone in this report has a gap between earned and required credits.
+
+![Deficiency report](https://www.uncannyowl.com/wp-content/uploads/2019/03/deficiency-report.png)
+
+---
+
+## Continuing Education Certificates
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/continuing-education-certificates/](https://www.uncannyowl.com/knowledge-base/continuing-education-certificates/)
+
+### Overview
+
+Uncanny CEUs can issue a certificate automatically when a learner earns enough credits or completes a defined set of courses, then email it to the learner — and optionally to group leaders and administrators.
+
+CEU certificates are separate from LearnDash’s standard per-course certificates. They’re designed for milestones that span more than one course, such as:
+
+- **Credit-based certificates** — awarded when a learner’s total earned credits reach a threshold you set.
+- **Multi-course certificates** — awarded when a learner completes a specific combination of courses.
+
+Because these certificates are triggered by cumulative achievement rather than a single course completion, they’re delivered by email. A copy can also be stored on your server.
+
+Certificates are attached to emails as PDF files and can be optionally stored on the server (in /wp-content/uploads/ceu-certs/ for easy FTP access).
+
+### Enabling Certificates
+
+1. Go to **Uncanny CEUs > Settings** and open the certificate email settings.
+2. Enable the certificate type(s) you want to use — credit-based, multi-course, or both.
+3. Set the **email subject** and **message**, and choose who receives the email (learner, and optionally group leaders and administrators).
+4. Optionally enable server storage. Stored certificates are saved to /wp-content/uploads/ceu-certs/.
+
+The email subject and message support personalization variables, the same way reminder emails do.
+
+![Certificate Email Settings form showing checkboxes for enabling Multi Course and CEU Credits certificates, both selected at the top](https://www.uncannyowl.com/wp-content/uploads/2017/07/certificate-email-settings-500x329.png)
+
+**Note:** The certificate email subject, message, and recipient settings apply to all CEU certificate types. Make sure your wording works for every certificate you issue.
+
+### Configuring a Certificate Trigger
+
+CEU certificates are configured on the LearnDash **Certificate** itself.
+
+1. Edit (or create) the certificate under **LearnDash > Certificates**.
+2. In the Uncanny CEUs certificate settings on that screen, choose the trigger:
+- **Required courses** — Select the courses a learner must complete to earn this certificate.
+- **Credit threshold** — Enter the number of credits a learner must earn to be awarded this certificate.
+3. Optionally add a **description** explaining what the certificate represents. You can display this text elsewhere on your site using the 
+```
+[uo_ceu_certificate_description]
+```
+
+shortcode — see [Continuing Education Shortcodes](https://www.uncannyowl.com/knowledge-base/continuing-education-shortcodes/).
+4. Save the certificate.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/07/certificate-trigger-settings.png)
+
+**Important:** A credit-threshold certificate is awarded **once** per learner. If you later raise the threshold, learners who already received the certificate are not issued a new one.
+
+### How Learners Receive Certificates
+
+Because CEU certificates are triggered by cumulative achievement, they’re delivered by email rather than through LearnDash’s standard certificate display (such as the ld_profile shortcode). Email delivery is how learners get these certificates, so confirm your site can reliably send email before relying on this feature.
+
+Note that generating historical credit records (see [Generate Historical LearnDash Course Credits](https://www.uncannyowl.com/knowledge-base/generate-learndash-course-credits/)) backfills credit data but does **not** trigger new certificate emails.
+
+### Related Articles
+
+- [Continuing Education Shortcodes](https://www.uncannyowl.com/knowledge-base/continuing-education-shortcodes/) — Display certificate descriptions with 
+```
+[uo_ceu_certificate_description]
+```
+- [Required Credits](https://www.uncannyowl.com/knowledge-base/required-credits/) — Set the credit requirements that pair with credit-based certificates
+- [Set Up the Uncanny Continuing Education Credits Plugin](https://www.uncannyowl.com/knowledge-base/setup-continuing-education-credits-plugin/) — Configure credit labels and email settings
+
+---
+
+## Continuing Education Admin Reports
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/continuing-education-credits-admin-report/](https://www.uncannyowl.com/knowledge-base/continuing-education-credits-admin-report/)
+
+### Overview
+
+The admin Credit Report is your command center for continuing education data. From a single screen you can filter credit records by user, group, course, and date range, export them to CSV or Excel, manage individual records, and see who hasn’t met their requirements.
+
+Uncanny CEUs provides two ways to view credit data:
+
+- **This article — the admin Credit Report** at **Uncanny CEUs > Credit Report**, for administrators working inside the WordPress dashboard.
+- **The front-end report**, which you place on a page with a shortcode or block so learners and group leaders can view credits without admin access. See [Continuing Education Report](https://www.uncannyowl.com/knowledge-base/continuing-education-report/).
+
+The admin Credit Report shows learner name, email address, course name, completion date, credits earned for the course, and total credits earned — all filterable and exportable.
+
+### Accessing the Report
+
+Go to **Uncanny CEUs > Credit Report**. The report opens with two tabs:
+
+- **Credit Report** — all earned-credit records.
+- **Deficiency Report** — learners who haven’t met their required credits (see below).
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/07/Admin-Report-1030x405.png)
+
+### Filtering Records
+
+Use the filters at the top of the report to narrow the data, then click **Filter** to update the table. You can filter by:
+
+- **Date range** — limit results to a specific period.
+- **User** — search for and select a learner.
+- **Group** — select a LearnDash group.
+- **Course** — select a specific course.
+
+If you’ve enabled child-group support (see Settings below), selecting a parent group also returns records for its child groups.
+
+### Managing Credits from the Report
+
+You can adjust credit records directly from the report. These actions are covered in full in [Add, Edit, and Remove Credits](https://www.uncannyowl.com/knowledge-base/add-and-remove-credits/):
+
+- **Add** — Click **Add credits** to award credits, including for educational activities that happened outside LearnDash.
+- **Edit** — Select a record and use **Edit credits** to correct its amount or date.
+- **Delete** — Select one or more records with the checkboxes and click **Delete credits**.
+
+### Exporting Data
+
+The **Export** buttons generate CSV and Excel files, letting you analyze credit data externally in a spreadsheet. The export reflects your current filters and columns, so filter the report first to export exactly the data set you need.
+
+### Deficiency Report
+
+The **Deficiency Report** tab lists learners who have **not** met their required credits, based on the rollover date and the credit requirements set at the group or individual level. Learners who have met their requirement don’t appear, so everyone on the list still has credits to earn.
+
+The Deficiency Report supports the same filtering and export options as the Credit Report, making it easy to hand a compliance officer a list of who’s behind. Requirements and rollover dates are configured in [Required Credits](https://www.uncannyowl.com/knowledge-base/required-credits/).
+
+### Credit Report Settings
+
+Configure the report’s defaults under **Uncanny CEUs > Settings**.
+
+#### Show User Avatars
+
+Optionally displays user avatars in the report. It’s **off by default**, because loading avatars for large reports can affect performance.
+
+#### Report Mode
+
+Controls how the report retrieves credit data. Choose the mode that best fits your site’s size:
+
+| Mode | Best for | How it works |
+| --- | --- | --- |
+| Legacy | Sites with custom code built before v4.1 | The original data-retrieval method, kept for compatibility. |
+| Performance (default) | Most sites | Captures credit data as users are updated, reducing the number of queries the report has to run. |
+| Ludicrous | Very large sites | Builds a cached copy of credit data hourly via cron and loads it on demand for the fastest reports. |
+
+![](https://www.uncannyowl.com/wp-content/uploads/2017/07/Credit-Report-Settings-1030x381.png)
+
+#### Default Date Range & Rows Per Page
+
+Set the date range the report loads with, and how many rows appear per page, so the report opens the way your team prefers.
+
+#### Include Results for Child Groups
+
+When a parent group is selected, this option includes records from its child groups in the report. *(Added in v5.0.)* It appears only when LearnDash group hierarchies are in use.
+
+### User Profiles
+
+Credit totals also appear on each user’s profile page in the WordPress admin, showing both the learner’s total credits and the credits they’ve earned since the rollover date — a quick way to check one person without opening the full report.
+
+### Related Articles
+
+- [Continuing Education Report](https://www.uncannyowl.com/knowledge-base/continuing-education-report/) — The front-end report for learners and group leaders
+- [Add, Edit, and Remove Credits](https://www.uncannyowl.com/knowledge-base/add-and-remove-credits/) — Manage individual credit records
+- [Required Credits](https://www.uncannyowl.com/knowledge-base/required-credits/) — Set the requirements behind the Deficiency Report
+- [Set Up the Uncanny Continuing Education Credits Plugin](https://www.uncannyowl.com/knowledge-base/setup-continuing-education-credits-plugin/) — Configure report defaults and the rollover date
+- [Continuing Education Shortcodes](https://www.uncannyowl.com/knowledge-base/continuing-education-shortcodes/) — Display credit data anywhere on your site
+
+---
+
+## Continuing Education Report
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/continuing-education-report/](https://www.uncannyowl.com/knowledge-base/continuing-education-report/)
+
+### Overview
+
+The Continuing Education Report puts credit data on the front end of your site. Learners can look up their own earned credits, and administrators and group leaders can run a full report — with filtering, export, and inline credit management — without going into the WordPress admin.
+
+The report is added with a shortcode or block and comes in two forms:
+
+- **Standard report** — A search box anyone can use to look up course completions and earned credits.
+- **Enhanced report** — A full data table for administrators and group leaders, with custom columns, date filtering, CSV and Excel export, and the ability to add, edit, and delete credits.
+
+### Adding the Report
+
+Add the report with the shortcode:
+
+```
+[uo_ceu_report]
+```
+
+Or insert the **Continuing Education Report** block from the **Uncanny Continuing Education Credits** block category. The block exposes the same options as the shortcode in its settings panel.
+
+### The Standard Report
+
+By default, 
+```
+[uo_ceu_report]
+```
+
+ displays a search-based report. A visitor enters a search term and the report returns matching learners and their credits.
+
+- Searches require a **minimum of 3 characters**.
+- The search matches against email address, first name, last name, and display name.
+- Results are paginated for readability.
+
+This standard view is suitable for a public or learner-facing page where people look up their own records.
+
+### The Enhanced Report
+
+Add enhanced=”on” or enable the **Enhanced** block option, to unlock the full report:
+
+```
+[uo_ceu_report enhanced="on"]
+```
+
+The enhanced report is available only to logged-in administrators and group leaders. It displays all accessible credit data in a sortable, filterable table with:
+
+- **Filtering** by user, group, course, and date range
+- **Export** to CSV and Excel
+- **Custom columns** (see below)
+- **Inline credit management** — add, edit, and delete records (see below)
+
+#### Enabling Credit Editing
+
+The enhanced report can let group leaders and admins manage credits directly. Each action is turned on with its own attribute:
+
+```
+[uo_ceu_report enhanced="on" add="on" edit="on" delete="on"]
+```
+
+| Attribute | What it enables |
+| --- | --- |
+| add | An Add Credits button for awarding new credits |
+| edit | Inline editing of existing credit records (added in v5.0) |
+| delete | Selecting and deleting credit records |
+
+For a full walkthrough of these actions, see [Add, Edit, and Remove Credits](https://www.uncannyowl.com/knowledge-base/add-and-remove-credits/).
+
+#### Customizing Columns
+
+Use the columns attribute to choose which columns appear and what they’re labeled. Each column is written as key||Label, separated by commas:
+
+```
+[uo_ceu_report enhanced="on" columns="user||User,course||Course,date||Date,ceus_earned||Credits,total||Total"]
+```
+
+Common column keys include user, course, date, ceus_earned, and total.
+
+#### Report Performance Mode
+
+Large sites can choose how the report retrieves data using the mode attribute (meta is recommended for most sites; json is fastest). The default for all reports is set under **Uncanny CEUs > Settings**. See [Continuing Education Admin Reports](https://www.uncannyowl.com/knowledge-base/continuing-education-credits-admin-report/) for the full explanation of report modes.
+
+### For Developers: Custom Columns and Data
+
+Developers can extend the report with custom columns and data using filters:
+
+- ```
+uo_ceu_credit_report_column_config
+```
+
+ — Define the report’s columns and their data structure (added in v5.0 for finer control over columns and the data behind them).
+- ```
+uo_ceu_credit_report_table_data
+```
+
+ — Modify the credit data before it’s displayed, including injecting values for custom columns.
+
+Combine the two to add a column and populate it with your own data. These filters are intended for developers comfortable working with PHP.
+
+### Related Articles
+
+- [Continuing Education Admin Reports](https://www.uncannyowl.com/knowledge-base/continuing-education-credits-admin-report/) — The in-admin Credit Report, report modes, and child-group settings
+- [Add, Edit, and Remove Credits](https://www.uncannyowl.com/knowledge-base/add-and-remove-credits/) — Manage credit records from the report
+- [Continuing Education Shortcodes](https://www.uncannyowl.com/knowledge-base/continuing-education-shortcodes/) — All CEU shortcodes and blocks
+
+---
+
+## Adding Credits to Courses
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/adding-course-credits/](https://www.uncannyowl.com/knowledge-base/adding-course-credits/)
+
+### Overview
+
+![Add credits to courses](https://www.uncannyowl.com/wp-content/uploads/2017/07/course_edit_credits.png)To add credit values to courses, simply edit one of your LearnDash courses with the [Uncanny Continuing Education Credits](https://www.uncannyowl.com/downloads/uncanny-continuing-education-credits/) plugin active. The plugin will add a new metabox to the upper right of the edit page where you can define a credit value. (The specific title for this widget will change depending on how you have labelled your credits in the plugin settings.) Enter a value between 0.01 and 99.99 (up to 2 decimal places are allowed) and that’s how many credits will be awarded for completing the course.
+
+That’s all there is to it!
+
+Credits can be awarded for course completions only. Lessons, topics, and other post types aren’t applicable for earning credits.
+
+### Note
+
+*Please note* that credits are only awarded for courses completed after the plugin is activated and credits assigned for the course. The plugin only looks at the course currently completed when it assigns credit values.
+
+---
+
+## Set Up the Uncanny Continuing Education Credits Plugin
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/setup-continuing-education-credits-plugin/](https://www.uncannyowl.com/knowledge-base/setup-continuing-education-credits-plugin/)
+
+### Installation
+
+As with all of our plugins, installing is really easy (but please make sure your site is running PHP 5.6 or higher first). After you [purchase and download the plugin](https://www.uncannyowl.com/downloads/uncanny-continuing-education-credits/), you can simply sign into your WordPress site as an admin and navigate to **Plugins > Add New**. To install the plugin, click**Upload Plugin** to start the process. After installation, you will be directed to the License Activation page to enter your license key and activate the plugin.
+
+### Setup
+
+Once enabled, the plugin adds an **Uncanny CEUs** menu for administrators in /wp-admin/. There are 4 settings pages in this plugin:![](https://www.uncannyowl.com/wp-content/uploads/2019/01/uncanny-ceu-menu.png)
+
+1. **Settings**allows you to change the label for credits you award. Use CEUs, Credits, PDUs, or whatever else is appropriate for your organization. We recommend keeping this value short. You can also set the rollover date here.
+2. **License Activation**is where the license key can be added for automatic plugin updates.
+3. **Course Report** is the back end report for administrators that provides a complete breakdown of credits earned, with filters for date range and LearnDash Group plus a CSV export function.
+4. **Email Settings** is used to turn on new triggers for awarding certifications by credits earned and completing course combinations. Email content for sending certificate PDF files is also set here.
+
+### Rollover Dates
+
+An important concept in the Settings is the Rollover Date, mentioned above.  This can be used by sites offering training that must be completed on an annual basis, especially for compliance programs and internal training. When a rollover date is set, it’s used on user profile pages and in shortcodes to capture how many credits have been completed for the current period. When the calendar date is reached, the credit values for rollover calculations are reset.
+
+In future we may use this date to track credit requirements against credits earned and issue email notifications when users have earned insufficient credits for the year.
+
+### Credit Permanence
+
+Once credits are earned a permanent record is maintained outside of LearnDash records. That means that if you change courses, change credit values or perform any other changes at the course level the continuing education credits are not affected. This helps to ensure learners are never surprised by credit changes. When credits are earned we store *course name, credits*and *date.*
+
+Please note that once credits are earned they cannot be modified (without editing the records in the database directly). We created the plugin this way to make sure learners don’t have discrepancies between their expectations and changes by administrators in the system.
+
+If for some reason the permanent records for a user need to be reset, you can do so with the following SQL commands.  Please ensure you take a site backup before attempting to execute any of these commands.
+
+**Reset credits for a single user: Change 1 to whatever the user’s id is**
+
+DELETE FROM `wp_usermeta`
+
+WHERE user_id = 1
+
+AND (meta_key LIKE ‘ceu_earned_%’
+
+OR meta_key LIKE ‘ceu_date_%’
+
+OR meta_key LIKE ‘ceu_title_%’
+
+OR meta_key LIKE ‘ceu_course_%’)
+
+**Reset credits for all users:**
+
+DELETE FROM `wp_usermeta`
+
+WHERE meta_key LIKE ‘ceu_earned_%’
+
+OR meta_key LIKE ‘ceu_date_%’
+
+OR meta_key LIKE ‘ceu_title_%’
+
+OR meta_key LIKE ‘ceu_course_%’
+
+---
+
+## Form Shortcodes
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/form-shortcodes/](https://www.uncannyowl.com/knowledge-base/form-shortcodes/)
+
+Form shortcodes can be used on any post or page on your WordPress site.
+
+**Example:**
+
+```
+[gravityform id="1" title="false" description="false" ajax="true" tabindex="49"]
+```
+
+**id**(required): The ID of the form to be embedded
+
+**title:**Whether or not to display the form title (default: “true”)
+
+**description:**Whether or not to display the form description (default: “true”)
+
+**ajax:**Whether or not to use AJAX to submit the form
+
+**tabindex:**The starting tab index for the fields of this form
+
+### Conditional Shortcodes
+
+Use conditional shortcodes [gravityforms][/gravityforms] to add conditions in the message of your Admin and User Notification emails as well as the Confirmation Message that is displayed when a form is submitted.
+
+**Example 1:**
+
+```
+[gravityforms action="conditional" merge_tag="{Number:1}" condition="greater_than" value="3"]
+Content you would like to conditionally display.
+[/gravityforms]
+```
+
+**action**(required): Must be set to “conditional” as in the example above.
+
+**merge_tag** (required):****The form merge tag whose value you are executing the conditional logic for. You can get the correct merge tag for the form data you would like to use using the insert merge tag drop down.
+
+**condition** (required):****The type of condition used to determine success. Available conditions are: is, isnot, greater_than, less_than, contains, starts_with, ends_with.
+
+**value** (required):****The value that the condition must equal in order for the condition to be met and the content displayed.
+
+**Example 2:**
+
+```
+[gravityforms action="conditional" merge_tag="{Number:1}" condition="greater_than" value="10"]
+This content would be displayed if the value of field id 1 is greater than 10.
+[/gravityforms]
+```
+
+**Example 3:**
+
+```
+[gravityforms action="conditional" merge_tag="{Country:5}" condition="is" value="United States"]
+This content would be displayed if the value of field id 5 is United States.
+[/gravityforms]
+```
+
+**Example 4:**
+
+```
+[gravityforms action="conditional" merge_tag="{Country:5}" condition="isnot" value=""]
+This content would be displayed if no value exists for field id 5.
+[/gravityforms]
+```
+
+---
+
+## BadgeOS Shortcodes
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/badgeos-shortcodes/](https://www.uncannyowl.com/knowledge-base/badgeos-shortcodes/)
+
+### Achievements List
+
+```
+[badgeos_achievements_list]
+```
+
+Use this shortcode to generate a list of achievements of any type on any page.
+
+**Available parameters:**
+
+- “type” — Which Achievement Types to list. Default: all. (Use the Achievement Type’s slug as the type.)
+- “limit” — the number of achievements to display per page. Default: 10.
+- “show_filter” — Display the filter menu options above the list. (Accepts: true, false) Default: true
+- “show_search” — Display the search form above the list. (Accepts: true, false) Default: true
+
+**Example:**
+
+[badgeos_achievements_list type=badges limit=15]
+
+### Single Achievement
+
+```
+[badgeos_achievement]
+```
+
+Use this shortcode to embed a single achievement on any post or page. This is a great tool if you want to display a specific achievement (including its title, badge image, and excerpt, along with a link to the full achievement) on any page.
+
+**Required parameter:**
+
+“id” — The ID of the achievement to display.
+
+**Example:**
+
+[badgeos_achievement id=12]
+
+### Submission Box
+
+```
+[badgeos_submission]
+```
+
+Use this shortcode to add a submission box on any page that is tied to a specific achievement. When the submission is accepted, the achievement is earned. This is a great way to create a call to action on any post or page on your site that invites submissions. (The achievement specified must be set to require a Submission by the user.)
+
+**Required parameter:**
+
+“id” — The ID of the achievement to be awarded when the submission is accepted.
+
+**Example:**
+
+[badgeos_submission achievement_id=35]
+
+### Nomination Box
+
+```
+[badgeos_nomination]
+```
+
+Use this shortcode to add a nomination box on any page that is tied to a specific achievement. When the nomination is accepted, the achievement is earned. This is a great way to create a call to action on any post or page on your site that invites nominations of fellow members of your site. (The achievement specified must be set to be awarded by Nomination.)
+
+**Required parameter:**
+
+“id” — The ID of the achievement to be awarded when the nomination is accepted.
+
+**Example:**
+
+[badgeos_nomination achievement_id=35]
+
+### Submissions List
+
+```
+[badgeos_submissions]
+```
+
+Use this shortcode to place a list of pending, accepted and/or denied achievement Submissions on any page. The shortcode is role dependent. If a user has BadgeOS review privileges to review incoming BadgeOS Submissions, the listing will include all user Submissions and the ability to accept or deny. It the current user does not have the ability to review Submissions, they will instead see just their own Submissions. In this way, this shortcode lets you essentially set up an inbox/outbox on the front-end of your site so users and reviewers alike can track progress for achievements requiring interaction between site admin and site members.
+
+**Available parameters:**
+
+- “limit” — Number of submissions to display per page. Default: 10
+- “status” — Which Approval Status type to show on initial page load. (Accepts: all, pending, auto-approved, approved, denied) Default: all
+- “show_filter” — Display the filter select input. (Accepts: true, false) Default: true
+- “show_search” — Display the search form. (Accepts: true, false) Default: true
+- “show_attachments” — Display attachments connected to the submission. (Accepts: true, false) Default: true
+- “show_comments” — Display comments associated with the submission. Default: true
+
+**Example:**
+
+[badgeos_submissions status=pending limit=15]
+
+### Nominations List
+
+```
+[badgeos_nominations]
+```
+
+Use this shortcode to place a list of pending, accepted and/or denied achievement Nominations on any page. The shortcode is role dependent. If a user has BadgeOS review privileges to review incoming BadgeOS Nominations, the listing will include all user Nominations and the ability to accept or deny. It the current user does not have the ability to review Nominations, they will instead see just their own Nominations.
+
+**Available parameters:**
+
+- “limit” — Number of nominations to display per page. Default: 10
+- “status” — Which Approval Status type to show on initial page load. (Accepts: all, pending, approved, denied) Default: all
+- “show_filter” — Display the filter select input. (Accepts: true, false) Default: true
+- “show_search” — Display the search form. (Accepts: true, false) Default: true
+
+**Example:**
+
+[badgeos_nominations show_search=false limit=20]
+
+---
+
+## WooCommerce Shortcodes
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/woocommerce-shortcodes/](https://www.uncannyowl.com/knowledge-base/woocommerce-shortcodes/)
+
+| Shortcode | Description |
+| --- | --- |
+| [woocommerce_cart] | Shows content of the shopping cart page |
+| [woocommerce_checkout] | Shows content of the checkout page |
+| [woocommerce_order_tracking] | Shows the order tracking form |
+| [woocommerce_my_account order_count="12"] | Shows the ‘my account’ section where the customer can view past orders and update their information. You can specify the number of orders to show (use -1 to display all orders). |
+| [recent_products per_page="12" columns="4"] | Lists recent products. You can specify how many products to show on each page and how many columns wide the products should be before wrapping. |
+| [featured_products per_page="12" columns="4"] | Works the same as recent products but displays products that have been set as “featured” |
+| [product id="99"]
+[product sku="c01"] | Shows a single product by ID or SKU |
+| [products ids="1, 2, 3, 4, 5"]
+[products skus="c01, c02, c03" orderby="date" order="desc"] | Shows multiple products by ID or SKU. Make note of the plural ‘products.’ |
+| [add_to_cart id="99"] | Shows the price and Add to Cart button of the specified product |
+| [add_to_cart_url id="99"] | Displays the URL of the “Add to Cart” button of the specified product in text form |
+| [product_category category="appliances"] | Shows multiple products in the specified category |
+| [product_categories number="12" parent="0"] | Displays product categories loop |
+| [product_page id="99"]
+[product_page sku="c01"] | Shows content of a single product page by ID or SKU |
+| [best_selling_products per_page="12"] | Lists best-selling products |
+| [related_products per_page="12"] | Lists related products |
+| [top_rated_products per_page="12"] | Lists top-rated products |
+| [product_attribute attribute="color" filter="black"] | Lists products with the specified attribute |
+
+### Sorting Products
+
+In the following shortcodes, you can use the “orderby” attribute to order products by **menu_order**, **title**, **date**, **rand**, **id**:
+
+- [recent_products]
+- [featured_products]
+- [products]
+- [product_category]
+- [sale_products]
+- [top_rated_products]
+- [product_attribute]
+- [related_products]
+
+For example:
+
+```
+[products skus="c01, c02, c03" orderby="date" order="desc"]
+```
+
+---
+
+## Learndash Shortcodes
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-shortcodes/](https://www.uncannyowl.com/knowledge-base/learndash-shortcodes/)
+
+### Introduction
+
+This list of shortcodes was created for users of our [Uncanny LP](https://uncannylp.com/) LearnDash system to provide easy access to available LearnDash shortcodes. While other LearnDash users can use the shortcodes listed in the *Course* and *Certificate* sections, please note that all shortcodes in the *Group Shortcodes* section require our [Uncanny LearnDash Groups plugin](https://www.uncannyowl.com/downloads/uncanny-learndash-groups/) on sites that are not using our LP product.
+
+### Course Shortcodes
+
+| Shortcode & Attribute | Description |
+| --- | --- |
+| [visitor sample='sample'] content [/visitor] | Shows content within the shortcodes to only users that have not yet enrolled into the current course |
+| [student  sample='sample'] content [/student] | Shows content within the shortcodes to only users that are enrolled in the current course |
+| [course_content sample='sample'] | Displays the list of lessons, topics, and quizzes of the current course |
+| [course_content sample='sample' course_id="123"] | Displays the list of lessons, topics, and quizzes of the specified course |
+| [ld_profile  sample='sample'] | Displays the user’s enrolled courses, course progress, quiz scores, and achieved certificates |
+| [ld_course_list sample='sample'] | Shows the list of courses. You can use this shortcode on any page if you dont want to use the default /courses page. |
+| [ld_course_list  sample='sample' num=”10″] | Limits the number of courses displayed |
+| [ld_course_list  sample='sample' order=”ASC”] | Lists courses in ascending or descending order |
+| [ld_course_list  sample='sample' orderby=”title”] | Sets order of courses
+See the full list of available orderby options |
+| [ld_course_list  sample='sample' tag=”math”] | Shows courses with the specified tag |
+| [ld_course_list  sample='sample' tag_id=”30″] | Shows courses with the specified tag ID |
+| [ld_course_list  sample='sample' cat=”10″] | Shows courses with the specified category ID |
+| [ld_course_list  sample='sample' category_name=”math”] | Shows courses with the specified category slug |
+| [ld_course_list  sample='sample' mycourses=”true”] | Shows courses that the current user has access to |
+| [ld_lesson_list  sample='sample'] | Shows list of lessons. You can use this shortcode on any page. |
+| [ld_lesson_list  sample='sample' num=”10″] | Limits the number of lessons displayed |
+| [ld_lesson_list  sample='sample' order=”ASC”] | Lists lessons in ascending or descending order |
+| [ld_lesson_list  sample='sample' orderby=”title”] | Sets order of lessons
+See the full list of available orderby options |
+| [ld_lesson_list  sample='sample' tag=”math”] | Shows lessons with the specified tag |
+| [ld_lesson_list  sample='sample' tag_id=”30″] | Shows lessons with the specified tag ID |
+| [ld_lesson_list  sample='sample' cat=”10″] | Shows lessons with the specified category ID |
+| [ld_lesson_list  sample='sample' category_name=”math”] | Shows lessons with the specified category slug |
+| [ld_quiz_list  sample='sample'] | Shows list of quizzes. You can use this shortcode on any page. |
+| [ld_quiz_list  sample='sample' num=”10″] | Limits the number of quizzes displayed |
+| [ld_quiz_list  sample='sample' order=”ASC”] | Lists quizzes in ascending or descending order |
+| [ld_quiz_list  sample='sample' orderby=”title”] | Sets order of quizzes
+See the full list of available orderby options |
+| [ld_quiz_list  sample='sample' tag=”math”] | Shows quizzes with the specified tag |
+| [ld_quiz_list  sample='sample' tag_id=”30″] | Shows quizzes with the specified tag ID |
+| [ld_quiz_list  sample='sample' cat=”10″] | Shows quizzes with the specified category ID |
+| [ld_quiz_list  sample='sample' category_name=”math”] | Shows quizzes with the specified category slug |
+| [learndash_course_progress  sample='sample'] | Displays the current user's progress for the current course. You can use this shortcode on any course/lesson/quiz page. |
+| [ld_course_expire_status  sample='sample'] | Displays the current user's course access expiry date |
+| [ld_course_expire_status  sample='sample' course_id=”111″] | Displays the specified course's access expiry date |
+| [ld_course_expire_status  sample='sample' user_id=”222″] | Displays the specified user's course access expiry date |
+| [ld_course_expire_status  sample='sample' label_before=”Your access to this course will expire on:”] | Displays the label before the access expires. Default label is “Course access will expire on:” |
+| [ld_course_expire_status  sample='sample' label_after=”Your access to this course expired on:”] | Displays the label after access has expired. Default label is “Course access expired on:” |
+| [ld_course_expire_status  sample='sample' format=”F j, Y g:i a”] | Sets the format of date/time of the expiry date. If not provided, the date/time format from your WordPress system will be used. |
+| [course_complete  sample='sample'] content [/course_complete] | Shows content within the shortcodes if the user has completed the current course |
+
+### Group Shortcodes
+
+| Shortcode / Block Name | Description |
+| --- | --- |
+| [uo_groups_redemption_form]
+Enrollment Key Redemption | Adds a single field redemption form for enrollment keys, to be used on pages or in widgets, with existing users. |
+| [uo_groups]
+Group Management | The Group Management page provides all the functionality for Group Leaders to manage their own groups. |
+| [uo_groups_course_report]
+Course Report | The Group Leader Report (which can also be accessed from the Group Management page) allows Group Leaders to view progress reports of their group members. |
+| [uo_groups_registration_form]
+Enrollment Key Registration | The Groups Registration page is a custom registration page you can use when inviting users to join a group and redeem an enrollment code. |
+| [uo_groups_quiz_report]
+Quiz Report | The Group Leader Quiz Report allows Group Leaders to view quiz reports of their group members. |
+| [uo_groups_buy_courses]
+Buy Courses | The Buy Courses page allows Group Leaders and new customers to purchase courses and create new groups directly. This page is only auto-generated if you activate the plugin after WooCommerce is installed and active. |
+| [uo_groups_restrict_content user_groups="123,456"][/uo_groups_restrict_content] | Allows for the creation of targeted messaging for logged in group members on pages and posts, based on group id.  Does not block content for Admins. |
+| [uo_groupleader_restrict_content user_groups="123,456"][/uo_groupleader_restrict_content] | Allows for the creation of targeted messaging for logged in group leaders on pages and posts, based on group id. If the user_groups attribute is not present, content is visible to all group leaders. Does not block content for Admins. |
+| [uo_groups_link text="Link Text"]
+Group Management Link | Adds a link to the front end display for logged in Group Leaders and links them to the Group Management page. By default the link text will be "Group Management". You can set the link text using the text attribute. |
+| [uo_groups_button text="Button Text"]
+Group Management Button | Adds a button to the front end display for logged in Group Leaders and links them to the Group Management page. By default the button text will be "Group Management". You can set the button text using the text attribute. |
+| [uo_groups_essays]
+Essay Management | Allows Group Leaders to manage submitted essay questions on the front end. |
+| [uo_groups_assignments]
+Assignment Management | Allows Group Leaders to manage submitted assignments on the front end. |
+| [uo_groups_manage_progress] | Allow Group Leaders and admins to edit course progress on the front end. |
+| [uo_group_seats_total id="123"] | Output the total number of seats assigned to the group. Use ID to identify the associated group. |
+| [uo_group_seats_remaining id="123"] | Output the number of seats still available for a group. Use ID to identify the associated group. |
+
+### Certificate Shortcodes
+
+| Shortcode & Attribute | Description |
+| --- | --- |
+| [usermeta  sample='sample' field=””] | Displays the value of the specified user meta field.
+Example: [[usermeta field=”display_name”]] |
+| [quizinfo  sample='sample' show=""] | Displays information regarding quiz attempts. This shortcode can be used with the following attributes:
+score
+count
+pass
+rank
+timestamp
+points (only valid for the Advanced Quiz)
+total_points (only valid for the Advanced Quiz)
+percentage
+quiz_title
+course_title
+timespent (only valid for the Advanced Quiz)
+Example: [[quizinfo show=”percentage”]] shows the percentage score of the user in the quiz |
+| [quizinfo  sample='sample' show=”timestamp” format=””] | Default: “F j, Y, g:i a” shows as March 10, 2001, 5:16 pm.
+[[quizinfo show=”timestamp” format=”Y-m-d H:i:s”]] will show as 2001-03-10 17:16:18
+See the full list of available date formats |
+| [courseinfo  sample='sample' show=""] | Displays course related information. This shortcode can be used with the following attributes:
+course_title
+completed_on
+cumulative_score
+cumulative_points
+cumulative_total_points
+cumulative_percentage
+cumulative_timespent
+aggregate_percentage
+aggregate_score
+aggregate_points
+aggregate_total_points
+aggregate_timespentv
+Note: 
+- "cumulative" is average for all quizzes of the course.
+- "aggregate" is sum for all quizzes of the course.
+Example: [[courseinfo show=”cumulative_score”]] shows average points scored across all quizzes on the course. |
+| [courseinfo  sample='sample' show=”completed_on” format=””] | Default: “F j, Y, g:i a” shows as March 10, 2001, 5:16 pm.
+[[courseinfo show=”completed_on” format=”Y-m-d H:i:s”]] will show as 2001-03-10 17:16:18
+See the full list of available date formats |
+
+---
+
+## Email Quiz Certificates
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/send-quiz-certificates-by-email/](https://www.uncannyowl.com/knowledge-base/send-quiz-certificates-by-email/)
+
+### Overview
+
+Email a learner’s quiz certificate automatically the moment they pass, with the PDF attached to their completion email. Learners get instant proof of their result without logging back in, and you can copy administrators or group leaders too.
+
+LearnDash generates a certificate when a learner passes a quiz, but they normally have to view or download it manually. The Email Quiz Certificates module delivers it automatically: on successful quiz completion, the module emails the learner the certificate as a PDF attachment. Copies can also go to the site administrator, group leaders, or additional addresses.
+
+This module handles certificates attached to **quizzes** specifically.
+
+**Note:** For course-level certificates, use the [Email Course Certificates](https://www.uncannyowl.com/knowledge-base/send-course-certificates-email/) module instead.
 
 ### Configure It
 
-You can customize the button in the Toolkit module settings:
+Settings are decisions about delivery, storage, and email content.
 
-- **Button text** — Set the label that appears on the button.
-- **Append course name** — Optionally add the course name to the button text. We recommend enabling this when you display multiple reset buttons on a single page, so learners can tell them apart.
+**Delivery and recipients**
 
-![](https://www.uncannyowl.com/wp-content/uploads/2018/10/reset-course-progress-settings.png)
+- **Send Certificate to Site Admin / Group Leader(s):** Check these to copy administrators and/or group leaders on the certificate email — useful when results need to live beyond the learner’s inbox.
+- **CC Certificate To:** Add one or more email addresses to receive a copy via CC, such as a shared records mailbox.
+- **From Name / From Email:** Set how the sender appears. If you leave these blank, the module falls back to your LearnDash quiz email settings.
 
-### Usage
+**Storage**
 
-Add the button with the shortcode or the **Reset Button** block.
-
+- **Do not store certificates on server:** By default, generated certificates are saved on the server (under 
 ```
-[uo_reset_course_progress course_id="x"]
-```
-
-Replace x with the course ID. You can find the ID in the admin URL when editing the course — it’s the 
-```
-post=x
+/uploads/user-certificates/
 ```
 
- value.
+). Check this if you’d rather not retain copies.
 
-Decisions to make when placing the button:
+**Rendering**
 
-- **On the course page** — The 
-```
-course_id
-```
+- **Use Cron to send certificate:** Leave this off in most cases. Enable it only if shortcode data isn’t rendering correctly in the emailed certificate; sending via cron can resolve those issues.
 
- attribute is optional; the button targets the current course automatically.
-- **On any other page** — Set 
-```
-course_id
-```
+**Email content**
 
- so the button knows which course to reset.
-- **Show only after completion** — Wrap the shortcode in LearnDash’s 
-```
-course_complete
-```
+- **Admin / Group Leader Email Subject & Body:** Customize the message sent to administrative recipients. Available tokens are listed directly below the body field.
 
- shortcode so the button appears only to learners who have finished the course.
+![](https://www.uncannyowl.com/wp-content/uploads/2016/12/Email-Quiz-Certificate-337x500.png)
 
-### Resetting Tin Canny data
+### Developer Filters
 
-If you also use Tin Canny LearnDash Reporting, you can clear its tracking data at the same time:
-
-```
-[uo_reset_course_progress reset_tincanny="yes"]
-```
-
-Setting 
-```
-reset_tincanny="yes"
-```
-
- deletes the user’s Tin Canny tracking data for that course.
-
-**Note:** In the current version, both the reporting (results) and resume (bookmark) tracking records for the course are cleared. Earlier versions did not delete resume/bookmark data due to technical constraints.
-
-### Shortcode Reference
-
-| Attribute | Values | Description |
+| Filter | Parameters / Default | Purpose |
 | --- | --- | --- |
-| course_id | Course ID (e.g. 100) | The course to reset. Optional when the button is placed on the course page itself. |
-| reset_tincanny | yes / no (default no) | Also deletes the user’s Tin Canny tracking records for the course. |
-| redirect | URL | Optional. Sends the learner to this URL after the reset is processed. |
-
-### Developer Function
-
-For custom implementations, reset a user’s progress directly:
-
-```
-$user_id   = 10;
-$course_id = 100;
-\uncanny_pro_toolkit\LearnDashReset::reset_course_progress( $user_id, $course_id );
-```
-
-The method signature is 
-```
-reset_course_progress( $user_id, $course_id, $reset_tincanny_data = 'no', $redirect_url = null )
-```
-
-. Pass 
-```
-'yes'
-```
-
- as the third argument to also clear Tin Canny tracking data.
+| uo_quiz_certificate_save_path | Default: /uploads/user-certificates/ | Change where generated certificates are stored. |
+| uo_quiz_completion_certificate_filename | file_name, user_id, quiz_id, certificate_post, current_time_stamp | Customize the certificate filename. |
+| uo_generate_quiz_certificate | true / false (default: true) | Control whether a certificate is generated. |
+| uo_quiz_certificate_http_url | — | Update the HTTP URL when the save path changes. |
 
 ### Related Articles
 
-- [Duplicate Pages & Posts](https://www.uncannyowl.com/knowledge-base/duplicate-pages-posts/)
+- [Email Course Certificates](https://www.uncannyowl.com/knowledge-base/send-course-certificates-email/)
+- [Email Group Certificates](https://www.uncannyowl.com/knowledge-base/send-group-certificates-email/)
+- [Download Certificates in Bulk](https://www.uncannyowl.com/knowledge-base/download-certificates-in-bulk/)
+- [Certificate Preview](https://www.uncannyowl.com/knowledge-base/certificate-preview/)
+
+---
+
+## Email Group Certificates
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/send-group-certificates-email/](https://www.uncannyowl.com/knowledge-base/send-group-certificates-email/)
+
+### Overview
+
+Send a group certificate straight to a learner’s inbox the moment they complete every course in a LearnDash group. The PDF is attached to the completion email, and you can copy administrators, group leaders, or other addresses on the same message.
+
+LearnDash can generate a certificate when a learner finishes all courses in a group, but they normally have to view or download it manually. The Email Group Certificates module delivers it automatically: when a learner completes every course in a group that has a certificate assigned, the module emails them the certificate as a PDF attachment. Copies can also go to the site administrator, group leaders, or additional recipients.
+
+Use it when you want group completions confirmed in learners’ inboxes automatically, when administrators need a copy on file, or when group leaders should be notified as their members finish.
+
+**Important:** This is a global module — it cannot be turned on or off per group. Once enabled, it emails the certificate PDF for **any** group that has a certificate assigned.
+
+### Configure It
+
+Settings are decisions about delivery, storage, and email content.
+
+**Delivery and recipients**
+
+- **Send Certificate to Site Admin / Group Leader(s):** Check these to copy administrators and/or group leaders on the certificate email. Group leaders are an obvious choice here, since they’re tracking their group’s progress.
+- **CC Certificate To:** Add one or more email addresses to receive a copy via CC — useful for a shared records mailbox.
+- **From Name / From Email:** Set how the sender appears so the email matches your brand or a monitored address.
+
+**Storage**
+
+- **Do not store certificates on server:** By default, generated certificates are saved on the server. Check this if you’d rather not keep copies — for example, to limit disk use. Leave it unchecked if you want certificates retained on the server.
+
+**Rendering**
+
+- **Use Cron to send certificate:** Leave this off in most cases. Enable it only if shortcodes aren’t rendering correctly in the emailed certificate; sending via cron can resolve those output issues.
+
+**Email content**
+
+- **Email Subject & Email Body:** Customize the message learners receive. Available tokens are listed directly below the body field — use them to personalize with learner and group details.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/12/Email-Group-Certificate-335x500.png)
+
+### Related Articles
+
+- [Email Course Certificates](https://www.uncannyowl.com/knowledge-base/send-course-certificates-email/)
+- [Email Quiz Certificates](https://www.uncannyowl.com/knowledge-base/send-quiz-certificates-by-email/)
+- [Download Certificates in Bulk](https://www.uncannyowl.com/knowledge-base/download-certificates-in-bulk/)
+- [Certificate Preview](https://www.uncannyowl.com/knowledge-base/certificate-preview/)
+
+---
+
+## Email Course Certificates
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/send-course-certificates-email/](https://www.uncannyowl.com/knowledge-base/send-course-certificates-email/)
+
+### Overview
+
+Deliver a learner’s certificate the moment they finish a course, with the PDF attached right to the completion email. No more asking learners to log back in and download it themselves — and you can copy admins or group leaders on the same message.
+
+LearnDash generates a course certificate, but learners normally have to view or download it manually. The Email Course Certificates module closes that gap: whenever a learner completes a course that has a certificate assigned, the module emails them the certificate as a PDF attachment. You can also route copies to the site administrator, group leaders, or additional addresses.
+
+This is a good fit when you want certificates in learners’ inboxes automatically, need a copy on file for administrators, or want group leaders notified as their members complete courses.
+
+**Important:** This is a global module — it cannot be turned on or off per course. Once enabled, it emails the certificate PDF for **any** course that has a certificate assigned.
+
+### Configure It
+
+Settings are decisions about delivery, storage, and email content.
+
+**Delivery and recipients**
+
+- **Send Certificate to Site Admin / Group Leader(s):** Check these to copy administrators and/or group leaders on the certificate email. Use this when records need to live somewhere beyond the learner’s inbox.
+- **CC Certificate To:** Add one or more email addresses to receive a copy via CC — handy for a shared records or compliance mailbox.
+- **From Name / From Email:** Set how the sender appears. Configure these to match your brand or a monitored support address.
+
+**Storage**
+
+- **Do not store certificates on server:** By default, generated certificates are saved on the server. Check this if you’d rather not retain copies — for example, to limit disk use or for data-handling reasons. Leave it unchecked if you want certificates available on the server afterward.
+
+**Rendering**
+
+- **Use Cron to send certificate:** Leave this off in most cases. Enable it only if shortcodes aren’t rendering correctly in the emailed certificate; sending via cron can resolve those rendering issues.
+
+**Email content**
+
+- **Email Subject & Email Body:** Customize the message learners receive. Available tokens are listed directly below the body field — use them to personalize with learner and course details.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/12/Email-Course-Certificate-344x500.png)
+
+### Developer Filters
+
+| Filter | Parameters | Purpose |
+| --- | --- | --- |
+| uo_course_certificate_save_path | Custom absolute path | Change where generated certificates are stored on the server. |
+| uo_course_completion_certificate_filename | $file_name, $user, $course_id, $certificate_post, $timestamp | Customize the generated certificate’s filename. |
+
+## Related Articles
+
+- [Email Group Certificates](https://www.uncannyowl.com/knowledge-base/send-group-certificates-email/)
+- [Email Quiz Certificates](https://www.uncannyowl.com/knowledge-base/send-quiz-certificates-by-email/)
+- [Download Certificates in Bulk](https://www.uncannyowl.com/knowledge-base/download-certificates-in-bulk/)
+- [Certificate Preview](https://www.uncannyowl.com/knowledge-base/certificate-preview/)
+
+---
+
+## Redeem Codes During WooCommerce Checkout
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/redeem-codes-woocommerce/](https://www.uncannyowl.com/knowledge-base/redeem-codes-woocommerce/)
+
+### Overview
+
+Uncanny Codes can add a code redemption field directly to the WooCommerce checkout page. This allows customers to enter a code while purchasing a product, so that their code is redeemed as part of the checkout process. This is particularly useful for enrolling users in LearnDash Groups at the point of purchase, since the native LearnDash WooCommerce integration only supports adding users to courses — not groups.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/12/enter-registration-code-1030x355.png)
+
+### How It Works
+
+Once the Uncanny Redemption Codes plugin is activated, a new **Require LearnDash Code** checkbox is automatically added to the **Product data** section of all WooCommerce products. When this checkbox is enabled on a product:
+
+1. A code redemption field is added to the WooCommerce checkout page whenever that product is in the cart.
+2. The customer must enter a valid code to complete the purchase.
+3. Upon successful checkout, the code is redeemed and the customer is enrolled in the associated course or group.
+
+> Important: Only one code can be redeemed per checkout. If a customer is purchasing multiple products, only one code field is displayed. For this reason, we recommend mapping a single code to multiple courses or groups rather than requiring users to redeem separate codes for each.
+
+### Setup
+
+To enable code redemption on the WooCommerce checkout page:
+
+1. Navigate to **Products** in your WooCommerce admin and edit the product you want to require a code for (or create a new product).
+2. In the **Product data** section, locate the **Require LearnDash Code** checkbox.
+3. Check the box to enable the code field at checkout for this product.
+4. **Publish** or **Update** the product.
+
+That’s it — the code field will now appear on the checkout page whenever this product is in the customer’s cart.
+
+### LearnDash Enrollment Validation
+
+*(New in v5.0)*
+
+As of Uncanny Codes v5.0, the plugin validates whether the customer is already enrolled in the course or group associated with the code before allowing redemption at checkout. If the customer already has access, the checkout will display a message indicating they are already enrolled, and the code will not be consumed.
+
+This prevents customers from accidentally using codes for access they already have, which is especially valuable when codes are purchased or distributed in limited quantities.
+
+### Usage Tips
+
+- **Best for group enrollment.** This feature is most useful when you want to combine a WooCommerce product purchase with LearnDash Group enrollment. The native LearnDash WooCommerce integration doesn’t support group enrollment at checkout, but Uncanny Codes fills that gap.
+- **One code per order.** Only one code can be redeemed per checkout. If you need to grant access to multiple courses or groups, create a single code that maps to all of them.
+- **The code field appears for all products with the checkbox.** If any product in the cart has the **Require LearnDash Code** checkbox enabled, the code field will appear at checkout. Make sure this is intentional for each product.
+- **Works alongside product-based code sales.** This feature is separate from [selling code batches as WooCommerce products](https://www.uncannyowl.com/knowledge-base/sell-uncanny-codes/). You can use both features on the same site — one for selling codes and another for redeeming codes at checkout.
+
+### Related Articles
+
+- [Sell Code Batches as WooCommerce Products](https://www.uncannyowl.com/knowledge-base/sell-uncanny-codes/) — How to sell code batches as purchasable WooCommerce products
+- [Set up Uncanny Redemption Codes for WordPress](https://www.uncannyowl.com/knowledge-base/set-up-uncanny-codes-for-wordpress/) — Plugin installation and settings
+- [Standalone Code Redemption](https://www.uncannyowl.com/knowledge-base/standalone-code-redemption/) — Let existing users redeem codes from any page
+- [Troubleshooting & FAQ](KB_LINK) — Common issues and solutions
+- [Getting Started with Uncanny Codes](KB_LINK) — Overview of all code distribution workflows
+
+---
+
+## Standalone Code Redemption
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/standalone-code-redemption/](https://www.uncannyowl.com/knowledge-base/standalone-code-redemption/)
+
+### Overview
+
+Signed-in users can redeem group or course codes from anywhere on a LearnDash site by using the Redemption shortcode or Gutenberg block. This provides a simple way for existing users to enter a code and gain access to the associated course or group without needing to go through a registration form.
+
+### Redemption Shortcode
+
+Signed-in users can redeem group or course codes from anywhere on a LearnDash site by using the Redemption shortcode or Gutenberg block. This provides a simple way for existing users to enter a code and gain access to the associated course or group without needing to go through a registration form.
+
+### Shortcode/Block
+
+```
+[uo_user_redeem_code redirect="" check_only="no"]
+```
+
+Block Name: **User Redeem Code**
+
+The shortcode or block can be added to any page. It displays a simple form where logged-in users can enter a code to redeem it.
+
+| Attribute | Description | Values | Default |
+| --- | --- | --- | --- |
+| redirect | URL to redirect the user to after successful redemption | Any valid URL | Empty (stays on current page) |
+| check_only | When set to “yes”, the system will check whether the code is valid but will not redeem it. Useful for verifying codes before committing. | yes or no | no |
+|  |  |  |  |
+
+![Redeem and remove access buttons](https://www.uncannyowl.com/wp-content/uploads/2019/02/redemption-and-remove-buttons.png)
+
+### LearnDash Enrollment Validation
+
+*(New in v5.0)*
+
+When a user attempts to redeem a code that would enroll them in a LearnDash course or group, the plugin now checks whether the user is **already enrolled** before processing the redemption. If the user is already enrolled in the course or group associated with the code, the redemption is blocked and the user sees a message indicating they already have access.
+
+This prevents users from accidentally wasting codes on courses or groups they already belong to, which is especially useful in scenarios where codes are purchased or distributed in limited quantities. Previously, a code could be redeemed even if the user was already enrolled, consuming the code without providing any additional benefit.
+
+### Access Removal Shortcode
+
+To remove access, the plugin also includes a Access Removal shortcode. This shortcode adds a button that, when clicked, removes *all access* to courses and groups for the user. This button should be used very carefully.
+
+### Shortcode
+
+```
+[uo_self_remove_access]
+```
+
+**Note:** This shortcode removes all code-based access at once — it does not allow selective removal of individual course or group enrollments. Use with caution and make sure users understand the implications before clicking the button.
+
+### Related Articles
+
+- [Set up Uncanny Redemption Codes for WordPress](https://www.uncannyowl.com/knowledge-base/set-up-uncanny-codes-for-wordpress/)
+- [Using Codes with Gravity Forms](https://www.uncannyowl.com/knowledge-base/using-codes-gravity-forms/)
+- [Using Codes with WPForms](https://www.uncannyowl.com/knowledge-base/using-codes-with-wpforms/)
+- [Using Codes With the Built-In Registration Form](https://www.uncannyowl.com/knowledge-base/using-codes-custom-registration-form/)
+- [Viewing and Editing Codes](https://www.uncannyowl.com/knowledge-base/view-codes/)
+
+---
+
+## Viewing and Editing Codes
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/view-codes/](https://www.uncannyowl.com/knowledge-base/view-codes/)
+
+### Overview
+
+The **View Codes** page in the WordPress admin lets you see all codes in a batch, check their status, and make changes to individual codes. You can access it by navigating to **Uncanny Codes > View Codes** and selecting a batch from the drop-down list.
+
+### Viewing Codes
+
+When you select a batch, the View Codes page displays a table listing every code in that batch. The table includes the following columns:
+
+- **Action** — Provides options to edit or cancel individual codes.
+- **Code Name** — The unique code string.
+- **Code Type** — The type of code (e.g., Automator, Group, Course)*.
+- **Status** — Whether the code is available, redeemed, or cancelled.
+- **Redeemed** — Shows who redeemed the code and when, if applicable.
+
+*For most sites, Automator will be the most common code type, as its integration with [Uncanny Automator](https://automatorplugin.com) offers the most flexibility for code redemption.
+
+### Refreshed Admin Table UI
+
+*(Updated in v5.0)*
+
+The View Codes admin interface has been updated with a modern, refreshed table design. The new UI provides a cleaner layout with improved readability and better visual hierarchy, making it easier to scan through large batches of codes at a glance.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/11/Codes-new-UI-1030x501.png)
+
+### Deleted User Label
+
+*(Added in v4.4)*
+
+If a code was redeemed by a user who has since been deleted from WordPress, the **Redeemed** column will display a **“Deleted User”** label instead of the username. This makes it easy to identify codes that were redeemed by users who no longer exist in the system, which is helpful for auditing and troubleshooting.
+
+### Editing Codes
+
+To edit a code, click the **Edit** link in the **Action** column for the code you want to modify. This opens the code editing view where you can update code details.
+
+### Individual Code Expiration Date Modification
+
+*(New in v5.0)*
+
+You can now modify the **expiration date** associated with individual codes directly from the editing interface. This is useful for extending or adjusting code validity, correcting dates that were set incorrectly during batch generation, or accommodating special circumstances for specific users.
+
+To modify a code’s date:
+
+1. Navigate to **Uncanny Codes > View Codes**
+2. Select the batch containing the code expiration date you want to edit
+3. Click **View** on the code you want to modify
+4. Click the **Edit Expiration Date** button in the row that contains the expiration date you wish to change
+5. Update the date field as needed
+6. Click **Save** to apply the changes
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/05/Codes-View-Codes-1030x328.png)*Step 3: Click View on the code you want to modify*
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/05/Codes-Edit-Expiry-Date-1030x454.png)*Step 4: Click the Edit Expiration Date button to change date*
+
+![](https://www.uncannyowl.com/wp-content/uploads/2026/05/Codes-Set-Expiry-Date-1030x464.png)*Step 5: Update the date and save*
+
+### Downloading Code Data
+
+You can download code data as a CSV file from the View Codes page. Click the **Download CSV** button to export the batch data.
+
+### Enhanced
+
+CSV Columns
+
+*(Added in v4.4)*
+
+The CSV download now includes additional columns for more comprehensive reporting:
+
+| Column | Description |
+| --- | --- |
+| Status | The current status of the code (available, redeemed, cancelled) |
+| Issue Date | The date the code was generated or added to the batch |
+| Order ID | The WooCommerce order ID associated with the code, if the code was sold via WooCommerce |
+| Linked Product | The WooCommerce product linked to the code batch, if applicable |
+| Redeemed Times | The number of times the code has been redeemed (relevant for codes that allow multiple redemptions) |
+
+These additional columns make it easier to generate detailed reports, reconcile code usage with WooCommerce orders, and track code lifecycle data outside of WordPress.
+
+### Related Articles
+
+- [Set up Uncanny Redemption Codes for WordPress](https://www.uncannyowl.com/knowledge-base/set-up-uncanny-codes-for-wordpress/)
+- [Generating or Adding New Codes](https://www.uncannyowl.com/knowledge-base/generating-new-codes/)
+- [Cancelling Codes](https://www.uncannyowl.com/knowledge-base/cancelling-codes/)
+- [Selling Codes with WooCommerce](https://www.uncannyowl.com/knowledge-base/sell-uncanny-codes/)
+
+---
+
+## Generating or Adding New Codes
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/generating-new-codes/](https://www.uncannyowl.com/knowledge-base/generating-new-codes/)
+
+### Generate codes
+
+Creating a code batch is the very first step of the process of using codes. Once codes are generated, you can distribute, sell and control how they’re used.
+
+To create a new batch of codes, navigate to **Uncanny Codes > Generate codes** as an administrator. The onscreen wizard will walk you through the code generation process.
+
+### Name your code batch
+
+When multiple codes are generated with the same characters (e.g. 10 codes that can be redeemed for access to a LearnDash course), a “batch” of that group of codes is set up. Beginning with [Uncanny Codes 4.0](https://www.uncannyowl.com/downloads/uncanny-learndash-codes/), all code batches must be named. The name makes it easier to identify code batches when setting up WooCommerce products and [Uncanny Automator recipes](https://automatorplugin.com/knowledge-base/creating-a-recipe/).
+
+![Name a batch of Uncanny Codes](https://www.uncannyowl.com/wp-content/uploads/2016/11/Name_a_code_batch.png)
+
+The name is a required field and must be filled in before you can generate codes. Use something that will be easy for you to recognize; it’s often helpful to figure out an appropriate naming convention before generating any codes. Names are unique and cannot be changed once codes are generated.
+
+### Code type
+
+There are 2 types of codes available in Uncanny Codes: Uncanny Automator and LearnDash. For all code redemption types *except* LearnDash courses and groups, choose Uncanny Automator.
+
+![Uncanny Code Types](https://www.uncannyowl.com/wp-content/uploads/2016/11/Uncanny_Code_Types.png)
+
+If you choose [Uncanny Automator](https://wordpress.org/plugins/uncanny-automator/) and don’t have it installed, you will have the option to install the free version automatically. This step is required before you can generate codes for use in Automator recipes. Uncanny Automator allows code redemption to be linked to any of the Actions for plugins and apps listed [here](https://automatorplugin.com/all-triggers-and-actions/), enabling code redemption to be linked to actions like adding a CRM tag, adding the user to a membership level, registering the user in a webinar, etc.
+
+**If you plan to sell codes with WooCommerce, choose Uncanny Automator.**
+
+For more information about setting up Automator recipes for generated codes, see [this article](https://www.uncannyowl.com/knowledge-base/connect-codes-to-uncanny-automator/).
+
+LearnDash code types are very straightforward; they add the user who redeems the code to courses or groups in LearnDash.
+
+### LearnDash code settings
+
+LearnDash code batches have additional settings that don’t apply to Automator codes. These settings allow mapping to LearnDash courses or groups right from the generation page *and* they define additional behaviours for ecommerce scenarios.
+
+![LearnDash code settings for Uncanny Codes](https://www.uncannyowl.com/wp-content/uploads/2016/11/LearnDash_code_settings_for_Uncanny_Codes.png)
+
+These are the additional settings for LearnDash codes:
+
+- **Enroll users into courses or groups:** Codes can be generated for either LearnDash courses **OR** LearnDash groups. Once a selection is made, a list of available courses or groups is displayed. Select one or more courses or groups; users redeeming the generated code will be added to these courses or groups.
+- **LearnDash code type**
+- *Default* is the appropriate selection in most cases.
+- *Paid* codes are used with WooCommerce to indicate that the associated code has been paid for previously; when redeemed as part of a purchase that includes a product that requires a LearnDash code (see [this article](https://www.uncannyowl.com/knowledge-base/using-codes-woocommerce/)), the price of the associated product is reduced to $0.
+- *Unpaid* codes are also tied to WooCommerce transactions but charge the user the full amount.
+
+### Code settings
+
+![Uncanny Codes settings](https://www.uncannyowl.com/wp-content/uploads/2016/11/Code_settings.png)
+
+- **Number of uses per code:** Defines how many times a code can be redeemed. For situations where a code is only redeemed by one user, this should be “1”. For codes that will be shared among a group of users (such as a classroom or business department), this may be much higher. It’s not always practical to distribute individual codes, so this field allows control over how much a code can be shared. **Important: If you plan to sell codes with WooCommerce, this value must be set to “1”**.
+- **Expiry date/time** (optional): If codes should expire, enter the expiry date and time.
+
+Once the options above are set, codes can be automatically generated, or entered manually.
+
+### Auto-generate codes
+
+![Autogenerate Uncanny Codes](https://www.uncannyowl.com/wp-content/uploads/2016/11/Auto-generate_Uncanny_Codes.png)
+
+Begin by choosing *Auto-generate codes* under **Generation method**. Then fill out the remaining fields:
+
+- **Number of unique codes**: The number of unique codes to generate. This is how many codes the system will create when the **Save Changes** button is clicked. We recommend keeping this number under 10,000 and using separate batches if you need over 10,000.
+- **Number of characters**: The number of characters to include in each code.  We recommend no fewer than 8 characters and no more than 50.
+- **Type of characters**: Check the type of characters you want included in each code.
+- **Dash separation**: Divides the code into sections with hyphens to make them easier to read.  They hyphens are not included in the Number of characters.
+- **Prefix/****Suffix**(optional): Setting a *Prefix* or *Suffix* can help to identify codes to users or to brand the codes.
+
+Once generated, the batch of codes is added to the **View Codes** page of the plugin.
+
+### Manually entering codes
+
+Custom codes can be entered instead of auto-generating codes. To do this, select *Manually enter codes* under **Generation method**. Doing this replaces the *Number of unique codes*, *Number of characters*, *Dash separation*, *Prefix* and *Suffix* fields above with a single textarea labeled *Enter one code per line*. Select the appropriate options and enter your custom codes one per line.
+
+Codes support letters, numbers and hyphens.
+
+---
+
+## Set up Uncanny Redemption Codes for WordPress
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/set-up-uncanny-codes-for-wordpress/](https://www.uncannyowl.com/knowledge-base/set-up-uncanny-codes-for-wordpress/)
+
+### Overview
+
+For a brief introduction to Uncanny Redemption Codes and what you can do with it, we invite you to watch the overview video below.
+
+### Installation
+
+After you purchase and download the plugin, you can simply sign into your WordPress site as an admin and navigate to **Plugins > Add New**. To install the plugin, click**Upload Plugin** to start the process. After installation and activation, you will be directed to the License Activation page to enter your license key and activate the plugin. The license key is included in the purchase email and is also available from within your [Uncanny Owl account](https://www.uncannyowl.com/my-account/licenses/) on this site.
+
+### Settings
+
+The [Uncanny Redemption Codes](https://www.uncannyowl.com/downloads/uncanny-learndash-codes/) settings page can be found under **Uncanny Codes > Settings** in /wp-admin/ on your website. The Settings page includes controls for LearnDash group behaviours, text for messages, WooCommerce autocompletion and database cleanup.
+
+![LearnDash Group settings for Uncanny Codes](https://www.uncannyowl.com/wp-content/uploads/2016/11/LearnDash_Group_settings_for_Uncanny_Codes.png)
+
+The first option on the Settings page controls what happens when learners who are already in a LearnDash Group enter a new group-based code. If the box is checked, the user remains in any existing LearnDash Groups and is also added to any new groups associated with the code. If the box is unchecked, the user is *removed from all other LearnDash Groups* and then added to the new group. Be very careful with this selection, as there is no easy way to restore group access if this is left unchecked unintentionally. Most sites should leave this box checked.
+
+**Important:**Unchecking this box means users can’t redeem codes that are mapped to multiple groups; only the first group will be added. We strongly recommend leaving this box checked.
+
+![Custom messages for Uncanny Codes](https://www.uncannyowl.com/wp-content/uploads/2016/11/Custom_messages_for_Uncanny_Codes.png)
+
+Uncanny Redemption Codes allows an administrator to set what text should be displayed to users when codes are redeemed or there’s an issue redeeming codes. Any code-related strings not shown here can still be easily modified with a translation plugin.
+
+![Terms & Conditions for Uncanny Codes](https://www.uncannyowl.com/wp-content/uploads/2016/11/Terms___Conditions_for_Uncanny_Codes.png)
+
+The Terms & Conditions section applies to the [built-in registration shortcode](https://www.uncannyowl.com/knowledge-base/using-codes-custom-registration-form/) only. If you use that shortcode and text is populated in this field, a checkbox is added to the registration form that requires users to review and accept terms and conditions before they can register and redeem the code.
+
+![Autocomplete WooCommerce orders with Uncanny Codes](https://www.uncannyowl.com/wp-content/uploads/2016/11/WooCommerce_autocomplete_orders_for_Uncanny_Codes.png)
+
+Enable this option to automatically change the status of orders the include Uncanny Codes products to Completed. This only applies if you are selling Uncanny Redemption Codes products in a WooCommerce store.
+
+![Reset Uncanny Codes data](https://www.uncannyowl.com/wp-content/uploads/2016/11/Reset_Uncanny_Codes_data.png)
+
+Use the Reset and Delete buttons to remove Uncanny Redemption Codes data and/or tables. The Delete option is particularly useful if you plan to no longer use the Uncanny Redemption Codes plugin.
+
+---
+
+## Simple Course Timer
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/simple-course-timer/](https://www.uncannyowl.com/knowledge-base/simple-course-timer/)
+
+### Overview
+
+Track exactly how long learners spend inside your LearnDash courses — on course, lesson, topic, and quiz pages — and put that time to work: show it on screen, add it to your reports, require a minimum time before a quiz unlocks, or automatically log learners out and redirect them when they go idle.
+
+The Simple Course Timer records the time each learner spends in a course and its lessons, topics, and quizzes. You can display that time to learners in real time, surface total and completion times in your reports, and use time as a gate — for example, requiring learners to spend a minimum amount of time in the material before they can attempt a quiz, or logging out learners who go idle.
+
+This is a core tool for **seat-time compliance** (continuing education, certifications) and for **reducing cheating** by stopping learners from racing through content.
+
+**Important — tracking starts when you enable it.** The timer only records time from the moment the module is activated, and only while it stays active. Historical time is not available, so enable the module before you need the data.
+
+### Configure It
+
+Enable the **Simple Course Timer** module under **Uncanny Toolkit**, then configure the options below based on what you need the timer to do.
+
+#### Idle Timeout
+
+When enabled, the timer stops counting if a learner is inactive for too long, so idle time doesn’t inflate the recorded total. After the idle period a popup asks the learner to confirm they’re still active — confirming resumes the timer; navigating away stops it.
+
+You can customize:
+
+- **Default idle time** (overridable per lesson, topic, or quiz). Defaults to 900 seconds (15 minutes) if no value is set.
+- The **timeout message** shown to the learner.
+- The **button labels** for confirming activity and for exiting the course.
+- The **redirect location** for learners who choose to exit.
+
+#### Minimum Course Time Before Quiz
+
+Enable **Enable Quizzes after X time** to block quiz attempts until a learner has accumulated a minimum amount of time in the course. A field appears on quiz pages where you set the required minutes; learners see a message showing the required time and their current progress until they qualify.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/09/minimum-course-time.png)
+
+#### Logout & Redirect on Idle Timeout
+
+Instead of showing the inactivity popup when a learner goes idle, you can enable **Enable Logout** to **log the learner out and redirect them** when the idle timeout is reached. The learner is sent to the page set in the **Inactive Redirect** setting; if no Inactive Redirect page is specified, they’re redirected to the site homepage.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/10/simple-course-timer-settings.png)
+
+### Shortcodes / Blocks
+
+Place any of these on a page to display tracked time. A matching block is available for each.
+
+| Shortcode | What it displays |
+| --- | --- |
+| [uo_time course-id=""] | Total time spent in the course |
+| [uo_time_course_completed course-id=""] | Time at the point of completion (populated only after the course is completed) |
+| [uo_time_lesson lesson-id=""] | Time in a lesson, plus its associated topics and quizzes |
+| [uo_time_topic topic-id=""] | Time in a topic and its associated quiz |
+| [uo_time_quiz quiz-id=""] | Time in a quiz |
+| [uo_time_total user-id=""] | Total time across all courses since the module was activated |
+| [uo_time_live] | A real-time, live-counting display of active course time |
+
+### Reporting
+
+When the Simple Course Timer module is enabled, both **total time** in course and **completion time**can be exported in LearnDash reports or displayed onscreen.
+
+Time starts being tracked as soon as the module is enabled. The time columns are also added to the LearnDash course report automatically.
+
+The module also integrates with [Tin Canny LearnDash Reporting](https://www.uncannyowl.com/knowledge-base/tin-canny-reporting-for-learndash-overview/), adding the same columns there.
+
+### Limitations to Know
+
+- **Mobile devices:** time isn’t tracked when a learner is taken away from WordPress (e.g. opening a PDF or a link in a new window) on iOS/Android, and tracking pauses while WordPress is in a background tab — an operating-system constraint, not a plugin setting.
+- **Caching:** some caching plugins can cause high resource usage with the timer active. If you see performance issues, test with caching disabled.
+
+### For Developers
+
+- **uo_course_timer_time_display** *(v4.4.1)* — Filter the way tracked time is displayed.
+- **uo_course_timer_time_display_completion** *(v4.4.1)* — Filter the way completion time is displayed.
+
+### Related Articles
+
+- [Enhanced LearnDash CSV Reports](https://www.uncannyowl.com/knowledge-base/enhanced-learndash-csv-reports/) — Add more learner data to your exports
+- [Cohort & Membership Programs](https://www.uncannyowl.com/knowledge-base/cohort-membership-programs/) — Combine the timer with group-based drip content
+- [Tin Canny Reporting for LearnDash – Overview](https://www.uncannyowl.com/knowledge-base/tin-canny-reporting-for-learndash-overview/) — Deeper reporting that surfaces course time
+
+---
+
+## Sample Lesson Label (Legacy)
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/sample-lesson-label/](https://www.uncannyowl.com/knowledge-base/sample-lesson-label/)
+
+### Overview
+
+Make LearnDash sample lessons obvious by adding a clear, customizable label to them. By default, sample lessons are only distinguishable because their title appears as a link — a cue many learners miss.
+
+LearnDash’s sample lesson feature lets you offer a free preview of course material without unlocking the full course. The problem is that sample lessons aren’t visually distinct — the only signal is that the lesson title is clickable, which is easy to overlook.
+
+This module adds a prominent label to each sample lesson so learners can immediately see what’s free to preview, which can encourage more clicks into your course content.
+
+**Note:** This module is for the legacy LearnDash (LD25) theme only. The label is applied via CSS that targets the legacy theme’s .is_sample h4>a markup. The “Sample Lesson” label is native to LearnDash 3.0 theme.
+
+### Usage
+
+Once the module is enabled, a label automatically appears on every sample lesson in your course materials — no per-lesson setup required.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/09/enable-sample-lesson.png)
+
+### Configure It
+
+Customize the label in the module’s **Settings** window so it fits your course design:
+
+- **Label text** — Set the wording, for example “Sample” or “Free Preview.” Defaults to “Sample.”
+- **Label background color** — Set the background color to match your branding.
+- **Label text color** — Set the label’s text color.
+- **Label border color** — Set the color of the label’s border.
+- **Label text size** — Set the font size for the label (defaults to 14px).
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/09/sample-lesson-editor.png)
+
+**Important:** Some themes can interfere with the label. On the University theme, for example, the label may render as a checkmark instead of the text. This is a CSS conflict and can be resolved with custom CSS. Because these issues are site-specific, open a support ticket for help with your particular theme rather than relying on the Knowledge Base.
+
+### Related Articles
+
 - [Restrict Page Access](https://www.uncannyowl.com/knowledge-base/restrict-page-access/)
+- [Single Page Courses](https://www.uncannyowl.com/knowledge-base/single-page-courses/)
 - [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+
+---
+
+## Learner Transcript
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learner-transcript/](https://www.uncannyowl.com/knowledge-base/learner-transcript/)
+
+### Overview
+
+Give every learner a single, printable page that shows all of their courses, completion status, quiz scores, and certificates — branded with your logo and colors. It’s the easiest way for learners (and the organizations training them) to see a consolidated record of progress in one place.
+
+The Learner Transcript module generates an on-demand transcript for the logged-in learner. Enable the module, drop the shortcode or block on a page, and each learner sees their own record — every course they’re enrolled in or have completed, with status, scores, and certificate links in a clean table you can brand and print.
+
+Common uses include continuing-education record-keeping, employee training documentation, and giving learners a professional summary they can download or share with an employer.
+
+### Configure It
+
+Enable the **Learner Transcript** module under **Uncanny Toolkit**, then adjust its settings to control what appears on the transcript and how it’s branded.
+
+#### Branding
+
+- **Accent UI color** — An accent color applied throughout the transcript, so it can match your brand or logo.
+- **Logo URL (header)** — An image displayed at the top of the transcript.
+- **Heading** — Text shown beneath the logo.
+- **Organization** — The name of the organization issuing the transcript.
+- **Logo URL (footer)** and **Disclaimer** — An optional image and text block at the bottom of the transcript.
+
+#### What to include
+
+- **Display completed courses only** — Show only courses the learner has finished. Leave off to show in-progress and not-started courses too.
+- **Display courses the user is no longer enrolled in** — Include any course the learner has recorded progress in, even after un-enrollment. Useful for a complete historical record.
+- **Disable [column]** — Hide any individual column (Steps, Avg. Score, Final Score, Certificate, etc.) you don’t want to show.
+- **Enable Custom CEUs rows** — If the [Uncanny Continuing Education Credits](https://www.uncannyowl.com/knowledge-base/adding-credits-to-student-transcript/) plugin is active and a learner has been awarded custom credits, add rows for those records. (Scores and steps show “n/a” for custom-credit rows, since they don’t apply.)
+
+#### Ordering
+
+- **Table course sorting** — Choose the order courses appear in. As of recent versions the options include **Course completion date (ascending)** and **(descending)** in addition to course publish-date and title sorting, so you can lead with a learner’s most recent completions.
+
+### Sharing a Transcript (Public Link)
+
+By default, a transcript is private — only the signed-in learner can view their own. Enabling the **Allow public transcript access** setting makes a transcript **publicly accessible through a shareable link**, so a learner can hand a verifier (an employer, a licensing body, an admissions office) a single URL instead of a screenshot or PDF.
+
+When public access is enabled:
+
+- A **Share** button appears next to the Print button on the transcript page.
+- Clicking **Share** copies the transcript’s shareable link to the clipboard (the button confirms with “Copied”).
+- Anyone with the link can view that transcript without logging in.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/09/transctipt-buttons-1030x444.png)
+
+**Privacy note:** A public transcript link is viewable by anyone who has the URL. Only enable public access if you’re comfortable with the transcript being shared outside your site, and let learners know their transcript can be made public.
+
+### Transcript Content
+
+The transcript renders as a table with a customizable header and footer. Available columns:
+
+| Column | What it shows |
+| --- | --- |
+| Course | A course the learner is enrolled in or has previously completed (closed, open, and free course types are all included). |
+| Status | Not Started, In Progress, or Completed (with completion date). |
+| Steps | The number of steps in the course (lessons + topics). |
+| Avg. Score | Average score across all quizzes in the course. Only the highest attempt counts; failed quizzes are excluded. |
+| Final Score | The score on the quiz associated with the course, or — if none — the quiz on the last lesson. |
+| CEUs (requires Uncanny CEUs plugin) | Displays earned CEUs for the learner (requires Uncanny CEUs plugin) |
+| Certificate | If a certificate was earned, an icon links to it. |
+
+### Shortcode / Block
+
+Add the transcript to any page with the 
+```
+[uo_transcript]
+```
+
+ shortcode or the **Learner Transcript** block.
+
+| Attribute | Description | Values | Default |
+| --- | --- | --- | --- |
+| logo-url | Image included at the top of the transcript | any image URL | empty |
+| date-format | Format used for dates in the transcript | any valid PHP date format | F j, Y |
+| category | Show only courses in a WordPress category | any category slug, or all | all |
+| ld_category | Show only courses in a LearnDash category | any LearnDash category slug, or all | all |
+
+**Tip:** Transcripts can be long, so give them their own dedicated page.
+
+### Printing a Transcript
+
+Use the **Print** button above the logo area rather than your browser’s print command — it formats the transcript correctly. Output can vary slightly between browsers.
+
+### Continuing Education Credits
+
+This module integrates with the [Uncanny Continuing Education Credits](https://www.uncannyowl.com/knowledge-base/adding-credits-to-student-transcript/) plugin to display earned or available credits/hours beside each course.
+
+### Group Leader Access
+
+Group Leaders can view their learners’ transcripts through the Group Course Report in [Uncanny Groups](https://www.uncannyowl.com/knowledge-base/using-the-group-reports/). Transcripts are otherwise only visible to the signed-in learner; to view a specific learner’s transcript as an admin, use the User Switching plugin to switch to that user.
+
+### For Developers
+
+- **uo_pro_transcript_cell_$key** *(added in v4.3.2)* — A WordPress filter for each transcript cell, where 
+```
+$key
+```
+
+ is the column key. Use it to modify a cell’s output — for example, to make the course title a link.
+
+### Overriding the Transcript Template
+
+As of Toolkit Pro v3.1 you can override transcript templates in an upgrade-safe way. Copy:
+
+```
+wp-content/plugins/uncanny-toolkit-pro/src/templates/transcript.php
+```
+
+to:
+
+```
+wp-content/themes/yourtheme/uncanny-toolkit/transcript.php
+```
+
+The copied file overrides the default.
+
+**Warning:** Never edit template files inside the plugin itself — they’re overwritten on every update and your changes will be lost.
+
+### Related Articles
+
+- [Adding Credits to Student Transcript](https://www.uncannyowl.com/knowledge-base/adding-credits-to-student-transcript/) — Show CEU credits on the transcript
+- [Selling Online Courses: Certificates, Transcripts & Expiry](https://www.uncannyowl.com/knowledge-base/selling-online-courses-certificates-transcripts-expiry/) — Full course-seller workflow
+- [Email Course Certificates](https://www.uncannyowl.com/knowledge-base/send-course-certificates-email/) — Deliver certificates automatically on completion
+
+---
+
+## Lesson/Topic/Quiz Table Colors (Legacy)
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-table-colors/](https://www.uncannyowl.com/knowledge-base/learndash-table-colors/)
+
+### Overview
+
+Customize the heading colors of your LearnDash tables so they match your site’s branding — including the Course Dashboard, course, lesson, and quiz tables.
+
+This module lets you set the **heading text** and **background colors** of LearnDash tables without writing CSS. The colors you choose apply to:
+
+- The Course Dashboard table
+- Course tables
+- Lesson tables
+- Quiz tables
+
+### Configure It
+
+Set your colors in the module’s settings using either method:
+
+- **Color picker** — click and choose visually.
+- **Hex values** — type a hex color code (for example, #1a73e8) directly for an exact match to your brand palette.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/09/lesson-topic-quiz-table-colours.png)
+
+### Usage
+
+1. Activate the module.
+2. Open its settings and pick the heading text and background colors using the color picker or hex values.
+3. Save. The new colors apply across the supported LearnDash tables.
+
+**Heads up — theme compatibility.** This module is **not compatible with BuddyBoss or other themes that override LearnDash templates and styles**. If your theme replaces the default LearnDash table markup, these color settings won’t take effect.
+
+**Heads up — LearnDash tables only.** Only LearnDash tables are affected. Tables generated by other plugins or content remain unchanged.
+
+### Related Articles
+
+- [Uncanny Toolkit Pro Quick Reference](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-pro-quick-reference/)
+- [Install the Uncanny Toolkit Pro for LearnDash](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-toolkit-pro-for-learndash/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+
+---
+
+## Group Logo/List
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/ld-group-logo-list/](https://www.uncannyowl.com/knowledge-base/ld-group-logo-list/)
+
+## Overview
+
+Show your clients’ branding to their learners — display a LearnDash Group’s logo, the group name, and its group leaders anywhere on your site, without running multisite. This is for sites that sell to organizations and want each org’s members to see familiar branding.
+
+Many LearnDash sites sell to organizations rather than individual users. In those cases, showing client branding to end users helps the experience feel tailored to each organization. This module lets you surface a group’s logo, name, and leaders on your pages — no multisite setup required.
+
+**Important:** All branding options work best on sites where each user belongs to a **single** LearnDash Group. If a user is in multiple groups, the logo and list shortcodes will show *all* of that user’s groups and logos, which can produce unpredictable results.
+
+## Configure It
+
+To assign a logo to a group, edit the LearnDash Group and use the featured-image metabox — exactly the way you’d set a featured image on a course. With this module active, that metabox is relabeled **Branding Logo** (with a **Set Logo** link), so look for “Branding Logo” rather than “Featured Image”. The other shortcodes pull group names and leaders automatically; no extra setup is needed.
+
+## Usage
+
+Add any of the shortcodes (or their matching blocks) to a page to display group branding to the current user.
+
+### Group Logo
+
+Shortcode: 
+```
+[uo_group_logo]
+```
+
+  •  Block: **Group Logo**
+
+Displays the group’s logo image. On a group registration page it shows that group’s logo; on other pages it shows the current user’s group logo.
+
+| Attribute | Options | Default | Notes |
+| --- | --- | --- | --- |
+| size | full, large, medium, thumbnail | full | Selects the WordPress image size. Example: [uo_group_logo size="medium"] |
+
+**Note:** When a user belongs to multiple groups that each have a logo, all logos are displayed.
+
+#### Group List
+
+Shortcode: 
+```
+[uo_group_list]
+```
+
+  •  Block: **Group List**
+
+Outputs a list of the current user’s groups.
+
+| Attribute | Default | Notes |
+| --- | --- | --- |
+| separator | comma and space (, ) | Sets the text placed between group names. Example: [uo_group_list separator=" "] |
+
+#### Group Leaders
+
+Shortcode: 
+```
+[uo_group_leaders]
+```
+
+Outputs the names and email addresses of the group’s leaders. When the user belongs to multiple groups, the list includes a heading for each group name.
+
+### Related Articles
+
+- [Group Login Redirect](https://www.uncannyowl.com/knowledge-base/learndash-group-login-redirect/)
+- [Group Forums with bbPress](https://www.uncannyowl.com/knowledge-base/learndash-group-forums-with-bbpress/)
+- [LearnDash Group Course Access Expiration](https://www.uncannyowl.com/knowledge-base/learndash-group-expiration/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+
+---
+
+## Group Registration
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/group-sign-up/](https://www.uncannyowl.com/knowledge-base/group-sign-up/)
+
+### Overview
+
+Give each LearnDash Group its own self-service sign-up page. Share the link with an organization, and their people can create accounts and land directly in the right group — no manual enrollment, no admin in the middle.
+
+The Group Registration module lets learners register themselves directly into a LearnDash Group — and switch groups — from the front end. Every group gets a **unique registration URL** (visible only to administrators). Anyone who visits that URL and registers is automatically added to the associated group. To join an additional group, a user simply visits that group’s registration URL.
+
+This is ideal for organizational sign-ups: distribute one link to a client, school, or department and let their members self-enroll into the correct group.
+
+### Configure It
+
+Enable the **Group Registration** module under **Uncanny Toolkit**, then set the options that control how registration behaves.
+
+- **Allow users to join multiple LearnDash Groups?** — Choose **No** to have new registrations *switch* the user to the new group, or **Yes** to *add* the new group while keeping existing memberships.
+- **Hide native LearnDash content (LearnDash 3.2+)** — Hides LearnDash’s default group information table on the registration page.
+- **Existing Group Member Link Text / URL** — Customize the link shown to already-registered members (for example, pointing them to a dashboard or to course content).
+- **Organization Labels** — Customize the labels used for the group contact details shown on registration pages.
+
+### Supported Registration Forms
+
+You can place a custom registration form on a group page. If you leave the form area empty, the built-in default registration form is used automatically.
+
+Supported form plugins:
+
+- **Gravity Forms** (with the User Registration add-on) — our recommended option for the most flexible registration experience.
+- **Forminator** *(supported as of Toolkit Pro v4.4.1)* — Forminator registration forms are now recognized on group sign-up pages.
+- **Theme My Login**
+
+### Finding the Group Registration URL
+
+**Toolkit Pro v3.8.3 or higher:** Go to **LearnDash LMS > Groups** and click the **Signup URL** link beneath each group to reveal its registration URL.
+
+![padding: 40px 0 40px 0](https://www.uncannyowl.com/wp-content/uploads/2016/08/Uncanny-Owl-Screenshot-06-27-at-13.32.18@2x.png)
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/08/Screenshot-2026-07-01-at-8.31.26-AM.png)
+
+**Earlier versions:** Click the permalink at the top of the group post (administrators only) to reveal the actual registration URL — the displayed permalink itself is not the registration URL.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/07/reg_url.png)
+
+**Tip:** If a sign-up URL returns a 404, go to **Settings > Permalinks** and click Save to flush the permalink rules.
+
+### Shortcodes / Blocks
+
+| Shortcode | Block | What it does |
+| --- | --- | --- |
+| [uo_group_status] | Group Status | Displays organization details for each group a logged-in user belongs to |
+| [uo_group_organization] | Group Organization | Displays organization details on the registration page for logged-out visitors |
+| [uo_group_login] | Group Login | Shows a login form on the registration page; logging in adds the user to the associated group |
+
+### Organization Details
+
+You can add optional organization metadata (contact information, etc.) to a group via its metabox. These details display in the registration page sidebar using the shortcodes above.
+
+### Integration with Uncanny Groups
+
+The [Uncanny LearnDash Groups](https://www.uncannyowl.com/downloads/uncanny-learndash-groups/) plugin includes a system to track and limit how many users can be added to a LearnDash Group.
+
+When the [Uncanny Groups](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/) plugin is active, the **seat limits** defined there govern self-registration. If a user registers from a Group Registration page to a group with a defined seat limit, the registration will complete normally if the group has available seats, and one seat will be deducted for each user that registers. If no seats remain for the group, the user will be blocked from registering and will see a message that the group is full. The only way to allow registration when this happens is for an administrator (or a Group Leader, if the group was created via purchase) to add additional seats to the group.
+
+### For Developers
+
+- **Custom group signup form fields** — Toolkit Pro v4.3.2 added WordPress action hooks for injecting custom fields into the group signup form, and v4.3.1 added an action/filter for custom validation. Use these to collect and validate extra information during group registration.
+
+### Overriding the Registration Template
+
+As of Toolkit Pro v3.1, templates can be overridden in an upgrade-safe way. Copy:
+
+```
+wp-content/plugins/uncanny-toolkit-pro/src/templates/single-group.php
+```
+
+to:
+
+```
+wp-content/themes/yourtheme/uncanny-toolkit/single-group.php
+```
+
+**Warning:** Don’t edit template files inside the plugin itself — they’re overwritten on every update.
+
+### Related Articles
+
+- [Group Login Redirect](https://www.uncannyowl.com/knowledge-base/learndash-group-login-redirect/) — Send group members to a group-specific page on login
+- [Group Logo/List](https://www.uncannyowl.com/knowledge-base/ld-group-logo-list/) — Brand the group experience with a logo
+- [Employee Training & Onboarding at Scale](https://www.uncannyowl.com/knowledge-base/employee-training-onboarding-at-scale/)— Full organizational onboarding workflow
+
+---
+
+## Group Expiration
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-group-expiration/](https://www.uncannyowl.com/knowledge-base/learndash-group-expiration/)
+
+### Overview
+
+Expire course access for an entire LearnDash Group on a date you choose, and warn members by email before it happens. This is built for organizations that sell bulk course licenses for a fixed term.
+
+When you sell a course license to an organization for a defined period — say, a one-year contract — this module lets you set a single expiration date for the whole group. On that date, course access is removed for every member, and you can notify members in advance so the cutoff isn’t a surprise.
+
+**Common use cases:**
+
+- Annual or term-based bulk licenses sold to employers or schools.
+- Time-limited cohort programs where access should end after the program closes.
+
+### Configure It
+
+#### Module-level settings
+
+After enabling the module, set the defaults that apply across all groups:
+
+- **Send expiry email notifications** — turn the advance-warning email on or off.
+- **Days before expiration to send the email** — how far ahead members are warned. If you leave this unset, the default is **7 days**.
+- **Trash groups after expiration** — whether expired groups are automatically moved to trash, and how many days after expiry that happens. This is purely housekeeping to keep your group list tidy.
+
+**Note:** If a group’s expiry date falls *within* the “days before expiry” window at the moment you first set it, no expiration notification is triggered for that group. Set expiry dates comfortably in the future.
+
+#### Per-group settings
+
+Edit a LearnDash Group to set its expiration date. With the module enabled, an **Expiration Date** metabox appears — click the date field to pick a date from the calendar.
+
+**Where to find these settings (Toolkit Pro v4.4.1+):** On the group edit screen, the **Expiration Date** field — and the **Expiration Email** box below it (when email notifications are enabled) — are reached through a dedicated **Uncanny Toolkit** tab in the LearnDash settings header. v4.4.1 added this tab so the settings stay easy to find under WordPress 7.0’s block editor, which otherwise collapses classic metaboxes out of view. The settings themselves are unchanged — only where you click to reach them.
+
+To see expiration status at a glance, go to **LearnDash LMS > LearnDash Groups**. A new **Expiration Date** column shows the upcoming expiry date, whether the notification email has been sent, or the timestamp of a past expiration.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/08/Group-Expiration-1030x343.png)
+
+### Customizing the notification email
+
+Below the expiration date field, the **Expiration Email** metabox lets you customize the email subject and body. You can insert these variables into the body (they are case-insensitive):
+
+- ```
+%Display Name%
+```
+- ```
+%LearnDash Group Name%
+```
+- ```
+%Expiration Date%
+```
+
+Use the **Test Email** button to send a sample to your own email address (the logged-in user clicking the button) before going live.
+
+### Shortcodes
+
+Display expiration information to members anywhere on your site.
+
+| Shortcode | What it outputs |
+| --- | --- |
+| [uo_group_expiration_date] | The expiration date for the current user’s group. Works automatically when the user is in exactly one group that has an expiry date. |
+| [uo_group_expiration_date group_id="1234"] | The expiration date for a specific group. Use this when a user belongs to multiple groups with expiry dates, or to target a particular group. |
+| [uo_group_expiration_in] | A countdown of the time remaining until expiration. Accepts the same group_id parameter. |
+| [uo_group_expiration_in pre-text=""] | The countdown with custom lead-in text before the time remaining. |
+
+**Note:** The expiration date continues to display even after the expiration date has passed.
+
+### Usage notes
+
+- **Use future dates.** Expiration only takes effect for dates in the future. Courses are removed at midnight on the expiration date.
+- **Reactivating an expired group requires a manual step.** Setting a new future date reactivates the group, but courses are **not** restored automatically — you’ll need to re-add them to the group manually.
+- **Emails depend on site traffic.** Notification emails are triggered by a WordPress cron job that runs on site visits. On infrequently visited sites, emails may be delayed.
+- **Auto-trash timing.** The “Trash groups after expiration” delay defaults to **365 days** after expiry (not a small number — set it to suit your retention needs). Once a group is in the trash, WordPress permanently deletes it on its own default schedule (30 days, unless your site changes 
+```
+EMPTY_TRASH_DAYS
+```
+
+); this module only moves the group to trash, it does not permanently delete it.
+
+### Related Articles
+
+- [Drip Lessons by Group](https://www.uncannyowl.com/knowledge-base/drip-lessons-by-ldgroup/)
+- [Group Login Redirect](https://www.uncannyowl.com/knowledge-base/learndash-group-login-redirect/)
+- [Cohort & Membership Programs](https://www.uncannyowl.com/knowledge-base/cohort-membership-programs/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+
+---
+
+## Course Dashboard
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-course-dashboard/](https://www.uncannyowl.com/knowledge-base/learndash-course-dashboard/)
+
+### Overview
+
+The Course Dashboard gives your learners one page where they can browse all of their courses, drill into lessons and topics, jump straight to any quiz, review past quiz results, and grab their certificates — without clicking into each course first. It’s ideal as the centerpiece of a “My Courses” or member dashboard page.
+
+Drop the dashboard onto any page and it renders a collapsible list of courses. Each course expands to reveal its lessons, and each lesson expands to reveal its topics. Along the way it surfaces everything a learner needs to keep moving:
+
+- Links to every quiz at the course, lesson, or topic level
+- A list of results from all quiz attempts
+- Links to course-level and quiz-level certificates
+- A **Resume** button for each course
+- The number of Continuing Education Credits (CEUs) earned or assigned per course (when the [Uncanny Continuing Education Credits](https://www.uncannyowl.com/knowledge-base/setup-continuing-education-credits-plugin/) plugin is active)
+
+The big payoff is direct access: a learner can open any lesson or topic from this single page instead of navigating into a course and drilling down manually.
+
+![New LearnDash Dashboard Design](https://www.uncannyowl.com/wp-content/uploads/2019/05/Modern_LearnDash_Dashboard_Theme.png)
+
+#### Choosing a theme
+
+The dashboard ships with two themes. Pick based on your LearnDash version and any styling plugins you run:
+
+- **3.0 theme (recommended)** — A responsive design built for LearnDash 3.0 with several color customization options. **Choose this** if you’re on LearnDash 3.0, or if you run themes/plugins that override default LearnDash styles (for example, the Boss theme by BuddyBoss including Social Learner, or LearnDash Visual Customizer by SnapOrbital). It avoids CSS conflicts.
+- **Legacy theme** — The original dashboard design, kept for backward compatibility. Choose this only if you specifically need to match an existing legacy layout.
+
+**Note:** The theme switcher was added in version 3.2. If you’re on LearnDash 2.x with style-overriding themes or plugins, use the 3.0 theme to avoid CSS conflicts.
+
+### Setup
+
+Add the dashboard to any page using either the **Course Dashboard** block or the [uo_dashboard sample=’sample’] shortcode. That alone renders the full collapsible list of courses, lessons, topics, quizzes, and earned certificates.
+
+From there, the attributes let you shape the page around a few key decisions:
+
+- **Whose courses to show** — Leave **user_id** unset to show the logged-in user’s courses, or pass a specific user’s ID to render someone else’s list.
+- **Which courses appear** — Use **show** to control scope. Pick enrolled (default) for a personal “my courses” page; all to show every course in the system to both logged-in and logged-out visitors; open to behave like enrolled for members while showing only open courses to logged-out visitors; or free to limit to free courses. Use **not_enrolled=”yes”** instead when you want a “courses you haven’t started yet” list.
+- **How courses are sorted** — Set **orderby** (title, date, or menu_order; defaults to post ID) together with **order** (asc or desc).
+- **Whether to filter by category** — You can pre-filter with **ld_category** (LearnDash course category) or **category** (WordPress category), or give learners a dropdown with **course_categoryselector** or **categoryselector**.
+- **Whether to expand on load** — Set **expand_by_default=”yes”** if you want every course opened to its lessons and topics when the page loads.
+
+**Important:** You can’t combine the two category systems. Use either the LearnDash category attributes/selector *or* the WordPress category attributes/selector — not both at once. Empty categories are automatically hidden from the dropdowns.
+
+### Shortcode reference
+
+[uo_dashboard sample=’sample’] — example: [uo_dashboard sample=’sample’ orderby=”title” order=”asc”]
+
+| Attribute | What it does | Values | Default |
+| --- | --- | --- | --- |
+| user_id | Whose course list to show; pass a user ID to override the logged-in user | A registered user’s ID | Current logged-in user |
+| show | Which courses display. enrolled: the user’s enrolled courses (nothing for logged-out visitors). all: every course, for everyone. open: like enrolled for members, only open courses for logged-out visitors. free: free courses only. | enrolled, all, free, open | enrolled |
+| orderby | Sort field for courses | title, date, menu_order | Post ID |
+| order | Sort direction (based on orderby) | asc, desc | asc |
+| ld_category | Limit to a LearnDash course category (can’t combine with the dropdown) | all or a LearnDash category slug | all |
+| expand_by_default | Expand all lessons and topics on load | yes, no | no |
+| course_categoryselector | Show a dropdown to filter by LearnDash course category (empty categories hidden) | show, hide | hide |
+| categoryselector | Show a dropdown to filter by WordPress category (empty categories hidden) | show, hide | hide |
+| category | Limit to a WordPress category (can’t combine with the dropdown) | all or a WordPress category slug | all |
+| not_enrolled | Show only courses the user is not enrolled in | yes, no | no |
+
+### Overriding the template
+
+You can customize the dashboard markup in an upgrade-safe way. Copy:
+
+```
+wp-content/plugins/uncanny-toolkit-pro/src/templates/frontend-dashboard/dashboard-template.php
+```
+
+to:
+
+```
+wp-content/themes/yourtheme/uncanny-toolkit/frontend-dashboard/dashboard-template.php
+```
+
+and edit the copy in your theme.
+
+**Important:** Never edit template files inside the Uncanny Toolkit Pro plugin directly — they’re overwritten on every upgrade and your changes will be lost. Always work from the theme override.
+
+### Related Articles
+
+- [Enhanced Course Grid](https://www.uncannyowl.com/knowledge-base/enhanced-course-grid/)
+- [Days Until Course Expiry](https://www.uncannyowl.com/knowledge-base/days-until-course-expiry/)
+- [Single Page Courses](https://www.uncannyowl.com/knowledge-base/single-page-courses/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+
+---
+
+## Import Users
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/import-learndash-users/](https://www.uncannyowl.com/knowledge-base/import-learndash-users/)
+
+### Overview
+
+Create or update hundreds of LearnDash users from a single spreadsheet — enrolling them in courses, assigning them to groups, setting custom profile fields, and emailing them their login details, all in one import.
+
+The Import Users module turns a CSV file into LearnDash users. Use it to onboard a new cohort of employees or students, migrate records from another platform, or bulk-update existing users. A single import can create accounts, enroll users in courses and groups, set custom user meta, and send each person a welcome email with their account details.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/08/import-users-01-500x310.png)
+
+### The Four-Step Process
+
+#### Step 1: Options
+
+Set the defaults for the import: the role new users receive, which courses to enroll them in, and which groups to add them to. (Values in your CSV override these defaults per row.)
+
+#### Step 2: Email Settings
+
+Enable welcome emails and customize the template using tokens such as 
+```
+%Password%
+```
+
+ and 
+```
+%Reset Password Link%
+```
+
+, so new users receive their credentials and a way to set their own password.
+
+#### Step 3: Prepare Your CSV
+
+Your file needs one column of user data per field. The only **required** column is user_email.
+
+**Supported columns:**
+
+| Column | Purpose |
+| --- | --- |
+| user_email | Required. The user’s email address. |
+| user_login | Username (generated from email if omitted). |
+| user_pass | Password (generated if omitted). |
+| first_name, last_name, display_name | Profile name fields. |
+| wp_role | WordPress role, by role slug. |
+| learndash_courses | Course IDs to enroll the user in, separated by semicolons. |
+| learndash_groups | Group IDs to add the user to, separated by semicolons. |
+| group_leader | Assigns the user as a group leader. |
+| (any other heading) | Saved as custom user meta. |
+
+**Delimiter support** *(v4.4):* the importer now accepts **comma, semicolon, tab, or pipe (****|****) delimited** files and **detects the delimiter automatically**. You no longer need to convert a semicolon- or tab-separated export into a comma-separated file first — upload it as-is.
+
+#### Step 4: Import Users
+
+Upload your CSV and review the validation results. The importer previews what will happen so you can catch problems before committing, then confirm to run the import.
+
+### Limitations to Know
+
+- **Up to 1,000 users per import.** Split larger lists into multiple files.
+- **Additive only for enrollments** — the importer can add course/group enrollments but can’t remove existing ones.
+- **Can’t change usernames or email addresses** of existing users.
+- **Can’t mark courses complete** through import.
+- **Password hashes don’t transfer between sites** — imported users on a new site will need to set a password (use the 
+```
+%Reset Password Link%
+```
+
+ token in the welcome email).
+
+### Access
+
+Import Users is restricted to **site administrators** for security reasons. Developers can extend access to Group Leaders via a custom filter.
+
+### Related Articles
+
+- [Enhanced LearnDash CSV Reports](https://www.uncannyowl.com/knowledge-base/enhanced-learndash-csv-reports/) — Export richer user data back out of LearnDash
+- [Employee Training & Onboarding at Scale](https://www.uncannyowl.com/knowledge-base/employee-training-onboarding-at-scale/) — Full org-onboarding workflow built around Import Users
+- [Group Registration](https://www.uncannyowl.com/knowledge-base/group-sign-up/) — Let users self-register instead of importing them
+
+---
+
+## Improved Group Leader Interface (deprecated)
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/group-leader-access/](https://www.uncannyowl.com/knowledge-base/group-leader-access/)
+
+### Overview
+
+The Improved Group Leader Interface simplifies the LearnDash Group Leader experience and automatically enrolls group leaders in the groups and courses they manage.
+
+**Important**: This module is considered deprecated and generally not recommended for LearnDash 4.x use. It is still available to users as a Legacy module.
+
+This module cleans up the standard LearnDash Group Leader dashboard by removing clutter and emphasizing the elements that matter. It also handles enrollment automatically:
+
+- Makes group leaders members of the groups they manage.
+- Enrolls those leaders in the courses assigned to their groups.
+
+The result is a tidier interface where group leaders can see and access the courses they’re responsible for.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/12/igli-enabled.png)
+
+### Configure It
+
+#### Set the “View Courses” link destination
+
+Because the module grants leaders course access, it adds a **View Courses** link to the interface. You must tell that link where to go — set the destination URL in the module’s settings.
+
+#### Decide where Group Leaders land after login
+
+You can redirect users with the Group Leader WordPress role to a specific page when they log in. If you use the Uncanny LearnDash Groups plugin, this is typically the **Group Management** page. Leave it unset if you don’t want a login redirect.
+
+#### Set redirect priority
+
+When more than one feature on your site wants to control where a user is sent after login, **Redirect Priority** decides which one wins. A higher value gives this module’s redirect more importance. Raise it if another plugin or setting is overriding the redirect you configured here.
+
+### Usage
+
+1. Activate the module.
+2. Set the **View Courses** link URL.
+3. (Optional) Choose a login redirect page for Group Leaders and adjust the redirect priority if needed.
+4. Save. Group Leaders now see the streamlined interface and are auto-enrolled in their groups’ courses.
+
+### Related Articles
+
+- [Uncanny Toolkit Pro Quick Reference](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-pro-quick-reference/)
+- [Employee Training & Onboarding at Scale](https://www.uncannyowl.com/knowledge-base/employee-training-onboarding-learndash/) *(new article — suggested URL, confirm)*
+- [Install the Uncanny Toolkit Pro for LearnDash](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-toolkit-pro-for-learndash/)
+
+---
+
+## Enhanced Lesson/Topic Grid
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/enhanced-lessontopic-grid/](https://www.uncannyowl.com/knowledge-base/enhanced-lessontopic-grid/)
+
+### Overview
+
+The Enhanced Lesson/Topic Grid displays a course’s lessons — or a lesson’s topics — in a clean, image-led grid. It’s the lesson/topic counterpart to the [Enhanced Course Grid](https://www.uncannyowl.com/knowledge-base/enhanced-course-grid/), giving you a more visual alternative to LearnDash’s default lesson lists.
+
+Add the grid to any page and it adapts to its context:
+
+- On a **course page**, it automatically shows that course’s lessons.
+- On a **lesson page**, it automatically shows that lesson’s topics.
+
+By default it renders a 2-column grid with equal-sized featured images. Dripped lessons that aren’t yet available display their availability date, so learners know when content unlocks.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/07/enhanced-lesson-topic-grid-500x457.png)
+
+**Important:** When you place the grid on a course or lesson page, the associated quiz table is hidden — you’ll need to link to quizzes manually. The exception is when the grid is enabled globally for all lessons/topics; in that case the quiz table stays visible.
+
+### Configure It
+
+Use the **Enhanced Lesson/Topic Grid** block or the 
+```
+[uo_lessons_topics_grid]
+```
+
+ shortcode, then decide:
+
+- **Where the grid lives** — On a course or lesson page, no IDs are needed; it detects context automatically. On any other page, point it at content explicitly: use **course_id** to list a course’s lessons, or **lesson_id** to list a lesson’s topics. These two are mutually exclusive.
+- **Which items to show** — Narrow the grid with **category** (a WordPress category slug) or **tag** (a tag slug). These two can’t be combined.
+- **Layout** — Set **cols** (1–5; default 2) and toggle **show_image** for featured images.
+- **Hover styling** — Set **border_hover** to change the grid item border color on hover.
+
+You can also enable the grid **globally** from the module’s settings box, so it appears automatically on all course and lesson pages without adding a shortcode to each one.
+
+**Note:** Topic grids are supported on LearnDash pages only. The 
+```
+lesson_id
+```
+
+ topic grid won’t work outside of LearnDash content. If featured images don’t appear, check the module settings.
+
+### Shortcode reference
+
+```
+[uo_lessons_topics_grid]
+```
+
+| Attribute | What it does | Values | Default |
+| --- | --- | --- | --- |
+| course_id | List a course’s lessons; required off the course page. Can’t combine with lesson_id | Any course ID | The current course’s ID (if on a course page) |
+| lesson_id | List a lesson’s topics; LearnDash pages only. Can’t combine with course_id | Any lesson ID | The current lesson’s ID (if on a lesson page) |
+| category | Show only items in a WordPress category. Can’t combine with tag | A category slug | all |
+| tag | Show only items with a given tag. Can’t combine with category | A tag slug | all |
+| cols | Columns per row | 1–5 | 2 |
+| show_image | Show featured images (min. recommended 624 × 468 px; WP crops to 1.33:1) | yes, no | yes |
+| border_hover | Border color of grid items on hover | A color value | (not specified) |
+
+### Customization
+
+**CSS:** Copy 
+```
+/wp-content/plugins/uncanny-toolkit-pro/src/assets/legacy/frontend/css/lesson-topic-grid-view.css
+```
+
+ to 
+```
+/wp-content/themes/your-theme/uncanny-toolkit-pro/css/lesson-topic-grid-view.css
+```
+
+ and edit the copy.
+
+**Template override (v3.1+):** Copy 
+```
+wp-content/plugins/uncanny-toolkit-pro/src/templates/lesson-topic-grid.php
+```
+
+ to 
+```
+wp-content/themes/yourtheme/uncanny-toolkit/lesson-topic-grid.php
+```
+
+.
+
+**Important:** Don’t edit CSS or template files inside the Uncanny Toolkit Pro plugin directly — they’re overwritten during upgrades and your customizations will be lost. Always work from the theme override.
+
+### Related Articles
+
+- [Enhanced Course Grid](https://www.uncannyowl.com/knowledge-base/enhanced-course-grid/)
+- [Course Dashboard](https://www.uncannyowl.com/knowledge-base/learndash-course-dashboard/)
+- [Single Page Courses](https://www.uncannyowl.com/knowledge-base/single-page-courses/)
+- [Autocomplete Lessons & Topics](https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics/)
+
+---
+
+## Enhanced Course Grid
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/enhanced-course-grid/](https://www.uncannyowl.com/knowledge-base/enhanced-course-grid/)
+
+### Overview
+
+The Enhanced Course Grid displays your courses in a clean, customizable grid — with featured images, optional descriptions, progress bars, prices, and Start/Resume buttons. It’s built primarily for signed-in learners who want to see what they’re enrolled in and what’s available next.
+
+By default the grid renders four columns with expandable rows and orders courses in a sensible learner-first sequence: enrolled courses (sorted by completion percentage) first, then non-enrolled courses, then anything tagged “coming soon.”
+
+**What the grid can show:**
+
+- Featured images displayed at equal sizes
+- Optional short descriptions beneath course names (HTML is supported in the Short Description field)
+- Progress bars for enrolled learners
+- A **Start** or **Resume** button per course
+- A price or price banner in the upper-left corner
+- “Coming Soon” status, driven by a standard WordPress tag (not a LearnDash tag)
+
+Common uses include a member dashboard of enrolled courses sorted by progress, a public catalog of available courses, and category-filtered grids for specific topics or programs.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/07/course_grid-1030x366.png)
+
+**Important:** If you use HTML in the Short Description field, disable the LearnDash Course Grid plugin — it strips HTML out of that field.
+
+**Where to set the Short Description (Toolkit Pro v4.4.1+):** The course **Short Description** field is on the course edit screen, under a dedicated **Uncanny Toolkit** tab in the LearnDash settings header. v4.4.1 added this tab so the field stays easy to find under WordPress 7.0’s block editor, which otherwise collapses classic metaboxes out of view.
+
+### Configure It
+
+Add the grid with the **Enhanced Course Grid** block or the 
+```
+[uo_courses]
+```
+
+ shortcode, then shape it around these decisions:
+
+- **Which courses to include** — Use **enrolled_only="yes"** for a personal dashboard, or **not_enrolled="yes"** for an “available courses” catalog. Filter by topic with **category** (WordPress) or **ld_category** (LearnDash course category); both accept comma-separated slugs. When you pass multiple categories, **taxonomy_relation** decides whether a course must match AND (all) or OR (any, the default).
+- **Whether to give learners a filter dropdown** — Turn on **categoryselector** (WordPress) or **course_categoryselector** (LearnDash). Empty categories are hidden automatically.
+- **Layout** — Set **cols** (1–5; default 4). Use **limit** to control how many courses appear before the **View More** button (all shows everything and removes the button). Hide that button with **hide_view_more**, or point it at a full catalog page with **more="URL"**.
+- **What to show on each card** — Toggle **show_image**, **price**, **hide_description**, **hide_progress**, **hide_credits**, **hide_title**, and **link_to_course**. We recommend **hide_progress="yes"** on sites with many courses for better performance.
+- **Action buttons** — Set **start_course_button="show"** to show a **Start** button for enrolled learners at 0% progress, and **resume_course_button="show"** to show a **Resume** button for learners with progress (this requires the Resume module enabled).
+- **Sort order** — The default uses **default_sorting** by status (
+```
+course-progress
+```
+
+,
+```
+enrolled
+```
+
+,
+```
+not-enrolled
+```
+
+,
+```
+coming-soon
+```
+
+,
+```
+completed
+```
+
+). To sort alphabetically or by date instead, set **orderby** (
+```
+title
+```
+
+, 
+```
+date
+```
+
+, 
+```
+menu_order
+```
+
+) plus **order** (
+```
+asc/desc
+```
+
+) and add **ignore_default_sorting="yes"** so your order takes precedence.
+- **Colors and labels** — Restyle with **border_hover**, **view_more_color**, **view_more_hover**, **view_more_text_color**, and relabel buttons with **view_more_text** / **view_less_text**.
+
+**Important:** 
+```
+default_sorting
+```
+
+ doubles as a filter. Any status you leave *out* of your custom 
+```
+default_sorting
+```
+
+ list is excluded from the grid entirely. For example, omitting 
+```
+not-enrolled
+```
+
+ hides non-enrolled courses.
+
+#### Example
+
+A learner dashboard showing only enrolled courses, no prices, sorted by progress then completion:
+
+```
+[uo_courses enrolled_only="yes" price="no" default_sorting="course-progress,enrolled,completed"]
+```
+
+### Shortcode reference
+
+[uo_courses]
+
+| Attribute | What it does | Values | Default |
+| --- | --- | --- | --- |
+| category | Show courses in one or more WordPress categories | all or slug(s), comma-separated | all |
+| ld_category | Show courses in one or more LearnDash course categories | all or slug(s), comma-separated | all |
+| categoryselector | Show a WordPress-category filter dropdown (empty categories hidden) | show, hide | hide |
+| course_categoryselector | Show a LearnDash-category filter dropdown (empty categories hidden) | show, hide | hide |
+| taxonomy_relation | Match ALL or ANY of the supplied categories | AND, OR | OR |
+| enrolled_only | Show only enrolled courses | yes, no | no |
+| not_enrolled | Show only non-enrolled courses | yes, no | no |
+| cols | Columns per row | 1–5 | 4 |
+| limit | Courses shown before the View More button (all removes it) | all or an integer | 4 |
+| hide_view_more | Hide the View More button | yes, no | no |
+| hide_description | Hide the course description | yes, no | no |
+| hide_progress | Hide the progress bar (improves performance) | yes, no | no |
+| hide_credits | Hide the assigned credit value | yes, no | no |
+| hide_title | Hide the course title | yes, no | no |
+| more | Send View More to a URL instead of expanding the list | A URL | (none) |
+| show_image | Show the featured image (min. recommended 624 × 468 px) | yes, no | yes |
+| price | Show the price / price banner in the upper left | yes, no | yes |
+| link_to_course | Link grid items to their course pages | yes, no | yes |
+| default_sorting | Sort by status; omitted statuses are excluded | course-progress,enrolled,not-enrolled,coming-soon,completed (any order) | course-progress,enrolled,not-enrolled,coming-soon,completed |
+| orderby | Course ordering method | title, date, menu_order | title |
+| order | Sort direction (based on orderby) | asc, desc | asc |
+| ignore_default_sorting | Let orderby take precedence over default_sorting | yes, no | no |
+| start_course_button | Show a Start button for enrolled learners at 0% | show, hide | hide |
+| resume_course_button | Show a Resume button for learners with progress (needs Resume module) | show, hide | hide |
+| border_hover | Border color on grid-item hover | A color value | (none) |
+| view_more_color | View More button fill color | A color value | (none) |
+| view_more_hover | View More button fill color on hover | A color value | (none) |
+| view_more_text_color | View More button text color | A color value | (none) |
+| view_more_text | View More button label | Custom text | (none) |
+| view_less_text | View Less button label | Custom text | (none) |
+
+### Customization
+
+**CSS:** Copy 
+```
+/wp-content/plugins/uncanny-toolkit-pro/src/assets/legacy/frontend/css/course-grid-view.css
+```
+
+ to 
+```
+/wp-content/themes/your-theme/uncanny-toolkit-pro/css/course-grid-view.css
+```
+
+ and edit the copy.
+
+**Template override (v3.1+):** Copy 
+```
+wp-content/plugins/uncanny-toolkit-pro/src/templates/course-grid.php
+```
+
+ to 
+```
+wp-content/themes/yourtheme/uncanny-toolkit/course-grid.php
+```
+
+.
+
+**Developer filters** for ribbon text:
+
+- apply_filters( ‘uo_course_grid_ribbon_text’, $output, $course->ID )
+- apply_filters( ‘uo_course_grid_ribbon_price’, $course_price, $course->ID )
+
+**Important:** Don’t edit CSS or template files inside the plugin directly — they’re overwritten on upgrade. Always work from the theme override.
+
+**Note — other caveats:**
+
+- **WooCommerce:** The grid can’t integrate with WooCommerce unless you make significant changes to the WooCommerce store-page template.
+- **Featured images:** WordPress crops images to a 1.33:1 ratio; upload at least 624 × 468 px.
+- **Closed courses:** A course with no price listed displays as “Free,” which may be inaccurate.
+- **Resume button:** Only appears for learners with progress recorded after plugin version 2.5 was installed.
+
+### Related Articles
+
+- [Enhanced Lesson/Topic Grid](https://www.uncannyowl.com/knowledge-base/enhanced-lessontopic-grid/)
+- [Course Dashboard](https://www.uncannyowl.com/knowledge-base/learndash-course-dashboard/)
+- [Single Page Courses](https://www.uncannyowl.com/knowledge-base/single-page-courses/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+
+---
+
+## Duplicate Pages & Posts
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/duplicate-pages-posts/](https://www.uncannyowl.com/knowledge-base/duplicate-pages-posts/)
+
+### Overview
+
+Clone any page, post, or LearnDash item in a single click instead of rebuilding it from scratch. This is ideal for course creators who want to reuse an existing course, lesson, or quiz as the starting point for a new one.
+
+Duplicate Pages & Posts copies an item and everything attached to it. The duplicate inherits the original’s associated meta, settings, categories, tags, and custom taxonomies, so you start with an exact working copy rather than a blank slate.
+
+**The module can clone:**
+
+- Standard WordPress pages and posts
+- Any registered custom post type
+- LearnDash courses, lessons, topics, quizzes, certificates, and groups
+- LearnDash quiz questions (LearnDash 2.6+)
+
+Common use cases include spinning up a new course from a proven template, creating a variant of an existing quiz, or copying a marketing page before making edits.
+
+### Configure It
+
+In the module settings you’ll see a list of every registered post type on your site. Decide which of these you want to be able to duplicate:
+
+- **Enable duplication per post type** — Turn duplication on for the post types you actually clone. You can enable it for any post type, but post types that store custom data or link to other posts may not copy cleanly.
+
+**Important:** Some custom post types contain data or relationships that don’t duplicate correctly. We strongly recommend testing any duplicated custom post type before relying on it in a live environment.
+
+**Note:** Duplicating requires the edit_published_posts capability (and edit access to the specific item). By default this includes Administrators, Editors, and Authors, but not Contributors or Subscribers.
+
+### Usage
+
+You can duplicate an item two ways:
+
+- From the admin list of courses, lessons, topics, quizzes, or certificates
+- From the **Edit** view of any of those post types
+
+**Note:** Cloning a lesson or topic duplicates that single item only — it does not create new copies of its child topics or quizzes. (Duplicating a course is the exception: the duplicate reuses the original’s lesson/topic/quiz steps — see *Cloning courses* below.)
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/07/clone-this-course-link.png)
+
+### Cloning courses
+
+There are 2 possible cloning outcomes, depending on whether or not **Shared Course Steps**is enabled. . The cloned course is created as a **draft** so you can review it before publishing.
+
+**Shared Course Steps Enabled**Cloning a course with Shared Course Steps enabled will not create unique copies of any lessons, topics or quizzes. They remain shared. Any edits made to the shared lessons, topics or quizzes will apply to any other course that shares the content.
+
+**Note:** After enabling Shared Course Steps, when cloning a course that was created with Shared Course Steps disabled, the course structure must be modified and resaved before cloning to ensure that the steps are cloned.
+
+**Shared Course Steps Disabled******When cloning a course with Shared Course Steps disabled, the cloned course will be empty, with no lessons, topics or quizzes.
+
+### Cloning LearnDash quizzes
+
+Quiz cloning is where this module stands out — it copies quiz questions, which most other duplication plugins handle poorly. Behavior depends on your LearnDash **Shared Quiz Questions** setting (LearnDash 2.6+):
+
+- **Shared Quiz Questions disabled** — The duplicated quiz gets an independent copy of the questions. Editing them in one quiz does not affect the other.
+- **Shared Quiz Questions enabled** — The duplicated quiz is assigned the same questions as the original. Editing a question in one quiz changes it in both.
+
+**Note:** Because of how quiz question associations work, cloning an individual quiz question makes the clone appear in the same quiz as the original question.
+
+### Related Articles
+
+- [Reset Progress Button](https://www.uncannyowl.com/knowledge-base/learndash-reset/)
+- [Single Page Courses](https://www.uncannyowl.com/knowledge-base/single-page-courses/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+
+---
+
+## Drip Topics by LearnDash Group
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/drip-topics-by-ldgroup/](https://www.uncannyowl.com/knowledge-base/drip-topics-by-ldgroup/)
+
+### Overview
+
+Release individual LearnDash topics to each group on its own schedule, so different cohorts can progress through the same course at their own pace. This is for sites that run the same course for multiple groups on different timelines.
+
+LearnDash’s native drip dates apply the same schedule to everyone in a course. Drip Topics by Group lets you set topic drip dates **per LearnDash Group**, on specific calendar dates, so each group unlocks topics on dates that suit it.
+
+This works the same way as Drip Lessons by Group, but at the topic level — useful when you need finer control than dripping whole lessons.
+
+### Configure It
+
+Group drip dates are managed on the topic itself, under **Edit Topic > Settings** in the WordPress admin. When the module is active, a **Topic Group Drip Settings** metabox lists every group that has access to the topic.
+
+**Where to find it (Toolkit Pro v4.4.1+):** On the topic edit screen, the **Topic Group Drip Settings** are reached through a dedicated **Uncanny Toolkit** tab in the LearnDash settings header, just below the topic title. This tab was added in v4.4.1 so the settings stay easy to find under WordPress 7.0’s block editor, which otherwise collapses classic metaboxes out of view. The settings themselves are unchanged — only where you click to reach them.
+
+- **To schedule a topic for a group** — enter a drip date for the group and click **Save date**. The topic becomes available to that group’s members on the date you set.
+- **To choose the right course first (shared topics)** — if the topic appears in more than one course, pick the course from the **Switch Course** dropdown before the associated groups appear and before setting any dates.
+- **To schedule for students who are not in a group** — use LearnDash’s standard **Topic Access Settings** metabox instead. The group drip settings only apply to group members.
+
+**Important:** A drip date for a topic/group combination persists across all courses. If a group can access two courses that contain the same topic, you can only set **one** drip date for that topic.
+
+**Note:** If a group has access to the topic but does not appear in the list, double-check that the correct course is selected in the **Switch Course** dropdown.
+
+![LearnDash drip topic by group](https://www.uncannyowl.com/wp-content/uploads/2016/07/LearnDash-drip-topic-by-group-1030x436.png)
+
+### Usage
+
+For end users, topics stay locked until the drip date set for their group arrives, at which point the topic unlocks automatically.
+
+#### Removing a drip date
+
+To remove a drip date for a group, click **Remove date** next to that group’s date.
+
+**Important:** Drip Topics by Group does not currently support the LearnDash Notifications plugin. The notification trigger for this module is not registered (it is commented out in the code), so it cannot be selected in LearnDash Notifications. If you need “topic available” emails, that functionality is not available for this module. (Drip Lessons by Group does register its trigger and supports notifications.)
+
+### Related Articles
+
+- [Drip Lessons by Group](https://www.uncannyowl.com/knowledge-base/drip-lessons-by-ldgroup/)
+- [LearnDash Group Course Access Expiration](https://www.uncannyowl.com/knowledge-base/learndash-group-expiration/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+- [Cohort & Membership Programs](https://www.uncannyowl.com/knowledge-base/cohort-membership-programs/)
+
+---
+
+## Drip Lessons by LearnDash Group
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/drip-lessons-by-ldgroup/](https://www.uncannyowl.com/knowledge-base/drip-lessons-by-ldgroup/)
+
+### Overview
+
+Release lessons to each LearnDash Group on its own schedule, so different cohorts can move through the same course at their own pace. This is for sites that run the same course for multiple groups that started on different dates.
+
+Out of the box, LearnDash can release a lesson a set number of days after enrollment or on a fixed calendar date — but that schedule applies to every student in the course. Drip Lessons by Group lets you set lesson drip dates **per LearnDash Group**, on specific calendar dates.
+
+**Common use cases:**
+
+- An employer enrolls successive intakes of staff in the same onboarding course and wants each intake’s lessons to unlock on dates that match when they started.
+- A training provider runs the same course for several client organizations, each on its own timeline.
+
+### Configure It
+
+Group drip dates are managed on the lesson itself, under **Edit Lesson > Settings** in the WordPress admin. When the module is active, a **Lesson Group Drip Settings** metabox lists every group that has access to the lesson.
+
+**Where to find it (Toolkit Pro v4.4.1+):** On the lesson edit screen, the **Lesson Group Drip Settings** are reached through a dedicated **Uncanny Toolkit** tab in the LearnDash settings header, just below the lesson title. This tab was added in v4.4.1 so the settings stay easy to find under WordPress 7.0’s block editor, which otherwise collapses classic metaboxes out of view. The settings themselves are unchanged — only where you click to reach them.
+
+- **To schedule a lesson for a group** — enter a drip date for the group and click **Save date**. The lesson becomes available to that group’s members on the date you set.
+- **To choose the right course first (shared lessons)** — if the lesson belongs to more than one course, pick the course from the **Switch Course** dropdown before the associated groups appear and before setting any dates.
+- **To schedule for students who are not in a group** — use LearnDash’s standard **Lesson Access Settings** metabox instead. The group drip settings only apply to group members.
+
+**Important:** A drip date for a lesson/group combination persists across all courses. If a group can access two courses that contain the same lesson, you can only set **one** drip date for that lesson — you cannot drip the same lesson on different dates in two different courses for the same group.
+
+**Note:** If a group has access to the lesson but does not appear in the list, double-check that the correct course is selected in the **Switch Course** dropdown.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/07/lesson-drip-1030x230.png)
+
+### Usage
+
+For end users, lessons stay locked until the drip date set for their group arrives, at which point the lesson unlocks automatically.
+
+#### Removing a drip date
+
+To remove a drip date for a group, click **Remove date** next to that group’s date.
+
+#### Email notifications (LearnDash Notifications plugin)
+
+You can email students when a lesson becomes available based on their group’s drip date, using the LearnDash Notifications plugin. Create a notification with the trigger **A scheduled lesson is available to user with Uncanny Drip by Group**.
+
+**Note:** If you use both LearnDash’s native “Lesson Release Schedule” and lesson group drip and find that notification emails aren’t going out as expected, add the following filter to your child theme’s 
+```
+functions.php
+```
+
+ to prioritize group drip notifications:
+
+```
+add_filter( 'uo_drip_ignore_learndash_release_date', '__return_true' );
+```
+
+![LearnDash Group Drip Lesson Notifications](https://www.uncannyowl.com/wp-content/uploads/2021/02/LearnDash_Group_Drip_Lesson_Notification.png)
+
+### Related Articles
+
+- [Drip Topics by Group](https://www.uncannyowl.com/knowledge-base/drip-topics-by-ldgroup/)
+- [LearnDash Group Course Access Expiration](https://www.uncannyowl.com/knowledge-base/learndash-group-expiration/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+- [Cohort & Membership Programs](https://www.uncannyowl.com/knowledge-base/cohort-membership-programs/)
+
+---
+
+## Days Until Course Expiry
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/days-until-course-expiry/](https://www.uncannyowl.com/knowledge-base/days-until-course-expiry/)
+
+### Overview
+
+This module shows learners *how many days remain* until their course access expires. LearnDash can already display a fixed expiry date; use this when a countdown (“expires in 12 days”) is more motivating or clearer for your learners.
+
+LearnDash natively offers a shortcode that prints the date a learner’s course access ends. This module takes a different angle: instead of a date, it outputs the number of days left. That countdown framing is useful for renewal prompts, urgency messaging, and any place you’d rather say “your access expires in X days” than show a calendar date.
+
+By default the output reads: **Course Access Expires in X days**.
+
+### Setup
+
+There are two scenarios, and they decide whether you need to pass a course ID:
+
+- **On a course page (or its sidebar)** — Just add the **Days Until Course Expiry** block or the 
+```
+[uo_expiration_in]
+```
+
+ shortcode. It automatically detects the current course and shows the logged-in learner’s remaining days.
+- **On any other page** — The module can’t infer the course, so pass it explicitly with the course-id attribute, e.g. 
+```
+[uo_expiration_in course-id="123"]
+```
+
+.
+
+To change the lead-in wording, use the **pre-text** attribute, e.g. 
+```
+[uo_expiration_in pre-text="Your access will expire in:"]
+```
+
+.
+
+### Shortcode reference
+
+```
+[uo_expiration_in]
+```
+
+| Attribute | What it does | Example |
+| --- | --- | --- |
+| course-id | Specifies the course post ID — required when the shortcode isn’t on a course page | course-id=”123″ |
+| pre-text | Customizes the text shown before the day count | pre-text=”Your access will expire in:” |
+
+### Usage
+
+- On the final day of access, the count displays **0**.
+- After access has expired, nothing is displayed. Keep this in mind on closed course pages, where there may be no visible output for expired learners.
+
+**Note:** This is a Pro module — it must be installed and activated under Uncanny Toolkit Pro before the block or shortcode will render anything.
+
+### Related Articles
+
+- [Course Dashboard](https://www.uncannyowl.com/knowledge-base/learndash-course-dashboard/)
+- [Group Expiration](https://www.uncannyowl.com/knowledge-base/learndash-group-expiration/)
+- [Simple Course Timer](https://www.uncannyowl.com/knowledge-base/simple-course-timer/)
+- [Selling Online Courses: Certificates, Transcripts & Expiry](https://www.uncannyowl.com/knowledge-base/selling-online-courses-certificates-transcripts-expiry/)
+
+---
+
+## Autocomplete Lessons & Topics on Quiz Results Page
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics-quiz-results-page/](https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics-quiz-results-page/)
+
+### Overview
+
+Automatically mark a LearnDash lesson or topic complete the instant a learner reaches the results page of an associated quiz with a passing mark — no extra click required. This solves a common LearnDash gap where learners pass a quiz but never click **Click Here to Continue**, leaving their lesson or topic stuck as incomplete.
+
+By default, passing a LearnDash quiz doesn’t complete the lesson or topic on its own — the learner has to click through from the results page. Many never do, so their progress stalls. With this module enabled, reaching the quiz results page with a passing score marks the associated lesson or topic complete automatically.
+
+**Common use cases:**
+
+- Courses where quizzes gate progression and learners frequently get stuck on the results screen.
+- Reducing support requests about lessons that “won’t complete” after a passed quiz.
+
+When a lesson or topic has more than one quiz attached, it only marks complete once **all** of those quizzes have been passed.
+
+**Note:** “Newer versions” of LearnDash have this function built-in.
+
+### Configure It
+
+This module has no settings of its own — simply enabling it applies the behavior to all lessons and topics across the site.
+
+- Enable it when you want passing quiz results to reliably complete the associated lesson or topic everywhere.
+- There is no per-lesson or per-topic configuration.
+
+**Important:** A few constraints to keep in mind:
+
+- **Passing mark required.** Completion only triggers when the learner achieves a passing score.
+- **Global only.** The setting applies site-wide; you cannot enable it for some lessons or topics and not others.
+- **Not retroactive.** It does not apply to work completed before the module was activated.
+
+### Usage
+
+The learner takes the associated quiz and passes. As soon as they land on the results page, the lesson or topic is marked complete automatically — they don’t need to click **Click Here to Continue** to record completion.
+
+**Note:** For completion logic at the *course* level, or rules driven by quiz results that go beyond what this module covers, [Uncanny Automator](https://automatorplugin.com/) offers more flexible options.
+
+### Related Articles
+
+- [Autocomplete Lessons & Topics](https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics/)
+- [Autocomplete Lessons & Topics when Quiz is Graded](https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics-when-quiz-is-graded/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/↗)
+
+---
+
+## Autocomplete Lessons & Topics on Gravity Forms Submission
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/gravity-forms-auto-completes-lessons-topics/](https://www.uncannyowl.com/knowledge-base/gravity-forms-auto-completes-lessons-topics/)
+
+### Overview
+
+Mark a LearnDash lesson or topic complete the moment a learner submits a Gravity Form on that page. This is perfect for steps that require an action first — signing an agreement, answering a survey, or submitting feedback — before the learner can move on.
+
+With this module enabled and autocompletion turned on for a specific form, the form’s submit button replaces the standard **Mark Complete** button. When the learner submits the form, the lesson or topic is marked complete automatically.
+
+Common use cases:
+
+- Acknowledgement or consent forms a learner must complete before continuing.
+- Surveys, quizzes, or feedback collected at a specific point in a course.
+- Any step where completion should be tied to a deliberate form submission.
+
+**Important:** For this module to work, lessons must be associated with a course, and topics must be associated with both a lesson and a course.
+
+### Configure It
+
+#### Turn on autocompletion for the form
+
+Enable autocompletion in the Gravity Form’s settings (the **Mark Lesson/Topic Complete** option — “Enable to Mark Lesson/Topic Autocomplete”) so its submit button takes over as the completion trigger for that lesson or topic.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/07/gravity-form-setting.png)
+
+#### Decide whether learners can resubmit a previously completed form
+
+If the same form appears across multiple pages, lessons, or topics, use the **Hide the Mark Complete button if the user has a previous entry** setting:
+
+- Keep it **enabled** when a single submission should count everywhere — the learner won’t be asked again once they’ve submitted.
+- **Disable** it when learners should submit the form fresh in each course context — useful for surveys or feedback that need to be collected per lesson, even if an earlier entry exists.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/07/Enable-Gravity-Form-module.png)
+
+#### Decide how learners advance after submitting
+
+To advance learners to the next topic or lesson automatically after submission:
+
+- Disable AJAX form submission (use ajax=false in the form shortcode).
+- Remove any redirect settings from the form’s confirmation options.
+
+| Attribute | Where it goes | Purpose |
+| --- | --- | --- |
+| ajax=false | Gravity Form shortcode | Disables AJAX submission so the page reload can trigger auto-advance |
+
+**Note:** If the form is on the final topic of a lesson, learners return to that lesson after submitting rather than advancing to the next lesson.
+
+### Usage
+
+The learner fills in and submits the Gravity Form as usual. On submission, the lesson or topic is marked complete — there’s no separate **Mark Complete** step.
+
+**Important:** This module works alongside the standard **Autocomplete Lessons & Topics** module, which marks content complete on page load. That can conflict with form-based steps that require input first. On pages where a form submission should drive completion, disable page-load autocompletion for that lesson or topic.
+
+### Related Articles
+
+- [Autocomplete Lessons & Topics](https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics/)
+- [Autocomplete Lessons & Topics on Fluent Forms Submission](https://www.uncannyowl.com/knowledge-base/ffforms-auto-completes-lessons-topics/)
+- [Autocomplete Lessons & Topics on WPForms Submission](https://www.uncannyowl.com/knowledge-base/wpforms-auto-completes-lessons-topics/)
+- [Autocomplete Lessons & Topics on Formidable Forms Submission](https://www.uncannyowl.com/knowledge-base/formidable-auto-completes-lessons-topics/)
+
+---
+
+## Autocomplete Lessons & Topics
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics/](https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics/)
+
+### Overview
+
+Automatically mark LearnDash lessons and topics as complete the moment a learner opens them, so they progress through a course without hunting for the **Mark Complete** button. This is ideal for content-light steps, introductions, or any course where you want a frictionless flow.
+
+When this module is active, opening a lesson or topic marks it complete on page load, and the standard **Mark Complete** button no longer appears. You control this behavior globally for the whole site, then override it on individual lessons or topics where you’d rather keep a manual completion step.
+
+**Common use cases:**
+
+- Welcome, overview, or “read this first” pages where there’s nothing for the learner to actively complete.
+- Video- or text-only courses where you want learners to move through automatically.
+- Mixed courses where most steps should autocomplete, but a few graded or timed steps should not.
+
+Autocompletion is intentionally skipped when a learner still has something to do on the page. It does **not** occur when:
+
+- The lesson or topic includes an incomplete assignment.
+- The lesson or topic contains one or more incomplete quizzes.
+- The lesson includes incomplete topics.
+- The lesson or topic has a timer enabled.
+- The lesson is being dripped (or Group Dripped) and is not yet available.
+- The lesson or topic contains a Fluent Form and the **Autocomplete Lessons & Topics on Fluent Form Submission** module is enabled.
+- The lesson or topic contains a Formidable Form and the **Autocomplete Lessons & Topics on Formidable Form Submission** module is enabled.
+- The lesson or topic contains a Gravity Form and the **Autocomplete Lessons & Topics on Gravity Form Submission** module is enabled.
+- The lesson or topic contains a WPForms Form and the **Autocomplete Lessons & Topics on WPForms Form Submission** module is enabled.
+
+**Important:** For this module to work, lessons must be associated with a course, and topics must be associated with both a lesson and a course. Autocompletion is also disabled for any lesson or topic that contains modules uploaded with the Tin Canny plugin.
+
+### Configure It
+
+#### Decide your site-wide default
+
+When you enable the module, **Enable auto-completion for all lessons and topics** is turned on by default. This applies to every lesson and topic that isn’t already complete.
+
+- Leave it **on** if most of your content should autocomplete and you’ll make exceptions case by case.
+- Turn it **off** if you only want autocompletion on a handful of specific lessons or topics, then enable those individually.
+
+#### Override on individual lessons and topics
+
+On the Edit screen for a lesson or topic, use the **Auto Complete** drop-down to override the global default:
+
+- **Disabled** — No autocompletion on page load. The **Mark Complete** button stays visible. Choose this for steps that require deliberate action.
+- **Enabled** — The lesson or topic autocompletes on page load, regardless of the global setting.
+- **Use Global Setting (default)** — Inherits whatever you set globally.
+
+**Note:** Topics do not inherit a lesson’s autocompletion setting. A setting applied to a topic does not roll up to its parent lesson, so configure topics individually where needed.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/07/autocomplete-dropdown.png)
+
+### Usage
+
+For the learner, an autocompleting lesson or topic simply marks itself done on open — there’s no button to click.
+
+#### The Done button
+
+So learners are never stranded without a way forward, a **Done** button automatically appears on the last incomplete lesson or topic. It acts as a final **Mark Complete** button and triggers course completion. Its behavior depends on your course progression mode.
+
+**Note:** When a learner completes the last topic in a lesson that has autocompletion enabled, they are returned to that lesson — not moved straight to the next lesson.
+
+### Related Articles
+
+- [Autocomplete Lessons & Topics on Quiz Results Page](https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics-quiz-results-page/)
+- [Autocomplete Lessons & Topics when Quiz is Graded](https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics-when-quiz-is-graded/)
+- [Autocomplete Lessons & Topics on Gravity Form Submission](https://www.uncannyowl.com/knowledge-base/gravity-forms-auto-completes-lessons-topics/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+
+---
+
+## Uncanny LearnDash Toolkit Pro – Quick Reference
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-pro-quick-reference/](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-pro-quick-reference/)
+
+A single-page map of every Toolkit Pro module, what it does, and the shortcodes it provides. Use it to find the right module fast, then open that module’s full article for setup details.
+
+| Module | Shortcodes | Description |
+| --- | --- | --- |
+| Autocomplete Lessons & Topics | N/A | When enabled, Lessons and Topics are automatically marked complete on load.  Can be set globally or per-page. |
+| Autocomplete Lessons & Topics on Gravity Forms Submission | N/A | Lets you control whether or not to automatically mark a lesson or topic as completed when you submit a Gravity Form on that page. |
+| Autocomplete Lessons & Topics on Quiz Results Page | N/A | When enabled, this module automatically marks LearnDash lessons and topics as completed when the user reaches the results page of an associated quiz with a passing mark. |
+| Days Until Course Expiry | [uo_expiration_in] | Displays the days remaining until the course expires for the current user. |
+| Drip Lessons by LearnDash Group | N/A | Adds an option to drip lessons to different LearnDash Groups on specified dates and times.  Accessed from the Edit Lesson page. |
+| Duplicate Pages & Posts | N/A | Enables easy duplication of pages, posts, courses, lessons, topics, quizzes, certificates, and groups. |
+| Enhanced Course Grid | [uo_courses] | Displays courses in a flexible grid format.  See full documentation for available configuration options. |
+| Enhanced Lesson/Topic Grid | [uo_lessons_topics_grid] | When added to a page it will automatically display the lessons or topics in grid format. |
+| Improved Group Leader Interface | N/A | Streamlines the Group Leader interface by removing unnecessary elements and emphasizing the important ones.  Automatically makes group leaders members of the group(s) they manage and enrolls them in the courses. |
+| Import LearnDash Users | N/A | Lets you not only create new users in bulk but also add them to courses and LearnDash Groups, all from a CSV file. |
+| LearnDash Course Dashboard | [uo_dashboard  sample='sample'] | Displays a responsive list of the user's enrolled courses.  Courses can be expanded to display lessons, topics and quiz results. |
+| LearnDash Group Expiration | N/A | Enables expiration of courses for LearnDash groups, as well as expiration notification via email. |
+| LearnDash Group Registration | [uo_group_status]
+[uo_group_organization] | Enable users to register themselves directly into LearnDash groups and to switch groups from the front end.  Requires setup - see full documentation. |
+| LearnDash Group Logo/List | [uo_group_logo]
+[uo_group_list] | Show group logo(s) (based on the signed-in user) and group name(s) in the front end via shortcodes. |
+| LearnDash Table Colors | N/A | Enables changing the colors of LearnDash table headings. |
+| Learner Transcript | [uo_transcript] | Displays printable LearnDash transcript for the current user. |
+| Sample Lesson Label | N/A | Lets you add and customize labels for sample lessons. |
+| Simple Course Timer | [uo_time]
+[uo_time_course_completed] | Tracks time users spend in courses.  Optional shortcodes display total time spent or time until course completion.  Enables blocking access to quizzes until minimum time spent in course. |
+| Send Course Certificates by Email | N/A | Attaches a certificate to the email that is sent to the user upon the successful completion of a course |
+| Send Quiz Certificates by Email | N/A | Attaches a certificate to the email that is sent to the user upon the successful completion of a quiz |
+
+**Tip:** Shortcode attributes vary by module. Open each module’s full article for the complete list of attributes and examples.
+
+### Related Articles
+
+- [Install the Uncanny Toolkit Pro for LearnDash](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-toolkit-pro-for-learndash/)
+- [Enhanced LearnDash CSV Reports](https://www.uncannyowl.com/knowledge-base/enhanced-learndash-csv-reports/)
+- [Import LearnDash Users](https://www.uncannyowl.com/knowledge-base/import-learndash-users/)
+- [Getting Started with Uncanny Toolkit Pro](https://www.uncannyowl.com/knowledge-base/getting-started-with-uncanny-toolkit-pro/)
+
+---
+
+## Topics Autocomplete Lessons (Legacy)
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/topics-autocomplete-lessons/](https://www.uncannyowl.com/knowledge-base/topics-autocomplete-lessons/)
+
+### Overview
+
+Topics Autocomplete Lessons automatically marks a lesson as complete once all of the topics inside it are finished, then sends the learner on to the next lesson. This is a legacy module, retained for backward compatibility on older LearnDash setups.
+
+### What This Module Does
+
+When this module is enabled, if all topics in a lesson are marked as completed, the lesson is marked as completed automatically and the user is directed to the next lesson.
+
+This removes a common point of friction: without it, learners often have to navigate back to a lesson page they have already worked through and click a completion button before they can continue. With the module on, that step happens for them as soon as the last topic is done.
+
+A note on behavior: enabling this module does not hide the lesson’s **Mark Complete** button. It only adds the automatic completion behavior. Whether learners still see that button depends on your course’s progression settings (open vs. linear).
+
+### How to Enable It
+
+1. In your WordPress admin, go to the **Uncanny Toolkit** settings page.
+2. Locate the **Topics Autocomplete Lessons** module.
+3. Turn the module on.
+
+That’s all that’s required. There are no additional configuration options for this module.
+
+### Legacy Status and Modern Alternatives
+
+This module predates the course navigation changes introduced in LearnDash 4.11. With those changes, this module is considered redundant with native LearnDash functionality and is no longer recommended for sites running LearnDash 4.11 or higher.
+
+The module remains supported and continues to function as before for sites that still rely on it. As part of Toolkit v3.8.0, we completed internal deprecated-function cleanup so the module stays compatible with current WordPress and PHP versions. No settings or behavior changed in that release.
+
+If you are setting up a new course or running LearnDash 4.11+, we recommend using LearnDash’s built-in course navigation and progression options for autocompletion rather than enabling this module. For related automatic advancement on quizzes, see the Toolkit’s **Quiz Completion Advances to Next Step** module.
+
+### Related Articles
+
+- [Introduction to the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/)
+- [Install the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/)
+- [Quiz Completion Advances to Next Step](https://www.uncannyowl.com/knowledge-base/quiz-completion-advances-to-next-step/)
+
+---
+
+## Show or Hide Content
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/show-hide-content/](https://www.uncannyowl.com/knowledge-base/show-hide-content/)
+
+### Overview
+
+Show the right content to the right visitors. The**Show or Hide Content**module lets you display or hide any block of content based on whether a visitor is logged in or logged out, so members and anonymous visitors each see exactly what’s meant for them.
+
+The**Show or Hide Content**module adds a simple shortcode to your site that conditionally reveals or conceals whatever content you wrap inside it. It’s especially useful for**Open**LearnDash course types, where anyone can view the page but you want logged-in members to see extra material, or you want to encourage logged-out visitors to sign up.
+
+**Common uses include:**
+
+- Showing bonus content or member-only resources to logged-in users.
+- Presenting a call to action (sign up, log in, enroll) to logged-out visitors.
+- Giving anonymous visitors a taste of a course while keeping the full content reserved for members.
+
+This is a free module included in the**Uncanny Toolkit for LearnDash**.
+
+### Enabling the Module
+
+1. In your WordPress admin, go to**Uncanny Toolkit**.
+2. Locate the**Show Or Hide Content**module.
+3. Click**Activate**to turn it on.
+
+The module has no additional settings — once it’s active, the shortcode is ready to use anywhere shortcodes are supported.
+
+[Screenshot: Uncanny Toolkit modules screen, the “Show Or Hide Content” module card with its Activate toggle in the on state]
+
+### How It Works
+
+Wrap any content in the [uo_show] shortcode and set the forattribute to control who sees it. Visitors who don’t match the condition simply won’t see the wrapped content — it’s removed from the page entirely rather than hidden with CSS.
+
+#### Shortcode Reference
+
+| Shortcode | Attribute | Accepted Values | Description |
+| --- | --- | --- | --- |
+| [uo_show] | for | loggedin | Shows the wrapped content only to logged-in users. |
+| [uo_show] | for | loggedout | Shows the wrapped content only to logged-out (anonymous) visitors. |
+
+[uo_show] (with a hyphen) works as an alias for [uo_show] if you prefer that spelling.
+
+### Usage Examples
+
+Show content only to logged-in users:
+
+```
+[uo_show for='loggedin']
+This bonus material is only visible to logged-in members.
+[/uo_show]
+```
+
+Show content only to logged-out visitors:
+
+```
+[uo_show for='loggedout']
+Create a free account to unlock the full course!
+[/uo_show]
+```
+
+You can use both shortcodes on the same page to tailor the experience for each audience:
+
+```
+[uo_show for='loggedin']Welcome back! Continue where you left off below.[/uo_show]
+[uo_show for='loggedout']Log in to track your progress.[/uo_show]
+```
+
+The content inside [uo_show] is fully processed, so you can nest other shortcodes inside it. For example, you can place a login form or another LearnDash shortcode within a [uo_show for='loggedout'] block.
+
+## Tips and Recommendations
+
+- We recommend pairing [uo_show for='loggedout'] with a clear call to action — a sign-up link or login prompt — to convert anonymous visitors into members.
+- The [uo_show] shortcode checks login status only. To show or hide content based on LearnDash enrollment, LearnDash’s own [visitor] and [student] shortcodes work on course pages and filter by enrollment status.
+- Because non-matching content is removed from the page, it won’t appear in the page source — making it a clean way to keep member-only material private.
+
+### Related Articles
+
+- [Menu Item Visibility](https://www.uncannyowl.com/knowledge-base/menu-item-visibility/)
+- [Not Enrolled Redirect](https://www.uncannyowl.com/knowledge-base/redirect-user-if-not-enrolled/)
+- [Front End Login](https://www.uncannyowl.com/knowledge-base/front-end-login/)
+
+---
+
+## Show Certificates
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/show-learndash-certificates/](https://www.uncannyowl.com/knowledge-base/show-learndash-certificates/)
+
+### Overview
+
+Give your learners one easy place to find and download every certificate they’ve earned. The **Show Certificates** module adds a shortcode that lists a logged-in user’s LearnDash course and quiz certificates anywhere on your site, so achievements are always just a click away.
+
+### What This Module Does
+
+Once enabled, the **Show Certificates** module provides the 
+```
+[uo_learndash_certificates]
+```
+
+ shortcode (the hyphenated alias 
+```
+[uo-learndash-certificates]
+```
+
+ also works). Drop it onto any page, post, or block area and signed-in learners will see a tidy list of the certificates they’ve earned, each linked for viewing and download.
+
+The list automatically reflects what each learner has unlocked:
+
+- **Course certificates** are listed alphabetically by course title.
+- **Quiz certificates** are shown newest-first (the reverse of the order the attempts were recorded).
+- **Group certificates** are also included.
+- If a learner earns the same certificate more than once, each instance is shown, matching LearnDash’s native behavior.
+
+Because the shortcode only ever displays certificates for the currently logged-in user, you can safely place it on a shared “My Certificates” or account page.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/05/show-certificates-3.png)
+
+### How It Relates to the Certificate Widget
+
+**Show Certificates** and the **Certificate Widget** are two independent ways to display a learner’s earned certificates — they do **not** depend on each other, and each builds its own certificate list directly from LearnDash.
+
+- **Show Certificates** provides the 
+```
+[uo_learndash_certificates]
+```
+
+ shortcode for placing a certificate list directly in page or post content.
+- The [Certificate Widget](https://www.uncannyowl.com/knowledge-base/learndash-certificate-widget/) displays a similar list inside a sidebar or other widget area.
+
+Enable whichever fits where you want the list to appear — or both. Enabling one is not a prerequisite for the other.
+
+### How to Enable the Module
+
+1. In your WordPress admin, go to **Uncanny Toolkit**.
+2. Find the **Show Certificates** module and click **Activate**.
+3. The [uo_learndash_certificates] shortcode is now ready to use anywhere on your site.
+
+### Using the Shortcode
+
+Add the shortcode to any page or post to display the current learner’s certificates:
+
+```
+[uo_learndash_certificates]
+```
+
+#### Shortcode Attributes
+
+You can refine the output with the following attributes:
+
+- title — Sets a custom heading above the certificate list. Example: 
+```
+[uo_learndash_certificates title="My Certificates"]
+```
+- class — Adds a custom CSS class to the list container for styling. Example: 
+```
+[uo_learndash_certificates class="my-custom-class"]
+```
+- course_certificates — Show or hide course certificates. Accepts show (default) or hide.
+- quiz_certificates — Show or hide quiz certificates. Accepts show (default) or hide.
+- group_certificates — Show or hide group certificates. Accepts show (default) or hide.
+- no-cert-message — Custom message shown when the learner has no certificates (default: *Complete courses to earn certificates*).
+
+To hide a whole category, set its attribute to hide. The shortcode only outputs nothing if **all three** certificate types (course_certificates, quiz_certificates, and group_certificates) are set to hide and the learner has no certificates to show.
+
+### Tips and Troubleshooting
+
+- The shortcode only renders certificates for the logged-in user, so be sure to test it while signed in as a learner who has earned at least one certificate.
+- Certificates must be properly configured and earned in LearnDash before they will appear. If the list is empty, confirm the learner has completed the relevant course or quiz.
+- Some page builders process shortcodes differently. If the list doesn’t render as expected, we recommend testing the shortcode in the standard WordPress editor first to confirm it’s working.
+
+### Related Articles
+
+- [LearnDash Certificate Widget](https://www.uncannyowl.com/knowledge-base/learndash-certificate-widget/)
+- [Introduction to the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/)
+- [Install the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/)
+
+---
+
+## Menu Item Visibility
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/menu-item-visibility/](https://www.uncannyowl.com/knowledge-base/menu-item-visibility/)
+
+### Menu Item Visibility
+
+Show different menu items to logged-in and logged-out visitors, so each audience sees only the links that matter to them. The Menu Item Visibility module adds a simple per-item control to your WordPress menus, with no code required.
+
+### What This Module Does
+
+When enabled, Menu Item Visibility adds a visibility setting to every item in your WordPress menus. You can choose whether each item appears for everyone, only for signed-in users, or only for signed-out users.
+
+This is ideal for streamlining navigation. For example, you can hide a **Log In** link from members who are already signed in, or show a **My Courses** link only to logged-in students.
+
+### Enabling the Module
+
+1. In your WordPress dashboard, go to **Uncanny Toolkit**.
+2. Find **Menu Item Visibility** in the list of modules.
+3. Turn the module on.
+
+No further configuration is needed at the module level. Once it’s active, the new visibility controls appear automatically inside your menu editor.
+
+### Setting Visibility on a Menu Item
+
+Visibility is set individually for each menu item under **Appearance > Menus**.
+
+1. Go to **Appearance > Menus**.
+2. Select the menu you want to edit.
+3. Click a menu item to expand its settings.
+4. Under the **Display Mode** control, choose who should see the item:
+- **Everyone** (default)
+- **Logged In Users**
+- **Logged Out Users**
+5. Repeat for any other items you want to control.
+6. Click **Save Menu**.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/05/menu-item-visibility.png)
+
+That’s it. The visibility rule applies immediately on the front end of your site, and any item without a rule continues to display for everyone.
+
+### What This Module Doesn’t Do
+
+Menu Item Visibility controls visibility based on login status only. It does not offer role-based granularity, so you can’t restrict a menu item to a specific user role (such as showing a link only to a particular group or membership level).
+
+If you need per-role menu control, we recommend the free **Nav Menu Roles** plugin instead.
+
+#### Important: Conflict with Nav Menu Roles
+
+Menu Item Visibility and the **Nav Menu Roles** plugin cannot run at the same time. If you use Nav Menu Roles, disable the **Menu Item Visibility** module in the Uncanny Toolkit to avoid a conflict between the two.
+
+Choose one approach based on your needs:
+
+- Use **Menu Item Visibility** for simple logged-in vs. logged-out control.
+- Use **Nav Menu Roles** if you need to target specific user roles.
+
+### Related Articles
+
+- [Log In/Log Out Links](https://www.uncannyowl.com/knowledge-base/log-in-log-out-links/)
+- [Front End Login](https://www.uncannyowl.com/knowledge-base/front-end-login/)
+- [Hide Admin Bar](https://www.uncannyowl.com/knowledge-base/hide-admin-bar/)
+
+---
+
+## Log In/Log Out Redirects
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-login-redirect/](https://www.uncannyowl.com/knowledge-base/learndash-login-redirect/)
+
+### Overview
+
+Send your learners exactly where you want them to go after they log in or log out. This Uncanny Toolkit for LearnDash module lets you set custom destination URLs for non-administrator users, so members land on a course dashboard, a profile page, or any URL you choose instead of the default WordPress screen.
+
+### What This Module Does
+
+The **Log In/Log Out Redirects** module sends non-administrator users to URLs you specify:
+
+- **After login** — for example, your course list, a “My Courses” page, or a personalized dashboard.
+- **After logout** — for example, your homepage, a sales page, or a custom goodbye page.
+
+Administrators are intentionally excluded from these redirects so they continue to reach /wp-admin/ as usual. This keeps your management workflow intact while giving members a tailored experience.
+
+### How to Set It Up
+
+1. In your WordPress admin, go to **Uncanny Toolkit**.
+2. Locate the **Log In/Log Out Redirects** module and click **Activate** (then **Settings** if it doesn’t open automatically).
+3. Enter the full destination URL in the **Login Redirect** field (for example, 
+```
+https://yoursite.com/my-courses/
+```
+
+).
+4. Enter the full destination URL in the **Logout Redirect** field (for example, 
+```
+https://yoursite.com/)
+```
+
+.
+5. Click **Save** to apply your changes.
+
+We recommend using complete URLs (including 
+```
+https://
+```
+
+) rather than relative paths to avoid protocol mismatches.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/05/Log-InLog-Out-Redirects.png)
+
+**Important:** If you have **any** other plugin on your site that can redirect users on login or logout, it will, in all likelihood, override this Toolkit redirect. See the Troubleshooting section below before activating this module.
+
+### Adjusting Redirect Priority
+
+The module includes an adjustable redirect priority value in its settings. If another plugin or theme is intercepting the redirect before Toolkit can act, increasing this value can help Toolkit take priority. This is a common fix for conflicts with page builders such as Elementor Pro.
+
+### Troubleshooting
+
+#### Conflicts With Other Redirect Plugins
+
+Plugins that manage login behavior, such as **LoginWP** (formerly Peter’s Login Redirect), **Theme My Login**, and **UserPro**, will all take priority over this module. If your redirect isn’t working, a competing plugin is the most likely cause.
+
+- Temporarily deactivate other login/redirect plugins to confirm the conflict.
+- If you can’t remove the conflicting plugin, configure the redirect within that plugin instead, or try increasing the redirect priority value (see above).
+
+**Note:** If a conflict can’t be resolved through Toolkit, a dedicated redirect plugin such as **LoginWP** can be configured to override other plugins and handle the redirect for you.
+
+#### Redirects Not Firing or Caching Interference
+
+Server-side caching can serve a cached page before the redirect runs, especially on your homepage.
+
+- Ask your host to add cache exclusions for the pages involved in the redirect.
+- Pay particular attention to homepage caching layers such as **Varnish**.
+
+**Important:** Always clear your cache after changing redirect settings, and test in a private/incognito window to rule out browser-cached results.
+
+#### Redirect Loops or Repeated Login Prompts
+
+If users are bounced back to the login screen repeatedly, you’re likely dealing with an HTTPS/HTTP mismatch.
+
+- Confirm your SSL certificate is installed and that your **WordPress Address** and **Site Address** (under **Settings > General**) both use https://.
+- Make sure the redirect URLs you entered use the same protocol (https://) as the rest of your site.
+- Avoid pointing a login redirect at a page that itself redirects logged-out users back to login, which can create a loop.
+
+### Related Articles
+
+- [Front End Login](https://www.uncannyowl.com/knowledge-base/front-end-login/)
+- [Log In/Log Out Links](https://www.uncannyowl.com/knowledge-base/log-in-log-out-links/)
+- [Not Enrolled Redirect](https://www.uncannyowl.com/knowledge-base/redirect-user-if-not-enrolled/)
+
+---
+
+## Log In/Log Out Links
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/log-in-log-out-links/](https://www.uncannyowl.com/knowledge-base/log-in-log-out-links/)
+
+### Overview
+
+Add log in, log out, and registration links anywhere on your site using simple shortcodes, or drop them straight into your navigation menus. The **Log In/Log Out Links** module gives you a fast, code-free way to point users to the right action based on whether they’re signed in.
+
+### What This Module Does
+
+Once the module is enabled, you get four shortcodes that display context-aware links: a log in link for signed-out users, a log out link for signed-in users, a combined link that switches automatically, and a link to your registration page. You can place these shortcodes in pages, posts, and widgets, or add them to any WordPress menu through a dedicated **Uncanny Menu Links** section.
+
+### Shortcode Reference
+
+Wrap your link text inside the shortcode tags. The text between the opening and closing tags becomes the clickable link.
+
+| Shortcode | What it does |
+| --- | --- |
+| [uo_login_link] | Displays a log in link to signed-out users. |
+| [uo_logout] | Displays a log out link to signed-in users. |
+| [uo_loginout] | Automatically shows a log in link to signed-out users and a log out link to signed-in users. |
+| [uo_register] | Displays a link to your site’s registration page. |
+
+For example, to show a log in prompt you’d use:
+
+```
+[uo_login_link] Log In [/uo_login_link]
+```
+
+The [
+```
+uo_loginout
+```
+
+] shortcode is the most convenient option for navigation menus and headers, since a single link handles both states for you.
+
+### Adding Links to a Menu
+
+You can add log in, log out, and registration links directly to any WordPress menu without writing a shortcode. While logged in as an administrator:
+
+1. Go to **Appearance > Menus**.
+2. Locate the **Uncanny Menu Links** section on the left side of the screen.
+3. Check the menu entries you want to add.
+4. Click **Add to Menu**.
+5. Drag the new items into the desired position, then click **Save Menu**.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/05/login-logout-menu-expanded.png)
+
+#### 
+
+#### About Registration Links
+
+The Toolkit does not include its own registration page or replace WordPress’s built-in registration functions. The [uo_register] link simply points to whatever registration setup already exists on your site.
+
+If you want a branded, fully featured registration experience, we recommend pairing the Toolkit with a dedicated form plugin such as Gravity Forms with the User Registration add-on.
+
+### Optional: Front End Login Modal
+
+If you’d like the log in link to open a pop-up modal instead of loading a separate page, the **Front end login modal** menu item is available. To use it, make sure:
+
+- The **Front End Login** module is enabled.
+- **AJAX** is enabled in the Front End Login settings.
+- A **Login Page** is set in the Front End Login settings.
+
+The modal works with any login template — there is no requirement to use a specific template.
+
+### Related Articles
+
+- [Front End Login](https://www.uncannyowl.com/knowledge-base/front-end-login/)
+- [Log In/Log Out Redirects](https://www.uncannyowl.com/knowledge-base/learndash-login-redirect/)
+- [Menu Item Visibility](https://www.uncannyowl.com/knowledge-base/menu-item-visibility/)
+
+---
+
+## Resume Button
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-resume/](https://www.uncannyowl.com/knowledge-base/learndash-resume/)
+
+### Overview
+
+The **Resume Button** module gives learners a one-click way to jump straight back to the last course, lesson, topic, or quiz they were working on. Removing the friction of hunting for where they left off keeps learners moving and helps drive course completion.
+
+Once you enable the module, you can drop a Resume button (or link) anywhere on your site outside of LearnDash content, such as a dashboard, welcome page, or members area. When a signed-in learner clicks it, they are returned to the last LearnDash post they visited.
+
+The button only appears for learners who have visited LearnDash content before. If a learner has no activity yet, the button stays hidden, so there is nothing to click until they have actually started a course.
+
+![Resume button with lesson text](https://www.uncannyowl.com/wp-content/uploads/2019/02/resume-button_with-lesson-name-500x295.png)
+
+### Enabling the Module
+
+1. In your WordPress admin, go to **Uncanny Toolkit**.
+2. Find the **Resume Button** module.
+3. Click **Activate** to turn it on.
+
+### Adding the Resume Button
+
+Place the shortcode on any page or post that is **not** LearnDash content. We recommend a course dashboard or a members-only page so the button is only seen by learners who are signed in.
+
+### Resume the Last Visited Post
+
+Use this shortcode to send the learner back to the most recent LearnDash course, lesson, topic, or quiz they visited:
+
+```
+[uo_learndash_resume]
+```
+
+#### Resume a Specific Course
+
+To link directly to a learner’s last position within a particular course, use the course-specific shortcode and pass the course ID:
+
+```
+[uo_course_resume course_id="x"]
+```
+
+Replace x with the ID of the course you want the button to target.
+
+| Attribute | Description |
+| --- | --- |
+| course_id | Required. The ID of the course the button links to. |
+
+#### Render a Link Instead of a Button
+
+If you prefer a text link rather than a button, use the link shortcode:
+
+```
+[uo_learndash_resume_link]
+```
+
+To output only the raw URL of the learner’s last visited page (for example, to build your own custom link or pass it elsewhere), add the 
+```
+url_only
+```
+
+ attribute:
+
+```
+[uo_learndash_resume_link url_only="yes"]
+```
+
+| Attribute | Description |
+| --- | --- |
+| url_only | Set to yes to output only the URL of the last visited page instead of a hyperlink. |
+
+### Styling the Button
+
+The Resume button automatically adopts the styles set for form submit buttons on your site, so it should match your theme out of the box. To customize it further, target the following selector in your CSS:
+
+```
+a.learndash-resume-button input[type="submit"]
+```
+
+### Important Notes
+
+- Learners must be **signed in** for the button to work, since it depends on their personal activity history. We recommend placing it on a members-only or password-protected page.
+- The button hides itself when the learner is **already on the exact page it would link to** (its resume target), to avoid a link that points to the current page. We still recommend placing it on a non-LearnDash page such as a dashboard or landing page.
+- The button stays hidden for learners who have not yet visited any LearnDash content.
+
+### Related Articles
+
+- [Introduction to the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/)
+- [Breadcrumb Links](https://www.uncannyowl.com/knowledge-base/learndash-breadcrumb-links/)
+- [Quiz Completion Advances to Next Step](https://www.uncannyowl.com/knowledge-base/quiz-completion-advances-to-next-step/)
+
+---
+
+## Groups in User Profiles
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-groups-user-profiles/](https://www.uncannyowl.com/knowledge-base/learndash-groups-user-profiles/)
+
+See at a glance which LearnDash Groups a user belongs to, right on their WordPress profile screen, without clicking through every group to check.
+
+### Overview
+
+On sites with more than a handful of LearnDash Groups, answering a simple question like “which groups is this user in?” can mean opening each group one by one. The **Groups in User Profiles** module from the Uncanny Toolkit for LearnDash solves this by listing every group a user belongs to directly on their WordPress admin profile (edit-user) screen.
+
+This is a read-only convenience for administrators. It surfaces group membership where you’re already working, making it faster to trace a user’s access and troubleshoot enrollment or permissions questions.
+
+This module is part of the free Uncanny Toolkit for LearnDash. If you haven’t installed the Toolkit yet, see [Install the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/).
+
+### How to Enable It
+
+1. In your WordPress admin, go to **Uncanny Toolkit**.
+2. Locate the **Groups in User Profiles** module.
+3. Click **Activate** to turn the module on.
+
+There are no additional settings to configure. Once activated, the group list appears automatically on user profile screens.
+
+### What It Shows
+
+Once the module is active, the user’s profile screen displays a list of all LearnDash Groups that user currently belongs to. This gives administrators a quick way to trace group membership and access across sites that manage many groups.
+
+The list is **display-only**. You cannot add or remove a user from a group from this view. To change a user’s group memberships, you’ll still need to open the associated LearnDash Group and manage its users there.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/Groups-in-User-Profiles.png)
+
+### Where to Find It
+
+The group list appears on the WordPress backend, not the front end. To view it:
+
+1. Go to **Users > All Users**.
+2. Click the user you want to inspect (or use the **Edit** link).
+3. Scroll down the profile screen to find the section listing the user’s LearnDash Group memberships.
+
+### Displaying Groups on the Front End (Pro)
+
+The Groups in User Profiles module is built for administrators working in the WordPress dashboard. If you want to show a user their own group memberships on the front end of your site, the Uncanny Toolkit Pro plugin includes a **Group List shortcode** for that purpose.
+
+The Group List shortcode is part of Toolkit Pro, so you’ll need Pro installed with that module activated to use it. For more on what Toolkit and Toolkit Pro offer, see the [Introduction to the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/).
+
+### Related Articles
+
+- [Introduction to the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/)
+- [Install the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/)
+- [Hide Admin Bar](https://www.uncannyowl.com/knowledge-base/hide-admin-bar/)
+
+---
+
+## Certificate Widget
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-certificate-widget/](https://www.uncannyowl.com/knowledge-base/learndash-certificate-widget/)
+
+### Overview
+
+The Certificate Widget gives your learners one convenient place to find every certificate they’ve earned. Drop it into any sidebar, footer, or widget area and signed-in users will see a tidy, linked list of their available certificates.
+
+### What the Widget Does
+
+The Certificate Widget displays a list of the LearnDash certificates a logged-in user has earned — including **course**, **quiz**, and **group** certificates. Each item links to the certificate so learners can view or download it on demand. Because the list is personalized per user, it’s a great fit for a “My Account” page, a course dashboard, or a persistent sidebar.
+
+### Prerequisites
+
+- **LearnDash** must be active.
+- The **Certificate Widget** module must be enabled under **Uncanny Toolkit > Modules**.
+
+That’s all the widget needs — it builds the certificate list directly from LearnDash. (It does not depend on the separate **Show Certificates** module; that module simply provides an equivalent *shortcode* — see [Using a Shortcode Instead](https://docs.google.com/document/d/1WBSrEb3-yIWjU0aenVosoInZsUbSZgeDNfqC575mVpI/edit#using-a-shortcode-instead) below.)
+
+### Adding the Widget
+
+1. In your WordPress admin, go to **Uncanny Toolkit > Modules** and confirm the **Certificate Widget** module is enabled.
+2. Go to **Appearance > Widgets**.
+3. Locate the **Certificates – Uncanny Toolkit** widget and add it to your chosen widget area (for example, a sidebar or footer).
+
+### Configuring the Widget
+
+Once the widget is placed, you can customize these settings:
+
+- **Title** – The heading shown above the list (default: *Your certificates*).
+- **No certificates message** – The text shown when a learner has no certificates yet (default: *Complete courses to earn certificates*).
+- **Certificate Order** – The sort direction: **Ascending** or **Descending**.
+- **Certificate Order By** – Order certificates by **Title** or by **Date Earned**.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/certificate-widget.png)
+
+### Display Course/Quiz Titles or Certificate Titles
+
+By default, the widget labels each list item using the course or quiz title. If you’d prefer the list to show the certificate’s own title instead, enable **Display Certificate title instead of Course/Quiz title** from the **Uncanny Toolkit > Modules** page, under the Certificate Widget module’s settings.
+
+We recommend using certificate titles when your certificate names are more descriptive or learner-friendly than the underlying course and quiz names.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/certificate-widget-settings.png)
+
+### Using a Shortcode Instead
+
+If you’d rather place a certificate list inside a page, post, or template instead of a widget area, use the
+```
+[uo_learndash_certificates]
+```
+
+shortcode. Note that this shortcode is provided by the **Show Certificates** module, so enable **Show Certificates** if you want to use it. It supports attributes for filtering by course, quiz, and group certificates and for a custom heading — see the [Show Certificates](https://www.uncannyowl.com/knowledge-base/show-learndash-certificates/) article for the full attribute list.
+
+### Related Articles
+
+- [Show Certificates](https://www.uncannyowl.com/knowledge-base/show-learndash-certificates/) – Provides the 
+```
+[uo_learndash_certificates]
+```
+
+ shortcode for displaying certificates in page content.
+- [Introduction to the Uncanny Toolkit for LearnDash](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/) – Overview of what the Toolkit offers and how its modules work.
+- [Install the Uncanny Toolkit for LearnDash](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/) – How to install and activate the Toolkit.
+
+---
+
+## Breadcrumb Links
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/learndash-breadcrumb-links/](https://www.uncannyowl.com/knowledge-base/learndash-breadcrumb-links/)
+
+### Overview
+
+The **Breadcrumb Links** module adds a navigation trail to your LearnDash courses so learners always know where they are in a course and can jump back to any parent level in a single click. In deep course structures, this small piece of context makes a big difference in keeping learners oriented and reducing support requests.
+
+### What the Breadcrumbs Show
+
+By default, the breadcrumb trail follows the full LearnDash hierarchy:
+
+**Home » Course Archive Page » Course Name » Lesson Name » Topic Name**
+
+Each item is a clickable link to that level, and the trail automatically reflects the learner’s current location (quizzes are supported too). The first item, **Home**, links to your site’s home page; the course archive is shown as a separate crumb after it. The default separator between items is ».
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/breadcrumbs-02.png)
+
+### Enabling the Module
+
+1. In your WordPress dashboard, go to **Uncanny Toolkit** and open the modules screen.
+2. Find the **Breadcrumb Links** module and turn it on.
+3. Open the module’s **Settings** to customize the display (see below).
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/breadcrumbs-01.png)
+
+If you haven’t installed the Toolkit yet, see [Install the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/).
+
+### Displaying the Breadcrumbs
+
+You have two ways to output the breadcrumb trail, depending on where you want it to appear.
+
+#### Shortcode
+
+Use the shortcode to place breadcrumbs in any page, post, or widget. It takes no attributes:
+
+```
+[uo_breadcrumbs]
+```
+
+#### Template Function
+
+To integrate breadcrumbs directly into your theme (for example, in a header template or another PHP file), call the template function:
+
+```
+<?php uo_breadcrumbs(); ?>
+```
+
+By default the function echoes the breadcrumb HTML. Pass 
+```
+false
+```
+
+ to return it as a string instead:
+
+```
+<?php echo uo_breadcrumbs( false ); ?>
+```
+
+We recommend the template function when you want breadcrumbs to appear consistently across all course content without editing individual pages.
+
+### Customization Options
+
+Open the **Breadcrumb Links** module **Settings** to tailor the trail to your site.
+
+The module’s **Settings** panel includes these options:
+
+- **Dashboard Page Title** — The label used for the dashboard crumb.
+- **Dashboard Page** — Select a page to use as the dashboard. When set, this page replaces the course archive in the trail, sending learners to a custom landing page instead of the default LearnDash archive.
+- **Breadcrumbs Separator** — The character or markup placed between items (default »). You can include HTML here, so you’re free to use a Font Awesome icon or similar element in place of a plain character.
+- **Include Current Page** — Whether the current page is included as the final crumb in the trail.
+
+### Related Articles
+
+- [Introduction to the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/) — an overview of everything the Toolkit offers.
+- [Install the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/) — get the Toolkit set up on your site.
+- [Resume Button](https://www.uncannyowl.com/knowledge-base/learndash-resume/) — let learners jump straight back to where they left off.
+- [Menu Item Visibility](https://www.uncannyowl.com/knowledge-base/menu-item-visibility/) — show or hide menu items based on enrollment and login status.
+
+---
+
+## Hide Admin Bar
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/hide-admin-bar/](https://www.uncannyowl.com/knowledge-base/hide-admin-bar/)
+
+### Overview
+
+The **Hide Admin Bar** module removes the WordPress admin bar from the front end for the user roles you choose, giving students a clean, professional, distraction-free experience that keeps them focused on your courses instead of the dashboard.
+
+By default, WordPress displays a black admin bar across the top of the screen for logged-in users. For students, this bar adds clutter and can tempt them to wander into the dashboard. The **Hide Admin Bar** module lets you switch off that bar on the front end for any roles you select, while leaving it intact for the administrators and managers who actually need it.
+
+The module is role-based: you simply check off the roles that should not see the admin bar, and those users will browse your site without it.
+
+### Configuring the Module
+
+1. In your WordPress dashboard, go to **Uncanny Toolkit** and open the **Modules** screen.
+2. Locate the **Hide Admin Bar** module and click to enable it.
+3. Open the module’s **Settings**.
+4. You’ll see a list of user roles, each with its own checkbox. Check off every role that should **not** see the front-end admin bar.
+5. Save your settings.
+
+Once saved, members of the selected roles will no longer see the WordPress admin bar when viewing the front end of your site.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/Hide-Admin-Bar-settings.png)
+
+### How Roles Behave
+
+A few details determine which roles appear in the list and how they’re handled:
+
+- **Administrators are always protected.** Any role with the **manage_options** capability is excluded from this module and will not appear in the list of roles. This typically includes **Administrators** and any other roles that have been granted that capability through a role-editing plugin. These users always keep the admin bar.
+- **Only eligible roles are shown.** The role list contains the roles you can safely hide the bar for, such as **Subscriber**, **Customer**, and any custom student roles that lack the **manage_options** capability.
+
+We recommend hiding the admin bar for your student-facing roles. On a typical LearnDash site, that means checking off the **Subscriber** and **Customer** roles so learners get a polished front-end experience while your team retains full dashboard access.
+
+### Related Articles
+
+- [Menu Item Visibility](https://www.uncannyowl.com/knowledge-base/menu-item-visibility/)
+- [Front End Login](https://www.uncannyowl.com/knowledge-base/front-end-login/)
+- [Introduction to the Uncanny LearnDash Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/)
+
+---
+
+## Front End Login
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/front-end-login/](https://www.uncannyowl.com/knowledge-base/front-end-login/)
+
+### Overview
+
+Put a fully branded login experience anywhere on your site — no more sending learners to the default wp-login.php screen. Front End Login lets you place login, forgot-password, and reset-password forms on your own pages so the entire sign-in flow matches your design.
+
+The Front End Login module replaces WordPress’ generic login page with forms you control. You choose where the login form lives, how it looks, and where users land after they sign in. It includes built-in forgot-password and reset-password flows, optional AJAX submission, a modal (pop-up) login, Google reCAPTCHA spam protection, and two-factor authentication support.
+
+This is the foundation of most custom membership and e-learning sites built on LearnDash: pair it with [Log In/Log Out Links](https://www.uncannyowl.com/knowledge-base/log-in-log-out-links/) and [Log In/Log Out Redirects](https://www.uncannyowl.com/knowledge-base/learndash-login-redirect/) to deliver a seamless, on-brand sign-in journey.
+
+### Setup
+
+1. Enable the **Front End Login** module under **Uncanny Toolkit > Modules**.
+2. Create a new page (for example, “Log In”) and add the **Front End Login** Gutenberg block, or place the [uo_login_ui] shortcode on it.
+3. Go to **Uncanny Toolkit > Settings** and open the **Front End Login** settings.
+4. Set this page as your **Login Page** (see the setting below). Users who try to reach the default WordPress login screen will be redirected here instead.
+5. Configure the form’s theme, colours, and behaviour to match your site.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/front-end-login-settings.png)
+
+### Settings
+
+The module includes extensive customization options. The key settings are:
+
+- **Enable AJAX** — Adds AJAX form submission. This must be on to use the modal login shortcode and the modal login menu item.
+- **Select Template** — Choose the design of the login form (see [Choose a Login Form Theme](https://docs.google.com/document/d/1n52xWg8-m8rPrF_RO9F-cP7qEfamSVvZcq4GNytWX58/edit#choose-a-login-form-theme) below).
+- **Login Page** — Select the page that hosts your login form. When users attempt to access the WordPress login page, they are redirected here. This page must contain the Front End Login block or the [uo_login_ui] shortcode.
+- **Manual User Verification** — When enabled, users who register from the front end must be approved by an administrator before they can log in.
+- **Login Form** — Customize the main login form:
+- **Show Register Link** — Displays a link below the form using your **Register Link Text** and **Register Link** URL.
+- **Hide All For Logged In Users** — Hides the form entirely from users who are already logged in.
+- **Message For Logged In Users** — Content shown to logged-in users (unless **Hide All For Logged In Users** is enabled).
+- **Modal login** — Set the button label for the modal login shortcode and choose whether to dim the background when the modal opens.
+- **Google reCAPTCHA Settings** — Enter valid reCAPTCHA v2 **Site Key** and **Secret Key** values to add an anti-spam challenge to the login form.
+- **Cloudflare Turnstile Settings** — Enter your Turnstile **Site Key** and **Secret Key** to use Cloudflare Turnstile as a privacy-friendly, no-puzzle alternative to reCAPTCHA (see [Spam Protection](https://docs.google.com/document/d/1n52xWg8-m8rPrF_RO9F-cP7qEfamSVvZcq4GNytWX58/edit#spam-protection-recaptcha-or-cloudflare-turnstile) below).
+- **Forgot Password Form / Forgot Password Email / Reset Password Form** — Customize the appearance, behaviour, and email content of the password-reset flow.
+- **Require strong password** — When checked, new passwords must be a minimum of 8 characters with at least one uppercase letter, one lowercase letter, and one number.
+- **Two-Factor Authentication** — Shows whether 2FA is active on your site (see [Two-Factor Authentication](https://docs.google.com/document/d/1n52xWg8-m8rPrF_RO9F-cP7qEfamSVvZcq4GNytWX58/edit#two-factor-authentication) below).
+
+### Choose a Login Form Theme
+
+Use the **Select Template** setting to pick the look of your login form:
+
+- **Default** — A clean, standard login form.
+- **Boxed with shadow** — A styled form with a drop shadow.
+- **Modern** *(new in v3.8.0)* — A refreshed login form design (labeled **Modern** in the **Select Template** dropdown) with built-in **colour pickers**. When Modern is selected, four colour fields appear — **Primary Color** (used for titles, buttons, and links), **Text Color**, **Background Color**, and **Border Color** — letting you match the form to your brand directly from the settings page, with **no custom CSS required**.
+
+**Tip:** The **Modern** template offers the most complete set of built-in colour controls and is the recommended starting point for new sites that want on-brand colours without custom CSS.
+
+### Shortcodes
+
+The module includes three shortcodes:
+
+| Shortcode | What it does |
+| --- | --- |
+| [uo_login_ui] | Displays the full Front End Login form using your selected template and settings. Place this on your designated Login Page. |
+| [uo_login] | A barebones username/password form for secondary pages, without the full template styling. |
+| [uo_login_modal] | Displays a link (styleable as a button) that opens a modal login pop-up when clicked. |
+
+#### Login redirects
+
+Both [uo_login] and [uo_login_ui] support a redirect attribute, useful when different login pages should send users to different destinations:
+
+[uo_login redirect="/dashboard/"]
+
+For role-based redirects, use the [Log In/Log Out Redirects module](https://www.uncannyowl.com/knowledge-base/learndash-login-redirect/).
+
+You can also append 
+```
+?redirect_to=
+```
+
+ to the login page URL to send users to a specific page after logging in:
+
+```
+https://www.yoursite.com/login?redirect_to=/my-courses/
+```
+
+### Two-Factor Authentication
+
+Front End Login integrates with the free [WP 2FA plugin by Melapress](https://melapress.com/wordpress-2fa/) to add two-factor authentication to your front-end login form. When WP 2FA is installed and configured, the module automatically extends the 2FA challenge to your custom login page — including **backup code** entry — so users get the same security on your branded form that they would on the default WordPress login.
+
+As of Toolkit v3.8.0, this integration uses the WP 2FA REST API for more reliable code verification and backup-code handling.
+
+To enable it:
+
+1. Install and configure the **WP 2FA** plugin and set up your 2FA policy there.
+2. The **Two-Factor Authentication** section of the Front End Login settings will indicate that 2FA is active. No additional Toolkit configuration is required.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/2FA-active-1030x640.png)
+
+**Note:** Configure your 2FA rules in the WP 2FA plugin itself. See the [WP 2FA documentation](https://melapress.com/support/kb/) for policy and enforcement options.
+
+### Spam Protection: reCAPTCHA or Cloudflare Turnstile
+
+Front End Login can add a spam-protection challenge to the login form using either **Google reCAPTCHA v2** or **Cloudflare Turnstile**. Both are configured in the Front End Login settings — add the keys for whichever service you prefer.
+
+- **Google reCAPTCHA** — In the **Google reCAPTCHA Settings** section, enter your reCAPTCHA v2 **Site Key** and **Secret Key**.
+- **Cloudflare Turnstile** — In the **Cloudflare Turnstile Settings** section, enter your Turnstile **Site Key** and **Secret Key**. Turnstile becomes active as soon as both keys are filled in. Turnstile is a privacy-focused alternative that usually verifies visitors without a visible puzzle. You can also customize the messages learners see:
+- **Turnstile Not Checked Message** — Shown when the challenge hasn’t been completed (default: *Verify you are human.*).
+- **Turnstile Error Message** — Shown when validation fails.
+- **Turnstile Render Error Message** — Shown if the Turnstile widget can’t load.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/turnstile-settings.png)
+
+**Important:** Use **one** challenge service at a time. Don’t enter keys for both reCAPTCHA and Turnstile, and don’t run a separate reCAPTCHA/Turnstile plugin that also modifies login forms — overlapping challenges will conflict. To get your keys, see Google’s reCAPTCHA admin console or the Cloudflare Turnstile dashboard.
+
+### Adding a Modal Login to a Menu
+
+The modal login form can open from any menu link, but it requires the [Log In/Log Out Links module](https://www.uncannyowl.com/knowledge-base/log-in-log-out-links/) to also be enabled. With both modules active:
+
+1. Go to **Appearance > Menus**.
+2. Find the **Uncanny Menu Links** section.
+3. Add a modal login link to your menu.
+
+**Note:** A **Login Page** must be set in the Front End Login settings for the modal login to work from a menu.
+
+### For Developers
+
+#### The login_form action hook (new in v3.8.0)
+
+Toolkit v3.8.0 added a 
+```
+login_form
+```
+
+ action hook to the login templates, giving developers a reliable place to inject custom markup or fields into the front-end login form. This mirrors the behaviour of WordPress’ core 
+```
+login_form
+```
+
+ hook within the Toolkit’s templates.
+
+#### Overriding the login templates
+
+Since Toolkit v3.1, you can override the login templates in an upgrade-safe way by copying them into your theme. For example, to override the default login form, copy:
+
+```
+wp-content/plugins/uncanny-learndash-toolkit/src/templates/frontend-login/default-login.php
+```
+
+to:
+
+```
+wp-content/themes/your-theme/uncanny-toolkit/frontend-login/default-login.php
+```
+
+The copied file then overrides the plugin’s version.
+
+**Warning:** Never edit template files inside the Uncanny Toolkit plugin folder directly — they are overwritten on every plugin update.
+
+### Troubleshooting
+
+**Important:** Make sure your login page is **not** cached. If you see password-reset errors, redirect errors, or users being logged out unexpectedly, a caching plugin or server-side cache is the most common cause. Exclude the login page from all caching.
+
+Also avoid running a separate reCAPTCHA or Cloudflare Turnstile plugin that modifies login forms — it will likely conflict with the Toolkit’s built-in reCAPTCHA/Turnstile support.
+
+#### If You Lock Yourself Out
+
+If you save invalid settings and find you can no longer log in:
+
+1. Connect to your site by FTP.
+2. Rename the 
+```
+/wp-content/plugins/uncanny-learndash-toolkit/
+```
+
+ folder temporarily to disable it.
+3. Log in as an administrator from the default WordPress login page.
+4. Rename the folder back and reactivate the Toolkit while still signed in.
+5. Correct the settings on the **Uncanny Toolkit > Settings** page and test the login page again in an incognito window.
+
+This can happen if a maintenance-mode or site-wide protection plugin conflicts with Front End Login, or if your redirects create a loop.
+
+### Related Articles
+
+- [Getting Started with the Uncanny Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/) — Plan your login and membership flow
+- [Log In/Log Out Links](https://www.uncannyowl.com/knowledge-base/log-in-log-out-links/) — Add login, logout, and register links to menus
+- [Log In/Log Out Redirects](https://www.uncannyowl.com/knowledge-base/learndash-login-redirect/) — Send users to the right page after signing in
+- [Menu Item Visibility](https://www.uncannyowl.com/knowledge-base/menu-item-visibility/) — Show different menu items to logged-in and logged-out visitors
+
+---
+
+## Uncanny Toolkit for LearnDash – Quick Reference
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-quick-reference/](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-quick-reference/)
+
+This reference lists the shortcodes, blocks, and widgets included with the free Uncanny Toolkit for LearnDash, grouped by module. Each shortcode requires its module to be enabled on the Uncanny LearnDash Toolkit settings page. Follow the linked article in each section for full setup details.
+
+| Module | Shortcodes | Description |
+| --- | --- | --- |
+| Front End Login | [uo_login_ui]
+[uo_login] | Displays a login form. |
+| Hide Admin Bar | N/A | Hides the admin bar for selected WordPress user roles. |
+| LearnDash Breadcrumb Links | [uo_breadcrumbs] | Displays a breadcrumb trail with proper Course > Lesson > Topic hierarchy. |
+| LearnDash Certificate Widget | N/A | Adds a widget that displays a list of the certificates a user has earned. |
+| LearnDash Groups in User Profiles | N/A | Displays a list of a user’s LearnDash Groups on their profile page. |
+| LearnDash Login/Logout Redirect | N/A | Enables you to specify the pages that users are redirected to when logging into or out of the site. |
+| LearnDash Resume Button | [uo_learndash_resume] | Displays a button that takes the user back to their most recently visited Course, Lesson, Topic, or Quiz page. |
+| Log In/Log Out Links | [uo_login_link]
+[uo_logout]
+[uo_loginout]
+[uo_register] | Displays either a link to log in, a link to log out, a link that displays Log In or Log Out depending on the user’s logged in status, or a link to the register page.  Also enables adding a Log In or Log Out link to menus. |
+| Menu Item Visibility | N/A | Enables a setting on menu items that lets you specify whether the item is displayed to logged in users, logged out users, or everyone. |
+| Show Learndash Certificates | [uo_learndash_certificates] | Displays a list of the certificates a user has earned. |
+| Show or Hide Content | [uo_show for=”loggedin”][/uo_show]
+[uo_show for=”loggedout”][/uo_show] | Hides or shows content based on the user’s logged in status. |
+| User Switching Module | N/A | Gives administrators (or anyone with the capability to edit users) the ability to switch between user accounts for testing purposes |
+| Not Enrolled Redirect | N/A | Adds a field to the Edit Course screen that enables you to specify a URL that users will be redirected to if they attempt to access the course but are not enrolled |
+| Topics Autocomplete Lessons | N/A | When enabled, if all topics in a lesson are marked as completed, the Lesson is marked completed automatically. |
+
+---
+
+## Install the Uncanny Toolkit for LearnDash
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/)
+
+### Overview
+
+The Uncanny Toolkit is a free plugin available from the WordPress.org plugin directory. Installation takes a couple of minutes, and you choose which modules to enable afterward.
+
+### Requirements
+
+- **WordPress 5.8** or higher, with the **LearnDash LMS** plugin installed and active
+- **PHP 7.4** or higher
+- **LearnDash 4.2** or higher
+
+### Installation
+
+1. Log in to your WordPress admin dashboard.
+2. Go to **Plugins > Add New**.
+3. Search for **Uncanny Toolkit for LearnDash**.
+4. Click **Install Now**, then **Activate**.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/uncanny-toolkit-for-learndash-install.png)
+
+After activation, a new **Uncanny Toolkit** menu appears in your WordPress admin.
+
+### Enable Your Modules
+
+The Toolkit ships with every module turned **off** so you can enable only what you need.
+
+1. Go to **Uncanny Toolkit > Modules**.
+2. Find the module you want and toggle it on.
+3. Click **Save** if prompted.
+4. Configure the module under **Uncanny Toolkit > Settings**.
+
+![](https://www.uncannyowl.com/wp-content/uploads/2016/04/toolkit-free-modules-1030x582.png)
+
+**We recommend** enabling only the modules you actively use. Each active module adds a small amount of processing, so leaving unused modules off keeps your site lean.
+
+### A Note on Styling
+
+The Toolkit intentionally includes very little CSS of its own. This keeps modules from clashing with your theme — front-end elements like login forms and breadcrumbs inherit your theme’s design. If you want to fine-tune the appearance, you can add your own CSS or, for login forms, use the [Front End Login Modern theme](https://www.uncannyowl.com/knowledge-base/front-end-login/) colour selectors.
+
+### A Refreshed Admin Interface
+
+As of v3.8.0, the Toolkit uses the standardized Uncanny Owl admin design that’s shared across Uncanny Owl plugins. Everything works as before — the settings screens are simply cleaner and more consistent.
+
+### Installing Toolkit Pro Alongside the Free Version
+
+[Uncanny Toolkit Pro](https://www.uncannyowl.com/downloads/uncanny-pro-toolkit/) runs alongside the free Toolkit and adds advanced modules. You can keep both active at the same time — Pro modules appear in the same **Modules** and **Settings** screens. Install Pro by uploading its ZIP under **Plugins > Add New > Upload Plugin** and entering your license key.
+
+### Next Steps
+
+1. Review the [Introduction to the Uncanny Toolkit](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/) to see what each module does.
+2. Enable and configure the modules that match your goals.
+3. Keep the [Quick Reference](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-quick-reference/) handy for shortcodes.
+
+### Related Articles
+
+- [Introduction to the Uncanny Toolkit for LearnDash](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/) — Module overview and directory
+- [Front End Login](https://www.uncannyowl.com/knowledge-base/front-end-login/) — A popular first module to set up
+- [Uncanny Toolkit – Quick Reference](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-quick-reference/) — All shortcodes in one place
+
+---
+
+## Introduction to the Uncanny Toolkit for LearnDash
+
+**Source:** [https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/](https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/)
+
+### Overview
+
+The Uncanny Toolkit is a free, modular plugin that fills the gaps in LearnDash — adding the login pages, navigation, and front-end features that course creators reach for most. Turn on only the modules you need, and skip the custom code.
+
+### What the Toolkit Does
+
+LearnDash is a powerful LMS, but building a polished learner experience around it usually means stitching together shortcodes, snippets, and workarounds. The Uncanny Toolkit packages those common needs as ready-to-use **modules** you enable from a single settings screen — no developer required.
+
+Each module is self-contained and independent. Activate a branded front-end login, add course breadcrumbs, hide the admin bar from students, show learners their certificates — or all of the above. Because the Toolkit adds almost no styling of its own, modules inherit your theme’s design and stay out of your way.
+
+The Toolkit is the free foundation; [Uncanny Toolkit Pro](https://www.uncannyowl.com/downloads/uncanny-pro-toolkit/) adds advanced modules such as course timers, group registration, CSV reporting, and more.
+
+### The Modules
+
+Enable any of these under **Uncanny Toolkit > Modules**. We recommend turning on only the modules you actively use.
+
+#### Login & Access
+
+- [Front End Login](https://www.uncannyowl.com/knowledge-base/front-end-login/) — Branded login, forgot-password, and reset-password forms anywhere on your site, with optional modal login, reCAPTCHA, and two-factor authentication.
+- [Log In/Log Out Links](https://www.uncannyowl.com/knowledge-base/log-in-log-out-links/) — Add login, logout, and register links to menus and pages with shortcodes.
+- [Log In/Log Out Redirects](https://www.uncannyowl.com/knowledge-base/learndash-login-redirect/) — Send users to the right page after they log in or out.
+- [Not Enrolled Redirect](https://www.uncannyowl.com/knowledge-base/redirect-user-if-not-enrolled/) — Redirect visitors who aren’t enrolled in a course to a sales or landing page.
+
+#### Navigation & Learner Experience
+
+- [Breadcrumb Links](https://www.uncannyowl.com/knowledge-base/learndash-breadcrumb-links/) — Add course → lesson → topic breadcrumbs so learners always know where they are.
+- [Resume Button](https://www.uncannyowl.com/knowledge-base/learndash-resume/) — Drop learners back exactly where they left off.
+- [Quiz Completion Advances to Next Step](https://www.uncannyowl.com/knowledge-base/quiz-completion-advances-to-next-step/) — Automatically move learners forward after they complete a quiz.
+- [Menu Item Visibility](https://www.uncannyowl.com/knowledge-base/menu-item-visibility/) — Show different menu items to logged-in and logged-out visitors.
+- [Show or Hide Content](https://www.uncannyowl.com/knowledge-base/show-hide-content/) — Conditionally display content based on login status with shortcodes.
+- [Hide Admin Bar](https://www.uncannyowl.com/knowledge-base/hide-admin-bar/) — Remove the WordPress admin bar for students for a cleaner front end.
+
+#### Certificates
+
+- [Show Certificates](https://www.uncannyowl.com/knowledge-base/show-learndash-certificates/) — Make earned course and quiz certificates available to learners.
+- [Certificate Widget](https://www.uncannyowl.com/knowledge-base/learndash-certificate-widget/) — Display a learner’s certificates in any widget area or via shortcode.
+
+#### Administration & Tools
+
+- [Groups in User Profiles](https://www.uncannyowl.com/knowledge-base/learndash-groups-user-profiles/) — See a user’s LearnDash group memberships right on their profile.
+- [User Switching](https://www.uncannyowl.com/knowledge-base/user-switching-module/) — Log in as another user to troubleshoot, then switch back instantly.
+- [Disable Emails](https://www.uncannyowl.com/knowledge-base/disable-emails/) — Block all outgoing email — ideal for staging and testing.
+- [Topics Autocomplete Lessons (Legacy)](https://www.uncannyowl.com/knowledge-base/topics-autocomplete-lessons/) — A legacy auto-completion module retained for backward compatibility.
+
+### A Refreshed Admin Experience
+
+As of v3.8.0, the Uncanny Toolkit uses the standardized Uncanny Owl admin interface — a cleaner, consistent settings design shared across Uncanny Owl plugins. Your modules and settings work exactly as before; the screens are simply easier to navigate.
+
+![Admin dashboard for Uncanny Toolkit showing multiple module cards with descriptions and green toggle switches.](https://www.uncannyowl.com/wp-content/uploads/2016/04/toolkit-free-modules-1030x582.png)
+
+### Getting Started
+
+1. [Install the Uncanny Toolkit](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/) and activate it.
+2. Open **Uncanny Toolkit > Modules** and enable the modules you need.
+3. Configure each module under **Uncanny Toolkit > Settings**.
+
+New to the plugin? Start with the workflow-based [Getting Started with the Uncanny Toolkit](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/) guide to find the right modules for your goals.
+
+### Related Articles
+
+- [Install the Uncanny Toolkit for LearnDash](https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/) — Installation and first-time setup
+- [Uncanny Toolkit – Quick Reference](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-quick-reference/) — Every shortcode in one place
+- [Uncanny Toolkit Pro for LearnDash](https://www.uncannyowl.com/downloads/uncanny-pro-toolkit/) — Advanced modules for growing course sites
 
 ---
 

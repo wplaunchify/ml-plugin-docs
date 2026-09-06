@@ -2,17 +2,69 @@
   "plugin_slug": "uncanny-groups-for-learndash",
   "plugin_name": "Uncanny Groups for LearnDash",
   "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-  "last_scraped": "2026-08-30T06:40:06.665Z",
-  "total_pages": 90,
-  "failed_urls_count": 0,
+  "last_scraped": "2026-09-06T06:41:10.685Z",
+  "total_pages": 183,
+  "failed_urls_count": 1,
   "sections": [
     {
       "title": "Uncategorized",
       "slug": "uncategorized",
       "url": "https://www.uncannyowl.com/knowledge-base/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 90,
+      "page_count": 183,
       "pages": [
+        {
+          "title": "Tin Canny xAPI/SCORM for WordPress – Overview",
+          "url": "https://www.uncannyowl.com/knowledge-base/tin-canny-xapi-scorm-for-wordpress-overview/"
+        },
+        {
+          "title": "Install the Tin Canny for WordPress Plugin",
+          "url": "https://www.uncannyowl.com/knowledge-base/install-the-tin-canny-for-wordpress-plugin/"
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "url": "https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-3/"
+        },
+        {
+          "title": "Authoring Tools Supported by Tin Canny",
+          "url": "https://www.uncannyowl.com/knowledge-base/authoring-tools-supported-by-tin-canny/"
+        },
+        {
+          "title": "Tin Can Report",
+          "url": "https://www.uncannyowl.com/knowledge-base/tin-can-report-2/"
+        },
+        {
+          "title": "xAPI Quiz Report",
+          "url": "https://www.uncannyowl.com/knowledge-base/xapi-quiz-report-2/"
+        },
+        {
+          "title": "Tin Canny Uploader",
+          "url": "https://www.uncannyowl.com/knowledge-base/tin-canny-uploader/"
+        },
+        {
+          "title": "Making eLearning Modules Responsive in iFrame",
+          "url": "https://www.uncannyowl.com/knowledge-base/making-elearning-modules-responsive-in-iframe/"
+        },
+        {
+          "title": "Setting up Tin Canny for WordPress",
+          "url": "https://www.uncannyowl.com/knowledge-base/setting-up-tin-canny-for-wordpress/"
+        },
+        {
+          "title": "Tin Canny Reporting – Technical Requirements",
+          "url": "https://www.uncannyowl.com/knowledge-base/tin-canny-reporting-technical-requirements-2/"
+        },
+        {
+          "title": "Managing Elearning Content",
+          "url": "https://www.uncannyowl.com/knowledge-base/managing-elearning-content-2/"
+        },
+        {
+          "title": "Site Check",
+          "url": "https://www.uncannyowl.com/knowledge-base/site-check-2/"
+        },
+        {
+          "title": "Actions/Filters for Developers",
+          "url": "https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers-3/"
+        },
         {
           "title": "Run Cohort-Based Courses & Group Coaching Programs",
           "url": "https://www.uncannyowl.com/knowledge-base/run-cohort-based-courses-group-coaching-programs/"
@@ -362,16 +414,336 @@
           "url": "https://www.uncannyowl.com/knowledge-base/front-end-learndash-assignment-management/"
         },
         {
-          "title": "Using The Group Management Page",
-          "url": "https://www.uncannyowl.com/knowledge-base/group-management-page/"
+          "title": "Sell LearnDash Group Access to Learners",
+          "url": "https://www.uncannyowl.com/knowledge-base/sell-learndash-group-access-to-learners/"
         },
         {
-          "title": "Using the Group Reports",
-          "url": "https://www.uncannyowl.com/knowledge-base/group-leader-reports/"
+          "title": "Add Seats and Courses after Group Purchase",
+          "url": "https://www.uncannyowl.com/knowledge-base/adding-seats-and-courses-after-group-purchase/"
         },
         {
-          "title": "Reset Progress Button",
-          "url": "https://www.uncannyowl.com/knowledge-base/learndash-reset/"
+          "title": "Create Pre-configured LearnDash Group Licenses",
+          "url": "https://www.uncannyowl.com/knowledge-base/creating-pre-configured-learndash-group-licenses/"
+        },
+        {
+          "title": "Enable Users to Build Custom Group Licenses",
+          "url": "https://www.uncannyowl.com/knowledge-base/group-leader-purchase-experience/"
+        },
+        {
+          "title": "Set up LearnDash Group Course Products",
+          "url": "https://www.uncannyowl.com/knowledge-base/setting-learndash-group-course-products/"
+        },
+        {
+          "title": "Upgrade Existing LearnDash Groups",
+          "url": "https://www.uncannyowl.com/knowledge-base/upgrade-existing-learndash-groups/"
+        },
+        {
+          "title": "Tin Canny Reporting for LearnDash – Changelog",
+          "url": "https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-reporting-changelog/"
+        },
+        {
+          "title": "Set Up User Enrollment",
+          "url": "https://www.uncannyowl.com/knowledge-base/set-user-enrollment/"
+        },
+        {
+          "title": "Setting up Tin Canny Reporting for LearnDash",
+          "url": "https://www.uncannyowl.com/knowledge-base/protecting-sharing-content-tin-canny/"
+        },
+        {
+          "title": "Tin Can Lesson/Topic Completion Tracking",
+          "url": "https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-mark-complete/"
+        },
+        {
+          "title": "Making eLearning Modules Responsive in iFrame",
+          "url": "https://www.uncannyowl.com/knowledge-base/responsive-modules-iframe/"
+        },
+        {
+          "title": "Tin Canny Uploader",
+          "url": "https://www.uncannyowl.com/knowledge-base/storyline-captivate-uploader/"
+        },
+        {
+          "title": "Front End Quiz Reports",
+          "url": "https://www.uncannyowl.com/knowledge-base/front-end-quiz-reports/"
+        },
+        {
+          "title": "Front End LearnDash Reports",
+          "url": "https://www.uncannyowl.com/knowledge-base/front-end-reports/"
+        },
+        {
+          "title": "Set up Group Management Pages",
+          "url": "https://www.uncannyowl.com/knowledge-base/set-group-management-pages/"
+        },
+        {
+          "title": "Install and Set Up Uncanny Groups for LearnDash",
+          "url": "https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-setup/"
+        },
+        {
+          "title": "xAPI Quiz Report",
+          "url": "https://www.uncannyowl.com/knowledge-base/xapi-quiz-report/"
+        },
+        {
+          "title": "Tin Can Report",
+          "url": "https://www.uncannyowl.com/knowledge-base/tin-can-report/"
+        },
+        {
+          "title": "Uncanny Groups for LearnDash – START HERE!",
+          "url": "https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-plugin-overview/"
+        },
+        {
+          "title": "User Report",
+          "url": "https://www.uncannyowl.com/knowledge-base/user-report/"
+        },
+        {
+          "title": "Course Report",
+          "url": "https://www.uncannyowl.com/knowledge-base/course-report/"
+        },
+        {
+          "title": "Authoring Tools Supported by Tin Canny",
+          "url": "https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/"
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "url": "https://www.uncannyowl.com/knowledge-base/frequently-asked-questions/"
+        },
+        {
+          "title": "Install the Tin Canny Reporting Plugin",
+          "url": "https://www.uncannyowl.com/knowledge-base/tincanny-installation-setup/"
+        },
+        {
+          "title": "Tin Canny Reporting for LearnDash – Overview",
+          "url": "https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-reporting-overview/"
+        },
+        {
+          "title": "Uncanny Codes – Changelog",
+          "url": "https://www.uncannyowl.com/knowledge-base/uncanny-learndash-codes-changelog/"
+        },
+        {
+          "title": "Continuing Education Credits – Changelog",
+          "url": "https://www.uncannyowl.com/knowledge-base/continuing-education-credits-changelog/"
+        },
+        {
+          "title": "Uncanny Toolkit Pro for LearnDash – Changelog",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-toolkit-pro-change-log/"
+        },
+        {
+          "title": "User Switching",
+          "url": "https://www.uncannyowl.com/knowledge-base/user-switching-module/"
+        },
+        {
+          "title": "Continuing Education Shortcodes",
+          "url": "https://www.uncannyowl.com/knowledge-base/continuing-education-shortcodes/"
+        },
+        {
+          "title": "Required Credits",
+          "url": "https://www.uncannyowl.com/knowledge-base/required-credits/"
+        },
+        {
+          "title": "Continuing Education Certificates",
+          "url": "https://www.uncannyowl.com/knowledge-base/continuing-education-certificates/"
+        },
+        {
+          "title": "Continuing Education Admin Reports",
+          "url": "https://www.uncannyowl.com/knowledge-base/continuing-education-credits-admin-report/"
+        },
+        {
+          "title": "Continuing Education Report",
+          "url": "https://www.uncannyowl.com/knowledge-base/continuing-education-report/"
+        },
+        {
+          "title": "Adding Credits to Courses",
+          "url": "https://www.uncannyowl.com/knowledge-base/adding-course-credits/"
+        },
+        {
+          "title": "Set Up the Uncanny Continuing Education Credits Plugin",
+          "url": "https://www.uncannyowl.com/knowledge-base/setup-continuing-education-credits-plugin/"
+        },
+        {
+          "title": "Form Shortcodes",
+          "url": "https://www.uncannyowl.com/knowledge-base/form-shortcodes/"
+        },
+        {
+          "title": "BadgeOS Shortcodes",
+          "url": "https://www.uncannyowl.com/knowledge-base/badgeos-shortcodes/"
+        },
+        {
+          "title": "WooCommerce Shortcodes",
+          "url": "https://www.uncannyowl.com/knowledge-base/woocommerce-shortcodes/"
+        },
+        {
+          "title": "Learndash Shortcodes",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-shortcodes/"
+        },
+        {
+          "title": "Email Quiz Certificates",
+          "url": "https://www.uncannyowl.com/knowledge-base/send-quiz-certificates-by-email/"
+        },
+        {
+          "title": "Email Group Certificates",
+          "url": "https://www.uncannyowl.com/knowledge-base/send-group-certificates-email/"
+        },
+        {
+          "title": "Email Course Certificates",
+          "url": "https://www.uncannyowl.com/knowledge-base/send-course-certificates-email/"
+        },
+        {
+          "title": "Redeem Codes During WooCommerce Checkout",
+          "url": "https://www.uncannyowl.com/knowledge-base/redeem-codes-woocommerce/"
+        },
+        {
+          "title": "Standalone Code Redemption",
+          "url": "https://www.uncannyowl.com/knowledge-base/standalone-code-redemption/"
+        },
+        {
+          "title": "Viewing and Editing Codes",
+          "url": "https://www.uncannyowl.com/knowledge-base/view-codes/"
+        },
+        {
+          "title": "Generating or Adding New Codes",
+          "url": "https://www.uncannyowl.com/knowledge-base/generating-new-codes/"
+        },
+        {
+          "title": "Set up Uncanny Redemption Codes for WordPress",
+          "url": "https://www.uncannyowl.com/knowledge-base/set-up-uncanny-codes-for-wordpress/"
+        },
+        {
+          "title": "Simple Course Timer",
+          "url": "https://www.uncannyowl.com/knowledge-base/simple-course-timer/"
+        },
+        {
+          "title": "Sample Lesson Label (Legacy)",
+          "url": "https://www.uncannyowl.com/knowledge-base/sample-lesson-label/"
+        },
+        {
+          "title": "Learner Transcript",
+          "url": "https://www.uncannyowl.com/knowledge-base/learner-transcript/"
+        },
+        {
+          "title": "Lesson/Topic/Quiz Table Colors (Legacy)",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-table-colors/"
+        },
+        {
+          "title": "Group Logo/List",
+          "url": "https://www.uncannyowl.com/knowledge-base/ld-group-logo-list/"
+        },
+        {
+          "title": "Group Registration",
+          "url": "https://www.uncannyowl.com/knowledge-base/group-sign-up/"
+        },
+        {
+          "title": "Group Expiration",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-group-expiration/"
+        },
+        {
+          "title": "Course Dashboard",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-course-dashboard/"
+        },
+        {
+          "title": "Import Users",
+          "url": "https://www.uncannyowl.com/knowledge-base/import-learndash-users/"
+        },
+        {
+          "title": "Improved Group Leader Interface (deprecated)",
+          "url": "https://www.uncannyowl.com/knowledge-base/group-leader-access/"
+        },
+        {
+          "title": "Enhanced Lesson/Topic Grid",
+          "url": "https://www.uncannyowl.com/knowledge-base/enhanced-lessontopic-grid/"
+        },
+        {
+          "title": "Enhanced Course Grid",
+          "url": "https://www.uncannyowl.com/knowledge-base/enhanced-course-grid/"
+        },
+        {
+          "title": "Duplicate Pages & Posts",
+          "url": "https://www.uncannyowl.com/knowledge-base/duplicate-pages-posts/"
+        },
+        {
+          "title": "Drip Topics by LearnDash Group",
+          "url": "https://www.uncannyowl.com/knowledge-base/drip-topics-by-ldgroup/"
+        },
+        {
+          "title": "Drip Lessons by LearnDash Group",
+          "url": "https://www.uncannyowl.com/knowledge-base/drip-lessons-by-ldgroup/"
+        },
+        {
+          "title": "Days Until Course Expiry",
+          "url": "https://www.uncannyowl.com/knowledge-base/days-until-course-expiry/"
+        },
+        {
+          "title": "Autocomplete Lessons & Topics on Quiz Results Page",
+          "url": "https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics-quiz-results-page/"
+        },
+        {
+          "title": "Autocomplete Lessons & Topics on Gravity Forms Submission",
+          "url": "https://www.uncannyowl.com/knowledge-base/gravity-forms-auto-completes-lessons-topics/"
+        },
+        {
+          "title": "Autocomplete Lessons & Topics",
+          "url": "https://www.uncannyowl.com/knowledge-base/autocomplete-lessons-topics/"
+        },
+        {
+          "title": "Uncanny LearnDash Toolkit Pro – Quick Reference",
+          "url": "https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-pro-quick-reference/"
+        },
+        {
+          "title": "Topics Autocomplete Lessons (Legacy)",
+          "url": "https://www.uncannyowl.com/knowledge-base/topics-autocomplete-lessons/"
+        },
+        {
+          "title": "Show or Hide Content",
+          "url": "https://www.uncannyowl.com/knowledge-base/show-hide-content/"
+        },
+        {
+          "title": "Show Certificates",
+          "url": "https://www.uncannyowl.com/knowledge-base/show-learndash-certificates/"
+        },
+        {
+          "title": "Menu Item Visibility",
+          "url": "https://www.uncannyowl.com/knowledge-base/menu-item-visibility/"
+        },
+        {
+          "title": "Log In/Log Out Redirects",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-login-redirect/"
+        },
+        {
+          "title": "Log In/Log Out Links",
+          "url": "https://www.uncannyowl.com/knowledge-base/log-in-log-out-links/"
+        },
+        {
+          "title": "Resume Button",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-resume/"
+        },
+        {
+          "title": "Groups in User Profiles",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-groups-user-profiles/"
+        },
+        {
+          "title": "Certificate Widget",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-certificate-widget/"
+        },
+        {
+          "title": "Breadcrumb Links",
+          "url": "https://www.uncannyowl.com/knowledge-base/learndash-breadcrumb-links/"
+        },
+        {
+          "title": "Hide Admin Bar",
+          "url": "https://www.uncannyowl.com/knowledge-base/hide-admin-bar/"
+        },
+        {
+          "title": "Front End Login",
+          "url": "https://www.uncannyowl.com/knowledge-base/front-end-login/"
+        },
+        {
+          "title": "Uncanny Toolkit for LearnDash – Quick Reference",
+          "url": "https://www.uncannyowl.com/knowledge-base/uncanny-learndash-toolkit-quick-reference/"
+        },
+        {
+          "title": "Install the Uncanny Toolkit for LearnDash",
+          "url": "https://www.uncannyowl.com/knowledge-base/install-the-uncanny-learndash-toolkit/"
+        },
+        {
+          "title": "Introduction to the Uncanny Toolkit for LearnDash",
+          "url": "https://www.uncannyowl.com/knowledge-base/introduction-to-the-uncanny-learndash-toolkit/"
         }
       ]
     }
