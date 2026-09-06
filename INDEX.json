@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T01:38:12.090Z",
+  "last_updated": "2026-09-06T01:46:54.522Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -507,7 +507,7 @@
       "slug": "fluent-messaging",
       "name": "Fluent Messaging",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-08-30T01:44:39.362Z",
+      "last_scraped": "2026-09-06T01:46:54.522Z",
       "page_count": 137,
       "categories": [
         "advanced-reports",
