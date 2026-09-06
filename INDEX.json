@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T01:28:36.055Z",
+  "last_updated": "2026-09-06T01:35:36.416Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -423,7 +423,7 @@
       "slug": "fluent-forms-pro-add-on-pack",
       "name": "Fluent Forms Pro Add On Pack",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-08-30T01:33:32.981Z",
+      "last_scraped": "2026-09-06T01:35:36.416Z",
       "page_count": 457,
       "categories": [
         "account-management",
