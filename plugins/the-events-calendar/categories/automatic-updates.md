@@ -22,7 +22,7 @@ If plugin updates do not appear in the WordPress dashboard when an update is ava
 - **Copy your license key**: Navigate to **Dashboard > Licenses** (within the portal) to access your Unified License or Legacy License.
 - **Log into WordPress**: Log into your WordPress dashboard to connect the license key:
 - **Legacy Subscribers**: Enter the license key in the designated field for your plugin (e.g., **Events > Settings > Licenses for The Events Calendar**) and save your changes.
-- **Unified License Subscribers**: Navigate to **Settings > Liquid Web Products** to manage licenses centrally. Refer to the “[Activating License Keys for Automatic Updates](https://docs.nexcess.com/software/troubleshooting/how-to-install-and-update-your-wordpress-plugins-and-themes/#h-activating-license-keys-for-software-updates)” section for additional details.
+- **Unified License Subscribers**: Navigate to **Settings > Liquid Web Products** to manage licenses centrally. Refer to the “[Activating License Keys for Automatic Updates](/software/general/how-to-install-and-update-your-wordpress-plugins-and-themes/#h-activating-license-keys-for-software-updates)” section for additional details.
 
 Once configured, automatic update notifications will appear as plugin updates are released. You may need to refresh the WordPress **Updates** page after entering a license key.
 

@@ -2,8 +2,8 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-08-30T06:35:06.879Z",
-  "total_pages": 349,
+  "last_scraped": "2026-09-06T06:35:14.254Z",
+  "total_pages": 348,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -4241,19 +4241,6 @@
         {
           "title": "Browser Support",
           "url": "https://docs.nexcess.com/software/the-events-calendar/what-browsers-do-you-support/"
-        }
-      ]
-    },
-    {
-      "title": "What Does Each License Type Include",
-      "slug": "what-does-each-license-type-include",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/what-does-each-license-type-include/",
-      "file": "categories/what-does-each-license-type-include.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "What’s Included in Each License",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/what-does-each-license-type-include/"
         }
       ]
     },

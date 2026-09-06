@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T06:24:28.967Z",
+  "last_updated": "2026-09-06T06:35:14.276Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2757,8 +2757,8 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-      "last_scraped": "2026-08-30T06:35:06.879Z",
-      "page_count": 349,
+      "last_scraped": "2026-09-06T06:35:14.276Z",
+      "page_count": 348,
       "categories": [
         "accessibility",
         "accessing-older-plugin-versions",
@@ -3086,7 +3086,6 @@
         "webex",
         "what-are-the-system-requirements-for-your-plugins",
         "what-browsers-do-you-support",
-        "what-does-each-license-type-include",
         "what-happens-if-i-cancel-my-promoter-subscription",
         "what-is-this-promoter-charge-on-my-credit-card",
         "what-kind-of-payments-do-you-accept",
