@@ -901,7 +901,7 @@ This guide is designed for developers looking for a technical understanding of t
 
 ## Subscription Related Order Cache
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 A subscription can have a variety of [related orders](https://woocommerce.com/document/subscriptions/orders/), including:
 
@@ -976,7 +976,7 @@ get_post_meta()
 
 ### Subscription Related Order Cache Meta Keys
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 The meta keys use for each related order cache are:
 
@@ -995,7 +995,7 @@ _subscription_resubscribe_order_ids_cache
 
 ## Customer’s Subscription Cache
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 A subscription’s data is a [superset of a WooCommerce order’s data](https://woocommerce.com/document/subscriptions/orders/). As a result, the way a subscription is linked to a customer is the same as the way an order is linked to a customer, where the 
 ```
@@ -1069,7 +1069,7 @@ get_user_meta()
 
 ## Subscription Cache Management Tools
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 To use the subscription cache management tool to create and delete the subscription caches:
 
@@ -1086,7 +1086,7 @@ To use the subscription cache management tool to create and delete the subscript
 
 ### Subscription Cache Generation via the Generator Tools
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 Cache generation will normally happen just-in-time, meaning the first time it’s required, the data will be pulled from the source and then cached for future use. However, each cache can also be generated via the cache Generate Tools mentioned above.
 
@@ -1096,7 +1096,7 @@ That’s because the cache tools are designed to generate the cache without inte
 
 ## Cache Data Stores
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 To abstract the caching layer, and incorporate it in a way that can easily be extended, swapped or removed, the caching logic is implemented within data store classes for each type of data being cached.
 
@@ -1127,7 +1127,7 @@ Each of these classes are used as the data stores for accessing respective data,
 
 ### Using a Custom Related Order Data Store
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 The 
 ```
@@ -1162,7 +1162,7 @@ function wcs_bypass_related_order_cache_layer( $class ) {
 
 ### Using a Custom Customer Subscription Data Store
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 The 
 ```
@@ -1197,11 +1197,11 @@ function wcs_bypass_customer_subscriptions_cache_layer( $class ) {
 
 ## FAQs
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Why does subscription data need to be cached?
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 WooCommerce Subscriptions builds on [WordPress custom post types](https://wordpress.org/documentation/article/what-is-post-type/) to [store subscription data](https://woocommerce.com/document/subscriptions/develop/data-structure/#subscription-product-data-structure-and-storage). As a result, much of its data is stored in the same database tables as other content types, like blog posts, website pages, WooCommerce orders, and data from other plugins.
 
@@ -1218,7 +1218,7 @@ To address this, many items of known subscription data will be migrated to separ
 
 ### How does the subscription cache work?
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 Normally, to find a piece of data, like the IDs of orders related to a subscription, a database query is run against the source of that data.
 
@@ -1242,7 +1242,7 @@ After updating to Subscriptions 2.3, known slow queries will run just once. From
 
 ### How long does the subscription cache last?
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 In some systems, like [WordPress’ transient system](https://developer.wordpress.org/apis/transients/), cached data will expired after a pre-defined period of time.
 
@@ -1252,7 +1252,7 @@ It is possible to maintain the cache indefinitely by keeping it up-to-date whene
 
 ### Why isn’t the Parent Order in the related order cache?
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 Parent Orders are linked to a subscription using the 
 ```
@@ -6448,7 +6448,7 @@ Need to upgrade a payment gateway for WooCommerce Subscriptions version 2.0? Che
 
 ## Step 1: Registering Support for Subscriptions
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 When an order contains a subscription product, the Subscriptions extension filters the available payment gateways to display only those that support recurring payments.
 
@@ -6486,7 +6486,7 @@ Now, whenever an order contains a subscription, if your gateway is enabled, it w
 
 ### Step 1.1: Registering Support for Subscription Management Features
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If your payment gateway supports subscription management functions, like cancelling or suspending a subscription, you should also notify Subscriptions that your gateway can handle these functions.
 
@@ -6532,7 +6532,7 @@ class WC_Awesome_Gateway extends WC_Payment_Gateway {
 
 ## Step 2: Processing a Subscription Sign-Up
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Like processing payment for a product, your payment gateway extension will need to process a subscription sign-up in its 
 ```
@@ -6552,7 +6552,7 @@ WC_Subscriptions_Order
 
 ### Initial Payment
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If your payment gateway requires one upfront amount for the beginning of the subscription, you can use
 
@@ -6576,7 +6576,7 @@ For more details, see the full [total initial payment function reference](https:
 
 ### Price Per Period
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If your payment gateway needs to know when creating the subscription how much to charge for each individual billing period, you can use:
 
@@ -6588,7 +6588,7 @@ For more details, see the full [price per period function reference](https://woo
 
 ### Sign-up Fee
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If your payment gateway needs a distinct sign-up fee amount for an order, you can call:
 
@@ -6600,7 +6600,7 @@ For more details, see the full [sign up fee function reference](https://woocomme
 
 ### Billing Period
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To get the subscription period for an order, call:
 
@@ -6612,7 +6612,7 @@ For more details, see the full [subscriptions period function reference](https:/
 
 ### Free Trial Period
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Payment gateways typically require one of two methods for setting up a free trial
 
@@ -6639,7 +6639,7 @@ To use the second method and set the start date, use the following function:
 
 ### Subscription Length
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To get the subscription duration for an order, call:
 
@@ -6651,7 +6651,7 @@ For more details, see the full [subscriptions length function reference](https:/
 
 ### Putting it all Together
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 The 
 ```
@@ -6803,13 +6803,13 @@ if ( WC_Subscriptions_Order::order_contains_subscription( $order_id ) ) {
 
 ## Step 3: Subscription Management
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 After a subscription has been purchased with your extension, certain aspects of the subscription are managed automatically while others need to be managed by your gateway extension.
 
 ### Order Status & Subscription Status Binding
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Subscription status is bound to order status changes, so using the [WooCommerce Payment Gateway API](https://woocommerce.com/document/payment-gateway-api/) to set an order’s status will automatically set the status of a subscription. When an order status changes to processing or complete, a subscription purchased in the order is activated automatically. When an order is cancelled, refunded or marked as failed, the status of a subscription in that order will also be updated to cancelled or failed.
 
@@ -6817,7 +6817,7 @@ As a result, the bare minimum required to manage a subscription is to use the [W
 
 ### Subscription Payment & Status Management
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 There is no automatic handling of subscription payments. Either your gateway or your extension will need to handle these payments.
 
@@ -7051,13 +7051,13 @@ process_subscription_payment_failure_on_order()
 
 ### Order API vs Individual Subscription API
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 You may have noticed a trend in the API. Subscriptions includes functions for operating both on an order and on an individual subscription. In most cases, you will find it easier to use the function that operates on an order. It is also better to operate on an order other than an individual subscription, because you will need to use less code within your extension.
 
 ### Subscription Management Example
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 The 
 ```
@@ -7190,7 +7190,7 @@ switch( $transaction_details['txn_type'] ) {
 
 ## Step 4: Failed Payments
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Subscriptions also provides an API for handling failed payments, which your extension may or may not need to use depending on whether your payment gateway will process failed payments.
 
@@ -7214,7 +7214,7 @@ If your gateway does not manage failed payments for you, you **must** use one of
 
 ## Step 5: Recurring Payment Method Changes
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Subscriptions 1.4 introduced a way for customers to change the payment method used for future payments on their subscription. It also uses this method to update the payment method on a subscription when a recurring payment failed.
 
@@ -7240,7 +7240,7 @@ _
 
 ### 5.1: Supporting Subscriber Payment Method Changes
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 To support [customer initiated payment method changes](https://woocommerce.com/document/subscriptions/customers-view/#section-11), your extension will only need to be able to process subscription orders with a $0 initial total. Subscriptions creates a mock checkout using the original order details and overriding the total to be $0. If your payment gateway extension correctly handles a $0 initial total, as it will need to do to process free trial periods correctly, then it shouldn’t need any additional code to handle payment method changes.
 
@@ -7270,7 +7270,7 @@ process_payment()
 
 ### 5.2: Updating the Payment Method After a Failure
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If a subscriber’s automatic payment [fails](https://woocommerce.com/document/subscriptions/renewal-process/#section-7), the subscription will be put on-hold until they log in to complete the payment.
 
@@ -7299,7 +7299,7 @@ For payment gateway changes to work, your extension will also need to be able to
 
 ## Step 6: Testing Renewal Payments
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 Once you have everything set-up and working, you may want to test recurring payments.
 
@@ -7319,11 +7319,11 @@ You can also use this method to test *payment failures*. To do so, delete or mod
 
 ## FAQs
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 ### How can I debug issues with renewal orders?
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If a renewal payment is being processed correctly at the payment gateway but the renewal order’s status is not being set to **processing** or **completed**, then it is likely a PHP fatal error is occurring during the renewal process. This error may be caused by custom code, plugin conflicts or other server related issues.
 

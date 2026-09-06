@@ -249,7 +249,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 ## No Available Payment Gateways Warning
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 During the checkout process, Subscriptions will offer a warning if there are no gateways enabled that support Subscriptions and [manual payments](https://woocommerce.com/document/subscriptions/renewal-process/#section-2) are not accepted. This message appears on the checkout page in the section where there would be payment gateways.
 
@@ -261,13 +261,13 @@ For customers, the message will inform them that there are no available payment 
 
 ## Add a Payment Gateway
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If there are no payment gateways installed yet, WooCommerce’s [guide on choosing the right payment option](https://woocommerce.com/document/premium-payment-gateway-extensions/) for your store is a good place to start. Woo Subscriptions also has a [guide on payment methods](https://woocommerce.com/document/subscriptions/payment-gateways/) that support different Subscriptions features.
 
 ## Enable a Payment Gateway
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 There are many [payment gateways](https://woocommerce.com/document/subscriptions/payment-gateways/) that are available that support Subscriptions and [automatic payments](https://woocommerce.com/document/subscriptions/payment-gateways/#section-1).
 
