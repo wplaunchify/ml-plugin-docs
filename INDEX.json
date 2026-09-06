@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T09:31:28.611Z",
+  "last_updated": "2026-09-06T09:44:26.080Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -149,7 +149,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com/documentation/",
-      "last_scraped": "2026-08-30T09:44:15.177Z",
+      "last_scraped": "2026-09-06T09:44:26.080Z",
       "page_count": 13,
       "categories": [
         "changelog",
