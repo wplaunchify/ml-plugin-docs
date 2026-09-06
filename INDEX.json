@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T09:52:50.871Z",
+  "last_updated": "2026-09-06T10:01:06.244Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -603,7 +603,7 @@
       "slug": "fluent-snippets",
       "name": "Fluent Snippets",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-08-30T21:18:00.201Z",
+      "last_scraped": "2026-09-06T10:01:06.244Z",
       "page_count": 20,
       "categories": [
         "conditional-logic",
