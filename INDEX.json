@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T18:36:35.036Z",
+  "last_updated": "2026-09-06T18:41:24.331Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1088,7 +1088,7 @@
       "slug": "hide-from-search",
       "name": "Hide from Search",
       "documentation_url": "https://wordpress.org/plugins/mpress-hide-from-search/",
-      "last_scraped": "2026-08-30T18:42:07.186Z",
+      "last_scraped": "2026-09-06T18:41:24.331Z",
       "page_count": 2,
       "categories": [
         "advanced",
