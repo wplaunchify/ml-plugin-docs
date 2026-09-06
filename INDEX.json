@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T01:58:01.453Z",
+  "last_updated": "2026-09-06T02:25:29.845Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -652,7 +652,7 @@
       "slug": "fluent-support-pro",
       "name": "Fluent Support Pro",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-08-30T02:25:46.084Z",
+      "last_scraped": "2026-09-06T02:25:29.845Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
