@@ -1,7 +1,7 @@
 {
   "plugin_slug": "learndash-lms",
   "plugin_name": "LearnDash LMS",
-  "last_scraped": "2026-08-30T12:46:25.382Z",
+  "last_scraped": "2026-09-06T12:47:05.190Z",
   "total_pages": 320,
   "failed_urls": [
     "https://learndash.com/support/kb/core/styling/styling-overview/",
