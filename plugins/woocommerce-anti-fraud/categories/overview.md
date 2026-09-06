@@ -672,7 +672,7 @@ You can get a more detailed run through here which is about 11 minutes. This is 
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
 				![](https://woocommerce.com/wp-content/uploads/2020/02/recaptcha.jpg)
 
 ### reCaptcha Integration
