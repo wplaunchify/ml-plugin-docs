@@ -2,7 +2,7 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-08-30T07:03:23.666Z",
+  "last_scraped": "2026-09-06T07:03:32.971Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
@@ -20,6 +20,19 @@
       ]
     },
     {
+      "title": "Bulk Edit Woocommerce Product Categories",
+      "slug": "bulk-edit-woocommerce-product-categories",
+      "url": "https://wpsheeteditor.combulk-edit-woocommerce-product-categories/",
+      "file": "categories/bulk-edit-woocommerce-product-categories.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Bulk Edit WooCommerce Product Categories",
+          "url": "https://wpsheeteditor.com/bulk-edit-woocommerce-product-categories/"
+        }
+      ]
+    },
+    {
       "title": "Bulk Increase Woocommerce Prices Percentage",
       "slug": "bulk-increase-woocommerce-prices-percentage",
       "url": "https://wpsheeteditor.combulk-increase-woocommerce-prices-percentage/",
@@ -29,19 +42,6 @@
         {
           "title": "How to Bulk Increase WooCommerce Prices by a Percentage",
           "url": "https://wpsheeteditor.com/bulk-increase-woocommerce-prices-percentage/"
-        }
-      ]
-    },
-    {
-      "title": "Manage Tutor Lms Content Google Sheets",
-      "slug": "manage-tutor-lms-content-google-sheets",
-      "url": "https://wpsheeteditor.commanage-tutor-lms-content-google-sheets/",
-      "file": "categories/manage-tutor-lms-content-google-sheets.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Manage Tutor LMS Content in Google Sheets (Real-Time Sync)",
-          "url": "https://wpsheeteditor.com/manage-tutor-lms-content-google-sheets/"
         }
       ]
     },

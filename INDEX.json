@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T06:54:30.447Z",
+  "last_updated": "2026-09-06T07:03:32.972Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3747,12 +3747,12 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-08-30T07:03:23.666Z",
+      "last_scraped": "2026-09-06T07:03:32.972Z",
       "page_count": 5,
       "categories": [
         "bulk-edit-prices-woocommerce-pending-orders",
+        "bulk-edit-woocommerce-product-categories",
         "bulk-increase-woocommerce-prices-percentage",
-        "manage-tutor-lms-content-google-sheets",
         "woocommerce-bulk-edit-product-attributes",
         "woocommerce-subscriptions-bulk-edit-prices"
       ]
