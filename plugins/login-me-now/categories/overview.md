@@ -217,7 +217,8 @@ The plugin is well-designed and easy to set up, and it eliminates the hassle of 
 	“Login Me Now – Passwordless, Magic Link, OTP & Social Login for WordPress” is open source software. The following people have contributed to this plugin.
 
 Contributors
-		- ![](https://secure.gravatar.com/avatar/9e18ddb47225ab6b4b1cd1f2db831f268309a0231b260a6f2ad2c4140495ed41?s=32&d=mm&r=g)				[HalalBrains](https://profiles.wordpress.org/halalbrains/)
+		- ![](https://secure.gravatar.com/avatar/9f02a5f13f4a5a111e33ab7ca97215a70cc9fc460f81d4bec8380f54c68e97dd?s=32&d=mm&r=g)				[BetterDots](https://profiles.wordpress.org/betterdots/)
+- ![](https://secure.gravatar.com/avatar/9e18ddb47225ab6b4b1cd1f2db831f268309a0231b260a6f2ad2c4140495ed41?s=32&d=mm&r=g)				[HalalBrains](https://profiles.wordpress.org/halalbrains/)
 - ![](https://secure.gravatar.com/avatar/f65c929362b7a4f9b4c425f6c68dc8cc6c9ee3e9eb134000648fe02388009ec1?s=32&d=mm&r=g)				[Mehedi](https://profiles.wordpress.org/heymehedi/)[Translate “Login Me Now – Passwordless, Magic Link, OTP & Social Login for WordPress” into your language.](https://translate.wordpress.org/projects/wp-plugins/login-me-now)
 
 ### Interested in development?
@@ -227,6 +228,10 @@ Contributors
 ## Changelog
 
 	
+#### 1.17 – Aug 29, 2026
+
+- Security: Hardened browser-extension token authentication. Token signing secrets are now generated from a cryptographically secure source, existing secrets are rotated automatically on update, and tokens are strictly bound to their owner during validation. Props to Wordfence for the responsible disclosure.
+
 #### 1.16 – Apr 29, 2026
 
 - Add: Magic Link User Access Mode setting for Pro.
@@ -312,8 +317,6 @@ Contributors
 - Improved: Simple History logging.
 
 (and previous changelog entries continue unchanged)
-
-llfudv6e8cztqv1bjadoykur2snhqao5
 
 ---
 
