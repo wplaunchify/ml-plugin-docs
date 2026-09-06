@@ -20,7 +20,7 @@ Restricting coupons based on location can increase sales as you target your prom
 
 ## How to configure location-based coupons
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Navigate to *Marketing > Coupons* in your store’s WP Admin dashboard.
 2. Create a coupon or edit an existing coupon.
@@ -37,7 +37,7 @@ That’s it. Now, your coupon will only be valid for customers whose addresses m
 
 ## What if the country, state, city, and ZIP code is not available?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 By default, in the *Locations* field, you’ll be able to search and select a country. If you don’t find a country, state, city, and ZIP code, type the exact values and hit the ‘Enter’ button from the keyboard. It will be added to the **Locations** field and database as well.
 
@@ -74,7 +74,7 @@ Once you add these custom values, you can search and select them from the next t
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
 ### Table Rate Shipping

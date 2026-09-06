@@ -176,11 +176,11 @@ is_email
 
 ## Generating coupon codes
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Case 1: Generate a unique code for each logged-in user
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Here, you want your registered customer to see a new unique code for coupon / credit, which will be used by this customer only.
 
@@ -190,7 +190,7 @@ Here, you want your registered customer to see a new unique code for coupon / cr
 
 ### Case 2: Display the same coupon code for all logged-in users
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Here, you want all your registered users to see the same coupon code and it should not be valid for a guest user or visitor. By default, limiting coupons to registered users only is not an option, but it is possible with Smart Coupons.
 
@@ -214,7 +214,7 @@ By adding a shortcode, email restrictions will be added to the coupon automatica
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
 ### Table Rate Shipping

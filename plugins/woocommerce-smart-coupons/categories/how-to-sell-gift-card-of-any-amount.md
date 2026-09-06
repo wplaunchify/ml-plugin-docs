@@ -92,7 +92,7 @@ You have added a gift card to your WooCommerce store. Your customers can now pur
 6. There’s also a Toggle to send the coupon NOW or LATER.
 7. Next is to enter the recipient’s Email address and a message for the recipient(s).
 8. If the LATER option is chosen, the date and time need to be selected. [Learn more about scheduling](https://woocommerce.com/document/smart-coupons/how-to-schedule-delivery-of-coupon/).
-9. The customer then makes the payment.![Send Gift Card form](https://woocommerce.com/wp-content/uploads/2019/10/smart-coupons-send-coupon-to-form-checkout.png?strip=all&w=704)
+9. The customer then makes the payment. ![Send Gift Card form](https://woocommerce.com/wp-content/uploads/2019/10/smart-coupons-send-coupon-to-form-checkout.png?strip=all&w=704)
 
 That’s it.
 
@@ -182,7 +182,7 @@ Refer to the steps for [creating physical gift cards](https://woocommerce.com/do
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
 ### Table Rate Shipping

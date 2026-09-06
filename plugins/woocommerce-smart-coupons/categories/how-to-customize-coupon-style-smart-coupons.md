@@ -16,7 +16,7 @@ This doc article explains how you can change coupon style and design coupons to 
 
 ## Coupon designs/styles location
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Go to your **WordPress Admin panel > WooCommerce > Settings > Smart Coupons**. You will find all the available coupon designs for your website under ‘**Styles**’ and for email under ‘**Style for email**’.
 
@@ -26,31 +26,31 @@ These designs are made keeping in mind the flexibility and the ease they will of
 
 ### Colors
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 You get a set of predefined colors/color schemes. Choose one color scheme of your choice from the available options. When you choose one color scheme, you will see the changes immediately on the same page under Styles. This will make it easier to choose a color scheme for coupons for your website.
 
 ### Styles
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Same as Colors, a set of predefined Styles are provided for coupons. Choose one style that can match the look of your website.
 
 ## Customizing coupon styles
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 You can customize both the coupon components: colors & styles.
 
 ### Customizing colors
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 If the predefined color schemes don’t match your website’s color scheme, you can make one color scheme of your choice under ‘**Customize colors**’. With this setting, you’ll be able to set three colors of your choice.
 
 ### Customizing styles
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Sometimes, you may need to remove some part of the coupon that is displayed on your website, add some more details or completely replace the style with your own style. It’s possible to do it with the Smart Coupons 4.9.0 version onwards. Let’s see how it can be done:
 
@@ -105,7 +105,7 @@ That’s it.
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or services and pay on a weekly,...
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
 ### Table Rate Shipping
