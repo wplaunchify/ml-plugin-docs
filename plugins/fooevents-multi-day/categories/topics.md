@@ -476,6 +476,20 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/check-ins-app-android/](https://help.fooevents.com/docs/topics/changelogs/check-ins-app-android/)
 
+## 3.1.12 (Sep 3, 2026)
+
+- Cater for product add-ons on the ticket view
+
+## 3.1.11 (Aug 25, 2026)
+
+- Significant improvements to scanning barcodes using an external barcode scanner
+- Additional fixes for normalizing attribute names and values to ensure attribute counts are accurate
+
+## 3.1.10 (Jun 1, 2026)
+
+- Implemented proper splash screen
+- Fixed crashes when initializing audio player for each swipe action ticket list item
+
 ## 3.1.9 (May 25, 2026)
 
 - Added a show all tickets button on bookings event date picker screen
@@ -755,6 +769,20 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/check-ins-app-ios/](https://help.fooevents.com/docs/topics/changelogs/check-ins-app-ios/)
+
+## 3.1.12 (Sep 3, 2026)
+
+- Cater for product add-ons on the ticket view
+
+## 3.1.11 (Aug 25, 2026)
+
+- Significant improvements to scanning barcodes using an external barcode scanner
+- Additional fixes for normalizing attribute names and values to ensure attribute counts are accurate
+
+## 3.1.10 (Jun 1, 2026)
+
+- Implemented proper splash screen
+- Fixed crashes when initializing audio player for each swipe action ticket list item
 
 ## 3.1.9 (May 25, 2026)
 
@@ -2538,6 +2566,14 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/](https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/)
+
+## 2.0.18 (03 October 2026)
+
+- FIXED: Select HTML theme option bug in product.
+- FIXED: Various stationary builder improvements.
+- FIXED: Incorrect plugin active check causing multi-day functionality to be excluded.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1 and WooCommerce 11.0.1.
 
 ## 2.0.16 (18 August 2026)
 
@@ -4601,6 +4637,23 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/](https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/)
+
+## 1.12.10 (31 Aug 2026)
+
+- Update: Prevent third-party plugins from hiding categories in the POS
+- Update: Support WooCommerce Product Add-ons when generating tickets using FooEvents
+- TESTED ON: WordPress 7.1 and WooCommerce 11.0.1
+
+## 1.12.9 (28 Aug 2026)
+
+- Fix: Removed unsupported payment methods
+- TESTED ON: WordPress 7.1 and WooCommerce 11.0.1
+
+## 1.12.8 (27 Aug 2026)
+
+- New: You can now update product minimum cart quantity, quantity step and quantity unit
+- Fix: Decimal price value when updating from cart product list item price
+- TESTED ON: WordPress 7.1 and WooCommerce 11.0.1
 
 ## 1.12.7 (24 Aug 2026)
 
@@ -8571,7 +8624,467 @@ The FooEvents Seating plugin is an extension for FooEvents that allows your gues
 ## Articles
 
 	- [Seating Selection and Checkout Workflow](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/seating-selection-and-checkout-workflow/)
-- [Protected: New FooEvents Seating (Beta)](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/)
+- [New FooEvents Seating (Beta)](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/)
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/)
+
+**Do not use these versions of FooEvents, FooEvents Seating, or FooEvents Bookings on a live site or for a live event. Only use the beta versions for testing on a staging or test site.**
+
+![fooevents seating version 2 beta cover](https://help.fooevents.com/wp-content/uploads/2026/06/fooevents-seating-version-2-beta_cover.png)
+
+We’ve completed development on the new **FooEvents Seating Version 2** and need your help testing it. Please configure and test FooEvents Seating Version 2 Beta on a**staging or test site only**.
+
+Please thoroughly test the full seating workflow, including building seating charts, configuring and managing seating for a product, selecting and reserving seats, purchasing tickets, and managing orders. Let us know if you encounter any issues or feel anything is missing.
+
+Download and install the following beta plugins to test the new FooEvents Seating experience:
+
+- [FooEvents](https://downloads.fooevents.com/_temp/beta/01/fooevents.zip) (Version 2.0.16-seating-beta.4)
+- **FooEvents Seating**(Version 2.0.2-seating-beta.4)
+- [FooEvents Bookings](https://downloads.fooevents.com/_temp/beta/01/fooevents_bookings.zip) (Version 2.0.16-seating-beta.4)
+- For any other FooEvents extensions, you can use the latest available versions. Ignore plugin update messages.
+
+Thanks again for helping us test and improve the new FooEvents Seating.
+
+[Send Beta Feedback](mailto:support@fooevents.com?subject=FooEvents%20Seating%20Beta%20Feedback)
+
+## Introduction
+
+FooEvents Seating has been rebuilt from the ground up to deliver a more flexible, reliable, and powerful seating experience, shaped by years of customer feedback and real-world event requirements.
+
+The new seating system gives you the freedom to create virtually any seating arrangement without the limitations of traditional row-based layouts. Instead of building a seating setup from scratch for every event, you can create highly customizable, reusable seating chart templates and apply them across multiple events, venues, dates, and time slots.
+
+At the core of the new system is a completely redesigned reservation engine that validates seat availability and reservation ownership throughout the cart and checkout process to help prevent double bookings, incorrect assignments, and unexpected releases. It has also been optimized for mobile, making it easier for customers to select seats on any device.
+
+The new FooEvents Seating Version 2 is fully integrated with [FooEvents Bookings](https://www.fooevents.com/products/fooevents-bookings/), allowing you to set up an event once and use the same seating chart across multiple bookable dates and time slots. Each date and time slot can be managed separately, including its own bookings, seat allocations, and seat selections.
+
+The system also includes change histories for seating chart templates and product-level seating changes, including manual releases and variation mappings. These logs are exportable, making them useful for troubleshooting, support, and reviewing seating-related admin activity.
+
+This is not just an evolution of FooEvents Seating. It is a major step forward in our pursuit of the most flexible, reliable, and sophisticated event seating and booking system available for WordPress.
+
+## Getting Started
+
+### Step 1: Enable the new seating experience
+
+1. Go to **FooEvents** > **Settings**.
+2. Open the **Seating** tab.
+3. Enable **Enable Seating** (Enable the new FooEvents Seating Version 2 (Beta)).
+4. **Save** your settings.
+
+Once this is enabled, you will see a new **Seating** settings tab marked **V2 Beta**. FooEvents also creates a published **Sample Seating Chart** the first time Version 2 is enabled, provided that sample chart does not already exist.
+
+![Screenshot 2026 08 24 at 14.26.11](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-14.26.11-1024x709.png)
+
+A few important things to know:
+
+- The new seating system is currently optional while it is in beta, and is disabled by default.
+- Turning it on does **not** automatically change your existing legacy seating products.
+
+### Step 2: Configure global seating settings
+
+![Screenshot 2026 08 24 at 14.27.21](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-14.27.21-1024x583.png)
+
+Go to **FooEvents** > **Settings** > **Seating (V2 Beta)** and review the available options.
+
+**Reservation hold (minutes)**
+
+This controls how long selected seats remain reserved in the cart before they are released. The default is 15 minutes. A shorter hold time can help with faster seat turnover during busy sales periods, while a longer hold time gives customers more time to complete checkout. The cart displays the approximate reservation time remaining for each selection.
+
+**Make seats available on order status**
+
+This controls when booked seats should be released automatically after an order status changes. The default and recommended option is **Never make seats available automatically**, which lets you release seats manually. You can opt to release seats when an order becomes **Cancelled** or **Failed**, but use these options with care. In particular, do not use **Failed** if customers can return and pay failed orders later, as the released seats could be booked by somebody else.
+
+**Disable Legacy Seating**
+
+This disables the older V1 seating system and hides the legacy **Seating** event type. Only enable this once you are sure you no longer need the old seating setup.
+
+### Step 3: Plan your migration
+
+If you still have active events using legacy seating, it is best to leave legacy seating enabled until those events have been fully moved over.
+
+It is not possible to convert an existing event with live seating sales from legacy seating to the new seating system. We recommend using the new seating only for events where ticket sales have not yet started, and gradually phasing out legacy seating usage.
+
+Once you have finished migrating, you can enable **Disable Legacy Seating** to keep things cleaner and reduce confusion for your team.
+
+## Creating Seating Chart Templates
+
+Templates are the foundation of the new seating system.
+
+Instead of rebuilding the same layout for every event, you can create one chart and reuse it wherever needed, including bookable events. This saves time and helps keep your venue layout consistent across performances, dates, and products.
+
+### Where to manage templates
+
+Go to **FooEvents > Seating Charts**. Templates are saved as **Seating Charts**.
+
+### How to create a template
+
+![Launch Seating Chart Builder](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.31.25.png)
+
+1. Go to **FooEvents > Seating Charts**.
+2. Click **Add New Seating Chart**.
+3. Click **Launch Seating Chart Builder**.
+4. Build your layout, then save or publish it.
+
+### What you can add in the builder
+
+![Screenshot 2026 08 24 at 10.07.44](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.07.44-1024x698.png)
+
+The seating chart builder supports a range of layout elements, including:
+
+- **Seating** sections with configurable rows, seats, numbering, chair styles, spacing, colors, and curved-row controls.
+- **Standing** sections with a capacity and a rectangle, circle, or polygon shape.
+- **Table** layouts with square or circular tables, configurable chair counts, and different chair styles.
+- **Shapes** such as squares, circles, polygons, and straight or curved lines for structure and visual guidance.
+- **Text** labels to help with directions and naming sections.
+- **Icons** for entrances, exits, accessibility points, restrooms, and more.
+- **Canvas controls** for adjusting selection colors, the background, workspace dimensions, and zoom.
+- **Layers** for finding chart elements and controlling their front-to-back order.
+- **Import / Export** JSON tools for backups or moving charts between environments.
+
+### Creating curved seating rows
+
+Seating sections can be curved to follow stages, fields, arenas, and other venue shapes.
+
+1. Add a new **Seating** section, or select an existing seating section.
+2. Under **Display**, adjust the **Curve** slider. Positive and negative values bend the rows in opposite directions, while a value of zero keeps them straight.
+3. Choose a **Curve Anchor**: **Center** creates a symmetrical curve, **Left** keeps the left end anchored, and **Right** keeps the right end anchored.
+
+The curve is preserved when the chart is saved and is used in the builder, product seating manager, and customer-facing seating chart.
+
+### Creating straight and curved lines
+
+Lines are useful for stages, aisles, barriers, boundaries, and other floor-plan details.
+
+1. Choose **Shape**, then select **Line**.
+2. Set the line width, color, and **Curve**. A value of zero creates a straight line; positive and negative values curve it in opposite directions.
+3. Select the line and drag either endpoint to change its length and direction. Hold **Shift** while dragging an endpoint to constrain it horizontally or vertically.
+
+### Selecting and moving builder items
+
+- Click an item to select it and open its editing controls.
+- Hold **Shift** and click items to add or remove them from a multi-item selection.
+- Hold **Shift** and drag from an empty part of the canvas to select multiple items with a selection box.
+- Drag any selected item to move the entire selected group together.
+- Use the arrow keys to move selected items by 1 pixel, or **Shift + Arrow key** to move them by 10 pixels.
+- Use **Cmd/Ctrl + D** to duplicate the primary selected item, **Backspace/Delete** to delete it, and **Esc** to close the editing panel and clear the selection.
+
+When multiple items are selected, the editing sidebar and duplicate/delete actions apply to the primary selected item, while dragging and keyboard movement apply to the full selection.
+
+### Layers and canvas controls
+
+Open **Layers** to see every element in the chart. Select a layer to edit its item, or drag layers to change their front-to-back order. When the layer’s drag handle is focused, use the up and down arrow keys to reorder it. You can also use **Bring to Front** and **Send to Back** from an item’s editing controls.
+
+Open **Canvas** to set the customer selection colors, canvas background color, width, height, and zoom. You can also drag the handles on the right and bottom edges of the canvas to resize it, or focus a resize handle and use the arrow keys to resize in 10-pixel steps. Dragging an empty area inside the canvas moves all chart elements together.
+
+### Understanding seat states
+
+![Screenshot 2026 08 24 at 10.10.02](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.10.02-1024x698.png)
+
+As you work with templates and live event seating, you will see different seat states:
+
+- **Available:**The seat can be selected and purchased.
+- **Unavailable:**The seat is visible, but customers cannot select it.
+- **Blocked:**The seat has been intentionally blocked by an administrator.
+- **Reserved:**The seat is temporarily being held in a customer’s cart.
+- **Booked:**The seat has been allocated to an order and ticket.
+
+### Hidden and pre-blocked chairs
+
+At template level, select a seating or table section and use **Shift + click** on a chair to cycle it from available to hidden, hidden to blocked, and blocked back to available. You can also hold **Shift** and drag across multiple chairs in the selected section to cycle their states in bulk.
+
+This is useful for things like:
+
+- obstructed view seats,
+- camera or technical areas,
+- permanently unavailable seats,
+- venue-specific exclusions.
+
+Hidden chairs will not appear as selectable seats, and pre-blocked chairs remain protected when the chart is used on products.
+
+### A note on editing live templates
+
+If a template is already being used by active events, structural changes should be made carefully.
+
+The system keeps a **Change History** and warns you that changing things like section IDs, row names, or seat numbers may affect sold tickets.
+
+![Seating Chart Builder change history](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.44.26.png)
+
+Best practice is to:
+
+- avoid major structural edits on live templates,
+- test updated templates before using them on active events.
+
+### Importing and Exporting Charts (JSON)
+
+Use the JSON tools to back up a chart or move it between environments, for example from staging to production.
+
+![Seating Chart Builder Import and Export](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.45.27.png)
+
+**How it works**
+
+1. Open the source seating chart’s edit screen.
+2. Click **Export** below the builder launcher, then copy the full JSON content.
+3. Create a **new** seating chart.
+4. On the new chart’s edit screen, click **Import**, paste the JSON, and confirm the import. Review the imported layout in the builder, then publish or save the chart.
+
+**Important**
+
+Importing JSON replaces the chart currently loaded in the builder and recreates its visual layout, including sections, rows, seats, shapes, labels, canvas settings, layers, and structure. Existing valid section IDs are preserved where possible, while missing or duplicate IDs are regenerated when the chart is saved. If you import a layout into a new chart, treat that chart as a separate template and test it before using it on active products.
+
+## Configuring Seating Charts in Products
+
+The new FooEvents Seating works with:
+
+- **Single**
+- **Sequential days**
+- **Specific days**
+- **Bookable**
+
+It does not work with the legacy **Seating** event type from V1.
+
+If your product is currently using the old **Seating** event type and you want to use the new seating system, change the event type to **Single** or another supported option first, then configure the chart settings. Existing seating selections from the old seating will not carry over, so be sure to only do this for events where seats have not yet been booked.
+
+### Product setup workflow
+
+1. Open the WooCommerce product.
+2. In **Event Details**, choose a supported event type.
+3. In **Seating Settings**, select your **Seating Chart**.
+4. **Save** the product so the seating options can be applied.
+5. Reopen the product settings to configure additional chart options.
+6. Use the **Manage Seating** buttons to view and adjust live seating availability for that product.
+
+### What the Seating Settings do
+
+![FooEvents Seating Chart settings](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.48.29.png)
+
+These settings let you control how customers interact with the chart for a specific event.
+
+**Seat grouping**
+
+Enable this to enforce grouped seat selection. Customers choose how many tickets they need, and FooEvents attempts to select an adjacent group that includes the seat they clicked. For seating rows, the selection logic also avoids leaving unusable gaps at row edges where possible. Square-table selections prioritize nearby chairs.
+
+**Default number of seats in a group**
+
+Sets the ticket quantity shown when the seat selector opens. Customers can adjust this quantity in the selector when grouping is enabled.
+
+**Maximum number of selectable items**
+
+Limits how many seats or standing places can be selected in one booking flow.
+
+These options let you fine-tune the customer experience without changing the actual seating template.
+
+### Grouped, single, and flexible selection
+
+- **Seat grouping disabled:** Customers can select any available seats individually, up to the configured maximum.
+- **Seat grouping enabled with a quantity greater than one:** Clicking a seat selects an adjacent group of the requested size where a suitable group is available.
+- **Seat grouping enabled with a quantity of one:** Single Selection Mode lets customers select an isolated seat or build a contiguous group by adding adjacent seats one at a time. After a standard row seat is selected, non-adjacent standard seats are temporarily unavailable, while genuine isolated seats remain selectable.
+
+Single Selection Mode is useful when you want to allow single-ticket purchases without encouraging customers to leave unnecessary one-seat gaps. When isolated seats are detected, the selector displays guidance explaining this flexible selection behaviour.
+
+### Managing Seating for Bookable Events
+
+![Manage seating for bookable events](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.48.10-1024x529.png)
+
+For events using [FooEvents Bookings](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-bookings/), seating is managed separately for each booking date and time slot combination. This means you can reuse the same seating chart across many dates, while keeping availability and bookings separate for each performance or timeslot.
+
+For example, a theatre could use the same seating layout every night, while still tracking sold and available seats independently for each show.
+
+This gives your team better control and keeps seating accurate across recurring bookings.
+
+### Legacy Seating and Migration
+
+The legacy **Seating** event type is the older V1 seating workflow. The new seating chart settings do not apply to those products.
+
+Existing seating selections from the old seating will not carry over to the new charts, so be sure to only do this for events where seats have not yet been booked.
+
+To move a legacy product to the new system:
+
+1. Change the event type from **Seating** to **Single** or another supported type.
+2. Assign a chart in **Seating Settings**.
+3. Configure the chart interaction settings.
+4. Save the product and test the setup from start to finish.
+
+Once all of your legacy seating products have been migrated, you can enable **Disable Legacy Seating** to simplify the admin experience.
+
+### Mapping Seating Sections to Variations
+
+If you are using variable products, you can map specific chart sections to individual variations. This is useful when different seating areas need different pricing.
+
+Open the variation settings and press the **Map Seating Sections** button:
+
+![Map seating sections on a product variation](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.51.55.png)
+
+Select the sections that should map to this variation:
+
+![Screenshot 2026 08 24 at 10.11.12](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.11.12-1024x697.png)
+
+When those areas are selected by customers, the mapped variation is applied to the selected item in the cart.
+
+![Screenshot 2026 08 24 at 10.14.01](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.14.01-1024x674.png)
+
+For example:
+
+- Balcony seats could be linked to one variation.
+- Floor seats could be linked to another.
+
+### Workflow
+
+1. Set up your product variations in WooCommerce as usual.
+2. Open the variation settings and use **Map Seating Sections** on each variation.
+3. Select the chart sections that variation should apply to.
+4. Save the product.
+
+A couple of things to keep in mind:
+
+- Sections that are not mapped will not be available in that variation.
+- Customers can only select seats that belong to the chosen variation.
+
+### Mobile experience
+
+On mobile, the seating interface guides customers through the booking flow in a more step-by-step way.
+
+- If seat grouping is enabled, customers are first asked how many tickets they want and can adjust the quantity from the selection panel.
+- If the ticket quantity is set to one, Single Selection Mode allows isolated seats or lets customers build a contiguous selection one adjacent seat at a time.
+- For bookable events, customers then choose the booking date and time slot before selecting seats.
+- After selecting chairs or standing areas, customers can use the mobile menu to review tickets, remove selections, or change the booking date where applicable.
+- Once they are happy with their selections, they continue using **Book Now**.
+
+## Product Page Experience for Customers
+
+When a seating chart is enabled on a purchasable product, the standard WooCommerce add-to-cart flow is replaced with a **Buy Tickets** button. This replacement supports both classic WooCommerce single-product templates and current block-based add-to-cart templates.
+
+When customers click **Buy Tickets**, a full-screen seating interface opens.
+
+![Screenshot 2026 08 24 at 10.16.19](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.16.19-1024x674.png)
+
+Here they can:
+
+- view the event details,
+- choose a booking date or slot if needed (FooEvents Bookings),
+- choose mapped variation or ticket options where applicable,
+- select seats or standing areas,
+- review their selections in a live summary,
+- continue using **Book Now**.
+
+This creates a much clearer experience for customers because they can see exactly what is available before going to checkout.
+
+## Checkout, Reservations, and the Seat Lifecycle
+
+### Reservation flow
+
+When a customer clicks **Book Now**:
+
+1. FooEvents checks that the selected seats are still available.
+2. The seats are temporarily reserved.
+3. They are added to the cart as individual selections.
+4. The customer is redirected to the cart.
+
+### Cart behavior
+
+![Reserved seating selections in the WooCommerce cart](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-13.04.15.png)
+
+- Customers cannot freely change the quantity of chart-based seat selections in the cart.
+- Removing a seating item from the cart releases that reservation, provided it is still tied to that session.
+- Reservation time limits are controlled by your global hold setting, and the cart shows the approximate number of minutes remaining.
+
+### Checkout behavior
+
+Before checkout is completed, reservations are checked again.
+
+If a reservation has expired or a seat is no longer valid, checkout will be stopped and the customer will need to reselect.
+
+Once checkout successfully creates the order and ticket data, the seat moves from **Reserved** to **Booked**.
+
+### Reservation Checks
+
+FooEvents Seating checks each selected seat before checkout can continue. These checks help prevent the same seat from being booked more than once.
+
+The system verifies that:
+
+- The seat reservation still exists.
+- The seat is still reserved and has not expired.
+- The reservation belongs to the current cart/session.
+- The seat has not already been booked by another order.
+- The seat has not been blocked or marked unavailable.
+- The reserved seat is still within the configured reservation hold time.
+- Seating products are added as individual seats, not grouped quantities.
+- The reserved seat can be safely converted into a booked seat when the order is placed.
+- Tickets are only generated after the seat has been successfully booked for the order.
+
+If any of these checks fail, checkout will be stopped and the customer will need to remove the expired or unavailable seat from their cart and select a seat again.
+
+### Automatic seat release rules
+
+The **Make seats available on order status** setting controls if and when seats are released automatically after order status changes.
+
+You can choose to release seats on:
+
+- **Cancelled**
+- **Failed**
+
+The default and recommended option is **Never make seats available automatically**, which leaves releases under manual control. Enable **Cancelled** or **Failed** only when those statuses reliably mean that the seats can be sold again in your order workflow. Use **Failed** with particular caution: if a customer can pay a failed order later, its released seats may already have been booked by somebody else.
+
+## Managing Tickets and Live Seating
+
+### Product-level seating management
+
+![Screenshot 2026 08 24 at 10.18.06](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.18.06-1024x697.png)
+
+From the product’s **Seating Viewer / Manage Seating**, admins can:
+
+- update live seat availability,
+- see reserved and booked seats,
+- open booking details for selected seats,
+- release booked seats where needed,
+- manage standing-area reservations.
+
+This is especially useful for support teams or venue staff who need to deal with seating issues quickly.
+
+### Ticket-level seating management
+
+![Manage Seating from a FooEvents ticket](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-13.03.39.png)
+
+On the ticket edit screen, admins can:
+
+- view the current seat or area,
+- use **Change Selection** to move it,
+- use **Release Selection** to remove it.
+
+If a new seat is not available, the original seat stays unchanged so that no data is lost.
+
+### Cancellations and refunds
+
+This is important to understand:
+
+- Canceling or deleting a ticket does **not** automatically release the seat.
+- Refunding an order item does **not** automatically release the seat.
+
+If you want a seat to become available again, it needs to be released manually through the seating management tools, or handled through your chosen order-status release rules.
+
+## Recommended Rollout Plan
+
+A safe way to introduce the new seating system is to do it in stages:
+
+1. Enable it on a staging site first.
+2. Build and test templates for real venue layouts, including curved rows or lines, hidden seats, and pre-blocked seats where applicable.
+3. Apply charts to a small number of products first.
+4. Test key flows, including single-day, sequential days, specific days, bookable, and variation-based seating.
+5. Test selection with grouping disabled, grouped quantities greater than one, and Single Selection Mode with a quantity of one. Include isolated seats, tables, standing areas, and maximum ticket limits where applicable.
+6. Test both classic and block-based WooCommerce product templates if your site uses them.
+7. Test reservation expiry, the cart countdown, conflict handling, order-status releases, and manual seat releases.
+8. Make sure your support or admin team knows how to manage seating live.
+9. Migrate the rest of your products in phases.
+10. Disable legacy seating only when you are fully done with V1.
+
+## Currently not supported
+
+The following functionality is not yet supported in the FooEvents Seating Version 2 beta:
+
+- **FooEvents Check-ins app:** Seating Version 2 information is not currently displayed in the publicly available FooEvents Check-ins app. Support will be added before launch.
+- **FooEvents Point of Sale:** Support for FooEvents Seating Version 2 is under development and will be added in a future release.
 
 ---
 
