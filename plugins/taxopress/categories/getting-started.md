@@ -12,6 +12,20 @@ You can find the changelog for the free version [by clicking this link to WordPr
 
 You can find the changelog for the Pro version below:
 
+## [3.53.0] - 01 September, 2026
+
+* Fixed: Mass Edit pagination is broken, #3014
+
+* Update: Enforce native taxonomy capabilities for term actions, #3013
+
+* Update: Bound Auto Terms existing-content processing, #3012
+
+* Update: Restrict administrative taxonomy term lookups, #3011
+
+* Update: Harden AI integrations and metabox mutations, #3010
+
+* Add a loco.xml file, #3009
+
 ## [3.52.0] - 20 August, 2026
 
 * Update: Normalize Auto Terms specific-term values, #3001

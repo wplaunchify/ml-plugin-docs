@@ -121,7 +121,18 @@ This is a guide to using shortcodes to display the “[Post List](https://taxopr
 ## Shortcode
 
 ```
-How to Add Categories and Tags to Existing WordPress Posts with TaxoPress
+The TaxoPress Plugins Are Moving to PublishPress
+  Posted on September 2, 2026 by steveburgerv.  News
+ 
+ 
+  Hey, and thanks for using TaxoPress. Our goal is to build the best plugins to manage the Tags and Categories on your WordPress sites. I want to share with you a change that will help us reach that goal. And it will have an impact on how you use the plugins. TaxoPress will become part...
+ 
+
+        
+                    
+            
+ 
+  How to Add Categories and Tags to Existing WordPress Posts with TaxoPress
   Posted on August 19, 2026 by steveburgerv.  The TaxoPress Blog
  
  
@@ -159,17 +170,6 @@ How to Add Categories and Tags to Existing WordPress Posts with TaxoPress
  
  
   TaxoPress 3.44 is available now. The Free version is available from the WordPress plugin directory and TaxoPress members can download the Pro version from this website. The big new feature to start 2026 involves the "Auto Terms" feature. Auto Terms is popular because it can automatically add relevant terms to your posts. For example, if...
- 
-
-        
-                    
-            
- 
-  Use TaxoPress to Customize the Order of Tags and Categories
-  Posted on October 3, 2025 by steveburgerv.  Releases
- 
- 
-  TaxoPress 3.37 is available now. The Free version is available from the WordPress plugin directory and TaxoPress members can download the Pro version from this website. There is one major new feature, but several helpful improvements in this release. Let me introduce you to the big new feature which allows to choose any order you...
 ```
 
 ---

@@ -191,10 +191,10 @@ if (typeof tagGroupsMakeTableResponsive === 'undefined') {
     }
   }
   if (typeof TagGroupsDynamicPostFilter !== 'undefined' && jQuery !== 'undefined' && jQuery.basictable !== 'undefined') {
-          tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a93ccb7d6b49','800');
+          tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a9d071c1e283','800');
     } else {
       jQuery(document).ready(function(){
-        setTimeout(function(){tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a93ccb7d6b49','800');}, 500);
+        setTimeout(function(){tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a9d071c1e283','800');}, 500);
       });
     }
 ```
@@ -213,10 +213,10 @@ if (typeof tagGroupsMakeTableResponsive === 'undefined') {
     }
   }
   if (typeof TagGroupsDynamicPostFilter !== 'undefined' && jQuery !== 'undefined' && jQuery.basictable !== 'undefined') {
-          tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a93ccb7d7550','800');
+          tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a9d071c1e8d9','800');
     } else {
       jQuery(document).ready(function(){
-        setTimeout(function(){tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a93ccb7d7550','800');}, 500);
+        setTimeout(function(){tagGroupsMakeTableResponsive('tag-groups-cloud-table-6a9d071c1e8d9','800');}, 500);
       });
     }
 ```
