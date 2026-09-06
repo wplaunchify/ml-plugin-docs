@@ -245,8 +245,6 @@ That’s it. Set a schedule once and your affiliates are paid on time, each thro
 
 Paying an affiliate in another country comes down to which payout method reaches them. **Stripe reaches the most countries, and pays each affiliate in their own local currency**, from the Stripe account you already use, so it is where most stores start and it is most of this article. PayPal reaches several countries Stripe does not. Store credit and a manual payout cover the rest.
 
-One Stripe payout run can settle in multiple currencies at once. AffiliateWP gives you two Stripe options for other countries, both in the **International Affiliate Payouts** group at **AffiliateWP » Settings » Payouts**: **Via their Stripe account**, which uses Stripe’s cross-border payouts, and **Straight to their bank account**, which uses Stripe Global Payouts. You can run either one or both, and AffiliateWP picks the right one for each affiliate from the country they get paid in.
-
 In This Article
 
 - [Which method reaches which countries](#which-method-reaches-which-countries)
@@ -262,8 +260,8 @@ Four methods can pay an affiliate in another country, and they differ in two way
 
 | Method | Reaches | The affiliate receives | You need |
 | --- | --- | --- | --- |
-| Stripe, via their Stripe account | The US, the UK, Canada, Switzerland and most of Europe | Their own local currency, in their own bank account | A Stripe account based in the US, the UK, the EEA, Canada, or Switzerland |
-| Stripe, straight to their bank account | Far wider, including much of Asia, Africa and Latin America | Their own local currency, in their own bank account | A Stripe account based in the US or the UK |
+| Stripe, Bank payouts (via Stripe account) | The US, the UK, Canada, Switzerland and most of Europe | Their own local currency, in their own bank account | A Stripe account based in the US, the UK, the EEA, Canada, or Switzerland |
+| Stripe, Bank payouts (direct) | Far wider, including much of Asia, Africa and Latin America | Their own local currency, in their own bank account | A Stripe account based in the US or the UK |
 | PayPal | Almost anywhere PayPal operates, including countries neither Stripe option covers | Your store’s currency, in their PayPal balance. PayPal converts it if they move it out | PayPal set up as a payout method |
 | Store credit | Anywhere. No money crosses a border | Credit to spend on your store. Nothing reaches a bank | WooCommerce or Easy Digital Downloads |
 | Manual | Anywhere you can send money yourself | Whatever you send, however you send it | Nothing. You pay them outside AffiliateWP |
@@ -272,11 +270,18 @@ Stripe is the only one of these with real machinery behind it, so most of this a
 
 ## Paying affiliates with Stripe
 
-### Via their Stripe account
+One payout run can settle in multiple currencies at once. For affiliates in other countries you have two options, both in the **International Affiliate Payouts** group at **AffiliateWP » Settings » Payouts**.
 
-Stripe cross-border payouts pay an affiliate in another country through a Stripe Express account, funded from the payments balance already in your Stripe account. In AffiliateWP this is the **Via their Stripe account** option.
+- **Bank payouts (via Stripe account)** uses Stripe’s cross-border payouts, and reaches 30+ countries.
+- **Bank payouts (direct)** uses Stripe Global Payouts, and reaches 90+.
 
-![The Via their Stripe account row in AffiliateWP settings, turned on, describing cross-border payouts that reach the affiliate's own bank in their local currency](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-via-their-stripe-account-1232x180.png)
+Turn on either or both. AffiliateWP picks the right one for each affiliate from the country they get paid in.
+
+### Bank payouts (via Stripe account)
+
+Stripe cross-border payouts pay an affiliate in another country through a Stripe Express account, funded from the payments balance already in your Stripe account. In AffiliateWP this is the **Bank payouts (via Stripe account)** option.
+
+![The Bank payouts (via Stripe account) row in AffiliateWP settings, turned on, describing payouts to the affiliate's bank in 30+ countries through a Stripe account AffiliateWP creates for them](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-bank-payouts-via-stripe-account-1232x182.png)
 
 **AffiliateWP creates the Express account for the affiliate.** They never sign up for Stripe or fill in an application. When they pick Stripe in their payout settings, AffiliateWP sets the account up in their name, with their country and email address already filled in, and sends them to a Stripe page to confirm their identity and add their bank details. An Express account is a lightweight account for receiving money, not a full Stripe merchant account, and it is the only Stripe account on their side.
 
@@ -293,13 +298,13 @@ This option reaches 30+ countries: the US, the UK, Canada, Switzerland, and most
 
 The same Stripe Express setup also handles US tax forms. When you and the affiliate are both in the US, AffiliateWP pays them through an Express account so Stripe can collect a W-9 and file the 1099. A payout inside your own country works this way whether or not you turn this option on, because the option only governs affiliates in other countries.
 
-This option is off until you switch it on. Look for the **Via their Stripe account** row in the **International Affiliate Payouts** group and turn on the toggle beside it. See [Turning on international payouts](#turning-on-international-payouts) for the steps.
+This option is off until you switch it on. Look for the **Bank payouts (via Stripe account)** row in the **International Affiliate Payouts** group and turn on the toggle beside it. See [Turning on international payouts](#turning-on-international-payouts) for the steps.
 
-### Straight to their bank account
+### Bank payouts (direct)
 
-Stripe Global Payouts pay an affiliate’s bank account directly, with no Stripe account for them to create. In AffiliateWP this is the **Straight to their bank account** option.
+Stripe Global Payouts pay an affiliate’s bank account directly, with no Stripe account for them to create. In AffiliateWP this is the **Bank payouts (direct)** option.
 
-![The Straight to their bank account row in AffiliateWP settings, turned on, with a US and UK badge and a green Connected badge showing the Stripe Financial Account was found](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-straight-to-their-bank-account-1232x183.png)
+![The Bank payouts (direct) row in AffiliateWP settings, turned on, with a US and UK badge, and the Local bank transfers and Wire transfers toggles revealed beneath it, each with a link to its country list](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-bank-payouts-direct-1232x404.png)
 
 This option reaches 90+ countries, and that is the reason to turn it on: it pays places the other option cannot reach at all, such as Mexico, India, Australia, Japan, Iceland, Indonesia, the United Arab Emirates, and South Africa. Your own Stripe account has to be based in the US or the UK.
 
@@ -323,7 +328,7 @@ The payment leaves your Stripe Financial Account and lands in the affiliate’s 
 
 The affiliate needs a Stripe Express account for cross-border payouts and needs nothing for Global Payouts. Cross-border payouts reach 30+ countries and spend your existing payments balance. Global Payouts reach 90+ countries and spend a Financial Account you fund first.
 
-|  | Via their Stripe account | Straight to their bank account |
+|  | Bank payouts (via Stripe account) | Bank payouts (direct) |
 | --- | --- | --- |
 | Stripe product | Cross-border payouts | Global Payouts |
 | What the affiliate does | Confirms their identity and bank details on a Stripe page. AffiliateWP creates the Express account itself | Enters bank details on a Stripe page. No Stripe account needed |
@@ -338,18 +343,18 @@ Your own Stripe account can be based in any of these.
 
 | Region | Supported countries |
 | --- | --- |
+| European Union | Austria, Belgium, Bulgaria, Croatia/Hrvatska, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovak Republic, Slovenia, Spain, Sweden |
 | North America | Canada, United States |
+| Other Europe | Iceland, Liechtenstein, Norway, Switzerland |
 | United Kingdom | United Kingdom |
-| European Union | France, Germany, Netherlands, Sweden |
-| Other Europe | Switzerland |
 
 If your own Stripe account is based outside those regions, Stripe offers neither option, so you pay affiliates with PayPal, store credit, or by hand.
 
-If you only pay affiliates in the US, the UK, Canada, Switzerland, and Europe, **Via their Stripe account** on its own is enough. Turn on **Straight to their bank account** as well the moment you have an affiliate outside that set. Neither toggle changes anything for affiliates in your own country: those payouts always run through a Stripe Express account, which is what keeps US 1099s working.
+If you only pay affiliates in the US, the UK, Canada, Switzerland, and Europe, **Bank payouts (via Stripe account)** on its own is enough. Turn on **Bank payouts (direct)** as well the moment you have an affiliate outside that set. Neither toggle changes anything for affiliates in your own country: those payouts always run through a Stripe Express account, which is what keeps US 1099s working.
 
 ### Countries Stripe reaches
 
-**Via their Stripe account** uses Stripe’s cross-border payouts, which reach affiliates in the US, the UK, Canada, Switzerland, and most of Europe.
+**Bank payouts (via Stripe account)** uses Stripe’s cross-border payouts, which reach affiliates in the US, the UK, Canada, Switzerland, and most of Europe.
 
 | Region | Supported countries |
 | --- | --- |
@@ -358,11 +363,11 @@ If you only pay affiliates in the US, the UK, Canada, Switzerland, and Europe, *
 | Other Europe | Switzerland, Liechtenstein, Norway |
 | United Kingdom | United Kingdom |
 
-**Straight to their bank account** uses Stripe Global Payouts, which reach 90+ countries. That option covers every country in the list above, plus a long tail cross-border payouts cannot reach. Stripe splits those into two groups, and you can include or exclude each group.
+**Bank payouts (direct)** uses Stripe Global Payouts, which reach 90+ countries. That option covers every country in the list above, plus a long tail cross-border payouts cannot reach. Stripe splits those into two groups, and you can include or exclude each group.
 
-#### Local bank countries
+#### Local bank transfers
 
-Stripe pays these over the country’s ordinary bank network, and AffiliateWP labels the delivery **Standard**. This is the larger group, at 50+ countries.
+Stripe pays these by ordinary bank transfer inside the country, and AffiliateWP labels the delivery **Local**. This is the larger group, at 50+ countries.
 
 | Region | Supported countries |
 | --- | --- |
@@ -372,7 +377,7 @@ Stripe pays these over the country’s ordinary bank network, and AffiliateWP la
 | Middle East | Israel |
 | Africa | Benin, Cote d'Ivoire, Morocco, Senegal, Tunisia |
 
-#### Wire-only countries
+#### Wire transfers
 
 Stripe can only reach these by wire transfer, at 40+ countries. You do not choose the delivery method: Stripe decides it from the affiliate’s country.
 
@@ -390,18 +395,18 @@ If an affiliate’s country is in neither option you have turned on, they will n
 
 Each affiliate is paid in their own local currency. Stripe converts from your store’s currency for you, so you can pay affiliates in many currencies at once with no exchange-rate work on your side. Which option pays them decides who covers the conversion fee, so see [what it costs](#what-does-it-cost-to-pay-affiliates-internationally).
 
-On **Straight to their bank account**, AffiliateWP records exactly what the affiliate’s bank was credited, in their currency, and the rate Stripe used. See [how to check that a payout arrived](#checking-that-a-payout-arrived).
+On **Bank payouts (direct)**, AffiliateWP records exactly what Stripe sent to their bank, in their currency, and the rate it used. See [how to check that a payout arrived](#checking-that-a-payout-arrived).
 
 ### What Stripe charges
 
 AffiliateWP adds no fee of its own to either option. Every charge below is Stripe’s, so treat its own pages as the source of truth: [cross-border payouts pricing](https://docs.stripe.com/connect/cross-border-payouts#pricing) and [Global Payouts pricing](https://docs.stripe.com/global-payouts/pricing).
 
-**Via their Stripe account.** Two separate fees apply.
+**Bank payouts (via Stripe account).** Two separate fees apply.
 
 - **A cross-border fee, paid by you.** Stripe currently charges 0.25% on each payout that crosses a border. It is waived for payouts to an affiliate in your own country, for payouts within the EEA, and for payouts between the UK and the EEA. So a UK store paying a German affiliate pays nothing extra, while a US store paying a UK affiliate pays the fee.
 - **A currency conversion fee, paid by the affiliate.** When Stripe converts the payout into the affiliate’s currency it deducts a conversion fee from the amount they receive. The rate depends on the currency pair and on your Stripe account’s country. The affiliate sees the deduction in their Stripe Express dashboard, not in AffiliateWP.
 
-**Straight to their bank account.** Stripe collects all of these from your Financial Account, so the affiliate is not charged a conversion fee out of their payment. There are three parts:
+**Bank payouts (direct).** Stripe collects all of these from your Financial Account, so the affiliate is not charged a conversion fee out of their payment. There are three parts:
 
 - A fixed fee for each payout. AffiliateWP sends one payout per affiliate per run, not one per referral.
 - A cross-border percentage that varies by destination country.
@@ -419,12 +424,12 @@ You need one Stripe account, based in a country Stripe can pay out from, connect
 
 What you can use depends on the country of your connected Stripe account, not your store’s address.
 
-**Via their Stripe account** needs:
+**Bank payouts (via Stripe account)** needs:
 
 - Stripe set up for the mode you are using, Live or Sandbox
 - A Stripe account based in one of the eight sender countries in the [comparison table](#whats-the-difference-between-stripe-cross-border-payouts-and-global-payouts) above
 
-**Straight to their bank account** needs the same, with a tighter country list:
+**Bank payouts (direct)** needs the same, with a tighter country list:
 
 - A Stripe account based in the US or the UK, which is a subset of those eight sender countries
 - Global Payouts active on that same account, so a Stripe Financial Account exists for AffiliateWP to find
@@ -438,15 +443,15 @@ If you cannot find Global Payouts on a US or UK Stripe account, Stripe controls 
 
 Turn either option on from the **International Affiliate Payouts** group at **AffiliateWP » Settings » Payouts**. Neither is on by default, and you can use one or both.
 
-![The International Affiliate Payouts group in AffiliateWP settings, with both options on and the Local bank countries and Wire-only countries toggles showing](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-settings-both-options-1232x942.png)
+![The International Affiliate Payouts group in AffiliateWP settings, with both options on and the Local bank transfers and Wire transfers toggles showing](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-settings-group-1232x859.png)
 
 1. Go to **AffiliateWP » Settings » Payouts** and open the Stripe card. Confirm Stripe is set up for the mode you are using, Live or Sandbox.
 2. Find the **International Affiliate Payouts** group.
-3. To pay through a Stripe Express account that AffiliateWP creates for each affiliate, turn on the toggle on the **Via their Stripe account** row.
-4. To pay their bank directly, first activate Global Payouts in your Stripe Dashboard so a Financial Account exists. Back in AffiliateWP, click **Check now** if it has not been found yet, then turn on the toggle on the **Straight to their bank account** row.
-5. Turning that row on reveals two more toggles beneath it, **Local bank countries** and **Wire-only countries**. Leave both on, unless you want those affiliates to use the other option or a different payout method instead.
+3. To pay through a Stripe Express account that AffiliateWP creates for each affiliate, turn on the toggle on the **Bank payouts (via Stripe account)** row.
+4. To pay their bank directly, first activate Global Payouts in your Stripe Dashboard so a Financial Account exists. Back in AffiliateWP, click **Check now** if it has not been found yet, then turn on the toggle on the **Bank payouts (direct)** row.
+5. Turning that row on reveals two more toggles beneath it, **Local bank transfers** and **Wire transfers**. Leave both on, unless you want those affiliates to use the other option or a different payout method instead.
 
-Set up the webhook so Stripe can tell AffiliateWP when an account finishes setup or a payout fails. Global Payouts registers its own Stripe events automatically. For **Via their Stripe account**, copy the endpoint and signing secret from the **Webhook Configuration** block further down the Stripe card into your Stripe Dashboard.
+Set up the webhook so Stripe can tell AffiliateWP when an account finishes setup or a payout fails. Global Payouts registers its own Stripe events automatically. For **Bank payouts (via Stripe account)**, copy the endpoint and signing secret from the **Webhook Configuration** block further down the Stripe card into your Stripe Dashboard.
 
 Payouts still run without it, because AffiliateWP asks Stripe about each account when it needs to. What you lose is the notifications: nobody is emailed when an affiliate finishes setup, when Stripe needs more information from them, or when a payout fails.
 
@@ -456,13 +461,13 @@ If a toggle is greyed out, one of these applies:
 - Stripe is not set up yet, or the mode you are using is missing its Stripe keys
 - On the bank option only, AffiliateWP has not found a Financial Account yet
 
-A German, Canadian, Swiss, French, Dutch, or Swedish Stripe account can use **Via their Stripe account** and still see the bank option locked. Global Payouts is US and UK only.
+A German, Canadian, Swiss, French, Dutch, or Swedish Stripe account can use **Bank payouts (via Stripe account)** and still see the bank option locked. Global Payouts is US and UK only.
 
 ### Testing before you pay anyone real
 
 Both options work in Stripe’s sandbox, so you can run the whole flow before any real money moves.
 
-Switch on **Sandbox Mode** in the Stripe card and add your test secret key. The card then shows two balances, each with its own **Add Funds** control: **Payments balance** funds **Via their Stripe account**, and **Financial Account balance** funds **Straight to their bank account**. Test funds are spendable straight away. Topping up the Financial Account from AffiliateWP works for USD and GBP stores only, and other currencies top up in the Stripe Dashboard instead.
+Switch on **Sandbox Mode** in the Stripe card and add your test secret key. The card then shows two balances, each with its own **Add Funds** control: **Payments balance** funds **Bank payouts (via Stripe account)**, and **Financial Account balance** funds **Bank payouts (direct)**. Test funds are spendable straight away. Topping up the Financial Account from AffiliateWP works for USD and GBP stores only, and other currencies top up in the Stripe Dashboard instead.
 
 ![The Sandbox Mode card in AffiliateWP's Stripe payout settings, showing the Payments balance and the Financial Account balance, each with its own amount field and Add Funds control](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-sandbox-mode-balances-1232x1186.png)
 
@@ -473,13 +478,13 @@ Your keys and your Financial Account are stored separately for each mode, so a s
 AffiliateWP picks the option from the payout country each affiliate declares. Affiliates only ever see one method called Stripe, and never choose between the two themselves. The order is:
 
 1. An affiliate in the same country as your Stripe account, always: a **Stripe Express account**, whether or not you turn either option on. That payout does not cross a border, so Stripe charges no cross-border fee. For a US store paying a US affiliate, it is also what lets Stripe collect a W-9 and file the 1099.
-2. An affiliate abroad, in a country the bank option covers, with that option on: **Straight to their bank account**. When both options cover the country a new affiliate goes here, because the setup is shorter for them.
-3. An affiliate abroad, in a country only the other option covers, with that option on: **Via their Stripe account**.
+2. An affiliate abroad, in a country the bank option covers, with that option on: **Bank payouts (direct)**. When both options cover the country a new affiliate goes here, because the setup is shorter for them.
+3. An affiliate abroad, in a country only the other option covers, with that option on: **Bank payouts (via Stripe account)**.
 4. An affiliate in a country neither option reaches: another payout method you have turned on, such as PayPal, so they never start a Stripe setup that cannot finish.
 
 Two rules keep affiliates who are already set up where they are:
 
-- An affiliate who finished **Via their Stripe account** stays on it, even if their country would now go to the bank option.
+- An affiliate who finished **Bank payouts (via Stripe account)** stays on it, even if their country would now go to the bank option.
 - An affiliate who shows **Ready to receive payouts** on the bank option stays there until you turn that option off, or turn off the country group that covers them.
 
 To see which option an affiliate is on, open their Edit Affiliate screen from **AffiliateWP » Affiliates**. The payout country field names the option above its description, for example **Paid through Stripe Global Payouts** or **Stripe Connect (cross-border payouts)**.
@@ -490,13 +495,13 @@ To see which option an affiliate is on, open their Edit Affiliate screen from **
 
 Open the payout at **AffiliateWP » Payouts**. On the bank option the payout records what actually happened at the bank, which answers most “where is my money” questions without leaving WordPress:
 
-- **What the affiliate’s bank was credited**, in their currency, alongside the amount debited in your store currency, and the exchange rate Stripe used.
-- **How it was sent**, shown as **Standard** for a local bank transfer or **Wire**.
+- **What Stripe sent to their bank**, in their currency, alongside the amount debited in your store currency, and the exchange rate Stripe used.
+- **How it was sent**, shown as **Local** for a local bank transfer or **Wire**.
 - **A timeline**: **Payout sent**, then **Payout paid**. While it is still in flight the timeline ends with **Expected arrival**, and a payout that fails, returns, or is cancelled is stamped too.
 - **A Stripe receipt** you can forward to an affiliate who asks for proof of payment.
 - **A link to the payment in Stripe**, where the fees for that payout are itemised.
 
-![The payout drawer in AffiliateWP for a Global Payouts payout to Kenji Sato, showing 10,847 JPY credited, the exchange rate, a Payout sent and Payout paid timeline, and Wire delivery](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-payout-drawer-global-1232x1023.png)
+![The payout drawer in AffiliateWP for a Global Payouts payout to Kenji Sato, showing 5,418 JPY credited, the exchange rate Stripe used, a Sent to Stripe, Sent to the bank and Expected arrival timeline, Wire delivery, and a bank trace ID](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-payout-drawer-global-2-1232x1407.png)
 
 ### Why a payout can be too small to send
 
@@ -514,7 +519,7 @@ To change it, open their Edit Affiliate screen from **AffiliateWP » Affiliates*
 
 ![The Payout country and Payout setup rows on an affiliate's Edit Affiliate screen in AffiliateWP, showing a Ready badge, the bank ending 0010, and the Remove affiliate from Global Payouts control](https://affiliatewp.com/wp-content/uploads/2026/08/international-affiliate-payouts-remove-from-global-payouts-1232x291.png)
 
-The lock also lifts on its own if the affiliate’s country stops being covered. That happens when you turn off one of the two country groups under the **Straight to their bank account** row, **Local bank countries** or **Wire-only countries**, and the affiliate is in the group you turned off. Their details stay on file, but they cannot be paid that way until you turn that group back on.
+The lock also lifts on its own if the affiliate’s country stops being covered. That happens when you turn off one of the two country groups under the **Bank payouts (direct)** row, **Local bank transfers** or **Wire transfers**, and the affiliate is in the group you turned off. Their details stay on file, but they cannot be paid that way until you turn that group back on.
 
 On the Stripe-account option, an affiliate who has not finished setup can fix this themselves with **Choose a different country**.
 
@@ -522,9 +527,9 @@ On the Stripe-account option, an affiliate who has not finished setup can fix th
 
 The two options do not behave the same way when you switch them off, so the detail matters.
 
-**Via their Stripe account.** Turning this off only stops new international affiliates from setting it up. Affiliates who already finished keep getting paid, wherever they are. Affiliates in your own country can use Stripe whether this is on or off.
+**Bank payouts (via Stripe account).** Turning this off only stops new international affiliates from setting it up. Affiliates who already finished keep getting paid, wherever they are. Affiliates in your own country can use Stripe whether this is on or off.
 
-**Straight to their bank account.** Turning that row’s toggle off, or turning off either of the country groups beneath it, **Local bank countries** or **Wire-only countries**, means those affiliates can no longer be paid that way. AffiliateWP moves them to **Via their Stripe account** if it can pay their country, or to another payout method you have turned on. Until then they cannot be paid through Stripe, and the affiliate list and the pay-referral screen say so and link you back to the setting.
+**Bank payouts (direct).** Turning that row’s toggle off, or turning off either of the country groups beneath it, **Local bank transfers** or **Wire transfers**, means those affiliates can no longer be paid that way. AffiliateWP moves them to **Bank payouts (via Stripe account)** if it can pay their country, or to another payout method you have turned on. Until then they cannot be paid through Stripe, and the affiliate list and the pay-referral screen say so and link you back to the setting.
 
 Turning either option off never deletes an affiliate’s Stripe account or bank details. It only changes who can use which option next.
 
@@ -564,11 +569,11 @@ Because it always works, it is also where an affiliate quietly ends up when noth
 
 ### Do I need a special Stripe account to pay affiliates internationally?
 
-No. Both options run on the Stripe account you already have. **Via their Stripe account** works from any of the eight sender countries listed in the comparison table. **Straight to their bank account** narrows that to the US and the UK, and needs Global Payouts active on the account so a Stripe Financial Account exists.
+No. Both options run on the Stripe account you already have. **Bank payouts (via Stripe account)** works from any of the eight sender countries listed in the comparison table. **Bank payouts (direct)** narrows that to the US and the UK, and needs Global Payouts active on the account so a Stripe Financial Account exists.
 
 ### An affiliate’s country is not supported. Can they still use Stripe?
 
-Yes, if **Straight to their bank account** is on and their country appears in the local bank or wire-only lists under [Which countries can I pay affiliates in?](#which-countries-can-i-pay-affiliates-in). If neither option covers the country, turn on PayPal or another payout method, or pay them by hand.
+Yes, if **Bank payouts (direct)** is on and their country appears in the local bank or wire-only lists under [Which countries can I pay affiliates in?](#which-countries-can-i-pay-affiliates-in). If neither option covers the country, turn on PayPal or another payout method, or pay them by hand.
 
 ### I don’t see Global Payouts in my US or UK Stripe account. What do I do?
 
@@ -588,7 +593,7 @@ Open their Edit Affiliate screen from **AffiliateWP » Affiliates**. The payout 
 
 ### An affiliate says they received less than their commission. Why?
 
-On **Via their Stripe account**, Stripe deducts its currency conversion fee from the amount the affiliate receives, and they only see it in their Stripe Express dashboard. On **Straight to their bank account**, open the payout at **AffiliateWP » Payouts** to see exactly what their bank was credited and the exchange rate used, and forward them the Stripe receipt.
+On **Bank payouts (via Stripe account)**, Stripe deducts its currency conversion fee from the amount the affiliate receives, and they only see it in their Stripe Express dashboard. On **Bank payouts (direct)**, open the payout at **AffiliateWP » Payouts** to see exactly what Stripe sent and the exchange rate it used, and forward them the Stripe receipt.
 
 ### An affiliate isn’t getting paid. What should I check?
 
@@ -1636,7 +1641,7 @@ To get started, go to **AffiliateWP » Settings » Payouts** and click **Configu
 
 ![The Payout Methods card on the AffiliateWP Payouts settings screen with nothing enabled yet, noting that payouts can still be processed manually, and an arrow pointing at the Configure button on the Stripe row](https://affiliatewp.com/wp-content/uploads/2026/08/payout-methods-card-empty-1232x590.png)
 
-**International Affiliate Payouts**: Two options for paying affiliates in other countries in their local currency. **Via their Stripe account** pays through a Stripe Express account. **Straight to their bank account** reaches more countries and pays the bank directly, and needs a US- or UK-based Stripe account.
+**International Affiliate Payouts**: Two options for paying affiliates in other countries in their local currency. **Bank payouts (via Stripe account)** pays through a Stripe Express account. **Bank payouts (direct)** reaches more countries and pays the bank directly, and needs a US- or UK-based Stripe account.
 
 ![](https://affiliatewp.com/wp-content/uploads/2025/08/International-Affiliate-Payouts-767x185.png)
 
@@ -19650,7 +19655,7 @@ Below is a useful list of common affiliate marketing and AffiliateWP terms, as w
 
 **Payout/payment** – The payment made to affiliates after a certain period of time (usually 30 days) whereby they receive all unpaid earnings owed to them through a payment gateway or other payment method.
 
-**Payout file** – A CSV file generated by AffiliateWP which contains the email addresses, the unpaid earnings total, and the currency for all affiliates with unpaid earnings in a specified date range. This file has been specifically formatted for the Mass Payment option provided by PayPal and Skrill, as well as other similar systems.
+**Payout file** – A CSV file AffiliateWP writes when you run a payout, listing the email address, the amount and the currency for each affiliate paid by the manual method. It leaves out affiliates paid through Stripe or PayPal on purpose, because a payment provider has already paid them. Your browser downloads the file when the run finishes, and you can download it again from the payout batch.
 
 **Payment gateway** – A secure and encrypted eCommerce service provider that authorizes credit card and monetary payments for web-based businesses and individuals. Some examples of popular payment gateways are PayPal, Stripe, and Skrill, to name a few.
 
@@ -19727,7 +19732,7 @@ Log into your account
 
 **WordPress user account** – An account that is created when a user signs up to a WordPress website. WordPress requires all WordPress users to create an account – therefore affiliates must have a WordPress user account on your website before an affiliate account can be created. When users register themselves as an affiliate, a WordPress user account is automatically created for them. New affiliates are automatically given the WordPress Subscriber user role. Affiliates can log in to their WordPress user account on your website to change their password and basic contact information (they cannot make any changes to your website).
 
-**WordPress user role** – WordPress has a built-in user management system which allows you to determine what each user can and cannot do on your website. Out of the box, there are five default user roles: Administrator, Editor, Author, Contributor and Subscriber. You can read more on the various user roles and their capabilities on WordPress.org: [WordPress Roles & Capabilities](https://codex.wordpress.org/Roles_and_Capabilities).
+**WordPress user role** – WordPress has a built-in user management system which allows you to determine what each user can and cannot do on your website. Out of the box, there are five default user roles: Administrator, Editor, Author, Contributor and Subscriber. You can read more on the various user roles and their capabilities on WordPress.org: [WordPress Roles & Capabilities](https://wordpress.org/documentation/article/roles-and-capabilities/).
 
 **Visit** – A unique hit when someone visits your website. Visits are the number of of times your site is visited (by the same visitor or multiple visitors). In AffiliateWP, a visit is recorded when a visitor lands on your website after clicking on an affiliate referral URL. When a visit occurs, AffiliateWP stores two cookies in the customer’s browser. A new visit will not be recorded unless the stored affwp_ref_visit_ID cookie expires, or the visitor clears their browser cookies. These visits are visible to the site admin in AffiliateWP’s settings, and to the affiliate when they are logged in to the Affiliate Area.
 
