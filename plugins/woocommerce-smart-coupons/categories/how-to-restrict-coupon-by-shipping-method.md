@@ -20,7 +20,7 @@ Restricting coupons by shipping methods is one of the best tricks to encourage y
 
 ## How to setup shipping-based coupons?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Navigate to **WordPress Admin panel** > **Marketing > Coupons**.
 2. Create a new coupon or open an existing one. Enter the required details.
@@ -47,14 +47,14 @@ That’s it!
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
 
-### Table Rate Shipping
+### WooCommerce Memberships
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
-Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 
 ---
 

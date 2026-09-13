@@ -16,7 +16,7 @@ This doc article explains how using Smart Coupons, you can show a WooCommerce co
 
 ## Steps to display coupon code notice sitewide
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ![](https://woocommerce.com/wp-content/uploads/2020/11/smart-coupons-choose-banner-design.png?strip=all&w=704)
 
@@ -33,7 +33,7 @@ That’s it.
 
 ## The coupon code does not show up in search results
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If the coupon satisfies any of these cases, then it will not be shown in search results:
 
@@ -60,14 +60,14 @@ If the coupon satisfies any of these cases, then it will not be shown in search 
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
 
-### Table Rate Shipping
+### WooCommerce Memberships
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
-Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 
 ---
 

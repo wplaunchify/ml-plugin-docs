@@ -18,7 +18,7 @@ This doc article explains how you can copy the coupon code from the coupons list
 
 ## How to copy the coupon code
 
-[↑ Back to top](#doc-title)
+[↑ Voltar Para o Topo](#doc-title)
 
 1. Navigate to **WordPress Admin panel** -> **Marketing -> Coupons**.
 2. Hover over the coupon you would like to share.
@@ -42,14 +42,14 @@ This doc article explains how you can copy the coupon code from the coupons list
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
 
-### Table Rate Shipping
+### WooCommerce Memberships
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
-Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 
 ---
 

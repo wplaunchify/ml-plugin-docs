@@ -95,14 +95,14 @@ Run giveaways or issue free gifts by linking products to a coupon. When the coup
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
+				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
 
-### Table Rate Shipping
+### WooCommerce Memberships
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
 
-Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
+Power your membership association, online magazine, elearning sites, and more with access control to...
 
 ---
 
