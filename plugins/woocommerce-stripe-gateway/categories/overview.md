@@ -14,7 +14,7 @@
 
 ## What can the Stripe extension do?
 
-[↑ Back to top](#doc-title)
+[↑ Torna in cima](#doc-title)
 
 Using a Stripe account, you can accept payments on your WooCommerce site without setup costs or monthly fees. You can offer the following payment methods:
 
@@ -29,7 +29,7 @@ Using a Stripe account, you can accept payments on your WooCommerce site without
 
 ## Getting started
 
-[↑ Back to top](#doc-title)
+[↑ Torna in cima](#doc-title)
 
 The [setup and configuration guide](https://woocommerce.com/document/stripe/setup-and-configuration/) provides a basic overview of our Stripe extension. You can also see the guides linked below for more info on the specifics:
 
@@ -44,7 +44,7 @@ If you’re just starting out, the setup, and configuration guide linked above i
 
 ## Customer experience
 
-[↑ Back to top](#doc-title)
+[↑ Torna in cima](#doc-title)
 
 Once the Stripe extension is up and running, you might want to see what [the customer experience](https://woocommerce.com/document/stripe/customer-experience/checkout/) is like. We’ve outlined some information about that below.
 
@@ -57,7 +57,7 @@ Once the Stripe extension is up and running, you might want to see what [the cus
 
 ## Administrator experience
 
-[↑ Back to top](#doc-title)
+[↑ Torna in cima](#doc-title)
 
 When managing a site that uses our Stripe extension, you’ll need to be aware of [how it works for site owners and admins](https://woocommerce.com/document/stripe/admin-experience/). We also recommend reviewing the following:
 
@@ -76,7 +76,7 @@ You may also want to know about:
 
 ## Troubleshooting
 
-[↑ Back to top](#doc-title)
+[↑ Torna in cima](#doc-title)
 
 The following pages contain more info about [troubleshooting the Stripe extension](https://woocommerce.com/document/stripe/troubleshooting/):
 
@@ -89,7 +89,7 @@ The following pages contain more info about [troubleshooting the Stripe extensio
 
 ## Customizing
 
-[↑ Back to top](#doc-title)
+[↑ Torna in cima](#doc-title)
 
 The following pages contain more info about [customizing the Stripe extension](https://woocommerce.com/document/stripe/customization/):
 
@@ -102,7 +102,7 @@ The following pages contain more info about [customizing the Stripe extension](h
 
 ## Contacting support
 
-[↑ Back to top](#doc-title)
+[↑ Torna in cima](#doc-title)
 
 If you have questions about or problems with the Stripe extension that are not covered in our documentation above, please [contact support](https://woocommerce.com/my-account/contact-support/).
 
@@ -121,15 +121,15 @@ While we are unable to assist with Stripe account issues (including but not limi
 	
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 

@@ -72,15 +72,15 @@ However, there are also a number of options available that can help customize th
 	
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -195,15 +195,15 @@ Some payment methods have limitations in their functionality. These are listed b
 	
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -334,15 +334,15 @@ As a next step, we recommend [configuring test mode](https://woocommerce.com/doc
 	
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -448,7 +448,16 @@ When customizing Apple Pay and Google Pay, you can change:
 
 Amazon Pay and Link only allow you to customize the button locations and button size. (Note that the change payment method location is not available for Amazon Pay.)
 
-A preview of the buttons is also shown so that you can see how these customizations will appear before saving your changes.
+### Preview and eligibility
+
+[↑ Back to top](#doc-title)
+
+A preview of the buttons is shown below the customization options so that you can see how the customizations will appear before saving your changes.
+
+Below the previews, we list the eligibility requirements for the buttons, which ones are missing (if any), and where the buttons will appear.
+
+- ![](https://woocommerce.com/wp-content/uploads/2026/09/Screenshot-taken-on-2026-09-08-at-20.41.50-UTC@2x.png?w=980)Everything working properly!
+- ![](https://woocommerce.com/wp-content/uploads/2026/09/Screenshot-taken-on-2026-09-08-at-20.42.34-UTC@2x.png?w=980)Example problem: Apple Pay and Google Pay are disabled
 
 ## Compatibility
 
@@ -467,14 +476,49 @@ But there are some cases in which express checkout methods won’t be shown:
 - Products that don’t require shipping, but only if the “[Calculate tax based on](https://woocommerce.com/document/setting-up-taxes-in-woocommerce/#calculate-tax-based-on)” setting is set to the customer billing address. 
 - [Learn how to override this behavior.](#Show-Express-Checkout-Buttons-for-Virtual-Products)
 
-Additionally, some extensions add custom fields to the checkout page(s). These extra fields are ignored if they are present on the **blocks** checkout page and are **not** added using the 
+### Custom fields
+
+[↑ Back to top](#doc-title)
+
+Some extensions add custom fields to the checkout page(s). How express checkouts handle them depends on how the extension registered the custom field.
+
+With the 
 ```
 woocommerce_register_additional_checkout_field
 ```
 
- hook.
+ function:
 
-Custom fields on the **shortcode** checkout page will be added to the order as normal if an express method is used to pay. If those fields are required, shoppers are shown a warning about filling them in before the express methods allow payment.
+- These fields appear on the blocks checkout page. When a shopper pays with an express method from that page, express checkout collects the values they entered and saves them to the order.
+- These fields are not shown on product or cart pages, so express checkout sends them empty from there. If one of them is required, WooCommerce refuses the payment and reports that the field is required.
+
+With the 
+```
+woocommerce_checkout_fields
+```
+
+ filter:
+
+- On the shortcode checkout page, express checkout enforces any field added this way that is marked as required. These fields are shown on that page, and the values a shopper enters are saved to the order as custom fields keyed by the field ID.
+- These fields aren’t shown on product or cart pages. If one is required, the payment is blocked and the shopper is told to go to the checkout page, fill in the required fields, and complete the order from there.
+- Express checkout runs this check after the shopper approves the wallet sheet, not before it opens, so shoppers get no advance warning. The payment is refused, and an error is shown that indicates the missing field.
+- To turn off this handling entirely, use this code snippet:
+
+```
+add_filter( 'wc_stripe_express_checkout_enable_classic_checkout_custom_fields', '__return_false' );
+```
+
+Using that snippet, required fields added with the 
+```
+woocommerce_checkout_fields
+```
+
+ filter no longer block express checkouts, and values aren’t saved to express checkout orders. Fields added via 
+```
+woocommerce_register_additional_checkout_field
+```
+
+ are not affected because WooCommerce validates those itself.
 
 ## Can I use only the express checkout methods and not take card payments?
 
@@ -518,15 +562,15 @@ add_filter( 'wc_stripe_should_hide_express_checkout_button_based_on_tax_setup', 
 	
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -583,15 +627,15 @@ If you’ve determined that the Stripe extension is *not* already installed on y
 	
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -750,15 +794,15 @@ The **Layout** option controls how various payment methods are shown in the Opti
 	
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -834,15 +878,15 @@ Any other endpoints you see [in the Stripe dashboard](https://dashboard.stripe.c
 	
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
-Stripe Tax for WooCommerce is your gateway to Stripe’s end-to-end tax solution. Calculate and collect tax globally in your WooCommerce...
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
