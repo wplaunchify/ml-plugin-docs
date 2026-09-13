@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-13T07:34:52.867Z",
+  "last_updated": "2026-09-13T07:38:46.240Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -574,7 +574,7 @@
       "slug": "fluent-snippet-version-control",
       "name": "Fluent Snippet Version Control",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-09-06T02:46:31.414Z",
+      "last_scraped": "2026-09-13T07:38:46.240Z",
       "page_count": 20,
       "categories": [
         "conditional-logic",
