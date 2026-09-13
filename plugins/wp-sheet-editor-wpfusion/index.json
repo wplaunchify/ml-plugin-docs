@@ -2,72 +2,72 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-09-06T07:03:32.971Z",
+  "last_scraped": "2026-09-13T12:25:58.023Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
     {
-      "title": "Bulk Edit Prices Woocommerce Pending Orders",
-      "slug": "bulk-edit-prices-woocommerce-pending-orders",
-      "url": "https://wpsheeteditor.combulk-edit-prices-woocommerce-pending-orders/",
-      "file": "categories/bulk-edit-prices-woocommerce-pending-orders.md",
+      "title": "Advanced Search Woocommerce Products",
+      "slug": "advanced-search-woocommerce-products",
+      "url": "https://wpsheeteditor.comadvanced-search-woocommerce-products/",
+      "file": "categories/advanced-search-woocommerce-products.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "WooCommerce Pending Orders: How to Bulk Increase or Decrease Prices in Line-Items",
-          "url": "https://wpsheeteditor.com/bulk-edit-prices-woocommerce-pending-orders/"
+          "title": "Advanced Product Search for WooCommerce Management",
+          "url": "https://wpsheeteditor.com/advanced-search-woocommerce-products/"
         }
       ]
     },
     {
-      "title": "Bulk Edit Woocommerce Product Categories",
-      "slug": "bulk-edit-woocommerce-product-categories",
-      "url": "https://wpsheeteditor.combulk-edit-woocommerce-product-categories/",
-      "file": "categories/bulk-edit-woocommerce-product-categories.md",
+      "title": "Best Llms Woocommerce Product Descriptions",
+      "slug": "best-llms-woocommerce-product-descriptions",
+      "url": "https://wpsheeteditor.combest-llms-woocommerce-product-descriptions/",
+      "file": "categories/best-llms-woocommerce-product-descriptions.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Bulk Edit WooCommerce Product Categories",
-          "url": "https://wpsheeteditor.com/bulk-edit-woocommerce-product-categories/"
+          "title": "Best 2026 LLMs for WooCommerce Product Descriptions",
+          "url": "https://wpsheeteditor.com/best-llms-woocommerce-product-descriptions/"
         }
       ]
     },
     {
-      "title": "Bulk Increase Woocommerce Prices Percentage",
-      "slug": "bulk-increase-woocommerce-prices-percentage",
-      "url": "https://wpsheeteditor.combulk-increase-woocommerce-prices-percentage/",
-      "file": "categories/bulk-increase-woocommerce-prices-percentage.md",
+      "title": "Edit Woocommerce Without Admin Access",
+      "slug": "edit-woocommerce-without-admin-access",
+      "url": "https://wpsheeteditor.comedit-woocommerce-without-admin-access/",
+      "file": "categories/edit-woocommerce-without-admin-access.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Bulk Increase WooCommerce Prices by a Percentage",
-          "url": "https://wpsheeteditor.com/bulk-increase-woocommerce-prices-percentage/"
+          "title": "Edit WooCommerce Products Without Admin Access via Google Sheets",
+          "url": "https://wpsheeteditor.com/edit-woocommerce-without-admin-access/"
         }
       ]
     },
     {
-      "title": "Woocommerce Bulk Edit Product Attributes",
-      "slug": "woocommerce-bulk-edit-product-attributes",
-      "url": "https://wpsheeteditor.comwoocommerce-bulk-edit-product-attributes/",
-      "file": "categories/woocommerce-bulk-edit-product-attributes.md",
+      "title": "Search Replace Woocommerce Product Prices",
+      "slug": "search-replace-woocommerce-product-prices",
+      "url": "https://wpsheeteditor.comsearch-replace-woocommerce-product-prices/",
+      "file": "categories/search-replace-woocommerce-product-prices.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Bulk Edit WooCommerce Attributes in a Spreadsheet",
-          "url": "https://wpsheeteditor.com/woocommerce-bulk-edit-product-attributes/"
+          "title": "How to Search and Replace WooCommerce Prices in Bulk",
+          "url": "https://wpsheeteditor.com/search-replace-woocommerce-product-prices/"
         }
       ]
     },
     {
-      "title": "Woocommerce Subscriptions Bulk Edit Prices",
-      "slug": "woocommerce-subscriptions-bulk-edit-prices",
-      "url": "https://wpsheeteditor.comwoocommerce-subscriptions-bulk-edit-prices/",
-      "file": "categories/woocommerce-subscriptions-bulk-edit-prices.md",
+      "title": "Sync Woocommerce With Google Sheets",
+      "slug": "sync-woocommerce-with-google-sheets",
+      "url": "https://wpsheeteditor.comsync-woocommerce-with-google-sheets/",
+      "file": "categories/sync-woocommerce-with-google-sheets.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Bulk Edit WooCommerce Subscription Prices (Increase, Decrease)",
-          "url": "https://wpsheeteditor.com/woocommerce-subscriptions-bulk-edit-prices/"
+          "title": "How to Sync WooCommerce with Google Sheets",
+          "url": "https://wpsheeteditor.com/sync-woocommerce-with-google-sheets/"
         }
       ]
     }
