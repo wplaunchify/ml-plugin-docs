@@ -103,7 +103,7 @@ I hope you guys keep the maintenance going. Good job!
 							![](https://secure.gravatar.com/avatar/09abfeb1fbca4568adc61f19f4ae863c514cfec3c4515407bb68f81d9fcb91cb?s=60&d=retro&r=g)### Very good plugin – with a little bug
 							[Sofi-Soao](https://profiles.wordpress.org/sofi-soao/)
 								October 22, 2024
-						Very good plugin – but the ‘open in new tab’ feature did not work anymore.
+						Very good plugin – but the 'open in new tab' feature did not work anymore.
 							![](https://secure.gravatar.com/avatar/b36362aaa0fa371ed283ec2742b77cf46b8ba20cf99462aa7925eaa6fa8855c5?s=60&d=retro&r=g)### great, this is the SOLUTION
 							[supergap](https://profiles.wordpress.org/supergap/)
 								September 18, 2024
