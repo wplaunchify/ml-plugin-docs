@@ -309,7 +309,7 @@ The one exception is the Delete Comments tool: comments it removed are permanent
 							![](https://secure.gravatar.com/avatar/da1844de47919ff7ecfd97eecd0b93b3b7ad45b1bd3d328b6b2a5f52bec71418?s=60&d=retro&r=g)### Really love this plugin
 							[piercand](https://profiles.wordpress.org/piercand/)
 								July 13, 2026
-						It does exactly what it’s needed, easy, affordable and lightweight. A must-use in all my websites.
+						It does exactly what it's needed, easy, affordable and lightweight. A must-use in all my websites.
 							![](https://secure.gravatar.com/avatar/cbf651e14f0c4e169762d09b30524f067f8dd2cfb1b5b1967a74254a9c34eaa9?s=60&d=retro&r=g)### Simple and Helpful
 							[lanalina](https://profiles.wordpress.org/lanalina/)
 								April 8, 2026
