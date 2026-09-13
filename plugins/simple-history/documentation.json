@@ -1,7 +1,7 @@
 {
   "plugin_slug": "simple-history",
   "plugin_name": "Simple History",
-  "last_scraped": "2026-09-06T05:52:27.317Z",
+  "last_scraped": "2026-09-13T10:38:40.506Z",
   "total_pages": 11,
   "failed_urls": [],
   "pages": [
@@ -9,9 +9,10 @@
       "title": "Support",
       "url": "https://simple-history.com/support/",
       "category": "Overview",
-      "content": "**For the free version** of Simple History you can use the [support forum](https://wordpress.org/support/plugin/simple-history/) to ask questions.\n\n**For questions about paid add-ons** (like [Premium](https://simple-history.com/add-ons/premium/) or [WooCommerce logger](https://simple-history.com/add-ons/woocommerce/)) you can email us at [support@simple-history.com](mailto:support@simple-history.com).\n\nThere is also support articles and developer documentation available:\n\n## Support\n\n- #### Fix: license key has reached the activation limit\n- #### How do I manage my add-on subscriptions\n- #### What is an initiator\n- #### Weekly email reports\n- #### GDPR and Privacy: How Your Data is Stored in Simple History\n- #### Got a charge from “LEMSQZY* SIMPLE-HISTORY”?\n- #### Troubleshooting errors when loading events\n- #### ⏰ Why is the time of my events wrong?\n- #### Third party plugins with support for Simple History\n- #### Does it work with SQLite? (Yes it does!)\n\n## Developer documentation\n\n- #### How to send WordPress activity logs to Splunk\n- #### How Simple History detects AI agents\n- #### REST API endpoints\n- #### How do I get a Google Maps API key to use in the Premium Add-On?\n- #### Feeds\n- #### FAQ (Frequently Asked Questions)\n- #### Add or update translations of the plugin\n- #### Logger example\n- #### Log Levels\n- #### Actions and filters (hooks)",
+      "content": "**For the free version** of Simple History you can use the [support forum](https://wordpress.org/support/plugin/simple-history/) to ask questions.\n\n**For questions about paid add-ons** (like [Premium](https://simple-history.com/add-ons/premium/) or [WooCommerce logger](https://simple-history.com/add-ons/woocommerce/)) you can email us at [support@simple-history.com](mailto:support@simple-history.com).\n\nThere is also support articles and developer documentation available:\n\n## Support\n\n- #### Multisite, staging and development sites\n- #### Fix: license key has reached the activation limit\n- #### How do I manage my add-on subscriptions\n- #### What is an initiator\n- #### Weekly email reports\n- #### GDPR and Privacy: How Your Data is Stored in Simple History\n- #### Got a charge from “LEMSQZY* SIMPLE-HISTORY”?\n- #### Troubleshooting errors when loading events\n- #### ⏰ Why is the time of my events wrong?\n- #### Third party plugins with support for Simple History\n\n## Developer documentation\n\n- #### How to send WordPress activity logs to Splunk\n- #### How Simple History detects AI agents\n- #### REST API endpoints\n- #### How do I get a Google Maps API key to use in the Premium Add-On?\n- #### Feeds\n- #### FAQ (Frequently Asked Questions)\n- #### Add or update translations of the plugin\n- #### Logger example\n- #### Log Levels\n- #### Actions and filters (hooks)",
       "headings": [
         "Support",
+        "Multisite, staging and development sites",
         "Fix: license key has reached the activation limit",
         "How do I manage my add-on subscriptions",
         "What is an initiator",
@@ -21,7 +22,6 @@
         "Troubleshooting errors when loading events",
         "⏰ Why is the time of my events wrong?",
         "Third party plugins with support for Simple History",
-        "Does it work with SQLite? (Yes it does!)",
         "Developer documentation",
         "How to send WordPress activity logs to Splunk",
         "How Simple History detects AI agents",
@@ -34,14 +34,6 @@
         "Log Levels",
         "Actions and filters (hooks)"
       ],
-      "code_blocks": []
-    },
-    {
-      "title": "Does it work with SQLite? (Yes it does!)",
-      "url": "https://simple-history.com/support/does-it-work-with-sqlite-yes-it-does/",
-      "category": "Does It Work With Sqlite Yes It Does",
-      "content": "Simple History does work with the [SQLite Database Integration](https://wordpress.org/plugins/sqlite-database-integration/) plugin from the WordPress team, meaning that you can use Simple History with [SQLite](https://en.wikipedia.org/wiki/SQLite).\n\nIt’s a pretty cool way to run WordPress to be honest. No need to set up a MySQL or MariaDB database.\n\n> SQLite Database Integration",
-      "headings": [],
       "code_blocks": []
     },
     {
@@ -85,12 +77,12 @@
       "title": "Fix: license key has reached the activation limit",
       "url": "https://simple-history.com/support/license-activation-limit/",
       "category": "License Activation Limit",
-      "content": "The message **“This license key has reached the activation limit”** means your [Simple History Premium](https://simple-history.com/add-ons/premium/) license key is already active on another site. Each license covers a set number of sites, and every activation uses one of them until you deactivate it.\n\n![The activation limit error shown under Simple History Settings, Licences.](https://simple-history.com/wp/wp-content/uploads/2026/09/license-key-already-active-1024x751.png)\n\n## Why this happens\n\nThe “other site” is almost always an earlier copy of the same site. The activation stays with that copy even if it no longer exists. Common causes:\n\n- You restored a backup taken before the license was activated.\n- You moved the site to a new host or domain.\n- You activated the key on a staging or local copy first, then on the live site.\n- You reinstalled WordPress or the plugin without deactivating the license first.\n\n## Fix it yourself\n\n### Deactivate the old activation\n\n1. Go to [app.lemonsqueezy.com/my-orders](https://app.lemonsqueezy.com/my-orders/) and enter the email address you used when buying. You will get a login link by email, no password needed.\n2. Open your Simple History Premium order and find the license key.\n3. Deactivate the site that should no longer use the license.\n4. Back in WordPress, go to Simple History » Settings » Licences and click **Activate** again.\n\n### Or deactivate from the other site\n\nIf that site still exists and you can log in to it, go to Simple History » Settings » Licences there and click **Deactivate**. Then activate the key on the site where you want it.\n\n## Still stuck?\n\n[Contact us](https://simple-history.com/contact/) with your order number and license key, or if you cannot get into the account you bought with. The order number is in your receipt email and on your My Orders page. We will free up the activation for you.",
+      "content": "The message **“This license key has reached the activation limit”** means your [Simple History Premium](https://simple-history.com/add-ons/premium/) license key is already active on another site. Each license covers a set number of sites, and every activation uses one of them until you deactivate it.\n\n![The activation limit error shown under Simple History Settings, Licences.](https://simple-history.com/wp/wp-content/uploads/2026/09/license-key-already-active-1024x751.png)\n\n## Why this happens\n\nThe “other site” is almost always an earlier copy of the same site. The activation stays with that copy even if it no longer exists. Common causes:\n\n- You restored a backup taken before the license was activated.\n- You moved the site to a new host or domain.\n- You activated the key on a staging or local copy first, then on the live site. Those copies don’t need a key at all — see [multisite, staging and development sites](https://simple-history.com/support/multisite-and-development-sites/).\n- You reinstalled WordPress or the plugin without deactivating the license first.\n\n## Fix it yourself\n\n### Deactivate the old activation\n\n1. Go to [app.lemonsqueezy.com/my-orders](https://app.lemonsqueezy.com/my-orders/) and enter the email address you used when buying. You will get a login link by email, no password needed.\n2. Open your Simple History Premium order and find the license key.\n3. Deactivate the site that should no longer use the license.\n4. Back in WordPress, go to Simple History » Settings » Licences and click **Activate** again.\n\n### Or deactivate from the other site — but not if it is a copy\n\n**Don’t press Deactivate on a copy of your site.** If the other install is a clone — a restored backup, or a staging or local copy — its database carries the same activation record as production, so pressing Deactivate there releases *production’s* activation instead of the copy’s. Free the activation from My Orders instead, as above. There is more on this, and on how to stop a clone checking for updates, on [multisite, staging and development sites](https://simple-history.com/support/multisite-and-development-sites/).\n\nIf the other site is a genuinely separate install that still exists and you can log in to it, go to Simple History » Settings » Licences there and click **Deactivate**. Then activate the key on the site where you want it.\n\n## Still stuck?\n\n[Contact us](https://simple-history.com/contact/) with your order number and license key, or if you cannot get into the account you bought with. The order number is in your receipt email and on your My Orders page. We will free up the activation for you.",
       "headings": [
         "Why this happens",
         "Fix it yourself",
         "Deactivate the old activation",
-        "Or deactivate from the other site",
+        "Or deactivate from the other site — but not if it is a copy",
         "Still stuck?"
       ],
       "code_blocks": []
@@ -106,6 +98,23 @@
         "Use the support forum for more solutions"
       ],
       "code_blocks": []
+    },
+    {
+      "title": "Multisite, staging and development sites",
+      "url": "https://simple-history.com/support/multisite-and-development-sites/",
+      "category": "Multisite And Development Sites",
+      "content": "## The short version\n\n- On multisite, every subsite running the plugin counts as one site.\n- Staging, development and local copies are free and don’t count.\n- Each add-on has its own license key and its own site count.\n\n## Multisite: every subsite counts\n\nEvery subsite running the plugin counts as one site, so ten subsites using [Simple History Premium](https://simple-history.com/add-ons/premium/) means the 10-site tier. Subsites that don’t run the plugin don’t count. My reasoning, and the tier pricing, is on the [license terms](https://simple-history.com/license-terms/) page.\n\nYou enter each add-on’s key once, on the network’s main site, and that keeps that add-on updated across the network. Subsites point you there instead of showing a key field.\n\nOne gap I’m not happy about: if you run an add-on on a subsite but not on the main site, there is currently no way to enter its key from that subsite. Email me and I’ll activate it for you manually.\n\n## Staging and development sites\n\nOne license covers your live production site plus every non-production copy of it: your laptop, staging, QA, pre-production.\n\nActivate the key on production only. If you activate on a staging copy you’ll use up an activation and then hit [the activation limit error](https://simple-history.com/support/license-activation-limit/) on the site you actually meant to license.\n\nThose copies don’t need a key — every feature works without one. What differs depends on how the copy was made:\n\n- **Cloned from production** (a restored backup, which is how most staging sites are made): the key came along inside the database, so the copy keeps updating itself. Leave it be — but never press Deactivate on it, see below.\n- **Built from scratch**: no key, so it won’t update itself. Download new versions from [your Lemon Squeezy order page](https://app.lemonsqueezy.com/my-orders/) and upload the zip over the installed plugin.\n\nA copy with no key also shows a dismissible reminder in the Simple History sidebar saying no key is entered.\n\n**The honest limitation:** activations are how my update server knows a site is licensed, so a dev site with no key can’t be told about new versions. I can’t change that today without spending one of your activations on a site you aren’t paying for. If that’s a real nuisance for how you work, the wp-config constant below is the fix, and telling me is what moves it up the list.\n\n## Never press Deactivate on a copy\n\nYour site stores the license key in its own database. My server stores how many activations that key has used. Clone the database and the copy carries production’s key and activation record with it — so pressing **Deactivate** on the clone releases *production’s* activation rather than the clone’s. That’s a bug in how activations are recorded, not intended behaviour.\n\nAlready pressed it? Activate again on production. If that gets refused, email [support@simple-history.com](mailto:support@simple-history.com) and I’ll clear it.\n\nIf you want a long-lived clone to stop checking for updates altogether, delete its stored key rather than pressing Deactivate:\n\n```\nwp option delete simple_history_plusplugin_message_simple-history-premiumCode language: Bash (bash)\n```\n\nRun that on the copy, never on production — on production it wipes the stored key while the activation stays used, which lands you on the activation limit error. Add \n```\n--url=\n```\n\n on multisite, and note the option name ends with the add-on’s plugin folder name, so adjust it for other add-ons.\n\n## Can I put the license key in wp-config.php?\n\nNot today. If you build your environments from code, tell me — it’s the strongest argument for adding it, and anything that ships shows up in the release notes.\n\n*Last updated: 8 September 2026.*",
+      "headings": [
+        "The short version",
+        "Multisite: every subsite counts",
+        "Staging and development sites",
+        "Never press Deactivate on a copy",
+        "Can I put the license key in wp-config.php?"
+      ],
+      "code_blocks": [
+        "wp option delete simple_history_plusplugin_message_simple-history-premiumCode language: Bash (bash)",
+        "wp option delete simple_history_plusplugin_message_simple-history-premium"
+      ]
     },
     {
       "title": "Third party plugins with support for Simple History",

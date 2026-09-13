@@ -16,6 +16,7 @@ There is also support articles and developer documentation available:
 
 ## Support
 
+- #### Multisite, staging and development sites
 - #### Fix: license key has reached the activation limit
 - #### How do I manage my add-on subscriptions
 - #### What is an initiator
@@ -25,7 +26,6 @@ There is also support articles and developer documentation available:
 - #### Troubleshooting errors when loading events
 - #### ⏰ Why is the time of my events wrong?
 - #### Third party plugins with support for Simple History
-- #### Does it work with SQLite? (Yes it does!)
 
 ## Developer documentation
 

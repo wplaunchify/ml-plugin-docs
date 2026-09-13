@@ -2,23 +2,10 @@
   "plugin_slug": "simple-history",
   "plugin_name": "Simple History",
   "documentation_url": "https://simple-history.com/support/",
-  "last_scraped": "2026-09-06T05:52:27.318Z",
+  "last_scraped": "2026-09-13T10:38:40.507Z",
   "total_pages": 11,
   "failed_urls_count": 0,
   "sections": [
-    {
-      "title": "Does It Work With Sqlite Yes It Does",
-      "slug": "does-it-work-with-sqlite-yes-it-does",
-      "url": "https://simple-history.com/support/does-it-work-with-sqlite-yes-it-does/",
-      "file": "categories/does-it-work-with-sqlite-yes-it-does.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Does it work with SQLite? (Yes it does!)",
-          "url": "https://simple-history.com/support/does-it-work-with-sqlite-yes-it-does/"
-        }
-      ]
-    },
     {
       "title": "Gdpr And Privacy",
       "slug": "gdpr-and-privacy",
@@ -81,6 +68,19 @@
         {
           "title": "Troubleshooting errors when loading events",
           "url": "https://simple-history.com/support/load-events-error/"
+        }
+      ]
+    },
+    {
+      "title": "Multisite And Development Sites",
+      "slug": "multisite-and-development-sites",
+      "url": "https://simple-history.com/support/multisite-and-development-sites/",
+      "file": "categories/multisite-and-development-sites.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Multisite, staging and development sites",
+          "url": "https://simple-history.com/support/multisite-and-development-sites/"
         }
       ]
     },

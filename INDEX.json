@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-13T10:36:37.509Z",
+  "last_updated": "2026-09-13T10:38:40.510Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2524,15 +2524,15 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-09-06T05:52:27.318Z",
+      "last_scraped": "2026-09-13T10:38:40.510Z",
       "page_count": 11,
       "categories": [
-        "does-it-work-with-sqlite-yes-it-does",
         "gdpr-and-privacy",
         "got-a-charge-from-lemsqzy-simple-history",
         "how-do-i-manage-my-add-on-subscriptions",
         "license-activation-limit",
         "load-events-error",
+        "multisite-and-development-sites",
         "overview",
         "third-party-plugins-with-support-for-simple-history",
         "weekly-email-report",
