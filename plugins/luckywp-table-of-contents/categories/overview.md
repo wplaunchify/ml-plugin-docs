@@ -223,7 +223,7 @@ Intl
 	![](https://secure.gravatar.com/avatar/4f2bf7aeee30cbaf5ed6b52a3f1657fa8909384eb73d2973dec82faff08d9d07?s=60&d=retro&r=g)### Great Plugin. Works well.
 							[keithwin](https://profiles.wordpress.org/keithwin/)
 								July 22, 2026
-						Works very well. Lightweight and easy to setup. I’ve been using it for several weeks and had no problems with it so far.
+						Works very well. Lightweight and easy to setup. I've been using it for several weeks and had no problems with it so far.
 							![](https://secure.gravatar.com/avatar/cc1cb212b65ae5031c45cfdd1b1f3bfc80a498d4ac226046d7175a1a982c82a3?s=60&d=retro&r=g)### Works good
 							[PrestaSite](https://profiles.wordpress.org/polosatest/)
 								June 30, 2026
