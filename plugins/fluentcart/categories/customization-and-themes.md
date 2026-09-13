@@ -450,6 +450,9 @@ functions.php
 
  file or use a code snippets plugin.
 
+What's a hook?
+
+A hook is a small connection point built into FluentCart where you, or your developer, can plug in a few lines of code to change how something works. They live in code, not the dashboard, so you won't find them as a toggle or field in the admin area. Every snippet on this page works through one.
 ## Checkout ​
 
 ### Hide Unnecessary Decimals ​
@@ -650,6 +653,145 @@ add_filter(
 ```INFO
 
 Stripe rejects a payment when the value the card element was built with does not match the one sent at confirmation. Keep the logic here deterministic, so the same checkout always produces the same result, rather than depending on anything that can change between the two requests.
+### Adjust Order Data Before the Order Is Created ​
+
+Right before FluentCart saves a new order, this hook hands it to you first. Change whatever you need, an order note, the currency, a total, and that's what gets saved to the order, its transaction, and its subscription (if any).
+
+The filter receives the prepared order data and a context array holding 
+```
+items
+```
+
+, the formatted line items with their prices and quantities, and 
+```
+args
+```
+
+, the checkout arguments such as customer details, payment method, shipping, tax, coupons, and fees.
+
+php
+```
+<?php
+
+/**
+ * Stamp a fulfilment note onto every order created at checkout.
+ */
+add_filter(
+    'fluent_cart/checkout/order_data',
+    function ($orderData, $context) {
+        $orderData['note'] = 'Priority handling';
+
+        return $orderData;
+    },
+    10,
+    2
+);
+```The same filter runs on orders you create by hand from the admin, with 
+```
+args
+```
+
+ carrying the admin order arguments instead. That means one snippet covers both routes and your orders stay consistent no matter who placed them.
+
+INFO
+
+Return the full array every time. Anything you drop is dropped from the order, and totals are used as given, so recalculate them yourself if you change an amount.
+## Emails ​
+
+### Change an Email Just Before It Sends ​
+
+FluentCart prepares each notification in full, subject, body, recipient, and attachments, before handing it to the mailer. This filter gives you that prepared email at the last possible moment.
+
+You receive the mailer plus a context array containing 
+```
+event
+```
+
+, 
+```
+mail_name
+```
+
+, 
+```
+recipient
+```
+
+, 
+```
+notification
+```
+
+, and 
+```
+data
+```
+
+. Return the mailer when you are done. Returning anything else leaves the original email untouched, so a mistake in your snippet cannot stop mail going out.
+
+php
+```
+<?php
+
+/**
+ * BCC the warehouse on every paid-order email to the customer.
+ */
+add_filter(
+    'fluent_cart/email_notification/mailer',
+    function ($mailer, $context) {
+        if ($context['mail_name'] === 'order_paid_customer') {
+            $mailer->addBCC('[email protected]');
+        }
+
+        return $mailer;
+    },
+    10,
+    2
+);
+```The mailer exposes 
+```
+addCC()
+```
+
+, 
+```
+addBCC()
+```
+
+, 
+```
+setFrom()
+```
+
+, 
+```
+setReplyTo()
+```
+
+, 
+```
+setSubject()
+```
+
+, 
+```
+body()
+```
+
+, 
+```
+addAttachment()
+```
+
+, and 
+```
+setIsHtml()
+```
+
+, so most last-minute adjustments are a single chained call.
+
+Because the filter sits at the send step, it covers order and subscription emails delivered in the background as well as the ones sent immediately.
+
 ## Customer Profile ​
 
 ### Add a Custom Menu Item to the Customer Profile ​
@@ -778,6 +920,80 @@ shop.example.com
 INFO
 
 FluentCart applies no internal domains by default, so attribution behaves exactly as before until you add this snippet. Campaign values are stored in the visitor's browser for 30 days. The captured data then appears in your reports under marketing source, which you can read about in [Sales Report](/guide/reporting-analytics/sales-report).
+### Gating Attribution Storage on Cookie Consent ​
+
+Campaign attribution is kept in the visitor's browser, and privacy rules such as GDPR and the German TDDDG treat that storage the way they treat cookies. If your store runs a consent banner, this is how you put attribution behind it.
+
+FluentCart fires a cancellable 
+```
+fluent_cart_utm_before_store
+```
+
+ event on 
+```
+window
+```
+
+ immediately before it writes. Call 
+```
+preventDefault()
+```
+
+ to claim the write, then answer with 
+```
+allow()
+```
+
+ or 
+```
+deny()
+```
+
+ from the event's detail. This snippet is JavaScript, so enqueue it on the front end rather than dropping it in 
+```
+functions.php
+```
+
+.
+
+js
+```
+window.addEventListener('fluent_cart_utm_before_store', function (event) {
+    // Claim the write. Nothing is stored until you answer.
+    event.preventDefault();
+
+    myConsentBanner.ask('marketing').then(function (granted) {
+        if (granted) {
+            event.detail.allow();
+        } else {
+            event.detail.deny();
+        }
+    });
+});
+```Three details make this safe to ship:
+
+- **Answer whenever you like.** While the decision is outstanding, the campaign values sit in page memory and are never written to the device. A visitor who accepts on the page they landed on keeps their attribution.
+- **deny() also clears.** Denying wipes anything already stored, so it doubles as your withdrawal handler and satisfies the "as easy to withdraw as to give" requirement.
+- **Doing nothing changes nothing.** If no listener claims the event, the write happens inline exactly as it always has, so stores without a consent banner are unaffected.
+
+To withdraw consent later, from a preferences link for example, call the manager directly:
+
+js
+```
+window.fluentCartUtmManager?.revokeConsent();
+```INFO
+
+Check what the visitor already decided with 
+```
+window.fluentCartUtmManager?.hasConsent()
+```
+
+. It returns 
+```
+true
+```
+
+ while attribution may be read or written, which is the state to test before wiring your own tracking alongside FluentCart's.
 
 ---
 
@@ -1341,36 +1557,105 @@ A handful of these elements, including **Products**, **Product Title**, **Produc
 
 The **Products** block is the one you will reach for most, so it is worth knowing what it can do. Its controls are split across three groups in the Bricks panel.
 
-### Query ​
+### Query Controls ​
 
-These controls decide which products appear and how the grid is arranged.
+These settings determine which products appear and how the grid is arranged:
 
-- **View Mode:** Whether the products render as a grid or a list.
-- **Show View Switcher:** Lets visitors flip between the view modes themselves.
-- **Pagination Type:** How customers move through long result sets.
-- **Columns** and **Gap:** The grid layout and the spacing between items.
-- **Products per page:** How many products to load at a time.
-- **Is main query:** Ties the block to the page's main query, which is what you want on a shop or archive template.
-- **Order by** and **Order:** The sort field and direction.
-- **Product type:** Narrows the grid to a single product type.
-- **Include** and **Exclude:** Hand-pick individual products to force in or leave out.
-- **Product categories:** Restricts the grid to the categories you select.
-- **On sale Products only:** Shows only products currently on sale.
-- **Allow Out Of Stock:** Keeps out-of-stock products in the grid instead of hiding them.
+- **View Mode & Switcher:** Choose between a grid or list layout, and optionally let visitors flip between them.
+- **Pagination & Columns:** Control how customers navigate long lists and define the grid spacing.
+- **Is main query:** Ties the block to the page's main WordPress query, which is essential when building a shop or archive template.
+- **Filtering Options:** Narrow the grid by specific product types, categories, on-sale status, or manually include/exclude items.
 
-### Filter ​
+### Filter Controls ​
 
-Turn on **Enable Filter** to give customers a filter panel alongside the grid. The rest of the controls in this group only appear once it is enabled.
+Turn on **Enable Filter** to provide your customers with a front-end filter panel alongside the product grid.
 
-- **Enable Sort By:** Adds a sort control to the filter panel. On by default.
-- **Live Filter:** Updates results as the customer changes a filter, with no page reload.
-- **Wildcard Filter:** Broadens text matching so partial terms still return results.
-- **Taxonomy toggles:** FluentCart lists a checkbox for each product taxonomy, such as **Categories** and **Brands**. Tick one to offer it as a filter, leave it unticked to keep it out of the panel. This is how you control which taxonomies customers can filter by.
-- **Show empty:** Appears beneath each taxonomy you enable and displays that taxonomy's terms even when they have no products in them. Leave it off to keep empty categories and tags out of the filter panel.
-- **Price Range:** Adds a price filter, with **Display Name** to override its label.
+- **Live Filter:** Updates results instantly as the customer changes a filter, without reloading the page.
+- **Wildcard Filter:** Broadens text matching so partial terms still return accurate results.
+- **Taxonomy toggles:** Choose exactly which taxonomies (like Categories or Brands) customers are allowed to filter by.
+- **Price Range & Sort By:** Adds sorting controls and a price slider to the panel.
 
+### Default Filter ​
+
+While the standard Filter group builds the panel your visitors touch, the Default Filter narrows the grid before anyone touches anything. This is ideal for building curated sections like "New in Outerwear" without hand-picking products.
+
+- **Enable Default Filter:** Turn this on to reveal the curated filter settings.
+- **Allow Out Of Stock:** Keeps out-of-stock products in the results instead of hiding them.
+- **Search:** Set a preset search term. The grid loads already filtered to this term, and it survives live-filter refreshes.
+- **Taxonomy selects:** Pick specific terms (like a single sub-category) that this block should be limited to.
+
+INFO
+
+The Default Filter is ignored when **Is main query** is enabled, as the shop template is already scoped by WordPress.
+### Sale Badge ​
+
+Switch on **Show Sale Badge** to flag discounted products in the grid. FluentCart works out the discount for you and hides the badge on anything not currently on sale.
+
+- **Badge Text:** What the badge says. Defaults to **Sale!**
+- **Show discount percentage instead:** Swaps the fixed text for the live discount figure.
+- **Percentage Text:** The template for that figure, using 
+```
+{percent}
+```
+
+ where the number should go. Defaults to 
+```
+-{percent}%
+```
+
+, so a quarter off reads 
+```
+-25%
+```
+
+.
+- **Price Source:** Which price the discount is measured against. **Default Variant** uses the variant customers see first, while **Best Discount (All Variants)** advertises the biggest saving anywhere in the product.
+- **Badge Shape:** **Badge** or **Ribbon**.
+- **Position:** Which corner of the product image the badge sits in.
+
+The matching **Sale Badge** group on the **Style** tab carries **Typography**, **Background Color**, and **Text Color**.
+
+### Sold Out Badge ​
+
+**Show Sold Out Badge** marks products that have run out, so shoppers know before they click through.
+
+- **Badge Text:** Defaults to **Out of Stock**.
+- **Badge Shape:** **Badge** or **Ribbon**.
+- **Position:** Which corner of the product image the badge sits in.
+
+Styling works the same way, from the **Sold Out Badge** group on the **Style** tab.
+
+INFO
+
+Both badges are overlays anchored to the product image, and a discounted product can also be out of stock. Give the two badges different corners so they never land on the same spot.
 ### Fields ​
 
+- **Fields:** The list of merge tags that build the product card, such as 
+```
+{fct_product_image:link}
+```
+
+, 
+```
+{fct_product_title:linked}
+```
+
+, 
+```
+{fct_product_excerpt}
+```
+
+, 
+```
+{fct_product_price}
+```
+
+, and 
+```
+{fct_product_button}
+```
+
+. Reorder, remove, or click **Add Field** to bring in another.
 - **Link entire product:** Makes the whole product card clickable. It only takes effect if none of your product fields already contain a link.
 
 ## Building a Single Product Template ​
@@ -2642,7 +2927,30 @@ Once you configure the package data, the same information flows through the cust
 - **Checkout order summary** — package name and shipping weight appear under each cart line, so shoppers confirm shipping details before they pay.
 - **Order confirmation emails** — the default email body and customized templates can both display package details. See [Configuring Email Notifications](/guide/settings-configuration/email-configuration/configuring-email-notification) for the merge tags.
 
-> Note: Each FluentCart block comes with its own customization settings. After adding a block, check the settings panel on the right to adjust design, alignment, behavior, and visibility.
+### 21. Cart ​
+
+The **Cart** block builds your cart page in the block editor, so you no longer need to drop the 
+```
+[fluent_cart_cart]
+```
+
+ shortcode into a page to get one. Drop it on the page assigned as your cart in [Pages Setup](/guide/settings-configuration/pages-setup) and customers get the same cart the shortcode produces.
+
+What makes this block different is that it is a container rather than a single fixed slab of markup. Adding it gives you three child blocks inside it, and each one is a region you can move:
+
+- **Cart Items:** The list of products in the cart, with quantity controls and per-line totals.
+- **Cart Total:** The cart's running total.
+- **Cart Checkout Button:** The button that sends the customer to checkout.
+
+Because they are ordinary blocks, you can reorder them, delete one you don't want, or slot your own blocks between them, such as a shipping notice above the total or a trust badge under the button.
+
+**Editable Text**
+
+Two of the children let you override their wording, either by clicking the text in the canvas or by opening the **Text** panel in the sidebar.
+
+NOTE
+
+Each FluentCart block comes with its own customization settings. After adding a block, check the settings panel on the right to adjust design, alignment, behavior, and visibility.
 
 ---
 

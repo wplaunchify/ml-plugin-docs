@@ -2123,27 +2123,34 @@ The "Upgrade Paths" tab displays a table where you define the upgrade logic.
 - **No:** The upgrade will simply apply the "Discount Amount" without considering any remaining value from the old plan.
 3. After configuring the path, ensure you save your product settings by clicking the **"Save"** button on the bottom of the Edit screen.
 
-### 2. Examples of Upgrade Paths ​
+## The Customer Upgrade Experience ​
 
-The table can display various configured paths, showing the flexibility of the system:
+Once your upgrade paths are set up, the actual upgrade process is entirely self-serve and effortless for your customers. The process varies slightly depending on whether they are upgrading a **subscription** or a **one-time purchase**.
 
-- **Yearly to Yearly:** Upgrade from a "Single Site Yearly License" to a "5 Sites Yearly License".
-- **Yearly to Lifetime:** Upgrade from a "Single Site Yearly License" to a "Single Site Lifetime License" (often with prorated options).
-- **Tier-to-Tier:** Moving from a lower tier to a higher tier within the same license type (e.g., 5 Sites Yearly to 50 Sites Yearly).
+### Upgrading Subscriptions and Licenses ​
 
-## How Customers Upgrade Their Products ​
+- **Access the Dashboard:** Your customer logs into their account and clicks on the **Subscription Plans** (or Licenses) tab to see active purchases.
+- **View Plan Details:** They select the specific plan they want to upgrade.
+- **Click to Upgrade:** Right below their current billing terms, they click the **Upgrade Plan** button.
+- **Choose a New Package:** An **Upgrade** options popup appears where they can review available higher-tier plans and click **Upgrade**.
+- **Instant Checkout:** They are taken directly to the checkout page, where the order summary automatically calculates their new cost with any prorated discounts applied.
 
-Once your upgrade paths are set up in the backend, the actual upgrade process is entirely self-serve and effortless for your customers. Here is exactly what they will see:
+### Upgrading One-Time Purchases ​
 
-- Step 1: Access the Dashboard Your customer logs into their account and clicks on the **Subscription Plans** (or Licenses) tab in their sidebar menu. This brings up a list of all their active purchases.
-- Step 2: View Plan Details They select the specific plan they want to upgrade (for example, "Carto App") to see their detailed subscription overview.
-- Step 3: Click to Upgrade Right below their current billing terms and payment method, they will easily spot a prominent **Upgrade Plan** button.
-- Step 4: Choose a New Package Clicking that button opens a simple "Upgrade Options" popup. Here, they can review the higher-tier plans you've made available, check the new price, and simply click the **Upgrade** button next to the one they want.
-- Step 5: Instant Checkout They are immediately taken to the checkout page to finalize the transaction. A friendly notice confirms what they are upgrading to, and the order summary automatically calculates their new cost—applying any prorated discounts instantly!
+When you publish a path for a product sold as a one-time purchase, the customer handles the upgrade from their order receipt.
 
-Streamlined Customer Experience
+- **Access Purchase History:** The customer navigates to the **Purchase History** tab and opens the order containing the item.
+- **Click to Upgrade:** An **Upgrade Plan** button appears directly beside the qualified item on the order details page.
 
-Defining clear upgrade paths simplifies the process for your customers, allowing them to easily scale their usage or commitment without complex manual intervention or needing to purchase a new product entirely.
+- **Choose a New Package:** Clicking the button opens the **Upgrade** options window, allowing them to select a new package and proceed to checkout to pay the difference.
+
+### Conditions for One-Time Upgrades ​
+
+The button only appears on items that qualify based on three specific conditions:
+
+- The item was bought as a one-time purchase, not as part of a subscription.
+- The order is paid, partially paid, or partially refunded (unpaid orders show no button).
+- The store has published an upgrade path for that exact product variation.
 
 ---
 
@@ -2553,7 +2560,7 @@ With **Store Billing**, your store owns the renewal schedule instead of the paym
 
 That makes recurring products work with any gateway you have enabled, including offline methods like bank transfer and cash on delivery, and it lets you change a subscriber's price, dates, or status whenever you need to.
 
-## Two Ways to Bill a Subscription ​
+## Ways to Bill a Subscription ​
 
 Every subscription answers one question: **who owns the billing schedule?** The answer is set at checkout and decides everything that follows.
 
@@ -2595,6 +2602,21 @@ INFO
 | Store Billing, auto-charge on | Stripe or PayPal | Your store charges the saved payment method |
 | Store Billing, auto-charge on | Any other gateway | The customer pays each invoice |
 
+## Keeping Staging Sites from Billing Customers ​
+
+Cloning a live store to a staging or development site used to be risky. The copy inherited every subscription, kept its own hourly schedule running, and happily invoiced, charged, and emailed the same customers your production site was already billing. **Staging Protection** closes that gap.
+
+The setting sits on the same **Subscriptions** tab, just below **Renewal Billing**:
+
+- **Don't bill live subscriptions from this site while it is in test mode:** On by default. While the site's [Store Mode](/guide/settings-configuration/store-settings) is **Test**, this site will not create renewal invoices, charge saved payment methods, reconcile pending charges with the gateway, or send renewal and subscription reminder emails for live subscriptions.
+
+That single condition, live subscription plus a site in test mode, is what a staging copy always looks like, so a clone stops billing the moment you flip it to **Test** and nothing else has to change. Test-mode subscriptions on a test-mode site keep working normally, so you can still rehearse the full renewal flow.
+
+Nothing is lost while the protection holds. Held renewals are re-checked daily and resume on their own once the site is back in **Live** mode.
+
+INFO
+
+Leave this on for every copy of your store. Turn it off only when a site is deliberately running in test mode while still needing to bill real subscriptions, which is an unusual setup and worth a second look before you commit to it.
 ## How a Renewal Works ​
 
 FluentCart checks store-billed subscriptions every hour, so renewals run on their own. You never have to trigger one.
@@ -2618,6 +2640,8 @@ FluentCart never creates a second renewal while an open one is still waiting to 
 Reminder emails are **off by default**. Turn them on to nudge customers around the due date: one reminder on the due date, then overdue reminders **1, 3, and 7 days** after it.
 
 You manage them from **FluentCart Pro → Settings → Email Configuration**. See [Configuring Email Notifications](/guide/settings-configuration/email-configuration/configuring-email-notification) for the full list of subscription emails.
+
+Those overdue days are yours to change, and the wording escalates with them. The earliest day sends a gentle first reminder, the last day sends a final notice, and any day you put in between sends a follow-up. Set the schedule under [Reminders](/guide/settings-configuration/email-configuration/reminders), then edit the three emails in **Email Notification Settings**.
 
 ### Past Due and Expiry ​
 

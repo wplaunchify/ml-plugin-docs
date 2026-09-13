@@ -271,6 +271,9 @@ These apply when your store charges saved payment methods automatically. See [St
 - **Renewal due reminder to customer:** Sent before or on the renewal due date while payment is still pending.
 - **Renewal due reminder copy to admin:** The admin-side copy of the due reminder.
 - **Payment reminder to customer:** A general reminder about a pending payment.
+- **First overdue renewal reminder to customer:** Sent on the earliest overdue day you configured, once a renewal due date has passed with payment still pending.
+- **Follow-up overdue renewal reminder to customer:** Sent on the overdue days between the first and the last.
+- **Final overdue renewal notice to customer:** Sent on the last overdue day you configured while payment is still pending.
 - **Upcoming renewal reminder to customer:** Sent ahead of a subscription's auto-renewal date.
 - **Upcoming renewal reminder copy to admin:** The admin-side copy of the upcoming renewal reminder.
 - **Trial ending soon reminder to customer:** Sent before a trial period ends and converts to a paid subscription.
@@ -548,7 +551,7 @@ The **Reminders** section in FluentCart lets you control the automated reminder 
 2. Click on the **Email Configuration** tab.
 3. From the sub-menu, select **Reminders**.
 
-### Enabling Reminder Emails ​
+## Enabling Reminder Emails ​
 
 The first thing you will see on this page is the **Reminder Emails** toggle. By default, it is turned off.
 
@@ -581,6 +584,45 @@ You can enable reminders for one or more billing frequencies at the same time, e
 
 Reminders are especially useful for store-billed subscriptions, where the customer pays each renewal by hand rather than being charged automatically. To learn how those renewals are generated and billed, see [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions).
 
+### Configuring Invoice Reminders ​
+
+The reminders above all fire *before* a renewal. The **Invoice Reminders** section handles what happens after one comes due and the customer still has not paid. It applies to **manual subscriptions**, where renewals are billed by invoice rather than charged automatically.
+
+- **Enable:** Check this box to chase unpaid renewal invoices. It is on by default.
+- **Days after due date:** A comma-separated list of days to send on, counted from the due date. The default is **1,3,7**, which sends one reminder the day after the invoice was due, another two days later, and a last one a week after the due date.
+
+You can shorten, lengthen, or thin out that schedule freely. 
+```
+1,3,5,10
+```
+
+ gives you four nudges, and a single 
+```
+3
+```
+
+ gives you exactly one.
+
+#### How the Three Stages Escalate ​
+
+FluentCart does not send the same email three times. It reads your day list and maps each entry to one of three emails, so the tone rises the longer an invoice goes unpaid:
+
+- **First overdue renewal reminder to customer:** Sent on the earliest day in your list. A gentle nudge.
+- **Follow-up overdue renewal reminder to customer:** Sent on every day in between. A firmer reminder that the payment is still outstanding.
+- **Final overdue renewal notice to customer:** Sent on the last day in your list. The closing warning before the subscription runs out of grace.
+
+Because the mapping follows your list rather than fixed dates, a schedule of 
+```
+2,14
+```
+
+ sends only the first and final emails, while a single-day schedule sends the first one alone.
+
+Each stage sends once per billing cycle, so a customer never receives the same reminder twice for the same invoice. Payment at any point stops the rest of the sequence.
+
+IMPORTANT
+
+All three emails live in **Email Notification Settings** under **Scheduler / Reminder Actions**, where you can edit their subject lines and bodies or switch any stage off. Turning off the middle stage, for example, leaves you with a first reminder and a final notice and nothing in between.
 ### Saving Your Changes ​
 
 After configuring your reminder preferences, click the **Save** button in the top-right corner to apply your changes.
@@ -1608,7 +1650,8 @@ Select your store's operating mode. This is a critical setting that controls whe
 
 INFO
 
-This setting is directly linked to your payment gateways. When you set the store to **Live**, your payment methods also switch to their live credentials. When you switch to **Test**, your payment gateways automatically use their sandbox credentials.
+This setting is directly linked to your payment gateways. When you set the store to **Live**, your payment methods also switch to their live credentials. When you switch to **Test**, your payment gateways automatically use their sandbox credentials.Store Mode also protects your subscribers. A site left in **Test** mode stops invoicing, charging, and emailing live subscriptions, which is what keeps a staging clone of your store from double-billing real customers. See [Staging Protection](/guide/product-types-creation/store-managed-subscriptions) for how that works and when to turn it off.
+
 ### 3. Store Address ​
 
 Provide your physical business address. FluentCart uses this for PayPal verification, default shipping calculations, tax base lookups, and as the address displayed on receipts and other store documents.

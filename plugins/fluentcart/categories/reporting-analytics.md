@@ -196,13 +196,13 @@ With the **Future Renewals** report feature, you no longer have to guess what ne
 
 The **Order Sources** report answers the question every store owner eventually asks: *where are my paying customers actually coming from?*
 
-It groups your orders by the UTM parameters attached to them, so you can see which campaign, which channel, and which specific ad produced real revenue — not just traffic. A campaign that sends thousands of visitors but produces four orders looks very different here than it does in your analytics tool.
+It groups your orders by the UTM parameters attached to them, so you can see which campaign, which channel, and which specific ad produced real revenue, not just traffic. A campaign that sends thousands of visitors but produces four orders looks very different here than it does in your analytics tool.
 
 ## Accessing the Order Sources Report ​
 
-Go to your WordPress dashboard, then **FluentCart → Reports**, and open the **Order Sources** tab.
+Go to your WordPress dashboard, then **FluentCart → Reports**, and open the **Sources** tab.
 
-Only orders that carry a UTM source appear here. Orders placed by someone who came to your store directly, through an untagged link, or over a channel you never tagged are excluded — the report would otherwise be dominated by a single meaningless "unknown" row.
+Only orders that carry a UTM source appear here. Orders placed by someone who came to your store directly, through an untagged link, or over a channel you never tagged are excluded. The report would otherwise be dominated by a single meaningless "unknown" row.
 
 ## Report Columns and Metrics ​
 
@@ -212,13 +212,13 @@ Each row is a unique combination of **campaign, source, and medium**. Every orde
 
 Use the **Columns** control above the table to show or hide any of these:
 
-- **UTM Campaign** — the campaign the link belonged to (
+- **UTM Campaign:** the campaign the link belonged to (
 ```
 utm_campaign
 ```
 
 ).
-- **UTM Source** — where the traffic came from, such as 
+- **UTM Source:** where the traffic came from, such as 
 ```
 google
 ```
@@ -234,7 +234,7 @@ utm_source
 ```
 
 ).
-- **UTM Medium** — the kind of channel, such as 
+- **UTM Medium:** the kind of channel, such as 
 ```
 cpc
 ```
@@ -250,19 +250,19 @@ utm_medium
 ```
 
 ).
-- **UTM Term** — the keyword, for paid search (
+- **UTM Term:** the keyword, for paid search (
 ```
 utm_term
 ```
 
 ).
-- **UTM Content** — which variant of an ad or link was clicked (
+- **UTM Content:** which variant of an ad or link was clicked (
 ```
 utm_content
 ```
 
 ).
-- **UTM ID** — your own campaign identifier (
+- **UTM ID:** your own campaign identifier (
 ```
 utm_id
 ```
@@ -271,11 +271,13 @@ utm_id
 
 ### Revenue Metrics ​
 
-- **Orders** — how many orders came from this source.
-- **Gross Sales** — total paid across those orders.
-- **Net Sales** — gross sales minus refunds, tax, and shipping tax. This is the figure to judge a campaign on.
-- **Average Order** — gross sales divided by order count.
-- **Average Order Net** — net sales divided by order count.
+- **Orders:** how many orders came from this source.
+- **Gross Sales:** total paid across those orders.
+- **Net Sales:** gross sales minus refunds, tax, and shipping tax. This is the figure to judge a campaign on.
+- **Average Order:** gross sales divided by order count.
+- **Average Order Net:** net sales divided by order count.
+
+The **Gross / Net** switch above the table toggles which pair of these the table displays: **Gross** shows Gross Sales and Average Order, **Net** shows Net Sales and Average Order Net.
 
 Rows are sorted by gross sales, highest first, so your best-performing sources are always at the top.
 
@@ -288,13 +290,17 @@ Gross Sales includes tax, shipping tax, and orders that were later refunded. A c
 
 The date selector at the top scopes the report to a period. Every metric recalculates, and comparison figures update alongside it so you can see whether a source is growing or fading.
 
+### Search ​
+
+The **Search** field above the table filters results by UTM values as you type, matching against UTM Campaign, UTM Source, and UTM Medium. It's the quickest way to jump to a specific campaign.
+
 ### Advanced Filters ​
 
-Beyond the date range, you can narrow the report using the same advanced filter engine that powers the Orders screen. That means you can answer much more specific questions — *which campaigns produced orders over $100?*, *which sources brought in subscription customers?*, *how did this campaign perform for customers in Germany?*
+Beyond the date range, you can narrow the report using the same advanced filter engine that powers the Orders screen. That means you can answer much more specific questions: *which campaigns produced orders over $100?*, *which sources brought in subscription customers?*, *how did this campaign perform for customers in Germany?*
 
-Build a filter by choosing a field, an operator, and a value. Conditions can be combined into groups, so complex questions are expressible without exporting anything.
+Turn on the **Advanced Filter** switch above the table, click **+ Add**, and pick a property group (**Order Property**, **Customer Property**, **Transactions Property**, **Utm Property**, or **Tax Property**), then choose a field within it, an operator, and a value. Conditions can be combined into groups joined with **AND** / **OR**, so complex questions are expressible without exporting anything.
 
-Available operators depend on the field, and include **Equals** for exact matches — including matching an order by its order hash or a payer's email address — and **Includes** for partial text matches on fields such as customer email.
+Available operators depend on the field, and include **Equals** for exact matches (including matching an order by its order hash or a payer's email address) and **Includes** for partial text matches on fields such as customer email.
 
 Advanced filtering requires FluentCart Pro
 
@@ -307,7 +313,7 @@ Understanding what the report is measuring makes it far more useful.
 
 FluentCart records attribution on **every** order using a last-touch model. When a visitor arrives through a tagged link, that marketing touch replaces whatever was previously stored for them. Whichever campaign brought them back for the visit where they actually bought is the one credited.
 
-This matters when a customer discovers you through one campaign and returns weeks later through another. Only the returning touch is credited — the report shows what closed the sale, not what started the relationship.
+This matters when a customer discovers you through one campaign and returns weeks later through another. Only the returning touch is credited. The report shows what closed the sale, not what started the relationship.
 
 ### Ad click identifiers ​
 
@@ -327,9 +333,24 @@ These appear on the order's source card rather than as report columns, and they'
 
 When a visitor arrives without UTM parameters, FluentCart records the referring URL instead. Referrals from your own domains are ignored, so a customer moving between your own pages doesn't overwrite the real external source that brought them.
 
+### Consent and stored attribution ​
+
+To credit the right campaign at checkout, FluentCart has to remember the marketing touch that brought a visitor in, and it does that by storing the campaign values in the visitor's own browser. Privacy rules such as GDPR and Germany's TDDDG treat that storage the same way they treat cookies, and campaign attribution is not something a shop strictly needs in order to sell.
+
+FluentCart therefore announces every attribution write before it happens, so a consent manager can step in and decide. Three things can follow:
+
+- **No consent integration is present.** The write goes ahead exactly as it always has, which is the case for most stores. Nothing changes and nothing needs configuring.
+- **A consent manager holds the decision.** The campaign values stay in page memory only and are never written to the device. If the visitor accepts on that same page, the touch is stored and the campaign is not lost.
+- **The visitor refuses, or withdraws later.** Nothing is written, and anything already stored is cleared, so a withdrawal takes effect on past data rather than only on future visits.
+
+Orders that arrive without stored attribution still appear in your reports. They simply carry no marketing source, the same as any untagged visit.
+
+INFO
+
+Wiring your consent banner to this gate takes a few lines of JavaScript, and there is a working example among the [code snippets](/guide/customization-and-themes/code-snippets).
 ### Where to see a single order's attribution ​
 
-The report shows aggregates. To see the attribution recorded against one specific order, open the order and check its source card — see [Order Details Overview](/guide/store-management/orders-management/order-details-overview).
+The report shows aggregates. To see the attribution recorded against one specific order, open the order and check its source card; see [Order Details Overview](/guide/store-management/orders-management/order-details-overview).
 
 ## Using the Report ​
 
@@ -337,7 +358,7 @@ The report shows aggregates. To see the attribution recorded against one specifi
 
 **Check whether a campaign paid for itself.** Filter to the campaign's run dates, read Net Sales, and compare against what you spent.
 
-**Spot untagged traffic.** If your report totals are far below your actual order count, most of your orders are arriving without UTM tags. Tag your outbound links — email campaigns, ads, affiliate links, social posts — and the report fills in.
+**Spot untagged traffic.** If your report totals are far below your actual order count, most of your orders are arriving without UTM tags. Tag your outbound links (email campaigns, ads, affiliate links, social posts) and the report fills in.
 
 **Compare ad variants.** With 
 ```
@@ -345,13 +366,6 @@ utm_content
 ```
 
  set per creative, the UTM Content column tells you which variant actually converted.
-
-## Related ​
-
-- [Orders Report](/guide/reporting-analytics/orders-report) — order performance by customer, day, and hour
-- [Revenue Report](/guide/reporting-analytics/revenue-report) — gross sales, net revenue, refunds, taxes
-- [Order Details Overview](/guide/store-management/orders-management/order-details-overview) — attribution on a single order
-- [Reports Dashboard Overview](/guide/reporting-analytics/reports-dashboard-overview) — the summary dashboard
 
 ---
 
@@ -397,9 +411,9 @@ Each metric also includes a percentage that indicates the increase or decrease c
 
 #### Order Chart ​
 
-Just below the KPIs, you’ll see the Order **Report Chart**. This bar chart gives you a clear visual of your store’s performance over time.
+Just below the KPIs, the Order Report Chart gives you a clear visual of your store’s performance over time.
 
-You can adjust the chart view to show data by month or year. By default, it’s set to the standard format. To change it, use the dropdown menu located at the top-right corner of the chart section.
+- **Chart View Dropdown:** You can easily adjust the chart's timeline using the dropdown menu located at the top-right corner of the chart section. By default, it is set to Auto (Yearly), but you can change it to display data Daily, Monthly, or Yearly depending on how granular you need the trends to be.
 
 #### Customer Insights ​
 

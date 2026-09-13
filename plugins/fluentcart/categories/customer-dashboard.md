@@ -348,6 +348,21 @@ Here’s what you might see on the details page:
 - **Transaction and Billing Info**: At the bottom of the page, you can find the specific **Related Transactions** for your payment and the **Billing Address** that was used for the order.
 - **License Details**: If your order included a product with a software license, you would also see a section here with your license key and activation details.
 
+## Upgrading a One time Purchases ​
+
+Some products can be moved up to a bigger package after you have bought them, and you no longer have to own an active subscription to do it! If the store has set up an [upgrade path](/guide/product-types-creation/defining-upgrade-paths) for something you bought outright, an **Upgrade Plan** button appears next to that item on the order details page.
+
+### How to Upgrade an Item: ​
+
+1. Click the **Upgrade Plan** button located right beside the item. An **Upgrade** options window will open.
+
+1. Review the available packages. Each row shows the package name, its regular price, and the **Amount** to pay (which automatically credits your original purchase amount).
+2. Click **Upgrade** next to the package you want. You will be taken directly to **checkout** to pay the remaining difference.
+
+NOTE
+
+The **Upgrade Plan** button only appears on items that qualify. Your original order must be paid, and the store must currently offer an active upgrade path for that exact product.
+
 ---
 
 ## Subscriptions ​

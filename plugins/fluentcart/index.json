@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-09-06T04:45:52.755Z",
-  "total_pages": 155,
+  "last_scraped": "2026-09-13T09:43:55.240Z",
+  "total_pages": 156,
   "failed_urls_count": 5,
   "sections": [
     {
@@ -168,7 +168,7 @@
       "slug": "integrations",
       "url": "https://docs.fluentcart.com/guide/integrations/",
       "file": "categories/integrations.md",
-      "page_count": 11,
+      "page_count": 12,
       "pages": [
         {
           "title": "FluentCart with Amazon S3 ​",
@@ -193,6 +193,10 @@
         {
           "title": "FluentCRM Integration ​",
           "url": "https://docs.fluentcart.com/guide/integrations/fluentcrm-integration"
+        },
+        {
+          "title": "FluentPlayer Integration ​",
+          "url": "https://docs.fluentcart.com/guide/integrations/fluentplayer-integration"
         },
         {
           "title": "Fluent Support Integration ​",
