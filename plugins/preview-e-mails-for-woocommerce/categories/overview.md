@@ -73,7 +73,7 @@ Thank you!
 							![](https://secure.gravatar.com/avatar/9c24d83527f27d0d1f873bf585eef4ff9b2bc982745387a77390c5557f14867e?s=60&d=retro&r=g)### Incredibly useful plugin
 							[Nagesh Pai](https://profiles.wordpress.org/nagpai/)
 								August 28, 2023
-						This is a super helpful plugin while customizing email templates within WooCommerce. A great addition to a Woo theme designer’s toolkit! Big thanks to the author for making this available!
+						This is a super helpful plugin while customizing email templates within WooCommerce. A great addition to a Woo theme designer's toolkit! Big thanks to the author for making this available!
 							![](https://secure.gravatar.com/avatar/d5d85d79f79baba4f5b9a619c51000a67c90c4a228473a9b3d30773859ec200e?s=60&d=retro&r=g)### Just what I need
 							[Skylabb](https://profiles.wordpress.org/skylabb/)
 								August 16, 2023
