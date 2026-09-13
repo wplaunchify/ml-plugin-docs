@@ -134,12 +134,12 @@ Overall a 5-star plugin!
 							![](https://secure.gravatar.com/avatar/f5b45851733b91c61a2658d14073bbf19a2d1d6519c0ee9107c01feedf132af1?s=60&d=retro&r=g)### Doesn’t work on mobile menu
 							[deborahcooley](https://profiles.wordpress.org/deborahcooley/)
 								June 1, 2023
-						Seems unfinished. Bit surprised to see they it’s a paid plugin with a free version. I wouldn’t pay.Beware: You need to save every menu item before being able to add an image. Then a hover appears that you can use to insert an image.However, hiding the menu item title doesn’t work on mobile, so you get both menu item title + image.Annoying.I chose another plugin that had far more features, had no paid plans, looks good, and works flawlessly.
+						Seems unfinished. Bit surprised to see they it's a paid plugin with a free version. I wouldn't pay.Beware: You need to save every menu item before being able to add an image. Then a hover appears that you can use to insert an image.However, hiding the menu item title doesn't work on mobile, so you get both menu item title + image.Annoying.I chose another plugin that had far more features, had no paid plans, looks good, and works flawlessly.
 							![](https://secure.gravatar.com/avatar/766c869650943dc50a25a0467851e99c736f1030cda61e2221dd10da89cb4462?s=60&d=retro&r=g)### Works, but constant messaging in admin
 							[Steve Mosby](https://profiles.wordpress.org/malgra/)
 								December 21, 2022
 																1 reply
-						<p>Works really well, but the plugin spams the WP Admin with ‘upgrade’ messages and once dismissed, they come back again and again. </p>
+						<p>Works really well, but the plugin spams the WP Admin with 'upgrade' messages and once dismissed, they come back again and again. </p>
 
 		[Read all 123 reviews](https://wordpress.org/support/plugin/menu-image/reviews/)
 
