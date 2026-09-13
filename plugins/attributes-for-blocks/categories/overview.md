@@ -238,7 +238,7 @@ Thank YOU!
 							![](https://secure.gravatar.com/avatar/45e3dfb5e418c9d670a2c0b158440b929e2d64bf3a0f63c002d7ef1141e8e83a?s=60&d=retro&r=g)### Awesome plugin!
 							[Nazar Hotsa](https://profiles.wordpress.org/bugnumber9/)
 								January 4, 2024
-						I absolutely love this plugin! Does what it says easily and reliably, doesn’t add any bloat. Amazing.
+						I absolutely love this plugin! Does what it says easily and reliably, doesn't add any bloat. Amazing.
 
 		[Read all 21 reviews](https://wordpress.org/support/plugin/attributes-for-blocks/reviews/)
 
