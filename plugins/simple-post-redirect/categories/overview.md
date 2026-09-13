@@ -82,7 +82,7 @@ To **remove** a redirect, simply blank out the field.
 							![](https://secure.gravatar.com/avatar/a5014f3a800b6e7ffb42eb7a082a4e72b8a3d1fd328eac25119d3612cdca0385?s=60&d=retro&r=g)### Does exactly what it says on the tin
 							[wpcreations](https://profiles.wordpress.org/wpcreations/)
 								November 14, 2024
-						Great plugin, does exactly what it says on the tin. Would be nice to see a target option, feel that’s the only thing missing.
+						Great plugin, does exactly what it says on the tin. Would be nice to see a target option, feel that's the only thing missing.
 							![](https://secure.gravatar.com/avatar/4928f78ad4c8d821803790deb82438e48c08f7d7616cc2ba5522322a32e8f180?s=60&d=retro&r=g)### Simple to the Point
 							[cavuapparel](https://profiles.wordpress.org/cavuapparel/)
 								March 3, 2024
@@ -101,7 +101,7 @@ Please add a category redirect.
 							![](https://secure.gravatar.com/avatar/c9937c0b152b9066e1b47d9e8f25ab0ebfa6ece9a94b9fcad43306b488788e11?s=60&d=retro&r=g)### Great Plugin – Simple and clever
 							[Joerg Romanowski](https://profiles.wordpress.org/romanowski72/)
 								April 16, 2020
-						I use it to redirect Avada’s portfolio items. Just insert URL – ready. 
+						I use it to redirect Avada's portfolio items. Just insert URL – ready. 
 Thanks for this plugin.
 
 		[Read all 9 reviews](https://wordpress.org/support/plugin/simple-post-redirect/reviews/)
