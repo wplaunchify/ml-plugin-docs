@@ -103,12 +103,12 @@ No configuration and do the work just as advertised. Simply excellent.
 							[MI](https://profiles.wordpress.org/seppier/)
 								July 26, 2021
 						Wow thank you for making this plugin!!!
-I was so stressed about thumbnails errors but now I don’t need to worry about it! 
+I was so stressed about thumbnails errors but now I don't need to worry about it! 
 Thanks!
 							![](https://secure.gravatar.com/avatar/b9e2cf33a19a5964e97eccbe63b3793eb2df9a757482bee9991ee4f49a24cff2?s=60&d=retro&r=g)### worked on my website when others wouldn’t
 							[stargirl1](https://profiles.wordpress.org/stargirl1/)
 								June 29, 2021
-						Great plug-in! I just installed it last night and now the og:image (large image preview) is looking correct on my posts when shared to Facebook. I normally don’t leave reviews but noticed this plug-in had very few. It worked like a charm on my website to show the big preview when others (including some well known ones) wouldn’t. I was getting frustrated and wasting time googling plug-ins that didn’t work on my site for some reason. Finally this one worked! It does what it says, and is very simple to use, no configuration needed.
+						Great plug-in! I just installed it last night and now the og:image (large image preview) is looking correct on my posts when shared to Facebook. I normally don't leave reviews but noticed this plug-in had very few. It worked like a charm on my website to show the big preview when others (including some well known ones) wouldn't. I was getting frustrated and wasting time googling plug-ins that didn't work on my site for some reason. Finally this one worked! It does what it says, and is very simple to use, no configuration needed.
 
 		[Read all 13 reviews](https://wordpress.org/support/plugin/opengraph/reviews/)
 
