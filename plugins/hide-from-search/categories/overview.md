@@ -79,19 +79,19 @@ Previous review:Happy to adjust my rating if I’m wrong but currently it appear
 							![](https://secure.gravatar.com/avatar/edcb50b4ae8bb05b5d9d3207735f17e437ac3d9d1196d8d6cab93ba3270c0630?s=60&d=retro&r=g)### Works, But is Hit or Miss
 							[bighrts](https://profiles.wordpress.org/bighrts/)
 								January 31, 2024
-						This plugin definitely works, but I find that it’s hit or miss. Using it with WordPress products, some products still show in search results even with the boxes ticked while others don’t. Not sure why the inconsistency is there.
+						This plugin definitely works, but I find that it's hit or miss. Using it with WordPress products, some products still show in search results even with the boxes ticked while others don't. Not sure why the inconsistency is there.
 							![](https://secure.gravatar.com/avatar/279268d5eea1ec441e9d5af7f73a8a131a778ffdb75b77e4a5aa31cb6936fd97?s=60&d=retro&r=g)### Its good but hoping it could be better!
 							[oxign](https://profiles.wordpress.org/oxign/)
 								June 18, 2023
-						Happy to adjust my rating if I’m wrong but currently it appears you need to enter Edit to apply any changes. I have the need to hide hundreds of pages in a very large website and it would be so handy if the options were placed inside the Quick Edit. Furthermore, it would be even more handy if you could then select multiple pages and edit them together.
+						Happy to adjust my rating if I'm wrong but currently it appears you need to enter Edit to apply any changes. I have the need to hide hundreds of pages in a very large website and it would be so handy if the options were placed inside the Quick Edit. Furthermore, it would be even more handy if you could then select multiple pages and edit them together.
 							![](https://secure.gravatar.com/avatar/2ae27294a8301cdb1667e4520ed7f969ef65bcda9b56d0f0fdf124709ce2b81c?s=60&d=retro&r=g)### Best in Category: Does an Excellent job! Thanks!
 							[gpowerhost](https://profiles.wordpress.org/gpowerhost/)
 								June 3, 2023
 						This plugin is well coded and maintained.
 
-It’s FREE FROM: bloat, clutter, nagging messages, spam advertising (as some other plugins in this category are not.)
+It's FREE FROM: bloat, clutter, nagging messages, spam advertising (as some other plugins in this category are not.)
 
-We’ve tested Hide from Search and it indeed does hide whichever you want: search engines and/or WordPress search results for any Posts/ Pages/ WooCommerce Products/ LearnDash Courses and all other Custom Post Types that we’ve seen (that are coded to the WordPress standards of posts/pages). 
+We've tested Hide from Search and it indeed does hide whichever you want: search engines and/or WordPress search results for any Posts/ Pages/ WooCommerce Products/ LearnDash Courses and all other Custom Post Types that we've seen (that are coded to the WordPress standards of posts/pages). 
 
 Our heartfelt thanks to, Micah Wood, the plugin author for being generous and continuing to make WordPress.org the wonderful open sourced enabler that allows individuals, businesses, organizations and educators all around the world to be able to build anything they want on the web, as well as or better than any other content management system!
 
@@ -99,11 +99,11 @@ Note: We have indeed tested all of the other plugins in this category listed on 
 							![](https://secure.gravatar.com/avatar/f892702cbf3052de058ab4d493b8a7423080c1df323c3c9c152b84261d3e77d1?s=60&d=retro&r=g)### Great plugin!
 							[Eder Tuffic](https://profiles.wordpress.org/eder-tuffic/)
 								July 20, 2021
-						I had tried another one and it didn’t work, this one worked perfectly!
+						I had tried another one and it didn't work, this one worked perfectly!
 							![](https://secure.gravatar.com/avatar/8093c09ffbad1b3c2fc69c3081aa261994d8e8a4ee2adab3fa61d3bb7aa131e9?s=60&d=retro&r=g)### Easy To Use And It Works
 							[savethefrogs](https://profiles.wordpress.org/savethefrogs/)
 								April 1, 2021
-						Hide From Search is super easy to use…and it works. Specifically, it helps you take any post or page and easily ensure public users don’t find it in search. Use case: hide thank you pages and confirmation pages. As far as customer support goes, I emailed Micah about an issue and he released a fix the same day. Highly recommended!
+						Hide From Search is super easy to use…and it works. Specifically, it helps you take any post or page and easily ensure public users don't find it in search. Use case: hide thank you pages and confirmation pages. As far as customer support goes, I emailed Micah about an issue and he released a fix the same day. Highly recommended!
 
 		[Read all 17 reviews](https://wordpress.org/support/plugin/mpress-hide-from-search/reviews/)
 
