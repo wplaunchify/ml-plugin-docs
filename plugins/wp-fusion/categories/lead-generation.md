@@ -230,7 +230,7 @@ The setup instructions above work with any version of Fluent Forms (including th
 
 This treats the form submission like a “lead”, or “opt in”— the data is synced directly to your CRM, one time.
 
-If you are using [Fluent Forms Pro](https://wpfusion.com/go/fluent-forms), with the [User Registration module](https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-create-a-wordpress-user-registration-form-with-wp-fluent-forms/), the setup is different. First, create your form, and add a User Registration module [following this tutorial](https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-create-a-wordpress-user-registration-form-with-wp-fluent-forms/).
+If you are using [Fluent Forms Pro](https://wplicensepro.com/product/fluent-forms-pro/), with the [User Registration module](https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-create-a-wordpress-user-registration-form-with-wp-fluent-forms/), the setup is different. First, create your form, and add a User Registration module [following this tutorial](https://wpmanageninja.com/docs/fluent-form/advanced-features-functionalities-in-wp-fluent-form/how-to-create-a-wordpress-user-registration-form-with-wp-fluent-forms/).
 
 Add any custom fields to the user registration feed as User Meta.
 
