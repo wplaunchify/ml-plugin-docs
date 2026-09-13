@@ -2,7 +2,7 @@
   "plugin_slug": "uncanny-groups-for-learndash",
   "plugin_name": "Uncanny Groups for LearnDash",
   "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-  "last_scraped": "2026-09-06T06:41:10.685Z",
+  "last_scraped": "2026-09-13T12:05:16.879Z",
   "total_pages": 183,
   "failed_urls_count": 1,
   "sections": [
@@ -26,7 +26,7 @@
           "url": "https://www.uncannyowl.com/knowledge-base/frequently-asked-questions-3/"
         },
         {
-          "title": "Authoring Tools Supported by Tin Canny",
+          "title": "Authoring Tools Supported by Tin Canny for WordPress",
           "url": "https://www.uncannyowl.com/knowledge-base/authoring-tools-supported-by-tin-canny/"
         },
         {

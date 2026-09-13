@@ -8,7 +8,7 @@
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/tin-canny-xapi-scorm-for-wordpress-overview/](https://www.uncannyowl.com/knowledge-base/tin-canny-xapi-scorm-for-wordpress-overview/)
 
-The Tin Canny for WordPress plugin adds new xAPI/SCORM capabilities to WordPress sites. A unique feature of the plugin is the Tin Can Report that helps you track the progress and completion of Articulate Storyline/Rise, Adobe Captivate, and iSpring modules published to Tin Can/xAPI or SCORM, as well as H5P content*. The custom plugin also adds an Uploader to the WordPress Editor.
+The Tin Canny for WordPress plugin adds new xAPI/SCORM capabilities to WordPress sites. A unique feature of the plugin is the Tin Can Report that helps you track the progress and completion of Articulate Storyline/Rise, Adobe Captivate, and other modules published to Tin Can/xAPI or SCORM format, as well as H5P content*. The custom plugin also adds an Uploader to the WordPress Editor.
 
 Here are the key features of the plugin:
 
@@ -30,18 +30,18 @@ All Tin Can data are displayed in two reports: Tin Can Report and xAPI Quiz Repo
 
 ### Storing Tin Can/xAPI Data in a Local LRS
 
-Up until now, every Tin Can solution developed for WordPress relied on a Learning Record Store (LRS) outside of WordPress. It meant segregating reporting and figuring out how to send Tin Can/xAPI statements externally. Many LRS solutions obfuscated code and prevented customization, so making improvements was impossible. With this plugin we offer the option to have a basic LRS entirely native to WordPress. It captures Tin Can/xAPI statements with little configuration. Just upload Storyline, Captivate, or iSpring zip files, or add H5P modules, and statements are automatically captured right inside your WordPress site.
+Up until now, every Tin Can solution developed for WordPress relied on a Learning Record Store (LRS) outside of WordPress. It meant segregating reporting and figuring out how to send Tin Can/xAPI statements externally. Many LRS solutions obfuscated code and prevented customization, so making improvements was impossible. With this plugin we offer the option to have a basic LRS entirely native to WordPress. It captures Tin Can/xAPI statements with little configuration. Just upload Storyline, Captivate, or other xAPI/SCORM zip files, or add H5P modules, and statements are automatically captured right inside your WordPress site.
 
 ### Converting SCORM statements to xAPI (Tin Can)
 
-The plugin has been optimized for Tin Can/xAPI, but it also supports Rise, Storyline, Captivate, H5P and iSpring modules published to SCORM 1.2 or SCORM 2004. SCORM statements from these modules are converted to xAPI statements using the official ADL SCORM to xAPI bridge adapter and made available in the Tin Can Report.
+The plugin has been optimized for Tin Can/xAPI, but it also supports modules published to SCORM 1.2 or SCORM 2004. SCORM statements from these modules are converted to xAPI statements using the official ADL SCORM to xAPI bridge adapter and made available in the Tin Can Report.
 
 ### Targeted Reports for Site Administrators
 
-The[Tin Can](https://www.uncannyowl.com/knowledge-base/tin-can-report/) and [xAPI Quiz](https://www.uncannyowl.com/knowledge-base/xapi-quiz-report/) reports will provide administrators insights into the overall performance of their elearning program and activities of their learners. Some of the metrics you’ll be able to see include:
+The [Tin Can](https://www.uncannyowl.com/knowledge-base/tin-can-report/) and [xAPI Quiz](https://www.uncannyowl.com/knowledge-base/xapi-quiz-report/) reports will provide administrators insights into the overall performance of their elearning program and activities of their learners. Some of the metrics you’ll be able to see include:
 
-- Tin Can statements by verb, module, user, or almost any other combination you can think of
-- Tin Can statement trends
+- xAPI/Tin Can statements by verb, module, user, or almost any other combination you can think of
+- xAPI/Tin Can statement trends
 - Individual response data from xAPI quiz content
 
 ---
@@ -58,11 +58,11 @@ Installing the plugin can’t be more straightforward. After you purchase and do
 
 The plugin has two reports (for Tin Can and xAPI Quiz Report) and a **Settings** tab.
 
-![Tin Canny Settings page](https://www.uncannyowl.com/wp-content/uploads/2025/09/Tin-Can-and-SCORM-settings.png)
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/xapi-scorm-settings-wordpress-1030x891.png)Tin Can/SCORM settings
 
 There are three optional controls on the Settings page under the heading Tin Can/SCORM:
 
-- Capture Tin Can and SCORM data: Keep the default setting Yes unless you are certain you won’t incorporate H5P, Storyline, Captivate, or iSpring content in any of your courses. If you select No (to not capture Tin Can data), the Tin Can Report tab will be removed and so will the Tin Can activity menu on the User Report. In addition, no Tin Can data will be reported on the Dashboard or Course Report.
+- Capture Tin Can and SCORM data: Keep the default setting Yes unless you are certain you don’t want to track statements from H5P, Storyline, Rise, Captivate, iSpring or any xAPI/SCORM content in any of your courses. If you select No (to not capture Tin Can data), the Tin Can Report tab will be removed and so will the Tin Can activity menu on the User Report. In addition, no Tin Can data will be reported on the Dashboard or Course Report.
 - [Protect SCORM/Tin Can modules:](https://www.uncannyowl.com/knowledge-base/protecting-sharing-content-tin-canny/) This option can prevent modules from being viewed by users who are not signed to your site. You can set protection at a global level (as shown above) and also override the global setting at a lesson or topic level.
 - SCORM Driver Compatibility: Depending on the authoring tool used, you may be required to change the default “Async” SCORM Driver compatibility to “Sync”. For most scenarios, this option will stay on the default “Async” setting.
 
@@ -105,7 +105,7 @@ define('WP_DEBUG_DISPLAY', false);
 
 ### Can I track eLearning content hosted on Amazon S3 or other offsite storage?
 
-The LRS installed with the Tin Canny Reporting plugin is local to your WordPress site. It cannot store statements sent from eLearning modules hosted externally or offloaded to another service, including Amazon S3. You need to upload Tin Can modules directly to your WordPresssite and modules must be stored on the WordPress install.
+The LRS installed with the Tin Canny Reporting plugin is local to your WordPress site. It cannot store statements sent from eLearning modules hosted externally or offloaded to another service, including Amazon S3. You need to upload Tin Can modules directly to your WordPress site and modules must be stored on the WordPress install.
 
 ### Why do I see a blank screen where my module should be?
 
@@ -123,9 +123,9 @@ If you’re using H5P modules, make sure you don’t have the H5P xAPI plugin in
 
 Similar to the tracking issues above, anything that could disrupt communications with the virtual Tin Canny LRS endpoint that we create can result in 403 errors. If you use Sucuri or another security/firewall plugin, you will need to whitelist the plugin in its settings. Maintenance plugins or anything else that restricts or redirects access on a sitewide basis is also likely to cause problems.
 
-### Does Tin Canny LearnDash Reporting work with all SCORM and xAPI content?
+### Does Tin Canny work with all SCORM and xAPI content?
 
-The plugin has been written for and tested extensively with the authoring software listed on [https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/). Although SCORM and xAPI are eLearning standards, different authoring applications do work a little differently in terms of when they send statements and how progress and completion are tracked. Our support is limited to authoring software that we know for certain would work.
+The plugin has been written for and tested extensively with the authoring software listed on [https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported/). Although SCORM and xAPI are eLearning standards, different authoring applications do work a little differently in terms of when they send statements and how progress and completion are tracked. If you’re having trouble with your module, please reach out to support. We may request a copy of your module so we can investigate further.
 
 ### I cloned my site and now users can’t access Tin Canny content. What happened?
 
@@ -140,35 +140,13 @@ This will regenerate .htaccess files that are configured for the cloned site.
 
 ---
 
-## Authoring Tools Supported by Tin Canny
+## Authoring Tools Supported by Tin Canny for WordPress
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/authoring-tools-supported-by-tin-canny/](https://www.uncannyowl.com/knowledge-base/authoring-tools-supported-by-tin-canny/)
 
-### Tin Canny Reporting – Version 4.0 and up
+We provide support for **almost all standards-compliant SCORM and xAPI/Tin Can modules**. This includes dispatch files, but not all authoring tools that publish dispatch have full support for resume (and in some cases tracking) behaviours in Tin Canny. Multi-SCO modules are currently not supported. A good test for compatibility is trying the module on [SCORM Cloud](https://cloud.scorm.com/sc/guest/SignInForm), but in some cases, due to WordPress architecture and behaviour, we cannot guarantee support for all authoring tools. Tin Canny testing is done primarily against Storyline, Rise, Lectora, iSpring, Captivate and H5P.
 
-Starting with Tin Canny 4.0, we will provide support for **almost all standards-compliant SCORM and xAPI/Tin Can modules**. This includes dispatch files, but not all authoring tools that publish dispatch have full support for resume (and in some cases tracking) behaviours in Tin Canny. Multi-SCO modules are currently not supported. A good test for compatibility is trying the module on [SCORM Cloud](https://cloud.scorm.com/sc/guest/SignInForm), but in some cases, due to WordPress architecture and behaviour, we cannot guarantee support for all authoring tools. Tin Canny testing is done primarily against Storyline, iSpring, Rise, Captivate and H5P.
-
-### Tin Canny Reporting – Versions earlier than 4.0
-
-Earlier versions of Tin Canny only support **tr****acking of Tin Can (xAPI) and SCORM statements from e-learning modules authored with Storyline 2/3/360, Articulate Rise, Adobe Captivate 9/2017/2019, iSpring 8/9, and H5P.** See the following support matrix for details about pre-4.0 authoring tool support:
-
-|  | Tin Can / xAPI | SCORM 1.2 | SCORM 2004 |
-| --- | --- | --- | --- |
-| Articulate Storyline 2 | Yes | Yes | Yes |
-| Articulate Storyline 360 | Yes | Yes | Yes |
-| Articulate Storyline 3 | Yes | Yes | Yes |
-| Articulate Rise1 | Yes | Yes | Yes |
-| Articulate Presenter 360 | Yes | Yes | Yes |
-| Adobe Captivate 9 | Yes | Yes | Yes |
-| Adobe Captivate 2017 | Yes | Yes | Yes |
-| Adobe Captivate 2019 | Yes | Yes | Yes |
-| iSpring 82 | No | No | No |
-| iSpring 93 | Yes | Yes | Yes |
-| iSpring Quizmaker | Yes | No | No |
-| Lectora Inspire 18 | Yes | Yes | No |
-| H5P | Yes | N/A | N/A |
-
-Note if you try to upload a zip file created by a tool **not** SCORM or xAPI compliant, you’ll see a warning that xAPI/SCORM statements sent by the module will not be recorded and you’ll be prompted to select the .html file in the zip that will launch the content.
+**Note**: If you try to upload a zip file created by a tool **not** SCORM or xAPI compliant, you’ll see a warning that xAPI/SCORM statements sent by the module will not be recorded and you’ll be prompted to select the .html file in the zip that will launch the content.
 
 1 Articulate Rise modules will only send a Completed or Passed/Failed verb if they are displayed via Lightbox or a new window and upon closing the lightbox/window. When adding Rise modules, you should avoid using iFrame as the display method (at least if SCORM is being used; xAPI modules from recent Rise versions may work). Alternatively, you can override Completion Condition on the lesson or topic edit page by specifying other verbs such as “attempted” or “experienced” to trigger the Mark Complete button.
 
@@ -192,7 +170,7 @@ In this report, you will see  the learning records resulting from users’ inte
 
 Let’s take a look at the Tin Can Report view.
 
-![tin can report](https://www.uncannyowl.com/wp-content/uploads/2019/05/tin-can-report-back-end-no-tabs.png)
+![Reporting dashboard for Tin Can/xAPI in WordPress with filters (User, Content, Activity, Date) and a results table showing user posts and quiz outcomes](https://www.uncannyowl.com/wp-content/uploads/2026/09/xapi-scorm-report-wordpress-1030x774.png)#image_title
 
 The report view includes many filtering options for you to narrow in on data you are interested to see. For example, you may want to view all the learning records related to a particular Storyline module. You may want to check all the activities that took place within a certain time period. Or you may want to find out whether or when a particular user completed the module.
 
@@ -210,7 +188,7 @@ For a large course, you can potentially be looking at hundreds of thousands of r
 
 ### Overview
 
-The xAPI Quiz Report captures individual quiz question responses from xAPI content.  It is part of the Tin Canny for WordPress plugin that we developed to support the use of eLearning authoring tools like Articulate Storyline and Rise, Adobe Captivate, and iSpring with WordPress.  In this report, you will see the learning records resulting from users’ interactions this support xAPI content created with these tools. These records are stored in a Learning Record Store (LRS) entirely native to your WordPress site. All you need to do is publish your file using the xAPI standard, and use the [Tin Canny Uploader](https://www.uncannyowl.com/knowledge-base/storyline-captivate-uploader/) to add it to a lesson or topic associated with a course.
+The xAPI Quiz Report captures individual quiz question responses from xAPI content.  It is part of the Tin Canny xAPI/SCORM for WordPress plugin that we developed to support the use of eLearning authoring tools like Articulate Storyline and Rise, Adobe Captivate, iSpring and more with WordPress.  In this report, you will see the learning records resulting from users’ interactions in xAPI content created with these tools. These records are stored in a Learning Record Store (LRS) entirely native to your WordPress site. All you need to do is publish your file using the xAPI standard, and use the [Tin Canny Uploader](https://www.uncannyowl.com/knowledge-base/storyline-captivate-uploader/) to add it to a lesson or topic associated with a course.
 
 **Important**: Tin Canny only tracks and reports on the data you see in the xAPI Quiz Report columns.
 
@@ -220,7 +198,7 @@ The xAPI Quiz Report captures individual quiz question responses from xAPI conte
 
 Let’s take a look at the xAPI Quiz Report view.
 
-![](https://www.uncannyowl.com/wp-content/uploads/2019/05/LearnDash_xAPI_Quiz_Report.png)
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/xapi-quiz-report-wordpress-1030x754.png)xAPI Quiz Report in the WordPress admin dashboard
 
 The report view includes many filtering options for you to narrow in on data you are interested to see. For example, you may want to view all the learning records related to a particular Storyline module. You may want to check all the activities that took place within a certain time period. Or you may want to find out whether or when a particular user completed the module.
 
@@ -230,7 +208,7 @@ Use the Screen Options button in the top right corner of the screen to show or h
 
 ### Export to CSV
 
-For a large course, you can potentially be looking at hundreds of thousands of records. The Export to CSV button lets you download the filtered result as a CSV file so you can do further analysis in Microsoft Excel or statistical programs.
+For a large course, you can potentially be looking at hundreds of thousands of records. The Export to CSV button lets you download the filtered result as a CSV file so you can do further analysis in Microsoft Excel or statistical apps.
 
 ---
 
@@ -247,13 +225,13 @@ The Tin Canny Uploader is the tool that will allow you to upload your xAPI and S
 To upload and embed your module using Gutenberg block editor, follow these steps:
 
 1. On your page or post, click the “+” icon to add a new block.
-2. When the block selector appears, search and select the Tin Canny Content block.
+2. When the block selector appears, search and select the *Tin Canny Content* block.
 3. After the block is added, you have 2 options*:
-- “Upload”
+- **Upload**
 1. Click Upload.
-2. Find and select your module ZIP file from your computer and click “Open”.
+2. Find and select your module ZIP file from your computer and click *Open*.
 3. The module will upload, register and the content block will embed on your page.
-- “Select from Library”
+- **Select from Library**
 1. Search and/or select a module that has already been uploaded to your site.
 2. The content block will embed on your page.
 4. After you embed the content block, you will be able to select your display option from the side menu**.
@@ -281,24 +259,24 @@ To upload and embed your module using Gutenberg block editor, follow these steps
 
 To upload and embed your module using the Classic editor, follow these steps:
 
-1. On your page or post, click the “Add Tin Canny Media” button.
+1. On your page or post, click the *Add Tin Canny Media* button.
 2. A modal box will open and give you 2 options:
-- “Upload File”
+- **Upload File**
 1. Click the button labelled “Click to Upload” (before you click this button, you can also enable the option “Upload entire zip file” below).
-2. Find and select your module ZIP file from your computer and click “Open”.
+2. Find and select your module ZIP file from your computer and click *Open*.
 3. When the module finished uploading, you will have to select a display option. You have 3 options:
 1. iFrame
 2. Lightbox
 3. New tab
-4. After you select the display option, click “Insert Into Post”.
-5. The module be added as a shortcode in the Classic Editor
-- “Content Library”
-1. Search and/or select a module that has already been uploaded to your site and click the “Show” button.
+4. After you select the display option, click *Insert Into Post*.
+5. The module be added as a shortcode in the Classic Editor.
+- **Content Library**
+1. Search and/or select a module that has already been uploaded to your site and click the *Show* button.
 2. You will have to select a display option. You have 3 options:
 1. iFrame
 2. Lightbox
 3. New tab
-3. After you select the display option, click “Insert Into Post”.
+3. After you select the display option, click *Insert Into Post*.
 4. The module be added as a shortcode in the Classic Editor
 3. After selecting your display option, save your page and the module will display in the front end.
 
@@ -322,7 +300,7 @@ Please note that file names must contain fewer than 100 characters and should no
 
 ### Tin Can/xAPI Data
 
-In order to capture Tin Can data, your Storyline/Rise, Captivate, or iSpring module must have been published to xAPI or SCORM (1.2 or 2004). The module will still work if it was published to web but you won’t be able to capture Tin Can data. We recommend publishing to xAPI if the option is available, as in some situations it offers performance advantages over SCORM tracking.
+In order to capture Tin Can data, your Storyline/Rise, Captivate, or iSpring module must have been published to xAPI or SCORM (1.2 or 2004). If not, the module will still be displayed, but will not send statements to Tin Canny. We recommend publishing to xAPI if the option is available, as in some situations it offers performance advantages over SCORM tracking.
 
 ### Very large files
 
@@ -354,7 +332,7 @@ When you choose to embed your eLearning module in an iFrame, you have the optio
 
 Since the size of your learner’s browser window varies, your eLearning module should resize accordingly to take up 100% width of available space. However, the height remains fixed and content will be vertically centered in the iFrame. As a result, you may see additional space above and below the module on smaller screens or mobile devices.
 
-Because each authoring tool (Storyline, Captivate, and iSpring) supported by Tin Canny has its unique way of defining layout elements in the published module, at this time there isn’t a workable solution we can implement that will work consistently with all authoring tools. The following CSS fixes can be added manually to your site to address the layout issue you may experience when trying to display eLearning modules in iFrame.
+Because each authoring tool supported by Tin Canny has its unique way of defining layout elements in the published module, at this time there isn’t a workable solution we can implement that will work consistently with all authoring tools. The following CSS fixes can be added manually to your site to address the layout issue you may experience when trying to display eLearning modules in iFrame.
 
 ### Custom CSS for Storyline 2 and Storyline 360 Modules
 
@@ -416,7 +394,9 @@ Tin Canny for WordPress includes a settings page that lets you configure how var
 
 ### General Settings
 
-![](https://www.uncannyowl.com/wp-content/uploads/2026/09/image-1-663x1030.png)Tin Canny for WordPress settings
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/tin-canny-reports-settings-1030x873.png)Tin Canny reports settings
+
+![Settings panel labeled Tin Can/SCORM with Yes/No options for capturing data and protecting modules; two radio groups shown.](https://www.uncannyowl.com/wp-content/uploads/2026/09/xapi-scorm-settings-wordpress-1030x891.png)xAPI/SCORM settings
 
 ### Enabling/Disabling Tin Can/SCORM Data Capture
 
@@ -424,7 +404,7 @@ If you don’t want to capture Tin Can/SCORM statements sent by uploaded modules
 
 ### Protecting SCORM/Tin Can Modules
 
-When uploading Storyline/Rise, Captivate and iSpring content to your courses, you can enable basic protection of your content that restricts viewing of the content to signed-in users only.  Anonymous users who navigate to the URL where that module is available will not be able to see it or use it.  This basic protection makes it difficult for your users to share the content with anonymous users.
+When uploading Storyline/Rise, Captivate and other xAPI/SCORM content to your courses, you can enable basic protection of your content that restricts viewing of the content to signed-in users only.  Anonymous users who navigate to the URL where that module is available will not be able to see it or use it.  This basic protection makes it difficult for your users to share the content with anonymous users.
 
 **Note: Tin Can data from an anonymous user session is not stored or available via your reports.**
 
@@ -434,25 +414,21 @@ There are also cases where a site owner might want to turn off content protect
 
 If content protection is enabled globally (in Tin Canny settings), it can be disabled in specific pages and posts from the *Edit Page*or *Edit Post*screen:
 
-![](https://www.uncannyowl.com/wp-content/uploads/2017/10/lesson-topic-level-settings.png)Fig. 2. At the page/post level, you have three options to override the global protection setting.
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/tin-canny-wp-protection-settings-1030x209.png)Tin Canny protection setting
 
 Due to the way the content protection works, if it is disabled globally, protection cannot be enabled at the page/post level and this option is not available.
-
-### Enable Sorting by % Complete
-
-The ability to sort by % Complete requires a very large amount of data be requested from the server, which will fail or cause poor performance on sites with many users. Disable this setting to improve the responsiveness of the reports.
 
 ## Lightbox Settings
 
 These settings enable you to set the default values when embedding content in a lightbox.  These can be overridden at the lesson/topic level.
 
-![](https://www.uncannyowl.com/wp-content/uploads/2026/09/image-2.png)xAPI/SCORM lightbox settings
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/xapi-scorm-lightbox-settings-wordpress.png)Lightbox settings
 
 ## Resetting Data
 
 Tin Canny LearnDash Reporting comes with several functions to reset data.  Use these functions with caution, as the operations are irreversible.
 
-![](https://www.uncannyowl.com/wp-content/uploads/2026/09/image-3.png)Data reset options
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/reset-tin-canny-data-scaled.png)Reset Tin Canny data options
 
 ---
 
@@ -486,7 +462,7 @@ Minimum requirements are:
 We recommend the following for optimal performance:
 
 - PHP 8.0+
-- A WordPress-optimized host such as [WP Engine](https://www.uncannyowl.com/share/wpengine) or [Pressidium](https://www.uncannyowl.com/share/pressidium)
+- A WordPress-optimized host
 - Additional WordPress memory (some times may require 512 MB or more to report on large data sets)
 
 ---
@@ -506,7 +482,7 @@ Access the page at Tin Canny Reporting > Manage Content to:
 - Replace content
 - Delete uploaded content
 
-![](https://www.uncannyowl.com/wp-content/uploads/2026/09/image-1030x687.png)Manage xAPI/SCORM content in WordPress
+![CMS content-management dashboard with an orange 'Upload Content' button, a search box, and a sortable table of modules (ID, Content, Type, Uploaded, Size).](https://www.uncannyowl.com/wp-content/uploads/2026/09/manage-xapi-scorm-content-wordpress.png)#image_title
 
 ### Replacing Content
 
@@ -520,11 +496,13 @@ This process also meant that any completion records tied to the previous module 
 
 However, on the Manage Content page, replacing an existing module is easy. Simply click Replace from the Actions menu:
 
-![](https://www.uncannyowl.com/wp-content/uploads/2025/10/manage-content-replace.png)
+![Screenshot of a module list table with columns: Module ID, Content, Type, Uploaded, Size; action icons (View, Refresh, Delete) on the right.](https://www.uncannyowl.com/wp-content/uploads/2026/09/replace-xapi-scorm-media-wordpress-1030x282.png)#image_title
 
 This launches a dialog that asks what you want to do with data recorded for the existing module.  There are two options:
 
-- **Delete bookmark (resume) data only**:  This option deletes stored the bookmark data that prompts users to resume from where they left off in the module the next time they visit it.  This data must be deleted whenever content is replaced as internal bookmark IDs may have changed, resulting in the existing bookmark data preventing the module from loading properly.
+![](https://www.uncannyowl.com/wp-content/uploads/2026/09/replace-xapi-scorm-media-wordpress-2-1030x687.png)Replace content dialog
+
+- **Delete bookmark (resume) data only:**This option deletes stored the bookmark data that prompts users to resume from where they left off in the module the next time they visit it.  This data must be deleted whenever content is replaced as internal bookmark IDs may have changed, resulting in the existing bookmark data preventing the module from loading properly.
 - **Delete all data**: This option deletes both stored bookmark data and stored xAPI statements (the data shown in the Tin Can and xAPI Quiz reports).
 
 Note that the data is deleted immediately after selecting one of the above two options, even if the actual replacement is cancelled in the following steps.  (This workflow provides a roundabout way to delete all data for a module even if you don’t want to replace it; simply select one of the above options, then cancel the replacement in the following step).
@@ -539,7 +517,7 @@ Once the replacement module has been uploaded, the updated content will appear w
 
 Having some trouble with Tin Canny? Before you file a support ticket, use the **Site Check**tool to quickly diagnose common problems. If you experience issues related to modules not loading, the Mark Complete button not unlocking, or xAPI not being tracked, start with this.
 
-![](https://www.uncannyowl.com/wp-content/uploads/2019/05/site-check-3-steps.png)
+![Dashboard status for Tin Canny xAPI/SCORM WordPress plugin showing HTTP/HTTPS, Permalink, and Endpoint availability checks as Passed, plus Database Check with tables list.](https://www.uncannyowl.com/wp-content/uploads/2026/09/tin-canny-site-check-824x1030.png)#image_title
 
 Using the check is as easy as visiting the **Site Check** tab in the Tin Canny section of /wp-admin/. If you’ve made changes, click the **Re-check** button to validate the new settings.
 
@@ -551,35 +529,208 @@ Anything that doesn’t pass suggests that you will have problems with Tin Canny
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers-3/](https://www.uncannyowl.com/knowledge-base/actions-filters-for-developers-3/)
 
-Tin Canny for WordPress provides the hooks below for advanced developers to use when developing custom functionality that integrates with the plugin.  No support is provided for the use of these filters.
+Tin Canny for WordPress provides the hooks below for advanced developers to use when developing custom functionality that integrates with the plugin. No support is provided for the use of these filters.
 
 ```
 /**
- * Minimum capability required for a logged-in user to view Tin Canny and User reports. Default: manage_options
+ * Minimum capability required to view Tin Canny reports. Default: tincanny_reporting
  */
-add_filter( 'uo_tincanny_reporting_capability', function( $capability ){
-    $capability = 'group_leader';
-   return $capability;
+add_filter( 'uo_tincanny_reporting_capability', function ( $capability ) {
+	$capability = 'edit_pages';
+	return $capability;
 } );
 ```
 
 ```
 /**
- * Minimum capability required for a logged-in user to view Tin Canny and User reports. Default: manage_options
+ * Minimum capability required to retrieve Tin Can / xAPI report data via REST. Default: manage_options
  */
-add_filter( 'tincanny_view_all_reports_permission', function( $capability ){
-   $capability = 'group_leader';
-   return $capability;
+add_filter( 'tincanny_can_get_data', function ( $capability ) {
+	$capability = 'edit_pages';
+	return $capability;
 } );
 ```
 
 ```
 /**
-* Minimum capability required for a logged-in user to view Tin Canny and User reports. Default: manage_options
-*/
-add_filter( 'tincanny_can_get_data', function( $capability ){
-   $capability = 'group_leader';
-   return $capability;
+ * Minimum capability required to open Manage Content. Default: manage_options
+ */
+add_filter( 'tc_manage_content_cap', function ( $capability ) {
+	$capability = 'edit_pages';
+	return $capability;
+} );
+```
+
+```
+/**
+ * Minimum capability required to upload modules. Default: manage_options
+ */
+add_filter( 'tincanny_can_upload_content', function ( $capability ) {
+	$capability = 'edit_pages';
+	return $capability;
+} );
+```
+
+```
+/**
+ * Whether the current user may view front-end report shortcodes.
+ */
+add_filter( 'uo_tincanny_reporting_access_check', function ( $allowed ) {
+	$allowed = current_user_can( 'edit_pages' );
+	return $allowed;
+} );
+```
+
+```
+/**
+ * Whether to process an incoming LRS request. Default: true
+ */
+add_filter( 'tincanny_process_content', function ( $process, $array ) {
+	$process = true;
+	return $process;
+}, 10, 2 );
+```
+
+```
+/**
+ * Whether to write a statement to the reporting table. Default: true
+ */
+add_filter( 'tincanny_module_allow_db_capture', function ( $allow, $report_data ) {
+	if ( ! empty( $report_data['verb'] ) && 'experienced' === $report_data['verb'] ) {
+		$allow = false;
+	}
+	return $allow;
+}, 10, 2 );
+```
+
+```
+/**
+ * Learner name passed into a module.
+ */
+add_filter( 'uo_tincanny_actor_name', function ( $user_name, $user ) {
+	$user_name = 'Learner #' . $user->ID;
+	return $user_name;
+}, 10, 2 );
+```
+
+```
+/**
+ * Learner email passed into a module.
+ */
+add_filter( 'uo_tincanny_actor_mbox', function ( $user_email, $user ) {
+	$user_email = $user->user_email;
+	return $user_email;
+}, 10, 2 );
+```
+
+```
+/**
+ * Fires after a statement is written to the reporting table.
+ */
+add_action( 'tincanny_module_statement_recorded', function ( $report_data ) {
+} );
+```
+
+```
+/**
+ * Fires when a module URL matches /uncanny-snc-wp/{id}/.
+ */
+add_action( 'tincanny_module_completed', function ( $module_id, $user_id, $verb ) {
+	update_user_meta( $user_id, 'tincanny_last_module', $module_id );
+}, 10, 3 );
+```
+
+```
+/**
+ * Fires when a module result is processed.
+ */
+add_action( 'tincanny_module_result_processed', function ( $module_id, $user_id, $result ) {
+}, 10, 3 );
+```
+
+```
+/**
+ * Use scaled score in the xAPI Quiz Report. Default: false
+ */
+add_filter( 'uo_tincanny_data_consider_scaled_score', function ( $consider ) {
+	$consider = true;
+	return $consider;
+} );
+```
+
+```
+/**
+ * Post types in the Tin Can Report dropdown. Default: post, page
+ */
+add_filter( 'uo_tin_can_filter_post_types', function ( $post_types ) {
+	$post_types[] = 'my_cpt';
+	return $post_types;
+} );
+```
+
+```
+/**
+ * Post types used when linking quiz report rows to content. Default: post, page
+ */
+add_filter( 'uo_tincanny_tincan_post_types', function ( $post_types ) {
+	$post_types = array( 'post', 'page' );
+	return $post_types;
+} );
+```
+
+```
+/**
+ * Column labels for the Tin Can Report.
+ */
+add_filter( 'tincan_table_columns', function ( $columns ) {
+	return $columns;
+} );
+```
+
+```
+/**
+ * Visible column labels for the xAPI Quiz Report.
+ */
+add_filter( 'tincan_xapi_table_columns', function ( $columns ) {
+	return $columns;
+} );
+```
+
+```
+/**
+ * Column definitions for the xAPI Quiz Report.
+ */
+add_filter( 'xapi_quiz_table_columns', function ( $columns ) {
+	return $columns;
+} );
+```
+
+```
+/**
+ * GLightbox config. closeOnOutsideClick default: '0'
+ */
+add_filter( 'uo_tincanny_glightbox_config', function ( $config ) {
+	$config['closeOnOutsideClick'] = '0';
+	return $config;
+} );
+```
+
+```
+/**
+ * Public module URL.
+ */
+add_filter( 'tincanny_module_url', function ( $url, $item, $module ) {
+	return $url;
+}, 10, 3 );
+```
+
+```
+/**
+ * Whether to show the Add Tin Canny Content media button. Default: true
+ */
+add_filter( 'uo_display_add_tin_canny_media_button', function ( $show ) {
+	$show = false;
+	return $show;
 } );
 ```
 
