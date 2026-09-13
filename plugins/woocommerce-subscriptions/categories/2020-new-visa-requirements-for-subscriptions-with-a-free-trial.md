@@ -39,11 +39,11 @@ WooCommerce Subscriptions has a feature that allows customers who sign up to fre
 To enable this feature:
 
 1. Go to the **WooCommerce > Settings > Subscriptions** screen.
-2. Scroll down to the **Miscellaneous** section.
-3. Check the option to **Allow $0 initial checkout without a payment method**.
+2. Scroll down to the **Checkout options** section.
+3. Check **Allow $0 initial checkout without a payment method**.
 4. Save.
 
-Learn more about this feature in the [Store Manager Guide](https://woocommerce.com/document/subscriptions/store-manager-guide/#misc-settings).
+Learn more about this feature in the [Store Manager Guide](https://woocommerce.com/document/subscriptions/store-manager-guide/#allow-0-initial-checkout-without-a-payment-method).
 
 ### Express Consent
 

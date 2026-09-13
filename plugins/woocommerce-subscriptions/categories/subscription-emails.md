@@ -20,7 +20,7 @@ WooCommerce Subscriptions includes the following emails:
 - [Failed Payment Retry Emails](#failed-payment-retry-emails)
 - [Subscriptions Status and Switch Emails](#subscription-status-and-switch-emails)
 
-WooCommerce Subscriptions doesn’t have a built-in option to send pre-renewal reminder emails or other custom emails, but many [add-on solutions](#additional-subscription-emails) exist for sending other custom emails related to the subscription lifecycle, like “Upcoming Renewal” reminder emails.
+WooCommerce Subscriptions includes built-in subscription notifications that remind subscribers before a renewal, expiration, or free trial ends — see the [Subscription Notifications guide](https://woocommerce.com/document/subscriptions/subscriptions-notifications/) to enable and customize them. For other custom emails related to the subscription lifecycle, a number of add-on solutions are also available.
 
 ### Renewal order emails
 
@@ -58,7 +58,7 @@ These emails keep shop managers informed about subscriptions being paused, cance
 
 [↑ Back to top](#doc-title)
 
-If you want to send other emails, such as a pre-renewal reminder email before a recurring payment will be processed, there are a variety of solutions that can be used to send additional subscription-related emails:
+Beyond the built-in subscription notifications, you can send additional or more advanced subscription-related emails using these solutions:
 
 - The [AutomateWoo](https://woocommerce.com/products/automatewoo/) extension: with an action to send an email (or SMS), AutomateWoo’s [Subscriptions’ Integration](https://woocommerce.com/document/automatewoo/integrations/#woocommerce-subscriptions) can be used to notify customers on a variety of subscription related events. Learn more in the AutomateWoo documentation on [subscription triggers](https://woocommerce.com/document/automatewoo/triggers/list/#subscriptions).
 - [Metorik](https://metorik.com/): as part of [Engage](https://metorik.com/features/engage), Metorik makes it possible to send many subscription related emails using segmentation. For more information, refer to the documentation on [Engage](https://help.metorik.com/category/57-engage).
@@ -84,15 +84,7 @@ Have problems with email not being received? See the [WooCommerce Email Troubles
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -100,6 +92,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 

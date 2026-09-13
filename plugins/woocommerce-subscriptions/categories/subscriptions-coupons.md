@@ -138,8 +138,7 @@ initial payment + # of renewal payments = active for x payments
 
 . For example, to create a coupon that applies to the initial payment (at checkout) and 2 renewal payments,  enter “3” into the “Active for x payments” field:
 
-![](https://woocommerce.com/wp-content/uploads/2018/10/3paydiscount.png?strip=all&w=704)
-*Edit Coupon Screen – Coupon Limited to Three Payments*
+![](https://woocommerce.com/wp-content/uploads/2018/10/3paydiscount.png?w=980)Edit Coupon Screen – Coupon Limited to Three Payments
 
 This coupon, when used on a subscription product, will then apply to the **initial payment**  + **two**following renewals for a total of **three**payment discounts.
 
@@ -171,9 +170,7 @@ For example, imagine a subscription using a coupon for five payments that has al
 
 When a limited coupon applies to a subscription, it appears on the WooCommerce > Edit Subscription and WooCommerce > Edit Order administration screens like other coupons.
 
-![](https://woocommerce.com/wp-content/uploads/2018/10/3paydiscount2.png?strip=all&w=704)
-
-*Subscription Screen – Limited Coupon*
+![](https://woocommerce.com/wp-content/uploads/2018/10/3paydiscount2.png?strip=all&w=704)*Subscription Screen – Limited Coupon*
 
 ### Coupons List
 
@@ -181,9 +178,7 @@ When a limited coupon applies to a subscription, it appears on the WooCommerce >
 
 On the coupons list table, there is a note that indicates that the coupon is a limited coupon. In the “Usage/Limit” column, a limited coupon will have a note that says “Active for x payments.”
 
-![](https://woocommerce.com/wp-content/uploads/2018/10/3paydiscount1.png?strip=all&w=704)
-
-*Coupons List – Limited Coupon Note*
+![](https://woocommerce.com/wp-content/uploads/2018/10/3paydiscount1.png?strip=all&w=704)*Coupons List – Limited Coupon Note*
 
 ### Automatic Coupon Removal
 
@@ -312,15 +307,7 @@ If an order is refunded by the store manager, then any limited use coupons appli
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -328,6 +315,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 

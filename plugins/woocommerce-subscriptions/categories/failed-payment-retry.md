@@ -23,8 +23,8 @@ For a developer level overview, refer to the [Developer Guide to the Failed Paym
 The retry system is off by default. Follow these instructions to turn it on:
 
 1. Go to: **WooCommerce > Settings > Subscriptions** [settings](https://woocommerce.com/document/subscriptions/store-manager-guide/).
-2. Scroll to the **Miscellaneous** settings section.
-3. Tick the **Enable Automatic Retry**checkbox.
+2. Scroll to the **Payment recovery** card.
+3. Tick the **Enable automatic retry of failed recurring payments** checkbox.
 
 Subscriptions will now automatically retry payments that fail and meet the following requirements:
 

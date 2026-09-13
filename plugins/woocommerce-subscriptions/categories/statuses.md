@@ -30,7 +30,7 @@ In theory, the status also applies when a customer creates a subscription, but i
 
 After the initial subscription payment processes (if it requires payment), the subscription transitions to *Active*.
 
-This status indicates the subscription will [renew](https://woocommerce.com/document/subscriptions/renewal-process/) or expire at a given time in the future. When a subscription is *Active*, the user connected with it receives the [default subscriber role](https://woocommerce.com/document/subscriptions/store-manager-guide/#role-settings) and may gain special access through other extensions, like [WooCommerce Memberships](https://woocommerce.com/products/woocommerce-memberships/). When a subscription is activated, Subscriptions also calculates the next payment date if it’s not already set.
+This status indicates the subscription will [renew](https://woocommerce.com/document/subscriptions/renewal-process/) or expire at a given time in the future. When a subscription is *Active*, the user connected with it receives the [default subscriber role](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscriber-roles) and may gain special access through other extensions, like [WooCommerce Memberships](https://woocommerce.com/products/woocommerce-memberships/). When a subscription is activated, Subscriptions also calculates the next payment date if it’s not already set.
 
 ## On-Hold Subscription Status
 
@@ -48,7 +48,7 @@ When a subscription is*On-Hold*, WooCommerce assigns the user associated with it
 
 When a customer manually cancels a subscription, its status typically does not immediately transition to *Cancelled*. If the subscription has a pre-paid term that has not yet been fulfilled, it’s assigned *Pending-Cancellation*.
 
-During this time, the user associated with the subscription retains the [subscriber role](https://woocommerce.com/document/subscriptions/store-manager-guide/#role-settings) and may still receive special access from other extensions, such as WooCommerce Memberships.
+During this time, the user associated with the subscription retains the [subscriber role](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscriber-roles) and may still receive special access from other extensions, such as WooCommerce Memberships.
 
 When the pre-paid term ends, the subscription’s status transitions to *Cancelled*.
 
@@ -74,15 +74,7 @@ You cannot reactivate subscriptions with the *Expired* status. Customers must [m
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -90,6 +82,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 

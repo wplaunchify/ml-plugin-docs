@@ -21,12 +21,12 @@ Early renewals are an optional feature. It can be enabled or disabled by the sto
 To change the early renewal setting:
 
 1. Go to**WooCommerce > Settings > Subscriptions**
-2. Select the checkbox under “Renewals” labeled “Early Renewal”
+2. Select the checkbox under **Renewals** labeled **Allow early renewal payments**.
 3. To enable, make sure the box is checked. To disable, make sure the box is empty.
 
-![](https://woocommerce.com/wp-content/uploads/2024/07/early-renewal-woocommerce-subscriptions.png?w=980)Early Renewal Setting – Enabled
+![](https://woocommerce.com/wp-content/uploads/2026/07/allow-early-renewal-payments.png?w=720)Early Renewal Setting – Enabled
 
-**Early Renewal via a Modal** – After enabling early renewal payments, a second checkbox will appear that allows you to enable early renewal payments via a modal. Enabling this setting gives users who have automatic renewal payments enabled and a current payment method assigned to their subscription the option to renew in one click from their account area.
+**Early Renewal via My Account** – After enabling early renewal payments, a second checkbox — **Allow early renewal payments via My Account** — appears. Enabling it lets eligible customers renew in one click from their account area, where a modal opens for them to confirm the payment.
 
 Instead of being taken to the checkout to complete their renewal payment, a modal window will appear asking them to confirm their early renewal payment. After confirming the payment, their renewal order will be processed, and a success or failure notification will show in the account area on the same page.
 

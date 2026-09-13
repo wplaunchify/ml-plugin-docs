@@ -158,7 +158,7 @@ Manually adding the $25 / month subscription product as [a line item to the subs
 
 [↑ Back to top](#doc-title)
 
-Using additional plugins, like [AutomateWoo](https://automatewoo.com/) or [All Products for WooCommerce Subscriptions](https://woocommerce.com/products/all-products-for-woocommerce-subscriptions/), it’s also possible for a subscription’s product line items to change over its lifecycle.
+A subscription’s product line items can change over its lifecycle — automatically through [AutomateWoo’](https://woocommerce.com/products/automatewoo/)s Add/Remove Product actions, or when customers add products themselves using the built-in Add to subscription setting.
 
 For example, with AutomateWoo’s [Add/Remove Product actions](https://woocommerce.com/document/automatewoo/actions/subscription-add-remove-product/) it’s possible to setup monthly magazine subscriptions and have a different product and SKU for each month’s magazine included on each month’s renewal order. This is done by creating a workflow which:
 
@@ -170,11 +170,11 @@ While the products on the subscription change, no other subscription details, li
 
 Each month’s magazine also does not need to be a *subscription product*, it can be a simple product available for one-off purchases in your store.
 
-It’s also possible to add a non-subscription product to an existing subscription. For example, a customer could add a different kind of coffee bean to their existing monthly subscription to another type of coffee bean.
+It’s also possible to add a non-subscription product to an existing subscription using the **Add to subscription** setting with **Eligible products** set to **Any product**. For example, a customer could add a different kind of coffee bean to their existing monthly coffee subscription. Products added this way inherit the subscription’s billing schedule.
 
 Again, while the products on the subscription change, no other subscription details, like its billing schedule, will be changed when the new product is added.
 
-![A checkbox that a customer ticks to add a product to an existing subscription when All Products for WooCommerce Subscriptions is installed. Located under the quantity box and add to cart button on the product page.](https://woocommerce.com/wp-content/uploads/2015/09/subscribe-all-the-things-add-to-existing-subscription.png?w=950)All Products for WooCommerce Subscriptions “Add to Existing Subscription” feature
+![A checkbox that a customer ticks to add a product to an existing subscription when All Products for WooCommerce Subscriptions is installed. Located under the quantity box and add to cart button on the product page.](https://woocommerce.com/wp-content/uploads/2015/09/subscribe-all-the-things-add-to-existing-subscription.png?w=950)
 
 ## Questions and support
 

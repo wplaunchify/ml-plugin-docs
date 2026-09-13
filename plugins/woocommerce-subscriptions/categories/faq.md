@@ -65,7 +65,7 @@ There are downsides to this approach, including:
 
 - The subscription price will be displayed as *$0 / month*
 - A renewal order will be generated each month, with a *$0* total for the subscription. This order will be visible to the customer on their My Account page and optionally [emailed to the them](https://woocommerce.com/document/subscriptions/store-manager-guide/#section-22) each month (however, both the My Account and Email templates could be [changed to remove this](https://woocommerce.com/document/template-structure/)). Alternatively, you can also use [our mini plugin to disable renewal emails for ‘free’ ($0) renewals](https://gist.github.com/thenbrent/eec1d7a21e30066f6779).
-- If [customer suspension is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#customer-suspensions) and the customer suspends or cancels a subscription that uses this pricing model, they may not receive items for which they have already paid.
+- If [customer suspension is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#suspensions) and the customer suspends or cancels a subscription that uses this pricing model, they may not receive items for which they have already paid.
 - You may need to [hide the Cancel](https://woocommerce.com/document/subscriptions/develop/remove-an-action-button/) button on the **My Subscriptions** table because if the customer cancels the subscription before the end of the term, no renewal orders will be generated, despite the customer already having paid for those renewals.
 
 Furthermore, there is no method for having a recurring billing schedule that differs to the recurring shipping schedule (for example, a subscription which charges $50 every 3 months but ships every month).
@@ -368,14 +368,14 @@ The
 'scheduled_subscription_end_of_prepaid_term'
 ```
 
- hook accounts for that prepaid term. It is used by Subscriptions to assign the customer with [the default cancelled role](https://woocommerce.com/document/subscriptions/store-manager-guide/#role-settings) at the end of the prepaid term (if the customer does not have any other subscriptions). Other plugins like [Groups](https://woocommerce.com/products/groups-woocommerce/) also use it to allow access to memberships and other virtual products until the end of the term for which the customer has already paid.
+ hook accounts for that prepaid term. It is used by Subscriptions to assign the customer with [the default cancelled role](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscriber-roles) at the end of the prepaid term (if the customer does not have any other subscriptions). Other plugins like [Groups](https://woocommerce.com/products/groups-woocommerce/) also use it to allow access to memberships and other virtual products until the end of the term for which the customer has already paid.
 
 For example, a customer purchases a monthly subscription on the 15th March. On the 25th of March, they then cancel the subscription. The subscription is cancelled immediately, but they have prepaid for one month of access, until the 15th April. Therefore, the 
 ```
 'scheduled_subscription_end_of_prepaid_term'
 ```
 
- hook will be scheduled to run on the 15th of April. When that day arrives, the customer’s role will be changed to the [the default cancelled role](https://woocommerce.com/document/subscriptions/store-manager-guide/#role-settings) and any other plugins can change the customer’s status as required.
+ hook will be scheduled to run on the 15th of April. When that day arrives, the customer’s role will be changed to the [the default cancelled role](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscriber-roles) and any other plugins can change the customer’s status as required.
 
 ### Why are my customers being charged twice when a subscription renews?
 
@@ -741,15 +741,7 @@ ipn
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -757,6 +749,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 

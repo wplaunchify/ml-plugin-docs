@@ -49,7 +49,7 @@ With automatic payments, Subscriptions charges recurring payments without needin
 
 For a payment gateway extension to provide automatic payments, the extension developer must [integrate their extension with Subscriptions](https://woocommerce.com/document/payment-gateway-integration-guide/). You can find a current list of payment gateways that support automatic payments at [Subscription Payment Gateways](https://woocommerce.com/document/payment-gateways/). The [Payment Gateways section](https://woocommerce.com/document/subscriptions/store-manager-guide/#payment-gateway-settings)of Subscriptions’ Settings on your site also lists payment gateways that support automatic recurring payments.
 
-Automatic payments are **on** by default. To turn *off* automatic payments, tick the [Turn Off Automatic Payments](https://woocommerce.com/document/store-manager-guide/#turn-off-automatic-payments) checkbox at Subscriptions settings.
+Automatic payments are **on** by default. To turn off automatic payments, enable****[Allow manual renewals at checkout](https://woocommerce.com/document/subscriptions/store-manager-guide/#allow-manual-renewals-at-checkout)**,** then tick the **Turn off automatic payments** checkbox that appears in the Subscriptions settings.
 
 ## Manual Recurring Payments
 
@@ -63,7 +63,7 @@ The manual renewal payment process uses the standard WooCommerce checkout flow. 
 
 When a subscription accepts manual renewal payments, the customer can choose a *different* payment method for *each* renewal payment. Any payment method active on your store is available for use as an option. We don’t recommend manual renewal payments for subscriptions that renew frequently (more than once per year) because they require customers to take action to continue their subscriptions; this could result in fewer customers renewing since it requires an additional step.
 
-Manual renewal payments are off by default. To accept manual payments, you must enable *Accept Manual Renewals*.
+Manual renewal payments are off by default. To accept manual payments, you must [allow manual renewals at checkout.](https://woocommerce.com/document/subscriptions/store-manager-guide/#allow-manual-renewals-at-checkout)
 
 You can also decide whether to send the customer an email to remind them to log into the store and make the renewal payment by enabling or disabling the **Customer Renewal Invoice** email.
 
@@ -93,7 +93,7 @@ The recurring payment process is complex. The flowchart below maps out the most 
 
 [↑ Back to top](#doc-title)
 
-The **early renewal** process is a sort of hybrid of manual and automatic renewal processes. While Subscriptions offers early renewal on both automatic and manual renewal subscriptions, once the process begins, the customer either needs to go [through the checkout process or pay via an early renewal modal](https://woocommerce.com/document/subscriptions/store-manager-guide/#early-renewal). Doing this, however, does not change an automatic renewal to manual or vice versa. You can read more about the specifics in the [Early Renewal Guide](https://woocommerce.com/document/subscriptions/early-renewal/).
+The **early renewal** process is a sort of hybrid of manual and automatic renewal processes. While Subscriptions offers early renewal on both automatic and manual renewal subscriptions, once the process begins, the customer either needs to go [through the checkout process or pay via an early renewal modal](https://woocommerce.com/document/subscriptions/store-manager-guide/#allow-early-renewal-payments). Doing this, however, does not change an automatic renewal to manual or vice versa. You can read more about the specifics in the [Early Renewal Guide](https://woocommerce.com/document/subscriptions/early-renewal/).
 
 ### How Subscriptions calculates the next payment date
 
@@ -101,7 +101,7 @@ The **early renewal** process is a sort of hybrid of manual and automatic renewa
 
 In general, Subscriptions calculates the next renewal date based on the last payment date, not the scheduled date. For example, if a customer pays a late renewal on March 3rd, Subscriptions sets the next renewal for April 3rd. This is to ensure the subscriber receives access to the subscription for the full period of each renewal.
 
-However, for [subscription products with aligned billing dates](https://woocommerce.com/document/subscriptions/billing-date-alignment), Subscriptions **maintains** the scheduled date regardless of late payments. If a subscription synchronized to the 1st of each month has a late payment on March 3rd, Subscriptions still sets the next renewal for April 1st. **This approach preserves aligned billing dates across all subscribers.**
+However, for [subscription products with aligned billing dates](https://woocommerce.com/document/subscriptions/billing-date-alignment), Subscriptions **maintains** the scheduled date regardless of late payments. If a subscription **aligned** to the 1st of each month has a late payment on March 3rd, Subscriptions still sets the next renewal for April 1st. **This approach preserves aligned billing dates across all subscribers.**
 
 To **always** calculate the next payment date from the last scheduled payment date (regardless of whether the subscription uses billing date alignment or not), either install the free [WooCommerce Subscriptions – Preserve Billing Schedule](https://github.com/Prospress/woocommerce-subscriptions-preserve-billing-schedule) plugin or add the [following snippet](https://woocommerce.com/document/customizing-woocommerce-best-practices/#section-4):
 
@@ -151,7 +151,7 @@ If you add any additional [custom fields to the subscription manually](https://w
 
 [↑ Back to top](#doc-title)
 
-When you deactivate the payment gateway plugin/extension currently handling automatic recurring payments for subscriptions, the subscriptions using that payment method will switch to Manual Renewal. The following explains what happens regardless of whether you have enabled **Accept Manual Renewals** or not under the Subscription setting:
+When you deactivate the payment gateway plugin/extension currently handling automatic recurring payments for subscriptions, the subscriptions using that payment method will switch to Manual Renewal. The following explains what happens regardless of whether you have enabled **Allow manual renewals at checkout** or not under the Subscription settings:
 
 Once you deactivate the payment plugin/extension (under **Plugins** in WordPress Admin):
 
@@ -200,7 +200,7 @@ When paying for a failed renewal order, Subscriptions displays only gateways tha
 
 [↑ Back to top](#doc-title)
 
-WooCommerce Subscriptions provides an automatic retry system for failed (automatic) recurring payments. You can [activate this](https://woocommerce.com/document/subscriptions/store-manager-guide/#retry-failed-payments) to retry payments multiple times and email customers to complete the payment. For more details, see [Failed Recurring Payment Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/). This differs from the [default approach](https://woocommerce.com/document/subscriptions/renewal-process/#failed-payment-handling) when a customer would receive an email and need to take action to renew their subscription.
+WooCommerce Subscriptions provides an automatic retry system for failed (automatic) recurring payments. You can [activate this](https://woocommerce.com/document/subscriptions/store-manager-guide/#payment-recovery) to retry payments multiple times and email customers to complete the payment. For more details, see [Failed Recurring Payment Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/). This differs from the [default approach](https://woocommerce.com/document/subscriptions/renewal-process/#failed-payment-handling) when a customer would receive an email and need to take action to renew their subscription.
 
 Theflowchartt outlines how this process works:
 
@@ -254,7 +254,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 # Turning Automatic Renewals On/Off
 
-			WooCommerce Subscriptions includes an optional feature, the *auto renewal toggle*, that allows stores to accept both[manual and automatic payments](https://woocommerce.com/document/subscriptions/store-manager-guide/#renewal-settings) for subscriptions.  When activated, it lets your customers switch between automatic and manual renewals whenever they choose.
+			WooCommerce Subscriptions includes an optional feature, the *auto renewal toggle*, that allows stores to accept both[manual and automatic payments](https://woocommerce.com/document/subscriptions/store-manager-guide/#renewals) for subscriptions. When activated, it lets your customers switch between automatic and manual renewals whenever they choose.
 
 ## Activating the Auto Renewal Toggle
 
@@ -264,10 +264,10 @@ By default, the auto-renewal toggle is not turned on in the Subscriptions settin
 
 1. **Go** to the **WooCommerce > Settings > Subscriptions** screen.
 2. **Scroll** down to the *Renewals* section.
-3. **Check** the option to *Display the auto renewal toggle*.
+3. Check the option to **Allow subscribers to change their renewal mode via My Account**.
 4. Save.
 
-![](https://woocommerce.com/wp-content/uploads/2019/02/2-5_4_features_settings.png?strip=all&w=704)*Auto Renewal Toggle Setting – Activated*
+![](https://woocommerce.com/wp-content/uploads/2026/07/renewal-mode-my-account.png?w=720)*Allow subscribers to change their renewal mode via My Account – Activated*
 
 Enabling this feature will display an auto-renew toggle on the customer’s  **View Subscription**page. Clicking the toggle will switch their subscription between manual and automatic renewals.
 
@@ -300,15 +300,7 @@ Sudden changes in renewal methods on all subscriptions are an indication that th
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -316,6 +308,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -325,358 +325,743 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 # Minimum Periods for WooCommerce Subscriptions
 
-			**Big News!** 🎉 Coming soon in [Elementor Connector:](https://woocommerce.com/products/elementor-connector/) Unlock the **Minimum Periods for WooCommerce Subscriptions** Elementor widget! Show subscription minimum periods in Elementor anywhere you’d like.
+			[Minimum Periods for WooCommerce Subscriptions](https://woocommerce.com/products/minimum-periods-for-woocommerce-subscriptions/) holds subscribers to a commitment before they can cancel. You set the number of paid periods required, and the Cancel button stays hidden on the customer’s account page until they get there. You can set that number once for the whole store, per product, or per subscription plan.
 
-## Overview of Minimum Periods
-
-[↑ Back to top](#doc-title)
-
-[Minimum Periods for WooCommerce Subscriptions](https://woocommerce.com/products/minimum-periods-for-woocommerce-subscriptions) is an extension for WooCommerce that allows shop owners & administrators to restrict the display of the “Cancel” button for active subscriptions on the customer’s account page. Shop owners & administrators can provide access to that button by configuring the number of minimum payments/renewals that should be made before the “Cancel” button is available.
-
-## Installation
+## Overview
 
 [↑ Back to top](#doc-title)
 
-Once you’ve [purchased Minimum Periods for WooCommerce Subscriptions](https://woocommerce.com/products/minimum-periods-for-woocommerce-subscriptions), you can download the plugin from your confirmation email or [WooCommerce account](https://woocommerce.com/my-account/downloads/). To install it, follow these steps:
+**Minimum Periods for WooCommerce Subscriptions** requires a subscriber to pay for a set number of billing periods before the Cancel button appears on their My Account subscription page. The initial order counts as the first paid period, so a value of 2 means the subscription has to renew once before the customer can cancel. You set a store-wide default, and you can override it on an individual product, on an individual variation, or on an individual subscription plan. Optional display settings show the minimum period to customers on the product page, in the cart and checkout, on the account page, and in order emails.
 
-1. Go to **Plugins > Add New > Upload**
-2. Select the ZIP file you just downloaded
-3. Click Install Now, and then Activate
-
-Once you’ve installed and activated the plugin, navigate to **WooCommerce > Settings > SubScriptions > Cancelling** to configure the plugin.
-
-More information at: [Installing and Managing Plugins](https://wordpress.org/support/article/managing-plugins/#installing-plugins).
-
----
-
-## Setup and Configuration
+## Requirements
 
 [↑ Back to top](#doc-title)
 
-### Storewide Settings
+Before you install, check that your store meets these:
 
-[↑ Back to top](#doc-title)
+- WordPress 6.5 or higher.
+- PHP 7.4 or higher.
+- WooCommerce 9.0 or higher.
+- WooCommerce Subscriptions, active. Both WooCommerce and WooCommerce Subscriptions are declared as required plugins, so WordPress will not let you activate this extension without them.
 
-![](https://woocommerce.com/wp-content/uploads/2023/11/mpws-ss1.png?strip=all&w=704)
+Two features have extra requirements:
 
-To configure minimum periods for *all* subscriptions products, navigate to **WooCommerce > Settings > SubScriptions > Cancelling**:
+- Per-plan minimum periods need WooCommerce Subscriptions 9.0 or higher, which is where subscription plans were introduced. On earlier versions everything else works as normal, store-wide and per product.
+- The AI assistant abilities need WordPress 6.9 or higher (for the Abilities API) plus a separate plugin that exposes abilities to an assistant.
 
-- **Enable Cancelling:** Enable to allow customers to cancel their active subscriptions. Disabling this means that no subscription on your website can be cancelled.
-- **Minimum Period(s):** Set the minimum number payments/terms (also known as payments) that a customer needs to have completed *before* the cancellation button is visible in the account page on the front-end. A payment is counted when the order status is set to 
-```
-Completed
-```
-
-.
-- **Show in Product Pages**: Enable to show the number of periods/terms that need to be completed before cancellation is possible. This section will show above the add-to-cart button on the single product page.
-- **Show in Cart/Checkout**: Enable to show the number of periods/terms that need to be completed as part of the subscription meta. This section will show as line-item meta information on the cart and checkout page.
-- **Show Paid Periods:** Enable to show the number of paid periods/terms that have already been completed. This field will only be shown on the my-account page for your customer.
-- **Show in Account Page:**Enable to show the number of periods/terms that need to be completed before cancellation is possible. This field will only be shown on the my-account page for your customer.
-- **Show as Subscription Meta:**Enable to show the number of periods/terms that need to be completed as part of the subscription meta. This field will be shown on the checkout confirmation page, on the my-account page and in the order-confirmation emails.
-
-Setting the number of **Minimum Period(s)** to 
-```
-0
-```
-
- will result in customers being able to cancel their subscriptions immediately.
-
-### Per Subscription Settings
-
-[↑ Back to top](#doc-title)
-
-![Minimum period settings on a per-subscription product basis.](https://woocommerce.com/wp-content/uploads/2020/08/mp-screenshot-2.png?strip=all&w=704)
-
-To configure minimum periods on a *per-product* basis, navigate to **Products > All Products > Your Subscription Product > Product Data > General > Cancelling:**
-
-1. Select **Override storewide settings** to overide the default store settings outlined in the previous section
-2. Enter the number of **Minimum Period(s)** (also known as payments) that a customer needs to have completed for **this subscription****product** *before* the cancellation button is visible in the account page on the front-end.
-
-### Per Variable Subscription Settings
-
-[↑ Back to top](#doc-title)
-
-![](https://woocommerce.com/wp-content/uploads/2020/08/mp-screenshot-3-1.png?strip=all&w=704)
-
-Since version 1.1, minimum periods can also be configured on a per variable subscription basis. To configure minimum periods *per variation*, navigate to **Products > All Products > Your Subscription Product > Product Data > Variations > Your Variation Cancelling:**
-
-1. Select **Override storewide settings** to overide the default store settings outlined in the previous section
-2. Enter the number of **Minimum Period(s)** that a customer needs to have completed for **this variation** *before* the cancellation button is visible in the account page on the front-end.
-
----
+The extension declares compatibility with High Performance Order Storage (HPOS) and with the cart and checkout blocks, so you do not need to turn either off.
 
 ## Usage
 
 [↑ Back to top](#doc-title)
 
-On the customer’s account page under **My-Account > Subscriptions**, the customer will see the “Cancel” button if any of the following conditions are met:
+Everything is configured in three places: a store-wide section in the Subscriptions settings, a per-product field on the product edit screen, and a per-plan field inside the subscription plan dialog. The store-wide section is where you start, because it also carries the switches that turn everything else on.
 
-1. The **Allow Cancelling** checkbox is selected under **WooCommerce > Settings > SubScriptions > Cancelling**
-2. The **Minimum Period(s)**have been reached as configured in either the storewide settings or on the per-product settings
-
-![](https://woocommerce.com/wp-content/uploads/2020/08/mp-screenshot-4a.png?strip=all&w=704)
-
-In instances where the **Allow Cancelling** checkbox is *not* selected or the **Minimum Periods** have *not* been reached, customers will only see the details of the subscription without having an option to cancel.
-
-![Hiding the cancel button when minimum periods have not been reached.](https://woocommerce.com/wp-content/uploads/2020/08/mp-screenshot-3.png?strip=all&w=704)
-
----
-
-## Shortcodes
+### Store-wide settings
 
 [↑ Back to top](#doc-title)
 
-**Minimum Periods for WooCommerce Subscriptions** provides two powerful shortcodes that allow you to display minimum period information anywhere on your website. Below are the details and usage instructions for each shortcode.
+Go to **WooCommerce > Settings > Subscriptions** and scroll to the **Cancelling** section. You can also get there with the Settings link next to the extension on the Plugins screen.
 
-### 1. [mpws_minimum_period]
+![](https://woocommerce.com/wp-content/uploads/2020/08/01-storewide-cancelling-settings.png?w=980)
+
+**Enable Cancelling** controls whether subscribers can cancel at all. It is on by default. Turn it off and the Cancel button never appears, no matter how many periods have been paid. Turning it off also hides the rest of the settings in this section, removes the Cancelling fields from your product screens, removes the Min. Period column from the Products list, and stops every customer-facing message this extension adds. The Suspend button is not affected by this setting.
+
+**Default Minimum Period(s)** is the number of paid periods required before a subscriber can cancel, counting the initial order as the first. The default is 1, which means the customer can cancel straight away. Set it to 2 to require one renewal, 3 to require two, and so on. This value applies to every subscription product that does not set its own, and to every subscription plan that follows the product or the store.
+
+The remaining settings are display toggles. All of them are off by default, and none of them changes when a customer can cancel. They only decide where the number is shown.
+
+**Show Paid Periods** adds a row to the subscription details on My Account listing how many periods the customer has paid, per product. The row only appears for products that actually have a minimum period above zero.
+
+**Show in Product Pages** shows the minimum period on the single product page. For a subscription product it appears above the Add to cart button. For a product sold on subscription plans it appears next to each plan option instead, so the customer sees the commitment attached to the plan they are choosing.
+
+![](https://woocommerce.com/wp-content/uploads/2020/08/07-product-page-minimum-period.png?w=980)
+
+**Show in Cart/Checkout** shows the minimum period as line item data in the cart and at checkout. For a product sold on plans, the value shown is the one for the plan the customer selected. A one-time purchase shows nothing, because there is no subscription to cancel.
+
+![](https://woocommerce.com/wp-content/uploads/2020/08/09-cart-minimum-period.png?w=980)
+
+**Show in Account Page** adds a row to the subscription details on My Account showing the minimum period configured for that subscription, per product.
+
+![](https://woocommerce.com/wp-content/uploads/2020/08/10-my-account-subscription.png?w=980)
+
+**Show as Subscription Meta** shows the minimum period as order line item meta. That covers order confirmation emails, the order received page after checkout, and order details on the account page.
+
+![](https://woocommerce.com/wp-content/uploads/2020/08/11-order-details-minimum-period.png?w=980)
+
+**Link Suspensions** applies the same rule to the Suspend button that governs the Cancel button. Leave it off and customers can suspend whenever WooCommerce Subscriptions normally allows. Turn it on and the Suspend button stays hidden until the minimum period is met.
+
+Link Suspensions only matters if WooCommerce Subscriptions’ own Customer Suspensions setting is 1 or more. If that is set to zero, the Suspend button never appears in the first place.
+
+### Per-product settings
 
 [↑ Back to top](#doc-title)
 
-This shortcode displays the minimum number of periods/terms that need to be completed before a customer can cancel their subscription. This shortcode is versatile and can be used on any page or post to inform customers about the cancellation policy.
+Open a product and look on the General tab of the Product data panel for the Cancelling field. It appears for simple, variable, subscription, and variable subscription products, as long as Enable Cancelling is on store-wide.
 
-**Attributes:**
+![](https://woocommerce.com/wp-content/uploads/2020/08/02-product-cancelling-fields.png?w=980)
 
-- ```
-id
-```
+**Cancelling** has two options. Use storewide settings means this product follows the store-wide Default Minimum Period(s). Override storewide settings means this product sets its own number.
 
- (optional):
-- **Description:** The Product ID or Variation ID for which you want to display the minimum period.
-- **Default:** If not provided, and the shortcode is used on a product page, it will automatically use the current product’s ID.
-- **Example:** 
-```
-id="123"
-```
+**Minimum Period(s)** only appears once you choose Override storewide settings. Enter the number of paid periods required for this product, counting the initial order as the first. Zero means the customer can cancel immediately, which is a useful way to exempt one product from a store-wide commitment.
 
- or 
-```
-id="456"
-```
+If the product uses its own custom subscription plans, a note appears under these fields reminding you that each plan can set its own minimum period, and that plans set to follow the product use the value here.
 
-**Usage Examples:**
+### Per-variation settings
 
-1. **Basic Usage (Within a Product Page):**If you place the shortcode on a product page without specifying an ID, it will automatically display the minimum period for that product. 
+[↑ Back to top](#doc-title)
+
+For a variable subscription product, each variation has its own Cancelling and Minimum Period(s) fields under the variation’s pricing options. They work exactly like the product-level ones.
+
+![](https://woocommerce.com/wp-content/uploads/2020/08/03-variation-cancelling-fields.png?w=980)
+
+A variation that does not set its own value falls back to the parent product, and then to the store-wide default.
+
+### Per-plan settings
+
+[↑ Back to top](#doc-title)
+
+If your store runs WooCommerce Subscriptions 9.0 or higher, you can set a minimum period on an individual subscription plan. Use the same dialog you use to add or edit the plan: on the product’s Subscriptions tab for a product’s own plans, or under WooCommerce > Settings > Subscriptions for store-wide plans.
+
+![](https://woocommerce.com/wp-content/uploads/2020/08/04-plan-dialog-minimum-period.png?w=980)
+
+**Minimum period** has two options. Use product / storewide setting means the plan takes the product’s value, and then the store-wide default. Set for this plan reveals a number field where you enter the paid periods required for this plan alone.
+
+The plans table gains a read-only Min. period column. It shows a number for plans that set their own value, and a dash for plans that follow the product or the store.
+
+![](https://woocommerce.com/wp-content/uploads/2020/08/05-plans-table-min-period-column.png?w=980)
+
+### Which value applies
+
+[↑ Back to top](#doc-title)
+
+When several levels are set, the most specific one wins:
+
+1. The subscription plan’s own value, if the plan is set to override.
+2. Otherwise the product’s own value, if the product is set to override. A variation with nothing of its own uses its parent’s.
+3. Otherwise the store-wide Default Minimum Period(s).
+
+Nothing is blended. Whichever level supplies the value supplies it in full.
+
+Two rules apply on top of that. If a subscription contains more than one product, the largest minimum period among them is the one that gates the buttons. And while a subscription is still inside its free trial, the minimum period counts as met, so a customer in a trial can still cancel.
+
+### The Min. Period column
+
+[↑ Back to top](#doc-title)
+
+Products > All Products gains a Min. Period column just after Price, so you can see your commitments at a glance without opening each product.
+
+![](https://woocommerce.com/wp-content/uploads/2020/08/06-products-list-min-period-column.png?w=980)
+
+What it shows depends on the product:
+
+- A product sold on subscription plans shows the effective minimum across its plans, as a single number when they all agree and as a range when they do not.
+- A variable or variable subscription product shows the smallest minimum among its variations.
+- Any other subscription product shows the number that applies to it.
+
+The column is empty for products that are not sold on subscription, and the whole column disappears if you turn Enable Cancelling off.
+
+### Shortcodes
+
+[↑ Back to top](#doc-title)
+
+Two shortcodes let you place the minimum period in your own content, such as a landing page or a custom product template.
+
 ```
 [mpws_minimum_period]
 ```
-2. **Specifying a Product ID:**To display the minimum period for a specific product, provide the 
+
+ outputs the minimum period for a single product, in the same markup used above the Add to cart button. Add an 
 ```
 id
 ```
 
- attribute. 
+ attribute to name a product, as in 
 ```
 [mpws_minimum_period id="123"]
 ```
-3. **Specifying a Variation ID:**For variable subscriptions, you can specify a variation ID. 
-```
-[mpws_minimum_period id="456"]
-```
 
-### 2. [mpws_minimum_period_table]
+, or leave it off on a single product page to use the product being viewed. It outputs nothing for variable products and nothing while Enable Cancelling is off.
 
-[↑ Back to top](#doc-title)
-
-This shortcode displays a table of subscription variations along with their respective minimum periods. This is especially useful for variable subscription products where each variation may have different minimum period requirements
-
-**Attributes:**
-
-- ```
-id
-```
-
- (optional):
-- **Description:** The Product ID for which you want to display the variations table.
-- **Default:** If not provided, and the shortcode is used on a product page, it will automatically use the current product’s ID.
-- **Example:** 
-```
-id="123"
-```
-
-**Usage Examples:**
-
-1. **Basic Usage (Within a Variable Subscription Product Page):** If you place the shortcode on a variable subscription product page without specifying an ID, it will automatically display the variations table for that product. 
 ```
 [mpws_minimum_period_table]
 ```
-2. **Specifying a Product ID:**To display the variations table for a specific product, provide the 
+
+ outputs a two-column table. For a product sold on subscription plans, the rows are the plans. For a variable product, the rows are the variations. For a simple subscription product, there is one row. It accepts the same 
 ```
 id
 ```
 
  attribute.
-```
-[mpws_minimum_period_table id="123"]
-```
 
-**Notes:**
+## Use cases
 
-- The 
+[↑ Back to top](#doc-title)
+
+**A gym membership with a three-month commitment.** Set Default Minimum Period(s) to 3 under WooCommerce > Settings > Subscriptions. Every monthly membership product now requires the initial payment plus two renewals before the Cancel button appears. Turn on Show in Product Pages and Show as Subscription Meta so the commitment is visible before purchase and repeated in the confirmation email.
+
+**A box subscription where the annual plan is cheaper because it commits.** On a product sold with a monthly plan and an annual plan, open each plan in the plan dialog. Set the monthly plan’s Minimum period to Set for this plan with a value of 1, so monthly subscribers can leave at any time. Set the annual plan to Set for this plan with a value of 2. Turn on Show in Product Pages so the difference shows next to each option while the customer chooses.
+
+**One free product in a store that otherwise commits.** Keep the store-wide default at 3, then open the free trial product and set Cancelling to Override storewide settings with Minimum Period(s) of 0. That product can be cancelled immediately while everything else keeps its commitment.
+
+**Tiers with different commitments on a variable subscription.** On a variable subscription with Basic, Plus, and Pro variations, set Cancelling to Override storewide settings on each variation and give Basic 1, Plus 3, and Pro 6. Add 
 ```
 [mpws_minimum_period_table]
 ```
 
- shortcode is primarily designed for **Variable Subscription** products. If used with a **Simple Subscription** product, it will display the minimum period for that single product.
-- Ensure that the product ID or variation ID provided in the shortcode corresponds to a valid subscription product to avoid empty outputs.
+ to the product description so customers can compare the commitments in one place.
 
----
+**Stopping subscribers from parking a subscription instead of paying it.** Set your minimum period as usual, then turn on Link Suspensions. Customers now see neither Cancel nor Suspend until they have paid the required periods, which closes the gap where someone suspends a subscription to avoid the commitment. Check that WooCommerce Subscriptions’ Customer Suspensions setting is 1 or more, or the Suspend button was never there to begin with.
 
-## Frequently Asked Questions
+## FAQ
 
 [↑ Back to top](#doc-title)
 
-#### Will the cancel button be hidden immediately upon activation of the extension?
+**Does the initial order count toward the minimum period?**
 
-Yes – As soon as the extension is activated, the “Cancel” button will be hidden on the customer’s account page on the front-end.
+Yes. The first payment is the first period. If you want a customer to renew once before they can cancel, set the minimum period to 2.
 
----
+**Which value applies if I set more than one?**
 
-#### How are minimum periods calculated?
+The most specific one. A subscription plan’s own value wins. If the plan follows the product, the product’s own value is used. If the product does not set one either, the store-wide default applies.
 
-Minimum periods are based on the number of completed orders that have been placed (a new order is created for each renewal). This also includes the initial order of the subscription product. As an example: If a subscription can only be cancelled after the **first renewal**, the minimum period to set is 
+**Where do I set a minimum period for a subscription plan?**
+
+In the same dialog you use to add or edit the plan: on the product’s Subscriptions tab for a product’s own plans, or under WooCommerce > Settings > Subscriptions for store-wide plans. This needs WooCommerce Subscriptions 9.0 or higher.
+
+**Can I configure minimum periods for variable subscription products?**
+
+Yes. Each variation has its own Cancelling fields under the variation’s pricing options. A variation with nothing set follows the parent product, and then the store-wide default.
+
+**What happens if a customer buys a subscription-plan product as a one-time purchase?**
+
+Nothing. There is no subscription to cancel, so no minimum period is shown in the cart, at checkout, or on the order.
+
+**Will this affect subscriptions that already exist when I activate the extension?**
+
+Yes. The check counts the payments a subscription has already completed, so existing subscriptions are measured against the minimum period you set, just like new ones. A subscription that has already paid enough periods is unaffected.
+
+**What happens during a free trial?**
+
+The minimum period counts as met while the subscription is still in its trial, so a customer can cancel during the trial. Once the trial ends, the normal rule applies.
+
+**What if a subscription contains several products with different minimums?**
+
+The largest minimum among them applies to the whole subscription.
+
+**Does turning off Enable Cancelling remove the minimum periods I set?**
+
+No. The values stay on your products and plans. The setting simply hides the Cancel button for everyone and hides the extension’s fields and messages while it is off. Turn it back on and everything reappears as it was.
+
+**Does hiding the Cancel button stop me from cancelling a subscription as the store owner?**
+
+No. This affects the customer-facing My Account page only. You can still cancel or change any subscription from WP Admin.
+
+**Can I read or change minimum periods from an AI assistant?**
+
+Yes. The extension registers abilities with the WordPress Abilities API on WordPress 6.9 or higher, covering the store-wide settings, per-product and per-plan values, and whether a given subscription may be cancelled yet. Any plugin that consumes the Abilities API can expose them, and which of them an assistant may actually use is controlled in that plugin, not here. Every ability requires the 
 ```
-2
+manage_woocommerce
 ```
 
-. This includes the original order *and* the first renewal.
+ capability.
 
----
+**Does uninstalling remove my settings?**
 
-#### Can I configure minimum periods for variable subscriptions?
+No. The extension leaves its options and product meta in place when you delete it, so reinstalling picks up where you left off.
 
-Yes – Since version 1.1, minimum periods can be configured for both simple subscriptions and variable subscriptions.
+Version 3.0.0 made edge cases behave consistently across every screen. A product with no Cancelling setting now follows the store-wide minimum everywhere, a missing store-wide option falls back to the settings-screen defaults of cancelling enabled and 1 period, and Link Suspensions uses the same rule as cancelling. If your store relied on a screen-specific quirk before, review your settings after updating.
 
----
+## Developer documentation
 
-#### Is it legal to hide a subscription cancellation button?
+[↑ Back to top](#doc-title)
 
-This varies between countries. Before disabling the “Cancel” button, we recommend discussing potential implications with a legal professional.
-
----
-
-#### Will minimum periods apply to current subscriptions or only to new subscriptions?
-
-It will apply to all current and future active subscriptions. Deactivating the extension also means that the cancellation button will be visible for all subscriptions.
-
----
-
-#### Does minimum periods disable the “Suspend” button as well?
-
-No – At the moment, Minimum Periods for WooCommerce Subscriptions will only remove the “Cancel” button. To hide the “Suspend” button for all subscription products, configure the settings under *WooCommerce > Settings > Subscriptions > Customer Suspensions* to 
+Resolution logic lives in 
 ```
-0
+Minimum_Periods_For_Woocommerce_Subscriptions_Resolver
+```
+
+. Its static methods are the single source of truth for both the admin screens and the customer-facing hooks, so extensions should call them rather than reading meta directly.
+
+Key methods: 
+```
+Resolver::get_storewide_settings()
+```
+
+ returns the typed settings array, 
+```
+Resolver::resolve_minimum_periods( $product, $plan, $storewide )
+```
+
+ returns the effective value plus the level that supplied it, and 
+```
+Resolver::evaluate_subscription( $subscription )
+```
+
+ returns the full evaluation of one subscription, including 
+```
+payment_count
+```
+
+, 
+```
+minimum_periods
+```
+
+, 
+```
+remaining_periods
+```
+
+, 
+```
+minimum_period_met
+```
+
+, 
+```
+in_free_trial
+```
+
+, 
+```
+can_cancel
+```
+
+, and 
+```
+can_suspend
 ```
 
 .
 
----
+### Filter hooks
 
-#### Can customers cancel during a free trial?
-
-Yes – Free trials by their very nature mean that no payments have taken place yet and that they’ll only have the product for a trial period (unless cancelled or the subscription is processed). During the trial period, subscriptions can be cancelled regardless of the minimum period that is configured.
-
----
-
-#### Is it possible to show the number of paid terms/periods on the my-account page?
-
-Yes – Version 1.4 allows store owners/manager to configure settings under **WooCommerce > Settings > Subscriptions > Cancelling > Show Paid Periods** to optionally display the number if paid terms/periods on the my-account page. If enabled, the my-account page will look as follows:
-
-![](https://woocommerce.com/wp-content/uploads/2020/08/mp-screenshot-faq-1.png?strip=all&w=704)
-
----
-
-#### Is it possible to show the minimum terms/periods for the subscription on the my-account page?
-
-Yes – Version 1.4 allows store owners/manager to configure settings under **WooCommerce > Settings > Subscriptions > Cancelling > Show in Account Page** to optionally display the number if minimum periods on the my-account page.
-
-When configured correctly, the subscription overview on the front-end under the my-account page will appear as follows:
-
-![](https://woocommerce.com/wp-content/uploads/2020/08/mp-screenshot-faq-2.png?strip=all&w=704)
-
----
-
-#### Is it possible to show the minium terms/periods for the subscription on order confirmation emails?
-
-Yes – Version 1.5 allows store owners/managers to configure settings under **WooCommerce > Settings > Subscriptions > Cancelling > Show in Subscription Meta** to optionally display this informatio.
-
-When configured correctly, the subscription meta information containing the minimum periods will look as follows:
-
-![](https://woocommerce.com/wp-content/uploads/2021/12/mp-screenshot-faq-3.png?w=650)
-
----
-
-#### Does Minimum Periods work with other product types?
-
-Not by default – It is possible to add other product types (e.g. simple, external etc.) to show minimum periods meta information on the following pages:
-
-- The order confirmation page after successful payment
-- The orders page on the customer’s my-account area
-- The subscription page on the customer’s my-account area
-
-Note: The minimum periods for these product types cannot be set on a per-product basis. Instead, it will use the global settings found under **WooCommerce > Settings > Subscriptions > Cancelling > Default Minimum Period(s).**
-
----
-
-#### Does Minimum Periods work with All Products for WooCommerce Subscriptions?
-
-Yes and no – [All Products for WooCommerce Subscriptions](https://woocommerce.com/products/all-products-for-woocommerce-subscriptions/) adds subscription functionality to non-subscription products (e.g. simple, variation, bundle). At the moment, our plugin does not add extra options to configure minimum periods on a per-product basis for non-subscription products.
-
-It is, however, possible to use the global minimum periods (as configured under **WooCommerce > Settings > Subscriptions > Cancelling > Default Minimum Periods**) for non-subscription products that have a subscription plan (powered by All Products for WooCommerce Subscriptions). To show the minimum / paid period(s), please use the following code snippet:
+[↑ Back to top](#doc-title)
 
 ```
-add_filter( 'mpws_product_types', 'mpws_add_product_types', 5, 1 );
-
-function mpws_add_product_types( $mpws_allowable_product_types ) {
-	$mpws_allowable_product_types[] = "simple";
-	return $mpws_allowable_product_types;
-}
+mpws_product_types
 ```
 
-You can change 
+Filters the legacy product type slugs treated as subscription products. Defaults to 
 ```
-simple
-```
-
- in the code above to match the product types you’d like to see minimum periods for. For a list of pages where these minimum periods are shown, please refer to the question above.
-
----
-
-#### Is it possible to show the minium terms/periods for the subscription on the single product page?
-
-Yes – Version 2.3 allows shop owners/managers to display the period to be show on the single product page. To enable this, ensure the checkbox found under  **WooCommerce > Settings > Subscriptions > Cancelling > Show in Product Pages** are selected.
-
-Please note the following limitations:
-
-- The minimum periods will only be shown for 
-```
-Simple Subscription
+array( 'subscription', 'subscription_variation', 'variable-subscription' )
 ```
 
- products. At the moment, 
+. Fires inside 
 ```
-Variable Subscription
+Resolver::get_legacy_product_types()
 ```
 
- products are not supported.
-- The minimum periods will show about up above the add-to-cart button on the single product page.
+, which runs on every eligibility check.
 
----
+Soft-deprecated in 3.0.0. It is still honored and raises no deprecation notice, but it now only extends the legacy product type list. Products sold on WooCommerce Subscriptions 9.0+ subscription plans are recognized regardless of their type, so adding a type here has no effect on plan products and removing one does not hide them.
 
-#### Is it possible to show the minium periods for the subscription on the cart/checkout pages?
+```
+add_filter(
+	'mpws_product_types',
+	function ( $types ) {
+		$types[] = 'my_custom_subscription_type';
+		return $types;
+	}
+);
+```
 
-Yes – Version 2.3 allows shop owners/managers to display the periods for each subscription product as line-item meta information on the cart/checkout page. This information is visible below the product title on order overview section.
+The extension registers no action hooks of its own.
 
----
+### Storage
 
-#### Is this compatible with HPOS (High Performance Order Storage)?
+[↑ Back to top](#doc-title)
 
-Yes – Version 2.2 declares compatibility with HPOS.
+Store-wide settings are 
+```
+wp_options
+```
 
----
+ rows, all autoloaded:
 
-#### Is this compatible with the new Cart / Checkout Block for Gutenberg?
+| Option | Type | Default |
+| --- | --- | --- |
+| mpws_allow_cancelling | yes / no | yes |
+| mpws_allow_cancelling_periods | integer as string | 1 |
+| mpws_show_paid_periods_myaccount | yes / no | no |
+| mpws_show_minimum_periods_singleproduct | yes / no | no |
+| mpws_show_minimum_periods_checkout | yes / no | no |
+| mpws_show_minimum_periods_myaccount | yes / no | no |
+| mpws_show_minimum_periods_meta | yes / no | no |
+| mpws_link_suspensions | yes / no | no |
+| mpws_cleanup_version | version string | absent until an update runs |
 
-Yes – Version 2.3 adds support for both the new cart / checkout block experience in WooCommerce while maintaining support for the traditional shortcode method.
+Products and variations carry two meta keys, exposed as 
+```
+Resolver::META_MODE
+```
+
+ and 
+```
+Resolver::META_PERIODS
+```
+
+:
+
+- ```
+mpws_allow_cancelling
+```
+
+, either 
+```
+use-storewide
+```
+
+ or 
+```
+override-storewide
+```
+
+.
+- ```
+mpws_allow_cancelling_periods
+```
+
+, the integer value used when the mode is 
+```
+override-storewide
+```
+
+.
+
+Per-plan values use the same two keys inside the plan arrays WooCommerce Subscriptions persists, in 
+```
+_wcsatt_schemes
+```
+
+ product meta for product plans and the 
+```
+wcsatt_subscribe_to_cart_schemes
+```
+
+ option for store-wide plans. Reusing the keys means the values survive plan copy, reorder, and export or import without extra work.
+
+The plan a line item was bought on is read from 
+```
+_wcsatt_scheme
+```
+
+ item meta, falling back to the legacy 
+```
+_wcsatt_scheme_id
+```
+
+. Plans are matched on either their 
+```
+id
+```
+
+ or the legacy 
+```
+{interval}_{period}[_{length}]
+```
+
+ key, so stores carrying both kinds of data resolve correctly.
+
+The extension creates no database tables. Uninstalling leaves options and meta in place.
+
+### REST API
+
+[↑ Back to top](#doc-title)
+
+The extension does not register routes of its own. It adds two fields to the subscription plan endpoints WooCommerce Subscriptions exposes, through 
+```
+register_rest_field()
+```
+
+ on the 
+```
+product_subscription_plan
+```
+
+ and 
+```
+subscription_plan
+```
+
+ object types:
+
+- ```
+mpws_allow_cancelling
+```
+
+, string, enum 
+```
+use-storewide
+```
+
+ or 
+```
+override-storewide
+```
+
+.
+- ```
+mpws_allow_cancelling_periods
+```
+
+, integer, minimum 0.
+
+Both are readable and writable in the 
+```
+view
+```
+
+ and 
+```
+edit
+```
+
+ contexts on:
+
+```
+POST|PUT /wc/v3/products/{product_id}/subscription-plans[/{plan_id}]
+POST|PUT /wc/v3/subscriptions/storewide-plans[/{id}]
+```
+
+Because the plan controllers copy a fixed field list out of the request before the save filters run, the request is stashed on 
+```
+rest_request_before_callbacks
+```
+
+ and read back in 
+```
+wcsatt_processed_scheme_data
+```
+
+ and 
+```
+wcsatt_processed_cart_scheme_data
+```
+
+. Responses are decorated on 
+```
+rest_request_after_callbacks
+```
+
+ rather than 
+```
+rest_post_dispatch
+```
+
+, so in-process 
+```
+rest_do_request()
+```
+
+ calls carry the fields too.
+
+### Abilities API
+
+[↑ Back to top](#doc-title)
+
+On WordPress 6.9 or higher the extension registers eight abilities under the 
+```
+minimum-periods/
+```
+
+ namespace, in the 
+```
+woocommerce
+```
+
+ category. Every one uses the same permission callback, which requires 
+```
+manage_woocommerce
+```
+
+, and every one sets 
+```
+show_in_rest
+```
+
+.
+
+| Ability | Annotations | Purpose |
+| --- | --- | --- |
+| minimum-periods/get-settings | readonly, idempotent | Read the store-wide settings, plus store-wide plans and their values. |
+| minimum-periods/update-settings | idempotent | Update store-wide settings. Only supplied fields change. |
+| minimum-periods/get-product-minimum-period | readonly, idempotent | Read one product or variation, with its variations or plans expanded. |
+| minimum-periods/set-product-minimum-period | idempotent | Set mode and value on a product or variation. |
+| minimum-periods/set-plan-minimum-period | idempotent | Set mode and value on a product plan or a store-wide plan. |
+| minimum-periods/list-configured-products | readonly, idempotent | List products and variations that override the store-wide value. Paginated, 50 per page maximum. |
+| minimum-periods/get-subscription-status | readonly, idempotent | Evaluate one subscription against its minimum period. |
+| minimum-periods/list-subscriptions | readonly, idempotent | List subscriptions with their evaluation. Filters: status, customer, product, locked_only. Paginated, 50 per page maximum. |
+
+Registration is consumer-agnostic. The abilities go into the Abilities API whenever WooCommerce and WooCommerce Subscriptions are active, and nothing in the extension knows about any particular MCP plugin. The 
+```
+woocommerce
+```
+
+ ability category is registered by WooCommerce 10.3 and higher; on older stores the extension registers the same slug itself.
+
+### Markup and styling
+
+[↑ Back to top](#doc-title)
+
+The customer-facing markup is generated in one place, 
+```
+Minimum_Periods_For_Woocommerce_Subscriptions_Messages
+```
+
+, and the class names are treated as a stable public surface for theming:
+
+- ```
+.mpws_minimum_periods
+```
+
+, wrapping 
+```
+.mpws-label
+```
+
+ and 
+```
+.mpws-product-period
+```
+
+, used above the Add to cart button and by 
+```
+[mpws_minimum_period]
+```
+
+.
+- ```
+.mpws-plan-minimum-period
+```
+
+, appended to a subscription plan option on the product page.
+- ```
+.mpws_minimum_period_table
+```
+
+, wrapping the 
+```
+[mpws_minimum_period_table]
+```
+
+ output.
+
+Cart and checkout output goes through 
+```
+woocommerce_get_item_data
+```
+
+, and order line item output through 
+```
+woocommerce_order_item_meta_start
+```
+
+, so both inherit your theme’s styling for those areas.
+
+### Front-end hook points
+
+[↑ Back to top](#doc-title)
+
+The extension attaches to these WooCommerce and WooCommerce Subscriptions hooks. Unhooking any of them disables that piece of behavior.
+
+- ```
+wcs_view_subscription_actions
+```
+
+, priority 11 removes 
+```
+cancel
+```
+
+, priority 12 removes 
+```
+suspend
+```
+
+.
+- ```
+woocommerce_subscription_before_actions
+```
+
+, priority 99, renders the paid periods and minimum period rows.
+- ```
+woocommerce_before_add_to_cart_button
+```
+
+, renders the product page block.
+- ```
+wcsatt_single_product_subscription_option_description
+```
+
+ and 
+```
+wcsatt_single_product_options
+```
+
+, append the minimum period to plan options in the radio and dropdown layouts.
+- ```
+woocommerce_get_item_data
+```
+
+, adds the cart and checkout line item data.
+- ```
+woocommerce_order_item_meta_start
+```
+
+, adds the order line item meta.
+
+### Plan dialog integration
+
+[↑ Back to top](#doc-title)
+
+WooCommerce Subscriptions renders its plans UI in React and offers no extension point, so the Minimum period field is injected from outside by 
+```
+admin/js/mpws-subscription-plans.js
+```
+
+. A 
+```
+MutationObserver
+```
+
+ injects the field into 
+```
+.wcsatt-plan-modal
+```
+
+ when it opens, an 
+```
+apiFetch
+```
+
+ middleware adds the values to the plan save request and records what the response returns, and the plans tables get the read-only Min. period column.
+
+The script is written to fail quietly. If WooCommerce Subscriptions changes its markup, the field simply does not appear, and per-plan values can still be set through the REST fields or the abilities above.
+
+					
+		
+## Related Products
+
+	
+	
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+
+### WooCommerce Subscriptions
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+
+### WooCommerce Memberships
+
+	
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+
+Power your membership association, online magazine, elearning sites, and more with access control to...
 
 ---
 

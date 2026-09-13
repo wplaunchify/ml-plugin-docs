@@ -10,7 +10,7 @@
 
 # Change a Subscription from Automatic to Manual Payments
 
-			WooCommerce Subscriptions offers two ways for a customer to change their payments from automatic renewal payments to manual renewal payments. Customers can make the switch themselves if the auto renewal toggle is activated in the Subscriptions settings. If it’s not, a store owner can complete this process for them.
+			WooCommerce Subscriptions offers two ways for a customer to change their payments from automatic renewal payments to manual renewal payments. Customers can make the switch themselves if **Allow subscribers to change their renewal mode via My Account** is enabled in the Subscriptions settings. If it’s not, a store owner can complete this process for them.
 
 This guide outlines the steps a store owner takes to change a customer’s payments to manual renewals via the “Edit Subscriptions” screen. Developers can refer to the  [Developer Guide to Change a Subscription to Manual Payments](https://woocommerce.com/document/subscriptions/develop/change-subscription-to-manual-payments/) for PHP and MySQL instructions.
 

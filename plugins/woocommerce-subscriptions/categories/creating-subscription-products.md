@@ -144,7 +144,7 @@ If you only add a single subscription plan and disable one-time purchases, custo
 
 [↑ Back to top](#doc-title)
 
-If [Gifting is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#gifting-settings) in the subscription settings, the option to enable and disable gifting for the product will be visible.
+If [Gifting is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#gifting) in the subscription settings, the option to enable and disable gifting for the product will be visible.
 
 ### Bulk edit purchase options
 
@@ -162,10 +162,10 @@ As of WooCommerce Subscriptions 9.0, we recommend using [subscription plans](#pu
 
 Disabling the dedicated subscription product types will not affect existing products—they will continue to work as expected.
 
-You can control whether these product types are available from *WooCommerce > Settings > Subscriptions > Subscription Product Creation*. For more detail, see the [Subscription Product Creation setting](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscription-product-creation).
+You can control which of these product types are available under *WooCommerce > Settings > Subscriptions > Subscription product creation*, using the **Simple subscription** and **Variable subscription** checkboxes. For more details, see the [Subscription Product Creation setting](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscription-product-creation).
 
-- When **enabled**, the product type dropdown includes **Simple Subscription** and **Variable Subscription** when you create a new product.
-- When **disabled**, these options are hidden from the dropdown for new products.
+- When a type is **enabled**, it appears in the product type dropdown when you create a new product.
+- When a type is **disabled**, that option is hidden from the dropdown for new products (existing products are unaffected).
 
 **Note:** Disabling the dedicated Simple and Variable Subscription product types does not affect existing products — they continue to function as normal.
 
@@ -329,13 +329,13 @@ A free trial increases the length of a subscription. For example, if you create 
 
 When a subscription has a sign-up fee and no free trial period, the initial payment is the sign-up fee + the recurring payment price. For example, a $5 per month subscription with a $10 sign-up fee will charge $15 for the first month. However, if the subscription product includes a free trial, the customer only pays the sign-up fee at checkout ($10). If there is no sign-up fee, the customer pays nothing at checkout.
 
-If you enable [$0 initial checkout without a payment method](https://woocommerce.com/document/subscriptions/store-manager-guide/#misc-settings)and the product lacks a sign-up fee, subscriptions move to “On Hold” status at the end of the trial period while they await the customer’s first renewal payment.
+If you enable [$0 initial checkout without a payment method](https://woocommerce.com/document/subscriptions/store-manager-guide/#allow-0-initial-checkout-without-a-payment-method)and the product lacks a sign-up fee, subscriptions move to “On Hold” status at the end of the trial period while they await the customer’s first renewal payment.
 
 ### Gifting
 
 [↑ Back to top](#doc-title)
 
-If [Gifting is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#gifting-settings) in the subscription settings, the option to enable and disable gifting for the product will be visible in the General product settings. If no option is selected, the global settings will apply to the product.
+If [Gifting is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#gifting) in the subscription settings, the option to enable and disable gifting for the product will be visible in the General product settings. If no option is selected, the global settings will apply to the product.
 
 ![](https://woocommerce.com/wp-content/uploads/2026/04/gifting.png?strip=all&w=704)
 
@@ -345,11 +345,11 @@ If [Gifting is enabled](https://woocommerce.com/document/subscriptions/store-man
 
 Optionally select a day to align renewal dates for all subscribers on this plan. When set to “Do not align,” renewals are based on each subscriber’s purchase date. See the [Billing Date Alignment documentation](https://woocommerce.com/document/subscriptions/billing-date-alignment) for details.
 
-### Downloadable File Sharing
+### Downloadable Product Sharing
 
 [↑ Back to top](#doc-title)
 
-If [downloadable file sharing is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#downloads-settings), you can view, add, and remove the downloadable products linked to the subscription.
+If [downloadable product sharing](https://woocommerce.com/document/subscriptions/store-manager-guide/#downloadable-content) is enabled, you can view, add, and remove the downloadable products linked to the subscription.
 
 ![Subscription Product Setting for Downloadable File Sharing](https://woocommerce.com/wp-content/uploads/2025/12/wcs-downloads-subscription-product-meta-box.png?strip=all&w=704)
 
@@ -418,7 +418,7 @@ When a product has Limit Subscriptions enabled, the limit is also enforced at ca
 
 These checks run when the product is added to the cart. An additional validation runs on the cart and checkout pages to catch items that may have entered the cart through other means (such as session restoration or third-party extensions). If a conflict is detected, the customer sees an error notice and must remove the duplicate before placing the order.
 
-This cart-level enforcement applies regardless of whether **Mixed checkout** is enabled in your store’s subscription settings. When **Mixed checkout** is enabled and a conflict is detected during session loading, the duplicate item is silently removed from the cart, and a notice is displayed.
+This cart-level enforcement applies regardless of whether **Allow mixed cart checkouts** is enabled in your store’s subscription settings. When **Allow mixed cart checkouts** is enabled and a conflict is detected during session loading, the duplicate item is silently removed from the cart, and a notice is displayed.
 
 **Switching**
 

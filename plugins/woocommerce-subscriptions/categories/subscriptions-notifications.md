@@ -40,13 +40,13 @@ To configure subscription notifications:
 
 1. Navigate to **WordPress Admin dashboard > WooCommerce > Settings**.
 2. Click on the **Subscriptions** tab at the top of the page.
-3. Scroll down to the **Customer Notifications** section. Here, you’ll find settings to enable and customize the subscription notifications.
+3. Scroll down to the **Subscription notifications** section. Here, you’ll find settings to enable and customize the subscription notifications.
 
-![](https://woocommerce.com/wp-content/uploads/2024/11/WooCommerce-settings-‹-WordPress-subs.local_-1.png?w=980)
+![](https://woocommerce.com/wp-content/uploads/2026/07/subscription-notifications.png?strip=all&w=704)
 
-#### Enabling Renewal Reminders
+#### Enabling reminder emails
 
-To enable the feature on your store, check the **Enable Renewal Reminders**checkbox and, then click on the **Save changes** button. All notifications are automatically disabled in non-production environments.
+All notifications are automatically disabled in non-production environments.
 
 After **enabling** subscription reminders, notifications will be **gradually added** to all the relevant subscriptions in the background.
 
@@ -54,9 +54,9 @@ After **disabling** subscription reminders, all notifications will be automatica
 
 Individual reminders can be enabled/disabled from **WooCommerce > Settings > Email** screen (see [below](#h-customizing-individual-notifications)).
 
-#### Set Renewal Reminder Timing
+#### Set Reminder Timing
 
-In the **Renewal Reminder Timing** field:
+In the**Reminder Timing** field:
 
 - Enter how many days/weeks/months before the subscription event the reminder should be sent.
 - Choose the time unit from the dropdown menu (e.g., Day(s), Week(s), Month(s))
@@ -197,7 +197,7 @@ wcs_customer_notifications
 
 . These actions represent the scheduled notifications for that subscription.
 
-You can trigger the notification from the Scheduled Actions screen, using the `Run` link, but all the notifications can also be triggered manually from the Edit Subscription screen [TODO: link to the other section]
+You can trigger the notification from the Scheduled Actions screen, using the `Run` link, but all the notifications can also be triggered manually from the Edit Subscription screen.
 
 #### Viewing All Scheduled Subscription Notifications
 
@@ -222,7 +222,7 @@ woocommerce_scheduled_subscription_customer_notification
 For a subscription notification to be sent, the following conditions must be met:
 
 1. **Global Notifications Enabled**:
-- The **Enable Renewal Reminders** option under **WooCommerce > Settings > Subscriptions** must be checked.
+- The **Send reminder emails to subscribers** option under **WooCommerce > Settings > Subscriptions** must be checked.
 2. **Specific Notification Enabled**:
 - The individual notification must be enabled under **WooCommerce > Settings > Emails**.
 3. **Site Environment**:

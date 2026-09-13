@@ -68,11 +68,11 @@ On the **View Subscription** page is a set of *action buttons and toggles*. A su
 - [Change the Payment Method](https://woocommerce.com/document/subscriptions/customers-view/subscriber-payment-methods/) used for automatic recurring payments.
 - [Change Shipping/Billing Addresses](https://woocommerce.com/document/subscriptions/customers-view/update-address/) on their subscriptions.
 - **Deactivate or Activate automatic recurring payments.**This requires a store manager to activate the [“auto renewal toggle” in the Subscriptions settings](https://woocommerce.com/document/subscriptions/customers-view/activating-deactivating-auto-renew/).
-- **Upgrade or downgrade** the subscription line items. Subscription switching is a fairly easy process for your customers but if you are interested in understanding it more from the customer’s perspective, take a look at the [Subscriber’s Subscription Switch Guide](https://woocommerce.com/document/subscriptions/customers-view/subscribers-view-switch/).
+- **Switch** – subscription switching is a fairly easy process for your customers but if you are interested in understanding it more from the customer’s perspective, take a look at the [Subscriber’s Subscription Switch Guide](https://woocommerce.com/document/subscriptions/customers-view/subscribers-view-switch/).
 
 ![](https://woocommerce.com/wp-content/uploads/2021/10/my-account-view-subscription-action.png?w=950)Action buttons on the View Subscription page
 
-![](https://woocommerce.com/wp-content/uploads/2021/10/view-subscription-upgrade-downgrade-buttons.png?w=950)Upgrade or Downgrade buttons on the View Subscription page
+![](https://woocommerce.com/wp-content/uploads/2026/07/switch-button.png?w=980)Switch button on the View Subscription page
 
 Want to remove a subscription action button? Check out the FAQ on [removing a button from the View Subscription page](https://woocommerce.com/document/subscriptions/develop/remove-an-action-button/).
 
@@ -109,7 +109,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 # Activating/Deactivating Auto Renew
 
-			Enabling the “**Auto Renew Toggle**” setting under **WooCommerce > Settings > Subscriptions**allows subscribers to activate or deactivate their automatic subscription renewal payments at any time. This will only change the subscription’s payment method to [manual renewal](https://woocommerce.com/document/subscriptions/renewal-process/#manual-recurring-payments) but won’t stop the renewal completely or cancel the subscription. This page explains how a subscriber would activate/deactivate auto-renewals.
+			Enabling the **Allow subscribers to change their renewal mode via My Account** setting under WooCommerce > Settings > Subscriptions allows subscribers to activate or deactivate their automatic subscription renewal payments at any time. This will only change the subscription’s payment method to [manual renewal](https://woocommerce.com/document/subscriptions/renewal-process/#manual-recurring-payments) but won’t stop the renewal completely or cancel the subscription. This page explains how a subscriber would activate/deactivate auto-renewals.
 
 ## Using the Auto Renew Toggle
 
@@ -136,15 +136,7 @@ Under **My Account > Subscriptions** (click on the specific subscriptions), subs
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -152,6 +144,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -186,7 +186,7 @@ To purchase a subscription for another customer via a product page, the customer
 1. Go to a subscription product’s *Single Product Page*.
 2. Tick the *This is a gift* checkbox.
 3. Enter the recipient’s email address.
-4. Select **Sign Up Now**.
+4. Select **Add to cart**.
 
 ![](https://woocommerce.com/wp-content/uploads/2025/08/gifting-product-page_469b67.png?strip=all&w=704)
 
@@ -354,8 +354,8 @@ To enable dual permissions:
 
 1. Go to the *WooCommerce > Settings* administration screen
 2. Click the **Subscriptions** tab
-3. Scroll down to the **Gifting Subscriptions** section
-4. Click **Downloadable Products** to enable or disable dual permissions
+3. Scroll down to the **Gifting** section
+4. Enable **Allow gift purchasers to download files** to grant download access to both the purchaser and the recipient.
 
 Similar to the normal process for downloading files, recipients can download the files they have been granted access to from the **My Account** page and the *My Account > View Subscription* page.
 
@@ -389,15 +389,7 @@ The [Subscriptions Use Case: Corporate Purchasing](https://woocommerce.com/docum
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -405,6 +397,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -670,7 +670,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 # Subscribers’ Guide to Switching Subscriptions
 
-			If you allow customers to [switch between subscription products](https://woocommerce.com/document/subscriptions/store-manager-guide/#switch-settings) on your site, they will be able to upgrade or downgrade between different subscription products via the **View Subscription** page.
+			If you [allow switching](https://woocommerce.com/document/subscriptions/switching-guide/#switch-settings) on your site, customers can upgrade, downgrade, or cross-grade between the subscription options available to them via the **View Subscription** page.
 
 ### The Switch Process
 
@@ -679,7 +679,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 To switch subscriptions, the customer:
 
 1. **Clicks** on **My Account > Subscriptions**, and **View** next to the subscription they want to switch.
-2. **Clicks** the **Upgrade or Downgrade** button on the line item they want to switch.
+2. Clicks the **Switch** button on the line item they want to switch.
 3. **Selects**a new subscription product and clicks **Switch subscription**.
 - This adds the subscription to the cart with “(upgrade) or “(downgrade) added to the product’s title. On the checkout page, a **Switch Subscription** button invites the customer to complete the checkout.
 4. **Completes** the checkout form for the new subscription.
@@ -702,9 +702,9 @@ The screenshots below show a customer switching from one subscription variation 
 
 [↑ Back to top](#doc-title)
 
-It’s not always possible, or necessary, for a customer to be able to switch to a new subscription. The **Upgrade or Downgrade** button displays if you allow switching AND the subscription:
+It’s not always possible, or necessary, for a customer to be able to switch to a new subscription. The **Switch** button displays if you allow switching AND the subscription:
 
-- Is a [Variable Subscription product](https://woocommerce.com/document/subscriptions/store-manager-guide/#variable-subscriptions) or the [child of a Grouped Product](https://woocommerce.com/document/managing-products/#section-4), depending on which product type you set when enabling switching
+- Belongs to a product type you’ve enabled for switching — a product with subscription plans, a variation of a variable product, or a product within a grouped product.
 - Uses [manual renewals](https://woocommerce.com/document/subscription-renewal-process/) or automatic renewals with a gateway that supports [recurring amount and payment date changes](https://woocommerce.com/document/payment-gateways/#advanced-features)
 - The subscription has an **active** status. Customers must buy a new subscription if their subscription is expired or canceled.
 - Has at least one completed payment (this includes manually added subscriptions).
@@ -715,15 +715,7 @@ It’s not always possible, or necessary, for a customer to be able to switch to
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -731,6 +723,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -748,7 +748,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 Active subscriptions display a **Cancel** button by default on the View Subscription page. There is no setting to disable cancellations; [the Cancel button can be removed from the View Subscription page](https://woocommerce.com/document/subscriptions/develop/remove-an-action-button/) only via custom code.
 
-You can optionally enable **Customer Suspensions** in [Subscription Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#misc-settings), allowing customers to suspend their subscriptions themselves with a **Suspend** button added next to the **Cancel** button. A suspended subscription appears as *on-hold* both to the store manager and the customer.
+You can optionally enable **subscriber suspensions** in [Subscription Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#suspensions), allowing customers to suspend their subscriptions themselves with a **Suspend** button added next to the **Cancel** button. A suspended subscription appears as *on-hold* both to the store manager and the customer.
 
 When a subscription is put *on-hold*, either by you or the customer, a **Reactivate** button is added to the customer’s view, allowing the customer to restart their subscription. However, if the subscription is put *on-hold* because payment is due, then the **Reactivate** button is not displayed. In that case, the customer must [pay for the renewal](https://woocommerce.com/document/subscriptions/customers-view/pay-for-renewal/) before a subscription is reactivated.
 
@@ -761,7 +761,7 @@ For the *suspend* button to be displayed:
 - the [WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) plugin must be active
 - the payment gateway used to purchase the subscription must support [subscription suspension](https://woocommerce.com/document/subscriptions/payment-gateways/)
 - the subscription must currently have a status of *active* or *pending*
-- customer suspension is enabled in the [Subscription Settings](https://woocommerce.com/document/store-manager-guide/#misc-settings), or is a viewed as a store admin
+- customer suspension is enabled in the [Subscription Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#suspensions), or is a viewed as a store admin
 
 **Requirements to Display Cancel Button**
 

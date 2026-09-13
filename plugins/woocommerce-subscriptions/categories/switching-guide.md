@@ -10,24 +10,17 @@
 
 # Store Manager’s Guide to Subscription Switching
 
-			Customers can upgrade and downgrade their subscriptions, as well as change the quantity of any items they are subscribed to, when you have the[WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) switching feature enabled.
+			Customers can upgrade and downgrade their subscriptions, as well as change the quantity of any items they are subscribed to, when you have the [WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) switching feature enabled.
 
-The following documentation covers details of the switching process to help clarify what happens when you allow customers to switch between subscription products and how you can configure the Switch feature for your store’s requirements:
-
-- [Switching Subscriptions](#switching-subscriptions)
-- [Subscription Switching Settings](#switch-settings)
-- [Subscription Switching Process and Costs](https://woocommerce.com/document/subscriptions/switching-guide/switching-process-and-costs/)
-- [Subscription Switching with Coupons](https://woocommerce.com/document/subscriptions/switching-guide/subscription-switching-with-coupons/)
-- [Tracking Switches](https://woocommerce.com/document/subscriptions/switching-guide/tracking-switches/)
-- [Subscriptions Switching Use Case: Changing Quantities](https://woocommerce.com/document/subscriptions/switching-guide/switching-use-case-change-quantities/)
+The following documentation covers details of the switching process to help clarify what happens when you allow customers to switch between subscription products and how you can configure the Switch feature for your store’s requirements.
 
 ## Switching Subscriptions
 
 [↑ Back to top](#doc-title)
 
-Once enabled, WooCommerce Subscriptions switch feature allows your customers to *upgrade*, *downgrade* or *cross-grade* between different subscription products.
+Once enabled, WooCommerce Subscriptions switching feature allows your customers to *upgrade*, *downgrade* or *cross-grade* between different subscription products.
 
-Switching is possible between variations of a[Variable Subscription](https://woocommerce.com/document/store-manager-guide/#variable-subscriptions) product, Simple Subscriptions within a[Grouped product](https://woocommerce.com/document/managing-products/add-product/#adding-a-grouped-product), and *even* variations from multiple [Variable Subscription](https://woocommerce.com/document/store-manager-guide/#variable-subscriptions) products that are all within the same[Grouped product](https://woocommerce.com/document/managing-products/add-product/#adding-a-grouped-product) (depending on the[settings](#switch-settings) you choose). In addition to switching between different products or variations, it is also possible for shoppers to update the quantity of any product on their subscription.
+Switching is possible between the subscription plans available on a product, between the variations of a variable product, and between products within a grouped product. It is also possible for shoppers to update the quantity of any product on their subscription.
 
 ## Subscription Switching Settings
 
@@ -35,7 +28,7 @@ Switching is possible between variations of a[Variable Subscription](https://woo
 
 Enable and manage the WooCommerce Subscriptions switching features by going to **WooCommerce > Settings > Subscriptions**, and scrolling down to the **Switching**section.
 
-![](https://woocommerce.com/wp-content/uploads/2013/09/Screenshot-on-2021-07-13-at-12-32-05.png?strip=all&w=704)
+![](https://woocommerce.com/wp-content/uploads/2026/07/switching.png?strip=all&w=704)
 
 ### Allow Switching
 
@@ -45,95 +38,73 @@ Switching is off by defualt, and first needs to be enabled to allow customers to
 
 1. Go to **WooCommerce >** **Settings > Subscriptions**.
 2. Scroll down to the **Switching** section.
-3. Next to **Allow Switching** tick the box next to either or both options of **Between Subscription Variations** and **Between Grouped Subscriptions**.
+3. Select one or more of the product types customers can switch between
 4. Click **Save changes**.
 
-The two different kinds of switching options allow your subscribers to:
+The three different kinds of switching options allow your subscribers to:
 
-- Switch from one subscription variation to another within the same[Variable Subscription](https://woocommerce.com/document/store-manager-guide/#variable-subscriptions) product.
-- Switch between any Simple Subscription or Variable Subscription variation in the same[Grouped product](https://woocommerce.com/document/managing-products/add-product/#adding-a-grouped-product).
+- Subscription plans – switch between the subscription plans available on a product.
+- Subscription variations – switch from one variation to another within the same variable product.
+- Grouped subscriptions – switch between products within the same grouped product. Products must be published to be available as switching options.
 
 In either case, products must be **published**to be available as switching options.
 
 A subscription may be switched if it is active but will require payment if it is switched from a free to paid subscription, so future payments can be processed automatically (unless the store has disabled automatic payments). Customers cannot switch subscriptions that are in the on hold or pending cancellation [statuses](https://woocommerce.com/document/subscriptions/statuses/).
 
-When determining whether a subscription can be switched, the **current state** of the product is used. So if a subscription product was purchased before it was added to a Grouped product, it can still be switched to other subscriptions if the product is later added to a Grouped product.
+**Note:**If you’re using the [WooCommerce Memberships extension integration](https://woocommerce.com/document/woocommerce-memberships-subscriptions-integration/) to grant memberships to users who have active subscriptions, and want to prevent customers from having more than one active plan at a time, but still allow switching between membership plans, in this case enable **Subscription variations** but leave **Grouped subscriptions** unchecked. Then ensure customers can only have one active Subscription for your variable subscription product that’s tied to memberships using the[limit subscriptions setting.](https://woocommerce.com/document/subscriptions/store-manager-guide/#section-7)
 
-**Note:**If you’re using the [WooCommerce Memberships extension integration](https://woocommerce.com/document/woocommerce-memberships-subscriptions-integration/) to grant memberships to users who have active subscriptions, and want to prevent customers from having more than one active plan at a time, but still allow switching between membership plans, in this case you’ll want to allow switching *between subscription variations*, but not between grouped subscriptions. Then ensure customers can only have one active Subscription for your variable subscription product that’s tied to memberships using the[limit subscriptions setting.](https://woocommerce.com/document/subscriptions/store-manager-guide/#section-7)
-
-### Prorate Recurring Payments
+### First billing behavior
 
 [↑ Back to top](#doc-title)
 
-You may opt to have Subscriptions charge or credit a customer for the difference between subscriptions when they choose to switch to a subscription with a different recurring payment or billing period.
+![](https://woocommerce.com/wp-content/uploads/2026/07/first-billing-behavior.png?strip=all&w=704)
 
-#### Never Prorate Recurring Payments
+The First billing behavior setting controls how a subscriber is charged at the moment they switch. Choose one:
 
-By default, subscriptions will never prorate the recurring payment. That means a customer can switch to a new subscription, without paying anything until the next payment is due. This is most suitable for subscriptions to physical items where the cost of the subscription is incurred at time of renewal.
+- **Charge full amount at switch** – The subscriber pays the full recurring price of the new product as soon as they switch, with no credit for the unused portion of their current billing period. Use this when a switch should simply start a fresh billing period.
+- **Prorate amount on upgrades** – When a subscriber upgrades to a more expensive product, they’re credited for the unused portion of their current billing period and charged the prorated price of the new product for the time remaining until their next renewal. Downgrades are not prorated.
+- **Prorate amount on upgrades and downgrades** – Proration applies in both directions. Whether the subscriber upgrades or downgrades, they’re credited for the unused portion of the current billing period and charged the prorated price of the new product for the remaining time.
 
-If you choose to never prorate recurring charges, the first payment for the new subscription is charged when the next payment for the old subscription was due.
-
-For example, if a subscription to a *3 Widgets/month* product was purchased on the **15th July**, and on the **1st August** a subscriber switches to a *6 Widgets/month* subscription, his next renewal payment is charged on the **15th August**.
-
-Similarly, if on the **1st September** the same subscriber switches to a *3 Widgets/week* subscription, the next renewal will still be on the **15th September**, despite the new subscriptions billing period being shorter. Only after that first payment on the 15th September will the subscription start to renew weekly.
-
-#### Prorate for Upgrades Only or Upgrades & Downgrades
-
-If you do not want to prorate the amount a customer has paid when **downgrading** a subscription, you can choose to only prorate upgrades.
-
-For example, when only upgrades are prorated, if a customer is subscribed to a $50/month subscription renewing on the 1st of each month and chooses to downgrade to a $20/month subscription, the customer isn’t charged or credited anything at the time of switch and the next renewal payment happens on the 1st day of the following month.
-
-When downgrades *are* prorated, the customer is *credited in additional time* before the next payment is due, so in the above example the next payment occurs after the first day of the following month. See the [downgrades section](https://woocommerce.com/document/subscriptions/switching-guide/switching-process-and-costs/#downgrades) of the Subscription Switching Process and Costs document for more details.
-
-This setting also allows you to use cheaper subscriptions as a form of suspension. For example, if a customer is currently subscribed to a $90/month membership but wants to put the membership on hold for 3 months, you can choose to only prorate upgrades and tell the customer to switch to a $15/month subscription until ready to resume the normal subscription. If using non-prorated downgrades to charge for suspensions, you should also[disable customer suspension](https://woocommerce.com/document/subscriptions/store-manager-guide/#customer-suspensions).
-
-#### Prorate for Virtual or All Subscription Products
-
-If selling services, memberships or other virtual goods, you may want to begin charging at the new subscription’s rate immediately. This is when prorating the recurring payment makes sense.
-
-As a result, you can choose to prorate only for **Virtual subscription products** or if you want to always charge the customer the rate of the subscription to which they are currently subscribed, you can choose for **All Subscription Products**.
+When you choose either proration option, an **Apply proration to** setting appears. Select the product types proration should apply to — **Virtual subscription products**, **Physical subscription products**, or both. Any product type you leave unselected won’t be prorated, and at least one must be selected.
 
 [Subscription Switching Process and Costs](https://woocommerce.com/document/subscriptions/switching-guide/switching-process-and-costs/) provides in depth information about how a recurring payment is prorated.
 
-When determining if the price should be prorated, the current state of the new subscription product is used. That means, if you have chosen to only prorate recurring payments for virtual products, when a customer switches from a non-virtual product to a virtual subscription product, the price is prorated because the new product is virtual.
+When determining whether proration applies, the current state of the new product is used. For example, if you set Apply proration to to Virtual subscription products only and a customer switches from a physical product to a virtual product, the switch is prorated because the new product is virtual.
 
-### Prorate Signup Fee
-
-[↑ Back to top](#doc-title)
-
-A customer **never** pays a signup fee when switching to a new subscription by default, regardless of whether the new subscription product’s signup fee is higher or lower than any signup fee paid for the current subscription.
-
-You can choose to **charge the full signup fee** whenever switching to a new subscription, meaning a customer receives no credit for any signup fee paid on the current subscription. This is useful when the signup fee is to cover the cost of setting up a subscription, such as shipping items required for using the subscription.
-
-Finally, you can choose to charge a customer the difference between two signup fees when switching to the new subscription. If you choose to **always** prorate the signup fee, they are only charged the difference between the two signup fees when switching to a new subscription with a signup fee higher than the signup fee paid for the current subscription,
-
-If the new subscriptions signup fee is *lower* than the old subscription’s, the subscriber is not credited for the difference, regardless of which option you choose.
-
-### Prorate Length
+### Signup fee behavior
 
 [↑ Back to top](#doc-title)
 
-Subscription lengths are not prorated by default. This means if a customer switches to a monthly subscription with a length of 12 months, the new subscription will schedule 12 additional payments before expiration, regardless of the number of payments completed on the old subscription.
+![](https://woocommerce.com/wp-content/uploads/2026/07/signup-fee-behavior.png?strip=all&w=704)
 
-However, if a subscription is for a defined length, such as 12 months, you can credit the customer for the number of payments completed on her old subscription when switching to a new subscription by enabling length proration.
+Signup fee behavior controls how sign-up fees are handled when switching. Choose one:
 
-For example, a customer signed up for a 12-month subscription 4 months ago, so 4 payments have been completed on that subscription. The customer now wants to upgrade to a different subscription that also has a length of 12 months. If the store is configured to prorate length, the new subscription will only charge 8 additional payments, one month apart, before expiring.
+- **Do not charge a sign up fee** – The subscriber isn’t charged a sign-up fee when switching, regardless of whether the new product’s sign-up fee is higher or lower than any fee they’ve already paid. This is the default.
+- **Charge the full sign up fee** – The subscriber is charged the full sign-up fee of the new product when switching, with no credit for any sign-up fee already paid on their current subscription. This is useful when the sign-up fee covers the cost of setting up a subscription — for example, shipping items required to use it.
+- **Prorate the sign up fee** – The subscriber is only charged the difference when the new product’s sign-up fee is higher than the fee they’ve already paid. If the new sign-up fee is lower, no credit is applied.
 
-Choose to prorate subscription lengths for **virtual products only** or for **all subscription product types**. Determining whether a product is virtual is based on the state of the new subscription at the time a customer initiates the switch, not when the customer originally purchased the current subscription.
+If the new subscription’s sign-up fee is lower than the current one, the subscriber is never credited for the difference — regardless of which option you choose.
 
-Proration is based on the number of payments, not the amount of time since the start of the old subscription and the switch date. So if additional payments have been processed off-schedule on the existing subscription, when prorating length for the new subscription, those additional payments will be accounted for. Similarly, if the customer has skipped or missed payments, they will not be accounted for.
-
-### Switch Button Text
+### Fixed-term behavior
 
 [↑ Back to top](#doc-title)
 
-The  “Switch Button Text” option allows you to customize the text that will be displayed on the button that can be clicked to initiate a switch from your customer’s subscriber view in their account area. “Upgrade or Downgrade” is displayed by default, but you could change this to “Switch Subscription”, “Change Subscription”, or any other text that suits your store.
+Fixed-term behavior controls how completed renewals are handled when a subscriber switches to a subscription that is set to expire. Choose one:
 
-![Subscriptions Switching Button Text](https://woocommerce.com/wp-content/uploads/2021/12/Switching-button-text.png?w=620)
+- **Do not prorate the subscription renewal count** – The subscriber completes the full number of renewals for the new subscription; previous renewals are not counted. For example, switching to a 12-month subscription schedules 12 further payments regardless of how many were completed on the old subscription.
+- **Prorate the subscription renewal count** – The renewals the subscriber has already paid count toward the new subscription, so fewer payments remain. For example, if 4 payments of a 12-month subscription were completed and the subscriber switches to another 12-month subscription, only 8 further payments are scheduled. 
 
-*Upgrade or Downgrade* is displayed by default, but you may change this to *Switch Subscription*, *Change Subscription* or any descriptive text that suits your store.
+When the renewal count is prorated, choose which product types it applies to under Apply renewals to: **Virtual subscription products** and/or **Physical subscription products**. Product types not selected will not have previous renewals applied. At least one product type must be selected. Proration is based on the number of payments, not elapsed time. Off-schedule payments already processed are counted; skipped or missed payments are not.
 
-![](https://woocommerce.com/wp-content/uploads/2013/09/upgrade-downgrade-btn.png?strip=all&w=704)Switching button
+Proration is based on the number of payments, not the amount of time between the start of the old subscription and the switch date. If additional payments have been processed off-schedule on the existing subscription, those are counted when prorating the subscription renewal count for the new subscription. Likewise, any payments the customer has skipped or missed are not counted.
+
+### Switch button text
+
+[↑ Back to top](#doc-title)
+
+The  “Switch Button Text” option allows you to customize the text that will be displayed on the button that can be clicked to initiate a switch from your customer’s subscriber view in their account area. “Switch” is displayed by default, but you could change this to “Switch Subscription”, “Change Subscription”, or any other text that suits your store.
+
+![](https://woocommerce.com/wp-content/uploads/2026/07/switch-button-text.png?w=980)
 
 The Switch button is displayed in your customer’s detailed view of their subscription in their account area.
 
@@ -243,7 +214,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 # Subscription Switching Process and Costs
 
-			Once the [WooCommerce Subscriptions Switching feature is enabled](https://woocommerce.com/document/subscriptions/switching-guide/#allow-switching), switching is a smooth and flexible process. Whether your customers are looking to upgrade to a more expensive plan, downgrade to a cheaper one, or switch to a plan with the same cost, you’ll want to understand how these changes affect their billing. This guide explains the nuances of the subscription switching process, and how Subscriptions determines switching cost.
+			Once the [WooCommerce Subscriptions Switching feature is enabled](https://woocommerce.com/document/subscriptions/switching-guide/#switch-settings), switching is a smooth and flexible process. Whether your customers are looking to upgrade to a more expensive plan, downgrade to a cheaper one, or switch to a plan with the same cost, you’ll want to understand how these changes affect their billing. This guide explains the nuances of the subscription switching process, and how Subscriptions determines switching cost.
 
 ## Switching Costs
 
@@ -424,15 +395,7 @@ To change this text, either to remove it completely or make it display something
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -440,6 +403,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 

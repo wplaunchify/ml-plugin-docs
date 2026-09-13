@@ -179,13 +179,13 @@ The [PayPal Payments](https://woocommerce.com/products/woocommerce-paypal-paymen
 
 [↑ Back to top](#doc-title)
 
-**All** WooCommerce payment methods and gateway extensions can be used to process [manual subscription payments](https://woocommerce.com/document/store-manager-guide/#renewal-settings). Subscriptions creates a pending order for the renewal, and then that order [can be paid with any gateway](https://woocommerce.com/document/subscriptions/renewal-process/#manual-recurring-payments).
+**All** WooCommerce payment methods and gateway extensions can be used to process [manual subscription payments](https://woocommerce.com/document/store-manager-guide/#renewals). Subscriptions creates a pending order for the renewal, and then that order [can be paid with any gateway](https://woocommerce.com/document/subscriptions/renewal-process/#manual-recurring-payments).
 
 When using a manual payment for a subscription, all features included in the table above are supported. Meaning the subscription can be suspended, canceled, and reactivated. It can also have its recurring amount, next payment date, and billing schedule changed.
 
 **Note:**
 
-The renewal method applied to a subscription at the time of purchase is always applied to the subscription. So if the payment method used to purchase a subscription could only process manual renewal payments at the time of purchase, the subscription continues with **manual renewal payments** even if the payment gateway extension adds support for **automatic recurring payments**. Customers can switch between automatic and manual renewals while the [Auto Renewal Toggle](https://woocommerce.com/document/subscriptions/renewal-process/#auto-renew-toggle) is enabled.
+The renewal method applied to a subscription at the time of purchase is always applied to the subscription. So if the payment method used to purchase a subscription could only process manual renewal payments at the time of purchase, the subscription continues with **manual renewal payments** even if the payment gateway extension adds support for **automatic recurring payments**. Customers can switch between automatic and manual renewals while **Allow subscribers to change their renewal mode via My Account** is enabled.
 
 ## Is it possible to offer multiple payment options?
 
@@ -193,7 +193,7 @@ The renewal method applied to a subscription at the time of purchase is always 
 
 You can use more than one payment processor to offer your customers different ways to pay for their subscriptions.
 
-If you have [manual renewals](https://woocommerce.com/document/store-manager-guide/#renewal-settings) enabled, every payment gateway that has an extension activated on your site and is enabled under the *Payment Gateways* tab of the WooCommerce settings page will be offered as a payment option.
+If you have [manual renewals](https://woocommerce.com/document/store-manager-guide/#renewals) enabled, every payment gateway that has an extension activated on your site and is enabled under the *Payment Gateways* tab of the WooCommerce settings page will be offered as a payment option.
 
 If manual renewals are not enabled, all WooCommerce payment gateway extensions which support [automatic payments](https://woocommerce.com/document/subscriptions/payment-gateways/#section-1) will be offered to the customer.
 
@@ -220,15 +220,7 @@ If you are a developer and want to add support for automatic subscription paymen
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -236,6 +228,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -249,7 +249,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 ## No Available Payment Gateways Warning
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 During the checkout process, Subscriptions will offer a warning if there are no gateways enabled that support Subscriptions and [manual payments](https://woocommerce.com/document/subscriptions/renewal-process/#section-2) are not accepted. This message appears on the checkout page in the section where there would be payment gateways.
 
@@ -261,13 +261,13 @@ For customers, the message will inform them that there are no available payment 
 
 ## Add a Payment Gateway
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If there are no payment gateways installed yet, WooCommerce’s [guide on choosing the right payment option](https://woocommerce.com/document/premium-payment-gateway-extensions/) for your store is a good place to start. Woo Subscriptions also has a [guide on payment methods](https://woocommerce.com/document/subscriptions/payment-gateways/) that support different Subscriptions features.
 
 ## Enable a Payment Gateway
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 There are many [payment gateways](https://woocommerce.com/document/subscriptions/payment-gateways/) that are available that support Subscriptions and [automatic payments](https://woocommerce.com/document/subscriptions/payment-gateways/#section-1).
 

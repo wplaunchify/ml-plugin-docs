@@ -38,7 +38,7 @@ Action hooks are available for important subscription *events*. Examples of subs
 
 [↑ Back to top](#doc-title)
 
-Filters are available for formatting and customizing data within the Subscriptions extension, like the “Sign Up Now” button text. For a full list of the available filters, see the [Filter Reference](https://woocommerce.com/document/subscriptions/develop/filter-reference/).
+Filters are available for formatting and customizing data within the Subscriptions extension, like the “**Add to cart**” button text. For a full list of the available filters, see the [Filter Reference](https://woocommerce.com/document/subscriptions/develop/filter-reference/).
 
 ### Functions
 
@@ -901,7 +901,7 @@ This guide is designed for developers looking for a technical understanding of t
 
 ## Subscription Related Order Cache
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 A subscription can have a variety of [related orders](https://woocommerce.com/document/subscriptions/orders/), including:
 
@@ -976,7 +976,7 @@ get_post_meta()
 
 ### Subscription Related Order Cache Meta Keys
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 The meta keys use for each related order cache are:
 
@@ -995,7 +995,7 @@ _subscription_resubscribe_order_ids_cache
 
 ## Customer’s Subscription Cache
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 A subscription’s data is a [superset of a WooCommerce order’s data](https://woocommerce.com/document/subscriptions/orders/). As a result, the way a subscription is linked to a customer is the same as the way an order is linked to a customer, where the 
 ```
@@ -1069,7 +1069,7 @@ get_user_meta()
 
 ## Subscription Cache Management Tools
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 To use the subscription cache management tool to create and delete the subscription caches:
 
@@ -1086,7 +1086,7 @@ To use the subscription cache management tool to create and delete the subscript
 
 ### Subscription Cache Generation via the Generator Tools
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 Cache generation will normally happen just-in-time, meaning the first time it’s required, the data will be pulled from the source and then cached for future use. However, each cache can also be generated via the cache Generate Tools mentioned above.
 
@@ -1096,7 +1096,7 @@ That’s because the cache tools are designed to generate the cache without inte
 
 ## Cache Data Stores
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 To abstract the caching layer, and incorporate it in a way that can easily be extended, swapped or removed, the caching logic is implemented within data store classes for each type of data being cached.
 
@@ -1127,7 +1127,7 @@ Each of these classes are used as the data stores for accessing respective data,
 
 ### Using a Custom Related Order Data Store
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 The 
 ```
@@ -1162,7 +1162,7 @@ function wcs_bypass_related_order_cache_layer( $class ) {
 
 ### Using a Custom Customer Subscription Data Store
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 The 
 ```
@@ -1197,11 +1197,11 @@ function wcs_bypass_customer_subscriptions_cache_layer( $class ) {
 
 ## FAQs
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 ### Why does subscription data need to be cached?
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 WooCommerce Subscriptions builds on [WordPress custom post types](https://wordpress.org/documentation/article/what-is-post-type/) to [store subscription data](https://woocommerce.com/document/subscriptions/develop/data-structure/#subscription-product-data-structure-and-storage). As a result, much of its data is stored in the same database tables as other content types, like blog posts, website pages, WooCommerce orders, and data from other plugins.
 
@@ -1218,7 +1218,7 @@ To address this, many items of known subscription data will be migrated to separ
 
 ### How does the subscription cache work?
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 Normally, to find a piece of data, like the IDs of orders related to a subscription, a database query is run against the source of that data.
 
@@ -1242,7 +1242,7 @@ After updating to Subscriptions 2.3, known slow queries will run just once. From
 
 ### How long does the subscription cache last?
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 In some systems, like [WordPress’ transient system](https://developer.wordpress.org/apis/transients/), cached data will expired after a pre-defined period of time.
 
@@ -1252,7 +1252,7 @@ It is possible to maintain the cache indefinitely by keeping it up-to-date whene
 
 ### Why isn’t the Parent Order in the related order cache?
 
-[↑ Back to top](#doc-title)
+[↑ Volver al principio](#doc-title)
 
 Parent Orders are linked to a subscription using the 
 ```
@@ -1274,15 +1274,7 @@ As a result, it is not necessary cache the parent orders for a subscription.
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -1290,6 +1282,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -4325,15 +4325,7 @@ woocommerce_update_options()
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -4341,6 +4333,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -5239,15 +5239,7 @@ Get the total sign-up fee amount charged at the outset of the subscription, if a
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -5255,6 +5247,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -5606,15 +5606,7 @@ $user_id
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -5622,6 +5614,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -5837,15 +5837,7 @@ false
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -5853,6 +5845,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -6196,7 +6196,7 @@ For example, the three screenshots below show:
 No design is perfect, and as such, this implementation did introduce some new issues. These issues and the solutions are:
 - a customer could no longer cancel subscriptions to an individual item. This was resolved by adding a [remove item button on the View Subscription page](https://woocommerce.com/document/subscriptions/version-2/#remove-single-item) to allow the customer to remove individual items.
 - switching was previously done per subscription, which would not work with a subscription that has multiple line items. As a result, this process has been updated to be [per item](https://woocommerce.com/document/subscriptions/version-2/#section-6), instead of per subscription.
-- subscription products purchased separately are not grouped together, which results in extra renewal orders and gateway fees. This issue has not been addressed with v2.0 and instead, may be address in a later version or as a separate extension in the form of a *Add to Subscription* button. This can replace or be displayed alongside the *Add to Cart* button, allowing customers to add new products to an existing subscription, rather than creating a new subscription, while still requiring them to review and agree to the shipping costs of that subscription.
+- subscription products purchased separately are not grouped together, which results in extra renewal orders and gateway fees. This is now handled by the built-in**Add to subscription**setting, which lets customers add products to an existing subscription — from the product page or from the cart — rather than creating a new one, while still reviewing and agreeing to that subscription’s shipping costs. See the [Add to subscription](https://woocommerce.com/document/subscriptions/store-manager-guide/#add-to-subscription) section of the Store Manager Guide.
 
 ## Alternative Implementation
 
@@ -6398,15 +6398,7 @@ For example, the 3 screenshots below show:
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -6414,6 +6406,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -6448,7 +6448,7 @@ Need to upgrade a payment gateway for WooCommerce Subscriptions version 2.0? Che
 
 ## Step 1: Registering Support for Subscriptions
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 When an order contains a subscription product, the Subscriptions extension filters the available payment gateways to display only those that support recurring payments.
 
@@ -6486,7 +6486,7 @@ Now, whenever an order contains a subscription, if your gateway is enabled, it w
 
 ### Step 1.1: Registering Support for Subscription Management Features
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If your payment gateway supports subscription management functions, like cancelling or suspending a subscription, you should also notify Subscriptions that your gateway can handle these functions.
 
@@ -6532,7 +6532,7 @@ class WC_Awesome_Gateway extends WC_Payment_Gateway {
 
 ## Step 2: Processing a Subscription Sign-Up
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Like processing payment for a product, your payment gateway extension will need to process a subscription sign-up in its 
 ```
@@ -6552,7 +6552,7 @@ WC_Subscriptions_Order
 
 ### Initial Payment
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If your payment gateway requires one upfront amount for the beginning of the subscription, you can use
 
@@ -6576,7 +6576,7 @@ For more details, see the full [total initial payment function reference](https:
 
 ### Price Per Period
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If your payment gateway needs to know when creating the subscription how much to charge for each individual billing period, you can use:
 
@@ -6588,7 +6588,7 @@ For more details, see the full [price per period function reference](https://woo
 
 ### Sign-up Fee
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If your payment gateway needs a distinct sign-up fee amount for an order, you can call:
 
@@ -6600,7 +6600,7 @@ For more details, see the full [sign up fee function reference](https://woocomme
 
 ### Billing Period
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To get the subscription period for an order, call:
 
@@ -6612,7 +6612,7 @@ For more details, see the full [subscriptions period function reference](https:/
 
 ### Free Trial Period
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Payment gateways typically require one of two methods for setting up a free trial
 
@@ -6639,7 +6639,7 @@ To use the second method and set the start date, use the following function:
 
 ### Subscription Length
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To get the subscription duration for an order, call:
 
@@ -6651,7 +6651,7 @@ For more details, see the full [subscriptions length function reference](https:/
 
 ### Putting it all Together
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 The 
 ```
@@ -6803,13 +6803,13 @@ if ( WC_Subscriptions_Order::order_contains_subscription( $order_id ) ) {
 
 ## Step 3: Subscription Management
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 After a subscription has been purchased with your extension, certain aspects of the subscription are managed automatically while others need to be managed by your gateway extension.
 
 ### Order Status & Subscription Status Binding
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Subscription status is bound to order status changes, so using the [WooCommerce Payment Gateway API](https://woocommerce.com/document/payment-gateway-api/) to set an order’s status will automatically set the status of a subscription. When an order status changes to processing or complete, a subscription purchased in the order is activated automatically. When an order is cancelled, refunded or marked as failed, the status of a subscription in that order will also be updated to cancelled or failed.
 
@@ -6817,7 +6817,7 @@ As a result, the bare minimum required to manage a subscription is to use the [W
 
 ### Subscription Payment & Status Management
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 There is no automatic handling of subscription payments. Either your gateway or your extension will need to handle these payments.
 
@@ -7051,13 +7051,13 @@ process_subscription_payment_failure_on_order()
 
 ### Order API vs Individual Subscription API
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 You may have noticed a trend in the API. Subscriptions includes functions for operating both on an order and on an individual subscription. In most cases, you will find it easier to use the function that operates on an order. It is also better to operate on an order other than an individual subscription, because you will need to use less code within your extension.
 
 ### Subscription Management Example
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 The 
 ```
@@ -7190,7 +7190,7 @@ switch( $transaction_details['txn_type'] ) {
 
 ## Step 4: Failed Payments
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Subscriptions also provides an API for handling failed payments, which your extension may or may not need to use depending on whether your payment gateway will process failed payments.
 
@@ -7214,7 +7214,7 @@ If your gateway does not manage failed payments for you, you **must** use one of
 
 ## Step 5: Recurring Payment Method Changes
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Subscriptions 1.4 introduced a way for customers to change the payment method used for future payments on their subscription. It also uses this method to update the payment method on a subscription when a recurring payment failed.
 
@@ -7240,7 +7240,7 @@ _
 
 ### 5.1: Supporting Subscriber Payment Method Changes
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To support [customer initiated payment method changes](https://woocommerce.com/document/subscriptions/customers-view/#section-11), your extension will only need to be able to process subscription orders with a $0 initial total. Subscriptions creates a mock checkout using the original order details and overriding the total to be $0. If your payment gateway extension correctly handles a $0 initial total, as it will need to do to process free trial periods correctly, then it shouldn’t need any additional code to handle payment method changes.
 
@@ -7270,7 +7270,7 @@ process_payment()
 
 ### 5.2: Updating the Payment Method After a Failure
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If a subscriber’s automatic payment [fails](https://woocommerce.com/document/subscriptions/renewal-process/#section-7), the subscription will be put on-hold until they log in to complete the payment.
 
@@ -7299,7 +7299,7 @@ For payment gateway changes to work, your extension will also need to be able to
 
 ## Step 6: Testing Renewal Payments
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Once you have everything set-up and working, you may want to test recurring payments.
 
@@ -7319,11 +7319,11 @@ You can also use this method to test *payment failures*. To do so, delete or mod
 
 ## FAQs
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### How can I debug issues with renewal orders?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If a renewal payment is being processed correctly at the payment gateway but the renewal order’s status is not being set to **processing** or **completed**, then it is likely a PHP fatal error is occurring during the renewal process. This error may be caused by custom code, plugin conflicts or other server related issues.
 
@@ -7370,15 +7370,7 @@ PHP Fatal error
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
-
-### WooCommerce Memberships
-
-	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
-
-Power your membership association, online magazine, elearning sites, and more with access control to...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -7386,6 +7378,14 @@ Power your membership association, online magazine, elearning sites, and more wi
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
+				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
+
+### Shipment Tracking
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
+
+Add shipment tracking information to your orders.
 
 ---
 
@@ -7824,7 +7824,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 # How can I stop Subscriptions from changing a user’s role?
 
-			WooCommerce Subscriptions changes a user’s role by default, when the status of their subscription or subscriptions change, as explained in the [Role Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#role-settings) document.
+			WooCommerce Subscriptions changes a user’s role by default when the status of their subscription or subscriptions change, as explained in the [Subscriber roles](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscriber-roles).
 
 However, it is possible to stop this default behaviour with a small amount of custom code. This setup is helpful when you implement a custom user role or logic on a site and need to keep other user roles assigned when someone subscribes. Below, you’ll find a simple plugin demonstrating how to achieve this.
 

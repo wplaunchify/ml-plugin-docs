@@ -408,7 +408,7 @@ When you process a renewal on a subscription using automatic payments, the subsc
 
 Tip: View the renewal order by clicking the new order ID in the **Subscription Notes** meta box.
 
-### Cancel or suspend a subscription
+### How suspensions work
 
 [↑ Back to top](#doc-title)
 
@@ -420,20 +420,20 @@ You can cancel, suspend, or reactivate a subscription quickly from **WooCommerce
 
 #### How suspensions  work
 
-When a store manager or customer **suspends** a subscription, all payments stop while in suspension. The user’s role is set to the default [inactive subscriber role](https://woocommerce.com/document/store-manager-guide/#role-settings).
+When a store manager or customer **suspends** a subscription, all payments stop while in suspension. The user’s role is set to the default [inactive subscriber role](https://woocommerce.com/document/subscriptions/store-manager-guide/#subscriber-roles).
 
 Reactivating a subscription continues the original payment schedule. Suspensions do not change the payment schedule no matter the of the suspension. **For example:**
 
 If a customer buys a monthly subscription product on the 1st of January, then suspends their subscription on February 12th, they will not pay anything until they reactivate it. If the customer reactivates the subscription on May 22nd, Subscriptions will charge the next payment on June 1st, because the subscription originally started on that billing date.
 
-WooCommerce Subscriptions allows you to set a limit on the number of times a subscriber can suspend or reactivate their subscription, or to prevent suspension completely on the [settings page](https://woocommerce.com/document/subscriptions/store-manager-guide/#customer-suspensions).
+WooCommerce Subscriptions lets you allow subscriber suspensions, limit how many times a subscriber can suspend their subscription per billing period, or turn suspensions off completely on the [settings page](https://woocommerce.com/document/subscriptions/store-manager-guide/#suspensions).
 
 **Requirements to Display Suspend and Cancel  Buttons:**
 
 - Woo Subscriptions plugin must be active.
 - The payment gateway used to purchase the subscription must support subscription suspension.
 - The subscription must currently have a status of **active** or **pending** to suspend, and a **status of active**,**pending,** or **on-hold** to cancel.
-- Customer suspension is enabled in the Subscription Settings or is a store admin.
+- Subscriber suspensions are enabled in the Subscription Settings, or the user is a store admin.
 - The subscription must have at least one future payment to cancel it.
 
 Note: If an admin cancels a Subscription when the schedule is managed by the payment gateway, they will not be able to reactivate it back when the Subscription goes to Pending Cancellation status.
