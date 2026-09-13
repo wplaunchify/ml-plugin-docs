@@ -239,7 +239,8 @@ Advanced Headers are compatible with both Classic WordPress Websites and Full Si
 
 Advanced Header Blocks work similarly to Patterns and are Synced across the website. So whenever you edit a specific Advanced Header in one part of your website, it will also update across all instances of that Advanced Header. This also applies to Advanced Navigation.
 
-Via Kadence ThemeTo add Advanced Headers to the Kadence Theme, you must first create an Advanced Header. This can be done using the Dashboard -> Kadence -> Headers page.
+Via Kadence Theme
+To add Advanced Headers to the Kadence Theme, you must first create an Advanced Header. This can be done using the Dashboard -> Kadence -> Headers page.
 
 ![Add New Kadence Header](https://docs.nexcess.com/wp-content/uploads/2026/06/Add-New-Kadence-Header.jpg)
 
@@ -247,7 +248,8 @@ Once a Header is created, navigate to the Customizer, go to the Header Settings,
 
 ![Using Advanced Headers in the Kadence Theme](https://docs.nexcess.com/wp-content/uploads/2026/06/Using-Advanced-Headers-in-the-Kadence-Theme.gif)
 
-This will apply the Advanced Header across the entire Kadence Website.Via Hooked Elements (Pro)[Kadence Theme Kit Pro](https://www.kadencewp.com/kadence-theme/premium/) features [Hooked Elements](https://docs.nexcess.com/software/kadence/theme/use-element-hooks/). Use a Hooked Element to automatically insert Advanced Headers across your website to display Headers Conditionally.
+This will apply the Advanced Header across the entire Kadence Website.Via Hooked Elements (Pro)
+[Kadence Theme Kit Pro](https://www.kadencewp.com/kadence-theme/premium/) features [Hooked Elements](https://docs.nexcess.com/software/kadence/theme/use-element-hooks/). Use a Hooked Element to automatically insert Advanced Headers across your website to display Headers Conditionally.
 
 Then, Enable Hooked Elements from the**Dashboard -> Appearance -> Kadence**page.
 
@@ -265,7 +267,8 @@ Once done, use the Element Settings to specify where the Element will appear. Un
 
 ![Element Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Element-Settings-1.jpg)
 
-Once saved, the new Hooked Element will replace the Standard Header, allowing you to use Advanced Headers Conditionally across your Kadence website.Via FSE ThemeFor Full Site Editing websites, it is recommended to use the Header Block as the primary block in your Header Pattern or Template. [Click here to learn more about using and adding Advanced Headers to Full Site Editing websites.](https://docs.nexcess.com/software/kadence/blocks/headers-footers-full-site-editing/)
+Once saved, the new Hooked Element will replace the Standard Header, allowing you to use Advanced Headers Conditionally across your Kadence website.Via FSE Theme
+For Full Site Editing websites, it is recommended to use the Header Block as the primary block in your Header Pattern or Template. [Click here to learn more about using and adding Advanced Headers to Full Site Editing websites.](https://docs.nexcess.com/software/kadence/blocks/headers-footers-full-site-editing/)
 
 ---
 

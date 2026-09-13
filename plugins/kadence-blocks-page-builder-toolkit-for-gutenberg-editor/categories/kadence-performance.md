@@ -103,9 +103,12 @@ In these cases, you can re-optimize the content by removing optimization and run
 
 FAQs
 
-What post types can be optimized?Single Posts, Single Pages, WooCommerce Products, and Custom Post Types can all be optimized using Kadence Performance.
+What post types can be optimized?
+Single Posts, Single Pages, WooCommerce Products, and Custom Post Types can all be optimized using Kadence Performance.
 
-*Hooked Elements, WooTemplates, and other outside sources do not currently support performance optimization through Kadence Blocks.*Will this break my site?No, this process only changes how assets load, not how they look.Can I still use my caching plugin?Yes! Kadence Performance is designed to complement other optimization tools, not totally replace them. Kadence Performance can also help reach areas that standard optimization plugins may not cover.
+*Hooked Elements, WooTemplates, and other outside sources do not currently support performance optimization through Kadence Blocks.*Will this break my site?
+No, this process only changes how assets load, not how they look.Can I still use my caching plugin?
+Yes! Kadence Performance is designed to complement other optimization tools, not totally replace them. Kadence Performance can also help reach areas that standard optimization plugins may not cover.
 
 ---
 
