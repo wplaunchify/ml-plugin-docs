@@ -159,7 +159,7 @@ This plugin hasn’t been tested with the latest 3 major releases of WordPress. 
 							![](https://secure.gravatar.com/avatar/03f451f696eee9a4d87f6d076b2edf4e2cc90a71eb4c1c4d6160f8eb6a8ddc31?s=60&d=retro&r=g)### Awesome Plugin – Read the code
 							[DL](https://profiles.wordpress.org/dlinstedt/)
 								January 21, 2021
-						Thank you so much for this small snippet of code, I’ve had a minor problem with this bot attacking our site, and the code seems to fix it / prevent it from completing registration.   The code is clean, and simple and does the job.
+						Thank you so much for this small snippet of code, I've had a minor problem with this bot attacking our site, and the code seems to fix it / prevent it from completing registration.   The code is clean, and simple and does the job.
 
 		[Read all 10 reviews](https://wordpress.org/support/plugin/block-specific-spam-woo-orders/reviews/)
 
