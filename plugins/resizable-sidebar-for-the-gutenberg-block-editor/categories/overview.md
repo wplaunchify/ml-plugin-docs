@@ -45,26 +45,26 @@
 							![](https://secure.gravatar.com/avatar/21c99de6e0185ef7bc887dee56b117cdfc4cfe39c182c0091263b5a6083dca7c?s=60&d=retro&r=g)### Elevates Block Editor UX
 							[dromvati](https://profiles.wordpress.org/dromvati/)
 								August 4, 2024
-						After developing for many years with gutenberg/blocks I can confidently say: This is easily one of the most missing basic features for authoring experience. Shame this isn’t part of the core and kudos to the author.
+						After developing for many years with gutenberg/blocks I can confidently say: This is easily one of the most missing basic features for authoring experience. Shame this isn't part of the core and kudos to the author.
 							![](https://secure.gravatar.com/avatar/5f49067f3d39d2e75287f9f2b7019b61f4f7f7b475adbd3e75335cbc9a75e961?s=60&d=retro&r=g)### What I’ve been looking for years. This is it.
 							[Wolfram Kläger](https://profiles.wordpress.org/wolframhk/)
 								July 27, 2023
 																1 reply
 						OMG. How could Gutenberg have been released, ever, without this simple, little feature?! WordPress should pay millions to integrate this plugin in the next release!
 
-Seriously. Took me years to understand the “logic” of how to move Gutenberg metaboxes from below the content to the right, into the sidebar. And back. 
+Seriously. Took me years to understand the "logic" of how to move Gutenberg metaboxes from below the content to the right, into the sidebar. And back. 
 
 Together with this little plugin, the Resizable Editor Sidebar, this semi-ugly UX of Gutenberg begins to shine. Finally.
 
 Thank you ever so much for all the efforts!
 
-As of today, only 900 downloads. Unbelievable. Should easily grow to 9.000, 90.000, 900.000, 9.000.000. Let’s spread the word!
+As of today, only 900 downloads. Unbelievable. Should easily grow to 9.000, 90.000, 900.000, 9.000.000. Let's spread the word!
 							![](https://secure.gravatar.com/avatar/ca4999af3377117b7fa7bc63bf67be8e0e245a9bed52c301ac21cb14d163fda5?s=60&d=retro&r=g)### Just what I was after
 							[footstepsdesign](https://profiles.wordpress.org/footstepsdesign/)
 								November 15, 2022
 						I have ACF fields in the sidebar and a wider bar accommodates them much better, thanks 🙂
 
-I’m OK with the ad when you resize, but have you thought about an add free paid version?
+I'm OK with the ad when you resize, but have you thought about an add free paid version?
 
 		[Read all 9 reviews](https://wordpress.org/support/plugin/resizable-editor-sidebar/reviews/)
 
