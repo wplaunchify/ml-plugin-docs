@@ -114,9 +114,9 @@ wp_get_attachment_url
 	![](https://secure.gravatar.com/avatar/efe0e1ec647bebdea84c741b3fe41a5ff22356a0a19fdf5b5bb0898c1107f552?s=60&d=retro&r=g)### Great plugin
 							[X.Company](https://profiles.wordpress.org/hsultd/)
 								April 29, 2026
-						Simple and super practical.  It’s a must plugin in my sites.Easy setting, no bloat.
+						Simple and super practical.  It's a must plugin in my sites.Easy setting, no bloat.
 
-I wish there’s a “import all featured image url from fifu” so I can get rid of that bloated plugin.
+I wish there's a "import all featured image url from fifu" so I can get rid of that bloated plugin.
 							![](https://secure.gravatar.com/avatar/69b74a8b449201f3e9e4c562803d8ede0bb97bd5ad04af631f12d6a7cac673ea?s=60&d=retro&r=g)### It does exactly what it says in the tin
 							[danielepais](https://profiles.wordpress.org/danielepais/)
 								July 31, 2025
@@ -130,23 +130,23 @@ I wish there’s a “import all featured image url from fifu” so I can get ri
 								June 2, 2025
 						I want to let you know that it is the perfect plugin for remote images. The solution if you are using WP All Import and you get the images from lets say {photos/photo} (this returns all the images separated by comma), is to create two functions that creates the serialized data to use it in custom fields:
 
-function get_featured_image($photos) {if (empty($photos)) return ‘NO_PHOTOS’;if (!is_array($photos)) {    $photos = explode(‘,’, $photos);}$first = trim($photos[0]);return serialize([    ‘img_url’ => $first,    ‘width’ => ”,    ‘height’ => ”]);}function get_gallery_images($photos) {if (empty($photos)) return ”;if (!is_array($photos)) {    $photos = explode(‘,’, $photos);}if (count($photos) < 2) return ”;$gallery = [];for ($i = 1; $i < count($photos); $i++) {    $url = trim($photos[$i]);    $gallery[] = [        ‘url’ => $url,        ‘width’ => ”,        ‘height’ => ”    ];}return serialize($gallery);}
+function get_featured_image($photos) {if (empty($photos)) return 'NO_PHOTOS';if (!is_array($photos)) {    $photos = explode(',', $photos);}$first = trim($photos[0]);return serialize([    'img_url' => $first,    'width' => '',    'height' => '']);}function get_gallery_images($photos) {if (empty($photos)) return '';if (!is_array($photos)) {    $photos = explode(',', $photos);}if (count($photos) < 2) return '';$gallery = [];for ($i = 1; $i < count($photos); $i++) {    $url = trim($photos[$i]);    $gallery[] = [        'url' => $url,        'width' => '',        'height' => ''    ];}return serialize($gallery);}
 
-Then you just create a custom field for the featured image with name “_harikrutfiwu_url” and value: [get_featured_image({photos/photo})]
+Then you just create a custom field for the featured image with name "_harikrutfiwu_url" and value: [get_featured_image({photos/photo})]
 
-And a custom field for gallery images with name “_harikrutfiwu_wcgallary” and value: [get_gallery_images({photos/photo})]
+And a custom field for gallery images with name "_harikrutfiwu_wcgallary" and value: [get_gallery_images({photos/photo})]
 
-That’s all.
+That's all.
 
 Happy Import with this amazing plugin.
 							![](https://secure.gravatar.com/avatar/5cecd0cc97be07668dce230e08992c025921179458e17767dfebb39355dc6111?s=60&d=retro&r=g)### Works perfectly
 							[basivnia](https://profiles.wordpress.org/basivnia/)
 								April 20, 2025
-						I rarely give reviews but this plugin is my lifesaver and it’s hard not to recommend it. I’m using it for couple of months now and it works perfectly on older and newer vesions of Wordpress. Simple, no 200 pages of settings, just install and use. The only thing that doesn’t work for me is Yoast SEO’s social media image preview which worked with older version of Wordpress but doesn’t work with the latest, sadly. Other than this little thing, it’s simple, small and working well plugin.
+						I rarely give reviews but this plugin is my lifesaver and it's hard not to recommend it. I'm using it for couple of months now and it works perfectly on older and newer vesions of Wordpress. Simple, no 200 pages of settings, just install and use. The only thing that doesn't work for me is Yoast SEO's social media image preview which worked with older version of Wordpress but doesn't work with the latest, sadly. Other than this little thing, it's simple, small and working well plugin.
 							![](https://secure.gravatar.com/avatar/b1cbd89a7569fc500b97c38fd9f93dbc3363b3c358d55c9a4aa49efd2f2cdb1a?s=60&d=retro&r=g)### saved $$ perfect for woocommerce
 							[rahaprogramming](https://profiles.wordpress.org/rahaprogramming/)
 								February 24, 2025
-						note the woocommerce rest api keys for images:meta_gallery = {“key”: “_harikrutfiwu_wcgallary”,”value”: [{“url”: img_url} for img_url in product_images]}meta_featured = { #  thumbnails”key”: “_harikrutfiwu_url”,”value”: product_images[0]}meta_featured_alt = {“key”: “_knawatfibu_alt”,”value”: product_images[0]}meta_images.append(meta_featured)product_data = {“name”: product_title,”type”: “simple”,”regular_price”: str(product_price),”price”: str(product_price),”sku”: str(product_sku),”description”: product_description,”short_description”: product_short,”status”: “publish”,”categories”: category_ids,”meta_data”: meta_images,#”images”: images,”attributes”:attributes_list}
+						note the woocommerce rest api keys for images:meta_gallery = {"key": "_harikrutfiwu_wcgallary","value": [{"url": img_url} for img_url in product_images]}meta_featured = { #  thumbnails"key": "_harikrutfiwu_url","value": product_images[0]}meta_featured_alt = {"key": "_knawatfibu_alt","value": product_images[0]}meta_images.append(meta_featured)product_data = {"name": product_title,"type": "simple","regular_price": str(product_price),"price": str(product_price),"sku": str(product_sku),"description": product_description,"short_description": product_short,"status": "publish","categories": category_ids,"meta_data": meta_images,#"images": images,"attributes":attributes_list}
 
 		[Read all 9 reviews](https://wordpress.org/support/plugin/featured-image-with-url/reviews/)
 
