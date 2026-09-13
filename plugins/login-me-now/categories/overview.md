@@ -204,7 +204,7 @@ The plugin is well-designed and easy to set up, and it eliminates the hassle of 
 							![](https://secure.gravatar.com/avatar/32f67b941b1d67ba408955264f11594080451f97550cbc44974967027c4d0835?s=60&d=retro&r=g)### Great Plugin for Sharing Access
 							[Kawshar Ahmed](https://profiles.wordpress.org/onlykawshar/)
 								November 11, 2023
-						This is absolutely a great plugin for sharing access with other contributors. It helped me to easily share my website access with my SEO manager and helped us optimize our website’s SEO efficiently.
+						This is absolutely a great plugin for sharing access with other contributors. It helped me to easily share my website access with my SEO manager and helped us optimize our website's SEO efficiently.
 							![](https://secure.gravatar.com/avatar/0361f7fbba338b95d27545dd8ce6962f622386d9a0bd7ad1a65d5277098a690a?s=60&d=retro&r=g)### Amazing Plugin
 							[Abdullah Nahian](https://profiles.wordpress.org/nahian91/)
 								November 11, 2023
