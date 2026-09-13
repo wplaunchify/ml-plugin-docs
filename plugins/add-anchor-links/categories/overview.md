@@ -55,9 +55,9 @@ Either post it on [GitHub](https://github.com/vyskoczilova/add-anchor-links) or�
 								June 24, 2022
 						This plugin works well and apparently works as intended.
 
-I’m probably missing something, but I don’t understand why it scrolls the header to the top when the icon is clicked, instead of copying the corresponding anchored link (i.e.”pageurl/#header-title)” to the clipboard. After all, the header already has to be in view in order to click the icon beside the header.
+I'm probably missing something, but I don't understand why it scrolls the header to the top when the icon is clicked, instead of copying the corresponding anchored link (i.e."pageurl/#header-title)" to the clipboard. After all, the header already has to be in view in order to click the icon beside the header.
 
-If the plugin author would make the above modification and add an automatically fading “copied to clipboard,” message, the plugin would be ideal, IMHO.
+If the plugin author would make the above modification and add an automatically fading "copied to clipboard," message, the plugin would be ideal, IMHO.
 ,
 							![](https://secure.gravatar.com/avatar/fccf55474efeda3e8ee66896c6101f5ac9ea3ec3c4be9b4fd633aa51767929fa?s=60&d=retro&r=g)### Worked instantly
 							[Jan Reilink](https://profiles.wordpress.org/janr/)
