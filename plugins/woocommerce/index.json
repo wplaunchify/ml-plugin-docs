@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-09-06T18:54:25.192Z",
-  "total_pages": 3817,
+  "last_scraped": "2026-09-13T21:19:13.065Z",
+  "total_pages": 3823,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -11,8 +11,44 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3817,
+      "page_count": 3823,
       "pages": [
+        {
+          "title": "Retrieval hooks",
+          "url": "https://woocommerce.com/document/sensai/retrieval-hooks/"
+        },
+        {
+          "title": "Product Dependencies for WooCommerce",
+          "url": "https://woocommerce.com/document/product-dependencies/"
+        },
+        {
+          "title": "How customers can unsubscribe and resubscribe from coupon reminder emails",
+          "url": "https://woocommerce.com/document/smart-coupons/how-customers-can-unsubscribe-and-resubscribe-from-coupon-reminder-emails/"
+        },
+        {
+          "title": "Exclude a post from SensAI indexing",
+          "url": "https://woocommerce.com/document/sensai/exclude-a-post-from-sensai-indexing/"
+        },
+        {
+          "title": "NotifyStore – Smart Store Alerts",
+          "url": "https://woocommerce.com/document/notifystore/"
+        },
+        {
+          "title": "Bulk Search & Replace",
+          "url": "https://woocommerce.com/document/bulk-search-replace/"
+        },
+        {
+          "title": "Help Scout Connector for WooCommerce",
+          "url": "https://woocommerce.com/document/helpscout-connector/"
+        },
+        {
+          "title": "How to connect Addify Extensions to AI Models Using MCP",
+          "url": "https://woocommerce.com/document/how-to-connect-addify-extensions-to-ai-models-using-mcp/"
+        },
+        {
+          "title": "Taxually",
+          "url": "https://woocommerce.com/document/taxually/"
+        },
         {
           "title": "payabl. Checkout",
           "url": "https://woocommerce.com/document/payabl-checkout/"
@@ -382,16 +418,12 @@
           "url": "https://woocommerce.com/document/connect-order-delivery-date-pro-to-ai-assistants-using-mcp/"
         },
         {
-          "title": "Understanding the Excellence Verified badge on the Woo Marketplace",
+          "title": "Understanding the Excellence verified badge on the Woo Marketplace",
           "url": "https://woocommerce.com/document/understanding-the-excellence-verified-badge-on-the-woo-marketplace/"
         },
         {
           "title": "Remove USPS Flat Rate envelopes with a code snippet",
           "url": "https://woocommerce.com/document/remove-usps-flat-rate-envelopes-code-snippet/"
-        },
-        {
-          "title": "Shopify Data Migrator To WooCommerce",
-          "url": "https://woocommerce.com/document/shopify-data-migrator-to-woocommerce/"
         },
         {
           "title": "Require an active subscription for referral coupons",
@@ -666,8 +698,8 @@
           "url": "https://woocommerce.com/document/troubleshooting-the-all-products-for-subscriptions-product-migration/"
         },
         {
-          "title": "ProfitSync – Profit, COGS and Expense Tracker",
-          "url": "https://woocommerce.com/document/profitsync/"
+          "title": "Profitrics – Profit, COGS and Expense Tracker",
+          "url": "https://woocommerce.com/document/profitrics/"
         },
         {
           "title": "Helcim for WooCommerce",
@@ -4950,8 +4982,8 @@
           "url": "https://woocommerce.com/document/tipping-donation-at-cart-checkout/"
         },
         {
-          "title": "Order By Spreadsheet",
-          "url": "https://woocommerce.com/document/order-by-spreadsheet/"
+          "title": "Bulk Order Entry – Spreadsheet, Barcode & Reorder",
+          "url": "https://woocommerce.com/document/bulk-order-entry/"
         },
         {
           "title": "WordPress nonces",
@@ -6210,12 +6242,12 @@
           "url": "https://woocommerce.com/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes/"
         },
         {
-          "title": "Testing orders",
-          "url": "https://woocommerce.com/document/managing-orders/testing-orders/"
+          "title": "Troubleshooting shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/troubleshooting-shortcodes/"
         },
         {
-          "title": "Troubleshooting Orders",
-          "url": "https://woocommerce.com/document/managing-orders/troubleshooting-orders/"
+          "title": "Product Category Shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/product-category/"
         },
         {
           "title": "Feature, Filter, and Sort Products",
@@ -7768,10 +7800,6 @@
         {
           "title": "Beleco",
           "url": "https://woocommerce.com/document/beleco-theme/"
-        },
-        {
-          "title": "Before / After Product Compare Slider",
-          "url": "https://woocommerce.com/document/before-after-product-compare-slider/"
         },
         {
           "title": "WhatsApp Purchase Assistant",
@@ -9946,10 +9974,6 @@
           "url": "https://woocommerce.com/document/order-messenger-for-woocommerce/"
         },
         {
-          "title": "Shipping Fees Calculator for Geniki Taxydromiki",
-          "url": "https://woocommerce.com/document/geniki-taxydromiki-shipping-fees/"
-        },
-        {
           "title": "Variation Switcher in Cart for WooCommerce",
           "url": "https://woocommerce.com/document/variation-switcher-in-cart-for-woocommerce/"
         },
@@ -10290,20 +10314,20 @@
           "url": "https://woocommerce.com/document/back-in-stock-notifications/feedback-and-suggestions/"
         },
         {
-          "title": "Live Sales Notification for WooCommerce",
-          "url": "https://woocommerce.com/document/live-sales-notification-for-woocommerce/"
+          "title": "Customer Support for WooCommerce",
+          "url": "https://woocommerce.com/document/customer-support-for-woocommerce/"
         },
         {
-          "title": "WooCommerce SEO by WordLift",
-          "url": "https://woocommerce.com/document/e-commerce-seo-by-wordlift/"
+          "title": "How to set specific commission rates for product/product category",
+          "url": "https://woocommerce.com/document/affiliate-for-woocommerce/how-to-set-different-affiliate-commission-rates-for-product-or-product-category/"
         },
         {
-          "title": "Merge Orders",
-          "url": "https://woocommerce.com/document/merge-orders/"
+          "title": "Back In Stock Notifications",
+          "url": "https://woocommerce.com/document/back-in-stock-notifications/"
         },
         {
-          "title": "WooCommerce Box Office",
-          "url": "https://woocommerce.com/document/woocommerce-box-office/"
+          "title": "Hide Prices & Private Store for WooCommerce",
+          "url": "https://woocommerce.com/document/hide-prices-private-store-for-woocommerce/"
         },
         {
           "title": "The My account page",
@@ -12530,20 +12554,20 @@
           "url": "https://woocommerce.com/document/subscriptions-gifting/"
         },
         {
-          "title": "[woocommerce_product_filter_products]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_products/"
+          "title": "Google Product Feed – Product Review Feeds",
+          "url": "https://woocommerce.com/document/google-product-feed-product-review-feeds/"
         },
         {
-          "title": "[woocommerce_product_filter_tag]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_tag/"
+          "title": "Mailchimp for WooCommerce Memberships",
+          "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
         },
         {
-          "title": "[woocommerce_product_filter_category]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_category/"
+          "title": "Add to Cart Redirect",
+          "url": "https://woocommerce.com/document/add-to-cart-redirect/"
         },
         {
-          "title": "[woocommerce_product_filter_attribute]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_attribute/"
+          "title": "WooCommerce site and data security FAQ",
+          "url": "https://woocommerce.com/document/woocommerce-security-faq/"
         },
         {
           "title": "[woocommerce_product_filter_price]",
