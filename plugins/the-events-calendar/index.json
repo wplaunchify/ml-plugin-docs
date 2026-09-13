@@ -2,7 +2,7 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-09-06T06:35:14.254Z",
+  "last_scraped": "2026-09-13T11:43:25.605Z",
   "total_pages": 348,
   "failed_urls_count": 1,
   "sections": [
@@ -586,7 +586,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Conflict Testing With the Health Check Plugin",
+          "title": "How to Test for Plugin Conflicts",
           "url": "https://docs.nexcess.com/software/the-events-calendar/conflict-testing-with-the-health-check-plugin/"
         }
       ]
@@ -3524,7 +3524,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Testing Conflicts With Themes and Other Plugins",
+          "title": "How to Test for Plugin Conflicts",
           "url": "https://docs.nexcess.com/software/the-events-calendar/testing-for-conflicts/"
         }
       ]

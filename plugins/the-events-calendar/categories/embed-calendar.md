@@ -52,28 +52,32 @@ Once I publish this page, the Calendar will show on my site without needing to h
 
 ### Frequently Asked Questions
 
-General Questions**Q: Is Calendar Embed a premium feature?** 
+General Questions
+**Q: Is Calendar Embed a premium feature?** 
 **A:** No, Calendar Embed is available for free to all The Events Calendar users. This feature is available by default and does not require any additional activation.
 
 **Q: Can I create multiple embed calendars?**
 **A:** Yes, you can create as many embed calendars as you need, each with its own unique settings and filters.
 
 **Q:** **Will my embedded calendar automatically update when I add new events?**
-**A:** Yes, embedded calendars automatically sync with your event data. Any new events that match your calendar’s filter criteria will appear automatically.Implementation Questions**Q:** **Can I restrict which websites can embed my calendar?**
+**A:** Yes, embedded calendars automatically sync with your event data. Any new events that match your calendar’s filter criteria will appear automatically.Implementation Questions
+**Q:** **Can I restrict which websites can embed my calendar?**
 **A:** Currently, the embed code can be used on any website. We don’t support restricting which domains can embed the calendar, but you might be able to achieve this through proper networking or customization.
 
 **Q**: **What happens when someone clicks an event in the embedded calendar?**
 **A:** Clicking an event opens the full event page on your original website in a new tab.
 
 **Q:** **Can I customize the appearance of the embedded calendar?**
-**A:** The embedded calendar uses your default calendar view styling. While customizing the appearance is not possible out of the box you can try achieving this through customization. You can view our Full guide on customizations on [this page](https://docs.nexcess.com/software/the-events-calendar/customization/), as well as our Developer Docs in [this database](https://docs.theeventscalendar.com/).Technical Questions**Q:** **Will the embedded calendar affect my website’s performance?**
+**A:** The embedded calendar uses your default calendar view styling. While customizing the appearance is not possible out of the box you can try achieving this through customization. You can view our Full guide on customizations on [this page](https://docs.nexcess.com/software/the-events-calendar/customization/), as well as our Developer Docs in [this database](https://docs.theeventscalendar.com/).Technical Questions
+**Q:** **Will the embedded calendar affect my website’s performance?**
 **A:** The embedded calendar functions the same as a visitor accessing the “Events” page directly. It does not load separately from the main site.
 
 **Q:** **Which calendar views are supported in the embedded version?**
 **A:** Currently, the month calendar view is supported. Additional views will be added in future updates.
 
 **Q:** **Can I use multiple event categories and tag filters on the same calendar?**
-**A:** Yes, you can combine multiple categories and tags to create precisely filtered calendar displays.Troubleshooting Questions**Q:** **What should I do if my embedded calendar isn’t displaying?**
+**A:** Yes, you can combine multiple categories and tags to create precisely filtered calendar displays.Troubleshooting Questions
+**Q:** **What should I do if my embedded calendar isn’t displaying?**
 **A:**Check these common solutions:
 
 - Verify the embed code was copied completely

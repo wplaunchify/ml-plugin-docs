@@ -4,96 +4,93 @@
 
 ---
 
-## Testing Conflicts With Themes and Other Plugins
+## How to Test for Plugin Conflicts
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/testing-for-conflicts/](https://docs.nexcess.com/software/the-events-calendar/testing-for-conflicts/)
 
-We work hard to make our plugins broadly compatible. However, like all WordPress developers we cannot test with every plugin, theme, and server environment out there. Sometimes “conflicts” occur. This happens when code from one plugin or theme conflicts with another plugin or theme. Most problems that arise with WordPress plugins (like The Events Calendar) are actually conflicts.
+When a feature on your website stops working as expected, such as layout breaks, editor errors, form submission failures, or unexpected display issues, the underlying cause is often a **plugin or theme conflict**.
 
-This tutorial will help you to determine if a conflict is happening, and find out if it is your theme, or which of your plugin(s) are causing it. Carefully following these steps is often essential to finding a solution, because each step can help you quickly narrow down the possible causes of the problem.
+In WordPress, plugins and themes are created by thousands of different developers. Because they share the same execution environment and hook into the same core scripts, styling rules, and database functions, two pieces of code occasionally run into each other and cause unintended errors.
 
-Here are the steps:
+Conflict testing is the process of systematically isolating your site’s software to identify exactly which plugin or theme is causing the issue.
 
-- [Test if there is a conflict](#test-for-conflict)
-- [Find the source of a conflict](#find-source-of-conflict)
-- [Look for a solution](#look-for-solution)
+## Step 1: Prepare Your Website Before Testing
 
-The process we describe here can result in some amount of disruption to your site. To avoid this, we recommend you either make use of a [staging site](https://docs.nexcess.com/software/the-events-calendar/creating-and-using-a-wordpress-staging-site/#set-up) and test things there or, if that is not possible, consider using a plugin like [Plugin Detective](https://wordpress.org/plugins/plugin-detective/) and/or [Health Check](https://wordpress.org/plugins/health-check/), each of which provide a [troubleshooting mode](https://make.wordpress.org/support/handbook/appendix/troubleshooting-using-the-health-check/#troubleshooting) that aims to ensure your site will continue to operate as normal for regular visitors.
+Before making any changes to your site configuration, always complete the following preparatory steps:
 
-Please note, however, if you **change any settings** (e.g. default calendar view) while running a *Health Check* those will be **reflected on your live site** as well.
+- **Update to the Latest Versions:** Ensure WordPress core, your active theme, and all installed plugins are updated to their latest versions. Known bugs and compatibility issues are frequently patched in software releases, so updating first might resolve the issue right away.
+- **Create a Full Backup:** Take a complete backup of your website’s database and files using your web host’s backup tool or a reliable backup plugin.
+- **Use a Staging Site (Recommended):** If your host provides a staging environment, perform your tests there to prevent downtime or visual disruption for live visitors. You can learn about different ways to set up a staging environment [here](https://docs.nexcess.com/software/troubleshooting/setup-wordpress-staging-site/).
+- **Clear Caches:** Clear your browser cache, along with any server-level caching or caching plugins (e.g., Redis, object cache, page cache), to ensure you see real-time changes during testing.
 
-### Test if there is a conflict
+## Step 2: Test for a Theme or Plugin Conflict
 
-**Step 1: Switch to the Twenty Twenty theme.**Go to your site’s [WP Admin area](http://codex.wordpress.org/Administration_Screens). In the left-column menu, click *Appearance > Themes*. You will see the themes available on your site. Move your cursor over the “Twenty Twenty” theme, and click “Activate”.
+The standard manual conflict test involves switching to a default theme and deactivating plugins to isolate the root cause.
 
-**💡** **Note:** The Events Calendar is not fully compatible yet with Full Site Editing, which is a part of the Twenty TwentyTwo theme. Thus, we recommend running the conflict test with Twenty Twenty.
+### Phase A: Test for a Theme Conflict
 
-**Step 2: Disable all plugins (including The Events Calendar extensions) except The Events Calendar and Event Tickets plugins.** In the left-column menu of WP Admin, click *Plugins > Installed Plugins*. You will now see all the plugins you have installed. Click the checkbox next to every one except The Events Calendar, and any Events Calendar add-ons like Events Calendar Pro. From the Bulk Actions drop-down menu, select “Deactivate” and then click “Apply”.
+1. Go to **Appearance > Themes**.
+2. Temporarily activate a standard, uncustomized default WordPress theme (such as **Twenty Twenty** or **Twenty Twenty-Four**).
+3. Clear your browser cache and retest the issue.
+- **If the issue resolves:** Your active theme is causing the conflict.
+- **If the issue remains:** Re-enable your preferred theme and proceed to Phase B.
 
-**Step 3: Clear your browser cache and retest.** Once you have followed the [steps for clearing your browser cache](http://www.refreshyourcache.com/), go into your site and try to recreate the problem you originally noticed. If it is now fixed, that means there was a conflict. The next step is to find the source of that conflict.
+### Phase B: Test for a Plugin Conflict
 
-![Demo site banner ad](https://docs.nexcess.com/wp-content/uploads/2026/06/banner-ad-tec-demo-site.png)
+1. Go to **Plugins > Installed Plugins**.
+2. Select the checkbox next to every plugin **except** the core plugin you are testing (and any essential add-on required for it to run).
+3. From the **Bulk Actions** drop-down menu, select **Deactivate**, then click **Apply**.
+4. Clear your browser cache and retest your site.
+- **If the issue is resolved:** A plugin conflict is present. Proceed to find the specific culprit.
+- **If the issue persists:** The problem may be related to server configuration, database errors, or core settings rather than an active plugin conflict.
+5. Reactivate your remaining plugins **one by one** (or in groups), retesting your site after each activation.
+6. When the issue reappears, the plugin you just activated is the source of the conflict.
 
-### Find the source of a conflict
+## Method 2: Standard Manual Conflict Testing
 
-While these steps can be a bit tedious, they are usually necessary for finding the root cause of a conflict. Understanding the cause makes finding a solution possible.
+If you are working on a staging environment, you can perform manual conflict testing directly through your dashboard.
 
-**Step 1: Switch back to your original theme, retest.** In WP Admin go back to *Appearance > Themes*. Find your original theme, and click Activate. Try to recreate the problem again. If you can recreate the problem again, you have a theme conflict. If not, continue to step 2.
+### Phase A: Test for a Theme Conflict
 
-**Step 2: Re-enable your plugins one at a time, retest between each.** Return to the *WP Admin > Plugins > Installed Plugins* page. Find one of the plugins that you have disabled and click “Activate”. Now try to recreate the problem again. If everything works, try this step again but Activate a different plugin. If the problem has reappeared, you have a plugin conflict. Make a note of which plugin you activated that causes the problem to reappear.
+1. Go to **Appearance > Themes**.
+2. Temporarily activate a standard, uncustomized default WordPress theme (such as *Twenty Twenty* or *Twenty Twenty-Four*).
+3. Clear your browser cache and retest the issue.
+- **If the issue resolves:** Your active theme is causing the conflict.
+- **If the issue remains:** Re-enable your preferred theme and proceed to Phase B.
 
-**Step 2B: Use the Binary Search Method to Identify the Conflict** **(Faster)**
+### Phase B: Test for a Plugin Conflict
 
-If you have many plugins installed, reactivating them one by one can be time-consuming. A faster, more efficient way to find the conflicting plugin is by using the **binary search method**. This involves activating plugins in groups, to quickly pinpoint the source of the conflict.
+1. Go to **Plugins > Installed Plugins**.
+2. Select the checkbox next to every plugin **except** the core plugin you are testing (and its required add-ons).
+3. From the **Bulk Actions** drop-down menu, select **Deactivate**, then click **Apply**.
+4. Clear your browser cache and retest your site.
+- **If the issue is gone:** A plugin conflict is confirmed.
+5. Reactivate your plugins **one by one**, retesting your site after each single activation.
+6. When the error returns, the plugin you just activated is the source of the conflict.
 
-1. **Reactivate Half of the Plugins:**
-Reactivate half of the plugins, then, check if the issue persists.
-2. **Narrow Down the Problem:**
-- If the issue returns, the conflicting plugin is in the half you just reactivated.
-- If the issue doesn’t return, the conflict is in the other half.
-3. **Repeat the Process:**
-Continue splitting the remaining plugins in half, reactivating one group at a time, and testing after each round. This method quickly reduces the number of potential conflicts.
-4. **Find the Culprit:**
-Eventually, you’ll identify the exact plugin causing the problem. Make a note of which plugin you activated that causes the problem to reappear.
+**Note on Testing Safely on a Live Site:**
 
-### Look for a solution
+If a staging environment is unavailable, the **Health Check & Troubleshooting** plugin (developed by the WordPress Community) can help simplify this process. Using its built-in **Troubleshooting Mode** (*Tools > Site Health > Troubleshooting*), you can temporarily deactivate plugins and switch themes **only for your logged-in session**. Your site visitors will continue to see your live site normally while you test.
 
-Once you’ve identified what is causing the conflict, you can look for a solution. If you want help and have purchased premium support for your plugin, please post to [our help desk](https://theeventscalendar.com/support/). To help us assist you as quickly as possible, please include as much information as you can. For instance:
+## Step 3: Common Troubleshooting Scenarios
 
-- Statethat you have found a conflict, and give the name of the conflicting plugin/theme along with its version number.
-- Describe in detail the problem that happens when you are running that plugin/theme with a given Tribe plugin.
-- If possible, privately post a copy of your System Information from the *WP Admin > Events > Troubleshooting: System Information* box.
+If you have isolated a conflict or if the issue persists even with all third-party software disabled. Check these common scenarios:
 
-**Note:** If the conflict involves a third-party plugin that isn’t part of our products, we’re happy to help point you in the right direction. However, since it’s [outside our scope](https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/), we recommend reaching out to the plugin’s developers directly for more in-depth support.
+- **T****heme Overrides:** Custom template files in your child theme folder can become outdated after plugin updates. Try temporarily renaming your custom override folder (e.g., adding -bak to the end of the folder name) to see if older template files are breaking functionality.
+- **JavaScript Errors:** Open your browser’s Developer Tools console (**F12** or **Cmd + Option + I**) and refresh the page. Identifying red console errors can provide specific script paths or function names causing issues.
+- **404 Page Not Found Errors:** Common after updates or changing custom post type settings. Go to **Settings > Permalinks** in your admin area and click **Save Changes** (without changing settings) to flush rewrite rules.
+- **403 Forbidden / API Restrictions:** Caching, security, firewall, or membership plugins may block access to WordPress REST API endpoints (/wp-json/). Temporarily disable endpoint restrictions or whitelist REST API routes to test.
+- **Performance / Slow Loading:** Often caused by large database queries resulting from un-indexed data, extensive transient data, or recurring entries without set end dates.
 
-The following is a list of things that frequently cause conflicts. This is especially helpful for those who have not purchased a plugin that includes premium support or who simply wish to research the problem on their own.
+## Reporting Your Findings to Support
 
-- **Known issues:** Some problems have been documented by others as well. To find out if others are experiencing the same issue, try using our search box or even Google. Sometimes others have already found a fix that you can use, or we have helped someone with the same problem at [our help desk](https://theeventscalendar.com/support/).
-- **Theme Override:** Do you have any [theme overrides](https://theeventscalendar.com/knowledgebase/k/themers-guide/)? Try disabling them by renaming your
-```
-[themename]/tribe/events/
-```
+If you have confirmed a conflict involving our software and a third-party product, reach out to our support team with the following details so we can assist you quickly:
 
- folder to 
-```
-tribe-events-bak
-```
+1. **Conflicting Software Details:** The exact name and version number of the conflicting plugin or theme.
+2. **Issue Description:** Step-by-step instructions to reproduce the exact error when both products are active together.
+3. **System Information:** Send a copy of your site system status (found under your plugin’s help/tools tab, or via **Tools > Site Health > Info**).
 
-.
-- **JavaScript Error:** [Open up your browser’s console](https://docs.nexcess.com/software/the-events-calendar/how-to-see-a-javascript-console-error-on-your-site/) and see if there are any relevant errors. Identifying a specific error can help you research further.
-- **Performance issue**: If you’re noticing any [slowdown on your calendar pages](https://docs.nexcess.com/software/the-events-calendar/calendar-performance/), it could be related to the volume of events in your database, particularly past events or [recurring events with no defined end date](https://docs.nexcess.com/software/the-events-calendar/recurring-events/). These can accumulate over time and may begin to impact performance.
-- **Calendar pages not found or 404**: This is a fairly common issue and often happens after updating WordPress core or installing a new version of one of our plugins. The usual fix is to [flush your site’s permalink settings](https://docs.nexcess.com/software/the-events-calendar/fix-404-errors/), which refreshes how URLs are handled.
-- **Unauthorized access to API path** **or 403**: If your calendar navigation isn’t updating data, or if Promoter can’t sync your events, the issue might be tied to blocked API endpoints, specifically at 
-```
-yourdomain.com/wp-json/tribe/
-```
-
-. This can happen if a [caching](https://docs.nexcess.com/software/the-events-calendar/calendar-caching/) or a [membership plugin](https://docs.nexcess.com/software/the-events-calendar/the-events-calendar-membership-plugins/) restricts public access to those paths. Double-check any tools that might be limiting access, and try temporarily disabling them to test.
-- **Out-of-date Plugins/Theme/WordPress:** Are all of your plugins, your theme, and WordPress itself up-to-date? You especially want to run the latest version of The Events Calendar plugins, as we often release compatibility fixes. While new is not always better, the latest versions of everything usually result in the best compatibility.
-
-It is our sincere hope that this tutorial has helped you. Thank you for reading!
-
-If you’re looking for a way to test for conflicts without affecting the live site, and you don’t have a staging site handy, please read our [Conflict Testing With the Health Check Plugin](https://docs.nexcess.com/software/the-events-calendar/conflict-testing-with-the-health-check-plugin/) for a guide on how to test for conflicts without affecting the live site.
+*For conflicts involving unmaintained or third-party software outside our direct codebase, our team is happy to point you in the right direction or suggest alternative compatibility approaches.*
 
 ---
 
