@@ -17,7 +17,7 @@ This guide shows you how to use and customize the shortcode for the Tag Cloud Se
 ```
 jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.tag-groups-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a9d07132e4c1');
+        const cmInput = document.getElementById('cloud_search_6aa687ab78cad');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.tag-groups-cloud', tags, searchTitle);});
@@ -33,7 +33,7 @@ Looking for a name?
 
     jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.my-tag-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a9d07132e51e');
+        const cmInput = document.getElementById('cloud_search_6aa687ab78d83');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.my-tag-cloud', tags, searchTitle);});
@@ -53,7 +53,7 @@ Enter the same class name that you use in the tag cloud as “div_class” (or �
 ```
 jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.searchable-tag-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a9d07132e554');
+        const cmInput = document.getElementById('cloud_search_6aa687ab78dc7');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.searchable-tag-cloud', tags, searchTitle);});
@@ -61,7 +61,7 @@ jQuery(document).ready(function() {
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a9d07132e583', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6aa687ab78dfe', {"active":false}, true);
       return;
     }
 
@@ -72,7 +72,7 @@ jQuery(document).ready(function() {
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6a9d07132e583');
+    var element = document.getElementById('tag-groups-cloud-tabs-6aa687ab78dfe');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -85,7 +85,7 @@ If you also need other class names in the tag cloud, you simply enter all of the
 ```
 jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.searchable-tag-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a9d07132eb84');
+        const cmInput = document.getElementById('cloud_search_6aa687ab793a3');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.searchable-tag-cloud', tags, searchTitle);});
@@ -93,7 +93,7 @@ jQuery(document).ready(function() {
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a9d07132ebae', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6aa687ab793cb', {"active":false}, true);
       return;
     }
 
@@ -104,7 +104,7 @@ jQuery(document).ready(function() {
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6a9d07132ebae');
+    var element = document.getElementById('tag-groups-cloud-tabs-6aa687ab793cb');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -267,7 +267,7 @@ Example for shortcodes:
 ```
 jQuery(document).ready(function() {
         const tags = document.querySelectorAll('.tag-groups-cloud .tag-groups-tag');
-        const cmInput = document.getElementById('cloud_search_6a9d07133925f');
+        const cmInput = document.getElementById('cloud_search_6aa687ab8462a');
         const searchTitle = false;
         
         cmInput.addEventListener('keyup', function(el){TagGroupsCloudSearch.filter(el,'.tag-groups-cloud', tags, searchTitle);});
@@ -279,7 +279,7 @@ On the same page you use a tag cloud with the same class name “tag-groups-clou
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6a9d07133929c', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6aa687ab84670', {"active":false}, true);
       return;
     }
 
@@ -290,7 +290,7 @@ On the same page you use a tag cloud with the same class name “tag-groups-clou
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6a9d07133929c');
+    var element = document.getElementById('tag-groups-cloud-tabs-6aa687ab84670');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
