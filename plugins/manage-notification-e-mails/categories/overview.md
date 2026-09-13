@@ -81,7 +81,7 @@ Some other plugins also use their custom notifications which overwrite the core 
 							![](https://secure.gravatar.com/avatar/1f57cc3f5a095e8b0a748eac0410c1b7af5dd6db0b1079d04bb38373e8f4a98e?s=60&d=retro&r=g)### Really useful plugin
 							[TomCobbley](https://profiles.wordpress.org/tomcobbley/)
 								October 2, 2024
-						This is a really useful plugin for disabling those annoying ‘plugin x has just automatically updated’ emails. Suggestion for author – the plugin isn’t easy to find in WordPress’s plugin search for terms like ’email notifications’. This is because you spell email as e-mail. This might be the technically correct spelling, but it’s not helping people find your plugin. I would consider changing the spelling.
+						This is a really useful plugin for disabling those annoying 'plugin x has just automatically updated' emails. Suggestion for author – the plugin isn't easy to find in WordPress's plugin search for terms like 'email notifications'. This is because you spell email as e-mail. This might be the technically correct spelling, but it's not helping people find your plugin. I would consider changing the spelling.
 							![](https://secure.gravatar.com/avatar/104f98ec78288e14c888065567c94980e022d09e25ef99d7cbb0be0825f9ea5c?s=60&d=retro&r=g)### 功能很完整
 							[richard0508](https://profiles.wordpress.org/richard0508/)
 								March 12, 2024
@@ -96,7 +96,7 @@ Thanks for its development.
 							[lookwhoo](https://profiles.wordpress.org/lookwhoo/)
 								June 23, 2023
 																1 reply
-						This plugin no longer works and seems to have been abandoned. Within the past half year, users were complaining they weren’t receiving the password reset emails. Sure enough, we found it was this plugin preventing password reset emails from going out. Disabled it and all is working as should now.
+						This plugin no longer works and seems to have been abandoned. Within the past half year, users were complaining they weren't receiving the password reset emails. Sure enough, we found it was this plugin preventing password reset emails from going out. Disabled it and all is working as should now.
 
 		[Read all 54 reviews](https://wordpress.org/support/plugin/manage-notification-emails/reviews/)
 
