@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-13T14:56:20.712Z",
+  "last_updated": "2026-09-13T14:57:02.039Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -89,7 +89,7 @@
       "slug": "affiliatewp-custom-affiliate-slugs",
       "name": "AffiliateWP - Custom Affiliate Slugs",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-09-13T14:56:20.712Z",
+      "last_scraped": "2026-09-13T14:56:20.708Z",
       "page_count": 219,
       "categories": [
         "uncategorized"
@@ -149,7 +149,7 @@
       "slug": "ame-toolbar-editor",
       "name": "AME Toolbar Editor",
       "documentation_url": "https://adminmenueditor.com/documentation/",
-      "last_scraped": "2026-09-13T13:53:35.671Z",
+      "last_scraped": "2026-09-13T13:53:35.667Z",
       "page_count": 13,
       "categories": [
         "changelog",
@@ -197,7 +197,7 @@
       "slug": "block-specific-spam-woo-orders",
       "name": "Block Specific Spam Woo Orders",
       "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
-      "last_scraped": "2026-09-13T14:44:16.294Z",
+      "last_scraped": "2026-09-13T14:44:16.293Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -339,7 +339,7 @@
       "slug": "fluent-boards-project-management-tool",
       "name": "Fluent Boards - Project Management Tool",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-09-13T13:47:27.782Z",
+      "last_scraped": "2026-09-13T13:47:27.780Z",
       "page_count": 42,
       "categories": [
         "boards",
@@ -603,7 +603,7 @@
       "slug": "fluent-snippets",
       "name": "Fluent Snippets",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-09-13T13:56:57.945Z",
+      "last_scraped": "2026-09-13T13:56:57.941Z",
       "page_count": 20,
       "categories": [
         "conditional-logic",
@@ -632,7 +632,7 @@
       "slug": "fluent-support",
       "name": "Fluent Support",
       "documentation_url": "https://fluentsupport.com/documentation/",
-      "last_scraped": "2026-09-13T13:50:23.221Z",
+      "last_scraped": "2026-09-13T13:50:23.219Z",
       "page_count": 85,
       "categories": [
         "activities-and-reports",
@@ -672,7 +672,7 @@
       "slug": "fluentaffiliate",
       "name": "FluentAffiliate",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-09-13T14:16:07.158Z",
+      "last_scraped": "2026-09-13T14:16:07.156Z",
       "page_count": 55,
       "categories": [
         "admin-portal",
@@ -759,7 +759,7 @@
       "slug": "fluentbooking-pro",
       "name": "FluentBooking Pro",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-09-13T13:51:07.800Z",
+      "last_scraped": "2026-09-13T13:51:07.798Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -824,7 +824,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-09-13T13:27:40.851Z",
+      "last_scraped": "2026-09-13T13:27:40.848Z",
       "page_count": 81,
       "categories": [
         "administration",
@@ -895,7 +895,7 @@
       "slug": "fluentcrm-marketing-automation-for-wordpress",
       "name": "FluentCRM - Marketing Automation For WordPress",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-09-13T13:28:54.704Z",
+      "last_scraped": "2026-09-13T13:28:54.700Z",
       "page_count": 137,
       "categories": [
         "advanced-reports",
@@ -1125,7 +1125,7 @@
       "slug": "kadence-blocks",
       "name": "Kadence Blocks",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-09-06T11:19:46.801Z",
+      "last_scraped": "2026-09-13T14:56:59.829Z",
       "page_count": 153,
       "categories": [
         "access-the-design-library",
@@ -2125,7 +2125,7 @@
       "slug": "launchflows",
       "name": "LaunchFlows",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-09-13T14:28:12.622Z",
+      "last_scraped": "2026-09-13T14:28:12.615Z",
       "page_count": 52,
       "categories": [
         "uncategorized"
@@ -2303,7 +2303,7 @@
       "slug": "learndash-lms-woocommerce-integration",
       "name": "LearnDash LMS - WooCommerce Integration",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-09-13T13:42:53.364Z",
+      "last_scraped": "2026-09-13T13:42:53.356Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
@@ -2406,7 +2406,7 @@
       "slug": "ninja-tables-pro",
       "name": "Ninja Tables Pro",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-09-13T14:31:00.052Z",
+      "last_scraped": "2026-09-13T14:31:00.047Z",
       "page_count": 443,
       "categories": [
         "uncategorized"
@@ -3144,7 +3144,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/",
-      "last_scraped": "2026-09-13T13:55:49.107Z",
+      "last_scraped": "2026-09-13T13:55:49.105Z",
       "page_count": 13,
       "categories": [
         "activation",
@@ -3761,7 +3761,7 @@
       "slug": "wp-social-ninja",
       "name": "WP Social Ninja",
       "documentation_url": "https://docs.wpsocialninja.com/guide/",
-      "last_scraped": "2026-09-13T14:41:08.333Z",
+      "last_scraped": "2026-09-13T14:41:08.330Z",
       "page_count": 96,
       "categories": [
         "advanced-features",
@@ -3829,7 +3829,7 @@
       "slug": "wpc-variations-radio-buttons-for-woocommerce-premium",
       "name": "WPC Variations Radio Buttons for WooCommerce (Premium)",
       "documentation_url": "https://doc.wpclever.net/woovr/",
-      "last_scraped": "2026-09-13T14:43:07.857Z",
+      "last_scraped": "2026-09-13T14:43:07.856Z",
       "page_count": 7,
       "categories": [
         "getting-started",
