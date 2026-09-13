@@ -80,7 +80,7 @@ duplicate-page
 							[Das Capitolin](https://profiles.wordpress.org/das-capitolin/)
 								June 10, 2026
 																1 reply
-						While simple, I highly recommended “Duplicate Page” by mndpsingh287 as a must-have WordPress plugin. The functionality is basic, which is why it works well.
+						While simple, I highly recommended "Duplicate Page" by mndpsingh287 as a must-have WordPress plugin. The functionality is basic, which is why it works well.
 							![](https://secure.gravatar.com/avatar/11bd1abbe260334815587f1c310bba626f08f0a6e121c0d6fc219397ba70790f?s=60&d=retro&r=g)### Real time saver!!
 							[hreinink](https://profiles.wordpress.org/hreinink/)
 								June 4, 2026
