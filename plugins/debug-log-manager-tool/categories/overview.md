@@ -96,11 +96,11 @@ Debug Log Manager is built using the excellent [WPConfigTransformer class](https
 						This is really cool plugin and developer is very fast
 							![](https://secure.gravatar.com/avatar/6ffca7f053528bc656ed58db8496841f695e55902eab7f18652b17f7758591b6?s=60&d=retro&r=g)### Essential feature for any web site
 							November 24, 2025
-						Great plugin.  There are probably some more features that would be good additions but it’s already something that I install on every site.
+						Great plugin.  There are probably some more features that would be good additions but it's already something that I install on every site.
 							![](https://secure.gravatar.com/avatar/11c193048de6fd2c36cab28c8646c64f06e5a89e0d4a5cdf06d9d50102862e85?s=60&d=retro&r=g)### Much needed plugin, responsive developer
 							[Michael Kupietz](https://profiles.wordpress.org/mkupietz/)
 								September 13, 2025
-						I’d like to see some additional features, and will be making feature requests, but it already deserves five stars anyway, for two reasons: First, it already adds much-needed, very convenient functionality that should have been in WP by default. I’ll be keeping this in my arsenal.  Second, the developer was extremely responsive, when I reported some problems in the support forum, he was very quickly active in responding, discussing, and working on them.
+						I'd like to see some additional features, and will be making feature requests, but it already deserves five stars anyway, for two reasons: First, it already adds much-needed, very convenient functionality that should have been in WP by default. I'll be keeping this in my arsenal.  Second, the developer was extremely responsive, when I reported some problems in the support forum, he was very quickly active in responding, discussing, and working on them.
 							![](https://secure.gravatar.com/avatar/ef5cee4b2f1bf77f9a24bd88a274167b085cdd0018a179f676a0ece847098a66?s=60&d=retro&r=g)### Love this plugin!
 							[Christine](https://profiles.wordpress.org/weddingstyle/)
 								September 13, 2025
