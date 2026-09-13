@@ -101,7 +101,7 @@ An endpoint that appears by default or a created endpoint has the following opti
 
 ### How to Add a New Endpoint?
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 You can add as many endpoints as needed, allowing you to fully customize the account page.
 
@@ -130,7 +130,7 @@ The options for a custom Group are similar to those already explained in the End
 
 ### Add Link
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 This option will allow you to add a link to the account page. You can add as many links as you want.
 
@@ -269,7 +269,7 @@ Click **Save Changes** to apply all settings modifications. Changes will take ef
 
 ## Compatibility with Third-Party WooCommerce Plugins
 
-[↑ Volver al principio](#doc-title)
+[↑ Back to top](#doc-title)
 
 Currently, the plugin is by default compatible with the following plugins:
 
