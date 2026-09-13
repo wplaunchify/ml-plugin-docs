@@ -7027,7 +7027,7 @@ This option is supported on Apache servers only. If your site is hosted on Nginx
 
 The following settings can be used to customize the appearance of the FooEvents Check-ins app once you have logged in. You will find more information on the app and download links here: [https://www.fooevents.com/features/apps/](https://www.fooevents.com/features/apps/)
 
-![FooEvents Global Options > Check-ins app](https://help.fooevents.com/wp-content/uploads/2019/11/check-ins-app-843x1024.png)
+![Screenshot 2026 09 08 at 20 11 54](https://help.fooevents.com/wp-content/uploads/2019/11/Screenshot-2026-09-08-at-20-11-54-716x1024.png)
 
 | Hide personal information | Hides all personal information for attendees and/or ticket purchasers in the app. Only attendee names will be visible for check-in purposes. |
 | --- | --- |
@@ -7039,6 +7039,7 @@ The following settings can be used to customize the appearance of the FooEvents 
 | Background color | Color of the background on the sign-in screen. |
 | Title text color | Color of the title text beneath the logo on the sign-in screen. |
 | Event listing options | Manage how events are listed in the app. Changes can be made in real-time without the user needing to sign-out. |
+| Tickets loaded | Limits the tickets returned by the Check-ins app API using the ticket creation date. |
 | Tickets to load per request | Specify how many event tickets the FooEvents Check-ins app should load during each request (lower values will result in slower ticket load times but this usually works better for servers with limited resources). |
 | Show ticket access log | Select whether a ticket’s check-ins log should be loaded together with the ticket information. Please note that this might cause tickets to take longer to load or require additional server resources. |
 
@@ -8893,6 +8894,28 @@ For events using [FooEvents Bookings](https://help.fooevents.com/docs/topics/foo
 For example, a theatre could use the same seating layout every night, while still tracking sold and available seats independently for each show.
 
 This gives your team better control and keeps seating accurate across recurring bookings.
+
+### WooCommerce Stock Management
+
+When using a seating chart, ticket availability is managed by the availability of seats on the seating chart rather than by WooCommerce stock quantities. Seats that are reserved or booked are automatically marked as unavailable on the seating chart.
+
+As such, it is not necessary to set stock quantities for simple or variable products. The products only need to be set to **In stock**. Similarly, when using **FooEvents Bookings**, booking slot availability can be left at the default unlimited amount.
+
+For products that use seating, we recommend configuring WooCommerce stock as follows:
+
+1. Edit the WooCommerce product and open the **Inventory** settings.
+2. Disable **Stock management** or **Manage stock**.
+3. Set the **Stock status** to **In stock**.
+4. If you are using a variable product, apply these settings to every variation used by the seating chart.
+5. If you are using a bookable product, leave the booking slot stock quantity blank or set to unlimited.
+
+Setting the product to **In stock** ensures that customers can access the product and open the seating chart to select their seats. It does not mean that every seat is available. The seating chart remains the authoritative source for seat availability.
+
+Do not enter the total number of seats as the WooCommerce stock quantity. Doing so creates a second, independent availability limit. This could result in WooCommerce preventing a purchase even when the selected seats are still available on the seating chart.
+
+Variation-level stock settings can still prevent valid seat purchases, so make sure stock management is disabled for every variation linked to the seating chart.
+
+The standard WooCommerce **In stock** message is not normally displayed on shop or product pages when stock quantities are not being managed. However, this can vary depending on your theme or other plugins. If your theme displays an **In stock** message, we recommend disabling the messaging, as it could incorrectly suggest that seats are still available when the event is fully booked.
 
 ### Legacy Seating and Migration
 
