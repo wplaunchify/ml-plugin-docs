@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T14:21:49.259Z",
+  "last_updated": "2026-09-20T14:22:15.894Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -79,7 +79,7 @@
       "slug": "affiliatewp-affiliate-portal",
       "name": "AffiliateWP - Affiliate Portal",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-09-20T12:37:12.164Z",
+      "last_scraped": "2026-09-20T12:37:12.160Z",
       "page_count": 219,
       "categories": [
         "uncategorized"
@@ -171,7 +171,7 @@
       "slug": "attributes-for-blocks",
       "name": "Attributes for Blocks",
       "documentation_url": "https://wordpress.org/plugins/attributes-for-blocks/",
-      "last_scraped": "2026-09-20T12:27:31.269Z",
+      "last_scraped": "2026-09-20T12:27:31.268Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -339,7 +339,7 @@
       "slug": "fluent-boards-project-management-tool",
       "name": "Fluent Boards - Project Management Tool",
       "documentation_url": "https://fluentboards.com/docs/documentation/",
-      "last_scraped": "2026-09-20T13:34:36.884Z",
+      "last_scraped": "2026-09-20T13:34:36.881Z",
       "page_count": 42,
       "categories": [
         "boards",
@@ -465,7 +465,7 @@
       "slug": "fluent-forms-signature-addon",
       "name": "Fluent Forms Signature Addon",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-09-20T13:08:40.179Z",
+      "last_scraped": "2026-09-20T13:08:40.170Z",
       "page_count": 457,
       "categories": [
         "account-management",
@@ -603,7 +603,7 @@
       "slug": "fluent-snippets",
       "name": "Fluent Snippets",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-09-20T13:46:23.492Z",
+      "last_scraped": "2026-09-20T13:46:23.488Z",
       "page_count": 20,
       "categories": [
         "conditional-logic",
@@ -672,7 +672,7 @@
       "slug": "fluentaffiliate",
       "name": "FluentAffiliate",
       "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-      "last_scraped": "2026-09-20T14:08:04.184Z",
+      "last_scraped": "2026-09-20T14:08:04.182Z",
       "page_count": 55,
       "categories": [
         "admin-portal",
@@ -759,7 +759,7 @@
       "slug": "fluentbooking-pro",
       "name": "FluentBooking Pro",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-09-20T13:37:50.798Z",
+      "last_scraped": "2026-09-20T13:37:50.795Z",
       "page_count": 57,
       "categories": [
         "availability",
@@ -824,7 +824,7 @@
       "slug": "fluentcommunity-customizer",
       "name": "FluentCommunity Customizer",
       "documentation_url": "https://fluentcommunity.co/docs/documentation/",
-      "last_scraped": "2026-09-20T13:12:56.899Z",
+      "last_scraped": "2026-09-20T13:12:56.896Z",
       "page_count": 81,
       "categories": [
         "administration",
@@ -895,7 +895,7 @@
       "slug": "fluentcrm-marketing-automation-for-wordpress",
       "name": "FluentCRM - Marketing Automation For WordPress",
       "documentation_url": "https://fluentcrm.com/docs/documentation/",
-      "last_scraped": "2026-09-20T13:14:15.307Z",
+      "last_scraped": "2026-09-20T13:14:15.302Z",
       "page_count": 137,
       "categories": [
         "advanced-reports",
@@ -1099,7 +1099,7 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-09-20T09:31:46.049Z",
+      "last_scraped": "2026-09-20T09:31:46.046Z",
       "page_count": 194,
       "categories": [
         "campaigns",
@@ -1449,7 +1449,7 @@
       "slug": "kadence-blocks-pro-extension",
       "name": "Kadence Blocks - PRO Extension",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-      "last_scraped": "2026-09-20T12:33:21.119Z",
+      "last_scraped": "2026-09-20T12:33:21.113Z",
       "page_count": 153,
       "categories": [
         "access-the-design-library",
@@ -2125,7 +2125,7 @@
       "slug": "launchflows",
       "name": "LaunchFlows",
       "documentation_url": "https://launchflows.com/documentation/",
-      "last_scraped": "2026-09-20T14:16:18.892Z",
+      "last_scraped": "2026-09-20T14:16:18.891Z",
       "page_count": 52,
       "categories": [
         "uncategorized"
@@ -2303,7 +2303,7 @@
       "slug": "learndash-lms-woocommerce-integration",
       "name": "LearnDash LMS - WooCommerce Integration",
       "documentation_url": "https://learndash.com/support/documentation/",
-      "last_scraped": "2026-09-20T13:30:15.755Z",
+      "last_scraped": "2026-09-20T13:30:15.749Z",
       "page_count": 320,
       "categories": [
         "2checkout-add-on",
@@ -2406,7 +2406,7 @@
       "slug": "ninja-tables-pro",
       "name": "Ninja Tables Pro",
       "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-      "last_scraped": "2026-09-20T14:18:12.699Z",
+      "last_scraped": "2026-09-20T14:18:12.694Z",
       "page_count": 443,
       "categories": [
         "uncategorized"
@@ -2449,7 +2449,7 @@
       "slug": "prime-mover",
       "name": "Prime Mover",
       "documentation_url": "https://codexonics.com/prime_mover/",
-      "last_scraped": "2026-09-20T09:45:20.862Z",
+      "last_scraped": "2026-09-20T09:45:20.860Z",
       "page_count": 117,
       "categories": [
         "prime-mover"
@@ -2459,7 +2459,7 @@
       "slug": "product-filters-for-woocommerce",
       "name": "Product Filters for WooCommerce",
       "documentation_url": "https://woobewoo.com/documentation/getting-started-with-woocommerce-filter/documentation/",
-      "last_scraped": "2026-09-20T09:53:17.328Z",
+      "last_scraped": "2026-09-20T09:53:17.325Z",
       "page_count": 179,
       "categories": [
         "uncategorized"
@@ -2469,7 +2469,7 @@
       "slug": "redirection",
       "name": "Redirection",
       "documentation_url": "https://redirection.me/support/",
-      "last_scraped": "2026-09-20T09:54:52.222Z",
+      "last_scraped": "2026-09-20T09:54:52.218Z",
       "page_count": 25,
       "categories": [
         "beta-release",
@@ -2514,7 +2514,7 @@
       "slug": "searchwp",
       "name": "SearchWP",
       "documentation_url": "https://searchwp.com/documentation/",
-      "last_scraped": "2026-09-20T10:05:38.556Z",
+      "last_scraped": "2026-09-20T10:05:38.554Z",
       "page_count": 57,
       "categories": [
         "uncategorized"
@@ -2524,7 +2524,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-09-20T10:08:03.172Z",
+      "last_scraped": "2026-09-20T10:08:03.169Z",
       "page_count": 11,
       "categories": [
         "ftc-franchise-rule-compliance-with-simple-history",
@@ -2693,7 +2693,7 @@
       "slug": "store-credit-for-woocommerce",
       "name": "Store Credit for WooCommerce",
       "documentation_url": "https://woocommerce.com/document/woocommerce-store-credit/",
-      "last_scraped": "2026-09-20T12:44:04.261Z",
+      "last_scraped": "2026-09-20T12:44:04.259Z",
       "page_count": 1,
       "categories": [
         "overview"
@@ -2703,7 +2703,7 @@
       "slug": "taxopress",
       "name": "TaxoPress",
       "documentation_url": "https://taxopress.com/docs/documentation/",
-      "last_scraped": "2026-09-20T10:57:41.890Z",
+      "last_scraped": "2026-09-20T10:57:41.886Z",
       "page_count": 232,
       "categories": [
         "accounts",
@@ -2734,7 +2734,7 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-      "last_scraped": "2026-09-20T11:14:47.563Z",
+      "last_scraped": "2026-09-20T11:14:47.538Z",
       "page_count": 348,
       "categories": [
         "accessibility",
@@ -3091,7 +3091,7 @@
       "slug": "uncanny-groups-for-learndash",
       "name": "Uncanny Groups for LearnDash",
       "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-      "last_scraped": "2026-09-20T11:37:02.838Z",
+      "last_scraped": "2026-09-20T11:37:02.834Z",
       "page_count": 183,
       "categories": [
         "uncategorized"
@@ -3121,7 +3121,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/",
-      "last_scraped": "2026-09-20T13:43:46.150Z",
+      "last_scraped": "2026-09-20T13:43:46.147Z",
       "page_count": 13,
       "categories": [
         "activation",
@@ -3299,7 +3299,7 @@
       "slug": "woocommerce-subscriptions-custom-price-string",
       "name": "WooCommerce Subscriptions - Custom Price String",
       "documentation_url": "https://github.com/woocommerce/woocommerce-subscriptions-custom-price-string",
-      "last_scraped": "2026-09-20T11:44:50.941Z",
+      "last_scraped": "2026-09-20T11:44:50.939Z",
       "page_count": 1,
       "categories": [
         "overview"
@@ -3319,7 +3319,7 @@
       "slug": "wp-all-export-pro",
       "name": "WP All Export Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-09-20T13:02:24.226Z",
+      "last_scraped": "2026-09-20T13:02:24.221Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
@@ -3379,7 +3379,7 @@
       "slug": "wp-file-manager",
       "name": "WP File Manager",
       "documentation_url": "https://filemanagerpro.io/article/",
-      "last_scraped": "2026-09-20T11:46:51.949Z",
+      "last_scraped": "2026-09-20T11:46:51.945Z",
       "page_count": 39,
       "categories": [
         "aws-s3-integration",
@@ -3509,7 +3509,7 @@
       "slug": "wp-fusion-downloads-addon",
       "name": "WP Fusion - Downloads Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-09-20T12:38:55.588Z",
+      "last_scraped": "2026-09-20T12:38:55.579Z",
       "page_count": 485,
       "categories": [
         "abandoned-cart-tracking",
@@ -3714,7 +3714,7 @@
       "slug": "wp-migrate-lite",
       "name": "WP Migrate Lite",
       "documentation_url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/",
-      "last_scraped": "2026-09-20T11:51:33.228Z",
+      "last_scraped": "2026-09-20T11:51:33.226Z",
       "page_count": 55,
       "categories": [
         "uncategorized"
@@ -3724,7 +3724,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-09-20T11:54:51.468Z",
+      "last_scraped": "2026-09-20T11:54:51.467Z",
       "page_count": 5,
       "categories": [
         "advanced-search-woocommerce-products",
@@ -3738,7 +3738,7 @@
       "slug": "wp-social-ninja",
       "name": "WP Social Ninja",
       "documentation_url": "https://docs.wpsocialninja.com/guide/",
-      "last_scraped": "2026-09-20T14:21:49.259Z",
+      "last_scraped": "2026-09-20T14:21:49.255Z",
       "page_count": 96,
       "categories": [
         "advanced-features",
@@ -3806,7 +3806,7 @@
       "slug": "wpc-variations-radio-buttons-for-woocommerce-premium",
       "name": "WPC Variations Radio Buttons for WooCommerce (Premium)",
       "documentation_url": "https://doc.wpclever.net/woovr/",
-      "last_scraped": "2026-09-13T14:43:07.856Z",
+      "last_scraped": "2026-09-20T14:22:13.129Z",
       "page_count": 7,
       "categories": [
         "getting-started",
@@ -3820,7 +3820,7 @@
       "slug": "wpcodebox-2",
       "name": "WPCodeBox 2",
       "documentation_url": "https://docs.wpcodebox.com/",
-      "last_scraped": "2026-09-20T12:16:40.104Z",
+      "last_scraped": "2026-09-20T12:16:40.100Z",
       "page_count": 42,
       "categories": [
         "acf_options_pages",
