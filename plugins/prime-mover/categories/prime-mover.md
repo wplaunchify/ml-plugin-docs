@@ -25,7 +25,7 @@ This can also be used to migrate a single-site installation to another single-si
 [Buy and Download](https://codexonics.com/prime_mover/prime-mover/pricing/)
 # News and Updates
 
-> Prime Mover 2.2.0 – Major update on localization, security, and performance
+> Prime Mover 2.2.1 – New features and Security updates
 # Official Documentation
 
 [GENERAL DOCUMENTATION](https://codexonics.com/prime_mover/prime-mover/general-documentation/)[PRO VERSION DOCUMENTATION](https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/)[TROUBLESHOOTING GUIDE](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/)[FREQUENTLY ASKED QUESTIONS](https://codexonics.com/prime_mover/prime-mover/faq/)
@@ -1051,6 +1051,51 @@ Was this article helpful?YesNo
 
 ---
 
+## FAQ: How to Export Inactive Plugins and Themes
+
+**Source:** [https://codexonics.com/prime_mover/prime-mover/faq-how-to-export-inactive-plugins-and-themes/](https://codexonics.com/prime_mover/prime-mover/faq-how-to-export-inactive-plugins-and-themes/)
+
+Starting with Prime Mover 2.2.1+, we added a new feature that lets you export inactive plugins and themes. This works for both FREE and PRO versions of the Prime Mover plugin.
+
+## Export Inactive Plugins
+
+- Make sure you update to Prime Mover 2.2.1 or newer.
+- Log in to your WordPress site. (Log in as super administrator if multisite).
+- Go to Prime Mover -> Toolbox.
+- If multisite, enter the blog ID where you want the settings to load.
+- Scroll down to the bottom and find the section to export inactive plugins.
+
+Some important things that you should know:
+
+- This is not enabled by default. So this means that, by default, Prime Mover only exports “activated” plugins.
+- If enabled, it includes inactive/installed plugins on the site.
+- In multisite, it includes all plugins on the site, even if inactive for that subsite.
+- For large sites with so many installed plugins, this will significantly increase your backup and package size, so make sure you have enough disk space remaining for your site if you want to use this feature.
+- Please note that when imported to the target site, it will replace all plugins on the target site with the versions in the package. This means that even if the plugin isn’t used on that site but is included in the package to be restored, it will be deleted and overwritten with the plugin from the package.
+
+## Export Inactive Themes
+
+- Make sure you update to Prime Mover 2.2.1 or newer.
+- Log in to your WordPress site. (Log in as super administrator if multisite).
+- Go to Prime Mover -> Toolbox.
+- If multisite, enter the blog ID where you want the settings to load.
+- Scroll down to the bottom and find the section to export inactive themes.
+
+Some important things that you should know:
+
+- Like inactive plugins – this setting is not enabled by default. This means that when exporting, Prime Mover exports only the currently activated theme on your site.
+- Prime Mover exports inactive themes it considers valid. This checks only if it has style.css in the theme root.
+- Nested themes are not considered valid; for example, if style.css is not found in the main theme root directory but deeper.  For example,/wp-content/themes/YourTheme/your-theme/style.css
+- In multisite, it will only export network-enabled themes.
+- This export includes all theme types, including parent and child themes.
+- For a site with so many installed/inactive themes, this can increase the size of your package so please make sure that you have enough free disk space for the export.
+
+Last updated: *September 14, 2026*
+
+Was this article helpful?YesNo
+
+---
+
 ## FAQ – I cannot activate license, how to fix?
 
 **Source:** [https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/](https://codexonics.com/prime_mover/prime-mover/faq-i-cannot-activate-license-please-help/)
@@ -1407,6 +1452,10 @@ Scope: **Prime Mover Free / Pro version**
 ### Can I purchase Prime Mover PRO if it’s sold on another website?
 
 No, that is illegal and a counterfeit copy of the PRO version. Please [purchase and upgrade directly from us](https://codexonics.com/prime_mover/prime-mover/general-documentation/how-to-legally-purchase-the-pro-version/). This will ensure we can support it and that you are using the genuine PRO version.
+
+### How to export all inactive plugins and themes?
+
+Yes this is now possible with Prime Mover 2.2.1 on wards, for details on how to use this feature –[please checkout this tutorial](https://codexonics.com/prime_mover/prime-mover/faq-how-to-export-inactive-plugins-and-themes/).
 
 ### What is the complete list of files that have been migrated or backed up?
 
@@ -5685,7 +5734,7 @@ Was this article helpful?YesNo
 
 **Source:** [https://codexonics.com/prime_mover/prime-mover/pricing/](https://codexonics.com/prime_mover/prime-mover/pricing/)
 
-FreeStarts at$0Free versionThis plan is suitable for students and hobbyists of WordPress website development.Restore backup within siteMigrate single-site to single siteMigrate single-site to multisiteMigrate multisite to multisiteMigrate multisite to single-siteMigrate within WordPress adminMigrate from and to localhostExport as WordPress debug packageExport database onlyExport database + media files onlyComplete export mode (db + media + plugins/themes)No package size restrictionsResponsive / Mobile CompatibleBackup package management screen[Free download](https://downloads.wordpress.org/plugin/prime-mover.2.2.0.zip)PROStarts at$59Pro version (annual single-site or one subsite in multisite)This plan suits professional website designers, developers, and system administrators.**ALL FREE FEATURES +**Backup/migrate multisite main siteAutomatic/scheduled backupsMigrate faster using remote URL APIFree localhost licenseEncrypt databaseEncrypt media files and plugins/themesMigrate non-UTF8 charset to default utf8mb4 charsetOption to move backup packages outside WordPress rootExport package to Dropbox or Google DriveExclude plugins and media upload filesAssign specific blog ID for new subsiteOption to delete backups and enable migration logsComplete restoration options[Start free trial](#)
+FreeStarts at$0Free versionThis plan is suitable for students and hobbyists of WordPress website development.Restore backup within siteMigrate single-site to single siteMigrate single-site to multisiteMigrate multisite to multisiteMigrate multisite to single-siteMigrate within WordPress adminMigrate from and to localhostExport as WordPress debug packageExport database onlyExport database + media files onlyComplete export mode (db + media + plugins/themes)No package size restrictionsResponsive / Mobile CompatibleBackup package management screen[Free download](https://downloads.wordpress.org/plugin/prime-mover.2.2.1.zip)PROStarts at$59Pro version (annual single-site or one subsite in multisite)This plan suits professional website designers, developers, and system administrators.**ALL FREE FEATURES +**Backup/migrate multisite main siteAutomatic/scheduled backupsMigrate faster using remote URL APIFree localhost licenseEncrypt databaseEncrypt media files and plugins/themesMigrate non-UTF8 charset to default utf8mb4 charsetOption to move backup packages outside WordPress rootExport package to Dropbox or Google DriveExclude plugins and media upload filesAssign specific blog ID for new subsiteOption to delete backups and enable migration logsComplete restoration options[Start free trial](#)
 Buy now
 ### Trusted by More than 100,000 Blogs, Online Shops & Websites!
 
