@@ -302,7 +302,11 @@ The one exception is the Delete Comments tool: comments it removed are permanent
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/c717edc6315622ec9c362d4393638a683293bd90c1289a41b1d0aba8e6cb0615?s=60&d=retro&r=g)### Awsome
+	![](https://secure.gravatar.com/avatar/406ef4035246ce8c79706b8f64e561116d01d92e3b48ead550cba9ff3ee0bbb8?s=60&d=retro&r=g)### GREAT
+							[swift2512](https://profiles.wordpress.org/swift2512/)
+								September 19, 2026
+						ITS PERFECT
+							![](https://secure.gravatar.com/avatar/c717edc6315622ec9c362d4393638a683293bd90c1289a41b1d0aba8e6cb0615?s=60&d=retro&r=g)### Awsome
 							[checmark](https://profiles.wordpress.org/checmark/)
 								July 21, 2026
 						One of my many websites has been getting hacked by numerous Russian comments, as many as twenty a day! I spent hours online with my hosting company, InMotion Hosting, trying to block this, but they suggested using their CloudFlare feature, which was a total pain! I then researched how to block comments on a WordPress site and this was just as much of a pain, with no way to block comments on all posts and pages. Then I discovered this plugin and it worked in about two minutes to block comments everywhere on the site. Thank you!
@@ -325,12 +329,8 @@ The one exception is the Delete Comments tool: comments it removed are permanent
 								March 6, 2026
 																2 replies
 						Installed this to quickly turn off comments across my site. Setup took like a minute and everything worked as expected. Simple settings, no confusion. Could use a few more options maybe, but overall pretty solid.
-							![](https://secure.gravatar.com/avatar/097eb8039f90dffcbe14e64b32888625ea4520eb0b6b06c0788ab9b84ebdcadd?s=60&d=retro&r=g)### BRILLIANT! Thank you!!
-							[isolshell1](https://profiles.wordpress.org/isolshell1/)
-								November 9, 2025
-						I had a daunting task of first moving 500+ the Pending Comments that I have identified as all SPAM to the Trash folder, page by fricken page, then having to go into the Trash folder to permentantly delete them, page by painstaking page.Then I said there must be a plugin for this. Lo & Behold there was.  It was yours.  Task finished in less than 3 minute and that included installing and activating the plugin and figuring out which choice I had within the plugin that would accomplish the task.  BAM! IT WAS DONE.Bravo!!
 
-		[Read all 280 reviews](https://wordpress.org/support/plugin/disable-comments/reviews/)
+		[Read all 281 reviews](https://wordpress.org/support/plugin/disable-comments/reviews/)
 
 ## Contributors & Developers
 
