@@ -10,7 +10,7 @@
 
 # Failed Recurring Payment Retry System
 
-			WooCommerce Subscription’s includes a **Failed Recurring Payment Retry System**  which can help recover revenue otherwise lost due to a customer’s payment method being temporarily declined. For example, if the credit card balance reached its limit when the system attempted the first recurring payment and the bank declined the charge, Subscriptions can successfully process it a few days later when the card owner pays off the balance.
+			WooCommerce Subscriptions includes a **Failed Recurring Payment Retry System** which can help recover revenue otherwise lost due to a customer’s payment method being temporarily declined. For example, if the credit card balance reached its limit when the system attempted the first recurring payment and the bank declined the charge, Subscriptions can successfully process it a few days later when the card owner pays off the balance.
 
 This guide provides a general overview of the system for non-technical users.
 
@@ -25,11 +25,12 @@ The retry system is off by default. Follow these instructions to turn it on:
 1. Go to: **WooCommerce > Settings > Subscriptions** [settings](https://woocommerce.com/document/subscriptions/store-manager-guide/).
 2. Scroll to the **Payment recovery** card.
 3. Tick the **Enable automatic retry of failed recurring payments** checkbox.
+4. Scroll to the page bottom and click **Save changes**.
 
 Subscriptions will now automatically retry payments that fail and meet the following requirements:
 
 - Subscription uses [Automatic recurring payments](https://woocommerce.com/document/subscriptions/renewal-process/); and
-- A payment gateway that does not control the billing schedule for the subscription is in use (ex. PayPal Standard (sunset) does not allow automatic retries).
+- Use a payment gateway that does not control the billing schedule for the subscription is in use (e.g. PayPal Standard (sunset) does not allow automatic retries).
 
 **Note:**The Failed Payment Retry system doesn’t trigger for **SEPA** payments.
 
@@ -37,9 +38,11 @@ Subscriptions will now automatically retry payments that fail and meet the follo
 
 [↑ Back to top](#doc-title)
 
-The retry system works by applying a set of retry rules whenever a renewal payment fails. The full set of retry rules defines the specific behavior of the retry process between the first failure and declaring the payment as failed and no longer attempting to process the payment after a set number of retries.
+The retry system works by applying a set of retry rules whenever a renewal payment fails. The full set of retry rules defines the specific behavior of the retry process between the first failure, and declaring the payment as failed and no longer attempting to process the payment after a set number of retries.
 
-**The general retry process proceeds like this:**
+### The general retry process
+
+[↑ Back to top](#doc-title)
 
 1. Automatic recurring payment fails.
 2. Subscriptions checks if a retry rule exists for this specific payment failure.
@@ -103,7 +106,7 @@ Subscriptions provides a default set of rules, but these rules can also be custo
 
 The Automatic Failed Payment Retry system in Subscriptions applies five (5) default retry rules to retry failed payments over 7 days by default. Let’s take a look at each one:
 
-1. **Retry Rule 0:**
+#### Retry Rule 1
 
 - **Interval**: Subscriptions waits 12 hours between failed payment and first retry attempt.
 - **Customer Email**: No email is sent to the customer.
@@ -111,7 +114,7 @@ The Automatic Failed Payment Retry system in Subscriptions applies five (5) defa
 - **Order Status**: Renewal order’s status is set to *Pending*.
 - **Subscription Status**: Subscription’s status is set to *On-hold*.
 
-2. **Retry Rule 1:**
+#### Retry Rule 2
 
 - **Interval**: Subscriptions waits another 12 hours between failed payment and retry attempt.
 - **Customer Email**: *Customer Payment Retry* is sent to the customer (if enabled) to notify of failed payment and scheduled retry attempt.
@@ -119,7 +122,7 @@ The Automatic Failed Payment Retry system in Subscriptions applies five (5) defa
 - **Order Status**: Renewal order’s status is set to *Pending*.
 - **Subscription Status**: Subscription’s status is set to *On-hold*.
 
-3. **Retry Rule 2**
+#### Retry Rule 3
 
 - **Interval**: Subscriptions waits another 24 hours between failed payment and retry attempt.
 - **Customer Email**: No email is sent to the customer.
@@ -127,7 +130,7 @@ The Automatic Failed Payment Retry system in Subscriptions applies five (5) defa
 - **Order Status**: Renewal order’s status is set to *Pending*.
 - **Subscription Status**: Subscription’s status is set to *On-hold*.
 
-4. **Retry Rule 3:**
+#### Retry Rule 4
 
 - **Interval**: Subscriptions waits 48 hours between failed payment and retry attempt.
 - **Customer Email**: *Customer Payment Retry* is sent to the customer (if enabled) to notify of failed payment and scheduled retry attempt.
@@ -135,7 +138,7 @@ The Automatic Failed Payment Retry system in Subscriptions applies five (5) defa
 - **Order Status**: Renewal order’s status is set to *Pending*.
 - **Subscription Status**: Subscription’s status is set to *On-hold*.
 
-5. **Retry Rule 4:**
+#### Retry Rule 5
 
 - **Interval**: Subscriptions waits 72 hours between failed payment and retry attempt.
 - **Customer Email**: *Customer Payment Retry* is sent to the customer (if enabled) to notify of failed payment and scheduled retry attempt.
@@ -143,7 +146,7 @@ The Automatic Failed Payment Retry system in Subscriptions applies five (5) defa
 - **Order Status**: Renewal order’s status is set to *Pending*.
 - **Subscription Status**: Subscription’s status is set to *On-hold*.
 
-After the fifth retry (retry rule 4) is processed, the renewal order is marked *Failed* and the customer is sent the *Customer Renewal Invoice* email (if enabled), per the normal [failed renewal payment process](https://woocommerce.com/document/subscriptions/renewal-process/#section-5).
+After the fifth retry is processed, the renewal order is marked *Failed* and the customer is sent the *Customer Renewal Invoice* email (if enabled), per the normal [failed renewal payment process](https://woocommerce.com/document/subscriptions/renewal-process/#section-5).
 
 ## Monitoring Failed Payment Retries
 
@@ -151,18 +154,22 @@ After the fifth retry (retry rule 4) is processed, the renewal order is marked 
 
 To help you track automatic failed payment retries, Subscriptions displays retry information in a different places throughout the WooCommerce administration area. Let’s take a look at each one:
 
-**Retry Date on Edit Subscription Screen**
+### Retry Date on Edit Subscription Screen
+
+[↑ Back to top](#doc-title)
 
 If a subscription is currently within the retry process, it should have a *Pending* retry date/time set. This date is displayed at **WooCommerce > Edit Subscription**. **To view this date:**
 
 1. Go to **WooCommerce > Edit Subscription** for a subscription with a failed payment pending retry.
 2. View the **Renewal Payment Retry** date in the *Schedule* box.
 
-![](https://woocommerce.com/wp-content/uploads/2016/09/Renewal-Payment-Retry-1.png?w=980)
+![Screenshot of the Edit Subscription with a red arrow pointing at the Schedule panel where "Renewal Payment Retry" is visible and shows, in this example, "in 12 hours". ](https://woocommerce.com/wp-content/uploads/2016/09/subscription-edit-screen-renewal-payment-retry.png?w=980)Edit Subscriptions screen’s Schedule panel shows the Renewal Payment Retry interval
 
 **Renewal Payment Retry** date is only displayed when a subscription is pending retry. It is not displayed for failed and completed retry dates in the past.
 
-**Failed Payment Retry Report**
+### Failed Payment Retry Report
+
+[↑ Back to top](#doc-title)
 
 An overview of your entire store’s failed payment retries is also available in the [Failed Payment Retry Report](https://woocommerce.com/document/subscriptions/reports/#section-10). This report allows you to view revenue recovered by the failed payment retry system and the average number of retry attempts before successfully processing payments in a given time period.
 
@@ -170,19 +177,25 @@ An overview of your entire store’s failed payment retries is also available in
 
 [↑ Back to top](#doc-title)
 
-The retry system can email the customer and/or store owner to notify them of the failed payment and scheduled retry. This makes it possible to implement a [dunning](https://en.wikipedia.org/wiki/Dunning_(process)) process for failed payments. When defined in the [retry rules](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-5), emails will be sent when a payment attempt fails, not when the payment is retried. **This makes it possible to:**
+The retry system can email the customer and/or store owner to notify them of the failed payment and scheduled retry. This makes it possible to implement a [dunning](https://en.wikipedia.org/wiki/Dunning_(process)) process for failed payments. When defined in the [retry rules](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-5), emails will be sent when a payment attempt fails, not when the payment is retried.
+
+**This makes it possible to:**
 
 - notify the customer that the payment attempt failed immediately;
 - inform them when it will be retried (if at all); and
 - provide a link to manually complete the the payment before it is automatically retried, in case the customer knows it will continue to fail due to an expired credit card number or similar.
 
-Subscriptions provides [two](https://woocommerce.com/document/subscriptions/subscription-emails/)[default](https://woocommerce.com/document/subscriptions/subscription-emails/#failed-payment-retry-emails)[email](https://woocommerce.com/document/subscriptions/subscription-emails/)templates — one for emailing customers; and the other for store owners. Both email templates use the WooCommerce Email system, which means they can be [enabled or disabled](https://woocommerce.com/document/configuring-woocommerce-settings/emails/#editing-individual-emails) and [customized](https://woocommerce.com/posts/how-to-customize-emails-in-woocommerce/) the same way as other WooCommerce emails.
+Subscriptions provides [two](https://woocommerce.com/document/subscriptions/subscription-emails/)[default](https://woocommerce.com/document/subscriptions/subscription-emails/#failed-payment-retry-emails)[email](https://woocommerce.com/document/subscriptions/subscription-emails/)templates – one for emailing customers; and one for store owners. Both email templates use the WooCommerce Email system, which means they can be [enabled or disabled](https://woocommerce.com/document/configuring-woocommerce-settings/emails/#editing-individual-emails) and [customized](https://woocommerce.com/posts/how-to-customize-emails-in-woocommerce/) the same way as other WooCommerce emails.
 
 ![Woo Subscriptions sends this Failed Payment Retry Email to the customer.](https://woocommerce.com/wp-content/uploads/2016/09/example-customer-retry-email.png?w=634)Failed Payment Retry Email sent to customer
 
 **Why customers don’t receive an email after the first payment failure**:
 
-The [first retry (retry rule 0) is designed to address](https://woocommerce.com/document/subscriptions/failed-payment-retry/#default-retry-rules) any temporary technical issues that don’t need or require the customer’s involvement to fix. Because of of this, the first retry attempt happens 12 hours after the first payment. This short timeframe doesn’t give the customer much time to log in and fix any issues, such as paying off a credit card balance. The retry system is also unsure after first failure that the issue can be addressed by the customer, as it may be other factors. Because of this, the customer is not yet contacted. For example, if a payment fails at 6:00 pm on Wednesday night. At 6:00 am Thursday morning, the payment will be retried. If that retry fails, then the customer is emailed. If the customer was emailed at 6:00 pm Wednesday night, it’s unlikely they’d seen the email until after payment was retried at 6:00 am Thursday morning. They’d check their inbox at 9:00 am Thursday morning and find two emails.
+The [first retry (retry rule 0) is designed to address](https://woocommerce.com/document/subscriptions/failed-payment-retry/#default-retry-rules) any temporary technical issues that don’t need or require the customer’s involvement to fix. Because of of this, the first retry attempt happens 12 hours after the first payment.
+
+This short timeframe doesn’t give the customer much time to log in and fix any issues, such as paying off a credit card balance. The retry system is also unsure after first failure that the issue can be addressed by the customer, as it may be other factors. Because of this, the customer is not yet contacted.
+
+For example: a payment fails at 6:00 pm on Wednesday night. At 6:00 am Thursday morning, the payment will be retried. If that retry fails, then the customer is emailed. If the customer was emailed at 6:00 pm Wednesday night, it’s unlikely they’d seen the email until after payment was retried at 6:00 am Thursday morning. They’d check their inbox at 9:00 am Thursday morning and find two emails.
 
 ## Manually Retry a Failed Recurring Payment
 
@@ -197,7 +210,9 @@ In addition to the automatic retry system, Subscriptions provides a method for s
 
 ![](https://woocommerce.com/wp-content/uploads/2016/09/retry-renewal-payment.png?w=980)Retry Renewal Payment Order Action
 
-**Retry Renewal Payment Action Requirements**
+### Retry Renewal Payment Action Requirements
+
+[↑ Back to top](#doc-title)
 
 For this action to be displayed, these requirements must be met:
 
@@ -212,13 +227,21 @@ For this action to be displayed, these requirements must be met:
 
 [↑ Back to top](#doc-title)
 
-Subscriptions also allows for a customer to [pay for a failed renewal order](https://woocommerce.com/document/subscriptions/customers-view/#section-6) even when its payment is pending automatic retry. Paying for the renewal order manually will also update the payment method used on the subscription. By default, the [email sent to the customer](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-12) to notify them of the failed payment and pending retry also includes a call to action and link to login and manually pay for the order to encourage them to do so.
+Subscriptions also allows for a customer to [pay for a failed renewal order](https://woocommerce.com/document/subscriptions/customers-view/#section-6) even when its payment is pending automatic retry. Paying for the renewal order manually will also update the payment method used on the subscription.
+
+By default, the [email sent to the customer](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-12) to notify them of the failed payment and pending retry also includes a call to action and link to login and manually pay for the order to encourage them to do so.
 
 ## Next Payment Date Calculation after Successful Retry
 
 [↑ Back to top](#doc-title)
 
-The automatic retry system does not change [default behavior for calculating next renewal payment date](https://woocommerce.com/document/subscriptions/renewal-process/#next-payment-date-calculation). For most subscriptions, the next payment date is calculated based on the date the payment is successfully processed by the retry system. For example, consider a monthly subscription product purchased on 1st of February. If the automatic renewal payment fails on 1st of March but is not successfully processed by the automatic retry system until 3rd of March, the next payment date is calculated as 3rd of April, not the 1st of April. The exception to this is when the **subscription contains an**[aligned subscription product](https://woocommerce.com/document/subscriptions/billing-date-alignment). If the subscription is synchronized, the next renewal pay date is calculated from the original renewal date, not the date the payment is processed. This ensures synchronized dates are preserved even when payment is late. If you want the next payment date to always be calculated from the last scheduled payment date, install [WooCommerce Subscriptions – Preserve Billing Schedule](https://github.com/Prospress/woocommerce-subscriptions-preserve-billing-schedule).
+The automatic retry system does not change [default behavior for calculating next renewal payment date](https://woocommerce.com/document/subscriptions/renewal-process/#next-payment-date-calculation). For most subscriptions, the next payment date is calculated based on the date the payment is successfully processed by the retry system.
+
+For example, consider a monthly subscription product purchased on 1st of February. If the automatic renewal payment fails on 1st of March but is not successfully processed by the automatic retry system until 3rd of March, the next payment date is calculated as 3rd of April, not the 1st of April.
+
+The exception to this is when the **subscription contains an**[aligned subscription product](https://woocommerce.com/document/subscriptions/billing-date-alignment). If the subscription is synchronized, the next renewal pay date is calculated from the original renewal date, not the date the payment is processed. This ensures synchronized dates are preserved even when payment is late.
+
+If you want the next payment date to always be calculated from the last scheduled payment date, install [WooCommerce Subscriptions – Preserve Billing Schedule](https://github.com/Prospress/woocommerce-subscriptions-preserve-billing-schedule).
 
 ## How to Stop Subscription Renewal Payment Retry
 

@@ -14,7 +14,7 @@
 
 ## Check WordPress cron status
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 Use WooCommerce System Status to confirm whether WordPress cron is enabled on the site.
 
@@ -26,7 +26,7 @@ Use WooCommerce System Status to confirm whether WordPress cron is enabled on th
 
 ## What the result means
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 If WordPress cron is enabled, WordPress can trigger scheduled events when the site receives traffic. This does not guarantee that every scheduled subscription action will complete successfully, but it confirms that cron has not been disabled in WordPress configuration.
 
@@ -49,7 +49,7 @@ true
 
 ## If subscription events still do not run
 
-[↑ Back to top](#doc-title)
+[↑ Revenir en haut](#doc-title)
 
 After confirming WordPress cron is enabled, check scheduled subscription events directly.
 

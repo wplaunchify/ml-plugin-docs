@@ -115,7 +115,15 @@ The Name Your Price documentation has a section that explains the [switching set
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+
+### WooCommerce Memberships
+
+	
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+
+Power your membership association, online magazine, elearning sites, and more with access control to...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -123,14 +131,6 @@ The Name Your Price documentation has a section that explains the [switching set
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
-
-### Shipment Tracking
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Add shipment tracking information to your orders.
 
 ---
 

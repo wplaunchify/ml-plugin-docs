@@ -107,6 +107,8 @@ This error message will show up on the order notes. This error commonly affects 
 1. Go to **WooCommerce > Subscriptions** and open the affected subscription.
 2. Click the pencil icon next to the Billing section and check for missing or invalid payment tokens.
 3. Review your payment gateway’s error log under **WooCommerce > Status > Logs**
+4. To check selected subscriptions, go to WooCommerce > Subscriptions. Select the subscription(s), choose Check for payment method detachment from Bulk actions, then select Apply.
+5. For a store-wide check, go to WooCommerce > Status > Tools and select List subscriptions next to List Stripe subscriptions with detached payment method. This checks active Stripe subscriptions due in the next month. It makes one Stripe API request per matching subscription and can temporarily affect performance. Do not use it if more than 100 active subscriptions renew in the next 30 days.
 
 #### Next action steps
 

@@ -16,13 +16,13 @@
 
 ## Purchase a test subscription
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If you have not already purchased a subscription to test with, purchase a test subscription on your site using the payment gateway you want to verify. After completing the purchase, note the subscription ID created for the order.
 
 ## Trigger the renewal
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 There are two ways to trigger a renewal payment for a test subscription:
 
@@ -31,7 +31,7 @@ There are two ways to trigger a renewal payment for a test subscription:
 
 ### Process renewal admin action
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 The [Process renewal](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/update-an-existing-subscription/#process-a-renewal) action is the simplest method to test a renewal payment. Open the test subscription, choose **Process renewal** from the **Order actions** panel, and click the arrow button to run the action.
 
@@ -43,7 +43,7 @@ The **Process renewal** action appears when the subscription is active and the p
 
 ### Subscription payment scheduled action
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 A more technical option is to manually run the scheduled action that triggers the subscription payment.
 
@@ -58,11 +58,11 @@ After the renewal payment processes successfully with an [automatic renewal meth
 
 ## Troubleshooting issues with subscription renewals
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 ### Automatic renewal payments not starting
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If subscriptions appear active but have a renewal date in the past, there may be a cron issue on the site. These subscriptions can show a **Subscription payment overdue** warning in the subscriptions list at **WooCommerce > Subscriptions**.
 
@@ -73,7 +73,7 @@ Start by verifying that WordPress cron is enabled. Go to **WooCommerce > Status 
 
 ### Diagnosing stalled renewal payments
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 A stalled renewal happens when an automatically renewing subscription starts the renewal process but an error prevents the renewal from finishing. The subscription may be left on hold, and the payment may or may not have been captured. The cause can be the payment itself, a payment gateway error, or a plugin or theme conflict.
 
@@ -101,7 +101,7 @@ Depending on the clues you find, the resolution may involve correcting payment g
 
 ## Questions and support
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 **Something missing from this documentation? Still have questions and need assistance?**
 
@@ -114,7 +114,15 @@ Depending on the clues you find, the resolution may involve correcting payment g
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+
+### WooCommerce Memberships
+
+	
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+
+Power your membership association, online magazine, elearning sites, and more with access control to...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
 
 ### Product Add-Ons
 
@@ -122,14 +130,6 @@ Depending on the clues you find, the resolution may involve correcting payment g
 			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
-				![](https://woocommerce.com/wp-content/uploads/2012/05/Shipment_Tracking_icon-marketplace-160x160-2.png)
-
-### Shipment Tracking
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-Add shipment tracking information to your orders.
 
 ---
 
