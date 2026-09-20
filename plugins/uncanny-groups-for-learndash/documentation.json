@@ -1,7 +1,7 @@
 {
   "plugin_slug": "uncanny-groups-for-learndash",
   "plugin_name": "Uncanny Groups for LearnDash",
-  "last_scraped": "2026-09-13T12:05:16.872Z",
+  "last_scraped": "2026-09-20T11:37:02.826Z",
   "total_pages": 183,
   "failed_urls": [
     "https://www.uncannyowl.com/wp-json/wp/v2/ht_kb?per_page=10&page=11"
