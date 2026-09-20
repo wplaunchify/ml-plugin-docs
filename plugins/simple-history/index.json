@@ -2,10 +2,23 @@
   "plugin_slug": "simple-history",
   "plugin_name": "Simple History",
   "documentation_url": "https://simple-history.com/support/",
-  "last_scraped": "2026-09-13T10:38:40.507Z",
+  "last_scraped": "2026-09-20T10:08:03.169Z",
   "total_pages": 11,
   "failed_urls_count": 0,
   "sections": [
+    {
+      "title": "Ftc Franchise Rule Compliance With Simple History",
+      "slug": "ftc-franchise-rule-compliance-with-simple-history",
+      "url": "https://simple-history.com/support/ftc-franchise-rule-compliance-with-simple-history/",
+      "file": "categories/ftc-franchise-rule-compliance-with-simple-history.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "FTC Franchise Rule Compliance with Simple History",
+          "url": "https://simple-history.com/support/ftc-franchise-rule-compliance-with-simple-history/"
+        }
+      ]
+    },
     {
       "title": "Gdpr And Privacy",
       "slug": "gdpr-and-privacy",
@@ -98,15 +111,15 @@
       ]
     },
     {
-      "title": "Third Party Plugins With Support For Simple History",
-      "slug": "third-party-plugins-with-support-for-simple-history",
-      "url": "https://simple-history.com/support/third-party-plugins-with-support-for-simple-history/",
-      "file": "categories/third-party-plugins-with-support-for-simple-history.md",
+      "title": "Sec Rule 204 2 Compliance With Simple History",
+      "slug": "sec-rule-204-2-compliance-with-simple-history",
+      "url": "https://simple-history.com/support/sec-rule-204-2-compliance-with-simple-history/",
+      "file": "categories/sec-rule-204-2-compliance-with-simple-history.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Third party plugins with support for Simple History",
-          "url": "https://simple-history.com/support/third-party-plugins-with-support-for-simple-history/"
+          "title": "SEC Rule 204-2 Compliance with Simple History",
+          "url": "https://simple-history.com/support/sec-rule-204-2-compliance-with-simple-history/"
         }
       ]
     },
@@ -133,19 +146,6 @@
         {
           "title": "What is an initiator",
           "url": "https://simple-history.com/support/what-is-an-initiator/"
-        }
-      ]
-    },
-    {
-      "title": "Wrong Event Time",
-      "slug": "wrong-event-time",
-      "url": "https://simple-history.com/support/wrong-event-time/",
-      "file": "categories/wrong-event-time.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "⏰ Why is the time of my events wrong?",
-          "url": "https://simple-history.com/support/wrong-event-time/"
         }
       ]
     }

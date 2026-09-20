@@ -16,6 +16,8 @@ There is also support articles and developer documentation available:
 
 ## Support
 
+- #### FTC Franchise Rule Compliance with Simple History
+- #### SEC Rule 204-2 Compliance with Simple History
 - #### Multisite, staging and development sites
 - #### Fix: license key has reached the activation limit
 - #### How do I manage my add-on subscriptions
@@ -24,8 +26,6 @@ There is also support articles and developer documentation available:
 - #### GDPR and Privacy: How Your Data is Stored in Simple History
 - #### Got a charge from “LEMSQZY* SIMPLE-HISTORY”?
 - #### Troubleshooting errors when loading events
-- #### ⏰ Why is the time of my events wrong?
-- #### Third party plugins with support for Simple History
 
 ## Developer documentation
 

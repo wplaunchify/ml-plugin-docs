@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T10:05:38.556Z",
+  "last_updated": "2026-09-20T10:08:03.172Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2524,9 +2524,10 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-09-13T10:38:40.507Z",
+      "last_scraped": "2026-09-20T10:08:03.172Z",
       "page_count": 11,
       "categories": [
+        "ftc-franchise-rule-compliance-with-simple-history",
         "gdpr-and-privacy",
         "got-a-charge-from-lemsqzy-simple-history",
         "how-do-i-manage-my-add-on-subscriptions",
@@ -2534,10 +2535,9 @@
         "load-events-error",
         "multisite-and-development-sites",
         "overview",
-        "third-party-plugins-with-support-for-simple-history",
+        "sec-rule-204-2-compliance-with-simple-history",
         "weekly-email-report",
-        "what-is-an-initiator",
-        "wrong-event-time"
+        "what-is-an-initiator"
       ]
     },
     {

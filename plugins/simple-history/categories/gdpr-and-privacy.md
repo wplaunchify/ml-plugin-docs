@@ -45,7 +45,7 @@ All of it is stored directly in your own WordPress database, in two custom table
 
 ### Data Retention
 
-Log entries are deleted automatically after a set number of days. Keeping logs only as long as you actually need them is good practice under the GDPR’s data minimisation principle, so it’s worth reviewing this setting — you can [adjust the retention period](https://simple-history.com/support/change-number-of-days-to-keep-log/) to any number of days.
+Log entries are deleted automatically after a set number of days. Keeping logs only as long as you actually need them is good practice under the GDPR’s data minimisation principle, so it’s worth reviewing this setting — you can [adjust the retention period](https://simple-history.com/support/change-number-of-days-to-keep-log/) with Simple History Premium or a filter.
 
 ### IP Address Anonymization
 
