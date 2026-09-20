@@ -2,7 +2,7 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-09-13T12:25:58.023Z",
+  "last_scraped": "2026-09-20T11:54:51.467Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
@@ -20,6 +20,19 @@
       ]
     },
     {
+      "title": "Ai Tools Woocommerce",
+      "slug": "ai-tools-woocommerce",
+      "url": "https://wpsheeteditor.comai-tools-woocommerce/",
+      "file": "categories/ai-tools-woocommerce.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "4 Best AI Tools for WooCommerce Stores to Automate & Scale",
+          "url": "https://wpsheeteditor.com/ai-tools-woocommerce/"
+        }
+      ]
+    },
+    {
       "title": "Best Llms Woocommerce Product Descriptions",
       "slug": "best-llms-woocommerce-product-descriptions",
       "url": "https://wpsheeteditor.combest-llms-woocommerce-product-descriptions/",
@@ -33,41 +46,28 @@
       ]
     },
     {
-      "title": "Edit Woocommerce Without Admin Access",
-      "slug": "edit-woocommerce-without-admin-access",
-      "url": "https://wpsheeteditor.comedit-woocommerce-without-admin-access/",
-      "file": "categories/edit-woocommerce-without-admin-access.md",
+      "title": "Edit Woocommerce Product Prices Excel Google Sheets",
+      "slug": "edit-woocommerce-product-prices-excel-google-sheets",
+      "url": "https://wpsheeteditor.comedit-woocommerce-product-prices-excel-google-sheets/",
+      "file": "categories/edit-woocommerce-product-prices-excel-google-sheets.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Edit WooCommerce Products Without Admin Access via Google Sheets",
-          "url": "https://wpsheeteditor.com/edit-woocommerce-without-admin-access/"
+          "title": "How to Edit WooCommerce Product Prices in Excel or Google Sheets",
+          "url": "https://wpsheeteditor.com/edit-woocommerce-product-prices-excel-google-sheets/"
         }
       ]
     },
     {
-      "title": "Search Replace Woocommerce Product Prices",
-      "slug": "search-replace-woocommerce-product-prices",
-      "url": "https://wpsheeteditor.comsearch-replace-woocommerce-product-prices/",
-      "file": "categories/search-replace-woocommerce-product-prices.md",
+      "title": "Woocommerce Increase Prices Fixed Amount",
+      "slug": "woocommerce-increase-prices-fixed-amount",
+      "url": "https://wpsheeteditor.comwoocommerce-increase-prices-fixed-amount/",
+      "file": "categories/woocommerce-increase-prices-fixed-amount.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Search and Replace WooCommerce Prices in Bulk",
-          "url": "https://wpsheeteditor.com/search-replace-woocommerce-product-prices/"
-        }
-      ]
-    },
-    {
-      "title": "Sync Woocommerce With Google Sheets",
-      "slug": "sync-woocommerce-with-google-sheets",
-      "url": "https://wpsheeteditor.comsync-woocommerce-with-google-sheets/",
-      "file": "categories/sync-woocommerce-with-google-sheets.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Sync WooCommerce with Google Sheets",
-          "url": "https://wpsheeteditor.com/sync-woocommerce-with-google-sheets/"
+          "title": "How to Bulk Raise WooCommerce Product Prices by Fixed Amount",
+          "url": "https://wpsheeteditor.com/woocommerce-increase-prices-fixed-amount/"
         }
       ]
     }
