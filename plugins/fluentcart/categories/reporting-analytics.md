@@ -114,6 +114,7 @@ The top of the dashboard provides crucial controls that determine the data displ
 
 - **Date Range Selector:** This field allows you to define the **Current Range** for your report. You can select a custom start and end date to focus on specific periods, such as a major sale or a specific fiscal quarter.
 - **Compare To:** This dropdown determines the historical period used for comparison. Options allow you to benchmark your **Current Range** data against prevous time periods.
+- **Chart grouping:** The dropdown above the trend chart sets how the timeline is bucketed. Leave it on [Auto](/guide/reporting-analytics/reports-dashboard-overview#choosing-how-a-trend-chart-is-grouped) to follow your date range, or pick **Daily**, **Monthly**, or **Yearly** yourself.
 - **Reset Filters:** Click this button to instantly clear all applied date and comparison selections and revert the report to its default view.
 
 ### Key Customer Growth Metrics ​
@@ -392,6 +393,7 @@ The top of the dashboard gives you key controls to choose what data appears in t
 - **Date Filter:** This field allows you to define the date range for your report, enabling you to focus on specific periods.
 - **Compare To:** This dropdown allows you to choose a past time period to compare with your current data.
 - **Advanced Filters:** Click the **filter** icon to break down the report by options like **Order Type** or specific **Products**. This helps you focus on detailed order data for a closer view.
+- **Chart grouping:** The dropdown above the trend chart sets how the timeline is bucketed. Leave it on [Auto](/guide/reporting-analytics/reports-dashboard-overview#choosing-how-a-trend-chart-is-grouped) to follow your date range, or pick **Daily**, **Monthly**, or **Yearly** yourself.
 - **Reset Filters:** Click the **Reset Filter** button to quickly remove all selections and return the report to its original view.
 
 ### Key Order Metrics ​
@@ -465,6 +467,7 @@ The top of the dashboard gives you key controls to choose what data appears in t
 - **Date Filter:** This field allows you to define the date range for your report, enabling you to focus on specific periods.
 - **Compare To:** This dropdown allows you to choose a past time period to compare with your current data.
 - **Advanced Filters:** Click the filter icon to break down the report by options like **Order Type** or specific **Products**. This helps you focus on detailed product data for a closer view.
+- **Chart grouping:** The dropdown above the trend chart sets how the timeline is bucketed. Leave it on [Auto](/guide/reporting-analytics/reports-dashboard-overview#choosing-how-a-trend-chart-is-grouped) to follow your date range, or pick **Daily**, **Monthly**, or **Yearly** yourself.
 - **Reset Filters:** Click the **Reset Filter** button to quickly remove all selections and return the report to its original view.
 
 ### Key Product Metrics ​
@@ -516,6 +519,7 @@ The top of the dashboard gives you key controls to choose what data appears in y
 - **Date Filter:** This field allows you to define the date range for your report, enabling you to focus on specific periods.
 - **Compare To:** This dropdown lets you pick a past period (for example, the previous week, last month, or the same time last year). Your current data is then compared with that past period. This helps you see if your store is doing better, worse, or staying the same over time.
 - **Advanced Filters:** Click the **filter** icon to segment the report by criteria such as **Order Type** or specific **Products**, allowing you to isolate refunds associated with certain items.
+- **Chart grouping:** The dropdown above the trend chart sets how the timeline is bucketed. Leave it on [Auto](/guide/reporting-analytics/reports-dashboard-overview#choosing-how-a-trend-chart-is-grouped) to follow your date range, or pick **Daily**, **Monthly**, or **Yearly** yourself.
 - **Reset Filters:** Click the **Reset Filter** button to quickly remove all selections and return the report to its original view.
 
 ### Key Refund Metrics ​
@@ -614,6 +618,19 @@ The final charts focus on catalog performance and the health of your customer ba
 
 By reviewing the Overview first, you get a clean summary of the most critical numbers, allowing you to choose which detailed tab (Sales, Refunds, etc.) you need to investigate further.
 
+## Choosing How a Trend Chart Is Grouped ​
+
+The **Orders**, **Revenue**, **Refunds**, **Subscription**, **Product**, and **Customer** tabs each carry a trend chart with a small grouping dropdown above it. That dropdown decides how tightly the timeline is bucketed, and it changes the shape of what you see without changing the numbers underneath.
+
+- **Auto:** Lets FluentCart pick the grouping from the date range you selected. This is the default.
+- **Daily:** One point per day. Best for spotting the exact day a campaign landed or a problem started.
+- **Monthly:** One point per month, which smooths daily noise into a readable trend.
+- **Yearly:** One point per year, for long-range comparisons.
+
+**Auto** tells you what it decided rather than leaving you guessing. While it is the active choice, the option reads **Auto (Daily)**, **Auto (Monthly)**, or **Auto (Yearly)** to show which grouping your current date range resolves to. Ranges up to about three months group daily, up to a year group monthly, and anything longer groups yearly.
+
+Pick a grouping explicitly when Auto is not what you want, such as reading a full year day by day to find a single spike. The label goes back to a plain **Auto** while an explicit choice is active, so it never echoes your own selection back at you.
+
 ---
 
 ## Subscription Retention & Churn Report ​
@@ -690,6 +707,7 @@ The top of the dashboard gives you key controls to choose what data appears in t
 - **Date Filter:** This field allows you to define the date range for your report, enabling you to focus on specific periods.
 - **Compare To:** This dropdown allows you to choose a past time period to compare with your current data.
 - **Advanced Filters:** Click the **filter** icon to break down the report by options like Order Type or specific Products. This helps you focus on detailed revenue data for a closer view.
+- **Chart grouping:** The dropdown above the trend chart sets how the timeline is bucketed. Leave it on [Auto](/guide/reporting-analytics/reports-dashboard-overview#choosing-how-a-trend-chart-is-grouped) to follow your date range, or pick **Daily**, **Monthly**, or **Yearly** yourself.
 - **Reset Filters:** Click the **Reset Filter** button to quickly remove all selections and return the report to its original view.
 
 ### Key Revenue Metrics ​
@@ -800,6 +818,7 @@ The top of the dashboard gives you key controls to choose what data appears in t
 
 - **Date Filter:** This field allows you to define the date range for your report, enabling you to focus on specific periods.
 - **Compare To:** This dropdown allows you to choose a past time period to compare with your current data.
+- **Chart grouping:** The dropdown above the trend chart sets how the timeline is bucketed. Leave it on [Auto](/guide/reporting-analytics/reports-dashboard-overview#choosing-how-a-trend-chart-is-grouped) to follow your date range, or pick **Daily**, **Monthly**, or **Yearly** yourself.
 - **Reset Filters:** Click this button to instantly clear all applied date and comparison selections and revert the report to its default view.
 
 ### Subscription Chart ​
