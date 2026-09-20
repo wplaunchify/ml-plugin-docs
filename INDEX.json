@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T12:38:55.588Z",
+  "last_updated": "2026-09-20T12:44:04.261Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2693,7 +2693,7 @@
       "slug": "store-credit-for-woocommerce",
       "name": "Store Credit for WooCommerce",
       "documentation_url": "https://woocommerce.com/document/woocommerce-store-credit/",
-      "last_scraped": "2026-09-13T12:55:00.301Z",
+      "last_scraped": "2026-09-20T12:44:04.261Z",
       "page_count": 1,
       "categories": [
         "overview"
