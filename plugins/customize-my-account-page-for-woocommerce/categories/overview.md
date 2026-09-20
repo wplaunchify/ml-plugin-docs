@@ -21,6 +21,10 @@ With this plugin, you can easily add, remove, and organize account menu items, c
 3. Click **Upload Plugin** and choose the .zip file you downloaded.
 4. Click **Install Now** and then **Activate** the plugin.
 
+1. 
+
+1. 
+
 After the installation, let’s get onto the plugin itself. Here’s a quick overview of the main interface sections you’ll be working with:
 
 ### 1. Top Section
@@ -101,8 +105,6 @@ An endpoint that appears by default or a created endpoint has the following opti
 
 ### How to Add a New Endpoint?
 
-[↑ Back to top](#doc-title)
-
 You can add as many endpoints as needed, allowing you to fully customize the account page.
 
 ![](https://woocommerce.com/wp-content/uploads/2025/09/Add-Endpoints.png?w=980)
@@ -110,6 +112,10 @@ You can add as many endpoints as needed, allowing you to fully customize the acc
 1. Click on the Add Endpoint on the top right (or inside “Add Tab” below the Endpoints list), and you will be asked to enter the Endpoint Name.
 2. Type in the name of the endpoint and hit enter.
 3. After creating an endpoint, you will see it listed in the left section, where other endpoints are listed.
+
+1. 
+
+1. 
 
 The options for a custom endpoint are similar to those already explained in the Endpoints section. However, a new endpoint also requires a unique slug.
 
@@ -126,11 +132,15 @@ This option will allow you to make a group of endpoints. It will act as a parent
 3. After creating a group, you will see it listed in the left section, where other endpoints are listed.
 4. You can then click “≣” and drag an existing endpoint/link or create and drag an endpoint/link to the group that you made.
 
+1. 
+
+1. 
+
+1. 
+
 The options for a custom Group are similar to those already explained in the Endpoints section. However, a Group endpoint doesn’t have custom content.
 
 ### Add Link
-
-[↑ Back to top](#doc-title)
 
 This option will allow you to add a link to the account page. You can add as many links as you want.
 
@@ -238,6 +248,12 @@ To restore your settings:
 3. Click on it and the restore dialogue box will appear.
 4. Click on Reset.
 
+1. 
+
+1. 
+
+1. 
+
 After restoring, all the changes will revert to the default. For the customizer, there’s a Reset button at the top of the customizer tab.
 
 ## Settings
@@ -268,8 +284,6 @@ Advanced settings for developers and troubleshooting purposes.
 Click **Save Changes** to apply all settings modifications. Changes will take effect immediately on your My Account page.
 
 ## Compatibility with Third-Party WooCommerce Plugins
-
-[↑ Back to top](#doc-title)
 
 Currently, the plugin is by default compatible with the following plugins:
 
