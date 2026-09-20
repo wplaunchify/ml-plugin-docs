@@ -68,27 +68,21 @@ Add the following to that template to include a custom message if a user tries t
  * @since 4.12.3
  * @version 4.12.3
  */
-
 $user = wp_get_current_user();
 $event_id = get_the_ID();
-
 /** @var Tribe__Tickets__Tickets_View $tickets_view */
 $tickets_view = Tribe__Tickets__Tickets_View::instance();
-
 ?>
 <div class="tribe-tickets__rsvp-actions-rsvp">
 	<span class="tribe-common-h2 tribe-common-h6--min-medium">
 		<?php esc_html_e( 'RSVP Here', 'event-tickets' ); ?>
 	</span>
-
     <?php if ( ! $tickets_view->has_rsvp_attendees( $event_id, $user->ID ) ) : ?>
         <?php $this->template( 'v2/rsvp/actions/rsvp/going', [ 'rsvp' => $rsvp ] ); ?>
-
         <?php $this->template( 'v2/rsvp/actions/rsvp/not-going', [ 'rsvp' => $rsvp ] ); ?>
     <?php else : ?>
         <p>Sorry - only one per customer!</p>
     <?php endif; ?>
-
 </div>
 ```
 
@@ -126,7 +120,6 @@ $tickets_view = Tribe__Tickets__Tickets_View::instance();
 $rsvp_count   = 0 < $tickets_view->count_rsvp_attendees( get_the_ID(), $user );
 $disabled = $must_login || $rsvp_count;
 ?>
-
 <div class="tribe-tickets__rsvp-actions-rsvp-going">
 	<button
 		class="tribe-common-c-btn tribe-tickets__rsvp-actions-button-going tribe-common-b1 tribe-common-b2--min-medium"
@@ -159,79 +152,6 @@ After this, our RSVP will be updated as we expected:
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/RSVP_FullName.jpeg)
 
 It’s worth mentioning that while it’s true that you can modify the code in the template file, it’s good practice to apply the template override method to avoid losing changes in case there’s a plugin update that replaces the modified file with the original file.
-
-## Collecting Additional Guest Names
-
-When using the RSVP functionality of Event Tickets, you’ll notice that only the main guest is asked or is required to submit their name and email address on the RSVP form. However, there may be a time when you need the names of the other guests that the main guests is bringing with. For this, we will tap on the Attendee Information feature of Event Tickets Plus and tweak it a bit to conform with our use case.
-
-Add a text field called “Guest Name” on the Attendee Information setting of your RSVP.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-1024x494-1.jpg)
-
-- Copy the 
-```
-wp-contentpluginsevent-tickets-plussrcviewsv2componentsmetatext.php
-```
-
- file to your 
-```
-[theme or child-theme]/tribe/tickets-plus/v2/components/meta/
-```
-
- folder to override it.
-
-- Edit the “target” file (the one in your theme or child-theme folder) so it contains the code below, which does the following: It appropriately requires the guest name field for all other attendees and does not show the field to the main guest.
-
-```
-<?php
-$multiline = Tribe__Utils__Array::get( $field, [ 'extra', 'multiline' ], null );
-
-if ( $field->slug == 'guest-name' ) {
-	if ( $attendee_id === 0 ) {
-		$required = false;
-	}
-}
-?>
-<div
-	<?php tribe_classes( $classes ); ?>
-	<?php tribe_attributes( $attributes ); ?>
->
-<?php if ( $attendee_id === 0 && $field->slug == 'guest-name' ) { return; } else { ?>
-	<label
-		class="tribe-tickets__form-field-label"
-		for="<?php echo esc_attr( $field_id ); ?>"
-	><?php echo wp_kses_post( $field->label ); ?><?php tribe_required_label( $required ); ?></label>
-	<div class="tribe-tickets__form-field-input-wrapper">
-		<?php if ( $multiline ) : ?>
-			<textarea
-				id="<?php echo esc_attr( $field_id ); ?>"
-				class="tribe-common-form-control-text__input tribe-tickets__form-field-input"
-				name="<?php echo esc_attr( $field_name ); ?>"
-				placeholder="<?php echo esc_attr( $placeholder ); ?>"
-				<?php tribe_required( $required ); ?>
-				<?php tribe_disabled( $disabled ); ?>
-			><?php echo esc_textarea( $value ); ?></textarea>
-		<?php else : ?>
-			<input
-				type="text"
-				id="<?php echo esc_attr( $field_id ); ?>"
-				class="tribe-common-form-control-text__input tribe-tickets__form-field-input"
-				name="<?php echo esc_attr( $field_name ); ?>"
-				value="<?php echo esc_attr( $value ); ?>"
-				placeholder="<?php echo esc_attr( $placeholder ); ?>"
-				<?php tribe_required( $required ); ?>
-				<?php tribe_disabled( $disabled ); ?>
-			/>
-		<?php endif; ?>
-		<?php if ( ! empty( $description ) ) : ?>
-			<div class="tribe-common-b3 tribe-tickets__form-field-description">
-				<?php echo wp_kses_post( $description ); ?>
-			</div>
-		<?php endif; ?>
-	</div>
-<?php } ?>
-</div>
-```
 
 ---
 

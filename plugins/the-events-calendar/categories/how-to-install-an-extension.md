@@ -8,9 +8,9 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/how-to-install-an-extension/](https://docs.nexcess.com/software/the-events-calendar/how-to-install-an-extension/)
 
-If you’re reading this post, then chances are you have a couple of questions on your mind: what is an extension, and how do I install one on my site? Our [Extension Library](https://theeventscalendar.com/extensions/) contains many small enhancements to [The Events Calendar](https://theeventscalendar.com/product/wordpress-events-calendar/), [Event Tickets](https://theeventscalendar.com/product/wordpress-event-tickets/), and our other plugins. But let’s go into some more detail.
+If you’re reading this post, then chances are you have a couple of questions on your mind: what is an extension, and how do I install one on my site? Our [Extension Library](https://github.com/mt-support) contains many small enhancements to [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/), [Event Tickets](https://wordpress.org/plugins/event-tickets/), and our other plugins. But let’s go into some more detail.
 
-[Get Extensions](https://theeventscalendar.com/extensions/)
+[Get Extensions](https://github.com/mt-support)
 
 ## What is an extension?
 
@@ -20,9 +20,9 @@ In other words: **an extension is just a tiny WordPress plugin that enhances t
 
 While extensions are not officially supported by us, we do periodically update them. This may enhance their functionality or keep pace with the related updates to our core and premium plugins.
 
-Another difference with extensions is that [they are available directly on our site](https://theeventscalendar.com/extensions/). While most WordPress plugins are hosted on the WordPress.org plugin repository, that website has some restrictions in place that prevent things like Extensions from being uploaded there.
+Another difference with extensions is that [they are available directly on GitHub](https://github.com/mt-support). While most WordPress plugins are hosted on the WordPress.org plugin repository, that website has some restrictions in place that prevent things like Extensions from being uploaded there.
 
-Thus we have our own little repository on this site called the [Extension Library](https://theeventscalendar.com/extensions/), and this is where you go to find and download one. That’s great because it’s like a one-stop shop to find what’s there. On the other hand, that also means that they are unable to be updated in the WordPress admin like other plugins that are installed from the [WordPress plugin directory](https://wordpress.org/plugins/).
+Thus we have our own little repository where you go to find and download one. That’s great because it’s like a one-stop shop to find what’s there. On the other hand, that also means that they are unable to be updated in the WordPress admin like other plugins that are installed from the [WordPress plugin directory](https://wordpress.org/plugins/).
 
 What does that mean for you? You won’t get updates or notifications from WordPress.org if the extension is updated. That’s disappointing because we really want you to have the latest version!
 
@@ -67,7 +67,7 @@ Now that you have it, it’s time to install it in WordPress. Again, because thi
 
 ### Using Git Updater
 
-To install an extension with Git Updater, head over to our [Extensions](https://theeventscalendar.com/extensions/) page. Find the extension you’d like to install.
+To install an extension with Git Updater, head over to our [GitHub repo](https://github.com/mt-support). Find the extension you’d like to install.
 
 Rather than downloading the extension, click on the link that takes you to the GitHub page.
 
