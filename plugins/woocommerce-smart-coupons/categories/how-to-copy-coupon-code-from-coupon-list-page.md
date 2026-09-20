@@ -18,7 +18,7 @@ This doc article explains how you can copy the coupon code from the coupons list
 
 ## How to copy the coupon code
 
-[↑ Voltar Para o Topo](#doc-title)
+[↑ Back to top](#doc-title)
 
 1. Navigate to **WordPress Admin panel** -> **Marketing -> Coupons**.
 2. Hover over the coupon you would like to share.
