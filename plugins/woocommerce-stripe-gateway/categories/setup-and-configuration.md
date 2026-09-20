@@ -196,14 +196,14 @@ Some payment methods have limitations in their functionality. These are listed b
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Klarna
+### WooCommerce Tax
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -335,14 +335,14 @@ As a next step, we recommend [configuring test mode](https://woocommerce.com/doc
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Klarna
+### WooCommerce Tax
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -563,14 +563,14 @@ add_filter( 'wc_stripe_should_hide_express_checkout_button_based_on_tax_setup', 
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Klarna
+### WooCommerce Tax
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -628,14 +628,14 @@ If you’ve determined that the Stripe extension is *not* already installed on y
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Klarna
+### WooCommerce Tax
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -795,14 +795,14 @@ The **Layout** option controls how various payment methods are shown in the Opti
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Klarna
+### WooCommerce Tax
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 

@@ -304,14 +304,14 @@ Known incompatibilities with express checkout buttons include but are not limite
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Klarna
+### WooCommerce Tax
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 
@@ -498,14 +498,14 @@ Note that as long as your Stripe account is restricted to test mode only, you wi
 			by [Stripe](https://woocommerce.com/vendor/stripe)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
 
-### Klarna
+### WooCommerce Tax
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Woo](https://woocommerce.com/vendor/woocommerce)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
 
 ---
 

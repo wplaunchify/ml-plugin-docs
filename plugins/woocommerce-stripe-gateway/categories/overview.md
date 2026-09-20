@@ -14,7 +14,7 @@
 
 ## What can the Stripe extension do?
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 Using a Stripe account, you can accept payments on your WooCommerce site without setup costs or monthly fees. You can offer the following payment methods:
 
@@ -29,7 +29,7 @@ Using a Stripe account, you can accept payments on your WooCommerce site without
 
 ## Getting started
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 The [setup and configuration guide](https://woocommerce.com/document/stripe/setup-and-configuration/) provides a basic overview of our Stripe extension. You can also see the guides linked below for more info on the specifics:
 
@@ -44,7 +44,7 @@ If you’re just starting out, the setup, and configuration guide linked above i
 
 ## Customer experience
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 Once the Stripe extension is up and running, you might want to see what [the customer experience](https://woocommerce.com/document/stripe/customer-experience/checkout/) is like. We’ve outlined some information about that below.
 
@@ -57,7 +57,7 @@ Once the Stripe extension is up and running, you might want to see what [the cus
 
 ## Administrator experience
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 When managing a site that uses our Stripe extension, you’ll need to be aware of [how it works for site owners and admins](https://woocommerce.com/document/stripe/admin-experience/). We also recommend reviewing the following:
 
@@ -76,7 +76,7 @@ You may also want to know about:
 
 ## Troubleshooting
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 The following pages contain more info about [troubleshooting the Stripe extension](https://woocommerce.com/document/stripe/troubleshooting/):
 
@@ -89,7 +89,7 @@ The following pages contain more info about [troubleshooting the Stripe extensio
 
 ## Customizing
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 The following pages contain more info about [customizing the Stripe extension](https://woocommerce.com/document/stripe/customization/):
 
@@ -102,7 +102,7 @@ The following pages contain more info about [customizing the Stripe extension](h
 
 ## Contacting support
 
-[↑ Torna in cima](#doc-title)
+[↑ Back to top](#doc-title)
 
 If you have questions about or problems with the Stripe extension that are not covered in our documentation above, please [contact support](https://woocommerce.com/my-account/contact-support/).
 
