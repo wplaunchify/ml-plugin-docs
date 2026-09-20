@@ -251,7 +251,15 @@ In This Article
 - [Paying affiliates with Stripe](#paying-with-stripe)
 - [Setting up and running Stripe payouts abroad](#setting-up-stripe-international-payouts)
 - [When Stripe cannot reach an affiliate](#when-stripe-cannot-reach-an-affiliate)
-- [Frequently asked questions](#frequently-asked-questions)
+- [Frequently asked questions](#frequently-asked-questions)- [Do I need a special Stripe account to pay affiliates internationally?](#aioseo-do-i-need-a-special-stripe-account-to-pay-affiliates-internationally)
+- [An affiliate's country is not supported. Can they still use Stripe?](#aioseo-an-affiliates-country-is-not-supported-can-they-still-use-stripe)
+- [I don't see Global Payouts in my US or UK Stripe account. What do I do?](#aioseo-i-dont-see-global-payouts-in-my-us-or-uk-stripe-account-what-do-i-do)
+- [A toggle is greyed out. Why?](#aioseo-a-toggle-is-greyed-out-why)
+- [I see the options even though my store isn't in the US or UK. Is that right?](#aioseo-i-see-the-options-even-though-my-store-isnt-in-the-us-or-uk-is-that-right)
+- [Which option will a given affiliate use?](#aioseo-which-option-will-a-given-affiliate-use)
+- [An affiliate says they received less than their commission. Why?](#aioseo-an-affiliate-says-they-received-less-than-their-commission-why)
+- [An affiliate isn't getting paid. What should I check?](#aioseo-an-affiliate-isnt-getting-paid-what-should-i-check)
+- [Can I change an affiliate's payout country after they've added bank details?](#aioseo-can-i-change-an-affiliates-payout-country-after-theyve-added-bank-details)
 - [Next steps](#next-steps)
 
 ## Which method reaches which countries
@@ -294,7 +302,7 @@ It arrives in two hops, and the timing of each is worth knowing:
 
 That means a payout can show as paid on your side before the money reaches their bank. The gap is normal, and it is the most common reason an affiliate says a payout has not arrived. They see the expected arrival date in their payout settings, and every step in Stripe’s Express dashboard, where they can also update their bank details.
 
-This option reaches 30+ countries: the US, the UK, Canada, Switzerland, and most of Europe. Your own Stripe account has to be based in one of eight sender countries, listed in the [comparison table](#whats-the-difference-between-stripe-cross-border-payouts-and-global-payouts) below.
+This option reaches 30+ countries: the US, the UK, Canada, Switzerland, and most of Europe. Your own Stripe account has to be based in one of the sender countries listed in the [comparison table](#whats-the-difference-between-stripe-cross-border-payouts-and-global-payouts) below.
 
 The same Stripe Express setup also handles US tax forms. When you and the affiliate are both in the US, AffiliateWP pays them through an Express account so Stripe can collect a W-9 and file the 1099. A payout inside your own country works this way whether or not you turn this option on, because the option only governs affiliates in other countries.
 
@@ -427,11 +435,11 @@ What you can use depends on the country of your connected Stripe account, not yo
 **Bank payouts (via Stripe account)** needs:
 
 - Stripe set up for the mode you are using, Live or Sandbox
-- A Stripe account based in one of the eight sender countries in the [comparison table](#whats-the-difference-between-stripe-cross-border-payouts-and-global-payouts) above
+- A Stripe account based in one of the sender countries in the [comparison table](#whats-the-difference-between-stripe-cross-border-payouts-and-global-payouts) above
 
 **Bank payouts (direct)** needs the same, with a tighter country list:
 
-- A Stripe account based in the US or the UK, which is a subset of those eight sender countries
+- A Stripe account based in the US or the UK, which is a subset of those sender countries
 - Global Payouts active on that same account, so a Stripe Financial Account exists for AffiliateWP to find
 - Money in that Financial Account before you pay. Bank transfers into it can take a few days, so top it up ahead of time
 
@@ -569,7 +577,7 @@ Because it always works, it is also where an affiliate quietly ends up when noth
 
 ### Do I need a special Stripe account to pay affiliates internationally?
 
-No. Both options run on the Stripe account you already have. **Bank payouts (via Stripe account)** works from any of the eight sender countries listed in the comparison table. **Bank payouts (direct)** narrows that to the US and the UK, and needs Global Payouts active on the account so a Stripe Financial Account exists.
+No. Both options run on the Stripe account you already have. **Bank payouts (via Stripe account)** works from any of the sender countries listed in the comparison table. **Bank payouts (direct)** narrows that to the US and the UK, and needs Global Payouts active on the account so a Stripe Financial Account exists.
 
 ### An affiliate’s country is not supported. Can they still use Stripe?
 
@@ -19703,7 +19711,7 @@ Log into your account
 
 		
 
-		[Lost your password?](https://affiliatewp.com/login/?action=lostpassword)
+		[Lost your password?](https://affiliatewp.com/affiliates/login/?affwp_lost_password=1)
 . In AffiliateWP, shortcodes call regularly used pieces of code quickly, whilst decreasing the chance of potential errors in longer HTML code.
 
 **Site admin/administrator** – The site administrator has full power over the site and can do absolutely everything. Their WordPress user role is Administrator. They can add and remove users, and change user roles. They have complete control over posts, pages, media, comments, settings, themes, plugins, and other users. A site could have one Administrator, or multiple Administrators depending on the type of website.
