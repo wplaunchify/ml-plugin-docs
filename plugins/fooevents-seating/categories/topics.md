@@ -42,7 +42,7 @@ Each ticket contains details of the person attending the event. This person is r
 	- [Attendee check-ins](https://help.fooevents.com/docs/topics/attendees/attendee-check-ins/)
 - [Editing attendee details](https://help.fooevents.com/docs/topics/attendees/editing-attendee-details/)
 - [Export event and attendee information](https://help.fooevents.com/docs/topics/attendees/export-attendee-information/)
-- [Attendee Details Page (Beta)](https://help.fooevents.com/docs/topics/attendees/attendee-page/)
+- [Attendee Details Page](https://help.fooevents.com/docs/topics/attendees/attendee-page/)
 
 ---
 
@@ -2567,7 +2567,7 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/](https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/)
 
-## 2.0.18 (03 October 2026)
+## 2.0.18 (03 September 2026)
 
 - FIXED: Select HTML theme option bug in product.
 - FIXED: Various stationary builder improvements.
@@ -7926,7 +7926,7 @@ For a full overview of the functionality provided by FooEvents, please browse th
 
 FooEmail *(currently in beta)* is a free WordPress plugin for logging emails sent from your site and improving email deliverability using SMTP and Brevo. It helps ensure that mission-critical emails such as FooEvents tickets, WooCommerce orders, contact form submissions, and password resets reach your customers’ inboxes without being flagged as spam or blocked by hosting providers.
 
-[Download FooEmail](https://downloads.fooevents.com/fooemail/)
+[Download FooEmail](http://downloads.fooevents.com/files/fooemail.zip)
 
 *Download and install the free FooEmail plugin on your WordPress site.*
 
