@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T21:47:58.127Z",
+  "last_updated": "2026-09-20T21:54:25.022Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2352,7 +2352,7 @@
       "slug": "login-me-now",
       "name": "Login Me Now",
       "documentation_url": "https://wordpress.org/plugins/login-me-now/",
-      "last_scraped": "2026-09-13T21:46:50.904Z",
+      "last_scraped": "2026-09-20T21:54:25.022Z",
       "page_count": 2,
       "categories": [
         "advanced",
