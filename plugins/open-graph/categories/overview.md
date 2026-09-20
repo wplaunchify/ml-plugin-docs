@@ -128,6 +128,74 @@ Contributors
 
 	Project maintained on github at [pfefferle/wordpress-opengraph](https://github.com/pfefferle/wordpress-opengraph).
 
+### 3.0.0 (Sep 18, 2026)
+
+- simpler image handling: one pass over the post content, catches gallery, media & text and nested block images
+- new 
+```
+opengraph_image_sources
+```
+
+ filter to add or remove image sources
+- the property filters get the metadata collected so far as second argument
+- twitter card is 
+```
+summary_large_image
+```
+
+ whenever the post has an image, 
+```
+summary
+```
+
+ for the fallback images
+- use the current page of a multipage post and the 
+```
+<!--more-->
+```
+
+ teaser for the description (#9)
+- fixed merging into an existing 
+```
+prefix
+```
+
+ attribute
+- fixed a fatal error with The Events Calendar (#39)
+- **breaking:** removed 
+```
+opengraph_block_image
+```
+
+, 
+```
+opengraph_parsed_image
+```
+
+, 
+```
+opengraph_attached_image
+```
+
+, 
+```
+opengraph_ensure_max_image
+```
+
+ and 
+```
+opengraph_site_supports_blocks
+```
+
+ (and its filter), use the 
+```
+opengraph_image_sources
+```
+
+ filter instead
+- minimum WordPress version is now 6.2
+- added phpunit tests
+
 ### 2.0.2 (Feb 25, 2025)
 
 - Add a constant to easily change the max number of images to be included in the OpenGraph meta tags.
