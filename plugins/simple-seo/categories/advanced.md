@@ -4,7 +4,7 @@
 
 ---
 
-## Simple SEO (Search Engine Optimization)
+## Simple SEO
 
 **Source:** [https://wordpress.org/plugins/simple-seo/advanced/](https://wordpress.org/plugins/simple-seo/advanced/)
 
@@ -36,7 +36,7 @@ This section is intended for advanced users and developers only. They are presen
 
 Previous versions of plugins may not be secure or stable. They are not recommended for use on production websites.Please select a specific version to download.
 
-Development Version0.3.30.3.20.3.10.1 [Download](https://downloads.wordpress.org/plugin/simple-seo.zip)
+Development Version1.2.01.1.01.0.00.3.50.3.40.3.30.3.20.3.10.1 [Download](https://downloads.wordpress.org/plugin/simple-seo.zip)
 
 ---
 
