@@ -17174,7 +17174,7 @@ Here is an example of such an event: [Movie Extra (Free RSVP / Waitlist Event)](
 
 In this help document, we will outline the exact configuration needed to achieve all of the above requirements.
 
-*This help document assumes that you already have FooEvents and WooCommerce installed on a WordPress website and have a basic understanding of how FooEvents works. If you are new to FooEvents, you should read our Getting Started guide to help you get started.*
+*This help document assumes that you already have FooEvents and WooCommerce installed on a WordPress website and have a basic understanding of how FooEvents works. If you are new to FooEvents, you should read our Getting Started guide to help you get started.*
 
 ## Products Used
 

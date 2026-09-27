@@ -2389,7 +2389,8 @@ By following these steps, you can ensure that you are viewing the most up-to-dat
 
 ## Articles
 
-	- [How to Force Refresh Your Web Browser](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/how-to-force-refresh-your-web-browser/)
+	- [How do I use Browser Developer Tools to see errors?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/browser-developer-tools/)
+- [How to Force Refresh Your Web Browser](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/how-to-force-refresh-your-web-browser/)
 - [Why do I receive an error when I try activate the FooEvents plugin?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-do-i-receive-an-error-when-i-try-activate-the-fooevents-plugin/)
 - [Why are my automatic plugin updates not working?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-my-automatic-plugin-updates-not-working/)
 - [Why do I receive the following error message “The package could not be installed. No valid plugins were found.”?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/no-valid-plugins-were-found/)
@@ -2405,6 +2406,144 @@ By following these steps, you can ensure that you are viewing the most up-to-dat
 - [Why is the selected booking slot or seat not displaying on the checkout page?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-is-the-selected-booking-slot-not-displaying-on-the-checkout-page/)
 - [Why are my events displaying the wrong date in the calendar?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-my-events-displaying-the-wrong-date-in-the-calendar/)
 - [Why are the FooEvents POS payment methods not displaying?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-the-fooevents-pos-payment-methods-not-displaying/)
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/browser-developer-tools/](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/browser-developer-tools/)
+
+## What Are Browser Developer Tools?
+
+**Browser Developer Tools** (often called **DevTools**) are a set of web authoring and debugging tools built directly into modern web browsers. They allow web developers, designers, and site administrators to inspect, edit, and troubleshoot web pages in real time. If you experience a problem on your site then the errors that you see in the “Console” can be helpful to help developers see where the issue lies.
+
+## What Can You Do with DevTools?
+
+**Inspect & Edit HTML/CSS:** View the underlying structure of a webpage and test CSS visual changes live without editing the actual server files.
+
+**Console Logging:** Monitor JavaScript errors, warnings, and manually run JavaScript commands directly on the active page.
+
+**Device Emulation:** Test how web pages look and behave across various screen resolutions, mobile devices, and tablets.
+
+## How to Open DevTools in Major Browsers
+
+### 1. Google Chrome
+
+*a. Keyboard Shortcuts (Fastest):*
+
+- **Windows / Linux:** Press 
+```
+F12
+```
+
+ or 
+```
+Ctrl + Shift + I
+```
+- **Mac:** Press 
+```
+Cmd + Option + I
+```
+
+*b. Right-Click Menu:*
+
+Right-click any element on the page and select **Inspect**.
+
+*c. Chrome Main Menu:*
+
+1. Click the **three vertical dots** (
+```
+⋮
+```
+
+) in the top-right corner.
+2. Hover over **More Tools**.
+3. Click **Developer Tools**.
+
+### 2. Mozilla Firefox
+
+*a. Keyboard Shortcuts:*
+
+- **Windows / Linux:** Press 
+```
+F12
+```
+
+ or 
+```
+Ctrl + Shift + I
+```
+- **Mac:** Press 
+```
+Cmd + Option + I
+```
+
+*b. Right-Click Menu:*
+
+Right-click any element on the web page and choose **Inspect** (or **Inspect Element**).
+
+*c. Firefox Application Menu:*
+
+1. Click the **hamburger menu** (
+```
+≡
+```
+
+) in the top-right corner.
+2. Select **More Tools**.
+3. Click **Web Developer Tools**.
+
+### 3. Apple Safari
+
+*Note: In Safari, Developer Tools are hidden by default and must be enabled first.*
+
+*a. Enable the Develop Menu (One-Time Setup):*
+
+1. Open Safari and go to **Safari** in the top menu bar -> **Settings…** (or **Preferences…**).
+2. Click the **Advanced** tab.
+3. Check the box at the bottom that says **“Show features for web developers”** (or **“Show Develop menu in menu bar”**).
+
+*b. Open Developer Tools:*
+
+- **Keyboard Shortcut:** Press 
+```
+Cmd + Option + I
+```
+- **Right-Click:** Right-click any element on the page and select **Inspect Element**.
+- **Menu Bar:** Click **Develop** in the top macOS menu bar and choose **Show Web Inspector**.
+
+### 4. Microsoft Edge
+
+*a. Keyboard Shortcuts:*
+
+- **Windows / Linux:** Press 
+```
+F12
+```
+
+ or 
+```
+Ctrl + Shift + I
+```
+- **Mac:** Press 
+```
+Cmd + Option + I
+```
+
+*b. Right-Click Menu:*
+
+Right-click any section of the page and select **Inspect**.
+
+*c. Edge Settings Menu:*
+
+1. Click the **three horizontal dots** (
+```
+...
+```
+
+) in the top-right corner.
+2. Hover over **More tools**.
+3. Select **Developer tools**.
 
 ---
 
