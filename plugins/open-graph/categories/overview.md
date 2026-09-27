@@ -10,11 +10,11 @@
 
 ## Description
 
-	The [Open Graph protocol](https://ogp.me/) enables any web page to become a rich object in a social graph.  Most notably, this allows for these pages to be used with Facebook’s [Like Button](https://developers.facebook.com/docs/reference/plugins/like) and [Graph API](https://developers.facebook.com/docs/reference/api/) as well as within Twitter posts.
+	The [Open Graph protocol](https://ogp.me/) enables any web page to become a rich object in a social graph.  Most notably, this allows for these pages to be used with Facebook’s [Share Button](https://developers.facebook.com/documentation/plugins/share-button) and [Graph API](https://developers.facebook.com/docs/graph-api/) as well as within Twitter posts.
 
 The Open Graph plugin inserts the Open Graph metadata into WordPress posts and pages, and provides a simple extension mechanism for other plugins and themes to override this data, or to provide additional Open Graph data.
 
-This plugin does not directly add social plugins like the Facebook Like Button to your pages (though they’re pretty simple to add).  It will however make your pages look great when shared using those kinds of tools.
+This plugin does not directly add social plugins like the Facebook Share Button to your pages (though they’re pretty simple to add).  It will however make your pages look great when shared using those kinds of tools.
 
 ## FAQ
 
@@ -26,7 +26,12 @@ There are two main ways to provide Open Graph metadata from your plugin or theme
 opengraph_{name}
 ```
 
- where {name} is the unqualified Open Graph property name.  For example, if you have a plugin that defines a custom post type named “movie”, you could override the Open Graph ‘type’ property for those posts using a function like:
+ where {name} is the unqualified Open Graph property name.  For example, if you have a plugin that defines a custom post type named “movie”, you could override the Open Graph 
+```
+type
+```
+
+ property for those posts using a function like:
 
 ```
 function my_og_type( $type ) {
@@ -38,7 +43,12 @@ function my_og_type( $type ) {
 add_filter( 'opengraph_type', 'my_og_type' );
 ```
 
-This will work for all of the core Open Graph properties.  However, if you want to add a custom property, such as ‘fb:admin’, then you would need to hook into the 
+This will work for all of the core Open Graph properties.  However, if you want to add a custom property, such as 
+```
+fb:admins
+```
+
+, then you would need to hook into the 
 ```
 opengraph_metadata
 ```
@@ -47,7 +57,7 @@ opengraph_metadata
 
 ```
 function my_og_metadata( $metadata ) {
-    $metadata['fb:admin'] = '12345,67890';
+    $metadata['fb:admins'] = '12345,67890';
     return $metadata;
 }
 add_filter( 'opengraph_metadata', 'my_og_metadata' );
@@ -59,6 +69,39 @@ opengraph_prefixes
 ```
 
  filter.
+### How does the plugin choose the images?
+The plugin uses the featured image first, then the images in the post content, then the images attached to the post. If there is no image at all, it uses the site icon, the custom logo or the header image.
+
+By default the plugin adds up to 3 images. You can change that by adding the following line to your 
+```
+wp-config.php
+```
+
+```
+define( 'OPENGRAPH_MAX_IMAGES', 1 );
+```
+
+or with the 
+```
+opengraph_max_images
+```
+
+ filter. To add or remove image sources, use the 
+```
+opengraph_image_sources
+```
+
+ filter. Each source is a callable that gets the post ID and returns attachment IDs:
+
+```
+function my_og_image_sources( $sources ) {
+    // Only use the featured image.
+    return array( 'opengraph_thumbnail_image_ids' );
+}
+add_filter( 'opengraph_image_sources', 'my_og_image_sources' );
+```
+### Does it work with Jetpack?
+Yes. Jetpack also adds Open Graph metadata, so the plugin disables the Jetpack output to avoid duplicate tags. To get the Jetpack output back, deactivate this plugin.
 ### How to enable/disable “strict mode”
 The plugin populates the meta ‘name’ attribute alongside the ‘property’ attribute by default. Because both, the 
 ```
@@ -70,9 +113,9 @@ og:*
 twitter:*
 ```
 
- names, are actually registered at https://wiki.whatwg.org/wiki/MetaExtensions, this stays compliant with the HTML5 spec. If you want to use a more strict way anyways, you can enable the scrict mode by adding the following line to your 
+ names, are actually registered at https://wiki.whatwg.org/wiki/MetaExtensions, this stays compliant with the HTML5 spec. If you want to use a more strict way anyways, you can enable the strict mode by adding the following line to your 
 ```
-config.php
+wp-config.php
 ```
 
 ```
@@ -127,6 +170,10 @@ Contributors
 ## Changelog
 
 	Project maintained on github at [pfefferle/wordpress-opengraph](https://github.com/pfefferle/wordpress-opengraph).
+
+### 3.0.1 (Sep 25, 2026)
+
+- fixed a fatal error on ClassicPress, which does not ship the HTML API (#50)
 
 ### 3.0.0 (Sep 18, 2026)
 
@@ -337,7 +384,7 @@ $post->post_title
 get_the_title()
 ```
 
- (see #[17](https://github.com/willnorris/wordpress-opengraph/issues/17) for details)
+ (see #[17](https://github.com/pfefferle/wordpress-opengraph/issues/17) for details)
 
 ### 1.5.1 (Nov 13, 2012)
 
