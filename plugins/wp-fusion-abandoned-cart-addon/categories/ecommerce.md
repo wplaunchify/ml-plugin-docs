@@ -1825,7 +1825,7 @@ WP Fusion includes an integration with [FunnelKit](https://wpfusion.com/go/woofu
 
 You can also apply tags in your CRM based on the optin form that was submitted, as well as acceptance or rejection of an upsell.
 
-Because FunnelKit uses WooCommerce for checkout, all of WP Fusion’s [WooCommerce features](https://wpfusion.com/documentation/ecommerce/woocommerce/) work automatically with FunnelKit.
+Because FunnelKit uses WooCommerce for checkout, all of WP Fusion’s [WooCommerce features](https://wpfusion.com/documentation/ecommerce/woocommerce/) work automatically with [FunnelKit](https://wplicensepro.com/product/wpfunnels-pro/).
 
 You can also use WP Fusion’s [Abandoned Cart addon](https://wpfusion.com/documentation/abandoned-cart-tracking/abandoned-cart-overview/) to track and recover carts abandoned from FunnelKit checkout pages.
 
