@@ -10,9 +10,11 @@
 
 # How to create a WooCommerce BOGO (Buy One Get One) offer
 
-			Smart Coupons provide a powerful, “all-in-one” solution for gift certificates, store credits, discount coupons, and vouchers.
+			A “buy one get one” offer is one of the simplest ways to move inventory or introduce customers to a related product; without discounting the item they actually came to buy.
 
-This documentation explains how you can set up a WooCommerce BOGO (buy one get one) free offer and buy one get more offer.
+This doc covers how to set up a WooCommerce BOGO (buy one get one) free offer, plus variations like buy one get one at a discount and buy one get more.
+
+With [Smart Coupons](https://woocommerce.com/products/smart-coupons/), you set the trigger product and the free or discounted item once, and the offer applies automatically at checkout.
 
 ## How to set up a buy one get one free offer coupon?
 
@@ -92,17 +94,17 @@ Run giveaways or issue free gifts by linking products to a coupon. When the coup
 ### WooCommerce Subscriptions
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### WooCommerce Memberships
+### Table Rate Shipping
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Power your membership association, online magazine, elearning sites, and more with access control to...
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 

@@ -4,17 +4,21 @@
 
 ---
 
-## Tiered Discounts
+## How to set up quantity-based tiered discounts in WooCommerce
 
 **Source:** [https://woocommerce.com/document/smart-coupons/tiered-discounts/](https://woocommerce.com/document/smart-coupons/tiered-discounts/)
 
-# Tiered Discounts
+# How to set up quantity-based tiered discounts in WooCommerce
 
-			Smart Coupons provides a powerful, “all-in-one” solution for gift cards, store credits, discount coupons and vouchers extending the core functionality of WooCommerce coupons.
+			Buying more usually means a store can afford to give up more margin per unit. A tiered discount rewards customers for larger orders instead of applying the same flat percentage to everyone.
 
-Tiered discounts provide a huge range of benefits for users as well as store owners. The official Smart Coupons plugin helps you achieve this easily by using the extensive range of features that are available in the plugin.
+This doc covers how to set up quantity-based tiered discounts, where the discount percentage increases as customers buy more of a product.
 
-## How do I provide a tiered discount?
+For example, a customer buying 2–5 T-shirts gets 5% off, 6–10 T-shirts gets 10% off, and 11–15 T-shirts gets 15% off.
+
+You create a separate auto-applying coupon for each quantity tier using [Smart Coupons](https://woocommerce.com/products/smart-coupons/), and the right one applies automatically based on how many units are in the cart.
+
+## Steps to create quantity-based tiered discount
 
 [↑ Back to top](#doc-title)
 
@@ -35,9 +39,9 @@ To provide tiered or stackable discounts, you would need to create multiple coup
 
 That’s it!
 
-Now repeat the steps from 2 to 6 when creating the next coupon, and change the minimum and maximum quantity of the products to 6-10 and 11-15 respectively, for the consecutive coupons that you create.
+Repeat steps 2–6 for two more coupons, changing only the quantity range and discount amount each time — 6–10 units at 10% off, then 11–15 units at 15% off.
 
-By doing the above, you will have 3 coupons with stackable discounts. Since the auto apply option is enabled, this will automatically apply the coupons when the necessary coupon quantities are met in the cart or checkout page.
+You’ll now have 3 coupons covering the full tiered range. Since auto apply is enabled on each, the right discount applies automatically once a customer’s cart quantity falls within that coupon’s range.
 
 Here are two documents that make the above possible:
 
@@ -57,17 +61,17 @@ Here are two documents that make the above possible:
 ### WooCommerce Subscriptions
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### WooCommerce Memberships
+### Table Rate Shipping
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Power your membership association, online magazine, elearning sites, and more with access control to...
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 

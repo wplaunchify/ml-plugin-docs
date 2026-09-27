@@ -4,37 +4,33 @@
 
 ---
 
-## How to create gift cards in WooCommerce (advanced)
+## How to create and sell gift cards in WooCommerce
 
 **Source:** [https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-any-amount/](https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-any-amount/)
 
-# How to create gift cards in WooCommerce (advanced)
+# How to create and sell gift cards in WooCommerce
 
-			Smart Coupons provide a powerful, “all-in-one” solution for gift cards, store credits, discount coupons and vouchers extending the core functionality of WooCommerce coupons.
+			WooCommerce has no built-in way to sell gift cards. If a customer wants to buy store credit for someone else, there’s nothing native to handle it.
 
-This documentation explains how you can add/create WooCommerce gift cards or store credits of any amount that your customers can buy from you and also schedule them.
+This doc covers how to sell gift cards of any amount, let customers schedule delivery to a recipient, and set up other gift card types like fixed amounts, fixed denominations, discounted cards, and physical cards.
 
-These are advanced e-gift cards because you can set all the required advanced restrictions like geolocation, payment, email address, etc. for the gift cards.
-
-And also, you can create and sell multiple types of WooCommerce gift cards – any amount, fixed amount, fixed denominations, discounted gift cards and physical gift cards.
-
-## About Smart Coupons gift card
-
-[↑ Back to top](#doc-title)
-
-The WooCommerce gift card/store credit functionality of Smart Coupons is different from how normal coupon codes work. A gift card is treated as real credit / money – very much like a prepaid credit card.
-
-Gift cards do not introduce a dedicated product type. Instead, it allows you to use Simple or Variable product as a basis for selling gift cards.
-
-Gift card products are Virtual. You can use the extension to issue only e-gift card or digital gift card tokens.
+[Smart Coupons](https://woocommerce.com/products/smart-coupons/) adds gift cards by treating them as real credit which is similar to a prepaid card rather than a typical percentage-off coupon.
 
 ## What is a gift card / store credit?
 
 [↑ Back to top](#doc-title)
 
-A store credit or gift certificate is a monetary value assigned as a credit to the customer. So the customer can use that credit all at once or multiple times to make purchases until the credit is exhausted or its validity expires. If the available store credit balance is less than the total amount to be paid, the remaining amount can be paid using other payment methods.
+A store credit or gift certificate is a monetary value assigned as a credit to the customer. The customer can use that credit all at once or across multiple purchases until it’s exhausted or expires. If the available balance is less than the total order amount, the remaining amount can be paid with another payment method.
 
-In Smart Coupons, a store credit/gift certificate is available as a discount type coupon. So if you want to allow users to use store credit/gift certificate until it has balance, do not set a usage limit for it. This will allow customers to redeem credit multiple times until it is exhausted or is expired.
+In Smart Coupons, a store credit/gift certificate is available as a discount type coupon. If you want customers to redeem credit multiple times until it runs out, don’t set a usage limit on it.
+
+## How gift cards work in Smart Coupons
+
+[↑ Back to top](#doc-title)
+
+Gift cards don’t introduce a dedicated product type. Instead, a Simple or Variable product is used as the basis for selling them. Gift card products are Virtual, so the extension can issue e-gift cards or digital gift card tokens only.
+
+These are also advanced e-gift cards. You can apply restrictions like geolocation, payment method, or email address on top of the gift card type you choose.
 
 ## How to create a gift card of any amount
 
@@ -122,42 +118,35 @@ The sender is also notified by an acknowledgment email.
 
 [↑ Back to top](#doc-title)
 
-Why Smart Coupons is a recommended WooCommerce gift card plugin because it provides the flexibility to create other gift card types and get you more sales.
+Beyond any-amount gift cards, Smart Coupons supports a few other formats depending on how you want to sell them:
 
-### How to create a fixed amount gift card
-
-[↑ Back to top](#doc-title)
-
-A fixed-amount gift card is useful for small-sized WooCommerce stores that want to sell only a limited amount of gift cards. For example, $9, $19, and $29.
-
-The steps remain similar to creating a gift card of any amount, except that you need to enter the gift card value under the ‘Regular price’ field.
-
-Refer to [creating fixed amount gift cards](https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-a-fixed-amount/) doc for more details.
-
-### How to create a fixed denomination gift card
+### Fixed amount gift card
 
 [↑ Back to top](#doc-title)
 
-In fixed denomination gift cards, you allow customers to purchase gift certificates, set within limits. For example, $10, $20, $50, and $100.
+Useful for smaller stores that want to sell only a limited set of amounts, like $9, $19, and $29. The steps are the same as creating an any-amount gift card, except you enter the value under the ‘Regular price’ field.
 
-Unlike the fixed and any amount gift cards that are created as Simple product types, each fixed denomination gift card is created as a product variation, with a unique price.
+Refer to the [steps for creating a fixed amount gift card](https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-a-fixed-amount/).
 
-Refer to the steps for [creating fixed denomination gift cards](https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-variable-but-a-fixed-amount/).
-
-### How to sell gift cards at a discount
+### Fixed denomination gift cards
 
 [↑ Back to top](#doc-title)
 
-The way you offer a discount on your products, here you offer a discount on your gift card. For example, selling a $20 gift card at $15; which means a 25% discount.
-You can discount a fixed amount and a fixed denomination gift card.
+Customers purchase gift certificates within set limits, like $10, $20, $50, and $100. Unlike any-amount and fixed-amount cards (Simple products), each denomination is created as a product variation with its own price.
 
-You can discount a fixed amount and a fixed denomination gift card.
+Refer to the [steps for creating fixed denomination gift cards](https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-variable-but-a-fixed-amount/).
 
-Create a gift card coupon, create a product, and enter the Regular price and Sale price respectively. You also need to enable one setting ‘Sell store credit at less price?’.
+### Discounted gift card
 
-Refer to [creating discounted gift cards](https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-at-less-price/) doc for detailed steps.
+[↑ Back to top](#doc-title)
 
-### How to create physical gift cards
+Sell a gift card for less than its value, e.g., a $20 gift card for $15 (a 25% discount). Both fixed amount and fixed denomination gift cards can be discounted.
+
+Create a gift card coupon and product as usual, enter the Regular price and Sale price, and enable ‘Sell store credit at less price?’.
+
+Refer to [the steps for creating a discounted gift card](https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-at-less-price/).
+
+### Physical gift card
 
 [↑ Back to top](#doc-title)
 
@@ -165,7 +154,7 @@ This can be used to delight loved ones on their birthdays, Christmas or any othe
 
 Print the gift card voucher or coupon. After printing, decorate it on your own, and then deliver it to the respective person.
 
-Refer to the steps for [creating physical gift cards](https://woocommerce.com/document/smart-coupons/how-to-print-coupons/).
+Refer to the [steps for creating a physical gift card](https://woocommerce.com/document/smart-coupons/how-to-print-coupons/).
 
 [← WooCommerce Smart Coupons Documentation](https://woocommerce.com/document/smart-coupons/)
 
@@ -180,17 +169,17 @@ Refer to the steps for [creating physical gift cards](https://woocommerce.com/do
 ### WooCommerce Subscriptions
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### WooCommerce Memberships
+### Table Rate Shipping
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Power your membership association, online magazine, elearning sites, and more with access control to...
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 

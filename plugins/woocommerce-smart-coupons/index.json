@@ -2,7 +2,7 @@
   "plugin_slug": "woocommerce-smart-coupons",
   "plugin_name": "WooCommerce Smart Coupons",
   "documentation_url": "https://woocommerce.com/document/smart-coupons/",
-  "last_scraped": "2026-09-20T17:19:27.125Z",
+  "last_scraped": "2026-09-27T14:11:40.385Z",
   "total_pages": 82,
   "failed_urls_count": 0,
   "sections": [
@@ -313,7 +313,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to provide a discount coupon to new users only",
+          "title": "How to offer a first order discount for new customers",
           "url": "https://woocommerce.com/document/smart-coupons/how-to-create-coupon-for-new-users-only/"
         }
       ]
@@ -807,7 +807,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to create gift cards in WooCommerce (advanced)",
+          "title": "How to create and sell gift cards in WooCommerce",
           "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-any-amount/"
         }
       ]
@@ -1028,7 +1028,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Tiered Discounts",
+          "title": "How to set up quantity-based tiered discounts in WooCommerce",
           "url": "https://woocommerce.com/document/smart-coupons/tiered-discounts/"
         }
       ]

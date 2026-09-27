@@ -10,9 +10,17 @@
 
 # How to offer cashback coupons
 
-			Smart Coupons provide a powerful, “all-in-one” solution for gift cards, store credits, discount coupons, and vouchers, extending the core functionality of WooCommerce coupons.
+			Cashback rewards a customer after they buy, instead of discounting the price upfront. The customer pays full price, then gets store credit to spend later, encouraging a repeat purchase.
 
-This doc explains how to offer store credit as cashback to your users.
+Setting an expiry on that credit adds urgency to use it before it lapses.
+
+This doc covers how to set up a cashback offer that automatically gives customers store credit for buying a specific product.
+
+[Smart Coupons](https://woocommerce.com/products/smart-coupons/) handles this by generating a coupon with the “Store Credit / Gift Certificate” discount type, attached directly to the product.
+
+## Steps to create a cashback coupon
+
+[↑ Back to top](#doc-title)
 
 1. Go to your WordPress Admin panel > Marketing > Coupons > Add new coupon.
 2. Click on ‘Generate coupon code’ or enter your own code.
@@ -26,7 +34,7 @@ This doc explains how to offer store credit as cashback to your users.
 Note – You can add as many coupons as you like here. ![](https://woocommerce.com/wp-content/uploads/2019/10/Product-page-Cashback.png?strip=all&w=704)
 10. Click Update to save changes.
 
-Thats it!
+That’s it! The coupon now applies automatically as cashback whenever that product is purchased.
 
 [← WooCommerce Smart Coupons Documentation](https://woocommerce.com/document/smart-coupons/)
 
@@ -41,17 +49,17 @@ Thats it!
 ### WooCommerce Subscriptions
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
+				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
 
-### WooCommerce Memberships
+### Table Rate Shipping
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Power your membership association, online magazine, elearning sites, and more with access control to...
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
 ---
 
