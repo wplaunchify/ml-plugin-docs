@@ -112,7 +112,7 @@ Example of a shortcode:
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6aafbc21c70c4', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6ab8b751157e6', {"active":false}, true);
       return;
     }
 
@@ -123,7 +123,7 @@ Example of a shortcode:
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6aafbc21c70c4');
+    var element = document.getElementById('tag-groups-cloud-tabs-6ab8b751157e6');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -238,7 +238,7 @@ WordPress Search
 
   (function(){
     const options = {
-      divIdInner: 'tag-groups-shuffle-box-6aafbc21c7f2b_inner',
+      divIdInner: 'tag-groups-shuffle-box-6ab8b75116f5b_inner',
       addPremiumFilter: false,
       timeoutMilliSecs: 100,
       initialGroup: -1,

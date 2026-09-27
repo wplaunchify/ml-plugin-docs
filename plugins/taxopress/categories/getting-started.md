@@ -12,6 +12,20 @@ You can find the changelog for the free version [by clicking this link to WordPr
 
 You can find the changelog for the Pro version below:
 
+## [3.54.0] - 22 September, 2026
+
+* Security: Prevent reflected XSS in Terms row-action URLs
+
+* Fixed: Prevent creation of a destination term when merging terms and no source terms exist
+
+* Fixed: Preserve the destination term when it is included among the terms being merged
+
+* Fixed: Fix Auto Links excluded-term matching
+
+* Update: Add per-post Auto Terms status controls
+
+* Update: Add per-post Auto Links status controls and enable overrides
+
 ## [3.53.0] - 01 September, 2026
 
 * Fixed: Mass Edit pagination is broken, #3014
@@ -1447,57 +1461,6 @@ The installation of the free version of the TaxoPress plugin is straightforward.
 - Click “Activate”.
 
 You will now see TaxoPress on the “Plugins” screen, and there will be a TaxoPress link in your admin menu.
-
----
-
-## Capabilities / Permissions in TaxoPress
-
-**Source:** [https://taxopress.com/docs/permissions-taxopress/](https://taxopress.com/docs/permissions-taxopress/)
-
-## Capabilities for the TaxoPress Metabox
-
-If you want to control who has access to the TaxoPress metabox underneath each post, you can do with the manage_categories capability. We recommend using the [PublishPress Capabilities](https://wordpress.org/plugins/capability-manager-enhanced/) plugin to assign this permissions.
-
-- Go to the “Capabilities” screen.
-- Choose the user role you want to edit in the top-left corner.
-- In the “Taxomomies” area, you can see the “manage_categories” option.
-
----
-
-## Capabilities for the TaxoPress Admin Area
-
-There are two permissions that can give users access to the TaxoPress admin area:
-
-- ```
-simple_tags
-```
-
-: this will give access to the “Settings” screen.
-- ```
-admin_simple_tags
-```
-
-: this will give access to the screens such as “Taxonomies”, “Related Posts”, “Mass Edit Terms”, “Manage Terms”, and more.
-
-You can use these to customize user access to the TaxoPress plugin screens with the PublishPress Capabilities plugin.
-
-- Go to the “Capabilities” screen.
-- Choose the user role you want to edit in the top-left corner.
-- In the “TaxoPress” area, you can see the two TaxoPress permissions:
-
-If you give both these permissions to a user in [the Subscriber role](https://publishpress.com/knowledge-base/subscriber/), this next screenshot shows what they will see after logging in.
-
-These permissions are automatically added to your site by the 
-```
-/inc/class.admin.php
-```
-
- file. These permissions are automatically removed when you uninstall the plugin. This is done by the 
-```
-uninstall.php
-```
-
- file.
 
 ---
 
