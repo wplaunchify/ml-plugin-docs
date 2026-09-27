@@ -36,7 +36,7 @@ We have individual pages that answer some of these common questions:
 
 [↑ Back to top](#doc-title)
 
-If you want to see all of the actions and filters that are available in the Stripe extension, you can find them listed [here](https://woocommerce.com/document/stripe/customization/hooks-and-filters/).
+If you want to see all of the actions and filters that are available in the Stripe extension, you can find them listed [here](https://github.com/woocommerce/woocommerce-gateway-stripe/wiki/Action-and-Filter-Hooks).
 
 If you’re not familiar with how to customize a WordPress plugin using code, we suggest consulting resources such as [our developer blog](https://developer.woocommerce.com/) and [developer docs](https://developer.woocommerce.com/docs/).
 
@@ -53,7 +53,7 @@ You can also find the Stripe extension source code [on GitHub](https://github.co
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -61,7 +61,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -79,7 +79,7 @@ For that reason, if you’re replacing a previous Stripe account with a new one,
 
 Before proceeding with the cleanup, however, please [contact Stripe](https://support.stripe.com/) to check whether the existing data can be transferred over to your new account. If it can, this procedure may not be necessary.
 
-**NOTE:**We are unable to provide support for customizations under [our Support Policy](https://woocommerce.com/support-policy/#customization). If you need assistance with custom code, we highly recommend [Codeable](https://www.codeable.io/partners/woocommerce/?ref=OaWImk) or a [Certified WooExpert](https://partners.woocommerce.com/English/marketplace/).
+**NOTE:**We are unable to provide support for customizations under [our Support Policy](https://woocommerce.com/support-policy/#customization). If you need assistance with custom code, we highly recommend [Codeable](https://www.codeable.io/partners/woocommerce/?ref=OaWImk) or a [Certified WooExpert](https://woocommerce.com/for-agencies/).
 
 ## Cleaning up the database on a single site
 
@@ -166,7 +166,7 @@ WHERE
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -174,7 +174,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -205,7 +205,7 @@ function ah_change_stripe_icons( $icons ) {
 }
 ```
 
-**NOTE:**We are unable to provide support for custom code under [our Support Policy](https://woocommerce.com/support-policy/#customization). If you need to customize a snippet further or extend its functionality, we highly recommend [Codeable](https://www.codeable.io/partners/woocommerce/?ref=OaWImk) or a [Certified WooExpert](https://partners.woocommerce.com/English/marketplace/).
+**NOTE:**We are unable to provide support for custom code under [our Support Policy](https://woocommerce.com/support-policy/#customization). If you need to customize a snippet further or extend its functionality, we highly recommend [Codeable](https://www.codeable.io/partners/woocommerce/?ref=OaWImk) or a [Certified WooExpert](https://woocommerce.com/for-agencies/).
 
 					
 		
@@ -218,7 +218,7 @@ function ah_change_stripe_icons( $icons ) {
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -226,7 +226,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -281,7 +281,7 @@ Here’s how the metadata from that snippet appears in the Stripe dashboard:
 
 ![](https://woocommerce.com/wp-content/uploads/2024/06/Screenshot-taken-on-2024-06-05-at-18.56.48-UTC@2x.png?w=980)
 
-**NOTE:**We are unable to provide support for custom code under [our Support Policy](https://woocommerce.com/support-policy/#customization). If you need to customize a snippet further or extend its functionality, we highly recommend [Codeable](https://www.codeable.io/partners/woocommerce/?ref=OaWImk) or a [Certified WooExpert](https://partners.woocommerce.com/English/marketplace/).
+**NOTE:**We are unable to provide support for custom code under [our Support Policy](https://woocommerce.com/support-policy/#customization). If you need to customize a snippet further or extend its functionality, we highly recommend [Codeable](https://www.codeable.io/partners/woocommerce/?ref=OaWImk) or a [Certified WooExpert](https://woocommerce.com/for-agencies/).
 
 					
 		
@@ -294,7 +294,7 @@ Here’s how the metadata from that snippet appears in the Stripe dashboard:
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -302,7 +302,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -314,7 +314,7 @@ Grow your business with increased sales and an enhanced shopping experience — 
 
 # How can I change the style of the payment form?
 
-			The payment form that our Stripe extension generates and places on the checkout page is actually [hosted on a separate PCI-compliant server](https://woocommerce.com/document/stripe/troubleshooting/pci-compliance/). As such, applying styles to the payment form using [custom CSS](https://wordpress.org/documentation/article/css/) will not work as expected.
+			The payment form that our Stripe extension generates and places on the checkout page is actually [hosted on a separate PCI-compliant server](https://woocommerce.com/document/stripe/troubleshooting/pci-compliance/). As such, applying styles to the payment form using [custom CSS](https://developer.wordpress.org/advanced-administration/wordpress/css/) will not work as expected.
 
 To modify the styling of the payment fields, you will need to insert some custom PHP code using your theme’s 
 ```
@@ -323,7 +323,7 @@ functions.php
 
  file or a plugin like [Code Snippets](https://wordpress.org/plugins/code-snippets/).
 
-**NOTE:** We are unable to provide support for customizations under our [Support Policy](http://woocommerce.com/support-policy/). If you need to customize a snippet beyond what is shown on this page, we suggest [Codeable](https://codeable.io/?ref=z4Hnp) or a [Certified WooExpert](https://woocommerce.com/experts/).
+**NOTE:** We are unable to provide support for customizations under our [Support Policy](https://woocommerce.com/support-policy/). If you need to customize a snippet beyond what is shown on this page, we suggest [Codeable](https://www.codeable.io/?ref=z4Hnp) or a [Certified WooExpert](https://woocommerce.com/for-agencies/).
 
 ## Clearing transients
 
@@ -618,7 +618,7 @@ iframe
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -626,7 +626,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 

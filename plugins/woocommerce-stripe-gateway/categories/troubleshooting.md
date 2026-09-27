@@ -93,7 +93,7 @@ If you have questions not covered in our documentation, please [contact support]
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -101,7 +101,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -128,7 +128,7 @@ Grow your business with increased sales and an enhanced shopping experience — 
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -136,7 +136,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -175,7 +175,7 @@ Please see [the Stripe documentation](https://support.stripe.com/questions/char
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -183,7 +183,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -219,7 +219,7 @@ wp_head()
 wp_footer()
 ```
 - The active theme is using old, overridden template files
-- You can read more about fixing outdated template files [here](https://github.com/woocommerce/woocommerce/blob/trunk/docs/theme-development/fixing-outdated-woocommerce-templates.md)
+- You can read more about fixing outdated template files [here](https://developer.woocommerce.com/docs/theming/theme-development/fixing-outdated-woocommerce-templates/)
 - The active theme is loading headers and/or footers in a non-standard way. 
 - WooCommerce uses the 
 ```
@@ -268,7 +268,7 @@ If you’d like to determine what is causing the JavaScript files to not load pr
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -276,7 +276,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -295,13 +295,13 @@ iframe
 
 . While it may *look like* a customer is entering their card details directly into your site, that data is actually collected by an interface hosted on Stripe’s servers.
 
-This means that Stripe (certified as a [Level 1 Service Provider](https://usa.visa.com/splisting/splistinglearnmore.html)) is the only entity that handles card data. Your site never stores, processes, or transmits it.
+This means that Stripe (certified as a [Level 1 Service Provider](https://www.visa.com/splisting/LearnMore.html)) is the only entity that handles card data. Your site never stores, processes, or transmits it.
 
-Most merchants using the Stripe extension can validate their PCI compliance via [Self-Assessment Questionnaire (SAQ) A](https://www.pcisecuritystandards.org/faq/articles/Frequently_Asked_Question/what-is-a-pci-dss-self-assessment-questionnaire/). However, depending on factors (like your [PCI level](https://stripe.com/guides/pci-compliance#1-know-your-pci-level)), Stripe may require a different SAQ type or ask that your SAQ be signed by a PCI Qualified Security Assessor ([QSA](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors)).
+Most merchants using the Stripe extension can validate their PCI compliance via [Self-Assessment Questionnaire (SAQ) A](https://www.pcisecuritystandards.org/faqs/1215/). However, depending on factors (like your [PCI level](https://stripe.com/guides/pci-compliance#1-know-your-pci-level)), Stripe may require a different SAQ type or ask that your SAQ be signed by a PCI Qualified Security Assessor ([QSA](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/)).
 
 To confirm which validation process applies to your account, [contact Stripe](https://support.stripe.com/).
 
-**NOTE:**Using our Stripe extension reduces the burden of PCI compliance, but merchants are still responsible for other PCI DSS requirements, like [regular vulnerability scans](https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Supporting%20Document/PCI%20SSC%20ASV%20Resource%20Guide.pdf) from an [Approved Scanning Vendor (ASV)](https://www.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors) and [maintaining good security hygiene](https://developer.woocommerce.com/docs/best-practices/security/security-best-practices/) to protect your site and your customers’ data.
+**NOTE:**Using our Stripe extension reduces the burden of PCI compliance, but merchants are still responsible for other PCI DSS requirements, like [regular vulnerability scans](https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Supporting%20Document/PCI%20SSC%20ASV%20Resource%20Guide.pdf) from an [Approved Scanning Vendor (ASV)](https://www.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors/) and [maintaining good security hygiene](https://developer.woocommerce.com/docs/best-practices/security/security-best-practices/) to protect your site and your customers’ data.
 
 For further reading:
 
@@ -320,7 +320,7 @@ For further reading:
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -328,7 +328,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -378,7 +378,7 @@ If none of the above steps reveal the source of the issue, a [conflict test](htt
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -386,7 +386,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 

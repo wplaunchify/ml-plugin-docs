@@ -25,7 +25,7 @@ If you wish to test the 3D Secure checkout flow on your store, you can use one o
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -33,7 +33,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -64,7 +64,7 @@ The extension now offers the Optimized Checkout Suite to use machine learning to
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -72,7 +72,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -108,7 +108,7 @@ If you want to test the co-badged card checkout process on your store, you can u
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -116,7 +116,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -170,7 +170,7 @@ For customers who have a saved card, they are presented with the stored card opt
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -178,7 +178,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -208,9 +208,9 @@ The Stripe extension is compatible with four express checkout options:
 In order for Apple Pay to display, the customer must:
 
 - Use [a compatible device](https://support.apple.com/en-us/102896).
-- Be [logged in](https://support.apple.com/en-us/HT204053) with their Apple ID.
-- Have [a payment method](https://support.apple.com/en-us/HT201266) added their Apple ID.
-- View your site on [a compatible browser](https://stripe.com/docs/elements/express-checkout-element#supported-browsers).
+- Be [logged in](https://support.apple.com/en-us/111001) with their Apple ID.
+- Have [a payment method](https://support.apple.com/en-us/118429) added their Apple ID.
+- View your site on [a compatible browser](https://docs.stripe.com/elements/express-checkout-element#supported-browsers).
 
 ## Google Pay requirements
 
@@ -218,7 +218,7 @@ In order for Apple Pay to display, the customer must:
 
 In order for Google Pay to display, the customer must:
 
-- View your site with [a compatible browser](https://stripe.com/docs/elements/express-checkout-element#supported-browsers).
+- View your site with [a compatible browser](https://docs.stripe.com/elements/express-checkout-element#supported-browsers).
 - Be [logged into their Google account](https://support.google.com/chrome/answer/185277?hl=en&co=GENIE.Platform%3DDesktop) via their browser.
 - Have [a payment method](https://support.google.com/accounts/answer/9244912?hl=en) added to their Google account.
 
@@ -260,7 +260,7 @@ We’ve added some information below about product types that are fully compatib
 
 [↑ Back to top](#doc-title)
 
-Both [simple and variable products](https://woocommerce.com/document/managing-products/#product-types) are supported with express checkouts.
+Both [simple](https://woocommerce.com/document/managing-products/add-product/#adding-a-simple-product) and [variable](https://woocommerce.com/document/variable-product/) products are supported with express checkouts.
 
 ### Partially compatible
 
@@ -273,10 +273,10 @@ Express checkouts currently have added compatibility for products created with t
 
 Some products require advanced configuration to determine their price and availability. In such instances, express checkouts are only compatible using the cart and checkout pages. Examples of such plugins are:
 
-- [Composite Products](https://woocommerce.com/products/composite-products)
+- [Composite Products](https://woocommerce.com/products/composite-products/)
 - [Product Bundles](https://woocommerce.com/products/product-bundles/)
 - [WooCommerce Bookings](https://woocommerce.com/products/woocommerce-bookings/)
-- [Grouped Products](https://woocommerce.com/document/managing-products/#create-grouped-product)
+- [Grouped Products](https://woocommerce.com/document/managing-products/add-product/#adding-a-grouped-product)
 
 ### Incompatible
 
@@ -284,7 +284,7 @@ Some products require advanced configuration to determine their price and availa
 
 Known incompatibilities with express checkout buttons include but are not limited to:
 
-- [External/Affiliate Products](https://woocommerce.com/document/managing-products/#adding-an-external-affiliate-product)
+- [External/Affiliate Products](https://woocommerce.com/document/managing-products/add-product/#adding-an-external-affiliate-product)
 - [All Products for Woo Subscriptions](https://woocommerce.com/products/all-products-for-woocommerce-subscriptions/)
 - [Product Add-Ons](https://woocommerce.com/products/product-add-ons/)
 - Express checkout buttons do not support custom product fields such as Product Add-Ons on single product pages.
@@ -301,17 +301,17 @@ Known incompatibilities with express checkout buttons include but are not limite
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -495,17 +495,17 @@ Note that as long as your Stripe account is restricted to test mode only, you wi
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 

@@ -39,7 +39,7 @@ You can learn more about how to protect your site from fraud using Stripe Radar 
 
 If you’d like to be able to use your Stripe extension to accept payments in-person, you can do so with [a card reader](https://dashboard.stripe.com/terminal/shop/) from Stripe or using Tap to Pay on a compatible Apple or Android device.
 
-Our [in-person payments documentation](https://woocommerce.com/document/stripe/admin-experience/in-person-payments/) covers the full requirements, how to set up up your card reader, collecting payments, and more.
+Our [in-person payments documentation](https://woocommerce.com/document/in-person-payments-stripe/) covers the full requirements, how to set up up your card reader, collecting payments, and more.
 
 ## Settings guide
 
@@ -58,7 +58,7 @@ As a site administrator, you have access to modify [settings in the Stripe exten
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -66,7 +66,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -131,7 +131,7 @@ If you open the order itself, you’ll see a note indicating that the payment wa
 To capture an authorized payment, you can either:
 
 - Change the order status manually under **WooCommerce > Orders** to “Processing” or “Completed” and update the order.
-- Capture the funds [via the Stripe dashboard](https://stripe.com/docs/payments/place-a-hold-on-a-payment-method#capture-funds).
+- Capture the funds [via the Stripe dashboard](https://docs.stripe.com/payments/place-a-hold-on-a-payment-method#capture-funds).
 
 ## Partial captures
 
@@ -207,368 +207,17 @@ The only difference between an expired authorization and a cancelled authorizati
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
-
----
-
-## Getting started with In-Person Payments with Stripe
-
-**Source:** [https://woocommerce.com/document/stripe/admin-experience/in-person-payments/](https://woocommerce.com/document/stripe/admin-experience/in-person-payments/)
-
-# Getting started with In-Person Payments with Stripe
-
-			With the Stripe WooCommerce Extension, your customers can pay for products and services in-person using the **M2 card reader**, **WisePad 3 card reader**, or **Tap to Pay** on a [compatible iPhone](https://woocommerce.com/document/tap-to-pay-iphone/) or [Android device](https://woocommerce.com/document/tap-to-pay-android/).
-
-In-Person Payments via Stripe is available to qualified merchants using iPhone, iPad, or Android devices for non-subscription-based products.
-
-Currently, **In-Person Payments** & **Tap to Pay for Stripe** are available for the following countries and features:
-
-| Country / Features | Card Reader model for In-Person Payments | Tap to Pay on iPhone | Tap to Pay on Android |
-| --- | --- | --- | --- |
-| US 🇺🇸 | M2 | ✅ | ✅ |
-| UK 🇬🇧 | WisePad 3 | ✅ | ✅ |
-| Finland 🇫🇮 | WisePad 3 | ❌ | ❌ |
-| Luxembourg 🇱🇺 | WisePad 3 | ❌ | ❌ |
-| Ireland 🇮🇪 | WisePad 3 | ❌ | ❌ |
-| Netherlands 🇳🇱 | WisePad 3 | ❌ | ❌ |
-| Singapore 🇸🇬 | WisePad 3 | ❌ | ❌ |
-| New Zealand 🇳🇿 | WisePad 3 | ❌ | ❌ |
-
-## Requirements
-
-[↑ Back to top](#doc-title)
-
-You will need to meet the following requirements in order to collect payments in-person using the Stripe WooCommerce Extension:
-
-- Connection to the Internet via WiFi or cellular data.
-- The latest version of the Stripe WooCommerce Extension active on your WooCommerce site.
-- A Stripe account based in one of the following countries:
-- Finland
-- Ireland
-- Luxembourg
-- Netherlands
-- New Zealand
-- Singapore
-- United Kingdom
-- United States
-- The latest version of the Woo Mobile App.
-- A device running iOS 14+ or Android 8+.
-
-### Additional requirements for Tap to Pay
-
-[↑ Back to top](#doc-title)
-
-If you’d like to collect In-Person Payments using **Tap to Pay**, you also need to meet these additional requirements:
-
-- iPhone XS or newer that:
-- Is running iOS 16+
-- Is signed in to an iCloud account
-- Has a passcode set
-- Does not have the [NFC](https://developer.apple.com/design/human-interface-guidelines/nfc) chip disabled
-- Android device that
-- Contains a functioning NFC antenna and chipset.
-- Is not “rooted.”
-- The device bootloader is locked and unchanged.
-- Runs Android 11 or above.
-- Uses Google Mobile Services.
-- Has a hardware-backed keystore.
-- Has stable connection to the internet
-
-## Charging your card reader
-
-[↑ Back to top](#doc-title)
-
-Allow your reader to fully charge before the first use. The reader ships partially charged, but we recommend that you charge your reader fully before the first use.
-
-To charge your reader, use the supplied cable to connect the USB-C on the reader to a USB charger. A full charge will take a few hours.
-
-With a full charge, the reader should be able to process600 to 800 contactless transactionsbefore needing a recharge.
-
-## Connecting your card reader
-
-[↑ Back to top](#doc-title)
-
-Your reader will need to be connected to your device using the Woo Mobile App. You should not pair the card reader in your phone or tablet’s settings.
-
-To connect your card reader:
-
-1. Navigateto **Menu** page.
-2. Select**Payments**:
-
-![](https://woocommerce.com/wp-content/uploads/2024/03/menu-payments-ipp.jpeg?w=768)
-
-1. Tap **Continue setup** for In-Person Payments:
-
-![](https://woocommerce.com/wp-content/uploads/2024/03/ipp-incomplete.jpeg?w=768)
-
-1. Tap the **Connect card reader**button:
-
-![](https://woocommerce.com/wp-content/uploads/2024/03/IMG_0F17D882ECAB-1.jpeg?w=768)
-
-1. Tap **OK** to allow the Woo Mobile App to use your device’s Bluetooth capabilities to scan for your card reader.
-2. Turn on your card reader by holding the power button for one second.
-
-![](https://woocommerce.com/wp-content/uploads/2024/03/IMG_583560E7118A-1.jpeg?w=768)
-
-**NOTE:**Keep the card reader near the mobile device while the Woo Mobile App completes the scanning process.
-
-1. Tap **Connect to Reader** to begin the connection process.
-
-![](https://woocommerce.com/wp-content/uploads/2024/03/IMG_966E6994F59B-1.jpeg?w=768)
-
-1. Tap the **Allow While Using App** prompt when asked.
-
-That’s it: your reader is now connected and ready to accept payments!
-
-## Accepting payments in-person
-
-[↑ Back to top](#doc-title)
-
-When collecting a payment, In-Person Payments supports the following payment methods:
-
-- **Cash**
-- **Card reader**
-- You’ll also be given the option to use [Tap to Pay](#collecting-payment-ttp) to collect the payment if you are using a supported device.
-- **Shareable payment link**
-- This link can be shared with a customer and used to pay for the order online.
-- **Scan to Pay**
-- This will generate a QR code that a customer can scan to pay for the order online.
-
-![](https://woocommerce.com/wp-content/uploads/2024/03/CleanShot-2024-03-01-at-17.27.48@2x.png?strip=all&w=704)
-
-### Collecting payment with Tap to Pay on iPhone
-
-[↑ Back to top](#doc-title)
-
-After selecting **Tap to Pay on iPhone** for the first time, the Woo Mobile App will:
-
-- Check that your device is ready to use Tap to Pay on iPhone
-- Display a prompt to accept the terms and conditions.
-- Ask you tocontinue with your device’s Apple ID or another Apple ID.
-
-**NOTE:**The Apple ID you use will be associated with a merchant account for merchant account management and fraud prevention and compliance purposes through Apple. You can unlink your Apple ID from a merchant account by contacting Apple Support
-
-If selecting **Tap to Pay on iPhone** after it is set up:
-
-- The Woo Mobile App will display the payment screen.
-- The customer can tap their preferred payment method on the area indicated on your device.
-- The app will process the payment.
-- You will be prompted to print or email a receipt.
-
-## Creating orders
-
-[↑ Back to top](#doc-title)
-
-With In-Person Payments, there are two ways of creating orders to collect payments:
-
-1. [Build orders](#build-orders)
-2. [Collect payments for an order placed online](#collect-order-payment)
-
-### Build orders
-
-[↑ Back to top](#doc-title)
-
-With In-Person Payments, you can build an order in the Woo Mobile App and collect payment immediately.
-
-To build an order and collect payment:
-
-1. Navigate to the **Orders** section of the Woo Mobile App.
-2. Tap on the 
-```
-+
-```
-
- icon in the top-right corner to create an order.
-3. To add products to the order, you can either:
-- Scan product barcodes using your device’s camera.
-- If the barcode matches a SKU for a product available on your store, it will automatically be added to the order.
-- Select **Add Products**.
-4. If you choose **Add Products**, select the product(s) you’d like to add to the order and tap the **# Product(s) Selected** button to add the product(s) to the order.
-5. After the order is fully created, select the **Collect Payment** button to take payment.
-6. Choose how to collect payment.
-
-**NOTE:****For quick payments without inventory tracking, tap the **Add Custom Amount** button instead of selecting a product. This is perfect when you need to collect payments quickly—such as at trade shows, craft fairs, or for services.
-
-- ![](https://woocommerce.com/wp-content/uploads/2024/03/orders-ipp.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/ipp-new-order.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/ipp-add-product-or-scan.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/ipp-product-selected.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/ipp-collect-payment-1.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/IMG_3DD97953F6EF-1-1.jpeg?w=768)
-
-### Collect payment for an order placed online
-
-[↑ Back to top](#doc-title)
-
-With In-Person Payments, you can allow customers to place an order online using the [cash on delivery](https://woocommerce.com/document/cash-on-delivery/) payment method to then pay for the order in-person using a card or cash.
-
-To collect a payment in-person after it is placed online:
-
-1. Navigate to the **Orders** section of the Woo Mobile App.
-2. Tap on the order being paid for.
-- Orders placed online with a **Cash on Delivery** payment method will have the 
-```
-Processing
-```
-
- status.
-3. Review the order details and tap on on the **Collect payment** option.
-4. Choose how to collect payment.
-
-- ![](https://woocommerce.com/wp-content/uploads/2024/03/ipp-orders.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/ipp-order-select.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/ipp-pip-collect.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/IMG_3DD97953F6EF-1-1.jpeg?w=768)
-
-## Receipts
-
-[↑ Back to top](#doc-title)
-
-An email receipt is sent automatically upon payment collection if a customer email address is set on the order. You can also send the email receipt manually after the payment.
-
-**NOTE:**As an In-Person Payments merchant, you are *obligated* to provide your customers the option of a printed receipt for any payment.
-
-### Printing receipts on a network printer
-
-[↑ Back to top](#doc-title)
-
-If your mobile device has access to a WiFi Network (e.g. for curbside payments or point-of-sale type payments), you should be able to use any printer accessible via that WiFi network using AirPrint (iOS) or Mopria (Android).
-
-Android users may need to install additional software (e.g., the [Brother Print Service Plugin](https://play.google.com/store/apps/details?id=com.brother.printservice&hl=en&gl=US)) depending on the printer.
-
-### Printing receipts on a WiFi direct printer
-
-[↑ Back to top](#doc-title)
-
-WiFi Direct printers, like the[Brother RJ-4250WB-L](https://brothermobilesolutions.com/products/mobile-printers/ruggedjet-series/ruggedjet-4-series/brother-ruggedjet-rj4250wbl/), have their own internal WiFi access hotspot that a mobile device can connect to directly for printing receipts.
-
-To print receipts using a WiFi direct printer:
-
-1. Ensure your mobile device has access to cellular data.
-2. Connect to the printer WiFi using your device’s WiFi settings.
-
-You can then accept payments (over cellular data) and print receipts (over WiFi Direct). This can be especially useful for in-person delivery at a customer’s home.
-
-## Fulfillment options
-
-[↑ Back to top](#doc-title)
-
-If you offer local pickup or curbside pickup options, you’ll need to decide if you want to deliver to your customers, have them pick up their orders, or both.
-
-You can specify [shipping zones](https://woocommerce.com/document/setting-up-shipping-zones/#shipping-zones) to determine what shipping methods customers may be eligible for. Shipping zones allow you to offer specific fulfillment options, like [Local Pickup](https://woocommerce.com/document/local-pickup/), to customers depending on where they are located in the world.
-
-## Updating your privacy policy
-
-[↑ Back to top](#doc-title)
-
-Like any Payment Method, customers using**In-Person Payments**should be aware of what data is shared about them and their transactions with others. Customers using**card-present payments**can expect to have the following personal data shared with [our partners at Stripe](https://woocommerce.com/document/woopayments/account-management/partnership-with-stripe/):
-
-- Their location at the time and date of purchase.
-- Their email address.
-- Their name.
-- AStripe assigned customer ID if they had prior payments for this store.
-- Their address and phone number.
-- The quantity, price, and description of items in the order.
-
-All data is used to support fraud detection during payment collection. You can find more details on provacy and our products [here](https://automattic.com/privacy/), and you can manage your store’s privacy policy in the**Settings**>**Privacy** section of your site’s administrator dashboard.
-
-**NOTE**: You can read more about privacy and our products [here](https://automattic.com/privacy/).
-
-## Powering off your reader
-
-[↑ Back to top](#doc-title)
-
-If you want to power off the M2 or WisePad 3 to save battery life, hold down the power button for roughly four seconds.
-
-Depending on the device, either the light will go off and stay off, or the LED will display a prompt 
-```
-Power off?
-```
-
- — which you can confirm with the green enter button on the PIN pad.
-
-## Refunds
-
-[↑ Back to top](#doc-title)
-
-You can refund your customers’ In-Person Payment just as you would any other WooPayments payment by following the refund flow on their order in the app or on your site via WP Admin.
-
-If an order was paid with **Interac**, the refund must be initiated from the Woo Mobile App, and the original card used for the purchase must be presented.
-
-To refund through the Woo Mobile App:
-
-1. Navigate to the **Orders** section of your Woo Mobile App.
-2. Select the order you’d like to refund.
-3. Select the **Issue Refund** option.
-4. Adjust the quantity of the products you’d like to refund.
-5. Select **Next**.
-6. Enter a reason for the refund, if desired.
-7. Tap the **Refund** button.
-8. Select **Refund** again to confirm the refund.
-
-- ![](https://woocommerce.com/wp-content/uploads/2024/03/ipp-orders-1.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/ipp-order-select-refund.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/ipp-issue-refund.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/refund-quantity-ipp.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/ipp-refund-final.jpeg?w=768)
-- ![](https://woocommerce.com/wp-content/uploads/2023/07/refund-confirm-final.jpeg?w=768)
-
-## Frequently asked questions
-
-[↑ Back to top](#doc-title)
-
-### Does In-Person Payments work with test mode enabled?
-
-[↑ Back to top](#doc-title)
-
-No, In-Person Payments is not compatible with[test mode](https://woocommerce.com/document/stripe/customer-experience/testing/).
-
-### Does my mobile device need an Internet connection to collect payments?
-
-[↑ Back to top](#doc-title)
-
-Yes, your mobile device needs to be connected to the Internet to collect payments.
-
-If you are using cellular data to connect to the internet, please be sure**Cellular Data**is enabled for the**“Woo**” application in your device’s**Cellular** **Settings**.
-
-### Which cards and digital wallets are supported?
-
-[↑ Back to top](#doc-title)
-
-In-Person Payments supports *most* credit and debit cards. It also supports payments using the following wallets:
-
-- Apple Wallet
-- Google Wallet
-- Samsung Pay
-- VISA payWave
-- MasterCard PayPass
-- AMEX ExpressPay
-- Interac
-- Discover D-PAS
-
-### Can I use In-Person Payments for my subscription-based products?
-
-[↑ Back to top](#doc-title)
-
-Not at this time. Support for subscription products will be coming in a future release.
-
-## Still experiencing issues?
-
-[↑ Back to top](#doc-title)
-
-If you’re using the Jetpack plugin to connect the app to your site, make sure that the Jetpack connection is active and working correctly. You can verify some[known issues](https://jetpack.com/support/getting-started-with-jetpack/known-issues/)or try[reconnecting your site](https://jetpack.com/support/reconnecting-reinstalling-jetpack/).
-
-If you’re still having difficulty, please fill out our contact form to reach our support team from within the app by going to Menu > Settings > Help & Support > Contact Support.
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -604,7 +253,7 @@ wc_stripe_payment_request_level3_data
 
  filter.
 
-**NOTE:**We are unable to provide support for custom code under [our Support Policy](https://woocommerce.com/support-policy/#customization). If you need to customize a snippet further or extend its functionality, we highly recommend [Codeable](https://www.codeable.io/partners/woocommerce/?ref=OaWImk) or a [Certified WooExpert](https://partners.woocommerce.com/English/marketplace/).
+**NOTE:**We are unable to provide support for custom code under [our Support Policy](https://woocommerce.com/support-policy/#customization). If you need to customize a snippet further or extend its functionality, we highly recommend [Codeable](https://www.codeable.io/partners/woocommerce/?ref=OaWImk) or a [Certified WooExpert](https://woocommerce.com/for-agencies/).
 
 					
 		
@@ -617,7 +266,7 @@ wc_stripe_payment_request_level3_data
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -625,7 +274,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -965,17 +614,17 @@ The correct course of action is to either:
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -1099,7 +748,7 @@ wc_stripe_unexpected_charge_detected
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -1107,7 +756,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -1131,7 +780,7 @@ On this page, we’ll explore how the Stripe extension may affect order statuses
 
 When a payment is processed successfully via the Stripe extension, the order is automatically assigned the “Processing” status. This is the default behavior of payment methods in the core WooCommerce plugin. The “Processing” status indicates that the payment was successful and the order is now awaiting fulfillment.
 
-One exception to the above rule is for orders that solely contain products that are both [virtual and downloadable](https://woocommerce.com/document/digitaldownloadable-product-handling/). Such orders will automatically be assigned the “Completed” status, since no fulfillment is required.
+One exception to the above rule is for orders that solely contain products that are both [virtual and downloadable](https://woocommerce.com/document/digital-downloadable-product-handling/). Such orders will automatically be assigned the “Completed” status, since no fulfillment is required.
 
 If you’d like to automatically mark orders “Completed” even if they contain other product types, we suggest using an extension like [WooCommerce Order Status Control](https://woocommerce.com/products/woocommerce-order-status-control/).
 
@@ -1206,7 +855,7 @@ If you use [the Subscriptions extension](https://woocommerce.com/products/woocom
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -1214,7 +863,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -1234,7 +883,7 @@ Grow your business with increased sales and an enhanced shopping experience — 
 
 Radar is a Stripe service that uses real transaction data from millions of merchants along with advanced machine learning technology to help identify and automatically block fraudulent purchases.
 
-[Radar for Fraud Teams](https://stripe.com/radar/fraud-teams) is also available if you’d like additional control and analytics. However, there is a per-transaction cost.
+[Radar for Fraud Teams](https://docs.stripe.com/radar/how-radar-works#compare-plans) is also available if you’d like additional control and analytics. However, there is a per-transaction cost.
 
 ## How do I enable Radar?
 
@@ -1271,17 +920,17 @@ Radar rules can be configured directly from [your Stripe account dashboard](http
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/06/Woo_Tax_icon-marketplace-160x160-1.png)
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
 
-### WooCommerce Tax
+### Klarna
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
-Automatically calculate how much sales tax should be collected for WooCommerce orders — by city, country, or...
+Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
 ---
 
@@ -1328,7 +977,7 @@ Here’s what a reversal looks like in the Stripe dashboard:
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -1336,7 +985,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 
@@ -1365,7 +1014,7 @@ For this reason, you will not see subscriptions paid for via the Stripe extensio
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -1373,7 +1022,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 

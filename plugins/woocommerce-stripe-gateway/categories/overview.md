@@ -70,7 +70,7 @@ When managing a site that uses our Stripe extension, you’ll need to be aware o
 
 You may also want to know about:
 
-- [How to accept payments in person](https://woocommerce.com/document/stripe/admin-experience/in-person-payments/)
+- [How to accept payments in person](https://woocommerce.com/document/in-person-payments-stripe/)
 - [The extension’s compatibility with Stripe Billing](https://woocommerce.com/document/stripe/admin-experience/stripe-billing/)
 - [How the extension handles Level III Data](https://woocommerce.com/document/stripe/admin-experience/level-iii-data/)
 
@@ -97,7 +97,7 @@ The following pages contain more info about [customizing the Stripe extension](h
 - [How do I translate the payment form placeholder text?](https://woocommerce.com/document/stripe/customization/translate-placeholders/)
 - [How do I change which payment icons are used?](https://woocommerce.com/document/stripe/customization/payment-icons/)
 - [How can I send product data to Stripe as metadata?](https://woocommerce.com/document/stripe/customization/products-as-metadata/)
-- [What hooks and filters are available for the Stripe payment gateway?](https://woocommerce.com/document/stripe/customization/hooks-and-filters/)
+- [What hooks and filters are available for the Stripe payment gateway?](https://github.com/woocommerce/woocommerce-gateway-stripe/wiki/Action-and-Filter-Hooks)
 - [How can I clean up the database after changing my Stripe account?](https://woocommerce.com/document/stripe/customization/database-cleanup/)
 
 ## Contacting support
@@ -119,7 +119,7 @@ While we are unable to assist with Stripe account issues (including but not limi
 ### Stripe Tax
 
 	
-			by [Stripe](https://woocommerce.com/vendor/stripe)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
 Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
 				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
@@ -127,7 +127,7 @@ Calculate and collect tax globally in your WooCommerce store, and file returns a
 ### Klarna
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna)
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
 
 Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
 

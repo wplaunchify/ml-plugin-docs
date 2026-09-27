@@ -2,16 +2,16 @@
   "plugin_slug": "woocommerce-stripe-gateway",
   "plugin_name": "WooCommerce Stripe Gateway",
   "documentation_url": "https://woocommerce.com/document/stripe/",
-  "last_scraped": "2026-09-20T18:20:06.270Z",
-  "total_pages": 37,
-  "failed_urls_count": 1,
+  "last_scraped": "2026-09-27T15:55:03.209Z",
+  "total_pages": 36,
+  "failed_urls_count": 0,
   "sections": [
     {
       "title": "Admin Experience",
       "slug": "admin-experience",
       "url": "https://woocommerce.com/document/stripe/admin-experience/",
       "file": "categories/admin-experience.md",
-      "page_count": 11,
+      "page_count": 10,
       "pages": [
         {
           "title": "Administrator experience with the Stripe extension",
@@ -20,10 +20,6 @@
         {
           "title": "Authorize and Capture Guide",
           "url": "https://woocommerce.com/document/stripe/admin-experience/authorize-and-capture/"
-        },
-        {
-          "title": "Getting started with In-Person Payments with Stripe",
-          "url": "https://woocommerce.com/document/stripe/admin-experience/in-person-payments/"
         },
         {
           "title": "Stripe extension and Level III Data",
