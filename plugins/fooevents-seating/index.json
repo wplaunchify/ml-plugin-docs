@@ -2,8 +2,8 @@
   "plugin_slug": "fooevents-seating",
   "plugin_name": "FooEvents Seating",
   "documentation_url": "https://help.fooevents.com/docs/",
-  "last_scraped": "2026-09-20T19:37:12.492Z",
-  "total_pages": 327,
+  "last_scraped": "2026-09-27T17:34:49.554Z",
+  "total_pages": 328,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,7 +11,7 @@
       "slug": "frequently-asked-questions",
       "url": "https://help.fooevents.com/docs/frequently-asked-questions/",
       "file": "categories/frequently-asked-questions.md",
-      "page_count": 144,
+      "page_count": 145,
       "pages": [
         {
           "title": "FooEvents Help Center",
@@ -524,6 +524,10 @@
         {
           "title": "FooEvents Help Center",
           "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/browser-developer-tools/"
         },
         {
           "title": "FooEvents Help Center",
