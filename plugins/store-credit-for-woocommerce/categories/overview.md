@@ -581,7 +581,7 @@ Already purchased and need some assistance? [Get in touch with the developer](ht
 ### WooCommerce Subscriptions
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
 				![](https://woocommerce.com/wp-content/uploads/2012/07/Table_Rate_Shipping_icon-marketplace-160x160-2.png)
@@ -589,7 +589,7 @@ WooCommerce Subscriptions is a WooCommerce extension that lets customers subscri
 ### Table Rate Shipping
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
 
