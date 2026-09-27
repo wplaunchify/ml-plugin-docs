@@ -665,22 +665,22 @@ You can get a more detailed run through here which is about 11 minutes. This is 
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
-
-### WooCommerce Subscriptions
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
-
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2020/02/recaptcha.jpg)
+	![](https://woocommerce.com/wp-content/uploads/2020/02/recaptcha.jpg)
 
 ### reCaptcha Integration
 
 	
-			by [I13 Web Solution](https://woocommerce.com/vendor/i13-web-solution)
+			by [I13 Web Solution](https://woocommerce.com/vendor/i13-web-solution/)
 
 Protect your eCommerce store from malicious and automated attacks by using reCaptcha/Cloudflare...
+				![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+
+### WooCommerce Subscriptions
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
 
 ---
 
