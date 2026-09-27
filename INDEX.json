@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T06:38:59.627Z",
+  "last_updated": "2026-09-27T06:46:07.286Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3100,7 +3100,7 @@
       "slug": "uncanny-groups-for-learndash",
       "name": "Uncanny Groups for LearnDash",
       "documentation_url": "https://www.uncannyowl.com/knowledge-base/documentation/",
-      "last_scraped": "2026-09-20T11:37:02.834Z",
+      "last_scraped": "2026-09-27T06:46:07.286Z",
       "page_count": 183,
       "categories": [
         "uncategorized"

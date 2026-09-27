@@ -6651,6 +6651,20 @@ WooCommerce orders must reach **Completed** status to trigger group creation and
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-changelog/](https://www.uncannyowl.com/knowledge-base/uncanny-learndash-groups-changelog/)
 
+### 6.1.9 [2026-09-21]
+
+**Fixed:**
+
+- Group Edit – Fixed an issue where Uncanny Groups tab content was height-restricted #1302
+- Group Leaders – Fixed an issue where Group Leaders could consume seats when the “Do not automatically add Group Leaders as Group Members” setting was enabled #1376
+- Group Management – Bulk Add & Invite Users – Fixed an issue where an error page appeared when no seats were available #1345
+
+**Internal:**
+
+- Licensing – Improved compatibility with WPML language directories to prevent duplicate license activations #1358
+
+---
+
 ### 6.1.8 [2026-05-29]
 
 **Fixed:**
@@ -9885,6 +9899,35 @@ Basic groups remain fully functional in the LearnDash admin. However, they are h
 ## Tin Canny Reporting for LearnDash – Changelog
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-reporting-changelog/](https://www.uncannyowl.com/knowledge-base/tin-canny-learndash-reporting-changelog/)
+
+### 5.2.0 [2026-09-21]
+
+**Added:**
+
+- Tin Canny Module Rules – Added options to filter xAPI statements and state requests for individual modules #1102
+
+**Updated:**
+
+- Gutenberg Blocks – Modernized block architecture for compatibility with current WordPress standards #1089
+- Reporting – Stopped loading Tin Canny reporting JS/CSS on pages that do not use reports #1108
+
+**Fixed:**
+
+- Articulate Rise – Fixed an issue where learner bookmark data failed to save on sites using ModSecurity #1104
+- Course/User Report – Fixed an issue where Group Leaders could see users and courses outside their groups when using cached reports #1111
+- LearnDash Quiz Report – Resolved an issue where the Detailed Report icon did not open quiz statistics when using the 
+```
+[uotc_ld_quiz_report]
+```
+
+ shortcode #1110
+- Restrict Mark Complete – Fixed an issue where restrictions were not applied when using the LearnDash Modern UI #1095
+- Tin Canny Media – Fixed Upload File and Insert Into Post actions in the Elementor Text Editor #1105
+- Tin Canny Media – Fixed shortcode insertion into the Elementor Text Editor #1143
+- Tin Canny Modules – Fixed launch failures when actor data contained spaces #1107
+- Tin Canny Modules – Fixed replaced modules loading outdated cached content #1099
+
+---
 
 ### 5.1.3.3 [2026-05-29]
 
@@ -14446,6 +14489,33 @@ PHP notice: add_submenu_page was called incorrectly #35
 ## Uncanny Toolkit Pro for LearnDash – Changelog
 
 **Source:** [https://www.uncannyowl.com/knowledge-base/learndash-toolkit-pro-change-log/](https://www.uncannyowl.com/knowledge-base/learndash-toolkit-pro-change-log/)
+
+### 4.4.2[2026-09-21]
+
+**Updated:**
+
+- Bulk Certificate Download – Made the 
+```
+%Link%
+```
+
+ placeholder translatable #865
+- Licensing – Improved compatibility with WPML language directories to prevent duplicate license activations #960
+
+**Fixed:**
+
+- Autocomplete Lessons & Topics – Prevented lessons and topics requiring external attendance from being automatically completed #952
+- Bulk Certificate Download – Resolved a fatal error when using the Gutenberg block on PHP 8+ #923
+- Enhanced Lessons/Topics Grid – Resolved a fatal error when using the LearnDash Modern UI #917
+- Gravity Forms – Autocomplete Lessons & Topics on Form Submission – Restored the Mark Lesson/Topic Complete setting in Gravity Forms 3.0+ #956
+- One Page Course – Resolved a PHP error when LearnDash Notifications and WPML were active #928
+
+**Under the Hood:**
+
+- Updated compatibility with deprecated LearnDash functions #881
+- Updated the plugin updater library #915
+
+---
 
 ### 4.4.1[2026-05-29]
 
