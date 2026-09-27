@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-09-20T21:17:29.211Z",
-  "total_pages": 3659,
+  "last_scraped": "2026-09-27T19:04:36.933Z",
+  "total_pages": 3648,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,128 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3659,
+      "page_count": 3648,
       "pages": [
+        {
+          "title": "Name Your Price: Products",
+          "url": "https://woocommerce.com/document/name-your-price/products/"
+        },
+        {
+          "title": "Name Your Price: Donations",
+          "url": "https://woocommerce.com/document/name-your-price/donations/"
+        },
+        {
+          "title": "Name Your Price: Settings",
+          "url": "https://woocommerce.com/document/name-your-price/settings/"
+        },
+        {
+          "title": "Name Your Price: Subscriptions",
+          "url": "https://woocommerce.com/document/name-your-price/subscriptions/"
+        },
+        {
+          "title": "How to Get Low Stock Alerts in WooCommerce",
+          "url": "https://woocommerce.com/document/how-to-get-low-stock-alerts-in-woocommerce/"
+        },
+        {
+          "title": "How to Recover Abandoned Carts in WooCommerce",
+          "url": "https://woocommerce.com/document/how-to-recover-abandoned-carts-in-woocommerce/"
+        },
+        {
+          "title": "How to Send WooCommerce Order Notifications to WhatsApp",
+          "url": "https://woocommerce.com/document/how-to-send-woocommerce-order-notifications-to-whatsapp/"
+        },
+        {
+          "title": "How to Send WooCommerce Order Notifications to Telegram",
+          "url": "https://woocommerce.com/document/how-to-send-woocommerce-order-notifications-to-telegram/"
+        },
+        {
+          "title": "Connect Anti-Fraud Shield to Claude or Codex with MCP",
+          "url": "https://woocommerce.com/document/koalaapps-anti-fraud-shield/connect-anti-fraud-shield-to-claude-or-codex-with-mcp/"
+        },
+        {
+          "title": "Zapier Connector",
+          "url": "https://woocommerce.com/document/zapier-connector/"
+        },
+        {
+          "title": "Gravity Forms Product Options",
+          "url": "https://woocommerce.com/document/gravity-forms-product-options/"
+        },
+        {
+          "title": "Age verification in the WooCommerce mobile app",
+          "url": "https://woocommerce.com/document/age-verification-in-the-woocommerce-mobile-app/"
+        },
+        {
+          "title": "AI Support Assistant",
+          "url": "https://woocommerce.com/document/ai-customer-support/"
+        },
+        {
+          "title": "Custom Hide Shipping Methods",
+          "url": "https://woocommerce.com/document/custom-hide-shipping/"
+        },
+        {
+          "title": "Athleisure Theme Documentation",
+          "url": "https://woocommerce.com/document/athleisure/"
+        },
+        {
+          "title": "Google Address Autocomplete",
+          "url": "https://woocommerce.com/document/google-address-autocomplete/"
+        },
+        {
+          "title": "Cancel a pending subscription renewal payment retry",
+          "url": "https://woocommerce.com/document/cancel-a-pending-subscription-renewal-payment-retry/"
+        },
+        {
+          "title": "Product Image Manager",
+          "url": "https://woocommerce.com/document/product-image-manager/"
+        },
+        {
+          "title": "Customizing Account & Checkout Endpoints",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/customizing-account-checkout-endpoints/"
+        },
+        {
+          "title": "Configuring Rate Limiting",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/configuring-rate-limiting/"
+        },
+        {
+          "title": "Configuring Cloudflare Turnstile",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/configuring-cloudflare-turnstile/"
+        },
+        {
+          "title": "Configuring Registration Fields",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/configuring-registration-fields/"
+        },
+        {
+          "title": "Enabling Role-Based Access",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/enabling-role-based-access/"
+        },
+        {
+          "title": "Setting up Google Login",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/setting-up-google-login/"
+        },
+        {
+          "title": "Setting up Passwordless Login",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/setting-up-passwordless-login/"
+        },
+        {
+          "title": "Setting up Email Verification",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/setting-up-email-verification/"
+        },
+        {
+          "title": "Enabling Modern Login Experience",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/enabling-modern-login-experience/"
+        },
+        {
+          "title": "Enhanced Customer Accounts",
+          "url": "https://woocommerce.com/document/enhanced-customer-accounts/"
+        },
+        {
+          "title": "Advanced Shipping",
+          "url": "https://woocommerce.com/document/advanced-shipping/"
+        },
+        {
+          "title": "Auction Engine for WooCommerce",
+          "url": "https://woocommerce.com/document/auction-engine/"
+        },
         {
           "title": "Ultimate Draft Order Cleanup Manager",
           "url": "https://woocommerce.com/document/ultimate-draft-order-cleanup/"
@@ -332,46 +452,6 @@
         {
           "title": "How to Discount by Payment or Shipping Method",
           "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-discount-by-payment-or-shipping-method/"
-        },
-        {
-          "title": "How to Set Up Cart and Cheapest Item Discounts",
-          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-discount-the-whole-cart/"
-        },
-        {
-          "title": "How to Set Up Bulk and Tiered Quantity Discounts",
-          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-set-up-bulk-and-tiered-quantity-discounts/"
-        },
-        {
-          "title": "How to Discount Multiple Products or Your Whole Store",
-          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-discount-multiple-products-and-categories/"
-        },
-        {
-          "title": "How to Discount Products, Categories and Tags",
-          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-discount-products-categories-and-tags/"
-        },
-        {
-          "title": "PricePulse General Settings",
-          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/pricepulse-general-settings/"
-        },
-        {
-          "title": "Discount Rule Fields",
-          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/discount-rule-fields/"
-        },
-        {
-          "title": "How to Create Your First Discount Rule",
-          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-create-your-first-discount-rule/"
-        },
-        {
-          "title": "Stylezen",
-          "url": "https://woocommerce.com/document/stylezen/"
-        },
-        {
-          "title": "Outlet Pro",
-          "url": "https://woocommerce.com/document/outletpro/"
-        },
-        {
-          "title": "Product Manuals and Flip Book",
-          "url": "https://woocommerce.com/document/product-manuals-pro/"
         },
         {
           "title": "LWN Multi-Step Checkout",
@@ -1414,7 +1494,7 @@
           "url": "https://woocommerce.com/document/price-cart-hider/"
         },
         {
-          "title": "Fraud Protection",
+          "title": "Fraud Prevention",
           "url": "https://woocommerce.com/document/fraud-protection/"
         },
         {
@@ -4614,46 +4694,6 @@
           "url": "https://woocommerce.com/document/phone-validator-and-formatter/"
         },
         {
-          "title": "Discount On Cart",
-          "url": "https://woocommerce.com/document/discount-on-cart/"
-        },
-        {
-          "title": "Order Shipment Tracking",
-          "url": "https://woocommerce.com/document/order-shipment-tracking/"
-        },
-        {
-          "title": "Dakota Next",
-          "url": "https://woocommerce.com/document/dakota-next/"
-        },
-        {
-          "title": "Bundle Products for WooCommerce",
-          "url": "https://woocommerce.com/document/bundle-products-for-woocommerce-documentation/"
-        },
-        {
-          "title": "How to Customize the Side Cart and Checkout in WooCommerce",
-          "url": "https://woocommerce.com/document/side-cart-checkout/"
-        },
-        {
-          "title": "Shortcodes included with WooCommerce",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/"
-        },
-        {
-          "title": "Phone Number Validation for WooCommerce",
-          "url": "https://woocommerce.com/document/phone-number-validation/"
-        },
-        {
-          "title": "Cart to Quote & Social Share",
-          "url": "https://woocommerce.com/document/cart-to-quote-and-social-share/"
-        },
-        {
-          "title": "Order Discounts & Conditional Fee",
-          "url": "https://woocommerce.com/document/order-discounts-and-fee-for-woocommerce/"
-        },
-        {
-          "title": "Archiva",
-          "url": "https://woocommerce.com/document/smart-archive-wc/"
-        },
-        {
           "title": "Testing tips for Refer A Friend",
           "url": "https://woocommerce.com/document/automatewoo/refer-a-friend/testing-tips/"
         },
@@ -5778,7 +5818,7 @@
           "url": "https://woocommerce.com/document/google-for-woocommerce/get-started/disconnect/"
         },
         {
-          "title": "Campaign analytics, cookies & consent mode",
+          "title": "Campaign analytics, cookies, and consent mode",
           "url": "https://woocommerce.com/document/google-for-woocommerce/get-started/campaign-analytics/"
         },
         {
@@ -5810,7 +5850,7 @@
           "url": "https://woocommerce.com/document/google-for-woocommerce/common-errors/"
         },
         {
-          "title": "Get Started",
+          "title": "Get started",
           "url": "https://woocommerce.com/document/google-for-woocommerce/get-started/"
         },
         {
@@ -6150,7 +6190,7 @@
           "url": "https://woocommerce.com/document/introduction-to-woocommerce-bookings/integrating-bookings-with-other-extensions/"
         },
         {
-          "title": "Tiered Discounts",
+          "title": "How to set up quantity-based tiered discounts in WooCommerce",
           "url": "https://woocommerce.com/document/smart-coupons/tiered-discounts/"
         },
         {
@@ -10134,46 +10174,6 @@
           "url": "https://woocommerce.com/document/paypal-standard/"
         },
         {
-          "title": "Constants",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/api/constants/"
-        },
-        {
-          "title": "Rapyd Payments Plugin",
-          "url": "https://woocommerce.com/document/rapyd-payments-plugin-for-woocommerce/"
-        },
-        {
-          "title": "Live Sales Notification for WooCommerce",
-          "url": "https://woocommerce.com/document/live-sales-notification-for-woocommerce/"
-        },
-        {
-          "title": "Merge Orders",
-          "url": "https://woocommerce.com/document/merge-orders/"
-        },
-        {
-          "title": "WooCommerce Box Office",
-          "url": "https://woocommerce.com/document/woocommerce-box-office/"
-        },
-        {
-          "title": "The My account page",
-          "url": "https://woocommerce.com/document/the-my-account-page/"
-        },
-        {
-          "title": "Abandoned Cart Recovery",
-          "url": "https://woocommerce.com/document/abandoned-cart-recovery/"
-        },
-        {
-          "title": "Share Cart URL for WooCommerce",
-          "url": "https://woocommerce.com/document/share-cart-url-for-woocommerce/"
-        },
-        {
-          "title": "Subscriptions Action Reference",
-          "url": "https://woocommerce.com/document/subscriptions/develop/action-reference/"
-        },
-        {
-          "title": "Storewide Sale",
-          "url": "https://woocommerce.com/document/storewide-sale/"
-        },
-        {
           "title": "Availability Scheduler",
           "url": "https://woocommerce.com/document/availability-scheduler/"
         },
@@ -10678,7 +10678,7 @@
           "url": "https://woocommerce.com/document/woocommerce-customizer/"
         },
         {
-          "title": "Conditional Checkout Fields Manager",
+          "title": "Conditional Checkout Fields & Edit Checkout Fields for WooCommerce",
           "url": "https://woocommerce.com/document/conditional-checkout-fields-manager-for-woocommerce/"
         },
         {
@@ -10930,52 +10930,8 @@
           "url": "https://woocommerce.com/document/subscriptions/customers-view/"
         },
         {
-          "title": "Name Your Price – What’s New in 3.0",
-          "url": "https://woocommerce.com/document/name-your-price/whats-new-in-3-0/"
-        },
-        {
           "title": "Google Analytics link tracking",
           "url": "https://woocommerce.com/document/automatewoo/google-analytics-link-tracking/"
-        },
-        {
-          "title": "Product Merchandizing",
-          "url": "https://woocommerce.com/document/product-merchandizing/"
-        },
-        {
-          "title": "Subscriptions FAQ",
-          "url": "https://woocommerce.com/document/subscriptions/faq/"
-        },
-        {
-          "title": "Store Finder for WooCommerce",
-          "url": "https://woocommerce.com/document/store-finder-for-woocommerce/"
-        },
-        {
-          "title": "2020 New Visa Requirements for Subscriptions with a Free Trial",
-          "url": "https://woocommerce.com/document/subscriptions/2020-new-visa-requirements-for-subscriptions-with-a-free-trial/"
-        },
-        {
-          "title": "Product Likes",
-          "url": "https://woocommerce.com/document/product-likes/"
-        },
-        {
-          "title": "GoCardless",
-          "url": "https://woocommerce.com/document/gocardless/"
-        },
-        {
-          "title": "Etsy Integration for WooCommerce",
-          "url": "https://woocommerce.com/document/etsy-integration-for-woocommerce/"
-        },
-        {
-          "title": "Lower Price for WooCommerce",
-          "url": "https://woocommerce.com/document/lower-price/"
-        },
-        {
-          "title": "Bulk Edit Products, Prices and Attributes",
-          "url": "https://woocommerce.com/document/bulk-edit-products-prices-and-attributes/"
-        },
-        {
-          "title": "Aliexpress Dropshipping For WooCommerce",
-          "url": "https://woocommerce.com/document/aliexpress-dropshipping-for-woocommerce/"
         },
         {
           "title": "Bulk Order Form For WooCommerce",
@@ -11438,7 +11394,7 @@
           "url": "https://woocommerce.com/document/smart-coupons/how-to-rename-store-credit/"
         },
         {
-          "title": "How to provide a discount coupon to new users only",
+          "title": "How to offer a first order discount for new customers",
           "url": "https://woocommerce.com/document/smart-coupons/how-to-create-coupon-for-new-users-only/"
         },
         {
@@ -11570,7 +11526,7 @@
           "url": "https://woocommerce.com/document/assorted-products/"
         },
         {
-          "title": "How to create gift cards in WooCommerce (advanced)",
+          "title": "How to create and sell gift cards in WooCommerce",
           "url": "https://woocommerce.com/document/smart-coupons/how-to-sell-gift-card-of-any-amount/"
         },
         {
@@ -12254,8 +12210,8 @@
           "url": "https://woocommerce.com/document/google-product-feed-product-review-feeds/"
         },
         {
-          "title": "[woocommerce_product_filter_tag]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_tag/"
+          "title": "Mailchimp for WooCommerce Memberships",
+          "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
         },
         {
           "title": "[woocommerce_product_filter_category]",
