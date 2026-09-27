@@ -1,4 +1,4 @@
-# Woo Template Block Product Description
+# Product Description Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Description
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-description/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-description/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-description-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-description-block/)
 
 When creating Woo Templates, you can access the Product: Description. This block displays the description of the current product.
 

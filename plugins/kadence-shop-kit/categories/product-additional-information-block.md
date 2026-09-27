@@ -1,4 +1,4 @@
-# Woo Template Block Product Additional Information
+# Product Additional Information Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block Product: Additional Information
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-additional-information/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-additional-information/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-additional-information-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-additional-information-block/)
 
 The Product: Additional Information block allows you to display the attributes of a product.
 

@@ -1,4 +1,4 @@
-# Woo Template Block Product Notice
+# Product Notice Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Notice
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-notice/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-notice/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-notice-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-notice-block/)
 
 Whenever you add a WooCommerce product to your cart, there is a notice that tells the user the product was added to the cart. This ensures the customer that their product has been successfully added to the cart. The Product: Notice block is a Woo Template block that allows you to customize this notice. If you need to know how to enable these blocks, refer to [How to Enable Woo Template Blocks](https://docs.nexcess.com/software/kadence/enable-woo-template-blocks/).
 

@@ -1,4 +1,4 @@
-# Woo Template Block Product Tabs
+# Product Tabs Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Tabs
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-tabs/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-tabs/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-tabs-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-tabs-block/)
 
 Woo Templates provide the Product: Tabs block that lets you set the position of your product tabs.
 

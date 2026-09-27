@@ -1,4 +1,4 @@
-# Woo Template Block Archive Main Query
+# Archive Main Query Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Archive: Main Query
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-archive-main-query/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-archive-main-query/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/archive-main-query-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/archive-main-query-block/)
 
 The Archive: Main Query block allows you to display the main query of products on your shop archive pages.
 

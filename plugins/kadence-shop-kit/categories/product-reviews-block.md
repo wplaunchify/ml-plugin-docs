@@ -1,4 +1,4 @@
-# Woo Template Block Product Reviews Block
+# Product Reviews Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Reviews Block
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-reviews-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-reviews-block/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-reviews-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-reviews-block/)
 
 The Product Reviews Block allows users to leave reviews on your product.
 

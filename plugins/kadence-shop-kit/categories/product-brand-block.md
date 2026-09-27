@@ -1,4 +1,4 @@
-# Woo Template Block Product Brand
+# Product Brand Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Brand
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-brand/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-brand/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-brand-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-brand-block/)
 
 Kadence Shop Kit allows you to add brands to your products. The Product: Brand block lets you display the Product’s Brand on a Woo Template.
 

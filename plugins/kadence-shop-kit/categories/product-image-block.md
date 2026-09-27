@@ -1,4 +1,4 @@
-# Wootemplate Block Product Image
+# Product Image Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Image
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/wootemplate-block-product-image/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/wootemplate-block-product-image/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-image-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-image-block/)
 
 When creating Woo Templates, you can access the Product: Image block. This block displays the featured image of the current product.
 

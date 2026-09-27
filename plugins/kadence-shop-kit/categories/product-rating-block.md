@@ -1,4 +1,4 @@
-# Woo Template Block Product Rating
+# Product Rating Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Rating
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-rating/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-rating/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-rating-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-rating-block/)
 
 The Product: Rating block allows you to display the rating of a product on your Woo Template.
 

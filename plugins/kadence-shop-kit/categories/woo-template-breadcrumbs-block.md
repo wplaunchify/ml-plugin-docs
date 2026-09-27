@@ -1,4 +1,4 @@
-# Woo Template Block Breadcrumbs
+# Woo Template Breadcrumbs Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Breadcrumbs
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-breadcrumbs/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-breadcrumbs/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-breadcrumbs-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-breadcrumbs-block/)
 
 The Product: Breadcrumbs Block allows you to display the breadcrumbs of a product.
 

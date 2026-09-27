@@ -2,8 +2,8 @@
   "plugin_slug": "kadence-shop-kit",
   "plugin_name": "Kadence Shop Kit",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/",
-  "last_scraped": "2026-09-20T19:50:37.921Z",
-  "total_pages": 52,
+  "last_scraped": "2026-09-27T17:54:15.169Z",
+  "total_pages": 44,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -29,6 +29,19 @@
         {
           "title": "Kadence Advanced Reviews",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/advanced-reviews/"
+        }
+      ]
+    },
+    {
+      "title": "Archive Main Query Block",
+      "slug": "archive-main-query-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/archive-main-query-block/",
+      "file": "categories/archive-main-query-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Archive: Main Query",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/archive-main-query-block/"
         }
       ]
     },
@@ -102,15 +115,24 @@
       "slug": "enable-custom-add-to-cart-text",
       "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/enable-custom-add-to-cart-text/",
       "file": "categories/enable-custom-add-to-cart-text.md",
-      "page_count": 2,
+      "page_count": 1,
       "pages": [
         {
           "title": "Enable Custom Add to Cart Text",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/enable-custom-add-to-cart-text/"
-        },
+        }
+      ]
+    },
+    {
+      "title": "Enable Woo Template Blocks",
+      "slug": "enable-woo-template-blocks",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/enable-woo-template-blocks/",
+      "file": "categories/enable-woo-template-blocks.md",
+      "page_count": 1,
+      "pages": [
         {
-          "title": "Enable Custom Add to Cart Text",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/enable-custom-add-to-cart-text/"
+          "title": "How to Enable Woo Template Blocks",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/enable-woo-template-blocks/"
         }
       ]
     },
@@ -128,58 +150,6 @@
       ]
     },
     {
-      "title": "How To Add Gutenberg Editor To Woocommerce",
-      "slug": "how-to-add-gutenberg-editor-to-woocommerce",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-add-gutenberg-editor-to-woocommerce/",
-      "file": "categories/how-to-add-gutenberg-editor-to-woocommerce.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Add Gutenberg Editor to WooCommerce",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-add-gutenberg-editor-to-woocommerce/"
-        }
-      ]
-    },
-    {
-      "title": "How To Enable Woo Template Blocks",
-      "slug": "how-to-enable-woo-template-blocks",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-enable-woo-template-blocks/",
-      "file": "categories/how-to-enable-woo-template-blocks.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Enable Woo Template Blocks",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-enable-woo-template-blocks/"
-        }
-      ]
-    },
-    {
-      "title": "How To Install Activate Kadence Shop Kit",
-      "slug": "how-to-install-activate-kadence-shop-kit",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-install-activate-kadence-shop-kit/",
-      "file": "categories/how-to-install-activate-kadence-shop-kit.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Install & Activate Kadence Shop Kit",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-install-activate-kadence-shop-kit/"
-        }
-      ]
-    },
-    {
-      "title": "How To Set Variation Options",
-      "slug": "how-to-set-variation-options",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-set-variation-options/",
-      "file": "categories/how-to-set-variation-options.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Set Variation Options",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-set-variation-options/"
-        }
-      ]
-    },
-    {
       "title": "Install Activate Kadence Shop Kit",
       "slug": "install-activate-kadence-shop-kit",
       "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/install-activate-kadence-shop-kit/",
@@ -189,19 +159,6 @@
         {
           "title": "How to Install & Activate Kadence Shop Kit",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/install-activate-kadence-shop-kit/"
-        }
-      ]
-    },
-    {
-      "title": "Kadence Wooextras Size Charts",
-      "slug": "kadence-wooextras-size-charts",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/kadence-wooextras-size-charts/",
-      "file": "categories/kadence-wooextras-size-charts.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Size Charts",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/kadence-wooextras-size-charts/"
         }
       ]
     },
@@ -219,16 +176,38 @@
       ]
     },
     {
+      "title": "Product Add To Cart Block",
+      "slug": "product-add-to-cart-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-add-to-cart-block/",
+      "file": "categories/product-add-to-cart-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Add to Cart",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-add-to-cart-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Additional Information Block",
+      "slug": "product-additional-information-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-additional-information-block/",
+      "file": "categories/product-additional-information-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block Product: Additional Information",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-additional-information-block/"
+        }
+      ]
+    },
+    {
       "title": "Product Archive Woo Templates",
       "slug": "product-archive-woo-templates",
       "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-archive-woo-templates/",
       "file": "categories/product-archive-woo-templates.md",
-      "page_count": 2,
+      "page_count": 1,
       "pages": [
-        {
-          "title": "Product Archive Templates (Woo Templates)",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-archive-woo-templates/"
-        },
         {
           "title": "Product Archive Templates (Woo Templates)",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-archive-woo-templates/"
@@ -245,6 +224,19 @@
         {
           "title": "Product Badges",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-badges/"
+        }
+      ]
+    },
+    {
+      "title": "Product Brand Block",
+      "slug": "product-brand-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-brand-block/",
+      "file": "categories/product-brand-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Brand",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-brand-block/"
         }
       ]
     },
@@ -275,6 +267,45 @@
       ]
     },
     {
+      "title": "Product Custom Actions Block",
+      "slug": "product-custom-actions-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-custom-actions-block/",
+      "file": "categories/product-custom-actions-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Custom Actions",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-custom-actions-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Description Block",
+      "slug": "product-description-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-description-block/",
+      "file": "categories/product-description-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Description",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-description-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product For Preview",
+      "slug": "product-for-preview",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-for-preview/",
+      "file": "categories/product-for-preview.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Select a Product for Preview in Woo Template",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-for-preview/"
+        }
+      ]
+    },
+    {
       "title": "Product Galleries",
       "slug": "product-galleries",
       "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-galleries/",
@@ -284,6 +315,71 @@
         {
           "title": "Product Galleries",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-galleries/"
+        }
+      ]
+    },
+    {
+      "title": "Product Gallery Block",
+      "slug": "product-gallery-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-gallery-block/",
+      "file": "categories/product-gallery-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Gallery",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-gallery-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Image Block",
+      "slug": "product-image-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-image-block/",
+      "file": "categories/product-image-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Image",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-image-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Meta Block",
+      "slug": "product-meta-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-meta-block/",
+      "file": "categories/product-meta-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Meta",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-meta-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Notice Block",
+      "slug": "product-notice-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-notice-block/",
+      "file": "categories/product-notice-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Notice",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-notice-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Price Block",
+      "slug": "product-price-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-price-block/",
+      "file": "categories/product-price-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Price",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-price-block/"
         }
       ]
     },
@@ -301,6 +397,84 @@
       ]
     },
     {
+      "title": "Product Quickview Button Block",
+      "slug": "product-quickview-button-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-quickview-button-block/",
+      "file": "categories/product-quickview-button-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Product: Quickview Button Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-quickview-button-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Rating Block",
+      "slug": "product-rating-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-rating-block/",
+      "file": "categories/product-rating-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Rating",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-rating-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Related Block",
+      "slug": "product-related-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-related-block/",
+      "file": "categories/product-related-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Related",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-related-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Reviews Block",
+      "slug": "product-reviews-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-reviews-block/",
+      "file": "categories/product-reviews-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Reviews Block",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-reviews-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Short Description Block",
+      "slug": "product-short-description-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-short-description-block/",
+      "file": "categories/product-short-description-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Short Description",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-short-description-block/"
+        }
+      ]
+    },
+    {
+      "title": "Product Tabs Block",
+      "slug": "product-tabs-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-tabs-block/",
+      "file": "categories/product-tabs-block.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Woo Template Block – Product: Tabs",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-tabs-block/"
+        }
+      ]
+    },
+    {
       "title": "Product Templates",
       "slug": "product-templates",
       "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-templates/",
@@ -314,28 +488,28 @@
       ]
     },
     {
-      "title": "Product Templates Woo Templates",
-      "slug": "product-templates-woo-templates",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-templates-woo-templates/",
-      "file": "categories/product-templates-woo-templates.md",
+      "title": "Product Title Block",
+      "slug": "product-title-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-title-block/",
+      "file": "categories/product-title-block.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Product Templates (Woo Templates)",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-templates-woo-templates/"
+          "title": "Woo Template Block – Product: Title",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-title-block/"
         }
       ]
     },
     {
-      "title": "Select A Product For Preview In Woo Template",
-      "slug": "select-a-product-for-preview-in-woo-template",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/select-a-product-for-preview-in-woo-template/",
-      "file": "categories/select-a-product-for-preview-in-woo-template.md",
+      "title": "Product Upsell Block",
+      "slug": "product-upsell-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-upsell-block/",
+      "file": "categories/product-upsell-block.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Select a Product for Preview in Woo Template",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/select-a-product-for-preview-in-woo-template/"
+          "title": "Woo Template Block – Product: Upsell",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-upsell-block/"
         }
       ]
     },
@@ -353,19 +527,6 @@
       ]
     },
     {
-      "title": "Shop Kit 2 0 Building A Product Template",
-      "slug": "shop-kit-2-0-building-a-product-template",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/shop-kit-2-0-building-a-product-template/",
-      "file": "categories/shop-kit-2-0-building-a-product-template.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Single Product Templates (Woo Templates)",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/shop-kit-2-0-building-a-product-template/"
-        }
-      ]
-    },
-    {
       "title": "Size Charts",
       "slug": "size-charts",
       "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/size-charts/",
@@ -379,15 +540,15 @@
       ]
     },
     {
-      "title": "Troubleshooting Kadence Shop Kit Product Images Not Showing",
-      "slug": "troubleshooting-kadence-shop-kit-product-images-not-showing",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/troubleshooting-kadence-shop-kit-product-images-not-showing/",
-      "file": "categories/troubleshooting-kadence-shop-kit-product-images-not-showing.md",
+      "title": "Snackbar Style Notices",
+      "slug": "snackbar-style-notices",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/snackbar-style-notices/",
+      "file": "categories/snackbar-style-notices.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Woo Template Block – Product: Image",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/troubleshooting-kadence-shop-kit-product-images-not-showing/"
+          "title": "Snackbar Style Notices",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/snackbar-style-notices/"
         }
       ]
     },
@@ -405,262 +566,15 @@
       ]
     },
     {
-      "title": "Woo Template Block Archive Main Query",
-      "slug": "woo-template-block-archive-main-query",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-archive-main-query/",
-      "file": "categories/woo-template-block-archive-main-query.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Archive: Main Query",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-archive-main-query/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Breadcrumbs",
-      "slug": "woo-template-block-breadcrumbs",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-breadcrumbs/",
-      "file": "categories/woo-template-block-breadcrumbs.md",
+      "title": "Woo Template Breadcrumbs Block",
+      "slug": "woo-template-breadcrumbs-block",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-breadcrumbs-block/",
+      "file": "categories/woo-template-breadcrumbs-block.md",
       "page_count": 1,
       "pages": [
         {
           "title": "Woo Template Block – Breadcrumbs",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-breadcrumbs/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Add To Cart",
-      "slug": "woo-template-block-product-add-to-cart",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-add-to-cart/",
-      "file": "categories/woo-template-block-product-add-to-cart.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Add to Cart",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-add-to-cart/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Additional Information",
-      "slug": "woo-template-block-product-additional-information",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-additional-information/",
-      "file": "categories/woo-template-block-product-additional-information.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block Product: Additional Information",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-additional-information/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Brand",
-      "slug": "woo-template-block-product-brand",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-brand/",
-      "file": "categories/woo-template-block-product-brand.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Brand",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-brand/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Description",
-      "slug": "woo-template-block-product-description",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-description/",
-      "file": "categories/woo-template-block-product-description.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Description",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-description/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Gallery",
-      "slug": "woo-template-block-product-gallery",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-gallery/",
-      "file": "categories/woo-template-block-product-gallery.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Gallery",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-gallery/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Meta",
-      "slug": "woo-template-block-product-meta",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-meta/",
-      "file": "categories/woo-template-block-product-meta.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Meta",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-meta/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Notice",
-      "slug": "woo-template-block-product-notice",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-notice/",
-      "file": "categories/woo-template-block-product-notice.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Notice",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-notice/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Price",
-      "slug": "woo-template-block-product-price",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-price/",
-      "file": "categories/woo-template-block-product-price.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Price",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-price/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Rating",
-      "slug": "woo-template-block-product-rating",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-rating/",
-      "file": "categories/woo-template-block-product-rating.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Rating",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-rating/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Related",
-      "slug": "woo-template-block-product-related",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-related/",
-      "file": "categories/woo-template-block-product-related.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Related",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-related/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Reviews Block",
-      "slug": "woo-template-block-product-reviews-block",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-reviews-block/",
-      "file": "categories/woo-template-block-product-reviews-block.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Reviews Block",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-reviews-block/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Short Description",
-      "slug": "woo-template-block-product-short-description",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-short-description/",
-      "file": "categories/woo-template-block-product-short-description.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Short Description",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-short-description/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Tabs",
-      "slug": "woo-template-block-product-tabs",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-tabs/",
-      "file": "categories/woo-template-block-product-tabs.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Tabs",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-tabs/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Title",
-      "slug": "woo-template-block-product-title",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-title/",
-      "file": "categories/woo-template-block-product-title.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Title",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-title/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Upsell",
-      "slug": "woo-template-block-product-upsell",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-upsell/",
-      "file": "categories/woo-template-block-product-upsell.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Upsell",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-upsell/"
-        }
-      ]
-    },
-    {
-      "title": "Woo Template Block Product Upsell 2",
-      "slug": "woo-template-block-product-upsell-2",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-upsell-2/",
-      "file": "categories/woo-template-block-product-upsell-2.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Upsell",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-upsell-2/"
-        }
-      ]
-    },
-    {
-      "title": "Wooextras Open Affiliate External Products In A New Tab",
-      "slug": "wooextras-open-affiliate-external-products-in-a-new-tab",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/wooextras-open-affiliate-external-products-in-a-new-tab/",
-      "file": "categories/wooextras-open-affiliate-external-products-in-a-new-tab.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Open Affiliate/External Products In A New Tab",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/wooextras-open-affiliate-external-products-in-a-new-tab/"
-        }
-      ]
-    },
-    {
-      "title": "Wootemplate Block Product Image",
-      "slug": "wootemplate-block-product-image",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/wootemplate-block-product-image/",
-      "file": "categories/wootemplate-block-product-image.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Woo Template Block – Product: Image",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/wootemplate-block-product-image/"
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-breadcrumbs-block/"
         }
       ]
     }

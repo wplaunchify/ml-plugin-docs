@@ -1,4 +1,4 @@
-# Woo Template Block Product Gallery
+# Product Gallery Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Gallery
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-gallery/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-gallery/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-gallery-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-gallery-block/)
 
 When creating Woo Templates, you can access the Product: Gallery block. This block displays the gallery of the current product.
 

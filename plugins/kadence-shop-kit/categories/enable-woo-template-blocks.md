@@ -1,4 +1,4 @@
-# How To Enable Woo Template Blocks
+# Enable Woo Template Blocks
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## How to Enable Woo Template Blocks
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-enable-woo-template-blocks/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/how-to-enable-woo-template-blocks/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/enable-woo-template-blocks/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/enable-woo-template-blocks/)
 
 **Kadence Shop Kit** grants you access to use additional Kadence WooCommerce blocks when creating a Woo Template. These blocks are referred to as the Kadence Woo Template Blocks. We will be focusing on the Product: Add to Cart block.
 

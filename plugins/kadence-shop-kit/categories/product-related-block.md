@@ -1,4 +1,4 @@
-# Woo Template Block Product Related
+# Product Related Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Related
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-related/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-related/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-related-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-related-block/)
 
 The Product: Related block allows you to display related products on your Woo Template.
 

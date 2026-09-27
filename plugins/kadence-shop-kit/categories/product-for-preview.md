@@ -1,4 +1,4 @@
-# Select A Product For Preview In Woo Template
+# Product For Preview
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Select a Product for Preview in Woo Template
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/select-a-product-for-preview-in-woo-template/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/select-a-product-for-preview-in-woo-template/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-for-preview/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-for-preview/)
 
 Kadence Shop Kit allows you to create custom templates for WooCommerce single product pages and archives. A Woo Template is a custom post type and is not associated with a product. However, when you design a Woo Template, it is useful to see how a particular product looks in your template. Therefore, Shop Kit allows you to select a product to preview.
 

@@ -1,4 +1,4 @@
-# Woo Template Block Product Price
+# Product Price Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Price
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-price/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-price/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-price-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-price-block/)
 
 Ideally, your product page shows the price of the product. Therefore, Kadence Shop Kit provides the Product: Price block to display the price of a product in your template. Using the price block, you can place the product’s price wherever you want in your design.
 

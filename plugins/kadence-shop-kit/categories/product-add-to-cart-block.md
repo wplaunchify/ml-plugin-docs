@@ -1,4 +1,4 @@
-# Woo Template Block Product Add To Cart
+# Product Add To Cart Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Add to Cart
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-add-to-cart/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-add-to-cart/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-add-to-cart-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-add-to-cart-block/)
 
 Every pre-designed **Woo Template** comes with a **Product: Add to Cart** block. You can manually add one by adding a new block and searching for the Product: Add to Cart block. When you view all of your blocks the Product: Add to Cart block will be under a block group named Woo Template Blocks. If you need to know how to enable these blocks, refer to [How to Enable Woo Template Blocks](https://docs.nexcess.com/software/kadence/enable-woo-template-blocks/).
 

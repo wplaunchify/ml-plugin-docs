@@ -1,4 +1,4 @@
-# Woo Template Block Product Upsell 2
+# Product Upsell Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Upsell
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-upsell-2/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-upsell-2/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-upsell-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-upsell-block/)
 
 WooCommerce gives you a lot of flexibility when creating your products. You can add short and long product descriptions, add variations, manage stock and shipping dimensions, and even make a list of upsell products. Upsell products are products you recommend your customer purchase instead of the currently viewed product. WooCommerce lets you add the list to any product you create as a linked product. Kadence’s Shop Kit provides the Product: Upsell block to add a gallery of your upsells to your Woo Templates.
 

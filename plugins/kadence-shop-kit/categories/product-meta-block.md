@@ -1,4 +1,4 @@
-# Woo Template Block Product Meta
+# Product Meta Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Meta
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-meta/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-meta/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-meta-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-meta-block/)
 
 When creating Woo Templates, you can access the Product: Meta block. This block displays the meta of the current product.
 

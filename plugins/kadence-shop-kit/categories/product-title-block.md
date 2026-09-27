@@ -1,4 +1,4 @@
-# Woo Template Block Product Title
+# Product Title Block
 
 *Category from Kadence Shop Kit documentation*
 
@@ -6,7 +6,7 @@
 
 ## Woo Template Block – Product: Title
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-title/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/woo-template-block-product-title/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-title-block/](https://www.kadencewp.com/help-center/docs/kadence-shop-kit/product-title-block/)
 
 When creating Woo Templates, you can access the Product: Title block. The block displays the title of the product which your template will display.
 
