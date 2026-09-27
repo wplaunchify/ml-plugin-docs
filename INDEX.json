@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T05:46:24.933Z",
+  "last_updated": "2026-09-27T05:52:24.756Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2510,7 +2510,7 @@
       "slug": "simple-history",
       "name": "Simple History",
       "documentation_url": "https://simple-history.com/support/",
-      "last_scraped": "2026-09-20T10:08:03.169Z",
+      "last_scraped": "2026-09-27T05:52:24.756Z",
       "page_count": 11,
       "categories": [
         "ftc-franchise-rule-compliance-with-simple-history",
