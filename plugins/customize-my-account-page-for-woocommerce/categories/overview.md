@@ -303,7 +303,7 @@ Currently, the plugin is by default compatible with the following plugins:
 ### WooCommerce Subscriptions
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
 				![](https://woocommerce.com/wp-content/uploads/2015/06/skyverge-wc-icon-b2vhw6.png)
@@ -311,7 +311,7 @@ WooCommerce Subscriptions is a WooCommerce extension that lets customers subscri
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 
