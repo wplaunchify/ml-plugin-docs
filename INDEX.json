@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T06:56:31.028Z",
+  "last_updated": "2026-09-27T07:01:22.393Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3723,7 +3723,7 @@
       "slug": "wp-migrate-lite",
       "name": "WP Migrate Lite",
       "documentation_url": "https://deliciousbrains.com/wp-migrate-db-pro/documentation/",
-      "last_scraped": "2026-09-20T11:51:33.226Z",
+      "last_scraped": "2026-09-27T07:01:22.393Z",
       "page_count": 55,
       "categories": [
         "uncategorized"
