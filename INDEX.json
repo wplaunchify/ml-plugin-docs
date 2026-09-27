@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-09-20T23:30:17.661Z",
+  "last_updated": "2026-09-27T00:55:29.187Z",
   "total_plugins": 131,
   "plugins": [
     {
       "slug": "add-anchor-links",
       "name": "Add Anchor Links",
       "documentation_url": "https://wordpress.org/plugins/add-anchor-links/",
-      "last_scraped": "2026-09-20T04:27:55.005Z",
+      "last_scraped": "2026-09-27T00:55:29.187Z",
       "page_count": 2,
       "categories": [
         "advanced",
