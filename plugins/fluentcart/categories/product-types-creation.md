@@ -2543,6 +2543,111 @@ For more detailed control, use the **Advanced Filter** option:
 - **Conditional Logic:** Use the **"+ Add"** button for "AND" conditions and the **"+ OR"** button for "OR" conditions to combine multiple criteria.
 3. Apply your desired filters by clicking **"Apply"** or **"Reset"** them to view the complete list.
 
+### 3. Searching with Operators and Wildcards ​
+
+The search box does more than plain text matching. Click the search icon at the top right of the list to open it, then use the **Search Help** link underneath the field to see every operator and field the products table understands.
+
+A plain query with no operator searches across all text fields. To target one field, write 
+```
+field operator value
+```
+
+:
+
+- **Comparison operators:** 
+```
+>
+```
+
+, 
+```
+<
+```
+
+, 
+```
+>=
+```
+
+, 
+```
+<=
+```
+
+, 
+```
+=
+```
+
+, and 
+```
+!=
+```
+
+ work on numeric fields, for example 
+```
+id > 5
+```
+
+ or 
+```
+id :: 1-10
+```
+
+ for a range.
+- **Wildcards:** With 
+```
+=
+```
+
+ and 
+```
+!=
+```
+
+ you can use 
+```
+*
+```
+
+ to match part of a value. 
+```
+sku = ABC*
+```
+
+ finds SKUs that start with 
+```
+ABC
+```
+
+, 
+```
+sku = *123
+```
+
+ finds SKUs that end with 
+```
+123
+```
+
+, and 
+```
+sku = *pro*
+```
+
+ finds any SKU that contains 
+```
+pro
+```
+
+.
+- **Description search:** 
+```
+description = *course*
+```
+
+ matches the product's long description, which is handy when the title alone does not tell products apart.
+
 ## Pagination ​
 
 At the bottom of the product list, pagination controls allow you to navigate through larger product catalogs.

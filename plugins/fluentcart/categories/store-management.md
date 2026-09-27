@@ -533,8 +533,8 @@ FluentCart allows you to manually create new orders directly from your WordPress
 - **Customer Information:** Choose an existing customer from your store or you may create new.
 - **Products:** Search for and add the products the customer is purchasing. - You can select product variants if applicable.
 - Specify the quantity for each product.
-- **Have a Coupon:** If a discount coupon applies to this manual order, you can enter and apply it here.
-- **Add Discount:** If you want to add a discount for the order, click the Add Discount option.
+- **Have a Coupon:** If a discount coupon applies to this manual order, you can enter and apply it here. Applying a coupon removes any manual discount already added to the order.
+- **Add Discount:** If you want to add a discount for the order instead of a coupon, click the **Add Discount** option to enter a discount value and an optional reason. This option is only available when no coupon is applied — see [Manual Discounts and Tax](#manual-discounts-and-tax) below.
 - **Add Shipping Cost:** Manually you can add shipping charges for physical products.
 - **Review Totals:** Ensure the order subtotal and total amount are correct after adding products and any discounts/shipping.
 - **Notes:** Click the **Notes** icon to add any private notes or comments relevant to the order.
@@ -545,6 +545,26 @@ FluentCart allows you to manually create new orders directly from your WordPress
 - Generating a custom payment link to send to the customer for online payment.
 - Processing payment directly if you have integrated payment gateways.
 5. **Finalize Order:** Once all details are correct and the payment method is selected, click the **Save** button finalize the order.
+
+## Manual Discounts and Tax ​
+
+A coupon and a manual discount can't be on the same order at the same time: the **Add Discount** option is hidden whenever a coupon is applied, and applying a coupon while a manual discount is set removes that discount.
+
+Coupons and manual discounts also affect the order total differently:
+
+- **Coupons** are applied at the product/line-item level, reducing each affected item's taxable amount before tax is calculated.
+- **Manual discounts** are applied as a single order-level amount subtracted from the subtotal. They do not reduce the product taxable base or recalculate product tax — tax stays based on the full product amount.
+
+**Example:**
+
+|  | Amount |
+| --- | --- |
+| Product Subtotal | €100 |
+| Tax | €20 |
+| Manual Discount | -€10 |
+| Total | €110 |
+
+This is FluentCart's current calculation behavior — the €20 tax isn't reduced by the €10 manual discount, so it's worth accounting for when discounting a taxable order manually.
 
 Manual Order Use Cases
 
@@ -564,9 +584,15 @@ Manual order creation is great for:
 
 FluentCart provides robust functionality to edit an order even after it has been placed. This allows you to make necessary adjustments such as adding or removing products, changing quantities, applying coupons, or modifying shipping costs.
 
-Returning to Processing Status
+When Editing Is Disabled
 
-If an order was marked as "Completed" but needs editing, you can use the "Back to processing" option from the "More Actions" dropdown on the Order Details page to revert its status and enable editing.
+The **Edit** button is disabled, with an explanatory tooltip, whenever any of the following is true:
+
+- The order has already been **paid** — *"Order cannot be edited once paid."*
+- The order's status is **Completed**, **Archived**, or **Canceled** — *"Order cannot be edited once it is {status}."*
+- The order is a **subscription** order — *"Subscription Order cannot be edited."*Returning to Processing Status
+
+If a Completed order needs editing, you can use the "Back to processing" option from the "More Actions" dropdown on the Order Details page to revert its status to Processing. This only reverts the order **status** — it does not change the order's payment status. If the order is already paid, editing stays disabled afterward; this action only restores editability for a completed order that isn't marked as paid.
 ## Entering Edit Mode ​
 
 1. Navigate to the **Order Details** screen for the specific order you wish to edit.
@@ -601,6 +627,8 @@ You can apply or modify coupon codes for the order:
 2. Enter the coupon code in the provided field.
 3. Click **"Apply"**.
 
+Applying a coupon removes any manual discount already added to the order — see [Adding a Manual Discount](#_5-adding-a-manual-discount) below.
+
 ### 4. Adding Shipping Costs ​
 
 For physical products, you can manually add or adjust shipping costs:
@@ -608,6 +636,17 @@ For physical products, you can manually add or adjust shipping costs:
 1. Locate the **"Add Shipping"** option in the financial summary area.
 2. Enter the desired shipping amount.
 
+### 5. Adding a Manual Discount ​
+
+You can apply an order-level discount instead of a coupon. This option is only available when no coupon is applied to the order:
+
+1. Locate the **"Add Discount"** option in the financial summary area.
+2. In the dialog, enter a **Discount value** and, optionally, a **Reason for discount** — customers can see this reason.
+3. Click **"Apply"**. The discount is staged on the order and saved along with your other changes when you click **"Disable Editing"**.
+
+Manual Discounts and Tax
+
+A coupon and a manual discount can't be on the same order at the same time: the **Add Discount** option is hidden whenever a coupon is applied, and applying a coupon while a manual discount is set removes that discount. They also affect tax differently: coupons are applied at the product/line-item level and can reduce that item's taxable amount, while a manual discount is a single order-level amount subtracted from the subtotal — it does not reduce the product taxable base or recalculate product tax. For example, a €100 taxable product with €20 tax and a €10 manual discount still totals €110, with tax unchanged at €20. See [Manual Discounts and Tax](/guide/store-management/orders-management/creating-new-orders#manual-discounts-and-tax) for more detail.
 ## Saving Your Changes ​
 
 After making all necessary modifications:
@@ -897,6 +936,15 @@ On the main **Order Bumps** screen, you can manage all your existing offers:
 ) icon provides options to **Delete** an existing bump offer.
 
 - **Checkout View:** Once active, the offers appear on your store's checkout page, clearly labeled (e.g., **Recommended**) with the title, description, and discount, ready for the customer to accept with a single click.
+
+INFO
+
+Some integrations lock the checkout to a single item, for example a booking that must not be swapped or removed. Bumps stay hidden on those locked checkouts unless the integration explicitly opts in to them, in which case the customer can still accept a matching offer alongside the locked item. Developers can find the 
+```
+fluent_cart/cart/accepts_additional_items
+```
+
+ hook that controls this at [dev.fluentcart.com](https://dev.fluentcart.com/).
 
 ---
 

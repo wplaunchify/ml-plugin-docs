@@ -20,13 +20,92 @@ This section covers the following critical areas:
 - **Pages Setup:** Assign essential FluentCart functionalities (like shop, cart, and checkout) to specific WordPress pages using shortcodes.
 - **Product Page Settings:** Customize how individual products are displayed on your storefront.
 - **Cart & Checkout Settings:** Configure optional settings related to cart display, checkout requirements, and address fields.
+- **Appearance Settings:** Choose whether the storefront keeps FluentCart's colors, inherits your theme's palette, or uses colors you pick, with a live preview.
 - **Payment Settings Overview:** A general overview of available payment gateways and links to their detailed setup guides.
 - **Email Configuration:** Manage and customize automated email communications sent to both administrators and customers.
 - **Roles & Permissions:** Define and assign different user roles with specific access levels within your FluentCart store.
 - **Storage Settings:** Configure where your digital product files and other assets are stored, including local and cloud (S3) options.
 - **Licensing Settings (FluentCart Product License):** Activate your FluentCart plugin license key to ensure regular updates and access to premium features.
+- **Compliance Settings:** Control whether new customer accounts are logged in automatically after creation.
 
 By thoroughly configuring these settings, you can ensure your FluentCart store runs exactly as you intend.
+
+---
+
+## Appearance Settings ​
+
+**Source:** [https://docs.fluentcart.com/guide/settings-configuration/appearance](https://docs.fluentcart.com/guide/settings-configuration/appearance)
+
+# Appearance Settings ​
+
+The **Appearance** tab lets you control the colors of your FluentCart storefront without writing any CSS. Pick whether the shop, product pages, cart, and checkout keep FluentCart's built-in colors, borrow the palette of your active WordPress theme, or use colors you choose yourself, and watch a live preview update as you go.
+
+## Accessing the Appearance Tab ​
+
+1. From your WordPress dashboard, go to **FluentCart > Settings**.
+2. In the left-hand menu, click **Store Settings**. The group expands.
+3. Click **Appearance** to open the tab.
+
+The screen has two halves. On the left, **Where colors come from** holds the three color sources and, when you choose to customize, the individual color pickers. On the right, the **Storefront preview** shows a mock product card, cart, and address form painted with whichever colors are currently selected, so you can judge a change before it touches the live store.
+
+## Choosing Where Colors Come From ​
+
+FluentCart's storefront styles are built on a small set of global colors. Every button, border, input, and panel across the shop, single product page, cart drawer, checkout, and customer dashboard reads from one of them, so changing a global here updates every page that uses it. The three cards at the top of the tab decide where those globals come from. Only one can be active at a time.
+
+### 1. FluentCart's Own Colors ​
+
+This is the default. The storefront keeps the colors FluentCart ships with, and nothing extra is written to your pages. Choose it when you are happy with the stock look, or when you want to undo any theming and return to a clean slate.
+
+### 2. Inherit From the Active Theme ​
+
+Select this card to rebuild the storefront palette from your active WordPress theme. FluentCart reads the colors the theme publishes, maps them onto the storefront's surfaces, text, accent, and button roles, and derives the in-between tones no theme declares on its own, such as hairlines, dividers, muted captions, hover tints, and placeholder text. Button text is chosen for contrast against the button color, so a pale brand color still produces readable buttons. If you later switch themes, the storefront follows the new theme automatically.
+
+The card's description tells you how many palette colors your current theme provides. In the example below, Twenty Twenty-Five publishes seven, and the preview on the right immediately picks up the theme's black buttons and yellow accent.
+
+INFO
+
+Some themes, including Astra, Kadence, and GeneratePress, publish their palette as CSS variables rather than as fixed colors. FluentCart passes those straight through and your storefront renders them correctly, but the admin preview cannot resolve them, so it shows FluentCart's own colors in their place and tells you why. If a theme publishes nothing FluentCart can use, the storefront simply keeps its default colors.
+### 3. Customize ​
+
+Select **Customize** to pick the colors yourself. The card expands to reveal twenty color pickers, grouped by what they control. Only the colors you actually set are written to the storefront; any picker you leave empty keeps FluentCart's default for that surface.
+
+The groups and what each color drives:
+
+- **Text**- **Primary text:** Product titles, prices, and headings.
+- **Secondary text:** Descriptions, captions, and inactive navigation.
+- **Active text:** The selected step and active links in the checkout.
+- **Backgrounds and borders**- **Primary background:** The brand color behind active states and selected controls.
+- **Secondary background:** The tinted panels behind the shop grid and checkout summary.
+- **Border:** Card outlines, input borders, and hairlines.
+- **Active border:** The outline on a selected variant or payment method.
+- **Secondary active border:** The softer active outline used inside the modal checkout.
+- **Divider:** The lighter rules between rows and sections.
+- **Card background:** The surface behind product cards and panels.
+- **Buttons**- **Button background:** Place Order, Buy Now, and every primary action in the store.
+- **Button text:** The label color on those primary buttons.
+- **Secondary button background**, **Secondary button text**, **Secondary button border**, and **Secondary button hover:** Add to Cart and the other outlined buttons.
+- **Form inputs**- **Input background**, **Input text**, **Placeholder text**, and **Disabled input background:** The fields on the checkout, address forms, and customer dashboard.
+
+To set a color, click a picker's swatch to choose visually, or type a hex value such as 
+```
+#00009F
+```
+
+ directly into its text field. Either way the preview repaints as soon as the value is valid, so you can see a button or border change before saving. Click the **×** on a picker to clear that single color.
+
+To start over, click the **Reset all colors** icon (the circular arrow) at the top right of the picker list. It empties every picker, which is the same as never having set one. Like every other change on this tab, the reset takes effect when you save.
+
+## Saving Your Settings ​
+
+Click **Save** at the top right of the screen to apply your changes. The storefront picks up the new colors on the next page load, including the modal checkout, and the settings persist until you change them again.
+
+Here is the same product page before and after switching to **Customize** with a brand blue set for the button background, primary background, active text, and active border:
+
+INFO
+
+The Appearance tab covers the global colors that the rest of the storefront cascades from. If you need to restyle a single element, or adjust spacing, radius, or typography, you can still override FluentCart's [CSS variables](/guide/customization-and-themes/advanced-customization-using-css) directly. Anything you set on this tab is written to the page as those same variables, so your custom CSS can build on top of it.When you accept card payments through the embedded [Stripe](/guide/payments-checkout/connecting-payment-gateways/stripe-settings) checkout, its payment form picks up your input background, input text, and primary background colors too, so it doesn't look out of place next to the rest of your branded checkout.
+
+Your storefront now reflects the colors you chose, and every page that shares them stays consistent.
 
 ---
 
@@ -58,6 +137,9 @@ This is a crucial setting that defines how customer accounts are handled during 
 - **Give checkbox to create account on checkout page:** This adds an "Create an account?" checkbox to the checkout page. It gives customers the choice, balancing the benefits of account creation with the convenience of a faster checkout.
 - **No need to create account for onetime purchases:** This enables a full **"guest checkout"** experience for non-subscription products. It offers the lowest possible friction for new or one-time buyers and can significantly reduce cart abandonment.
 
+INFO
+
+Whichever mode creates the account, whether it's signed in right away or asked to set a password first is a separate choice. See [Compliance Settings](/guide/settings-configuration/compliance-settings).
 #### Hide coupon field on checkout ​
 
 Enable this option to remove the coupon code input field from the checkout page. This can be a strategic move to prevent customers from leaving your site to search for discount codes, a common cause of cart abandonment.
@@ -159,6 +241,37 @@ Always understand the two options available for most fields:
 
 - **Toggle Switch**: Use this to make a field visible or **hidden** on your checkout page.
 - **Required Checkbox**: If a field is toggled on, checking this box forces the customer to fill it out before completing their purchase. If unchecked, the field is **optional**.
+
+---
+
+## Compliance Settings ​
+
+**Source:** [https://docs.fluentcart.com/guide/settings-configuration/compliance-settings](https://docs.fluentcart.com/guide/settings-configuration/compliance-settings)
+
+# Compliance Settings ​
+
+The **Compliance** tab holds settings that affect how customer accounts behave for privacy and security purposes. Right now, it controls whether a new customer is signed in automatically the moment their account is created.
+
+## Accessing Compliance Settings ​
+
+1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
+2. Select the **Compliance** tab from the left-hand sidebar.
+
+## Configuring Compliance Settings ​
+
+### 1. Login After Account Creation ​
+
+FluentCart creates a customer account either when someone registers directly or when a guest checkout completes and account creation is turned on. This setting decides what happens to that customer right after.
+
+- **Don't auto login after account creation:** This is the default. The customer sees a message telling them to check their email, set a password, and log in themselves before they can use the account.
+- **Enable auto login after account creation:** The customer is signed in immediately and taken straight to their profile, matching FluentCart's previous behavior.
+
+INFO
+
+Requiring a customer to set their own password before first login is a common compliance requirement, since it proves they, and not whoever happened to check out, control the account. Turn auto login back on if your store prioritizes a frictionless checkout over that extra step.
+## Saving Your Settings ​
+
+After making changes, click the **Save Settings** button to apply your configuration.
 
 ---
 
@@ -1626,7 +1739,7 @@ Storage configuration now lives under its own dedicated **Storage** menu in Flue
 
 # Store Settings ​
 
-The **Store Setup** tab is where you configure the fundamental information about your FluentCart store: your store's name, logo, physical address, business details, currency, payment view, and units of measurement. These values feed into receipts, emails, checkout, shipping calculations, and tax handling, so it's the first screen to configure on a fresh install.
+The **Store Setup** tab is where you configure the fundamental information about your FluentCart store: your store's name, logo, physical address, business details, currency, payment view, date and time display, and units of measurement. These values feed into receipts, emails, checkout, shipping calculations, and tax handling, so it's the first screen to configure on a fresh install.
 
 ## Accessing the Store Setup Tab ​
 
@@ -1675,6 +1788,17 @@ Below the address fields you'll find the **Business Details** block — your leg
 ```
 
  smart tag for email templates. Use this field if you collect EU VAT — see [Configuring European Union (EU) VAT](/guide/tax-&-duties/european-union-vat) for how the VAT ID ties into reverse-charge handling.
+- **Seller Tax ID:** Any other tax registration number your store operates under, such as a US EIN, an Australian ABN, or a GST number. It is available to receipts, invoices, and email templates through the 
+```
+{{settings.seller_tax_id}}
+```
+
+ and 
+```
+{{order.store_seller_tax_id}}
+```
+
+ smart tags, and FluentCart Pro includes it in the seller block of PDF invoices.
 
 ### 5. Currency ​
 
@@ -1691,7 +1815,39 @@ The **Payment View** setting controls how payment methods appear to customers on
 - **Logo:** Displays each payment method as its brand logo (for example, the PayPal logo rather than the word "PayPal"). Best for visually rich checkouts.
 - **Radio:** Displays each payment method as a labelled radio button. Cleaner and more compact, useful when you want the checkout to stay text-driven.
 
-### 7. Units of Measurement ​
+### 7. Date & Time Format and Timezone ​
+
+Every date FluentCart shows your customers and your team runs through these two settings: order emails, invoices and PDF receipts, the thank-you page, subscription and license dates, the customer dashboard, and the admin order and report screens.
+
+- **Date & Time Format:** Controls how dates and times are written. - **WordPress:** Follows the date and time formats you set under **Settings > General** in WordPress. Month and weekday names are translated into your site language, and the field order follows your format, so a German store shows 
+```
+16. August 2026 15:30
+```
+
+ rather than an English-ordered date. This is the default.
+- **Smart:** Keeps FluentCart's own compact style, for example 
+```
+Aug 16, 2026 03:30 PM
+```
+
+, no matter what WordPress is set to.
+- **Timezone:** Controls which timezone dates are displayed in. - **Browser:** Admin screens and the customer dashboard show dates in the viewer's own timezone. Emails and invoices are rendered in the timezone captured at checkout, so a customer in Sydney sees their order time as it happened for them. This is the default.
+- **WordPress:** Uses the site timezone from **Settings > General** everywhere.
+
+INFO
+
+If your store previously showed dates like 
+```
+Aug 16, 2026
+```
+
+, switching to **WordPress** changes them to whatever your WordPress format produces (for most English sites that is 
+```
+August 16, 2026
+```
+
+). Pick **Smart** if you want to keep the shorter style. Either way, the change applies to newly rendered emails and pages; documents that were already sent do not change.
+### 8. Units of Measurement ​
 
 These two units are used across the product editor, package definitions, and shipping calculations.
 

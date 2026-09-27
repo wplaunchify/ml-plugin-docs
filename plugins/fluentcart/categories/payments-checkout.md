@@ -1051,6 +1051,9 @@ FluentCart gives you two different ways for customers to pay:
 - **Embedded checkout (Recommended):** This keeps the customer on your website. It’s a customizable block that lets you control the design.
 - **Stripe Hosted checkout:** This sends the customer to a secure page managed by **Stripe**. This is great for high-volume stores or if you want Stripe to handle all the complex security rules for you.
 
+INFO
+
+Embedded checkout's card fields automatically match your storefront's [Appearance](/guide/settings-configuration/appearance) colors when you use **Inherit from the active theme** or **Customize**. If your theme only publishes its palette as CSS variables, which Stripe's payment form cannot read, the fields keep Stripe's own default look instead.
 ### Hosted Checkout Customizations ​
 
 If you pick Stripe Hosted checkout, an additional control appears to help you tailor the payment page.
