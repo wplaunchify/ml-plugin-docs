@@ -232,7 +232,7 @@ These reference guides should not be considered instructive for specific problem
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -240,7 +240,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -870,7 +870,7 @@ $order
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -878,7 +878,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -1279,7 +1279,7 @@ As a result, it is not necessary cache the parent orders for a subscription.
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -1287,7 +1287,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -1404,7 +1404,7 @@ true
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -1412,7 +1412,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -1914,7 +1914,7 @@ More information about using these commands can be found on the Action Scheduler
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -1922,7 +1922,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -2026,7 +2026,7 @@ With that in place, your customers should see this notice confirming they do wan
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -2034,7 +2034,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -2554,7 +2554,7 @@ wcs_get_subscription()
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -2562,7 +2562,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -2656,7 +2656,7 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -2664,7 +2664,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -2684,7 +2684,7 @@ This guide provides a technical overview of the Failed Recurring Payment Retry s
 
 We recommend reading the [Store Owner Guide to the Failed Payment Retry System](https://woocommerce.com/document/subscriptions/failed-payment-retry/) for a non-technical introduction to the retry system.
 
-**Note:** This is a **Developer level** doc. If you are unfamiliar with code/templates and resolving potential conflicts, select a [WooExpert or Developer](https://woocommerce.com/customizations/) for assistance. We are unable to provide support for customizations under our [Support Policy](https://woocommerce.com/support-policy/).
+**Note:** This is a **Developer level** doc. If you are unfamiliar with code/templates and resolving potential conflicts, select a [WooExpert or Developer](https://woocommerce.com/development-services/) for assistance. We are unable to provide support for customizations under our [Support Policy](https://woocommerce.com/support-policy/).
 
 ## Retry System Components
 
@@ -3517,7 +3517,7 @@ payment_retry
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -3525,7 +3525,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -4330,7 +4330,7 @@ woocommerce_update_options()
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -4338,7 +4338,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -5244,7 +5244,7 @@ Get the total sign-up fee amount charged at the outset of the subscription, if a
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -5252,7 +5252,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -5611,7 +5611,7 @@ $user_id
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -5619,7 +5619,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -5842,7 +5842,7 @@ false
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -5850,7 +5850,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -6088,7 +6088,7 @@ $order_date
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -6096,7 +6096,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -6238,7 +6238,7 @@ As a result, the **Recurring Totals** section was chosen as it was the most conc
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -6246,7 +6246,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -6403,7 +6403,7 @@ For example, the 3 screenshots below show:
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -6411,7 +6411,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -7375,7 +7375,7 @@ PHP Fatal error
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -7383,7 +7383,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -7804,7 +7804,7 @@ add_action( 'wcs_save_other_payment_meta', 'save_meta_in_comments', 10, 4 );
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -7812,7 +7812,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -7864,7 +7864,7 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -7872,7 +7872,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -8077,7 +8077,7 @@ function apply_recurring_fees( $is_recurring, $fee, $cart ) {
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -8085,7 +8085,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -8174,7 +8174,7 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -8182,7 +8182,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -8309,7 +8309,7 @@ add_filter( 'wcs_upgrade_subscription_meta_to_copy', 'eg_do_not_copy_tracking_co
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -8317,7 +8317,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 

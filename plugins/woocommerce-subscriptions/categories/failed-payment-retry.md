@@ -152,7 +152,9 @@ After the fifth retry is processed, the renewal order is marked *Failed* and th
 
 [↑ Back to top](#doc-title)
 
-To help you track automatic failed payment retries, Subscriptions displays retry information in a different places throughout the WooCommerce administration area. Let’s take a look at each one:
+To help you track automatic failed payment retries, Subscriptions displays retry information in a different places throughout the WooCommerce administration area.
+
+Let’s take a look at each one:
 
 ### Retry Date on Edit Subscription Screen
 
@@ -191,7 +193,7 @@ Subscriptions provides [two](https://woocommerce.com/document/subscriptions/subs
 
 **Why customers don’t receive an email after the first payment failure**:
 
-The [first retry (retry rule 0) is designed to address](https://woocommerce.com/document/subscriptions/failed-payment-retry/#default-retry-rules) any temporary technical issues that don’t need or require the customer’s involvement to fix. Because of of this, the first retry attempt happens 12 hours after the first payment.
+The [first retry (Retry Rule 1) is designed to address](https://woocommerce.com/document/subscriptions/failed-payment-retry/#default-retry-rules) any temporary technical issues that don’t need or require the customer’s involvement to fix. Because of of this, the first retry attempt happens 12 hours after the first payment.
 
 This short timeframe doesn’t give the customer much time to log in and fix any issues, such as paying off a credit card balance. The retry system is also unsure after first failure that the issue can be addressed by the customer, as it may be other factors. Because of this, the customer is not yet contacted.
 
@@ -221,7 +223,7 @@ For this action to be displayed, these requirements must be met:
 - Order must have a *Payment Method* set
 - Payment method must support [payment date modifications](https://woocommerce.com/document/subscriptions/payment-gateways/#advanced-features)
 - Subscription must require automatic payments, not [manual renewals](https://woocommerce.com/document/subscriptions/renewal-process/)
-- Order status must be *Failed* or the status set by the [last retry rule](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-3)
+- Order status must be *Pending* or *Failed*, or the status set by the [last retry rule](https://woocommerce.com/document/subscriptions/failed-payment-retry/#section-3)
 
 ### Manual Customer Payment during Automatic Retry Process
 
@@ -243,57 +245,15 @@ The exception to this is when the **subscription contains an**[aligned subscript
 
 If you want the next payment date to always be calculated from the last scheduled payment date, install [WooCommerce Subscriptions – Preserve Billing Schedule](https://github.com/Prospress/woocommerce-subscriptions-preserve-billing-schedule).
 
-## How to Stop Subscription Renewal Payment Retry
+## When a renewal payment retry looks stuck
 
 [↑ Back to top](#doc-title)
 
-In rare situations, when payment method on file doesn’t work, and payment retry is enabled, the renewal retry will loop and get stuck. To stop and reset the payment retry schedule, at the moment it’s only possible by changing the value for 
-```
-_schedule_payment_retry
-```
+During an automatic payment retry, Subscriptions displays a Renewal Payment Retry date in place of Next Payment. The date alone does not confirm that a retry is still pending or that the retry system is stuck. Subscriptions uses five default retry rules over seven days; custom rules can change the schedule.
 
- **meta_key** in the database.
+If the displayed retry date is overdue or conflicts with the renewal order, open the latest renewal order and review its Automatic Failed Payment Retries box and order notes. Confirm whether the order is still unpaid and whether a retry is pending. Do not edit subscription data in the database or change order statuses just to restore the Next Payment field.
 
-Here is an example of next payment retry we want to reset:
-
-![Renewal Payment Retry in 12 hours](https://woocommerce.com/wp-content/uploads/2021/06/subscription-retry-stuck-3392.png?w=950)Renewal Payment Retry in 12 hours
-
-To reset the “Renewal Payment Retry: in 12 hours”, which will bring back the **Next Payment** date field, go to phpMyAdmin.
-
-Search for 
-```
-_schedule_payment_retry
-```
-
- **meta_key**, within **wp_postmeta** table.
-
-Look for the Subscription ID of the subscription we want to reset, in this example is **3392**, and then click edit to change the **meta_value** from 
-```
-2021-06-24 15:30:09
-```
-
- to 
-```
-0
-```
-
-.
-
-![Modifying the 'meta_value' to alter the payment retry schedule.](https://woocommerce.com/wp-content/uploads/2021/06/meta-key-subscription-retry.png?w=950)Editing the meta_value for schedule payment retry
-
-When the **meta_value** of the **meta_key** 
-```
-_schedule_payment_retry
-```
-
- is set to 
-```
-0
-```
-
-, the **Renewal Payment Retry** field is removed and the **Next Payment** date field is brought back.
-
-!["Next Payment" date field ](https://woocommerce.com/wp-content/uploads/2021/06/subscription-retry-removed.png?w=950)“Next Payment” date field
+Before stopping a retry, decide how to resolve the unpaid renewal. If the retry record, schedule, and subscription details do not match, ask a developer to investigate. See the [Cancel a pending subscription renewal payment retry](https://woocommerce.com/document/cancel-a-pending-subscription-renewal-payment-retry/) for details about stopping a pending retry.
 
 ## Questions and support
 
@@ -317,7 +277,7 @@ _schedule_payment_retry
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -325,7 +285,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -452,7 +412,7 @@ After 5 tries the Order status changes to *Failed*. The subscription remains *On
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -460,7 +420,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 

@@ -225,7 +225,7 @@ If you are a developer and want to add support for automatic subscription paymen
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -233,7 +233,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -249,7 +249,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 ## No Available Payment Gateways Warning
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 During the checkout process, Subscriptions will offer a warning if there are no gateways enabled that support Subscriptions and [manual payments](https://woocommerce.com/document/subscriptions/renewal-process/#section-2) are not accepted. This message appears on the checkout page in the section where there would be payment gateways.
 
@@ -261,13 +261,13 @@ For customers, the message will inform them that there are no available payment 
 
 ## Add a Payment Gateway
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 If there are no payment gateways installed yet, WooCommerce’s [guide on choosing the right payment option](https://woocommerce.com/document/premium-payment-gateway-extensions/) for your store is a good place to start. Woo Subscriptions also has a [guide on payment methods](https://woocommerce.com/document/subscriptions/payment-gateways/) that support different Subscriptions features.
 
 ## Enable a Payment Gateway
 
-[↑ Back to top](#doc-title)
+[↑ Nach oben](#doc-title)
 
 There are many [payment gateways](https://woocommerce.com/document/subscriptions/payment-gateways/) that are available that support Subscriptions and [automatic payments](https://woocommerce.com/document/subscriptions/payment-gateways/#section-1).
 
@@ -291,7 +291,7 @@ When Woo Subscriptions is active, a column will appear in the payment methods ta
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -299,7 +299,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -404,7 +404,7 @@ To accept payment in another currency:
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -412,7 +412,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
@@ -541,7 +541,7 @@ To change an old subscription to [PayPal Payments](https://woocommerce.com/produ
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -549,7 +549,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 

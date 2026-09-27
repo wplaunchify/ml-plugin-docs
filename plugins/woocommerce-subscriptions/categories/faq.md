@@ -30,11 +30,11 @@ For technical questions about integrating software with Subscriptions, refer to 
 
 ## Subscriptions Features
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Can Subscriptions do [insert-feature]?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 There are many great ideas for how to use a subscription to create a novel business model. It is great to see so much variety in the eCommerce world, but as Subscriptions is an off-the-shelf product, it can not possibly support every use case.
 
@@ -42,11 +42,11 @@ If you don’t see a feature discussed in this FAQ or listed in the [store manag
 
 If you want a feature not already available, post the idea through the [Woo Subscriptions feature request page](https://woocommerce.com/feature-requests/woocommerce-subscriptions/). Once a feature gets enough votes, it will be added to Subscriptions. Features with higher votes are also be given priority.
 
-If the feature you require doesn’t have broad appeal, the good news is, Subscriptions makes it possible for an expert WordPress or WooCommerce developer to add just about any feature. If you need an expert developer to add a feature to Subscriptions, consider working with a [WooExpert](https://woocommerce.com/customizations/).
+If the feature you require doesn’t have broad appeal, the good news is, Subscriptions makes it possible for an expert WordPress or WooCommerce developer to add just about any feature. If you need an expert developer to add a feature to Subscriptions, consider working with a [WooExpert](https://woocommerce.com/development-services/).
 
 ### How can I ship physical products on a different schedule to the payment schedule?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To help manage shipping on subscriptions to physical goods, Woo Subscriptions [generates a renewal order](https://woocommerce.com/document/subscriptions/renewal-process/) for each payment. That means if you want to ship a product monthly, you should set the [payment schedule](https://woocommerce.com/document/subscriptions/store-manager-guide/#payment-schedule) to bill monthly.
 
@@ -76,11 +76,11 @@ That said, we are aware of this feature request and intend to offer it in a futu
 
 ## Subscription Product Management
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### What does the deprecation message on the Simple and Variable Subscription product types mean?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 On the Subscriptions settings page (**WooCommerce > Settings > Subscriptions**), under **Subscription Product Creation**, you may notice a **deprecation message** relating to the **Simple Subscription** and **Variable Subscription** product types. This does not mean the product types are being removed, and **nothing will break**.
 
@@ -91,7 +91,7 @@ On the Subscriptions settings page (**WooCommerce > Settings > Subscriptions**),
 
 ### How can I offer a subscription with a variable billing period?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To offer customers a choice of billing period on a subscription, you can use either:
 
@@ -113,13 +113,13 @@ With WooCommerce Subscriptions, you can offer both one-time purchase and subscri
 
 ### How can I enable customers to add additional services to their subscription?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 We have a use case that explains how to handle this scenario: a [coffee subscription with charitable donation](https://woocommerce.com/document/use-case-coffee-subscription/). This additional service will be included in the subscription and will automatically renew as part of the subscription.
 
 ### How can I enable customers to add a one-time addition to their subscription?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 For example, you sell subscriptions for coffee; this month, you’d like to offer the ad-hoc option to add a bag of coffee at an additional price. It would only affect this one renewal of the subscription.
 
@@ -127,13 +127,13 @@ There is no straightforward way to handle this, and it requires customization. W
 
 ### Why are subscription payments charged late (or early) with PayPal?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Unfortunately, the above only applies to subscriptions where Woo Subscriptions controls the billing schedule. When creating a subscription with PayPal, PayPal takes control of the schedule for charging recurring payments.
 
 ### How is the minimum price for a variable subscription calculated?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 When displaying a variable subscription’s price on the store page, Subscriptions displays a “*From: $x / period*” price. This the lowest possible price at which a customer can access a subscription.
 
@@ -172,7 +172,7 @@ So for this example, if the second variation has the higher ID, Subscriptions wi
 
 ### If a customer is subscribed to a downloadable product, do they have access to that product forever?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If you create a subscription product with downloadable files associated with it, the customer will only have access to the files while their subscription is *active* or *pending-cancel*.
 
@@ -182,7 +182,7 @@ The *Download expiry* field for the product should be left blank, i.e. **“Neve
 
 ### How can I create a subscription where customers pay the entire bill up-front?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To charge the entire subscription amount up-front, there are two options:
 
@@ -199,7 +199,7 @@ A better method to handle this situation is also a [popular feature request](htt
 
 ### How can I charge a payment at a custom interval?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Note: This is a **Developer level** doc. If you are unfamiliar with code/templates and resolving potential conflicts, select a [WooExpert or Developer](https://woocommerce.com/search/?collections=service) for assistance. We are unable to provide support for customizations under our [Support Policy](https://woocommerce.com/support-policy/).
 
@@ -243,7 +243,7 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 
 ### How can I customize subscription price strings?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 There is currently a [free mini-plugin](https://github.com/Prospress/woocommerce-subscriptions-custom-pricestring) that will allow you to customize the price string from the admin area.
 
@@ -263,7 +263,7 @@ If you are a WordPress developer, you can use the
 
 ### How can I offer a longer subscription length?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Out-of-the-box, Woo Subscriptions allows store managers to sell subscriptions that last only as long as the longest length supported by PayPal Standard. Detailed information for developers on these limitations can be found in the [PayPal developer documentation](https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/#recurring-payment-variables).
 
@@ -306,7 +306,7 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 
 ### Why can a subscription product not be deleted or have its type changed?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Subscription products can be trashed, but any subscription product that is associated with an order (i.e. has been purchased by a customer) can not be *permanently deleted* or have its product type changed. This is to prevent causing errors with WooCommerce and other WooCommerce extensions that expect a product to exist and remain a subscription product type when performing some of the operations related to a subscription, like processing renewal payments.
 
@@ -320,23 +320,23 @@ This applies to simple subscriptions, variable subscriptions and subscription va
 
 ## Subscription Management
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Will a scheduled subscription charge go through even if the order status is “on-hold”?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Yes, a scheduled subscription charge will still go through even when the [original order](https://woocommerce.com/document/subscriptions/orders/#section-1) used to purchase the subscription has a status of *on-hold*. A store manager needs to put the **subscription** *on-hold* to freeze payments on that subscription. More information about the differences between an order and a subscription can be found in this guide about the differences between [subscriptions and orders](https://woocommerce.com/document/subscriptions/orders/#section-1).
 
 ### How can I manually trigger a renewal payment (or a renewal order email)?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To trigger an off-schedule renewal and therefore trigger each step in the renewal process, like sending renewal order email, follow the steps outlined in the guide for [testing renewal payments using the WCS_DEBUG flag](https://woocommerce.com/document/testing-subscription-renewal-payments/).
 
 ### Why are dates displayed incorrectly?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 You may find when viewing the [Manage Subscriptions](https://woocommerce.com/document/subscriptions/store-manager-guide/#section-12) page that some dates are displayed a few hours or more off the actual date. This usually means a plugin or custom code is changing your site’s timezone.
 
@@ -351,7 +351,7 @@ date_default_timezone_set
 
 ### How can I stop renewals temporarily?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If you want to temporarily disable renewals, including recurring payments, from being processed for a certain period of time, for example, while testing upgrades or running other maintenance tasks, use the [DISABLE_WP_CRON constant](http://codex.wordpress.org/Editing_wp-config.php#Disable_Cron_and_Cron_Timeout).
 
@@ -359,7 +359,7 @@ This will not work with **PayPal** or payment gateways which manage the billing 
 
 ### What is the end_of_prepaid_term hook?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 When a subscription is cancelled, either by the store manager or subscriber, its status will be changed immediately and no payments will be charged in the future. However, the customer has already paid for the subscription’s current term. For sites selling virtual subscriptions, like memberships, it’s important to provide access to the virtual good for the entire prepaid term.
 
@@ -379,7 +379,7 @@ For example, a customer purchases a monthly subscription on the 15th March. On t
 
 ### Why are my customers being charged twice when a subscription renews?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 This usually shows up as just one order on the live site, but the customer is billed twice through the payment gateway.
 
@@ -393,7 +393,7 @@ Alternatively, regenerate the payment gateway API key and update it on the live 
 
 ### Why do renewal orders automatically fail and the subscription’s status is changed to cancelled?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 This usually means that manual orders have a time limit that is too short for offline payment gateways to process. If manual renewals are enabled and the store allows offline payments (e.g., with BACS or check), make sure you check the [Hold Stock](https://href.li/?https://docs.woothemes.com/document/subscriptions/renewal-process/#section-7)optio[n, as that will limit the time it takes](https://href.li/?https://docs.woothemes.com/document/subscriptions/renewal-process/#section-7) for the payment to happen.
 
@@ -418,11 +418,11 @@ Hidden
 
 ## Orders Related to Subscriptions
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Why are subscriptions automatically cancelled after a parent order is cancelled?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 WooCommerce 2.0 introduced a new *Hold stock* setting. This setting allows you to set a time limit, after which an unpaid, pending order will be cancelled. When an order used to purchase subscription products is cancelled, the subscription or subscriptions associated with that order are also cancelled. This means the *Hold stock* setting can lead to unexpected cancellation of subscriptions.
 
@@ -436,7 +436,7 @@ Subscriptions are only cancelled when a *parent* order is cancelled. A subscript
 
 ### How do I link a renewal order to a subscription?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 In cases where a site is restored from backup, it is possible that a renewal order is unlinked from the subscription.
 
@@ -484,11 +484,11 @@ _subscription_renewal_order_ids_cache
 
 ## Shipping & Coupons
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### How is shipping calculated for physical product subscriptions?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If you’re selling a subscription to items that need shipping, shipping costs are added to the recurring payment. For example, a $5/month subscription with a $2 shipping fee would be $7/month.
 
@@ -502,7 +502,7 @@ This system applies to all the shipping methods included with WooCommerce, inclu
 
 ### Why do I see an ‘Invalid recurring shipping method’ error when trying to checkout with my subscription products?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 If you are seeing an “Invalid recurring shipping method” error, the most likely reason is that you have a plugin which isn’t compatible with Woo Subscriptions. Here are some troubleshooting steps you can take to identify the cause of the error:
 
@@ -514,11 +514,11 @@ If you are seeing an “Invalid recurring shipping method” error, the most lik
 
 ## Payment Gateways
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Does Subscriptions support my payment gateway?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To see a complete overview of the official WooCommerce payment gateways which support Subscriptions, please read over the [Subscription Payment Gateways](https://woocommerce.com/document/payment-gateways/) guide.
 
@@ -526,13 +526,13 @@ If you do not see your payment gateway listed there, it doesn’t necessarily me
 
 ### Can I change the account used for a payment gateway?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Yes, if you want to keep the same payment gateway but you have changed account, for example due to change of ownership, then it is possible to still use the same payment gateway on your site but please contact the gateway themselves and ask about transferring/migrating the customer information to your new account, then update any API keys or credentials in your WooCommerce payment gateway settings.
 
 ### Why only one subscription per transaction?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Woo Subscriptions version 2.0 introduced a [multiple subscriptions](https://woocommerce.com/document/subscriptions/multiple-subscriptions/) feature which allows your customers to purchase more than one subscription product in the same transaction.
 
@@ -556,7 +556,7 @@ To learn more about the WP-Cron and Action Scheduler systems take a look at our 
 
 ### How can I have all new subscribers use a new payment gateway while allowing existing subscriptions to continue?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 To force all new customer subscriptions to be created with a new payment gateway, while still having existing subscriber’s recurring payments charged correctly in an old payment gateway, you can simply disable the old payment gateway under the WooCommerce Payment Gateway Settings page.
 
@@ -570,11 +570,11 @@ Switching **existing** customers to the new method is more complicated and if yo
 
 ## PayPal
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### What happens if a customer cancels a subscription purchased with PayPal?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 WooCommerce Subscriptions can sync the subscription status between PayPal and your store. To enable this feature, you must configure PayPal as [explained here](https://woocommerce.com/document/subscriptions/store-manager-guide/#section-15).
 
@@ -584,7 +584,7 @@ If a customer suspends or cancels a subscription with PayPal directly, your site
 
 ### Why does PayPal Standard split the subscription when I add a sign up fee?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 PayPal Standard does not provide a way to charge a sign up fee. As a result, Subscriptions needs to split the initial payment if it includes a sign up fee. It can then apply the initial amount to a separate billing period, which PayPal does support but unfortunately refers to as a *Trial Period*.
 
@@ -594,7 +594,7 @@ This is just one of [PayPal Standard’s limitations](https://woocommerce.com/do
 
 ### Why are subscription payments charged late (or early) with PayPal?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 PayPal batch processes payments, meaning that they do not process payments exactly when they are due. Instead, PayPal will process a payment within 24 hours of when the payment is due.
 
@@ -610,7 +610,7 @@ The only thing a store manager can do to prevent these emails from PayPal is to 
 
 ### Can a customer use a credit card to pay for subscriptions when using the bundled PayPal Standard gateway?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Out-of-the-box, PayPal Standard requires customers to already have a PayPal account or to create one when signing up for a subscription.
 
@@ -622,7 +622,7 @@ If you sign up for Enhanced Recurring Payments, you won’t need to make any cha
 
 ### Can I sell a subscription with a sign-up fee and $0 recurring payment through PayPal?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 PayPal does not support subscriptions with a $0 recurring total i.e. subscriptions where the total cost is charged up-front, but an item is still shipped on a regular basis. This is because PayPal Standard requires a subscription price (the [a3 parameter](https://developer.paypal.com/webapps/developer/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/#recurring-payment-variables)) to be set and to be greater than 0.
 
@@ -630,7 +630,7 @@ WooCommerce Subscriptions will allow you to do this however as it will pass the 
 
 ### Do PayPal eChecks work with Subscriptions?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Woo Subscriptions is able to process automatic subscriptions payments with PayPal using the [eCheck payment method](https://www.paypal.com/us/smarthelp/article/what-is-an-echeck-faq1082).
 
@@ -641,7 +641,7 @@ There are slight differences to how the subscription will be handled with an Ins
 
 ### The cancelled date must occur after the last payment date.
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 When you see this error, the customer cancelled their subscription, but somehow, it became out of sync with PayPal and is now stuck in Pending Cancellation (or another) status.
 
@@ -653,11 +653,11 @@ Once the subscription is cancelled, the notification can be dismissed. It will r
 
 ## Compatibility
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Why are renewals not being processed when W3 Total Cache is installed?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Woo Subscriptions uses WordPress’s built-in [WP-Cron](http://codex.wordpress.org/Category:WP-Cron_Functions) scheduling system for scheduling recurring payments and other renewal related tasks.
 
@@ -667,7 +667,7 @@ If you you need to use a caching plugin, try a well supported plugin like [WP Ro
 
 ### What plugins is WooCommerce Subscriptions incompatible with?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Due to the wide variety of plugins available for WordPress, we’re not able to provide a definitive list of plugins that WooCommerce Subscriptions may be incompatible with. Compatibility can depend on many factors, including specific configurations and use cases.
 
@@ -675,11 +675,11 @@ If you’re using extensions sold on [WooCommerce.com](https://woocommerce.com/)
 
 ## Site Management
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 ### Why do I get a 403 error on Internet Explorer when adding a subscription to the cart?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Under a rare configuration of 
 ```
@@ -707,7 +707,7 @@ Please contact your web host to have this setting changed.
 
 ### How many subscriptions can Subscriptions handle? Does Subscriptions scale?
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 Yes! Subscriptions has been proven to perform at scale on many sites with large subscriber bases. That said, on any specific WordPress site, there may be a threshold where you begin to see problems, these will be different on different sites. They depend a lot on:
 
@@ -726,7 +726,7 @@ We’re always interested in possible performance improvements, and this informa
 
 ## Questions and support
 
-[↑ Nach oben](#doc-title)
+[↑ Back to top](#doc-title)
 
 **Something missing from this documentation? Still have questions and need assistance?**
 
@@ -746,7 +746,7 @@ ipn
 ### WooCommerce Memberships
 
 	
-			by [SkyVerge](https://woocommerce.com/vendor/skyverge)
+			by [SkyVerge](https://woocommerce.com/vendor/skyverge/)
 
 Power your membership association, online magazine, elearning sites, and more with access control to...
 				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
@@ -754,7 +754,7 @@ Power your membership association, online magazine, elearning sites, and more wi
 ### Product Add-Ons
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
 Offer add-ons like gift wrapping, special messages or other special options for your products.
 
