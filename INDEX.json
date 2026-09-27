@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T20:51:37.847Z",
+  "last_updated": "2026-09-27T21:02:15.341Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2433,7 +2433,7 @@
       "slug": "page-links-to",
       "name": "Page Links To",
       "documentation_url": "https://wordpress.org/plugins/page-links-to/",
-      "last_scraped": "2026-09-20T22:46:43.138Z",
+      "last_scraped": "2026-09-27T21:02:15.341Z",
       "page_count": 2,
       "categories": [
         "advanced",
