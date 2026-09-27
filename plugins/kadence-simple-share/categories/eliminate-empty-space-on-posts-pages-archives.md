@@ -1,4 +1,4 @@
-# How To Eliminate Empty Space On Posts Pages And Archives
+# Eliminate Empty Space On Posts Pages Archives
 
 *Category from Kadence Simple Share documentation*
 
@@ -6,7 +6,7 @@
 
 ## How to eliminate empty space on Posts, Pages, and Archives
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/how-to-eliminate-empty-space-on-posts-pages-and-archives/](https://www.kadencewp.com/help-center/docs/kadence-general/how-to-eliminate-empty-space-on-posts-pages-and-archives/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/eliminate-empty-space-on-posts-pages-archives/](https://www.kadencewp.com/help-center/docs/kadence-general/eliminate-empty-space-on-posts-pages-archives/)
 
 When using the **Kadence Theme** and **Kadence Blocks**, you may notice unexpected spacing above, between elements, or below your content. This guide covers common causes of extra spacing and provides solutions to help you achieve a clean and consistent layout.
 

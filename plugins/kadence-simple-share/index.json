@@ -2,10 +2,36 @@
   "plugin_slug": "kadence-simple-share",
   "plugin_name": "Kadence Simple Share",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-  "last_scraped": "2026-09-20T21:05:33.114Z",
-  "total_pages": 25,
-  "failed_urls_count": 6,
+  "last_scraped": "2026-09-27T18:55:11.561Z",
+  "total_pages": 24,
+  "failed_urls_count": 3,
   "sections": [
+    {
+      "title": "Add Edit Wordpress Menus",
+      "slug": "add-edit-wordpress-menus",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/add-edit-wordpress-menus/",
+      "file": "categories/add-edit-wordpress-menus.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add and Edit WordPress Menus",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/add-edit-wordpress-menus/"
+        }
+      ]
+    },
+    {
+      "title": "Author Link Settings",
+      "slug": "author-link-settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/author-link-settings/",
+      "file": "categories/author-link-settings.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Author Link Settings",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/author-link-settings/"
+        }
+      ]
+    },
     {
       "title": "Captcha",
       "slug": "captcha",
@@ -46,19 +72,6 @@
       ]
     },
     {
-      "title": "Classic Kadence Themes And Plugins",
-      "slug": "classic-kadence-themes-and-plugins",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/classic-kadence-themes-and-plugins/",
-      "file": "categories/classic-kadence-themes-and-plugins.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Classic Kadence Themes and Plugins",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/classic-kadence-themes-and-plugins/"
-        }
-      ]
-    },
-    {
       "title": "Classic Themes And Plugins",
       "slug": "classic-themes-and-plugins",
       "url": "https://www.kadencewp.com/help-center/docs/kadence-general/classic-themes-and-plugins/",
@@ -72,67 +85,28 @@
       ]
     },
     {
-      "title": "Clearing Your Browser Data",
-      "slug": "clearing-your-browser-data",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/clearing-your-browser-data/",
-      "file": "categories/clearing-your-browser-data.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Clear Browser Cache and Cookies",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/clearing-your-browser-data/"
-        }
-      ]
-    },
-    {
-      "title": "How To Eliminate Empty Space On Posts Pages And Archives",
-      "slug": "how-to-eliminate-empty-space-on-posts-pages-and-archives",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-eliminate-empty-space-on-posts-pages-and-archives/",
-      "file": "categories/how-to-eliminate-empty-space-on-posts-pages-and-archives.md",
+      "title": "Eliminate Empty Space On Posts Pages Archives",
+      "slug": "eliminate-empty-space-on-posts-pages-archives",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/eliminate-empty-space-on-posts-pages-archives/",
+      "file": "categories/eliminate-empty-space-on-posts-pages-archives.md",
       "page_count": 1,
       "pages": [
         {
           "title": "How to eliminate empty space on Posts, Pages, and Archives",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-eliminate-empty-space-on-posts-pages-and-archives/"
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/eliminate-empty-space-on-posts-pages-archives/"
         }
       ]
     },
     {
-      "title": "How To Generate A Custom Child Theme",
-      "slug": "how-to-generate-a-custom-child-theme",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-generate-a-custom-child-theme/",
-      "file": "categories/how-to-generate-a-custom-child-theme.md",
+      "title": "Fixing Phone Numbers Automatically Linking Or Disappearing On Ios Safari",
+      "slug": "fixing-phone-numbers-automatically-linking-or-disappearing-on-ios-safari",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/fixing-phone-numbers-automatically-linking-or-disappearing-on-ios-safari/",
+      "file": "categories/fixing-phone-numbers-automatically-linking-or-disappearing-on-ios-safari.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Kadence Child Theme Builder (Create and Sell Child Themes)",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-generate-a-custom-child-theme/"
-        }
-      ]
-    },
-    {
-      "title": "How To Manually Install And Update Free Kadence Plugins From Wordpress Org",
-      "slug": "how-to-manually-install-and-update-free-kadence-plugins-from-wordpress-org",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-manually-install-and-update-free-kadence-plugins-from-wordpress-org/",
-      "file": "categories/how-to-manually-install-and-update-free-kadence-plugins-from-wordpress-org.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Manually Install and Update Free Kadence Plugins from WordPress.org",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-manually-install-and-update-free-kadence-plugins-from-wordpress-org/"
-        }
-      ]
-    },
-    {
-      "title": "How To Upgrade Your Kadence Purchase",
-      "slug": "how-to-upgrade-your-kadence-purchase",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-upgrade-your-kadence-purchase/",
-      "file": "categories/how-to-upgrade-your-kadence-purchase.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Upgrade Your License",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/how-to-upgrade-your-kadence-purchase/"
+          "title": "Fixing Phone Numbers Automatically Linking or Disappearing on iOS Safari",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/fixing-phone-numbers-automatically-linking-or-disappearing-on-ios-safari/"
         }
       ]
     },
@@ -150,41 +124,15 @@
       ]
     },
     {
-      "title": "Kadence Galleries",
-      "slug": "kadence-galleries",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-galleries/",
-      "file": "categories/kadence-galleries.md",
+      "title": "Largest Contentful Paint Lcp",
+      "slug": "largest-contentful-paint-lcp",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/largest-contentful-paint-lcp/",
+      "file": "categories/largest-contentful-paint-lcp.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Kadence Galleries",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-galleries/"
-        }
-      ]
-    },
-    {
-      "title": "Kadence Page Transitions",
-      "slug": "kadence-page-transitions",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-page-transitions/",
-      "file": "categories/kadence-page-transitions.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Kadence Page Transitions",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-page-transitions/"
-        }
-      ]
-    },
-    {
-      "title": "Kadence Reading Time",
-      "slug": "kadence-reading-time",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-reading-time/",
-      "file": "categories/kadence-reading-time.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Kadence Reading Time",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/kadence-reading-time/"
+          "title": "Improving Largest Contentful Paint (LCP)",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/largest-contentful-paint-lcp/"
         }
       ]
     },
@@ -198,19 +146,6 @@
         {
           "title": "Kadence Page Transitions",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-general/page-transitions/"
-        }
-      ]
-    },
-    {
-      "title": "Quick Start Guide For Plus And Ultimate Plan Members",
-      "slug": "quick-start-guide-for-plus-and-ultimate-plan-members",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/quick-start-guide-for-plus-and-ultimate-plan-members/",
-      "file": "categories/quick-start-guide-for-plus-and-ultimate-plan-members.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Getting Started with Kadence Ultimate & Lifetime Plans",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/quick-start-guide-for-plus-and-ultimate-plan-members/"
         }
       ]
     },
@@ -254,15 +189,67 @@
       ]
     },
     {
-      "title": "Understanding Site Limits And License Usage Guidelines",
-      "slug": "understanding-site-limits-and-license-usage-guidelines",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/understanding-site-limits-and-license-usage-guidelines/",
-      "file": "categories/understanding-site-limits-and-license-usage-guidelines.md",
+      "title": "Starter Templates Faqs Troubleshooting",
+      "slug": "starter-templates-faqs-troubleshooting",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/starter-templates-faqs-troubleshooting/",
+      "file": "categories/starter-templates-faqs-troubleshooting.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Understanding Site Limits and License Usage Guidelines",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/understanding-site-limits-and-license-usage-guidelines/"
+          "title": "Starter Templates FAQs & Troubleshooting",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/starter-templates-faqs-troubleshooting/"
+        }
+      ]
+    },
+    {
+      "title": "Temporary Login Without Password",
+      "slug": "temporary-login-without-password",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/temporary-login-without-password/",
+      "file": "categories/temporary-login-without-password.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Test for Plugin Conflicts",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/temporary-login-without-password/"
+        }
+      ]
+    },
+    {
+      "title": "The Package Could Not Be Installed No Valid Plugins Were Found",
+      "slug": "the-package-could-not-be-installed-no-valid-plugins-were-found",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/the-package-could-not-be-installed-no-valid-plugins-were-found/",
+      "file": "categories/the-package-could-not-be-installed-no-valid-plugins-were-found.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The package could not be installed. No valid plugins were found.",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/the-package-could-not-be-installed-no-valid-plugins-were-found/"
+        }
+      ]
+    },
+    {
+      "title": "The Package Could Not Be Installed The Theme Is Missing The Style Css Stylesheet",
+      "slug": "the-package-could-not-be-installed-the-theme-is-missing-the-style-css-stylesheet",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/the-package-could-not-be-installed-the-theme-is-missing-the-style-css-stylesheet/",
+      "file": "categories/the-package-could-not-be-installed-the-theme-is-missing-the-style-css-stylesheet.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "The package could not be installed. The theme is missing the style.css stylesheet.",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/the-package-could-not-be-installed-the-theme-is-missing-the-style-css-stylesheet/"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting Optimization Caching Plugins",
+      "slug": "troubleshooting-optimization-caching-plugins",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/troubleshooting-optimization-caching-plugins/",
+      "file": "categories/troubleshooting-optimization-caching-plugins.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Troubleshooting Broken Styles/Features when using Optimization/Caching Plugins",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/troubleshooting-optimization-caching-plugins/"
         }
       ]
     },
@@ -280,16 +267,25 @@
       ]
     },
     {
+      "title": "What Is Page Speed Insights",
+      "slug": "what-is-page-speed-insights",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/what-is-page-speed-insights/",
+      "file": "categories/what-is-page-speed-insights.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "What is Page Speed Insights?",
+          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/what-is-page-speed-insights/"
+        }
+      ]
+    },
+    {
       "title": "What Is Wordpress",
       "slug": "what-is-wordpress",
       "url": "https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/",
       "file": "categories/what-is-wordpress.md",
-      "page_count": 2,
+      "page_count": 1,
       "pages": [
-        {
-          "title": "What Is WordPress?",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/"
-        },
         {
           "title": "What Is WordPress?",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-general/what-is-wordpress/"
