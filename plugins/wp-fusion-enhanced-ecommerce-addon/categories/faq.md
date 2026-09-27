@@ -971,7 +971,26 @@ The version numbers are broken into three, and sometimes four parts. For example
 			top: 5px;
 			word-spacing: 2px;
 			color: #fff;
-		}#### #3.47.14 - 7/30/2026
+		}#### #3.48.0 - 9/23/2026
+
+- ✨ New Added a [Quiz and Survey Master integration](https://wpfusion.com/documentation/learning-management/quiz-and-survey-master/) that applies tags when a graded quiz is passed or failed, and syncs the score and points to CRM fields. Surveys and simple forms are skipped
+- ✨ New Added [expired tags for MemberPress Corporate sub-accounts](https://wpfusion.com/documentation/learning-management/memberpress/#corporate-accounts). A sub-account can get its own expired tag when access ends, and that tag is skipped when another membership already uses it as an active or expired tag. Linked tags are not re-applied on top of the expired tag
+- ⚡️ Improved Updated Klaviyo integration to the 2026-07-15 API
+- ⚡️ Improved FunnelKit Automations now uses the v3 REST API, and falls back to the older unversioned routes on sites that still have them
+- 🔧 Fixed Fixed MemberPress not removing tags from the previous membership on downgrade (a regression since 3.44.20). Linked tags are now removed when a member leaves a level
+- 🔧 Fixed Fixed MemberPress membership status and expiration date not updating in the CRM when a transaction expires and the member has no other active membership
+- 🔧 Fixed Fixed MemberPress linked-tag enrollments running during checkout and destroying or replacing the signup transaction, including when a same-site CRM updates tags while the transaction is still processing
+- 🔧 Fixed Fixed Paid Memberships Pro sending duplicate CRM updates at checkout and when member profile or mailing address fields are saved. Checkout sync now waits until the order is saved, so free orders and bonus levels are pushed once with current order data
+- 🔧 Fixed Fixed Paid Memberships Pro expiry and inactive status changes clearing the membership level in the CRM, including group members set to inactive, and auto-renewals not syncing membership fields
+- 🔧 Fixed Fixed WooCommerce orders aborted due to a missing billing email being marked complete, which prevented the order from syncing when billing details were added later. Checkout-draft and draft orders are no longer treated as eligible for purchase-tag sync
+- 🔧 Fixed Fixed Keap company sync by looking up or creating the company and linking the contact by ID, since Keap no longer accepts company_name on contact updates
+- 🔧 Fixed Fixed MailerLite deactivating webhooks that took longer than 3 seconds to respond. Webhooks are acknowledged immediately and processed in the background, and async imports still ignore privileged roles sent from the CRM
+- 🔧 Fixed Fixed Profile Builder sending numeric user meta, such as GamiPress points, to the CRM as media URLs. Only upload and avatar fields are converted to attachment URLs
+- 🔧 Fixed Fixed a PHP 8 fatal when a WooCommerce or Gravity Forms customer-data filter returned false to cancel the sync (for example AffiliateWP). Klaviyo phone formatting now tolerates the same cancel value
+- 🔧 Fixed Fixed an unauthenticated change of the FluentCRM REST, FunnelKit Automations, and Groundhogg REST connection. The application-password return could replace the CRM URL, username, and password before WordPress checked for a logged-in user. Saving those credentials now requires an administrator on the WP Fusion settings screen, with a nonce
+- 🔧 Fixed Fixed subscribers listing every user's email from the activity log search, and re-syncing another user's CRM contact, with the admin nonce from their own profile. Log search requires an administrator. Re-sync requires the ability to edit users. The tag and redirect pickers stay available to anyone who can edit content
+
+#### #3.47.14 - 7/30/2026
 
 - ✨ New Added a FluentAffiliate integration that applies and removes configurable tags as an affiliate's status changes through the full lifecycle (pending, active, inactive, cancelled, rejected, and deleted)
 - ✨ New Added FluentCommunity badge sync — map each badge to one or more tags so badges are assigned when a user has any linked tag and removed when none remain

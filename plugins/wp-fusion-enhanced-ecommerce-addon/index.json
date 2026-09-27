@@ -2,8 +2,8 @@
   "plugin_slug": "wp-fusion-enhanced-ecommerce-addon",
   "plugin_name": "WP Fusion - Enhanced Ecommerce Addon",
   "documentation_url": "https://wpfusion.com/documentation/",
-  "last_scraped": "2026-09-20T14:48:27.334Z",
-  "total_pages": 485,
+  "last_scraped": "2026-09-27T11:37:46.499Z",
+  "total_pages": 486,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -1531,8 +1531,12 @@
       "slug": "learning-management",
       "url": "https://wpfusion.com/documentation/learning-management/",
       "file": "categories/learning-management.md",
-      "page_count": 20,
+      "page_count": 21,
       "pages": [
+        {
+          "title": "Quiz and Survey Master",
+          "url": "https://wpfusion.com/documentation/learning-management/quiz-and-survey-master/"
+        },
         {
           "title": "PressPrimer Quiz",
           "url": "https://wpfusion.com/documentation/learning-management/pressprimer-quiz/"
