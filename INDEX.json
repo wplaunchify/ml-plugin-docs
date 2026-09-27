@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T10:45:21.323Z",
+  "last_updated": "2026-09-27T10:54:37.949Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3801,7 +3801,7 @@
       "slug": "wpc-variations-radio-buttons-for-woocommerce-premium",
       "name": "WPC Variations Radio Buttons for WooCommerce (Premium)",
       "documentation_url": "https://doc.wpclever.net/woovr/",
-      "last_scraped": "2026-09-20T14:22:13.129Z",
+      "last_scraped": "2026-09-27T10:54:37.949Z",
       "page_count": 7,
       "categories": [
         "getting-started",
