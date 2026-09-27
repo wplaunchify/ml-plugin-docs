@@ -2,20 +2,20 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-09-20T11:54:51.467Z",
+  "last_scraped": "2026-09-27T07:05:00.460Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
     {
-      "title": "Advanced Search Woocommerce Products",
-      "slug": "advanced-search-woocommerce-products",
-      "url": "https://wpsheeteditor.comadvanced-search-woocommerce-products/",
-      "file": "categories/advanced-search-woocommerce-products.md",
+      "title": "Ai For Woocommerce",
+      "slug": "ai-for-woocommerce",
+      "url": "https://wpsheeteditor.comai-for-woocommerce/",
+      "file": "categories/ai-for-woocommerce.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Advanced Product Search for WooCommerce Management",
-          "url": "https://wpsheeteditor.com/advanced-search-woocommerce-products/"
+          "title": "AI for WooCommerce: How to Manage Products with Artificial Intelligence",
+          "url": "https://wpsheeteditor.com/ai-for-woocommerce/"
         }
       ]
     },
@@ -33,15 +33,15 @@
       ]
     },
     {
-      "title": "Best Llms Woocommerce Product Descriptions",
-      "slug": "best-llms-woocommerce-product-descriptions",
-      "url": "https://wpsheeteditor.combest-llms-woocommerce-product-descriptions/",
-      "file": "categories/best-llms-woocommerce-product-descriptions.md",
+      "title": "Bulk Generate Wordpress Seo Titles Descriptions Ai",
+      "slug": "bulk-generate-wordpress-seo-titles-descriptions-ai",
+      "url": "https://wpsheeteditor.combulk-generate-wordpress-seo-titles-descriptions-ai/",
+      "file": "categories/bulk-generate-wordpress-seo-titles-descriptions-ai.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "Best 2026 LLMs for WooCommerce Product Descriptions",
-          "url": "https://wpsheeteditor.com/best-llms-woocommerce-product-descriptions/"
+          "title": "How to Bulk Generate SEO Titles and Meta Descriptions with AI in WordPress (Yoast SEO, Rank Math, AIOSEO, SEOPress)",
+          "url": "https://wpsheeteditor.com/bulk-generate-wordpress-seo-titles-descriptions-ai/"
         }
       ]
     },

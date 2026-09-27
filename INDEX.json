@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T07:01:22.393Z",
+  "last_updated": "2026-09-27T07:05:00.461Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3733,12 +3733,12 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-09-20T11:54:51.467Z",
+      "last_scraped": "2026-09-27T07:05:00.461Z",
       "page_count": 5,
       "categories": [
-        "advanced-search-woocommerce-products",
+        "ai-for-woocommerce",
         "ai-tools-woocommerce",
-        "best-llms-woocommerce-product-descriptions",
+        "bulk-generate-wordpress-seo-titles-descriptions-ai",
         "edit-woocommerce-product-prices-excel-google-sheets",
         "woocommerce-increase-prices-fixed-amount"
       ]
