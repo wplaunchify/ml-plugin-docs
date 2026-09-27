@@ -1,7 +1,7 @@
 {
   "plugin_slug": "kadence-conversions-popups-slide-ins",
   "plugin_name": "Kadence Conversions - Popups, slide-ins",
-  "last_scraped": "2026-09-20T16:55:23.441Z",
+  "last_scraped": "2026-09-27T13:33:47.926Z",
   "total_pages": 16,
   "failed_urls": [],
   "pages": [
@@ -26,8 +26,8 @@
     },
     {
       "title": "Getting started: Creating your First Kadence Conversion",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/getting-started-creating-your-first-kadence-conversion/",
-      "category": "Getting Started Creating Your First Kadence Conversion",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/create-a-kadence-conversion/",
+      "category": "Create A Kadence Conversion",
       "content": "Kadence Conversions will be a left sidebar option below Settings with the Kadence logo next to it.\n\n![Kadence Conversions navigation.](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-conversions-started.png)\n\nOn the “All Conversion Items” page, click “Add New” at the top of the page.\n\n![Add new conversion](https://docs.nexcess.com/wp-content/uploads/2026/06/add-conversion.png)\n\nNext, choose which type of Kadence Conversion element you’d like to work with. You can choose popup, slide-in, or banner.\n\n![choose your conversion type](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-conversion-choose-type-1024x638-1.png)*Choose which type of conversion you’d like to build. You can build unlimited conversions with Kadence Conversions.*\n\nYou’ll then choose either a blank conversion or use one of the starter popups, slide-in, or banners to help you get started. You can customize the images, the colors, and all other settings later.\n\n- ![Kadence Popup Starters Conversions](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-popup-starters.png)Popup starters\n- ![Kadence Conversions Slide-in Starters](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-slide-in-starters.png)Slide-in starters\n- ![](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-banner-starters.png)Banner starters",
       "headings": [],
       "code_blocks": []
@@ -37,6 +37,14 @@
       "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/install-activate-kadence-conversions/",
       "category": "Install Activate Kadence Conversions",
       "content": "Installing [Kadence Conversions](https://www.kadencewp.com/kadence-conversions/) is straightforward. Begin by downloading the plugin from the [Downloads](https://www.kadencewp.com/my-account/downloads/) section of your Kadence account. If you’re subscribed to the Kadence Full Bundle or Lifetime Bundle, Kadence Conversions is already included with your plan. You can also [purchase it separately](https://www.kadencewp.com/kadence-conversions/pricing/) as an individual plugin if you prefer.\n\nTo use Kadence Conversions, you must also have the **free** **Kadence** **Blocks** **plugin** installed on your site. If you don’t have Kadence Blocks, you will be prompted to install Kadence Blocks during the installation of Kadence Conversions.\n\n![](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-blocks-required.png)\n\nGetting Started\n\nDownload the Kadence Conversions ZIP file from the Kadence Account Downloads page.\n\n![Downloads](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-2.jpg)\n\n![Download Conversions](https://docs.nexcess.com/wp-content/uploads/2026/06/Download-Conversions-scaled-1.jpg)\n\nOnce the file has been downloaded, open your WordPress Admin area and go to the Plugins page. At the top of the page, select **“Add New”**, then choose the **“Upload Plugin”** option.\n\n![Upload Plugin](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Plugin.jpg)\n\nClick **“Choose File”** and locate the Kadence Conversions ZIP file you just downloaded from Kadence. After selecting the file, click **“Install Now.”** When the installation is complete, click **“Activate”** to enable the plugin.\n\nOnce the plugin is activated, the next step is to add your license key.\n\nLicensing Kadence Conversions\n\nAfter Kadence Conversions has been installed, a message will appear at the top of your WordPress Admin screen stating that Kadence Conversions has not yet been activated. You can click the link provided in that message to proceed with activation. \n\n*(Alternatively, you can navigate to the Dashboard –> Kadence -> Conversions -> Dashboard page from the WordPress dashboard.)*\n\nOnce on the Conversions dashboard, you will need to input your Kadence License Key. This can be found in your Kadence Account Downloads page. Once you enter your key, click the Save Changes button, and Kadence Conversions is ready to use.\n\n![](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Conversions-‹-teejay-—-WordPress-2025-06-30-at-12.10.12-PM.jpg)*Enter your Kadence API License key from Kadence Conversions or Kadence Plan account.*",
+      "headings": [],
+      "code_blocks": []
+    },
+    {
+      "title": "Setting Up Your Kadence Conversion Item Settings",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/kadence-conversion-item-settings/",
+      "category": "Kadence Conversion Item Settings",
+      "content": "To ensure you can see all of the settings available to your Kadence Conversion Item, ensure you have list view toggled on. If your Kadence Conversion settings ever disappear from view, you can just click the list view button at the top of the page as seen below.\n\nThen click the “Conversion Item” list item. This will unfurl the settings in the right sidebar so that you can access the Kadence Conversion settings.\n\n![](https://docs.nexcess.com/wp-content/uploads/2026/06/list-view-conversion-settings.png)",
       "headings": [],
       "code_blocks": []
     },
@@ -82,14 +90,6 @@
         "Recurring Scheduling",
         "Combining Range and Recurring Scheduling"
       ],
-      "code_blocks": []
-    },
-    {
-      "title": "Setting Up Your Kadence Conversion Item Settings",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/setting-up-your-kadence-conversion-item-settings/",
-      "category": "Setting Up Your Kadence Conversion Item Settings",
-      "content": "To ensure you can see all of the settings available to your Kadence Conversion Item, ensure you have list view toggled on. If your Kadence Conversion settings ever disappear from view, you can just click the list view button at the top of the page as seen below.\n\nThen click the “Conversion Item” list item. This will unfurl the settings in the right sidebar so that you can access the Kadence Conversion settings.\n\n![](https://docs.nexcess.com/wp-content/uploads/2026/06/list-view-conversion-settings.png)",
-      "headings": [],
       "code_blocks": []
     },
     {
@@ -162,8 +162,8 @@
     },
     {
       "title": "What Kadence Conversions Can Do, Types of Conversions",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/what-kadence-conversions-can-do-types-of-conversions/",
-      "category": "What Kadence Conversions Can Do Types Of Conversions",
+      "url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/types-of-conversions/",
+      "category": "Types Of Conversions",
       "content": "There are three types of conversion elements that you can add to your WordPress site with Kadence Conversions: popups, slide-ins, and banners.\n\n#### How Popups Work\n\nPopups are attention grabbing elements that pop up in the foreground of a visual interface. It can be used to call attention to anything you’d like your user to know. This can be about a sale, an offer, or an opportunity to deepen their relationship with your brand, product, or service offering. Popups can be placed anywhere on the visible area, or viewport, of your site, and they can be timed according to your needs.\n\nKadence Conversions contains a number of starter popups to help you envision how a popup might work on your site. Feel free to take one of these starter popups and customize it for your own unique attention grabbing conversion.\n\n![Kadence Popup Starters Conversions](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-popup-starters.png)\n\n#### How Slide-ins Work\n\nA slide-in appears to come in from either left or right and is positioned either at the top or bottom of your visible, on-screen area, often called the viewport.\n\nKadence Conversions contains a number of starter slide-ins to help you envision how a slide-in might work on your site. You can easily customize one of these starter slide-ins for your site.\n\n![Kadence Conversions Slide-in Starters](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-slide-in-starters.png)\n\n#### How Banners Work\n\nBanners can be positioned at either the top or bottom of your visible screen. Often used as either cookie notices, sales notices, or other attention-grabbing elements, they’re often used as unobstructing elements that inform users of something important while not obscuring content on the page.\n\n![Kadence Conversion Banner Starters ](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-banner-starters-1.png)",
       "headings": [
         "How Popups Work",

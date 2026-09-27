@@ -1,4 +1,4 @@
-# What Kadence Conversions Can Do Types Of Conversions
+# Types Of Conversions
 
 *Category from Kadence Conversions - Popups, slide-ins documentation*
 
@@ -6,7 +6,7 @@
 
 ## What Kadence Conversions Can Do, Types of Conversions
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-conversions/what-kadence-conversions-can-do-types-of-conversions/](https://www.kadencewp.com/help-center/docs/kadence-conversions/what-kadence-conversions-can-do-types-of-conversions/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-conversions/types-of-conversions/](https://www.kadencewp.com/help-center/docs/kadence-conversions/types-of-conversions/)
 
 There are three types of conversion elements that you can add to your WordPress site with Kadence Conversions: popups, slide-ins, and banners.
 

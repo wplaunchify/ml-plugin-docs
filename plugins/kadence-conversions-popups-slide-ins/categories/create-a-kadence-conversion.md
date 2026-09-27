@@ -1,4 +1,4 @@
-# Getting Started Creating Your First Kadence Conversion
+# Create A Kadence Conversion
 
 *Category from Kadence Conversions - Popups, slide-ins documentation*
 
@@ -6,7 +6,7 @@
 
 ## Getting started: Creating your First Kadence Conversion
 
-**Source:** [https://www.kadencewp.com/help-center/docs/kadence-conversions/getting-started-creating-your-first-kadence-conversion/](https://www.kadencewp.com/help-center/docs/kadence-conversions/getting-started-creating-your-first-kadence-conversion/)
+**Source:** [https://www.kadencewp.com/help-center/docs/kadence-conversions/create-a-kadence-conversion/](https://www.kadencewp.com/help-center/docs/kadence-conversions/create-a-kadence-conversion/)
 
 Kadence Conversions will be a left sidebar option below Settings with the Kadence logo next to it.
 

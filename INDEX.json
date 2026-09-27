@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T13:27:32.873Z",
+  "last_updated": "2026-09-27T13:33:47.929Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1569,25 +1569,25 @@
       "slug": "kadence-conversions-popups-slide-ins",
       "name": "Kadence Conversions - Popups, slide-ins",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-conversions/",
-      "last_scraped": "2026-09-20T16:55:23.442Z",
+      "last_scraped": "2026-09-27T13:33:47.929Z",
       "page_count": 16,
       "categories": [
         "container-styling-settings",
         "conversion-settings",
-        "getting-started-creating-your-first-kadence-conversion",
+        "create-a-kadence-conversion",
         "install-activate-kadence-conversions",
+        "kadence-conversion-item-settings",
         "launch-triggers",
         "position-settings",
         "repeat-control-settings",
         "scheduling-kadence-conversions",
-        "setting-up-your-kadence-conversion-item-settings",
         "size-settings",
         "target-devices",
         "target-pages",
         "target-requests",
         "target-visitors",
         "target-woocommerce-cart",
-        "what-kadence-conversions-can-do-types-of-conversions"
+        "types-of-conversions"
       ]
     },
     {
