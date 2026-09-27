@@ -884,7 +884,30 @@ WP Fusion also supports the [Corporate Accounts addon](https://memberpress.com/a
 
 Here you can specify tags to be applied to members who are added as sub-accounts to the corporate account.
 
-You can check the **Remove tags** checkbox to have the selected tags automatically removed from sub-account members if the parent membership is cancelled.
+You can check the **Remove tags** checkbox to have the selected tags automatically removed from sub-account members if the parent membership is cancelled.
+
+**Active / Expired tag pairing:** The tags you configure above under **Corporate Accounts** represent a sub-account member’s *Active* status. Two additional, optional settings let you apply a matching *Expired* signal when a sub-account’s corporate access lapses:
+
+- **Corporate Sub-Account Expired:**Apply these tags to sub-account members when their corporate sub-account access expires — because the parent membership expired, was refunded or changed, or the sub-account was removed from the corporate account. These tags are removed automatically if the sub-account becomes active again.
+- **Remove Corporate Account Tags On Expiry:**When checked, the Corporate Accounts tags (above) will also be removed from the sub-account member when their access expires. They’ll be re-applied if the sub-account becomes active again.
+
+![](https://wpfusion.com/wp-content/uploads/2026/09/MemberPress_-_Corporate_Accounts_-_Sub-Account_Expired_Settings.png)
+
+Expired tags are applied by MemberPress’s hourly expiration check, so there’s a delay after a sub-account’s access actually expires:
+
+- If the parent membership expires, expect the tags to apply at least 12 hours after the expiration time, on the next run of the cron.
+- If the parent transaction is refunded, or the corporate membership is changed to a different level, the expired tags are applied on the next cron run after MemberPress recalculates the sub-account’s access.
+- If a sub-account is individually removed from the corporate account, the tags are applied immediately — removal doesn’t wait for the hourly cron.
+
+Sub-account members will also still receive the membership’s regular **Apply Tags – Transaction Expired** tags (above) — the Corporate Sub-Account Expired tags are an additional, sub-account-specific signal, not a replacement for them.
+
+A couple of things to keep in mind:
+
+- If a corporate account is deleted, its sub-account transactions are deleted along with it, so no expired tag will be applied for those members — there’s no transaction left for MemberPress to record the expiry against.
+- MemberPress only fires the expiration event once per transaction. If a sub-account already expired once, was reactivated, and its *same* transaction record expires again, the expired tags won’t reapply automatically. Run the **MemberPress memberships statuses** batch operation (see Batch Operations, below) to reconcile these cases, and to backfill any sub-accounts that had already lapsed before you configured these settings.
+- **Corporate Sub-Account Expired** tags must be dedicated tags — they can’t also be used as this membership’s **Corporate Accounts**, **Apply Tags – Active**, or **Link with Tag** setting, or as any membership’s **Link with Tag** setting, or as another membership’s **Corporate Sub-Account Expired** tag. When you save the membership, WP Fusion removes any Corporate Sub-Account Expired tag that collides with one of these and shows a notice listing which tag(s) weren’t saved.
+- If you save a **Link with Tag** tag that’s already used as another membership’s Corporate Sub-Account Expired tag, the Link with Tag setting is kept, but WP Fusion shows a warning notice. Pick a different, dedicated tag for Corporate Sub-Account Expired on that membership to resolve the conflict.
+- As a safety net, WP Fusion also skips applying a Corporate Sub-Account Expired tag at runtime if that tag is used as any membership’s **Link with Tag**, and logs a notice.
 
 In addition to applying tags, you can also sync the email address of the corporate account parent to the contact record for new sub-accounts, by enabling the **Corporate Account Parent Email** field for sync from the Contact Fields settings.
 
