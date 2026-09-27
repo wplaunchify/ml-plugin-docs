@@ -70,7 +70,13 @@ Some other plugins also use their custom notifications which overwrite the core 
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/e0538d7815e60c23f2fbd751a23f3fa98e3aeb727eccbefc58d25d646cb03b07?s=60&d=retro&r=g)### Useful plugin
+	![](https://secure.gravatar.com/avatar/d3bd20becb9a1195f3fc036e02dd4c9fe5329079a711cd182180e8027a6d4628?s=60&d=retro&r=g)### Great!
+							[slingshotdesign](https://profiles.wordpress.org/slingshotdesign/)
+								September 23, 2026
+						I manage a lot of websites so the ability to switch off email notifications for automatic core and plugin updates is really useful and just what I needed.
+
+Thanks very much!!
+							![](https://secure.gravatar.com/avatar/e0538d7815e60c23f2fbd751a23f3fa98e3aeb727eccbefc58d25d646cb03b07?s=60&d=retro&r=g)### Useful plugin
 							[matthew](https://profiles.wordpress.org/zonetuke/)
 								August 6, 2026
 						Just what I needed. Thank you
@@ -92,13 +98,8 @@ Some other plugins also use their custom notifications which overwrite the core 
 						This plugin has made life easier.
 
 Thanks for its development.
-							![](https://secure.gravatar.com/avatar/a42d25acf5b596bb17b79e45fd5a222b8da9c04e977117c024f7d53561fb15bb?s=60&d=retro&r=g)### Prevents password changes
-							[lookwhoo](https://profiles.wordpress.org/lookwhoo/)
-								June 23, 2023
-																1 reply
-						This plugin no longer works and seems to have been abandoned. Within the past half year, users were complaining they weren't receiving the password reset emails. Sure enough, we found it was this plugin preventing password reset emails from going out. Disabled it and all is working as should now.
 
-		[Read all 54 reviews](https://wordpress.org/support/plugin/manage-notification-emails/reviews/)
+		[Read all 55 reviews](https://wordpress.org/support/plugin/manage-notification-emails/reviews/)
 
 ## Contributors & Developers
 
