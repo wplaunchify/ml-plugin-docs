@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T06:46:07.286Z",
+  "last_updated": "2026-09-27T06:53:03.866Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3308,7 +3308,7 @@
       "slug": "woocommerce-subscriptions-custom-price-string",
       "name": "WooCommerce Subscriptions - Custom Price String",
       "documentation_url": "https://github.com/woocommerce/woocommerce-subscriptions-custom-price-string",
-      "last_scraped": "2026-09-20T11:44:50.939Z",
+      "last_scraped": "2026-09-27T06:53:03.866Z",
       "page_count": 1,
       "categories": [
         "overview"
