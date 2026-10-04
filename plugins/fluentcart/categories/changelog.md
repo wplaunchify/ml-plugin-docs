@@ -12,11 +12,33 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCart.
 
+## FluentCart v1.7.0 ​
+
+*Released on Sep 29, 2026*
+
+✨ Newly Addedmarkdown
+```
+• Adds Product Reviews with star ratings, verified purchase badges, moderation, store replies, customer review management, and configurable review settings
+• Adds Product schema (JSON-LD) on the product page, with offers, aggregate rating, and reviews, for rich results in search
+• Adds Compliance settings to disable customer email verification
+```
+## FluentCart v1.6.6 ​
+
+*Released on Sep 25, 2026*
+
+⚡ Improvements🐞 Bug fixesmarkdown
+```
+• Improves Theme support for Astra, Blocksy, Kadence, Divi, GeneratePress, Bricks, and more
+```markdown
+```
+• Fixes Stripe wallet checkout issue for Apple Pay
+• Fixes Stripe payment-method tabs not matching the storefront button color
+```
 ## FluentCart v1.6.5 ​
 
 *Released on Sep 24, 2026*
 
-✨ Newly Added⚡ Improvements🐞 Bug fixes✨ Newly Added⚡ Improvements🐞 Bug fixesmarkdown
+✨ Newly Added⚡ Improvements🐞 Bug fixesmarkdown
 ```
 • Adds Appearance tab under Store Settings with FluentCart, theme-inherited, or custom color palettes
 • Adds Theme-inherited palettes for block themes, Astra, Kadence, and GeneratePress
@@ -56,8 +78,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 • Fixes Checkout page detection background errors
 • Fixes PDF receipt tax badge rounding
 • Fixes Order bump removal affecting booking items
-```::::
-
+```
 ## FluentCart v1.6.4 ​
 
 *Released on Sep 11, 2026*

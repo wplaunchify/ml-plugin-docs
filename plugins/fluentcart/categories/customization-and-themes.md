@@ -846,14 +846,14 @@ page_id
 
 ### Turn Off Email Confirmation and Guest Purchase Recovery ​
 
-By default, a new customer account must confirm its email address before the customer dashboard shows any account data, and confirming brings in any guest purchases made earlier with that same address. If this conflicts with your own registration flow, this filter turns the whole gate off.
+When **Customer email verification** is set to **Required** in Compliance Settings (it is off by default), a new customer account must confirm its email address before the dashboard shows any account data, and confirming brings in any guest purchases made earlier with that same address. If this conflicts with your own registration flow, this filter turns off the confirmation and recovery flow.
 
 php
 ```
 add_filter('fluent_cart/customer/enable_email_claim', '__return_false');
 ```INFO
 
-With the gate off, an account whose email diverges from its customer record keeps that mismatch until a staff member resolves it, and guest purchases are never offered for automatic recovery.
+With the filter off, an account whose email diverges from its customer record keeps that mismatch until a staff member resolves it, and guest purchases are never offered for automatic recovery. The filter does not switch off the setting itself, so with verification still set to **Required**, unconfirmed accounts remain locked out of the dashboard.
 ## Product Pricing ​
 
 ### Add a Suffix Next to Prices ​
@@ -904,7 +904,7 @@ If your tax settings already display a tax suffix, FluentCart sets one for you a
 
 ### Override the Colors Stripe's Payment Form Uses ​
 
-When your [Appearance](/guide/settings-configuration/appearance) source is set to inherit from your theme or to a custom palette, FluentCart derives a matching background, text, and accent color for the embedded Stripe payment form automatically. Use this filter to override that result, or to set your own colors when the source is FluentCart's own default.
+When your [Appearance](/guide/settings-configuration/appearance) source is set to inherit your theme's color palette or to a custom palette, FluentCart derives a matching background, text, and accent color for the embedded Stripe payment form automatically. Use this filter to override that result, or to set your own colors when the source is FluentCart's own default.
 
 php
 ```
@@ -1207,7 +1207,7 @@ The main widget for building shop pages. It renders your product catalog as a cl
 
 - **Content Tab:** Control which products show up and how they're arranged. - **General Settings:** Set **Products Per Page**, switch the **View Mode** between Grid and List, choose **Grid Columns**, and pick a **Pagination Type** (Infinite Scroll, Load More, or numbered pages). Choose the **Price Format**, sort with **Order By** and **Order**, and toggle **Use Default Style** for FluentCart's built-in styling.
 - **Shop Layout:** Adjust the spacing and layout of the product grid.
-- **Product Card Layout:** Choose which elements (image, title, price, button) appear inside each product card.
+- **Product Card Layout:** Choose which elements (image, title, excerpt, price, rating, button) appear inside each product card. See [ratings on shop cards](/guide/customization-and-themes/elementor-review-widgets#ratings-on-shop-cards) for the **Rating** element.
 - **Filter Settings:** Turn on a sidebar filter so customers can narrow the list by category, price, or attributes.
 - **Style Tab:** Customize typography, card colors, button colors, and grid spacing.
 - **Advanced Tab:** Standard Elementor margin, padding, and responsive controls.
@@ -1502,6 +1502,153 @@ The **Related Products** widget reads product data like the widgets above, but E
 ## What's Next ​
 
 Looking for the store-wide widgets (cart, checkout, order receipt, customer dashboard, search bar, store logo, etc.)? Head to [FluentCart Widgets for Elementor](/guide/customization-and-themes/elementor-fluentcart-widgets).
+
+---
+
+## FluentCart Review Widgets for Elementor ​
+
+**Source:** [https://docs.fluentcart.com/guide/customization-and-themes/elementor-review-widgets](https://docs.fluentcart.com/guide/customization-and-themes/elementor-review-widgets)
+
+# FluentCart Review Widgets for Elementor ​
+
+The Elementor addon adds six widgets for [product reviews](/guide/store-management/product-reviews/), so you can build the rating summary, the review list, and the **Write a Review** button visually instead of relying on the default product page. They mirror the [review blocks](/guide/store-management/product-reviews/displaying-reviews#the-review-blocks) available in the WordPress block editor, and they sit in the **FluentCart** category of the Elementor panel.
+
+Before you can use them, make sure the Elementor Blocks addon is turned on. See [Using Elementor Widgets](/guide/customization-and-themes/using-elementor-widgets) for the activation steps. **Enable Product Reviews** also needs to be switched on in your [review settings](/guide/store-management/product-reviews/review-settings). While it is off, the widgets stay in the panel, but the editor canvas shows a note that the reviews module is switched off, and visitors see nothing. A product with reviews turned off shows a similar note in the editor.
+
+## Adding a Review Widget ​
+
+To place a review widget on a page or template:
+
+1. Open the page or template with **Edit with Elementor**.
+2. In the **Elements** panel, type 
+```
+review
+```
+
+ into **Search Widget...**.
+3. Drag the widget you want onto the canvas.
+
+Every widget here starts with the same **Source** setting in its **Content** tab:
+
+- **Source:** Choose **Current Product** to show whichever product the page or template is displaying. This is the right choice inside a single product template. Choose **Custom** to pin the widget to one product.
+- **Select Product:** Appears when **Source** is **Custom**. Pick the product to show.
+
+When no product can be worked out, for example a **Current Product** widget on an ordinary page, the editor previews your newest published product. If no product can be found at all, the canvas shows a note asking you to select one. Visitors never see those notes.
+
+INFO
+
+Some options need FluentCart Pro. Without it they stay visible but locked, and they are marked **(Pro)**. Every widget is free to use.
+## 1. Product Reviews ​
+
+The whole review section in one widget: the rating summary, the **Write a Review** button, and the review list. Use it when you want a complete section quickly, and reach for the separate widgets below when you want to place the pieces yourself.
+
+### Choosing a Layout ​
+
+Below the **Source** setting, the **Content** tab has a **Layout** section with the **Layout Preset** picker, a grid of cards with a small drawing of each layout. Use the tabs **All layouts**, **List**, **Grid**, **Photo**, and **Carousel** to narrow the choices, then click a card to apply it.
+
+The eleven layouts are the same ones the block editor offers:
+
+| Layout | Type | What it looks like |
+| --- | --- | --- |
+| Classic | List | The summary beside the reviews, with the count, filter chips, sorting, and numbered pages. Free. |
+| Minimal List | List | One review per row, with no header above the list and no dates. |
+| Compact | List | Stars, a couple of lines, and a Read more link. No avatar, date, title, or photos. |
+| Card Grid | Grid | Two cards to a row, with the filter and sorting above and page numbers like "Page 2 of 7". |
+| Masonry | Grid | Three columns, each card as tall as its content. |
+| Summary on Top | List | The average rating and star breakdown across the top, with the reviews underneath. |
+| Photo Grid | Photo | Three cards to a row, each with the customer's photo across the top. Shows only reviews that have photos. |
+| Photo Wall | Photo | Four photos to a row, with the stars, name, and date over each one. Shows only reviews that have photos. |
+| Photo Strip | Photo | A slider band of customer photos, each opening in a lightbox. Meant to sit above a full list. |
+| Carousel | Carousel | Two reviews at a time, with arrows over the cards and dots below. |
+| Testimonials | Carousel | Each review as a quote with the reviewer's face, name, and stars beneath. Three at a time, changing automatically. |
+
+A layout is a starting point, not a lock. Picking one writes its choices onto the widget's own settings, and from then on the widget only remembers those settings, not the layout's name. Change any setting afterwards and your change sticks. The picker shows a **Custom layout** status above the grid whenever the current settings match none of the eleven layouts. You can't choose **Custom layout** yourself. Pick a card to leave it.
+
+Your own tuning survives a switch. **Columns**, **Reviews Per Page**, **Pagination Type**, **Default Sort**, and all of the slider settings carry over from one layout to the next if you set them yourself.
+
+INFO
+
+**Classic** is free. The other ten cards are greyed out and marked **Pro** until FluentCart Pro is active. Without Pro, the widget draws whatever the settings below say.
+### Content Settings ​
+
+Below the picker, the **Content** tab is split into sections:
+
+- **Rating Summary:** Turn the summary card **Show** or **Hide**. When it is shown, **Placement** puts it **Beside the reviews**, **Across the top**, or as **Only the Write a Review button**.
+- **Write a Review Button:** **Open In** chooses **Drawer (slides in from the side)** or **Modal (centered on the screen)**. **Field Layout** chooses **Inline (all fields at once)** or **Steps (one at a time)**. Under **Button Text**, you can rewrite the three labels, **New Review**, **Edit Review**, and **Logged Out**, and leave a field blank to keep its default.
+- **Review List:** **Minimum rating** hides lower-rated reviews entirely, from **All ratings** up to **5 stars only**. **Reviews with attachments only** lists just the reviews that have photos. **Words shown** cuts longer reviews down with a **Read more** link, and 0 shows them in full. **View Mode** offers **List**, **Grid (Pro)**, **Masonry (Pro)**, and **Slider (Pro)**. **Columns** sets how many reviews sit side by side, from 2 to 6, in the Grid, Masonry, and Slider views.
+- **Review Card:** Switch each part of a review **Show** or **Hide**: **Reviewer Name**, **Review Date**, **Verified Purchase Badge**, **Store Reply**, **Avatar**, **Review Title**, **Review Text**, **Attachments**, **Variation**, **Footer (replies and votes)**, and **Meta Line**. Three more switches rearrange the card: **Attachments Above The Text**, **Stars Above The Name**, and **Verified Badge After The Variation**.
+- **Attachments:** **Attachments Shown** sets how many photos a review displays, and the rest sit behind a **+** that opens them in the lightbox. **The + Counter** puts that **+** **On the last attachment**, **Beside the attachments**, or **Hidden**. **Attachment Height (px)** always applies. **Attachment Width (px)** is available while full width is off. **Full Width Attachments** gives each photo its own line, and once it is on, the Pro options **Attachment As Card Background** and **Flush To Card Edges** let a photo take over the card. **Flush To Card Edges** hides while **Attachment As Card Background** is on, and without FluentCart Pro both options show a **(Pro)** label and stay locked.
+- **Slider:** Appears only when **View Mode** is **Slider**. **Show arrows** adds the previous and next arrows, with an **Arrow Size** of **Small**, **Medium**, or **Large**, and an **Arrow Placement** of **On the reviews**, **Beside the reviews**, or **Below the reviews**. **Show Pagination** adds indicators, in a **Pagination Type** of **Dots**, **Fraction**, **Progress Bar**, or **Segmented**. **Autoplay** can be **Disabled**, **Always**, or **On Hover**, with an **Autoplay Delay (ms)** when it is on, and **Infinite loop** lets the slider wrap around.
+- **Header:** Show or hide the **Review Count**, the **Star Filter Chips**, and the **Sort Control**, and set the **Default Sort** to **Newest**, **Oldest**, **Highest Rating**, or **Lowest Rating**.
+- **Pagination:** Appears for the List, Grid, and Masonry views. Choose a **Pagination Type** of **Numbers**, **Fraction**, or **Bullets**, and set **Reviews Per Page**. Leave it at 0 to follow your store-wide **Reviews Per Page** setting.
+
+### Style Settings ​
+
+The **Style** tab restyles each part: the **Rating Summary** card, the **Write a Review Button**, the **Review List** spacing, the **Header**, the **Review Card**, the **Reviewer**, the **Stars**, the **Review Content**, the **Photos & Actions**, and the **Pagination**. In the **Stars** section, **Filled Star Color** and **Empty Star Color** let the stars match your brand.
+
+## 2. Product Review List ​
+
+Only the list of reviews, with no summary and no button. Use it together with **Review Summary** and **Write a Review Button** to build a custom arrangement. It has no layout picker, but it shares the **View Mode**, **Columns**, slider, header, attachment, and pagination settings of the **Product Reviews** widget. **Review Count** in the header settings appears only when **Review Layout** is **Choose fields**.
+
+Its extra strength is the **Review Row** section, which controls the review's fields one by one:
+
+- **Review Layout:** **Standard** draws the row as FluentCart draws it everywhere else, with the avatar, name, stars, and badge on one line. **Choose fields** lets you pick and order the parts yourself, and it stacks each on its own line.
+- **Fields:** Appears when **Review Layout** is **Choose fields**. Each item in the list is one part of the row, shown in the order you set, and the items are titled with short names such as 
+```
+avatar
+```
+
+ and 
+```
+author_name
+```
+
+. Drag an item to reorder it, delete an item to hide that part, and add an item to bring one back. The parts are **Avatar**, **Reviewer Name**, **Verified Purchase Badge**, **Variation Reviewed**, **Star Rating**, **Date**, **Review Title**, **Review Text**, **Photos**, **Helpful Votes**, and **Store Reply**.
+- **Show in each review:** With the **Standard** layout, switch **Reviewer Name**, **Date**, **Verified Purchase Badge**, and **Store Reply** on or off.
+
+With **Choose fields**, the **Pagination** section also gains **Show Pagination**, and an **Alignment** for the pager once that is on. The **Standard** layout always paginates once there is a second page.
+
+In the **Style** tab, **Star Color** colors every star in the list, filled and empty alike, while **Filled Star Color** and **Empty Star Color** override one or the other.
+
+## 3. Review Summary ​
+
+The average rating, the total review count, and the bars that break reviews down from 5 stars to 1. Place it wherever a rating overview belongs.
+
+- **Content Tab:** Only the **Source** settings.
+- **Style Tab:** **Star Color**, plus typography and color for the average score and the total, and a color for the "out of five" text. Under **Breakdown Bars**, set the **Bar Color**, **Bar Track Color**, **Bar Height**, **Row Spacing**, and the bar label typography and color.
+
+## 4. Review Form ​
+
+The review form printed directly on the page, with no button and no drawer. Use it on a dedicated page for feedback, or under a product's description.
+
+- **Content Tab:** **Source**, and **Field Layout**, either **Inline (all fields at once)** or **Steps (one at a time)**.
+- **Style Tab:** **Star Color**, the question typography and color, and the spacing between fields. Under **Inputs**, style the typography, text color, background, border, radius, and padding. Under **Star Picker**, set the **Star Size**. Under **Submit Button**, style the typography, the normal and hover colors, the radius, and the padding.
+
+Which fields customers see, such as the guest details or the photo upload, follows your [review settings](/guide/store-management/product-reviews/review-settings).
+
+## 5. Write a Review Button ​
+
+A button that opens the review form in a drawer or a modal. Its text changes for a new reviewer, a returning reviewer, and a visitor who has to log in first.
+
+- **Content Tab:** **Source**, **Open In** (**Drawer** or **Modal**), **Field Layout** (**Inline** or **Steps**), and the three **Button Text** labels, **New Review**, **Edit Review**, and **Logged Out**.
+- **Style Tab:** Typography, the **Normal** and **Hover** colors, the border, the border radius, the padding, and the **Alignment**, from **Left** to **Full Width**.
+
+## 6. Product Rating ​
+
+A compact star rating with the review count in brackets, the same element you see on a product card. It is ideal beside a product title or inside a card template.
+
+- **Content Tab:** **Source**, plus two visibility settings. **Minimum Reviews** hides the rating until the product has at least that many reviews, and 0 always shows it. **Minimum Average Rating** hides the rating unless the product averages at least that many stars, in half-star steps.
+- **Style Tab:** **Star Color**, **Empty Star Color**, **Star Size**, **Star Spacing**, the typography and color of the review count, and the **Alignment**.
+
+## Ratings on Shop Cards ​
+
+The [Products](/guide/customization-and-themes/elementor-fluentcart-widgets#_5-products) widget can also show a star rating on each product card. In the widget's **Product Card Layout** section, add an item to **Card Elements** and set its **Element** to **Rating**. The default cards do not include it. The rating appears only for products that have reviews, and only while **Show Rating in Shop** is on in your [Product Page settings](/guide/settings-configuration/product-page#_5-product-rating).
+
+## Ready-Made Templates ​
+
+The bundled templates already use these widgets. The **Single Product** template includes a **Product Reviews** widget after the product details, and the **Shop** template places a **Rating** under each product title. See [Using Elementor Widgets](/guide/customization-and-themes/using-elementor-widgets#start-from-a-ready-made-template) to insert them.
+
+With the review widgets in place, your Elementor pages show the same trusted feedback as the rest of your store.
 
 ---
 
@@ -2415,6 +2562,10 @@ If your theme is not on this list, it is still very likely to be compatible with
 
 FluentCart is built to be as theme-agnostic as possible. For any theme, you can use our powerful [FluentCart Blocks](/guide/customization-and-themes/using-gutenberg-blocks) in the WordPress editor or place our [shortcodes](/guide/settings-configuration/pages-setup) to display products, checkout forms, and customer dashboards. This ensures that you can build a fully functional and beautiful storefront, no matter which theme you choose.
 
+INFO
+
+This list covers building your storefront with blocks, shortcodes, and page templates. It's separate from whether FluentCart can pick up your theme's colors automatically, which depends on what color information the theme publishes. See [Appearance Settings](/guide/settings-configuration/appearance) for that.
+
 ---
 
 ## Translating FluentCart ​
@@ -2636,6 +2787,7 @@ Jump straight to the group you want to learn about:
 
 - [FluentCart Widgets for Elementor](/guide/customization-and-themes/elementor-fluentcart-widgets) — the 16 store-wide widgets you can use on any page.
 - [FluentCart Product Widgets for Elementor](/guide/customization-and-themes/elementor-product-widgets) — the 9 Theme Builder widgets for single-product templates.
+- [FluentCart Review Widgets for Elementor](/guide/customization-and-themes/elementor-review-widgets) — the 6 widgets for [product reviews](/guide/store-management/product-reviews/), from a full review section to a single star rating.
 
 ---
 
@@ -2680,6 +2832,12 @@ You will see all the blocks listed below. Here is a fast look at all the FluentC
 - Product Categories List
 - Excerpt
 - Product Package Description
+- Product Reviews
+- Rating Summary with Review
+- Review List
+- Product Rating
+- Write a Review
+- Review Form
 
 ### 1. Products ​
 
@@ -2995,6 +3153,42 @@ Two of the children let you override their wording, either by clicking the text 
 NOTE
 
 Each FluentCart block comes with its own customization settings. After adding a block, check the settings panel on the right to adjust design, alignment, behavior, and visibility.
+## Product Review Blocks ​
+
+FluentCart adds six blocks for [product reviews](/guide/store-management/product-reviews/), so you can build your own review layout instead of relying on the default product page. They appear in the same **FluentCart** category in the block inserter, and they only render once **Enable Product Reviews** is turned on in **FluentCart > Settings > Product Reviews**.
+
+Every block that you place on its own shares the same **Product** setting, and it is the first thing to get right:
+
+- **Query type > Default:** The block shows whichever product is currently being viewed. Use this on a single product template, where the block should adapt to each product automatically.
+- **Query type > Custom:** The block always shows one specific product, chosen with the **Select Product** button. Use this on a landing page, your home page, or anywhere outside a product template.
+
+### 22. Product Reviews ​
+
+The all-in-one container, and the quickest way to add a full review section. It holds the rating summary, the review list, and the **Write a Review** button, and its **Layout** panel lets you rebuild the whole section from eleven ready-made layouts. **Classic** is free, and the rest need FluentCart Pro.
+
+### 23. Rating Summary with Review ​
+
+The rating summary card on its own: the average score out of 5, a bar for each star level, and a **Write a Review** button underneath. Use it when you want the summary and the call to action together, with the reviews themselves placed somewhere else on the page.
+
+### 24. Review List ​
+
+The customer reviews on their own, with filtering, sorting, and pagination but no summary card. Its **View Mode** offers **List**, **Grid**, **Masonry**, and **Slider**, and each part of a review card is its own block that you can reorder, remove, or restyle. **List** is free, and the other view modes need FluentCart Pro.
+
+### 25. Product Rating ​
+
+The star rating on its own, as a compact inline element, with the number of reviews in brackets beside it. Ideal next to a product title, inside a card, or anywhere a full review section would be too much. You can hide it until a product reaches a **Minimum Reviews** count or a **Minimum Average Rating**.
+
+### 26. Write a Review ​
+
+A single button that opens the review form in a drawer or a modal. Place it anywhere you want to invite feedback, and rewrite its three labels in the **Button Text** panel.
+
+### 27. Review Form ​
+
+The review form printed directly on the page, with no button. Use it on a dedicated page when you want the form always in view.
+
+Every setting of these blocks, including the layout presets and the field-by-field controls of the review list, is covered in [Displaying Reviews on Your Store](/guide/store-management/product-reviews/displaying-reviews#the-review-blocks). If you prefer to build with a shortcode instead, the same page explains [the reviews shortcode](/guide/store-management/product-reviews/displaying-reviews#the-reviews-shortcode).
+
+> Note: Each FluentCart block comes with its own customization settings. After adding a block, check the settings panel on the right to adjust design, alignment, behavior, and visibility.
 
 ---
 

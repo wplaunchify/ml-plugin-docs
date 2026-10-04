@@ -26,7 +26,7 @@ This section covers the following critical areas:
 - **Roles & Permissions:** Define and assign different user roles with specific access levels within your FluentCart store.
 - **Storage Settings:** Configure where your digital product files and other assets are stored, including local and cloud (S3) options.
 - **Licensing Settings (FluentCart Product License):** Activate your FluentCart plugin license key to ensure regular updates and access to premium features.
-- **Compliance Settings:** Control whether new customer accounts are logged in automatically after creation.
+- **Compliance Settings:** Control whether customers must confirm their email address, and whether new accounts are logged in automatically.
 
 By thoroughly configuring these settings, you can ensure your FluentCart store runs exactly as you intend.
 
@@ -60,11 +60,20 @@ This is the default. The storefront keeps the colors FluentCart ships with, and 
 
 Select this card to rebuild the storefront palette from your active WordPress theme. FluentCart reads the colors the theme publishes, maps them onto the storefront's surfaces, text, accent, and button roles, and derives the in-between tones no theme declares on its own, such as hairlines, dividers, muted captions, hover tints, and placeholder text. Button text is chosen for contrast against the button color, so a pale brand color still produces readable buttons. If you later switch themes, the storefront follows the new theme automatically.
 
-The card's description tells you how many palette colors your current theme provides. In the example below, Twenty Twenty-Five publishes seven, and the preview on the right immediately picks up the theme's black buttons and yellow accent.
+This only pulls the theme's color palette. It does not import fonts, spacing, layout, or any other styling, so the rest of the storefront's design stays exactly as FluentCart built it.
 
-INFO
+The card's description reminds you that FluentCart is using your active theme's colors, and points you to Customize if they don't come through the way you expect. The preview on the right updates immediately, so you can confirm your theme's colors carried across. In the example below, the preview picks up Twenty Twenty-Five's black buttons and yellow accent.
 
-Some themes, including Astra, Kadence, and GeneratePress, publish their palette as CSS variables rather than as fixed colors. FluentCart passes those straight through and your storefront renders them correctly, but the admin preview cannot resolve them, so it shows FluentCart's own colors in their place and tells you why. If a theme publishes nothing FluentCart can use, the storefront simply keeps its default colors.
+How closely the result matches your theme's colors depends on what color information that theme publishes:
+
+| Theme type | How FluentCart reads it |
+| --- | --- |
+| Any theme that publishes a color palette to WordPress: all block themes (Twenty Twenty-Three, Twenty Twenty-Four, Twenty Twenty-Five, and other full-site editing themes), and classic themes that register an editor palette | FluentCart reads the palette and matches common color roles, such as base, contrast, primary, and accent, to FluentCart's own colors. |
+| Block themes that set button colors in the site editor, including the hover state | FluentCart reads those button colors directly. |
+| Astra, Blocksy, Kadence, Divi, GeneratePress, and Bricks | FluentCart reads the theme's own accent, text, background, and button colors directly from its settings, so the admin preview and the live storefront always match. |
+
+If your theme isn't covered by any of these, or you'd rather not rely on guesswork, switch to **Customize** and set the colors yourself.
+
 ### 3. Customize ​
 
 Select **Customize** to pick the colors yourself. The card expands to reveal twenty color pickers, grouped by what they control. Only the colors you actually set are written to the storefront; any picker you leave empty keeps FluentCart's default for that surface.
@@ -250,28 +259,42 @@ Always understand the two options available for most fields:
 
 # Compliance Settings ​
 
-The **Compliance** tab holds settings that affect how customer accounts behave for privacy and security purposes. Right now, it controls whether a new customer is signed in automatically the moment their account is created.
+The **Compliance** tab holds settings that affect how customer accounts behave for privacy and security purposes. It controls whether customers must confirm their email address before using their account, and whether a new customer is signed in automatically the moment their account is created.
 
 ## Accessing Compliance Settings ​
 
-1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
+To open the compliance settings:
+
+1. From your WordPress dashboard, navigate to **FluentCart > Settings**.
 2. Select the **Compliance** tab from the left-hand sidebar.
 
 ## Configuring Compliance Settings ​
 
-### 1. Login After Account Creation ​
+### 1. Customer Email Verification ​
 
-FluentCart creates a customer account either when someone registers directly or when a guest checkout completes and account creation is turned on. This setting decides what happens to that customer right after.
+This setting decides whether customers have to prove they own their email address before FluentCart lets them into their account data.
 
-- **Don't auto login after account creation:** This is the default. The customer sees a message telling them to check their email, set a password, and log in themselves before they can use the account.
-- **Enable auto login after account creation:** The customer is signed in immediately and taken straight to their profile, matching FluentCart's previous behavior.
+- **Required:** Customers must confirm their email address before they can open their customer portal or use their saved checkout addresses. Confirming, through an emailed link or a password reset, also brings in any purchases they made earlier as a guest with that address.
+- **Not required:** This is the default. Customers skip the confirmation step, and no confirmation emails are sent. New checkout accounts are linked to their purchases immediately, and earlier guest purchases with the same email attach automatically when the customer opens their dashboard.
 
 INFO
 
-Requiring a customer to set their own password before first login is a common compliance requirement, since it proves they, and not whoever happened to check out, control the account. Turn auto login back on if your store prioritizes a frictionless checkout over that extra step.
+Turning verification on is the stricter choice, since it stops someone from reaching the order history behind an email address they don't control. Leave it off if you prefer a smoother experience for returning customers.
+### 2. Login After Account Creation ​
+
+FluentCart creates a customer account either when someone registers directly or when a guest checkout completes and account creation is turned on. This setting decides what happens to that customer right after.
+
+- **Log in automatically:** This is the default. The customer is signed in immediately. After registering directly, they land on their profile page.
+- **Let customers log in:** After registering directly, the customer sees a message telling them to check their email, set a password, and log in themselves before they can use the account.
+
+INFO
+
+Requiring a customer to set their own password before first login is a common compliance requirement, since it proves they, and not whoever happened to check out, control the account. If **Customer email verification** is set to **Required**, that confirmation still applies whichever login option you pick.
 ## Saving Your Settings ​
 
-After making changes, click the **Save Settings** button to apply your configuration.
+After making changes, click the **Save** button at the top right of the page, or press **Cmd+S** (**Ctrl+S** on Windows).
+
+Your store now follows your own rules for how customers confirm and access their accounts.
 
 ---
 
@@ -1578,7 +1601,11 @@ These settings control how additional information is presented on your individua
 
 - **Show Relevant in Single Page:** When enabled, this will display a section for related products or upsells directly on the single product page. This is a highly effective strategy for encouraging customers to discover other items they might like, potentially leading to larger purchases.
 - **Show Relevant in Product Modal:** If your theme uses a product quick-view or modal pop-up, this option will display those same relevant products within that modal view. This provides a seamless cross selling opportunity without requiring the customer to navigate to a new page.
+- **Show Reviews In Single Page:** When enabled, your single product pages show the [product review section](/guide/store-management/product-reviews/displaying-reviews) with the rating summary and the customer reviews. This option has an effect only while the **Reviews** feature is switched on in your [review settings](/guide/store-management/product-reviews/review-settings).
 
+INFO
+
+On a block theme, add the **Product Reviews** block to your Single Product template to display reviews on your product page. FluentCart shows a reminder of this under the checkbox.
 ### 2. Image Zooming ​
 
 - **Enable Zoom:** This feature lets customers get a closer look at your product images. When you check this **Enable Zoom** box, customers can hover their mouse over a product picture to see a magnified view. This is perfect for products with fine details, like clothing or electronics.
@@ -1628,6 +1655,15 @@ yourstore.com/product/stylish-t-shirt
 ```
 
 . Choosing a relevant slug can help search engines and users understand what the page is about.
+
+### 5. Product Rating ​
+
+These settings decide where the star rating appears when [product reviews](/guide/store-management/product-reviews/) are enabled.
+
+- **Show Rating in Shop:** Displays each product's average star rating and review count on your shop page and in product grids and carousels. On by default.
+- **Show Rating in Relevant Products:** Displays the same star rating on the related products shown under a product. On by default.
+
+A product with no approved reviews shows no rating on its card, whichever way these are set.
 
 ## Saving Your Settings ​
 

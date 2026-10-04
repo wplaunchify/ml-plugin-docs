@@ -16,6 +16,7 @@ This section covers the following key aspects of store management:
 
 - **Orders Management:** Learn how to view, filter, create, edit, refund, and collect payments for all orders.
 - **Customers Management:** Discover how to view, search, filter, and manage individual customer profiles and their associated data.
+- **Product Reviews:** Collect star ratings and customer feedback on your products, moderate what gets published, and reply to your customers in public.
 - **Exporting Your Store Data:** Export orders, customers, subscriptions, and licenses to CSV or JSON straight from your browser.
 
 By mastering the tools within Store Management, you can fulfill orders efficiently, keep customer information accurate, and make sure your product availability is always up-to-date.
@@ -1247,6 +1248,814 @@ You can add multiple rules by clicking the **+OR** button to create very powerfu
 ### 3. Using the Search Bar ​
 
 If you just need to find something fast, the search bar at the top of the page is perfect. You can type in an Order ID, customer name, email, or product name to instantly find what you're looking for.
+
+---
+
+## Product Reviews ​
+
+**Source:** [https://docs.fluentcart.com/guide/store-management/product-reviews/](https://docs.fluentcart.com/guide/store-management/product-reviews/)
+
+# Product Reviews ​
+
+**Product Reviews** let your customers rate your products and share what they thought of them. Star ratings, written feedback, and verified purchase badges appear right on your product pages, so new shoppers can see real opinions before they decide to buy. You stay in full control, because every review passes through your own moderation queue first.
+
+Reviews are built into FluentCart, so there is nothing extra to install. You just turn the feature on and choose the rules that fit your store.
+
+## How Reviews Work ​
+
+Every review follows the same simple path from the customer to your product page:
+
+1. A customer opens one of your products and clicks the **Write a Review** button.
+2. A drawer slides in with a short form for a star rating and their written feedback.
+3. FluentCart checks whether they are allowed to review that product, based on your settings.
+4. The review is saved as either **Approved** or **Pending**, depending on your auto-approval setting.
+5. You review it from the **Reviews** screen, where you can approve it, mark it as spam, or throw it away.
+6. Once approved, the review appears on the product page and updates the product's average rating.
+
+## Enabling Product Reviews ​
+
+Reviews ship with FluentCart, but the feature has its own switch so you can decide when your store is ready for it.
+
+1. Log in to your **WordPress Dashboard**.
+2. Navigate to **FluentCart > Settings** in the side menu.
+3. Select **Product Reviews** from the left-hand sidebar.
+4. Turn on the **Enable Product Reviews** toggle.
+5. Click the **Save** button.
+
+Once the feature is on, a **Reviews** screen appears under the **Products** menu in the FluentCart top bar, next to **All Products** and **Attributes**, and your product pages can start collecting feedback.
+
+INFO
+
+If the feature is turned off, the **Reviews** screen is hidden and no review sections show on your storefront. Any reviews you already collected stay safely in your database and come straight back when you switch the feature on again.
+## Turning Reviews Off for a Single Product ​
+
+The setting above controls your whole store. Some products do not suit reviews, though, so each product carries its own checkbox that can opt out of the store-wide setting.
+
+1. Navigate to **FluentCart > Products** and open the product you want to change.
+2. Find the **Publishing** card in the right-hand column.
+3. Tick **Disable reviews for this product**.
+4. Save the product.
+
+The review section disappears from that product's page, while every other product carries on as normal. The checkbox is unticked by default, so new products collect reviews as soon as the feature is on.
+
+## Seeing Ratings at a Glance ​
+
+Your **Products** list carries a **Reviews** column, so you can see how every product is rated without opening anything. Each row shows the average star rating and the number of reviews it is based on.
+
+## What This Section Covers ​
+
+Reviews touch a few different parts of your store, so this section is split into focused guides:
+
+- **Review Settings:** Choose who can leave reviews, whether reviews go live automatically, and how many appear per page.
+- **Moderating Reviews:** Approve, filter, and bulk-manage every review from one screen.
+- **Displaying Reviews on Your Store:** Use the review blocks, or the reviews shortcode, to place ratings and feedback exactly where you want them.
+- **Photo Reviews & Helpful Votes:** Let customers attach photos to their reviews and vote the most useful ones to the top.
+- **Product Schema for Search Results:** See how ratings and reviews are shared with search engines for rich results.
+
+With reviews turned on, your product pages start building social proof on their own, and you keep the final say over everything that gets published.
+
+---
+
+## Displaying Reviews on Your Store ​
+
+**Source:** [https://docs.fluentcart.com/guide/store-management/product-reviews/displaying-reviews](https://docs.fluentcart.com/guide/store-management/product-reviews/displaying-reviews)
+
+# Displaying Reviews on Your Store ​
+
+Once reviews are enabled, your product pages start showing customer feedback on their own. If you build your own layouts, FluentCart also gives you six review blocks for the WordPress block editor and a shortcode for pages that are not built from blocks, so you can place the rating, the review list, and the **Write a Review** button exactly where they work best in your design.
+
+## The Default Product Page ​
+
+With the feature turned on, FluentCart adds a review section to your single product template automatically. You do not need to add anything for this to work.
+
+Shoppers get two halves that work together:
+
+- **The rating summary card** on the left shows the average score out of 5, the star row, how many reviews it is based on, and a bar for each star level so the spread is obvious at a glance. The **Write a Review** button sits at the bottom of the card.
+- **The review list** on the right shows the reviews themselves, each with the reviewer's name, their star rating, how long ago they posted, a title, and their feedback.
+
+Above the list, shoppers can narrow what they see with the filter chips: **All**, plus one chip per star level from **5** down to **1**. The dropdown on the right sorts the list, with four choices:
+
+- **Newest** (the default)
+- **Oldest**
+- **Highest Rating**
+- **Lowest Rating**
+
+When a product has collected more reviews than your **Reviews Per Page** setting allows, the list pages through the rest.
+
+INFO
+
+FluentCart Pro adds two more filter chips: **With Photos** appears once photo reviews are enabled, and **Verified** narrows the list to purchase-verified reviews. Enabling helpful votes also adds a **Most Helpful** sort option. See [Photo Reviews & Helpful Votes](/guide/store-management/product-reviews/photo-reviews-helpful-votes).
+## How Customers Write a Review ​
+
+Clicking **Write a Review** opens a drawer that slides in from the side of the page. By default it shows the whole form at once, so the customer can fill it in from top to bottom:
+
+- **How would you rate this product?:** A star selector *(Required)*. This field is left out entirely if you turned **Enable Star Ratings** off.
+- **Review title:** A short summary, up to 80 characters *(Optional)*.
+- **Your review:** The feedback itself, up to 1,500 characters *(Required)*.
+- **Name and email:** Guests are also asked for their name and email address, and the email is marked private.
+- **Photos:** Appears only when photo reviews are enabled, and the customer can leave it empty.
+
+They finish with **Submit review**.
+
+If you would rather walk customers through the form one step at a time, set **Field Layout** to **Steps (one at a time)** on the [Write a Review](#_5-write-a-review) or [Review Form](#_6-review-form) block. The form then shows the rating, the details, and the photos on separate steps, and the customer moves through them with **Back** and **Next**.
+
+Customers can come back and revise what they wrote. The button changes to **Edit your review** for anyone who has already reviewed that product.
+
+INFO
+
+Editing an approved review sends it back to your **Pending** queue, unless **Auto-approve Reviews** is on. This stops a review from being approved as praise and then quietly rewritten into something else.
+## The Review Blocks ​
+
+For custom layouts, the block editor gives you smaller pieces you can arrange yourself. This is useful when you want the star rating up next to the product title, or a full review section on your home page.
+
+### Accessing the Review Blocks ​
+
+To add a review block to any page, post, or template:
+
+1. From your WordPress dashboard, open the **page**, **post**, or **template** you want to edit.
+2. Click the **plus icon (+)** to open the block inserter.
+3. Scroll to the **FluentCart** category, or search for the block by name.
+4. Place the block where you want it in your layout.
+
+INFO
+
+The review blocks only exist while the **Reviews** feature is switched on in your [review settings](/guide/store-management/product-reviews/review-settings). The blocks themselves are free. FluentCart Pro unlocks some of the layouts and view modes described below.
+### Choosing Which Product a Block Shows ​
+
+Every review block that you place on its own starts with a **Product** panel, and it is the first thing to get right:
+
+- **Query type > Default:** The block picks up whichever product is being viewed. Use this on a single product template, where the block should adapt to each product automatically.
+- **Query type > Custom:** The block always shows one specific product. A **Select Product** button appears so you can choose it. Use this on a landing page, your home page, or anywhere outside a product template.
+
+Blocks placed inside a **Product Reviews** container do not show this panel. The container owns the product, and everything inside follows it.
+
+### 1. Product Reviews ​
+
+This is the complete package, and the quickest way to add a full review section to a custom layout. It holds the rating summary, the review list, and the **Write a Review** button, and it follows one product.
+
+The block is a container. Open the **List View** and you will find a **Rating Summary with Review** block and a **Review List** block inside it, so you can restyle either half, move them around, or drop your own blocks in beside them.
+
+In the **Layout** panel, choose a **Layout preset** to rebuild the whole section from a ready-made arrangement. Use the tabs **All layouts**, **List**, **Grid**, **Carousel**, and **Photo** to narrow the choices. Picking a preset replaces whatever is currently arranged inside the container, and the panel shows **Custom layout** whenever you have rearranged the blocks by hand.
+
+| Layout | Type | What it looks like |
+| --- | --- | --- |
+| Classic | List | The summary card on the left and the list on the right, with the count, filter chips, sorting, and numbered pages. Free. |
+| Minimal List | List | One review per row, with no header above the list and no dates. |
+| Compact | List | Stars, a couple of lines, and a Read more link. No avatar, date, title, photos, or reply and votes footer. |
+| Card Grid | Grid | Two cards to a row, with the filter and sorting above and page numbers like "Page 2 of 7". |
+| Masonry | Grid | Three columns, each card as tall as its content. |
+| Summary on Top | List | The average rating and star breakdown across the top, with the reviews underneath. |
+| Photo Grid | Photo | Three cards to a row, each with the customer's photo across the top. Shows only reviews that have photos. |
+| Photo Wall | Photo | Four photos to a row, with the stars, name, and date over the foot of each. Shows only reviews that have photos. |
+| Photo Strip | Photo | A slider band of customer photos, each opening in a lightbox. Meant to sit above a full list. |
+| Carousel | Carousel | Two reviews at a time, with arrows over the cards and dots below. |
+| Testimonials | Carousel | Each review as a quote with the reviewer's face, name, and stars beneath. Three at a time, changing automatically. |
+
+INFO
+
+**Classic** is free. Every other layout needs FluentCart Pro, and choosing one without Pro shows a notice instead of applying it.
+### 2. Rating Summary with Review ​
+
+The rating summary card on its own: the average score, the star breakdown, and a **Write a Review** button underneath. Reach for this when you want the summary and the call to action in one place, and the reviews themselves somewhere else on the page.
+
+- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product.
+- **Star Color:** Inside the card sits a **Rating Summary** block with its own **Star Color** panel, so the stars can match your brand instead of the default amber.
+
+### 3. Review List ​
+
+The customer reviews on their own, with filtering, sorting, and pagination but no summary card. Pair it with **Rating Summary with Review** when your design wants the two separated.
+
+The **Layout** panel controls how the reviews are arranged:
+
+- **View Mode:** Choose **List**, **Grid**, **Masonry**, or **Slider**. **List** is free. The other three need FluentCart Pro, and without Pro the list stays a single column.
+- **Reviews Per Row** (Grid and Masonry) or **Reviews Per Slide** (Slider): From 2 to 4. Narrow screens always show one at a time.
+
+When you pick **Slider**, an extra **Behavior** panel appears:
+
+- **Autoplay:** **Disabled**, **Always**, or **On Hover**. When autoplay is on, **Autoplay Delay (ms)** sets the time between slides.
+- **Show arrows:** Turns the previous and next arrows on or off. **Arrow Size** offers **Small**, **Medium**, and **Large**, and **Arrow Placement** puts them **On the reviews**, **Beside the reviews**, or **Below the reviews**.
+- **Show pagination:** Adds slider indicators, with a **Pagination Type** of **Dots**, **Fraction**, **Progress Bar**, or **Segmented**.
+- **Infinite loop:** Lets the slider wrap around from the last review to the first.
+
+#### What Each Part of the List Shows ​
+
+The list is built from smaller blocks, so you can remove, reorder, and restyle each part. Open the **List View** to see them:
+
+- **Review Count:** The "N Reviews" heading.
+- **Review Filter:** The star filter chips.
+- **Review Sorting:** The sort dropdown. Its **Default Sort** can be **Newest**, **Oldest**, **Highest Rating**, or **Lowest Rating**.
+- **Review Pagination:** The pager. Choose **Numbers**, **Fraction**, or **Bullets**, and set **Reviews Per Page** from 1 to 50. Use **Use the store setting** to follow your store-wide **Reviews Per Page** setting again.
+- **Review Item:** The card that repeats for every review. Its **Minimum rating** setting hides lower-rated reviews from the list entirely, from **All ratings** up to **5 stars only**, and the count and pages follow. Only the first **Review Item** in a list is used.
+
+Inside a **Review Item** you can arrange the individual fields by adding, removing, or moving these blocks: **Review Author Avatar**, **Review Author Name**, **Review Rating**, **Review Verified Badge**, **Review Variation Title**, **Review Date**, **Review Title**, **Review Content**, **Review Photos**, **Review Votes**, and **Review Reply**. A field disappears from the card when you remove its block.
+
+A few of them carry their own settings:
+
+- **Review Rating:** A **Star Color** panel, with **Reset to default** to go back to the store's color.
+- **Review Content:** **Words shown**, from 0 to 200. At 0 the whole review shows. Any other number cuts longer reviews down to that many words with a **Read more** link.
+- **Review Photos:** An **Attachments** panel. **Attachments Shown** sets how many photos a review displays, and the rest sit behind a **+** that opens them in the lightbox. Choose where the **+** counter sits, then either set an **Attachment Width** and **Attachment Height** for the tiles or switch on **Full Width Attachments** to give each photo its own line. With full width on, the Pro options **Attachment As Card Background** and **Flush To Card Edges** let a photo take over the card.
+
+### 4. Product Rating ​
+
+The star rating on its own, as a compact inline element, with the number of reviews in brackets next to it. Ideal beside a product title, inside a card, or anywhere a full review section would be too much.
+
+- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product.
+- **Minimum Reviews:** Hides the rating until the product has at least this many reviews. Leave it at 0 to always show it, including five empty stars on a product with no reviews.
+- **Minimum Average Rating:** Hides the rating unless the product averages at least this many stars. Half stars are allowed, and 0 shows every rating.
+
+### 5. Write a Review ​
+
+A single button that opens the review submission form. Place it anywhere you want to invite feedback.
+
+The **Button Settings** panel decides what happens when a customer clicks it:
+
+- **Open In:** Choose **Drawer (slides in from the side)**, which is the default, or **Modal (centered on the screen)**.
+- **Field Layout:** Choose **Inline (all fields at once)**, the default, or **Steps (one at a time)** to walk the reviewer through rating, details, and photos.
+
+The button changes its label depending on who is looking at it, and the **Button Text** panel lets you write all three versions yourself:
+
+- **New Review:** Shown when the visitor has not reviewed this product yet. The default is **Write a Review**.
+- **Edit Review:** Shown when the visitor already has a review for this product. The default is **Edit your review**.
+- **Logged Out:** Shown when a visitor must log in before reviewing. The default is **Log in to Review**.
+
+INFO
+
+The **Logged Out** label only ever appears if your **Who can leave reviews?** setting requires an account. On a store set to **Anyone**, guests go straight to the review form.
+### 6. Review Form ​
+
+The review form printed directly on the page, with no button and no drawer. Use it on a dedicated "leave a review" page, or under your product description when you want the form always in view.
+
+- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product.
+- **Field Layout:** Choose **Inline (all fields at once)** or **Steps (one at a time)**, exactly as on the **Write a Review** block.
+
+## The Reviews Shortcode ​
+
+Pages that are not built from blocks, such as a page made with a page builder or the classic editor, can show the same section with a shortcode. It draws the same reviews as the **Review List** block, so a page built with the shortcode and a page built with blocks look alike.
+
+```
+[fluent_cart_product_reviews]
+```On a product page, with no attributes, it shows the current product's reviews. Anywhere else, add the product's ID with the 
+```
+id
+```
+
+ attribute, which you can find in the product's list row next to its name:
+
+```
+[fluent_cart_product_reviews id="741" view_mode="grid" columns="3" per_page="6"]
+```Yes or no values accept 
+```
+yes
+```
+
+, 
+```
+no
+```
+
+, 
+```
+true
+```
+
+, 
+```
+false
+```
+
+, 
+```
+1
+```
+
+, 
+```
+0
+```
+
+, 
+```
+on
+```
+
+, or 
+```
+off
+```
+
+. An unrecognized value is ignored and the default applies.
+
+INFO
+
+Like the blocks, the shortcode only works while the **Reviews** feature is on. The 
+```
+grid
+```
+
+, 
+```
+masonry
+```
+
+, and 
+```
+slider
+```
+
+ view modes and the 
+```
+media_backdrop
+```
+
+ and 
+```
+media_flush
+```
+
+ attributes need FluentCart Pro. Without Pro the shortcode shows a single-column list.
+### Product and Layout ​
+
+| Attribute | Values | Default |
+| --- | --- | --- |
+| id | A published product's ID | The current product |
+| view_mode | list, grid, masonry, slider | list |
+| columns | 2 to 4, for grid, masonry, and slider | 2 |
+| per_page | 1 to 100 | Your store's Reviews Per Page setting |
+| pagination | numbers, fraction, bullets (the list pager, not the slider indicators) | numbers |
+| max_words | 1 to 500, words shown before Read more | The whole review |
+| summary | yes or no, the rating summary card | yes |
+| summary_position | side, top, cta (only the Write a Review button) | side |
+| count | yes or no, the "N Reviews" line | yes |
+| filter | yes or no, the star chips | yes |
+| sorting | yes or no, the sort dropdown | yes |
+| sort_by | created_at, rating | created_at |
+| sort_order | ASC, DESC | DESC |
+| photos | only, to list just the reviews that have photos | All reviews |
+| star_color | A hex color such as #00009F | #f59e0b |
+
+### What Each Review Shows ​
+
+Each of these takes 
+```
+yes
+```
+
+ or 
+```
+no
+```
+
+ and defaults to 
+```
+yes
+```
+
+.
+
+| Attribute | Shows or hides |
+| --- | --- |
+| avatar | The reviewer's avatar |
+| reviewer_name | The reviewer's name |
+| date | The review date |
+| title | The review's title |
+| text | The review text |
+| show_photos | The photos attached to a review |
+| variation | The variation chip next to the name |
+| meta | The line of details under the name |
+| footer | The row holding the store reply and helpful votes |
+| replies | The View Reply button |
+| verified_badge | The verified badge. When you leave it out, your store-wide Show 'Verified Owner' Badge setting decides. |
+
+Three more attributes rearrange a card, and they default to 
+```
+no
+```
+
+: 
+```
+photos_first
+```
+
+ puts the photos above the text, 
+```
+rating_first
+```
+
+ puts the stars above the name, and 
+```
+badge_last
+```
+
+ moves the verified badge after the variation.
+
+### Photos ​
+
+| Attribute | Values | Default |
+| --- | --- | --- |
+| media_visible | How many photos to show, with the rest behind a +. Capped at the photo limit per review in your settings | 0 (show all) |
+| media_width, media_height | Photo tile size in pixels, from 16 to 400 | 0 (the default tile size) |
+| media_full_width | yes or no, one photo per line across the review | no |
+| media_more | Where the + counter goes: overlay (on the last photo), tile (beside the photos), or none (hidden) | overlay |
+| media_backdrop | yes or no, Pro: the first photo fills the card | no |
+| media_flush | yes or no, Pro: the photo becomes the top of the card | no |
+
+### Slider ​
+
+These apply only when 
+```
+view_mode
+```
+
+ is 
+```
+slider
+```
+
+.
+
+| Attribute | Values | Default |
+| --- | --- | --- |
+| arrows | yes or no | yes |
+| arrow_size | sm, md, lg | md |
+| arrow_position | overlap, outside, bottom | overlap |
+| autoplay | no, yes, hover (not true or 1) | no |
+| autoplay_delay | 300 to 10000 milliseconds | 3000 |
+| infinite | yes or no | no |
+| slider_pagination | yes or no, to show slider indicators | no |
+| slider_pagination_type | bullets, fraction, progressbar, segmented | bullets |
+
+## What Shoppers See ​
+
+Only approved reviews ever appear on your storefront. Pending, spam, and trashed reviews stay hidden, and they are left out of the average rating and the star breakdown too. Your replies appear underneath the reviews they answer, so customers can see that you responded.
+
+If you build with Elementor instead, the same pieces are available as [review widgets for Elementor](/guide/customization-and-themes/elementor-review-widgets).
+
+Your reviews are now working for you on the storefront, showing real feedback exactly where shoppers make their decision.
+
+---
+
+## Moderating Reviews ​
+
+**Source:** [https://docs.fluentcart.com/guide/store-management/product-reviews/moderating-reviews](https://docs.fluentcart.com/guide/store-management/product-reviews/moderating-reviews)
+
+# Moderating Reviews ​
+
+The **Reviews** screen is where every piece of customer feedback lands. From this one list you can read new reviews, approve the good ones, and clear out spam. Everything works on single reviews or on a whole batch at once, so a busy store stays manageable.
+
+## Accessing the Reviews Screen ​
+
+To open your review queue:
+
+1. Log in to your **WordPress Dashboard**.
+2. Navigate to **FluentCart** in the side menu.
+3. Open the **Products** menu in the top navigation bar.
+4. Select **Reviews**.
+
+INFO
+
+The **Reviews** option only appears when the feature is switched on and your user role has the **Manage Reviews** permission. If you cannot see it, check your [review settings](/guide/store-management/product-reviews/review-settings) first, then your role permissions.
+## Reading the Reviews List ​
+
+Each row gives you everything you need to judge a review without opening it:
+
+- **ID:** The review's reference number, with the name of the product being reviewed beneath it.
+- **Reviewer:** The customer's name and email address.
+- **Rating:** The star rating they gave.
+- **Review:** The review's title, with the opening of the text beneath it.
+- **Status:** Whether the review is **Approved**, **Pending**, or in another state.
+- **Date:** When the review was submitted.
+- **Actions:** The menu for acting on that single review.
+
+At the bottom of the list you can change how many reviews load per page and page through the results.
+
+## Filtering by Status ​
+
+The tabs across the top of the list let you jump straight to the reviews that need you:
+
+- **All:** Every review, whatever its state.
+- **Approved:** Live on the product page and counting towards the product's average rating.
+- **Pending:** Waiting for your decision. Not visible to shoppers, and not affecting the rating.
+- **Spam:** Flagged as junk. Hidden from your storefront but not deleted, so you can restore it if you flagged it by mistake.
+
+**Trash** sits under the **More views** dropdown next to the tabs, since it is the one you need least often.
+
+## Finding a Specific Review ​
+
+When your store starts collecting real volume, search and filters do the heavy lifting.
+
+### Searching ​
+
+Use the search icon at the top right of the list to match against the reviewer's name, their email address, the review title, the review text, or the product name. This is the quickest way to find a review when you already know something about it.
+
+### Using Advanced Filters ​
+
+For narrower questions, such as "show me every one-star review that nobody has replied to yet", switch on **Advanced Filter** at the top right of the list. You can then filter by:
+
+- **Star Rating:** Narrow the list to a specific rating, or use an operator to catch a range such as everything below 3 stars.
+- **Verified Purchase:** Show only reviews from customers who actually bought the product, or only those who did not.
+- **Has Admin Reply:** Separate the reviews you have already answered from the ones still waiting.
+- **Review Date:** Limit the list to a date or a date range.
+- **Reviewer Name:** Match reviews by the name the customer submitted.
+- **Reviewer Email:** Match reviews by the customer's email address.
+
+You can also sort the list by review ID, submission date, reviewer name, or star rating. Sorting by rating is handy when you want to work through your lowest-rated feedback first.
+
+## Adding a Review Yourself ​
+
+You do not have to wait for a customer to write one. If a shopper sent you feedback by email or on social media, you can enter it as a review yourself.
+
+1. Open the **Reviews** screen.
+2. Click the **Add Review** button at the top right.
+
+1. Fill in the form and click **Add Review**.
+
+The form asks for the following:
+
+- **Select Product:** The product being reviewed *(Required)*. Start typing to search.
+- **Variation:** Appears once you pick a product that has variations. Leave it on the whole product, or choose the specific variation the reviewer bought.
+- **How would you rate this product?:** The star rating. It is required only while **Star Ratings Required** is on in your review settings, and the field is hidden when star ratings are disabled.
+- **Review title:** A short summary of the experience *(Optional)*.
+- **Your review:** The review text, up to 5,000 characters *(Required)*.
+- **Reviewer name:** The name shown on the review *(Required)*.
+- **Reviewer email:** The reviewer's email address *(Optional)*.
+- **Status:** Whether the review goes live right away as **Approved**, or waits as **Pending**.
+- **Verified purchase:** Marks the review with the verified badge.
+- **Attachments:** Photos to show with the review. This row appears only while **Photo Reviews** is switched on in your [review settings](/guide/store-management/product-reviews/review-settings#photo-reviews-and-helpful-votes), it needs FluentCart Pro, and the form shows the photo limits you set there.
+
+## Acting on a Single Review ​
+
+Click the three-dot **Actions** menu at the end of any row to deal with that review on the spot.
+
+The menu offers:
+
+- **View:** Open the full review, where you can read all of it and reply to the customer.
+- **Approve:** Publish the review on the product page.
+- **Pending:** Send the review back to your **Pending** queue, hidden from the storefront until you decide again.
+- **Spam:** Flag the review as junk and hide it from your storefront.
+- **Trash:** Discard the review without deleting it outright.
+- **Delete:** Remove the review permanently.
+
+The menu only shows the states a review is not already in, so an approved review offers **Pending**, **Spam** and **Trash** but not **Approve**. **View** and **Delete** are always there.
+
+## Opening a Full Review ​
+
+Choosing **View** takes you to the review's own page, where you can read all of it and answer the customer.
+
+The breadcrumb at the top tells you which product the review belongs to and who wrote it, with the current status beside the name. The **More Actions** menu at the top right holds every status change, **Approve**, **Mark as Spam**, **Mark as Pending**, and **Move to Trash**, showing only the ones that apply, plus **Delete Permanently**.
+
+The **Review Information** card holds the review itself: the star rating and its numeric score, the reviewer's name, when they posted, the review title, and their feedback. Small tags next to the name tell you who you are dealing with, marking the entry as a **Customer review**, flagging a **Guest** who reviewed without an account, or confirming a **Verified Purchase**.
+
+The **About the Reviews** card beside it gathers the rest of the context and the quick controls:
+
+- **Product:** The product being reviewed, with a link that opens it on your storefront.
+- **Customer:** The reviewer, with a link to their customer profile. Guests show as **Guest customer** with a **No account** tag.
+- **Verified purchase:** A switch that shows or hides the verified badge on this one review.
+- **Actions:** One-click buttons for the status changes, such as **Spam**, **Trash** and **Pending**, so you can decide without leaving the page.
+
+If the review came with photos, a **Review Media** section appears below the text. Click any image to open it full size and step through the rest with **Previous** and **Next**.
+
+If you have **Helpful Votes** enabled, a card beside the review shows how shoppers reacted to it, with the number who found it helpful and the number who did not. See [Photo Reviews & Helpful Votes](/guide/store-management/product-reviews/photo-reviews-helpful-votes) for how voting works.
+
+## Replying to Customers ​
+
+A short reply to a critical review often does more for your store than the review itself costs you. Your replies appear publicly on the product page, directly under the review they answer, signed as the store owner.
+
+To reply, type your response into the message box at the bottom of the **Review Information** card and click **Reply**.
+
+You can also reply to several reviews at once by selecting them in the list and choosing **Reply** from the bulk actions, which is useful when you want to send the same thank-you note to a group of happy customers. Each review holds one store reply. To reword or withdraw it, delete the existing reply first, then write a new one.
+
+INFO
+
+By default customers cannot reply to your answer, so each review stays a single review with one store reply from you.
+## Using Bulk Actions ​
+
+When a batch of reviews needs the same treatment, handle them together instead of one by one.
+
+1. Select the reviews you want to act on using the checkboxes in the list.
+2. Choose an action from the bulk actions dropdown.
+3. Click **Confirm** to run it.
+
+A bar with the bulk actions dropdown appears above the list as soon as you tick a review, and it counts how many items you have selected.
+
+You get six bulk actions: **Approve**, **Pending**, **Mark as Spam**, **Move to Trash**, **Delete Permanently**, and **Reply**.
+
+INFO
+
+Bulk actions run on up to 50 reviews at a time. If you select more than that, work through the list in batches. Product ratings are recalculated once per product after the batch finishes, so even a large clean-up stays fast.
+## Ratings Update Automatically ​
+
+You never need to refresh a product's rating by hand. Whenever a review is approved, unapproved, marked as spam, trashed, or deleted, FluentCart recalculates that product's average rating, total review count, and star breakdown for you. This holds true even if the review's status is changed from the standard WordPress comments screen or by another plugin.
+
+With your queue under control, the next step is deciding where those approved reviews show up. See [Displaying Reviews on Your Store](/guide/store-management/product-reviews/displaying-reviews).
+
+---
+
+## Photo Reviews & Helpful Votes ​
+
+**Source:** [https://docs.fluentcart.com/guide/store-management/product-reviews/photo-reviews-helpful-votes](https://docs.fluentcart.com/guide/store-management/product-reviews/photo-reviews-helpful-votes)
+
+# Photo Reviews & Helpful Votes ​
+
+FluentCart Pro adds two upgrades to your reviews. **Photo Reviews** let customers show your product in real life instead of only describing it, and **Helpful Votes** let shoppers push the most useful reviews to the top of the list. Both live at the bottom of your review settings, under the general options.
+
+INFO
+
+These two features require **FluentCart Pro**. With the free plugin their toggles are visible but locked, and an **Upgrade to Pro** link appears beneath them.FluentCart Pro also adds a **Verified** filter chip to your storefront review list once its review features are active, so shoppers can narrow it down to purchase-verified feedback.
+
+## Photo Reviews ​
+
+A photo from a real customer is often the most persuasive thing on a product page. When photo reviews are on, the review form gains a **Photos** area where customers can attach images alongside their written feedback.
+
+### Enabling Photo Reviews ​
+
+To turn photo reviews on:
+
+1. Navigate to **FluentCart > Settings** in your WordPress dashboard.
+2. Select **Product Reviews** from the left-hand sidebar.
+3. Scroll to the **Photo Reviews** row.
+4. Turn on the **Photo Reviews** toggle.
+5. Set your upload limits, then click **Save**.
+
+### Photo Review Options ​
+
+These options appear once **Photo Reviews** is enabled:
+
+- **Max Photos Per Review:** How many images a single review can carry. You can set anywhere from 1 to 10, and the default is 5.
+- **Max File Size (MB):** The size ceiling for each uploaded image, from 0.1 MB up to 10 MB. The default is 1 MB.
+- **Auto-approve Photo Reviews:** Publishes reviews with photos immediately. When off, photo reviews always wait for moderation. Off by default.
+- **Allowed File Types:** The image formats customers may upload. You can allow **JPEG**, **PNG**, **GIF**, and **WebP**, and all four are enabled by default.
+
+INFO
+
+**Auto-approve Photo Reviews** is a separate decision from **Auto-approve Reviews**. This setting can only hold photo reviews back, never publish them on its own. With **Auto-approve Reviews** on and this one off, plain text reviews go live instantly while every review with photos waits for you, which is the safer setup for most stores. If **Auto-approve Reviews** is off, photo reviews wait as well, whatever this setting says.
+### How Customers Add Photos ​
+
+Photos sit at the bottom of the review form, after the star rating and the written feedback. Customers drop their images in, watch each one upload, and can remove any they change their mind about. Nobody is forced to add one, and the form tells them plainly that skipping is fine. If you set the form to the [Steps layout](/guide/store-management/product-reviews/displaying-reviews#how-customers-write-a-review), photos become the last step instead.
+
+Anyone who is allowed to leave a review can attach photos. Photo uploads follow exactly the same **Who can leave reviews?** rule you set in your [review settings](/guide/store-management/product-reviews/review-settings), so a store limited to verified buyers stays limited to verified buyers here too.
+
+Once reviews with photos start coming in, shoppers get a **With Photos** filter chip above the review list, and clicking any image opens it full size with arrows to step through the rest. You get the same gallery in your admin: open a review with the **View** action and its images appear in a **Review Media** section.
+
+When a review is deleted, its photos are removed with it, so your media library does not fill up with leftovers. Images that a customer uploaded but never submitted are cleaned up automatically the next day.
+
+## Helpful Votes ​
+
+Helpful votes let your customers do some of the curating for you. Shoppers mark a review as **Helpful** or **Not Helpful**, and the review list gains a **Most Helpful** sorting option that surfaces the best feedback first.
+
+### Enabling Helpful Votes ​
+
+To turn voting on:
+
+1. Navigate to **FluentCart > Settings** in your WordPress dashboard.
+2. Select **Product Reviews** from the left-hand sidebar.
+3. Scroll to the **Helpful Votes** row.
+4. Make sure the **Helpful Votes** toggle is on. It is on by default once FluentCart Pro is active.
+5. Click **Save**.
+
+### How Voting Works ​
+
+Voting is kept deliberately simple, and a few rules keep it honest:
+
+- **Logged-in customers only:** Guests do not get vote buttons at all, because there is no reliable way to count a guest's vote only once. Asking shoppers to log in keeps the counts meaningful.
+- **One vote per review:** Each customer gets a single vote on any given review.
+- **Votes can be changed or removed:** Clicking the same button again clears the vote, and clicking the opposite one switches it.
+- **No voting on your own review:** Customers cannot vote on reviews they wrote themselves.
+
+### Seeing How Shoppers Reacted ​
+
+You can check the votes on any review from your own admin. Open a review from **FluentCart > Products > Reviews** using the **View** action, and a **Helpful Votes** card sits beside the review showing how shoppers reacted to it.
+
+The green row counts the shoppers who found the review helpful, and the red row counts those who did not. It is a useful signal while you moderate. A review collecting steady not-helpful votes is worth a second look, and a review your customers keep marking helpful is one you may want to reply to.
+
+With photos and votes in place, your product pages carry the kind of proof that helps shoppers commit, and the most useful reviews rise to the top on their own.
+
+---
+
+## Review Settings ​
+
+**Source:** [https://docs.fluentcart.com/guide/store-management/product-reviews/review-settings](https://docs.fluentcart.com/guide/store-management/product-reviews/review-settings)
+
+# Review Settings ​
+
+The **Product Reviews** settings page is where you decide how reviews behave in your store. You choose who is allowed to leave a review, whether new reviews go live straight away or wait for your approval, and how they are presented to shoppers. All of it sits on a single card, and every option takes effect as soon as you save.
+
+## Accessing Review Settings ​
+
+To open the review settings:
+
+1. Log in to your **WordPress Dashboard**.
+2. Navigate to **FluentCart > Settings** in the side menu.
+3. Select **Product Reviews** from the left-hand sidebar.
+
+## Enable Product Reviews ​
+
+The switch at the top of the card is the master control for the whole feature. The line beneath it tells you what your store is doing right now, either **Customers can leave ratings and reviews on products** or **Customers cannot leave reviews right now**.
+
+- **Enable Product Reviews:** Allow customers to leave ratings and reviews on products. When this is off, the **Reviews** screen is hidden and no review sections appear on your product pages. Existing reviews are kept and return as soon as you switch it back on.
+
+The rest of the settings only appear once this switch is on. Individual products can still opt out while the feature is on. See [turning reviews off for a single product](/guide/store-management/product-reviews/#turning-reviews-off-for-a-single-product).
+
+## General Settings ​
+
+These options control who can review your products and what happens to a review after it is submitted.
+
+### Who Can Leave Reviews? ​
+
+This setting decides which shoppers see the review form. Pick the option that matches how much you trust your audience:
+
+- **Verified buyers only:** Only customers who purchased the product can review it. This is the default, and it gives you the most trustworthy feedback.
+- **Logged-in users:** Any logged-in user can leave a review, whether they bought the product or not.
+- **Anyone:** Guests can also leave reviews, without creating an account. The review form asks guests for their name and email address, and the email stays private.
+
+INFO
+
+Whichever option you pick, each customer can only leave one review per product. If you reject a review by marking it as spam or moving it to trash, that customer is free to submit a fresh one.
+### Display and Approval Options ​
+
+The rest of the general settings shape how reviews look and how quickly they appear:
+
+- **Show 'Verified Owner' Badge:** Displays a **Verified Purchase** badge on reviews from customers who bought the product. Shoppers can tell genuine purchase feedback apart at a glance. On by default.
+- **Enable Star Ratings:** Allows customers to rate products with stars, and shows those ratings on your product pages. Turning it off also removes the rating from the review form, leaving a text-only review. On by default.
+- **Star Ratings Required:** Makes the star rating mandatory. When it is off, customers can submit text-only reviews without a star rating. This option appears indented under **Enable Star Ratings**, only while that switch is on, and it is on by default.
+- **Auto-approve Reviews:** Publishes new reviews immediately, without moderation. Off by default, which means every review waits in your **Pending** queue until you approve it.
+- **Reviews Per Page:** How many reviews a product page lists before it starts paging. The default is 10, and you can set anything from 1 to 50.
+
+INFO
+
+Leaving **Auto-approve Reviews** off is the safer choice for most stores. It costs you a moment of moderation per review, but nothing reaches your product pages without your approval.
+## Photo Reviews and Helpful Votes ​
+
+The two rows at the bottom of the card, **Photo Reviews** and **Helpful Votes**, need FluentCart Pro. With the free plugin they stay visible but locked, and a note beneath each one reads **This feature is only available in FluentCart Pro**, followed by an **Upgrade to Pro** link.
+
+- **Photo Reviews:** Lets customers attach photos to their reviews. Turning it on reveals its own limits underneath.
+- **Helpful Votes:** Lets visitors mark reviews as helpful.
+
+Both options come with their own limits and behavior. For the full setup, see [Photo Reviews & Helpful Votes](/guide/store-management/product-reviews/photo-reviews-helpful-votes).
+
+## Getting Notified About Reviews ​
+
+FluentCart sends three review emails, and all of them are switched on out of the box. You can find them here:
+
+1. Navigate to **FluentCart > Settings** in your WordPress dashboard.
+2. Select **Email Configuration** from the left-hand sidebar.
+3. Click **Notifications**.
+4. Scroll to the **Review Actions** group.
+
+The group holds three notifications:
+
+- **Send mail to admin when a new review is submitted:** Tells you a review is waiting, so nothing sits in your queue unnoticed. It goes to **Admin**.
+- **Send mail to the reviewer when their review is approved:** Lets the customer know their review is now live on the product page. It goes to the **Customer**.
+- **Send mail to the reviewer when the store replies to their review:** Lets the customer know you answered them. It goes to the **Customer**.
+
+Use each **Enabled** toggle to switch a notification off, or click the pencil icon to rewrite its subject and body. The [email notification](/guide/settings-configuration/email-configuration/configuring-email-notification) editor works the same way here as it does for order and subscription emails.
+
+## Saving Your Changes ​
+
+After adjusting any option:
+
+1. Check that your selections match how you want reviews to work.
+2. Click the **Save** button at the top right of the page, or press **Cmd+S** (**Ctrl+S** on Windows).
+
+Your store now follows your own review policy, and you can move on to [moderating the reviews](/guide/store-management/product-reviews/moderating-reviews) as they come in.
+
+---
+
+## Product Schema for Search Results ​
+
+**Source:** [https://docs.fluentcart.com/guide/store-management/product-schema](https://docs.fluentcart.com/guide/store-management/product-schema)
+
+# Product Schema for Search Results ​
+
+FluentCart adds **Product schema** (JSON-LD structured data) to every product page automatically. It is a small block of hidden data that tells search engines like Google the product's name, price, availability, and ratings, so your listings can qualify for rich results such as price and star ratings under the search link.
+
+There is nothing to switch on. The data is added to single product pages only, and it is built fresh each time a page loads, so a price change, a sold-out product, or a newly approved review shows up on the next visit.
+
+## What the Schema Contains ​
+
+Each product page carries one product entry with the details a shopper sees on the page:
+
+- **Basics:** The product name, page link, featured image, and description. When a product has a single variation, its SKU is included too.
+- **Offers:** One offer for a single-variation product, or a price range with the lowest price, highest price, and number of options for a product with several variations. Each offer carries the store currency and its stock status, and only active variations are included. Stock status reflects real stock only when Stock Management is enabled. Otherwise every offer is shown as in stock.
+- **Aggregate rating:** The average star rating and the number of reviews. This appears once the product has approved reviews.
+- **Reviews:** The individual reviews shown on the page, including the reviewer name, date, title, text, and star rating.
+
+INFO
+
+The rating and review parts follow your [review settings](/guide/store-management/product-reviews/review-settings). If **Enable Product Reviews** is off, reviews are disabled for that product, or **Show Reviews In Single Page** is off in your product page settings, only the basics and offers are added.
+## What Is Left Out ​
+
+Search engines only accept information a visitor can actually see, so FluentCart holds back anything the page itself hides:
+
+- Draft, pending, and password-protected products get no schema.
+- Only approved reviews are included. Pending, spam, and trashed reviews never appear, and neither do store replies.
+- Reviews without a star rating are included in the review count but not in the average, and they are not listed one by one.
+- The list holds as many reviews as your **Reviews Per Page** setting shows, up to 20.
+
+## Checking Your Product Pages ​
+
+To confirm the schema is working, paste a product page link into Google's Rich Results Test and look for a **Product** entry with **Merchant listings** or **Review snippets**. Search engines decide on their own whether to show rich results, and it can take a while after a page is crawled.
+
+If you use an SEO plugin that also outputs product schema, run the test once to make sure the page doesn't end up with two competing product entries.
 
 ---
 

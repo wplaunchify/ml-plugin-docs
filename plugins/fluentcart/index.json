@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-09-27T04:49:36.530Z",
-  "total_pages": 158,
+  "last_scraped": "2026-10-04T06:27:23.473Z",
+  "total_pages": 166,
   "failed_urls_count": 5,
   "sections": [
     {
@@ -78,7 +78,7 @@
       "slug": "customization-and-themes",
       "url": "https://docs.fluentcart.com/guide/customization-and-themes/",
       "file": "categories/customization-and-themes.md",
-      "page_count": 13,
+      "page_count": 14,
       "pages": [
         {
           "title": "Advanced Customization with CSS Variables ​",
@@ -99,6 +99,10 @@
         {
           "title": "FluentCart Product Widgets for Elementor ​",
           "url": "https://docs.fluentcart.com/guide/customization-and-themes/elementor-product-widgets"
+        },
+        {
+          "title": "FluentCart Review Widgets for Elementor ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/elementor-review-widgets"
         },
         {
           "title": "FluentCart Bricks Blocks ​",
@@ -685,7 +689,7 @@
       "slug": "store-management",
       "url": "https://docs.fluentcart.com/guide/store-management/",
       "file": "categories/store-management.md",
-      "page_count": 17,
+      "page_count": 23,
       "pages": [
         {
           "title": "Store Management ​",
@@ -752,6 +756,30 @@
           "url": "https://docs.fluentcart.com/guide/store-management/orders-management/viewing-filtering-orders"
         },
         {
+          "title": "Product Reviews ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/product-reviews/"
+        },
+        {
+          "title": "Displaying Reviews on Your Store ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/product-reviews/displaying-reviews"
+        },
+        {
+          "title": "Moderating Reviews ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/product-reviews/moderating-reviews"
+        },
+        {
+          "title": "Photo Reviews & Helpful Votes ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/product-reviews/photo-reviews-helpful-votes"
+        },
+        {
+          "title": "Review Settings ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/product-reviews/review-settings"
+        },
+        {
+          "title": "Product Schema for Search Results ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/product-schema"
+        },
+        {
           "title": "FluentCart status Overview ​",
           "url": "https://docs.fluentcart.com/guide/store-management/understanding-statuses"
         }
@@ -762,11 +790,15 @@
       "slug": "troubleshooting-support",
       "url": "https://docs.fluentcart.com/guide/troubleshooting-support/",
       "file": "categories/troubleshooting-support.md",
-      "page_count": 4,
+      "page_count": 5,
       "pages": [
         {
           "title": "Troubleshooting & Support ​",
           "url": "https://docs.fluentcart.com/guide/troubleshooting-support/"
+        },
+        {
+          "title": "Caching and Optimization Exclusions ​",
+          "url": "https://docs.fluentcart.com/guide/troubleshooting-support/caching-exclusions"
         },
         {
           "title": "Common Issues & FAQs ​",
