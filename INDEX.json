@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04T19:50:13.767Z",
+  "last_updated": "2026-10-04T19:56:23.138Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -129,7 +129,7 @@
       "slug": "affiliatewp-multi-tier-commissions",
       "name": "AffiliateWP - Multi-Tier Commissions",
       "documentation_url": "https://affiliatewp.com/docs/documentation/",
-      "last_scraped": "2026-10-04T18:37:39.587Z",
+      "last_scraped": "2026-10-04T18:37:39.583Z",
       "page_count": 220,
       "categories": [
         "uncategorized"
@@ -1088,7 +1088,7 @@
       "slug": "hide-from-search",
       "name": "Hide from Search",
       "documentation_url": "https://wordpress.org/plugins/mpress-hide-from-search/",
-      "last_scraped": "2026-10-04T19:44:33.228Z",
+      "last_scraped": "2026-10-04T19:44:33.226Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -1753,7 +1753,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/",
-      "last_scraped": "2026-10-04T18:18:08.226Z",
+      "last_scraped": "2026-10-04T18:18:08.221Z",
       "page_count": 44,
       "categories": [
         "add-gutenberg-editor-to-woocommerce",
@@ -1806,7 +1806,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-      "last_scraped": "2026-10-04T19:50:13.767Z",
+      "last_scraped": "2026-10-04T19:50:13.764Z",
       "page_count": 24,
       "categories": [
         "add-edit-wordpress-menus",
@@ -3147,8 +3147,8 @@
       "slug": "woocommerce",
       "name": "WooCommerce",
       "documentation_url": "https://woocommerce.com/documentation/",
-      "last_scraped": "2026-09-27T19:04:36.933Z",
-      "page_count": 3648,
+      "last_scraped": "2026-10-04T19:56:18.984Z",
+      "page_count": 3632,
       "categories": [
         "uncategorized"
       ]
@@ -3415,7 +3415,7 @@
       "slug": "wp-all-import-user-import-add-on-pro",
       "name": "WP All Import - User Import Add-On Pro",
       "documentation_url": "https://www.wpallimport.com/documentation/",
-      "last_scraped": "2026-10-04T19:39:31.741Z",
+      "last_scraped": "2026-10-04T19:39:31.736Z",
       "page_count": 199,
       "categories": [
         "uncategorized"
@@ -3473,7 +3473,7 @@
       "slug": "wp-fusion",
       "name": "WP Fusion",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-10-04T19:17:51.899Z",
+      "last_scraped": "2026-10-04T19:17:51.890Z",
       "page_count": 486,
       "categories": [
         "abandoned-cart-tracking",
