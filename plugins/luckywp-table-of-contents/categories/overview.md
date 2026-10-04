@@ -251,7 +251,7 @@ Intl
 	“LuckyWP Table of Contents” is open source software. The following people have contributed to this plugin.
 
 Contributors
-		- ![](https://secure.gravatar.com/avatar/53e5ee1dedd50f71e4aeeac2929f786cdfb400359d4776e6cd806388d0d5df2c?s=32&d=mm&r=g)				[LuckyWP](https://profiles.wordpress.org/theluckywp/)“LuckyWP Table of Contents” has been translated into 33 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/luckywp-table-of-contents/contributors) for their contributions.
+		- ![](https://secure.gravatar.com/avatar/53e5ee1dedd50f71e4aeeac2929f786cdfb400359d4776e6cd806388d0d5df2c?s=32&d=mm&r=g)				[LuckyWP](https://profiles.wordpress.org/theluckywp/)“LuckyWP Table of Contents” has been translated into 34 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/luckywp-table-of-contents/contributors) for their contributions.
 
 [Translate “LuckyWP Table of Contents” into your language.](https://translate.wordpress.org/projects/wp-plugins/luckywp-table-of-contents)
 
