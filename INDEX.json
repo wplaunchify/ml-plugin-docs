@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04T18:14:48.395Z",
+  "last_updated": "2026-10-04T18:15:13.886Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -309,7 +309,7 @@
       "slug": "featured-image-with-url",
       "name": "Featured Image with URL",
       "documentation_url": "https://wordpress.org/plugins/featured-image-with-url/",
-      "last_scraped": "2026-10-04T18:14:48.395Z",
+      "last_scraped": "2026-10-04T18:14:48.304Z",
       "page_count": 2,
       "categories": [
         "advanced",
@@ -1077,8 +1077,8 @@
       "slug": "fooevents-seating",
       "name": "FooEvents Seating",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-09-27T17:34:49.554Z",
-      "page_count": 328,
+      "last_scraped": "2026-10-04T18:15:11.602Z",
+      "page_count": 329,
       "categories": [
         "frequently-asked-questions",
         "topics"
