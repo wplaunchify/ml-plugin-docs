@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04T12:26:32.175Z",
+  "last_updated": "2026-10-04T12:33:04.564Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -197,7 +197,7 @@
       "slug": "block-specific-spam-woo-orders",
       "name": "Block Specific Spam Woo Orders",
       "documentation_url": "https://wordpress.org/plugins/block-specific-spam-woo-orders/",
-      "last_scraped": "2026-09-27T11:03:05.184Z",
+      "last_scraped": "2026-10-04T12:33:04.564Z",
       "page_count": 2,
       "categories": [
         "advanced",
