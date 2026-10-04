@@ -343,7 +343,7 @@ Contributors
 - ![](https://secure.gravatar.com/avatar/a39cec9005b0dca1bdfd5c6f884f6da77d28f893d60274ca947586b638ab970f?s=32&d=mm&r=g)				[Rupok](https://profiles.wordpress.org/re_enter_rupok/)
 - ![](https://secure.gravatar.com/avatar/450ce66f0232ce15aada15b4ebbb8d86a717dfa604eeb18325c8ddbfa814b94b?s=32&d=mm&r=g)				[Alimuzzaman Alim](https://profiles.wordpress.org/alimuzzamanalim/)
 - ![](https://secure.gravatar.com/avatar/fb6525bdf0b9bc628522d50e4b3dbb0e790500c154b0de255cf133619843efd0?s=32&d=mm&r=g)				[Samir Shah](https://profiles.wordpress.org/solarissmoke/)
-- ![](https://secure.gravatar.com/avatar/e8084b0a02eed1df748f38811d0989e5f345250fb17a61e46b3304e7a85278a7?s=32&d=mm&r=g)				[Garrett Hyder](https://profiles.wordpress.org/garrett-eclipse/)“Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]” has been translated into 41 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/disable-comments/contributors) for their contributions.
+- ![](https://secure.gravatar.com/avatar/e8084b0a02eed1df748f38811d0989e5f345250fb17a61e46b3304e7a85278a7?s=32&d=mm&r=g)				[Garrett Hyder](https://profiles.wordpress.org/garrett-eclipse/)“Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]” has been translated into 42 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/disable-comments/contributors) for their contributions.
 
 [Translate “Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]” into your language.](https://translate.wordpress.org/projects/wp-plugins/disable-comments)
 
