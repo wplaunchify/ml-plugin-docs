@@ -20,7 +20,7 @@ Leave a field empty and WordPress does what it always did.
 
 A few things just happen: link previews with the right title, description and image in Slack, Mastodon, Bluesky and friends. Pages you keep out of search are left out of the sitemap too. There’s a panel in the block editor, a box in the Classic Editor, and the fields in Quick Edit. Using Yoast SEO or another big SEO plugin? Simple SEO steps aside.
 
-No settings page, no scores, no “Go Pro” banners, no extra database queries. No nags. Okay, one small grey tip about Simple History.
+No scores, no “Go Pro” banners, no extra database queries. No nags. Okay, one small grey tip about [Simple History](https://wordpress.org/plugins/simple-history/), my activity log plugin.
 
 No plugin makes a page rank. Good content does. Simple SEO hands search engines and shared links the title, description and image you chose, and asks search engines to skip the pages you don’t want listed. That’s also all AI search needs from a plugin: no llms.txt, no “AI optimization”.
 
@@ -28,23 +28,23 @@ No plugin makes a page rank. Good content does. Simple SEO hands search engines 
 
 Simple SEO is old. Like really old. It arrived on WordPress.org in August 2010 (seven weeks before Yoast SEO!). Of the SEO plugins still maintained today, only All in One SEO is older. Then it slept from 2012 to 2026.
 
-I woke it up mostly for myself: I wanted the SEO basics on my own sites without a plugin that asks for attention every time I log in. It stays small on purpose, so feature requests often get “that’s a bit much for a plugin called Simple”.
+I woke it up mostly for myself: I wanted the SEO basics on my own sites without a plugin that asks for attention every time I log in. It grows when I need something on my own sites, but it stays small and fast on purpose.
 
 No big company or investors, just one developer: me, the guy behind [Simple History](https://simple-history.com/). With both active, every SEO change is logged: who, when, and what it said before. I also make [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/), and the two work together too. If Simple SEO saves you time, [a donation](https://eskapism.se/sida/donate/) keeps it going.
 
 ## Screenshots
 
-	![A few SEO fields in the page sidebar of the block editor. That's it.](https://ps.w.org/simple-seo/assets/screenshot-1.png?rev=3715169)A few SEO fields in the page sidebar of the block editor. That’s it.
+	![The SEO fields in the page sidebar of the block editor.](https://ps.w.org/simple-seo/assets/screenshot-1.png?rev=3722856)The SEO fields in the page sidebar of the block editor.
 
-![See and edit the SEO of every page right from the Pages list, with Quick Edit.](https://ps.w.org/simple-seo/assets/screenshot-2.png?rev=3715169)See and edit the SEO of every page right from the Pages list, with Quick Edit.
+![See and edit the SEO of every page right from the Pages list, with Quick Edit.](https://ps.w.org/simple-seo/assets/screenshot-2.png?rev=3722856)See and edit the SEO of every page right from the Pages list, with Quick Edit.
 
-![The same column for posts, so you can spot the ones missing a description.](https://ps.w.org/simple-seo/assets/screenshot-3.png?rev=3714576)The same column for posts, so you can spot the ones missing a description.
+![The same column for posts, so you can spot the ones missing a description.](https://ps.w.org/simple-seo/assets/screenshot-3.png?rev=3722856)The same column for posts, so you can spot the ones missing a description.
 
-![Works in the Classic Editor too.](https://ps.w.org/simple-seo/assets/screenshot-4.png?rev=3715169)Works in the Classic Editor too.
+![Works in the Classic Editor too.](https://ps.w.org/simple-seo/assets/screenshot-4.png?rev=3722856)Works in the Classic Editor too.
 
-![One setting: a default share image for link previews, in Settings → General.](https://ps.w.org/simple-seo/assets/screenshot-5.png?rev=3715169)One setting: a default share image for link previews, in Settings → General.
+![A default share image for link previews, in Settings → General.](https://ps.w.org/simple-seo/assets/screenshot-5.png?rev=3722856)A default share image for link previews, in Settings → General.
 
-![With Simple History, every SEO change is logged: who, when, and what it said before.](https://ps.w.org/simple-seo/assets/screenshot-6.png?rev=3715169)With Simple History, every SEO change is logged: who, when, and what it said before.
+![With Simple History, every SEO change is logged: who, when, and what it said before.](https://ps.w.org/simple-seo/assets/screenshot-6.png?rev=3722856)With Simple History, every SEO change is logged: who, when, and what it said before.
 
 ## Installation
 
@@ -62,6 +62,8 @@ About 50 characters, close to the page’s heading: the same words, with more to
 No. It asks search engines not to list it, and it’s up to them to honor that. Anyone with the link can still open the page. It’s also left out of the sitemap.
 ### What makes a good default share image?
 A wide picture, 1200 × 630 pixels, not your logo. It’s used in link previews when a post has no featured image.
+### Can a post have a different image in link previews?
+Yes, pick a share image in the post’s Simple SEO fields. Link previews use it instead of the featured image, and your theme keeps showing the featured image. Handy when the picture that looks good on your site isn’t the one that works in a shared link, like a card with the headline on it.
 ### I use Yoast SEO (or Rank Math, All in One SEO, SEOPress, The SEO Framework).
 Then that plugin is in charge and Simple SEO outputs nothing. The fields stay, so nothing is lost if you switch.
 ### What about AI search and llms.txt?
@@ -77,12 +79,17 @@ _simple_seo_title
 _simple_seo_description
 ```
 
- and 
+, 
 ```
 _simple_seo_noindex
 ```
 
-, in the REST API with 
+ and 
+```
+_simple_seo_share_image
+```
+
+ (an attachment ID), in the REST API with 
 ```
 ?context=edit
 ```
@@ -109,6 +116,16 @@ Contributors
 ## Changelog
 
 	
+#### 1.5.0 (October 2026)
+
+- New: a share image for each post, used in link previews instead of the featured image. Your theme keeps showing the featured image. In both editors, and logged in Simple History.
+
+#### 1.4.0 (September 2026)
+
+- New: link previews on Bluesky, Mastodon, Facebook and friends always get a description. Without a meta description or excerpt, the start of the post is used.
+- Fixed: with Jetpack active, pages had two meta descriptions. Jetpack’s SEO Tools now step aside for Simple SEO, as they do for other SEO plugins.
+- Changed: when another SEO plugin is active, the message saying so is a yellow notice, not easy-to-miss grey text.
+
 #### 1.3.0 (September 2026)
 
 - New: the front page tells Google your site’s name (a small 
@@ -121,7 +138,7 @@ WebSite
 #### 1.2.0 (September 2026)
 
 - Changed: the SEO title field in the block editor wraps onto a second line, so you can see the whole title while typing.
-- New: with CMS Tree Page View active, a page’s SEO title, description and menu label show in its page tree card, and Simple History events about a page link to it in the page tree.
+- New: with [CMS Tree Page View](https://wordpress.org/plugins/cms-tree-page-view/) active, a page’s SEO title, description and menu label show in its page tree card, and Simple History events about a page link to it in the page tree.
 - Fixed: one wasted database query each time CMS Tree Page View loaded its page tree.
 - New: link previews use the post’s excerpt when it has no meta description, if you wrote one. Not an automatic excerpt.
 - Changed: a small or square share image, like a site icon, now gets the small preview card instead of being stretched into a large one.
@@ -167,7 +184,7 @@ simple_seo_link_previews
 
  filter.
 - New: a default share image for link previews, in Settings → General → Simple SEO. Used when a post has no featured image.
-- New: with Simple History active, changes to the SEO fields show up in its log, with the old and new values and links to edit or view the page. Changes to the default share image are logged too.
+- New: with [Simple History](https://wordpress.org/plugins/simple-history/) active, changes to the SEO fields show up in its log, with the old and new values and links to edit or view the page. Changes to the default share image are logged too.
 - New: an “SEO” column in the Posts and Pages lists, and the SEO fields in Quick Edit, so you can fix many pages without opening each one.
 - New: filters for developers to change the title, description, noindex and link preview tags. See the FAQ.
 - New: posts that discourage search engines (noindex) are left out of the WordPress sitemap (
