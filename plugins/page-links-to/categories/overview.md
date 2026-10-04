@@ -116,7 +116,7 @@ I hope you guys keep the maintenance going. Good job!
 	“Page Links To” is open source software. The following people have contributed to this plugin.
 
 Contributors
-		- ![](https://secure.gravatar.com/avatar/46a732350f63125abb1db7d2500ebd3110318fb48e518a2e0aa3524c8d5b9c0e?s=32&d=mm&r=g)				[Mark Jaquith](https://profiles.wordpress.org/markjaquith/)“Page Links To” has been translated into 35 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/page-links-to/contributors) for their contributions.
+		- ![](https://secure.gravatar.com/avatar/46a732350f63125abb1db7d2500ebd3110318fb48e518a2e0aa3524c8d5b9c0e?s=32&d=mm&r=g)				[Mark Jaquith](https://profiles.wordpress.org/markjaquith/)“Page Links To” has been translated into 36 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/page-links-to/contributors) for their contributions.
 
 [Translate “Page Links To” into your language.](https://translate.wordpress.org/projects/wp-plugins/page-links-to)
 
