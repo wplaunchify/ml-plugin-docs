@@ -238,7 +238,7 @@ Most customers are already familiar with how Apple Pay and Google Pay work, but 
 
 While it does show an express checkout button similar to those for Apple Pay and Google Pay, Link by Stripe is also integrated directly into the card payment form.
 
-![](https://woocommerce.com/wp-content/uploads/2023/11/Screenshot-taken-on-2024-12-12-at-20.28.20-UTC.gif)
+![](https://woocommerce.com/wp-content/uploads/2023/11/Screenshot-taken-on-2024-12-12-at-20.28.20-UTC-still.jpg?w=800)Play animation
 
 If Links detects that the customer has entered an email belonging to a Link account (either in the card payment form or in the billing details form) it will automatically send an SMS two-factor code to the phone number on file for that account.
 
