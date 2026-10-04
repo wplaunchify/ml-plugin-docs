@@ -116,7 +116,7 @@ WooCommerce Subscriptions is a WooCommerce extension that lets customers subscri
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class...
 
 ---
 

@@ -32,7 +32,7 @@ The shortcode
 
  is used on a page and here’s how it will look:
 
-![](https://woocommerce.com/wp-content/uploads/2022/02/smart-coupons-styles-all.gif)
+![](https://woocommerce.com/wp-content/uploads/2019/10/smart-coupons-styles-all-still.jpg?w=1202)Play animation
 
 *Note: In the above screenshot, all predefined coupon styles are showing together. It’s only used to display the available type of coupon style. You can set only one coupon style at a time.*
 
@@ -122,7 +122,7 @@ WooCommerce Subscriptions is a WooCommerce extension that lets customers subscri
 	
 			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class or item count.
+Advanced, flexible shipping. Define multiple shipping rates based on location, price, weight, shipping class...
 
 ---
 
