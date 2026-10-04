@@ -2,8 +2,8 @@
   "plugin_slug": "affiliatewp-affiliate-portal",
   "plugin_name": "AffiliateWP - Affiliate Portal",
   "documentation_url": "https://affiliatewp.com/docs/documentation/",
-  "last_scraped": "2026-09-27T07:46:20.148Z",
-  "total_pages": 219,
+  "last_scraped": "2026-10-04T09:47:54.776Z",
+  "total_pages": 220,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,12 @@
       "slug": "uncategorized",
       "url": "https://affiliatewp.com/docs/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 219,
+      "page_count": 220,
       "pages": [
+        {
+          "title": "Using AffiliateWP With AI Assistants",
+          "url": "https://affiliatewp.com/docs/using-affiliatewp-with-ai-assistants/"
+        },
         {
           "title": "Paying affiliates manually",
           "url": "https://affiliatewp.com/docs/paying-affiliates-manually/"
