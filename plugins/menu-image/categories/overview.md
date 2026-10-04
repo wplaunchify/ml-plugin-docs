@@ -150,7 +150,7 @@ Overall a 5-star plugin!
 Contributors
 		- ![](https://secure.gravatar.com/avatar/addd63206f6c4df31c2cba09cbef998e213821011e6571dc0b5e0b2bad650c9c?s=32&d=mm&r=g)				[Rui Guerreiro](https://profiles.wordpress.org/takanakui/)
 - ![](https://secure.gravatar.com/avatar/b415ea4ca9c9135b4d68048250470695d253ff3cce2f293170f583eb4195a527?s=32&d=mm&r=g)				[Freshlight Lab](https://profiles.wordpress.org/freshlightlab/)
-- ![](https://secure.gravatar.com/avatar/a8fa402c1d48477b4ff77f381ec443b53c169a3649b3f457475fbd97cd38192e?s=32&d=mm&r=g)				[Freemius](https://profiles.wordpress.org/freemius/)“Menu Image, Icons made easy” has been translated into 14 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/menu-image/contributors) for their contributions.
+- ![](https://secure.gravatar.com/avatar/a8fa402c1d48477b4ff77f381ec443b53c169a3649b3f457475fbd97cd38192e?s=32&d=mm&r=g)				[Freemius](https://profiles.wordpress.org/freemius/)“Menu Image, Icons made easy” has been translated into 15 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/menu-image/contributors) for their contributions.
 
 [Translate “Menu Image, Icons made easy” into your language.](https://translate.wordpress.org/projects/wp-plugins/menu-image)
 
