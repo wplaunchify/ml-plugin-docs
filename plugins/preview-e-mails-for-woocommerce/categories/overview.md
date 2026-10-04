@@ -98,6 +98,10 @@ Contributors
 ## Changelog
 
 	
+#### 2.2.15
+
+- WP & WC Compatibility
+
 #### 2.2.14
 
 Updated tested upto : WP 6.8,
