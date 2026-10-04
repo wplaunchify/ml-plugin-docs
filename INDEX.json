@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04T17:15:41.528Z",
+  "last_updated": "2026-10-04T17:38:16.038Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1066,8 +1066,8 @@
       "slug": "fooevents-multi-day",
       "name": "FooEvents Multi-Day",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-09-27T16:26:03.992Z",
-      "page_count": 328,
+      "last_scraped": "2026-10-04T17:38:16.038Z",
+      "page_count": 329,
       "categories": [
         "frequently-asked-questions",
         "topics"
