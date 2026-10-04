@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04T19:44:33.228Z",
+  "last_updated": "2026-10-04T19:50:13.767Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1806,7 +1806,7 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-      "last_scraped": "2026-09-27T18:55:11.561Z",
+      "last_scraped": "2026-10-04T19:50:13.767Z",
       "page_count": 24,
       "categories": [
         "add-edit-wordpress-menus",
