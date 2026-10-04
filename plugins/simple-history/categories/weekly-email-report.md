@@ -94,8 +94,8 @@ $ 79
 - Billed annually
 - Options available:
 - **1 site**: $79/year
-- **5 sites**: $199/year ($39.8 per site)
-- **10 sites**: $299/year ($29.9 per site)
+- **5 sites**: $199/year ($39.80 per site)
+- **10 sites**: $299/year ($29.90 per site)
 - **50 sites** – $499 ($9.98 per site)
 - **500 sites** – $1199 ($2.40 per site)
 
@@ -105,9 +105,9 @@ $ 79
 
 ---
 
-| Version: | 1.15.0 |
+| Version: | 1.16.0 |
 | --- | --- |
-| Last update: | August 2026 |
+| Last update: | September 2026 |
 
 What’s included
 - Premium Plugin
@@ -118,7 +118,7 @@ Version history
 
 Requirements
 - WordPress 6.3 or higher
-- Simple History 4.7 or higher
+- Simple History 5.34.0 or higher
 - PHP 7.4 or higher
 
 ---
