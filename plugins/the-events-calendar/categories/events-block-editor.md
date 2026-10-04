@@ -136,9 +136,9 @@ The Tickets block lets you create and manage tickets directly in the editor. You
 
 The RSVP block lets attendees indicate whether they’re attending. You set the title, description, capacity, and availability dates. Visitors RSVP directly from the form on the event page.
 
-![The RSVP block in the editor showing the RSVP form configuration](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-rsvp-block-1024x552-1.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2020/02/Screenshot-2026-09-14-at-1.04.14-PM-1024x179.png)
 
-![The RSVP editing panel](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-rsvp-1-911x1024-1.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2020/02/Screenshot-2026-09-16-at-10.10.31-AM-1024x744.png)
 
 #### Attendee List
 
@@ -270,13 +270,10 @@ This example removes the Event Price block from the default template:
 add_filter( 'tribe_events_editor_default_template', function( $template ) {
     // Collect an array of template block slugs
     $template_search = array_column( $template, 0 );
-
     // Find the index of tribe/event-price
     $price = array_search( 'tribe/event-price', $template_search );
-
     // Remove it
     array_splice( $template, $price, 1 );
-
     return $template;
 }, 11, 1 );
 ```
@@ -322,15 +319,12 @@ add_filter( 'tribe_events_editor_default_template', function( $template ) {
 
 ```
 <?php //Do not copy this line
-
 add_filter( 'tribe_events_editor_default_template', function ( $template ) {
 	$template_search = array_column( $template, 0 );
 	$block_index     = array_search( 'tribe/related-events', $template_search );
-
 	if ( false !== $block_index ) {
 		array_splice( $template, $block_index, 1 );
 	}
-
 	return $template;
 }, 99 );
 ```
@@ -339,7 +333,6 @@ add_filter( 'tribe_events_editor_default_template', function ( $template ) {
 
 ```
 <?php //Do not copy this line
-
 remove_action( 'admin_init', array( tribe( 'tickets.editor' ), 'add_tickets_block_in_editor' ) );
 ```
 

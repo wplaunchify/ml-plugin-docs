@@ -8,21 +8,17 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/move-tickets-attendees/](https://docs.nexcess.com/software/the-events-calendar/move-tickets-attendees/)
 
-With Event Tickets and Event Tickets Plus, you have the ability to move tickets (RSVPs and [e-commerce](https://docs.nexcess.com/software/the-events-calendar/ecommerce/) tickets) to other events and to move attendees to other tickets (in the same event or another event).
+With Event Tickets and Event Tickets Plus, you have the ability to move tickets to other events and to move attendees to other tickets (in the same event or another event).
 
-## Moving Tickets / RSVPs to Another Event
+## Moving Tickets to Another Event
 
 To move a ticket with the Classic Editor, go to the event, and select the pencil icon at the right to edit the event.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-28-29.jpg)Classic Editor – Move Ticket
-
-At the bottom of the ticket editor, select “Move RSVP”
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2023-12-19_17-48-17.jpg)Classic Editor – Move Ticket
+At the bottom of the ticket editor, select “Move Ticket”
 
 To move a ticket with the Block Editor, go to the ticket, and then select **Move Ticket**.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-31-06.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2019/10/CleanShot-2026-09-30-at-13.26.02@2x-809x1024.png)
 
 **Note**: Tickets with [assigned seating](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/) and Attendees with seat assignments cannot be moved between events.
 
@@ -77,17 +73,13 @@ If you would like to **disable the notification email** sent to the attendee, th
 
 Once an attendee has been moved to another ticket, make sure you adjust the stock levels for both tickets (if you set a limit on available tickets). You will need to reduce the available stock for the ticket you moved the attendee to, and increase the stock for the ticket you moved the attendee from.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Adjusting-Ticket-Stock.jpg)
-
-#### RSVP
-
 Under the Tickets section of the event, click “Edit” on the ticket you want to edit, and manually adjust the stock.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Adjusting-Ticket-Stock-RSVP.jpg)
 
 #### WooCommerce
 
 For paid tickets, hover over the ticket you want to edit, click “Edit in WooCommerce”, and under the Inventory tab, manually adjust the stock.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/Adjusting-Ticket-Stock-RSVP.jpg)
 
 ### Additional Ticket Fields
 
@@ -110,12 +102,10 @@ functions.php
 
 ```
 add_filter( 'tribe_tickets_ticket_type_moved_email_recipient', 'disable_email_when_moving_ticket' );
-
 function disable_email_when_moving_ticket( $email_addr ) {
 	if ( $_POST['action'] == 'move_ticket_type' ) {
 		return "[email protected]";  // Or empty string
 	}
-
 	return $email_addr;
 }
 ```

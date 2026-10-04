@@ -76,18 +76,15 @@ function teckb_events_community_css() {
     return;
   }
 ?>
-
 <style>
 .insert-your-custom-css-here {
     background: black;
     color: blue;
 }
 </style>
-
 <script>
 console.log( 'You can also insert JavaScript, although this may be best in the wp_footer hook' );
 </script>
-
 <?php
 }
  
@@ -106,15 +103,11 @@ To make the Event URL field required for submission, for example, you could add 
 
 ```
 add_filter( 'tribe_events_community_required_fields', 'my_community_required_fields', 10, 1 );
-
 function my_community_required_fields( $fields ) {
-
   if ( ! is_array( $fields ) ) {
     return $fields;
   }
-
   $fields[] = 'EventURL';
-
   return $fields;
 }
 ```
@@ -158,16 +151,13 @@ To make the venue URL and phone number required, for example, you could write th
 
 ```
 add_filter( 'tribe_events_community_required_venue_fields', 'my_venue_community_required_fields' );
-
 function my_venue_community_required_fields( $fields ) {
     
   if ( ! is_array( $fields ) ) {
     return $fields;
   }
-
   $fields[] = 'Phone';
   $fields[] = 'URL';
-
   return $fields;
 }
 ```
@@ -200,53 +190,6 @@ function my_community_required_fields( $fields ) {
 - Phone
 - URL
 
-### Organizer Fields
-
-You can specify organizer fields for requirement by using this filter:
-
-- tribe_events_community_required_organizer_fields
-
-To make the organizer email address required, for example, you could write the following snippet:
-
-```
-add_filter( 'tribe_events_community_required_organizer_fields', 'my_organizer_community_required_fields' );
-
-function my_organizer_community_required_fields( $fields ) {
-    
-  if ( ! is_array( $fields ) ) {
-    return $fields;
-  }
-
-  $fields[] = 'Email';
-
-  return $fields;
-}
-```
-
-In order for the above snippet to work, it is necessary to also require the organize field itself. You can do that with the following snippet:
-
-```
-add_filter( 'tribe_events_community_required_fields', 'my_community_required_fields' );
- 
-function my_community_required_fields( $fields ) {
- 
-  if ( ! is_array( $fields ) ) {
-    return $fields;
-  }
- 
-  $fields[] = 'organizer';
- 
-  return $fields;
-}
-```
-
-#### Default Organizer Fields
-
-- Organizer (the organizer name)
-- Phone
-- Website
-- Email
-
 ### Additional Fields
 
 If you are using **Events Calendar Pro** along with The Events Calendar, then you can make use of the [Additional Fields](https://docs.nexcess.com/software/the-events-calendar/custom-fields/) feature to collect extra information for Events. You can make any additional field a required field by using the following example snippet.
@@ -260,7 +203,6 @@ _ecp_custom_2
 
 ```
 add_filter( 'tribe_events_community_required_fields', 'my_community_required_fields' );
-
 function my_community_required_fields( $fields ) {
   if ( ! is_array( $fields ) ) {
     return $fields;
@@ -275,13 +217,11 @@ The “required” label will not show up automatically for Additional Fields. Y
 
 ```
 add_filter( 'tribe_community_events_field_label_text', 'tec_additional_fields_required_labels', 10, 2 );
-
 function tec_additional_fields_required_labels( $text, $field ) {
   // Bail, if it's not the Additional Field.
 	if ( ! strstr( $field, '_ecp_custom_2' ) ) {
 		return $text;
 	}
-
   // Add the "required" label.
 	return $text . ' <span class="req">(required)</span>';
 }
@@ -311,10 +251,8 @@ Customizing the label is also possible through a filter. See the below example, 
 
 ```
 add_filter( 'tribe_community_required_field_marker', 'tec_ce_custom_required_label', 10, 2 );
-
 function tec_ce_custom_required_label ( $html, $field ) {
 	$html = ' <span class="req">' . '(must be filled)' . '</span>';
-
 	return $html;
 }
 ```
@@ -363,7 +301,6 @@ Since these errors are added through a script, we can use a snippet that modifie
 add_action( 'wp_enqueue_scripts', function ( ) {
 // Ensure the script is enqueued
 	wp_enqueue_script( 'tribe_events-community' );
-
 // Modify the localization data
 	wp_add_inline_script( 'tribe_events-community', '
         if ( tribe_submit_form_i18n.errors[ "post_title" ] ) { // Tweak to match which field you want to change
@@ -383,7 +320,6 @@ Let’s add to the Event Description to the same example:
 add_action( 'wp_enqueue_scripts', function ( ) {
 		// Ensure the script is enqueued.
 		wp_enqueue_script( 'tribe_events-community' );
-
 		// Modify the localization data.
 		wp_add_inline_script(
 			'tribe_events-community',
@@ -421,9 +357,7 @@ function my_community_required_fields( $fields ) {
 	$fields[] = '_ecp_custom_5';
 	return $fields;
 }
-
 add_filter( 'tec_events_community_allowed_fields', 'my_community_allowed_fields' );
-
 function my_community_allowed_fields( $fields ) {
 	if ( ! is_array( $fields ) ) {
 		return $fields;
@@ -433,9 +367,7 @@ function my_community_allowed_fields( $fields ) {
 	$fields[] = '_ecp_custom_5';
 	return $fields;
 }
-
 add_filter( 'tribe_community_events_field_label_text', 'tec_additional_fields_required_labels', 10, 2 );
-
 function tec_additional_fields_required_labels( $text, $field ) {
 	// Add required label if it is one of the Additional Fields.
 	if ( strstr( $field, '_ecp_custom_2') ) {
@@ -447,7 +379,6 @@ function tec_additional_fields_required_labels( $text, $field ) {
 	if ( strstr( $field, '_ecp_custom_5') ) {
 		return $text . ' <span class="req">(required)</span>';
 	}
-
     // If it's not one of the Additional Fields we require, just return the label
     return $text;
 }
@@ -461,21 +392,17 @@ To enhance the clarity of your error messages by pinpointing the required fields
 
 ```
 <?php //Do not copy this line
-
 add_filter( 'tribe_community_form_field_label', function ( $label, $field ) {
 	// Check if the field does not match '_ecp_custom_X' pattern
 	if ( ! preg_match( '/^_ecp_custom_d+$/', $field ) || ! tribe_is_community_edit_event_page() ) {
 		return $label;
 	}
-
 	$custom_fields = tribe_get_option( 'custom-fields', array() );
-
 	foreach ( $custom_fields as $custom_field ) {
 		if ( in_array( $field, $custom_field ) ) {
 			$label = $custom_field['label'];
 		}
 	}
-
 	return $label;
 }, 10, 2 );
 ```
@@ -490,7 +417,6 @@ add_action(
 	function ( ) {
 		// Ensure the script is enqueued.
 		wp_enqueue_script( 'tribe_events-community' );
-
 		// Modify the localization data.
 		wp_add_inline_script(
 			'tribe_events-community',
@@ -533,7 +459,6 @@ $fields_to_remove
 
 ```
 add_filter( 'tec_events_community_form_layout', function ( $fields ) {
-
 	// Define the fields/modules you want to remove
 	$fields_to_remove = [
 		'image',                    // Event Image
@@ -542,10 +467,8 @@ add_filter( 'tec_events_community_form_layout', function ( $fields ) {
 		'event-cost',               // Event Cost
 		'terms',                    // Terms and Conditions
 	];
-
 	// Remove the specified fields/modules
 	return array_diff_key( $fields, array_flip( $fields_to_remove ) );
-
 }, 20 );
 ```
 
@@ -606,36 +529,28 @@ The snippet allows you to define the IDs for categories and tags you wish to exc
 
 ```
 <?php
-
 add_filter(
     'tribe_dropdown_search_terms',
     function( $data, $search, $page, $args, $source ) {
-
         $taxonomy = $args['taxonomy'];
-
         // IDs to exclude
         $exclude_map = [
             'tribe_events_cat' => [ 1, 2, 3, 4, 5 ], // Event category IDs
             'post_tag'         => [ 6, 7 ],       // Event tag IDs
         ];
-
         if ( ! isset( $exclude_map[ $taxonomy ] ) ) {
             return tribe( 'ajax.dropdown' )->search_terms( $search, $page, $args, $source );
         }
-
         $exclude_ids = $exclude_map[ $taxonomy ];
-
         $args['exclude'] = isset( $args['exclude'] )
             ? (array) $args['exclude']
             : [];
-
         $args['exclude'] = array_unique(
             array_merge(
                 array_map( 'intval', $args['exclude'] ),
                 $exclude_ids
             )
         );
-
         // Return modified dropdown search terms
         return tribe( 'ajax.dropdown' )->search_terms( $search, $page, $args, $source );
     },
@@ -678,12 +593,10 @@ add_filter( 'tribe_community_events_form_errors', function ( $errors ) {
     if ( empty( $errors ) ) { 
         return $errors; 
     } 
-
     return array_map( function ( $error ) { 
         if ( isset( $error['type'] ) && $error['type'] === 'success' ) { 
             $error['message'] = '<p>Event Submitted.</p><p>Submitted events are published after review.</p>'; 
         } 
-
         return $error; 
     }, $errors ); 
 } );

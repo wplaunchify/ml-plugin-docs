@@ -2,8 +2,8 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-09-27T06:38:59.603Z",
-  "total_pages": 348,
+  "last_scraped": "2026-10-04T08:16:06.664Z",
+  "total_pages": 346,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -1242,19 +1242,6 @@
       ]
     },
     {
-      "title": "Customize Tickets App",
-      "slug": "customize-tickets-app",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/customize-tickets-app/",
-      "file": "categories/customize-tickets-app.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Customizing the Event Tickets Plus App",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/customize-tickets-app/"
-        }
-      ]
-    },
-    {
       "title": "Customize Tickets Commerce",
       "slug": "customize-tickets-commerce",
       "url": "https://docs.nexcess.com/software/the-events-calendar/customize-tickets-commerce/",
@@ -1782,8 +1769,8 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Getting Started with Event Tickets",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets/"
+          "title": "Customizing the Event Tickets Plus App",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/event-tickets/customize-tickets-app/"
         }
       ]
     },
@@ -2148,19 +2135,6 @@
         {
           "title": "Fixing the “Please Install or Upgrade” Warning for Events Calendar Pro or Event Tickets Plus",
           "url": "https://docs.nexcess.com/software/the-events-calendar/fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus/"
-        }
-      ]
-    },
-    {
-      "title": "Free Support Resources",
-      "slug": "free-support-resources",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/free-support-resources/",
-      "file": "categories/free-support-resources.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Free Support Resources",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/free-support-resources/"
         }
       ]
     },
@@ -3309,6 +3283,19 @@
       ]
     },
     {
+      "title": "Setting Up Event Tickets",
+      "slug": "setting-up-event-tickets",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/setting-up-event-tickets/",
+      "file": "categories/setting-up-event-tickets.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Setting up Event Tickets",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/setting-up-event-tickets/"
+        }
+      ]
+    },
+    {
       "title": "Share Calendar",
       "slug": "share-calendar",
       "url": "https://docs.nexcess.com/software/the-events-calendar/share-calendar/",
@@ -4254,19 +4241,6 @@
         {
           "title": "What Happens if I Cancel My Promoter Subscription?",
           "url": "https://docs.nexcess.com/software/the-events-calendar/what-happens-if-i-cancel-my-promoter-subscription/"
-        }
-      ]
-    },
-    {
-      "title": "What Is This Promoter Charge On My Credit Card",
-      "slug": "what-is-this-promoter-charge-on-my-credit-card",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/what-is-this-promoter-charge-on-my-credit-card/",
-      "file": "categories/what-is-this-promoter-charge-on-my-credit-card.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "What is This Charge on My Credit Card or PayPal account?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/what-is-this-promoter-charge-on-my-credit-card/"
         }
       ]
     },

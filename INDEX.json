@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04T08:08:42.151Z",
+  "last_updated": "2026-10-04T08:16:06.689Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2782,8 +2782,8 @@
       "slug": "the-events-calendar",
       "name": "The Events Calendar",
       "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-      "last_scraped": "2026-09-27T06:38:59.603Z",
-      "page_count": 348,
+      "last_scraped": "2026-10-04T08:16:06.689Z",
+      "page_count": 346,
       "categories": [
         "accessibility",
         "accessing-older-plugin-versions",
@@ -2880,7 +2880,6 @@
         "customize-template-files",
         "customize-ticket-emails",
         "customize-ticket-file",
-        "customize-tickets-app",
         "customize-tickets-commerce",
         "customize-venues-organizers",
         "customize-virtual-events",
@@ -2950,7 +2949,6 @@
         "fix-404-errors",
         "fix-content-errors",
         "fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus",
-        "free-support-resources",
         "genesis-theme",
         "getting-started-with-event-aggregator",
         "getting-started-with-event-automator",
@@ -3039,6 +3037,7 @@
         "seating-maps-layouts",
         "seo-plugin-integration",
         "series-passes",
+        "setting-up-event-tickets",
         "share-calendar",
         "sharing-your-system-information",
         "shortcodes",
@@ -3112,7 +3111,6 @@
         "what-are-the-system-requirements-for-your-plugins",
         "what-browsers-do-you-support",
         "what-happens-if-i-cancel-my-promoter-subscription",
-        "what-is-this-promoter-charge-on-my-credit-card",
         "what-kind-of-payments-do-you-accept",
         "what-support-is-provided-for-license-holders",
         "what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update",

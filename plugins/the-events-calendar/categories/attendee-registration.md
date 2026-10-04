@@ -14,7 +14,7 @@ With [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event
 
 ## What is Individual Attendee Collection (IAC)?
 
-Individual Attendee Collection (IAC) is a feature in [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/) that allows enabling attendee information to be collected on each ticket when multiple tickets are purchased together. Without IAC, the tickets only enable attendee information about the individuals purchasing the tickets. IAC changes that by allowing information to be entered for each ticket on an individual basis.
+Individual Attendee Collection (IAC) is a feature in [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/) that allows enabling attendee information to be collected on each ticket (or RSVP) when multiple tickets are purchased together. Without IAC, the tickets only enable attendee information about the individuals purchasing the tickets. IAC changes that by allowing information to be entered for each ticket on an individual basis.
 
 As such, you can reliably gather and record the name and email address of all attendees in a way that allows exporting, searching, sorting, and API access.
 
@@ -28,11 +28,7 @@ The feature can be enabled in the plugin settings, located at **Tickets → Sett
 - **Require Individual Attendee Collection:** IAC is enabled and the person purchasing tickets is required to provide information for each ticket before proceeding.
 - **No Individual Attendee Collection:** IAC is disabled.
 
-Once saved, this is the default setting for all new tickets. You can still override the setting on a per-ticket basis in the WordPress editor.
-
-👋 **Heads up!** Individual Attendee Collection requires the updated ticket and/or RSVP experience to be enabled on sites already running Event Tickets. You can enable the updated experience from **Tickets** **→** **Settings** **→** **General → Display**. For new installs (since version 5.0), this experience will be enabled automatically and you will not see these setting options.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/etp-ticket-rsvp-updated-experience-1024x412-1.png)
+Once saved, this is the default setting for all new tickets and RSVPs. You can still override the setting on a per-ticket basis in the WordPress editor.
 
 ### Enabling Individual Attendee Collection (IAC) in Editor
 
@@ -42,15 +38,15 @@ No matter what IAC you set for the default in the plugin settings, you can still
 
 ![Collecting attendee information by selecting the "Require Individual Attendee Collection" option](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2020-11-19-at-10.23.04-AM.jpg)Once expanded, the “Attendee Collection” section offers the same three settings that we covered in the global settings. Note that the pre-selected option will match your global setting. So, for example, if your global setting is to “require” IAC, then the Ticket block setting will also “require” IAC by default.
 
+To use IAC with an RSVP, click the *+Collect Attendee Information*option and configure the details in the modal.
+
 ### Enabling Individual Attendee Collection (IAC) Programmatically
 
 In addition to using the plugin settings, the default IAC setting can be programmatically set to any of the three possible settings with the following function:
 
 ```
 <?php
-
 add_filter( 'tribe_tickets_plus_attendee_registration_iac_default_setting_for_all_tickets', 'my_custom_iac_setting_for_all_tickets' );
-
 /**
  * Filter the Individual Attendee Collection setting for all tickets.
  *
@@ -77,9 +73,7 @@ Depending on how you want to collect attendee details, IAC can be configured in 
 
 ### No Individual Attendee Collection
 
-This is the out-of-the-box default setting and is the only Attendee Collection setting available in Event Tickets Plus versions prior to 5.1.0.
-
-This setting means that any Attendee (and ticket) generated will use the Billing Purchaser’s name and email address. In the same breath, only the Billing Purchaser will receive an email containing all tickets purchased.
+This is the out-of-the-box default setting. This setting means that any Attendee (and ticket) generated will use the Billing Purchaser’s name and email address. In the same breath, only the Billing Purchaser will receive an email containing all tickets purchased.
 
 ### Allow Individual Attendee Collection
 
@@ -134,15 +128,11 @@ When creating a ticket or RSVP, click the “Attendee Information”**option t
 
 Once you are done adding custom fields to the event’s registration form, save your changes and anyone purchasing a ticket will see the form during registration, based on which option you have chosen in the previous section.
 
-With Event Tickets Plus (5.2.4 or above), we have enabled placeholder support for the following attendee registration fields: **text, email, URL, and telephone**.
-
 Note that you can save your custom registration options as a “saved fieldset” that can be used on other tickets you make. Select “Save this fieldset for use on other tickets” when saving your custom registration fields. To use a saved fieldset, click the “Start with a saved fieldset” option and select the fieldset you want to use before adding any fields to the form.
 
-You can view the custom fields that have been added when using the Classic Editor, like this:
+You can see the custom fields for a ticket next to the attendee icon under the ticket name:
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Custom-field.jpg)
-
-**💡 Tip:** If you’re working with required checkboxes, ensure that at least one option is selected. If the value is empty, the modal will not proceed to checkout, since it expects the required checkbox to have a value. This helps ensure that the attendee registration process runs smoothly.
+![](https://docs.nexcess.com/wp-content/uploads/2019/10/Screenshot-2026-09-30-at-1.21.15-PM-1024x192.png)
 
 ## Viewing attendee information
 
