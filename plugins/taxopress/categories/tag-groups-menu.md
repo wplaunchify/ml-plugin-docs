@@ -52,8 +52,8 @@ not assigned
 ```
 not assigned
 jQuery(document).ready(function(){
-  jQuery("#tag-groups-menu-6ab8b74fcfa77 select").on( "change", function(){
-    var a = jQuery("#tag-groups-menu-6ab8b74fcfa77_form").submit();
+  jQuery("#tag-groups-menu-6ac2098391ccb select").on( "change", function(){
+    var a = jQuery("#tag-groups-menu-6ac2098391ccb_form").submit();
   });
 });
 ```
