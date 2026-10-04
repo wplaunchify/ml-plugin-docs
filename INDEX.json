@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04T10:16:01.639Z",
+  "last_updated": "2026-10-04T10:28:30.442Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1033,8 +1033,8 @@
       "slug": "fooevents-custom-attendee-fields",
       "name": "FooEvents Custom Attendee Fields",
       "documentation_url": "https://help.fooevents.com/docs/",
-      "last_scraped": "2026-09-13T13:23:57.771Z",
-      "page_count": 327,
+      "last_scraped": "2026-10-04T10:28:30.442Z",
+      "page_count": 329,
       "categories": [
         "frequently-asked-questions",
         "topics"

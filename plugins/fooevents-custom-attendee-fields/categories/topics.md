@@ -42,7 +42,7 @@ Each ticket contains details of the person attending the event. This person is r
 	- [Attendee check-ins](https://help.fooevents.com/docs/topics/attendees/attendee-check-ins/)
 - [Editing attendee details](https://help.fooevents.com/docs/topics/attendees/editing-attendee-details/)
 - [Export event and attendee information](https://help.fooevents.com/docs/topics/attendees/export-attendee-information/)
-- [Attendee Details Page (Beta)](https://help.fooevents.com/docs/topics/attendees/attendee-page/)
+- [Attendee Details Page](https://help.fooevents.com/docs/topics/attendees/attendee-page/)
 
 ---
 
@@ -2567,7 +2567,7 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/](https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/)
 
-## 2.0.18 (03 October 2026)
+## 2.0.18 (03 September 2026)
 
 - FIXED: Select HTML theme option bug in product.
 - FIXED: Various stationary builder improvements.
@@ -4637,6 +4637,14 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/](https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/)
+
+## 1.13.1 (29 Sep 2026)
+
+- New: Added interface for managing POS user roles and capabilities
+- New: Added granular user capabilities that allow you to customize POS functionality permissions per user role
+- New: Added settings for allowing user switching in the POS
+- New: Added settings for locking the POS using a PIN number
+- Update: Various improvements to API authentication and validation (credit: Naoki Kawahigashi – WPScan)
 
 ## 1.12.10 (31 Aug 2026)
 
@@ -7926,7 +7934,7 @@ For a full overview of the functionality provided by FooEvents, please browse th
 
 FooEmail *(currently in beta)* is a free WordPress plugin for logging emails sent from your site and improving email deliverability using SMTP and Brevo. It helps ensure that mission-critical emails such as FooEvents tickets, WooCommerce orders, contact form submissions, and password resets reach your customers’ inboxes without being flagged as spam or blocked by hosting providers.
 
-[Download FooEmail](https://downloads.fooevents.com/fooemail/)
+[Download FooEmail](http://downloads.fooevents.com/files/fooemail.zip)
 
 *Download and install the free FooEmail plugin on your WordPress site.*
 
@@ -9897,7 +9905,8 @@ FooEvents POS fully supports all the FooEvents extensions so you can capture [cu
 
 ## Articles
 
-	- [Plugin settings](https://help.fooevents.com/docs/topics/point-of-sale/plugin-settings/)
+	- [POS User Management](https://help.fooevents.com/docs/topics/point-of-sale/pos-user-management/)
+- [Plugin settings](https://help.fooevents.com/docs/topics/point-of-sale/plugin-settings/)
 - [Customers](https://help.fooevents.com/docs/topics/point-of-sale/customers/)
 - [Orders](https://help.fooevents.com/docs/topics/point-of-sale/orders/)
 - [Products](https://help.fooevents.com/docs/topics/point-of-sale/products/)
@@ -10872,6 +10881,112 @@ To access **WooCommerce Analytics**, go to **WordPress dashboard** > **Analytics
 There is also a **Daily Summary** feature built into FooEvents POS that is useful for getting a snapshot of **total sales** and **payment types** that were processed through the FooEvents POS app on a particular day including previous days.
 
 To access the Daily Summary, tap/click on **Orders** in the menu of the FooEvents POS app and then tap/click the three dots (**…**) next to the corresponding date to bring up the Daily Summary.![Screenshot 2022 11 07 at 11.10.18](https://help.fooevents.com/wp-content/uploads/2022/10/Screenshot-2022-11-07-at-11.10.18.png)
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/topics/point-of-sale/pos-user-management/](https://help.fooevents.com/docs/topics/point-of-sale/pos-user-management/)
+
+Starting with **FooEvents POS plugin version 1.13.0**, you have significantly more control over which users should have access to the POS as well as what features each user or role is allowed to make use of in the POS.
+
+## Quick Links
+
+- [Default Functionality](#default-functionality)
+- [User Roles with FooEvents POS Access](#user-roles-with-fooevents-pos-access)
+- [Add a New User Role](#add-a-new-user-role)
+- [Allow User Switching](#allow-user-switching)
+- [Enable PIN and Auto-Lock](#enable-pin-and-auto-lock)
+- [Manage POS Users](#manage-pos-users)
+- [POS User Role and Capabilities](#pos-user-role-and-capabilities)
+- [Connecting to the POS with PIN Lock Enabled](#connecting-to-the-pos-with-pin-lock-enabled)
+- [Locking the POS](#locking-the-pos)
+- [Switch to a Different POS User](#switch-to-a-different-pos-user)
+- [POS Users and Submitting Orders](#pos-users-and-submitting-orders)
+
+## Default Functionality
+
+When updating the plugin to version 1.13.*x* the **Administrator**, **Shop Manager** and **Cashier (FooEvents POS)** user roles will automatically receive access to the POS as well as all the features within the POS. FooEvents POS manages access to the various features in the POS by making use of [WordPress user role capabilities](https://wordpress.org/documentation/article/roles-and-capabilities/). The default user role POS capabilities can be managed by modifying the [user roles with FooEvents POS access](#user-roles-with-fooevents-pos-access).
+
+**Pro Tip:** By default, access to FooEvents POS is restricted to users and roles with the “fooeventspos_pos_app” capability. If you would like other users or roles to have access to the POS but don’t necessarily want to grant them administrator access to your site, you can manage permissions for those users or roles with the [User Role Editor](https://wordpress.org/plugins/user-role-editor/) plugin and enable the “fooeventspos_pos_app” capability.
+
+## User Roles with FooEvents POS Access
+
+Navigate to the FooEvents POS plugin settings **Users** tab to see a list of user roles that have FooEvents POS access. Initially only the **Administrator**, **Shop Manager** and **Cashier** user roles will be listed.
+
+![pos user roles](https://help.fooevents.com/wp-content/uploads/2026/09/pos_user_roles-1024x462.png)
+
+You can click the **view** or **edit** icon next to each user role to view or modify the enabled POS capabilities for that user role. The **Administrator** user role has access to all capabilities and cannot be modified.
+
+![role capabilities](https://help.fooevents.com/wp-content/uploads/2026/09/role_capabilities-1024x904.png)
+
+## Add a New User Role
+
+Click the **Add new user role** button to add a new user role that will automatically have FooEvents POS access. You can either create an empty user role or make a copy of an existing user role which will include all that role’s enabled POS capabilities.
+
+![add role](https://help.fooevents.com/wp-content/uploads/2026/09/add_role-1024x530.png)
+
+## Allow User Switching
+
+You can enable user switching which allows switching to a different POS user after successfully connecting to your store. Please note that [PIN lock will be enabled](#enable-pin-and-auto-lock) automatically for improved security. When switching to a new POS user, you will need to enter their PIN in order to proceed.
+
+![allow user switching](https://help.fooevents.com/wp-content/uploads/2026/09/allow_user_switching-1024x150.png)
+
+## Enable PIN and Auto-Lock
+
+You can enable PIN lock to secure the POS using a unique PIN set in each user’s profile. If a user has the capability to **switch users** in the POS, they will have to enter the new user’s PIN when switching. With PIN lock enabled, you can optionally enter the **auto-lock timeout in minutes** to specify the duration of inactivity before the POS locks automatically. Entering 0 (zero) or leaving this input blank will disable auto-lock.
+
+![pos pin](https://help.fooevents.com/wp-content/uploads/2026/09/pos_pin-1024x192.png)
+
+## Manage POS Users
+
+Click the **Manage POS Users** tab to view all users who have POS access as well as what their user role is. If **PIN lock** is enabled and you have the capability of **changing other POS user’s PINs**, you can set or update the POS PIN of each individual user by clicking the **Set PIN** or **Update PIN** buttons.
+
+![pos users](https://help.fooevents.com/wp-content/uploads/2026/09/pos_users-1024x375.png)
+
+## POS User Role and Capabilities
+
+Click on a POS user’s **Capabilities** button to view the user role and capabilities that are enabled for that specific POS user. User role capabilities are checked by default and cannot be unchecked. If you need to remove certain capabilities for a POS user that are enabled by default for their current user role, you can [add a new user role](#add-a-new-user-role) as a copy of the user’s current role and then uncheck the capabilities that should not be enabled for that user. You can then change their user role to the newly created role by selecting it from the dropdown. The capabilities will be updated according to the selected user role and you can then check or uncheck remaining capabilities as needed for that specific POS user.
+
+![pos user capabilities](https://help.fooevents.com/wp-content/uploads/2026/09/pos_user_capabilities-1024x934.png)
+
+## Connecting to the POS with PIN Lock Enabled
+
+With **PIN lock** enabled, a POS user will need to enter their PIN in order to unlock the POS after successfully connecting to the store.
+
+![pos unlock](https://help.fooevents.com/wp-content/uploads/2026/09/pos_unlock-1024x689.png)
+
+The current POS user will need to click the **Unlock** button and enter their 4-digit PIN to unlock the POS.
+
+![enter pin](https://help.fooevents.com/wp-content/uploads/2026/09/enter_pin-756x1024.png)
+
+Alternatively you can click the **Switch User** button to immediately [switch to a different POS user](#switch-to-a-different-pos-user).
+
+## Locking the POS
+
+If you have **PIN lock** enabled, a POS user can lock the POS by opening the **Settings** screen in the POS and clicking the **Lock POS** button.
+
+![user details](https://help.fooevents.com/wp-content/uploads/2026/09/user_details-1024x346.png)
+
+The POS will lock immediately and show the same lock screen as when [connecting to the POS with PIN lock enabled](#connecting-to-the-pos-with-pin-lock-enabled). When the POS is locked, the app will pause any background data fetching and order alerts. When an amount of minutes is entered for the [auto-lock timeout setting](#enable-pin-and-auto-lock), the POS will lock automatically after the specified duration of inactivity.
+
+## Switch to a Different POS User
+
+You can switch to a different POS user without having to disconnect and reconnect the POS using different login details. From the **Settings** screen or lock screen (if [PIN lock](#enable-pin-and-auto-lock) is enabled) click the **Switch User** button to display the POS user selection screen.
+
+![switch user](https://help.fooevents.com/wp-content/uploads/2026/09/switch_user-967x1024.png)
+
+Press the **Unlock** button to enter that POS user’s PIN in order to switch, similar to [connecting to the POS with PIN lock enabled](#connecting-to-the-pos-with-pin-lock-enabled).
+
+![switch user unlock](https://help.fooevents.com/wp-content/uploads/2026/09/switch_user_unlock-1017x1024.png)
+
+Once the POS switches to the selected POS user, the entire interface will update automatically to show or hide screens or functionality based on the new POS user’s capabilities.
+
+Depending on the current POS user’s capabilities, various options are shown when selecting a different POS user. If the current POS user has the capability of **changing other POS users’ PINs** then they can click the **Update POS PIN** button to enter a new PIN for the selected POS user.
+
+## POS Users and Submitting Orders
+
+The user ID of the current POS user gets associated with any submitted order and they become the “cashier” for that order. If an order was submitted by another POS user as [incomplete](https://help.fooevents.com/docs/topics/point-of-sale/orders) and the current POS user [continues the order](https://help.fooevents.com/docs/topics/point-of-sale/orders/), the current POS user will automatically become the new “cashier” associated with that order.
 
 ---
 
@@ -17174,7 +17289,7 @@ Here is an example of such an event: [Movie Extra (Free RSVP / Waitlist Event)](
 
 In this help document, we will outline the exact configuration needed to achieve all of the above requirements.
 
-*This help document assumes that you already have FooEvents and WooCommerce installed on a WordPress website and have a basic understanding of how FooEvents works. If you are new to FooEvents, you should read our Getting Started guide to help you get started.*
+*This help document assumes that you already have FooEvents and WooCommerce installed on a WordPress website and have a basic understanding of how FooEvents works. If you are new to FooEvents, you should read our Getting Started guide to help you get started.*
 
 ## Products Used
 
