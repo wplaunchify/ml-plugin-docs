@@ -42,11 +42,11 @@ Want regular updates? Feel free to support me with a small donation 🙂
 
 ## Screenshots
 
-	![Settings view: Core options.](https://ps.w.org/manage-notification-emails/assets/screenshot-1.png?rev=2538453)Settings view: Core options.
+	![Settings view: Core options.](https://ps.w.org/manage-notification-emails/assets/screenshot-1.png?rev=3727768)Settings view: Core options.
 
-![Settings view: Available modules.](https://ps.w.org/manage-notification-emails/assets/screenshot-2.png?rev=2538453)Settings view: Available modules.
+![Settings view: Available modules.](https://ps.w.org/manage-notification-emails/assets/screenshot-2.png?rev=3727768)Settings view: Available modules.
 
-![Settings view: Multi-site network settings.](https://ps.w.org/manage-notification-emails/assets/screenshot-3.png?rev=2538453)Settings view: Multi-site network settings.
+![Settings view: Multi-site network settings.](https://ps.w.org/manage-notification-emails/assets/screenshot-3.png?rev=3727768)Settings view: Multi-site network settings.
 
 ## Installation
 
@@ -106,7 +106,7 @@ Thanks for its development.
 	“Manage Notification E-mails” is open source software. The following people have contributed to this plugin.
 
 Contributors
-		- ![](https://secure.gravatar.com/avatar/9afb9d144b82a5bcc6cf0378efaacea46e068d163b4ce067dba2af2e282389dd?s=32&d=mm&r=g)				[3D Virge](https://profiles.wordpress.org/virgial/)“Manage Notification E-mails” has been translated into 13 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/manage-notification-emails/contributors) for their contributions.
+		- ![](https://secure.gravatar.com/avatar/9afb9d144b82a5bcc6cf0378efaacea46e068d163b4ce067dba2af2e282389dd?s=32&d=mm&r=g)				[3D Virge](https://profiles.wordpress.org/virgial/)“Manage Notification E-mails” has been translated into 15 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/manage-notification-emails/contributors) for their contributions.
 
 [Translate “Manage Notification E-mails” into your language.](https://translate.wordpress.org/projects/wp-plugins/manage-notification-emails)
 
