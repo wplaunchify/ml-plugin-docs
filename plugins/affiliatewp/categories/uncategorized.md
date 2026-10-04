@@ -4,6 +4,163 @@
 
 ---
 
+## Using AffiliateWP With AI Assistants
+
+**Source:** [https://affiliatewp.com/docs/using-affiliatewp-with-ai-assistants/](https://affiliatewp.com/docs/using-affiliatewp-with-ai-assistants/)
+
+Would you like to ask an AI assistant who your top affiliates were last month, or have it approve a pending application for you? AffiliateWP works with AI assistants such as Claude, ChatGPT, and Cursor. You can look up program data and manage affiliates and referrals in plain English.
+
+In this guide, we’ll walk you through connecting an AI assistant to AffiliateWP, turning on write access, and trying your first prompts. All you need is WordPress 6.9 or later and AffiliateWP 2.37.0 or later.
+
+**Requirements**: AI assistants work with every AffiliateWP license level. Your site needs WordPress 6.9 or later, which includes the WordPress Abilities API.
+
+Before you get started, make sure AffiliateWP is [installed and activated](https://affiliatewp.com/docs/how-to-install-the-affiliatewp-plugin/) on your WordPress site.
+
+In This Article
+
+- [What Can AI Assistants Do With AffiliateWP?](#what-can-ai-assistants-do-with-affiliatewp)
+- [Installing WPVibe](#installing-wpvibe)
+- [Connecting Your AI Assistant](#connecting-your-ai-assistant)
+- [Enabling MCP Write Access](#enabling-mcp-write-access)
+- [Trying Your First Prompts](#trying-your-first-prompts)
+- [FAQ](#faq)
+
+## What Can AI Assistants Do With AffiliateWP?
+
+AI assistants connect to your site through the Model Context Protocol (MCP). It’s an open standard that lets an AI tool use an app on your behalf. AffiliateWP gives them a set of abilities. Each one is a single task, such as listing affiliates or adding a referral. Your assistant picks the right ability from what you ask, so there are no commands to learn.
+
+Assistants can always look things up. They read program totals for any date range, your program settings, affiliates and their coupon codes, referrals, payouts, visits, campaigns, and creatives. They also rank your top earners and show how one affiliate performed this week or this month.
+
+With write access turned on, assistants can also make changes. They add affiliates, approve, reject, or pause them, and update an affiliate’s name, rate, notes, payment email, or group. They add and edit referrals, change a referral’s status, and add text link, image, and QR code creatives.
+
+Assistants can’t delete anything, change your AffiliateWP settings, or send money to an affiliate. Those stay with you in the AffiliateWP admin.
+
+## Installing WPVibe
+
+To get started, we’ll install WPVibe, a free plugin from SeedProd that connects your WordPress site to AI assistants over MCP. AffiliateWP installs it for you from its AI MCP tab.
+
+From your WordPress admin sidebar, go to **AffiliateWP » Tools**. Then click the **AI MCP** tab.
+
+![AffiliateWP admin menu with Tools highlighted, and the Tools screen with an arrow pointing at the AI MCP tab](https://affiliatewp.com/wp-content/uploads/2026/10/affiliatewp-using-affiliatewp-with-ai-assistants-step_00_tools_ai_mcp_nav-1-scaled.webp?v=9c5d7285)
+
+This tab brings together everything for AI in AffiliateWP. It installs a connector plugin for you, holds the write access setting, and lists what assistants can do with your program.
+
+**Note:** The AI MCP tab only appears on WordPress 6.9 or later, and only for users who can manage AffiliateWP settings.
+
+On the AI MCP tab, click **Install & Activate WPVibe**.
+
+![AI MCP tab with an arrow pointing at the Install and Activate WPVibe button](https://affiliatewp.com/wp-content/uploads/2026/10/affiliatewp-using-affiliatewp-with-ai-assistants-step_01_install_wpvibe-1-scaled.webp?v=f52cdd6d)
+
+If your WordPress user can’t install plugins from the dashboard, the button reads Install from WordPress.org instead. It opens WPVibe’s page on WordPress.org, where it’s listed as Vibe AI. From there, install and activate it the same way as any other plugin. See [How to Install a WordPress Plugin](https://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/).
+
+Once WPVibe is active, its button changes. Next, click **Set Up WPVibe** to open the WPVibe page in your dashboard.
+
+![WPVibe row on the AI MCP tab with an arrow pointing at the Set Up WPVibe button](https://affiliatewp.com/wp-content/uploads/2026/10/affiliatewp-using-affiliatewp-with-ai-assistants-step_02_set_up_wpvibe-1-scaled.webp?v=af857db3)
+
+### Using StoreAgent Instead
+
+If your store runs on WooCommerce, the tab also offers StoreAgent. It’s a free plugin that connects your AI assistant to both WooCommerce and AffiliateWP. To use it, click **Install & Activate StoreAgent**.
+
+![AI MCP tab with an arrow pointing at the Install and Activate StoreAgent button](https://affiliatewp.com/wp-content/uploads/2026/10/affiliatewp-using-affiliatewp-with-ai-assistants-step_02b_install_storeagent-1-scaled.webp?v=54c8eb4b)
+
+Once StoreAgent is active, its button changes to Connect StoreAgent, which opens the StoreAgent dashboard to finish the connection.
+
+The rest of this guide follows the WPVibe setup, and the write access steps apply to StoreAgent too.
+
+## Connecting Your AI Assistant
+
+The WPVibe page walks you through the connection as a short checklist. It checks that WPVibe can reach your site, asks you to approve the connection, and gives you a prompt to paste into your AI assistant.
+
+For the steps in Claude, ChatGPT, Cursor, and other assistants, see the [WPVibe AI client setup guide](https://wpvibe.ai/docs/ai-client-setup/).
+
+Once your assistant has used the connection, the WPVibe row on the AI MCP tab shows a Connected badge. Its button also changes to Manage WPVibe.
+
+To check that everything works, ask your assistant a simple question, such as “How many affiliates do I have?” It answers with the totals from your program.
+
+## Enabling MCP Write Access
+
+At this point, your assistant can read your program data but can’t change anything. AffiliateWP keeps write access off by default, so nothing in your program changes until you decide it should. AI assistants can make mistakes, and this keeps that decision with you.
+
+To let your assistant make changes, turn on the **Enable MCP Write Access** toggle in the AI Permissions section. A Saved message appears next to the toggle when the change takes effect.
+
+![AI Permissions section with an arrow pointing at the Enable MCP Write Access toggle, turned on](https://affiliatewp.com/wp-content/uploads/2026/10/affiliatewp-using-affiliatewp-with-ai-assistants-step_03_enable_write_access-scaled.webp?v=5d5d53d0)
+
+The setting applies to every AI connection on your site, including WPVibe, StoreAgent, and direct connections. Your assistant acts as the WordPress user who connected it. It can only do what that user can do in the AffiliateWP admin. See [User Role Capabilities](https://affiliatewp.com/docs/user-role-capabilities/).
+
+Below the toggle, the capability cards list what assistants can do. Actions with a Write badge need write access.
+
+![Everything AffiliateWP Can Do With AI section with four capability cards and Write badges on the actions that make changes](https://affiliatewp.com/wp-content/uploads/2026/10/affiliatewp-using-affiliatewp-with-ai-assistants-step_04_capability_cards-scaled.webp?v=94f6de4b)
+
+You can turn write access off again at any time. The change applies right away. While it’s off, your assistant either doesn’t see the actions that make changes or gets a message telling it where to turn write access on.
+
+**Note:** With write access on, your assistant makes real changes to your live program. You can review each change on the matching AffiliateWP screen, such as Affiliates or Referrals.
+
+## Trying Your First Prompts
+
+The best way to start is with a question and then a small change. Here are some prompts to try:
+
+- **“How did my affiliate program do this month compared with last month?”** Your assistant compares totals for both date ranges.
+- **“Who were my five top-earning affiliates last month?”** It ranks affiliates by what they earned in that period.
+- **“Which affiliate applications are still pending?”** It lists the affiliates waiting for approval.
+- **“Which coupon codes credit this affiliate?”** Name the affiliate, and it lists their coupons and the discount each one gives.
+- **“Approve the pending application from this email address.”** A change that needs write access.
+- **“Add a $25 referral for this affiliate for order 1234.”** This credits a sale that wasn’t tracked, and also needs write access.
+
+When your assistant adds a new affiliate, it doesn’t send the affiliate welcome email unless you ask it to. When it approves or rejects a pending application, AffiliateWP sends the same email the affiliate gets when you do it in the admin.
+
+That’s it! Your AI assistant can now answer questions about your affiliate program and, when you allow it, manage affiliates and referrals for you. Next, read [AffiliateWP AI Features](https://affiliatewp.com/docs/ai-features/) to see the AI tools built into AffiliateWP itself.
+
+## FAQ
+
+Below, we’ve answered some of the most common questions about using AffiliateWP with AI assistants.
+
+### Is it safe to give an AI assistant write access?
+
+Write access is off by default. Only a user who can manage AffiliateWP settings can turn it on. Even with it on, your assistant has the same permissions as the WordPress user who connected it. It can’t delete anything, change your AffiliateWP settings, or send money to an affiliate. AI assistants can make mistakes, so turn write access on only when you need it.
+
+### Can an AI assistant pay my affiliates?
+
+No. Your assistant can review your payouts and, with write access, mark a referral as paid. Marking a referral paid only records it as paid. No money is sent. To pay affiliates, use the [Payouts screen](https://affiliatewp.com/docs/paying-your-affiliates/), which also creates a payout record.
+
+### Why don’t I see the AI MCP tab?
+
+The tab needs WordPress 6.9 or later, because that version added the WordPress Abilities API. It also only appears for users who can manage AffiliateWP settings. If your site runs an older version of WordPress, update it. The tab then appears under **AffiliateWP » Tools**. See [How to Safely Update WordPress](https://www.wpbeginner.com/beginners-guide/ultimate-guide-to-upgrade-wordpress-for-beginners-infograph/).
+
+### Which AI assistants work with AffiliateWP?
+
+Any AI tool that supports the Model Context Protocol works with AffiliateWP, including Claude, ChatGPT, and Cursor. Some AI platforms only offer custom connectors on certain plans, so check your assistant’s own documentation.
+
+### Can I use this on a local or staging site?
+
+WPVibe and StoreAgent reach your site over the internet. They need a site that’s publicly reachable. For a local site, [connect directly through the WordPress MCP Adapter](#im-a-developer-can-i-use-these-abilities-without-wpvibe-or-storeagent) instead. It can also run on your own computer through WP-CLI.
+
+### What data can an AI assistant see?
+
+Your assistant sees the same program data as the WordPress user who connected it. AffiliateWP leaves out visitor IP addresses, API keys, and other secrets, even for an administrator.
+
+### I’m a developer. Can I use these abilities without WPVibe or StoreAgent?
+
+Yes. AffiliateWP registers every ability with WordPress whether or not a connector plugin is installed. To connect an MCP client directly, install the [WordPress MCP Adapter](https://github.com/WordPress/mcp-adapter), then create an Application Password for a user with the AffiliateWP capabilities you need. Your MCP server address is 
+```
+/wp-json/mcp/mcp-adapter-default-server
+```
+
+ on your site.
+
+To call abilities without MCP, use the WordPress Abilities REST API at 
+```
+/wp-json/wp-abilities/v1/abilities
+```
+
+. It lists every AffiliateWP ability with its description and its input and output schemas. Each ability checks the connected user’s capability before it runs, so see [User Role Capabilities](https://affiliatewp.com/docs/user-role-capabilities/). To decide write access in code instead of with the toggle, use the 
+```
+affwp_abilities_allow_write
+```
+
+ filter.
+
+---
+
 ## Paying affiliates manually
 
 **Source:** [https://affiliatewp.com/docs/paying-affiliates-manually/](https://affiliatewp.com/docs/paying-affiliates-manually/)
@@ -6454,9 +6611,7 @@ This guide will walk you through the process of setting up and managing commissi
 - [Exclude Tax](#aioseo-exclude-tax)
 - [Reject Unpaid Referrals on Refund](#aioseo-reject-unpaid-referrals-on-refund)
 - [Ignore Referrals with Zero Amounts](#aioseo-ignore-referrals-with-zero-amounts)
-- [Payout Methods](#aioseo-payout-methods)- [Payouts Service](#aioseo-payouts-service)
-- [PayPal Payouts](#aioseo-paypal-payouts)
-- [Manual Payouts](#aioseo-manual-payouts)
+- [Payout methods](#aioseo-payout-methods)
 - [Frequently Asked Questions](#aioseo-frequently-asked-questions)
 
 ---
@@ -6602,31 +6757,11 @@ Also, if you plan to use AffiliateWP’s referral tracking for recurring subscri
 
 ---
 
-## Payout Methods
+## Payout methods
 
-### Payouts Service
+Payout methods have their own settings tab. Turn on the ones you want to use, such as Stripe, PayPal, store credit or manual payouts, at **AffiliateWP » Settings » Payouts**. [How to pay your affiliates in AffiliateWP](https://affiliatewp.com/docs/paying-your-affiliates/) explains each method and how to choose which one pays each affiliate.
 
-AffiliateWP includes a fully integrated payout service that makes it incredibly simple to pay affiliates in more than 50 different countries.  Affiliates can receive their referral commission payments directly to their bank accounts.   When this setting is enabled, a **Payouts Service Payment Method** section will appear below to allow you to connect, and setup your site with the payout service.  You can read further details here on how to [complete each section to connect your site to the payout service](https://payouts.sandhillsplugins.com/documentation/#setup-1--connect-your-site).
-
-![](https://affiliatewp.com/wp-content/uploads/2024/02/payouts-service.png)
-
----
-
-### PayPal Payouts
-
-The PayPal Payouts addon gives you the ability to instantly pay our affiliates their earnings from your PayPal account directly to theirs using PayPal’s Payout API.  When this setting is enabled, a **PayPal Payouts Payment Method**section will appear below to allow you to enter your **PayPal API Application Credentials**.  Further details can be found in the [setup document for the PayPal Payouts addon](https://affiliatewp.com/docs/paypal-payouts-installation-and-usage/).
-
-![](https://affiliatewp.com/wp-content/uploads/2024/02/paypal-payouts.png)
-
----
-
-### Manual Payouts
-
-**Manual Payout** is the default selection when you go to pay your affiliates their referral commission earnings.  This will search for **Unpaid** referral commission entries in **AffiliateWP  » Referrals** and provide a preview list of each affiliate. and the total commissions due to them before processing.   You can review the details of this process in the [Paying Your Affiliates document](https://affiliatewp.com/docs/paying-your-affiliates/).
-
-![](https://affiliatewp.com/wp-content/uploads/2024/02/manual-payouts-1.png)
-
-**Note:**  You can enable multiple payout methods in this section and use different payout methods for different affiliates if desired.
+The Payouts Service was retired on September 30, 2026. To pay affiliates straight to their bank accounts, use Stripe instead: see [How to pay affiliates with Stripe](https://affiliatewp.com/docs/stripe-payouts/).
 
 ## Frequently Asked Questions
 
