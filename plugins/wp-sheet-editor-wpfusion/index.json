@@ -2,72 +2,72 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-09-27T07:05:00.460Z",
+  "last_scraped": "2026-10-04T09:00:57.131Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
     {
-      "title": "Ai For Woocommerce",
-      "slug": "ai-for-woocommerce",
-      "url": "https://wpsheeteditor.comai-for-woocommerce/",
-      "file": "categories/ai-for-woocommerce.md",
+      "title": "Decrease Woocommerce Prices Bulk",
+      "slug": "decrease-woocommerce-prices-bulk",
+      "url": "https://wpsheeteditor.comdecrease-woocommerce-prices-bulk/",
+      "file": "categories/decrease-woocommerce-prices-bulk.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "AI for WooCommerce: How to Manage Products with Artificial Intelligence",
-          "url": "https://wpsheeteditor.com/ai-for-woocommerce/"
+          "title": "How to Decrease WooCommerce Product Prices in Bulk",
+          "url": "https://wpsheeteditor.com/decrease-woocommerce-prices-bulk/"
         }
       ]
     },
     {
-      "title": "Ai Tools Woocommerce",
-      "slug": "ai-tools-woocommerce",
-      "url": "https://wpsheeteditor.comai-tools-woocommerce/",
-      "file": "categories/ai-tools-woocommerce.md",
+      "title": "Find Featured Images Wordpress",
+      "slug": "find-featured-images-wordpress",
+      "url": "https://wpsheeteditor.comfind-featured-images-wordpress/",
+      "file": "categories/find-featured-images-wordpress.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "4 Best AI Tools for WooCommerce Stores to Automate & Scale",
-          "url": "https://wpsheeteditor.com/ai-tools-woocommerce/"
+          "title": "How to Find Images Used as Featured Images in WordPress",
+          "url": "https://wpsheeteditor.com/find-featured-images-wordpress/"
         }
       ]
     },
     {
-      "title": "Bulk Generate Wordpress Seo Titles Descriptions Ai",
-      "slug": "bulk-generate-wordpress-seo-titles-descriptions-ai",
-      "url": "https://wpsheeteditor.combulk-generate-wordpress-seo-titles-descriptions-ai/",
-      "file": "categories/bulk-generate-wordpress-seo-titles-descriptions-ai.md",
+      "title": "Generate Wordpress Image Alt Text Ai Bulk",
+      "slug": "generate-wordpress-image-alt-text-ai-bulk",
+      "url": "https://wpsheeteditor.comgenerate-wordpress-image-alt-text-ai-bulk/",
+      "file": "categories/generate-wordpress-image-alt-text-ai-bulk.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Bulk Generate SEO Titles and Meta Descriptions with AI in WordPress (Yoast SEO, Rank Math, AIOSEO, SEOPress)",
-          "url": "https://wpsheeteditor.com/bulk-generate-wordpress-seo-titles-descriptions-ai/"
+          "title": "How to Generate WordPress Image Alt Text with AI in Bulk",
+          "url": "https://wpsheeteditor.com/generate-wordpress-image-alt-text-ai-bulk/"
         }
       ]
     },
     {
-      "title": "Edit Woocommerce Product Prices Excel Google Sheets",
-      "slug": "edit-woocommerce-product-prices-excel-google-sheets",
-      "url": "https://wpsheeteditor.comedit-woocommerce-product-prices-excel-google-sheets/",
-      "file": "categories/edit-woocommerce-product-prices-excel-google-sheets.md",
+      "title": "Set Same Price Multiple Woocommerce Products",
+      "slug": "set-same-price-multiple-woocommerce-products",
+      "url": "https://wpsheeteditor.comset-same-price-multiple-woocommerce-products/",
+      "file": "categories/set-same-price-multiple-woocommerce-products.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Edit WooCommerce Product Prices in Excel or Google Sheets",
-          "url": "https://wpsheeteditor.com/edit-woocommerce-product-prices-excel-google-sheets/"
+          "title": "How to Set the Same Price for Multiple WooCommerce Products",
+          "url": "https://wpsheeteditor.com/set-same-price-multiple-woocommerce-products/"
         }
       ]
     },
     {
-      "title": "Woocommerce Increase Prices Fixed Amount",
-      "slug": "woocommerce-increase-prices-fixed-amount",
-      "url": "https://wpsheeteditor.comwoocommerce-increase-prices-fixed-amount/",
-      "file": "categories/woocommerce-increase-prices-fixed-amount.md",
+      "title": "Wordpress How Bulk Edit Image Seo Description",
+      "slug": "wordpress-how-bulk-edit-image-seo-description",
+      "url": "https://wpsheeteditor.comwordpress-how-bulk-edit-image-seo-description/",
+      "file": "categories/wordpress-how-bulk-edit-image-seo-description.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Bulk Raise WooCommerce Product Prices by Fixed Amount",
-          "url": "https://wpsheeteditor.com/woocommerce-increase-prices-fixed-amount/"
+          "title": "How to Bulk Add and Edit Alt Text for WordPress Images",
+          "url": "https://wpsheeteditor.com/wordpress-how-bulk-edit-image-seo-description/"
         }
       ]
     }
