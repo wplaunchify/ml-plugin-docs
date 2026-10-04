@@ -291,6 +291,14 @@ Individual sites can have their index rebuilt within the network index by visiti
 
 > Given the volume potentially being indexed, and due to a performance regression in WP Search with Algolia Free version 2.6.0, we recommend upgrading to version 2.6.1 or later.
 
+## Supported network-wide index configuration
+
+Network-wide indexing is supported for multisite installs where all subsites exist on a single WordPress multisite install. The network-wide indexing feature was designed to handle a specific use-case where site operators wanted to create a single Algolia index for various separate sites within a single WordPress multisite installation.
+
+## Unsupported network-wide index configurations
+
+Network-wide indexing is not supported on separately installed single site installs, multiple multisite installs, or multisite + separate single site installs.
+
 ---
 
 ## WP Search with Algolia Pro Changelog
