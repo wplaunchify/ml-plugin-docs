@@ -98,7 +98,7 @@ Available pre-defined payment options are: Stripe, Visa, Mastercard, Amex, Disco
 Enable or disable the following settings accordingly.
 
 - Show default headings in tab content
-- Show Weight and Dimensions in Addtional Information tab
+- Show Weight and Dimensions in Additional Information tab
 - Show Related Products
 
 **Related Products Columns:**Specify how many columns will show for the related products display.
@@ -312,7 +312,7 @@ Use the Add to Cart Behavior settings to control how products are added to the c
 
 **Show the Cart Popup on Add To Cart:** This option enables a pop-up off-canvas widget that shows the cart details after an item is added to the cart.
 
-**Single Product Adjax Add To Cart:** This setting allows products to be added to the cart using Ajax, which doesn’t require a full page refresh upon completion.
+**Single Product Ajax Add To Cart:** This setting allows products to be added to the cart using Ajax, which doesn’t require a full page refresh upon completion.
 
 ![Add To Cart Behavior](https://docs.nexcess.com/wp-content/uploads/2026/06/Add-To-Cart-Behavior.jpg)
 
