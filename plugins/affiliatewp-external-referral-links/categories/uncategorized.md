@@ -4,7 +4,7 @@
 
 ---
 
-## Using AffiliateWP With AI Assistants
+## Using AffiliateWP with AI assistants
 
 **Source:** [https://affiliatewp.com/docs/using-affiliatewp-with-ai-assistants/](https://affiliatewp.com/docs/using-affiliatewp-with-ai-assistants/)
 
@@ -14,18 +14,19 @@ In this guide, we’ll walk you through connecting an AI assistant to AffiliateW
 
 **Requirements**: AI assistants work with every AffiliateWP license level. Your site needs WordPress 6.9 or later, which includes the WordPress Abilities API.
 
-Before you get started, make sure AffiliateWP is [installed and activated](https://affiliatewp.com/docs/how-to-install-the-affiliatewp-plugin/) on your WordPress site.
+Before you get started, make sure AffiliateWP is [installed and activated](/docs/how-to-install-the-affiliatewp-plugin/) on your WordPress site.
 
 In This Article
 
-- [What Can AI Assistants Do With AffiliateWP?](#what-can-ai-assistants-do-with-affiliatewp)
+- [What can AI assistants do with AffiliateWP?](#what-can-ai-assistants-do-with-affiliatewp)
 - [Installing WPVibe](#installing-wpvibe)
-- [Connecting Your AI Assistant](#connecting-your-ai-assistant)
-- [Enabling MCP Write Access](#enabling-mcp-write-access)
-- [Trying Your First Prompts](#trying-your-first-prompts)
+- [Using StoreAgent with WooCommerce](#using-storeagent-with-woocommerce)
+- [Connecting your AI assistant](#connecting-your-ai-assistant)
+- [Enabling MCP write access](#enabling-mcp-write-access)
+- [Trying your first prompts](#trying-your-first-prompts)
 - [FAQ](#faq)
 
-## What Can AI Assistants Do With AffiliateWP?
+## What can AI assistants do with AffiliateWP?
 
 AI assistants connect to your site through the Model Context Protocol (MCP). It’s an open standard that lets an AI tool use an app on your behalf. AffiliateWP gives them a set of abilities. Each one is a single task, such as listing affiliates or adding a referral. Your assistant picks the right ability from what you ask, so there are no commands to learn.
 
@@ -37,7 +38,7 @@ Assistants can’t delete anything, change your AffiliateWP settings, or send mo
 
 ## Installing WPVibe
 
-To get started, we’ll install WPVibe, a free plugin from SeedProd that connects your WordPress site to AI assistants over MCP. AffiliateWP installs it for you from its AI MCP tab.
+To get started, we’ll install WPVibe, a free plugin from SeedProd that connects your WordPress site to AI assistants over MCP. AffiliateWP can install it for you from its AI MCP tab.
 
 From your WordPress admin sidebar, go to **AffiliateWP » Tools**. Then click the **AI MCP** tab.
 
@@ -57,9 +58,9 @@ Once WPVibe is active, its button changes. Next, click **Set Up WPVibe** to open
 
 ![WPVibe row on the AI MCP tab with an arrow pointing at the Set Up WPVibe button](https://affiliatewp.com/wp-content/uploads/2026/10/affiliatewp-using-affiliatewp-with-ai-assistants-step_02_set_up_wpvibe-1-scaled.webp?v=af857db3)
 
-### Using StoreAgent Instead
+## Using StoreAgent with WooCommerce
 
-If your store runs on WooCommerce, the tab also offers StoreAgent. It’s a free plugin that connects your AI assistant to both WooCommerce and AffiliateWP. To use it, click **Install & Activate StoreAgent**.
+If you run a WooCommerce store, StoreAgent is another great option. It’s a free plugin that connects your AI assistant to both WooCommerce and AffiliateWP. To use it, click **Install & Activate StoreAgent**.
 
 ![AI MCP tab with an arrow pointing at the Install and Activate StoreAgent button](https://affiliatewp.com/wp-content/uploads/2026/10/affiliatewp-using-affiliatewp-with-ai-assistants-step_02b_install_storeagent-1-scaled.webp?v=54c8eb4b)
 
@@ -67,7 +68,7 @@ Once StoreAgent is active, its button changes to Connect StoreAgent, which opens
 
 The rest of this guide follows the WPVibe setup, and the write access steps apply to StoreAgent too.
 
-## Connecting Your AI Assistant
+## Connecting your AI assistant
 
 The WPVibe page walks you through the connection as a short checklist. It checks that WPVibe can reach your site, asks you to approve the connection, and gives you a prompt to paste into your AI assistant.
 
@@ -77,7 +78,7 @@ Once your assistant has used the connection, the WPVibe row on the AI MCP tab sh
 
 To check that everything works, ask your assistant a simple question, such as “How many affiliates do I have?” It answers with the totals from your program.
 
-## Enabling MCP Write Access
+## Enabling MCP write access
 
 At this point, your assistant can read your program data but can’t change anything. AffiliateWP keeps write access off by default, so nothing in your program changes until you decide it should. AI assistants can make mistakes, and this keeps that decision with you.
 
@@ -85,7 +86,7 @@ To let your assistant make changes, turn on the **Enable MCP Write Access** togg
 
 ![AI Permissions section with an arrow pointing at the Enable MCP Write Access toggle, turned on](https://affiliatewp.com/wp-content/uploads/2026/10/affiliatewp-using-affiliatewp-with-ai-assistants-step_03_enable_write_access-scaled.webp?v=5d5d53d0)
 
-The setting applies to every AI connection on your site, including WPVibe, StoreAgent, and direct connections. Your assistant acts as the WordPress user who connected it. It can only do what that user can do in the AffiliateWP admin. See [User Role Capabilities](https://affiliatewp.com/docs/user-role-capabilities/).
+The setting applies to every AI connection on your site, including WPVibe, StoreAgent, and direct connections. Your assistant acts as the WordPress user who connected it. It can only do what that user can do in the AffiliateWP admin. See [User Role Capabilities](/docs/user-role-capabilities/).
 
 Below the toggle, the capability cards list what assistants can do. Actions with a Write badge need write access.
 
@@ -95,7 +96,7 @@ You can turn write access off again at any time. The change applies right away. 
 
 **Note:** With write access on, your assistant makes real changes to your live program. You can review each change on the matching AffiliateWP screen, such as Affiliates or Referrals.
 
-## Trying Your First Prompts
+## Trying your first prompts
 
 The best way to start is with a question and then a small change. Here are some prompts to try:
 
@@ -108,7 +109,7 @@ The best way to start is with a question and then a small change. Here are some 
 
 When your assistant adds a new affiliate, it doesn’t send the affiliate welcome email unless you ask it to. When it approves or rejects a pending application, AffiliateWP sends the same email the affiliate gets when you do it in the admin.
 
-That’s it! Your AI assistant can now answer questions about your affiliate program and, when you allow it, manage affiliates and referrals for you. Next, read [AffiliateWP AI Features](https://affiliatewp.com/docs/ai-features/) to see the AI tools built into AffiliateWP itself.
+That’s it! Your AI assistant can now answer questions about your affiliate program and, when you allow it, manage affiliates and referrals for you. Next, read [AffiliateWP AI Features](/docs/ai-features/) to see the AI tools built into AffiliateWP itself.
 
 ## FAQ
 
@@ -120,7 +121,7 @@ Write access is off by default. Only a user who can manage AffiliateWP settings 
 
 ### Can an AI assistant pay my affiliates?
 
-No. Your assistant can review your payouts and, with write access, mark a referral as paid. Marking a referral paid only records it as paid. No money is sent. To pay affiliates, use the [Payouts screen](https://affiliatewp.com/docs/paying-your-affiliates/), which also creates a payout record.
+No. Your assistant can review your payouts and, with write access, mark a referral as paid. Marking a referral paid only records it as paid. No money is sent. To pay affiliates, use the [Payouts screen](/docs/paying-your-affiliates/), which also creates a payout record.
 
 ### Why don’t I see the AI MCP tab?
 
@@ -152,7 +153,7 @@ To call abilities without MCP, use the WordPress Abilities REST API at
 /wp-json/wp-abilities/v1/abilities
 ```
 
-. It lists every AffiliateWP ability with its description and its input and output schemas. Each ability checks the connected user’s capability before it runs, so see [User Role Capabilities](https://affiliatewp.com/docs/user-role-capabilities/). To decide write access in code instead of with the toggle, use the 
+. It lists every AffiliateWP ability with its description and its input and output schemas. Each ability checks the connected user’s capability before it runs, so see [User Role Capabilities](/docs/user-role-capabilities/). To decide write access in code instead of with the toggle, use the 
 ```
 affwp_abilities_allow_write
 ```
@@ -9261,17 +9262,11 @@ Add an entry into the htaccess file (the RewriteEngine line may not be needed):
 
 <IfModule mod_rewrite.c>
 
-	
+RewriteEngine on
 
-	RewriteEngine on
+SetEnvIf Authorization “(.*)” HTTP_AUTHORIZATION=$1
 
-	
-
-	SetEnvIf Authorization “(.*)” HTTP_AUTHORIZATION=$1
-
-	
-
-	</IfModule>
+</IfModule>
 
 This populates the HTTP_AUTHORIZATION server variable.
 
@@ -11907,30 +11902,12 @@ Enabling **Automatically register new user accounts as affiliates** in **Affilia
 
 #### Easy Digital Downloads
 
-Easy Digital Downloads (EDD) offers two main ways for users to register: through the
-
+Easy Digital Downloads (EDD) offers two main ways for users to register: through the 
 ```
-Register New Account
+[edd_register]
+```
 
-		
-		
-			Username
-			
-		
-
-		
-			Email
-			
-		
-
-		
-			Password
-			
-		
-
-		
-			Confirm Password
-``` shortcode or during checkout if account creation is enabled. To enable signup referrals specifically for EDD registrations, navigate to the **Signup Referrals** section and select the **Easy Digital Downloads Registration** checkbox.
+ shortcode or during checkout if account creation is enabled. To enable signup referrals specifically for EDD registrations, navigate to the **Signup Referrals** section and select the **Easy Digital Downloads Registration** checkbox.
 
 ![Easy Digital downloads registration](https://affiliatewp.com/wp-content/uploads/2021/11/edd-referral-767x156.png)
 
@@ -11938,30 +11915,12 @@ Once this option is enabled, an **EDD – Registration Referral Amount** field a
 
 ![EDD registration referral amount](https://affiliatewp.com/wp-content/uploads/2021/11/edd-767x148.png)
 
-If you’d like to prevent duplicate referrals during checkout (where both an account creation and a purchase occur), select the **EDD – Disable Checkout Referral** option. This ensures that signup referrals are only generated when users register with the
-
+If you’d like to prevent duplicate referrals during checkout (where both an account creation and a purchase occur), select the **EDD – Disable Checkout Referral** option. This ensures that signup referrals are only generated when users register with the 
 ```
-Register New Account
+[edd_register]
+```
 
-		
-		
-			Username
-			
-		
-
-		
-			Email
-			
-		
-
-		
-			Password
-			
-		
-
-		
-			Confirm Password
-``` shortcode, not at checkout.
+ shortcode, not at checkout.
 
 #### Gravity Forms User Registration
 
@@ -15783,7 +15742,7 @@ AffiliateWP doesn’t currently support CRM platforms out of the box, however we
 
 [Take a look at our supported integrations](/doc-categories/integrations/) to see if there is a plugin that will suit your business or website needs.
 
-Alternatively, you may wish to investigate some custom development to integrate AffiliateWP with your specific CRM system. We [maintain a list](https://affiliatewp.com/consultants/) of trusted 3rd-party developers who may be able to help.
+Alternatively, with a Pro license the [Zapier addon](/docs/zapier-for-affiliatewp-installation-and-usage/) can send your affiliates and referrals to any CRM that Zapier connects to. A developer can also build a custom integration with the [AffiliateWP REST API](/docs/rest-api-v1-setup-and-usage/).
 
 ---
 
@@ -18772,11 +18731,15 @@ That’s it! By leveraging the integration between AffiliateWP and Easy Digital 
 
 ---
 
-## WooCommerce
+## WooCommerce integration
 
 **Source:** [https://affiliatewp.com/docs/woocommerce/](https://affiliatewp.com/docs/woocommerce/)
 
-AffiliateWP seamlessly integrates with WooCommerce to empower your affiliate marketing efforts. By enabling this integration, you can effortlessly track referrals, manage affiliate relationships, and boost your sales through affiliate marketing. This documentation will walk you through the key features and settings to maximize the potential of AffiliateWP within your WooCommerce store.
+AffiliateWP tracks the orders your affiliates send to your WooCommerce store and records a commission on each one. Turn it on at **AffiliateWP » Settings » Integrations**, and from then on every referred order shows up under **Referrals** with a link back to the WooCommerce order it came from. You can set a different rate for any product, category or variation, give affiliates their own coupon codes so a sale is credited even when nobody clicked a link, and pay commission on subscription renewals rather than only the first payment.
+
+There’s one thing to keep in mind though. Renewals only earn commission if you’re running the [Recurring Referrals addon](/docs/recurring-referrals-installation-and-usage/). Without it, an affiliate is paid on the first payment of a WooCommerce Subscription and nothing after.
+
+This page is for store owners running a program. If you’re an affiliate promoting someone else’s store, your commissions and links live in the affiliate dashboard on the store you promote, not here.
 
 **In This Article**
 
@@ -18790,7 +18753,7 @@ AffiliateWP seamlessly integrates with WooCommerce to empower your affiliate mar
 - [Product Variation Specific Rates](#aioseo-product-variation-specific-rates)
 - [Affiliate Signup Widget](#aioseo-affiliate-signup-widget)
 - [Display Affiliate Area Link in My Account](#display-affiliate-area-link-in-my-account)
-- [HPOS](#aioseo-hpos)
+- [Does AffiliateWP work with High-Performance Order Storage?](#aioseo-hpos)
 - [Assign order to affiliate](#aioseo-assign-order-to-affiliate)
 - [Frequently Asked Questions](#aioseo-frequently-asked-questions)
 
@@ -18862,7 +18825,7 @@ If you do not want a specific product to generate referrals, you can disable ref
 
 ## Subscription Rates
 
-If you are using the [Recurring Referrals](https://affiliatewp.com/add-ons/pro/recurring-referrals/) addon to create referrals from WooCommerce Subscriptions, you can now specify custom settings for referrals created from  subscription payments at the product level.
+If you are using the [Recurring Referrals](/docs/recurring-referrals-installation-and-usage/) addon to create referrals from WooCommerce Subscriptions, you can now specify custom settings for referrals created from  subscription payments at the product level.
 
 You can set the recurring rate, rate type and also limit the recurring referrals created for recurring payments per-product subscription:
 
@@ -18944,9 +18907,9 @@ To enable this option:
 
 Once enabled, your affiliates will see a new Affiliate Area link in their My Account menu. This link provides one-click access to the affiliate dashboard, improving usability and helping affiliates stay engaged.
 
-## HPOS
+## Does AffiliateWP work with High-Performance Order Storage?
 
-High Performance Order Storage (HPOS) enhances WooCommerce performance by optimizing order data storage. When using AffiliateWP with WooCommerce enabled for HPOS, referral tracking remains intact and efficient, maintaining performance as your affiliate network expands.
+Yes. Referral tracking remains intact when WooCommerce is using High-Performance Order Storage (HPOS), which improves performance by optimizing how order data is stored.
 
 ## Assign order to affiliate
 
@@ -18985,6 +18948,14 @@ To manually assign or reassign orders to an affiliate, go to **WooCommerce » Or
 ### Can an affiliate link automatically apply a discount in WooCommerce?
 
 Yes. With Affiliate Link Discounts enabled (a Pro feature), clicking an affiliate’s link automatically applies that affiliate’s dynamic coupon at checkout and shows the customer a confirmation notification. See the [Affiliate Link Discounts guide](https://affiliatewp.com/docs/affiliate-link-discounts/) for setup.
+
+### Do I need an addon for WooCommerce Subscriptions?
+
+Only for renewals. The WooCommerce integration tracks the first payment of a subscription on its own, and it comes with every AffiliateWP plan. Renewals need the [Recurring Referrals addon](/docs/recurring-referrals-installation-and-usage/), which comes with Pro.
+
+### What happens to a commission when a WooCommerce order is refunded?
+
+AffiliateWP rejects the referral, as long as you have not paid it out yet. **Reject Unpaid Referrals on Refund** is on by default at **AffiliateWP » Settings » Commissions**, and turning it off leaves the referral alone when an order is refunded. A referral you have already paid is never rejected, whichever way that setting is set.
 
 ---
 
