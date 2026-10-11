@@ -95,7 +95,7 @@ When creating an A/B Test Block within the Block Editor (outside of the A/B Test
 
 ![Switching Variants](https://docs.nexcess.com/wp-content/uploads/2026/06/Switching-Variants.gif)
 
-Viewing A/B Analyitcs
+Viewing A/B Analytics
 
 Once your A/B Tests are created, enable and use **Analytics** to track their performance. Analytics can initially be enabled from the **Dashboard -> Insights -> Settings** page.
 

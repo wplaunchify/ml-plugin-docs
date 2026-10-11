@@ -26,7 +26,7 @@ Kadence Insights uses the Bayesian approach to statistical significance, this is
 
 **How long should I run an A/B test to collect sufficient data?**
 
-The duration of an A/B test depends on several factors, including traffic, conversion rates, and the desired level of certainty. While the Bayesian approach, used by Kadence Insights, offers greater flexibility in test duration compared to the traditional approach (Frequentis approach), you still need sufficient data to draw reliable conclusions.
+The duration of an A/B test depends on several factors, including traffic, conversion rates, and the desired level of certainty. While the Bayesian approach, used by Kadence Insights, offers greater flexibility in test duration compared to the traditional approach (Frequent approach), you still need sufficient data to draw reliable conclusions.
 
 Please take the following considerations:
 
