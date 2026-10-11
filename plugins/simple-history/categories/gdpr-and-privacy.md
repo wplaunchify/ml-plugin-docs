@@ -33,7 +33,7 @@ Some key GDPR-related points about Simple History:
 - The plugin does not use [Google Fonts](https://en.wikipedia.org/wiki/Google_Fonts)
 - The plugin sets no [cookies](https://en.wikipedia.org/wiki/HTTP_cookie)
 - The plugin uses no [local storage](https://en.wikipedia.org/wiki/Web_storage)
-- The plugin can store anonymized [IP addresses](https://en.wikipedia.org/wiki/IP_address)
+- The plugin stores masked [IP addresses](https://en.wikipedia.org/wiki/IP_address) by default (the last part is removed)
 
 ### What is logged, and where it lives
 
@@ -47,16 +47,15 @@ All of it is stored directly in your own WordPress database, in two custom table
 
 Log entries are deleted automatically after a set number of days. Keeping logs only as long as you actually need them is good practice under the GDPR’s data minimisation principle, so it’s worth reviewing this setting — you can [adjust the retention period](https://simple-history.com/support/change-number-of-days-to-keep-log/) with Simple History Premium or a filter.
 
-### IP Address Anonymization
+### IP addresses are masked
 
-To enhance privacy compliance, Simple History offers IP address anonymization:
+Simple History masks IP addresses before it stores them. The last part is removed, so 192.168.1.23 is stored as 192.168.1.x. For IPv6 addresses, only the first half is kept.
 
-1. Go to Settings → Simple History
-2. Select “IP Address Anonymization”
-3. Choose between:
-- No anonymization (stores full IP addresses)
-- Partial anonymization (e.g., 192.168.xxx.xxx)
-- Full anonymization (no IP addresses stored, *coming soon*)
+A masked address is not anonymous. It is stored in the same log entry as the username and the time, so it can still be linked to a person, and it is still personal data under the GDPR (see [Recital 26](https://gdpr-info.eu/recitals/no-26/)). Masking is a way to collect less, in line with the GDPR’s data minimisation principle.
+
+Since [version 5.35.0](https://simple-history.com/2026/simple-history-5-35-0-released/), only administrators can see IP addresses in the log, in event details, in exports and in search. Editors and other roles that can read the log see the events without the addresses. Developers can change who sees them with the [simple_history/view_ip_address_capability](https://simple-history.com/docs/hooks/#simple_history/view_ip_address_capability) filter.
+
+With [Simple History Premium](https://simple-history.com/add-ons/premium/) you can choose to store full IP addresses instead, for example when you need them for security work. The setting is under Simple History → Settings → Premium Settings → IP Addresses, with the options “Mask IP addresses (remove the last part)” and “Store full IP addresses”.
 
 ## Responding to data subject requests
 
@@ -89,7 +88,7 @@ As the website owner using Simple History, you are considered the “data contro
 - How long data is retained
 - How users can request access to or deletion of their data
 2. **Configure data retention** to keep logs only as long as necessary
-3. **Consider anonymizing IP addresses** to minimize personal data collection
+3. **Keep IP addresses masked** unless you need full addresses, to collect less personal data
 4. **Implement a process** for handling data subject requests:
 - Right to access their data
 - Right to be forgotten (deletion)
