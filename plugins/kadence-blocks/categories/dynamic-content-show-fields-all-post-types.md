@@ -16,7 +16,7 @@ Generally, the custom fields are found in the dynamic content custom field selec
 
 Custom Input Example
 
-There are cases when custom fields aren’t listed in the custom field selector. For example, The Events Calander is a plugin that lets you create event posts. The posts have custom fields that are listed [here](https://docs.nexcess.com/software/the-events-calendar/wordpress-post-meta/). However, the fields aren’t available to select because a third-party plugin provides them. Nonetheless, you can source an event post and access the **_EventCost**by choosing “**Custom Input**” for the “**Custom Field**” option. Here is a screenshot that shows the event cost of an event from The Events Calendar plugin added to the content of a post dynamically.
+There are cases when custom fields aren’t listed in the custom field selector. For example, The Events Calendar is a plugin that lets you create event posts. The posts have custom fields that are listed [here](https://docs.nexcess.com/software/the-events-calendar/wordpress-post-meta/). However, the fields aren’t available to select because a third-party plugin provides them. Nonetheless, you can source an event post and access the **_EventCost**by choosing “**Custom Input**” for the “**Custom Field**” option. Here is a screenshot that shows the event cost of an event from The Events Calendar plugin added to the content of a post dynamically.
 
 ![custom meta key example](https://docs.nexcess.com/wp-content/uploads/2026/06/custom-meta-key-example-1024x731-1.jpeg)
 
