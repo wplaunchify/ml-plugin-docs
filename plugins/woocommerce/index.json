@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-10-04T19:56:18.984Z",
-  "total_pages": 3632,
+  "last_scraped": "2026-10-11T19:02:52.336Z",
+  "total_pages": 3672,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,168 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3632,
+      "page_count": 3672,
       "pages": [
+        {
+          "title": "Developer Reference",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-developer-reference/"
+        },
+        {
+          "title": "WP-CLI Commands",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-wp-cli-commands/"
+        },
+        {
+          "title": "Troubleshooting and FAQ",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-troubleshooting-and-faq/"
+        },
+        {
+          "title": "Customer Wallet Page, Block and Shortcode",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-customer-wallet-page/"
+        },
+        {
+          "title": "Wallet Emails",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-wallet-emails/"
+        },
+        {
+          "title": "Bulk Operations and CSV Import",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-bulk-operations-and-csv-import/"
+        },
+        {
+          "title": "Managing Wallets",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-managing-wallets/"
+        },
+        {
+          "title": "Withdrawals",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-withdrawals/"
+        },
+        {
+          "title": "Earning Rules and Cashback",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-earning-rules-and-cashback/"
+        },
+        {
+          "title": "Top-ups (Add Funds)",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-top-ups/"
+        },
+        {
+          "title": "Refunds to Wallet",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-refunds-to-wallet/"
+        },
+        {
+          "title": "Checkout and Wallet Payments",
+          "url": "https://woocommerce.com/document/elite-balance/checkout-and-wallet-payments/"
+        },
+        {
+          "title": "Migrating from Another Wallet Plugin",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-migrating-from-another-wallet-plugin/"
+        },
+        {
+          "title": "Settings Reference",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-settings-reference/"
+        },
+        {
+          "title": "Getting Started with Elite Balance",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-getting-started/"
+        },
+        {
+          "title": "Installing Elite Balance",
+          "url": "https://woocommerce.com/document/elite-balance/elite-balance-installation/"
+        },
+        {
+          "title": "Daily PDF Sales Report Email",
+          "url": "https://woocommerce.com/document/daily-detail-sales-report/"
+        },
+        {
+          "title": "Elite Balance",
+          "url": "https://woocommerce.com/document/elite-balance/"
+        },
+        {
+          "title": "2026 Holiday Shipping Deadlines and Peak Surcharges",
+          "url": "https://woocommerce.com/document/2026-holiday-shipping-deadlines-and-peak-surcharges/"
+        },
+        {
+          "title": "Troubleshooting WooCommerce.com extension updates with code",
+          "url": "https://woocommerce.com/document/troubleshoot-woocommercecom-extension-updates-with-code/"
+        },
+        {
+          "title": "WooCommerce Analytics tax lookup migration",
+          "url": "https://woocommerce.com/document/analytics-tax-lookup-migration/"
+        },
+        {
+          "title": "Allow Shop Managers to edit selected user roles",
+          "url": "https://woocommerce.com/document/shop-manager-editable-user-roles/"
+        },
+        {
+          "title": "How to Test Affiliate Commission Rules in WooCommerce",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/test-affiliate-commission-rules/"
+        },
+        {
+          "title": "Dynamic Metal Prices",
+          "url": "https://woocommerce.com/document/dynamic-metal-prices/"
+        },
+        {
+          "title": "Set product image widths in a WooCommerce theme",
+          "url": "https://woocommerce.com/document/adding-product-images-and-galleries/set-theme-product-image-widths/"
+        },
+        {
+          "title": "Disable classic product gallery features",
+          "url": "https://woocommerce.com/document/adding-product-images-and-galleries/disable-classic-product-gallery-features/"
+        },
+        {
+          "title": "Refunds, Return Periods and Commission Recovery",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/affiliate-commission-refunds-and-return-period/"
+        },
+        {
+          "title": "Upgrading to Version 3.0.0 and Converting to Commission Rules",
+          "url": "https://woocommerce.com/document/affiliate-and-referral/upgrade-to-commission-rules/"
+        },
+        {
+          "title": "Gemini Enterprise for CX",
+          "url": "https://woocommerce.com/document/gemini-enterprise-for-cx/"
+        },
+        {
+          "title": "QR Code by QodeVault",
+          "url": "https://woocommerce.com/document/qr-code-by-qodevault/"
+        },
+        {
+          "title": "Purchase Order Gateway: Developer Reference",
+          "url": "https://woocommerce.com/document/woocommerce-purchase-order-gateway/purchase-order-gateway-developer-reference/"
+        },
+        {
+          "title": "EU Order Withdrawal Button",
+          "url": "https://woocommerce.com/document/eu-order-withdrawal-button/"
+        },
+        {
+          "title": "Scheduled Order Exports",
+          "url": "https://woocommerce.com/document/extra-order-filters-for-woocommerce/scheduled-order-exports/"
+        },
+        {
+          "title": "Show zero-value tax lines in order totals",
+          "url": "https://woocommerce.com/document/show-zero-value-order-tax-totals/"
+        },
+        {
+          "title": "Assign a product tax class by customer role",
+          "url": "https://woocommerce.com/document/assign-tax-class-by-customer-role/"
+        },
+        {
+          "title": "Keep tax-inclusive product prices across customer locations",
+          "url": "https://woocommerce.com/document/keep-tax-inclusive-prices-across-locations/"
+        },
+        {
+          "title": "AI Product Bundles",
+          "url": "https://woocommerce.com/document/ai-product-bundle/"
+        },
+        {
+          "title": "Wix Data Migrator",
+          "url": "https://woocommerce.com/document/wix-data-migrator/"
+        },
+        {
+          "title": "How to Generate and Connect a Meta System User Access Token for WhatsApp Cloud API",
+          "url": "https://woocommerce.com/document/how-to-generate-and-connect-a-meta-system-user-access-token-for-whatsapp-cloud-api/"
+        },
+        {
+          "title": "Presta Data Migrator",
+          "url": "https://woocommerce.com/document/presta-data-migrator/"
+        },
         {
           "title": "Sales by State Report Pro",
           "url": "https://woocommerce.com/document/sales-by-state-report-pro/"
@@ -234,7 +394,7 @@
           "url": "https://woocommerce.com/document/woocommerce-store-editing/templates/customizing-the-cart-page/"
         },
         {
-          "title": "Performance-Based Direct Commission with Affiliate Levels",
+          "title": "Performance-Based Affiliate Commission with Affiliate Levels",
           "url": "https://woocommerce.com/document/affiliate-and-referral/performance-based-affiliate-commission/"
         },
         {
@@ -286,7 +446,7 @@
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-create-affiliate-banners/"
         },
         {
-          "title": "Affiliate Bonuses and Incentives",
+          "title": "Signup, Click, Sharing and Lead Bonuses for Affiliates",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-affiliate-bonuses/"
         },
         {
@@ -1918,7 +2078,7 @@
           "url": "https://woocommerce.com/document/affiliate-for-woocommerce/how-to-pay-affiliate-commissions-via-paypal/"
         },
         {
-          "title": "Self-Service Refunds",
+          "title": "Self-Service Refunds for WooCommerce",
           "url": "https://woocommerce.com/document/self-service-refunds/"
         },
         {
@@ -2950,8 +3110,8 @@
           "url": "https://woocommerce.com/document/integration-for-bigin-by-zoho-crm/"
         },
         {
-          "title": "WooCommerce Product Add-Ons Point of Sale (POS) Integration",
-          "url": "https://woocommerce.com/document/foosales-for-woocommerce/using-woocommerce-product-add-ons-at-point-of-sale/"
+          "title": "WooCommerce Product Add-Ons Integration",
+          "url": "https://woocommerce.com/document/foosales-for-woocommerce/using-woocommerce-product-add-ons-with-foosales/"
         },
         {
           "title": "Voizee",
@@ -5282,7 +5442,7 @@
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-customize-affiliate-and-referral-emails/"
         },
         {
-          "title": "Affiliate Ranks and Rank Bonuses",
+          "title": "Performance Bonuses and Rank Rewards for Affiliates",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-implement-rank-feature-in-affiliate-plugin/"
         },
         {
@@ -5294,11 +5454,11 @@
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-up-mlm-in-affiliate-program/"
         },
         {
-          "title": "Two-Way Commission and Referral Discounts",
+          "title": "Affiliate Referral Discount for Referred Customers",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-enable-two-way-commission-in-affiliate-program/"
         },
         {
-          "title": "Commission per Product or Category",
+          "title": "Commission per Product, Category or Tag",
           "url": "https://woocommerce.com/document/affiliate-and-referral/how-to-set-affiliate-commission-per-product/"
         },
         {
@@ -6332,46 +6492,6 @@
         {
           "title": "Product Category Shortcodes",
           "url": "https://woocommerce.com/document/woocommerce-shortcodes/product-category/"
-        },
-        {
-          "title": "Product shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/products/"
-        },
-        {
-          "title": "Page Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/page-shortcodes/"
-        },
-        {
-          "title": "B2B Invoice Payment Method",
-          "url": "https://woocommerce.com/document/b2b-invoice-payment-method/"
-        },
-        {
-          "title": "Order Statuses",
-          "url": "https://woocommerce.com/document/managing-orders/order-statuses/"
-        },
-        {
-          "title": "Orders Overview and Bulk Order Management",
-          "url": "https://woocommerce.com/document/managing-orders/overview-and-bulk-management/"
-        },
-        {
-          "title": "Single Order Page and Manually Adding an Order",
-          "url": "https://woocommerce.com/document/managing-orders/view-edit-or-add-an-order/"
-        },
-        {
-          "title": "Paying for Orders",
-          "url": "https://woocommerce.com/document/managing-orders/paying-for-orders/"
-        },
-        {
-          "title": "Removing personal data from orders",
-          "url": "https://woocommerce.com/document/managing-orders/removing-personal-data-from-orders/"
-        },
-        {
-          "title": "Testing orders",
-          "url": "https://woocommerce.com/document/managing-orders/testing-orders/"
-        },
-        {
-          "title": "Troubleshooting Orders",
-          "url": "https://woocommerce.com/document/managing-orders/troubleshooting-orders/"
         },
         {
           "title": "Feature, Filter, and Sort Products",
@@ -12252,6 +12372,46 @@
         {
           "title": "Privacy considerations when using official payments extensions",
           "url": "https://woocommerce.com/document/privacy-payments/"
+        },
+        {
+          "title": "Privacy considerations when using official shipping extensions",
+          "url": "https://woocommerce.com/document/privacy-shipping/"
+        },
+        {
+          "title": "Subscriptions Use Case: Gifting a Subscription Box",
+          "url": "https://woocommerce.com/document/gifting-subscription-box/"
+        },
+        {
+          "title": "Subscriptions Use Case: Corporate Purchasing",
+          "url": "https://woocommerce.com/document/corporate-subscription-purchasing/"
+        },
+        {
+          "title": "Gifting for WooCommerce Subscriptions",
+          "url": "https://woocommerce.com/document/subscriptions-gifting/"
+        },
+        {
+          "title": "Google Product Feed – Product Review Feeds",
+          "url": "https://woocommerce.com/document/google-product-feed-product-review-feeds/"
+        },
+        {
+          "title": "Mailchimp for WooCommerce Memberships",
+          "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
+        },
+        {
+          "title": "Add to Cart Redirect",
+          "url": "https://woocommerce.com/document/add-to-cart-redirect/"
+        },
+        {
+          "title": "WooCommerce site and data security FAQ",
+          "url": "https://woocommerce.com/document/woocommerce-security-faq/"
+        },
+        {
+          "title": "Mix and Match Version 1.3.0 – What’s New",
+          "url": "https://woocommerce.com/document/woocommerce-mix-and-match-products/version-1-3/"
+        },
+        {
+          "title": "Filters",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/api/filters/"
         },
         {
           "title": "[woocommerce_product_search]",
