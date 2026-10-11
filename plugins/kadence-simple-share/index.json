@@ -2,7 +2,7 @@
   "plugin_slug": "kadence-simple-share",
   "plugin_name": "Kadence Simple Share",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-  "last_scraped": "2026-10-04T19:50:13.764Z",
+  "last_scraped": "2026-10-11T18:57:40.619Z",
   "total_pages": 24,
   "failed_urls_count": 3,
   "sections": [
@@ -209,7 +209,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Test for Plugin Conflicts",
+          "title": "How to Install and Use the Temporary Login Without Password Plugin on a WordPress Website",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-general/temporary-login-without-password/"
         }
       ]

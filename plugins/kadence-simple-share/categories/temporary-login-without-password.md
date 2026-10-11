@@ -4,93 +4,95 @@
 
 ---
 
-## How to Test for Plugin Conflicts
+## How to Install and Use the Temporary Login Without Password Plugin on a WordPress Website
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/temporary-login-without-password/](https://www.kadencewp.com/help-center/docs/kadence-general/temporary-login-without-password/)
 
-When a feature on your website stops working as expected, such as layout breaks, editor errors, form submission failures, or unexpected display issues, the underlying cause is often a **plugin or theme conflict**.
+Managing user access in WordPress can be challenging, especially when you need to give developers, support, or clients temporary access. Instead of creating accounts and sharing passwords, the **Temporary Login Without Password** plugin lets you generate secure, time-limited login links. You control the user’s role, set an expiration date, and avoid leaving unused accounts behind. In this guide, we’ll show you how to install the plugin, create and share links, and manage or revoke access to keep your site secure.
 
-In WordPress, plugins and themes are created by thousands of different developers. Because they share the same execution environment and hook into the same core scripts, styling rules, and database functions, two pieces of code occasionally run into each other and cause unintended errors.
+Kadence support may ask for a temporary login link created with the **Temporary Login Without Password** plugin to help troubleshoot issues. Administrator access is often required, but for security it’s best to use a staging site or make backups before granting access. This way, your live site stays protected while support can securely log in without needing shared credentials.
 
-Conflict testing is the process of systematically isolating your site’s software to identify exactly which plugin or theme is causing the issue.
+Installing the Temporary Login Without Password Plugin
 
-## Step 1: Prepare Your Website Before Testing
+Step 1: Access Your WordPress Dashboard
 
-Before making any changes to your site configuration, always complete the following preparatory steps:
+- To begin, log in to your WordPress admin area. You’ll need administrator privileges to install and activate plugins.
 
-- **Update to the Latest Versions:** Ensure WordPress core, your active theme, and all installed plugins are updated to their latest versions. Known bugs and compatibility issues are frequently patched in software releases, so updating first might resolve the issue right away.
-- **Create a Full Backup:** Take a complete backup of your website’s database and files using your web host’s backup tool or a reliable backup plugin.
-- **Use a Staging Site (Recommended):** If your host provides a staging environment, perform your tests there to prevent downtime or visual disruption for live visitors. You can learn about different ways to set up a staging environment [here](https://docs.nexcess.com/software/troubleshooting/setup-wordpress-staging-site/).
-- **Clear Caches:** Clear your browser cache, along with any server-level caching or caching plugins (e.g., Redis, object cache, page cache), to ensure you see real-time changes during testing.
+Step 2: Navigate to the Plugins Section
 
-## Step 2: Test for a Theme or Plugin Conflict
+- On the left-hand side, click on **Plugins**.
+- Then click **Add New** at the top of the screen.
 
-The standard manual conflict test involves switching to a default theme and deactivating plugins to isolate the root cause.
+Step 3: Search for the Plugin
 
-### Phase A: Test for a Theme Conflict
+- In the search bar, type **Temporary Login Without Password**. The plugin should appear in the results.
 
-1. Go to **Appearance > Themes**.
-2. Temporarily activate a standard, uncustomized default WordPress theme (such as **Twenty Twenty** or **Twenty Twenty-Four**).
-3. Clear your browser cache and retest the issue.
-- **If the issue resolves:** Your active theme is causing the conflict.
-- **If the issue remains:** Re-enable your preferred theme and proceed to Phase B.
+![Installing Temporary Login Without Password WordPress Plugin](https://docs.nexcess.com/wp-content/uploads/2026/06/Temporary-Login-Without-Password-Wordpress-Plugin.jpeg)
 
-### Phase B: Test for a Plugin Conflict
+Step 4: Install the Plugin
 
-1. Go to **Plugins > Installed Plugins**.
-2. Select the checkbox next to every plugin **except** the core plugin you are testing (and any essential add-on required for it to run).
-3. From the **Bulk Actions** drop-down menu, select **Deactivate**, then click **Apply**.
-4. Clear your browser cache and retest your site.
-- **If the issue is resolved:** A plugin conflict is present. Proceed to find the specific culprit.
-- **If the issue persists:** The problem may be related to server configuration, database errors, or core settings rather than an active plugin conflict.
-5. Reactivate your remaining plugins **one by one** (or in groups), retesting your site after each activation.
-6. When the issue reappears, the plugin you just activated is the source of the conflict.
+- Click the **Install Now** button next to the plugin name.
+- After installation is complete, click **Activate** to enable the plugin on your site.
 
-## Method 2: Standard Manual Conflict Testing
+![activate temporary login without password](https://docs.nexcess.com/wp-content/uploads/2026/06/activate-temporary-login-without-password-e1725658907404.jpeg)
 
-If you are working on a staging environment, you can perform manual conflict testing directly through your dashboard.
+Creating and Sending a Temporary Login Link
 
-### Phase A: Test for a Theme Conflict
+Now that the plugin is installed and activated, a new menu option will appear in the WordPress dashboard under Users. Follow these steps to generate and send a temporary login link:
 
-1. Go to **Appearance > Themes**.
-2. Temporarily activate a standard, uncustomized default WordPress theme (such as *Twenty Twenty* or *Twenty Twenty-Four*).
-3. Clear your browser cache and retest the issue.
-- **If the issue resolves:** Your active theme is causing the conflict.
-- **If the issue remains:** Re-enable your preferred theme and proceed to Phase B.
+Step 1: Go to Temporary Logins
 
-### Phase B: Test for a Plugin Conflict
+- In the WordPress dashboard, go to **Users → Temporary Logins**. Here, you’ll find the interface to create, view, and manage temporary user accounts.
 
-1. Go to **Plugins > Installed Plugins**.
-2. Select the checkbox next to every plugin **except** the core plugin you are testing (and its required add-ons).
-3. From the **Bulk Actions** drop-down menu, select **Deactivate**, then click **Apply**.
-4. Clear your browser cache and retest your site.
-- **If the issue is gone:** A plugin conflict is confirmed.
-5. Reactivate your plugins **one by one**, retesting your site after each single activation.
-6. When the error returns, the plugin you just activated is the source of the conflict.
+![Temporary Logins](https://docs.nexcess.com/wp-content/uploads/2026/06/Temporary-Logins.jpeg)
 
-**Note on Testing Safely on a Live Site:**
+Step 2: Create a New Temporary Login
 
-If a staging environment is unavailable, the **Health Check & Troubleshooting** plugin (developed by the WordPress Community) can help simplify this process. Using its built-in **Troubleshooting Mode** (*Tools > Site Health > Troubleshooting*), you can temporarily deactivate plugins and switch themes **only for your logged-in session**. Your site visitors will continue to see your live site normally while you test.
+- Click on **Create New** at the top of the screen.
+- Fill in the required details, including the name and email address of the person you want to grant access to.
 
-## Step 3: Common Troubleshooting Scenarios
+![Temporary Logins Create New](https://docs.nexcess.com/wp-content/uploads/2026/06/Temporary-Logins-Create-New.jpeg)
 
-If you have isolated a conflict or if the issue persists even with all third-party software disabled. Check these common scenarios:
+Step 3: Choose a User Role
 
-- **T****heme Overrides:** Custom template files in your child theme folder can become outdated after plugin updates. Try temporarily renaming your custom override folder (e.g., adding -bak to the end of the folder name) to see if older template files are breaking functionality.
-- **JavaScript Errors:** Open your browser’s Developer Tools console (**F12** or **Cmd + Option + I**) and refresh the page. Identifying red console errors can provide specific script paths or function names causing issues.
-- **404 Page Not Found Errors:** Common after updates or changing custom post type settings. Go to **Settings > Permalinks** in your admin area and click **Save Changes** (without changing settings) to flush rewrite rules.
-- **403 Forbidden / API Restrictions:** Caching, security, firewall, or membership plugins may block access to WordPress REST API endpoints (/wp-json/). Temporarily disable endpoint restrictions or whitelist REST API routes to test.
-- **Performance / Slow Loading:** Often caused by large database queries resulting from un-indexed data, extensive transient data, or recurring entries without set end dates.
+- Select the role you want to assign to the temporary user. The available options will be the standard WordPress roles, such as **Administrator**, **Editor**, **Author**, **Contributor**, or **Subscriber**. Choose a role based on the level of access you want to grant. **Example**:
+- **Administrator**: Full control over the site, including settings and plugins.
+- **Editor**: Can edit and publish content but cannot modify site settings.
+- **Subscriber**: Minimal access, typically just for viewing content.
 
-## Reporting Your Findings to Support
+**Note:** when granting access to Kadence Technical support, typically **Administrator** access is required.
 
-If you have confirmed a conflict involving our software and a third-party product, reach out to our support team with the following details so we can assist you quickly:
+Step 4: Set Expiration Date
 
-1. **Conflicting Software Details:** The exact name and version number of the conflicting plugin or theme.
-2. **Issue Description:** Step-by-step instructions to reproduce the exact error when both products are active together.
-3. **System Information:** Send a copy of your site system status (found under your plugin’s help/tools tab, or via **Tools > Site Health > Info**).
+- Choose how long the login link will remain valid. You can set the expiration from **1 day** up to **1 month** or use a custom date. Once the expiration date is reached, the temporary account will automatically expire and the user will no longer have access.
 
-*For conflicts involving unmaintained or third-party software outside our direct codebase, our team is happy to point you in the right direction or suggest alternative compatibility approaches.*
+Step 5: Generate the Login Link
+
+- Click **Submit** after filling in the details. The plugin will then generate a unique login link for the user.
+
+Step 6: Copy and Share the Link
+
+- After generating the link, you’ll see it listed under **Temporary Logins**. Click the **Copy Link** icon to get the URL.
+- You can now send this link via email, message, or any other communication method. When the recipient clicks the link, they’ll gain access to your WordPress site without needing a password.
+
+![Temporary Logins link](https://docs.nexcess.com/wp-content/uploads/2026/06/Temporary-Logins-link.jpeg)
+
+Managing Temporary Logins
+
+The **Temporary Logins** page fully overviews all active, expired, and pending temporary users. You can manually revoke access before the expiration date if necessary. Here’s how to manage these users:
+
+- **Viewing Login Details**: You can see details such as the user’s role, email, and expiration date.
+- **Revoking Access**: To revoke access manually, click the **Delete** button next to the temporary user account. This will immediately disable the link.
+- **Resending the Link**: If the temporary user loses the link or needs to resend it, you can generate a new one by clicking **Resend Link**.
+
+Security Considerations
+
+While the **Temporary Login Without Password** plugin is convenient, you should follow best practices to maintain the security of your WordPress site:
+
+- **Limited Roles**: Be cautious about the roles you assign. Only grant as much access as is necessary for the user’s tasks.
+- **Monitoring Activity**: Consider using an activity log plugin to track what actions temporary users perform while accessing your site.
+- **Regular Review**: Regularly review temporary logins to ensure no expired or unused accounts are lingering.
+- **Deactivate:** Deactivating the Temporary Login plugin when it’s no longer needed ensures all temporary users will no longer be able to log into your site.
 
 ---
 

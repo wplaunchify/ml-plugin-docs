@@ -8,53 +8,27 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/white-label/](https://www.kadencewp.com/help-center/docs/kadence-general/white-label/)
 
-Kadence White Label empowers users to tailor their Kadence Theme Backend to reflect their unique branding. With this plugin, users can customize Kadence Icons, Images, and Texts to align with their preferences. This functionality particularly benefits web agencies and Kadence creators seeking greater control over their brand identity. 
+Kadence White Label empowers users to tailor their WordPress admin interface to reflect their unique agency or client branding. With this plugin, you can replace Kadence icons, product names, images, links, and support text with your own custom identity. This functionality particularly benefits agencies, freelancers, and creators seeking complete control over client-facing brand presentations.
 
-The Kadence White Label plugin is available in our Ultimate Plan or Lifetime Ultimate Plan. You can view our Plan Prices **here**. Kadence White Label only affects the Kadence theme and blocks, not other Kadence plugins like Kadence Conversions or Shop Kit.
+Before you begin
 
-## Installing Kadence White Label
+		Kadence White Label applies to the Kadence Theme and Kadence Blocks, and does not alter third-party plugins or standalone extensions such as Kadence Conversions or Shop Kit.
 
-Installing the Kadence White Label plugin is easy. Just follow the steps below to get started.
+## Licensing Kadence White Label
 
-Once you have access to the Kadence White Label Plugin, you can download it from your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page.
+**Liquid Web Software**manages your licensing through the **Liquid Web Portal**. For full instructions on downloading, installing, and licensing your product, see the official **How to Activate a Unified License** document.
 
-![Downloads and licenses](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-1.jpg)
+Legacy Licensing Notice
 
-You will see Kadence White Label listed in your Products list. You can click on the Download button to download the Kadence White Label Zip. Be sure to leave the file compressed and don’t unzip it.
+*The information below applies to users who purchased a Kadence plan before May 2026.*
 
-Next, navigate to your WordPress Dashboard and go to Plugins -> Add New Plugin. At the top of the Add New Plugin page, click on the **Upload** **Plugin** button.
+*If you are on a legacy, grandfathered plan (prior to the May 2026 unified licensing release),*you can activate your license key directly within your WordPress dashboard:
 
-![Upload Kadence Blocks Pro](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Kadence-Blocks-Pro-scaled-1.jpg)
+- Navigate to **Dashboard → Appearance → Kadence → White Label**.
+- Locate the license input area, then enter your legacy **License Key**.
+- Click **Save Changes** to activate your copy and enable automatic updates.
 
-Then, click on the **Choose** **File** button and select your Kadence White Label Zip file. Once you have selected the file, click the **Install** **Now** button.
-
-![Upload White Label](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-White-Label-1024x262-1.jpg)
-
-Once the plugin is installed, click the blue **Activate** **Plugin** button to activate your plugin. Now your Kadence White Label plugin is Activated on your website. You must now License your plugin.
-
-### Licensing Kadence White Label
-
-Once you activate the Kadence White Label plugin, you will get a prompt in your WordPress Dashboard that says *Kadence White Label has not been activated. Click here to activate.*You can click on the link in the prompt to get to your Kadence White Label Settings.
-
-![White Label Prompt](https://docs.nexcess.com/wp-content/uploads/2026/06/White-Label-Prompt.jpg)
-
-Once you click on the link, you will be brought to your Kadence White Label Settings page. If you do not get the prompt in your Dashboard, you can simply navigate to your WordPress Dashboard -> Appearance -> Kadence -> White Label page to get here manually.
-
-![License White Label](https://docs.nexcess.com/wp-content/uploads/2026/06/License-White-Label-scaled-1.jpg)
-
-Once you are on the Kadence White Label Page, you can input your License API Key and License your Kadence White Label plugin. Your License API Key can be found on your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page. You can click on the Copy button next to your License Key to copy it directly to your clipboard.
-
-![License Key](https://docs.nexcess.com/wp-content/uploads/2026/06/License-Key-1024x356-1.jpg)
-
-Once you have your API Key, you can input it in your Kadence License Key input field and press the **Save** **Changes** button.
-
-![Licensed White Label](https://docs.nexcess.com/wp-content/uploads/2026/06/Licensed-White-Label-scaled-1.jpg)
-
-That’s it, your Kadence White Label plugin is now Activated and Licensed on your website!
-
-The White Label plugin can be customized in your Dashboard -> Appearance -> Kadence -> White Label. Here you can set your General, Theme, Blocks, and Extra settings.
-
-General Settings
+## General Settings
 
 The General settings allow you to Enable White Label.
 
@@ -74,7 +48,7 @@ You can also set a White Label Plugin Icon Image. The suggested size is 256px by
 
 ![General Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/General-Settings-2.jpg)
 
-Theme Settings
+## Theme Settings
 
 The Theme Settings control the White Label settings for the Kadence Theme. 
 
@@ -110,7 +84,7 @@ This is an example of the Kadence Theme Kit Pro plugin using a White Label.
 
 ![Sample Theme Pro Plugin](https://docs.nexcess.com/wp-content/uploads/2026/06/Sample-Theme-Pro-Plugin.jpg)
 
-Block Settings
+## Block Settings
 
 The Block Settings control the White Label settings for the Kadence Blocks plugin. 
 
@@ -146,7 +120,7 @@ Here is an example of the Kadence Blocks and Blocks Pro plugins using a White La
 
 ![Sample Blocks Plugins](https://docs.nexcess.com/wp-content/uploads/2026/06/Sample-Blocks-Plugins.jpg)
 
-Extra Settings
+## Extra Settings
 
 You can use the Extra Settings to Hide White Label. Whenever you hide White Label, it will disappear from your Appearance Navigation. The only way to get the White Label Page back is to go to your theme settings page and add &show_white_label=true to the end of the URL.
 

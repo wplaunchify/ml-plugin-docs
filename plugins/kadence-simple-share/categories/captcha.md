@@ -8,34 +8,32 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/captcha/](https://www.kadencewp.com/help-center/docs/kadence-general/captcha/)
 
-Kadence CAPTCHA allows you to add either Google’s reCAPTCHA service or Cloudflare’s Turnstile service to your website. Kadence CAPTCHA can be used on Forms across your website, such as the Login Form, Registration Form, and/or the WooCommerce Review Form. Connect reCAPTCHA or Turnstile to Kadence CAPTCHA and enable the places you wish to use CAPTCHA features.
+**Kadence CAPTCHA** allows you to add either Google reCAPTCHA or Cloudflare Turnstile protection across your website forms. It helps prevent spam submissions and brute-force attempts on essential WordPress entry points, including the Login Form, Registration Form, Comment Forms, and WooCommerce Review Forms.
 
 **Tip:** Want to add extra protection to your Kadence Block Forms? You can also integrate CAPTCHA protections into Kadence Form Blocks. [Click here to learn how to set up Google reCAPTCHA](https://docs.nexcess.com/software/kadence/google-recaptcha-form-adv-block/) with Kadence Forms, or [click here to learn how to set up Cloudflare Turnstile](https://docs.nexcess.com/software/kadence/cloudflare-turnstile-form-adv-block/) with Kadence Forms.
 
-Available Integrations
+## Available Integrations
 
 Kadence CAPTCHA offers the ability to use either Google reCAPTCHA v2/v3 or Cloudflare Turnstile. These are third-party services outside of Kadence. You will need to create an account for your selected service, complete the setup steps for that service, and then use the provided API to connect it to Kadence CAPTCHA.
 
 Learn about getting started with [Google reCAPTCHA Here](https://www.google.com/recaptcha/about/). 
 Learn about getting started with [Cloudflare Turnstile Here](https://developers.cloudflare.com/turnstile/get-started/).
 
-Installing and Activating Kadence CAPTCHA
+## Licensing Kadence CAPTCHA
 
-You can download the Kadence CAPTCHA plugin if you have access to the **Express Plan** or greater. You can view our pricing [here](https://www.kadencewp.com/product/kadence-google-recaptcha/).
+**Liquid Web Software**manages your licensing through the **Liquid Web Portal**. For full instructions on downloading, installing, and licensing your product, see the official **How to Activate a Unified License** document.
 
-Once you have access to the Kadence CAPTCHA Plugin, you can download it from your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page.
+Legacy Licensing Notice
 
-![Downloads](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-2.jpg)
+*The information below applies to users who purchased a Kadence plan before May 2026.*
 
-You will see Kadence CAPTCHA listed in your Products list. You can click on the Download button to download the Kadence CAPTCHA Zip. Be sure to leave the file compressed and don’t unzip it.
+*If you are on a legacy, grandfathered plan (prior to the May 2026 unified licensing release),* you can activate your license key directly within your WordPress dashboard:
 
-![Download Kadence Capcha](https://www.kadencewp.com/help-center/wp-content/uploads/sites/14/2024/03/My-Account-Kadence-WP-?-2024-03-25-at-8.29.54-PM.jpg)
+- Navigate to Dashboard → Settings → CAPTCHA Settings
+- Locate the license input area, then enter your legacy License Key.
+- Click Save Changes to activate your copy and enable automatic updates.
 
-You can upload your Zip file by going to your WordPress Dashboard -> Plugins -> Add New Plugin. Then you can click on the Upload Plugin button at the top of the page. This will allow you to choose a file. Pick the Kadence CAPTCHA Zip File downloaded from your Kadence Account.
-
-![Install Recaptcha](https://docs.nexcess.com/wp-content/uploads/2026/06/Install-Recaptcha-scaled-1.jpg)
-
-Setting up Google reCaptcha
+## Setting up Google reCaptcha
 
 The method demonstrated below to set up Google ReCaptcha can also be used for adding Google reCaptcha to Kadence Form and Advanced Form Blocks.
 
@@ -63,7 +61,7 @@ Once site registration is complete, a page displaying the Site Key and Secret Ke
 
 ![Secret Keys](https://docs.nexcess.com/wp-content/uploads/2026/06/Secret-Keys-1024x723-1.jpg)
 
-Inputting Google reCAPTCHA v2 Keys
+## Inputting Google reCAPTCHA v2 Keys
 
 Once CAPTCHA is licensed, go to the Dashboard -> Settings -> CAPTCHA. Under the API Keys tab, select Google v2 from the CAPTCHA Type dropdown.
 
@@ -77,7 +75,7 @@ Once you’re done configuring these settings, click Save.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Google-v2.jpg)
 
-Inputting Google reCAPTCHA v3 keys
+## Inputting Google reCAPTCHA v3 keys
 
 To use Google reCAPTCHA v3, go to the Dashboard -> Settings -> CAPTCHA. Under the API Keys tab, select Google v3 from the CAPTCHA Type dropdown.
 
@@ -93,7 +91,7 @@ Once you have configured these settings, click Save.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Google-v3.jpg)
 
-Setting up CloudFlare Turnstile
+## Setting up CloudFlare Turnstile
 
 To use the Kadence CAPTCHA plugin with Cloudflare Turnstile, a Cloudflare account must be created, and the website should be added to the Cloudflare Turnstile list of sites. A Cloudflare account can be created [here](https://dash.cloudflare.com/sign-up).
 
@@ -119,7 +117,7 @@ Once the website is added, a popup will display presenting the Site Key and Secr
 
 ![Turnstile Site Keys](https://docs.nexcess.com/wp-content/uploads/2026/06/Turnstile-Step-3.jpg)
 
-Inputting Turnstile Keys
+## Inputting Turnstile Keys
 
 To input Turnstile Keys in Kadence CAPTCHA, go to the Dashboard -> Settings -> CAPTCHA. Under the API Keys tab, select Turnstile from the CAPTCHA Type dropdown.
 
@@ -131,7 +129,7 @@ Once the keys are validated, click save.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Turnstily-Settings.jpg)
 
-Kadence CAPTCHA Settings
+## Kadence CAPTCHA Settings
 
 Once Kadence CAPTCHA is installed on the website, navigate to Dashboard -> Settings -> CAPTCHA Settings. Enter the Google reCAPTCHA Keys and select the CAPTCHA Type. Options include Google v2, Google v3, or Turnstile.
 
@@ -151,7 +149,7 @@ This ensures enhanced security across different interaction points on your websi
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Form-Settings.jpg)
 
-Design Settings
+## Design Settings
 
 Utilize the Design Settings to customize your CAPTCHA items.
 

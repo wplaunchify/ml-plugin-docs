@@ -8,53 +8,36 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/classic-galleries/](https://www.kadencewp.com/help-center/docs/kadence-general/classic-galleries/)
 
-Kadence Galleries is a Premium Kadence Plugin that enables you to create galleries and albums effortlessly. You can display captions, titles, and categories with each image, and also set up category filters and choose from different layout styles.
+The Kadence Galleries plugin enables you to create dynamic image galleries and photo albums effortlessly in WordPress. You can display captions, titles, and categories alongside each image, set up interactive category filters, and choose from multiple layout styles.
 
-Getting/Activating Kadence Galleries
+Before you begin
 
-The Kadence Galleries Plugin is a premium plugin and has to be purchased, activated, and licensed in order to be used.
+		**Kadence Galleries** is a premium WordPress plugin included with all Essentials, Pro, and Elite plans. While it works smoothly alongside any WordPress theme, it is built to pair seamlessly with the core Kadence Theme and Kadence Blocks.
 
-Get Kadence Galleries
+- Ensure your website is running WordPress 6.0 or higher.
+- To receive automatic updates and access all pro gallery styles, the plugin must be licensed.
 
-Kadence Galleries is available as a stand-alone product, or it can be purchased in one of our Plans. You can buy the Kadence Galleries Stand-Alone plugin by [Clicking Here](https://www.kadencewp.com/product/kadence-galleries/).
+## Licensing Kadence Galleries
 
-The Kadence Galleries Plugin is also available in our Full or Lifetime Plan. You can view our Plans by [Clicking Here](https://www.kadencewp.com/pricing/).
+**Liquid Web Software**manages your licensing through the **Liquid Web Portal**. For full instructions on downloading, installing, and licensing your product, see the official **How to Activate a Unified License** document.
 
-Activating Kadence Galleries
+Legacy Licensing Notice
 
-Once you have access to the Kadence Galleries Plugin, you can download it from your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page.
+*The information below applies to users who purchased a Kadence plan before May 2026.*
 
-![Downloads and licenses](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-1.jpg)
+If you are on an older, grandfathered plan (prior to the May 2026 unified licensing release), you can activate your license key directly inside your WordPress dashboard:
 
-You will see Kadence Galleries listed in your Products list. You can click on the Download button to download the Kadence Galleries Zip. Be sure to leave the file compressed and don’t unzip it.
+- Navigate to **Dashboard → K Galleries → Settings →** **License**.
+- Enter your legacy **License Key** and associated license email.
+- Click **Save Changes** to validate your license and enable automatic updates.
 
-![Download Kadence Galleries](https://docs.nexcess.com/wp-content/uploads/2026/06/Download-Kadence-Galleries.jpg)
-
-You can upload your Zip file by going to your WordPress Dashboard -> Plugins -> Add New Plugin. Then you can click on the Upload Plugin button at the top of the page. This will allow you to choose a file. Pick the Kadence Galleries Zip File downloaded from your Kadence Account.
-
-![Upload Plugin](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Plugin.jpg)
-
-Once you have uploaded your plugin, activate it. You will get a prompt in your WordPress Dashboard to activate Kadence Galleries.
-
-![Kadence Galleries has not been activated](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadwence-Galleries-has-not-been-activated.jpg)
-
-If you don’t see this prompt, you can get to the Activation Page by going to your Dashboard -> K Galleries -> License.
-
-![KGalleries License Activation](https://docs.nexcess.com/wp-content/uploads/2026/06/KGalleries-License-Activation.jpg)
-
-You can input your License API Key to activate the Kadence Galleries Plugin. Your License API Key can be found on your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page. You can click on the Copy button next to your License Key to copy it directly to your clipboard.
-
-![License Key](https://docs.nexcess.com/wp-content/uploads/2026/06/License-Key-1024x356-1.jpg)
-
-Once you Activate your Kadence Galleries plugin, you are all set to get started using Kadence Galleries.
-
-Creating a Gallery Album
+## Creating a Gallery Album
 
 Kadence Galleries features Gallery Albums. These are like Categories for your Galleries. After activating Kadence Galleries, you will see the K Galleries tab in your WordPress admin panel. Click that, then click Gallery Albums to access your Gallery Album settings.
 
 ![Create A Gallery](https://docs.nexcess.com/wp-content/uploads/2026/06/Create-A-Gallery.jpg)
 
-Add a new Album category.
+### Add a new Album category.
 
 You can give your Album a name. This is the name that it will use when it appears across your website.
 
@@ -70,19 +53,19 @@ You can create as many Albums as you’d like.
 
 ![Add New Album Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Add-New-Album-Settings.jpg)
 
-Sample Gallery Album Archive
+### Sample Gallery Album Archive
 
 The Gallery Album Archive pages display an Image from each Gallery within the Album. You can view each Gallery easily and efficiently.
 
 ![Sample Gallery Album](https://docs.nexcess.com/wp-content/uploads/2026/06/Sample-Gallery-Album.jpg)
 
-Creating a Gallery
+## Creating a Gallery
 
 Kadence Galleries features Galleries. These are collections of Images that form a Gallery. You can go to the K Galleries tab in your WordPress admin panel. Click that, then click Add New Gallery to add a new Gallery.  You can view all of your Galleries by clicking on All Galleries.
 
 ![Add New Gallery](https://docs.nexcess.com/wp-content/uploads/2026/06/Add-New-Gallery.jpg)
 
-Gallery Settings
+### Gallery Settings
 
 The Gallery ShortCode is  the output ID for your Gallery. Each Gallery will have a unique ShortCode ID. This is used to display you Gallery.
 
@@ -121,7 +104,7 @@ Sample Gallery Styles
 - ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Square-Example-1024x768-1.jpg)
 - ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Titles-Example-1024x578-1.jpg)
 
-Custom Fields and Discussion Settings
+### Custom Fields and Discussion Settings
 
 Galleries allow you to add New Custom Fields. Custom fields can be used to add extra metadata to a post that you can use [in your theme](https://wordpress.org/documentation/article/assign-custom-fields/). The default names available are; attribute_pa_size, footnotes, kt_blocks_editor_width, and total_sales. You can click on the Enter New button to manually enter a name. You can then set the Value using the Value field. You can add more Custom Fields by pressing the Add Custom Field button below all of your Custom Fields.
 
@@ -133,11 +116,11 @@ The Discussion settings allow you to Enable or Disable comments using the Allow 
 
 You can also enable or disable the option to [Allow Trackbacks and Pingbacks](https://wordpress.org/documentation/article/introduction-to-blogging/#managing-comments).
 
-Other Settings
+## Other Settings
 
 You also have the Publish Settings, Gallery Albums Settings, Featured Image,  and Post Settings.
 
-Publish Settings
+### Publish Settings
 
 You can save the Gallery as a Draft or Preview it using the respective buttons.
 
@@ -147,7 +130,7 @@ You can also set the Publish date to Immediately or specify a date and time.
 
 ![Publish Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Publish-Settings.jpg)
 
-Gallery Album Settings
+### Gallery Album Settings
 
 Here you can select and add your Gallery to Gallery Albums.
 
@@ -155,7 +138,7 @@ You can also + Add a New Album directly from your Gallery Editor.
 
 ![Gallery Albums Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Gallery-Albums-Settings.jpg)
 
-Featured Image and Post Settings
+### Featured Image and Post Settings
 
 You can set a Featured Image for your Gallery.
 
@@ -169,7 +152,7 @@ The Layout, Content Style, and Content Vertical Padding settings can also be set
 
 ![Featured Image and Post Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Featured-Image-and-Post-Settings.jpg)
 
-Gallery Settings (Dashboard)
+### Gallery Settings (Dashboard)
 
 You can find the Dashboard Gallery Settings by going to your WordPress Dashboard -> K Galleries -> Settings.
 
@@ -181,7 +164,7 @@ You can set the Gallery Albums Items Per Page. This is the number of Gallery Alb
 
 ![Kadence Galleries Dashboard Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Galleries-Dashboard-Settings.jpg)
 
-Adding a Gallery to a Page/Post
+## Adding a Gallery to a Page/Post
 
 You can use the ShortCode of your Gallery to add a Gallery to your page. You can use the WordPress ShortCode Block to add your ShortCode to the page.
 
