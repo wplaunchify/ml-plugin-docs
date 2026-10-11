@@ -18566,7 +18566,7 @@ In this example, we set the info window header content [to the linked post title
  heading:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.5.1+
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.6+
 add_filter( 'facetwp_map_marker_header_content', function( $headercontent, $post_id, $facet_name, $args ) {
 
  // if ( $post_id == 4567 ) { // Optionally add a condition to check for specific post IDs
@@ -18713,7 +18713,7 @@ $facet_name
 In this example, we set the info window content to the post excerpt. The excerpt [length (in number of words)](#custom-marker-info-window-content-L9) and [“more” cut-off text](#custom-marker-info-window-content-L19-L21) can be customized:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.5.1+
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.6+
 add_filter( 'facetwp_map_marker_content', function( $content, $post_id, $facet_name, $args ){
  
  // if ( $post_id == 4567 ) { // Optionally add a condition to check for specific post IDs
@@ -18911,7 +18911,7 @@ facetwp_map_marker_content
  hook, with which you can set the info window content dynamically. Be aware that this overwrites anything you have set in the [“Info window content” setting](#add-or-customize-marker-info-window-content-with-the-info-window-content-setting).
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.5.1+
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.6+
 // Change 'map-repeaterfield' to the name of the ACF repeater field
 // Change 'map-repeaterfield-location' to the name of Google Map field within the repeater field.
 // This field should be chosen as the Map facet's 'Data source' setting. Make sure to choose the field under the “ACF” heading in the Data Source dropdown.
@@ -19000,7 +19000,7 @@ facetwp_map_marker_header_content
  hook:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.5.1+
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.6+
 // Change 'map-repeaterfield' to the name of the ACF repeater field
 // Change 'map-repeaterfield-location' to the name of Google Map field within the repeater field.
 // This field should be chosen as the Map facet's 'Data source' setting. Make sure to choose the field under the “ACF” heading in the Data Source dropdown.
@@ -19058,7 +19058,7 @@ Note:In FacetWP versions **older** than [v4.6](/help-center/changelog/#4-6)+, th
 If you want to combine this with other customized info window content, [using the facetwp_map_marker_content hook](#customize-or-overwrite-the-marker-info-window-content-with-a-hook), you can also add the post distance like this:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.5.1+
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.6+
 add_filter( 'facetwp_map_marker_content', function( $content, $post_id, $facet_name, $args ){
 
   // Get the distance as a float value.
@@ -19085,7 +19085,7 @@ facetwp_get_distance()
 To display the post distance in the info window **header** instead, you can use the same code in the [facetwp_map_marker_header_content hook](#add-or-customize-marker-info-window-header-content), like this:
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.5.1+
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.6+
 add_filter( 'facetwp_map_marker_header_content', function( $headercontent, $post_id, $facet_name, $args ) {
 
   // Get the distance as a float value.
@@ -19228,7 +19228,7 @@ $post_id
 . This makes it possible to [add a check to customize only the info windows of specific posts](#set-info-window-options-L4).
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.5.1+
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Needs FacetWP 4.6+
 add_filter( 'facetwp_map_marker_args', function( $args, $post_id ){
 
   // if ( $post_id == 5647 ) { // Optionally add a condition to check for specific post IDs.
@@ -19525,7 +19525,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Proximity facet type (legacy)](https://facetwp.com/help-center/facets/facet-types/proximity-legacy/)
 - [Introducing the new Proximity and Map facets in FacetWP v4.4](https://facetwp.com/introducing-the-new-proximity-and-map-facets-in-facetwp-v4-4/)
 
-                    Last updated: July 30, 2026
+                    Last updated: October 6, 2026
 
 ---
 

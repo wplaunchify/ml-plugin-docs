@@ -7731,8 +7731,9 @@ Note that the “Parent term” setting is only available in [Checkboxes](/help
 - [Using FacetWP with Post Types Order](https://facetwp.com/help-center/using-facetwp-with/post-types-order/)
 - [The Schedule Indexer add-on](https://facetwp.com/help-center/add-on-features-and-extras/schedule-indexer/)
 - [Using FacetWP with Weglot](https://facetwp.com/help-center/using-facetwp-with/weglot/)
+- [How to use a facet as a language switch](https://facetwp.com/how-to-use-a-facet-as-a-language-switch/)
 
-                Last updated: September 3, 2026
+                Last updated: October 7, 2026
 
 ---
 
