@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11T09:36:56.259Z",
+  "last_updated": "2026-10-11T09:54:35.472Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3129,7 +3129,7 @@
       "slug": "woocommerce-checkout-manager",
       "name": "WooCommerce Checkout Manager",
       "documentation_url": "https://quadlayers.com/documentation/woocommerce-checkout-manager/",
-      "last_scraped": "2026-10-04T11:17:43.565Z",
+      "last_scraped": "2026-10-11T09:54:35.472Z",
       "page_count": 13,
       "categories": [
         "activation",
