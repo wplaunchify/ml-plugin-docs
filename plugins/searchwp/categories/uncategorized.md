@@ -16,12 +16,7 @@ Ordering products by total sales can help increase revenue by showing your most 
 
 If you want to show product results ordered by sales numbers, you can use the code below. This method ignores the content matching and shows your best-selling products first, no matter how well they match the search terms.
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Order product search results by total sales |
@@ -59,12 +54,7 @@ This code sorts your search results by the number of sales in descending order (
 
 If you want to keep SearchWP’s normal ranking but give extra points to products that sell well, you can use a different approach. This method keeps the content matching in place but pushes popular products higher in the results.
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Boost relevance for WooCommerce products with high total sales |
@@ -156,12 +146,7 @@ This behavior exists because SearchWP is primarily designed to power frontend se
 
 The following example demonstrates how to include draft, private, and scheduled posts in admin-only searches, while keeping frontend search results unchanged:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Search draft, private, and scheduled posts in admin side only |
@@ -203,12 +188,7 @@ get_post_type_object()
 
  function to retrieve and display the post type label for each result. This gives you complete control over where and how the post type information appears within the search result layout.Alternatively, you can use a WordPress filter hook to automatically prepend the post type label before the title of each search result. This approach is easier and does not require modifying your theme files. You can add the following snippet by preparing a [SearchWP Customizations Plugin](https://searchwp.com/documentation/knowledge-base/creating-searchwp-customizations-plugin/) or using a code snippet manager like [WPCode](https://wpcode.com/):
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  | // Prepend post type label to title for native main search |
 |  | add_filter( 'the_title', function( $title, $post_id ) { |
@@ -236,12 +216,7 @@ If you are using SearchWP’s custom [Template results](https://searchwp.com/doc
 
 Here’s an example using a fallback image:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  | // Display post type label before title for SearchWP template and live search results |
 |  | function prepend_post_type_to_title( $data, $result ) { |
@@ -298,12 +273,7 @@ post_thumbnail_html
 
  hook to display the original image thumbnail rather than relying on featured images. The following example demonstrates how to implement this functionality specifically for search results and SearchWP Live Ajax search contexts:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  | // Set image thumbnail for media image results on search page |
 |  | add_filter( 'post_thumbnail_html', function( $html, $post_id ) { |
@@ -340,12 +310,7 @@ For **PDF search results**, you may want to display a placeholder image or use a
 
 Here’s an example using a fallback image:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  | // Set default thumbnail for PDF results on search page |
 |  | add_filter( 'post_thumbnail_html', function( $html, $post_id ) { |
@@ -380,12 +345,7 @@ Prior to Gutenberg, WordPress stored plain HTML markup that represented your con
 
 *(A couple of line breaks have been added for readability)*
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <!-- wp:paragraph --> |
+|  | <!-- wp:paragraph --> |
 | --- | --- |
 |  | <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus  tincidunt nunc vel |
 |  | consequat dapibus. Pellentesque aliquet felis nulla,  sit amet efficitur mauris |
@@ -448,12 +408,7 @@ that block looks like this in the database (**line 7**) which is what native Wor
 
 *(A couple of line breaks have been added for readability)*
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <!-- wp:paragraph --> |
+|  | <!-- wp:paragraph --> |
 | --- | --- |
 |  | <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus |
 |  | tincidunt nunc vel consequat dapibus. Pellentesque aliquet felis |
@@ -514,12 +469,7 @@ Advanced Custom Fields has the option of adding a search input to Relationship f
 
 By default SearchWP will not intercept these searches, but using this snippet you can make that happen:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | function my_searchwp_acf_relationship_field_search( $args, $field, $post_id ) { |
@@ -720,12 +670,7 @@ Using a [\SearchWP\Mod](https://searchwp.com/documentation/classes/searchwp-mod/
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add secondary sort to SearchWP results to sort matching |
@@ -813,12 +758,7 @@ If instead of [creating a search form to allow choosing a Category](https://sear
 
 Always limit your native/default search results to a specific Category we can use a [\SearchWP\Mod](https://searchwp.com/documentation/classes/searchwp-mod/) like so:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Limit SearchWP Native/Default results to Category that has 'foobar' slug. |
@@ -860,12 +800,7 @@ tax_query
  parameter of [SWP_Query](https://searchwp.com/documentation/classes/swp_query/) like so:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Limit SearchWP results to Category that has 'foobar' slug. |
@@ -954,12 +889,7 @@ default
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Use `supplemental` Engine for Divi Search Results Templates. |
@@ -1161,12 +1091,7 @@ The basic implementation looks like this:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Limit SearchWP results to Posts and Pages. |
@@ -1206,12 +1131,7 @@ sources
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Limit SearchWP results to form field value. |
@@ -1241,12 +1161,7 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 
 **Note:** This snippet assumes that your form variable has been set up as checkboxes that build an array of post type names, and that the post type names match those that have been added to the Engine in use, e.g.
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>"> |
+|  | <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>"> |
 | --- | --- |
 |  | <label> |
 |  | <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span> |
@@ -1290,12 +1205,7 @@ This bonus weight will be applied to all Products, so the sorting of Products wi
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Give Products extraordinary weight boost to ensure Products show up first. |
@@ -1355,12 +1265,7 @@ Here’s what that looks like in practice:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | /** |
@@ -1411,12 +1316,7 @@ label
 
 . We can use the same hook to do just that:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Tell SearchWP to index both value and label from ACF Select field. |
@@ -1466,12 +1366,7 @@ This article will explain how you can accomplish **three different approaches** 
 
 Building your own search form involves editing your theme files to include the input fields and buttons we want to include. At a most basic level you can add the following to your theme template file where you would like the form to appear:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>"> |
+|  | <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>"> |
 | --- | --- |
 |  | <label> |
 |  | <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span> |
@@ -1528,12 +1423,7 @@ wp_dropdown_categories()
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Limit SearchWP results to chosen Category from dropdown. |
@@ -1612,12 +1502,7 @@ SearchWP’s [Shortcodes Extension](https://searchwp.com/extensions/shortcodes/)
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // UNCOMMENT THIS IF YOU WANT TO USE SHORTCODES IN WIDGETS |
@@ -1673,12 +1558,7 @@ wp_dropdown_categories()
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Limit SearchWP results to chosen Category from dropdown. |
@@ -1784,12 +1664,7 @@ To include a Categories dropdown in your site’s default search form, use the f
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // adds a Categories dropdown to the search form |
@@ -1846,12 +1721,7 @@ wp_dropdown_categories()
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Limit SearchWP results to chosen Category from dropdown. |
@@ -1938,12 +1808,7 @@ To integrate SearchWP’s results when using a JetEngine Listing Grid to display
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Integrate SearchWP with JetSmartFilters search using |
@@ -1994,12 +1859,7 @@ functions.php
 
  (or a custom plugin you’ve built) and it will allow SearchWP’s results to be displayed:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Prevents JetSmartFilters from overriding SearchWP's results. |
@@ -2073,12 +1933,7 @@ functions.php
 
 :
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/using-elementor-for-supplemental-engines/ |
@@ -2227,12 +2082,7 @@ Once you are done editing you can Publish your template, making sure that it is 
 
 Some post content built using the Elementor Builder may not be directly indexable by SearchWP, depending on how the data is stored by Elementor or its add-ons. To overcome this limitation, the following code should be used. After adding the code to your site, you should rebuild the SearchWP index for the changes to take effect.
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Index post content built with the Elementor Builder |
@@ -2266,12 +2116,7 @@ default
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Customize SearchWP Engine used. |
@@ -2340,12 +2185,7 @@ search-results.php
 
  with this code:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  | // Execute a search using our supplemental SearchWP Engine. |
 |  | // @link https://searchwp.com/documentation/knowledge-base/custom-source-results-live-search/ |
@@ -2483,12 +2323,7 @@ Here’s the full Modal Form template. Pay particular attention to:
 name
 ```
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  | /** |
 |  | * SearchWP Modal Form Name: Term Archive |
@@ -2671,12 +2506,7 @@ If you would like to *force* exact match logic to happen for all multi-word sear
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Force multiple word searches to use quoted search logic if quotes are not added. |
@@ -2712,12 +2542,7 @@ By default SearchWP’s stopwords are global, applying to all Engines. If you ha
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | /** |
@@ -2802,12 +2627,7 @@ It’s a neat way to set things up, but we need to use a small bit of custom cod
 The setup will involve teaching SearchWP about Product Variations, and having SearchWP index Product Variations as it is indexing the parent Products themselves. We’ll store the Product Variation data as ‘extra’ metadata for the Products, so when you search for Product Variation data the proper Product will be returned.
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add WooCommerce Product Variation data to parent Products in SearchWP. |
@@ -2910,12 +2730,7 @@ For example: if you are selling TV’s and you have a parent Product “OLED TV�
 **Wouldn’t it be great to automatically link to the 60" Product Variation** when that happens? It would, and we can do exactly that!
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/add-woocommerce-product-variations-to-products/ |
@@ -3022,12 +2837,7 @@ For a more generalized example of indexing ‘extra’ data have a look at this 
 If you’d like to make your WooCommerce Downloadable content searchable, you can use this hook:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Tell SearchWP to parse WooCommerce Downloadable Product downloads for document content. |
@@ -3114,12 +2924,7 @@ With the Document content added to Products in your Engine you can click the Sav
 
 [Customizing the results display](https://searchwp.com/extensions/live-search/#customizing-results) for SearchWP’s [Live Search Extension](https://searchwp.com/extensions/live-search/) has been designed to facilitate customization in any way you’d like. If, for example, you’d like to group your results by Post Category, you can use this as a starting point in your **custom** results template:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php if ( ! have_posts() ) : ?> |
+|  | <?php if ( ! have_posts() ) : ?> |
 | --- | --- |
 |  | <p>No results</p> |
 |  | <?php return; endif;?> |
@@ -3218,12 +3023,7 @@ Trigger build of SearchWP index
 ```
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Disable SearchWP's automatic integration with WP All Import. |
@@ -3320,12 +3120,7 @@ The above screenshot outlines the automatic output in [Twenty Nineteen](https://
 
 **Note:** (You can add Custom CSS to your site by navigating to Appearance > Customize > Additional CSS in your WordPress Dashboard)
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | .searchwp-revised-search-notice { |
+|  | .searchwp-revised-search-notice { |
 | --- | --- |
 |  | margin: 0 calc(10% + 60px) 1em; |
 |  | padding: 0.6em; |
@@ -3401,12 +3196,7 @@ The above screenshot outlines the automatic output in [Twenty Nineteen](https://
 
 **Note:** (You can add Custom CSS to your site by navigating to Appearance > Customize > Additional CSS in your WordPress Dashboard)
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | .searchwp-revised-search-notice { |
+|  | .searchwp-revised-search-notice { |
 | --- | --- |
 |  | margin: 0 calc(10% + 60px) 1em; |
 |  | padding: 0.6em; |
@@ -3444,12 +3234,7 @@ SearchWP has [built in support for document processing](https://searchwp.com/wor
 Another popular application that is able to parse documents and extract content is [Apache Tika](https://tika.apache.org/). If your server has Tika available, you can tell SearchWP to use it to parse PDF documents like so:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Use Apache Tika to extract PDF content in SearchWP. |
@@ -3495,12 +3280,7 @@ Mode
  we can override the sorting of results to instead return in the order they were published, sorted by most recent to older.
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Sort SearchWP Post, Page, and Custom Post Type Results by date in DESC order. |
@@ -3560,12 +3340,7 @@ There are some edge cases however, and sometimes weight transfer is not somethin
 This dynamic application allows us to better evaluate the situation on a post-by-post basis.
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/append-document-content-to-parent-post-content/ |
@@ -3691,12 +3466,7 @@ Mod
 
 *Note: this is a comparison of the two instantiations, note that these Mods don’t actually do anything yet.*
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/comparing-index-source-mods/ |
@@ -3778,12 +3548,7 @@ Source
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/comparing-index-source-mods/ |
@@ -3858,12 +3623,7 @@ Mod
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  | // @link https://searchwp.com/documentation/knowledge-base/comparing-index-source-mods/ |
 |  | add_filter( 'searchwp\query\mods', function( $mods ) { |
@@ -3921,12 +3681,7 @@ Mod
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  | // @link https://searchwp.com/documentation/knowledge-base/comparing-index-source-mods/ |
 |  | add_filter( 'searchwp\query\mods', function( $mods ) { |
@@ -3967,12 +3722,7 @@ We’re going to take advantage of SearchWP’s ability to absorb ‘extra’ da
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add WooCommerce Product (and Variation) SKUs to SearchWP. |
@@ -4059,12 +3809,7 @@ Use the following hooks to add WooCommerce Orders as a SearchWP Source:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add WooCommerce Orders as a SearchWP Source. |
@@ -4122,12 +3867,7 @@ If you’d like to make Order Item data (e.g. Product SKU numbers for Order Item
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add WooCommerce Order item data to WooCommerce Orders Search in SearchWP. |
@@ -4210,12 +3950,7 @@ By default SearchWP *does not* integrate with any Admin filters that have been s
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/search-woocommerce-orders/ |
@@ -4260,12 +3995,7 @@ Order numbers are Post IDs which are not indexed by default. We can tell SearchW
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add WooCommerce Order Numbers to WooCommerce Orders. |
@@ -4290,12 +4020,7 @@ If you’ll recall we added ‘Comments’ to the Admin Engine above. WooCommerc
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Make WooCommerce Order Notes searchable by SearchWP. |
@@ -4330,12 +4055,7 @@ Many times the content to be indexed is visible/editable on the edit screen for 
 We can use a couple of SearchWP’s hooks to include arbitrary data alongside your entry content when SearchWP’s indexer is running.
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/adding-extra-data-to-indexed-entries/ |
@@ -4393,12 +4113,7 @@ In some cases it’s useful to group results by Source and *within each Source g
 We can utilize a [\SearchWP\Mod](https://searchwp.com/documentation/search/searchwp-mod/) to do just that.
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Group SearchWP results by Source, sort by relevance within each Source group. |
@@ -4542,12 +4257,7 @@ Depending on your site content this can result in a more natural workflow becaus
 You can take this integration one step further by automatically appending a contextual snippet from each ‘child’ PDF to your post excerpt in search results pages, which will indicate to your visitors (before they have clicked through to the parent post) that there was a hit on a linked PDF within that post.
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add child PDF snippets to SearchWP result excerpt. |
@@ -4616,12 +4326,7 @@ With this customization, results with a Custom Field value will rank *above* tho
 See also: [Add Relevance Weight to More Recently Published Entries by Date](/documentation/knowledge-base/add-relevance-weight-date/)
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Use a Custom Field as a buoy to supersede SearchWP's relevance weight sorting. |
@@ -4672,12 +4377,7 @@ get_search_form()
  (which includes the WordPress Search (*not bbPress*) Widget) to only consider the bbPress Forum currently on display when searching:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Customize native WordPress search form to include current bbPress Forum ID if applicable. |
@@ -4758,12 +4458,7 @@ Next we will need to implement a custom [Shortcode](https://codex.wordpress.org/
 Any content included within our custom Shortcode tags will be *excluded* when indexing (and therefore from searching).
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add a Shortcode to exclude content from SearchWP's index. |
@@ -4930,12 +4625,7 @@ WordPress by default will link to an Attachment page for any Media returned as a
 This snippet will customize your search results template to link directly to Media files instead of an Attachment page.
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Link directly to Media files instead of Attachment pages in search results |
@@ -4986,12 +4676,7 @@ See also: [Using a Custom Field to Prioritize Search Results](#)
 To have more recently published entries get a weight boost, add this to your SearchWP Customizations plugin:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add search weight to more recently published entries in SearchWP. |
@@ -5031,12 +4716,7 @@ Alternatively, you can use something like this to have the weight influence tape
 This modification is more aggressive in that the influence tapers off over time, but that may be preferential for you!
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add search weight to more recently published entries in SearchWP. |
@@ -5082,12 +4762,7 @@ $modifier
 Another example would be to have results sorted by dates stored in a Custom Field. The more recent the date of the Custom Field the more weight the result will receive:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add bonus weight from Custom Field value in SearchWP. |
@@ -5130,12 +4805,7 @@ It is also possible to arbitrarily assign a multiplier to the final, calculated 
 You can apply different multipliers based on whether the Custom Field date is in the past or the future, reducing the calculated relevance if the Custom Field value is in the past, and increasing calculated relevance if it’s in the future for example:
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Modify SearchWP calculated relevance using multiplier. |
@@ -5240,12 +4910,7 @@ This article will explain how you can accomplish **three different approaches** 
 
 Building your own search form involves editing your theme files to include the input fields and buttons we want to include. At a most basic level you can add the following to your theme template file where you would like the form to appear:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <!-- https://searchwp.com/documentation/knowledge-base/engine-select-dropdown/ --> |
+|  | <!-- https://searchwp.com/documentation/knowledge-base/engine-select-dropdown/ --> |
 | --- | --- |
 |  | <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>"> |
 |  | <label> |
@@ -5282,12 +4947,7 @@ select
 Once your form has been set up it will redirect to your default search results template, but we also need to tell SearchWP which engine to use for the search.
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/engine-select-dropdown/ |
@@ -5311,12 +4971,7 @@ SearchWP’s [Shortcodes Extension](https://searchwp.com/docs/extensions/shortco
 **Note:** requires Shortcodes **version 1.2.1** or higher
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/engine-select-dropdown/ |
@@ -5349,12 +5004,7 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 
 This will customize the SearchWP Shortcodes form to also include our Engines dropdown. That only handles the dropdown, however. We still need to tell SearchWP which engine to use when performing a search. This can be done by adding the following to your SearchWP Customizations plugin (*not the theme template file where you added the form code*).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/engine-select-dropdown/ |
@@ -5398,12 +5048,7 @@ get_search_form
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
 To include an Engines dropdown in your site’s default search form, add the following to your SearchWP Customizations plugin:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Adds a SearchWP Engines dropdown to the search form |
@@ -5446,12 +5091,7 @@ The form code used here is based on the default search form that ships with Word
 
 This snippet only modifies the search form, we still need to capture the value from the dropdown and tell SearchWP to use the chosen Engine for the search. We can do that by adding the following to your SearchWP Customizations plguin (*not the theme template file where you added the form code*).
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // @link https://searchwp.com/documentation/knowledge-base/engine-select-dropdown/ |
@@ -5475,12 +5115,7 @@ This file contains hidden or bidirectional Unicode text that may be interpreted 
 By default SearchWP considers the actual content of taxonomy terms when performing searches. Depending on the way you’ve set up your site, you may want to give extra weight to entries regardless of taxonomy term, but instead add the weight to all entries that have been given a specific taxonomy term.
 
 All hooks should be added to *your custom* [SearchWP Customizations Plugin](/documentation/knowledge-base/creating-searchwp-customizations-plugin/).
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add Weight to Entries (posts) within a Specific Category (taxonomy term) in SearchWP. |
@@ -5551,12 +5186,7 @@ proprietary
 
  will be added to any post that has that Advanced Custom Field True/False Checkbox ticked:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  |  |
 |  | // Add Relevance Weight to ACF True/False Checkbox Fields in SearchWP. |
@@ -5716,12 +5346,7 @@ searchwp-customizations.php
 
 Paste the following into the newly created, empty file:
 
-This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
-      [Learn more about bidirectional Unicode characters](https://github.co/hiddenchars)
-
-  [Show hidden characters](%7B%7B%20revealButtonHref%20%7D%7D)
-
-  |  | <?php |
+|  | <?php |
 | --- | --- |
 |  | /* |
 |  | Plugin Name: SearchWP Customizations |
