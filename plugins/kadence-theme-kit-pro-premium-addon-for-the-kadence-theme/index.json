@@ -2,7 +2,7 @@
   "plugin_slug": "kadence-theme-kit-pro-premium-addon-for-the-kadence-theme",
   "plugin_name": "Kadence Theme Kit Pro - Premium addon for the Kadence Theme",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-  "last_scraped": "2026-10-04T20:27:40.860Z",
+  "last_scraped": "2026-10-11T19:41:57.232Z",
   "total_pages": 137,
   "failed_urls_count": 0,
   "sections": [
@@ -79,7 +79,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How To Add Custom Snippets with Code Snippets",
+          "title": "Using Code Snippets",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/add-custom-filter-or-function-with-code-snippets/"
         }
       ]
@@ -508,7 +508,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to create a staging website",
+          "title": "How to Set Up a Staging Site for Your WordPress Website",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/create-staging-website/"
         }
       ]
@@ -1782,7 +1782,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Exploring the WordPress Dashboard",
+          "title": "Using the WordPress Dashboard",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/wordpress-dashboard/"
         }
       ]
