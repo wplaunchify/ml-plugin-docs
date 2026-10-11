@@ -2,7 +2,7 @@
   "plugin_slug": "affiliatewp",
   "plugin_name": "AffiliateWP",
   "documentation_url": "https://affiliatewp.com/docs/documentation/",
-  "last_scraped": "2026-10-04T20:29:53.718Z",
+  "last_scraped": "2026-10-11T19:45:02.704Z",
   "total_pages": 220,
   "failed_urls_count": 0,
   "sections": [
@@ -14,7 +14,7 @@
       "page_count": 220,
       "pages": [
         {
-          "title": "Using AffiliateWP With AI Assistants",
+          "title": "Using AffiliateWP with AI assistants",
           "url": "https://affiliatewp.com/docs/using-affiliatewp-with-ai-assistants/"
         },
         {
@@ -770,7 +770,7 @@
           "url": "https://affiliatewp.com/docs/easy-digital-downloads/"
         },
         {
-          "title": "WooCommerce",
+          "title": "WooCommerce integration",
           "url": "https://affiliatewp.com/docs/woocommerce/"
         },
         {
