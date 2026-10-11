@@ -4,59 +4,170 @@
 
 ---
 
-## How To Add Custom Snippets with Code Snippets
+## Using Code Snippets
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-theme/add-custom-filter-or-function-with-code-snippets/](https://www.kadencewp.com/help-center/docs/kadence-theme/add-custom-filter-or-function-with-code-snippets/)
 
-The easiest way to add custom PHP or JavaScript functions to your site is by using a code snippets plugin. Compared to a child theme, it offers better organization for your custom code, allowing you to enable or disable snippets with a single click, export and import them, and more. Using a plugin also includes safeguards to help prevent site-breaking errors, and if something does go wrong, there are simple ways to regain access and fix your code.
+When we refer to “snippets” in this context, we mean small pieces of PHP code. There are three basic ways to add these PHP snippets to your WordPress site:
 
-Install the Code Snippets Plugin
+1. **Using a Functionality Plugin:**
+This is the best practice to prevent possible conflicts. A [functionality plugin](https://css-tricks.com/wordpress-functionality-plugins/) is a custom plugin you create to add your PHP code. This keeps your snippets separate from your theme, ensuring they won’t be lost if you change themes.
+2. **Adding to a Child Theme’s functions.php File:**
+If the snippet is specific to your theme, it’s best to use a child theme. First, make sure you have a child theme set up, then add your PHP snippet to the [child theme’s functions.php](https://developer.wordpress.org/themes/advanced-topics/child-themes/#using-functions-php)file. This way, your custom code stays intact even if the parent theme is updated.
+3. **Using a Plugin like Code Snippets:**
+For a simpler approach, you can use a plugin like “[Code Snippets](https://wordpress.org/plugins/code-snippets/).” This plugin allows you to add PHP snippets directly from the WordPress dashboard without needing to edit files.
 
-You can install the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) by going to your WordPress Dashboard and clicking Plugins → Add new. Then search for *code snippets*.
+Other than knowing where to implement a code snippet, there are additional things to take into consideration when adding custom code for your calendar to your site. Many WordPress tutorials — including ours — provide snippets of code used for demonstration purposes. It’s totally fine to copy and paste those for your own use. But when you do, you’ll want to make sure you check a couple of things.
 
-![Installing Code Snippets via WordPress Admin](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-09-26-at-1.03.20-PM-scaled-1.png)
+## Remove the opening PHP tag
 
-Once installed and activated, you can navigate to **Snippets** in your admin menu. Code Snippets provides several example snippets that you can use and/or edit to see how things work.
+PHP code snippets often start with an opening PHP tag. Like this:
 
-![Code Snippets Dashboard](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-09-26-at-1.10.57-PM-scaled-1.png)
+```
+<?php
+  /* Some code */
+?>
+```
 
-If you want to learn more about the plugin and it’s available settings check out the [WordPress plugin page](https://wordpress.org/plugins/code-snippets/).
+Chances are that your theme already has that opening PHP tag. So the one included in the snippet is totally unnecessary for use, and can actually break your site.
 
-Adding a PHP Snippet
+## Watch out for garbled code
 
-To add a PHP snippet, click **Add New** in the Snippets menu and then add in your code into the code area. The plugin defaults to **PHP** and you can also set the Location.
+Many people use [GitHub Gists](https://gist.github.com/) or similar sites like [Pastebin](https://pastebin.com/), [Cacher.io](https://www.cacher.io/), or [GitLab Snippets](https://gitlab.com/explore/snippets). They’re a convenient way to share code. At the same time, it’s possible that simply copying and pasting the code from one of these services will result in unescaped, or “garbled” code.
 
-**Location**:
+Here’s what we mean:
 
-- Run Everywhere *(default)*
-- Only run in administration area
-- Only run on site front-end
-- Only run once
+```
+// This...
+$this->method_name()
 
-![Code Snippets - adding a new PHP snippet](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-09-26-at-1.14.55-PM-scaled-1.png)
+// ...might paste like this:
+$this-&gt;method_name()
+```
 
-Once you’ve added your function and set the Location, click **Save and Activate**.  If your snippet contains any syntax errors, **it will not activate**.
+See that 
+```
+&gt;
+```
 
-Adding a JavaScript or HTML Snippet
+ in the code? That’s the unescaped HTML for the “greater than” (
+```
+>
+```
 
-To add a JavaScript or HTML code snippet you can click **Add New** in the Snippets menu and, before adding your code, change the type to **HTML** and set the Location.
+) sign. It’s subtle, but can also break your site.
 
-**Location:**
+Another possible formatting issue: **quotation marks**. There are actually two types of quotation marks in HTML: curly and plain.
 
-- Where inserted in editor *(default)*
-- In site <head> section
-- In site footer (end of <body>)
+```
+Curly quote: “The quick brown fox...”
+Curly single quote: ‘The quick brown fox...’
+Plain quote: "The quick brown fox..."
+Plain single quote: 'The quick brown fox...'
+```
 
-![Code Snippets - adding an HTML snippet](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-09-26-at-12.54.29-PM-scaled-1.png)
+See the difference? Again, it’s subtle, but curly quotes are unsupported in code. So, watch for those when copying and pasting and ensure that your snippets always use plain quotes.
 
-Optionally add a description and tag and then **Save and Activate** your snippet.
+## CSS snippets
 
-Other Code Snippet Plugins
+Everything we’ve looked at so far concerns PHP snippets. But let’s say you’re working with a CSS or JavaScript snippet instead.
 
-Here are a few good alternatives for adding snippets to your site:
+### The style.css file
 
-- [WPCode](https://wordpress.org/plugins/insert-headers-and-footers/)
-- [FluentSnippets](https://wordpress.org/plugins/easy-code-manager/)
+A CSS snippet can go straight into your theme’s 
+```
+style.css
+```
+
+ file if you are using your own custom theme. However, if you are using a theme you downloaded or purchased, then you will want to make a child theme and paste the CSS snippet in the child theme’s 
+```
+style.css
+```
+
+ file instead. This ensures your custom code is preserved when installing theme updates.
+
+### The WordPress Customizer
+
+Another way to add custom CSS is to paste it in the WordPress Customizer. Since WordPress 4.7, the Customizer includes a “[Custom CSS](https://codex.wordpress.org/CSS#Custom_CSS_in_WordPress)” section that allows you to post code there instead of putting it in a theme’s 
+```
+style.css
+```
+
+ file.
+
+![](https://docs.nexcess.com/wp-content/uploads/2019/10/customizer-custom-css-tab-1024x647.webp)The “Custom CSS” tab
+
+![](https://docs.nexcess.com/wp-content/uploads/2019/10/customizer-custom-css-panel-1024x651.webp)The “Custom CSS” panel
+
+Using the WordPress Customizer for CSS snippets is a super safe way to go, especially if you are uncomfortable or unable to access your theme’s files.
+
+### Full Site Editor
+
+If you have a Full Site Editor theme, here are the steps to add Additional CSS:
+
+1. Go to your WordPress dashboard and select Appearance > Editor
+2. Select “Styles”
+3. Select the “Edit Styles” icon next to the Styles header
+4. Select the “More” three vertical dots in the Styles menu in the right sidebar, then select “Additional CSS”
+5. Enter your Additional CSS
+
+1.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/FSE-CSS-1.jpg)
+
+2.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/FSE-CSS-2-1024x475-1.jpg)
+
+3.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/FSE-CSS-3-1024x475-1.jpg)
+
+4.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/FSE-CSS-4-1024x475-1.jpg)
+
+5.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/FSE-CSS-5-1024x475-1.jpg)
+
+## Adding JavaScript Snippets
+
+Sometimes, you might need to add a JavaScript snippet to your site. This works differently from adding PHP code. JavaScript snippets are typically placed in the header or footer of a WordPress site to ensure they load across all pages. While you can manually add them to your 
+```
+header.php
+```
+
+ or 
+```
+footer.php
+```
+
+ files, any theme updates will overwrite these changes.
+
+To avoid this, it’s best to use a plugin like [WP Code](https://wordpress.org/plugins/insert-headers-and-footers/). Once you’ve installed the plugin, you need to go to **Snippets > Add** **Snippet**:
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-33.jpg)
+
+Then choose **Add Your Custom Code (New Snippet)**:
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-1-1024x378-1.jpg)
+
+And then choose the **JavaScript Snippet** option:
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-2-1024x408-1.jpg)
+
+Once you’ve added the snippet, make sure you save it and that it’s active:
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-4-1024x367-1.jpg)
+
+## Backup, backup, backup!
+
+Seriously, we can’t say this enough. **Make sure you have a restorable backup of your site’s files and database before making any changes.** This helps prevent a worst-case scenario and offers a lot of peace of mind.
+
+## Test changes first
+
+We strongly recommend testing any change to your site in a safe [staging environment](https://docs.nexcess.com/software/the-events-calendar/creating-and-using-a-wordpress-staging-site/) before adding new code to your live site. This way, you can always be confident that the code you’re using works, and that it is compatible with your site without jeopardizing your live site.
 
 ---
 
