@@ -53,7 +53,7 @@ The full screen magic is setting the minimum height to 100vh (viewport height) a
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/setup-row-layout-1024x572-1.jpg)
 
-Setting a background background color will ensure I cover up any background from the theme. It’ll also be important to set the inner sections vertical alignment to center.
+Setting a background color will ensure I cover up any background from the theme. It’ll also be important to set the inner sections vertical alignment to center.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/setup-sections-1024x572-1.jpg)
 

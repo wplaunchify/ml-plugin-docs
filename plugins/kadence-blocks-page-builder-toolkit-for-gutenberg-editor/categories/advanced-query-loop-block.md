@@ -474,7 +474,7 @@ You can adjust the Checkbox Order using these options.
 
 You can set how you would like the Checkbox Ordered by using the Order By option. You can select Name or Total Results.
 
-The Order Direction can be set to Ascending or Decending.
+The Order Direction can be set to Ascending or Descending.
 
 **Checkbox Display**You can use these options to set your Checkbox Display options.
 
