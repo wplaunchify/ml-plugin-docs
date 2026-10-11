@@ -117,6 +117,38 @@ Contributors
 ## Changelog
 
 	
+#### 1.9.2
+
+FIXED: On multisite only the first site got the default settings, so on the other sites all notifications were disabled. A site without settings now gets the default settings.
+
+#### 1.9.1
+
+FIXED: All PHP files now block direct access, as required by Plugin Check.
+
+UPDATED: Resolved all Plugin Check warnings.
+
+UPDATED: Tested up to WordPress 7.1.
+
+#### 1.9.0
+
+FIXED: Disabling the password forgotten e-mail no longer blocks resetting the password, which also stopped the new user e-mail from being sent.
+
+FIXED: On multisite the new user notification to the site admin now follows the network registration notification setting, as shown on the settings page.
+
+FIXED: Security hardening of the settings page: all output is escaped, module options are sanitized, resetting and saving network settings check user capabilities and exporting settings requires a nonce.
+
+UPDATED: Minimum required WordPress version is now 5.2.
+
+UPDATED: Code follows the WordPress Coding Standards. All functions now use the famne_ prefix. The old function names still work, but are deprecated.
+
+UPDATED: The password changed e-mail and the e-mail changed e-mail to the admin now use the WordPress texts, so they are translated in every language.
+
+UPDATED: The donate button no longer loads external images.
+
+UPDATED: License is now GPLv2 or later.
+
+UPDATED: Dutch translation.
+
 #### 1.8.6
 
 FIXED: Medium vulnerability in settings module. Thanks to Wordfence for reporting this.
@@ -151,73 +183,7 @@ ADDED: Import and export of settings.
 
 UPDATED: A lot of files are refactored and added some more comments along with it.
 
-#### 1.7.1
-
-FIXED: Email automatic plugin update notification to admin sometimes still send out.
-
-#### 1.7.0
-
-UPGRADED: Refactored the plugin and added a more suitable modular system for adding new features.
-
-ADDED: Send admin notifications to extra admin e-mail addresses
-
-ADDED: Send an e-mail to administrators after a user requested to update his or her e-mail address
-
-ADDED: Send an e-mail to administrators after a user successfully updated his or her e-mail address
-
-#### 1.6.1
-
-FIXED: Email automatic plugin update notification to admin sometimes still send out.
-
-#### 1.6.0
-
-ADDED: Automatic WordPress plugin, and theme update e-mail options.
-
-#### 1.5.1
-
-FIXED: php-notice for missing $deprecated variable.
-
-#### 1.5.0
-
-UPGRADED: Upgraded the pluggable functions file. Fixing the missing PassWordHash Class bug.
-
-#### 1.4.2
-
-FIXED: Loading local language.
-
-#### 1.4.1
-
-ADDED: Manage sending e-mail after a successful automatic WordPress core update to administrators. E-mails about failed updates will always be sent to the administrators and will not be disabled.
-
-#### 1.4.0
-
-ADDED: Multi-language support
-
-#### 1.3.0
-
-ADDED: passing through the $notify variable, available sinds 4.6. This is for other plugins to override default sending to admin or user. Only useful if sending within this plugin is activated.
-
-UPDATED: updated with the newer pluggable send functions of WordPress 4.7.
-
-FIXED: Missing blogname in user email
-
-#### 1.2.0
-
-ADDED: Manage sending password forgot e-mail to registered user.
-
-ADDED: Manage sending password forgot e-mail to administrator.
-
-#### 1.1.0
-
-FIXED: Checking password change notification to admin now works.
-
-ADDED: Splitted the manage option for new user notification e-mail into user and admin e-mail.
-
-UPDATED: Clarified some comments and fixed some typo’s.
-
-#### 1.0
-
-- It all starts here.
+For older versions, see [changelog.txt](https://plugins.svn.wordpress.org/manage-notification-emails/trunk/changelog.txt).
 
 ---
 
