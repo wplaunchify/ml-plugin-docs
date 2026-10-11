@@ -50,7 +50,7 @@ The screen has two halves. On the left, **Where colors come from** holds the thr
 
 ## Choosing Where Colors Come From ​
 
-FluentCart's storefront styles are built on a small set of global colors. Every button, border, input, and panel across the shop, single product page, cart drawer, checkout, and customer dashboard reads from one of them, so changing a global here updates every page that uses it. The three cards at the top of the tab decide where those globals come from. Only one can be active at a time.
+FluentCart's storefront styles are built on a small set of global colors, plus the corner rounding on cards, buttons, and form inputs. Every button, border, input, and panel across the shop, single product page, cart drawer, checkout, and customer dashboard reads from one of them, so changing a global here updates every page that uses it. The three cards at the top of the tab decide where those globals come from. Only one can be active at a time.
 
 ### 1. FluentCart's Own Colors ​
 
@@ -59,6 +59,8 @@ This is the default. The storefront keeps the colors FluentCart ships with, and 
 ### 2. Inherit From the Active Theme ​
 
 Select this card to rebuild the storefront palette from your active WordPress theme. FluentCart reads the colors the theme publishes, maps them onto the storefront's surfaces, text, accent, and button roles, and derives the in-between tones no theme declares on its own, such as hairlines, dividers, muted captions, hover tints, and placeholder text. Button text is chosen for contrast against the button color, so a pale brand color still produces readable buttons. If you later switch themes, the storefront follows the new theme automatically.
+
+Along with the colors, FluentCart also reads the theme's corner rounding, button radius from its button styles and input radius from its search field, and applies the matching rounding to storefront cards, buttons, and form inputs.
 
 This only pulls the theme's color palette. It does not import fonts, spacing, layout, or any other styling, so the rest of the storefront's design stays exactly as FluentCart built it.
 
@@ -103,6 +105,29 @@ To set a color, click a picker's swatch to choose visually, or type a hex value 
  directly into its text field. Either way the preview repaints as soon as the value is valid, so you can see a button or border change before saving. Click the **×** on a picker to clear that single color.
 
 To start over, click the **Reset all colors** icon (the circular arrow) at the top right of the picker list. It empties every picker, which is the same as never having set one. Like every other change on this tab, the reset takes effect when you save.
+
+Below the colors, a **Border Radius** group sets how rounded three surfaces are:
+
+- **Card:** Product cards and their image corners.
+- **Button:** Add to Cart, checkout, and the other action buttons.
+- **Form input:** Text fields, selects, textareas, and quantity boxes.
+
+Type a plain number for pixels, such as 
+```
+8
+```
+
+, or add a unit yourself, such as 
+```
+0.5rem
+```
+
+ or 
+```
+1em
+```
+
+. Leave a field empty to keep FluentCart's default rounding for that surface.
 
 ## Saving Your Settings ​
 
@@ -1560,6 +1585,7 @@ FluentCart supports a wide range of global and regional payment processors to en
 - **PayPal:** One of the most trusted ways for customers to pay via their PayPal balance, linked bank accounts, or credit cards.
 - **Paddle:** An all-in-one payment and tax solution (Merchant of Record) that handles global payments and compliance effortlessly.
 - **Square:** Securely accept payments via Credit and Debit Cards, Apple Pay, Google Pay, and Cash App Pay.
+- **Airwallex:** A global financial platform for accepting payments from customers worldwide, with webhook-synced refunds, disputes, and recurring subscriptions (Pro).
 
 #### Regional & Specialized Gateways ​
 

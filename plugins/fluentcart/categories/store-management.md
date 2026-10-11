@@ -1333,7 +1333,7 @@ Shoppers get two halves that work together:
 - **The rating summary card** on the left shows the average score out of 5, the star row, how many reviews it is based on, and a bar for each star level so the spread is obvious at a glance. The **Write a Review** button sits at the bottom of the card.
 - **The review list** on the right shows the reviews themselves, each with the reviewer's name, their star rating, how long ago they posted, a title, and their feedback.
 
-Above the list, shoppers can narrow what they see with the filter chips: **All**, plus one chip per star level from **5** down to **1**. The dropdown on the right sorts the list, with four choices:
+Above the list, shoppers can narrow what they see with the filter chips: **All**, plus one chip per star level from **5** down to **1**. Star chips combine, so picking **5** and **4** shows both at once, and clicking an active chip turns it back off. **All** clears every chip. The dropdown on the right sorts the list, with four choices:
 
 - **Newest** (the default)
 - **Oldest**
@@ -1344,7 +1344,7 @@ When a product has collected more reviews than your **Reviews Per Page** setting
 
 INFO
 
-FluentCart Pro adds two more filter chips: **With Photos** appears once photo reviews are enabled, and **Verified** narrows the list to purchase-verified reviews. Enabling helpful votes also adds a **Most Helpful** sort option. See [Photo Reviews & Helpful Votes](/guide/store-management/product-reviews/photo-reviews-helpful-votes).
+FluentCart Pro adds two more filter chips: **With Photos** appears once photo reviews are enabled, and **Verified** narrows the list to purchase-verified reviews. Both narrow on top of whichever star chips are active rather than replacing them. Enabling helpful votes also adds a **Most Helpful** sort option. See [Photo Reviews & Helpful Votes](/guide/store-management/product-reviews/photo-reviews-helpful-votes).
 ## How Customers Write a Review ​
 
 Clicking **Write a Review** opens a drawer that slides in from the side of the page. By default it shows the whole form at once, so the customer can fill it in from top to bottom:
@@ -1688,7 +1688,7 @@ slider
 
 Only approved reviews ever appear on your storefront. Pending, spam, and trashed reviews stay hidden, and they are left out of the average rating and the star breakdown too. Your replies appear underneath the reviews they answer, so customers can see that you responded.
 
-If you build with Elementor instead, the same pieces are available as [review widgets for Elementor](/guide/customization-and-themes/elementor-review-widgets).
+If you build with a page builder instead, the same pieces are available as [review widgets for Elementor](/guide/customization-and-themes/elementor-review-widgets), [review elements for Bricks](/guide/customization-and-themes/bricks-review-elements), and [review modules for Divi](/guide/customization-and-themes/divi-review-modules).
 
 Your reviews are now working for you on the storefront, showing real feedback exactly where shoppers make their decision.
 
@@ -2035,7 +2035,10 @@ There is nothing to switch on. The data is added to single product pages only, a
 Each product page carries one product entry with the details a shopper sees on the page:
 
 - **Basics:** The product name, page link, featured image, and description. When a product has a single variation, its SKU is included too.
+- **Brand:** The product's assigned [brands](/guide/product-types-creation/creating-managing-product-brand), when it has any.
 - **Offers:** One offer for a single-variation product, or a price range with the lowest price, highest price, and number of options for a product with several variations. Each offer carries the store currency and its stock status, and only active variations are included. Stock status reflects real stock only when Stock Management is enabled. Otherwise every offer is shown as in stock.
+- **Subscription billing:** For a subscription offer, the billing period (daily, weekly, monthly, and so on) and, for a plan with a fixed number of payments, the total length of the subscription.
+- **Tax:** When tax is on, whether an offer's price already includes VAT, following the same setting and variation overrides your storefront prices use.
 - **Aggregate rating:** The average star rating and the number of reviews. This appears once the product has approved reviews.
 - **Reviews:** The individual reviews shown on the page, including the reviewer name, date, title, text, and star rating.
 

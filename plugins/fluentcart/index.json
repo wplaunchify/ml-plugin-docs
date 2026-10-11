@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-10-04T06:27:23.473Z",
-  "total_pages": 166,
+  "last_scraped": "2026-10-11T04:54:08.062Z",
+  "total_pages": 169,
   "failed_urls_count": 5,
   "sections": [
     {
@@ -78,11 +78,15 @@
       "slug": "customization-and-themes",
       "url": "https://docs.fluentcart.com/guide/customization-and-themes/",
       "file": "categories/customization-and-themes.md",
-      "page_count": 14,
+      "page_count": 16,
       "pages": [
         {
           "title": "Advanced Customization with CSS Variables ​",
           "url": "https://docs.fluentcart.com/guide/customization-and-themes/advanced-customization-using-css"
+        },
+        {
+          "title": "FluentCart Review Elements for Bricks ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/bricks-review-elements"
         },
         {
           "title": "Code Snippets ​",
@@ -91,6 +95,10 @@
         {
           "title": "Customize Store with Bricks ​",
           "url": "https://docs.fluentcart.com/guide/customization-and-themes/customize-store-with-bricks"
+        },
+        {
+          "title": "FluentCart Review Modules for Divi ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/divi-review-modules"
         },
         {
           "title": "FluentCart Widgets for Elementor ​",
@@ -319,11 +327,15 @@
       "slug": "payments-checkout",
       "url": "https://docs.fluentcart.com/guide/payments-checkout/",
       "file": "categories/payments-checkout.md",
-      "page_count": 14,
+      "page_count": 15,
       "pages": [
         {
           "title": "Configuring Payments Overview ​",
           "url": "https://docs.fluentcart.com/guide/payments-checkout/"
+        },
+        {
+          "title": "Airwallex Settings ​",
+          "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/airwallex-settings"
         },
         {
           "title": "Authorize.net Settings ​",

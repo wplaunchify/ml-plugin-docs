@@ -26,9 +26,160 @@ The available gateways include:
 - **Razorpay:** A popular payment solution for businesses in India, supporting UPI, Cards, NetBanking, and Wallets.
 - **Authorize.net:** A trusted payment gateway (Visa solution) that securely accepts credit cards, debit cards, and e-checks (ACH).
 - **Square:** A globally trusted payment gateway that accepts Credit and Debit Cards, Apple Pay, Google Pay, and Cash App Pay through a single inline checkout.
+- **Airwallex:** A global financial platform for accepting payments worldwide, with support for refunds, disputes, and subscriptions (Pro).
 - **Cash on Delivery (COD):** Lets customers pay in cash when their order is delivered.
 
 By setting up these features correctly, you can ensure a smooth, secure, and flexible payment process for your customers, leading to higher conversion rates and a better shopping experience.
+
+---
+
+## Airwallex Settings ​
+
+**Source:** [https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/airwallex-settings](https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/airwallex-settings)
+
+# Airwallex Settings ​
+
+Airwallex is a global financial platform that lets businesses accept payments from customers around the world. By connecting Airwallex with FluentCart, you can offer your customers a secure checkout experience with support for refunds, disputes, and recurring subscriptions, all kept in sync through webhooks.
+
+This guide will walk you through every step of connecting your Airwallex account to FluentCart, from creating a scoped API key to configuring webhooks and activating the gateway.
+
+INFO
+
+Airwallex is a Pro feature. It is only available when **FluentCart Pro** is installed and active on your site.
+## Step 1: Accessing Airwallex Settings ​
+
+1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
+2. Click on the **Payment Settings** tab.
+3. Locate **Airwallex** in the list of payment gateways and click the **Manage** button next to it.
+
+## Step 2: Connect Your Airwallex Account ​
+
+Once you open the Airwallex settings page, you can connect your store in both Test and Live modes. Choose the mode that matches your store's current **Order Mode** before you start entering credentials.
+
+- **Store Mode Notice:** At the top of the page, a message shows whether your store is currently in Test mode or Live mode. If your store is in Test mode, remember to switch to Live mode before accepting real transactions.
+- **Select Credentials Mode:**
+
+- **Test credentials:** Select this tab to connect your Airwallex sandbox account and try the checkout without real money.
+- **Live credentials:** Select this tab when you are ready to accept real payments.
+- **Credential fields:** Each tab asks for three values, which you will collect from Airwallex in the next steps:
+
+- **Client ID** *(Required)*
+- **API Key** *(Required)*
+- **Webhook Secret** *(Required)*
+- **Webhook URL:** A unique URL generated for your store. You will paste it into Airwallex in Step 4. Click the copy icon next to it to copy it.
+
+INFO
+
+Your credentials are encrypted before they are stored in your database, so they are never saved as plain text.
+## Step 3: Create a Scoped API Key in Airwallex ​
+
+FluentCart connects to Airwallex using a scoped API key. Now, let's create one inside your Airwallex account.
+
+INFO
+
+To test with fake payments, use your Airwallex **sandbox** account. For real payments, repeat these steps in your live Airwallex account and enter the values in the **Live credentials** tab.1. Log in to your Airwallex account.
+2. From the left sidebar, click **Developer**.
+3. Open the **API keys** tab, then click the **New scoped key** button on the right.
+
+1. In the **Create scoped API key** screen, enter a recognizable name in the **API key name** field (e.g., 
+```
+FluentCart
+```
+
+).
+2. Under **Global permissions**, review the resources and make sure **Webhooks** has both **Read** and **Write** access, since FluentCart relies on webhooks to receive payment updates.
+3. Click **Next**.
+
+1. Under **Account permissions**, open the **Accounts** field and select the Airwallex account this key should work with.
+2. Review the resources listed below the account selection, then click **Next**.
+
+1. On the **Set IP whitelist** screen, you can optionally enter the IP addresses allowed to use this key. Whitelisting adds an extra layer of security by blocking requests from any other address. If you are unsure about your server's IP address, you can leave this empty.
+2. Click **Create**.
+
+Airwallex now shows the **Save your scoped API key** screen with the new key and its details.
+
+1. Click the **Copy** button next to the API key and store it somewhere safe for now. You will paste it into the **API Key** field in FluentCart later.
+2. Under **API key details**, click the copy icon next to **Client ID** and copy it as well. You will paste it into the **Client ID** field in FluentCart later.
+
+WARNING
+
+Airwallex shows the API key only once. Copy it before leaving this screen, because you will not be able to see it again. If you lose it, you will need to create a new key.
+## Step 4: Configure Webhooks ​
+
+Webhooks let Airwallex send real-time updates to FluentCart, such as confirmed payments, refunds, disputes, and subscription changes. Without them, your orders will not update automatically.
+
+1. **Copy Your Webhook URL:** On the FluentCart Airwallex settings page, locate the **Webhook URL** and copy it.
+2. **Open Webhooks in Airwallex:** In your Airwallex account, go to **Developer** and open the **Webhooks** tab. Click **New webhook**.
+
+1. **Enter the Webhook Details:** In the **Create webhook** screen, fill in the following: - **Name:** Give it a recognizable name like 
+```
+FluentCart
+```
+
+.
+- **Notification URL:** Paste the **Webhook URL** you copied from FluentCart.
+- **API version:** Leave this set to the current API version.
+2. **Select the Important Events:** Subscribe to the events FluentCart needs. These are the same events listed under **Select these events** on the FluentCart Airwallex settings page:
+
+The events recommended by FluentCart are briefly explained below:
+
+- **payment_intent.succeeded:** The customer's payment went through successfully, and the order can be marked as paid.
+- **payment_intent.cancelled:** A payment was cancelled before it was completed.
+- **refund.accepted:** A refund request was accepted by Airwallex.
+- **refund.settled:** A refund was completed and the money was returned to the customer.
+- **refund.failed:** A refund could not be processed.
+- **payment_dispute.requires_response:** A customer opened a dispute and a response is needed.
+- **payment_dispute.pending_closure:** A dispute is waiting to be closed.
+- **payment_dispute.won:** The dispute was resolved in your favor.
+- **payment_dispute.lost:** The dispute was resolved in the customer's favor.
+- **subscription.created:** A new subscription was created.
+- **subscription.active:** A subscription became active.
+- **subscription.unpaid:** A subscription payment is overdue or unpaid.
+- **subscription.modified:** A subscription was changed (e.g., upgraded or downgraded).
+- **subscription.cancelled:** A subscription was cancelled.
+- **invoice.payment.paid:** A subscription invoice was paid by the customer.
+
+Under **Payment Intent**, check **payment_intent.succeeded** and **payment_intent.cancelled**.
+
+Scroll down to **Refund** and check **refund.accepted**, **refund.settled**, and **refund.failed**.
+
+Next, scroll to **Subscription** and check **subscription.created**, **subscription.active**, **subscription.unpaid**, **subscription.cancelled**, and **subscription.modified**.
+
+Under **Account events**, make sure the account you want to track is selected in the **Accounts** field, and open the **Payments** category to find the remaining payment events.
+
+Finally, find **Invoice** in the list and check **invoice.payment.paid**.
+
+1. Click **Create** at the bottom right to save the webhook.
+2. **Copy the Webhook Secret:** Open the webhook you just created in Airwallex and copy its **signing secret**.
+
+INFO
+
+Create one webhook endpoint per environment. Use a separate webhook for your sandbox (Test) account and another for your live account, and paste each secret into the matching credentials tab.
+## Step 5: Activate and Save ​
+
+Now, let's bring everything together in FluentCart.
+
+1. **Paste Your Credentials:** Back on the FluentCart Airwallex settings page, select the **Test credentials** tab (or **Live credentials** for a live account) and fill in the fields: - **Client ID:** Paste the Client ID you copied in Step 3.
+- **API Key:** Paste the API key you copied in Step 3.
+- **Webhook Secret:** Paste the signing secret you copied in Step 4.
+2. **Payment Activation:** Switch the **Payment Activation** toggle at the top right to **ON**.
+3. **Save Settings:** Click the **Save Settings** button at the bottom of the page.
+
+Once saved, **Airwallex** appears as a payment option on your checkout page.
+
+We recommend placing a test order in Test mode to confirm everything works before going live.
+
+## Step 6: Go Live with Real Payments ​
+
+When you're ready to accept real payments, follow these steps to switch from Test to Live mode:
+
+1. Log in to your live Airwallex account and repeat **Step 3** to get your live **Client ID** and **API Key**.
+2. Repeat **Step 4** in your live account to create a webhook and copy its **signing secret**.
+3. In FluentCart, open the Airwallex settings page and select the **Live credentials** tab.
+4. Paste the live **Client ID**, **API Key**, and **Webhook Secret**, then click **Save Settings**.
+5. Finally, make sure your store's **Order Mode** is set to **Live** under **FluentCart Pro > Settings > Store Settings**.
+
+Your store is now configured to securely accept payments through Airwallex.
 
 ---
 
@@ -600,8 +751,9 @@ INFO
 
 Please note that you must have a PayPal Business or Merchant account to accept payments through this integration. The following step will prompt you to log in to this account.1. **Test Mode Warning:** If your store is in Test mode, a banner will remind you: "Your Store is in Test mode, Change Store's 'Order Mode' to 'Live' and update related settings to enable Live payment !!" This is crucial to switch to live mode for real transactions.
 2. **Connect Your PayPal Account:** Here, you don't need any API keys. Just click on the **Connect with PayPal** button. You'll then be directed to "PayPal" to log in to your account. Once logged in, you will see that your PayPal account is successfully connected with your FluentCart store.
-3. **Payment Activation:** In the top right corner of this page, ensure the PayPal **Payment Activation** option is "Active".
-4. Click the **"Save Settings"** button to apply your changes.
+3. **Brand Name:** *(Optional)* Enter a name to show on the PayPal checkout popup instead of your PayPal business account's name, up to 127 characters. Leave it blank to show your business account's name as usual.
+4. **Payment Activation:** In the top right corner of this page, ensure the PayPal **Payment Activation** option is "Active".
+5. Click the **"Save Settings"** button to apply your changes.
 
 ## Letting Customers Save Their PayPal Account ​
 
