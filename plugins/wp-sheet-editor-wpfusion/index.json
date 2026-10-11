@@ -2,7 +2,7 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-10-04T09:00:57.131Z",
+  "last_scraped": "2026-10-11T07:12:42.919Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
@@ -46,15 +46,15 @@
       ]
     },
     {
-      "title": "Set Same Price Multiple Woocommerce Products",
-      "slug": "set-same-price-multiple-woocommerce-products",
-      "url": "https://wpsheeteditor.comset-same-price-multiple-woocommerce-products/",
-      "file": "categories/set-same-price-multiple-woocommerce-products.md",
+      "title": "Learndash Google Sheets Integration",
+      "slug": "learndash-google-sheets-integration",
+      "url": "https://wpsheeteditor.comlearndash-google-sheets-integration/",
+      "file": "categories/learndash-google-sheets-integration.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Set the Same Price for Multiple WooCommerce Products",
-          "url": "https://wpsheeteditor.com/set-same-price-multiple-woocommerce-products/"
+          "title": "Easy LearnDash Google Sheets Integration",
+          "url": "https://wpsheeteditor.com/learndash-google-sheets-integration/"
         }
       ]
     },
