@@ -48,8 +48,6 @@ Stoked! This gives editors a populated preview before they add the block, withou
 
 In this guide, we will cover:
 
-In this guide, we will cover:
-
 - Registering an ACF Block with 
 ```
 block.json
@@ -326,7 +324,7 @@ The block should now appear in the search results.
 If it does not appear, check if:
 
 - The plugin is activated
-- The file is named exactly named 
+- The file is named exactly 
 ```
 block.json
 ```
@@ -1752,18 +1750,6 @@ The datastore is disabled by default. To enable it, add this filter to your them
 
 ```
 add_filter( 'acf/settings/enable_datastore', '__return_true' );
-```
-
-You can also enable it conditionally:
-
-```
-add_filter( 'acf/settings/enable_datastore', function( $enabled ) {
-    // Only enable for specific post types
-    if ( get_post_type() === 'product' ) {
-        return true;
-    }
-    return $enabled;
-});
 ```
 
 ## Features
