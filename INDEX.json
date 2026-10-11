@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11T15:39:37.573Z",
+  "last_updated": "2026-10-11T15:46:28.842Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3640,7 +3640,7 @@
       "slug": "wp-fusion-logins-addon",
       "name": "WP Fusion - Logins Addon",
       "documentation_url": "https://wpfusion.com/documentation/",
-      "last_scraped": "2026-10-04T17:04:19.041Z",
+      "last_scraped": "2026-10-11T15:46:28.842Z",
       "page_count": 486,
       "categories": [
         "abandoned-cart-tracking",
