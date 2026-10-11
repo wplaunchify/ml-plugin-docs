@@ -28,7 +28,7 @@ Each row features a Settings Icon on the far left. Click on this icon to access 
 
 ![Header Rows](https://docs.nexcess.com/wp-content/uploads/2026/06/Header-Rows.gif)
 
-Switch between the Dekstop, Tablet/Mobile, and Off Canvas Tabs to customize each accordingly.
+Switch between the Desktop, Tablet/Mobile, and Off Canvas Tabs to customize each accordingly.
 
 ![Header Selections](https://docs.nexcess.com/wp-content/uploads/2026/06/Header-Selections.jpg)
 
