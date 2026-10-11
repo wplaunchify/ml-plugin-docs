@@ -1,4 +1,4 @@
-# Bundle Discounts Legacy
+# Core
 
 *Category from The Events Calendar documentation*
 
@@ -6,7 +6,7 @@
 
 ## Do You Provide Discounts if I Purchase Multiple Products?
 
-**Source:** [https://docs.nexcess.com/software/the-events-calendar/bundle-discounts-legacy/](https://docs.nexcess.com/software/the-events-calendar/bundle-discounts-legacy/)
+**Source:** [https://docs.nexcess.com/software/the-events-calendar/core/bundle-discounts-legacy/](https://docs.nexcess.com/software/the-events-calendar/core/bundle-discounts-legacy/)
 
 The quick answer: **Yes!**
 

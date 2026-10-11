@@ -20,7 +20,7 @@ Before jumping in, let’s consider what it is we’re looking for. If the goal 
 - Limit access to certain events and event categories to members
 - Display content on a page that is only visible to members
 - Limit who can submit events to the calendar based to members
-- Create tickets that only members can purchase (availble with some integrations with [this handy extension](https://theeventscalendar.com/extensions/members-only-tickets/))
+- Create tickets that only members can purchase (available with some integrations with [this handy extension](https://theeventscalendar.com/extensions/members-only-tickets/))
 
 There are probably other requirements we could dream up, but what we have here should account for the bulk of many community and membership sites that use calendars.
 
@@ -333,7 +333,7 @@ MemberPress is a pretty darn neat plugin, but that doesn’t mean it’s perfect
 #### Cons
 
 - There is no free option.
-- It might be be overkill for basic needs.
+- It might be overkill for basic needs.
 
 #### Conclusion
 

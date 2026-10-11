@@ -132,7 +132,7 @@ Here’s how to clear cache in popular browsers:
 **Microsoft Edge**
 
 1. Click the 3-dot menu > **Settings > Privacy, Search, and Services**.
-2. Click **Delete Browing data**.
+2. Click **Delete Browsing data**.
 3. Click **Choose what to clear**.
 4. Select **Cached images and files** and click **Clear now**.
 

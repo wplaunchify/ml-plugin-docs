@@ -36,8 +36,8 @@ The Embed Calendar block has four settings groups:
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Image-2024-12-26-at-11.14.10-AM-1.jpg)
 
-- **Select/Exclude Event Categories:** the top two settings give you the ability to select the event categories you want to include or exclude from the embeded calendar.
-- **Select/Exclude Event Tags**: the tag settings give you the ability to choose the event tags you would like to include or exclude from the embeded calendar.
+- **Select/Exclude Event Categories:** the top two settings give you the ability to select the event categories you want to include or exclude from the embedded calendar.
+- **Select/Exclude Event Tags**: the tag settings give you the ability to choose the event tags you would like to include or exclude from the embedded calendar.
 
 ## Attributes Filters
 

@@ -75,10 +75,8 @@ functions.php
 ```
 function customize_tribe_events_v2_medium_breakpoint( $breakpoints ) {
   $breakpoints['medium'] = 600;
-
   return $breakpoints;
 }
-
 add_filter( 'tribe_events_views_v2_view_breakpoints', 'customize_tribe_events_v2_medium_breakpoint' );
 ```
 
@@ -101,10 +99,8 @@ function customize_tribe_events_v2_breakpoints( $breakpoints ) {
     'medium' => 600,
     'full'   => 800,
   ];
-
   return $breakpoints;
 }
-
 add_filter( 'tribe_events_views_v2_view_breakpoints', 'customize_tribe_events_v2_breakpoints' );
 ```
 
@@ -129,16 +125,52 @@ tribe_events_views_v2_view_day_breakpoints
 // Customizes the medium responsive breakpoint for month view from 768px to 600px
 function customize_tribe_events_v2_view_month_medium_breakpoint( $breakpoints ) {
     $breakpoints['medium'] = 600;
-
     return $breakpoints;
 }
-
 add_filter( 'tribe_events_views_v2_view_month_breakpoints', 'customize_tribe_events_v2_view_month_medium_breakpoint' );
 ```
 
 ## Removing Responsive Breakpoints
 
-To completely remove all of the breakpoints use this filter in the theme’s 
+The Events Calendar’s views (Month, List, Day, and, with Events Calendar Pro, Week, Photo, Map, and Summary) don’t have an on/off switch for responsiveness. Each view’s layout adapts based on its breakpoints, and you can change those breakpoints with a filter. To make a view ignore its breakpoints, set them so they are always met or never met.
+
+A breakpoint is met when the calendar’s own width is at least that number, so 
+```
+0
+```
+
+ is always met and a very large number is never met. Always return all three values (
+```
+xsmall
+```
+
+, 
+```
+medium
+```
+
+, 
+```
+full
+```
+
+). A missing value is never met, and a function that returns nothing breaks the calendar’s JavaScript.
+
+If you used the old 
+```
+tribe_events_kill_responsive
+```
+
+ filter, remove it. It has no effect on the current views.
+
+#### Keep the desktop layout at every screen width
+
+Set all three breakpoints to 
+```
+0
+```
+
+. Add this to your theme’s 
 ```
 functions.php
 ```
@@ -146,57 +178,98 @@ functions.php
  file:
 
 ```
-// Removes all responsive breakpoints in every calendar view
-add_filter( 'tribe_events_views_v2_view_breakpoints', '__return_empty_array' );
-```
-
-And respectively to completely remove any breakpoints for a specific view, list view in this example:
-
-```
-// Removes all responsive breakpoints in the calendar's list view
-add_filter( 'tribe_events_views_v2_view_list_breakpoints', '__return_empty_array' );
-```
-
-Let’s say you want to customize the responsive breakpoint to be 600px. This following snippet filters the 
-```
-tribe_events_mobile_breakpoint
-```
-
- function to adjust the breakpoint from 768px to 600px, and can be added to your theme’s 
-```
-functions.php
-```
-
- file at the end:
-
-```
-function customize_tribe_events_breakpoint() {
-  return 600;
+// Keeps the full desktop layout in every calendar view
+function customize_tribe_events_v2_force_desktop( $breakpoints ) {
+  return [
+    'xsmall' => 0,
+    'medium' => 0,
+    'full'   => 0,
+  ];
 }
 
-add_filter( 'tribe_events_mobile_breakpoint', 'customize_tribe_events_breakpoint' );
+add_filter( 'tribe_events_views_v2_view_breakpoints', 'customize_tribe_events_v2_force_desktop' );
 ```
 
-Now let’s say you want to remove the responsiveness altogether. That’s where the 
+This filter applies to every calendar view, including Calendar Embeds and the calendar widgets. On a phone the calendar stays in its desktop layout, so it will be cramped. Buttons and text get small, parts of the search bar can be cut off, and keyboard users on narrow screens may not be able to Tab to the search and navigation controls. Test it on a real phone before you keep it.
+
+#### Keep the desktop layout in one view only
+
+Use the view-specific filter instead. The name ends with the view’s slug (
 ```
-tribe_events_kill_responsive
+list
 ```
 
- filter comes into play. Add it to your 
+, 
 ```
-functions.php
-```
-
- file and pass a value of 
-```
-__return_true
+month
 ```
 
- in there to remove the responsive breakpoint.
+, 
+```
+day
+```
+
+, and with Events Calendar Pro 
+```
+week
+```
+
+, 
+```
+photo
+```
+
+, 
+```
+map
+```
+
+, and 
+```
+summary
+```
+
+). This example affects List view only:
 
 ```
-add_filter( 'tribe_events_kill_responsive', '__return_true' );
+// Keeps the full desktop layout in the calendar's list view
+function customize_tribe_events_v2_list_force_desktop( $breakpoints ) {
+  return [
+    'xsmall' => 0,
+    'medium' => 0,
+    'full'   => 0,
+  ];
+}
+
+add_filter( 'tribe_events_views_v2_view_list_breakpoints', 'customize_tribe_events_v2_list_force_desktop' );
 ```
+
+When both a global and a view-specific filter are set, the view-specific one wins for that view.
+
+#### Keep the compact (mobile) layout at every screen width
+
+Set the breakpoints to a very large number so the calendar always uses its small-screen layout:
+
+```
+// Keeps the compact layout in every calendar view
+function customize_tribe_events_v2_force_mobile( $breakpoints ) {
+  return [
+    'xsmall' => 100000,
+    'medium' => 100000,
+    'full'   => 100000,
+  ];
+}
+
+add_filter( 'tribe_events_views_v2_view_breakpoints', 'customize_tribe_events_v2_force_mobile' );
+```
+
+Use either the “desktop” or the “compact” global snippet, not both.
+
+#### Clear the cache after changing breakpoints
+
+Month View, and Week View if you use Events Calendar Pro, store their generated HTML in a cache, and the breakpoints are part of that HTML. After you add or change a breakpoint filter, those views may keep using the old values until the cache is cleared. The other views, including List and Day, pick up the change right away.
+
+To clear the cache, open any event and click **Update**, or go to **Events > Settings** and click **Save Changes**. Plugin changes and a caching plugin’s “clear cache” also work, and the cache expires on its own after 24 hours. Administrators and visitors see separate cached copies, so test in a private window, logged out.
 
 ## Styling Based on Responsiveness
 

@@ -8,7 +8,7 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/google-maps-handbook/](https://docs.nexcess.com/software/the-events-calendar/google-maps-handbook/)
 
-With [Events Calendar Pro](https://theeventscalendar.com/product/wordpress-events-calendar-pro/), you will get the Map View and dedicated [Venue page](https://docs.nexcess.com/software/the-events-calendar/venues-organizers/)s, plus it also offers the ability to perform smart location-based searches when filtering calendar events. A lot of this is powered by Google Maps and its API. This handbook aims to collect all the related information.
+With Events Calendar Pro, you will get the Map View and dedicated [Venue pages](https://docs.nexcess.com/software/the-events-calendar/venues-organizers/), plus it also offers the ability to perform smart location-based searches when filtering calendar events. A lot of this is powered by Google Maps and its API. This handbook aims to collect all the related information.
 
 Introduction
 

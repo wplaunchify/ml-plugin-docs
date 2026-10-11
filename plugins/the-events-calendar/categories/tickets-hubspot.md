@@ -150,7 +150,7 @@ Once you grant access, you will be redirected back to the WordPress API settings
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/hubspot-connected-scaled.png)Those other setup items will be connected for you automatically within five minutes of granting access, but usually faster. You can navigate away from this screen while that is happening.
 
-## Accesing Attendees data in HubSpot
+## Accessing Attendees data in HubSpot
 
 You will notice that the contacts data isn’t available in the main contacts list, aside from the default properties like Name and Email. Here’s how you can access and display this information:
 

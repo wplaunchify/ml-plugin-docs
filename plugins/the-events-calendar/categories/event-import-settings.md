@@ -57,7 +57,7 @@ For example, you could set *Workshops*as your global default event category, th
 Notes:
 
 - Imports performed using the *Other URL* import type will always be limited by date range. You can adjust the preferred date range for these import tasks under [Other URL Import Settings](#other-url-settings).
-- Eventbrite Tickets imports are currenly limited to 1 year in the future from the date entered in the *Refine* field.
+- Eventbrite Tickets imports are currently limited to 1 year in the future from the date entered in the *Refine* field.
 
 **Import Process System –**This allows you to select whether you want your imports to be processed Asynchronously or using the cron-based system. **Asynchronous** imports are enabled by default, but might not work correctly in all WordPress installations. In such case, try switching to the **Cron-based** process for maximum compatibility.
 

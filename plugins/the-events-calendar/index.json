@@ -2,8 +2,8 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-10-04T08:16:06.664Z",
-  "total_pages": 346,
+  "last_scraped": "2026-10-11T06:40:28.886Z",
+  "total_pages": 331,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -228,45 +228,6 @@
       ]
     },
     {
-      "title": "Bundle Discounts",
-      "slug": "bundle-discounts",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/bundle-discounts/",
-      "file": "categories/bundle-discounts.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Do You Provide Discounts if I Purchase Multiple Products?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/bundle-discounts/"
-        }
-      ]
-    },
-    {
-      "title": "Bundle Discounts Legacy",
-      "slug": "bundle-discounts-legacy",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/bundle-discounts-legacy/",
-      "file": "categories/bundle-discounts-legacy.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Do You Provide Discounts if I Purchase Multiple Products?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/bundle-discounts-legacy/"
-        }
-      ]
-    },
-    {
-      "title": "Caching With The Events Calendar",
-      "slug": "caching-with-the-events-calendar",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/caching-with-the-events-calendar/",
-      "file": "categories/caching-with-the-events-calendar.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Caching with The Events Calendar",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/caching-with-the-events-calendar/"
-        }
-      ]
-    },
-    {
       "title": "Calendar Caching",
       "slug": "calendar-caching",
       "url": "https://docs.nexcess.com/software/the-events-calendar/calendar-caching/",
@@ -423,32 +384,6 @@
       ]
     },
     {
-      "title": "Code Snippets",
-      "slug": "code-snippets",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/code-snippets/",
-      "file": "categories/code-snippets.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Using Code Snippets to Customize The Events Calendar",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/code-snippets/"
-        }
-      ]
-    },
-    {
-      "title": "Common Wordpress Plugin Installation Errors And How To Fix Them",
-      "slug": "common-wordpress-plugin-installation-errors-and-how-to-fix-them",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/common-wordpress-plugin-installation-errors-and-how-to-fix-them/",
-      "file": "categories/common-wordpress-plugin-installation-errors-and-how-to-fix-them.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Common WordPress Plugin Installation Errors and How to Fix Them",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/common-wordpress-plugin-installation-errors-and-how-to-fix-them/"
-        }
-      ]
-    },
-    {
       "title": "Community Events",
       "slug": "community-events",
       "url": "https://docs.nexcess.com/software/the-events-calendar/community-events/",
@@ -601,6 +536,19 @@
         {
           "title": "Configuring The Events Calendar With Constants",
           "url": "https://docs.nexcess.com/software/the-events-calendar/constants/"
+        }
+      ]
+    },
+    {
+      "title": "Core",
+      "slug": "core",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/core/",
+      "file": "categories/core.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Do You Provide Discounts if I Purchase Multiple Products?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/core/bundle-discounts-legacy/"
         }
       ]
     },
@@ -1381,19 +1329,6 @@
         {
           "title": "Deleting Events from the Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/delete-events/"
-        }
-      ]
-    },
-    {
-      "title": "Destination Folder Already Exists Resolved",
-      "slug": "destination-folder-already-exists-resolved",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/destination-folder-already-exists-resolved/",
-      "file": "categories/destination-folder-already-exists-resolved.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Why the ‘Destination Folder Already Exists’ Error Happens in WordPress and How to Fix It",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/destination-folder-already-exists-resolved/"
         }
       ]
     },
@@ -2464,19 +2399,6 @@
       ]
     },
     {
-      "title": "How To Set Up A Staging Site For Your Wordpress Website",
-      "slug": "how-to-set-up-a-staging-site-for-your-wordpress-website",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-set-up-a-staging-site-for-your-wordpress-website/",
-      "file": "categories/how-to-set-up-a-staging-site-for-your-wordpress-website.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Set Up a Staging Site for your WordPress Website with WP Staging Plugin",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-set-up-a-staging-site-for-your-wordpress-website/"
-        }
-      ]
-    },
-    {
       "title": "How To Solve Warning On Google Search",
       "slug": "how-to-solve-warning-on-google-search",
       "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-solve-warning-on-google-search/",
@@ -3140,19 +3062,6 @@
       ]
     },
     {
-      "title": "Resolved Allowed Memory Size Exhausted",
-      "slug": "resolved-allowed-memory-size-exhausted",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-allowed-memory-size-exhausted/",
-      "file": "categories/resolved-allowed-memory-size-exhausted.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Resolving the “Allowed memory size exhausted” notice in WordPress",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-allowed-memory-size-exhausted/"
-        }
-      ]
-    },
-    {
       "title": "Resolved Managed By Host Error Prevents Plugin Update",
       "slug": "resolved-managed-by-host-error-prevents-plugin-update",
       "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-managed-by-host-error-prevents-plugin-update/",
@@ -3201,6 +3110,19 @@
         {
           "title": "Using Responsive Templates with The Events Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/responsive-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Rsvp Migration",
+      "slug": "rsvp-migration",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-migration/",
+      "file": "categories/rsvp-migration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "RSVP Migration",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-migration/"
         }
       ]
     },
@@ -3435,32 +3357,6 @@
         {
           "title": "Integrating SureTriggers with The Events Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/suretriggers-integration/"
-        }
-      ]
-    },
-    {
-      "title": "System Requirements",
-      "slug": "system-requirements",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/system-requirements/",
-      "file": "categories/system-requirements.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "The Events Calendar System Requirements",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/system-requirements/"
-        }
-      ]
-    },
-    {
-      "title": "System Requirements Csv Import",
-      "slug": "system-requirements-csv-import",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/system-requirements-csv-import/",
-      "file": "categories/system-requirements-csv-import.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "System Requirements",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/system-requirements-csv-import/"
         }
       ]
     },
@@ -4076,19 +3972,6 @@
       ]
     },
     {
-      "title": "Trustedlogin",
-      "slug": "trustedlogin",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/trustedlogin/",
-      "file": "categories/trustedlogin.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Share site access with support through TrustedLogin",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/trustedlogin/"
-        }
-      ]
-    },
-    {
       "title": "Upgrade To Pro Message Appears Despite Having A Valid License",
       "slug": "upgrade-to-pro-message-appears-despite-having-a-valid-license",
       "url": "https://docs.nexcess.com/software/the-events-calendar/upgrade-to-pro-message-appears-despite-having-a-valid-license/",
@@ -4111,19 +3994,6 @@
         {
           "title": "Configuring User Roles and Permissions with The Events Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/user-roles-events/"
-        }
-      ]
-    },
-    {
-      "title": "Using Ftp",
-      "slug": "using-ftp",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/using-ftp/",
-      "file": "categories/using-ftp.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Using FTP",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/using-ftp/"
         }
       ]
     },
@@ -4206,19 +4076,6 @@
       ]
     },
     {
-      "title": "What Are The System Requirements For Your Plugins",
-      "slug": "what-are-the-system-requirements-for-your-plugins",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/what-are-the-system-requirements-for-your-plugins/",
-      "file": "categories/what-are-the-system-requirements-for-your-plugins.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "System Requirements",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/what-are-the-system-requirements-for-your-plugins/"
-        }
-      ]
-    },
-    {
       "title": "What Browsers Do You Support",
       "slug": "what-browsers-do-you-support",
       "url": "https://docs.nexcess.com/software/the-events-calendar/what-browsers-do-you-support/",
@@ -4245,19 +4102,6 @@
       ]
     },
     {
-      "title": "What Kind Of Payments Do You Accept",
-      "slug": "what-kind-of-payments-do-you-accept",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/what-kind-of-payments-do-you-accept/",
-      "file": "categories/what-kind-of-payments-do-you-accept.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "What Kind of Payments Do You Accept?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/what-kind-of-payments-do-you-accept/"
-        }
-      ]
-    },
-    {
       "title": "What Support Is Provided For License Holders",
       "slug": "what-support-is-provided-for-license-holders",
       "url": "https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/",
@@ -4267,19 +4111,6 @@
         {
           "title": "What Kind of Support Do You Provide for Paid Plugins?",
           "url": "https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/"
-        }
-      ]
-    },
-    {
-      "title": "What To Do If Wordpress Is Stuck In Maintenance Mode After Update",
-      "slug": "what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update/",
-      "file": "categories/what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "What to Do if WordPress Is Stuck in “Maintenance Mode” After Update",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/what-to-do-if-wordpress-is-stuck-in-maintenance-mode-after-update/"
         }
       ]
     },
@@ -4297,19 +4128,6 @@
       ]
     },
     {
-      "title": "Who Should Buy The Subscription The Client Or The Developer",
-      "slug": "who-should-buy-the-subscription-the-client-or-the-developer",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/who-should-buy-the-subscription-the-client-or-the-developer/",
-      "file": "categories/who-should-buy-the-subscription-the-client-or-the-developer.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Who Should Buy the Subscription, the Client or the Developer?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/who-should-buy-the-subscription-the-client-or-the-developer/"
-        }
-      ]
-    },
-    {
       "title": "Why Am I Being Told My License Key Is Out Of Installs",
       "slug": "why-am-i-being-told-my-license-key-is-out-of-installs",
       "url": "https://docs.nexcess.com/software/the-events-calendar/why-am-i-being-told-my-license-key-is-out-of-installs/",
@@ -4319,19 +4137,6 @@
         {
           "title": "Why Am I Being Told My License Key is Out of Installs?",
           "url": "https://docs.nexcess.com/software/the-events-calendar/why-am-i-being-told-my-license-key-is-out-of-installs/"
-        }
-      ]
-    },
-    {
-      "title": "Why We Dont Offer Phone Support",
-      "slug": "why-we-dont-offer-phone-support",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/why-we-dont-offer-phone-support/",
-      "file": "categories/why-we-dont-offer-phone-support.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Do You Offer Phone Support?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/why-we-dont-offer-phone-support/"
         }
       ]
     },

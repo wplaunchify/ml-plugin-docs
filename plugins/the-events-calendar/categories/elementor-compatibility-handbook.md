@@ -14,7 +14,7 @@ Starting from version 6.4.0, The Events Calendar introduces support for Elemento
 
 With our premium plugins, you’ll not only gain access to additional native Elementor widgets but also the capability to utilize our shortcodes with Elementor shortcode widget.
 
-Explore the available featues across the different setups.
+Explore the available features across the different setups.
 
 | Features | TEC (Free) + Elementor (Free) | TEC (Free) + Elementor Pro | TEC Pro + Elementor (Free) | TEC Pro + Elementor Pro |
 | --- | --- | --- | --- | --- |
@@ -24,7 +24,7 @@ Explore the available featues across the different setups.
 | TEC Pro / ET Plus widgets on Elementor pages |  |  | ✓ | ✓ |
 | TEC Pro / ET Plus shortcodes to use on Elementor pages |  |  | ✓ | ✓ |
 
-Let’s summarize the relevant knowledgebase articles.
+Let’s summarize the relevant knowledge base articles.
 
 **Native Elementor widgets and shortcodes**
 

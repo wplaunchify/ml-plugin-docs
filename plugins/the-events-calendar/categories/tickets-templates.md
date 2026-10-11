@@ -248,6 +248,26 @@ events-calendar-pro/src/views/integrations/event-tickets/emails/
 | /template-parts/body/virtual-event/link.php | Contains the link to the virtual event. |
 | /template-parts/header/head/ve-styles.php | Contains the CSS styles for Virtual Events’s integration with Event Tickets emails. |
 
+To override these templates, copy them to the 
+```
+tribe/events-virtual
+```
+
+ folder in your theme, keeping the rest of the path the same as the original file:
+
+```
+[your-theme]/tribe/events-virtual/integrations/event-tickets/emails/
+```
+
+For example:
+
+- ```
+[your-theme]/tribe/events-virtual/integrations/event-tickets/emails/template-parts/body/virtual-event/link.php
+```
+- ```
+[your-theme]/tribe/events-virtual/integrations/event-tickets/emails/template-parts/header/head/ve-styles.php
+```
+
 ## Digital Wallets and PDF Tickets
 
 Parent folder located at:

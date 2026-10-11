@@ -46,24 +46,18 @@ add_filter(
 			// Point this to the template you want to use.
 			$template = locate_template( 'templates/some-template.php' );
 		}
-
 		return $template;
 	}
 );
-
 /* 2 - Remove the Series Calendar view from being injected into your custom template */
-
 use TECEvents_ProCustom_TablesV1TemplatesSeries_Filters;
-
 add_filter(
 	'template_include',
 	static function ( $template ) {
 		if ( ! has_action( 'tribe_common_loaded', 'tribe_register_pro' ) ) {
 			return $template;
 		}
-
 		remove_filter( 'the_content', [ tribe( Series_Filters::class ), 'inject_content' ], 10 );
-
 		return $template;
 	},
 	15
@@ -72,7 +66,7 @@ add_filter(
 
 #### Opting Out of Series Content Injection
 
-By default, the Series page displays a list of events related to the series. If you’d prefer to opt out and prevent this list from being displayed, you can use the follwoing filter that allows you to disable the automatic injection of the series content into 
+By default, the Series page displays a list of events related to the series. If you’d prefer to opt out and prevent this list from being displayed, you can use the following filter that allows you to disable the automatic injection of the series content into 
 ```
 the_content
 ```
@@ -160,7 +154,6 @@ add_filter( 'tribe_events_register_series_type_args',
 			function ( $args ) {
 				$args['rewrite']         = isset( $args['rewrite'] ) ? $args['rewrite'] : [];
 				$args['rewrite']['slug'] = 'new-series-slug';
-
 				return $args;
 			}
 		);

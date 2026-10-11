@@ -989,7 +989,7 @@ We generally recommend disabling that option because it can lead to unintended e
 
 #### Plugins paths
 
-The server paths for each of our plugins are outlined below for your reference when configuring Autopimize settings for CSS and JavaScript.
+The server paths for each of our plugins are outlined below for your reference when configuring Autoptimize settings for CSS and JavaScript.
 
 | Plugin Name | Assets Folder |
 | --- | --- |
@@ -1037,7 +1037,6 @@ add_filter( 'autoptimize_filter_html_noptimize', function( $return, $content ) {
 	) {
 		return true;
 	}
-
 	return $return;
 }, 10, 2 );
 ```

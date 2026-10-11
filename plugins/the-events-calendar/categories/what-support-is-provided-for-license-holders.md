@@ -19,6 +19,17 @@ Alternatively, if you are looking for free support (for The Events Calendar, Eve
 
 We do not currently provide [phone-based support](https://docs.nexcess.com/software/the-events-calendar/why-we-dont-offer-phone-support/). If you need assistance, our Help Desk is the best and fastest place to seek help.
 
+We have decided to keep our support online for several reasons:
+
+- **Efficiency.** We can troubleshoot issues, and we don’t need to put you on hold.
+- **Sharing information.** Many support requests require sharing details that are tough to transmit over a phone, like screenshots, links, code snippets and details about your system setup.
+- **Keeping records.** We want to be sure that useful information doesn’t get lost and we can use it as a reference for future support requests.
+- **Transparency and team effort.** We can join forces with our entire team to troubleshoot complex issues quickly.
+- **Better quality.** We work remotely around the globe across multiple time zones to better serve you. We value flexible working times with a great work/life balance to ensure that we are more focused and productive.
+- **Global clients.**By providing a text-based solution for support, our clients can use text translation tools as needed and understand responses.
+
+While we may not be available by phone, we are ready and looking forward to helping you in our [Help Desk](https://support.theeventscalendar.com/submit_ticket).
+
 **The Events Calendar plugin support covers help with setting up the latest version of the product and direction on how to use the latest version of the product as advertised.** Our support service does not cover help with theme or plugin customization beyond the advertised features (see examples of support vs. customization below), nor does it cover help on sites that are heavily customized or in situations where the core plugin files have been modified. **Please note that we cannot provide support to users who refuse to follow our troubleshooting steps.**
 
 It is also worth noting that we cannot assist with the setup and installation of both staging and live sites. We can help you set up The Events Calendar plugins but cannot provide services for general website setup.

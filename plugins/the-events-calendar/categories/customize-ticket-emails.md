@@ -38,24 +38,18 @@ This can be useful when you want to block email notifications for certain events
 
 ```
 <?php //Do not copy this line
-
 add_filter( 'tec_tickets_emails_dispatcher_to', function ( $to, $dispatcher ) {
-
 	// Event IDs for which the email should not be sent.
 	$excluded_event_ids = [ 123, 124, 125 ];
-
 	if ( ! function_exists( 'tribe_is_event' ) ) {
 		return $to;
 	}
-
 	$email    = $dispatcher->get_email();
 	$event_id = $email->get( 'post_id' );
-
 	// Check if it's an event and is in the excluded event list.
 	if ( tribe_is_event( $event_id ) && in_array( $event_id, $excluded_event_ids, true ) ) {
 		return null;
 	}
-
 	return $to;
 }, 10, 2 );
 ```
@@ -94,35 +88,28 @@ Add the following PHP code to the site to be able to use
 
 ```
 <?php //Do not copy this line
-
 add_filter( 'tec_tickets_emails_completed-order_placeholders', function ( $placeholders, $id, $email ) {
 	// Ensure the email object contains attendees
 	$attendees = $email->get( 'attendees' );
-
 	if ( empty( $attendees ) || ! is_array( $attendees ) ) {
 		return $placeholders;
 	}
-
 	// Extract the first attendee's purchaser name and event ID
 	$first_attendee = reset( $attendees );
 	$purchaser_name = $first_attendee['purchaser_name'] ?? '';
 	$event_id       = $first_attendee['event_id'] ?? 0;
 	$event_title    = '';
-
 	// Retrieve event title if a valid event ID is available
 	if ( $event_id && ( $event = tribe_get_event( $event_id ) ) ) {
 		$event_title = $event->post_title ?? '';
 	}
-
 	// Add placeholders if values exist
 	if ( $purchaser_name ) {
 		$placeholders['{purchaser_name}'] = sanitize_text_field( $purchaser_name );
 	}
-
 	if ( $event_title ) {
 		$placeholders['{event_title}'] = sanitize_text_field( $event_title );
 	}
-
 	return $placeholders;
 }, 10, 3 );
 ```
@@ -267,7 +254,6 @@ If you want to include Outlook export links in Ticket and RSVP confirmation emai
  *
  * @see tribe_get_event() For the format of the event object.
  */
-
 $path = '/calendar/action/compose'; 
 $rrv  = 'addevent'; 
 $startdt = tribe_get_start_date($event->ID, true, 'c'); 
@@ -306,18 +292,14 @@ $base_url_outlookLive = 'https://outlook.live.com/owa/';
 $base_url_outlook365 = 'https://outlook.office.com/owa/'; 
 $url_outlookLive      = add_query_arg( $params, $base_url_outlookLive ); 
 $url_outlook365      = add_query_arg( $params, $base_url_outlook365 ); 
-
 ?>
 <tr>
 	<td class="tec-tickets__email-table-content-event-links-container">
 		<table role="presentation" class="tec-tickets__email-table-content-event-links-table">
 			<tr>
 				<td class="tec-tickets__email-table-content-event-links-table-data" align="center">
-
 					<?php $this->template( 'template-parts/body/event/links/ical' ); ?>
-
 					<?php $this->template( 'template-parts/body/event/links/gcal' ); ?>
-
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
@@ -327,7 +309,6 @@ $url_outlook365      = add_query_arg( $params, $base_url_outlook365 );
 					>
 						<?php echo esc_html_x( 'Add to Outlook Live', 'Button on Ticket Email', 'the-events-calendar' ); ?>
 					</a>
-
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
@@ -336,7 +317,6 @@ $url_outlook365      = add_query_arg( $params, $base_url_outlook365 );
 					>
 						<?php echo esc_html_x( 'Add to Outlook365', 'Button on Ticket Email', 'the-events-calendar' ); ?>
 					</a>
-
 				</td>
 			</tr>
 		</table>
@@ -359,14 +339,11 @@ With this simple snippet, you can add any email address to the BCC field of the 
 ```
 <?php
 //* Do NOT include the opening php tag, if there's already one.
-
 /**
 * Add a custom email address to the BCC field on all Event Tickets' RSVP ticket emails
 */
 add_filter( 'tec_tickets_emails_dispatcher_rsvp_headers', 'my_add_bcc_email_headers' );
-
 function my_add_bcc_email_headers( $headers ) {
-
 	$headers['Bcc'] = 'YOUR NAME <[email protected]>';
 	
 	return $headers;
@@ -378,51 +355,39 @@ To add event organizers to the BBC for the RSVP Email you can use this modified 
 ```
 <?php
 //* Do NOT include the opening php tag, if there's already one.
-
 /**
  * Add the event organizer to the BCC field on the Event Tickets' RSVP ticket emails.
  */
 add_filter( 'tec_tickets_emails_dispatcher_rsvp_headers', 'my_add_bcc_email_organizers_headers', 10, 2 );
-
 function my_add_bcc_email_organizers_headers( $headers, $dispatcher ) {
 	$email   = $dispatcher->get_email();
 	$post_id = $email->get( 'post_id' );
-
 	if ( ! $post_id || ! function_exists( 'tribe_get_event' ) )  {
 		return $headers;
 	}
-
 	$event = tribe_get_event( $post_id );
-
 	if ( empty( $event ) ) {
 		return $headers;
 	}
-
 	// Bail, if there's no organizer set.
 	if ( ! tribe_has_organizer( $post_id ) ) {
 		return $headers;
 	}
-
 	// Get the organizers.
 	$organizers = tribe_get_organizer_ids( $post_id );
-
 	// Loop through the organizers.
 	foreach ( $organizers as $organizer_id ) {
 		// Get the organizer email address.
 		$organizer_email = stripslashes_deep( html_entity_decode( tribe_get_organizer_email( $organizer_id ), ENT_COMPAT, 'UTF-8' ) );
-
 		// Add the organizer email info to our emails array.
 		$emails[] = $organizer_email;
 	}
-
 	// Bail, if there are no organizer email addresses.
 	if ( empty( $emails ) ) {
 		return $headers;
 	}
-
 	// List the email addresses and add them to the BCC field.
 	$headers['Bcc'] = implode( ",", $emails );
-
 	return $headers;
 }
 ```
@@ -451,6 +416,49 @@ tec_tickets_emails_dispatcher_purchase-receipt_headers
 ```
 
 .
+
+## Modify Virtual Event Details in Ticket Emails
+
+When an event is virtual, its ticket emails include a Virtual Event section made up of three parts:
+
+- A heading with a small alert icon that reads “Virtual Event”
+- The virtual event link shown as text
+- A button pointing to the virtual event link
+
+You can change any of these, such as the wording, or remove the parts you don’t need, using a [Template Override](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/).
+
+#### Steps
+
+1. Start by making a copy of the following template file:
+
+```
+/wp-content/plugins/events-calendar-pro/src/views/integrations/event-tickets/emails/template-parts/body/virtual-event/link.php
+```
+
+2. Place the file in your theme at the following path:
+
+```
+/wp-content/themes/[your-theme]/tribe/events-virtual/integrations/event-tickets/emails/template-parts/body/virtual-event/link.php
+```
+
+3. In this example, we’ll be modifying the “Virtual Event” heading. In the copied file, locate the following line:
+
+```
+<?php echo esc_html_x( 'Virtual Event', 'Link to Virtual Event on the Ticket Email', 'tribe-events-calendar-pro' ); ?>
+```
+
+4. Replace 
+```
+Virtual Event
+```
+
+ with your own wording, for example:
+
+```
+<?php echo esc_html_x( 'Join Online', 'Link to Virtual Event on the Ticket Email', 'tribe-events-calendar-pro' ); ?>
+```
+
+That’s all it takes! Your attendees will now see the virtual event details exactly as you’ve customized them.
 
 ## Reference For Developers
 
