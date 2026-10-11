@@ -2,8 +2,8 @@
   "plugin_slug": "custom-post-type-ui",
   "plugin_name": "Custom Post Type UI",
   "documentation_url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/",
-  "last_scraped": "2026-10-04T06:02:08.103Z",
-  "total_pages": 78,
+  "last_scraped": "2026-10-11T04:37:38.430Z",
+  "total_pages": 79,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,12 @@
       "slug": "uncategorized",
       "url": "https://docs.pluginize.com/collection/81-custom-post-type-ui/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 78,
+      "page_count": 79,
       "pages": [
+        {
+          "title": "WP Search with Algolia 3.0.0: Migrating Custom Code from Algolia SDK v3 to v4",
+          "url": "https://docs.pluginize.com/article/wp-search-with-algolia-3-0-0-migrating-custom-code-from-algolia-sdk-v3-to-v4/"
+        },
         {
           "title": "Example Instantsearch Widgets with WooCommerce Attributes.",
           "url": "https://docs.pluginize.com/article/example-instantsearch-widgets-with-woocommerce-attributes/"

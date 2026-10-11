@@ -4,6 +4,239 @@
 
 ---
 
+## WP Search with Algolia 3.0.0: Migrating Custom Code from Algolia SDK v3 to v4
+
+**Source:** [https://docs.pluginize.com/article/wp-search-with-algolia-3-0-0-migrating-custom-code-from-algolia-sdk-v3-to-v4/](https://docs.pluginize.com/article/wp-search-with-algolia-3-0-0-migrating-custom-code-from-algolia-sdk-v3-to-v4/)
+
+# Summary
+
+WP Search with Algolia 3.0.0 upgrades its bundled Algolia PHP SDK from **version 3 to version 4**. This is a breaking upgrade of Algolia’s own client library — not something specific to this plugin — and it changes how the SDK is imported and called throughout.
+
+If your theme or custom code calls the Algolia PHP SDK directly (rather than only through the plugin’s own settings/UI), you will need to update that code. This document explains what changed and how to update it.
+
+**Official Algolia reference:** [Upgrade the PHP API client to version 4](https://www.algolia.com/doc/libraries/sdk/upgrade/php)
+
+## Why this happened
+
+Algolia generates its v4 clients from OpenAPI specifications for consistency across all their SDKs (PHP, JS, Python, etc.). As part of that regeneration, Algolia:
+
+1. Moved the 
+```
+SearchClient
+```
+
+ class into a new 
+```
+Api
+```
+
+ namespace.
+2. Removed the old 
+```
+initIndex()
+```
+
+ / index-object pattern entirely.
+3. Moved every index-level method onto the main 
+```
+$client
+```
+
+, with the index name passed in as a parameter instead.
+
+This plugin’s bundled copy of the SDK is namespace-prefixed (to avoid conflicts with other plugins), so the same structural change shows up under the plugin’s own namespace:
+
+|  | v3 (2.14.1 and earlier) | v4 (3.0.0+) |
+| --- | --- | --- |
+| Namespace root | Algolia\AlgoliaSearch | Algolia\AlgoliaSearch |
+| As bundled by this plugin | WebDevStudios\WPSWA\Algolia\AlgoliaSearch\SearchClient | WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Api\SearchClient |
+
+## Step 1 — Update the import
+
+```
+// Before (SDK v3 / plugin 2.14.1)
+use WebDevStudios\WPSWA\Algolia\AlgoliaSearch\SearchClient;
+
+// After (SDK v4 / plugin 3.0.0+)
+use WebDevStudios\WPSWA\Algolia\AlgoliaSearch\Api\SearchClient;
+```
+
+Client creation itself didn’t change — 
+```
+SearchClient::create( $appId, $apiKey )
+```
+
+ still works the same way.
+
+## Step 2 — Remove the initIndex() pattern
+
+This is the biggest functional change. In v3, you got an “index object” and called methods on it. In v4, there is no index object — every method lives on 
+```
+$client
+```
+
+ directly, and you pass the index name as the first argument.
+
+```
+// v3
+$index = $client->initIndex( 'INDEX_NAME' );
+$index->search( 'QUERY' );
+
+// v4
+$client->searchSingleIndex( 'INDEX_NAME', [ 'query' => 'QUERY' ] );
+```
+
+v4 methods accept either a model class or a plain associative array for parameters — arrays are perfectly fine and are the simplest option when migrating existing code.
+
+## Common method renames (v3 → v4)
+
+| v3 ($index->...) | v4 ($client->..., 'INDEX_NAME', ...) |
+| --- | --- |
+| $index->search('QUERY') | $client->searchSingleIndex('INDEX_NAME', ['query' => 'QUERY']) |
+| $index->getObject($id) | $client->getObject('INDEX_NAME', $id) |
+| $index->saveObject($obj) | $client->saveObject('INDEX_NAME', $obj) |
+| $index->saveObjects($objs) | $client->saveObjects('INDEX_NAME', $objs) |
+| $index->partialUpdateObject($obj) | $client->partialUpdateObject('INDEX_NAME', $id, $obj) |
+| $index->deleteObject($id) | $client->deleteObject('INDEX_NAME', $id) |
+| $index->deleteObjects($ids) | $client->deleteObjects('INDEX_NAME', $ids) |
+| $index->getSettings() | $client->getSettings('INDEX_NAME') |
+| $index->setSettings($settings) | $client->setSettings('INDEX_NAME', $settings) |
+| $index->exists() | $client->indexExists('INDEX_NAME') |
+| $index->clearObjects() | $client->clearObjects('INDEX_NAME') |
+| $index->searchForFacetValues($facet, $q) | $client->searchForFacetValues('INDEX_NAME', $facet, ['facetQuery' => $q]) |
+| $client->multipleQueries([...]) | $client->search((new SearchMethodParams())->setRequests([...])) |
+| $client->copyIndex($src, $dst) | $client->operationIndex($src, ['operation' => 'copy', 'destination' => $dst]) |
+| $index->saveObjects($records)->wait() | $response = $client->saveObjects(...); $client->waitForTask('INDEX_NAME', $response['taskID']); |
+
+This is a shortened, practical list. For the full method-by-method reference table covering every API client (Search, Recommend, A/B Testing, Analytics, etc.), see Algolia’s own guide: **https://www.algolia.com/doc/libraries/sdk/upgrade/php**
+
+## A note on this plugin’s own backward-compatibility shim
+
+As of 3.0.0, this plugin ships an internal adapter (
+```
+Algolia_Index_Legacy_Client_Adapter
+```
+
+) that lets code calling 
+```
+Algolia_Index::get_index()->someMethod(...)
+```
+
+ **through the plugin’s own objects** keep working for methods that kept their original name in v4 (like 
+```
+getObject
+```
+
+, 
+```
+saveObject
+```
+
+, 
+```
+setSettings
+```
+
+). It automatically forwards the call to the real v4 client and inserts the index name for you.
+
+This shim only covers code that goes through the plugin’s own 
+```
+Algolia_Index
+```
+
+ wrapper — **it does not apply** if your code instantiates the raw SDK 
+```
+SearchClient
+```
+
+ directly (as in the reported issue), and it does not cover v4 methods that were renamed (like 
+```
+search
+```
+
+ → 
+```
+searchSingleIndex
+```
+
+, 
+```
+exists
+```
+
+ → 
+```
+indexExists
+```
+
+).
+
+## Recommended approach going forward
+
+Rather than importing the plugin’s internal, namespace-prefixed SDK classes directly in theme code, use the plugin’s own public accessor so future SDK upgrades don’t break your theme again:
+
+```
+global $algolia;
+
+$client = $algolia->get_api()->get_client();
+
+if ( $client ) {
+    $results = $client->searchSingleIndex( 'INDEX_NAME', [ 'query' => 'QUERY' ] );
+}
+```
+
+This returns an already-configured 
+```
+SearchClient
+```
+
+ instance (using the site’s stored App ID + API key), without your code needing to know the internal vendor namespace at all.
+
+## Server requirement reminder
+
+WP Search with Algolia 3.0.0 also requires **PHP 8.1 or higher** (a requirement of the new SDK itself). Please confirm this before re-applying the update.
+
+## Summary checklist
+
+1. Update any 
+```
+use ... SearchClient;
+```
+
+ imports to add 
+```
+\Api\
+```
+
+ before 
+```
+SearchClient
+```
+
+.
+2. Replace every 
+```
+$index = $client->initIndex(...); $index->method(...)
+```
+
+ with 
+```
+$client->method('INDEX_NAME', ...)
+```
+
+.
+3. Check method names against the rename table above (or the full official table).
+4. Prefer 
+```
+global $algolia; $algolia->get_api()->get_client();
+```
+
+ over importing the plugin’s internal SDK classes directly.
+5. Confirm PHP 8.1+ on the server.
+6. Full official reference: https://www.algolia.com/doc/libraries/sdk/upgrade/php
+
+---
+
 ## Example Instantsearch Widgets with WooCommerce Attributes.
 
 **Source:** [https://docs.pluginize.com/article/example-instantsearch-widgets-with-woocommerce-attributes/](https://docs.pluginize.com/article/example-instantsearch-widgets-with-woocommerce-attributes/)
