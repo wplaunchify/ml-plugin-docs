@@ -4638,6 +4638,16 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/](https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/)
 
+## 1.13.4 (6 Oct 2026)
+
+- Update: Optimized customer avatar fetching for stores with a large amount of customers
+- Update: Minor interface styling tweaks for customer initials avatar
+- Update: Improved user switch security by ensuring requester and POS user have the same capabilities
+- Update: Improved edit customer security by ensuring the customer has a role chosen in the plugin settings and prevent editing users with administrative privileges
+- Update: Three (3) failed PIN attempts disables user switching for the requesting user until an administrator grants the capability again
+- Update: Checks for failed PIN attempts expire 24 hours after the latest failure or on a successful user switch
+- Update: Optimizations to customer, products and orders list for stores with large amounts of data
+
 ## 1.13.1 (29 Sep 2026)
 
 - New: Added interface for managing POS user roles and capabilities
