@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11T06:56:36.063Z",
+  "last_updated": "2026-10-11T07:00:07.653Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3387,7 +3387,7 @@
       "slug": "wp-file-manager",
       "name": "WP File Manager",
       "documentation_url": "https://filemanagerpro.io/article/",
-      "last_scraped": "2026-10-04T08:43:21.731Z",
+      "last_scraped": "2026-10-11T07:00:07.653Z",
       "page_count": 39,
       "categories": [
         "aws-s3-integration",
