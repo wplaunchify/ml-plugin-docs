@@ -4,7 +4,7 @@
 
 ---
 
-## Using AffiliateWP With AI Assistants
+## Using AffiliateWP with AI assistants
 
 **Source:** [https://affiliatewp.com/docs/using-affiliatewp-with-ai-assistants/](https://affiliatewp.com/docs/using-affiliatewp-with-ai-assistants/)
 
@@ -15783,7 +15783,7 @@ AffiliateWP doesn’t currently support CRM platforms out of the box, however we
 
 [Take a look at our supported integrations](/doc-categories/integrations/) to see if there is a plugin that will suit your business or website needs.
 
-Alternatively, you may wish to investigate some custom development to integrate AffiliateWP with your specific CRM system. We [maintain a list](https://affiliatewp.com/consultants/) of trusted 3rd-party developers who may be able to help.
+Alternatively, with a Pro license the [Zapier addon](/docs/zapier-for-affiliatewp-installation-and-usage/) can send your affiliates and referrals to any CRM that Zapier connects to. A developer can also build a custom integration with the [AffiliateWP REST API](/docs/rest-api-v1-setup-and-usage/).
 
 ---
 
