@@ -4282,7 +4282,7 @@ We have integrations available for displaying custom field data created with the
 wp-config.php
 ```
 
- file. This might be useful when you have a developer license and want to automatically activate Admin Columns Pro for every site you create.
+  file. This is useful when you manage many sites with one license, or when you don't want the key to be editable from the WordPress admin
 
 1. Add the following code in your wp-config file.  
 ```
@@ -4290,12 +4290,31 @@ define( 'ACP_LICENCE', 'YOUR KEY HERE' );
 ```
 
   ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/59baca8e2c7d3a73488cdf4c/images/5f3fadee2c7d3a352e912d23/file-Jjgj6UXWtv.png)
-2. Your license validation will be done periodically, but you can force this process by clicking the **Check license**button on the settings page.
+   
+
+   *Note the spelling: ACP_LICENCE, not ACP_LICENSE.*
+2. Defining the key does not activate the site on its own. Go to the License tab of Admin Columns Pro. The key from wp-config.php appears there in a read-only field. Click Activate License to register the site.
   
 
-  ![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/59baca8e2c7d3a73488cdf4c/images/5f32a4f5042863444aa026f1/file-5Ri25E3eV7.png)
+  
 
-Keep in mind that **if you move from another (staging/development/accept) environment to the production environment**, it may lead to unexpected behavior. A license check is done periodically and it checks for the requesting domain, so when this somehow changed, automatic updates and integration downloads are not available because of an invalid domain/license validation. Then you need to visit the settings tab and **re-activate your license**.
+  You only need to do this once per site. After that, the license is checked automatically every day.
+
+**Changing or removing the key**
+
+Once a site is activated, it keeps using its activation, and changing the constant has no effect. To switch to a different key, first click Deactivate License on the License tab, update the constant,
+
+then click Activate License again.
+
+**Copying a site to staging or development**
+
+A copy of your site on a staging, test or development URL keeps working without any action. It uses the activation of the site it was copied from, so you don't need to activate it again and it doesn't use an extra site from your license. Copying the site back to production is also safe.
+
+Don't click Deactivate License on a staging copy. It won't affect your live site, but the copy loses its license data, and pushing that copy back to production would take the deactivated state along.
+
+**Moving a site to a new production domain**
+
+A site on a new live domain needs its own activation. Go to the License tab and click Activate License. If the key is defined with ACP_LICENCE, it is already filled in.
 
 ---
 

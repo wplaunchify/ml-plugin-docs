@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T03:41:56.763Z",
+  "last_updated": "2026-10-18T03:48:53.937Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -17,7 +17,7 @@
       "slug": "admin-columns-pro",
       "name": "Admin Columns Pro",
       "documentation_url": "https://docs.admincolumns.com/",
-      "last_scraped": "2026-10-11T03:56:38.191Z",
+      "last_scraped": "2026-10-18T03:48:53.937Z",
       "page_count": 77,
       "categories": [
         "article"
