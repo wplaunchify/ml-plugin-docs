@@ -6281,7 +6281,7 @@ To see even more details, click on **View License Keys, Details, and Downloads*
 
 You can also access this screen by clicking on the **Downloads** tab at the top of your account page. On the Downloads page, you’ll see your license type at the top, followed by your license key and renewal date.
 
-![AffiliateWP account](https://affiliatewp.com/wp-content/uploads/2024/08/affiliatewp-account-landing-page-1024x503.png)
+![AffiliateWP account](https://affiliatewp.com/wp-content/uploads/2024/08/affiliatewp-account-landing-page.png)
 
 Here, you can copy your license key by clicking on the clipboard icon.
 
@@ -14116,7 +14116,7 @@ If you need to modify an affiliate’s custom slug, go to the **AffiliateWP » A
 
 When adding a new affiliate, you can specify a custom slug directly from the **Add New Affiliate** screen. Go to **AffiliateWP » Affiliates** and click the **Add New** button. After selecting the user and filling in the necessary details, enter the custom slug in the **Custom Slug** field.
 
-![Add affiliate custom slug](https://affiliatewp.com/wp-content/uploads/2021/11/new-custom-slug-1024x147.png)
+![Add affiliate custom slug](https://affiliatewp.com/wp-content/uploads/2021/11/new-custom-slug.png)
 
 If no slug is entered, and you have enabled the **Auto-create Custom Slugs** option, a slug will automatically be generated.
 
@@ -18089,7 +18089,7 @@ Here, you can set the recurring referral rate and limit the number of recurring 
 
 To enable affiliate coupon tracking, navigate to **Memberships » Settings » Discount Codes** in your WordPress dashboard and create a new discount code. At the bottom of the form, you’ll find an input field labeled **Affiliate Discount**. Begin typing the name of the affiliate you wish to link to the discount code, then select the affiliate from the list of user accounts.
 
-![Paid Memberships Pro Affiliate coupon tracking](https://affiliatewp.com/wp-content/uploads/2024/08/affiliate-discount-4-1024x483.png)
+![Paid Memberships Pro Affiliate coupon tracking](https://affiliatewp.com/wp-content/uploads/2024/08/affiliate-discount-4.png)
 
 When a customer redeems this discount code and completes a purchase or conversion, the connected affiliate will automatically be awarded a referral.
 
