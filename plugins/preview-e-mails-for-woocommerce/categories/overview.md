@@ -52,7 +52,11 @@ You can now send test mails, to test on actual devices
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/2e99b971332c7b8cf635a7f220d9b78c37d8c802d04f5156cf1199f4650e0d44?s=60&d=retro&r=g)### Simply works great
+	![](https://secure.gravatar.com/avatar/57d6811781efe181bc7a35d8ccf8e47e377b1dbac2696e9f25e21baddcafdb66?s=60&d=retro&r=g)### Працює, як задумано 🙂
+							[Stepan WP](https://profiles.wordpress.org/stepanwp/)
+								October 14, 2026
+						Плагін виручає, коли треба перевірити зовнішній вигляд емайл листа. Плагін справляється зі своєю задачею. Рекомендую!
+							![](https://secure.gravatar.com/avatar/2e99b971332c7b8cf635a7f220d9b78c37d8c802d04f5156cf1199f4650e0d44?s=60&d=retro&r=g)### Simply works great
 							[Jory Hogeveen](https://profiles.wordpress.org/keraweb/)
 								April 9, 2025
 						Does what it says. Simple and just works.
@@ -74,12 +78,8 @@ Thank you!
 							[Nagesh Pai](https://profiles.wordpress.org/nagpai/)
 								August 28, 2023
 						This is a super helpful plugin while customizing email templates within WooCommerce. A great addition to a Woo theme designer's toolkit! Big thanks to the author for making this available!
-							![](https://secure.gravatar.com/avatar/d5d85d79f79baba4f5b9a619c51000a67c90c4a228473a9b3d30773859ec200e?s=60&d=retro&r=g)### Just what I need
-							[Skylabb](https://profiles.wordpress.org/skylabb/)
-								August 16, 2023
-						This plugin is just what I need to quickly view woocommerce notification emails the testing and development purposes. It works as expected. Thank you for the great work on this plugin.
 
-		[Read all 84 reviews](https://wordpress.org/support/plugin/woo-preview-emails/reviews/)
+		[Read all 85 reviews](https://wordpress.org/support/plugin/woo-preview-emails/reviews/)
 
 ## Contributors & Developers
 
