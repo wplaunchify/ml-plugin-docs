@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T18:44:46.397Z",
+  "last_updated": "2026-10-18T18:53:55.881Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1806,8 +1806,8 @@
       "slug": "kadence-simple-share",
       "name": "Kadence Simple Share",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-      "last_scraped": "2026-10-11T18:57:40.619Z",
-      "page_count": 24,
+      "last_scraped": "2026-10-18T18:53:55.881Z",
+      "page_count": 23,
       "categories": [
         "add-edit-wordpress-menus",
         "author-link-settings",
@@ -1828,7 +1828,6 @@
         "the-package-could-not-be-installed-no-valid-plugins-were-found",
         "the-package-could-not-be-installed-the-theme-is-missing-the-style-css-stylesheet",
         "troubleshooting-optimization-caching-plugins",
-        "upgrade-your-kadence-purchase",
         "what-is-page-speed-insights",
         "what-is-wordpress",
         "white-label",

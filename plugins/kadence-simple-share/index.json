@@ -2,9 +2,9 @@
   "plugin_slug": "kadence-simple-share",
   "plugin_name": "Kadence Simple Share",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-general/",
-  "last_scraped": "2026-10-11T18:57:40.619Z",
-  "total_pages": 24,
-  "failed_urls_count": 3,
+  "last_scraped": "2026-10-18T18:53:55.878Z",
+  "total_pages": 23,
+  "failed_urls_count": 4,
   "sections": [
     {
       "title": "Add Edit Wordpress Menus",
@@ -250,19 +250,6 @@
         {
           "title": "Troubleshooting Broken Styles/Features when using Optimization/Caching Plugins",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-general/troubleshooting-optimization-caching-plugins/"
-        }
-      ]
-    },
-    {
-      "title": "Upgrade Your Kadence Purchase",
-      "slug": "upgrade-your-kadence-purchase",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/upgrade-your-kadence-purchase/",
-      "file": "categories/upgrade-your-kadence-purchase.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Upgrade Your License",
-          "url": "https://www.kadencewp.com/help-center/docs/kadence-general/upgrade-your-kadence-purchase/"
         }
       ]
     },

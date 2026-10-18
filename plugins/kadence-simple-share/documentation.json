@@ -1,12 +1,13 @@
 {
   "plugin_slug": "kadence-simple-share",
   "plugin_name": "Kadence Simple Share",
-  "last_scraped": "2026-10-11T18:57:40.617Z",
-  "total_pages": 24,
+  "last_scraped": "2026-10-18T18:53:55.875Z",
+  "total_pages": 23,
   "failed_urls": [
     "https://www.kadencewp.com/help-center/docs/kadence-general/license-activation-and-renewal/",
     "https://www.kadencewp.com/help-center/docs/kadence-general/my-account-page/",
-    "https://www.kadencewp.com/help-center/docs/kadence-general/renew-your-subscription-early/"
+    "https://www.kadencewp.com/help-center/docs/kadence-general/renew-your-subscription-early/",
+    "https://www.kadencewp.com/help-center/docs/kadence-general/upgrade-your-kadence-purchase/"
   ],
   "pages": [
     {
@@ -226,14 +227,6 @@
         "aos.min.css?",
         "/wp-content/plugins/kadence-blocks-pro/includes/assets/css/aos.min.css?ver=2.6.2"
       ]
-    },
-    {
-      "title": "How to Upgrade Your License",
-      "url": "https://www.kadencewp.com/help-center/docs/kadence-general/upgrade-your-kadence-purchase/",
-      "category": "Upgrade Your Kadence Purchase",
-      "content": "**Coming soon:** Iconic is becoming part of Kadence Shop Kit. You may see both names used while we update the product, documentation, and customer experience.\n\nThis article will walk you through the steps involved in upgrading your license.\n\n**To upgrade your license, follow these steps:**\n\n1. Login to your Iconic account here: [https://my.iconicwp.com/](https://my.iconicwp.com/)\n\n![my account login iconic](https://docs.nexcess.com/wp-content/uploads/2026/06/my-account-iconic-1024x532-1.png)\n\n1. If you can’t remember your password, all you’ll need to do is click the ‘Help, I can’t sign in’ link on the login page. Once clicked, you’ll be able to reset your password.\n2. Once you’ve logged in, click on the **Subscriptions** link in the left-hand sidebar. Here, you’ll see all your current Iconic plugin subscriptions.\n\n![my account page iconic](https://docs.nexcess.com/wp-content/uploads/2026/06/my-account-page-iconic.png)\n\n1. Click the **Manage** link on the right.\n\n![subscriptions page iconic account area](https://docs.nexcess.com/wp-content/uploads/2026/06/subscriptions-page-iconic-account-area-1024x565-1.png)\n\n1. The next page will give you some more details on your subscriptions, including an **Upgrade or Downgrade** link that you can click to switch your subscription.\n\n![upgrade or renew iconic](https://docs.nexcess.com/wp-content/uploads/2026/06/upgrade-or-renew-iconic-1024x575-1.png)",
-      "headings": [],
-      "code_blocks": []
     },
     {
       "title": "What is Page Speed Insights?",
