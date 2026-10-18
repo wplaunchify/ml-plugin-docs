@@ -12,6 +12,57 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCart.
 
+## FluentCart v2.1.0 ​
+
+*Released on Oct 15, 2026*
+
+✨ Newly Added🚀 Improvements🐞 Bug fixesmarkdown
+```
+• Adds product comparison report
+• Adds Checkout Field Label styles with Docked, Floating, and Placeholder-only options
+```markdown
+```
+• Enhances Full Report system with multi-currency support
+```markdown
+```
+• Fixes Stripe billing Address updates on subscription reactivation
+```
+## FluentCart v2.0.0 ​
+
+*Released on Oct 14, 2026*
+
+✨ Newly Addedmarkdown
+```
+• Adds Multi-Currency (Beta), sell in multiple currencies with exchange rates, rounding, charm pricing, and a currency switcher
+```
+## FluentCart v1.9.0 ​
+
+*Released on Oct 13, 2026*
+
+✨ Newly Added🐞 Bug fixesmarkdown
+```
+• Adds On-page checkout with custom product selection, single or multiple selection, live totals, selection limits, and separate carts via the Checkout Page block or [fluent_cart_checkout] shortcode.
+```markdown
+```
+• Fixes Search bar clear button border and spacing above search result headings.
+• Fixes Rating summary stacked issue
+```
+## FluentCart v1.8.0 ​
+
+*Released on Oct 12, 2026*
+
+✨ Newly Added🐞 Bug fixesmarkdown
+```
+• Adds Dynamic Pricing
+• Adds Named discounts in checkout summaries, original price strikethroughs at checkout, on thank-you pages, and in order emails, plus pricing permissions
+• Adds Review sources for selected or all products in review blocks, combined ratings, and shortcode filtering by product or category
+```markdown
+```
+• Fixes Missing shipping tax when saved billing addresses fill checkout
+• Fixes Paddle resync treating payment method changes as renewals
+• Fixes Duplicate VAT in tax-inclusive ZUGFeRD e-invoices and the Seller VAT ID in PDF receipts
+• Fixes Refunded licenses reactivating after subscription updates
+```
 ## FluentCart v1.7.1 ​
 
 *Released on Oct 8, 2026*

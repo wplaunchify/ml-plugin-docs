@@ -138,6 +138,7 @@ This glossary defines common terms used throughout the FluentCart documentation 
 - **Checkout Action:** An automation that triggers during the checkout process. It is used to connect FluentCart to other services, such as adding a customer to a specific list in FluentCRM. Also referred to as a **Feed**.
 - **Compare at price:** An optional, higher price shown with a strikethrough next to the actual selling price. This is used to visually indicate a sale or discount.
 - **Coupon:** A promotional code that customers can enter at checkout to receive a discount, such as a fixed amount or a percentage off their order total.
+- **Dynamic Pricing:** A FluentCart Pro feature that automatically applies discounts or fees at checkout when a cart meets conditions you set, such as quantity, subtotal, customer, or payment method. Rules can apply to line items, the checkout total, or shipping, and can be scheduled.
 - **Currency Settings:** The global settings that define the store's primary currency, symbol, formatting, and decimal precision for all product prices and reports.
 - **Customer:** An individual who has made a purchase from your store. FluentCart creates and maintains a profile for each customer, tracking their contact information and order history.
 - **Customer Lifetime Value (CLV):** A key metric available in FluentCart's analytics that shows the total revenue a business can reasonably expect from a single customer account throughout their entire relationship with your store.

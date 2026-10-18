@@ -27,6 +27,7 @@ This section covers the following critical areas:
 - **Storage Settings:** Configure where your digital product files and other assets are stored, including local and cloud (S3) options.
 - **Licensing Settings (FluentCart Product License):** Activate your FluentCart plugin license key to ensure regular updates and access to premium features.
 - **Compliance Settings:** Control whether customers must confirm their email address, and whether new accounts are logged in automatically.
+- **Multi Currency Settings:** Let customers pay in other currencies, with exchange rates, price adjustments, rounding, and control over how long a cart keeps the previous rate.
 
 By thoroughly configuring these settings, you can ensure your FluentCart store runs exactly as you intend.
 
@@ -851,7 +852,7 @@ All send times use your **store timezone**, not the server time. Test emails are
 
 Every digest opens with your store name, the digest type, and the date range it covers. The body reports the same figures as your Reports dashboard for that period:
 
-- **Headline metrics:** Gross Sales, Net Revenue, Orders, Items Sold, and Refunds, each with the change compared to the previous period.
+- **Headline metrics:** Gross Sales, Revenue, Orders, Items Sold, and Refunds, each with the change compared to the previous period.
 - **Order breakdown:** One-time orders, new subscriptions, and renewals, with their counts and revenue.
 - **Top products:** Your best-selling products for the period by units sold.
 - **View full reports:** A button that opens the full [Reports dashboard](/guide/reporting-analytics/reports-dashboard-overview) inside your store.
@@ -924,7 +925,15 @@ A dedicated inventory workspace for stores that need more than per-product stock
 - **When Inactive:** The Inventory admin menu is hidden and no adjustment history is recorded. Per-product stock still works through the basic [Inventory Management](/guide/product-types-creation/inventory-management) screen.
 - **When Active:** See [Advanced Inventory](/guide/product-types-creation/advanced-inventory) for the full workflow.
 
-### 6. MCP (AI Assistant Access) ​
+### 6. Dynamic Pricing ​
+
+Automatic discounts and fees based on rules you define.
+
+- **Function:** Adds a **Dynamic Pricing** entry to the **More** menu, where you create rules that discount or add fees to line items, the checkout total, or shipping when a cart meets your conditions. See [Dynamic Pricing](/guide/marketing-sales-tools/dynamic-pricing) for creating and managing rules.
+- **Requirements:** FluentCart Pro. The module ships off.
+- **When Inactive:** The menu item is hidden and no rules are applied at checkout.
+
+### 7. MCP (AI Assistant Access) ​
 
 This module exposes a secure endpoint that lets AI assistants like Claude, Cursor, and Codex connect to your store.
 
@@ -1497,6 +1506,130 @@ Refunding an order and canceling a subscription are **two-step actions**. The as
 
 ---
 
+## Multi Currency Settings ​
+
+**Source:** [https://docs.fluentcart.com/guide/settings-configuration/multi-currency-settings](https://docs.fluentcart.com/guide/settings-configuration/multi-currency-settings)
+
+# Multi Currency Settings ​
+
+Multi Currency lets customers see prices and pay in the currency they prefer, while you keep managing every product in one base currency. You set the exchange rate for each currency, decide how the converted prices should look, and FluentCart handles the conversion at checkout.
+
+INFO
+
+Multi Currency is a **FluentCart Pro** feature, and it is currently in **Beta**. Without Pro, the **Multi Currency** screen shows a Pro feature notice instead of the settings, and your store stays in its base currency. Only administrators can open and change these settings.
+## Accessing Multi Currency Settings ​
+
+To open the multi currency settings:
+
+1. From your WordPress dashboard, navigate to **FluentCart > Settings**.
+2. Select the **Multi Currency** tab from the left-hand sidebar.
+
+## Configuring Multi Currency ​
+
+### 1. Sell in More Than One Currency ​
+
+This card turns the feature on and shows the currency your prices are stored in.
+
+- **Enable multi-currency:** Turn this on to let customers choose a currency. Prices are kept in the base currency and converted at the rate you set. Each order keeps the rate it was placed at, and renewals keep it too. - While the switch is off, the card tells you that shoppers only see your base currency, and the rest of the screen stays hidden. Turn it on to add currencies and set their rates.
+- Once it is on, a line under the switch shows how customers pick a currency: the 
+```
+[fluent_cart_currency_switcher]
+```
+
+ shortcode, the Currency Switcher block, or the 
+```
+fct-currency-switcher-toggle
+```
+
+ class for a navigation menu. Click the copy icon beside the shortcode or the class to copy it, or click **See documentation** to open this guide.
+- **Base currency:** The currency your products are priced in. It is shown here for reference, and you change it in the **Checkout Currency** field under **FluentCart > Settings > Store Settings**. Beside the currency code, a **Change in Store Settings** link takes you there. - While multi-currency is enabled and orders exist, the base currency is locked. The card shows **Locked while multi-currency is enabled and orders exist**, the link is hidden, and the **Checkout Currency** field in Store Settings is disabled with a note. Turn multi-currency off to change the currency, because every exchange rate and report is measured in the base currency.
+
+INFO
+
+Turning the switch on does not show anything to customers by itself. You also need at least one extra currency with a rate (see **Currencies** below), and a way for customers to pick it. See [Adding a Currency Switcher](/guide/customization-and-themes/currency-switcher) for the options.
+### 2. Exchange Rates ​
+
+By default, you enter every rate yourself in the **Currencies** card, and the **Exchange rates** card stays hidden. The card appears when your store uses an automatic rate feed, such as the European Central Bank feed from FluentCart Pro.
+
+- **Exchange rates from:** Shows where each rate comes from. With **Enter rates manually**, a rate only changes when you edit it. With **European Central Bank (updated daily)**, FluentCart Pro fetches the euro foreign exchange reference rates from the European Central Bank and refreshes them once a day. The ECB publishes rates once per working day (not at weekends or on holidays), for about 30 currencies, at mid-market rates with no spread. A currency the ECB does not publish keeps its manual rate.
+- **Add a margin of:** *(Shown only for an automatic feed)* Enter a percentage from **0** to **10** that FluentCart adds to the fetched rates. Use it to cover the spread your payment gateway charges when it converts currencies.
+
+If a feed fails to update, prices keep using the last rate. When some rates have not updated for more than 3 days, a warning appears on this card. If an automatic rate suddenly jumps far from the previous one, FluentCart holds it back and records a warning in the activity log instead of using it.
+
+### 3. Currencies ​
+
+This card lists every extra currency you sell in, with its rate and pricing rules. A badge beside the title counts the currencies.
+
+Use the **Add currencies** dropdown at the top right of the card to add a currency. You cannot add your base currency, and currencies with three decimal places (such as KWD and BHD) are not supported. The new currency appears at the bottom of the list, ready for you to type its rate.
+
+Each row has these parts:
+
+- **Currency:** The currency code and its name.
+- **Rate for 1 USD:** How many units of this currency equal 1 unit of your base currency. The column heading shows your own base currency code. A rate of **0.79 GBP** means 1 USD equals 0.79 GBP, and the line underneath shows the reverse, for example **1 GBP = 1.2658 USD**.
+- **Pricing:** An example price in this currency, and a summary of the pricing rules (see below).
+- **Rate history** and **Remove:** The clock and trash icons at the right edge of the row.
+
+#### Setting a Rate ​
+
+A currency without a rate shows a **Needs a rate** tag and the note **Shoppers won't see CAD until it has a rate**, with a field to type the rate right there.
+
+To set the first rate, type it in the field after **1 USD =** and click **Set rate**.
+
+To change a rate that already exists:
+
+1. Click the pencil icon next to the rate.
+2. Type the new rate. While you type, FluentCart shows how far it moves from the current rate as a percentage.
+3. Click **Set rate** to save it, or **Cancel** to discard it. You can also press **Enter** to save and **Esc** to cancel.
+
+A rate must be greater than zero. Clicking **Set rate** saves the rate and your currency list together, so a currency you just added is not lost. If the rate saves but the currency list does not, a warning asks you to click **Save Settings** to keep the new currency.
+
+INFO
+
+A currency without a rate is not offered, and customers cannot choose it until you set one. A **Stale** tag marks a rate from a feed that has not updated for more than 3 days. Rates you enter manually are never marked stale.
+#### Pricing Rules ​
+
+Pricing rules decide how a converted price is shaped. They apply in this order: FluentCart converts the base price at the rate, adds your price adjustment, rounds up, and then applies the charm ending.
+
+Under **Pricing**, each row shows an **Example** that turns 100.00 in your base currency into the final price in that currency, followed by a summary such as **Adjustment +2% · Rounding Up to 0.50 · Charm End in .99**. Click the pencil icon at the end of the summary to open **Pricing rules** for that currency.
+
+- **Price adjustment:** A percentage added to (or taken off) the converted price, from **-50** to **100**. The default is **0**. Use it to add a small buffer for conversion costs or to price a market differently.
+- **Rounding:** Rounds the price up to a neat step. The default, **No rounding**, leaves the amount as it is. The other options are **Round up to** 0.05, 0.10, 0.25, 0.50, 1, 5, 10, 50, or 100.
+- **Charm pricing:** Adjusts the ending of the price after rounding. Choose **No charm pricing**, **End in .99 (take off 0.01)**, or **End in .95 (take off 0.05)**. Pair it with a whole-number rounding step, because it takes 0.01 or 0.05 off the rounded price.
+
+The **Example** updates as you change the rules, so you can check them before saving, and it uses the rate your customers get, including any margin. Click **Save** in the panel to store your changes.
+
+For example, take a 100.00 USD product with a Euro rate of 0.92, a **2.00** price adjustment, **Round up to 0.50**, and **End in .99 (take off 0.01)**. The price converts to 92.00 EUR, becomes 93.84 EUR after the adjustment, rounds up to 94.00 EUR, and the charm ending makes the customer price **93.99 EUR**.
+
+#### Rate History ​
+
+Click the clock icon on a currency row to see every rate that currency has had, newest first.
+
+- **Rate:** The rate that was set. The one in use now carries a **Current** badge.
+- **Change:** How far the rate moved from the one before it, in green for a rise and red for a fall. It reads **No change** when the rate stayed the same.
+- **Source:** Where the rate came from, such as **Manual** or the name of the rate feed.
+- **Effective:** The date and time the rate took effect.
+- **Set by:** The user who set it. A rate from a feed reads **Automatic**.
+
+#### Removing a Currency ​
+
+Click the trash icon on a currency row and confirm with **Remove**, then click **Save Settings**. Shoppers can no longer pick the currency, and orders already placed in it keep their own currency and rate.
+
+### 4. Rate Changes ​
+
+The **Rate changes** card controls how long converted prices stay at the previous rate after you change a rate.
+
+- **Keep converted prices at the previous rate for up to:** Enter a number of minutes from **0** to **1440**. The default is **0**, which uses a new rate at once. With a higher number, a cart priced before the change can keep the previous rate for that long, so a customer in the middle of checkout sees the price they were shown. After the time passes, the cart is priced again at the current rate.
+
+When you set a rate and a hold is active, the currency row shows **Converted prices may still use the previous rate for up to 30 more minutes**, counting down the time that is left.
+
+## Saving Your Settings ​
+
+After making changes, click the **Save Settings** button at the bottom right of the page, or the **Save** button at the top right. You can also press **Cmd+S** (**Ctrl+S** on Windows). Rates are the exception: they are saved the moment you click **Set rate**.
+
+Your store is now ready to show prices in more than one currency.
+
+---
+
 ## Pages Setup ​
 
 **Source:** [https://docs.fluentcart.com/guide/settings-configuration/pages-setup](https://docs.fluentcart.com/guide/settings-configuration/pages-setup)
@@ -1772,6 +1905,10 @@ FluentCart's **Roles and Permissions** system allows you to assign specific acce
 - **Manager:** "With All Permissions Except Sensitive Settings". This role can manage most aspects of the store but is restricted from critical configurations.
 - **Worker:** "View Access for products, customers, coupons, integretions." It also has "**Manage Access** for Order Statuses". This role is suitable for staff primarily involved in fulfillment and basic order updates.
 - **Accountant:** "View Access for products, customers, orders, subscriptions, licenses, coupons, reports and integrations". This role is designed for users who need to view financial and sales data without making operational changes.
+
+INFO
+
+With [Dynamic Pricing](/guide/marketing-sales-tools/dynamic-pricing) active, two permissions control it: **View Dynamic Pricing** and **Manage Dynamic Pricing**. Managers have both, and Workers can view rules but not change them.
 6. After selecting both the user and the role, click the **"Attach Role"** button within the modal to confirm the assignment.
 7. To cancel the process, click the **"Cancel"** button.
 
@@ -1866,9 +2003,11 @@ Below the address fields you'll find the **Business Details** block — your leg
 
 Configure the currency settings for your store's transactions.
 
-- **Checkout Currency:** The primary currency your products are priced in and payments are processed in. Pick from the dropdown.
+- **Checkout Currency:** The primary currency your products are priced in and payments are processed in. Pick from the dropdown. If you also want customers to pay in other currencies, this becomes your base currency. See [Multi Currency Settings](/guide/settings-configuration/multi-currency-settings). While multi-currency is enabled and orders exist, this field is disabled with a note that links to **Multi Currency** settings, because every exchange rate and report is measured in the base currency. Turn multi-currency off there to change it.
 - **Number Format:** Controls how numbers (especially prices) are displayed. Choose between **Comma & Dot (eg 10,000.00)** or **Dot & Comma (eg 10.000,00)** to match your locale.
 - **Currency Formatting:** Controls where the currency symbol or code appears relative to the amount. The dropdown includes options like **Symbol before (eg: $100)**, symbol after, and currency code formatting.
+
+The locked **Checkout Currency** field looks like this:
 
 ### 6. Payment View ​
 

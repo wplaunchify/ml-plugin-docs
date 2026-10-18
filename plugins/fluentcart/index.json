@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-10-11T04:54:08.062Z",
-  "total_pages": 169,
+  "last_scraped": "2026-10-18T04:48:40.550Z",
+  "total_pages": 177,
   "failed_urls_count": 5,
   "sections": [
     {
@@ -78,7 +78,7 @@
       "slug": "customization-and-themes",
       "url": "https://docs.fluentcart.com/guide/customization-and-themes/",
       "file": "categories/customization-and-themes.md",
-      "page_count": 16,
+      "page_count": 18,
       "pages": [
         {
           "title": "Advanced Customization with CSS Variables ​",
@@ -91,6 +91,10 @@
         {
           "title": "Code Snippets ​",
           "url": "https://docs.fluentcart.com/guide/customization-and-themes/code-snippets"
+        },
+        {
+          "title": "Adding a Currency Switcher ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/currency-switcher"
         },
         {
           "title": "Customize Store with Bricks ​",
@@ -127,6 +131,10 @@
         {
           "title": "Layout and Template Customization (Block Editor) ​",
           "url": "https://docs.fluentcart.com/guide/customization-and-themes/layout-template-customization"
+        },
+        {
+          "title": "On-Page Checkout Form ​",
+          "url": "https://docs.fluentcart.com/guide/customization-and-themes/on-page-checkout-form"
         },
         {
           "title": "Theme & Page Builder Compatibility ​",
@@ -237,7 +245,7 @@
       "slug": "marketing-sales-tools",
       "url": "https://docs.fluentcart.com/guide/marketing-sales-tools/",
       "file": "categories/marketing-sales-tools.md",
-      "page_count": 3,
+      "page_count": 5,
       "pages": [
         {
           "title": "Marketing & Sales Tools ​",
@@ -250,6 +258,14 @@
         {
           "title": "Adding Coupons ​",
           "url": "https://docs.fluentcart.com/guide/marketing-sales-tools/creating-managing-coupons/adding-coupons/"
+        },
+        {
+          "title": "Dynamic Pricing ​",
+          "url": "https://docs.fluentcart.com/guide/marketing-sales-tools/dynamic-pricing"
+        },
+        {
+          "title": "Dynamic Pricing Display Conditions ​",
+          "url": "https://docs.fluentcart.com/guide/marketing-sales-tools/dynamic-pricing-conditions"
         }
       ]
     },
@@ -477,11 +493,15 @@
       "slug": "reporting-analytics",
       "url": "https://docs.fluentcart.com/guide/reporting-analytics/",
       "file": "categories/reporting-analytics.md",
-      "page_count": 13,
+      "page_count": 15,
       "pages": [
         {
           "title": "Reporting & Analytics ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/"
+        },
+        {
+          "title": "Accounting Export ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/accounting-export"
         },
         {
           "title": "Subscription Cohorts Report ​",
@@ -502,6 +522,10 @@
         {
           "title": "Orders Report ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/orders-report"
+        },
+        {
+          "title": "Compare Products Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/product-compare-report"
         },
         {
           "title": "Product Report ​",
@@ -538,7 +562,7 @@
       "slug": "settings-configuration",
       "url": "https://docs.fluentcart.com/guide/settings-configuration/",
       "file": "categories/settings-configuration.md",
-      "page_count": 25,
+      "page_count": 26,
       "pages": [
         {
           "title": "Settings & Configuration ​",
@@ -607,6 +631,10 @@
         {
           "title": "Connecting AI Assistants (MCP) ​",
           "url": "https://docs.fluentcart.com/guide/settings-configuration/mcp"
+        },
+        {
+          "title": "Multi Currency Settings ​",
+          "url": "https://docs.fluentcart.com/guide/settings-configuration/multi-currency-settings"
         },
         {
           "title": "Pages Setup ​",
@@ -701,7 +729,7 @@
       "slug": "store-management",
       "url": "https://docs.fluentcart.com/guide/store-management/",
       "file": "categories/store-management.md",
-      "page_count": 23,
+      "page_count": 24,
       "pages": [
         {
           "title": "Store Management ​",
@@ -726,6 +754,10 @@
         {
           "title": "Exporting Your Store Data ​",
           "url": "https://docs.fluentcart.com/guide/store-management/exporting-data"
+        },
+        {
+          "title": "Multi-Currency in Your Store ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/multi-currency-storefront"
         },
         {
           "title": "Orders Management ​",

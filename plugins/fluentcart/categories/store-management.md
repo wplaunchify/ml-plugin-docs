@@ -17,6 +17,7 @@ This section covers the following key aspects of store management:
 - **Orders Management:** Learn how to view, filter, create, edit, refund, and collect payments for all orders.
 - **Customers Management:** Discover how to view, search, filter, and manage individual customer profiles and their associated data.
 - **Product Reviews:** Collect star ratings and customer feedback on your products, moderate what gets published, and reply to your customers in public.
+- **Multi-Currency in Your Store:** See how customers choose a currency, how prices stay steady at checkout, and how orders and renewals keep their exchange rate.
 - **Exporting Your Store Data:** Export orders, customers, subscriptions, and licenses to CSV or JSON straight from your browser.
 
 By mastering the tools within Store Management, you can fulfill orders efficiently, keep customer information accurate, and make sure your product availability is always up-to-date.
@@ -417,6 +418,95 @@ A few things occasionally trip people up, and each has a simple fix.
 - **The export failed with a size error:** A single record carrying an unusually large amount of metadata can exceed the response limit. FluentCart reports this rather than quietly cutting your data short. Untick the metadata module and run the export again.
 
 With Data Export set up and the right permissions in place, your store's records are always a couple of clicks away from a spreadsheet, a backup, or your accountant's inbox.
+
+---
+
+## Multi-Currency in Your Store ​
+
+**Source:** [https://docs.fluentcart.com/guide/store-management/multi-currency-storefront](https://docs.fluentcart.com/guide/store-management/multi-currency-storefront)
+
+# Multi-Currency in Your Store ​
+
+When multi-currency is on, your customers browse, add to cart, and pay in the currency they chose, while every product stays priced in your base currency. This page explains what customers see, how prices stay fair during checkout, and what happens to the orders they place.
+
+You set everything up under **FluentCart > Settings > Multi Currency**. See [Multi Currency Settings](/guide/settings-configuration/multi-currency-settings) for the rates and pricing rules this page refers to.
+
+INFO
+
+Multi Currency is a **Beta** feature and requires **FluentCart Pro**. If Pro is deactivated, the storefront and checkout go back to your base currency, and the currency switcher disappears. Orders already placed in another currency keep showing their own currency and amounts in your reports and order screens.
+## How Customers Choose a Currency ​
+
+A customer can pick a currency in two ways:
+
+- **The currency switcher:** A button in your menu or on a page that lists your currencies. See [Adding a Currency Switcher](/guide/customization-and-themes/currency-switcher) for how to add one.
+- **A link:** Add 
+```
+?currency=GBP
+```
+
+ to the end of any store page address, for example 
+```
+https://yourstore.com/shop/?currency=GBP
+```
+
+, to open it in that currency. This is handy for campaigns and for links aimed at a specific country.
+
+FluentCart remembers the choice for 30 days, so a returning customer lands in the same currency. Customers can only choose currencies that are turned on and have a rate. If fewer than two currencies are available, the switcher stays hidden.
+
+## What Customers See ​
+
+Every price on the storefront follows the currency the customer chose. This includes the shop page, product pages, pricing tables, product filters, and the cart. The price shown is the price the cart charges, because both use the same conversion and pricing rules (adjustment, rounding, and charm pricing) you set for that currency.
+
+Switching currencies never compounds conversion errors. FluentCart always converts from the base price, so a customer who switches from GBP to EUR and back to GBP sees the original GBP price again.
+
+INFO
+
+Your product page's search engine data (Product schema) always stays in the base currency, whichever currency a visitor is browsing in.
+## The Cart and Checkout ​
+
+A cart is priced in one currency at one locked rate. Everything on the checkout page follows that currency:
+
+- **Products:** Each item is priced from its base price at the rate and pricing rules for that currency.
+- **Coupons:** Fixed-amount coupons and a coupon's minimum purchase, maximum discount, and maximum purchase amounts are treated as base currency amounts and converted at the cart's rate.
+- **Shipping:** Flat, per-class, and tiered shipping rates are converted too.
+- **Tax:** Tax is recalculated whenever the cart is priced in a new currency.
+
+### Prices Stay Steady While Customers Pay ​
+
+By default, a new rate is used at once: when you change a rate or its pricing rules, the next price a customer sees uses the new rate. If you want a cart to keep the price its customer was shown, set **Keep converted prices at the previous rate for up to** under **Rate changes** to a number of minutes. A cart priced before your change then keeps the previous rate for that long, so the price a customer saw is the price they pay. Once the time passes, the next change to the cart prices it again at the current rate. See [Multi Currency Settings](/guide/settings-configuration/multi-currency-settings) for the setting.
+
+If something changes right before payment, FluentCart stops the order, reloads the checkout page with the new total, and shows a notice so the customer can review it before paying:
+
+- **Prices were updated to today's exchange rate. Please review your order total before paying.** This appears when the rate or pricing rules changed after the checkout page loaded, or a held rate ran out, for example because the customer had the checkout open in another tab.
+- **Your currency changed to GBP. Please review your order total before paying.** This appears when the customer switched currency in another tab after this page loaded. The notice names the currency the cart is now priced in.
+
+### Payments ​
+
+The payment gateway charges the customer in the currency of their cart. Make sure each gateway you use supports every currency you offer. Authorize.Net, for example, accepts only the currency of your Authorize.Net account.
+
+## Orders, Renewals, and Upgrades ​
+
+Every order keeps the currency and exchange rate it was placed at, so changing a rate later never rewrites past orders. Order items, the tax summary, subscription details, and the discount and refund dialogs on an order all show amounts in that order's own currency, even when it differs from your base currency. A subscription's renewals keep the same rate as the original order. When a customer upgrades a subscription through an [upgrade path](/guide/product-types-creation/defining-upgrade-paths), the new plan is priced in the subscription's own currency.
+
+If you use **FluentCart Pro** features that show prices, they follow the customer's currency too:
+
+- An [order bump](/guide/store-management/orders-management/order-bump) offer shows its price and saving in the customer's currency.
+- The fixed amounts in [Dynamic Pricing](/guide/marketing-sales-tools/dynamic-pricing) rules are converted to the cart's currency.
+
+## Reports in More Than One Currency ​
+
+When your orders span several currencies, the Reports section lets you view one currency at a time or combine them all in your base currency. See [Reports Dashboard Overview](/guide/reporting-analytics/reports-dashboard-overview) for how it works.
+
+## Working With Page Caching ​
+
+FluentCart marks store pages as not cacheable for visitors who browse in a non-base currency, so a customer is not shown a saved page in the wrong currency. Visitors in your base currency still get your normal page caching. If your caching plugin or host keeps serving the wrong currency, exclude visitors with the 
+```
+fct_currency
+```
+
+ cookie from the cache.
+
+Your customers can now shop and pay in the currency that suits them, with prices that stay consistent from the shop page to the receipt.
 
 ---
 
@@ -846,6 +936,8 @@ class
 If you build your pages with Elementor, FluentCart's **Buy Now Button** widget can trigger the instant checkout popup as well, no code needed. In the widget's **Content Tab**, set **Enable Modal Checkout** to **Yes**. See the [Elementor widgets guide](/guide/customization-and-themes/using-elementor-widgets) for setup details.
 
 Using **Divi** instead? FluentCart's Buy Now module for Divi has the same **Enable Modal Checkout** option. See the [Divi modules guide](/guide/customization-and-themes/fluentcart-divi-modules) for details.
+
+Want shoppers to choose between a few products and pay without any popup at all? The [On-Page Checkout Form](/guide/customization-and-themes/on-page-checkout-form) places the full checkout directly on your landing page instead.
 
 ---
 
@@ -1389,9 +1481,20 @@ Every review block that you place on its own starts with a **Product** panel, an
 
 Blocks placed inside a **Product Reviews** container do not show this panel. The container owns the product, and everything inside follows it.
 
+The **Product Reviews**, **Rating Summary with Review**, and **Review List** blocks go one step further. Their Product panel has a **Show reviews from** setting, so one block can draw from several products:
+
+- **Current product:** Same as **Query type > Default** above.
+- **Selected products:** Pick the products with the product picker, up to 100. With one product the block behaves like **Custom**. With two or more it shows reviews from all of them together.
+- **All products:** Approved reviews from every published product that accepts reviews.
+
+A review always belongs to one product, so the **Write a Review** button and the review form can't sit in a section that shows several. When you switch a **Product Reviews** block to **Selected products** (with two or more) or **All products**, those two are removed, and they come back if you return to one product. The rating summary combines the chosen products into one card, with the average weighted by the number of reviews on each product.
+
+INFO
+
+A block set to **Selected products** with no product chosen shows nothing. It never widens to every review in your store.
 ### 1. Product Reviews ​
 
-This is the complete package, and the quickest way to add a full review section to a custom layout. It holds the rating summary, the review list, and the **Write a Review** button, and it follows one product.
+This is the complete package, and the quickest way to add a full review section to a custom layout. It holds the rating summary, the review list, and the **Write a Review** button. By default it follows one product, and with **Show reviews from** you can point it at several products or at every product instead (see [Choosing Which Product a Block Shows](#choosing-which-product-a-block-shows)).
 
 The block is a container. Open the **List View** and you will find a **Rating Summary with Review** block and a **Review List** block inside it, so you can restyle either half, move them around, or drop your own blocks in beside them.
 
@@ -1418,12 +1521,14 @@ INFO
 
 The rating summary card on its own: the average score, the star breakdown, and a **Write a Review** button underneath. Reach for this when you want the summary and the call to action in one place, and the reviews themselves somewhere else on the page.
 
-- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product.
+- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product. Its **Show reviews from** setting can also combine several products into one summary card, and the **Write a Review** button is removed in that case.
 - **Star Color:** Inside the card sits a **Rating Summary** block with its own **Star Color** panel, so the stars can match your brand instead of the default amber.
 
 ### 3. Review List ​
 
 The customer reviews on their own, with filtering, sorting, and pagination but no summary card. Pair it with **Rating Summary with Review** when your design wants the two separated.
+
+Its **Product** panel has the **Show reviews from** setting, so the list can show reviews from the current product, selected products, or all products.
 
 The **Layout** panel controls how the reviews are arranged:
 
@@ -1459,7 +1564,7 @@ A few of them carry their own settings:
 
 The star rating on its own, as a compact inline element, with the number of reviews in brackets next to it. Ideal beside a product title, inside a card, or anywhere a full review section would be too much.
 
-- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product.
+- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product. Its **Show reviews from** setting can also combine several products into one summary card, and the **Write a Review** button is removed in that case.
 - **Minimum Reviews:** Hides the rating until the product has at least this many reviews. Leave it at 0 to always show it, including five empty stars on a product with no reviews.
 - **Minimum Average Rating:** Hides the rating unless the product averages at least this many stars. Half stars are allowed, and 0 shows every rating.
 
@@ -1485,7 +1590,7 @@ The **Logged Out** label only ever appears if your **Who can leave reviews?** se
 
 The review form printed directly on the page, with no button and no drawer. Use it on a dedicated "leave a review" page, or under your product description when you want the form always in view.
 
-- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product.
+- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product. Its **Show reviews from** setting can also combine several products into one summary card, and the **Write a Review** button is removed in that case.
 - **Field Layout:** Choose **Inline (all fields at once)** or **Steps (one at a time)**, exactly as on the **Write a Review** block.
 
 ## The Reviews Shortcode ​
@@ -1592,6 +1697,70 @@ media_flush
 | sort_order | ASC, DESC | DESC |
 | photos | only, to list just the reviews that have photos | All reviews |
 | star_color | A hex color such as #00009F | #f59e0b |
+
+### Reviews From Several Products ​
+
+Add 
+```
+scope="all"
+```
+
+ to list approved reviews from every product in one section, for example on a testimonials page or your home page:
+
+```
+[fluent_cart_product_reviews scope="all"]
+```Narrow it to some products or categories with these attributes. You can combine them, and a review has to match both:
+
+```
+[fluent_cart_product_reviews scope="all" product_ids="10,22"]
+[fluent_cart_product_reviews scope="all" categories="shoes,8" view_mode="grid" columns="3" per_page="9"]
+```| Attribute | Values | Notes |
+| --- | --- | --- |
+| scope | all | Turns on the several-products mode. Any other value is the normal one-product shortcode. |
+| product_ids | Comma-separated product IDs | Up to 100. |
+| categories | Comma-separated category slugs or IDs, mixed freely | Up to 100. Matches products assigned to the category itself, not to its subcategories. |
+
+What to expect in this mode:
+
+- Only approved reviews (not replies) from published products whose reviews are switched on appear. Pending reviews, drafts, private products, and products with reviews turned off never show, even if you list them in 
+```
+product_ids
+```
+
+.
+- The rating summary combines all the listed products. There is no **Write a Review** button, and 
+```
+summary_position="cta"
+```
+
+ shows no summary. The 
+```
+id
+```
+
+ attribute is ignored.
+- ```
+per_page
+```
+
+ goes up to 50 instead of 100.
+- A list that can't match anything never widens to every review. Text that isn't an ID, or a category name that doesn't exist, makes the shortcode show nothing at all. An ID that looks valid but belongs to no product shows the section with no reviews. Unknown entries listed beside valid ones are ignored.
+- The other attributes, such as 
+```
+view_mode
+```
+
+, 
+```
+sorting
+```
+
+, and 
+```
+photos
+```
+
+, work as usual.
 
 ### What Each Review Shows ​
 
