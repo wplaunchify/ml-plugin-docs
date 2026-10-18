@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-10-11T19:02:52.336Z",
-  "total_pages": 3672,
+  "last_scraped": "2026-10-18T18:54:01.566Z",
+  "total_pages": 3711,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,84 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3672,
+      "page_count": 3711,
       "pages": [
+        {
+          "title": "Dynamic Pricing compatibility",
+          "url": "https://woocommerce.com/document/woocommerce-dynamic-pricing/compatibility/"
+        },
+        {
+          "title": "Wholesale pricing by role with Dynamic Pricing",
+          "url": "https://woocommerce.com/document/woocommerce-dynamic-pricing/wholesale-pricing-by-role/"
+        },
+        {
+          "title": "Tiered quantity discounts with Dynamic Pricing",
+          "url": "https://woocommerce.com/document/woocommerce-dynamic-pricing/tiered-quantity-discounts/"
+        },
+        {
+          "title": "Buy 2, get 1 free with Dynamic Pricing",
+          "url": "https://woocommerce.com/document/woocommerce-dynamic-pricing/buy-2-get-1-free/"
+        },
+        {
+          "title": "How to Send a Next Order Coupon Automatically",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-send-a-next-order-coupon/"
+        },
+        {
+          "title": "Advanced Card Processing: Developer customizations",
+          "url": "https://woocommerce.com/document/woocommerce-paypal-payments/advanced-card-processing/developer-customizations/"
+        },
+        {
+          "title": "Optimized Checkout Suite: Developer customizations",
+          "url": "https://woocommerce.com/document/stripe/admin-experience/optimized-checkout-suite/developer-customizations/"
+        },
+        {
+          "title": "Advanced Notifications: Developer customizations",
+          "url": "https://woocommerce.com/document/advanced-notifications/developer-customizations/"
+        },
+        {
+          "title": "Quick View, Wishlist & Compare",
+          "url": "https://woocommerce.com/document/quick-view-wishlist-compare/"
+        },
+        {
+          "title": "My Account Dashboard Builder",
+          "url": "https://woocommerce.com/document/my-account-dashboard-builder/"
+        },
+        {
+          "title": "Move your store to the Purple theme",
+          "url": "https://woocommerce.com/document/getting-started-with-purple/move-your-store-to-the-purple-theme/"
+        },
+        {
+          "title": "Developing with the Purple theme",
+          "url": "https://woocommerce.com/document/getting-started-with-purple/developing-with-the-purple-theme/"
+        },
+        {
+          "title": "Customize your store with the Purple theme",
+          "url": "https://woocommerce.com/document/getting-started-with-purple/customize-your-store-with-the-purple-theme/"
+        },
+        {
+          "title": "Getting started with the Purple theme",
+          "url": "https://woocommerce.com/document/getting-started-with-purple/"
+        },
+        {
+          "title": "SEO Product Filter for WooCommerce",
+          "url": "https://woocommerce.com/document/seo-product-filter-for-woocommerce/"
+        },
+        {
+          "title": "Frequently Bought Together",
+          "url": "https://woocommerce.com/document/frequently-bought-together/"
+        },
+        {
+          "title": "REPORTiT – Advanced Reports & Analytics",
+          "url": "https://woocommerce.com/document/ithemeland-advanced-reports-analytics/"
+        },
+        {
+          "title": "REST API",
+          "url": "https://woocommerce.com/document/multi-location-inventory-management/rest-api/"
+        },
+        {
+          "title": "WhatsApp Meta OTP Setup Guide",
+          "url": "https://woocommerce.com/document/registration-login-with-mobile-phone-number/whatsapp-meta-otp-setup-guide/"
+        },
         {
           "title": "Developer Reference",
           "url": "https://woocommerce.com/document/elite-balance/elite-balance-developer-reference/"
@@ -652,6 +728,46 @@
         {
           "title": "PricePulse General Settings",
           "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/pricepulse-general-settings/"
+        },
+        {
+          "title": "Discount Rule Fields",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/discount-rule-fields/"
+        },
+        {
+          "title": "How to Create Your First Discount Rule",
+          "url": "https://woocommerce.com/document/pricepulse-dynamic-discounts-and-coupons/how-to-create-your-first-discount-rule/"
+        },
+        {
+          "title": "Stylezen",
+          "url": "https://woocommerce.com/document/stylezen/"
+        },
+        {
+          "title": "Outlet Pro",
+          "url": "https://woocommerce.com/document/outletpro/"
+        },
+        {
+          "title": "Product Manuals and Flip Book",
+          "url": "https://woocommerce.com/document/product-manuals-pro/"
+        },
+        {
+          "title": "LWN Multi-Step Checkout",
+          "url": "https://woocommerce.com/document/lwn-ms-checkout/"
+        },
+        {
+          "title": "Shared Space Booking",
+          "url": "https://woocommerce.com/document/shared-space-booking/"
+        },
+        {
+          "title": "B2B Quick Order Grid: Bulk Purchase, CSV Import, Barcode",
+          "url": "https://woocommerce.com/document/b2b-quick-order-grid/"
+        },
+        {
+          "title": "NetSuite Integration by SoftXone",
+          "url": "https://woocommerce.com/document/netsuite-integration-2/"
+        },
+        {
+          "title": "QR Payments NBU",
+          "url": "https://woocommerce.com/document/nbu-qr-pay/"
         },
         {
           "title": "Shipping Calculator on Product Page",
@@ -1463,15 +1579,15 @@
         },
         {
           "title": "Exclude Options in variation monster",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/exclude-options-in-variation-monster/"
+          "url": "https://woocommerce.com/document/exclude-options-in-variation-monster/"
         },
         {
           "title": "Gallery Navigation Button icon customization",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/gallery-navigation-button-icon-customization/"
+          "url": "https://woocommerce.com/document/gallery-navigation-button-icon-customization/"
         },
         {
           "title": "How the variation list template works",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-the-variation-list-template-works/"
+          "url": "https://woocommerce.com/document/how-the-variation-list-template-works/"
         },
         {
           "title": "ProdQueue – Production Queue for Made-to-Order Stores",
@@ -1479,7 +1595,7 @@
         },
         {
           "title": "Design for Mobile Single Product Page (Pro)",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/design-for-mobile-single-product-page-pro/"
+          "url": "https://woocommerce.com/document/design-for-mobile-single-product-page-pro/"
         },
         {
           "title": "FMA Pre Order and Backorder",
@@ -1499,7 +1615,7 @@
         },
         {
           "title": "Elements visibility customization",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/elements-visibility-customization/"
+          "url": "https://woocommerce.com/document/elements-visibility-customization/"
         },
         {
           "title": "Variation Table template 2 customization",
@@ -1511,11 +1627,11 @@
         },
         {
           "title": "Customize options before variation table",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/customize-options-before-variation-table/"
+          "url": "https://woocommerce.com/document/customize-options-before-variation-table/"
         },
         {
           "title": "How to Enable Variation Table and works",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-to-enable-variation-table/"
+          "url": "https://woocommerce.com/document/how-to-enable-variation-table/"
         },
         {
           "title": "What are WooCommerce.com subscriptions?",
@@ -1555,7 +1671,7 @@
         },
         {
           "title": "Attribute Button Customization",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/attribute-button-customization/"
+          "url": "https://woocommerce.com/document/attribute-button-customization/"
         },
         {
           "title": "Tooltip for Variation Swatches",
@@ -1567,7 +1683,7 @@
         },
         {
           "title": "Display Position on Archive Page",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/display-position-on-archive-page/"
+          "url": "https://woocommerce.com/document/display-position-on-archive-page/"
         },
         {
           "title": "Show as Filter Widget",
@@ -1575,7 +1691,7 @@
         },
         {
           "title": "Attribute Display Limit Enable",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/attribute-display-limit-enable/"
+          "url": "https://woocommerce.com/document/attribute-display-limit-enable/"
         },
         {
           "title": "Quantity button customization",
@@ -1583,19 +1699,19 @@
         },
         {
           "title": "Add to cart button Customization",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/add-to-cart-button-customization/"
+          "url": "https://woocommerce.com/document/add-to-cart-button-customization/"
         },
         {
           "title": "Display sale price with variation monster plugin settings",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/display-sale-price-with-variation-monster-plugin-settings/"
+          "url": "https://woocommerce.com/document/display-sale-price-with-variation-monster-plugin-settings/"
         },
         {
           "title": "Add to Cart Edit",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/add-to-cart-edit/"
+          "url": "https://woocommerce.com/document/add-to-cart-edit/"
         },
         {
           "title": "Carosel Popup Position",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/carosel-popup-position/"
+          "url": "https://woocommerce.com/document/carosel-popup-position/"
         },
         {
           "title": "Single Product Page Redirection",
@@ -1603,7 +1719,7 @@
         },
         {
           "title": "How to configure quick view",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-to-configure-quick-view/"
+          "url": "https://woocommerce.com/document/how-to-configure-quick-view/"
         },
         {
           "title": "How Variation Quick Cart Carousel Works",
@@ -1831,7 +1947,7 @@
         },
         {
           "title": "How to Configure the Variation Gallery (Template, Image Size, and Colors)",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-to-configure-the-variation-gallery-template-image-size-and-colors/"
+          "url": "https://woocommerce.com/document/how-to-configure-the-variation-gallery-template-image-size-and-colors/"
         },
         {
           "title": "Skip Checkout for Free Downloads",
@@ -2263,7 +2379,7 @@
         },
         {
           "title": "How the Variation Gallery Works and How to Configure It",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-the-variation-gallery-works-and-how-to-configure-it/"
+          "url": "https://woocommerce.com/document/how-the-variation-gallery-works-and-how-to-configure-it/"
         },
         {
           "title": "How Variation List Templates Work and How to Configure Them Per Page",
@@ -2299,11 +2415,11 @@
         },
         {
           "title": "How the Variation List Works",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-the-variation-list-works/"
+          "url": "https://woocommerce.com/document/how-the-variation-list-works/"
         },
         {
           "title": "Add New Meta Data When Overwriting the Default Add to Cart with Table",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/add-new-meta-data-when-overwriting-the-default-add-to-cart-with-table/"
+          "url": "https://woocommerce.com/document/add-new-meta-data-when-overwriting-the-default-add-to-cart-with-table/"
         },
         {
           "title": "How to Replace the Add to Cart Button with the Variation Table on the Single Product Page",
@@ -2323,11 +2439,11 @@
         },
         {
           "title": "How to Configure the Variation Table for Mobile Devices on the Single Product Page",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-to-configure-the-variation-table-for-mobile-devices-on-the-single-product-page/"
+          "url": "https://woocommerce.com/document/how-to-configure-the-variation-table-for-mobile-devices-on-the-single-product-page/"
         },
         {
           "title": "How to Configure the Variation Table Position on the Single Product Page",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-to-configure-the-variation-table-position-on-the-single-product-page/"
+          "url": "https://woocommerce.com/document/how-to-configure-the-variation-table-position-on-the-single-product-page/"
         },
         {
           "title": "How to Configure & Change the Variation Table Template",
@@ -2335,7 +2451,7 @@
         },
         {
           "title": "How the Variation Table Works",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-the-variation-table-works/"
+          "url": "https://woocommerce.com/document/how-the-variation-table-works/"
         },
         {
           "title": "Try Before You Buy for WooCommerce",
@@ -2371,7 +2487,7 @@
         },
         {
           "title": "How to Configure the Selected Attribute Icon",
-          "url": "https://woocommerce.com/document/variation-monster-pro-2__trashed/how-to-configure-the-selected-attribute-icon/"
+          "url": "https://woocommerce.com/document/how-to-configure-the-selected-attribute-icon/"
         },
         {
           "title": "How to Configure Disabled Attribute Style",
@@ -4694,7 +4810,7 @@
           "url": "https://woocommerce.com/document/order-priority/"
         },
         {
-          "title": "Product Insurance",
+          "title": "Product Insurance for WooCommerce",
           "url": "https://woocommerce.com/document/product-insurance/"
         },
         {
@@ -6458,40 +6574,40 @@
           "url": "https://woocommerce.com/document/configuring-woocommerce-settings/products/"
         },
         {
-          "title": "Email Settings",
-          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/emails/"
+          "title": "Page Shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/page-shortcodes/"
         },
         {
-          "title": "Advanced Settings",
-          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/advanced/"
+          "title": "B2B Invoice Payment Method",
+          "url": "https://woocommerce.com/document/b2b-invoice-payment-method/"
         },
         {
-          "title": "Advanced Order Notes for WooCommerce",
-          "url": "https://woocommerce.com/document/advanced-order-notes-for-woocommerce/"
+          "title": "Order Statuses",
+          "url": "https://woocommerce.com/document/managing-orders/order-statuses/"
         },
         {
-          "title": "Consent Mode Banner PRO",
-          "url": "https://woocommerce.com/document/gtm-consent-mode-banner-woo/"
+          "title": "Orders Overview and Bulk Order Management",
+          "url": "https://woocommerce.com/document/managing-orders/overview-and-bulk-management/"
         },
         {
-          "title": "AnySell",
-          "url": "https://woocommerce.com/document/anysell/"
+          "title": "Single Order Page and Manually Adding an Order",
+          "url": "https://woocommerce.com/document/managing-orders/view-edit-or-add-an-order/"
         },
         {
-          "title": "Sportiq",
-          "url": "https://woocommerce.com/document/sportiq/"
+          "title": "Paying for Orders",
+          "url": "https://woocommerce.com/document/managing-orders/paying-for-orders/"
         },
         {
-          "title": "Related Products, Add-to-Cart, and Notification Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes/"
+          "title": "Removing personal data from orders",
+          "url": "https://woocommerce.com/document/managing-orders/removing-personal-data-from-orders/"
         },
         {
-          "title": "Troubleshooting shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/troubleshooting-shortcodes/"
+          "title": "Testing orders",
+          "url": "https://woocommerce.com/document/managing-orders/testing-orders/"
         },
         {
-          "title": "Product Category Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/product-category/"
+          "title": "Troubleshooting Orders",
+          "url": "https://woocommerce.com/document/managing-orders/troubleshooting-orders/"
         },
         {
           "title": "Feature, Filter, and Sort Products",
@@ -10334,6 +10450,46 @@
           "url": "https://woocommerce.com/document/affiliate-for-woocommerce/how-to-set-different-affiliate-commission-rates-for-product-or-product-category/"
         },
         {
+          "title": "Back In Stock Notifications",
+          "url": "https://woocommerce.com/document/back-in-stock-notifications/"
+        },
+        {
+          "title": "Hide Prices & Private Store for WooCommerce",
+          "url": "https://woocommerce.com/document/hide-prices-private-store-for-woocommerce/"
+        },
+        {
+          "title": "Product Designer for WooCommerce",
+          "url": "https://woocommerce.com/document/product-designer-for-woocommerce/"
+        },
+        {
+          "title": "Registration & Login with Mobile Phone Number",
+          "url": "https://woocommerce.com/document/registration-login-with-mobile-phone-number/"
+        },
+        {
+          "title": "PayPal Standard",
+          "url": "https://woocommerce.com/document/paypal-standard/"
+        },
+        {
+          "title": "Constants",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/api/constants/"
+        },
+        {
+          "title": "Rapyd Payments Plugin",
+          "url": "https://woocommerce.com/document/rapyd-payments-plugin-for-woocommerce/"
+        },
+        {
+          "title": "Live Sales Notification for WooCommerce",
+          "url": "https://woocommerce.com/document/live-sales-notification-for-woocommerce/"
+        },
+        {
+          "title": "Merge Orders",
+          "url": "https://woocommerce.com/document/merge-orders/"
+        },
+        {
+          "title": "WooCommerce Box Office",
+          "url": "https://woocommerce.com/document/woocommerce-box-office/"
+        },
+        {
           "title": "The My account page",
           "url": "https://woocommerce.com/document/the-my-account-page/"
         },
@@ -12414,8 +12570,8 @@
           "url": "https://woocommerce.com/document/woocommerce-product-search/api/filters/"
         },
         {
-          "title": "[woocommerce_product_search]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_search/"
+          "title": "Actions",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/api/actions/"
         },
         {
           "title": "Product Filter – Attributes",
