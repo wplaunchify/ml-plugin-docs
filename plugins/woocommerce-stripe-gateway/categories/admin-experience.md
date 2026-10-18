@@ -309,26 +309,27 @@ First, update to the most recent version of the Stripe extension to be sure that
 After ensuring the most recent version of the plugin is installed:
 
 1. In your store’s WordPress dashboard, go to **WooCommerce > Settings > Payments > Stripe > Settings**.
-2. Scroll to the *Advanced Settings* section.
+2. Scroll to the **Advanced Settings** section.
 3. Check the box for “Dynamically display the most relevant payment methods you’ve enabled.”
 - You can also optionally enable [Adaptive Pricing](https://woocommerce.com/document/stripe/admin-experience/optimized-checkout-suite/adaptive-pricing/).
 4. Choose [a layout option](#layout).
 5. Click **Save Changes** at the bottom.
 
-![](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-19.33.06-UTC@2x.png?w=980)
+![Stripe Advanced Settings with Optimized Checkout Suite enabled, the Accordion layout selected, and Adaptive Pricing turned on](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-19.33.06-UTC@2x.png?w=980)
 
 ## Layout
 
 [↑ Back to top](#doc-title)
 
-The *Layout* setting controls how the payment methods are shown in the checkout form. See the images below for a comparison.
+The **Layout** setting controls how the payment methods are shown in the checkout form. See the images below for a comparison.
 
-- ![](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-19.43.45-UTC@2x.png?strip=all&w=704)Accordion layout
-- ![](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-19.44.12-UTC@2x.png?strip=all&w=704)Tabs layout
+![Accordion layout, with payment methods stacked vertically under the Payment methods option](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-19.43.45-UTC@2x.png?strip=all&w=704)Accordion layout
+
+![Tabs layout, with payment methods shown side by side as tabs and the card fields below](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-19.44.12-UTC@2x.png?strip=all&w=704)Tabs layout
 
 Also, since the Optimized Checkout Suite works best when Stripe is at the top of your payment providers list (under **WooCommerce > Settings > Payments**), we present a notice to you if Stripe is *not* in the top slot:
 
-![](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-04-27-at-14.36.31-UTC@2x.png?strip=all&w=704)
+![Notice saying Optimized Checkout works best when Stripe is your first payment method, with a Move to top button](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-04-27-at-14.36.31-UTC@2x.png?strip=all&w=704)
 
 Clicking the **Move to top** button will move Stripe to the top of the payment providers list, thus allowing customers to see the full range of payment methods.
 
@@ -336,24 +337,15 @@ Clicking the **Move to top** button will move Stripe to the top of the payment p
 
 [↑ Back to top](#doc-title)
 
-By default, when Optimized Checkout Suite is enabled, the list of payment methods shown in checkout will be under a “Payment methods” title, like so:
+When Optimized Checkout Suite is on, Stripe lists your payment methods under a generic title: **Payment methods** in the block checkout, or **Payment options** in the classic checkout.
 
-![](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-15.02.23-UTC@2x.png?strip=all&w=704)
+![Checkout with Stripe’s payment methods listed under the Payment methods title](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-15.02.23-UTC@2x.png?strip=all&w=704)
 
-To change this, use the 
-```
-wc_stripe_optimized_checkout_title
-```
+The Stripe extension has no setting to change this title. A developer can change it with a filter. See [Change the checkout title](https://woocommerce.com/document/stripe/admin-experience/optimized-checkout-suite/developer-customizations/#change-the-checkout-title).
 
- filter:
+**Note:**
 
-```
-add_filter( 'wc_stripe_optimized_checkout_title', fn() => 'Pay here!' );
-```
-
-The result:
-
-![](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-15.05.00-UTC@2x.png?strip=all&w=704)
+If you also use PayPal Advanced Card Processing or another on-site card gateway, give each one a checkout title that names its processor. When both use generic titles, shoppers and store staff can’t easily tell which processor handles a payment. For Stripe, use the filter in [Change the checkout title](https://woocommerce.com/document/stripe/admin-experience/optimized-checkout-suite/developer-customizations/#change-the-checkout-title), for example to show **Payment methods (Stripe)**. For PayPal, change the **Checkout page title**, as described in [Advanced Card Processing](https://woocommerce.com/document/woocommerce-paypal-payments/advanced-card-processing/#activate-acdc).
 
 ## Troubleshooting
 
@@ -374,13 +366,13 @@ To check to see if settings sync is working correctly:
 1. In your WordPress dashboard, navigate to **WooCommerce > Settings > Payments**.
 2. Click the **Manage** button for the Stripe extension.
 3. Click the **Settings** tab.
-4. In the *Account Details* section, make sure that **Sync** shows as **Enabled**.
+4. In the **Account Details** section, make sure that **Sync** shows as **Enabled**.
 
-![](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-17.12.13-UTC@2x.png?w=980)
+![Stripe account details with Payment, Payout, Webhook and Sync all showing Enabled](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-17.12.13-UTC@2x.png?w=980)
 
 If the **Sync** feature does not show **Enabled**, you will need to [reconnect your site to Stripe’s system](https://woocommerce.com/document/stripe/setup-and-configuration/connecting-to-stripe/) before Optimized Checkout Suite will be available.
 
-![](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-19.40.03-UTC.png?strip=all&w=704)
+![Optimized Checkout Suite setting turned off, with a notice that it isn’t currently available and you should reconnect your account to Stripe](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-05-13-at-19.40.03-UTC.png?strip=all&w=704)
 
 ### Stripe account on another platform
 
@@ -402,7 +394,20 @@ Sites that are still using manually entered API keys may not be eligible for Opt
 
 Optimized Checkout Suite will only show a payment method if it’s relevant to a given customer. For example, Przelewy24 will be hidden for customers outside Poland.
 
+Some methods (BLIK and Canada PADs) cannot be displayed inside the combined Optimized Checkout payment method. They will be shown on their own, like so:
+
+![Checkout showing Pre-Authorized Debit as its own option below the Payment methods option](https://woocommerce.com/wp-content/uploads/2025/07/Screenshot-taken-on-2026-10-14-at-06.02.42-UTC@2x.png?strip=all&w=704)
+
 Furthermore, although the Stripe dashboard shows many payment methods, our Stripe plugin can only support a subset of those. [Here’s the list](https://woocommerce.com/document/stripe/setup-and-configuration/additional-payment-methods/#which-apms) of what our plugin supports.
+
+## Questions and support
+
+[↑ Back to top](#doc-title)
+
+Do you still have questions and need assistance?
+
+- [Get in touch](https://woocommerce.com/my-account/create-a-ticket/) with a Happiness Engineer via our Help Desk. We provide support for extensions developed by and/or sold on WooCommerce.com, and Jetpack/WordPress.com customers.
+- If you are not a customer, we recommend finding help in the [WooCommerce support forum](https://wordpress.org/support/plugin/woocommerce/) or hiring a Woo Agency Partner. These are trusted agencies with a proven track record of building highly customized, scalable online stores.[Learn more about Woo Agency Partners](https://woocommerce.com/development-services/).
 
 ---
 

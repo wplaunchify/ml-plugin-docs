@@ -497,12 +497,44 @@ With the
 woocommerce_checkout_fields
 ```
 
- filter:
+ filter, what happens depends on whether your store’s checkout page uses the shortcode checkout or the checkout block.
 
-- On the shortcode checkout page, express checkout enforces any field added this way that is marked as required. These fields are shown on that page, and the values a shopper enters are saved to the order as custom fields keyed by the field ID.
-- These fields aren’t shown on product or cart pages. If one is required, the payment is blocked and the shopper is told to go to the checkout page, fill in the required fields, and complete the order from there.
+If your checkout page uses the shortcode checkout:
+
+- These fields are shown on the checkout page. Express checkout enforces any that are marked as required, and saves the values a shopper enters to the order as custom fields keyed by the field ID.
 - Express checkout runs this check after the shopper approves the wallet sheet, not before it opens, so shoppers get no advance warning. The payment is refused, and an error is shown that indicates the missing field.
-- To turn off this handling entirely, use this code snippet:
+- These fields aren’t shown on product or cart pages. If one is required, the payment is refused, and the error tells the shopper to go to checkout, fill in the required fields, and complete the order from there. The error links to your checkout page.
+
+If your checkout page uses the checkout block:
+
+- The checkout block can’t show these fields, so express checkout doesn’t enforce them, even when they’re marked as required. This applies whether the shopper pays from the checkout page, the cart page, or a product page.
+- The order goes through, and no value is saved for these fields.
+- If your site also has a separate page that uses the shortcode checkout, any express payments made from that page still follow the shortcode checkout rules above.
+- Fields only appear on the checkout block if the extension registers them with the 
+```
+woocommerce_register_additional_checkout_field
+```
+
+ function.
+
+If an express checkout refuses an order because a required field is missing, an error is written to the logs, even if [logging is turned off](https://woocommerce.com/document/stripe/setup-and-configuration/settings-guide/#advanced-settings). The log entry will say “Missing required custom fields in express checkout” and lists the IDs of the missing fields and the error the shopper saw.
+
+On stores that use the checkout block, the log also notes each express order that went through with a required field left empty, along with the field IDs. These entries are only written when loggin is turned on.
+
+To see all these logs, go to **WooCommerce > Status > Logs** and open the most recent 
+```
+woocommerce-gateway-stripe
+```
+
+ log.
+
+To stop logging refused payments, use this code snippet. (Express checkout still refuses the payments, it just won’t log them.)
+
+```
+add_filter( 'wc_stripe_express_checkout_log_missing_required_fields', '__return_false' );
+```
+
+To turn off this handling entirely, use this code snippet:
 
 ```
 add_filter( 'wc_stripe_express_checkout_enable_classic_checkout_custom_fields', '__return_false' );
