@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T17:41:01.899Z",
+  "last_updated": "2026-10-18T17:54:06.757Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1753,7 +1753,7 @@
       "slug": "kadence-shop-kit",
       "name": "Kadence Shop Kit",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-shop-kit/",
-      "last_scraped": "2026-10-11T17:55:16.281Z",
+      "last_scraped": "2026-10-18T17:54:06.757Z",
       "page_count": 44,
       "categories": [
         "add-gutenberg-editor-to-woocommerce",
