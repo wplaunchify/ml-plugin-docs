@@ -93,6 +93,8 @@ block.json
 
 .
 
+If you prefer a video walkthrough of this article, you can watch it here:
+
 ## What We Are Building
 
 Before we get into the technical steps, let’s discuss what we are building. We will create a small dynamic block that renders a title and description.
