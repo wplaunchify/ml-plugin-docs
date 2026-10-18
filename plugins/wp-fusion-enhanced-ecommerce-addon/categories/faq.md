@@ -971,7 +971,20 @@ The version numbers are broken into three, and sometimes four parts. For example
 			top: 5px;
 			word-spacing: 2px;
 			color: #fff;
-		}#### #3.48.0 - 9/23/2026
+		}#### # 3.48.1 - 10/13/2026
+
+- ✨ New Added [Divi 5 support](https://wpfusion.com/documentation/page-builders/divi/) for restricting modules, rows, and sections with tag pickers under Advanced » WP Fusion. Divi 4 tag rules carry over when a page is converted. Converting a page no longer saves those modules as disabled when the person running the conversion does not have the required tags
+- ⚡️ Improved BuddyBoss Settings 2.0 now has WP Fusion tag fields on groups, group types, forums, discussions, replies, and profile types. A profile type can apply tags when a member is assigned to it
+- 🔧 Fixed Fixed BuddyBoss removing group organizers and moderators from a group linked to a tag, and blocking those members with the group's required-tag rules. BuddyBoss App access groups now register after the app has booted, and they match tags loaded from the CRM
+- 🔧 Fixed Fixed subscribers saving WP Fusion restriction settings onto posts they cannot edit, from the WordPress bulk editor. Each post is checked before it is saved. Reported by Patchstack
+- 🔧 Fixed Fixed logged-out visitors applying and removing tags through admin-ajax.php. The request now needs a logged-in user or a valid auto-login session, and it only accepts tags that already exist in WP Fusion. Removed the unused update_user AJAX action, which let a subscriber push contact fields to the CRM
+- 🔧 Fixed Fixed WooCommerce refunds and cancellations removing a purchase tag while another order for the same customer still granted it, including an earlier guest order with the same billing email. Refund status lookups now include WooCommerce's wc- prefix
+- 🔧 Fixed Fixed Elementor forms sending a hidden field as checkbox 1 after the form fields were reordered. Each mapped row is now matched to its field by custom ID
+- 🔧 Fixed Fixed nested WP Fusion blocks in the editor showing the outer block's required tags on the inner block's header
+- 🔧 Fixed Fixed ActiveCampaign webhooks failing to find a user when the stored contact ID was out of date and the email still matched
+- 🔧 Fixed Fixed a failed read of the WP Fusion settings overwriting the saved configuration with a single option
+
+#### # 3.48.0 - 9/23/2026
 
 - ✨ New Added a [Quiz and Survey Master integration](https://wpfusion.com/documentation/learning-management/quiz-and-survey-master/) that applies tags when a graded quiz is passed or failed, and syncs the score and points to CRM fields. Surveys and simple forms are skipped
 - ✨ New Added [expired tags for MemberPress Corporate sub-accounts](https://wpfusion.com/documentation/learning-management/memberpress/#corporate-accounts). A sub-account can get its own expired tag when access ends, and that tag is skipped when another membership already uses it as an active or expired tag. Linked tags are not re-applied on top of the expired tag
@@ -990,7 +1003,7 @@ The version numbers are broken into three, and sometimes four parts. For example
 - 🔧 Fixed Fixed an unauthenticated change of the FluentCRM REST, FunnelKit Automations, and Groundhogg REST connection. The application-password return could replace the CRM URL, username, and password before WordPress checked for a logged-in user. Saving those credentials now requires an administrator on the WP Fusion settings screen, with a nonce
 - 🔧 Fixed Fixed subscribers listing every user's email from the activity log search, and re-syncing another user's CRM contact, with the admin nonce from their own profile. Log search requires an administrator. Re-sync requires the ability to edit users. The tag and redirect pickers stay available to anyone who can edit content
 
-#### #3.47.14 - 7/30/2026
+#### # 3.47.14 - 7/30/2026
 
 - ✨ New Added a FluentAffiliate integration that applies and removes configurable tags as an affiliate's status changes through the full lifecycle (pending, active, inactive, cancelled, rejected, and deleted)
 - ✨ New Added FluentCommunity badge sync — map each badge to one or more tags so badges are assigned when a user has any linked tag and removed when none remain
@@ -1008,7 +1021,7 @@ The version numbers are broken into three, and sometimes four parts. For example
 - 🔧 Fixed Fixed Brevo phone formatting for non-US numbers, including expanded E.164 country coverage and prevention of double-prefixing
 - 🔧 Fixed Fixed multiline CRM field values (e.g. HubSpot textareas) being flattened to a single line when synced into WordPress user meta
 
-#### #3.47.13 - 6/17/2026
+#### # 3.47.13 - 6/17/2026
 
 - ✨ New Added a [Sublium Subscriptions integration](https://wpfusion.com/documentation/ecommerce/sublium-subscriptions/) with per-product subscription tagging, CRM field syncing, and support for the full subscription lifecycle — including free trials, renewal deduplication, and a sandbox-mode safeguard
 - ✨ New Added a native [Academy LMS integration](https://wpfusion.com/documentation/learning-management/academy-lms/) that applies tags when a user is enrolled in or completes a course or lesson, with a linked tag for automatic enrollment and un-enrollment from the CRM
@@ -1028,7 +1041,7 @@ The version numbers are broken into three, and sometimes four parts. For example
 - 🔧 Fixed Fixed Event Espresso fields not syncing to the CRM when a registration was approved after payment
 - 🔧 Fixed Fixed Brevo double opt-in failing when the template ID was passed as a string instead of an integer
 
-#### #3.47.12 - 5/8/2026
+#### # 3.47.12 - 5/8/2026
 
 - ✨ New Added new "push" webhook action that lets a CRM trigger WP Fusion to push the user's WP meta to the CRM — the reverse of the existing update webhook. Supports an optional 
 ```
@@ -1042,11 +1055,11 @@ fields
 - 🔧 Fixed Fixed Autonami / FunnelKit Automations sync pagination — offset stayed at 0 between pages, causing sync_tags, sync_lists, and load_contacts to re-fetch page 1 endlessly on sites with 100+ tags
 - 🔧 Fixed Fixed FluentCRM (REST) bulk import returning no contacts when tags are stored by numeric ID. load_contacts() now uses GET /tags/{id} for numeric tag IDs and keeps the /tags?search= endpoint for slug-based tag keys
 
-#### #3.47.11 - 5/1/2026
+#### # 3.47.11 - 5/1/2026
 
 - 🔧 Fixed Fixed fatal error on admin pages for HubSpot sites that had not yet completed the v1→v3 list ID migration after the 4/30/2026 cutoff, caused by a missing get_v3_list_ids() method on the HubSpot CRM class
 
-#### #3.47.10 - 4/21/2026
+#### # 3.47.10 - 4/21/2026
 
 - ✨ New Added app disconnect functionality for HubSpot
 - ✨ New Added wpf_woo_memberships_sync_on_delete filter so snippets can block the "cancelled" status sync for specific WooCommerce Memberships plan IDs when a user membership is deleted
@@ -1067,7 +1080,7 @@ fields
 - 🔧 Fixed Fixed Forminator integration PHP warning when tag label data was not in the expected array format
 - 🔧 Fixed Fixed tag and list string-replacement logic in the settings exporter/importer to match on whole words only, preventing unintended replacement of similarly-named tags or list IDs
 
-#### #3.47.9 - 3/24/2026
+#### # 3.47.9 - 3/24/2026
 
 - ✨ New Added [Document Library Pro](https://wpfusion.com/documentation/other/document-library-pro/) integration for syncing lead capture form submissions to the CRM with per-document tagging
 - ⚡️ Improved HubSpot tag migration tool now includes WooCommerce Memberships Teams and BadgeOS tag fields
@@ -1079,7 +1092,7 @@ fields
 - 🔧 Fixed Fixed CartFlows not applying tags on subscription renewals and switches
 - 🔧 Fixed Fixed several bugs in the NationBuilder v2 API integration
 
-#### #3.47.8.1 - 2/27/2026
+#### # 3.47.8.1 - 2/27/2026
 
 - 🔧 Fixed Fixed SureMembers integration compatibility with SureMembers v2 third-party settings API
 - 🔧 Fixed Fixed PHP warning in the admin bar when tag data was not in the expected array format
@@ -1087,7 +1100,7 @@ fields
 - 🔧 Fixed Fixed Members plugin meta box loading on all post types instead of only on the role editor
 - Updated Dynamics 365 client secret
 
-#### #3.47.8 - 2/25/2026
+#### # 3.47.8 - 2/25/2026
 
 - ✨ New Added Paid Memberships Pro cancellation reason syncing to CRM (requires PMPro Reason for Cancelling addon)
 - ⚡️ Improved HubSpot tag migration now includes a runtime safety net that translates legacy v1 list IDs to v3 on-the-fly for access checks and API calls, even when stored settings haven't been migrated yet
@@ -1097,14 +1110,14 @@ fields
 - 🔧 Fixed Fixed NationBuilder v2 API rejecting entire sync requests when any unwritable attribute was included — unknown fields are now automatically stripped and the request retried
 - 🔧 Fixed Fixed PHP warning in the tag picker dropdown when tag data was not in the expected array format
 
-#### #3.47.7 - 2/16/2026
+#### # 3.47.7 - 2/16/2026
 
 - ✨ New Added one-click migration tool for HubSpot users to update list IDs after the v1→v3 API upgrade in 3.47.6
 - ⚡️ Improved HubSpot list users from pre-3.47.7 now stay on the legacy v1 Lists API until they run the migration tool, then switch to v3 (with automatic v3 enforcement after April 30, 2026)
 - 🔧 Fixed Fixed Forminator integration errors due to remaining static method calls that should have been instance method calls
 - 🔧 Fixed Fixed Beaver Builder widget tag fields not saving due to an autosuggest action naming collision
 
-#### #3.47.6 - 2/9/2026
+#### # 3.47.6 - 2/9/2026
 
 - ⚡️ Improved NationBuilder integration updated to use the v2 API with OAuth authentication, replacing the deprecated v1 API
 - ⚡️ Improved Added support for NationBuilder Paths (displayed in the tag picker) and list/membership syncing
@@ -1125,7 +1138,7 @@ fields
 - 🔧 Fixed Fixed PHP error when get_query_var() is called before WP_Query is initialized (e.g. during early cron runs)
 - 🔧 Fixed Fixed internal retry parameter being passed through to CRM API methods
 
-#### #3.47.5 - 1/19/2026
+#### # 3.47.5 - 1/19/2026
 
 - ✨ New Added Order Status, Order Code, Membership ID, and Order Date fields to the Paid Memberships Pro integration
 - ✨ New Added bulk "Process WP Fusion actions again" option to the Gravity Forms entries list
@@ -1137,17 +1150,17 @@ fields
 - 🔧 Fixed Fixed WooCommerce lead source tracking fields (UTM parameters, gclid, fbclid, etc.) being incorrectly synced from order meta instead of cookies
 - 🔧 Fixed Fixed wpf_clean() stripping percent-encoded characters (like @ in email addresses) when sanitizing webhook data
 
-#### #3.47.4.2 - 12/30/2025
+#### # 3.47.4.2 - 12/30/2025
 
 - 🔧 Fixed Fixed additional missing build files in block-builder based plugin integrations (SureForms, SureCart, SureMembers, GiveWP, Tribe Tickets)
 
-#### #3.47.4.1 - 12/30/2025
+#### # 3.47.4.1 - 12/30/2025
 
 - 🔧 Fixed Fixed missing build files in block-builder based plugin integrations (SureDash, SureMembers, GiveWP, Tribe Tickets)
 - 🔧 Fixed Fixed ActiveCampaign integration not returning an error when the API returns an empty response (fixes tags getting lost due to unknown API errors like the 511 errors last week)
 - 🔧 Fixed Fixed settings input on LifterLMS access plans overlapping with the LifterLMS UI with LifterLMS 9.1+
 
-#### #3.47.4 - 12/23/2025
+#### # 3.47.4 - 12/23/2025
 
 - ✨ New Added [SureDash integration](https://wpfusion.com/documentation/learning-management/suredash/) for syncing course and lesson completions
 - ✨ New Added Initial Payment field for Paid Memberships Pro one-time orders
@@ -1162,7 +1175,7 @@ fields
 - 🔧 Fixed Fixed Keap API calls returning 404 errors due to trailing slashes in URLs
 - 🔧 Fixed Fixed admin row actions showing on unsupported post types
 
-#### #3.47.3 - 11/27/2025
+#### # 3.47.3 - 11/27/2025
 
 - ✨ New Added a [SureForms integration](https://wpfusion.com/documentation/forms/sureforms/)
 - ✨ New Added support for bulk editing access rules on Presto Player Media Hub videos
@@ -1173,7 +1186,7 @@ fields
 - 🔧 Fixed Fixed GetResponse integration returning false when no tags are found for a contact, instead of an empty array, causing errors with some integrations
 - 🔧 Fixed Fixed notifications getting sent to WPForo forum subscribers when they did not have access to the forum
 
-#### #3.47.2 - 11/5/2025
+#### # 3.47.2 - 11/5/2025
 
 - ✨ New Added support for segmenting using [Labels with Pipedrive](https://wpfusion.com/documentation/crm-specific-docs/pipedrive-labels/)
 - ✨ New Added support for syncing Omnisend email subscription status (subscribed/unsubscribed/nonSubscribed) in both directions
@@ -1196,14 +1209,14 @@ datetime-local
 - 🔧 Fixed Fixed Pipedrive webhooks not working
 - 🔧 Fixed Fixed fatal error if MailPoet integration was called before MailPoet plugin was initialized
 
-#### #3.47.1 - 10/20/2025
+#### # 3.47.1 - 10/20/2025
 
 - 🔧 Fixed Fixed MemberPress integration not syncing the membership level name when a user is downgraded to a free tier
 - 🔧 Fixed Fixed "Function _load_textdomain_just_in_time was called incorrectly" notice with Fluent Forms with WordPress 6.7+
 - 🔧 Fixed Fixed Pipedrive webhook registration failing with "Scope and URL mismatch" error by enforcing HTTPS in webhook URLs
 - 🔧 Fixed Fixed GS Product Configurator feeds not applying tags for guest users due to missing email field mapping in the new field mapping format
 
-#### #3.47.0 - 10/14/2025
+#### # 3.47.0 - 10/14/2025
 
 - ✨ New Added beta support for [FluentCart](https://wpfusion.com/documentation/ecommerce/fluentcart/)
 - ⚡️ Improved Skipping non-scalar values when syncing to Klaviyo
@@ -1219,7 +1232,7 @@ datetime-local
 - 🔧 Fixed Fixed - Groundhogg (REST API) date fields only syncing Month and Year values (missing Day)
 - 🔧 Fixed Fixed - Return After Login not working when post type or taxonomy restrictions were enabled, due to access check running during wp_login action before user authentication was fully complete
 
-#### #3.46.15 - 10/7/2025
+#### # 3.46.15 - 10/7/2025
 
 - ✨ New Added support for syncing additional fields from the [Event Tickets Additional Fields extension](https://theeventscalendar.com/extensions/additional-fields-for-tickets/)
 - ⚡️ Improved Optimized WooCommerce Subscriptions batch operations for better performance with large numbers of subscriptions
@@ -1241,7 +1254,7 @@ Too few arguments to function WPF_API::delete_transient()
  when processing HubSpot webhooks with multiple contact IDs
 - 🔧 Fixed Fixed FooEvents attendees not syncing when attendee email matches billing email but differs from logged-in user's email
 
-#### #3.46.14 - 10/1/2025
+#### # 3.46.14 - 10/1/2025
 
 - ✨ New Added option to remove tags when MemberPress sub-account is removed from a corporate account
 - ✨ New Added support for syncing FooEvents ticket number and QR code details after generation
@@ -1253,13 +1266,13 @@ Too few arguments to function WPF_API::delete_transient()
 - 🔧 Fixed Fixed MemberPress creating duplicate contacts in HighLevel when "Allow Duplicate Contacts" is enabled
 - 🔧 Fixed Fixed Event Tickets attendees sync status icon showing greyed out even when attendees were synced successfully to the CRM
 
-#### #3.46.13 - 9/22/2025
+#### # 3.46.13 - 9/22/2025
 
 - 🔧 Fixed Fixed "Test Connection" button failing with Drip since 3.46.12
 - 🔧 Fixed Fixed Drip integration not removing tags with periods in the tag name
 - 🔧 Fixed Fixed restricted content message not showing on LearnDash lessons and topics since 3.46.12 (users without access were redirected to the course instead)
 
-#### #3.46.12 - 9/16/2025
+#### # 3.46.12 - 9/16/2025
 
 - ✨ New Added support for the Booking Rescheduled trigger with Fluent Booking
 - ⚡️ Improved BuddyBoss App LearnDash access controls now properly handle locked lessons and topics
@@ -1275,7 +1288,7 @@ last_name
 - 🔧 Fixed Fixed fatal error "call to undefined function affwp_icon_tooltip()" with AffiliateWP version 2.29.0
 - 🛠️ Dev Refactored BuddyBoss App integration into smaller classes in the /integrations/buddyboss-app/ directory
 
-#### #3.46.11 - 9/9/2025
+#### # 3.46.11 - 9/9/2025
 
 - ✨ New Added - New ["LearnDash Quiz Results" batch operation](https://wpfusion.com/documentation/learning-management/learndash/#quiz-results) to sync quiz scores, points, and category scores to the CRM
 - ✨ New Added support for syncing ACF gallery field attachment IDs when updated on the frontend
@@ -1339,14 +1352,14 @@ prvReadEntityDefinition
 - 🔧 Fixed Fixed PHP warning in GiveWP integration when managing donation forms in the block editor
 - 🔧 Fixed Fixed GiveWP integration settings not persisting when using the block editor donation form builder
 
-#### #3.46.10 - 8/25/2025
+#### # 3.46.10 - 8/25/2025
 
 - ✨ New Added support for the email optin checkbox on the Give Visual Donation Form builder
 - 🔧 Fixed Fixed filters not working in the Activity Logs page
 - 🔧 Fixed Fixed date fields not syncing correctly with FooEvents when the Date Format in WordPress was set to d/m/Y
 - 🔧 Fixed Fixed error "Call to undefined function et_builder_dynamic_module_framework()" in the Divi editor with older versions of Divi
 
-#### #3.46.9 - 8/18/2025
+#### # 3.46.9 - 8/18/2025
 
 - ✨ New Added a setting to apply tags based on [LifterLMS order statuses](https://wpfusion.com/documentation/learning-management/lifterlms/#order-statuses)
 - ✨ New Added search box to the tags dropdown in the Bricks Builder integration
@@ -1359,7 +1372,7 @@ phone
 - 🔧 Fixed Fixed conflict with User Menus plugin: user role checkboxes were not clickable when WP Fusion was active
 - 🔧 Fixed Fixed - Constant Contact contact updates now preserve existing field values by loading the complete contact record before updating
 
-#### #3.46.8 - 8/11/2025
+#### # 3.46.8 - 8/11/2025
 
 - ✨ New Added support for the GiveWP Form Field Manager addon with the new visual donation form builder
 - ✨ New Added support for the Subscribe to List field in the Maropost integration
@@ -1395,7 +1408,7 @@ Class "EDD\Admin\Downloads\Editor\Section" not found
 
  since 3.46.7 when using Easy Digital Downloads versions below 3.3.6
 
-#### #3.46.7 - 8/4/2025
+#### # 3.46.7 - 8/4/2025
 
 - ✨ New Added individual and bulk log entry deletion functionality in the Activity Logs page
 - ✨ New Added time the batch operation was last run to the batch operations list
@@ -1409,13 +1422,13 @@ Class "EDD\Admin\Downloads\Editor\Section" not found
 - 🔧 Fixed Fixed fatal error auto-enrolling users into FluentCommunity courses via linked tags when the linked tags had been migrated from the previous settings storage in v3.46.7
 - 🔧 Fixed Fixed error "Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, string given" when tracking events with FluentCRM
 
-#### #3.46.6.1 - 7/30/2025
+#### # 3.46.6.1 - 7/30/2025
 
 - 🔧 Fixed Fixed incorrect version number in plugin updater (always showed as an update was available)
 - 🔧 Fixed Fixed missing "Apply Tags - Complete" setting on FluentCommunity courses since the new v3.46.6 UI
 - 🔧 Fixed Fixed Link With Tag setting not automatically migrating to the new FluentCommunity courses / spaces UI
 
-#### #3.46.6 - 7/28/2025
+#### # 3.46.6 - 7/28/2025
 
 - ✨ New Added translations for Spanish, French, German, Italian and Portuguese
 - Updated [Fluent Community](https://wpfusion.com/documentation/membership/fluentcommunity/) integration to move settings to individual Spaces and Courses
@@ -1423,7 +1436,7 @@ Class "EDD\Admin\Downloads\Editor\Section" not found
 - ⚡️ Improved Added caching for the list of WPBakery shortcodes
 - 🔧 Fixed Fixed tooltip on WooCommerce orders in the orders list showing the synced time as the current time for pending renewal orders
 
-#### #3.46.5 - 7/21/2025
+#### # 3.46.5 - 7/21/2025
 
 - ⚡️ Improved The WP Download Manager integration now respects the "Hide Archives" setting when using the 
 ```
@@ -1461,7 +1474,7 @@ wpf_forms_pre_submission_contact_id
 
  filters
 
-#### #3.46.4 - 7/14/2025
+#### # 3.46.4 - 7/14/2025
 
 - ✨ New Added WooCommerce Subscriptions [global tag settings](https://wpfusion.com/documentation/ecommerce/woocommerce-subscriptions/#global-tag-settings) to apply tags when a user has any active subscription
 - ✨ New Added support for MailPoet Tags in addition to Lists
@@ -1476,7 +1489,7 @@ Undefined array key "connection_configured"
  when loading the WP Fusion settings page during initial setup
 - 🔧 Fixed Fixed error testing the initial connection with HighLevel
 
-#### #3.46.3 - 7/8/2025
+#### # 3.46.3 - 7/8/2025
 
 - ✨ New Added dynamic tagging support to Zoho (type new tags into WP Fusion, generate tags based on product names and order statuses)
 - 🔧 Fixed Fixed Gravity Forms integration not syncing unchecked checkboxes as null (so they were not un-checking previously checked checkboxes in the CRM)
@@ -1493,7 +1506,7 @@ Undefined $status
 - 🔧 Fixed Fixed AffiliateWP integration trying to reapply the same linked tag after a user was just enrolled in an affiliate group by that linked tag
 - ⚡️ Improved Improved compatibility with EDD Recurring Payments v2.13.0+
 
-#### #3.46.2 - 7/1/2025
+#### # 3.46.2 - 7/1/2025
 
 - ✨ New Added support for the Consent field type in Gravity Forms
 - ✨ New Added support for importing all contacts from Zoho using the import tool (not just by tag)
@@ -1516,7 +1529,7 @@ WPF_DOING_WEBHOOK
 
  to meet WordPress.org standards regarding plugin prefixes
 
-#### #3.46.1 - 6/24/2025
+#### # 3.46.1 - 6/24/2025
 
 - ⚡️ Improved MemberPress grouped memberships with linked tags now properly handle upgrade paths - only the highest tier membership will be enrolled when multiple tags are present
 - ⚡️ Improved The Zoho integration has been updated to use the latest API version (v8) to support the new custom field types
@@ -1529,7 +1542,7 @@ WPF_DOING_WEBHOOK
 - 🔧 Fixed Fixed fatal error when creating a new WordPress user via a Groundhogg flow (same site)
 - 🔧 Fixed Fixed subscription status changes not syncing correctly with EDD Recurring Payments v2.13.0
 
-#### #3.46.0 - 6/16/2025
+#### # 3.46.0 - 6/16/2025
 
 - ✨ New Added support for Klaviyo OAuth 2.0 authorization
 - ⚡️ Improved The LearnDash integration has been rewritten and modernized for better performance, and some WP Fusion settings from previous versions have been moved to the new LearnDash settings panel
@@ -1568,13 +1581,13 @@ wpf_return_after_login_url
 
  filter to allow modifying the URL a user is redirected to after logging in, using the Return After Login feature
 
-#### #3.45.12 - 6/3/2025
+#### # 3.45.12 - 6/3/2025
 
 - ⚡️ Improved Added support for creating new custom fields in the CRM field select dropdowns even if there's an existing field with a partially matching name
 - 🔧 Fixed Fixed fatal error auto-applying WooCommerce coupons if loading the user's tags resulted in an API error
 - 🔧 Fixed Fixed error in SureCart "The provider is not installed or unavailable" when adding new Apply Tags integrations, since 3.45.8
 
-#### #3.45.11 - 5/28/2025
+#### # 3.45.11 - 5/28/2025
 
 - ✨ New Added an integration with [WP Travel Engine](https://wpfusion.com/documentation/events/wp-travel-engine/)
 - ✨ New Added "Next Payment Value" field to the WooCommerce Subscriptions integration
@@ -1597,7 +1610,7 @@ Calling key() on an object is deprecated
 
  when creating a new tag with Groundhogg (REST API)
 
-#### #3.45.10 - 5/19/2025
+#### # 3.45.10 - 5/19/2025
 
 - 🔧 Fixed Fixed numeric strings being converted to integers when saving the WP Fusion settings, which removed leading zeros from numeric values
 - 🔧 Fixed Fixed new users registered via the Gravity Forms User Registration Add-On being updated twice in the CRM
@@ -1621,13 +1634,13 @@ wp_safe_remote_request()
 
 , to make debugging malformed URLs easier
 
-#### #3.45.9.1 - 5/8/2025
+#### # 3.45.9.1 - 5/8/2025
 
 - ⚠️ Attention *Attention HighLevel users:* For several hours on May 7th, a bug in the HighLevel API caused refresh tokens to be returned in an invalid format. This update allows WP Fusion to use the new Reconnect API to attempt to automatically reestablish the connection and remove any corrupted data.
 - 🔧 Fixed Fixed new Gravity Forms field mapping UI not working with Keap and other CRMs that store the remote field type locally
 - 🔧 Fixed Fixed "A valid URL was not provided" error with Zoho when using auto login links
 
-#### #3.45.9 - 5/7/2025
+#### # 3.45.9 - 5/7/2025
 
 - ✨ New Added a [Sender.net CRM integration](https://wpfusion.com/crm/sender/)
 - ✨ New Added 
@@ -1642,11 +1655,11 @@ $gclid
 - 🔧 Fixed Fixed WP All Import integration not automatically syncing user meta after importing users
 - 🔧 Fixed Fixed error "Unable to process feed, no email address found" with Gravity Forms feeds configured using the new field mapping UI
 
-#### #3.45.8.1 - 4/29/2025
+#### # 3.45.8.1 - 4/29/2025
 
 - 🔧 Fixed Fixed new Gravity Forms field mapping not syncing custom merge fields or custom text values
 
-#### #3.45.8 - 4/29/2025
+#### # 3.45.8 - 4/29/2025
 
 - ✨ New Added a [ClickWhale integration](https://wpfusion.com/documentation/affiliates/clickwhale/)
 - ✨ New Added ability to export and import the WP Fusion settings as a .csv file
@@ -1675,7 +1688,7 @@ wpf_update_option()
 
  for updating options in the WP Fusion settings page
 
-#### #3.45.7 - 4/14/2025
+#### # 3.45.7 - 4/14/2025
 
 - ✨ New Added Booking Rescheduled trigger to [FluentBooking integration](https://wpfusion.com/documentation/events/fluentbooking/)
 - ⚡️ Improved The initial HighLevel authorization flow has been updated to use the gray-labelled LeadConnectorHQ Marketplace
@@ -1701,7 +1714,7 @@ wpf_get_user_id_by_email()
 
  function for getting a WordPress user ID from an email address
 
-#### #3.45.6 - 4/8/2025
+#### # 3.45.6 - 4/8/2025
 
 - ✨ New Added support for typing new segment names into the "Select List(s)" dropdown when [using a multiselect field for segmentation with HubSpot](https://wpfusion.com/documentation/crm-specific-docs/how-lists-work-with-hubspot/#using-a-multiselect-for-segmentation)
 - ✨ New Added 
@@ -1722,7 +1735,7 @@ undefined array key "status"
 
  when inserting a referral with SliceWP, if the referral had no status
 
-#### #3.45.5.1 - 4/3/2025
+#### # 3.45.5.1 - 4/3/2025
 
 - 🔧 Fixed Fixed fatal error 
 ```
@@ -1733,7 +1746,7 @@ undefined class "Condition_Base"
 - 🔧 Fixed Fixed missing tags select dropdown options when editing Elementor Popups conditions since 3.45.5
 - 🔧 Fixed Fixed fatal error loading the WooCommerce WP Fusion settings panel when no settings were configured
 
-#### #3.45.5 - 3/31/2025
+#### # 3.45.5 - 3/31/2025
 
 - ✨ New Added an integration with the [Elementor Hotspots element](https://wpfusion.com/documentation/page-builders/elementor/#hotspots)
 - ✨ New Added support for [Elementor display conditions](https://wpfusion.com/documentation/page-builders/elementor/#display-conditions)
@@ -1761,7 +1774,7 @@ wordpress_logged_in_wpfusioncachebuster
 - 🔧 Fixed Fixed multi-checkbox fields not syncing with WS Form
 - 🔧 Fixed Fixed upsell and downsell tags not being applied with CartFlows for guest checkouts when using the "Add to main order" option
 
-#### #3.45.4 - 3/24/2025
+#### # 3.45.4 - 3/24/2025
 
 - ✨ New Added a [BookingPress integration](https://wpfusion.com/documentation/events/bookingpress/)
 - 🔧 Fixed Fixed Maropost integration not loading more than 200 available tags or custom fields
@@ -1774,7 +1787,7 @@ WPFSelect
 
  React component to version 1.1.6
 
-#### #3.45.3 - 3/19/2025
+#### # 3.45.3 - 3/19/2025
 
 - 🔧 Fixed Fixed error 
 ```
@@ -1786,15 +1799,15 @@ Uncaught TypeError: Argument 2 passed to WPF_Advanced_Ads::check() must be an in
 - 🔧 Fixed Fixed Subscription Cancelled tags not being applied with MemberPress since 3.45.0
 - 🛠️ Dev Paid Memberships Pro integration has been separated into three classes for better readability
 
-#### #3.45.2.2 - 3/12/2025
+#### # 3.45.2.2 - 3/12/2025
 
 - 🔧 Fixed Fixed fatal error loading custom fields from ProfilePress since 3.45.2
 
-#### #3.45.2.1 - 3/11/2025
+#### # 3.45.2.1 - 3/11/2025
 
 - 🔧 Fixed Fixed fatal error loading custom fields from Checkout Field Editor Pro in the WP Fusion settings when no block-based checkout fields were configured since 3.45.2
 
-#### #3.45.2 - 3/10/2025
+#### # 3.45.2 - 3/10/2025
 
 - ✨ New Added support for custom checkout fields added to the block-based WooCommerce checkout with Checkout Field Editor Pro
 - ⚡️ Improved All custom fields sections in the Contact Fields list now link to their respective documentation pages
@@ -1814,7 +1827,7 @@ text
 - 🔧 Fixed Fixed REST API updates to user profiles not being synced to the CRM
 - 🛠️ Dev Removed compatibility with FluentForms v4.x and lower
 
-#### #3.45.1 - 3/3/2025
+#### # 3.45.1 - 3/3/2025
 
 - ✨ New Added support for tickets and RSVPs configured as blocks with [Event Tickets](https://wpfusion.com/documentation/events/the-events-calendar-event-tickets/#ticket-blocks)
 - ✨ New Added support for a [backup Service Account Key for Infusionsoft/Keap](https://wpfusion.com/documentation/installation-guides/how-to-connect-infusionsoft-to-wordpress/#backup-service-account-key). If the primary key is throttled, WP Fusion will automatically switch to the backup key until 12am UTC
@@ -1840,7 +1853,7 @@ WPF_MemberPress_Transactions does not have a method "recurrring_transaction_fail
  since 3.45.0
 - 🔧 Fixed Fixed PHP warning in the Salesforce integration when the webhook input was empty
 
-#### #3.45.0.1 - 2/26/2025
+#### # 3.45.0.1 - 2/26/2025
 
 - 🔧 Fixed Fixed error 
 ```
@@ -1850,7 +1863,7 @@ WPF_MemberPress_Transactions does not have a method "recurrring_transaction_comp
  since 3.45.0
 - 🔧 Fixed Fixed the timestamp conversion to midnight with HubSpot sometimes having problems if future dates were after a change to or from Daylight Savings Time (DST)
 
-#### #3.45.0 - 2/24/2025
+#### # 3.45.0 - 2/24/2025
 
 - ✨ New Added ability to sync MemberPress subscription and transaction fields to separate CRM fields [on a per-product basis](https://wpfusion.com/documentation/membership/memberpress/#syncing-fields-on-a-per-product-basis)
 - ✨ New Added support for applying tags based on Roadmap and Roadmap Step completion in the Memberoni integration
@@ -1901,7 +1914,7 @@ wpf_get_name_from_full_name()
 
  function to split a full name into first and last name components
 
-#### #3.44.27 - 2/17/2025
+#### # 3.44.27 - 2/17/2025
 
 - ✨ New Added historical orders export tool for SureCart
 - ⚡️ Improved With [Event Tickets Plus](https://wpfusion.com/documentation/events/the-events-calendar-event-tickets/#editing-attendees), if an attendee's email address is changed on the frontend, and "Create New Attendees on Edit" is enabled, a new contact record will be created in the CRM for the new email address and any tags for the event will be applied
@@ -1929,7 +1942,7 @@ wpf_infusionsoft_query_args
 
  filter to allow overriding the default query arguments for the Infusionsoft contact ID lookup
 
-#### #3.44.26 - 2/11/2025
+#### # 3.44.26 - 2/11/2025
 
 - ✨ New Added support for editing Event Tickets attendees in the admin, and an option to create a new CRM contact record when an attendee's email address is changed
 - ✨ New Added (beta) support for authorizing HighLevel at the agency level, and switching between sub-locations within WP Fusion
@@ -1969,7 +1982,7 @@ wpf_get_name_from_full_name()
 
  to split a full name into first and last name components
 
-#### #3.44.25 - 2/3/2025
+#### # 3.44.25 - 2/3/2025
 
 - ✨ New Added support for [retrying failed API calls in the logs](https://wpfusion.com/documentation/getting-started/activity-logs/#retrying-api-calls)
 - ✨ New Added support for syncing WPForms payment fields
@@ -2008,7 +2021,7 @@ wp_safe_remote_get()
 wp_http_validate_url()
 ```
 
-#### #3.44.24 - 1/27/2025
+#### # 3.44.24 - 1/27/2025
 
 - ✨ New Added support for [multi-level donation forms](https://wpfusion.com/documentation/ecommerce/give/#donation-level-settings) in the new GiveWP visual form builder
 - ✨ New Added support for applying tags after offline donations in the new GiveWP visual form builder
@@ -2033,7 +2046,7 @@ wp_fusion\secure_blocks_for_gutenberg\API
  class until we've had time to update all our addons to the new API endpoint
 - 🛠️ Dev Tested for WordPress 6.8
 
-#### #3.44.23 - 1/20/2025
+#### # 3.44.23 - 1/20/2025
 
 - ✨ New Added support for [Presto Player Email Capture forms](https://wpfusion.com/documentation/other/presto-player/)
 - ✨ New Added support for Forminator 1.39+, Removed legacy v1.30 code.
@@ -2058,7 +2071,7 @@ wc_order_count
 - 🔧 Fixed Fixed infinite loop handling HighLevel 401 errors related to missing scopes
 - 🛠️ Dev cleaned up and standardized build processes for React integrations via webpack.config.js
 
-#### #3.44.22 - 1/13/2025
+#### # 3.44.22 - 1/13/2025
 
 - ✨ New Added a link to the CRM contact record [in the attendee details modal with Event Tickets](https://wpfusion.com/documentation/events/the-events-calendar-event-tickets/#managing-attendees)
 - ⚡️ Improved With FluentCRM, if the email optin checkbox is enabled for WooCommerce, EDD, or GiveWP, the corresponding Status field will be enabled for sync
@@ -2075,7 +2088,7 @@ wpf_status_icon()
 
  function for outputting a status icon in the admin
 
-#### #3.44.21.1 - 1/7/2025
+#### # 3.44.21.1 - 1/7/2025
 
 - 🔧 Fixed Fixed missing "else" condition in the 
 ```
@@ -2085,7 +2098,7 @@ insert_setting_after()
  method causing settings panels not to appear in the LearnDash integration
 - 🔧 Fixed Fixed new GiveWP form builder integration not displaying saved settings
 
-#### #3.44.21 - 1/6/2025
+#### # 3.44.21 - 1/6/2025
 
 - ✨ New Added (very beta) integration with the new GiveWP visual form builder
 - ✨ New Added support for applying lists in supported CRMs from [FluentBooking bookings](https://wpfusion.com/documentation/events/fluentbooking/)
@@ -2094,7 +2107,7 @@ insert_setting_after()
 - ✨ New Added option to set new contacts to either Subscribed or Pending in FluentCRM (same site and REST API) when they check the opt-in checkbox on the WooCommerce checkout (default is Subscribed)
 - 🔧 Fixed Fixed JavaScript error when clicking the Test Connection button during the initial setup with Mailchimp
 
-#### #3.44.20 - 12/31/2024
+#### # 3.44.20 - 12/31/2024
 
 - ✨ New Added support for [FluentCommunity](https://wpfusion.com/documentation/membership/fluent-community/)
 - ⚡️ Improved React select components will now be disabled while the list of available tags is being loaded
@@ -2112,7 +2125,7 @@ Class "Forminator_Integration" not found
 - 🔧 Fixed Fixed MemberPress integration running on status changes between the same status (i.e. from pending to pending)
 - 🔧 Fixed Fixed "Type to add new" message being appended each time you clicked on the Select Tag(s) dropdown in the WP Fusion settings
 
-#### #3.44.19 - 12/17/2024
+#### # 3.44.19 - 12/17/2024
 
 - ✨ New Added ability to [apply tags to Amelia event bookings](https://wpfusion.com/documentation/events/amelia/#syncing-bookings-and-custom-fields) in addition to appointments
 - ✨ New Added Event Name and Event Date / Time fields to the Amelia Booking integration
@@ -2140,7 +2153,7 @@ get_posts()
 - 🔧 Fixed Fixed fatal error in the Amelia Booking Appointments batch operation since 3.44.17
 - 🔧 Fixed Fixed fatal error processing Amelia bookings without custom fields since 3.44.16
 
-#### #3.44.18 - 12/10/2024
+#### # 3.44.18 - 12/10/2024
 
 - ⚡️ Improved If an invalid attribute is passed to Klaviyo, the request will now be retried without the invalid attribute
 - ⚡️ Improved If a WooCommerce customer created by a registered user checks out with an alternate email address, the order details in the sidebar will now show the link to the customer's contact record and not the user's contact record
@@ -2159,7 +2172,7 @@ source_type
 - 🔧 Fixed Fixed bulk edit of WooCommerce coupons erasing the WP Fusion settings on those coupons
 - 🔧 Fixed Fixed WooCommerce lifetime value and total order count not syncing accurately during an initial checkout
 
-#### #3.44.17 - 12/2/2024
+#### # 3.44.17 - 12/2/2024
 
 - ✨ New Added option to apply tags when a user accepts a retention offer, and sync the offer title to the CRM, with the [WooCommerce Cancellation Surveys plugin](https://wpfusion.com/documentation/ecommerce/cancellation-survey-for-woocommerce-subscriptions/)
 - ✨ New Added option to [prevent linked tags from unenrolling users](https://wpfusion.com/documentation/learning-management/learndash/#course-settings-and-auto-enrollment) from LearnDash courses in cases of payment failures
@@ -2172,7 +2185,7 @@ source_type
 - 🔧 Fixed Fixed PHP warnings in the Klaviyo integration when syncing customer data without a phone number
 - 🔧 Fixed Fixed fatal error in the Klick Tipp integration when syncing tags for a contact that didn't have any smart tags
 
-#### #3.44.16 - 11/26/2024
+#### # 3.44.16 - 11/26/2024
 
 - ✨ New Added support for the "Defer Until Activation" feature to the Registration Options for BuddyPress plugin
 - ✨ New Added additional validation on phone numbers for Klaviyo to prevent invalid numbers from blocking the API request
@@ -2200,7 +2213,7 @@ update
 - 🔧 Fixed Fixed Klaviyo duplicate profile handling appending the duplicate ID to the request URL instead of replacing the existing ID
 - 🔧 Fixed Fixed HighLevel integration reading tags out of webhooks as a single comma-separated string
 
-#### #3.44.15 - 11/18/2024
+#### # 3.44.15 - 11/18/2024
 
 - ✨ New Added support for ConvesioConvert (formerly Growmatik)
 - ✨ New Added support for syncing AffiliateWP referral data from Easy Digital Downloads payments
@@ -2228,7 +2241,7 @@ wpf_disable_api_queue()
  function to allow bypassing the API queue for a single request
 - 🛠️ Dev Added a basic framework for unit testing, with more tests to follow. See readme.md for more information.
 
-#### #3.44.14 - 11/12/2024
+#### # 3.44.14 - 11/12/2024
 
 - ✨ New Added support for [Klaviyo webhooks](https://wpfusion.com/documentation/webhooks/klaviyo-webhooks/)
 - ✨ New Added ability to [set a default Record Type](https://wpfusion.com/documentation/installation-guides/how-to-connect-salesforce-to-wordpress/#record-type) for new Salesforce contacts created by WP Fusion
@@ -2261,7 +2274,7 @@ wpf_get_tags()
 - 🔧 Fixed Fixed methods in namespaced integration classes showing as custom code on the Advanced settings tab
 - 🔧 Fixed Fixed Brevo webhooks not working when the subscriber already had a WordPress user record that was not linked to a contact ID
 
-#### #3.44.13 - 11/1/2024
+#### # 3.44.13 - 11/1/2024
 
 - ✨ New Added error handling when an invalid contact ID is passed to wp_fusion()->crm
 - ⚡️ Improved Improved error handling for deleted or merged contacts in HubSpot
@@ -2270,7 +2283,7 @@ wpf_get_tags()
 - 🔧 Fixed Fixed unhandled error recording an entry note in the WPForms Pro integration when the form entry could not be synced to the CRM
 - 🔧 Fixed Fixed undefined index notices in the MemberPress integration when resuming a subscription
 
-#### #3.44.12 - 10/28/2024
+#### # 3.44.12 - 10/28/2024
 
 - ✨ New Added a [Cancellation Survey for WooCommerce Subscriptions integration](https://wpfusion.com/documentation/ecommerce/cancellation-survey-for-woocommerce-subscriptions/)
 - ✨ New Added support for displaying Elementor widgets [dynamically based on the access rules configured on the underlying post](https://wpfusion.com/documentation/page-builders/elementor/#inheriting-access-rules-from-posts)
@@ -2298,7 +2311,7 @@ wpf_should_do_asynchronous_checkout
 
  filter to allow overriding the default logic for determining if a WooCommerce order should be processed asynchronously
 
-#### #3.44.11 - 10/21/2024
+#### # 3.44.11 - 10/21/2024
 
 - ✨ New Added support for conditional logic when applying tags in Fluent Forms
 - ✨ New Added support for dynamic tag selection fields in Fluent Forms
@@ -2327,7 +2340,7 @@ wp_fusion()->crm->get_marketing_consent_from_email()
 
  to allow retrieving the marketing consent status from an email address (with WooCommerce and Easy Digital Downloads)
 
-#### #3.44.10 - 10/14/2024
+#### # 3.44.10 - 10/14/2024
 
 - ✨ New Added support for [webhooks configured via private apps in HubSpot](https://wpfusion.com/documentation/webhooks/hubspot-webhooks/#webhooks-in-private-apps) (works with all HubSpot plans)
 - ✨ New Added support for refunds via the Infusionsoft/Keap XMLRPC API (thanks @GBBourdages!!)
@@ -2359,7 +2372,7 @@ GFAPI::get_entry()
  fails
 - 🔧 Fixed Fixed fatal error in the Event Espresso Registrations batch operation if a registration didn't have a primary attendee
 
-#### #3.44.9 - 10/8/2024
+#### # 3.44.9 - 10/8/2024
 
 - ⚡️ Improved The new Infusionsoft/Keap API [does not support refunding orders](https://developer.infusionsoft.com/faqs/add-refund-order-api/), so after a refund WP Fusion will record an order note with a link to the order so it can be refunded manually
 - 🔧 Fixed Fixed Account Name field not being loaded from ActiveCampaign
@@ -2367,7 +2380,7 @@ GFAPI::get_entry()
 - 🔧 Fixed Fixed auto-applied coupons with WooCommerce not being applied during cart recovery links from the Abandoned Cart addon
 - 🔧 Fixed Fixed fatal error visiting an auto-login URL with an invalid contact ID with FunnelKit Automations (same site)
 
-#### #3.44.8 - 9/30/2024
+#### # 3.44.8 - 9/30/2024
 
 - ⚡️ Improved Stopped syncing the WooCommerce Order Status field when the order status is "Pending", to prevent duplicate contacts at checkout (especially with the Abandoned Cart addon)
 - ⚡️ Improved Numeric states or regions will no longer be synced to Infusionsoft/Keap to prevent an API error
@@ -2390,7 +2403,7 @@ wp_die()
 - 🔧 Fixed Fixed import tool with Groundhogg (REST API) not loading more than 100 contacts
 - 🔧 Fixed Fixed - further checks to ensure tags arrays are re-indexed before being passed to the CRM
 
-#### #3.44.7 - 9/23/2024
+#### # 3.44.7 - 9/23/2024
 
 - ✨ New Added support (via code snippet) for [syncing lead source data when updating a contact](https://wpfusion.com/documentation/tutorials/lead-source-tracking/#sync-lead-source-data-for-existing-contacts), instead of just when adding a new contact
 - ⚡️ Improved If a tag linked to an AffiliateWP group is applied to a pending affiliate, the affiliate will now be activated before being added to the group
@@ -2415,12 +2428,12 @@ user_meta
 - 🔧 Fixed Fixed error "array_keys(): Argument #1 ($array) must be of type array, bool given" in LearnDash admin course list when no tags were available in the CRM
 - 🔧 Fixed Fixed error "undefined function affwp_get_affiliate_statuses()" with AffiliateWP versions below 2.3
 
-#### #3.44.6.1 - 9/17/2024
+#### # 3.44.6.1 - 9/17/2024
 
 - 🔧 Fixed Fixed inverted logic on EDD version check for discount functions: discounts tagging functionality was disabled on EDD 3.0 and higher, since 3.44.6
 - 🔧 Fixed Fixed lockout redirect URLs saved without a trailing slash causing an infinite redirect when a lockout redirect is triggered
 
-#### #3.44.6 - 9/16/2024
+#### # 3.44.6 - 9/16/2024
 
 - ✨ New Added support for resyncing contact IDs and tags by bulk-selecting users from the All Users page
 - ✨ New Added support for processing WooCommerce orders in bulk by selecting order IDs from the Orders page
@@ -2438,7 +2451,7 @@ wp_fusion()->crm->app
 - 🔧 Fixed Fixed course complete tags not applying with WPComplete when a course with multiple buttons on the same page is marked complete by an admin
 - 🔧 Fixed Fixed user role changes after a user's initial registration not being synced to the CRM
 
-#### #3.44.5 - 9/10/2024
+#### # 3.44.5 - 9/10/2024
 
 - ✨ New Added support for syncing guest bookings with Amelia
 - ⚡️ Improved The Infusionsoft/Keap integration will now convert all two-digit state abbreviations to uppercase
@@ -2456,7 +2469,7 @@ wp_fusion_init_crm
 - 🔧 Fixed Fixed error in the HighLevel integration when removing tags from a deleted contact
 - 🔧 Fixed Fixed Infusionsoft/Keap integration logging an error when recording a payment against a free order
 
-#### #3.44.4 - 9/3/2024
+#### # 3.44.4 - 9/3/2024
 
 - ✨ New Added support for [setting a primary connection for field mapping with WPForms](https://wpfusion.com/documentation/lead-generation/wpforms/#conditional-logic), to make it easier to apply tags via conditional logic
 - ✨ New Added support for multiple memberships with Restrict Content Pro
@@ -2485,7 +2498,7 @@ wp_capabilities
 - 🔧 Fixed Fixed PHP warning "Automatic conversion of false to array is deprecated" when the shutdown hook runs multiple times
 - 🔧 Fixed Fixed PHP error "array_map(): Argument #2 ($array) must be of type array, string given" in If-Menu integration with PHP 8.2
 
-#### #3.44.3 - 8/26/2024
+#### # 3.44.3 - 8/26/2024
 
 - ✨ New Added support for [creating and updating Leads from form submissions with Zoho](https://wpfusion.com/documentation/crm-specific-docs/updating-leads/)
 - ⚡️ Improved When using [the api.php webhook method](https://wpfusion.com/documentation/other-common-issues/webhooks-not-being-received-by-wp-fusion/#the-async-endpoint-advanced), you can now define a custom ABSPATH via php.ini or a bootstrap file (for custom WP directory locations)
@@ -2525,7 +2538,7 @@ wpf_is_field_active()
 
  can now take an array of field IDs, it will return true if any of the fields are active
 
-#### #3.44.2 - 8/19/2024
+#### # 3.44.2 - 8/19/2024
 
 - ✨ New Added support for line items (discounts, shipping, taxes, and fees) with the new Infusionsoft/Keap integration
 - ✨ New Added support for [webhooks (aka "outbounds") with KlickTipp](https://wpfusion.com/documentation/webhooks/klicktipp-webhooks/)
@@ -2540,7 +2553,7 @@ wpf_is_field_active()
 - ⚡️ Improved Improved KlickTipp error handling
 - 🔧 Fixed Fixed the Membership Expiration Date field enabled on a specific WooCommerce Membership Level not being set to sync as a Date by default
 
-#### #3.44.1.1 - 8/15/2024
+#### # 3.44.1.1 - 8/15/2024
 
 - ✨ New Added US state name to ISO 3166-2 code conversion for updating billing and shipping addresses with Infusionsoft / Keap
 - ⚡️ Improved Disabled syncing of the "Person Notes" field with Infusionsoft / Keap for existing contacts, since Keap now replaces the notes field when notes are synced, instead of appending to it
@@ -2555,7 +2568,7 @@ Y-m-d
 - 🔧 Fixed Fixed missing CRM field labels in WPForms feed settings with CRMs that use custom field categories
 - 🔧 Fixed Fixed "Creation of dynamic property" PHP warnings in older CRM integrations with PHP 8.2
 
-#### #3.44.1 - 8/12/2024
+#### # 3.44.1 - 8/12/2024
 
 - *Note:* Infusionsoft/Keap have removed the standard "Password" and "Username" fields from the new API, due to security concerns. To avoid errors when syncing passwords and usernames, WP Fusion will log a notice when these fields are detected and remove them from the sync. If you need to sync usernames and passwords, please create new custom text fields to store the data.
 - ⚡️ Improved Improved Ontraport error handling for duplicate and not found contacts
@@ -2593,17 +2606,17 @@ false
 ```
 - 🛠️ Dev The WP Fusion logs are now sorted by log ID instead of timestamp, to avoid confusion when changing the site's timezone
 
-#### #3.44.0.2 - 8/6/2024
+#### # 3.44.0.2 - 8/6/2024
 
 - 🔧 Fixed Fixed custom fields with spaces in the labels not migrating to the new Infusionsoft API field mapping
 - 🔧 Fixed Fixed "Unprocessable entity" errors when syncing custom fields with spaces in the label to Infusionsoft/Keap since 3.44.0
 
-#### #3.44.0.1 - 8/6/2024
+#### # 3.44.0.1 - 8/6/2024
 
 - 🔧 Fixed Fixed new Keap / Infusionsoft integration not loading more than 1000 each of tags or tag categories
 - 🔧 Fixed Fixed Keap / Infusionsoft integration not importing all contacts if no tag was specified for the import
 
-#### #3.44.0 - 8/5/2024
+#### # 3.44.0 - 8/5/2024
 
 - Big update: WP Fusion has been updated to use the Infusionsoft REST API, and [Service Account Keys](https://developer.infusionsoft.com/pat-and-sak/) for authentication. Infusionsoft / Keap users will need to update their API credentials to ensure uninterrupted service.
 - ⚡️ Improved 
@@ -2649,11 +2662,11 @@ DOMNodeInserted
  when editing WooCommerce variations
 - 🔧 Fixed Fixed PHP warning "Attempt to read property 'referrer' on bool" when syncing AffiliateWP referrer visit data for a recurring payment
 
-#### #3.43.20.1 - 7/30/24
+#### # 3.43.20.1 - 7/30/24
 
 - 🔧 Fixed Fixed PHP warning "Attempt to read property 'date' on null" in the EDD Recurring Payments integration when processing an initial payment for a subscription, since 3.43.20
 
-#### #3.43.20 - 7/29/24
+#### # 3.43.20 - 7/29/24
 
 - ⚡️ Improved If the Order Date or Next Payment Date are enabled with Easy Digital Downloads Recurring Payments, these will now be synced after each renewal payment
 - 🔧 Fixed Fixed saved MemberDash tag settings not loading
@@ -2669,7 +2682,7 @@ DOMNodeInserted
  when updating MailPoet subscribers
 - 🔧 Fixed Fixed fatal error with PHP 8.2 when an EDD subscription expired if Remove Tags was checked and no tags were specified in the Apply Tags setting
 
-#### #3.43.19 - 7/22/2024
+#### # 3.43.19 - 7/22/2024
 
 - ✨ New Added a [MemberDash integration](https://wpfusion.com/documentation/membership/memberdash/)
 - ⚡️ Improved If a 
@@ -2687,7 +2700,7 @@ $source
 - 🔧 Fixed Fixed spaces in tag names not working with If Menu v0.17.0+
 - 🔧 Fixed Fixed fatal error adding a member to a WooCommerce Memberships for Teams team on PHP 8.2 when a linked tag was set on the team but no "Apply Tags" were specified
 
-#### #3.43.18 - 7/16/2024
+#### # 3.43.18 - 7/16/2024
 
 - ✨ New Added support for syncing custom Event Tickets fields configured on a single post or page
 - Adding Landing Page and Referring URL to the [AffiliateWP referral data](https://wpfusion.com/documentation/affiliates/affiliate-wp/#syncing-referrer-meta-fields)
@@ -2716,14 +2729,14 @@ wpf_background_process_memory_utilization_percentage
 
  to allow customizing the memory utilization percentage for the background process
 
-#### #3.43.17 - 7/2/2024
+#### # 3.43.17 - 7/2/2024
 
 - 🔧 Fixed Fixed Elementor Forms integration treating single-option selects as multiselects since 3.43.16
 - 🔧 Fixed Fixed JavaScript error with Asynchronous Checkout (for WooCommerce) when another plugin returns an AJAX response before the payment is processed
 - 🔧 Fixed Fixed weekly license status check not running
 - ✨ New Added a notice in the plugins list when the license key is inactive or expired
 
-#### #3.43.16 - 7/1/2024
+#### # 3.43.16 - 7/1/2024
 
 - ✨ New Added Source field for sync with Klaviyo
 - ⚡️ Improved New contacts added to Pipedrive will be automatically have their marketing status set to "subscribed"
@@ -2744,7 +2757,7 @@ wpf_bulk_order_actions_max_orders
 
  for modifying the max number of orders status changes that will be processed at once
 
-#### #3.43.15 - 6/24/2024
+#### # 3.43.15 - 6/24/2024
 
 - ✨ New Added support for Filter Queries - Advanced with the Search & Filter Pro plugin
 - 🔧 Fixed Fixed fatal error when tracking events with FluentCRM and the event value is empty
@@ -2765,7 +2778,7 @@ wp_fusion()->access->filter_queries_priorty
 
  to allow setting Advanced query filtering to a custom priority
 
-#### #3.43.14 - 6/17/2024
+#### # 3.43.14 - 6/17/2024
 
 - ✨ New Added ability to [sync WooCommerce Memberships status and expiration date to separate custom fields per membership plan](https://wpfusion.com/documentation/membership/woocommerce-memberships/#plan-specific-field-mapping)
 - ✨ New Added support for lists with Constant Contact (can be configured for new user registrations in the General settings, or with the Gravity Forms or Elementor Forms integrations)
@@ -2774,7 +2787,7 @@ wp_fusion()->access->filter_queries_priorty
 - 🔧 Fixed Fixed the "Duplicate and Delete" [feature for email address changes](https://wpfusion.com/documentation/crm-specific-docs/email-address-changes-with-mailerlite/) not working with Mailerlite
 - 🔧 Fixed Fixed error "Argument #1 ($json) must be of type string, array given" in the LatePoint integration when creating a booking if no settings are configured on the service
 
-#### #3.43.13 - 6/10/2024
+#### # 3.43.13 - 6/10/2024
 
 - ✨ New Added Last Order Status field for sync with WooCommerce (will be synced whenever the status changes for an order)
 - ✨ New Added logging for MemberPress transaction status changes
@@ -2796,7 +2809,7 @@ user_register
 - 🔧 Fixed Fixed tags showing up twice in the Select Tags dropdowns with Encharge
 - 🔧 Fixed Fixed PHP warning in the SureCart integration when no custom fields were available
 
-#### #3.43.12 - 6/3/2024
+#### # 3.43.12 - 6/3/2024
 
 - ✨ New Added ability to apply lists via form integrations with FluentCRM (same site)
 - ⚡️ Improved After a user's WooCommerce Points and Rewards points balance is synced to the CRM by WP Fusion, the 
@@ -2813,7 +2826,7 @@ wc_points_balance
 wp_options
 ```
 
-#### #3.43.11 - 5/28/2024
+#### # 3.43.11 - 5/28/2024
 
 - ✨ New Added support for [Encharge webhooks](https://wpfusion.com/documentation/webhooks/encharge-webhooks/)
 - ✨ New Added support for [Drip site tracking](https://wpfusion.com/documentation/tutorials/site-tracking-scripts/#drip) (was removed at the end of 2022 but Drip has re-enabled it)
@@ -2848,7 +2861,7 @@ wpf_bulk_order_actions_max_orders
 
  for modifying the max number of orders status changes that will be processed at once
 
-#### #3.43.10 - 5/20/2024
+#### # 3.43.10 - 5/20/2024
 
 - ✨ New Added an Encharge CRM integration
 - 🔧 Fixed Fixed [auto-applied coupons with WooCommerce](https://wpfusion.com/documentation/ecommerce/woocommerce/#automatic-discounts) not working on subscription purchases when the current cart total was 0
@@ -2895,17 +2908,17 @@ array_intersect()
 
  (Summer 2022 version)
 
-#### #3.43.9 - 5/13/2024
+#### # 3.43.9 - 5/13/2024
 
 - ✨ New Added support for Forminator 1.30.0+ (re-enables disabled Forminator integration since 3.43.6.2)
 - Updated Constant Contact API token to use new API limits of 250,000 calls per day (was previously 10,000 calls per day) - *Requires re-authorizing the connection via the prompt*
 - 🔧 Fixed Fixed import tool with HubSpot importing all contacts despite specifying a list, since 3.43.3
 
-#### #3.43.8.1 - 5/7/2024
+#### # 3.43.8.1 - 5/7/2024
 
 - 🔧 Fixed Fixed ActiveCampaign API error "Error while processing request" when adding a contact to multiple lists at the same time, since 3.43.6
 
-#### #3.43.8 - 5/6/2024
+#### # 3.43.8 - 5/6/2024
 
 - 🔧 Fixed Fixed error adding subscribers to Klaviyo lists with marketing consent when the site timzeone was set to UTC or Sydney (UTC+10)
 - 🔧 Fixed Fixed error removing subscribers from Klaviyo lists that were added with explicit consent
@@ -2923,7 +2936,7 @@ date()
 
  to avoid timezone conversion shenanigans
 
-#### #3.43.7 - 4/29/2024
+#### # 3.43.7 - 4/29/2024
 
 - ✨ New Added a [Content Control integration](https://wpfusion.com/documentation/membership/content-control/)
 - ⚡️ Improved The Elementor Forms integration will now use the field types from the form settings rather than guessing the type based on the submitted value
@@ -2943,7 +2956,7 @@ $force_update
 - 🔧 Fixed Fixed infinite loop when using the "Refresh if access is denied" setting and the API call to look up the user's contact ID fails
 - 🔧 Fixed Fixed fatal error running WP All Import imports when WooCommerce is not installed since 3.43.5
 
-#### #3.43.6.2 - 4/25/2024
+#### # 3.43.6.2 - 4/25/2024
 
 - 🔧 Fixed Fixed - Completely disabled the Forminator integration until we can rebuild the integration using their new API
 - 🔧 Fixed Fixed HighLevel tags not being converted to lowercase for the 
@@ -2953,11 +2966,11 @@ remove_tags()
 
  API call
 
-#### #3.43.6.1 - 4/24/2024
+#### # 3.43.6.1 - 4/24/2024
 
 - 🔧 Fixed Fixed PHP warning: "foreach() argument must be of type array|object, null given" when processing Contact Form 7 submissions without payment methods since 3.43.5
 
-#### #3.43.6 - 4/23/2024
+#### # 3.43.6 - 4/23/2024
 
 - ✨ New Added support for [resubscribing unsubscribed contacts with ActiveCampaign](https://wpfusion.com/documentation/tutorials/double-opt-ins/#activecampaign) (supports Gravity Forms and Elementor Forms)
 - ✨ New Added Apply Tags and Link With Tag settings for individual [Teams for WooCommerce Memberships teams](https://wpfusion.com/documentation/membership/teams-for-woocommerce-memberships/)
@@ -2999,7 +3012,7 @@ date
 wpf_get_iso8601_date()
 ```
 
-#### #3.43.5 - 4/15/2024
+#### # 3.43.5 - 4/15/2024
 
 - ✨ New Added an integration with the [ZealousWeb payment plugins for Contact Form 7](https://wpfusion.com/documentation/lead-generation/contact-form-7/#payments)
 - ⚡️ Improved The Bento webhook handler will now use the 
@@ -3024,7 +3037,7 @@ __()
 
  without a text domain
 
-#### #3.43.4.1 - 4/9/2024
+#### # 3.43.4.1 - 4/9/2024
 
 - 🔧 Fixed Fixed error 
 ```
@@ -3040,7 +3053,7 @@ Argument #1 ($callback) must be a valid callback, class WPF_Staging does not hav
 )
 - ✨ New Added Event Variation SKU field for sync with FooEvents
 
-#### #3.43.4 - 4/8/2024
+#### # 3.43.4 - 4/8/2024
 
 - ✨ New Added ability to [link to individual entries in the activity logs](https://wpfusion.com/documentation/getting-started/activity-logs/#the-logs)
 - ⚡️ Improved When using hierarchical groups with BuddyPress / BuddyBoss, child groups with no access rules will now inherit the parent group's access settings
@@ -3053,7 +3066,7 @@ Argument #1 ($array) must be of type array, string given
 
  in the admin post list table with PHP 8.2 when a required tag on a post was saved with invalid data
 
-#### #3.43.3.1 - 4/3/2024
+#### # 3.43.3.1 - 4/3/2024
 
 - 🔧 Fixed Fixed "Unknown tag" warning in the UI with FluentCRM since 3.43.3
 - 🔧 Fixed Fixed tags not being applied for MemberPress members added to free memberships via the admin
@@ -3061,7 +3074,7 @@ Argument #1 ($array) must be of type array, string given
 - 🔧 Fixed Fixed fatal error "Call to member function get_error_message() on int" when importing users via the async webhook endpoint, since 3.43.3
 - 🔧 Fixed Fixed "No tag found with name" error when using the import tool with MailChimp since 3.43.3
 
-#### #3.43.3 - 4/2/2024
+#### # 3.43.3 - 4/2/2024
 
 - ✨ New Added option to remove tags applied at enrollment when a user is unenrolled from a LearnDash course or group
 - ✨ New Added Transaction Number field for sync with MemberPress
@@ -3097,7 +3110,7 @@ wp_fusion()->user->remove_tags()
 
  will now attempt to convert tag labels to IDs if the CRM doesn't support adding tags (helps with switching CRMs)
 
-#### #3.43.2 - 3/25/2024
+#### # 3.43.2 - 3/25/2024
 
 - ✨ New Added support for connecting to FunnelKit Automations via PHP instead of REST API (signiciantly improved performance when both plugins are on the same site)
 - Removed fallback support for legacy 
@@ -3118,12 +3131,12 @@ Cannot use object of type WP_Error as array
 
  when logging HTTP API errors since 3.43.1
 
-#### #3.43.1.1 - 3/21/2024
+#### # 3.43.1.1 - 3/21/2024
 
 - 🔧 Fixed Fixed error "/wp-fusion/includes/integrations/class-woocommerce-compatibility.php is not a known WordPress plugin" when using the Email Optin checkbox with WooCommerce, since 3.43.1
 - ⚡️ Improved WP Fusion now declares itself incompatible with the WooCommerce block-based product editor
 
-#### #3.43.1 - 3/19/2024
+#### # 3.43.1 - 3/19/2024
 
 - ✨ New Added a [MasterStudy LMS integration](https://wpfusion.com/documentation/learning-management/masterstudy/)
 - ✨ New Added option to automatically remove [MemberPress corporate account tags](https://wpfusion.com/documentation/membership/memberpress/#corporate-accounts) from sub-account members when the parent membership is cancelled
@@ -3165,7 +3178,7 @@ update_contact()
 
  method
 
-#### #3.43.0 - 3/12/2024
+#### # 3.43.0 - 3/12/2024
 
 - The Great Date update. Prior to this version, dates and timezones across integrations and CRMs were inconsistent. Some plugins used UTC (MemberPress) and some used local time (WooCommerce). For some CRMs we converted the time zone back to local time (HubSpot), some we converted to UTC (Ontraport), and some we left as is (ActiveCampaign). This update attempts to standardize the way dates and times are handled by extracting all dates from plugin integrations in UTC, and then converting them back to local time when syncing to CRMs that require it that way. This will result in more predictable handling of time zones, but there may be unexpected behavior in the initial release.
 - ✨ New Added a [visibility indicator](https://wpfusion.com/documentation/page-builders/wpbakery-page-builder/#visibility-indicator) to protected elements with the WPBakery frontend editor
@@ -3189,7 +3202,7 @@ host: api.engagebay.com
 - 🔧 Fixed Fixed PHP notices in the Amelia integration
 - 🛠️ Dev If a user has a contact ID and no tags, the tags meta will now be deleted from the usermeta table for that user (reduces database size for users with no tags)
 
-#### #3.42.14 - 2/27/2024
+#### # 3.42.14 - 2/27/2024
 
 - Updated expired Microsoft Dynamics 365 app secret
 - ⚡️ Improved API actions will no longer be queued up for the 
@@ -3208,7 +3221,7 @@ wpf_phone_number_to_e164()
 
  to convert phone numbers to E.164 format
 
-#### #3.42.13 - 2/26/2024
+#### # 3.42.13 - 2/26/2024
 
 - ✨ New Added support for [If-So block editor conditions](https://wpfusion.com/documentation/other/if-so/#blocks)
 - ⚡️ Improved The query to get WooCommerce coupons linked to tags will now be cached in a transient for improved performance
@@ -3225,7 +3238,7 @@ https://api.engagebay.com/dev/api/
 - 🔧 Fixed Fixed missing nonce check on search log users AJAX handler
 - 🔧 Fixed Fixed - if an Solid Affiliate activation linked tag and group link tag were applied at the same time, the affiliate wouldn't be added to the group
 
-#### #3.42.12 - 2/20/2024
+#### # 3.42.12 - 2/20/2024
 
 - ✨ New Added a [LatePoint integration](https://wpfusion.com/documentation/events/latepoint/)
 - ✨ New Added an option with Klaviyo to [subscribe contacts to lists with marketing consent](https://wpfusion.com/documentation/crm-specific-docs/klaviyo-marketing-consent/)
@@ -3272,7 +3285,7 @@ Timestamp must be of type int
 2023-12-15
 ```
 
-#### #3.42.11 - 2/10/2024
+#### # 3.42.11 - 2/10/2024
 
 - 🔧 Fixed Fixed for HighLevel API update of Feb 8th (now sending 403 status codes when access tokens expire, was previously 401)
 - ⚡️ Improved Improved: Gravity Forms integration will now pass the entry ID to the forms processor class
@@ -3280,7 +3293,7 @@ Timestamp must be of type int
 - 🔧 Fixed Fixed Groundhogg (Same site) integration not loading mapped BuddyPress fields automatically when their corresponding custom fields were edited in Groundhogg
 - 🔧 Fixed Fixed FluentCRM and ActiveCampaign treating an invalid contact ID when looking up tags as a contact with no tags (caused auto-login links to unlock content for invalid contacts)
 
-#### #3.42.10 - 2/5/2024
+#### # 3.42.10 - 2/5/2024
 
 - ✨ New Added an [Amelia booking integration](https://wpfusion.com/documentation/events/amelia/)
 - ✨ New Added [Customer.io site tracking scripts](https://wpfusion.com/documentation/tutorials/site-tracking-scripts/#customer-io)
@@ -3302,7 +3315,7 @@ field_format
 
  parameter
 
-#### #3.42.9 - 1/30/2024
+#### # 3.42.9 - 1/30/2024
 
 - ✨ New Added support for the [new FluentCRM event tracking module](https://fluentcrm.com/fluentcrm-2-8-40/#dynamic-contact-activity-tracking) (same site and REST API)
 - ⚡️ Improved Updated Omnisend event tracking to use new 
@@ -3316,7 +3329,7 @@ field_format
 - 🔧 Fixed Fixed Groundhogg (Same site) integration not loading mapped BuddyPress fields automatically when their corresponding custom fields were edited in Groundhogg
 - 🔧 Fixed Fixed FluentCRM and ActiveCampaign treating an invalid contact ID when looking up tags as a contact with no tags (caused auto-login links to unlock content for invalid contacts)
 
-#### #3.42.8.1 - 1/25/2024
+#### # 3.42.8.1 - 1/25/2024
 
 - ⚡️ Improved Improved: The background worker will now 
 ```
@@ -3337,7 +3350,7 @@ exit
 - 🔧 Fixed Fixed auto-applied discounts not working with Easy Digital Downloads 3.0
 - 🔧 Fixed Fixed fatal error displaying Select Tag(s) dropdowns after resyncing available tags while WP Fusion was in staging mode
 
-#### #3.42.8 - 1/22/2024
+#### # 3.42.8 - 1/22/2024
 
 - ✨ New Added a CRM integation with [Omnisend](https://wpfusion.com/documentation/installation-guides/how-to-connect-omnisend-to-wordpress/)
 - ✨ New Added Last Order Shipping Method field for sync with WooCommerce
@@ -3385,13 +3398,13 @@ crm_type
 
  for consistency (is backwards compatible)
 
-#### #3.42.7 - 1/17/2024
+#### # 3.42.7 - 1/17/2024
 
 - 🔧 Fixed Fixed integrations with a missing documentation URL getting disabled when the main settings page was saved, since 3.42.6
 - 🔧 Fixed Fixed additional undefined array key warnings in the Gravity Forms integration when editing a form feed
 - 🛠️ Dev extended the ActiveCampaign API timeout to 20 seconds for loading, applying and removing tags
 
-#### #3.42.6 - 1/15/2024
+#### # 3.42.6 - 1/15/2024
 
 - ✨ New Added support for the Paid Memberships Pro [Gift Membership Addon](https://wpfusion.com/documentation/membership/paid-memberships-pro/#gift-memberships)
 - ✨ New Added an [order status column](https://wpfusion.com/documentation/ecommerce/easy-digital-downloads/#order-status-column) to the Easy Digital Downloads orders table
@@ -3420,7 +3433,7 @@ update_tags
 - 🔧 Fixed Fixed menu item restriction not working on the BuddyPress / BuddyBoss profile and account pages
 - 🔧 Fixed Fixed Customer.io integration not syncing dates as Unix timestamps
 
-#### #3.42.5 - 1/8/2024
+#### # 3.42.5 - 1/8/2024
 
 - ✨ New Added support for [double opt-ins with Brevo](https://wpfusion.com/documentation/tutorials/double-opt-ins/#brevo)
 - ✨ New Added support for [setting a default opt-in status with Groundhogg](https://wpfusion.com/documentation/tutorials/double-opt-ins/#groundhogg) (REST API)
@@ -3453,7 +3466,7 @@ WPF_User::get_user_meta()
 
  function (was preventing exporting empty values to the CRM)
 
-#### #3.42.4 - 1/4/2024
+#### # 3.42.4 - 1/4/2024
 
 - 🔧 Fixed Fixed Elementor Forms text fields being treated as dates since 3.42.3
 - 🔧 Fixed Fixed "Order Refunded" tags on WooCommerce products not being applied when orders were fully refunded
@@ -3464,7 +3477,7 @@ WPF_User::get_users_with_contact_ids
 
  incorrectly showing up as custom code in the Status panel of the settings
 
-#### #3.42.3 - 1/2/2024
+#### # 3.42.3 - 1/2/2024
 
 - ⚡️ Improved With BuddyBoss, the forums archive can now be protected by editing the Forums page, rather then via the WP Fusion Integrations settings (prior settings copy over automatically)
 - ⚡️ Improved With Brevo, select and multiselect fields will now automatically be synced to their numeric values required by the Brevo API (requires a one-time Refresh Available Tags and Fields via the settings)
@@ -3478,7 +3491,7 @@ created_at
  parameter for logged in users on each page load, when site tracking was active
 - 🔧 Fixed Fixed Customer.io integration not supporting multi-key event tracking
 
-#### #3.42.2 - 12/27/2023
+#### # 3.42.2 - 12/27/2023
 
 - ✨ New Added a Customer.io CRM integration
 - ✨ New Added a [SureMembers integration](https://wpfusion.com/documentation/membership/suremembers/)
@@ -3489,7 +3502,7 @@ created_at
 - 🔧 Fixed Fixed custom fields not syncing with Jetpack CRM
 - 🔧 Fixed Fixed fatal error trying to sync array/multiselect data to a text field in Jetpack CRM
 
-#### #3.42.1 - 12/18/2023
+#### # 3.42.1 - 12/18/2023
 
 - ✨ New Added support for [EDD Cancellation Survey](https://wpfusion.com/documentation/ecommerce/edd-recurring-payments/#cancellation-surveys)
 - ✨ New Added an option to apply the current user's CRM tags [as CSS classes to the HTML <body> element](https://wpfusion.com/documentation/getting-started/access-control/#protecting-content-via-css)
@@ -3510,7 +3523,7 @@ foreach() argument must be of type array|object, bool given
 - 🔧 Fixed Fixed PHP notices on WishList Member settings page
 - 🔧 Fixed Fixed fatal error tracking events with FluentCRM when the FluentCRM - Events plugin was deactivated after events had been configured
 
-#### #3.42.0 - 12/11/2023
+#### # 3.42.0 - 12/11/2023
 
 - ✨ New Added an integration with [Forminator forms](https://wpfusion.com/documentation/lead-generation/forminator/)
 - ✨ New Added an integration with [WP Software License for WooCommerce](https://wpfusion.com/documentation/ecommerce/wp-software-license/)
@@ -3535,7 +3548,7 @@ wpf_get_user_id( $contact_id )
 
  returning the IDs of temporary auto-login users
 
-#### #3.41.48 - 12/5/2023
+#### # 3.41.48 - 12/5/2023
 
 - ✨ New Added Memberships for Teams Team ID field for sync with WooCommerce Memberships for Teams
 - 🔧 Fixed Fixed new pending orders added via the WooCommerce admin not being synced to the CRM despite being registered on the 
@@ -3571,7 +3584,7 @@ wpf_get_setting_enable_queue
 
  showing up under the Custom Code list on the Advanced tab in the settings, with Groundhogg and FluentCRM (same site)
 
-#### #3.41.47 - 11/27/2023
+#### # 3.41.47 - 11/27/2023
 
 - 🔧 Fixed Fixed 
 ```
@@ -3580,7 +3593,7 @@ Uncaught Error: Call to undefined function is_user_logged_in()
 
  on some hosts since 3.41.46
 
-#### #3.41.46 - 11/27/2023
+#### # 3.41.46 - 11/27/2023
 
 - ✨ New Added an integration with [WP User Manager](https://wpfusion.com/documentation/membership/wp-user-manager/)
 - ✨ New Added contextual tooltips to some fields in the Contact Fields tab of the WP Fusion settings
@@ -3632,7 +3645,7 @@ Cannot access offset of type string on string
 
  when updating an ActiveCampaign contact's email to the address of an already existing contact
 
-#### #3.41.45 - 11/20/2023
+#### # 3.41.45 - 11/20/2023
 
 - ✨ New Added support for [Event Tracking with FluentCRM](https://wpfusion.com/documentation/event-tracking/fluentcrm-event-tracking/) (REST API and same site)
 - ✨ New Added support for [webhooks in Mailchimp journeys](https://wpfusion.com/documentation/webhooks/mailchimp-webhooks/#webhooks-in-journeys)
@@ -3650,7 +3663,7 @@ Cannot access offset of type string on string
 - 🔧 Fixed Fixed PHP notices in the Simply Schedule Appointments integration
 - 🔧 Fixed Fixed import tool not loading more than 1000 contacts with Mailchimp
 
-#### #3.41.44 - 11/13/2023
+#### # 3.41.44 - 11/13/2023
 
 - ✨ New Added a status metabox to FooEvents tickets showing the contact ID, with a link to re-sync the ticket to the CRM
 - ✨ New Added support for syncing to date + time fields with FluentCRM (same site and REST API)
@@ -3675,7 +3688,7 @@ Call to a member function get_tags() on null
 integration_key
 ```
 
-#### #3.41.43 - 11/6/2023
+#### # 3.41.43 - 11/6/2023
 
 - ✨ New Added setting Link with Tag - Affiliate Activation to the [Solid Affiliate integration](https://wpfusion.com/documentation/affiliates/solid-affiliate/)
 - ✨ New Added Order Total, Transaction Status, and Subscription Status fields [for sync with MemberPress](https://wpfusion.com/documentation/membership/memberpress/#additional-memberpress-fields)
@@ -3705,7 +3718,7 @@ Call to method get_connection_id() on non object
 
 )
 
-#### #3.41.42 - 10/30/2023
+#### # 3.41.42 - 10/30/2023
 
 - ✨ New Added options for applying tags to AffiliateWP affiliates [based on status](https://wpfusion.com/documentation/affiliates/affiliate-wp/#applying-tags)
 - ✨ New Added option to auto-activate and deactivate AffiliateWP affiliates using a linked tag
@@ -3738,7 +3751,7 @@ wpf_get_user_id
 
  filter will now only run before the database query, instead of both before and after
 
-#### #3.41.41 - 10/23/2023
+#### # 3.41.41 - 10/23/2023
 
 - ✨ New Added a [GeoDirectory integration](https://wpfusion.com/documentation/other/geodirectory/)
 - ✨ New Added support for syncing optin statuses with Infusionsoft and Keap
@@ -3771,7 +3784,7 @@ wpf_woocommerce_product_subscription_inactive
 
  hooks will now fire, so addons (like WCS Gifting) are triggered
 
-#### #3.41.40 - 10/18/2023
+#### # 3.41.40 - 10/18/2023
 
 - ⚡️ Improved If "Enable Admin Bar" is un-checked in the settings, the WP Fusion admin bar item to refresh tags will also be hidden in the admin
 - 🔧 Fixed Fixed FooEvents integration not applying tags to event attendees with the same email address as the WooCommerce customer since 3.41.39
@@ -3800,7 +3813,7 @@ wpf_get_user_id
 
  filter will now only run before the database query, instead of both before and after
 
-#### #3.41.39 - 10/16/2023
+#### # 3.41.39 - 10/16/2023
 
 - ✨ New Added a [FluentBooking integration](https://wpfusion.com/documentation/events/fluentbooking/)
 - ⚡️ Improved Added a notice in the logs when a FooEvents checkout creates a processing order, but FooEvents is configured to only create tickets for Completed orders
@@ -3810,7 +3823,7 @@ wpf_get_user_id
 - 🔧 Fixed Fixed fatal error loading meta from ActiveCampaign when two fields in a row were in the multiselect format, since 3.41.36
 - 🔧 Fixed Fixed shortcode attributes added to the block editor getting saved with curly quotes
 
-#### #3.41.38 - 10/11/2023
+#### # 3.41.38 - 10/11/2023
 
 - 🔧 Fixed Fixed LearnDash course progress field mappings not saving since 3.41.36
 - 🛠️ Dev Moved WooCommerce refund actions to the 
@@ -3820,12 +3833,12 @@ woocommerce_order_fully_refunded
 
  hook for compatibility with the [WooCommerce Subscriptions - Cancel on Refund extension](https://github.com/woocommerce/woocommerce-subscriptions-cancel-on-refund)
 
-#### #3.41.37 - 10/10/2023
+#### # 3.41.37 - 10/10/2023
 
 - ⚡️ Improved The WooCommerce order notes will now indicate when an order was manually re-processed by an admin
 - 🔧 Fixed Fixed LearnDash quiz score field mappings not saving since 3.41.36
 
-#### #3.41.36 - 10/9/2023
+#### # 3.41.36 - 10/9/2023
 
 - ✨ New Added support for [LearnDash quiz question categories](https://wpfusion.com/documentation/learning-management/learndash/#quizzes)
 - ✨ New Added support for [event check-ins with FooEvents](https://wpfusion.com/documentation/events/fooevents/#event-check-ins)
@@ -3884,7 +3897,7 @@ wp_fusion()->crm->init()
 
  has finished
 
-#### #3.41.35 - 10/4/2023
+#### # 3.41.35 - 10/4/2023
 
 - 🔧 Fixed Fixed 
 ```
@@ -3896,11 +3909,11 @@ wpf_get_user_id()
 - 🔧 Fixed Fixed WPForms integration syncing date fields as text instead of dates
 - 🔧 Fixed Fixed contact ID lookup with Constant Contact failing for deleted contacts
 
-#### #3.41.34 - 10/2/2023
+#### # 3.41.34 - 10/2/2023
 
 - 🔧 Fixed Fixed fatal error loading WooCommerce Subscriptions subscription status meta box on stores not using HPOS since 3.41.33
 
-#### #3.41.33 - 10/2/2023
+#### # 3.41.33 - 10/2/2023
 
 - Re-added support for syncing empty dates with HighLevel (bug was fixed on their end)
 - ⚡️ Improved Improved settings layout on Paid Memberships Pro membership levels
@@ -3920,11 +3933,11 @@ wpf_get_user_id()
 - 🔧 Fixed Fixed Paid Memberships Pro membership level fields not being synced to the CRM when the user was auto-enrolled into the membership via a linked tag
 - 🔧 Fixed Fixed form feeds with no fields mapped sending an empty payload to the CRM for logged-in users
 
-#### #3.41.32 - 9/26/2023
+#### # 3.41.32 - 9/26/2023
 
 - 🔧 Fixed Fixed tags not loading with ConvertKit since 3.41.31
 
-#### #3.41.31 - 9/25/2023
+#### # 3.41.31 - 9/25/2023
 
 - ✨ New Added "Hide checkbox if consented" setting with [WooCommerce](https://wpfusion.com/documentation/ecommerce/woocommerce/#email-optins) and [Easy Digital Downloads](https://wpfusion.com/documentation/ecommerce/easy-digital-downloads/#email-optins): if the customer has previously consented to marketing, the email optin box can be hidden
 - ⚡️ Improved Improved performance for syncing LearnDash course progress with the CRM
@@ -3983,11 +3996,11 @@ learndash_course_settings_fields_wpf
 learndash_quiz_settings_fields_wpf
 ```
 
-#### #3.41.30 - 9/18/2023
+#### # 3.41.30 - 9/18/2023
 
 - 🔧 Fixed Fixed modified tags adding the user as an AffiliateWP affiliate since 3.41.29
 
-#### #3.41.29 - 9/18/2023
+#### # 3.41.29 - 9/18/2023
 
 - ✨ New Added [order status tagging with Easy Digital Downloads](https://wpfusion.com/documentation/ecommerce/easy-digital-downloads/#order-statuses)
 - ✨ New Added Link with Tag setting for AffiliateWP groups
@@ -4015,7 +4028,7 @@ Argument #1 must be of type array
 wpf_hubspot_redirect_uri
 ```
 
-#### #3.41.28 - 9/11/2023
+#### # 3.41.28 - 9/11/2023
 
 - ✨ New Added a [Blockli Streamer integration](https://wpfusion.com/documentation/membership/blockli-streamer/)
 - ⚡️ Improved If custom fields are enabled for sync with Event Espresso, the custom fields from the primary registrant will be synced to any attendees who didn't specify custom fields
@@ -4042,7 +4055,7 @@ Undefined property: stdClass::$tags
 
  when loading an ActiveCampaign contact who had no tags
 
-#### #3.41.27 - 9/5/2023
+#### # 3.41.27 - 9/5/2023
 
 - ✨ New Added Source, Time Zone, and Company Name fields for sync with HighLevel
 - ⚡️ Improved If billing information is enabled for sync with Event Espresso, the billing info from the primary registrant will be synced to any attendees who didn't specify an address
@@ -4074,7 +4087,7 @@ date
 - 🔧 Fixed Fixed SureCart integration not saving tags with spaces or special characters in them on the product configuration
 - 🔧 Fixed Fixed auto login not working with Mailchimp since 3.41.19
 
-#### #3.41.26 - 8/23/2023
+#### # 3.41.26 - 8/23/2023
 
 - ⚡️ Improved Updated to support the new FunnelKit Automations REST API namespace (
 ```
@@ -4094,7 +4107,7 @@ autonami-admin
 - 🔧 Fixed Fixed Email not enabled for sync by default when using the Staging CRM
 - 🔧 Fixed Fixed tagging not working when connected to the Staging CRM
 
-#### #3.41.25 - 8/14/2023
+#### # 3.41.25 - 8/14/2023
 
 - ✨ New Added option to [use a multi-select instead of static lists with HubSpot](https://wpfusion.com/documentation/crm-specific-docs/how-lists-work-with-hubspot/#using-a-multiselect-for-segmentation)
 - ✨ New Added support for tagging based on [offline donations with GiveWP](https://wpfusion.com/documentation/ecommerce/give/#offline-donations)
@@ -4125,7 +4138,7 @@ WPF_Forms_Helper::process_form_data()
 
  args
 
-#### #3.41.24 - 8/7/2023
+#### # 3.41.24 - 8/7/2023
 
 - ⚡️ Improved Refactored Elementor Forms integration. Now easier to use and better performance in the admin
 - 🔧 Fixed Fixed bug in HighLevel error handling, errors with a 
@@ -4142,7 +4155,7 @@ meta
 wpf_validate_phone_number()
 ```
 
-#### #3.41.23 - 7/31/2023
+#### # 3.41.23 - 7/31/2023
 
 - ✨ New Added support for [multi-value lookup fields with Dynamics 365](https://wpfusion.com/documentation/crm-specific-docs/dynamics-365-associating-entities/#multi-value-lookup-fields)
 - ✨ New Added option to sync with Cases instead of Contacts with Dynamics 365
@@ -4176,7 +4189,7 @@ details
 - 🔧 Fixed Fixed MailerLite (Classic) integration giving an Unauthorized error when applying groups via a batch operation
 - 🔧 Fixed Fixed FluentCRM (same site) processing tags modified by automations before tags edited on the subscriber record, causing the WP user's tag cache to lose the tags applied by the automation
 
-#### #3.41.22 - 7/24/2023
+#### # 3.41.22 - 7/24/2023
 
 - ⚡️ Improved Contacts synced to Ontraport with 
 ```
@@ -4210,7 +4223,7 @@ _nopriv
 
  endpoint for applying and removing tags, increases security (and didn't work for logged out users anyway)
 
-#### #3.41.21 - 7/18/2023
+#### # 3.41.21 - 7/18/2023
 
 - ⚡️ Improved The AJAX endpoint for applying tags can now accept form-encoded or JSON encoded data
 - ⚡️ Improved If a MemberPress subscription is cancelled, Remove Tags is checked, and the user still has another active subscription to a membership that applies the same tags, [those tags will not be removed](https://wpfusion.com/documentation/membership/memberpress/#concurrent-subscriptions)
@@ -4239,7 +4252,7 @@ Invalid argument supplied for foreach()
 wpf_dynamics_365_lookup_field
 ```
 
-#### #3.41.20 - 7/11/2023
+#### # 3.41.20 - 7/11/2023
 
 - 🔧 Fixed Fixed fatal error 
 ```
@@ -4248,7 +4261,7 @@ Uncaught TypeError: method_exists(): Argument #1 ($object_or_class) must be of t
 
  when first installing WP Fusion, since 3.41.19
 
-#### #3.41.19 - 7/11/2023
+#### # 3.41.19 - 7/11/2023
 
 - ✨ New Added option with Dynamics 365 to sync with Leads instead of Contacts
 - ✨ New Added support for setting the 
@@ -4311,7 +4324,7 @@ functions.php
 
  to modify CRM parameters such as the API URL or object type
 
-#### #3.41.18 - 7/3/2023
+#### # 3.41.18 - 7/3/2023
 
 - ⚡️ Improved Moved EDD email optin checkbox to the bottom of the checkout form, instead of the Personal Details section
 - ⚡️ Improved Fluent Forms integration module will now be set to enabled by default in the Fluent Forms general settings
@@ -4349,7 +4362,7 @@ user_can_access()
 
  function
 
-#### #3.41.17 - 6/26/2023
+#### # 3.41.17 - 6/26/2023
 
 - Tested for Fluent Forms v5.0
 - Tested for LearnDash 4.7.0
@@ -4360,7 +4373,7 @@ user_can_access()
 - 🔧 Fixed Fixed PHP warnings in SureCart integration
 - 🔧 Fixed Fixed PHP warning with BuddyPress groups and Filter Queries since 3.41.17
 
-#### #3.41.16 - 6/19/2023
+#### # 3.41.16 - 6/19/2023
 
 - ✨ New Added option to [subscribe ConvertKit subscribers to a form when applying tags](https://wpfusion.com/documentation/crm-specific-docs/convertkit-unsubscribe-notifications/#re-subscribing-unsubscribed-subscribers)
 - ✨ New Added option to [use a multi-select for segmentation with Zoho](https://wpfusion.com/documentation/crm-specific-docs/zoho-tags/) (instead of tags)
@@ -4377,7 +4390,7 @@ Uncaught TypeError: trim(): Argument #1 ($string) must be of type string
 - 🔧 Fixed Fixed EDD email optin tags not applying for free download purchases
 - 🔧 Fixed Fixed Zoho integration linking users with contact records who had a matching email address on Secondary Email or other email fields than the primary Email field
 
-#### #3.41.15 - 6/12/2023
+#### # 3.41.15 - 6/12/2023
 
 - ✨ New Added a [MemberPress Courses integration](https://wpfusion.com/documentation/membership/memberpress/#memberpress-courses)
 - ✨ New Added a [UsersWP integration](https://wpfusion.com/documentation/membership/userswp/)
@@ -4389,7 +4402,7 @@ Uncaught TypeError: trim(): Argument #1 ($string) must be of type string
 - 🔧 Fixed Fixed Constant Contact refresh token expiring after two refreshes
 - 🔧 Fixed Fixed read-only fields being synced back to Salesforce and causing API errors
 
-#### #3.41.14 - 6/5/2023
+#### # 3.41.14 - 6/5/2023
 
 - ⚡️ Improved With Dynamics 365, dynamic marketing lists will now show as Read Only in the WP Fusion UI, and won't be selectable for "Assign Lists"
 - 🔧 Fixed Fixed - If a WooCommerce order item is only partially refunded, the tags applied at purchase will no longer be removed
@@ -4406,7 +4419,7 @@ Undefined index "default"
 - 🔧 Fixed Fixed custom fields not loading with Maropost
 - Misc Maropost bugfixes
 
-#### #3.41.13 - 5/30/2023
+#### # 3.41.13 - 5/30/2023
 
 - ✨ New Added a [Download Manager integration](https://wpfusion.com/documentation/other/download-manager/) for protecting downloadable files
 - ✨ New Added a dotted line around widgets protected by WP Fusion access rules [in the Elementor editor](https://wpfusion.com/documentation/page-builders/elementor/#visibility-indicator)
@@ -4431,7 +4444,7 @@ Undefined array key "remove_tags"
 
  when processing a WooCommerce subscriptions renewal since 3.41.11
 
-#### #3.41.12 - 5/24/2023
+#### # 3.41.12 - 5/24/2023
 
 - ⚡️ Improved With WooCommerce, "Process order actions again" and the orders export tool will now handle refunded and cancelled orders and apply the tags for those statuses (instead of ignoring them)
 - ⚡️ Improved If a post type or category/term is protected and configured with a redirect, any redirect on the underlying post will now take priority
@@ -4445,7 +4458,7 @@ ld_course_steps
  meta key per request since 3.41.11 (caused issues with LD sidebars containing multiple course outlines)
 - 🔧 Fixed Fixed "Contact not found" being treated as an error with HighLevel integration since 3.41.11
 
-#### #3.41.11 - 5/22/2023
+#### # 3.41.11 - 5/22/2023
 
 - Updated HighLevel integration to use the 2.0 API (allows us to add Enhanced Ecommerce and UTM tracking)
 - ✨ New Added "View in CRM" links to HighLevel
@@ -4478,7 +4491,7 @@ wpf_*
  filter
 - 🔧 Fixed Fixed Restrict Content Pro Memberships batch operation not working since a recent RCP update
 
-#### #3.41.10 - 5/16/2023
+#### # 3.41.10 - 5/16/2023
 
 - ✨ New Added support for api.php webhooks with Brevo and FluentCRM
 - 🔧 Fixed Fixed global webhooks not working with Brevo since 3.41.9
@@ -4489,7 +4502,7 @@ wp_fusion()->batch->batch_init()
 
  being ignored
 
-#### #3.41.9 - 5/15/2023
+#### # 3.41.9 - 5/15/2023
 
 - ✨ New Added a tool for [exporting historical Fluent Forms entries](https://wpfusion.com/documentation/lead-generation/fluent-forms/#syncing-historical-entries)
 - ✨ New Added an option to apply tags based on assistant to the [Salon Booking integration](https://wpfusion.com/documentation/ecommerce/salon-booking/)
@@ -4502,7 +4515,7 @@ wp_fusion()->batch->batch_init()
 - 🔧 Fixed Fixed error "update webhook received but contact data was not found or in an invalid format" with global webhooks and Brevo (formerly Sendinblue) since 3.41.8
 - 🔧 Fixed Fixed import tool not working with Pipedrive
 
-#### #3.41.8 - 5/8/2023
+#### # 3.41.8 - 5/8/2023
 
 - Updated Sendinblue integration to Brevo
 - ✨ New Added View in CRM links to Brevo integration
@@ -4548,7 +4561,7 @@ wpf_*
  filter
 - 🔧 Fixed Fixed Restrict Content Pro Memberships batch operation not working since a recent RCP update
 
-#### #3.41.7 - 5/1/2023
+#### # 3.41.7 - 5/1/2023
 
 - ⚡️ Improved will no longer save an empty 
 ```
@@ -4560,7 +4573,7 @@ wpf-settings-woo
 - 🔧 Fixed Fixed fatal error loading LearnDash course meta box with PHP 8.1+, for existing courses
 - 🔧 Fixed Fixed fatal error displaying tags select dropdown with WP Job Manager and PHP 8.1
 
-#### #3.41.6 - 4/24/2023
+#### # 3.41.6 - 4/24/2023
 
 - ✨ New Added an object type dropdown for Salesforce
 - ✨ New Added HTTP API logging for applying and removing tags with Drip
@@ -4595,7 +4608,7 @@ wpf_is_user_logged_in()
 
  in the WP Fusion secure block access logic
 
-#### #3.41.5 - 4/17/2023
+#### # 3.41.5 - 4/17/2023
 
 - ⚡️ Improved With the WooCommerce, GiveWP and EDD email optin checkboxes, existing opted-in customers who don't check the opt-in box will no longer be unsubscribed
 - 🔧 Fixed Fixed typo "susbcribed" in default optin status for FluentCRM (REST API)
@@ -4619,7 +4632,7 @@ Call to member function is_edit_mode() on null
 
  when using WooCommerce One-Page Checkout with Elementor
 
-#### #3.41.4 - 4/10/2023
+#### # 3.41.4 - 4/10/2023
 
 - ✨ New Added [Filter Course Steps feature for LifterLMS](https://wpfusion.com/documentation/learning-management/lifterlms/#filter-course-steps)
 - ✨ New Added a [LifterLMS Memberships Meta export tool](https://wpfusion.com/documentation/learning-management/lifterlms/#batch-operations)
@@ -4651,7 +4664,7 @@ false
 - 🔧 Fixed Fixed "Lock Lessons" setting with LearnDash not being respected in the BuddyBoss app
 - ⚡️ Improved Improved styling of the WP Fusion metabox when using the Gutenberg editor
 
-#### #3.41.3 - 4/3/2023
+#### # 3.41.3 - 4/3/2023
 
 - ✨ New Added support for AccessAlly 4.0 and up: [WP Fusion can now be used when AccessAlly is in "AccessAlly Managed" mode](https://wpfusion.com/documentation/membership/accessally/#accessally-managed-mode)
 - ✨ New Added [Membership Level Name and Membership Status fields for sync with LifterLMS](https://wpfusion.com/documentation/learning-management/lifterlms/#syncing-meta-fields)
@@ -4673,7 +4686,7 @@ unknown
 - 🔧 Fixed Fixed a fatal error if the WP Fusion settings were reset in the middle of a batch operation
 - 🔧 Fixed Fixed an infinite redirect if a guest tried to access a piece of protected content and "Refresh tags if access is denied" was enabled on that content
 
-#### #3.41.2 - 3/27/2023
+#### # 3.41.2 - 3/27/2023
 
 - ✨ New Added [Ortto CRM integration](https://wpfusion.com/documentation/installation-guides/how-to-connect-ortto-to-wordpress/)
 - ✨ New Added option to [completely remove all WP Fusion settings](https://wpfusion.com/documentation/tutorials/switching-crms/#2-reset-wp-fusion) from the database when resetting the main settings page
@@ -4713,7 +4726,7 @@ Argument #1 ($str) must be of type string, array given
 
  with Gravity Forms when syncing array-formatted data (multiselects, multi-checkboxes, etc)
 
-#### #3.41.1 - 3/20/2023
+#### # 3.41.1 - 3/20/2023
 
 - ✨ New Added Subscription Trial End date field for sync with WooCommerce Subscriptions
 - ⚡️ Improved If a WooCommerce order is changed to Cancelled, the tags applied at purchase will now be removed (same as if it were refunded). The "Refunded" tags will still only be applied if the order is actually refunded
@@ -4723,7 +4736,7 @@ Argument #1 ($str) must be of type string, array given
 - 🔧 Fixed Fixed Event Tracking updating the most recent event instead of creating a new one with Groundhogg (REST API)
 - 🔧 Fixed Fixed "Action Failed" error when flushing the logs when WooCommmerce's logging was active in database mode
 
-#### #3.41.0 - 3/13/2023
+#### # 3.41.0 - 3/13/2023
 
 - ✨ New Added a [WooCommerce Product Options integration](https://wpfusion.com/documentation/ecommerce/woocommerce-product-options/)
 - ✨ New Added option to [refresh a user's tags when access is denied](https://wpfusion.com/documentation/getting-started/working-with-tags/#when-access-is-denied)
@@ -4751,13 +4764,13 @@ WPF_MULTISITE_PREFIX_KEYS
 - 🔧 Fixed Fixed loading the metadata from the CRM resetting a user's wpForo usergroup to the default
 - 🔧 Fixed Fixed fatal error loading the WP Fusion MemberMouse settings page since MemberMouse
 
-#### #3.40.59 - 3/7/2023
+#### # 3.40.59 - 3/7/2023
 
 - 🔧 Fixed Fixed content not unlocking when an initial auto-login URL was visited, since 3.40.57
 - ⚡️ Improved The tag select option on the Messages settings tab with BuddyBoss' member access controls will now be limited to the first 100 tags, to prevent out of memory errors
 - 🔧 Fixed Fixed import tool not working with Salesforce picklist-based segmentation
 
-#### #3.40.58 - 3/6/2023
+#### # 3.40.58 - 3/6/2023
 
 - ✨ New Added a [Pretty Links integration](https://wpfusion.com/documentation/affiliates/pretty-links/) for tracking link engagement in your CRM
 - ✨ New Added a [ThirstyAffiliates integration](https://wpfusion.com/documentation/affiliates/thirstyaffiliates/) for tracking link engagement in your CRM
@@ -4776,7 +4789,7 @@ wp_enqueue_script()
 - 🔧 Fixed Fixed Salesforce integration not loading more than 2000 available topics
 - 🔧 Fixed Fixed fatal error with Push All when other plugins updated user meta fields before WP Fusion had loaded
 
-#### #3.40.57 - 2/27/2023
+#### # 3.40.57 - 2/27/2023
 
 - ✨ New Added a [WooCommerce Gravity Forms Product Add-ons integration](https://wpfusion.com/documentation/ecommerce/woocommerce-gravity-forms-product-add-ons/)
 - ✨ New Added ability to [apply tags when a new topic or reply are posted](https://wpfusion.com/documentation/forums/bbpress/#forums-activity-tracking) in bbPress (and BuddyBoss) forums and topics
@@ -4804,7 +4817,7 @@ wp_login
 
  to the WPF settings page URL
 
-#### #3.40.56 - 2/20/2023
+#### # 3.40.56 - 2/20/2023
 
 - ⚡️ Improved If the MemberDash plugin is active, a warning will be displayed on LearnDash courses about potential conflicts when using two plugins to manage enrollments into the same course
 - ⚡️ Improved The cookie to track Bento guest form submissions will only be set for one hour (instead of one year). This is plenty of time for the Bento tracking script to pick it up, and will make it easier to cache pages for identified guests
@@ -4823,7 +4836,7 @@ Attempt to read property "ID" on null
  when registering meta boxes on some post types
 - 🔧 Fixed Fixed the ActiveCampaign integration intercepting API errors from other CRMs during the initial connection process
 
-#### #3.40.55 - 2/13/2023
+#### # 3.40.55 - 2/13/2023
 
 - ✨ New Added 
 ```
@@ -4861,7 +4874,7 @@ false
 
  when a contact had no tags, instead of an empty array. Sometimes caused errors with other integrations.
 
-#### #3.40.54 - 2/6/2023
+#### # 3.40.54 - 2/6/2023
 
 - ⚡️ Improved Using the new V2 MailerLite API, if you attempt to create an Unsubscribed subscriber, [no data will be sent to MailerLite](https://wpfusion.com/documentation/crm-specific-docs/mailerlite-double-opt-ins/#v1-vs-v2-apis)
 - 🔧 Fixed Fixed - Tags applied for Pending MemberPress subscriptions were not being removed after a successful checkout using a 100% discount
@@ -4880,7 +4893,7 @@ Call to undefined function bp_get_member_type_key()
 
  when trying to sync a Member Type field from BuddyPress to the CRM, and the Member Types component was disabled
 
-#### #3.40.53 - 1/30/2023
+#### # 3.40.53 - 1/30/2023
 
 - ⚡️ Improved WP Simple Pay integration will also run on the 
 ```
@@ -4936,7 +4949,7 @@ Undefined array key "order_id"
 
  when using asynchronous checkout with PHP 8+
 
-#### #3.40.52 - 1/23/2023
+#### # 3.40.52 - 1/23/2023
 
 - 🔧 Fixed Fixed MemberPress sub-account tags not being applied beyond the first user when importing users from a .csv into a corporate account
 - ⚡️ Improved All WP Simple Pay post-payment actions will now be triggered via webhooks from Stripe. This fixes some issues with tags not being applied if the payment success shortcode wasn't present, or if the payment success page was on another site
@@ -4969,7 +4982,7 @@ Return type of X should be compatible with Y
 
  warnings with PHP 8.1 and the XMLRPC library (Infusionsoft/Keap)
 
-#### #3.40.51 - 1/17/2023
+#### # 3.40.51 - 1/17/2023
 
 - ✨ New Added Next Payment Date field for sync with Paid Memberships Pro
 - ✨ New Added a warning to the LearnDash course settings page when Filter Steps is enabled on a course and the Single Page Courses module is enabled in Uncanny LearnDash Toolkit Pro
@@ -4989,7 +5002,7 @@ simpay_charge_created
 - 🔧 Fixed Fixed Quentn integration treating a Contact Not Found as a serious error
 - 🔧 Fixed Fixed fatal error loading WP Fusion feed settings on Paymattic forms since Paymattic v4.3.2
 
-#### #3.40.50 - 1/9/2023
+#### # 3.40.50 - 1/9/2023
 
 - ✨ New Added an integration with [YITH WooCommerce Booking](https://wpfusion.com/documentation/events/yith-woocommerce-booking/)
 - ✨ New Added an integration with the [Virtual Events addon for The Events Calendar](https://wpfusion.com/documentation/events/the-events-calendar-event-tickets/?c#virtual-events)
@@ -5035,7 +5048,7 @@ wpf_update_meta
  shortcode triggering a pull from the CRM multiple times per page load (if used with multiple blank fields)
 - 🔧 Fixed Fixed fatal error syncing the membership start date as a member was deleted in Paid Memberships Pro, with PHP 8
 
-#### #3.40.49 - 1/3/2023
+#### # 3.40.49 - 1/3/2023
 
 - ✨ New Added multi-key/value event tracking support for CRMs that accept that kind of data (Bento, Drip, Engage, Gist, Groundhogg, Intercom, Klaviyo, Mailchimp, and Sendinblue)
 - 🔧 Fixed Fixed Event Tracking not working with a recent ActiveCampaign API update (not sure exactly when it started)
@@ -5043,7 +5056,7 @@ wpf_update_meta
 - 🔧 Fixed Fixed opt-in status always showing as No when editing an EDD order in the admin, since 3.40.45
 - 🔧 Fixed Fixed fatal error syncing the membership expiration date as a member was deleted in Paid Memberships Pro, with PHP 8
 
-#### #3.40.48 - 12/27/2022
+#### # 3.40.48 - 12/27/2022
 
 - ✨ New Added [SureCart integration](https://wpfusion.com/documentation/ecommerce/surecart/)
 - ⚡️ Improved If a user's contact record is deleted, their cached tags will be deleted as well (previously these were left behind and could clutter up the database)
@@ -5065,17 +5078,17 @@ Cannot use object of type WP_Post as array
 
  displaying LearnDash course navigation with BuddyBoss theme 2.2.2 and PHP 8
 
-#### #3.40.47 - 12/20/2022
+#### # 3.40.47 - 12/20/2022
 
 - 🔧 Fixed Fixed fatal error manually adding a new WooCommerce Subscription via the admin since 3.40.45
 
-#### #3.40.46 - 12/20/2022
+#### # 3.40.46 - 12/20/2022
 
 - ✨ New Added a global setting for the Lesson Locked Text with LearnDash (at Settings >> WP Fusion >> Integrations)
 - 🔧 Fixed Fixed fatal error on CartFlows order received page when using Asynchronous Checkout, since 3.40.45
 - 🔧 Fixed Fixed an unhandled error refreshing the Mautic access token when the user's API credentials had changed
 
-#### #3.40.45 - 12/19/2022
+#### # 3.40.45 - 12/19/2022
 
 - ✨ New Added [Studiocart integration](https://wpfusion.com/documentation/ecommerce/studiocart/)
 - ✨ New Added support for [WooCommerce High Performance Order Storage](https://developer.woocommerce.com/2022/09/14/high-performance-order-storage-progress-report/)
@@ -5113,7 +5126,7 @@ wpf_edd_customer_data
 wpf_give_customer_data
 ```
 
-#### #3.40.44 - 12/12/2022
+#### # 3.40.44 - 12/12/2022
 
 - 🔧 Fixed Fixed fatal error 
 ```
@@ -5124,7 +5137,7 @@ json_decode(): Argument #1 ($json) must be of type string, array given
 - ✨ New Added option for default opt-in status when adding new contacts to MailerLite.
 - ✨ New Added option to filter WooCommerce orders based on whether or not they've been processed by WP Fusion
 
-#### #3.40.43 - 12/12/2022
+#### # 3.40.43 - 12/12/2022
 
 - ✨ New Added [Breakdance Builder integration](https://wpfusion.com/documentation/page-builders/breakdance/)
 - ✨ New Added option to apply tags when a user joins a BuddyPress / BuddyBoss group
@@ -5163,7 +5176,7 @@ tipTip is not a function
  when editing Gravity Forms feeds on some sites
 - 🔧 Fixed Fixed - Moved FluentForms feed processing back to asynchronous (reverted change from 3.40.42)
 
-#### #3.40.42 - 12/5/2022
+#### # 3.40.42 - 12/5/2022
 
 - ✨ New Added [Engage CRM integration](https://engage.so/)
 - ⚡️ Improved Fluent Forms submissions are no longer processed asynchronously (this fixes lead source tracking and the incorrect form URL showing in the logs)
@@ -5180,7 +5193,7 @@ post_name
 - 🔧 Fixed Fixed PHP warning during Fluent Forms feed processing when no tags were specified to be applied
 - Removed German language translation
 
-#### #3.40.41 - 11/29/2022
+#### # 3.40.41 - 11/29/2022
 
 - ✨ New Added Last Order Type field for sync with WooCommerce Subscriptions
 - ✨ New Added German language translation
@@ -5204,7 +5217,7 @@ Cannot use string offset as array
 - 🔧 Fixed Fixed Fatal Error manually activating Staging Mode when using ActiveCampaign's Deep Data integration
 - 🔧 Fixed Fixed MailPoet integration listing a user's segments as "unknown lists"
 
-#### #3.40.40 - 11/21/2022
+#### # 3.40.40 - 11/21/2022
 
 - ✨ New Added [Intercom event tracking](https://wpfusion.com/documentation/event-tracking/intercom-event-tracking/)
 - ✨ New Added [Intercom site tracking](https://wpfusion.com/documentation/tutorials/site-tracking-scripts/#intercom)
@@ -5237,7 +5250,7 @@ staging_xxxx
 - 🔧 Fixed Fixed fatal error adding new WP Fusion Thrive Leads API connection
 - 🛠️ Dev Added filter [wpf_event_tickets_apply_tags](https://wpfusion.com/documentation/filters/wpf_event_tickets_apply_tags/)
 
-#### #3.40.39 - 11/14/2022
+#### # 3.40.39 - 11/14/2022
 
 - ✨ New Added [Thrive Leads integration](https://wpfusion.com/documentation/lead-generation/thrive-leads/)
 - ✨ New Added OAuth API integration with Mautic (requires settings reset)
@@ -5253,7 +5266,7 @@ staging_xxxx
 Call to undefined method WPF_Thrive_Autoresponder_Main::get_email_merge_tag()
 ```
 
-#### #3.40.38 - 11/10/2022
+#### # 3.40.38 - 11/10/2022
 
 - 🔧 Fixed Fixed notice "Subscription status was changed to active, but the user is not currently subscribed to the product. No tags will be applied." with MemberPress since 3.40.36
 - 🔧 Fixed Fixed PHP warning 
@@ -5268,7 +5281,7 @@ a:0:{}
 ```
 - 🔧 Fixed Fixed tags select not initializing properly when adding a new variable price option in Easy Digital Downloads
 
-#### #3.40.37 - 11/7/2022
+#### # 3.40.37 - 11/7/2022
 
 - ✨ New Added support for [AffiliateWP referrer tracking](https://wpfusion.com/documentation/other/affiliate-wp/#syncing-referrer-meta-fields) with Fluent Forms
 - ⚡️ Improved With the [WooCommerce Subscriptions Gifting integration](https://wpfusion.com/documentation/ecommerce/gifting-for-woocommerce-subscriptions/), if a separate shipping address was provided by the customer at checkout, the shipping details will be synced to the gift recipient's contact record
@@ -5282,7 +5295,7 @@ wpf_get_email_from_contact_id
 ```
 - [Updated Growmatik integration](https://github.com/verygoodplugins/wp-fusion-lite/pull/20)
 
-#### #3.40.36 - 10/31/2022
+#### # 3.40.36 - 10/31/2022
 
 - Tested for WordPress 6.1.0
 - 🔧 Fixed Fixed Groundhogg syncing new user registrations to Groundhogg before WP Fusion
@@ -5292,7 +5305,7 @@ wpf_get_email_from_contact_id
 - 🔧 Fixed Fixed Staging Mode checkbox not un-checkable when the site was in staging mode due to detecting a change in the site's URL
 - 🔧 Fixed Fixed default profile type not being set with BuddyBoss when a linked tag was removed, when the profile type directory key didn't match the type name
 
-#### #3.40.35 - 10/24/2022
+#### # 3.40.35 - 10/24/2022
 
 - ✨ New Added [Group Leader Email and Group Name fields for sync with the Restrict Content Pro Group Accounts addon](https://wpfusion.com/documentation/membership/restrict-content-pro/#groups)
 - 🔧 Fixed Fixed automated enrollments into BuddyBoss / BuddyPress profile types not working when the type 
@@ -5321,11 +5334,11 @@ isSequential()
 - Updated Autonami to FunnelKit Automations
 - 🛠️ Dev Tested for PHP 8.1.9
 
-#### #3.40.34 - 10/17/2022
+#### # 3.40.34 - 10/17/2022
 
 - 🔧 Fixed Fixed form field mappings not saving in the admin since 3.40.33
 
-#### #3.40.33 - 10/17/2022
+#### # 3.40.33 - 10/17/2022
 
 - ✨ New Added [Pipedrive CRM integration](https://wpfusion.com/documentation/installation-guides/how-to-connect-pipedrive-to-wordpress/)
 - ⚡️ Improved Exporting the activity logs will now automatically unserialize any serialized data
@@ -5349,11 +5362,11 @@ date_default_timezone_set()
 - 🔧 Fixed Fixed expiration date not syncing with Paid Memberships Pro when a member was manually added to a level with a custom end date
 - 🔧 Fixed Fixed fatal error registering new users in the admin with ACF multiselect repeater data, when BuddyPress was active
 
-#### #3.40.32 - 10/20/2022
+#### # 3.40.32 - 10/20/2022
 
 - 🔧 Fixed Fixed access control system broken in 3.40.31
 
-#### #3.40.31 - 10/20/2022
+#### # 3.40.31 - 10/20/2022
 
 - ✨ New Added Refresh Available Tags & Fields button to the admin toolbar
 - ✨ New Added support for the Groundhogg White Label Branding extension
@@ -5365,7 +5378,7 @@ date_default_timezone_set()
 - 🔧 Fixed Fixed Invalid JSON Response error when editing pages in Gutenberg and Gravity Forms was active
 - 🔧 Fixed Fixed fatal error loading the API Connections panel within Thrive Ovation
 
-#### #3.40.30 - 10/3/2022
+#### # 3.40.30 - 10/3/2022
 
 - ✨ New Added support for the Tickets Commerce payment gateways with Event Tickets and Event Tickets Plus
 - ✨ New Added support for guest checkouts with RestroPress
@@ -5390,7 +5403,7 @@ date_default_timezone_set()
 - 🔧 Fixed Fixed unhandled fatal error when a HubSpot access token refresh failed
 - 🔧 Fixed Fixed fatal error starting an auto login session with Dynamics 365 when the contact wasn't on any lists
 
-#### #3.40.29 - 9/26/2022
+#### # 3.40.29 - 9/26/2022
 
 - ✨ New Added Asynchronous Checkout support to CartFlows
 - ✨ New Added support for syncing avatar URLs with wpForo
@@ -5420,7 +5433,7 @@ Uncaught Error: Too few arguments to function WPF_WPBakery::shortcode_output()
  when using the Accordion shortcode with WPBakery
 - 🛠️ Dev Fixed WPF_Pods::post_save_user() running when editing users in the admin (was intended to be for frontend edits only)
 
-#### #3.40.28 - 9/19/2022
+#### # 3.40.28 - 9/19/2022
 
 - ✨ New Added Asynchronous Checkout support to WooFunnels
 - ✨ New Added "Add to CRM" checkbox on admin Add New User form
@@ -5470,11 +5483,11 @@ wpf_crm_loaded
 
  action will now pass the active CRM as a parameter
 
-#### #3.40.27 - 9/15/2022
+#### # 3.40.27 - 9/15/2022
 
 - 🔧 Fixed Fixed WP Fusion overriding Gravity Forms conditional logic for logged in users since 3.40.24
 
-#### #3.40.26 - 9/14/2022
+#### # 3.40.26 - 9/14/2022
 
 - 🔧 Fixed Fixed PHP warning marking content complete in LearnDash integration since 3.40.24
 - 🔧 Fixed Fixed missing 
@@ -5491,7 +5504,7 @@ WPF_WooCommerce::get_contact_id_from_order()
  returning an empty contact ID during guest checkout if the order was just placed
 - 🔧 Fixed Fixed MemberPress Membership Statuses batch operation not applying Expired tags for free memberships
 
-#### #3.40.25 - 9/12/2022
+#### # 3.40.25 - 9/12/2022
 
 - 🔧 Fixed Fixed fatal error 
 ```
@@ -5500,7 +5513,7 @@ Call to undefined method WPF_Thrive_Autoresponder_Main::get_data_for_setup()
 
  when editing pages with Thrive Architect since 3.40.24
 
-#### #3.40.24 - 9/12/2022
+#### # 3.40.24 - 9/12/2022
 
 - ✨ New Added [Thrive Automator integration](https://wpfusion.com/documentation/other/thrive-automator/)
 - ✨ New Added [Thrive Apprentice integration](https://wpfusion.com/documentation/learning-management/thrive-apprentice/)
@@ -5537,7 +5550,7 @@ undefined array key user_id
  in PeepSo integration
 - 🔧 Fixed Fixed Advanced Ads integration settings not saving
 
-#### #3.40.23 - 9/6/2022
+#### # 3.40.23 - 9/6/2022
 
 - ✨ New Added integration with Subscriptions for WooCommerce
 - ✨ New Added integration with YITH WooCommerce Checkout Manager
@@ -5561,7 +5574,7 @@ Too few arguments to function WPF_Access_Control::login_redirect()
  with some themes since 3.40.21
 - 🔧 Fixed Fixed PHP warning during auto-login session when a Return After Login redirect was attempted
 
-#### #3.40.22 - 8/29/2022
+#### # 3.40.22 - 8/29/2022
 
 - ✨ New Added [tag-based conditional logic to Gravity Forms form fields](https://wpfusion.com/documentation/lead-generation/gravity-forms/#form-field-visibility)
 - ✨ New Added support for [syncing custom profile and registration fields with LearnPress](https://wpfusion.com/documentation/learning-management/learnpress/#syncing-meta-fields)
@@ -5589,7 +5602,7 @@ s
 - 🔧 Fixed Fixed fatal error auto-enrolling users into wpForo usergroups since wpForo 2.0
 - 🔧 Fixed Fixed disabling the API queue also disabling staging mode
 
-#### #3.40.21 - 8/23/2022
+#### # 3.40.21 - 8/23/2022
 
 - ✨ New Added Membership Plan Name field for sync with WooCommerce Memberships
 - ✨ New Added Status field for sync with JetPack CRM
@@ -5612,7 +5625,7 @@ wp_login
 - 🔧 Fixed Fixed wpForo settings page missing since wpForo 2.0
 - 🔧 Fixed Fixed WPBakery tag search returning all tags in the UI
 
-#### #3.40.20 - 8/17/2022
+#### # 3.40.20 - 8/17/2022
 
 - ✨ New Added [Holler Box integration](https://wpfusion.com/documentation/other/holler-box/)
 - ✨ New Added Recruiter ID field for sync with NationBuilder
@@ -5623,14 +5636,14 @@ wp_login
 - 🔧 Fixed Fixed Required Tags (Not) setting not working with WPBakery
 - 🔧 Fixed Fixed tags displaying as IDs after saving a WPBakery element
 
-#### #3.40.19 - 8/8/2022
+#### # 3.40.19 - 8/8/2022
 
 - ✨ New Added Availability, Support Level, Inferred Support Level, Priority Level, Do Not Call, Mobile Opt-In, and Do Not Contact fields for sync with NationBuilder
 - ⚡️ Improved If an EDD Software Licensing license is re-activated, the Expired tags will be removed
 - ⚡️ Improved Improved support for syncing user capabilities when using a custom table prefix
 - ⚡️ Improved Improved the UI for activating and deactivating the license on the Setup tab
 
-#### #3.40.18 - 8/1/2022
+#### # 3.40.18 - 8/1/2022
 
 - ✨ New Added Voting District fields for sync with NationBuilder
 - ⚡️ Improved MemberPress active tags will now also be applied on the 
@@ -5652,7 +5665,7 @@ wpf_get_setting_{$id}
 
  filter not updating the option inputs on the settings page
 
-#### #3.40.17 - 7/25/2022
+#### # 3.40.17 - 7/25/2022
 
 - ✨ New Added an integration with the BuddyBoss App's [new Access Controls component](https://wpfusion.com/documentation/membership/buddyboss/#access-controls)
 - ✨ New Added support for Filter Queries on the Jet Engine Listing Grid widget
@@ -5662,14 +5675,14 @@ wpf_get_setting_{$id}
 - 🔧 Fixed Fixed HubSpot lists showing as "Array" in If-So's Select A Condition dropdown
 - 🔧 Fixed Fixed fatal error saving LifterLMS membership plans on PHP 8+, since 3.40.15
 
-#### #3.40.16 - 7/19/2022
+#### # 3.40.16 - 7/19/2022
 
 - 🔧 Fixed Fixed error with Jetpack CRM "Jetpack CRM plugin not active" since 3.40.15
 - 🔧 Fixed Fixed staging mode not automatically activating when copying to a staging site on WP Engine and Cloudways
 - 🔧 Fixed Fixed tags not loading with MooSend
 - 🔧 Fixed Fixed PHP warnings in MooSend integration
 
-#### #3.40.15 - 7/18/2022
+#### # 3.40.15 - 7/18/2022
 
 - ✨ New Added support for [WP Event Manager's Sell Tickets Addon](https://wpfusion.com/documentation/integrations/wp-event-manager/)
 - ⚡️ Improved If the logs are disabled, the logs database table will be dropped
@@ -5694,20 +5707,20 @@ validate_field_
 
  filters in the settings will now only run when an option value has changed instead of on every save
 
-#### #3.40.14 - 7/12/2022
+#### # 3.40.14 - 7/12/2022
 
 - ⚡️ Improved Fluent Forms global settings page will now be hidden from the menu since it doesn't do anything
 - 🔧 Fixed Fixed tags not being applied to recipient with Gifting for WooCommerce Subscriptions when user_email and billing_email were mapped to separate fields
 - 🔧 Fixed Fixed fatal conflict with older WPBakery versions (Uncaught ArgumentCountError)
 - 🔧 Fixed Fixed PHP notice in Advanced Ads integration on PHP 8
 
-#### #3.40.13 - 7/7/2022
+#### # 3.40.13 - 7/7/2022
 
 - 🔧 Fixed Fixed WooCommerce Subscriptions integration disabled since 3.40.12
 - 🔧 Fixed Fixed Mautic ignoring empty fields
 - 🔧 Fixed Fixed fatal error loading the WP Fusion PeepSo Groups settings subpage when no groups had been configured
 
-#### #3.40.12 - 7/5/2022
+#### # 3.40.12 - 7/5/2022
 
 - ✨ New Added an integration with [WPBakery Page Builder](https://wpfusion.com/documentation/page-builders/wpbakery-page-builder/)
 - ✨ New Added an integration with [WooCommerce Payments](https://wpfusion.com/documentation/ecommerce/woocommerce-payments/)
@@ -5719,7 +5732,7 @@ validate_field_
 - 🔧 Fixed Fixed conflict with "WooCommerce Fattureincloud Premium" when loading the available WooCommerce checkout fields in the admin
 - 🛠️ Dev Developers - Changed the EDD update check from a POST to a GET for improved performance
 
-#### #3.40.11 - 6/28/2022
+#### # 3.40.11 - 6/28/2022
 
 - ✨ New Added [Bricks builder integration](https://wpfusion.com/documentation/page-builders/bricks/)
 - ⚡️ Improved If a user registers and has an existing Lead record in Gist, the Lead will be converted to a User
@@ -5730,7 +5743,7 @@ validate_field_
 - 🔧 Fixed Fixed Transaction Expired tags not being removed when a new transaction was placed for a membership product that was previously expired
 - 🔧 Fixed Fixed some HTML and escaping glitches on the WooCommerce product panel upgrade nag with WP Fusion Lite
 
-#### #3.40.10 - 6/20/2022
+#### # 3.40.10 - 6/20/2022
 
 - ✨ New Added support for WP Global Cart (products configured on Site A will now have their tags applied when purchased on Site B)
 - Addded an experimental method for setting the lead source tracking cookies on sites like WP Engine and Flywheel which sanitize UTM parameters out of request URIs
@@ -5748,7 +5761,7 @@ saff_referral_count
  field was enabled for sync
 - 🔧 Fixed Fixed special characters in Gravity Forms multiselect options appearing UTF-8 encoded when using the Create Tag(s) from Value option
 
-#### #3.40.9 - 6/13/2022
+#### # 3.40.9 - 6/13/2022
 
 - ⚡️ Improved When searching in the Redirect if Access is Denied dropdown in the main WP Fusion meta box, results will by grouped by post type
 - 🔧 Fixed Fixed [WooCommerce automatic discounts](https://wpfusion.com/documentation/ecommerce/woocommerce/#auto-applying-discounts) not applying when logging in using the checkout login form
@@ -5757,7 +5770,7 @@ saff_referral_count
 - 🔧 Fixed Fixed CartFlows optin fields not being automatically detected if there was an existing custom checkout field with the same field key
 - 🔧 Fixed Fixed incorrect format when syncing dates to Bento
 
-#### #3.40.8 - 6/6/2022
+#### # 3.40.8 - 6/6/2022
 
 - ✨ New Added fields Marital Status and External ID for sync with NationBuilder
 - ⚡️ Improved With the 
@@ -5797,7 +5810,7 @@ false
 - 🔧 Fixed Fixed Ultimate Member integration syncing data back to the CRM after a new user was imported, when Push All was enabled
 - 🔧 Fixed Fixed typo in Constant Contact class name
 
-#### #3.40.7 - 5/30/2022
+#### # 3.40.7 - 5/30/2022
 
 - ✨ New Added [the_excerpt shortcode for use in the restricted content message](https://wpfusion.com/documentation/getting-started/access-control/#restricted-content-excerpts)
 - ✨ New Added Current Page pseudo-field to [lead source tracking fields](https://wpfusion.com/documentation/tutorials/lead-source-tracking/)
@@ -5839,7 +5852,7 @@ wpf_loaded_tags
 
  when tags are loaded from the CRM for a user
 
-#### #3.40.6 - 5/23/2022
+#### # 3.40.6 - 5/23/2022
 
 - ✨ New Added option to "skip already processed" to the [Event Tickets attendees batch operation](https://wpfusion.com/documentation/integrations/the-events-calendar-event-tickets/#exporting-attendees)
 - 🔧 Fixed Fixed 
@@ -5865,7 +5878,7 @@ switch_to_blog()
 - 🔧 Fixed Fixed the Drip integration not loading custom fields with capital letters in the field keys
 - 🛠️ Dev Improved - WP Fusion will not save the main settings if you are currently switched to another blog on a multisite install. This prevents settings from the original site overwriting the site you've switched to.
 
-#### #3.40.5 - 5/16/2022
+#### # 3.40.5 - 5/16/2022
 
 - ✨ New Added [WP Booking System integration](https://wpfusion.com/documentation/events/wp-booking-system/)
 - ✨ New Added support for [Sendinblue event tracking](https://wpfusion.com/documentation/event-tracking/sendinblue-event-tracking/)
@@ -5877,7 +5890,7 @@ switch_to_blog()
 - 🔧 Fixed Fixed PHP warning (undefined array key) in Restrict Content Pro integration
 - 🔧 Fixed Fixed PHP warning (undefined array key) in Uncanny LearnDash Groups integration
 
-#### #3.40.4 - 5/8/2022
+#### # 3.40.4 - 5/8/2022
 
 - ✨ New Added Add Attendees option to [EventON integration](https://wpfusion.com/documentation/events/eventon/)
 - ✨ New Added option to apply tags when an attendee is checked in to an EventON event
@@ -5911,11 +5924,11 @@ wpf_format_field_value
 wpf_crm_loaded
 ```
 
-#### #3.40.3 - 4/25/2022
+#### # 3.40.3 - 4/25/2022
 
 - 🔧 Fixed Fixed all content restricted for logged in users since 3.40.2
 
-#### #3.40.2 - 4/25/2022
+#### # 3.40.2 - 4/25/2022
 
 - ✨ New Added [EMPTY and NOT EMPTY comparisons](https://wpfusion.com/documentation/getting-started/shortcodes/#empty-and-not-empty) to the 
 ```
@@ -5945,7 +5958,7 @@ init
 
 )
 
-#### #3.40.1 - 4/21/2022
+#### # 3.40.1 - 4/21/2022
 
 - 🔧 Fixed Fixed 
 ```
@@ -5965,9 +5978,10 @@ WPF_CRM_Base
  when viewing an admin user profile before WP Fusion had been set up
 - 🔧 Fixed Fixed error in WeGlot integration since 3.40.0
 
-#### #3.40.0 - 4/18/2022
+#### # 3.40.0 - 4/18/2022
 
 **Heads up!** This update cleans up a lot of old and redundant code in the CRM integration classes. It should be safe for regular users, but if you have any custom code or have created custom CRM modules, please test on a staging site before updating.
+
 - Refactored and simplified CRM class structure: removed calls to wp_fusion()->crm_base, removed class 
 ```
 WPF_CRM_Queue
@@ -6001,15 +6015,22 @@ wp_fusion()->crm
 ```
 
 )
-- ✨ New Added [Constant Contact integration](https://wpfusion.com/documentation/installation-guides/how-to-connect-constant-contact-to-wordpress/)
-- ⚡️ Improved WPML, WeGlot, TranslatePress, and GTranslate integrations will now sync the current language preference whenever a contact is created or updated in the CRM (including for guests)
-- ⚡️ Improved When processing actions again for WooCommerce, Woo Subscriptions, GiveWP, EDD, and Gravity Forms, any tags will be applied regardless of the cache in WordPress (bypasses the Prevent Reapplying Tags option)
-- 🔧 Fixed Fixed Events Manager integration not detecting cancelled bookings when the plugin language was non-English
-- 🔧 Fixed Fixed admin users list showing No Contact ID for users who had a contact ID but no tags
-- 🔧 Fixed Fixed WooCommerce Memberships for Teams team meta batch operation crashing when trying to access deleted users
-- 🔧 Fixed Fixed updates to existing leads not working with Intercom and Gist
+- ✨ New 
+Added [Constant Contact integration](https://wpfusion.com/documentation/installation-guides/how-to-connect-constant-contact-to-wordpress/)
+- ⚡️ Improved 
+WPML, WeGlot, TranslatePress, and GTranslate integrations will now sync the current language preference whenever a contact is created or updated in the CRM (including for guests)
+- ⚡️ Improved 
+When processing actions again for WooCommerce, Woo Subscriptions, GiveWP, EDD, and Gravity Forms, any tags will be applied regardless of the cache in WordPress (bypasses the Prevent Reapplying Tags option)
+- 🔧 Fixed 
+Fixed Events Manager integration not detecting cancelled bookings when the plugin language was non-English
+- 🔧 Fixed 
+Fixed admin users list showing No Contact ID for users who had a contact ID but no tags
+- 🔧 Fixed 
+Fixed WooCommerce Memberships for Teams team meta batch operation crashing when trying to access deleted users
+- 🔧 Fixed 
+Fixed updates to existing leads not working with Intercom and Gist
 
-#### #3.39.5 - 4/13/2022
+#### # 3.39.5 - 4/13/2022
 
 - 🔧 Fixed Fixed WooCommerce auto-applied coupons not working in AJAX requests since 3.39.3
 - ⚡️ Improved MemberPress emails and receipts will no longer be sent when a user is auto-enrolled into a membership via a linked tag
@@ -6018,7 +6039,7 @@ wp_fusion()->crm
 wpf_is_staging_mode()
 ```
 
-#### #3.39.4 - 4/11/2022
+#### # 3.39.4 - 4/11/2022
 
 - ✨ New Added [WPPayForm integration](https://wpfusion.com/documentation/ecommerce/wppayform/)
 - ✨ New Added option to [use a custom picklist field for tags with Salesforce](https://wpfusion.com/documentation/crm-specific-docs/salesforce-tags/)
@@ -6092,7 +6113,7 @@ contact data was not found or in an invalid format
 - 🔧 Fixed Fixed broken "Reauthorize with NationBuilder" link on the setup panel
 - 🔧 Fixed Fixed (Lite) - Integrations settings tab will now be hidden in WP Fusion Lite
 
-#### #3.39.3 - 4/4/2022
+#### # 3.39.3 - 4/4/2022
 
 - ✨ New Added ACF Frontend integration
 - Addded support for tag-based visibility controls with new Elementor Container widget
@@ -6116,7 +6137,7 @@ contact data was not found or in an invalid format
 wpf_woocommerce_order_statuses_for_payment_complete
 ```
 
-#### #3.39.2 - 3/28/2022
+#### # 3.39.2 - 3/28/2022
 
 - 🔧 Fixed Fixed "contact not found" being treated as an irrecoverable API error with HubSpot, since v3.39.1
 - 🔧 Fixed Fixed missing second parameter 
@@ -6128,7 +6149,7 @@ $force
 - 🔧 Fixed Fixed WooCommerce Subscriptions psuedo fields not being declared as pseudo fields (would try to load subscription data from the CRM and save it in usermeta)
 - 🔧 Fixed Fixed unhandled exception when updating a contact's email address to an email address already in use by another contact, with FluentCRM (same site)
 
-#### #3.39.1 - 3/28/2022
+#### # 3.39.1 - 3/28/2022
 
 - ✨ New Added License ID and License Key fields for sync with EDD Software Licensing integration
 - ✨ New Added "Skip Already Processed" checkbox option to Ninja Forms entry export batch operation
@@ -6140,12 +6161,12 @@ $force
 - 🔧 Fixed Fixed Meta Box fields being registered as pseudo fields (only one-way sync)
 - 🔧 Fixed Fixed Sync Tags on Login and Sync Meta on Login running at the start of a ThriveCart auto-login and sometimes erasing the user's cached tags
 - 🔧 Fixed Fixed "The link you followed has expired" error when bulk deleting users and the Members plugin is active
-- 🔧 Fixed Fixed unclosed tag on the Setup tab when connected to NationBuilder
+- 🔧 Fixed Fixed unclosed  tag on the Setup tab when connected to NationBuilder
 - 🔧 Fixed Fixed fatal error submitting Elementor Forms when a multiselect or multi-checkbox type field was enabled for sync
 - 🔧 Fixed Fixed PHP notice in WPF_Integrations_Base::guest_registration()
 - 🔧 Fixed Fixed PHP notice in WPF_Simply_Schedule_Appointments::create_update_customer()
 
-#### #3.39.0 - 3/21/2021
+#### # 3.39.0 - 3/21/2021
 
 - ✨ New Added [option to completely disable the access control system](https://wpfusion.com/documentation/getting-started/general-settings/#restrict-content)
 - ✨ New Added [a WP Fusion status metabox](https://wpfusion.com/documentation/ecommerce/woocommerce-subscriptions/#subscription-management) when editing a single WooCommerce subscription
@@ -6166,7 +6187,7 @@ wp_
  as the prefix instead of the current blog prefix
 - 🔧 Fixed Fixed some unclosed HTML tags in the single taxonomy term settings table
 
-#### #3.38.46 - 3/14/2022
+#### # 3.38.46 - 3/14/2022
 
 - ✨ New Added setting Remove Tags - Cancelled to [Teams for WooCommerce Memberships integration](https://wpfusion.com/documentation/membership/teams-for-woocommerce-memberships/#tagging-team-members)
 - ✨ New Added Meta Box integration (custom user fields will now be auto-detected and listed for sync)
@@ -6197,7 +6218,7 @@ wpf_format_field_value
 
 )
 
-#### #3.38.45 - 3/7/2022
+#### # 3.38.45 - 3/7/2022
 
 - ⚡️ Improved The Restrict Forums setting with bbPress will now also apply to forums that are displayed within a BuddyBoss / BuddyPress group's discussion tab
 - ⚡️ Improved Bento event tracking can now accept an array for 
@@ -6217,7 +6238,7 @@ $event_data
 - 🔧 Fixed Fixed Select a CRM Field dropdown hidden on WPForms feeds (z-index was too low)
 - 🔧 Fixed Fixed date filter in the logs not working
 
-#### #3.38.44 - 2/28/2022
+#### # 3.38.44 - 2/28/2022
 
 - ✨ New Added Phone 1 Extension, Phone 1 Type, Phone 2, Phone 2 Extension, Phone 2 Type fields for sync with Infusionsoft
 - ✨ New Added Reauthorize with Dynamics 365 link to the Setup tab when connected to MS Dynamics 365
@@ -6246,7 +6267,7 @@ true
 - 🔧 Fixed Fixed MemberPress multiselect fields not syncing
 - 🛠️ Dev Developers - Added [wpf_admin_override filter](https://wpfusion.com/documentation/filters/wpf_admin_override/)
 
-#### #3.38.43 - 2/21/2022
+#### # 3.38.43 - 2/21/2022
 
 - ✨ New Added Microsoft Dynamics 365 CRM integration
 - ✨ New Added [SliceWP integration](https://wpfusion.com/documentation/affiliates/slicewp/)
@@ -6285,7 +6306,7 @@ event.details.val
 - 🔧 Fixed Fixed Filter Course Steps with LearnDash not correctly calculating the position of sections after lessons had been removed from those sections (maybe not 100% fixed yet)
 - 🔧 Fixed Fixed fatal error approving new users in BuddyPress who were registered via Gravity Forms User Registration, while the Defer Until Activation setting was enabled in WP Fusion
 
-#### #3.38.42 - 2/14/2022
+#### # 3.38.42 - 2/14/2022
 
 - ✨ New Added MooSend CRM integration
 - ✨ New Added [order sync status column](https://wpfusion.com/documentation/ecommerce/woocommerce/#order-status-column) to WooCommerce orders list table
@@ -6308,7 +6329,7 @@ order_action=wpf_process
 
  query parameter after it's finished so orders aren't accidentally exported twice
 
-#### #3.38.41 - 2/8/2022
+#### # 3.38.41 - 2/8/2022
 
 - 🔧 Fixed Fixed syntax error with PHP <= 7.2 since 3.38.40
 - 🔧 Fixed Fixed redundant WooCommerce integration and WooCommerce Subscriptions integration both applying the same tags for each renewal order
@@ -6320,7 +6341,7 @@ order_action=wpf_process
 - 🔧 Fixed Fixed failed user_register actions logging the full user POST data to the logs (including plaintext passwords)
 - Extended default ActiveCampaign HTTP timeout to 20 seconds (instead of 15)
 
-#### #3.38.40 - 2/7/2022
+#### # 3.38.40 - 2/7/2022
 
 - ✨ New Added [Solid Affiliate integration](https://wpfusion.com/documentation/affiliates/solid-affiliate/)
 - ✨ New Added IP Address field to Contact Fields list
@@ -6341,7 +6362,7 @@ Call to a member function get_title() on bool
 
  when processing a WooCommerce Subscriptions renewal payment for a deleted product
 
-#### #3.38.39 - 2/2/2022
+#### # 3.38.39 - 2/2/2022
 
 - Hopefully fixed the issues with Staging Mode auto-activating since 3.38.35: changes to the home_url() as well as changes between http:// and https:// will no longer activate staging mode
 - ⚡️ Improved Filter Queries will now be bypassed when DOING_CRON is set to true
@@ -6350,12 +6371,12 @@ Call to a member function get_title() on bool
 - 🔧 Fixed Fixed PHP warning calling wp_fusion()->user->get_user_meta() when not logged in
 - 🔧 Fixed Fixed bug in the logs where link to edit a WooCommerce order would be replaced by link to edit the contact in the CRM
 
-#### #3.38.38 - 1/31/2022
+#### # 3.38.38 - 1/31/2022
 
 - Additional fixes for staging mode auto-activating when the admin language was changed with WPML and TranslatePress, since 3.38.35
 - Tested for WordPress 5.9
 
-#### #3.38.37 - 1/31/2022
+#### # 3.38.37 - 1/31/2022
 
 - ✨ New Added [ARMember integration](https://wpfusion.com/documentation/membership/armember/)
 - ✨ New Added [Apply Tags - Check-in setting](https://wpfusion.com/documentation/integrations/the-events-calendar-event-tickets/#event-tickets) to Event Tickets integration
@@ -6368,11 +6389,11 @@ Call to a member function get_title() on bool
 - 🔧 Fixed Fixed private BuddyPress XProfile fields not being exported with the Push User Meta batch operation
 - 🔧 Fixed Fixed staging mode auto-activating when the admin language was changed with WPML and TranslatePress, since 3.38.35
 
-#### #3.38.36 - 1/25/2022
+#### # 3.38.36 - 1/25/2022
 
 - 🔧 Fixed Fixed Gravity Forms feed settings menu item not showing since 3.38.35
 
-#### #3.38.35 - 1/24/2022
+#### # 3.38.35 - 1/24/2022
 
 - ✨ New Added social fields for sync with Infusionsoft / Keap (click Refresh Available Fields to load them)
 - ✨ New Added dynamic tagging support to Mailchimp integration (requires resetting the settings for existing installs)
@@ -6386,7 +6407,7 @@ Call to a member function get_title() on bool
 - 🔧 Fixed Fixed fatal error with HTTP API Logging when the HTTP response was a WP_Error object, since 3.38.34
 - 🔧 Fixed Fixed calls to deprecated function GetOption() in WishListMember integration
 
-#### #3.38.34 - 1/18/2022
+#### # 3.38.34 - 1/18/2022
 
 - ✨ New Added Easy Digital Downloads Checkout Fields Manager integration
 - ✨ New Added support for syncing user profile data from [Advanced Custom Fields flexible content fields](https://wpfusion.com/documentation/other/advanced-custom-fields/#repeaters-and-flexible-content)
@@ -6409,7 +6430,7 @@ wordpress_logged_in_wpfusioncachebuster
 - 🔧 Fixed Fixed Required Tags (all) and Required Tags (not) settings displaying on admin menu editor even when User Menus was inactive
 - 🔧 Fixed Fixed parse error in ActiveCampaign integration with PHP 7.2
 
-#### #3.38.33 - 1/10/2022
+#### # 3.38.33 - 1/10/2022
 
 - ✨ New Added [User Menus integration](https://wpfusion.com/documentation/tutorials/menu-item-visibility/#advanced-usage)
 - ✨ New Added Status section to WP Fusion settings with status and debug information about the plugin
@@ -6434,7 +6455,7 @@ crm.lists.write
 
  with HubSpot (prevented adding contacts to static lists for OAuth apps connected after December 15th 2021)
 
-#### #3.38.32 - 1/3/2022
+#### # 3.38.32 - 1/3/2022
 
 - ✨ New Added support for [Fluent Forms User Registration](https://wpfusion.com/documentation/lead-generation/fluent-forms/#user-registration)
 - ✨ New Added option to [sync WooCommerce Subscriptions details to separate custom fields](https://wpfusion.com/documentation/ecommerce/woocommerce-subscriptions/#syncing-subscription-fields) in the CRM for each subscription product
@@ -6452,7 +6473,7 @@ user_register
 - 🔧 Fixed Fixed PHP warning during MemberMouse registration when Advanced Custom Fields is active
 - 🔧 Fixed Fixed issue syncing tags with Emercury for subscribers that had upper case letters in their email address
 
-#### #3.38.31 - 12/27/2021
+#### # 3.38.31 - 12/27/2021
 
 - ✨ New Added a new api.php endpoint that [can be used for super fast async webhook processing](https://wpfusion.com/documentation/other-common-issues/webhooks-not-being-received-by-wp-fusion/#the-async-endpoint)
 - Removed old wpf_post.php file and API endpoint
@@ -6473,7 +6494,7 @@ max_execution_time
 wpf_query_filter_cache_time
 ```
 
-#### #3.38.30 - 12/20/2021
+#### # 3.38.30 - 12/20/2021
 
 - ✨ New Added support for [custom objects with HubSpot](https://wpfusion.com/documentation/crm-specific-docs/custom-objects-with-hubspot/)
 - 🔧 Fixed Fixed new event tracking integration disabled with Gist and Intercom
@@ -6481,12 +6502,12 @@ wpf_query_filter_cache_time
 - 🔧 Fixed Fixed fatal error in Woo Memberships for Teams integration when adding an invalid user ID to a team
 - 🔧 Fixed Fixed infinite redirect with LearnDash when using Shared Course Steps + Filter Course Steps, and trying to access a topic via permalink
 
-#### #3.38.29 - 12/13/2021
+#### # 3.38.29 - 12/13/2021
 
 - 🔧 Fixed Fixed parse error in Event Tickets integration since 3.38.29
 - 🔧 Fixed Fixed missing event value with Gist event tracking
 
-#### #3.38.28 - 12/13/2021
+#### # 3.38.28 - 12/13/2021
 
 - ✨ New Added [If Menu integration](https://wpfusion.com/documentation/other/if-menu/)
 - ✨ New Added event tracking support for Gist
@@ -6504,7 +6525,7 @@ wpf_query_filter_cache_time
 - 🔧 Fixed Fixed Gravity Forms not pre-filling during an auto-login session when the form was added via the Elementor "form" widget
 - 🔧 Fixed Fixed PHP warning in Event Tickets integration
 
-#### #3.38.27 - 12/6/2021
+#### # 3.38.27 - 12/6/2021
 
 - ✨ New Added user search field to the logs table
 - ✨ New Added lock indicator on locked LearnDash topics when Lock Lessons is enabled
@@ -6546,12 +6567,12 @@ current_time( 'Y-m-d H:i:s' )
 
 )
 
-#### #3.38.26 - 11/30/2021
+#### # 3.38.26 - 11/30/2021
 
 - 🔧 Fixed Fixed CartFlows settings panel not clickable in CartFlows Pro v1.7.2
 - 🔧 Fixed Fixed fatal error in MemberPress Memberships Statuses batch operation when trying to apply Cancelled tags based on transaction status
 
-#### #3.38.25 - 11/22/2021
+#### # 3.38.25 - 11/22/2021
 
 - ✨ New Added option to prefix usermeta keys with the current blog prefix to avoid sharing contact IDs and tags across sub-sites on multisite installs (can be enabled from the Advanced settings tab)
 - ✨ New Added warning to the settings about applying tags for pending WooCommerce orders
@@ -6587,7 +6608,7 @@ WPF_CONTACT_ID_META_KEY
 WPF_TAGS_META_KEY
 ```
 
-#### #3.38.24 - 11/15/2021
+#### # 3.38.24 - 11/15/2021
 
 - ✨ New Added note to Salesforce setup panel regarding completing the installation of the OAuth app
 - ⚡️ Improved Applying tags with Bento will now trigger events using the 
@@ -6605,7 +6626,7 @@ wp_fusion_init_crm
 
  action and [can be operated on](https://wpfusion.com/documentation/advanced-developer-tutorials/how-to-use-a-custom-client-id-for-authentication/#using-a-custom-client-id-and-authorization-url)
 
-#### #3.38.23 - 11/8/2021
+#### # 3.38.23 - 11/8/2021
 
 - ✨ New Added 
 ```
@@ -6653,7 +6674,7 @@ wpf_woocommerce_subscription_sync_fields
 wpf_get_current_user_email()
 ```
 
-#### #3.38.22 - 11/1/2021
+#### # 3.38.22 - 11/1/2021
 
 - ⚡️ Improved Improved performance with checking post access against taxonomy term restrictions
 - ⚡️ Improved If a field type is set to multiselect and it is stored as a comma-separated text value, the value will be synced as an array with supported CRMs
@@ -6663,11 +6684,11 @@ wpf_get_current_user_email()
 - 🔧 Fixed Fixed restricted LearnDash lessons not being hidden by Filter Course Steps in Focus Mode with the BuddyBoss theme
 - 🔧 Fixed Fixed Lock Lessons with LearnDash outputting lock icon on lessons that were already locked by LearnDash core
 
-#### #3.38.21 - 10/26/2021
+#### # 3.38.21 - 10/26/2021
 
 - 🔧 Fixed Fixed all content being protected when no term taxonomy rules were set since 3.38.20
 
-#### #3.38.20 - 10/26/2021
+#### # 3.38.20 - 10/26/2021
 
 - 🔧 Fixed Fixed SQL warning checking term access restrictions since 3.38.17
 - 🔧 Fixed Fixed 
@@ -6678,14 +6699,14 @@ wpf_salesforce_auth_url
  filter (for connecting to sandboxes) not working with new OAuth integration from 3.38.17
 - 🔧 Fixed Fixed WP Affiliate Manager integration not applying Approved tags when affiliates are auto-approved at registration
 
-#### #3.38.19 - 10/25/2021
+#### # 3.38.19 - 10/25/2021
 
 - 🔧 Fixed Fixed error with WP Remote Users Sync 
 ```
 Cannot redeclare WPF_WP_Remote_Users_Sync::$slug
 ```
 
-#### #3.38.18 - 10/25/2021
+#### # 3.38.18 - 10/25/2021
 
 - 🔧 Fixed Fixed error with Advanced Ads 
 ```
@@ -6693,7 +6714,7 @@ Cannot redeclare WPF_Advanced_Ads::$slug
 ```
 - 🔧 Fixed Fixed - Infusionsoft integration will force all numeric values to sync as text to get around "java.lang.Integer cannot be cast to java.lang.String" errors
 
-#### #3.38.17 - 10/25/2021
+#### # 3.38.17 - 10/25/2021
 
 - ✨ New **Added Salesforce OAuth integration - Salesforce users will need to go to the WP Fusion settings page one time and grant OAuth permissions to use the new API**
 - ✨ New Added setting to apply tags when a review is left on a WooCommerce product
@@ -6723,7 +6744,7 @@ track_event()
 
  method to supported CRMs in advance of the new Event Tracking addon
 
-#### #3.38.16 - 10/18/2021
+#### # 3.38.16 - 10/18/2021
 
 - ✨ New Added support for syncing to Date/Time fields with Keap and Infusionsoft
 - ✨ New Added option to sync LearnDash course progress percentage with a custom field in the CRM
@@ -6743,7 +6764,7 @@ track_event()
 - 🔧 Fixed Fixed Sendinblue error "attributes should be an object" when syncing data without any custom fields
 - 🔧 Fixed Fixed PHP notice "Trying to access array offset on value of type null" in Uncanny LearnDash Groups integration during group member enrollment
 
-#### #3.38.15 -10/11/2021
+#### # 3.38.15 -10/11/2021
 
 - ✨ New Added Emercury site tracking
 - ✨ New Added safety checks against infinite loops when using LearnDash and BuddyBoss auto-enrollments in conjunction with the Group Sync feature
@@ -6768,7 +6789,7 @@ wpf_clean()
 
  but allows special characters)
 
-#### #3.38.14 - 10/5/2021
+#### # 3.38.14 - 10/5/2021
 
 - ✨ New Added panel in the WP Fusion settings showing the loaded integrations, with links to the documentation for each
 - ⚡️ Improved Improved Mailchimp API performance when loading available tags
@@ -6794,11 +6815,11 @@ Uncaught Error: Class 'WPF_Plugin_Updater' not found
 - 🔧 Fixed Fixed date values before 1970 not being synced correctly
 - 🔧 Fixed Fixed PHP notice Undefined index: step_display in LearnDash integration
 
-#### #3.38.13 - 9/22/2021
+#### # 3.38.13 - 9/22/2021
 
 - 🔧 Fixed Fixed Divi modules not respecting tag access rules with Divi Builder 4.10.8+
 
-#### #3.38.12 - 9/21/2021
+#### # 3.38.12 - 9/21/2021
 
 - ⚡️ Improved Improved WP Remote Users sync integration (can now detect tag changes that aren't part of a profile update)
 - 🔧 Fixed Fixed bug since 3.38.11 that could cause content to become restricted if it was associated with a deleted taxonomy term
@@ -6822,7 +6843,7 @@ wpf_clean()
 
  but allows special characters)
 
-#### #3.38.11 - 9/13/2021
+#### # 3.38.11 - 9/13/2021
 
 - ✨ New Added [WooCommerce Payment Plans integration](https://wpfusion.com/documentation/ecommerce/woocommerce-payment-plans/)
 - ⚡️ Improved Filter Course Steps for LearnDash should now be a lot more reliable in terms of course step counts and progress tracking
@@ -6839,7 +6860,7 @@ wpf_clean()
 - 🔧 Fixed Fixed checkbox data not syncing to Copper
 - 🔧 Fixed Fixed PHP warning in Emercury integration
 
-#### #3.38.10 - 9/7/2021
+#### # 3.38.10 - 9/7/2021
 
 - ✨ New Added Groundhogg (REST API) CRM integration
 - ✨ New Added [Simply Schedule Appointments integration](https://wpfusion.com/documentation/events/simply-schedule-appointments/)
@@ -6854,7 +6875,7 @@ wpf_clean()
 - 🔧 Fixed Fixed - Updated Maropost API calls to use SSL API endpoint
 - 🔧 Fixed Fixed admin override not working correctly in wpf_user_can_access() when checking the access for a different user (since 3.38.5)
 
-#### #3.38.9 - 9/1/2021
+#### # 3.38.9 - 9/1/2021
 
 - ✨ New Added [Download Monitor integration](https://wpfusion.com/documentation/other/download-monitor/)
 - ✨ New Added [BuddyBoss group organizer linked tag option](https://wpfusion.com/documentation/membership/buddypress/#group-organizer-auto-assignment)
@@ -6864,13 +6885,13 @@ wpf_clean()
 - 🔧 Fixed Fixed PHP warning in class WPF_User when registering a new user with no first or last name
 - 🔧 Fixed Fixed Maropost webhooks not working since 3.38.0
 
-#### #3.38.8 - 8/31/2021
+#### # 3.38.8 - 8/31/2021
 
 - 🔧 Fixed Fixed apply tags via AJAX endpoints resulting in a 403 error since 3.38.0, with Media Tools and other addons
 - ⚡️ Improved Improved logging with Drip, when an email address is changed to an address that already has a subscriber record
 - 🔧 Fixed Fixed PHP warning in the admin when editing a page that has child pages
 
-#### #3.38.4 - 8/23/2021
+#### # 3.38.4 - 8/23/2021
 
 - ✨ New Added [Bento marketing automation](https://wpfusion.com/go/bento/) integration
 - 🔧 Fixed Fixed updates to existing contacts not working with Klaviyo
@@ -6890,7 +6911,7 @@ false
 
  when a contact record wasn't found
 
-#### #3.38.3 - 8/19/2021
+#### # 3.38.3 - 8/19/2021
 
 - ⚡️ Improved Stopped setting 'unknown' for missing Address 2, Country and State fields with Mailchimp
 - 🔧 Fixed Fixed webhooks not working with Salesforce since 3.38.0
@@ -6898,7 +6919,7 @@ false
 - 🔧 Fixed Fixed syntax error with some PHP configurations since 3.38.0
 - 🔧 Fixed Fixed PHP warning in Infusionsoft integration
 
-#### #3.38.2 - 8/18/2021
+#### # 3.38.2 - 8/18/2021
 
 - 🔧 Fixed Fixed error 
 ```
@@ -6908,18 +6929,19 @@ Call to undefined function get_current_screen()
  since 3.38.0 when performing some admin actions
 - 🔧 Fixed Fixed warning about missing redirect showing on LearnDash lessons where the redirect was configured on the parent course
 
-#### #3.38.1 - 8/17/2021
+#### # 3.38.1 - 8/17/2021
 
 - 🔧 Fixed Fixed auto-login links not working since 3.38.0
 - 🔧 Fixed Fixed custom fields not syncing during MemberPress registration since 3.38.0
 - 🔧 Fixed Fixed Defer Until Activation setting not working with signups from the BuddyBoss app
 - 🛠️ Dev Removed WPF_* prefix from 3rd party CRM SDK classes (to comply with wordpress.org plugin guidelines)
 
-#### #3.38.0 - 8/16/2021
+#### # 3.38.0 - 8/16/2021
 
 **Heads up!** This update includes a significant refactor of WP Fusion's admin settings, interfaces, and database storage. We've tested the update extensively, but with 3,500+ changes across 200+ files, there are potentially bugs we've missed. If that sounds scary, you may want to wait until v3.38.1 is released before updating.
 
 If there are bugs, they will most likely affect saving WP Fusion settings in the admin (general settings, access rules, product configurations, etc.) and not affect the existing access rules or sync configuration on your site.
+
 - Big cleanup and refactoring with improvements for security, internationalization, and documentation
 - ✨ New Added [If-So Dynamic Content integration](https://wpfusion.com/documentation/other/if-so/)
 - ✨ New Added support for syncing the [Zoom meeting ID and join URL with FooEvents](https://wpfusion.com/documentation/events/fooevents/#zoom)
@@ -6963,7 +6985,7 @@ wp_fusion()->settings->set_all( $options )
 wp_fusion()->settings->set_multiple( $options )
 ```
 
-#### #3.37.31 - 8/9/2021
+#### # 3.37.31 - 8/9/2021
 
 - ✨ New Added [RestroPress integration](https://wpfusion.com/documentation/ecommerce/restropress/)
 - ✨ New Added [Import Trigger tag option for Jetpack CRM](https://wpfusion.com/documentation/webhooks/jetpack-crm-automatic-imports/)
@@ -6993,7 +7015,7 @@ role_radio
 - 🛠️ Dev Added helper function `WPF_Admin_Interfaces::sanitize_tags_settings( $settings ); for sanitizing tag multiselect data in metaboxes before saving to postmeta
 - 🛠️ Dev Improved sanitization of meta box data in admin
 
-#### #3.37.30 - 8/2/2021
+#### # 3.37.30 - 8/2/2021
 
 - ✨ New Added View In CRM links (direct link to the contact record) for all CRMs that support it
 - ✨ New Added [email optin checkbox and optin tagging for Easy Digital Downloads](https://wpfusion.com/documentation/ecommerce/easy-digital-downloads/#email-optins)
@@ -7011,7 +7033,7 @@ role_radio
 - 🔧 Fixed Fixed "Invalid email address" error with Mailerlite when Email Changes setting was set to Duplicate
 - 🔧 Fixed Fixed course enrollment tags not being applied when a LearnPress course was purchased using the WooCommerce Payment Methods Integration extension
 
-#### #3.37.29 - 7/26/2021
+#### # 3.37.29 - 7/26/2021
 
 - ✨ New Added Appointment Time field for sync with WooCommerce Appointments
 - ✨ New Added [event category tagging for Events Manager events](https://wpfusion.com/documentation/events/events-manager/#event-category-tagging)
@@ -7043,12 +7065,12 @@ wpf_beaver_builder_access_meta
 
  filter
 
-#### #3.37.28 - 7/19/2021
+#### # 3.37.28 - 7/19/2021
 
 - 🔧 Fixed Fixed new contacts created with Autonami not being opted in to receive emails
 - 🔧 Fixed Fixed fatal error with Klick-Tip when making API calls using expired credentials
 
-#### #3.37.27 - 7/19/2021
+#### # 3.37.27 - 7/19/2021
 
 - ✨ New Added Event Categories field for sync with Events Manager
 - ⚡️ Improved Comments forms will be pre-filled with the temporary user's details during an auto-login session
@@ -7084,7 +7106,7 @@ wpf_datetime_format
 
  filter
 
-#### #3.37.26 - 7/12/2021
+#### # 3.37.26 - 7/12/2021
 
 - ✨ New Added Autonami CRM integration
 - ✨ New Added [Upsell Plugin integration](https://wpfusion.com/documentation/ecommerce/upsell-plugin/)
@@ -7100,7 +7122,7 @@ wpf_datetime_format
 - 🛠️ Dev Developers - All Beaver Builder nodes will pass through the wpf_beaver_builder_can_access filter, regardless of if they're protected by WP Fusion or not
 - 🛠️ Dev Developers - Refactored user_can_access() function for better performance and readability
 
-#### #3.37.25 - 7/6/2021
+#### # 3.37.25 - 7/6/2021
 
 - ✨ New Added support for LifterLMS Custom Fields addon
 - ✨ New Added support for applying tags with the default (site title) course with WPComplete
@@ -7113,7 +7135,7 @@ wpf_datetime_format
 - 🔧 Fixed Fixed fatal error since v3.37.23 with BuddyBoss and registering a new user via MemberPress, when the Limit User Roles setting was active
 - Changed WooCommerce function order_has_contact() to get_contact_id_from_order()
 
-#### #3.37.24 - 6/28/2021
+#### # 3.37.24 - 6/28/2021
 
 - ✨ New Added [Event Tickets attendees batch operation](https://wpfusion.com/documentation/events/the-events-calendar-event-tickets/#exporting-attendees)
 - ✨ New Added indicator in the logs when a pseudo field or read only field (i.e. user_registered) has been loaded from the CRM
@@ -7130,7 +7152,7 @@ wpf_datetime_format
 - 🔧 Fixed Fixed fatal error since v3.37.23 with BuddyBoss and registering a new user via MemberPress, when the Limit User Roles setting was active
 - Changed WooCommerce function order_has_contact() to get_contact_id_from_order()
 
-#### #3.37.23 - 6/21/2021
+#### # 3.37.23 - 6/21/2021
 
 - ✨ New Added notification badge on WP Fusion Logs admin menu item to indicate when there are unseen API errors in the logs
 - ✨ New Added logging when a site tracking session has been started for a guest, for ActiveCampaign, HubSpot, and EngageBay
@@ -7149,7 +7171,7 @@ update
 - 🔧 Fixed Fixed fatal error loading WooFunnels custom checkout fields for the WP Fusion settings with WooFunnels 1.4.2
 - Removed wp_fusion()->access->can_access_terms cache (was causing more trouble than it was worth)
 
-#### #3.37.22 - 6/14/2021
+#### # 3.37.22 - 6/14/2021
 
 - ✨ New Added support for [auto-applied discounts with Easy Digital Downloads](https://wpfusion.com/documentation/ecommerce/easy-digital-downloads/#auto-applied-discounts)
 - ⚡️ Improved Return after login cookies will now be set if access is denied and the restricted content message is shown (previously it only worked after a redirect)
@@ -7163,7 +7185,7 @@ update
 - 🔧 Fixed Fixed PHP notices in Groundhogg integration
 - ✨ New Added wpf_get_users_with_contact_ids() function
 
-#### #3.37.21 - 6/7/2021
+#### # 3.37.21 - 6/7/2021
 
 - ✨ New Added [Ninja Forms entries batch export tool](https://wpfusion.com/documentation/lead-generation/ninja-forms/#syncing-historical-entries)
 - ✨ New Added [PulseTechCRM integration](https://thepulsespot.com/)
@@ -7174,7 +7196,7 @@ update
 - 🔧 Fixed Fixed multi-checkbox fields not syncing from Event Tickets Plus attendee registrations
 - 🔧 Fixed Fixed fatal error with Drip SDK and PHP 8
 
-#### #3.37.20 - 5/31/2021
+#### # 3.37.20 - 5/31/2021
 
 - ✨ New Added subscription failed tagging to GiveWP integration
 - ✨ New Added Affiliate Rejected tagging option to AffiliateWP
@@ -7183,7 +7205,7 @@ update
 - 🔧 Fixed Fixed being unable to deactivate the license key if the license had never been activated on the current site
 - 🛠️ Dev removed register_shutdown_function() in API queue in favor of the "shutdown" WordPress action
 
-#### #3.37.19 - 5/24/2021
+#### # 3.37.19 - 5/24/2021
 
 - ✨ New Added [WS Form integration](https://wpfusion.com/documentation/lead-generation/ws-form/)
 - ✨ New Added support for [WooFunnels custom checkout fields](https://wpfusion.com/documentation/ecommerce/woofunnels/#custom-checkout-fields)
@@ -7200,7 +7222,7 @@ update
 - 🔧 Fixed Fixed conflict with YITH WooCommerce Frontend Manager trying to access WP Fusion product settings from the frontend
 - 🛠️ Dev wp_fusion_init action will now only fire if WP Fusion is connected to a CRM
 
-#### #3.37.18 - 5/17/2021
+#### # 3.37.18 - 5/17/2021
 
 - ✨ New Added [Tickera integration](https://wpfusion.com/documentation/events/tickera/)
 - ✨ New Added [Give Gift Aid integration](https://wpfusion.com/documentation/ecommerce/give/#gift-aid)
@@ -7208,25 +7230,25 @@ update
 - 🔧 Fixed Fixed PHP warning trying to apply tags on view for deleted taxonomy terms
 - ✨ New Added wpf_get_users_with_contact_ids() function
 
-#### #3.37.17 - 5/14/2021
+#### # 3.37.17 - 5/14/2021
 
 - Continued bugfixes for Elementor Pro Forms v3.2.0 compatibility — entries from pre-Elementor-3.2 forms sync correctly again, but if you edit the form in Elementor you will still need to re-do the field mapping
 - ⚡️ Improved Improved upgrade nags with WP Fusion Lite
 - ⚡️ Improved Moved Lite-specific functionality into class WPF_Lite_Helper
 - 🔧 Fixed Fixed PHP warning in FluentCRM REST API integration
 
-#### #3.37.16 - 5/12/2021
+#### # 3.37.16 - 5/12/2021
 
 - 🔧 Fixed Fixed tags not applying with FluentCRM since v3.37.14
 - 🔧 Fixed Fixed PHP warning in The Events Calendar month view
 
-#### #3.37.15 - 5/11/2021
+#### # 3.37.15 - 5/11/2021
 
 - 🔧 Fixed Fixed fatal error with BuddyPress (not BuddyBoss) when updating profiles, from v3.37.14
 - 🔧 Fixed Fixed Elementor Forms field maps not saving on new forms
 - EngageBay bugfixes
 
-#### #3.37.14 - 5/10/2021
+#### # 3.37.14 - 5/10/2021
 
 - ✨ New Added [FluentCRM (REST API) CRM integration](https://wpfusion.com/plugin-updates/introducing-fluentcrm-rest-api/)
 - ✨ New Added [WooFunnels integration](http://wpfusion.com/documentation/ecommerce/woofunnels/)
@@ -7244,7 +7266,7 @@ update
 - ✨ New Added action [wp_fusion_init](https://wpfusion.com/documentation/actions/wp_fusion_init/)
 - ✨ New Added action wp_fusion_init_crm
 
-#### #3.37.13 - 5/3/2021
+#### # 3.37.13 - 5/3/2021
 
 - ✨ New Added Payment Failed and Subscription Cancelled tagging options to WP Simple Pay integration
 - ✨ New Added Subscription End Date field for sync with WooCommerce Subscriptions
@@ -7257,7 +7279,7 @@ update
 - 🔧 Fixed Fixed BuddyBoss group invites not working when WP Fusion was in use for groups member access controls
 - ✨ New Added wpf_event_tickets_attendee_data filter
 
-#### #3.37.12 - 4/26/2021
+#### # 3.37.12 - 4/26/2021
 
 - ✨ New Added Auto Login debug mode
 - ✨ New Added support for syncing Gravity Forms meta fields (Embed URL, Entry URL, Form ID, etc) with the CRM
@@ -7268,7 +7290,7 @@ update
 - 🔧 Fixed Fixed Paid Memberships Pro Approval status not syncing when edited on the admin user profile
 - 🔧 Fixed Fixed pmpro_approval field not being picked up by Push User Meta
 
-#### #3.37.11 - 4/19/2021
+#### # 3.37.11 - 4/19/2021
 
 - ✨ New Added support for syncing ACF image fields to the CRM as image URLs instead of attachment IDs
 - ⚡️ Improved Improved support for syncing phone numbers with HighLevel
@@ -7276,11 +7298,11 @@ update
 - 🔧 Fixed Fixed Paid Memberships Pro approval_status field not syncing when a membership level was changed
 - 🔧 Fixed Fixed "The link you followed has expired" message when deleting users, with Members active
 
-#### #3.37.10 - 4/15/2021
+#### # 3.37.10 - 4/15/2021
 
 - 🔧 Fixed Fixed infinite loop when loading bbPress forums index with Filter Queries set to Advanced and Restrict Forum Archives enabled
 
-#### #3.37.9 - 4/15/2021
+#### # 3.37.9 - 4/15/2021
 
 - 🔧 Fixed Fixed tags loaded via webhook not triggering automated enrollments since v3.37.8
 - ✨ New Added WP Fusion status metabox to WooCommerce order sidebar
@@ -7293,7 +7315,7 @@ update
 - 🔧 Fixed Fixed an empty last_name field at registration defaulting to last_updated (with FluentCRM)
 - 🔧 Fixed Fixed fatal error trying to install addon plugins before setting up the CRM API connection
 
-#### #3.37.8 - 4/12/2021
+#### # 3.37.8 - 4/12/2021
 
 - ✨ New Added Emercury CRM integration
 - ✨ New Added support for Easy Digital Downloads 3.0-beta1
@@ -7307,7 +7329,7 @@ update
 - 🔧 Fixed Fixed fatal error error handling error-level HTTP response code with NationBuilder
 - 🔧 Fixed Fixed Capsule not loading more than 50 tags
 
-#### #3.37.7 - 4/5/2021
+#### # 3.37.7 - 4/5/2021
 
 - ✨ New Added WISDM Group Registration for LearnDash integration
 - ✨ New Added support for syncing date-type fields with Elementor forms
@@ -7323,6 +7345,7 @@ update
 - 🔧 Fixed Fixed Give donations_count and total_donated fields not syncing accurately during the first donation
 
 **Developers:**
+
 - Re-added wp_fusion()->access->can_access_posts cache
 - ✨ New Added wpf_query_filter_get_posts_args filter
 - ✨ New Added wpf_is_post_type_eligible_for_query_filtering filter
@@ -7332,17 +7355,17 @@ update
 - Removed wpf_bypass_filter_queries filter (in favor of wpf_should_filter_query)
 - 🔧 Fixed Fixed PHP notices in class-access-control.php
 
-#### #3.37.6 - 4/1/2021
+#### # 3.37.6 - 4/1/2021
 
 - Removed wp_fusion()->access->can_access_posts cache (was causing a lot of access problems, needs more testing)
 - 🔧 Fixed Fixed wpf_tags_applied and wpf_tags_removed hooks not running when a webhook was received, since 3.37.4
 
-#### #3.37.5 - 3/30/2021
+#### # 3.37.5 - 3/30/2021
 
 - 🔧 Fixed Fixed Filter Course Steps setting with LearnDash integration treating Filter Queries as on, on some hosts
 - 🔧 Fixed Fixed url_to_postid() causing problems with WPML when Hide From Menus was active
 
-#### #3.37.4 - 3/29/2021
+#### # 3.37.4 - 3/29/2021
 
 - ✨ New Added Piotnet Forms integration
 - ✨ New Added Lock Lessons option to LearnDash courses
@@ -7359,9 +7382,11 @@ update
 - ✨ New Added filter wpf_user_id
 - ✨ New Added filter wpf_restricted_content_message
 
-#### #3.37.3 - 3/22/2021
+#### # 3.37.3 - 3/22/2021
 
-- ✨ New **Added / Improved:**
+- ✨ New 
+**Added / Improved:**
+
 - Added Members integration
 - ✨ New Added logging for when a linked tag is removed due to a user leaving a BuddyPress group
 - ✨ New Added View in CRM links to admin user profile for FluentCRM and Groundhogg
@@ -7374,6 +7399,7 @@ update
 - ⚡️ Improved Disabled the "API Queue" with FluentCRM and Groundhogg
 - ⚡️ Improved If a user is already logged in when coming from a ThriveCart success URL, they won't be logged in again
 - **Bugfixes:**
+
 - Fixed Export Users batch operation not respecting Limit User Roles setting
 - 🔧 Fixed Fixed tag changes not being synced back properly from FluentCRM
 - 🔧 Fixed Fixed Member Access Controls with BuddyBoss denying access to all members if no tags were specified
@@ -7384,7 +7410,9 @@ update
 - 🔧 Fixed Fixed On-Hold WooCommerce orders from Bank Transfer payment gateway not being synced despite On-Hold being registered as a valid status
 - 🔧 Fixed Fixed MemberPress integration syncing the details from the expiring transaction when switching between two free lifetime memberships
 - 🔧 Fixed Fixed automated unenrollments not working with MemberPress transactions created using the Manual gateway
-- 🛠️ Dev **Developer Updates:**
+- 🛠️ Dev 
+**Developer Updates:**
+
 - Added "wpf_filtering_query" property to WP_Query objects that are being affected by Filter Queries - Advanced
 - ✨ New Added wpf_leadsource_cookie_name filter
 - ✨ New Added wpf_referral_cookie_name filter
@@ -7394,13 +7422,13 @@ update
 - 🔧 Fixed Fixed PHP 'WPF_Lead_Source_Tracking' does not have a method 'prepare_meta_fields' warning saving the settings
 - 🔧 Fixed Fixed "Warning: Illegal string offset 'crm_field'"
 
-#### #3.37.2 - 3/15/2021
+#### # 3.37.2 - 3/15/2021
 
 - 🔧 Fixed Fixed fatal error with dynamic tagging and Event Tickets in 3.37.0
 - ✨ New Added expiration to cached Filter Queries results (thanks @trainingbusinesspros!)
 - ✨ New Added user_nicename field for sync
 
-#### #3.37.1 - 3/15/2021
+#### # 3.37.1 - 3/15/2021
 
 - 🔧 Fixed Fixed fatal error "Call to undefined function bbapp_iap()" in 3.37.0 when BuddyBoss App was active with IAP disabled
 - ✨ New Added "Default Not Logged-In Redirect" setting
@@ -7408,9 +7436,11 @@ update
 - 🔧 Fixed Fixed roles or capabilities loaded from the CRM being able to remove roles and/or capabilities from administrators
 - 🔧 Fixed Fixed wp_capabilities field not saved in correct format when loaded from the CRM
 
-#### #3.37.0 - 3/15/2021
+#### # 3.37.0 - 3/15/2021
 
-- ✨ New **Added / Improved:**
+- ✨ New 
+**Added / Improved:**
+
 - Added support for Create Tag(s) from Value with WooCommerce guest checkouts
 - ✨ New Added support for Create Tag(s) from Value with Tribe Events guest registrations
 - ⚡️ Improved When an Event Tickets attendee is moved to another ticket, their custom fields will be synced
@@ -7418,6 +7448,7 @@ update
 - ⚡️ Improved Added a safety check to prevent you from selecting the same tag for both Apply Tags - Enrolled and Link With Tag, on courses
 - ⚡️ Improved wpForo usergroups will not be linked to tag changes if the user is an administrator (manage_options capability)
 - **BuddyPress / BuddyBoss / bbPress:**
+
 - Added In-App Purchases support with BuddyBoss app (beta)
 - ✨ New Added integration with BuddyBoss segments for app push notifications (beta)
 - ⚡️ Improved If the BuddyPress groups directory page is protected, the restricted content message will replace the groups list
@@ -7425,6 +7456,7 @@ update
 - 🔧 Fixed Fixed restricted bbPress topics not being hidden by Filter Queries - Advanced
 - 🔧 Fixed Fixed restricted content message not displaying on restricted BuddyPress groups
 - **Performance:**
+
 - Improved - Available tags and available fields have been moved to their own wp_options keys for improved performance
 - ⚡️ Improved The wpf_options options key is now set to autoload, for improved performance
 - ⚡️ Improved AJAX'ified the page redirect select in the meta box for improved admin performance
@@ -7432,11 +7464,13 @@ update
 - ⚡️ Improved Removed "Copy to related topics" from LearnDash meta box, for improved performance
 - Removed meta box notice about inheriting permissions from taxonomy terms (for improved performance)
 - **Filter Queries:**
+
 - Improved performance with Filter Queries - Advanced, query results for the same post type will now be cached with wp_cache_set()
 - 🔧 Fixed Fixed bbPress public topics being hidden when Filter Queries was set to Advanced
 - 🔧 Fixed Fixed some post types registered by other plugins not showing as options for Filter Queries - Post Types
 - ✨ New Added notice when Filter Queries is enabled on The Events Calendar event post types, and the Events Month Cache is enabled
 - **Bugfixes:**
+
 - Fixed fields after a checkbox field on a Ninja Forms form being synced as boolean values
 - 🔧 Fixed Fixed Create Tag(s) from Value creating errors with NationBuilder
 - 🔧 Fixed Fixed tags not being applied to current user during form submission from 3.36.16
@@ -7445,13 +7479,15 @@ update
 - 🔧 Fixed Fixed Autopilot integration creating new contacts when email address wasn't specified in update data
 - 🔧 Fixed Fixed automatic name detection feature from 3.36.12 treating username as first_name
 - 🔧 Fixed Fixed errors not being logged correctly while creating / updating GiveWP donors in the CRM
-- 🛠️ Dev **Developer Updates:**
+- 🛠️ Dev 
+**Developer Updates:**
+
 - Removed masking of ?cid= parameter from auto login URL since 3.36.5
 - ✨ New Added wpf_bypass_query_filtering filter
 - ✨ New Added wpf_query_filtering_mode filter
 - ✨ New Added wpf_configure*setting*{$setting_id} filter
 
-#### #3.36.16 - 3/8/2021
+#### # 3.36.16 - 3/8/2021
 
 - ✨ New Added Filter Course Steps setting with LearnDash 3.4.0+
 - ✨ New Added search filter to select boxes in the admin
@@ -7465,12 +7501,12 @@ update
 - 🔧 Fixed Fixed PHP warning in Salesforce integration
 - 🔧 Fixed Fixed PHP warning when force-ending an auto login session
 
-#### #3.36.15 - 3/2/2021
+#### # 3.36.15 - 3/2/2021
 
 - 🔧 Fixed Fixed admin metabox settings getting reset when editing pages in Elementor since v3.36.12
 - 🔧 Fixed Fixed LifterLMS groups settings page not saving
 
-#### #3.36.14 - 3/1/2021
+#### # 3.36.14 - 3/1/2021
 
 - ✨ New Added Read Only indicator on non-writeable Salesforce fields
 - ✨ New Added wpf_hubspot_auth_url filter
@@ -7492,7 +7528,7 @@ update
 - 🔧 Fixed Fixed date-format fields sometimes not syncing correctly to Kartra
 - 🔧 Fixed Fixed Add New Field on Contact Fields list not saving when no CRM field was selected
 
-#### #3.36.13 - 2/24/2021
+#### # 3.36.13 - 2/24/2021
 
 - Tested for WooCommerce 5.0.0
 - ✨ New Added support for syncing date, checkbox, and and multiselect type fields with Ninja Forms
@@ -7501,7 +7537,7 @@ update
 - 🔧 Fixed Fixed "Create tags from value" not working with form submissions
 - Tribe Events Tickets RSVP bugfixes
 
-#### #3.36.12 - 2/22/2021
+#### # 3.36.12 - 2/22/2021
 
 - ✨ New Added tagging based on event registration status with Event Espresso
 - ✨ New Added Ticket Name and Registration Status fields for sync with Event Espresso
@@ -7517,11 +7553,11 @@ update
 - 🔧 Fixed Fixed conflict with Woo Credits
 - 🔧 Fixed Fixed missing email address with Tribe Tickets guest RSVPs
 
-#### #3.36.11 - 2/15/2021
+#### # 3.36.11 - 2/15/2021
 
 - 🔧 Fixed Fixed PHP warning during login when Login Tags Sync is enabled
 
-#### #3.36.10 - 2/15/2021
+#### # 3.36.10 - 2/15/2021
 
 - ✨ New Added BuddyBoss Member Access Controls integration
 - ✨ New Added Give Funds & Designations integration
@@ -7539,11 +7575,11 @@ update
 - 🔧 Fixed Fixed PHP notices in admin
 - wpForo bugfixes
 
-#### #3.36.9 - 2/9/2021
+#### # 3.36.9 - 2/9/2021
 
 - 🔧 Fixed Fixed undefined index PHP notices in v3.36.8
 
-#### #3.36.8 - 2/8/2021
+#### # 3.36.8 - 2/8/2021
 
 - ✨ New Added linked tags for LearnDash group leaders (thanks @dlinstedt)
 - ✨ New Added WP Fusion sync status meta box to the GiveWP payment admin screen
@@ -7562,7 +7598,7 @@ update
 - 🔧 Fixed Fixed deprecated function notice "WC_Subscriptions_Manager::user_has_subscription()"
 - 🔧 Fixed Fixed LifterLMS engagement settings not saving
 
-#### #3.36.7 - 2/1/2021
+#### # 3.36.7 - 2/1/2021
 
 - ✨ New Added ability to restrict BuddyPress group visibility based on tags and specify a redirect if access is denied
 - ✨ New Added BuddyPress User Profile Tabs Creator integration for profile tabs visibility control
@@ -7573,14 +7609,14 @@ update
 - 🔧 Fixed Fixed error viewing AccessAlly settings page when AccessAlly was connected to ActiveCampaign
 - 🔧 Fixed Fixed array values not syncing to AgileCRM since v3.36.5
 
-#### #3.36.6 - 1/26/2021
+#### # 3.36.6 - 1/26/2021
 
 - 🔧 Fixed Fixed Gravity Forms integration not loading since v3.36.5
 - 🔧 Fixed Fixed tooltips not working in the logs
 - 🔧 Fixed Fixed HTTP API logging not showing up for ConvertKit
 - 🔧 Fixed Fixed some PHP notices
 
-#### #3.36.5 - 1/25/2021
+#### # 3.36.5 - 1/25/2021
 
 - ✨ New Added [[user_meta_if]] shortcode (thanks @igorbenic!)
 - ✨ New Added View In CRM link to admin user profile (at the moment just for ActiveCampaign)
@@ -7603,7 +7639,7 @@ update
 - 🔧 Fixed Fixed fatal error loading admin user profile when WP Fusion was not connected to a CRM
 - 🔧 Fixed Fixed PHP notices in Mailjet integration
 
-#### #3.36.4 - 1/8/2021
+#### # 3.36.4 - 1/8/2021
 
 - ✨ New Added Webhook Base URL field to general settings tab as a reference
 - ✨ New Added "ignoreSendingWebhook" parameter to EngageBay API calls
@@ -7623,7 +7659,7 @@ update
 - 🔧 Fixed Fixed Gravity Forms and Formidable Forms integrations not being available in the wp_fusion()->integrations array
 - Auto login bugfixes
 
-#### #3.36.3 - 1/13/2021
+#### # 3.36.3 - 1/13/2021
 
 - ✨ New Added First Name and Last Name fields for sync with Intercom
 - ✨ New Added Restrict Content Pro Joined Date fields for sync
@@ -7635,6 +7671,7 @@ update
 - 🔧 Fixed Fixed returning null from wpf_woocommerce_customer_data marking the order complete
 
 = 3.36.2 - 1/11/2021
+
 - ✨ New Added Apply Tags - Pending Cancellation with the Paid Memberships Pro Cancel on Next Payment Date addon
 - ✨ New Added "Quick Update Tags" support for Mautic webhooks (improved performance)
 - ✨ New Added indicator in the main access control meta box showing if the post is also protected by a taxonomy term
@@ -7644,7 +7681,7 @@ update
 - 🔧 Fixed Fixed HubSpot not converting dates properly
 - 🔧 Fixed Fixed contact ID not being passed from WooCommerce to Enhanced Ecommerce addon for registered users (from 3.36.1)
 
-#### #3.36.1 - 1/7/2021
+#### # 3.36.1 - 1/7/2021
 
 - ⚡️ Improved Refactored and optimized WooCommerce integration
 - ⚡️ Improved Improved asynchronous checkout for WooCommerce (will now be bypassed during IPN notifications)
@@ -7657,7 +7694,7 @@ update
 - 🔧 Fixed Fixed Pending tags not being applied for WooCommerce orders
 - ✨ New Added wpf_get_contact_id() function
 
-#### #3.36 - 1/4/2021
+#### # 3.36 - 1/4/2021
 
 - ✨ New Added HighLevel CRM integration
 - ✨ New Added Growmatik CRM integration
@@ -7670,7 +7707,7 @@ update
 - 🔧 Fixed Fixed auto-login session setting user to logged in when the contact ID was invalid
 - 🔧 Fixed Fixed PHP warning loading available users from Zoho
 
-#### #3.35.20 - 12/28/2020
+#### # 3.35.20 - 12/28/2020
 
 - ✨ New Added YITH WooCommerce Multi Vendor integration
 - ✨ New Added LaunchFlows integration
@@ -7681,15 +7718,15 @@ update
 - 🔧 Fixed Fixed WP Fusion trying to handle API error responses from ontraport.com that originated with other plugins
 - 🔧 Fixed Fixed LifterLMS billing and phone meta field keys
 
-#### #3.35.19 - 12/22/2020
+#### # 3.35.19 - 12/22/2020
 
 - 🔧 Fixed Fixed "Role not enabled for contact creation" notice when users register (from 3.35.17)
 
-#### #3.35.18 - 12/22/2020
+#### # 3.35.18 - 12/22/2020
 
 - 🔧 Fixed Fixed error when trying to add an entry to the logs before the CRM connection was configured
 
-#### #3.35.17 - 12/21/2020
+#### # 3.35.17 - 12/21/2020
 
 - ✨ New Added Start Date and End Date filters to the activity logs
 - ✨ New Added logging for when an API call to apply a tag isn't sent because the user already has that tag
@@ -7707,7 +7744,7 @@ update
 - 🔧 Fixed Fixed Add New Field not working since 3.35.16
 - 🔧 Fixed Fixed tags not being applied with EDD Free Downloads addon
 
-#### #3.35.16 - 12/14/2020
+#### # 3.35.16 - 12/14/2020
 
 - ✨ New Added Work Address fields for sync with NationBuilder
 - ✨ New Added admin notice when logs are set to Only Errors mode
@@ -7724,12 +7761,12 @@ update
 - 🔧 Fixed Fixed the new async checkout for WooCommerce not working with PayPal
 - 🔧 Fixed Fixed typo in the tooltip with the new wpf_format_field_value logging
 
-#### #3.35.15 - 12/8/2020
+#### # 3.35.15 - 12/8/2020
 
 - 🔧 Fixed Fixed "Invalid argument" warning listing custom fields with some CRMs
 - 🔧 Fixed Fixed Required Tags (All) in Elementor integration
 
-#### #3.35.14 - 12/7/2020
+#### # 3.35.14 - 12/7/2020
 
 - Tested and updated for WordPress 5.6
 - ✨ New Added additional logging to show when meta values have been modified by wpf_format_field_value before being sent to the CRM
@@ -7746,7 +7783,7 @@ update
 - 🔧 Fixed Fixed WooCommerce auto-applied coupons not respecting Allowed Emails usage restrictions
 - 🔧 Fixed Fixed PHP warning in LearnDash 3.3.0
 
-#### #3.35.13 - 11/30/2020
+#### # 3.35.13 - 11/30/2020
 
 - ✨ New Added new experimental Asynchronous Checkout option (should be more reliable)
 - ✨ New Added warning when user_pass field is enabled for sync
@@ -7762,7 +7799,7 @@ update
 - 🔧 Fixed Fixed Mailjet integration not loading more than 10 custom fields
 - 🔧 Fixed Fixed dates not formatted correctly with Mailjet
 
-#### #3.35.12 - 11/23/2020
+#### # 3.35.12 - 11/23/2020
 
 - ✨ New Added support for syncing custom attendee fields from Events Manager Pro
 - ✨ New Added warning in the logs for chaining together multiple automated enrollments based on tag changes
@@ -7776,21 +7813,21 @@ update
 - 🔧 Fixed Fixed usage restriction settings not getting copied when a WooCommerce Smart Coupon was generated from a template
 - 🔧 Fixed Fixed PHP warning loading contact data with ActiveCampaign
 
-#### #3.35.11 - 11/18/2020
+#### # 3.35.11 - 11/18/2020
 
 - 🔧 Fixed Fixed Elementor widget visibility bug from v3.35.9
 - Removed dynamic tagging support from Groundhogg
 - Users Insights bugfixes
 - 🔧 Fixed Fixed GiveWP not syncing billing address during the initial payment
 
-#### #3.35.10 - 11/17/2020
+#### # 3.35.10 - 11/17/2020
 
 - 🔧 Fixed Fixed Elementor widget visibility bug from v3.35.9
 - Removed dynamic tagging support from Groundhogg
 - Users Insights bugfixes
 - 🔧 Fixed Fixed GiveWP not syncing billing address during the initial payment
 
-#### #3.35.9 - 11/16/2020
+#### # 3.35.9 - 11/16/2020
 
 - ✨ New Added WP Remote Users Sync integration
 - ✨ New Added support for FooEvents Bookings
@@ -7812,7 +7849,7 @@ update
 - 🔧 Fixed Fixed Apply Tags select on LifterLMS access plans not saving
 - Bugfixes for Gravity Forms User Registration
 
-#### #3.35.8 - 11/9/2020
+#### # 3.35.8 - 11/9/2020
 
 - ✨ New Added Tag Applied and Tag Removed as triggers for Gamipress points, ranks, and achievements
 - ✨ New Added option to sync Gamipress rank names when ranks are earned
@@ -7829,7 +7866,7 @@ update
 - 🔧 Fixed Fixed - Updated for compatibility with wpForo User Custom Fields addon v2.x
 - 🔧 Fixed Fixed Advanced Custom Fields integration converting dates fields from other integrations
 
-#### #3.35.7 - 11/2/2020
+#### # 3.35.7 - 11/2/2020
 
 - ✨ New Added Owner ID field for sync with Groundhogg
 - ✨ New Added support for syncing avatars with BuddyPress and BuddyBoss
@@ -7845,7 +7882,7 @@ update
 - 🔧 Fixed Fixed taxonomy term settings not saving when trying to remove protection from a term
 - 🔧 Fixed Fixed cancelled tags getting applied when an Easy Digital Downloads subscription was upgraded
 
-#### #3.35.6 - 10/26/2020
+#### # 3.35.6 - 10/26/2020
 
 - ✨ New Added email optin consent checkbox for WooCommerce
 - ✨ New Added support for custom address fields with Mailchimp
@@ -7861,14 +7898,14 @@ update
 - 🔧 Fixed Fixed error adding new Zoho Leads without a last name
 - 🔧 Fixed Fixed EDD Recurring Payments integration getting product tag settings from oldest renewal payment
 
-#### #3.35.5 - 10/19/2020
+#### # 3.35.5 - 10/19/2020
 
 - ✨ New Added Profile Picture field for sync with Groundhogg
 - ✨ New Added option to disable admin menu editor interfaces
 - ✨ New Added wpf_render_tag_multiselect_args filter
 - ✨ New Added gettext support to wpf-admin.js strings and updated .pot file
 
-#### #3.35.4 - 10/14/2020
+#### # 3.35.4 - 10/14/2020
 
 - 🔧 Fixed Fixed tags not saving on Gravity Forms feeds in v3.35.3
 - ✨ New Added event location fields for sync to Events Manager integration
@@ -7876,7 +7913,7 @@ update
 - 🔧 Fixed Fixed JS bug when editing taxonomy terms
 - Removed AWeber integration
 
-#### #3.35.3 - 10/12/2020
+#### # 3.35.3 - 10/12/2020
 
 - ✨ New Added Gravity PDF support
 - ✨ New Added BuddyBoss profile type statuses batch export tool
@@ -7890,7 +7927,7 @@ update
 - 🔧 Fixed Fixed settings page requiring an extra refresh after resetting before changing to a new CRM
 - Continuing Kartra custom field bugfixes
 
-#### #3.35.2 - 10/6/2020
+#### # 3.35.2 - 10/6/2020
 
 - ✨ New Added doing_wpf_webhook() function
 - ✨ New Added additional validation and logging regarding setting user roles during import via webhook
@@ -7898,7 +7935,7 @@ update
 - 🔧 Fixed Fixed "Wrong custom field format" error adding contacts to Kartra
 - 🔧 Fixed Fixed loading dropdown and multi-checkbox type fields from Kartra
 
-#### #3.35.1 - 10/5/2020
+#### # 3.35.1 - 10/5/2020
 
 - ✨ New Added refunded transaction tagging to the MemberPress integration
 - ✨ New Added logging for when an invalid role slug was loaded from the CRM
@@ -7915,7 +7952,7 @@ update
 - 🔧 Fixed Fixed Pods data not syncing during frontend form submission
 - 🔧 Fixed Fixed custom fields no longer syncing in FooEvents Custom Attendee Fields v1.4.19
 
-#### #3.35 - 9/28/2020
+#### # 3.35 - 9/28/2020
 
 - ✨ New Added FluentCRM integration
 - ✨ New Added beta support for Mautic v3
@@ -7934,7 +7971,7 @@ update
 - 🔧 Fixed Fixed bbPress forum archive redirects not working for logged-out users
 - 🔧 Fixed Fixed Tribe Tickets not syncing first attendee
 
-#### #3.34.7 - 9/21/2020
+#### # 3.34.7 - 9/21/2020
 
 - ✨ New Added Toolset Types integration
 - ✨ New Added pre*user*{$field} filter on user data being synced to the CRM
@@ -7945,7 +7982,7 @@ update
 - 🔧 Fixed Fixed ticket name not syncing with Events Manager
 - 🔧 Fixed Fixed applying tags on pageview in AJAX request during an auto login session not working on WP Engine
 
-#### #3.34.6 - 9/14/2020
+#### # 3.34.6 - 9/14/2020
 
 - ✨ New Added LifterLMS course track completion tagging
 - ✨ New Added linked tag indicators in the admin posts table for LearnDash courses and groups
@@ -7956,7 +7993,7 @@ update
 - 🔧 Fixed Fixed import tool with MailerLite
 - 🔧 Fixed Fixed Process WP Fusion Actions Again order action showing on WooCommerce Subscriptions
 
-#### #3.34.5 - 9/7/2020
+#### # 3.34.5 - 9/7/2020
 
 - ✨ New Added Ticket Name field for sync with Events Manager
 - ✨ New Added Required Tags (not) to WooCommerce variations
@@ -7970,7 +8007,7 @@ update
 - 🔧 Fixed Fixed - user_id will no longer be loaded during user imports
 - 🔧 Fixed Fixed - Renamed class WPF_Options to WP_Fusion_Options to prevent conflict with WooCommerce Product Filter
 
-#### #3.34.4 - 8/31/2020
+#### # 3.34.4 - 8/31/2020
 
 - ✨ New Added profile completion tagging option to BuddyBoss
 - ✨ New Added LifterLMS course enrollments batch tool
@@ -7979,7 +8016,7 @@ update
 - 🔧 Fixed Fixed MailEngine SOAP warning when MailEngine wasn't the active CRM
 - 🔧 Fixed Fixed unwanted welcome emails with users imported via ConvertKit webhooks
 
-#### #3.34.3 - 8/24/2020
+#### # 3.34.3 - 8/24/2020
 
 - ✨ New Added a Default Account setting for Salesforce
 - ⚡️ Improved Improved Hide From Menus setting - will now attempt to get a post ID out of a custom link
@@ -7991,7 +8028,7 @@ update
 - 🔧 Fixed Fixed Lead Source Tracking not working for guests
 - 🔧 Fixed Fixed bbPress / BuddyBoss forum access rules not working when the forum was accessed as a Group Forum
 
-#### #3.34.2 - 8/17/2020
+#### # 3.34.2 - 8/17/2020
 
 - ✨ New Added Events Manager fields for sync
 - ✨ New Added "raw" field type
@@ -8005,11 +8042,11 @@ update
 - 🔧 Fixed Fixed importer with EngageBay
 - 🔧 Fixed Fixed ActiveCampaign not loading more than 100 custom fields
 
-#### #3.34.1 - 8/12/2020
+#### # 3.34.1 - 8/12/2020
 
 - WordPress 5.5 compatibility updates
 
-#### #3.34 - 8/11/2020
+#### # 3.34 - 8/11/2020
 
 - ✨ New Added EngageBay CRM integration
 - ✨ New Added support for multiselect fields with Mautic
@@ -8021,11 +8058,11 @@ update
 - 🔧 Fixed Fixed Required Tags (All) tags not showing on lock icon tooltip in post tables
 - 🔧 Fixed Fixed ActiveCampaign not loading more than 20 custom fields
 
-#### #3.33.20 - 8/3/2020
+#### # 3.33.20 - 8/3/2020
 
 - 🔧 Fixed Fixed broken WishList Member admin menu
 
-#### #3.33.19 - 8/3/2020
+#### # 3.33.19 - 8/3/2020
 
 - ✨ New Added Last Course Progressed field for sync with LearnDash
 - ✨ New Added Last Course Completed Date field for sync with LearnDash
@@ -8040,7 +8077,7 @@ update
 - 🔧 Fixed Fixed Form Auto Login with Fluent Forms
 - 🔧 Fixed Fixed wpForo custom fields not loading from CRM
 
-#### #3.33.18 - 7/27/2020
+#### # 3.33.18 - 7/27/2020
 
 - ✨ New Added HTTP API logging option
 - ✨ New Added LifterLMS Groups beta integration
@@ -8051,7 +8088,7 @@ update
 - 🔧 Fixed Fixed Salesforce contact ID lookup failing with emails with + symbols
 - 🔧 Fixed Fixed auto-login warning appearing when previewing Gravity Forms forms in the admin
 
-#### #3.33.17 - 7/20/2020
+#### # 3.33.17 - 7/20/2020
 
 - ✨ New Added Organizer fields for syncing with Tribe Events / Event Tickets
 - ✨ New Added support for Groundhogg Advanced Custom Meta Fields
@@ -8075,7 +8112,7 @@ update
 - Dynamic tagging bugfixes
 - AgileCRM timezone tweaks
 
-#### #3.33.16 - 7/13/2020
+#### # 3.33.16 - 7/13/2020
 
 - ✨ New Added "Resync contact IDs for every user" batch operation
 - ✨ New Added "LearnDash course enrollment statuses" batch operation
@@ -8095,7 +8132,7 @@ update
 - Memberoni bugfixes
 - Updated .pot file
 
-#### #3.33.15 - 7/6/2020
+#### # 3.33.15 - 7/6/2020
 
 - Updated User.com integration for new API endpoint
 - ✨ New Added BuddyPress groups statuses batch operation
@@ -8118,7 +8155,7 @@ update
 - 🔧 Fixed Fixed archive restrictions not working if no required tags were specified
 - Event Espresso bugfixes
 
-#### #3.33.14 - 6/29/2020
+#### # 3.33.14 - 6/29/2020
 
 - ✨ New Added priority option for Return After Login
 - ✨ New Added option to set a default owner for new contacts with Zoho
@@ -8130,12 +8167,12 @@ update
 - 🔧 Fixed Fixed Group and Group Type tags not being applied in BuddyPress when an admin accepted a member join request
 - GiveWP bugfixes
 
-#### #3.33.13 - 6/23/2020
+#### # 3.33.13 - 6/23/2020
 
 - 🔧 Fixed Fixed invalid redirect URI connecting to Zoho
 - 🔧 Fixed Fixed Loopify and Zoho getting mixed up during OAuth connection process
 
-#### #3.33.12 - 6/22/2020
+#### # 3.33.12 - 6/22/2020
 
 - ✨ New Added Modern Events Calendar integration
 - ✨ New Added status indicator for Inactive people in Drip
@@ -8150,14 +8187,14 @@ update
 - 🔧 Fixed Fixes for syncing expiration dates with WooCommerce Memberships
 - 🔧 Fixed Fixed PHP warning while submitting Formidable forms with multi-checkbox values
 
-#### #3.33.11 - 6/18/2020
+#### # 3.33.11 - 6/18/2020
 
 - 🔧 Fixed Fixed fatal conflict when editing menu items if other plugins hadn't been updated to the WP 5.4 menu syntax
 - 🔧 Fixed Fixed AgileCRM tag name validation false positive on underscore characters
 - 🔧 Fixed Fixed logs items per page not saving in WP 5.4.2
 - 🔧 Fixed Fixed compatibility with Gifting for WooCommerce Subscriptions v2.1.1
 
-#### #3.33.10 - 6/15/2020
+#### # 3.33.10 - 6/15/2020
 
 - ✨ New Added WooCommerce Appointments integration
 - ✨ New Added WP Crowdfunding integration
@@ -8177,7 +8214,7 @@ update
 - 🔧 Fixed Fixed WishList Member Stripe registration creating contacts with invalid email addresses
 - 🔧 Fixed Fixed s2Member custom fields not being synced on profile update
 
-#### #3.33.9 - 6/8/2020
+#### # 3.33.9 - 6/8/2020
 
 - ✨ New Added support for syncing custom event fields with Tribe Events Calendar Pro
 - ✨ New Added support for BuddyPress Username Changer addon
@@ -8192,12 +8229,12 @@ update
 - 🔧 Fixed Fixed import tool not loading more than 100 contacts with MailerLite
 - 🔧 Fixed Fixed Gifting for WooCommerce Subscriptions integration not creating a second contact record for the gift recipient when billing_email was enabled for sync
 
-#### #3.33.8 - 6/2/2020
+#### # 3.33.8 - 6/2/2020
 
 - WooCommerce Subscribe All the Things tags will now be applied properly during a WooCommerce Subscription Statuses batch operation
 - 🔧 Fixed Fixed width of tag select boxes in LearnDash settings panel when Gutenberg was active
 
-#### #3.33.7 - 6/1/2020
+#### # 3.33.7 - 6/1/2020
 
 - ✨ New Added Beaver Themer integration
 - ✨ New Added global Apply Tags to Group Members setting for Restrict Content Pro
@@ -8214,7 +8251,7 @@ update
 - WishList Member bugfixes
 - 🔧 Fixed Fixed SSL error connecting to Zoho's Indian data servers
 
-#### #3.33.6 - 5/25/2020
+#### # 3.33.6 - 5/25/2020
 
 - ✨ New Added setting for Prevent Reapplying Tags (Advanced)
 - ✨ New Added GiveWP Donors and GiveWP Donations batch operations
@@ -8231,7 +8268,7 @@ update
 - 🔧 Fixed Fixed Infusionsoft not loading tag names with Hebrew characters
 - Klaviyo bugfixes
 
-#### #3.33.5 - 5/18/2020
+#### # 3.33.5 - 5/18/2020
 
 - ✨ New Added Give Recurring Donations support
 - ✨ New Added Pods user fields support
@@ -8248,7 +8285,7 @@ update
 - 🔧 Fixed Fixed Filter Queries not working on the blog index page
 - Maropost bugfixes
 
-#### #3.33.4 - 5/11/2020
+#### # 3.33.4 - 5/11/2020
 
 - Facebook OG scraper will now bypass access rules if SEO Show Excerpts is on
 - ✨ New Added validation to custom meta keys registered for sync on the Contact Fields list
@@ -8263,12 +8300,12 @@ update
 - 🔧 Fixed Fixed guest checkout tags not being applied in Maropost
 - 🔧 Fixed Fixed set-screen-option filter not returning $status if column wasn't wpf_status_log_items_per_page (thanks @Pebblo)
 
-#### #3.33.3 - 5/5/2020
+#### # 3.33.3 - 5/5/2020
 
 - 🔧 Fixed Fixed an empty WooCommerce Subscriptions Gifting recipient email field on checkout overwriting billing_email
 - 🔧 Fixed Fixed Infusionsoft form submissions starting auto-login sessions even if the setting was turned off
 
-#### #3.33.2 - 5/4/2020
+#### # 3.33.2 - 5/4/2020
 
 - ✨ New Added WP-Members integration
 - ✨ New Added Users Insights integration
@@ -8286,11 +8323,11 @@ update
 - 🔧 Fixed Fixed CRM field labels not showing in Caldera Forms
 - 🔧 Fixed Fixed Mautic not importing more than 30 contacts using import tool
 
-#### #3.33.1 - 4/27/2020
+#### # 3.33.1 - 4/27/2020
 
 - 🔧 Fixed Fixed fatal error in Teams for WooCommerce Memberships settings panel
 
-#### #3.33 - 4/27/2020
+#### # 3.33 - 4/27/2020
 
 - ✨ New Added WP ERP CRM integration
 - ✨ New Added Gifting for WooCommerce Subscriptions integration
@@ -8308,7 +8345,7 @@ update
 - 🔧 Fixed Fixed WooCommerce Subscription product name not being synced when a subscription item is switched
 - 🔧 Fixed Fixed email address changes not getting synced after confirmation via the admin user profile
 
-#### #3.32.3 - 4/20/2020
+#### # 3.32.3 - 4/20/2020
 
 - ✨ New Added Apply Tags - Profile Complete setting to Ultimate Member
 - Updated WishList member integration for v3.x
@@ -8317,14 +8354,14 @@ update
 - 🔧 Fixed Fixed coupon_code not syncing with WooCommerce
 - 🔧 Fixed Fixed unnecessary contact ID lookup in user import process
 
-#### #3.32.2 - 4/17/2020
+#### # 3.32.2 - 4/17/2020
 
 - ✨ New Added wpf_woocommerce_user_id filter
 - 🔧 Fixed Fixed MailerLite subscriber IDs not loading properly on servers with PHP_INT_MAX set to 32
 - 🔧 Fixed Fixed Status field not updating properly with Drip
 - 🔧 Fixed Fixed fatal error checking if order_date field was enabled for sync during a WooCommerce renewal payment
 
-#### #3.32.1 - 4/13/2020
+#### # 3.32.1 - 4/13/2020
 
 - ✨ New Added fallback method for background worker in case it gets blocked
 - ✨ New Added Filter Queries setting to Beaver Builder Posts module
@@ -8342,7 +8379,7 @@ update
 - 🔧 Fixed Fixed CRM field labels not showing in Caldera Forms
 - 🔧 Fixed Fixed Mautic not importing more than 30 contacts using import tool
 
-#### #3.32 - 4/6/2020
+#### # 3.32 - 4/6/2020
 
 - ✨ New Added Loopify CRM integration
 - ✨ New Added support for Advanced Forms Pro
@@ -8361,7 +8398,7 @@ update
 - 🔧 Fixed Fixed WooCommerce Subscription product name not being synced when a subscription item is switched
 - 🔧 Fixed Fixed email address changes not getting synced after confirmation via the admin user profile
 
-#### #3.31 - 3/30/2020
+#### # 3.31 - 3/30/2020
 
 - ✨ New Added Quentn CRM integration
 - ⚡️ Improved Improved support for multiselect fields in Gravity Forms
@@ -8376,7 +8413,7 @@ wpf_hubspot_add_engagement
  filter to allow modifying the HubSpot engagement body before it is sent
 - 🛠️ Dev Updated the HubSpot engagements API to use the new v3 API
 
-#### #3.29.7 - 3/5/2020
+#### # 3.29.7 - 3/5/2020
 
 - ✨ New Added support for WooCommerce order status tagging with statuses created by WooCommerce Order Status Manager
 - 🔧 Fixed Fixed restricted content message not being output when multiple content areas were on a page
@@ -8384,7 +8421,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed changed email addresses not syncing to Sendinblue
 - 🔧 Fixed Fixed names not syncing with profile updates in BuddyPress
 
-#### #3.29.6 - 3/2/2020
+#### # 3.29.6 - 3/2/2020
 
 - ✨ New Added option to send welcome email to new users imported from ConvertKit
 - ✨ New Added Apply Tags - Trial and Apply Tags - Converted settings to MemberPress
@@ -8397,7 +8434,7 @@ wpf_hubspot_add_engagement
 - Stopped converting dates to GMT with Ontraport
 - 🔧 Fixed Fixed Tags (Not) visibility bug with Beaver Builder
 
-#### #3.29.5 - 2/24/2020
+#### # 3.29.5 - 2/24/2020
 
 - ✨ New Added optin_status field for syncing with Groundhogg
 - ✨ New Added Defer Until Activation setting to BuddyPress
@@ -8412,7 +8449,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed Mautic not listing more than 30 custom fields
 - 🔧 Fixed Fixed Mailchimp not loading more than 200 tags
 
-#### #3.29.4 - 2/17/2020
+#### # 3.29.4 - 2/17/2020
 
 - ✨ New Added Last Coupon Used field for syncing with WooCommerce
 - ✨ New Added support for global addons with WooCommerce Product Addons
@@ -8424,7 +8461,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed conflict between Clean Login and Convert Pro integrations
 - 🔧 Fixed Fixed underscores not loading in Infusionsoft tag labels
 
-#### #3.29.3 - 2/10/2020
+#### # 3.29.3 - 2/10/2020
 
 - ✨ New Added support for EDD Custom Prices addon
 - ✨ New Added Required Tags (not) setting to access control meta box
@@ -8434,14 +8471,14 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed user_activation_key getting reset when importing new users and breaking Better Notifications welcome emails
 - 🔧 Fixed Fixed PHP error manually adding a member to a team in WooCommerce Memberships for Teams
 
-#### #3.29.2 - 2/4/2020
+#### # 3.29.2 - 2/4/2020
 
 - ✨ New Added wpf_auto_login_cookie_expiration filter
 - ✨ New Added wpf_salesforce_query_args filter
 - 🔧 Fixed Fixed Approved tags getting applied with Event Espresso when registrations are pending
 - 🔧 Fixed Fixed tags not applying with Event Espresso
 
-#### #3.29.1 - 2/3/2020
+#### # 3.29.1 - 2/3/2020
 
 - ✨ New Added WP Ultimo integration
 - ✨ New Added notice when linked / auto-enrollment tags are changed on a course or membership
@@ -8454,7 +8491,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed "Return After Login" not working with WooCommerce account login
 - Maropost bugfixes
 
-#### #3.29 - 1/27/2020
+#### # 3.29 - 1/27/2020
 
 - ✨ New Added Klick-Tipp CRM integration
 - Logged in users and form submissions will now be identified to the Gist tracking script
@@ -8467,7 +8504,7 @@ wpf_hubspot_add_engagement
 - Maropost bugfixes
 - Sendinblue bugfixes
 
-#### #3.28.6 - 1/20/2020
+#### # 3.28.6 - 1/20/2020
 
 - ✨ New Added linked tags to Ranks with myCred
 - ✨ New Added BuddyPress Account Deactivator integration
@@ -8475,12 +8512,12 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed special characters in tag names breaking tags loading with Infusionsoft
 - Copper bugfixes
 
-#### #3.28.5 - 1/15/2020
+#### # 3.28.5 - 1/15/2020
 
 - 🔧 Fixed Fixed notice with ConvertKit when WP_DEBUG was turned on
 - Auto login sessions will now end on the WooCommerce Order Received page
 
-#### #3.28.4 - 1/13/2020
+#### # 3.28.4 - 1/13/2020
 
 - ✨ New Added support for myCred ranks
 - ✨ New Added Event Start Time field for syncing with Event Espresso
@@ -8493,18 +8530,18 @@ wpf_hubspot_add_engagement
 - ✨ New Added support for dropdown-type fields with Copper
 - Copper bugfixes
 
-#### #3.28.3 - 1/9/2020
+#### # 3.28.3 - 1/9/2020
 
 - 🔧 Fixed Fixed ActiveCampaign contact ID lookups returning error message when connected to non-English ActiveCampaign accounts
 
-#### #3.28.2 - 1/9/2020
+#### # 3.28.2 - 1/9/2020
 
 - Performance improvements with LearnDash auto enrollments
 - ⚡️ Improved Improved debugging tools for background worker
 - Menu item visibility bugfixes
 - Gist compatibility updates for changed API methods
 
-#### #3.28.1 - 1/6/2020
+#### # 3.28.1 - 1/6/2020
 
 - ✨ New Added option for tagging on LearnDash assignment upload
 - ✨ New Added Share Logins Pro integration
@@ -8513,7 +8550,7 @@ wpf_hubspot_add_engagement
 - Give integration bugfixes
 - GetResponse bugfixes
 
-#### #3.28 - 12/30/2019
+#### # 3.28 - 12/30/2019
 
 - ✨ New Added Zero BS CRM integration
 - ✨ New Added MailEngine CRM integration (thanks @pety-dc and @ebola-dc)
@@ -8524,7 +8561,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added additional WooCommerce Memberships logging
 - Menu item visibility bug fixes
 
-#### #3.27.5 - 12/23/2019
+#### # 3.27.5 - 12/23/2019
 
 - ✨ New Added option to restrict access to individual menu items
 - ✨ New Added FacetWP integration
@@ -8532,7 +8569,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added export tool for Event Espresso registrations
 - 🔧 Fixed Fixed BuddyPress groups not running auto-enrollments when a webhook was received
 
-#### #3.27.4 - 12/16/2019
+#### # 3.27.4 - 12/16/2019
 
 - ⚡️ Improved Improved support for custom fields with FooEvents
 - ✨ New Added wpf_aweber_key and wpf_aweber_secret filters
@@ -8541,7 +8578,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed Elementor Popups triggering on every page for admins
 - Autopilot bugfixes
 
-#### #3.27.3 - 12/11/2019
+#### # 3.27.3 - 12/11/2019
 
 - ✨ New Added support for WP Event Manager - Sell Tickets addon
 - ✨ New Added support for Popup Maker subscription forms
@@ -8553,12 +8590,12 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed auto un-enrollment from LearnDash courses not working when course access was stored in user meta
 - 🔧 Fixed Fixed Advanced Custom Fields integration overriding date formats from WooCommerce
 
-#### #3.27.2 - 12/3/2019
+#### # 3.27.2 - 12/3/2019
 
 - 🔧 Fixed Fixed load contact method with Sendinblue
 - Gutenberg block will no longer output HTML if there's nothing to display
 
-#### #3.27.1 - 12/2/2019
+#### # 3.27.1 - 12/2/2019
 
 - ✨ New Added GravityView integration
 - ✨ New Added batch tool for Restrict Content Pro members
@@ -8572,7 +8609,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed BirdSend only loading 15 available tags
 - 🔧 Fixed Fixed GMT offset calculation with Ontraport date fields
 
-#### #3.27 - 11/25/2019
+#### # 3.27 - 11/25/2019
 
 - ✨ New Added BirdSend CRM integration
 - ✨ New Added WP Event Manager integration
@@ -8583,7 +8620,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed import tool not loading more than 50 contacts with Sendinblue
 - wpf_tags_applied and wpf_tags_removed will now run when tags are loaded from the CRM
 
-#### #3.26.5 - 11/18/2019
+#### # 3.26.5 - 11/18/2019
 
 - ✨ New Added Groundhogg company fields for sync
 - ✨ New Added Event Name, Event Venue, and Venue Address fields for sync to Event Espresso
@@ -8593,7 +8630,7 @@ wpf_hubspot_add_engagement
 - ⚡️ Improved Improved support for Country field with Groundhogg
 - Style compatibility updates for WP 5.3
 
-#### #3.26.4 - 11/11/2019
+#### # 3.26.4 - 11/11/2019
 
 - ✨ New Added Toolset Types integration
 - ✨ New Added event_date field to Event Espresso integration
@@ -8606,7 +8643,7 @@ wpf_hubspot_add_engagement
 - ⚡️ Improved Improved compatibility with Gravity Forms PayPal Standard addon
 - Give integration bugfixes
 
-#### #3.26.3 - 11/4/2019
+#### # 3.26.3 - 11/4/2019
 
 - ✨ New Added Fluent Forms integration
 - ✨ New Added AffiliateWP affiliates export option to batch tools
@@ -8617,34 +8654,34 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed bug with Intercom API v1.4
 - 🔧 Fixed Fixed bug with The Events Calendar Community Tickets addon
 
-#### #3.26.2 - 10/28/2019
+#### # 3.26.2 - 10/28/2019
 
 - ✨ New Added "capabilties" format for syncing capability fields
 - ✨ New Added India data server support to Zoho integration
 - ⚡️ Improved Improved handling of multi-select and dropdown field types in PeepSo
 - 🔧 Fixed Fixed return after login for redirects on hidden WooCommerce products
 
-#### #3.26.1 - 10/21/2019
+#### # 3.26.1 - 10/21/2019
 
 - ✨ New Added Memberoni integration
 - ⚡️ Improved Improved integration with PilotPress login process
 - Woo Subscriptions actions will no longer run on staging sites
 - 🔧 Fixed Fixed conflict with ThriveCart auto login and UserPro
 
-#### #3.26 - 10/14/2019
+#### # 3.26 - 10/14/2019
 
 - ✨ New Added Klaviyo integration
 - 🔧 Fixed Fixed PeepSo multi-checkbox fields syncing values instead of labels
 - 🔧 Fixed Fixed Elementor Pro bug when Elementor content was stored serialized
 
-#### #3.25.17 - 10/9/2019
+#### # 3.25.17 - 10/9/2019
 
 - ✨ New Added support for Ranks with Gamipress
 - Enabled Import Users tab for Intercom
 - ✨ New Added "role" and "send_notification" parameters for ThriveCart auto login
 - Performance improvements and bugfixes for background worker
 
-#### #3.25.16 - 10/7/2019
+#### # 3.25.16 - 10/7/2019
 
 - ✨ New Added custom fields support to Give
 - ✨ New Added option to hide restricted wpForo forums
@@ -8652,7 +8689,7 @@ wpf_hubspot_add_engagement
 - Ultimate Member roles will now be removed when a linked tag is removed
 - 🔧 Fixed Fixed special characters getting escaped on admin profile updates
 
-#### #3.25.15 - 9/30/2019
+#### # 3.25.15 - 9/30/2019
 
 - ✨ New Added WP E-Signature integration
 - ✨ New Added UserInsights integration
@@ -8666,7 +8703,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed fatal error when initializing GetResponse connection
 - All site tracking scripts will now recognize auto login sessions
 
-#### #3.25.14 - 9/23/2019
+#### # 3.25.14 - 9/23/2019
 
 - ✨ New Added WPPizza integration
 - Existing Elementor forms will now update available CRM fields automatically
@@ -8677,12 +8714,12 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixes for HubSpot accounts with over 250 lists
 - Sendinblue bugfixes
 
-#### #3.25.13 - 9/18/2019
+#### # 3.25.13 - 9/18/2019
 
 - Sendinblue bugfixes
 - Bugfixes for syncing LearnDash quiz answers
 
-#### #3.25.12 - 9/16/2019
+#### # 3.25.12 - 9/16/2019
 
 - ✨ New Added support for Woo Checkout Field Editor Pro
 - ✨ New Added CartFlows upsell tagging
@@ -8695,7 +8732,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed NationBuilder Primary address fields not syncing
 - 🔧 Fixed Fixed updating email addresses in WooCommerce / My Account creating duplicate subscribers in Drip
 
-#### #3.25.11 - 9/9/2019
+#### # 3.25.11 - 9/9/2019
 
 - ✨ New Added Site Lockout feature
 - ✨ New Added Ahoy messaging integration
@@ -8710,11 +8747,11 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed Mailchimp compatibility with other Mailchimp plugins
 - Copper bugfixes
 
-#### #3.25.10 - 9/4/2019
+#### # 3.25.10 - 9/4/2019
 
 - 🔧 Fixed Fixed home page not respecting access restrictions in 3.25.8
 
-#### #3.25.9 - 9/4/2019
+#### # 3.25.9 - 9/4/2019
 
 - Changed order of apply and remove tags in Woo Subscriptions
 - 🔧 Fixed Fixed Hold and Pending Cancel tags not being removed in Woo Subscriptions after a successful payment
@@ -8722,7 +8759,7 @@ wpf_hubspot_add_engagement
 - FooEvents compatibility updates
 - 🔧 Fixed Fixed tags not being removed with Ontraport
 
-#### #3.25.8 - 9/3/2019
+#### # 3.25.8 - 9/3/2019
 
 - ✨ New Added Salon Booking integration
 - ✨ New Added Custom Post Type UI integration
@@ -8734,7 +8771,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed content protection on blog index page
 - 🔧 Fixed Fixed students getting un-enrolled from LearnDash courses if they were enrolled at the group level and didn't have a course linked tag
 
-#### #3.25.7 - 8/26/2019
+#### # 3.25.7 - 8/26/2019
 
 - ✨ New Added Uncanny LearnDash Groups integration
 - ✨ New Added event_name and venue_name to Event Tickets integration
@@ -8744,11 +8781,11 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed typo in NationBuilder fields dropdown
 - WooCommerce deposits compatibility updates
 
-#### #3.25.6 - 8/19/2019
+#### # 3.25.6 - 8/19/2019
 
 - 🔧 Fixed Fix for error trying to get coupons from WooCommerce order on versions lower than 3.7
 
-#### #3.25.5 - 8/19/2019
+#### # 3.25.5 - 8/19/2019
 
 - ✨ New Added ability to create new user meta fields from the Contact Fields list
 - ✨ New Added support for Event Tickets Plus custom fields with WooCommerce
@@ -8763,7 +8800,7 @@ wpf_hubspot_add_engagement
 - Reverted asynchronous checkouts to use background queue instead of single request
 - Performance improvements on sites with Memberium active
 
-#### #3.25.4 - 8/12/2019
+#### # 3.25.4 - 8/12/2019
 
 - ✨ New Added auto-login by email address for MailerLite
 - ✨ New Added Portuguese translation (thanks @João Alexandre)
@@ -8774,13 +8811,13 @@ wpf_hubspot_add_engagement
 - Variable tags will now be removed when a Woo subscription is switched and Remove Tags is enabled
 - 🔧 Fixed Fix for WooCommerce Orders export process crashing on deleted products
 
-#### #3.25.3 - 8/6/2019
+#### # 3.25.3 - 8/6/2019
 
 - 🔧 Fixed Fixed fatal error in BuddyPress integration when Profile Types module was disabled
 - 🔧 Fixed Fixed WooCommerce orders exporter crashing when trying to access a deleted product
 - 🔧 Fixed Fixed wpf_woocommerce_payment_complete action not firing on renewal orders
 
-#### #3.25.2 - 8/5/2019
+#### # 3.25.2 - 8/5/2019
 
 - ✨ New Added support for tag linking with BuddyBoss Profile Types
 - ✨ New Added support for restricting access to a single bbPress discussion
@@ -8793,7 +8830,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed bug with borders being output on restricted Elementor widgets
 - 🔧 Fixed Fixed bug when sending a store credit with WooCommerce Smart Discounts
 
-#### #3.25.1 - 7/29/2019
+#### # 3.25.1 - 7/29/2019
 
 - ✨ New Added CartFlows integration
 - Groundhogg 2.0 compatibility
@@ -8801,7 +8838,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added WooCommerce Order Notes field for syncing
 - 🔧 Fixed Fixed "Affiliate Approved" tags not being added when creating an AffiliateWP affiliate via the admin
 
-#### #3.25 - 7/22/2019
+#### # 3.25 - 7/22/2019
 
 - ✨ New Added MailPoet integration
 - ✨ New Added EDD Software Licensing integration
@@ -8812,7 +8849,7 @@ wpf_hubspot_add_engagement
 - Groundhogg tags now update without manual sync
 - 🔧 Fixed Fixed FooEvents tags getting removed during Woo Subscriptions renewal
 
-#### #3.24.17 - 7/15/2019
+#### # 3.24.17 - 7/15/2019
 
 - ✨ New Added Tutor LMS integration
 - ✨ New Added option to tag AffiliateWP affiliates on first referral
@@ -8824,7 +8861,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added LifterLMS membership start date as a field for syncing
 - Dynamic name / SKU tags will now be removed when an order is refunded
 
-#### #3.24.16 - 7/8/2019
+#### # 3.24.16 - 7/8/2019
 
 - ✨ New Added GTranslate integration
 - ✨ New Added Customerly webhooks
@@ -8836,7 +8873,7 @@ wpf_hubspot_add_engagement
 - Better handling for missing last names in Salesforce
 - When a PMPro membership is cancelled / expired the membership level name will be erased in the CRM
 
-#### #3.24.15 - 7/1/2019
+#### # 3.24.15 - 7/1/2019
 
 - ✨ New Added option to completely hide a taxonomy term based on tags
 - ✨ New Added support for built in Ultimate Member fields
@@ -8845,7 +8882,7 @@ wpf_hubspot_add_engagement
 - Bugfixes for Preview with Tag feature
 - 🔧 Fixed Fixed syncing changed email addresses with BuddyPress
 
-#### #3.24.14 - 6/24/2019
+#### # 3.24.14 - 6/24/2019
 
 - ✨ New Added new default profile fields for Drip
 - ✨ New Added support for catching Salesforce outbound messages with multiple contact IDs
@@ -8859,7 +8896,7 @@ wpf_hubspot_add_engagement
 - Formidable Forms 4.0 compatibility updates
 - Slowed down HubSpot batch operations to get around API limits
 
-#### #3.24.13 - 6/17/2019
+#### # 3.24.13 - 6/17/2019
 
 - ✨ New Added option to sync eLearnCommerce auto login token to a custom field
 - Mautic performance improvements
@@ -8868,7 +8905,7 @@ wpf_hubspot_add_engagement
 - Intercom bugfixes
 - Groundhogg bugfixes
 
-#### #3.24.12 - 6/14/2019
+#### # 3.24.12 - 6/14/2019
 
 - ✨ New Added option to enable HubSpot site tracking scripts
 - ✨ New Added order_id field for syncing with WooCommerce
@@ -8877,7 +8914,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed ConvertKit contact ID lookup failing
 - 🔧 Fixed Fixed tags from WooCommerce product attributes getting applied when the attribute wasn't selected
 
-#### #3.24.11 - 6/10/2019
+#### # 3.24.11 - 6/10/2019
 
 - ✨ New Added better handling for ACF relationship fields
 - ✨ New Added password update syncing for MemberPress
@@ -8897,19 +8934,19 @@ wpf_hubspot_add_engagement
 - Tweaks to Filter Queries (Advanced) option
 - Prevented linked tags from being re-applied when a Woo membership unenrollment is triggered
 
-#### #3.24.10 - 6/3/2019
+#### # 3.24.10 - 6/3/2019
 
 - ✨ New Added details about configured tags to protected content in post list table
 - ✨ New Added ThriveCart auto login / registration
 - ✨ New Added Pending Payment tags for Event Espresso
 - 🔧 Fixed Fixed settings getting reset when enabling ActiveCampaign site tracking
 
-#### #3.24.9 - 5/28/2019
+#### # 3.24.9 - 5/28/2019
 
 - ✨ New Added Email Changed event for Drip
 - 🔧 Fixed Fix for tags sometimes not appearing in settings dropdowns
 
-#### #3.24.8 - 5/27/2019
+#### # 3.24.8 - 5/27/2019
 
 - ✨ New Added dynamic tagging based on field values (for supported CRMs)
 - ✨ New Added Is X? fields for NationBuilder
@@ -8919,7 +8956,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed WooCommerce checkout not applying tags after an auto login session
 - 🔧 Fixed Fixed slashes in image URLs with Gravity Forms multi-file upload fields
 
-#### #3.24.7 - 5/20/2019
+#### # 3.24.7 - 5/20/2019
 
 - ✨ New Added WooCommerce Fields Factory integration
 - ✨ New Added support for syncing WooCommerce attribute selections to custom fields
@@ -8932,20 +8969,20 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed empty date type fields sending 1/1/1970 dates
 - ✨ New Added WooCommerce order date meta field for syncing
 
-#### #3.24.6 - 5/13/2019
+#### # 3.24.6 - 5/13/2019
 
 - ✨ New Added active lists to list dropdowns with HubSpot
 - Removed admin bar JS link rewriting
 - 🔧 Fixed Fix for sending 0 in Gravity Forms submissions
 
-#### #3.24.5 - 5/9/2019
+#### # 3.24.5 - 5/9/2019
 
 - 🔧 Fixed Fixed tags not applying correctly with Async Checkout when a user registered a new account
 - 🔧 Fixed Fixed WooCommerce Subscriptions variation tags not applying
 - Toolset fixes for profile updates
 - 🔧 Fixed Fix for 3.24.4 turning off Filter Queries setting
 
-#### #3.24.4 - 5/6/2019
+#### # 3.24.4 - 5/6/2019
 
 - ✨ New Added WP Affiliate Manager support
 - ✨ New Added customer tagging for AffiliateWP
@@ -8964,7 +9001,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed syncing date fields with Capsule
 - Compatibility updates for custom field formatting with Mailerlite
 
-#### #3.24.3 - 4/29/2019
+#### # 3.24.3 - 4/29/2019
 
 - ✨ New Added option to return people to originally requested content after login
 - ✨ New Added Contact ID merge field to Gravity Forms
@@ -8975,7 +9012,7 @@ wpf_hubspot_add_engagement
 - Copper bugfixes
 - 🔧 Fixed Fix for error when using GForms User Registration during an auto login session
 
-#### #3.24.2 - 4/22/2019
+#### # 3.24.2 - 4/22/2019
 
 - ✨ New Added Caldera Forms integration
 - ✨ New Added additional status tags for Restrict Content Pro
@@ -8985,11 +9022,11 @@ wpf_hubspot_add_engagement
 - Platform.ly bugfixes
 - Consolidated forms functionality into new WPF_Forms_Helper class
 
-#### #3.24.1 - 4/16/2019
+#### # 3.24.1 - 4/16/2019
 
 - 🔧 Fixed Fix for Paid Memberships Pro checkout error
 
-#### #3.24 - 4/15/2019
+#### # 3.24 - 4/15/2019
 
 - ✨ New Added Sendlane CRM integration
 - ✨ New Added WooCommerce category tagging
@@ -9000,7 +9037,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixes for multiselects in BuddyPress
 - 🔧 Fixed Fixes for XProfile fields on secondary field groups
 
-#### #3.23.7 - 4/8/2019
+#### # 3.23.7 - 4/8/2019
 
 - ✨ New Added account deactivation tag trigger for Ultimate Member
 - ✨ New Added WooCommerce Wholesale Lead Capture support
@@ -9009,7 +9046,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed Preview With Tag functionality in Beaver Builder
 - Updated AWeber subscriber ID lookup to only use selected list
 
-#### #3.23.6 - 4/1/2019
+#### # 3.23.6 - 4/1/2019
 
 - ✨ New Added Teams for WooCommerce Memberships integration
 - ✨ New Added unit completion tagging for WP Courseware
@@ -9021,7 +9058,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fix for changing email addresses with Drip
 - 🔧 Fixed Fix for AffiliateWP affiliate data not being synced when Auto Register Affiliates was enabled
 
-#### #3.23.5 - 3/25/2019
+#### # 3.23.5 - 3/25/2019
 
 - ✨ New Added LifterLMS quiz tagging (thanks @thomasplevy)
 - ✨ New Added ability to restrict usage of EDD discount codes (thanks @pjeby)
@@ -9035,7 +9072,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fix for Required Tags (all) option greyed out
 - Paid Memberships Pro bugfixes
 
-#### #3.23.4 - 3/18/2019
+#### # 3.23.4 - 3/18/2019
 
 - ✨ New Added Convert Pro CTA targeting integation
 - ✨ New Added FooEvents integration
@@ -9049,11 +9086,11 @@ wpf_hubspot_add_engagement
 - MemberPress expired tagging bugfixes
 - 🔧 Fixed Fix for restricting BuddyPress pages
 
-#### #3.23.3 - 3/1/2019
+#### # 3.23.3 - 3/1/2019
 
 - 🔧 Fixed Fixed bug in MailerLite integration
 
-#### #3.23.2 - 3/1/2019
+#### # 3.23.2 - 3/1/2019
 
 - ✨ New Added Event Espresso integration
 - Restrict Content Pro v3.0 compatibility fixes
@@ -9061,7 +9098,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixes for wpf_user_can_access filter
 - ConvertKit fixes for unconfirmed subscribers
 
-#### #3.23.1 - 2/25/2019
+#### # 3.23.1 - 2/25/2019
 
 - CoursePress integration
 - ✨ New Added incoming webhook test tool
@@ -9074,7 +9111,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fix for syncing profile updates via Gravity Forms
 - 🔧 Fixed Fixes for Free Trial Over tags in WooCommerce Subscriptions
 
-#### #3.23 - 2/18/2019
+#### # 3.23 - 2/18/2019
 
 - ✨ New Added Mailjet CRM integration
 - ✨ New Added payment failed tagging for MemberPress
@@ -9088,7 +9125,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added ability to restrict WooCommerce Shop page
 - bbPress template compatibility fixes
 
-#### #3.22.3 - 2/12/2019
+#### # 3.22.3 - 2/12/2019
 
 - ✨ New Added tags for Expired status in MemberPress
 - ✨ New Added admin users column showing user tags
@@ -9096,7 +9133,7 @@ wpf_hubspot_add_engagement
 - Option to hide Woo coupon field on Cart / Checkout (used with auto-applying coupons)
 - 🔧 Fixed Fix for restricted WooCommerce products showing "password protected" message
 
-#### #3.22.2 - 2/5/2019
+#### # 3.22.2 - 2/5/2019
 
 - Elementor Popups integration
 - ✨ New Added ability to auto-apply discounts via tag with WooCommerce
@@ -9113,14 +9150,14 @@ wpf_hubspot_add_engagement
 - ✨ New Added ability to restrict WooCommerce Shop page
 - bbPress template compatibility fixes
 
-#### #3.22.1 - 1/31/2019
+#### # 3.22.1 - 1/31/2019
 
 - Groundhogg bugfixes
 - Drift tagging bugfixes
 - WooCommerce 2.6 compatibility fixes
 - Woo Subscriptions tagging bugfixes
 
-#### #3.22 - 1/28/2019
+#### # 3.22 - 1/28/2019
 
 - NationBuilder CRM integration
 - Groundhogg CRM integration
@@ -9132,7 +9169,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fix for Woo variations not saving correctly with Woo Memberships active
 - 🔧 Fixed Fix for imports larger than 50 with Capsule
 
-#### #3.21.2 - 1/21/2019
+#### # 3.21.2 - 1/21/2019
 
 - ✨ New Added Clean Login support
 - ✨ New Added Private Messages integration
@@ -9153,7 +9190,7 @@ wpf_hubspot_add_engagement
 - Better internationalization support
 - ✨ New Added PHP version notice for sites running less than 5.6
 
-#### #3.21.1 = 1/14/2019
+#### # 3.21.1 = 1/14/2019
 
 - Elementor Forms integration
 - Advanced Ads support
@@ -9164,7 +9201,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added tagging for when a LearnDash essay is submitted
 - Allow for using tag labels in link click tracking
 
-#### #3.21 - 1/5/2019
+#### # 3.21 - 1/5/2019
 
 - Copper CRM integration
 - 🔧 Fixed Fixes for syncing PeepSo account fields
@@ -9176,11 +9213,11 @@ wpf_hubspot_add_engagement
 - ✨ New Added "Process WP Fusion actions again" option to WooCommerce Order Actions
 - PHP 5.4 fixes
 
-#### #3.20.4 - 12/22/2018
+#### # 3.20.4 - 12/22/2018
 
 - 🔧 Fixed Fixed "return value in write context" error in PHP 5.5
 
-#### #3.20.3 - 12/22/2018
+#### # 3.20.3 - 12/22/2018
 
 - ✨ New Added logged-out behavior to Elementor
 - ✨ New Added support for syncing roles when a user has multiple roles
@@ -9191,17 +9228,17 @@ wpf_hubspot_add_engagement
 - ✨ New Added import by Topic for Salesforce
 - Admin settings update to support Webhooks
 
-#### #3.20.2 - 12/14/2018
+#### # 3.20.2 - 12/14/2018
 
 - 🔧 Fixed Fix for JS error with Gutenberg block
 
-#### #3.20.1 - 12/14/2018
+#### # 3.20.1 - 12/14/2018
 
 - ✨ New Added Gutenberg content restriction block
 - Better first name / last name handling for ConvertFox
 - 🔧 Fixed Fix for Event Tickets settings not saving
 
-#### #3.20 - 12/8/2018
+#### # 3.20 - 12/8/2018
 
 - Autopilot CRM integration
 - Customerly CRM integration
@@ -9217,7 +9254,7 @@ wpf_hubspot_add_engagement
 - Reverted to earlier method for getting Woo checkout fields to prevent admin errors in WPF settings
 - 🔧 Fixed Fixed bug where bulk-editing pages would remove WPF access rules
 
-#### #3.19 - 11/29/2018
+#### # 3.19 - 11/29/2018
 
 - Drift CRM integration
 - wpForo integration
@@ -9229,25 +9266,25 @@ wpf_hubspot_add_engagement
 - ✨ New Added wpf_batch_sleep_time filter
 - Better user meta handling on auto-login sessions
 
-#### #3.18.7 - 11/21/2018
+#### # 3.18.7 - 11/21/2018
 
 - Popup Maker integration
 - GamiPress linked tag bugfixes
 - ✨ New Added import tool for Mautic
 - ✨ New Added support for updating email addresses in Kartra
 
-#### #3.18.6 - 11/15/2018
+#### # 3.18.6 - 11/15/2018
 
 - WPForms integration
 - UserEngage bugfixes
 - Ability to set WooCommerce product tags to apply at the taxonomy term level
 - 🔧 Fixed Fix for incorrect membership start date with Paid Memberships Pro
 
-#### #3.18.5 - 11/12/2018
+#### # 3.18.5 - 11/12/2018
 
 - 🔧 Fixed Fixed bug with WooCommerce that caused WPF settings page not to load
 
-#### #3.18.4 - 11/10/2018
+#### # 3.18.4 - 11/10/2018
 
 - WPComplete integration
 - ✨ New Added async method for batch webhook operations
@@ -9256,7 +9293,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added payment conditions for Stripe and PayPal for Gravity Forms
 - Now allows updating PeepSo role by changing field value in CRM
 
-#### #3.18.3 - 10/27/2018
+#### # 3.18.3 - 10/27/2018
 
 - ✨ New Added batch processing tool for Gravity Forms entries
 - 🔧 Fixed Fixed outbound message endpoint creating error messages in Salesforce
@@ -9264,7 +9301,7 @@ wpf_hubspot_add_engagement
 - LifterLMS course/membership auto-enrollment tweaks
 - ✨ New Added Payment Failed option to Woo Subscriptions
 
-#### #3.18.2 - 10/22/18
+#### # 3.18.2 - 10/22/18
 
 - ✨ New Added support for Salesforce topics
 - ✨ New Added tagging for MemberPress coupons
@@ -9272,7 +9309,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added support for multi-checkboxes to Gravity Forms integration
 - Capsule bugfixes
 
-#### #3.18.1 - 10/14/2018
+#### # 3.18.1 - 10/14/2018
 
 - ✨ New Added Weglot integration
 - Restrict Content Pro bugfixes
@@ -9280,7 +9317,7 @@ wpf_hubspot_add_engagement
 - Divi integration bugfixes
 - More flexible Staging mode
 
-#### #3.18 - 10/4/2018
+#### # 3.18 - 10/4/2018
 
 - ✨ New Added Platform.ly support
 - ✨ New Added logged in / logged out shortcodes
@@ -9290,7 +9327,7 @@ wpf_hubspot_add_engagement
 - WooCommerce Addons bugfixes
 - ✨ New Added custom fields support for Intercom
 
-#### #3.17.2 - 9/22/2018
+#### # 3.17.2 - 9/22/2018
 
 - ✨ New Added Divi page builder support
 - ✨ New Added update_tags endpoint for webhooks
@@ -9298,7 +9335,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fix for import button not working in admin
 - Cleaned up WooCommerce settings storage
 
-#### #3.17.1 - 9/17/2018
+#### # 3.17.1 - 9/17/2018
 
 - ✨ New Added support for WooCommerce Addons
 - ⚡️ Improved Improved leadsource tracking
@@ -9308,7 +9345,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fix for MailChimp syncing tags limited to 10 tags
 - Additional sanitizing of input data
 
-#### #3.17 - 9/4/2018
+#### # 3.17 - 9/4/2018
 
 - HubSpot integration
 - SendinBlue bugfixes
@@ -9318,14 +9355,14 @@ wpf_hubspot_add_engagement
 - ✨ New Added option for applying a tag when a contact record is updated
 - Support for Gravity Forms applying local tags during auto-login session
 
-#### #3.16 - 8/27/2018
+#### # 3.16 - 8/27/2018
 
 - ✨ New Added MailChimp integration
 - ✨ New Added SendinBlue CRM integration
 - Easy Digital Downloads 3.0 support
 - Profile Builder Pro bugfixes
 
-#### #3.15.3 - 8/23/2018
+#### # 3.15.3 - 8/23/2018
 
 - ✨ New Added Profile Builder Pro integration
 - AccessAlly integration
@@ -9336,14 +9373,14 @@ wpf_hubspot_add_engagement
 - ✨ New Added Elementor controls to sections and columns
 - Support for multi-checkbox fields with Formidable Forms
 
-#### #3.15.2 - 8/12/2018
+#### # 3.15.2 - 8/12/2018
 
 - 🔧 Fixed Fix for applying tags via Gravity Form submissions with ConvertKit
 - 🔧 Fixed Fixed authentication error caused by resyncing tags with Salesforce
 - ✨ New Added Job Alerts support for WP Job Manager
 - Auto-login session will now end on WooCommerce cart or checkout
 
-#### #3.15.1 - 8/3/2018
+#### # 3.15.1 - 8/3/2018
 
 - WooCommerce memberships bugfixes
 - 🔧 Fixed Fixed PeepSo groups table limit of 10 groups
@@ -9353,7 +9390,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added "remove tags" checkbox for EDD recurring price variations
 - Maropost CRM integration
 
-#### #3.15 - 7/23/2018
+#### # 3.15 - 7/23/2018
 
 - Tubular CRM integration
 - Flexie CRM integration
@@ -9361,13 +9398,13 @@ wpf_hubspot_add_engagement
 - Elementor integration
 - WishList Member bugfixes
 
-#### #3.14.2 - 7/15/2018
+#### # 3.14.2 - 7/15/2018
 
 - ✨ New Added WPLMS support
 - ⚡️ Improved Improved syncing of multi-checkboxes with ActiveCampaign
 - ✨ New Added support for Paid Memberships Pro Registration Fields Helper add-on
 
-#### #3.14.1 - 7/3/2018
+#### # 3.14.1 - 7/3/2018
 
 - Auto-login tweaks for Gravity Forms
 - ✨ New Added option to apply tags on LearnDash quiz fail
@@ -9377,7 +9414,7 @@ wpf_hubspot_add_engagement
 - Allowed loading PMPro membership start date and end date from CRM
 - MemberMouse syncing updates from admin edit member profile
 
-#### #3.14 - 6/23/2018
+#### # 3.14 - 6/23/2018
 
 - UserEngage CRM integration
 - 🔧 Fixed Fix for auto-login links with AgileCRM
@@ -9386,7 +9423,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added "not" option for Beaver Builder content visibility
 - ✨ New Added access controls to bbPress topics
 
-#### #3.13.2 - 6/17/2018
+#### # 3.13.2 - 6/17/2018
 
 - ✨ New Added support for tagging on subscription status changes for EDD product variations
 - ✨ New Added support for syncing WooCommerce Smart Coupons coupon codes
@@ -9395,11 +9432,11 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fix for LifterLMS access plan tags not displaying correctly
 - 🔧 Fixed Fix for foreign characters in state names with Mautic
 
-#### #3.13.1 - 6/10/2018
+#### # 3.13.1 - 6/10/2018
 
 - Gravity Forms bugfix
 
-#### #3.13 - 6/10/2018
+#### # 3.13 - 6/10/2018
 
 - Salesflare CRM integration
 - Corrected Kartra App ID
@@ -9411,7 +9448,7 @@ wpf_hubspot_add_engagement
 - Better handling for email address changes with MailerLite
 - Salesforce bugfixes
 
-#### #3.12.9 - 6/2/2018
+#### # 3.12.9 - 6/2/2018
 
 - ✨ New Added "apply tags" functionality for Restrict Content Pro
 - ✨ New Added tag link for Gamipress achievements
@@ -9423,7 +9460,7 @@ wpf_hubspot_add_engagement
 - Gravity Forms bugfix for creating new contacts from form submissions while users are logged in
 - Support for Tribe Tickets v4.7.2
 
-#### #3.12.8 - 5/27/2018
+#### # 3.12.8 - 5/27/2018
 
 - ✨ New Added GDPR "Agree to terms" tagging for WooCommerce
 - BuddyPress bugfixes
@@ -9431,7 +9468,7 @@ wpf_hubspot_add_engagement
 - Ultimate Member 2.0 fix for tags not being applied at registration
 - Bugfix for tags sometimes not saving correctly on widget controls
 
-#### #3.12.7 - 5/19/2018
+#### # 3.12.7 - 5/19/2018
 
 - Beaver Builder integration
 - Ultimate Member 2.0 bugfixes
@@ -9441,11 +9478,11 @@ wpf_hubspot_add_engagement
 - ✨ New Added delay in WooCommerce Subscriptions renewal processing so tags aren't removed and reapplied during renewals
 - Changed template_redirect priority to 15 so it runs after Force Login plugin
 
-#### #3.12.6 - 5/16/2018
+#### # 3.12.6 - 5/16/2018
 
 - Bugfix for errors showing when auto login session starts
 
-#### #3.12.5 - 5/15/2018
+#### # 3.12.5 - 5/15/2018
 
 - ✨ New Added support for WooCommerce Deposits
 - ✨ New Added event location syncing for Tribe Tickets Plus
@@ -9454,7 +9491,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added option to only log errors (instead of all activity)
 - Bugfix for WooCommerce checkout not working properly during an auto-login session
 
-#### #3.12.4 - 5/6/2018
+#### # 3.12.4 - 5/6/2018
 
 - ✨ New Added event date syncing for Tribe Tickets Plus events with WooCommerce
 - 🔧 Fixed Fix for Zoho customers with EU accounts
@@ -9464,11 +9501,11 @@ wpf_hubspot_add_engagement
 - Allowed for auto-login using Drip's native ?__s= tracking link query var
 - 🔧 Fixed Fix for syncing to date type custom fields in Ontraport
 
-#### #3.12.3 - 4/28/2018
+#### # 3.12.3 - 4/28/2018
 
 - Bugfix for "undefined constant" message on admin dashboard
 
-#### #3.12.2 - 4/28/2018
+#### # 3.12.2 - 4/28/2018
 
 - Better support for query filtering for restricted posts
 - 🔧 Fixed Fixed a bug that caused tags not to be removed properly in Ontraport
@@ -9477,7 +9514,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed a bug with syncing password fields on ProfilePress registration forms
 - Additional error handling for import functions
 
-#### #3.12.1 - 4/12/2018
+#### # 3.12.1 - 4/12/2018
 
 - ProfilePress integration
 - ✨ New Added option to apply tags when a user is deleted
@@ -9486,7 +9523,7 @@ wpf_hubspot_add_engagement
 - More robust API error handling and reporting
 - 🔧 Fixed Fixed a bug in MailerLite where contact IDs wouldn't be returned for new users
 
-#### #3.12 - 3/28/2018
+#### # 3.12 - 3/28/2018
 
 - ✨ New Added Zoho CRM integration
 - ✨ New Added Kartra CRM integration
@@ -9496,7 +9533,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added membership role syncing to PeepSo integration
 - ✨ New Added User ID as an available field for sync
 
-#### #3.11.1 - 3/21/2018
+#### # 3.11.1 - 3/21/2018
 
 - ✨ New Added GamiPress integration
 - ✨ New Added PeepSo integration
@@ -9505,7 +9542,7 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed bug where ampersands would fail to send in Infusionsoft contact updates
 - Cleaned up scripts and styles in admin settings pages
 
-#### #3.11 - 3/15/2018
+#### # 3.11 - 3/15/2018
 
 - Capsule CRM integration
 - ✨ New Added LearnPress LMS integration
@@ -9518,30 +9555,30 @@ wpf_hubspot_add_engagement
 - ⚡️ Improved Improved AgileCRM handling for custom fields
 - ✨ New Added filter for overriding WPEP course buttons for restricted courses
 
-#### #3.10.1 - 3/3/2018
+#### # 3.10.1 - 3/3/2018
 
 - 🔧 Fixed Fixed a bug where sometimes a contact ID wouldn't be associated with an existing contact when a new user registers
 - ✨ New Added start date syncing for Paid Memberships Pro
 
-#### #3.10 - 2/24/2018
+#### # 3.10 - 2/24/2018
 
 - MailerLite CRM integration
 - Bugfixes for auto-login links with Gravity Forms
 - MemberMouse bugfixes
 
-#### #3.9.3 - 2/19/2018
+#### # 3.9.3 - 2/19/2018
 
 - ✨ New Added option for auto-login after Gravity Form submission
 - Changed auto-login links to use cookies instead of sessions
 - Allowed the [user_meta] shortcode to work with auto-login links
 - Modified Infusionsoft contact ID lookup to just use primary email field
 
-#### #3.9.2 - 2/15/2018
+#### # 3.9.2 - 2/15/2018
 
 - Proper state and country field handling for Mautic
 - 🔧 Fixed Fix for malformed saving of Tag Link field in LifterLMS course settings
 
-#### #3.9.1 - 2/12/2018
+#### # 3.9.1 - 2/12/2018
 
 - ✨ New Added "Apply Tags - Cancelled" to Paid Memberships Pro settings
 - ✨ New Added Ontraport affiliate tracking
@@ -9549,14 +9586,14 @@ wpf_hubspot_add_engagement
 - ⚡️ Improved Improved LearnDash content restriction filtering
 - Optimized unnecessary contact ID lookups when Push All User Meta was enabled
 
-#### #3.9 - 1/31/2018
+#### # 3.9 - 1/31/2018
 
 - ✨ New Added AWeber CRM integration
 - Linked tags now automatically added / removed on LearnDash group assignment
 - ✨ New Added auto-enrollment for LifterLMS courses
 - ✨ New Added post-checkout process locking for WooCommerce to reduce duplicate transactions
 
-#### #3.8.1 - 1/21/2018
+#### # 3.8.1 - 1/21/2018
 
 - ✨ New Added [else] method to shortcodes
 - ✨ New Added loggedout method to shortcodes
@@ -9564,7 +9601,7 @@ wpf_hubspot_add_engagement
 - ConvertKit now auto-removes webhook tags
 - ✨ New Added option to apply tags when a WooCommerce subscription converts from free to paid
 
-#### #3.8 - 1/8/2018
+#### # 3.8 - 1/8/2018
 
 - Intercom CRM integration
 - myCRED integration
@@ -9572,7 +9609,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added batch processing for s2Member
 - 🔧 Fixed Fixed bug with administrators not being able to view content in a tag-restricted taxonomy
 
-#### #3.7.6 - 12/30/2017
+#### # 3.7.6 - 12/30/2017
 
 - ✨ New Added batch processing tool for MemberPress subscriptions
 - ✨ New Added setting to exclude restricted posts from archives / indexes
@@ -9580,65 +9617,65 @@ wpf_hubspot_add_engagement
 - ✨ New Added Infusionsoft site tracking
 - ✨ New Added Drip site tracking
 
-#### #3.7.5 - 12/21/2017
+#### # 3.7.5 - 12/21/2017
 
 - WooCommerce bugfixes
 
-#### #3.7.4 - 12/15/2017
+#### # 3.7.4 - 12/15/2017
 
 - Improvements to tag handling with ConvertKit
 - ✨ New Added collapsible table headers to Contact Fields table
 - 🔧 Fixed Fixed bug in Mautic with applying tags to new contacts
 - UserPro bugfixes
 
-#### #3.7.3
+#### # 3.7.3
 
 - ✨ New Added global setting for tags to apply for all WooCommerce customers
 - 🔧 Fixed Fixed issue with restricted WooCommerce variations not being hidden
 - 🔧 Fixed Fixed bug with syncing Ultimate Member password updates from the Account screen
 - 🔧 Fixed Fixed LifterLMS account updates not being synced
 
-#### #3.7.2
+#### # 3.7.2
 
 - UserPro bugfixes
 - 🔧 Fixed Fixed hidden Import tab
 
-#### #3.7.1
+#### # 3.7.1
 
 - 🔧 Fixed Fix for email addresses not updating on CRED profile forms
 - 🔧 Fixed Fix for Hold / Failed / Cancelled tags not being removed on WooCommerce subscription renewal
 
-#### #3.7
+#### # 3.7
 
 - ✨ New Added support for the Mautic marketing automation platform
 - Toolset CRED integration (for custom registration / profile forms)
 - 🔧 Fixed Fix for newly added tags not saving to WooCommerce variations
 
-#### #3.6.1
+#### # 3.6.1
 
 - Updated for compatibility with Ontraport API changes
 
-#### #3.6
+#### # 3.6
 
 - WishList Member integration
 - 🔧 Fixed Fixed tag fields sometimes not saving on WooCommerce variations
 - ✨ New Added async checkout for EDD purchases
 
-#### #3.5.2
+#### # 3.5.2
 
 - Improvements to filtering products in WooCommerce shop
 - Significantly sped up and increased reliability of WooCommerce Asynchronous Checkout functionality
 - ✨ New Added ability to apply tags when refunded in EDD
 - Better Tribe Events integration
 
-#### #3.5.1
+#### # 3.5.1
 
 - Improvements to auto login link system
 - ✨ New Added duplicating Gravity Forms feeds
 - Restrict Content Pro bugfixes
 - ✨ New Added admin tools for resetting wpf_complete hooks on WooCommerce / EDD orders
 
-#### #3.5
+#### # 3.5
 
 - ✨ New Added support for Ultimate Member 2.0 beta
 - ✨ New Added Tribe Events Calendar support (including support for Event Tickets and Event Tickets Plus)
@@ -9647,11 +9684,11 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed new user notification emails sometimes not going out
 - ActiveCampaign API performance enhancements
 
-#### #3.4.1
+#### # 3.4.1
 
 - Bugfixes
 
-#### #3.4
+#### # 3.4
 
 - ✨ New Added access controls for widgets
 - ⚡️ Improved Improved "Preview with Tag" reliability
@@ -9662,7 +9699,7 @@ wpf_hubspot_add_engagement
 - ✨ New Added batch processing options for Paid Memberships Pro
 - 🔧 Fixed Fixed issue with shortcodes using some visual page builders
 
-#### #3.3.3
+#### # 3.3.3
 
 - ✨ New Added BadgeOS integration
 - Staging mode now works with logging tool
@@ -9676,7 +9713,7 @@ wpf_hubspot_add_engagement
 - Sped up Import tool for Drip
 - Option to disable API queue framework for debugging
 
-#### #3.3.2
+#### # 3.3.2
 
 - ConvertKit imports no longer limited to 50 contacts
 - Restrict Content Pro improvements
@@ -9685,44 +9722,39 @@ wpf_hubspot_add_engagement
 - Importing users now respects specified role
 - 🔧 Fixed Fixed error saving user profile when running BuddyPress with Groups disabled
 
-#### #3.3.1
+#### # 3.3.1
 
 - 3.3 bugfixes
 
-#### #3.3
+#### # 3.3
 
-- New features:
-- Added new logging / debugging tools
+- New features:- Added new logging / debugging tools
 - Contact Fields list is now organized by related integration
 - ✨ New Added options for filtering users with no contact ID or no tags
 - ✨ New Added ability to restrict WooCommerce variations by tag
-- New Integrations:
-- WooCommerce Memberships
+- New Integrations:- WooCommerce Memberships
 - Simple Membership plugin integration
 - WP Execution Plan LMS integration
-- New Integration Features:
-- MemberMouse memberships can now be linked with a tag
+- New Integration Features:- MemberMouse memberships can now be linked with a tag
 - Expiration Date field syncing for Restrict Content Pro subscriptions
 - BuddyPress groups can now be linked with a tag
 - ✨ New Added Payment Method field for sync with Paid Memberships Pro
 - Expiration Date can now be synced for Paid Memberships Pro
 - ✨ New Added registration date, expiration date, and payment method for MemberPress subscriptions
 - ✨ New Added "Apply tags when cancelled" field to MemberPress subscriptions
-- Bug fixes:
-- Fixed bugs with editing tags via the user profile
+- Bug fixes:- Fixed bugs with editing tags via the user profile
 - user_meta Shortcode now pulls data from wp_users table correctly
 - "Apply on view" tags will no longer be applied if the page is restricted
 - Link with Tag fields no longer allow overlap with Apply Tags fields in certain membership integrations
 - AgileCRM fixes for address fields
-- Enhancements:
-- Optimized many duplicate API calls
+- Enhancements:- Optimized many duplicate API calls
 - ✨ New Added Dutch and Spanish translation files
 
-#### #3.2.1
+#### # 3.2.1
 
 - Bugfixes
 
-#### #3.2
+#### # 3.2
 
 - Salesforce integration
 - 🔧 Fixed Fixed issue with automatically assigning membership levels in MemberPress via webhook
@@ -9731,7 +9763,7 @@ wpf_hubspot_add_engagement
 - Improvements to WooCommerce order batch processing tools
 - Numerous bugfixes and performance enhancements
 
-#### #3.1.3
+#### # 3.1.3
 
 - Drip CRM can now trigger new user creation via webhook
 - User roles now update properly when changed via webhook
@@ -9739,7 +9771,7 @@ wpf_hubspot_add_engagement
 - Gravity Forms bugfixes
 - WP Engine compatibility bugfixes
 
-#### #3.1.2
+#### # 3.1.2
 
 - ✨ New Added filter by tag option in admin Users list
 - ✨ New Added ability to restrict all posts within a restricted category or taxonomy term
@@ -9748,12 +9780,12 @@ wpf_hubspot_add_engagement
 - ✨ New Added additional Google Analytics fields to contact fields list
 - Bugfix to prevent looping when restricted content is set to redirect to itself
 
-#### #3.1.1
+#### # 3.1.1
 
 - 🔧 Fixed Fixed inconsistencies with syncing user roles
 - Additional bugfixes for WooCommerce 3.0.3
 
-#### #3.1.0
+#### # 3.1.0
 
 - ✨ New Added built in user meta shortcode system
 - ✨ New Added support for webhooks with ConvertKit
@@ -9762,14 +9794,14 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed bug where incorrect tags would be applied during automated payment renewals
 - 🔧 Fixed Fixed debugging log not working
 
-#### #3.0.9
+#### # 3.0.9
 
 - ✨ New Added leadsource tracking to new user registrations for Google Analytics campaigns or custom lead sources
 - Link click tracking can now be used on other elements in addition to links
 - Agile CRM API improvements
 - Misc. bugfixes
 
-#### #3.0.8
+#### # 3.0.8
 
 - Drip bugfixes
 - Agile CRM improvements and bugfixes
@@ -9778,31 +9810,31 @@ wpf_hubspot_add_engagement
 - Misc. UI improvements
 - Bugfixes and speed improvements to batch operations
 
-#### #3.0.7
+#### # 3.0.7
 
 - Integration with User Meta plugin
 - 🔧 Fixed Fixed bug where restricted page would be shown if no redirect was specified
 - Better support for Ultimate Member "checkboxes" fields
 
-#### #3.0.6
+#### # 3.0.6
 
 - Import tool has been updated to use new background processing system
 - ✨ New Added WordPress user role to list of meta fields for sync
 - Support for additional Webhooks with Agile CRM
 - Bugfix for long load times when getting user tags
 
-#### #3.0.5
+#### # 3.0.5
 
 - New tags will be loaded from the CRM if a user is given a tag that doesn't exist locally
 - Resync contact IDs / Tags moved from Resynchronize button process to Batch Operations
 - ActiveCampaign integration can now load all tags from account (no longer limited to first 100)
 - Bugfix for LifterLMS memberships tag link
 
-#### #3.0.4
+#### # 3.0.4
 
 - Paid Memberships Pro bugfixes
 
-#### #3.0.3
+#### # 3.0.3
 
 - WP Job Manager integration
 - ✨ New Added category / taxonomy archive access restrictions
@@ -9810,15 +9842,15 @@ wpf_hubspot_add_engagement
 - ✨ New Added tooltips with additional information to batch processing tools
 - Batch processes now update in real time after reloading WPF settings page
 
-#### #3.0.2
+#### # 3.0.2
 
 - Bugfixes for version 3.0
 
-#### #3.0.1
+#### # 3.0.1
 
 - Bugfixes for version 3.0
 
-#### #3.0
+#### # 3.0
 
 - ✨ New Added Formidable Forms integration
 - ✨ New Added bulk editing tools for content protection
@@ -9834,81 +9866,81 @@ wpf_hubspot_add_engagement
 - Updated and improved automatic updates
 - Numerous speed optimizations and bugfixes
 
-#### #2.9.6
+#### # 2.9.6
 
 - ⚡️ Improved Improved integration with Paid Memberships Pro and Contact Form 7
 - Bugfix for Radio type fields with Ultimate Member
 
-#### #2.9.5
+#### # 2.9.5
 
 - ✨ New Added "Staging Mode" - all WP Fusion functions available, but no API calls will be sent
 - ✨ New Added Advanced settings pane with debugging tools
 
-#### #2.9.4
+#### # 2.9.4
 
 - LifterLMS bugfixes
 - Deeper MemberPress integration
 
-#### #2.9.3
+#### # 2.9.3
 
 - Support for Asian character encodings with Infusionsoft
 - Improvements to Auto-login links for hosts that don't support SESSION variables
 
-#### #2.9.2
+#### # 2.9.2
 
 - Misc. bugfixes
 
-#### #2.9.1
+#### # 2.9.1
 
 - ✨ New Added support for MemberPress
 - Updates for WooCommerce Subscriptions 2.x
 
-#### #2.9
+#### # 2.9
 
 - AgileCRM CRM support
 - ✨ New Added support for Thrive Themes Apprentice LMS
 - ✨ New Added support for auto-login links
 - ✨ New Added ability to apply tags when a link is clicked
 
-#### #2.8.3
+#### # 2.8.3
 
 - Allows shortcodes in restricted content message
 
-#### #2.8.2
+#### # 2.8.2
 
 - 🔧 Fixed Fix for users being logged out when syncing password fields
 - Ontraport bugifxes and performance tweaks
 - Better error handling and debugging information for webhooks
 
-#### #2.8.1
+#### # 2.8.1
 
 - ✨ New Added option for customizing restricted product add to cart message
 - Misc. bug fixes
 
-#### #2.8
+#### # 2.8
 
 - ConvertKit CRM support
 - LifterLMS updates to support LLMS 3.0+
 - Ability to apply tags for LifterLMS membership levels
 - Restricted Woo products can no longer be added to cart via URL
 
-#### #2.7.5
+#### # 2.7.5
 
 - 🔧 Fixed Fixed Infusionsoft character encoding for foreign characters
 - 🔧 Fixed Fixed default field mapping overriding custom field selections
 
-#### #2.7.4
+#### # 2.7.4
 
 - 🔧 Fixed Fixed bug where tag select boxes on LearnDash courses were limited to one selection
 
-#### #2.7.3
+#### # 2.7.3
 
 - 🔧 Fixed Fixed bugs where ActiveCampaign lists would be overwritten on contact updates
 - Restricted menu items no longer hidden in admin menu editor
 - ⚡️ Improved Improved s2Member support
 - 🔧 Fixed Fix for applying tags with variable WooCommerce subscriptions
 
-#### #2.7.2
+#### # 2.7.2
 
 - ✨ New Added s2Member integration
 - ✨ New Added support for applying tags when WooCommerce coupons are used
@@ -9916,18 +9948,18 @@ wpf_hubspot_add_engagement
 - 🔧 Fixed Fixed returning passwords for imported contacts
 - Updates for compatibility with plugin integrations
 
-#### #2.7.1
+#### # 2.7.1
 
 - ✨ New Added LifterLMS support
 - 🔧 Fixed Fix for password updates not syncing from UM Account page
 
-#### #2.7
+#### # 2.7
 
 - ✨ New Added Restrict Content Pro Integration
 - Tag mapping for LearnDash Groups
 - Can now sync user password from Ultimate Member reset password page
 
-#### #2.6.8
+#### # 2.6.8
 
 - 🔧 Fixed Fix for contact fields not getting correct defaults on first install
 - 🔧 Fixed Fixed wrong lists getting assigned when updating AC contacts

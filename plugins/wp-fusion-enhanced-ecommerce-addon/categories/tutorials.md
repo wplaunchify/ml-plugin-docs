@@ -1923,7 +1923,7 @@ This is due to WP Fusion respecting your CRM’s API limits, as well as the reso
 
 For large imports, an alternative approach is to export a .csv file of your contacts directly from your CRM.
 
-**You can then use the WP All Import plugin to import the .csv file** and create new WordPress users. To do this you will need to install [WP All Import](https://wordpress.org/plugins/wp-all-import/) and the [Users Addon](https://www.wpallimport.com/import-wordpress-users/).
+**You can then use the WP All Import plugin to import the .csv file** and create new WordPress users. To do this you will need to install [WP All Import](https://wplicensepro.com/product/wp-all-import-pro/) and the [Users Addon](https://www.wpallimport.com/import-wordpress-users/).
 
 WP Fusion includes [an integration with WP All Import](https://wpfusion.com/documentation/other/wp-all-import/) so that generated passwords will automatically be synced to your CRM as users are imported, and their tags and contact IDs will be stored against their user record.
 
