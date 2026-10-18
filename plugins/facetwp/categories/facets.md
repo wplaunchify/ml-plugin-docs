@@ -12338,6 +12338,78 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 } );
 ```
 
+### Preconnect to the Google Maps API
+
+To improve the loading speed of the map, you can use a 
+```
+preconnect
+```
+
+ [resource hint](https://www.w3.org/TR/resource-hints/). Using [Preconnect](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preconnect) allows the browser to make an early connection, before an HTTP request, eliminating round-trip latency and saving time. Using 
+```
+preconnect
+```
+
+ for the Google Maps API will save the DNS lookup, TCP connection and TLS setup for the first Google Maps request, typically 50–300 ms depending on the visitor’s connection.
+
+Preconnect resource hints can be implemented by adding a link tag with a 
+```
+rel="preconnect"
+```
+
+ attribute to linked resources directly in the 
+```
+<head>
+```
+
+ section of your templates. **Place them as high as possible** in the 
+```
+<head>
+```
+
+, before any blocking scripts.
+
+The following adds 
+```
+preconnect
+```
+
+ to the two URLs that load for the Google Maps API:
+
+```
+<link rel="preconnect" href="https://maps.googleapis.com">
+<link rel="preconnect" href="https://maps.gstatic.com">
+```
+
+Instead of adding the resource hints manually in the 
+```
+<head>
+```
+
+, you can also use WP’s [wp_resource_hints](https://developer.wordpress.org/reference/hooks/wp_resource_hints/) hook to add resource hints, as shown in the following example.
+
+To prevent the 
+```
+preconnect
+```
+
+ on pages without a map, make sure to let the 
+```
+is_page()
+```
+
+ check (or any other [Conditional Tag](https://codex.wordpress.org/Conditional_Tags)) target only your page(s) that actually have a map.
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'wp_resource_hints', function( $urls, $relation_type ) {
+  if ( 'preconnect' === $relation_type && is_page( 'my-map-page' ) ) { // Replace 'my-map-page' with the slug ID of your map page
+    $urls[] = 'https://maps.googleapis.com';
+    $urls[] = 'https://maps.gstatic.com';
+  }
+  return $urls;
+}, 10, 2 );
+```
+
 ### Use your own Google Maps JavaScript API script
 
 If your theme or another plugin already loads the Google Maps JavaScript API, you’ll have to choose which instance to use: that one or FacetWP’s instance.
@@ -12979,7 +13051,7 @@ This is possible, and actually not very complicated. Just follow [the steps desc
 - [The Proximity facet type (legacy)](https://facetwp.com/help-center/facets/facet-types/proximity-legacy/)
 - [Introducing the new Proximity and Map facets in FacetWP v4.4](https://facetwp.com/introducing-the-new-proximity-and-map-facets-in-facetwp-v4-4/)
 
-                    Last updated: July 3, 2026
+                    Last updated: October 15, 2026
 
 ---
 
@@ -24623,7 +24695,11 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 
 ## Translate range labels
 
-To translate range labels, you can use [the facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/#customize-or-translate-facet-choices). This example is for when you are [using WPML](/help-center/using-facetwp-with/multilingual/) (use line 7 instead of line 4 for Polylang):
+In Range List [v0.9.3+](#changelog) you can [use the facetwp_i18n hook](/help-center/developers/hooks/advanced-hooks/facetwp_i18n/) to translate the range labels.
+
+In multilingual sites with WPML or Polylang, with v0.9.3+ of the add-on and [v1.1](/whats-new-in-multilingual-1-1/#improved-dynamic-string-translation)+ of the [Multilingual add-on](/help-center/using-facetwp-with/multilingual/) installed, these range labels are also available for translation in WPML > String Translation (with the [WPML String Translation add-on](https://wpml.org/documentation/getting-started-guide/string-translation/) active), and in Polylang’s Languages > Translations UI.
+
+Another way to translate these labels, which also works in older versions of the add-on, is to use [the facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/#customize-or-translate-facet-choices). This example is for when you are [using WPML](/help-center/using-facetwp-with/multilingual/) (use line 7 instead of line 4 for Polylang):
 
 ```
 How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_display_value', function( $label, $params ) {
@@ -24650,7 +24726,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 }, 20, 2 );
 ```
 
-Alternatively, you use [the facetwp_facet_html hook](/help-center/developers/hooks/output-hooks/facetwp_facet_html/#translate-facet-choices), or [the facetwp_facet_render_args hook](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#translate-facet-choices-and-facet-settings). With this last hook, you can not only [directly translate the choices](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#translate-and-re-order-facet-choices), but also [change specific or all facet choice labels into __() translatable strings](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#convert-facet-choices-to-translatable-strings). These can then be translated [with a translation plugin or a gettext filter](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#how-to-translate-dynamically-added-strings).
+Other ways to do this are with [the facetwp_facet_html hook](/help-center/developers/hooks/output-hooks/facetwp_facet_html/#translate-facet-choices), or with [the facetwp_facet_render_args hook](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#translate-facet-choices-and-facet-settings). With this last hook, you can not only [directly translate the choices](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#translate-and-re-order-facet-choices), but also [change specific or all facet choice labels into __() translatable strings](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#convert-facet-choices-to-translatable-strings). These can then be translated [with a translation plugin or a gettext filter](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/#how-to-translate-dynamically-added-strings).
 
 ## Create an age bracket facet
 
@@ -24801,7 +24877,7 @@ Alternatively, you could [choose “fSelect” as UI type](#ui-type), which is e
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 - [How to delay facet filtering until multiple selections are made](https://facetwp.com/?p=229923)
 
-                Last updated: June 30, 2026
+                Last updated: October 12, 2026
 
 ---
 
