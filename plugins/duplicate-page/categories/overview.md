@@ -71,7 +71,10 @@ duplicate-page
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/7d33550df58ff981903e2c4a20100ce62f2f1709e4f37ac142758788d5aebc2f?s=60&d=retro&r=g)### Läuft prima!
+	![](https://secure.gravatar.com/avatar/23f0f6161bcf3a93ffc7b9ec00bfe065d0c40f8f8692a6a96c35105d69eaac08?s=60&d=retro&r=g)### A must-have plugin
+							October 16, 2026
+						Does what's needed without fuss.
+							![](https://secure.gravatar.com/avatar/7d33550df58ff981903e2c4a20100ce62f2f1709e4f37ac142758788d5aebc2f?s=60&d=retro&r=g)### Läuft prima!
 							[werbewahn](https://profiles.wordpress.org/werbewahn/)
 								July 12, 2026
 																1 reply
@@ -96,13 +99,8 @@ duplicate-page
 								June 1, 2026
 																1 reply
 						Works great, super easy plugin
-							![](https://secure.gravatar.com/avatar/fd682cec414252d1dec67767a90870fa248cc49955685ff9e696defe5e94ca14?s=60&d=retro&r=g)### Really Helpful
-							[Keegan](https://profiles.wordpress.org/keegan30/)
-								May 26, 2026
-																1 reply
-						Makes copying posts way easier. One click n done. Wish it had bulk duplicate but for single pages its perfect. Use it all the time tbh
 
-		[Read all 468 reviews](https://wordpress.org/support/plugin/duplicate-page/reviews/)
+		[Read all 466 reviews](https://wordpress.org/support/plugin/duplicate-page/reviews/)
 
 ## Contributors & Developers
 
