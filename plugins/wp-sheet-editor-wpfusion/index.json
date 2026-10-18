@@ -2,20 +2,20 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-10-11T07:12:42.919Z",
+  "last_scraped": "2026-10-18T07:07:04.343Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
     {
-      "title": "Decrease Woocommerce Prices Bulk",
-      "slug": "decrease-woocommerce-prices-bulk",
-      "url": "https://wpsheeteditor.comdecrease-woocommerce-prices-bulk/",
-      "file": "categories/decrease-woocommerce-prices-bulk.md",
+      "title": "Export Order Details Woocommerce Excel",
+      "slug": "export-order-details-woocommerce-excel",
+      "url": "https://wpsheeteditor.comexport-order-details-woocommerce-excel/",
+      "file": "categories/export-order-details-woocommerce-excel.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Decrease WooCommerce Product Prices in Bulk",
-          "url": "https://wpsheeteditor.com/decrease-woocommerce-prices-bulk/"
+          "title": "How to Export Order Details from WooCommerce to Excel",
+          "url": "https://wpsheeteditor.com/export-order-details-woocommerce-excel/"
         }
       ]
     },
@@ -66,7 +66,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Bulk Add and Edit Alt Text for WordPress Images",
+          "title": "WordPress Bulk Edit Image Alt Text (Add Alt Tags in Bulk)",
           "url": "https://wpsheeteditor.com/wordpress-how-bulk-edit-image-seo-description/"
         }
       ]

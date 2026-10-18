@@ -4,29 +4,30 @@
 
 ---
 
-## How to Bulk Add and Edit Alt Text for WordPress Images
+## WordPress Bulk Edit Image Alt Text (Add Alt Tags in Bulk)
 
 **Source:** [https://wpsheeteditor.com/wordpress-how-bulk-edit-image-seo-description/](https://wpsheeteditor.com/wordpress-how-bulk-edit-image-seo-description/)
 
 You can **bulk add or edit alt text or image SEO descriptions for WordPress images** by filtering your Media Library for images with missing alt tags, editing the Alt text column in a spreadsheet, applying bulk changes to multiple images, or importing alt text from a CSV file.
 
-With **WP Sheet Editor – Media Library**, you can manage your WordPress images in a spreadsheet-style interface instead of opening and editing each media item individually. This makes it easier to update alt text across hundreds or thousands of images.
+Table of Contents
 
-In this guide, you’ll learn how to:
+## How to Add Alt Tags to Images in WordPress
 
-- Find WordPress images that are missing alt text.
-- Add unique alt tags to individual images from the spreadsheet.
-- Set the same alt text for multiple images.
-- Copy information from another Media Library field into the Alt text field.
-- Import alt text or SEO descriptions from a CSV file.
+The standard way to add alt tag or alt text to your images in WordPress is to go to the Media page in WordPress, open an image, and enter the alt text in the corresponding field.
+
+![wordpress-how-bulk-edit-image-seo-description](https://media.wpsheeteditor.com/wp-content/uploads/2022/08/15133832/add-alt-tags-images-wordpress.jpg)
+
+Unfortunately, that’s repetitive, tedious, and doesn’t let you make quick progress on your work.
+
+## WP Sheet Editor: Your Bulk Alt Text WordPress Editor
+
+[WP Sheet Editor – Media Library](https://wpsheeteditor.com/extensions/media-files-library-spreadsheet/) lets you quickly edit your alt tags in a spreadsheet. You can easily find all the images that don’t have alt text and add alt text to them without having to open the images one by one. You can also edit them in bulk and even export and import alt text.
 
 You can download the plugin here:
 
 [Download Media Library Spreadsheet Plugin](https://wpsheeteditor.com/buy-extension/?extension_id=4933&utm_source=website&utm_medium=blog&utm_campaign=wordpress-how-bulk-edit-image-seo-description#buy) - or - [Check the features](https://wpsheeteditor.com/extensions/media-files-library-spreadsheet/?utm_source=website&utm_medium=blog&utm_campaign=wordpress-how-bulk-edit-image-seo-description)
-
-## Step 1. Open the WordPress Media Library spreadsheet
-
-**WP Sheet Editor – Media Library** turns your WordPress Media Library into a spreadsheet-style editor. You can view your media files in rows and edit fields such as:
+It turns you WordPress Media Library into a spreadsheet-style editor where you can view your media files in rows and edit fields such as:
 
 - Image title
 - Alt text (SEO description)
@@ -35,11 +36,70 @@ You can download the plugin here:
 - File URL
 - Metadata and custom fields
 
+**You can use the plugin as a bulk alt text editor for WordPress and WooCommerce images!** But of course, it serves many other uses!
+
 After installing and activating the plugin, go to **Sheet Editor > Edit Media** to open the Media Library spreadsheet.
 
 ![WordPress Media Library spreadsheet for bulk editing image alt text](https://media.wpsheeteditor.com/wp-content/uploads/2019/08/22124556/bulk-edit-alt-text-08.png)
 
-## Step 2. Find WordPress images that are missing alt text
+## Option 1: How to Change Image Alt Text in WordPress
+
+The process for changing the alt text of your WordPress images is simple. You need to open an image that contains alt text in the WordPress Media Library and edit the text. But that’s too difficult when you want to edit many images. That’s why we’ll show you how to find images that contain specific keywords in their alt text and make bulk changes in a spreadsheet.
+
+First, search for the images containing specific images in the alt text.
+
+Click on **Search.**
+
+![wordpress-how-bulk-edit-image-seo-description](https://media.wpsheeteditor.com/wp-content/uploads/2022/08/15153002/change-alt-text-wordpress-images-1.jpg)
+
+Now select these values:
+
+- **Enable advanced filters:** Yes
+- **Field:** Alt Text
+- **Operator:** CONTAINS
+- **Value:** Enter the word you want to find. In this example, we will search for all the images containing the **T-shirt** keyword in the alternative text.
+- Click on **Run search.**
+
+![wordpress-how-bulk-edit-image-seo-description](https://media.wpsheeteditor.com/wp-content/uploads/2022/08/15153058/change-alt-text-wordpress-images-2.png)
+
+The spreadsheet will display all the images matching the selected keyword.
+
+![wordpress-how-bulk-edit-image-seo-description](https://media.wpsheeteditor.com/wp-content/uploads/2022/08/15153319/change-alt-text-wordpress-images-3-1.jpg)
+
+Now you can start chaging the alt texts in the spreadsheet. Edit the alt text for all the images you want and then click on **Save.**
+
+![wordpress-how-bulk-edit-image-seo-description](https://media.wpsheeteditor.com/wp-content/uploads/2022/08/15153411/change-alt-text-wordpress-images-4.jpg)
+
+Or you can use the **Bulk Edit** tool to add a completely new alt text for all these images or replace the specific word in all images containing it.
+
+![wordpress-how-bulk-edit-image-seo-description](https://media.wpsheeteditor.com/wp-content/uploads/2022/08/15154113/change-alt-text-wordpress-images-5.jpg)
+
+### Set a new alt text for all filtered images
+
+Select these values in the **Bulk Edit** tool:
+
+- **Select the rows that you want to update:** Edit all the rows from my current search
+- **What field do you want to edit:** Alt text
+- **Select type of edit:** Set value
+- **Replace existing value with this value:** Enter the new alt text here.
+- Click on **Execute Now.**
+
+![wordpress-how-bulk-edit-image-seo-description](https://media.wpsheeteditor.com/wp-content/uploads/2022/08/15154243/change-alt-text-wordpress-images-7.jpg)
+
+### Replace the specific word in bulk
+
+Select these values to replace a specific word in the alt texts:
+
+- **Select the rows that you want to update:** Edit all the rows from my current search
+- **What field do you want to edit:** Alt text
+- **Select type of edit:** Replace
+- **Replace this:** Enter the old word or phrase.
+- **With this:** Enter the new word or phrase
+- Click on **Execute Now.**
+
+![wordpress-how-bulk-edit-image-seo-description](https://media.wpsheeteditor.com/wp-content/uploads/2022/08/15154200/change-alt-text-wordpress-images-6.jpg)
+
+## Option 2: How to Add Alt Text in Bulk to Images Missing Alt Tag
 
 If you have many images without alt text, you can filter your Media Library to show only the images that need to be updated.
 
@@ -75,11 +135,7 @@ You can also combine the alt text filter with other search filters to find a spe
 
 Once you have found the images you want to update, choose one of the following methods.
 
-## Step 3. Choose how to add or update the alt text (SEO description)
-
-WP Sheet Editor gives you several ways to update the alt text for the images you found. Choose the method that matches how you want to prepare the new alt text.
-
-### Option 1. Edit or add alt tags directly in the spreadsheet
+### Edit or Add Alt Tags Directly in the Spreadsheet
 
 If each image needs its own alt text, you can edit the values directly in the spreadsheet.
 
@@ -89,13 +145,13 @@ When you’re finished editing the alt text, click **Save**.
 
 ![Adding alt text to WordPress images in WP Sheet Editor](https://media.wpsheeteditor.com/wp-content/uploads/2026/09/28164122/add-alt-tags-in-wp-sheet-editor.jpg)
 
-### Option 2. Use Bulk Edit to update multiple images
+### Use Bulk Edit to Update Multiple Images
 
 If you want to apply the same type of change to multiple images, use the **Bulk Edit** tool. You can apply a value to all the images in your current search or to manually selected images.
 
 ![Bulk Edit tool for adding alt text to WordPress images](https://media.wpsheeteditor.com/wp-content/uploads/2026/09/28165603/open-bulk-add-alt-tags.jpg)
 
-#### Set the same alt text for multiple images
+#### Set the Same Alt Text for Multiple Images
 
 If several related images need the same alt text, you can set one value for all the selected images.
 
@@ -111,7 +167,7 @@ In the **Bulk Edit** tool, select these values:
 
 After you execute the bulk edit, the selected images will have the new alt text.
 
-#### Copy alt text from another Media Library field
+#### Copy Alt Text from Another Media Library Field
 
 You can also use **Bulk Edit** to populate the Alt text field using information that already exists in another Media Library column.
 
@@ -134,7 +190,7 @@ In the **Bulk Edit** tool, select these values:
 
 This is useful when the information you need is already stored in your Media Library and you want to use it to populate the Alt text field in bulk.
 
-### Option 3. Import alt text from a CSV file
+## Option 3: How to Import Alt Text from CSV File
 
 If you already have alt texts prepared in a CSV file, you can import it into WP Sheet Editor to update your WordPress images.
 
@@ -172,7 +228,7 @@ Finally, you’ll see a preview of the changes. Check that everything is correct
 
 ![Preview CSV import changes before updating WordPress image alt text](https://media.wpsheeteditor.com/wp-content/uploads/2026/09/28171957/import-alt-text-5.png)
 
-### Option 4: Generate WordPress Image Alt Text with AI
+## Option 4: Generate WordPress Image Alt Text with AI
 
 If you have a large WordPress Media Library with missing or incomplete alt text, you can use AI to speed up the process. Instead of writing descriptions manually, you can analyze your images with a multimodal AI model and generate descriptive alt text in bulk.
 
@@ -182,12 +238,12 @@ See our guide on [how to generate WordPress image alt text with AI](https://wpsh
 
 The best method depends on how you want to prepare the alt text:
 
-- **Need unique alt text for each image?** Edit the **Alt text** column directly in the spreadsheet.
-- **Need to apply the same change to many images?** Use the **Bulk Edit** tool.
-- **Already have useful information in another Media Library field?** Use **Copy from other columns** to copy the title, associated post, caption, or filename.
-- **Already have the alt text in a spreadsheet?** Import it from a CSV file.
+- **Need Unique Alt Text for Each Image?** Edit the **Alt text** column directly in the spreadsheet.
+- **Need to Apply the Same Change to Many Images?** Use the **Bulk Edit** tool.
+- **Already have Useful Information in Another Media Library Field?** Use **Copy from other columns** to copy the title, associated post, caption, or filename.
+- **Already have the Alt Text in a CSV File?** Import it from a CSV file.
 
-## Bulk add and edit WordPress image alt tags
+## Add Alt Attributes to your WordPress Images in Bulk
 
 Updating alt texts for a large WordPress Media Library doesn’t require opening every image individually. With **WP Sheet Editor – Media Library**, you can find images with missing alt text, edit unique values directly in a spreadsheet, apply changes to multiple images with Bulk Edit, or import prepared alt text from a CSV file.
 

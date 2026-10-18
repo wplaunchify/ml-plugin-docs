@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T06:59:08.024Z",
+  "last_updated": "2026-10-18T07:07:04.344Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3744,10 +3744,10 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-10-11T07:12:42.919Z",
+      "last_scraped": "2026-10-18T07:07:04.344Z",
       "page_count": 5,
       "categories": [
-        "decrease-woocommerce-prices-bulk",
+        "export-order-details-woocommerce-excel",
         "find-featured-images-wordpress",
         "generate-wordpress-image-alt-text-ai-bulk",
         "learndash-google-sheets-integration",
