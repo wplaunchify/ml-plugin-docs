@@ -21,7 +21,7 @@ The “When to Use” tab allows you to choose the settings for each method:
 - **Existing Content**: This allows you to run the Auto Terms feature on existing content. [Click here for more details](https://taxopress.com/docs/taxopress/taxopress-existing-content/).
 - **Metaboxes**: This allows users to run the Auto Terms feature when editing content. [Click here for more details](https://taxopress.com/docs/taxopress/taxopress-metaboxes/).
 
-when to use
+![When to Use](https://taxopress.com/wp-content/uploads/2024/12/when-to-use-1024x649.png)when to use
 
 ---
 
@@ -50,7 +50,7 @@ You will find some of these safeguards inside the “Auto Terms” settings in T
 - **Batches wait time**: This is the wait time (in seconds) between processing batches of Auto Terms. *Set this to a high number for large sites*.
 - **Limit Auto Terms, based on published date**: This setting allows you to add Auto Terms only to recent content. *Set this to recent content for large sites*
 
-schedule settings
+![Schedule settings](https://taxopress.com/wp-content/uploads/2022/10/schedule-settings-1007x1024.png)schedule settings
 
 ---
 
@@ -65,6 +65,8 @@ By default, TaxoPress runs this code to determine if a term exists in content:
 > if(strpos($content, ' '.$term.' ') !== FALSE) {//add $term}
 
 That code will change slightly if the “Whole words” setting is unchecked in the “Options” tab.
+
+![The "Whole words" setting](https://taxopress.com/wp-content/uploads/2022/05/01-the-whole-words-setting--1024x278.png)
 
 If that box is unchecked, TaxoPress will add terms even if they are not part of a whole word. In that situation, TaxoPress uses this code:
 
@@ -84,6 +86,8 @@ An example regular expression
 
  with the term name before the regex action.
 
+![](https://taxopress.com/wp-content/uploads/2022/04/regex-1024x375.png)
+
 ---
 
 ## Logs for Auto Terms
@@ -93,6 +97,8 @@ An example regular expression
 A log is available for the Auto Terms feature. This is useful because you can set the Auto Terms feature to run on a schedule. So it can be very useful to know what happened on your site when you’ve set up an automatic process.
 
 On all of the Auto Terms screens, you will see the “Logs” button, as shown in the image below:
+
+![](https://taxopress.com/wp-content/uploads/2022/04/01-the-logs-button.png)
 
 This “Logs” area has one entry for every time a post is processed. In the image below, you can see that Auto Terms ran for five posts. In this example, Auto Terms added terms to four of the posts. Here’s what each column means in the Logs table.
 
@@ -105,6 +111,8 @@ This “Logs” area has one entry for every time a post is processed. In the im
 - **Date**: This shows the date and time that the post was analyzed.
 - **Settings**: This link goes to the settings that are controlling this process.
 
+![TaxoPress log entries](https://taxopress.com/wp-content/uploads/2022/03/tp-log-entries-demo-1024x478-1.jpg)
+
 ---
 
 ## Managing the Auto Terms Logs
@@ -114,6 +122,8 @@ If you have a busy site, the Logs area may become busy. We have provided a few t
 - **Disable Logs**: This button will completely disable the Logs feature.
 - **Delete All Logs**: This will remove all the logs stored on your site.
 - **Limit the number of logs**: This will set a maximum number of logs to store. Only the most recent logs will be kept. So if the limit is set to “1000”, TaxoPress will keep the 1000 most recent log entries and delete anything older.
+
+![Tools to help you manage the logs](https://taxopress.com/wp-content/uploads/2022/03/logs-control-1024x173.png)
 
 ---
 
@@ -138,6 +148,8 @@ _postmeta
 
  table. This image shows the details stored for each log:
 
+![TaxoPress logs in database](https://taxopress.com/wp-content/uploads/2022/03/term-meta-1024x413.png)
+
 ---
 
 ## Automatically Add Existing Terms
@@ -159,11 +171,11 @@ Here’s an example of how it works:
 - Choose the taxonomy you want to use with Auto Terms. In the image below, I’ve chosen “Tags”.
 - Choose the post types you want to use with this feature. In the image below, I’ve chosen “Posts”.
 
-manage auto terms existing
+![Add existing terms](https://taxopress.com/wp-content/uploads/2022/01/manage-auto-terms-existing.png)manage auto terms existing
 
 - You will find the other key setting in the “Existing Terms” setting. You need to choose whether to use all the terms in your taxonomy, or only a select group. If you set the “Use only some terms in the selected taxonomy” option, then TaxoPress will ask you to choose which terms will be used with the Auto Terms feature.
 
-sources tab
+![Existing taxonomy terms](https://taxopress.com/wp-content/uploads/2021/02/sources-tab-1024x422.png)sources tab
 
 ---
 
@@ -172,6 +184,8 @@ sources tab
 - Write a new post. Include at least one of the keywords that exist as terms on your site. In the image below, the post includes “WordPress” and “CMS”.
 - Publish the post.
 - Your keywords will automatically be added to the Tags box.
+
+![Testing the Auto Terms system](https://taxopress.com/wp-content/uploads/2021/03/auto-terms-wordpress-1024x539.png)
 
 ---
 
@@ -191,11 +205,19 @@ This feature works by integrating with OpenAI, IBM Watson, Dandelion or Open Cal
 
 Let’s see an example of how this feature works. I’ve created a new post, using the text from the “About Us” page on WordPress.org.
 
+![About page from WordPress.org](https://taxopress.com/wp-content/uploads/2022/01/new-post-auto-terms-1024x703.png)
+
 When I publish this post, TaxoPress scans the post and adds new terms, as you can see in the image below:
+
+![Automatic terms generated by TaxoPress for About page from WordPress.org](https://taxopress.com/wp-content/uploads/2022/01/post-ideas-1024x376.png)
 
 This feature can work with any taxonomy and post type. For example, in the image below, I have a WooCommerce product. TaxoPress has scanned the content and added new terms into the “Product tags” area.
 
+![Automatic terms generated by TaxoPress for WooCommerce](https://taxopress.com/wp-content/uploads/2022/01/yoga-mat-1024x535.png)
+
 In the next screenshot, you can see an example with bbPress. In this example, TaxoPress used the Auto Terms feature to scan a new bbPress topic and automatically added new terms to the “Topic Tags” area.
+
+![Automatic terms generated by TaxoPress for bbPress](https://taxopress.com/wp-content/uploads/2022/01/bbpress-automatic-terms-1024x461.png)
 
 ---
 
@@ -203,11 +225,11 @@ In the next screenshot, you can see an example with bbPress. In this example, Ta
 
 This Auto Terms feature to add new terms is built on top of external services. OpenAI is the default option. You can also enable IBM Watson, Dandelion, and LSEG/Refinitiv via the “Settings” area of TaxoPress. The option to use these services is available only in TaxoPress Pro.
 
-auto terms openai only
+![Automatic terms generated by TaxoPress in Auto Terms](https://taxopress.com/wp-content/uploads/2022/01/auto-terms-openai-only-1024x455.png)auto terms openai only
 
 Once you have an API key for OpenAI or another service, go to “TaxoPress”, then “Auto Terms” in your WordPress admin menu. You can enter your API key here on the “Sources” tab.
 
-openai key
+![OpenAI Key in TaxoPress in Auto Terms](https://taxopress.com/wp-content/uploads/2022/01/openai-key-1024x484.png)openai key
 
 ---
 
@@ -234,7 +256,7 @@ These situations are the best use of the Auto Terms Schedule feature. When you i
 
 TaxoPress allows you to schedule the Auto Terms feature to run either **hourly** or **daily**. TaxoPress users will see a “Schedule” tab, as you can see in the screenshot below. This is really useful if you are regularly updating your posts, or if you’re automatically importing new posts.
 
-schedule tab
+![Schedule feature](https://taxopress.com/wp-content/uploads/2024/12/schedule-tab-1024x514.png)schedule tab
 
 This feature will create a cron event in your site. You can see these events using a plugin such as “[WP Crontrol](https://wordpress.org/plugins/wp-crontrol/)”. This screenshot below shows both cron events that are possible with TaxoPress:
 
@@ -243,9 +265,11 @@ taxopress_cron_autoterms_hourly
 taxopress_cron_autoterms_daily
 ```
 
+![Cron tasks in Auto terms](https://taxopress.com/wp-content/uploads/2021/12/cron-events-1024x147.png)
+
 On the “Schedule” screen you will be able to see recent results produced by these cron jobs. You can see all the results by visiting the [Auto Terms Logs screen](https://taxopress.com/docs/logs-for-auto-terms/).
 
-schedule runs
+![Logs for Auto Terms](https://taxopress.com/wp-content/uploads/2024/12/schedule-runs-911x1024.png)schedule runs
 
 ---
 
@@ -260,7 +284,7 @@ The “Schedule” tab has the following four safeguards:
 - **Batches wait time**: This is the wait time (in seconds) between processing batches of Auto Terms. If you have a lot of content, set this to a higher number to avoid timeouts.
 - **Limit Auto Terms, based on published date**: This setting allows you to add Auto Terms only to recent content.
 
-safeguards
+![Safeguards for Large sites](https://taxopress.com/wp-content/uploads/2024/12/safeguards-1024x705.png)safeguards
 
 ---
 
@@ -277,13 +301,13 @@ You will find these options under the “Sources” tab, as in the image below. 
 
 The “Existing Terms” tab allows you to add existing terms from your site.
 
-auto terms sources
+![Auto Term sources](https://taxopress.com/wp-content/uploads/2022/01/auto-terms-sources-1024x486.png)auto terms sources
 
 This feature requires the Pro version of the TaxoPress plugin
 
 The “OpenAI” tab can automatically create and add new terms.
 
-open ai settings
+![OpenAI settings](https://taxopress.com/wp-content/uploads/2022/01/open-ai-settings-1024x834.png)open ai settings
 
 ---
 
@@ -300,12 +324,12 @@ TaxoPress Pro can automatically add terms to existing content. This “Existing 
 - Go to TaxoPress > Auto Terms Existing.
 - In the top left corner you can choose an [Auto Terms](https://taxopress.com/docs/introduction-to-auto-terms/) setting. This is where you can choose the post types to scan, and the taxonomies to use. For example, you can choose to can only Posts and add only Categories. Or you can choose to scan WooCommerce Products and add Product Tags.
 
-add exisiting content
+![ existing content feature](https://taxopress.com/wp-content/uploads/2021/09/add-exisiting-content-1024x450.png)add exisiting content
 
 - Click the “Add Auto Terms to existing content” button.
 - You will now see a progress bar showing the terms being added.
 
-existing content result
+![Using the Existing Content feature](https://taxopress.com/wp-content/uploads/2021/09/existing-content-result-1024x482.png)existing content result
 
 If you realize you made a mistake adding any terms, you can use other TaxoPress features such as [Remove Terms](https://taxopress.com/docs/remove-terms/) or [Delete Terms](https://taxopress.com/docs/delete-terms/) to clean up the terms.
 
@@ -333,7 +357,7 @@ The Auto Terms feature in TaxoPress has several options that you can configure:
 - **Add terms if synonyms found**: This is available in TaxoPress Pro and links to [the Synonyms feature](https://taxopress.com/docs/synonyms/).
 - **Content statuses**: You can choose to run the Auto Terms feature on unpublished or unpublished content
 
-auto terms options
+![Manage Auto Terms options](https://taxopress.com/wp-content/uploads/2021/03/auto-terms-options-1024x513.png)auto terms options
 
 ---
 
@@ -349,22 +373,22 @@ You can [add existing terms](https://taxopress.com/docs/automatically-add-existi
 - **Taxonomy**: Choose the taxonomy you want to use with Auto Terms. In the the image below, we’ve chosen “Tags”.
 - **Find term in**: You can choose which areas of your content to scan. In addition to the Title and Content, you can choose to scan fields provided by 3rd party plugins such as WooCommerce, Advanced Custom Fields, and The Events Calendar.
 
-auto terms general
+![Manage Auto Terms screen](https://taxopress.com/wp-content/uploads/2021/02/auto-terms-general-1024x508.png)auto terms general
 
 You can also choose which post type should be scanned for terms. In this screenshot below, we’ve selected “Posts”.
 
-auto terms post type
+![Auto Terms post type](https://taxopress.com/wp-content/uploads/2021/02/auto-terms-post-type-1024x508.png)auto terms post type
 
 The other required setting is under “Sources”. You can choose which tools to use for scanning your content:
 
 - **Existing taxonomy terms**: [add existing terms](https://taxopress.com/docs/automatically-add-existing-terms/).
 - **OpenAI**: [create and add new terms](https://taxopress.com/docs/automatically-add-new-terms/) (only available in TaxoPress Pro).
 
-existing terms openai
+![Auto Terms settings](https://taxopress.com/wp-content/uploads/2021/02/existing-terms-openai-1024x476.png)existing terms openai
 
 Once you’ve selected the options, you can use the “Preview” tab to see what kind of terms will be added to your content. In the screenshot below you’ll see a preview of the “Existing Terms” and “OpenAI” options.
 
-preview auto terms
+![Preview tab for Auto Terms](https://taxopress.com/wp-content/uploads/2021/02/preview-auto-terms-1024x505.png)preview auto terms
 
 ---
 

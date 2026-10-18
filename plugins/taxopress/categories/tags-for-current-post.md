@@ -12,9 +12,15 @@ In TaxoPress you can [change the format of your Terms for Current Post display](
 
 Go to TaxoPress > Current Post > Advanced and you can add your CSS to the whole div or to specific links. You can do this using the settings below:
 
+![](https://taxopress.com/wp-content/uploads/2021/09/terms-current-css-1024x255.png)
+
 Here is an example of adding classes to these two fields:
 
+![](https://taxopress.com/wp-content/uploads/2021/09/display-classes-1024x251.png)
+
 I can then add the CSS for those classes to my theme, or to the “Customize” feature of WordPress.
+
+![](https://taxopress.com/wp-content/uploads/2021/09/terms-display-css-1.png)
 
 ---
 
@@ -34,7 +40,7 @@ The “Method for choosing terms for display” option has an integration with t
 
 This feature requires the Pro version of the TaxoPress plugin
 
-choose terms current
+![Choose Terms for Current Post](https://taxopress.com/wp-content/uploads/2021/03/choose-terms-current-1024x553.png)choose terms current
 
 ---
 
@@ -42,7 +48,7 @@ choose terms current
 
 The Layout tab allows you to choose from several default designs for your Current Post display.
 
-default displays current
+![Default displays for Current Post](https://taxopress.com/wp-content/uploads/2021/03/default-displays-current-1024x311.png)default displays current
 
 ---
 
@@ -50,7 +56,7 @@ default displays current
 
 These settings allow you to customize design aspects of your display.
 
-current post design
+![Current post design](https://taxopress.com/wp-content/uploads/2021/03/current-post-design-1024x579.png)current post design
 
 ---
 
@@ -64,7 +70,7 @@ These settings allow you to customize text aspects of your display.
 - **Text to display if no terms found**: This will appear if no terms are available.
 - **Hide display output if no terms?**: This will hide the whole “Terms for Current Post” feature if not terms are attached to this post.
 
-current post options
+![Options for Current Post](https://taxopress.com/wp-content/uploads/2021/03/current-post-options.png)current post options
 
 ---
 
@@ -74,7 +80,11 @@ current post options
 
 The “Terms for Current Post” feature in TaxoPress shows all the terms for the post you’re viewing. You can see an example in the screenshot below:
 
+![Terms for Current Post example](https://taxopress.com/wp-content/uploads/2021/03/related-posts-2-1024x546.png)
+
 This format is controlled by a setting in TaxoPress > Terms for Current Post:
+
+![Terms for Current Post settings](https://taxopress.com/wp-content/uploads/2022/03/tcp-advanced-1024x403.png)
 
 Here is the code that TaxoPress provides by default:
 
@@ -130,7 +140,11 @@ Here are more items you can add to change the format:
 
 You can also add HTML elements to this formatting. For example, this image below shows the HTML required to make a list with strong text:
 
+![Terms for Current Post link format](https://taxopress.com/wp-content/uploads/2022/03/tcp-list-1024x210.png)
+
 The settings you saw in the image above will produce the following output:
+
+![Terms for Current Post custom output](https://taxopress.com/wp-content/uploads/2021/06/terms-html.png)
 
 ---
 
@@ -150,7 +164,7 @@ This guide focuses on option #3 and how you can automatically insert terms in yo
 - Click “Display” to edit a display listed on this screen.
 - You will see the settings as shown in the screenshot below.
 
-display current post
+![Edit Terms for Current Post](https://taxopress.com/wp-content/uploads/2021/03/display-current-post-1024x526.png)display current post
 
 In this guide, I’ll explain what these options mean. Please note: not all themes will automatically support all these options.
 
@@ -270,13 +284,15 @@ You access this feature in your WordPress dashboard by going to TaxoPress > Curr
 
 The image below shows an example of Terms for Current Post. This display is separate from any default display of terms in your theme. The image below shows the terms created by the TaxoPress “Current Post” feature on a post.
 
+![Terms for Current Post](https://taxopress.com/wp-content/uploads/2021/03/related-posts-2-1024x546.png)
+
 ---
 
 ## Edit or Add New Terms for Current Post
 
 On the “Current Post” screen, you’ll see all your displays. You can click the title or the “Edit” link to edit the settings for this existing display.
 
-terms current post
+![Terms for Current Post](https://taxopress.com/wp-content/uploads/2021/02/terms-current-post-1024x400.png)terms current post
 
 This feature requires the Pro version of the TaxoPress plugin
 
@@ -288,7 +304,7 @@ On the “Current Post” screen in the Pro version of TaxoPress Pro, you can cl
 
 Inside each display you will find a preview, and a large number of customization options, as shown in this screenshot below.
 
-manage terms current post
+![Manage terms for current post](https://taxopress.com/wp-content/uploads/2021/02/manage-terms-current-post-1024x769.png)manage terms current post
 
 The following guides have more details on how you can control the appearance of this feature:
 

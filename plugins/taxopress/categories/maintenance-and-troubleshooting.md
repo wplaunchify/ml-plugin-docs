@@ -10,7 +10,11 @@
 
 If you see this message inside a Gutenberg block then your web server sent a response that cannot be understood by the editor.
 
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot-2021-07-13-at-10-43-15-Edit-Post-‹-Test-Site-—-WordPress-edited.png)
+
 Advanced users can check the developer tools in their browser. You may find there a message that gives you a hint. A common cause is a firewall on your server that gives a false positive:
+
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot-2021-07-13-at-10.47.51.png)
 
 If you cannot change the firewall settings, you could try the preview button if your post or page still renders properly.((Since the front end doesn’t transfer the data the same way as the editor, it most likely won’t be blocked by a firewall.)) You can also go to the Tag Groups settings -> Back End -> Gutenberg and disable the block preview.
 
@@ -77,6 +81,8 @@ To save you the trouble of editing the wp-config.php file, you can use the plugi
 
 The plugin also lets you install the [Debug Bar](https://wordpress.org/plugins/debug-bar/) plugin that adds a menu entry “Debug Quick Look” where you can see the debug messages.
 
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot_2020-12-15-WP-Debugging-‹-My-Great-Blog-—-WordPress.png)
+
 ## Identify messages from Tag Groups
 
 The Tag Groups plugin adds its own messages that appear in the debug.log file prepended by 
@@ -91,11 +97,15 @@ The Tag Groups plugin adds its own messages that appear in the debug.log file pr
 
 .
 
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot_2020-12-15-View-Your-File1.png)
+
 ## Verbose logging
 
 By default these messages inform you only about serious issues. If you turn on **verbose logging**, however, you will also receive details about deprecated shortcodes, caching, locale settings that cannot be provided by the operating system, processing of meta etc.. This information can help you understand what is going on under the hood.
 
 Activate verbose logging on the page Troubleshooting -> Debugging
+
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot_2021-01-05-Troubleshooting-Debug-Log-WordPress.png)
 
 or add to wp-config.php:
 
@@ -120,7 +130,7 @@ Example for a shortcode
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6acb2c55aa1db', {"active":false}, false);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6ad466040b8be', {"active":false}, false);
       return;
     }
 
@@ -131,7 +141,7 @@ Example for a shortcode
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6acb2c55aa1db');
+    var element = document.getElementById('tag-groups-cloud-tabs-6ad466040b8be');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -173,17 +183,23 @@ If you activate the Tag Groups plugin and don’t see your tags in the WordPress
 
 This problem is normally caused by the filter menu on top of the “Tags” screen. Try selecting “Filter Off” and click “Apply”.
 
+![Filters on the Tags screen](https://taxopress.com/wp-content/uploads/2023/05/tags-filter-1024x385.png)
+
 ---
 
 ## Option #2: Disable the filter menus
 
 You can also try going to “Tag Groups”, then “Back End” tab and disabling the filters.
 
+![disabling the filters in Tag Groups](https://taxopress.com/wp-content/uploads/2023/05/back-end-filters.png)
+
 ---
 
 ## Option #3: Reset the filters
 
 You can also go to “Tag Groups”, then “Tools”, then the “First Aid” tab. Click the “Reset Tag Filter” button. That may bring the tags back.
+
+!["Reset Tag Filter" button](https://taxopress.com/wp-content/uploads/2023/05/reset-tag-filter.png)
 
 ---
 
@@ -238,6 +254,8 @@ Any plugin or theme installed on your web site can cause Ajax to break.
 There are several things that you can try. Some of them just require you to be the site administrator. For others you need access to the WordPress files.
 
 Go to the “Tag Groups”, then “Tools”, then “System Information”.
+
+![](https://taxopress.com/wp-content/uploads/2023/05/ajax-test.png)
 
 If you click on the button “Show the response”m you may see some text that comes before the 
 ```

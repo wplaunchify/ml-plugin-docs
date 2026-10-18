@@ -16,6 +16,8 @@ This guide will show you how to create your own color scheme for the Shuffle Box
 
 This screenshot below shows the default design for the shuffle box.
 
+![](https://taxopress.com/wp-content/uploads/2023/05/default-shuffle-box-1024x255.png)
+
 You can also customize this one of [the default themes in Tag Groups](https://taxopress.com/docs/theming/). And there are additional default themes that are unique to Shuffle Boxes:
 
 ```
@@ -30,14 +32,22 @@ cm-shuffle-box-theme-blue
 - In your WordPress admin area, go to “Tag Groups” then “Tag Colors”.
 - Enter the CSS class name. The default is “my-own-class”.
 
+![](https://taxopress.com/wp-content/uploads/2023/01/my-class-name.png)
+
 - Choose the colors you want to use for Shuffle Box.
 - Copy the CSS and add it to your theme. Add the CSS into the style.css of a child theme or you can use the Customizer.
 
+![](https://taxopress.com/wp-content/uploads/2023/01/css-class-1024x337.png)
+
 - Take the CSS class name from the bottom of the screen. In this example, the class is “cm-shuffle-box-theme-default my-own-class”.
+
+![](https://taxopress.com/wp-content/uploads/2023/01/css-class-name-1024x251.png)
 
 - Go to your post and find the Gutenberg block for your shuffle box.
 - Under “Advanced Styling”, enter your class into the “div class” field.
 - Save the post and your custom color scheme will appear.
+
+![](https://taxopress.com/wp-content/uploads/2023/01/add-class.png)
 
 If you’re using the shortcode for Shuffle Box, add this to your shortcode: 
 ```
@@ -52,12 +62,16 @@ div_class=“cm-shuffle-box-theme-default my-own-class”
 
 You may sometimes see a “not assigned” tab when creating a Shuffle Box layout. You can see that tab in the screenshot below. The “not assigned” group is the default group for all tags and it has the ID 0 (zero).
 
+![Shuffle box in Tag Groups plugin](https://taxopress.com/wp-content/uploads/2023/03/not-assigned-shuffle-box-1-1024x313.png)
+
 ---
 
 ## Hide the button in the Gutenberg block
 
 - Inside the Gutenberg block settings, find the “Groups” area.
 - In the “Exclude groups” box, enter “not assigned”.
+
+![Remove the not assigned group](https://taxopress.com/wp-content/uploads/2023/03/exclude-not-assigned.png)
 
 ---
 
@@ -85,6 +99,8 @@ exclude=0,1,4
 The Shuffle Box is a tag cloud that allows you to filter the tags by their names or by their tag groups.
 
 This guide will show you how to use the Gutenberg block that is available with the Shuffle Box feature.
+
+![](https://taxopress.com/wp-content/uploads/2023/04/shuffle-box-block.png)
 
 ---
 
@@ -277,7 +293,11 @@ The maximum amount of tags that you can set in the options is therefore the tota
 
 The following screenshot shows a tag cloud that has been filtered by the group “Places”. We are using the parameter “append” to display the post count for each tag and we use the default theme.
 
+![](https://taxopress.com/wp-content/uploads/2022/12/Shuffle-Box-tag-cloud-filter-WordPress.png)
+
 The text filter can be used together with a group filter, or applied to all tags in all displayed groups:
+
+![](https://taxopress.com/wp-content/uploads/2022/12/Shuffle-Box-tag-cloud-text-search-WordPress.png)
 
 The options allow you to use only the group filter, only the text filter, or both in combination.
 
@@ -388,7 +408,7 @@ WordPress Search
 
   (function(){
     const options = {
-      divIdInner: 'tag-groups-shuffle-box-6acb2c5e590bd_inner',
+      divIdInner: 'tag-groups-shuffle-box-6ad4660a9394b_inner',
       addPremiumFilter: false,
       timeoutMilliSecs: 100,
       initialGroup: -1,
@@ -420,7 +440,7 @@ not assigned
 
   (function(){
     const options = {
-      divIdInner: 'tag-groups-shuffle-box-6acb2c5e5f01f_inner',
+      divIdInner: 'tag-groups-shuffle-box-6ad4660a9aab0_inner',
       addPremiumFilter: false,
       timeoutMilliSecs: 100,
       initialGroup: -1,

@@ -12,6 +12,9 @@ You can find the changelog for the free version [by clicking this link to WordPr
 
 You can find the changelog for the Pro version below:
 
+[2.2.3] - 13 October, 2026 
+- Added: A permanent contact notice explaining Tag Groups move.
+
 [2.2.2] - 17 August, 2026 
 - Fixed: Gutenberg block is broken, #313 
 - Fixed: Gutenberg settings have broken formatting, #308
@@ -144,6 +147,8 @@ The Tag Groups plugin has a Free and Pro version:
 
 You are using the Free version if you see a message like this in your WordPress admin area:
 
+![Tag Groups Free version](https://taxopress.com/wp-content/uploads/2023/06/tag-groups-banner-1024x266.png)
+
 If you have the Free version of Tag Groups installed, [follow these steps to update to the Pro version](https://taxopress.com/docs/installation-pro/):
 
 - Download the Pro version from your TaxoPress account.
@@ -172,8 +177,12 @@ You should have received a download link to the plugin. It is also possible to d
 - Go to the “[Account](https://taxopress.com/your-downloads/)” area of TaxoPress.com.
 - Click “View Details and Downloads”.
 
+![Find the Tag Groups plugin in your account](https://taxopress.com/wp-content/uploads/2023/06/view-details-download-1024x422.png)
+
 - On the next screen, you’ll find a download link under the “Products” heading.
 - You will have a .zip file downloaded to your desktop.
+
+![Download the Tag Groups plugin](https://taxopress.com/wp-content/uploads/2023/06/file-download-1024x267.jpg)
 
 ---
 
@@ -184,13 +193,19 @@ The next step is to upload the .zip file to your WordPress site.
 - Go to “Plugins” in your WordPress site.
 - Click “Add New”.
 
+![Upload a new WordPress plugin](https://taxopress.com/wp-content/uploads/2023/06/add-new-plugin-1024x608.png)
+
 - Click “Upload Plugin”.
 - Click “Choose File”
 - Select the .zip file that you downloaded.
 - Click “Install Now”.
 
+![Install the Tag Groups plugin](https://taxopress.com/wp-content/uploads/2023/06/install-now-1024x287.png)
+
 - Click “Activate Now”.
 - Click “Activate” for Tag Groups Pro. If you have the Free version installed, that will be automatically deactivated when the Pro version is activated.
+
+![Activate the Tag Groups plugin](https://taxopress.com/wp-content/uploads/2023/06/activate-1024x572.png)
 
 ---
 
@@ -212,9 +227,13 @@ This screenshot below shows a real example. “Place” is a Tag Group that cont
 
 This example uses the Toggle Post Filter. Visitors can select tags and see a list of posts that match their search criteria. [Click here to see a Toggle Post Filter demo.](https://demo.taxopress.com/post-filter-tags-menu/)
 
+![Example of using Tag Groups](https://taxopress.com/wp-content/uploads/2023/09/tag-group-result-1024x647.png)
+
 This next screenshot is another example using Tag Groups. “Year” is a Tag Group that contains tags such as “2012, “2019, and “2021”.
 
 This examples uses the Shuffle Box feature. This is a tag cloud that allows you to filter the tags by their names or by their Tag Groups. [Click here to see a Shuffle Box demo](https://demo.taxopress.com/shuffle-box/).
+
+![](https://taxopress.com/wp-content/uploads/2023/09/tag-groups-example-2-1024x268.png)
 
 ---
 
@@ -224,38 +243,7 @@ This examples uses the Shuffle Box feature. This is a tag cloud that allows you 
 
 There is a Free and Pro version of the Tag Groups plugin. This table gives an overview of the differences between the two versions.
 
-|  | Tag Groups Free | Tag Groups Pro |
-| --- | --- | --- |
-| 6 Shortcodes | [icon-yes/] | [icon-yes/] |
-| 5 Gutenberg Blocks | [icon-yes/] | [icon-yes/] |
-| Accordion Tag Cloud | [icon-yes/] | [icon-yes/] |
-| Alphabetical Tag Cloud | [icon-yes/] | [icon-yes/] |
-| Alphabetical Tag Index | [icon-yes/] | [icon-yes/] |
-| Tabbed Tag Cloud | [icon-yes/] | [icon-yes/] |
-| Tag List | [icon-yes/] | [icon-yes/] |
-| Custom Taxonomies | [icon-yes/] | [icon-yes/] |
-| Backend Filters | [icon-yes/] | [icon-yes/] |
-| Compatible with WPML | [icon-yes/] | [icon-yes/] |
-|  | Tag Groups Free | Tag Groups Pro |
-| 21 Pro Shortcodes | [icon-no/] | [icon-yes/] |
-| 18 Pro Gutenberg Blocks | [icon-no/] | [icon-yes/] |
-| Tag Meta Box | [icon-no/] | [icon-yes/] |
-| Tag Clouds | [icon-no/] | [icon-yes/] |
-| Shuffle Box | [icon-no/] | [icon-yes/] |
-| Table Tag Cloud | [icon-no/] | [icon-yes/] |
-| Tag Cloud Search | [icon-no/] | [icon-yes/] |
-| Post List | [icon-no/] | [icon-yes/] |
-| Toggle Post Filter | [icon-no/] | [icon-yes/] |
-| Dynamic Post Filter | [icon-no/] | [icon-yes/] |
-|  | Tag Groups Free | Tag Groups Pro |
-| Multiple Groups Per Tag | [icon-no/] | [icon-yes/] |
-| Caching | [icon-no/] | [icon-yes/] |
-| User Permissions | [icon-no/] | [icon-yes/] |
-| Choose Default Groups | [icon-no/] | [icon-yes/] |
-| Integration with WooCommerce Attributes | [icon-no/] | [icon-yes/] |
-| Choose a Parent Group Level | [icon-no/] | [icon-yes/] |
-| No ads inside the plugin | [icon-no/] | [icon-yes/] |
-| Priority, personal support | [icon-no/] | [icon-yes/] |
+[table id=3 /]
 
 ---
 
@@ -271,6 +259,8 @@ Follow these steps to start using the Tag Groups plugin for the first time. Afte
 
 The plugin creates a new menu called **Tag Groups**. First you should go to the **Taxonomies** sub-menu.
 
+![](https://taxopress.com/wp-content/uploads/2022/12/TGB-settings-screenshot.png)
+
 Select the taxonomy that you want to organize in groups. The default is **Tags** (post_tag), which is the default taxonomy that people mean when they talk about “WordPress tags”.
 
 - Don’t select more taxonomies than you actually want to use with that plugin.
@@ -285,7 +275,7 @@ After you have saved your changes, a new submenu **Tag Groups Admin** will appea
 
 The next step is to create groups. Before you have any tag groups, you cannot assign your tags to them.
 
-![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==)
+![](https://taxopress.com/wp-content/uploads/2022/12/Tag-Group-Admin-plugin-WordPress-1024x472-1.png)
 
 - Create a new group below a row by clicking on the plus icon.
 - Click on the trash icon to delete a group.
@@ -304,6 +294,8 @@ Deleting a group will not delete any tags, but mark them as “unassigned”.
 ## Step #3. Assign Tags
 
 Next, go to the tags (or your chosen taxonomy) and assign them to groups. By default, each tag is unassigned (group ID 0). In the free version each tag can be assigned only to *one* group.
+
+![](https://taxopress.com/wp-content/uploads/2022/12/assign-tag-group-single-group-WordPress.png)
 
 There are several ways how to assign tags to groups or unassign them.
 
@@ -325,6 +317,8 @@ The installation of the free version of the Tag Groups plugin is straightforward
 - Go to “Plugins” then “Add New”.
 - Search for “Tag Groups” and click “Install Now”.
 
+![](https://taxopress.com/wp-content/uploads/2023/04/tag-groups-install-1024x435.png)
+
 Alternatively, you can click on “Upload Plugin” and then upload the [ZIP file](https://wordpress.org/plugins/tag-groups/). Or you upload the unzipped 
 ```
 tag-groups
@@ -338,6 +332,8 @@ tag-groups
  directory. If you upload the unzipped files directly to your server, you may have to fix the file permissions for css and js files.
 
 - Click on “Activate”.
+
+![](https://taxopress.com/wp-content/uploads/2023/04/tag-groups-activate-1024x432.png)
 
 ---
 

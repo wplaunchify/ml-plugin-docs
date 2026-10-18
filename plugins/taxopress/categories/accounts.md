@@ -42,7 +42,7 @@ If you want to cancel your subscription, this guide will show you how to cancel.
 - Click “Cancel” next to your subscription.
 - After you have canceled, the “Status” will change to “Canceled”. You will also receive an email confirming the cancellation.
 
-cancel taxopress
+![Cancel taxoPress](https://taxopress.com/wp-content/uploads/2023/08/cancel-taxopress-1024x581.png)cancel taxopress
 
 ---
 
@@ -66,6 +66,8 @@ Here’s how to add to receive updates for your TaxoPress plugins:
 - Go to “Your License Keys”.
 - On this screen you will see your license key:
 
+![Your license keys for TaxoPress](https://taxopress.com/wp-content/uploads/2023/06/your-license-key-1024x355.png)
+
 The next step is to add the license key to your site:
 
 - Log in to your WordPress site’s dashboard
@@ -73,6 +75,8 @@ The next step is to add the license key to your site:
 - Go to the “Settings” then “License” area.
 - Paste the license key into the “License key” field.
 - Click the “Save Changes” button.
+
+![Activate a TaxoPress license](https://taxopress.com/wp-content/uploads/2023/06/license-screen-1024x370.png)
 
 ---
 
@@ -92,8 +96,12 @@ For example, if you have a license for 1 site and want to use the plugin on more
 - Go to the “Your License Keys” screen.
 - Click the “View Upgrades” link:
 
+![Your License Keys screen](https://taxopress.com/wp-content/uploads/2023/06/upgrade-links-1024x412.png)
+
 - Now you’ll be presented with your Upgrade options. The full value of your current subscription will be used as a discount on the upgrade price.
 - Click on the “Upgrade License” link for the upgrade of your choice. You will now be in the checkout process, and can complete your upgrade.
+
+![](https://taxopress.com/wp-content/uploads/2023/06/upgrade-2-1024x671.png)
 
 ---
 

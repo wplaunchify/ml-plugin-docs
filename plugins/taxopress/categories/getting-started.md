@@ -12,6 +12,10 @@ You can find the changelog for the free version [by clicking this link to WordPr
 
 You can find the changelog for the Pro version below:
 
+## [3.55.0] - 13 October, 2026
+
+* Update: Add a permanent TaxoPress-branded contact notice to TaxoPress and Plugins screens
+
 ## [3.54.0] - 22 September, 2026
 
 * Security: Prevent reflected XSS in Terms row-action URLs
@@ -1369,8 +1373,12 @@ After joining, you should receive an email with a download link to the plugin. I
 - Go to the “Account” area of TaxoPress.com.
 - Click “View Details and Downloads”.
 
+![Find the TaxoPress plugin in your account](https://taxopress.com/wp-content/uploads/2023/06/view-details-download-1024x422.png)
+
 - On the next screen, you’ll find a download link under the “Products” heading.
 - You will have a .zip file downloaded to your desktop.
+
+![Download TaxoPress Pro](https://taxopress.com/wp-content/uploads/2023/06/download-taxopress-pro-1-1024x230.png)
 
 ---
 
@@ -1381,13 +1389,19 @@ The next step is to upload the .zip file to your WordPress site.
 - Go to “Plugins” in your WordPress site.
 - Click “Add New”.
 
+![Upload a new WordPress plugin](https://taxopress.com/wp-content/uploads/2023/06/add-new-plugin-1024x608.png)
+
 - Click “Upload Plugin”.
 - Click “Choose File”
 - Select the .zip file that you downloaded.
 - Click “Install Now”.
 
+![Install the TaxoPress plugin](https://taxopress.com/wp-content/uploads/2023/06/install-now-1024x287.png)
+
 - Click “Activate Now”.
 - Click “Activate” for Tag Groups Pro. If you have the Free version installed, that will be automatically deactivated when the Pro version is activated.
+
+![Activate TaxoPress Pro](https://taxopress.com/wp-content/uploads/2023/09/activate-taxopress-pro-1-1024x547.png)
 
 ---
 
@@ -1398,6 +1412,8 @@ The next step is to upload the .zip file to your WordPress site.
 TaxoPress provides a wide range of features for your WordPress taxonomies. It is possible to activate or deactivate these features from the “Dashboard” screen in TaxoPress.
 
 This image shows the “Dashboard” screen. If you uncheck a box on this screen, that feature will be deactivated.
+
+![](https://taxopress.com/wp-content/uploads/2023/08/welcome-dashboard-1024x653.png)
 
 ---
 
@@ -1411,6 +1427,8 @@ The TaxoPress plugin has a Free and Pro version:
 - The Pro version is behind a paywall on this website, for TaxoPress members.
 
 You are using the Free version if you see a message like this in your WordPress admin area:
+
+![The TaxoPress Free banner ](https://taxopress.com/wp-content/uploads/2022/03/taxopress-free-banner-1024x206.png)
 
 If you have the Free version of TaxoPress installed, [follow these steps to update to the Pro version](https://taxopress.com/docs/install-taxopress-pro/):
 
@@ -1430,22 +1448,7 @@ This upgrade is 100% safe and you will not lose any data or settings.
 
 TaxoPress has two versions: a Free version available on WordPress.org and a Pro version available for TaxoPress members. This table has a chart comparing the two versions:
 
-| TaxoPress Free | TaxoPress Pro |
-| --- | --- |
-| Only 1 “Term Display” layout | Unlimited “Term Display” layouts |
-| Only 1 “Terms for Current Post” layout | Unlimited “Terms for Current Post” layouts |
-| Only 1 “Related Posts” layout | Unlimited “Related Posts” layouts |
-| Only 1 “Auto Links” setup | Unlimited “Auto Links” setups |
-| Only 1 “Auto Terms” setup | Unlimited “Auto Terms” setups |
-| Only 1 “Suggest Terms” setup | Unlimited “Suggest Terms” setups |
-| Can not automatically add new terms to content | Automatically add new terms to content |
-| Can not add terms to imported content | Add terms to imported content |
-| Can not change how Auto Terms analyzes your posts | Can use Regular Expressions to change how Auto Terms analyzes your posts |
-| Can not use Synonyms for Terms | Create Synonyms to allow multiple words to refer to one term |
-| Can not use Linked Terms | Link terms together so adding one term to a post will add all connected terms |
-| No access to TaxoPress email support | 3 of your team members can use TaxoPress support |
-| Support on WordPress.org | Fast, professional support by email |
-| Ads inside the plugin | No ads inside the plugin |
+[table id=1 /]
 
 ---
 
@@ -1460,58 +1463,11 @@ The installation of the free version of the TaxoPress plugin is straightforward.
 - Search for “TaxoPress” and click “Install Now”.
 - Click “Activate”.
 
+![](https://taxopress.com/wp-content/uploads/2021/08/taxopress-1024x551.png)
+
 You will now see TaxoPress on the “Plugins” screen, and there will be a TaxoPress link in your admin menu.
 
----
-
-## Capabilities / Permissions in TaxoPress
-
-**Source:** [https://taxopress.com/docs/permissions-taxopress/](https://taxopress.com/docs/permissions-taxopress/)
-
-## Capabilities for the TaxoPress Metabox
-
-If you want to control who has access to the TaxoPress metabox underneath each post, you can do with the manage_categories capability. We recommend using the [PublishPress Capabilities](https://wordpress.org/plugins/capability-manager-enhanced/) plugin to assign this permissions.
-
-- Go to the “Capabilities” screen.
-- Choose the user role you want to edit in the top-left corner.
-- In the “Taxomomies” area, you can see the “manage_categories” option.
-
----
-
-## Capabilities for the TaxoPress Admin Area
-
-There are two permissions that can give users access to the TaxoPress admin area:
-
-- ```
-simple_tags
-```
-
-: this will give access to the “Settings” screen.
-- ```
-admin_simple_tags
-```
-
-: this will give access to the screens such as “Taxonomies”, “Related Posts”, “Mass Edit Terms”, “Manage Terms”, and more.
-
-You can use these to customize user access to the TaxoPress plugin screens with the PublishPress Capabilities plugin.
-
-- Go to the “Capabilities” screen.
-- Choose the user role you want to edit in the top-left corner.
-- In the “TaxoPress” area, you can see the two TaxoPress permissions:
-
-If you give both these permissions to a user in [the Subscriber role](https://publishpress.com/knowledge-base/subscriber/), this next screenshot shows what they will see after logging in.
-
-These permissions are automatically added to your site by the 
-```
-/inc/class.admin.php
-```
-
- file. These permissions are automatically removed when you uninstall the plugin. This is done by the 
-```
-uninstall.php
-```
-
- file.
+![](https://taxopress.com/wp-content/uploads/2023/09/0_1-1024x342.png)
 
 ---
 
@@ -1589,15 +1545,21 @@ If you previously had installed the free Tag Groups plugin, all settings and gro
 
 Go to the **Taxonomies** page in the **Tag Groups** settings.
 
+![](https://taxopress.com/wp-content/uploads/2023/02/WordPress-menu-Tag-Groups-Taxonomies-e1531444180386.png)
+
 There you select the taxonomy (that is the “tag type”) that you want to organize under groups. In most cases you keep “Tags” (post_tag), but in some cases it might be “Product Tags” (product_tag) or others.
 
 Only non-hierarchical taxonomies (such as tags or product tags) are fully supported, but you can also experiment with category-type taxonomies.
 
 Depending on the chosen taxonomy, a new submenu and page appears next to the submenu of the corresponding tags, called **Tag Groups Admin**. By default it is located under **Posts**, in the case of **Product Tags** it is located under **Products**. You can simply navigate there by clicking on the icon of a taxonomy name.
 
+![](https://taxopress.com/wp-content/uploads/2023/02/settings-txonomies_.png)
+
 ## Step #2. Create some tag groups
 
 On the **Tag Groups Admin** page you create the groups you need. You can return any time later to make changes.
+
+![](https://taxopress.com/wp-content/uploads/2023/02/Tag-Group-Admin-plugin-WordPress-1024x472-1.png)
 
 - Create a new group below a row by clicking on the plus icon.
 - Click on the trash icon to delete a group.
@@ -1616,7 +1578,7 @@ Then go to the tags (or product tags, or others) and assign them to these groups
 
 By default, each tag is unassigned.
 
-![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==)
+![](https://taxopress.com/wp-content/uploads/2023/02/assign-tags-to-groups-WordPress.png)
 
 That’s all to get started.
 

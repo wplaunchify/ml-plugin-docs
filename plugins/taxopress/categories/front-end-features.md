@@ -14,11 +14,19 @@ Tag Groups Pro has a feature that allows you to create custom color schemes for 
 - The first step is to choose a CSS class name. In this screenshot below, I’ve chosen “my-lime-green-class”.
 - Use the color boxes to design your terms. You can see a preview on the right side of the screen under “Sample output”.
 
+![](https://taxopress.com/wp-content/uploads/2023/05/tag-groups-lime-green-1024x468.png)
+
 - At the bottom of the screen, Tag Groups will automatically generate the CSS you need to use. Copy this CSS to your site. You can place this into the style.css file of a child theme or you can add it using the Customizer.
+
+![](https://taxopress.com/wp-content/uploads/2023/05/lime-green-css-1024x559.png)
 
 - Now you can add your CSS class into the “div class” box of your Gutenberg block. In this screenshot below, there are two classes. I’ve added a comma to space out the classes.
 
+![](https://taxopress.com/wp-content/uploads/2023/05/add-lime-green-class-1024x1001.png)
+
 - Your design is now complete. This screenshot below shows the output from the “my-lime-green-class” that was created at the start of this guide.
+
+![](https://taxopress.com/wp-content/uploads/2023/05/lime-green-frontend-1024x310.png)
 
 ---
 
@@ -112,7 +120,7 @@ Example of a shortcode:
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6acb2c5e6d1e4', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6ad4660aa301a', {"active":false}, true);
       return;
     }
 
@@ -123,7 +131,7 @@ Example of a shortcode:
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6acb2c5e6d1e4');
+    var element = document.getElementById('tag-groups-cloud-tabs-6ad4660aa301a');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -148,7 +156,7 @@ tag-groups-theme-slategray
 
 This screenshot below is an example using the “green” theme:
 
-tag-groups-theme-green with the parameter append=”{count}” to show the post counts.
+![](https://taxopress.com/wp-content/uploads/2022/12/Tag-Groups-WordPress-plugin-tag-cloud-post-count.png)tag-groups-theme-green with the parameter append=”{count}” to show the post counts.
 
 We also adapted styling created by [Dimox](http://dimox.net/beautiful-tags-for-a-website-using-only-css/) after a design by [Orman Clark](http://www.premiumpixels.com/freebies/tagtastic-tag-cloud-psd/). You can use it with the class name
 
@@ -157,6 +165,8 @@ tag-groups-theme-tag-with-hole
 ```
 
 Since the tag size is fixed, the maximum font size should not exceed 18px. The cloud looks best if all tag labels have the same height.
+
+![](https://taxopress.com/wp-content/uploads/2022/12/Tag-Cloud-tags-with-holes-css.png)
 
 ---
 
@@ -238,7 +248,7 @@ WordPress Search
 
   (function(){
     const options = {
-      divIdInner: 'tag-groups-shuffle-box-6acb2c5e6e42b_inner',
+      divIdInner: 'tag-groups-shuffle-box-6ad4660aa3fa4_inner',
       addPremiumFilter: false,
       timeoutMilliSecs: 100,
       initialGroup: -1,
@@ -283,20 +293,32 @@ Alternatively, you can also use your own theme. The easiest way to achieve this 
 - You can click “Roll Your Own”, or pick a ready-made theme from the “Gallery.”
 - Under the “Roll Your Own” tab, you can modify the Font Settings, Corner Radius, Header/Toolbar, Content, and more. In the center part of the page you can see a preview of your theme.
 
+![Build your own JQuery gallery](https://taxopress.com/wp-content/uploads/2023/05/theme-roller-1024x427.png)
+
 - When you’re finished, click the yellow “Download theme button”.
 - On the next “Download Builder” page, select the version 1.12.x.
+
+![The JQuery Download builder](https://taxopress.com/wp-content/uploads/2023/05/download-12-1-jquery-1024x389.jpg)
 
 - Go to the settings at the bottom and enter as “CSS Scope” the class .tag-groups-cloud (including the leading dot).
 - Download the file.
 
+![Download your JQuery UI theme](https://taxopress.com/wp-content/uploads/2023/05/tag-groups-cloud-1024x427.png)
+
 - Unpack the downloaded zip file. You will need the “images” folder and the “jquery-ui.theme.min.css” file.
+
+![Unpack the downloaded zip file for the theme](https://taxopress.com/wp-content/uploads/2023/05/theme-file-downloads-1024x430.png)
 
 - Create a new folder inside your*/wp-content/uploads* folder. For example, the folder can be “my-theme”.
 - Add your two items into the folder.
 
+![](https://taxopress.com/wp-content/uploads/2023/05/uploaded-theme-files.png)
+
 - Go to “Tag Groups” in your WordPress admin area, then “Front End”, then “Themes and Appearance”.
 - Enter the name of this new folder in the “own theme” field.
 - Save the changes and check your new design with a Alphabetical Tag Cloud, Tabbed Tag Cloud, or Accordion Tag Cloud display.
+
+![Creating a new theme from JQuery YI](https://taxopress.com/wp-content/uploads/2023/05/my-theme-load-1024x832.png)
 
 You can also leave the field for your custom theme empty. You may want to do this for example if the theme of your blog already provides tabs and you like to blend the tag cloud into this design.
 
@@ -328,6 +350,8 @@ When you hover your mouse over a block in the library, you will see an image wit
 
 Then you insert the block by clicking on it.
 
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot-Gutenberg-block-example-preview-2-WordPress-1.png)
+
 ---
 
 ## How to configure a block
@@ -338,6 +362,8 @@ If you don’t see the sidebar, open it by clicking on the cogwheel icon in the 
 
 You can switch the sidebar between “Document” options and “Block” options. You will need the Block options.
 
+![](https://taxopress.com/wp-content/uploads/2022/12/Snapshot-Toggle-Post-Filter-Gutenberg-block.com_-1.png)
+
 Some options depend on others and therefore appear only after you activated the more general option. Before you can enter the placeholder of a search field, for example, you first have to enable the search field where that placeholder appears.
 
 ### Contextual Help
@@ -347,6 +373,8 @@ The ? icon at each option takes you to a page of the documentation with more hel
 ### Previewing the Block
 
 Most blocks offer a live preview where you can see how changing the options affects the output. This preview is only approximate and not fully functional. For example, you cannot click on links or search for posts inside a block. The final appearance might also look different, depending on your theme and other factors.
+
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot-Gutenberg-block-preview.webp)
 
 The live preview can be turned off in the Back End settings, under the Gutenberg tab.
 
@@ -436,7 +464,7 @@ parameter="here is 'some text'"
 
 If you don’t want to mess around with shortcodes and parameters, you can also get the same results with Gutenberg, which is the default WordPress editor since version 5.0. All tag cloud shortcodes exist as Gutenberg blocks and you simply configure them through a user interface.
 
-![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==)
+![](https://taxopress.com/wp-content/uploads/2023/04/gutenberg-example-1024x903.png)
 
 ---
 

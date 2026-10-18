@@ -12,17 +12,19 @@ This guide will introduce you how data for the Tags Groups plugin is stored in t
 
 On the main “Tag Group Administration” screen you will be able to see the Group ID for each Tag Group. In this example, “My Group” has an ID of 1 and there are 3 tags assigned to this group.
 
-tag groups id
+![Tag Group Administration](https://taxopress.com/wp-content/uploads/2024/03/tag-groups-id-1024x333.png)tag groups id
 
 In this screenshow below, I’ve used the [Reveal IDs plugin](https://taxopress.com/ids-tags-posts-categories/) to show the IDs of the tags: 54, 55, and 56.
 
+![Term IDs for Tag Groups](https://taxopress.com/wp-content/uploads/2024/03/tag-ids-1024x321.png)
+
 If you go to the _termmeta table in your database, you will find how the terms are connected to the Tag Groups. The term_ids below are 54, 55, and 56. For each term, there an array called _cm_term_group_array and the Group ID is stored as 1.
 
-tags term meta
+![termmeta table](https://taxopress.com/wp-content/uploads/2024/03/tags-term-meta-1024x404.png)tags term meta
 
 The labels for each group are stored together in the _options table. In the screenshot below, “not assigned” has an ID of 0 and “My Group” has an ID of 1.
 
-options table tag groups
+![Tag Groups ID](https://taxopress.com/wp-content/uploads/2024/03/options-table-tag-groups-1024x80.png)options table tag groups
 
 ---
 
@@ -243,7 +245,7 @@ echo do_shortcode('
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6acb2c622c8ba', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6ad4660d863cd', {"active":false}, true);
       return;
     }
 
@@ -254,7 +256,7 @@ echo do_shortcode('
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6acb2c622c8ba');
+    var element = document.getElementById('tag-groups-cloud-tabs-6ad4660d863cd');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }

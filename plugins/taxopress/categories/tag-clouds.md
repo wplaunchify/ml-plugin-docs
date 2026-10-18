@@ -20,7 +20,7 @@ The settings under this tab allow you to choose which terms will appear in your 
 - **Custom**: This will display only the specific terms entered in the “Custom terms to display” field.
 - **Combined**: This will display automatic terms plus any additional custom terms.
 
-terms display choose
+![Choose Terms feature](https://taxopress.com/wp-content/uploads/2025/07/terms-display-choose-1024x725.png)terms display choose
 
 ---
 
@@ -28,7 +28,7 @@ terms display choose
 
 These settings allow you to customize text aspects of your display.
 
-options terms display
+![Terms to Display options](https://taxopress.com/wp-content/uploads/2025/07/options-terms-display.png)options terms display
 
 ---
 
@@ -44,7 +44,7 @@ The Layout tab allows you to choose from several default designs for your Terms 
 - Border Cloud
 - Parent / Child
 
-choose term display layout
+![Layout for Terms Display](https://taxopress.com/wp-content/uploads/2025/07/choose-term-display-layout-1024x357.png)choose term display layout
 
 ---
 
@@ -52,13 +52,13 @@ choose term display layout
 
 The Exceptions tab allow to hide some terms from display. Enter as many terms as you want, separating each term with a comma.
 
-exceptions terms display
+![Exceptions tab](https://taxopress.com/wp-content/uploads/2025/07/exceptions-terms-display-1024x360.png)exceptions terms display
 
 ## Design
 
 These settings allow you to customize design aspects of your display. You can choose the number of terms, plus the size and color of the font.
 
-terms display design
+![Design options for Terms Display](https://taxopress.com/wp-content/uploads/2025/07/terms-display-design-1024x556.png)terms display design
 
 ---
 
@@ -70,11 +70,19 @@ TaxoPress allows you to [change the format of your Terms Display](https://taxopr
 
 Go to TaxoPress > Terms Display > Display Format, and you can add your own CSS class to the whole div or to specific links. You can do this using the settings below:
 
+![](https://taxopress.com/wp-content/uploads/2021/09/terms-display-css-1024x246.png)
+
 Here is an example of adding classes to these fields:
+
+![](https://taxopress.com/wp-content/uploads/2021/09/class-display-1024x248.png)
 
 I can then add the CSS for those classes to my theme, or to the “Customize” feature of WordPress.
 
+![](https://taxopress.com/wp-content/uploads/2021/09/terms-display-css-1.png)
+
 In the image above, I’ve added the CSS code. Then I included t[he “Terms Display” shortcode](https://taxopress.com/docs/tag-cloud-shortcode/) into a post, and the image below shows the very colorful result!
+
+![](https://taxopress.com/wp-content/uploads/2021/09/display-css-1024x228.png)
 
 ---
 
@@ -88,7 +96,7 @@ To manage a format of a terms display, go to TaxoPress > Terms Display > Display
 
 The format you can see in the following image is controlled by a setting in TaxoPress > Terms Display > Display Format:
 
-terms display format
+![Term link format for Terms Display](https://taxopress.com/wp-content/uploads/2021/05/terms-display-format-1024x524.png)terms display format
 
 Here is the code that the Display Format area provides for you by default:
 
@@ -158,6 +166,8 @@ t%tag_scale%
 With TaxoPress, you can create a Terms Display layout and show it in a WordPress widget.
 
 Go to Appearance > Widget and look for the “Term Display (TaxoPress Shortcode)” widget. This can be placed in any area that your theme has available.
+
+![](https://taxopress.com/wp-content/uploads/2021/06/terms-display-widget-1.png)
 
 ---
 
@@ -287,9 +297,15 @@ Here are all the legacy code parameters:
 
 TaxoPress allows you to show a cloud or list of the terms in a taxonomy. You can show your terms using the shortcode shown on the “Terms Display” screen:
 
+![](https://taxopress.com/wp-content/uploads/2021/06/terms-display-2-1024x155.png)
+
 If you are using the block editor in WordPress, you can also add TaxoPress shortcodes using the “Shortcode” block. In the image below, I’ve added a shortcode block:
 
+![](https://taxopress.com/wp-content/uploads/2021/06/shortcode-block-1024x212.png)
+
 The image below shows the output from the block above. The cloud appears under the main text of the post:
+
+![](https://taxopress.com/wp-content/uploads/2021/03/tag-cloud-shortcode-1024x509.png)
 
 ---
 
@@ -305,13 +321,15 @@ The Terms Display feature in TaxoPress allows you to create a customizable displ
 
 The image below shows an example of Terms Display. The most frequently used terms are shown in a larger, darker font and less popular terms are shown smaller and lighter.
 
+![Terms Display example](https://taxopress.com/wp-content/uploads/2021/03/tag-cloud.png)
+
 ---
 
 ## Edit or Add New Term Displays
 
 On the “Terms Display” screen, you’ll see all your term displays. You can click the title or the “Edit” link to edit the settings for this existing display.
 
-terms display add new
+![Terms Display Screen](https://taxopress.com/wp-content/uploads/2021/02/terms-display-add-new-1024x384.png)terms display add new
 
 This feature requires the Pro version of the TaxoPress plugin
 
@@ -323,9 +341,11 @@ On the “Terms Display” screen in the Pro version of TaxoPress Pro, you can c
 
 Inside each display you will find a preview, and a large number of customization options, as shown in this screenshot below.
 
-manage terms display
+![Manage Terms Display](https://taxopress.com/wp-content/uploads/2021/02/manage-terms-display-1024x786.png)manage terms display
 
 Every display can be shown in a shortcode, or inside a widget. In this example below, we have WooCommerce on the site and are showing a cloud of the most popular terms in the “Product Tags” category.
+
+![WooCommerce product tags](https://taxopress.com/wp-content/uploads/2021/06/product-tags-1024x654.png)
 
 ---
 

@@ -26,7 +26,11 @@ This feature still exists, only it is now called “[Suggest Terms](https://taxo
 
 This image below shows how the old “Click Tags” feature appeared:
 
+![Click tags feature](https://taxopress.com/wp-content/uploads/2022/03/click-tags-1024x522.png)
+
 This next image shows how the new “Suggest Terms” feature appears:
+
+![Suggested Terms feature](https://taxopress.com/wp-content/uploads/2022/03/show-existing-terms-1024x333.png)
 
 ---
 
@@ -46,11 +50,17 @@ The best way to debug errors in TaxoPress is to use the tools in your browser.
 - Right-click to bring up this toolbar shown in the next image.
 - Click “Inspect”:
 
+![](https://taxopress.com/wp-content/uploads/2021/03/inspect-1.png)
+
 - You will now see a sidebar in Chrome that looks like this next image.
 - Click the “Console” tab:
 
+![](https://taxopress.com/wp-content/uploads/2021/03/console-1024x302-1.png)
+
 - Try the action in TaxoPress that’s not working.
 - You may now see some errors in the “Console” tab. Copy those errors and report them to our team at [help@taxopress.com](mailto:help@taxopress.com).
+
+![](https://taxopress.com/wp-content/uploads/2021/03/console-error-1-1024x279-1.png)
 
 ---
 
@@ -60,11 +70,17 @@ The best way to debug errors in TaxoPress is to use the tools in your browser.
 - Right-click to bring up this toolbar shown in the next image.
 - Click “Inspect element”:
 
+![](https://taxopress.com/wp-content/uploads/2021/03/firefox-1.png)
+
 - You will now see a sidebar in Firefox that looks like this next image.
 - Click the “Console” tab:
 
+![](https://taxopress.com/wp-content/uploads/2021/03/console-firefox-1024x322-1.png)
+
 - Try the action in TaxoPress that’s not working.You may now see some errors in the “Console” tab.
 - Copy those errors and report them to our team at [help@taxopress.com](mailto:help@taxopress.com).
+
+![](https://taxopress.com/wp-content/uploads/2021/03/firefox-errors-1024x328-1.png)
 
 ---
 
@@ -118,6 +134,8 @@ WordPress provides a debug mode that lets you see notices, warnings and error me
 
 To save you the trouble of editing the wp-config.php file, you can use the plugin [WP Debugging](https://wordpress.org/plugins/wp-debugging/).((This and other 3rd-party plugins are not officially supported. Use at your own risk.)) After installation, go to the plugin screen under the Tools menu and select “Set WP_DEBUG to true”.
 
+![](https://taxopress.com/wp-content/uploads/2023/02/Screenshot_2020-12-15-WP-Debugging-‹-My-Great-Blog-—-WordPress.png)
+
 The plugin also lets you install the [Debug Bar](https://wordpress.org/plugins/debug-bar/) plugin that adds a menu entry “Debug Quick Look” where you can see the debug messages.
 
 ---
@@ -131,6 +149,8 @@ The Tag Groups plugin adds its own messages that appear in the debug.log file pr
 
 .
 
+![](https://taxopress.com/wp-content/uploads/2023/02/Screenshot_2020-12-15-View-Your-File1.png)
+
 ---
 
 ## Verbose logging
@@ -138,6 +158,8 @@ The Tag Groups plugin adds its own messages that appear in the debug.log file pr
 By default these messages inform you only about serious issues. If you turn on **verbose logging**, however, you will also receive details about deprecated shortcodes, caching, locale settings that cannot be provided by the operating system, processing of meta etc.. This information can help you understand what is going on under the hood.
 
 Activate verbose logging on the page Troubleshooting -> Debugging
+
+![](https://taxopress.com/wp-content/uploads/2023/02/Screenshot_2021-01-05-Troubleshooting-Debug-Log-WordPress.png)
 
 or add to wp-config.php:
 
@@ -258,6 +280,8 @@ Warning: xyz in /some-plugin/index.php{"data":"success" ...
 ## Try other steps
 
 Go to the “Tag Groups”, then “Tools”, then “System Information”. Check if the “Ajax Test” option shows a green check mark. If you see a red X, [this post has more information where to search](https://taxopress.com/docs/debugging-a-wordpress-ajax-error/).
+
+![](https://taxopress.com/wp-content/uploads/2023/05/ajax-test.png)
 
 Alternatively, you can [open the JavaScript Console in your browser](https://webmasters.stackexchange.com/a/77337) on the Tag Groups Administration page. Reload the page and check the error or log messages for anything that gives a hint about the cause.
 

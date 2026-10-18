@@ -12,7 +12,7 @@ This feature requires the Pro version of the TaxoPress plugin
 
 TaxoPress Pro integrates with OpenAI to scan your content and suggest existing terms. This feature has the ability to customize the prompts used to return results from OpenAI. You can see this in the “OpenAI Prompt” setting:
 
-openai terms
+![OpenAI settings](https://taxopress.com/wp-content/uploads/2024/03/openai-terms-1024x784.png)openai terms
 
 Here are some suggestions for modifying the OpenAI prompt. These are only ideas and OpenAI will accept a wide variety of prompts so feel free to unleash your imagination and test your own use-cases. It’s worth reading [the OpenAI documentation on creating prompts](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api).
 
@@ -114,31 +114,7 @@ The services do support different languages and have different pricing structure
 - **Dandelion**: [language documentation](https://dandelion.eu/docs/api/datatxt/nex/v1/#param-lang) and [pricing guide](https://dandelion.eu/profile/plans-and-pricing/).
 - **LSEG / Refinitv**: [language documentation](https://developers.lseg.com/en/api-catalog/open-perm-id/intelligent-tagging-restful-api/documentation#intelligent-tagging-for-non-english-languages) and [pricing guide](https://developers.lseg.com/en/api-catalog/open-perm-id/intelligent-tagging-restful-api/documentation#side-by-side-comparison-of-packages-and-deployment-options).
 
-|  | OpenAI | IBM Watson | Dandelion | LSEG / Refinitiv |
-| --- | --- | --- | --- | --- |
-| Arabic | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Chinese (Simplified) | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Czech | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Danish | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Dutch | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| English | [icon-yes/] | [icon-yes/] | [icon-yes/] | [icon-yes/] |
-| Finnish | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| French | [icon-yes/] | [icon-yes/] | [icon-yes/] | [icon-no/] |
-| German | [icon-yes/] | [icon-yes/] | [icon-yes/] | [icon-no/] |
-| Hebrew | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Hindi | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Italian | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Japanese | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Korean | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Norwegian | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Polish | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Portuguese | [icon-yes/] | [icon-yes/] | [icon-yes/] | [icon-no/] |
-| Romanian | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Russian | [icon-yes/] | [icon-yes/] | [icon-yes/] | [icon-no/] |
-| Slovak | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Spanish | [icon-yes/] | [icon-yes/] | [icon-yes/] | [icon-no/] |
-| Swedish | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
-| Turkish | [icon-yes/] | [icon-yes/] | [icon-no/] | [icon-no/] |
+[table id=6 /]
 
 ---
 
@@ -152,14 +128,20 @@ The Auto Terms feature has an integration with the IBM Watson service. This guid
 
 - Go to [the “Natural Language Understanding” area](https://cloud.ibm.com/catalog/services/natural-language-understanding) of the IBM website.
 
+![Natural Language Understanding area of the IBM website](https://taxopress.com/wp-content/uploads/2023/10/natural-language-understanding-1024x578.png)
+
 - Sign up for an IBM Cloud account:
 
+![IBM Watson signup](https://taxopress.com/wp-content/uploads/2023/10/imb-cloud-account-1024x744.png)
+
 - IBM will provide you with both an API Key and an API URL. You can use both of these to connect your IBM account to TaxoPress.
+
+![Natural Language Understanding credentials](https://taxopress.com/wp-content/uploads/2023/10/ibm-cloud-credentials-1024x642.png)
 
 - In your WordPress site, go to TaxoPress > Auto Terms > Sources.
 - Enter your new URL and key into the “API URL” and “API Key” fields.
 
-ibm watson
+![IBM Watson TaxoPress](https://taxopress.com/wp-content/uploads/2023/10/ibm-watson-1024x572.png)ibm watson
 
 ---
 
@@ -175,16 +157,22 @@ Please note that your OpenAI subscription needs access to their API. TaxoPress a
 
 - [Visit the OpenAI website](https://chat.openai.com/auth/login) and sign for an account.
 
+![Register for OpenAI](https://taxopress.com/wp-content/uploads/2023/10/open-ai-signup.png)
+
 - Go to [the OpenAI platform website](https://platform.openai.com/).
 - In the top-right corner, go to “View API keys”.
+
+![View API keys in OpenAI](https://taxopress.com/wp-content/uploads/2023/10/open-ai-keys-1024x392.png)
 
 - Click “Create new secret key”. This is the API Key you enter into the TaxoPress settings.
 - In your WordPress site, go to TaxoPress > Auto Terms > Sources.
 - Enter your new key into the “API Key” field.
 
-openai keys
+![OpenAI and Taxopress](https://taxopress.com/wp-content/uploads/2023/10/openai-keys-1024x408.png)openai keys
 
 Please note that this is a paid service from OpenAI. You will need to go to “Settings” then “Billing” and make sure you have a payment method registered with OpenAI. [Find out what type of account you need](https://taxopress.com/chatgpt-ai-pricing/).
+
+![OpenAI](https://taxopress.com/wp-content/uploads/2024/02/billing-openai.png)
 
 ---
 
@@ -209,10 +197,12 @@ This guide will show you how to create a Dandelion API key to automatically sugg
 - [Go to the dashboard](https://dandelion.eu/profile/dashboard/).
 - Get your API token:
 
+![Dandelion API registration](https://taxopress.com/wp-content/uploads/2021/03/dandelion-token.png)
+
 - In your WordPress site, go to TaxoPress > Auto Terms > Sources.
 - Enter your new key into the “API Token” field.
 
-dandelion
+![Dandelion API keys](https://taxopress.com/wp-content/uploads/2022/01/dandelion-1024x604.png)dandelion
 
 ---
 
@@ -249,16 +239,20 @@ Please also note that registering for an API key can be a complex and confusing 
 
 - [Click here to register for MyRefinitiv](https://my.refinitiv.com/content/mytr/en/register.html#/).
 
+![Register for MyRefinitiv](https://taxopress.com/wp-content/uploads/2021/03/myrefinitiv-1024x583.png)
+
 - Verify your email address.
 - Refinitiv will say “We will send you email confirmation within the next 24 hours with further instructions on how to proceed with access to MyRefinitiv.”
 - After approval, create a password.
 - Go to [PermID.org](https://permid.org) and log in.
 - On the PermID site, click “APIs” and then “Display my API token”.
 
+![Display my API token in Refinitiv](https://taxopress.com/wp-content/uploads/2021/03/permid-api-1024x330.png)
+
 - In your WordPress site, go to TaxoPress > Auto Terms > Sources.
 - Enter your new key into the “API Key” field.
 
-lseg
+![LSEG API](https://taxopress.com/wp-content/uploads/2022/01/lseg-1024x505.png)lseg
 
 ---
 

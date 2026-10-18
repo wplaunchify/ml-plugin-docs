@@ -160,6 +160,8 @@ The Home screen of the Tag Groups plugin shows you an overview of all enabled ta
 
 Behind each taxonomy you also find a link to the corresponding page where you can create and edit tag groups.
 
+![](https://taxopress.com/wp-content/uploads/2023/04/home-screen-1024x309.png)
+
 ---
 
 ## Tools
@@ -196,6 +198,8 @@ This tool checks for inconsistencies and outdated or invalid meta data. Running 
 
 This guide explains the settings in the “Front End” area of the Tag Groups Pro plugin. You can see the “Front End” tabs in this screenshot below.
 
+![](https://taxopress.com/wp-content/uploads/2023/03/front-end-settings-1024x170.png)
+
 ---
 
 ## Shortcodes
@@ -228,7 +232,7 @@ Most of the options can also be set via shortcode parameters or in Gutenberg blo
 
 Starting from version 1.29.0, you find here a tool to design your tags. It creats the CSS that you can use in your theme or the WordPress Customizer (menu Appearance -> Customize). Just follow the steps on the screen from top to bottom.
 
-![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==)
+![](https://taxopress.com/wp-content/uploads/2023/02/Screenshot-Tag-Colors-back-end-WordPress-1024x529-1.png)
 
 ---
 
@@ -266,7 +270,7 @@ Normally you want to keep this option on. Only on busy websites where you often 
 
 Once your posts use tags that are organized in groups, you may want to display them together with these groups under your posts. While displaying tags in posts and pages requires the modification of theme templates, the Tag Groups Pro plugin can insert the post tags at the bottom of the post content.
 
-Post tags and their groups appear under the post in default styling, together with content added by other plugins, such as sharing buttons and related posts.
+![](https://taxopress.com/wp-content/uploads/2023/02/Screenshot-post-tags-under-content-e1532039374130.png)Post tags and their groups appear under the post in default styling, together with content added by other plugins, such as sharing buttons and related posts.
 
 In the settings you can specify:
 
@@ -288,6 +292,8 @@ If you have WooCommerce installed and activated, you find a new tab “WooCommer
 - One lets you add tag groups and their tags to the attributes section (“Additional Information”) of the product. Of course, we display only groups and tags that you use with that particular product.
 - The second one removes the “Tags: …” part from the single product view so that the tags don’t appear twice. Your product categories will still be in place, but tags are used only as additional attribute values.
 - Lastly, you can set a separator that appears between the tags and attribute values.
+
+![](https://taxopress.com/wp-content/uploads/2023/02/Settings-Front-End-WooCommerce-WordPress.png)
 
 ---
 

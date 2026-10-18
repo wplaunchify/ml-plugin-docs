@@ -72,6 +72,8 @@ Default text of the input field
 
 This guide shows you how to use and customize the shortcode for the text search feature in Toggle Post Filter in the Tag Groups plugin.
 
+![](https://taxopress.com/wp-content/uploads/2023/04/post-filter-text-search.png)
+
 #### Placeholder for search field
 
 Default text of the input field
@@ -719,6 +721,8 @@ This guide will show you how to use the Gutenberg block that is available with T
 
 **Note:**The Toggle Post Filter can only be used once on a page (including widgets), and it cannot be used together with the shortcode or block of the Dynamic Post Filter.
 
+![](https://taxopress.com/wp-content/uploads/2023/04/toggle-post-filter-body-block-645x1024.png)
+
 ---
 
 ## Posts
@@ -1187,6 +1191,8 @@ This feature consists of several blocks that you can place at different location
 - Toggle Post Filter – Reset Button (optional)
 - Toggle Post Filter – Message Field (optional)
 
+![](https://taxopress.com/wp-content/uploads/2023/04/toggle-post-filter-blocks.png)
+
 Please make sure you don’t use the “legacy” menu block. This block is still functional but its options have been migrated to the posts block.
 
 ---
@@ -1196,6 +1202,8 @@ Please make sure you don’t use the “legacy” menu block. This block is stil
 The following options appear in the editor side panel after you selected a block. Some of them appear only when you activated the corresponding function. For example, you can set the title of the search field only after you activated text search.
 
 You find post-related options in the [post (body) block](https://taxopress.com/docs/toggle-post-filter-body-gutenberg-block/).
+
+![](https://taxopress.com/wp-content/uploads/2023/04/post-filter-menu-block.png)
 
 ---
 
@@ -1379,6 +1387,8 @@ The Toggle Post Filter is a frontend feature in the Tag Groups plugin. Visitors 
 - [Click here for the shortcode parameters](https://taxopress.com/docs/tag-list-parameters/).
 
 Here’s a screenshot of the Toggle Post Filter feature from [our demo site](https://demo.taxopress.com). This display is showing two groups of tags. Results show if the photo is linked to at least one selected tag.
+
+![Toggle Post Filter](https://taxopress.com/wp-content/uploads/2023/03/toggle-post-filter-1024x862.png)
 
 ---
 

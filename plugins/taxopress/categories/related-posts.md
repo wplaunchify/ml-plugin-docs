@@ -12,11 +12,19 @@ In TaxoPress you can [change the format of your Related Posts](https://taxopress
 
 Go to TaxoPress > Related Posts > Advanced and you can add your CSS to the whole div or to specific links. You can do this using the settings below:
 
+![Related Posts div class](https://taxopress.com/wp-content/uploads/2021/09/related-posts-css-1024x244.png)
+
 Here is an example of adding classes to these fields:
+
+![Related posts div class with entry](https://taxopress.com/wp-content/uploads/2021/09/related-classes-1024x221.png)
 
 You can then add the CSS for those classes to my theme, or to the “Customize” feature of WordPress.
 
+![CSS to modify Related Posts](https://taxopress.com/wp-content/uploads/2021/09/terms-display-css-1.png)
+
 In this example below, we’ve added the CSS code from above, and then [loaded Related Posts with a widget](https://taxopress.com/docs/where-to-display-related-posts/). The result is very colorful!
+
+![Related Posts with CSS](https://taxopress.com/wp-content/uploads/2021/09/related-css.png)
 
 ---
 
@@ -37,7 +45,7 @@ On the first tab called “General”, you can change key settings for each rela
 - Taxonomy
 - Display format
 
-edit related posts
+![Related Posts intro](https://taxopress.com/wp-content/uploads/2021/02/edit-related-posts-2-1024x487.png)edit related posts
 
 ---
 
@@ -45,7 +53,7 @@ edit related posts
 
 These settings allow you to customize design aspects of your display.
 
-related posts design
+![Design of Related Pots](https://taxopress.com/wp-content/uploads/2021/03/related-posts-design-1024x490.png)related posts design
 
 ---
 
@@ -53,7 +61,7 @@ related posts design
 
 The Layout tab allows you to choose from several default designs for your Related Posts design.
 
-related posts layout
+![Related Posts layout](https://taxopress.com/wp-content/uploads/2021/03/related-posts-layout-1024x261.png)related posts layout
 
 ---
 
@@ -68,7 +76,7 @@ If you click the “Options” tab, you’ll get more settings:
 - **Text to show when there is no related post**: You can leave this empty to hide this feature when it does not apply to a post.
 - **Hide output if no related post is found?**: This will hide the whole Related Posts feature if nothing relevant can be displayed.
 
-related posts options
+![Related Posts options](https://taxopress.com/wp-content/uploads/2021/03/related-posts-options-2-1024x535.png)related posts options
 
 ---
 
@@ -78,19 +86,19 @@ related posts options
 
 The Related Posts feature in TaxoPress shows posts in a list format. You can modify the information shown for each post link. You can see the default format in the screenshot below:
 
-related posts five
+![Related Posts example](https://taxopress.com/wp-content/uploads/2021/03/related-posts-five.png)related posts five
 
 This format is controlled by the “Term link format” setting in TaxoPress > Related Posts > Advanced:
 
-term link format
+![Term link format in TaxoPress](https://taxopress.com/wp-content/uploads/2021/03/term-link-format-1024x308.png)term link format
 
 For example, you can change this display by adding “LINK” to the “Term link format, as in this screenshot below:
 
-term link format changed
+![Term link format change](https://taxopress.com/wp-content/uploads/2021/03/term-link-format-changed-1024x302.png)term link format changed
 
 This next screenshot shows the result of those changes:
 
-related posts five changed
+![Related Posts link change](https://taxopress.com/wp-content/uploads/2021/03/related-posts-five-changed.png)related posts five changed
 
 Here is the code that TaxoPress provides by default:
 
@@ -188,6 +196,8 @@ Take these steps to use the automatic display option:
 - You will see the settings in the screenshot below.
 
 Below the screenshot, we’ll explain what these options mean.
+
+![Manage Related Posts](https://taxopress.com/wp-content/uploads/2022/03/related-posts-1024x669.png)
 
 ---
 
@@ -331,7 +341,7 @@ This feature works by checking for shared taxonomy terms. So if your post has th
 
 This screenshot below shows an example of “Related posts” area below a post:
 
-related posts frontend
+![Related Posts screen frontend](https://taxopress.com/wp-content/uploads/2021/02/related-posts-frontend-1024x619.png)related posts frontend
 
 ---
 
@@ -339,7 +349,7 @@ related posts frontend
 
 On the “Related Posts” screen, you’ll see all your displays. You can click the title or the “Edit” link to edit the settings for this existing display.
 
-related posts screen
+![Related ](https://taxopress.com/wp-content/uploads/2021/02/related-posts-screen-1024x423.png)related posts screen
 
 This feature requires the Pro version of the TaxoPress plugin
 
@@ -351,7 +361,7 @@ On the “Related Posts” screen in the Pro version of TaxoPress Pro, you can c
 
 Inside each display you will find a preview, and a large number of customization options, as shown in this screenshot below.
 
-edit related posts
+![Edit Related Posts](https://taxopress.com/wp-content/uploads/2021/02/edit-related-posts-2-1024x487.png)edit related posts
 
 The following guides have more details on how you can control the appearance of this Related Posts area:
 

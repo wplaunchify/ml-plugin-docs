@@ -39,7 +39,7 @@ Just like default groups, you change the order of parent groups by drag and drop
 
 It is also possible to use tag groups without a parent level.
 
-![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==)
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot-Tag-Group-Admin-parent-groups-WordPress-900x449-1.png)
 
 Note: If you are using parent groups, all groups can have duplicate names. It is still recommended to avoid duplicates, however, because at some places you might confuse groups with identical names.
 
@@ -48,6 +48,8 @@ Note: If you are using parent groups, all groups can have duplicate names. It is
 Once you’ve created parent groups, you will find them in the drop-down menus above the lists of tags and posts. If you select a parent group, all of its children will automatically be included in the filtering criteria.
 
 Note: Styling of parent groups in menus depends on browser capabilities.
+
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot-Tag-Filter-Parents-e1620812462122.png)
 
 ### Tag Clouds and Lists
 
@@ -61,6 +63,8 @@ In the Tag Group settings, under *Front End > Post Tags*, you find an option tha
 
 Also the Tag Meta Box on the post edit screen shows your groups sorted under parent groups. This upper level acts only as a visual guidance that helps you organize your groups but it doesn’t change the way how we handle tags.
 
+![](https://taxopress.com/wp-content/uploads/2022/12/Screenshot-WordPress-Tag-Meta-Box-250x250-1.png)
+
 ---
 
 ## Filter Tag Groups on the Tags Screen
@@ -68,6 +72,8 @@ Also the Tag Meta Box on the post edit screen shows your groups sorted under par
 **Source:** [https://taxopress.com/docs/tag-filter/](https://taxopress.com/docs/tag-filter/)
 
 On the “Tags” screen inside WordPress, you can filter the list of tags by a group to show only tags that belong to that group. Simply select the group under “Filter off” and click “Apply”.
+
+![](https://taxopress.com/wp-content/uploads/2023/04/tags-screen-filter-1024x511.png)
 
 ---
 
@@ -84,6 +90,8 @@ Follow these step to quickly assign multiple tags to a group:
 3. Choose a group in the second drop-down menu. You can see this menu is expanded in the screenshot below.
 4. Click “Apply”.
 
+![](https://taxopress.com/wp-content/uploads/2023/04/tags-screen-bulk-1024x663.png)
+
 ---
 
 ## Using the Tag Groups Metabox on the Post Edit Screen
@@ -99,6 +107,8 @@ The default WordPress “Tags” box does not use tag groups. Therefore, the Tag
 ## Introducing the Tag Groups Metabox
 
 This screenshot below shows the metabox provided by the Tag Groups plugin:
+
+![](https://taxopress.com/wp-content/uploads/2022/12/TGP-Meta-Box-colored-tags.png)
 
 On the right of the tag group name you find two buttons: The left one adds all tags of this group, the right one closes this group in the editor.
 
@@ -136,7 +146,11 @@ The first step in using the Tag Groups plugin is to choose the taxonomies in the
 
 You find the “Tag Groups” submenu next to your chosen taxonomy. For example, if you’re using the plugin with the “Tags” taxonomy, you’ll find the “Tag Groups” submenu next to the “Tags” menu:
 
+![Tag Groups menu link](https://taxopress.com/wp-content/uploads/2023/03/tag-groups-menu..png)
+
 This next screenshot shows the main admin screen for Tag Groups. Here you can add new groups, and modify existing groups.
+
+![Tag Groups admin screen](https://taxopress.com/wp-content/uploads/2023/03/tag-groups-admin-1024x346.png)
 
 Here are some actions you can take on this screen:
 

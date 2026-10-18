@@ -18,6 +18,8 @@ Since loading these files takes time and extra requests from the browser, we try
 
 Deselect the option “Always load shortcode scripts.” in the Tag Groups settings -> Front End. Then empty the cache (if you use a plugin or service for caching) and reload all pages where you use Tag Groups features.
 
+![](https://taxopress.com/wp-content/uploads/2022/12/front-end-settings-load-scripts.png)
+
 With this option deactivated, the plugin tries to automatically identify the posts and pages where scripts need to be loaded. For that to work, however, the shortcode or block must be present in the *content* part of this page or post. If you insert it in a widget or if your theme adds them later, you need to keep this option activated. The only way to find out is by trying.
 
 If you have to keep this option activated, you could then try a plugin such as [Asset CleanUp: Page Speed Booster](https://wordpress.org/plugins/wp-asset-clean-up/) to load only required scripts per page. For all tabs and accordions you will need the jQuery UI scripts and 
@@ -118,6 +120,8 @@ By default in WordPress, terms and posts are processed every time a page is load
 
 Some forms of caching are always active. In order to benefit from the maximum speed increase, please make sure that also object caching is enabled in the Tag Groups settings.
 
+![](https://taxopress.com/wp-content/uploads/2022/12/settings-cache-1.png)
+
 The speed improvement should be noticeable starting from the *second* time you load the page after saving the settings.
 
 By default, we empty the cache automatically when you make changes that require to rebuild the cache. If you prefer to do it manually after a series of changes, go to the Tag Groups settings, Front End, Cache and deactivate “Automatically clear cache when needed”. Now you will see a message whenever it is recommended to clear the object cache.
@@ -133,6 +137,8 @@ The Tag Groups Pro plugin adds further information to tags and posts and tracks 
 However, sometimes you may experience that filters on the front or back end don’t show all posts. You can normally fix it with the “Migrate” button in the Settings: Search in the “Troubleshooting” section under the “First Aid” tab.
 
 Running [Maintenance](https://taxopress.com/docs/running-maintenance/) also solves common issues.
+
+![](https://taxopress.com/wp-content/uploads/2023/04/migrate-tools-1024x662.png)
 
 ---
 
