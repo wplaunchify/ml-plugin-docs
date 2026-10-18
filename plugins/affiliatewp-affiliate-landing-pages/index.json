@@ -2,7 +2,7 @@
   "plugin_slug": "affiliatewp-affiliate-landing-pages",
   "plugin_name": "AffiliateWP - Affiliate Landing Pages",
   "documentation_url": "https://affiliatewp.com/docs/documentation/",
-  "last_scraped": "2026-10-11T01:15:20.099Z",
+  "last_scraped": "2026-10-18T01:04:18.126Z",
   "total_pages": 220,
   "failed_urls_count": 0,
   "sections": [
@@ -770,7 +770,7 @@
           "url": "https://affiliatewp.com/docs/easy-digital-downloads/"
         },
         {
-          "title": "WooCommerce",
+          "title": "WooCommerce integration",
           "url": "https://affiliatewp.com/docs/woocommerce/"
         },
         {
