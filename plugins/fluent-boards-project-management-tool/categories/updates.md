@@ -8,6 +8,115 @@
 
 **Source:** [https://fluentboards.com/docs/changelog/](https://fluentboards.com/docs/changelog/)
 
+## 2.2.1 (Date: October 13, 2026)
+
+- Fix: Upload directory warning issue
+- Fix: Cloud attachment downloads failing on some sites
+- Fix: Search briefly showing empty results while typing
+- Fix: CSV import upload error handling
+- Fix: Recurring task and reminder scheduling fixes
+- Fix: Minor stability and permission fixes
+
+## 2.2.0 (Date: October 12, 2026)
+
+- **New:** Browse, preview, and create boards from built-in templates
+- **New:** OpenRouter support for AI writing assistance
+- **New:** Create MCP connection keys from your account, with admin-managed access
+- **New:** Import Fluent Boards exports without Pro
+- **New:** Filter recurring tasks and task templates
+- **New:** Drag and drop boards into folders
+- **Improvement:** Update your profile name and photo from your account
+- **Improvement:** Redesigned notification emails with light and dark mode support
+- **Improvement:** Easier member access management across multiple boards
+- **Improvement:** Preserve more task data when duplicating boards, importing, and using templates
+- **Improvement:** Richer comment formatting, slash commands, and easier description copying
+- **Improvement:** Clearer recurring schedules, links to generated tasks, and custom-field activity history
+- **Improvement:** Faster board lists, task activity feeds, and bulk stage moves
+- **Improvement:** Simpler AI setup, updated model choices, and better translations
+- **Fixed:** Assignment notifications, comment email links, and incorrect archive emails when restoring tasks
+- **Fixed:** Bulk task moves now apply stage defaults and trigger notifications and webhooks
+- **Fixed:** Task and board deletion now cleans up related data and local or cloud attachments
+- **Fixed:** Search and filters now work together, and failed status updates preserve the previous status
+- **Fixed:** Recurring tasks retain custom fields and correctly update task counts and creation webhooks
+- **Fixed:** Time-log dates, custom date fields, timesheet access, and CSV exports
+- **Fixed:** Webhook event selection, task completion events, and missing-data handling
+- **Fixed:** FluentCRM task assignments, template data, and contact-board associations
+- **Fixed:** Task navigation, upload protection, and board permission checks
+
+## 2.1.0 (Date: September 17, 2026)
+
+- **New:** Rich text formatting for comments and replies
+- **New:** Markdown attachment previews with Mermaid diagrams and full-screen mode
+- **New:** Import Trello boards via API
+- **New:** Theme-aware label colors
+- **New:** Label colors that adapt to light and dark modes
+- **Improvement:** Identify labels faster with colored backgrounds
+- **Improvement:** Task descriptions now auto-save, with dedicated Save and Cancel buttons for added control
+- **Improvement:** Refined task details and dashboard badges
+- **Improvement:**Task headers now show the current stage
+- **Improvement:** Spot high-priority tasks faster with color-coded priorities
+- **Fixed:** Table search persistence, Gantt scrolling, and date picker overlap
+- **Fixed:** Timesheet reports, missing board descriptions, and task lookup errors
+- **Fixed:** Tightened security for public boards and API responses
+- **Fixed:** Other security issues
+- Other improvements and bug fixes
+
+## 2.0.15 (Date: September 9, 2026)
+
+- **Improvement**: Refined priority controls and task card UI
+- **Improvement**: Smoother task description editing
+- **Improvement**: Updated translations
+- **Improvement**: Faster board exports
+- **Fixed**: Task description formatting and links when creating and editing tasks
+- **Fixed**: Duplicate subtask creation through the AI assistant
+- **Fixed**: Subtask and time-tracking cleanup issues
+- **Fixed**: Attachment popover placement, folder title overflow, and template preview contrast in dark mode
+- **Fixed**: Board background cleanup and board-scoped image file resolution
+- **Fixed**: Member authorization issue
+- **Fixed**: Other security issues
+
+## 2.0.12 (Date: August 20, 2026)
+
+- **Improvement**: Compatibility with WordPress 7.1
+- **Improvement**: Comments, replies, attached images, and time-tracking entries now move with tasks transferred to another board
+- **Improvement**: Refined the task label interface with a shared label popover
+- **Improvement**: Role- and policy-based security improved
+- **Fixed**: Resolved formatting issues in task descriptions, including those created through Fluent Forms
+- **Fixed**: Some Security Issues
+- Other improvements and bug fixes
+
+## 2.0.6 (Date: August 12, 2026)
+
+- Improvement: Better RTL support across dashboards, boards, tasks, comments, subtasks, activities, settings, reports
+- Improvement: Responsive admin layouts
+- Improvement: Newly created tasks now open in the task modal
+- Improvement: Subtask Group UX updated
+- Improvement: Member Role Edit Experience Improved
+- Fixed: Conflicting theme assets loading in the frontend portal
+- Fixed: Subtask due date and assignee were not saving properly during creation
+- Fixed: Time tracking estimate popover issue
+- Fixed: Incorrect timezone in task reminder alerts
+- Fixed: Image and emoji issue in task description
+- Other improvements and bug fixes
+
+## 2.0.4 (Date: August 3, 2026)
+
+- **Fixed**: Subtask Group bug
+- **Fixed**: Date change on smaller screens issue
+- **Fixed**: My task section archived task issue
+- **Fixed**: Hello Elementor theme issue
+- **Fixed**: TimeTracking Issues
+- Other improvements & bug fixes
+
+## 2.0.1 (Date: July 31, 2026)
+
+- **Improvement**: Improved Change Stage performance
+- **Improvement**: Improved Settings, Reports, and Dark Mode UI
+- **Fixed**: Removed unnecessary notifications for Task description changes
+- **Fixed**: Subtask layout and Task Modal breadcrumb issues
+- **Fixed**: Other UI issues
+- Other improvements & bug fixes
+
 ## 2.0 (Date: July 30, 2026)
 
 - **New:** Completely new UI/UX synced with Fluent System
