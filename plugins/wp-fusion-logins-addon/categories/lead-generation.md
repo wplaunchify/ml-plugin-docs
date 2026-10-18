@@ -288,7 +288,7 @@ Beneath this is a list of all the available fields in your CRM. For each field y
 
 ### Overview
 
-WP Fusion extends [Convert Pro](https://www.convertpro.net/) to allow you to target call-to-actions based on a logged-in user’s tags in your CRM.
+WP Fusion extends [Convert Pro](https://wplicensepro.com/product/convert-pro/) to allow you to target call-to-actions based on a logged-in user’s tags in your CRM.
 
 #### Setup
 

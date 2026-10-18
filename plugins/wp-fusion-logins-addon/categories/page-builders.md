@@ -353,17 +353,37 @@ WP Fusion includes one filter for Elementor which allows you to create more adva
 
 ### Overview
 
-WP Fusion lets you control the visibility of Divi modules based on a logged-in user’s CRM tags.
+WP Fusion lets you control the visibility of Divi modules, rows and sections based on a logged-in user’s CRM tags.
 
-When editing a module, select the Advanced tab, and scroll down to the Visibility section.
+**Requires Divi 5 and a version of WP Fusion newer than 3.48.0.** If your site still uses Divi 4, see the Divi 4 section below.
 
-![user interface of a call to action settings menu. it includes options for content, design, and advanced settings. the required infusionsoft tags are member, active subscription, and the excluded tag is payment failed.](https://wpfusion.com/wp-content/uploads/2018/05/divi-visibility-settings-775x1024.jpg)
+In the Visual Builder, every module except child modules (such as accordion items) has a WP Fusion group under **Advanced » WP Fusion**.
 
-There are two settings:
+![Divi 5 Visual Builder Text module, Advanced tab, WP Fusion group with Required ActiveCampaign Tags (Any), (All) and (Not) pickers showing selected tags as chips](https://wpfusion.com/wp-content/uploads/2026/10/Divi_5_-_Module_Advanced_WP_Fusion_Settings-scaled.png)
 
-- **Required tags (any):**You can enter a comma-separated list of tag names or tag IDs. The user must have at least one of the listed tags to see the module.
-- **Required tags (all):**The user must have *all* of the tags listed here to see the module.
-- **Required tags (not):**If the user has *any* of the tags listed here, the module will be hidden.
+There are three tag pickers, labeled with the name of your CRM (for example *Required ActiveCampaign Tags (Any)*):
+
+- **Required {CRM} tags (any):** The user must have at least one of the selected tags to see the module.
+- **Required {CRM} tags (all):** The user must have *all* of the selected tags to see the module.
+- **Required {CRM} tags (not):** If the user has *any* of the selected tags, the module will be hidden.
+
+Each picker lists the tags from your CRM and has a search box. Selected tags appear as chips that you can remove with the × on each chip.
+
+#### Sections and rows
+
+Sections and rows work the same way. Restricting a section hides everything inside it.
+
+![Divi 5 Visual Builder Section settings, Advanced tab, WP Fusion group with the three required tag pickers and a field description](https://wpfusion.com/wp-content/uploads/2026/10/Divi_5_-_Section_Advanced_WP_Fusion_Settings-scaled.png)
+
+Here is a page set up with the tag pickers, shown to a visitor with the *Paying Member* and *Premium Membership* tags (left) and to a logged-out visitor (right):
+
+![Divi 5 page front end: a visitor tagged Paying Member and Premium Membership sees the restricted modules, a logged-out visitor sees only the public heading](https://wpfusion.com/wp-content/uploads/2026/10/Divi_5_-_Frontend_Member_vs_Logged_Out-scaled.png)
+
+#### Administrators
+
+By default, users with an Administrator account can see all Divi modules regardless of their tags. This is controlled by the **Exclude Administrators** setting in Settings » WP Fusion » General. Turn it off to test your rules while logged in as an Administrator.
+
+![WP Fusion settings showing the Exclude Administrators checkbox enabled](https://wpfusion.com/wp-content/uploads/2026/10/Divi_-_Exclude_Administrators.png)
 
 #### Advanced method
 
@@ -380,17 +400,17 @@ For example:
 ```
 wpf_has_tag( 'Active Subscriber' )
 ```
-- Require both the *Active Subscriber* and *Gold Member* tags to view the module:
+- Require both the *Active Subscriber* and *Gold Member* tags to view the module:
 
 ```
 wpf_has_tag( 'Active Subscriber' ) && wpf_has_tag( 'Gold Member' )
 ```
-- Require either the *Active Subscriber* or *Gold Member* tags:
+- Require either the *Active Subscriber* or *Gold Member* tags:
 
 ```
 wpf_has_tag( 'Active Subscriber' ) || wpf_has_tag( 'Gold Member' )
 ```
-- Only show the module if the user is logged in and does *not*have the tag *Payment Failed:*
+- Only show the module if the user is logged in and does *not*have the tag *Payment Failed:*
 
 ```
 ! wpf_has_tag( 'Payment Failed' )
@@ -409,6 +429,134 @@ Then when another user views the page and has access to the protected elements, 
 ![](https://wpfusion.com/wp-content/uploads/2018/05/divi-disable-dynamic-css-1024x633.jpg)
 
 If you have issues with irregular styling using WP Fusion and Divi, it’s recommended to disable the Dynamic Module Framework and Dynamic CSS features in the Divi general settings.
+
+### Divi 4
+
+When editing a module in Divi 4, select the Advanced tab, and scroll down to the Visibility section.
+
+![user interface of a call to action settings menu. it includes options for content, design, and advanced settings. the required infusionsoft tags are member, active subscription, and the excluded tag is payment failed.](https://wpfusion.com/wp-content/uploads/2018/05/divi-visibility-settings-775x1024.jpg)
+
+There are three settings:
+
+- **Required tags (any):**You can enter a comma-separated list of tag names or tag IDs. The user must have at least one of the listed tags to see the module.
+- **Required tags (all):**The user must have *all* of the tags listed here to see the module.
+- **Required tags (not):**If the user has *any* of the tags listed here, the module will be hidden.
+
+#### Upgrading to Divi 5
+
+When you convert a Divi 4 page to Divi 5, with the **Divi 5 Migrator** or by opening it in the Divi 5 Visual Builder, WP Fusion carries each module’s settings over into its Advanced » WP Fusion group. Your rules are kept exactly as you wrote them, the tag names show up in the pickers as chips, and visitors see the same thing as before.
+
+![Divi 5 Visual Builder Text module converted from Divi 4, Advanced tab, WP Fusion group with the Divi 4 tag names Paying Member and Premium Membership shown as chips in the Required Tags (All) picker](https://wpfusion.com/wp-content/uploads/2026/10/Divi_5_-_Converted_Module_WP_Fusion_Settings.png)
+
+A few things to know:
+
+- **Child modules.** Settings on child modules, such as accordion items, are carried over and still enforced on the front end. Because child modules have no WP Fusion group in the Visual Builder, you can’t see or edit those settings there.
+- **Presets.** WP Fusion settings saved inside Divi 4 presets are not migrated.
+- **Modules with other third-party settings.** If a module also has a setting from another plugin that Divi 5 doesn’t recognize, Divi keeps that module as a legacy shortcode module. WP Fusion’s Divi 4 visibility rules are still enforced on it.
+
+**Note:** In the Visual Builder, a module converted from Divi 4 that carries WP Fusion restrictions can look empty to an editor who doesn’t have the required tags (or to an Administrator when Exclude Administrators is off). The module has not been deleted and still displays for visitors who qualify, so don’t delete modules that look empty.
+
+### Developer Resources
+
+#### wpf_divi_can_access
+
+Filters whether the current user can see a Divi module, after WP Fusion has evaluated the module’s tag settings (and the 
+```
+wpf_user_can_access
+```
+
+ filter). It runs for both Divi 4 and Divi 5 modules. Divi 5 support and the 
+```
+$context
+```
+
+ parameter require a version of WP Fusion newer than 3.48.0.
+
+```
+/**
+ * Let editors always see restricted Divi modules.
+ *
+ * @param bool  $can_access Whether the user can access the module.
+ * @param array $data       The Divi 4 props, or the Divi 5 block attributes.
+ * @param array $context    Context for the module being rendered.
+ * @return bool
+ */
+function my_divi_can_access( $can_access, $data, $context ) {
+
+	if ( current_user_can( 'edit_others_posts' ) ) {
+		return true;
+	}
+
+	// $context['version'] is 4 or 5.
+	return $can_access;
+
+}
+
+add_filter( 'wpf_divi_can_access', 'my_divi_can_access', 10, 3 );
+```
+
+**Parameters:**
+
+- ```
+$can_access
+```
+
+ (bool): Whether the user can access the module.
+- ```
+$data
+```
+
+ (array): The Divi 4 module props, or the Divi 5 block attributes.
+- ```
+$context
+```
+
+ (array): Keys 
+```
+version
+```
+
+ (
+```
+4
+```
+
+ or 
+```
+5
+```
+
+), 
+```
+props
+```
+
+ (the Divi 4 props, 
+```
+null
+```
+
+ on Divi 5), 
+```
+attrs
+```
+
+ (the module attributes) and 
+```
+block
+```
+
+ (the 
+```
+WP_Block
+```
+
+ on Divi 5, 
+```
+null
+```
+
+ on Divi 4).
 
 ---
 
