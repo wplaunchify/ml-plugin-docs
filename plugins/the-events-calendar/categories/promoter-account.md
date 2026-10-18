@@ -26,19 +26,7 @@ If you change your email address here, note that this also changes the email add
 
 ## Data Requests and Account Deletion
 
-The Events Calendar does not offer a self-service account deletion option inside Promoter. To request export or deletion of your account data, use the [data request form](https://theeventscalendar.com/data-request/). The sections below explain what data is held, how it is handled, and your rights under GDPR.
-
-### How to Reach The Events Calendar
-
-The Events Calendar is an American company, formed in 2007. Our postal address is:
-
-2703 Ena Drive
-Lansing, MI 48917
-USA
-
-### Contract Terms
-
-When subscribed to our products or services, you are on a monthly or annual renewal [Agreement](https://theeventscalendar.com/terms/) and can cancel at any time.
+The Events Calendar does not offer a self-service account deletion option inside Promoter. To request export or deletion of your account data, please contact our support [here](https://software.liquidweb.com/support/?_gl=1*1odfk56*_up*MQ..*_ga*MTAyNzMwNTc2OS4xNzkyMTUzNDcx*_ga_4H92SYZK1F*czE3OTIxNTM0NzAkbzEkZzAkdDE3OTIxNTM0NzAkajYwJGwwJGgyOTk5NjQ4NjI.). The sections below explain what data is held, how it is handled, and your rights under GDPR.
 
 ### What Personal Data Is Held
 
@@ -58,7 +46,7 @@ We only retain records necessary to provide you with our products and services. 
 
 ### Exporting or Deleting Your Data
 
-You can submit a request to export or delete your data at any time using our [data request form](https://theeventscalendar.com/data-request/). Once data has been deleted and/or anonymized, this action cannot be reversed.
+You can submit a request to export or delete your data at any time by contacting our support here. Once data has been deleted and/or anonymized, this action cannot be reversed.
 
 ### Where Data Is Stored and Processed
 

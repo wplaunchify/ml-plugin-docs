@@ -738,8 +738,6 @@ The above snippets will generate an empty display on upcoming events to your vie
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-4-2.jpg)
 
-In addition to the above filters, we also have an extension that includes the option to remove the “Recent Past Events” view. You can find it [here](https://theeventscalendar.com/extensions/the-events-calendar-tweaks/).
-
 ## Adding Content Above the Calendar
 
 To add custom text, HTML, or any other content above a calendar view, create a template override for the view’s top-level template file and add your content inside the main layout container.

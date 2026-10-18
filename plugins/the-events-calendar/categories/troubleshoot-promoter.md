@@ -28,11 +28,7 @@ Simply click on the “click here” link. This will take you through the Promot
 
 **Your data will not be lost in this process.**This is a completely safe procedure and all of your content — messages, lists, custom shortcuts, etc. — will be left intact in both Promoter and WordPress.
 
-Once you successfully go through the Promoter authorization process, a success message should display Promoter will continue to sync events, tickets, and attendees with WordPress.
-
-Your events, attendees and tickets will now be able to sync properly once again.
-
-If for some reason, you are still getting an alert that there is an issue, we recommend installing the [Promoter Connection Status extension](https://theeventscalendar.com/extensions/promoter-connection-status/). This will help us to troubleshoot things faster.
+Once you successfully go through the Promoter authorization process, a success message should display Promoter will continue to sync events, tickets, and attendees with WordPress. Your events, attendees and tickets will now be able to sync properly once again.
 
 You can connect to Promoter with the following server IP address:
 
@@ -147,7 +143,6 @@ test
 . See the [setup guide](https://docs.nexcess.com/software/the-events-calendar/configure-promoter/) for the full list of restrictions.
 - **WordPress account permissions.** The WordPress account used to authorize Promoter must have administrator-level permissions. See [Promoter Connection Issue](https://docs.nexcess.com/software/the-events-calendar/troubleshoot-promoter/) for re-authorization steps.
 - **Membership plugin conflicts.** Membership-type plugins can interfere with Promoter’s access to event data. [Test for conflicts](https://docs.nexcess.com/software/the-events-calendar/testing-for-conflicts/) by temporarily deactivating them.
-- **REST API disabled.** If you are using the [Events Calendar Tweaks](https://theeventscalendar.com/extensions/the-events-calendar-tweaks/) extension, confirm that the “Disable REST API for The Events Calendar” option is turned off.
 - **WordPress error logs.** Review your [WordPress error logs](https://www.wpbeginner.com/wp-tutorials/how-to-find-and-access-wordpress-error-logs-step-by-step/) for any errors related to the Promoter API that may point to the underlying cause.
 
 ### How to Manually Trigger a Sync

@@ -4,13 +4,11 @@
 
 ---
 
-## Getting started with Seating
+## Getting Started with Seating
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/getting-started-with-seating/](https://docs.nexcess.com/software/the-events-calendar/getting-started-with-seating/)
 
 Easily create interactive seating maps, leverage seat types (like VIP) to generate more revenue, and empower your attendees to select the exact seats–and experience–they’re looking for.
-
-Getting Started
 
 Learn how to get started with Seating
 

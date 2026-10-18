@@ -51,7 +51,7 @@ Because the donation form is simply a block — using either the Donation Fo
 - Use the Columns block to display the form next to event information.
 - Use the Cover block to include a background image behind the form.
 - Use the [Restrict Content](https://wordpress.org/plugins/search/restrict+content/) plugin to display the form only to logged in members. Or use [Restrict Content Pro](https://restrictcontentpro.com) to show the form to a specific type of member. Or add two forms to the event and display one form to certain members and the other form to everyone else.
-- [Create an Organizer](https://docs.nexcess.com/software/the-events-calendar/venues-organizers/) for the event and display the form next to it as a way to support a specific person. Use our free [Custom Event Labeler extension](https://theeventscalendar.com/extensions/change-labels-events-venues-organizers/) to rename “Organizer” too something else, like “Artist.”
+- [Create an Organizer](https://docs.nexcess.com/software/the-events-calendar/venues-organizers/) for the event and display the form next to it as a way to support a specific person.
 
 For even more possibilities, consider [upgrading to a paid version of Give](https://givewp.com/pricing/). This gives you access to the Give add-on library to enhance your donation forms with things like recurring donations, custom form fields, PDF receipts, and more.
 

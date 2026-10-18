@@ -53,7 +53,6 @@ Some plugin and theme combinations cause WordPress to search for a media attachm
 
 ```
 <?php
-
 /*
  * Possible solution for Single Event page 404 errors where the WP_Query has an attachment set
  * IMPORTANT: Flush permalinks after pasting this code: http://tri.be/support/documentation/troubleshooting-404-errors/
@@ -65,7 +64,6 @@ function tribe_attachment_404_fix () {
 		add_action( 'init', array( Tribe__Events__Main::instance(), 'init' ), 1 );
 	}
 }
-
 add_action( 'after_setup_theme', 'tribe_attachment_404_fix' );
 ```
 
@@ -122,8 +120,6 @@ noindex
 
 For **hard 404s on empty day view pages**: if these are causing a specific SEO concern, you can force day view pages to return a 200 status code instead by adding this snippet to your child theme’s functions.php:
 
-php
-
 ```
 add_action( 'wp', 'tribe_no_event_day_404s' );
 function tribe_no_event_day_404s() {
@@ -133,30 +129,6 @@ function tribe_no_event_day_404s() {
 ```
 
 Note that this forces a 200 response for all event queries without matching events, not just day views. Before using it, consider whether the 404s are actually affecting your search rankings — check your traffic metrics and search referral data first. A long list of 404 flags in Search Console looks alarming, but its real-world impact on rankings is often minimal. Search engines are generally good at distinguishing between broken pages and intentionally empty archive pages.
-
-## Fixing 404 Errors After Importing with WP All Import
-
-If your 404 errors appeared specifically after importing events using WP All Import (or WP Export Pro), the cause is slightly different from a standard permalink issue. The import process doesn’t always trigger WordPress’s rewrite rule generation, so event URLs may not be properly registered after the import completes.
-
-#### 1. Install the WP All Import Add-On for The Events Calendar
-
-This is the most important step. The **WP All Import Add-On for The Events Calendar** is a dedicated extension that bridges All Import Pro with TEC’s data model. Without it, event metadata, slugs, and internal URL rewrites may not map correctly during import. Install and activate it, then re-run your import following the instructions on the extension’s page. This alone resolves the 404 issue in most cases.
-
-#### 2. Flush Your Permalinks
-
-After the import, go to **Settings → Permalinks** and click **Save Changes** without making any changes. This forces WordPress to regenerate its rewrite rules for the newly imported events.
-
-#### 3. Re-Save Affected Events
-
-For any events still returning 404 after flushing permalinks, open each one in the editor, make a minor change, and click **Update**. This triggers the slug and rewrite metadata regeneration that the import may have left incomplete.
-
-#### 4. Exclude Calendar Assets from Caching and Minification
-
-If you’re using a caching plugin or CDN, make sure TEC’s JavaScript and CSS files are excluded from minification. Re-minifying assets that are already minified can introduce conflicts that surface as broken pages. See our [caching best practices guide](https://docs.nexcess.com/software/the-events-calendar/calendar-caching/) for details.
-
-👋 WP All Import is one of several ways to import events. The Events Calendar also has a built-in [CSV importer](https://docs.nexcess.com/software/the-events-calendar/import-events-csv/) and [Event Aggregator](https://theeventscalendar.com/products/event-aggregator/) for importing from iCal feeds, Google Calendar, Meetup, Eventbrite, and other sources.
-
----
 
 ---
 

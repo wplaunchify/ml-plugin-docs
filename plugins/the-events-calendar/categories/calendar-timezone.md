@@ -117,10 +117,6 @@ What’s happened is as follows:
 | Site-wide | Los_Angeles | UTC-5 | Screenshot |
 | Local Event | Los_Angeles | UTC-5 | Screenshot |
 
-#### Resources
-
-- Something that may help is our free Extension for The Events Calendar, [Allow Only Location-Based Time Zones for Events](https://theeventscalendar.com/extensions/allow-only-location-time-zones-for-events/), to **ensure** that UTC offsets are never used in your events. This may help to reduce confusing time outputs.
-
 ## Timezones and Caching
 
 If you’re experiencing timezone issues and haven’t been able to get to the bottom of it, it’s worth noting that sometimes we see issues related to caching. This can include seeing a wrong timezone than your indicated settings, despite setting the timezone display to *site-wide*.
@@ -195,7 +191,6 @@ Below that line add the following piece of code (line included for reference):
 
 ```
 $event_id = get_the_ID();
-
 /**
  * Setting up the cookie if it doesn't exist yet and grabbing the browser time zone string.
  */
@@ -206,37 +201,27 @@ if ( ! isset( $_COOKIE['tribe_browser_time_zone'] ) ) { ?>
 		}
 	</script>
 <?php }
-
 /**
  * Calculating the event start time and time zone based on the browser time zone of the visitor.
  */
-
 // Setting default values in case the cookie doesn't exist.
 $user_time_output = "<small>Your time zone couldn't be detected. Try <a href=''>reloading</a> the page.</small>";
 $browser_time_zone_string = "not detected";
-
 if ( isset( $_COOKIE['tribe_browser_time_zone'] ) ) {
 	// Grab the time zone string from the cookie.
 	$browser_time_zone_string = $_COOKIE['tribe_browser_time_zone'];
-
 	// Grab the event time zone string.
 	$event_time_zone_string = Tribe__Events__Timezones::get_event_timezone_string( $event_id );
-
 	// Grab the event start date in UTC time from the database.
 	$event_start_utc = tribe_get_event_meta( $event_id, '_EventStartDateUTC', true );
-
 	// Set up the DateTime object.
 	$event_start_date_in_utc_timezone = new DateTime( $event_start_utc, new DateTimeZone( 'UTC' ) );
-
 	// Convert the UTC DateTime object into the browser time zone.
 	$event_start_date_in_browser_timezone = $event_start_date_in_utc_timezone->setTimezone( new DateTimeZone( $browser_time_zone_string ) )->format( get_option( 'time_format' ) );
-
 	// Grab the time zone abbreviation based on the browser time zone string.
 	$browser_time_zone_abbreviation = Tribe__Timezones::abbr( 'now', $browser_time_zone_string );
-
 	// Compile the output string with time zone abbreviation.
 	$user_time_output = $event_start_date_in_browser_timezone . " " . $browser_time_zone_abbreviation;
-
 	// Compile the string of the time zone for the tooltip.
 	$browser_time_zone_string .= ' detected';
 }
@@ -258,7 +243,6 @@ Add the following below the line (line included for reference):
 
 ```
 <?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
-
 <?php
 /**
  * Adding the event start time in the visitor's time zone.
@@ -371,7 +355,6 @@ Here is the code for the updated data.php file that would accomplish that:
  * @version 5.1.1
  */
 use Tribe__Date_Utils as Dates;
-
 $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
 ?>
 <div class="tribe-events-calendar-list__event-datetime-wrapper tribe-common-b2">
@@ -384,7 +367,6 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
     <?php
     // Use the event ID from the event object.
     $event_id = $event->ID;
-
     /**
      * Check for the visitor's time zone cookie.
      * (Remember: if you haven't implemented a cookie consent mechanism, you should do so.)
@@ -396,11 +378,9 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
             }
         </script>
     <?php }
-
     // Set up a default message in case the cookie is not set.
     $user_time_output = "<small>Your time zone couldn't be detected. Try <a href=''>reloading</a> the page.</small>";
     $browser_time_zone_string = "not detected";
-
     if ( isset( $_COOKIE['tribe_browser_time_zone'] ) ) {
         // Retrieve the visitor's time zone from the cookie.
         $browser_time_zone_string = $_COOKIE['tribe_browser_time_zone'];

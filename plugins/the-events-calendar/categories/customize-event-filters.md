@@ -227,8 +227,6 @@ You can find the filters in your plugins directory at:
 
 The code I’ll show in this tutorial will live in a dedicated plugin.
 
-You can also use [this handy extension](https://theeventscalendar.com/extensions/creating-a-custom-filter-for-filter-bar/) to get you started.
-
 Since we’ll be adding a custom filter that is similar to the existing Time of Day filter, I’m going to grab that one.
 
 To keep the code organized I’ve created a main plugin file, 
@@ -270,13 +268,11 @@ So far, my class looks like this:
 
 ```
 <?php
-
 /**
  * Customized version of the Time of Day filter that allows selecting by specific hour ranges in the afternoon.
  *
  * New filter available in WP-Admin > Events > Settings > Filters
  */
-
 /**
  * Class Time_Of_Day_Custom_Filter
  */
@@ -289,7 +285,6 @@ class Time_Of_Day_Custom_Filter extends Tribe__Events__Filterbar__Filter {
 	 * @var string
 	 */
 	public $type = 'checkbox';
-
 }
 ```
 
@@ -344,16 +339,13 @@ protected function get_values() {
                 '22-23' => __( '10:00 - 11:00 pm', 'tribe-events-filter-view' ),
                 '23-24' => __( '11:00 - 12:00 pm', 'tribe-events-filter-view' ),
         ];
-
         $time_of_day_values = [];
-
         foreach ( $time_of_day_array as $value => $name ) {
                 $time_of_day_values[] = [
                         'name' => $name,
                         'value' => $value,
                 ];
         }
-
         return $time_of_day_values;
 }
 ```
@@ -391,7 +383,6 @@ setup_join_clause
 protected $alias = '';
 protected $tod_start_alias = '';
 protected $tod_duration_alias = '';
-
 /**
  * Sets up the filter JOIN clause.
  *
@@ -403,23 +394,17 @@ protected function setup_join_clause() {
 	if ( function_exists( 'posts_join' ) ) {
 			add_filter( 'posts_join', array( 'Tribe__Events__Query', 'posts_join' ), 10, 2 );
 	}
-
 	global $wpdb;
 	$values = $this->currentValue;
-
 	$all_day_index = array_search( 'allday', $values );
 	if ( false !== $all_day_index ) {
 		unset( $values[ $all_day_index ] );
 	}
-
 	$this->alias = 'custom_all_day_' . uniqid();
 	$this->tod_start_alias = 'tod_start_date_' . uniqid();
 	$this->tod_duration_alias = 'tod_duration_' . uniqid();
-
 	$joinType = empty( $all_day_index ) ? 'LEFT' : 'INNER';
-
 	$this->joinClause .= " {$joinType} JOIN {$wpdb->postmeta} AS {$this->alias} ON ({$wpdb->posts}.ID = {$this->alias}.post_id AND {$this->alias}.meta_key = '_EventAllDay')";
-
 	if ( ! empty( $values ) ) { // values other than allday
 		$this->joinClause .= " INNER JOIN {$wpdb->postmeta} AS {$this->tod_start_alias} ON ({$wpdb->posts}.ID = {$this->tod_start_alias}.post_id AND {$this->tod_start_alias}.meta_key = '_EventStartDate')";
 		$this->joinClause .= " INNER JOIN {$wpdb->postmeta} AS {$this->tod_duration_alias} ON ({$wpdb->posts}.ID = {$this->tod_duration_alias}.post_id AND {$this->tod_duration_alias}.meta_key = '_EventDuration')";
@@ -446,19 +431,16 @@ setup_where_clause()
  protected function setup_where_clause() {
 	global $wpdb;
 	$clauses = [];
-
 	if ( in_array( 'allday', $this->currentValue, true ) ) {
 		$clauses[] = "( {$this->alias}.meta_value = 'yes' )";
 	} else {
 		$this->whereClause = " AND ( {$this->alias}.meta_id IS NULL ) ";
 	}
-
 	foreach ( $this->currentValue as $value ) {
 		if ( 'allday' === $value ) {
 			// Handled earlier.
 			continue;
 		}
-
 		list( $start_hour, $end_hour ) = explode( '-', $value );
 		$start          = $start_hour . ':00:00';
 		$end              = $end_hour . ':00:00';
@@ -469,9 +451,7 @@ setup_where_clause()
 			$end
 		);
 	}
-
 	$clauses = implode( ' OR ', $clauses );
-
 	$this->whereClause .= " AND ({$clauses})";
 }
 ```
@@ -490,7 +470,6 @@ tribe-ext-custom-filter.php
  *
  * Description:              Create a custom filter for Filter Bar that filters displayed events down by time of day.
  */
-
 /**
  * Includes the custom filter class and creates an instance of it.
  */
@@ -498,9 +477,7 @@ function tec_kb_create_filter() {
 	if ( ! class_exists( 'Tribe__Events__Filterbar__Filter' ) ) {
 		return;
 	}
-
 	include_once __DIR__ . '/src/Time_Of_Day_Custom_Filter.php';
-
 	new Time_Of_Day_Custom_Filter(
 	__( 'Time Custom', 'tribe-events-filter-view' ),
 	'filterbar_time_of_day_custom'
@@ -531,17 +508,13 @@ function tec_kb_filter_map( array $map ) {
 		// This would not make much sense, but let's be cautious.
 		return $map;
 	}
-
 	// Include the filter class.
 	include_once __DIR__ . '/src/Time_Of_Day_Custom_Filter.php';
-
 	// Add the filter class to our filters map.
 	$map['filterbar_time_of_day_custom'] = 'Time_Of_Day_Custom_Filter';
-
 	// Return the modified $map.
 	return $map;
 }
-
 /**
  * Filters the Context locations to let the Context know how to fetch the value of the filter from a request.
  *
@@ -560,11 +533,9 @@ function tec_kb_filter_context_locations( array $locations ) {
 					Tribe__Context::REQUEST_VAR => [ 'tribe_filterbar_time_of_day_custom' ]
 				], 
 			];
-
 	// Return the modified $locations.
 	return $locations;
 }
-
 // Make it work with calendar views.
 add_filter( 'tribe_context_locations', 'tec_kb_filter_context_locations' );
 add_filter( 'tribe_events_filter_bar_context_to_filter_map', 'tec_kb_filter_map' );
@@ -588,15 +559,12 @@ TribeEventsFilterbarViewsV2FiltersContext_Filter
 
 ```
 <?php
-
 /**
  * Customized version of the Time of Day filter that allows selecting by specific hour ranges in the afternoon.
  *
  * New filter available in WP-Admin > Events > Settings > Filters
  */
-
 use TribeEventsFilterbarViewsV2FiltersContext_Filter;
-
 /**
  * Class Time_Of_Day_Custom_Filter
  */
@@ -612,7 +580,7 @@ Our final
 tribe-ext-custom-filter.php
 ```
 
- code looks like this (If you download the extension, there is more code in there, but this is the part that matters for this tutorial):
+ code looks like this:
 
 ```
 <?php
@@ -620,7 +588,6 @@ tribe-ext-custom-filter.php
  * Plugin Name:              Filter Bar Extension: Custom Time of Day Filter
  * Description:              Create a custom filter for Filter Bar that filters displayed events down by time of day.
  */
-
 /**
  * Filters the map of filters available on the front-end to include the custom one.
  *
@@ -633,17 +600,13 @@ function tec_kb_filter_map( array $map ) {
 	// This would not make much sense, but let's be cautious.
 	return $map;
 	}
-
 	// Include the filter class.
 	include_once __DIR__ . '/src/Time_Of_Day_Custom_Filter.php';
-
 	// Add the filter class to our filters map.
 	$map['filterbar_time_of_day_custom'] = 'Time_Of_Day_Custom_Filter';
-
 	// Return the modified $map.
 	return $map;
 }
-
 /**
  * Filters the Context locations to let the Context know how to fetch the value of the filter from a request.
  *
@@ -662,11 +625,9 @@ function tec_kb_filter_context_locations( array $locations ) {
 					Tribe__Context::REQUEST_VAR => [ 'tribe_filterbar_time_of_day_custom' ]
 				], 
 			];
-
 	// Return the modified $locations.
 	return $locations;
 }
-
 /**
  * Includes the custom filter class and creates an instance of it.
  */
@@ -674,15 +635,12 @@ function tec_kb_create_filter() {
 	if ( ! class_exists( 'Tribe__Events__Filterbar__Filter' ) ) {
 		return;
 	}
-
 	include_once __DIR__ . '/src/Time_Of_Day_Custom_Filter.php';
-
 	new Time_Of_Day_Custom_Filter(
 	__( 'Time Custom', 'tribe-events-filter-view' ),
 	'filterbar_time_of_day_custom'
 	);
 }
-
 // Make it work with calendar views.
 add_filter( 'tribe_context_locations', 'tec_kb_filter_context_locations' );
 add_filter( 'tribe_events_filter_bar_context_to_filter_map', 'tec_kb_filter_map' );
@@ -697,22 +655,18 @@ Time_Of_Day_Custom_Filter.php
 
 ```
 <?php
-
 /**
  * Customized version of the Time of Day filter that allows selecting by specific hour ranges in the afternoon.
  *
  * New filter available in WP-Admin > Events > Settings > Filters
  */
-
 use TribeEventsFilterbarViewsV2FiltersContext_Filter;
-
 /**
  * Class Time_Of_Day_Custom_Filter
  */
 class Time_Of_Day_Custom_Filter extends Tribe__Events__Filterbar__Filter {
 	// Use the trait required for filters to correctly work with Views V2 code.
 	use Context_Filter;
-
 	/**
 	 * The type of this filter.
 	 *
@@ -721,12 +675,10 @@ class Time_Of_Day_Custom_Filter extends Tribe__Events__Filterbar__Filter {
 	 * @var string
 	 */
 	public $type = 'checkbox';
-
 	// These are needed to make the join aliases unique
 	protected $alias = '';
 	protected $tod_start_alias = '';
 	protected $tod_duration_alias = '';
-
 	/**
 	 * Returns the available values this filter will display on the front end, when the user clicks on it.
 	 *
@@ -749,19 +701,15 @@ class Time_Of_Day_Custom_Filter extends Tribe__Events__Filterbar__Filter {
 			'22-23' => __( '10:00 - 11:00 pm', 'tribe-events-filter-view' ),
 			'23-24' => __( '11:00 - 12:00 pm', 'tribe-events-filter-view' ),
 		];
-
 		$time_of_day_values = [];
-
 		foreach ( $time_of_day_array as $value => $name ) {
 			$time_of_day_values[] = [
 				'name' => $name,
 				'value' => $value,
 			];
 		}
-
 		return $time_of_day_values;
 	}
-
 	/**
 	 * Sets up the filter JOIN clause.
 	 *
@@ -773,29 +721,22 @@ class Time_Of_Day_Custom_Filter extends Tribe__Events__Filterbar__Filter {
 		if ( function_exists( 'posts_join' ) ) {
 			add_filter( 'posts_join', array( 'Tribe__Events__Query', 'posts_join' ), 10, 2 );
 		}
-
 		global $wpdb;
 		$values = $this->currentValue;
-
 		$all_day_index = array_search( 'allday', $values );
 		if ( false !== $all_day_index ) {
 			unset( $values[ $all_day_index ] );
 		}
-
 		$this->alias = 'custom_all_day_' . uniqid();
 		$this->tod_start_alias = 'tod_start_date_' . uniqid();
 		$this->tod_duration_alias = 'tod_duration_' . uniqid();
-
 		$joinType = empty( $all_day_index ) ? 'LEFT' : 'INNER';
-
 		$this->joinClause .= " {$joinType} JOIN {$wpdb->postmeta} AS {$this->alias} ON ({$wpdb->posts}.ID = {$this->alias}.post_id AND {$this->alias}.meta_key = '_EventAllDay')";
-
 		if ( ! empty( $values ) ) { // values other than allday
 			$this->joinClause .= " INNER JOIN {$wpdb->postmeta} AS {$this->tod_start_alias} ON ({$wpdb->posts}.ID = {$this->tod_start_alias}.post_id AND {$this->tod_start_alias}.meta_key = '_EventStartDate')";
 			$this->joinClause .= " INNER JOIN {$wpdb->postmeta} AS {$this->tod_duration_alias} ON ({$wpdb->posts}.ID = {$this->tod_duration_alias}.post_id AND {$this->tod_duration_alias}.meta_key = '_EventDuration')";
 		}
 	}
-
 	/**
 	 * Sets up the filter WHERE clause.
 	 *
@@ -807,19 +748,16 @@ class Time_Of_Day_Custom_Filter extends Tribe__Events__Filterbar__Filter {
 	protected function setup_where_clause() {
 		global $wpdb;
 		$clauses = [];
-
 		if ( in_array( 'allday', $this->currentValue, true ) ) {
 			$clauses[] = "( {$this->alias}.meta_value = 'yes' )";
 		} else {
 			$this->whereClause = " AND ( {$this->alias}.meta_id IS NULL ) ";
 		}
-
 		foreach ( $this->currentValue as $value ) {
 			if ( 'allday' === $value ) {
 				// Handled earlier.
 				continue;
 			}
-
 			list( $start_hour, $end_hour ) = explode( '-', $value );
 			$start          = $start_hour . ':00:00';
 			$end              = $end_hour . ':00:00';
@@ -830,9 +768,7 @@ class Time_Of_Day_Custom_Filter extends Tribe__Events__Filterbar__Filter {
 				$end
 			);
 		}
-
 		$clauses = implode( ' OR ', $clauses );
-
 		$this->whereClause .= " AND ({$clauses})";
 	}
 }

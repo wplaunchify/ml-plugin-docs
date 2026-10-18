@@ -2,8 +2,8 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-10-11T06:40:28.886Z",
-  "total_pages": 331,
+  "last_scraped": "2026-10-18T06:34:43.717Z",
+  "total_pages": 320,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -29,19 +29,6 @@
         {
           "title": "Accessing and Installing Older Plugin Versions",
           "url": "https://docs.nexcess.com/software/the-events-calendar/accessing-older-plugin-versions/"
-        }
-      ]
-    },
-    {
-      "title": "Accessing Support",
-      "slug": "accessing-support",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/accessing-support/",
-      "file": "categories/accessing-support.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Accessing Support",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/accessing-support/"
         }
       ]
     },
@@ -536,19 +523,6 @@
         {
           "title": "Configuring The Events Calendar With Constants",
           "url": "https://docs.nexcess.com/software/the-events-calendar/constants/"
-        }
-      ]
-    },
-    {
-      "title": "Core",
-      "slug": "core",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/core/",
-      "file": "categories/core.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Do You Provide Discounts if I Purchase Multiple Products?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/core/bundle-discounts-legacy/"
         }
       ]
     },
@@ -1346,19 +1320,6 @@
       ]
     },
     {
-      "title": "Do You Have A Demo Examples I Can See Or Trial Licenses",
-      "slug": "do-you-have-a-demo-examples-i-can-see-or-trial-licenses",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/do-you-have-a-demo-examples-i-can-see-or-trial-licenses/",
-      "file": "categories/do-you-have-a-demo-examples-i-can-see-or-trial-licenses.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Can I Try the Plugins Before Buying Them?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/do-you-have-a-demo-examples-i-can-see-or-trial-licenses/"
-        }
-      ]
-    },
-    {
       "title": "Downgrading Wordpress",
       "slug": "downgrading-wordpress",
       "url": "https://docs.nexcess.com/software/the-events-calendar/downgrading-wordpress/",
@@ -1394,19 +1355,6 @@
         {
           "title": "How to Duplicate Events",
           "url": "https://docs.nexcess.com/software/the-events-calendar/duplicate-events/"
-        }
-      ]
-    },
-    {
-      "title": "Ecommerce",
-      "slug": "ecommerce",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/ecommerce/",
-      "file": "categories/ecommerce.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Choosing an Ecommerce Solution for Events Tickets",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/ecommerce/"
         }
       ]
     },
@@ -2159,7 +2107,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Getting started with Seating",
+          "title": "Getting Started with Seating",
           "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-seating/"
         }
       ]
@@ -2308,19 +2256,6 @@
       ]
     },
     {
-      "title": "How To Enable Debugging In Wordpress",
-      "slug": "how-to-enable-debugging-in-wordpress",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-enable-debugging-in-wordpress/",
-      "file": "categories/how-to-enable-debugging-in-wordpress.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Enable Debugging in WordPress",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-enable-debugging-in-wordpress/"
-        }
-      ]
-    },
-    {
       "title": "How To Find And Share Slow Database Queries In Wordpress",
       "slug": "how-to-find-and-share-slow-database-queries-in-wordpress",
       "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-find-and-share-slow-database-queries-in-wordpress/",
@@ -2330,19 +2265,6 @@
         {
           "title": "How to find and share slow database queries in WordPress",
           "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-find-and-share-slow-database-queries-in-wordpress/"
-        }
-      ]
-    },
-    {
-      "title": "How To Fix Common Wordpress Database Connection Errors",
-      "slug": "how-to-fix-common-wordpress-database-connection-errors",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-fix-common-wordpress-database-connection-errors/",
-      "file": "categories/how-to-fix-common-wordpress-database-connection-errors.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Fix Common WordPress Database Connection Errors",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-fix-common-wordpress-database-connection-errors/"
         }
       ]
     },
@@ -2369,19 +2291,6 @@
         {
           "title": "How to Get the Fastest Support",
           "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-get-the-fastest-support/"
-        }
-      ]
-    },
-    {
-      "title": "How To Install An Extension",
-      "slug": "how-to-install-an-extension",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-install-an-extension/",
-      "file": "categories/how-to-install-an-extension.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Using Plugin Extensions",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-install-an-extension/"
         }
       ]
     },
@@ -2828,32 +2737,6 @@
       ]
     },
     {
-      "title": "Pre Sales Questions",
-      "slug": "pre-sales-questions",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/pre-sales-questions/",
-      "file": "categories/pre-sales-questions.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How Can I Ask a Question Before Making a Purchase?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/pre-sales-questions/"
-        }
-      ]
-    },
-    {
-      "title": "Priority Support Through The Tec Support Hub",
-      "slug": "priority-support-through-the-tec-support-hub",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/priority-support-through-the-tec-support-hub/",
-      "file": "categories/priority-support-through-the-tec-support-hub.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Priority support through the TEC Help Hub",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/priority-support-through-the-tec-support-hub/"
-        }
-      ]
-    },
-    {
       "title": "Promoter",
       "slug": "promoter",
       "url": "https://docs.nexcess.com/software/the-events-calendar/promoter/",
@@ -3045,19 +2928,6 @@
         {
           "title": "Creating Recurring Events",
           "url": "https://docs.nexcess.com/software/the-events-calendar/recurring-events/"
-        }
-      ]
-    },
-    {
-      "title": "Renewing An Expired License Subscription",
-      "slug": "renewing-an-expired-license-subscription",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/renewing-an-expired-license-subscription/",
-      "file": "categories/renewing-an-expired-license-subscription.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Renewing a License or Subscription",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/renewing-an-expired-license-subscription/"
         }
       ]
     },
@@ -3374,6 +3244,19 @@
       ]
     },
     {
+      "title": "Tec Core",
+      "slug": "tec-core",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/tec-core/",
+      "file": "categories/tec-core.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Do You Provide Discounts if I Purchase Multiple Products?",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/tec-core/bundle-discounts-legacy/"
+        }
+      ]
+    },
+    {
       "title": "Template Filters Hooks Actions",
       "slug": "template-filters-hooks-actions",
       "url": "https://docs.nexcess.com/software/the-events-calendar/template-filters-hooks-actions/",
@@ -3539,19 +3422,6 @@
         {
           "title": "Sell Event Tickets with Tickets Commerce",
           "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/"
-        }
-      ]
-    },
-    {
-      "title": "Tickets Hubspot",
-      "slug": "tickets-hubspot",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-hubspot/",
-      "file": "categories/tickets-hubspot.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Using Hubspot with Event Tickets",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/tickets-hubspot/"
         }
       ]
     },
@@ -4085,19 +3955,6 @@
         {
           "title": "Browser Support",
           "url": "https://docs.nexcess.com/software/the-events-calendar/what-browsers-do-you-support/"
-        }
-      ]
-    },
-    {
-      "title": "What Happens If I Cancel My Promoter Subscription",
-      "slug": "what-happens-if-i-cancel-my-promoter-subscription",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/what-happens-if-i-cancel-my-promoter-subscription/",
-      "file": "categories/what-happens-if-i-cancel-my-promoter-subscription.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "What Happens if I Cancel My Promoter Subscription?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/what-happens-if-i-cancel-my-promoter-subscription/"
         }
       ]
     },

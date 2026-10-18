@@ -23,7 +23,6 @@ A few habits go a long way toward keeping duplicates out of your calendar in the
 - **Use sources that provide stable unique identifiers.** Each event should have a unique ID, URL, or UID (for iCal feeds). If your source feed doesn’t provide stable unique IDs, duplicates become much more likely — see the next section for specifics on which sources have this problem.
 - **Stick with one source per calendar.** Import from the same feed or file consistently. Switching sources mid-stream can cause Event Aggregator to misidentify the same event coming from two places and import it twice.
 - **Don’t over-schedule imports.** Frequent runs can amplify duplicate issues if event data changes between runs. A daily or weekly schedule usually hits the right balance.
-- **Review your import settings.** If you install the [Event Aggregator: Additional Options](https://theeventscalendar.com/extensions/ea-additional-options/) extension, you’ll get an added option under **Events → Settings → Imports** for how previously imported events should be handled — overwrite, preserve, or skip.
 
 ## Why Duplicates Still Happen
 
@@ -77,16 +76,6 @@ If you’ve got a huge number of duplicate events, processing them all at once c
 6. From the Dashboard menu, click **Events**. Stay on the page until it loads, and you’ll see some duplicates moved to *Ignored* status. Reload the page and another batch will process.
 7. Refresh the page as many times as you need until the duplicate events are fully removed and you no longer see them under *Ignored*.
 8. Go back to **Snippets → All Snippets** and deactivate or delete the snippet.
-
-#### The Event Aggregator: Additional Options Extension
-
-For ongoing automation rather than one-time cleanup, the [Event Aggregator: Additional Options](https://theeventscalendar.com/extensions/ea-additional-options/) extension adds a **Delete Duplicate/Removed Events for Scheduled Imports** feature. When scheduled imports run, the extension checks for any current or future events from previous imports (from the same source). If those events aren’t present in the new import, it can take one of three actions based on your configuration:
-
-- Do not delete duplicate/removed events
-- Send them to trash
-- Permanently delete them
-
-**💡 Note:** This extension currently does not have the ability to delete upcoming events *prior* to the import running.
 
 ## When Imports Silently Skip Events
 

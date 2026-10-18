@@ -62,8 +62,6 @@ Import in this order: venues and organizers first, then events, then tickets (if
 
 By default, the “Other URL” import can pull events up to three months ahead. You can adjust this under **Events → Settings → Imports → Other URL Import Settings**.
 
-For a longer horizon, the free [Event Aggregator: Additional Options](https://theeventscalendar.com/extensions/ea-additional-options/) extension extends the “Other URL” import limit to up to 2 years in advance.
-
 ![The extended import limit setting available with the EA Additional Options extension](https://docs.nexcess.com/wp-content/uploads/2026/06/2-years.jpg)
 
 ## Setting up a Hub Site With Event Aggregator

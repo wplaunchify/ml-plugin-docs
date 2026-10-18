@@ -56,8 +56,6 @@ A common misconception is that The Events Calendar actively **pushes** events to
 
 Including past events in this sync could mean external calendars attempting to fetch **large amounts of data**, which may lead to **sync failures** or **performance issues**. To keep things running smoothly, only **current** and **upcoming events** are included by default.
 
-If you need past events in your calendar sync, you might want to explore the **Advanced iCal Export v2** extension—just keep in mind that doing so comes with some potential risks.
-
 ## Link Not Opening in the Expected Program/Service
 
 Our plugin cannot control which program opens a specific file or link on a user’s device — This behavior depends on the device, program, and individual settings. If users are relying on default apps to open those links, they typically shouldn’t encounter any issues. Here’s how you can ensure the correct program is used.

@@ -254,8 +254,6 @@ Now that the ticket has been created, we can head to the Products screen in Word
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/woo-memberships-ticket-product-options.png)This ticket can only be purchased by members of the “VIP” membership plan. There are additional settings to grant access to other content on the site if a member purchases a ticket, and to provide an exclusive discount to members.
 
-To make this integration even easier, we’ve got [a handy extension](https://theeventscalendar.com/extensions/members-only-tickets/) to help you create members-only tickets.
-
 ### Event Submissions
 
 Hey, here’s an idea: let members post events to the calendar! With our [Community Events add-on](https://theeventscalendar.com/products/community-events/) to The Events Calendar, an event submission form can be added to the front end of the website. And, since WooCommerce Memberships can give members exclusive access to any WordPress page or post, we can give exclusive access to the submission form as well.

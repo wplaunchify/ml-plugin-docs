@@ -20,7 +20,6 @@ Before jumping in, let’s consider what it is we’re looking for. If the goal 
 - Limit access to certain events and event categories to members
 - Display content on a page that is only visible to members
 - Limit who can submit events to the calendar based to members
-- Create tickets that only members can purchase (available with some integrations with [this handy extension](https://theeventscalendar.com/extensions/members-only-tickets/))
 
 There are probably other requirements we could dream up, but what we have here should account for the bulk of many community and membership sites that use calendars.
 
@@ -85,8 +84,6 @@ Another thing we can do is allow specific memberships access to certain tickets,
 This is great if you’re using Event Tickets to create and sell tickets, but what if we’re using Event Tickets Plus to make tickets with an e-commerce plugin, like WooCommerce? A ticket is a product and products are a custom post type, which means Restrict Content Pro is able to restrict access to those tickets as well. We can even set those restrictions on the product editing screen.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/rcp-woo-product-settings-1024x581-1.png)We can set not only who can *view* a ticket, but who can *purchase* it as well.
-
-And to make members-only ticket creation even easier with Restrict Content Pro, check out our [handy extension](https://theeventscalendar.com/extensions/members-only-tickets/)!
 
 #### Restrict Access to Event Submissions
 
@@ -289,8 +286,6 @@ Now that the ticket is placed between the two shortcodes, only members will see 
 Hiding tickets from non-members becomes a little easier if you’re using Event Tickets Plus with WooCommerce or Easy Digital Downloads. Tickets created with Event Tickets Plus are registered as products and those products are custom post types, and MemberPress can create rules for custom post types.
 
 ![Edit rule page](https://docs.nexcess.com/wp-content/uploads/2026/06/memberpress-rules-ticket.png)
-
-To make creating membership-only tickets even easier, you can use our [handy extension](https://theeventscalendar.com/extensions/members-only-tickets/) that integrates perfectly with MemberPress.
 
 #### Members-only Event Submissions
 

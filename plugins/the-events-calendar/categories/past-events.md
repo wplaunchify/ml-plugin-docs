@@ -34,30 +34,9 @@ If you’d like to import past events using our [Event Aggregator service](https
 
 Learn more about importing your events in [this Knowledgebase article](https://docs.nexcess.com/software/the-events-calendar/import-events/).
 
-## Hiding Past Events
-
-By default, when there are no upcoming events, The Events Calendar displays a “Recent Past Events” view to prevent an empty calendar. This feature showcases the most recent past events to keep your calendar populated.
-
-If you wish to hide past events, you can use one of the methods below:
-
-**The Events Calendar Tweaks Extension**
-
-[The Events Calendar Tweaks extension](https://theeventscalendar.com/extensions/the-events-calendar-tweaks/) offers settings to manage past events:​
-
-- **Disable “Recent Past Events”**: Prevents the display of recent past events when no upcoming events are available.​
-- **Hide Past Events in Month View**: Removes events from past days in the Month view. Note that this only affects the current month.​
-
-After installing the extension, navigate to **Events > Settings > Tweaks** to configure these options.
-
-**Remove Past Events** **Extension**
-
-To automatically trash past events after a certain period, install the [Remove Past Events Extension](https://theeventscalendar.com/extensions/remove-past-events/). This extension adds more frequency options for automatically moving past events to the trash. Go to **Events > Settings > General > Maintenance** and select the desired time frame (e.g., 15 minutes, 1 day, 1 week) for removing past events.
-
-This method helps keep your calendar clean by removing outdated events automatically.
-
 ## Showing “Sold Out” for Past Events
 
-By default, the **‘Sold out!’** message is not shown for past events. This snippet brings it back.
+This snippet changes the Ticket and RSVP displays to show “Sold Out” when an event is in the past.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-31.jpg)
 
@@ -70,41 +49,63 @@ functions.php
 
 ```
 /**
- * Change the Get Tickets on List View and Single Events
+ * Show "Sold Out" instead of the ticket message and the price for past events.
+ */
+
+/**
+ * Replaces "Tickets are no longer available" with "Sold Out".
  *
  * @param string $translation The translated text.
- * @param string $text      The text to translate.
- * @param string $domain    The domain slug of the translated text.
+ * @param string $text        The text to translate.
+ * @param string $domain      The domain slug of the translated text.
  *
  * @return string The translated text or the custom text.
  */
-  
 add_filter( 'gettext', 'tribe_change_get_tickets', 20, 4 );
-function tribe_change_get_tickets( $translation, $text, $domain) {    
-  if ( $domain != 'default'
-    && strpos( $domain, 'event-' ) !== 0
-  ) {
-    return $translation;
-  }
-  
-  $ticket_text = [
-    // Get Tickets on List View
-    '%s are no longer available'    => 'Sold Out',
-  ];
-  
-  // If we don't have replacement text, bail.
-  if ( empty( $ticket_text[ $text ] ) ) {
-    return $translation;
-  }
-  
-  return $ticket_text[ $text ];
+function tribe_change_get_tickets( $translation, $text, $domain ) {
+        if ( $domain != 'default'
+                && strpos( $domain, 'event-' ) !== 0
+        ) {
+                return $translation;
+        }
+
+        $ticket_text = [
+                '%s are no longer available' => 'Sold Out',
+        ];
+
+        if ( empty( $ticket_text[ $text ]
+                return $translation;
+        }
+
+        return $ticket_text[ $text ];
+}
+
+/**
+ * Shows "Sold Out" instead of the price fickets or an RSVP.
+ *
+ * @param string $cost    The formatted event cost.
+ * @param int    $post_id The event ID.
+ *
+ * @return string The cost or "Sold Out".
+ */
+add_filter( 'tribe_get_cost', 'tribe_past_2 );
+function tribe_past_event_sold_out_cost( $cost, $post_id ) {
+        if ( ! $cost || ! tribe_is_past_event( $post_id ) ) {
+                return $cost;
+        }
+
+        if ( ! Tribe__Tickets__Tickets::ge_id ) ) {
+                return $cost;
+        }
+
+        return 'Sold Out';
 }
 ```
 
 ### Notes
 
-- Originally written in November 2018
-- Tested with Event Tickets 4.8.4
+- Originally written in November 2018, updated October 2026
+- Tested with Event Tickets 5.30.2
 - Author: András Guseo
 
 ### Disclaimer

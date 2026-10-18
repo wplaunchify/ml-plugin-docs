@@ -70,9 +70,5 @@ That being said, here are a few resources you should find useful when using our 
 - [https://developer.wordpress.org/plugins/hooks/](https://developer.wordpress.org/plugins/hooks/)
 - [https://kinsta.com/blog/wordpress-hooks/](https://kinsta.com/blog/wordpress-hooks/)
 
-#### Existing customizations
-
-You might not be the first one thinking about a specific customization. We have a nice collection of snippets in our [knowledgebase](https://theeventscalendar.com/knowledgebase/category/snippets/) and I definitely recommend you to take a look at our [library of free extensions](https://theeventscalendar.com/extensions/). You just might find the customization you are looking for, or they can inspire you to take it to the next level.
-
 ---
 

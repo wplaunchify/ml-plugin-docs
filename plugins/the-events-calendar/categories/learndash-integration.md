@@ -111,7 +111,6 @@ With The Events Calendar LearnDash integration, you can basically do anything yo
 - Grant tickets to multiple courses at a time
 - Associate tickets with LearnDash Groups
 - Use [LearnDash Prerequisites](https://www.learndash.com/3-ways-to-create-course-prerequisites-in-learndash/) and [Points requirements](https://docs.nexcess.com/software/learndash/course-enrollment-mode/)
-- Create custom-linked post types with [this The Events Calendar extension](https://theeventscalendar.com/extensions/linked-post-type-instructors/).
 
 ---
 

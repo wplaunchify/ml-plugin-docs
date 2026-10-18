@@ -42,27 +42,25 @@ The [Customizing Styles](https://docs.nexcess.com/software/the-events-calendar/c
 
 In order to create a template override of the attendee registration page, create a copy of 
 ```
-event-tickets/src/views/blocks/tickets/registration/content.php
+event-tickets-plus/src/views/v2/attendee-registration/content.php
 ```
 
- and place it in 
+ and place it in 
 ```
-[your-theme]/tribe/tickets/blocks/tickets/registration/content.php
+[your-theme]/tribe/tickets-plus/v2/attendee-registration/content.php
 ```
 
 .
 
 For the modal, simply copy 
 ```
-event-tickets/src/views/modal/registration.php
+event-tickets-plus/src/views/v2/modal/attendee-registration.php
 ```
 
- into 
+ into 
 ```
-[your-theme]/tribe/tickets/modal/registration.php
+[your-theme]/tribe/tickets-plus/v2/modal/attendee-registration.php
 ```
-
-.
 
 ## Show RSVP Fields Directly on Event Page
 
@@ -70,44 +68,66 @@ In this example, we’ll cover the specific example of showing users the registr
 
 #### Showing the registration fields
 
-To start, you’ll want to create a template override the following template file: 
-```
-wp-content/plugins/event-tickets/src/views/v2/rsvp/content.php
-```
-
-Next, find and delete the following two lines from your newly-created template override:
+Add the following snippet to your site. It opens the RSVP form automatically on the event page, so visitors see the registration fields without clicking “Going” first. It works with both RSVP systems and with Event Tickets Plus attendee fields.
 
 ```
-<?php $this->template( 'v2/rsvp/details', [ 'rsvp' => $rsvp ] ); ?>
+/**
+ * Opens the RSVP form automatically on single event pages, so visitors see the
+ * registration fields without clicking "Going" first.
+ *
+ * Works with both RSVP systems and with Event Tickets Plus attendee fields.
+ */
+add_action( 'wp_footer', 'tec_snippet_open_rsvp_form' );
+function tec_snippet_open_rsvp_form() {
+        if ( ! is_singular( 'tribe_events' ) ) {
+                return;
+        }
+        ?>
+        <script>
+                document.addEventListener( 'DOMContentLoaded', function () {
+                        var attempts = 0;
+                        var timer = setInterval( function () {
+                                var button = document.querySelector( '.tribe-tickets__rsvp-actions-button-going' );
+                                attempts++;
 
-<?php $this->template( 'v2/rsvp/actions', [ 'rsvp' => $rsvp ] ); ?>
-```
-
-Add this line instead:
-
-```
-<?php $this->template( 'v2/rsvp/form/form', [ 'rsvp' => $rsvp, 'going' => 'going' ] ); ?>
+                                if ( button && ! button.disabled && window.tribe && tribe.tickets && tribe.tickets.rsvp ) {
+                                        clearInterval( timer );
+                                        button.click();
+                                } else if ( attempts > 25 ) {
+                                        clearInterval( timer );
+                                }
+                        }, 200 );
+                } );
+        </script>
+        <?php
+}
 ```
 
 #### Hiding the number selector
 
-For this you will need to create a template override for this file: 
-```
-wp-content/plugins/event-tickets/src/views/v2/rsvp/form/fields/quantity.php
-```
-
-From the override, remove the whole <label>…</label> part and change this line:
+Add the following snippet to your site. It hides the “Number of Guests” selector, so every RSVP is for one guest. It works with both RSVP systems.
 
 ```
-<input
-    type="number"
-```
-
-to:
-
-```
-<input
-    type="hidden"
+/**
+ * Hides the guest count selector on RSVP forms, so every RSVP is for one guest.
+ *
+ * Works with both RSVP systems, with and without Event Tickets Plus attendee fields.
+ */
+add_action( 'wp_head', 'tec_snippet_hide_rsvp_guest_count' );
+function tec_snippet_hide_rsvp_guest_count() {
+        if ( ! is_singular( 'tribe_events' ) ) {
+                return;
+        }
+        ?>
+        <style>
+                .tribe-tickets__rsvp-form-wrapper label[for^="quantity_"],
+                .tribe-tickets__rsvp-form-field-quantity,
+                .tribe-tickets__rsvp-ar-quantity {
+                        display: none !important;
+                }
+        </style>
+        <?php
+}
 ```
 
 Here’s the final result:
@@ -130,9 +150,7 @@ By default, the attendee registration module has a single field to collect the f
 
 ```
 add_filter( 'tribe_tickets_plus_attendee_registration_iac_fields', function ( $fields ) { 
-
 $fields['name']['label'] = 'First Name'; 
-
 return $fields; 
 } );
 ```
@@ -147,10 +165,8 @@ It’s not quite right as the newly added Last Name field needs to be placed rig
 
 ```
 add_filter( 'event_tickets_plus_meta_fields_by_ticket', function ( $fields ) {
-
 	$emailIndex = array_search( 'tribe-tickets-plus-iac-email', array_column( $fields, 'slug' ) );
 	$nameIndex  = array_search( 'tribe-tickets-plus-iac-name', array_column( $fields, 'slug' ) );
-
 	if ( $emailIndex !== false && $nameIndex !== false ) {
 		$lastNameIndex = array_search( 'last-name', array_column( $fields, 'slug' ) );
 		if ( $lastNameIndex !== false ) {
@@ -159,7 +175,6 @@ add_filter( 'event_tickets_plus_meta_fields_by_ticket', function ( $fields ) {
 			array_splice( $fields, $emailIndex, 0, array( $lastNameField ) );
 		}
 	}
-
 	return $fields;
 }, 20 );
 ```
@@ -171,31 +186,31 @@ The fields should now be in the correct order,
 4. At the backend, the Last Name isn’t automatically displayed conveniently; however, this can be solved with, you guessed it, a PHP snippet,
 
 ```
-add_filter( 'manage_tribe_events_page_tickets-attendees_columns', 'add_last_name_column' );
-add_filter( 'tribe_events_tickets_attendees_table_column', 'populate_last_name_column', 10, 3 );
-
-function add_last_name_column( $columns ) {
-	$new_columns = [];
-	foreach ( $columns as $key => $title ) {
-		$new_columns[ $key ] = $title;
-		if ( $key === 'primary_info' ) {
-			$new_columns['last_name'] = 'Last Name';
-		}
-	}
-
-	return $new_columns;
+/**
+ * Adds a "Last Name" column to the Attendees table, next to Attendee Information.
+ *
+ * Expects an Event Tickets Plus attendee field labeled "Last Name" (slug: last-name).
+ */
+add_filter( 'tribe_tickets_attendee_table_columns', 'tec_snippet_add_last_name_column' );
+function tec_snippet_add_last_name_column( $columns ) {
+        return Tribe__Main::array_insert_after_key(
+                'primary_info',
+                $columns,
+                [ 'last-name' => 'Last Name' ]
+        );
 }
 
-function populate_last_name_column( $value, $item, $column ) {
-	if ( $column === 'last_name' && ! empty( $item['attendee_meta']['last-name'] ) ) {
-		if ( is_array( $item['attendee_meta']['last-name'] ) ) {
-			return ! empty( $item['attendee_meta']['last-name']['value'] ) ? $item['attendee_meta']['last-name']['value'] : '';
-		} else {
-			return $item['attendee_meta']['last-name'];
-		}
-	}
+add_filter( 'tribe_events_tickets_attendees_table_column', 'tec_snippet_populate_last_name_column', 10, 3 );
+function tec_snippet_populate_last_name_column( $value, $item, $column ) {
+        if ( 'last-name' !== $column ) {
+                return $value;
+        }
 
-	return $value;
+        if ( is_array( $value ) ) {
+                return isset( $value['value'] ) ? $value['value'] : '';
+        }
+
+        return $value;
 }
 ```
 
@@ -209,11 +224,7 @@ While it is possible to add PHP code snippets similar to those provided in this 
 
 In [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/), the [Individual Attendee Collection (IAC)](https://theeventscalendar.com/knowledgebase/enabling-attendee-information-for-tickets/) feature requires all attendees to provide their details, including their name and email. By default, both the name and email fields must be unique for each attendee. While this ensures separate records, it may not be suitable for scenarios where parents buy tickets for themselves and their children, as children may not have individual email addresses.
 
-In this example, we will explore how to remove the requirement for the email field to be unique in order to accommodate specific use cases better. To allow multiple attendees to share the email, you can use the following code snippet. This will modify the attendee registration process and permit identical emails across different tickets,
-
-Alternatively, here is a snippet that would allow you to change the default labels for the IAC fields.
-
-Below is another snippet that allow you to remove the input requirement of the email address, as well as the unique requirement.
+In this example, we will explore how to remove the requirement for the email field to be unique in order to accommodate specific use cases better. The snippet below will modify the attendee registration process and permit identical emails across different tickets and make the email field optional.
 
 ```
 add_filter( 'tribe_tickets_plus_attendee_registration_iac_fields', function ( $fields ) {
@@ -282,61 +293,35 @@ In this example, we are using the text field, but the process would be very simi
 
 #### Add the Code
 
-The code goes at the top of the file between the opening and closing php tags.
+The code goes right after the 
+```
+$multiline = ...
+```
+
+ line near the top of the file.
 
 The piece of code we are going to add does the following:
 
-1. Checks which field is being rendered. (Line 2)
-2. Checks if the field is being rendered for the main guest. (Line 4)
-3. Sets the field as required. (Line 6)
-4. Adds additional text to the description. (Line 8)
-5. Hides the field for all other guests. (Line 9-15)
+1. Checks that the field is being rendered for an RSVP, not a ticket. (Lines 6-7)
+2. Checks which field is being rendered. (Line 9)
+3. Checks if the field is being rendered for the main guest. (Line 10)
+4. Sets the field as required. (Line 11)
+5. Adds additional text to the description. (Line 12)
+6. Hides the field for all other guests. (Lines 13-15)
 
 ```
-// If the name of the text is "Phone number", then the slug is "phone-number".
-if ( $field->slug == 'phone-number' ) {
-    // Limit to main guest
-    if ( $attendee_id === 0 ) {
-        // Set it required.
-        $required = true;
-        // Add to the description
-        $description .= " Required for main attendee.";
-    } else {
-        // Do this for other guests
-        // Hide the field.
-        // Remove 'return' or the whole 'else' branch, 
-        // if the field should be shown for other guests, but not required.
-        return;
-    }
-}
+/* * Phone number: required for the main RSVP guest, hidden for the other guests. * Tickets are left alone: the field still shows for every ticket attendee. * Rename the slug to match your field (the label in lowercase, spaces as dashes). */$ticket_id = isset( $ticket ) ? $ticket->ID : 0;$is_rsvp   = $ticket_id && ( 'tribe_rsvp_tickets' === get_post_type( $ticket_id ) || 'tc-rsvp' === get_post_meta( $ticket_id, '_type', true ) );if ( $is_rsvp && 'phone-number' === $field->slug ) {        if ( 0 === $attendee_id ) {                $required     = true;                $description .= ' Required for main attendee.';        } else {                return;        }}
 ```
 
-On line 2, we are checking the slug of the field that is being rendered. The slug will be the label of the field with lowercase letters, special characters removed, and the space character changed to a minus (-) character. For example, if your field name would be “Date of Birth:”, then the slug would become “date-of-birth”.
+On line 9, we are checking the slug of the field that is being rendered. The slug will be the label of the field with lowercase letters, special characters removed, and the space character changed to a minus (-) character. For example, if your field name would be “Date of Birth:”, then the slug would become “date-of-birth”.
 
-On line 4 we are checking if the field is being rendered for the main guest. You can turn this around as well if you want to make a field required for all guests *except* the main one. Then you will need to use
+On line 10 we are checking if the field is being rendered for the main guest. You can turn this around as well if you want to make a field required for all guests *except* the main one. Then you will need to use
 
 ```
-if ( $attendee_id != 0 ) {
-```
-
-On line 8 we are adding some extra text to the description. This can be a nice touch and makes it clear what needs to be done. This is optional though.
-
-If we want to hide the specific field for all other guests, then we can simply do a 
-```
-return;
+if ( 0 !== $attendee_id ) {
 ```
 
- in the 
-```
-else
-```
-
- branch; this way nothing will be rendered. If you still want to show the field to other guests but not make it required, then you can remove the full 
-```
-else
-```
-
- branch.
+On line 12 we are adding some extra text to the description. This can be a nice touch and makes it clear what needs to be done. This is optional though.
 
 The rest of the template is unchanged.
 
@@ -380,25 +365,24 @@ Here is the full code of the file for reference:
  *
  * @see Tribe__Tickets_Plus__Meta__Field__Text
  */
-
 $multiline = Tribe__Utils__Array::get( $field, [ 'extra', 'multiline' ], null );
+/*
+ * Phone number: required for the main RSVP guest, hidden for the other guests.
+ * Tickets are left alone: the field still shows for every ticket attendee.
+ * Rename the slug to match your field (the label in lowercase, spaces as dashes).
+ */
+$ticket_id = isset( $ticket ) ? $ticket->ID : 0;
+$is_rsvp   = $ticket_id && ( 'tribe_rsvp_tickets' === get_post_type( $ticket_id ) || 'tc-rsvp' === get_post_meta( $ticket_id, '_type', true ) );
 
-// The name of the text field has to be "Phone number".
-if ( $field->slug == 'phone-number' ) {
-	// Limit to main guest
-	if ( $attendee_id === 0 ) {
-		// Set it required.
-		$required = true;
-		// Add to the description
-		$description .= " Required for main attendee.";
+if ( $is_rsvp && 'phone-number' === $field->slug ) {
+	if ( 0 === $attendee_id ) {
+		$required     = true;
+		$description .= ' Required for main attendee.';
 	} else {
-		// Hide the field.
 		return;
-		// Remove 'return' above if the field should be shown for other guests, but not required.
 	}
 }
 ?>
-
 <div
 	<?php tribe_classes( $classes ); ?>
 	<?php tribe_attributes( $attributes ); ?>
@@ -458,7 +442,7 @@ Locate the file **birth.php**, then copy and paste it into your theme’s direct
 
 If the **tribe/tickets-plus/v2/components/meta/** folders do not exist in your theme, create them manually.
 
-Open the copied **birth.php** file in a text editor and locate **line 48**, where the birth date format is defined. Swap the placement of the month and day as shown below to ensure the format is **DD/MM/YYYY**.
+Open the copied **birth.php** file in a text editor and locate **line 48**, where the birth date format is defined. Swap the placement of the month and day as shown below to ensure the format is **DD/MM/YYYY**. Move the entire Month label and dropdown so it comes after the Day label and dropdown.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/swap_day_month.jpg)
 

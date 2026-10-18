@@ -115,15 +115,11 @@ Depending on what is installed within your WordPress site you may see additional
 
 If [Event Tickets](https://theeventscalendar.com/product/wordpress-event-tickets/) or [Eventbrite Tickets](https://theeventscalendar.com/product/wordpress-eventbrite-tickets/) is installed and active, it will hide The Events Calendar’s default Event Cost field on the wp-admin Add/Edit Event page (and the [Community Events](https://theeventscalendar.com/product/wordpress-community-events/) Add/Edit Event form, if activated).
 
-For our premium plugins, please refer to our extension: [Display the Event Cost Field When Ticket Plugins are Installed](https://theeventscalendar.com/extensions/show-cost-field/) to reveal the Event Cost field.
-
 For [Event Tickets](https://theeventscalendar.com/product/wordpress-event-tickets/?utm_source=crobertson&utm_medium=redirect) RSVP tickets, use the following code in your child theme’s functions.php file:
 
 ```
 add_filter( 'tribe_events_admin_show_cost_field', '__return_true' );
 ```
-
-Don’t leave just yet, there is still lots to explore!
 
 #### Taxonomies
 

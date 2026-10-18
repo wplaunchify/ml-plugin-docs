@@ -423,48 +423,6 @@ After importing, confirm that your tickets were successfully imported and are ap
 
 Once you’ve confirmed the tickets are working correctly, you can deactivate and delete WooCommerce if you don’t need it for anything else.
 
-## Advanced: Import Attendees
-
-To import tickets or RSVPs attendee from a CSV file, you need to have this free [Event Tickets Attendee CSV Importer Extension](https://theeventscalendar.com/extensions/event-tickets-attendee-csv-importer/) installed first.
-
-#### Creating the CSV
-
-The first step is to create a CSV with the correct columns. The following data can be included when importing attendees:
-
-- event_name
-- ticket_name
-- attendee_name
-- attendee_email
-- display_opt_in
-- user_id
-
-If you are importing RSVP attendees, there can also be a column for *going*. Download a sample file [here](https://docs.nexcess.com/wp-content/uploads/2026/06/test-data-attendees.csv).
-
-#### Defining the Target Ticket
-
-The ticket_name column can accept either the ticket name or the ticket ID to match attendees with the correct ticket. If you prefer to use the ticket ID to specify which ticket each attendee should be assigned to, you can find the ticket ID on the [Event’s Attendees Page](https://docs.nexcess.com/software/the-events-calendar/ticket-orders/). This ID is associated with the specific ticket within the event.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/KB-ticketid-1.jpg)
-
-For example, if the **ticket ID is 482** and the ticket name is “Monday Show” your CSV file should include this information as shown below:
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/kb-sample-csv.jpg)
-
-#### Import Steps
-
-Once you have your CSV, follow these steps to start importing attendees.
-
-1. On your WordPress Admin, go to **Events → Import**, then select CSV as origin.
-2. Select the correct Ticket Type for your import here:
-
-RSVP Attendees
-Ticket Attendees (Tickets Commerce)
-Ticket Attendees (WooCommerce)
-3. Upload the Attendee’s CSV file for the selected ticket type.
-4. Click the Preview button and if everything is correct in this window, click Import All or the desired row(s).
-
-**Note:** Each of these Ticket Types processes differently. For example, if you want to import attendees from an RSVP ticket, you need to select the first option.
-
 ## Related Articles
 
 - [Managing Imported Events](https://docs.nexcess.com/software/the-events-calendar/imported-events/)

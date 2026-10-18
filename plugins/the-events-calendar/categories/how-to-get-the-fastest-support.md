@@ -12,7 +12,7 @@ All active subscriptions include access to premium support. To receive the faste
 
 ## Determine Which Plugin or Theme is Causing Your Issue
 
-We work hard to make our plugins broadly compatible, however, it’s impossible for us to test every plugin, theme, and server environment out there. Most problems that arise with WordPress plugins (like The Events Calendar) are conflicts–errors that occur when code from one plugin or theme conflicts with another plugin or theme.
+We work hard to make our plugins broadly compatible; however, it’s impossible for us to test every plugin, theme, and server environment out there. Most problems that arise with WordPress plugins (like The Events Calendar) are conflicts–errors that occur when code from one plugin or theme conflicts with another plugin or theme.
 
 ## Testing for Conflicts
 
@@ -34,7 +34,7 @@ From your site’s [WP Admin area](http://codex.wordpress.org/Administration_Scr
 
 **Step Two**
 
-Disable all plugins besides the ones you are testing. In the left-column menu of WP Admin, click Plugins > Installed Plugins. You will now see all the plugins you have installed. Click the checkbox next to all of them except The Events Calendar, Event Tickets, and any add-ons like Events Calendar PRO or Community Events. Please also deactivate any of our extensions you might have. From the Bulk Actions drop-down menu, select “Deactivate” and then click “Apply”.
+Disable all plugins besides the ones you are testing. In the left-column menu of WP Admin, click Plugins > Installed Plugins. You will now see all the plugins you have installed. Click the checkbox next to all of them except The Events Calendar, Event Tickets, and any add-ons like Events Calendar Pro or Community Events.
 
 **Step Three**
 
@@ -53,11 +53,12 @@ If you’ve found a bug in one of our free plugins and you are not a premium cus
 Paid subscribers have access to premium support, so [submitting a Help Desk ticket](https://support.theeventscalendar.com/submit_ticket) is the route to go. So we may assist you as quickly as possible, please provide the following information in your ticket:
 
 - State that you have found a conflict, and give the name of the conflicting plugin/theme along with its version number.
-- Describe in detail the problem that happens when you are running that plugin/theme with a given Tribe plugin. Sharing the URL of the website (and specific page) with the issue; screenshots and/or screen recordings of the issue can be extremely helpful as well.
+- Describe in detail the problem that happens when you are running that plugin/theme with a given The Events Calendar plugin.
+- Sharing the URL of the website (and specific page) with the issue; screenshots and/or screen recordings of the issue can be extremely helpful as well.
 - Share a copy of your System Information with us by going to Events > Troubleshooting and checking the box under System Information (see screenshot below).
 - [Enable WP_DEBUG](https://docs.nexcess.com/software/the-events-calendar/how-to-enable-debugging-in-wordpress/), replicate the problem, and then send us the resulting debug log.
 
-*Note: Existing customers should log in before submitting a new ticket. That will allow us to connect you with the right team members a whole lot faster. If you’re not sure which credentials to use or have any difficulties logging in, we’ve got a handy guide to help you out.*
+**Note:** Existing customers should log in before [submitting a new ticket](https://software.liquidweb.com/support/). That will allow us to connect you with the right team members a whole lot faster. If you’re not sure which credentials to use or have any difficulties logging in, we’ve got a [handy guide](https://docs.nexcess.com/software/the-events-calendar/accessing-support/) to help you out.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/share-sys-info-1024x332-1.png)Enable System Information sharing to help us understand your site configurations
 
