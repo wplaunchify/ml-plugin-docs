@@ -4,6 +4,45 @@
 
 ---
 
+## How to Disable Favicon Fetching
+
+**Source:** [https://independentwp.com/knowledgebase/developer/disable-favicon-fetching/](https://independentwp.com/knowledgebase/developer/disable-favicon-fetching/)
+
+Independent Analytics displays favicons for each site in the Referrers report. It includes bundled icons for 70 popular websites, like Reddit and Google, and will fetch favicons from each other site listed in your Referrers report.
+
+If you don’t want your site to make these external requests, you can add this line of code to your **wp-config.php** file to disable this feature:
+
+```
+define('IAWP_DISABLE_FAVICON_FETCHING', true);
+```
+
+Once added, Independent Analytics will no longer make any external requests to fetch favicons from your referrers. It will retain any favicons already found.
+
+---
+
+## How to Modify IP Addresses with a Filter
+
+**Source:** [https://independentwp.com/knowledgebase/developer/modify-ip-addresses-filter/](https://independentwp.com/knowledgebase/developer/modify-ip-addresses-filter/)
+
+Independent Analytics creates an anonymous ID for each visitor by combining their IP address, user agent, and the site’s unique [salt token](https://independentwp.com/knowledgebase/data/refresh-visitor-salt/). These variables go through a one-way hash, making it virtually impossible to reverse the generated ID to its original parts.
+
+However, if you want even greater assurance of visitor privacy, you can modify visitor IP addresses before they’re hashed so that even if an ID was cracked, it still wouldn’t contain their IP address. For instance, you could truncate the IP address by removing the last octet.
+
+Here is the filter function you can use to modify the IP address:
+
+```
+add_filter('iawp_visitor_ip_address', function (string $ip): string {    
+    // Modify the IP here
+    return $ip;
+});
+```
+
+Please understand that modifications you make here can impact Independent Analytics’ ability to accurately track the number of visitors your site receives and to attribute events to visitors accurately.
+
+Independent Analytics accepts both IPv4 and IPv6 addresses.
+
+---
+
 ## How to Programmatically Output the Analytics Script
 
 **Source:** [https://independentwp.com/knowledgebase/developer/programmatically-output-analytics-script/](https://independentwp.com/knowledgebase/developer/programmatically-output-analytics-script/)
@@ -173,6 +212,8 @@ iawp-geo-db.mmdb
  file will be deleted immediately.
 
 If you’re using multi-site, the MMDB file is only installed once on the parent site, so all child sites reference the single copy of the file there.
+
+As an alternative, Independent Analytics now supports [geolocation tracking via Cloudflare](https://independentwp.com/knowledgebase/tracking/cloudflare-geolocation/), which removes the MMDB file when enabled.
 
 ---
 

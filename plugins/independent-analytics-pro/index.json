@@ -2,8 +2,8 @@
   "plugin_slug": "independent-analytics-pro",
   "plugin_name": "Independent Analytics Pro",
   "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-  "last_scraped": "2026-10-11T05:04:53.132Z",
-  "total_pages": 194,
+  "last_scraped": "2026-10-18T05:03:58.093Z",
+  "total_pages": 202,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,16 @@
       "slug": "campaigns",
       "url": "https://independentwp.com/knowledge-base/documentation/campaigns/",
       "file": "categories/campaigns.md",
-      "page_count": 11,
+      "page_count": 13,
       "pages": [
+        {
+          "title": "How to Export Your Campaign Links to CSV",
+          "url": "https://independentwp.com/knowledgebase/campaigns/export-campaign-links-2/"
+        },
+        {
+          "title": "How to Use the UTM Parameters",
+          "url": "https://independentwp.com/knowledgebase/campaigns/how-to-utm-parameters/"
+        },
         {
           "title": "Why Aren’t My Campaigns Getting Tracked?",
           "url": "https://independentwp.com/knowledgebase/campaigns/campaigns-not-tracked/"
@@ -129,8 +137,12 @@
       "slug": "common-questions",
       "url": "https://independentwp.com/knowledge-base/documentation/common-questions/",
       "file": "categories/common-questions.md",
-      "page_count": 35,
+      "page_count": 36,
       "pages": [
+        {
+          "title": "How to Resolve the MAX_JOIN_SIZE Error",
+          "url": "https://independentwp.com/knowledgebase/common-questions/fix-max-join-size-error/"
+        },
         {
           "title": "Why You Need to Clear Your Cache",
           "url": "https://independentwp.com/knowledgebase/common-questions/why-clear-cache/"
@@ -472,8 +484,16 @@
       "slug": "developer",
       "url": "https://independentwp.com/knowledge-base/documentation/developer/",
       "file": "categories/developer.md",
-      "page_count": 9,
+      "page_count": 11,
       "pages": [
+        {
+          "title": "How to Disable Favicon Fetching",
+          "url": "https://independentwp.com/knowledgebase/developer/disable-favicon-fetching/"
+        },
+        {
+          "title": "How to Modify IP Addresses with a Filter",
+          "url": "https://independentwp.com/knowledgebase/developer/modify-ip-addresses-filter/"
+        },
         {
           "title": "How to Programmatically Output the Analytics Script",
           "url": "https://independentwp.com/knowledgebase/developer/programmatically-output-analytics-script/"
@@ -660,8 +680,12 @@
       "slug": "overview-report",
       "url": "https://independentwp.com/knowledge-base/documentation/overview-report/",
       "file": "categories/overview-report.md",
-      "page_count": 3,
+      "page_count": 4,
       "pages": [
+        {
+          "title": "How to Stop the Overview Report from Refreshing in the Background",
+          "url": "https://independentwp.com/knowledgebase/overview-report/disable-overview-report-refresh/"
+        },
         {
           "title": "Summary of All Module Types",
           "url": "https://independentwp.com/knowledgebase/overview-report/summary-module-types/"
@@ -776,8 +800,16 @@
       "slug": "tracking",
       "url": "https://independentwp.com/knowledge-base/documentation/tracking/",
       "file": "categories/tracking.md",
-      "page_count": 11,
+      "page_count": 13,
       "pages": [
+        {
+          "title": "How to Track OpenAI Ads Performance",
+          "url": "https://independentwp.com/knowledgebase/tracking/track-openai-ads/"
+        },
+        {
+          "title": "How to Track Geographic Locations with Cloudflare",
+          "url": "https://independentwp.com/knowledgebase/tracking/cloudflare-geolocation/"
+        },
         {
           "title": "How to Require Consent with the Complianz Plugin",
           "url": "https://independentwp.com/knowledgebase/tracking/require-consent-complianz-plugin/"

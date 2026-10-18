@@ -4,6 +4,68 @@
 
 ---
 
+## How to Export Your Campaign Links to CSV
+
+**Source:** [https://independentwp.com/knowledgebase/campaigns/export-campaign-links-2/](https://independentwp.com/knowledgebase/campaigns/export-campaign-links-2/)
+
+If you want to export the campaign links you’ve created, you can do so by clicking the **Export All Campaigns** button in the toolbar.
+
+![Export all campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:465/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/export-all-campaigns.png)
+
+You’ll receive a CSV containing every link with each parameter organized as its own column.
+
+If you want to export a selection of links, start by applying a new filter. Click the **Add Filter** button and then apply your desired filter.
+
+![Add filter button](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:491/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/add-filter-button.png)
+
+Once the links have been filtered, you’ll see that the export button has updated to reflect the applied filter. Clicking it will generate an export of the same links that are left visible on screen.
+
+![Campaign filter applied](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:426/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-filter-applied.png)
+
+---
+
+## How to Use the UTM Parameters
+
+**Source:** [https://independentwp.com/knowledgebase/campaigns/how-to-utm-parameters/](https://independentwp.com/knowledgebase/campaigns/how-to-utm-parameters/)
+
+If you’re new to campaign tracking, all the parameters can be overwhelming. Here’s how to use each parameter.
+
+### Landing page path (optional)
+
+Campaign URLs have to point to your site, which is why the Site URL field cannot be edited. Next to it is the **Landing Page Path** field, which is used to create a link pointing to a specific page on your site.
+
+For example, if your site is called mysite.com and you want to link to mysite.com/blog/awesome-article/, you would enter the following into the **Landing Page Path** field:
+
+```
+blog/awesome-article/
+```
+
+If you want to link to your homepage, you can leave the **Landing Page Path** field empty.
+
+### Source (required)
+
+The source is the name of the site that sent you traffic, such as Facebook or Etsy.
+
+For email marketing campaigns, you can use the name of the automation/series. For example, “newsletter” or “7-day course.”
+
+### Medium (required)
+
+The medium is the type of site the link is on. For instance, you can use “Social” or “Social Media” for a campaign link placed on Facebook.com.
+
+### Campaign (required)
+
+Campaigns are more open to interpretation, but they’re generally used to discern between different marketing campaigns on the same medium and source. For example, if you write two guest posts for the same blog, the source and medium would be the same, but you could use the title of the post as the campaign to differentiate between the two posts.
+
+### Term (optional)
+
+The Term parameter is mainly used for paid advertising campaigns. You can use it to store the keywords you used for the link so you can track performance on a keyword level. Again, it’s mainly used for paid advertising campaigns.
+
+### Content (optional)
+
+The Content parameter is used when multiple links on the same page are present. For instance, imagine you have an email urging readers to purchase a product, and there’s a link in the middle of the email and at the bottom. You can use the Content parameter to differentiate between these two links and find out which one is getting the most clicks.
+
+---
+
 ## Why Aren’t My Campaigns Getting Tracked?
 
 **Source:** [https://independentwp.com/knowledgebase/campaigns/campaigns-not-tracked/](https://independentwp.com/knowledgebase/campaigns/campaigns-not-tracked/)
@@ -93,11 +155,23 @@ As for the upside, you will also see traffic from real, valuable campaigns that 
 
 **Source:** [https://independentwp.com/knowledgebase/campaigns/qr-codes/](https://independentwp.com/knowledgebase/campaigns/qr-codes/)
 
-We’ve had some requests to include QR code generation in Independent Analytics Pro, and we would like to include this feature in an upcoming update, but for now, we have an alternative solution.
+Independent Analytics Pro allows you to quickly generate QR codes for any of your campaign URLs.
 
-You can use [Short.io](https://short.io/) to create shortened URLs for your campaign links and generate QR codes. These features are both available on the free plan.
+To generate a QR code, start by visiting the **Analytics > Campaign Builder** menu. Then, locate the campaign link you want to create a QR code for, and click the QR code button.
 
-When someone scans the QR code, it opens the shortened URL in their browser, which then redirects to the full campaign URL, allowing Independent Analytics Pro to find and capture the campaign parameters. This will let you see exactly how many people have visited your site from that particular QR code.
+![QR code button](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/qr-code-button.png)
+
+This will open the robust QR code customization window.
+
+![QR code generator](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:735/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/qr-code-generator.png)
+
+From here, you can customize every aspect of the QR code, from its colors to the border styles. You can even upload your own logo to display within the pattern.
+
+When you’re happy with your customizations, click the **Download PNG** or **Download SVG** button to get a copy of the QR code.
+
+You can then use it in any of your digital and print media, and when scanned, it will take you directly to the campaign URL. This allows you to track precisely how many people scanned the QR code in your Campaigns report.
+
+Your QR code customizations are saved silently in the background, so future QR codes will automatically apply the same settings.
 
 ---
 
@@ -167,7 +241,7 @@ With all the tracking tools available in Independent Analytics Pro, it can be tr
 
 Generally speaking, if you need to track clicks on a link on your website, you’ll want to use the [click-tracking](https://independentwp.com/knowledgebase/click-tracking/click-tracking/) feature. Alternatively, if you need to track clicks on a link on someone else’s website, you’ll want to use a [campaign URL](https://independentwp.com/knowledgebase/campaigns/campaigns-dashboard/).
 
-![Click tracking vs campaign tracking](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:805/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/click-tracking-vs-campaign-tracking.png)
+![Click tracking vs campaign tracking](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:805/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2025/02/click-tracking-vs-campaign-tracking.png)
 
 If you have a landing page on your site with a “Signup” button, you can track clicks on it by adding a new link pattern in the [Click Tracking Menu](https://independentwp.com/knowledgebase/click-tracking/click-tracking/). This will work whether the “Signup” button takes visitors to another page on your website or an external website.
 
@@ -185,13 +259,13 @@ Let’s imagine you share a campaign URL in a Facebook post. Someone clicks on t
 
 Here’s what that would look like in the Campaigns menu.
 
-![Campaign with one view](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:92/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/campaign-with-one-view.png)
+![Campaign with one view](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:92/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/campaign-with-one-view.png)
 
 Now, let’s imagine that instead of leaving your site, they browse a few products, add one to their cart, and complete a purchase before leaving.
 
 That same campaign would look like this instead:
 
-![Campaign with sale](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:93/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/campaign-with-sale.png)
+![Campaign with sale](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:93/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/11/campaign-with-sale.png)
 
 As you can see, this campaign is now responsible for 8 views and $99 in sales.
 
@@ -249,7 +323,7 @@ This URL tells us that the source is Twitter, the medium is social media, and th
 
 In the Campaigns dashboard, you’ll be able to see how many visitors click on this link:
 
-![Campaigns dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:765/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-table.png)
+![Campaigns dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:765/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-table.png)
 
 As you can see, Campaign URLs are extremely useful for tracking precisely where your traffic comes from, so you can evaluate the effectiveness of your marketing efforts.
 
@@ -279,75 +353,121 @@ While you can type out campaign URLs manually, it’s easy to make a mistake, an
 
 For this reason, it’s easier and more reliable to use the Campaign Builder.
 
-To access the Campaign URL builder, hover your cursor over the Campaigns menu item and click the **Campaign Builder** link.
+You can access the Campaign Builder via its link under the **Analytics** menu item in your WP admin sidebar.
 
-![Campaign URL builder menu item](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:768/h:708/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-builder-link.png)
+![Campaign URL builder menu item](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:768/h:708/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-builder-link.png)
 
 You don’t have to create your campaign URLs with the Campaign Builder for them to be tracked. Campaign URLs that are created dynamically by email and ad platforms will be tracked too.
 
 ## How to use the Campaign Builder
 
-Here’s what the Campaign Builder looks like:
+Here’s what you’ll see when you open the Campaign Builder for the first time:
 
-![Campaign URL Builder](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:718/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/campaign-url-builder.png)
+![Campaign Builder with no campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:438/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/campaign-builder-no-campaigns.png)
 
-There are full descriptions of each field/parameter below.
+To create your first campaign, you can click the **Create New Campaign** button in the middle of the page or the purple button in the toolbar. This will open the form to create a new campaign.
 
-To create a campaign, you’ll fill out the **Source**, **Medium**, and **Campaign** fields since those are all required. You can optionally enter a specific page to link to on your site using the **Landing Page Path**, and there are also **Term** and **Content** fields available if you need them.
+![Campaign URL Builder](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:671/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2023/02/campaign-url-builder.png)
 
-Once you’re ready, click the **Create Campaign URL** button, and you’ll see your new campaign show up immediately in the list of created campaigns below.
+You can find a detailed [description of each UTM parameter here](https://independentwp.com/knowledgebase/campaigns/how-to-utm-parameters/).
 
-![Recent campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:607/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/recent-campaigns.png)
+The campaign link is automatically set to point to your homepage. If you’d like to link to another page on your site, you can enter that path into the **Landing Page Path** field.
 
-## Tip: keep your spelling the same
+Next, you are required to enter the **Source**, **Medium**, and **Campaign** fields to create a valid campaign link. Optionally, you can fill out the **Term** and **Content** fields, but they are not required.
 
-If you create a campaign link for Facebook and you enter “Social” into the Medium field, and then you create another campaign link for Facebook but enter “Social Media” into the Medium field, this will make it harder to analyze your links in the Campaigns report.
+Lastly, there is a **Private Note** field you can enter. This note is only shown in the Campaign Builder menu and exists to help you keep your campaigns organized.
 
-For instance, if you group your links by Medium, you will see a separate row for “Social” vs. “Social Media.” To help you avoid this, each campaign link has a **Copy to Form** button.
+Once you’re ready, click the **Create New Campaign** button, and you’ll see your new campaign show up immediately in the list of created campaigns below.
 
-![Copy to Form button](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/copy-to-form-button.png)
+![New campaign URL created](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:284/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-url-example.png)
 
-If you click this button, it will refill the form with the same text you used for this campaign. Then you can make any necessary modifications and create a new link.
+Over time, you’ll create many campaigns, and you can browse them easily here.
 
-This makes it much easier to maintain consistent spelling and naming conventions across your campaigns.
+![List of previously created campaign URLs](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:468/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/latest-campaigns.png)
 
-## Here’s how to use each field
+## Filtering your campaigns
 
-If you’re new to campaign tracking, all the parameters can be overwhelming. Here’s how to use each parameter.
+Once you have a lot of campaigns, you may want to find certain ones to replicate or reuse. To do that, you can click on the **Add Filter** button in the toolbar.
 
-### Landing page path (optional)
+![Add filter button](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:491/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/add-filter-button.png)
 
-Campaign URLs have to point to your site, which is why the Site URL field cannot be edited. Next to it is the **Landing Page Path** field, which is used to create a link pointing to a specific page on your site.
+Right away, you’ll see that it finds some suggestions for you, based on your existing entries.
 
-For example, if your site is called mysite.com and you want to link to mysite.com/blog/awesome-article/, you would enter the following into the **Landing Page Path** field:
+![Filter suggestions](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:614/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/filter-suggestions.png)
 
-```
-blog/awesome-article/
-```
+In the screenshot above, you can see that there are 12 campaigns that have all used “Email” as their medium, so that’s why it’s being suggested first.
 
-If you want to link to your homepage, you can leave the **Landing Page Path** field empty.
+You can click on any of the suggestions to immediately apply the filter, and only matching campaigns will remain in the list.
 
-### Source (required)
+![Campaign filter applied](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:426/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-filter-applied.png)Only campaigns with their utm_medium set to “Email” remain.
 
-The source is the name of the site that sent you traffic, such as Facebook or Etsy.
+Alternatively, you can use the search bar to search for a term yourself. If you do this, you also have the option to filter by any field. For instance, instead of filtering by campaigns with a medium set to “Email,” you can search for campaigns that use the term “Email” in any of their fields.
 
-For email marketing campaigns, you can use the name of the automation/series. For example, “newsletter” or “7-day course.”
+![Filtering by any field](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:539/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/filtering-by-any-field.png)
 
-### Medium (required)
+## How to generate QR codes
 
-The medium is the type of site the link is on. For instance, you can use “Social” or “Social Media” for a campaign link placed on Facebook.com.
+Every campaign link has the option to create a unique QR code.
 
-### Campaign (required)
+You can create a QR code by clicking on the QR code button under the campaign URL.
 
-Campaigns are more open to interpretation, but they’re generally used to discern between different marketing campaigns on the same medium and source. For example, if you write two guest posts for the same blog, the source and medium would be the same, but you could use the title of the post as the campaign to differentiate between the two posts.
+![QR code button](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/qr-code-button.png)
 
-### Term (optional)
+This will open a modal window where you can customize the size and style of the QR code.
 
-The Term parameter is mainly used for paid advertising campaigns. You can use it to store the keywords you used for the link so you can track performance on a keyword level. Again, it’s mainly used for paid advertising campaigns.
+![QR code generator](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:735/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/qr-code-generator.png)
 
-### Content (optional)
+When you’re happy with your changes, you can download the QR code as either a PNG or an SVG image.
 
-The Content parameter is used when multiple links on the same page are present. For instance, imagine you have an email urging readers to purchase a product, and there’s a link in the middle of the email and the bottom. You can use the Content parameter to differentiate between these two links and find out which one is getting the most clicks.
+The changes that you make are silently saved, so the next time you open the QR code builder, you’ll see the same colors and settings applied.
+
+## How to export your links
+
+You may want to export all your campaign links for use in another tool. This can be done easily by clicking the **Export All Campaigns** button in the toolbar.
+
+![Export all campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:465/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/export-all-campaigns.png)
+
+This will immediately generate and download a nicely formatted CSV containing each link in a row with each UTM parameter in its own column.
+
+If you apply a filter first, the export button will update to only export links matching the applied filter conditions.
+
+## How to edit a link
+
+If you make a mistake, it’s easy to reopen the builder and edit a campaign URL.
+
+To do so, click on the More Options button in the campaign, and then select the **Edit** option.
+
+![Edit campaign link](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/edit-campaign-link.png)
+
+This will reopen the builder so you can make your changes and save them.
+
+## How to duplicate a link
+
+You may want to create a variation of an existing campaign. For instance, you’re happy with all the fields except for the Content field.
+
+The best way to do this is to click on the More Options button in the campaign and then choose the **Duplicate** option.
+
+![Duplicate campaign link](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/duplicate-campaign-link.png)
+
+This will immediately create a second copy of a campaign, which you can then edit.
+
+## How to delete a link
+
+If you’d like to delete a campaign link, perhaps one you created for testing, you can do so by clicking the More Options button and then selecting the **Delete** option.
+
+![Delete campaign link](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:auto/h:auto/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/delete-campaign-link.png)
+
+The text will update to say, “Confirm Delete.” Click it once more, and the campaign link will be permanently deleted.
+
+Please note that this does not affect any recorded data in the analytics; it only removes the link from the Campaign Builder menu.
+
+## Tip: keep your fields consistent
+
+If you create a campaign link for Facebook and you enter “Social” into the Medium field, and then you create another campaign link for Facebook but enter “Social Media” into the Medium field, this will make it harder to analyze your links in the Campaigns report because they will get grouped separately when grouping by Medium.
+
+That’s why the builder will auto-suggest your most used terms in each field. This makes it easier to stay consistent and avoid spelling mistakes and other variations that will make your data harder to analyze in the future.
+
+![Campaign builder auto suggest](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:619/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-builder-auto-suggest.png)
 
 ---
 
@@ -393,11 +513,13 @@ Furthermore, these parameters have been adopted by many other marketing tools an
 
 **Source:** [https://independentwp.com/knowledgebase/campaigns/campaigns-dashboard/](https://independentwp.com/knowledgebase/campaigns/campaigns-dashboard/)
 
+We will be updating this video soon to show the new changes made to the Campaign Builder in [version 2.16.0](https://independentwp.com/changelog/version-2-16-0/).
+
 In order to use the Campaigns dashboard, you’ll want to start by creating campaign links with the [Campaign Builder](https://independentwp.com/knowledgebase/campaigns/campaign-builder/).
 
 The links you create will show up in the Campaigns dashboard once they’ve received at least one click. In the Campaigns dashboard, you’ll see every view and visitor that came from a click on a campaign URL.
 
-![Campaigns dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:765/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-table.png)
+![Campaigns dashboard](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:765/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-table.png)
 
 With this dashboard, you can see exactly how many views and visitors you’ve received from each campaign URL.
 
@@ -405,7 +527,7 @@ The **Terms** and **Content** columns are hidden by default but can be shown by 
 
 Like other dashboards in Independent Analytics, the table rows can be filtered by any of the columns.
 
-![Filtering campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:421/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/filter-campaigns.png)
+![Filtering campaigns](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:421/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/filter-campaigns.png)
 
 You can follow the [filters tutorial](https://independentwp.com/knowledgebase/dashboard/how-to-filter-your-data/) to learn how this works.
 
@@ -419,17 +541,17 @@ By default, the table will show you every unique campaign. This is very useful, 
 
 For this reason, you will find a dropdown option above the table that lets you switch the row grouping from Unique to Landing Page, Source, Medium, or Campaign.
 
-![Campaign grouping option](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:515/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-grouping-option.png)
+![Campaign grouping option](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:515/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaign-grouping-option.png)
 
 For example, if you group the table rows by Source, it will look like this:
 
-![Campaigns grouped by source](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:657/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-grouped-by-source.png)
+![Campaigns grouped by source](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:657/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-grouped-by-source.png)
 
 This lets you see exactly how many campaign visitors you’ve gotten from individual sources, like Facebook or your Mailchimp emails.
 
 Likewise, you can group the rows by the Campaign field.
 
-![Campaigns grouped by campaign](https://mlqmtwka8c9g.i.optimole.com/cb:CJJc.205f4/w:1024/h:610/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-grouped-by-campaign.png)
+![Campaigns grouped by campaign](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:610/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2022/09/campaigns-grouped-by-campaign.png)
 
 This reveals the performance of each campaign, regardless of the landing page, source, or medium. This makes it much easier to evaluate and compare your marketing campaigns to find out which ones are working best.
 

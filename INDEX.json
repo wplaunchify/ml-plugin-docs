@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T04:48:40.555Z",
+  "last_updated": "2026-10-18T05:03:58.099Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -1099,8 +1099,8 @@
       "slug": "independent-analytics-pro",
       "name": "Independent Analytics Pro",
       "documentation_url": "https://independentwp.com/knowledge-base/documentation/",
-      "last_scraped": "2026-10-11T05:04:53.132Z",
-      "page_count": 194,
+      "last_scraped": "2026-10-18T05:03:58.099Z",
+      "page_count": 202,
       "categories": [
         "campaigns",
         "click-tracking",
