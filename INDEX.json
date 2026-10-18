@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T17:10:34.384Z",
+  "last_updated": "2026-10-18T17:19:12.229Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3269,7 +3269,7 @@
       "slug": "woocommerce-subscriptions",
       "name": "WooCommerce Subscriptions",
       "documentation_url": "https://woocommerce.com/document/subscriptions/",
-      "last_scraped": "2026-10-11T17:21:46.124Z",
+      "last_scraped": "2026-10-18T17:19:12.229Z",
       "page_count": 85,
       "categories": [
         "2020-new-visa-requirements-for-subscriptions-with-a-free-trial",

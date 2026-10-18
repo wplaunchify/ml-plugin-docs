@@ -49,7 +49,7 @@ Configuring Limited Coupons is straightforward, yet they can serve various advan
 
 **Offer free shipping with recurring product discounts**
 
-To offer a free shipping coupon that will work with a subscription product, you can create a [Recurring Discount coupon](https://woocommerce.com/document/subscriptions/store-manager-guide/#section-8) and enable *free shipping* on it. This is similar to how you would offer free shipping with a standard [non-recurring discount coupon](https://woocommerce.com/document/free-shipping/#section-2). This makes shipping free on **all** recurring payments.
+To offer a free shipping coupon that will work with a subscription product, you can create a [Recurring Discount coupon](https://woocommerce.com/document/subscriptions/store-manager-guide/#section-8) and enable *free shipping* on it. This is similar to how you would offer free shipping with a standard [non-recurring discount coupon](https://woocommerce.com/document/free-shipping/#configuring-free-shipping-requirements). This makes shipping free on **all** recurring payments.
 
 ## Sign-up Fee Discounts
 

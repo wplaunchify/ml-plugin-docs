@@ -47,7 +47,6 @@ The features in this list are basic subscription features such as suspending, ca
 | Clover for WooCommerce | ✔ | ✔ | ✔ |
 | CyberSource Payment Gateway for WooCommerce | ✔ | ✔ | ✔ |
 | Elavon Converge Payment Gateway for WooCommerce | ✔ | ✔ | ✔ |
-| Elavon Payments for WooCommerce | ✔ | ✔ | ✔ |
 | Eway for WooCommerce | ✔ | ✔ | ✔ |
 | Global Payments HPP for WooCommerce | ✔ | ✔ | ✔ |
 | GoCardless for WooCommerce | ✔ | ✔ | ✔ |
@@ -92,7 +91,6 @@ The features in this list are advanced options that require data changes to a su
 | Clover for WooCommerce | ✔ | ✔ | ✔ | ✔ | ✔ |
 | CyberSource Payment Gateway for WooCommerce | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Elavon Converge Payment Gateway for WooCommerce | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Elavon Payments for WooCommerce | ✔ | ✔ | ✔ | ✔ | — |
 | Eway for WooCommerce | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Global Payments Gateway | ✔ | ✔ | ✔ | – | — |
 | Global Payments HPP for WooCommerce | ✔ | ✔ | ✔ | ✔ | ✔ |
@@ -245,19 +243,19 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 # Enabling Payment Gateways for Subscriptions
 
-			[WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) is compatible with many payment gateways that have the features necessary for processing automatic payments.
+			WooCommerce Subscriptions is compatible with many payment gateways that have the features necessary for processing automatic payments.
 
 ## No Available Payment Gateways Warning
 
 [↑ Back to top](#doc-title)
 
-During the checkout process, Subscriptions will offer a warning if there are no gateways enabled that support Subscriptions and [manual payments](https://woocommerce.com/document/subscriptions/renewal-process/#section-2) are not accepted. This message appears on the checkout page in the section where there would be payment gateways.
+Customers can’t complete checkout with a subscription in the cart when none of your enabled payment gateways support subscriptions and you don’t accept [manual renewal payments](https://woocommerce.com/document/subscriptions/renewal-process/#manual-recurring-payments). A warning appears where the payment methods would normally be.
 
-For customers, the message will inform them that there are no available payment gateways for the subscription and encouraging them to get in contact [left]. For store administrators and managers, the message will include a link to this page, describing common issues with setting up payment gateways [right].
+In the block checkout, customers and store managers see WooCommerce’s standard message:
 
-![](https://woocommerce.com/wp-content/uploads/2019/07/no-subscription-payment-methods-2-1.png?w=474)No available payment methods – message for customers.
+![Block checkout Payment options section showing the notice: There are no payment methods available. Please contact us for help placing your order.](https://woocommerce.com/wp-content/uploads/2026/10/subscriptions-no-payment-methods-checkout.png?strip=all&w=704)
 
-![](https://woocommerce.com/wp-content/uploads/2019/07/no-subscription-payment-methods-1-1.png?w=464)No available payment methods – message for store managers.
+In the classic checkout, Subscriptions shows its own message instead. It tells customers that no available payment methods support subscriptions and asks them to contact you. Store managers see the same message with a link to this page.
 
 ## Add a Payment Gateway
 
@@ -269,16 +267,44 @@ If there are no payment gateways installed yet, WooCommerce’s [guide on choosi
 
 [↑ Back to top](#doc-title)
 
-There are many [payment gateways](https://woocommerce.com/document/subscriptions/payment-gateways/) that are available that support Subscriptions and [automatic payments](https://woocommerce.com/document/subscriptions/payment-gateways/#section-1).
+To enable a payment gateway:
 
-In order to enable a payment gateway:
+1. Go to **WooCommerce > Settings > Payments**.
+2. Find the payment provider you want to use, and select **Enable**. If the provider is already installed but not connected, select **Complete setup** instead.
+3. Follow the provider’s setup steps to connect your account.
 
-1. Go to **WooCommerce > Settings > Payments**
-2. Under the column labeled **Enable** use a toggle to enable a payment gateway
+## Check Which Gateways Support Subscriptions
 
-![](https://woocommerce.com/wp-content/uploads/2019/07/subscription-payment-gateway-enabled-1.png?w=950)WooCommerce payment methods page with Stripe enabled.
+[↑ Back to top](#doc-title)
 
-When Woo Subscriptions is active, a column will appear in the payment methods table labeled **Automatic Recurring Payments**. A check in this column indicates that the payment gateway supports automatic recurring payments. In the same column, a question mark may appear. Hovering over this question mark will show a list of features associated with that payment gateway.
+The Payments settings page doesn’t show which gateways support subscriptions. To check:
+
+- See the [Subscriptions payment gateways guide](https://woocommerce.com/document/subscriptions/payment-gateways/), which lists the features each gateway supports.
+- Check the gateway’s own documentation or settings.
+- Go to **WooCommerce > Status** and find **Payment Gateway Support** in the system status report. It lists each gateway that’s enabled and ready to take payments, with the features it supports.
+
+A gateway that supports automatic renewals lists features such as 
+```
+subscriptions
+```
+
+. If a gateway lists only 
+```
+products
+```
+
+, like the bank transfer gateway below, it can’t take subscription payments:
+
+![Payment Gateway Support section of the system status report, listing Direct bank transfer with only the products feature](https://woocommerce.com/wp-content/uploads/2026/10/subscriptions-payment-gateway-support-status.png?strip=all&w=704)
+
+## Questions and support
+
+[↑ Back to top](#doc-title)
+
+**Something missing from this documentation? Still have questions and need assistance?**
+
+- If you have a question about a specific extension or theme you’d like to purchase, [contact us](https://woocommerce.com/contact-us/#sales-form) to get answers.
+- If you already purchased this product and need some assistance, get in touch with a Happiness Engineer via our [support page](https://woocommerce.com/my-account/create-a-ticket/) and select this product’s name from the Product dropdown.
 
 					
 		
