@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T04:12:55.756Z",
+  "last_updated": "2026-10-18T04:25:00.237Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -218,7 +218,7 @@
       "slug": "clickwhale",
       "name": "ClickWhale",
       "documentation_url": "https://clickwhale.pro/docs/documentation/",
-      "last_scraped": "2026-10-11T04:31:10.606Z",
+      "last_scraped": "2026-10-18T04:25:00.237Z",
       "page_count": 21,
       "categories": [
         "account-licenses",
