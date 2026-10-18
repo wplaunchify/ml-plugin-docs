@@ -70,7 +70,11 @@ Some other plugins also use their custom notifications which overwrite the core 
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/d3bd20becb9a1195f3fc036e02dd4c9fe5329079a711cd182180e8027a6d4628?s=60&d=retro&r=g)### Great!
+	![](https://secure.gravatar.com/avatar/d250916e292f35d74e6ac39ea0dc961593ce2f4fb1848bf6f83dfbd04593024b?s=60&d=retro&r=g)### Superb!
+							[linzihall](https://profiles.wordpress.org/linzihall/)
+								October 13, 2026
+						Very happy and very needed!
+							![](https://secure.gravatar.com/avatar/d3bd20becb9a1195f3fc036e02dd4c9fe5329079a711cd182180e8027a6d4628?s=60&d=retro&r=g)### Great!
 							[slingshotdesign](https://profiles.wordpress.org/slingshotdesign/)
 								September 23, 2026
 						I manage a lot of websites so the ability to switch off email notifications for automatic core and plugin updates is really useful and just what I needed.
@@ -92,14 +96,8 @@ Thanks very much!!
 							[richard0508](https://profiles.wordpress.org/richard0508/)
 								March 12, 2024
 						很不錯的外掛，大力推薦!
-							![](https://secure.gravatar.com/avatar/0e4c579db8a7b778e1c775590a1bd7d3164aea647d3a8c992986e969920c94fc?s=60&d=retro&r=g)### Good plugin
-							[snoringdragon](https://profiles.wordpress.org/snoringdragon/)
-								August 1, 2023
-						This plugin has made life easier.
 
-Thanks for its development.
-
-		[Read all 55 reviews](https://wordpress.org/support/plugin/manage-notification-emails/reviews/)
+		[Read all 56 reviews](https://wordpress.org/support/plugin/manage-notification-emails/reviews/)
 
 ## Contributors & Developers
 
