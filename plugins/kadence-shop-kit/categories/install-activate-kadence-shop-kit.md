@@ -14,14 +14,7 @@ The Kadence Shop Kit plugin is available in the [Kadence Pro and Elite Plans](ht
 
 ## Licensing Kadence Shop Kit
 
-**Liquid Web Software**manages your licensing through the **Liquid Web Portal**. For full instructions on downloading, installing, and licensing your product, see the official **How to Activate a Unified Licens** document.
-
-Legacy Licensing Notice
-
-*The information below applies to users who purchased a Kadence plan before May 2026.*
-
-If you are on an older, grandfathered plan (prior to the May 2026 unified licensing release), you can activate your license key directly within your WordPress dashboard by navigating to **Dashboard → Shop Kit → Legacy Licensing**
-For full instructions on downloading and installing legacy products, refer to the official [Download Plugin and Theme Files](https://docs.nexcess.com/software/accounts-licensing/download-plugin-and-theme-files/)document.
+**Nexcess Software** manages your licensing through the [Nexcess Portal](https://software.nexcess.com/). For full instructions on downloading, installing, and licensing your product, see the official [How to Activate Your License](https://docs.nexcess.com/software/accounts-licensing/how-to-activate-a-unified-license-and-add-a-product/) document.
 
 ## Shop Kit Features
 
