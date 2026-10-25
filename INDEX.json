@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T07:01:11.271Z",
+  "last_updated": "2026-10-25T07:05:16.168Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3733,14 +3733,14 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-10-18T07:07:04.343Z",
+      "last_scraped": "2026-10-25T07:05:16.168Z",
       "page_count": 5,
       "categories": [
+        "convert-woocommerce-product-categories-into-tags",
         "export-order-details-woocommerce-excel",
-        "find-featured-images-wordpress",
-        "generate-wordpress-image-alt-text-ai-bulk",
+        "how-to-edit-woocommerce-stock-in-a-spreadsheet",
         "learndash-google-sheets-integration",
-        "wordpress-how-bulk-edit-image-seo-description"
+        "the-events-calendar-export-events"
       ]
     },
     {

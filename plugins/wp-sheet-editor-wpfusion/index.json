@@ -2,10 +2,23 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-10-18T07:07:04.343Z",
+  "last_scraped": "2026-10-25T07:05:16.167Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
+    {
+      "title": "Convert Woocommerce Product Categories Into Tags",
+      "slug": "convert-woocommerce-product-categories-into-tags",
+      "url": "https://wpsheeteditor.comconvert-woocommerce-product-categories-into-tags/",
+      "file": "categories/convert-woocommerce-product-categories-into-tags.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Convert WooCommerce Product Categories into Tags",
+          "url": "https://wpsheeteditor.com/convert-woocommerce-product-categories-into-tags/"
+        }
+      ]
+    },
     {
       "title": "Export Order Details Woocommerce Excel",
       "slug": "export-order-details-woocommerce-excel",
@@ -20,28 +33,15 @@
       ]
     },
     {
-      "title": "Find Featured Images Wordpress",
-      "slug": "find-featured-images-wordpress",
-      "url": "https://wpsheeteditor.comfind-featured-images-wordpress/",
-      "file": "categories/find-featured-images-wordpress.md",
+      "title": "How To Edit Woocommerce Stock In A Spreadsheet",
+      "slug": "how-to-edit-woocommerce-stock-in-a-spreadsheet",
+      "url": "https://wpsheeteditor.comhow-to-edit-woocommerce-stock-in-a-spreadsheet/",
+      "file": "categories/how-to-edit-woocommerce-stock-in-a-spreadsheet.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Find Images Used as Featured Images in WordPress",
-          "url": "https://wpsheeteditor.com/find-featured-images-wordpress/"
-        }
-      ]
-    },
-    {
-      "title": "Generate Wordpress Image Alt Text Ai Bulk",
-      "slug": "generate-wordpress-image-alt-text-ai-bulk",
-      "url": "https://wpsheeteditor.comgenerate-wordpress-image-alt-text-ai-bulk/",
-      "file": "categories/generate-wordpress-image-alt-text-ai-bulk.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Generate WordPress Image Alt Text with AI in Bulk",
-          "url": "https://wpsheeteditor.com/generate-wordpress-image-alt-text-ai-bulk/"
+          "title": "How to Edit WooCommerce Stock in a Spreadsheet",
+          "url": "https://wpsheeteditor.com/how-to-edit-woocommerce-stock-in-a-spreadsheet/"
         }
       ]
     },
@@ -59,15 +59,15 @@
       ]
     },
     {
-      "title": "Wordpress How Bulk Edit Image Seo Description",
-      "slug": "wordpress-how-bulk-edit-image-seo-description",
-      "url": "https://wpsheeteditor.comwordpress-how-bulk-edit-image-seo-description/",
-      "file": "categories/wordpress-how-bulk-edit-image-seo-description.md",
+      "title": "The Events Calendar Export Events",
+      "slug": "the-events-calendar-export-events",
+      "url": "https://wpsheeteditor.comthe-events-calendar-export-events/",
+      "file": "categories/the-events-calendar-export-events.md",
       "page_count": 1,
       "pages": [
         {
-          "title": "WordPress Bulk Edit Image Alt Text (Add Alt Tags in Bulk)",
-          "url": "https://wpsheeteditor.com/wordpress-how-bulk-edit-image-seo-description/"
+          "title": "The Events Calendar Export Events to CSV, Excel or Google Sheets",
+          "url": "https://wpsheeteditor.com/the-events-calendar-export-events/"
         }
       ]
     }
