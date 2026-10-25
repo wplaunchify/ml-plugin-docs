@@ -25,7 +25,7 @@ This can also be used to migrate a single-site installation to another single-si
 [Buy and Download](https://codexonics.com/prime_mover/prime-mover/pricing/)
 # News and Updates
 
-> Prime Mover 2.2.1 – New features and Security updates
+> Prime Mover 2.2.2 – User privacy feature and maintenance updates
 # Official Documentation
 
 [GENERAL DOCUMENTATION](https://codexonics.com/prime_mover/prime-mover/general-documentation/)[PRO VERSION DOCUMENTATION](https://codexonics.com/prime_mover/prime-mover/pro-version-documentation/)[TROUBLESHOOTING GUIDE](https://codexonics.com/prime_mover/prime-mover/troubleshooting-guide/)[FREQUENTLY ASKED QUESTIONS](https://codexonics.com/prime_mover/prime-mover/faq/)
@@ -5734,7 +5734,7 @@ Was this article helpful?YesNo
 
 **Source:** [https://codexonics.com/prime_mover/prime-mover/pricing/](https://codexonics.com/prime_mover/prime-mover/pricing/)
 
-FreeStarts at$0Free versionThis plan is suitable for students and hobbyists of WordPress website development.Restore backup within siteMigrate single-site to single siteMigrate single-site to multisiteMigrate multisite to multisiteMigrate multisite to single-siteMigrate within WordPress adminMigrate from and to localhostExport as WordPress debug packageExport database onlyExport database + media files onlyComplete export mode (db + media + plugins/themes)No package size restrictionsResponsive / Mobile CompatibleBackup package management screen[Free download](https://downloads.wordpress.org/plugin/prime-mover.2.2.1.zip)PROStarts at$59Pro version (annual single-site or one subsite in multisite)This plan suits professional website designers, developers, and system administrators.**ALL FREE FEATURES +**Backup/migrate multisite main siteAutomatic/scheduled backupsMigrate faster using remote URL APIFree localhost licenseEncrypt databaseEncrypt media files and plugins/themesMigrate non-UTF8 charset to default utf8mb4 charsetOption to move backup packages outside WordPress rootExport package to Dropbox or Google DriveExclude plugins and media upload filesAssign specific blog ID for new subsiteOption to delete backups and enable migration logsComplete restoration options[Start free trial](#)
+FreeStarts at$0Free versionThis plan is suitable for students and hobbyists of WordPress website development.Restore backup within siteMigrate single-site to single siteMigrate single-site to multisiteMigrate multisite to multisiteMigrate multisite to single-siteMigrate within WordPress adminMigrate from and to localhostExport as WordPress debug packageExport database onlyExport database + media files onlyComplete export mode (db + media + plugins/themes)Export inactive plugins/themesNo package size restrictionsResponsive / Mobile CompatibleBackup package management screen[Free download](https://downloads.wordpress.org/plugin/prime-mover.2.2.2.zip)PROStarts at$59Pro version (annual single-site or one subsite in multisite)This plan suits professional website designers, developers, and system administrators.**ALL FREE FEATURES +**Backup/migrate multisite main siteAutomatic/scheduled backupsMigrate faster using remote URL APIFree localhost licenseEncrypt databaseEncrypt media files and plugins/themesMigrate non-UTF8 charset to default utf8mb4 charsetOption to sanitize users' email and passwordOption to move backup packages outside WordPress rootExport package to Dropbox or Google DriveExclude plugins and media upload filesAssign specific blog ID for new subsiteOption to delete backups and enable migration logsComplete restoration options[Start free trial](#)
 Buy now
 ### Trusted by More than 100,000 Blogs, Online Shops & Websites!
 
@@ -5819,7 +5819,7 @@ You can find the [list of frequently asked questions here](https://codexonics.c
 
 The plugin [includes complete documentation](https://codexonics.com/prime_mover/prime-mover/).
 
-*Last updated: August 13, 2026*
+*Last updated: October 21, 2026*
 
 ---
 
@@ -6878,6 +6878,8 @@ Search
 [How to upgrade your existing PRO plan to a higher plan?](https://codexonics.com/prime_mover/prime-mover/how-to-upgrade-your-existing-pro-plan-to-higher-plan/)
 
 [How do you enable encryption support in the Prime Mover Pro version?](https://codexonics.com/prime_mover/how-to-enable-encryption-support-in-prime-mover/)
+
+[User privacy feature in Prime Mover PRO](https://codexonics.com/prime_mover/prime-mover/user-privacy-feature-in-prime-mover-pro/)
 
 [Configure Basic Settings in Prime Mover Pro](https://codexonics.com/prime_mover/configure-basic-settings-in-prime-mover-pro/)
 
@@ -9101,7 +9103,12 @@ define( 'PRIME_MOVER_DEV_EMAIL_OVERRIDE', 'yourname@gmail.com' );
 
 If you export with user privacy enabled, Prime Mover PRO generates a temporary password for your users.  This temporary password is auto-generated and read-only. You do not need to edit or change it. Note that this value depends on your database password and Prime Mover encryption key and will change automatically if either is updated.
 
-Always keep a safe copy of this password for logging in after restoration, or optionally update the account email and set a permanent password in WP Admin.  This is never stored in the database or written to a file. This is a hash of your Prime Mover encryption key (which is private and available in wp-config.php) and your database password (which is also private to your site and available in the wp-config.php as well).
+Always keep a safe copy of this password for logging in after restoration, or optionally update the account email and set a permanent password in WP Admin. This is never stored in the database or written to a file. This is a hash of your Prime Mover encryption key (which is private and available in wp-config.php) and your database password (which is also private to your site and available in wp-config.php as well). If the database password is empty (such as in XAMPP), then it falls back to 
+```
+AUTH_KEY
+```
+
+.
 
 This temporary password is not included in the export package, so it’s safe and only private to you (from the source site). Use this only to log in to development sites restored with the package (which includes sanitized users). It won’t work for a production site, as users need to use their real password.
 
@@ -9112,6 +9119,10 @@ Let’s have a common example: say you have a production site and you want to cr
 1. This feature only works for a subsite/site with active PRO licenses. Before you proceed, make sure your single site has a Prime Mover PRO license enabled. If you are using multisite, make sure your subsite has a PRO license enabled. You can manage this easily in **Prime Mover PRO -> Account** and ensure the license is activated.
 
 1. Go to *Prime Mover PRO -> Toolbox -> *** Export-Import Utilities *** -> Sanitize admins*. Check “**Mask admin credentials**” and save it.
+
+**IMPORTANT: In multisite, each site has its own Toolbox settings. First, switch to the correct subsite by specifying the blog ID; see the screenshot below for how to enter this blog and load the correct Toolbox settings.**
+
+*Blog switching tool*After saving the settings, “*Mask admin credentials*” should be checked and look like this:
 
 At this point, you tell Prime Mover to sanitize only the administrators in a single site or the super administrators in multisite. This is the default setting, and it also uses **Safe-Discard Mode** for email sanitization. This will sanitize an email such as test@test.com into something that looks like *clr_am9obi5kb2@err.loc*.
 
@@ -9194,6 +9205,8 @@ Sanitized emails using the **@err.loc** format (which utilize Base64-style encod
 *Reversibility*: Base64 is an encoding format, not an encryption algorithm. This means someone with database access can decode the original string back to plain text. It is designed to obfuscate data from casual view and stop automated mailing scripts, not to act as a cryptographic shield against malicious attackers.
 
 *Best Practice*: Always treat staging and development environments as secure internal spaces. Protect staging sites with server-level password protection (such as HTTP Basic Auth), IP restrictions, or firewall rules, rather than relying solely on database email masking for full data security.
+
+*Last updated: October 20, 2026*
 
 Was this article helpful?YesNo
 
