@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T20:20:27.318Z",
+  "last_updated": "2026-10-25T20:31:12.088Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2573,7 +2573,7 @@
       "slug": "starter-templates-by-kadence-wp",
       "name": "Starter Templates by Kadence WP",
       "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-      "last_scraped": "2026-10-18T20:30:12.400Z",
+      "last_scraped": "2026-10-25T20:31:12.088Z",
       "page_count": 137,
       "categories": [
         "add-a-login-and-account-menu",

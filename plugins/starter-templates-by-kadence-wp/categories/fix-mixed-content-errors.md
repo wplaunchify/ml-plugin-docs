@@ -119,7 +119,7 @@ https://
 
 Some themes or plugins may enqueue scripts or styles over HTTP.
 
-- Make sure you’re running the latest version of Kadence.
+- Make sure you’re running the latest version of your theme and plugins.
 - If you spot a specific HTTP resource in your browser console, update or replace that resource with an HTTPS version.
 
 4. Use a Mixed Content Fixer Plugin
@@ -139,8 +139,6 @@ Troubleshooting Tips
 Conclusion
 
 Mixed content errors happen when secure pages load insecure resources. They’re common after moving a site to HTTPS, but easy to fix by updating your URLs, checking theme/plugin resources, or using a fixer plugin.
-
-With Kadence, our theme and blocks are built to work seamlessly over HTTPS. So once your content and settings are corrected, your site should display the secure padlock as expected.
 
 ---
 
