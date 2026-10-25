@@ -16,13 +16,7 @@ Before you begin
 
 ## Licensing Kadence Theme Kit Pro
 
-**Liquid Web Software**manages your licensing through the **Liquid Web Portal**. For full instructions on downloading, installing, and licensing your product, see the official **How to Activate a Unified License** document.
-
-Legacy Licensing Notice
-
-*The information below applies to users who purchased a Kadence plan before May 2026.*
-
-*If you are on a legacy, grandfathered plan (prior to the May 2026 unified licensing release), there’s no need to manually enter a license key. Simply upload and install the latest plugin ZIP file on your site, and the license will apply automatically.* For full instructions on downloading and installing legacy products, refer to the official [Download Plugin and Theme Files](https://docs.nexcess.com/software/accounts-licensing/download-plugin-and-theme-files/)document.
+**Nexcess Software** manages your licensing through the [Nexcess Portal](https://software.nexcess.com/). For full instructions on downloading, installing, and licensing your product, see the official [How to Activate Your License](https://docs.nexcess.com/software/accounts-licensing/how-to-activate-a-unified-license-and-add-a-product/) document.
 
 ## Enable Addons
 

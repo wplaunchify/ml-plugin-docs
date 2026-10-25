@@ -18,7 +18,7 @@ The favicon does not meet Google’s guidelines
 
 If your favicon does not follow Google’s specific requirements, it will not be displayed.
 
-- **Size requirements:** Google requires favicons to be at least **48×48 pixels** and recommends using multiples of 48 (48×48, 96×96, 144×144). While WordPress may suggest larger sizes like 512x512px for mobile homescreens or Progressive Web Apps, the favicon displayed in Google search results should ideally be 48×48 up to 192x192px in 
+- **Size requirements:** Google requires favicons to be at least **48×48 pixels** and recommends using multiples of 48 (48×48, 96×96, 144×144). While WordPress may suggest larger sizes like 512x512px for mobile home screens or Progressive Web Apps, the favicon displayed in Google search results should ideally be 48×48 up to 192x192px in 
 ```
 .ico
 ```

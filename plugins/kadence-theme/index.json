@@ -2,7 +2,7 @@
   "plugin_slug": "kadence-theme",
   "plugin_name": "Kadence Theme",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-  "last_scraped": "2026-10-18T20:04:32.883Z",
+  "last_scraped": "2026-10-25T20:04:27.720Z",
   "total_pages": 137,
   "failed_urls_count": 0,
   "sections": [
@@ -794,7 +794,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Enable the WordPress Error Logs",
+          "title": "How to Enable Debugging in WordPress",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/enable-wordpress-error-logs/"
         }
       ]
@@ -1743,7 +1743,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "What is a Child Theme, Should I Install One, if so How?",
+          "title": "How and When to Create a Child Theme",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/what-is-child-theme-do-i-need-one/"
         }
       ]
