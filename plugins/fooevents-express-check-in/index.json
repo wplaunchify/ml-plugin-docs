@@ -2,8 +2,8 @@
   "plugin_slug": "fooevents-express-check-in",
   "plugin_name": "FooEvents Express Check-in",
   "documentation_url": "https://help.fooevents.com/docs/",
-  "last_scraped": "2026-10-18T12:09:35.277Z",
-  "total_pages": 329,
+  "last_scraped": "2026-10-25T12:10:55.704Z",
+  "total_pages": 330,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,7 +11,7 @@
       "slug": "frequently-asked-questions",
       "url": "https://help.fooevents.com/docs/frequently-asked-questions/",
       "file": "categories/frequently-asked-questions.md",
-      "page_count": 145,
+      "page_count": 146,
       "pages": [
         {
           "title": "FooEvents Help Center",
@@ -580,6 +580,10 @@
         {
           "title": "FooEvents Help Center",
           "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-is-my-event-map-displaying-with-a-watermark-or-other-message-on-top/"
+        },
+        {
+          "title": "FooEvents Help Center",
+          "url": "https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-is-the-check-ins-app-slow-when-scanning-and-checking-in/"
         },
         {
           "title": "FooEvents Help Center",
