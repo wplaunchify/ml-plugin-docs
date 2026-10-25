@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T20:38:03.308Z",
+  "last_updated": "2026-10-25T20:45:40.754Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2392,7 +2392,7 @@
       "slug": "menu-image",
       "name": "Menu Image",
       "documentation_url": "https://wordpress.org/plugins/menu-image/",
-      "last_scraped": "2026-10-18T20:45:13.297Z",
+      "last_scraped": "2026-10-25T20:45:40.754Z",
       "page_count": 2,
       "categories": [
         "advanced",
