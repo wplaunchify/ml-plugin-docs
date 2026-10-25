@@ -6315,7 +6315,24 @@ That’s it! Now you know how to find your AffiliateWP license details.
 
 This article provides a detailed explanation of each setting found in **AffiliateWP » Settings » Advanced**. When making changes here, remember to click the **Save Changes**button at the bottom of the page.
 
----
+In This Article
+
+- [Currency Settings](#aioseo-currency-settings)- [Currency](#aioseo-currency)
+- [Currency Symbol Position](#aioseo-currency-symbol-position)
+- [Thousands Separator](#aioseo-thousands-separator)
+- [Decimal Separator](#aioseo-decimal-separator)
+- [Tracking](#aioseo-tracking)- [Cookie Sharing](#aioseo-cookie-sharing)
+- [Default Referral URL](#aioseo-default-referral-url)
+- [Referral URL Blacklist](#aioseo-referral-url-blacklist)
+- [Template File / Shortcode Settings](#aioseo-template-file-shortcode-settings)- [Terms of Use Label](#aioseo-terms-of-use-label)
+- [Affiliate Area Forms](#aioseo-affiliate-area-forms)
+- [Required Registration Fields](#aioseo-required-registration-fields)
+- [Email Summaries](#aioseo-email-summaries)- [Disable Email Summaries](#aioseo-disable-email-summaries)
+- [Privacy & Logging](#aioseo-privacy-logging)- [Disable IP Address Logging](#aioseo-disable-ip-address-logging)
+- [Trusted Proxies](#trusted-proxies)
+- [Enable Debug Mode](#aioseo-enable-debug-mode)
+- [Data Management](#aioseo-data-management)- [Remove Data on Uninstall](#aioseo-remove-data-on-uninstall)
+- [Troubleshooting](#aioseo-troubleshooting)- [Use Fallback Referral Tracking Method](#aioseo-use-fallback-referral-tracking-method)
 
 ## Currency Settings
 
@@ -6462,6 +6479,59 @@ When checked, this setting will disable logging of the customer IP address that 
 
 ---
 
+### Trusted Proxies
+
+Trusted Proxies tells AffiliateWP which load balancers, proxies or CDNs sit in front of your site, so visits and fraud checks record each visitor’s real IP address instead of the proxy’s.
+
+Most sites can leave this field empty. If visitors connect to your site directly, or Cloudflare is the only service in front of it, AffiliateWP already records the right address.
+
+You need this setting when your site is behind a load balancer, a reverse proxy, or a CDN or firewall other than Cloudflare. A common sign is that most entries in **AffiliateWP » Visits** show the same IP address. When AffiliateWP detects such a proxy, it shows a notice on its admin screens, and for a load balancer or the Sucuri firewall, the notice’s button fills in this setting for you.
+
+Enter one entry per line. Each entry can be:
+
+- An IP address or CIDR range, such as 
+```
+203.0.113.10
+```
+
+ or 
+```
+10.0.0.0/16
+```
+- ```
+cloudflare
+```
+
+, for [Cloudflare’s IP ranges](https://www.cloudflare.com/ips/)
+- ```
+sucuri
+```
+
+, for the [Sucuri firewall’s IP ranges](https://docs.sucuri.net/website-firewall/troubleshooting/same-ip-for-all-users/)
+- ```
+private
+```
+
+, for load balancers and proxies on your hosting provider’s private network
+
+For example, a site behind Cloudflare and a load balancer uses 
+```
+cloudflare
+```
+
+ and 
+```
+private
+```
+
+, each on its own line. Behind another CDN, such as [Fastly](https://api.fastly.com/public-ip-list) or [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html), add the IP ranges that CDN publishes.
+
+![](https://affiliatewp.com/wp-content/uploads/2026/10/affwp-advanced-settings-trusted-proxies.png)
+
+To check that it worked, open one of your affiliate links from another network, such as a phone on mobile data. The newest entry in **AffiliateWP » Visits** should show that device’s IP address.
+
+---
+
 ### Enable Debug Mode
 
 When you first set up AffiliateWP, we recommend [testing everything is working](https://affiliatewp.com/docs/how-to-test-everything-is-working/) so you can see exactly how the system works. AffiliateWP provides a Debug Assistant to help you identify potential issues while you are testing the system.
@@ -6491,8 +6561,6 @@ This setting uses an alternate method of tracking. We recommend leaving this set
 If you are having issues with referral commissions or visit entries/tracking not working as expected, please view our [troubleshooting article](https://affiliatewp.com/docs/getting-support-affiliatewp/).
 
 ![](https://affiliatewp.com/wp-content/uploads/2024/02/Screenshot-2024-02-26-at-91248 AM.png)
-
----
 
 ---
 
