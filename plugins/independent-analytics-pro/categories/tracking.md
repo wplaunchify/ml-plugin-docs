@@ -44,15 +44,25 @@ iawp-geo-db.mmdb
 
  folder. This file maps IP addresses to geolocations and is how Independent Analytics is able to geolocate your visitors.
 
-If your site uses Cloudflare, you can use their geolocation headers for free instead of using the MMDB file uploaded by Independent Analytics.
+If your site uses Cloudflare, you have the option to use geolocation data provided directly by Cloudflare instead.
 
-To make the switch, start by visiting the **Analytics > Settings** menu. Then, scroll down to the **Geolocation Provider** section.
+## Enable geolocation headers in Cloudflare
+
+First, visit the **Rules > Settings** menu and enable the **Add visitor location headers** option in Cloudflare.
+
+![Enable Cloudflare location headers](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:578/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/enable-cloudflare-location-headers.png)
+
+This makes the location headers available for Independent Analytics to read when someone visits your website.
+
+If you don’t enable this option, Independent Analytics won’t show the option to enable Cloudflare tracking in its Settings menu.
+
+## Enable Cloudflare tracking in Independent Analytics
+
+Once you’ve enabled the location headers in Cloudflare, head to the **Analytics > Settings** menu in Independent Analytics. Then, scroll down to the **Geolocation Provider** section.
 
 ![Geolocation provider](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:554/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/geolocation-provider.png)
 
-From here, you can select the **Cloudflare** option and click the **Save** button.
-
-You’ll see a confirmation that tracking is working after saving your settings.
+From here, you can select the **Cloudflare** option and click the **Save** button. You’ll see a confirmation that tracking is working after saving your settings.
 
 ![Cloudflare geolocation tracking enabled](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:515/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/cloudflare-geolocation-tracking-enabled.png)
 

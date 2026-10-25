@@ -1,7 +1,7 @@
 {
   "plugin_slug": "independent-analytics-pro",
   "plugin_name": "Independent Analytics Pro",
-  "last_scraped": "2026-10-18T05:03:58.090Z",
+  "last_scraped": "2026-10-25T05:04:21.213Z",
   "total_pages": 202,
   "failed_urls": [],
   "pages": [
@@ -66,8 +66,11 @@
       "title": "How to Track Geographic Locations with Cloudflare",
       "url": "https://independentwp.com/knowledgebase/tracking/cloudflare-geolocation/",
       "category": "Tracking",
-      "content": "Upon installation, Independent Analytics uploads a database file called \n```\niawp-geo-db.mmdb\n```\n\n your \n```\n/wp-content/uploads/\n```\n\n folder. This file maps IP addresses to geolocations and is how Independent Analytics is able to geolocate your visitors.\n\nIf your site uses Cloudflare, you can use their geolocation headers for free instead of using the MMDB file uploaded by Independent Analytics.\n\nTo make the switch, start by visiting the **Analytics > Settings** menu. Then, scroll down to the **Geolocation Provider** section.\n\n![Geolocation provider](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:554/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/geolocation-provider.png)\n\nFrom here, you can select the **Cloudflare** option and click the **Save** button.\n\nYou’ll see a confirmation that tracking is working after saving your settings.\n\n![Cloudflare geolocation tracking enabled](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:515/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/cloudflare-geolocation-tracking-enabled.png)\n\nOnce enabled, Independent Analytics will delete the MMDB file in your \n```\n/wp-content/uploads/\n```\n\n folder and use the geolocation headers provided by Cloudflare instead.\n\nThe geolocations derived from Cloudflare will be more accurate and consistent than those discovered with the MMDB file. For this reason, we recommend that all websites using Cloudflare switch to this new option.",
-      "headings": [],
+      "content": "Upon installation, Independent Analytics uploads a database file called \n```\niawp-geo-db.mmdb\n```\n\n your \n```\n/wp-content/uploads/\n```\n\n folder. This file maps IP addresses to geolocations and is how Independent Analytics is able to geolocate your visitors.\n\nIf your site uses Cloudflare, you have the option to use geolocation data provided directly by Cloudflare instead.\n\n## Enable geolocation headers in Cloudflare\n\nFirst, visit the **Rules > Settings** menu and enable the **Add visitor location headers** option in Cloudflare.\n\n![Enable Cloudflare location headers](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:578/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/enable-cloudflare-location-headers.png)\n\nThis makes the location headers available for Independent Analytics to read when someone visits your website.\n\nIf you don’t enable this option, Independent Analytics won’t show the option to enable Cloudflare tracking in its Settings menu.\n\n## Enable Cloudflare tracking in Independent Analytics\n\nOnce you’ve enabled the location headers in Cloudflare, head to the **Analytics > Settings** menu in Independent Analytics. Then, scroll down to the **Geolocation Provider** section.\n\n![Geolocation provider](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:554/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/geolocation-provider.png)\n\nFrom here, you can select the **Cloudflare** option and click the **Save** button. You’ll see a confirmation that tracking is working after saving your settings.\n\n![Cloudflare geolocation tracking enabled](https://mlqmtwka8c9g.i.optimole.com/cb:uyRF.20614/w:1024/h:515/q:mauto/f:best/https://independentwp.com/wp-content/uploads/2026/10/cloudflare-geolocation-tracking-enabled.png)\n\nOnce enabled, Independent Analytics will delete the MMDB file in your \n```\n/wp-content/uploads/\n```\n\n folder and use the geolocation headers provided by Cloudflare instead.\n\nThe geolocations derived from Cloudflare will be more accurate and consistent than those discovered with the MMDB file. For this reason, we recommend that all websites using Cloudflare switch to this new option.",
+      "headings": [
+        "Enable geolocation headers in Cloudflare",
+        "Enable Cloudflare tracking in Independent Analytics"
+      ],
       "code_blocks": [
         "iawp-geo-db.mmdb",
         "/wp-content/uploads/",
