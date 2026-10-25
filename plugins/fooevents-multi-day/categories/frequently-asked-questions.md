@@ -2392,6 +2392,7 @@ By following these steps, you can ensure that you are viewing the most up-to-dat
 	- [How do I use Browser Developer Tools to see errors?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/browser-developer-tools/)
 - [How to Force Refresh Your Web Browser](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/how-to-force-refresh-your-web-browser/)
 - [Why do I receive an error when I try activate the FooEvents plugin?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-do-i-receive-an-error-when-i-try-activate-the-fooevents-plugin/)
+- [Why is the Check-ins app slow when scanning and checking in?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-is-the-check-ins-app-slow-when-scanning-and-checking-in/)
 - [Why are my automatic plugin updates not working?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-my-automatic-plugin-updates-not-working/)
 - [Why do I receive the following error message “The package could not be installed. No valid plugins were found.”?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/no-valid-plugins-were-found/)
 - [Why are my tickets not being received?](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-are-my-tickets-not-being-received/)
@@ -2804,6 +2805,34 @@ Here are detailed instructions:
 If your **event map is displayed** correctly on your site but you see a watermark that says *“For development purposes only”* and a message that says *“This page can’t load Google Maps correctly”,* the problem could be that you haven’t added a **payment method** to your **Google billing account**.
 
 You can read more about setting up your Google account to work with Google Maps in the [Google Maps Platform documentation](https://developers.google.com/maps/gmp-get-started).
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-is-the-check-ins-app-slow-when-scanning-and-checking-in/](https://help.fooevents.com/docs/frequently-asked-questions/troubleshooting/why-is-the-check-ins-app-slow-when-scanning-and-checking-in/)
+
+There are several variables that all contribute to the speed of the Check-ins app scanning process. These include **device speed**, **wifi strength** to your router, **internet speed** from your router to the ISP and subsequently your server, app and plugin **settings** as well as your **server specifications**. The Check-ins app only sends and receives small amounts of text so most of the processing is done server-side.
+
+Here are some suggestions:
+
+1. Make sure that your “WordPress memory limit” is at least **256 MB**, but we recommend **512 MB or 1 GB**, especially if you have a large number of events and/or tickets.
+
+2. Consider contacting your host and find out if there is anything that they can do to **increase the speed of your server**.
+
+3. You can also consider **increasing your internet speed**, if possible. You could try to use different types of internet e.g. mobile data or a different wifi hotspot or network to test if this makes a difference.
+
+3. Try the app’s **offline mode** which means that you can check for ticket validity even if there is no internet connection. If you use the offline mode then we do recommend that only one device be used to scan tickets since multiple devices won’t be able to communicate if there is no internet. This could result in the same ticket being used by more than one attendee.
+
+4. Consider setting up your whole website database and files on a **local network** where data syncs with your live site, if required. This might require the services of a technical professional.
+
+5. If you sell tickets at the venue then you can also consider using our[FooEvents Point of Sale app](https://www.fooevents.com/products/fooevents-pos/). FooEvents POS (point of sale) is a web-based point of sale plugin for WooCommerce that runs on your own server and enables you to **sell** and **print** tickets in-person. FooEvents POS can be set up to **automatically check in tickets** purchased through the POS, which **saves some time since** the QR code doesn’t need to be scanned again.
+
+6. [This article](https://www.fooevents.com/how-to-prepare-for-large-events-like-a-pro-with-fooevents/) contains some tips for managing large events. Some settings to consider is **checking attendees in automatically**, checking in all attendees in one order if only one QR code is scanned, using the FooEvents Express Check-in plugin extension instead and scanning QR codes **directly from the event listing**.
+
+7. Make sure that **old tickets are not loaded unnecessarily** if you are re-using events or have events that take place over long periods. You can either delete old tickets or go to **FooEvents > Settings > Check-ins app** and choose one of the options next to [“Tickets loaded”](https://help.fooevents.com/docs/topics/events/global-settings/#check-ins-app).
+
+8. Your server may have exhausted its **PHP OPcache memory**, forcing it to recompile scripts on every request instead of serving them from memory. You can resolve this by increasing *opcache.memory_consumption* to 512M and *opcache.interned_strings_buffer*to 64M in your *php.ini file*, then restarting your PHP service.
 
 ---
 
